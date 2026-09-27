@@ -46,6 +46,8 @@ STATE = HERE / "state"
 EXPORTS = ROOT / "exports"
 EAT = dt.timezone(dt.timedelta(hours=3))
 MAX_PUBLISH_ATTEMPTS = 3
+LATE_LIMIT = dt.timedelta(hours=36)  # a post this late is marked "missed", never dumped out as a backlog
+META_KEYS = ("META_ACCESS_TOKEN", "META_PAGE_ID", "META_IG_USER_ID")
 
 
 # ---------------------------------------------------------------------------
@@ -437,7 +439,13 @@ def publish_facebook(label: str, members: list[dict]) -> str | None:
     return graph(f"{page}/feed", fields)["id"]
 
 
+def meta_ready() -> bool:
+    return all(os.environ.get(k) for k in META_KEYS)
+
+
 def publish(dry_run: bool = False) -> None:
+    connected = meta_ready()
+    waiting = 0
     for f in sorted(WEEKS.glob("*.json")):
         data = json.loads(f.read_text(encoding="utf-8"))
         label = data["collection"]
@@ -455,6 +463,15 @@ def publish(dry_run: bool = False) -> None:
             if p.get("attempts", 0) >= MAX_PUBLISH_ATTEMPTS:
                 continue
             done.add(key)
+            if not p.get("attempts") and now() - dt.datetime.fromisoformat(p["publish_at"]) > LATE_LIMIT:
+                for m in members:  # a stale post helps nobody: skip it rather than flood the feed
+                    m["status"] = "missed"
+                log(f"missed {key}: more than {LATE_LIMIT} past its slot")
+                _notify(f"⏭ <b>{key}</b> missed its slot and won't be posted late. Re-use the idea in a future week.")
+                continue
+            if not connected:
+                waiting += 1  # keep it approved: it goes out once Instagram is connected (if still on time)
+                continue
             if dry_run:
                 log(f"[dry-run] would publish {key} ({len(members)} image(s))")
                 continue
@@ -473,6 +490,17 @@ def publish(dry_run: bool = False) -> None:
                 log(f"FAILED {key}: {e}")
                 _notify(f"⚠️ Publishing <b>{key}</b> failed (attempt {p.get('attempts', 1)}): {str(e)[:300]}")
         save_week(data)
+    if waiting and not dry_run:
+        log(f"Instagram not connected yet: {waiting} approved post(s) waiting")
+        flag = STATE / "meta_missing_notified.txt"
+        if not flag.exists():  # tell the owner once, not every 2 hours
+            _notify(f"📌 {waiting} approved post(s) are due, but Instagram isn't connected yet. "
+                    "Add META_ACCESS_TOKEN, META_PAGE_ID and META_IG_USER_ID in GitHub secrets. "
+                    "Posts more than 36 h late are skipped, not dumped.")
+            STATE.mkdir(parents=True, exist_ok=True)
+            flag.write_text(now().isoformat(), encoding="utf-8")
+    elif connected:
+        (STATE / "meta_missing_notified.txt").unlink(missing_ok=True)
 
 
 def _notify(text: str) -> None:
@@ -496,9 +524,10 @@ def prune(keep_weeks: int = KEEP_WEEKS) -> list[str]:
     for f in sorted(WEEKS.glob("*.json")):
         data = json.loads(f.read_text(encoding="utf-8"))
         times = [dt.datetime.fromisoformat(p["publish_at"]) for p in data["posts"]]
-        finished = all(p["status"] in {"published", "rejected"} for p in data["posts"])
+        # Age alone decides: past LATE_LIMIT nothing in the week can publish any more, whatever its status
+        # (an unanswered preview, a missed or failed post must not pin the media forever)
         folder = EXPORTS / data["collection"]
-        if times and max(times) < cutoff and finished and folder.exists():
+        if times and max(times) < cutoff and folder.exists():
             shutil.rmtree(folder)
             removed.append(data["collection"])
     if removed:

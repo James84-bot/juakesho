@@ -92,7 +92,9 @@ class ApprovalTests(TempWeeks):
 
 
 class PublishTests(TempWeeks):
-    PAST = "2026-01-01T09:00:00+03:00"
+    @property
+    def PAST(self):  # due an hour ago: on time, so it should publish
+        return (pl.now() - dt.timedelta(hours=1)).isoformat()
 
     def run_publish(self, posts, fail=False):
         self.week(posts)
@@ -153,6 +155,44 @@ class PublishTests(TempWeeks):
         self.assertEqual(posts[0]["attempts"], 1)
         _, posts = self.run_publish([{**posts[0], "attempts": 3}], fail=True)
         self.assertEqual(posts[0]["attempts"], 3)  # no 4th attempt
+
+    def test_waits_quietly_until_instagram_is_connected(self):
+        no_meta = {"META_ACCESS_TOKEN": "", "META_PAGE_ID": "", "META_IG_USER_ID": ""}
+        with mock.patch.dict(os.environ, no_meta):
+            calls, posts = self.run_publish([{"id": "p", "status": "approved", "publish_at": self.PAST}])
+            self.assertEqual(posts[0]["status"], "approved")      # not failed, retries not used
+            self.assertNotIn("attempts", posts[0])
+            self.assertEqual(sum("sendMessage" in c[0] for c in calls), 1)   # owner told...
+            self.assertFalse(any("/media" in c[0] for c in calls))
+            calls, posts = self.run_publish(posts)
+            self.assertEqual(calls, [])                                       # ...only once
+        # Now connected (keys from setUp): it publishes, and the notice flag is cleared
+        calls, posts = self.run_publish(posts)
+        self.assertEqual(posts[0]["status"], "published")
+        self.assertFalse((pl.STATE / "meta_missing_notified.txt").exists())
+
+    def test_stale_post_is_missed_not_dumped(self):
+        old = (pl.now() - dt.timedelta(hours=40)).isoformat()
+        calls, posts = self.run_publish([{"id": "p", "status": "approved", "publish_at": old}])
+        self.assertEqual(posts[0]["status"], "missed")
+        self.assertFalse(any("/media" in c[0] for c in calls))
+
+
+class PruneTests(TempWeeks):
+    def test_old_weeks_are_pruned_whatever_their_status(self):
+        exports = Path(self.tmp.name) / "exports"
+        with mock.patch.object(pl, "EXPORTS", exports):
+            old = (pl.now() - dt.timedelta(weeks=7)).isoformat()
+            recent = (pl.now() - dt.timedelta(days=3)).isoformat()
+            self.week([{"id": "a", "status": "awaiting", "publish_at": old},
+                       {"id": "b", "status": "missed", "publish_at": old}], label="2026-W30")
+            self.week([{"id": "c", "status": "awaiting", "publish_at": recent}], label="2026-W39")
+            for w in ("2026-W30", "2026-W39"):
+                (exports / w).mkdir(parents=True)
+                (exports / w / "x.png").write_bytes(b"x")
+            self.assertEqual(pl.prune(), ["2026-W30"])
+            self.assertFalse((exports / "2026-W30").exists())
+            self.assertTrue((exports / "2026-W39" / "x.png").exists())
 
 
 class GuardTests(unittest.TestCase):
@@ -369,7 +409,9 @@ class CriticTests(unittest.TestCase):
 
 
 class ReelPublishTests(TempWeeks):
-    PAST = "2026-01-01T09:00:00+03:00"
+    @property
+    def PAST(self):
+        return (pl.now() - dt.timedelta(hours=1)).isoformat()
 
     def test_reel_waits_for_processing_and_checks_media_types(self):
         self.week([{"id": "r", "status": "approved", "publish_at": self.PAST, "caption": "c", "reel": True}])
