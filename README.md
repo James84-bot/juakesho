@@ -29,7 +29,7 @@ automation/                  The self-running content engine
   trends.py                  Daily Google Trends (KE, NG, ZA, US), politics/tragedy/betting filtered out
   stickers.py                Builds the WhatsApp sticker pack
   pipeline.py                plan → draft → guard → render → Telegram approval → publish → learn
-  tests/                     30 tests, no network needed (the visual QA test uses Chromium if installed)
+  tests/                     33 tests, no network needed (the visual QA test uses Chromium if installed)
 .github/workflows/autopilot.yml   Runs everything in the cloud, free
 ```
 
@@ -67,6 +67,7 @@ forwarding the approved image to the WhatsApp Channel (it has no posting API).
 python pipeline.py week --mock --dry-run   # full rehearsal, no AI, no posting
 python pipeline.py status                  # where every post is
 python pipeline.py tick --dry-run          # what would publish now
+python pipeline.py redo                    # re-draft posts the checks held back (also in Actions → Run workflow)
 python -m unittest discover -s tests -v    # run the tests
 python trends.py                           # what Kenya is searching now (safe topics only)
 python stickers.py                         # rebuild the sticker pack

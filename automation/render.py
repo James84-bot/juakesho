@@ -80,8 +80,8 @@ def radius(seed: int) -> str:
     return " ".join(f"{x}px" for x in h) + " / " + " ".join(f"{y}px" for y in v)
 
 
-COMIC = {"panel_top": [170, 520, 870], "panel_h": 330, "scale": 1.12, "spot": {"left": 185, "right": 895},
-         "bubble_w": 360, "slot_a": 322, "slot_b": 322}
+COMIC = {"panel_top": [158, 498, 838], "panel_h": 330, "scale": 1.12, "spot": {"left": 185, "right": 895},
+         "bubble_w": 360, "slot_a": 322, "slot_b": 322, "a_top": 30, "b_top": 142, "gap": 12, "inset": 12}
 
 
 def comic_layout(panels: list[dict], width: int, seed: int) -> list[dict]:
@@ -118,12 +118,26 @@ def comic_layout(panels: list[dict], width: int, seed: int) -> list[dict]:
         slots_used = [b["slot"] for b in bubbles]
         if len(slots_used) != len(set(slots_used)):
             raise ValueError(f"panel {i + 1}: at most one speech and one SMS bubble, from different sides")
+        # Bubble heights come from the real font (textfit), so slot B always clears slot A,
+        # and a panel whose lines cannot fit is rejected here, which the guard reports at draft time.
+        import textfit
+        bubbles.sort(key=lambda b: b["slot"])
+        a_bottom = None
+        limit = top + COMIC["panel_h"] - COMIC["inset"]
         for b in bubbles:
             bw = COMIC["bubble_w"]
+            h = textfit.bubble_height(b["text"], b["sms"])
             if b["slot"] == "a":
-                left, btop = COMIC["slot_a"], top + 40
+                left, btop = COMIC["slot_a"], top + COMIC["a_top"]
+                a_bottom = btop + h
             else:
-                left, btop = width - COMIC["slot_b"] - bw, top + 142
+                left = width - COMIC["slot_b"] - bw
+                btop = max(top + COMIC["b_top"], (a_bottom or 0) + COMIC["gap"])
+                if btop + h > limit:  # short first bubble: slot B may rise into the free space above
+                    btop = max(top + COMIC["a_top"], (a_bottom or 0) + COMIC["gap"], limit - h)
+            if btop + h > limit:
+                raise ValueError(f"panel {i + 1}: the bubble text is too long to fit ({round(btop + h - limit)}px over); "
+                                 "shorten the lines in this panel")
             tx, ty = b["target"]
             ax = left + 10 if tx < left else left + bw - 10
             b.update(left=left, top=btop, radius=radius(seed + i * 7 + (1 if b["slot"] == "a" else 3)),

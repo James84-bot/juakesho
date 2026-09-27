@@ -197,6 +197,33 @@ def draft(label: str, mock: bool = False) -> dict:
 # ---------------------------------------------------------------------------
 # 3. Render (PNG for Telegram/WhatsApp, JPEG for Instagram)
 # ---------------------------------------------------------------------------
+PLAN_KEYS = {"id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total"}
+
+
+def redo(label: str) -> list[str]:
+    """Held posts (status needs_human) go back to 'planned' so draft → render → ask runs again for them only.
+    A carousel is redone as a whole, so its slides stay consistent."""
+    data = load_week(label)
+    groups = {p["group"] for p in data["posts"] if p["status"] == "needs_human" and p.get("group")}
+    reset = []
+    for i, p in enumerate(data["posts"]):
+        if p["status"] == "needs_human" or (p.get("group") in groups and p["status"] != "published"):
+            data["posts"][i] = {k: v for k, v in p.items() if k in PLAN_KEYS} | {"status": "planned"}
+            reset.append(p["id"])
+    save_week(data)
+    log(f"redo {label}: {reset or 'nothing held'}")
+    return reset
+
+
+def held_summary(data: dict) -> str | None:
+    held = [p for p in data["posts"] if p["status"] == "needs_human"]
+    if not held:
+        return None
+    lines = [f"• <b>{p['id']}</b>: {'; '.join((p.get('guard') or {}).get('errors') or ['check needed'])[:160]}" for p in held]
+    return (f"🛠 {len(held)} post(s) held back, not sent for approval:\n" + "\n".join(lines) +
+            "\n\nTo fix automatically: GitHub → Actions → autopilot → Run workflow → <code>redo</code>.")
+
+
 def render_week(label: str) -> dict:
     import render as renderer
     from PIL import Image
@@ -306,6 +333,11 @@ def ask(label: str, dry_run: bool = False) -> dict:
                {"photo": out_dir / f"{p['id']}.png"})
         p["status"] = "awaiting"
     save_week(data)
+    note = held_summary(data)
+    if note:
+        log(note.replace("<b>", "").replace("</b>", "").replace("<code>", "").replace("</code>", ""))
+        if not dry_run:
+            tg("sendMessage", {"chat_id": chat, "text": note, "parse_mode": "HTML"})
     return data
 
 
@@ -589,7 +621,7 @@ def main(argv: list[str] | None = None) -> int:
     load_env()
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
-    ap.add_argument("command", choices=["week", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends", "status"])
+    ap.add_argument("command", choices=["week", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends", "status", "redo"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -607,11 +639,17 @@ def main(argv: list[str] | None = None) -> int:
             log(f"trends skipped: {e}")
     if a.command in {"week", "plan"}:
         plan(label)
-    if a.command in {"week", "draft"}:
+    if a.command == "redo":
+        if not a.week:  # the newest week that actually has held posts, whatever day it is
+            held = [f.stem for f in sorted(WEEKS.glob("*.json"))
+                    if any(q["status"] == "needs_human" for q in json.loads(f.read_text(encoding="utf-8"))["posts"])]
+            label = held[-1] if held else label
+        redo(label)
+    if a.command in {"week", "redo", "draft"}:
         draft(label, mock=a.mock)
-    if a.command in {"week", "render"}:
+    if a.command in {"week", "redo", "render"}:
         render_week(label)
-    if a.command in {"week", "ask"}:
+    if a.command in {"week", "redo", "ask"}:
         ask(label, dry_run=a.dry_run)
     if a.command in {"tick", "collect"} and not a.dry_run:
         collect()

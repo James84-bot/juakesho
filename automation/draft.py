@@ -333,6 +333,35 @@ def elevate(week_label: str, slots: list[dict], lanes: dict, posts: list[dict]) 
     return posts
 
 
+REPAIR_ROUNDS = 3
+
+
+def repair(week_label: str, slots: list[dict], lanes: dict, posts: list[dict], reports: list) -> tuple[list, list]:
+    """Sends failing posts back with the exact errors (e.g. "'cta' is 53 chars (max 50)"), up to REPAIR_ROUNDS.
+    A post that still fails is left for a human; nothing broken is ever sent for approval."""
+    system = None
+    for _ in range(REPAIR_ROUNDS):
+        failing = [r for r in reports if not r.ok]
+        if not failing:
+            break
+        if system is None:
+            system, _ = build_prompt(week_label, slots, lanes, [])
+        fix = "\n".join(f"{r.id}: {'; '.join(r.errors)}" for r in failing)
+        ask = ("These posts failed checks. Fix every listed problem; when a field is too long, count the characters "
+               "and come in clearly under the limit. Return JSON {\"posts\": [...]} with ONLY the fixed posts, "
+               "same ids, all fields present:\n" + fix + "\n\nPosts:\n" +
+               json.dumps([p for p in posts if p["id"] in {r.id for r in failing}], ensure_ascii=False))
+        try:
+            fixed = extract_json(call_claude(system, ask)).get("posts", [])
+        except (ValueError, RuntimeError) as e:  # a bad reply costs a round, never the whole week
+            print(f"  repair round failed: {e}")
+            continue
+        fixed_by_id = {p.get("id"): p for p in _merge([s for s in slots if s["id"] in {r.id for r in failing}], fixed)}
+        posts = [fixed_by_id.get(p["id"], p) for p in posts]
+        reports = guard.check_all(posts)
+    return posts, reports
+
+
 def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = False) -> tuple[list[dict], dict]:
     if mock:
         result = mock_draft(slots)
@@ -343,17 +372,8 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
 
     posts = _merge(slots, result.get("posts", []))
     reports = guard.check_all(posts)
-    failing = [r for r in reports if not r.ok]
-    if failing and not mock:
-        fix = "\n".join(f"{r.id}: {'; '.join(r.errors)}" for r in failing)
-        system, _ = build_prompt(week_label, slots, lanes, [])
-        repair_user = ("These posts failed checks. Return JSON {\"posts\": [...]} with ONLY the fixed posts, "
-                       "same ids, all fields present:\n" + fix + "\n\nOriginal posts:\n" +
-                       json.dumps([p for p in posts if p["id"] in {r.id for r in failing}], ensure_ascii=False))
-        fixed = extract_json(call_claude(system, repair_user)).get("posts", [])
-        fixed_by_id = {p.get("id"): p for p in _merge([s for s in slots if s["id"] in {r.id for r in failing}], fixed)}
-        posts = [fixed_by_id.get(p["id"], p) for p in posts]
-        reports = guard.check_all(posts)
+    if not mock:
+        posts, reports = repair(week_label, slots, lanes, posts, reports)
 
     for p, r in zip(posts, reports):
         p["status"] = "drafted" if r.ok else "needs_human"

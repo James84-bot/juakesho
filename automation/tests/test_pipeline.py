@@ -195,6 +195,54 @@ class PruneTests(TempWeeks):
             self.assertTrue((exports / "2026-W39" / "x.png").exists())
 
 
+class RepairTests(unittest.TestCase):
+    def test_repair_retries_until_the_post_passes(self):
+        import draft
+        slot = {"id": "2026-w40-d5-spotlight", "template": "spotlight", "bg": "usiku", "lane": "creator"}
+        good = {"id": "2026-w40-d5-spotlight", "template": "spotlight", "kind": "Startup", "name": "Ushahidi", "country": "Kenya",
+                "what": "Open-source crowdmapping born in Nairobi, used worldwide.",
+                "why": "Proof that African tech can serve the whole world.",
+                "cta": "Follow their story.", "source": "ushahidi.com/about",
+                "caption": "Put Us On: Ushahidi. Share this with a comrade.\n\n#PutUsOn"}
+        long = {**good, "cta": "Follow their story and see how far this build scales."}  # 53 chars
+        replies = iter([json.dumps({"posts": [long]}), "no json here", json.dumps({"posts": [good]})])
+        posts = draft._merge([slot], [long])
+        reports = guard.check_all(posts)
+        self.assertFalse(reports[0].ok)
+        with mock.patch.object(draft, "call_claude", lambda system, user: next(replies)), \
+                mock.patch.object(draft, "build_prompt", lambda *a: ("sys", "user")):
+            posts, reports = draft.repair("2026-W40", [slot], {}, posts, reports)
+        self.assertTrue(reports[0].ok, reports[0].errors)
+        self.assertEqual(posts[0]["cta"], "Follow their story.")
+
+
+class RedoTests(TempWeeks):
+    def test_redo_resets_only_held_posts_and_whole_carousels(self):
+        when = "2026-10-01T19:30:00+03:00"
+        self.week([
+            {"id": "a", "template": "hack", "bg": "usiku", "lane": "campus", "publish_at": when, "status": "awaiting", "title": "keep"},
+            {"id": "b", "template": "spotlight", "bg": "usiku", "lane": "creator", "publish_at": when,
+             "status": "needs_human", "cta": "x" * 53, "guard": {"errors": ["'cta' is 53 chars (max 50)"]}},
+            {"id": "c", "template": "cover", "bg": "usiku", "lane": "all", "publish_at": when, "status": "awaiting", "group": "c"},
+            {"id": "c-1", "template": "kesho", "bg": "usiku", "lane": "all", "publish_at": when, "status": "needs_human",
+             "group": "c", "n": 1, "total": 1}], label="2026-W40")
+        with mock.patch.object(pl, "tg", lambda *a, **k: {"ok": True}):
+            note = pl.held_summary(pl.load_week("2026-W40"))
+            self.assertIn("53 chars", note)
+            with mock.patch.object(pl, "draft", lambda label, mock=False: None), \
+                    mock.patch.object(pl, "render_week", lambda label: None), \
+                    mock.patch.object(pl, "ask", lambda label, dry_run=False: None), \
+                    mock.patch.object(pl, "current_week_label", lambda: "2026-W41"):
+                pl.main(["redo"])   # finds W40 by itself, although "next week" is W41
+        posts = {p["id"]: p for p in pl.load_week("2026-W40")["posts"]}
+        self.assertEqual(posts["a"]["status"], "awaiting")      # untouched, still in your Telegram
+        self.assertEqual(posts["a"]["title"], "keep")
+        self.assertEqual(posts["b"], {"id": "b", "template": "spotlight", "bg": "usiku", "lane": "creator",
+                                      "publish_at": when, "status": "planned"})   # old content and errors cleared
+        self.assertEqual(posts["c"]["status"], "planned")       # whole carousel redone together
+        self.assertEqual(posts["c-1"]["n"], 1)
+
+
 class GuardTests(unittest.TestCase):
     def test_launch_posts_pass(self):
         posts = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"]
@@ -319,6 +367,16 @@ class ComicTests(unittest.TestCase):
             render.comic_layout(bad, 1080, 1)
         r = guard.check({"id": "c-1", "template": "vichekesho", "title": "t", "punch": "p", "caption": "x", "panels": bad})
         self.assertTrue(any("overlap" in e for e in r.errors))
+
+    def test_bubbles_that_cannot_fit_are_rejected_at_draft_time(self):
+        long = "Manze, hii CV imeandikwa na AI na bado haijaniletea kazi hata moja wiki hii."
+        panels = [{"bg": "jua", "left": {"who": "student", "pose": "phone", "say": long, "sms": long[:88]},
+                   "right": {"who": "techie", "pose": "think"}}] + self.PANELS[1:]
+        r = guard.check({"id": "c-3", "template": "vichekesho", "title": "t", "punch": "p", "caption": "x", "panels": panels})
+        self.assertTrue(any("too long to fit" in e for e in r.errors), r.errors)
+        ok = guard.check({"id": "c-4", "template": "vichekesho", "title": "t", "punch": "p", "caption": "x",
+                          "panels": self.PANELS})
+        self.assertFalse(any("fit" in e for e in ok.errors), ok.errors)
 
     def test_comic_speech_is_checked_for_clean_content(self):
         panels = [dict(self.PANELS[0], left={"who": "boda", "say": "Wewe mjinga!"})] + self.PANELS[1:]

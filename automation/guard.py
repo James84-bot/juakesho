@@ -236,6 +236,12 @@ def _check_comic(post: dict, rep: Report) -> None:
             rep.errors.append(f"panel {i}: two bubbles would overlap (one speech + one SMS max, from different sides)")
         if not p.get("left") and not p.get("right"):
             rep.errors.append(f"panel {i}: empty")
+    if not rep.errors:  # geometry: measured with the real font, so a panel that can't fit fails here, not on render
+        try:
+            import render
+            render.comic_layout(panels, 1080, 0)
+        except ValueError as e:
+            rep.errors.append(str(e))
 
 
 def check_all(posts: list[dict]) -> list[Report]:

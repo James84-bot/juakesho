@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "week | tick | learn | rehearse (no keys needed: renders a mock week, posts nothing)"
+        description: "week | tick | learn | redo (re-draft posts held back) | rehearse (no keys needed: renders a mock week, posts nothing)"
         default: "tick"
 
 concurrency:
@@ -56,14 +56,14 @@ jobs:
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
       - name: Install
-        if: steps.cmd.outputs.c == 'week' || steps.cmd.outputs.c == 'rehearse'
+        if: steps.cmd.outputs.c == 'week' || steps.cmd.outputs.c == 'redo' || steps.cmd.outputs.c == 'rehearse'
         run: |
           pip install -r automation/requirements.txt
           python -m playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg || true   # video.py falls back to imageio-ffmpeg
 
       - name: Install (light)
-        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'rehearse' && steps.cmd.outputs.c != 'skip'
+        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'redo' && steps.cmd.outputs.c != 'rehearse' && steps.cmd.outputs.c != 'skip'
         run: pip install -r automation/requirements.txt
 
       - name: Tests
