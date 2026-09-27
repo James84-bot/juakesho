@@ -1,0 +1,25 @@
+{#- First post / pinned intro. Fields: hello, promise (list), community -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.hello { position: absolute; left: 84px; top: 90px; font-size: 90px; color: var(--jacaranda); transform: rotate(-4deg); }
+.logo { position: absolute; left: 84px; top: 200px; width: 470px; }
+.mascot { position: absolute; right: 30px; top: 150px; width: 340px; height: 340px; }
+.tag { position: absolute; left: 84px; top: 580px; font-size: 64px; color: var(--usiku); }
+.promise { position: absolute; left: 84px; right: 84px; top: 690px; list-style: none; display: grid; gap: 18px; }
+.promise li { padding: 22px 34px; font-size: 34px; font-weight: 700; color: #fff; }
+.community { position: absolute; left: 84px; right: 84px; top: 1090px; font-size: 52px; text-align: center; color: var(--usiku); }
+{% endblock %}
+{% block art %}
+  {{ confetti(W, H, seed, n=8, avoid=[(40, 60, 1000, 1080)], rmax=36) }}
+{% endblock %}
+{% block content %}
+  <p class="hand hello">{{ hello }}</p>
+  <img class="logo" src="{{ logo_stacked }}" alt="Jua Kesho">
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot('happy') }}</svg>
+  <p class="display tag">{{ brand.tagline_sw }}</p>
+  <ul class="promise">
+    {% set pc = [C.jacaranda, C.chai, C.shuka] %}
+    {% for p in promise %}<li style="background: {{ pc[loop.index0 % 3] }}; border-radius: {{ radius(seed + loop.index) }}">{{ p }}</li>{% endfor %}
+  </ul>
+  <p class="hand community">{{ community }}</p>
+{% endblock %}

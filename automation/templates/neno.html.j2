@@ -1,0 +1,39 @@
+{#- Word of the Week — one tech word, explained in Kenyan English.
+    Fields: word, full, say, sw, en, note, example, expr -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--usiku); color: var(--jua); }
+.mascot { position: absolute; top: 40px; right: 44px; width: 240px; height: 240px; }
+.word-wrap { position: absolute; left: 80px; top: 230px; width: 500px; height: 420px;
+  display: flex; align-items: center; justify-content: center; color: var(--usiku); }
+.word { font-size: {{ fit(word, 400, 270) }}px; }
+.note { position: absolute; right: 64px; top: 330px; width: 340px; color: var(--jua);
+  font-size: 50px; transform: rotate(-5deg); text-align: center; }
+.full { position: absolute; left: 84px; top: 700px; width: 912px; font-size: 48px; }
+.say { color: var(--jua); font-size: 46px; margin-left: 12px; letter-spacing: 0; }
+.def { position: absolute; left: 84px; top: 785px; width: 912px; }
+.def .sw { font-size: 37px; font-weight: 700; line-height: 1.26; }
+.def .en { margin-top: 14px; font-size: 31px; opacity: .9; line-height: 1.3; }
+.example { position: absolute; left: 70px; right: 70px; top: 1010px; padding: 30px 44px;
+  background: var(--maziwa); color: var(--usiku); border-radius: {{ radius(seed + 9) }}; font-size: 30px; line-height: 1.3; }
+.example b { font-family: "Caveat", cursive; font-size: 42px; color: var(--jacaranda); margin-right: 8px; }
+{% endblock %}
+{% block art %}
+  {{ confetti(W, H, seed, n=8, avoid=(40, 200, 1000, 1000), rmax=38) }}
+  {{ blob_outline(330, 440, 240, C.usiku, seed + 1, wobble=0.14, points=8) }}
+  {{ blob(330, 440, 240, C.jua, seed + 1, wobble=0.14, points=8) }}
+  {{ arrow(760, 520, 600, 520, C.jua, width=8) }}
+  {{ dots(620, 640, 380, 40, C.waridi, seed + 4, n=7, rmin=5, rmax=9) }}
+{% endblock %}
+{% block content %}
+  <span class="pill series">Word of the Week</span>
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot(expr) }}</svg>
+  <div class="word-wrap"><span class="display word">{{ word }}</span></div>
+  <p class="note hand">{{ note }}</p>
+  <p class="full display">{{ full }}<span class="say hand">/ {{ say }} /</span></p>
+  <div class="def">
+    <p class="sw">{{ sw }}</p>
+    <p class="en">{{ en }}</p>
+  </div>
+  <p class="example"><b>Example:</b>{{ example }}</p>
+{% endblock %}

@@ -1,0 +1,29 @@
+{#- Hapa vs Huko — Kenya compared with elsewhere, friendly. Fields: topic, hapa, huko, ask -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--usiku); color: var(--ziwa); }
+.topic { position: absolute; left: 84px; top: 200px; width: 912px; font-size: {{ fitw(topic, 912, 2, 92) }}px; color: var(--usiku); }
+.card { position: absolute; width: 440px; padding: 40px 38px 44px; }
+.card .hand { font-size: 58px; }
+.card p { margin-top: 10px; font-size: 32px; font-weight: 700; line-height: 1.27; }
+.hapa { left: 70px; top: 470px; background: var(--jua); color: var(--usiku); border-radius: {{ radius(seed + 1) }}; transform: rotate(-2deg); }
+.huko { right: 70px; top: 540px; background: var(--usiku); color: var(--maziwa); border-radius: {{ radius(seed + 2) }}; transform: rotate(2deg); }
+.huko .hand { color: var(--pwani); }
+.vs { position: absolute; left: 470px; top: 820px; width: 140px; height: 140px; display: grid; place-items: center;
+  background: var(--shuka); color: #fff; font-size: 44px; border-radius: 50%; }
+.ask { position: absolute; left: 84px; right: 84px; top: 1030px; font-size: 52px; text-align: center; color: var(--usiku); }
+.mascot { position: absolute; right: 40px; top: 40px; width: 200px; height: 200px; }
+{% endblock %}
+{% block art %}
+  {{ confetti(W, H, seed, n=7, avoid=[(40, 180, 1000, 1000)], rmax=34) }}
+  {{ squiggle(160, 1010, 760, C.usiku, seed + 5, amp=8, waves=9, width=6) }}
+{% endblock %}
+{% block content %}
+  <span class="pill series">Here vs There</span>
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot('cool') }}</svg>
+  <h1 class="display topic">{{ topic }}</h1>
+  <div class="card hapa"><span class="hand">Here in Kenya</span><p>{{ hapa }}</p></div>
+  <div class="card huko"><span class="hand">Elsewhere</span><p>{{ huko }}</p></div>
+  <span class="display vs">vs</span>
+  <p class="hand ask">{{ ask }}</p>
+{% endblock %}

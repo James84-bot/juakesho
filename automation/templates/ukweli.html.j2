@@ -1,0 +1,29 @@
+{#- Ukweli ama Uongo? — myth vs truth.
+    Fields: claim, verdict (uongo|ukweli|kiasi), verdict_text, truth, expr -#}
+{% extends "base.html.j2" %}
+{% set stamp = {'uongo': C.shuka, 'ukweli': C.chai, 'kiasi': C.jacaranda}[verdict] %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--usiku); color: var(--jua); }
+.mascot { position: absolute; top: 40px; right: 40px; width: 230px; height: 230px; }
+.label { position: absolute; left: 84px; top: 250px; font-size: 44px; color: var(--jacaranda); }
+.claim { position: absolute; left: 84px; top: 310px; width: 900px; font-size: {{ fitw(claim, 900, 2, 84) }}px; line-height: 1.04; color: var(--usiku); }
+.stamp { position: absolute; right: 84px; top: 560px; padding: 14px 30px; border: 7px solid {{ stamp }}; color: {{ stamp }};
+  border-radius: 14px; font-size: 64px; transform: rotate(-9deg); background: rgba(255,244,224,.85); }
+.truth { position: absolute; left: 70px; right: 70px; top: 760px; padding: 48px 56px 52px; background: var(--chai); color: #fff;
+  border-radius: {{ radius(seed + 3) }}; }
+.truth .hand { font-size: 56px; color: var(--jua); }
+.truth p { margin-top: 12px; font-size: 38px; font-weight: 700; line-height: 1.26; }
+{% endblock %}
+{% block art %}
+  {{ confetti(W, H, seed, n=8, avoid=[(40, 220, 1000, 1000)], rmax=36) }}
+  {{ blob(880, 1180, 120, C.jua, seed + 7, wobble=0.25) }}
+  {{ leaf(160, 1180, 58, C.chai, -30, seed) }}
+{% endblock %}
+{% block content %}
+  <span class="pill series">True or Fake?</span>
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot(expr) }}</svg>
+  <p class="hand label">People say:</p>
+  <h1 class="display claim">&ldquo;{{ claim }}&rdquo;</h1>
+  <p class="display stamp">{{ verdict_text }}</p>
+  <div class="truth"><span class="hand">The truth&hellip;</span><p>{{ truth }}</p></div>
+{% endblock %}

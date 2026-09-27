@@ -1,0 +1,29 @@
+{#- Tool ya Leo — a practical how-to in numbered steps.
+    Fields: title, steps (list, max 4), warn, expr -#}
+{% extends "base.html.j2" %}
+{% set dots_c = [C.shuka, C.jacaranda, C.chai, C.ziwa] %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--usiku); color: var(--jua); }
+.mascot { position: absolute; top: 40px; right: 40px; width: 230px; height: 230px; }
+.title { position: absolute; left: 84px; top: 210px; width: 700px; font-size: {{ fitw(title, 700, 2, 88) }}px; color: var(--usiku); }
+.steps { position: absolute; left: 84px; right: 84px; top: 520px; list-style: none; display: grid; gap: 26px; }
+.steps li { display: grid; grid-template-columns: 84px 1fr; gap: 26px; align-items: center; font-size: 33px; font-weight: 600; line-height: 1.25; }
+.num { width: 84px; height: 78px; display: grid; place-items: center; color: #fff; font-size: 38px; }
+.warn { position: absolute; right: 84px; bottom: 150px; font-size: 50px; color: var(--shuka); transform: rotate(-4deg); }
+{% endblock %}
+{% block art %}
+  {{ confetti(W, H, seed, n=6, avoid=[(40, 200, 1000, 1000)], rmax=34) }}
+  {{ blob(90, 300, 150, C.maziwa, seed + 2, wobble=0.25) }}
+  {{ squiggle(84, 480, 360, C.usiku, seed + 3, amp=8, waves=6, width=7) }}
+{% endblock %}
+{% block content %}
+  <span class="pill series">Today's Tool</span>
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot(expr) }}</svg>
+  <h1 class="display title">{{ title }}</h1>
+  <ol class="steps">
+    {% for s in steps %}
+    <li><span class="display num" style="background: {{ dots_c[loop.index0 % 4] }}; border-radius: {{ radius(seed + loop.index) }}">{{ loop.index }}</span><span>{{ s | nb }}</span></li>
+    {% endfor %}
+  </ol>
+  <p class="hand warn">{{ warn }}</p>
+{% endblock %}

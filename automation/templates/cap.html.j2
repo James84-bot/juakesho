@@ -1,0 +1,26 @@
+{#- Cap or No Cap? — a popular claim, a verdict, the real story.
+    Fields: claim, verdict (cap | nocap | kinda), real -#}
+{% extends "base.html.j2" %}
+{% set V = {'cap': ('CAP', C.shuka), 'nocap': ('NO CAP', C.chai), 'kinda': ('KINDA', C.jacaranda)}[verdict] %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--jua); color: var(--usiku); }
+.hook { position: absolute; left: 84px; top: 180px; font-size: 54px; color: var(--pwani); }
+.claim { position: absolute; left: 70px; right: 70px; top: 260px; padding: 44px 48px; }
+.claim h1 { font-size: {{ fitw(claim, 850, 3, 72) }}px; line-height: 1.06; }
+.verdict { left: 560px; top: 620px; font-size: 64px; padding: 14px 34px; background: {{ V[1] }}; color: #fff; transform: rotate(-8deg); }
+.real { position: absolute; left: 70px; right: 70px; top: 800px; padding: 40px 46px; }
+.real .hook { position: static; font-size: 50px; color: var(--jua); }
+.real p { margin-top: 10px; font-size: 35px; font-weight: 700; line-height: 1.28; }
+.mascot { position: absolute; left: 60px; top: 600px; width: 190px; height: 190px; }
+{% endblock %}
+{% block backdrop %}{{ aurora(W, H, seed, colors=[C.shuka, C.jacaranda, C.pwani, C.jua]) }}{% endblock %}
+{% block art %}
+{% endblock %}
+{% block content %}
+  <span class="pill series">Cap or No Cap?</span>
+  <p class="hook">they keep saying&hellip;</p>
+  <div class="glass claim"><h1 class="display">&ldquo;{{ claim }}&rdquo;</h1></div>
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot('thinking') }}</svg>
+  <span class="sticker verdict">{{ V[0] }}</span>
+  <div class="glass real"><span class="hook">real talk:</span><p>{{ real | nb }}</p></div>
+{% endblock %}

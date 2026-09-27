@@ -1,0 +1,25 @@
+{
+  "name": "Jua Kesho",
+  "handle": "@juakesho",
+  "tagline_sw": "Kesho iko hapa.",
+  "tagline_en": "The future, explained the Kenyan way.",
+  "website": "juakesho.com",
+  "colors": {
+    "jua":       { "hex": "#FFC629", "text": "#1D1433", "meaning": "Sun. Knowledge, optimism. The hero colour." },
+    "shuka":     { "hex": "#D4301F", "text": "#FFFFFF", "meaning": "Maasai shuka red. Energy, heritage, urgency." },
+    "jacaranda": { "hex": "#7A4FD8", "text": "#FFFFFF", "meaning": "Nairobi jacaranda purple. Creativity, the future." },
+    "chai":      { "hex": "#0E7C50", "text": "#FFFFFF", "meaning": "Kericho tea green. Growth, money, land." },
+    "ziwa":      { "hex": "#1E8FD6", "text": "#1D1433", "meaning": "Lake and ocean blue. Trust, technology, connection." },
+    "pwani":     { "hex": "#15B8A6", "text": "#1D1433", "meaning": "Coast turquoise. Freshness, calm, curiosity." },
+    "waridi":    { "hex": "#FF7AB6", "text": "#1D1433", "meaning": "Naivasha rose pink. Fun, warmth, community." },
+    "udongo":    { "hex": "#B8532A", "text": "#FFFFFF", "meaning": "Red soil. Roots, where we come from." },
+    "usiku":     { "hex": "#1D1433", "text": "#FFF4E0", "meaning": "Night. Text and contrast." },
+    "maziwa":    { "hex": "#FFF4E0", "text": "#1D1433", "meaning": "Milk. The paper everything sits on." }
+  },
+  "accents": ["shuka", "jacaranda", "chai", "ziwa", "pwani", "waridi", "udongo"],
+  "fonts": {
+    "display": "Unbounded",
+    "body": "Figtree",
+    "hand": "Caveat"
+  }
+}

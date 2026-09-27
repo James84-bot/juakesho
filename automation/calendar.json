@@ -1,0 +1,200 @@
+{
+  "timezone": "Africa/Nairobi",
+  "utc_offset": "+03:00",
+  "note": "One week of slots for young, social-native Kenyans. Formats rotate by ISO week so the feed never feels repetitive. Times follow when students and young pros are on their phones.",
+  "slots": [
+    {
+      "day": 1,
+      "time": "07:30",
+      "template": "hack",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "campus",
+        "hustle",
+        "young_pro",
+        "creator"
+      ]
+    },
+    {
+      "day": 2,
+      "time": "12:45",
+      "template": [
+        "decode",
+        "cap",
+        "still"
+      ],
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "campus",
+        "young_pro",
+        "techie"
+      ]
+    },
+    {
+      "day": 3,
+      "time": "18:30",
+      "template": "usiibiwe",
+      "bg": [
+        "shuka"
+      ],
+      "lanes": [
+        "campus",
+        "hustle",
+        "everyone"
+      ]
+    },
+    {
+      "day": 4,
+      "time": "19:30",
+      "template": [
+        "vichekesho",
+        "vichekesho",
+        "makanga"
+      ],
+      "bg": [
+        "maziwa",
+        "maziwa",
+        "pwani"
+      ],
+      "lanes": [
+        "campus",
+        "hustle",
+        "creator"
+      ]
+    },
+    {
+      "day": 5,
+      "time": "17:00",
+      "template": [
+        "spotlight",
+        "money",
+        "build",
+        "spotlight",
+        "pov"
+      ],
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "creator",
+        "techie",
+        "diaspora",
+        "young_pro"
+      ]
+    },
+    {
+      "day": 6,
+      "time": "11:00",
+      "template": "cover",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "campus",
+        "young_pro",
+        "creator",
+        "techie"
+      ],
+      "carousel": {
+        "template": "kesho",
+        "slides": 5
+      }
+    },
+    {
+      "day": 7,
+      "time": "18:00",
+      "template": "glasspoll",
+      "size": "story",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    }
+  ],
+  "lanes": {
+    "campus": {
+      "who": "University and college students",
+      "voice": "Fast, funny Kenyan English, campus references (CATs, comrades, hostels, group chats). Study hacks, first jobs, side income."
+    },
+    "young_pro": {
+      "who": "Young professionals in their first jobs",
+      "voice": "Sharp Kenyan English with a wink. AI at work, productivity, promotions, money moves."
+    },
+    "creator": {
+      "who": "Creators and aspiring creators",
+      "voice": "Trend-literate, meme-aware. Editing hacks, AI for content, growth, brand deals."
+    },
+    "hustle": {
+      "who": "Side-hustlers and young business owners",
+      "voice": "Practical Kenyan English. Selling online, WhatsApp Business, M-Pesa tills, automation."
+    },
+    "techie": {
+      "who": "Techies and the tech-curious",
+      "voice": "Nerdy but never gatekeeping. Builds, tools, how things work under the hood."
+    },
+    "diaspora": {
+      "who": "Young Africans abroad and friends on other continents",
+      "voice": "Kenyan English that explains local terms. African innovation, comparisons, connection."
+    },
+    "everyone": {
+      "who": "All Wanakesho",
+      "voice": "Simple Kenyan English. One question anyone can answer."
+    }
+  },
+  "channels": {
+    "instagram": {
+      "auto": true
+    },
+    "facebook": {
+      "auto": true
+    },
+    "whatsapp_channel": {
+      "auto": false,
+      "how": "Forward the approved image + caption from Telegram. WhatsApp Channels have no public posting API."
+    },
+    "tiktok_reels": {
+      "auto": false,
+      "how": "Weekly: turn the Kesho Kutwa carousel into a 30s slideshow with voice-over (script generated)."
+    },
+    "radio": {
+      "auto": false,
+      "how": "Weekly 2-minute community radio segment (script generated) for people without smartphones."
+    },
+    "sms": {
+      "auto": false,
+      "how": "Optional: weekly Usiibiwe tip by SMS to opted-in subscribers via Africa's Talking (script generated, max 160 chars)."
+    }
+  },
+  "industries": [
+    "music",
+    "sports",
+    "fashion",
+    "film",
+    "money",
+    "gaming",
+    "food",
+    "farming",
+    "beauty",
+    "campus life"
+  ],
+  "reel_templates": [
+    "hack",
+    "decode",
+    "cap",
+    "still",
+    "vichekesho",
+    "pov",
+    "money",
+    "spotlight",
+    "build",
+    "usiibiwe",
+    "africa",
+    "makanga"
+  ]
+}

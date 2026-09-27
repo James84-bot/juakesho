@@ -1,0 +1,83 @@
+# Jua Kesho autopilot — runs in the cloud so nothing depends on one laptop.
+#   Sunday 17:00 EAT : plan + draft + check + render next week, send previews to Telegram
+#   Every 2 hours    : collect ✅/❌ taps from Telegram, publish what is approved and due
+# Secrets (repo Settings → Secrets and variables → Actions): see automation/.env.example
+name: autopilot
+
+on:
+  schedule:
+    - cron: "0 14 * * 0"      # Sunday 14:00 UTC = 17:00 EAT
+    - cron: "20 */2 * * *"    # every 2 hours
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "week | tick | learn"
+        default: "tick"
+
+concurrency:
+  group: autopilot          # never run two at once (state lives in the repo)
+  cancel-in-progress: false
+
+permissions:
+  contents: write           # commit renders and state back
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120   # Sunday renders include ~12 Reels
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      JUA_MODEL: ${{ vars.JUA_MODEL }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+      META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
+      META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+      # GitHub Pages serves images/videos with correct content types (enable Pages: Settings → Pages → main / root)
+      PUBLIC_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: automation/requirements.txt
+
+      - name: Pick command
+        id: cmd
+        run: |
+          # Until the Telegram secrets exist, scheduled runs skip quietly instead of failing every 2 hours
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] && [ "${{ github.event_name }}" = "schedule" ]; then
+            echo "Secrets not set yet: skipping. See automation/.env.example"; echo "c=skip" >> "$GITHUB_OUTPUT"; exit 0; fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "c=${{ inputs.command }}" >> "$GITHUB_OUTPUT";
+          elif [ "${{ github.event.schedule }}" = "0 14 * * 0" ]; then echo "c=week" >> "$GITHUB_OUTPUT";
+          else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Install
+        if: steps.cmd.outputs.c == 'week'
+        run: |
+          pip install -r automation/requirements.txt
+          python -m playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg || true   # video.py falls back to imageio-ffmpeg
+
+      - name: Install (light)
+        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'skip'
+        run: pip install -r automation/requirements.txt
+
+      - name: Tests
+        if: steps.cmd.outputs.c != 'skip'
+        run: cd automation && python -m unittest discover -s tests
+
+      - name: Run ${{ steps.cmd.outputs.c }}
+        if: steps.cmd.outputs.c != 'skip'
+        run: cd automation && python pipeline.py ${{ steps.cmd.outputs.c }}
+
+      - name: Save state and renders
+        if: always() && steps.cmd.outputs.c != 'skip'
+        run: |
+          git config user.name "jua-kesho-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add automation/content/weeks automation/state exports || true   # MP4s are committed so Instagram can fetch them
+          git diff --cached --quiet || git commit -m "autopilot: ${{ steps.cmd.outputs.c }} $(date -u +%FT%TZ)"
+          git push

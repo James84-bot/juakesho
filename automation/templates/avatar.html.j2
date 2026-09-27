@@ -1,0 +1,6 @@
+{#- Profile picture: Jua on a colour field, circle-safe. Fields: expr -#}
+{% extends "base.html.j2" %}
+{% block art %}
+  <g transform="translate(90 90) scale(4.5)">{{ mascot(expr) }}</g>
+{% endblock %}
+{% block footer %}{% endblock %}

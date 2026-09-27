@@ -1,0 +1,40 @@
+{#- Shosh Asks — grandma asks, Jua answers. Fields: question, answer, punch -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--usiku); color: var(--waridi); }
+.shosh { position: absolute; left: 60px; top: 190px; width: 210px; height: 210px; }
+.q { position: absolute; left: 270px; right: 70px; top: 200px; padding: 38px 44px; background: var(--maziwa); color: var(--usiku);
+  border-radius: 12px 60px 60px 60px; }
+.who { font-family: "Caveat", cursive; font-weight: 700; font-size: 44px; }
+.q .who { color: var(--shuka); }
+.q p { margin-top: 6px; font-size: {{ fitw(question, 660, 2, 50) }}px; }
+.a { position: absolute; left: 70px; right: 270px; top: 620px; padding: 38px 44px; background: var(--jacaranda); color: #fff;
+  border-radius: 60px 12px 60px 60px; }
+.a .who { color: var(--jua); }
+.a p { margin-top: 6px; font-size: 36px; font-weight: 700; line-height: 1.28; }
+.mascot { position: absolute; right: 44px; top: 600px; width: 230px; height: 230px; }
+.punch { position: absolute; left: 84px; right: 84px; top: 1060px; font-size: 54px; text-align: center; transform: rotate(-2deg); }
+{% endblock %}
+{% block art %}
+  {{ confetti(W, H, seed, n=7, avoid=[(40, 170, 1000, 1030)], rmax=34) }}
+  {{ kanga(0, H - 34, W, 34, [C.usiku, C.jua, C.chai, C.shuka, C.jacaranda], seed) }}
+{% endblock %}
+{% block content %}
+  <span class="pill series">Shosh Asks</span>
+  <svg class="shosh" viewBox="0 0 200 200" aria-hidden="true">
+    {#- Shosh: an original, simple character. Headwrap in kitenge colours, round glasses. -#}
+    {{ blob(100, 118, 64, C.udongo, 11, wobble=0.06, points=9) }}
+    {{ blob(100, 62, 70, C.shuka, 12, wobble=0.12, points=7, stretch=1.15) }}
+    {{ dots(52, 30, 96, 50, C.jua, 13, n=9, rmin=4, rmax=6) }}
+    {{ blob(152, 44, 22, C.shuka, 14, wobble=0.2, points=6) }}
+    <circle cx="80" cy="118" r="15" fill="none" stroke="{{ C.usiku }}" stroke-width="5"/>
+    <circle cx="120" cy="118" r="15" fill="none" stroke="{{ C.usiku }}" stroke-width="5"/>
+    <path d="M95,118 H105" stroke="{{ C.usiku }}" stroke-width="5"/>
+    <circle cx="80" cy="119" r="4" fill="{{ C.usiku }}"/><circle cx="120" cy="119" r="4" fill="{{ C.usiku }}"/>
+    <path d="M84,148 Q100,160 116,148" fill="none" stroke="{{ C.usiku }}" stroke-width="5" stroke-linecap="round"/>
+  </svg>
+  <div class="q"><span class="who">Shosh:</span><p class="display">{{ question }}</p></div>
+  <div class="a"><span class="who">Jua:</span><p>{{ answer }}</p></div>
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot('laugh') }}</svg>
+  <p class="hand punch">{{ punch }}</p>
+{% endblock %}

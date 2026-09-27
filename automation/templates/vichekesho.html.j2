@@ -1,0 +1,45 @@
+{#- Vichekesho — a 3-panel comic with the stick cast.
+    Fields: title, panels (3 × {bg, left?, right?}), punch
+    Each side: {who: shosh|makanga|mama_mboga|boda|student|pro|farmer|jua, pose, mood, say?, sms?}
+    Layout comes from render.comic_layout: speech points at heads, SMS at phones. -#}
+{% extends "base.html.j2" %}
+{% set L = comic_layout(panels, W, seed) %}{% set PH = 330 %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--usiku); color: var(--jua); }
+.title { position: absolute; left: 330px; right: 84px; top: 80px; font-size: 40px; color: var(--usiku); }
+.bub { position: absolute; width: 360px; padding: 18px 24px; background: #fff; border: 4px solid var(--usiku);
+  color: var(--usiku); font-size: 27px; font-weight: 700; line-height: 1.22; }
+.bub.sms { background: var(--usiku); color: var(--maziwa); font-weight: 600; font-size: 25px; }
+.bub.sms small { display: block; font-size: 17px; opacity: .7; margin-bottom: 4px; letter-spacing: .06em; }
+.pnum { position: absolute; left: 70px; width: 44px; height: 44px; display: grid; place-items: center; background: var(--usiku);
+  color: var(--maziwa); font: 800 20px "Unbounded"; border-radius: 50%; }
+.punch { position: absolute; left: 84px; right: 84px; top: 1196px; font-size: 40px; text-align: center; color: var(--usiku); transform: rotate(-1.5deg); }
+{% endblock %}
+{% block art %}
+  {% for p in L %}
+    {% set top = p.top %}{% set k = loop.index0 %}
+    <path d="M{{ 66 + k * 4 }},{{ top + 6 }} L{{ W - 62 }},{{ top }} L{{ W - 66 }},{{ top + PH }} L62,{{ top + PH - 5 + k * 3 }}Z" fill="{{ C[p.bg] }}" stroke="{{ C.usiku }}" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M90,{{ top + PH - 38 }} H{{ W - 90 }}" stroke="{{ C.usiku }}" stroke-opacity=".25" stroke-width="3" stroke-dasharray="2 12" stroke-linecap="round"/>
+    {% for c in p.chars %}
+      {% if c.who == 'jua' %}
+        <g transform="translate({{ c.x - 85 }} {{ c.ground - 175 }}) scale(0.85)">{{ mascot(c.mood | default('wink')) }}</g>
+      {% else %}
+        {{ stick(c.who, c.x, c.ground, c.pose, c.mood | default('happy'), 1.12, c.sms is defined) }}
+      {% endif %}
+    {% endfor %}
+    {% for b in p.bubbles %}{% set t = b.tail %}
+      <path class="tail" d="M{{ t[0] }},{{ t[1] }} L{{ t[2] }},{{ t[3] }} L{{ t[4] }},{{ t[5] }}Z" fill="{{ C.usiku if b.sms else '#fff' }}" stroke="{{ C.usiku }}" stroke-width="4" stroke-linejoin="round"/>
+    {% endfor %}
+  {% endfor %}
+{% endblock %}
+{% block content %}
+  <span class="pill series">Vichekesho</span>
+  <h1 class="display title">{{ title }}</h1>
+  {% for p in L %}
+    <span class="pnum" style="top: {{ p.top - 14 }}px">{{ loop.index }}</span>
+    {% for b in p.bubbles %}
+      <p class="bub{{ ' sms' if b.sms }}" style="left: {{ b.left }}px; top: {{ b.top }}px; border-radius: {{ b.radius }}">{% if b.sms %}<small>SMS</small>{% endif %}{{ b.text | nb }}</p>
+    {% endfor %}
+  {% endfor %}
+  <p class="hand punch">{{ punch }}</p>
+{% endblock %}

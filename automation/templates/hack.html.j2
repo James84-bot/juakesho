@@ -1,0 +1,30 @@
+{#- AI Hack — one move that saves real time. Fields: hook, title, moves (2-4), payoff, series? -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--jua); color: var(--usiku); }
+.hook { position: absolute; left: 84px; top: 170px; font-size: 58px; color: var(--pwani); transform: rotate(-2deg); }
+.title { position: absolute; left: 84px; right: 84px; top: 250px; font-size: {{ fitw(title, 912, 3, 84) }}px; color: #fff; }
+.card { position: absolute; left: 70px; right: 70px; top: 600px; padding: 36px 40px; display: grid; gap: 20px; }
+.move { display: grid; grid-template-columns: 58px 1fr; gap: 20px; align-items: center; font-size: 31px; font-weight: 700; line-height: 1.25; }
+.move svg { width: 58px; height: 58px; filter: drop-shadow(0 2px 4px rgba(10, 5, 25, .55)); }
+.payoff { position: absolute; left: 84px; right: 330px; top: 1105px; font-size: 44px; color: var(--jua); transform: rotate(-2deg); }
+.save { right: 90px; top: 540px; background: var(--jua); color: var(--usiku); transform: rotate(8deg); }
+.mascot { position: absolute; right: 30px; bottom: 120px; width: 230px; height: 230px; }
+{% endblock %}
+{% block backdrop %}{{ aurora(W, H, seed, colors=[C.jacaranda, C.pwani, C.shuka, C.jua]) }}{% endblock %}
+{% block art %}
+{% endblock %}
+{% block content %}
+  <span class="pill series">{{ series | default('AI Hack') }}</span>
+  <p class="hook">{{ hook }}</p>
+  <h1 class="display title">{{ title }}</h1>
+  <div class="glass card">
+    {% set mc = [C.jua, C.pwani, C.waridi, C.ziwa] %}
+    {% for m in moves %}
+    <div class="move"><svg viewBox="0 0 58 58"><path d="{{ 'M8,29 C20,26 30,27 46,29 M34,16 L48,29 L34,42' }}" fill="none" stroke="{{ mc[loop.index0 % 4] }}" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>{{ m | nb }}</span></div>
+    {% endfor %}
+  </div>
+  <span class="sticker save">SAVE THIS</span>
+  <p class="hook payoff">{{ payoff }}</p>
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot('visor') }}</svg>
+{% endblock %}

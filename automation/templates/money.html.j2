@@ -1,0 +1,26 @@
+{#- Follow the Money — one public-money number, what it means, how to check it yourself.
+    Fields: hook, number, unit, what, why, check -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--chai); color: #fff; }
+.hook { position: absolute; left: 84px; top: 180px; font-size: 58px; color: var(--jua); }
+.num { position: absolute; left: 60px; right: 60px; top: 250px; font-size: {{ fitw(number, 940, 1, 230, 0.92) }}px; color: #fff; letter-spacing: -.05em;
+  text-shadow: 0 0 60px rgba(55,201,120,.45); white-space: nowrap; }
+.unit { position: absolute; left: 84px; top: 510px; font: 800 34px "Unbounded"; color: var(--pwani); }
+.what { position: absolute; left: 70px; right: 70px; top: 590px; padding: 34px 40px; font-size: 33px; font-weight: 700; line-height: 1.28; }
+.why { position: absolute; left: 70px; right: 70px; top: 830px; padding: 28px 40px; font-size: 29px; line-height: 1.3; }
+.why b, .check b { font-family: "Caveat"; font-size: 42px; margin-right: 10px; }
+.why b { color: var(--jua); }
+.check { position: absolute; left: 70px; right: 70px; top: 1040px; padding: 22px 36px; font-size: 26px; line-height: 1.3; }
+.check b { color: var(--chai); }
+{% endblock %}
+{% block backdrop %}{{ aurora(W, H, seed, colors=[C.chai, C.jacaranda, C.pwani, C.jua]) }}{% endblock %}
+{% block content %}
+  <span class="pill series">Follow the Money</span>
+  <p class="hook">{{ hook }}</p>
+  <p class="display num">{{ number }}</p>
+  <p class="unit">{{ unit }}</p>
+  <p class="glass what">{{ what | nb }}</p>
+  <p class="glass why"><b>Why you should care:</b>{{ why | nb }}</p>
+  <p class="glass glass--light check"><b>Check it yourself:</b>{{ check | nb }}</p>
+{% endblock %}

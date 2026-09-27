@@ -1,0 +1,31 @@
+{#- Kesho Kutwa inner slide (Kesho Mode). Fields: n, total, headline, leo, kesho, anza -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.num { position: absolute; left: 70px; top: 90px; font-size: 230px; color: var(--jua); text-shadow: 0 0 40px rgba(255,198,41,.45); letter-spacing: -.06em; }
+.count { position: absolute; right: 84px; top: 120px; font-family: "Unbounded"; font-weight: 700; font-size: 24px; color: var(--pwani); }
+.headline { position: absolute; left: 84px; top: 360px; width: 912px; font-size: {{ fitw(headline, 912, 2, 80) }}px; }
+.rows { position: absolute; left: 84px; right: 84px; top: 620px; display: grid; gap: 22px; }
+.row { display: grid; grid-template-columns: 200px 1fr; gap: 24px; align-items: start; padding: 26px 30px; background: var(--usiku); border: 3px solid var(--pwani); border-radius: {{ radius(seed + 2) }}; }
+.row.k { border-color: var(--jua); }
+.row .hand { font-size: 46px; color: var(--pwani); }
+.row.k .hand { color: var(--jua); }
+.row p { font-size: 31px; font-weight: 600; line-height: 1.3; }
+.anza { position: absolute; left: 70px; right: 70px; top: 1000px; padding: 30px 40px; background: var(--pwani); color: var(--usiku);
+  border-radius: {{ radius(seed + 4) }}; font-size: 30px; font-weight: 700; line-height: 1.3; }
+.anza b { font-family: "Caveat"; font-size: 44px; margin-right: 10px; }
+{% endblock %}
+{% block art %}
+  {{ circuit(0, 0, W, H - 160, C.jacaranda, seed, traces=9) }}
+  {{ orbit(880, 250, 170, 60, -15, C.pwani, seed + 1, planets=2) }}
+  <g transform="translate(800 170) scale(0.8)">{{ mascot('visor') }}</g>
+{% endblock %}
+{% block content %}
+  <p class="display num">{{ '%02d' % n }}</p>
+  <span class="count">{{ n }} / {{ total }}</span>
+  <h1 class="display headline">{{ headline }}</h1>
+  <div class="rows">
+    <div class="row"><span class="hand">Today</span><p>{{ leo }}</p></div>
+    <div class="row k"><span class="hand">Tomorrow</span><p>{{ kesho }}</p></div>
+  </div>
+  <p class="anza"><b>Try it now:</b>{{ anza }}</p>
+{% endblock %}

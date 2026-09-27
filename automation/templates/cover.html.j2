@@ -1,0 +1,32 @@
+{#- Carousel cover. On usiku it switches to Kesho Mode (orbits, circuits, glow).
+    Fields: series, lines (list), highlight (index), kicker, expr -#}
+{% extends "base.html.j2" %}
+{% set hi = [C.jua, C.pwani, C.waridi] %}
+{% set future = bg_name == 'usiku' %}
+{% block style %}
+.series { position: absolute; top: 110px; left: 84px; background: var(--jua); color: var(--usiku); }
+.mascot { position: absolute; top: 700px; right: 70px; width: 360px; height: 360px; }
+.lines { position: absolute; left: 84px; top: 230px; width: 912px; }
+.lines span { display: block; font-size: {{ fit(lines | join('\n'), 900, 118) }}px; }
+.lines .hi { color: {{ hi[seed % 3] }}; {% if future %}text-shadow: 0 0 28px {{ hi[seed % 3] }}80;{% endif %} }
+.kicker { position: absolute; left: 84px; top: 1000px; width: 520px; font-size: 58px; color: var(--pwani); transform: rotate(-3deg); }
+{% endblock %}
+{% block art %}
+  {% if future %}
+    {{ circuit(0, 60, W, H - 200, C.pwani, seed, traces=10) }}
+    {{ circuit_kanga(0, 30, W, 46, [C.jua, C.pwani, C.waridi, C.jacaranda], seed) }}
+    {{ orbit(W - 250, 880, 250, 90, -18, C.pwani, seed + 1, planets=2) }}
+    {{ orbit(W - 250, 880, 215, 150, 24, C.jacaranda, seed + 2, planets=1, dash="2 10", width=4) }}
+  {% else %}
+    {{ blob(-40, 1250, 260, C.jacaranda, seed + 1, wobble=0.25) }}
+    {{ blob(1100, 180, 190, C.shuka, seed + 2, wobble=0.25) }}
+    {{ confetti(W, H, seed, n=10, avoid=[(40, 200, 1000, 700), (40, 900, 700, 200)], rmax=42) }}
+  {% endif %}
+  {{ arrow(460, 1160, 640, 1130, C.pwani, width=8, bend=-0.3) }}
+{% endblock %}
+{% block content %}
+  <span class="pill series">{{ series }}</span>
+  <h1 class="display lines">{% for l in lines %}<span class="{{ 'hi' if loop.index0 == highlight else '' }}">{{ l }}</span>{% endfor %}</h1>
+  <p class="hand kicker">{{ kicker }}</p>
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot(expr) }}</svg>
+{% endblock %}

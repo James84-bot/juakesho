@@ -1,0 +1,28 @@
+{#- Build With Me — a real build, shown as a workflow. Fields: hook, title, flow (3-6), stack (list), result -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--jua); color: var(--usiku); }
+.hook { position: absolute; left: 84px; top: 170px; font-size: 54px; color: var(--pwani); transform: rotate(-2deg); }
+.title { position: absolute; left: 84px; right: 84px; top: 240px; font-size: {{ fitw(title, 912, 3, 76) }}px; color: #fff; }
+.flow { position: absolute; left: 70px; right: 70px; top: 520px; padding: 34px 36px; display: grid; gap: 12px; }
+.node { display: grid; grid-template-columns: 22px 1fr; gap: 18px; align-items: center; font: 600 29px "Figtree"; }
+.node i { width: 22px; height: 22px; border-radius: 50%; background: var(--pwani); box-shadow: 0 0 18px var(--pwani); }
+.node:first-child i, .node:last-child i { background: var(--jua); box-shadow: 0 0 18px var(--jua); }
+.link { margin-left: 10px; width: 3px; height: 16px; background: rgba(255,255,255,.4); }
+.stack { position: absolute; left: 84px; right: 84px; top: 1010px; display: flex; flex-wrap: wrap; gap: 10px; }
+.stack span { padding: 8px 18px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1.5px solid rgba(255,255,255,.4); font: 700 22px "Unbounded"; color: #fff; }
+.result { position: absolute; left: 84px; right: 84px; top: 1090px; font-size: 44px; color: var(--jua); }
+{% endblock %}
+{% block backdrop %}{{ aurora(W, H, seed, colors=[C.chai, C.pwani, C.jacaranda, C.jua]) }}{% endblock %}
+{% block art %}
+{% endblock %}
+{% block content %}
+  <span class="pill series">Build With Me</span>
+  <p class="hook">{{ hook }}</p>
+  <h1 class="display title">{{ title }}</h1>
+  <div class="glass flow">
+    {% for step in flow %}{% if not loop.first %}<span class="link"></span>{% endif %}<div class="node"><i></i><span>{{ step | nb }}</span></div>{% endfor %}
+  </div>
+  <div class="stack">{% for s in stack %}<span>{{ s }}</span>{% endfor %}</div>
+  <p class="hook result">{{ result }}</p>
+{% endblock %}

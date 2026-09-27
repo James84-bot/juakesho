@@ -1,0 +1,46 @@
+{
+  "collection": "profiles",
+  "posts": [
+    {
+      "id": "avatar-jacaranda",
+      "template": "avatar",
+      "size": "avatar",
+      "bg": "jacaranda",
+      "expr": "happy"
+    },
+    {
+      "id": "avatar-jua",
+      "template": "avatar",
+      "size": "avatar",
+      "bg": "pwani",
+      "expr": "happy"
+    },
+    {
+      "id": "youtube-banner-2560x1440",
+      "template": "banner",
+      "size": "youtube",
+      "bg": "usiku",
+      "seed": 41,
+      "line": "Tech & the future, the Kenyan way.",
+      "sub": "Kesho iko hapa. Tomorrow is here."
+    },
+    {
+      "id": "x-header-1500x500",
+      "template": "banner",
+      "size": "x",
+      "bg": "usiku",
+      "seed": 42,
+      "line": "Tech & the future, the Kenyan way.",
+      "sub": "Kesho iko hapa."
+    },
+    {
+      "id": "facebook-cover-1640x624",
+      "template": "banner",
+      "size": "facebook",
+      "bg": "usiku",
+      "seed": 43,
+      "line": "Tech & the future, the Kenyan way.",
+      "sub": "Kesho iko hapa. Tomorrow is here."
+    }
+  ]
+}

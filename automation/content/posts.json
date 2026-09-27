@@ -1,0 +1,342 @@
+{
+  "collection": "posts",
+  "posts": [
+    {
+      "id": "00-karibu",
+      "template": "intro",
+      "bg": "jua",
+      "hello": "Sasa!",
+      "promise": [
+        "AI hacks, future drops & tech tea",
+        "Kenyan English, zero boring lectures",
+        "Clean, funny, made in Nairobi for the world"
+      ],
+      "community": "Follow & join the Wanakesho: the ones building tomorrow.",
+      "caption": "Sasa, Wanakesho! AI hacks, future drops and tech tea, in Kenyan English, zero boring lectures. Drop the one tech thing you wish someone explained properly and we'll cover it this week.\n\n#JuaKesho #Wanakesho"
+    },
+    {
+      "id": "01-hack-lecture-notes",
+      "template": "hack",
+      "bg": "usiku",
+      "hook": "nobody told you this…",
+      "title": "Turn a 1-hour lecture into notes in 2 minutes",
+      "moves": [
+        "Record the lecture on your phone (ask the lecturer first).",
+        "Upload the audio to an AI that takes voice files, like Gemini.",
+        "Ask: “Bullet notes + 5 exam questions, simple English.”"
+      ],
+      "payoff": "Revision just got a shortcut.",
+      "caption": "AI Hack: a 1-hour lecture into clean notes and practice questions in about 2 minutes. Always ask before recording. Send this to the class group before CATs.\n\n#AIHack #JuaKesho"
+    },
+    {
+      "id": "02-decode-prompt",
+      "template": "decode",
+      "bg": "usiku",
+      "hook": "everyone's saying it…",
+      "word": "Prompt",
+      "number": 1,
+      "meaning": "What you type to tell an AI what you want. Vague prompt, vague answer. Give it a role, a task and an example.",
+      "try_this": "Not “write a caption” but “3 funny captions for my thrift reel, Kenyan English, under 12 words”.",
+      "caption": "Decode No. 1: Prompt. The difference between a boring AI answer and a fire one is how you ask. Save this, then share your best prompt in the comments.\n\n#Decode #JuaKesho"
+    },
+    {
+      "id": "03-cap-coding",
+      "template": "cap",
+      "bg": "usiku",
+      "claim": "You need to know coding to build with AI.",
+      "verdict": "cap",
+      "real": "Most AI tools work in plain English. Coding takes you further, but you can build a bot, a site or a content system this weekend without it.",
+      "source": "General: mainstream AI assistants and no-code automation tools accept plain-language instructions",
+      "caption": "Cap or No Cap? “You need coding to build with AI.” CAP. Start with plain English, learn code as you go. Tag the friend who keeps saying “I'm not a tech person”.\n\n#CapOrNoCap #JuaKesho"
+    },
+    {
+      "id": "04-usiibiwe-task-scam",
+      "template": "usiibiwe",
+      "bg": "shuka",
+      "title": "“Get paid to like TikToks”",
+      "sender": "+254 7XX XXX XXX",
+      "sms": "Hi! Earn Ksh 2,000 daily liking videos. Pay Ksh 500 registration to start today.",
+      "tips": [
+        "Real jobs never ask you to pay to start.",
+        "Nobody pays you just to like posts.",
+        "Search the company name + “scam” first."
+      ],
+      "expr": "wow",
+      "source": "Common 'task scam' pattern (pay-to-start online jobs); confirm against a current Communications Authority of Kenya or Safaricom fraud advisory before posting",
+      "caption": "USIIBIWE! “Earn daily for liking videos, just pay registration.” That's how they get you. Real jobs don't charge you to start. Send this to the group chat, someone needs it.\n\n#Usiibiwe #JuaKesho"
+    },
+    {
+      "id": "05-vichekesho-cv",
+      "template": "vichekesho",
+      "bg": "maziwa",
+      "title": "40 applications, 0 replies",
+      "panels": [
+        {
+          "bg": "pwani",
+          "left": {
+            "who": "student",
+            "pose": "phone",
+            "mood": "worried",
+            "say": "40 applications. Zero replies. Manze!"
+          }
+        },
+        {
+          "bg": "jua",
+          "left": {
+            "who": "student",
+            "pose": "think",
+            "mood": "flat",
+            "say": "What am I doing wrong?"
+          },
+          "right": {
+            "who": "techie",
+            "pose": "point",
+            "mood": "happy",
+            "say": "Same CV for every job? Let AI tailor it to each one."
+          }
+        },
+        {
+          "bg": "waridi",
+          "left": {
+            "who": "student",
+            "pose": "cheer",
+            "mood": "happy",
+            "say": "Two interviews this week!"
+          },
+          "right": {
+            "who": "jua",
+            "mood": "wink",
+            "say": "Tailor smart. Stay honest."
+          }
+        }
+      ],
+      "punch": "CV 2.0 unlocked.",
+      "caption": "Vichekesho: same CV for 40 jobs = 0 replies. Tailor it per job with AI, keep every fact true. Tag the friend currently on application number 41.\n\n#Vichekesho #JuaKesho"
+    },
+    {
+      "id": "06-pov-agent",
+      "template": "pov",
+      "bg": "usiku",
+      "year": "2030",
+      "pov": "your AI agent applied to 20 jobs while you slept, each cover letter in your voice.",
+      "real": "Early AI agents that do tasks for you already exist. The skill that pays: telling them exactly what you want, then checking their work.",
+      "cast": [
+        {
+          "who": "student",
+          "pose": "phone",
+          "mood": "happy",
+          "phone": true
+        },
+        {
+          "who": "jua",
+          "mood": "visor"
+        },
+        {
+          "who": "techie",
+          "pose": "stand",
+          "mood": "happy"
+        }
+      ],
+      "source": "General: AI assistants that can take multi-step actions ('agents') are available in early form from major AI companies",
+      "caption": "POV: Kesho. Your AI agent job-hunting while you sleep. Closer than you think. Would you trust it? Reply YES or NO.\n\n#POVKesho #JuaKesho"
+    },
+    {
+      "id": "07-build-comrade",
+      "template": "build",
+      "bg": "usiku",
+      "hook": "I got tired of PDF timetables…",
+      "title": "So I built a bot that reads campus notices for me",
+      "flow": [
+        "Notice lands on WhatsApp",
+        "AI reads the PDF",
+        "Saved to a database",
+        "I approve on Telegram",
+        "Students get the update"
+      ],
+      "stack": [
+        "n8n",
+        "Gemini",
+        "Postgres",
+        "Telegram"
+      ],
+      "result": "Pilot soon. Comment BOT for the breakdown.",
+      "caption": "Build With Me: a bot that reads campus notices so nobody digs through PDFs again. No human, no send: every message gets approved first. Comment BOT and we'll break it down step by step.\n\n#BuildWithMe #JuaKesho"
+    },
+    {
+      "id": "08-africa-mpesa",
+      "template": "africa",
+      "bg": "chai",
+      "year": "2007",
+      "name": "M-Pesa",
+      "country": "Kenya",
+      "fact": "Kenya made sending money by SMS an everyday thing, long before most of the world had heard of mobile money.",
+      "now": "We started it. The world followed.",
+      "caption": "Made in Africa: in 2007 Kenya launched M-Pesa, and sending money by phone became normal here. Which African innovation are you proud of?\n\n#MadeInAfrica #JuaKesho",
+      "source": "https://en.wikipedia.org/wiki/M-Pesa"
+    },
+    {
+      "id": "09-cover-kesho-kutwa",
+      "template": "cover",
+      "bg": "usiku",
+      "series": "Kesho Kutwa",
+      "lines": [
+        "5 things",
+        "your phone",
+        "will soon",
+        "do for you"
+      ],
+      "highlight": 1,
+      "kicker": "Swipe to see tomorrow!",
+      "expr": "visor",
+      "caption": "Kesho Kutwa: 5 things your phone will soon do for you. Swipe, then save it so you remember when tomorrow comes.\n\n#KeshoKutwa #JuaKesho"
+    },
+    {
+      "id": "09b-kesho-mtafsiri",
+      "template": "kesho",
+      "bg": "usiku",
+      "n": 1,
+      "total": 5,
+      "headline": "Your phone will be your translator.",
+      "leo": "Apps can already translate a live conversation between many languages, Kiswahili included.",
+      "kesho": "Talk to anyone, anywhere, each in your own language, almost without noticing the phone.",
+      "anza": "Open Google Translate, tap Conversation, and chat with a friend in two languages.",
+      "caption": "1/5: Your phone will be your translator. Try Conversation mode in Google Translate today with a friend.\n\n#KeshoKutwa #JuaKesho",
+      "source": "https://support.google.com/translate/"
+    },
+    {
+      "id": "10-story-poll-dms",
+      "template": "glasspoll",
+      "size": "story",
+      "bg": "usiku",
+      "hook": "be honest…",
+      "question": "Would you let AI reply your DMs?",
+      "options": [
+        "Yes, save my time",
+        "Never, too personal"
+      ],
+      "cta": "Vote below!",
+      "caption": "Jua Asks: would you let AI reply your DMs? Vote on the story!"
+    },
+    {
+      "id": "12-still-music",
+      "template": "still",
+      "bg": "usiku",
+      "industry": "Music",
+      "thing": "wait for radio to “discover” new artists",
+      "old": "Burn the song, beg a DJ, wait months, hope.",
+      "new": "Upload to streaming, turn the hook into a TikTok sound, pitch playlists from your artist dashboard, study your fan data.",
+      "cta": "Tag an artist who needs this.",
+      "source": "General: major streaming platforms offer artist dashboards with playlist pitching and listener data",
+      "caption": "Still in 2026? Waiting for radio to find you. The kesho way: your fans are already on TikTok and streaming. Tag an upcoming artist who needs this, then drop your favourite new Kenyan song below.\n\n#StillIn2026 #JuaKesho"
+    },
+    {
+      "id": "13-spotlight-ushahidi",
+      "template": "spotlight",
+      "bg": "usiku",
+      "kind": "Startup",
+      "name": "Ushahidi",
+      "country": "Kenya · 2008",
+      "what": "Open-source software built in Kenya that lets people report what's happening by SMS or web, and see it on a live map.",
+      "why": "Made here, then used by responders and communities around the world. Proof that African tech travels.",
+      "cta": "Share this so more people know it's ours.",
+      "source": "https://en.wikipedia.org/wiki/Ushahidi",
+      "caption": "Put Us On: Ushahidi, built in Kenya in 2008, now used around the world. We support our own. Share this, then tag an African startup or artist we should spotlight next.\n\n#PutUsOn #JuaKesho"
+    },
+    {
+      "id": "14-money-idle-funds",
+      "template": "money",
+      "bg": "usiku",
+      "hook": "read that number again…",
+      "number": "Sh304bn",
+      "unit": "idle in 14 flagship projects",
+      "what": "59% of the Sh515bn set aside for 14 flagship projects over five years was never used, says the Auditor-General.",
+      "why": "Unused money still costs: loans on undrawn funds charge fees, and the projects you were promised wait.",
+      "check": "Auditor-General reports are public on parliament.go.ke. Read one page tonight.",
+      "source": "Auditor-General Nancy Gathungu to the National Assembly Budget Committee, 2 June 2025 (Capital FM: capitalfm.africa/audit-exposes-sh304bn-in-idle-govt-project-funds)",
+      "caption": "Follow the Money: Sh304 billion set aside for flagship projects, never used. Unused money still costs us in loan fees and delayed projects. Save this and send it to someone who says “politics isn't my business”. It's your money.\n\n#FollowTheMoney #JuaKesho"
+    },
+    {
+      "id": "15-see-paid-trends",
+      "template": "hack",
+      "bg": "usiku",
+      "series": "See Through It",
+      "hook": "trending ≠ true…",
+      "title": "How to spot a paid hashtag in 30 seconds",
+      "moves": [
+        "Same phrase, many accounts, same hour? Copy-paste army.",
+        "Tap the profiles: new, few real followers, posts only hashtags.",
+        "Search the tag, sort by oldest: see who started it and when."
+      ],
+      "payoff": "Some get paid $10–15 a day to trend.",
+      "source": "Mozilla Foundation, 'Inside the Shadowy World of Disinformation-for-hire in Kenya', Odanga Madung & Brian Obilo, 2 Sept 2021",
+      "caption": "See Through It: some trends are bought. Mozilla researchers documented influencers paid via M-Pesa to push hashtags. Before you retweet, check in 30 seconds. Send this to the group chat that believes every trend.\n\n#SeeThroughIt #JuaKesho"
+    },
+    {
+      "id": "16-vichekesho-500",
+      "template": "vichekesho",
+      "bg": "maziwa",
+      "title": "The Ksh 500 “job”",
+      "series": "See Through It",
+      "panels": [
+        {
+          "bg": "pwani",
+          "left": {
+            "who": "student",
+            "pose": "phone",
+            "mood": "wow",
+            "say": "Eh, easy money?",
+            "sms": "Kazi ya leo: come make noise tomorrow. Ksh 500 + lunch. Don't ask questions."
+          }
+        },
+        {
+          "bg": "jua",
+          "left": {
+            "who": "ahadi",
+            "pose": "point",
+            "mood": "happy",
+            "say": "Just shout my name, vijana!"
+          },
+          "right": {
+            "who": "techie",
+            "pose": "shrug",
+            "mood": "worried",
+            "say": "500 today. Who pays if things go wrong?"
+          }
+        },
+        {
+          "bg": "waridi",
+          "left": {
+            "who": "student",
+            "pose": "cheer",
+            "mood": "happy",
+            "say": "Blocked. My future costs more than 500."
+          },
+          "right": {
+            "who": "jua",
+            "mood": "wink",
+            "say": "Nobody's tool. Ever."
+          }
+        }
+      ],
+      "punch": "Your future > Ksh 500.",
+      "source": "Allegory: fictional characters. Pattern of paying young people to disrupt or crowd events is widely reported in Kenyan media and civil society research",
+      "caption": "Vichekesho: the Ksh 500 “job”. Nobody who pays you to shout cares what happens to you after. Fictional characters, real pattern. Send this to a friend who's worth more than 500.\n\n#SeeThroughIt #JuaKesho"
+    },
+    {
+      "id": "17-cant-wait",
+      "template": "cover",
+      "bg": "usiku",
+      "series": "Manifesto",
+      "lines": [
+        "Africa",
+        "can't wait.",
+        "Kesho",
+        "iko hapa."
+      ],
+      "highlight": 1,
+      "kicker": "Wake up. Build. Do it right.",
+      "expr": "visor",
+      "caption": "Africa can't wait. Not for permission, not for “next year”. Tomorrow is already here, and it belongs to the ones who learn it first. Send this to one person who's ready to build.\n\n#JuaKesho #Wanakesho"
+    }
+  ]
+}

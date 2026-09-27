@@ -1,0 +1,32 @@
+{#- Still in 2026? — roast an outdated way of doing things (never a person), then show the upgrade.
+    Fields: industry, thing, old, new, cta -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.series { position: absolute; top: 84px; left: 84px; background: var(--shuka); color: #fff; }
+.ind { position: absolute; top: 84px; right: 84px; background: rgba(255,255,255,.16); color: #fff; border: 1.5px solid rgba(255,255,255,.4); }
+.lead { position: absolute; left: 84px; top: 180px; font-size: 60px; color: var(--jua); transform: rotate(-2deg); }
+.thing { position: absolute; left: 84px; right: 84px; top: 250px; font-size: {{ fitw(thing, 912, 3, 80) }}px; color: #fff; }
+.old, .new { position: absolute; left: 70px; right: 70px; padding: 30px 40px; font-size: 32px; font-weight: 700; line-height: 1.28; }
+.old { top: 610px; }
+.old p { text-decoration: line-through; text-decoration-color: var(--shuka); text-decoration-thickness: 4px; opacity: .85; }
+.new { top: 820px; }
+.old .hook, .new .hook { font-size: 44px; display: block; margin-bottom: 6px; }
+.old .hook { color: #ff9a8f; } .new .hook { color: var(--pwani); }
+.cta { position: absolute; left: 84px; right: 300px; top: 1080px; font-size: 44px; color: var(--jua); transform: rotate(-2deg); }
+.mascot { position: absolute; right: 40px; bottom: 120px; width: 220px; height: 220px; }
+.stamp { right: 110px; top: 575px; background: var(--jua); color: var(--usiku); transform: rotate(7deg); }
+{% endblock %}
+{% block backdrop %}{{ aurora(W, H, seed, colors=[C.shuka, C.jacaranda, C.udongo, C.pwani]) }}{% endblock %}
+{% block art %}
+{% endblock %}
+{% block content %}
+  <span class="pill series">Still in 2026?</span>
+  <span class="pill ind">{{ industry }}</span>
+  <p class="hook lead">it's 2026 and we still&hellip;</p>
+  <h1 class="display thing">{{ thing }}</h1>
+  <div class="glass old"><span class="hook">the old way</span><p>{{ old | nb }}</p></div>
+  <span class="sticker stamp">UPGRADE</span>
+  <div class="glass new"><span class="hook">the kesho way</span><p>{{ new | nb }}</p></div>
+  <p class="hook cta">{{ cta }}</p>
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot('laugh') }}</svg>
+{% endblock %}

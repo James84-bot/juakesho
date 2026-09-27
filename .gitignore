@@ -1,0 +1,4 @@
+automation/.env
+__pycache__/
+*.pyc
+exports/**/.*.html

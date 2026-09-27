@@ -1,0 +1,32 @@
+{#- Profile banner for youtube / x / facebook. Key content stays in the centre safe zone.
+    Fields: line, sub -#}
+{% extends "base.html.j2" %}
+{% set safe = {2560: (1546, 423), 1500: (1100, 360), 1640: (1300, 480)}[W] %}
+{% set sx = (W - safe[0]) / 2 %}{% set sy = (H - safe[1]) / 2 %}
+{% if W == 1500 %}{% set sx = 380 %}{% endif %}
+{% block style %}
+.safe { position: absolute; left: {{ sx }}px; top: {{ sy }}px; width: {{ safe[0] }}px; height: {{ safe[1] }}px;
+  display: grid; grid-template-columns: {{ safe[1] * 0.9 }}px 1fr; gap: {{ safe[1] * 0.08 }}px; align-items: center; }
+.safe svg { width: 100%; height: auto; }
+.logo { height: {{ safe[1] * 0.26 }}px; }
+.line { margin-top: {{ safe[1] * 0.05 }}px; font-size: {{ safe[1] * 0.15 }}px; }
+.sub { margin-top: {{ safe[1] * 0.04 }}px; font-size: {{ safe[1] * 0.14 }}px; color: var(--jua); }
+{% endblock %}
+{% block art %}
+  {{ circuit(0, 0, W, H, C.jacaranda, seed, traces=14, width=H * 0.006) }}
+  <rect x="{{ sx + safe[1] * 0.95 }}" y="{{ sy - 10 }}" width="{{ safe[0] - safe[1] * 0.95 + 20 }}" height="{{ safe[1] + 20 }}" fill="{{ bg }}"/>
+  {{ orbit(sx + safe[1] * 0.45, sy + safe[1] * 0.5, safe[1] * 0.62, safe[1] * 0.2, -14, C.pwani, seed, planets=2, width=H * 0.005) }}
+  {{ confetti(W, H, seed, n=22, avoid=[(sx - 20, sy - 20, safe[0] + 40, safe[1] + 40)], rmin=H * 0.02, rmax=H * 0.07, footer=0) }}
+  {{ kanga(0, H - H * 0.035, W, H * 0.035, [C.usiku, C.jua, C.shuka, C.chai, C.jacaranda, C.pwani], seed) }}
+{% endblock %}
+{% block content %}
+  <div class="safe">
+    <svg viewBox="0 0 200 200">{{ mascot('visor') }}</svg>
+    <div>
+      <img class="logo" src="{{ logo_on_dark }}" alt="Jua Kesho">
+      <p class="display line">{{ line }}</p>
+      <p class="hand sub">{{ sub }}</p>
+    </div>
+  </div>
+{% endblock %}
+{% block footer %}{% endblock %}

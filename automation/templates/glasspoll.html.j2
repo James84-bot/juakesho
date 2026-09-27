@@ -1,0 +1,23 @@
+{#- Jua Asks — story poll in Glass mode (1080x1920). Fields: hook, question, options (2), cta -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.series { position: absolute; top: 200px; left: 84px; background: var(--jua); color: var(--usiku); font-size: 28px; }
+.hook { position: absolute; left: 84px; top: 290px; font-size: 64px; color: var(--pwani); }
+.q { position: absolute; left: 70px; right: 70px; top: 390px; padding: 50px 50px; }
+.q h1 { font-size: {{ fitw(question, 840, 3, 104) }}px; line-height: 1.04; }
+.opts { position: absolute; left: 84px; right: 84px; top: 860px; display: grid; gap: 26px; }
+.opts span { padding: 36px 44px; font-size: 50px; }
+.cta { position: absolute; left: 84px; top: 1250px; font-size: 64px; color: var(--jua); transform: rotate(-4deg); }
+.mascot { position: absolute; right: 40px; bottom: 170px; width: 420px; height: 420px; }
+{% endblock %}
+{% block backdrop %}{{ aurora(W, H, seed, colors=[C.jacaranda, C.waridi, C.pwani, C.jua], n=6) }}{% endblock %}
+{% block art %}
+{% endblock %}
+{% block content %}
+  <span class="pill series">Jua Asks</span>
+  <p class="hook">{{ hook }}</p>
+  <div class="glass q"><h1 class="display">{{ question }}</h1></div>
+  <div class="opts">{% for o in options %}<span class="glass display">{{ o }}</span>{% endfor %}</div>
+  <p class="hook cta">{{ cta }}</p>
+  <svg class="mascot" viewBox="0 0 200 200">{{ mascot('thinking') }}</svg>
+{% endblock %}
