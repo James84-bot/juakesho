@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "week | tick | learn"
+        description: "week | tick | learn | rehearse (no keys needed: renders a mock week, posts nothing)"
         default: "tick"
 
 concurrency:
@@ -55,26 +55,38 @@ jobs:
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
       - name: Install
-        if: steps.cmd.outputs.c == 'week'
+        if: steps.cmd.outputs.c == 'week' || steps.cmd.outputs.c == 'rehearse'
         run: |
           pip install -r automation/requirements.txt
           python -m playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg || true   # video.py falls back to imageio-ffmpeg
 
       - name: Install (light)
-        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'skip'
+        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'rehearse' && steps.cmd.outputs.c != 'skip'
         run: pip install -r automation/requirements.txt
 
       - name: Tests
         if: steps.cmd.outputs.c != 'skip'
         run: cd automation && python -m unittest discover -s tests
 
+      - name: Rehearse (mock week, dry run)
+        if: steps.cmd.outputs.c == 'rehearse'
+        run: cd automation && python pipeline.py week --mock --dry-run
+
+      - name: Download the rehearsal
+        if: steps.cmd.outputs.c == 'rehearse'
+        uses: actions/upload-artifact@v4
+        with:
+          name: rehearsal-week
+          path: exports/20*-W*/
+          retention-days: 7
+
       - name: Run ${{ steps.cmd.outputs.c }}
-        if: steps.cmd.outputs.c != 'skip'
+        if: steps.cmd.outputs.c != 'skip' && steps.cmd.outputs.c != 'rehearse'
         run: cd automation && python pipeline.py ${{ steps.cmd.outputs.c }}
 
       - name: Save state and renders
-        if: always() && steps.cmd.outputs.c != 'skip'
+        if: always() && steps.cmd.outputs.c != 'skip' && steps.cmd.outputs.c != 'rehearse'
         run: |
           git config user.name "jua-kesho-bot"
           git config user.email "bot@users.noreply.github.com"

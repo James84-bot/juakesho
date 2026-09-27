@@ -4,6 +4,8 @@
 tapped into AI and the future. Not a school: hacks, takes, comics and drops, in Kenyan English.
 **jua** = the sun + to know · **kesho** = tomorrow.
 
+**Live:** brand book at <https://james84-bot.github.io/juakesho/brand-book/> · repo <https://github.com/James84-bot/juakesho>
+
 ```
 brand-book/index.html        The brand book (open in a browser)
 assets/logo/                 Wordmark, stacked logo, icons (outlined SVG, no fonts needed)
@@ -52,7 +54,8 @@ python render.py --sheet                   # → exports/posts/ + contact sheet
    Note your Page id and Instagram user id.
 5. **Anthropic:** create an API key at console.anthropic.com.
 6. **Secrets:** in GitHub → Settings → Secrets and variables → Actions, add everything in `automation/.env.example`.
-7. **Test:** Actions → autopilot → Run workflow with `week`. Previews arrive on Telegram; tap ✅ or ❌.
+7. **Test:** Actions → autopilot → Run workflow with `rehearse` first (no keys needed; download the
+   `rehearsal-week` artifact to see a full mock week). Then run `week`. Previews arrive on Telegram; tap ✅ or ❌.
 
 From then on: every Sunday at 17:00 EAT the next week is drafted, checked, designed and sent to you.
 Approved posts publish at their scheduled time. Your job is about 15 minutes of taps a week, plus
