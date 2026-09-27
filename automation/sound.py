@@ -57,6 +57,21 @@ def _place(buf: np.ndarray, sample: np.ndarray, at: float, gain: float) -> None:
     buf[i:j] += sample[: j - i] * gain
 
 
+def pluck(freq: float, dur: float = 0.5, rng: np.random.Generator | None = None, bright: float = 0.5) -> np.ndarray:
+    """Karplus-Strong plucked string: the bright, dry guitar of benga (a noise burst through a tuned delay line)."""
+    rng = rng or np.random.default_rng(0)
+    n = int(SR * dur)
+    period = max(2, int(SR / freq))
+    buf = rng.uniform(-1, 1, period).astype(np.float32)
+    out = np.empty(n, dtype=np.float32)
+    decay = 0.996
+    for i in range(n):
+        j = i % period
+        out[i] = buf[j]
+        buf[j] = decay * (bright * buf[j] + (1 - bright) * buf[(j + 1) % period])
+    return out * np.exp(-np.arange(n) / SR * 3.0)
+
+
 def chime() -> np.ndarray:
     """The sonic logo: three rising notes, like the sun coming up."""
     out = np.zeros(int(SR * 1.6), dtype=np.float32)
@@ -91,6 +106,11 @@ def bed(duration: float, seed: int = 0) -> np.ndarray:
                 for s in range(2):
                     _place(out, shaker(rng), at + s * beat / 2 + beat / 4, 0.05)
         _place(out, kalimba(PENTA[root] / 2, 2.2, 0.9), t, 0.28)  # bass note per bar
+        # benga-style guitar: quick interlocking sixteenths on the off-beats, high up the neck, kept quiet
+        for q in range(16):
+            if q % 4 in (1, 3) and t + q * beat / 4 < duration:
+                idx = [root + 4, root + 5, root + 7, root + 5][(q // 2) % 4]
+                _place(out, pluck(PENTA[min(idx, len(PENTA) - 1)], 0.35, rng), t + q * beat / 4, 0.16)
         t += beat * 4
         bar += 1
     out = out[: int(SR * duration)]

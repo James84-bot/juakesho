@@ -2,3 +2,5 @@ automation/.env
 __pycache__/
 *.pyc
 exports/**/.*.html
+# Raw stock photos stay private (licence: use in designs, don't redistribute the originals)
+exports/**/photos/

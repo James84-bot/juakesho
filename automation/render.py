@@ -18,6 +18,7 @@ import argparse
 import json
 import math
 import random
+import re
 import sys
 import zlib
 from pathlib import Path
@@ -46,15 +47,17 @@ DARK_BGS = {"usiku", "jacaranda", "chai", "shuka", "udongo"}
 
 
 def fit(text: str, max_width: float, base: float, char_em: float = 0.78) -> int:
-    """Largest font size (<= base) that keeps `text` within max_width in Unbounded ExtraBold."""
-    longest = max((len(line) for line in str(text).split("\n")), default=1)
-    return int(min(base, max_width / max(1, longest * char_em)))
+    """Largest font size (<= base) that keeps every line of `text` (no wrapping) within max_width, Unbounded ExtraBold."""
+    import textfit
+    return min(textfit.fit_display(line, max_width, 1, base) for line in (str(text).split("\n") or [""]))
 
 
 def fitw(text: str, width: float, lines: int, base: float, char_em: float = 0.68) -> int:
-    """Largest size (<= base) at which `text`, wrapped, fits in `lines` lines of `width` px (Unbounded ExtraBold)."""
-    n = max(1, len(str(text)))
-    return int(min(base, width * lines / (n * char_em)))
+    """Largest size (<= base) at which `text` fits in `lines` lines of `width` px (Unbounded ExtraBold).
+    Measured with the real font (textfit), so a long single word shrinks instead of spilling out.
+    `char_em` is kept for old callers; it only matters for text the font file can't measure."""
+    import textfit
+    return textfit.fit_display(text, width, lines, base)
 
 
 def arrow(x1, y1, x2, y2, color, width=7, bend=0.35) -> str:
@@ -194,7 +197,7 @@ def make_env() -> Environment:
     return env
 
 
-def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = False) -> str:
+def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = False, measure: bool = False) -> str:
     kind = post.get("size", "post")
     W, H = SIZES[kind]
     bg_name = post.get("bg", "maziwa")
@@ -212,7 +215,256 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         "logo_stacked": (LOGO / "stacked-on-light.svg").as_uri(),
         "motion": motion, "reel": reel, "grain_uri": GRAIN_URI,
     }
+    ink = post.get("ink") or {}
+    ctx["ink_css"] = Markup("\n".join(
+        ".layer" + "".join(f" > :nth-child({int(i)})" for i in path.split("/")) + f" {{ color: {col} !important; }}"
+        for path, col in ink.items() if path and all(i.isdigit() for i in path.split("/")) and re.fullmatch(r"#[0-9A-F]{6}", col)))
+    photo = post.get("photo_file")
+    if photo and Path(photo).exists() and post["template"] in PHOTO_TEMPLATES:
+        tones = ["jua", "pwani", "waridi", "shuka"]
+        tone = post.get("photo_tone") if post.get("photo_tone") in bk.C else tones[ctx["seed"] % len(tones)]
+        civic = post["template"] in {"money", "straight"} or post.get("series") in {"See Through It"}
+        ctx.update(photo_uri=Path(photo).as_uri(), photo_tone=bk.C[tone],
+                   photo_credit=("Illustrative photo · " if civic else "") + (post.get("photo_credit") or ""))
+    import symbols
+    sym = post.get("symbol") if post["template"] not in NO_SYMBOL and post.get("symbol") in symbols.SYMBOLS else ""
+    person_file = post.get("person_file")
+    if person_file and Path(person_file).exists() and post["template"] in PERSON_TEMPLATES:
+        # A real person we celebrate: their real photo is the hero (the symbol steps aside)
+        ctx["symbol"] = "portrait"
+        ctx["person_credit"] = post.get("person_credit") or ""
+        ctx.pop("photo_credit", None)   # one credit line: the person's photographer
+        box = post.get("symbol_box")
+        if measure or box:
+            ctx["mascot"] = lambda *_a, **_k: Markup("")
+        if box and not measure:
+            ctx["symbol_box"], ctx["symbol_hero"] = box, Markup(symbols.portrait(Path(person_file).as_uri(), ctx["seed"]))
+        return env.get_template(f"{post['template']}.html.j2").render(**ctx)
+    ctx["symbol"] = sym   # templates switch to their hero-split layout when this is set
+    if sym:
+        if True:
+            art = symbols.art(sym)
+            # Giant faint silhouette behind the glass: the whole post reads as the idea at a glance
+            if "photo_uri" not in ctx:   # a photo already fills the background
+                ctx["symbol_ghost"] = Markup(symbols.ghost(sym, "#ffffff" if dark else bk.C["usiku"]))
+            box = post.get("symbol_box")
+            if measure or box:  # the hero symbol replaces the decorative mascot
+                ctx["mascot"] = lambda *_a, **_k: Markup("")
+            if box and not measure:
+                ctx["symbol_box"], ctx["symbol_hero"] = box, Markup(art)
+            elif not measure and post["template"] in SYMBOL_IN_MASCOT_SLOT:  # no room found: small, in the mascot's slot
+                ctx["mascot"] = lambda *_a, **_k: Markup(f'<g transform="translate(9 9) scale(.455)">{art}</g>')
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
+
+
+# Obstacles for symbol placement: text by its real line boxes (short lines leave room beside them),
+# cards/pills/stickers by their full box, plus the footer.
+OBSTACLES_JS = """
+() => {
+  const c = document.getElementById('canvas').getBoundingClientRect();
+  const out = [];
+  const add = (r) => { if (r.width > 1 && r.height > 1) out.push([r.left - c.left, r.top - c.top, r.right - c.left, r.bottom - c.top]); };
+  const solid = (el) => {
+    const s = getComputedStyle(el);
+    const bg = s.backgroundColor, a = bg.startsWith('rgba') ? parseFloat(bg.split(',')[3]) : (bg === 'transparent' ? 0 : 1);
+    return a > 0.02 || s.backdropFilter !== 'none' || parseFloat(s.borderTopWidth) > 0 || el instanceof SVGElement || el.tagName === 'IMG';
+  };
+  for (const el of document.querySelectorAll('.layer > *, .foot')) {
+    if (el.matches('.symbol, svg.mascot')) continue;
+    if (el.matches('.foot') || solid(el)) { add(el.getBoundingClientRect()); continue; }
+    const range = document.createRange(); range.selectNodeContents(el);
+    for (const r of range.getClientRects()) add(r);
+    el.querySelectorAll('*').forEach(k => { if (solid(k)) add(k.getBoundingClientRect()); });
+  }
+  return {w: c.width, h: c.height, rects: out};
+}
+"""
+SYMBOL = {"min": 150, "max": 420, "pad": 22, "margin": 40, "cell": 4}
+
+# Legibility: every line of text vs the real pixels behind it (text fill hidden, shadows kept, since halos count)
+TEXT_JS = """
+() => {
+  const c = document.getElementById('canvas').getBoundingClientRect();
+  const out = [];
+  const walker = document.createTreeWalker(document.querySelector('.layer'), NodeFilter.SHOW_TEXT);
+  let n;
+  while ((n = walker.nextNode())) {
+    if (!n.textContent.trim()) continue;
+    const el = n.parentElement, cs = getComputedStyle(el);
+    if (cs.visibility === 'hidden' || parseFloat(cs.opacity) === 0) continue;
+    const m = cs.color.match(/[\\d.]+/g).map(Number);
+    if (m.length > 3 && m[3] === 0) continue;
+    if (el.closest('svg')) continue;   // SVG text is artwork (fills), checked by eye in the symbol sheet
+    // Text on its own solid chip (sticker, stamp, pill): judge it against that colour, not the pixels around a tilted box
+    let solid = null;
+    for (let a = el; a && !a.classList.contains('layer'); a = a.parentElement) {
+      const bg = getComputedStyle(a).backgroundColor.match(/[\\d.]+/g);
+      if (bg && (bg.length < 4 || parseFloat(bg[3]) >= 0.9)) { solid = bg.slice(0, 3).map(Number); break; }
+    }
+    const rg = document.createRange(); rg.selectNodeContents(n);
+    for (const r of rg.getClientRects()) {
+      if (r.width < 6 || r.height < 6) continue;
+      const path = []; for (let a = el; a && !a.classList.contains('layer'); a = a.parentElement) path.unshift([...a.parentElement.children].indexOf(a) + 1);
+      out.push({text: n.textContent.trim().slice(0, 30), rgb: m.slice(0, 3), px: parseFloat(cs.fontSize), solid, path: path.join('/'),
+                box: [r.left - c.left, r.top - c.top, r.right - c.left, r.bottom - c.top]});
+    }
+  }
+  return out;
+}
+"""
+HIDE_TEXT_CSS = ".layer, .layer * { color: transparent !important; -webkit-text-fill-color: transparent !important; text-decoration-color: transparent !important; }"
+
+
+def _lum(rgb) -> float:
+    def ch(v):
+        v = v / 255
+        return v / 12.92 if v <= 0.03928 else ((v + 0.055) / 1.055) ** 2.4
+    r, g, b = rgb
+    return 0.2126 * ch(r) + 0.7152 * ch(g) + 0.0722 * ch(b)
+
+
+INK = ["jua", "pwani", "waridi", "maziwa", "white", "usiku"]   # adaptive ink candidates, brand accents first
+
+
+def _ratio(a: float, b: float) -> float:
+    return (max(a, b) + 0.05) / (min(a, b) + 0.05)
+
+
+def _hex(h: str) -> tuple:
+    h = h.lstrip("#")
+    return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def adaptive_ink(page, texts: list[dict]) -> dict[str, str]:
+    """For text that can't be read against what's behind it, the brand colour that reads best there.
+    Keeps the designer's colour whenever it passes; returns {element path: css colour}."""
+    fixes: dict[str, str] = {}
+    for t, bgs in _backgrounds(page, texts):
+        if t.get("solid") or not t.get("path"):
+            continue   # text on its own chip: the chip's design decides
+        need = 3.0 if t["px"] >= 24 else 4.5
+        fg = _lum(t["rgb"])
+        if min(_ratio(fg, b) for b in bgs) >= need:
+            continue
+        options = []
+        for name in INK:
+            rgb = (255, 255, 255) if name == "white" else _hex(bk.C[name])
+            options.append((min(_ratio(_lum(rgb), b) for b in bgs), name, rgb))
+        passing = [o for o in options if o[0] >= need]
+        best = passing[0] if passing else max(options)
+        # a path may carry several lines: keep the colour that works for all of them
+        prev = fixes.get(t["path"])
+        if prev is None or best[0] < need:
+            fixes[t["path"]] = "#{:02X}{:02X}{:02X}".format(*best[2])
+    return fixes
+
+
+def _backgrounds(page, texts: list[dict]):
+    import io
+    import numpy as np
+    from PIL import Image
+    handle = page.add_style_tag(content=HIDE_TEXT_CSS)
+    img = np.asarray(Image.open(io.BytesIO(page.locator("#canvas").screenshot())).convert("RGB")).astype(float)
+    handle.evaluate("el => el.remove()")
+    for t in texts:
+        if t.get("solid"):
+            yield t, [_lum(t["solid"])]
+            continue
+        l, tp, r, b = (int(max(0, v)) for v in t["box"])
+        patch = img[tp:b, l:r]
+        if patch.size == 0:
+            continue
+        lums = np.apply_along_axis(_lum, 1, patch.reshape(-1, 3)[:: max(1, patch.shape[0] * patch.shape[1] // 400)])
+        yield t, list(np.percentile(lums, [10, 90]))
+
+
+def contrast_issues(page, texts: list[dict]) -> list[dict]:
+    """Screens the canvas with text fill hidden and checks each text line against the pixels behind it."""
+    import io
+    import numpy as np
+    from PIL import Image
+    handle = page.add_style_tag(content=HIDE_TEXT_CSS)
+    img = np.asarray(Image.open(io.BytesIO(page.locator("#canvas").screenshot())).convert("RGB")).astype(float)
+    handle.evaluate("el => el.remove()")
+    issues, seen = [], set()
+    for t in texts:
+        fg = _lum(t["rgb"])
+        if t.get("solid"):
+            bgs = [_lum(t["solid"])]
+        else:
+            l, tp, r, b = (int(max(0, v)) for v in t["box"])
+            patch = img[tp:b, l:r]
+            if patch.size == 0:
+                continue
+            # the darkest-case and lightest-case backgrounds: text must read against 80% of what's behind it
+            lums = np.apply_along_axis(_lum, 1, patch.reshape(-1, 3)[:: max(1, patch.shape[0] * patch.shape[1] // 400)])
+            bgs = np.percentile(lums, [10, 90])
+        worst = min((max(fg, bg) + 0.05) / (min(fg, bg) + 0.05) for bg in bgs)
+        need = 3.0 if t["px"] >= 24 else 4.5
+        key = t["text"]
+        if worst < need and key not in seen:
+            seen.add(key)
+            issues.append({"level": "error" if worst < need * 0.72 else "warn",
+                           "what": f"low contrast {worst:.1f}:1 (needs {need:.0f}:1) on '{key}'"})
+    return issues
+
+
+def free_square(w: int, h: int, rects: list, anchor: tuple[float, float] | None = None) -> list[int] | None:
+    """Largest square (min..max px) that touches no obstacle; ties go to the spot nearest the anchor."""
+    import numpy as np
+    k, pad, m = SYMBOL["cell"], SYMBOL["pad"], SYMBOL["margin"]
+    gw, gh = w // k, h // k
+    occ = np.zeros((gh, gw), dtype=np.int32)
+    for l, t, r, b in rects:
+        x0, y0 = max(0, int((l - pad) // k)), max(0, int((t - pad) // k))
+        x1, y1 = min(gw, int((r + pad) // k) + 1), min(gh, int((b + pad) // k) + 1)
+        occ[y0:y1, x0:x1] = 1
+    mk = m // k
+    occ[:mk, :] = occ[-mk:, :] = 1
+    occ[:, :mk] = occ[:, -mk:] = 1
+    sat = np.pad(occ.cumsum(0).cumsum(1), ((1, 0), (1, 0)))
+    ax, ay = anchor or (w * 0.74, h * 0.6)
+    for size in range(SYMBOL["max"], SYMBOL["min"] - 1, -10):
+        n = size // k
+        if n > gw or n > gh:
+            continue
+        blocked = sat[n:, n:] - sat[:-n, n:] - sat[n:, :-n] + sat[:-n, :-n]
+        ys, xs = np.nonzero(blocked == 0)
+        if len(xs):
+            cx, cy = (xs + n / 2) * k, (ys + n / 2) * k
+            i = int(np.argmin((cx - ax) ** 2 + (cy - ay) ** 2))
+            return [int(xs[i] * k), int(ys[i] * k), size]
+    return None
+
+
+def place_symbol(page, env: Environment, post: dict, tmp_dir: Path) -> None:
+    """Lays the post out without its symbol, measures what landed where, and stores the best free square."""
+    import symbols
+    has_person = bool(post.get("person_file")) and post["template"] in PERSON_TEMPLATES and Path(post["person_file"]).exists()
+    if not has_person and (not post.get("symbol") or post["template"] in NO_SYMBOL or post.get("symbol") not in symbols.SYMBOLS):
+        return
+    tmp = tmp_dir / f".{post['id']}-measure.html"
+    tmp.write_text(build_html(env, post, measure=True), encoding="utf-8")
+    page.goto(tmp.as_uri())
+    page.evaluate("document.fonts.ready")
+    m = page.evaluate(OBSTACLES_JS)
+    tmp.unlink()
+    box = free_square(int(m["w"]), int(m["h"]), m["rects"])
+    if box:
+        post["symbol_box"] = box
+    else:
+        post.pop("symbol_box", None)
+
+
+# Layouts that celebrate a real person with their real photo (rights required: guard.py)
+PERSON_TEMPLATES = {"spotlight"}
+# Dark-background layouts that take a full-bleed photo (duotoned into the brand palette)
+PHOTO_TEMPLATES = {"cover", "kesho", "spotlight", "money", "still", "straight", "hack", "decode", "build", "glasspoll"}
+# Templates where Jua is a character in the scene (keep it), or that are brand assets
+NO_SYMBOL = {"vichekesho", "pov", "avatar", "banner", "intro"}
+# Templates whose mascot is decoration: a symbol replaces it in the same, collision-checked spot
+SYMBOL_IN_MASCOT_SLOT = {"hack", "decode", "cap", "usiibiwe", "still", "glasspoll", "cover", "kesho", "tool",
+                         "ukweli", "neno", "makanga", "shosh", "hapa", "poll", "africa"}
 
 
 QA_JS = """
@@ -238,8 +490,30 @@ QA_JS = """
         issues.push({ level: 'error', what: `text cut off at the bottom of '${name(b.el)}'` });
     });
   }
+  // The hero symbol is checked against real text lines / solid boxes (the same way it was placed)
+  const sym = document.querySelector('.layer > svg.symbol');
+  if (sym) {
+    const s = sym.getBoundingClientRect(), inset = s.width * 0.05;   // art keeps a 5% margin inside its box
+    const S = {left: s.left + inset, top: s.top + inset, right: s.right - inset, bottom: s.bottom - inset};
+    const solid = (el) => { const cs = getComputedStyle(el), bg = cs.backgroundColor;
+      const a = bg.startsWith('rgba') ? parseFloat(bg.split(',')[3]) : (bg === 'transparent' ? 0 : 1);
+      return a > 0.02 || cs.backdropFilter !== 'none' || parseFloat(cs.borderTopWidth) > 0 || el instanceof SVGElement || el.tagName === 'IMG'; };
+    for (const b of blocks) {
+      if (b.el === sym) continue;
+      let rects = [];
+      if (b.el.matches('.foot') || solid(b.el)) rects = [b.r];
+      else { const rg = document.createRange(); rg.selectNodeContents(b.el); rects = [...rg.getClientRects()];
+             b.el.querySelectorAll('*').forEach(k => { if (solid(k)) rects.push(k.getBoundingClientRect()); }); }
+      for (const r of rects) {
+        const w = Math.min(r.right, S.right) - Math.max(r.left, S.left), h = Math.min(r.bottom, S.bottom) - Math.max(r.top, S.top);
+        if (w > 6 && h > 6) { issues.push({ level: 'error', what: `symbol covers '${name(b.el)}' (${Math.round(w)}x${Math.round(h)}px)` }); break; }
+      }
+    }
+  }
   for (let i = 0; i < blocks.length; i++) {
+    if (blocks[i].el === sym) continue;
     for (let j = i + 1; j < blocks.length; j++) {
+      if (blocks[j].el === sym) continue;
       const a = blocks[i].r, b = blocks[j].r;
       const w = Math.min(a.right, b.right) - Math.max(a.left, b.left);
       const h = Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top);
@@ -265,15 +539,23 @@ def render(posts: list[dict], out_dir: Path, sheet: bool = False, qa: dict | Non
         browser = p.chromium.launch()
         page = browser.new_page(viewport={"width": 2600, "height": 2000})
         for post in posts:
-            html = build_html(env, post)
+            place_symbol(page, env, post, out_dir)
             tmp = out_dir / f".{post['id']}.html"
-            tmp.write_text(html, encoding="utf-8")
-            page.goto(tmp.as_uri())
-            page.evaluate("document.fonts.ready")
-            page.evaluate("Promise.all([...document.images].map(i => i.decode().catch(() => {})))")
+            post.pop("ink", None)
+            for attempt in range(2):   # lay out, fix unreadable ink, lay out again with the fixes
+                tmp.write_text(build_html(env, post), encoding="utf-8")
+                page.goto(tmp.as_uri())
+                page.evaluate("document.fonts.ready")
+                page.evaluate("Promise.all([...document.images].map(i => i.decode().catch(() => {})))")
+                if attempt:
+                    break
+                fixes = adaptive_ink(page, page.evaluate(TEXT_JS))
+                if not fixes:
+                    break
+                post["ink"] = fixes
             target = out_dir / f"{post['id']}.png"
             page.locator("#canvas").screenshot(path=str(target))
-            issues = page.evaluate(QA_JS)
+            issues = page.evaluate(QA_JS) + [i for i in contrast_issues(page, page.evaluate(TEXT_JS)) if i["level"] == "error"]
             if qa is not None:
                 qa[post["id"]] = issues
             for i in issues:

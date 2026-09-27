@@ -43,6 +43,7 @@ SCHEMAS: dict[str, dict[str, int]] = {
     "still":    {"industry": 16, "thing": 70, "old": 110, "new": 130, "cta": 50},
     "spotlight": {"kind": 14, "name": 22, "country": 20, "what": 140, "why": 130, "cta": 50},
     "money":    {"hook": 40, "number": 14, "unit": 40, "what": 140, "why": 120, "check": 110},
+    "straight": {"claim": 120, "who": 44, "truth": 70, "pride": 50, "claim_source": 240, "source": 240},
     "avatar":   {},
     "banner":   {"line": 40, "sub": 50},
 }
@@ -55,12 +56,17 @@ LISTS: dict[str, dict[str, tuple[int, int, int]]] = {  # field -> (min items, ma
     "hack": {"moves": (2, 4, 70)},
     "build": {"flow": (3, 6, 45), "stack": (1, 5, 14)},
     "glasspoll": {"options": (2, 2, 22)},
+    "straight": {"proof": (2, 3, 90)},
 }
 CHOICES = {
     "ukweli": {"verdict": {"uongo", "ukweli", "kiasi"}},
     "cap": {"verdict": {"cap", "nocap", "kinda"}},
+    "straight": {"verdict": {"false", "misleading", "missing_context"}},
 }
-FACT_TEMPLATES = {"africa", "hapa", "usiibiwe", "kesho", "pov", "cap", "spotlight", "money"}
+FACT_TEMPLATES = {"africa", "hapa", "usiibiwe", "kesho", "pov", "cap", "spotlight", "money", "straight"}
+# Feed templates where the picture must carry the message: the writer chooses a symbol (symbols.py)
+SYMBOL_TEMPLATES = {"hack", "decode", "cap", "usiibiwe", "still", "glasspoll", "cover", "kesho", "spotlight",
+                    "money", "build", "straight", "africa", "tool", "ukweli", "neno", "hapa", "shosh", "makanga", "poll"}
 CIVIC_SERIES = {"money", "See Through It"}  # must carry a source
 
 # Clean-content list: English, Kiswahili and Sheng. Whole-word matches only.
@@ -152,6 +158,41 @@ def check(post: dict) -> Report:
 
     if tpl == "vichekesho":
         _check_comic(post, rep)
+    sym = post.get("symbol")
+    if sym:
+        import symbols
+        if sym not in symbols.SYMBOLS:
+            rep.errors.append(f"unknown symbol '{sym}' (choose from symbols.py)")
+    elif tpl in SYMBOL_TEMPLATES:
+        rep.warnings.append("no `symbol`: the picture should carry the message")
+    if len(str(post.get("message") or "")) > 120:
+        rep.errors.append(f"'message' is {len(str(post.get('message')))} chars (max 120)")
+    q = str(post.get("photo_query") or "")
+    if q:
+        if len(q) > 60:
+            rep.errors.append(f"'photo_query' is {len(q)} chars (max 60)")
+        critical = tpl in {"money", "straight", "spotlight"} or post.get("series") in CIVIC_SERIES
+        if critical and re.search(r"\b(face|faces|portrait|selfie|man|woman|men|women|people|person|crowd|girl|boy)\b", q.lower()):
+            rep.errors.append("photo_query on this post must show a scene, place or object, not people")
+        if re.search(r"\b(logo|brand)\b", q.lower()):
+            rep.errors.append("photo_query must not ask for logos or brands")
+    if post.get("track") and not re.fullmatch(r"[\w .-]{3,80}\.(mp3|wav|m4a)", str(post["track"])):
+        rep.errors.append("'track' must be a file name from content/music/tracks.json")
+    pp = str(post.get("person_photo") or "")
+    if pp:
+        if tpl != "spotlight":
+            rep.errors.append("real photos of people only on Put Us On (spotlight) posts")
+        elif pp.startswith("people/"):
+            if len(str(post.get("photo_rights") or "").strip()) < 8:
+                rep.errors.append("person_photo needs `photo_rights`: who gave permission, or the press-kit link")
+        elif not pp.startswith("commons:"):
+            rep.errors.append("person_photo must be 'people/<file>' (with photo_rights) or 'commons:File:<name>'")
+    if tpl == "straight":
+        # Target the claim, never the person: say where it was said, quote it, answer with sourced facts.
+        if len(str(post.get("claim_source", "")).strip()) < 8:
+            rep.errors.append("Set It Straight needs `claim_source`: where exactly the claim was said")
+        if re.search(r"\b(he|she|they) (is|are) (a )?(liar|fool|clown|idiot|fraud)\b", _all_text(post).lower()):
+            rep.errors.append("Set It Straight answers the claim, never attacks the person")
     if tpl == "pov":
         cast = post.get("cast")
         if not isinstance(cast, list) or not 1 <= len(cast) <= 3:

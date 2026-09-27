@@ -24,6 +24,8 @@ import tempfile
 import zlib
 from pathlib import Path
 
+import numpy as np
+
 import render
 import sound
 
@@ -86,12 +88,45 @@ def _frame_worker(args) -> int:
     return k
 
 
+MUSIC = HERE / "content" / "music"
+
+
+def music_track(post: dict) -> dict | None:
+    """The licensed track a post asked for, if it's registered with rights and present (else the original bed)."""
+    name = post.get("track")
+    if not name:
+        return None
+    try:
+        reg = json.loads((MUSIC / "tracks.json").read_text(encoding="utf-8")).get("tracks", [])
+    except (OSError, ValueError):
+        return None
+    t = next((t for t in reg if t.get("file") == name and len(str(t.get("rights", ""))) >= 8), None)
+    path = MUSIC / Path(str(name)).name
+    return {**t, "path": path} if t and path.exists() else None
+
+
+def mix_track(ff: str, track: dict, dur: float, out: Path) -> None:
+    """Jua chime, then the track's hook: trimmed, faded, loudness-balanced for phone speakers (-14 LUFS)."""
+    chime_wav = out.with_name("chime.wav")
+    sound.write_wav(np.concatenate([sound.chime(), np.zeros(int(sound.SR * 0.1), dtype=np.float32)]), chime_wav)
+    start = float(track.get("start", 0))
+    fade_out = max(0.0, dur - 1.0)
+    graph = (f"[1:a]atrim=start={start}:duration={dur},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.8,"
+             f"afade=t=out:st={fade_out}:d=1.0,volume=0.85[m];"
+             f"[0:a][m]amix=inputs=2:duration=longest:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,"
+             f"atrim=duration={dur}[a]")
+    subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(chime_wav), "-i", str(track["path"]),
+                    "-filter_complex", graph, "-map", "[a]", "-ar", "44100", "-ac", "2", str(out)], check=True)
+
+
 def workers() -> int:
     return max(1, min(int(os.environ.get("JUA_VIDEO_WORKERS", "0")) or (os.cpu_count() or 2), 6))
 
 
 def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
     is_story = post.get("size", "post") == "story"
+    if post.get("symbol") and not post.get("symbol_box"):
+        render.place_symbol(page, env, post, out_dir)  # same spot as the still design
     html = render.build_html(env, post, motion=True, reel=not is_story)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
@@ -105,7 +140,12 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         with ctx.Pool(n) as pool:
             pool.map(_frame_worker, [(str(tmp / "page.html"), str(tmp), frames, k, n, w, h) for k in range(n)])
         seed = zlib.crc32(post["id"].encode()) % 1000
-        sound.write_wav(sound.bed(dur, seed), tmp / "audio.wav")
+        track = music_track(post)
+        if track:   # an artist's track we have permission for: chime first, then their hook
+            mix_track(ff, track, dur, tmp / "audio.wav")
+            post["track_credit"] = f"{track['artist']} - {track['title']} (used with permission)"
+        else:
+            sound.write_wav(sound.bed(dur, seed), tmp / "audio.wav")
         target_mp4 = out_dir / f"{post['id']}.mp4"
         cmd = [ff, "-y", "-loglevel", "error",
                "-framerate", str(FPS), "-i", str(tmp / "f%04d.jpg"),

@@ -33,19 +33,21 @@ def _advances(family: str, weight: int) -> tuple[dict, int]:
     return widths, font["head"].unitsPerEm
 
 
-def width(text: str, px: float, family: str = "Figtree", weight: int = 700) -> float:
+def width(text: str, px: float, family: str = "Figtree", weight: int = 700, tracking: float = 0.0) -> float:
+    """Rendered width in px. `tracking` is CSS letter-spacing in em (e.g. -0.03)."""
     widths, upm = _advances(family, weight)
     fallback = widths.get("n", upm // 2)  # unknown glyphs (emoji etc.) counted as a wide-ish letter
-    return sum(widths.get(ch, fallback) for ch in text) * px / upm * SAFETY
+    return (sum(widths.get(ch, fallback) for ch in text) * px / upm + tracking * px * len(text)) * SAFETY
 
 
-def wrap(text: str, px: float, width_px: float, family: str = "Figtree", weight: int = 700) -> list[str]:
+def wrap(text: str, px: float, width_px: float, family: str = "Figtree", weight: int = 700,
+         tracking: float = 0.0) -> list[str]:
     """Greedy wrap like the browser. Hyphenated words stay whole (render.nobreak keeps them unbroken)."""
     words = re.split(r"\s+", text.strip())
     out, line = [], ""
     for w in words:
         trial = f"{line} {w}" if line else w
-        if not line or width(trial, px, family, weight) <= width_px:
+        if not line or width(trial, px, family, weight, tracking) <= width_px:
             line = trial
         else:
             out.append(line)
@@ -57,6 +59,17 @@ def wrap(text: str, px: float, width_px: float, family: str = "Figtree", weight:
 
 def lines(text: str, px: float, weight: int, width: float, family: str = "Figtree") -> int:
     return len(wrap(text, px, width, family, weight))
+
+
+def fit_display(text: str, box_w: float, max_lines: int, base: float) -> int:
+    """Largest size <= base at which a display headline (Unbounded 800, -0.03em) fits the box:
+    at most max_lines lines, and no single word wider than the box (a long word can't wrap)."""
+    text = str(text)
+    for px in range(int(base), 11, -1):
+        rows = wrap(text, px, box_w, "Unbounded", 800, -0.03)
+        if len(rows) <= max_lines and all(width(r, px, "Unbounded", 800, -0.03) <= box_w for r in rows):
+            return px
+    return 12
 
 
 # Comic bubble geometry: must mirror .bub in templates/vichekesho.html.j2 (border-box)

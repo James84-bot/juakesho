@@ -7,7 +7,7 @@
 .topic { position: absolute; left: 84px; top: 250px; width: 700px; font-size: {{ fit(topic, 700, 120) }}px; color: var(--usiku); }
 .ni-kama { position: absolute; left: 90px; top: {{ 270 + fit(topic, 700, 120) * 1.05 }}px; font-size: 76px; color: var(--shuka); transform: rotate(-4deg); }
 .like { position: absolute; left: 70px; right: 70px; top: 520px; padding: 40px 52px;
-  background: var(--jua); color: var(--usiku); border-radius: {{ radius(seed + 1) }}; font-size: {{ fit(like, 860, 76, 0.74) }}px; }
+  background: var(--jua); color: var(--usiku); border-radius: {{ radius(seed + 1) }}; font-size: {{ fitw(like, 756, 3, 76) }}px; }
 .explain { position: absolute; left: 84px; top: 790px; width: 912px; font-size: 36px; font-weight: 600; line-height: 1.3; color: var(--usiku); }
 .punch { position: absolute; left: 84px; top: 1080px; width: 912px; font-size: 52px; color: var(--usiku); transform: rotate(-2deg); }
 {% endblock %}

@@ -22,7 +22,9 @@
       "time": "12:45",
       "template": [
         "decode",
+        "straight",
         "cap",
+        "money",
         "still"
       ],
       "bg": [
@@ -71,12 +73,18 @@
       "time": "17:00",
       "template": [
         "spotlight",
-        "money",
+        "africa",
         "build",
         "spotlight",
+        "africa",
         "pov"
       ],
       "bg": [
+        "usiku",
+        "chai",
+        "usiku",
+        "usiku",
+        "chai",
         "usiku"
       ],
       "lanes": [
@@ -84,7 +92,8 @@
         "techie",
         "diaspora",
         "young_pro"
-      ]
+      ],
+      "theme": "Proudly African: Africa's wins, told with sourced specifics"
     },
     {
       "day": 6,
@@ -195,6 +204,7 @@
     "build",
     "usiibiwe",
     "africa",
-    "makanga"
+    "makanga",
+    "straight"
   ]
 }

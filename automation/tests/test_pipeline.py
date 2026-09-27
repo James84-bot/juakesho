@@ -243,6 +243,132 @@ class RedoTests(TempWeeks):
         self.assertEqual(posts["c-1"]["n"], 1)
 
 
+class QualitySystemTests(unittest.TestCase):
+    """Symbols, Set It Straight, photos, budget: the rules that keep quality high and spend flat."""
+
+    def base_straight(self, **kw):
+        post = {"id": "2026-w41-d2-straight", "template": "straight", "bg": "usiku", "symbol": "magnifier",
+                "claim": "Africa is one country.", "who": "a viral post", "claim_source": "Viral X post, May 2026 (link)",
+                "verdict": "false", "truth": "54 countries.", "proof": ["UN lists 54 African member states.", "Over 2,000 languages."],
+                "pride": "One continent. 54 flags.", "source": "un.org member states",
+                "caption": "Set It Straight. Send this to a friend.\n\n#JuaKesho"}
+        post.update(kw)
+        return post
+
+    def test_symbols_are_validated(self):
+        self.assertTrue(guard.check(self.base_straight()).ok)
+        r = guard.check(self.base_straight(symbol="dragon"))
+        self.assertTrue(any("unknown symbol" in e for e in r.errors))
+
+    def test_set_it_straight_needs_claim_source_and_never_attacks_people(self):
+        self.assertTrue(any("claim_source" in e for e in guard.check(self.base_straight(claim_source="")).errors))
+        r = guard.check(self.base_straight(pride="She is a liar and a fraud."))
+        self.assertTrue(any("never attacks the person" in e for e in r.errors))
+        r = guard.check(self.base_straight(verdict="lies"))
+        self.assertFalse(r.ok)
+
+    def test_photo_rules(self):
+        ok = guard.check(self.base_straight(photo_query="Nairobi skyline at dusk"))
+        self.assertTrue(ok.ok, ok.errors)
+        people = guard.check(self.base_straight(photo_query="angry man shouting"))
+        self.assertTrue(any("not people" in e for e in people.errors))
+        logo = guard.check(self.base_straight(photo_query="safaricom logo"))
+        self.assertTrue(any("logos" in e for e in logo.errors))
+
+    def test_real_people_photos_need_rights(self):
+        spot = {"id": "2026-w41-d5-spotlight", "template": "spotlight", "kind": "Artist", "name": "Amina", "country": "Kenya",
+                "what": "Makes music.", "why": "Proof our sound travels.", "cta": "Stream her.", "source": "her site",
+                "symbol": "music", "caption": "Put Us On. Share this.\n\n#JuaKesho"}
+        self.assertTrue(guard.check({**spot, "person_photo": "people/amina.jpg", "photo_rights": "permission from her manager, Oct 2026"}).ok)
+        self.assertTrue(any("photo_rights" in e for e in guard.check({**spot, "person_photo": "people/amina.jpg"}).errors))
+        self.assertTrue(any("must be" in e for e in guard.check({**spot, "person_photo": "https://instagram.com/x.jpg"}).errors))
+        money = {**self.base_straight(), "person_photo": "commons:File:X.jpg"}
+        self.assertTrue(any("only on Put Us On" in e for e in guard.check(money).errors))
+
+    def test_commons_licences(self):
+        import photos
+        for ok in ("CC0", "Public domain", "CC BY 4.0", "CC BY 2.0"):
+            self.assertTrue(photos.OK_LICENCES.match(ok), ok)
+        for bad in ("CC BY-SA 4.0", "CC BY-NC 2.0", "All rights reserved", "Fair use"):
+            self.assertFalse(photos.OK_LICENCES.match(bad) and "sa" not in bad.lower().split("-"), bad)
+
+    def test_music_only_with_rights_and_credited(self):
+        import video
+        with tempfile.TemporaryDirectory() as tmp, mock.patch.object(video, "MUSIC", Path(tmp)):
+            Path(tmp, "a.mp3").write_bytes(b"x")
+            Path(tmp, "tracks.json").write_text(json.dumps({"tracks": [
+                {"file": "a.mp3", "artist": "Amina", "title": "Kesho", "rights": "permission by email, Oct 2026"},
+                {"file": "b.mp3", "artist": "X", "title": "Y", "rights": ""}]}))
+            Path(tmp, "b.mp3").write_bytes(b"x")
+            self.assertEqual(video.music_track({"track": "a.mp3"})["artist"], "Amina")
+            self.assertIsNone(video.music_track({"track": "b.mp3"}))       # no rights recorded
+            self.assertIsNone(video.music_track({"track": "c.mp3"}))       # not registered
+        cap = pl.caption_for({"caption": "Hi", "photo_credit": "Photo: A / Pexels", "track_credit": "Amina - Kesho (used with permission)"})
+        self.assertEqual(cap, "Hi\n\n📷 Photo: A / Pexels\n🎵 Amina - Kesho (used with permission)")
+        self.assertTrue(any("track" in e for e in guard.check(self.base_straight(track="../../etc/passwd")).errors))
+
+    def test_approval_card_escapes_html_and_never_cuts_a_tag(self):
+        post = {"id": "p", "template": "hack", "lane": "campus", "publish_at": "2026-10-05T07:30:00+03:00",
+                "caption": "Q&A <3 " + "x" * 2000, "message": "Use <b> & win", "symbol": "key",
+                "critic": {"avg": 8, "hook": 8, "clarity": 9, "picture": 7, "send": 8, "fresh": 7, "note": "a < b"},
+                "guard": {"warnings": ["w1 <x>"] * 10}, "source": "s & t"}
+        text = pl._preview_text(post)
+        self.assertLessEqual(len(text), 1024)
+        self.assertIn("Q&amp;A &lt;3", text)
+        self.assertNotIn("<3", text)
+        import re
+        self.assertEqual(re.findall(r"<(/?)(\w+)", text).count(("", "b")), re.findall(r"<(/?)(\w+)", text).count(("/", "b")))
+
+    def test_photos_skip_quietly_without_a_key(self):
+        import photos
+        post = {"id": "p1", "photo_query": "farm at sunrise"}
+        with mock.patch.dict(os.environ, {"PEXELS_API_KEY": ""}):
+            photos.attach([post], Path(tempfile.mkdtemp()))
+        self.assertNotIn("photo_file", post)
+
+    def test_caption_gets_photo_credit_once(self):
+        self.assertEqual(pl.caption_for({"caption": "Hi"}), "Hi")
+        c = pl.caption_for({"caption": "Hi", "photo_credit": "Photo: A / Pexels"})
+        self.assertTrue(c.endswith("Photo: A / Pexels"))
+        self.assertEqual(pl.caption_for({"caption": c, "photo_credit": "Photo: A / Pexels"}), c)
+
+    def test_free_square_avoids_every_obstacle(self):
+        import render
+        rects = [[0, 0, 1080, 500], [0, 500, 600, 1350]]          # top band and left column taken
+        x, y, size = render.free_square(1080, 1350, rects)
+        self.assertGreaterEqual(size, render.SYMBOL["min"])
+        self.assertGreaterEqual(x, 600 + render.SYMBOL["pad"] - render.SYMBOL["cell"])
+        self.assertGreaterEqual(y, 500 + render.SYMBOL["pad"] - render.SYMBOL["cell"])
+        self.assertIsNone(render.free_square(1080, 1350, [[0, 0, 1080, 1350]]))
+
+    def test_headline_fit_shrinks_for_a_long_single_word(self):
+        import textfit
+        short = textfit.fit_display("Prompt", 580, 1, 190)
+        long = textfit.fit_display("Supercalifragilistic", 580, 2, 190)
+        self.assertLess(long, short)
+        self.assertLessEqual(textfit.width("Supercalifragilistic", long, "Unbounded", 800, -0.03), 580)
+
+    def test_budget_cap_blocks_optional_passes(self):
+        import draft
+        with mock.patch.dict(draft.SPEND, {"usd": 0.4999, "calls": 5}), \
+                mock.patch.dict(os.environ, {"JUA_WEEKLY_BUDGET_USD": "0.50"}):
+            self.assertFalse(draft.can_afford(10000, 5000))
+            self.assertEqual(draft.critique([{"id": "x", "template": "hack"}]), {})   # skipped, no API call
+        with mock.patch.dict(draft.SPEND, {"usd": 0.0, "calls": 0}):
+            self.assertTrue(draft.can_afford(10000, 5000))
+
+    def test_spend_is_counted_from_real_usage(self):
+        import draft
+        body = json.dumps({"content": [{"type": "text", "text": "ok"}], "stop_reason": "end_turn",
+                           "usage": {"input_tokens": 1_000_000, "output_tokens": 100_000}}).encode()
+        resp = mock.MagicMock(); resp.read.return_value = body; resp.__enter__.return_value = resp
+        with mock.patch.dict(draft.SPEND, {"usd": 0.0, "calls": 0}), \
+                mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "k", "JUA_MODEL": ""}), \
+                mock.patch.object(draft.urllib.request, "urlopen", lambda req, timeout: resp):
+            draft.call_claude("s", "u", model="claude-haiku-4-5-20251001")
+            self.assertAlmostEqual(draft.SPEND["usd"], 1.0 + 0.5)   # $1/M in + $5/M out
+
+
 class GuardTests(unittest.TestCase):
     def test_launch_posts_pass(self):
         posts = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"]
@@ -459,7 +585,7 @@ class CriticTests(unittest.TestCase):
         better_title = "Your lecture as notes before the matatu hits town"
         calls = []
 
-        def fake_claude(system, user, max_tokens=12000):
+        def fake_claude(system, user, max_tokens=12000, **_kw):
             calls.append(system[:30])
             if system.startswith("You are the toughest editor"):
                 weak_round = "matatu" not in user

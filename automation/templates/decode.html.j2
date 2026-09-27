@@ -6,6 +6,7 @@
 .hook { position: absolute; left: 84px; top: 170px; font-size: 56px; color: var(--jua); transform: rotate(-2deg); }
 .word { position: absolute; left: 60px; right: 60px; top: 250px; text-align: center; font-size: {{ fit(word, 940, 230) }}px; color: #fff;
   text-shadow: 0 0 60px rgba(255,255,255,.35); }
+{% if symbol %}.word { right: 440px; text-align: left; font-size: {{ fit(word, 580, 190) }}px; }{% endif %}
 .card { position: absolute; left: 70px; right: 70px; top: 610px; padding: 40px 44px; }
 .card p { font-size: 38px; font-weight: 700; line-height: 1.28; }
 .try { position: absolute; left: 70px; right: 70px; top: 930px; padding: 30px 40px; font-size: 30px; line-height: 1.3; }

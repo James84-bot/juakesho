@@ -72,10 +72,10 @@ LANE_ICON_BG = {"campus": "jacaranda", "young_pro": "usiku", "creator": "waridi"
 
 SERIES = [
     ("Mon 07:30", "AI Hack", "hack", "One move that saves real time. Built to be saved and sent to the group chat."),
-    ("Tue 12:45", "Decode · Cap or No Cap? · Still in 2026?", "still", "The word everyone's saying, the claim everyone repeats, the outdated habit we roast (never a person)."),
+    ("Tue 12:45", "Decode · Set It Straight · Cap or No Cap? · Follow the Money · Still in 2026?", "straight", "The word everyone's saying, the falsehood we correct with sources, the claim everyone repeats, one public-money number, the outdated habit we roast (never a person)."),
     ("Wed 18:30", "Usiibiwe!", "usiibiwe", "The scams hitting young people right now: fake jobs, task scams, fake reversals."),
     ("Thu 19:30", "Vichekesho", "vichekesho", "Three-panel stick-cast comics. Relatable first, lesson second."),
-    ("Fri 17:00", "Put Us On · Build With Me · POV: Kesho", "spotlight", "African artists, creators and startups; real builds; near-future POVs."),
+    ("Fri 17:00", "Proudly African: Put Us On · Made in Africa · Build With Me", "spotlight", "Africa's wins with names, places and sources: artists, creators, startups, inventions, real builds."),
     ("Sat 11:00", "Kesho Kutwa", "cover", "A 6-slide carousel on what's coming, in Kesho Mode, ending on a send."),
     ("Sun 18:00", "Jua Asks", "glasspoll", "A spicy-but-clean story poll. The answers pick next week's topics."),
 ]
@@ -94,6 +94,8 @@ GLOSSARY = [
     ("Mchana / Usiku", "modes", "Day / night: the two visual moods. Bright cut-paper by day, orbits and circuits by night."),
     ("Kenyan English", "voice", "How we write: English sentences with everyday Kenyan words (eh, sasa, kindly, manze, sawa). Anyone in Kenya or abroad can follow."),
     ("Sasa!", "greeting", "Hi! How every intro and reel opens."),
+    ("Set It Straight", "series", "Our answer to falsehoods and put-downs about Kenya and Africa: the claim, quoted and sourced, then the truth."),
+    ("Proudly African", "Friday", "Africa is our business. Two celebrations for every critique, all specific and sourced."),
 ]
 
 MONEY = [
@@ -192,6 +194,8 @@ def build_body() -> str:
             reel_strip += f'<figure class="reel"><img src="{img_uri(cover, 300)}" alt="Reel: {pid}" width="150" height="267"><figcaption>{pid}.mp4</figcaption></figure>'
     if not reel_strip:
         reel_strip = '<p class="note">Run <code>python video.py</code> to render the Reels.</p>'
+    sheet_png = EXP / "symbols-sheet.png"
+    symbols_sheet = img_uri(sheet_png, 1400, 82) if sheet_png.exists() else ""
     comic_post = next((p for p in POSTS if p["template"] == "vichekesho"), None)
     comic = img_uri(EXP / "posts" / (comic_post["id"] + ".png"), 520) if comic_post else ""
     stickers = ""
@@ -205,8 +209,8 @@ def build_body() -> str:
 <header class="top">
   <nav class="toc" aria-label="Sections">
     <a href="#idea">Idea</a><a href="#jua">Jua</a><a href="#cast">Cast</a><a href="#logo">Logo</a><a href="#colour">Colour</a><a href="#type">Type</a>
-    <a href="#shapes">Shapes</a><a href="#series">Series</a><a href="#lanes">Audience</a><a href="#more">Want more</a>
-    <a href="#trend">Trends</a><a href="#see">See Through It</a><a href="#motion">Motion</a><a href="#quality">Quality</a><a href="#lore">Lore</a><a href="#drops">Drops</a><a href="#voice">Dictionary</a><a href="#launch">Launch</a><a href="#autopilot">Autopilot</a><a href="#money">Money</a>
+    <a href="#shapes">Shapes</a><a href="#symbols">Symbols</a><a href="#series">Series</a><a href="#lanes">Audience</a><a href="#more">Want more</a>
+    <a href="#trend">Trends</a><a href="#clear">Say it</a><a href="#proud">Proudly African</a><a href="#straight">Set It Straight</a><a href="#photos">Photos</a><a href="#see">See Through It</a><a href="#motion">Motion</a><a href="#quality">Quality</a><a href="#lore">Lore</a><a href="#drops">Drops</a><a href="#voice">Dictionary</a><a href="#launch">Launch</a><a href="#autopilot">Autopilot</a><a href="#money">Money</a>
   </nav>
 </header>
 
@@ -246,6 +250,12 @@ def build_body() -> str:
   <section id="jua" class="sec" aria-labelledby="t-jua">
     <h2 id="t-jua"><i class="mk" style="--c:{C['shuka']}"></i>Meet Jua</h2>
     <p class="note">The host of a faceless brand. A sun whose rays are every colour in the palette: one light, many people. Jua never mocks, always explains, and changes expression to match the post.</p>
+    <ul class="reach" style="margin:18px 0">
+      <li><b>Who</b><span>The sun over Nairobi that has already seen tomorrow. Big-sibling energy: first to know, explains it in two lines, never lets you get scammed.</span></li>
+      <li><b>Traits</b><span>Curious, quick, funny, a little extra. Proud of Africa without being defensive. Allergic to hype.</span></li>
+      <li><b>Always believes</b><span>Africa can't wait. Free knowledge beats gatekept knowledge. Builders over complainers. Verify before you share. Nobody should pay to get paid.</span></li>
+      <li><b>Never</b><span>Pretends to be a human, invents testimonials or numbers, begs for likes, attacks people. Jua is openly a mascot: that's the trust.</span></li>
+    </ul>
     <div class="exprs">{expressions}</div>
   </section>
 
@@ -297,6 +307,12 @@ def build_body() -> str:
     <p class="note">Nothing is a perfect circle or a plain rectangle. Every post generates its own irregular composition from a seed, so no two look alike, and the same post always renders the same way.</p>
     <h3 class="sub">Mchana</h3><div class="devs">{day_html}</div>
     <h3 class="sub">Usiku · Kesho Mode</h3><div class="devs">{night_html}</div>
+  </section>
+
+  <section id="symbols" class="sec" aria-labelledby="t-symbols">
+    <h2 id="t-symbols"><i class="mk" style="--c:{C['jua']}"></i>Symbols: the picture is the message</h2>
+    <p class="note">Every post carries one symbol that <b>is</b> its message: the hook for a scam, the puppet for bought hashtags, the idle crane for billions that never moved. The symbol and the headline must say it in one second, before anyone reads the body. The writer chooses it; the renderer measures where every line of text landed and places the symbol in the largest free space, as big as it fits (up to 420&nbsp;px), never over text. A giant faint copy sits behind the glass.</p>
+    <img class="wide" src="{symbols_sheet}" alt="The Jua Kesho symbol library: 33 sticker-style illustrations, each with one meaning">
   </section>
 
   <section id="series" class="sec" aria-labelledby="t-series">
@@ -369,6 +385,43 @@ def build_body() -> str:
     <p class="note" style="margin-top:18px">&ldquo;Africans don't support their own&rdquo; gets answered with action. <b>Put Us On</b> spotlights real African artists, creators and startups every other Friday, always with something to do: stream, follow, share.</p>
   </section>
 
+  <section id="clear" class="sec" aria-labelledby="t-clear">
+    <h2 id="t-clear"><i class="mk" style="--c:{C['ziwa']}"></i>Say what it is</h2>
+    <div class="doit">
+      <div class="yes"><span class="hand">Headline like this</span><p>&ldquo;Fake job offers on WhatsApp&rdquo;. &ldquo;How to spot a paid hashtag&rdquo;. &ldquo;Sh304bn sitting idle in 14 projects&rdquo;. A stranger knows the topic in two seconds, in the words people search for.</p></div>
+      <div class="no"><span class="hand">Not like this</span><p>A vague teaser as the headline. The small handwritten line may tease (&ldquo;nobody told you this&hellip;&rdquo;), but only on top of a plain, literal headline.</p></div>
+    </div>
+    <ul class="reach" style="margin-top:18px">
+      <li><b>Attract</b><span>First words and the symbol open a question, a surprise or instant recognition. Specific beats general.</span></li>
+      <li><b>Sustain</b><span>Each line pays off the last and opens the next. The most surprising fact goes second, not last.</span></li>
+      <li><b>Reward</b><span>Something to use, say or send within the hour. That's why they come back.</span></li>
+    </ul>
+  </section>
+
+  <section id="proud" class="sec" aria-labelledby="t-proud">
+    <h2 id="t-proud"><i class="mk" style="--c:{C['chai']}"></i>Proudly African</h2>
+    <p class="note">We are Africans, and Africa's story is ours to tell. For every critical post we publish at least two that celebrate or teach. Fridays belong to Africa's wins: artists, creators, startups, inventions, athletes, farmers and people quietly doing it right. Always with names, places, years and sources; always with something to do (follow, stream, visit, share). Pride, never propaganda: real wins are convincing enough.</p>
+  </section>
+
+  <section id="straight" class="sec sec--night" aria-labelledby="t-straight">
+    <h2 id="t-straight"><i class="mk" style="--c:{C['shuka']}"></i>Set It Straight</h2>
+    <p class="note">When someone spreads a falsehood, or talks down Kenya and Africa, we answer the <b>claim</b>, never the person: quote it exactly, show where it was said, stamp the verdict (false, misleading, missing context), then give the truth with 2&ndash;3 sourced proofs and a proud closing line. Accuracy is what makes us fearless.</p>
+    <div class="doit">
+      <div class="yes"><span class="hand">Fair game</span><p>A public statement, quoted exactly and linked. Viral posts and stereotypes. Facts from the UN, World Bank, national statistics, research, reputable media.</p></div>
+      <div class="no"><span class="hand">Never</span><p>Insults, looks, family, private life. Private individuals. Politicians and election claims. Anything we can't prove. Honest criticism of Kenya isn't &ldquo;talking bad&rdquo;: we make it too.</p></div>
+    </div>
+  </section>
+
+  <section id="photos" class="sec" aria-labelledby="t-photos">
+    <h2 id="t-photos"><i class="mk" style="--c:{C['waridi']}"></i>Photos &amp; people</h2>
+    <ul class="reach">
+      <li><b>Real scenes</b><span>Up to three posts a week use a real photo where reality hits harder: streets, sites, farms, phones. Duotoned into the palette so every photo looks like Jua Kesho. Free-licence photos (Pexels) or your own.</span></li>
+      <li><b>Honest labels</b><span>On civic posts a stock photo is marked &ldquo;illustrative photo&rdquo;: it is never passed off as the actual project or person.</span></li>
+      <li><b>People we celebrate</b><span>Their real photo, in full colour inside a brand frame, only with the right to use it: their permission, their press kit, or a CC0 / CC&nbsp;BY Wikimedia Commons photo (checked automatically and credited).</span></li>
+      <li><b>Never</b><span>Faces on critical posts, stock lookalikes, AI-generated faces of real people, logos.</span></li>
+    </ul>
+  </section>
+
   <section id="drops" class="sec" aria-labelledby="t-drops">
     <h2 id="t-drops"><i class="mk" style="--c:{C['jacaranda']}"></i>Drops</h2>
     <p class="note">Things people collect and pass on. The first drop is a 12-sticker WhatsApp pack, generated by <code>stickers.py</code> to WhatsApp's spec (512&times;512 WebP, under 100&nbsp;KB each, with a tray icon).</p>
@@ -402,8 +455,9 @@ def build_body() -> str:
     <div class="reels">{reel_strip}</div>
     <ul class="reach" style="margin-top:18px">
       <li><b>The Jua chime</b><span>A three-note kalimba sonic logo, rising like a sunrise. It opens every Reel.</span></li>
-      <li><b>Original beat</b><span>A kalimba bed in A-pentatonic, synthesised in code: no licences, and it counts as original audio.</span></li>
-      <li><b>Trending sound?</b><span>On TikTok, swap in a trending sound in-app when you post. The strongest move there.</span></li>
+      <li><b>Original beat</b><span>Kalimba plus a benga-style plucked guitar, synthesised in code: no licences, and it counts as original audio.</span></li>
+      <li><b>African artists, with permission</b><span>Ask an artist for 15 seconds of their track, with credit. Register it in <code>content/music/</code> and Reels use their hook, balanced for phone speakers, credited in the caption. It's a Put Us On for them.</span></li>
+      <li><b>Trending sounds</b><span>Famous songs can't be baked into auto-posted videos (they get muted or taken down). Add trending sounds by hand in the app, from the platform's own licensed library.</span></li>
       <li><b>Pacing</b><span>6&ndash;14 seconds, sized to reading speed so people finish and replay.</span></li>
     </ul>
   </section>
@@ -413,8 +467,9 @@ def build_body() -> str:
     <p class="note">Three gates between an idea and your feed. Nothing reaches Telegram for approval without passing all three.</p>
     <ol class="hooks">
       <li><b>The guard</b><span>Clean for everyone, brand rules, lengths, sources, no named people in civic posts, no tribe, no betting.</span></li>
-      <li><b>The critic</b><span>A tough-editor AI scores hook, sendability, clarity, freshness, voice and craft. Under 7.5 gets one rewrite, kept only if it scores higher. The score shows on your approval card.</span></li>
-      <li><b>Visual QA</b><span>Every render is measured: text wider than its box, collisions, anything off the canvas. Broken designs are held for a human.</span></li>
+      <li><b>The critic</b><span>A tough-editor AI scores hook, sendability, clarity (is the topic plain?), freshness, voice, craft, picture (do symbol + headline carry the message?) and hold. Under 7.5 gets one rewrite, kept only if it scores higher.</span></li>
+      <li><b>Visual QA</b><span>Every render is measured: text wider than its box, collisions, anything off the canvas, the symbol never over text, and every line of text checked for contrast against the real pixels behind it. Unreadable ink switches to the brand colour that reads best. Anything still broken is held for a human.</span></li>
+      <li><b>The budget cap</b><span>The AI spend is counted from real usage on every call. Optional passes stop at the weekly cap (default $0.50), so quality never costs more than planned.</span></li>
     </ol>
   </section>
 
@@ -668,6 +723,7 @@ a{color:var(--accent-ink)}
 
 @media (max-width:980px){.play{grid-template-columns:repeat(2,1fr)}.lore{grid-template-columns:repeat(2,1fr)}.cast-row,.pose-row{grid-template-columns:repeat(4,1fr)}.exprs{grid-template-columns:repeat(4,1fr)}.swatches{grid-template-columns:repeat(3,1fr)}.lanes,.reach,.moneys{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(2,1fr)}.plan90,.pillars,.devs{grid-template-columns:repeat(2,1fr)}.hooks{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(3,1fr)}.glossary{grid-template-columns:1fr}}
 @media (max-width:620px){.reels{grid-template-columns:repeat(2,1fr)}.play,.lore{grid-template-columns:1fr}.stickers img{width:72px;height:72px}.cast-row,.pose-row{grid-template-columns:repeat(2,1fr)}.comic-demo{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.hero-art{order:-1}.m--hero{max-width:200px}.modes,.logos,.doit,.profiles{grid-template-columns:1fr}.exprs{grid-template-columns:repeat(2,1fr)}.swatches{grid-template-columns:repeat(2,1fr)}.lanes,.reach,.moneys,.flow,.plan90,.pillars,.hooks,.devs{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.series-row{grid-template-columns:1fr 84px}.series-row .when{grid-column:1/-1}.series-row img{width:84px}.gl{grid-template-columns:1fr;gap:4px}}
+img.wide{width:100%;height:auto;border-radius:24px;display:block;margin-top:18px}
 """
 
 FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Figtree:wght@400;500;600;700;800&family=Unbounded:wght@700;800&display=swap">'

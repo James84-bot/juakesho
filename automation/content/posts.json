@@ -26,7 +26,8 @@
         "Ask: “Bullet notes + 5 exam questions, simple English.”"
       ],
       "payoff": "Revision just got a shortcut.",
-      "caption": "AI Hack: a 1-hour lecture into clean notes and practice questions in about 2 minutes. Always ask before recording. Send this to the class group before CATs.\n\n#AIHack #JuaKesho"
+      "caption": "AI Hack: a 1-hour lecture into clean notes and practice questions in about 2 minutes. Always ask before recording. Send this to the class group before CATs.\n\n#AIHack #JuaKesho",
+      "symbol": "grad_cap"
     },
     {
       "id": "02-decode-prompt",
@@ -37,7 +38,8 @@
       "number": 1,
       "meaning": "What you type to tell an AI what you want. Vague prompt, vague answer. Give it a role, a task and an example.",
       "try_this": "Not “write a caption” but “3 funny captions for my thrift reel, Kenyan English, under 12 words”.",
-      "caption": "Decode No. 1: Prompt. The difference between a boring AI answer and a fire one is how you ask. Save this, then share your best prompt in the comments.\n\n#Decode #JuaKesho"
+      "caption": "Decode No. 1: Prompt. The difference between a boring AI answer and a fire one is how you ask. Save this, then share your best prompt in the comments.\n\n#Decode #JuaKesho",
+      "symbol": "key"
     },
     {
       "id": "03-cap-coding",
@@ -47,7 +49,8 @@
       "verdict": "cap",
       "real": "Most AI tools work in plain English. Coding takes you further, but you can build a bot, a site or a content system this weekend without it.",
       "source": "General: mainstream AI assistants and no-code automation tools accept plain-language instructions",
-      "caption": "Cap or No Cap? “You need coding to build with AI.” CAP. Start with plain English, learn code as you go. Tag the friend who keeps saying “I'm not a tech person”.\n\n#CapOrNoCap #JuaKesho"
+      "caption": "Cap or No Cap? “You need coding to build with AI.” CAP. Start with plain English, learn code as you go. Tag the friend who keeps saying “I'm not a tech person”.\n\n#CapOrNoCap #JuaKesho",
+      "symbol": "robot"
     },
     {
       "id": "04-usiibiwe-task-scam",
@@ -63,7 +66,8 @@
       ],
       "expr": "wow",
       "source": "Common 'task scam' pattern (pay-to-start online jobs); confirm against a current Communications Authority of Kenya or Safaricom fraud advisory before posting",
-      "caption": "USIIBIWE! “Earn daily for liking videos, just pay registration.” That's how they get you. Real jobs don't charge you to start. Send this to the group chat, someone needs it.\n\n#Usiibiwe #JuaKesho"
+      "caption": "USIIBIWE! “Earn daily for liking videos, just pay registration.” That's how they get you. Real jobs don't charge you to start. Send this to the group chat, someone needs it.\n\n#Usiibiwe #JuaKesho",
+      "symbol": "hook"
     },
     {
       "id": "05-vichekesho-cv",
@@ -160,7 +164,8 @@
         "Telegram"
       ],
       "result": "Pilot soon. Comment BOT for the breakdown.",
-      "caption": "Build With Me: a bot that reads campus notices so nobody digs through PDFs again. No human, no send: every message gets approved first. Comment BOT and we'll break it down step by step.\n\n#BuildWithMe #JuaKesho"
+      "caption": "Build With Me: a bot that reads campus notices so nobody digs through PDFs again. No human, no send: every message gets approved first. Comment BOT and we'll break it down step by step.\n\n#BuildWithMe #JuaKesho",
+      "symbol": "phone_chat"
     },
     {
       "id": "08-africa-mpesa",
@@ -171,8 +176,9 @@
       "country": "Kenya",
       "fact": "Kenya made sending money by SMS an everyday thing, long before most of the world had heard of mobile money.",
       "now": "We started it. The world followed.",
-      "caption": "Made in Africa: in 2007 Kenya launched M-Pesa, and sending money by phone became normal here. Which African innovation are you proud of?\n\n#MadeInAfrica #JuaKesho",
-      "source": "https://en.wikipedia.org/wiki/M-Pesa"
+      "caption": "Made in Africa: in 2007 Kenya launched M-Pesa, and sending money by phone became normal here. Which African innovation are you proud of? Drop it in the comments.\n\n#MadeInAfrica #JuaKesho",
+      "source": "https://en.wikipedia.org/wiki/M-Pesa",
+      "symbol": "rocket"
     },
     {
       "id": "09-cover-kesho-kutwa",
@@ -188,7 +194,8 @@
       "highlight": 1,
       "kicker": "Swipe to see tomorrow!",
       "expr": "visor",
-      "caption": "Kesho Kutwa: 5 things your phone will soon do for you. Swipe, then save it so you remember when tomorrow comes.\n\n#KeshoKutwa #JuaKesho"
+      "caption": "Kesho Kutwa: 5 things your phone will soon do for you. Swipe, then save it so you remember when tomorrow comes.\n\n#KeshoKutwa #JuaKesho",
+      "symbol": "sunrise"
     },
     {
       "id": "09b-kesho-mtafsiri",
@@ -200,8 +207,9 @@
       "leo": "Apps can already translate a live conversation between many languages, Kiswahili included.",
       "kesho": "Talk to anyone, anywhere, each in your own language, almost without noticing the phone.",
       "anza": "Open Google Translate, tap Conversation, and chat with a friend in two languages.",
-      "caption": "1/5: Your phone will be your translator. Try Conversation mode in Google Translate today with a friend.\n\n#KeshoKutwa #JuaKesho",
-      "source": "https://support.google.com/translate/"
+      "caption": "1/5: Your phone will be your translator. Try Conversation mode in Google Translate today, then send this to the friend who travels most.\n\n#KeshoKutwa #JuaKesho",
+      "source": "https://support.google.com/translate/",
+      "symbol": "bridge"
     },
     {
       "id": "10-story-poll-dms",
@@ -215,7 +223,8 @@
         "Never, too personal"
       ],
       "cta": "Vote below!",
-      "caption": "Jua Asks: would you let AI reply your DMs? Vote on the story!"
+      "caption": "Jua Asks: would you let AI reply your DMs? Vote on the story!",
+      "symbol": "phone_chat"
     },
     {
       "id": "12-still-music",
@@ -227,7 +236,8 @@
       "new": "Upload to streaming, turn the hook into a TikTok sound, pitch playlists from your artist dashboard, study your fan data.",
       "cta": "Tag an artist who needs this.",
       "source": "General: major streaming platforms offer artist dashboards with playlist pitching and listener data",
-      "caption": "Still in 2026? Waiting for radio to find you. The kesho way: your fans are already on TikTok and streaming. Tag an upcoming artist who needs this, then drop your favourite new Kenyan song below.\n\n#StillIn2026 #JuaKesho"
+      "caption": "Still in 2026? Waiting for radio to find you. The kesho way: your fans are already on TikTok and streaming. Tag an upcoming artist who needs this, then drop your favourite new Kenyan song below.\n\n#StillIn2026 #JuaKesho",
+      "symbol": "music"
     },
     {
       "id": "13-spotlight-ushahidi",
@@ -240,7 +250,8 @@
       "why": "Made here, then used by responders and communities around the world. Proof that African tech travels.",
       "cta": "Share this so more people know it's ours.",
       "source": "https://en.wikipedia.org/wiki/Ushahidi",
-      "caption": "Put Us On: Ushahidi, built in Kenya in 2008, now used around the world. We support our own. Share this, then tag an African startup or artist we should spotlight next.\n\n#PutUsOn #JuaKesho"
+      "caption": "Put Us On: Ushahidi, built in Kenya in 2008, now used around the world. We support our own. Share this, then tag an African startup or artist we should spotlight next.\n\n#PutUsOn #JuaKesho",
+      "symbol": "eye"
     },
     {
       "id": "14-money-idle-funds",
@@ -253,7 +264,8 @@
       "why": "Unused money still costs: loans on undrawn funds charge fees, and the projects you were promised wait.",
       "check": "Auditor-General reports are public on parliament.go.ke. Read one page tonight.",
       "source": "Auditor-General Nancy Gathungu to the National Assembly Budget Committee, 2 June 2025 (Capital FM: capitalfm.africa/audit-exposes-sh304bn-in-idle-govt-project-funds)",
-      "caption": "Follow the Money: Sh304 billion set aside for flagship projects, never used. Unused money still costs us in loan fees and delayed projects. Save this and send it to someone who says “politics isn't my business”. It's your money.\n\n#FollowTheMoney #JuaKesho"
+      "caption": "Follow the Money: Sh304 billion set aside for flagship projects, never used. Unused money still costs us in loan fees and delayed projects. Save this and send it to someone who says “politics isn't my business”. It's your money.\n\n#FollowTheMoney #JuaKesho",
+      "symbol": "crane"
     },
     {
       "id": "15-see-paid-trends",
@@ -269,7 +281,8 @@
       ],
       "payoff": "Some get paid $10–15 a day to trend.",
       "source": "Mozilla Foundation, 'Inside the Shadowy World of Disinformation-for-hire in Kenya', Odanga Madung & Brian Obilo, 2 Sept 2021",
-      "caption": "See Through It: some trends are bought. Mozilla researchers documented influencers paid via M-Pesa to push hashtags. Before you retweet, check in 30 seconds. Send this to the group chat that believes every trend.\n\n#SeeThroughIt #JuaKesho"
+      "caption": "See Through It: some trends are bought. Mozilla researchers documented influencers paid via M-Pesa to push hashtags. Before you retweet, check in 30 seconds. Send this to the group chat that believes every trend.\n\n#SeeThroughIt #JuaKesho",
+      "symbol": "puppet"
     },
     {
       "id": "16-vichekesho-500",
@@ -336,7 +349,40 @@
       "highlight": 1,
       "kicker": "Wake up. Build. Do it right.",
       "expr": "visor",
-      "caption": "Africa can't wait. Not for permission, not for “next year”. Tomorrow is already here, and it belongs to the ones who learn it first. Send this to one person who's ready to build.\n\n#JuaKesho #Wanakesho"
+      "caption": "Africa can't wait. Not for permission, not for “next year”. Tomorrow is already here, and it belongs to the ones who learn it first. Send this to one person who's ready to build.\n\n#JuaKesho #Wanakesho",
+      "symbol": "hourglass"
+    },
+    {
+      "id": "18-straight-africa-country",
+      "template": "straight",
+      "bg": "usiku",
+      "symbol": "magnifier",
+      "claim": "Africa is basically one country with one culture.",
+      "who": "a stereotype still found in comments",
+      "claim_source": "Recurring stereotype in comment sections and old textbooks; not attributed to one person",
+      "verdict": "false",
+      "truth": "54 countries. 2,000+ languages. One continent.",
+      "proof": [
+        "54 countries, each with its own government, flag and story.",
+        "Over 2,000 languages: roughly a third of all the languages spoken on Earth.",
+        "Kenya alone speaks 40+ languages, and Sheng belongs to all of us."
+      ],
+      "pride": "One continent. 54 flags. Zero excuses.",
+      "source": "UN member states by region (un.org/en/about-us/member-states); Ethnologue, languages of Africa (ethnologue.com)",
+      "caption": "Set It Straight: Africa is not a country. It's 54 of them, and more languages than any other continent. Send this to the friend who still says 'I'm going to Africa' like it's one town.\\n\\n#SetItStraight #JuaKesho"
+    },
+    {
+      "id": "19-makanga-cloud",
+      "template": "makanga",
+      "bg": "pwani",
+      "symbol": "matatu",
+      "message": "Cloud storage keeps your files safe off your phone, like a stage keeps passengers moving.",
+      "topic": "Cloud storage",
+      "like": "a matatu stage for your files",
+      "explain": "Your photos and notes wait at a safe stage online. Lose the phone? Your files are still there. Log in from any phone and pick them up.",
+      "punch": "Phone imeibiwa? Files ziko salama.",
+      "expr": "wink",
+      "caption": "Cloud storage, explained the Kenyan way. Turn on Google Photos or iCloud backup today, then send this to the friend who lost everything with their last phone.\n\n#JuaKesho"
     }
   ]
 }

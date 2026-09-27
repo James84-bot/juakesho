@@ -10,8 +10,9 @@ tapped into AI and the future. Not a school: hacks, takes, comics and drops, in 
 brand-book/index.html        The brand book (open in a browser)
 assets/logo/                 Wordmark, stacked logo, icons (outlined SVG, no fonts needed)
 assets/fonts/                Unbounded, Figtree, Caveat (OFL)
-exports/posts/               Launch set: 18 designs, PNG + JPEG
-exports/reels/               The same 18 as 9:16 Reels/TikToks (MP4 + cover)
+exports/posts/               Launch set: 20 designs, PNG + JPEG (each with its symbol)
+exports/reels/               The same set as 9:16 Reels/TikToks (MP4 + cover)
+exports/symbols-sheet.png    The symbol library at a glance
 exports/stickers/            12-sticker WhatsApp pack (512×512 WebP) + tray icon
 exports/profiles/            Avatars, YouTube / X / Facebook banners
 automation/                  The self-running content engine
@@ -20,16 +21,23 @@ automation/                  The self-running content engine
   templates/*.html.j2        One template per series
   content/posts.json         Launch posts (edit or add, then render)
   calendar.json              Weekly rhythm, audience lanes, channels
-  render.py                  posts.json → PNG, with automatic visual QA (overflow, collisions, off-canvas)
+  render.py                  posts.json → PNG: symbol auto-placement, adaptive ink, visual QA
+                             (overflow, collisions, off-canvas, contrast of every text line)
+  symbols.py                 33 sticker symbols, one meaning each (the picture carries the message)
+  textfit.py                 Measures text with the real font files (headline sizing, comic bubbles)
+  photos.py                  Real photos: Pexels scenes (duotoned), your own photos, people with rights
   video.py                   posts → 9:16 MP4 Reels (motion, safe zones, deterministic frames)
-  sound.py                   The Jua chime + original kalimba beat (synthesised, license-free)
+  sound.py                   The Jua chime + original kalimba and benga-guitar beat (synthesised)
+  content/music/             Tracks by artists who gave permission (see README there)
+  content/people/            Photos of people we celebrate, used with permission
   guard.py                   Clean-for-everyone + brand + length + source checks
   draft.py                   AI writer (Anthropic API): trend playbook, lore, civic rules, self-repair
-                             + the critic: scores every post, rewrites anything under 7.5
+                             + the critic: scores every post (incl. picture + clarity), rewrites under 7.5
+                             + a weekly budget cap on AI spend (JUA_WEEKLY_BUDGET_USD, default $0.50)
   trends.py                  Daily Google Trends (KE, NG, ZA, US), politics/tragedy/betting filtered out
   stickers.py                Builds the WhatsApp sticker pack
   pipeline.py                plan → draft → guard → render → Telegram approval → publish → learn
-  tests/                     33 tests, no network needed (the visual QA test uses Chromium if installed)
+  tests/                     45 tests, no network needed (the visual QA test uses Chromium if installed)
 .github/workflows/autopilot.yml   Runs everything in the cloud, free
 ```
 
@@ -52,7 +60,8 @@ python render.py --sheet                   # → exports/posts/ + contact sheet
 4. **Meta:** switch Instagram to a Business/Creator account linked to your Facebook Page. Create a Meta app and get a
    long-lived **Page access token** with `instagram_content_publish`, `pages_manage_posts`, `pages_read_engagement`.
    Note your Page id and Instagram user id.
-5. **Anthropic:** create an API key at console.anthropic.com.
+5. **Anthropic:** create an API key at console.anthropic.com (inside a workspace).
+   Optional: a free Pexels key (pexels.com/api) as `PEXELS_API_KEY` for real photos.
 6. **Secrets:** in GitHub → Settings → Secrets and variables → Actions, add everything in `automation/.env.example`.
 7. **Test:** Actions → autopilot → Run workflow with `rehearse` first (no keys needed; download the
    `rehearsal-week` artifact to see a full mock week). Then run `week`. Previews arrive on Telegram; tap ✅ or ❌.
@@ -73,6 +82,7 @@ python trends.py                           # what Kenya is searching now (safe t
 python stickers.py                         # rebuild the sticker pack
 python video.py --only 01-hack-lecture-notes   # render one Reel (~1-2 min; set JUA_VIDEO_WORKERS for more cores)
 python build_logo.py && python build_book.py   # rebuild logo files and brand book after brand.json changes
+python symbols.py                          # review the symbol library (exports/symbols-sheet.png)
 ```
 
 ## Before launch

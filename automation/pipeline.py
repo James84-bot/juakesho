@@ -185,10 +185,13 @@ def draft(label: str, mock: bool = False) -> dict:
         return data
     lanes = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))["lanes"]
     drafted, scripts = drafter.draft_week(label, todo, lanes, mock=mock)
+    data_spend = round(drafter.SPEND["usd"], 4)
     by_id = {p["id"]: p for p in drafted}
     data["posts"] = [by_id.get(p["id"], p) for p in data["posts"]]
     data["scripts"] = scripts or data.get("scripts", {})
+    data["spend_usd"] = round(data.get("spend_usd", 0) + data_spend, 4)   # this week's AI cost, for the owner
     save_week(data)
+    log(f"AI spend this week: ${data['spend_usd']:.3f} (cap ${drafter.budget():.2f})")
     bad = [p["id"] for p in drafted if p["status"] == "needs_human"]
     log(f"drafted {len(drafted)}; needs a human: {bad or 'none'}")
     return data
@@ -219,7 +222,8 @@ def held_summary(data: dict) -> str | None:
     held = [p for p in data["posts"] if p["status"] == "needs_human"]
     if not held:
         return None
-    lines = [f"• <b>{p['id']}</b>: {'; '.join((p.get('guard') or {}).get('errors') or ['check needed'])[:160]}" for p in held]
+    from html import escape as esc
+    lines = [f"• <b>{esc(p['id'])}</b>: {esc('; '.join((p.get('guard') or {}).get('errors') or ['check needed'])[:160])}" for p in held]
     return (f"🛠 {len(held)} post(s) held back, not sent for approval:\n" + "\n".join(lines) +
             "\n\nTo fix automatically: GitHub → Actions → autopilot → Run workflow → <code>redo</code>.")
 
@@ -234,6 +238,8 @@ def render_week(label: str) -> dict:
         log("nothing to render")
         return data
     out_dir = EXPORTS / label
+    import photos
+    photos.attach(todo, out_dir)   # real photos where the writer asked for one (skipped quietly without a key)
     qa: dict = {}
     renderer.render(todo, out_dir, qa=qa)
     for p in todo:
@@ -280,20 +286,35 @@ def _buttons(key: str) -> str:
 
 
 def _preview_text(p: dict) -> str:
+    """Approval card text (Telegram HTML). Everything from the post is escaped: a caption with '&' or '<3'
+    must never break the message. The caption is trimmed on its own so no HTML tag is ever cut in half."""
+    from html import escape as esc
     warn = p.get("guard", {}).get("warnings", [])
     when = dt.datetime.fromisoformat(p["publish_at"]).strftime("%a %d %b, %H:%M")
-    lines = [f"<b>{p['id']}</b> · {p['template']} · lane: {p.get('lane', '-')}", f"🕒 {when} EAT", "", p.get("caption", "")]
+    cap = p.get("caption", "")
+    cap = cap if len(cap) <= 420 else cap[:417].rstrip() + "..."
+    lines = [f"<b>{esc(p['id'])}</b> · {esc(p['template'])} · lane: {esc(str(p.get('lane', '-')))}", f"🕒 {when} EAT"]
+    if p.get("message"):
+        lines += [f"🎯 <i>{esc(p['message'])}</i>" + (f"  ({esc(p['symbol'])})" if p.get("symbol") else "")]
+    lines += ["", esc(cap)]
     if p.get("trend"):
-        lines += ["", f"📈 Riding trend: {p['trend']}"]
+        lines += ["", f"📈 Riding trend: {esc(str(p['trend']))}"]
     if p.get("critic"):
         c = p["critic"]
-        lines += ["", f"⭐ {c['avg']}/10  hook {c['hook']} · send {c['send']} · fresh {c['fresh']} · voice {c['voice']}",
-                  f"✏️ {c['note']}"]
+        parts = " · ".join(f"{k} {c[k]}" for k in ("hook", "clarity", "picture", "send", "fresh") if c.get(k) is not None)
+        lines += ["", f"⭐ {c.get('avg')}/10  {parts}", f"✏️ {esc(str(c.get('note', '')))}"]
+    for credit in (p.get("person_credit") or p.get("photo_credit"), p.get("track_credit")):
+        if credit:
+            lines += [f"©️ {esc(credit)}"]
     if p.get("source"):
-        lines += ["", f"📎 Source: {p['source']}"]
+        lines += ["", f"📎 Source: {esc(str(p['source']))[:200]}"]
     if warn:
-        lines += ["", "⚠️ " + "\n⚠️ ".join(warn)]
-    return "\n".join(lines)[:1024]  # Telegram caption limit
+        lines += ["", "⚠️ " + "\n⚠️ ".join(esc(w) for w in warn[:4])]
+    text = "\n".join(lines)
+    while len(text) > 1024 and len(lines) > 4:   # Telegram caption limit: drop whole lines from the end, never cut a tag
+        lines.pop()
+        text = "\n".join(lines)
+    return text[:1024]
 
 
 def ask(label: str, dry_run: bool = False) -> dict:
@@ -432,6 +453,14 @@ def wait_until_ready(container: str, timeout_s: int = 300, every_s: int = 10) ->
     raise RuntimeError("Instagram video processing timed out")
 
 
+def caption_for(post: dict) -> str:
+    """The approved caption plus credits: the photographer of a real photo, the artist of a licensed track."""
+    cap = post.get("caption", "")
+    credits = [f"{icon} {c}" for icon, c in (("📷", post.get("person_credit") or post.get("photo_credit")),
+                                             ("🎵", post.get("track_credit"))) if c and c not in cap]
+    return f"{cap}\n\n" + "\n".join(credits) if credits else cap
+
+
 def publish_instagram(label: str, members: list[dict]) -> str:
     ig = need("META_IG_USER_ID")["META_IG_USER_ID"]
     first = members[0]
@@ -443,16 +472,16 @@ def publish_instagram(label: str, members: list[dict]) -> str:
         children = [graph(f"{ig}/media", {"image_url": public_url(label, m["id"]), "is_carousel_item": "true"})["id"]
                     for m in members[:10]]
         container = graph(f"{ig}/media", {"media_type": "CAROUSEL", "children": ",".join(children),
-                                          "caption": first.get("caption", "")})["id"]
+                                          "caption": caption_for(first)})["id"]
     elif first.get("size") == "story":
         container = graph(f"{ig}/media", {"media_type": "STORIES", "image_url": public_url(label, first["id"])})["id"]
     elif first.get("reel"):
         container = graph(f"{ig}/media", {"media_type": "REELS", "video_url": public_url(label, first["id"], "mp4"),
                                           "cover_url": public_url(label, f"{first['id']}-cover"),
-                                          "caption": first.get("caption", ""), "share_to_feed": "true"})["id"]
+                                          "caption": caption_for(first), "share_to_feed": "true"})["id"]
         wait_until_ready(container)
     else:
-        container = graph(f"{ig}/media", {"image_url": public_url(label, first["id"]), "caption": first.get("caption", "")})["id"]
+        container = graph(f"{ig}/media", {"image_url": public_url(label, first["id"]), "caption": caption_for(first)})["id"]
     time.sleep(3)  # give Instagram a moment to fetch the image before publishing
     return graph(f"{ig}/media_publish", {"creation_id": container})["id"]
 
@@ -463,9 +492,9 @@ def publish_facebook(label: str, members: list[dict]) -> str | None:
     if first.get("size") == "story":
         return None  # Page stories use a different API; Instagram story only
     if len(members) == 1:
-        return graph(f"{page}/photos", {"url": public_url(label, first["id"]), "caption": first.get("caption", "")})["id"]
+        return graph(f"{page}/photos", {"url": public_url(label, first["id"]), "caption": caption_for(first)})["id"]
     ids = [graph(f"{page}/photos", {"url": public_url(label, m["id"]), "published": "false"})["id"] for m in members[:10]]
-    fields = {"message": first.get("caption", "")}
+    fields = {"message": caption_for(first)}
     for i, fbid in enumerate(ids):
         fields[f"attached_media[{i}]"] = json.dumps({"media_fbid": fbid})
     return graph(f"{page}/feed", fields)["id"]
@@ -499,7 +528,7 @@ def publish(dry_run: bool = False) -> None:
                 for m in members:  # a stale post helps nobody: skip it rather than flood the feed
                     m["status"] = "missed"
                 log(f"missed {key}: more than {LATE_LIMIT} past its slot")
-                _notify(f"⏭ <b>{key}</b> missed its slot and won't be posted late. Re-use the idea in a future week.")
+                _notify(f"⏭ <b>{_esc(key)}</b> missed its slot and won't be posted late. Re-use the idea in a future week.")
                 continue
             if not connected:
                 waiting += 1  # keep it approved: it goes out once Instagram is connected (if still on time)
@@ -513,14 +542,14 @@ def publish(dry_run: bool = False) -> None:
                 for m in members:
                     m.update(status="published", published_at=now().isoformat(), ig_id=ig_id, fb_id=fb_id)
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
-                _notify(f"✅ Published <b>{key}</b>. Forward it to the WhatsApp Channel too.")
+                _notify(f"✅ Published <b>{_esc(key)}</b>. Forward it to the WhatsApp Channel too.")
             except Exception as e:  # keep going; record and retry next tick
                 for m in members:
                     m["status"] = "publish_failed"
                     m["attempts"] = m.get("attempts", 0) + 1
                     m["last_error"] = str(e)[:400]
                 log(f"FAILED {key}: {e}")
-                _notify(f"⚠️ Publishing <b>{key}</b> failed (attempt {p.get('attempts', 1)}): {str(e)[:300]}")
+                _notify(f"⚠️ Publishing <b>{_esc(key)}</b> failed (attempt {p.get('attempts', 1)}): {_esc(str(e)[:300])}")
         save_week(data)
     if waiting and not dry_run:
         log(f"Instagram not connected yet: {waiting} approved post(s) waiting")
@@ -533,6 +562,11 @@ def publish(dry_run: bool = False) -> None:
             flag.write_text(now().isoformat(), encoding="utf-8")
     elif connected:
         (STATE / "meta_missing_notified.txt").unlink(missing_ok=True)
+
+
+def _esc(text: str) -> str:
+    from html import escape
+    return escape(str(text), quote=False)
 
 
 def _notify(text: str) -> None:

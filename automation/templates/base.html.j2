@@ -51,7 +51,28 @@ html, body { background: #777; }
   box-shadow: 6px 7px 0 var(--usiku);
 }
 .hook { font-family: "Caveat", cursive; font-weight: 700; line-height: 1; }
+/* The post's symbol, huge and faint behind the glass (blurred where cards cover it, crisp where they don't) */
+.ghost { position: absolute; width: 980px; height: 980px; right: -250px; bottom: -150px; opacity: {{ '.13' if dark else '.08' }};
+  transform: rotate(-9deg); pointer-events: none; }
+.symbol { position: absolute; filter: drop-shadow(0 18px 30px rgba(10, 5, 25, .35)); }
+{% if photo_uri is defined %}
+/* Real photo, duotoned into the brand: shadows become usiku, highlights the accent; colour clouds glow on top */
+.photo { position: absolute; inset: 0; background-size: cover; background-position: center; filter: grayscale(1) contrast(1.12) brightness(1.02); }
+.photo-dark { position: absolute; inset: 0; background: var(--usiku); mix-blend-mode: lighten; }
+.photo-light { position: absolute; inset: 0; background: {{ photo_tone }}; mix-blend-mode: multiply; }
+.canvas > .backdrop { mix-blend-mode: soft-light; opacity: .85; }
+.photo-fade { position: absolute; inset: 0; background: linear-gradient(rgba(29, 20, 51, .72), rgba(29, 20, 51, .08) 38%, rgba(29, 20, 51, .12) 62%, rgba(29, 20, 51, .82)); }
+.credit { position: absolute; right: 34px; bottom: 104px; font: 600 15px "Figtree"; color: #fff; opacity: .8; letter-spacing: .02em; }
+{% endif %}
+.person-credit { position: absolute; right: 34px; bottom: 104px; font: 600 15px "Figtree"; color: {{ ink }}; opacity: .85; letter-spacing: .02em; }
 {% block style %}{% endblock %}
+/* Legibility layer (after the templates, so it always applies; checked by the contrast QA) */
+{% if dark %}
+.glass:not(.glass--light) { background: linear-gradient(rgba(255, 255, 255, .10), rgba(255, 255, 255, .04)), rgba(29, 20, 51, .34); }
+.hook, .hand { text-shadow: 0 2px 3px rgba(10, 5, 25, .55), 0 0 18px rgba(10, 5, 25, .55); }
+{% endif %}
+.glass--light b { color: var(--usiku); }
+{{ ink_css }}
 {% if motion %}
 /* ---- Motion: entrances are staggered by --i (set below); stepped frame by frame when exporting video ---- */
 @keyframes enter { from { opacity: 0; translate: 0 46px; scale: .94; } to { opacity: 1; translate: 0 0; scale: 1; } }
@@ -68,6 +89,9 @@ html, body { background: #777; }
 .w { display: inline-block; animation: word .4s cubic-bezier(.2, .9, .3, 1.2) both; animation-delay: calc(var(--t0, .1s) + var(--w) * .06s); }
 /* The whole colour cloud is one composited layer: blurred once, then only moved */
 .backdrop { animation: drift 9s ease-in-out infinite; will-change: translate; }
+.ghost { animation: drift 11s ease-in-out infinite reverse; will-change: translate; }
+.layer > svg.symbol { animation: pop .6s cubic-bezier(.2, .9, .3, 1.25) both calc(var(--i, 0) * .12s - .15s),
+                                 bob 3s ease-in-out calc(.7s + var(--i, 0) * .12s) infinite; }
 {% endif %}
 {% if reel %}
 .reel { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: {{ bg }}; }
@@ -84,9 +108,14 @@ html, body { background: #777; }
 <body>
 {% if reel %}<div class="reel" id="reel"><div class="reel-top"><img src="{{ logo_on_dark if dark else logo_on_light }}" alt=""></div>{% endif %}
 <div class="canvas" id="canvas">
+  {% if photo_uri is defined %}<div class="photo" style="background-image: url('{{ photo_uri }}')"></div>
+  <div class="photo-dark"></div><div class="photo-light"></div>{% endif %}
   <svg class="backdrop" viewBox="0 0 {{ W }} {{ H }}" preserveAspectRatio="none">{% block backdrop %}{% endblock %}</svg>
+  {% if photo_uri is defined %}<div class="photo-fade"></div>{% endif %}
+  {% if symbol_ghost is defined %}<svg class="ghost" viewBox="0 0 400 400" aria-hidden="true">{{ symbol_ghost }}</svg>{% endif %}
   <svg class="art" viewBox="0 0 {{ W }} {{ H }}" preserveAspectRatio="none">{{ GLOW }}{% block art %}{% endblock %}</svg>
-  <div class="layer">{% block content %}{% endblock %}</div>
+  <div class="layer">{% block content %}{% endblock %}{% if photo_uri is defined and photo_credit %}<span class="credit">{{ photo_credit }}</span>{% endif %}{% if person_credit is defined and person_credit %}<span class="credit person-credit">{{ person_credit }}</span>{% endif %}{% if symbol_box is defined %}
+    <svg class="symbol" viewBox="-20 -20 440 440" style="left: {{ symbol_box[0] }}px; top: {{ symbol_box[1] }}px; width: {{ symbol_box[2] }}px; height: {{ symbol_box[2] }}px">{{ symbol_hero }}</svg>{% endif %}</div>
   {% block footer %}
   <div class="foot">
     <img src="{{ logo_on_dark if dark else logo_on_light }}" alt="">
