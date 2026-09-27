@@ -29,7 +29,7 @@ automation/                  The self-running content engine
   trends.py                  Daily Google Trends (KE, NG, ZA, US), politics/tragedy/betting filtered out
   stickers.py                Builds the WhatsApp sticker pack
   pipeline.py                plan → draft → guard → render → Telegram approval → publish → learn
-  tests/                     29 tests, no network needed (the visual QA test uses Chromium if installed)
+  tests/                     30 tests, no network needed (the visual QA test uses Chromium if installed)
 .github/workflows/autopilot.yml   Runs everything in the cloud, free
 ```
 

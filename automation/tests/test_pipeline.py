@@ -250,6 +250,18 @@ class ApiCallTests(unittest.TestCase):
             self.assertEqual(self.draft.call_claude("s", "u"), "hi")
         self.assertEqual(sent["model"], self.draft.DEFAULT_MODEL)
 
+    def test_workspace_header_only_when_set(self):
+        seen = []
+        def fake(req, timeout):
+            seen.append({k.lower(): v for k, v in req.header_items()})
+            return self._ok()
+        with mock.patch.object(self.draft.urllib.request, "urlopen", fake):
+            self.draft.call_claude("s", "u")
+            with mock.patch.dict(os.environ, {"ANTHROPIC_WORKSPACE_ID": " wrkspc_123 "}):
+                self.draft.call_claude("s", "u")
+        self.assertNotIn("anthropic-workspace-id", seen[0])
+        self.assertEqual(seen[1]["anthropic-workspace-id"], "wrkspc_123")
+
     def test_retries_overloaded_then_succeeds(self):
         calls = [self._http(529), self._http(429), self._ok("done")]
         def fake(req, timeout):

@@ -220,8 +220,11 @@ def call_claude(system: str, user: str, max_tokens: int = 12000) -> str:
         "system": system,
         "messages": [{"role": "user", "content": user}],
     }).encode()
-    req = urllib.request.Request(API_URL, data=body, method="POST", headers={
-        "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
+    headers = {"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"}
+    workspace = (os.environ.get("ANTHROPIC_WORKSPACE_ID") or "").strip()
+    if workspace:  # needed when the key belongs to the organisation rather than to one workspace
+        headers["anthropic-workspace-id"] = workspace
+    req = urllib.request.Request(API_URL, data=body, method="POST", headers=headers)
     # Retry only what is temporary: rate limits (429), server errors (5xx), overloaded (529), network drops
     for attempt in range(4):
         try:
