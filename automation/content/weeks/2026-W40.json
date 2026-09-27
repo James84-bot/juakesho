@@ -1,0 +1,120 @@
+{
+  "collection": "2026-W40",
+  "created": "2026-09-27T18:42:28.830894+03:00",
+  "posts": [
+    {
+      "id": "2026-w40-d1-hack",
+      "template": "hack",
+      "bg": "usiku",
+      "lane": "campus",
+      "publish_at": "2026-09-28T07:30:00+03:00",
+      "status": "planned"
+    },
+    {
+      "id": "2026-w40-d2-cap",
+      "template": "cap",
+      "bg": "usiku",
+      "lane": "young_pro",
+      "publish_at": "2026-09-29T12:45:00+03:00",
+      "status": "planned"
+    },
+    {
+      "id": "2026-w40-d3-usiibiwe",
+      "template": "usiibiwe",
+      "bg": "shuka",
+      "lane": "hustle",
+      "publish_at": "2026-09-30T18:30:00+03:00",
+      "status": "planned"
+    },
+    {
+      "id": "2026-w40-d4-vichekesho",
+      "template": "vichekesho",
+      "bg": "maziwa",
+      "lane": "hustle",
+      "publish_at": "2026-10-01T19:30:00+03:00",
+      "status": "planned"
+    },
+    {
+      "id": "2026-w40-d5-spotlight",
+      "template": "spotlight",
+      "bg": "usiku",
+      "lane": "creator",
+      "publish_at": "2026-10-02T17:00:00+03:00",
+      "status": "planned"
+    },
+    {
+      "id": "2026-w40-d6-cover",
+      "template": "cover",
+      "bg": "usiku",
+      "lane": "campus",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "status": "planned",
+      "group": "2026-w40-d6-cover"
+    },
+    {
+      "id": "2026-w40-d6-kesho-1",
+      "template": "kesho",
+      "bg": "usiku",
+      "lane": "campus",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "status": "planned",
+      "group": "2026-w40-d6-cover",
+      "n": 1,
+      "total": 5
+    },
+    {
+      "id": "2026-w40-d6-kesho-2",
+      "template": "kesho",
+      "bg": "usiku",
+      "lane": "campus",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "status": "planned",
+      "group": "2026-w40-d6-cover",
+      "n": 2,
+      "total": 5
+    },
+    {
+      "id": "2026-w40-d6-kesho-3",
+      "template": "kesho",
+      "bg": "usiku",
+      "lane": "campus",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "status": "planned",
+      "group": "2026-w40-d6-cover",
+      "n": 3,
+      "total": 5
+    },
+    {
+      "id": "2026-w40-d6-kesho-4",
+      "template": "kesho",
+      "bg": "usiku",
+      "lane": "campus",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "status": "planned",
+      "group": "2026-w40-d6-cover",
+      "n": 4,
+      "total": 5
+    },
+    {
+      "id": "2026-w40-d6-kesho-5",
+      "template": "kesho",
+      "bg": "usiku",
+      "lane": "campus",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "status": "planned",
+      "group": "2026-w40-d6-cover",
+      "n": 5,
+      "total": 5
+    },
+    {
+      "id": "2026-w40-d7-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-10-04T18:00:00+03:00",
+      "status": "planned",
+      "size": "story"
+    }
+  ],
+  "scripts": {}
+}
