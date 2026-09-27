@@ -23,7 +23,7 @@ permissions:
 
 jobs:
   run:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: ubuntu-latest moves to Ubuntu 26 on 2026-10-19
     timeout-minutes: 120   # Sunday renders include ~12 Reels
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -36,9 +36,9 @@ jobs:
       # GitHub Pages serves images/videos with correct content types (enable Pages: Settings → Pages → main / root)
       PUBLIC_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.11"
           cache: pip
@@ -75,7 +75,7 @@ jobs:
 
       - name: Download the rehearsal
         if: steps.cmd.outputs.c == 'rehearse'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: rehearsal-week
           path: exports/20*-W*/
@@ -90,6 +90,11 @@ jobs:
         run: |
           git config user.name "jua-kesho-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add automation/content/weeks automation/state exports || true   # MP4s are committed so Instagram can fetch them
-          git diff --cached --quiet || git commit -m "autopilot: ${{ steps.cmd.outputs.c }} $(date -u +%FT%TZ)"
-          git push
+          # Add each path only if it exists: one missing pathspec makes git add save nothing at all
+          for p in automation/content/weeks automation/state exports; do [ -e "$p" ] && git add -A -- "$p"; done
+          # (MP4s and images are committed so GitHub Pages can serve them to Instagram)
+          git diff --cached --quiet && exit 0
+          git commit -m "autopilot: ${{ steps.cmd.outputs.c }} $(date -u +%FT%TZ)"
+          # Someone may have pushed during the run (e.g. an edit on github.com): rebase, then retry
+          for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && exit 0; sleep $((i * 10)); done
+          echo "::error::could not push state after 3 attempts"; exit 1
