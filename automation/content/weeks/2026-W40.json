@@ -5,116 +5,444 @@
     {
       "id": "2026-w40-d1-hack",
       "template": "hack",
-      "bg": "usiku",
       "lane": "campus",
+      "hook": "Blurry notes are not your enemy",
+      "title": "Turn photos of scattered notes into one study guide",
+      "payoff": "Deciphering shaky handwriting is now optional.",
+      "moves": [
+        "Snap clear photos of your notes (yours or a comrade's).",
+        "Upload all the images to an AI like Gemini or ChatGPT.",
+        "Ask: 'Combine into one summary with key terms and 10 quiz questions.'",
+        "Screenshot the summary and send it to your class group."
+      ],
+      "caption": "AI Hack: messy notes into one clean study guide, in minutes. Save this before the next CAT catches you unprepared.\n\n#AIHack #JuaKesho",
+      "bg": "usiku",
       "publish_at": "2026-09-28T07:30:00+03:00",
-      "status": "planned"
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 6,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 5,
+        "voice": 7,
+        "craft": 6,
+        "avg": 6.5,
+        "note": "The AI-notes hack is common advice; sharpen with a more specific Kenyan pain point (e.g., exam CAT tomorrow) to feel less generic."
+      },
+      "reel": true
     },
     {
       "id": "2026-w40-d2-cap",
       "template": "cap",
-      "bg": "usiku",
       "lane": "young_pro",
+      "claim": "Football clubs only use AI for highlight reels and nothing else.",
+      "real": "Clubs also lean on AI and data analytics for scouting, tactics and injury prevention, the same stats behind matches like Chelsea vs Arsenal in the WSL.",
+      "verdict": "cap",
+      "source": "WSL match analytics widely reported by broadcasters, e.g. BBC Sport (search: Chelsea vs Arsenal WSL stats)",
+      "trend": "chelsea vs arsenal (2000+ searches)",
+      "caption": "Cap or No Cap? 'AI in football is just for highlight reels.' CAP. Data is deciding lineups now. Tag the friend who thinks tech and football don't mix.\n\n#CapOrNoCap #JuaKesho",
+      "bg": "usiku",
       "publish_at": "2026-09-29T12:45:00+03:00",
-      "status": "planned"
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 6,
+        "send": 7,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 5,
+        "avg": 6.3,
+        "note": "Source citation is vague ('search:'), which undercuts credibility—swap for a concrete stat or quote."
+      },
+      "reel": true
     },
     {
       "id": "2026-w40-d3-usiibiwe",
       "template": "usiibiwe",
-      "bg": "shuka",
       "lane": "hustle",
+      "title": "The 'Pay To Get Paid' Loan Trick",
+      "sender": "+254 7XX XXX XXX",
+      "sms": "Congratulations! You qualify for KES 50,000. Pay KES 1,500 activation fee to receive funds today.",
+      "tips": [
+        "A real lender never asks for money before disbursing a loan.",
+        "Check if the lender is licensed on the CBK digital lenders list.",
+        "Report the number to your telco and block it immediately."
+      ],
+      "expr": "wow",
+      "caption": "Usiibiwe! If a 'loan' asks you to pay first, it's not a loan, it's bait. Send this to the comrade waiting on hustle capital.\n\n#Usiibiwe #JuaKesho",
+      "bg": "shuka",
       "publish_at": "2026-09-30T18:30:00+03:00",
-      "status": "planned"
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "states facts but has no `source`; verify before approving"
+        ]
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 6,
+        "voice": 8,
+        "craft": 7,
+        "avg": 7.3,
+        "note": "Solid and useful, but the loan-scam warning format is common—add a fresh twist like a real recent scam number or platform name."
+      },
+      "reel": true
     },
     {
       "id": "2026-w40-d4-vichekesho",
       "template": "vichekesho",
-      "bg": "maziwa",
       "lane": "hustle",
+      "title": "Ile Assignment Ilijirudi",
+      "punch": "Score: AI 1, Checker ya Lecturer 1.",
+      "panels": [
+        {
+          "bg": "jua",
+          "left": {
+            "who": "student",
+            "pose": "point",
+            "mood": "happy",
+            "say": "AI itaniandikia hii report kwa dakika tano!"
+          },
+          "right": {
+            "who": "techie",
+            "pose": "think",
+            "mood": "flat"
+          }
+        },
+        {
+          "bg": "maziwa",
+          "left": {
+            "who": "student",
+            "pose": "phone",
+            "mood": "worried",
+            "sms": "Alert: Content flagged as 100% AI generated."
+          },
+          "right": {
+            "who": "techie",
+            "pose": "shrug",
+            "mood": "flat"
+          }
+        },
+        {
+          "bg": "jua",
+          "left": {
+            "who": "student",
+            "pose": "think",
+            "mood": "happy",
+            "say": "Sasa naandika mwenyewe, AI inasaidia tu na muundo."
+          },
+          "right": {
+            "who": "techie",
+            "pose": "cheer",
+            "mood": "happy",
+            "say": "Ndio maana!"
+          }
+        }
+      ],
+      "caption": "Vichekesho: AI can draft it, but you still have to own it. Tag the comrade who tried to submit word-for-word.\n\n#Vichekesho #JuaKesho",
+      "bg": "maziwa",
       "publish_at": "2026-10-01T19:30:00+03:00",
-      "status": "planned"
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "visual QA: 'bub' collides with 'bub' (284x41px)"
+        ],
+        "warnings": [
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 8,
+        "craft": 7,
+        "avg": 7.2,
+        "note": "Funny and relatable, but punchline ('AI 1, Checker 1') could be sharper/funnier to fully land the joke."
+      }
     },
     {
       "id": "2026-w40-d5-spotlight",
       "template": "spotlight",
-      "bg": "usiku",
       "lane": "creator",
+      "kind": "Startup",
+      "name": "M-KOPA",
+      "country": "Kenya",
+      "what": "Uses AI-driven credit scoring to offer pay-as-you-go solar power, smartphones and more to everyday Kenyans.",
+      "why": "Brings financing to people banks often skip, no collateral, just consistent small payments.",
+      "cta": "Follow their story and see how far this build scales.",
+      "source": "m-kopa.com/about",
+      "caption": "Put Us On: M-KOPA, Kenya. Solar and smartphones for people the banks ignored, powered by AI credit scoring. This is Africa building for Africa. Share this with someone who says 'we don't support our own.'\n\n#PutUsOn #JuaKesho",
+      "bg": "usiku",
       "publish_at": "2026-10-02T17:00:00+03:00",
-      "status": "planned"
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "'cta' is 53 chars (max 50)"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 5,
+        "send": 6,
+        "clarity": 8,
+        "fresh": 5,
+        "voice": 7,
+        "craft": 6,
+        "avg": 6.2,
+        "note": "M-KOPA is well-known already; find a lesser-known angle or newer stat to make it feel like fresh info, not a recap."
+      }
     },
     {
       "id": "2026-w40-d6-cover",
       "template": "cover",
-      "bg": "usiku",
       "lane": "campus",
+      "series": "Kesho Kutwa",
+      "kicker": "Campus, But Make It Future",
+      "lines": [
+        "No more queues",
+        "AI tutors",
+        "Digital certs",
+        "Smart labs"
+      ],
+      "highlight": 1,
+      "expr": "wow",
+      "caption": "Kesho Kutwa: 5 things about campus life that are already changing. Swipe before your unit gets ahead of you.\n\n#KeshoKutwa #JuaKesho",
+      "bg": "usiku",
       "publish_at": "2026-10-03T11:00:00+03:00",
-      "status": "planned",
-      "group": "2026-w40-d6-cover"
+      "group": "2026-w40-d6-cover",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach",
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 6,
+        "fresh": 4,
+        "voice": 6,
+        "craft": 5,
+        "avg": 5.2,
+        "note": "Cover card is generic listicle bait; give it a sharper, more specific hook than 'AI tutors, digital certs.'"
+      }
     },
     {
       "id": "2026-w40-d6-kesho-1",
       "template": "kesho",
-      "bg": "usiku",
       "lane": "campus",
-      "publish_at": "2026-10-03T11:00:00+03:00",
-      "status": "planned",
-      "group": "2026-w40-d6-cover",
+      "headline": "Office hours become AI hours",
+      "leo": "Today you queue outside a lecturer's office for one small question.",
+      "kesho": "Soon AI teaching assistants trained on your course notes answer instantly, any hour.",
+      "anza": "Ask your lecturer if a class AI assistant exists, or build one from your notes.",
       "n": 1,
-      "total": 5
+      "total": 5,
+      "bg": "usiku",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "group": "2026-w40-d6-cover",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet",
+          "states facts but has no `source`; verify before approving",
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 8,
+        "fresh": 5,
+        "voice": 7,
+        "craft": 6,
+        "avg": 6.3,
+        "note": "Concept (AI TA) is predictable; ground it with a real Kenyan university example already piloting this."
+      }
     },
     {
       "id": "2026-w40-d6-kesho-2",
       "template": "kesho",
-      "bg": "usiku",
       "lane": "campus",
-      "publish_at": "2026-10-03T11:00:00+03:00",
-      "status": "planned",
-      "group": "2026-w40-d6-cover",
+      "headline": "Your certificate lives online, forever",
+      "leo": "Today you guard one paper certificate like it's gold, scared of losing it.",
+      "kesho": "Universities are moving to verifiable digital certificates employers can check in seconds.",
+      "anza": "Check if your university already offers a digital transcript or e-certificate option.",
       "n": 2,
-      "total": 5
+      "total": 5,
+      "bg": "usiku",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "group": "2026-w40-d6-cover",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet",
+          "states facts but has no `source`; verify before approving",
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 8,
+        "fresh": 4,
+        "voice": 6,
+        "craft": 5,
+        "avg": 5.5,
+        "note": "Digital certificates is old news in Kenya (HELB, KUCCPS already digital)—feels dated, not future-facing."
+      }
     },
     {
       "id": "2026-w40-d6-kesho-3",
       "template": "kesho",
-      "bg": "usiku",
       "lane": "campus",
-      "publish_at": "2026-10-03T11:00:00+03:00",
-      "status": "planned",
-      "group": "2026-w40-d6-cover",
+      "headline": "No more signing in for your missing friend",
+      "leo": "Today someone signs the attendance sheet for a comrade who's still asleep.",
+      "kesho": "QR check-ins and simple attendance apps are making ghost-signing history.",
+      "anza": "Suggest a QR attendance system to your class rep this week.",
       "n": 3,
-      "total": 5
+      "total": 5,
+      "bg": "usiku",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "group": "2026-w40-d6-cover",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet",
+          "states facts but has no `source`; verify before approving",
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 8,
+        "fresh": 5,
+        "voice": 7,
+        "craft": 6,
+        "avg": 6.3,
+        "note": "Relatable 'ghost-signing' detail is good, but QR attendance is already common in many Kenyan unis—verify freshness claim."
+      }
     },
     {
       "id": "2026-w40-d6-kesho-4",
       "template": "kesho",
-      "bg": "usiku",
       "lane": "campus",
-      "publish_at": "2026-10-03T11:00:00+03:00",
-      "status": "planned",
-      "group": "2026-w40-d6-cover",
+      "headline": "Practicals without fighting for the one microscope",
+      "leo": "Today twenty students share two lab kits and get one turn each.",
+      "kesho": "Virtual and AR labs will let everyone practice anytime, no equipment queue.",
+      "anza": "Search for a free virtual lab simulator in your course area today.",
       "n": 4,
-      "total": 5
+      "total": 5,
+      "bg": "usiku",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "group": "2026-w40-d6-cover",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet",
+          "states facts but has no `source`; verify before approving",
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 5,
+        "clarity": 7,
+        "fresh": 5,
+        "voice": 6,
+        "craft": 5,
+        "avg": 5.7,
+        "note": "Virtual labs claim is generic tech-future talk; needs a real Kenyan tool/example to feel credible and fresh."
+      }
     },
     {
       "id": "2026-w40-d6-kesho-5",
       "template": "kesho",
-      "bg": "usiku",
       "lane": "campus",
-      "publish_at": "2026-10-03T11:00:00+03:00",
-      "status": "planned",
-      "group": "2026-w40-d6-cover",
+      "headline": "Internships start finding you",
+      "leo": "Today you send fifty applications and hear silence back.",
+      "kesho": "AI career matching will start linking your actual skills to real openings.",
+      "anza": "Build a simple online skills profile today so future tools can match you.",
       "n": 5,
-      "total": 5
+      "total": 5,
+      "bg": "usiku",
+      "publish_at": "2026-10-03T11:00:00+03:00",
+      "group": "2026-w40-d6-cover",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet",
+          "states facts but has no `source`; verify before approving",
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 7,
+        "fresh": 5,
+        "voice": 6,
+        "craft": 6,
+        "avg": 6.0,
+        "note": "The '50 applications, no reply' pain point is strong—lead with that instead of burying it as scene-setting."
+      }
     },
     {
       "id": "2026-w40-d7-glasspoll",
       "template": "glasspoll",
-      "bg": "usiku",
       "lane": "everyone",
+      "hook": "Jua Asks",
+      "question": "AI tutor or human tutor?",
+      "cta": "Vote & tell us why",
+      "options": [
+        "AI tutor",
+        "Human tutor"
+      ],
+      "caption": "Jua Asks: if you could pick one for exam prep, who wins? Vote and defend your pick below.\n\n#JuaAsks #JuaKesho",
+      "bg": "usiku",
       "publish_at": "2026-10-04T18:00:00+03:00",
-      "status": "planned",
-      "size": "story"
+      "size": "story",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 6,
+        "send": 3,
+        "clarity": 8,
+        "fresh": 4,
+        "voice": 6,
+        "craft": 5,
+        "avg": 5.3,
+        "note": "No natural DM trigger—polls need a reason to tag someone, like 'tag the friend who'd pick the opposite.'"
+      }
     }
   ],
-  "scripts": {}
+  "scripts": {
+    "radio": "Sasa Wanakesho! Jua hapa, na leo tuko na mambo mazuri. Kwanza, kama uko campus na notes zimetapakaa kila mahali, unaweza piga picha na uambie AI ikusanye kwa summary moja, na hata iku-tengenezee maswali ya mtihani. Dakika tano, umemaliza. Pili, tunataka kuwaonya kuhusu hii mchezo mpya wa loan apps. Wanakutumia ujumbe wanasema umeidhinishwa loan ya elfu hamsini, lakini kwanza ulipe elfu moja na mia tano 'activation fee'. Hiyo ni wizi. Loan halisi haikuombi pesa kabla ya kukupa pesa. Kama umepata ujumbe kama huo, block na ripoti. Tatu, tumewaonyesha M-KOPA, kampuni ya Kikenya inayotumia AI kuwapa watu solar na simu bila collateral, wanalipa kidogo kidogo. Hii ni mfano wa jinsi teknolojia inavyosaidia watu wa kawaida. Mwisho, tumeangalia campus ya kesho, AI itakuwa inasaidia na assignments, vyeti vitakuwa digital, na hata attendance itakuwa rahisi na QR code. Kesho iko hapa, tuko tayari? Kwa Kiswahili: tunazungumzia hila za AI shuleni, wizi wa loan apps, kampuni ya M-KOPA, na mabadiliko yanayokuja chuo kikuu. Fuata Jua Kesho kwa zaidi.",
+    "voice_note": "Eh, wewe. Nataka tu nikuambie mambo mbili haraka haraka. Moja, kama uko na notes za campus zimetapakaa, chukua tu picha zote uzipeleke kwa AI, uiambie ikutengenezee summary na maswali ya kujitest. Inasave muda sana, jaribu leo. Pili, kuna hii trick mpya ya loan apps, wanakutumia wanasema umeidhinishwa loan, lakini kwanza ulipe fee ndio upewe pesa. Hiyo ni wizi wazi, block hiyo number. Sawa? Share hii voice note na wale watu wako group, wasidanganywe. Kesho iko hapa, tulinde kila mmoja.",
+    "sms": "Usiibiwe! Loan 'halali' haikuombi pesa kwanza. Ukipokea ujumbe ukiambiwa ulipe 'activation fee' kupata loan, ni wizi. Block na ripoti mara moja.",
+    "reels": "Campus ya kesho inakuja haraka. Hakuna tena kungoja saa nne kwa office ya lecturer, AI itakusaidia papo hapo. Vyeti vyako vitakuwa online, hakuna tena kuogopa kupoteza karatasi. Attendance ya kujisainia mwenyewe, itakuwa historia, QR code inaingia. Practical bila kungoja microscope moja, virtual labs zinakuja. Na internship, badala ya kutuma application mia moja, AI itakulinganisha na kazi inayokufaa. Kesho iko hapa, umejiandaa?"
+  }
 }
