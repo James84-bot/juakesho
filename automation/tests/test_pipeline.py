@@ -171,6 +171,72 @@ class GuardTests(unittest.TestCase):
         self.assertTrue(any("question" in e for e in r.errors))
 
 
+class ApiCallTests(unittest.TestCase):
+    """call_claude: model id fallback, retries on temporary errors, no retry on real errors."""
+
+    def setUp(self):
+        import draft
+        self.draft = draft
+        self.env = mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "test-key", "JUA_MODEL": ""})
+        self.env.start()
+        self.sleep = mock.patch.object(draft.time, "sleep")
+        self.sleep.start()
+
+    def tearDown(self):
+        self.sleep.stop()
+        self.env.stop()
+
+    @staticmethod
+    def _ok(text="hi", stop="end_turn"):
+        body = json.dumps({"content": [{"type": "text", "text": text}], "stop_reason": stop}).encode()
+        resp = mock.MagicMock()
+        resp.read.return_value = body
+        resp.__enter__.return_value = resp
+        return resp
+
+    @staticmethod
+    def _http(code):
+        import io
+        import urllib.error
+        return urllib.error.HTTPError("u", code, "err", {}, io.BytesIO(b'{"error":"x"}'))
+
+    def test_empty_env_var_falls_back_to_default_model(self):
+        self.assertEqual(self.draft.model_id(), self.draft.DEFAULT_MODEL)
+        sent = {}
+        def fake(req, timeout):
+            sent.update(json.loads(req.data))
+            return self._ok()
+        with mock.patch.object(self.draft.urllib.request, "urlopen", fake):
+            self.assertEqual(self.draft.call_claude("s", "u"), "hi")
+        self.assertEqual(sent["model"], self.draft.DEFAULT_MODEL)
+
+    def test_retries_overloaded_then_succeeds(self):
+        calls = [self._http(529), self._http(429), self._ok("done")]
+        def fake(req, timeout):
+            c = calls.pop(0)
+            if isinstance(c, Exception):
+                raise c
+            return c
+        with mock.patch.object(self.draft.urllib.request, "urlopen", fake):
+            self.assertEqual(self.draft.call_claude("s", "u"), "done")
+        self.assertEqual(calls, [])
+
+    def test_bad_request_is_not_retried(self):
+        n = {"calls": 0}
+        def fake(req, timeout):
+            n["calls"] += 1
+            raise self._http(400)
+        with mock.patch.object(self.draft.urllib.request, "urlopen", fake):
+            with self.assertRaisesRegex(RuntimeError, "400"):
+                self.draft.call_claude("s", "u")
+        self.assertEqual(n["calls"], 1)
+
+    def test_cut_off_reply_is_an_error(self):
+        with mock.patch.object(self.draft.urllib.request, "urlopen", lambda req, timeout: self._ok("{", "max_tokens")):
+            with self.assertRaisesRegex(RuntimeError, "max_tokens"):
+                self.draft.call_claude("s", "u")
+
+
 if __name__ == "__main__":
     unittest.main()
 

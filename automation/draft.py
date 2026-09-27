@@ -15,6 +15,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -23,7 +24,7 @@ import guard
 
 HERE = Path(__file__).resolve().parent
 API_URL = "https://api.anthropic.com/v1/messages"
-DEFAULT_MODEL = "claude-sonnet-4-5"
+DEFAULT_MODEL = "claude-sonnet-5"   # override with JUA_MODEL; see platform.claude.com/docs/en/models/overview
 
 BRAND_RULES = """You write for JUA KESHO, a faceless Kenyan content brand (NOT a school) for young, social-media-native
 people (roughly 17-30): sharp, educated, online all day, but not yet tapping into AI and the future.
@@ -204,23 +205,42 @@ Return ONLY JSON, no commentary:
     return system, user
 
 
+def model_id() -> str:
+    return (os.environ.get("JUA_MODEL") or "").strip() or DEFAULT_MODEL
+
+
 def call_claude(system: str, user: str, max_tokens: int = 12000) -> str:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         raise RuntimeError("ANTHROPIC_API_KEY is not set (use --mock to test without it)")
     body = json.dumps({
-        "model": os.environ.get("JUA_MODEL", DEFAULT_MODEL),
+        # `or`, not a default arg: GitHub passes an unset repo variable as an empty string
+        "model": model_id(),
         "max_tokens": max_tokens,
         "system": system,
         "messages": [{"role": "user", "content": user}],
     }).encode()
     req = urllib.request.Request(API_URL, data=body, method="POST", headers={
         "x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"})
-    try:
-        with urllib.request.urlopen(req, timeout=300) as r:
-            data = json.loads(r.read())
-    except urllib.error.HTTPError as e:
-        raise RuntimeError(f"Anthropic API {e.code}: {e.read().decode(errors='replace')[:500]}") from e
+    # Retry only what is temporary: rate limits (429), server errors (5xx), overloaded (529), network drops
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                data = json.loads(r.read())
+            break
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode(errors="replace")[:500]
+            if e.code in (429, 500, 502, 503, 504, 529) and attempt < 3:
+                time.sleep(float(e.headers.get("retry-after") or 0) or 15 * 2 ** attempt)
+                continue
+            raise RuntimeError(f"Anthropic API {e.code}: {detail}") from e
+        except (urllib.error.URLError, TimeoutError) as e:
+            if attempt < 3:
+                time.sleep(15 * 2 ** attempt)
+                continue
+            raise RuntimeError(f"Anthropic API unreachable: {e}") from e
+    if data.get("stop_reason") == "max_tokens":
+        raise RuntimeError("Anthropic API: reply was cut off at max_tokens (raise max_tokens)")
     return "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
 
 
