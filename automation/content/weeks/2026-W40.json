@@ -103,107 +103,104 @@
       "id": "2026-w40-d4-vichekesho",
       "template": "vichekesho",
       "lane": "hustle",
-      "title": "Ile Assignment Ilijirudi",
-      "punch": "Score: AI 1, Checker ya Lecturer 1.",
+      "title": "Biashara Haina Usingizi",
+      "punch": "Mama Mboga: 1, Usingizi: 0",
       "panels": [
-        {
-          "bg": "jua",
-          "left": {
-            "who": "student",
-            "pose": "point",
-            "mood": "happy",
-            "say": "AI itaniandikia hii report kwa dakika tano!"
-          },
-          "right": {
-            "who": "techie",
-            "pose": "think",
-            "mood": "flat"
-          }
-        },
         {
           "bg": "maziwa",
           "left": {
-            "who": "student",
-            "pose": "phone",
-            "mood": "worried",
-            "sms": "Alert: Content flagged as 100% AI generated."
+            "who": "mama_mboga",
+            "pose": "stand",
+            "mood": "happy",
+            "say": "Sasa nauzia hata usiku, bila kuamka!"
           },
           "right": {
-            "who": "techie",
-            "pose": "shrug",
-            "mood": "flat"
+            "who": "boda",
+            "pose": "point",
+            "mood": "worried",
+            "say": "Utawekaje bidhaa ukiwa umelala?"
+          }
+        },
+        {
+          "bg": "ziwa",
+          "left": {
+            "who": "mama_mboga",
+            "pose": "phone",
+            "mood": "happy",
+            "sms": "Order imepokelewa. Utapata mzigo asubuhi."
+          },
+          "right": {
+            "who": "boda",
+            "pose": "stand",
+            "mood": "wow"
           }
         },
         {
           "bg": "jua",
           "left": {
-            "who": "student",
-            "pose": "think",
-            "mood": "happy",
-            "say": "Sasa naandika mwenyewe, AI inasaidia tu na muundo."
-          },
-          "right": {
-            "who": "techie",
+            "who": "mama_mboga",
             "pose": "cheer",
             "mood": "happy",
-            "say": "Ndio maana!"
+            "say": "WhatsApp inajibu wateja wangu."
+          },
+          "right": {
+            "who": "boda",
+            "pose": "shrug",
+            "mood": "flat",
+            "say": "Mimi naamsha wateja kwa hasira."
           }
         }
       ],
-      "caption": "Vichekesho: AI can draft it, but you still have to own it. Tag the comrade who tried to submit word-for-word.\n\n#Vichekesho #JuaKesho",
+      "caption": "Kila Alhamisi ni Vichekesho. Even mama mboga ameshika teknolojia, boda bado analalamika. Auto-reply kwa WhatsApp Business si uchawi, ni free feature tu. Send this to the biashara ambaye halali usiku.\n\n#Vichekesho #JuaKesho",
       "bg": "maziwa",
       "publish_at": "2026-10-01T19:30:00+03:00",
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "visual QA: 'bub' collides with 'bub' (284x41px)"
-        ],
-        "warnings": [
-          "contains a year, % or amount with no `source`"
-        ]
-      },
-      "critic": {
-        "hook": 7,
-        "send": 8,
-        "clarity": 7,
-        "fresh": 6,
-        "voice": 8,
-        "craft": 7,
-        "avg": 7.2,
-        "note": "Funny and relatable, but punchline ('AI 1, Checker 1') could be sharper/funnier to fully land the joke."
-      }
-    },
-    {
-      "id": "2026-w40-d5-spotlight",
-      "template": "spotlight",
-      "lane": "creator",
-      "kind": "Startup",
-      "name": "M-KOPA",
-      "country": "Kenya",
-      "what": "Uses AI-driven credit scoring to offer pay-as-you-go solar power, smartphones and more to everyday Kenyans.",
-      "why": "Brings financing to people banks often skip, no collateral, just consistent small payments.",
-      "cta": "Follow their story and see how far this build scales.",
-      "source": "m-kopa.com/about",
-      "caption": "Put Us On: M-KOPA, Kenya. Solar and smartphones for people the banks ignored, powered by AI credit scoring. This is Africa building for Africa. Share this with someone who says 'we don't support our own.'\n\n#PutUsOn #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-02T17:00:00+03:00",
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "'cta' is 53 chars (max 50)"
-        ],
+        "errors": [],
         "warnings": []
       },
       "critic": {
         "hook": 5,
         "send": 6,
-        "clarity": 8,
+        "clarity": 6,
         "fresh": 5,
-        "voice": 7,
-        "craft": 6,
-        "avg": 6.2,
-        "note": "M-KOPA is well-known already; find a lesser-known angle or newer stat to make it feel like fresh info, not a recap."
-      }
+        "voice": 6,
+        "craft": 4,
+        "avg": 5.3,
+        "note": "Backgrounds (maziwa/ziwa/jua) don't match the story beats, breaking immersion and making the punchline feel disjointed."
+      },
+      "reel": true
+    },
+    {
+      "id": "2026-w40-d5-spotlight",
+      "template": "spotlight",
+      "lane": "creator",
+      "kind": "Creator",
+      "name": "Elsa Majimbo",
+      "country": "Kenya",
+      "what": "Comedy skits and pop-culture commentary that started on her phone in Nairobi and went global.",
+      "why": "Proof a Kenyan voice, in Kenyan English, can headline the world stage without changing who she is.",
+      "cta": "Follow her, then send to your funniest friend.",
+      "source": "https://en.wikipedia.org/wiki/Elsa_Majimbo",
+      "caption": "Put Us On: Elsa Majimbo, Kenya. Started with a phone camera and her own voice, now the world is watching. Follow, laugh, then send this to someone who thinks 'made in Kenya' can't go global.\n\n#PutUsOn #JuaKesho",
+      "bg": "usiku",
+      "publish_at": "2026-10-02T17:00:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 7,
+        "fresh": 4,
+        "voice": 4,
+        "craft": 5,
+        "avg": 5.3,
+        "note": "Caption reads like a generic press blurb, not a Kenyan friend hyping Elsa; add a specific, quotable Elsa moment to make it feel real."
+      },
+      "reel": true
     },
     {
       "id": "2026-w40-d6-cover",
@@ -440,9 +437,9 @@
     }
   ],
   "scripts": {
-    "radio": "Sasa Wanakesho! Jua hapa, na leo tuko na mambo mazuri. Kwanza, kama uko campus na notes zimetapakaa kila mahali, unaweza piga picha na uambie AI ikusanye kwa summary moja, na hata iku-tengenezee maswali ya mtihani. Dakika tano, umemaliza. Pili, tunataka kuwaonya kuhusu hii mchezo mpya wa loan apps. Wanakutumia ujumbe wanasema umeidhinishwa loan ya elfu hamsini, lakini kwanza ulipe elfu moja na mia tano 'activation fee'. Hiyo ni wizi. Loan halisi haikuombi pesa kabla ya kukupa pesa. Kama umepata ujumbe kama huo, block na ripoti. Tatu, tumewaonyesha M-KOPA, kampuni ya Kikenya inayotumia AI kuwapa watu solar na simu bila collateral, wanalipa kidogo kidogo. Hii ni mfano wa jinsi teknolojia inavyosaidia watu wa kawaida. Mwisho, tumeangalia campus ya kesho, AI itakuwa inasaidia na assignments, vyeti vitakuwa digital, na hata attendance itakuwa rahisi na QR code. Kesho iko hapa, tuko tayari? Kwa Kiswahili: tunazungumzia hila za AI shuleni, wizi wa loan apps, kampuni ya M-KOPA, na mabadiliko yanayokuja chuo kikuu. Fuata Jua Kesho kwa zaidi.",
-    "voice_note": "Eh, wewe. Nataka tu nikuambie mambo mbili haraka haraka. Moja, kama uko na notes za campus zimetapakaa, chukua tu picha zote uzipeleke kwa AI, uiambie ikutengenezee summary na maswali ya kujitest. Inasave muda sana, jaribu leo. Pili, kuna hii trick mpya ya loan apps, wanakutumia wanasema umeidhinishwa loan, lakini kwanza ulipe fee ndio upewe pesa. Hiyo ni wizi wazi, block hiyo number. Sawa? Share hii voice note na wale watu wako group, wasidanganywe. Kesho iko hapa, tulinde kila mmoja.",
-    "sms": "Usiibiwe! Loan 'halali' haikuombi pesa kwanza. Ukipokea ujumbe ukiambiwa ulipe 'activation fee' kupata loan, ni wizi. Block na ripoti mara moja.",
-    "reels": "Campus ya kesho inakuja haraka. Hakuna tena kungoja saa nne kwa office ya lecturer, AI itakusaidia papo hapo. Vyeti vyako vitakuwa online, hakuna tena kuogopa kupoteza karatasi. Attendance ya kujisainia mwenyewe, itakuwa historia, QR code inaingia. Practical bila kungoja microscope moja, virtual labs zinakuja. Na internship, badala ya kutuma application mia moja, AI itakulinganisha na kazi inayokufaa. Kesho iko hapa, umejiandaa?"
+    "radio": "Sasa, Wanakesho! Jua hapa. Leo tunaongea biashara na teknolojia. Umewahi ona mama mboga akiuza kupitia simu hata usiku? Hiyo si uchawi, ni WhatsApp Business, free app inayoweza kujibu wateja automatic ukiwa umelala. Boda wetu kwenye comic wiki hii bado hajaamini, lakini mfuko wa mama mboga unaongezeka bila yeye kuamka! Hiyo ndiyo maana tunasema, kesho iko hapa, sio inakuja. Halafu tuna Put Us On wiki hii: Elsa Majimbo, dada kutoka Nairobi ambaye alianza na simu tu, sasa dunia nzima inamjua. Hiyo inaonyesha, hauhitaji studio kubwa ku-start, unahitaji simu na ujasiri wa ku-post. Kwa mtu anayeuza mtaani au anataka kuanza content, hii ni wiki ya kujaribu kitu kimoja kipya: fungua WhatsApp Business, au anza kupost content yako bila kuogopa. Kwa Kiswahili kwa ufupi: wiki hii tunaonyesha jinsi biashara ndogo zinaweza kutumia teknolojia bure kuuza hata usiku, na tunamwangazia muumba wa Kikenya ambaye amefika mbali kwa kutumia simu tu. Fuata, jaribu, na ushirikishe rafiki yako. Kesho iko hapa, Wanakesho!",
+    "voice_note": "Eh Wanakesho, sasa! Leo tuko na story fupi ya mama mboga fulani, huyu jamaa ame-set WhatsApp Business auto-reply, sasa anauza hata akiwa amelala. Wateja wanaandika, simu inajibu automatic, mzigo unaenda kesho asubuhi. Boda mmoja hapo hataki kuamini, lakini pesa inaingia tu. Ukiwa na biashara ndogo, hii ni free feature, tafuta WhatsApp Business, weka auto-reply, umalize. Halafu tumeangazia pia Elsa Majimbo, msichana wa Kenya ambaye alianza na simu tu, sasa anajulikana dunia nzima. Kama unafikiria huwezi anza content bila vitu vingi, huyu ni proof unaweza. Sawa basi, jaribu kitu kimoja leo, sio kesho. Tuonane wiki ijayo, Wanakesho, kesho iko hapa!",
+    "sms": "Usiibiwe: Hakuna 'customer care' halali inayokuuliza M-Pesa PIN kwa simu au SMS. Ukiona hivyo, kata simu, usijibu. Weka siri PIN yako.",
+    "reels": "Picha ya mama mboga akiuza usiku bila kuamka... boda akishangaa... halafu Elsa Majimbo akiongea kwa simu tu, dunia ikimsikiliza. Kesho Kutwa: biashara ndogo zinaenda digital, waumbaji wadogo wanaenda global. Swali ni, wewe uko wapi kwenye hii mstari? Save hii, jaribu kitu kimoja leo. Kesho iko hapa."
   }
 }
