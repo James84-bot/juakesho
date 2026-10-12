@@ -248,6 +248,18 @@ SOUND LIKE KENYANS ONLINE (KOT, Kenyan TikTok, the WhatsApp group)
 - Never corporate: no "we're excited to share", "stay tuned", "don't miss", "let us know your thoughts",
   "engage", "check out". Never mock how ordinary Kenyans speak or write. Never laughing emojis on deaths or pain.
 
+WHERE KENYANS ARE (research, 2026) AND WHAT WINS THERE
+- Weekly use (Media Council of Kenya survey): WhatsApp 20%, Facebook 18%, TikTok 15%, YouTube 12%, Instagram 8%,
+  X 7%. Facebook and WhatsApp reach parents, matatu drivers and towns beyond Nairobi; TikTok and X reach Gen Z.
+- Kenyans follow creators more than news brands (58% vs 34%, Reuters Institute): personal, informal, ordinary
+  places ("explained like at the barber shop"), not studio news. Satire of politicians' own words travels far
+  (impersonation clips crossed 1M views), so quote their exact words back to them.
+- Movements spread through campaign hashtags and slogans Kenyans already use (#RejectFinanceBill2024,
+  #OccupyParliament, "tribeless, partyless, leaderless"). Reuse the hashtag Kenyans are already using for a story
+  (see TRENDING NOW) before inventing one.
+- At least one post a week fully in Kiswahili or Sheng (headline, beats and caption), for Facebook and WhatsApp
+  audiences beyond Nairobi. Bills explained in the language people speak get shared.
+
 URGENT, NOT PARAGRAPHS
 - Nobody reads paragraphs on a phone. Every text field is one or two short sentences. Cut every word that
   doesn't hit. Numbers beat adjectives.
