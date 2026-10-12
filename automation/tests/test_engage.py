@@ -118,6 +118,14 @@ class Engage(unittest.TestCase):
         self.assertTrue(engage.act(self.state, boom, "r", "5").startswith("failed"))
         self.assertIn("5", engage.load(self.state)["pending"])
 
+    def test_samples_send_cards_and_store_nothing(self):
+        reply = json.dumps({"replies": [{"cid": "sample-0", "action": "reply", "reply": "It's in the first comment."}]})
+        out = []
+        n = engage.samples(self.root / "none", lambda *a, **k: reply, lambda t, b: out.append(t))
+        self.assertEqual(n, 2)   # the reply + the auto-hidden slur; the rest have no draft and are skipped
+        self.assertTrue(all(t.startswith("🧪") for t in out))
+        self.assertFalse((self.state / "comments.json").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

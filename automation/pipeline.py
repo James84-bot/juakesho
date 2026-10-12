@@ -474,7 +474,10 @@ def collect() -> None:
             continue
         if action == "c":   # a comment card: c|r|cid reply, c|h|cid hide, c|s|cid skip
             import engage
-            result = engage.act(STATE, graph, label, key) if meta_ready() else "Instagram isn't connected"
+            if key.startswith("sample-"):
+                result = "Sample only: nothing was posted"
+            else:
+                result = engage.act(STATE, graph, label, key) if meta_ready() else "Instagram isn't connected"
             tg("answerCallbackQuery", {"callback_query_id": cq["id"], "text": result[:190]})
             log(f"comment {key}: {result}")
             continue
@@ -703,6 +706,32 @@ def publish(dry_run: bool = False) -> None:
         (STATE / "meta_missing_notified.txt").unlink(missing_ok=True)
 
 
+def send_samples(dry_run: bool = False) -> None:
+    """Shows the newest features on Telegram before they go live: the profile kit and sample comment cards."""
+    import engage, presence, draft as drafter
+    covers = presence.build()[:-1]
+    if dry_run:
+        log(f"[dry-run] would send {len(covers)} covers and the sample comment cards")
+        return
+    chat = need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
+    names = [n for n, _, _ in presence.HIGHLIGHTS]
+    media = [{"type": "photo", "media": f"attach://f{i}", "caption": names[i].title()} for i in range(len(covers))]
+    media[0]["caption"] = "Highlight covers: " + ", ".join(n.title() for n in names)
+    tg("sendMediaGroup", {"chat_id": chat, "media": json.dumps(media)}, {f"f{i}": f for i, f in enumerate(covers)})
+    tg("sendPhoto", {"chat_id": chat, "caption": "How the row looks under the bio"},
+       {"photo": presence.OUT / "highlights-row.png"})
+    plan = "\n".join(f"• <b>{_esc(n.title())}</b>: {_esc(h)}" for n, _, h in presence.HIGHLIGHTS)
+    tg("sendMessage", {"chat_id": chat, "parse_mode": "HTML", "text": (
+        "🧪 <b>Profile kit</b>\n\n<b>Bio</b>\n<code>Informed ordinary Kenyans.\nPromises vs records, with receipts.\n"
+        "Hatutasahau. 📩 Tips: DM</code>\n\n<b>Pinned</b>\n1. Manifesto carousel: why we exist, our rules, non-partisan\n"
+        "2. Best Promise Tracker post\n3. Reel: how we check our facts\n\n<b>Highlights</b>\n" + plan)})
+    n = engage.samples(WEEKS, drafter.call_claude, lambda text, buttons: tg(
+        "sendMessage", {"chat_id": chat, "text": text, "parse_mode": "HTML", "reply_markup": buttons}))
+    _notify(f"🧪 {n} sample comment cards above. A 🔥-only comment was skipped, as it would be live. "
+            "When Instagram is connected these arrive every 2 hours for real.")
+    log(f"samples sent: {len(covers)} covers, {n} comment cards")
+
+
 def _esc(text: str) -> str:
     from html import escape
     return escape(str(text), quote=False)
@@ -810,7 +839,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage"])
+                                        "news", "status", "redo", "engage", "samples"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -870,6 +899,8 @@ def _main(argv: list[str] | None = None) -> int:
             log(f"comments: {n} sent for your decision")
         except Exception as e:
             log(f"comments skipped: {e}")
+    if a.command == "samples":
+        send_samples(dry_run=a.dry_run)
     if a.command == "tick" and not a.dry_run:
         prune()
     if a.command == "status":

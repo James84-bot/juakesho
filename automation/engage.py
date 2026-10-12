@@ -201,3 +201,44 @@ def act(state_dir: Path, graph, action: str, cid: str) -> str:
         result = f"failed: {str(e)[:120]}"
     save(state_dir, data)
     return result
+
+
+# ---------------------------------------------------------------------------
+# Samples: see how the cards look before Instagram is connected. Nothing is stored or posted.
+# ---------------------------------------------------------------------------
+SAMPLE_COMMENTS = [
+    ("ig", "wanjiku_ke", "Source ya hii story iko wapi? Msiongee tu bila proof"),
+    ("fb", "Brian Otieno", "This is propaganda. Government imejenga barabara kila mahali, nyinyi mnaona tu mabaya"),
+    ("ig", "kevo254", "Ningependa kujua, how do I check kama niko kwa register ya IEBC?"),
+    ("fb", "Mama Shiro", "Hawa ni madoadoa tu, wafukuzwe"),
+    ("ig", "user88213", "Nitawapata nyinyi watu, mnajua mnaongea na nani?"),
+    ("ig", "nyambura.w", "🔥🔥🔥"),
+]
+SAMPLE_POST = {"post_id": "sample", "message": "Auditor-General: KSh billions spent on projects that were never finished. "
+               "Ask your MP where your county's share went.",
+               "source": "Office of the Auditor-General reports, oag.go.ke"}
+
+
+def latest_post(weeks_dir: Path) -> dict:
+    """Context for the samples: our newest post with a source, else a stand-in."""
+    for f in sorted(weeks_dir.glob("*.json"), reverse=True):
+        for p in reversed(json.loads(f.read_text(encoding="utf-8"))["posts"]):
+            if p.get("source") and not p.get("n"):
+                return {"post_id": p["id"], "message": p.get("caption") or p.get("hook") or "",
+                        "source": p["source"]}
+    return SAMPLE_POST
+
+
+def samples(weeks_dir: Path, call, send) -> int:
+    """Drafts real replies to made-up comments and sends the cards, marked SAMPLE. Taps do nothing."""
+    ctx = latest_post(weeks_dir)
+    comments = [{"cid": f"sample-{i}", "platform": pl, "user": u, "text": t, "time": str(i), **ctx}
+                for i, (pl, u, t) in enumerate(SAMPLE_COMMENTS)]
+    sent = 0
+    for c in draft(call, comments):
+        if c["action"] == "skip":
+            continue
+        text, buttons = card(c)
+        send("🧪 <b>SAMPLE</b> (made-up comment, buttons do nothing)\n" + text, buttons)
+        sent += 1
+    return sent
