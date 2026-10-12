@@ -298,6 +298,8 @@ def build_body() -> str:
       <li><b>Hype</b><span>Go loud for African wins, with names, places and years.</span></li>
       <li><b>Punch up</b><span>Systems, tactics, decisions of the powerful. Never down at victims, ordinary people or groups.</span></li>
     </ul>
+    <h3 class="sub">Post like Kenyans post</h3>
+    <p class="note">We are informed ordinary Kenyans, not a media house. Short lines, English, Kiswahili and Sheng mixed the way people text (&ldquo;Hii nchi bana.&rdquo; &ldquo;Kwani tunalipa ushuru ya nini?&rdquo;), dry KOT sarcasm (&ldquo;Very normal country.&rdquo;), receipts with the page and the link, one Kenyan-trend hashtag, and a question that gets people commenting. Tribeless, partyless: &ldquo;nothing for us without us&rdquo;. Never corporate (&ldquo;stay tuned&rdquo;, &ldquo;we're excited&rdquo;): the checker blocks it.</p>
     <h3 class="sub">Sound human</h3>
     <p class="note">Kenyans scroll past anything that smells of AI. Short lines, Sheng where natural, one strong opinion, uneven rhythm. No em dashes, no &ldquo;it's not just X, it's Y&rdquo;, no &ldquo;delve&rdquo;, &ldquo;navigate&rdquo;, &ldquo;unlock&rdquo; or &ldquo;pivotal&rdquo;: the checker blocks them. Real photos only, never AI images.</p>
     <dl class="glossary">{glossary}</dl>
