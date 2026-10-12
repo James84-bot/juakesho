@@ -1,10 +1,14 @@
 """Tests for answering comments: sorting, the reply guard, Telegram cards, and posting/hiding on your tap."""
 import datetime as dt
 import json
+import os
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+
+for _k in ("ANTHROPIC_API_KEY", "GEMINI_API_KEY"):   # AI keys never reach the tests: no real calls, no spend
+    os.environ.pop(_k, None)
 
 HERE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(HERE))

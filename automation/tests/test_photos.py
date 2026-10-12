@@ -1,9 +1,13 @@
 """Photo sources: licence and place filters, and the civic fallback (no network)."""
 import json
+import os
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+
+for _k in ("ANTHROPIC_API_KEY", "GEMINI_API_KEY"):   # AI keys never reach the tests: no real calls, no spend
+    os.environ.pop(_k, None)
 from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
