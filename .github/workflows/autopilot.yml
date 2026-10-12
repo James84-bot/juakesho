@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "week (next week) | hot (today's post on the biggest story) | this-week (draft the current week now) | tick | learn | redo (re-draft posts held back) | remake (re-drafts this week's unapproved posts from scratch and sends them again) | samples (sends the newest features to Telegram to review) | rehearse (no keys needed: renders a mock week, posts nothing)"
+        description: "week (next week) | hot (today's post on the biggest story) | this-week (draft the current week now) | tick | learn | redo (re-draft posts held back) | remake (re-drafts this week's unapproved posts from scratch and sends them again) | rephoto (same words, new photos, re-sent) | photocheck (explains this week's photo searches in state/photos.log) | samples (sends the newest features to Telegram to review) | rehearse (no keys needed: renders a mock week, posts nothing)"
         default: "tick"
 
 concurrency:
@@ -63,14 +63,14 @@ jobs:
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
       - name: Install
-        if: steps.cmd.outputs.c == 'week' || steps.cmd.outputs.c == 'hot' || steps.cmd.outputs.c == 'this-week' || steps.cmd.outputs.c == 'redo' || steps.cmd.outputs.c == 'rehearse' || steps.cmd.outputs.c == 'samples' || steps.cmd.outputs.c == 'remake'
+        if: steps.cmd.outputs.c == 'week' || steps.cmd.outputs.c == 'hot' || steps.cmd.outputs.c == 'this-week' || steps.cmd.outputs.c == 'redo' || steps.cmd.outputs.c == 'rehearse' || steps.cmd.outputs.c == 'samples' || steps.cmd.outputs.c == 'remake' || steps.cmd.outputs.c == 'rephoto'
         run: |
           pip install -r automation/requirements.txt
           python -m playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg || true   # video.py falls back to imageio-ffmpeg
 
       - name: Install (light)
-        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'hot' && steps.cmd.outputs.c != 'this-week' && steps.cmd.outputs.c != 'redo' && steps.cmd.outputs.c != 'rehearse' && steps.cmd.outputs.c != 'samples' && steps.cmd.outputs.c != 'remake' && steps.cmd.outputs.c != 'skip'
+        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'hot' && steps.cmd.outputs.c != 'this-week' && steps.cmd.outputs.c != 'redo' && steps.cmd.outputs.c != 'rehearse' && steps.cmd.outputs.c != 'samples' && steps.cmd.outputs.c != 'remake' && steps.cmd.outputs.c != 'rephoto' && steps.cmd.outputs.c != 'skip'
         run: pip install -r automation/requirements.txt
 
       - name: Tests

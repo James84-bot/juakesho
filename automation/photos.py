@@ -23,6 +23,8 @@ import html
 import json
 import os
 import re
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import zlib
@@ -42,14 +44,39 @@ OPENVERSE = "https://api.openverse.org/v1/images/"
 # Real, symbolic Kenyan scenes for civic posts whose own search found nothing
 CIVIC_FALLBACK = ["Parliament Buildings Nairobi", "Kenya National Assembly", "Flag of Kenya", "Nairobi Central Business District"]
 CIVIC_TEMPLATES = {"sauti", "promise", "kumbuka", "scorecard", "straight", "money", "decode", "usiibiwe", "spotlight"}
-# Licences that allow a credited photo inside our design without other conditions
-OK_LICENCES = re.compile(r"^(cc0|public domain|pd\b|cc by \d(\.\d)?|cc-by-\d(\.\d)?)", re.I)
+# Licences that allow a credited photo inside our design, commercial use included. CC BY-SA is allowed: the post
+# that uses it is shared under the same licence, which suits us (we want it shared). NC and ND never.
+OK_LICENCES = re.compile(r"^(cc0|public domain|pd\b|cc[ -]by(-sa)?[ -]\d(\.\d)?)", re.I)
+UA = "JuaKesho/1.0 (https://github.com/James84-bot/juakesho)"   # Wikimedia asks every bot to identify itself
+_LAST: dict[str, float] = {}
+_SEEN: dict[str, bytes] = {}
 
 
 def _get(url: str, headers: dict | None = None, timeout: int = 30) -> bytes:
-    req = urllib.request.Request(url, headers={"User-Agent": "jua-kesho/1.0", **(headers or {})})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+    """Polite fetch: identifies us, paces calls to each host, retries when rate-limited, and remembers search
+    results for the run (the same query is often asked for two posts)."""
+    host = urllib.parse.urlsplit(url).netloc
+    api = "api.php" in url or "api.openverse" in host
+    if api and url in _SEEN:
+        return _SEEN[url]
+    for attempt in range(4):
+        wait = 1.0 - (time.monotonic() - _LAST.get(host, 0.0))
+        if wait > 0:
+            time.sleep(wait)
+        _LAST[host] = time.monotonic()
+        req = urllib.request.Request(url, headers={"User-Agent": UA, **(headers or {})})
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                data = r.read()
+            if api:
+                _SEEN[url] = data
+            return data
+        except urllib.error.HTTPError as e:
+            if e.code not in {429, 503} or attempt == 3:
+                raise
+            retry = e.headers.get("Retry-After", "") if e.headers else ""
+            time.sleep(min(float(retry), 30) if retry.replace(".", "", 1).isdigit() else 4 * 2 ** attempt)
+    raise RuntimeError("unreachable")
 
 
 LOCAL = re.compile(r"\b(kenya|kenyan|nairobi|mombasa|kisumu|nakuru|eldoret|matatu|m-?pesa|shilling|boda|kibera|"
@@ -98,7 +125,7 @@ def _openverse_once(query: str, pid: str, place: str | None = None, full: str | 
     place = _place(query) if place is None else place
     q = urllib.parse.urlencode({"q": query, "license": "cc0,pdm,by", "size": "large", "mature": "false",
                                 "page_size": 20})
-    results = json.loads(_get(f"{OPENVERSE}?{q}", {"User-Agent": "jua-kesho/1.0 (photo search)"})).get("results", [])
+    results = json.loads(_get(f"{OPENVERSE}?{q}", {"User-Agent": UA})).get("results", [])
     good, why = [], {"size": 0, "licence": 0, "place": 0, "subject": 0}
     for r in results:
         if r.get("license") not in {"cc0", "pdm", "by"}:
@@ -124,7 +151,7 @@ def _openverse_once(query: str, pid: str, place: str | None = None, full: str | 
 
 def _licence_ok(lic: str) -> bool:
     low = f" {lic.lower()} "
-    return bool(OK_LICENCES.match(lic)) and not re.search(r"[\s-](sa|nc|nd)[\s-]", low)
+    return bool(OK_LICENCES.match(lic)) and not re.search(r"[\s-](nc|nd)[\s-]", low)
 
 
 STOP = {"and", "with", "on", "in", "the", "a", "an", "of", "at", "for", "to", "from", "by", "their", "his", "her",
@@ -306,7 +333,7 @@ def person(post: dict, out_dir: Path) -> dict | None:
             info = next(iter(pages.values()))["imageinfo"][0]
             md = info.get("extmetadata", {})
             lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
-            if not OK_LICENCES.match(lic) or "sa" in lic.lower().split("-") or " sa " in f" {lic.lower()} ":
+            if not _licence_ok(lic):
                 _note(f"  person photo skipped for {post['id']}: licence '{lic}' needs more than a credit")
                 return None
             artist = re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown")).strip()[:60]
