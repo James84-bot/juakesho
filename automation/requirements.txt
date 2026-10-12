@@ -5,3 +5,4 @@ pillow>=10.0
 fonttools[woff]>=4.50
 numpy>=1.26
 imageio-ffmpeg>=0.5
+opencv-python-headless>=4.9

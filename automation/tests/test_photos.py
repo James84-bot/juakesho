@@ -18,7 +18,8 @@ class Photos(unittest.TestCase):
     def test_openverse_keeps_only_credited_licences_from_the_place(self):
         fake = {"results": [{**HIT, "title": "Bus in London", "tags": []}, {**HIT, "license": "by-sa"},
                             {**HIT, "license": "by-nc"}, HIT]}
-        with mock.patch.object(photos, "_get", lambda u, h=None, timeout=30: json.dumps(fake).encode() if "openverse" in u else b"IMG"):
+        with mock.patch.object(photos, "_get", lambda u, h=None, timeout=30: json.dumps(fake).encode() if "openverse" in u else b"IMG"), \
+                mock.patch.object(photos, "faces_ok", lambda data: True):
             data, meta = photos.openverse("matatu Nairobi", "p1")
         self.assertEqual(meta["credit"], "Photo: Joe / Flickr, CC BY 2.0")
 
@@ -63,10 +64,30 @@ class PlaceKept(unittest.TestCase):
     def test_shorter_retry_still_needs_kenya(self):
         asked = []
 
-        def once(q, pid, place=None):
+        def once(q, pid, place=None, full=None):
             asked.append((q, place))
             return None
         with mock.patch.object(photos, "_commons_once", once):
             photos.commons("Kenyan university campus students", "p")
         self.assertTrue(all(place == "Kenyan" for _, place in asked))
         self.assertIn("university campus", [q for q, _ in asked])
+
+
+class Relevance(unittest.TestCase):
+    def test_photo_must_be_of_the_subject_not_just_kenyan(self):
+        self.assertFalse(photos._relevant("file:uk shop bin.jpg kenya trip", "Nairobi plastic recycling bricks factory"))
+        self.assertTrue(photos._relevant("plastic bricks made in nairobi", "Nairobi plastic recycling bricks factory"))
+        self.assertTrue(photos._relevant("students at kenyatta university", "university student Kenya"))
+
+    def test_face_filled_photo_is_passed_over(self):
+        good = [("a", {"url": "A"}), ("b", {"url": "B"})]
+        with mock.patch.object(photos, "_get", lambda u, h=None, timeout=30: u.encode()), \
+                mock.patch.object(photos, "faces_ok", lambda d: d == b"b"):
+            data, meta = photos._pick(good, "pid-with-start-0" if True else "")
+        self.assertEqual(meta["url"], "B")
+
+    def test_blank_image_has_no_face(self):
+        import numpy as np
+        import cv2
+        blank = cv2.imencode(".jpg", np.full((800, 1200, 3), 128, np.uint8))[1].tobytes()
+        self.assertTrue(photos.faces_ok(blank))
