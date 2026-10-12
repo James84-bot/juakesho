@@ -478,6 +478,14 @@ def collect() -> None:
         changed = apply_decision(data, key, "manual" if action == "m" else action == "a")
         verdict = {"a": "Approved ✅", "m": "Yours to post 🎵"}.get(action, "Rejected ❌")
         tg("answerCallbackQuery", {"callback_query_id": cq["id"], "text": f"{verdict} ({len(changed)})"})
+        if action == "a" and changed:   # the WhatsApp Channel and Status have no API: hand over a ready-to-paste version
+            post = next(q for q in data["posts"] if q["id"] == changed[0])
+            from html import escape as esc
+            try:
+                tg("sendMessage", {"chat_id": allowed_chat, "parse_mode": "HTML", "text":
+                                   f"📲 <b>For WhatsApp</b> (Channel + Status), paste with the image:\n\n<code>{esc(whatsapp_text(post))[:3500]}</code>"})
+            except Exception as e:
+                log(f"whatsapp text skipped: {e}")
         if action == "m" and changed:
             post = next(q for q in data["posts"] if q["id"] == changed[0])
             from html import escape as esc
@@ -577,6 +585,8 @@ def publish_facebook(label: str, members: list[dict]) -> str | None:
     first = members[0]
     if first.get("size") == "story":
         return None  # Page stories use a different API; Instagram story only
+    if first.get("reel"):   # video is what Facebook pushes (and pays for in Kenya): post the Reel as a Page video
+        return graph(f"{page}/videos", {"file_url": public_url(label, first["id"], "mp4"), "description": caption_for(first)})["id"]
     if len(members) == 1:
         return graph(f"{page}/photos", {"url": public_url(label, first["id"]), "caption": caption_for(first)})["id"]
     ids = [graph(f"{page}/photos", {"url": public_url(label, m["id"]), "published": "false"})["id"] for m in members[:10]]
@@ -584,6 +594,41 @@ def publish_facebook(label: str, members: list[dict]) -> str | None:
     for i, fbid in enumerate(ids):
         fields[f"attached_media[{i}]"] = json.dumps({"media_fbid": fbid})
     return graph(f"{page}/feed", fields)["id"]
+
+
+def receipts_comment(post: dict) -> str | None:
+    """The first comment under every civic post: the sources, so anyone can check us (links aren't clickable in
+    Instagram captions, and Kenyans ask for receipts)."""
+    parts = [str(post.get(k) or "").strip() for k in ("claim_source", "source")]
+    parts = [x for x in dict.fromkeys(parts) if len(x) >= 8 and "sample" not in x.lower()]
+    if not parts:
+        return None
+    return ("Receipts 👇🏾\n" + "\n".join(f"• {x}" for x in parts))[:2000]
+
+
+def post_receipts(post: dict, ig_id: str | None, fb_id: str | None) -> None:
+    text = receipts_comment(post)
+    if not text:
+        return
+    for target in (ig_id, fb_id):
+        if not target:
+            continue
+        try:
+            graph(f"{target}/comments", {"message": text})
+        except Exception as e:   # a missing comment never undoes a published post
+            log(f"receipts comment skipped on {target}: {e}")
+
+
+def whatsapp_text(post: dict) -> str:
+    """A short version for the WhatsApp Channel and Status: the hook, the receipt, where to follow."""
+    beats = [b.replace("*", "") for b in (post.get("beats") or [])]
+    body = " ".join(beats[:3]) if beats else str(post.get("message") or "")
+    src = str(post.get("source") or "").split(";")[0].strip()
+    return (body + (f"\n\nReceipts: {src}" if len(src) >= 8 else "") + "\n\nJua nchi yako. Follow Jua Kesho.").strip()
+
+
+def first_of(members: list[dict]) -> dict:
+    return next((m for m in members if not m.get("n")), members[0])
 
 
 def meta_ready() -> bool:
@@ -627,6 +672,7 @@ def publish(dry_run: bool = False) -> None:
                 fb_id = publish_facebook(label, members)
                 for m in members:
                     m.update(status="published", published_at=now().isoformat(), ig_id=ig_id, fb_id=fb_id)
+                post_receipts(first_of(members), ig_id, fb_id)
                 record_evidence(members)
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
                 _notify(f"✅ Published <b>{_esc(key)}</b>. Forward it to the WhatsApp Channel too.")

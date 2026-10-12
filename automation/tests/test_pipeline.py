@@ -79,6 +79,19 @@ class HotPostTests(TempWeeks):
             self.assertEqual(post["publish_at"], "2026-10-14T20:00:00+03:00")   # 3 hours to approve
 
 
+class ReachTests(unittest.TestCase):
+    def test_receipts_comment_and_whatsapp_text(self):
+        post = {"claim_source": "Capital FM, 12 Oct 2026 (link)", "source": "Auditor-General report 2025; Capital FM",
+                "beats": ["*Sh304bn.* Idle.", "59% never used.", "14 projects waiting.", "Ask your MP."], "message": "m"}
+        c = pl.receipts_comment(post)
+        self.assertTrue(c.startswith("Receipts"))
+        self.assertIn("Auditor-General", c)
+        self.assertIsNone(pl.receipts_comment({"source": "Rehearsal sample: not real data"}))
+        w = pl.whatsapp_text(post)
+        self.assertTrue(w.startswith("Sh304bn. Idle. 59% never used. 14 projects waiting."))
+        self.assertIn("Receipts: Auditor-General report 2025", w)
+
+
 class ApprovalTests(TempWeeks):
     def test_group_decision_applies_to_all_slides(self):
         data = {"posts": [{"id": "c", "group": "g", "status": "awaiting"},
