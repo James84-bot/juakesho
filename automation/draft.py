@@ -508,7 +508,20 @@ def _github(system: str, user: str, max_tokens: int, model: str | None) -> str:
         for attempt in range(4):
             try:
                 with urllib.request.urlopen(req, timeout=300) as r:
-                    data = json.loads(r.read())
+                    raw, ctype, status = r.read(), r.headers.get("Content-Type", ""), r.status
+                if r.headers.get("Content-Encoding") == "gzip":
+                    import gzip
+                    raw = gzip.decompress(raw)
+                try:
+                    data = json.loads(raw)
+                except ValueError:
+                    # not JSON: say exactly what came back, then retry (a proxy page or an empty reply)
+                    last = RuntimeError(f"GitHub Models ({m}) returned {status} {ctype or 'no content type'}, "
+                                        f"not JSON: {raw[:300].decode(errors='replace')!r}")
+                    if attempt < 3:
+                        time.sleep(10 * 2 ** attempt)
+                        continue
+                    break   # try the next model
                 SPEND["calls"] += 1
                 choice = (data.get("choices") or [{}])[0]
                 if choice.get("finish_reason") == "length":
