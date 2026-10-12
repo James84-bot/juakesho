@@ -1,220 +1,207 @@
 {
-  "timezone": "Africa/Nairobi",
-  "utc_offset": "+03:00",
-  "note": "Kenya first, politics first. Mon: Sauti ya Mwananchi (Civic 101 every third week). Tue: fact-checks, public money, Hatutasahau, Decode. Wed: Promise Tracker or the Chapter Six Test. Thu: Sauti, fact-checks, scam alerts. Fri: a fact-check or Sauti, with Kenyans doing it right every other week. Sat: what's coming (Kesho Kutwa). Sun: the poll. Plus a daily 'hot' post on the day's biggest Kenyan story. Anniversaries take over the nearest weekday. Formats rotate by ISO week.",
-  "slots": [
-    {
-      "day": 1,
-      "time": "07:30",
-      "template": [
-        "sauti",
-        "sauti",
-        "hack"
-      ],
-      "bg": [
-        "usiku"
-      ],
-      "lanes": [
-        "campus",
-        "hustle",
-        "young_pro",
-        "creator"
-      ],
-      "series": {
-        "hack": "Civic 101"
-      }
-    },
-    {
-      "day": 2,
-      "time": "12:45",
-      "template": [
-        "straight",
-        "money",
-        "kumbuka",
-        "straight",
-        "decode"
-      ],
-      "bg": [
-        "usiku"
-      ],
-      "lanes": [
-        "campus",
-        "young_pro",
-        "techie"
-      ]
-    },
-    {
-      "day": 3,
-      "time": "18:30",
-      "template": [
-        "promise",
-        "scorecard"
-      ],
-      "bg": [
-        "usiku"
-      ],
-      "lanes": [
-        "campus",
-        "hustle",
-        "everyone"
-      ]
-    },
-    {
-      "day": 4,
-      "time": "19:30",
-      "template": [
-        "sauti",
-        "straight",
-        "usiibiwe",
-        "sauti"
-      ],
-      "bg": [
-        "usiku",
-        "usiku",
-        "shuka",
-        "usiku"
-      ],
-      "lanes": [
-        "campus",
-        "hustle",
-        "creator"
-      ]
-    },
-    {
-      "day": 5,
-      "time": "17:00",
-      "template": [
-        "straight",
-        "spotlight",
-        "sauti",
-        "africa"
-      ],
-      "bg": [
-        "usiku",
-        "usiku",
-        "usiku",
-        "chai"
-      ],
-      "lanes": [
-        "creator",
-        "techie",
-        "diaspora",
-        "young_pro"
-      ],
-      "theme": "Proudly African: Africa's wins, told with sourced specifics"
-    },
-    {
-      "day": 6,
-      "time": "11:00",
-      "template": "cover",
-      "bg": [
-        "usiku"
-      ],
-      "lanes": [
-        "campus",
-        "young_pro",
-        "creator",
-        "techie"
-      ],
-      "carousel": {
-        "template": "kesho",
-        "slides": 5
-      }
-    },
-    {
-      "day": 7,
-      "time": "18:00",
-      "template": "glasspoll",
-      "size": "story",
-      "bg": [
-        "usiku"
-      ],
-      "lanes": [
-        "everyone"
-      ]
-    }
-  ],
-  "lanes": {
-    "campus": {
-      "who": "University and college students",
-      "voice": "Fast, funny Kenyan English, campus references (CATs, comrades, hostels, group chats). Study hacks, first jobs, side income."
-    },
-    "young_pro": {
-      "who": "Young professionals in their first jobs",
-      "voice": "Sharp Kenyan English with a wink. AI at work, productivity, promotions, money moves."
-    },
-    "creator": {
-      "who": "Creators and aspiring creators",
-      "voice": "Trend-literate, meme-aware. Editing hacks, AI for content, growth, brand deals."
-    },
-    "hustle": {
-      "who": "Side-hustlers and young business owners",
-      "voice": "Practical Kenyan English. Selling online, WhatsApp Business, M-Pesa tills, automation."
-    },
-    "techie": {
-      "who": "Techies and the tech-curious",
-      "voice": "Nerdy but never gatekeeping. Builds, tools, how things work under the hood."
-    },
-    "diaspora": {
-      "who": "Young Africans abroad and friends on other continents",
-      "voice": "Kenyan English that explains local terms. African innovation, comparisons, connection."
-    },
-    "everyone": {
-      "who": "All Wanakesho",
-      "voice": "Simple Kenyan English. One question anyone can answer."
-    }
-  },
-  "channels": {
-    "instagram": {
-      "auto": true
-    },
-    "facebook": {
-      "auto": true
-    },
-    "whatsapp_channel": {
-      "auto": false,
-      "how": "Forward the approved image + caption from Telegram. WhatsApp Channels have no public posting API."
-    },
-    "tiktok_reels": {
-      "auto": false,
-      "how": "Weekly: turn the Kesho Kutwa carousel into a 30s slideshow with voice-over (script generated)."
-    },
-    "radio": {
-      "auto": false,
-      "how": "Weekly 2-minute community radio segment (script generated) for people without smartphones."
-    },
-    "sms": {
-      "auto": false,
-      "how": "Optional: weekly Usiibiwe tip by SMS to opted-in subscribers via Africa's Talking (script generated, max 160 chars)."
-    }
-  },
-  "industries": [
-    "music",
-    "sports",
-    "fashion",
-    "film",
-    "money",
-    "gaming",
-    "food",
-    "farming",
-    "beauty",
-    "campus life"
-  ],
-  "reel_templates": [
+ "timezone": "Africa/Nairobi",
+ "utc_offset": "+03:00",
+ "note": "Only formats that earn shares: receipts on the stories Kenyans are already on (Sauti, Set It Straight, Follow the Money, Promise Tracker, Chapter Six Test), scam alerts, and a Sunday poll on the week's biggest issue. Daily hot posts, Tazama Hii clips and Hatutasahau anniversaries come on top.",
+ "slots": [
+  {
+   "day": 1,
+   "time": "07:30",
+   "template": [
     "sauti",
-    "hack",
-    "decode",
-    "cap",
-    "still",
+    "straight"
+   ],
+   "bg": [
+    "usiku"
+   ],
+   "lanes": [
+    "campus",
+    "hustle",
+    "young_pro",
+    "everyone"
+   ]
+  },
+  {
+   "day": 2,
+   "time": "12:45",
+   "template": [
     "money",
-    "spotlight",
-    "build",
-    "usiibiwe",
-    "africa",
-    "makanga",
-    "straight",
+    "straight"
+   ],
+   "bg": [
+    "shuka",
+    "usiku"
+   ],
+   "lanes": [
+    "young_pro",
+    "hustle",
+    "everyone"
+   ]
+  },
+  {
+   "day": 3,
+   "time": "18:30",
+   "template": [
     "promise",
-    "kumbuka",
     "scorecard"
-  ]
+   ],
+   "bg": [
+    "usiku"
+   ],
+   "lanes": [
+    "campus",
+    "hustle",
+    "everyone"
+   ]
+  },
+  {
+   "day": 4,
+   "time": "19:30",
+   "template": [
+    "sauti",
+    "usiibiwe"
+   ],
+   "bg": [
+    "usiku",
+    "shuka"
+   ],
+   "lanes": [
+    "campus",
+    "hustle",
+    "creator"
+   ]
+  },
+  {
+   "day": 5,
+   "time": "17:00",
+   "template": [
+    "straight",
+    "money",
+    "sauti"
+   ],
+   "bg": [
+    "usiku",
+    "shuka",
+    "usiku"
+   ],
+   "lanes": [
+    "everyone",
+    "young_pro",
+    "diaspora"
+   ]
+  },
+  {
+   "day": 6,
+   "time": "11:00",
+   "template": [
+    "promise",
+    "money",
+    "sauti"
+   ],
+   "bg": [
+    "usiku",
+    "shuka",
+    "usiku"
+   ],
+   "lanes": [
+    "everyone",
+    "hustle",
+    "campus"
+   ]
+  },
+  {
+   "day": 7,
+   "time": "18:00",
+   "template": "glasspoll",
+   "size": "story",
+   "bg": [
+    "usiku"
+   ],
+   "lanes": [
+    "everyone"
+   ]
+  }
+ ],
+ "lanes": {
+  "campus": {
+   "who": "University and college students",
+   "voice": "Fast, funny Kenyan English, campus references (CATs, comrades, hostels, group chats). Study hacks, first jobs, side income."
+  },
+  "young_pro": {
+   "who": "Young professionals in their first jobs",
+   "voice": "Sharp Kenyan English with a wink. AI at work, productivity, promotions, money moves."
+  },
+  "creator": {
+   "who": "Creators and aspiring creators",
+   "voice": "Trend-literate, meme-aware. Editing hacks, AI for content, growth, brand deals."
+  },
+  "hustle": {
+   "who": "Side-hustlers and young business owners",
+   "voice": "Practical Kenyan English. Selling online, WhatsApp Business, M-Pesa tills, automation."
+  },
+  "techie": {
+   "who": "Techies and the tech-curious",
+   "voice": "Nerdy but never gatekeeping. Builds, tools, how things work under the hood."
+  },
+  "diaspora": {
+   "who": "Young Africans abroad and friends on other continents",
+   "voice": "Kenyan English that explains local terms. African innovation, comparisons, connection."
+  },
+  "everyone": {
+   "who": "All Wanakesho",
+   "voice": "Simple Kenyan English. One question anyone can answer."
+  }
+ },
+ "channels": {
+  "instagram": {
+   "auto": true
+  },
+  "facebook": {
+   "auto": true
+  },
+  "whatsapp_channel": {
+   "auto": false,
+   "how": "Forward the approved image + caption from Telegram. WhatsApp Channels have no public posting API."
+  },
+  "tiktok_reels": {
+   "auto": false,
+   "how": "Weekly: turn the Kesho Kutwa carousel into a 30s slideshow with voice-over (script generated)."
+  },
+  "radio": {
+   "auto": false,
+   "how": "Weekly 2-minute community radio segment (script generated) for people without smartphones."
+  },
+  "sms": {
+   "auto": false,
+   "how": "Optional: weekly Usiibiwe tip by SMS to opted-in subscribers via Africa's Talking (script generated, max 160 chars)."
+  }
+ },
+ "industries": [
+  "music",
+  "sports",
+  "fashion",
+  "film",
+  "money",
+  "gaming",
+  "food",
+  "farming",
+  "beauty",
+  "campus life"
+ ],
+ "reel_templates": [
+  "sauti",
+  "hack",
+  "decode",
+  "cap",
+  "still",
+  "money",
+  "spotlight",
+  "build",
+  "usiibiwe",
+  "africa",
+  "makanga",
+  "straight",
+  "promise",
+  "kumbuka",
+  "scorecard"
+ ]
 }

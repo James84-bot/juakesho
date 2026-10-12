@@ -40,7 +40,7 @@ html, body { background: #777; }
 .backdrop, .art { position: absolute; inset: 0; width: 100%; height: 100%; }
 /* ---- Photo: real colour, full width, fading into the background where the words begin ---- */
 .photo { position: absolute; left: 0; right: 0; top: 0; height: var(--ph); background-size: cover; background-position: center 30%;
-  filter: saturate(.94) contrast(1.04); }
+  filter: saturate(1.06) contrast(1.06) brightness(1.03); }
 .photo-fade { position: absolute; left: 0; right: 0; top: 0; height: var(--ph);
   background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 92%, transparent) 0, color-mix(in srgb, var(--bg) 62%, transparent) 11%, transparent 24%,
                               transparent 46%, color-mix(in srgb, var(--bg) 82%, transparent) 84%, var(--bg) 100%); }

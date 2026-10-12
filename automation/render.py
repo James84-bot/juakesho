@@ -155,7 +155,8 @@ def mark(text: str) -> Markup:
     Also keeps hyphenated words whole, like nobreak."""
     import re as _re
     safe = str(escape(text))
-    safe = _re.sub(r"\*([^*\n]{1,60})\*", r"<mark>\1</mark>", safe)
+    # trailing punctuation rides inside the marker, so it never floats after the marker's padding ("Sh7bn .")
+    safe = _re.sub(r"\*([^*\n]{1,60})\*([.,!?;:]*)", r"<mark>\1\2</mark>", safe)
     return Markup(_re.sub(r"(?<![<\w/])(\w+-\w+)", r'<span style="white-space:nowrap">\1</span>', safe))
 
 
@@ -244,6 +245,16 @@ def make_env() -> Environment:
     return env
 
 
+def _dateline(post: dict) -> str:
+    """The day the post goes out ("12 Oct 2026"): a dated post reads as news, not as a poster."""
+    import datetime as _dt
+    try:
+        d = _dt.datetime.fromisoformat(str(post.get("publish_at")))
+    except ValueError:
+        d = _dt.datetime.now()
+    return f"{d.day} {d:%b %Y}"
+
+
 def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = False, measure: bool = False) -> str:
     kind = post.get("size", "post")
     W, H = SIZES[kind]
@@ -264,6 +275,7 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
                                  else "stacked-on-light.svg")).as_uri(),
         "icon_uri": (LOGO / {"jua": "icon-red.svg", "shuka": "icon-red.svg", "maziwa": "icon-paper.svg"}.get(bg_name, "icon-night.svg")).as_uri(),
         "motion": motion, "reel": reel,
+        "dateline": _dateline(post),
         "symbol": "",   # the illustrated symbols are retired from the designs (kept in data for the writer)
     }
     ink = post.get("ink") or {}
