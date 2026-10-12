@@ -1,5 +1,6 @@
 # Jua Kesho autopilot — runs in the cloud so nothing depends on one laptop.
 #   Sunday 17:00 EAT : plan + draft + check + render next week, send previews to Telegram
+#   Daily 09:00 EAT  : one "hot" post on the day's biggest Kenyan story, out the same evening
 #   Every 2 hours    : collect ✅/❌ taps from Telegram, publish what is approved and due
 # Secrets (repo Settings → Secrets and variables → Actions): see automation/.env.example
 name: autopilot
@@ -8,10 +9,11 @@ on:
   schedule:
     - cron: "0 14 * * 0"      # Sunday 14:00 UTC = 17:00 EAT
     - cron: "20 */2 * * *"    # every 2 hours
+    - cron: "5 6 * * *"       # daily 06:05 UTC = 09:05 EAT: the hot post
   workflow_dispatch:
     inputs:
       command:
-        description: "week (next week) | this-week (draft the current week now) | tick | learn | redo (re-draft posts held back) | rehearse (no keys needed: renders a mock week, posts nothing)"
+        description: "week (next week) | hot (today's post on the biggest story) | this-week (draft the current week now) | tick | learn | redo (re-draft posts held back) | rehearse (no keys needed: renders a mock week, posts nothing)"
         default: "tick"
 
 concurrency:
@@ -57,17 +59,18 @@ jobs:
             echo "Secrets not set yet: skipping. See automation/.env.example"; echo "c=skip" >> "$GITHUB_OUTPUT"; exit 0; fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "c=${{ inputs.command }}" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "0 14 * * 0" ]; then echo "c=week" >> "$GITHUB_OUTPUT";
+          elif [ "${{ github.event.schedule }}" = "5 6 * * *" ]; then echo "c=hot" >> "$GITHUB_OUTPUT";
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
       - name: Install
-        if: steps.cmd.outputs.c == 'week' || steps.cmd.outputs.c == 'this-week' || steps.cmd.outputs.c == 'redo' || steps.cmd.outputs.c == 'rehearse'
+        if: steps.cmd.outputs.c == 'week' || steps.cmd.outputs.c == 'hot' || steps.cmd.outputs.c == 'this-week' || steps.cmd.outputs.c == 'redo' || steps.cmd.outputs.c == 'rehearse'
         run: |
           pip install -r automation/requirements.txt
           python -m playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg || true   # video.py falls back to imageio-ffmpeg
 
       - name: Install (light)
-        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'this-week' && steps.cmd.outputs.c != 'redo' && steps.cmd.outputs.c != 'rehearse' && steps.cmd.outputs.c != 'skip'
+        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'hot' && steps.cmd.outputs.c != 'this-week' && steps.cmd.outputs.c != 'redo' && steps.cmd.outputs.c != 'rehearse' && steps.cmd.outputs.c != 'skip'
         run: pip install -r automation/requirements.txt
 
       - name: Tests

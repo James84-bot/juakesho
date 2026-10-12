@@ -62,6 +62,23 @@ class PlanTests(TempWeeks):
         self.assertEqual(b["posts"][0]["status"], "approved")
 
 
+class HotPostTests(TempWeeks):
+    def test_one_hot_post_a_day_with_time_to_approve(self):
+        morning = dt.datetime(2026, 10, 13, 9, 5, tzinfo=pl.EAT)
+        with mock.patch.object(pl, "now", lambda: morning):
+            label = pl.hot_slot(mock=True)
+            self.assertEqual(label, "2026-W42")
+            post = pl.load_week(label)["posts"][-1]
+            self.assertEqual((post["id"], post["template"], post["status"], post["hot"]), ("2026-w42-hot-1013", "sauti", "planned", True))
+            self.assertEqual(post["publish_at"], "2026-10-13T18:30:00+03:00")
+            self.assertIsNone(pl.hot_slot(mock=True))   # never twice a day
+        late = dt.datetime(2026, 10, 14, 17, 0, tzinfo=pl.EAT)
+        with mock.patch.object(pl, "now", lambda: late):
+            pl.hot_slot(mock=True)
+            post = pl.load_week("2026-W42")["posts"][-1]
+            self.assertEqual(post["publish_at"], "2026-10-14T20:00:00+03:00")   # 3 hours to approve
+
+
 class ApprovalTests(TempWeeks):
     def test_group_decision_applies_to_all_slides(self):
         data = {"posts": [{"id": "c", "group": "g", "status": "awaiting"},
@@ -442,6 +459,23 @@ class QualitySystemTests(unittest.TestCase):
         self.assertEqual(data["posts"][0]["status"], "manual")
         self.assertIn("m|w|r1", pl._buttons("w|r1", reel=True))
         self.assertNotIn("m|", pl._buttons("w|r1"))
+
+    def test_news_feed_parsing_and_prompt(self):
+        import news
+        rss = b"""<rss><channel>
+<item><title>MPs pass Finance Bill - Capital FM</title><link>https://x.test/1</link><source url="https://c.test">Capital FM</source>
+<pubDate>Mon, 12 Oct 2026 10:00:00 GMT</pubDate></item>
+<item><title>MPs pass the Finance Bill</title><link>https://x.test/2</link><pubDate>Mon, 12 Oct 2026 09:00:00 GMT</pubDate></item>
+</channel></rss>"""
+        items = news.parse(rss, "Feed")
+        self.assertEqual(items[0]["title"], "MPs pass Finance Bill")
+        self.assertEqual(items[0]["outlet"], "Capital FM")
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(news, "OUT", Path(d) / "n.json"), \
+                mock.patch.object(news, "_get", lambda url, timeout=20: rss), \
+                mock.patch.object(news, "MAX_AGE", dt.timedelta(days=36500)):
+            data = news.collect()
+            self.assertEqual(len(data["items"]), 1)   # the same story from two feeds counts once
+            self.assertIn("https://x.test/1", news.prompt_block())
 
     def test_commons_licences(self):
         import photos

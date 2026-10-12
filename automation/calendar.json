@@ -1,15 +1,15 @@
 {
   "timezone": "Africa/Nairobi",
   "utc_offset": "+03:00",
-  "note": "One week for young Kenyans, in their own voice: Sauti ya Mwananchi leads Monday and Thursday (Civic 101 rotates in); Tuesday is fact-checks, public money and Hatutasahau; Wednesday is Promise Tracker or the Chapter Six Test; Friday Proudly African; Saturday what's coming; Sunday the poll. Anniversaries in content/remember.json take over the nearest weekday automatically. Formats rotate by ISO week.",
+  "note": "Kenya first, politics first. Mon: Sauti ya Mwananchi (Civic 101 every third week). Tue: fact-checks, public money, Hatutasahau, Decode. Wed: Promise Tracker or the Chapter Six Test. Thu: Sauti, fact-checks, scam alerts. Fri: a fact-check or Sauti, with Kenyans doing it right every other week. Sat: what's coming (Kesho Kutwa). Sun: the poll. Plus a daily 'hot' post on the day's biggest Kenyan story. Anniversaries take over the nearest weekday. Formats rotate by ISO week.",
   "slots": [
     {
       "day": 1,
       "time": "07:30",
       "template": [
         "sauti",
-        "hack",
-        "sauti"
+        "sauti",
+        "hack"
       ],
       "bg": [
         "usiku"
@@ -31,9 +31,8 @@
         "straight",
         "money",
         "kumbuka",
-        "decode",
         "straight",
-        "cap"
+        "decode"
       ],
       "bg": [
         "usiku"
@@ -65,15 +64,15 @@
       "time": "19:30",
       "template": [
         "sauti",
+        "straight",
         "usiibiwe",
-        "sauti",
-        "makanga"
+        "sauti"
       ],
       "bg": [
         "usiku",
-        "shuka",
         "usiku",
-        "maziwa"
+        "shuka",
+        "usiku"
       ],
       "lanes": [
         "campus",
@@ -85,10 +84,14 @@
       "day": 5,
       "time": "17:00",
       "template": [
+        "straight",
         "spotlight",
+        "sauti",
         "africa"
       ],
       "bg": [
+        "usiku",
+        "usiku",
         "usiku",
         "chai"
       ],

@@ -2,6 +2,7 @@
 pipeline.py — the Jua Kesho autopilot.
 
     python pipeline.py week   [--week 2026-W40] [--mock]   plan → draft → check → render → ask for approval
+    python pipeline.py hot                                  today's extra post on the biggest Kenyan story (daily)
     python pipeline.py tick   [--dry-run]                   collect approvals → publish what's due
     python pipeline.py learn                                score recent posts from Instagram insights
     python pipeline.py status [--week 2026-W40]             show every post's state
@@ -177,6 +178,38 @@ def _anniversaries(posts: list[dict], year: int, wk: int) -> None:
         target.pop("series", None)
 
 
+HOT = {"time": (18, 30), "template": "sauti", "min_lead": dt.timedelta(hours=3)}
+
+
+def hot_slot(mock: bool = False) -> str | None:
+    """Daily: one extra post that reacts to today's biggest Kenyan story, out the same evening.
+    Adds a planned Sauti post to this week's file (made if missing); returns the week label, or None if today's
+    hot post already exists or there's no news to react to."""
+    label = current_week_label(ahead=0)
+    today = now().date()
+    if week_file(label).exists():
+        data = load_week(label)
+    else:
+        data = {"collection": label, "created": now().isoformat(), "posts": [], "scripts": {}}
+    hot_id = f"{label.lower()}-hot-{today:%m%d}"
+    if any(p["id"] == hot_id for p in data["posts"]):
+        log(f"today's hot post {hot_id} already exists")
+        return None
+    if not mock:
+        import news
+        if not news.prompt_block():
+            log("hot: no fresh news to react to, skipping today")
+            return None
+    when = dt.datetime(today.year, today.month, today.day, *HOT["time"], tzinfo=EAT)
+    if when - now() < HOT["min_lead"]:   # late start: give the owner time to approve
+        when = (now() + HOT["min_lead"]).replace(second=0, microsecond=0)
+    data["posts"].append({"id": hot_id, "template": HOT["template"], "bg": "usiku", "lane": "everyone",
+                          "publish_at": when.isoformat(), "status": "planned", "hot": True})
+    save_week(data)
+    log(f"hot: planned {hot_id} for {when:%a %H:%M} EAT")
+    return label
+
+
 def plan(label: str) -> dict:
     if week_file(label).exists():
         log(f"{label} already planned, keeping it")
@@ -244,7 +277,7 @@ def draft(label: str, mock: bool = False) -> dict:
 # ---------------------------------------------------------------------------
 # 3. Render (PNG for Telegram/WhatsApp, JPEG for Instagram)
 # ---------------------------------------------------------------------------
-PLAN_KEYS = {"id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember"}
+PLAN_KEYS = {"id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot"}
 
 
 def redo(label: str) -> list[str]:
@@ -724,7 +757,8 @@ def _main(argv: list[str] | None = None) -> int:
     load_env()
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
-    ap.add_argument("command", choices=["week", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends", "status", "redo"])
+    ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
+                                        "news", "status", "redo"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -738,13 +772,23 @@ def _main(argv: list[str] | None = None) -> int:
             learn()
         except Exception as e:
             log(f"learn skipped: {e}")
-    if a.command in {"week", "trends"} and not a.mock:
+    if a.command in {"week", "hot", "trends", "news"} and not a.mock:
         try:
             import trends
             t = trends.collect()
             log(f"trends: {len(t['safe'])} safe, {len(t['dropped'])} dropped, errors {t['errors'] or 'none'}")
         except Exception as e:
             log(f"trends skipped: {e}")
+        try:
+            import news
+            n = news.collect()
+            log(f"news: {len(n['items'])} stories, errors {n['errors'] or 'none'}")
+        except Exception as e:
+            log(f"news skipped: {e}")
+    if a.command == "hot":
+        label = hot_slot(a.mock)
+        if not label:
+            return 0
     if a.command in {"week", "plan"}:
         plan(label)
     if a.command == "redo":
@@ -753,11 +797,11 @@ def _main(argv: list[str] | None = None) -> int:
                     if any(q["status"] == "needs_human" for q in json.loads(f.read_text(encoding="utf-8"))["posts"])]
             label = held[-1] if held else label
         redo(label)
-    if a.command in {"week", "redo", "draft"}:
+    if a.command in {"week", "hot", "redo", "draft"}:
         draft(label, mock=a.mock)
-    if a.command in {"week", "redo", "render"}:
+    if a.command in {"week", "hot", "redo", "render"}:
         render_week(label)
-    if a.command in {"week", "redo", "ask"}:
+    if a.command in {"week", "hot", "redo", "ask"}:
         ask(label, dry_run=a.dry_run)
     if a.command in {"tick", "collect"} and not a.dry_run:
         collect()

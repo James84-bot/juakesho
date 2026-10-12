@@ -170,6 +170,14 @@ REAL PEOPLE WE CELEBRATE (Put Us On)
   credits it). Otherwise leave it out: the owner adds a photo they got permission for. Never a stock lookalike,
   never an AI-generated face of a real person. Tag them in the caption (@handle) so they can share it.
 
+KENYA FIRST, POLITICS FIRST (what we cover)
+- Most posts are about Kenyan politics and governance: what leaders said and did this week, bills in Parliament,
+  taxes and the budget, debt, county governments, police and rights, the 2027 race, promises and records.
+- Ride what Kenyans are talking about right now (THIS WEEK IN KENYA, TRENDING NOW). A post about this week's story
+  beats a timeless explainer. Take the angle nobody else is giving: the receipt, the contradiction, the cost to us.
+- Africa and tech come in only when they're about Kenya or Kenyans' pockets. Good news still has its slot:
+  Kenyans doing it right.
+
 GENERAL KNOWLEDGE (the base of everything)
 - Teach what every Kenyan should know and most were never taught: how a bill becomes law, what each of the six
   elected offices does (President, Governor, Senator, MP, Woman Rep, MCA), how the budget and taxes work, your
@@ -306,8 +314,8 @@ SERIES = {
               "`verdict_text` is the stamp, e.g. FAKE, TRUE, NOT QUITE.",
     "africa": "Made in Africa: a real African innovation with its year and country. Needs source.",
     "hapa": "Here vs There: how something works in Kenya vs elsewhere, friendly and curious, ends with a question to the world.",
-    "cover": "Kesho Kutwa carousel cover: `series` = 'Kesho Kutwa', `lines` 2-4 short lines, `highlight` index.",
-    "kesho": "Kesho Kutwa slide: one near-future change: `leo` (what exists today), `kesho` (what's coming), `anza` (try it now).",
+    "cover": "Kesho Kutwa carousel cover: what's coming in Kenyan politics and governance that will hit our lives (bills, deadlines, budget, 2027 dates). `series` = 'Kesho Kutwa', `lines` 2-4 short lines, `highlight` index.",
+    "kesho": "Kesho Kutwa slide: one coming change in Kenya (a bill, a tax, a deadline, an election date): `leo` (where it stands today), `kesho` (what it will mean for us), `anza` (what to do now: read it, comment in public participation, register). Sourced.",
     "poll": "Jua Asks story poll: a question anyone can answer with 2 options.",
     "straight": "Set It Straight: a false or demeaning claim about Kenya/Africa (or a viral falsehood), answered with sourced facts. `claim` quoted exactly (max 120), `who` said it (max 44, e.g. 'a viral TikTok, May 2026'), `claim_source` where exactly, `verdict` false|misleading|missing_context, `truth` the headline fact (max 70), `proof` 2-3 short facts, `pride` a proud closing line (max 50), `source` for the facts. If a public office holder said it: `who` = 'Name, Office (where, date)', optional `person_photo` (commons:File:...) + `person_role`.",
     "promise": "Promise Tracker: one specific, checkable promise by a named public office holder, quoted exactly (`promise`), `who` = 'Name, Office', `said` where and when (e.g. 'Kenya Kwanza manifesto, 2022'), `verdict` kept|partly|stalled|broken judged ONLY from official or reputable records, optional `measure` (max 16 chars, e.g. '0 of 6', '12%'), `reality` what the record shows, `proof` 1-3 sourced facts, `ask` the accountability question (max 60). `source` required, with every document. Judge every side by the same standard. Optional licensed `person_photo` + `person_role`.",
@@ -321,7 +329,7 @@ SERIES = {
     "pov": "POV: Kesho: a near-future scenario written as a POV ('your AI agent ...'), `year`, `real` = what exists today. "
            "`cast`: 1-3 of {who, pose, mood, phone} from the stick cast (who can also be jua).",
     "build": "Build With Me: a real build (bots, automations, sites), shown as a flow of 3-6 steps, `stack` chips, `result` with a comment-to-get CTA.",
-    "glasspoll": "Jua Asks (story): `hook`, a spicy-but-clean question, 2 options, `cta`.",
+    "glasspoll": "Jua Asks (story): a question about this week's Kenyan political story that every side can answer (never 'who will you vote for'). `hook`, question, 2 options, `cta`.",
     "still": "Still in 2026?: `industry`, the outdated `thing` we still do (a habit or process, never a person), `old` way, `new` way that exists today, `cta`.",
     "spotlight": "Put Us On: a real African artist, creator or startup. `kind` (Artist/Creator/Startup), `name`, `country`, `what` they do, `why` it matters, `cta` (stream/follow/share). Positive only. MUST include a verifiable `source`.",
     "vichekesho": "Vichekesho: a 3-panel comic with the stick cast. Panels: [{bg, left?, right?}], bg one of jua|pwani|waridi|maziwa|ziwa. "
@@ -420,14 +428,17 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
     slot_txt = json.dumps([
         {"id": s["id"], "template": s["template"], "lane": s["lane"], **({"series": s["series"]} if s.get("series") else {}),
          **({"anniversary": s["remember"]} if s.get("remember") else {}),
+         **({"hot": "Today's post: react to the biggest Kenyan political story in THIS WEEK IN KENYA, with its link in `source`"}
+            if s.get("hot") else {}),
          "series_brief": SERIES[s["template"]],
          "fields": _field_spec(s["template"])}
         for s in slots
     ], ensure_ascii=False, indent=1)
     ex_txt = json.dumps(examples, ensure_ascii=False, indent=1)
+    import news
     import trends
     system = (BRAND_RULES + "\nAUDIENCE LANES\n" + lane_txt + "\n" + nickname_menu() + music_menu() + learnings_text()
-              + trends.prompt_block())
+              + news.prompt_block() + trends.prompt_block())
     scripts_block = ("Also write reach-everyone scripts: \"radio\" (2-minute community radio segment, host Jua, ~250 words, "
                      "Kiswahili summary at the end), \"voice_note\" (60-second WhatsApp script), \"sms\" (the week's Usiibiwe tip, "
                      "max 160 characters, no links), \"reels\" (30-second voice-over for the Kesho Kutwa carousel).") if scripts else ""
@@ -635,7 +646,7 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     out = []
     for s in slots:
         d = by_id.get(s["id"], {})
-        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember") if k in s}
+        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot") if k in s}
         out.append({**d, **locked})
     return out
 
