@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-12T13:49:06.793389+00:00",
+  "fetched": "2026-10-12T14:33:14.179333+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -47,500 +47,102 @@
     },
     {
       "geo": "KE",
+      "title": "loan",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Helb CEO who’s never taken bank loan, and walks up 19 floors to his office daily",
+          "url": "https://www.businessdailyafrica.com/bd/lifestyle/weekend-with-the-ceo/helb-ceo-who-s-never-taken-bank-loan-5626218",
+          "source": "Business Daily"
+        },
+        {
+          "title": "Helb disburses funds to institutions in latest student loan batch",
+          "url": "https://www.the-star.co.ke/news/2026-10-08-helb-releases-funds-for-5-student-loan-batches",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "HESLB releases first batch of beneficiaries",
+          "url": "https://www.thecitizen.co.tz/tanzania/news/national/heslb-releases-first-batch-of-beneficiaries-5627030",
+          "source": "The Citizen"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "china",
       "traffic": "200+",
       "news": [
         {
-          "title": "Why China Doesn’t Want to Join the Ranks of the World’s Developed Countries",
-          "url": "https://www.wsj.com/world/china/why-china-doesnt-want-to-join-the-ranks-of-the-worlds-developed-countries-e37bbec1",
-          "source": "WSJ"
-        },
-        {
-          "title": "Why China Doesn’t Want to Join the Ranks of the World’s Developed Countries | World News",
-          "url": "https://www.hindustantimes.com/world-news/why-china-doesn-t-want-to-join-the-ranks-of-the-world-s-developed-countries-101791778672685.html",
-          "source": "Hindustan Times"
-        },
-        {
-          "title": "Watch: Explore Hainan Tropical Rainforest National Park",
-          "url": "https://news.cgtn.com/news/2026-10-11/Watch-Explore-Hainan-Tropical-Rainforest-National-Park-1R9FUvI7Bza/p.html",
-          "source": "CGTN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "roman abramovich",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Documents falsified to evade tax on Abramovich's wealth, BBC finds",
-          "url": "https://www.bbc.com/news/articles/c64g1l5389kvo",
-          "source": "BBC"
-        },
-        {
-          "title": "Roman Abramovich aides falsified paperwork to disguise assets and dodge tax, records suggest",
-          "url": "https://www.theguardian.com/world/2026/oct/12/roman-abramovich-aides-paperwork-tax-records-suggest",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Licensable video: Schwere Anschuldigungen: Halfen Wirtschaftsprüfer Roman Abramowitsch bei Steuerhinterziehung?",
-          "url": "https://www.reutersconnect.com/item/schwere-anschuldigungen-halfen-wirtschaftsprufer-roman-abramowitsch-bei-steuerhinterziehung/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XU0hCQzExOTQ4NTY",
-          "source": "Reuters Connect"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "levante vs sevilla",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Luís Castro denuncia una filtración antes de enfrentarse al Sevilla: \"No sé quién ha sido\"",
-          "url": "https://www.eldesmarque.com/futbol/liga-1a-division/20261011/luis-castro-denuncia-filtracion-antes-enfrentarse-sevilla_18_020409365.html",
-          "source": "El Desmarque"
-        },
-        {
-          "title": "LUIS GARCÍA: \"ANTE EL LEVANTE TODO PASA POR UN BUEN CONTROL DE PARTIDO\"",
-          "url": "https://sevillafc.es/es/actualidad/noticias/rueda-prensa-luis-garcia-previa-levante-sevilla-octubre-2026",
-          "source": "Sevilla FC"
-        },
-        {
-          "title": "De la mejoría de Vargas a los esperados goles de los delanteros: «Nos puede dar un registro diferente»",
-          "url": "https://www.abc.es/deportes/orgullodenervion/noticias-sevilla-fc/mejoria-vargas-esperados-goles-delanteros-puede-dar-20261011214440-nts.html",
-          "source": "ABC"
-        }
-      ]
-    },
-    {
-      "geo": "ZA",
-      "title": "shadrack sibiya leaves police",
-      "traffic": "5000+",
-      "news": [
-        {
-          "title": "Shadrack Sibiya resigns from SAPS",
-          "url": "https://www.enca.com/news-top-stories/shadrack-sibiya-resigns-saps",
-          "source": "eNCA"
-        },
-        {
-          "title": "Sibiya’s SAPS contract terminated with immediate effect",
-          "url": "https://www.sabcnews.com/sabcnews/sibiyas-saps-contract-terminated-with-immediate-effect/",
-          "source": "SABC News"
-        },
-        {
-          "title": "Sibiya bail hearing: Lawyer questions focus on teenage accuser’s intimate photos",
-          "url": "https://www.ewn.co.za/2026/10/12/sibiya-bail-hearing-lawyer-questions-focus-on-teenage-accuser-s-intimate-photos",
-          "source": "EWN"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "NG",
-      "title": "opay ngx listing approval",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "OPay secures approval for NGX listing after U.S. IPO",
-          "url": "https://guardian.ng/news/opay-secures-approval-for-ngx-listing-after-u-s-ipo/",
-          "source": "The Guardian Nigeria News"
-        },
-        {
-          "title": "OPay’s proposed IPO: Foreign investment is not economic exploitation",
-          "url": "https://www.thecable.ng/opays-proposed-ipo-foreign-investment-is-not-economic-exploitation/",
-          "source": "TheCable"
-        },
-        {
-          "title": "NGX targets broader ownership as OPay considers local IPO",
-          "url": "https://punchng.com/ngx-targets-broader-ownership-as-opay-considers-local-ipo/",
-          "source": "Punch Newspapers"
-        }
-      ]
-    },
-    {
-      "geo": "NG",
-      "title": "lagos-calabar coastal highway",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Umahi: Coastal highway will be re-routed to East-West road due to difficult terrain",
-          "url": "https://www.thecable.ng/umahi-coastal-highway-will-be-re-routed-to-link-east-west-road-due-to-difficult-terrain/",
-          "source": "TheCable"
-        },
-        {
-          "title": "Umahi defends Ondo Coastal Highway diversion",
-          "url": "https://www.vanguardngr.com/2026/10/umahi-defends-ondo-coastal-highway-diversion/",
-          "source": "Vanguard News"
-        },
-        {
-          "title": "FG has no regrets over Lagos-Calabar coastal highway decisions – Umahi",
-          "url": "https://www.premiumtimesng.com/news/top-news/916401-fg-has-no-regrets-over-lagos-calabar-coastal-highway-decisions-umahi.html",
-          "source": "Premium Times Nigeria"
-        }
-      ]
-    },
-    {
-      "geo": "ZA",
-      "title": "sharks rugby disciplinary bongi mbonambi",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Bok blow: Sharks accuse Bongi of misconduct at game reserve",
-          "url": "https://www.news24.com/sport/rugby/springboks/bok-blow-sharks-accuse-bongi-of-misconduct-20261010-1072",
-          "source": "News24"
-        },
-        {
-          "title": "Double Bok World Cup winner’s future hangs in balance as ruling looms",
-          "url": "https://www.rugbypass.com/news/double-springboks-world-cup-winners-future-hangs-in-balance-as-ruling-looms-bongi-mbonambi-sharks-urc/",
-          "source": "Rugbypass.com"
-        },
-        {
-          "title": "Springboks’ double World Cup winner in trouble at the Sharks due to ill-discipline – report",
-          "url": "https://www.planetrugby.com/news/springboks-double-world-cup-winner-in-trouble-at-the-sharks-due-to-ill-discipline-report",
-          "source": "Planet Rugby"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "US",
-      "title": "canada thanksgiving",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Why is Canadian Thanksgiving earlier than the U.S.?",
-          "url": "https://ca.news.yahoo.com/why-canadian-thanksgiving-earlier-u-125553734.html",
-          "source": "Yahoo News Canada"
-        },
-        {
-          "title": "Treasure Trove: How a flag, a German cigarette company and a Jewish actress are connected",
-          "url": "https://thecjn.ca/arts-culture/treasure-trove-how-a-flag-a-german-cigarette-company-and-a-jewish-actress-are-connected/",
-          "source": "The Canadian Jewish News"
-        },
-        {
-          "title": "Grow Your Own Future: Giving thanks for a bountiful harvest",
-          "url": "https://www.moosejawtoday.com/opinion/grow-your-own-future-giving-thanks-for-a-bountiful-harvest-12862369",
-          "source": "MooseJawToday.com"
-        }
-      ]
-    },
-    {
-      "geo": "NG",
-      "title": "adebayo adelabu",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Adelabu denies calling on Nigerians to reject APC",
-          "url": "https://punchng.com/adelabu-denies-calling-on-nigerians-to-reject-apc/",
-          "source": "Punch Newspapers"
-        },
-        {
-          "title": "Tsohon ministan Tinubu ya yi bayani da aka ce ya fara adawa da APC",
-          "url": "https://hausa.legit.ng/siyasa/1735586-tsohon-ministan-tinubu-adelabu-ya-jaddada-goyon-baya-ga-apc/",
-          "source": "Legit.ng"
-        },
-        {
-          "title": "Adelabu denies calling on Nigerians to reject APC",
-          "url": "https://www.vanguardngr.com/2026/10/adelabu-denies-calling-on-nigerians-to-reject-apc/",
-          "source": "Vanguard News"
-        }
-      ]
-    },
-    {
-      "geo": "NG",
-      "title": "mrbeast earnings 2026 forbes",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Top 10 highest-paid content creators in 2026 – Forbes ranking",
-          "url": "https://www.vanguardngr.com/2026/10/top-10-highest-paid-content-creators-in-2026-forbes-ranking/",
-          "source": "Vanguard News"
-        },
-        {
-          "title": "FULL LIST: Top 10 highest-earning content creators in 2026 – Forbes",
-          "url": "https://punchng.com/full-list-top-10-highest-earning-content-creators-in-2026-forbes/",
-          "source": "Punch Newspapers"
-        },
-        {
-          "title": "Top 10 richest content creators in 2026 and how they make their money",
-          "url": "https://www.legit.ng/business-economy/money/1735665-top-10-highest-paid-content-creators-2026-mrbeast-leads-300-million/",
-          "source": "Legit.ng"
-        }
-      ]
-    },
-    {
-      "geo": "ZA",
-      "title": "pakhtakor vs al qadsiah",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "'We only have ourselves to blame!' – Niko Kovac fumes after Borussia Dortmund late collapse",
-          "url": "https://www.goal.com/en-za/lists/niko-kovac-borussia-dortmund-werder-bremen-late-draw-reaction/bltec99e9d4393df02a",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Niclas Füllkrug strikes late as Werder Bremen snatch dramatic late 2 draw at Borussia Dortmund",
-          "url": "https://www.bundesliga.com/en/bundesliga/news/borussia-dortmund-werder-bremen-match-report-highlights-matchday-5-39473",
-          "source": "Bundesliga | official website"
-        },
-        {
-          "title": "\"He is excellent at heading the ball\" - Schlotterbeck hails former teammate after Bremen draw",
-          "url": "https://www.livescore.com/en/news/football/bundesliga/he-is-excellent-at-heading-the-ball-schlotterbeck-hails-former-teammate-after-bremen-draw-bvb-buzz/",
-          "source": "LiveScore"
-        }
-      ]
-    },
-    {
-      "geo": "ZA",
-      "title": "david bedingham",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Recent Match Report - South Africa vs Australia, Australia tour of South Africa, 1st Test | ESPN.com",
-          "url": "https://www.espn.com/cricket/series/19430/report/1525659/day/3/south-africa-vs-australia-1st-test-19430",
-          "source": "ESPN"
-        },
-        {
-          "title": "Matt Renshaw scores 190 as Australia leads South Africa by 363 runs on Day 2",
-          "url": "https://apnews.com/article/cricket-1st-test-south-africa-australia-4d8a487d7f11a1f1af7977f9ac6620a8",
-          "source": "AP News"
-        },
-        {
-          "title": "South Africa v Australia: first men’s cricket Test, day four – live",
-          "url": "https://www.theguardian.com/sport/live/2026/oct/12/south-africa-v-australia-first-test-day-four-durban-kingsmead-cricket-ground-live-updates?page=with:block-6accded68f084a13d13c9d9f",
-          "source": "The Guardian"
-        }
-      ]
-    },
-    {
-      "geo": "ZA",
-      "title": "pepkor",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Major retailer in South Africa in hot water over merger with rival business",
-          "url": "https://businesstech.co.za/news/business/879323/major-retailer-in-south-africa-in-hot-water-over-merger-with-rival-business/",
-          "source": "BusinessTech"
-        },
-        {
-          "title": "Pepkor's $1.3bn fintech deal comes under scrutiny",
-          "url": "https://www.finextra.com/newsarticle/48569/pepkors-13bn-fintech-deal-comes-under-scrutiny",
-          "source": "Finextra Research"
-        },
-        {
-          "title": "Pepkor fintech merger draws governance concerns in South Africa",
-          "url": "https://tradersunion.com/news/financial-news/show/3762580-pepkor-flash-shop2shop-merger-concerns/",
-          "source": "Traders Union"
-        }
-      ]
-    },
-    {
-      "geo": "ZA",
-      "title": "malcolm marx",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Bulls face competition for Malcolm Marx signature amid doubts over Springboks Rugby World Cup winner's future",
-          "url": "https://www.planetrugby.com/news/bulls-face-competition-for-malcolm-marx-signature-amid-doubts-over-springboks-rugby-world-cup-winners-future",
-          "source": "Planet Rugby"
-        },
-        {
-          "title": "Sharks join hunt for Bok hooker Marx – report",
-          "url": "https://www.citizen.co.za/sport/rugby/sharks-join-hunt-for-bok-hooker-marx-report/",
-          "source": "The Citizen"
-        },
-        {
-          "title": "Another SA side joins Marx race",
-          "url": "https://www.sarugbymag.co.za/another-sa-side-joins-marx-race/",
-          "source": "SA Rugby magazine"
-        }
-      ]
-    },
-    {
-      "geo": "ZA",
-      "title": "dp world tour",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Golf: DP World Tour to refuse LIV players in 2027 season",
-          "url": "https://www.bbc.com/sport/golf/articles/cmz7xvpgdz4yo",
-          "source": "BBC"
-        },
-        {
-          "title": "DP World Tour to deny LIV Golf players memberships for 2027 season - players must now 'make a choice'",
-          "url": "https://www.skysports.com/golf/news/13598085/dp-world-tour-to-deny-liv-golf-players-memberships-for-2027-season-players-must-now-make-a-choice",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "DP World tour issues fresh ultimatum to LIV golfers",
-          "url": "https://www.bunkered.co.uk/golf-news/dp-world-tour-ultimatum-liv-golfers/",
-          "source": "bunkered.co.uk"
-        }
-      ]
-    },
-    {
-      "geo": "US",
-      "title": "pltr",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Is It Too Late to Buy Palantir Stock?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/too-buy-palantir-stock-185000914.html",
-          "source": "Yahoo Finance"
-        },
-        {
-          "title": "Machine learning algorithm predicts Palantir stock price on October 31, 2026",
-          "url": "https://finbold.com/machine-learning-algorithm-predicts-palantir-stock-price-on-october-31-2026/",
-          "source": "Finbold"
-        },
-        {
-          "title": "Palantir's Price Tag Scared Wall Street. Why More Analysts Are Bullish.",
-          "url": "https://www.investors.com/news/technology/palantir-stock-pltr-why-wall-street-analysts-turning-bullish/",
-          "source": "Investor's Business Daily"
-        }
-      ]
-    },
-    {
-      "geo": "US",
-      "title": "asts stock",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "AST SpaceMobile Has $3.7 Billion in Liquidity and No Commercial Revenue. Here's How to Value That.",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-3-7-billion-162500739.html",
-          "source": "Yahoo Finance"
-        },
-        {
-          "title": "AST SpaceMobile gains after Deutsche Bank says the SpaceX spectrum threat is misguided (ASTS:NASDAQ)",
-          "url": "https://seekingalpha.com/news/4652027-ast-spacemobile-gains-after-deutsche-bank-says-the-spacex-spectrum-threat-is-misguided",
-          "source": "Seeking Alpha"
-        },
-        {
-          "title": "AST SpaceMobile Stock Is Down on SpaceX News—and It Shouldn’t Be",
-          "url": "https://www.barrons.com/articles/ast-spacemobile-stock-spacex-wireless-spectrum-8f51bd54",
-          "source": "Barron's"
-        }
-      ]
-    },
-    {
-      "geo": "US",
-      "title": "mrna stock",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Why Did MRNA, HUM, LITE Stocks Surge To 52-Week Highs Last Week?",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-did-mrna-hum-lite-030308934.html",
-          "source": "Yahoo Finance"
-        },
-        {
-          "title": "Moderna Stock Skyrockets on Reports of U.S. Cancer Vaccine Initiative",
-          "url": "https://www.barchart.com/story/news/5459566/moderna-stock-skyrockets-on-reports-of-u-s-cancer-vaccine-initiative",
-          "source": "Barchart.com"
-        },
-        {
-          "title": "Moderna Surges 8% as Full Melanoma Readout Nears; BioNTech Ticks Up, Pfizer Slips",
-          "url": "https://247wallst.com/investing/2026/10/05/moderna-surges-8-as-full-melanoma-readout-nears-biontech-ticks-up-pfizer-slips/",
-          "source": "24/7 Wall St."
-        }
-      ]
-    },
-    {
-      "geo": "US",
-      "title": "cmg stock",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Starbucks has explored takeover of Chipotle in restaurant megadeal",
-          "url": "https://www.ft.com/content/79cef26a-e5e9-41d0-9af2-876dc23a9a7d?syn-25a6b1a6=1",
+          "title": "China’s growing debt burden limits space for economic stimulus",
+          "url": "https://www.ft.com/content/a0ffc43a-231a-40aa-b5f9-521757830087?syn-25a6b1a6=1",
           "source": "Financial Times"
         },
         {
-          "title": "Starbucks Says It’s Not Buying Chipotle Following Speculations",
-          "url": "https://www.bloomberg.com/news/articles/2026-10-12/starbucks-says-it-s-not-buying-chipotle-following-speculations",
-          "source": "Bloomberg.com"
-        },
-        {
-          "title": "Starbucks Says It's ‘Laser-Focused’ on Existing Strategy Following Chipotle Deal Chatter",
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-08-2026/card/starbucks-says-it-is-laser-focused-on-existing-strategy-following-chipotle-deal-chatter-u607b6jnb4KrZlscwmjz",
+          "title": "Xi’s Superpower Ambitions Fuel a Dangerous Debt Spiral in China",
+          "url": "https://www.wsj.com/world/china/xis-superpower-ambitions-fuel-a-dangerous-debt-spiral-in-china-edad4f9f",
           "source": "WSJ"
+        },
+        {
+          "title": "China's debt interest costs are soaring—and growing faster than any other major budget category",
+          "url": "https://fortune.com/2026/10/11/china-debt-interest-costs-fastest-budget-category-loans-public-private-gdp-growth/",
+          "source": "Fortune"
         }
-      ]
+      ],
+      "civic": true
     },
     {
-      "geo": "US",
-      "title": "onds stock",
-      "traffic": "200+",
+      "geo": "KE",
+      "title": "declan rice",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Ondas Is Assembling A Defense Prime, Buy",
-          "url": "https://seekingalpha.com/article/4953469-ondas-stock-assembling-a-defense-prime-buy",
-          "source": "Seeking Alpha"
+          "title": "Declan Rice: Mikel Arteta says Arsenal midfielder has transitioned away from his 'lighthouse' role, so what is he?",
+          "url": "https://www.skysports.com/football/news/13598047/declan-rice-mikel-arteta-says-arsenal-midfielder-has-transitioned-away-from-his-lighthouse-role-so-what-is-he",
+          "source": "Sky Sports"
         },
         {
-          "title": "What Is The One Risk Every Ondas Investor Should Know?",
-          "url": "https://www.trefis.com/stock/onds/articles/617949/what-is-the-one-risk-every-ondas-investor-should-know/2026-10-08",
-          "source": "Trefis"
-        },
-        {
-          "title": "Ondas (NASDAQ:ONDS) Coverage Initiated by Analysts at Citizens Jmp",
-          "url": "https://www.marketbeat.com/instant-alerts/analyst-ondas-nasdaq-onds-stock-rated-market-outperform-in-new-coverage-at-citizens-jmp-2026-10-05/",
-          "source": "MarketBeat"
-        }
-      ]
-    },
-    {
-      "geo": "US",
-      "title": "xrpn",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "XRP’s next Wall Street expansion comes with an unexpected complication from Ripple",
-          "url": "https://cryptoslate.com/xrps-next-wall-street-expansion-comes-with-an-unexpected-complication-from-ripple/",
-          "source": "CryptoSlate"
-        },
-        {
-          "title": "We Asked ChatGPT Whether Evernorth's Stock Could Trade Above or Below the Value of Its XRP After Its First Week",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/11/we-asked-chatgpt-whether-evernorths-stock-could-trade-above-or-below-the-value-of-its-xrp-after-its-first-week/",
-          "source": "24/7 Wall St."
-        },
-        {
-          "title": "XRP news: SPAC tracking Ripple-linked token jumps nearly 300%",
-          "url": "https://www.coindesk.com/markets/2026/10/05/xrp-treasury-spac-surges-nearly-300-ahead-of-evernorth-merger",
-          "source": "CoinDesk"
-        }
-      ]
-    },
-    {
-      "geo": "US",
-      "title": "associated press",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Linder’s 2026-27 preseason Associated Press women’s basketball ballot",
-          "url": "http://www.thegazette.com/sports/college/iowa-hawkeyes/linder-s-2026-27-preseason-associated-press-women-s-basketball-ballot/article_5169c7c7-c4e1-4743-872e-5e236c67d115.html",
-          "source": "The Gazette"
-        },
-        {
-          "title": "Photos of NFL action from London to Seattle in Week 5",
-          "url": "https://apnews.com/photo-gallery/photos-nfl-action-london-seattle-week-5-e52783d03a7f46b8901deef3b3ae8990",
-          "source": "AP News"
-        },
-        {
-          "title": "How to watch every Sunday NFL football game during Week 5 of the 2026 season",
-          "url": "https://sports.yahoo.com/nfl/article/how-to-watch-every-sunday-nfl-football-game-during-week-5-of-the-2026-season-160410323.html",
+          "title": "Mikel Arteta Reveals Private Conversation With Declan Rice",
+          "url": "https://sports.yahoo.com/articles/mikel-arteta-reveals-private-conversation-114919013.html",
           "source": "Yahoo Sports"
+        },
+        {
+          "title": "Mikel Arteta sent Declan Rice Arsenal message after Bruno Guimaraes transfer",
+          "url": "https://www.football.london/arsenal-fc/news/bruno-guimaraes-declan-rice-arsenal-34749947",
+          "source": "Football London"
         }
       ]
     },
     {
-      "geo": "NG",
+      "geo": "KE",
+      "title": "burgos vs granada",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "El Burgos, a mantener su racha en El Plantío",
+          "url": "https://www.diariodeburgos.es/noticia/z69c02398-bf51-4a97-801c30d8cb3033c8/202610/el-burgos-a-mantener-su-racha-en-el-plantio",
+          "source": "Diario de Burgos"
+        },
+        {
+          "title": "DAZN",
+          "url": "https://www.dazn.com/es-ES/news/f%C3%BAtbol/burgos-vs-granada-segunda-division-horario-donde-ver-hoy-por-tv-online-partido-laliga-hypermotion-traves-dazn/cfevnbpn8z9t17tf1ewhgjjnf",
+          "source": "DAZN"
+        },
+        {
+          "title": "El Granada quiere darle continuidad a la segunda parte de Zubieta en El Plantío",
+          "url": "https://www.granadahoy.com/granadacf/granada-quiere-darle-continuidad-segunda_0_2008215569.html",
+          "source": "Granada Hoy"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "valladolid vs albacete",
       "traffic": "100+",
       "news": [
         {
-          "title": "Vota a los jugadores del Real Valladolid en su partido ante el Albacete",
-          "url": "https://www.elnortedecastilla.es/realvalladolid/vota-jugadores-real-valladolid-partido-ante-albacete-20261012140222-nt.html",
-          "source": "El Norte de Castilla"
+          "title": "Real Valladolid 5 - Albacete 0: resumen, goles y resultado",
+          "url": "https://as.com/futbol/segunda/real-valladolid-albacete-en-directo-laliga-hypermotion-hoy-en-vivo-f202610-d/",
+          "source": "Diario AS"
         },
         {
           "title": "Escribá desconfía del colista",
@@ -548,9 +150,9 @@
           "source": "Diario de Valladolid"
         },
         {
-          "title": "Valladolid - Albacete en directo | Última hora de LALIGA Hypermotion en vivo hoy",
-          "url": "https://www.marca.com/futbol/laliga-hypermotion/valladolid-albacete/2026/10/12/01_0102_20261012_192_950-directo.html",
-          "source": "MARCA"
+          "title": "Vota a los jugadores del Real Valladolid en su partido ante el Albacete",
+          "url": "https://www.elnortedecastilla.es/realvalladolid/vota-jugadores-real-valladolid-partido-ante-albacete-20261012140222-nt.html",
+          "source": "El Norte de Castilla"
         }
       ]
     }
@@ -567,34 +169,6 @@
     {
       "title": "kariobangi sharks fan trouble fkf",
       "why": "unsafe: 'SportPesa'"
-    },
-    {
-      "title": "torino vs udinese",
-      "why": "unsafe: 'betting'"
-    },
-    {
-      "title": "ugandan shilling",
-      "why": "unsafe: 'fire'"
-    },
-    {
-      "title": "pakhtakor vs al qadsiah",
-      "why": "unsafe: 'betting'"
-    },
-    {
-      "title": "atalanta vs venezia prediction",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "robbery",
-      "why": "unsafe: 'killed'"
-    },
-    {
-      "title": "john wayne",
-      "why": "unsafe: 'Death'"
-    },
-    {
-      "title": "fema",
-      "why": "unsafe: 'flood'"
     }
   ],
   "errors": {}

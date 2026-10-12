@@ -442,13 +442,56 @@
         "avg": 8.5,
         "note": "Excellent—'Mshahara umeingia' hits instantly, the poll is binary and divisive (comments will fight), Swahili opener owns the room. Only small lift: 'defend it below' is mild; try 'defend yourself below' for more snap."
       }
+    },
+    {
+      "id": "2026-w42-hot-1012",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Sisi wananchi",
+      "line": "Police tear-gas opposition leaders *today*. The CS vows 'tough action' on violence tomorrow. Sawa.",
+      "fact": "Oct 12: police tear-gassed DCP leaders storming a station; same day CS Kindiki vowed action on violence.",
+      "source": "Kenyans.co.ke, 'Running Battles as Police Fire Tear Gas at DCP Leaders After Storming Station', 2026-10-12; Capital FM News, 'Kindiki vows tough action against political violence sponsors', 2026-10-12",
+      "message": "Tear gas against opposition leaders, then a vow to punish political violence sponsors, same day.",
+      "photo_query": "tear gas cloud Nairobi street protest",
+      "beats": [
+        "Tear gas today. *Statement* tomorrow.",
+        "DCP leaders say police stormed in.",
+        "Kindiki vows *tough action* on sponsors.",
+        "2027 campaigns haven't even started.",
+        "Sawa, but *who* sponsors this?",
+        "Send this to your 2027 group chat."
+      ],
+      "caption": "Tear gas one day. Tough talk the next. We've seen this script before, every election season. Who's really sponsoring political violence in Kenya? Verify before you share, and send this to someone still asking.\n\n#JuaKesho #SautiYaMwananchi",
+      "bg": "usiku",
+      "publish_at": "2026-10-12T20:33:00+03:00",
+      "hot": true,
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 9,
+        "fresh": 6,
+        "voice": 8,
+        "craft": 7,
+        "picture": 8,
+        "hold": 7,
+        "avg": 7.5,
+        "note": "The irony lands hard, but 'who sponsors this?' deflates into a generic election-season complaint—sharpen it with a specific detail (a name, a pattern, a number) that makes the hypocrisy undeniable, not just suspected."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1012-photo.jpg",
+      "photo_credit": "Photo: Tyler Merbler from USA / Wikimedia Commons, CC BY 2.0",
+      "reel": true
     }
   ],
   "scripts": {
-    "radio": "Habari za hii wiki, familia! Ni mimi Jua, tukiwa pamoja kama kawaida.\n\nKwanza, pesa. NSSF deductions zitaendelea kupanda kila Februari mpaka 2028 - kwa hivyo panga bajeti yako mapema, si mshtuko wa ghafla. Halafu HELB - loan ya juu haijabadilika tangu 2017, wakati gharama za campus zinapanda kila mwaka. Hesabu haiendani.\n\nKuhusu ile hoja ya 'degrees zinasababisha ukosefu wa kazi' - ukweli ni kwamba tatizo si quality ya elimu, ni ukosefu wa formal jobs za kutosha. Tusiwalaumu vijana waliosoma.\n\nCHP stipend ya Sh4,000 - bado haijatolewa kikamilifu miaka kadhaa baada ya kuanzishwa kote nchini. Tunasubiri utekelezaji kamili.\n\nUpande wa spotlight - OPay, kampuni ya fintech kutoka Nigeria, imepata kibali cha kuorodheshwa kwenye soko la hisa la Nigeria baada ya IPO ya US. Hii inaonyesha fintech za Afrika zinaweza kufika mbali.\n\nNa kwa cover story wiki hii - tunaangalia Kenya ya baadaye: jinsi utakavyosafiri na mabasi ya umeme, kulipa, kufanya kazi na AI, kupata afya kupitia teleconsultation, na kushughulikia serikali kupitia akaunti moja ya kidijitali - Maisha Namba ikiwa msingi wake.\n\nMwisho, glasspoll yetu - Wakenya wamegawanyika: wengine wanasema weka akiba kwanza, wengine wanasema tumia kwanza. Wewe uko wapi?\n\nHiyo ndiyo wiki yetu. Tuonane wiki ijayo!\n\nKwa Kiswahili kwa ufupi: Wiki hii tumeongea kuhusu makato ya NSSF yanayopanda, mkopo wa HELB usiobadilika, stipend ya CHP isiyotimizwa kikamilifu, na jinsi Kenya ya kesho itakavyokuwa - kuanzia usafiri wa mabasi ya umeme hadi huduma za serikali kwenye simu moja.",
-    "voice_note": "Eh sasa! Umesikia? NSSF itaendelea kukatwa zaidi kila February mpaka 2028 - hii si drama, ni sheria. So panga pesa yako mapema.\n\nHalafu HELB bado iko pale pale tangu 2017 lakini fees zinapanda. Poa sana.\n\nKuhusu hiyo stori ya 'degree haina kazi' - stop. Tatizo si shahada yako, ni kwamba kazi za formal hazitoshi. Usijilaumu.\n\nCHP stipend ya elfu nne bado haijafika kila mahali - miaka mingi baadaye. Tunafuatilia.\n\nNa kesho - fikiria Kenya ambapo unasafiri na basi la umeme, unalipa na simu, unafanya kazi ukiongoza AI, unaona daktari kwa video, na unashughulikia serikali bila foleni - yote kwa akaunti moja. Hiyo ni kesho inayokuja.\n\nSawa basi, tuendelee kujengana. Jua out.",
-    "sms": "Usiibiwe: NSSF, HELB au benki hawatakuomba PIN/OTP kwa simu au SMS. Mtu akiuliza - kata simu, usijibu, ripoti kwa 999.",
-    "reels": "Hii ni Kesho Kutwa - kesho inakuja haraka.\n\nUtasafiri na basi la umeme Nairobi.\n\nMaisha Namba itakuwa ID yako moja, ikibadilisha mfumo uliovurugika.\n\nKazi ya freelance? Si kufanya kazi mwenyewe - ni kuongoza AI inayofanya kazi.\n\nAfya yako itaanzia na teleconsultation, si foleni hospitalini.\n\nNa huduma za serikali - zote kwenye akaunti moja ya kidijitali, si foleni za ofisi.\n\nKesho haiko mbali - iko hapa. Jua Kesho."
+    "radio": "Karibu, this is Jua, and you're listening to Jua Kesho. Let's talk about something that happened this week that deserves a serious conversation, not just reaction.\n\nThis morning, tear gas was used against opposition leaders during a demonstration. By evening, the same government issued a strong statement, vowing to punish sponsors of political violence. Same day, two very different messages.\n\nNow, nobody here is against peace. Nobody here wants chaos on our streets. But we have to ask a simple, honest question: is justice applied the same way to everyone, every time? Or does it depend on who's marching, and who's speaking?\n\nBecause if violence is wrong, it should be wrong no matter who commits it — whether it's a crowd throwing stones, or security forces using force against people exercising their constitutional right to assemble.\n\nAs young Kenyans, our job isn't to pick a side blindly. Our job is to watch closely, ask hard questions, and hold everyone — government and opposition alike — to the same standard. That's how we protect what little trust remains in our institutions.\n\nLet's keep the conversation going. Share your thoughts, stay engaged, stay informed.\n\nKwa ufupi kwa Kiswahili: Wiki hii, mabomba ya machozi yalitumika dhidi ya viongozi wa upinzani asubuhi, kisha jioni hiyo hiyo serikali ikaahidi kuadhibu wafadhili wa vurugu za kisiasa. Swali ni: je, haki inatumika sawa kwa wote? Kama vijana, wajibu wetu ni kuuliza maswali na kudai usawa kwa kila mtu.",
+    "voice_note": "Hey fam, it's Jua. Quick one for you today. This week, something happened that's got people talking — tear gas on opposition leaders in the morning, and by evening, the same government promising to deal firmly with sponsors of political violence. Same day, two messages.\n\nWe're not here to pick sides, but we are here to ask: why does accountability always seem to land differently depending on who's marching, who's speaking, who's funding what? That inconsistency is exactly what erodes trust.\n\nHere's the thing — peace is non-negotiable, but so is fairness. If violence is wrong, it's wrong regardless of who's doing it or who it's done to. Let's keep watching, keep asking, keep each other informed. That's how we protect our democracy, one honest conversation at a time.\n\nShare this with someone who needs to hear it. Tutaonana, Kesho Kutwa.",
+    "sms": "Usiibiwe: When leaders condemn violence but use force unevenly, ask why. Equal justice means equal rules for everyone, every time.",
+    "reels": "Morning: tear gas on opposition leaders. Evening: a vow to punish violence sponsors. Same day. Two standards?\n\nKesho Kutwa is asking the question today's leaders won't.\n\nJustice can't be selective. If peace matters, it must matter for everyone — not just when it's convenient.\n\nStay awake, stay informed. This is Kesho Kutwa."
   },
-  "spend_usd": 0.5577
+  "spend_usd": 0.6994
 }
