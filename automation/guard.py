@@ -109,6 +109,8 @@ BANNED_TOPICS = {
                   r"scammers|animals|lazy|stupid|dogs|monkeys|dirty)|(all|every) (nigerians?|south africans?|ugandans?|"
                   r"tanzanians?) (are|is) (a )?(scammers?|thieves?|criminals?)|yahoo boys? (all|every))\b",
 }
+SWAHILI_FILLERS = ["wueh", "aki", "bana", "mambo ni mengi", "hii nchi", "kwani ni kesho", "manze", "si ndio",
+                   "very normal country", "we move"]
 # Words and habits that make copy read machine-written. Kenyans scroll past anything that smells of AI.
 NEVER_WORDS = {"leverage", "seamless", "game-changer", "game changer", "cutting-edge", "revolutionary", "delve",
                "passionate", "unlock", "tapestry", "testament to", "in today's", "it's not just", "navigate the",
@@ -293,6 +295,10 @@ def check(post: dict) -> Report:
                                         r"2027|deserves?|should lead|best (leader|candidate))", poll_text, re.I):
         rep.errors.append("candidate-preference poll: we never run 'who will you vote for / who will win' polls; "
                           "ask about an issue or a leader's record, and report professional polls with their method")
+    # stock Swahili and slang fillers are the loudest "AI wrote this" tell: none of them, ever
+    fillers = [f for f in SWAHILI_FILLERS if re.search(rf"(?<![\w]){re.escape(f)}(?![\w])", low)]
+    if fillers:
+        rep.errors.append(f"filler slang reads generated: {', '.join(fillers)} (say it in plain English)")
     if tpl == "tazama":   # someone else's clip: only with a recorded right to use it
         if post.get("rights_kind") not in {"permission", "own", "quote"}:
             rep.errors.append("clip without a recorded right to use it (permission / ours / short news quote)")
