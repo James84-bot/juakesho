@@ -75,8 +75,35 @@ def _licence_ok(lic: str) -> bool:
     return bool(OK_LICENCES.match(lic)) and not re.search(r"[\s-](sa|nc|nd)[\s-]", low)
 
 
+STOP = {"and", "with", "on", "in", "the", "a", "an", "of", "at", "for", "to", "from", "by", "their", "his", "her",
+        "our", "your", "showing", "using", "holding", "office", "desk", "photo", "image", "close", "up", "view"}
+
+
+def _query_ladder(query: str) -> list[str]:
+    """Commons search matches every word, so long writer queries often find nothing: try shorter versions too."""
+    words = [w for w in re.findall(r"[A-Za-z][\w-]+", query) if w.lower() not in STOP]
+    place = next((w for w in words if LOCAL.search(w)), "")
+    core = [w for w in words if w != place]
+    # never shorter than two content words: a lone "Kenya" or "hands" finds a photo that says nothing
+    ladder = [query, " ".join(core[:3] + ([place] if place else [])), " ".join(core[:2]) if len(core) >= 2 else ""]
+    out = []
+    for q in ladder:
+        q = q.strip()
+        if q and q.lower() not in {x.lower() for x in out}:
+            out.append(q)
+    return out
+
+
 def commons(query: str, pid: str) -> tuple[bytes, dict] | None:
     """A real photo from Wikimedia Commons that we may use in a design with a credit (CC0 / PD / CC BY)."""
+    for q in _query_ladder(query):
+        got = _commons_once(q, pid)
+        if got:
+            return got
+    return None
+
+
+def _commons_once(query: str, pid: str) -> tuple[bytes, dict] | None:
     q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": f"{query} filetype:bitmap",
                                 "gsrnamespace": 6, "gsrlimit": 25, "prop": "imageinfo",
                                 "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600, "format": "json"})
