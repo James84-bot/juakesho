@@ -444,7 +444,7 @@ SPEND = {"usd": 0.0, "calls": 0}
 
 
 def critic_model() -> str:
-    return (os.environ.get("JUA_CRITIC_MODEL") or "").strip() or (GITHUB_CRITIC if provider() == "github" else CRITIC_MODEL)
+    return (os.environ.get("JUA_CRITIC_MODEL") or "").strip() or (GEMINI_CRITIC if provider() == "gemini" else CRITIC_MODEL)
 
 
 def budget() -> float:
@@ -455,8 +455,8 @@ def budget() -> float:
 
 
 def _price(model: str) -> tuple[float, float]:
-    if provider() == "github":
-        return (0.0, 0.0)   # GitHub Models free tier
+    if provider() == "gemini":
+        return (0.0, 0.0)   # Gemini free tier
     return next((v for k, v in PRICES.items() if k in model), max(PRICES.values()))
 
 
@@ -464,84 +464,96 @@ def can_afford(est_in: int, est_out: int, model: str | None = None) -> bool:
     """Optional passes (critic, rewrites, repairs) only run while the week stays under JUA_WEEKLY_BUDGET_USD."""
     pin, pout = _price(model or model_id())
     ok = SPEND["usd"] + (est_in * pin + est_out * pout) / 1e6 <= budget()
-    if provider() == "github":
-        ok = SPEND["calls"] < GITHUB_LIMITS["calls"] - 2   # keep calls in hand for repairs
+    if provider() == "gemini":
+        ok = SPEND["calls"] < GEMINI_LIMITS["calls"] - 2   # keep calls in hand for repairs
     if not ok:
         print(f"  budget: skipping an optional pass (spent ${SPEND['usd']:.3f} of ${budget():.2f})")
     return ok
 
 
-GITHUB_URL = "https://models.github.ai/inference/chat/completions"
-GITHUB_MODELS = ["openai/gpt-4.1", "openai/gpt-4o"]   # tried in order; set JUA_MODEL to pin one
-GITHUB_CRITIC = "openai/gpt-4o-mini"                   # low-tier model: 150 free requests/day
-GITHUB_LIMITS = {"out": 4000, "calls": 40, "pause": 6.5}  # free tier: 4,000 tokens out, 50 calls/day, 10/min
+# The free writer: Google's Gemini API free tier (a free key from aistudio.google.com, no card).
+# GitHub Models was retired on 30 July 2026, so it is gone from here.
+GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+GEMINI_MODELS = ["gemini-flash-latest", "gemini-flash-lite-latest"]   # tried in order; set JUA_GEMINI_MODEL to pin one
+GEMINI_CRITIC = "gemini-flash-lite-latest"
+GEMINI_LIMITS = {"out": 16000, "calls": 18, "pause": 13.0}   # free tier: a few requests a minute, a small daily quota
 
 
 def provider() -> str:
-    """'github' (free, default: GitHub Models through the Actions token) or 'anthropic' (paid, best Kenyan voice)."""
-    return "anthropic" if (os.environ.get("JUA_PROVIDER") or "").strip().lower() == "anthropic" else "github"
+    """'gemini' (free), or 'anthropic' (paid, best Kenyan voice; weekly budget cap).
+    JUA_PROVIDER picks one; otherwise whichever key is present, Gemini first."""
+    chosen = (os.environ.get("JUA_PROVIDER") or "").strip().lower()
+    if chosen in {"gemini", "anthropic"}:
+        return chosen
+    if os.environ.get("GEMINI_API_KEY", "").strip():
+        return "gemini"
+    if os.environ.get("ANTHROPIC_API_KEY", "").strip():
+        return "anthropic"
+    return "gemini"   # fails with a clear "set GEMINI_API_KEY" message
 
 
 def call_claude(system: str, user: str, max_tokens: int = 12000, model: str | None = None) -> str:
-    """The one way the system talks to an AI. Routes to the free provider unless Anthropic is chosen."""
-    if provider() == "github":
-        return _github(system, user, min(max_tokens, GITHUB_LIMITS["out"]), model)
+    """The one way the system talks to an AI (named for history; routes to the chosen provider)."""
+    if provider() == "gemini":
+        return _gemini(system, user, min(max_tokens, GEMINI_LIMITS["out"]), model)
     return _anthropic(system, user, max_tokens, model)
 
 
-def _github(system: str, user: str, max_tokens: int, model: str | None) -> str:
-    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_MODELS_TOKEN")
-    if not token:
-        raise RuntimeError("GITHUB_TOKEN is not set (in Actions it's automatic; locally use a token with models:read)")
-    if SPEND["calls"] >= GITHUB_LIMITS["calls"]:
+def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
+    key = os.environ.get("GEMINI_API_KEY", "").strip()
+    if not key:
+        raise RuntimeError("No AI writer key: add the free GEMINI_API_KEY secret (aistudio.google.com/apikey), "
+                           "or ANTHROPIC_API_KEY for Claude")
+    if SPEND["calls"] >= GEMINI_LIMITS["calls"]:
         raise RuntimeError("free-tier call cap reached for this run")
-    pinned = (os.environ.get("JUA_MODEL") or "").strip()
-    models = [model] if model and model != model_id() else ([pinned] if pinned and "/" in pinned else GITHUB_MODELS)
+    pinned = (os.environ.get("JUA_GEMINI_MODEL") or "").strip()
+    models = [model] if model and model.startswith("gemini") else ([pinned] if pinned else GEMINI_MODELS)
     if SPEND["calls"]:
-        time.sleep(GITHUB_LIMITS["pause"])   # stay under 10 requests a minute
+        time.sleep(GEMINI_LIMITS["pause"])   # stay under the free per-minute limit
     last = None
     for m in models:
-        body = json.dumps({"model": m, "max_tokens": max_tokens, "temperature": 0.8,
-                           "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}).encode()
-        req = urllib.request.Request(GITHUB_URL, data=body, method="POST", headers={
-            "Authorization": f"Bearer {token}", "Content-Type": "application/json", "Accept": "application/json"})
+        body = json.dumps({"systemInstruction": {"parts": [{"text": system}]},
+                           "contents": [{"role": "user", "parts": [{"text": user}]}],
+                           "generationConfig": {"maxOutputTokens": max_tokens, "temperature": 0.8}}).encode()
+        req = urllib.request.Request(GEMINI_URL.format(model=m), data=body, method="POST", headers={
+            "x-goog-api-key": key, "Content-Type": "application/json", "Accept": "application/json"})
         for attempt in range(4):
             try:
                 with urllib.request.urlopen(req, timeout=300) as r:
-                    raw, ctype, status = r.read(), r.headers.get("Content-Type", ""), r.status
-                if r.headers.get("Content-Encoding") == "gzip":
-                    import gzip
-                    raw = gzip.decompress(raw)
+                    raw, ctype = r.read(), r.headers.get("Content-Type", "")
                 try:
                     data = json.loads(raw)
                 except ValueError:
-                    # not JSON: say exactly what came back, then retry (a proxy page or an empty reply)
-                    last = RuntimeError(f"GitHub Models ({m}) returned {status} {ctype or 'no content type'}, "
-                                        f"not JSON: {raw[:300].decode(errors='replace')!r}")
+                    last = RuntimeError(f"Gemini ({m}) returned {ctype or 'no content type'}, not JSON: "
+                                        f"{raw[:300].decode(errors='replace')!r}")
                     if attempt < 3:
                         time.sleep(10 * 2 ** attempt)
                         continue
-                    break   # try the next model
+                    break
                 SPEND["calls"] += 1
-                choice = (data.get("choices") or [{}])[0]
-                if choice.get("finish_reason") == "length":
+                cand = (data.get("candidates") or [{}])[0]
+                if cand.get("finishReason") == "MAX_TOKENS":
                     raise RuntimeError("free model: reply was cut off (batch too big)")
-                return (choice.get("message") or {}).get("content") or ""
+                text = "".join(p.get("text", "") for p in (cand.get("content") or {}).get("parts", []) if not p.get("thought"))
+                if not text:
+                    reason = cand.get("finishReason") or (data.get("promptFeedback") or {}).get("blockReason") or "empty reply"
+                    raise RuntimeError(f"Gemini ({m}) gave no text: {reason}")
+                return text
             except urllib.error.HTTPError as e:
                 detail = e.read().decode(errors="replace")[:300]
                 if e.code in (429, 500, 502, 503, 504) and attempt < 3:
                     time.sleep(float(e.headers.get("retry-after") or 0) or 20 * 2 ** attempt)
                     continue
-                last = RuntimeError(f"GitHub Models {e.code} ({m}): {detail}")
-                if e.code in (400, 404) and ("model" in detail.lower()):
-                    break   # this model isn't available: try the next one
+                last = RuntimeError(f"Gemini {e.code} ({m}): {detail}")
+                if e.code in (400, 404, 429) and ("model" in detail.lower() or e.code == 429):
+                    break   # this model isn't available (or its free quota is used up): try the next one
                 raise last from e
             except (urllib.error.URLError, TimeoutError) as e:
                 if attempt < 3:
                     time.sleep(15 * 2 ** attempt)
                     continue
-                raise RuntimeError(f"GitHub Models unreachable: {e}") from e
-    raise last or RuntimeError("no GitHub model available")
+                raise RuntimeError(f"Gemini unreachable: {e}") from e
+    raise last or RuntimeError("no Gemini model available")
 
 
 def _anthropic(system: str, user: str, max_tokens: int = 12000, model: str | None = None) -> str:
@@ -706,7 +718,7 @@ def elevate(week_label: str, slots: list[dict], lanes: dict, posts: list[dict]) 
             part = weak[i:i + 3]
             part_ask = ask.split("\n\nPosts:\n")[0] + "\n\nPosts:\n" + json.dumps(part, ensure_ascii=False)
             try:
-                got += extract_json(call_claude(system, part_ask, max_tokens=4000)).get("posts", [])
+                got += extract_json(call_claude(system, part_ask, max_tokens=9000)).get("posts", [])
             except (ValueError, RuntimeError) as e:
                 print(f"  rewrite batch skipped: {e}")
         rewritten = _merge([s for s in slots if s["id"] in {p["id"] for p in got}], got)
@@ -762,9 +774,9 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
     else:
         examples = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"][:3]
         result = {"posts": [], "scripts": {}}
-        for batch in batches(slots):
+        for batch in batches(slots, size=6 if provider() == "gemini" else 4):
             system, user = build_prompt(week_label, batch, lanes, examples, scripts=False)
-            result["posts"] += extract_json(call_claude(system, user, max_tokens=4000)).get("posts", [])
+            result["posts"] += extract_json(call_claude(system, user, max_tokens=9000)).get("posts", [])
         result["scripts"] = write_scripts(week_label, result["posts"])
 
     posts = _merge(slots, result.get("posts", []))

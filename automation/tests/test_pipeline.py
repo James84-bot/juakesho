@@ -497,12 +497,13 @@ class QualitySystemTests(unittest.TestCase):
 
 
 class FreeProviderTests(unittest.TestCase):
-    """GitHub Models: free by default, through the Actions token; small batches fit the free tier."""
+    """Gemini free tier: used when its key is set; small batches fit the free quota."""
 
     def setUp(self):
         import draft
         self.draft = draft
-        self.patches = [mock.patch.dict(os.environ, {"GITHUB_TOKEN": "gh-test", "JUA_PROVIDER": "", "JUA_MODEL": ""}),
+        self.patches = [mock.patch.dict(os.environ, {"GEMINI_API_KEY": "gm-test", "ANTHROPIC_API_KEY": "a", "JUA_PROVIDER": "",
+                                                     "JUA_GEMINI_MODEL": ""}),
                         mock.patch.object(draft.time, "sleep", lambda s: None),
                         mock.patch.dict(draft.SPEND, {"usd": 0.0, "calls": 0})]
         for p in self.patches:
@@ -513,45 +514,62 @@ class FreeProviderTests(unittest.TestCase):
             p.stop()
 
     @staticmethod
-    def _reply(text="ok", finish="stop"):
+    def _reply(text="ok", finish="STOP"):
         resp = mock.MagicMock()
-        resp.read.return_value = json.dumps({"choices": [{"message": {"content": text}, "finish_reason": finish}]}).encode()
+        resp.read.return_value = json.dumps({"candidates": [{"content": {"parts": [{"text": text}]}, "finishReason": finish}]}).encode()
+        resp.headers = {"Content-Type": "application/json"}
         resp.__enter__.return_value = resp
         return resp
 
-    def test_free_by_default_with_the_actions_token(self):
-        self.assertEqual(self.draft.provider(), "github")
+    def test_free_writer_when_its_key_is_set(self):
+        self.assertEqual(self.draft.provider(), "gemini")
         seen = []
         def fake(req, timeout):
-            seen.append((req.full_url, req.get_header("Authorization"), json.loads(req.data)))
+            seen.append((req.full_url, req.get_header("X-goog-api-key"), json.loads(req.data)))
             return self._reply("hi")
         with mock.patch.object(self.draft.urllib.request, "urlopen", fake):
-            self.assertEqual(self.draft.call_claude("sys", "user", max_tokens=12000), "hi")
-        url, auth, body = seen[0]
-        self.assertEqual(url, self.draft.GITHUB_URL)
-        self.assertEqual(auth, "Bearer gh-test")
-        self.assertEqual(body["max_tokens"], 4000)                       # clamped to the free tier
-        self.assertEqual(body["messages"][0], {"role": "system", "content": "sys"})
+            self.assertEqual(self.draft.call_claude("sys", "user", max_tokens=99999), "hi")
+        url, key, body = seen[0]
+        self.assertEqual(url, self.draft.GEMINI_URL.format(model=self.draft.GEMINI_MODELS[0]))
+        self.assertEqual(key, "gm-test")
+        self.assertEqual(body["generationConfig"]["maxOutputTokens"], self.draft.GEMINI_LIMITS["out"])
+        self.assertEqual(body["systemInstruction"], {"parts": [{"text": "sys"}]})
         self.assertEqual(self.draft._price("anything"), (0.0, 0.0))      # costs nothing
+
+    def test_provider_choice(self):
+        with mock.patch.dict(os.environ, {"GEMINI_API_KEY": ""}):
+            self.assertEqual(self.draft.provider(), "anthropic")          # only the Claude key: Claude
+        with mock.patch.dict(os.environ, {"JUA_PROVIDER": "anthropic"}):
+            self.assertEqual(self.draft.provider(), "anthropic")          # forced
+        with mock.patch.dict(os.environ, {"GEMINI_API_KEY": "", "ANTHROPIC_API_KEY": ""}):
+            with self.assertRaisesRegex(RuntimeError, "GEMINI_API_KEY"):
+                self.draft.call_claude("s", "u")                          # no key: a clear message
 
     def test_falls_back_when_a_model_is_unavailable(self):
         import io, urllib.error
         tried = []
         def fake(req, timeout):
-            m = json.loads(req.data)["model"]
+            m = req.full_url.split("/models/")[1].split(":")[0]
             tried.append(m)
-            if m == self.draft.GITHUB_MODELS[0]:
-                raise urllib.error.HTTPError("u", 404, "nf", {}, io.BytesIO(b'{"error":"Unknown model"}'))
+            if m == self.draft.GEMINI_MODELS[0]:
+                raise urllib.error.HTTPError("u", 404, "nf", {}, io.BytesIO(b'{"error":"model not found"}'))
             return self._reply("from fallback")
         with mock.patch.object(self.draft.urllib.request, "urlopen", fake):
             self.assertEqual(self.draft.call_claude("s", "u"), "from fallback")
-        self.assertEqual(tried, self.draft.GITHUB_MODELS[:2])
+        self.assertEqual(tried, self.draft.GEMINI_MODELS[:2])
 
-    def test_cut_off_reply_and_call_cap(self):
-        with mock.patch.object(self.draft.urllib.request, "urlopen", lambda req, timeout: self._reply("{", "length")):
+    def test_cut_off_reply_non_json_and_call_cap(self):
+        with mock.patch.object(self.draft.urllib.request, "urlopen", lambda req, timeout: self._reply("{", "MAX_TOKENS")):
             with self.assertRaisesRegex(RuntimeError, "cut off"):
                 self.draft.call_claude("s", "u")
-        with mock.patch.dict(self.draft.SPEND, {"calls": self.draft.GITHUB_LIMITS["calls"]}):
+        bad = mock.MagicMock()
+        bad.read.return_value = b"OK\r\n"
+        bad.headers = {"Content-Type": "text/plain"}
+        bad.__enter__.return_value = bad
+        with mock.patch.object(self.draft.urllib.request, "urlopen", lambda req, timeout: bad):
+            with self.assertRaisesRegex(RuntimeError, "not JSON"):
+                self.draft.call_claude("s", "u")
+        with mock.patch.dict(self.draft.SPEND, {"calls": self.draft.GEMINI_LIMITS["calls"]}):
             with self.assertRaisesRegex(RuntimeError, "call cap"):
                 self.draft.call_claude("s", "u")
 

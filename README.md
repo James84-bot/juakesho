@@ -33,7 +33,7 @@ automation/                  The self-running content engine
   content/music/             Tracks by artists who gave permission (see README there)
   content/people/            Photos of people (celebrated or on the public record), with rights
   guard.py                   Clean + brand + length + source checks; no name-calling or campaigning
-  draft.py                   AI writer (free GitHub Models; Claude optional): trend playbook, civic rules, self-repair
+  draft.py                   AI writer (free Gemini key, or Claude with a weekly budget cap): trend playbook, civic rules, self-repair
                              + the critic: scores every post (incl. picture + clarity), rewrites under 7.5
                              + a weekly budget cap on AI spend (JUA_WEEKLY_BUDGET_USD, default $0.50)
   trends.py                  Daily Google Trends (KE, NG, ZA, US), politics/tragedy/betting filtered out
@@ -61,8 +61,9 @@ python render.py --sheet                   # → exports/posts/ + contact sheet
 4. **Meta:** switch Instagram to a Business/Creator account linked to your Facebook Page. Create a Meta app and get a
    long-lived **Page access token** with `instagram_content_publish`, `pages_manage_posts`, `pages_read_engagement`.
    Note your Page id and Instagram user id.
-5. **AI writer: free.** Nothing to do: GitHub Models writes the drafts through the workflow's own token.
-   Optional upgrade (paid, best Kenyan voice): repo variable `JUA_PROVIDER=anthropic` + secret `ANTHROPIC_API_KEY`.
+5. **AI writer.** Free: create a key at aistudio.google.com/apikey and add it as secret `GEMINI_API_KEY`.
+   Paid, best Kenyan voice: secret `ANTHROPIC_API_KEY` (used when there's no Gemini key, or with variable
+   `JUA_PROVIDER=anthropic`), capped at $0.50 a week.
    **Recommended (free):** a Pexels key (pexels.com/api) as secret `PEXELS_API_KEY`. The design is photo-led;
    without it, posts fall back to type-only layouts.
 6. **Secrets:** in GitHub → Settings → Secrets and variables → Actions, add everything in `automation/.env.example`.

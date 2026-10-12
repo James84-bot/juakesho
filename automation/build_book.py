@@ -95,7 +95,7 @@ DAY_90 = [
 
 FLOW = [
     ("Sun 17:00", "Plan", "calendar.json picks each day's series, audience lane and background."),
-    ("", "Draft", "A free AI writer (GitHub Models) writes the week in our voice, with a photo search for each post."),
+    ("", "Draft", "The AI writer (free Gemini key, or Claude with a weekly cap) writes the week in our voice, with a photo search for each post."),
     ("", "Guard", "Clean, grown-up, sourced, no name-calling, no campaigning. Failures go back for repair."),
     ("", "Critic", "A tough-editor pass scores every post; weak ones are rewritten."),
     ("", "Design", "Real photo, headline fitted with the real font, then visual QA on every pixel of text."),
@@ -359,7 +359,7 @@ def build_body() -> str:
       <li><b>The guard</b><span>Clean and grown-up, lengths, sources, licensed photos, no name-calling, no campaigning, no tribe, no betting.</span></li>
       <li><b>The critic</b><span>A tough-editor pass scores hook, sendability, clarity, freshness, voice, craft, picture and hold. Under 7.5 is rewritten.</span></li>
       <li><b>Visual QA</b><span>Every render is measured: overflow, collisions, anything off the canvas, and every line of text checked for contrast against the real pixels behind it.</span></li>
-      <li><b>Cost-free</b><span>The writer runs free on GitHub Models with the workflow's own token. Photos from Pexels are free. Claude is optional, capped at $0.50 a week.</span></li>
+      <li><b>Cost-free</b><span>The writer runs free on a Gemini API key. Photos come free from Wikimedia Commons and Pexels. Claude is optional, capped at $0.50 a week.</span></li>
     </ol>
   </section>
 
