@@ -168,6 +168,16 @@ class ApprovalTests(TempWeeks):
         self.assertEqual({posts["c-1-r2"]["group"], posts["c-2-r2"]["group"]}, {"c-r2"})
         self.assertEqual(posts["p1-r2"]["status"], "drafted")
 
+    def test_send_reels_only_waiting_videos(self):
+        self.week([{"id": "v1", "status": "awaiting", "publish_at": "2026-10-05T07:15:00+03:00"},
+                   {"id": "v2", "status": "approved", "publish_at": "2026-10-05T07:15:00+03:00"},
+                   {"id": "v3", "status": "awaiting", "publish_at": "2026-10-05T07:15:00+03:00"}])
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(pl, "EXPORTS", Path(d)):
+            (Path(d) / "2026-W41").mkdir()
+            for i in ("v1", "v2"):
+                (Path(d) / "2026-W41" / f"{i}.mp4").write_bytes(b"x")
+            self.assertEqual(pl.send_reels("2026-W41", dry_run=True), 1)
+
 
 class PublishTests(TempWeeks):
     @property

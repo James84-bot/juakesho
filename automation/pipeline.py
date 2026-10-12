@@ -349,6 +349,25 @@ def rephoto(label: str) -> list[str]:
     return changed
 
 
+def send_reels(label: str, dry_run: bool = False) -> int:
+    """Re-sends this week's Reels that still wait for your decision, each with its ✅/❌/🎵 buttons."""
+    data = load_week(label)
+    chat = "dry-run" if dry_run else need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
+    sent = 0
+    for p in data["posts"]:
+        video = EXPORTS / label / f"{p['id']}.mp4"
+        if p["status"] != "awaiting" or p.get("n") or not video.exists():
+            continue
+        if dry_run:
+            log(f"[dry-run] would send reel {p['id']}")
+        else:
+            tg("sendVideo", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML", "supports_streaming": "true",
+                             "reply_markup": _buttons(f"{label}|{p['id']}", reel=True)}, {"video": video})
+        sent += 1
+    log(f"reels sent: {sent}")
+    return sent
+
+
 def held_summary(data: dict) -> str | None:
     held = [p for p in data["posts"] if p["status"] == "needs_human"]
     if not held:
@@ -893,7 +912,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -979,6 +998,8 @@ def _main(argv: list[str] | None = None) -> int:
             log(f"comments skipped: {e}")
     if a.command == "samples":
         send_samples(dry_run=a.dry_run)
+    if a.command == "reels":
+        send_reels(a.week or current_week_label(ahead=0), dry_run=a.dry_run)
     if a.command == "photocheck":   # searches this week's photo queries again and explains each result (state/photos.log)
         import photos
         wk = a.week or current_week_label(ahead=0)
