@@ -292,6 +292,18 @@ WHERE KENYANS ARE (research, 2026) AND WHAT WINS THERE
 - English by default. A full Kiswahili post only when the story itself is in Kiswahili (a quote, a rally line);
   then write it the way a native speaker would, not translated English.
 
+THE MESSAGE AND THE BEST ACTION (every post)
+- A Kenyan must get it in one look: what happened, why it touches their pocket, rights, safety or vote, and what
+  to do about it. Plain words, no assumed knowledge: say "MPs voted to raise fuel tax", not "the Finance Act".
+- `message`: the one takeaway in a sentence a boda rider would repeat.
+- `action`: the ONE best thing to do now, concrete, legal and peaceful, with where and how:
+  "Check you're registered: SMS your ID number to 70000", "Call your MP before Thursday's vote: find them on
+  parliament.go.ke", "Send your view to the Finance Committee by Friday: cnaclerk@parliament.go.ke",
+  "Report the number to 333", "Ask your MCA at the next public participation", "Share this with someone who
+  pays the levy". Only real channels you can source; never invent a number, email or deadline. If there is truly
+  nothing to do, the action is the question to ask or the person to tell.
+- The action goes in the caption's last line and the Reel's last beat.
+
 URGENT, NOT PARAGRAPHS
 - Urgent, never shouty: no capitals for emphasis, no "!!", no BREAKING/URGENT/SHOCKING, no 🚨. Calm voice, hard numbers,
   a deadline, a contrast. The red marker is our only volume knob.
@@ -517,9 +529,9 @@ EXAMPLES OF FINISHED POSTS (style reference only)
 {scripts_block}
 
 Return ONLY JSON, no commentary:
-Every post also needs "message" (the one takeaway, max 120 chars), "beats" (the Reel script: 3-6 lines, max 8 words each)
-and, almost always, "photo_query" (a real scene).
-{{"posts": [{{"id": "...", "template": "...", "lane": "...", "message": "...", "beats": ["...", "..."], "photo_query": "...", "caption": "...", "source": "...(when needed)", "...fields": "..."}}],
+Every post also needs "message" (the one takeaway, max 120 chars), "action" (the one thing to do, max 90 chars),
+"beats" (the Reel script: 3-6 lines, max 8 words each, the LAST beat is the action) and, almost always, "photo_query" (a real scene).
+{{"posts": [{{"id": "...", "template": "...", "lane": "...", "message": "...", "action": "...", "beats": ["...", "..."], "photo_query": "...", "caption": "...", "source": "...(when needed)", "...fields": "..."}}],
  "scripts": {{"radio": "...", "voice_note": "...", "sms": "...", "reels": "..."}}}}"""
     return system, user
 
@@ -724,6 +736,7 @@ MOCK_SAMPLES = {
         "reality": "Rehearsal sample, not real data: four of thirty planned ward health centres are open, says the county's own report.",
         "proof": ["The county budget funded 30 centres.", "Less than a fifth of that money was spent.", "Four centres had opened by June."],
         "ask": "Where are the other 26?", "source": "Rehearsal sample: not real data", "message": "A promised health centre in every ward is stalled at 4 of 30.",
+        "action": "Ask your MCA at the next public participation where the other 26 are",
         "caption": "Promise Tracker (rehearsal sample). Share this with someone in your ward.\n\n#JuaKesho",
     },
     "kumbuka": {
@@ -731,6 +744,7 @@ MOCK_SAMPLES = {
         "facts": ["Sample fact one, attributed to its source.", "Sample fact two, attributed to its source."],
         "status": "Rehearsal sample, not real data: no one has been charged.", "ask": "Hatutasahau.",
         "source": "Rehearsal sample: not real data", "message": "Rehearsal sample.", "photo_query": "candles at night",
+        "action": "Share this with someone who was there, so the date isn't forgotten",
         "caption": "Hatutasahau (rehearsal sample). Share this.\n\n#JuaKesho",
     },
     "scorecard": {
@@ -740,6 +754,7 @@ MOCK_SAMPLES = {
                    {"test": "Divisive statements", "result": "unclear", "note": "Rehearsal sample: one disputed clip."}],
         "verdict": "Rehearsal sample: judge the record, then decide.", "source": "Rehearsal sample: not real data",
         "message": "Rehearsal sample.", "photo_query": "Kenya parliament building",
+        "action": "Read their record on parliament.go.ke before you vote",
         "caption": "The Chapter Six Test (rehearsal sample). Share this.\n\n#JuaKesho",
     },
 }
@@ -779,10 +794,12 @@ CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio.
   decorative scene scores low; a concrete, real scene that IS the message scores high)
 - demand: is this a story Kenyans are on right now (high in WHAT KENYA IS ON), or a deadline/anniversary that
   matters? A topic nobody is talking about scores low however well it is written
+- action: does a Kenyan know exactly what to do next (where, how, by when), and is it real, legal and peaceful?
+  No action, a vague one ("stay informed") or an invented channel scores low
 - hold: would they read or watch to the end? do the `beats` build like a short video (hook, receipt, stakes,
   sting, action)? any paragraph-length text scores low
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
-{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n,
+{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n,
              "note": "the single most important fix, in one sentence"}]}"""
 
 
@@ -809,7 +826,7 @@ def critique(posts: list[dict]) -> dict[str, dict]:
             print(f"  critic batch skipped: {e}")
     out = {}
     for s in scores:
-        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold", "demand")
+        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold", "demand", "action")
         vals = [float(s[k]) for k in keys if isinstance(s.get(k), (int, float))] or [0.0]
         out[s.get("id")] = {**{k: s.get(k) for k in keys}, "avg": round(sum(vals) / len(vals), 1), "note": s.get("note", "")}
     return out

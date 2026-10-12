@@ -69,5 +69,20 @@ class Calm(unittest.TestCase):
         self.assertEqual(guard._shouting(["IEBC, KRA and the MCA all said no. KSh 2bn gone."]), "")
 
 
+class Action(unittest.TestCase):
+    def test_every_new_post_says_what_to_do(self):
+        import pipeline
+        post = {"id": "w-a", "template": "sauti", "kicker": "Taxpayers", "line": "We pay *4.25%* in levies.",
+                "fact": "1.5% housing levy and 2.75% SHIF, Finance Act 2023.", "source": "https://kra.go.ke",
+                "photo_query": "payslip Kenya", "message": "We pay levies every month.", "caption": "What do we get? #JuaKesho"}
+        self.assertTrue(any("no `action`" in e for e in guard.check(post).errors))
+        self.assertTrue(any("vague" in e for e in guard.check({**post, "action": "Stay informed."}).errors))
+        ok = {**post, "action": "Ask your MP what the levy built: parliament.go.ke"}
+        self.assertFalse([e for e in guard.check(ok).errors if "action" in e])
+        cap = pipeline.caption_for(ok)
+        self.assertIn("👉 Ask your MP", cap)
+        self.assertTrue(cap.rstrip().endswith("#JuaKesho"))   # the action sits above the hashtags
+
+
 if __name__ == "__main__":
     unittest.main()

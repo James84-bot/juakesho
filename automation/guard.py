@@ -326,6 +326,15 @@ def check(post: dict) -> Report:
                                         r"2027|deserves?|should lead|best (leader|candidate))", poll_text, re.I):
         rep.errors.append("candidate-preference poll: we never run 'who will you vote for / who will win' polls; "
                           "ask about an issue or a leader's record, and report professional polls with their method")
+    # every new post tells Kenyans the one best thing to do (launch posts predate the rule: they carry no `message`)
+    if "message" in post and not post.get("n") and tpl not in {"glasspoll", "cover", "tazama"}:
+        act = str(post.get("action") or "").strip()
+        if not act:
+            rep.errors.append("no `action`: tell Kenyans the one best thing to do (where, how, by when)")
+        elif len(act) > 90:
+            rep.errors.append(f"'action' is {len(act)} chars (max 90)")
+        elif re.fullmatch(r"(stay (informed|woke|alert)|be aware|share your thoughts|let us know)\.?", act, re.I):
+            rep.errors.append("`action` is vague: give the concrete step (where, how, by when)")
     # urgent, never shouty: capitals, stacked "!", BREAKING-style labels and alarm emojis read as clickbait
     loud = _shouting([text, str(post.get("caption", ""))])
     if loud:
