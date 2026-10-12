@@ -276,6 +276,7 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         "icon_uri": (LOGO / {"jua": "icon-red.svg", "shuka": "icon-red.svg", "maziwa": "icon-paper.svg"}.get(bg_name, "icon-night.svg")).as_uri(),
         "motion": motion, "reel": reel,
         "dateline": _dateline(post),
+        "context_line": " · ".join(str(post[k]).strip() for k in ("where", "when") if str(post.get(k) or "").strip()),
         "symbol": "",   # the illustrated symbols are retired from the designs (kept in data for the writer)
     }
     ink = post.get("ink") or {}

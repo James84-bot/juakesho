@@ -105,3 +105,15 @@ class Fairness(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class WhoWhereWhen(unittest.TestCase):
+    def test_civic_posts_say_who_where_when(self):
+        post = {"id": "w-w", "template": "sauti", "kicker": "Taxpayers", "line": "The state owes *Sh7.35bn*.",
+                "fact": "State agencies owe Kenya Power Sh7.35bn, Business Daily.", "source": "https://x",
+                "photo_query": "power lines Kenya", "message": "m", "action": "Ask your MP: parliament.go.ke",
+                "caption": "c #KenyansAreAsking"}
+        errs = guard.check(post).errors
+        self.assertTrue(all(any(f"no `{f}`" in e for e in errs) for f in ("who", "where", "when")))
+        ok = {**post, "who": "National Treasury", "where": "National", "when": "12 Oct 2026"}
+        self.assertFalse([e for e in guard.check(ok).errors if "`who`" in e or "`where`" in e or "`when`" in e])
