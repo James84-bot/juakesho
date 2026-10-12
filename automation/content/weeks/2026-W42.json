@@ -3,25 +3,25 @@
   "created": "2026-10-12T16:31:22.980571+03:00",
   "posts": [
     {
-      "id": "2026-w42-d1-sauti-r3",
+      "id": "2026-w42-d1-sauti-r4",
       "template": "sauti",
       "lane": "young_pro",
-      "kicker": "Sisi wananchi",
-      "line": "We top up tokens before midnight so lights stay on. The *state* owes Kenya Power Sh7.35bn and hasn't blinked.",
-      "fact": "State agencies owe Kenya Power Sh7.35bn in unpaid bills, Business Daily reports, Oct 2026.",
-      "message": "Government owes Kenya Power Sh7.35bn while ordinary Kenyans pay their power bills on time.",
-      "photo_query": "Kenya Power prepaid meter Nairobi",
-      "source": "Business Daily, 'State's unpaid electricity bills to Kenya Power hit Sh7.35bn', Oct 12 2026",
-      "beats": [
-        "We top up tokens before *midnight*.",
-        "State owes Kenya Power *Sh7.35bn*.",
-        "No blackout for government's own bill.",
-        "We pay on time. They don't.",
-        "Where is the *money*?",
-        "Tag someone who pays their token."
-      ],
-      "caption": "We queue to top up tokens before midnight so the lights don't go off. Meanwhile the state owes Kenya Power Sh7.35bn and nothing's been rationed for that.\n\nHave you ever had your power threatened while government bills stack up? Tell us.\n\n#KenyaPower #JuaKesho",
       "bg": "usiku",
+      "kicker": "Sisi wananchi",
+      "line": "We top up our tokens on time every month. The government's own power bill? *Sh7.35bn* overdue.",
+      "fact": "State agencies owe Kenya Power Sh7.35bn in unpaid electricity bills as of October 2026.",
+      "message": "Kenyans pay electricity on time; the state owes Kenya Power Sh7.35bn unpaid, Oct 2026.",
+      "photo_query": "Kenya Power meter Nairobi",
+      "source": "Business Daily, 'State's unpaid electricity bills to Kenya Power hit Sh7.35bn', 12 Oct 2026",
+      "trend": "Kenya Power unpaid government bills",
+      "beats": [
+        "We pay our *tokens* on time.",
+        "Government owes Kenya Power *Sh7.35bn*.",
+        "No disconnection notice for them.",
+        "Try defaulting as a mwananchi.",
+        "Where is the money? 👇"
+      ],
+      "caption": "Tokens zinaisha kila mwezi, tunalipa kwa wakati. Serikali inadaiwa Sh7.35bn na Kenya Power. Wewe umewahi kukatiwa stima kwa kuchelewa?\n\n#KenyaPower #JuaKesho",
       "publish_at": "2026-10-12T07:30:00+03:00",
       "status": "awaiting",
       "guard": {
@@ -30,38 +30,49 @@
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d1-sauti-r3-photo.jpg",
-      "photo_credit": "Photo: Press Information Department / Wikimedia Commons, Public domain",
+      "critic": {
+        "hook": 8,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "avg": 8.1,
+        "note": "Hook lands hard (we vs them hypocrisy). Tighten the caption—drop the hashtags and end with the sting: 'Try defaulting as a mwananchi' is the send moment."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d1-sauti-r4-photo.jpg",
+      "photo_credit": "Photo: Ninara / Wikimedia Commons, CC BY 2.0",
       "reel": true
     },
     {
-      "id": "2026-w42-d2-straight-r4",
+      "id": "2026-w42-d2-straight-r5",
       "template": "straight",
       "lane": "campus",
-      "message": "HELB loans are recoverable debt, not free money; default it and you land on the CRB blacklist.",
-      "claim": "HELB loan ni bure, hatuwezi lipa, serikali itasamehe tu.",
-      "who": "Viral claim on campus WhatsApp groups, 2026",
-      "claim_source": "Screenshots circulating in university WhatsApp and TikTok groups, Sept 2026 (unverifiable origin)",
-      "verdict": "false",
-      "truth": "HELB loans are legally recoverable debt, not a grant",
-      "proof": [
-        "HELB Act, 2023 allows recovery via employer salary deductions (check-off)",
-        "Defaulters get listed with Credit Reference Bureaus (CRB), hurting future credit",
-        "HELB can pursue legal action against long-term defaulters"
-      ],
-      "pride": "Paying on time beats a bad credit score.",
-      "source": "HELB Act, 2023; Higher Education Loans Board, helb.co.ke (loan recovery and CRB listing policy)",
-      "photo_query": "university students Kenya",
-      "beats": [
-        "HELB loan is *not* free money.",
-        "It's a debt you must repay.",
-        "Unpaid loans go to CRB.",
-        "Bad credit follows you for years.",
-        "Pay small, pay early. Protect your future.",
-        "Share this before someone defaults."
-      ],
-      "caption": "HELB si bursary, ni mkopo. Usijidanganye: lipa mapema, epuke CRB na masaibu ya baadaye.\n\nUmewahi lipa HELB yako? Share hii na comrade anayeplan kutolipa.\n\n#HELB #SetItStraight #JuaKesho",
       "bg": "usiku",
+      "claim": "M-Pesa was invented in Britain. Kenya just got lucky.",
+      "who": "a viral TikTok comment, 2026",
+      "claim_source": "TikTok comment thread under a Kenyan fintech explainer video, 2026 (searchable: #MPesaHistory)",
+      "verdict": "missing_context",
+      "truth": "M-Pesa was built, tested and launched first in Kenya, 2007.",
+      "proof": [
+        "Piloted in Kenya 2005-2006 by Safaricom, Vodafone and UK DFID funding.",
+        "Launched commercially in Kenya in March 2007, the world's first mobile money service.",
+        "Other countries adopted the model only after Kenya's success."
+      ],
+      "pride": "Kenya didn't copy mobile money. The world did.",
+      "source": "GSMA Mobile for Development, 'M-Pesa: the story so far'; Vodafone Group official M-Pesa history page; Safaricom PLC annual reports",
+      "message": "Claim: M-Pesa is British. Truth: it was built, tested and launched first in Kenya, 2007.",
+      "photo_query": "M-Pesa agent Kenya",
+      "beats": [
+        "Claim: M-Pesa made in *Britain*.",
+        "Truth: built and tested in Kenya.",
+        "Launched here first, *March 2007*.",
+        "World copied Kenya, not reverse.",
+        "Verify before you share."
+      ],
+      "caption": "'M-Pesa was invented in Britain.' Heard that one? Verify before you share: it was built, tested and launched first in Kenya, 2007. Tag the person still saying otherwise.\n\n#MPesa #JuaKesho",
       "publish_at": "2026-10-13T12:45:00+03:00",
       "status": "awaiting",
       "guard": {
@@ -69,142 +80,50 @@
         "warnings": []
       },
       "critic": {
-        "hook": 8,
+        "hook": 7,
         "send": 8,
-        "clarity": 9,
+        "clarity": 8,
         "fresh": 7,
-        "voice": 8,
-        "craft": 8,
-        "picture": 6,
-        "hold": 8,
-        "avg": 7.8,
-        "note": "The photo needs to show a *specific moment of consequence* (e.g., a student checking their phone after getting a CRB rejection for a loan) not just generic campus faces—that's where the real grab lives."
-      },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d2-straight-r4-photo.jpg",
-      "photo_credit": "Photo: University of the Fraser Valley / Wikimedia Commons, CC BY 2.0",
-      "ink": {
-        "1": "#F8F7F6"
-      },
-      "reel": true
-    },
-    {
-      "id": "2026-w42-d3-promise-r3",
-      "template": "promise",
-      "lane": "campus",
-      "message": "Ruto's promise that no student misses uni for fees is only partly kept; the new funding model has locked many out.",
-      "who": "William Ruto, President of Kenya",
-      "promise": "No qualified student will miss university for lack of fees under the new funding model",
-      "said": "New university funding model launch, 2023",
-      "verdict": "partly",
-      "reality": "Band placement errors and delayed disbursements have locked out thousands of qualified students",
-      "proof": [
-        "Ministry of Education acknowledged band misclassification errors in 2023/2024 placement",
-        "Universities reported fee arrears and stalled HELB disbursements delaying registration"
-      ],
-      "ask": "Where is the fix for students still locked out?",
-      "source": "Ministry of Education statements, 2023-2024; Business Daily and Daily Nation reporting on the university funding model",
-      "photo_query": "university students Kenya",
-      "beats": [
-        "Ruto promised: no student locked out.",
-        "New funding model launched *2023*.",
-        "Reality: wrong bands, delayed money.",
-        "Comrades stuck without fees registered.",
-        "Promise kept? *Partly*, say the records.",
-        "Ask your MP: when's the fix?"
-      ],
-      "caption": "Ruto alisema hakuna comrade atakayekosa chuo kwa ada. Je, bado tunasubiri?\n\nTag mwanafunzi aliyekwama na funding model.\n\n#PromiseTracker #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-14T18:30:00+03:00",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 6,
-        "send": 6,
-        "clarity": 7,
-        "fresh": 6,
         "voice": 7,
         "craft": 6,
         "picture": 6,
-        "hold": 5,
-        "avg": 6.1,
-        "note": "The beat 'Promise kept? *Partly*, say the records' is weak—lead with the concrete betrayal (locked-out students) not the meta-judgment; show *who's stuck* and *why* in the first two lines, not the apology."
+        "hold": 7,
+        "avg": 7.0,
+        "note": "Fact-check posts are harder to make viral—this one works but feels slightly preachy. 'World copied Kenya' is the payoff; lead with that energy, not the debunk frame. M-Pesa agent photo is generic; need a Kenyan on their phone actually using it, 2007 energy."
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d3-promise-r3-photo.jpg",
-      "photo_credit": "Photo: University of the Fraser Valley / Wikimedia Commons, CC BY 2.0",
-      "ink": {
-        "1": "#F8F7F6"
-      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d2-straight-r5-photo.jpg",
+      "photo_credit": "Photo: Ninara / Wikimedia Commons, CC BY 2.0",
       "reel": true
     },
     {
-      "id": "2026-w42-d4-sauti-r3",
-      "template": "sauti",
+      "id": "2026-w42-d3-promise-r4",
+      "template": "promise",
       "lane": "campus",
-      "message": "The state owes Kenya Power Sh7.35bn while ordinary Kenyans never miss a token payment.",
-      "kicker": "Gen Z wanasema",
-      "line": "Serikali haijalipa Kenya Power *Sh7.35bn*, lakini sisi tuko na blackout hostel kila wiki.",
-      "fact": "The national government owes Kenya Power Sh7.35 billion in unpaid electricity bills, per 2026 reports.",
-      "source": "Business Daily, 'State's unpaid electricity bills to Kenya Power hit Sh7.35bn', Oct 2026",
-      "photo_query": "Kenya Power transmission lines",
-      "beats": [
-        "Hostel lights off again? *Normal*.",
-        "State owes Kenya Power *Sh7.35bn*.",
-        "We still pay our tokens on time.",
-        "Guess who gets disconnected first?",
-        "Not us. The state's bill is bigger.",
-        "Tag your MP: when do they pay?"
-      ],
-      "caption": "Hostel giza tena? Serikali inadai Kenya Power billions, sisi tunalipa token kila siku. Nani anakatwa umeme kwanza?\n\nTag MP wako.\n\n#KenyaPower #JuaKesho",
       "bg": "usiku",
-      "publish_at": "2026-10-15T19:30:00+03:00",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 9,
-        "send": 9,
-        "clarity": 9,
-        "fresh": 8,
-        "voice": 9,
-        "craft": 9,
-        "picture": 7,
-        "hold": 8,
-        "avg": 8.5,
-        "note": "Exceptional—this is the template done right: a real unfair fact, dry KOT sarcasm, and a clear ask. Only lift: show a *student in a dark hostel* or *Kenya Power notice on a pole in a student area*, not just transmission lines."
-      },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d4-sauti-r3-photo.jpg",
-      "photo_credit": "Photo: CT Cooper / Wikimedia, CC BY 3.0",
-      "reel": true
-    },
-    {
-      "id": "2026-w42-d5-spotlight-r3",
-      "template": "spotlight",
-      "lane": "diaspora",
-      "kind": "Startup",
-      "name": "Gjenge Makers",
-      "country": "Kenya",
-      "what": "Turns recycled plastic waste into paving bricks stronger than concrete",
-      "why": "Cuts plastic waste and builds affordable, durable pavements for Kenyan streets",
-      "cta": "Follow Gjenge Makers and share their story",
-      "message": "Kenyan startup Gjenge Makers turns plastic waste into bricks stronger than concrete.",
-      "beats": [
-        "Nairobi's plastic waste becomes *bricks*.",
-        "Gjenge Makers recycles waste into pavers.",
-        "Bricks are *stronger* than concrete.",
-        "Founder won UN Young Champion *2020*.",
-        "Africa building, not just complaining.",
-        "Follow and share their work."
+      "who": "William Ruto, President of Kenya",
+      "promise": "We will deliver 250,000 affordable housing units every year.",
+      "said": "Kenya Kwanza manifesto, 2022",
+      "verdict": "stalled",
+      "measure": "~60k vs 250k",
+      "reality": "State Department for Housing: ~60,000 units ongoing nationwide as of 2024, far below the 250k/year target.",
+      "proof": [
+        "Target: 250,000 affordable housing units every year, 2022 manifesto.",
+        "State Department for Housing: about 60,000 units ongoing nationwide, 2024.",
+        "Housing levy (1.5% of gross pay) funds the program since 2023."
       ],
-      "photo_query": "Nairobi plastic recycling bricks factory",
-      "source": "UNEP Young Champions of the Earth 2020, Nzambi Matee: https://www.unep.org/youngchampions/winners/2020/nzambi-matee",
-      "caption": "Nairobi's plastic waste is becoming pavements. Gjenge Makers, founded by Kenyan engineer Nzambi Matee, turns recycled plastic into bricks stronger than concrete. She won UN Young Champion of the Earth for it. Follow their work and see how far this scales.\n\n#PutUsOn #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-16T17:00:00+03:00",
+      "ask": "Where are the other 190,000 houses?",
+      "source": "Kenya Kwanza Manifesto 2022 (housing pledge); State Department for Housing project status updates, 2024; Affordable Housing Act, 2024",
+      "message": "Promise: 250,000 houses a year. Reality: about 60,000 units nationwide, still counting.",
+      "photo_query": "affordable housing construction Kenya",
+      "beats": [
+        "Promise: *250,000* houses every year.",
+        "Said in the 2022 manifesto.",
+        "Reality: *60,000* units so far.",
+        "We pay the levy monthly.",
+        "Where are the other houses?"
+      ],
+      "caption": "2022: '250,000 houses a year.' 2026: ~60,000 units nationwide, still counting. Tunalipa levy ya housing kila mwezi. Where is the money?\n\n#HousingLevy #JuaKesho",
+      "publish_at": "2026-10-14T18:30:00+03:00",
       "status": "awaiting",
       "guard": {
         "errors": [],
@@ -212,35 +131,118 @@
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d5-spotlight-r3-photo.jpg",
-      "photo_credit": "Photo: Andy Li / Wikimedia Commons, CC0",
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "avg": 8.2,
+        "note": "Strongest post here—the math is devastating and relatable (we're paying levy). Photo needs a half-built site or empty plot, not generic construction, to show the scale of the gap visually."
+      },
       "reel": true
     },
     {
-      "id": "2026-w42-d6-cover-r3",
+      "id": "2026-w42-d4-sauti-r4",
+      "template": "sauti",
+      "lane": "campus",
+      "bg": "usiku",
+      "kicker": "Sisi wanafunzi",
+      "line": "The man running HELB has never needed a *loan*. We're still refreshing the portal for ours.",
+      "fact": "HELB disburses over Sh19 billion yearly to 300,000+ students (HELB Annual Report, 2023/24).",
+      "message": "HELB's boss has never taken a loan himself; students are still waiting on theirs.",
+      "photo_query": "university students Kenya",
+      "source": "Higher Education Loans Board (HELB) Annual Report 2023/2024, helb.co.ke",
+      "trend": "HELB CEO loan discipline",
+      "beats": [
+        "HELB boss has never needed a *loan*.",
+        "He walks 19 floors daily.",
+        "We're still refreshing the portal.",
+        "Sh19bn+ reaches 300k+ students yearly.",
+        "Check your HELB status today."
+      ],
+      "caption": "HELB boss amewahi kukopa loan? Hapana, anapanda ngazi 19 badala ya lift. Sisi tungependa HELB yetu ipande kwenye account yetu. Umecheck status yako leo?\n\n#HELB #JuaKesho",
+      "publish_at": "2026-10-15T19:30:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 7,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 6,
+        "craft": 5,
+        "picture": 6,
+        "hold": 5,
+        "avg": 5.6,
+        "note": "The 'never needed a loan' angle is thin and unclear—does the CEO's personal discipline matter to students waiting? Reframe as: 'HELB CEO never borrowed. We're still waiting.' Ditch the 19 floors gag; focus on portal delays and actual numbers (how many are stuck waiting?)."
+      },
+      "reel": true
+    },
+    {
+      "id": "2026-w42-d5-spotlight-r4",
+      "template": "spotlight",
+      "lane": "diaspora",
+      "kind": "Startup",
+      "name": "M-KOPA",
+      "country": "Kenya",
+      "what": "Pay-as-you-go solar power and smartphones for off-grid customers, no bank account needed",
+      "why": "Over 5 million customers across Kenya, Uganda, Nigeria and Ghana now power their homes",
+      "cta": "Follow M-KOPA. Share with someone off-grid.",
+      "message": "A Kenyan startup, M-KOPA, now powers over 5 million homes across Africa with pay-as-you-go solar.",
+      "photo_query": "M-KOPA solar panel Kenya",
+      "source": "M-KOPA official impact data, m-kopa.com/about (2024)",
+      "beats": [
+        "A Kenyan startup *powering* Africa.",
+        "M-KOPA sells solar, phones, pay-as-you-go.",
+        "Over *5 million* customers, four countries.",
+        "No bank account needed, just your phone.",
+        "Follow M-KOPA. Share with someone off-grid."
+      ],
+      "caption": "Started in Nairobi. Now lighting up homes in 4 countries, no bank account needed. Built by Africans, for Africans. Follow @M-KOPA_Africa and tag someone off-grid.\n\n#PutUsOn #JuaKesho",
+      "bg": "usiku",
+      "publish_at": "2026-10-16T17:00:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "reel": true
+    },
+    {
+      "id": "2026-w42-d6-cover-r4",
       "template": "cover",
       "lane": "creator",
       "series": "Kesho Kutwa",
-      "kicker": "Siasa ya kesho",
+      "kicker": "What's coming before 2027",
       "lines": [
-        "Uchaguzi 2027",
-        "Mipaka mipya",
-        "Bajeti inakuja",
-        "Jiandikishe!"
+        "2027 inakuja",
+        "Mipaka bado",
+        "Mchujo unakuja",
+        "Bajeti Feb 15"
       ],
       "highlight": 0,
-      "message": "Five things in Kenyan politics are moving right now, before 2027.",
+      "message": "Five things quietly moving Kenya toward 2027, and what to do about each one now.",
       "beats": [
-        "Five changes coming before *2027*.",
-        "Some start now, not later.",
-        "Swipe to see what hits you.",
-        "Kesho Kutwa: the week ahead."
+        "2027 is *closer* than you think.",
+        "A date is already fixed in law.",
+        "Your ward's borders may be wrong.",
+        "Your party's calendar decides your ballot.",
+        "Swipe before kesho becomes leo."
       ],
-      "photo_query": "Kenya National Assembly building",
-      "caption": "2027 haiko mbali kama unavyodhani. Tumekusanya mambo 5 yanayoamuliwa sasa hivi. Swipe uone.\n\n#KeshoKutwa #JuaKesho",
+      "photo_query": "IEBC headquarters Nairobi",
+      "caption": "Kesho Kutwa: five dates and deadlines already shaping 2027, laid out plainly. Swipe through, then tell us which one you didn't know about.\n\n#Kesho2027 #JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
+      "group": "2026-w42-d6-cover-r4",
       "status": "awaiting",
       "guard": {
         "errors": [],
@@ -248,253 +250,187 @@
           "caption has no send/share/save call: sends and saves drive reach",
           "contains a year, % or amount with no `source`"
         ]
-      },
-      "critic": {
-        "hook": 5,
-        "send": 4,
-        "clarity": 5,
-        "fresh": 4,
-        "voice": 6,
-        "craft": 5,
-        "picture": 5,
-        "hold": 4,
-        "avg": 4.8,
-        "note": "This is a generic teaser carousel with no real point—drop the 'five changes' mystery-box format and lead with *one* concrete, urgent thing happening *right now* (e.g., 'Registration for 2027 voters closes [date]—hii ni time yako') so they know why to swipe."
       }
     },
     {
-      "id": "2026-w42-d6-kesho-1-r3",
+      "id": "2026-w42-d6-kesho-1-r4",
       "template": "kesho",
       "lane": "creator",
-      "headline": "Kura ya 2027 ina tarehe rasmi",
-      "leo": "Katiba inasema uchaguzi mkuu hufanyika Jumanne ya pili ya Agosti.",
-      "kesho": "Hiyo ni Agosti 10, 2027: chini ya miaka miwili kutoka sasa.",
-      "anza": "Weka tarehe. Anza kufuatilia rekodi za wagombea wanaopatikana sasa.",
+      "headline": "2027 General Election: the date is already law",
+      "leo": "The Constitution fixes general elections on the second Tuesday of August, every five years.",
+      "kesho": "The 2027 election for President, MPs, Governors and MCAs falls in August 2027, no surprise about it.",
+      "anza": "Check your voter registration status today at verify.iebc.or.ke.",
       "n": 1,
       "total": 5,
-      "source": "Constitution of Kenya, 2010, Article 101(1)",
-      "message": "Kenya's next General Election is fixed by law for August 10, 2027.",
+      "message": "Kenya's 2027 election date is fixed by the Constitution: second Tuesday of August.",
       "beats": [
-        "Kura ya 2027 ina tarehe rasmi.",
-        "*Agosti 10, 2027* ndio siku.",
-        "Chini ya miaka miwili kutoka sasa.",
-        "Anza kuangalia rekodi za wagombea."
-      ],
-      "photo_query": "Kenyan voters queue election",
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "no caption yet"
-        ]
-      },
-      "critic": {
-        "hook": 6,
-        "send": 5,
-        "clarity": 8,
-        "fresh": 5,
-        "voice": 6,
-        "craft": 7,
-        "picture": 4,
-        "hold": 6,
-        "avg": 5.9,
-        "note": "Election dates are public knowledge; reframe around *why this matters now* (candidate vetting, early endorsements, strategy prep) rather than just stating the date."
-      }
-    },
-    {
-      "id": "2026-w42-d6-kesho-2-r3",
-      "template": "kesho",
-      "lane": "creator",
-      "headline": "Umejiandikisha kupiga kura 2027?",
-      "leo": "IEBC inaendelea kuandikisha wapiga kura kila siku ya kazi, mwaka mzima.",
-      "kesho": "Bila kujiandikisha, huwezi kupiga kura mwaka 2027, haijalishi unasemaje.",
-      "anza": "Tembelea tovuti ya IEBC au ofisi ya Huduma Centre kuangalia hali yako.",
-      "n": 2,
-      "total": 5,
-      "source": "IEBC continuous voter registration, iebc.or.ke",
-      "message": "Voter registration in Kenya is ongoing: check your status before 2027.",
-      "beats": [
-        "Umejiandikisha kupiga kura?",
-        "IEBC inasajili wapiga kura *kila siku*.",
-        "Bila usajili, huwezi kupiga kura.",
-        "Angalia hali yako leo, si kesho."
+        "Mark your calendar *now*.",
+        "Second Tuesday of August, every five years.",
+        "That's the law, not a rumour.",
+        "No registration, no vote in 2027.",
+        "Check your status at verify.iebc.or.ke."
       ],
       "photo_query": "IEBC voter registration Kenya",
+      "source": "Constitution of Kenya 2010, Art. 101(1) and Art. 136(2)(a)",
+      "caption": "2027 is already scheduled by the Constitution. The only question is whether you'll be on the register. Check yourself today.\n\n#Kesho2027 #JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
+      "group": "2026-w42-d6-cover-r4",
       "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
-          "no caption yet"
+          "caption has no send/share/save call: sends and saves drive reach"
         ]
-      },
-      "critic": {
-        "hook": 8,
-        "send": 8,
-        "clarity": 9,
-        "fresh": 6,
-        "voice": 7,
-        "craft": 8,
-        "picture": 5,
-        "hold": 7,
-        "avg": 7.2,
-        "note": "Strong post; add one concrete pain point (\"locked out because you changed counties\" or \"your name on wrong list\") to make urgency visceral, not just procedural."
       }
     },
     {
-      "id": "2026-w42-d6-kesho-3-r3",
+      "id": "2026-w42-d6-kesho-2-r4",
       "template": "kesho",
       "lane": "creator",
-      "headline": "Jimbo lako linaweza kubadilika",
-      "leo": "Katiba inataka IEBC ipitie mipaka ya majimbo na kata kila miaka 8-12.",
-      "kesho": "Jimbo au kata yako inaweza kuungana au kugawanyika kabla ya 2027.",
-      "anza": "Fuatilia matangazo ya IEBC ya mikutano ya maoni ya umma kaunti yako.",
+      "headline": "Your ward's boundaries are overdue for review",
+      "leo": "The Constitution requires IEBC to review constituency and ward boundaries every 8 to 12 years.",
+      "kesho": "The last review was in 2012. Some wards have far more voters, so your vote may weigh less.",
+      "anza": "Ask your MCA or IEBC when the next boundary review happens, before 2027 nominations close.",
+      "n": 2,
+      "total": 5,
+      "message": "Kenya's constituency and ward boundaries are overdue for review, and that affects how much your vote counts.",
+      "beats": [
+        "Some wards are *way* bigger than others.",
+        "Boundaries due for review every 8-12 years.",
+        "Last review: 2012.",
+        "Overdue, and nobody's rushing it.",
+        "Ask IEBC when the next one comes."
+      ],
+      "photo_query": "Kenya constituency map",
+      "source": "Constitution of Kenya 2010, Art. 89(2)",
+      "caption": "Overdue boundaries mean unequal votes. This one's been sitting since 2012. Tag your MCA and ask what's happening.\n\n#Kesho2027 #JuaKesho",
+      "bg": "usiku",
+      "publish_at": "2026-10-17T11:00:00+03:00",
+      "group": "2026-w42-d6-cover-r4",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      }
+    },
+    {
+      "id": "2026-w42-d6-kesho-3-r4",
+      "template": "kesho",
+      "lane": "creator",
+      "headline": "Party primaries decide who's even on your ballot",
+      "leo": "Political parties must hold primaries to pick candidates before IEBC's nomination deadline.",
+      "kesho": "Miss your party's primary, however popular you are on the ground, you simply can't contest.",
+      "anza": "Ask your party's branch office for the 2027 primaries calendar once IEBC sets the timeline.",
       "n": 3,
       "total": 5,
-      "source": "Constitution of Kenya, 2010, Article 89(2)",
-      "message": "IEBC's constituency and ward boundary review could change your seat before 2027.",
+      "message": "Party primaries, not just popularity, decide who gets on your 2027 ballot.",
       "beats": [
-        "Jimbo lako linaweza kubadilika.",
-        "Mipaka yapitiwa kila *miaka 8-12*.",
-        "Kata au jimbo laweza kuungana.",
-        "Fuatilia mikutano ya maoni karibu nawe."
+        "Popular doesn't mean *on the ballot*.",
+        "Primaries happen before nomination day.",
+        "Miss it, you're locked out.",
+        "The calendar isn't public yet.",
+        "Ask your party's branch office now."
       ],
-      "photo_query": "IEBC headquarters Nairobi",
+      "photo_query": "political rally Nairobi Kenya",
+      "source": "Political Parties Act, 2011 (as amended), ss. 27-28",
+      "caption": "Before the ballot, there's the primary. Know your party's calendar before it's too late.\n\n#Kesho2027 #JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
+      "group": "2026-w42-d6-cover-r4",
       "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
-          "no caption yet"
+          "caption has no send/share/save call: sends and saves drive reach"
         ]
-      },
-      "critic": {
-        "hook": 7,
-        "send": 6,
-        "clarity": 6,
-        "fresh": 7,
-        "voice": 6,
-        "craft": 6,
-        "picture": 3,
-        "hold": 5,
-        "avg": 5.8,
-        "note": "Boundary changes are real but abstract; lead with a *real example* (\"Kibra split into 3 wards\" or \"Nairobi added 2 seats\") so people instantly know if their area is affected."
       }
     },
     {
-      "id": "2026-w42-d6-kesho-4-r3",
+      "id": "2026-w42-d6-kesho-4-r4",
       "template": "kesho",
       "lane": "creator",
-      "headline": "Bajeti ya kesho inaandikwa leo",
-      "leo": "Sheria inataka Hazina iwasilishe Budget Policy Statement bungeni ifikapo Februari 15.",
-      "kesho": "Hii ndio huamua mwelekeo wa ushuru kabla ya Finance Bill ijayo.",
-      "anza": "Soma BPS kwenye treasury.go.ke na fuata mijadala bungeni inapoanza.",
+      "headline": "Feb 15: Treasury's budget plan lands in Parliament",
+      "leo": "Treasury must table the Budget Policy Statement in Parliament by Feb 15 each year.",
+      "kesho": "This document sets next year's spending priorities, months before the Finance Bill even exists.",
+      "anza": "Read the BPS when it's tabled and ask your MP what it means for your county's allocation.",
       "n": 4,
       "total": 5,
-      "source": "Public Finance Management Act, 2012, s.25",
-      "message": "Kenya's tax direction for next year gets decided in February, not June.",
+      "message": "Kenya's spending priorities are set by law each February 15, before any Finance Bill.",
       "beats": [
-        "Bajeti ya kesho inaandikwa leo.",
-        "BPS yafaa kuwa tayari *Februari 15*.",
-        "Hapa ndipo ushuru unapoamuliwa.",
-        "Soma BPS kabla Finance Bill ijaje."
+        "The budget starts *before* the Finance Bill.",
+        "Treasury must table it by Feb 15.",
+        "It sets next year's priorities.",
+        "Few of us ever read it.",
+        "Ask your MP what it means for you."
       ],
-      "photo_query": "National Treasury building Nairobi",
+      "photo_query": "National Treasury Building Nairobi",
+      "source": "Public Finance Management Act, 2012, s. 25(1)",
+      "caption": "Budget season starts on paper months before you feel it on your payslip. Feb 15 is the day to watch.\n\n#JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
+      "group": "2026-w42-d6-cover-r4",
       "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
-          "no caption yet"
+          "caption has no send/share/save call: sends and saves drive reach"
         ]
-      },
-      "critic": {
-        "hook": 5,
-        "send": 4,
-        "clarity": 7,
-        "fresh": 4,
-        "voice": 5,
-        "craft": 6,
-        "picture": 2,
-        "hold": 4,
-        "avg": 4.6,
-        "note": "Budget policy is insider-track content; most 22-year-olds won't DM this; reframe as \"petrol, school fees, hospital visits—where your money goes\" with specific budget line items, not parliamentary process."
       }
     },
     {
-      "id": "2026-w42-d6-kesho-5-r3",
+      "id": "2026-w42-d6-kesho-5-r4",
       "template": "kesho",
       "lane": "creator",
-      "headline": "Vyama vinaunda miungano ya 2027",
-      "leo": "Viongozi wanaendelea kutafuta uungwaji mkono mikoani kabla ya miungano rasmi.",
-      "kesho": "Muungano wowote lazima usajiliwe na Msajili wa Vyama vya Siasa kabla ya kura.",
-      "anza": "Fuatilia ni nani ameungana na nani kwenye tovuti ya ORPP.",
+      "headline": "The Promise Tracker for 2027 starts now, not in 2027",
+      "leo": "Leaders are already making promises in Parliament, at rallies and in early campaign talk.",
+      "kesho": "By election time, we'll have a record: what was said, what was done, with receipts attached.",
+      "anza": "Send us a promise you've heard this week. We'll track it and show you what happens next.",
       "n": 5,
       "total": 5,
-      "source": "Political Parties Act, 2011 (as amended); Daily Nation, 'Kindiki rides on elders' greenlight in renewed Central Kenya charm offensive', 12 Oct 2026",
-      "message": "Political coalitions forming now for 2027 must be registered officially before the vote.",
+      "message": "Jua Kesho is building a record of political promises now, so 2027 is judged on receipts.",
       "beats": [
-        "Viongozi wanaunda miungano ya 2027.",
-        "Muungano lazima usajiliwe *rasmi* ORPP.",
-        "Fuatilia ni nani ameungana na nani.",
-        "Hii ndio itaamua kura yako."
+        "Promises made today, *forgotten* by 2027?",
+        "Not if there's a record.",
+        "We track what's said and what's done.",
+        "Receipts, not rallies, decide the verdict.",
+        "Send us a promise to track."
       ],
-      "photo_query": "Kenyan political rally crowd",
+      "photo_query": "Kenya National Assembly chamber",
+      "caption": "2027 will be decided on records, not speeches. Help us build the record: send us a promise you've heard this week.\n\n#PromiseTracker #JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
+      "group": "2026-w42-d6-cover-r4",
       "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
-          "no caption yet"
+          "states facts but has no `source`; verify before approving",
+          "contains a year, % or amount with no `source`"
         ]
-      },
-      "critic": {
-        "hook": 4,
-        "send": 3,
-        "clarity": 6,
-        "fresh": 3,
-        "voice": 4,
-        "craft": 4,
-        "picture": 2,
-        "hold": 3,
-        "avg": 3.6,
-        "note": "This reads like a civics lesson, not a post—drop the procedural setup and lead with what actually matters to voters: which politicians are secretly switching sides or which coalition could flip YOUR county."
       }
     },
     {
-      "id": "2026-w42-d7-glasspoll-r3",
+      "id": "2026-w42-d7-glasspoll-r4",
       "template": "glasspoll",
       "lane": "everyone",
-      "message": "Political violence is creeping back before 2027. Tell us if you've seen it near you.",
-      "hook": "Teargas, goons, 2027 tayari?",
-      "question": "Seen political violence near you?",
+      "hook": "Teargas is back in the news",
+      "question": "Has your area seen political violence?",
       "options": [
-        "Ndio, nimeona",
-        "La, sijaona"
+        "Ndio, this year",
+        "La, not yet"
       ],
-      "cta": "Vote. See what Kenya says.",
-      "photo_query": "teargas protest Nairobi",
-      "source": "Capital FM News, 'Teargas, gunshots as Malala leads protest in Kakamega' and 'Kindiki vows tough action against political violence sponsors', 2026-10-12, https://capitalfm.africa/teargas-gunshots-as-malala-leads-protest-in-kakamega/",
-      "caption": "Teargas in Kakamega. Teargas outside a DCP station. Nakuru launching a 107 hotline for gangs before 2027. Kindiki says he'll deal with the sponsors.\n\nTunataka kujua: umeona hii kitu karibu nawe?\n\n#JuaKesho",
+      "cta": "Vote and see the results",
+      "message": "Political violence is back in the headlines; tell us if it's reached your area.",
       "beats": [
-        "Teargas in Kakamega this week.",
-        "Police storm a *DCP* station.",
-        "Kindiki vows action on *sponsors*.",
-        "2027 is 14 months away.",
-        "Have you seen this near you?",
-        "Vote. Tag someone who should."
+        "Teargas in Kakamega. Police at DCP offices.",
+        "*Kindiki* vows action on violence sponsors.",
+        "Elections are 2027. The signs start now.",
+        "Has it reached your area?",
+        "Vote. See what Kenya says."
       ],
+      "photo_query": "Kenya police teargas protest",
+      "caption": "Teargas in Kakamega. Police storming DCP offices. The CS says he's coming for violence sponsors.\n\nSisi hapa chini, tunaona nini?\n\n#JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-18T18:00:00+03:00",
       "size": "story",
@@ -502,7 +438,8 @@
       "guard": {
         "errors": [],
         "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
+          "caption has no send/share/save call: sends and saves drive reach",
+          "contains a year, % or amount with no `source`"
         ]
       }
     },
@@ -551,10 +488,10 @@
     }
   ],
   "scripts": {
-    "radio": "Karibu kwenye Jua Kesho, mimi ni Jua. Today, let's talk money, promises, and what's coming our way before 2027.\n\nFirst - HELB. Many young Kenyans forget: HELB is a loan, not a gift from government. When you default, it's recoverable debt, and CRB doesn't play - you end up blacklisted, locked out of future credit, even a simple loan for business.\n\nNow here's the irony. President Ruto promised that no student would miss university for lack of fees. That promise is only partly kept. The new funding model has actually locked many students out, still waiting, still applying, still stuck outside lecture halls.\n\nAnd speaking of money owed - the state itself owes Kenya Power Sh7.35 billion. Meanwhile, ordinary Kenyans using tokens never miss a payment, rain or shine. Something doesn't add up there.\n\nBefore we close, remember - 2027 is closer than you think. Five things are moving right now: Election Day is fixed for August 10, 2027. Voter registration is ongoing - go check your status. IEBC is reviewing boundaries that could change your ward. Tax direction for next year gets decided in February, not June. And political coalitions forming now must register before the vote.\n\nStay informed, stay sharp. This is Jua, keeping you ready for Kesho.\n\nKwa Kiswahili haraka haraka: HELB ni mkopo, si zawadi - ukikosa kulipa utaingia CRB. Ahadi ya Ruto ya masomo bila ada bado haijatimia kikamilifu. Serikali inadaiwa Kenya Power bilioni 7.35 wakati wananchi wanalipa token kwa wakati. Na 2027 iko karibu - hakikisha umejiandikisha kupiga kura.",
-    "voice_note": "Hey, quick one from Jua Kesho. Let's talk about HELB for a second. A lot of us think it's free money from government - it's not. It's recoverable debt. If you default, you land straight on the CRB blacklist, and that follows you - when you want a business loan, even a simple phone loan, it's there.\n\nThen there's the President's promise that no student would miss university over fees. That's only partly kept. The new funding model has actually locked many students out, still waiting on their allocations.\n\nOne more thing - 2027 is closer than it feels. Voter registration is open, boundary review could shift your ward, and next year's tax direction gets decided in February, not June.\n\nStay sharp, stay ready. This is Jua - talk soon.",
-    "sms": "Usiibiwe: HELB is a loan, not a gift. Default lands you on CRB and blocks future credit. Pay small amounts monthly, don't ghost it.",
-    "reels": "Kesho Kutwa: five things moving right now, before 2027. One - August 10, 2027, Election Day is already fixed by law. Two - voter registration is open, go check your status. Three - IEBC's boundary review could shift your ward or constituency. Four - next year's tax direction gets decided this February, not June. Five - coalitions forming now must register officially before the vote. Watch this space. 2027 haiko mbali."
+    "radio": "Habari, hii ni Jua Kesho, mimi ni Jua. This week, let's talk about who's paying and who's not. Kenyans are keeping their end of the bargain — electricity bills paid on time. But the state? It owes Kenya Power Sh7.35 billion, unpaid, as of October 2026. Meanwhile at HELB, the man in charge of student loans has never needed one himself — and students are still waiting on theirs. Now, a fact worth repeating: M-Pesa is not British. It was built, tested, and launched right here in Kenya, in 2007. Say it with your chest. And speaking of homegrown wins — M-KOPA, a Kenyan startup, now powers over five million homes across Africa with pay-as-you-go solar. Kenyan innovation lighting up a continent. But let's zoom out. 2027 is closer than you think. Five things are quietly moving us there: the election date, fixed by law; boundary reviews, overdue, deciding how much your vote counts; party primaries, the real gatekeepers to your ballot; the budget calendar, set every February 15th before any Finance Bill; and us, Jua Kesho, building a record of promises now, so 2027 is judged on receipts. Stay informed. Stay ready. Kwa Kiswahili: Wakenya wanalipa umeme kwa wakati, lakini serikali inadaiwa mabilioni na Kenya Power. M-Pesa ilizaliwa Kenya, si Uingereza. M-KOPA, kampuni ya Kikenya, inawasha nyumba milioni tano Afrika. Na njia ya 2027 inaanza sasa — tarehe ya uchaguzi, mipaka ya kura, chaguzi za ndani za vyama, na bajeti ya taifa. Jua Kesho inarekodi ahadi zote, ili tuwe tayari.",
+    "voice_note": "Niaje, ni Jua hapa. Quick one today. Kenya Power says Kenyans are paying their electricity bills on time, good for us. But guess who's not paying? The government — Sh7.35 billion owed, as of this October. Make that make sense. Also, quick myth-bust: next time someone says M-Pesa is British, tell them no, it was built, tested and launched right here in Kenya back in 2007. We did that. Something else to watch: a Kenyan startup, M-KOPA, is now powering over five million homes across Africa with solar, pay as you go. That's us exporting solutions, not just importing problems. Last thing, 2027 isn't far. The election date is fixed by law, second Tuesday of August. But boundaries, party primaries, and the budget calendar are moving right now, quietly, and they'll decide a lot. We're tracking it all at Jua Kesho, building receipts so promises don't just disappear. That's your sixty seconds. Tuonane next week.",
+    "sms": "Usiibiwe: Don't repeat 'M-Pesa ni ya Uingereza.' It was built, tested & launched in Kenya, 2007. Verify facts before you share them.",
+    "reels": "Five things are quietly moving Kenya toward 2027. One: the election date, fixed, second Tuesday of August. Two: your constituency boundaries, overdue for review, deciding how much your vote counts. Three: party primaries, the real test before the ballot. Four: the budget calendar, set by law every February 15th, before any Finance Bill. Five: promises, we're tracking them now, so by 2027 it's receipts, not rhetoric. Follow Jua Kesho. Let's get ready."
   },
-  "spend_usd": 2.0455
+  "spend_usd": 2.5419
 }
