@@ -3,7 +3,8 @@ trends.py — what Kenya is searching right now, filtered so the brand can ride 
 
 Source: Google Trends "Trending now" RSS (https://trends.google.com/trending/rss?geo=KE).
 Every topic passes the same banned-topic rules as posts, plus a tragedy filter:
-we never newsjack deaths, disasters, crime or politics.
+we never newsjack deaths, disasters or crime. Political trends are kept and marked `civic`:
+the writer may cover them only with sourced facts (Set It Straight, Explained, Promise Tracker).
 
     python trends.py            # prints safe topics for KE (+ NG, ZA, US for a global view)
     python trends.py --geo KE   # one country
@@ -26,13 +27,16 @@ HERE = Path(__file__).resolve().parent
 OUT = HERE / "state" / "trends.json"
 FEED = "https://trends.google.com/trending/rss?geo={geo}"
 
-# Never ride these: tragedy, crime, and anything political or divisive.
+# Never ride these: tragedy, crime, betting, gossip. (Divisive/tribal politics is civic: called out, with care.)
 UNSAFE = re.compile(
     r"\b(death|dies|died|dead|killed|kill|murder|shooting|shot|accident|crash|fire|flood|attack|funeral|"
-    r"burial|arrest|arrested|court|trial|rape|assault|abduct|kidnap|missing|suicide|war|bomb|terror|"
-    r"president|presidential|governor|senator|mp|mca|cabinet|minister|parliament|election|elections|"
-    r"campaign|party|bid|impeach|protest|protests|maandamano|tribe|church|mosque|pastor|imam|"
+    r"burial|rape|assault|abduct|kidnap|missing|suicide|war|bomb|terror|"
     r"bet|betting|odds|jackpot|sportpesa|casino|gambling|nude|leaked|scandal)\b", re.I)
+# Political and civic trends: in scope, but flagged so the writer treats them with extra care
+CIVIC = re.compile(
+    r"\b(president|presidential|governor|senator|mp|mca|cabinet|minister|parliament|election|elections|iebc|"
+    r"campaign|party|bid|impeach|impeachment|protest|protests|maandamano|bill|budget|tax|taxes|court|ruling|"
+    r"arrest|arrested|trial|tribe|tribal|tribalism|hate speech|ncic|church|clergy|pastor|bishop|mosque|imam|abduction|abducted|goons|police)\b", re.I)
 
 
 def _local(tag: str) -> str:
@@ -83,6 +87,8 @@ def collect(geos=("KE", "NG", "ZA", "US")) -> dict:
         try:
             for t in fetch(geo):
                 ok, why = is_safe(t)
+                if ok and CIVIC.search(" ".join([t["title"]] + [n["title"] for n in t["news"]])):
+                    t = {**t, "civic": True}
                 (safe if ok else dropped).append({**t, **({} if ok else {"why": why})})
         except Exception as e:  # network or format change: note it, carry on
             errors[geo] = str(e)[:200]
@@ -105,11 +111,13 @@ def prompt_block(max_items: int = 12, max_age_hours: int = 48) -> str:
     lines = []
     for t in data["safe"][:max_items]:
         head = t["news"][0]["title"] if t["news"] else ""
-        lines.append(f"- [{t['geo']}] {t['title']} ({t['traffic']} searches){' · ' + head if head else ''}")
+        tag = "civic, " if t.get("civic") else ""
+        lines.append(f"- [{tag}{t['geo']}] {t['title']} ({t['traffic']} searches){' · ' + head if head else ''}")
     return ("\nTRENDING NOW (Google Trends, already filtered for safety)\n" + "\n".join(lines) +
-            "\nUse at most 2 per week, and only with a genuine tech, AI or future angle (e.g. a big match → "
-            "\"how clubs use data\"; a new phone launch → a hack). Put the trend in a `trend` field on that post. "
-            "Never force it; a weak trend-jack is worse than none.\n")
+            "\nUse at most 3 per week. Civic trends: only with sourced facts, as Set It Straight, Explained (decode/makanga), "
+            "Follow the Money or Promise Tracker; never rumours, never someone's private life, never a court case's "
+            "outcome before the court decides. Other trends need a genuine knowledge, money, tech or future angle. "
+            "Put the trend in a `trend` field on that post. A weak trend-jack is worse than none.\n")
 
 
 def main() -> int:

@@ -1,25 +1,114 @@
 {
   "name": "Jua Kesho",
   "handle": "@juakesho",
-  "tagline_sw": "Kesho iko hapa.",
-  "tagline_en": "The future, explained the Kenyan way.",
+  "tagline_sw": "Jua nchi yako.",
+  "tagline_en": "Know your country.",
   "website": "juakesho.com",
   "colors": {
-    "jua":       { "hex": "#FFC629", "text": "#1D1433", "meaning": "Sun. Knowledge, optimism. The hero colour." },
-    "shuka":     { "hex": "#D4301F", "text": "#FFFFFF", "meaning": "Maasai shuka red. Energy, heritage, urgency." },
-    "jacaranda": { "hex": "#7A4FD8", "text": "#FFFFFF", "meaning": "Nairobi jacaranda purple. Creativity, the future." },
-    "chai":      { "hex": "#0E7C50", "text": "#FFFFFF", "meaning": "Kericho tea green. Growth, money, land." },
-    "ziwa":      { "hex": "#1E8FD6", "text": "#1D1433", "meaning": "Lake and ocean blue. Trust, technology, connection." },
-    "pwani":     { "hex": "#15B8A6", "text": "#1D1433", "meaning": "Coast turquoise. Freshness, calm, curiosity." },
-    "waridi":    { "hex": "#FF7AB6", "text": "#1D1433", "meaning": "Naivasha rose pink. Fun, warmth, community." },
-    "udongo":    { "hex": "#B8532A", "text": "#FFFFFF", "meaning": "Red soil. Roots, where we come from." },
-    "usiku":     { "hex": "#1D1433", "text": "#FFF4E0", "meaning": "Night. Text and contrast." },
-    "maziwa":    { "hex": "#FFF4E0", "text": "#1D1433", "meaning": "Milk. The paper everything sits on." }
+    "usiku": {
+      "hex": "#0E0C0B",
+      "text": "#F8F7F6",
+      "meaning": "Night (flag black). The default background."
+    },
+    "maziwa": {
+      "hex": "#F8F7F6",
+      "text": "#1B1917",
+      "meaning": "Paper (flag white). Explainers, documents, the brand book."
+    },
+    "shuka": {
+      "hex": "#C4111A",
+      "text": "#FFFFFF",
+      "meaning": "Flag red. The signature, and alerts: scams, broken promises, FALSE."
+    },
+    "chai": {
+      "hex": "#046E30",
+      "text": "#FFFFFF",
+      "meaning": "Flag green. Kept promises, TRUE, Africa's wins."
+    },
+    "jua": {
+      "hex": "#C4111A",
+      "text": "#FFFFFF",
+      "meaning": "Signature background (same as flag red): launch and big moments."
+    },
+    "jacaranda": {
+      "hex": "#312F2D",
+      "text": "#F8F7F6",
+      "meaning": "legacy",
+      "legacy": true
+    },
+    "ziwa": {
+      "hex": "#4B4847",
+      "text": "#F8F7F6",
+      "meaning": "legacy",
+      "legacy": true
+    },
+    "pwani": {
+      "hex": "#83C38A",
+      "text": "#1B1917",
+      "meaning": "legacy",
+      "legacy": true
+    },
+    "waridi": {
+      "hex": "#FE847D",
+      "text": "#1B1917",
+      "meaning": "legacy",
+      "legacy": true
+    },
+    "udongo": {
+      "hex": "#6F020C",
+      "text": "#F8F7F6",
+      "meaning": "legacy",
+      "legacy": true
+    }
   },
-  "accents": ["shuka", "jacaranda", "chai", "ziwa", "pwani", "waridi", "udongo"],
+  "accents": [
+    "shuka",
+    "chai"
+  ],
   "fonts": {
-    "display": "Unbounded",
-    "body": "Figtree",
-    "hand": "Caveat"
-  }
+    "display": "Inter Tight",
+    "body": "Inter"
+  },
+  "palette": {
+    "ink": {
+      "50": "#F8F7F6",
+      "100": "#F0EFEE",
+      "200": "#E0DFDE",
+      "300": "#CAC8C7",
+      "400": "#A9A7A5",
+      "500": "#888684",
+      "600": "#686664",
+      "700": "#4B4847",
+      "800": "#312F2D",
+      "900": "#1B1917",
+      "950": "#0E0C0B"
+    },
+    "shuka": {
+      "50": "#FEF5F4",
+      "100": "#FED2CF",
+      "200": "#FEADA7",
+      "300": "#FE847D",
+      "400": "#F35C57",
+      "500": "#DF3636",
+      "600": "#C4111A",
+      "700": "#990312",
+      "800": "#6F020C",
+      "900": "#480106",
+      "950": "#240002"
+    },
+    "chai": {
+      "50": "#E9FFE8",
+      "100": "#C6EBC7",
+      "200": "#A5D7A8",
+      "300": "#83C38A",
+      "400": "#62AF6F",
+      "500": "#409A55",
+      "600": "#14853C",
+      "700": "#046E30",
+      "800": "#014D21",
+      "900": "#002F12",
+      "950": "#001305"
+    }
+  },
+  "palette_note": "The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (yellow reads as UDA, orange as ODM). Ink carries 90% of every design; red is the signature and the alarm; green means true and kept."
 }

@@ -1,28 +1,18 @@
-{#- Makanga Explains — a tech idea explained through the matatu.
+{#- Makanga Explains — a tech idea explained through everyday Kenyan life (the matatu, the stage, the chama).
     Fields: topic, like, explain, punch, expr -#}
 {% extends "base.html.j2" %}
 {% block style %}
-.series { position: absolute; top: 110px; left: 84px; background: var(--usiku); color: var(--pwani); }
-.mascot { position: absolute; top: 60px; right: 50px; width: 230px; height: 230px; }
-.topic { position: absolute; left: 84px; top: 250px; width: 700px; font-size: {{ fit(topic, 700, 120) }}px; color: var(--usiku); }
-.ni-kama { position: absolute; left: 90px; top: {{ 270 + fit(topic, 700, 120) * 1.05 }}px; font-size: 76px; color: var(--shuka); transform: rotate(-4deg); }
-.like { position: absolute; left: 70px; right: 70px; top: 520px; padding: 40px 52px;
-  background: var(--jua); color: var(--usiku); border-radius: {{ radius(seed + 1) }}; font-size: {{ fitw(like, 756, 3, 76) }}px; }
-.explain { position: absolute; left: 84px; top: 790px; width: 912px; font-size: 36px; font-weight: 600; line-height: 1.3; color: var(--usiku); }
-.punch { position: absolute; left: 84px; top: 1080px; width: 912px; font-size: 52px; color: var(--usiku); transform: rotate(-2deg); }
+.topic { font-size: {{ fitw(topic, 936, 2, 136) }}px; }
+.like { margin-top: 36px; padding: 34px 38px; border-radius: 4px; background: var(--ink-950); color: #fff;
+  font-size: {{ fitw(like, 860, 3, 84) }}px; line-height: 1.04; }
+.punch { margin-top: 26px; }
 {% endblock %}
-{% block art %}
-  {{ kanga(0, 0, W, 34, [C.usiku, C.jua, C.shuka, C.chai, C.jacaranda], seed) }}
-  {{ confetti(W, H, seed, n=7, avoid=[(40, 60, 1000, 1080)], rmax=34) }}
-  {{ blob(930, 700, 70, C.waridi, seed + 5, wobble=0.3, points=6) }}
-  {{ squiggle(84, 760, 420, C.usiku, seed + 2, amp=9, waves=6, width=7) }}
-{% endblock %}
+{% block top %}<span class="tag">Explained simply</span><span class="meta">Makanga explains</span>{% endblock %}
 {% block content %}
-  <span class="pill series">Makanga Explains</span>
-  <svg class="mascot" viewBox="0 0 200 200">{{ mascot(expr) }}</svg>
-  <h1 class="display topic">{{ topic }}</h1>
-  <p class="hand ni-kama">is like…</p>
+  <h1 class="display topic">{{ topic | mark }}</h1>
+  <p class="label" style="margin: 26px 0 0">is like&hellip;</p>
   <p class="display like">{{ like }}</p>
-  <p class="explain">{{ explain }}</p>
-  <p class="hand punch">{{ punch }}</p>
+  <div class="gap"></div>
+  <p class="lead">{{ explain | nb }}</p>
+  <p class="strong punch">{{ punch }}</p>
 {% endblock %}

@@ -1,0 +1,29 @@
+{#- The Chapter Six Test — a leader (or candidate) measured against the Constitution's leadership and integrity
+    standard and their own record. Same tests for every side.
+    Fields: who (name), office (current office or seat sought), checks (3-5 of {test, result: pass|fail|unclear, note}),
+            verdict (one line), source -#}
+{% extends "base.html.j2" %}
+{% set R = {"pass": ("Pass", "var(--chai-600)", "#fff"), "fail": ("Fail", "var(--shuka-600)", "#fff"), "unclear": ("Unclear", "var(--ink-50)", "var(--ink-950)")} %}
+{% block style %}
+.has-photo { --ph: 520px; }
+.who { font-size: {{ fitw(who, 936, 2, 92 if photo_uri is not defined else 76) }}px; }
+.office { margin-top: 14px; font: 800 24px/1.2 "Inter Tight"; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.checks { display: grid; margin-top: 8px; }
+.check { display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center; padding: 16px 0; border-top: 2px solid var(--line); }
+.check:last-child { border-bottom: 2px solid var(--line); }
+.check b { display: block; font: 800 27px/1.2 "Inter Tight"; letter-spacing: -.01em; color: var(--fg); }
+.check small { display: block; margin-top: 4px; font: 500 23px/1.3 "Inter"; color: var(--soft); }
+.check i { font-style: normal; padding: 9px 14px 8px; border-radius: 4px; font: 900 22px/1 "Inter Tight"; letter-spacing: .08em; text-transform: uppercase; }
+.verdict { margin-top: 24px; }
+{% endblock %}
+{% block top %}<span class="tag">The Chapter Six Test</span><span class="meta">{{ person_role if person_shown is defined and person_role is defined else 'Leadership & integrity' }}</span>{% endblock %}
+{% block content %}
+  <h1 class="display who">{{ who }}</h1>
+  <p class="office">{{ office }}</p>
+  <div class="gap"></div>
+  <div class="checks">
+    {% for c in checks %}{% set r = R[c.result] %}<div class="check"><div><b>{{ c.test }}</b><small>{{ c.note | nb }}</small></div>
+      <i style="background: {{ r[1] }}; color: {{ r[2] }}">{{ r[0] }}</i></div>{% endfor %}
+  </div>
+  <p class="strong verdict">{{ verdict }}</p>
+{% endblock %}

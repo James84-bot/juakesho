@@ -1,24 +1,16 @@
-{#- Africa Inavumbua — African innovation. Fields: year, name, country, fact, now -#}
+{#- Made in Africa — African firsts and innovation. Fields: year, name, country, fact, now -#}
 {% extends "base.html.j2" %}
 {% block style %}
-.series { position: absolute; top: 84px; left: 84px; background: var(--jua); color: var(--usiku); }
-.country { position: absolute; top: 84px; right: 84px; background: var(--maziwa); color: var(--chai); }
-.year { position: absolute; left: 70px; top: 170px; font-size: 290px; color: var(--jua); letter-spacing: -.06em; }
-.name { position: absolute; left: 84px; top: 480px; width: 900px; font-size: {{ fit(name, 900, 120) }}px; }
-.fact { position: absolute; left: 84px; top: 640px; width: 640px; font-size: 38px; font-weight: 700; line-height: 1.28; }
-.now { position: absolute; left: 84px; top: 900px; width: 600px; font-size: 48px; color: var(--jua); transform: rotate(-3deg); }
+.has-photo { --ph: 560px; }
+.year { font-size: {{ 280 if photo_uri is not defined else 200 }}px; line-height: .82; letter-spacing: -.055em; font-weight: 900; color: var(--accent); }
+.name { margin-top: 28px; font-size: {{ fitw(name, 936, 2, 150) }}px; }
+.fact { margin-top: 34px; }
 {% endblock %}
-{% block art %}
-  <g transform="translate(700 760) scale(2.3)">{{ mascot('happy') }}</g>
-  {{ leaf(120, 1080, 60, C.pwani, -35, seed) }}
-  {{ leaf(190, 1110, 44, C.jua, 20, seed + 1) }}
-  {{ confetti(W, H, seed, n=5, avoid=[(40, 60, 1000, 900), (640, 700, 440, 650)], rmax=30) }}
-{% endblock %}
+{% block top %}<span class="tag">Made in Africa</span><span class="meta">{{ country }}</span>{% endblock %}
 {% block content %}
-  <span class="pill series">Made in Africa</span>
-  <span class="pill country">{{ country }}</span>
   <p class="display year">{{ year }}</p>
   <h1 class="display name">{{ name }}</h1>
-  <p class="fact">{{ fact }}</p>
-  <p class="hand now">{{ now }}</p>
+  <p class="lead fact">{{ fact | nb }}</p>
+  <div class="gap"></div>
+  <p class="strong">{{ now }}</p>
 {% endblock %}

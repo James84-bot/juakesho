@@ -14,7 +14,10 @@ from functools import lru_cache
 from pathlib import Path
 
 FONTS = Path(__file__).resolve().parent.parent / "assets" / "fonts"
-FILES = {"Figtree": "figtree-latin-wght-normal.woff2", "Unbounded": "unbounded-latin-wght-normal.woff2"}
+FILES = {"Figtree": "figtree-latin-wght-normal.woff2", "Unbounded": "unbounded-latin-wght-normal.woff2",
+         "Inter Tight": "inter-tight-latin-wght-normal.woff2", "Inter": "inter-latin-wght-normal.woff2"}
+# The headline face, exactly as base.html.j2 sets .display (family, weight, letter-spacing in em)
+DISPLAY = ("Inter Tight", 800, -0.025)
 SAFETY = 1.015  # measured width x margin: errs towards one more line, never one fewer
 
 
@@ -61,13 +64,14 @@ def lines(text: str, px: float, weight: int, width: float, family: str = "Figtre
     return len(wrap(text, px, width, family, weight))
 
 
-def fit_display(text: str, box_w: float, max_lines: int, base: float) -> int:
-    """Largest size <= base at which a display headline (Unbounded 800, -0.03em) fits the box:
+def fit_display(text: str, box_w: float, max_lines: int, base: float, face: tuple = DISPLAY) -> int:
+    """Largest size <= base at which a headline (default: the DISPLAY face) fits the box:
     at most max_lines lines, and no single word wider than the box (a long word can't wrap)."""
     text = str(text)
+    family, weight, track = face
     for px in range(int(base), 11, -1):
-        rows = wrap(text, px, box_w, "Unbounded", 800, -0.03)
-        if len(rows) <= max_lines and all(width(r, px, "Unbounded", 800, -0.03) <= box_w for r in rows):
+        rows = wrap(text, px, box_w, family, weight, track)
+        if len(rows) <= max_lines and all(width(r, px, family, weight, track) <= box_w for r in rows):
             return px
     return 12
 

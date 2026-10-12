@@ -2,17 +2,17 @@
   "collection": "profiles",
   "posts": [
     {
-      "id": "avatar-jacaranda",
+      "id": "avatar-night",
       "template": "avatar",
       "size": "avatar",
-      "bg": "jacaranda",
+      "bg": "usiku",
       "expr": "happy"
     },
     {
-      "id": "avatar-jua",
+      "id": "avatar-red",
       "template": "avatar",
       "size": "avatar",
-      "bg": "pwani",
+      "bg": "jua",
       "expr": "happy"
     },
     {

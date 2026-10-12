@@ -1,12 +1,16 @@
 {
   "timezone": "Africa/Nairobi",
   "utc_offset": "+03:00",
-  "note": "One week of slots for young, social-native Kenyans. Formats rotate by ISO week so the feed never feels repetitive. Times follow when students and young pros are on their phones.",
+  "note": "One week for young Kenyans, in their own voice: Sauti ya Mwananchi leads Monday and Thursday (Civic 101 rotates in); Tuesday is fact-checks, public money and Hatutasahau; Wednesday is Promise Tracker or the Chapter Six Test; Friday Proudly African; Saturday what's coming; Sunday the poll. Anniversaries in content/remember.json take over the nearest weekday automatically. Formats rotate by ISO week.",
   "slots": [
     {
       "day": 1,
       "time": "07:30",
-      "template": "hack",
+      "template": [
+        "sauti",
+        "hack",
+        "sauti"
+      ],
       "bg": [
         "usiku"
       ],
@@ -15,17 +19,21 @@
         "hustle",
         "young_pro",
         "creator"
-      ]
+      ],
+      "series": {
+        "hack": "Civic 101"
+      }
     },
     {
       "day": 2,
       "time": "12:45",
       "template": [
+        "straight",
+        "money",
+        "kumbuka",
         "decode",
         "straight",
-        "cap",
-        "money",
-        "still"
+        "cap"
       ],
       "bg": [
         "usiku"
@@ -39,9 +47,12 @@
     {
       "day": 3,
       "time": "18:30",
-      "template": "usiibiwe",
+      "template": [
+        "promise",
+        "scorecard"
+      ],
       "bg": [
-        "shuka"
+        "usiku"
       ],
       "lanes": [
         "campus",
@@ -53,14 +64,16 @@
       "day": 4,
       "time": "19:30",
       "template": [
-        "vichekesho",
-        "vichekesho",
+        "sauti",
+        "usiibiwe",
+        "sauti",
         "makanga"
       ],
       "bg": [
-        "maziwa",
-        "maziwa",
-        "pwani"
+        "usiku",
+        "shuka",
+        "usiku",
+        "maziwa"
       ],
       "lanes": [
         "campus",
@@ -73,19 +86,11 @@
       "time": "17:00",
       "template": [
         "spotlight",
-        "africa",
-        "build",
-        "spotlight",
-        "africa",
-        "pov"
+        "africa"
       ],
       "bg": [
         "usiku",
-        "chai",
-        "usiku",
-        "usiku",
-        "chai",
-        "usiku"
+        "chai"
       ],
       "lanes": [
         "creator",
@@ -193,18 +198,20 @@
     "campus life"
   ],
   "reel_templates": [
+    "sauti",
     "hack",
     "decode",
     "cap",
     "still",
-    "vichekesho",
-    "pov",
     "money",
     "spotlight",
     "build",
     "usiibiwe",
     "africa",
     "makanga",
-    "straight"
+    "straight",
+    "promise",
+    "kumbuka",
+    "scorecard"
   ]
 }

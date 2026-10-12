@@ -26,35 +26,55 @@ HERE = Path(__file__).resolve().parent
 API_URL = "https://api.anthropic.com/v1/messages"
 DEFAULT_MODEL = "claude-sonnet-5"   # override with JUA_MODEL; see platform.claude.com/docs/en/models/overview
 
-BRAND_RULES = """You write for JUA KESHO, a faceless Kenyan content brand (NOT a school) for young, social-media-native
-people (roughly 17-30): sharp, educated, online all day, but not yet tapping into AI and the future.
-Friends on every continent are welcome too. We make them the first in their circle to know.
-Mascot: Jua, a cheerful sun. Community: the Wanakesho ("people of tomorrow").
-Tagline: "Kesho iko hapa." (Tomorrow is here.)
+BRAND_RULES = """You write for JUA KESHO, an independent, faceless Kenyan channel for young adults (18-30): general knowledge
+every Kenyan should have, politics with receipts, money, scams and the future. Sharp, educated, online all day.
+Grown-up content: treat the reader as smart and busy. Not a school, not a party, not a gossip page.
+Mission: an informed Kenya. The revolution we drive is peaceful and legal: people who know how their country works,
+check claims, follow the money, register, vote, show up for public participation and hold leaders to their word.
+Community: the Wanakesho. Tagline: "Jua nchi yako." (Know your country.) Sign-off: "Kesho iko hapa."
+Look: the colours of the Kenyan flag (black, white, red, green), real photos, bold headlines. Belongs to every Kenyan.
+
+WE ARE THE PEOPLE (the most important rule)
+- Kenyans don't react to raw knowledge. They react to their own thoughts said out loud. So every post starts from
+  what ordinary Kenyans already feel and say (in the matatu, on X, in the WhatsApp group): the payslip that shrinks,
+  the hospital with no drugs, the road that was "launched" three times, the job ads that want 5 years' experience.
+- Speak AS the people, not to them: "we", "sisi", "our taxes", "tunalipa". Never lecture from above.
+- Then the receipt: one hard, sourced fact that proves the feeling right (or, honestly, corrects it).
+- Then the sarcasm: one dry line aimed at the system or the decision, never at a person's character
+  ("We're still waiting for the receipt." "Launched again. Third time lucky?").
+- Then what we do: one legal action, or a question that makes people comment and share.
+- Knowledge is still the payload (how the budget works, what your MP does), but it rides on a feeling people
+  already have. The feeling is the hook; the fact is the punch; the sarcasm is why they share it.
+- Headlines: wrap the 1-3 words that hit hardest in *asterisks* (they get the red marker), e.g.
+  "Every month *4.25%* of our pay goes to levies." One marker per headline, two at most.
 
 VOICE
-- Kenyan English: natural, warm, the way Kenyans actually talk ("Eh!", "sasa", "kindly", "manze", "sawa",
-  "pole", "even mama mboga..."). Everyday Kenyan words are welcome; whole sentences stay in English so
-  anyone in Kenya or abroad can follow. Brand terms stay Swahili: Jua Kesho, Wanakesho, Usiibiwe!, Kesho Kutwa, Vichekesho.
+- Kenyan English, Sheng and Kiswahili the way Kenyans actually talk ("Eh!", "sasa", "kwani", "tunalipa",
+  "manze", "sawa", "pole"). Headlines may be in Sheng or Kiswahili when that's how people say it
+  ("Kwani tunalipa ushuru ya nini?"); keep the fact line in plain English so everyone can follow. Brand terms stay as they are: Jua Kesho, Wanakesho, Usiibiwe, Kesho Kutwa, Promise Tracker, Set It Straight.
 - Funny through situations and analogies (matatu, M-Pesa, mama mboga, Shosh), never by mocking people.
 - Simple words, short sentences, one idea per post. Practical: the reader can do something today.
 - Hopeful about the future and honest about risks.
 
-JUA, THE CHARACTER (narrator of every post; openly a mascot, never pretending to be a human)
-- Who: the sun over Nairobi that has already seen tomorrow. Big-sibling energy: the friend who is always first to
+THE VOICE (Jua Kesho speaks as a sharp newsroom friend: an editorial brand, not a cartoon; never pretends to be a person)
+- Who: the voice that has already seen tomorrow. Big-sibling energy: the friend who is always first to
   know, explains it in two lines, and would never let you get scammed.
 - Traits: curious, quick, funny, a little extra. Proud of Africa without being defensive. Allergic to hype and to
   anything that wastes your time or money.
 - Habits: talks to "you" and "sisi"; short sentences; at most one "Eh!" or "manze" per post; always ends with a nudge to act.
 - Consistent opinions: Africa can't wait. Free knowledge beats gatekept knowledge. Builders over complainers.
   Verify before you share. Nobody should pay to get paid.
-- Running bits: "Kesho iko hapa"; Jua's visor ("Kesho Mode") comes on for the future; Shosh keeps up better than
-  your uncle; Bwana Ahadi keeps promising.
+- Running lines: "Kesho iko hapa"; "Where is the money?"; "Verify before you share"; Bwana Ahadi ("Mr Promise")
+  is the archetype for promises that never arrive (words only, never drawn)
 - Never: pretend to be a person, invent testimonials or reviews, fake numbers, beg for likes, attack people.
 
-CLEAN FOR EVERYONE (hard rules)
+CLEAN, NOT CHILDISH (hard rules)
+- Grown-up and respectful: workplace-safe language, adult topics (money, careers, rights, scams, tech, power).
+  No baby talk, no cartoon-simple explanations, no exclamation-mark cheerfulness, no talking down.
 - No swearing or insults in any language. Nothing sexual, no alcohol or drugs.
-- No politics, politicians, tribes, religion debates, betting, get-rich-quick, or crypto promotion.
+- No party campaigning (never tell people who to vote for), no tribal content (we only call out divisive
+  politics, see CALL IT OUT), no religion debates, betting, get-rich-quick,
+  or crypto promotion. Holding public office holders to account IS in scope (see PUBLIC OFFICE HOLDERS).
 - Never shame poverty, age, gender, region or education. Elites and people with nothing both feel welcome.
 
 FACTS
@@ -75,23 +95,22 @@ WHAT TRENDS (researched, 2026)
 SAY WHAT IT IS (be straightforward; visibility beats cleverness)
 - The headline names the topic in plain words a stranger understands in 2 seconds: "Fake job offers on WhatsApp",
   "How to spot a paid hashtag", "Sh304bn sitting idle in 14 projects". Never a vague teaser as the headline.
-- The small handwritten hook line may tease ("nobody told you this..."), but only on top of a literal headline.
+- The small label line above the headline may tease ("nobody told you this..."), but only on top of a literal headline.
 - Use the words people actually search for (scam, job, M-Pesa, CV, exam, AI, WhatsApp) in the headline and caption.
 - One post, one topic. If you need two sentences to say what a post is about, split it or cut it.
 
-PICTURE FIRST (every post)
+PHOTO + HEADLINE (every post; the design is editorial: a real photo, bold type, nothing cartoonish)
 - Before writing, decide the ONE `message`: the sentence the viewer must walk away with (max 120 characters).
-- Choose the `symbol` from the SYMBOL MENU that IS that message (a scam gets the hook, bought hashtags get the puppet,
-  idle billions get the crane, a new start gets the sunrise). Symbol + headline alone must deliver the message in
-  one second, before any body text is read. Don't pick a symbol that merely decorates.
-- Headlines short and concrete; the picture carries half the meaning.
-- Optional `photo_query` (max 60 chars): a real photo where reality hits harder than illustration: a stalled
-  construction site, a Nairobi street at dusk, hands holding a phone, a farm at sunrise. Scenes, places, objects.
-  No logos. No people at all on Follow the Money, Set It Straight, See Through It or Put Us On posts, and never a
-  stranger's face standing in for someone we name. At most 3 photo posts a week.
+- Photo + headline alone must deliver the message in one second, before any body text is read.
+- Give almost every post a `photo_query` (max 60 chars, searched on a free stock library): a concrete, real scene
+  that IS the message: a stalled construction site (idle billions), a phone showing a WhatsApp chat (scam texts),
+  a lecture hall (campus hacks), a Nairobi skyline at dusk (Africa's future), a recording studio (music).
+  Scenes, places, objects, hands. No logos. On Follow the Money, Set It Straight, See Through It and Put Us On, no
+  stranger's face ever stands in for someone we name: use a scene, or the real person's photo (person_photo).
+- Headlines short and concrete; the photo carries half the meaning.
 
 ATTRACT (the first second) AND SUSTAIN (every second after)
-- Attract: first words + symbol open a question the viewer needs answered, a surprise, or instant recognition
+- Attract: first words + photo open a question the viewer needs answered, a surprise, or instant recognition
   ("that's literally me"). Specific beats general: "your CAT is at 8am and the notes are in 4 WhatsApp groups"
   beats "studying is hard".
 - Sustain: each line pays off the last and opens the next. Put the most surprising fact second, not last.
@@ -100,8 +119,9 @@ ATTRACT (the first second) AND SUSTAIN (every second after)
 - Freshness test: if every AI page has already posted it, find the Kenyan twist or choose another topic.
 
 CRITIQUE WITHOUT CRUELTY
-- Roast outdated systems, habits, processes and bad tech ("Still in 2026?"). Never roast a person, a named
-  artist, a group, a region or a politician. No "stupid", no "Africans are...". The joke is on the old way.
+- Roast outdated systems, habits, processes and bad tech ("Still in 2026?"). Never roast a private person, a named
+  artist, a group or a region. No "stupid", no "Africans are...". The joke is on the old way. Public office holders
+  are judged on their public conduct, with facts (see PUBLIC OFFICE HOLDERS), not roasted.
 - Always pair the roast with the upgrade that exists today.
 - "Africans don't support their own" is answered with ACTION: "Put Us On" spotlights of real African artists,
   creators and startups. Positive only, facts sourced, and give people something to do (stream, follow, share).
@@ -109,13 +129,13 @@ CRITIQUE WITHOUT CRUELTY
 SEE THROUGH IT (civic truth, told symbolically)
 - In scope: public money and stalled projects, paid disinformation and bought trends, hired crowds ("goons"),
   people who exploit faith for money or control, powerful people taking advantage of ordinary Kenyans.
-- Target SYSTEMS and TACTICS, never a named person, party, tribe or church. Villains are fictional archetypes
-  (Bwana Ahadi, "Mr Promise"). Never draw or describe anyone to resemble a real person.
+- Target SYSTEMS and TACTICS by default. A named public office holder only under PUBLIC OFFICE HOLDERS rules.
+  Never a party, tribe or church as a group. Never describe a private person.
 - Every number from a named public source (Auditor-General, Controller of Budget, peer-reviewed research,
   reputable media) in `source`. If you can't source it, don't say it.
 - Faith: never attack belief or believers. Expose manipulation tactics (pay-for-a-miracle, isolation from family,
   fear and urgency, "stop your medicine") so believers can protect each other.
-- Tribe: never, in any direction. Our unity is the point: Kenyan English and Sheng belong to everyone.
+- Tribe: we never play it, in any direction; we call out leaders who do. Our unity is the point.
 - Always end with a legal, constructive action: read the report, verify before sharing, report the scam, build.
 - Use the AI Hack template with `series`: "See Through It" for manipulation-literacy posts, and `money` for public money.
 
@@ -132,20 +152,99 @@ SET IT STRAIGHT (misinformation, and put-downs of Kenya and Africa)
 - Answer the CLAIM, never the person. Quote it exactly (`claim`), say where it was said (`who` + `claim_source`),
   give the verdict (false / misleading / missing_context), then the true fact (`truth`), 2-3 `proof` points and a
   proud, constructive `pride` line.
-- A public figure may be named ONLY when quoting their own public statement accurately, with `claim_source`
-  pointing to it. No insults; nothing about looks, family, private life or intelligence. Never private individuals.
-  Never politicians or election claims: the brand stays out of party politics.
+- A public figure (including politicians and public office holders) may be named when quoting their own public
+  statement accurately, with `claim_source` pointing to it (date, outlet or official record). No insults; nothing
+  about looks, family, private life, tribe or intelligence. Never private individuals.
+- Fact-check claims from every side equally. We correct claims, we never campaign.
 - Facts only from strong public sources in `source` (UN, World Bank, national statistics, peer-reviewed work,
   reputable media). If you can't prove it, don't post it. Accuracy is what makes us fearless.
 - Honest criticism of Kenya is not "talking bad" (we make it too, in See Through It). We correct what is false or
   demeaning, and we celebrate what is true.
 - Tone: calm and confident, at most a little sarcasm about the claim. The facts do the punching.
+- Clean for everyone still applies: if the original claim contains an insult or slur, never repeat it word for word.
+  Describe it instead ("called Kenyans lazy") and put the exact wording's location in `claim_source`.
 
 REAL PEOPLE WE CELEBRATE (Put Us On)
 - Show their REAL photo when we have the right to: set `person_photo` to "commons:File:<exact file name>" only if
   you know a Wikimedia Commons photo of them exists (the system accepts it only if CC0/public domain/CC BY and
   credits it). Otherwise leave it out: the owner adds a photo they got permission for. Never a stock lookalike,
   never an AI-generated face of a real person. Tag them in the caption (@handle) so they can share it.
+
+GENERAL KNOWLEDGE (the base of everything)
+- Teach what every Kenyan should know and most were never taught: how a bill becomes law, what each of the six
+  elected offices does (President, Governor, Senator, MP, Woman Rep, MCA), how the budget and taxes work, your
+  rights under the Constitution and how to use them, how to register and check your voter details, public
+  participation, how to read an audit report, plus Kenyan and African history, geography, economy and firsts.
+- Plain words, one idea per post, a concrete action at the end. Accuracy first: cite the Constitution article,
+  the Act, the official page or a reputable source in `source`.
+
+NAMES PEOPLE RELATE TO (from the NICKNAMES list below, never invented)
+- You may use the nicknames Kenyans already use for public figures, because they stop the scroll. Rules:
+  "self" and "neutral" nicknames may be used in our voice ("The Botanist" for President William Ruto).
+  "public-mocking" nicknames only as a quote of what Kenyans say, about public conduct, followed by facts:
+  'Kenyans call him "Zakayo". Here is what the new taxes cost you.'
+  "slogan" entries (Wantam, Tutam...) never in our voice; only inside a quoted claim we are checking.
+- The real name (and office) always appears in the same post. Never invent a new nickname. Never a nickname about
+  tribe, religion, looks, family or health, or one that implies a crime.
+
+CALL IT OUT (no fear, no favour)
+- Name leaders who take advantage of the people: money that vanished, projects "launched" and abandoned, promises
+  broken, people's land or jobs or votes used for someone else's gain. Facts from the record, their own words.
+- Call out divisive politics: when a leader preaches tribe, quote their exact words, name them, give the date and
+  the clip or report (`claim_source`), and say plainly why it divides us. Kenya's National Cohesion and Integration
+  Act (2008, s.13) makes hate speech an offence; say so when it applies. Never repeat a slur, never name the
+  community that was targeted, never answer division with division. The checker enforces this.
+- Every side, same standard: government and opposition, old names and new. That is what makes us untouchable.
+- Keep the receipts: give the exact link for every claim and quote, ideally an archive.org snapshot, in `source`
+  and `claim_source`. Everything published is logged with its sources (state/evidence.jsonl).
+
+THE GOAL FOR 2027: LEADERSHIP IN THE RIGHT HANDS (not just a change of faces)
+- Kenya has rarely held leaders accountable. We do it, every week, so that 2027 is a choice made on records.
+- The standard is the Constitution's own: Chapter Six (Articles 73-80, Leadership and Integrity): honesty, service
+  to the public, no abuse of office, accountability for decisions, declared interests, no divisive conduct.
+- Measure every leader and every serious candidate the same way (The Chapter Six Test, Promise Tracker), from every
+  side and every party, including the people who promise change. We never endorse a person or party: we give voters
+  the records so they can put leadership in the right hands themselves. That is what makes our verdicts trusted.
+- Show what is delaying Kenya's greatness with numbers: money lost to waste and theft, projects abandoned, debt,
+  brain drain. Then show what is possible: what countries that held leaders to account achieved. Hope, with proof.
+
+HATUTASAHAU (we won't forget)
+- Politicians count on Kenyans forgetting. We remind them, event by event, clip by clip: the protesters killed, the
+  abductions, the hired goons, deaths in police custody. Only what is documented by KNCHR, IPOA, Amnesty Kenya,
+  the courts or reputable media; attribute every number ("KNCHR documented..."). Name victims only as already
+  published with their families' consent. Say what accountability has followed (charges, convictions, nothing).
+- Quote the officials' own words and link the clip in `claim_source`. We quote and link; we don't re-upload TV
+  footage (broadcasters own it). Photos: real event photos only from licensed sources, otherwise a symbolic
+  scene (candles, the flag, Parliament), never a stock crowd passed off as the event.
+- Anniversaries come up automatically (content/remember.json). Tone: grief and anger, controlled. No calls to
+  violence, ever: the answer is accountability, courts, votes and peaceful protest (Article 37).
+
+CHURCH AND STATE
+- Scrutinise the relationship, not the faith: politicians handing out cash at the pulpit, clergy campaigning from
+  the altar, public money or favours flowing to religious bodies, laws written for religious organisations, faith
+  used to silence questions. Quote both the clergy who speak truth to power and those who sell it.
+- Never mock belief or believers, never a whole church or religion. Facts, dates, amounts, sources.
+
+SOUND HUMAN (Kenyans scroll past anything that smells of AI)
+- Write like a sharp Kenyan typing fast on their phone: short lines, contractions, Sheng where natural, one strong
+  opinion. Uneven rhythm is good. Don't make everything a neat list of three.
+- Never: em dashes, "it's not just X, it's Y", "in today's world", "delve", "navigate", "landscape", "unlock",
+  "elevate", "pivotal", "crucial", "harness", "foster", "here's the thing", "let's dive in". The checker blocks these.
+- Max one emoji per caption, often none. Hashtags only at the end, max three.
+
+PUBLIC OFFICE HOLDERS (criticise without fear, and without error)
+- Kenya's Constitution (Art. 33, 35) protects criticism of public officers. Defamation law and the Computer Misuse
+  and Cybercrimes Act still punish FALSE statements of fact, so every fact is sourced and exact.
+- Criticise PUBLIC CONDUCT only: decisions, spending, promises vs delivery, public statements, votes, attendance,
+  audit findings, court rulings. Never family, health, looks, tribe, faith or private life.
+- Attribute every serious finding to its source: "the Auditor-General found...", "the court ruled...", "the
+  Controller of Budget reports...". Never call anyone a thief, corrupt or a criminal yourself; say what the record says
+  (charged, convicted, flagged by audit) and only that.
+- Show their real photo when it is licensed: `person_photo` = "commons:File:<exact name>" (CC0, public domain or
+  CC BY on Wikimedia Commons), plus `person_role` (their office, max 60 chars). Unaltered: no editing, no mockery,
+  no AI images, no deepfakes. A post about a decision can name them in `who` / the body without a photo.
+- Facts, then the question that holds them to account ("Where is the money?"), then a legal action for the viewer
+  (read the report, ask your MP, attend the public participation forum). Never calls to violence or harassment.
 
 TONES TOOLBOX (use every one of them, on purpose)
 - Sarcasm & deadpan: "Only Sh304bn idle. Minor." Works because the fact underneath is real and sourced.
@@ -155,7 +254,7 @@ TONES TOOLBOX (use every one of them, on purpose)
 - Hype & celebration: go loud for African wins (Put Us On).
 - Warmth: sincere when someone could get hurt (Usiibiwe!, faith exploitation).
 - Rules: punch UP (systems, tactics, the powerful, outdated habits), never down (victims, the poor, ordinary
-  people, groups). Sarcasm about a situation, never about a named person.
+  people, groups). Sarcasm about a situation or a public decision, never about a person's character.
 
 MANIFESTO: Africa can't wait. Wake up, build, do it right. Energy, never despair.
 
@@ -164,7 +263,7 @@ EVERY INDUSTRY
   the tech or future angle (AI in music production, data in football, online selling in fashion...).
 
 BRAND AS FANDOM
-- Jua and the stick cast are characters with lore. Keep running jokes going week to week.
+- Recurring series and running lines build the fandom. Keep them going week to week.
 - Platform-native humour: self-aware, a little unhinged, never mean, never dirty.
 - Lo-fi relatable beats polished. Real builds (Build With Me) beat stock advice.
 - Values in action: Usiibiwe! protects people; free for everyone.
@@ -196,9 +295,13 @@ SERIES = {
     "cover": "Kesho Kutwa carousel cover: `series` = 'Kesho Kutwa', `lines` 2-4 short lines, `highlight` index.",
     "kesho": "Kesho Kutwa slide: one near-future change: `leo` (what exists today), `kesho` (what's coming), `anza` (try it now).",
     "poll": "Jua Asks story poll: a question anyone can answer with 2 options.",
-    "straight": "Set It Straight: a false or demeaning claim about Kenya/Africa (or a viral falsehood), answered with sourced facts. `claim` quoted exactly (max 120), `who` said it (max 44, e.g. 'a viral TikTok, May 2026'), `claim_source` where exactly, `verdict` false|misleading|missing_context, `truth` the headline fact (max 70), `proof` 2-3 short facts, `pride` a proud closing line (max 50), `source` for the facts.",
-    "money": "Follow the Money: one public-money number (`number` short like Sh304bn), `unit`, `what` it is, `why` it matters to a young person, `check` how to verify it themselves. Source required.",
-    "hack": "AI Hack (or `series`: 'See Through It' for manipulation literacy): one move that saves real time, levels up a skill, or helps you see through a trick. `hook` 7 words max, `moves` 2-4 concrete steps, `payoff` a punchy result line.",
+    "straight": "Set It Straight: a false or demeaning claim about Kenya/Africa (or a viral falsehood), answered with sourced facts. `claim` quoted exactly (max 120), `who` said it (max 44, e.g. 'a viral TikTok, May 2026'), `claim_source` where exactly, `verdict` false|misleading|missing_context, `truth` the headline fact (max 70), `proof` 2-3 short facts, `pride` a proud closing line (max 50), `source` for the facts. If a public office holder said it: `who` = 'Name, Office (where, date)', optional `person_photo` (commons:File:...) + `person_role`.",
+    "promise": "Promise Tracker: one specific, checkable promise by a named public office holder, quoted exactly (`promise`), `who` = 'Name, Office', `said` where and when (e.g. 'Kenya Kwanza manifesto, 2022'), `verdict` kept|partly|stalled|broken judged ONLY from official or reputable records, optional `measure` (max 16 chars, e.g. '0 of 6', '12%'), `reality` what the record shows, `proof` 1-3 sourced facts, `ask` the accountability question (max 60). `source` required, with every document. Judge every side by the same standard. Optional licensed `person_photo` + `person_role`.",
+    "sauti": "Sauti ya Mwananchi (the people's voice, our signature format): a real photo fills the post. `kicker` who is talking (max 24, e.g. 'Sisi wananchi', 'Tunauliza', 'Gen Z wanasema'), `line` the headline: what Kenyans are already thinking, in our voice, with one *marker* on the words that hit hardest and a sarcastic turn (max 120), `fact` the one sourced fact that proves it (max 150), `source` required, `photo_query` required (a real Kenyan scene that IS the feeling).",
+    "kumbuka": "Hatutasahau (We won't forget): one documented event where the state harmed Kenyans (protest killings, abductions, goons, deaths in custody). `date` (e.g. '25 June 2024'), `event` headline with one *marker* (max 100), `facts` 1-3 attributed facts (KNCHR, IPOA, courts, reputable media), `status` what accountability has followed (max 110), `ask` closing line (max 50, e.g. 'Hatutasahau.'), `source` with every link. Symbolic `photo_query` (candles, Kenyan flag, Parliament), never a stock crowd.",
+    "scorecard": "The Chapter Six Test: one leader or serious 2027 candidate (any side) measured against Chapter Six of the Constitution and their record. `who` name (max 40), `office` current office or seat sought (max 50), `checks` 3-5 of {test (max 40, e.g. 'Kept their key promise', 'Court cases', 'Divisive statements', 'Shows up in the House'), result pass|fail|unclear, note (max 80, the evidence)}, `verdict` one line (max 70, never 'vote for/against'), `source` for every check. Same tests for every side. Optional licensed `person_photo` + `person_role`.",
+    "money": "Follow the Money: one public-money number (`number` short like Sh304bn), `unit`, `what` it is, `why` it matters to a young person, `check` how to verify it themselves. Source required. Optional: the responsible office holder's licensed `person_photo` + `person_role` when the post is about their decision.",
+    "hack": "AI Hack, or the slot's `series` when given: 'Civic 101' = one thing every Kenyan should know about how the country works (rights, offices, budget, Parliament, elections, public participation) with 2-4 concrete steps, Constitution/Act/official source required; 'See Through It' = manipulation literacy. Otherwise: one move that saves real time, levels up a skill, or helps you see through a trick. `hook` 7 words max, `moves` 2-4 concrete steps, `payoff` a punchy result line.",
     "decode": "Decode: the tech word everyone's saying. `word`, `meaning` (plain, a bit witty), `try_this` (a concrete example), `number` (the Kamusi entry number).",
     "cap": "Cap or No Cap?: a claim young people hear online; verdict cap (false) | nocap (true) | kinda; `real` = the real talk.",
     "pov": "POV: Kesho: a near-future scenario written as a POV ('your AI agent ...'), `year`, `real` = what exists today. "
@@ -225,8 +328,6 @@ def _field_spec(template: str) -> dict:
         spec["highlight"] = "integer index of the line to colour"
     if template == "kesho":
         spec.update({"n": "slide number", "total": "total slides"})
-    if template in {"neno", "makanga", "ukweli", "tool", "usiibiwe", "cover"}:
-        spec["expr"] = f"mascot expression, one of {EXPRESSIONS}"
     return spec
 
 
@@ -248,25 +349,72 @@ def music_menu() -> str:
         tracks = json.loads((HERE / "content" / "music" / "tracks.json").read_text(encoding="utf-8")).get("tracks", [])
     except (OSError, ValueError):
         return ""
-    ok = [t for t in tracks if (HERE / "content" / "music" / str(t.get("file", ""))).exists() and len(str(t.get("rights", ""))) >= 8]
+    ok = [t for t in tracks if (HERE / "content" / "music" / str(t.get("file", ""))).exists()
+          and len(str(t.get("rights", ""))) >= 8 and t.get("clean") is True]
     if not ok:
         return ""
     rows = "\n".join(f"- {t['file']}: {t.get('artist')} - {t.get('title')} ({t.get('mood', 'any mood')})" for t in ok)
     return ("\n\nLICENSED MUSIC (optional \"track\" on reel posts; support the artist: tag them in the caption)\n" + rows)
 
 
-def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list[dict]) -> tuple[str, str]:
+def batches(slots: list[dict], size: int = 4) -> list[list[dict]]:
+    """Small batches keep each request inside the free tier and the writer focused. A carousel stays whole."""
+    units, seen = [], set()
+    for s in slots:
+        g = s.get("group")
+        if g:
+            if g not in seen:
+                seen.add(g)
+                units.append([x for x in slots if x.get("group") == g])
+        else:
+            units.append([s])
+    out, cur = [], []
+    for u in units:
+        if cur and len(cur) + len(u) > size:
+            out.append(cur)
+            cur = []
+        cur += u
+    return out + ([cur] if cur else [])
+
+
+def write_scripts(week_label: str, posts: list[dict]) -> dict:
+    """Radio, voice-note, SMS and reel scripts from the week's posts (one small extra request)."""
+    titles = "\n".join(f"- {p.get('template')}: {p.get('message') or p.get('title') or p.get('headline') or ''}" for p in posts)
+    ask = (f"This week's Jua Kesho posts ({week_label}):\n{titles}\n\nWrite, in Kenyan English, clean and grown-up: "
+           '"radio" (2-minute community radio segment, host Jua, ~250 words, Kiswahili summary at the end), '
+           '"voice_note" (60-second WhatsApp voice-note script), "sms" (the week\'s Usiibiwe tip, max 160 characters, no links), '
+           '"reels" (30-second voice-over for the Kesho Kutwa carousel). Return ONLY JSON {"radio": "...", "voice_note": "...", "sms": "...", "reels": "..."}.')
+    try:
+        if not can_afford(2500, 1500):
+            return {}
+        return extract_json(call_claude("You write scripts for Jua Kesho, a Kenyan content brand for young adults.", ask, max_tokens=2000))
+    except (ValueError, RuntimeError) as e:
+        print(f"  scripts skipped: {e}")
+        return {}
+
+
+def nickname_menu() -> str:
+    lines = [f"- {n['nickname']} [{n['kind']}]" + (f" = {n['name']}, {n['office']}" if n.get("name") else "") + f": {n['why']}"
+             for n in guard.NICKNAMES]
+    return "\nNICKNAMES (the only ones you may use)\n" + "\n".join(lines) + "\n"
+
+
+def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list[dict], scripts: bool = True) -> tuple[str, str]:
     lane_txt = "\n".join(f"- {k}: {v['who']}. Voice: {v['voice']}" for k, v in lanes.items())
     slot_txt = json.dumps([
-        {"id": s["id"], "template": s["template"], "lane": s["lane"], "series_brief": SERIES[s["template"]],
+        {"id": s["id"], "template": s["template"], "lane": s["lane"], **({"series": s["series"]} if s.get("series") else {}),
+         **({"anniversary": s["remember"]} if s.get("remember") else {}),
+         "series_brief": SERIES[s["template"]],
          "fields": _field_spec(s["template"])}
         for s in slots
     ], ensure_ascii=False, indent=1)
     ex_txt = json.dumps(examples, ensure_ascii=False, indent=1)
     import trends
-    import symbols
-    system = (BRAND_RULES + "\nAUDIENCE LANES\n" + lane_txt + "\n\nSYMBOL MENU (choose by meaning)\n" + symbols.menu()
-              + music_menu() + learnings_text() + trends.prompt_block())
+    system = (BRAND_RULES + "\nAUDIENCE LANES\n" + lane_txt + "\n" + nickname_menu() + music_menu() + learnings_text()
+              + trends.prompt_block())
+    scripts_block = ("Also write reach-everyone scripts: \"radio\" (2-minute community radio segment, host Jua, ~250 words, "
+                     "Kiswahili summary at the end), \"voice_note\" (60-second WhatsApp script), \"sms\" (the week's Usiibiwe tip, "
+                     "max 160 characters, no links), \"reels\" (30-second voice-over for the Kesho Kutwa carousel).") if scripts else ""
     user = f"""Write week {week_label}. Fill every slot below. Keep each post's `id` and `template` exactly.
 Posts in the same carousel must tell one story in order. Don't repeat topics from the examples.
 
@@ -276,16 +424,11 @@ SLOTS
 EXAMPLES OF FINISHED POSTS (style reference only)
 {ex_txt}
 
-Also write reach-everyone scripts from this week's content:
-- "radio": a 2-minute community radio segment, host is Jua (about 250 words). Simple Kenyan English with a Kiswahili summary at the end.
-- "voice_note": a 60-second WhatsApp voice-note script in relaxed Kenyan English.
-- "sms": the week's Usiibiwe tip as one SMS, max 160 characters, no links.
-- "reels": a 30-second voice-over for the Kesho Kutwa carousel.
+{scripts_block}
 
 Return ONLY JSON, no commentary:
-Every post also needs "message" (the one takeaway, max 120 chars) and "symbol" (from the SYMBOL MENU; not for
-vichekesho or pov). Add "photo_query" only where a real photo adds truth (max 3 posts a week).
-{{"posts": [{{"id": "...", "template": "...", "lane": "...", "message": "...", "symbol": "...", "caption": "...", "source": "...(when needed)", "...fields": "..."}}],
+Every post also needs "message" (the one takeaway, max 120 chars) and, almost always, "photo_query" (a real scene).
+{{"posts": [{{"id": "...", "template": "...", "lane": "...", "message": "...", "photo_query": "...", "caption": "...", "source": "...(when needed)", "...fields": "..."}}],
  "scripts": {{"radio": "...", "voice_note": "...", "sms": "...", "reels": "..."}}}}"""
     return system, user
 
@@ -301,7 +444,7 @@ SPEND = {"usd": 0.0, "calls": 0}
 
 
 def critic_model() -> str:
-    return (os.environ.get("JUA_CRITIC_MODEL") or "").strip() or CRITIC_MODEL
+    return (os.environ.get("JUA_CRITIC_MODEL") or "").strip() or (GITHUB_CRITIC if provider() == "github" else CRITIC_MODEL)
 
 
 def budget() -> float:
@@ -312,6 +455,8 @@ def budget() -> float:
 
 
 def _price(model: str) -> tuple[float, float]:
+    if provider() == "github":
+        return (0.0, 0.0)   # GitHub Models free tier
     return next((v for k, v in PRICES.items() if k in model), max(PRICES.values()))
 
 
@@ -319,12 +464,74 @@ def can_afford(est_in: int, est_out: int, model: str | None = None) -> bool:
     """Optional passes (critic, rewrites, repairs) only run while the week stays under JUA_WEEKLY_BUDGET_USD."""
     pin, pout = _price(model or model_id())
     ok = SPEND["usd"] + (est_in * pin + est_out * pout) / 1e6 <= budget()
+    if provider() == "github":
+        ok = SPEND["calls"] < GITHUB_LIMITS["calls"] - 2   # keep calls in hand for repairs
     if not ok:
         print(f"  budget: skipping an optional pass (spent ${SPEND['usd']:.3f} of ${budget():.2f})")
     return ok
 
 
+GITHUB_URL = "https://models.github.ai/inference/chat/completions"
+GITHUB_MODELS = ["openai/gpt-4.1", "openai/gpt-4o"]   # tried in order; set JUA_MODEL to pin one
+GITHUB_CRITIC = "openai/gpt-4o-mini"                   # low-tier model: 150 free requests/day
+GITHUB_LIMITS = {"out": 4000, "calls": 40, "pause": 6.5}  # free tier: 4,000 tokens out, 50 calls/day, 10/min
+
+
+def provider() -> str:
+    """'github' (free, default: GitHub Models through the Actions token) or 'anthropic' (paid, best Kenyan voice)."""
+    return "anthropic" if (os.environ.get("JUA_PROVIDER") or "").strip().lower() == "anthropic" else "github"
+
+
 def call_claude(system: str, user: str, max_tokens: int = 12000, model: str | None = None) -> str:
+    """The one way the system talks to an AI. Routes to the free provider unless Anthropic is chosen."""
+    if provider() == "github":
+        return _github(system, user, min(max_tokens, GITHUB_LIMITS["out"]), model)
+    return _anthropic(system, user, max_tokens, model)
+
+
+def _github(system: str, user: str, max_tokens: int, model: str | None) -> str:
+    token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_MODELS_TOKEN")
+    if not token:
+        raise RuntimeError("GITHUB_TOKEN is not set (in Actions it's automatic; locally use a token with models:read)")
+    if SPEND["calls"] >= GITHUB_LIMITS["calls"]:
+        raise RuntimeError("free-tier call cap reached for this run")
+    pinned = (os.environ.get("JUA_MODEL") or "").strip()
+    models = [model] if model and model != model_id() else ([pinned] if pinned and "/" in pinned else GITHUB_MODELS)
+    if SPEND["calls"]:
+        time.sleep(GITHUB_LIMITS["pause"])   # stay under 10 requests a minute
+    last = None
+    for m in models:
+        body = json.dumps({"model": m, "max_tokens": max_tokens, "temperature": 0.8,
+                           "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}).encode()
+        req = urllib.request.Request(GITHUB_URL, data=body, method="POST", headers={
+            "Authorization": f"Bearer {token}", "Content-Type": "application/json", "Accept": "application/json"})
+        for attempt in range(4):
+            try:
+                with urllib.request.urlopen(req, timeout=300) as r:
+                    data = json.loads(r.read())
+                SPEND["calls"] += 1
+                choice = (data.get("choices") or [{}])[0]
+                if choice.get("finish_reason") == "length":
+                    raise RuntimeError("free model: reply was cut off (batch too big)")
+                return (choice.get("message") or {}).get("content") or ""
+            except urllib.error.HTTPError as e:
+                detail = e.read().decode(errors="replace")[:300]
+                if e.code in (429, 500, 502, 503, 504) and attempt < 3:
+                    time.sleep(float(e.headers.get("retry-after") or 0) or 20 * 2 ** attempt)
+                    continue
+                last = RuntimeError(f"GitHub Models {e.code} ({m}): {detail}")
+                if e.code in (400, 404) and ("model" in detail.lower()):
+                    break   # this model isn't available: try the next one
+                raise last from e
+            except (urllib.error.URLError, TimeoutError) as e:
+                if attempt < 3:
+                    time.sleep(15 * 2 ** attempt)
+                    continue
+                raise RuntimeError(f"GitHub Models unreachable: {e}") from e
+    raise last or RuntimeError("no GitHub model available")
+
+
+def _anthropic(system: str, user: str, max_tokens: int = 12000, model: str | None = None) -> str:
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         raise RuntimeError("ANTHROPIC_API_KEY is not set (use --mock to test without it)")
@@ -380,9 +587,39 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     out = []
     for s in slots:
         d = by_id.get(s["id"], {})
-        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total") if k in s}
+        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember") if k in s}
         out.append({**d, **locked})
     return out
+
+
+# Rehearsal-only stand-ins for templates the launch set doesn't include. Fictional and labelled as samples:
+# never published (mock weeks run with --dry-run), never real claims about real people.
+MOCK_SAMPLES = {
+    "promise": {
+        "template": "promise", "who": "Sample Name, County Governor", "promise": "Every ward will have a working health centre within two years.",
+        "said": "Campaign rally, 2022 (sample)", "verdict": "stalled", "measure": "4 of 30",
+        "reality": "Rehearsal sample, not real data: four of thirty planned ward health centres are open, says the county's own report.",
+        "proof": ["The county budget funded 30 centres.", "Less than a fifth of that money was spent.", "Four centres had opened by June."],
+        "ask": "Where are the other 26?", "source": "Rehearsal sample: not real data", "message": "A promised health centre in every ward is stalled at 4 of 30.",
+        "caption": "Promise Tracker (rehearsal sample). Share this with someone in your ward.\n\n#JuaKesho",
+    },
+    "kumbuka": {
+        "template": "kumbuka", "date": "1 January 2000", "event": "Rehearsal sample: an *event* the state wants us to forget",
+        "facts": ["Sample fact one, attributed to its source.", "Sample fact two, attributed to its source."],
+        "status": "Rehearsal sample, not real data: no one has been charged.", "ask": "Hatutasahau.",
+        "source": "Rehearsal sample: not real data", "message": "Rehearsal sample.", "photo_query": "candles at night",
+        "caption": "Hatutasahau (rehearsal sample). Share this.\n\n#JuaKesho",
+    },
+    "scorecard": {
+        "template": "scorecard", "who": "Sample Name", "office": "Member of Parliament (sample)",
+        "checks": [{"test": "Kept their key promise", "result": "fail", "note": "Rehearsal sample: the promised road is unfinished."},
+                   {"test": "Court cases", "result": "pass", "note": "Rehearsal sample: none on record."},
+                   {"test": "Divisive statements", "result": "unclear", "note": "Rehearsal sample: one disputed clip."}],
+        "verdict": "Rehearsal sample: judge the record, then decide.", "source": "Rehearsal sample: not real data",
+        "message": "Rehearsal sample.", "photo_query": "Kenya parliament building",
+        "caption": "The Chapter Six Test (rehearsal sample). Share this.\n\n#JuaKesho",
+    },
+}
 
 
 def mock_draft(slots: list[dict]) -> dict:
@@ -390,6 +627,8 @@ def mock_draft(slots: list[dict]) -> dict:
     library = {}
     for p in json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"]:
         library.setdefault(p["template"], p)
+    for tpl, sample in MOCK_SAMPLES.items():
+        library.setdefault(tpl, sample)
     posts = []
     for s in slots:
         base = {k: v for k, v in library.get(s["template"], {}).items() if k not in {"id", "bg", "size"}}
@@ -402,15 +641,17 @@ def mock_draft(slots: list[dict]) -> dict:
 
 CRITIC_BAR = 7.5
 CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio. Score each post 1-10 on:
-- hook: would a 22-year-old in Nairobi stop scrolling within 2 seconds?
+- hook: would a 22-year-old in Nairobi stop scrolling within 2 seconds? does it say what Kenyans are already
+  thinking, instead of teaching from above?
 - send: is there an obvious person they'd DM this to? (sends drive reach)
 - clarity: a stranger can say exactly what this post is about from the headline alone (plain topic words,
   no vague teaser headlines, no jargon), one idea only
 - fresh: not generic advice they've seen 100 times; a real angle, a real Kenyan detail
-- voice: sounds like a sharp Kenyan friend (Kenyan English), not a textbook or an ad
+- voice: sounds like Kenyans talking among themselves ("we", "sisi"), sharp and sarcastic about the system,
+  never a lecture, a textbook, a kids' show or an ad
 - craft: every word earns its place; the payoff lands
-- picture: do the chosen `symbol` and the headline ALONE deliver the `message` in one second? (a decorative or
-  vague symbol scores low; posts without a symbol field are comics/scenes: judge the scene)
+- picture: do the `photo_query` scene and the headline ALONE deliver the `message` in one second? (a generic or
+  decorative scene scores low; a concrete, real scene that IS the message scores high)
 - hold: would they read or watch to the end? each line pays off the last and opens the next
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
 {"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n,
@@ -420,12 +661,17 @@ Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
 def critique(posts: list[dict]) -> dict[str, dict]:
     """Scores posts against the masterpiece rubric. Returns {id: {..scores, avg, note}}."""
     payload = [{k: v for k, v in p.items() if k not in {"status", "guard", "publish_at", "bg", "seed"}} for p in posts]
-    body = json.dumps(payload, ensure_ascii=False)
-    if not can_afford(len(body) // 3 + 900, 150 * len(posts), critic_model()):
-        return {}
-    raw = extract_json(call_claude(CRITIC_RUBRIC, body, max_tokens=4000, model=critic_model()))
+    scores = []
+    for i in range(0, len(payload), 4):
+        body = json.dumps(payload[i:i + 4], ensure_ascii=False)
+        if not can_afford(len(body) // 3 + 900, 150 * len(payload[i:i + 4]), critic_model()):
+            break
+        try:
+            scores += extract_json(call_claude(CRITIC_RUBRIC, body, max_tokens=2000, model=critic_model())).get("scores", [])
+        except (ValueError, RuntimeError) as e:   # a failed score never blocks the week
+            print(f"  critic batch skipped: {e}")
     out = {}
-    for s in raw.get("scores", []):
+    for s in scores:
         keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold")
         vals = [float(s[k]) for k in keys if isinstance(s.get(k), (int, float))] or [0.0]
         out[s.get("id")] = {**{k: s.get(k) for k in keys}, "avg": round(sum(vals) / len(vals), 1), "note": s.get("note", "")}
@@ -442,8 +688,15 @@ def elevate(week_label: str, slots: list[dict], lanes: dict, posts: list[dict]) 
         ask = ("An editor scored these posts below our bar. Rewrite each one to fix the note, keeping id, template "
                "and every required field. Make it genuinely better, not just different. Return JSON {\"posts\": [...]}.\n\n"
                + notes + "\n\nPosts:\n" + json.dumps(weak, ensure_ascii=False))
-        rewritten = _merge([s for s in slots if s["id"] in {p["id"] for p in weak}],
-                           extract_json(call_claude(system, ask)).get("posts", []))
+        got = []
+        for i in range(0, len(weak), 3):
+            part = weak[i:i + 3]
+            part_ask = ask.split("\n\nPosts:\n")[0] + "\n\nPosts:\n" + json.dumps(part, ensure_ascii=False)
+            try:
+                got += extract_json(call_claude(system, part_ask, max_tokens=4000)).get("posts", [])
+            except (ValueError, RuntimeError) as e:
+                print(f"  rewrite batch skipped: {e}")
+        rewritten = _merge([s for s in slots if s["id"] in {p["id"] for p in got}], got)
         checked = {r.id: r for r in guard.check_all(rewritten)}
         better = {p["id"]: p for p in rewritten if checked[p["id"]].ok}
         if better:
@@ -494,9 +747,12 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
     if mock:
         result = mock_draft(slots)
     else:
-        examples = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"][:4]
-        system, user = build_prompt(week_label, slots, lanes, examples)
-        result = extract_json(call_claude(system, user))
+        examples = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"][:3]
+        result = {"posts": [], "scripts": {}}
+        for batch in batches(slots):
+            system, user = build_prompt(week_label, batch, lanes, examples, scripts=False)
+            result["posts"] += extract_json(call_claude(system, user, max_tokens=4000)).get("posts", [])
+        result["scripts"] = write_scripts(week_label, result["posts"])
 
     posts = _merge(slots, result.get("posts", []))
     reports = guard.check_all(posts)
