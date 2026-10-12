@@ -10,7 +10,8 @@ Individual steps: plan, draft, render, ask, collect, publish.
 
 Every post moves through:
   planned → drafted → rendered → awaiting → approved → published
-                 ↘ needs_human (guard failed)   ↘ rejected   ↘ publish_failed (retried up to 3x)
+                 ↘ needs_human (guard failed)   ↘ rejected   ↘ manual (you post it in the app, with a trending sound)
+                                                              ↘ publish_failed (retried up to 3x)
 
 State lives in content/weeks/<week>.json, so every step is safe to re-run.
 Nothing is published without a human tap on ✅ in Telegram.
@@ -321,11 +322,11 @@ def tg(method: str, fields: dict | None = None, files: dict | None = None) -> di
     return res
 
 
-def _buttons(key: str) -> str:
-    return json.dumps({"inline_keyboard": [[
-        {"text": "✅ Approve", "callback_data": f"a|{key}"},
-        {"text": "❌ Reject", "callback_data": f"r|{key}"},
-    ]]})
+def _buttons(key: str, reel: bool = False) -> str:
+    row = [{"text": "✅ Approve", "callback_data": f"a|{key}"}, {"text": "❌ Reject", "callback_data": f"r|{key}"}]
+    if reel:   # real, trending music only exists inside the apps: post it by hand and pick the sound there
+        row.append({"text": "🎵 I'll post it", "callback_data": f"m|{key}"})
+    return json.dumps({"inline_keyboard": [row]})
 
 
 def _preview_text(p: dict) -> str:
@@ -389,7 +390,7 @@ def ask(label: str, dry_run: bool = False) -> dict:
             log(f"[dry-run] would send {p['id']}{' (reel)' if p.get('reel') else ''}")
         elif p.get("reel"):
             tg("sendVideo", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML", "supports_streaming": "true",
-                             "reply_markup": _buttons(f"{label}|{p['id']}")},
+                             "reply_markup": _buttons(f"{label}|{p['id']}", reel=True)},
                {"video": out_dir / f"{p['id']}.mp4"})
         else:
             tg("sendPhoto", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML",
@@ -408,12 +409,13 @@ def ask(label: str, dry_run: bool = False) -> dict:
 # ---------------------------------------------------------------------------
 # 5. Collect approvals
 # ---------------------------------------------------------------------------
-def apply_decision(data: dict, key: str, approve: bool) -> list[str]:
-    """key = post id or carousel group id. Returns the ids changed."""
+def apply_decision(data: dict, key: str, approve: bool | str) -> list[str]:
+    """key = post id or carousel group id; approve = True / False / "manual" (you post it in the app).
+    Returns the ids changed."""
     changed = []
     for p in data["posts"]:
         if (p["id"] == key or p.get("group") == key) and p["status"] == "awaiting":
-            p["status"] = "approved" if approve else "rejected"
+            p["status"] = "manual" if approve == "manual" else "approved" if approve else "rejected"
             p["decided_at"] = now().isoformat()
             changed.append(p["id"])
     return changed
@@ -440,9 +442,17 @@ def collect() -> None:
         if not week_file(label).exists():
             continue
         data = weeks.setdefault(label, load_week(label))
-        changed = apply_decision(data, key, action == "a")
-        verdict = "Approved ✅" if action == "a" else "Rejected ❌"
+        changed = apply_decision(data, key, "manual" if action == "m" else action == "a")
+        verdict = {"a": "Approved ✅", "m": "Yours to post 🎵"}.get(action, "Rejected ❌")
         tg("answerCallbackQuery", {"callback_query_id": cq["id"], "text": f"{verdict} ({len(changed)})"})
+        if action == "m" and changed:
+            post = next(q for q in data["posts"] if q["id"] == changed[0])
+            from html import escape as esc
+            tg("sendMessage", {"chat_id": allowed_chat, "parse_mode": "HTML", "text": (
+                "🎵 <b>Post this Reel yourself</b> (the bot won't): save the video above, then in Instagram or TikTok "
+                "tap <b>Add audio</b>, pick a trending Kenyan sound, and turn <b>Original audio</b> down to 0. "
+                "The platform licenses that music, so it won't be muted. Caption to paste:\n\n"
+                f"<code>{esc(caption_for(post))[:3500]}</code>")})
         log(f"{verdict}: {key}")
     for data in weeks.values():
         save_week(data)

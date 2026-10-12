@@ -23,7 +23,7 @@ from pathlib import Path
 SCHEMAS: dict[str, dict[str, int]] = {
     "intro":    {"hello": 30, "community": 90},
     "neno":     {"word": 14, "full": 34, "say": 20, "sw": 120, "en": 110, "note": 60, "example": 130},
-    "makanga":  {"topic": 22, "like": 34, "explain": 190, "punch": 60},
+    "makanga":  {"topic": 22, "like": 34, "explain": 130, "punch": 60},
     "ukweli":   {"claim": 60, "verdict_text": 18, "truth": 160},
     "tool":     {"title": 40, "warn": 50},
     "usiibiwe": {"title": 50, "sender": 24, "sms": 120},
@@ -31,23 +31,23 @@ SCHEMAS: dict[str, dict[str, int]] = {
     "africa":   {"year": 4, "name": 16, "country": 16, "fact": 170, "now": 50},
     "hapa":     {"topic": 34, "hapa": 110, "huko": 110, "ask": 60},
     "cover":    {"series": 20, "kicker": 40},
-    "kesho":    {"headline": 60, "leo": 120, "kesho": 120, "anza": 110},
+    "kesho":    {"headline": 60, "leo": 100, "kesho": 100, "anza": 110},
     "poll":     {"question": 40, "cta": 30},
     "vichekesho": {"title": 30, "punch": 50},
     "hack":     {"hook": 40, "title": 60, "payoff": 50},
-    "decode":   {"hook": 40, "word": 14, "meaning": 130, "try_this": 140},
-    "cap":      {"claim": 70, "real": 170},
+    "decode":   {"hook": 40, "word": 14, "meaning": 110, "try_this": 140},
+    "cap":      {"claim": 70, "real": 120},
     "pov":      {"year": 4, "pov": 110, "real": 150},
     "build":    {"hook": 40, "title": 60, "result": 60},
     "glasspoll": {"hook": 30, "question": 40, "cta": 30},
-    "still":    {"industry": 16, "thing": 70, "old": 110, "new": 130, "cta": 50},
-    "spotlight": {"kind": 14, "name": 22, "country": 20, "what": 140, "why": 130, "cta": 50},
-    "money":    {"hook": 40, "number": 14, "unit": 40, "what": 140, "why": 120, "check": 110},
+    "still":    {"industry": 16, "thing": 70, "old": 90, "new": 100, "cta": 50},
+    "spotlight": {"kind": 14, "name": 22, "country": 20, "what": 110, "why": 100, "cta": 50},
+    "money":    {"hook": 40, "number": 14, "unit": 40, "what": 110, "why": 100, "check": 90},
     "straight": {"claim": 120, "who": 60, "truth": 70, "pride": 50, "claim_source": 240, "source": 240},
-    "kumbuka":  {"date": 24, "event": 100, "status": 110, "ask": 50, "source": 240},
+    "kumbuka":  {"date": 24, "event": 100, "status": 90, "ask": 50, "source": 240},
     "scorecard": {"who": 40, "office": 50, "verdict": 70, "source": 240},
-    "sauti":    {"kicker": 24, "line": 120, "fact": 150, "source": 240},
-    "promise":  {"who": 60, "promise": 120, "said": 50, "reality": 160, "ask": 60, "source": 240},
+    "sauti":    {"kicker": 24, "line": 120, "fact": 110, "source": 240},
+    "promise":  {"who": 60, "promise": 120, "said": 50, "reality": 120, "ask": 60, "source": 240},
     "avatar":   {},
     "banner":   {"line": 40, "sub": 50},
 }
@@ -76,6 +76,9 @@ FACT_TEMPLATES = {"africa", "hapa", "usiibiwe", "kesho", "pov", "cap", "spotligh
 SYMBOL_TEMPLATES = {"hack", "decode", "cap", "usiibiwe", "still", "glasspoll", "cover", "kesho", "spotlight",
                     "money", "build", "straight", "africa", "tool", "ukweli", "neno", "hapa", "shosh", "makanga", "poll"}
 CIVIC_SERIES = {"money", "See Through It"}  # must carry a source
+# Posts whose Reel should be told in beats (one punchy line at a time)
+REEL_FIRST = {"sauti", "straight", "promise", "kumbuka", "scorecard", "money", "usiibiwe", "cap", "decode", "hack",
+              "still", "africa", "spotlight", "makanga"}
 # Feed posts that should always carry a real photo (the design is photo-first)
 PHOTO_FIRST = {"kumbuka", "scorecard", "sauti", "hack", "decode", "cap", "money", "still", "straight", "promise", "africa", "spotlight", "usiibiwe", "cover"}
 # Real, named people may appear with their licensed photo: celebrated (spotlight) or on the public record
@@ -285,6 +288,19 @@ def check(post: dict) -> Report:
                     rep.errors.append(f"checks[{i}] needs result pass|fail|unclear")
                 elif not 3 <= len(str(c.get("test", ""))) <= 40 or not 3 <= len(str(c.get("note", ""))) <= 80:
                     rep.errors.append(f"checks[{i}]: `test` max 40 chars and `note` max 80 chars, both required")
+    beats = post.get("beats")
+    if beats is not None:
+        if not isinstance(beats, list) or not 3 <= len(beats) <= 6:
+            rep.errors.append("'beats' (the Reel script) needs 3-6 short lines")
+        else:
+            for i, b in enumerate(beats):
+                words = len(str(b).replace("*", "").split())
+                if not isinstance(b, str) or len(b.replace("*", "")) > 44 or words > 8:
+                    rep.errors.append(f"beats[{i}] must be one punchy line: max 8 words / 44 characters")
+                elif str(b).count("*") % 2:
+                    rep.errors.append(f"beats[{i}]: unbalanced *marker*")
+    elif tpl in REEL_FIRST:
+        rep.warnings.append("no `beats`: the Reel falls back to the animated card (write 3-6 punchy lines)")
     if tpl == "promise" and len(str(post.get("measure") or "")) > 16:
         rep.errors.append("'measure' is over 16 chars (e.g. '0 of 6', '12%')")
     for w in BLOCK:

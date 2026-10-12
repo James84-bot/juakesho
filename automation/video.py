@@ -35,6 +35,23 @@ FPS = 30
 MIN_S, MAX_S = 6.0, 14.0
 READ_WPS = 3.6            # on-screen reading speed for young, fast readers (words/s)
 SKIP_TEMPLATES = {"avatar", "banner"}
+# Serious topics get the urgent bed; good news keeps the kalimba-and-benga one
+URGENT_TEMPLATES = {"sauti", "straight", "promise", "kumbuka", "scorecard", "money", "usiibiwe", "cap", "still"}
+KICKERS = {"sauti": "Sauti ya Mwananchi", "straight": "Set It Straight", "promise": "Promise Tracker", "kumbuka": "Hatutasahau",
+           "scorecard": "Chapter Six Test", "money": "Follow the Money", "usiibiwe": "Scam alert", "cap": "Cap or No Cap?",
+           "still": "Still in 2026?", "decode": "Decode", "spotlight": "Put Us On", "africa": "Made in Africa",
+           "hack": "Civic 101", "makanga": "Explained", "cover": "Kesho Kutwa", "glasspoll": "Jua Asks", "build": "Build With Me"}
+
+
+def beat_reel(post: dict) -> dict | None:
+    """The beat-by-beat Reel version of a post, when the writer gave it a script (`beats`)."""
+    beats = [b for b in (post.get("beats") or []) if isinstance(b, str) and b.strip()]
+    if len(beats) < 3:
+        return None
+    reel = {k: v for k, v in post.items() if k not in {"template", "size", "ink"}}
+    reel.update(template="reel", size="story", beats=beats,
+                kicker=post.get("series") or KICKERS.get(post["template"], "Jua Kesho"))
+    return reel
 
 
 def ffmpeg_bin() -> str:
@@ -91,19 +108,26 @@ def _frame_worker(args) -> int:
 MUSIC = HERE / "content" / "music"
 
 
-def music_track(post: dict) -> dict | None:
-    """The licensed track a post asked for, if it's registered with rights and present (else the original bed)."""
-    name = post.get("track")
-    if not name:
-        return None
+def _library() -> list[dict]:
+    """Real tracks we may use: recorded rights, confirmed clean lyrics, file present."""
     try:
         reg = json.loads((MUSIC / "tracks.json").read_text(encoding="utf-8")).get("tracks", [])
     except (OSError, ValueError):
-        return None
-    # Only with recorded rights AND confirmed clean lyrics in the part we use (clean for everyone applies to sound too)
-    t = next((t for t in reg if t.get("file") == name and len(str(t.get("rights", ""))) >= 8 and t.get("clean") is True), None)
-    path = MUSIC / Path(str(name)).name
-    return {**t, "path": path} if t and path.exists() else None
+        return []
+    return [{**t, "path": MUSIC / Path(str(t.get("file", ""))).name} for t in reg
+            if len(str(t.get("rights", ""))) >= 8 and t.get("clean") is True and (MUSIC / Path(str(t.get("file", ""))).name).is_file()]
+
+
+def music_track(post: dict) -> dict | None:
+    """Real music for the Reel: the track the post asked for, else one from the licensed library that fits the
+    mood (urgent for civic posts, uplifting for good news), chosen the same way every time for the same post.
+    Nothing licensed: the original synthesised bed."""
+    lib = _library()
+    if post.get("track"):
+        return next((t for t in lib if t["file"] == post["track"]), None)
+    mood = "urgent" if post.get("template") in URGENT_TEMPLATES else "uplifting"
+    fits = [t for t in lib if t.get("mood", "any") in {mood, "any"}]
+    return fits[zlib.crc32(post["id"].encode()) % len(fits)] if fits else None
 
 
 def mix_track(ff: str, track: dict, dur: float, out: Path) -> None:
@@ -126,14 +150,20 @@ def workers() -> int:
 
 def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
     is_story = post.get("size", "post") == "story"
-    if post.get("symbol") and not post.get("symbol_box"):
-        render.place_symbol(page, env, post, out_dir)  # same spot as the still design
-    html = render.build_html(env, post, motion=True, reel=not is_story)
+    beats = beat_reel(post)
+    if beats:   # the Reel is its own script: one punchy line at a time, over the real photo
+        html = render.build_html(env, beats, motion=True, reel=False)
+        starts, t = [], 0.0
+        for b in beats["beats"]:
+            starts.append(t)
+            t += render.beat_seconds(b)
+    else:
+        html = render.build_html(env, post, motion=True, reel=not is_story)
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         (tmp / "page.html").write_text(html, encoding="utf-8")
         _open(page, tmp / "page.html")
-        dur = duration_for(post, page.evaluate("window.__motionEnd()"))
+        dur = round(t + 1.2, 2) if beats else duration_for(post, page.evaluate("window.__motionEnd()"))
         frames = int(dur * FPS)
         w, h = (1080, 1920)
         n = workers()
@@ -145,6 +175,8 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         if track:   # an artist's track we have permission for: chime first, then their hook
             mix_track(ff, track, dur, tmp / "audio.wav")
             post["track_credit"] = f"{track['artist']} - {track['title']} (used with permission)"
+        elif post["template"] in URGENT_TEMPLATES:
+            sound.write_wav(sound.tension(dur, starts if beats else [0.0], seed), tmp / "audio.wav")
         else:
             sound.write_wav(sound.bed(dur, seed), tmp / "audio.wav")
         target_mp4 = out_dir / f"{post['id']}.mp4"
@@ -156,9 +188,10 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
                "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
                "-shortest", "-movflags", "+faststart", str(target_mp4)]
         subprocess.run(cmd, check=True)
-        # Cover frame: the fully-built design, for the Reel thumbnail
+        # Cover frame: the hook line fully landed (beat Reels), or the fully-built design
         from PIL import Image
-        Image.open(tmp / f"f{frames - 1:04d}.jpg").convert("RGB").save(out_dir / f"{post['id']}-cover.jpg", quality=90)
+        cover = min(frames - 1, int((min(1.2, render.beat_seconds(beats["beats"][0]) - 0.2)) * FPS)) if beats else frames - 1
+        Image.open(tmp / f"f{cover:04d}.jpg").convert("RGB").save(out_dir / f"{post['id']}-cover.jpg", quality=90)
     return target_mp4
 
 

@@ -343,13 +343,13 @@ def build_body() -> str:
 
   <section id="motion" class="sec" aria-labelledby="t-motion">
     <p class="kicker">11</p><h2 id="t-motion">Motion &amp; sound</h2>
-    <p class="note">Every post also ships as a 9:16 Reel. Calm and quick, like a news package: the photo settles, the headline rises word by word, rows arrive in reading order, rules draw across, numbers count up. The hook is on screen from frame zero, inside the platform safe zone.</p>
+    <p class="note">Every post ships as a 9:16 Reel told in <b>beats</b>: 3&ndash;6 lines of at most 8 words, one at a time, full screen over the real photo. Hook, receipt, what it means for us, the sting, the action. Words slam in, the hardest word lands on the red marker, a bar counts down each line. No paragraphs, ever.</p>
     <div class="reels">{reel_strip}</div>
     <ul class="cards">
-      <li><b>Sonic logo</b><span>A three-note rising chime opens every Reel.</span></li>
-      <li><b>Original bed</b><span>Kalimba and a benga-style guitar, synthesised in code: no licence needed.</span></li>
-      <li><b>African artists</b><span>15 seconds of a track with the artist's permission, credited in the caption.</span></li>
-      <li><b>Trending sounds</b><span>Added by hand in the app from the platform's licensed library, never baked in.</span></li>
+      <li><b>Trending sounds</b><span>The strongest reach. Tap &ldquo;🎵 I'll post it&rdquo; on Telegram, then add a trending Kenyan sound in the app (the platform licenses it) and mute the original audio.</span></li>
+      <li><b>Real tracks, licensed</b><span>Kenyan artists with permission, Pixabay Music, or CC&nbsp;BY tracks in <code>content/music</code>: picked automatically by mood (urgent or uplifting) and credited.</span></li>
+      <li><b>Never</b><span>Popular songs baked into auto-posted videos: they get muted or taken down, and strikes hurt the account.</span></li>
+      <li><b>Fallback</b><span>With no licensed track, an original synthesised bed: a tense pulse for civic posts, kalimba and benga for good news.</span></li>
     </ul>
   </section>
 
