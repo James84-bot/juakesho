@@ -109,6 +109,30 @@ BANNED_TOPICS = {
                   r"scammers|animals|lazy|stupid|dogs|monkeys|dirty)|(all|every) (nigerians?|south africans?|ugandans?|"
                   r"tanzanians?) (are|is) (a )?(scammers?|thieves?|criminals?)|yahoo boys? (all|every))\b",
 }
+ACRONYM_OK = {"MP", "MPS", "MCA", "MCAS", "IEBC", "KSH", "KES", "CS", "PS", "DCI", "IPOA", "KNCHR", "EACC", "ODM", "UDA",
+              "DCP", "KRA", "NHIF", "SHA", "SHIF", "HELB", "CBD", "KPLC", "NTSA", "TSC", "KUCCPS", "CDF", "NG-CDF", "GDP",
+              "US", "UK", "AU", "UN", "IMF", "AI", "ID", "OK", "TV", "FM", "M-PESA", "KOT", "GEN", "Z", "CEO", "IPO", "NYS",
+              "LSK", "COTU", "KMPDU", "KNUT", "JSS", "CBC", "KCSE", "KCPE", "TIFA", "WHO", "EU", "USA", "SA", "DRC", "SGR"}
+
+
+def _shouting(texts: list[str] | str) -> str:
+    """'' if the copy is calm; otherwise what is too loud. Each piece (design text, caption) is judged on its own."""
+    texts = [texts] if isinstance(texts, str) else texts
+    text = " ".join(texts)
+    found = []
+    caps = sorted({w for w in re.findall(r"[A-Za-z][A-Za-z'-]*", text) if len(w) >= 3 and w.isupper() and w.upper() not in ACRONYM_OK})
+    if len(caps) >= 3:
+        found.append("words in capitals (" + ", ".join(caps[:4]) + ")")
+    if re.search(r"!{2,}|\?!|!\?", text) or any(t.count("!") > 2 for t in texts):
+        found.append("too many exclamation marks")
+    m = re.search(r"\b(breaking|urgent|shocking|you won'?t believe|must watch|share before|before it'?s deleted)\b", text, re.I)
+    if m:
+        found.append(f"'{m.group(0)}'")
+    if len(re.findall("[\U0001F6A8\u203C\u2757\u26A0\U0001F525\U0001F4E2]", text)) > 1:
+        found.append("alarm emojis")
+    return "; ".join(found)
+
+
 SWAHILI_FILLERS = ["wueh", "aki", "bana", "mambo ni mengi", "hii nchi", "kwani ni kesho", "manze", "si ndio",
                    "very normal country", "we move"]
 # Words and habits that make copy read machine-written. Kenyans scroll past anything that smells of AI.
@@ -295,6 +319,10 @@ def check(post: dict) -> Report:
                                         r"2027|deserves?|should lead|best (leader|candidate))", poll_text, re.I):
         rep.errors.append("candidate-preference poll: we never run 'who will you vote for / who will win' polls; "
                           "ask about an issue or a leader's record, and report professional polls with their method")
+    # urgent, never shouty: capitals, stacked "!", BREAKING-style labels and alarm emojis read as clickbait
+    loud = _shouting([text, str(post.get("caption", ""))])
+    if loud:
+        rep.errors.append(f"shouting reads as clickbait: {loud} (let the numbers carry the urgency)")
     # stock Swahili and slang fillers are the loudest "AI wrote this" tell: none of them, ever
     fillers = [f for f in SWAHILI_FILLERS if re.search(rf"(?<![\w]){re.escape(f)}(?![\w])", low)]
     if fillers:

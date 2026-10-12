@@ -289,6 +289,8 @@ WHERE KENYANS ARE (research, 2026) AND WHAT WINS THERE
   then write it the way a native speaker would, not translated English.
 
 URGENT, NOT PARAGRAPHS
+- Urgent, never shouty: no capitals for emphasis, no "!!", no BREAKING/URGENT/SHOCKING, no 🚨. Calm voice, hard numbers,
+  a deadline, a contrast. The red marker is our only volume knob.
 - Nobody reads paragraphs on a phone. Every text field is one or two short sentences. Cut every word that
   doesn't hit. Numbers beat adjectives.
 - Sound concerning and urgent because the stakes are real: what it costs us, who pays, the deadline, what happens
