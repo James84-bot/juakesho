@@ -29,6 +29,12 @@ import zlib
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+NOTES: list[str] = []   # what each search found and why photos were passed over (saved to state/photos.log)
+
+
+def _note(msg: str) -> None:
+    print(msg)
+    NOTES.append(msg.strip())
 OWN = HERE / "content" / "photos"
 API = "https://api.pexels.com/v1/search"
 COMMONS = "https://commons.wikimedia.org/w/api.php"
@@ -93,21 +99,26 @@ def _openverse_once(query: str, pid: str, place: str | None = None, full: str | 
     q = urllib.parse.urlencode({"q": query, "license": "cc0,pdm,by", "size": "large", "mature": "false",
                                 "page_size": 20})
     results = json.loads(_get(f"{OPENVERSE}?{q}", {"User-Agent": "jua-kesho/1.0 (photo search)"})).get("results", [])
-    good = []
+    good, why = [], {"size": 0, "licence": 0, "place": 0, "subject": 0}
     for r in results:
         if r.get("license") not in {"cc0", "pdm", "by"}:
+            why["licence"] += 1
             continue
         if (r.get("width") or 0) and ((r.get("width") or 0) < 1000 or (r.get("height") or 0) < 700):
+            why["size"] += 1
             continue
         about = " ".join([r.get("title") or "", " ".join(t.get("name", "") for t in r.get("tags") or [])]).lower()
         if place and place.lower() not in about and "kenya" not in about:   # same place rule as Commons
+            why["place"] += 1
             continue
         if not _relevant(about, full or query):
+            why["subject"] += 1
             continue
         lic = {"cc0": "CC0", "pdm": "public domain", "by": f"CC BY {r.get('license_version') or ''}".strip()}[r["license"]]
         who = (r.get("creator") or "unknown").strip()[:50]
         good.append((r["url"], {"credit": f"Photo: {who} / {(r.get('source') or 'Openverse').title()}, {lic}",
                                 "url": r.get("foreign_landing_url") or ""}))
+    _note(f"  openverse '{query}' for {pid}: {len(results)} found, {len(good)} usable, dropped {why}")
     return _pick(good, pid)
 
 
@@ -158,7 +169,7 @@ def faces_ok(data: bytes) -> bool:
         import cv2
         import numpy as np
     except ImportError:
-        print("  face check skipped: opencv not installed")
+        _note("  face check skipped: opencv not installed")
         return True
     img = cv2.imdecode(np.frombuffer(data, np.uint8), cv2.IMREAD_COLOR)
     if img is None:
@@ -178,7 +189,7 @@ def _pick(good: list[tuple[str, dict]], pid: str, tries: int = 4) -> tuple[bytes
         data = _get(url)
         if faces_ok(data):
             return data, meta
-        print(f"  photo skipped for {pid}: a face fills the frame ({meta.get('url') or url})")
+        _note(f"  photo skipped for {pid}: a face fills the frame ({meta.get('url') or url})")
     return None
 
 
@@ -205,26 +216,31 @@ def _commons_once(query: str, pid: str, place: str | None = None, full: str | No
                                 "gsrnamespace": 6, "gsrlimit": 25, "prop": "imageinfo",
                                 "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600, "format": "json"})
     pages = json.loads(_get(f"{COMMONS}?{q}")).get("query", {}).get("pages", {})
-    good = []
+    good, why = [], {"size": 0, "licence": 0, "place": 0, "subject": 0}
     for page in sorted(pages.values(), key=lambda p: p.get("index", 0)):
         info = (page.get("imageinfo") or [{}])[0]
         md = info.get("extmetadata", {})
         lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
         if info.get("mime") not in {"image/jpeg", "image/png"} or info.get("width", 0) < 1000 or info.get("height", 0) < 700:
+            why["size"] += 1
             continue
         if not _licence_ok(lic):
+            why["licence"] += 1
             continue
         # A Kenyan story never gets a photo from somewhere else: when the search names a place, the photo's own
         # title, description or categories must name it too (or Kenya)
         about = " ".join([page.get("title", ""), md.get("ImageDescription", {}).get("value", ""),
                           md.get("Categories", {}).get("value", "")]).lower()
         if place and place.lower() not in about and "kenya" not in about:
+            why["place"] += 1
             continue
         if not _relevant(about, full or query):   # "Kenya" alone isn't enough: it must be a photo OF the subject
+            why["subject"] += 1
             continue
         artist = html.unescape(re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown"))).strip()[:50]
         good.append((info.get("thumburl") or info["url"], {"credit": f"Photo: {artist} / Wikimedia Commons, {lic}",
                                                          "url": info.get("descriptionurl", "")}))
+    _note(f"  commons '{query}' for {pid}: {len(pages)} found, {len(good)} usable, dropped {why}")
     return _pick(good, pid)
 
 
@@ -249,16 +265,16 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             try:
                 got = source(q, post["id"])
             except Exception as e:   # one source down: try the next
-                print(f"  photo source {source.__name__} failed for {post.get('id')}: {e}")
+                _note(f"  photo source {source.__name__} failed for {post.get('id')}: {e}")
                 got = None
             if got:
                 if q != query:
-                    print(f"  photo for {post['id']}: nothing for '{query}', used '{q}'")
+                    _note(f"  photo for {post['id']}: nothing for '{query}', used '{q}'")
                 return _save(out_dir, post["id"], *got)
-        print(f"  no photo found for {post['id']} ('{query}')")
+        _note(f"  no photo found for {post['id']} ('{query}')")
         return None
     except Exception as e:   # a missing photo must never block the week
-        print(f"  photo skipped for {post.get('id')}: {e}")
+        _note(f"  photo skipped for {post.get('id')}: {e}")
         return None
 
 
@@ -291,7 +307,7 @@ def person(post: dict, out_dir: Path) -> dict | None:
             md = info.get("extmetadata", {})
             lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
             if not OK_LICENCES.match(lic) or "sa" in lic.lower().split("-") or " sa " in f" {lic.lower()} ":
-                print(f"  person photo skipped for {post['id']}: licence '{lic}' needs more than a credit")
+                _note(f"  person photo skipped for {post['id']}: licence '{lic}' needs more than a credit")
                 return None
             artist = re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown")).strip()[:60]
             target.write_bytes(_get(info.get("thumburl") or info["url"]))
@@ -299,12 +315,27 @@ def person(post: dict, out_dir: Path) -> dict | None:
             meta.write_text(json.dumps(data), encoding="utf-8")
             return {**data, "file": str(target)}
     except Exception as e:
-        print(f"  person photo skipped for {post.get('id')}: {e}")
+        _note(f"  person photo skipped for {post.get('id')}: {e}")
     return None
 
 
 def attach(posts: list[dict], out_dir: Path) -> None:
-    """Sets photo_file / photo_credit (scenes) and person_file / person_credit (people we celebrate)."""
+    """Sets photo_file / photo_credit (scenes) and person_file / person_credit (people we celebrate).
+    Leaves state/photos.log: what every search found, so a missing photo can be explained."""
+    NOTES.clear()
+    try:
+        _attach(posts, out_dir)
+    finally:
+        # only real renders (under exports/) write the log; tests and scratch renders keep it clean
+        if HERE.parent / "exports" in Path(out_dir).resolve().parents:
+            try:
+                (HERE / "state").mkdir(exist_ok=True)
+                (HERE / "state" / "photos.log").write_text("\n".join(NOTES[-400:]) + "\n", encoding="utf-8")
+            except OSError:
+                pass
+
+
+def _attach(posts: list[dict], out_dir: Path) -> None:
     for p in posts:
         if p.get("person_photo"):
             got = person(p, out_dir / "photos")
