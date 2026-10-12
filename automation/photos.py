@@ -149,6 +149,10 @@ def _openverse_once(query: str, pid: str, place: str | None = None, full: str | 
     return _pick(good, pid)
 
 
+def commons_newest(query: str, pid: str) -> tuple[bytes, dict] | None:
+    return commons(query, pid, newest=True)
+
+
 def _licence_ok(lic: str) -> bool:
     low = f" {lic.lower()} "
     return bool(OK_LICENCES.match(lic)) and not re.search(r"[\s-](nc|nd)[\s-]", low)
@@ -225,23 +229,27 @@ def _place(query: str) -> str:
     return m.group(0) if m and m.group(0).lower() not in {"africa", "african"} else ""
 
 
-def commons(query: str, pid: str) -> tuple[bytes, dict] | None:
+def commons(query: str, pid: str, newest: bool = False) -> tuple[bytes, dict] | None:
     """A real photo from Wikimedia Commons that we may use in a design with a credit (CC0 / PD / CC BY).
     The place and the subject come from the FULL query: a shorter retry ("university campus") must still be a
     Kenyan photo of that subject."""
     place = _place(query)
     for q in _query_ladder(query):
-        got = _commons_once(q, pid, place, query)
+        got = _commons_once(q, pid, place, query, newest)
         if got:
             return got
     return None
 
 
-def _commons_once(query: str, pid: str, place: str | None = None, full: str | None = None) -> tuple[bytes, dict] | None:
+def _commons_once(query: str, pid: str, place: str | None = None, full: str | None = None,
+                   newest: bool = False) -> tuple[bytes, dict] | None:
     place = _place(query) if place is None else place
-    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": f"{query} filetype:bitmap",
-                                "gsrnamespace": 6, "gsrlimit": 25, "prop": "imageinfo",
-                                "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600, "format": "json"})
+    params = {"action": "query", "generator": "search", "gsrsearch": f"{query} filetype:bitmap",
+              "gsrnamespace": 6, "gsrlimit": 25, "prop": "imageinfo",
+              "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600, "format": "json"}
+    if newest:   # a breaking story: the most recent uploads first (Kenyan photographers upload protests within days)
+        params["gsrsort"] = "create_timestamp_desc"
+    q = urllib.parse.urlencode(params)
     pages = json.loads(_get(f"{COMMONS}?{q}")).get("query", {}).get("pages", {})
     good, why = [], {"size": 0, "licence": 0, "place": 0, "subject": 0}
     for page in sorted(pages.values(), key=lambda p: p.get("index", 0)):
@@ -286,6 +294,8 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             return hit
         order = (commons, openverse, pexels) if LOCAL.search(query) else (pexels, openverse, commons)
         tries = [(source, query) for source in order]
+        if post.get("hot"):   # today's story: try this week's real photos of it first
+            tries.insert(0, (commons_newest, query))
         if post.get("template") in CIVIC_TEMPLATES:
             tries += [(commons, q) for q in CIVIC_FALLBACK]
         for source, q in tries:

@@ -64,7 +64,7 @@ class PlaceKept(unittest.TestCase):
     def test_shorter_retry_still_needs_kenya(self):
         asked = []
 
-        def once(q, pid, place=None, full=None):
+        def once(q, pid, place=None, full=None, newest=False):
             asked.append((q, place))
             return None
         with mock.patch.object(photos, "_commons_once", once):

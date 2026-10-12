@@ -893,7 +893,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -907,7 +907,7 @@ def _main(argv: list[str] | None = None) -> int:
             learn()
         except Exception as e:
             log(f"learn skipped: {e}")
-    if a.command in {"week", "hot", "trends", "news", "remake"} and not a.mock:
+    if a.command in {"week", "hot", "trends", "news", "remake", "radar"} and not a.mock:
         try:
             import trends
             t = trends.collect()
@@ -920,6 +920,21 @@ def _main(argv: list[str] | None = None) -> int:
             log(f"news: {len(n['items'])} stories, errors {n['errors'] or 'none'}")
         except Exception as e:
             log(f"news skipped: {e}")
+        try:
+            import radar
+            r = radar.collect()
+            log(f"radar: {len(r['x'])} X trends, {len(r['videos'])} clips, errors {r['errors'] or 'none'}")
+        except Exception as e:
+            log(f"radar skipped: {e}")
+    if a.command in {"hot", "radar"} and not a.mock and not a.dry_run:
+        try:   # the daily radar on Telegram: live hashtags and the clips Kenya is watching, with links
+            import radar
+            text = radar.telegram_text()
+            if text:
+                tg("sendMessage", {"chat_id": need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"], "text": text,
+                                   "parse_mode": "HTML", "disable_web_page_preview": "true"})
+        except Exception as e:
+            log(f"radar message skipped: {e}")
     if a.command == "hot":
         label = hot_slot(a.mock)
         if not label:
