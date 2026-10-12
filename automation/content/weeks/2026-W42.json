@@ -3,7 +3,7 @@
   "created": "2026-10-12T16:31:22.980571+03:00",
   "posts": [
     {
-      "id": "2026-w42-d1-sauti-r4",
+      "id": "2026-w42-d1-sauti-r5",
       "template": "sauti",
       "lane": "young_pro",
       "bg": "usiku",
@@ -42,12 +42,12 @@
         "avg": 8.1,
         "note": "Hook lands hard (we vs them hypocrisy). Tighten the caption—drop the hashtags and end with the sting: 'Try defaulting as a mwananchi' is the send moment."
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d1-sauti-r4-photo.jpg",
-      "photo_credit": "Photo: Ninara / Wikimedia Commons, CC BY 2.0",
-      "reel": true
+      "reel": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d1-sauti-r5-photo.jpg",
+      "photo_credit": "Photo: Jorge Láscar from Bogotá, Colombia / Wikimedia Commons, CC BY-SA 2.0"
     },
     {
-      "id": "2026-w42-d2-straight-r5",
+      "id": "2026-w42-d2-straight-r6",
       "template": "straight",
       "lane": "campus",
       "bg": "usiku",
@@ -91,12 +91,15 @@
         "avg": 7.0,
         "note": "Fact-check posts are harder to make viral—this one works but feels slightly preachy. 'World copied Kenya' is the payoff; lead with that energy, not the debunk frame. M-Pesa agent photo is generic; need a Kenyan on their phone actually using it, 2007 energy."
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d2-straight-r5-photo.jpg",
-      "photo_credit": "Photo: Ninara / Wikimedia Commons, CC BY 2.0",
-      "reel": true
+      "reel": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d2-straight-r6-photo.jpg",
+      "photo_credit": "Photo: Fiona Graham / Wikimedia Commons, CC BY-SA 2.0",
+      "ink": {
+        "1": "#F8F7F6"
+      }
     },
     {
-      "id": "2026-w42-d3-promise-r4",
+      "id": "2026-w42-d3-promise-r5",
       "template": "promise",
       "lane": "campus",
       "bg": "usiku",
@@ -143,10 +146,15 @@
         "avg": 8.2,
         "note": "Strongest post here—the math is devastating and relatable (we're paying levy). Photo needs a half-built site or empty plot, not generic construction, to show the scale of the gap visually."
       },
-      "reel": true
+      "reel": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d3-promise-r5-photo.jpg",
+      "photo_credit": "Photo: Jorge Láscar from Bogotá, Colombia / Wikimedia Commons, CC BY-SA 2.0",
+      "ink": {
+        "1": "#F8F7F6"
+      }
     },
     {
-      "id": "2026-w42-d4-sauti-r4",
+      "id": "2026-w42-d4-sauti-r5",
       "template": "sauti",
       "lane": "campus",
       "bg": "usiku",
@@ -185,10 +193,12 @@
         "avg": 5.6,
         "note": "The 'never needed a loan' angle is thin and unclear—does the CEO's personal discipline matter to students waiting? Reframe as: 'HELB CEO never borrowed. We're still waiting.' Ditch the 19 floors gag; focus on portal delays and actual numbers (how many are stuck waiting?)."
       },
-      "reel": true
+      "reel": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d4-sauti-r5-photo.jpg",
+      "photo_credit": "Photo: KevinAmenya / Wikimedia Commons, CC BY-SA 4.0"
     },
     {
-      "id": "2026-w42-d5-spotlight-r4",
+      "id": "2026-w42-d5-spotlight-r5",
       "template": "spotlight",
       "lane": "diaspora",
       "kind": "Startup",
@@ -215,10 +225,12 @@
         "errors": [],
         "warnings": []
       },
-      "reel": true
+      "reel": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d5-spotlight-r5-photo.jpg",
+      "photo_credit": "Photo: Samshee011 / Wikimedia Commons, CC BY-SA 4.0"
     },
     {
-      "id": "2026-w42-d6-cover-r4",
+      "id": "2026-w42-d6-cover-r5",
       "template": "cover",
       "lane": "creator",
       "series": "Kesho Kutwa",
@@ -242,7 +254,7 @@
       "caption": "Kesho Kutwa: five dates and deadlines already shaping 2027, laid out plainly. Swipe through, then tell us which one you didn't know about.\n\n#Kesho2027 #JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r4",
+      "group": "2026-w42-d6-cover-r5",
       "status": "awaiting",
       "guard": {
         "errors": [],
@@ -253,7 +265,7 @@
       }
     },
     {
-      "id": "2026-w42-d6-kesho-1-r4",
+      "id": "2026-w42-d6-kesho-1-r5",
       "template": "kesho",
       "lane": "creator",
       "headline": "2027 General Election: the date is already law",
@@ -275,17 +287,19 @@
       "caption": "2027 is already scheduled by the Constitution. The only question is whether you'll be on the register. Check yourself today.\n\n#Kesho2027 #JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r4",
+      "group": "2026-w42-d6-cover-r5",
       "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
-      }
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-kesho-1-r5-photo.jpg",
+      "photo_credit": "Photo: Mauryndinar / Wikimedia Commons, CC BY-SA 4.0"
     },
     {
-      "id": "2026-w42-d6-kesho-2-r4",
+      "id": "2026-w42-d6-kesho-2-r5",
       "template": "kesho",
       "lane": "creator",
       "headline": "Your ward's boundaries are overdue for review",
@@ -307,15 +321,20 @@
       "caption": "Overdue boundaries mean unequal votes. This one's been sitting since 2012. Tag your MCA and ask what's happening.\n\n#Kesho2027 #JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r4",
+      "group": "2026-w42-d6-cover-r5",
       "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": []
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-kesho-2-r5-photo.jpg",
+      "photo_credit": "Photo: Kihiu / Wikimedia Commons, CC BY-SA 3.0",
+      "ink": {
+        "1": "#F8F7F6"
       }
     },
     {
-      "id": "2026-w42-d6-kesho-3-r4",
+      "id": "2026-w42-d6-kesho-3-r5",
       "template": "kesho",
       "lane": "creator",
       "headline": "Party primaries decide who's even on your ballot",
@@ -337,7 +356,7 @@
       "caption": "Before the ballot, there's the primary. Know your party's calendar before it's too late.\n\n#Kesho2027 #JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r4",
+      "group": "2026-w42-d6-cover-r5",
       "status": "awaiting",
       "guard": {
         "errors": [],
@@ -347,7 +366,7 @@
       }
     },
     {
-      "id": "2026-w42-d6-kesho-4-r4",
+      "id": "2026-w42-d6-kesho-4-r5",
       "template": "kesho",
       "lane": "creator",
       "headline": "Feb 15: Treasury's budget plan lands in Parliament",
@@ -369,7 +388,7 @@
       "caption": "Budget season starts on paper months before you feel it on your payslip. Feb 15 is the day to watch.\n\n#JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r4",
+      "group": "2026-w42-d6-cover-r5",
       "status": "awaiting",
       "guard": {
         "errors": [],
@@ -379,7 +398,7 @@
       }
     },
     {
-      "id": "2026-w42-d6-kesho-5-r4",
+      "id": "2026-w42-d6-kesho-5-r5",
       "template": "kesho",
       "lane": "creator",
       "headline": "The Promise Tracker for 2027 starts now, not in 2027",
@@ -400,7 +419,7 @@
       "caption": "2027 will be decided on records, not speeches. Help us build the record: send us a promise you've heard this week.\n\n#PromiseTracker #JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r4",
+      "group": "2026-w42-d6-cover-r5",
       "status": "awaiting",
       "guard": {
         "errors": [],
@@ -408,10 +427,12 @@
           "states facts but has no `source`; verify before approving",
           "contains a year, % or amount with no `source`"
         ]
-      }
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-kesho-5-r5-photo.jpg",
+      "photo_credit": "Photo: Sir. Kevin / Wikimedia Commons, CC BY-SA 2.0"
     },
     {
-      "id": "2026-w42-d7-glasspoll-r4",
+      "id": "2026-w42-d7-glasspoll-r5",
       "template": "glasspoll",
       "lane": "everyone",
       "hook": "Teargas is back in the news",
@@ -444,7 +465,7 @@
       }
     },
     {
-      "id": "2026-w42-hot-1012",
+      "id": "2026-w42-hot-1012-r2",
       "template": "sauti",
       "lane": "everyone",
       "kicker": "Sisi wananchi",
@@ -482,9 +503,9 @@
         "avg": 7.5,
         "note": "The irony lands hard, but 'who sponsors this?' deflates into a generic election-season complaint—sharpen it with a specific detail (a name, a pattern, a number) that makes the hypocrisy undeniable, not just suspected."
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1012-photo.jpg",
-      "photo_credit": "Photo: Tyler Merbler from USA / Wikimedia Commons, CC BY 2.0",
-      "reel": true
+      "reel": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1012-r2-photo.jpg",
+      "photo_credit": "Photo: Jorge Láscar from Bogotá, Colombia / Wikimedia Commons, CC BY-SA 2.0"
     }
   ],
   "scripts": {
