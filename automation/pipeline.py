@@ -472,6 +472,12 @@ def collect() -> None:
             action, label, key = cq["data"].split("|", 2)
         except ValueError:
             continue
+        if action == "c":   # a comment card: c|r|cid reply, c|h|cid hide, c|s|cid skip
+            import engage
+            result = engage.act(STATE, graph, label, key) if meta_ready() else "Instagram isn't connected"
+            tg("answerCallbackQuery", {"callback_query_id": cq["id"], "text": result[:190]})
+            log(f"comment {key}: {result}")
+            continue
         if not week_file(label).exists():
             continue
         data = weeks.setdefault(label, load_week(label))
@@ -804,7 +810,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo"])
+                                        "news", "status", "redo", "engage"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -853,6 +859,17 @@ def _main(argv: list[str] | None = None) -> int:
         collect()
     if a.command in {"tick", "publish"}:
         publish(dry_run=a.dry_run)
+    if a.command in {"tick", "engage"} and not a.dry_run and meta_ready():
+        try:   # answering comments must never stop publishing
+            import engage, draft as drafter
+            chat = need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
+            own = {os.environ.get("META_IG_USER_ID", ""), os.environ.get("META_PAGE_ID", "")}
+            n = engage.run(STATE, WEEKS, graph_get, drafter.call_claude,
+                           lambda text, buttons: tg("sendMessage", {"chat_id": chat, "text": text, "parse_mode": "HTML",
+                                                                    "reply_markup": buttons}), now(), own)
+            log(f"comments: {n} sent for your decision")
+        except Exception as e:
+            log(f"comments skipped: {e}")
     if a.command == "tick" and not a.dry_run:
         prune()
     if a.command == "status":
