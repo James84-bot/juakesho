@@ -34,6 +34,7 @@ import mimetypes
 import os
 import re
 import shutil
+import tempfile
 import sys
 import time
 import urllib.error
@@ -349,6 +350,87 @@ def rephoto(label: str) -> list[str]:
     return changed
 
 
+def _clip_intake(msg: dict, chat: str) -> None:
+    import tazama
+    reply, clip = tazama.intake(msg, now())
+    if clip:
+        data = tazama.load()
+        data["clips"].append(clip)
+        tazama.save(data)
+        log(f"clip queued: {clip['id']} ({clip['rights']})")
+    if reply:
+        try:
+            tg("sendMessage", {"chat_id": chat, "text": reply, "parse_mode": "HTML", "reply_to_message_id": msg["message_id"]})
+        except Exception as e:
+            log(f"clip reply skipped: {e}")
+
+
+def _tg_file_path(file_id: str) -> str:
+    return tg("getFile", {"file_id": file_id})["result"]["file_path"]
+
+
+def _next_slot(min_lead: dt.timedelta = dt.timedelta(hours=2)) -> dt.datetime:
+    """The next prime-time slot (12:30 or 19:00 EAT) at least two hours away."""
+    t = now()
+    for day in range(3):
+        d = (t + dt.timedelta(days=day)).date()
+        for hh, mm in ((12, 30), (19, 0)):
+            slot = dt.datetime(d.year, d.month, d.day, hh, mm, tzinfo=EAT)
+            if slot - t >= min_lead:
+                return slot
+    return t + min_lead
+
+
+def process_clips(dry_run: bool = False) -> int:
+    """Turns queued clips into Tazama Hii Reels and sends them for approval. Raw clips stay in a temp folder."""
+    import draft as drafter
+    import guard
+    import news
+    import radar
+    import tazama
+    data = tazama.load()
+    queued = [c for c in data["clips"] if c["status"] == "queued"]
+    if not queued or dry_run:
+        log(f"clips: {len(queued)} queued{' (dry run)' if dry_run else ''}")
+        return 0
+    token = need("TELEGRAM_BOT_TOKEN")["TELEGRAM_BOT_TOKEN"]
+    label = current_week_label(ahead=0)
+    made = 0
+    for c in queued:
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                src = Path(tmp) / "clip.mp4"
+                tazama.download(_tg_file_path, token, c["file_id"], src)
+                import video
+                meta = tazama.probe(video.ffmpeg_bin(), src)
+                segments = tazama.transcribe(src)
+                post = tazama.write(drafter.call_claude, c, meta["duration"], segments,
+                                    news.prompt_block() + radar.prompt_block())
+                post.update(id=f"{label.lower()}-tazama-{c['id'][5:]}", publish_at=_next_slot().isoformat(), clip=c["id"])
+                a, b = tazama.window(post, c, meta["duration"])
+                post["clip_window"] = [a, b]
+                report = guard.check(post)
+                post["guard"] = {"errors": report.errors, "warnings": report.warnings}
+                if not report.ok:
+                    raise RuntimeError("; ".join(report.errors)[:300])
+                tazama.make(post, c, src, segments, EXPORTS / label)
+            post["status"] = "rendered"
+            week = load_week(label) if week_file(label).exists() else {"collection": label, "created": now().isoformat(),
+                                                                        "posts": [], "scripts": {}}
+            week["posts"].append(post)
+            save_week(week)
+            c.update(status="made", post=post["id"])
+            made += 1
+        except Exception as e:
+            c.update(status="failed", error=str(e)[:300])
+            log(f"clip {c['id']} failed: {e}")
+            _notify(f"🎬 Couldn't make the Reel from your clip ({_esc(c['id'])}): {_esc(str(e)[:250])}")
+        tazama.save(data)
+    if made:
+        ask(label)
+    return made
+
+
 def send_reels(label: str, dry_run: bool = False) -> int:
     """Re-sends this week's Reels that still wait for your decision, each with its ✅/❌/🎵 buttons."""
     data = load_week(label)
@@ -532,10 +614,14 @@ def collect() -> None:
     offset_file = STATE / "telegram_offset.txt"
     offset = int(offset_file.read_text()) if offset_file.exists() else 0
     allowed_chat = str(need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"])
-    updates = tg("getUpdates", {"offset": offset, "timeout": 0, "allowed_updates": json.dumps(["callback_query"])})
+    updates = tg("getUpdates", {"offset": offset, "timeout": 0, "allowed_updates": json.dumps(["callback_query", "message"])})
     weeks: dict[str, dict] = {}
     for u in updates.get("result", []):
         offset = max(offset, u["update_id"] + 1)
+        msg = u.get("message")
+        if msg and str(msg.get("chat", {}).get("id")) == allowed_chat:   # a clip you sent for a Tazama Hii Reel
+            _clip_intake(msg, allowed_chat)
+            continue
         cq = u.get("callback_query")
         if not cq:
             continue
@@ -632,7 +718,9 @@ def wait_until_ready(container: str, timeout_s: int = 300, every_s: int = 10) ->
 def caption_for(post: dict) -> str:
     """The approved caption plus credits: the photographer of a real photo, the artist of a licensed track."""
     cap = post.get("caption", "")
-    credits = [f"{icon} {c}" for icon, c in (("📷", post.get("person_credit") or post.get("photo_credit")),
+    clip = post.get("credit") if post.get("template") == "tazama" and post.get("rights_kind") != "own" else None
+    credits = [f"{icon} {c}" for icon, c in (("📹 Video:", clip),
+                                             ("📷", post.get("person_credit") or post.get("photo_credit")),
                                              ("🎵", post.get("track_credit"))) if c and c not in cap]
     return f"{cap}\n\n" + "\n".join(credits) if credits else cap
 
@@ -912,7 +1000,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -998,6 +1086,10 @@ def _main(argv: list[str] | None = None) -> int:
             log(f"comments skipped: {e}")
     if a.command == "samples":
         send_samples(dry_run=a.dry_run)
+    if a.command == "clips" and not a.dry_run:
+        collect()   # pick up clips you just sent
+    if a.command in {"clips", "clipwork"}:
+        process_clips(dry_run=a.dry_run)
     if a.command == "reels":
         send_reels(a.week or current_week_label(ahead=0), dry_run=a.dry_run)
     if a.command == "photocheck":   # searches this week's photo queries again and explains each result (state/photos.log)

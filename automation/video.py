@@ -36,11 +36,12 @@ MIN_S, MAX_S = 6.0, 14.0
 READ_WPS = 3.6            # on-screen reading speed for young, fast readers (words/s)
 SKIP_TEMPLATES = {"avatar", "banner"}
 # Serious topics get the urgent bed; good news keeps the kalimba-and-benga one
-URGENT_TEMPLATES = {"sauti", "straight", "promise", "kumbuka", "scorecard", "money", "usiibiwe", "cap", "still"}
+URGENT_TEMPLATES = {"tazama", "sauti", "straight", "promise", "kumbuka", "scorecard", "money", "usiibiwe", "cap", "still"}
 KICKERS = {"sauti": "Sauti ya Mwananchi", "straight": "Set It Straight", "promise": "Promise Tracker", "kumbuka": "Hatutasahau",
            "scorecard": "Chapter Six Test", "money": "Follow the Money", "usiibiwe": "Scam alert", "cap": "Cap or No Cap?",
            "still": "Still in 2026?", "decode": "Decode", "spotlight": "Put Us On", "africa": "Made in Africa",
-           "hack": "Civic 101", "makanga": "Explained", "cover": "Kesho Kutwa", "glasspoll": "Jua Asks", "build": "Build With Me"}
+           "hack": "Civic 101", "makanga": "Explained", "cover": "Kesho Kutwa", "glasspoll": "Jua Asks", "build": "Build With Me",
+           "tazama": "Tazama Hii"}
 
 
 def beat_reel(post: dict) -> dict | None:
@@ -148,6 +149,37 @@ def workers() -> int:
     return max(1, min(int(os.environ.get("JUA_VIDEO_WORKERS", "0")) or (os.cpu_count() or 2), 6))
 
 
+def render_frames(html_path: Path, frame_dir: Path, frames: int, w: int = 1080, h: int = 1920) -> None:
+    """Every frame of an animated page as f0000.jpg..., rendered in parallel browsers."""
+    n = workers()
+    ctx = mp.get_context("spawn")
+    with ctx.Pool(n) as pool:
+        pool.map(_frame_worker, [(str(html_path), str(frame_dir), frames, k, n, w, h) for k in range(n)])
+
+
+def beats_segment(env, post: dict, beats: list[str], kicker: str, out_mp4: Path, ff: str, tail: float = 0.5) -> float:
+    """A short run of beats (any count) over the post's photo, with the urgent bed: one piece of a longer Reel.
+    Returns its length in seconds."""
+    reel = {k: v for k, v in post.items() if k not in {"template", "size", "ink"}}
+    reel.update(template="reel", size="story", beats=beats, kicker=kicker)
+    starts, t = [], 0.0
+    for b in beats:
+        starts.append(t)
+        t += render.beat_seconds(b)
+    dur = round(t + tail, 2)
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp = Path(tmp)
+        (tmp / "page.html").write_text(render.build_html(env, reel, motion=True, reel=False), encoding="utf-8")
+        frames = int(dur * FPS)
+        render_frames(tmp / "page.html", tmp, frames)
+        sound.write_wav(sound.tension(dur, starts, zlib.crc32(post["id"].encode()) % 1000), tmp / "audio.wav")
+        subprocess.run([ff, "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", str(tmp / "f%04d.jpg"),
+                        "-i", str(tmp / "audio.wav"), "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-pix_fmt", "yuv420p", "-vf", "scale=1080:1920:flags=lanczos,setsar=1",
+                        "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-ac", "2", "-shortest", str(out_mp4)], check=True)
+    return dur
+
+
 def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
     is_story = post.get("size", "post") == "story"
     beats = beat_reel(post)
@@ -165,11 +197,7 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         _open(page, tmp / "page.html")
         dur = round(t + 1.2, 2) if beats else duration_for(post, page.evaluate("window.__motionEnd()"))
         frames = int(dur * FPS)
-        w, h = (1080, 1920)
-        n = workers()
-        ctx = mp.get_context("spawn")
-        with ctx.Pool(n) as pool:
-            pool.map(_frame_worker, [(str(tmp / "page.html"), str(tmp), frames, k, n, w, h) for k in range(n)])
+        render_frames(tmp / "page.html", tmp, frames)
         seed = zlib.crc32(post["id"].encode()) % 1000
         track = music_track(post)
         if track:   # an artist's track we have permission for: chime first, then their hook
