@@ -87,26 +87,26 @@
     "everyone",
     "young_pro",
     "diaspora"
-   ]
+   ],
+   "angle": "opposition"
   },
   {
    "day": 6,
    "time": "11:00",
    "template": [
     "promise",
-    "money",
     "sauti"
    ],
    "bg": [
-    "usiku",
-    "shuka",
-    "usiku"
+    "chai"
    ],
    "lanes": [
     "everyone",
     "hustle",
     "campus"
-   ]
+   ],
+   "angle": "credit",
+   "series": "Credit Where Due"
   },
   {
    "day": 7,
