@@ -1,100 +1,102 @@
 # Jua Kesho
 
-*Jua nchi yako* (know your country). An independent, faceless, non-partisan Kenyan channel for 18–30s: the general
-knowledge every Kenyan should have, politics with receipts (Promise Tracker, Set It Straight, Follow the Money),
-scams and the future. Kenyan flag colours, real photos, bold type, sourced facts.
+Politics with receipts for Kenyans. An independent, faceless channel by informed ordinary Kenyans: promises against
+records, Set It Straight, Follow the Money, scam alerts, and the stories Kenya is talking about this week, in plain
+Kenyan English with real photos and sources. Not with any government or party; every side held to the same standard.
 **jua** = the sun + to know · **kesho** = tomorrow.
 
-**Live:** brand book at <https://james84-bot.github.io/juakesho/brand-book/> · repo <https://github.com/James84-bot/juakesho>
+**Live:** brand book <https://james84-bot.github.io/juakesho/brand-book/> · repo <https://github.com/James84-bot/juakesho>
+
+## How it runs
 
 ```
-brand-book/index.html        The brand book (open in a browser)
-assets/logo/                 Sunrise mark, wordmark, stacked logo, icons (outlined SVG, no fonts needed)
-assets/fonts/                Inter Tight (headlines), Inter (text) (OFL)
-exports/posts/               Launch set: 20 designs, PNG + JPEG
-exports/reels/               The same set as 9:16 Reels/TikToks (MP4 + cover)
-exports/profiles/            Avatars, YouTube / X / Facebook banners
-automation/                  The self-running content engine
-  brand.json                 Name, handle, colours (4 families × 11 shades): change here, everything follows
-  palette.py                 Builds the flag-colour shade ramps (ink, red, green) in OKLCH and checks contrast
-  brandkit.py                Brand constants, fonts (plus legacy drawing helpers, out of rotation)
-  templates/*.html.j2        One editorial template per series (base.html.j2: grid, type, photo, motion, auto-fit)
-  content/posts.json         Launch posts (edit or add, then render)
-  calendar.json              Weekly rhythm, audience lanes, channels
-  content/nicknames.json     Names Kenyans use for leaders, and how we may use each (the checker enforces it)
-  content/remember.json      Anniversaries (Hatutasahau): the planner schedules them automatically
-  state/evidence.jsonl       Every published post with its exact text and sources (the defence file)
-  render.py                  posts.json → PNG: photo layout, auto-fit, adaptive ink, visual QA
-                             (overflow, collisions, off-canvas, contrast of every text line)
-  textfit.py                 Measures text with the real font files (headline sizing)
-  photos.py                  Real photos: Pexels scenes, your own photos, licensed photos of real people
-  video.py                   posts → 9:16 MP4 Reels (motion, safe zones, deterministic frames)
-  sound.py                   The Jua chime + original kalimba and benga-guitar beat (synthesised)
-  content/music/             Tracks by artists who gave permission (see README there)
-  content/people/            Photos of people (celebrated or on the public record), with rights
-  guard.py                   Clean + brand + length + source checks; no name-calling or campaigning
-  draft.py                   AI writer (free Gemini key, or Claude with a weekly budget cap): trend playbook, civic rules, self-repair
-                             + the critic: scores every post (incl. picture + clarity), rewrites under 7.5
-                             + a weekly budget cap on AI spend (JUA_WEEKLY_BUDGET_USD, default $0.50)
-  trends.py                  Google Trends Kenya: political trends kept (flagged civic), tragedy and betting dropped
-  news.py                    Kenyan headlines from free RSS feeds (content/news_feeds.json): the writer reacts to them
-  pipeline.py                plan → draft → guard → render → Telegram approval → publish → learn
-  tests/                     62 tests, no network needed (the visual QA test uses Chromium if installed)
-.github/workflows/autopilot.yml   Runs everything in the cloud, free
+GitHub Actions (free, in the cloud)
+  Sunday 17:00 EAT   plan next week → research → draft → check → editor scores → design → Reels → Telegram
+  Daily 09:05 EAT    trend radar to Telegram + one hot post on the day's biggest story
+  Every 2 hours      collect your taps → publish what's due → comments to answer → clips you sent
+You (Telegram)       ✅ approve · ❌ reject · 🎵 post it yourself · reply/hide comments · send clips
 ```
 
-## Make designs by hand
+Nothing is published, replied to or hidden without your tap.
 
-```bash
-cd automation
-pip install -r requirements.txt && python -m playwright install chromium
-python guard.py content/posts.json         # check first
-python render.py --sheet                   # → exports/posts/ + contact sheet
+### What the writer knows before it writes
+- **What Kenya is on** (`demand.py`): stories ranked by outlets carrying them + live X trends + Kenyan TV clips
+  (views per hour) + Google searches. Most posts are built on the top five.
+- **Live radar** (`radar.py`, no keys): X Kenya trends (trends24) and the most-watched Citizen / NTV / KTN clips.
+- **Headlines** (`news.py`) and **search trends** (`trends.py`), every claim traced to a link.
+
+### What keeps it strong
+- **Checks** (`guard.py`): length, sources, no name-calling, no tribe, no violence, no em dashes, no AI-sounding
+  words, no Swahili filler slang, no shouting (capitals, "!!", BREAKING, 🚨), no politician PR or insult hashtags.
+- **Editor** (`draft.py` critic): scores hook, send, clarity, freshness, voice, craft, picture, hold and demand.
+  Under 8 gets one rewrite; still under 7 is held back, never sent to you. No two posts on one story.
+- **Live hashtags**: matching trending hashtags (including the people's accountability tags) are added to captions
+  automatically.
+- **Photos** (`photos.py`): real, licensed (CC0 / public domain / CC BY / CC BY-SA, credited) photos of the
+  subject, taken in Kenya; no stranger's face fills a frame; a real Kenyan landmark when nothing fits.
+
+### Formats (calendar.json)
+Sauti ya Mwananchi · Set It Straight · Follow the Money · Promise Tracker · Chapter Six Test · scam alerts ·
+Sunday poll on the week's biggest issue · daily hot post · **Tazama Hii** (clips you send) · Hatutasahau
+anniversaries. Every post also ships as a 9:16 Reel told in beats.
+
+## Running it (GitHub → Actions → autopilot → Run workflow)
+
+| Command | What it does |
+|---|---|
+| `this-week` | Plan and draft the current week now |
+| `remake` | Re-plan the rest of this week from the current calendar and redraft (costs AI credit) |
+| `redo` | Redraft only the posts the checks held back |
+| `rephoto` | Same words, new photos, re-sent |
+| `hot` | Today's post on the biggest story + the trend radar |
+| `radar` | Live X trends and the most-watched Kenyan clips, to Telegram |
+| `reels` | Re-send this week's Reels waiting for your decision |
+| `clips` | Turn videos you sent the bot into Tazama Hii Reels now |
+| `samples` | Profile kit + sample comment cards |
+| `photocheck` | Explain this week's photo searches (`automation/state/photos.log`) |
+| `rehearse` | A full mock week, no keys, nothing sent |
+
+### Tazama Hii: sending a clip
+Send the video to the bot. The caption's **first line** says where it came from, then what it's about:
+`ruhusa @who (how they agreed)` · `yangu` (we filmed it) · `nukuu Citizen TV https://link` (news quote, max 8 s).
+Under 20 MB. Without that line the clip is never used.
+
+## Secrets (GitHub → Settings → Secrets and variables → Actions)
+
+| Secret | For |
+|---|---|
+| `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` | Approvals (set) |
+| `GEMINI_API_KEY` | The free writer (aistudio.google.com/apikey). Without it the paid Claude key is used |
+| `ANTHROPIC_API_KEY` | Paid writer (set). Optional passes stop at `JUA_WEEKLY_BUDGET_USD` (default $0.50 a run) |
+| `META_ACCESS_TOKEN`, `META_PAGE_ID`, `META_IG_USER_ID` | Publishing, comments, insights (Page token; see below) |
+| `PEXELS_API_KEY` | Optional extra photo source |
+
+**Meta token:** developers.facebook.com → app (Business) → Graph API Explorer → permissions
+`pages_show_list, pages_read_engagement, pages_manage_posts, pages_manage_engagement, instagram_basic,
+instagram_content_publish, instagram_manage_comments, instagram_manage_insights, business_management` →
+Generate → Access Token Tool → Extend → `me/accounts` gives the Page id and the non-expiring Page token →
+`<page-id>?fields=instagram_business_account` gives the Instagram user id.
+
+## Files
+
+```
+automation/pipeline.py     plan → draft → render → Telegram → publish → learn; every command above
+automation/draft.py        the writer + editor (Gemini free, or Claude with a budget cap)
+automation/guard.py        every content check
+automation/demand.py       what Kenya is on, ranked
+automation/radar.py        X trends + Kenyan TV clips (no keys)
+automation/news.py         headlines (content/news_feeds.json)    automation/trends.py  Google Trends Kenya
+automation/photos.py       licensed real photos + face check (content/models/: YuNet, MIT)
+automation/render.py       HTML templates → PNG, visual QA         automation/video.py   Reels (beats, sound)
+automation/tazama.py       clips → commentary Reels               automation/engage.py  comment replies
+automation/presence.py     highlight covers + profile kit         automation/templates/ one template per format
+automation/calendar.json   the weekly rhythm                      automation/content/   nicknames, anniversaries, feeds, music
+automation/state/          approvals, evidence file, radar, photo log (committed by the bot)
+automation/tests/          the test suite (no network needed)
+.github/workflows/autopilot.yml
 ```
 
-## Switch on the autopilot (about 1 hour, once)
-
-1. **Handles:** claim `@juakesho` on Instagram, TikTok, Facebook, YouTube, X and a WhatsApp Channel. Upload the profile images from `exports/profiles/`.
-2. **Repo + Pages:** push this folder to a public GitHub repository, then Settings → Pages → Deploy from branch → `main` / root.
-   Instagram fetches images and videos from the Pages URL (the publisher checks content types before every post).
-3. **Telegram:** create a bot with @BotFather, message it once, then read your chat id from
-   `https://api.telegram.org/bot<TOKEN>/getUpdates`.
-4. **Meta:** switch Instagram to a Business/Creator account linked to your Facebook Page. Create a Meta app and get a
-   long-lived **Page access token** with `instagram_content_publish`, `pages_manage_posts`, `pages_read_engagement`.
-   Note your Page id and Instagram user id.
-5. **AI writer.** Free: create a key at aistudio.google.com/apikey and add it as secret `GEMINI_API_KEY`.
-   Paid, best Kenyan voice: secret `ANTHROPIC_API_KEY` (used when there's no Gemini key, or with variable
-   `JUA_PROVIDER=anthropic`), capped at $0.50 a week.
-   **Recommended (free):** a Pexels key (pexels.com/api) as secret `PEXELS_API_KEY`. The design is photo-led;
-   without it, posts fall back to type-only layouts.
-6. **Secrets:** in GitHub → Settings → Secrets and variables → Actions, add everything in `automation/.env.example`.
-7. **Test:** Actions → autopilot → Run workflow with `rehearse` first (no keys needed; download the
-   `rehearsal-week` artifact to see a full mock week). Then run `week`. Previews arrive on Telegram; tap ✅ or ❌.
-
-From then on: every Sunday at 17:00 EAT the next week is drafted, checked, designed and sent to you.
-Approved posts publish at their scheduled time. Your job is about 15 minutes of taps a week, plus
-forwarding the approved image to the WhatsApp Channel (it has no posting API).
-
-## Useful commands
-
-```bash
-python pipeline.py week --mock --dry-run   # full rehearsal, no AI, no posting
-python pipeline.py status                  # where every post is
-python pipeline.py tick --dry-run          # what would publish now
-python pipeline.py hot                     # today's extra post on the biggest Kenyan story (runs daily at 09:05 EAT)
-python news.py                             # this week's Kenyan headlines the writer reacts to
-python pipeline.py redo                    # re-draft posts the checks held back (also in Actions → Run workflow)
-python -m unittest discover -s tests -v    # run the tests
-python trends.py                           # what Kenya is searching now (safe topics only)
-python video.py --only 01-hack-lecture-notes   # render one Reel (~1-2 min; set JUA_VIDEO_WORKERS for more cores)
-python palette.py && python build_logo.py && python build_book.py   # rebuild colours, logo files and brand book
-```
-
-## Before launch
-
-- [ ] Read every launch post out loud: does it sound like your group chat? You know this audience best.
-- [ ] Open each `source` in `content/posts.json` and confirm it (especially the Safaricom scam guidance link).
-- [ ] Search the Kenya Industrial Property Institute (KIPI) register for "Jua Kesho" before investing in print or merchandise.
-- [ ] Posts that name a public office holder: check every fact against its source before you tap ✅. For a
-      high-stakes post, ask a media lawyer first.
-- [ ] Rotate tokens if they're ever pasted anywhere public. Never commit `.env`.
+## Before you tap ✅
+- Open the source on any post that names a public office holder. For high-stakes claims, ask a media lawyer first.
+- Reject anything whose photo could be read as a real person it isn't.
+- Rotate any token that is ever pasted somewhere public. Never commit `.env`.
