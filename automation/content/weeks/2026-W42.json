@@ -3,120 +3,6 @@
   "created": "2026-10-12T16:31:22.980571+03:00",
   "posts": [
     {
-      "id": "2026-w42-d1-sauti-r6",
-      "template": "sauti",
-      "lane": "young_pro",
-      "bg": "usiku",
-      "publish_at": "2026-10-12T07:30:00+03:00",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d2-straight-r7",
-      "template": "straight",
-      "lane": "campus",
-      "bg": "usiku",
-      "publish_at": "2026-10-13T12:45:00+03:00",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d3-promise-r6",
-      "template": "promise",
-      "lane": "campus",
-      "bg": "usiku",
-      "publish_at": "2026-10-14T18:30:00+03:00",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d4-sauti-r6",
-      "template": "sauti",
-      "lane": "campus",
-      "bg": "usiku",
-      "publish_at": "2026-10-15T19:30:00+03:00",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d5-spotlight-r6",
-      "template": "spotlight",
-      "lane": "diaspora",
-      "bg": "usiku",
-      "publish_at": "2026-10-16T17:00:00+03:00",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d6-cover-r6",
-      "template": "cover",
-      "lane": "creator",
-      "series": "Kesho Kutwa",
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r6",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d6-kesho-1-r6",
-      "template": "kesho",
-      "lane": "creator",
-      "n": 1,
-      "total": 5,
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r6",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d6-kesho-2-r6",
-      "template": "kesho",
-      "lane": "creator",
-      "n": 2,
-      "total": 5,
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r6",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d6-kesho-3-r6",
-      "template": "kesho",
-      "lane": "creator",
-      "n": 3,
-      "total": 5,
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r6",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d6-kesho-4-r6",
-      "template": "kesho",
-      "lane": "creator",
-      "n": 4,
-      "total": 5,
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r6",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d6-kesho-5-r6",
-      "template": "kesho",
-      "lane": "creator",
-      "n": 5,
-      "total": 5,
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r6",
-      "status": "planned"
-    },
-    {
-      "id": "2026-w42-d7-glasspoll-r6",
-      "template": "glasspoll",
-      "lane": "everyone",
-      "bg": "usiku",
-      "publish_at": "2026-10-18T18:00:00+03:00",
-      "size": "story",
-      "status": "planned"
-    },
-    {
       "id": "2026-w42-hot-1012-r2",
       "template": "sauti",
       "lane": "everyone",
@@ -158,6 +44,222 @@
       "reel": true,
       "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1012-r2-photo.jpg",
       "photo_credit": "Photo: Jorge Láscar from Bogotá, Colombia / Wikimedia Commons, CC BY-SA 2.0"
+    },
+    {
+      "id": "2026-w42-d2-money-r2",
+      "template": "money",
+      "lane": "young_pro",
+      "message": "KRA collected Sh965m more than planned in September 2026, mostly from import taxes.",
+      "hook": "KRA beat target by Sh965m",
+      "number": "Sh965m",
+      "unit": "extra revenue collected, Sept 2026",
+      "what": "KRA collected Sh965 million more than its September 2026 target, driven mostly by import taxes.",
+      "why": "More tax collected on imports. The question: do we see it in services or just higher prices?",
+      "check": "Read KRA's monthly revenue reports and Treasury exchequer data at treasury.go.ke.",
+      "beats": [
+        "KRA just *beat* its target.",
+        "Extra Sh965 million in September.",
+        "Mostly from import taxes at the port.",
+        "We feel the tax, not the upgrade.",
+        "So where does the extra *go*?",
+        "Check the exchequer report yourself."
+      ],
+      "photo_query": "Mombasa port containers",
+      "caption": "KRA beat its September target by Sh965 million. Imports are up, taxes are up with them. Where does the extra go?\n\n#KRA #FollowTheMoney #JuaKesho",
+      "source": "Livenow Africa, 'KRA Beats September Target by KSh965 Million as Imports Rise', 12 Oct 2026, https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTklZeFdtTm0ybTFQM2U1eFE0b1RydUVwZnc4R1Q1QmlOei00cUwweFhGUWF5NGdkZkFOVUpjRHlVQ0dlOGtTbWoxY3duaEtjSGduSzFIWlZWQ3k0MFZGZGZHemNpa2lvS0Y1UmhoQy1jcm1HaWlydTRVQUFuWDRnNGxXYk9HbWt2VUxXdWFCaERlU2t4cTdyQ28tNDhKRzhGa2Z5OUluRVBkUms?oc=5",
+      "bg": "shuka",
+      "publish_at": "2026-10-13T12:45:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d2-money-r2-photo.jpg",
+      "photo_credit": "Photo: Ian Kiptoo / Wikimedia Commons, CC BY 4.0",
+      "reel": true
+    },
+    {
+      "id": "2026-w42-d3-promise-r2",
+      "template": "promise",
+      "lane": "campus",
+      "message": "Hustler Fund gave collateral-free loans as promised, but over half of borrowers are in default.",
+      "who": "William Ruto, President of Kenya",
+      "promise": "We will set up a Hustler Fund giving Kenyans collateral-free loans at single-digit interest.",
+      "said": "Kenya Kwanza manifesto, 2022",
+      "reality": "Fund launched at 8% interest, no collateral, but Treasury data shows over half of loans in default.",
+      "ask": "Did your Hustler Fund loan help you, or bury you in debt?",
+      "verdict": "partly",
+      "proof": [
+        "Hustler Fund launched Nov 2022: 8% reducing-balance interest, no collateral.",
+        "By 2024, Treasury data showed over 50% default on personal loans.",
+        "Govt added savings/insurance tiers in 2024 to try to fix defaults."
+      ],
+      "source": "Kenya Kwanza manifesto, 2022; Hustler Fund terms, hustlerfund.go.ke; Business Daily and The Standard, 2024 reports on Hustler Fund default rates citing National Treasury data.",
+      "beats": [
+        "Promised in 2022: *no collateral* loans.",
+        "Launched at 8% interest. Kept, so far.",
+        "But over *half* default on their loans.",
+        "Zero collateral cuts both ways.",
+        "Built hustles, or just more debt?",
+        "Check your Hustler Fund status today."
+      ],
+      "photo_query": "Nairobi open air market",
+      "caption": "Hustler Fund: collateral-free loans at 8%, as promised in 2022. But over half the loans are in default, Treasury data shows. Did yours help, or just pile up debt?\n\n#HustlerFund #PromiseTracker #JuaKesho",
+      "bg": "usiku",
+      "publish_at": "2026-10-14T18:30:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d3-promise-r2-photo.jpg",
+      "photo_credit": "Photo: Wawerumacha / Wikimedia Commons, CC BY-SA 4.0",
+      "ink": {
+        "1": "#F8F7F6"
+      },
+      "reel": true
+    },
+    {
+      "id": "2026-w42-d4-sauti-r2",
+      "template": "sauti",
+      "lane": "campus",
+      "kicker": "Comrades",
+      "line": "Lecturers and government can't agree on pay, *again*, and our semester pays the price.",
+      "fact": "UASU says CBA talks with the government have collapsed, raising strike threats.",
+      "source": "NTV Kenya, 'University lecturers threaten to escalate strike as negotiations with govt collapse', 12 Oct 2026, https://www.youtube.com/watch?v=_uFkGmxCins",
+      "message": "Lecturers' strike talks with government have collapsed, threatening another disrupted semester.",
+      "photo_query": "University of Nairobi campus",
+      "beats": [
+        "Semester on hold. *Again*.",
+        "Lecturers, govt: CBA talks collapsed.",
+        "Strike threat looms over our semester.",
+        "We still pay fees on time.",
+        "Whose deadline actually matters here?"
+      ],
+      "caption": "UASU says talks with government have collapsed. Again. We're the ones who lose class time and still pay fees on time. How many semesters have you lost to a strike?\n\n#JuaKesho #UASU #CampusKE",
+      "bg": "usiku",
+      "publish_at": "2026-10-15T19:30:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d4-sauti-r2-photo.jpg",
+      "photo_credit": "Photo: EstherWikipedian / Wikimedia Commons, CC BY-SA 4.0",
+      "reel": true
+    },
+    {
+      "id": "2026-w42-d5-straight-r2",
+      "template": "straight",
+      "lane": "everyone",
+      "claim": "KRA never hits its revenue targets.",
+      "who": "a widely shared claim on Kenyan X, October 2026",
+      "claim_source": "Common tax-complaint claim circulating on Kenyan X, October 2026",
+      "verdict": "false",
+      "truth": "KRA beat its September 2026 target by Ksh965 million.",
+      "proof": [
+        "KRA collected above target in September 2026, per its own report.",
+        "Rising imports lifted import duty and VAT collections."
+      ],
+      "pride": "When enforcement works, the taxman delivers.",
+      "source": "Livenow Africa, 'KRA Beats September Target by KSh965 Million as Imports Rise', 12 Oct 2026, https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTklZeFdtTm0ybTFQM2U1eFE0b1RydUVwZnc4R1Q1QmlOei00cUwweFhGUWF5NGdkZkFOVUpjRHlVQ0dlOGtTbWoxY3duaEtjSGduSzFIWlZWQ3k0MFZGZGZHemNpa2lvS0Y1UmhoQy1jcm1HaWlydTRVQUFuWDRnNGxXYk9HbWt2VUxXdWFCaERlU2t4cTdyQ28tNDhKRzhGa2Z5OUluRVBkUms?oc=5",
+      "message": "KRA beat its September 2026 revenue target by Ksh965 million, despite claims it never hits targets.",
+      "photo_query": "Mombasa port containers",
+      "beats": [
+        "KRA never hits targets. *Myth*.",
+        "September 2026: beat target by Ksh965m.",
+        "Imports rose, duty collections followed.",
+        "Enforcement works when applied.",
+        "Verify before you share this."
+      ],
+      "caption": "Claim: KRA never meets its targets. Reality: it beat September's target by Ksh965 million as imports rose. Verify before you share.\n\n#JuaKesho #SetItStraight #KRA",
+      "bg": "usiku",
+      "publish_at": "2026-10-16T17:00:00+03:00",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "'source' is 370 chars (max 240)"
+        ],
+        "warnings": []
+      }
+    },
+    {
+      "id": "2026-w42-d6-promise-r2",
+      "template": "promise",
+      "lane": "everyone",
+      "who": "William Ruto, President of Kenya",
+      "promise": "A *Hustler Fund*: collateral-free loans for every Kenyan, no shylocks",
+      "said": "Kenya Kwanza manifesto, 2022",
+      "reality": "Fund launched and lent billions, but over half the loans sit unpaid",
+      "ask": "Where's the credit without the debt trap he promised?",
+      "verdict": "partly",
+      "proof": [
+        "Hustler Fund launched Nov 2022, disbursed over Ksh50bn in micro-loans by 2024 (National Treasury)",
+        "Auditor-General flagged a default rate above 50% on Hustler Fund loans",
+        "The promised bigger business-tier loans rolled out years behind schedule"
+      ],
+      "source": "National Treasury Hustler Fund performance reports, 2023-2024; Auditor-General reports on the Hustler Fund; Business Daily and Nation coverage, 2023-2024",
+      "message": "The Hustler Fund promised loans with no collateral; more than half of what it lent is unpaid.",
+      "beats": [
+        "He promised loans with *no collateral*.",
+        "Over *Ksh50bn* given out since 2022.",
+        "More than half unpaid, auditors say.",
+        "The bigger loans? Still *waiting*.",
+        "Where's the credit without the trap?"
+      ],
+      "photo_query": "Kenyan shilling notes",
+      "caption": "He promised credit with no collateral. Kenya Kwanza manifesto, 2022.\n\nOver Ksh50bn out the door. More than half unpaid, the Auditor-General says. The bigger business loans are still coming.\n\nDid you ever get a Hustler Fund loan? Did you repay it?\n\n#HustlerFund #PromiseTracker #JuaKesho",
+      "bg": "usiku",
+      "publish_at": "2026-10-17T11:00:00+03:00",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "'proof[0]' is 97 chars (max 90)"
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      }
+    },
+    {
+      "id": "2026-w42-d7-glasspoll-r2",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "hook": "Ruto to Uhuru: retire",
+      "question": "Should ex-presidents stay in politics?",
+      "options": [
+        "Ndio, speak freely",
+        "La, let it go"
+      ],
+      "cta": "Vote and see what Kenya says",
+      "message": "Ruto told Uhuru to retire from politics; we're asking where Kenyans actually stand on that.",
+      "beats": [
+        "Ruto to Uhuru: *you're a conman*.",
+        "Told him to retire, in public.",
+        "Former presidents keep talking anyway.",
+        "Should they, though? *You* decide.",
+        "Vote. See what Kenya really thinks."
+      ],
+      "photo_query": "Kenya National Assembly",
+      "caption": "Ruto told Uhuru to retire. Again. Former presidents keep weighing in on current politics, and we keep arguing about whether that's okay.\n\nShould ex-presidents stay out of active politics?\n\n#TapeliUhuruKenyatta #JuaKesho",
+      "bg": "usiku",
+      "publish_at": "2026-10-18T18:00:00+03:00",
+      "size": "story",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d7-glasspoll-r2-photo.jpg",
+      "photo_credit": "Photo: Sir. Kevin / Wikimedia Commons, CC BY-SA 2.0"
     }
   ],
   "scripts": {
@@ -166,5 +268,6 @@
     "sms": "Usiibiwe: Don't repeat 'M-Pesa ni ya Uingereza.' It was built, tested & launched in Kenya, 2007. Verify facts before you share them.",
     "reels": "Five things are quietly moving Kenya toward 2027. One: the election date, fixed, second Tuesday of August. Two: your constituency boundaries, overdue for review, deciding how much your vote counts. Three: party primaries, the real test before the ballot. Four: the budget calendar, set by law every February 15th, before any Finance Bill. Five: promises, we're tracking them now, so by 2027 it's receipts, not rhetoric. Follow Jua Kesho. Let's get ready."
   },
-  "spend_usd": 2.5419
+  "spend_usd": 3.0807,
+  "revision": 2
 }
