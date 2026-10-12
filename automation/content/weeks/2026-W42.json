@@ -1,466 +1,468 @@
 {
-  "collection": "2026-W42",
-  "created": "2026-10-12T16:31:22.980571+03:00",
-  "posts": [
-    {
-      "id": "2026-w42-d1-sauti-r3",
-      "template": "sauti",
-      "lane": "young_pro",
-      "kicker": "Sisi wananchi",
-      "line": "We top up tokens before midnight so lights stay on. The *state* owes Kenya Power Sh7.35bn and hasn't blinked.",
-      "fact": "State agencies owe Kenya Power Sh7.35bn in unpaid bills, Business Daily reports, Oct 2026.",
-      "message": "Government owes Kenya Power Sh7.35bn while ordinary Kenyans pay their power bills on time.",
-      "photo_query": "Kenya Power prepaid meter Nairobi",
-      "source": "Business Daily, 'State's unpaid electricity bills to Kenya Power hit Sh7.35bn', Oct 12 2026",
-      "beats": [
-        "We top up tokens before *midnight*.",
-        "State owes Kenya Power *Sh7.35bn*.",
-        "No blackout for government's own bill.",
-        "We pay on time. They don't.",
-        "Where is the *money*?",
-        "Tag someone who pays their token."
-      ],
-      "caption": "We queue to top up tokens before midnight so the lights don't go off. Meanwhile the state owes Kenya Power Sh7.35bn and nothing's been rationed for that.\n\nHave you ever had your power threatened while government bills stack up? Tell us.\n\n#KenyaPower #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-12T07:30:00+03:00",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d1-sauti-r3-photo.jpg",
-      "photo_credit": "Photo: Press Information Department / Wikimedia Commons, Public domain",
-      "reel": true
-    },
-    {
-      "id": "2026-w42-d2-straight-r3",
-      "template": "straight",
-      "lane": "campus",
-      "claim": "HELB loans get wiped if you don't find a job within 5 years.",
-      "who": "a viral TikTok claim, 2026",
-      "truth": "HELB loans never expire; recovery continues until fully repaid.",
-      "pride": "Kenya has funded students since 1995.",
-      "claim_source": "TikTok video circulating among university students, Sept 2026, claiming HELB cancels loans after 5 years unemployed (archived on X, Sept 2026)",
-      "source": "Higher Education Loans Board Act, 1995; HELB loan repayment policy, helb.co.ke/loan-repayment (recovery continues indefinitely, no expiry)",
-      "proof": [
-        "HELB Act, 1995 lets HELB recover loans via KRA, employers and banks, no deadline.",
-        "Defaulters face accruing interest; the debt doesn't vanish with time."
-      ],
-      "verdict": "false",
-      "message": "HELB loans never expire. The 'wiped after 5 years' claim going viral on campus is false.",
-      "photo_query": "Kenyan university campus students",
-      "beats": [
-        "HELB loan *wiped* after 5 years? No.",
-        "Claim: jobless 5 years, debt gone.",
-        "Truth: HELB recovers via *KRA*, employer.",
-        "No expiry. Interest keeps adding up.",
-        "*Verify* before you forward it.",
-        "Send this to your class group."
-      ],
-      "caption": "Hii story inarudi kila mwaka: 'HELB itafuta deni ukikaa miaka 5 bila job.' Uongo. HELB inaweza chukua pesa yako through KRA, employer, hata bank account. Deni haiishi lenyewe.\n\nUmewahi ona hii post ikisambaa kwenu group? Tag comrade anayehitaji kujua.\n\n#HELB #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-13T12:45:00+03:00",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d2-straight-r3-photo.jpg",
-      "photo_credit": "Photo: BLM Oregon &amp; Washington / Wikimedia Commons, Public domain",
-      "reel": true
-    },
-    {
-      "id": "2026-w42-d3-promise-r3",
-      "template": "promise",
-      "lane": "campus",
-      "who": "William Ruto, President of Kenya",
-      "promise": "No Kenyan student will be locked out of university for lack of fees.",
-      "said": "Kenya Kwanza manifesto, 2022",
-      "verdict": "partly",
-      "reality": "New funding model left students in disputed bands; High Court ruled the model unconstitutional.",
-      "proof": [
-        "Milimani High Court ruled the university funding model unconstitutional, July 2024 (reported by Daily Nation)",
-        "Universities Fund and HELB reports showed thousands of students unplaced or under-funded in 2023/24 bands",
-        "Government appealed the ruling and kept running the banded model into 2025/26"
-      ],
-      "ask": "Where is the top-up money for underfunded bands?",
-      "source": "High Court ruling, Nairobi, July 2024 (Daily Nation coverage); Universities Fund Report FY2023/24; HELB Annual Report 2023/24",
-      "message": "Kenya Kwanza promised no student locked out for fees; a court called the funding model unconstitutional and gaps remain.",
-      "photo_query": "University of Nairobi students",
-      "beats": [
-        "\"No student locked out,\" they said.",
-        "High Court: model *unconstitutional*.",
-        "Thousands still stuck in limbo.",
-        "Bands leave some students *underfunded*.",
-        "Where is the top-up money?",
-        "Check your HELB status today."
-      ],
-      "caption": "\"No student will be locked out for fees.\" Kenya Kwanza, 2022. The court called the funding model unconstitutional in 2024. Many comrades are still stuck mid-band.\n\nUmeshaangalia status yako HELB? Tag a comrade still waiting.\n\n#PromiseTracker #HELB #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-14T18:30:00+03:00",
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "'proof[0]' is 109 chars (max 90)",
-          "'proof[1]' is 105 chars (max 90)"
-        ],
-        "warnings": []
-      }
-    },
-    {
-      "id": "2026-w42-d4-sauti-r3",
-      "template": "sauti",
-      "lane": "campus",
-      "kicker": "Comrades wanasema",
-      "line": "Ebola is now a *'formidable'* epidemic disease, Nairobi says. Our hostel still has no isolation plan.",
-      "fact": "Health CS Duale declared Ebola Bundibugyo a formidable epidemic disease under the Public Health Act, Oct 2026.",
-      "source": "Capital FM News, 'CS Duale Declares Ebola Bundibugyo a Formidable Epidemic Disease,' 12 Oct 2026, https://capitalfm.africa/cs-duale-declares-ebola-bundibugyo-a-formidable-epidemic-disease/",
-      "message": "Government declared Ebola-Bundibugyo a 'formidable' epidemic disease; students want to know campus and hostel preparedness.",
-      "photo_query": "Kenyatta National Hospital",
-      "beats": [
-        "Ebola just got a *scary* label.",
-        "Declared: a *\"formidable\"* epidemic disease.",
-        "Public Health Act now kicks in.",
-        "Hostels still lack an isolation plan.",
-        "What's your campus's outbreak plan?",
-        "Send this to your hostel group."
-      ],
-      "caption": "They've declared Ebola Bundibugyo a formidable epidemic disease. Sawa. But has your campus clinic even put up a notice?\n\nWewe umeona any health alert in your hostel? Tell us below.\n\n#Ebola #JuaKesho #Comrades",
-      "bg": "usiku",
-      "publish_at": "2026-10-15T19:30:00+03:00",
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "'message' is 123 chars (max 120)"
-        ],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      }
-    },
-    {
-      "id": "2026-w42-d5-spotlight-r3",
-      "template": "spotlight",
-      "lane": "diaspora",
-      "kind": "Startup",
-      "name": "Gjenge Makers",
-      "country": "Kenya",
-      "what": "Turns recycled plastic waste into paving bricks stronger than concrete",
-      "why": "Cuts plastic waste and builds affordable, durable pavements for Kenyan streets",
-      "cta": "Follow Gjenge Makers and share their story",
-      "message": "Kenyan startup Gjenge Makers turns plastic waste into bricks stronger than concrete.",
-      "beats": [
-        "Nairobi's plastic waste becomes *bricks*.",
-        "Gjenge Makers recycles waste into pavers.",
-        "Bricks are *stronger* than concrete.",
-        "Founder won UN Young Champion *2020*.",
-        "Africa building, not just complaining.",
-        "Follow and share their work."
-      ],
-      "photo_query": "Nairobi plastic recycling bricks factory",
-      "source": "UNEP Young Champions of the Earth 2020, Nzambi Matee: https://www.unep.org/youngchampions/winners/2020/nzambi-matee",
-      "caption": "Nairobi's plastic waste is becoming pavements. Gjenge Makers, founded by Kenyan engineer Nzambi Matee, turns recycled plastic into bricks stronger than concrete. She won UN Young Champion of the Earth for it. Follow their work and see how far this scales.\n\n#PutUsOn #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-16T17:00:00+03:00",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d5-spotlight-r3-photo.jpg",
-      "photo_credit": "Photo: Andy Li / Wikimedia Commons, CC0",
-      "reel": true
-    },
-    {
-      "id": "2026-w42-d6-cover-r3",
-      "template": "cover",
-      "lane": "creator",
-      "series": "Kesho Kutwa",
-      "kicker": "5 things landing on Kenya now",
-      "lines": [
-        "Ebola alert",
-        "Your money",
-        "2027 clock",
-        "Police warning"
-      ],
-      "highlight": 2,
-      "message": "Five changes are landing on Kenya this week: health, money, votes and power.",
-      "beats": [
-        "Kesho is already being written.",
-        "*Five* things land on us this week.",
-        "Health. Money. Votes. Power.",
-        "Swipe before you're caught out."
-      ],
-      "photo_query": "Nairobi city skyline Kenya",
-      "caption": "Kesho inakuja, iko hapa already. Five things landing on Kenya this week: Ebola alert, a new money bill, the 2027 clock na zaidi. Swipe.\n\nWhich one did you not know about?\n\n#KeshoKutwa #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach",
-          "contains a year, % or amount with no `source`"
-        ]
-      },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-cover-r3-photo.jpg",
-      "photo_credit": "Photo: DEMOSH from Nairobi, Kenya / Wikimedia Commons, CC BY 2.0"
-    },
-    {
-      "id": "2026-w42-d6-kesho-1-r3",
-      "template": "kesho",
-      "lane": "creator",
-      "headline": "Ebola declared a 'formidable disease' this week",
-      "leo": "CS Duale declared Ebola Bundibugyo a formidable epidemic disease on Oct 12, 2026.",
-      "kesho": "Expect mandatory screening at airports, borders and possible quarantine orders soon.",
-      "anza": "Check Ministry of Health alerts before you travel, and report symptoms early, not rumours.",
-      "n": 1,
-      "total": 5,
-      "message": "Ebola being declared a formidable disease means new screening and quarantine powers kick in now.",
-      "beats": [
-        "Ebola just got declared *formidable*.",
-        "CS Duale made it official, Oct 12.",
-        "Screening at borders is coming.",
-        "Quarantine orders possible, fast.",
-        "Check MOH alerts, don't panic."
-      ],
-      "photo_query": "Jomo Kenyatta International Airport",
-      "source": "Capital FM News, 'CS Duale Declares Ebola Bundibugyo a Formidable Epidemic Disease', 2026-10-12, https://capitalfm.africa/cs-duale-declares-ebola-bundibugyo-a-formidable-epidemic-disease/",
-      "caption": "Ebola Bundibugyo is now a 'formidable epidemic disease' in Kenya's books. That triggers real powers: screening, quarantine, reporting.\n\nTravelling soon? Check MOH first.\n\n#KeshoKutwa #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-kesho-1-r3-photo.jpg",
-      "photo_credit": "Photo: Fawaz.tairou / Wikimedia, CC BY 4.0",
-      "ink": {
-        "1": "#F8F7F6"
-      }
-    },
-    {
-      "id": "2026-w42-d6-kesho-2-r3",
-      "template": "kesho",
-      "lane": "creator",
-      "headline": "New bill: state could take over failing payment firms",
-      "leo": "A new bill lets the Central Bank seize control of a collapsing payment firm.",
-      "kesho": "If your wallet app or mobile money firm fails, the state can step in before you lose your cash.",
-      "anza": "Watch for the Bill's public participation notice and send your written comments when it opens.",
-      "n": 2,
-      "total": 5,
-      "message": "A new bill would let the state take over a failing payment firm before your money disappears.",
-      "beats": [
-        "A new bill is in Parliament now.",
-        "It lets the state seize *failing* firms.",
-        "Your M-Pesa, your wallet, protected.",
-        "Comment when public participation opens.",
-        "Where is the oversight today?"
-      ],
-      "photo_query": "M-Pesa agent Kenya",
-      "source": "Businessday NG, 'Kenya seeks power to take over failing payment firms under new bill', 2026-10-12",
-      "caption": "Your M-Pesa or wallet app fails: who protects your cash? A new bill says the Central Bank can step in and take over.\n\nRead it when it's public. Your comment counts.\n\n#KeshoKutwa #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      }
-    },
-    {
-      "id": "2026-w42-d6-kesho-3-r3",
-      "template": "kesho",
-      "lane": "creator",
-      "headline": "The 2027 election date is already fixed by law",
-      "leo": "The Constitution sets election day: the second Tuesday of August, every five years.",
-      "kesho": "Miss the voter roll cut-off before August 2027 and you cannot vote, no extensions.",
-      "anza": "Check your voter registration status today at any IEBC office or iebc.or.ke.",
-      "n": 3,
-      "total": 5,
-      "message": "Kenya's 2027 election date is fixed by the Constitution: check you're registered to vote now.",
-      "beats": [
-        "Mark your calendar: *August 2027*.",
-        "The Constitution fixes the date.",
-        "Miss the roll cut-off, miss your vote.",
-        "No extensions, no excuses.",
-        "Check your registration status today."
-      ],
-      "photo_query": "IEBC voter registration Kenya",
-      "source": "Constitution of Kenya, 2010, Article 101(1)",
-      "caption": "No one is moving the 2027 date. The Constitution already fixed it: second Tuesday of August.\n\nAre you even registered? Check today.\n\n#KeshoKutwa #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      }
-    },
-    {
-      "id": "2026-w42-d6-kesho-4-r3",
-      "template": "kesho",
-      "lane": "creator",
-      "headline": "Kindiki warns sponsors of political violence",
-      "leo": "Interior CS Kindiki vowed tough action against sponsors of political violence.",
-      "kesho": "Expect arrests to reach the financiers of goons, not only the young men hired on the ground.",
-      "anza": "Report incitement or hired crowds to police or IPOA; never fund or join a violent group.",
-      "n": 4,
-      "total": 5,
-      "message": "Police are now targeting the people who pay for political violence, not just the hired crowds.",
-      "beats": [
-        "Kindiki is coming for the *sponsors*.",
-        "Not just the goons, the financiers.",
-        "More arrests expected before 2027.",
-        "Report incitement when you see it.",
-        "Violence for votes should cost you."
-      ],
-      "photo_query": "Kenya police Nairobi",
-      "source": "Capital FM News, 'Kindiki vows tough action against political violence sponsors', 2026-10-12, https://capitalfm.africa/kindiki-vows-tough-action-against-political-violence-sponsors/",
-      "caption": "It's not just the goons anymore. Kindiki says the people funding political violence are next.\n\nSee hired crowds? Report it.\n\n#KeshoKutwa #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "sounds AI-written: 'it's not just' (say it the way a Kenyan would)"
-        ],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      }
-    },
-    {
-      "id": "2026-w42-d6-kesho-5-r3",
-      "template": "kesho",
-      "lane": "creator",
-      "headline": "State owes Kenya Power Sh7.35 billion in unpaid bills",
-      "leo": "Government agencies owe Kenya Power Sh7.35 billion in unpaid electricity bills.",
-      "kesho": "A cash-strapped Kenya Power means slower repairs, more blackouts, and pressure to raise tariffs.",
-      "anza": "Watch for EPRA tariff review notices and attend the public participation when it's called.",
-      "n": 5,
-      "total": 5,
-      "message": "The government's Sh7.35bn unpaid power bill could mean more blackouts and higher tariffs for us.",
-      "beats": [
-        "Kenya Power is owed *Sh7.35bn*.",
-        "By the government itself.",
-        "Unpaid bills mean slower repairs.",
-        "Who pays? Probably us, in tariffs.",
-        "Watch for the next EPRA notice."
-      ],
-      "photo_query": "Kenya Power substation Nairobi",
-      "source": "Business Daily, 'State's unpaid electricity bills to Kenya Power hit Sh7.35bn', 2026-10-12",
-      "caption": "The government owes Kenya Power Sh7.35 billion. Guess who feels it when the lights go out, or the tariff goes up.\n\nWhere is the money? 👇🏾\n\n#KeshoKutwa #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover-r3",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-kesho-5-r3-photo.jpg",
-      "photo_credit": "Photo: Anakin / Wikimedia, CC BY 3.0"
-    },
-    {
-      "id": "2026-w42-d7-glasspoll-r3",
-      "template": "glasspoll",
-      "lane": "everyone",
-      "message": "Political violence is creeping back before 2027. Tell us if you've seen it near you.",
-      "hook": "Teargas, goons, 2027 tayari?",
-      "question": "Seen political violence near you?",
-      "options": [
-        "Ndio, nimeona",
-        "La, sijaona"
-      ],
-      "cta": "Vote. See what Kenya says.",
-      "photo_query": "teargas protest Nairobi",
-      "source": "Capital FM News, 'Teargas, gunshots as Malala leads protest in Kakamega' and 'Kindiki vows tough action against political violence sponsors', 2026-10-12, https://capitalfm.africa/teargas-gunshots-as-malala-leads-protest-in-kakamega/",
-      "caption": "Teargas in Kakamega. Teargas outside a DCP station. Nakuru launching a 107 hotline for gangs before 2027. Kindiki says he'll deal with the sponsors.\n\nTunataka kujua: umeona hii kitu karibu nawe?\n\n#JuaKesho",
-      "beats": [
-        "Teargas in Kakamega this week.",
-        "Police storm a *DCP* station.",
-        "Kindiki vows action on *sponsors*.",
-        "2027 is 14 months away.",
-        "Have you seen this near you?",
-        "Vote. Tag someone who should."
-      ],
-      "bg": "usiku",
-      "publish_at": "2026-10-18T18:00:00+03:00",
-      "size": "story",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      }
-    },
-    {
-      "id": "2026-w42-hot-1012",
-      "template": "sauti",
-      "lane": "everyone",
-      "kicker": "Sisi wananchi",
-      "line": "Police tear-gas opposition leaders *today*. The CS vows 'tough action' on violence tomorrow. Sawa.",
-      "fact": "Oct 12: police tear-gassed DCP leaders storming a station; same day CS Kindiki vowed action on violence.",
-      "source": "Kenyans.co.ke, 'Running Battles as Police Fire Tear Gas at DCP Leaders After Storming Station', 2026-10-12; Capital FM News, 'Kindiki vows tough action against political violence sponsors', 2026-10-12",
-      "message": "Tear gas against opposition leaders, then a vow to punish political violence sponsors, same day.",
-      "photo_query": "tear gas cloud Nairobi street protest",
-      "beats": [
-        "Tear gas today. *Statement* tomorrow.",
-        "DCP leaders say police stormed in.",
-        "Kindiki vows *tough action* on sponsors.",
-        "2027 campaigns haven't even started.",
-        "Sawa, but *who* sponsors this?",
-        "Send this to your 2027 group chat."
-      ],
-      "caption": "Tear gas one day. Tough talk the next. We've seen this script before, every election season. Who's really sponsoring political violence in Kenya? Verify before you share, and send this to someone still asking.\n\n#JuaKesho #SautiYaMwananchi",
-      "bg": "usiku",
-      "publish_at": "2026-10-12T20:33:00+03:00",
-      "hot": true,
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 8,
-        "send": 7,
-        "clarity": 9,
-        "fresh": 6,
-        "voice": 8,
-        "craft": 7,
-        "picture": 8,
-        "hold": 7,
-        "avg": 7.5,
-        "note": "The irony lands hard, but 'who sponsors this?' deflates into a generic election-season complaint—sharpen it with a specific detail (a name, a pattern, a number) that makes the hypocrisy undeniable, not just suspected."
-      },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1012-photo.jpg",
-      "photo_credit": "Photo: Tyler Merbler from USA / Wikimedia Commons, CC BY 2.0",
-      "reel": true
-    }
-  ],
-  "scripts": {
-    "radio": "Karibu, this is Jua, and you're listening to Jua Kesho. Let's talk about something that happened this week that deserves a serious conversation, not just reaction.\n\nThis morning, tear gas was used against opposition leaders during a demonstration. By evening, the same government issued a strong statement, vowing to punish sponsors of political violence. Same day, two very different messages.\n\nNow, nobody here is against peace. Nobody here wants chaos on our streets. But we have to ask a simple, honest question: is justice applied the same way to everyone, every time? Or does it depend on who's marching, and who's speaking?\n\nBecause if violence is wrong, it should be wrong no matter who commits it — whether it's a crowd throwing stones, or security forces using force against people exercising their constitutional right to assemble.\n\nAs young Kenyans, our job isn't to pick a side blindly. Our job is to watch closely, ask hard questions, and hold everyone — government and opposition alike — to the same standard. That's how we protect what little trust remains in our institutions.\n\nLet's keep the conversation going. Share your thoughts, stay engaged, stay informed.\n\nKwa ufupi kwa Kiswahili: Wiki hii, mabomba ya machozi yalitumika dhidi ya viongozi wa upinzani asubuhi, kisha jioni hiyo hiyo serikali ikaahidi kuadhibu wafadhili wa vurugu za kisiasa. Swali ni: je, haki inatumika sawa kwa wote? Kama vijana, wajibu wetu ni kuuliza maswali na kudai usawa kwa kila mtu.",
-    "voice_note": "Hey fam, it's Jua. Quick one for you today. This week, something happened that's got people talking — tear gas on opposition leaders in the morning, and by evening, the same government promising to deal firmly with sponsors of political violence. Same day, two messages.\n\nWe're not here to pick sides, but we are here to ask: why does accountability always seem to land differently depending on who's marching, who's speaking, who's funding what? That inconsistency is exactly what erodes trust.\n\nHere's the thing — peace is non-negotiable, but so is fairness. If violence is wrong, it's wrong regardless of who's doing it or who it's done to. Let's keep watching, keep asking, keep each other informed. That's how we protect our democracy, one honest conversation at a time.\n\nShare this with someone who needs to hear it. Tutaonana, Kesho Kutwa.",
-    "sms": "Usiibiwe: When leaders condemn violence but use force unevenly, ask why. Equal justice means equal rules for everyone, every time.",
-    "reels": "Morning: tear gas on opposition leaders. Evening: a vow to punish violence sponsors. Same day. Two standards?\n\nKesho Kutwa is asking the question today's leaders won't.\n\nJustice can't be selective. If peace matters, it must matter for everyone — not just when it's convenient.\n\nStay awake, stay informed. This is Kesho Kutwa."
+ "collection": "2026-W42",
+ "created": "2026-10-12T16:31:22.980571+03:00",
+ "posts": [
+  {
+   "id": "2026-w42-d1-sauti-r3",
+   "template": "sauti",
+   "lane": "young_pro",
+   "kicker": "Sisi wananchi",
+   "line": "We top up tokens before midnight so lights stay on. The *state* owes Kenya Power Sh7.35bn and hasn't blinked.",
+   "fact": "State agencies owe Kenya Power Sh7.35bn in unpaid bills, Business Daily reports, Oct 2026.",
+   "message": "Government owes Kenya Power Sh7.35bn while ordinary Kenyans pay their power bills on time.",
+   "photo_query": "Kenya Power prepaid meter Nairobi",
+   "source": "Business Daily, 'State's unpaid electricity bills to Kenya Power hit Sh7.35bn', Oct 12 2026",
+   "beats": [
+    "We top up tokens before *midnight*.",
+    "State owes Kenya Power *Sh7.35bn*.",
+    "No blackout for government's own bill.",
+    "We pay on time. They don't.",
+    "Where is the *money*?",
+    "Tag someone who pays their token."
+   ],
+   "caption": "We queue to top up tokens before midnight so the lights don't go off. Meanwhile the state owes Kenya Power Sh7.35bn and nothing's been rationed for that.\n\nHave you ever had your power threatened while government bills stack up? Tell us.\n\n#KenyaPower #JuaKesho",
+   "bg": "usiku",
+   "publish_at": "2026-10-12T07:30:00+03:00",
+   "status": "awaiting",
+   "guard": {
+    "errors": [],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   },
+   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d1-sauti-r3-photo.jpg",
+   "photo_credit": "Photo: Press Information Department / Wikimedia Commons, Public domain",
+   "reel": true
   },
-  "spend_usd": 1.3334
+  {
+   "id": "2026-w42-d2-straight-r4",
+   "template": "straight",
+   "lane": "campus",
+   "claim": "HELB loans get wiped if you don't find a job within 5 years.",
+   "who": "a viral TikTok claim, 2026",
+   "truth": "HELB loans never expire; recovery continues until fully repaid.",
+   "pride": "Kenya has funded students since 1995.",
+   "claim_source": "TikTok video circulating among university students, Sept 2026, claiming HELB cancels loans after 5 years unemployed (archived on X, Sept 2026)",
+   "source": "Higher Education Loans Board Act, 1995; HELB loan repayment policy, helb.co.ke/loan-repayment (recovery continues indefinitely, no expiry)",
+   "proof": [
+    "HELB Act, 1995 lets HELB recover loans via KRA, employers and banks, no deadline.",
+    "Defaulters face accruing interest; the debt doesn't vanish with time."
+   ],
+   "verdict": "false",
+   "message": "HELB loans never expire. The 'wiped after 5 years' claim going viral on campus is false.",
+   "photo_query": "Kenyan university campus students",
+   "beats": [
+    "HELB loan *wiped* after 5 years? No.",
+    "Claim: jobless 5 years, debt gone.",
+    "Truth: HELB recovers via *KRA*, employer.",
+    "No expiry. Interest keeps adding up.",
+    "*Verify* before you forward it.",
+    "Send this to your class group."
+   ],
+   "caption": "Hii story inarudi kila mwaka: 'HELB itafuta deni ukikaa miaka 5 bila job.' Uongo. HELB inaweza chukua pesa yako through KRA, employer, hata bank account. Deni haiishi lenyewe.\n\nUmewahi ona hii post ikisambaa kwenu group? Tag comrade anayehitaji kujua.\n\n#HELB #JuaKesho",
+   "bg": "usiku",
+   "publish_at": "2026-10-13T12:45:00+03:00",
+   "status": "needs_human",
+   "guard": {
+    "errors": [
+     "photo from the wrong country (place filter gap, fixed)"
+    ],
+    "warnings": []
+   },
+   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d2-straight-r3-photo.jpg",
+   "photo_credit": "Photo: BLM Oregon &amp; Washington / Wikimedia Commons, Public domain",
+   "reel": true
+  },
+  {
+   "id": "2026-w42-d3-promise-r3",
+   "template": "promise",
+   "lane": "campus",
+   "who": "William Ruto, President of Kenya",
+   "promise": "No Kenyan student will be locked out of university for lack of fees.",
+   "said": "Kenya Kwanza manifesto, 2022",
+   "verdict": "partly",
+   "reality": "New funding model left students in disputed bands; High Court ruled the model unconstitutional.",
+   "proof": [
+    "Milimani High Court ruled the university funding model unconstitutional, July 2024 (reported by Daily Nation)",
+    "Universities Fund and HELB reports showed thousands of students unplaced or under-funded in 2023/24 bands",
+    "Government appealed the ruling and kept running the banded model into 2025/26"
+   ],
+   "ask": "Where is the top-up money for underfunded bands?",
+   "source": "High Court ruling, Nairobi, July 2024 (Daily Nation coverage); Universities Fund Report FY2023/24; HELB Annual Report 2023/24",
+   "message": "Kenya Kwanza promised no student locked out for fees; a court called the funding model unconstitutional and gaps remain.",
+   "photo_query": "University of Nairobi students",
+   "beats": [
+    "\"No student locked out,\" they said.",
+    "High Court: model *unconstitutional*.",
+    "Thousands still stuck in limbo.",
+    "Bands leave some students *underfunded*.",
+    "Where is the top-up money?",
+    "Check your HELB status today."
+   ],
+   "caption": "\"No student will be locked out for fees.\" Kenya Kwanza, 2022. The court called the funding model unconstitutional in 2024. Many comrades are still stuck mid-band.\n\nUmeshaangalia status yako HELB? Tag a comrade still waiting.\n\n#PromiseTracker #HELB #JuaKesho",
+   "bg": "usiku",
+   "publish_at": "2026-10-14T18:30:00+03:00",
+   "status": "needs_human",
+   "guard": {
+    "errors": [
+     "'proof[0]' is 109 chars (max 90)",
+     "'proof[1]' is 105 chars (max 90)"
+    ],
+    "warnings": []
+   }
+  },
+  {
+   "id": "2026-w42-d4-sauti-r3",
+   "template": "sauti",
+   "lane": "campus",
+   "kicker": "Comrades wanasema",
+   "line": "Ebola is now a *'formidable'* epidemic disease, Nairobi says. Our hostel still has no isolation plan.",
+   "fact": "Health CS Duale declared Ebola Bundibugyo a formidable epidemic disease under the Public Health Act, Oct 2026.",
+   "source": "Capital FM News, 'CS Duale Declares Ebola Bundibugyo a Formidable Epidemic Disease,' 12 Oct 2026, https://capitalfm.africa/cs-duale-declares-ebola-bundibugyo-a-formidable-epidemic-disease/",
+   "message": "Government declared Ebola-Bundibugyo a 'formidable' epidemic disease; students want to know campus and hostel preparedness.",
+   "photo_query": "Kenyatta National Hospital",
+   "beats": [
+    "Ebola just got a *scary* label.",
+    "Declared: a *\"formidable\"* epidemic disease.",
+    "Public Health Act now kicks in.",
+    "Hostels still lack an isolation plan.",
+    "What's your campus's outbreak plan?",
+    "Send this to your hostel group."
+   ],
+   "caption": "They've declared Ebola Bundibugyo a formidable epidemic disease. Sawa. But has your campus clinic even put up a notice?\n\nWewe umeona any health alert in your hostel? Tell us below.\n\n#Ebola #JuaKesho #Comrades",
+   "bg": "usiku",
+   "publish_at": "2026-10-15T19:30:00+03:00",
+   "status": "needs_human",
+   "guard": {
+    "errors": [
+     "'message' is 123 chars (max 120)"
+    ],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   }
+  },
+  {
+   "id": "2026-w42-d5-spotlight-r3",
+   "template": "spotlight",
+   "lane": "diaspora",
+   "kind": "Startup",
+   "name": "Gjenge Makers",
+   "country": "Kenya",
+   "what": "Turns recycled plastic waste into paving bricks stronger than concrete",
+   "why": "Cuts plastic waste and builds affordable, durable pavements for Kenyan streets",
+   "cta": "Follow Gjenge Makers and share their story",
+   "message": "Kenyan startup Gjenge Makers turns plastic waste into bricks stronger than concrete.",
+   "beats": [
+    "Nairobi's plastic waste becomes *bricks*.",
+    "Gjenge Makers recycles waste into pavers.",
+    "Bricks are *stronger* than concrete.",
+    "Founder won UN Young Champion *2020*.",
+    "Africa building, not just complaining.",
+    "Follow and share their work."
+   ],
+   "photo_query": "Nairobi plastic recycling bricks factory",
+   "source": "UNEP Young Champions of the Earth 2020, Nzambi Matee: https://www.unep.org/youngchampions/winners/2020/nzambi-matee",
+   "caption": "Nairobi's plastic waste is becoming pavements. Gjenge Makers, founded by Kenyan engineer Nzambi Matee, turns recycled plastic into bricks stronger than concrete. She won UN Young Champion of the Earth for it. Follow their work and see how far this scales.\n\n#PutUsOn #JuaKesho",
+   "bg": "usiku",
+   "publish_at": "2026-10-16T17:00:00+03:00",
+   "status": "awaiting",
+   "guard": {
+    "errors": [],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   },
+   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d5-spotlight-r3-photo.jpg",
+   "photo_credit": "Photo: Andy Li / Wikimedia Commons, CC0",
+   "reel": true
+  },
+  {
+   "id": "2026-w42-d6-cover-r3",
+   "template": "cover",
+   "lane": "creator",
+   "series": "Kesho Kutwa",
+   "kicker": "5 things landing on Kenya now",
+   "lines": [
+    "Ebola alert",
+    "Your money",
+    "2027 clock",
+    "Police warning"
+   ],
+   "highlight": 2,
+   "message": "Five changes are landing on Kenya this week: health, money, votes and power.",
+   "beats": [
+    "Kesho is already being written.",
+    "*Five* things land on us this week.",
+    "Health. Money. Votes. Power.",
+    "Swipe before you're caught out."
+   ],
+   "photo_query": "Nairobi city skyline Kenya",
+   "caption": "Kesho inakuja, iko hapa already. Five things landing on Kenya this week: Ebola alert, a new money bill, the 2027 clock na zaidi. Swipe.\n\nWhich one did you not know about?\n\n#KeshoKutwa #JuaKesho",
+   "bg": "usiku",
+   "publish_at": "2026-10-17T11:00:00+03:00",
+   "group": "2026-w42-d6-cover-r3",
+   "status": "awaiting",
+   "guard": {
+    "errors": [],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach",
+     "contains a year, % or amount with no `source`"
+    ]
+   },
+   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-cover-r3-photo.jpg",
+   "photo_credit": "Photo: DEMOSH from Nairobi, Kenya / Wikimedia Commons, CC BY 2.0"
+  },
+  {
+   "id": "2026-w42-d6-kesho-1-r3",
+   "template": "kesho",
+   "lane": "creator",
+   "headline": "Ebola declared a 'formidable disease' this week",
+   "leo": "CS Duale declared Ebola Bundibugyo a formidable epidemic disease on Oct 12, 2026.",
+   "kesho": "Expect mandatory screening at airports, borders and possible quarantine orders soon.",
+   "anza": "Check Ministry of Health alerts before you travel, and report symptoms early, not rumours.",
+   "n": 1,
+   "total": 5,
+   "message": "Ebola being declared a formidable disease means new screening and quarantine powers kick in now.",
+   "beats": [
+    "Ebola just got declared *formidable*.",
+    "CS Duale made it official, Oct 12.",
+    "Screening at borders is coming.",
+    "Quarantine orders possible, fast.",
+    "Check MOH alerts, don't panic."
+   ],
+   "photo_query": "Jomo Kenyatta International Airport",
+   "source": "Capital FM News, 'CS Duale Declares Ebola Bundibugyo a Formidable Epidemic Disease', 2026-10-12, https://capitalfm.africa/cs-duale-declares-ebola-bundibugyo-a-formidable-epidemic-disease/",
+   "caption": "Ebola Bundibugyo is now a 'formidable epidemic disease' in Kenya's books. That triggers real powers: screening, quarantine, reporting.\n\nTravelling soon? Check MOH first.\n\n#KeshoKutwa #JuaKesho",
+   "bg": "usiku",
+   "publish_at": "2026-10-17T11:00:00+03:00",
+   "group": "2026-w42-d6-cover-r3",
+   "status": "awaiting",
+   "guard": {
+    "errors": [],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   },
+   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-kesho-1-r3-photo.jpg",
+   "photo_credit": "Photo: Fawaz.tairou / Wikimedia, CC BY 4.0",
+   "ink": {
+    "1": "#F8F7F6"
+   }
+  },
+  {
+   "id": "2026-w42-d6-kesho-2-r3",
+   "template": "kesho",
+   "lane": "creator",
+   "headline": "New bill: state could take over failing payment firms",
+   "leo": "A new bill lets the Central Bank seize control of a collapsing payment firm.",
+   "kesho": "If your wallet app or mobile money firm fails, the state can step in before you lose your cash.",
+   "anza": "Watch for the Bill's public participation notice and send your written comments when it opens.",
+   "n": 2,
+   "total": 5,
+   "message": "A new bill would let the state take over a failing payment firm before your money disappears.",
+   "beats": [
+    "A new bill is in Parliament now.",
+    "It lets the state seize *failing* firms.",
+    "Your M-Pesa, your wallet, protected.",
+    "Comment when public participation opens.",
+    "Where is the oversight today?"
+   ],
+   "photo_query": "M-Pesa agent Kenya",
+   "source": "Businessday NG, 'Kenya seeks power to take over failing payment firms under new bill', 2026-10-12",
+   "caption": "Your M-Pesa or wallet app fails: who protects your cash? A new bill says the Central Bank can step in and take over.\n\nRead it when it's public. Your comment counts.\n\n#KeshoKutwa #JuaKesho",
+   "bg": "usiku",
+   "publish_at": "2026-10-17T11:00:00+03:00",
+   "group": "2026-w42-d6-cover-r3",
+   "status": "awaiting",
+   "guard": {
+    "errors": [],
+    "warnings": []
+   }
+  },
+  {
+   "id": "2026-w42-d6-kesho-3-r3",
+   "template": "kesho",
+   "lane": "creator",
+   "headline": "The 2027 election date is already fixed by law",
+   "leo": "The Constitution sets election day: the second Tuesday of August, every five years.",
+   "kesho": "Miss the voter roll cut-off before August 2027 and you cannot vote, no extensions.",
+   "anza": "Check your voter registration status today at any IEBC office or iebc.or.ke.",
+   "n": 3,
+   "total": 5,
+   "message": "Kenya's 2027 election date is fixed by the Constitution: check you're registered to vote now.",
+   "beats": [
+    "Mark your calendar: *August 2027*.",
+    "The Constitution fixes the date.",
+    "Miss the roll cut-off, miss your vote.",
+    "No extensions, no excuses.",
+    "Check your registration status today."
+   ],
+   "photo_query": "IEBC voter registration Kenya",
+   "source": "Constitution of Kenya, 2010, Article 101(1)",
+   "caption": "No one is moving the 2027 date. The Constitution already fixed it: second Tuesday of August.\n\nAre you even registered? Check today.\n\n#KeshoKutwa #JuaKesho",
+   "bg": "usiku",
+   "publish_at": "2026-10-17T11:00:00+03:00",
+   "group": "2026-w42-d6-cover-r3",
+   "status": "awaiting",
+   "guard": {
+    "errors": [],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   }
+  },
+  {
+   "id": "2026-w42-d6-kesho-4-r3",
+   "template": "kesho",
+   "lane": "creator",
+   "headline": "Kindiki warns sponsors of political violence",
+   "leo": "Interior CS Kindiki vowed tough action against sponsors of political violence.",
+   "kesho": "Expect arrests to reach the financiers of goons, not only the young men hired on the ground.",
+   "anza": "Report incitement or hired crowds to police or IPOA; never fund or join a violent group.",
+   "n": 4,
+   "total": 5,
+   "message": "Police are now targeting the people who pay for political violence, not just the hired crowds.",
+   "beats": [
+    "Kindiki is coming for the *sponsors*.",
+    "Not just the goons, the financiers.",
+    "More arrests expected before 2027.",
+    "Report incitement when you see it.",
+    "Violence for votes should cost you."
+   ],
+   "photo_query": "Kenya police Nairobi",
+   "source": "Capital FM News, 'Kindiki vows tough action against political violence sponsors', 2026-10-12, https://capitalfm.africa/kindiki-vows-tough-action-against-political-violence-sponsors/",
+   "caption": "It's not just the goons anymore. Kindiki says the people funding political violence are next.\n\nSee hired crowds? Report it.\n\n#KeshoKutwa #JuaKesho",
+   "bg": "usiku",
+   "publish_at": "2026-10-17T11:00:00+03:00",
+   "group": "2026-w42-d6-cover-r3",
+   "status": "needs_human",
+   "guard": {
+    "errors": [
+     "sounds AI-written: 'it's not just' (say it the way a Kenyan would)"
+    ],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   }
+  },
+  {
+   "id": "2026-w42-d6-kesho-5-r3",
+   "template": "kesho",
+   "lane": "creator",
+   "headline": "State owes Kenya Power Sh7.35 billion in unpaid bills",
+   "leo": "Government agencies owe Kenya Power Sh7.35 billion in unpaid electricity bills.",
+   "kesho": "A cash-strapped Kenya Power means slower repairs, more blackouts, and pressure to raise tariffs.",
+   "anza": "Watch for EPRA tariff review notices and attend the public participation when it's called.",
+   "n": 5,
+   "total": 5,
+   "message": "The government's Sh7.35bn unpaid power bill could mean more blackouts and higher tariffs for us.",
+   "beats": [
+    "Kenya Power is owed *Sh7.35bn*.",
+    "By the government itself.",
+    "Unpaid bills mean slower repairs.",
+    "Who pays? Probably us, in tariffs.",
+    "Watch for the next EPRA notice."
+   ],
+   "photo_query": "Kenya Power substation Nairobi",
+   "source": "Business Daily, 'State's unpaid electricity bills to Kenya Power hit Sh7.35bn', 2026-10-12",
+   "caption": "The government owes Kenya Power Sh7.35 billion. Guess who feels it when the lights go out, or the tariff goes up.\n\nWhere is the money? 👇🏾\n\n#KeshoKutwa #JuaKesho",
+   "bg": "usiku",
+   "publish_at": "2026-10-17T11:00:00+03:00",
+   "group": "2026-w42-d6-cover-r3",
+   "status": "awaiting",
+   "guard": {
+    "errors": [],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   },
+   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-kesho-5-r3-photo.jpg",
+   "photo_credit": "Photo: Anakin / Wikimedia, CC BY 3.0"
+  },
+  {
+   "id": "2026-w42-d7-glasspoll-r3",
+   "template": "glasspoll",
+   "lane": "everyone",
+   "message": "Political violence is creeping back before 2027. Tell us if you've seen it near you.",
+   "hook": "Teargas, goons, 2027 tayari?",
+   "question": "Seen political violence near you?",
+   "options": [
+    "Ndio, nimeona",
+    "La, sijaona"
+   ],
+   "cta": "Vote. See what Kenya says.",
+   "photo_query": "teargas protest Nairobi",
+   "source": "Capital FM News, 'Teargas, gunshots as Malala leads protest in Kakamega' and 'Kindiki vows tough action against political violence sponsors', 2026-10-12, https://capitalfm.africa/teargas-gunshots-as-malala-leads-protest-in-kakamega/",
+   "caption": "Teargas in Kakamega. Teargas outside a DCP station. Nakuru launching a 107 hotline for gangs before 2027. Kindiki says he'll deal with the sponsors.\n\nTunataka kujua: umeona hii kitu karibu nawe?\n\n#JuaKesho",
+   "beats": [
+    "Teargas in Kakamega this week.",
+    "Police storm a *DCP* station.",
+    "Kindiki vows action on *sponsors*.",
+    "2027 is 14 months away.",
+    "Have you seen this near you?",
+    "Vote. Tag someone who should."
+   ],
+   "bg": "usiku",
+   "publish_at": "2026-10-18T18:00:00+03:00",
+   "size": "story",
+   "status": "awaiting",
+   "guard": {
+    "errors": [],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   }
+  },
+  {
+   "id": "2026-w42-hot-1012",
+   "template": "sauti",
+   "lane": "everyone",
+   "kicker": "Sisi wananchi",
+   "line": "Police tear-gas opposition leaders *today*. The CS vows 'tough action' on violence tomorrow. Sawa.",
+   "fact": "Oct 12: police tear-gassed DCP leaders storming a station; same day CS Kindiki vowed action on violence.",
+   "source": "Kenyans.co.ke, 'Running Battles as Police Fire Tear Gas at DCP Leaders After Storming Station', 2026-10-12; Capital FM News, 'Kindiki vows tough action against political violence sponsors', 2026-10-12",
+   "message": "Tear gas against opposition leaders, then a vow to punish political violence sponsors, same day.",
+   "photo_query": "tear gas cloud Nairobi street protest",
+   "beats": [
+    "Tear gas today. *Statement* tomorrow.",
+    "DCP leaders say police stormed in.",
+    "Kindiki vows *tough action* on sponsors.",
+    "2027 campaigns haven't even started.",
+    "Sawa, but *who* sponsors this?",
+    "Send this to your 2027 group chat."
+   ],
+   "caption": "Tear gas one day. Tough talk the next. We've seen this script before, every election season. Who's really sponsoring political violence in Kenya? Verify before you share, and send this to someone still asking.\n\n#JuaKesho #SautiYaMwananchi",
+   "bg": "usiku",
+   "publish_at": "2026-10-12T20:33:00+03:00",
+   "hot": true,
+   "status": "awaiting",
+   "guard": {
+    "errors": [],
+    "warnings": []
+   },
+   "critic": {
+    "hook": 8,
+    "send": 7,
+    "clarity": 9,
+    "fresh": 6,
+    "voice": 8,
+    "craft": 7,
+    "picture": 8,
+    "hold": 7,
+    "avg": 7.5,
+    "note": "The irony lands hard, but 'who sponsors this?' deflates into a generic election-season complaint—sharpen it with a specific detail (a name, a pattern, a number) that makes the hypocrisy undeniable, not just suspected."
+   },
+   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1012-photo.jpg",
+   "photo_credit": "Photo: Tyler Merbler from USA / Wikimedia Commons, CC BY 2.0",
+   "reel": true
+  }
+ ],
+ "scripts": {
+  "radio": "Karibu, this is Jua, and you're listening to Jua Kesho. Let's talk about something that happened this week that deserves a serious conversation, not just reaction.\n\nThis morning, tear gas was used against opposition leaders during a demonstration. By evening, the same government issued a strong statement, vowing to punish sponsors of political violence. Same day, two very different messages.\n\nNow, nobody here is against peace. Nobody here wants chaos on our streets. But we have to ask a simple, honest question: is justice applied the same way to everyone, every time? Or does it depend on who's marching, and who's speaking?\n\nBecause if violence is wrong, it should be wrong no matter who commits it — whether it's a crowd throwing stones, or security forces using force against people exercising their constitutional right to assemble.\n\nAs young Kenyans, our job isn't to pick a side blindly. Our job is to watch closely, ask hard questions, and hold everyone — government and opposition alike — to the same standard. That's how we protect what little trust remains in our institutions.\n\nLet's keep the conversation going. Share your thoughts, stay engaged, stay informed.\n\nKwa ufupi kwa Kiswahili: Wiki hii, mabomba ya machozi yalitumika dhidi ya viongozi wa upinzani asubuhi, kisha jioni hiyo hiyo serikali ikaahidi kuadhibu wafadhili wa vurugu za kisiasa. Swali ni: je, haki inatumika sawa kwa wote? Kama vijana, wajibu wetu ni kuuliza maswali na kudai usawa kwa kila mtu.",
+  "voice_note": "Hey fam, it's Jua. Quick one for you today. This week, something happened that's got people talking — tear gas on opposition leaders in the morning, and by evening, the same government promising to deal firmly with sponsors of political violence. Same day, two messages.\n\nWe're not here to pick sides, but we are here to ask: why does accountability always seem to land differently depending on who's marching, who's speaking, who's funding what? That inconsistency is exactly what erodes trust.\n\nHere's the thing — peace is non-negotiable, but so is fairness. If violence is wrong, it's wrong regardless of who's doing it or who it's done to. Let's keep watching, keep asking, keep each other informed. That's how we protect our democracy, one honest conversation at a time.\n\nShare this with someone who needs to hear it. Tutaonana, Kesho Kutwa.",
+  "sms": "Usiibiwe: When leaders condemn violence but use force unevenly, ask why. Equal justice means equal rules for everyone, every time.",
+  "reels": "Morning: tear gas on opposition leaders. Evening: a vow to punish violence sponsors. Same day. Two standards?\n\nKesho Kutwa is asking the question today's leaders won't.\n\nJustice can't be selective. If peace matters, it must matter for everyone — not just when it's convenient.\n\nStay awake, stay informed. This is Kesho Kutwa."
+ },
+ "spend_usd": 1.3334
 }

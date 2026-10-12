@@ -102,6 +102,11 @@ BANNED_TOPICS = {
     # The revolution is informed and peaceful: protest and voting yes, violence and harassment never
     "violence": r"\b((burn|torch|storm|attack|lynch|kill|beat|stone|loot) (the |their |his |her )?(parliament|state house|offices?|homes?|houses?|police|them|him|her|mps?|leaders?)|overthrow|coup|go to (his|her|their) (home|house)|find (his|her|their) (home|house|family)|doxx?)\b",
     "crypto-shill": r"\b(buy (now|this coin)|to the moon|pump)\b",
+    # Banter wars roast a country's situations, never its people: no xenophobic slurs, no "go home" lines
+    "xenophobia": r"\b(ma?kwerekwere|kwerekwere|amakwerekwere|go back (to|home)( to)? your (own )?country|"
+                  r"(nigerians|south africans|ugandans|tanzanians|somalis|ethiopians|congolese) are (all )?(thieves|criminals|"
+                  r"scammers|animals|lazy|stupid|dogs|monkeys|dirty)|(all|every) (nigerians?|south africans?|ugandans?|"
+                  r"tanzanians?) (are|is) (a )?(scammers?|thieves?|criminals?)|yahoo boys? (all|every))\b",
 }
 # Words and habits that make copy read machine-written. Kenyans scroll past anything that smells of AI.
 NEVER_WORDS = {"leverage", "seamless", "game-changer", "game changer", "cutting-edge", "revolutionary", "delve",
