@@ -212,10 +212,8 @@ def hot_slot(mock: bool = False) -> str | None:
     return label
 
 
-def plan(label: str) -> dict:
-    if week_file(label).exists():
-        log(f"{label} already planned, keeping it")
-        return load_week(label)
+def _calendar_posts(label: str) -> list[dict]:
+    """The week's slots from calendar.json, planned (not yet drafted)."""
     cal = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))
     year, wk = int(label[:4]), int(label.split("W")[1])
     posts = []
@@ -246,6 +244,14 @@ def plan(label: str) -> dict:
             continue
         posts.append(post)
     _anniversaries(posts, year, wk)
+    return posts
+
+
+def plan(label: str) -> dict:
+    if week_file(label).exists():
+        log(f"{label} already planned, keeping it")
+        return load_week(label)
+    posts = _calendar_posts(label)
     data = {"collection": label, "created": now().isoformat(), "posts": posts, "scripts": {}}
     save_week(data)
     log(f"planned {len(posts)} designs for {label}")
@@ -303,23 +309,32 @@ def _next_rev(pid: str) -> str:
 
 
 def remake(label: str) -> list[str]:
-    """Re-drafts the week's unsent and unapproved posts from scratch with the current rules and photo sources.
-    Each gets a new id (…-r2, -r3), so a tap on an older Telegram card can never approve the new version unseen.
-    Published, approved and today's hot posts are kept."""
+    """Re-plans the rest of the week from the CURRENT calendar and drafts it from scratch with the current rules.
+    Kept: published, approved and hand-posted posts, hot posts and Tazama Hii clips. Everything else still waiting
+    is dropped; slots already past (or under two hours away) are not refilled. New ids carry a revision (…-r2),
+    so a tap on an older Telegram card can never approve the new version unseen."""
     data = load_week(label)
     keep = {"published", "approved", "manual"}
-    renamed = {}
-    for i, p in enumerate(data["posts"]):
-        if p["status"] in keep or p.get("hot"):
+    kept = [p for p in data["posts"] if p["status"] in keep or p.get("hot") or p.get("template") == "tazama"]
+    rev = int(data.get("revision", 1)) + 1
+    taken = {p["id"] for p in data["posts"]}
+    decided_days = {p["publish_at"][:10] for p in kept if not p.get("hot") and p.get("template") != "tazama"}
+    soon = now() + dt.timedelta(hours=2)
+    fresh = []
+    for p in _calendar_posts(label):
+        if dt.datetime.fromisoformat(p["publish_at"]) < soon or p["publish_at"][:10] in decided_days:
             continue
-        fresh = {k: v for k, v in p.items() if k in PLAN_KEYS} | {"status": "planned", "id": _next_rev(p["id"])}
+        p["id"] = f"{p['id']}-r{rev}"
         if p.get("group"):
-            fresh["group"] = renamed.setdefault(p["group"], _next_rev(p["group"]))
-        data["posts"][i] = fresh
-        renamed[p["id"]] = fresh["id"]
+            p["group"] = f"{p['group']}-r{rev}"
+        while p["id"] in taken:
+            p["id"] += "x"
+        fresh.append(p)
+    data["posts"] = kept + fresh
+    data["revision"] = rev
     save_week(data)
-    ids = [v for k, v in renamed.items() if not any(q.get("group") == k for q in data["posts"])]
-    log(f"remake {label}: {len(ids)} post(s) back to the writer")
+    ids = [p["id"] for p in fresh if not p.get("n")]
+    log(f"remake {label}: kept {len(kept)}, {len(ids)} new post(s) from the current calendar")
     return ids
 
 
