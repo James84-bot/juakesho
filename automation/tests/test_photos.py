@@ -57,3 +57,16 @@ class Batches(unittest.TestCase):
             got = draft._draft_batch("2026-W42", slots, {}, [])
         self.assertEqual(calls, [4, 2, 2])
         self.assertEqual(len(got), 2)
+
+
+class PlaceKept(unittest.TestCase):
+    def test_shorter_retry_still_needs_kenya(self):
+        asked = []
+
+        def once(q, pid, place=None):
+            asked.append((q, place))
+            return None
+        with mock.patch.object(photos, "_commons_once", once):
+            photos.commons("Kenyan university campus students", "p")
+        self.assertTrue(all(place == "Kenyan" for _, place in asked))
+        self.assertIn("university campus", [q for q, _ in asked])

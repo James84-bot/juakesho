@@ -19,6 +19,7 @@ for a real person or project we're talking about. On civic posts the design is l
 """
 from __future__ import annotations
 
+import html
 import json
 import os
 import re
@@ -79,16 +80,16 @@ def pexels(query: str, pid: str) -> tuple[bytes, dict] | None:
 
 def openverse(query: str, pid: str) -> tuple[bytes, dict] | None:
     """A real photo from Openverse (Flickr and other open collections): CC0, public domain mark or CC BY only."""
+    place = _place(query)
     for q in _query_ladder(query):
-        got = _openverse_once(q, pid)
+        got = _openverse_once(q, pid, place)
         if got:
             return got
     return None
 
 
-def _openverse_once(query: str, pid: str) -> tuple[bytes, dict] | None:
-    m = LOCAL.search(query)
-    place = m.group(0) if m and m.group(0).lower() not in {"africa", "african"} else ""
+def _openverse_once(query: str, pid: str, place: str | None = None) -> tuple[bytes, dict] | None:
+    place = _place(query) if place is None else place
     q = urllib.parse.urlencode({"q": query, "license": "cc0,pdm,by", "size": "large", "mature": "false",
                                 "page_size": 20})
     results = json.loads(_get(f"{OPENVERSE}?{q}", {"User-Agent": "jua-kesho/1.0 (photo search)"})).get("results", [])
@@ -136,18 +137,24 @@ def _query_ladder(query: str) -> list[str]:
     return out
 
 
+def _place(query: str) -> str:
+    m = LOCAL.search(query)
+    return m.group(0) if m and m.group(0).lower() not in {"africa", "african"} else ""
+
+
 def commons(query: str, pid: str) -> tuple[bytes, dict] | None:
-    """A real photo from Wikimedia Commons that we may use in a design with a credit (CC0 / PD / CC BY)."""
+    """A real photo from Wikimedia Commons that we may use in a design with a credit (CC0 / PD / CC BY).
+    The place comes from the FULL query: a shorter retry ("university campus") must still be a Kenyan photo."""
+    place = _place(query)
     for q in _query_ladder(query):
-        got = _commons_once(q, pid)
+        got = _commons_once(q, pid, place)
         if got:
             return got
     return None
 
 
-def _commons_once(query: str, pid: str) -> tuple[bytes, dict] | None:
-    m = LOCAL.search(query)
-    place = m.group(0) if m and m.group(0).lower() not in {"africa", "african"} else ""
+def _commons_once(query: str, pid: str, place: str | None = None) -> tuple[bytes, dict] | None:
+    place = _place(query) if place is None else place
     q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": f"{query} filetype:bitmap",
                                 "gsrnamespace": 6, "gsrlimit": 25, "prop": "imageinfo",
                                 "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600, "format": "json"})
@@ -168,7 +175,7 @@ def _commons_once(query: str, pid: str) -> tuple[bytes, dict] | None:
                               md.get("Categories", {}).get("value", "")]).lower()
             if place.lower() not in about and "kenya" not in about:
                 continue
-        artist = re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown")).strip()[:50]
+        artist = html.unescape(re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown"))).strip()[:50]
         good.append((info.get("thumburl") or info["url"], {"credit": f"Photo: {artist} / Wikimedia Commons, {lic}",
                                                          "url": info.get("descriptionurl", "")}))
     if not good:
