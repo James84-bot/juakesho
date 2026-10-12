@@ -41,8 +41,33 @@ OWN = HERE / "content" / "photos"
 API = "https://api.pexels.com/v1/search"
 COMMONS = "https://commons.wikimedia.org/w/api.php"
 OPENVERSE = "https://api.openverse.org/v1/images/"
-# Real, symbolic Kenyan scenes for civic posts whose own search found nothing
+# Symbolic backgrounds: when a post's own search finds nothing, a real photo of the object or place that stands for its
+# topic, picked by the words in the post. Never people. The last resort for any civic post is Parliament or the flag.
+SYMBOLS = [
+    (r"\b(power|electricity|kplc|tokens?|blackouts?)\b", ["power lines Kenya", "electricity pylon Kenya"]),
+    (r"\b(tax|budget|treasury|levy|debt|loan|billion|shilling|revenue|kra|money|funds?|bills?)\b|\bsh ?[\d.,]+ ?(bn|m)?\b|\d(bn|m)\b",
+     ["Kenyan shilling banknotes", "Central Bank of Kenya"]),
+    (r"\b(court|judge|judiciary|ruling|petition|case)\b", ["Supreme Court of Kenya", "Milimani Law Courts"]),
+    (r"\b(iebc|election|vote|voters?|ballot|2027|polling)\b", ["ballot box Kenya", "Kenya election"]),
+    (r"\b(hospital|health|shif|sha|doctors?|nurses?|clinic)\b", ["hospital ward Kenya", "Kenyatta National Hospital"]),
+    (r"\b(school|students?|university|helb|lecturers?|teachers?|exam)\b", ["classroom Kenya", "University of Nairobi"]),
+    (r"\b(road|bridge|project|stalled|construction|housing)\b", ["road construction Kenya", "construction site Nairobi"]),
+    (r"\b(police|abduct\w*|killed|teargas|protest\w*)\b", ["Flag of Kenya", "Kenya police vehicle"]),
+    (r"\b(land|title)\b", ["title deed Kenya", "farmland Kenya"]),
+    (r"\b(farm\w*|maize|tea|coffee|fertili[sz]er)\b", ["maize farm Kenya", "tea plantation Kenya"]),
+    (r"\b(mp|mps|parliament|bill|senate|law)\b", ["Kenya National Assembly", "Parliament Buildings Nairobi"]),
+]
 CIVIC_FALLBACK = ["Parliament Buildings Nairobi", "Kenya National Assembly", "Flag of Kenya", "Nairobi Central Business District"]
+
+
+def symbols_for(post: dict) -> list[str]:
+    """Symbolic searches for this post's topic, most specific first."""
+    text = " ".join(str(v) for k, v in post.items() if isinstance(v, str) and k not in {"id", "source", "photo_query"}).lower()
+    out = []
+    for rx, queries in SYMBOLS:
+        if re.search(rx, text):
+            out += [q for q in queries if q not in out]
+    return out[:4]
 CIVIC_TEMPLATES = {"sauti", "promise", "kumbuka", "scorecard", "straight", "money", "decode", "usiibiwe", "spotlight"}
 # Licences that allow a credited photo inside our design, commercial use included. CC BY-SA is allowed: the post
 # that uses it is shared under the same licence, which suits us (we want it shared). NC and ND never.
@@ -296,8 +321,9 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
         tries = [(source, query) for source in order]
         if post.get("hot"):   # today's story: try this week's real photos of it first
             tries.insert(0, (commons_newest, query))
+        tries += [(commons, q) for q in symbols_for(post)]
         if post.get("template") in CIVIC_TEMPLATES:
-            tries += [(commons, q) for q in CIVIC_FALLBACK]
+            tries += [(commons, q) for q in CIVIC_FALLBACK if q not in symbols_for(post)]
         for source, q in tries:
             try:
                 got = source(q, post["id"])

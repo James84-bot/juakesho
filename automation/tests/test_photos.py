@@ -95,3 +95,11 @@ class Relevance(unittest.TestCase):
         import cv2
         blank = cv2.imencode(".jpg", np.full((800, 1200, 3), 128, np.uint8))[1].tobytes()
         self.assertTrue(photos.faces_ok(blank))
+
+
+class Symbolic(unittest.TestCase):
+    def test_topic_picks_a_symbolic_background(self):
+        self.assertEqual(photos.symbols_for({"line": "The state owes Kenya Power Sh7.35bn"})[:2],
+                         ["power lines Kenya", "electricity pylon Kenya"])
+        self.assertIn("ballot box Kenya", photos.symbols_for({"line": "IEBC adds 9,164 polling stations"}))
+        self.assertEqual(photos.symbols_for({"line": "Nice weather"}), [])

@@ -1,5 +1,5 @@
 """
-build_book.py — builds the Wanjiku Asks brand book as one self-contained HTML file.
+build_book.py — builds the Kenyans Are Asking brand book as one self-contained HTML file.
 
 Everything is read from the live system (brand.json palette, logo SVGs, rendered exports),
 so the book always matches what the pipeline produces.
@@ -63,10 +63,9 @@ SERIES = [
 ]
 
 GLOSSARY = [
-    ("Wanjiku", "name", "The name Kenyans give the ordinary citizen, ever since the powerful asked “what does Wanjiku know about a constitution?” Every Kenyan, every tribe, every county. Never a real person."),
-    ("Wanjiku Asks", "name", "The questions every Kenyan is already asking the people in power, asked out loud, with receipts."),
+    ("Kenyans Are Asking", "name", "The questions every Kenyan is already asking the people in power, asked out loud, with receipts."),
     ("The ordinary Kenyan, asking with receipts.", "line", "Under the name on every profile."),
-    ("Wanjiku asks: …", "sign-off", "Every post ends with the question Wanjiku is asking, to a named office, and the one thing to do."),
+    ("Kenyans are asking: …", "sign-off", "Every post ends with the question Kenyans are asking, to a named office, and the one thing to do."),
     ("Usiibiwe", "series", "“Don't get robbed.” Scam alerts, on the red background."),
     ("Promise Tracker", "series", "A leader's own promise against the record. Kept, partly kept, stalled or broken."),
     ("Set It Straight", "series", "Our answer to falsehoods and put-downs: the claim, quoted and sourced, then the facts."),
@@ -86,7 +85,7 @@ MONEY = [
 ]
 
 DAY_90 = [
-    ("Weeks 1–2", "Claim @wanjikuasks everywhere. Profiles from the kit, the WhatsApp Channel and the Telegram bot. First posts."),
+    ("Weeks 1–2", "Claim @kenyansareasking everywhere. Profiles from the kit, the WhatsApp Channel and the Telegram bot. First posts."),
     ("Weeks 3–6", "Autopilot on: daily posts, about 15 minutes of approvals. Let the Sunday poll choose topics."),
     ("Weeks 7–10", "Reels every day; Tazama Hii clips from followers. Keep what earns shares and saves, drop the rest."),
     ("Weeks 11–13", "Apply for Facebook monetisation and the YouTube Partner Program. Build the sponsor deck from real reach."),
@@ -120,8 +119,8 @@ def pair(fg: str, bg: str, label: str) -> str:
 
 
 def build_body() -> str:
-    lock_light = svg_inline(LOGO / "wordmark-on-light.svg", "logo logo--light", "Wanjiku Asks")
-    lock_dark = svg_inline(LOGO / "wordmark-on-dark.svg", "logo logo--dark", "Wanjiku Asks")
+    lock_light = svg_inline(LOGO / "wordmark-on-light.svg", "logo logo--light", "Kenyans Are Asking")
+    lock_dark = svg_inline(LOGO / "wordmark-on-dark.svg", "logo logo--dark", "Kenyans Are Asking")
     ink, shuka, chai = P["ink"], P["shuka"], P["chai"]
     ramps = "".join(ramp_html(*f) for f in FAMILIES)
     pairs = "".join([
@@ -183,7 +182,7 @@ def build_body() -> str:
 
 <main class="book">
   <section class="hero" aria-labelledby="t-hero">
-    <h1 id="t-hero">{lock_light}{lock_dark}<span class="sr">Wanjiku Asks</span></h1>
+    <h1 id="t-hero">{lock_light}{lock_dark}<span class="sr">Kenyans Are Asking</span></h1>
     <p class="tagline">{e(B['tagline_sw'])} <span>{e(B['tagline_en'])}</span></p>
     <p class="lede">An independent Kenyan channel for 18–30s: the general knowledge every Kenyan should have, politics with receipts, money, scams and the future. Sourced, fearless, non-partisan, clean. The revolution we drive is an informed Kenya.</p>
   </section>
@@ -196,7 +195,7 @@ def build_body() -> str:
 
   <section id="idea" class="sec" aria-labelledby="t-idea">
     <p class="kicker">01</p><h2 id="t-idea">The idea</h2>
-    <p class="big">Wanjiku is every ordinary Kenyan. Wanjiku Asks is ordinary Kenyans asking the people in power the questions everyone is already asking, with receipts. A real photo, one plain headline, the facts, the question, and the one thing to do today. Not with any government or party: every side, same standard.</p>
+    <p class="big">Ordinary Kenyans asking the people in power the questions everyone is already asking, with receipts. A real photo, one plain headline, the facts, the question, and the one thing to do today. Not with any government or party: every side, same standard.</p>
     <ul class="pillars">
       <li><b>Ask</b><span>One clear question per post, to a named office, with the one thing to do.</span></li>
       <li><b>Prove</b><span>Every number and claim carries a source. Accuracy is what makes us fearless.</span></li>
@@ -207,7 +206,7 @@ def build_body() -> str:
 
   <section id="logo" class="sec" aria-labelledby="t-logo">
     <p class="kicker">02</p><h2 id="t-logo">Logo</h2>
-    <p class="note">The mark is a speech bubble with a question mark: Wanjiku asking. Flag red, white question mark. The wordmark is WANJIKU ASKS in Inter Tight Black. All files are outlined SVGs in <code>assets/logo/</code>.</p>
+    <p class="note">The mark is a speech bubble with a question mark: Kenyans asking. Flag red, white question mark. The wordmark is KENYANS ARE ASKING in Inter Tight Black. All files are outlined SVGs in <code>assets/logo/</code>.</p>
     <div class="logos">
       <div class="lg lg--night">{svg_inline(LOGO / 'wordmark-on-dark.svg', 'lg-svg', 'Wordmark on night')}</div>
       <div class="lg lg--paper">{svg_inline(LOGO / 'wordmark-on-light.svg', 'lg-svg', 'Wordmark on paper')}</div>
@@ -389,7 +388,7 @@ def build_body() -> str:
 </main>
 
 <footer class="bookfoot">
-  <p><b>Wanjiku Asks</b> brand book v3 · {e(B['tagline_en'])} · Built from <code>automation/</code>; re-run <code>build_book.py</code> after any brand change.</p>
+  <p><b>Kenyans Are Asking</b> brand book v3 · {e(B['tagline_en'])} · Built from <code>automation/</code>; re-run <code>build_book.py</code> after any brand change.</p>
 </footer>
 """
 
@@ -528,7 +527,7 @@ FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=I
 
 def main() -> None:
     body = build_body()
-    head = f"<title>Wanjiku Asks Brand Book</title>\n{FONTS}\n<style>{CSS}</style>"
+    head = f"<title>Kenyans Are Asking Brand Book</title>\n{FONTS}\n<style>{CSS}</style>"
     out = ROOT / "brand-book"
     out.mkdir(exist_ok=True)
     if "--fragment" in sys.argv:

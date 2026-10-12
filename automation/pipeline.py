@@ -1,5 +1,5 @@
 """
-pipeline.py — the Wanjiku Asks autopilot.
+pipeline.py — the Kenyans Are Asking autopilot.
 
     python pipeline.py week   [--week 2026-W40] [--mock]   plan → draft → check → render → ask for approval
     python pipeline.py hot                                  today's extra post on the biggest Kenyan story (daily)
@@ -825,7 +825,7 @@ def whatsapp_text(post: dict) -> str:
     beats = [b.replace("*", "") for b in (post.get("beats") or [])]
     body = " ".join(beats[:3]) if beats else str(post.get("message") or "")
     src = str(post.get("source") or "").split(";")[0].strip()
-    return (body + (f"\n\nReceipts: {src}" if len(src) >= 8 else "") + "\n\nFollow Wanjiku Asks for the receipts.").strip()
+    return (body + (f"\n\nReceipts: {src}" if len(src) >= 8 else "") + "\n\nFollow Kenyans Are Asking for the receipts.").strip()
 
 
 def first_of(members: list[dict]) -> dict:
@@ -1029,7 +1029,7 @@ def main(argv: list[str] | None = None) -> int:
 def _main(argv: list[str] | None = None) -> int:
     load_env()
     sys.path.insert(0, str(HERE))
-    ap = argparse.ArgumentParser(description="Wanjiku Asks autopilot")
+    ap = argparse.ArgumentParser(description="Kenyans Are Asking autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
                                         "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")

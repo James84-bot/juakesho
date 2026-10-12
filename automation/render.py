@@ -1,5 +1,5 @@
 """
-render.py — turns content/posts.json into finished Wanjiku Asks designs (PNG).
+render.py — turns content/posts.json into finished Kenyans Are Asking designs (PNG).
 
     python render.py                      # render everything in content/posts.json
     python render.py --only neno-ai       # render one post by id
@@ -642,7 +642,7 @@ def contact_sheet(files: list[Path], target: Path, col_w: int = 360, cols: int =
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Render Wanjiku Asks designs")
+    ap = argparse.ArgumentParser(description="Render Kenyans Are Asking designs")
     ap.add_argument("--file", default=str(HERE / "content" / "posts.json"))
     ap.add_argument("--only", help="render a single post id")
     ap.add_argument("--out", default=None, help="output folder (default: exports/<collection>)")
