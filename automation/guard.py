@@ -281,6 +281,12 @@ def check(post: dict) -> Report:
                   r"positions?|people|someone|anyone)\b)([A-Z][a-z]+)", _all_text(post) + " " + str(post.get("caption", "")))
     if m:
         rep.errors.append(f"banned topic: party-campaigning ('vote {m.group(1)} {m.group(2)}'): we inform, we never tell people who to vote for")
+    # our own polls are about issues and records, never candidate preference (see POLLS in draft.py)
+    poll_text = " ".join([str(post.get("question", ""))] + [str(o) for o in post.get("options") or []])
+    if tpl == "glasspoll" and re.search(r"\b(who|nani|which (candidate|leader|party))\b.{0,40}\b(vote|kura|win|shinda|president|rais|"
+                                        r"2027|deserves?|should lead|best (leader|candidate))", poll_text, re.I):
+        rep.errors.append("candidate-preference poll: we never run 'who will you vote for / who will win' polls; "
+                          "ask about an issue or a leader's record, and report professional polls with their method")
     if tpl == "scorecard":
         checks = post.get("checks")
         if not isinstance(checks, list) or not 3 <= len(checks) <= 5:
