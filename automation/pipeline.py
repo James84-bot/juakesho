@@ -269,6 +269,7 @@ def draft(label: str, mock: bool = False) -> dict:
         log("nothing to draft")
         return data
     lanes = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))["lanes"]
+    drafter.TAKEN = [p for p in data["posts"] if p["status"] not in {"planned", "rejected", "missed"}]
     drafted, scripts = drafter.draft_week(label, todo, lanes, mock=mock)
     data_spend = round(drafter.SPEND["usd"], 4)
     by_id = {p["id"]: p for p in drafted}
@@ -546,6 +547,8 @@ def _preview_text(p: dict) -> str:
     lines += ["", esc(cap)]
     if p.get("trend"):
         lines += ["", f"📈 Riding trend: {esc(str(p['trend']))}"]
+    if not p.get("critic") and p.get("template") not in {"tazama"}:
+        lines += ["", "⚠️ Not scored by the editor this run: judge it yourself."]
     if p.get("critic"):
         c = p["critic"]
         parts = " · ".join(f"{k} {c[k]}" for k in ("hook", "clarity", "picture", "send", "fresh") if c.get(k) is not None)
