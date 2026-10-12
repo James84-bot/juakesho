@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "week | tick | learn | redo (re-draft posts held back) | rehearse (no keys needed: renders a mock week, posts nothing)"
+        description: "week (next week) | this-week (draft the current week now) | tick | learn | redo (re-draft posts held back) | rehearse (no keys needed: renders a mock week, posts nothing)"
         default: "tick"
 
 concurrency:
@@ -60,14 +60,14 @@ jobs:
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
       - name: Install
-        if: steps.cmd.outputs.c == 'week' || steps.cmd.outputs.c == 'redo' || steps.cmd.outputs.c == 'rehearse'
+        if: steps.cmd.outputs.c == 'week' || steps.cmd.outputs.c == 'this-week' || steps.cmd.outputs.c == 'redo' || steps.cmd.outputs.c == 'rehearse'
         run: |
           pip install -r automation/requirements.txt
           python -m playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg || true   # video.py falls back to imageio-ffmpeg
 
       - name: Install (light)
-        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'redo' && steps.cmd.outputs.c != 'rehearse' && steps.cmd.outputs.c != 'skip'
+        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'this-week' && steps.cmd.outputs.c != 'redo' && steps.cmd.outputs.c != 'rehearse' && steps.cmd.outputs.c != 'skip'
         run: pip install -r automation/requirements.txt
 
       - name: Tests
@@ -88,7 +88,13 @@ jobs:
 
       - name: Run ${{ steps.cmd.outputs.c }}
         if: steps.cmd.outputs.c != 'skip' && steps.cmd.outputs.c != 'rehearse'
-        run: cd automation && python pipeline.py ${{ steps.cmd.outputs.c }}
+        run: |
+          cd automation
+          if [ "${{ steps.cmd.outputs.c }}" = "this-week" ]; then
+            python pipeline.py week --week "$(python -c 'import pipeline; print(pipeline.current_week_label(ahead=0))')"
+          else
+            python pipeline.py ${{ steps.cmd.outputs.c }}
+          fi
 
       - name: Save state and renders
         if: always() && steps.cmd.outputs.c != 'skip' && steps.cmd.outputs.c != 'rehearse'
