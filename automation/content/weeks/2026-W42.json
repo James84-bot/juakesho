@@ -3,445 +3,118 @@
   "created": "2026-10-12T16:31:22.980571+03:00",
   "posts": [
     {
-      "id": "2026-w42-d1-sauti",
+      "id": "2026-w42-d1-sauti-r2",
       "template": "sauti",
       "lane": "young_pro",
-      "kicker": "Sisi wafanyakazi",
-      "line": "Our *NSSF* deduction climbs again every February, like clockwork, all the way to 2028.",
-      "fact": "NSSF Act 2013 raises employee and employer contributions every February until both hit 6% of pensionable pay in 2028.",
-      "message": "NSSF deductions are legally set to rise every February until 2028.",
-      "photo_query": "payslip and calculator on office desk Kenya",
-      "source": "NSSF Act No. 45 of 2013, Second Schedule; NSSF Kenya contribution rate notices, nssfkenya.co.ke",
-      "caption": "Tumeshazoea. Every February, the NSSF line on your payslip gets heavier, by law, until 2028. Check your latest payslip against the current rate on nssfkenya.co.ke and tell us if it matches.\n\n#JuaKesho #SautiYaMwananchi",
       "bg": "usiku",
       "publish_at": "2026-10-12T07:30:00+03:00",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "critic": {
-        "hook": 7,
-        "send": 8,
-        "clarity": 9,
-        "fresh": 6,
-        "voice": 8,
-        "craft": 7,
-        "picture": 5,
-        "hold": 7,
-        "avg": 7.1,
-        "note": "Payslip + calculator is too generic; show a *real* Kenyan payslip with the NSSF line circled to make the deduction concrete and checkable on first sight."
-      },
-      "reel": true
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d2-straight",
+      "id": "2026-w42-d2-straight-r2",
       "template": "straight",
       "lane": "campus",
-      "claim": "Kenyan degrees are useless, that's why graduates can't find jobs",
-      "who": "a viral TikTok video, September 2026",
-      "truth": "Kenya's jobs gap is about job creation, not degree quality",
-      "pride": "Degrees aren't the problem. Jobs are.",
-      "claim_source": "TikTok video circulated on Kenyan campus pages, September 2026 (screenshots saved)",
-      "source": "KNBS Economic Survey 2024; Commission for University Education (cue.or.ke) statistics",
-      "proof": [
-        "KNBS Economic Survey 2024: most new jobs created were informal, not formal roles",
-        "Kenyan universities graduate over 100,000 students every year, per CUE data",
-        "Kenyan-trained engineers, doctors and techies lead teams across Africa and the Gulf today"
-      ],
-      "verdict": "misleading",
-      "message": "The claim blames degrees for joblessness; the real gap is formal jobs, not education quality.",
-      "photo_query": "graduation gown and job application forms Kenya",
-      "caption": "That TikTok again. Degrees aren't the problem, the shortage of formal jobs is. Read the KNBS Economic Survey 2024 yourself and send this to the group still arguing about it.\n\n#JuaKesho #SetItStraight",
       "bg": "usiku",
       "publish_at": "2026-10-13T12:45:00+03:00",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 8,
-        "send": 9,
-        "clarity": 9,
-        "fresh": 7,
-        "voice": 8,
-        "craft": 8,
-        "picture": 6,
-        "hold": 8,
-        "avg": 7.9,
-        "note": "Graduation gown + job forms is symbolic but soft; show a real scene—a graduate at a job fair or staring at an *informal* job notice board to sharpen the visual argument about job *scarcity*, not degree quality."
-      },
-      "reel": true
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d3-promise",
+      "id": "2026-w42-d3-promise-r2",
       "template": "promise",
       "lane": "campus",
-      "who": "William Ruto, President of Kenya",
-      "promise": "Every Community Health Promoter will earn Sh2,500 a month, rising to Sh4,000.",
-      "said": "CHP national rollout, October 2023",
-      "reality": "By 2025, media investigations found CHPs in several counties unpaid for months, with the full Sh4,000 stipend not yet rolled out everywhere.",
-      "ask": "Has your CHP been paid this month? Ask at your dispensary.",
-      "source": "Ministry of Health UHC/Community Health Promoters program communications, 2023; Nation and Standard reporting on CHP pay delays, 2024-2025",
-      "proof": [
-        "About 100,000 CHPs were enrolled nationally under UHC starting October 2023",
-        "Multiple 2024-2025 news reports documented CHPs unpaid for months in several counties",
-        "National government says the Sh4,000 stipend is phased in jointly with counties"
-      ],
-      "verdict": "partly",
-      "measure": "2,500 of 4,000",
-      "message": "The Sh4,000 CHP stipend promise is only partly delivered, years after the national rollout.",
-      "photo_query": "community health worker visiting home Kenya",
-      "caption": "They launched it with fanfare. CHPs are still chasing their stipend in some counties. Ask your dispensary if your CHP has been paid this month, then tell us what they said.\n\n#JuaKesho #PromiseTracker",
       "bg": "usiku",
       "publish_at": "2026-10-14T18:30:00+03:00",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "critic": {
-        "hook": 7,
-        "send": 7,
-        "clarity": 8,
-        "fresh": 7,
-        "voice": 7,
-        "craft": 7,
-        "picture": 6,
-        "hold": 7,
-        "avg": 7.0,
-        "note": "The ask ('Has your CHP been paid this month?') is strong, but the photo of a home visit is too soft for accountability; show a CHP *at a dispensary with an empty till or waiting for payment* to tighten the reality check."
-      },
-      "reel": true
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d4-sauti",
+      "id": "2026-w42-d4-sauti-r2",
       "template": "sauti",
       "lane": "campus",
-      "kicker": "Sisi ma-comrade",
-      "line": "Our *HELB* loan caps at Sh60,000 a year, same since 2017. Hostel rent got inflation, HELB didn't.",
-      "fact": "HELB's maximum undergraduate loan has stayed near Sh60,000 a year since 2017 even as the cost of campus living has risen.",
-      "message": "HELB's max annual loan has barely moved since 2017 while campus costs keep climbing.",
-      "photo_query": "university hostel room with student desk Kenya",
-      "source": "HELB Loan Allocation Criteria, helb.co.ke",
-      "caption": "Same Sh60,000, different decade. Compare HELB's loan bands on helb.co.ke to your actual semester budget and send this to the comrade still waiting on disbursement.\n\n#JuaKesho #SautiYaMwananchi",
       "bg": "usiku",
       "publish_at": "2026-10-15T19:30:00+03:00",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 8,
-        "send": 8,
-        "clarity": 9,
-        "fresh": 7,
-        "voice": 8,
-        "craft": 7,
-        "picture": 5,
-        "hold": 7,
-        "avg": 7.4,
-        "note": "Hostel room is generic; show a *real receipt or rent notice from a campus hostel* posted on the wall to make the inflation gap instantly visible and shareable as proof."
-      },
-      "reel": true
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d5-spotlight",
+      "id": "2026-w42-d5-spotlight-r2",
       "template": "spotlight",
       "lane": "diaspora",
-      "message": "OPay, a Nigerian fintech startup, just got approved to list on Nigeria's stock exchange after a US IPO.",
-      "photo_query": "hands using mobile money app on smartphone Lagos",
-      "kind": "Startup",
-      "name": "OPay",
-      "country": "Nigeria",
-      "what": "Nigerian fintech app for payments, transfers, bills and savings, used by millions across West Africa",
-      "why": "Just secured approval to list on the NGX after a US IPO, proof African fintech can raise money at home and abroad",
-      "cta": "Follow their NGX listing and share it",
-      "source": "NGX Group and Reuters reporting on OPay's NGX listing approval, October 2026",
-      "caption": "A Nigerian app built for African wallets just got approved to list on Nigeria's own stock exchange, after already listing in the US. That is the order most countries dream of reversing. Follow @OPay and send this to the diaspora group chat that still doubts African tech.\n\n#JuaKesho #PutUsOn",
       "bg": "usiku",
       "publish_at": "2026-10-16T17:00:00+03:00",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 6,
-        "send": 7,
-        "clarity": 7,
-        "fresh": 6,
-        "voice": 5,
-        "craft": 6,
-        "picture": 5,
-        "hold": 6,
-        "avg": 6.0,
-        "note": "The voice reads like a press release ('proof African fintech can raise money')—lean into the real angle: a Kenyan app listing at home first is backwards and bold, make it sharp and sarcastic about how we always chase Western validation."
-      },
-      "reel": true
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d6-cover",
+      "id": "2026-w42-d6-cover-r2",
       "template": "cover",
       "lane": "creator",
       "series": "Kesho Kutwa",
-      "kicker": "One day, five changes",
-      "lines": [
-        "Sasa.",
-        "Kesho.",
-        "Tazama."
-      ],
-      "highlight": 1,
-      "message": "A day in near-future Kenya: how you'll move, pay, work, heal and deal with government.",
-      "photo_query": "Nairobi skyline at dawn with commuters",
-      "caption": "Kila Jumamosi ni Kesho Kutwa. Today we walk through one ordinary day, five years from now: the matatu, the payment, the job, the clinic, the government office. Swipe, this is closer than you think.\n\n#JuaKesho #KeshoKutwa",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach",
-          "contains a year, % or amount with no `source`"
-        ]
-      },
-      "critic": {
-        "hook": 8,
-        "send": 8,
-        "clarity": 8,
-        "fresh": 8,
-        "voice": 9,
-        "craft": 9,
-        "picture": 7,
-        "hold": 9,
-        "avg": 8.2,
-        "note": "Strong opener; the photo needs to show actual movement (commuter boarding, matatu door, feet on pavement) not just a skyline, so the headline lands in one second."
-      }
+      "group": "2026-w42-d6-cover-r2",
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d6-kesho-1",
+      "id": "2026-w42-d6-kesho-1-r2",
       "template": "kesho",
       "lane": "creator",
-      "headline": "Your matatu is already going electric",
-      "leo": "BasiGo runs electric buses on Nairobi routes like Ngong Road and Thika Road today, charged overnight at depots.",
-      "kesho": "More SACCOs switch to electric and cashless-only fleets, cutting fuel costs and the fare-fight with makanga.",
-      "anza": "Next time you board an e-bus, notice the quiet. Ask your SACCO when your route switches.",
       "n": 1,
       "total": 5,
-      "message": "Nairobi's electric buses are the first sign of how we'll all move soon.",
-      "photo_query": "electric bus charging at depot Nairobi",
-      "source": "BasiGo official website, basigo.com; Reuters, 'Kenya's BasiGo expands electric bus fleet', 2023",
-      "caption": "Sasa: electric buses on Thika Road. Kesho: your route could be next. Have you boarded an e-bus yet? Tell us which route.\n\n#JuaKesho #KeshoKutwa",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "critic": {
-        "hook": 7,
-        "send": 7,
-        "clarity": 8,
-        "fresh": 7,
-        "voice": 7,
-        "craft": 7,
-        "picture": 8,
-        "hold": 7,
-        "avg": 7.2,
-        "note": "Solid; 'the quiet' is a real sensory detail—but 'cashless-only fleets, cutting fuel costs and the fare-fight with makanga' is two ideas cramped; split or cut the makanga bit to keep focus sharp."
-      }
+      "group": "2026-w42-d6-cover-r2",
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d6-kesho-2",
+      "id": "2026-w42-d6-kesho-2-r2",
       "template": "kesho",
       "lane": "creator",
-      "headline": "One ID number for everything you do",
-      "leo": "Kenya rolled out Maisha Namba from 2024, a single digital ID number meant to replace multiple ID systems.",
-      "kesho": "Expect one tap to pay, verify and access services: ID, SHA and M-Pesa talking to each other, no more separate queues.",
-      "anza": "Check if your Maisha Namba is active on eCitizen before you need it in a rush.",
       "n": 2,
       "total": 5,
-      "message": "Maisha Namba is the single ID meant to replace Kenya's scattered ID systems.",
-      "photo_query": "Kenyan national ID card close up",
-      "source": "State Department for Immigration and Citizen Services, Maisha Namba rollout announcement, 2024",
-      "caption": "One number, every service. Have you activated your Maisha Namba yet? Check on eCitizen and tell a friend to do the same.\n\n#JuaKesho #KeshoKutwa",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "critic": {
-        "hook": 5,
-        "send": 5,
-        "clarity": 8,
-        "fresh": 4,
-        "voice": 4,
-        "craft": 5,
-        "picture": 3,
-        "hold": 5,
-        "avg": 4.9,
-        "note": "ID cards are abstract and boring to young Kenyans; find the real payoff (faster hospital visits, no queues at banks, dodging ID requests from cops) and lead with that, not the system; photo of hands using phone (not a card) will land harder."
-      }
+      "group": "2026-w42-d6-cover-r2",
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d6-kesho-3",
+      "id": "2026-w42-d6-kesho-3-r2",
       "template": "kesho",
       "lane": "creator",
-      "headline": "Your next colleague might be an AI, not a person",
-      "leo": "Kenyan freelancers already earn on Upwork and Fiverr doing writing, design and data work for clients abroad.",
-      "kesho": "AI handles the routine parts of that work, so the Kenyans who win are the ones who can direct it, not just do the task.",
-      "anza": "Pick one AI tool (writing, design or spreadsheets) and get good enough to teach someone else this month.",
       "n": 3,
       "total": 5,
-      "message": "The edge in freelance work shifts from doing tasks to directing AI that does them.",
-      "photo_query": "young Kenyan freelancer working on laptop at home",
-      "caption": "Sasa: you compete on speed. Kesho: you compete on judgment. What's the one AI skill you're building? Drop it below.\n\n#JuaKesho #KeshoKutwa",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "states facts but has no `source`; verify before approving",
-          "contains a year, % or amount with no `source`"
-        ]
-      },
-      "critic": {
-        "hook": 7,
-        "send": 8,
-        "clarity": 8,
-        "fresh": 7,
-        "voice": 6,
-        "craft": 7,
-        "picture": 6,
-        "hold": 7,
-        "avg": 7.0,
-        "note": "Voice reads slightly formal ('the ones who win')—lean harder into Kenyan peer talk: 'AI does the grunt work, you do the thinking' or 'walipwa kutype, sisi tutalipwa kudesign.'"
-      }
+      "group": "2026-w42-d6-cover-r2",
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d6-kesho-4",
+      "id": "2026-w42-d6-kesho-4-r2",
       "template": "kesho",
       "lane": "creator",
-      "headline": "Seeing a doctor without leaving your estate",
-      "leo": "The Social Health Authority has been digitising health records and registration since 2024, replacing NHIF.",
-      "kesho": "Teleconsultation becomes normal for simple cases, a video call with a clinician before you ever queue at the hospital.",
-      "anza": "Confirm your SHA registration is active today, you'll need it whether you're online or in a queue.",
       "n": 4,
       "total": 5,
-      "message": "Digital health records today set up teleconsultation as the normal first stop tomorrow.",
-      "photo_query": "person on video call with doctor on phone screen",
-      "source": "Social Health Insurance Act, 2023; Social Health Authority official communications, 2024",
-      "caption": "Sasa: a card and a queue. Kesho: a call before the queue. Is your SHA active? Check now, don't wait for the fever.\n\n#JuaKesho #KeshoKutwa",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "critic": {
-        "hook": 8,
-        "send": 7,
-        "clarity": 8,
-        "fresh": 6,
-        "voice": 7,
-        "craft": 8,
-        "picture": 7,
-        "hold": 8,
-        "avg": 7.4,
-        "note": "Strong execution; 'don't wait for the fever' is sharp—but SHA registration feel low-stakes compared to the AI post; consider opening with a real friction point (waiting 3 hours for a cough)."
-      }
+      "group": "2026-w42-d6-cover-r2",
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d6-kesho-5",
+      "id": "2026-w42-d6-kesho-5-r2",
       "template": "kesho",
       "lane": "creator",
-      "headline": "Huduma Centre in your pocket, not across town",
-      "leo": "eCitizen already lets you apply for a passport, ID, business permit or police clearance online today.",
-      "kesho": "Linked to one ID, more of these services finish in one sitting, no printed letters, no second trip for a stamp.",
-      "anza": "Create or log in to your eCitizen account this week and try one service you've been postponing.",
       "n": 5,
       "total": 5,
-      "message": "Government services are moving from the physical queue to one digital account.",
-      "photo_query": "person using government e-services website on laptop",
-      "source": "eCitizen official platform, ecitizen.go.ke",
-      "caption": "From five queues to one account, that's the direction. Which eCitizen service have you never tried? Save this for the day you finally need it.\n\n#JuaKesho #KeshoKutwa",
       "bg": "usiku",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "group": "2026-w42-d6-cover",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 7,
-        "send": 7,
-        "clarity": 8,
-        "fresh": 5,
-        "voice": 7,
-        "craft": 8,
-        "picture": 5,
-        "hold": 7,
-        "avg": 6.8,
-        "note": "Headline promise ('one sitting, no stamp') is great, but eCitizen delays are notorious in Kenya—acknowledge the reality ('if it works today') or it reads tone-deaf; photo of actual eCitizen portal beats generic laptop."
-      }
+      "group": "2026-w42-d6-cover-r2",
+      "status": "planned"
     },
     {
-      "id": "2026-w42-d7-glasspoll",
+      "id": "2026-w42-d7-glasspoll-r2",
       "template": "glasspoll",
       "lane": "everyone",
-      "message": "Kenyans are split: save first or spend first when salary lands.",
-      "photo_query": "hand holding Kenyan shilling notes next to M-Pesa screen",
-      "hook": "Mshahara umeingia...",
-      "question": "Save first or spend first?",
-      "cta": "Vote, then defend it below",
-      "options": [
-        "Save first",
-        "Spend first"
-      ],
-      "caption": "Mshahara umeingia. Unafanya nini kwanza: unaweka akiba au unatumia? Vote, then tell us why in the comments.\n\n#JuaKesho #JuaAsks",
       "bg": "usiku",
       "publish_at": "2026-10-18T18:00:00+03:00",
       "size": "story",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 9,
-        "send": 9,
-        "clarity": 9,
-        "fresh": 8,
-        "voice": 9,
-        "craft": 8,
-        "picture": 8,
-        "hold": 8,
-        "avg": 8.5,
-        "note": "Excellent—'Mshahara umeingia' hits instantly, the poll is binary and divisive (comments will fight), Swahili opener owns the room. Only small lift: 'defend it below' is mild; try 'defend yourself below' for more snap."
-      }
+      "status": "planned"
     },
     {
       "id": "2026-w42-hot-1012",

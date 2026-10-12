@@ -1,32 +1,10 @@
 {
-  "fetched": "2026-10-12T14:33:14.179333+00:00",
+  "fetched": "2026-10-12T16:14:47.573892+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "benni mccarthy",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "'Even if you pay me millions': McCarthy warns Harambee Stars against dreaming too big at AFCON 2027",
-          "url": "https://www.standardmedia.co.ke/sports/football/article/2001559700/even-if-you-pay-me-millions-mccarthy-warns-harambee-stars-against-dreaming-too-big-at-afcon-2027",
-          "source": "The Standard"
-        },
-        {
-          "title": "Harambee Stars Coach Pressured To Resign",
-          "url": "https://thekenyatimes.com/sports/harambee-stars-coach-pressured-to-resign/",
-          "source": "The Kenya Times"
-        },
-        {
-          "title": "The Harambee stars poisoned chalice: Why we demand miracles from a broken machine",
-          "url": "https://thekenyandiaspora.com/stories/9275/The-Harambee-stars-poisoned-chalice-Why-we-demand-miracles-from-a-broken-machine-",
-          "source": "The Kenyan Diaspora Media"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "michael carrick",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Michael Carrick: Manchester United head coach is in trouble ahead of crucial week against Atletico Madrid and Leeds",
@@ -39,16 +17,16 @@
           "source": "BBC"
         },
         {
-          "title": "Ex-Premier League manager ‘interested’ in taking Man Utd job as pressure mounts on Michael Carrick at Old Trafford",
-          "url": "https://www.goal.com/en-ke/lists/eddie-howe-man-utd-michael-carrick-premier-league/blt8732374a508b595d",
-          "source": "Goal.com"
+          "title": "Man Utd make Michael Carrick sack call after Tottenham draw",
+          "url": "https://www.teamtalk.com/manchester-united/michael-carrick-man-utd-sack-decision-tottenham-hotspur",
+          "source": "TEAMtalk"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "loan",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Helb CEO who’s never taken bank loan, and walks up 19 floors to his office daily",
@@ -69,31 +47,8 @@
     },
     {
       "geo": "KE",
-      "title": "china",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "China’s growing debt burden limits space for economic stimulus",
-          "url": "https://www.ft.com/content/a0ffc43a-231a-40aa-b5f9-521757830087?syn-25a6b1a6=1",
-          "source": "Financial Times"
-        },
-        {
-          "title": "Xi’s Superpower Ambitions Fuel a Dangerous Debt Spiral in China",
-          "url": "https://www.wsj.com/world/china/xis-superpower-ambitions-fuel-a-dangerous-debt-spiral-in-china-edad4f9f",
-          "source": "WSJ"
-        },
-        {
-          "title": "China's debt interest costs are soaring—and growing faster than any other major budget category",
-          "url": "https://fortune.com/2026/10/11/china-debt-interest-costs-fastest-budget-category-loans-public-private-gdp-growth/",
-          "source": "Fortune"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "declan rice",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Declan Rice: Mikel Arteta says Arsenal midfielder has transitioned away from his 'lighthouse' role, so what is he?",
@@ -115,22 +70,66 @@
     {
       "geo": "KE",
       "title": "burgos vs granada",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
-          "title": "El Burgos, a mantener su racha en El Plantío",
+          "title": "El Granada se va al descanso con ventaja",
           "url": "https://www.diariodeburgos.es/noticia/z69c02398-bf51-4a97-801c30d8cb3033c8/202610/el-burgos-a-mantener-su-racha-en-el-plantio",
           "source": "Diario de Burgos"
         },
         {
-          "title": "DAZN",
-          "url": "https://www.dazn.com/es-ES/news/f%C3%BAtbol/burgos-vs-granada-segunda-division-horario-donde-ver-hoy-por-tv-online-partido-laliga-hypermotion-traves-dazn/cfevnbpn8z9t17tf1ewhgjjnf",
-          "source": "DAZN"
+          "title": "El Granada CF visita a un rival incómodo: cuatro duelos sin ganar al Burgos CF",
+          "url": "https://www.ideal.es/granadacf/precedentes-visita-rival-incomodo-cuatro-duelos-ganar-20261011164141-nt.html",
+          "source": "Ideal"
         },
         {
-          "title": "El Granada quiere darle continuidad a la segunda parte de Zubieta en El Plantío",
-          "url": "https://www.granadahoy.com/granadacf/granada-quiere-darle-continuidad-segunda_0_2008215569.html",
-          "source": "Granada Hoy"
+          "title": "Pacheta apuesta por Rodelas para visitar Burgos",
+          "url": "https://www.granadaenjuego.com/Granada-CF/pacheta-apuesta-por-rodelas-para-visitar-burgos",
+          "source": "Granada en Juego"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "paok fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Emphasis on set pieces",
+          "url": "https://www.paokfc.gr/en/news/20261010-emfasi-stis-statikes-faseis/",
+          "source": "PAOKFC"
+        },
+        {
+          "title": "Work in groups",
+          "url": "https://www.paokfc.gr/en/news/20261006-douleia-se-dyo-group/",
+          "source": "PAOKFC"
+        },
+        {
+          "title": "A busy morning’s work in Nea Mesimvria",
+          "url": "https://www.paokfc.gr/en/news/20261007-gemato-proino-sti-nea-mesimbria/",
+          "source": "PAOKFC"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "pakhtakor vs al qadsiah",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "'We only have ourselves to blame!' – Niko Kovac fumes after Borussia Dortmund late collapse",
+          "url": "https://www.goal.com/en-ke/lists/niko-kovac-borussia-dortmund-werder-bremen-late-draw-reaction/bltec99e9d4393df02a",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Niclas Füllkrug strikes late as Werder Bremen snatch dramatic late 2 draw at Borussia Dortmund",
+          "url": "https://www.bundesliga.com/en/bundesliga/news/borussia-dortmund-werder-bremen-match-report-highlights-matchday-5-39473",
+          "source": "Bundesliga | official website"
+        },
+        {
+          "title": "Borussia Dortmund vs Werder prediction: teams form analysis, possible lineups on October 9, 2026",
+          "url": "https://ratingbet.com/predictions/borussia-dortmund-vs-werder-prediction-teams-form-analysis-possible-lineups-on-october-9-2026/",
+          "source": "RatingBet"
         }
       ]
     },
@@ -140,35 +139,35 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Real Valladolid 5 - Albacete 0: resumen, goles y resultado",
-          "url": "https://as.com/futbol/segunda/real-valladolid-albacete-en-directo-laliga-hypermotion-hoy-en-vivo-f202610-d/",
-          "source": "Diario AS"
-        },
-        {
-          "title": "Escribá desconfía del colista",
-          "url": "https://www.diariodevalladolid.es/deportes/real-valladolid/261010/287103/escriba-desconfia-colista.html",
-          "source": "Diario de Valladolid"
-        },
-        {
-          "title": "Vota a los jugadores del Real Valladolid en su partido ante el Albacete",
-          "url": "https://www.elnortedecastilla.es/realvalladolid/vota-jugadores-real-valladolid-partido-ante-albacete-20261012140222-nt.html",
+          "title": "El Real Valladolid golea al son que marca Víctor Jr",
+          "url": "https://www.elnortedecastilla.es/realvalladolid/real-valladolid-golea-marca-victor-20261012162122-nt.html",
           "source": "El Norte de Castilla"
+        },
+        {
+          "title": "Jesús Vallejo: “Hay fútbol y hay capacidad de trabajo; tarde o temprano esto tiene que cambiar”",
+          "url": "http://www.quesomecanico.com/web/inicio/actualidad/101-ultimos-articulos/9190-jesus-vallejo-hay-futbol-y-hay-capacidad-de-trabajo-tarde-o-temprano-esto-tiene-que-cambiar",
+          "source": "Quesomecanico.com"
+        },
+        {
+          "title": "El nuevo Albacete de Etxebrerria naugrafa en Pucela",
+          "url": "https://www.latribunadealbacete.es/noticia/z6c24107a-b463-483f-9aec729fb9144b91/202610/el-nuevo-albacete-de-etxebrerria-naugrafa-en-pucela",
+          "source": "La Tribuna de Albacete"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "coventry vs newcastle",
-      "why": "unsafe: 'Bet'"
+      "title": "paok",
+      "why": "unsafe: 'Betting'"
     },
     {
-      "title": "police",
-      "why": "unsafe: 'missing'"
+      "title": "atalanta vs venezia",
+      "why": "unsafe: 'Betting'"
     },
     {
-      "title": "kariobangi sharks fan trouble fkf",
-      "why": "unsafe: 'SportPesa'"
+      "title": "levante vs sevilla prediction",
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
