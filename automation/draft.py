@@ -547,10 +547,11 @@ def _price(model: str) -> tuple[float, float]:
     return next((v for k, v in PRICES.items() if k in model), max(PRICES.values()))
 
 
-def can_afford(est_in: int, est_out: int, model: str | None = None) -> bool:
-    """Optional passes (critic, rewrites, repairs) only run while the week stays under JUA_WEEKLY_BUDGET_USD."""
+def can_afford(est_in: int, est_out: int, model: str | None = None, slack: float = 0.0) -> bool:
+    """Optional passes (critic, rewrites, repairs) only run while the run stays under JUA_WEEKLY_BUDGET_USD.
+    The critic (our quality gate, on a cheap model) gets a little slack so it is never the pass that's skipped."""
     pin, pout = _price(model or model_id())
-    ok = SPEND["usd"] + (est_in * pin + est_out * pout) / 1e6 <= budget()
+    ok = SPEND["usd"] + (est_in * pin + est_out * pout) / 1e6 <= budget() + slack
     if provider() == "gemini":
         ok = SPEND["calls"] < GEMINI_LIMITS["calls"] - 2   # keep calls in hand for repairs
     if not ok:
@@ -758,7 +759,8 @@ def mock_draft(slots: list[dict]) -> dict:
 
 
 CRITIC_BAR = 8.0    # under this, one rewrite with the editor's note
-WEAK_FLOOR = 7.0    # still under this after the rewrite: held back, never sent for approval
+WEAK_FLOOR = 7.0
+CRITIC_SLACK = 0.25  # dollars the critic may go past the budget: scoring every post is not optional    # still under this after the rewrite: held back, never sent for approval
 CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio. Score each post 1-10 on:
 - hook: would a 22-year-old in Nairobi stop scrolling within 2 seconds? does it say what Kenyans are already
   thinking, instead of teaching from above?
@@ -794,7 +796,7 @@ def critique(posts: list[dict]) -> dict[str, dict]:
     scores = []
     for i in range(0, len(payload), 4):
         body = json.dumps(payload[i:i + 4], ensure_ascii=False)
-        if not can_afford(len(body) // 3 + 900, 150 * len(payload[i:i + 4]), critic_model()):
+        if not can_afford(len(body) // 3 + 900, 150 * len(payload[i:i + 4]), critic_model(), slack=CRITIC_SLACK):
             break
         try:
             scores += extract_json(call_claude(CRITIC_RUBRIC + _demand_context(), body, max_tokens=3500,
@@ -880,10 +882,19 @@ def repair(week_label: str, slots: list[dict], lanes: dict, posts: list[dict], r
     return posts, reports
 
 
-def _draft_batch(week_label: str, batch: list[dict], lanes: dict, examples: list[dict]) -> list[dict]:
+def _taken_block(done: list[dict]) -> str:
+    """Stories already written this week, so no two posts tell the same story."""
+    lines = [f"- {p.get('message') or p.get('line') or p.get('headline') or p.get('claim') or p.get('promise') or p.get('question') or ''}"
+             for p in done if not p.get("n")]
+    lines = [ln for ln in lines if len(ln) > 3]
+    return ("\nALREADY WRITTEN THIS WEEK (pick different stories; never two posts on the same topic):\n" + "\n".join(lines) + "\n") if lines else ""
+
+
+def _draft_batch(week_label: str, batch: list[dict], lanes: dict, examples: list[dict], done: list[dict] | None = None) -> list[dict]:
     """One writer call. If the reply is cut off (a big carousel with Reel beats), the batch is halved and retried,
     so a long batch costs one extra call instead of the whole run."""
     system, user = build_prompt(week_label, batch, lanes, examples, scripts=False)
+    system += _taken_block(done or [])
     try:
         return extract_json(call_claude(system, user, max_tokens=12000)).get("posts", [])
     except RuntimeError as e:
@@ -891,8 +902,11 @@ def _draft_batch(week_label: str, batch: list[dict], lanes: dict, examples: list
             raise
         half = len(batch) // 2
         print(f"  reply cut off for {len(batch)} posts: drafting them in two halves")
-        return (_draft_batch(week_label, batch[:half], lanes, examples) +
-                _draft_batch(week_label, batch[half:], lanes, examples))
+        first = _draft_batch(week_label, batch[:half], lanes, examples, done)
+        return first + _draft_batch(week_label, batch[half:], lanes, examples, (done or []) + first)
+
+
+TAKEN: list[dict] = []   # posts already in the week (kept through a remake): set by pipeline.draft
 
 
 def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = False) -> tuple[list[dict], dict]:
@@ -902,7 +916,7 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
         examples = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"][:3]
         result = {"posts": [], "scripts": {}}
         for batch in batches(slots, size=6 if provider() == "gemini" else 4):
-            result["posts"] += _draft_batch(week_label, batch, lanes, examples)
+            result["posts"] += _draft_batch(week_label, batch, lanes, examples, TAKEN + result["posts"])
         result["scripts"] = write_scripts(week_label, result["posts"])
 
     posts = _merge(slots, result.get("posts", []))
