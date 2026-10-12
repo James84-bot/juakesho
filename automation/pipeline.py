@@ -322,6 +322,33 @@ def remake(label: str) -> list[str]:
     return ids
 
 
+def rephoto(label: str) -> list[str]:
+    """Keeps the words, finds the photos again (after the photo rules change) and re-sends the posts.
+    New ids, as in remake, so an older card can't approve the new picture unseen. Decided posts are kept."""
+    data = load_week(label)
+    groups: dict[str, str] = {}
+    changed = []
+    for p in data["posts"]:
+        if p["status"] not in {"awaiting", "drafted", "rendered"} or not (p.get("photo_query") or p.get("photo")):
+            continue
+        old = p["id"]
+        p["id"] = _next_rev(old)
+        if p.get("group"):
+            p["group"] = groups.setdefault(p["group"], _next_rev(p["group"]))
+        for k in ("photo_file", "photo_credit"):
+            p.pop(k, None)
+        p["status"] = "drafted"
+        changed.append(p["id"])
+    # a carousel goes out whole: slides without a photo query still need the new group and a re-send
+    for p in data["posts"]:
+        if p.get("group") in groups and p["id"] not in changed and p["status"] in {"awaiting", "drafted", "rendered"}:
+            p["group"], p["id"], p["status"] = groups[p["group"]], _next_rev(p["id"]), "drafted"
+            changed.append(p["id"])
+    save_week(data)
+    log(f"rephoto {label}: {len(changed)} post(s) get new photos")
+    return changed
+
+
 def held_summary(data: dict) -> str | None:
     held = [p for p in data["posts"] if p["status"] == "needs_human"]
     if not held:
@@ -866,7 +893,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -910,11 +937,15 @@ def _main(argv: list[str] | None = None) -> int:
         if remake(label) and not a.dry_run:
             _notify(f"♻️ Fresh batch for <b>{label}</b> coming up: new drafts, real photos. "
                     "Buttons on the older cards for these posts no longer do anything.")
+    if a.command == "rephoto":
+        label = a.week or current_week_label(ahead=0)
+        if rephoto(label) and not a.dry_run:
+            _notify(f"🖼 New photos for <b>{label}</b> coming up (same words). Buttons on the older cards no longer do anything.")
     if a.command in {"week", "hot", "redo", "draft", "remake"}:
         draft(label, mock=a.mock)
-    if a.command in {"week", "hot", "redo", "render", "remake"}:
+    if a.command in {"week", "hot", "redo", "render", "remake", "rephoto"}:
         render_week(label)
-    if a.command in {"week", "hot", "redo", "ask", "remake"}:
+    if a.command in {"week", "hot", "redo", "ask", "remake", "rephoto"}:
         ask(label, dry_run=a.dry_run)
     if a.command in {"tick", "collect"} and not a.dry_run:
         collect()

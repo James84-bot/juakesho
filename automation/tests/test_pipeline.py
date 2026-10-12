@@ -154,6 +154,20 @@ class ApprovalTests(TempWeeks):
         # an old card's button now matches nothing
         self.assertEqual(pl.apply_decision(pl.load_week("2026-W41"), "p1", True), [])
 
+    def test_rephoto_keeps_words_new_ids_whole_carousel(self):
+        self.week([{"id": "p1", "status": "awaiting", "line": "kept", "photo_query": "x", "photo_file": "f", "photo_credit": "c",
+                    "publish_at": "2026-10-05T07:15:00+03:00"},
+                   {"id": "p2", "status": "approved", "photo_query": "x", "publish_at": "2026-10-05T07:15:00+03:00"},
+                   {"id": "c-1", "group": "c", "status": "awaiting", "photo_query": "y", "publish_at": "2026-10-05T07:15:00+03:00"},
+                   {"id": "c-2", "group": "c", "status": "awaiting", "publish_at": "2026-10-05T07:15:00+03:00"}])
+        pl.rephoto("2026-W41")
+        posts = {p["id"]: p for p in pl.load_week("2026-W41")["posts"]}
+        self.assertEqual(set(posts), {"p1-r2", "p2", "c-1-r2", "c-2-r2"})
+        self.assertEqual(posts["p1-r2"]["line"], "kept")
+        self.assertNotIn("photo_file", posts["p1-r2"])
+        self.assertEqual({posts["c-1-r2"]["group"], posts["c-2-r2"]["group"]}, {"c-r2"})
+        self.assertEqual(posts["p1-r2"]["status"], "drafted")
+
 
 class PublishTests(TempWeeks):
     @property
@@ -415,8 +429,9 @@ class QualitySystemTests(unittest.TestCase):
                 mock.patch.object(photos, "faces_ok", lambda data: True), mock.patch.dict(os.environ, {"PEXELS_API_KEY": ""}):
             got = photos.fetch({"id": "w-1", "photo_query": "matatu stage Nairobi"}, Path(d))
             self.assertEqual(Path(got["file"]).read_bytes(), b"JPEG")
-            self.assertIn("Artist 3 / Wikimedia Commons, CC BY 4.0", got["credit"])   # only file 3 qualifies
-            self.assertTrue(calls[-1].endswith("3-t.jpg"))
+            # 1 (BY-SA) and 3 (BY) qualify; 2 is too small and 4 is non-commercial
+            self.assertRegex(got["credit"], r"Artist [13] / Wikimedia Commons, CC BY(-SA)? 4.0")
+            self.assertRegex(calls[-1], r"/[13]-t\.jpg$")
             again = photos.fetch({"id": "w-1", "photo_query": "matatu stage Nairobi"}, Path(d))
             self.assertEqual(again["credit"], got["credit"])   # cached: stable across re-renders
         with tempfile.TemporaryDirectory() as d, mock.patch.object(photos, "_get", side_effect=OSError("offline")):
@@ -541,10 +556,10 @@ class QualitySystemTests(unittest.TestCase):
 
     def test_commons_licences(self):
         import photos
-        for ok in ("CC0", "Public domain", "CC BY 4.0", "CC BY 2.0"):
-            self.assertTrue(photos.OK_LICENCES.match(ok), ok)
-        for bad in ("CC BY-SA 4.0", "CC BY-NC 2.0", "All rights reserved", "Fair use"):
-            self.assertFalse(photos.OK_LICENCES.match(bad) and "sa" not in bad.lower().split("-"), bad)
+        for ok in ("CC0", "Public domain", "CC BY 4.0", "CC BY 2.0", "CC BY-SA 4.0", "CC BY-SA 3.0"):
+            self.assertTrue(photos._licence_ok(ok), ok)
+        for bad in ("CC BY-NC 2.0", "CC BY-NC-SA 4.0", "CC BY-ND 4.0", "All rights reserved", "Fair use"):
+            self.assertFalse(photos._licence_ok(bad), bad)
 
     def test_music_only_with_rights_and_credited(self):
         import video
