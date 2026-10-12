@@ -27,7 +27,7 @@ MAX_NEW = 15            # comments considered per run (keeps AI calls and your T
 LOOKBACK = dt.timedelta(days=7)
 REPLY_MAX = 280
 
-REPLY_RULES = """You answer comments for WANJIKU ASKS: informed ordinary Kenyans, not a media house. Reply the way
+REPLY_RULES = """You answer comments for KENYANS ARE ASKING: informed ordinary Kenyans, not a media house. Reply the way
 the best Kenyan accounts do: fast, short, warm, a bit of dry humour, in the commenter's language (English,
 Kiswahili or Sheng). One to three short sentences, max 280 characters. Never corporate.
 

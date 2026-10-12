@@ -216,7 +216,7 @@ def _all_text(post: dict) -> str:
     return " ".join(parts)
 
 
-SAFE_NAMES = {"Wanjiku Asks", "Jua Kesho", "Bwana Ahadi", "Mama Mboga", "Google Translate", "National Assembly", "Mombasa Gate Bridge",
+SAFE_NAMES = {"Kenyans Are Asking", "Jua Kesho", "Bwana Ahadi", "Mama Mboga", "Google Translate", "National Assembly", "Mombasa Gate Bridge",
               "Controller Budget", "Auditor General", "Follow The Money", "See Through It"}
 
 

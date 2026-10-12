@@ -1,4 +1,4 @@
-{#- Shared frame for every Wanjiku Asks design: the editorial system.
+{#- Shared frame for every Kenyans Are Asking design: the editorial system.
     Grid: 72px margins. Top bar (series tag + meta), content in one column, footer rule + logo.
     Type: Inter Tight (headlines, labels), Inter (text). Colour: ink carries the design, gold is the
     one highlight, red/green carry meaning. No decoration: a photo, type and rules do the work.
@@ -117,7 +117,7 @@ mark { background: var(--mark-bg); color: var(--mark-ink); padding: 0 .1em; marg
   {% if photo_uri is defined and photo_credit %}<span class="credit">{{ photo_credit }}</span>{% endif %}
   {% block footer %}
   <div class="foot">
-    <img src="{{ logo_on_dark if dark else logo_on_light }}" alt="Wanjiku Asks">
+    <img src="{{ logo_on_dark if dark else logo_on_light }}" alt="Kenyans Are Asking">
     <span>{{ brand.handle }}</span>
   </div>
   {% endblock %}

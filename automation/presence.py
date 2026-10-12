@@ -55,7 +55,7 @@ HIGHLIGHTS = [
     ("HATUTASAHAU", "hatutasahau", "One Story per date we remember, re-shared on its anniversary."),
     ("YOUR RIGHTS", "civic", "Your rights in 15 seconds: arrest, protest, voter registration, public participation."),
     ("POLLS", "polls", "Every Story poll and its result. People come back to see how they voted against everyone else."),
-    ("ABOUT", "sisi", "Who Wanjiku is (every ordinary Kenyan), our rules (sources, no tribe, no campaigning), how to send a tip."),
+    ("ABOUT", "sisi", "Who we are (ordinary Kenyans, every tribe and county), our rules (sources, no tribe, no campaigning), how to send a tip."),
 ]
 
 

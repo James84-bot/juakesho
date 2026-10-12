@@ -1,9 +1,9 @@
 """
-build_logo.py — the Wanjiku Asks logo set as font-independent SVGs (text converted to outlines).
+build_logo.py — the Kenyans Are Asking logo set as font-independent SVGs (text converted to outlines).
 
 Mark: a speech bubble with a question mark: Kenyans asking. Flag red bubble, white "?", a green rule under the
 wordmark's first line in the stacked version. Flag colours, no flag, no shield.
-Wordmark: WANJIKU ASKS in Inter Tight Black, cap height matched to the mark.
+Wordmark: KENYANS ARE ASKING in Inter Tight Black, cap height matched to the mark.
 
     python build_logo.py      # writes assets/logo/*.svg
 """
@@ -70,17 +70,17 @@ def lockup(ink: str, stacked: bool, bg: str | None = None, mono: bool = False, q
         s = 210
         m = mark(pad, pad, s, bubble, q)
         top = pad + s * MARK_H + 46
-        d1, e1 = text_outline("WANJIKU", cap, pad, top + cap, track=-0.01)
-        d2, e2 = text_outline("ASKS", cap, pad, top + 2 * cap + 30, track=-0.01)
+        d1, e1 = text_outline("KENYANS", cap, pad, top + cap, track=-0.01)
+        d2, e2 = text_outline("ARE ASKING", cap, pad, top + 2 * cap + 30, track=-0.01)
         w, h, d = max(e1, e2, pad + s) + pad, top + 2 * cap + 30 + pad, d1 + d2
     else:
         s = cap / MARK_H * 1.25     # the bubble a little taller than the capitals, tail hanging below the line
         m = mark(pad, pad - cap * 0.12, s, bubble, q)
-        d, end = text_outline("WANJIKU ASKS", cap, pad + s + 28, pad + cap, track=-0.01)
+        d, end = text_outline("KENYANS ARE ASKING", cap, pad + s + 28, pad + cap, track=-0.01)
         w, h = end + pad, cap + 2 * pad + cap * 0.25
     bg_el = f'<rect width="{w:.0f}" height="{h:.0f}" fill="{bg}"/>' if bg else ""
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w:.0f} {h:.0f}" width="{w:.0f}" height="{h:.0f}">'
-            f'<title>Wanjiku Asks</title>{bg_el}{m}<path d="{d}" fill="{ink}"/></svg>')
+            f'<title>Kenyans Are Asking</title>{bg_el}{m}<path d="{d}" fill="{ink}"/></svg>')
 
 
 def icon(bg: str, bubble: str, q: str) -> str:
@@ -88,7 +88,7 @@ def icon(bg: str, bubble: str, q: str) -> str:
     s = 128
     x, y = (200 - s) / 2, (200 - s * MARK_H) / 2
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="512" height="512">'
-            f'<title>Wanjiku Asks icon</title><rect width="200" height="200" fill="{bg}"/>{mark(x, y, s, bubble, q)}</svg>')
+            f'<title>Kenyans Are Asking icon</title><rect width="200" height="200" fill="{bg}"/>{mark(x, y, s, bubble, q)}</svg>')
 
 
 def main() -> None:

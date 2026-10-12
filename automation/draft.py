@@ -1,5 +1,5 @@
 """
-draft.py — the AI writer. Fills a planned week with posts in the Wanjiku Asks voice.
+draft.py — the AI writer. Fills a planned week with posts in the Kenyans Are Asking voice.
 
 Uses the Anthropic Messages API over plain HTTPS (no SDK needed).
 Environment:
@@ -26,17 +26,15 @@ HERE = Path(__file__).resolve().parent
 API_URL = "https://api.anthropic.com/v1/messages"
 DEFAULT_MODEL = "claude-sonnet-5"   # override with JUA_MODEL; see platform.claude.com/docs/en/models/overview
 
-BRAND_RULES = """You write for WANJIKU ASKS, an independent, faceless Kenyan channel: ordinary Kenyans asking the people
+BRAND_RULES = """You write for KENYANS ARE ASKING, an independent, faceless Kenyan channel: ordinary Kenyans asking the people
 in power the questions everyone is already asking, with receipts. Politics, public money, promises against records,
 scams, and the stories Kenya is talking about this week. Sharp, informed, online all day. Not with any government or
 party: every side held to the same standard. Not a school, not a gossip page.
 Mission: leaders who answer to Kenyans. Peaceful and legal: people who know how their country works, check claims,
 follow the money, register, vote, show up for public participation and hold leaders to their word.
-Wanjiku is the name Kenyans give the ordinary citizen (from the 1990s, when the powerful asked "what does Wanjiku
-know about a constitution?"). She is every Kenyan, of every tribe and county, never a real person and never a tribe.
-Every post ends with the question Wanjiku is asking ("Wanjiku asks: where are the other 26 health centres?"), to a
-named office, never an insult, then the one action.
-Line: "The ordinary Kenyan, asking with receipts." Hashtag: #WanjikuAsks.
+Every post ends with the question Kenyans are asking ("Kenyans are asking: where are the other 26 health
+centres?"), to a named office, never an insult, then the one action.
+Line: "The ordinary Kenyan, asking with receipts." Hashtag: #KenyansAreAsking.
 Look: the colours of the Kenyan flag (black, white, red, green), real photos, bold headlines. Belongs to every Kenyan.
 
 WE ARE THE PEOPLE (the most important rule)
@@ -56,12 +54,12 @@ WE ARE THE PEOPLE (the most important rule)
 VOICE
 - Plain Kenyan English first. Kiswahili or Sheng only where a Kenyan would genuinely say it that way, at most one
   short phrase per post, never dropped in for flavour. Sprinkled Swahili reads machine-made, so when in doubt, leave
-  it out. Fact lines always in plain English. Brand terms stay as they are: Wanjiku Asks, Usiibiwe, Promise Tracker, Set It Straight, Follow the Money.
+  it out. Fact lines always in plain English. Brand terms stay as they are: Kenyans Are Asking, Usiibiwe, Promise Tracker, Set It Straight, Follow the Money.
 - Funny through situations and analogies (matatu, M-Pesa, mama mboga, Shosh), never by mocking people.
 - Simple words, short sentences, one idea per post. Practical: the reader can do something today.
 - Hopeful about the future and honest about risks.
 
-THE VOICE (Wanjiku Asks is informed, ordinary Kenyans talking: wananchi who read the documents. Not a media house,
+THE VOICE (Kenyans Are Asking is informed, ordinary Kenyans talking: wananchi who read the documents. Not a media house,
 not a brand, not a party. A collective "we"; it never claims to be one named person)
 - Who: the Kenyan who read the documents. Big-sibling energy: the friend who is always first to know,
   explains it in two lines, asks the question everyone is thinking, and would never let you get scammed.
@@ -108,13 +106,14 @@ SAY WHAT IT IS (be straightforward; visibility beats cleverness)
 PHOTO + HEADLINE (every post; the design is editorial: a real photo, bold type, nothing cartoonish)
 - Before writing, decide the ONE `message`: the sentence the viewer must walk away with (max 120 characters).
 - Photo + headline alone must deliver the message in one second, before any body text is read.
-- Give almost every post a `photo_query` (max 60 chars). It is searched on Wikimedia Commons and Flickr, which hold
-  REAL documentary photos, not staged stock. So name real, photographed things: places and events, 2-4 words, with
-  the place: "Kenya National Assembly", "Nairobi Expressway", "Gen Z protests Nairobi", "Kenyatta National Hospital",
-  "matatu Nairobi", "Kibera", "Mombasa port", "maize farm Kenya", "M-Pesa agent Kenya", "Kenyan shilling notes".
-  Never a staged scene ("payslip and calculator on desk", "person on video call"): those don't exist there.
-  Scenes, places, objects, hands. No logos. On Follow the Money, Set It Straight, See Through It and Put Us On, no
-  stranger's face ever stands in for someone we name: use a scene, or the real person's photo (person_photo).
+- Give every post a `photo_query` (max 60 chars) for a SYMBOLIC background: a real photo of a place or object that
+  stands for the story, never people. It is searched on Wikimedia Commons and Flickr (real documentary photos), so
+  name real, photographed things, 2-4 words, with the place:
+  laws and MPs "Kenya National Assembly"; budget and taxes "Kenyan shilling banknotes" or "National Treasury
+  Nairobi"; courts "Supreme Court of Kenya"; elections "ballot box Kenya"; health "hospital ward Kenya"; schools
+  "classroom Kenya"; roads and stalled projects "road construction Kenya"; land "title deed Kenya"; police
+  "Kenya police vehicle"; jobs and youth "Nairobi skyline"; farming "maize farm Kenya"; protests "Kenyan flag".
+  Never a crowd, never a face, never a staged scene ("payslip on desk", "person on video call"). No logos.
 - Headlines short and concrete; the photo carries half the meaning.
 
 ATTRACT (the first second) AND SUSTAIN (every second after)
@@ -277,7 +276,7 @@ SOUND LIKE KENYANS ONLINE (KOT, Kenyan TikTok, the WhatsApp group)
 - Gen Z values: tribeless, partyless, leaderless; "nothing for us without us". Unity across tribe and party.
 - Captions: line 1 is the hook as a Kenyan would tweet it; 1-3 short lines; end with a question people answer
   in the comments ("Have you seen this money anywhere?", "Tag your MP."). One topical hashtag in Kenyan-trend style
-  (#HousingLevy, #FinanceBill2027), plus #WanjikuAsks. Max three.
+  (#HousingLevy, #FinanceBill2027), plus #KenyansAreAsking. Max three.
 - Use the words Kenyans are typing this week: name people, places and events the way they search them ("Uhuru",
   "Kericho helicopter crash", "Hustler Fund"). Use the live hashtags from LIVE RADAR when the post is about them,
   including the people's accountability and protest tags (#RutoMustGo, #Wantam, #RejectFinanceBill). Never a
@@ -379,7 +378,7 @@ MAKE THEM WANT MORE (every week)
 
 CAPTIONS
 - 1 to 4 short lines, ends with a question or a clear action (save, share, tag, reply).
-- Max 3 hashtags; always include #WanjikuAsks plus the series tag.
+- Max 3 hashtags; always include #KenyansAreAsking plus the series tag.
 """
 
 SERIES = {
@@ -399,7 +398,7 @@ SERIES = {
     "straight": "Set It Straight: a false or demeaning claim about Kenya/Africa (or a viral falsehood), answered with sourced facts. `claim` quoted exactly (max 120), `who` said it (max 44, e.g. 'a viral TikTok, May 2026'), `claim_source` where exactly, `verdict` false|misleading|missing_context, `truth` the headline fact (max 70), `proof` 2-3 short facts, `pride` a proud closing line (max 50), `source` for the facts. If a public office holder said it: `who` = 'Name, Office (where, date)', optional `person_photo` (commons:File:...) + `person_role`.",
     "promise": "Promise Tracker: one specific, checkable promise by a named public office holder, quoted exactly (`promise`), `who` = 'Name, Office', `said` where and when (e.g. 'Kenya Kwanza manifesto, 2022'), `verdict` kept|partly|stalled|broken judged ONLY from official or reputable records, optional `measure` (max 16 chars, e.g. '0 of 6', '12%'), `reality` what the record shows, `proof` 1-3 sourced facts, `ask` the accountability question (max 60). `source` required, with every document. Judge every side by the same standard. Optional licensed `person_photo` + `person_role`.",
     "sauti": "Sauti ya Mwananchi (the people's voice, our signature format): a real photo fills the post. `kicker` who is talking, in English (max 24, e.g. 'Taxpayers', 'Students', 'Gen Z', 'Parents', 'Boda riders'), `line` the headline: what Kenyans are already thinking, in our voice, with one *marker* on the words that hit hardest and a sarcastic turn (max 120), `fact` the one sourced fact that proves it (max 150), `source` required, `photo_query` required (a real Kenyan scene that IS the feeling).",
-    "kumbuka": "Hatutasahau (We won't forget): one documented event where the state harmed Kenyans (protest killings, abductions, goons, deaths in custody). `date` (e.g. '25 June 2024'), `event` headline with one *marker* (max 100), `facts` 1-3 attributed facts (KNCHR, IPOA, courts, reputable media), `status` what accountability has followed (max 110), `ask` closing line (max 50, e.g. 'Hatutasahau.'), `source` with every link. Symbolic `photo_query` (candles, Kenyan flag, Parliament), never a stock crowd.",
+    "kumbuka": "Hatutasahau (We won't forget): one documented event where the state harmed Kenyans (protest killings, abductions, goons, deaths in custody). `date` (e.g. '25 June 2024'), `event` headline with one *marker* (max 100), `facts` 1-3 attributed facts (KNCHR, IPOA, courts, reputable media), `status` what accountability has followed (max 110), `ask` closing line (max 50, e.g. 'Hatutasahau.'), `source` with every link. Symbolic `photo_query` (candles, Kenyan flag, Parliament), never a crowd.",
     "scorecard": "The Chapter Six Test: one leader or serious 2027 candidate (any side) measured against Chapter Six of the Constitution and their record. `who` name (max 40), `office` current office or seat sought (max 50), `checks` 3-5 of {test (max 40, e.g. 'Kept their key promise', 'Court cases', 'Divisive statements', 'Shows up in the House'), result pass|fail|unclear, note (max 80, the evidence)}, `verdict` one line (max 70, never 'vote for/against'), `source` for every check. Same tests for every side. Optional licensed `person_photo` + `person_role`.",
     "money": "Follow the Money: one public-money number (`number` short like Sh304bn), `unit`, `what` it is, `why` it matters to a young person, `check` how to verify it themselves. Source required. Optional: the responsible office holder's licensed `person_photo` + `person_role` when the post is about their decision.",
     "hack": "AI Hack, or the slot's `series` when given: 'Civic 101' = one thing every Kenyan should know about how the country works (rights, offices, budget, Parliament, elections, public participation) with 2-4 concrete steps, Constitution/Act/official source required; 'See Through It' = manipulation literacy. Otherwise: one move that saves real time, levels up a skill, or helps you see through a trick. `hook` 7 words max, `moves` 2-4 concrete steps, `payoff` a punchy result line.",
@@ -483,14 +482,14 @@ def batches(slots: list[dict], size: int = 4) -> list[list[dict]]:
 def write_scripts(week_label: str, posts: list[dict]) -> dict:
     """Radio, voice-note, SMS and reel scripts from the week's posts (one small extra request)."""
     titles = "\n".join(f"- {p.get('template')}: {p.get('message') or p.get('title') or p.get('headline') or ''}" for p in posts)
-    ask = (f"This week's Wanjiku Asks posts ({week_label}):\n{titles}\n\nWrite, in Kenyan English, clean and grown-up: "
+    ask = (f"This week's Kenyans Are Asking posts ({week_label}):\n{titles}\n\nWrite, in Kenyan English, clean and grown-up: "
            '"radio" (2-minute community radio segment, one host, ~250 words, Kiswahili summary at the end), '
            '"voice_note" (60-second WhatsApp voice-note script), "sms" (the week\'s Usiibiwe tip, max 160 characters, no links), '
            '"reels" (30-second voice-over for the week’s strongest post). Return ONLY JSON {"radio": "...", "voice_note": "...", "sms": "...", "reels": "..."}.')
     try:
         if not can_afford(2500, 1500):
             return {}
-        return extract_json(call_claude("You write scripts for Wanjiku Asks, a Kenyan accountability channel.", ask, max_tokens=5000))
+        return extract_json(call_claude("You write scripts for Kenyans Are Asking, a Kenyan accountability channel.", ask, max_tokens=5000))
     except (ValueError, RuntimeError) as e:
         print(f"  scripts skipped: {e}")
         return {}
@@ -743,7 +742,7 @@ MOCK_SAMPLES = {
         "proof": ["The county budget funded 30 centres.", "Less than a fifth of that money was spent.", "Four centres had opened by June."],
         "ask": "Where are the other 26?", "source": "Rehearsal sample: not real data", "message": "A promised health centre in every ward is stalled at 4 of 30.",
         "action": "Ask your MCA at the next public participation where the other 26 are",
-        "caption": "Promise Tracker (rehearsal sample). Share this with someone in your ward.\n\n#WanjikuAsks",
+        "caption": "Promise Tracker (rehearsal sample). Share this with someone in your ward.\n\n#KenyansAreAsking",
     },
     "kumbuka": {
         "template": "kumbuka", "date": "1 January 2000", "event": "Rehearsal sample: an *event* the state wants us to forget",
@@ -751,7 +750,7 @@ MOCK_SAMPLES = {
         "status": "Rehearsal sample, not real data: no one has been charged.", "ask": "Hatutasahau.",
         "source": "Rehearsal sample: not real data", "message": "Rehearsal sample.", "photo_query": "candles at night",
         "action": "Share this with someone who was there, so the date isn't forgotten",
-        "caption": "Hatutasahau (rehearsal sample). Share this.\n\n#WanjikuAsks",
+        "caption": "Hatutasahau (rehearsal sample). Share this.\n\n#KenyansAreAsking",
     },
     "scorecard": {
         "template": "scorecard", "who": "Sample Name", "office": "Member of Parliament (sample)",
@@ -761,7 +760,7 @@ MOCK_SAMPLES = {
         "verdict": "Rehearsal sample: judge the record, then decide.", "source": "Rehearsal sample: not real data",
         "message": "Rehearsal sample.", "photo_query": "Kenya parliament building",
         "action": "Read their record on parliament.go.ke before you vote",
-        "caption": "The Chapter Six Test (rehearsal sample). Share this.\n\n#WanjikuAsks",
+        "caption": "The Chapter Six Test (rehearsal sample). Share this.\n\n#KenyansAreAsking",
     },
 }
 
@@ -959,7 +958,7 @@ def boost_hashtags(posts: list[dict], live: list[str] | None = None) -> list[dic
             if not drop:
                 continue
             cap = re.sub(rf"\s*{re.escape(drop)}\b", "", cap)
-        cap = cap.replace("#WanjikuAsks", f"{hit} #WanjikuAsks") if "#WanjikuAsks" in cap else f"{cap.rstrip()} {hit}"
+        cap = cap.replace("#KenyansAreAsking", f"{hit} #KenyansAreAsking") if "#KenyansAreAsking" in cap else f"{cap.rstrip()} {hit}"
         p["caption"], p["trend"] = cap, hit
     return posts
 
