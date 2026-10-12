@@ -387,7 +387,7 @@ def write_scripts(week_label: str, posts: list[dict]) -> dict:
     try:
         if not can_afford(2500, 1500):
             return {}
-        return extract_json(call_claude("You write scripts for Jua Kesho, a Kenyan content brand for young adults.", ask, max_tokens=2000))
+        return extract_json(call_claude("You write scripts for Jua Kesho, a Kenyan content brand for young adults.", ask, max_tokens=5000))
     except (ValueError, RuntimeError) as e:
         print(f"  scripts skipped: {e}")
         return {}
@@ -599,11 +599,17 @@ def _anthropic(system: str, user: str, max_tokens: int = 12000, model: str | Non
 
 
 def extract_json(text: str) -> dict:
-    """Parse the model's JSON even if it wrapped it in a code fence."""
+    """Parse the model's JSON even if it wrapped it in a code fence, added trailing commas or smart quotes."""
     m = re.search(r"\{.*\}", text, re.S)
     if not m:
         raise ValueError("model returned no JSON")
-    return json.loads(m.group(0))
+    raw = m.group(0)
+    try:
+        return json.loads(raw)
+    except ValueError:
+        fixed = re.sub(r",\s*([}\]])", r"\1", raw)                      # trailing commas
+        fixed = fixed.replace("\u201c", '\\"').replace("\u201d", '\\"')  # smart quotes used as JSON quotes inside strings
+        return json.loads(fixed)
 
 
 def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
@@ -692,7 +698,7 @@ def critique(posts: list[dict]) -> dict[str, dict]:
         if not can_afford(len(body) // 3 + 900, 150 * len(payload[i:i + 4]), critic_model()):
             break
         try:
-            scores += extract_json(call_claude(CRITIC_RUBRIC, body, max_tokens=2000, model=critic_model())).get("scores", [])
+            scores += extract_json(call_claude(CRITIC_RUBRIC, body, max_tokens=3500, model=critic_model())).get("scores", [])
         except (ValueError, RuntimeError) as e:   # a failed score never blocks the week
             print(f"  critic batch skipped: {e}")
     out = {}
@@ -706,7 +712,8 @@ def critique(posts: list[dict]) -> dict[str, dict]:
 def elevate(week_label: str, slots: list[dict], lanes: dict, posts: list[dict]) -> list[dict]:
     """Critic pass: anything under the bar gets one rewrite with the critic's notes, then is re-scored."""
     scores = critique(posts)
-    weak = [p for p in posts if scores.get(p["id"], {}).get("avg", 0) < CRITIC_BAR and p.get("status") != "needs_human"]
+    # only posts the critic actually scored can be judged weak (a skipped critic batch never blocks the week)
+    weak = [p for p in posts if p["id"] in scores and scores[p["id"]]["avg"] < CRITIC_BAR and p.get("status") != "needs_human"]
     if weak and can_afford(6000 + 900 * len(weak), 700 * len(weak)):
         system, _ = build_prompt(week_label, slots, lanes, [])
         notes = "\n".join(f"{p['id']} (avg {scores[p['id']]['avg']}): {scores[p['id']]['note']}" for p in weak)
