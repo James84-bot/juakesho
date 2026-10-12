@@ -48,6 +48,7 @@ SCHEMAS: dict[str, dict[str, int]] = {
     "scorecard": {"who": 40, "office": 50, "verdict": 70, "source": 240},
     "sauti":    {"kicker": 24, "line": 120, "fact": 110, "source": 240},
     "promise":  {"who": 60, "promise": 120, "said": 50, "reality": 120, "ask": 60, "source": 240},
+    "tazama":   {"headline": 70, "credit": 60, "rights": 120},
     "avatar":   {},
     "banner":   {"line": 40, "sub": 50},
 }
@@ -292,6 +293,15 @@ def check(post: dict) -> Report:
                                         r"2027|deserves?|should lead|best (leader|candidate))", poll_text, re.I):
         rep.errors.append("candidate-preference poll: we never run 'who will you vote for / who will win' polls; "
                           "ask about an issue or a leader's record, and report professional polls with their method")
+    if tpl == "tazama":   # someone else's clip: only with a recorded right to use it
+        if post.get("rights_kind") not in {"permission", "own", "quote"}:
+            rep.errors.append("clip without a recorded right to use it (permission / ours / short news quote)")
+        if not 1 <= len(post.get("hook") or []) <= 2 or not 2 <= len(post.get("verdict") or []) <= 4:
+            rep.errors.append("Tazama Hii needs 1-2 hook beats and 2-4 verdict beats")
+        win = post.get("clip_window")
+        cap = {"quote": 8.0}.get(post.get("rights_kind"), 40.0)
+        if win and win[1] - win[0] > cap + 0.01:
+            rep.errors.append(f"clip excerpt is {win[1] - win[0]:.1f}s (max {cap:.0f}s for this kind of clip)")
     if tpl == "scorecard":
         checks = post.get("checks")
         if not isinstance(checks, list) or not 3 <= len(checks) <= 5:

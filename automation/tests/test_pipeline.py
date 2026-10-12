@@ -178,6 +178,24 @@ class ApprovalTests(TempWeeks):
                 (Path(d) / "2026-W41" / f"{i}.mp4").write_bytes(b"x")
             self.assertEqual(pl.send_reels("2026-W41", dry_run=True), 1)
 
+    def test_collect_queues_a_clip_from_the_owner_only(self):
+        import tazama
+        updates = {"ok": True, "result": [
+            {"update_id": 30, "message": {"message_id": 1, "chat": {"id": 42}, "caption": "ruhusa @kevo254 DM\nMCA road",
+                                          "video": {"file_id": "F1", "file_size": 1000, "duration": 20}}},
+            {"update_id": 31, "message": {"message_id": 2, "chat": {"id": 999}, "caption": "yangu",
+                                          "video": {"file_id": "F2", "file_size": 1000}}}]}
+        sent = []
+
+        def fake(method, url, fields=None, files=None, timeout=60):
+            sent.append(url.rsplit("/", 1)[-1])
+            return updates if url.endswith("getUpdates") else {"ok": True}
+        with mock.patch.object(tazama, "STATE_FILE", pl.STATE / "clips.json"), mock.patch.object(pl, "http", fake):
+            pl.collect()
+            clips = tazama.load()["clips"]
+        self.assertEqual([c["file_id"] for c in clips], ["F1"])
+        self.assertIn("sendMessage", sent)
+
 
 class PublishTests(TempWeeks):
     @property
