@@ -11,7 +11,7 @@
   <h1 class="display title">{{ title | mark }}</h1>
   <div class="gap"></div>
   <div class="rows">
-    {% for m in moves %}<div class="row"><span class="n">{{ '%02d' % loop.index }}</span><span>{{ m | nb }}</span></div>{% endfor %}
+    {% for m in moves %}<div class="row"><span class="n"></span><span>{{ m | nb }}</span></div>{% endfor %}
   </div>
   <p class="strong payoff">{{ payoff }}</p>
 {% endblock %}

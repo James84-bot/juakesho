@@ -70,10 +70,11 @@ html, body { background: #777; }
 mark { background: var(--mark-bg); color: var(--mark-ink); padding: 0 .1em; margin: 0 -.02em; border-radius: .06em;
   -webkit-box-decoration-break: clone; box-decoration-break: clone; }
 .rows { display: grid; }
-.row { display: grid; grid-template-columns: 68px 1fr; gap: 8px; padding: 22px 0; border-top: 2px solid var(--line);
+.row { display: grid; grid-template-columns: 34px 1fr; gap: 8px; padding: 22px 0; border-top: 2px solid var(--line);
   font: 600 31px/1.32 "Inter"; color: var(--fg); }
 .row:last-child { border-bottom: 2px solid var(--line); }
-.row .n { font: 800 26px/1.5 "Inter Tight"; color: var(--accent); font-variant-numeric: tabular-nums; letter-spacing: .02em; }
+/* list rows carry a short red rule, not a number: no "01 02 03" */
+.row .n { display: block; width: 18px; height: 5px; margin-top: .62em; background: var(--accent); border-radius: 2px; }
 .foot { position: absolute; left: var(--m); right: var(--m); bottom: 58px; padding-top: 26px; border-top: 2px solid var(--line);
   display: flex; justify-content: space-between; align-items: center; font: 700 22px/1 "Inter Tight"; letter-spacing: .02em; color: var(--muted); }
 .foot img { height: 30px; display: block; }

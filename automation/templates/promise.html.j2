@@ -25,7 +25,7 @@
   <p class="label">The record</p>
   <p class="lead">{{ reality | nb }}</p>
   <div class="rows" style="margin-top: 18px">
-    {% for f in proof %}<div class="row"><span class="n">{{ '%02d' % loop.index }}</span><span>{{ f | nb }}</span></div>{% endfor %}
+    {% for f in proof %}<div class="row"><span class="n"></span><span>{{ f | nb }}</span></div>{% endfor %}
   </div>
   <p class="strong ask">{{ ask }}</p>
 {% endblock %}

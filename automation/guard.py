@@ -335,6 +335,11 @@ def check(post: dict) -> Report:
             rep.errors.append(f"'action' is {len(act)} chars (max 90)")
         elif re.fullmatch(r"(stay (informed|woke|alert)|be aware|share your thoughts|let us know)\.?", act, re.I):
             rep.errors.append("`action` is vague: give the concrete step (where, how, by when)")
+    # no listicle numbering ("5 things", "3 reasons", "1/5"): it reads like a content farm
+    m = re.search(r"\b(\d+|three|four|five|six|seven|ten) (things|reasons|ways|facts|signs|lessons|tips|truths)\b|(?<![\d.])\b\d/\d\b(?![\d.])",
+                  text + " " + str(post.get("caption", "")), re.I)
+    if m and tpl not in {"kesho", "cover"}:
+        rep.errors.append(f"numbered listicle ('{m.group(0)}'): say the points, don't count them")
     # urgent, never shouty: capitals, stacked "!", BREAKING-style labels and alarm emojis read as clickbait
     loud = _shouting([text, str(post.get("caption", ""))])
     if loud:

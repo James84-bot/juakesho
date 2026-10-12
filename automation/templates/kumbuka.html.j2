@@ -18,7 +18,7 @@
   <h1 class="display event">{{ event | mark }}</h1>
   <div class="gap"></div>
   <div class="rows">
-    {% for f in facts %}<div class="row"><span class="n">{{ '%02d' % loop.index }}</span><span>{{ f | nb }}</span></div>{% endfor %}
+    {% for f in facts %}<div class="row"><span class="n"></span><span>{{ f | nb }}</span></div>{% endfor %}
   </div>
   <div class="status"><p class="label">Accountability so far</p><p>{{ status | nb }}</p></div>
   <p class="ask">{{ ask }}</p>

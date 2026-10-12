@@ -40,7 +40,7 @@ URGENT_TEMPLATES = {"tazama", "sauti", "straight", "promise", "kumbuka", "scorec
 KICKERS = {"sauti": "Sauti ya Mwananchi", "straight": "Set It Straight", "promise": "Promise Tracker", "kumbuka": "Hatutasahau",
            "scorecard": "Chapter Six Test", "money": "Follow the Money", "usiibiwe": "Scam alert", "cap": "Cap or No Cap?",
            "still": "Still in 2026?", "decode": "Decode", "spotlight": "Put Us On", "africa": "Made in Africa",
-           "hack": "Civic 101", "makanga": "Explained", "cover": "Kesho Kutwa", "glasspoll": "Jua Asks", "build": "Build With Me",
+           "hack": "Civic 101", "makanga": "Explained", "cover": "Jua Kesho", "glasspoll": "Jua Asks", "build": "Build With Me",
            "tazama": "Tazama Hii"}
 
 
