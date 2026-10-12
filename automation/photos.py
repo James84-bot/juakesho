@@ -73,22 +73,22 @@ def pexels(query: str, pid: str) -> tuple[bytes, dict] | None:
     found = json.loads(_get(f"{API}?{q}", {"Authorization": key})).get("photos", [])
     if not found:
         return None
-    pick = found[zlib.crc32(pid.encode()) % min(5, len(found))]   # varied but reproducible
-    data = _get(pick["src"].get("large2x") or pick["src"]["original"])
-    return data, {"credit": f"Photo: {pick.get('photographer', 'Pexels')} / Pexels", "url": pick.get("url", "")}
+    good = [(f["src"].get("large2x") or f["src"]["original"],
+             {"credit": f"Photo: {f.get('photographer', 'Pexels')} / Pexels", "url": f.get("url", "")}) for f in found]
+    return _pick(good, pid)
 
 
 def openverse(query: str, pid: str) -> tuple[bytes, dict] | None:
     """A real photo from Openverse (Flickr and other open collections): CC0, public domain mark or CC BY only."""
     place = _place(query)
     for q in _query_ladder(query):
-        got = _openverse_once(q, pid, place)
+        got = _openverse_once(q, pid, place, query)
         if got:
             return got
     return None
 
 
-def _openverse_once(query: str, pid: str, place: str | None = None) -> tuple[bytes, dict] | None:
+def _openverse_once(query: str, pid: str, place: str | None = None, full: str | None = None) -> tuple[bytes, dict] | None:
     place = _place(query) if place is None else place
     q = urllib.parse.urlencode({"q": query, "license": "cc0,pdm,by", "size": "large", "mature": "false",
                                 "page_size": 20})
@@ -99,18 +99,16 @@ def _openverse_once(query: str, pid: str, place: str | None = None) -> tuple[byt
             continue
         if (r.get("width") or 0) and ((r.get("width") or 0) < 1000 or (r.get("height") or 0) < 700):
             continue
-        if place:   # same rule as Commons: a Kenyan story only gets a photo that says where it was taken
-            about = " ".join([r.get("title") or "", " ".join(t.get("name", "") for t in r.get("tags") or [])]).lower()
-            if place.lower() not in about and "kenya" not in about:
-                continue
+        about = " ".join([r.get("title") or "", " ".join(t.get("name", "") for t in r.get("tags") or [])]).lower()
+        if place and place.lower() not in about and "kenya" not in about:   # same place rule as Commons
+            continue
+        if not _relevant(about, full or query):
+            continue
         lic = {"cc0": "CC0", "pdm": "public domain", "by": f"CC BY {r.get('license_version') or ''}".strip()}[r["license"]]
         who = (r.get("creator") or "unknown").strip()[:50]
         good.append((r["url"], {"credit": f"Photo: {who} / {(r.get('source') or 'Openverse').title()}, {lic}",
                                 "url": r.get("foreign_landing_url") or ""}))
-    if not good:
-        return None
-    url, meta = good[zlib.crc32(pid.encode()) % min(4, len(good))]
-    return _get(url), meta
+    return _pick(good, pid)
 
 
 def _licence_ok(lic: str) -> bool:
@@ -137,6 +135,53 @@ def _query_ladder(query: str) -> list[str]:
     return out
 
 
+def _core(query: str) -> list[str]:
+    """The words that say what the photo is OF (not where): at least one must appear in the photo's own metadata."""
+    return [w.lower() for w in re.findall(r"[A-Za-z][\w-]+", query)
+            if w.lower() not in STOP and len(w) > 3 and not LOCAL.fullmatch(w)]
+
+
+def _relevant(about: str, query: str) -> bool:
+    core = _core(query)
+    return not core or any(w[:5] in about for w in core)   # 5-letter stems: "student" ~ "students"
+
+
+FACE_MODEL = HERE / "content" / "models" / "face_detection_yunet_2023mar.onnx"
+FACE_MAX = 0.09   # a face wider than 9% of the photo is "prominent"
+
+
+def faces_ok(data: bytes) -> bool:
+    """False when a person's face is prominent. A stranger's face never stands in for a story we tell
+    (that's how a random person ends up 'the corrupt official'). Crowds and small figures are fine.
+    Uses OpenCV's YuNet detector; a false alarm only costs us the next photo in line."""
+    try:
+        import cv2
+        import numpy as np
+    except ImportError:
+        print("  face check skipped: opencv not installed")
+        return True
+    img = cv2.imdecode(np.frombuffer(data, np.uint8), cv2.IMREAD_COLOR)
+    if img is None:
+        return False
+    h, w = img.shape[:2]
+    img = cv2.resize(img, (900, max(1, int(h * 900 / max(w, 1)))))
+    det = cv2.FaceDetectorYN.create(str(FACE_MODEL), "", (img.shape[1], img.shape[0]), 0.75)
+    _, faces = det.detect(img)
+    return faces is None or not any(f[2] >= FACE_MAX * img.shape[1] for f in faces)
+
+
+def _pick(good: list[tuple[str, dict]], pid: str, tries: int = 4) -> tuple[bytes, dict] | None:
+    if not good:
+        return None
+    start = zlib.crc32(pid.encode()) % min(4, len(good))
+    for url, meta in (good[start:] + good[:start])[:tries]:
+        data = _get(url)
+        if faces_ok(data):
+            return data, meta
+        print(f"  photo skipped for {pid}: a face fills the frame ({meta.get('url') or url})")
+    return None
+
+
 def _place(query: str) -> str:
     m = LOCAL.search(query)
     return m.group(0) if m and m.group(0).lower() not in {"africa", "african"} else ""
@@ -144,16 +189,17 @@ def _place(query: str) -> str:
 
 def commons(query: str, pid: str) -> tuple[bytes, dict] | None:
     """A real photo from Wikimedia Commons that we may use in a design with a credit (CC0 / PD / CC BY).
-    The place comes from the FULL query: a shorter retry ("university campus") must still be a Kenyan photo."""
+    The place and the subject come from the FULL query: a shorter retry ("university campus") must still be a
+    Kenyan photo of that subject."""
     place = _place(query)
     for q in _query_ladder(query):
-        got = _commons_once(q, pid, place)
+        got = _commons_once(q, pid, place, query)
         if got:
             return got
     return None
 
 
-def _commons_once(query: str, pid: str, place: str | None = None) -> tuple[bytes, dict] | None:
+def _commons_once(query: str, pid: str, place: str | None = None, full: str | None = None) -> tuple[bytes, dict] | None:
     place = _place(query) if place is None else place
     q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": f"{query} filetype:bitmap",
                                 "gsrnamespace": 6, "gsrlimit": 25, "prop": "imageinfo",
@@ -170,18 +216,16 @@ def _commons_once(query: str, pid: str, place: str | None = None) -> tuple[bytes
             continue
         # A Kenyan story never gets a photo from somewhere else: when the search names a place, the photo's own
         # title, description or categories must name it too (or Kenya)
-        if place:
-            about = " ".join([page.get("title", ""), md.get("ImageDescription", {}).get("value", ""),
-                              md.get("Categories", {}).get("value", "")]).lower()
-            if place.lower() not in about and "kenya" not in about:
-                continue
+        about = " ".join([page.get("title", ""), md.get("ImageDescription", {}).get("value", ""),
+                          md.get("Categories", {}).get("value", "")]).lower()
+        if place and place.lower() not in about and "kenya" not in about:
+            continue
+        if not _relevant(about, full or query):   # "Kenya" alone isn't enough: it must be a photo OF the subject
+            continue
         artist = html.unescape(re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown"))).strip()[:50]
         good.append((info.get("thumburl") or info["url"], {"credit": f"Photo: {artist} / Wikimedia Commons, {lic}",
                                                          "url": info.get("descriptionurl", "")}))
-    if not good:
-        return None
-    url, meta = good[zlib.crc32(pid.encode()) % min(4, len(good))]
-    return _get(url), meta
+    return _pick(good, pid)
 
 
 def fetch(post: dict, out_dir: Path) -> dict | None:

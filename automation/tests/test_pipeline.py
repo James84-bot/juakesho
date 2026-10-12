@@ -404,7 +404,7 @@ class QualitySystemTests(unittest.TestCase):
             return {"index": i, "imageinfo": [{"mime": mime, "width": w, "height": 1100, "url": f"https://x.test/{i}.jpg",
                     "thumburl": f"https://x.test/{i}-t.jpg", "descriptionurl": f"https://c.test/{i}",
                     "extmetadata": {"LicenseShortName": {"value": lic}, "Artist": {"value": f"<a>Artist {i}</a>"},
-                                    "Categories": {"value": "Matatus in Nairobi"}}}]}
+                                    "Categories": {"value": "Matatu stages in Nairobi"}}}]}
         api = {"query": {"pages": {"1": page(1, "CC BY-SA 4.0"), "2": page(2, "CC BY 4.0", w=600),
                                    "3": page(3, "CC BY 4.0"), "4": page(4, "CC BY-NC 2.0")}}}
         calls = []
@@ -412,7 +412,7 @@ class QualitySystemTests(unittest.TestCase):
             calls.append(url)
             return json.dumps(api).encode() if "api.php" in url else b"JPEG"
         with tempfile.TemporaryDirectory() as d, mock.patch.object(photos, "_get", fake_get), \
-                mock.patch.dict(os.environ, {"PEXELS_API_KEY": ""}):
+                mock.patch.object(photos, "faces_ok", lambda data: True), mock.patch.dict(os.environ, {"PEXELS_API_KEY": ""}):
             got = photos.fetch({"id": "w-1", "photo_query": "matatu stage Nairobi"}, Path(d))
             self.assertEqual(Path(got["file"]).read_bytes(), b"JPEG")
             self.assertIn("Artist 3 / Wikimedia Commons, CC BY 4.0", got["credit"])   # only file 3 qualifies
@@ -432,7 +432,7 @@ class QualitySystemTests(unittest.TestCase):
         api = {"query": {"pages": {"1": page(1, "File:Capitol riot tear gas.jpg", "Washington, D.C."),
                                    "2": page(2, "File:Nairobi protest 2024.jpg", "Protests in Kenya|Nairobi")}}}
         fake = lambda url, headers=None, timeout=30: json.dumps(api).encode() if "api.php" in url else b"JPEG"
-        with mock.patch.object(photos, "_get", fake):
+        with mock.patch.object(photos, "_get", fake), mock.patch.object(photos, "faces_ok", lambda data: True):
             got = photos.commons("police tear gas protest Kenya", "x")
         self.assertIn("A2", got[1]["credit"])
 
