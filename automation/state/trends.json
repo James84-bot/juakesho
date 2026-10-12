@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-12T13:43:00.786368+00:00",
+  "fetched": "2026-10-12T13:49:06.793389+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -123,17 +123,39 @@
           "source": "eNCA"
         },
         {
+          "title": "Sibiya’s SAPS contract terminated with immediate effect",
+          "url": "https://www.sabcnews.com/sabcnews/sibiyas-saps-contract-terminated-with-immediate-effect/",
+          "source": "SABC News"
+        },
+        {
           "title": "Sibiya bail hearing: Lawyer questions focus on teenage accuser’s intimate photos",
           "url": "https://www.ewn.co.za/2026/10/12/sibiya-bail-hearing-lawyer-questions-focus-on-teenage-accuser-s-intimate-photos",
           "source": "EWN"
-        },
-        {
-          "title": "Former deputy national police commissioner Shadrack Sibiya quits",
-          "url": "https://www.news24.com/southafrica/crime-and-courts/former-deputy-national-police-commissioner-shadrack-sibiya-quits-20261012-0686",
-          "source": "News24"
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "NG",
+      "title": "opay ngx listing approval",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "OPay secures approval for NGX listing after U.S. IPO",
+          "url": "https://guardian.ng/news/opay-secures-approval-for-ngx-listing-after-u-s-ipo/",
+          "source": "The Guardian Nigeria News"
+        },
+        {
+          "title": "OPay’s proposed IPO: Foreign investment is not economic exploitation",
+          "url": "https://www.thecable.ng/opays-proposed-ipo-foreign-investment-is-not-economic-exploitation/",
+          "source": "TheCable"
+        },
+        {
+          "title": "NGX targets broader ownership as OPay considers local IPO",
+          "url": "https://punchng.com/ngx-targets-broader-ownership-as-opay-considers-local-ipo/",
+          "source": "Punch Newspapers"
+        }
+      ]
     },
     {
       "geo": "NG",
@@ -226,28 +248,6 @@
     },
     {
       "geo": "NG",
-      "title": "opay ngx listing approval",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "OPay secures approval for NGX listing after U.S. IPO",
-          "url": "https://guardian.ng/news/opay-secures-approval-for-ngx-listing-after-u-s-ipo/",
-          "source": "The Guardian Nigeria News"
-        },
-        {
-          "title": "OPay’s proposed IPO: Foreign investment is not economic exploitation",
-          "url": "https://www.thecable.ng/opays-proposed-ipo-foreign-investment-is-not-economic-exploitation/",
-          "source": "TheCable"
-        },
-        {
-          "title": "NGX targets broader ownership as OPay considers local IPO",
-          "url": "https://punchng.com/ngx-targets-broader-ownership-as-opay-considers-local-ipo/",
-          "source": "Punch Newspapers"
-        }
-      ]
-    },
-    {
-      "geo": "NG",
       "title": "mrbeast earnings 2026 forbes",
       "traffic": "200+",
       "news": [
@@ -296,19 +296,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Ball by Ball Commentary & Live Score - SA vs AUS, 1st Test",
-          "url": "https://www.cricinfo.com/series/australia-in-south-africa-2026-27-1525634/south-africa-vs-australia-1st-test-1525659/ball-by-ball-commentary",
-          "source": "Cricinfo"
+          "title": "Recent Match Report - South Africa vs Australia, Australia tour of South Africa, 1st Test | ESPN.com",
+          "url": "https://www.espn.com/cricket/series/19430/report/1525659/day/3/south-africa-vs-australia-1st-test-19430",
+          "source": "ESPN"
+        },
+        {
+          "title": "Matt Renshaw scores 190 as Australia leads South Africa by 363 runs on Day 2",
+          "url": "https://apnews.com/article/cricket-1st-test-south-africa-australia-4d8a487d7f11a1f1af7977f9ac6620a8",
+          "source": "AP News"
         },
         {
           "title": "South Africa v Australia: first men’s cricket Test, day four – live",
-          "url": "https://www.theguardian.com/sport/live/2026/oct/12/south-africa-v-australia-first-test-day-four-durban-kingsmead-cricket-ground-live-updates?page=with:block-6accdd318f084a13d13c9d8d",
+          "url": "https://www.theguardian.com/sport/live/2026/oct/12/south-africa-v-australia-first-test-day-four-durban-kingsmead-cricket-ground-live-updates?page=with:block-6accded68f084a13d13c9d9f",
           "source": "The Guardian"
-        },
-        {
-          "title": "Australia v South Africa: Bad light thwarts Durban Test despite ICC changes",
-          "url": "https://www.bbc.com/sport/cricket/articles/c623d4pzy4n2o",
-          "source": "BBC"
         }
       ]
     },
@@ -372,9 +372,9 @@
           "source": "Sky Sports"
         },
         {
-          "title": "Golfers who join LIV 2.0 to be banned from DP World Tour",
-          "url": "https://www.telegraph.co.uk/golf/2026/10/12/liv-dp-world-tour-tyrrell-hatton-rahm-dechambeau-membership/",
-          "source": "The Telegraph"
+          "title": "DP World tour issues fresh ultimatum to LIV golfers",
+          "url": "https://www.bunkered.co.uk/golf-news/dp-world-tour-ultimatum-liv-golfers/",
+          "source": "bunkered.co.uk"
         }
       ]
     },
@@ -394,9 +394,9 @@
           "source": "Finbold"
         },
         {
-          "title": "History Says This Will Happen to Palantir Stock by 2028",
-          "url": "https://www.fool.com/investing/2026/10/11/history-says-this-will-happen-to-palantir-stock-by/",
-          "source": "The Motley Fool"
+          "title": "Palantir's Price Tag Scared Wall Street. Why More Analysts Are Bullish.",
+          "url": "https://www.investors.com/news/technology/palantir-stock-pltr-why-wall-street-analysts-turning-bullish/",
+          "source": "Investor's Business Daily"
         }
       ]
     },
@@ -438,9 +438,9 @@
           "source": "Barchart.com"
         },
         {
-          "title": "Moderna Now Trades 61% Above Wall Street's Average Price Target. Should You Sell?",
-          "url": "https://www.fool.com/investing/2026/10/10/moderna-now-trades-61-percent-above-price-target/",
-          "source": "The Motley Fool"
+          "title": "Moderna Surges 8% as Full Melanoma Readout Nears; BioNTech Ticks Up, Pfizer Slips",
+          "url": "https://247wallst.com/investing/2026/10/05/moderna-surges-8-as-full-melanoma-readout-nears-biontech-ticks-up-pfizer-slips/",
+          "source": "24/7 Wall St."
         }
       ]
     },
@@ -455,14 +455,14 @@
           "source": "Financial Times"
         },
         {
+          "title": "Starbucks Says It’s Not Buying Chipotle Following Speculations",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-12/starbucks-says-it-s-not-buying-chipotle-following-speculations",
+          "source": "Bloomberg.com"
+        },
+        {
           "title": "Starbucks Says It's ‘Laser-Focused’ on Existing Strategy Following Chipotle Deal Chatter",
           "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-10-08-2026/card/starbucks-says-it-is-laser-focused-on-existing-strategy-following-chipotle-deal-chatter-u607b6jnb4KrZlscwmjz",
           "source": "WSJ"
-        },
-        {
-          "title": "Starbucks says it is not buying Chipotle after takeover speculation",
-          "url": "https://www.cnbc.com/2026/10/12/starbucks-denies-chipotle-takeover.html",
-          "source": "CNBC"
         }
       ]
     },
@@ -499,8 +499,8 @@
           "source": "CryptoSlate"
         },
         {
-          "title": "Evernorth XRPN vs XRP: Which Is the Better Buy?",
-          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/10/evernorth-xrpn-vs-xrp-which-is-the-better-buy/",
+          "title": "We Asked ChatGPT Whether Evernorth's Stock Could Trade Above or Below the Value of Its XRP After Its First Week",
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/11/we-asked-chatgpt-whether-evernorths-stock-could-trade-above-or-below-the-value-of-its-xrp-after-its-first-week/",
           "source": "24/7 Wall St."
         },
         {
@@ -548,9 +548,9 @@
           "source": "Diario de Valladolid"
         },
         {
-          "title": "El nuevo Albacete de Etxeberria arranca en Valladolid",
-          "url": "https://www.quesomecanico.com/web/inicio/actualidad/101-ultimos-articulos/9186-el-nuevo-albacete-de-etxeberria-arranca-en-valladolid",
-          "source": "Quesomecanico.com"
+          "title": "Valladolid - Albacete en directo | Última hora de LALIGA Hypermotion en vivo hoy",
+          "url": "https://www.marca.com/futbol/laliga-hypermotion/valladolid-albacete/2026/10/12/01_0102_20261012_192_950-directo.html",
+          "source": "MARCA"
         }
       ]
     }
@@ -575,6 +575,10 @@
     {
       "title": "ugandan shilling",
       "why": "unsafe: 'fire'"
+    },
+    {
+      "title": "pakhtakor vs al qadsiah",
+      "why": "unsafe: 'betting'"
     },
     {
       "title": "atalanta vs venezia prediction",
