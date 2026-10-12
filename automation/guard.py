@@ -107,7 +107,10 @@ BANNED_TOPICS = {
 NEVER_WORDS = {"leverage", "seamless", "game-changer", "game changer", "cutting-edge", "revolutionary", "delve",
                "passionate", "unlock", "tapestry", "testament to", "in today's", "it's not just", "navigate the",
                "landscape", "realm", "embark", "elevate", "harness", "foster", "pivotal", "crucial", "let's dive",
-               "here's the thing", "buckle up", "in conclusion", "furthermore", "moreover", "empower", "robust"}
+               "here's the thing", "buckle up", "in conclusion", "furthermore", "moreover", "empower", "robust",
+               # brand-speak: we are wananchi, not a company
+               "we're excited", "we are excited", "stay tuned", "don't miss", "let us know your thoughts",
+               "check out our", "in this post", "dear followers", "kindly engage"}
 # Tribe: we call out divisive politics (quote it, name who said it, source it), we never practise it.
 TRIBE_TALK = r"\b(tribe|tribes|tribal|tribalism|kabila|ukabila)\b"
 CALLOUT_TEMPLATES = {"straight", "sauti", "promise", "cap", "hack", "kumbuka", "scorecard"}
