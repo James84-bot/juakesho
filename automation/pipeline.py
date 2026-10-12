@@ -853,6 +853,16 @@ def whatsapp_text(post: dict) -> str:
     return (body + (f"\n\nReceipts: {src}" if len(src) >= 8 else "") + "\n\nFollow Kenyans Are Asking for the receipts.").strip()
 
 
+def fb_link(fb_id: str | None) -> str | None:
+    """A link to the published Facebook post, so it can be shared to the owner's own profile (no API can post there)."""
+    if not fb_id:
+        return None
+    if "_" in str(fb_id):
+        page, post = str(fb_id).split("_", 1)
+        return f"https://www.facebook.com/{page}/posts/{post}"
+    return f"https://www.facebook.com/{fb_id}"
+
+
 def first_of(members: list[dict]) -> dict:
     return next((m for m in members if not m.get("n")), members[0])
 
@@ -901,7 +911,10 @@ def publish(dry_run: bool = False) -> None:
                 post_receipts(first_of(members), ig_id, fb_id)
                 record_evidence(members)
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
-                _notify(f"✅ Published <b>{_esc(key)}</b>. Forward it to the WhatsApp Channel too.")
+                link = fb_link(fb_id)
+                _notify(f"✅ Published <b>{_esc(key)}</b>."
+                        + (f" Share it to your profile: <a href=\"{_esc(link)}\">open the post</a> → Share." if link else "")
+                        + " Forward it to the WhatsApp Channel too.")
             except Exception as e:  # keep going; record and retry next tick
                 for m in members:
                     m["status"] = "publish_failed"
