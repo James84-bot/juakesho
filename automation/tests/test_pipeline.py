@@ -120,6 +120,23 @@ class ApprovalTests(TempWeeks):
         self.assertEqual(posts, {"p1": "approved", "p2": "awaiting"})
         self.assertEqual((pl.STATE / "telegram_offset.txt").read_text(), "12")
 
+    def test_collect_routes_comment_taps(self):
+        import engage
+        engage.save(pl.STATE, {"seen": ["17"], "pending": {"17": {"platform": "ig", "reply": "Asante", "post_id": "a",
+                                                                    "action": "reply"}}})
+        updates = {"ok": True, "result": [
+            {"update_id": 20, "callback_query": {"id": "a", "data": "c|r|17", "message": {"chat": {"id": 42}}}}]}
+        calls = []
+
+        def fake(method, url, fields=None, files=None, timeout=60):
+            calls.append((url.rsplit("/", 1)[-1].split("?")[0], fields))
+            return updates if url.endswith("getUpdates") else {"ok": True, "id": "r1"}
+
+        with mock.patch.object(pl, "http", fake):
+            pl.collect()
+        self.assertIn(("answerCallbackQuery", {"callback_query_id": "a", "text": "replied"}), calls)
+        self.assertEqual(engage.load(pl.STATE)["pending"], {})
+
 
 class PublishTests(TempWeeks):
     @property
