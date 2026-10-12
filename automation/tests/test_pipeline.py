@@ -139,22 +139,23 @@ class ApprovalTests(TempWeeks):
         self.assertIn(("answerCallbackQuery", {"callback_query_id": "a", "text": "replied"}), calls)
         self.assertEqual(engage.load(pl.STATE)["pending"], {})
 
-    def test_remake_gives_new_ids_and_keeps_decided_posts(self):
-        self.week([{"id": "p1", "status": "awaiting", "template": "sauti", "publish_at": "2026-10-05T07:15:00+03:00",
-                    "line": "old", "photo_file": "x"},
-                   {"id": "p2", "status": "approved", "publish_at": "2026-10-05T07:15:00+03:00"},
-                   {"id": "c-1", "group": "c", "n": 1, "status": "awaiting", "publish_at": "2026-10-05T07:15:00+03:00"},
-                   {"id": "c-2", "group": "c", "n": 2, "status": "needs_human", "publish_at": "2026-10-05T07:15:00+03:00"},
+    def test_remake_replans_the_rest_of_the_week_from_the_calendar(self):
+        self.week([{"id": "p1", "status": "awaiting", "template": "hack", "publish_at": "2026-10-07T07:30:00+03:00"},
+                   {"id": "p2", "status": "approved", "template": "sauti", "publish_at": "2026-10-08T18:30:00+03:00"},
                    {"id": "h", "hot": True, "status": "awaiting", "publish_at": "2026-10-05T18:30:00+03:00"}])
-        pl.remake("2026-W41")
+        with mock.patch.object(pl, "now", lambda: dt.datetime(2026, 10, 6, 20, 0, tzinfo=pl.EAT)):   # Tuesday evening
+            ids = pl.remake("2026-W41")
         posts = {p["id"]: p for p in pl.load_week("2026-W41")["posts"]}
-        self.assertEqual(set(posts), {"p1-r2", "p2", "c-1-r2", "c-2-r2", "h"})
-        self.assertEqual(posts["p1-r2"], {"id": "p1-r2", "status": "planned", "template": "sauti",
-                                          "publish_at": "2026-10-05T07:15:00+03:00"})
-        self.assertEqual({posts["c-1-r2"]["group"], posts["c-2-r2"]["group"]}, {"c-r2"})
-        self.assertEqual(pl._next_rev("p1-r2"), "p1-r3")
-        # an old card's button now matches nothing
+        self.assertIn("p2", posts)
+        self.assertIn("h", posts)
+        self.assertNotIn("p1", posts)   # an undecided old post is dropped, its old card now matches nothing
+        days = sorted({posts[i]["publish_at"][:10] for i in ids})
+        self.assertTrue(all(d >= "2026-10-07" for d in days))   # nothing planned in the past
+        self.assertNotIn("2026-10-08", days)                    # the approved post's day is not doubled
+        self.assertTrue(all(i.endswith("-r2") for i in ids))
+        self.assertTrue(all(posts[i]["status"] == "planned" for i in ids))
         self.assertEqual(pl.apply_decision(pl.load_week("2026-W41"), "p1", True), [])
+        self.assertEqual(pl._next_rev("p1-r2"), "p1-r3")
 
     def test_rephoto_keeps_words_new_ids_whole_carousel(self):
         self.week([{"id": "p1", "status": "awaiting", "line": "kept", "photo_query": "x", "photo_file": "f", "photo_credit": "c",
