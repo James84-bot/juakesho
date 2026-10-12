@@ -492,9 +492,10 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
     ], ensure_ascii=False, indent=1)
     ex_txt = json.dumps(examples, ensure_ascii=False, indent=1)
     import news
+    import radar
     import trends
     system = (BRAND_RULES + "\nAUDIENCE LANES\n" + lane_txt + "\n" + nickname_menu() + music_menu() + learnings_text()
-              + news.prompt_block() + trends.prompt_block())
+              + news.prompt_block() + trends.prompt_block() + radar.prompt_block())
     scripts_block = ("Also write reach-everyone scripts: \"radio\" (2-minute community radio segment, host Jua, ~250 words, "
                      "Kiswahili summary at the end), \"voice_note\" (60-second WhatsApp script), \"sms\" (the week's Usiibiwe tip, "
                      "max 160 characters, no links), \"reels\" (30-second voice-over for the Kesho Kutwa carousel).") if scripts else ""
