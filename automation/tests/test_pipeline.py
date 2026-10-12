@@ -573,6 +573,14 @@ class FreeProviderTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, "call cap"):
                 self.draft.call_claude("s", "u")
 
+    def test_elevate_survives_a_skipped_critic_batch(self):
+        posts = [{"id": "a", "template": "hack", "status": "drafted"}, {"id": "b", "template": "hack", "status": "drafted"}]
+        with mock.patch.object(self.draft, "critique", lambda ps: {"a": {"avg": 8.0, "note": "good"}}), \
+                mock.patch.object(self.draft, "call_claude", side_effect=AssertionError("no rewrite needed")):
+            out = self.draft.elevate("2026-W42", [], {}, posts)   # "b" was never scored: not weak, no crash
+        self.assertEqual(out[0]["critic"]["avg"], 8.0)
+        self.assertNotIn("critic", out[1])
+
     def test_batches_keep_carousels_whole(self):
         slots = [{"id": f"s{i}"} for i in range(3)] + [{"id": f"c{i}", "group": "g"} for i in range(6)] + [{"id": "s9"}]
         out = self.draft.batches(slots)
