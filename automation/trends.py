@@ -81,7 +81,7 @@ def traffic_value(t: str) -> int:
     return int(m.group(1).replace(",", "")) if m else 0
 
 
-def collect(geos=("KE", "NG", "ZA", "US")) -> dict:
+def collect(geos=("KE",)) -> dict:
     safe, dropped, errors = [], [], {}
     for geo in geos:
         try:
@@ -114,7 +114,7 @@ def prompt_block(max_items: int = 12, max_age_hours: int = 48) -> str:
         tag = "civic, " if t.get("civic") else ""
         lines.append(f"- [{tag}{t['geo']}] {t['title']} ({t['traffic']} searches){' · ' + head if head else ''}")
     return ("\nTRENDING NOW (Google Trends, already filtered for safety)\n" + "\n".join(lines) +
-            "\nUse at most 3 per week. Civic trends: only with sourced facts, as Set It Straight, Explained (decode/makanga), "
+            "\nRide the Kenyan ones hard: use up to 4 per week. Civic trends: only with sourced facts, as Set It Straight, Explained (decode/makanga), "
             "Follow the Money or Promise Tracker; never rumours, never someone's private life, never a court case's "
             "outcome before the court decides. Other trends need a genuine knowledge, money, tech or future angle. "
             "Put the trend in a `trend` field on that post. A weak trend-jack is worse than none.\n")
@@ -122,9 +122,9 @@ def prompt_block(max_items: int = 12, max_age_hours: int = 48) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--geo", action="append", help="country code, repeatable (default KE NG ZA US)")
+    ap.add_argument("--geo", action="append", help="country code, repeatable (default KE)")
     a = ap.parse_args()
-    data = collect(tuple(a.geo) if a.geo else ("KE", "NG", "ZA", "US"))
+    data = collect(tuple(a.geo) if a.geo else ("KE",))
     print(f"safe {len(data['safe'])}, dropped {len(data['dropped'])}, errors {data['errors'] or 'none'}")
     for t in data["safe"][:15]:
         print(f"  ✓ [{t['geo']}] {t['title']}  {t['traffic']}")

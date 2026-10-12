@@ -36,7 +36,8 @@ automation/                  The self-running content engine
   draft.py                   AI writer (free Gemini key, or Claude with a weekly budget cap): trend playbook, civic rules, self-repair
                              + the critic: scores every post (incl. picture + clarity), rewrites under 7.5
                              + a weekly budget cap on AI spend (JUA_WEEKLY_BUDGET_USD, default $0.50)
-  trends.py                  Daily Google Trends (KE, NG, ZA, US), politics/tragedy/betting filtered out
+  trends.py                  Google Trends Kenya: political trends kept (flagged civic), tragedy and betting dropped
+  news.py                    Kenyan headlines from free RSS feeds (content/news_feeds.json): the writer reacts to them
   pipeline.py                plan → draft → guard → render → Telegram approval → publish → learn
   tests/                     62 tests, no network needed (the visual QA test uses Chromium if installed)
 .github/workflows/autopilot.yml   Runs everything in the cloud, free
@@ -80,6 +81,8 @@ forwarding the approved image to the WhatsApp Channel (it has no posting API).
 python pipeline.py week --mock --dry-run   # full rehearsal, no AI, no posting
 python pipeline.py status                  # where every post is
 python pipeline.py tick --dry-run          # what would publish now
+python pipeline.py hot                     # today's extra post on the biggest Kenyan story (runs daily at 09:05 EAT)
+python news.py                             # this week's Kenyan headlines the writer reacts to
 python pipeline.py redo                    # re-draft posts the checks held back (also in Actions → Run workflow)
 python -m unittest discover -s tests -v    # run the tests
 python trends.py                           # what Kenya is searching now (safe topics only)

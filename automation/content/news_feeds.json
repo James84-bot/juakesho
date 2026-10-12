@@ -1,0 +1,50 @@
+{
+  "note": "Free RSS feeds the writer reads every week (news.py). Add or remove freely; a feed that fails is skipped.",
+  "feeds": [
+    {
+      "name": "Capital FM News",
+      "url": "https://capitalfm.africa/news/feed/",
+      "topic": "news"
+    },
+    {
+      "name": "Capital FM Politics",
+      "url": "https://capitalfm.africa/news/category/politics/feed/",
+      "topic": "politics"
+    },
+    {
+      "name": "Google News: Kenya politics",
+      "url": "https://news.google.com/rss/search?q=Kenya+politics+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "politics"
+    },
+    {
+      "name": "Google News: Parliament",
+      "url": "https://news.google.com/rss/search?q=Kenya+Parliament+bill+MPs+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "politics"
+    },
+    {
+      "name": "Google News: money",
+      "url": "https://news.google.com/rss/search?q=Kenya+tax+OR+budget+OR+debt+OR+Treasury+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "money"
+    },
+    {
+      "name": "Google News: accountability",
+      "url": "https://news.google.com/rss/search?q=Kenya+Auditor-General+OR+EACC+OR+corruption+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "accountability"
+    },
+    {
+      "name": "Google News: rights",
+      "url": "https://news.google.com/rss/search?q=Kenya+police+OR+abduction+OR+protest+OR+IPOA+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "rights"
+    },
+    {
+      "name": "Google News: 2027",
+      "url": "https://news.google.com/rss/search?q=Kenya+2027+election+IEBC+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "elections"
+    },
+    {
+      "name": "Google News: counties",
+      "url": "https://news.google.com/rss/search?q=Kenya+governor+county+assembly+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "counties"
+    }
+  ]
+}

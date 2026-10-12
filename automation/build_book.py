@@ -59,7 +59,8 @@ SERIES = [
     ("Thu 19:30", "Sauti ya Mwananchi · Scam alert · Explained simply", "usiibiwe", "The people's voice again, the scams hitting Kenyans now, and hard ideas in everyday terms."),
     ("Fri 17:00", "Proudly African: Put Us On · Made in Africa", "spotlight", "Kenyans and Africans doing it right, with names, places and sources."),
     ("Sat 11:00", "Kesho Kutwa", "cover", "A carousel on what's coming: bills, deadlines, election dates, tech that will change your life."),
-    ("Sun 18:00", "Jua Asks", "glasspoll", "A poll. The answers pick next week's topics."),
+    ("Sun 18:00", "Jua Asks", "glasspoll", "A poll on the week's story. The answers pick next week's topics."),
+    ("Daily 18:30", "The hot post", "sauti", "Every morning the system reads Kenya's headlines and trends, writes one post on the day's biggest story, and sends it for approval in time for the evening."),
 ]
 
 GLOSSARY = [
