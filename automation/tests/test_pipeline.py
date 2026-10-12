@@ -50,8 +50,10 @@ class PlanTests(TempWeeks):
         first = data["posts"][0]
         monday = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))["slots"][0]["time"]
         self.assertEqual(first["publish_at"], f"2026-10-05T{monday}:00+03:00")  # Monday 5 Oct 2026, EAT
-        group = [p for p in data["posts"] if p.get("group")]
-        self.assertEqual(len(group), 6)  # cover + 5 slides
+        cal = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))["slots"]
+        expected = sum(1 + s["carousel"]["slides"] for s in cal if s.get("carousel"))
+        self.assertEqual(len([p for p in data["posts"] if p.get("group")]), expected)  # cover + slides per carousel
+        self.assertEqual(len(data["posts"]), len(cal) - len([s for s in cal if s.get("carousel")]) + expected)
         self.assertEqual(len({p["id"] for p in data["posts"]}), len(data["posts"]))  # unique ids
 
     def test_plan_is_idempotent(self):

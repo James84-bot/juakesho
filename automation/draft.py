@@ -492,11 +492,12 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
         for s in slots
     ], ensure_ascii=False, indent=1)
     ex_txt = json.dumps(examples, ensure_ascii=False, indent=1)
+    import demand
     import news
     import radar
     import trends
     system = (BRAND_RULES + "\nAUDIENCE LANES\n" + lane_txt + "\n" + nickname_menu() + music_menu() + learnings_text()
-              + news.prompt_block() + trends.prompt_block() + radar.prompt_block())
+              + demand.prompt_block() + news.prompt_block() + trends.prompt_block() + radar.prompt_block())
     scripts_block = ("Also write reach-everyone scripts: \"radio\" (2-minute community radio segment, host Jua, ~250 words, "
                      "Kiswahili summary at the end), \"voice_note\" (60-second WhatsApp script), \"sms\" (the week's Usiibiwe tip, "
                      "max 160 characters, no links), \"reels\" (30-second voice-over for the Kesho Kutwa carousel).") if scripts else ""
@@ -756,7 +757,8 @@ def mock_draft(slots: list[dict]) -> dict:
         "reels": "Mock reels voice-over."}}
 
 
-CRITIC_BAR = 7.5
+CRITIC_BAR = 8.0    # under this, one rewrite with the editor's note
+WEAK_FLOOR = 7.0    # still under this after the rewrite: held back, never sent for approval
 CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio. Score each post 1-10 on:
 - hook: would a 22-year-old in Nairobi stop scrolling within 2 seconds? does it say what Kenyans are already
   thinking, instead of teaching from above?
@@ -769,11 +771,21 @@ CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio.
 - craft: every word earns its place; the payoff lands
 - picture: do the `photo_query` scene and the headline ALONE deliver the `message` in one second? (a generic or
   decorative scene scores low; a concrete, real scene that IS the message scores high)
+- demand: is this a story Kenyans are on right now (high in WHAT KENYA IS ON), or a deadline/anniversary that
+  matters? A topic nobody is talking about scores low however well it is written
 - hold: would they read or watch to the end? do the `beats` build like a short video (hook, receipt, stakes,
   sting, action)? any paragraph-length text scores low
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
-{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n,
+{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n,
              "note": "the single most important fix, in one sentence"}]}"""
+
+
+def _demand_context() -> str:
+    try:
+        import demand
+        return demand.prompt_block()
+    except Exception:
+        return ""
 
 
 def critique(posts: list[dict]) -> dict[str, dict]:
@@ -785,12 +797,13 @@ def critique(posts: list[dict]) -> dict[str, dict]:
         if not can_afford(len(body) // 3 + 900, 150 * len(payload[i:i + 4]), critic_model()):
             break
         try:
-            scores += extract_json(call_claude(CRITIC_RUBRIC, body, max_tokens=3500, model=critic_model())).get("scores", [])
+            scores += extract_json(call_claude(CRITIC_RUBRIC + _demand_context(), body, max_tokens=3500,
+                                               model=critic_model())).get("scores", [])
         except (ValueError, RuntimeError) as e:   # a failed score never blocks the week
             print(f"  critic batch skipped: {e}")
     out = {}
     for s in scores:
-        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold")
+        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold", "demand")
         vals = [float(s[k]) for k in keys if isinstance(s.get(k), (int, float))] or [0.0]
         out[s.get("id")] = {**{k: s.get(k) for k in keys}, "avg": round(sum(vals) / len(vals), 1), "note": s.get("note", "")}
     return out
@@ -828,6 +841,11 @@ def elevate(week_label: str, slots: list[dict], lanes: dict, posts: list[dict]) 
     for p in posts:
         if p["id"] in scores:
             p["critic"] = scores[p["id"]]
+            # weak content is not our way: still under the floor after a rewrite, it never reaches your phone
+            if scores[p["id"]]["avg"] < WEAK_FLOOR and p.get("status") == "drafted":
+                p["status"] = "needs_human"
+                p.setdefault("guard", {"errors": [], "warnings": []})["errors"] = (
+                    p.get("guard", {}).get("errors", []) + [f"weak: editor scored {scores[p['id']]['avg']}/10. {scores[p['id']]['note']}"])
     return posts
 
 
