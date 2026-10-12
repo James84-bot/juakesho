@@ -15,7 +15,7 @@
   <h1 class="display title">{{ title | mark }}</h1>
   <div class="gap"></div>
   <div class="rows">
-    {% for step in flow %}<div class="row"><span class="n">{{ '%02d' % loop.index }}</span><span>{{ step | nb }}</span></div>{% endfor %}
+    {% for step in flow %}<div class="row"><span class="n"></span><span>{{ step | nb }}</span></div>{% endfor %}
   </div>
   <div class="stack">{% for s in stack %}<span>{{ s }}</span>{% endfor %}</div>
   <p class="strong result">{{ result }}</p>

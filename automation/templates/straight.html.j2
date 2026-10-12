@@ -27,7 +27,7 @@
   <h1 class="display truth">{{ truth | mark }}</h1>
   <div class="gap"></div>
   <div class="rows">
-    {% for f in proof %}<div class="row"><span class="n">{{ '%02d' % loop.index }}</span><span>{{ f | nb }}</span></div>{% endfor %}
+    {% for f in proof %}<div class="row"><span class="n"></span><span>{{ f | nb }}</span></div>{% endfor %}
   </div>
   <p class="strong pride">{{ pride }}</p>
 {% endblock %}

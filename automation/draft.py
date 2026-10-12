@@ -51,7 +51,7 @@ WE ARE THE PEOPLE (the most important rule)
 VOICE
 - Plain Kenyan English first. Kiswahili or Sheng only where a Kenyan would genuinely say it that way, at most one
   short phrase per post, never dropped in for flavour. Sprinkled Swahili reads machine-made, so when in doubt, leave
-  it out. Fact lines always in plain English. Brand terms stay as they are: Jua Kesho, Wanakesho, Usiibiwe, Kesho Kutwa, Promise Tracker, Set It Straight.
+  it out. Fact lines always in plain English. Brand terms stay as they are: Jua Kesho, Usiibiwe, Promise Tracker, Set It Straight, Follow the Money.
 - Funny through situations and analogies (matatu, M-Pesa, mama mboga, Shosh), never by mocking people.
 - Simple words, short sentences, one idea per post. Practical: the reader can do something today.
 - Hopeful about the future and honest about risks.
@@ -305,6 +305,7 @@ THE MESSAGE AND THE BEST ACTION (every post)
 - The action goes in the caption's last line and the Reel's last beat.
 
 URGENT, NOT PARAGRAPHS
+- No numbering: no "5 things", "3 reasons", "1/5", "01, 02". Lists are a few short lines, each one a punch.
 - Urgent, never shouty: no capitals for emphasis, no "!!", no BREAKING/URGENT/SHOCKING, no 🚨. Calm voice, hard numbers,
   a deadline, a contrast. The red marker is our only volume knob.
 - Nobody reads paragraphs on a phone. Every text field is one or two short sentences. Cut every word that
@@ -480,7 +481,7 @@ def write_scripts(week_label: str, posts: list[dict]) -> dict:
     ask = (f"This week's Jua Kesho posts ({week_label}):\n{titles}\n\nWrite, in Kenyan English, clean and grown-up: "
            '"radio" (2-minute community radio segment, host Jua, ~250 words, Kiswahili summary at the end), '
            '"voice_note" (60-second WhatsApp voice-note script), "sms" (the week\'s Usiibiwe tip, max 160 characters, no links), '
-           '"reels" (30-second voice-over for the Kesho Kutwa carousel). Return ONLY JSON {"radio": "...", "voice_note": "...", "sms": "...", "reels": "..."}.')
+           '"reels" (30-second voice-over for the week’s strongest post). Return ONLY JSON {"radio": "...", "voice_note": "...", "sms": "...", "reels": "..."}.')
     try:
         if not can_afford(2500, 1500):
             return {}
@@ -516,7 +517,7 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
               + demand.prompt_block() + news.prompt_block() + trends.prompt_block() + radar.prompt_block())
     scripts_block = ("Also write reach-everyone scripts: \"radio\" (2-minute community radio segment, host Jua, ~250 words, "
                      "Kiswahili summary at the end), \"voice_note\" (60-second WhatsApp script), \"sms\" (the week's Usiibiwe tip, "
-                     "max 160 characters, no links), \"reels\" (30-second voice-over for the Kesho Kutwa carousel).") if scripts else ""
+                     "max 160 characters, no links), \"reels\" (30-second voice-over for the week’s strongest post).") if scripts else ""
     user = f"""Write week {week_label}. Fill every slot below. Keep each post's `id` and `template` exactly.
 Posts in the same carousel must tell one story in order. Don't repeat topics from the examples.
 

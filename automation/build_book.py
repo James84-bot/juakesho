@@ -52,15 +52,14 @@ FAMILIES = [
 ]
 
 SERIES = [
-    ("Mon 07:30", "Sauti ya Mwananchi · Civic 101", "sauti", "What Kenyans are already thinking, said out loud over a real photo, with the receipt and a dry line. Civic 101 rotates in."),
-    ("Tue 12:45", "Set It Straight · Follow the Money · Hatutasahau · Decode", "straight",
-     "Politicians' claims fact-checked, one public-money number, what the state did to Kenyans (we won't forget), the word in the news."),
+    ("Mon 07:30", "Sauti ya Mwananchi · Set It Straight", "sauti", "What Kenyans are already saying about the week's biggest story, over a real photo, with the receipt and the one thing to do."),
+    ("Tue 12:45", "Follow the Money · Set It Straight", "money", "One public-money number on red, sourced, and how to check it yourself; or a politician's claim against the facts."),
     ("Wed 18:30", "Promise Tracker · The Chapter Six Test", "promise", "A leader's promise against the record, or a leader measured against the Constitution's integrity standard. Every side, same tests."),
-    ("Thu 19:30", "Sauti ya Mwananchi · Scam alert · Explained simply", "usiibiwe", "The people's voice again, the scams hitting Kenyans now, and hard ideas in everyday terms."),
-    ("Fri 17:00", "Proudly African: Put Us On · Made in Africa", "spotlight", "Kenyans and Africans doing it right, with names, places and sources."),
-    ("Sat 11:00", "Kesho Kutwa", "cover", "A carousel on what's coming: bills, deadlines, election dates, tech that will change your life."),
-    ("Sun 18:00", "Jua Asks", "glasspoll", "A poll on the week's story. The answers pick next week's topics."),
-    ("Daily 18:30", "The hot post", "sauti", "Every morning the system reads Kenya's headlines and trends, writes one post on the day's biggest story, and sends it for approval in time for the evening."),
+    ("Thu 19:30", "Sauti ya Mwananchi · Scam alert", "usiibiwe", "The people's voice again, and the scams hitting Kenyans now."),
+    ("Fri 17:00", "Set It Straight · Follow the Money · Sauti", "straight", "The claim of the week, checked."),
+    ("Sat 11:00", "Promise Tracker · Follow the Money · Sauti", "promise", "Weekend reading: the record behind the week's noise."),
+    ("Sun 18:00", "Jua Asks", "glasspoll", "A poll on the week's biggest issue. The answers pick next week's topics."),
+    ("Daily", "The hot post · Tazama Hii", "sauti", "Every morning the system ranks what Kenya is on, writes one post on the biggest story and sends it for approval in time for the evening. Clips you send become Tazama Hii Reels."),
 ]
 
 GLOSSARY = [
@@ -69,14 +68,13 @@ GLOSSARY = [
     ("Jua nchi yako", "tagline", "“Know your country.” On every profile and the launch post."),
     ("Kesho iko hapa", "sign-off", "“Tomorrow is here.”"),
     ("Wanakesho", "noun", "“The people of tomorrow”: the community. Never “followers” or “fans”."),
-    ("Kesho Kutwa", "series", "“The day after tomorrow”, Kenyan for “someday”. Our future series."),
     ("Usiibiwe", "series", "“Don't get robbed.” Scam alerts, on the red background."),
     ("Promise Tracker", "series", "A leader's own promise against the record. Kept, partly kept, stalled or broken."),
     ("Civic 101", "series", "How Kenya works, one idea at a time. Every post cites the Constitution, the Act or the official page."),
     ("Set It Straight", "series", "Our answer to falsehoods and put-downs: the claim, quoted and sourced, then the facts."),
     ("Follow the Money", "series", "One public-money number, sourced, and how to check it yourself."),
     ("Bwana Ahadi", "archetype", "“Mr Promise”: shorthand for promises that never arrive. In words only, never drawn."),
-    ("Kenyan English", "voice", "English sentences seasoned with everyday Kenyan words (sasa, manze, sawa). Anyone can follow."),
+    ("Kenyan English", "voice", "Plain Kenyan English. Kiswahili only where a Kenyan would really say it, never as decoration. No numbering, no shouting."),
 ]
 
 MONEY = [
