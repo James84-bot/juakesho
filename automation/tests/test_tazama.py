@@ -88,5 +88,20 @@ class Action(unittest.TestCase):
         self.assertTrue(cap.rstrip().endswith("#KenyansAreAsking"))   # the action sits above the hashtags
 
 
+class Fairness(unittest.TestCase):
+    def test_balance_note_flags_one_sided_weeks(self):
+        import pipeline
+        week = {"posts": [{"id": f"p{i}", "status": "awaiting", "side": "government", "tone": "criticism"} for i in range(4)]}
+        note = pipeline.balance_note(week)
+        self.assertIn("one side", note)
+        self.assertIn("No credit yet", note)
+        week["posts"] += [{"id": "o", "status": "awaiting", "side": "opposition", "tone": "criticism"},
+                          {"id": "c", "status": "awaiting", "side": "government", "tone": "credit"}]
+        note = pipeline.balance_note(week)
+        self.assertNotIn("one side", note)
+        self.assertNotIn("No credit", note)
+        self.assertTrue(any("'side'" in e for e in guard.check({"id": "x", "template": "sauti", "side": "ruto"}).errors))
+
+
 if __name__ == "__main__":
     unittest.main()

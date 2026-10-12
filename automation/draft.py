@@ -296,6 +296,19 @@ WHERE KENYANS ARE (research, 2026) AND WHAT WINS THERE
 - English by default. A full Kiswahili post only when the story itself is in Kiswahili (a quote, a rally line);
   then write it the way a native speaker would, not translated English.
 
+FAIR, NOT NEUTRAL (accountability with no bias)
+- One standard for everyone: the government, the opposition, governors, MPs, MCAs, the church in politics. Who holds
+  the office never changes the test.
+- Applaud what is genuinely good, with receipts: a kept promise, a finished road, a good law, a public officer doing the
+  job. Credit makes our criticism believable. Never cheerlead: one clean, sourced line of credit.
+- Ridicule without fear what is wrong: not done, stalled, not true, divisive, wasteful, corrupt. Ridicule the decision,
+  the claim and the record with dry sarcasm and the numbers ("Launched for the third time. Still no road."), never a
+  person's body, family, tribe or character, and never an insult. Corruption only as the record says it: charged, found
+  by the Auditor-General or EACC, ruled by a court, or "alleged" with the reputable source. Never as our own verdict.
+- The opposition gets the same treatment: their false claims, their divisive talk, their own past records in office.
+- Every post states `side`: "government" | "opposition" | "both" | "none", and `tone`: "credit" | "criticism" | "explainer".
+  Across a week, aim for both sides held to account and at least one credit where it is earned.
+
 THE MESSAGE AND THE BEST ACTION (every post)
 - A Kenyan must get it in one look: what happened, why it touches their pocket, rights, safety or vote, and what
   to do about it. Plain words, no assumed knowledge: say "MPs voted to raise fuel tax", not "the Finance Act".
@@ -501,6 +514,17 @@ def nickname_menu() -> str:
     return "\nNICKNAMES (the only ones you may use)\n" + "\n".join(lines) + "\n"
 
 
+ANGLES = {
+    "credit": ("CREDIT WHERE DUE: applaud one thing a leader, the government, a county or the opposition actually "
+               "delivered: a kept promise, a finished project, a good law, money accounted for. Receipts required "
+               "(the official record or two reputable outlets). Promise template: verdict 'kept'. Still end with the next "
+               "question (\"Now do the same for ...\") and the action."),
+    "opposition": ("SAME STANDARD: hold the opposition (an opposition leader, party or opposition-led county) to account: "
+                   "something false, divisive, stalled, or a promise of theirs against their own record. Receipts required. "
+                   "If they genuinely did something right this week, say that instead."),
+}
+
+
 def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list[dict], scripts: bool = True) -> tuple[str, str]:
     lane_txt = "\n".join(f"- {k}: {v['who']}. Voice: {v['voice']}" for k, v in lanes.items())
     slot_txt = json.dumps([
@@ -508,6 +532,7 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
          **({"anniversary": s["remember"]} if s.get("remember") else {}),
          **({"hot": "Today's post: react to the biggest Kenyan political story in THIS WEEK IN KENYA, with its link in `source`"}
             if s.get("hot") else {}),
+         **({"angle": ANGLES[s["angle"]]} if s.get("angle") in ANGLES else {}),
          "series_brief": SERIES[s["template"]],
          "fields": _field_spec(s["template"])}
         for s in slots
@@ -799,12 +824,14 @@ CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio.
   decorative scene scores low; a concrete, real scene that IS the message scores high)
 - demand: is this a story Kenyans are on right now (high in WHAT KENYA IS ON), or a deadline/anniversary that
   matters? A topic nobody is talking about scores low however well it is written
+- fair: would the same post read the same if the other side had done it? credit and criticism both with receipts,
+  sarcasm at the decision or record, never an insult or our own verdict of guilt
 - action: does a Kenyan know exactly what to do next (where, how, by when), and is it real, legal and peaceful?
   No action, a vague one ("stay informed") or an invented channel scores low
 - hold: would they read or watch to the end? do the `beats` build like a short video (hook, receipt, stakes,
   sting, action)? any paragraph-length text scores low
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
-{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n,
+{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n, "fair": n,
              "note": "the single most important fix, in one sentence"}]}"""
 
 
@@ -831,7 +858,7 @@ def critique(posts: list[dict]) -> dict[str, dict]:
             print(f"  critic batch skipped: {e}")
     out = {}
     for s in scores:
-        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold", "demand", "action")
+        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold", "demand", "action", "fair")
         vals = [float(s[k]) for k in keys if isinstance(s.get(k), (int, float))] or [0.0]
         out[s.get("id")] = {**{k: s.get(k) for k in keys}, "avg": round(sum(vals) / len(vals), 1), "note": s.get("note", "")}
     return out

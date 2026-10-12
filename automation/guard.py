@@ -326,6 +326,10 @@ def check(post: dict) -> Report:
                                         r"2027|deserves?|should lead|best (leader|candidate))", poll_text, re.I):
         rep.errors.append("candidate-preference poll: we never run 'who will you vote for / who will win' polls; "
                           "ask about an issue or a leader's record, and report professional polls with their method")
+    if post.get("side") is not None and post.get("side") not in {"government", "opposition", "both", "none"}:
+        rep.errors.append("'side' must be government, opposition, both or none")
+    if post.get("tone") is not None and post.get("tone") not in {"credit", "criticism", "explainer"}:
+        rep.errors.append("'tone' must be credit, criticism or explainer")
     # every new post tells Kenyans the one best thing to do (launch posts predate the rule: they carry no `message`)
     if "message" in post and not post.get("n") and tpl not in {"glasspoll", "cover", "tazama"}:
         act = str(post.get("action") or "").strip()

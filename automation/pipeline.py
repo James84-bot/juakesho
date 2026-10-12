@@ -229,6 +229,8 @@ def _calendar_posts(label: str) -> list[dict]:
         post = {"id": base_id, "template": template, "bg": bg, "lane": lane, "publish_at": when, "status": "planned"}
         if slot.get("size"):
             post["size"] = slot["size"]
+        if slot.get("angle"):
+            post["angle"] = slot["angle"]
         series = slot.get("series")
         if isinstance(series, dict):   # {"hack": "Civic 101"}: a series name for one of the slot's templates
             series = series.get(template)
@@ -287,7 +289,7 @@ def draft(label: str, mock: bool = False) -> dict:
 # ---------------------------------------------------------------------------
 # 3. Render (PNG for Telegram/WhatsApp, JPEG for Instagram)
 # ---------------------------------------------------------------------------
-PLAN_KEYS = {"id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot"}
+PLAN_KEYS = {"id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "angle"}
 
 
 def redo(label: str) -> list[str]:
@@ -467,6 +469,21 @@ def send_reels(label: str, dry_run: bool = False) -> int:
     return sent
 
 
+def balance_note(data: dict) -> str | None:
+    """Fairness check for the week: who we held to account and who we credited, so no side gets a free pass."""
+    posts = [p for p in data["posts"] if not p.get("n") and p["status"] in {"awaiting", "approved", "published", "manual"}]
+    if len(posts) < 3:
+        return None
+    count = lambda side, tone: sum(1 for p in posts if p.get("side") in {side, "both"} and p.get("tone") == tone)
+    g_c, g_k, o_c, o_k = count("government", "criticism"), count("government", "credit"), count("opposition", "criticism"), count("opposition", "credit")
+    lines = [f"⚖️ <b>Balance this week</b>: government {g_c} criticised · {g_k} credited; opposition {o_c} criticised · {o_k} credited."]
+    if g_c + o_c >= 3 and (g_c == 0 or o_c == 0):
+        lines.append("Every criticism is on one side. If the other side did wrong this week, a post on it keeps us fair.")
+    if g_k + o_k == 0:
+        lines.append("No credit yet. If someone delivered something real, one sourced line of credit makes our criticism believable.")
+    return "\n".join(lines)
+
+
 def held_summary(data: dict) -> str | None:
     held = [p for p in data["posts"] if p["status"] == "needs_human"]
     if not held:
@@ -547,6 +564,8 @@ def _preview_text(p: dict) -> str:
         lines += [f"🎯 <i>{esc(p['message'])}</i>" + (f"  ({esc(p['symbol'])})" if p.get("symbol") else "")]
     if p.get("action"):
         lines += [f"👉 <b>{esc(p['action'])}</b>"]
+    if p.get("side") or p.get("tone"):
+        lines += [f"⚖️ {esc(str(p.get('tone', '?')))} · {esc(str(p.get('side', '?')))}"]
     lines += ["", esc(cap)]
     if p.get("trend"):
         lines += ["", f"📈 Riding trend: {esc(str(p['trend']))}"]
@@ -607,6 +626,12 @@ def ask(label: str, dry_run: bool = False) -> dict:
                {"photo": out_dir / f"{p['id']}.png"})
         p["status"] = "awaiting"
     save_week(data)
+    balance = balance_note(data)
+    if balance and not dry_run:
+        try:
+            tg("sendMessage", {"chat_id": chat, "text": balance, "parse_mode": "HTML"})
+        except Exception as e:
+            log(f"balance note skipped: {e}")
     note = held_summary(data)
     if note:
         log(note.replace("<b>", "").replace("</b>", "").replace("<code>", "").replace("</code>", ""))

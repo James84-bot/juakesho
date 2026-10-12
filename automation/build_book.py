@@ -56,8 +56,8 @@ SERIES = [
     ("Tue 12:45", "Follow the Money · Set It Straight", "money", "One public-money number on red, sourced, and how to check it yourself; or a politician's claim against the facts."),
     ("Wed 18:30", "Promise Tracker · The Chapter Six Test", "promise", "A leader's promise against the record, or a leader measured against the Constitution's integrity standard. Every side, same tests."),
     ("Thu 19:30", "Sauti ya Mwananchi · Scam alert", "usiibiwe", "The people's voice again, and the scams hitting Kenyans now."),
-    ("Fri 17:00", "Set It Straight · Follow the Money · Sauti", "straight", "The claim of the week, checked."),
-    ("Sat 11:00", "Promise Tracker · Follow the Money · Sauti", "promise", "Weekend reading: the record behind the week's noise."),
+    ("Fri 17:00", "Same Standard", "straight", "The opposition held to the same test: their claims, their divisive talk, their own records."),
+    ("Sat 11:00", "Credit Where Due", "promise", "On green: one thing a leader or the government actually delivered, with receipts. Credit makes criticism believable."),
     ("Sun 18:00", "Your Say", "glasspoll", "A poll on the week's biggest issue. The answers pick next week's topics."),
     ("Daily", "The hot post · Tazama Hii", "sauti", "Every morning the system ranks what Kenya is on, writes one post on the biggest story and sends it for approval in time for the evening. Clips you send become Tazama Hii Reels."),
 ]
@@ -73,6 +73,8 @@ GLOSSARY = [
     ("Tazama Hii", "series", "A real clip someone filmed, credited, with our take around it."),
     ("Hatutasahau", "series", "“We won't forget.” Documented events, on their anniversaries."),
     ("Your Say", "series", "The Sunday poll on the week's biggest issue."),
+    ("Credit Where Due", "series", "Applause for what was genuinely delivered, with receipts, whoever delivered it."),
+    ("Same Standard", "rule", "Government and opposition get the same test. Ridicule the decision and the record, never the person."),
     ("Kenyan English", "voice", "Plain Kenyan English. Kiswahili only where a Kenyan would really say it, never as decoration. No numbering, no shouting."),
 ]
 
