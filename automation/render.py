@@ -175,7 +175,11 @@ def beat_tokens(text: str) -> list[tuple[str, bool]]:
         if part == "*":
             marked = not marked
             continue
-        out += [(w, marked) for w in part.split()]
+        for w in part.split():
+            if out and re.fullmatch(r"[.,!?;:…)\]\"'”’]+", w):   # "*Sh7bn*." : punctuation sticks to its word
+                out[-1] = (out[-1][0] + w, out[-1][1])
+            else:
+                out.append((w, marked))
     return out
 
 
