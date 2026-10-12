@@ -133,10 +133,12 @@ def _shouting(texts: list[str] | str) -> str:
     return "; ".join(found)
 
 
-# Trending hashtags we never ride: insults and campaign slogans for or against anyone
-PARTISAN_TAG = re.compile(r"tapeli|conman|mwizi|thief|thieves|liar|wezi|mustgo|mustfall|ruto ?must|wantam|oneterm|"
-                          r"tutam|tosha|delivers|ikombele|iko ?mbele|imara|ndiyo|forever|2027ni|nitutam|kasongo|zakayo|"
-                          r"murderer|killer|dictator|traitor|msaliti|goons", re.I)
+# Trending hashtags we never ride. We are with the people, not the government: accountability and protest tags
+# (#RutoMustGo, #Wantam, #RejectFinanceBill, #OccupyParliament, #EndAbductions) are fine. What we never carry:
+#   PR for any politician ("...Delivers", "ni tutam", "iko mbele", "imara": someone's paid campaign), and
+#   personal insults ("tapeli", "conman", "mwizi": that is name-calling and the defamation risk sits with us).
+PARTISAN_TAG = re.compile(r"delivers|tutam|ikombele|iko ?mbele|imara|tosha|forever|"
+                          r"tapeli|conman|mwizi|wezi|thief|thieves|liar|murderer|killer|traitor|msaliti", re.I)
 
 SWAHILI_FILLERS = ["wueh", "aki", "bana", "mambo ni mengi", "hii nchi", "kwani ni kesho", "manze", "si ndio",
                    "very normal country", "we move"]
@@ -389,7 +391,7 @@ def check(post: dict) -> Report:
         tags = re.findall(r"#[A-Za-z]\w*", caption)
         bad = [t for t in tags if PARTISAN_TAG.search(t)]
         if bad:
-            rep.errors.append(f"hashtag takes a side ({', '.join(bad)}): insults and campaign slogans are never our tags")
+            rep.errors.append(f"hashtag is a politician's PR or a personal insult ({', '.join(bad)}): never our tags")
         if len(tags) > 3:
             rep.errors.append(f"caption has {len(tags)} hashtags (max 3)")
         if len(caption) > 2000:
