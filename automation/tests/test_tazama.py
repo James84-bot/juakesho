@@ -59,5 +59,15 @@ class Tazama(unittest.TestCase):
         self.assertTrue(guard.check({**post, "rights_kind": "quote"}).errors)   # 20 s of news footage is too long
 
 
+class Calm(unittest.TestCase):
+    def test_urgent_not_shouty(self):
+        self.assertEqual(guard._shouting(["Sh7.35bn unpaid. Your MP hasn't said how he'll vote on Thursday."]), "")
+        self.assertIn("capitals", guard._shouting(["THEY STOLE OUR MONEY"]))
+        self.assertIn("exclamation", guard._shouting(["Read this!!"]))
+        self.assertIn("breaking", guard._shouting(["Breaking: the CS resigns"]).lower())
+        self.assertIn("alarm", guard._shouting(["🚨🚨 Share this"]))
+        self.assertEqual(guard._shouting(["IEBC, KRA and the MCA all said no. KSh 2bn gone."]), "")
+
+
 if __name__ == "__main__":
     unittest.main()
