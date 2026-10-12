@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-12T13:36:41.223192+00:00",
+  "fetched": "2026-10-12T13:43:00.786368+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -136,95 +136,6 @@
       "civic": true
     },
     {
-      "geo": "US",
-      "title": "alexandra eala",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Best of Wuhan media day: Top quotes and Kostyuk, Eala's adventures",
-          "url": "https://www.wtatennis.com/news/4590461/best-of-wuhan-media-day-top-quotes-marta-kostyuks-alex-eala-adventures",
-          "source": "WTA Tennis"
-        },
-        {
-          "title": "Alex Eala looks to turn Asian Games lessons into Wuhan Open breakthrough",
-          "url": "https://www.espn.com/tennis/story/_/id/50143106/alex-eala-looks-turn-asian-games-lessons-wuhan-open-breakthrough",
-          "source": "ESPN"
-        },
-        {
-          "title": "Tennis: Alex Eala to play China's Han Shi in first round of Wuhan Open",
-          "url": "https://www.abs-cbn.com/sports/othersports/2026/10/12/tennis-alex-eala-to-play-china-s-han-shi-in-first-round-of-wuhan-open-0023",
-          "source": "ABS-CBN"
-        }
-      ]
-    },
-    {
-      "geo": "US",
-      "title": "venezuela",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Fugitive in Venezuela Money Laundering Cases to Appear in U.S. Court",
-          "url": "https://www.nytimes.com/2026/10/12/us/venezeula-money-laundering-arrest.html",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Maduro-linked fugitive nabbed over alleged scheme to cash in on Venezuelans’ basic needs",
-          "url": "https://www.foxnews.com/us/maduro-linked-fugitive-nabbed-alleged-scheme-cash-venezuelans-basic-needs",
-          "source": "Fox News"
-        },
-        {
-          "title": "Venezuelan government bribery suspect to appear in court",
-          "url": "https://www.cbsnews.com/miami/video/venezuelan-government-bribery-suspect-to-appear-in-court/",
-          "source": "CBS News"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "US",
-      "title": "gma deals and steals",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "'GMA' Deals & Steals Fall Festival",
-          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-fall-festival-137136051",
-          "source": "Good Morning America"
-        },
-        {
-          "title": "‘GMA’ Deals & Steals on fall savings",
-          "url": "https://www.yahoo.com/news/videos/gma-deals-steals-fall-savings-083322288.html",
-          "source": "Yahoo"
-        },
-        {
-          "title": "‘Good Morning America’s Tory Johnson Gets Emotional Over On-Air Family Surprise",
-          "url": "https://www.imdb.com/news/ni66049165/?ref_=nm_nwr_1",
-          "source": "IMDb"
-        }
-      ]
-    },
-    {
-      "geo": "US",
-      "title": "sophie cunningham indiana fever free agency",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Fever should part with Sophie Cunningham. She’s too turbulent to be paired with Caitlin Clark - The Athletic",
-          "url": "https://www.nytimes.com/athletic/7663983/2026/10/06/wnba-sophie-cunningham-indiana-fever-caitlin-clark/",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Former WNBA Players Suggest Fouling Sophie Cunningham Hard On Purpose During Games",
-          "url": "https://sports.yahoo.com/articles/former-wnba-players-suggest-fouling-164228048.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Sophie Cunningham's free agency puts Fever at offseason crossroads",
-          "url": "https://www.usatoday.com/story/sports/wnba/2026/10/12/sophie-cunningham-indiana-fever-offseason/92127219007/",
-          "source": "USA Today"
-        }
-      ]
-    },
-    {
       "geo": "NG",
       "title": "lagos-calabar coastal highway",
       "traffic": "500+",
@@ -245,6 +156,29 @@
           "source": "Premium Times Nigeria"
         }
       ]
+    },
+    {
+      "geo": "ZA",
+      "title": "sharks rugby disciplinary bongi mbonambi",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Bok blow: Sharks accuse Bongi of misconduct at game reserve",
+          "url": "https://www.news24.com/sport/rugby/springboks/bok-blow-sharks-accuse-bongi-of-misconduct-20261010-1072",
+          "source": "News24"
+        },
+        {
+          "title": "Double Bok World Cup winner’s future hangs in balance as ruling looms",
+          "url": "https://www.rugbypass.com/news/double-springboks-world-cup-winners-future-hangs-in-balance-as-ruling-looms-bongi-mbonambi-sharks-urc/",
+          "source": "Rugbypass.com"
+        },
+        {
+          "title": "Springboks’ double World Cup winner in trouble at the Sharks due to ill-discipline – report",
+          "url": "https://www.planetrugby.com/news/springboks-double-world-cup-winner-in-trouble-at-the-sharks-due-to-ill-discipline-report",
+          "source": "Planet Rugby"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "US",
@@ -362,19 +296,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Australia v South Africa: Bad light thwarts Durban Test despite ICC changes",
-          "url": "https://www.bbc.com/sport/cricket/articles/c623d4pzy4n2o",
-          "source": "BBC"
+          "title": "Ball by Ball Commentary & Live Score - SA vs AUS, 1st Test",
+          "url": "https://www.cricinfo.com/series/australia-in-south-africa-2026-27-1525634/south-africa-vs-australia-1st-test-1525659/ball-by-ball-commentary",
+          "source": "Cricinfo"
         },
         {
           "title": "South Africa v Australia: first men’s cricket Test, day four – live",
-          "url": "https://www.theguardian.com/sport/live/2026/oct/12/south-africa-v-australia-first-test-day-four-durban-kingsmead-cricket-ground-live-updates",
+          "url": "https://www.theguardian.com/sport/live/2026/oct/12/south-africa-v-australia-first-test-day-four-durban-kingsmead-cricket-ground-live-updates?page=with:block-6accdd318f084a13d13c9d8d",
           "source": "The Guardian"
         },
         {
-          "title": "South Africa succumb to Bazball",
-          "url": "https://www.cricbuzz.com/cricket-news/140479/south-africa-succumb-to-bazball-cricbuzzcom",
-          "source": "Cricbuzz"
+          "title": "Australia v South Africa: Bad light thwarts Durban Test despite ICC changes",
+          "url": "https://www.bbc.com/sport/cricket/articles/c623d4pzy4n2o",
+          "source": "BBC"
         }
       ]
     },
@@ -446,6 +380,72 @@
     },
     {
       "geo": "US",
+      "title": "pltr",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Is It Too Late to Buy Palantir Stock?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/too-buy-palantir-stock-185000914.html",
+          "source": "Yahoo Finance"
+        },
+        {
+          "title": "Machine learning algorithm predicts Palantir stock price on October 31, 2026",
+          "url": "https://finbold.com/machine-learning-algorithm-predicts-palantir-stock-price-on-october-31-2026/",
+          "source": "Finbold"
+        },
+        {
+          "title": "History Says This Will Happen to Palantir Stock by 2028",
+          "url": "https://www.fool.com/investing/2026/10/11/history-says-this-will-happen-to-palantir-stock-by/",
+          "source": "The Motley Fool"
+        }
+      ]
+    },
+    {
+      "geo": "US",
+      "title": "asts stock",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "AST SpaceMobile Has $3.7 Billion in Liquidity and No Commercial Revenue. Here's How to Value That.",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-3-7-billion-162500739.html",
+          "source": "Yahoo Finance"
+        },
+        {
+          "title": "AST SpaceMobile gains after Deutsche Bank says the SpaceX spectrum threat is misguided (ASTS:NASDAQ)",
+          "url": "https://seekingalpha.com/news/4652027-ast-spacemobile-gains-after-deutsche-bank-says-the-spacex-spectrum-threat-is-misguided",
+          "source": "Seeking Alpha"
+        },
+        {
+          "title": "AST SpaceMobile Stock Is Down on SpaceX News—and It Shouldn’t Be",
+          "url": "https://www.barrons.com/articles/ast-spacemobile-stock-spacex-wireless-spectrum-8f51bd54",
+          "source": "Barron's"
+        }
+      ]
+    },
+    {
+      "geo": "US",
+      "title": "mrna stock",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Why Did MRNA, HUM, LITE Stocks Surge To 52-Week Highs Last Week?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-did-mrna-hum-lite-030308934.html",
+          "source": "Yahoo Finance"
+        },
+        {
+          "title": "Moderna Stock Skyrockets on Reports of U.S. Cancer Vaccine Initiative",
+          "url": "https://www.barchart.com/story/news/5459566/moderna-stock-skyrockets-on-reports-of-u-s-cancer-vaccine-initiative",
+          "source": "Barchart.com"
+        },
+        {
+          "title": "Moderna Now Trades 61% Above Wall Street's Average Price Target. Should You Sell?",
+          "url": "https://www.fool.com/investing/2026/10/10/moderna-now-trades-61-percent-above-price-target/",
+          "source": "The Motley Fool"
+        }
+      ]
+    },
+    {
+      "geo": "US",
       "title": "cmg stock",
       "traffic": "200+",
       "news": [
@@ -468,67 +468,67 @@
     },
     {
       "geo": "US",
-      "title": "decart",
+      "title": "onds stock",
       "traffic": "200+",
       "news": [
         {
-          "title": "Exclusive | Amazon in Talks to Buy AI Startup Decart for Around $7 Billion",
-          "url": "https://www.wsj.com/business/deals/amazon-in-talks-to-buy-ai-startup-decart-for-around-7-billion-9433abad",
-          "source": "WSJ"
+          "title": "Ondas Is Assembling A Defense Prime, Buy",
+          "url": "https://seekingalpha.com/article/4953469-ondas-stock-assembling-a-defense-prime-buy",
+          "source": "Seeking Alpha"
         },
         {
-          "title": "Amazon in talks to acquire AI startup Decart for $7 billion",
-          "url": "https://qz.com/amazon-decart-acquisition-talks-7-billion-101226",
-          "source": "Quartz"
+          "title": "What Is The One Risk Every Ondas Investor Should Know?",
+          "url": "https://www.trefis.com/stock/onds/articles/617949/what-is-the-one-risk-every-ondas-investor-should-know/2026-10-08",
+          "source": "Trefis"
         },
         {
-          "title": "Amazon emerges as potential buyer of Israeli AI startup Decart at $7 billion",
-          "url": "https://www.calcalistech.com/ctechnews/article/ec25jzet0",
-          "source": "CTech"
+          "title": "Ondas (NASDAQ:ONDS) Coverage Initiated by Analysts at Citizens Jmp",
+          "url": "https://www.marketbeat.com/instant-alerts/analyst-ondas-nasdaq-onds-stock-rated-market-outperform-in-new-coverage-at-citizens-jmp-2026-10-05/",
+          "source": "MarketBeat"
         }
       ]
     },
     {
       "geo": "US",
-      "title": "charles iii",
+      "title": "xrpn",
       "traffic": "200+",
       "news": [
         {
-          "title": "Queen reflects on reading 'forbidden' Lady Chatterley's Lover under the pillow",
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/queen-reflects-reading-forbidden-lady-050041580.html",
-          "source": "Yahoo"
+          "title": "XRP’s next Wall Street expansion comes with an unexpected complication from Ripple",
+          "url": "https://cryptoslate.com/xrps-next-wall-street-expansion-comes-with-an-unexpected-complication-from-ripple/",
+          "source": "CryptoSlate"
         },
         {
-          "title": "Why Queen Camilla Dislikes One of King Charles's Habits, Which Often Leaves Him \"Roaring With Laughter\"",
-          "url": "https://www.marieclaire.com/celebrity/royals/queen-camilla-dislikes-king-charles-habit-roaring-with-laughter/",
-          "source": "Marie Claire"
+          "title": "Evernorth XRPN vs XRP: Which Is the Better Buy?",
+          "url": "https://247wallst.com/investing/cryptocurrency/2026/10/10/evernorth-xrpn-vs-xrp-which-is-the-better-buy/",
+          "source": "24/7 Wall St."
         },
         {
-          "title": "Queen Camilla Secretly Read 'Forbidden' Romance as Teen",
-          "url": "https://www.morninghoney.com/p/something-forbidden-you-want-it-queen-camilla-reveals-she-read-lady-chatterley-lover-under-pillow-as-teen",
-          "source": "Morning Honey"
+          "title": "XRP news: SPAC tracking Ripple-linked token jumps nearly 300%",
+          "url": "https://www.coindesk.com/markets/2026/10/05/xrp-treasury-spac-surges-nearly-300-ahead-of-evernorth-merger",
+          "source": "CoinDesk"
         }
       ]
     },
     {
       "geo": "US",
-      "title": "wang xinyu",
+      "title": "associated press",
       "traffic": "200+",
       "news": [
         {
-          "title": "Tennis bad boy batters racket and cuts hand… then wins",
-          "url": "https://www.telegraph.co.uk/tennis/2026/10/12/tennis-bad-boy-batters-racket-and-cuts-hand-then-wins/",
-          "source": "The Telegraph"
+          "title": "Linder’s 2026-27 preseason Associated Press women’s basketball ballot",
+          "url": "http://www.thegazette.com/sports/college/iowa-hawkeyes/linder-s-2026-27-preseason-associated-press-women-s-basketball-ballot/article_5169c7c7-c4e1-4743-872e-5e236c67d115.html",
+          "source": "The Gazette"
         },
         {
-          "title": "October 13, 2026: Maiar Sherif Ahmed Abdelaziz vs Maja Chwalinska: Set 2 Winner Tennis Prediction Market",
-          "url": "https://robinhood.com/us/en/prediction-markets/tennis/events/maiar-sherif-ahmed-abdelaziz-vs-maja-chwalinska-set-2-winner-oct-13-2026/",
-          "source": "Robinhood"
+          "title": "Photos of NFL action from London to Seattle in Week 5",
+          "url": "https://apnews.com/photo-gallery/photos-nfl-action-london-seattle-week-5-e52783d03a7f46b8901deef3b3ae8990",
+          "source": "AP News"
         },
         {
-          "title": "Alexander Bublik smashes racket five times and injures himself in wild outburst",
-          "url": "https://www.express.co.uk/sport/tennis/2256267/Alexander-Bublik-Shanghai-Masters-racket-smash-outburst-injury",
-          "source": "Daily Express"
+          "title": "How to watch every Sunday NFL football game during Week 5 of the 2026 season",
+          "url": "https://sports.yahoo.com/nfl/article/how-to-watch-every-sunday-nfl-football-game-during-week-5-of-the-2026-season-160410323.html",
+          "source": "Yahoo Sports"
         }
       ]
     },
@@ -577,10 +577,6 @@
       "why": "unsafe: 'fire'"
     },
     {
-      "title": "champions league",
-      "why": "unsafe: 'missing'"
-    },
-    {
       "title": "atalanta vs venezia prediction",
       "why": "unsafe: 'Betting'"
     },
@@ -589,12 +585,12 @@
       "why": "unsafe: 'killed'"
     },
     {
-      "title": "businesstech",
-      "why": "unsafe: 'fire'"
+      "title": "john wayne",
+      "why": "unsafe: 'Death'"
     },
     {
-      "title": "data center",
-      "why": "unsafe: 'attack'"
+      "title": "fema",
+      "why": "unsafe: 'flood'"
     }
   ],
   "errors": {}
