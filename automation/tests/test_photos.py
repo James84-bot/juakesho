@@ -38,3 +38,22 @@ class Photos(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Batches(unittest.TestCase):
+    def test_cut_off_reply_is_retried_in_halves(self):
+        import draft
+        calls = []
+
+        def call(system, user, max_tokens=0, model=None):
+            n = user.count('"id":')
+            calls.append(n)
+            if n > 2:
+                raise RuntimeError("Anthropic API: reply was cut off at max_tokens (raise max_tokens)")
+            return json.dumps({"posts": [{"id": f"x{len(calls)}"}]})
+        slots = [{"id": f"s{i}", "template": "sauti", "lane": "everyone", "publish_at": "2026-10-12T07:00:00+03:00"} for i in range(4)]
+        with mock.patch.object(draft, "call_claude", call), \
+                mock.patch.object(draft, "build_prompt", lambda w, b, l, e, scripts=False: ("s", json.dumps(b))):
+            got = draft._draft_batch("2026-W42", slots, {}, [])
+        self.assertEqual(calls, [4, 2, 2])
+        self.assertEqual(len(got), 2)

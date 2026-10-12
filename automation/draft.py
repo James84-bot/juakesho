@@ -843,6 +843,21 @@ def repair(week_label: str, slots: list[dict], lanes: dict, posts: list[dict], r
     return posts, reports
 
 
+def _draft_batch(week_label: str, batch: list[dict], lanes: dict, examples: list[dict]) -> list[dict]:
+    """One writer call. If the reply is cut off (a big carousel with Reel beats), the batch is halved and retried,
+    so a long batch costs one extra call instead of the whole run."""
+    system, user = build_prompt(week_label, batch, lanes, examples, scripts=False)
+    try:
+        return extract_json(call_claude(system, user, max_tokens=12000)).get("posts", [])
+    except RuntimeError as e:
+        if "cut off" not in str(e) or len(batch) < 2:
+            raise
+        half = len(batch) // 2
+        print(f"  reply cut off for {len(batch)} posts: drafting them in two halves")
+        return (_draft_batch(week_label, batch[:half], lanes, examples) +
+                _draft_batch(week_label, batch[half:], lanes, examples))
+
+
 def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = False) -> tuple[list[dict], dict]:
     if mock:
         result = mock_draft(slots)
@@ -850,8 +865,7 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
         examples = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"][:3]
         result = {"posts": [], "scripts": {}}
         for batch in batches(slots, size=6 if provider() == "gemini" else 4):
-            system, user = build_prompt(week_label, batch, lanes, examples, scripts=False)
-            result["posts"] += extract_json(call_claude(system, user, max_tokens=9000)).get("posts", [])
+            result["posts"] += _draft_batch(week_label, batch, lanes, examples)
         result["scripts"] = write_scripts(week_label, result["posts"])
 
     posts = _merge(slots, result.get("posts", []))
