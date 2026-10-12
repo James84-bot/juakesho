@@ -1,4 +1,4 @@
-{#- Jua Asks — story poll (1080x1920). Fields: hook, question, options (2), cta -#}
+{#- Your Say — story poll (1080x1920). Fields: hook, question, options (2), cta -#}
 {% extends "base.html.j2" %}
 {% block style %}
 .top { top: 220px; }
@@ -13,7 +13,7 @@
 .cta { margin-top: 44px; }
 .foot { bottom: 250px; }
 {% endblock %}
-{% block top %}<span class="tag">Jua Asks</span><span class="meta">Poll</span>{% endblock %}
+{% block top %}<span class="tag">Your Say</span><span class="meta">Poll</span>{% endblock %}
 {% block content %}
   <p class="label">{{ hook }}</p>
   <h1 class="display q">{{ question | mark }}</h1>

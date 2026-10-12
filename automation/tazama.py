@@ -37,7 +37,7 @@ RIGHTS = [
     ("quote", re.compile(r"^\s*(nukuu|quote|news)\b[\s:,-]*(.+)$", re.I)),
 ]
 
-TAZAMA_RULES = """You write "Tazama Hii" Reels for JUA KESHO: informed ordinary Kenyans who show a real clip and say what it
+TAZAMA_RULES = """You write "Tazama Hii" Reels for WANJIKU ASKS: informed ordinary Kenyans who show a real clip and say what it
 means, with receipts. You get: the owner's note on what the clip is, how we may use it (rights), the credit, the clip
 length, the transcript with timestamps (may be empty), and this week's real headlines.
 
@@ -72,7 +72,7 @@ def parse_caption(text: str) -> dict | None:
         if m:
             rest = m.group(2).strip()
             url = re.search(r"https?://\S+", rest)
-            credit = re.sub(r"https?://\S+", "", rest).strip(" ,;-") if kind != "own" else "Jua Kesho"
+            credit = re.sub(r"https?://\S+", "", rest).strip(" ,;-") if kind != "own" else "Wanjiku Asks"
             if kind != "own" and len(credit) < 2:
                 return None   # permission or a quote must say from whom
             return {"rights": kind, "credit": credit[:60], "source": url.group(0) if url else "",
@@ -200,7 +200,7 @@ def frame_html(post: dict, info: dict, bx: tuple[int, int, int, int]) -> str:
     import render
     x, y, w, h = bx
     credit = (f"📹 {info['credit']} · used with permission" if info["rights"] == "permission" else
-              "📹 Jua Kesho" if info["rights"] == "own" else f"📺 Clip: {info['credit']} · short excerpt for commentary")
+              "📹 Wanjiku Asks" if info["rights"] == "own" else f"📺 Clip: {info['credit']} · short excerpt for commentary")
     logo = (render.LOGO / "wordmark-on-dark.svg").as_uri()
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{bk.font_faces(render.FONTS)}
 html,body{{margin:0;width:1080px;height:1920px;background:#0E0C0B;color:#fff;font-family:Inter,sans-serif;overflow:hidden}}

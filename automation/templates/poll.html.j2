@@ -12,7 +12,7 @@
   {{ confetti(W, H, seed, n=12, avoid=[(40, 170, 1000, 1200)], rmax=44) }}
 {% endblock %}
 {% block content %}
-  <span class="pill series">Jua Asks</span>
+  <span class="pill series">Your Say</span>
   <h1 class="display q">{{ question }}</h1>
   <div class="opts">{% set oc = [C.jua, C.pwani, C.waridi] %}{% for o in options %}<span class="display" style="background: {{ oc[loop.index0] }}; border-radius: {{ radius(seed + loop.index) }}">{{ o }}</span>{% endfor %}</div>
   <p class="hand cta">{{ cta }}</p>

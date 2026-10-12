@@ -363,7 +363,7 @@ class QualitySystemTests(unittest.TestCase):
                 "claim": "Africa is one country.", "who": "a viral post", "claim_source": "Viral X post, May 2026 (link)",
                 "verdict": "false", "truth": "54 countries.", "proof": ["UN lists 54 African member states.", "Over 2,000 languages."],
                 "pride": "One continent. 54 flags.", "source": "un.org member states",
-                "caption": "Set It Straight. Send this to a friend.\n\n#JuaKesho"}
+                "caption": "Set It Straight. Send this to a friend.\n\n#WanjikuAsks"}
         post.update(kw)
         return post
 
@@ -398,7 +398,7 @@ class QualitySystemTests(unittest.TestCase):
     def test_real_people_photos_need_rights(self):
         spot = {"id": "2026-w41-d5-spotlight", "template": "spotlight", "kind": "Artist", "name": "Amina", "country": "Kenya",
                 "what": "Makes music.", "why": "Proof our sound travels.", "cta": "Stream her.", "source": "her site",
-                "symbol": "music", "caption": "Put Us On. Share this.\n\n#JuaKesho"}
+                "symbol": "music", "caption": "Put Us On. Share this.\n\n#WanjikuAsks"}
         self.assertTrue(guard.check({**spot, "person_photo": "people/amina.jpg", "photo_rights": "permission from her manager, Oct 2026"}).ok)
         self.assertTrue(any("photo_rights" in e for e in guard.check({**spot, "person_photo": "people/amina.jpg"}).errors))
         self.assertTrue(any("must be" in e for e in guard.check({**spot, "person_photo": "https://instagram.com/x.jpg"}).errors))

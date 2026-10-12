@@ -18,7 +18,7 @@ NOW = dt.datetime(2026, 10, 12, 20, tzinfo=dt.timezone(dt.timedelta(hours=3)))
 class Tazama(unittest.TestCase):
     def test_caption_must_say_where_the_clip_came_from(self):
         self.assertEqual(tazama.parse_caption("ruhusa @kevo254 DM 12 Oct\nMCA road promise")["rights"], "permission")
-        self.assertEqual(tazama.parse_caption("yangu\nwe filmed the queue")["credit"], "Jua Kesho")
+        self.assertEqual(tazama.parse_caption("yangu\nwe filmed the queue")["credit"], "Wanjiku Asks")
         q = tazama.parse_caption("nukuu Citizen TV https://youtu.be/x\nCS on teargas")
         self.assertEqual((q["rights"], q["credit"], q["source"]), ("quote", "Citizen TV", "https://youtu.be/x"))
         self.assertIsNone(tazama.parse_caption("check this out"))
@@ -78,14 +78,14 @@ class Action(unittest.TestCase):
         import pipeline
         post = {"id": "w-a", "template": "sauti", "kicker": "Taxpayers", "line": "We pay *4.25%* in levies.",
                 "fact": "1.5% housing levy and 2.75% SHIF, Finance Act 2023.", "source": "https://kra.go.ke",
-                "photo_query": "payslip Kenya", "message": "We pay levies every month.", "caption": "What do we get? #JuaKesho"}
+                "photo_query": "payslip Kenya", "message": "We pay levies every month.", "caption": "What do we get? #WanjikuAsks"}
         self.assertTrue(any("no `action`" in e for e in guard.check(post).errors))
         self.assertTrue(any("vague" in e for e in guard.check({**post, "action": "Stay informed."}).errors))
         ok = {**post, "action": "Ask your MP what the levy built: parliament.go.ke"}
         self.assertFalse([e for e in guard.check(ok).errors if "action" in e])
         cap = pipeline.caption_for(ok)
         self.assertIn("👉 Ask your MP", cap)
-        self.assertTrue(cap.rstrip().endswith("#JuaKesho"))   # the action sits above the hashtags
+        self.assertTrue(cap.rstrip().endswith("#WanjikuAsks"))   # the action sits above the hashtags
 
 
 if __name__ == "__main__":
