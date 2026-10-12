@@ -1,0 +1,15 @@
+{
+  "note": "Names Kenyans already use. kind: self (they chose it), neutral (factual or affectionate: fine in our voice), public-mocking (only as a quote of what the public says, about public conduct), slogan (campaign slogans: never in our voice; only inside a quoted claim we are checking). Every nickname needs the real name in the same post. Add entries here; the writer and the checker read this file.",
+  "names": [
+    {"nickname": "The Botanist", "name": "William Ruto", "match": "Ruto", "office": "President of Kenya", "kind": "neutral",
+     "why": "He holds a PhD in plant ecology from the University of Nairobi."},
+    {"nickname": "Zakayo", "name": "William Ruto", "match": "Ruto", "office": "President of Kenya", "kind": "public-mocking",
+     "why": "The tax collector Zacchaeus: a nickname from the tax protests. Quote it as what Kenyans say, then show the tax facts."},
+    {"nickname": "Kasongo", "name": "William Ruto", "match": "Ruto", "office": "President of Kenya", "kind": "public-mocking",
+     "why": "From a song turned online meme. Quote only."},
+    {"nickname": "Riggy G", "name": "Rigathi Gachagua", "match": "Gachagua", "office": "former Deputy President", "kind": "self",
+     "why": "He uses it himself."},
+    {"nickname": "Wantam", "kind": "slogan", "why": "'One term': an opposition campaign slogan."},
+    {"nickname": "Tutam", "kind": "slogan", "why": "'Two terms': a ruling-side campaign slogan."}
+  ]
+}

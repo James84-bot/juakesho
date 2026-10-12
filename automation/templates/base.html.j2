@@ -1,5 +1,9 @@
-{#- Shared frame for every Jua Kesho design.
-    Child templates fill: art (SVG shapes behind), content (HTML), and set W/H. -#}
+{#- Shared frame for every Jua Kesho design: the editorial system.
+    Grid: 72px margins. Top bar (series tag + meta), content in one column, footer rule + logo.
+    Type: Inter Tight (headlines, labels), Inter (text). Colour: ink carries the design, gold is the
+    one highlight, red/green carry meaning. No decoration: a photo, type and rules do the work.
+    Child templates fill: style, top (tag + meta), content. A real photo (photo_uri) sits behind the
+    top of the canvas; templates set --ph (photo height) and the content starts over its faded edge. -#}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,135 +13,151 @@
 :root {
   {% for k, v in colors.items() %}--{{ k }}: {{ v }};
   {% endfor %}
+  {% for fam, shades in palette.items() %}{% for s, v in shades.items() %}--{{ fam }}-{{ s }}: {{ v }}; {% endfor %}
+  {% endfor %}
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html, body { background: #777; }
+{#- Theme per background: foreground, softer text, muted meta, rules, the accent for labels, the tag -#}
+{% set T = {
+  "usiku":  ("var(--ink-50)", "var(--ink-300)", "var(--ink-400)", "var(--ink-800)", "var(--shuka-400)", "var(--shuka-600)", "#fff"),
+  "chai":   ("#fff", "var(--chai-50)", "var(--chai-100)", "rgba(255,255,255,.26)", "#fff", "var(--ink-950)", "#fff"),
+  "shuka":  ("#fff", "var(--shuka-50)", "var(--shuka-100)", "rgba(255,255,255,.32)", "#fff", "var(--ink-950)", "#fff"),
+  "jua":    ("#fff", "var(--shuka-50)", "var(--shuka-100)", "rgba(255,255,255,.32)", "#fff", "var(--ink-950)", "#fff"),
+  "maziwa": ("var(--ink-900)", "var(--ink-700)", "var(--ink-500)", "var(--ink-200)", "var(--shuka-600)", "var(--shuka-600)", "#fff"),
+}.get(bg_name, ("var(--ink-50)", "var(--ink-300)", "var(--ink-400)", "var(--ink-800)", "var(--shuka-400)", "var(--shuka-600)", "#fff")) %}
 .canvas {
   position: relative; overflow: hidden;
   width: {{ W }}px; height: {{ H }}px;
-  background: {{ bg }}; color: {{ ink }};
-  font-family: "Figtree", system-ui, sans-serif;
+  background: {{ bg }}; color: {{ T[0] }};
+  --bg: {{ bg }}; --fg: {{ T[0] }}; --soft: {{ T[1] }}; --muted: {{ T[2] }}; --line: {{ T[3] }}; --accent: {{ T[4] }};
+  --tag-bg: {{ T[5] }}; --tag-ink: {{ T[6] }};
+  --mark-bg: {{ 'var(--ink-950)' if bg_name in ('shuka', 'jua', 'chai') else 'var(--shuka-600)' }}; --mark-ink: #fff;
+  --m: {{ pad | default(72) }}px; --ph: 0px;
+  font-family: "Inter", system-ui, sans-serif; font-feature-settings: "ss01" 0, "cv11" 1;
+  -webkit-font-smoothing: antialiased;
 }
-.backdrop, .art, .grain { position: absolute; inset: 0; width: 100%; height: 100%; }
-.backdrop { overflow: visible; }
-/* Precomputed noise tile (render.py): same print-grain look, a fraction of the cost of a live filter */
-.grain { background: url("{{ grain_uri }}"); background-size: 256px 256px; mix-blend-mode: multiply; opacity: .16; pointer-events: none; }
-.layer { position: absolute; inset: 0; padding: {{ pad | default(84) }}px; }
-.display { font-family: "Unbounded", sans-serif; font-weight: 800; letter-spacing: -.03em; line-height: .98; }
-.hand { font-family: "Caveat", cursive; font-weight: 700; line-height: 1; }
-.body { font-size: 34px; line-height: 1.32; font-weight: 500; }
-.pill {
-  display: inline-block; padding: 12px 24px; border-radius: 999px;
-  font-family: "Unbounded", sans-serif; font-weight: 700; font-size: 22px; letter-spacing: .02em;
-}
-.foot {
-  position: absolute; left: {{ pad | default(84) }}px; right: {{ pad | default(84) }}px; bottom: 60px;
-  display: flex; justify-content: space-between; align-items: center;
-  font-family: "Unbounded", sans-serif; font-weight: 700; font-size: 22px;
-}
-.foot img { height: 40px; }
-/* Glass mode: frosted cards over aurora colour */
-.glass {
-  background: rgba(255, 255, 255, .13);
-  -webkit-backdrop-filter: blur(26px) saturate(160%); backdrop-filter: blur(26px) saturate(160%);
-  border: 2px solid rgba(255, 255, 255, .38);
-  box-shadow: 0 24px 60px rgba(10, 5, 25, .35), inset 0 1px 0 rgba(255, 255, 255, .45);
-  border-radius: 36px; color: #fff;
-}
-.glass--light { background: rgba(255, 255, 255, .55); color: var(--usiku); border-color: rgba(255, 255, 255, .8); }
-.sticker {
-  position: absolute; padding: 12px 22px; border-radius: 14px; border: 4px solid var(--usiku);
-  font-family: "Unbounded", sans-serif; font-weight: 800; font-size: 26px; letter-spacing: .01em;
-  box-shadow: 6px 7px 0 var(--usiku);
-}
-.hook { font-family: "Caveat", cursive; font-weight: 700; line-height: 1; }
-/* The post's symbol, huge and faint behind the glass (blurred where cards cover it, crisp where they don't) */
-.ghost { position: absolute; width: 980px; height: 980px; right: -250px; bottom: -150px; opacity: {{ '.13' if dark else '.08' }};
-  transform: rotate(-9deg); pointer-events: none; }
-.symbol { position: absolute; filter: drop-shadow(0 18px 30px rgba(10, 5, 25, .35)); }
-{% if photo_uri is defined %}
-/* Real photo, duotoned into the brand: shadows become usiku, highlights the accent; colour clouds glow on top */
-.photo { position: absolute; inset: 0; background-size: cover; background-position: center; filter: grayscale(1) contrast(1.12) brightness(1.02); }
-.photo-dark { position: absolute; inset: 0; background: var(--usiku); mix-blend-mode: lighten; }
-.photo-light { position: absolute; inset: 0; background: {{ photo_tone }}; mix-blend-mode: multiply; }
-.canvas > .backdrop { mix-blend-mode: soft-light; opacity: .85; }
-.photo-fade { position: absolute; inset: 0; background: linear-gradient(rgba(29, 20, 51, .72), rgba(29, 20, 51, .08) 38%, rgba(29, 20, 51, .12) 62%, rgba(29, 20, 51, .82)); }
-.credit { position: absolute; right: 34px; bottom: 104px; font: 600 15px "Figtree"; color: #fff; opacity: .8; letter-spacing: .02em; }
-{% endif %}
-.person-credit { position: absolute; right: 34px; bottom: 104px; font: 600 15px "Figtree"; color: {{ ink }}; opacity: .85; letter-spacing: .02em; }
+.backdrop, .art { position: absolute; inset: 0; width: 100%; height: 100%; }
+/* ---- Photo: real colour, full width, fading into the background where the words begin ---- */
+.photo { position: absolute; left: 0; right: 0; top: 0; height: var(--ph); background-size: cover; background-position: center 30%;
+  filter: saturate(.94) contrast(1.04); }
+.photo-fade { position: absolute; left: 0; right: 0; top: 0; height: var(--ph);
+  background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 92%, transparent) 0, color-mix(in srgb, var(--bg) 62%, transparent) 11%, transparent 24%,
+                              transparent 46%, color-mix(in srgb, var(--bg) 82%, transparent) 84%, var(--bg) 100%); }
+/* Photo credit: small, vertical, in the right margin over the photo, clear of the text column */
+.credit { position: absolute; right: 26px; top: 150px; white-space: nowrap;
+  writing-mode: vertical-rl; rotate: 180deg; font: 500 15px "Inter"; color: #fff; opacity: .85; letter-spacing: .02em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .7); }
+/* ---- Frame ---- */
+.top { position: absolute; left: var(--m); right: var(--m); top: 64px; display: flex; justify-content: space-between; align-items: center; z-index: 2; }
+.tag { display: inline-block; padding: 11px 16px 10px; border-radius: 4px; background: var(--tag-bg); color: var(--tag-ink);
+  font: 800 22px/1 "Inter Tight"; letter-spacing: .08em; text-transform: uppercase; }
+.tag--red { background: var(--tag-bg); color: var(--tag-ink); }
+.tag--green { background: var(--chai-600); color: #fff; }
+.tag--ink { background: var(--ink-950); color: #fff; }
+.meta { font: 700 22px/1 "Inter Tight"; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.layer { position: absolute; inset: 0; padding: 168px var(--m) 176px; display: flex; flex-direction: column; }
+.has-photo .layer { padding-top: calc(var(--ph) - 150px); }
+.label { font: 800 22px/1.2 "Inter Tight"; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
+.display { font-family: "Inter Tight", sans-serif; font-weight: 800; letter-spacing: -.025em; line-height: 1.0; color: var(--fg); }
+.body { font: 500 32px/1.38 "Inter"; color: var(--soft); }
+.lead { font: 600 36px/1.32 "Inter"; color: var(--fg); }
+.strong { font: 700 32px/1.3 "Inter Tight"; color: var(--fg); letter-spacing: -.01em; }
+.rule { height: 2px; background: var(--line); margin: 36px 0; flex: none; transform-origin: left; }
+.gap { flex: 1 1 auto; min-height: 24px; }
+.hl { color: var(--accent); }
+/* The red marker: the words that hit hardest, chosen by the writer with *asterisks* */
+mark { background: var(--mark-bg); color: var(--mark-ink); padding: 0 .1em; margin: 0 -.02em; border-radius: .06em;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.rows { display: grid; }
+.row { display: grid; grid-template-columns: 68px 1fr; gap: 8px; padding: 22px 0; border-top: 2px solid var(--line);
+  font: 600 31px/1.32 "Inter"; color: var(--fg); }
+.row:last-child { border-bottom: 2px solid var(--line); }
+.row .n { font: 800 26px/1.5 "Inter Tight"; color: var(--accent); font-variant-numeric: tabular-nums; letter-spacing: .02em; }
+.foot { position: absolute; left: var(--m); right: var(--m); bottom: 58px; padding-top: 26px; border-top: 2px solid var(--line);
+  display: flex; justify-content: space-between; align-items: center; font: 700 22px/1 "Inter Tight"; letter-spacing: .02em; color: var(--muted); }
+.foot img { height: 30px; display: block; }
 {% block style %}{% endblock %}
-/* Legibility layer (after the templates, so it always applies; checked by the contrast QA) */
-{% if dark %}
-.glass:not(.glass--light) { background: linear-gradient(rgba(255, 255, 255, .10), rgba(255, 255, 255, .04)), rgba(29, 20, 51, .34); }
-.hook, .hand { text-shadow: 0 2px 3px rgba(10, 5, 25, .55), 0 0 18px rgba(10, 5, 25, .55); }
-{% endif %}
-.glass--light b { color: var(--usiku); }
 {{ ink_css }}
 {% if motion %}
-/* ---- Motion: entrances are staggered by --i (set below); stepped frame by frame when exporting video ---- */
-@keyframes enter { from { opacity: 0; translate: 0 46px; scale: .94; } to { opacity: 1; translate: 0 0; scale: 1; } }
-@keyframes pop { 0% { opacity: 0; scale: .2; } 70% { opacity: 1; scale: 1.14; } 100% { opacity: 1; scale: 1; } }
-@keyframes word { from { opacity: 0; translate: 0 .5em; } to { opacity: 1; translate: 0 0; } }
-@keyframes bob { 0%, 100% { translate: 0 0; rotate: -3deg; } 50% { translate: 0 -14px; rotate: 3deg; } }
+/* ---- Motion: calm and quick. Things rise into place in reading order; numbers count; rules draw. ---- */
+@keyframes enter { from { opacity: 0; translate: 0 28px; } to { opacity: 1; translate: 0 0; } }
+@keyframes word { from { opacity: 0; translate: 0 .32em; } to { opacity: 1; translate: 0 0; } }
+@keyframes draw { from { scale: 0 1; } to { scale: 1 1; } }
+@keyframes settle { from { scale: 1.08; } to { scale: 1; } }
 @keyframes tailin { from { opacity: 0; } to { opacity: 1; } }
-@keyframes drift { 0%, 100% { translate: 0 0; } 50% { translate: 40px -30px; } }
 /* The hook must be on screen from frame 0: nothing starts invisible for longer than ~0.1s */
-.layer > * { animation: enter .6s cubic-bezier(.2, .9, .3, 1.25) both; animation-delay: calc(var(--i, 0) * .12s - .15s); }
-.layer > .sticker, .layer > .stamp, .layer > .verdict { animation-name: pop; animation-duration: .55s; }
-.layer > svg.mascot { animation: enter .6s cubic-bezier(.2, .9, .3, 1.25) both calc(var(--i, 0) * .12s - .15s),
-                                 bob 2.6s ease-in-out calc(.6s + var(--i, 0) * .12s) infinite; }
-.w { display: inline-block; animation: word .4s cubic-bezier(.2, .9, .3, 1.2) both; animation-delay: calc(var(--t0, .1s) + var(--w) * .06s); }
-/* The whole colour cloud is one composited layer: blurred once, then only moved */
-.backdrop { animation: drift 9s ease-in-out infinite; will-change: translate; }
-.ghost { animation: drift 11s ease-in-out infinite reverse; will-change: translate; }
-.layer > svg.symbol { animation: pop .6s cubic-bezier(.2, .9, .3, 1.25) both calc(var(--i, 0) * .12s - .15s),
-                                 bob 3s ease-in-out calc(.7s + var(--i, 0) * .12s) infinite; }
+.layer > *, .top > * { animation: enter .5s cubic-bezier(.2, .8, .2, 1) both; animation-delay: calc(var(--i, 0) * .08s - .24s); }
+.layer > .rule { animation-name: draw; animation-duration: .7s; }
+.photo { animation: settle 1.6s cubic-bezier(.2, .8, .2, 1) both; }
+.w { display: inline-block; animation: word .4s cubic-bezier(.2, .8, .2, 1) both; animation-delay: calc(var(--t0, 0s) + var(--w) * .045s); }
+/* Legacy comics (out of rotation, still renderable) */
+.panel { animation: enter .55s cubic-bezier(.2, .8, .2, 1) both; animation-delay: calc(var(--p) * 1.7s + .1s); }
+.layer > .bub, .layer > .pnum, .layer > .punch { animation-delay: var(--bd, 0s) !important; }
 {% endif %}
 {% if reel %}
 .reel { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: {{ bg }}; }
 /* 9:16 safe zone: clear of the platform UI (top bar, right-hand buttons, bottom caption) */
 .reel .canvas { position: absolute; left: 58px; top: 330px; overflow: visible; background: transparent; transform: scale(.84); transform-origin: 0 0; }
-.reel .canvas > .grain { display: none; }
-.reel > .grain { position: absolute; inset: 0; }
 .reel .art, .reel .backdrop { overflow: visible; }
 .reel-top { position: absolute; left: 0; right: 0; top: 215px; display: flex; justify-content: center; }
-.reel-top img { height: 56px; }
+.reel-top img { height: 44px; }
 {% endif %}
 </style>
 </head>
 <body>
 {% if reel %}<div class="reel" id="reel"><div class="reel-top"><img src="{{ logo_on_dark if dark else logo_on_light }}" alt=""></div>{% endif %}
-<div class="canvas" id="canvas">
-  {% if photo_uri is defined %}<div class="photo" style="background-image: url('{{ photo_uri }}')"></div>
-  <div class="photo-dark"></div><div class="photo-light"></div>{% endif %}
+<div class="canvas{{ ' has-photo' if photo_uri is defined }}" id="canvas">
+  {% if photo_uri is defined %}<div class="photo" style="background-image: url('{{ photo_uri }}')"></div><div class="photo-fade"></div>{% endif %}
   <svg class="backdrop" viewBox="0 0 {{ W }} {{ H }}" preserveAspectRatio="none">{% block backdrop %}{% endblock %}</svg>
-  {% if photo_uri is defined %}<div class="photo-fade"></div>{% endif %}
-  {% if symbol_ghost is defined %}<svg class="ghost" viewBox="0 0 400 400" aria-hidden="true">{{ symbol_ghost }}</svg>{% endif %}
-  <svg class="art" viewBox="0 0 {{ W }} {{ H }}" preserveAspectRatio="none">{{ GLOW }}{% block art %}{% endblock %}</svg>
-  <div class="layer">{% block content %}{% endblock %}{% if photo_uri is defined and photo_credit %}<span class="credit">{{ photo_credit }}</span>{% endif %}{% if person_credit is defined and person_credit %}<span class="credit person-credit">{{ person_credit }}</span>{% endif %}{% if symbol_box is defined %}
-    <svg class="symbol" viewBox="-20 -20 440 440" style="left: {{ symbol_box[0] }}px; top: {{ symbol_box[1] }}px; width: {{ symbol_box[2] }}px; height: {{ symbol_box[2] }}px">{{ symbol_hero }}</svg>{% endif %}</div>
+  <svg class="art" viewBox="0 0 {{ W }} {{ H }}" preserveAspectRatio="none">{% block art %}{% endblock %}</svg>
+  <div class="layer">{% block content %}{% endblock %}</div>
+  <div class="top">{% block top %}{% endblock %}</div>
+  {% if photo_uri is defined and photo_credit %}<span class="credit">{{ photo_credit }}</span>{% endif %}
   {% block footer %}
   <div class="foot">
-    <img src="{{ logo_on_dark if dark else logo_on_light }}" alt="">
+    <img src="{{ logo_on_dark if dark else logo_on_light }}" alt="Jua Kesho">
     <span>{{ brand.handle }}</span>
   </div>
   {% endblock %}
-  <div class="grain"></div>
 </div>
-{% if reel %}<div class="grain"></div></div>{% endif %}
+{% if reel %}</div>{% endif %}
+<script>
+  // Auto-fit: if the column runs into the footer zone, shrink headlines first (to 72%), then all text (to 86%).
+  // Runs once the fonts are in (render.py and video.py call it), so the measurement is real.
+  window.__fit = () => {
+    const layer = document.querySelector('.layer');
+    if (!layer || !layer.children.length) return 1;
+    const cs = getComputedStyle(layer);
+    const limit = layer.clientHeight - parseFloat(cs.paddingBottom);
+    const over = () => Math.max(...[...layer.children].map((c) => c.offsetTop + c.offsetHeight)) - limit > 0.5;
+    if (!over()) return 1;
+    const all = [layer, ...layer.querySelectorAll('*')].filter((el) => !(el instanceof SVGElement));
+    const base = new Map(all.map((el) => [el, parseFloat(getComputedStyle(el).fontSize)]));
+    const heads = all.filter((el) => el.matches('.display, .display *'));
+    const set = (els, k) => els.forEach((el) => { el.style.fontSize = (base.get(el) * k).toFixed(2) + 'px'; });
+    let kh = 1, kb = 1;
+    // smallest elements first so children don't inherit twice: explicit px on every element
+    while (over() && kh > 0.72) { kh -= 0.02; set(heads, kh); }
+    const rest = all.filter((el) => !heads.includes(el));
+    while (over() && kb > 0.86) { kb -= 0.02; set(rest, kb); }
+    return Math.min(kh, kb);
+  };
+</script>
 {% if motion %}
 <script>
-  // Stagger order = document order of the layer's children. Headlines are split into words.
-  document.querySelectorAll('.layer > *').forEach((el, i) => el.style.setProperty('--i', i));
-  // Comic bubble tails live in the backdrop SVG: fade each in with its own bubble (same document order)
+  // Stagger order = reading order: the top bar first, then the column. Headlines are split into words.
+  [...document.querySelectorAll('.top > *'), ...document.querySelectorAll('.layer > *')].forEach((el, i) => el.style.setProperty('--i', i));
   const bubs = [...document.querySelectorAll('.layer > .bub')];
   document.querySelectorAll('path.tail').forEach((t, k) => {
+    const bd = bubs[k] ? parseFloat(bubs[k].style.getPropertyValue('--bd')) : NaN;
     const i = bubs[k] ? parseFloat(bubs[k].style.getPropertyValue('--i')) || 0 : 0;
-    t.style.animation = `tailin .3s ease-out ${i * 0.12 + 0.05}s both`;
+    t.style.animation = `tailin .3s ease-out ${(isNaN(bd) ? i * 0.12 + 0.05 : bd + 0.18).toFixed(2)}s both`;
   });
   document.querySelectorAll('.layer h1').forEach((h) => {
     const parent = h.closest('.layer > *');
-    const t0 = Math.max(0, (parseFloat(getComputedStyle(parent).getPropertyValue('--i')) || 0) * 0.12 - 0.1);
+    // the first headline is the hook: its words start at frame 0
+    const t0 = h === document.querySelector('.layer h1') ? 0 : Math.max(0, (parseFloat(getComputedStyle(parent).getPropertyValue('--i')) || 0) * 0.08 - 0.24);
     let n = 0;
     const walk = (node) => {
       [...node.childNodes].forEach((c) => {
@@ -156,7 +176,18 @@ html, body { background: #777; }
       });
     };
     walk(h);
-    h.style.animation = 'none';  // the words animate instead of the whole block
+    if (parent === h) h.style.animation = 'none';  // the words animate instead of the whole block
+  });
+  // Numbers count up (Sh304bn rolls from Sh0bn): the size of a number lands harder when you watch it grow
+  const ticks = [];
+  document.querySelectorAll('[data-count]').forEach((el) => {
+    const m = el.textContent.trim().match(/^(\D*?)([\d][\d,]*\.?\d*)(.*)$/);
+    if (!m) return;
+    const [, pre, num, post] = m, target = parseFloat(num.replace(/,/g, '')), dec = (num.split('.')[1] || '').length;
+    const fmt = (v) => (num.includes(',') ? v.toLocaleString('en-US', {minimumFractionDigits: dec, maximumFractionDigits: dec}) : v.toFixed(dec));
+    const t0 = 0.25, t1 = 1.45;
+    ticks.push((t) => { const k = Math.min(1, Math.max(0, (t - t0) / (t1 - t0))); const e = 1 - Math.pow(1 - k, 3);
+                        el.textContent = pre + fmt(target * e) + post; });
   });
   window.__motionEnd = () => {
     let end = 0;
@@ -168,6 +199,7 @@ html, body { background: #777; }
   };
   window.__seek = (t) => {
     document.getAnimations().forEach((a) => { a.pause(); a.currentTime = t * 1000; });
+    ticks.forEach((f) => f(t));
     document.querySelectorAll('svg').forEach((s) => { if (s.pauseAnimations) { s.pauseAnimations(); s.setCurrentTime(t); } });
   };
 </script>

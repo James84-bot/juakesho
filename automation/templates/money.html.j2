@@ -2,26 +2,22 @@
     Fields: hook, number, unit, what, why, check -#}
 {% extends "base.html.j2" %}
 {% block style %}
-.series { position: absolute; top: 84px; left: 84px; background: var(--chai); color: #fff; }
-.hook { position: absolute; left: 84px; top: 180px; font-size: 58px; color: var(--jua); }
-.num { position: absolute; left: 60px; right: 60px; top: 250px; font-size: {{ fitw(number, 940, 1, 230, 0.92) }}px; color: #fff; letter-spacing: -.05em;
-  text-shadow: 0 0 60px rgba(55,201,120,.45); white-space: nowrap; }
-.unit { position: absolute; left: 84px; top: 510px; font: 800 34px "Unbounded"; color: var(--pwani); }
-{% if symbol %}.num { right: 440px; font-size: {{ fitw(number, 580, 1, 190, 0.92) }}px; }{% endif %}
-.what { position: absolute; left: 70px; right: 70px; top: 590px; padding: 34px 40px; font-size: 33px; font-weight: 700; line-height: 1.28; }
-.why { position: absolute; left: 70px; right: 70px; top: 830px; padding: 28px 40px; font-size: 29px; line-height: 1.3; }
-.why b, .check b { font-family: "Caveat"; font-size: 42px; margin-right: 10px; }
-.why b { color: var(--jua); }
-.check { position: absolute; left: 70px; right: 70px; top: 1040px; padding: 22px 36px; font-size: 26px; line-height: 1.3; }
-.check b { color: var(--chai); }
+.has-photo { --ph: 540px; }
+.num { font-size: {{ fit(number, 936, 230 if photo_uri is not defined else 190) }}px; letter-spacing: -.045em; line-height: .9;
+  color: var(--accent); white-space: nowrap; font-weight: 900; font-variant-numeric: tabular-nums; }
+.unit { margin-top: 14px; font: 800 34px/1.2 "Inter Tight"; letter-spacing: -.01em; color: var(--fg); }
+.what { margin-top: 30px; }
+.check { margin-top: 26px; font-size: 26px; }
+.check b { color: var(--fg); font-weight: 700; }
 {% endblock %}
-{% block backdrop %}{{ aurora(W, H, seed, colors=[C.chai, C.jacaranda, C.pwani, C.jua]) }}{% endblock %}
+{% block top %}<span class="tag tag--green">Follow the Money</span><span class="meta">{{ person_role if person_shown is defined and person_role is defined else 'Public money' }}</span>{% endblock %}
 {% block content %}
-  <span class="pill series">Follow the Money</span>
-  <p class="hook">{{ hook }}</p>
-  <p class="display num">{{ number }}</p>
+  <p class="label">{{ hook }}</p>
+  <p class="display num" data-count>{{ number }}</p>
   <p class="unit">{{ unit }}</p>
-  <p class="glass what">{{ what | nb }}</p>
-  <p class="glass why"><b>Why you should care:</b>{{ why | nb }}</p>
-  <p class="glass glass--light check"><b>Check it yourself:</b>{{ check | nb }}</p>
+  <p class="lead what">{{ what | nb }}</p>
+  <div class="gap"></div>
+  <p class="label">Why you should care</p>
+  <p class="strong">{{ why | nb }}</p>
+  <p class="body check"><b>Check it yourself:</b> {{ check | nb }}</p>
 {% endblock %}

@@ -263,9 +263,17 @@ class QualitySystemTests(unittest.TestCase):
     def test_set_it_straight_needs_claim_source_and_never_attacks_people(self):
         self.assertTrue(any("claim_source" in e for e in guard.check(self.base_straight(claim_source="")).errors))
         r = guard.check(self.base_straight(pride="She is a liar and a fraud."))
-        self.assertTrue(any("never attacks the person" in e for e in r.errors))
+        self.assertTrue(any("not the person" in e for e in r.errors))
+        r = guard.check(self.base_straight(pride="The governor is a thief."))
+        self.assertTrue(any("not the person" in e for e in r.errors))
         r = guard.check(self.base_straight(verdict="lies"))
         self.assertFalse(r.ok)
+
+    def test_quoted_insults_are_still_blocked(self):
+        r = guard.check(self.base_straight(claim="Kenyans are stupid and lazy people."))
+        self.assertTrue(any("not clean" in e for e in r.errors))
+        r = guard.check(self.base_straight(photo_query="drunk party crowd"))
+        self.assertTrue(any("not clean" in e for e in r.errors))
 
     def test_photo_rules(self):
         ok = guard.check(self.base_straight(photo_query="Nairobi skyline at dusk"))
@@ -282,8 +290,123 @@ class QualitySystemTests(unittest.TestCase):
         self.assertTrue(guard.check({**spot, "person_photo": "people/amina.jpg", "photo_rights": "permission from her manager, Oct 2026"}).ok)
         self.assertTrue(any("photo_rights" in e for e in guard.check({**spot, "person_photo": "people/amina.jpg"}).errors))
         self.assertTrue(any("must be" in e for e in guard.check({**spot, "person_photo": "https://instagram.com/x.jpg"}).errors))
-        money = {**self.base_straight(), "person_photo": "commons:File:X.jpg"}
-        self.assertTrue(any("only on Put Us On" in e for e in guard.check(money).errors))
+        hack = {"id": "x-hack", "template": "hack", "hook": "h", "title": "t", "moves": ["a", "b"], "payoff": "p",
+                "caption": "Save this.", "person_photo": "commons:File:X.jpg"}
+        self.assertTrue(any("only on Put Us On" in e for e in guard.check(hack).errors))
+
+    def test_public_office_holders_on_the_record(self):
+        # Allowed: a named office holder's own public statement, their licensed photo, their office, sourced facts
+        on_record = self.base_straight(who="A. Name, Cabinet Secretary (TV interview, 3 Oct 2026)",
+                                       person_photo="commons:File:A_Name_official.jpg", person_role="Cabinet Secretary")
+        self.assertTrue(guard.check(on_record).ok, guard.check(on_record).errors)
+        self.assertTrue(any("person_role" in e for e in guard.check({**on_record, "person_role": ""}).errors))
+        # Names of politicians are no longer banned; telling people how to vote is
+        self.assertTrue(guard.check(self.base_straight(who="Ruto, State House statement, 3 Oct")).ok)
+        self.assertTrue(any("party-campaigning" in e for e in guard.check(self.base_straight(pride="Vote them out in 2027.")).errors))
+        # Serious allegations must be attributed to the record
+        r = guard.check(self.base_straight(proof=["The Auditor-General found Sh2bn was looted.", "b", "c"]))
+        self.assertTrue(any("allegation" in w for w in r.warnings))
+
+    def test_nicknames_people_relate_to(self):
+        post = self.base_straight(pride="The Botanist promised. The record says otherwise.")
+        self.assertTrue(any("needs the real name" in e for e in guard.check(post).errors))
+        self.assertTrue(guard.check({**post, "who": "William Ruto, President (State House, 3 Oct)"}).ok)
+        mocking = self.base_straight(who="William Ruto, President", pride="Zakayo strikes again.")
+        self.assertTrue(any("mocking nickname" in e for e in guard.check(mocking).errors))
+        quoted = self.base_straight(who="William Ruto, President", pride='Kenyans call him "Zakayo". Here are the numbers.')
+        self.assertTrue(guard.check(quoted).ok, guard.check(quoted).errors)
+        slogan = self.base_straight(pride="Wantam!")
+        self.assertTrue(any("campaign slogan" in e for e in guard.check(slogan).errors))
+        checked = self.base_straight(claim="Wantam will fix the economy overnight.")
+        self.assertFalse(any("campaign slogan" in e for e in guard.check(checked).errors))
+
+    def test_campaigning_and_violence_blocked_civic_education_allowed(self):
+        self.assertTrue(any("party-campaigning" in e for e in guard.check(self.base_straight(pride="Vote for Ruto.")).errors))
+        self.assertTrue(guard.check(self.base_straight(pride="Register, then vote for six leaders.")).ok)
+        self.assertTrue(any("violence" in e for e in guard.check(self.base_straight(pride="Storm parliament.")).errors))
+        self.assertTrue(guard.check(self.base_straight(pride="Show up for public participation.")).ok)
+
+    def test_promise_tracker_schema(self):
+        import draft
+        sample = {**draft.MOCK_SAMPLES["promise"], "id": "w-3"}
+        self.assertTrue(guard.check(sample).ok, guard.check(sample).errors)
+        self.assertFalse(guard.check({**sample, "verdict": "lies"}).ok)
+        self.assertFalse(guard.check({**sample, "measure": "x" * 17}).ok)
+        self.assertFalse(guard.check({**sample, "source": ""}).ok)
+
+    def test_commons_scene_photos_licence_filtered_and_credited(self):
+        import photos
+        def page(i, lic, w=1600, mime="image/jpeg"):
+            return {"index": i, "imageinfo": [{"mime": mime, "width": w, "height": 1100, "url": f"https://x.test/{i}.jpg",
+                    "thumburl": f"https://x.test/{i}-t.jpg", "descriptionurl": f"https://c.test/{i}",
+                    "extmetadata": {"LicenseShortName": {"value": lic}, "Artist": {"value": f"<a>Artist {i}</a>"}}}]}
+        api = {"query": {"pages": {"1": page(1, "CC BY-SA 4.0"), "2": page(2, "CC BY 4.0", w=600),
+                                   "3": page(3, "CC BY 4.0"), "4": page(4, "CC BY-NC 2.0")}}}
+        calls = []
+        def fake_get(url, headers=None, timeout=30):
+            calls.append(url)
+            return json.dumps(api).encode() if "api.php" in url else b"JPEG"
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(photos, "_get", fake_get), \
+                mock.patch.dict(os.environ, {"PEXELS_API_KEY": ""}):
+            got = photos.fetch({"id": "w-1", "photo_query": "matatu stage Nairobi"}, Path(d))
+            self.assertEqual(Path(got["file"]).read_bytes(), b"JPEG")
+            self.assertIn("Artist 3 / Wikimedia Commons, CC BY 4.0", got["credit"])   # only file 3 qualifies
+            self.assertTrue(calls[-1].endswith("3-t.jpg"))
+            again = photos.fetch({"id": "w-1", "photo_query": "matatu stage Nairobi"}, Path(d))
+            self.assertEqual(again["credit"], got["credit"])   # cached: stable across re-renders
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(photos, "_get", side_effect=OSError("offline")):
+            self.assertIsNone(photos.fetch({"id": "w-2", "photo_query": "Nairobi"}, Path(d)))   # never raises
+
+    def test_marker_emphasis(self):
+        import render
+        self.assertEqual(str(render.mark("We pay *4.25%* & wait")), "We pay <mark>4.25%</mark> &amp; wait")
+        self.assertTrue(any("unbalanced" in e for e in guard.check(self.base_straight(truth="*54 countries.")).errors))
+
+    def test_divisive_politics_called_out_never_practised(self):
+        callout = self.base_straight(claim="Our people must not let those people take this county.",
+                                     who="A. Name, MP (rally, 3 Oct 2026)", truth="That is *tribal politics*, and hate speech is an offence.")
+        self.assertTrue(guard.check(callout).ok, guard.check(callout).errors)
+        named = self.base_straight(truth="He attacked the Kalenjins.")
+        self.assertTrue(any("names a community" in e for e in guard.check(named).errors))
+        hack = {"id": "x-hack", "template": "decode", "hook": "h", "word": "Tribe", "meaning": "m", "try_this": "t",
+                "number": "1", "caption": "Save this."}
+        self.assertTrue(any("tribe only comes up" in e for e in guard.check(hack).errors))
+
+    def test_ai_sounding_copy_blocked(self):
+        r = guard.check(self.base_straight(pride="Let's delve into it \u2014 a pivotal moment."))
+        self.assertTrue(sum("sounds AI-written" in e for e in r.errors) >= 2)
+
+    def test_evidence_log_on_publish(self):
+        import pipeline
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(pipeline, "STATE", Path(d)):
+            pipeline.record_evidence([{"id": "w-1", "status": "published", "claim": "c", "source": "s", "ink": {"1": "#FFFFFF"}}])
+            rows = [json.loads(l) for l in (Path(d) / "evidence.jsonl").read_text(encoding="utf-8").splitlines()]
+        self.assertEqual(rows, [{"id": "w-1", "claim": "c", "source": "s"}])
+
+    def test_hatutasahau_and_chapter_six_samples_pass(self):
+        import draft
+        for tpl in ("kumbuka", "scorecard"):
+            sample = {**draft.MOCK_SAMPLES[tpl], "id": f"w-{tpl}"}
+            self.assertTrue(guard.check(sample).ok, (tpl, guard.check(sample).errors))
+        bad = {**draft.MOCK_SAMPLES["scorecard"], "id": "w-s", "checks": [{"test": "x", "result": "maybe", "note": "n"}]}
+        self.assertFalse(guard.check(bad).ok)
+
+    def test_anniversary_takes_the_nearest_weekday(self):
+        import pipeline
+        posts = [{"id": f"2025-w26-d{d}-hack", "template": "hack", "publish_at": f"2025-06-{22 + d:02d}T12:00:00+03:00"} for d in range(1, 8)]
+        posts[6]["size"] = "story"
+        with mock.patch.object(pipeline, "HERE", HERE):
+            pipeline._anniversaries(posts, 2026, dt.date(2026, 6, 25).isocalendar()[1])   # 25 June 2026: anniversary week
+        # the planner works on 2026 dates; rebuild posts for that week
+        week = dt.date(2026, 6, 25).isocalendar()[1]
+        posts = [{"id": f"2026-w{week}-d{d}-hack", "template": "hack",
+                  "publish_at": dt.date.fromisocalendar(2026, week, d).isoformat() + "T12:00:00+03:00"} for d in range(1, 8)]
+        posts[6]["size"] = "story"
+        pipeline._anniversaries(posts, 2026, week)
+        hit = [p for p in posts if p["template"] == "kumbuka"]
+        self.assertTrue(hit)
+        self.assertTrue(all(dt.date.fromisoformat(p["publish_at"][:10]).isoweekday() <= 5 for p in hit))
+        self.assertTrue(any(p["remember"]["date"].endswith("-06-25") for p in hit))
 
     def test_commons_licences(self):
         import photos
@@ -297,11 +420,14 @@ class QualitySystemTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp, mock.patch.object(video, "MUSIC", Path(tmp)):
             Path(tmp, "a.mp3").write_bytes(b"x")
             Path(tmp, "tracks.json").write_text(json.dumps({"tracks": [
-                {"file": "a.mp3", "artist": "Amina", "title": "Kesho", "rights": "permission by email, Oct 2026"},
-                {"file": "b.mp3", "artist": "X", "title": "Y", "rights": ""}]}))
+                {"file": "a.mp3", "artist": "Amina", "title": "Kesho", "rights": "permission by email, Oct 2026", "clean": True},
+                {"file": "b.mp3", "artist": "X", "title": "Y", "rights": "", "clean": True},
+                {"file": "d.mp3", "artist": "Z", "title": "W", "rights": "permission by email, Oct 2026"}]}))
             Path(tmp, "b.mp3").write_bytes(b"x")
+            Path(tmp, "d.mp3").write_bytes(b"x")
             self.assertEqual(video.music_track({"track": "a.mp3"})["artist"], "Amina")
             self.assertIsNone(video.music_track({"track": "b.mp3"}))       # no rights recorded
+            self.assertIsNone(video.music_track({"track": "d.mp3"}))       # lyrics not confirmed clean
             self.assertIsNone(video.music_track({"track": "c.mp3"}))       # not registered
         cap = pl.caption_for({"caption": "Hi", "photo_credit": "Photo: A / Pexels", "track_credit": "Amina - Kesho (used with permission)"})
         self.assertEqual(cap, "Hi\n\n📷 Photo: A / Pexels\n🎵 Amina - Kesho (used with permission)")
@@ -319,10 +445,11 @@ class QualitySystemTests(unittest.TestCase):
         import re
         self.assertEqual(re.findall(r"<(/?)(\w+)", text).count(("", "b")), re.findall(r"<(/?)(\w+)", text).count(("/", "b")))
 
-    def test_photos_skip_quietly_without_a_key(self):
+    def test_photos_skip_quietly_when_no_source_answers(self):
         import photos
         post = {"id": "p1", "photo_query": "farm at sunrise"}
-        with mock.patch.dict(os.environ, {"PEXELS_API_KEY": ""}):
+        with mock.patch.dict(os.environ, {"PEXELS_API_KEY": ""}), \
+                mock.patch.object(photos, "_get", side_effect=OSError("offline")):   # no network in tests
             photos.attach([post], Path(tempfile.mkdtemp()))
         self.assertNotIn("photo_file", post)
 
@@ -346,12 +473,12 @@ class QualitySystemTests(unittest.TestCase):
         short = textfit.fit_display("Prompt", 580, 1, 190)
         long = textfit.fit_display("Supercalifragilistic", 580, 2, 190)
         self.assertLess(long, short)
-        self.assertLessEqual(textfit.width("Supercalifragilistic", long, "Unbounded", 800, -0.03), 580)
+        self.assertLessEqual(textfit.width("Supercalifragilistic", long, *textfit.DISPLAY), 580)
 
     def test_budget_cap_blocks_optional_passes(self):
         import draft
         with mock.patch.dict(draft.SPEND, {"usd": 0.4999, "calls": 5}), \
-                mock.patch.dict(os.environ, {"JUA_WEEKLY_BUDGET_USD": "0.50"}):
+                mock.patch.dict(os.environ, {"JUA_WEEKLY_BUDGET_USD": "0.50", "JUA_PROVIDER": "anthropic"}):
             self.assertFalse(draft.can_afford(10000, 5000))
             self.assertEqual(draft.critique([{"id": "x", "template": "hack"}]), {})   # skipped, no API call
         with mock.patch.dict(draft.SPEND, {"usd": 0.0, "calls": 0}):
@@ -363,10 +490,77 @@ class QualitySystemTests(unittest.TestCase):
                            "usage": {"input_tokens": 1_000_000, "output_tokens": 100_000}}).encode()
         resp = mock.MagicMock(); resp.read.return_value = body; resp.__enter__.return_value = resp
         with mock.patch.dict(draft.SPEND, {"usd": 0.0, "calls": 0}), \
-                mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "k", "JUA_MODEL": ""}), \
+                mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "k", "JUA_MODEL": "", "JUA_PROVIDER": "anthropic"}), \
                 mock.patch.object(draft.urllib.request, "urlopen", lambda req, timeout: resp):
             draft.call_claude("s", "u", model="claude-haiku-4-5-20251001")
             self.assertAlmostEqual(draft.SPEND["usd"], 1.0 + 0.5)   # $1/M in + $5/M out
+
+
+class FreeProviderTests(unittest.TestCase):
+    """GitHub Models: free by default, through the Actions token; small batches fit the free tier."""
+
+    def setUp(self):
+        import draft
+        self.draft = draft
+        self.patches = [mock.patch.dict(os.environ, {"GITHUB_TOKEN": "gh-test", "JUA_PROVIDER": "", "JUA_MODEL": ""}),
+                        mock.patch.object(draft.time, "sleep", lambda s: None),
+                        mock.patch.dict(draft.SPEND, {"usd": 0.0, "calls": 0})]
+        for p in self.patches:
+            p.start()
+
+    def tearDown(self):
+        for p in reversed(self.patches):
+            p.stop()
+
+    @staticmethod
+    def _reply(text="ok", finish="stop"):
+        resp = mock.MagicMock()
+        resp.read.return_value = json.dumps({"choices": [{"message": {"content": text}, "finish_reason": finish}]}).encode()
+        resp.__enter__.return_value = resp
+        return resp
+
+    def test_free_by_default_with_the_actions_token(self):
+        self.assertEqual(self.draft.provider(), "github")
+        seen = []
+        def fake(req, timeout):
+            seen.append((req.full_url, req.get_header("Authorization"), json.loads(req.data)))
+            return self._reply("hi")
+        with mock.patch.object(self.draft.urllib.request, "urlopen", fake):
+            self.assertEqual(self.draft.call_claude("sys", "user", max_tokens=12000), "hi")
+        url, auth, body = seen[0]
+        self.assertEqual(url, self.draft.GITHUB_URL)
+        self.assertEqual(auth, "Bearer gh-test")
+        self.assertEqual(body["max_tokens"], 4000)                       # clamped to the free tier
+        self.assertEqual(body["messages"][0], {"role": "system", "content": "sys"})
+        self.assertEqual(self.draft._price("anything"), (0.0, 0.0))      # costs nothing
+
+    def test_falls_back_when_a_model_is_unavailable(self):
+        import io, urllib.error
+        tried = []
+        def fake(req, timeout):
+            m = json.loads(req.data)["model"]
+            tried.append(m)
+            if m == self.draft.GITHUB_MODELS[0]:
+                raise urllib.error.HTTPError("u", 404, "nf", {}, io.BytesIO(b'{"error":"Unknown model"}'))
+            return self._reply("from fallback")
+        with mock.patch.object(self.draft.urllib.request, "urlopen", fake):
+            self.assertEqual(self.draft.call_claude("s", "u"), "from fallback")
+        self.assertEqual(tried, self.draft.GITHUB_MODELS[:2])
+
+    def test_cut_off_reply_and_call_cap(self):
+        with mock.patch.object(self.draft.urllib.request, "urlopen", lambda req, timeout: self._reply("{", "length")):
+            with self.assertRaisesRegex(RuntimeError, "cut off"):
+                self.draft.call_claude("s", "u")
+        with mock.patch.dict(self.draft.SPEND, {"calls": self.draft.GITHUB_LIMITS["calls"]}):
+            with self.assertRaisesRegex(RuntimeError, "call cap"):
+                self.draft.call_claude("s", "u")
+
+    def test_batches_keep_carousels_whole(self):
+        slots = [{"id": f"s{i}"} for i in range(3)] + [{"id": f"c{i}", "group": "g"} for i in range(6)] + [{"id": "s9"}]
+        out = self.draft.batches(slots)
+        self.assertTrue(all(len(b) <= 4 or all(x.get("group") == "g" for x in b) for b in out))
+        self.assertEqual(sum(len(b) for b in out), len(slots))
+        self.assertTrue(any(len([x for x in b if x.get("group") == "g"]) == 6 for b in out))
 
 
 class GuardTests(unittest.TestCase):
@@ -391,7 +585,7 @@ class ApiCallTests(unittest.TestCase):
     def setUp(self):
         import draft
         self.draft = draft
-        self.env = mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "test-key", "JUA_MODEL": ""})
+        self.env = mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "test-key", "JUA_MODEL": "", "JUA_PROVIDER": "anthropic"})
         self.env.start()
         self.sleep = mock.patch.object(draft.time, "sleep")
         self.sleep.start()
@@ -534,8 +728,11 @@ class TrendTests(unittest.TestCase):
                 mock.patch.object(trends.urllib.request, "urlopen", lambda *a, **k: Resp()):
             data = trends.collect(("KE",))
             titles = [t["title"] for t in data["safe"]]
-            self.assertEqual(titles, ["man utd vs west ham"])  # politics and tragedy dropped
-            self.assertEqual(len(data["dropped"]), 2)
+            # tragedy dropped; politics kept and flagged civic (sorted by traffic)
+            self.assertEqual(titles, ["edwin sifuna presidential bid 2027", "man utd vs west ham"])
+            self.assertTrue(data["safe"][0].get("civic"))
+            self.assertFalse(data["safe"][1].get("civic"))
+            self.assertEqual(len(data["dropped"]), 1)
             block = trends.prompt_block()
             self.assertIn("man utd vs west ham", block)
             self.assertIn("Team news", block)
@@ -565,7 +762,8 @@ class VisualQATests(unittest.TestCase):
         import render
         posts = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"]
         good = next(p for p in posts if p["template"] == "hack")
-        broken = {**good, "id": "qa-broken", "title": "W" * 58}  # passes the length check, breaks the layout
+        # far more text than the guard allows: even after auto-fit shrinks it, it overflows, and QA must catch it
+        broken = {**good, "id": "qa-broken", "moves": ["Record the whole lecture on your phone and keep it safe " * 5] * 4}
         with tempfile.TemporaryDirectory() as d:
             qa = {}
             render.render([good, broken], Path(d), qa=qa)

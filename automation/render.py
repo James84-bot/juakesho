@@ -43,13 +43,14 @@ SIZES = {
     "facebook": (1640, 624),
     "avatar": (1080, 1080),
 }
-DARK_BGS = {"usiku", "jacaranda", "chai", "shuka", "udongo"}
+DARK_BGS = {"usiku", "jacaranda", "chai", "shuka", "udongo", "jua"}
+FLAG_BGS = {"shuka", "chai", "jua"}   # red and green fields: the logo goes one-colour white
 
 
 def fit(text: str, max_width: float, base: float, char_em: float = 0.78) -> int:
     """Largest font size (<= base) that keeps every line of `text` (no wrapping) within max_width, Unbounded ExtraBold."""
     import textfit
-    return min(textfit.fit_display(line, max_width, 1, base) for line in (str(text).split("\n") or [""]))
+    return min(textfit.fit_display(line, max_width, 1, base) for line in (_fitted(text).split("\n") or [""]))
 
 
 def fitw(text: str, width: float, lines: int, base: float, char_em: float = 0.68) -> int:
@@ -57,7 +58,7 @@ def fitw(text: str, width: float, lines: int, base: float, char_em: float = 0.68
     Measured with the real font (textfit), so a long single word shrinks instead of spilling out.
     `char_em` is kept for old callers; it only matters for text the font file can't measure."""
     import textfit
-    return textfit.fit_display(text, width, lines, base)
+    return textfit.fit_display(_fitted(text), width, lines, base)
 
 
 def arrow(x1, y1, x2, y2, color, width=7, bend=0.35) -> str:
@@ -149,6 +150,25 @@ def comic_layout(panels: list[dict], width: int, seed: int) -> list[dict]:
     return out
 
 
+def mark(text: str) -> Markup:
+    """Headline emphasis: the writer wraps the 1-3 words that hit hardest in *asterisks*; they get the red marker.
+    Also keeps hyphenated words whole, like nobreak."""
+    import re as _re
+    safe = str(escape(text))
+    safe = _re.sub(r"\*([^*\n]{1,60})\*", r"<mark>\1</mark>", safe)
+    return Markup(_re.sub(r"(?<![<\w/])(\w+-\w+)", r'<span style="white-space:nowrap">\1</span>', safe))
+
+
+def _fitted(text) -> str:
+    """For measuring: each *marker* edge counts as a narrow glyph, covering the marker's side padding."""
+    return str(text).replace("*", "i")
+
+
+def plain(text) -> str:
+    """Text as measured and counted: without the *emphasis* markers."""
+    return str(text).replace("*", "")
+
+
 def nobreak(text: str) -> Markup:
     """Keep hyphenated words (M-PESA, e-mail) on one line."""
     import re as _re
@@ -193,6 +213,8 @@ def make_env() -> Environment:
     }
     env.globals.update({k: _safe(v) for k, v in svg_helpers.items()})
     env.filters["nb"] = nobreak
+    env.filters["mark"] = mark
+    env.filters["plain"] = plain
     env.globals.update(GLOW=Markup(bk.GLOW_DEFS), comic_layout=comic_layout, C=bk.C, ON=bk.ON, fit=fit, fitw=fitw, radius=radius, brand=bk.BRAND)
     return env
 
@@ -200,7 +222,7 @@ def make_env() -> Environment:
 def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = False, measure: bool = False) -> str:
     kind = post.get("size", "post")
     W, H = SIZES[kind]
-    bg_name = post.get("bg", "maziwa")
+    bg_name = post.get("bg", "usiku")
     dark = bg_name in DARK_BGS
     ctx = {
         **post,
@@ -208,53 +230,38 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         "bg": bk.C[bg_name], "bg_name": bg_name,
         "ink": bk.ON[bg_name], "dark": dark,
         "seed": int(post.get("seed", zlib.crc32(post["id"].encode()) % 10**6)),
-        "colors": bk.C,
+        "colors": bk.C, "palette": bk.P,
         "font_faces": Markup(bk.font_faces(FONTS)),
         "logo_on_light": (LOGO / "wordmark-on-light.svg").as_uri(),
-        "logo_on_dark": (LOGO / "wordmark-on-dark.svg").as_uri(),
-        "logo_stacked": (LOGO / "stacked-on-light.svg").as_uri(),
-        "motion": motion, "reel": reel, "grain_uri": GRAIN_URI,
+        # on red and green the red sun would vanish: one-colour white logo there
+        "logo_on_dark": (LOGO / ("wordmark-mono-light.svg" if bg_name in FLAG_BGS else "wordmark-on-dark.svg")).as_uri(),
+        "logo_stacked": (LOGO / ("stacked-mono-light.svg" if bg_name in FLAG_BGS else "stacked-on-dark.svg" if dark
+                                 else "stacked-on-light.svg")).as_uri(),
+        "icon_uri": (LOGO / {"jua": "icon-red.svg", "shuka": "icon-red.svg", "maziwa": "icon-paper.svg"}.get(bg_name, "icon-night.svg")).as_uri(),
+        "motion": motion, "reel": reel,
+        "symbol": "",   # the illustrated symbols are retired from the designs (kept in data for the writer)
     }
     ink = post.get("ink") or {}
     ctx["ink_css"] = Markup("\n".join(
         ".layer" + "".join(f" > :nth-child({int(i)})" for i in path.split("/")) + f" {{ color: {col} !important; }}"
         for path, col in ink.items() if path and all(i.isdigit() for i in path.split("/")) and re.fullmatch(r"#[0-9A-F]{6}", col)))
+    person = post.get("person_file")
     photo = post.get("photo_file")
-    if photo and Path(photo).exists() and post["template"] in PHOTO_TEMPLATES:
-        tones = ["jua", "pwani", "waridi", "shuka"]
-        tone = post.get("photo_tone") if post.get("photo_tone") in bk.C else tones[ctx["seed"] % len(tones)]
-        civic = post["template"] in {"money", "straight"} or post.get("series") in {"See Through It"}
-        ctx.update(photo_uri=Path(photo).as_uri(), photo_tone=bk.C[tone],
+    if person and Path(person).exists() and post["template"] in PERSON_TEMPLATES:
+        # A real, named person (someone we celebrate, or a public office holder on the record): their real photo
+        ctx.update(photo_uri=Path(person).as_uri(), photo_credit=post.get("person_credit") or "", person_shown=True)
+    elif photo and Path(photo).exists() and post["template"] in PHOTO_TEMPLATES:
+        civic = post["template"] in {"money", "straight", "promise", "sauti", "kumbuka", "scorecard"} or post.get("series") in {"See Through It"}
+        ctx.update(photo_uri=Path(photo).as_uri(),
                    photo_credit=("Illustrative photo · " if civic else "") + (post.get("photo_credit") or ""))
-    import symbols
-    sym = post.get("symbol") if post["template"] not in NO_SYMBOL and post.get("symbol") in symbols.SYMBOLS else ""
-    person_file = post.get("person_file")
-    if person_file and Path(person_file).exists() and post["template"] in PERSON_TEMPLATES:
-        # A real person we celebrate: their real photo is the hero (the symbol steps aside)
-        ctx["symbol"] = "portrait"
-        ctx["person_credit"] = post.get("person_credit") or ""
-        ctx.pop("photo_credit", None)   # one credit line: the person's photographer
-        box = post.get("symbol_box")
-        if measure or box:
-            ctx["mascot"] = lambda *_a, **_k: Markup("")
-        if box and not measure:
-            ctx["symbol_box"], ctx["symbol_hero"] = box, Markup(symbols.portrait(Path(person_file).as_uri(), ctx["seed"]))
-        return env.get_template(f"{post['template']}.html.j2").render(**ctx)
-    ctx["symbol"] = sym   # templates switch to their hero-split layout when this is set
-    if sym:
-        if True:
-            art = symbols.art(sym)
-            # Giant faint silhouette behind the glass: the whole post reads as the idea at a glance
-            if "photo_uri" not in ctx:   # a photo already fills the background
-                ctx["symbol_ghost"] = Markup(symbols.ghost(sym, "#ffffff" if dark else bk.C["usiku"]))
-            box = post.get("symbol_box")
-            if measure or box:  # the hero symbol replaces the decorative mascot
-                ctx["mascot"] = lambda *_a, **_k: Markup("")
-            if box and not measure:
-                ctx["symbol_box"], ctx["symbol_hero"] = box, Markup(art)
-            elif not measure and post["template"] in SYMBOL_IN_MASCOT_SLOT:  # no room found: small, in the mascot's slot
-                ctx["mascot"] = lambda *_a, **_k: Markup(f'<g transform="translate(9 9) scale(.455)">{art}</g>')
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
+
+
+def hero_beat(box: list, w: int, h: int) -> dict:
+    """Motion graphics, beat 1: the symbol starts big at centre stage (below the headline), then flies to its slot.
+    Returns the offset from its final spot to centre stage, and the opening scale."""
+    x, y, size = box
+    return {"hx": round(w / 2 - (x + size / 2)), "hy": round(h * 0.6 - (y + size / 2)), "hk": round(min(2.1, 560 / size), 3)}
 
 
 # Obstacles for symbol placement: text by its real line boxes (short lines leave room beside them),
@@ -269,7 +276,7 @@ OBSTACLES_JS = """
     const bg = s.backgroundColor, a = bg.startsWith('rgba') ? parseFloat(bg.split(',')[3]) : (bg === 'transparent' ? 0 : 1);
     return a > 0.02 || s.backdropFilter !== 'none' || parseFloat(s.borderTopWidth) > 0 || el instanceof SVGElement || el.tagName === 'IMG';
   };
-  for (const el of document.querySelectorAll('.layer > *, .foot')) {
+  for (const el of document.querySelectorAll('.layer > *, .foot, .top > *')) {
     if (el.matches('.symbol, svg.mascot')) continue;
     if (el.matches('.foot') || solid(el)) { add(el.getBoundingClientRect()); continue; }
     const range = document.createRange(); range.selectNodeContents(el);
@@ -323,7 +330,7 @@ def _lum(rgb) -> float:
     return 0.2126 * ch(r) + 0.7152 * ch(g) + 0.0722 * ch(b)
 
 
-INK = ["jua", "pwani", "waridi", "maziwa", "white", "usiku"]   # adaptive ink candidates, brand accents first
+INK = ["maziwa", "white", "usiku"]   # adaptive ink candidates: paper, white, night
 
 
 def _ratio(a: float, b: float) -> float:
@@ -438,7 +445,12 @@ def free_square(w: int, h: int, rects: list, anchor: tuple[float, float] | None 
 
 
 def place_symbol(page, env: Environment, post: dict, tmp_dir: Path) -> None:
-    """Lays the post out without its symbol, measures what landed where, and stores the best free square."""
+    """Retired with the illustrated symbols: the editorial designs carry no floating art. Kept as a no-op
+    so older callers keep working."""
+    post.pop("symbol_box", None)
+
+
+def _place_symbol_legacy(page, env: Environment, post: dict, tmp_dir: Path) -> None:
     import symbols
     has_person = bool(post.get("person_file")) and post["template"] in PERSON_TEMPLATES and Path(post["person_file"]).exists()
     if not has_person and (not post.get("symbol") or post["template"] in NO_SYMBOL or post.get("symbol") not in symbols.SYMBOLS):
@@ -446,7 +458,7 @@ def place_symbol(page, env: Environment, post: dict, tmp_dir: Path) -> None:
     tmp = tmp_dir / f".{post['id']}-measure.html"
     tmp.write_text(build_html(env, post, measure=True), encoding="utf-8")
     page.goto(tmp.as_uri())
-    page.evaluate("document.fonts.ready")
+    page.evaluate("document.fonts.ready.then(() => window.__fit ? window.__fit() : 1)")
     m = page.evaluate(OBSTACLES_JS)
     tmp.unlink()
     box = free_square(int(m["w"]), int(m["h"]), m["rects"])
@@ -456,10 +468,12 @@ def place_symbol(page, env: Environment, post: dict, tmp_dir: Path) -> None:
         post.pop("symbol_box", None)
 
 
-# Layouts that celebrate a real person with their real photo (rights required: guard.py)
-PERSON_TEMPLATES = {"spotlight"}
-# Dark-background layouts that take a full-bleed photo (duotoned into the brand palette)
-PHOTO_TEMPLATES = {"cover", "kesho", "spotlight", "money", "still", "straight", "hack", "decode", "build", "glasspoll"}
+# Layouts that show a real, named person with their real photo (rights/licence required: guard.py):
+# spotlight celebrates; straight, money and cap can show the public office holder on the record
+PERSON_TEMPLATES = {"spotlight", "straight", "money", "cap", "promise", "sauti", "scorecard"}
+# Layouts that take a real photo across the top of the canvas
+PHOTO_TEMPLATES = {"cover", "kesho", "spotlight", "money", "still", "straight", "hack", "decode", "build", "glasspoll",
+                   "africa", "cap", "usiibiwe", "promise", "sauti", "kumbuka", "scorecard"}
 # Templates where Jua is a character in the scene (keep it), or that are brand assets
 NO_SYMBOL = {"vichekesho", "pov", "avatar", "banner", "intro"}
 # Templates whose mascot is decoration: a symbol replaces it in the same, collision-checked spot
@@ -470,8 +484,8 @@ SYMBOL_IN_MASCOT_SLOT = {"hack", "decode", "cap", "usiibiwe", "still", "glasspol
 QA_JS = """
 () => {
   const canvas = document.getElementById('canvas').getBoundingClientRect();
-  const skip = '.sticker, .stamp, .verdict, svg.mascot, .pnum, .save';
-  const blocks = [...document.querySelectorAll('.layer > *, .foot')]
+  const skip = '.sticker, .stamp, svg.mascot, .pnum, .save';
+  const blocks = [...document.querySelectorAll('.layer > *, .foot, .top > *, .credit')]
     .filter(el => !el.matches(skip))
     .map(el => ({ el, r: el.getBoundingClientRect() }))
     .filter(b => b.r.width > 2 && b.r.height > 2);
@@ -545,7 +559,7 @@ def render(posts: list[dict], out_dir: Path, sheet: bool = False, qa: dict | Non
             for attempt in range(2):   # lay out, fix unreadable ink, lay out again with the fixes
                 tmp.write_text(build_html(env, post), encoding="utf-8")
                 page.goto(tmp.as_uri())
-                page.evaluate("document.fonts.ready")
+                page.evaluate("document.fonts.ready.then(() => window.__fit ? window.__fit() : 1)")
                 page.evaluate("Promise.all([...document.images].map(i => i.decode().catch(() => {})))")
                 if attempt:
                     break

@@ -1,0 +1,21 @@
+{#- Sauti ya Mwananchi — the people's voice. A real photo fills the post; one line says what Kenyans are already
+    thinking, with the words that hit hardest on the red marker (*like this*); one fact proves it.
+    Fields: kicker (who's talking, e.g. "Sisi wananchi"), line (the headline, with *marks*), fact, source -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.has-photo { --ph: {{ H }}px; }
+.has-photo .layer { padding-top: 168px; }
+.has-photo .photo { background-position: center 35%; }
+/* The photo owns the top; from the headline down the scrim is dark enough for white type on any photo */
+.has-photo .photo-fade { background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 92%, transparent) 0,
+  color-mix(in srgb, var(--bg) 55%, transparent) 9%, transparent 18%, transparent 24%, color-mix(in srgb, var(--bg) 72%, transparent) 40%, color-mix(in srgb, var(--bg) 90%, transparent) 54%, var(--bg) 72%); }
+.has-photo .display { text-shadow: 0 2px 22px rgba(0, 0, 0, .4); }
+.line { font-size: {{ fitw(line, 936, 5, 104 if photo_uri is not defined else 88) }}px; line-height: 1.04; }
+.fact { margin-top: 30px; padding-left: 24px; border-left: 6px solid var(--accent); }
+{% endblock %}
+{% block top %}<span class="tag">{{ kicker }}</span><span class="meta">Jua nchi yako</span>{% endblock %}
+{% block content %}
+  <div class="gap"></div>
+  <h1 class="display line">{{ line | mark }}</h1>
+  <p class="lead fact">{{ fact | nb }}</p>
+{% endblock %}

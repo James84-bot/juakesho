@@ -4,9 +4,12 @@ photos.py — real photos for posts that need them, safely licensed and on-brand
 Sources, in order:
   1. Your own photos: put them in automation/content/photos/ and set  "photo": "own:matatu-stage.jpg"
      (most authentic; you own the rights).
-  2. Pexels (free for commercial use, no attribution required; we credit anyway):
-     the writer sets  "photo_query": "unfinished concrete building site"  and the pipeline fetches one.
-     Needs PEXELS_API_KEY (free at pexels.com/api). Without it, posts simply render without a photo.
+  2. For the writer's  "photo_query":
+     - Wikimedia Commons: real Kenyan places and scenes, free, no key. Only CC0 / public domain / CC BY
+       (credited on the image); share-alike, non-commercial and no-derivatives licences are skipped.
+     - Pexels: free for commercial use (we credit anyway). Needs PEXELS_API_KEY (free at pexels.com/api).
+     Kenyan queries (Nairobi, matatu, M-Pesa...) try Commons first; others try Pexels first. Each falls back
+     to the other. Nothing found: the post renders type-only.
 
 Rules (enforced in guard.py): scenes, places and objects; no faces on critical posts; a photo never stands in
 for a real person or project we're talking about. On civic posts the design is labelled "illustrative photo".
@@ -24,12 +27,76 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 OWN = HERE / "content" / "photos"
 API = "https://api.pexels.com/v1/search"
+COMMONS = "https://commons.wikimedia.org/w/api.php"
+# Licences that allow a credited photo inside our design without other conditions
+OK_LICENCES = re.compile(r"^(cc0|public domain|pd\b|cc by \d(\.\d)?|cc-by-\d(\.\d)?)", re.I)
 
 
 def _get(url: str, headers: dict | None = None, timeout: int = 30) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": "jua-kesho/1.0", **(headers or {})})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
+
+
+LOCAL = re.compile(r"\b(kenya|kenyan|nairobi|mombasa|kisumu|nakuru|eldoret|matatu|m-?pesa|shilling|boda|kibera|"
+                   r"mathare|africa|african|swahili|maasai|safaricom|parliament|state house)\b", re.I)
+
+
+def _cached(out_dir: Path, pid: str) -> dict | None:
+    target, meta = out_dir / f"{pid}-photo.jpg", out_dir / f"{pid}-photo.json"
+    if target.exists() and meta.exists():   # already fetched this week: stay stable across re-renders
+        return {**json.loads(meta.read_text(encoding="utf-8")), "file": str(target)}
+    return None
+
+
+def _save(out_dir: Path, pid: str, data: bytes, info: dict) -> dict:
+    out_dir.mkdir(parents=True, exist_ok=True)
+    target, meta = out_dir / f"{pid}-photo.jpg", out_dir / f"{pid}-photo.json"
+    target.write_bytes(data)
+    meta.write_text(json.dumps(info), encoding="utf-8")
+    return {**info, "file": str(target)}
+
+
+def pexels(query: str, pid: str) -> tuple[bytes, dict] | None:
+    key = os.environ.get("PEXELS_API_KEY", "").strip()
+    if not key:
+        return None
+    q = urllib.parse.urlencode({"query": query, "orientation": "portrait", "per_page": 12, "size": "large"})
+    found = json.loads(_get(f"{API}?{q}", {"Authorization": key})).get("photos", [])
+    if not found:
+        return None
+    pick = found[zlib.crc32(pid.encode()) % min(5, len(found))]   # varied but reproducible
+    data = _get(pick["src"].get("large2x") or pick["src"]["original"])
+    return data, {"credit": f"Photo: {pick.get('photographer', 'Pexels')} / Pexels", "url": pick.get("url", "")}
+
+
+def _licence_ok(lic: str) -> bool:
+    low = f" {lic.lower()} "
+    return bool(OK_LICENCES.match(lic)) and not re.search(r"[\s-](sa|nc|nd)[\s-]", low)
+
+
+def commons(query: str, pid: str) -> tuple[bytes, dict] | None:
+    """A real photo from Wikimedia Commons that we may use in a design with a credit (CC0 / PD / CC BY)."""
+    q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": f"{query} filetype:bitmap",
+                                "gsrnamespace": 6, "gsrlimit": 25, "prop": "imageinfo",
+                                "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600, "format": "json"})
+    pages = json.loads(_get(f"{COMMONS}?{q}")).get("query", {}).get("pages", {})
+    good = []
+    for page in sorted(pages.values(), key=lambda p: p.get("index", 0)):
+        info = (page.get("imageinfo") or [{}])[0]
+        md = info.get("extmetadata", {})
+        lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
+        if info.get("mime") not in {"image/jpeg", "image/png"} or info.get("width", 0) < 1000 or info.get("height", 0) < 700:
+            continue
+        if not _licence_ok(lic):
+            continue
+        artist = re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown")).strip()[:50]
+        good.append((info.get("thumburl") or info["url"], {"credit": f"Photo: {artist} / Wikimedia Commons, {lic}",
+                                                         "url": info.get("descriptionurl", "")}))
+    if not good:
+        return None
+    url, meta = good[zlib.crc32(pid.encode()) % min(4, len(good))]
+    return _get(url), meta
 
 
 def fetch(post: dict, out_dir: Path) -> dict | None:
@@ -40,32 +107,27 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             f = OWN / Path(own[4:]).name
             return {"file": str(f), "credit": "", "url": ""} if f.exists() else None
         query = (post.get("photo_query") or "").strip()
-        key = os.environ.get("PEXELS_API_KEY", "").strip()
-        if not query or not key:
+        if not query:
             return None
-        out_dir.mkdir(parents=True, exist_ok=True)
-        target = out_dir / f"{post['id']}-photo.jpg"
-        meta = out_dir / f"{post['id']}-photo.json"
-        if target.exists() and meta.exists():   # already fetched this week: stay stable across re-renders
-            return {**json.loads(meta.read_text(encoding="utf-8")), "file": str(target)}
-        q = urllib.parse.urlencode({"query": query, "orientation": "portrait", "per_page": 12, "size": "large"})
-        found = json.loads(_get(f"{API}?{q}", {"Authorization": key})).get("photos", [])
-        if not found:
-            return None
-        pick = found[zlib.crc32(post["id"].encode()) % min(5, len(found))]   # varied but reproducible
-        target.write_bytes(_get(pick["src"].get("large2x") or pick["src"]["original"]))
-        info = {"credit": f"Photo: {pick.get('photographer', 'Pexels')} / Pexels", "url": pick.get("url", "")}
-        meta.write_text(json.dumps(info), encoding="utf-8")
-        return {**info, "file": str(target)}
+        hit = _cached(out_dir, post["id"])
+        if hit:
+            return hit
+        order = (commons, pexels) if LOCAL.search(query) else (pexels, commons)
+        for source in order:
+            try:
+                got = source(query, post["id"])
+            except Exception as e:   # one source down: try the next
+                print(f"  photo source {source.__name__} failed for {post.get('id')}: {e}")
+                got = None
+            if got:
+                return _save(out_dir, post["id"], *got)
+        return None
     except Exception as e:   # a missing photo must never block the week
         print(f"  photo skipped for {post.get('id')}: {e}")
         return None
 
 
 PEOPLE = HERE / "content" / "people"
-COMMONS = "https://commons.wikimedia.org/w/api.php"
-# Licences that allow a credited photo inside our design without other conditions
-OK_LICENCES = re.compile(r"^(cc0|public domain|pd\b|cc by \d(\.\d)?|cc-by-\d(\.\d)?)", re.I)
 
 
 def person(post: dict, out_dir: Path) -> dict | None:

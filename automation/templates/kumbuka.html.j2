@@ -1,0 +1,25 @@
+{#- Hatutasahau (We won't forget) — what happened to Kenyans, date by date, and what accountability has followed.
+    Fields: date (e.g. "25 June 2024"), event (headline, *marks*), facts (1-3, sourced), status (accountability so far),
+            ask (closing line, e.g. "Hatutasahau."), source -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.has-photo { --ph: 500px; }
+.date { font: 900 {{ 96 if photo_uri is not defined else 76 }}px/0.9 "Inter Tight"; letter-spacing: -.035em; color: var(--accent); }
+.event { margin-top: 22px; font-size: {{ fitw(event, 936, 3, 66 if photo_uri is not defined else 58) }}px; }
+.rows .row { font-size: 27px; padding: 16px 0; }
+.status { margin-top: 26px; padding: 20px 24px; border-radius: 4px; background: var(--ink-900); border-left: 6px solid var(--accent); }
+.status .label { margin-bottom: 8px; }
+.status p { font: 600 28px/1.32 "Inter"; color: var(--fg); }
+.ask { margin-top: 24px; font: 900 40px/1 "Inter Tight"; letter-spacing: -.02em; color: var(--fg); }
+{% endblock %}
+{% block top %}<span class="tag">Hatutasahau</span><span class="meta">We won't forget</span>{% endblock %}
+{% block content %}
+  <p class="display date">{{ date }}</p>
+  <h1 class="display event">{{ event | mark }}</h1>
+  <div class="gap"></div>
+  <div class="rows">
+    {% for f in facts %}<div class="row"><span class="n">{{ '%02d' % loop.index }}</span><span>{{ f | nb }}</span></div>{% endfor %}
+  </div>
+  <div class="status"><p class="label">Accountability so far</p><p>{{ status | nb }}</p></div>
+  <p class="ask">{{ ask }}</p>
+{% endblock %}

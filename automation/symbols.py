@@ -88,13 +88,13 @@ def _crane() -> str:
 <path d="M40,96 L370,96 L370,122 L40,122 Z" fill="{C['jua']}" {S}/>
 <path d="M136,96 L136,40 M136,40 L60,96 M136,40 L330,96" stroke="{O}" stroke-width="8" fill="none"/>
 <rect x="50" y="122" width="54" height="54" fill="{C['udongo']}" {S}/>
-<path d="M318,122 L318,246" stroke="{O}" stroke-width="6"/>
-<path d="M318,246 L318,272 C318,290 300,292 296,280" fill="none" stroke="{O}" stroke-width="12" stroke-linecap="round"/>
+<g class="pt-swing" style="transform-origin: 318px 122px"><path d="M318,122 L318,246" stroke="{O}" stroke-width="6"/>
+<path d="M318,246 L318,272 C318,290 300,292 296,280" fill="none" stroke="{O}" stroke-width="12" stroke-linecap="round"/></g>
 <path d="M230,366 L230,300 L270,300 L270,260 L330,260 L330,366 Z" fill="{C['maziwa']}" {S}/>
 <path d="M60,366 L360,366" stroke="{O}" stroke-width="14" stroke-linecap="round"/>
 <g stroke="{O}" stroke-width="3" fill="none" opacity=".75"><path d="M370,122 L336,150 M370,122 L352,166 M370,122 L370,170"/>
 <path d="M343,144 C353,150 360,150 368,146 M348,158 C356,162 362,162 369,160"/></g>
-<circle cx="206" cy="226" r="44" fill="{C['shuka']}" {S}/><path d="M192,206 L192,246 M220,206 L220,246" stroke="#fff" stroke-width="12" stroke-linecap="round"/>"""
+<g class="pt-blink"><circle cx="206" cy="226" r="44" fill="{C['shuka']}" {S}/><path d="M192,206 L192,246 M220,206 L220,246" stroke="#fff" stroke-width="12" stroke-linecap="round"/></g>"""
 
 
 def _half_bridge() -> str:
@@ -109,8 +109,8 @@ def _half_bridge() -> str:
 
 
 def _leaky_bucket() -> str:
-    coins = "".join(f'<ellipse cx="{x}" cy="{y}" rx="22" ry="12" fill="{C["jua"]}" {S.replace("12", "7", 1)}/>'
-                    for x, y in ((96, 300), (150, 348), (306, 330), (262, 372)))
+    coins = "".join(f'<g class="pt-drip" style="--k:{k}"><ellipse cx="{x}" cy="{y}" rx="22" ry="12" fill="{C["jua"]}" {S.replace("12", "7", 1)}/></g>'
+                    for k, (x, y) in enumerate(((96, 300), (150, 348), (306, 330), (262, 372))))
     return f"""
 <path d="M92,110 L308,110 L276,300 L124,300 Z" fill="{C['ziwa']}" {S}/>
 <ellipse cx="200" cy="110" rx="108" ry="32" fill="{C['jua']}" {S}/>
@@ -264,9 +264,9 @@ def _phone_chat() -> str:
 <rect x="110" y="40" width="180" height="330" rx="34" fill="{O}" {S}/>
 <rect x="126" y="70" width="148" height="264" rx="14" fill="{C['maziwa']}"/>
 <rect x="170" y="52" width="60" height="10" rx="5" fill="{C['maziwa']}" opacity=".5"/>
-<path d="M140,96 L226,96 C236,96 240,100 240,110 L240,138 C240,148 236,152 226,152 L160,152 L140,168 Z" fill="{C['pwani']}"/>
-<path d="M260,184 L178,184 C168,184 164,188 164,198 L164,224 C164,234 168,238 178,238 L244,238 L260,254 Z" fill="{C['jacaranda']}"/>
-<path d="M140,272 L214,272 C224,272 228,276 228,286 L228,300 C228,310 224,314 214,314 L156,314 L140,326 Z" fill="{C['pwani']}"/>
+<path class="pt-pop" style="--k:0" d="M140,96 L226,96 C236,96 240,100 240,110 L240,138 C240,148 236,152 226,152 L160,152 L140,168 Z" fill="{C['pwani']}"/>
+<path class="pt-pop" style="--k:1" d="M260,184 L178,184 C168,184 164,188 164,198 L164,224 C164,234 168,238 178,238 L244,238 L260,254 Z" fill="{C['jacaranda']}"/>
+<path class="pt-pop" style="--k:2" d="M140,272 L214,272 C224,272 228,276 228,286 L228,300 C228,310 224,314 214,314 L156,314 L140,326 Z" fill="{C['pwani']}"/>
 <path d="M300,86 C330,96 348,120 352,150 M306,40 C354,54 384,96 388,146" stroke="{C['jua']}" stroke-width="12" fill="none" stroke-linecap="round"/>"""
 
 
@@ -307,8 +307,8 @@ def _coins_up() -> str:
     stack = "".join(f'<ellipse cx="{x}" cy="{y}" rx="56" ry="20" fill="{C["jua"]}" {S.replace("12", "8", 1)}/>'
                     for x, stackh in ((110, 3), (210, 5), (310, 7)) for y in range(340, 340 - stackh * 30, -30))
     return f"""{stack}
-<path d="M60,210 L160,150 L230,176 L330,70" fill="none" stroke="{O}" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M60,210 L160,150 L230,176 L330,70" fill="none" stroke="{C['chai']}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="pt-draw" pathLength="1" d="M60,210 L160,150 L230,176 L330,70" fill="none" stroke="{O}" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+<path class="pt-draw" pathLength="1" d="M60,210 L160,150 L230,176 L330,70" fill="none" stroke="{C['chai']}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M280,64 L340,60 L336,120" fill="none" stroke="{O}" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>"""
 
 
@@ -333,7 +333,7 @@ def _target() -> str:
 
 
 def _signal() -> str:
-    bars = "".join(f'<rect x="{60 + i * 72}" y="{330 - (i + 1) * 60}" width="50" height="{(i + 1) * 60}" rx="10" fill="{c}" {S}/>'
+    bars = "".join(f'<rect class="pt-bar" style="--k:{i}" x="{60 + i * 72}" y="{330 - (i + 1) * 60}" width="50" height="{(i + 1) * 60}" rx="10" fill="{c}" {S}/>'
                    for i, c in enumerate((C["pwani"], C["ziwa"], C["jacaranda"], C["jua"])))
     return f"""{bars}<path d="M40,350 L360,350" stroke="{O}" stroke-width="12" stroke-linecap="round"/>
 <path d="M286,40 C316,50 334,70 344,100 M300,6 C346,22 374,56 384,104" stroke="{C['chai']}" stroke-width="12" fill="none" stroke-linecap="round"/>"""
@@ -415,10 +415,29 @@ def menu() -> str:
     return "\n".join(f"- {k}: {v[1]}" for k, v in SYMBOLS.items())
 
 
+# Motion graphics: every symbol acts out its meaning in Reels (stills ignore these classes).
+# move: whole-symbol performance; origin: pivot in the 400x400 box. Parts (pt-*) animate inside some symbols.
+MOTION = {
+    "hook": ("swing", "214px 20px"), "puppet": ("jerk", "200px 60px"), "megaphone": ("shout", "60px 200px"),
+    "mask": ("tilt", "200px 360px"), "padlock": ("lock", "200px 360px"), "key": ("turn", "110px 200px"),
+    "crane": ("settle", "200px 366px"), "half_bridge": ("wobble", "200px 300px"), "leaky_bucket": ("tip", "200px 300px"),
+    "sprout": ("grow", "200px 370px"), "ladder": ("climb", "200px 380px"), "rocket": ("launch", "200px 200px"),
+    "bulb": ("glow", "200px 200px"), "robot": ("nod", "200px 300px"), "brain": ("glow", "200px 200px"),
+    "sunrise": ("rise", "200px 280px"), "bridge": ("settle", "200px 300px"), "chain_broken": ("snap", "200px 200px"),
+    "hourglass": ("flip", "200px 200px"), "compass": ("spin", "200px 210px"), "eye": ("blink", "200px 200px"),
+    "scales": ("weigh", "200px 70px"), "magnifier": ("scan", "170px 170px"), "shield": ("glow", "200px 200px"),
+    "phone_chat": ("buzz", "200px 205px"), "matatu": ("drive", "200px 300px"), "grad_cap": ("toss", "200px 200px"),
+    "music": ("beat", "200px 200px"), "coins_up": ("settle", "200px 360px"), "warning": ("flash", "200px 300px"),
+    "unity": ("jump", "200px 378px"), "target": ("hit", "180px 220px"), "signal": ("settle", "200px 350px"),
+}
+
+
 def art(name: str) -> str:
     """Sticker version: inner SVG for a viewBox="0 0 400 400" element."""
     draw = SYMBOLS[name][0]
-    return f'<defs>{CUT_FILTER}</defs><g filter="url(#symcut)">{draw()}</g>'
+    move, origin = MOTION.get(name, ("settle", "200px 200px"))
+    return (f'<defs>{CUT_FILTER}</defs><g filter="url(#symcut)">'
+            f'<g class="act act-{move}" style="transform-origin: {origin}">{draw()}</g></g>')
 
 
 def ghost(name: str, color: str = "#ffffff") -> str:

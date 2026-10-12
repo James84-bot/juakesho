@@ -68,7 +68,7 @@ def duration_for(post: dict, motion_end: float) -> float:
 
 def _open(page, html_path: Path) -> None:
     page.goto(html_path.as_uri())
-    page.evaluate("document.fonts.ready")
+    page.evaluate("document.fonts.ready.then(() => window.__fit ? window.__fit() : 1)")
     page.evaluate("Promise.all([...document.images].map(i => i.decode().catch(() => {})))")
 
 
@@ -100,7 +100,8 @@ def music_track(post: dict) -> dict | None:
         reg = json.loads((MUSIC / "tracks.json").read_text(encoding="utf-8")).get("tracks", [])
     except (OSError, ValueError):
         return None
-    t = next((t for t in reg if t.get("file") == name and len(str(t.get("rights", ""))) >= 8), None)
+    # Only with recorded rights AND confirmed clean lyrics in the part we use (clean for everyone applies to sound too)
+    t = next((t for t in reg if t.get("file") == name and len(str(t.get("rights", ""))) >= 8 and t.get("clean") is True), None)
     path = MUSIC / Path(str(name)).name
     return {**t, "path": path} if t and path.exists() else None
 

@@ -20,12 +20,15 @@ concurrency:
 
 permissions:
   contents: write           # commit renders and state back
+  models: read              # free AI writer: GitHub Models through this run's own token (no key, no cost)
 
 jobs:
   run:
     runs-on: ubuntu-24.04   # pinned: ubuntu-latest moves to Ubuntu 26 on 2026-10-19
     timeout-minutes: 120   # Sunday renders include ~12 Reels
     env:
+      GITHUB_TOKEN: ${{ github.token }}                    # the free writer (GitHub Models)
+      JUA_PROVIDER: ${{ vars.JUA_PROVIDER }}               # empty = free; set to "anthropic" to use Claude (paid)
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}   # optional
       JUA_MODEL: ${{ vars.JUA_MODEL }}

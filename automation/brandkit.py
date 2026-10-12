@@ -19,6 +19,7 @@ BRAND = json.loads((ROOT / "brand.json").read_text(encoding="utf-8"))
 C = {k: v["hex"] for k, v in BRAND["colors"].items()}
 ON = {k: v["text"] for k, v in BRAND["colors"].items()}
 ACCENTS = BRAND["accents"]
+P = BRAND["palette"]   # P["ink"]["900"], P["jua"]["400"], ... (palette.py builds the shades)
 
 
 # ---------------------------------------------------------------------------
@@ -311,8 +312,11 @@ def mascot_svg(expr="happy", size=400, face=True, bg: str | None = None) -> str:
 
 
 def font_faces(font_dir: str) -> str:
-    """@font-face rules for the three brand fonts (variable WOFF2)."""
+    """@font-face rules: Inter Tight (headlines) and Inter (text); the older faces stay for legacy templates."""
     return (
+        f'@font-face{{font-family:"Inter Tight";src:url("{font_dir}/inter-tight-latin-wght-normal.woff2") format("woff2");font-weight:100 900}}'
+        f'@font-face{{font-family:"Inter";src:url("{font_dir}/inter-latin-wght-normal.woff2") format("woff2");font-weight:100 900}}'
+
         f'@font-face{{font-family:"Unbounded";src:url("{font_dir}/unbounded-latin-wght-normal.woff2") format("woff2");font-weight:200 900}}'
         f'@font-face{{font-family:"Figtree";src:url("{font_dir}/figtree-latin-wght-normal.woff2") format("woff2");font-weight:300 900}}'
         f'@font-face{{font-family:"Caveat";src:url("{font_dir}/caveat-latin-wght-normal.woff2") format("woff2");font-weight:400 700}}'

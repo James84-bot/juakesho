@@ -139,6 +139,43 @@ def _pick(value, week_no: int):
     return value[week_no % len(value)] if isinstance(value, list) else value
 
 
+EVIDENCE_SKIP = {"status", "guard", "critic", "ink", "symbol_box", "seed", "attempts", "last_error", "photo_file", "person_file"}
+
+
+def record_evidence(members: list[dict]) -> None:
+    """The defence file: exactly what went out, when, and on what sources. Append-only, one JSON line per post,
+    committed with the state. If anyone challenges a post, this is the record of what was said and why."""
+    STATE.mkdir(parents=True, exist_ok=True)
+    with (STATE / "evidence.jsonl").open("a", encoding="utf-8") as f:
+        for m in members:
+            f.write(json.dumps({k: v for k, v in m.items() if k not in EVIDENCE_SKIP}, ensure_ascii=False) + "\n")
+
+
+def _anniversaries(posts: list[dict], year: int, wk: int) -> None:
+    """Hatutasahau: in the week of an anniversary, the nearest Mon-Fri single post becomes a remembrance post."""
+    path = HERE / "content" / "remember.json"
+    if not path.exists():
+        return
+    for item in json.loads(path.read_text(encoding="utf-8"))["dates"]:
+        when = dt.date.fromisoformat(item["date"])
+        try:
+            this_year = when.replace(year=year)
+        except ValueError:   # 29 February
+            continue
+        iso = this_year.isocalendar()
+        if (iso[0], iso[1]) != (year, wk) or this_year.year <= when.year:
+            continue
+        singles = [p for p in posts if not p.get("group") and p.get("size") != "story"
+                   and dt.date.fromisoformat(p["publish_at"][:10]).isoweekday() <= 5 and p["template"] != "kumbuka"]
+        if not singles:
+            continue
+        target = min(singles, key=lambda p: abs(dt.date.fromisoformat(p["publish_at"][:10]) - this_year))
+        target.update(template="kumbuka", remember={"date": item["date"], "event": item["event"],
+                                                    "years": this_year.year - when.year},
+                      id=target["id"].rsplit("-", 1)[0] + "-kumbuka")
+        target.pop("series", None)
+
+
 def plan(label: str) -> dict:
     if week_file(label).exists():
         log(f"{label} already planned, keeping it")
@@ -157,6 +194,11 @@ def plan(label: str) -> dict:
         post = {"id": base_id, "template": template, "bg": bg, "lane": lane, "publish_at": when, "status": "planned"}
         if slot.get("size"):
             post["size"] = slot["size"]
+        series = slot.get("series")
+        if isinstance(series, dict):   # {"hack": "Civic 101"}: a series name for one of the slot's templates
+            series = series.get(template)
+        if series:
+            post["series"] = _pick(series, wk)
         if slot.get("carousel"):
             group = base_id
             post["group"] = group
@@ -167,6 +209,7 @@ def plan(label: str) -> dict:
                               "publish_at": when, "status": "planned", "group": group, "n": n, "total": c["slides"]})
             continue
         posts.append(post)
+    _anniversaries(posts, year, wk)
     data = {"collection": label, "created": now().isoformat(), "posts": posts, "scripts": {}}
     save_week(data)
     log(f"planned {len(posts)} designs for {label}")
@@ -200,7 +243,7 @@ def draft(label: str, mock: bool = False) -> dict:
 # ---------------------------------------------------------------------------
 # 3. Render (PNG for Telegram/WhatsApp, JPEG for Instagram)
 # ---------------------------------------------------------------------------
-PLAN_KEYS = {"id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total"}
+PLAN_KEYS = {"id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember"}
 
 
 def redo(label: str) -> list[str]:
@@ -541,6 +584,7 @@ def publish(dry_run: bool = False) -> None:
                 fb_id = publish_facebook(label, members)
                 for m in members:
                     m.update(status="published", published_at=now().isoformat(), ig_id=ig_id, fb_id=fb_id)
+                record_evidence(members)
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
                 _notify(f"✅ Published <b>{_esc(key)}</b>. Forward it to the WhatsApp Channel too.")
             except Exception as e:  # keep going; record and retry next tick

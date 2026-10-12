@@ -1,7 +1,7 @@
 """
 build_book.py — builds the Jua Kesho brand book as one self-contained HTML file.
 
-All graphics come from brandkit.py and the rendered exports, embedded inline,
+Everything is read from the live system (brand.json palette, logo SVGs, rendered exports),
 so the book always matches what the pipeline produces.
 
     python build_book.py            → brand-book/index.html (full page)
@@ -19,6 +19,7 @@ from pathlib import Path
 from PIL import Image
 
 import brandkit as bk
+from palette import contrast
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
@@ -26,11 +27,11 @@ EXP = ROOT / "exports"
 LOGO = ROOT / "assets" / "logo"
 CAL = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))
 POSTS = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"]
-C, B = bk.C, bk.BRAND
+B, P = bk.BRAND, bk.P
 e = html.escape
 
 
-def img_uri(path: Path, width: int, quality: int = 78) -> str:
+def img_uri(path: Path, width: int, quality: int = 80) -> str:
     im = Image.open(path).convert("RGB")
     im = im.resize((width, int(im.height * width / im.width)), Image.LANCZOS)
     buf = io.BytesIO()
@@ -44,463 +45,327 @@ def svg_inline(path: Path, cls: str = "", label: str = "") -> str:
     return s.replace(' width="', ' data-w="').replace(' height="', ' data-h="')
 
 
-def mascot(expr: str, cls: str = "m") -> str:
-    return f'<svg class="{cls}" viewBox="0 0 200 200" role="img" aria-label="Jua, {expr}">{bk.mascot(expr)}</svg>'
-
-
-def shape(content: str, w: int, h: int, label: str, bg: str | None = None) -> str:
-    rect = f'<rect width="{w}" height="{h}" fill="{bg}"/>' if bg else ""
-    return (f'<svg viewBox="0 0 {w} {h}" class="shape" role="img" aria-label="{e(label)}">'
-            f'{bk.GLOW_DEFS}{rect}{content}</svg>')
-
-
-# ---------------------------------------------------------------------------
-# Sections
-# ---------------------------------------------------------------------------
-EXPR_USE = {
-    "happy": "Default. Intros, tips, good news.",
-    "wink": "Decode, clever facts, inside jokes.",
-    "wow": "Usiibiwe!, surprises, big reveals.",
-    "thinking": "Questions, myths, polls.",
-    "laugh": "Still in 2026? roasts, funny wins, community replies.",
-    "cool": "Cap or No Cap? verdicts, confident how-tos.",
-    "visor": "Kesho Mode: the future, AI, predictions.",
-}
-
-LANE_ICON_BG = {"campus": "jacaranda", "young_pro": "usiku", "creator": "waridi", "hustle": "chai",
-                "techie": "ziwa", "diaspora": "pwani", "everyone": "jua"}
+FAMILIES = [
+    ("ink", "Ink · flag black & white", "Backgrounds, text, rules: about 90% of every design. 950 is the default background, 50 is paper."),
+    ("shuka", "Shuka · flag red", "The signature and the alarm: the sun in the logo, series tags, labels, the one highlight, FALSE, SCAM, BROKEN."),
+    ("chai", "Chai · flag green", "Good news only: TRUE, KEPT, Africa's wins, the horizon in the logo. The Made in Africa background."),
+]
 
 SERIES = [
-    ("Mon 07:30", "AI Hack", "hack", "One move that saves real time. Built to be saved and sent to the group chat."),
-    ("Tue 12:45", "Decode · Set It Straight · Cap or No Cap? · Follow the Money · Still in 2026?", "straight", "The word everyone's saying, the falsehood we correct with sources, the claim everyone repeats, one public-money number, the outdated habit we roast (never a person)."),
-    ("Wed 18:30", "Usiibiwe!", "usiibiwe", "The scams hitting young people right now: fake jobs, task scams, fake reversals."),
-    ("Thu 19:30", "Vichekesho", "vichekesho", "Three-panel stick-cast comics. Relatable first, lesson second."),
-    ("Fri 17:00", "Proudly African: Put Us On · Made in Africa · Build With Me", "spotlight", "Africa's wins with names, places and sources: artists, creators, startups, inventions, real builds."),
-    ("Sat 11:00", "Kesho Kutwa", "cover", "A 6-slide carousel on what's coming, in Kesho Mode, ending on a send."),
-    ("Sun 18:00", "Jua Asks", "glasspoll", "A spicy-but-clean story poll. The answers pick next week's topics."),
+    ("Mon 07:30", "Sauti ya Mwananchi · Civic 101", "sauti", "What Kenyans are already thinking, said out loud over a real photo, with the receipt and a dry line. Civic 101 rotates in."),
+    ("Tue 12:45", "Set It Straight · Follow the Money · Hatutasahau · Decode", "straight",
+     "Politicians' claims fact-checked, one public-money number, what the state did to Kenyans (we won't forget), the word in the news."),
+    ("Wed 18:30", "Promise Tracker · The Chapter Six Test", "promise", "A leader's promise against the record, or a leader measured against the Constitution's integrity standard. Every side, same tests."),
+    ("Thu 19:30", "Sauti ya Mwananchi · Scam alert · Explained simply", "usiibiwe", "The people's voice again, the scams hitting Kenyans now, and hard ideas in everyday terms."),
+    ("Fri 17:00", "Proudly African: Put Us On · Made in Africa", "spotlight", "Kenyans and Africans doing it right, with names, places and sources."),
+    ("Sat 11:00", "Kesho Kutwa", "cover", "A carousel on what's coming: bills, deadlines, election dates, tech that will change your life."),
+    ("Sun 18:00", "Jua Asks", "glasspoll", "A poll. The answers pick next week's topics."),
 ]
 
 GLOSSARY = [
-    ("Jua", "noun · verb", "Sun, and to know. The mascot's name and the brand's whole idea: light that helps you know."),
-    ("Kesho", "noun", "Tomorrow; the future. In the name and in <em>Kesho Mode</em>, the night look."),
-    ("Kesho iko hapa", "tagline", "“Tomorrow is here.” Used as a sign-off and on every profile."),
+    ("Jua", "noun · verb", "Sun, and to know. Light that helps you know."),
+    ("Kesho", "noun", "Tomorrow; the future. The red sun rising over the green horizon in the mark."),
+    ("Jua nchi yako", "tagline", "“Know your country.” On every profile and the launch post."),
+    ("Kesho iko hapa", "sign-off", "“Tomorrow is here.”"),
     ("Wanakesho", "noun", "“The people of tomorrow”: the community. Never “followers” or “fans”."),
-    ("Kesho kutwa", "series", "Literally “the day after tomorrow”; Kenyans use it for “someday”. Our future series."),
-    ("Kamusi ya Kesho", "collection", "The community dictionary. Every Decode post is a numbered entry."),
-    ("Vichekesho", "series", "\u201cComedies.\u201d Three-panel stick-cast comics: setup, turn, payoff. Always teaches one thing."),
-    ("Usiibiwe!", "series", "“Don't get robbed!” Scam awareness. Always in Shuka red."),
-    ("Anza sasa", "phrase", "“Start now.” The practical step that ends every future post."),
-    ("Leo / Kesho", "pair", "Today / tomorrow. How every prediction is framed: what exists, what's coming."),
-    ("Mchana / Usiku", "modes", "Day / night: the two visual moods. Bright cut-paper by day, orbits and circuits by night."),
-    ("Kenyan English", "voice", "How we write: English sentences with everyday Kenyan words (eh, sasa, kindly, manze, sawa). Anyone in Kenya or abroad can follow."),
-    ("Sasa!", "greeting", "Hi! How every intro and reel opens."),
-    ("Set It Straight", "series", "Our answer to falsehoods and put-downs about Kenya and Africa: the claim, quoted and sourced, then the truth."),
-    ("Proudly African", "Friday", "Africa is our business. Two celebrations for every critique, all specific and sourced."),
+    ("Kesho Kutwa", "series", "“The day after tomorrow”, Kenyan for “someday”. Our future series."),
+    ("Usiibiwe", "series", "“Don't get robbed.” Scam alerts, on the red background."),
+    ("Promise Tracker", "series", "A leader's own promise against the record. Kept, partly kept, stalled or broken."),
+    ("Civic 101", "series", "How Kenya works, one idea at a time. Every post cites the Constitution, the Act or the official page."),
+    ("Set It Straight", "series", "Our answer to falsehoods and put-downs: the claim, quoted and sourced, then the facts."),
+    ("Follow the Money", "series", "One public-money number, sourced, and how to check it yourself."),
+    ("Bwana Ahadi", "archetype", "“Mr Promise”: shorthand for promises that never arrive. In words only, never drawn."),
+    ("Kenyan English", "voice", "English sentences seasoned with everyday Kenyan words (sasa, manze, sawa). Anyone can follow."),
 ]
 
 MONEY = [
-    ("Jua Class", "Paid workshops", "AI and automation sessions for companies, campuses and creators. Those who can pay, pay; that keeps the feed free for everyone."),
-    ("Imeletwa na", "Clearly labelled brand deals", "Series and integrations with brands young Kenyans actually use: telcos, phones, fintech, edtech, fashion. Always labelled. Never betting, alcohol or predatory loans."),
-    ("Kamusi ya Kesho", "Digital products", "The collected dictionary, printable guides and templates, sold cheaply via M-Pesa and free for schools."),
-    ("Commissioned series", "Partners", "NGOs, counties and innovation programmes pay for explainer series on digital topics, in our voice, clearly credited."),
-    ("Autopilot builds", "Services", "The same content engine, set up for other brands. It's James's own skill set, and each build funds more free content."),
+    ("Jua Class", "Paid workshops", "AI and automation sessions for companies, campuses and creators. Those who can pay, pay; that keeps the feed free."),
+    ("Imeletwa na", "Labelled brand deals", "Series with brands young Kenyans use: telcos, phones, fintech, edtech, fashion. Always labelled. Never betting, alcohol or predatory loans."),
+    ("Kamusi ya Kesho", "Digital products", "The collected Decode dictionary, guides and templates, cheap via M-Pesa, free for schools."),
+    ("Commissioned series", "Partners", "NGOs and innovation programmes pay for explainer series on digital topics, clearly credited."),
+    ("Autopilot builds", "Services", "The same content engine, set up for other brands. Each build funds more free content."),
 ]
 
 DAY_90 = [
-    ("Weeks 1–2", "Claim @juakesho everywhere. Set up profiles with the kit, the WhatsApp Channel and the Telegram bot. Post Karibu plus the first 5 posts by hand."),
-    ("Weeks 3–6", "Switch on the autopilot: 7 posts a week, 15 minutes of approvals. Let the Sunday poll choose the next topic."),
-    ("Weeks 7–10", "First Kesho Kutwa reels from the carousel scripts. Run a free pilot Jua Class for 20 small businesses and collect real feedback."),
-    ("Weeks 11–13", "Build the sponsor deck from real reach and save numbers. Pitch one community radio station on the weekly 2-minute segment."),
+    ("Weeks 1–2", "Claim @juakesho everywhere. Set up profiles with the kit, the WhatsApp Channel and the Telegram bot. Post the launch set."),
+    ("Weeks 3–6", "Autopilot on: 7 posts a week, about 15 minutes of approvals. Let the Sunday poll choose topics."),
+    ("Weeks 7–10", "Reels every week. Run a free pilot Jua Class for 20 small businesses and collect feedback."),
+    ("Weeks 11–13", "Build the sponsor deck from real reach and saves. Pitch one community radio station on a weekly segment."),
 ]
+
+FLOW = [
+    ("Sun 17:00", "Plan", "calendar.json picks each day's series, audience lane and background."),
+    ("", "Draft", "A free AI writer (GitHub Models) writes the week in our voice, with a photo search for each post."),
+    ("", "Guard", "Clean, grown-up, sourced, no name-calling, no campaigning. Failures go back for repair."),
+    ("", "Critic", "A tough-editor pass scores every post; weak ones are rewritten."),
+    ("", "Design", "Real photo, headline fitted with the real font, then visual QA on every pixel of text."),
+    ("You · 15 min", "Approve", "Each design arrives on Telegram with ✅ / ❌. Nothing posts without your tap."),
+    ("Every 2 h", "Publish", "Approved posts go live on Instagram and Facebook at their time."),
+]
+
+
+def ramp_html(key: str, name: str, use: str) -> str:
+    cells = []
+    for step, hex_ in P[key].items():
+        on = P["ink"]["950"] if contrast(hex_, P["ink"]["950"]) >= contrast(hex_, "#FFFFFF") else "#FFFFFF"
+        brand = ' class="is-brand"' if hex_ == B["colors"].get({"ink": "usiku", "shuka": "shuka", "chai": "chai"}[key], {}).get("hex") else ""
+        cells.append(f'<li{brand} style="--c:{hex_};--t:{on}"><b>{step}</b><code>{hex_}</code></li>')
+    return (f'<div class="ramp"><div class="ramp-head"><h3>{e(name)}</h3><p>{e(use)}</p></div>'
+            f'<ol class="shades">{"".join(cells)}</ol></div>')
+
+
+def pair(fg: str, bg: str, label: str) -> str:
+    r = contrast(fg, bg)
+    return (f'<li style="--f:{fg};--b:{bg}"><span class="pair-demo">Aa</span><span><b>{e(label)}</b>'
+            f'<small>{r:.1f}:1 · {"AAA" if r >= 7 else "AA" if r >= 4.5 else "AA large"}</small></span></li>')
 
 
 def build_body() -> str:
     lock_light = svg_inline(LOGO / "wordmark-on-light.svg", "logo logo--light", "Jua Kesho")
     lock_dark = svg_inline(LOGO / "wordmark-on-dark.svg", "logo logo--dark", "Jua Kesho")
+    ink, shuka, chai = P["ink"], P["shuka"], P["chai"]
+    ramps = "".join(ramp_html(*f) for f in FAMILIES)
+    pairs = "".join([
+        pair(ink["50"], ink["950"], "Paper on night (text)"),
+        pair(ink["300"], ink["950"], "Ink 300 on night (body)"),
+        pair(shuka["400"], ink["950"], "Red on night (labels, numbers)"),
+        pair("#FFFFFF", shuka["600"], "White on red (tags, verdicts, alerts)"),
+        pair("#FFFFFF", chai["700"], "White on green (kept, true, Africa)"),
+        pair(ink["900"], ink["50"], "Ink on paper"),
+        pair(shuka["600"], ink["50"], "Red on paper (labels)"),
+        pair(chai["300"], ink["950"], "Green on night (proof numbers)"),
+    ])
 
-    swatches = "".join(
-        f'<li class="sw" style="--c:{v["hex"]};--t:{v["text"]}"><span class="chip"><b>{k.capitalize()}</b><code>{v["hex"]}</code></span>'
-        f'<span class="sw-txt">{e(v["meaning"])}</span></li>'
-        for k, v in B["colors"].items())
+    def thumb(pid: str | None, tpl: str, w: int = 220) -> str:
+        post = next((p for p in POSTS if (pid and p["id"] == pid) or (not pid and p["template"] == tpl)), None)
+        if not post:
+            return ""
+        h = 391 if post.get("size") == "story" else 275
+        return f'<img src="{img_uri(EXP / "posts" / (post["id"] + ".png"), w)}" alt="{e(tpl)} example" width="{w // 2}" height="{h // 2 if w == 220 else h}">'
 
-    expressions = "".join(
-        f'<figure class="ex">{mascot(x)}<figcaption><b>{x}</b><span>{e(u)}</span></figcaption></figure>'
-        for x, u in EXPR_USE.items())
-
-    day = [
-        ("Blobs", bk.blob(90, 80, 60, C["jua"], 3) + bk.blob(200, 90, 45, C["jacaranda"], 7) + bk.blob(150, 40, 26, C["waridi"], 9)),
-        ("Kanga band", bk.kanga_band(10, 55, 260, 40, [C["usiku"], C["jua"], C["shuka"], C["chai"], C["jacaranda"]], 4)),
-        ("Squiggle & dots", bk.squiggle(20, 70, 240, C["shuka"], 5, amp=16, waves=4, width=10) + bk.dots(30, 110, 220, 30, C["pwani"], 2, n=10)),
-        ("Tea leaf", bk.leaf(100, 80, 55, C["chai"], -25, 1) + bk.leaf(185, 90, 40, C["jua"], 30, 2)),
-    ]
-    night = [
-        ("Orbits", f'<g transform="translate(95 20) scale(.45)">{bk.mascot("visor")}</g>' + bk.orbit(140, 70, 115, 36, -12, C["pwani"], 3, planets=2)),
-        ("Circuit kanga", bk.circuit_kanga(10, 50, 260, 44, [C["jua"], C["pwani"], C["waridi"], C["jacaranda"]], 2)),
-        ("Circuits", bk.circuit(10, 10, 260, 130, C["pwani"], 8, traces=6)),
-        ("LED sun", bk.pixel_sun(140, 75, 48, cell=12, seed=3)),
-    ]
-    day_html = "".join(f'<figure class="dev">{shape(s, 280, 150, n)}<figcaption>{n}</figcaption></figure>' for n, s in day)
-    night_html = "".join(f'<figure class="dev dev--night">{shape(s, 280, 150, n, C["usiku"])}<figcaption>{n}</figcaption></figure>' for n, s in night)
-
-    series_rows = ""
-    for when, name, tpl, what in SERIES:
-        post = next((p for p in POSTS if p["template"] == tpl), None)
-        thumb = f'<img src="{img_uri(EXP / "posts" / (post["id"] + ".png"), 220)}" alt="{e(name)} example" width="110" height="{275 if tpl == "poll" else 138}">' if post else ""
-        series_rows += f'<li class="series-row"><span class="when">{when}</span><div><h3>{e(name)}</h3><p>{e(what)}</p></div>{thumb}</li>'
-
-    lanes = "".join(
-        f'<li class="lane" style="--c:{C[LANE_ICON_BG[k]]};--t:{B["colors"][LANE_ICON_BG[k]]["text"]}"><b>{k}</b><span>{e(v["who"])}</span><small>{e(v["voice"])}</small></li>'
-        for k, v in CAL["lanes"].items())
-
+    series_rows = "".join(
+        f'<li class="series-row"><span class="when">{when}</span><div><h3>{e(name)}</h3><p>{e(what)}</p></div>{thumb(None, tpl)}</li>'
+        for when, name, tpl, what in SERIES)
+    lanes = "".join(f'<li><b>{e(k)}</b><span>{e(v["who"])}</span></li>' for k, v in CAL["lanes"].items())
     gallery = "".join(
-        f'<figure class="g-item{" g-story" if p.get("size") == "story" else ""}"><img src="{img_uri(EXP / "posts" / (p["id"] + ".png"), 360)}" alt="{e(p["id"])}" width="360" height="{640 if p.get("size") == "story" else 450}"><figcaption>{e(p["id"])}</figcaption></figure>'
+        f'<figure class="g-item"><img src="{img_uri(EXP / "posts" / (p["id"] + ".png"), 400)}" alt="{e(p["id"])}" '
+        f'width="400" height="{711 if p.get("size") == "story" else 500}" loading="lazy"><figcaption>{e(p["id"])}</figcaption></figure>'
         for p in POSTS)
-
-    profiles = (f'<figure class="pf pf--wide"><img src="{img_uri(EXP / "profiles" / "youtube-banner-2560x1440.png", 900)}" alt="YouTube banner" width="900" height="506"><figcaption>YouTube 2560×1440 · key content inside the safe zone</figcaption></figure>'
-                f'<figure class="pf"><img src="{img_uri(EXP / "profiles" / "x-header-1500x500.png", 700)}" alt="X header" width="700" height="233"><figcaption>X header 1500×500</figcaption></figure>'
-                f'<figure class="pf"><img src="{img_uri(EXP / "profiles" / "facebook-cover-1640x624.png", 700)}" alt="Facebook cover" width="700" height="266"><figcaption>Facebook cover 1640×624</figcaption></figure>'
-                f'<figure class="pf pf--av"><img src="{img_uri(EXP / "profiles" / "avatar-jacaranda.png", 300)}" alt="Profile picture" width="150" height="150"><figcaption>Avatar · every platform</figcaption></figure>')
-
-    glossary = "".join(f'<div class="gl"><dt>{e(w)}<small>{e(k)}</small></dt><dd>{d}</dd></div>' for w, k, d in GLOSSARY)
-    money = "".join(f'<li class="money"><span class="m-tag">{e(t)}</span><h3>{e(n)}</h3><p>{e(d)}</p></li>' for n, t, d in MONEY)
+    prof = EXP / "profiles"
+    profiles = (f'<figure class="pf pf--wide"><img src="{img_uri(prof / "youtube-banner-2560x1440.png", 900)}" alt="YouTube banner" width="900" height="506"><figcaption>YouTube 2560×1440, key content in the safe zone</figcaption></figure>'
+                f'<figure class="pf"><img src="{img_uri(prof / "x-header-1500x500.png", 700)}" alt="X header" width="700" height="233"><figcaption>X header 1500×500</figcaption></figure>'
+                f'<figure class="pf"><img src="{img_uri(prof / "facebook-cover-1640x624.png", 700)}" alt="Facebook cover" width="700" height="266"><figcaption>Facebook cover 1640×624</figcaption></figure>'
+                f'<figure class="pf pf--av"><img src="{img_uri(prof / "avatar-night.png", 300)}" alt="Profile picture, night" width="140" height="140"><img src="{img_uri(prof / "avatar-red.png", 300)}" alt="Profile picture, red" width="140" height="140"><figcaption>Profile pictures: survive the circle crop</figcaption></figure>')
+    glossary = "".join(f'<div class="gl"><dt>{e(w)}<small>{e(k)}</small></dt><dd>{e(d)}</dd></div>' for w, k, d in GLOSSARY)
+    money = "".join(f'<li><span class="m-tag">{e(t)}</span><h3>{e(n)}</h3><p>{e(d)}</p></li>' for n, t, d in MONEY)
     plan90 = "".join(f'<li><span class="when">{w}</span><p>{e(d)}</p></li>' for w, d in DAY_90)
-
-    flow_steps = [
-        ("Sun 17:00", "Plan", "calendar.json picks each day's series, lane and colour."),
-        ("", "Draft", "AI writes the week in the Jua Kesho voice, fed with what worked last month."),
-        ("", "Guard", "Clean-for-everyone, brand rules, length and source checks. Failures go back for one AI repair."),
-        ("", "Design", "The renderer builds every post with its own irregular shapes."),
-        ("You · 15 min", "Approve", "Each design arrives on Telegram with ✅ / ❌. Nothing posts without your tap."),
-        ("Every 2 h", "Publish", "Approved posts go live on Instagram and Facebook at their time."),
-        ("Weekly", "Learn", "Saves, shares and reach score every post and steer next week's draft."),
-    ]
-    flow = "".join(f'<li><span class="f-when">{e(w)}</span><b>{e(n)}</b><span>{e(d)}</span></li>' for w, n, d in flow_steps)
-
-    cast_row = ""
-    for who, meta in bk.CAST.items():
-        fig = bk.stick(who, 90, 250, "stand", "happy")
-        cast_row += (f'<figure class="cast"><svg viewBox="0 0 180 270" role="img" aria-label="{e(meta["label"])}">{fig}</svg>'
-                     f'<figcaption><b>{e(meta["label"])}</b><span>{e(meta["who"])}</span></figcaption></figure>')
-    pose_list = [("wave", "shosh", "happy"), ("point", "makanga", "happy"), ("think", "mama_mboga", "flat"),
-                 ("cheer", "student", "happy"), ("walk", "pro", "happy"), ("phone", "boda", "worried"), ("shrug", "farmer", "worried")]
-    poses = "".join(
-        f'<figure class="pose"><svg viewBox="0 0 180 270" role="img" aria-label="{p} pose">{bk.stick(w, 90, 250, p, m, phone=(p == "phone"))}</svg><figcaption>{p}</figcaption></figure>'
-        for p, w, m in pose_list)
+    flow = "".join(f'<li><span class="f-when">{e(w)}</span><b>{e(n)}</b><span>{e(d)}</span></li>' for w, n, d in FLOW)
     reel_strip = ""
-    reel_dir = EXP / "reels"
-    for pid in ("01-hack-lecture-notes", "05-vichekesho-cv", "14-money-idle-funds", "17-cant-wait"):
-        cover = reel_dir / f"{pid}-cover.jpg"
+    for pid in ("01-hack-lecture-notes", "14-money-idle-funds", "18-straight-africa-country", "17-cant-wait"):
+        cover = EXP / "reels" / f"{pid}-cover.jpg"
         if cover.exists():
             reel_strip += f'<figure class="reel"><img src="{img_uri(cover, 300)}" alt="Reel: {pid}" width="150" height="267"><figcaption>{pid}.mp4</figcaption></figure>'
-    if not reel_strip:
-        reel_strip = '<p class="note">Run <code>python video.py</code> to render the Reels.</p>'
-    sheet_png = EXP / "symbols-sheet.png"
-    symbols_sheet = img_uri(sheet_png, 1400, 82) if sheet_png.exists() else ""
-    comic_post = next((p for p in POSTS if p["template"] == "vichekesho"), None)
-    comic = img_uri(EXP / "posts" / (comic_post["id"] + ".png"), 520) if comic_post else ""
-    stickers = ""
-    for f in sorted((EXP / "stickers").glob("*.webp")):
-        im = Image.open(f).convert("RGBA").resize((200, 200), Image.LANCZOS)
-        buf = io.BytesIO()
-        im.save(buf, "WEBP", quality=80)
-        stickers += f'<img src="data:image/webp;base64,{base64.b64encode(buf.getvalue()).decode()}" alt="{f.stem} sticker" width="100" height="100">'
+    kinds = {"self": "Their own nickname: fine in our voice.", "neutral": "Factual or affectionate: fine in our voice.",
+             "public-mocking": "Only as a quote of what Kenyans say, then the facts.", "slogan": "Never in our voice; only inside a claim we check."}
+    nick_cards = "".join(f'<li><b>{e(n["nickname"])}</b><span>{e(n.get("name", "Campaign slogan"))}'
+                         f'{" · " + e(n["office"]) if n.get("office") else ""}. {e(kinds[n["kind"]])}</span></li>'
+                         for n in json.loads((HERE / "content" / "nicknames.json").read_text(encoding="utf-8"))["names"])
+    examples = "".join(f'<figure class="ex">{thumb(pid, "", 520)}</figure>' for pid in ("00b-sauti-payslip", "01b-civic-six-votes", "18-straight-africa-country"))
 
     return f"""
-<header class="top">
+<header class="topbar">
   <nav class="toc" aria-label="Sections">
-    <a href="#idea">Idea</a><a href="#jua">Jua</a><a href="#cast">Cast</a><a href="#logo">Logo</a><a href="#colour">Colour</a><a href="#type">Type</a>
-    <a href="#shapes">Shapes</a><a href="#symbols">Symbols</a><a href="#series">Series</a><a href="#lanes">Audience</a><a href="#more">Want more</a>
-    <a href="#trend">Trends</a><a href="#clear">Say it</a><a href="#proud">Proudly African</a><a href="#straight">Set It Straight</a><a href="#photos">Photos</a><a href="#see">See Through It</a><a href="#motion">Motion</a><a href="#quality">Quality</a><a href="#lore">Lore</a><a href="#drops">Drops</a><a href="#voice">Dictionary</a><a href="#launch">Launch</a><a href="#autopilot">Autopilot</a><a href="#money">Money</a>
+    <a href="#idea">Idea</a><a href="#logo">Logo</a><a href="#colour">Colour</a><a href="#type">Type</a><a href="#layout">Layout</a>
+    <a href="#photos">Photos</a><a href="#week">The week</a><a href="#voice">Voice</a><a href="#speak">Speaking up</a>
+    <a href="#office">Office holders</a><a href="#motion">Motion</a><a href="#quality">Quality</a><a href="#launch">Launch set</a>
+    <a href="#autopilot">Autopilot</a><a href="#money">Money</a>
   </nav>
 </header>
 
 <main class="book">
   <section class="hero" aria-labelledby="t-hero">
-    <div class="hero-copy">
-      <p class="hand hero-hi">Sasa, Wanakesho!</p>
-      <h1 id="t-hero">{lock_light}{lock_dark}<span class="sr">Jua Kesho</span></h1>
-      <p class="tag">{e(B['tagline_sw'])}</p>
-      <p class="lede">A faceless Kenyan content brand for young people who live online: sharp, educated, always scrolling, and not yet tapping into AI and the future. Not a school. Hacks, takes, comics and drops that make them the first in their circle to know.</p>
-      <p class="meaning"><b>jua</b> <span>= the sun</span> <b>+</b> <span>to know</span> &nbsp;·&nbsp; <b>kesho</b> <span>= tomorrow</span></p>
-    </div>
-    <div class="hero-art" aria-hidden="true">{mascot('happy', 'm m--hero')}</div>
+    <h1 id="t-hero">{lock_light}{lock_dark}<span class="sr">Jua Kesho</span></h1>
+    <p class="tagline">{e(B['tagline_sw'])} <span>{e(B['tagline_en'])}</span></p>
+    <p class="lede">An independent Kenyan channel for 18–30s: the general knowledge every Kenyan should have, politics with receipts, money, scams and the future. Sourced, fearless, non-partisan, clean. The revolution we drive is an informed Kenya.</p>
   </section>
 
   <section class="manifesto" aria-label="Manifesto">
-    <p class="man-kicker hand">the manifesto</p>
+    <p class="kicker">Manifesto</p>
     <p class="man-line">Africa can't wait.</p>
-    <p class="man-sub">Not for permission. Not for &ldquo;next year&rdquo;. Tomorrow is already here, and it belongs to whoever learns it first. Wake up. Build. Do it right.</p>
+    <p class="man-sub">Know how your country works. Check every claim. Follow the money. Register, vote, show up for public participation, and hold every leader to their word. Peacefully, legally, loudly.</p>
   </section>
 
   <section id="idea" class="sec" aria-labelledby="t-idea">
-    <h2 id="t-idea"><i class="mk" style="--c:{C['jua']}"></i>The idea</h2>
-    <p class="big">The future belongs to the young, and most of them are one good post away from using it. Jua Kesho is the account they send to their friends: funny, fast, Kenyan, and always one step ahead.</p>
+    <p class="kicker">01</p><h2 id="t-idea">The idea</h2>
+    <p class="big">Look like the channels people trust, sound like the friend who is always first to know. A real photo, one plain headline, the facts, and something to do today. Jua means sun, and to know: <em>Jua nchi yako</em>, know your country.</p>
     <ul class="pillars">
-      <li style="--c:{C['jacaranda']}"><b>Know</b><span>One clear idea per post. Useful the same day.</span></li>
-      <li style="--c:{C['shuka']}"><b>Laugh</b><span>Funny through situations and analogies, never at people.</span></li>
-      <li style="--c:{C['chai']}"><b>Belong</b><span>The Wanakesho: everyone welcome, every continent invited.</span></li>
-      <li style="--c:{C['usiku']}"><b>Clean</b><span>Edgy about ideas, never dirty, never cruel. Safe to share anywhere.</span></li>
+      <li><b>Know</b><span>One clear idea per post, useful the same day.</span></li>
+      <li><b>Prove</b><span>Every number and claim carries a source. Accuracy is what makes us fearless.</span></li>
+      <li><b>Belong</b><span>Wanakesho: every Kenyan welcome, whatever their party, tribe or county.</span></li>
+      <li><b>Clean</b><span>Grown-up and workplace-safe. Edgy about ideas, never cruel, never dirty.</span></li>
     </ul>
-    <div class="modes">
-      <div class="mode mode--day"><span class="hand">Mchana mode</span><p>Daytime. Milk paper, sun-bright colours and hand-cut shapes. Warm, playful, of the soil.</p></div>
-      <div class="mode mode--night"><span class="hand">Usiku · Kesho Mode + Glass</span><p>Night-time. Frosted-glass cards over glowing colour clouds, orbits and circuits: African tradition wired into tomorrow. The main look for hacks, takes and the future.</p></div>
-    </div>
-  </section>
-
-  <section id="jua" class="sec" aria-labelledby="t-jua">
-    <h2 id="t-jua"><i class="mk" style="--c:{C['shuka']}"></i>Meet Jua</h2>
-    <p class="note">The host of a faceless brand. A sun whose rays are every colour in the palette: one light, many people. Jua never mocks, always explains, and changes expression to match the post.</p>
-    <ul class="reach" style="margin:18px 0">
-      <li><b>Who</b><span>The sun over Nairobi that has already seen tomorrow. Big-sibling energy: first to know, explains it in two lines, never lets you get scammed.</span></li>
-      <li><b>Traits</b><span>Curious, quick, funny, a little extra. Proud of Africa without being defensive. Allergic to hype.</span></li>
-      <li><b>Always believes</b><span>Africa can't wait. Free knowledge beats gatekept knowledge. Builders over complainers. Verify before you share. Nobody should pay to get paid.</span></li>
-      <li><b>Never</b><span>Pretends to be a human, invents testimonials or numbers, begs for likes, attacks people. Jua is openly a mascot: that's the trust.</span></li>
-    </ul>
-    <div class="exprs">{expressions}</div>
-  </section>
-
-  <section id="cast" class="sec" aria-labelledby="t-cast">
-    <h2 id="t-cast"><i class="mk" style="--c:{C['udongo']}"></i>The stick cast</h2>
-    <p class="note">Faceless, but human. A stick figure has no skin tone, body type or bank balance, so everyone from the boardroom to the boda stage sees themselves in it. Each character is recognised by props and colour. All of them share one skeleton, so they move with real human proportions in every post.</p>
-    <div class="cast-row">{cast_row}</div>
-    <h3 class="sub">Poses</h3>
-    <div class="pose-row">{poses}</div>
-    <div class="comic-demo">
-      <img src="{comic}" alt="Vichekesho comic: Mama Mboga spots a fake 'sent by mistake' SMS" width="520" height="650">
-      <div><span class="hand">Vichekesho</span><p>Three panels: setup, turn, payoff. Speech bubbles point at heads and SMS bubbles point at phones, placed automatically. The AI only writes who says what; the layout takes care of itself.</p></div>
-    </div>
   </section>
 
   <section id="logo" class="sec" aria-labelledby="t-logo">
-    <h2 id="t-logo"><i class="mk" style="--c:{C['jacaranda']}"></i>Logo</h2>
-    <p class="note">Lowercase <b>jua kesho</b> in Unbounded ExtraBold, set close. The dot of the <b>j</b> is a tiny sun: the one piece of colour in the wordmark. Files are outlined SVGs in <code>assets/logo/</code>.</p>
+    <p class="kicker">02</p><h2 id="t-logo">Logo</h2>
+    <p class="note">The mark is the sun rising over the horizon: <b>Jua</b> (sun) + <b>Kesho</b> (tomorrow), in two shapes. The wordmark is JUA KESHO in Inter Tight Black, its capitals exactly as tall as the mark. All files are outlined SVGs in <code>assets/logo/</code>.</p>
     <div class="logos">
-      <div class="lg lg--paper">{svg_inline(LOGO / 'wordmark-on-light.svg', 'lg-svg', 'Wordmark on light')}</div>
-      <div class="lg lg--night">{svg_inline(LOGO / 'wordmark-on-dark.svg', 'lg-svg', 'Wordmark on dark')}</div>
-      <div class="lg lg--jac">{svg_inline(LOGO / 'wordmark-on-dark.svg', 'lg-svg', 'Wordmark on jacaranda')}</div>
-      <div class="lg lg--stack">{svg_inline(LOGO / 'stacked-on-light.svg', 'lg-svg lg-svg--stack', 'Stacked logo')}</div>
+      <div class="lg lg--night">{svg_inline(LOGO / 'wordmark-on-dark.svg', 'lg-svg', 'Wordmark on night')}</div>
+      <div class="lg lg--paper">{svg_inline(LOGO / 'wordmark-on-light.svg', 'lg-svg', 'Wordmark on paper')}</div>
+      <div class="lg lg--red">{svg_inline(LOGO / 'wordmark-mono-light.svg', 'lg-svg', 'One-colour wordmark on red')}</div>
+      <div class="lg lg--icons">{svg_inline(LOGO / 'icon-night.svg', 'lg-ic', 'Icon, night')}{svg_inline(LOGO / 'icon-red.svg', 'lg-ic', 'Icon, red')}{svg_inline(LOGO / 'stacked-on-dark.svg', 'lg-stack', 'Stacked logo')}</div>
     </div>
     <ul class="rules">
-      <li>Keep a clear space the size of the sun-dot around the wordmark.</li>
-      <li>Wordmark minimum width 120 px. Smaller than that, use Jua (the icon) instead.</li>
-      <li>Never recolour the letters with accents, add shadows or gradients, or stretch it.</li>
+      <li>Clear space: the height of the sun on every side.</li>
+      <li>Minimum width 120&nbsp;px for the wordmark; below that, use the icon.</li>
+      <li>On red or green, use the one-colour white version (the sun would disappear). Never recolour, outline, shadow or stretch it.</li>
+      <li>Flag colours, never the flag itself or the coat of arms: national symbols are protected by law; their colours are free to use.</li>
     </ul>
   </section>
 
   <section id="colour" class="sec" aria-labelledby="t-colour">
-    <h2 id="t-colour"><i class="mk" style="--c:{C['chai']}"></i>Colour</h2>
-    <p class="note">Named in Kiswahili after things every Kenyan knows. Each chip shows its approved text colour, and every pair passes WCAG AA contrast for text at post sizes.</p>
-    <ul class="swatches">{swatches}</ul>
+    <p class="kicker">03</p><h2 id="t-colour">Colour</h2>
+    <p class="note">The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (in Kenyan politics yellow reads as UDA and orange as ODM, so we use neither). Three families, eleven shades each, built in OKLCH so every step looks evenly spaced. Outlined swatches are the brand values. Ink does the work; red signs it and sounds the alarm; green only ever means good news. Regenerate with <code>python palette.py</code>.</p>
+    <div class="ramps">{ramps}</div>
+    <h3 class="sub">Approved pairs</h3>
+    <ul class="pairs">{pairs}</ul>
+    <ul class="rules">
+      <li>One red highlight per design. If everything is red, nothing is.</li>
+      <li>Red: the brand, and false, scam, broken. Green: true, kept, a win. Never use green as decoration.</li>
+      <li>Backgrounds: night (default), red (scam alerts, launch moments), green (Made in Africa), paper (explainers).</li>
+    </ul>
   </section>
 
   <section id="type" class="sec" aria-labelledby="t-type">
-    <h2 id="t-type"><i class="mk" style="--c:{C['ziwa']}"></i>Type</h2>
+    <p class="kicker">04</p><h2 id="t-type">Type</h2>
     <div class="types">
-      <div class="ty"><span class="lbl">Unbounded · display</span><p class="ty-d">Kesho iko hapa.</p><small>Headlines, words, numbers. Wide and confident, it reads well from far away on a small screen.</small></div>
-      <div class="ty"><span class="lbl">Figtree · body</span><p class="ty-b">A computer that has learnt from millions of examples, so now it can guess the answer.</p><small>Explanations, steps, captions. Friendly and very readable.</small></div>
-      <div class="ty"><span class="lbl">Caveat · hand notes</span><p class="ty-h">like the makanga who knows your stage!</p><small>Asides, jokes and punchlines, like someone scribbled on the poster.</small></div>
+      <div class="ty"><span class="lbl">Inter Tight · ExtraBold 800 · −2.5% tracking</span><p class="ty-d">Sh304bn sitting idle in 14 projects</p><small>Headlines and numbers. Sized by measuring the real font file, so a headline never spills out of its box.</small></div>
+      <div class="ty"><span class="lbl">Inter Tight · ExtraBold 800 · uppercase · +10% tracking</span><p class="ty-l">Why you should care</p><small>Labels and series tags. Short, in red.</small></div>
+      <div class="ty"><span class="lbl">Inter · Medium 500 / SemiBold 600</span><p class="ty-b">59% of the Sh515bn set aside for 14 flagship projects over five years was never used, says the Auditor-General.</p><small>Body text, steps, facts. Never below 26&nbsp;px on a 1080&nbsp;px post.</small></div>
     </div>
   </section>
 
-  <section id="shapes" class="sec" aria-labelledby="t-shapes">
-    <h2 id="t-shapes"><i class="mk" style="--c:{C['waridi']}"></i>Shapes</h2>
-    <p class="note">Nothing is a perfect circle or a plain rectangle. Every post generates its own irregular composition from a seed, so no two look alike, and the same post always renders the same way.</p>
-    <h3 class="sub">Mchana</h3><div class="devs">{day_html}</div>
-    <h3 class="sub">Usiku · Kesho Mode</h3><div class="devs">{night_html}</div>
-  </section>
-
-  <section id="symbols" class="sec" aria-labelledby="t-symbols">
-    <h2 id="t-symbols"><i class="mk" style="--c:{C['jua']}"></i>Symbols: the picture is the message</h2>
-    <p class="note">Every post carries one symbol that <b>is</b> its message: the hook for a scam, the puppet for bought hashtags, the idle crane for billions that never moved. The symbol and the headline must say it in one second, before anyone reads the body. The writer chooses it; the renderer measures where every line of text landed and places the symbol in the largest free space, as big as it fits (up to 420&nbsp;px), never over text. A giant faint copy sits behind the glass.</p>
-    <img class="wide" src="{symbols_sheet}" alt="The Jua Kesho symbol library: 33 sticker-style illustrations, each with one meaning">
-  </section>
-
-  <section id="series" class="sec" aria-labelledby="t-series">
-    <h2 id="t-series"><i class="mk" style="--c:{C['udongo']}"></i>The week</h2>
-    <p class="note">Seven series, each owning a day and a time. When a series owns a day, people start waiting for it.</p>
-    <ul class="series">{series_rows}</ul>
-  </section>
-
-  <section id="lanes" class="sec" aria-labelledby="t-lanes">
-    <h2 id="t-lanes"><i class="mk" style="--c:{C['pwani']}"></i>Who it's for</h2>
-    <p class="note">Young, online, sharp. Each post is written for one <b>lane</b>, and lanes rotate week by week. Every industry gets covered through the tech angle: {', '.join(CAL.get('industries', []))}.</p>
-    <ul class="lanes">{lanes}</ul>
-    <h3 class="sub">Where they are</h3>
-    <ul class="reach">
-      <li><b>TikTok &amp; Reels</b><span>Discovery. Carousels become 20–30s slideshows with a voice-over script every week.</span></li>
-      <li><b>Instagram carousels</b><span>Saves and sends. The highest engagement rate of any format.</span></li>
-      <li><b>WhatsApp Channel &amp; stickers</b><span>Where Kenya actually talks. Stickers travel further than posts.</span></li>
-      <li><b>X</b><span>Hot takes and threads: the Cap or No Cap? and Still in 2026? formats.</span></li>
+  <section id="layout" class="sec" aria-labelledby="t-layout">
+    <p class="kicker">05</p><h2 id="t-layout">Layout</h2>
+    <p class="note">One grid for everything, the way news channels do it. 72&nbsp;px margins. Top bar: series tag left, context right. Then label, headline, the facts as ruled rows, and a footer rule with the logo. No shapes, stickers, mascots or handwriting: the photo and the type carry it.</p>
+    <div class="examples">{examples}</div>
+    <ul class="rules">
+      <li>Headline first, always plain words: a stranger knows the topic in two seconds.</li>
+      <li>Lists are numbered rows (01, 02, 03) between thin rules. Verdicts are flat solid labels: FALSE, CAP, SCAM.</li>
+      <li>If text grows, the layout shrinks the headline first, then the body, and checks it again. Nothing ever runs into the footer.</li>
     </ul>
-  </section>
-
-  <section id="more" class="sec" aria-labelledby="t-more">
-    <h2 id="t-more"><i class="mk" style="--c:{C['jua']}"></i>Want more</h2>
-    <p class="note">How the content keeps people coming back. The AI drafter is told to do all of these every week.</p>
-    <ol class="hooks">
-      <li><b>Rituals</b><span>Same series, same day, same time: <em>Jumatano ni Usiibiwe.</em></span></li>
-      <li><b>Open loops</b><span>Every caption teases the next post. Carousels end on a question the next one answers.</span></li>
-      <li><b>Collecting</b><span>Every Decode is a numbered entry in <em>Kamusi ya Kesho</em>. People want the full set.</span></li>
-      <li><b>Say in it</b><span>Sunday's poll picks topics, Shosh's questions come from followers, and replies get featured.</span></li>
-      <li><b>Real payoff</b><span>One thing you can use or share today, every post. Hype without payoff kills trust.</span></li>
-      <li><b>It learns</b><span>Saves, shares and reach score each post, and what worked shapes next week automatically.</span></li>
-    </ol>
-  </section>
-
-  <section id="trend" class="sec sec--night" aria-labelledby="t-trend">
-    <h2 id="t-trend"><i class="mk" style="--c:{C['jua']}"></i>Trend playbook</h2>
-    <p class="note">What the platforms reward in 2026, and how every post is built to match. The AI drafter follows these rules every week.</p>
-    <ul class="play">
-      <li><b>Hook in under 2 seconds</b><span>Instagram guidance points to the first ~1.7 seconds; TikTok to the first 3. Our hooks are 7 words max, in the Caveat hand, top of every design.</span></li>
-      <li><b>Design for sends</b><span>DM shares carry several times the weight of likes for reaching non-followers. Every caption names who to send it to.</span></li>
-      <li><b>Saves &amp; shares over likes</b><span>On TikTok, saves and shares now outrank likes. Hacks and steps get saved; takes get shared.</span></li>
-      <li><b>Carousels with cliffhangers</b><span>The highest engagement rate of any Instagram format. Slide 1 forces the swipe; the last slide asks for a send.</span></li>
-      <li><b>Searchable</b><span>Keywords in titles, on-screen text and captions: people search TikTok and Instagram like Google.</span></li>
-      <li><b>Original only</b><span>Reposts and watermarks get cut from recommendations. Everything here is made by our own renderer.</span></li>
-      <li><b>Ride trends safely</b><span>A daily Google Trends feed for Kenya, Nigeria, South Africa and the US. Politics, tragedy and betting are filtered out automatically; at most 2 trend-jacks a week, only with a real tech angle.</span></li>
-      <li><b>Edutainment</b><span>Teach one thing, make it fun. It's the most reliable route to the share button.</span></li>
-    </ul>
-    <p class="note small">Sources: <a href="https://www.dataslayer.ai/blog/instagram-algorithm-2025-complete-guide-for-marketers">Dataslayer on Mosseri's ranking signals</a> · <a href="https://sproutsocial.com/insights/tiktok-algorithm/">Sprout Social on the TikTok algorithm</a> · <a href="https://www.contentgrip.com/brands-thriving-with-gen-z/">ContentGrip on Gen Z brands</a> · <a href="https://trends.google.com/trending?geo=KE">Google Trends, Kenya</a></p>
-  </section>
-
-  <section id="lore" class="sec" aria-labelledby="t-lore">
-    <h2 id="t-lore"><i class="mk" style="--c:{C['waridi']}"></i>Lore &amp; running jokes</h2>
-    <p class="note">Brands Gen Z loves behave like fandoms: characters with backstories, inside jokes, drops. Ours are below. The drafter keeps these going week to week.</p>
-    <ul class="lore">
-      <li><b>Jua's origin</b><span>The sun has been shining for about 4.6 billion years and only just discovered the internet. Wildly optimistic, terrible at hiding excitement, allergic to scams.</span></li>
-      <li><b>Jua vs Mvua</b><span>The Nairobi rain keeps "cancelling Jua's plans". Every rainy week, Jua posts from "behind the clouds".</span></li>
-      <li><b>Shosh, Jua's biggest fan</b><span>Forwards every post to 12 WhatsApp groups within a minute. Occasionally out-smarts the Techie.</span></li>
-      <li><b>Application no. 41</b><span>The Student is always on their next job application. The count keeps going up until the day they land one, which becomes a celebration post.</span></li>
-      <li><b>"It's actually simple"</b><span>The Techie's catchphrase, right before explaining something in far too much detail.</span></li>
-      <li><b>The Makanga knows every route</b><span>...including data routes, cloud stages and how packets "alight".</span></li>
-    </ul>
-  </section>
-
-  <section id="critique" class="sec" aria-labelledby="t-crit">
-    <h2 id="t-crit"><i class="mk" style="--c:{C['shuka']}"></i>Critique without cruelty</h2>
-    <div class="doit">
-      <div class="yes"><span class="hand">Roast this</span><p>Outdated habits, slow processes, bad tech, scams, the old way. &ldquo;It's 2026 and we still&hellip;&rdquo;, followed by the upgrade that exists today.</p></div>
-      <div class="no"><span class="hand">Never this</span><p>People, named artists, groups, regions or politicians. No &ldquo;stupid&rdquo;, no &ldquo;Africans are&hellip;&rdquo;. The joke is always on the old way.</p></div>
-    </div>
-    <p class="note" style="margin-top:18px">&ldquo;Africans don't support their own&rdquo; gets answered with action. <b>Put Us On</b> spotlights real African artists, creators and startups every other Friday, always with something to do: stream, follow, share.</p>
-  </section>
-
-  <section id="clear" class="sec" aria-labelledby="t-clear">
-    <h2 id="t-clear"><i class="mk" style="--c:{C['ziwa']}"></i>Say what it is</h2>
-    <div class="doit">
-      <div class="yes"><span class="hand">Headline like this</span><p>&ldquo;Fake job offers on WhatsApp&rdquo;. &ldquo;How to spot a paid hashtag&rdquo;. &ldquo;Sh304bn sitting idle in 14 projects&rdquo;. A stranger knows the topic in two seconds, in the words people search for.</p></div>
-      <div class="no"><span class="hand">Not like this</span><p>A vague teaser as the headline. The small handwritten line may tease (&ldquo;nobody told you this&hellip;&rdquo;), but only on top of a plain, literal headline.</p></div>
-    </div>
-    <ul class="reach" style="margin-top:18px">
-      <li><b>Attract</b><span>First words and the symbol open a question, a surprise or instant recognition. Specific beats general.</span></li>
-      <li><b>Sustain</b><span>Each line pays off the last and opens the next. The most surprising fact goes second, not last.</span></li>
-      <li><b>Reward</b><span>Something to use, say or send within the hour. That's why they come back.</span></li>
-    </ul>
-  </section>
-
-  <section id="proud" class="sec" aria-labelledby="t-proud">
-    <h2 id="t-proud"><i class="mk" style="--c:{C['chai']}"></i>Proudly African</h2>
-    <p class="note">We are Africans, and Africa's story is ours to tell. For every critical post we publish at least two that celebrate or teach. Fridays belong to Africa's wins: artists, creators, startups, inventions, athletes, farmers and people quietly doing it right. Always with names, places, years and sources; always with something to do (follow, stream, visit, share). Pride, never propaganda: real wins are convincing enough.</p>
-  </section>
-
-  <section id="straight" class="sec sec--night" aria-labelledby="t-straight">
-    <h2 id="t-straight"><i class="mk" style="--c:{C['shuka']}"></i>Set It Straight</h2>
-    <p class="note">When someone spreads a falsehood, or talks down Kenya and Africa, we answer the <b>claim</b>, never the person: quote it exactly, show where it was said, stamp the verdict (false, misleading, missing context), then give the truth with 2&ndash;3 sourced proofs and a proud closing line. Accuracy is what makes us fearless.</p>
-    <div class="doit">
-      <div class="yes"><span class="hand">Fair game</span><p>A public statement, quoted exactly and linked. Viral posts and stereotypes. Facts from the UN, World Bank, national statistics, research, reputable media.</p></div>
-      <div class="no"><span class="hand">Never</span><p>Insults, looks, family, private life. Private individuals. Politicians and election claims. Anything we can't prove. Honest criticism of Kenya isn't &ldquo;talking bad&rdquo;: we make it too.</p></div>
-    </div>
   </section>
 
   <section id="photos" class="sec" aria-labelledby="t-photos">
-    <h2 id="t-photos"><i class="mk" style="--c:{C['waridi']}"></i>Photos &amp; people</h2>
-    <ul class="reach">
-      <li><b>Real scenes</b><span>Up to three posts a week use a real photo where reality hits harder: streets, sites, farms, phones. Duotoned into the palette so every photo looks like Jua Kesho. Free-licence photos (Pexels) or your own.</span></li>
-      <li><b>Honest labels</b><span>On civic posts a stock photo is marked &ldquo;illustrative photo&rdquo;: it is never passed off as the actual project or person.</span></li>
-      <li><b>People we celebrate</b><span>Their real photo, in full colour inside a brand frame, only with the right to use it: their permission, their press kit, or a CC0 / CC&nbsp;BY Wikimedia Commons photo (checked automatically and credited).</span></li>
-      <li><b>Never</b><span>Faces on critical posts, stock lookalikes, AI-generated faces of real people, logos.</span></li>
+    <p class="kicker">06</p><h2 id="t-photos">Photos &amp; people</h2>
+    <ul class="cards">
+      <li><b>Photo-first</b><span>Every feed post asks for a real photo of a Kenyan scene that <em>is</em> the feeling: the queue, the payslip, the stalled site. Sauti posts fill the whole frame with it. The checker flags any post without one.</span></li>
+      <li><b>Free and licensed</b><span>Real Kenyan scenes from Wikimedia Commons (free, no key, only CC0 / public domain / CC&nbsp;BY), Pexels (free key) or your own shots. Credited on the image and in the caption.</span></li>
+      <li><b>Real people, real photos</b><span>People we celebrate, and public office holders on the record, appear in their real photo: their permission, a press kit, or a CC0 / public-domain / CC&nbsp;BY Wikimedia Commons photo (checked automatically, credited).</span></li>
+      <li><b>Honest labels</b><span>On civic posts a stock scene is marked &ldquo;Illustrative photo&rdquo;. A stranger's face never stands in for someone we name.</span></li>
+      <li><b>Never</b><span>Edited or mocking photos of real people, AI faces, deepfakes, logos, photos we have no right to use.</span></li>
     </ul>
   </section>
 
-  <section id="drops" class="sec" aria-labelledby="t-drops">
-    <h2 id="t-drops"><i class="mk" style="--c:{C['jacaranda']}"></i>Drops</h2>
-    <p class="note">Things people collect and pass on. The first drop is a 12-sticker WhatsApp pack, generated by <code>stickers.py</code> to WhatsApp's spec (512&times;512 WebP, under 100&nbsp;KB each, with a tray icon).</p>
-    <div class="stickers">{stickers}</div>
-    <ul class="reach" style="margin-top:18px">
-      <li><b>Kamusi ya Kesho</b><span>Every Decode is a numbered card. 52 a year. Collect them all.</span></li>
-      <li><b>Wanakesho of the Week</b><span>The best comment gets featured in Sunday's story.</span></li>
-      <li><b>Build With Me breakdowns</b><span>Comment BOT, get the step-by-step. Sends people into the DMs.</span></li>
+  <section id="week" class="sec" aria-labelledby="t-week">
+    <p class="kicker">07</p><h2 id="t-week">The week</h2>
+    <p class="note">Every series owns a day and a time. When a series owns a day, people start waiting for it.</p>
+    <ul class="series">{series_rows}</ul>
+    <h3 class="sub">Who it's for</h3>
+    <ul class="lanes">{lanes}</ul>
+  </section>
+
+  <section id="voice" class="sec" aria-labelledby="t-voice">
+    <p class="kicker">08</p><h2 id="t-voice">Voice: we are the people</h2>
+    <p class="big">Kenyans don't react to raw knowledge. They react to their own thoughts said out loud. So we start from what people already feel, speak as them, prove it with one fact, and say the dry line everyone was thinking.</p>
+    <ol class="cards cards--num">
+      <li><b>The feeling</b><span>What Kenyans already say in the matatu, on X, in the WhatsApp group: the shrinking payslip, the clinic with no drugs, the road launched three times.</span></li>
+      <li><b>The receipt</b><span>One hard, sourced fact that proves the feeling right, or honestly corrects it.</span></li>
+      <li><b>The sarcasm</b><span>One dry line at the system or the decision: &ldquo;We're still waiting for the receipt.&rdquo; Never at a person's character.</span></li>
+      <li><b>What we do</b><span>A legal action, or a question that makes people comment and share.</span></li>
+    </ol>
+    <p class="note" style="margin-top:22px">We say &ldquo;we&rdquo;, &ldquo;sisi&rdquo;, &ldquo;tunalipa&rdquo;, never &ldquo;you should&rdquo;. Headlines can be Sheng or Kiswahili when that's how people say it; the fact line stays in plain English. The words that hit hardest go on the <mark style="background:{P['shuka']['600']};color:#fff;padding:0 .15em">red marker</mark>, one per headline.</p>
+    <div class="doit">
+      <div class="yes"><span class="lbl">Say it like this</span><p>&ldquo;Fake job offers on WhatsApp: real jobs never ask you to pay to start.&rdquo; Plain topic words, a fact, something to do.</p></div>
+      <div class="no"><span class="lbl">Never like this</span><p>&ldquo;People from [place] are the ones who steal.&rdquo; No blaming groups, no talking down, no vague teaser headlines.</p></div>
+    </div>
+    <ul class="cards cards--3">
+      <li><b>Attract</b><span>First words and the photo open a question, a surprise or instant recognition. Specific beats general.</span></li>
+      <li><b>Sustain</b><span>Each line pays off the last and opens the next. The most surprising fact goes second.</span></li>
+      <li><b>Reward</b><span>Something to use, say or send within the hour. That's why they come back.</span></li>
+      <li><b>Deadpan</b><span>&ldquo;Only Sh304bn idle. Minor.&rdquo; Lands because the number is real and sourced.</span></li>
+      <li><b>Hype</b><span>Go loud for African wins, with names, places and years.</span></li>
+      <li><b>Punch up</b><span>Systems, tactics, decisions of the powerful. Never down at victims, ordinary people or groups.</span></li>
+    </ul>
+    <h3 class="sub">Sound human</h3>
+    <p class="note">Kenyans scroll past anything that smells of AI. Short lines, Sheng where natural, one strong opinion, uneven rhythm. No em dashes, no &ldquo;it's not just X, it's Y&rdquo;, no &ldquo;delve&rdquo;, &ldquo;navigate&rdquo;, &ldquo;unlock&rdquo; or &ldquo;pivotal&rdquo;: the checker blocks them. Real photos only, never AI images.</p>
+    <dl class="glossary">{glossary}</dl>
+  </section>
+
+  <section id="speak" class="sec sec--night" aria-labelledby="t-speak">
+    <p class="kicker">09</p><h2 id="t-speak">Speaking up</h2>
+    <p class="note">We are Africans; Africa's story is ours to tell. For every critical post we publish at least two that celebrate or teach.</p>
+    <ul class="cards">
+      <li><b>Promise Tracker</b><span>A leader's own words, quoted with where and when, against the official record. Kept, partly, stalled or broken: every side judged the same way.</span></li>
+      <li><b>Set It Straight</b><span>A falsehood, a politician's claim or a put-down of Kenya and Africa: quote it exactly, say who said it and where, stamp the verdict, then the facts with 2–3 sourced proofs.</span></li>
+      <li><b>Follow the Money</b><span>One public number from the Auditor-General, the Controller of Budget or reputable media, and how to check it yourself.</span></li>
+      <li><b>See Through It</b><span>Bought trends, paid crowds, exploited faith: we show the tactic so people can spot it. Faith itself is never attacked.</span></li>
+      <li><b>Proudly African</b><span>Artists, startups, inventions, athletes, farmers. Pride, never propaganda: real wins are convincing enough.</span></li>
+      <li><b>The revolution is informed</b><span>Register, vote, attend public participation, read the report, ask your MP, share the facts. Peaceful and legal, always: the checker blocks calls to violence and harassment.</span></li>
+      <li><b>Never</b><span>Tribe, in any direction. Private individuals. Insults. Telling anyone who to vote for. Anything we can't prove.</span></li>
     </ul>
   </section>
 
-  <section id="see" class="sec sec--night" aria-labelledby="t-see">
-    <h2 id="t-see"><i class="mk" style="--c:{C['chai']}"></i>See Through It</h2>
-    <p class="note">The hard stuff, told symbolically. Young Kenyans already feel it: money that disappears, trends that are bought, crowds that are paid, faith that gets exploited. We teach them to see the machine, and we never point at a person.</p>
-    <ul class="play">
-      <li><b>Follow the Money</b><span>One public number, what it means, how to check it yourself. The Auditor-General reported Sh304.4bn (59%) idle across 14 flagship projects over five years.</span></li>
-      <li><b>Bought trends</b><span>Researchers documented Kenyan influencers paid about $10&ndash;15 a day over M-Pesa to push hashtags, coordinated in WhatsApp groups. We show how to spot one in 30 seconds.</span></li>
-      <li><b>The Ksh 500 "job"</b><span>Allegory comics about being hired as someone's crowd or muscle. Fictional characters, real pattern, and a better offer: your future.</span></li>
-      <li><b>Faith, protected</b><span>Never an attack on belief. We expose the tactics exploiters use (pay-for-a-miracle, isolation, fear, "stop your medicine") so believers can protect each other.</span></li>
-      <li><b>Archetypes, not people</b><span><b>Bwana Ahadi</b> ("Mr Promise") stands for anyone who promises big and delivers little. Never drawn to resemble a real person.</span></li>
-      <li><b>Sourced or silent</b><span>Every civic number carries a public source, and the checker blocks civic posts without one.</span></li>
-      <li><b>Never tribe</b><span>Not in any direction. Kenyan English and Sheng belong to everyone. Unity is the point.</span></li>
-      <li><b>Stay safe</b><span>Kenya's 2025 cybercrime amendments carry heavy penalties and vague terms. Systems-not-people keeps the account (and you) on solid ground.</span></li>
+  <section id="office" class="sec" aria-labelledby="t-office">
+    <p class="kicker">10</p><h2 id="t-office">Public office holders</h2>
+    <p class="note">Kenyans have the right to criticise the people they pay. We do it without fear and without error: the facts do the punching.</p>
+    <div class="doit">
+      <div class="yes"><span class="lbl">Fair game</span><p>Decisions, spending, promises vs delivery, public statements, votes, attendance, audit findings, court rulings. Named, with their official or licensed photo and their office, every fact sourced. Every side held to the same standard.</p></div>
+      <div class="no"><span class="lbl">Never</span><p>Family, health, looks, tribe, faith, private life. Calling anyone a thief or corrupt ourselves: we say what the record says (&ldquo;the Auditor-General found&rdquo;, &ldquo;charged with&rdquo;, &ldquo;the court ruled&rdquo;). Edited or mocking photos. Calls to harass anyone.</p></div>
+    </div>
+    <h3 class="sub">The goal for 2027</h3>
+    <p class="note">Not just a change of faces: leadership in the right hands. Kenya has rarely held leaders accountable, so we do it every week, and measure every leader and serious candidate, from every side, against the Constitution's own standard (Chapter Six, Articles 73&ndash;80: Leadership and Integrity) and their record. We never endorse; we hand voters the records. That is why our verdicts will be trusted.</p>
+    <h3 class="sub">Call it out</h3>
+    <ul class="cards">
+      <li><b>Leaders who take advantage</b><span>Money that vanished, projects launched and abandoned, promises broken. Named, with their own words and the record.</span></li>
+      <li><b>Divisive politics</b><span>Quote the exact words, name the speaker, give the clip and the date, and say plainly why it divides us. Never repeat a slur or name the community targeted.</span></li>
+      <li><b>No favourites</b><span>Government and opposition, old names and new: one standard. That is what makes us untouchable.</span></li>
+      <li><b>Hatutasahau</b><span>Protest killings, abductions, hired goons, deaths in custody: documented by KNCHR, IPOA, the courts or reputable media, date by date, with what accountability has followed. Anniversaries come up automatically.</span></li>
+      <li><b>Church and state</b><span>Cash at the pulpit, clergy campaigning, public favours to religious bodies. We scrutinise the relationship, never faith or believers.</span></li>
+      <li><b>Keep the receipts</b><span>Every published post is logged with its exact text and sources in <code>state/evidence.jsonl</code>: the defence file if anyone takes us to court.</span></li>
     </ul>
-    <p class="note small">Sources: <a href="https://capitalfm.africa/audit-exposes-sh304bn-in-idle-govt-project-funds/">Capital FM on the Auditor-General's Sh304bn finding</a> · <a href="https://ieakenya.or.ke/blog/wasted-billions-kenyas-stalled-projects-expose-deep-flaws-in-budget-planning-and-execution/">IEA Kenya on stalled projects</a> · <a href="https://www.mozillafoundation.org/en/blog/fellow-research-inside-the-shadowy-world-of-disinformation-for-hire-in-kenya/">Mozilla on disinformation-for-hire</a> · <a href="https://www.hrw.org/news/2025/11/07/kenya-new-cybercrime-amendments-threaten-online-expression">HRW on the 2025 cybercrime amendments</a></p>
+    <h3 class="sub">Names people relate to</h3>
+    <p class="note">Kenyans already have names for their leaders, and those names stop the scroll. We use them by the rules in <code>content/nicknames.json</code>, which the writer reads and the checker enforces. The real name and office are always in the same post.</p>
+    <ul class="cards">{nick_cards}</ul>
+    <p class="note small" style="margin-top:18px">Why the care: Article 33 of the Constitution protects expression, and the High Court struck down criminal defamation in 2017. Civil defamation and the Computer Misuse and Cybercrimes Act still punish <em>false</em> statements of fact, and photographers own their photos. The checker blocks name-calling and campaigning, flags allegation words, and requires a source and a licensed photo. This is guidance, not legal advice: for a high-stakes post, ask a media lawyer first.
+    Sources: <a href="https://www.amnestykenya.org/guard-your-right-to-criticise-and-hold-all-state-officers-accountable/">Amnesty Kenya</a> · <a href="https://globalfreedomofexpression.columbia.edu/wp-content/uploads/2017/02/Petition_397_of_2016.pdf">Okuta v Attorney General (2017)</a> · <a href="https://tikenya.org/wp-content/uploads/2023/05/A-Review-of-the-State-of-Whistleblower-Protection-and-Defamation-Laws-in-Kenya_TI-Kenya.pdf">TI-Kenya on defamation law</a> · <a href="https://ggalaw.co.ke/2020/04/05/the-law-on-reputation/">GGA Law on reputation</a></p>
   </section>
 
   <section id="motion" class="sec" aria-labelledby="t-motion">
-    <h2 id="t-motion"><i class="mk" style="--c:{C['ziwa']}"></i>Motion & sound</h2>
-    <p class="note">Every design also ships as a 9:16 Reel/TikTok. Headlines land word by word, glass slides in, stickers pop, Jua bobs, colour drifts. The hook is on screen from frame zero. Content sits inside the platform safe zone, clear of the buttons and caption. Frames are stepped one by one, so every render is identical.</p>
+    <p class="kicker">11</p><h2 id="t-motion">Motion &amp; sound</h2>
+    <p class="note">Every post also ships as a 9:16 Reel. Calm and quick, like a news package: the photo settles, the headline rises word by word, rows arrive in reading order, rules draw across, numbers count up. The hook is on screen from frame zero, inside the platform safe zone.</p>
     <div class="reels">{reel_strip}</div>
-    <ul class="reach" style="margin-top:18px">
-      <li><b>The Jua chime</b><span>A three-note kalimba sonic logo, rising like a sunrise. It opens every Reel.</span></li>
-      <li><b>Original beat</b><span>Kalimba plus a benga-style plucked guitar, synthesised in code: no licences, and it counts as original audio.</span></li>
-      <li><b>African artists, with permission</b><span>Ask an artist for 15 seconds of their track, with credit. Register it in <code>content/music/</code> and Reels use their hook, balanced for phone speakers, credited in the caption. It's a Put Us On for them.</span></li>
-      <li><b>Trending sounds</b><span>Famous songs can't be baked into auto-posted videos (they get muted or taken down). Add trending sounds by hand in the app, from the platform's own licensed library.</span></li>
-      <li><b>Pacing</b><span>6&ndash;14 seconds, sized to reading speed so people finish and replay.</span></li>
+    <ul class="cards">
+      <li><b>Sonic logo</b><span>A three-note rising chime opens every Reel.</span></li>
+      <li><b>Original bed</b><span>Kalimba and a benga-style guitar, synthesised in code: no licence needed.</span></li>
+      <li><b>African artists</b><span>15 seconds of a track with the artist's permission, credited in the caption.</span></li>
+      <li><b>Trending sounds</b><span>Added by hand in the app from the platform's licensed library, never baked in.</span></li>
     </ul>
   </section>
 
   <section id="quality" class="sec" aria-labelledby="t-quality">
-    <h2 id="t-quality"><i class="mk" style="--c:{C['jua']}"></i>The quality bar</h2>
-    <p class="note">Three gates between an idea and your feed. Nothing reaches Telegram for approval without passing all three.</p>
-    <ol class="hooks">
-      <li><b>The guard</b><span>Clean for everyone, brand rules, lengths, sources, no named people in civic posts, no tribe, no betting.</span></li>
-      <li><b>The critic</b><span>A tough-editor AI scores hook, sendability, clarity (is the topic plain?), freshness, voice, craft, picture (do symbol + headline carry the message?) and hold. Under 7.5 gets one rewrite, kept only if it scores higher.</span></li>
-      <li><b>Visual QA</b><span>Every render is measured: text wider than its box, collisions, anything off the canvas, the symbol never over text, and every line of text checked for contrast against the real pixels behind it. Unreadable ink switches to the brand colour that reads best. Anything still broken is held for a human.</span></li>
-      <li><b>The budget cap</b><span>The AI spend is counted from real usage on every call. Optional passes stop at the weekly cap (default $0.50), so quality never costs more than planned.</span></li>
+    <p class="kicker">12</p><h2 id="t-quality">The quality bar</h2>
+    <ol class="cards cards--num">
+      <li><b>The guard</b><span>Clean and grown-up, lengths, sources, licensed photos, no name-calling, no campaigning, no tribe, no betting.</span></li>
+      <li><b>The critic</b><span>A tough-editor pass scores hook, sendability, clarity, freshness, voice, craft, picture and hold. Under 7.5 is rewritten.</span></li>
+      <li><b>Visual QA</b><span>Every render is measured: overflow, collisions, anything off the canvas, and every line of text checked for contrast against the real pixels behind it.</span></li>
+      <li><b>Cost-free</b><span>The writer runs free on GitHub Models with the workflow's own token. Photos from Pexels are free. Claude is optional, capped at $0.50 a week.</span></li>
     </ol>
   </section>
 
-  <section id="voice" class="sec" aria-labelledby="t-voice">
-    <h2 id="t-voice"><i class="mk" style="--c:{C['jacaranda']}"></i>Brand dictionary</h2>
-    <dl class="glossary">{glossary}</dl>
-    <div class="doit">
-      <div class="yes"><span class="hand">Say it like this</span><p>&ldquo;Got a &lsquo;money sent by mistake&rsquo; SMS? Eh, check your M-PESA balance first.&rdquo;</p></div>
-      <div class="no"><span class="hand">Never like this</span><p>&ldquo;People from [place] are the ones who steal.&rdquo; No blaming groups. We explain the trick, never who&rsquo;s behind it.</p></div>
-    </div>
-    <h3 class="sub">Tones toolbox</h3>
-    <ul class="lore">
-      <li><b>Sarcasm &amp; deadpan</b><span>&ldquo;Only Sh304bn idle. Minor.&rdquo; Lands because the number underneath is real and sourced.</span></li>
-      <li><b>Irony &amp; exaggeration</b><span>&ldquo;It's 2026 and we still queue four hours to hear &lsquo;come tomorrow&rsquo;.&rdquo;</span></li>
-      <li><b>Parody</b><span>Fake ads, fake launches, mock awards: &ldquo;Introducing The Queue&trade;, now with extra waiting.&rdquo; Always clearly labelled parody.</span></li>
-      <li><b>Hype</b><span>Go loud for African wins. Put Us On is a celebration.</span></li>
-      <li><b>Warmth</b><span>Sincere when someone could get hurt: scams, faith exploitation.</span></li>
-      <li><b>The rule</b><span>Punch up (systems, tactics, the powerful, outdated habits), never down (victims, ordinary people, groups).</span></li>
-    </ul>
-    <ul class="rules">
-      <li>Clean for everyone: no swearing in any language, nothing sexual, no alcohol, drugs or betting.</li>
-      <li>No politics, politicians, tribes or religious debate. We are for all Kenyans and all people.</li>
-      <li>Write in Kenyan English. Kenyan words season the sentence; they don't replace it.</li>
-      <li>Every year, number or price carries a source. If we're not sure, we leave it out.</li>
-      <li>Max three hashtags: always <b>#JuaKesho</b> plus the series tag.</li>
-    </ul>
-  </section>
-
   <section id="launch" class="sec" aria-labelledby="t-launch">
-    <h2 id="t-launch"><i class="mk" style="--c:{C['shuka']}"></i>Launch set</h2>
-    <p class="note">The first twelve designs, rendered by the pipeline and ready to post. Tap-size previews; full-size files are in <code>exports/posts/</code>.</p>
+    <p class="kicker">13</p><h2 id="t-launch">Launch set</h2>
+    <p class="note">Rendered by the pipeline, ready to post. Full-size files are in <code>exports/posts/</code>. Once the Pexels key is set, the weekly posts arrive with real photos.</p>
     <div class="gallery">{gallery}</div>
     <h3 class="sub">Profiles</h3>
     <div class="profiles">{profiles}</div>
@@ -508,230 +373,161 @@ def build_body() -> str:
   </section>
 
   <section id="autopilot" class="sec sec--night" aria-labelledby="t-auto">
-    <h2 id="t-auto"><i class="mk" style="--c:{C['pwani']}"></i>Autopilot</h2>
-    <p class="note">The self-running content engine. It runs in the cloud on GitHub Actions, so it doesn't depend on one laptop. Your part: about 15 minutes of taps a week.</p>
+    <p class="kicker">14</p><h2 id="t-auto">Autopilot</h2>
+    <p class="note">The self-running engine on GitHub Actions. Your part: about 15 minutes of taps a week.</p>
     <ol class="flow">{flow}</ol>
-    <p class="note small">Automatic: Instagram and Facebook. Semi-automatic, with a Telegram reminder: WhatsApp Channel (no public posting API), TikTok/Reels voice-overs, radio and SMS scripts.</p>
   </section>
 
   <section id="money" class="sec" aria-labelledby="t-money">
-    <h2 id="t-money"><i class="mk" style="--c:{C['chai']}"></i>Keeping it alive</h2>
-    <p class="note">The rule: <b>those who can pay, pay, so those who can't still learn for free.</b> Running costs are small: GitHub is free at this volume, and AI drafting is a small monthly API bill. Check current pricing before relying on it.</p>
+    <p class="kicker">15</p><h2 id="t-money">Keeping it alive</h2>
+    <p class="note">Those who can pay, pay, so those who can't still learn for free.</p>
     <ul class="moneys">{money}</ul>
     <h3 class="sub">First 90 days</h3>
     <ol class="plan90">{plan90}</ol>
   </section>
 </main>
 
-<footer class="foot">
-  {mascot('wink', 'm m--foot')}
-  <p><b>Jua Kesho</b> brand book v1 · {e(B['tagline_sw'])} · Built from <code>automation/</code>. Re-run <code>build_book.py</code> after any brand change.</p>
+<footer class="bookfoot">
+  <p><b>Jua Kesho</b> brand book v2 · {e(B['tagline_sw'])} · Built from <code>automation/</code>; re-run <code>build_book.py</code> after any brand change.</p>
 </footer>
 """
 
 
-CSS = """
-:root{--paper:#FFF4E0;--paper-2:#FBE9C8;--ink:#1D1433;--ink-2:#4A3F5C;--line:#E7D5B3;--card:#FFFBF3;
---jua:#FFC629;--shuka:#D4301F;--jac:#7A4FD8;--chai:#0E7C50;--ziwa:#1E8FD6;--pwani:#15B8A6;--waridi:#FF7AB6;--udongo:#B8532A;--night:#1D1433;--night-2:#2A1F45;
---accent-ink:#5B34C7;--f-d:"Unbounded","Arial Black",system-ui,sans-serif;--f-b:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;--f-h:"Caveat","Comic Sans MS",cursive}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--paper:#150E26;--paper-2:#1F1636;--ink:#FFF4E0;--ink-2:#CFC3E0;--line:#35294F;--card:#1F1636;--accent-ink:#B9A2FF}}
-:root[data-theme="dark"]{color-scheme:dark;--paper:#150E26;--paper-2:#1F1636;--ink:#FFF4E0;--ink-2:#CFC3E0;--line:#35294F;--card:#1F1636;--accent-ink:#B9A2FF}
-*{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--f-b);padding-inline:clamp(16px,4vw,48px)}
-.book{max-width:1120px;margin:0 auto}
-h1,h2,h3{text-wrap:balance}
-code{font:500 .88em ui-monospace,Consolas,monospace;background:var(--paper-2);padding:.08em .35em;border-radius:5px}
-.hand{font-family:var(--f-h);font-weight:700}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-a{color:var(--accent-ink)}
-:focus-visible{outline:3px solid var(--jac);outline-offset:3px;border-radius:6px}
-
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);margin-inline:calc(-1*clamp(16px,4vw,48px));padding:10px clamp(16px,4vw,48px);border-bottom:2px solid var(--line)}
-.toc{max-width:1120px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
-.toc a{flex:none;padding:6px 12px;border-radius:999px;font:700 13px/1 var(--f-d);letter-spacing:-.01em;color:var(--ink);text-decoration:none;background:var(--paper-2)}
-.toc a:hover{background:var(--jua);color:#1D1433}
-
-.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:32px;align-items:center;padding-block:56px 40px}
-.hero-hi{margin:0;font-size:40px;color:var(--accent-ink);transform:rotate(-3deg);transform-origin:left}
-.hero h1{margin:6px 0 0}
-.logo{width:min(560px,100%);height:auto;display:block}
-.logo--dark{display:none}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo--light{display:none}:root:not([data-theme="light"]) .logo--dark{display:block}}
-:root[data-theme="dark"] .logo--light{display:none}:root[data-theme="dark"] .logo--dark{display:block}
-.tag{margin:14px 0 0;font:800 clamp(26px,4vw,40px)/1.05 var(--f-d);letter-spacing:-.03em}
-.lede{max-width:56ch;font-size:19px;color:var(--ink-2)}
-.meaning{display:inline-flex;flex-wrap:wrap;gap:6px;align-items:baseline;margin:6px 0 0;padding:10px 16px;border-radius:40px 18px 36px 14px;background:var(--jua);color:#1D1433;font-size:16px}
-.meaning b{font-family:var(--f-d);font-size:15px}
-.hero-art{display:grid;place-items:center}
-.m{width:100%;height:auto;display:block}
-.m--hero{max-width:340px;animation:bob 6s ease-in-out infinite}
-@keyframes bob{50%{transform:translateY(-8px) rotate(3deg)}}
-@media (prefers-reduced-motion:reduce){.m--hero{animation:none}}
-
-.sec{padding-block:56px;border-top:2px dashed var(--line)}
-.sec h2{display:flex;align-items:center;gap:14px;margin:0 0 14px;font:800 clamp(28px,4.4vw,44px)/1 var(--f-d);letter-spacing:-.035em}
-.mk{flex:none;width:34px;height:30px;background:var(--c);border-radius:58% 42% 63% 37% / 45% 58% 42% 55%;transform:rotate(-8deg)}
-.note{max-width:66ch;color:var(--ink-2);margin:0 0 22px}
-.note.small{font-size:15px}
-.big{max-width:48ch;font:600 clamp(20px,2.4vw,26px)/1.4 var(--f-b);margin:0 0 28px}
-.sub{margin:30px 0 14px;font:800 18px var(--f-d);letter-spacing:-.02em}
-
-.pillars{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.pillars li{padding:18px;border-radius:22px 38px 18px 30px;background:var(--c);color:#fff;display:flex;flex-direction:column;gap:6px}
-.pillars b{font:800 22px var(--f-d);letter-spacing:-.02em}
-.pillars span{font-size:15px;line-height:1.4}
-.modes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
-.mode{padding:22px 24px;border-radius:30px 16px 34px 20px}
-.mode .hand{font-size:32px}
-.mode p{margin:4px 0 0}
-.mode--day{background:var(--jua);color:#1D1433}
-.mode--night{background:#1D1433;color:#FFF4E0;box-shadow:inset 0 0 0 2px #15B8A6}
-.mode--night .hand{color:#15B8A6}
-
-.exprs{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
-.ex{margin:0;padding:12px;border-radius:24px;background:var(--card);border:2px solid var(--line);display:flex;flex-direction:column;gap:6px}
-.ex figcaption{display:flex;flex-direction:column;gap:2px;font-size:13px;line-height:1.35;color:var(--ink-2)}
-.ex b{font:800 14px var(--f-d);color:var(--ink)}
-
-.cast-row{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
-.cast{margin:0;padding:10px;border-radius:22px;background:var(--card);border:2px solid var(--line);display:flex;flex-direction:column;gap:6px}
-.cast svg,.pose svg{width:100%;height:auto;display:block}
-.cast figcaption{display:flex;flex-direction:column;gap:2px;font-size:13px;line-height:1.35;color:var(--ink-2)}
-.cast b{font:800 14px var(--f-d);color:var(--ink)}
-.pose-row{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
-.pose{margin:0;padding:6px;border-radius:18px;background:#FFF4E0}
-.pose figcaption{text-align:center;font:700 12px var(--f-b);color:#1D1433}
-.comic-demo{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:24px;align-items:center;margin-top:24px}
-.comic-demo img{width:100%;height:auto;border-radius:14px;display:block}
-.comic-demo .hand{font-size:40px;color:var(--accent-ink)}
-.comic-demo p{margin:4px 0 0;max-width:46ch;color:var(--ink-2)}
-.play{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.play li{padding:16px;border-radius:22px;background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.25);display:flex;flex-direction:column;gap:6px}
-.play b{font:800 16px var(--f-d);color:#FFC629}
-.play span{font-size:14px;line-height:1.45;color:#E9E1F5}
-.sec--night a{color:#15B8A6}
-.lore{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.lore li{padding:16px 18px;border-radius:26px 14px 28px 16px;background:var(--card);border:2px solid var(--line);display:flex;flex-direction:column;gap:6px}
-.lore b{font:800 16px var(--f-d)}
-.lore span{font-size:14.5px;color:var(--ink-2)}
-.stickers{display:flex;flex-wrap:wrap;gap:10px;padding:18px;border-radius:24px;background:repeating-conic-gradient(var(--paper-2) 0 25%,var(--card) 0 50%) 0 0/28px 28px}
-.stickers img{width:100px;height:100px}
-.manifesto{margin-inline:calc(-1*clamp(16px,4vw,48px));padding:48px clamp(16px,4vw,48px);background:#1D1433;color:#FFF4E0;text-align:center}
-.man-kicker{margin:0;font-size:30px;color:#15B8A6}
-.man-line{margin:6px 0 0;font:800 clamp(40px,8vw,96px)/1 var(--f-d);letter-spacing:-.04em;color:#FF7AB6;text-shadow:0 0 40px rgba(255,122,182,.35)}
-.man-sub{max-width:60ch;margin:14px auto 0;color:#CFC3E0}
-.reels{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:760px}
-.reel{margin:0}.reel img{width:100%;height:auto;border-radius:16px;display:block;box-shadow:0 12px 30px rgba(29,20,51,.25)}
-.reel figcaption{margin-top:6px;font:500 12px ui-monospace,monospace;color:var(--ink-2);overflow-wrap:anywhere}
-.logos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.lg{display:grid;place-items:center;padding:30px 24px;border-radius:26px 14px 30px 18px;min-height:150px}
-.lg-svg{width:100%;max-width:380px;height:auto}
-.lg-svg--stack{max-width:220px}
-.lg--paper{background:#FFF4E0;border:2px solid var(--line)}.lg--night{background:#1D1433}.lg--jac{background:#7A4FD8}.lg--stack{background:#FFC629}
-.rules{margin:18px 0 0;padding-left:20px;display:grid;gap:6px;max-width:70ch}
-
-.swatches{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.sw{display:flex;flex-direction:column;gap:8px}
-.chip{display:flex;flex-direction:column;justify-content:flex-end;gap:2px;min-height:118px;padding:12px 14px;background:var(--c);color:var(--t);border-radius:40% 60% 45% 55% / 30% 40% 60% 70%}
-.sw:nth-child(even) .chip{border-radius:55% 45% 60% 40% / 45% 60% 40% 55%}
-.chip b{font:800 15px var(--f-d)}
-.chip code{background:none;padding:0;color:inherit;font-size:12px}
-.sw-txt{font-size:13.5px;line-height:1.4;color:var(--ink-2)}
-.sw:last-child .chip{box-shadow:inset 0 0 0 2px var(--line)}
-
-.types{display:grid;gap:14px}
-.ty{padding:22px 24px;border-radius:24px;background:var(--card);border:2px solid var(--line)}
-.lbl{font:700 12px var(--f-b);letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
-.ty p{margin:8px 0}
-.ty small{color:var(--ink-2);font-size:14px}
-.ty-d{font:800 clamp(34px,6vw,64px)/1 var(--f-d);letter-spacing:-.04em}
-.ty-b{font:600 22px/1.4 var(--f-b);max-width:40ch}
-.ty-h{font:700 clamp(34px,5vw,54px)/1 var(--f-h);color:var(--shuka)}
-
-.devs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.dev{margin:0}
-.shape{width:100%;height:auto;display:block;border-radius:20px;background:var(--card);border:2px solid var(--line)}
-.dev--night .shape{border-color:#35294F}
-.dev figcaption{margin-top:6px;font-size:13px;color:var(--ink-2)}
-
-.series{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.series-row{display:grid;grid-template-columns:110px 1fr 110px;gap:18px;align-items:center;padding:12px 14px;border-radius:22px;background:var(--card);border:2px solid var(--line)}
-.when{font:800 13px/1.3 var(--f-d);color:var(--accent-ink)}
-.series-row h3{margin:0;font:800 18px/1.2 var(--f-d);letter-spacing:-.02em}
-.series-row p{margin:4px 0 0;font-size:15px;color:var(--ink-2)}
-.series-row img{width:110px;height:auto;border-radius:10px;display:block}
-
-.lanes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.lane{padding:16px;border-radius:26px 16px 28px 14px;background:var(--c);color:var(--t);display:flex;flex-direction:column;gap:6px}
-.lane b{font:800 18px var(--f-d)}
-.lane span{font-weight:700;font-size:14.5px;line-height:1.35}
-.lane small{font-size:13px;line-height:1.4;opacity:.9}
-.reach{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.reach li{padding:14px 16px;border-radius:18px;border:2px dashed var(--line);display:flex;flex-direction:column;gap:4px}
-.reach b{font:800 15px var(--f-d)}
-.reach span{font-size:14px;color:var(--ink-2)}
-
-.hooks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;counter-reset:h}
-.hooks li{counter-increment:h;position:relative;padding:18px 18px 18px 60px;border-radius:24px;background:var(--card);border:2px solid var(--line);display:flex;flex-direction:column;gap:4px}
-.hooks li::before{content:counter(h);position:absolute;left:14px;top:14px;width:34px;height:32px;display:grid;place-items:center;background:var(--jua);color:#1D1433;font:800 15px var(--f-d);border-radius:55% 45% 60% 40%}
-.hooks b{font:800 17px var(--f-d)}
-.hooks span{font-size:15px;color:var(--ink-2)}
-
-.glossary{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
-.gl{display:grid;grid-template-columns:170px 1fr;gap:14px;padding:12px 0;border-bottom:2px dotted var(--line)}
-.gl dt{font:800 17px/1.2 var(--f-d)}
-.gl dt small{display:block;margin-top:4px;font:600 12px var(--f-b);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
-.gl dd{margin:0;font-size:15px;color:var(--ink-2)}
-.doit{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
-.doit>div{padding:18px 22px;border-radius:26px 14px 28px 16px}
-.doit .hand{font-size:30px}
-.doit p{margin:4px 0 0}
-.yes{background:#0E7C50;color:#fff}.no{background:#D4301F;color:#fff}
-
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:start}
-.g-item{margin:0}
-.g-item img{width:100%;height:auto;display:block;border-radius:12px}
-.g-item figcaption{margin-top:4px;font:500 12px ui-monospace,monospace;color:var(--ink-2);overflow-wrap:anywhere}
-.profiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
-.pf{margin:0}.pf img{width:100%;height:auto;display:block;border-radius:12px}
-.pf--wide{grid-column:1/-1}
-.pf--av img{width:150px;border-radius:50%}
-.pf figcaption{margin-top:4px;font-size:13px;color:var(--ink-2)}
-.handles{margin-top:18px;padding:12px 16px;border-radius:16px;background:var(--paper-2)}
-
-.sec--night{margin-inline:calc(-1*clamp(16px,4vw,48px));padding-inline:clamp(16px,4vw,48px);background:#1D1433;color:#FFF4E0;border-top:none;border-radius:40px 60px 30px 70px/30px 40px 30px 40px}
-.sec--night .note{color:#CFC3E0}
-.flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
-.flow li{position:relative;padding:16px 14px;border:2px solid #15B8A6;border-radius:20px;display:flex;flex-direction:column;gap:6px;background:#2A1F45}
-.flow li:nth-child(5){border-color:#FFC629;background:#3A2A12}
-.flow b{font:800 16px var(--f-d);color:#FFC629}
-.flow li:nth-child(5) b{color:#FFC629}
-.flow span{font-size:13.5px;line-height:1.4;color:#E9E1F5}
-.f-when{min-height:1.2em;font:700 11px var(--f-b)!important;letter-spacing:.08em;text-transform:uppercase;color:#15B8A6!important}
-
-.moneys{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.money{padding:16px;border-radius:24px 14px 26px 16px;background:var(--card);border:2px solid var(--line);display:flex;flex-direction:column;gap:6px}
-.m-tag{align-self:flex-start;padding:3px 10px;border-radius:999px;background:var(--chai);color:#fff;font:700 11.5px var(--f-b);letter-spacing:.04em}
-.money h3{margin:0;font:800 17px var(--f-d)}
-.money p{margin:0;font-size:14px;color:var(--ink-2)}
-.plan90{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.plan90 li{padding:16px;border-top:6px solid var(--jua);background:var(--card);border-radius:4px 4px 20px 20px}
-.plan90 p{margin:6px 0 0;font-size:14.5px;color:var(--ink-2)}
-
-.foot{max-width:1120px;margin:40px auto 0;padding-block:28px 40px;border-top:2px dashed var(--line);display:flex;align-items:center;gap:16px;font-size:14px;color:var(--ink-2)}
-.m--foot{width:70px;flex:none}
-
-@media (max-width:980px){.play{grid-template-columns:repeat(2,1fr)}.lore{grid-template-columns:repeat(2,1fr)}.cast-row,.pose-row{grid-template-columns:repeat(4,1fr)}.exprs{grid-template-columns:repeat(4,1fr)}.swatches{grid-template-columns:repeat(3,1fr)}.lanes,.reach,.moneys{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:repeat(2,1fr)}.plan90,.pillars,.devs{grid-template-columns:repeat(2,1fr)}.hooks{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:repeat(3,1fr)}.glossary{grid-template-columns:1fr}}
-@media (max-width:620px){.reels{grid-template-columns:repeat(2,1fr)}.play,.lore{grid-template-columns:1fr}.stickers img{width:72px;height:72px}.cast-row,.pose-row{grid-template-columns:repeat(2,1fr)}.comic-demo{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.hero-art{order:-1}.m--hero{max-width:200px}.modes,.logos,.doit,.profiles{grid-template-columns:1fr}.exprs{grid-template-columns:repeat(2,1fr)}.swatches{grid-template-columns:repeat(2,1fr)}.lanes,.reach,.moneys,.flow,.plan90,.pillars,.hooks,.devs{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.series-row{grid-template-columns:1fr 84px}.series-row .when{grid-column:1/-1}.series-row img{width:84px}.gl{grid-template-columns:1fr;gap:4px}}
-img.wide{width:100%;height:auto;border-radius:24px;display:block;margin-top:18px}
+CSS = f"""
+:root{{--paper:{P['ink']['50']};--paper-2:{P['ink']['100']};--ink:{P['ink']['900']};--ink-2:{P['ink']['600']};--line:{P['ink']['200']};--card:#FFFFFF;
+--sig:{P['shuka']['500']};--sig-ink:{P['shuka']['600']};--red:{P['shuka']['600']};--green:{P['chai']['700']};--night:{P['ink']['950']};--night-2:{P['ink']['900']};
+--f-d:"Inter Tight","Arial Narrow",system-ui,sans-serif;--f-b:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif}}
+@media (prefers-color-scheme:dark){{:root:not([data-theme="light"]){{color-scheme:dark;--paper:{P['ink']['950']};--paper-2:{P['ink']['900']};--ink:{P['ink']['50']};--ink-2:{P['ink']['300']};--line:{P['ink']['800']};--card:{P['ink']['900']};--sig-ink:{P['shuka']['400']}}}}}
+:root[data-theme="dark"]{{color-scheme:dark;--paper:{P['ink']['950']};--paper-2:{P['ink']['900']};--ink:{P['ink']['50']};--ink-2:{P['ink']['300']};--line:{P['ink']['800']};--card:{P['ink']['900']};--sig-ink:{P['shuka']['400']}}}
+*{{box-sizing:border-box}}
+body{{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.55 var(--f-b);padding-inline:clamp(16px,4vw,48px)}}
+.book{{max-width:1120px;margin:0 auto}}
+h1,h2,h3{{text-wrap:balance}}
+code{{font:500 .86em ui-monospace,Consolas,monospace;background:var(--paper-2);padding:.08em .35em;border-radius:4px}}
+.sr{{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+a{{color:var(--sig-ink)}}
+:focus-visible{{outline:3px solid var(--sig);outline-offset:3px}}
+.topbar{{position:sticky;top:0;z-index:5;background:var(--paper);margin-inline:calc(-1*clamp(16px,4vw,48px));padding:10px clamp(16px,4vw,48px);border-bottom:1px solid var(--line)}}
+.toc{{max-width:1120px;margin:0 auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}}
+.toc a{{flex:none;padding:7px 10px;font:700 12px/1 var(--f-d);letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-decoration:none}}
+.toc a:hover{{color:var(--ink);box-shadow:inset 0 -2px 0 var(--sig)}}
+.hero{{padding-block:72px 48px}}
+.logo{{width:min(620px,100%);height:auto;display:block}}
+.logo--dark{{display:none}}
+@media (prefers-color-scheme:dark){{:root:not([data-theme="light"]) .logo--light{{display:none}}:root:not([data-theme="light"]) .logo--dark{{display:block}}}}
+:root[data-theme="dark"] .logo--light{{display:none}}:root[data-theme="dark"] .logo--dark{{display:block}}
+.tagline{{margin:22px 0 0;font:800 clamp(28px,4.4vw,48px)/1.05 var(--f-d);letter-spacing:-.025em}}
+.tagline span{{color:var(--ink-2);font-weight:600}}
+.lede{{max-width:58ch;font-size:19px;color:var(--ink-2);margin:16px 0 0}}
+.kicker{{margin:0 0 6px;font:800 13px/1 var(--f-d);letter-spacing:.12em;text-transform:uppercase;color:var(--sig-ink)}}
+.manifesto{{margin-inline:calc(-1*clamp(16px,4vw,48px));padding:56px clamp(16px,4vw,48px);background:var(--night);color:{P['ink']['50']}}}
+.manifesto .kicker{{color:var(--sig);max-width:1120px;margin-inline:auto}}
+.man-line{{max-width:1120px;margin:8px auto 0;font:900 clamp(44px,9vw,112px)/.95 var(--f-d);letter-spacing:-.04em}}
+.man-sub{{max-width:1120px;margin:16px auto 0;color:{P['ink']['300']};font-size:19px}}
+.sec{{padding-block:56px;border-top:1px solid var(--line)}}
+.sec h2{{margin:0 0 16px;font:800 clamp(30px,4.6vw,48px)/1 var(--f-d);letter-spacing:-.03em}}
+.note{{max-width:68ch;color:var(--ink-2);margin:0 0 22px}}
+.note.small{{font-size:14.5px}}
+.big{{max-width:46ch;font:700 clamp(21px,2.5vw,28px)/1.3 var(--f-d);letter-spacing:-.015em;margin:0 0 28px}}
+.sub{{margin:34px 0 14px;font:800 13px var(--f-d);letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}}
+.lbl{{font:800 12px var(--f-d);letter-spacing:.1em;text-transform:uppercase}}
+.pillars,.cards,.lanes,.moneys,.plan90,.pairs{{list-style:none;margin:0;padding:0;display:grid;gap:0 28px}}
+.pillars{{grid-template-columns:repeat(4,1fr)}}
+.pillars li,.cards li,.lanes li,.moneys li{{padding:16px 0;border-top:2px solid var(--ink);display:flex;flex-direction:column;gap:6px}}
+.pillars b{{font:800 24px var(--f-d);letter-spacing:-.02em}}
+.pillars span,.cards span,.lanes span,.moneys p{{font-size:15px;line-height:1.45;color:var(--ink-2);margin:0}}
+.cards{{grid-template-columns:repeat(4,1fr)}}
+.cards--3{{grid-template-columns:repeat(3,1fr);margin-top:24px}}
+.cards b,.lanes b{{font:800 17px var(--f-d);letter-spacing:-.01em}}
+.cards--num{{counter-reset:n;grid-template-columns:repeat(4,1fr)}}
+.cards--num li::before{{counter-increment:n;content:"0" counter(n);font:800 13px var(--f-d);letter-spacing:.08em;color:var(--sig-ink)}}
+.logos{{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.lg{{display:flex;align-items:center;justify-content:center;gap:24px;padding:34px 28px;min-height:160px;border-radius:4px}}
+.lg-svg{{width:100%;max-width:400px;height:auto}}
+.lg-ic{{width:96px;height:96px}}
+.lg-stack{{width:120px;height:auto}}
+.lg--paper{{background:{P['ink']['50']};box-shadow:inset 0 0 0 1px var(--line)}}.lg--night{{background:{P['ink']['950']}}}.lg--red{{background:{P['shuka']['600']}}}.lg--icons{{background:{P['ink']['900']}}}
+.rules{{margin:20px 0 0;padding-left:20px;display:grid;gap:6px;max-width:72ch;color:var(--ink-2)}}
+.ramps{{display:grid;gap:22px}}
+.ramp{{display:grid;grid-template-columns:220px 1fr;gap:22px;align-items:start}}
+.ramp-head h3{{margin:0;font:800 20px var(--f-d)}}
+.ramp-head p{{margin:6px 0 0;font-size:14px;color:var(--ink-2)}}
+.shades{{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(11,1fr);gap:4px}}
+.shades li{{background:var(--c);color:var(--t);min-height:92px;padding:8px 7px;display:flex;flex-direction:column;justify-content:flex-end;gap:2px;border-radius:3px}}
+.shades li.is-brand{{outline:3px solid var(--ink);outline-offset:2px}}
+.shades b{{font:800 13px var(--f-d)}}
+.shades code{{background:none;padding:0;color:inherit;font-size:10.5px}}
+.pairs{{grid-template-columns:repeat(4,1fr);gap:12px}}
+.pairs li{{display:flex;gap:12px;align-items:center;padding:10px;border:1px solid var(--line);border-radius:4px}}
+.pair-demo{{flex:none;width:52px;height:52px;display:grid;place-items:center;background:var(--b);color:var(--f);font:800 22px var(--f-d);border-radius:3px}}
+.pairs b{{display:block;font:700 13.5px/1.3 var(--f-b)}}
+.pairs small{{font-size:12.5px;color:var(--ink-2)}}
+.types{{display:grid;gap:0}}
+.ty{{padding:22px 0;border-top:1px solid var(--line)}}
+.ty .lbl{{color:var(--ink-2)}}
+.ty p{{margin:8px 0}}
+.ty small{{color:var(--ink-2);font-size:14px}}
+.ty-d{{font:800 clamp(34px,6vw,68px)/1 var(--f-d);letter-spacing:-.025em}}
+.ty-l{{font:800 20px var(--f-d);letter-spacing:.1em;text-transform:uppercase;color:var(--sig-ink)}}
+.ty-b{{font:500 21px/1.42 var(--f-b);max-width:46ch}}
+.examples{{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}}
+.ex{{margin:0}}.ex img{{width:100%;height:auto;display:block;border-radius:4px}}
+.series{{list-style:none;margin:0;padding:0;display:grid}}
+.series-row{{display:grid;grid-template-columns:110px 1fr 110px;gap:20px;align-items:center;padding:14px 0;border-top:1px solid var(--line)}}
+.when{{font:800 13px/1.3 var(--f-d);letter-spacing:.04em;color:var(--sig-ink)}}
+.series-row h3{{margin:0;font:800 18px/1.2 var(--f-d);letter-spacing:-.01em}}
+.series-row p{{margin:4px 0 0;font-size:15px;color:var(--ink-2)}}
+.series-row img{{width:110px;height:auto;border-radius:3px;display:block}}
+.lanes{{grid-template-columns:repeat(4,1fr)}}
+.doit{{display:grid;grid-template-columns:1fr 1fr;gap:12px}}
+.doit>div{{padding:20px 22px;border-radius:4px;color:#fff}}
+.doit p{{margin:6px 0 0}}
+.yes{{background:var(--green)}}.no{{background:var(--red)}}
+.glossary{{margin:28px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}}
+.gl{{display:grid;grid-template-columns:170px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line)}}
+.gl dt{{font:800 16px/1.2 var(--f-d)}}
+.gl dt small{{display:block;margin-top:4px;font:700 11px var(--f-d);letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2)}}
+.gl dd{{margin:0;font-size:15px;color:var(--ink-2)}}
+.sec--night{{margin-inline:calc(-1*clamp(16px,4vw,48px));padding-inline:clamp(16px,4vw,48px);background:var(--night);color:{P['ink']['50']};border-top:none}}
+.sec--night > *{{max-width:1120px;margin-left:auto;margin-right:auto}}
+.sec--night .note,.sec--night .cards span{{color:{P['ink']['300']}}}
+.sec--night .cards li{{border-top-color:var(--sig)}}
+.sec--night .kicker{{color:var(--sig)}}
+.sec--night a{{color:var(--sig)}}
+.reels{{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:760px;margin-bottom:24px}}
+.reel{{margin:0}}.reel img{{width:100%;height:auto;border-radius:4px;display:block}}
+.reel figcaption,.g-item figcaption{{margin-top:6px;font:500 12px ui-monospace,monospace;color:var(--ink-2);overflow-wrap:anywhere}}
+.gallery{{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:start}}
+.g-item{{margin:0}}.g-item img{{width:100%;height:auto;display:block;border-radius:3px}}
+.profiles{{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}}
+.pf{{margin:0}}.pf img{{width:100%;height:auto;display:block;border-radius:3px}}
+.pf--wide{{grid-column:1/-1}}
+.pf--av img{{display:inline-block;width:140px;border-radius:50%;margin-right:10px}}
+.pf figcaption{{margin-top:6px;font-size:13px;color:var(--ink-2)}}
+.handles{{margin-top:18px;padding:12px 0;border-top:1px solid var(--line)}}
+.flow{{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:0 16px}}
+.flow li{{padding:14px 0;border-top:2px solid {P['ink']['700']};display:flex;flex-direction:column;gap:6px}}
+.flow li:nth-child(6){{border-top-color:var(--sig)}}
+.flow b{{font:800 16px var(--f-d);color:var(--sig)}}
+.flow span{{font-size:13.5px;line-height:1.45;color:{P['ink']['300']}}}
+.f-when{{min-height:1.2em;font:800 11px var(--f-d)!important;letter-spacing:.1em;text-transform:uppercase;color:{P['ink']['400']}!important}}
+.moneys{{grid-template-columns:repeat(5,1fr)}}
+.m-tag{{font:800 11px var(--f-d);letter-spacing:.1em;text-transform:uppercase;color:var(--sig-ink)}}
+.moneys h3{{margin:0;font:800 17px var(--f-d)}}
+.plan90{{grid-template-columns:repeat(4,1fr)}}
+.plan90 li{{padding:14px 0;border-top:2px solid var(--sig)}}
+.plan90 p{{margin:6px 0 0;font-size:14.5px;color:var(--ink-2)}}
+.bookfoot{{max-width:1120px;margin:40px auto 0;padding-block:24px 40px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}}
+@media (max-width:980px){{.cards,.cards--num,.pillars,.lanes,.pairs{{grid-template-columns:repeat(2,1fr)}}.moneys{{grid-template-columns:repeat(2,1fr)}}.flow{{grid-template-columns:repeat(2,1fr)}}.plan90{{grid-template-columns:repeat(2,1fr)}}.gallery{{grid-template-columns:repeat(3,1fr)}}.glossary{{grid-template-columns:1fr}}.ramp{{grid-template-columns:1fr;gap:10px}}.cards--3{{grid-template-columns:repeat(2,1fr)}}}}
+@media (max-width:620px){{.cards,.cards--num,.cards--3,.pillars,.lanes,.pairs,.moneys,.flow,.plan90,.logos,.doit,.profiles,.examples{{grid-template-columns:1fr}}.reels{{grid-template-columns:repeat(2,1fr)}}.gallery{{grid-template-columns:repeat(2,1fr)}}.shades{{grid-template-columns:repeat(6,1fr)}}.series-row{{grid-template-columns:1fr 84px}}.series-row .when{{grid-column:1/-1}}.series-row img{{width:84px}}.gl{{grid-template-columns:1fr;gap:4px}}.lg--icons{{flex-wrap:wrap}}}}
 """
 
-FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Figtree:wght@400;500;600;700;800&family=Unbounded:wght@700;800&display=swap">'
+FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap">'
 
 
 def main() -> None:
     body = build_body()
-    head = f"<title>Jua Kesho</title>\n{FONTS}\n<style>{CSS}</style>"
+    head = f"<title>Jua Kesho Brand Book</title>\n{FONTS}\n<style>{CSS}</style>"
     out = ROOT / "brand-book"
     out.mkdir(exist_ok=True)
     if "--fragment" in sys.argv:

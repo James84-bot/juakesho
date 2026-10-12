@@ -5,21 +5,34 @@
       "id": "00-karibu",
       "template": "intro",
       "bg": "jua",
-      "hello": "Sasa!",
+      "hello": "Sasa, Kenya!",
       "promise": [
-        "AI hacks, future drops & tech tea",
-        "Kenyan English, zero boring lectures",
-        "Clean, funny, made in Nairobi for the world"
+        "Politics with receipts, not rumours",
+        "How your country works, in plain words",
+        "Money, scams and the future, explained"
       ],
-      "community": "Follow & join the Wanakesho: the ones building tomorrow.",
-      "caption": "Sasa, Wanakesho! AI hacks, future drops and tech tea, in Kenyan English, zero boring lectures. Drop the one tech thing you wish someone explained properly and we'll cover it this week.\n\n#JuaKesho #Wanakesho"
+      "community": "Follow and share: an informed Kenya is unstoppable.",
+      "caption": "Sasa, Kenya! Jua Kesho is here: politics with receipts, how the country works in plain words, and the money, scams and future that affect you. Jua nchi yako. Drop the one thing about Kenya you wish someone explained properly.\n\n#JuaKesho"
+    },
+    {
+      "id": "00b-sauti-payslip",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "young_pro",
+      "kicker": "Sisi wananchi",
+      "line": "Every month *4.25%* of our gross pay goes to the housing levy and SHA. We're still waiting for the receipt.",
+      "fact": "Housing levy: 1.5% of gross salary. SHIF: 2.75% of gross salary. Both come off before your net pay.",
+      "message": "Kenyans pay 4.25% of gross pay to housing and health levies and want to see what it buys.",
+      "photo_query": "payslip and Kenyan shilling notes",
+      "source": "Affordable Housing Act, 2024 (s.4: 1.5% of gross salary); Social Health Insurance Act, 2023 and Social Health Insurance (General) Regulations, 2024 (2.75% of gross salary)",
+      "caption": "Tunalipa. Tunauliza. 1.5% housing levy plus 2.75% SHIF comes off every payslip, every month. What has it bought you so far? Tell us in the comments and send this to someone checking their payslip.\n\n#JuaKesho #SautiYaMwananchi"
     },
     {
       "id": "01-hack-lecture-notes",
       "template": "hack",
       "bg": "usiku",
       "hook": "nobody told you this…",
-      "title": "Turn a 1-hour lecture into notes in 2 minutes",
+      "title": "Turn a 1-hour lecture into notes in *2 minutes*",
       "moves": [
         "Record the lecture on your phone (ask the lecturer first).",
         "Upload the audio to an AI that takes voice files, like Gemini.",
@@ -27,7 +40,28 @@
       ],
       "payoff": "Revision just got a shortcut.",
       "caption": "AI Hack: a 1-hour lecture into clean notes and practice questions in about 2 minutes. Always ask before recording. Send this to the class group before CATs.\n\n#AIHack #JuaKesho",
-      "symbol": "grad_cap"
+      "symbol": "grad_cap",
+      "photo_query": "university lecture hall Kenya"
+    },
+    {
+      "id": "01b-civic-six-votes",
+      "template": "hack",
+      "bg": "usiku",
+      "series": "Civic 101",
+      "lane": "everyone",
+      "hook": "one ballot day, six jobs to fill",
+      "title": "The *6 votes* you cast on 10 August 2027",
+      "moves": [
+        "President and Governor: lead the national and county governments.",
+        "Senator: defends your county's share of national money.",
+        "MP and Woman Rep: make national laws and approve the budget.",
+        "MCA: makes county laws and checks your governor."
+      ],
+      "payoff": "Know the job before you pick the person.",
+      "message": "On 10 August 2027 you elect six leaders, each with a different job.",
+      "photo_query": "ballot box polling station Kenya",
+      "source": "Constitution of Kenya 2010, Articles 95, 96, 97, 177, 180, 185; IEBC: general election on 10 August 2027 (standardmedia.co.ke/article/2001551158)",
+      "caption": "Civic 101: on 10 August 2027 you vote for six offices, and each one has a different job. Save this and send it to someone voting for the first time.\n\n#JuaKesho #Civic101"
     },
     {
       "id": "02-decode-prompt",
@@ -39,7 +73,23 @@
       "meaning": "What you type to tell an AI what you want. Vague prompt, vague answer. Give it a role, a task and an example.",
       "try_this": "Not “write a caption” but “3 funny captions for my thrift reel, Kenyan English, under 12 words”.",
       "caption": "Decode No. 1: Prompt. The difference between a boring AI answer and a fire one is how you ask. Save this, then share your best prompt in the comments.\n\n#Decode #JuaKesho",
-      "symbol": "key"
+      "symbol": "key",
+      "photo_query": "hands typing on laptop"
+    },
+    {
+      "id": "02b-decode-finance-bill",
+      "template": "decode",
+      "bg": "usiku",
+      "lane": "young_pro",
+      "number": "2",
+      "hook": "it comes back every single year",
+      "word": "Finance Bill",
+      "meaning": "The yearly law that sets new taxes and changes old ones to fund the budget. Treasury drafts it; MPs debate and vote.",
+      "try_this": "When it's published, read the tax changes on parliament.go.ke and send your views during public participation. That's your right.",
+      "message": "The Finance Bill decides your taxes every year, and you have a right to be heard on it.",
+      "photo_query": "Kenya parliament building Nairobi",
+      "source": "Constitution of Kenya 2010, Art. 118 (public participation in Parliament) and Art. 221 (budget estimates); Public Finance Management Act, 2012",
+      "caption": "Decode: the Finance Bill. It sets your taxes every year, and the Constitution gives you a say before MPs vote. Send this to the friend who only hears about it when prices go up.\n\n#JuaKesho"
     },
     {
       "id": "03-cap-coding",
@@ -50,7 +100,8 @@
       "real": "Most AI tools work in plain English. Coding takes you further, but you can build a bot, a site or a content system this weekend without it.",
       "source": "General: mainstream AI assistants and no-code automation tools accept plain-language instructions",
       "caption": "Cap or No Cap? “You need coding to build with AI.” CAP. Start with plain English, learn code as you go. Tag the friend who keeps saying “I'm not a tech person”.\n\n#CapOrNoCap #JuaKesho",
-      "symbol": "robot"
+      "symbol": "robot",
+      "photo_query": "laptop code screen dark room"
     },
     {
       "id": "04-usiibiwe-task-scam",
@@ -67,82 +118,8 @@
       "expr": "wow",
       "source": "Common 'task scam' pattern (pay-to-start online jobs); confirm against a current Communications Authority of Kenya or Safaricom fraud advisory before posting",
       "caption": "USIIBIWE! “Earn daily for liking videos, just pay registration.” That's how they get you. Real jobs don't charge you to start. Send this to the group chat, someone needs it.\n\n#Usiibiwe #JuaKesho",
-      "symbol": "hook"
-    },
-    {
-      "id": "05-vichekesho-cv",
-      "template": "vichekesho",
-      "bg": "maziwa",
-      "title": "40 applications, 0 replies",
-      "panels": [
-        {
-          "bg": "pwani",
-          "left": {
-            "who": "student",
-            "pose": "phone",
-            "mood": "worried",
-            "say": "40 applications. Zero replies. Manze!"
-          }
-        },
-        {
-          "bg": "jua",
-          "left": {
-            "who": "student",
-            "pose": "think",
-            "mood": "flat",
-            "say": "What am I doing wrong?"
-          },
-          "right": {
-            "who": "techie",
-            "pose": "point",
-            "mood": "happy",
-            "say": "Same CV for every job? Let AI tailor it to each one."
-          }
-        },
-        {
-          "bg": "waridi",
-          "left": {
-            "who": "student",
-            "pose": "cheer",
-            "mood": "happy",
-            "say": "Two interviews this week!"
-          },
-          "right": {
-            "who": "jua",
-            "mood": "wink",
-            "say": "Tailor smart. Stay honest."
-          }
-        }
-      ],
-      "punch": "CV 2.0 unlocked.",
-      "caption": "Vichekesho: same CV for 40 jobs = 0 replies. Tailor it per job with AI, keep every fact true. Tag the friend currently on application number 41.\n\n#Vichekesho #JuaKesho"
-    },
-    {
-      "id": "06-pov-agent",
-      "template": "pov",
-      "bg": "usiku",
-      "year": "2030",
-      "pov": "your AI agent applied to 20 jobs while you slept, each cover letter in your voice.",
-      "real": "Early AI agents that do tasks for you already exist. The skill that pays: telling them exactly what you want, then checking their work.",
-      "cast": [
-        {
-          "who": "student",
-          "pose": "phone",
-          "mood": "happy",
-          "phone": true
-        },
-        {
-          "who": "jua",
-          "mood": "visor"
-        },
-        {
-          "who": "techie",
-          "pose": "stand",
-          "mood": "happy"
-        }
-      ],
-      "source": "General: AI assistants that can take multi-step actions ('agents') are available in early form from major AI companies",
-      "caption": "POV: Kesho. Your AI agent job-hunting while you sleep. Closer than you think. Would you trust it? Reply YES or NO.\n\n#POVKesho #JuaKesho"
+      "symbol": "hook",
+      "photo_query": "hand holding phone text message"
     },
     {
       "id": "07-build-comrade",
@@ -165,7 +142,8 @@
       ],
       "result": "Pilot soon. Comment BOT for the breakdown.",
       "caption": "Build With Me: a bot that reads campus notices so nobody digs through PDFs again. No human, no send: every message gets approved first. Comment BOT and we'll break it down step by step.\n\n#BuildWithMe #JuaKesho",
-      "symbol": "phone_chat"
+      "symbol": "phone_chat",
+      "photo_query": "laptop and phone on desk"
     },
     {
       "id": "08-africa-mpesa",
@@ -178,7 +156,8 @@
       "now": "We started it. The world followed.",
       "caption": "Made in Africa: in 2007 Kenya launched M-Pesa, and sending money by phone became normal here. Which African innovation are you proud of? Drop it in the comments.\n\n#MadeInAfrica #JuaKesho",
       "source": "https://en.wikipedia.org/wiki/M-Pesa",
-      "symbol": "rocket"
+      "symbol": "rocket",
+      "photo_query": "M-Pesa shop Kenya"
     },
     {
       "id": "09-cover-kesho-kutwa",
@@ -195,7 +174,8 @@
       "kicker": "Swipe to see tomorrow!",
       "expr": "visor",
       "caption": "Kesho Kutwa: 5 things your phone will soon do for you. Swipe, then save it so you remember when tomorrow comes.\n\n#KeshoKutwa #JuaKesho",
-      "symbol": "sunrise"
+      "symbol": "sunrise",
+      "photo_query": "Nairobi skyline at night"
     },
     {
       "id": "09b-kesho-mtafsiri",
@@ -209,7 +189,8 @@
       "anza": "Open Google Translate, tap Conversation, and chat with a friend in two languages.",
       "caption": "1/5: Your phone will be your translator. Try Conversation mode in Google Translate today, then send this to the friend who travels most.\n\n#KeshoKutwa #JuaKesho",
       "source": "https://support.google.com/translate/",
-      "symbol": "bridge"
+      "symbol": "bridge",
+      "photo_query": "phone translation app"
     },
     {
       "id": "10-story-poll-dms",
@@ -237,7 +218,8 @@
       "cta": "Tag an artist who needs this.",
       "source": "General: major streaming platforms offer artist dashboards with playlist pitching and listener data",
       "caption": "Still in 2026? Waiting for radio to find you. The kesho way: your fans are already on TikTok and streaming. Tag an upcoming artist who needs this, then drop your favourite new Kenyan song below.\n\n#StillIn2026 #JuaKesho",
-      "symbol": "music"
+      "symbol": "music",
+      "photo_query": "radio studio microphone"
     },
     {
       "id": "13-spotlight-ushahidi",
@@ -251,7 +233,8 @@
       "cta": "Share this so more people know it's ours.",
       "source": "https://en.wikipedia.org/wiki/Ushahidi",
       "caption": "Put Us On: Ushahidi, built in Kenya in 2008, now used around the world. We support our own. Share this, then tag an African startup or artist we should spotlight next.\n\n#PutUsOn #JuaKesho",
-      "symbol": "eye"
+      "symbol": "eye",
+      "photo_query": "laptop showing a map"
     },
     {
       "id": "14-money-idle-funds",
@@ -265,7 +248,8 @@
       "check": "Auditor-General reports are public on parliament.go.ke. Read one page tonight.",
       "source": "Auditor-General Nancy Gathungu to the National Assembly Budget Committee, 2 June 2025 (Capital FM: capitalfm.africa/audit-exposes-sh304bn-in-idle-govt-project-funds)",
       "caption": "Follow the Money: Sh304 billion set aside for flagship projects, never used. Unused money still costs us in loan fees and delayed projects. Save this and send it to someone who says “politics isn't my business”. It's your money.\n\n#FollowTheMoney #JuaKesho",
-      "symbol": "crane"
+      "symbol": "crane",
+      "photo_query": "stalled construction site Kenya"
     },
     {
       "id": "15-see-paid-trends",
@@ -273,7 +257,7 @@
       "bg": "usiku",
       "series": "See Through It",
       "hook": "trending ≠ true…",
-      "title": "How to spot a paid hashtag in 30 seconds",
+      "title": "How to spot a *paid hashtag* in 30 seconds",
       "moves": [
         "Same phrase, many accounts, same hour? Copy-paste army.",
         "Tap the profiles: new, few real followers, posts only hashtags.",
@@ -282,58 +266,8 @@
       "payoff": "Some get paid $10–15 a day to trend.",
       "source": "Mozilla Foundation, 'Inside the Shadowy World of Disinformation-for-hire in Kenya', Odanga Madung & Brian Obilo, 2 Sept 2021",
       "caption": "See Through It: some trends are bought. Mozilla researchers documented influencers paid via M-Pesa to push hashtags. Before you retweet, check in 30 seconds. Send this to the group chat that believes every trend.\n\n#SeeThroughIt #JuaKesho",
-      "symbol": "puppet"
-    },
-    {
-      "id": "16-vichekesho-500",
-      "template": "vichekesho",
-      "bg": "maziwa",
-      "title": "The Ksh 500 “job”",
-      "series": "See Through It",
-      "panels": [
-        {
-          "bg": "pwani",
-          "left": {
-            "who": "student",
-            "pose": "phone",
-            "mood": "wow",
-            "say": "Eh, easy money?",
-            "sms": "Kazi ya leo: come make noise tomorrow. Ksh 500 + lunch. Don't ask questions."
-          }
-        },
-        {
-          "bg": "jua",
-          "left": {
-            "who": "ahadi",
-            "pose": "point",
-            "mood": "happy",
-            "say": "Just shout my name, vijana!"
-          },
-          "right": {
-            "who": "techie",
-            "pose": "shrug",
-            "mood": "worried",
-            "say": "500 today. Who pays if things go wrong?"
-          }
-        },
-        {
-          "bg": "waridi",
-          "left": {
-            "who": "student",
-            "pose": "cheer",
-            "mood": "happy",
-            "say": "Blocked. My future costs more than 500."
-          },
-          "right": {
-            "who": "jua",
-            "mood": "wink",
-            "say": "Nobody's tool. Ever."
-          }
-        }
-      ],
-      "punch": "Your future > Ksh 500.",
-      "source": "Allegory: fictional characters. Pattern of paying young people to disrupt or crowd events is widely reported in Kenyan media and civil society research",
-      "caption": "Vichekesho: the Ksh 500 “job”. Nobody who pays you to shout cares what happens to you after. Fictional characters, real pattern. Send this to a friend who's worth more than 500.\n\n#SeeThroughIt #JuaKesho"
+      "symbol": "puppet",
+      "photo_query": "phone screen social media feed"
     },
     {
       "id": "17-cant-wait",
@@ -350,7 +284,8 @@
       "kicker": "Wake up. Build. Do it right.",
       "expr": "visor",
       "caption": "Africa can't wait. Not for permission, not for “next year”. Tomorrow is already here, and it belongs to the ones who learn it first. Send this to one person who's ready to build.\n\n#JuaKesho #Wanakesho",
-      "symbol": "hourglass"
+      "symbol": "hourglass",
+      "photo_query": "Nairobi skyline sunrise"
     },
     {
       "id": "18-straight-africa-country",
@@ -361,7 +296,7 @@
       "who": "a stereotype still found in comments",
       "claim_source": "Recurring stereotype in comment sections and old textbooks; not attributed to one person",
       "verdict": "false",
-      "truth": "54 countries. 2,000+ languages. One continent.",
+      "truth": "*54 countries.* 2,000+ languages. One continent.",
       "proof": [
         "54 countries, each with its own government, flag and story.",
         "Over 2,000 languages: roughly a third of all the languages spoken on Earth.",
@@ -369,12 +304,13 @@
       ],
       "pride": "One continent. 54 flags. Zero excuses.",
       "source": "UN member states by region (un.org/en/about-us/member-states); Ethnologue, languages of Africa (ethnologue.com)",
-      "caption": "Set It Straight: Africa is not a country. It's 54 of them, and more languages than any other continent. Send this to the friend who still says 'I'm going to Africa' like it's one town.\\n\\n#SetItStraight #JuaKesho"
+      "caption": "Set It Straight: Africa is not a country. It's 54 of them, and more languages than any other continent. Send this to the friend who still says 'I'm going to Africa' like it's one town.\\n\\n#SetItStraight #JuaKesho",
+      "photo_query": "map of Africa"
     },
     {
       "id": "19-makanga-cloud",
       "template": "makanga",
-      "bg": "pwani",
+      "bg": "maziwa",
       "symbol": "matatu",
       "message": "Cloud storage keeps your files safe off your phone, like a stage keeps passengers moving.",
       "topic": "Cloud storage",

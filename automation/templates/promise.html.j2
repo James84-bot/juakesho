@@ -1,0 +1,31 @@
+{#- Promise Tracker — a public office holder's promise vs the record.
+    Fields: who (name + office), promise (quoted exactly), said (where/when), verdict (kept|partly|stalled|broken),
+            measure? (short, e.g. "0 of 6", "12%"), reality, proof (1-3), ask (the accountability question), source -#}
+{% extends "base.html.j2" %}
+{% set S = {"kept": ("Kept", "var(--chai-600)", "#fff"), "partly": ("Partly kept", "var(--ink-50)", "var(--ink-950)"),
+            "stalled": ("Stalled", "var(--shuka-200)", "var(--ink-950)"), "broken": ("Broken", "var(--shuka-600)", "#fff")}[verdict] %}
+{% block style %}
+.has-photo { --ph: 460px; }
+.promise { font-size: {{ fitw('“' ~ promise ~ '”', 936, 4, 76 if photo_uri is not defined else 62) }}px; }
+.who { margin-top: 18px; font: 700 22px/1.3 "Inter Tight"; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.status { display: flex; align-items: center; gap: 24px; margin-top: 34px; }
+.status b { padding: 14px 22px 12px; border-radius: 4px; background: {{ S[1] }}; color: {{ S[2] }};
+  font: 900 52px/1 "Inter Tight"; letter-spacing: -.015em; text-transform: uppercase; }
+.status span { font: 900 64px/1 "Inter Tight"; letter-spacing: -.03em; color: var(--fg); font-variant-numeric: tabular-nums; }
+.rows .row { font-size: 27px; padding: 16px 0; }
+.ask { margin-top: 24px; color: var(--accent); }
+{% endblock %}
+{% block top %}<span class="tag">Promise Tracker</span><span class="meta">{{ person_role if person_shown is defined and person_role is defined else 'On the record' }}</span>{% endblock %}
+{% block content %}
+  <p class="label">The promise</p>
+  <h1 class="display promise">&ldquo;{{ promise }}&rdquo;</h1>
+  <p class="who">{{ who }} &middot; {{ said }}</p>
+  <div class="status"><b>{{ S[0] }}</b>{% if measure is defined and measure %}<span data-count>{{ measure }}</span>{% endif %}</div>
+  <div class="gap"></div>
+  <p class="label">The record</p>
+  <p class="lead">{{ reality | nb }}</p>
+  <div class="rows" style="margin-top: 18px">
+    {% for f in proof %}<div class="row"><span class="n">{{ '%02d' % loop.index }}</span><span>{{ f | nb }}</span></div>{% endfor %}
+  </div>
+  <p class="strong ask">{{ ask }}</p>
+{% endblock %}
