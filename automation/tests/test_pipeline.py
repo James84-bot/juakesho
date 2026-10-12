@@ -7,6 +7,9 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+
+for _k in ("ANTHROPIC_API_KEY", "GEMINI_API_KEY"):   # AI keys never reach the tests: no real calls, no spend
+    os.environ.pop(_k, None)
 from unittest import mock
 
 HERE = Path(__file__).resolve().parent.parent
@@ -654,10 +657,15 @@ class QualitySystemTests(unittest.TestCase):
 
     def test_budget_cap_blocks_optional_passes(self):
         import draft
-        with mock.patch.dict(draft.SPEND, {"usd": 0.4999, "calls": 5}), \
+        def no_call(*a, **k):
+            raise AssertionError("the API must not be called once the budget (and the critic's slack) is spent")
+        with mock.patch.dict(draft.SPEND, {"usd": 0.4999, "calls": 5}), mock.patch.object(draft, "call_claude", no_call), \
                 mock.patch.dict(os.environ, {"JUA_WEEKLY_BUDGET_USD": "0.50", "JUA_PROVIDER": "anthropic"}):
             self.assertFalse(draft.can_afford(10000, 5000))
-            self.assertEqual(draft.critique([{"id": "x", "template": "hack"}]), {})   # skipped, no API call
+            self.assertTrue(draft.can_afford(2000, 600, draft.critic_model(), slack=draft.CRITIC_SLACK))  # the editor still runs
+        with mock.patch.dict(draft.SPEND, {"usd": 0.80, "calls": 9}), mock.patch.object(draft, "call_claude", no_call), \
+                mock.patch.dict(os.environ, {"JUA_WEEKLY_BUDGET_USD": "0.50", "JUA_PROVIDER": "anthropic"}):
+            self.assertEqual(draft.critique([{"id": "x", "template": "hack"}]), {})   # past the slack too: skipped
         with mock.patch.dict(draft.SPEND, {"usd": 0.0, "calls": 0}):
             self.assertTrue(draft.can_afford(10000, 5000))
 
