@@ -103,9 +103,11 @@ SAY WHAT IT IS (be straightforward; visibility beats cleverness)
 PHOTO + HEADLINE (every post; the design is editorial: a real photo, bold type, nothing cartoonish)
 - Before writing, decide the ONE `message`: the sentence the viewer must walk away with (max 120 characters).
 - Photo + headline alone must deliver the message in one second, before any body text is read.
-- Give almost every post a `photo_query` (max 60 chars, searched on a free stock library): a concrete, real scene
-  that IS the message: a stalled construction site (idle billions), a phone showing a WhatsApp chat (scam texts),
-  a lecture hall (campus hacks), a Nairobi skyline at dusk (Africa's future), a recording studio (music).
+- Give almost every post a `photo_query` (max 60 chars). It is searched on Wikimedia Commons and Flickr, which hold
+  REAL documentary photos, not staged stock. So name real, photographed things: places and events, 2-4 words, with
+  the place: "Kenya National Assembly", "Nairobi Expressway", "Gen Z protests Nairobi", "Kenyatta National Hospital",
+  "matatu Nairobi", "Kibera", "Mombasa port", "maize farm Kenya", "M-Pesa agent Kenya", "Kenyan shilling notes".
+  Never a staged scene ("payslip and calculator on desk", "person on video call"): those don't exist there.
   Scenes, places, objects, hands. No logos. On Follow the Money, Set It Straight, See Through It and Put Us On, no
   stranger's face ever stands in for someone we name: use a scene, or the real person's photo (person_photo).
 - Headlines short and concrete; the photo carries half the meaning.
@@ -217,7 +219,17 @@ THE GOAL FOR 2027: LEADERSHIP IN THE RIGHT HANDS (not just a change of faces)
 - Show what is delaying Kenya's greatness with numbers: money lost to waste and theft, projects abandoned, debt,
   brain drain. Then show what is possible: what countries that held leaders to account achieved. Hope, with proof.
 
-HATUTASAHAU (we won't forget)
+POLLS (presidential and other election polls)
+- We never run our own "who will you vote for / who will win" poll, in a post or a Story. Online polls get brigaded
+  by party bloggers, so the result is fake news with our name on it, and Kenya's Publication of Electoral Opinion
+  Polls Act (2012) sets rules for publishing election polls. It also reads as picking sides.
+- We DO report the real polls (TIFA, Infotrak, Mizani, Ipsos) when they come out: pollster, fieldwork dates, sample
+  size, margin of error and who paid for it, all in the post, with the link in `source`. Then the people's angle:
+  what moved, what issue voters rank first, and what the leaders at the top have actually delivered on it.
+- Our own polls (glasspoll, Story polls) ask about issues and records every side can answer: "Has your MP held a
+  single public meeting this year? Ndio / La", "Which hurts more: fuel or food prices?", "Should MPs who skip
+  sittings lose pay?", "Do you know where your CDF money went?". People come back to see the result: post it.
+
 - Politicians count on Kenyans forgetting. We remind them, event by event, clip by clip: the protesters killed, the
   abductions, the hired goons, deaths in police custody. Only what is documented by KNCHR, IPOA, Amnesty Kenya,
   the courts or reputable media; attribute every number ("KNCHR documented..."). Name victims only as already

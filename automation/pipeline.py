@@ -32,6 +32,7 @@ import datetime as dt
 import json
 import mimetypes
 import os
+import re
 import shutil
 import sys
 import time
@@ -293,6 +294,32 @@ def redo(label: str) -> list[str]:
     save_week(data)
     log(f"redo {label}: {reset or 'nothing held'}")
     return reset
+
+
+def _next_rev(pid: str) -> str:
+    m = re.match(r"^(.*)-r(\d+)$", pid)
+    return f"{m.group(1)}-r{int(m.group(2)) + 1}" if m else f"{pid}-r2"
+
+
+def remake(label: str) -> list[str]:
+    """Re-drafts the week's unsent and unapproved posts from scratch with the current rules and photo sources.
+    Each gets a new id (…-r2, -r3), so a tap on an older Telegram card can never approve the new version unseen.
+    Published, approved and today's hot posts are kept."""
+    data = load_week(label)
+    keep = {"published", "approved", "manual"}
+    renamed = {}
+    for i, p in enumerate(data["posts"]):
+        if p["status"] in keep or p.get("hot"):
+            continue
+        fresh = {k: v for k, v in p.items() if k in PLAN_KEYS} | {"status": "planned", "id": _next_rev(p["id"])}
+        if p.get("group"):
+            fresh["group"] = renamed.setdefault(p["group"], _next_rev(p["group"]))
+        data["posts"][i] = fresh
+        renamed[p["id"]] = fresh["id"]
+    save_week(data)
+    ids = [v for k, v in renamed.items() if not any(q.get("group") == k for q in data["posts"])]
+    log(f"remake {label}: {len(ids)} post(s) back to the writer")
+    return ids
 
 
 def held_summary(data: dict) -> str | None:
@@ -839,7 +866,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples"])
+                                        "news", "status", "redo", "engage", "samples", "remake"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -853,7 +880,7 @@ def _main(argv: list[str] | None = None) -> int:
             learn()
         except Exception as e:
             log(f"learn skipped: {e}")
-    if a.command in {"week", "hot", "trends", "news"} and not a.mock:
+    if a.command in {"week", "hot", "trends", "news", "remake"} and not a.mock:
         try:
             import trends
             t = trends.collect()
@@ -878,11 +905,16 @@ def _main(argv: list[str] | None = None) -> int:
                     if any(q["status"] == "needs_human" for q in json.loads(f.read_text(encoding="utf-8"))["posts"])]
             label = held[-1] if held else label
         redo(label)
-    if a.command in {"week", "hot", "redo", "draft"}:
+    if a.command == "remake":
+        label = a.week or current_week_label(ahead=0)
+        if remake(label) and not a.dry_run:
+            _notify(f"♻️ Fresh batch for <b>{label}</b> coming up: new drafts, real photos. "
+                    "Buttons on the older cards for these posts no longer do anything.")
+    if a.command in {"week", "hot", "redo", "draft", "remake"}:
         draft(label, mock=a.mock)
-    if a.command in {"week", "hot", "redo", "render"}:
+    if a.command in {"week", "hot", "redo", "render", "remake"}:
         render_week(label)
-    if a.command in {"week", "hot", "redo", "ask"}:
+    if a.command in {"week", "hot", "redo", "ask", "remake"}:
         ask(label, dry_run=a.dry_run)
     if a.command in {"tick", "collect"} and not a.dry_run:
         collect()

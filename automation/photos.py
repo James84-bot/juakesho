@@ -7,9 +7,12 @@ Sources, in order:
   2. For the writer's  "photo_query":
      - Wikimedia Commons: real Kenyan places and scenes, free, no key. Only CC0 / public domain / CC BY
        (credited on the image); share-alike, non-commercial and no-derivatives licences are skipped.
+     - Openverse: Flickr and other open collections (lots of real Kenyan street, market and protest photos),
+       free, no key. Same licence rule: CC0 / public domain / CC BY only, credited.
      - Pexels: free for commercial use (we credit anyway). Needs PEXELS_API_KEY (free at pexels.com/api).
-     Kenyan queries (Nairobi, matatu, M-Pesa...) try Commons first; others try Pexels first. Each falls back
-     to the other. Nothing found: the post renders type-only.
+     Kenyan queries (Nairobi, matatu, M-Pesa...) try Commons, then Openverse, then Pexels; others the reverse.
+  3. Still nothing on a Kenyan civic post: a real symbolic Kenyan photo (Parliament, the flag, Nairobi's CBD),
+     so a political post never goes out as plain type.
 
 Rules (enforced in guard.py): scenes, places and objects; no faces on critical posts; a photo never stands in
 for a real person or project we're talking about. On civic posts the design is labelled "illustrative photo".
@@ -28,6 +31,10 @@ HERE = Path(__file__).resolve().parent
 OWN = HERE / "content" / "photos"
 API = "https://api.pexels.com/v1/search"
 COMMONS = "https://commons.wikimedia.org/w/api.php"
+OPENVERSE = "https://api.openverse.org/v1/images/"
+# Real, symbolic Kenyan scenes for civic posts whose own search found nothing
+CIVIC_FALLBACK = ["Parliament Buildings Nairobi", "Kenya National Assembly", "Flag of Kenya", "Nairobi Central Business District"]
+CIVIC_TEMPLATES = {"sauti", "promise", "kumbuka", "scorecard", "straight", "money", "decode", "usiibiwe", "spotlight"}
 # Licences that allow a credited photo inside our design without other conditions
 OK_LICENCES = re.compile(r"^(cc0|public domain|pd\b|cc by \d(\.\d)?|cc-by-\d(\.\d)?)", re.I)
 
@@ -68,6 +75,41 @@ def pexels(query: str, pid: str) -> tuple[bytes, dict] | None:
     pick = found[zlib.crc32(pid.encode()) % min(5, len(found))]   # varied but reproducible
     data = _get(pick["src"].get("large2x") or pick["src"]["original"])
     return data, {"credit": f"Photo: {pick.get('photographer', 'Pexels')} / Pexels", "url": pick.get("url", "")}
+
+
+def openverse(query: str, pid: str) -> tuple[bytes, dict] | None:
+    """A real photo from Openverse (Flickr and other open collections): CC0, public domain mark or CC BY only."""
+    for q in _query_ladder(query):
+        got = _openverse_once(q, pid)
+        if got:
+            return got
+    return None
+
+
+def _openverse_once(query: str, pid: str) -> tuple[bytes, dict] | None:
+    m = LOCAL.search(query)
+    place = m.group(0) if m and m.group(0).lower() not in {"africa", "african"} else ""
+    q = urllib.parse.urlencode({"q": query, "license": "cc0,pdm,by", "size": "large", "mature": "false",
+                                "page_size": 20})
+    results = json.loads(_get(f"{OPENVERSE}?{q}", {"User-Agent": "jua-kesho/1.0 (photo search)"})).get("results", [])
+    good = []
+    for r in results:
+        if r.get("license") not in {"cc0", "pdm", "by"}:
+            continue
+        if (r.get("width") or 0) and ((r.get("width") or 0) < 1000 or (r.get("height") or 0) < 700):
+            continue
+        if place:   # same rule as Commons: a Kenyan story only gets a photo that says where it was taken
+            about = " ".join([r.get("title") or "", " ".join(t.get("name", "") for t in r.get("tags") or [])]).lower()
+            if place.lower() not in about and "kenya" not in about:
+                continue
+        lic = {"cc0": "CC0", "pdm": "public domain", "by": f"CC BY {r.get('license_version') or ''}".strip()}[r["license"]]
+        who = (r.get("creator") or "unknown").strip()[:50]
+        good.append((r["url"], {"credit": f"Photo: {who} / {(r.get('source') or 'Openverse').title()}, {lic}",
+                                "url": r.get("foreign_landing_url") or ""}))
+    if not good:
+        return None
+    url, meta = good[zlib.crc32(pid.encode()) % min(4, len(good))]
+    return _get(url), meta
 
 
 def _licence_ok(lic: str) -> bool:
@@ -148,15 +190,21 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
         hit = _cached(out_dir, post["id"])
         if hit:
             return hit
-        order = (commons, pexels) if LOCAL.search(query) else (pexels, commons)
-        for source in order:
+        order = (commons, openverse, pexels) if LOCAL.search(query) else (pexels, openverse, commons)
+        tries = [(source, query) for source in order]
+        if post.get("template") in CIVIC_TEMPLATES:
+            tries += [(commons, q) for q in CIVIC_FALLBACK]
+        for source, q in tries:
             try:
-                got = source(query, post["id"])
+                got = source(q, post["id"])
             except Exception as e:   # one source down: try the next
                 print(f"  photo source {source.__name__} failed for {post.get('id')}: {e}")
                 got = None
             if got:
+                if q != query:
+                    print(f"  photo for {post['id']}: nothing for '{query}', used '{q}'")
                 return _save(out_dir, post["id"], *got)
+        print(f"  no photo found for {post['id']} ('{query}')")
         return None
     except Exception as e:   # a missing photo must never block the week
         print(f"  photo skipped for {post.get('id')}: {e}")
