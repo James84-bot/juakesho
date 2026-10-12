@@ -1,9 +1,17 @@
 {
  "about": "Kenyan TV channels whose public YouTube RSS feeds radar.py reads (no key). A wrong id shows up in state/radar.json errors.",
  "channels": [
-  {"name": "Citizen TV", "id": "UChBQgieUidXV1CmDxSdRm3g"},
-  {"name": "NTV Kenya", "id": "UCqBJ47FjJcl61fmSbcadAVg"},
-  {"name": "KTN News", "id": "UCKVsdeoHExltrWMuK0hOWmg"},
-  {"name": "K24 TV", "id": "UCt3SE_rXbyJk2ZFkYnTIHsw"}
+  {
+   "name": "Citizen TV",
+   "id": "UChBQgieUidXV1CmDxSdRm3g"
+  },
+  {
+   "name": "NTV Kenya",
+   "id": "UCqBJ47FjJcl61fmSbcadAVg"
+  },
+  {
+   "name": "KTN News",
+   "id": "UCKVsdeoHExltrWMuK0hOWmg"
+  }
  ]
 }

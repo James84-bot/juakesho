@@ -7,12 +7,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import radar  # noqa: E402
 
-PAGE = """<div class="trend-card"><h3 class="title" data-timestamp="1">1 hour ago</h3>
+PAGE = """<nav><ol><li><a href="/about">About</a></li></ol></nav><div class="trend-card"><h3 class="title" data-timestamp="1">1 hour ago</h3>
 <ol class="trend-card__list"><li><span class="trend-name"><a href="https://twitter.com/search?q=%23RutoMustGo" class="trend-link">#RutoMustGo</a>
 <span class="tweet-count" data-count="45000">45K</span></span></li>
-<li><span class="trend-name"><a href="x" class="trend-link">Mp Naisula Lesuuda</a></span></li>
-<li><span class="trend-name"><a href="x" class="trend-link">Kenya &amp; Nigeria</a></span></li></ol></div>
-<div class="trend-card"><ol class="trend-card__list"><li><a class="trend-link">#OldTrend</a></li></ol></div>"""
+<li><span class="trend-name"><a href="https://twitter.com/search?q=Mp" class="trend-link">Mp Naisula Lesuuda</a></span></li>
+<li><span class="trend-name"><a href="https://x.com/search?q=K" class="trend-link">Kenya &amp; Nigeria</a></span></li></ol></div>
+<div class="trend-card"><ol class="trend-card__list"><li><a href="https://twitter.com/search?q=old">#OldTrend</a></li></ol></div>"""
 
 FEED = b"""<?xml version="1.0"?><feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
 <entry><yt:videoId>abc</yt:videoId><title>Police teargas protesters in CBD</title><published>2026-10-12T08:00:00+00:00</published>

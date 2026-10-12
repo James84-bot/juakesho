@@ -26,6 +26,7 @@ FEEDS = HERE / "content" / "video_feeds.json"
 OUT = HERE / "state" / "radar.json"
 TRENDS24 = "https://trends24.in/kenya/"
 UA = "Mozilla/5.0 (JuaKesho trend radar; https://github.com/James84-bot/juakesho)"
+SEARCH = re.compile(r"(?:twitter|x)\.com/search")
 NS = {"a": "http://www.w3.org/2005/Atom", "media": "http://search.yahoo.com/mrss/",
       "yt": "http://www.youtube.com/xml/schemas/2015"}
 
@@ -42,11 +43,11 @@ def _get(url: str, timeout: int = 20) -> bytes:
 def parse_trends24(page: str, limit: int = 30) -> list[dict]:
     """The newest hourly card on trends24: [{"name", "tweets"}], in rank order.
     The page lists several hourly cards, newest first; we read the first list only."""
-    first = re.search(r"<ol[^>]*class=\"[^\"]*trend-card__list[^\"]*\"[^>]*>(.*?)</ol>", page, re.S)
-    block = first.group(1) if first else page
+    # the first ordered list whose links are X searches is the newest hourly card (site chrome has no such links)
+    block = next((ol for ol in re.findall(r"<ol[^>]*>(.*?)</ol>", page, re.S) if SEARCH.search(ol)), "")
     out, seen = [], set()
     for li in re.findall(r"<li[^>]*>(.*?)</li>", block, re.S):
-        a = re.search(r"<a[^>]*>(.*?)</a>", li, re.S)
+        a = re.search(r"<a[^>]*href=\"[^\"]*(?:twitter|x)\.com/search[^\"]*\"[^>]*>(.*?)</a>", li, re.S)
         if not a:
             continue
         name = html.unescape(re.sub(r"<[^>]+>", "", a.group(1))).strip()
@@ -85,7 +86,10 @@ def collect(now: dt.datetime | None = None) -> dict:
     now = now or dt.datetime.now(dt.timezone.utc)
     data = {"fetched": now.isoformat(), "x": [], "videos": [], "errors": {}}
     try:
-        data["x"] = parse_trends24(_get(TRENDS24).decode("utf-8", "replace"))
+        page = _get(TRENDS24).decode("utf-8", "replace")
+        data["x"] = parse_trends24(page)
+        if not data["x"]:   # the page changed: keep a few links so the parser can be fixed
+            data["errors"]["x"] = "no trends parsed; sample links: " + " | ".join(re.findall(r"<a[^>]*href=\"([^\"]+)\"", page)[10:30])
     except Exception as e:   # one source down never stops the run
         data["errors"]["x"] = str(e)[:160]
     feeds = json.loads(FEEDS.read_text(encoding="utf-8"))["channels"] if FEEDS.exists() else []
