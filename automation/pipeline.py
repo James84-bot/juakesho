@@ -1,5 +1,5 @@
 """
-pipeline.py — the Jua Kesho autopilot.
+pipeline.py — the Wanjiku Asks autopilot.
 
     python pipeline.py week   [--week 2026-W40] [--mock]   plan → draft → check → render → ask for approval
     python pipeline.py hot                                  today's extra post on the biggest Kenyan story (daily)
@@ -49,6 +49,7 @@ WEEKS = HERE / "content" / "weeks"
 STATE = HERE / "state"
 EXPORTS = ROOT / "exports"
 EAT = dt.timezone(dt.timedelta(hours=3))
+BRAND = json.loads((HERE / "brand.json").read_text(encoding="utf-8"))
 MAX_PUBLISH_ATTEMPTS = 3
 LATE_LIMIT = dt.timedelta(hours=36)  # a post this late is marked "missed", never dumped out as a backlog
 META_KEYS = ("META_ACCESS_TOKEN", "META_PAGE_ID", "META_IG_USER_ID")
@@ -739,6 +740,10 @@ def caption_for(post: dict) -> str:
     """The approved caption plus credits: the photographer of a real photo, the artist of a licensed track.
     The post's action is always in the caption: added as the last line if the writer left it out."""
     cap = post.get("caption", "")
+    tag = BRAND.get("hashtag", "")
+    for old in ("#JuaKesho", "#KenyansAreAsking"):   # drafts written before the rename carry the old tag
+        if tag and old != tag:
+            cap = cap.replace(old, tag)
     act = str(post.get("action") or "").strip()
     if act and act.lower()[:30] not in cap.lower():
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
@@ -820,7 +825,7 @@ def whatsapp_text(post: dict) -> str:
     beats = [b.replace("*", "") for b in (post.get("beats") or [])]
     body = " ".join(beats[:3]) if beats else str(post.get("message") or "")
     src = str(post.get("source") or "").split(";")[0].strip()
-    return (body + (f"\n\nReceipts: {src}" if len(src) >= 8 else "") + "\n\nJua nchi yako. Follow Jua Kesho.").strip()
+    return (body + (f"\n\nReceipts: {src}" if len(src) >= 8 else "") + "\n\nFollow Wanjiku Asks for the receipts.").strip()
 
 
 def first_of(members: list[dict]) -> dict:
@@ -909,8 +914,8 @@ def send_samples(dry_run: bool = False) -> None:
        {"photo": presence.OUT / "highlights-row.png"})
     plan = "\n".join(f"• <b>{_esc(n.title())}</b>: {_esc(h)}" for n, _, h in presence.HIGHLIGHTS)
     tg("sendMessage", {"chat_id": chat, "parse_mode": "HTML", "text": (
-        "🧪 <b>Profile kit</b>\n\n<b>Bio</b>\n<code>Informed ordinary Kenyans.\nPromises vs records, with receipts.\n"
-        "Hatutasahau. 📩 Tips: DM</code>\n\n<b>Pinned</b>\n1. Manifesto carousel: why we exist, our rules, non-partisan\n"
+        "🧪 <b>Profile kit</b>\n\n<b>Bio</b>\n<code>The ordinary Kenyan, asking with receipts.\nEvery side, same standard.\n"
+        "Not with any government or party. 📩 Tips: DM</code>\n\n<b>Pinned</b>\n1. Manifesto carousel: why we exist, our rules, non-partisan\n"
         "2. Best Promise Tracker post\n3. Reel: how we check our facts\n\n<b>Highlights</b>\n" + plan)})
     n = engage.samples(WEEKS, drafter.call_claude, lambda text, buttons: tg(
         "sendMessage", {"chat_id": chat, "text": text, "parse_mode": "HTML", "reply_markup": buttons}))
@@ -1024,7 +1029,7 @@ def main(argv: list[str] | None = None) -> int:
 def _main(argv: list[str] | None = None) -> int:
     load_env()
     sys.path.insert(0, str(HERE))
-    ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
+    ap = argparse.ArgumentParser(description="Wanjiku Asks autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
                                         "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")

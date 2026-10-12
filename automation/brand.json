@@ -1,9 +1,9 @@
 {
-  "name": "Jua Kesho",
-  "handle": "@juakesho",
-  "tagline_sw": "Jua nchi yako.",
-  "tagline_en": "Know your country.",
-  "website": "juakesho.com",
+  "name": "Wanjiku Asks",
+  "handle": "@wanjikuasks",
+  "tagline_sw": "",
+  "tagline_en": "The ordinary Kenyan, asking with receipts.",
+  "website": "",
   "colors": {
     "usiku": {
       "hex": "#0E0C0B",
@@ -110,5 +110,6 @@
       "950": "#001305"
     }
   },
-  "palette_note": "The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (yellow reads as UDA, orange as ODM). Ink carries 90% of every design; red is the signature and the alarm; green means true and kept."
+  "palette_note": "The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (yellow reads as UDA, orange as ODM). Ink carries 90% of every design; red is the signature and the alarm; green means true and kept.",
+  "hashtag": "#WanjikuAsks"
 }

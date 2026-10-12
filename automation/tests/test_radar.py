@@ -47,17 +47,17 @@ class Hashtags(unittest.TestCase):
         import draft
         import guard
         posts = [{"id": "a", "template": "sauti", "line": "Kericho helicopter crash: KFS corrects the numbers",
-                  "caption": "Five on board, not four. Who checks? #SautiYaMwananchi #KFS #JuaKesho"},
+                  "caption": "Five on board, not four. Who checks? #SautiYaMwananchi #KFS #WanjikuAsks"},
                  {"id": "b", "template": "sauti", "line": "Ruto calls Uhuru a conman",
-                  "caption": "What did the record say? #JuaKesho"}]
+                  "caption": "What did the record say? #WanjikuAsks"}]
         out = draft.boost_hashtags(posts, live=["#KerichoHelicopterCrash", "#TapeliUhuruKenyatta", "#RutoDelivers", "#Liverpool"])
-        self.assertIn("#KerichoHelicopterCrash #JuaKesho", out[0]["caption"])
+        self.assertIn("#KerichoHelicopterCrash #WanjikuAsks", out[0]["caption"])
         self.assertNotIn("#SautiYaMwananchi", out[0]["caption"])   # our series tag gives way, max 3 stays
         self.assertNotIn("Tapeli", out[1]["caption"])
         self.assertIsNone(out[1].get("trend"))
         rep = guard.check({**posts[1], "caption": "x #TapeliUhuruKenyatta"})
         self.assertTrue(any("never our tags" in e for e in rep.errors))
         protest = draft.boost_hashtags([{"id": "c", "template": "sauti", "line": "Ruto signs the Finance Bill",
-                                         "caption": "Read the receipts. #JuaKesho"}], live=["#RutoMustGo"])
+                                         "caption": "Read the receipts. #WanjikuAsks"}], live=["#RutoMustGo"])
         self.assertIn("#RutoMustGo", protest[0]["caption"])   # the people's accountability tags are ours to use
         self.assertFalse(guard.PARTISAN_TAG.search("#RejectFinanceBill2027") or guard.PARTISAN_TAG.search("#Wantam"))

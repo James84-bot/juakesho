@@ -1,5 +1,5 @@
 """
-build_book.py — builds the Jua Kesho brand book as one self-contained HTML file.
+build_book.py — builds the Wanjiku Asks brand book as one self-contained HTML file.
 
 Everything is read from the live system (brand.json palette, logo SVGs, rendered exports),
 so the book always matches what the pipeline produces.
@@ -58,38 +58,38 @@ SERIES = [
     ("Thu 19:30", "Sauti ya Mwananchi · Scam alert", "usiibiwe", "The people's voice again, and the scams hitting Kenyans now."),
     ("Fri 17:00", "Set It Straight · Follow the Money · Sauti", "straight", "The claim of the week, checked."),
     ("Sat 11:00", "Promise Tracker · Follow the Money · Sauti", "promise", "Weekend reading: the record behind the week's noise."),
-    ("Sun 18:00", "Jua Asks", "glasspoll", "A poll on the week's biggest issue. The answers pick next week's topics."),
+    ("Sun 18:00", "Your Say", "glasspoll", "A poll on the week's biggest issue. The answers pick next week's topics."),
     ("Daily", "The hot post · Tazama Hii", "sauti", "Every morning the system ranks what Kenya is on, writes one post on the biggest story and sends it for approval in time for the evening. Clips you send become Tazama Hii Reels."),
 ]
 
 GLOSSARY = [
-    ("Jua", "noun · verb", "Sun, and to know. Light that helps you know."),
-    ("Kesho", "noun", "Tomorrow; the future. The red sun rising over the green horizon in the mark."),
-    ("Jua nchi yako", "tagline", "“Know your country.” On every profile and the launch post."),
-    ("Kesho iko hapa", "sign-off", "“Tomorrow is here.”"),
-    ("Wanakesho", "noun", "“The people of tomorrow”: the community. Never “followers” or “fans”."),
+    ("Wanjiku", "name", "The name Kenyans give the ordinary citizen, ever since the powerful asked “what does Wanjiku know about a constitution?” Every Kenyan, every tribe, every county. Never a real person."),
+    ("Wanjiku Asks", "name", "The questions every Kenyan is already asking the people in power, asked out loud, with receipts."),
+    ("The ordinary Kenyan, asking with receipts.", "line", "Under the name on every profile."),
+    ("Wanjiku asks: …", "sign-off", "Every post ends with the question Wanjiku is asking, to a named office, and the one thing to do."),
     ("Usiibiwe", "series", "“Don't get robbed.” Scam alerts, on the red background."),
     ("Promise Tracker", "series", "A leader's own promise against the record. Kept, partly kept, stalled or broken."),
-    ("Civic 101", "series", "How Kenya works, one idea at a time. Every post cites the Constitution, the Act or the official page."),
     ("Set It Straight", "series", "Our answer to falsehoods and put-downs: the claim, quoted and sourced, then the facts."),
     ("Follow the Money", "series", "One public-money number, sourced, and how to check it yourself."),
-    ("Bwana Ahadi", "archetype", "“Mr Promise”: shorthand for promises that never arrive. In words only, never drawn."),
+    ("Tazama Hii", "series", "A real clip someone filmed, credited, with our take around it."),
+    ("Hatutasahau", "series", "“We won't forget.” Documented events, on their anniversaries."),
+    ("Your Say", "series", "The Sunday poll on the week's biggest issue."),
     ("Kenyan English", "voice", "Plain Kenyan English. Kiswahili only where a Kenyan would really say it, never as decoration. No numbering, no shouting."),
 ]
 
 MONEY = [
-    ("Jua Class", "Paid workshops", "AI and automation sessions for companies, campuses and creators. Those who can pay, pay; that keeps the feed free."),
-    ("Imeletwa na", "Labelled brand deals", "Series with brands young Kenyans use: telcos, phones, fintech, edtech, fashion. Always labelled. Never betting, alcohol or predatory loans."),
-    ("Kamusi ya Kesho", "Digital products", "The collected Decode dictionary, guides and templates, cheap via M-Pesa, free for schools."),
-    ("Commissioned series", "Partners", "NGOs and innovation programmes pay for explainer series on digital topics, clearly credited."),
+    ("Facebook monetisation", "Original Reels", "Our own Reels and permitted clips qualify; reposts never do."),
+    ("YouTube Partner Program", "Shorts and long video", "The same Reels as Shorts, and longer explainers."),
+    ("Labelled brand deals", "Partners", "Brands young Kenyans use. Always labelled. Never betting, alcohol, predatory loans or political parties."),
+    ("Commissioned series", "Partners", "NGOs and civic programmes pay for explainer series, clearly credited, editorially independent."),
     ("Autopilot builds", "Services", "The same content engine, set up for other brands. Each build funds more free content."),
 ]
 
 DAY_90 = [
-    ("Weeks 1–2", "Claim @juakesho everywhere. Set up profiles with the kit, the WhatsApp Channel and the Telegram bot. Post the launch set."),
-    ("Weeks 3–6", "Autopilot on: 7 posts a week, about 15 minutes of approvals. Let the Sunday poll choose topics."),
-    ("Weeks 7–10", "Reels every week. Run a free pilot Jua Class for 20 small businesses and collect feedback."),
-    ("Weeks 11–13", "Build the sponsor deck from real reach and saves. Pitch one community radio station on a weekly segment."),
+    ("Weeks 1–2", "Claim @wanjikuasks everywhere. Profiles from the kit, the WhatsApp Channel and the Telegram bot. First posts."),
+    ("Weeks 3–6", "Autopilot on: daily posts, about 15 minutes of approvals. Let the Sunday poll choose topics."),
+    ("Weeks 7–10", "Reels every day; Tazama Hii clips from followers. Keep what earns shares and saves, drop the rest."),
+    ("Weeks 11–13", "Apply for Facebook monetisation and the YouTube Partner Program. Build the sponsor deck from real reach."),
 ]
 
 FLOW = [
@@ -120,8 +120,8 @@ def pair(fg: str, bg: str, label: str) -> str:
 
 
 def build_body() -> str:
-    lock_light = svg_inline(LOGO / "wordmark-on-light.svg", "logo logo--light", "Jua Kesho")
-    lock_dark = svg_inline(LOGO / "wordmark-on-dark.svg", "logo logo--dark", "Jua Kesho")
+    lock_light = svg_inline(LOGO / "wordmark-on-light.svg", "logo logo--light", "Wanjiku Asks")
+    lock_dark = svg_inline(LOGO / "wordmark-on-dark.svg", "logo logo--dark", "Wanjiku Asks")
     ink, shuka, chai = P["ink"], P["shuka"], P["chai"]
     ramps = "".join(ramp_html(*f) for f in FAMILIES)
     pairs = "".join([
@@ -183,7 +183,7 @@ def build_body() -> str:
 
 <main class="book">
   <section class="hero" aria-labelledby="t-hero">
-    <h1 id="t-hero">{lock_light}{lock_dark}<span class="sr">Jua Kesho</span></h1>
+    <h1 id="t-hero">{lock_light}{lock_dark}<span class="sr">Wanjiku Asks</span></h1>
     <p class="tagline">{e(B['tagline_sw'])} <span>{e(B['tagline_en'])}</span></p>
     <p class="lede">An independent Kenyan channel for 18–30s: the general knowledge every Kenyan should have, politics with receipts, money, scams and the future. Sourced, fearless, non-partisan, clean. The revolution we drive is an informed Kenya.</p>
   </section>
@@ -196,18 +196,18 @@ def build_body() -> str:
 
   <section id="idea" class="sec" aria-labelledby="t-idea">
     <p class="kicker">01</p><h2 id="t-idea">The idea</h2>
-    <p class="big">Look like the channels people trust, sound like the friend who is always first to know. A real photo, one plain headline, the facts, and something to do today. Jua means sun, and to know: <em>Jua nchi yako</em>, know your country.</p>
+    <p class="big">Wanjiku is every ordinary Kenyan. Wanjiku Asks is ordinary Kenyans asking the people in power the questions everyone is already asking, with receipts. A real photo, one plain headline, the facts, the question, and the one thing to do today. Not with any government or party: every side, same standard.</p>
     <ul class="pillars">
-      <li><b>Know</b><span>One clear idea per post, useful the same day.</span></li>
+      <li><b>Ask</b><span>One clear question per post, to a named office, with the one thing to do.</span></li>
       <li><b>Prove</b><span>Every number and claim carries a source. Accuracy is what makes us fearless.</span></li>
-      <li><b>Belong</b><span>Wanakesho: every Kenyan welcome, whatever their party, tribe or county.</span></li>
+      <li><b>Belong</b><span>Every Kenyan welcome, whatever their party, tribe or county.</span></li>
       <li><b>Clean</b><span>Grown-up and workplace-safe. Edgy about ideas, never cruel, never dirty.</span></li>
     </ul>
   </section>
 
   <section id="logo" class="sec" aria-labelledby="t-logo">
     <p class="kicker">02</p><h2 id="t-logo">Logo</h2>
-    <p class="note">The mark is the sun rising over the horizon: <b>Jua</b> (sun) + <b>Kesho</b> (tomorrow), in two shapes. The wordmark is JUA KESHO in Inter Tight Black, its capitals exactly as tall as the mark. All files are outlined SVGs in <code>assets/logo/</code>.</p>
+    <p class="note">The mark is a speech bubble with a question mark: Wanjiku asking. Flag red, white question mark. The wordmark is WANJIKU ASKS in Inter Tight Black. All files are outlined SVGs in <code>assets/logo/</code>.</p>
     <div class="logos">
       <div class="lg lg--night">{svg_inline(LOGO / 'wordmark-on-dark.svg', 'lg-svg', 'Wordmark on night')}</div>
       <div class="lg lg--paper">{svg_inline(LOGO / 'wordmark-on-light.svg', 'lg-svg', 'Wordmark on paper')}</div>
@@ -389,7 +389,7 @@ def build_body() -> str:
 </main>
 
 <footer class="bookfoot">
-  <p><b>Jua Kesho</b> brand book v2 · {e(B['tagline_sw'])} · Built from <code>automation/</code>; re-run <code>build_book.py</code> after any brand change.</p>
+  <p><b>Wanjiku Asks</b> brand book v3 · {e(B['tagline_en'])} · Built from <code>automation/</code>; re-run <code>build_book.py</code> after any brand change.</p>
 </footer>
 """
 
@@ -528,7 +528,7 @@ FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=I
 
 def main() -> None:
     body = build_body()
-    head = f"<title>Jua Kesho Brand Book</title>\n{FONTS}\n<style>{CSS}</style>"
+    head = f"<title>Wanjiku Asks Brand Book</title>\n{FONTS}\n<style>{CSS}</style>"
     out = ROOT / "brand-book"
     out.mkdir(exist_ok=True)
     if "--fragment" in sys.argv:

@@ -50,12 +50,12 @@ ICONS = {
 
 # Highlight name (shown under the circle, max ~15 chars) -> icon, and what goes inside it
 HIGHLIGHTS = [
-    ("AHADI", "ahadi", "The promise tracker: every 'kept / broken / stalled' post, newest first."),
+    ("PROMISES", "ahadi", "The promise tracker: every 'kept / broken / stalled' post, newest first."),
     ("RECEIPTS", "receipts", "Screenshots of the sources behind our biggest posts: Auditor-General, Hansard, gazette notices."),
     ("HATUTASAHAU", "hatutasahau", "One Story per date we remember, re-shared on its anniversary."),
-    ("CIVIC 101", "civic", "Your rights in 15 seconds: arrest, protest, voter registration, public participation."),
+    ("YOUR RIGHTS", "civic", "Your rights in 15 seconds: arrest, protest, voter registration, public participation."),
     ("POLLS", "polls", "Every Story poll and its result. People come back to see how they voted against everyone else."),
-    ("SISI", "sisi", "Who we are (informed ordinary Kenyans), our rules (sources, no tribe, no campaigning), how to send a tip."),
+    ("ABOUT", "sisi", "Who Wanjiku is (every ordinary Kenyan), our rules (sources, no tribe, no campaigning), how to send a tip."),
 ]
 
 
@@ -69,7 +69,7 @@ svg{{width:640px;height:640px;}}</style></head><body>
 
 def sheet_html(paths: list[tuple[str, Path]]) -> str:
     """How the row looks on the profile: circles with names underneath."""
-    items = "".join(f'<figure><div style="background-image:url({p.as_uri()})"></div><figcaption>{n.title() if n != "CIVIC 101" else "Civic 101"}'
+    items = "".join(f'<figure><div style="background-image:url({p.as_uri()})"></div><figcaption>{n.title()}'
                     f'</figcaption></figure>' for n, p in paths)
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{bk.font_faces(FONTS)}
 body{{margin:0;padding:48px 40px;width:1000px;background:#fff;font-family:Inter;display:flex;gap:28px;}}

@@ -1,9 +1,10 @@
-# Jua Kesho
+# Wanjiku Asks
 
-Politics with receipts for Kenyans. An independent, faceless channel by informed ordinary Kenyans: promises against
+The ordinary Kenyan, asking with receipts. Wanjiku is the name Kenyans give the ordinary citizen; this
+independent, faceless channel asks the people in power what every Kenyan is already asking: promises against
 records, Set It Straight, Follow the Money, scam alerts, and the stories Kenya is talking about this week, in plain
 Kenyan English with real photos and sources. Not with any government or party; every side held to the same standard.
-**jua** = the sun + to know · **kesho** = tomorrow.
+Handle **@wanjikuasks** · hashtag **#WanjikuAsks**.
 
 **Live:** brand book <https://james84-bot.github.io/juakesho/brand-book/> · repo <https://github.com/James84-bot/juakesho>
 

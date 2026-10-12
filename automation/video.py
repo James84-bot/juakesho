@@ -1,5 +1,5 @@
 """
-video.py — turns any Jua Kesho post into a 9:16 Reel / TikTok / Short.
+video.py — turns any Wanjiku Asks post into a 9:16 Reel / TikTok / Short.
 
 The post's own HTML gets motion (staggered entrances, word-by-word headlines,
 sticker pops, a bobbing Jua, drifting aurora). Animations are paused and stepped
@@ -40,7 +40,7 @@ URGENT_TEMPLATES = {"tazama", "sauti", "straight", "promise", "kumbuka", "scorec
 KICKERS = {"sauti": "Sauti ya Mwananchi", "straight": "Set It Straight", "promise": "Promise Tracker", "kumbuka": "Hatutasahau",
            "scorecard": "Chapter Six Test", "money": "Follow the Money", "usiibiwe": "Scam alert", "cap": "Cap or No Cap?",
            "still": "Still in 2026?", "decode": "Decode", "spotlight": "Put Us On", "africa": "Made in Africa",
-           "hack": "Civic 101", "makanga": "Explained", "cover": "Jua Kesho", "glasspoll": "Jua Asks", "build": "Build With Me",
+           "hack": "Civic 101", "makanga": "Explained", "cover": "Wanjiku Asks", "glasspoll": "Your Say", "build": "Build With Me",
            "tazama": "Tazama Hii"}
 
 
@@ -51,7 +51,7 @@ def beat_reel(post: dict) -> dict | None:
         return None
     reel = {k: v for k, v in post.items() if k not in {"template", "size", "ink"}}
     reel.update(template="reel", size="story", beats=beats,
-                kicker=post.get("series") or KICKERS.get(post["template"], "Jua Kesho"))
+                kicker=post.get("series") or KICKERS.get(post["template"], "Wanjiku Asks"))
     return reel
 
 
@@ -244,7 +244,7 @@ def make_reels(posts: list[dict], out_dir: Path) -> list[Path]:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Render Jua Kesho Reels")
+    ap = argparse.ArgumentParser(description="Render Wanjiku Asks Reels")
     ap.add_argument("--file", default=str(HERE / "content" / "posts.json"))
     ap.add_argument("--only")
     ap.add_argument("--out", default=str(ROOT / "exports" / "reels"))
