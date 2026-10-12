@@ -408,6 +408,41 @@ class QualitySystemTests(unittest.TestCase):
         self.assertTrue(all(dt.date.fromisoformat(p["publish_at"][:10]).isoweekday() <= 5 for p in hit))
         self.assertTrue(any(p["remember"]["date"].endswith("-06-25") for p in hit))
 
+    def test_reel_beats(self):
+        import render, video
+        ok = self.base_straight(beats=["Check your payslip.", "*4.25%* gone.", "Tunalipa. *Tunapata nini?*"])
+        self.assertTrue(guard.check(ok).ok, guard.check(ok).errors)
+        long = self.base_straight(beats=["This line is far too long to read in one second on a phone", "b", "c"])
+        self.assertTrue(any("punchy line" in e for e in guard.check(long).errors))
+        self.assertTrue(any("3-6" in e for e in guard.check(self.base_straight(beats=["a"])).errors))
+        self.assertEqual(render.beat_tokens("We pay *4.25% now* ok"), [("We", False), ("pay", False), ("4.25%", True), ("now", True), ("ok", False)])
+        self.assertTrue(render.BEAT["min"] <= render.beat_seconds("one two three four five six seven eight") <= render.BEAT["max"])
+        reel = video.beat_reel({**ok, "id": "x"})
+        self.assertEqual((reel["template"], reel["size"], reel["kicker"]), ("reel", "story", "Set It Straight"))
+        self.assertIsNone(video.beat_reel({"id": "y", "template": "hack", "beats": ["a", "b"]}))
+
+    def test_music_picked_by_mood_only_with_rights(self):
+        import video
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            for f in ("drum.mp3", "song.mp3", "norights.mp3"):
+                (d / f).write_bytes(b"x")
+            (d / "tracks.json").write_text(json.dumps({"tracks": [
+                {"file": "drum.mp3", "mood": "urgent", "rights": "Pixabay licence, page saved", "clean": True},
+                {"file": "song.mp3", "mood": "uplifting", "rights": "permission by email 12 Oct", "clean": True},
+                {"file": "norights.mp3", "mood": "any", "rights": "", "clean": True}]}))
+            with mock.patch.object(video, "MUSIC", d):
+                self.assertEqual(video.music_track({"id": "a", "template": "sauti"})["file"], "drum.mp3")
+                self.assertEqual(video.music_track({"id": "b", "template": "africa"})["file"], "song.mp3")
+                self.assertIsNone(video.music_track({"id": "c", "template": "africa", "track": "norights.mp3"}))
+
+    def test_manual_post_decision(self):
+        data = {"posts": [{"id": "r1", "status": "awaiting"}]}
+        self.assertEqual(pl.apply_decision(data, "r1", "manual"), ["r1"])
+        self.assertEqual(data["posts"][0]["status"], "manual")
+        self.assertIn("m|w|r1", pl._buttons("w|r1", reel=True))
+        self.assertNotIn("m|", pl._buttons("w|r1"))
+
     def test_commons_licences(self):
         import photos
         for ok in ("CC0", "Public domain", "CC BY 4.0", "CC BY 2.0"):

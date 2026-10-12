@@ -159,6 +159,26 @@ def mark(text: str) -> Markup:
     return Markup(_re.sub(r"(?<![<\w/])(\w+-\w+)", r'<span style="white-space:nowrap">\1</span>', safe))
 
 
+BEAT = {"min": 1.5, "max": 3.4, "base": 0.9, "per_word": 0.3}   # seconds on screen per Reel beat
+
+
+def beat_seconds(text: str) -> float:
+    """How long one Reel line stays up: enough to read it twice at a fast scroll."""
+    n = len(plain(text).split())
+    return round(min(BEAT["max"], max(BEAT["min"], BEAT["base"] + BEAT["per_word"] * n)), 2)
+
+
+def beat_tokens(text: str) -> list[tuple[str, bool]]:
+    """Words of a beat, each flagged if it sits inside a *marker*."""
+    out, marked = [], False
+    for part in re.split(r"(\*)", str(text)):
+        if part == "*":
+            marked = not marked
+            continue
+        out += [(w, marked) for w in part.split()]
+    return out
+
+
 def _fitted(text) -> str:
     """For measuring: each *marker* edge counts as a narrow glyph, covering the marker's side padding."""
     return str(text).replace("*", "i")
@@ -215,6 +235,7 @@ def make_env() -> Environment:
     env.filters["nb"] = nobreak
     env.filters["mark"] = mark
     env.filters["plain"] = plain
+    env.globals.update(beat_seconds=beat_seconds, beat_tokens=beat_tokens)
     env.globals.update(GLOW=Markup(bk.GLOW_DEFS), comic_layout=comic_layout, C=bk.C, ON=bk.ON, fit=fit, fitw=fitw, radius=radius, brand=bk.BRAND)
     return env
 
@@ -470,10 +491,10 @@ def _place_symbol_legacy(page, env: Environment, post: dict, tmp_dir: Path) -> N
 
 # Layouts that show a real, named person with their real photo (rights/licence required: guard.py):
 # spotlight celebrates; straight, money and cap can show the public office holder on the record
-PERSON_TEMPLATES = {"spotlight", "straight", "money", "cap", "promise", "sauti", "scorecard"}
+PERSON_TEMPLATES = {"spotlight", "straight", "money", "cap", "promise", "sauti", "scorecard", "reel"}
 # Layouts that take a real photo across the top of the canvas
 PHOTO_TEMPLATES = {"cover", "kesho", "spotlight", "money", "still", "straight", "hack", "decode", "build", "glasspoll",
-                   "africa", "cap", "usiibiwe", "promise", "sauti", "kumbuka", "scorecard"}
+                   "africa", "cap", "usiibiwe", "promise", "sauti", "kumbuka", "scorecard", "reel"}
 # Templates where Jua is a character in the scene (keep it), or that are brand assets
 NO_SYMBOL = {"vichekesho", "pov", "avatar", "banner", "intro"}
 # Templates whose mascot is decoration: a symbol replaces it in the same, collision-checked spot

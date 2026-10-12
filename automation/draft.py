@@ -225,6 +225,20 @@ CHURCH AND STATE
   used to silence questions. Quote both the clergy who speak truth to power and those who sell it.
 - Never mock belief or believers, never a whole church or religion. Facts, dates, amounts, sources.
 
+URGENT, NOT PARAGRAPHS
+- Nobody reads paragraphs on a phone. Every text field is one or two short sentences. Cut every word that
+  doesn't hit. Numbers beat adjectives.
+- Sound concerning and urgent because the stakes are real: what it costs us, who pays, the deadline, what happens
+  if we stay quiet. Present tense. "Check your payslip." "This Bill is in Parliament now."
+- Never fake urgency: no invented deadlines, no "BREAKING" on old news, no exaggerated numbers. Real stakes only.
+
+REELS ARE SCRIPTS (`beats`, on every post)
+- Every post gets `beats`: 3-6 lines, max 8 words each, shown one at a time full screen over the photo.
+- Shape: 1 the hook (the shock or the stake, so they stop scrolling) - 2/3 the receipt (the number, the fact) -
+  4 what it means for us - 5 the sarcastic sting or the question - 6 the action ("Send this to...", "Read the report").
+- One *marker* on the word that hits hardest in a line, at most one per line. The first beat must work alone as a
+  thumbnail. Every number in the beats must already be in the post and its `source`.
+
 SOUND HUMAN (Kenyans scroll past anything that smells of AI)
 - Write like a sharp Kenyan typing fast on their phone: short lines, contractions, Sheng where natural, one strong
   opinion. Uneven rhythm is good. Don't make everything a neat list of three.
@@ -328,6 +342,8 @@ def _field_spec(template: str) -> dict:
         spec["highlight"] = "integer index of the line to colour"
     if template == "kesho":
         spec.update({"n": "slide number", "total": "total slides"})
+    if template in guard.REEL_FIRST:
+        spec["beats"] = "the Reel script: list of 3-6 lines, each max 8 words / 44 chars, one *marker* max per line"
     return spec
 
 
@@ -427,8 +443,9 @@ EXAMPLES OF FINISHED POSTS (style reference only)
 {scripts_block}
 
 Return ONLY JSON, no commentary:
-Every post also needs "message" (the one takeaway, max 120 chars) and, almost always, "photo_query" (a real scene).
-{{"posts": [{{"id": "...", "template": "...", "lane": "...", "message": "...", "photo_query": "...", "caption": "...", "source": "...(when needed)", "...fields": "..."}}],
+Every post also needs "message" (the one takeaway, max 120 chars), "beats" (the Reel script: 3-6 lines, max 8 words each)
+and, almost always, "photo_query" (a real scene).
+{{"posts": [{{"id": "...", "template": "...", "lane": "...", "message": "...", "beats": ["...", "..."], "photo_query": "...", "caption": "...", "source": "...(when needed)", "...fields": "..."}}],
  "scripts": {{"radio": "...", "voice_note": "...", "sms": "...", "reels": "..."}}}}"""
     return system, user
 
@@ -683,7 +700,8 @@ CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio.
 - craft: every word earns its place; the payoff lands
 - picture: do the `photo_query` scene and the headline ALONE deliver the `message` in one second? (a generic or
   decorative scene scores low; a concrete, real scene that IS the message scores high)
-- hold: would they read or watch to the end? each line pays off the last and opens the next
+- hold: would they read or watch to the end? do the `beats` build like a short video (hook, receipt, stakes,
+  sting, action)? any paragraph-length text scores low
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
 {"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n,
              "note": "the single most important fix, in one sentence"}]}"""

@@ -123,6 +123,52 @@ def bed(duration: float, seed: int = 0) -> np.ndarray:
     return (out * 0.89).astype(np.float32)   # about -1 dBFS peak
 
 
+def tension(duration: float, hits: list[float] | None = None, seed: int = 0) -> np.ndarray:
+    """The urgent bed for civic Reels: a low pulse like a heartbeat, a clock ticking, a hit on every new line,
+    and a rising tone into the last one. Original, synthesised, no licence needed."""
+    rng = np.random.default_rng(seed)
+    n = int(SR * (duration + 1.0))
+    out = np.zeros(n, dtype=np.float32)
+    t = np.arange(n) / SR
+    # low drone: A1 + E2, slowly swelling
+    swell = np.clip(t / max(duration, 1), 0, 1) * 0.6 + 0.4
+    drone = (np.sin(2 * np.pi * 55 * t) + 0.5 * np.sin(2 * np.pi * 82.41 * t) + 0.25 * np.sin(2 * np.pi * 110 * t))
+    out += (drone * swell * 0.10).astype(np.float32)
+    # heartbeat: lub-dub every 0.85s
+    beat = 0.85
+    k = 0.0
+    while k < duration:
+        _place(out, kick(0.3), k, 0.75)
+        _place(out, kick(0.25), k + 0.22, 0.45)
+        k += beat
+    # clock tick on every half second
+    tick = np.diff(rng.standard_normal(int(SR * 0.012)).astype(np.float32), prepend=0) * np.exp(-np.arange(int(SR * 0.012)) / SR * 400)
+    k = 0.25
+    while k < duration:
+        _place(out, tick, k, 0.22)
+        k += 0.5
+    # a hit on every new line: low boom + bright noise burst
+    for h in hits or []:
+        if h < duration:
+            _place(out, kick(0.6), h, 1.0)
+            burst = rng.standard_normal(int(SR * 0.18)).astype(np.float32) * np.exp(-np.arange(int(SR * 0.18)) / SR * 22)
+            _place(out, np.diff(burst, prepend=0), h, 0.18)
+    # riser into the last line
+    if hits:
+        r0 = max(0.0, hits[-1] - 1.2)
+        rt = np.arange(int(SR * (hits[-1] - r0))) / SR
+        if len(rt):
+            f = 220 + 660 * (rt / rt[-1] if rt[-1] else rt) ** 2
+            riser = np.sin(2 * np.pi * np.cumsum(f) / SR) * (rt / (rt[-1] or 1)) * 0.12
+            _place(out, riser.astype(np.float32), r0, 1.0)
+    out = out[: int(SR * duration)]
+    fade_out = int(SR * 0.7)
+    out[-fade_out:] *= np.linspace(1, 0, fade_out) ** 1.5
+    peak = np.max(np.abs(out)) or 1.0
+    out = np.tanh(2.0 * out / peak) / np.tanh(2.0)
+    return (out * 0.89).astype(np.float32)
+
+
 def write_wav(samples: np.ndarray, path: Path) -> None:
     pcm = (np.clip(samples, -1, 1) * 32767).astype(np.int16)
     stereo = np.repeat(pcm[:, None], 2, axis=1)
