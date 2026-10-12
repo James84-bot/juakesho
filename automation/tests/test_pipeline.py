@@ -356,7 +356,8 @@ class QualitySystemTests(unittest.TestCase):
         def page(i, lic, w=1600, mime="image/jpeg"):
             return {"index": i, "imageinfo": [{"mime": mime, "width": w, "height": 1100, "url": f"https://x.test/{i}.jpg",
                     "thumburl": f"https://x.test/{i}-t.jpg", "descriptionurl": f"https://c.test/{i}",
-                    "extmetadata": {"LicenseShortName": {"value": lic}, "Artist": {"value": f"<a>Artist {i}</a>"}}}]}
+                    "extmetadata": {"LicenseShortName": {"value": lic}, "Artist": {"value": f"<a>Artist {i}</a>"},
+                                    "Categories": {"value": "Matatus in Nairobi"}}}]}
         api = {"query": {"pages": {"1": page(1, "CC BY-SA 4.0"), "2": page(2, "CC BY 4.0", w=600),
                                    "3": page(3, "CC BY 4.0"), "4": page(4, "CC BY-NC 2.0")}}}
         calls = []
@@ -373,6 +374,20 @@ class QualitySystemTests(unittest.TestCase):
             self.assertEqual(again["credit"], got["credit"])   # cached: stable across re-renders
         with tempfile.TemporaryDirectory() as d, mock.patch.object(photos, "_get", side_effect=OSError("offline")):
             self.assertIsNone(photos.fetch({"id": "w-2", "photo_query": "Nairobi"}, Path(d)))   # never raises
+
+    def test_kenyan_story_never_gets_a_foreign_photo(self):
+        import photos
+        def page(i, title, cats):
+            return {"index": i, "title": title, "imageinfo": [{"mime": "image/jpeg", "width": 1600, "height": 1100,
+                    "url": f"https://x.test/{i}.jpg", "thumburl": f"https://x.test/{i}.jpg",
+                    "extmetadata": {"LicenseShortName": {"value": "CC BY 2.0"}, "Artist": {"value": f"A{i}"},
+                                    "Categories": {"value": cats}}}]}
+        api = {"query": {"pages": {"1": page(1, "File:Capitol riot tear gas.jpg", "Washington, D.C."),
+                                   "2": page(2, "File:Nairobi protest 2024.jpg", "Protests in Kenya|Nairobi")}}}
+        fake = lambda url, headers=None, timeout=30: json.dumps(api).encode() if "api.php" in url else b"JPEG"
+        with mock.patch.object(photos, "_get", fake):
+            got = photos.commons("police tear gas protest Kenya", "x")
+        self.assertIn("A2", got[1]["credit"])
 
     def test_marker_emphasis(self):
         import render

@@ -104,6 +104,8 @@ def commons(query: str, pid: str) -> tuple[bytes, dict] | None:
 
 
 def _commons_once(query: str, pid: str) -> tuple[bytes, dict] | None:
+    m = LOCAL.search(query)
+    place = m.group(0) if m and m.group(0).lower() not in {"africa", "african"} else ""
     q = urllib.parse.urlencode({"action": "query", "generator": "search", "gsrsearch": f"{query} filetype:bitmap",
                                 "gsrnamespace": 6, "gsrlimit": 25, "prop": "imageinfo",
                                 "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600, "format": "json"})
@@ -117,6 +119,13 @@ def _commons_once(query: str, pid: str) -> tuple[bytes, dict] | None:
             continue
         if not _licence_ok(lic):
             continue
+        # A Kenyan story never gets a photo from somewhere else: when the search names a place, the photo's own
+        # title, description or categories must name it too (or Kenya)
+        if place:
+            about = " ".join([page.get("title", ""), md.get("ImageDescription", {}).get("value", ""),
+                              md.get("Categories", {}).get("value", "")]).lower()
+            if place.lower() not in about and "kenya" not in about:
+                continue
         artist = re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown")).strip()[:50]
         good.append((info.get("thumburl") or info["url"], {"credit": f"Photo: {artist} / Wikimedia Commons, {lic}",
                                                          "url": info.get("descriptionurl", "")}))
