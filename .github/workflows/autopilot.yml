@@ -90,11 +90,18 @@ jobs:
         if: steps.cmd.outputs.c != 'skip' && steps.cmd.outputs.c != 'rehearse'
         run: |
           cd automation
+          set -o pipefail
           if [ "${{ steps.cmd.outputs.c }}" = "this-week" ]; then
-            python pipeline.py week --week "$(python -c 'import pipeline; print(pipeline.current_week_label(ahead=0))')"
+            python pipeline.py week --week "$(python -c 'import pipeline; print(pipeline.current_week_label(ahead=0))')" 2>&1 | tee run.log
           else
-            python pipeline.py ${{ steps.cmd.outputs.c }}
+            python pipeline.py ${{ steps.cmd.outputs.c }} 2>&1 | tee run.log
           fi
+
+      - name: Show why it failed
+        if: failure()
+        run: |
+          # the last lines of the run as one annotation, readable from the run page and the API
+          [ -f automation/run.log ] && echo "::error title=autopilot failed::$(tail -25 automation/run.log | sed ':a;N;$!ba;s/%/%25/g;s/\r//g;s/\n/%0A/g')" || true
 
       - name: Save state and renders
         if: always() && steps.cmd.outputs.c != 'skip' && steps.cmd.outputs.c != 'rehearse'

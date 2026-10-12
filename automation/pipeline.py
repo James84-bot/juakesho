@@ -696,6 +696,21 @@ def status(label: str) -> None:
 
 
 def main(argv: list[str] | None = None) -> int:
+    try:
+        return _main(argv)
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        # Say so on Telegram: a silent failure looks like "the posts never came"
+        try:
+            _notify(f"⚠️ Autopilot stopped: <b>{_esc(type(e).__name__)}</b>: {_esc(str(e)[:600])}\n"
+                    "Nothing was posted. Fix it, then run the workflow again (Actions → autopilot → Run workflow).")
+        except Exception:
+            pass
+        raise
+
+
+def _main(argv: list[str] | None = None) -> int:
     load_env()
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Jua Kesho autopilot")
@@ -706,8 +721,13 @@ def main(argv: list[str] | None = None) -> int:
     a = ap.parse_args(argv)
     label = a.week or current_week_label()
 
-    if a.command == "learn" or (a.command == "week" and not a.mock and os.environ.get("META_ACCESS_TOKEN")):
+    if a.command == "learn":
         learn()
+    elif a.command == "week" and not a.mock and os.environ.get("META_ACCESS_TOKEN"):
+        try:   # learning from last week's numbers must never stop this week's drafts
+            learn()
+        except Exception as e:
+            log(f"learn skipped: {e}")
     if a.command in {"week", "trends"} and not a.mock:
         try:
             import trends
