@@ -13,7 +13,7 @@
 .line { font-size: {{ fitw(line, 936, 5, 104 if photo_uri is not defined else 88) }}px; line-height: 1.04; }
 .fact { margin-top: 30px; padding-left: 24px; border-left: 6px solid var(--accent); }
 {% endblock %}
-{% block top %}<span class="tag">{{ kicker }}</span><span class="meta">{{ dateline }}</span>{% endblock %}
+{% block top %}<span class="tag">{{ kicker }}</span><span class="meta">{{ context_line or dateline }}</span>{% endblock %}
 {% block content %}
   <div class="gap"></div>
   <h1 class="display line">{{ line | mark }}</h1>

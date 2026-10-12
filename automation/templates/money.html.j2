@@ -10,7 +10,7 @@
 .check { margin-top: 26px; font-size: 26px; }
 .check b { color: var(--fg); font-weight: 700; }
 {% endblock %}
-{% block top %}<span class="tag tag--green">Follow the Money</span><span class="meta">{{ person_role if person_shown is defined and person_role is defined else 'Public money' }}</span>{% endblock %}
+{% block top %}<span class="tag tag--green">Follow the Money</span><span class="meta">{{ context_line or (person_role if person_shown is defined and person_role is defined else 'Public money') }}</span>{% endblock %}
 {% block content %}
   <p class="label">{{ hook }}</p>
   <p class="display num" data-count>{{ number }}</p>

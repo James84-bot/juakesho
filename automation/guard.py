@@ -133,6 +133,8 @@ def _shouting(texts: list[str] | str) -> str:
     return "; ".join(found)
 
 
+W5_TEMPLATES = {"sauti", "straight", "promise", "money", "scorecard", "kumbuka", "tazama"}
+
 # Trending hashtags we never ride. We are with the people, not the government: accountability and protest tags
 # (#RutoMustGo, #Wantam, #RejectFinanceBill, #OccupyParliament, #EndAbductions) are fine. What we never carry:
 #   PR for any politician ("...Delivers", "ni tutam", "iko mbele", "imara": someone's paid campaign), and
@@ -330,6 +332,14 @@ def check(post: dict) -> Report:
         rep.errors.append("'side' must be government, opposition, both or none")
     if post.get("tone") is not None and post.get("tone") not in {"credit", "criticism", "explainer"}:
         rep.errors.append("'tone' must be credit, criticism or explainer")
+    # who, where, when: every new civic post says who did it (office + name), where, and when (shown on the design)
+    if "message" in post and not post.get("n") and tpl in W5_TEMPLATES:
+        when = post.get("when") or (post.get("date") if tpl == "kumbuka" else None)
+        for f, v, cap in (("who", post.get("who"), 60), ("where", post.get("where"), 24), ("when", when, 20)):
+            if not str(v or "").strip():
+                rep.errors.append(f"no `{f}`: say {dict(who='who did it (office and name)', where='where (county, town or national)', when='when (the date, or the deadline)')[f]}")
+            elif len(str(v)) > cap:
+                rep.errors.append(f"'{f}' is {len(str(v))} chars (max {cap})")
     # every new post tells Kenyans the one best thing to do (launch posts predate the rule: they carry no `message`)
     if "message" in post and not post.get("n") and tpl not in {"glasspoll", "cover", "tazama"}:
         act = str(post.get("action") or "").strip()

@@ -17,7 +17,7 @@
 .rows .n { color: var(--chai-300); }
 .pride { margin-top: 24px; }
 {% endblock %}
-{% block top %}<span class="tag tag--red">Set It Straight</span><span class="meta">{{ person_role if person_shown is defined and person_role is defined else 'Fact check' }}</span>{% endblock %}
+{% block top %}<span class="tag tag--red">Set It Straight</span><span class="meta">{{ context_line or (person_role if person_shown is defined and person_role is defined else 'Fact check') }}</span>{% endblock %}
 {% block content %}
   <p class="label" style="color: var(--muted)">The claim</p>
   <p class="claim"><q>{{ claim | nb }}</q></p>

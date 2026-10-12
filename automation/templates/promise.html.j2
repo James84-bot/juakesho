@@ -15,7 +15,7 @@
 .rows .row { font-size: 27px; padding: 16px 0; }
 .ask { margin-top: 24px; color: var(--accent); }
 {% endblock %}
-{% block top %}<span class="tag">Promise Tracker</span><span class="meta">{{ person_role if person_shown is defined and person_role is defined else 'On the record' }}</span>{% endblock %}
+{% block top %}<span class="tag">Promise Tracker</span><span class="meta">{{ context_line or (person_role if person_shown is defined and person_role is defined else 'On the record') }}</span>{% endblock %}
 {% block content %}
   <p class="label">The promise</p>
   <h1 class="display promise">&ldquo;{{ promise }}&rdquo;</h1>

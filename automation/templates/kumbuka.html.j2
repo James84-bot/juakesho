@@ -12,7 +12,7 @@
 .status p { font: 600 28px/1.32 "Inter"; color: var(--fg); }
 .ask { margin-top: 24px; font: 900 40px/1 "Inter Tight"; letter-spacing: -.02em; color: var(--fg); }
 {% endblock %}
-{% block top %}<span class="tag">Hatutasahau</span><span class="meta">We won't forget</span>{% endblock %}
+{% block top %}<span class="tag">Hatutasahau</span><span class="meta">{{ context_line or "We won't forget" }}</span>{% endblock %}
 {% block content %}
   <p class="display date">{{ date }}</p>
   <h1 class="display event">{{ event | mark }}</h1>

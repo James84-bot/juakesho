@@ -320,6 +320,10 @@ THE MESSAGE AND THE BEST ACTION (every post)
   pays the levy". Only real channels you can source; never invent a number, email or deadline. If there is truly
   nothing to do, the action is the question to ask or the person to tell.
 - The action goes in the caption's last line and the Reel's last beat.
+- WHO, WHERE, WHEN on every civic post: `who` (the office and the person holding it: "Energy CS Opiyo Wandayi",
+  "Nairobi Governor Johnson Sakaja", "IEBC"; max 60), `where` (county or town, or "National"; max 24), `when` (the
+  date it happened or the deadline: "12 Oct 2026", "by Friday 17 Oct"; max 20). They show on the design, and the
+  headline or fact must name the who. A story without a clear who, where and when isn't ready to post.
 
 URGENT, NOT PARAGRAPHS
 - No numbering: no "5 things", "3 reasons", "1/5", "01, 02". Lists are a few short lines, each one a punch.
@@ -767,6 +771,7 @@ MOCK_SAMPLES = {
         "proof": ["The county budget funded 30 centres.", "Less than a fifth of that money was spent.", "Four centres had opened by June."],
         "ask": "Where are the other 26?", "source": "Rehearsal sample: not real data", "message": "A promised health centre in every ward is stalled at 4 of 30.",
         "action": "Ask your MCA at the next public participation where the other 26 are",
+        "where": "Sample County", "when": "June 2026",
         "caption": "Promise Tracker (rehearsal sample). Share this with someone in your ward.\n\n#KenyansAreAsking",
     },
     "kumbuka": {
@@ -775,6 +780,7 @@ MOCK_SAMPLES = {
         "status": "Rehearsal sample, not real data: no one has been charged.", "ask": "Hatutasahau.",
         "source": "Rehearsal sample: not real data", "message": "Rehearsal sample.", "photo_query": "candles at night",
         "action": "Share this with someone who was there, so the date isn't forgotten",
+        "who": "Sample agency (rehearsal)", "where": "Nairobi",
         "caption": "Hatutasahau (rehearsal sample). Share this.\n\n#KenyansAreAsking",
     },
     "scorecard": {
@@ -785,6 +791,7 @@ MOCK_SAMPLES = {
         "verdict": "Rehearsal sample: judge the record, then decide.", "source": "Rehearsal sample: not real data",
         "message": "Rehearsal sample.", "photo_query": "Kenya parliament building",
         "action": "Read their record on parliament.go.ke before you vote",
+        "where": "Sample Constituency", "when": "2022-2026",
         "caption": "The Chapter Six Test (rehearsal sample). Share this.\n\n#KenyansAreAsking",
     },
 }
