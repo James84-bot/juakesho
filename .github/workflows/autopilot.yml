@@ -76,7 +76,10 @@ jobs:
 
       - name: Tests
         if: steps.cmd.outputs.c != 'skip'
-        run: cd automation && python -m unittest discover -s tests
+        run: |
+          cd automation
+          set -o pipefail
+          python -m unittest discover -s tests 2>&1 | tee run.log   # a failure shows in "Show why it failed"
 
       - name: Rehearse (mock week, dry run)
         if: steps.cmd.outputs.c == 'rehearse'

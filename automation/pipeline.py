@@ -544,6 +544,8 @@ def _preview_text(p: dict) -> str:
     lines = [f"<b>{esc(p['id'])}</b> · {esc(p['template'])} · lane: {esc(str(p.get('lane', '-')))}", f"🕒 {when} EAT"]
     if p.get("message"):
         lines += [f"🎯 <i>{esc(p['message'])}</i>" + (f"  ({esc(p['symbol'])})" if p.get("symbol") else "")]
+    if p.get("action"):
+        lines += [f"👉 <b>{esc(p['action'])}</b>"]
     lines += ["", esc(cap)]
     if p.get("trend"):
         lines += ["", f"📈 Riding trend: {esc(str(p['trend']))}"]
@@ -734,8 +736,14 @@ def wait_until_ready(container: str, timeout_s: int = 300, every_s: int = 10) ->
 
 
 def caption_for(post: dict) -> str:
-    """The approved caption plus credits: the photographer of a real photo, the artist of a licensed track."""
+    """The approved caption plus credits: the photographer of a real photo, the artist of a licensed track.
+    The post's action is always in the caption: added as the last line if the writer left it out."""
     cap = post.get("caption", "")
+    act = str(post.get("action") or "").strip()
+    if act and act.lower()[:30] not in cap.lower():
+        tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
+        body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
+        cap = f"{body.rstrip()}\n\n👉 {act}{tail}"
     clip = post.get("credit") if post.get("template") == "tazama" and post.get("rights_kind") != "own" else None
     credits = [f"{icon} {c}" for icon, c in (("📹 Video:", clip),
                                              ("📷", post.get("person_credit") or post.get("photo_credit")),

@@ -25,14 +25,15 @@
       "message": "Kenyans pay 4.25% of gross pay to housing and health levies and want to see what it buys.",
       "photo_query": "payslip and Kenyan shilling notes",
       "source": "Affordable Housing Act, 2024 (s.4: 1.5% of gross salary); Social Health Insurance Act, 2023 and Social Health Insurance (General) Regulations, 2024 (2.75% of gross salary)",
-      "caption": "Check your payslip. 1.5% housing levy + 2.75% SHIF, kila mwezi. Tunalipa. Swali ni moja: tunapata nini? 👇🏾\n\nWewe umeona nini kutoka hii pesa? Drop it in the comments.\n\n#HousingLevy #JuaKesho",
+      "caption": "Check your payslip. 1.5% housing levy + 2.75% SHIF, every month. We pay. One question: what are we getting? 👇🏾\n\nWhat have you seen from this money? Drop it in the comments.\n\n#HousingLevy #JuaKesho",
       "beats": [
         "Check your payslip.",
         "*4.25%* gone before you see it.",
         "1.5% housing levy.",
         "2.75% SHIF.",
         "Tunalipa. *Tunapata nini?*"
-      ]
+      ],
+      "action": "Check the levy lines on your payslip, then ask your MP what they bought"
     },
     {
       "id": "01-hack-lecture-notes",
@@ -75,7 +76,8 @@
         "President. Governor. Senator.",
         "MP. Woman Rep. MCA.",
         "Know the job. *Then* pick the person."
-      ]
+      ],
+      "action": "Check you're registered: verify.iebc.or.ke or SMS your ID number to 70000"
     },
     {
       "id": "02-decode-prompt",
@@ -103,14 +105,15 @@
       "message": "The Finance Bill decides your taxes every year, and you have a right to be heard on it.",
       "photo_query": "Kenya parliament building Nairobi",
       "source": "Constitution of Kenya 2010, Art. 118 (public participation in Parliament) and Art. 221 (budget estimates); Public Finance Management Act, 2012",
-      "caption": "Every year the same story: Finance Bill comes, prices go up, we complain on X. This time we read it first. The Constitution gives us a say before MPs vote. Kwani tutalala tena?\n\nShare this before it's tabled.\n\n#FinanceBill #JuaKesho",
+      "caption": "Every year the same story: Finance Bill comes, prices go up, we complain on X. This time we read it first. The Constitution gives us a say before MPs vote.\n\nShare this before it's tabled.\n\n#FinanceBill #JuaKesho",
       "beats": [
         "It comes back *every year.*",
         "The Finance Bill sets your taxes.",
         "Treasury drafts. MPs vote.",
         "You have a right to be heard.",
         "Read it. *Speak up.*"
-      ]
+      ],
+      "action": "Read the Bill on parliament.go.ke and send your view to the Finance Committee"
     },
     {
       "id": "03-cap-coding",
@@ -388,7 +391,8 @@
       "explain": "Your files wait safely online. Phone stolen? Log in from any phone and pick them up.",
       "punch": "Phone imeibiwa? Files ziko salama.",
       "expr": "wink",
-      "caption": "Cloud storage, explained the Kenyan way. Turn on Google Photos or iCloud backup today, then send this to the friend who lost everything with their last phone.\n\n#JuaKesho"
+      "caption": "Cloud storage, explained the Kenyan way. Turn on Google Photos or iCloud backup today, then send this to the friend who lost everything with their last phone.\n\n#JuaKesho",
+      "action": "Turn on Google Photos or iCloud backup today"
     }
   ]
 }
