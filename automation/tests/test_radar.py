@@ -36,3 +36,20 @@ class Radar(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Hashtags(unittest.TestCase):
+    def test_rides_live_neutral_tags_never_partisan_ones(self):
+        import draft
+        import guard
+        posts = [{"id": "a", "template": "sauti", "line": "Kericho helicopter crash: KFS corrects the numbers",
+                  "caption": "Five on board, not four. Who checks? #SautiYaMwananchi #KFS #JuaKesho"},
+                 {"id": "b", "template": "sauti", "line": "Ruto calls Uhuru a conman",
+                  "caption": "What did the record say? #JuaKesho"}]
+        out = draft.boost_hashtags(posts, live=["#KerichoHelicopterCrash", "#TapeliUhuruKenyatta", "#Liverpool"])
+        self.assertIn("#KerichoHelicopterCrash #JuaKesho", out[0]["caption"])
+        self.assertNotIn("#SautiYaMwananchi", out[0]["caption"])   # our series tag gives way, max 3 stays
+        self.assertNotIn("Tapeli", out[1]["caption"])
+        self.assertIsNone(out[1].get("trend"))
+        rep = guard.check({**posts[1], "caption": "x #TapeliUhuruKenyatta"})
+        self.assertTrue(any("takes a side" in e for e in rep.errors))

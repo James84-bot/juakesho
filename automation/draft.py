@@ -273,6 +273,9 @@ SOUND LIKE KENYANS ONLINE (KOT, Kenyan TikTok, the WhatsApp group)
 - Captions: line 1 is the hook as a Kenyan would tweet it; 1-3 short lines; end with a question people answer
   in the comments ("Have you seen this money anywhere?", "Tag your MP."). One topical hashtag in Kenyan-trend style
   (#HousingLevy, #FinanceBill2027), plus #JuaKesho. Max three.
+- Use the words Kenyans are typing this week: name people, places and events the way they search them ("Uhuru",
+  "Kericho helicopter crash", "Hustler Fund"). Use a live hashtag from LIVE RADAR when the post is about it, but never
+  one that insults or campaigns (#Tapeli..., #...Delivers, #Wantam, "must go"): those are someone's side, not ours.
 - Never corporate: no "we're excited to share", "stay tuned", "don't miss", "let us know your thoughts",
   "engage", "check out". Never mock how ordinary Kenyans speak or write. Never laughing emojis on deaths or pain.
 
@@ -906,6 +909,37 @@ def _draft_batch(week_label: str, batch: list[dict], lanes: dict, examples: list
         return first + _draft_batch(week_label, batch[half:], lanes, examples, (done or []) + first)
 
 
+SERIES_TAGS = {"#setitstraight", "#promisetracker", "#followthemoney", "#sautiyamwananchi", "#chaptersixtest",
+               "#hatutasahau", "#tazamahii", "#juaasks", "#usiibiwe"}
+
+
+def boost_hashtags(posts: list[dict], live: list[str] | None = None) -> list[dict]:
+    """Rides the live Kenyan hashtags: when a post is about the people/places a live X hashtag is about, that
+    hashtag goes into the caption (replacing our own series tag if the caption is full). Insults and campaign
+    slogans are never used, however hard they trend."""
+    import demand
+    import radar
+    live = [t for t in (live if live is not None else radar.hashtags(20)) if not guard.PARTISAN_TAG.search(t)]
+    for p in posts:
+        cap = str(p.get("caption") or "")
+        if not cap or p.get("n") or p.get("status") == "needs_human":
+            continue
+        text_names = demand.names(" ".join(str(v) for k, v in p.items() if isinstance(v, str) and k not in {"source", "id"}))
+        tags = re.findall(r"#\w+", cap)
+        have = {t.lower() for t in tags}
+        hit = next((t for t in live if t.lower() not in have and demand.names(t) & text_names), None)
+        if not hit:
+            continue
+        if len(tags) >= 3:
+            drop = next((t for t in tags if t.lower() in SERIES_TAGS), None)
+            if not drop:
+                continue
+            cap = re.sub(rf"\s*{re.escape(drop)}\b", "", cap)
+        cap = cap.replace("#JuaKesho", f"{hit} #JuaKesho") if "#JuaKesho" in cap else f"{cap.rstrip()} {hit}"
+        p["caption"], p["trend"] = cap, hit
+    return posts
+
+
 TAKEN: list[dict] = []   # posts already in the week (kept through a remake): set by pipeline.draft
 
 
@@ -929,4 +963,8 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
         p["guard"] = {"errors": r.errors, "warnings": r.warnings}
     if not mock:
         posts = elevate(week_label, slots, lanes, posts)
+        try:
+            posts = boost_hashtags(posts)
+        except Exception as e:   # trend data missing never blocks the week
+            print(f"  hashtag boost skipped: {e}")
     return posts, result.get("scripts", {})
