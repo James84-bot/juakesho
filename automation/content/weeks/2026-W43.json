@@ -282,36 +282,36 @@
       "template": "promise",
       "lane": "young_pro",
       "series": "Development Tracker",
-      "who": "National Treasury and Parliament",
-      "where": "National",
-      "when": "FY 2024/25",
-      "promise": "Ring-fence Sh3.7 billion for healthcare worker salaries and medical intern postings",
-      "said": "National Budget Estimates, June 2024",
-      "reality": "Funds were reallocated in supplementary budgets to executive renovations",
-      "ask": "Why take medical payroll cash for office refurbishments?",
-      "source": "Controller of Budget National Government Budget Implementation Review Report, FY 2024/25",
+      "who": "William Ruto, President of Kenya",
+      "promise": "Absorb all 8,529 UHC healthcare workers on permanent and pensionable terms.",
+      "said": "Kenya Kwanza Manifesto, 2022",
+      "verdict": "stalled",
+      "reality": "Contracts lapsed and counties were handed the staff without the national budget to pay them.",
+      "ask": "Where is the budget to absorb our health workers?",
       "proof": [
-        "Sh3.7bn health personnel line trimmed under Supplementary Budget revisions",
-        "State House and executive renovations received upward adjustments",
-        "Medical intern postings remained delayed for months over budget shortfall"
+        "8,529 UHC workers hired in 2020 face job losses as transition stalls.",
+        "Parliament's Health Committee confirmed Treasury failed to fund county payrolls.",
+        "Council of Governors rejected absorption without national Treasury cash backing."
       ],
-      "verdict": "diverted",
-      "measure": "Sh3.7bn shifted",
+      "source": "Capital FM News (13 Oct 2026); Kenya Kwanza Health Manifesto (2022); National Assembly Health Committee Report",
+      "message": "Over 8,500 UHC health workers promised permanent jobs face unpaid contracts because Treasury sent no cash.",
+      "action": "Demand your MP push Treasury to fund county health worker payrolls",
+      "photo_query": "hospital ward Kenya",
+      "event_query": "Kenya National Assembly",
+      "where": "National",
+      "when": "13 Oct 2026",
       "side": "government",
       "tone": "criticism",
-      "impact": "Over 1,200 medical intern doctors remained unposted while public referral hospitals faced staff shortages.",
-      "message": "Sh3.7 billion meant for health worker payroll was cut and moved to executive renovations.",
-      "action": "Check the Controller of Budget review reports at cob.go.ke to track reallocation lines",
-      "photo_query": "hospital ward Kenya",
-      "caption": "Money budgeted for doctors and medical interns was trimmed, while executive renovation votes expanded. \n\nKenyans are asking: why does paint in government offices beat doctors in county hospitals?\n\n#FollowTheMoney #KenyansAreAsking",
+      "impact": "Public hospitals risk losing essential medics, leaving patients stranded.",
       "beats": [
-        "Sh3.7 billion for *doctors*.",
-        "Voted in the June budget.",
-        "Cut in the supplementary budget.",
-        "Moved to executive *renovations*.",
-        "Hospitals wait. Offices shine.",
-        "Track the budget on *cob.go.ke*."
+        "8,500 medics promised *permanent jobs*.",
+        "Manifesto pledge: absorb all UHC staff.",
+        "Reality: counties handed zero budget.",
+        "Now *salaries stall* and clinics suffer.",
+        "Ask: where is the transition budget?",
+        "*Demand MPs fund* county health payrolls."
       ],
+      "caption": "8,529 UHC health workers were promised permanent terms. Now contracts have lapsed, Treasury sent no cash, and counties cannot pay them. What it means for you: unattended wards in your local public clinic.\n\nKenyans are asking: where is the healthcare transition budget?\n\n#HealthCrisis #UHC #KenyansAreAsking",
       "bg": "shuka",
       "publish_at": "2026-10-23T17:00:00+03:00",
       "status": "needs_human",
@@ -329,15 +329,15 @@
         "clarity": 9,
         "fresh": 8,
         "voice": 9,
-        "craft": 9,
-        "picture": 8,
-        "hold": 9,
-        "demand": 8,
-        "action": 8,
-        "fair": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 9,
+        "action": 7,
+        "fair": 7,
         "impact": 9,
-        "avg": 8.5,
-        "note": "Sharp contrast between intern doctor shortages and executive office renovations."
+        "avg": 8.2,
+        "note": "Ground the photo query in a specific Kenyan public hospital context like Kenyatta National or Mbagathi rather than a generic stock ward."
       },
       "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-promise-photo.jpg",
       "photo_credit": "Photo: Moving Mountains Trust / Wikimedia Commons, CC BY 2.0",
@@ -345,7 +345,7 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Ward_block,_Dophil_Maternity_and_Nursing_Home.jpg",
       "ink": {
-        "1": "#0E0C0B",
+        "1": "#FFFFFF",
         "3": "#F8F7F6"
       }
     },
@@ -481,10 +481,10 @@
     }
   ],
   "scripts": {
-    "radio": "Good evening, and welcome to Kenyans Are Asking. This week, we examine the true cost of public promises. In Mombasa, there is genuine relief: the Sh4.5 billion Makupa Bridge is complete, easing traffic and reconnecting the island's waters. It proves public works can succeed when completed properly. But that progress stands in sharp contrast to the rest of the country. In Kitale, four thousand traders remain stranded in the dust because Masinde Muliro Market has stalled yet again. In Iten, Kamariny Stadium—promised within six months back in 2017—sits abandoned nine years later. And in the national budget, Sh3.7 billion meant for health workers' payroll was quietly reallocated to renovate executive offices. How do we justify plush carpets and fresh paint while our clinics lack medical staff? Meanwhile, citizens pay upfront for electricity and a mandatory housing levy, wondering when those deductions will translate to reliable power and actual homes in their wards. Kwa ufupi: Ingawa daraja la Makupa limekamilika, ahadi za soko la Kitale na uwanja wa Kamariny bado zinasuasua. Zaidi ya hayo, Shilingi bilioni 3.7 za mishahara ya wahudumu wa afya zimepelekwa kukarabati ofisi za serikali. Ni wakati wa kuuliza: je, kodi yako inakufaa wewe, ama inafaa wachache?",
-    "voice_note": "Habari zenu. This is the weekly update from Kenyans Are Asking. Look at how our money moved this week. While the Sh4.5 billion Makupa Bridge in Mombasa is finally open, look at what happened to the health sector: Sh3.7 billion meant for health workers' salaries was quietly diverted to renovate executive offices. At the same time, four thousand traders in Kitale are still waiting for the stalled Masinde Muliro Market, and Kamariny Stadium in Iten is now nine years late. We pay our electricity bills upfront, we pay the mandatory housing levy every month, yet everyday services are treated as an afterthought. Let's stop focusing on political speeches and start tracking the budget reallocations. Share this voice note with your neighbourhood group—accountability begins with knowing where the shilling went.",
-    "sms": "Usiibiwe: Sh3.7B ya mishahara ya madaktari imeenda kwa ukarabati wa ofisi za wakubwa. Fuatilia bajeti ya kaunti na taifa; kodi yako si ya kupaka ofisi rangi.",
-    "reels": "Sh3.7 billion. That is the exact amount quietly stripped from health workers' payroll and moved into executive office renovations. Think about that next time you visit a public hospital and find no doctor or basic supplies. We are told the exchequer is broke, yet there is always money for VIP lounges and executive paint. Priorities are not declared in press briefings; they are decided in budget lines. Who approved this trade-off?"
+    "radio": "Hamjambo wasikilizaji, and welcome back to Kenyans Are Asking. Today, we need to talk about the people we rely on when life hangs in the balance: our healthcare workers. Over eight thousand five hundred health workers were hired under the Universal Health Coverage program during the height of the pandemic. For years, they served on precarious contracts, keeping our dispensaries and sub-county hospitals running. Then came the big commitment from the national government: every single one would be absorbed on permanent and pensionable terms. It sounded like progress. But today, that promise is unraveling. Across the country, these professionals are working with unpaid salaries, and the transition has ground to a halt. Why? Because the National Treasury has failed to release the allocated funds to the Ministry of Health and county governments. When leaders make public commitments without backing them with actual cash flow, it is ordinary citizens who pay the ultimate price. A clinical officer who cannot pay rent cannot focus in the emergency room, and when they strike, public wards empty out. Treasury and Afya House must stop passing the buck. You cannot claim to build universal healthcare while starving the very people delivering it.\n\nKwa ufupi: Zaidi ya wahudumu elfu nane na mia tano wa afya wa mpango wa UHC waliyoahidiwa ajira ya kudumu hawajalipwa mishahara kwa sababu Hazina Kuu haijatoa fedha. Ahadi bila bajeti inalemaza hospitali zetu na kuhatarisha maisha ya Wakenya.",
+    "voice_note": "Hey everyone, here is what is happening this week on Kenyans Are Asking. Remember those eight thousand five hundred UHC health workers the government promised to absorb on permanent and pensionable terms? Right now, many of them are working without pay, and the transition has stalled completely. The counties say they are waiting on Afya House, and the Ministry is waiting on the National Treasury, which simply hasn’t released the funds. These nurses, lab techs, and clinical officers keep our rural clinics afloat every single day. Making grand pronouncements about healthcare reform is easy, but an unfunded promise is just public relations at the expense of frontline workers and sick patients. Treasury needs to release this money immediately. Share this note with someone who cares about our public health system.",
+    "sms": "Usiibiwe: A state promise of permanent jobs is empty without released Treasury funds. Track the actual budget disbursement, not just the political pledge.",
+    "reels": "Over 8,500 UHC health workers were promised permanent and pensionable jobs. Today, they are facing unpaid contracts because the National Treasury hasn’t released the funds. You cannot deliver Universal Health Coverage on empty promises and unpaid labor. When healthcare workers are starved of their wages, public clinics shut down, and ordinary Kenyans suffer. Treasury must disburse the cash now. Healthcare is a right, not a political photo op."
   },
   "spend_usd": 0.0
 }
