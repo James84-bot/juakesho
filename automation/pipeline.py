@@ -1096,7 +1096,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenyans Are Asking autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -1186,6 +1186,18 @@ def _main(argv: list[str] | None = None) -> int:
         collect()   # pick up clips you just sent
     if a.command in {"clips", "clipwork"}:
         process_clips(dry_run=a.dry_run)
+    if a.command == "aicheck":   # one tiny call to the writer: which provider answers, and does it work
+        import draft as drafter
+        try:
+            reply = drafter.call_claude("Answer with one word.", "Say OK.", max_tokens=20).strip()
+            msg = f"🧠 Writer check: {drafter.provider()} answered '{reply[:30]}'. " + (
+                "Free writer active." if drafter.provider() == "gemini" else "Using the paid Claude key.")
+            log(msg)
+            if not a.dry_run:
+                _notify(_esc(msg))
+        except Exception as e:
+            log(f"writer check failed ({drafter.provider()}): {e}")
+            return 1
     if a.command == "metacheck" and not meta_check(dry_run=a.dry_run):
         return 1   # a failed check shows on the run page too, with the reason
     if a.command == "reels":
