@@ -60,7 +60,7 @@ class Posted(unittest.TestCase):
         self.assertNotIn("https://k.test/afp.jpg", got_urls)
 
     def test_old_reports_and_small_images_are_not_used(self):
-        old = dict(POST, publish_at="2026-12-01T18:30:00+03:00")
+        old = dict(POST, publish_at="2026-09-01T18:30:00+03:00")   # a post from September: October reports are too new
         with mock.patch.object(posted, "feed_items", lambda: self.items), mock.patch.object(posted, "_get", lambda u, timeout=20: jpeg()):
             self.assertIsNone(posted.find(old))
         with mock.patch.object(posted, "feed_items", lambda: self.items[:1]), \
