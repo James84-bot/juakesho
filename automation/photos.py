@@ -308,13 +308,25 @@ def _commons_once(query: str, pid: str, place: str | None = None, full: str | No
 EVENT_DAYS_BEFORE, EVENT_DAYS_AFTER = 4, 1   # a photo taken/uploaded in this window around the post counts as "of the day"
 
 
+TITLES = {"president", "deputy", "senator", "governor", "speaker", "minister", "cabinet", "secretary", "chief",
+          "justice", "hon", "honourable", "dr", "prof", "mp", "mca", "cs", "ps", "cj", "dp", "former", "the", "leader",
+          "commissioner", "chairperson", "chair", "chairman", "nominated", "woman", "rep", "member", "principal"}
+INSTITUTION = re.compile(r"^(kenya\w*|nairobi|national|county|assembly|senate|parliament|committee|commission|bureau|"
+                         r"bank|ministry|authority|kwanza|azimio|iebc|government|office|department|house|state|court|"
+                         r"police|service|board|council|agency|fund|treasury|registration|public|debt|privatisation|"
+                         r"central|youth|charter|manifesto|energy|interior|health|education|finance|opposition|"
+                         r"united|democratic|party|movement|alliance|coalition|republic|east|africa|african|"
+                         r"constitution|act|bill|report|annual|statistical|bulletin)$", re.I)
+
+
 def _surname(who: str) -> str:
-    """'Energy CS Opiyo Wandayi' -> 'wandayi' (the word a caption of their photo would carry)."""
-    words = [w for w in re.findall(r"[A-Z][a-z]{2,}", who or "") if w.lower() not in
-             {"president", "deputy", "senator", "governor", "speaker", "minister", "cabinet", "secretary", "chief",
-              "justice", "the", "mp", "mca", "energy", "treasury", "interior", "health", "education", "national",
-              "county", "assembly", "opposition", "leader", "former", "commissioner", "chairperson", "chair"}]
-    return words[-1].lower() if words else ""
+    """The surname of the PERSON in `who` ('Energy CS Opiyo Wandayi' -> 'wandayi'); '' when `who` is an
+    institution ('National Assembly Public Debt Committee') or names nobody."""
+    words = re.findall(r"[A-Z][a-z'-]{2,}", who or "")
+    names = [w for w in words if w.lower() not in TITLES and not INSTITUTION.match(w)]
+    # a person is at least a first name and a surname next to each other in the text
+    pairs = [last for first, last in zip(names, names[1:]) if re.search(rf"\b{first}\s+{last}\b", who)]
+    return pairs[-1].lower() if pairs else ""
 
 
 def _event_window(post: dict) -> tuple[dt.datetime, dt.datetime]:

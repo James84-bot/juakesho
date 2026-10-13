@@ -68,7 +68,10 @@ def _img_from_html(fragment: str) -> str:
 def parse_feed(xml: bytes, name: str, official: bool = False) -> list[dict]:
     """Items with title, link, date, the image the feed itself carries (if any) and its credit text."""
     out = []
-    root = ET.fromstring(xml)
+    text = xml.decode("utf-8", "replace")
+    text = re.sub(r"&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)(\w+);",
+                  lambda m: html.unescape(f"&{m.group(1)};").replace("&", "&amp;").replace("<", "&lt;"), text)
+    root = ET.fromstring(text.encode("utf-8"))
     for it in root.iter("item"):
         title = html.unescape((it.findtext("title") or "").strip())
         link = (it.findtext("link") or "").strip()
@@ -119,12 +122,13 @@ def terms_for(post: dict) -> tuple[str, list[str]]:
 
 
 def score(item: dict, surname: str, words: list[str]) -> int:
-    """How surely this report is about the post's story. 0 = not about it."""
+    """How surely this report is about the post's story. 0 = not about it.
+    With a person: the report names them AND shares a subject word. Without: three subject words."""
     hay = f"{item['title']} {item['text']}".lower()
     hits = sum(1 for w in words if w[:6] in hay)
     if surname:
-        return (hits + 3) if surname in hay else 0     # the person must be in the report
-    return hits if hits >= 2 else 0
+        return hits + 3 if surname in hay and hits >= 1 else 0
+    return hits if hits >= 3 else 0
 
 
 def _og_image(page: str) -> tuple[str, str]:
