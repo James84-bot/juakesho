@@ -10,6 +10,7 @@ on:
     - cron: "0 14 * * 0"      # Sunday 14:00 UTC = 17:00 EAT
     - cron: "20 */2 * * *"    # every 2 hours
     - cron: "5 6 * * *"       # daily 06:05 UTC = 09:05 EAT: the hot post
+    - cron: "10 14 * * 3"     # Wednesday 17:10 EAT: write Friday-Sunday close to their slots (backup to the listener)
   workflow_dispatch:
     inputs:
       command:
@@ -60,6 +61,7 @@ jobs:
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "c=${{ inputs.command }}" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "0 14 * * 0" ]; then echo "c=week" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "5 6 * * *" ]; then echo "c=hot" >> "$GITHUB_OUTPUT";
+          elif [ "${{ github.event.schedule }}" = "10 14 * * 3" ]; then echo "c=this-week" >> "$GITHUB_OUTPUT";
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
       - name: Install
@@ -126,6 +128,18 @@ jobs:
           pip install faster-whisper
           set -o pipefail
           python pipeline.py clipwork 2>&1 | tee -a run.log
+
+      - name: Fresh versions of posts that went stale
+        if: steps.cmd.outputs.c == 'tick'
+        run: |
+          cd automation
+          # only when this tick held a written-ahead post because the news moved on: redraft it now
+          python -c "import json,glob,sys; sys.exit(0 if any(p['status']=='needs_human' and any(str(e).startswith('outdated:') for e in (p.get('guard') or {}).get('errors', [])) for f in glob.glob('content/weeks/*.json') for p in json.load(open(f))['posts']) else 1)" \
+            || { echo "nothing stale"; exit 0; }
+          python -m playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg || true
+          set -o pipefail
+          python pipeline.py redo 2>&1 | tee -a run.log
 
       - name: Photos you sent (swap a post's picture)
         if: steps.cmd.outputs.c == 'tick'

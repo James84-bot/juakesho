@@ -342,6 +342,13 @@ def check(post: dict) -> Report:
             rep.errors.append(f"'impact' is {len(imp)} chars (max 140)")
         elif re.search(r"\b(affects (all|every)|all of us|everyone|every kenyan)\b", imp, re.I) and not re.search(r"\d", imp):
             rep.errors.append("'impact' is vague: name who is affected and how, with a number if the record has one")
+    # a post written days before its slot can't say "today": it would be wrong the day it goes out
+    if not post.get("hot") and tpl in {"sauti", "straight", "promise", "money", "scorecard", "glasspoll", "usiibiwe", "kumbuka"}:
+        stamp = " ".join(str(post.get(k) or "") for k in ("message", "impact", "caption", "line", "headline", "fact",
+                                                           "reality", "hook", "question", "title", "sub"))
+        m = re.search(r"\b(today|tonight|yesterday|tomorrow|this (morning|afternoon|evening)|just now|hours ago)\b", stamp, re.I)
+        if m:
+            rep.errors.append(f"'{m.group(0)}': this post goes out days after it is written; use the date (e.g. 'on 14 Oct') instead")
     if len(str(post.get("event_query") or "")) > 60:
         rep.errors.append("'event_query' is over 60 characters: name the person and the occasion, 2-5 words")
     if post.get("side") is not None and post.get("side") not in {"government", "opposition", "both", "none"}:
