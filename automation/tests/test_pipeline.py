@@ -868,6 +868,36 @@ class ApiCallTests(unittest.TestCase):
                 self.draft.call_claude("s", "u")
 
 
+
+class HttpRetryTests(unittest.TestCase):
+    def test_timeout_is_retried_and_token_never_in_error(self):
+        calls = []
+
+        def boom(req, timeout):
+            calls.append(timeout)
+            raise TimeoutError("The read operation timed out")
+        with mock.patch.object(pl.urllib.request, "urlopen", boom), mock.patch.object(pl.time, "sleep", lambda s: None):
+            with self.assertRaises(RuntimeError) as cm:
+                pl.http("POST", "https://api.telegram.org/botSECRET123/sendVideo", {"a": 1}, {"video": __file__})
+        self.assertEqual(len(calls), 3)
+        self.assertGreaterEqual(calls[0], 240)          # uploads get a long timeout
+        self.assertNotIn("SECRET123", str(cm.exception))
+
+    def test_failed_upload_keeps_the_rest_of_the_batch(self):
+        sent = []
+
+        def card(chat, label, p, out_dir):
+            if p["id"] == "bad":
+                raise RuntimeError("timeout")
+            sent.append(p["id"])
+        data = {"week": "2026-W42", "posts": [{"id": "bad", "status": "rendered"}, {"id": "good", "status": "rendered"}]}
+        with mock.patch.object(pl, "load_week", lambda l: data), mock.patch.object(pl, "save_week", lambda d: None), \
+                mock.patch.object(pl, "need", lambda k: {k: "1"}), mock.patch.object(pl, "_send_card", card), \
+                mock.patch.object(pl, "_notify", lambda t: None), mock.patch.object(pl, "balance_note", lambda d: None):
+            pl.ask("2026-W42")
+        self.assertEqual(sent, ["good"])
+        self.assertEqual([p["status"] for p in data["posts"]], ["rendered", "awaiting"])
+
 if __name__ == "__main__":
     unittest.main()
 

@@ -128,13 +128,27 @@ def http(method: str, url: str, fields: dict | None = None, files: dict | None =
     elif fields is not None:
         data = urllib.parse.urlencode(fields).encode()
         headers["Content-Type"] = "application/x-www-form-urlencoded"
-    req = urllib.request.Request(url, data=data, method=method, headers=headers)
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
-            return json.loads(r.read() or b"{}")
-    except urllib.error.HTTPError as e:
-        detail = e.read().decode(errors="replace")[:600]
-        raise RuntimeError(f"{method} {url.split('?')[0]} → {e.code}: {detail}") from e
+    if files:   # uploads (Reels, albums) need far longer than a plain API call
+        timeout = max(timeout, 240)
+    where = url.split("?")[0].split("/bot")[0]   # never put a bot token in an error message
+    last: Exception | None = None
+    for attempt in range(3):
+        req = urllib.request.Request(url, data=data, method=method, headers=headers)
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return json.loads(r.read() or b"{}")
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode(errors="replace")[:600]
+            if e.code in (429, 500, 502, 503, 504) and attempt < 2:
+                last = e
+                time.sleep(5 * (attempt + 1))
+                continue
+            raise RuntimeError(f"{method} {where} → {e.code}: {detail}") from e
+        except (TimeoutError, urllib.error.URLError, ConnectionError) as e:
+            last = e
+            if attempt < 2:
+                time.sleep(5 * (attempt + 1))
+    raise RuntimeError(f"{method} {where} failed after 3 tries: {last!r}")
 
 
 # ---------------------------------------------------------------------------
@@ -453,11 +467,14 @@ def process_clips(dry_run: bool = False) -> int:
 def send_reels(label: str, dry_run: bool = False) -> int:
     """Re-sends this week's Reels that still wait for your decision, each with its ✅/❌/🎵 buttons."""
     data = load_week(label)
+    fresh = {p["id"] for p in data["posts"] if p["status"] == "rendered"}
+    if fresh:   # cards whose upload failed last time: send them once, with buttons
+        data = ask(label, dry_run=dry_run)
     chat = "dry-run" if dry_run else need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
     sent = 0
     for p in data["posts"]:
         video = EXPORTS / label / f"{p['id']}.mp4"
-        if p["status"] != "awaiting" or p.get("n") or not video.exists():
+        if p["status"] != "awaiting" or p.get("n") or not video.exists() or p["id"] in fresh:
             continue
         if dry_run:
             log(f"[dry-run] would send reel {p['id']}")
@@ -593,7 +610,8 @@ def ask(label: str, dry_run: bool = False) -> dict:
     data = load_week(label)
     chat = need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"] if not dry_run else "dry-run"
     out_dir = EXPORTS / label
-    sent_groups = set()
+    sent_groups: set = set()
+    failed: list[str] = []
     for p in data["posts"]:
         if p["status"] != "rendered":
             continue
@@ -606,25 +624,32 @@ def ask(label: str, dry_run: bool = False) -> dict:
                 log(f"[dry-run] would send carousel {group} ({len(members)} slides)")
             else:
                 media = [{"type": "photo", "media": f"attach://f{i}"} for i in range(len(members))]
-                tg("sendMediaGroup", {"chat_id": chat, "media": json.dumps(media[:10])},
-                   {f"f{i}": out_dir / f"{m['id']}.png" for i, m in enumerate(members[:10])})
-                tg("sendMessage", {"chat_id": chat, "text": _preview_text(members[0]), "parse_mode": "HTML",
-                                   "reply_markup": _buttons(f"{label}|{group}")})
+                try:
+                    tg("sendMediaGroup", {"chat_id": chat, "media": json.dumps(media[:10])},
+                       {f"f{i}": out_dir / f"{m['id']}.png" for i, m in enumerate(members[:10])})
+                    tg("sendMessage", {"chat_id": chat, "text": _preview_text(members[0]), "parse_mode": "HTML",
+                                       "reply_markup": _buttons(f"{label}|{group}")})
+                except Exception as e:   # one bad upload must not lose the rest of the batch
+                    failed.append(group)
+                    log(f"send failed for carousel {group}: {e}")
+                    sent_groups.add(group)
+                    continue
             for m in members:
                 m["status"] = "awaiting"
             sent_groups.add(group)
+            save_week(data)
             continue
         if dry_run:
             log(f"[dry-run] would send {p['id']}{' (reel)' if p.get('reel') else ''}")
-        elif p.get("reel"):
-            tg("sendVideo", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML", "supports_streaming": "true",
-                             "reply_markup": _buttons(f"{label}|{p['id']}", reel=True)},
-               {"video": out_dir / f"{p['id']}.mp4"})
         else:
-            tg("sendPhoto", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML",
-                             "reply_markup": _buttons(f"{label}|{p['id']}")},
-               {"photo": out_dir / f"{p['id']}.png"})
+            try:
+                _send_card(chat, label, p, out_dir)
+            except Exception as e:
+                failed.append(p["id"])
+                log(f"send failed for {p['id']}: {e}")
+                continue   # stays "rendered", so the next ask/reels run sends it again
         p["status"] = "awaiting"
+        save_week(data)
     save_week(data)
     balance = balance_note(data)
     if balance and not dry_run:
@@ -636,8 +661,26 @@ def ask(label: str, dry_run: bool = False) -> dict:
     if note:
         log(note.replace("<b>", "").replace("</b>", "").replace("<code>", "").replace("</code>", ""))
         if not dry_run:
-            tg("sendMessage", {"chat_id": chat, "text": note, "parse_mode": "HTML"})
+            _notify(note)
+    if failed and not dry_run:
+        _notify(f"📶 {len(failed)} card(s) didn't upload ({', '.join(failed)[:300]}). "
+                "They're kept: Run workflow → <code>reels</code> sends them again.")
     return data
+
+
+def _send_card(chat: str, label: str, p: dict, out_dir: Path) -> None:
+    """One approval card. A Reel that won't upload falls back to its still image, so you still get to decide."""
+    if p.get("reel") and (out_dir / f"{p['id']}.mp4").exists():
+        try:
+            tg("sendVideo", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML", "supports_streaming": "true",
+                             "reply_markup": _buttons(f"{label}|{p['id']}", reel=True)},
+               {"video": out_dir / f"{p['id']}.mp4"})
+            return
+        except Exception as e:
+            log(f"reel upload failed for {p['id']}, sending the still: {e}")
+    tg("sendPhoto", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML",
+                     "reply_markup": _buttons(f"{label}|{p['id']}", reel=bool(p.get("reel")))},
+       {"photo": out_dir / f"{p['id']}.png"})
 
 
 # ---------------------------------------------------------------------------
