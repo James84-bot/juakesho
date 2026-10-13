@@ -114,6 +114,11 @@ PHOTO + HEADLINE (every post; the design is editorial: a real photo, bold type, 
   "classroom Kenya"; roads and stalled projects "road construction Kenya"; land "title deed Kenya"; police
   "Kenya police vehicle"; jobs and youth "Nairobi skyline"; farming "maize farm Kenya"; protests "Kenyan flag".
   Never a crowd, never a face, never a staged scene ("payslip on desk", "person on video call"). No logos.
+- Also give every civic post an `event_query` (max 60 chars): how a photo OF this week's actual event would be
+  captioned on Wikimedia Commons, with the person's surname and the occasion or place: "Cherargei Senate",
+  "IEBC voter registration Nairobi", "Finance Bill protest Nairobi", "Ruto State House Nairobi". The system uses
+  it first, and only if a licensed photo taken in the days around the story exists; otherwise the symbolic
+  `photo_query` is used. Omit it for explainers with no event.
 - Headlines short and concrete; the photo carries half the meaning.
 
 ATTRACT (the first second) AND SUSTAIN (every second after)

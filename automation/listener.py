@@ -6,7 +6,7 @@ inside a GitHub Actions job for ~5h45m at a time (free on a public repo) and:
 
   * answers every ✅/❌/🎵 tap within seconds, so the button stops spinning and you know it landed;
   * starts the autopilot `tick` run right away (taps a few seconds apart share one run);
-  * acknowledges clips you send (the tick run turns them into Tazama Hii Reels);
+  * acknowledges clips and photos you send (the tick run makes the Reel or swaps the post's picture);
   * keeps the clock for the daily hot post (09:05 EAT) and Sunday's new week (17:00 EAT); the autopilot's own
     schedule stays as a backup, and both commands are safe to run twice;
   * starts `tick` the moment an approved post is due, so it publishes on time instead of whenever the
@@ -109,7 +109,7 @@ def classify(update: dict, chat: str) -> str | None:
     msg = update.get("message")
     if msg:
         own = str(msg.get("chat", {}).get("id")) == chat
-        return "clip" if own and ("video" in msg or "document" in msg) else None
+        return "clip" if own and ("video" in msg or "document" in msg or "photo" in msg) else None
     cq = update.get("callback_query")
     if cq and str(cq.get("message", {}).get("chat", {}).get("id")) == chat:
         return "tap"
@@ -171,7 +171,8 @@ def run(minutes: float) -> None:
                     if kind == "tap":
                         tg("answerCallbackQuery", {"callback_query_id": u["callback_query"]["id"], "text": ack_text(u)})
                     else:
-                        tg("sendMessage", {"chat_id": chat, "text": "📹 Got your clip. Making the Reel now."})
+                        tg("sendMessage", {"chat_id": chat, "text": "📥 Got it. Working on it now.",
+                                           "reply_to_message_id": u["message"]["message_id"]})
                 except Exception as e:
                     log(f"ack failed: {e}")
             due = time.time() + (0 if first else DEBOUNCE_SECONDS)

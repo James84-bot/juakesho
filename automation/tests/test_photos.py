@@ -41,6 +41,50 @@ class Photos(unittest.TestCase):
             self.assertIsNone(none)   # non-civic posts never get a stand-in
 
 
+
+def _page(title, desc, taken, lic="CC BY-SA 4.0", idx=1):
+    return {"index": idx, "title": f"File:{title}.jpg", "imageinfo": [{
+        "mime": "image/jpeg", "width": 3000, "height": 2000, "url": f"https://c/{title}.jpg",
+        "descriptionurl": f"https://c/File:{title}", "timestamp": "2020-01-01T00:00:00Z",
+        "extmetadata": {"LicenseShortName": {"value": lic}, "Artist": {"value": "Wanjiru"},
+                        "ImageDescription": {"value": desc}, "DateTimeOriginal": {"value": taken}}}]}
+
+
+class EventPhotos(unittest.TestCase):
+    POST = {"id": "e1", "template": "promise", "publish_at": "2026-10-14T18:30:00+03:00",
+            "who": "Senator Samson Cherargei", "event_query": "Cherargei Senate", "photo_query": "Kenya National Assembly"}
+
+    def run_search(self, pages, faces=False):
+        fake = {"query": {"pages": {str(i): p for i, p in enumerate(pages)}}}
+        with mock.patch.object(photos, "_get", lambda u, h=None, timeout=30: json.dumps(fake).encode() if "api.php" in u else b"IMG"), \
+                mock.patch.object(photos, "faces_ok", lambda data: faces):
+            return photos.event_photo(self.POST)
+
+    def test_only_a_photo_taken_in_the_days_around_the_story_counts(self):
+        old = _page("Cherargei 2019", "Senator Cherargei in the Senate, Kenya", "2019-05-02")
+        self.assertIsNone(self.run_search([old]))
+        new = _page("Cherargei Oct", "Senator Cherargei speaks in the Senate, Nairobi, Kenya", "2026-10-12 10:00")
+        data, meta = self.run_search([old, new])
+        self.assertEqual(meta["kind"], "event")
+        self.assertIn("Wanjiru", meta["credit"])
+
+    def test_named_office_holder_may_be_the_face_a_stranger_may_not(self):
+        named = _page("Senate sitting", "Senator Cherargei in the Senate, Kenya", "2026-10-13")
+        self.assertIsNotNone(self.run_search([named], faces=False))
+        stranger = _page("Senate visitors", "Visitors at the Senate gallery, Kenya", "2026-10-13")
+        self.assertIsNone(self.run_search([stranger], faces=False))
+
+    def test_no_licence_no_photo(self):
+        self.assertIsNone(self.run_search([_page("Cherargei", "Cherargei Senate Kenya", "2026-10-13", lic="CC BY-NC 4.0")]))
+
+    def test_event_photo_comes_before_the_symbolic_one(self):
+        with tempfile.TemporaryDirectory() as d, \
+                mock.patch.object(photos, "event_photo", lambda p: (b"EVT", {"credit": "Photo: W", "url": "", "kind": "event"})), \
+                mock.patch.object(photos, "commons", lambda q, p: (b"SYM", {"credit": "Photo: S", "url": ""})):
+            got = photos.fetch(dict(self.POST), Path(d))
+            self.assertEqual(got["kind"], "event")
+            self.assertEqual(Path(got["file"]).read_bytes(), b"EVT")
+
 if __name__ == "__main__":
     unittest.main()
 

@@ -117,6 +117,18 @@ jobs:
           set -o pipefail
           python pipeline.py clipwork 2>&1 | tee -a run.log
 
+      - name: Photos you sent (swap a post's picture)
+        if: steps.cmd.outputs.c == 'tick'
+        run: |
+          cd automation
+          # only when the tick just took a photo you replied to a card with: render and re-send that post
+          python -c "import json,glob,sys; sys.exit(0 if any(p['status']=='drafted' and str(p.get('photo','')).startswith('sent:') for f in glob.glob('content/weeks/*.json') for p in json.load(open(f))['posts']) else 1)" \
+            || { echo "no photo swaps"; exit 0; }
+          python -m playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg || true
+          set -o pipefail
+          python pipeline.py swapwork 2>&1 | tee -a run.log
+
       - name: Show why it failed
         if: failure()
         run: |

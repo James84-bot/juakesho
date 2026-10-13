@@ -918,8 +918,56 @@ class HotSpacingTests(unittest.TestCase):
     def test_hot_post_moves_clear_of_a_planned_post(self):
         base = pl.dt.datetime(2026, 10, 14, 18, 30, tzinfo=pl.EAT)
         posts = [{"publish_at": base.isoformat(), "status": "approved"}]
-        self.assertEqual(pl._clear_of(base, posts), base.replace(hour=20))
+        self.assertEqual(pl._clear_of(base, posts), base.replace(hour=20, minute=0))
         self.assertEqual(pl._clear_of(base, [{"publish_at": base.isoformat(), "status": "rejected"}]), base)
+
+
+class PhotoSwapTests(TempWeeks):
+    def setUp(self):
+        super().setUp()
+        t = pl.now() + pl.dt.timedelta(days=1)
+        self.week([{"id": "p1-r3", "template": "sauti", "status": "awaiting", "publish_at": t.isoformat(), "tg_msg": 77,
+                    "photo_file": "x.jpg", "photo_kind": "symbolic"}])
+        self.sent = []
+        self.root = Path(self.tmp.name)
+
+    def intake(self, caption, reply_to=77, width=1600):
+        msg = {"message_id": 5, "caption": caption, "photo": [{"file_id": "small", "width": 320}, {"file_id": "big", "width": width}],
+               "chat": {"id": 42}}
+        if reply_to:
+            msg["reply_to_message"] = {"message_id": reply_to}
+
+        def download(get_path, token, file_id, target):
+            from PIL import Image
+            Image.new("RGB", (width, 900), "red").save(target, "PNG")
+        import tazama
+        with mock.patch.object(pl, "tg", lambda m, f=None, files=None: self.sent.append((m, f)) or {"ok": True}), \
+                mock.patch.object(pl, "ROOT", self.root), mock.patch.object(tazama, "download", download):
+            pl._photo_intake(msg, "42")
+        return pl.load_week("2026-W41")["posts"][0]
+
+    def test_reply_with_own_photo_swaps_the_picture_and_resends(self):
+        p = self.intake("yangu\nAt the Senate this morning")
+        self.assertEqual((p["id"], p["status"]), ("p1-r4", "drafted"))
+        self.assertTrue(p["photo"].startswith("sent:exports/2026-W41/photos/p1-r4-sent.jpg"))
+        self.assertEqual(p["photo_rights_credit"], "Photo: Kenyans Are Asking")
+        self.assertNotIn("photo_file", p)
+        self.assertTrue((self.root / p["photo"][5:]).exists())
+
+    def test_no_rights_line_no_swap(self):
+        p = self.intake("nukuu Citizen TV")       # a TV station's photo needs their permission
+        self.assertEqual(p["status"], "awaiting")
+        self.assertIn("can't use it yet", self.sent[-1][1]["text"])
+
+    def test_photo_not_replying_to_a_card_gets_the_how_to(self):
+        p = self.intake("yangu", reply_to=None)
+        self.assertEqual(p["status"], "awaiting")
+        self.assertIn("reply to that post", self.sent[-1][1]["text"])
+
+    def test_card_says_which_photo_it_carries(self):
+        p = dict(pl.load_week("2026-W41")["posts"][0], caption="c")
+        self.assertIn("Symbolic photo", pl._preview_text(p))
+        self.assertIn("from the event", pl._preview_text({**p, "photo_kind": "event"}))
 
 if __name__ == "__main__":
     unittest.main()
