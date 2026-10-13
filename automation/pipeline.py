@@ -139,7 +139,7 @@ def http(method: str, url: str, fields: dict | None = None, files: dict | None =
                 return json.loads(r.read() or b"{}")
         except urllib.error.HTTPError as e:
             detail = e.read().decode(errors="replace")[:600]
-            if e.code in (429, 500, 502, 503, 504) and attempt < 2:
+            if e.code in (409, 429, 500, 502, 503, 504) and attempt < 2:   # 409: another getUpdates reader
                 last = e
                 time.sleep(5 * (attempt + 1))
                 continue
@@ -698,6 +698,15 @@ def apply_decision(data: dict, key: str, approve: bool | str) -> list[str]:
     return changed
 
 
+def _answer(cq_id: str, text: str) -> None:
+    """Stops the button spinner. Telegram refuses answers to taps older than a few minutes; the decision
+    still counts, so a refused answer is never an error (the listener usually answered it already)."""
+    try:
+        tg("answerCallbackQuery", {"callback_query_id": cq_id, "text": text})
+    except Exception as e:
+        log(f"tap answer skipped: {str(e)[:120]}")
+
+
 def collect() -> None:
     STATE.mkdir(exist_ok=True)
     offset_file = STATE / "telegram_offset.txt"
@@ -726,7 +735,7 @@ def collect() -> None:
                 result = "Sample only: nothing was posted"
             else:
                 result = engage.act(STATE, graph, label, key) if meta_ready() else "Instagram isn't connected"
-            tg("answerCallbackQuery", {"callback_query_id": cq["id"], "text": result[:190]})
+            _answer(cq["id"], result[:190])
             log(f"comment {key}: {result}")
             continue
         if not week_file(label).exists():
@@ -734,7 +743,7 @@ def collect() -> None:
         data = weeks.setdefault(label, load_week(label))
         changed = apply_decision(data, key, "manual" if action == "m" else action == "a")
         verdict = {"a": "Approved ✅", "m": "Yours to post 🎵"}.get(action, "Rejected ❌")
-        tg("answerCallbackQuery", {"callback_query_id": cq["id"], "text": f"{verdict} ({len(changed)})"})
+        _answer(cq["id"], f"{verdict} ({len(changed)})")
         if action == "a" and changed:   # the WhatsApp Channel and Status have no API: hand over a ready-to-paste version
             post = next(q for q in data["posts"] if q["id"] == changed[0])
             from html import escape as esc
@@ -746,11 +755,11 @@ def collect() -> None:
         if action == "m" and changed:
             post = next(q for q in data["posts"] if q["id"] == changed[0])
             from html import escape as esc
-            tg("sendMessage", {"chat_id": allowed_chat, "parse_mode": "HTML", "text": (
+            _notify((
                 "🎵 <b>Post this Reel yourself</b> (the bot won't): save the video above, then in Instagram or TikTok "
                 "tap <b>Add audio</b>, pick a trending Kenyan sound, and turn <b>Original audio</b> down to 0. "
                 "The platform licenses that music, so it won't be muted. Caption to paste:\n\n"
-                f"<code>{esc(caption_for(post))[:3500]}</code>")})
+                f"<code>{esc(caption_for(post))[:3500]}</code>"))
         log(f"{verdict}: {key}")
     for data in weeks.values():
         save_week(data)

@@ -1,0 +1,43 @@
+# Telegram listener — answers your ✅/❌/🎵 taps within seconds and starts the autopilot `tick` run right away,
+# instead of waiting for GitHub's best-effort schedule. One job runs ~5h45m, then starts the next one.
+# It only reads Telegram and starts runs: decisions are still applied by autopilot (automation/listener.py).
+name: listener
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"   # fallback: if the chain ever breaks, the next scheduled run restarts it
+
+concurrency:
+  group: listener           # one listener at a time; a scheduled run waits in line instead of doubling up
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  actions: write            # start autopilot runs
+
+jobs:
+  listen:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 355
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      LISTEN_MINUTES: "345"
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: automation/listener.py
+          sparse-checkout-cone-mode: false
+
+      - name: Listen
+        run: |
+          [ -n "$TELEGRAM_BOT_TOKEN" ] || { echo "Telegram secrets not set"; exit 0; }
+          python3 automation/listener.py
+
+      - name: Start the next listener
+        if: always()
+        run: gh workflow run listener.yml --repo "${{ github.repository }}" --ref "${{ github.ref_name }}" || true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
