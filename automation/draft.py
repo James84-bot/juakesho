@@ -614,6 +614,7 @@ def can_afford(est_in: int, est_out: int, model: str | None = None, slack: float
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 GEMINI_MODELS = ["gemini-flash-latest", "gemini-flash-lite-latest"]   # tried in order; set JUA_GEMINI_MODEL to pin one
 GEMINI_CRITIC = "gemini-flash-lite-latest"
+GEMINI_THINK_ROOM = 8192   # tokens a thinking model may spend before it writes the reply
 GEMINI_LIMITS = {"out": 16000, "calls": 18, "pause": 13.0}   # free tier: a few requests a minute, a small daily quota
 
 
@@ -652,7 +653,9 @@ def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
     for m in models:
         body = json.dumps({"systemInstruction": {"parts": [{"text": system}]},
                            "contents": [{"role": "user", "parts": [{"text": user}]}],
-                           "generationConfig": {"maxOutputTokens": max_tokens, "temperature": 0.8}}).encode()
+                           # Gemini's thinking counts toward the output budget: leave room for it on top of the reply
+                           "generationConfig": {"maxOutputTokens": min(max_tokens + GEMINI_THINK_ROOM, 65536),
+                                                "temperature": 0.8}}).encode()
         req = urllib.request.Request(GEMINI_URL.format(model=m), data=body, method="POST", headers={
             "x-goog-api-key": key, "Content-Type": "application/json", "Accept": "application/json"})
         for attempt in range(4):
