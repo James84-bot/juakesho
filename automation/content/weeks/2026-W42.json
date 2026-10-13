@@ -391,13 +391,70 @@
       "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d7-glasspoll-r3-photo.jpg",
       "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0",
       "decided_at": "2026-10-13T04:49:36.484054+03:00"
+    },
+    {
+      "id": "2026-w42-hot-1013",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 6,
+      "kicker": "Electricity consumers",
+      "line": "Tokens run out instantly if you owe Kenya Power 50 bob, but state ministries owe them *Sh7.35 billion*.",
+      "fact": "Government ministries and state departments owe Kenya Power Sh7.35 billion in unpaid electricity bills.",
+      "source": "Daily Nation, Oct 13, 2026: Govt debt to Kenya Power rises to Sh7.35 billion",
+      "photo_query": "electric power lines Kenya",
+      "message": "Wananchi get disconnected over small debts while government departments pile up Sh7.35 billion in unpaid power bills.",
+      "action": "Ask your MP to demand state ministries clear their Sh7.35bn power debt",
+      "who": "Energy CS Opiyo Wandayi",
+      "where": "National",
+      "when": "13 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "caption": "Your power gets cut off for 50 shillings. Meanwhile, government offices owe Kenya Power Sh7.35 billion and the lights stay on. Who ends up footing the bill through higher tariffs? Kenyans are asking.\n\nTag your MP: when are state ministries settling their power bills?\n\n#KenyaPower #FollowTheMoney #KenyansAreAsking",
+      "beats": [
+        "Miss Sh50 and tokens *cut off*.",
+        "Meanwhile in government offices...",
+        "Unpaid power bills hit *Sh7.35bn*.",
+        "Yet their lights stay on.",
+        "Ordinary Kenyans foot the difference.",
+        "Ask your MP to demand *settlement*."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-13T18:30:00+03:00",
+      "hot": true,
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 6,
+        "action": 6,
+        "fair": 8,
+        "avg": 7.6,
+        "note": "Strong relatable hook, but make the action a specific parliamentary committee tag or demand instead of a generic MP call."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1013-photo.jpg",
+      "photo_credit": "Photo: CT Cooper / Wikimedia, CC BY 3.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/w/index.php?curid=20744347",
+      "reel": true,
+      "tg_msg": 140
     }
   ],
   "scripts": {
-    "radio": "Hamjambo listeners, this is Kenyans Are Asking, where we keep track of promises, public money, and power.\n\nFirst, on youth and employment: over one hundred thousand comrades leave our universities every single year, stepping directly into an economy that demands experience but offers zero pay. Despite official pledges guaranteeing paid internships, thousands of graduates remain trapped in unpaid labor. Free work is not employment, and policy delivery must match political rhetoric.\n\nOver at the Central Bank, however, a promise was delivered. The CBK has modernized government bond trading by launching a dealer-led platform, improving transparency and opening up local debt markets. It proves that when institutional focus is present, targets can be met.\n\nFinally, amid renewed political chatter about extending the presidential term limit, let us be clear on the law. No politician and no Parliament can alter presidential term limits through a routine legislative vote. Under Article 255 of our Constitution, any amendment affecting the term of office of the President requires an approval by the people through a national referendum. The final say does not belong to politicians; it belongs to you.\n\nKwa ufupi: Zaidi ya wahitimu laki moja wanakabiliwa na kazi za bure licha ya ahadi za kulipwa. Benki Kuu imezindua mfumo mpya wa biashara ya bondi kama ilivyoahidi. Na kuhusu wanaopanga kuongeza muda wa urais, Katiba inasema wazi—hakuna mbunge anayeweza kubadilisha hilo bila kura ya maoni kutoka kwa wananchi wenyewe. Stay informed, stay vigilant.",
-    "voice_note": "Habari yenu, quick accountability update from Kenyans Are Asking this week.\n\nFirst, do not be misled by political chatter about MPs extending presidential term limits. The Constitution is unequivocal: altering the presidential term cannot be done within Parliament alone. Under Article 255, it mandates a direct national referendum. The ultimate decision rests with the Kenyan voter, not legislators in Nairobi.\n\nOn the job market, over one hundred thousand comrades graduate annually into unpaid internships, despite high-level commitments to deliver paid placements. Real talent cannot run on empty promises.\n\nOn the flip side, Central Bank has kept its word, modernizing bond trading through a dealer-led market to make public borrowing more transparent.\n\nHead over to our Glasspoll today and vote on whether presidential terms should stay at five years or change. Let us know what you think.",
-    "sms": "Usiibiwe: MPs cannot quietly extend presidential terms. Article 255 requires a mandatory national referendum. Your vote alone decides constitutional changes.",
-    "reels": "Can Parliament quietly change the presidential term limit? The short answer is no. Whatever political trial balloons are floated, Article 255 of the Constitution settles the matter. No bill, no coalition, and no majority in Parliament can alter the term of office of the President on their own. It legally mandates a national referendum. The power belongs to you at the ballot, not politicians in boardroom deals."
+    "radio": "Habari zenu listeners, and welcome back to Kenyans Are Asking. Picture this: you delay paying your electricity bill by just a few days, maybe owing a mere five hundred or one thousand shillings. What happens? Kenya Power technicians show up, ladder in hand, and you are plunged into darkness. No negotiations. Now, look at the other side of town. Government ministries, departments, and agencies currently owe Kenya Power a staggering 7.35 billion shillings in unpaid electricity bills. Seven point three five billion! Yet, their offices remain brightly lit and air-conditioned, while ordinary taxpayers cover the shortfall. Why does Kenya Power pursue wananchi with ruthless efficiency while treating state defaulters with kid gloves? When government institutions refuse to clear their bills, it chokes utility operations, and those financial gaps are quietly passed back to us through higher tariffs and inflated charges. Accountability cannot be a one-way street. If a mama mboga must pay upfront or sit in darkness, state offices that receive annual budget allocations for utilities must do the same. No more double standards. Kwa ufupi: Wananchi wanazimiwa stima mara moja kwa madeni madogo, ilhali idara za serikali zinarundika madeni ya shilingi bilioni saba nukta tatu tano bila kukatiwa. Hii si haki. Ni lazima mashirika ya serikali yalipe bili zao za stima kama raia wengine wote.",
+    "voice_note": "Hey everyone, check this out. If you or your neighbour owe Kenya Power even five hundred shillings, they climb the pole and disconnect you before sunset. No second chances. But right now, government departments and state agencies are sitting on unpaid electricity bills totalling 7.35 billion shillings. 7.35 billion! Their lights stay on, air conditioners humming, while ordinary wananchi bear the brunt of higher tariffs to cover those deficits. Why are there two sets of rules? One for the struggling citizen and another for government offices that already receive taxpayer funds budgeted for utilities? Let us demand fairness. Share this note with your circles—if wananchi must pay on time, the government must clear its bills too.",
+    "sms": "Usiibiwe: KPLC cuts your power over Sh500 while state agencies owe Sh7.35B. Demand leaders account for utility budgets. Equal rules for all!",
+    "reels": "You owe Kenya Power a thousand shillings, and your lights go off before sunset. But government agencies owe that same power company over 7.35 billion shillings, and their offices stay fully lit. Why are ordinary Kenyans punished for small debts while state offices pile up billions on our tab? It is time public institutions paid their bills like everyone else."
   },
   "spend_usd": 3.0807,
   "revision": 3
