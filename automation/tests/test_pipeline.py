@@ -913,6 +913,14 @@ class ExpiryTests(TempWeeks):
         data = pl.load_week("2026-W41")
         self.assertEqual(pl.apply_decision(data, "old", True), [])   # a late ✅ can't revive it
 
+
+class HotSpacingTests(unittest.TestCase):
+    def test_hot_post_moves_clear_of_a_planned_post(self):
+        base = pl.dt.datetime(2026, 10, 14, 18, 30, tzinfo=pl.EAT)
+        posts = [{"publish_at": base.isoformat(), "status": "approved"}]
+        self.assertEqual(pl._clear_of(base, posts), base.replace(hour=20))
+        self.assertEqual(pl._clear_of(base, [{"publish_at": base.isoformat(), "status": "rejected"}]), base)
+
 if __name__ == "__main__":
     unittest.main()
 
