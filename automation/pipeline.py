@@ -199,6 +199,15 @@ def _anniversaries(posts: list[dict], year: int, wk: int) -> None:
 HOT = {"time": (18, 30), "template": "sauti", "min_lead": dt.timedelta(hours=3)}
 
 
+def _clear_of(when: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timedelta(minutes=90)) -> dt.datetime:
+    """Two posts close together split the audience: move the hot post until it is `gap` from every other post."""
+    taken = [dt.datetime.fromisoformat(p["publish_at"]) for p in posts
+             if p.get("publish_at") and p.get("status") not in {"rejected", "expired", "missed"}]
+    while any(abs(when - t) < gap for t in taken):
+        when += dt.timedelta(minutes=30)
+    return when
+
+
 def hot_slot(mock: bool = False) -> str | None:
     """Daily: one extra post that reacts to today's biggest Kenyan story, out the same evening.
     Adds a planned Sauti post to this week's file (made if missing); returns the week label, or None if today's
@@ -221,6 +230,7 @@ def hot_slot(mock: bool = False) -> str | None:
     when = dt.datetime(today.year, today.month, today.day, *HOT["time"], tzinfo=EAT)
     if when - now() < HOT["min_lead"]:   # late start: give the owner time to approve
         when = (now() + HOT["min_lead"]).replace(second=0, microsecond=0)
+    when = _clear_of(when, data["posts"])
     data["posts"].append({"id": hot_id, "template": HOT["template"], "bg": "usiku", "lane": "everyone",
                           "publish_at": when.isoformat(), "status": "planned", "hot": True})
     save_week(data)
