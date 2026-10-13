@@ -39,7 +39,7 @@
       ],
       "bg": "usiku",
       "publish_at": "2026-10-19T07:30:00+03:00",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -69,7 +69,8 @@
         "1": "#F8F7F6"
       },
       "reel": true,
-      "tg_msg": 148
+      "tg_msg": 148,
+      "decided_at": "2026-10-14T01:35:11.943110+03:00"
     },
     {
       "id": "2026-w43-d2-promise",
@@ -108,7 +109,7 @@
       ],
       "bg": "usiku",
       "publish_at": "2026-10-20T12:45:00+03:00",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -140,7 +141,8 @@
         "1": "#F8F7F6"
       },
       "reel": true,
-      "tg_msg": 149
+      "tg_msg": 149,
+      "decided_at": "2026-10-14T01:35:11.204645+03:00"
     },
     {
       "id": "2026-w43-d3-promise",
@@ -179,7 +181,7 @@
       ],
       "bg": "usiku",
       "publish_at": "2026-10-21T18:30:00+03:00",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -211,7 +213,8 @@
         "1": "#FFFFFF"
       },
       "reel": true,
-      "tg_msg": 150
+      "tg_msg": 150,
+      "decided_at": "2026-10-14T01:35:10.381885+03:00"
     },
     {
       "id": "2026-w43-d4-glasspoll",
@@ -243,7 +246,7 @@
       "bg": "usiku",
       "publish_at": "2026-10-22T19:30:00+03:00",
       "size": "story",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -275,7 +278,8 @@
         "1": "#F8F7F6"
       },
       "reel": true,
-      "tg_msg": 151
+      "tg_msg": 151,
+      "decided_at": "2026-10-14T01:35:09.607454+03:00"
     },
     {
       "id": "2026-w43-d5-promise",
@@ -311,7 +315,7 @@
       "caption": "Kenya Power reports that unpaid electricity bills have surged to *Ksh.41.5 billion*. Meanwhile, ordinary homes get disconnected the minute tokens run out. \n\nWhat are we doing about these massive debts? 👇🏾\n\nSend this to someone tired of token prepaid costs.\n\n#KenyansAreAsking #DevelopmentTracker",
       "bg": "shuka",
       "publish_at": "2026-10-23T17:00:00+03:00",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -341,7 +345,8 @@
         "3": "#F8F7F6"
       },
       "reel": true,
-      "tg_msg": 158
+      "tg_msg": 158,
+      "decided_at": "2026-10-14T01:35:07.286539+03:00"
     },
     {
       "id": "2026-w43-d6-promise",
@@ -380,7 +385,7 @@
       ],
       "bg": "chai",
       "publish_at": "2026-10-24T11:00:00+03:00",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -412,7 +417,8 @@
         "1": "#0E0C0B"
       },
       "reel": true,
-      "tg_msg": 152
+      "tg_msg": 152,
+      "decided_at": "2026-10-14T01:35:08.810133+03:00"
     },
     {
       "id": "2026-w43-d7-glasspoll",
@@ -444,7 +450,7 @@
       "bg": "usiku",
       "publish_at": "2026-10-25T18:00:00+03:00",
       "size": "story",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -471,7 +477,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/w/index.php?curid=20744347",
       "reel": true,
-      "tg_msg": 153
+      "tg_msg": 153,
+      "decided_at": "2026-10-14T01:35:08.043249+03:00"
     }
   ],
   "scripts": {
