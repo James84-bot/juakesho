@@ -35,7 +35,8 @@ PAID = re.compile(r"\b(getty|afp|reuters|associated press|ap photo|shutterstock|
 STOP = set("""a an the and or of in on at to for from by with as is are was were be been this that these those
 it its into over after before about against amid says said new more most than then they them their his her he she
 we our you your who what when where why how not no will would could should may might has have had do does did
-kenya kenyan kenyans nairobi county national government week today year years""".split())
+kenya kenyan kenyans nairobi county national government week today year years work works annually every
+many still only also just like make made take back says calls call wants want plan plans""".split())
 NS = {"media": "http://search.yahoo.com/mrss/", "content": "http://purl.org/rss/1.0/modules/content/"}
 _FEED_CACHE: dict[str, list[dict]] = {}
 
@@ -171,9 +172,9 @@ def score(item: dict, surname: str, words: list[str]) -> int:
     """How surely this report is about the post's story. 0 = not about it.
     With a person: the report names them AND shares a subject word. Without: three subject words."""
     hay = f"{item['title']} {item['text']}".lower()
-    hits = sum(1 for w in words if w[:6] in hay)
-    if surname:
-        return hits + 3 if surname in hay and hits >= 1 else 0
+    hits = sum(1 for w in words if (w[:5] if len(w) >= 6 else w) in hay)   # 'senate' ~ 'senator'
+    if surname:   # the person AND two subject words: a leader is in many stories, only one is this one
+        return hits + 3 if surname in hay and hits >= 2 else 0
     return hits if hits >= 3 else 0
 
 

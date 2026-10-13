@@ -47,6 +47,13 @@ class Posted(unittest.TestCase):
         self.assertGreater(posted.score(self.items[0], s, w), 0)
         self.assertEqual(posted.score(self.items[1], s, w), 0)
 
+    def test_a_leader_in_another_story_is_not_a_match(self):
+        post = {"who": "President William Ruto", "message": "Over 100,000 comrades graduate annually into unpaid work "
+                "despite a promise of guaranteed paid internships."}
+        other = {"title": "Ruto mocks 'Shakahola Hospital', promises to fix Trans Nzoia health crisis", "text": ""}
+        s, w = posted.terms_for(post)
+        self.assertEqual(posted.score(other, s, w), 0)
+
     def test_picks_the_credited_photo_and_skips_agency_ones(self):
         got_urls = []
 
