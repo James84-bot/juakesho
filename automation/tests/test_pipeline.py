@@ -964,6 +964,17 @@ class PhotoSwapTests(TempWeeks):
         self.assertEqual(p["status"], "awaiting")
         self.assertIn("reply to that post", self.sent[-1][1]["text"])
 
+    def test_posted_photo_is_credited_and_agency_photo_refused(self):
+        p = self.intake("chanzo @StateHouseKenya https://x.com/StateHouseKenya/status/1")
+        self.assertEqual((p["status"], p["photo_use"]), ("drafted", "posted"))
+        self.assertEqual(p["photo_rights_credit"], "Photo: @StateHouseKenya")
+        self.assertIn("📷 Photo: @StateHouseKenya", pl.caption_for({**p, "caption": "c", "photo_credit": p["photo_rights_credit"]}))
+
+    def test_agency_photo_is_refused(self):
+        p = self.intake("chanzo Reuters/Monicah Mwangi")
+        self.assertEqual(p["status"], "awaiting")
+        self.assertIn("agency photo", self.sent[-1][1]["text"])
+
     def test_card_says_which_photo_it_carries(self):
         p = dict(pl.load_week("2026-W41")["posts"][0], caption="c")
         self.assertIn("Symbolic photo", pl._preview_text(p))

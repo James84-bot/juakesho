@@ -36,13 +36,15 @@ slot (you get one note); you never have to reject old cards.
 - **Live hashtags**: matching trending hashtags (including the people's accountability tags) are added to captions
   automatically.
 - **Photos** (`photos.py`), in this order:
-  1. **Your photo**: reply to a post's card with a photo whose caption starts `yangu` (you took it) or
-     `ruhusa @who (how they agreed)`. The post is redone with it and a new card comes back in minutes.
+  1. **Your photo of the day**: reply to a post's card with a photo whose caption starts `yangu` (you took it),
+     `ruhusa @who (how they agreed)`, or `chanzo @who https://link` (already posted online: credited to whoever
+     posted it, used for news and commentary). Agency photos (Getty, AFP, Reuters, AP...) are refused: they bill
+     for reuse. The post is redone with the photo and a new card comes back in minutes.
   2. **The event itself**: a licensed photo (CC0 / public domain / CC BY / CC BY-SA, credited) of that story,
      taken in the days around it, found on Wikimedia Commons. The named office holder may be in it; a
      stranger's face may not fill the frame.
   3. **Symbolic**: a real Kenyan place or object that stands for the story, or a landmark when nothing fits.
-  Every card says which one it carries. TV and newspaper photos are never used without the owner's permission.
+  Every card says which one it carries; the credit goes on the design and in the caption.
 
 ### Formats (calendar.json)
 Sauti ya Mwananchi · Set It Straight · Follow the Money · Promise Tracker · Chapter Six Test · scam alerts ·
