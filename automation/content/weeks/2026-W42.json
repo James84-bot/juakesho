@@ -76,7 +76,7 @@
       ],
       "bg": "shuka",
       "publish_at": "2026-10-13T12:45:00+03:00",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -104,7 +104,8 @@
       "ink": {
         "1": "#FFFFFF"
       },
-      "reel": true
+      "reel": true,
+      "decided_at": "2026-10-13T05:31:30.416809+03:00"
     },
     {
       "id": "2026-w42-d3-promise-r3",
