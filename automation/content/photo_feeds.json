@@ -4,15 +4,18 @@
     {
       "name": "KBC",
       "url": "https://www.kbc.co.ke/feed/",
-      "official": true
+      "official": true,
+      "pages": 6
     },
     {
       "name": "Capital FM",
-      "url": "https://capitalfm.africa/news/feed/"
+      "url": "https://capitalfm.africa/news/feed/",
+      "pages": 6
     },
     {
       "name": "Capital FM Politics",
-      "url": "https://capitalfm.africa/news/category/politics/feed/"
+      "url": "https://capitalfm.africa/news/category/politics/feed/",
+      "pages": 6
     },
     {
       "name": "Kenyans.co.ke",
