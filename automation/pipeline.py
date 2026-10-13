@@ -1186,8 +1186,8 @@ def _main(argv: list[str] | None = None) -> int:
         collect()   # pick up clips you just sent
     if a.command in {"clips", "clipwork"}:
         process_clips(dry_run=a.dry_run)
-    if a.command == "metacheck":
-        meta_check(dry_run=a.dry_run)
+    if a.command == "metacheck" and not meta_check(dry_run=a.dry_run):
+        return 1   # a failed check shows on the run page too, with the reason
     if a.command == "reels":
         send_reels(a.week or current_week_label(ahead=0), dry_run=a.dry_run)
     if a.command == "photocheck":   # searches this week's photo queries again and explains each result (state/photos.log)
