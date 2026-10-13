@@ -135,12 +135,14 @@ def _shouting(texts: list[str] | str) -> str:
 
 W5_TEMPLATES = {"sauti", "straight", "promise", "money", "scorecard", "kumbuka", "tazama"}
 
-# Trending hashtags we never ride. We are with the people, not the government: accountability and protest tags
-# (#RutoMustGo, #Wantam, #RejectFinanceBill, #OccupyParliament, #EndAbductions) are fine. What we never carry:
-#   PR for any politician ("...Delivers", "ni tutam", "iko mbele", "imara": someone's paid campaign), and
-#   personal insults ("tapeli", "conman", "mwizi": that is name-calling and the defamation risk sits with us).
-PARTISAN_TAG = re.compile(r"delivers|tutam|ikombele|iko ?mbele|imara|tosha|forever|"
-                          r"tapeli|conman|mwizi|wezi|thief|thieves|liar|murderer|killer|traitor|msaliti", re.I)
+# Trending hashtags we never ride. We take no side: no tag for or against a politician or party, whoever's it is.
+#   For: PR for any politician ("...Delivers", "ni tutam", "iko mbele", "imara": someone's campaign).
+#   Against: campaigns to remove or reject a person ("...MustGo", "Wantam", "OneTerm"), and mocking nicknames.
+#   Personal insults ("tapeli", "conman", "mwizi": name-calling, and the defamation risk sits with us).
+# Issue tags (#FinanceBill2026, #HousingLevy, #EndAbductions) are fine: they name what people search, not a side.
+PARTISAN_TAG = re.compile(r"delivers|tutam|ikombele|iko ?mbele|imara|tosha|forever|mustgo|must ?go|mustfall|wantam|"
+                          r"one ?term|oneterm|kasongo|zakayo|riggy|wanjiku ?sacco|uda ?ni|odm ?ni|ruto ?out|raila ?out|"
+                          r"gachagua ?out|tapeli|conman|mwizi|wezi|thief|thieves|liar|murderer|killer|traitor|msaliti", re.I)
 
 SWAHILI_FILLERS = ["wueh", "aki", "bana", "mambo ni mengi", "hii nchi", "kwani ni kesho", "manze", "si ndio",
                    "very normal country", "we move"]
@@ -332,6 +334,14 @@ def check(post: dict) -> Report:
         for f in ("side", "tone"):
             if not post.get(f):
                 rep.errors.append(f"no `{f}`: every post says {'side: government, opposition, both or none' if f == 'side' else 'tone: credit, criticism or explainer'}")
+    if "message" in post and not post.get("n") and tpl in W5_TEMPLATES - {"kumbuka", "tazama"}:
+        imp = str(post.get("impact") or "").strip()
+        if not imp:
+            rep.errors.append("no `impact`: say in one sentence what this changes for an ordinary Kenyan (pocket, services, rights, safety or vote)")
+        elif len(imp) > 140:
+            rep.errors.append(f"'impact' is {len(imp)} chars (max 140)")
+        elif re.search(r"\b(affects (all|every)|all of us|everyone|every kenyan)\b", imp, re.I) and not re.search(r"\d", imp):
+            rep.errors.append("'impact' is vague: name who is affected and how, with a number if the record has one")
     if len(str(post.get("event_query") or "")) > 60:
         rep.errors.append("'event_query' is over 60 characters: name the person and the occasion, 2-5 words")
     if post.get("side") is not None and post.get("side") not in {"government", "opposition", "both", "none"}:

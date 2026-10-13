@@ -283,9 +283,10 @@ SOUND LIKE KENYANS ONLINE (KOT, Kenyan TikTok, the WhatsApp group)
   in the comments ("Have you seen this money anywhere?", "Tag your MP."). One topical hashtag in Kenyan-trend style
   (#HousingLevy, #FinanceBill2027), plus #KenyansAreAsking. Max three.
 - Use the words Kenyans are typing this week: name people, places and events the way they search them ("Uhuru",
-  "Kericho helicopter crash", "Hustler Fund"). Use the live hashtags from LIVE RADAR when the post is about them,
-  including the people's accountability and protest tags (#RutoMustGo, #Wantam, #RejectFinanceBill). Never a
-  politician's PR tag (#...Delivers, "ni tutam", "iko mbele") and never a personal insult (#Tapeli..., "conman").
+  "Kericho helicopter crash", "Hustler Fund"). Use the live hashtags from LIVE RADAR when the post is about them
+  and they name the issue (#FinanceBill2026, #HousingLevy, #EndAbductions). We take no side: never a tag for a
+  politician (#...Delivers, "ni tutam", "iko mbele") or against one (#...MustGo, #Wantam, #OneTerm, mocking
+  nicknames), and never a personal insult (#Tapeli..., "conman").
 - Never corporate: no "we're excited to share", "stay tuned", "don't miss", "let us know your thoughts",
   "engage", "check out". Never mock how ordinary Kenyans speak or write. Never laughing emojis on deaths or pain.
 
@@ -301,7 +302,7 @@ WHERE KENYANS ARE (research, 2026) AND WHAT WINS THERE
 - English by default. A full Kiswahili post only when the story itself is in Kiswahili (a quote, a rally line);
   then write it the way a native speaker would, not translated English.
 
-FAIR, NOT NEUTRAL (accountability with no bias)
+NO SIDE TAKEN, ONE STANDARD (accountability with no bias)
 - One standard for everyone: the government, the opposition, governors, MPs, MCAs, the church in politics. Who holds
   the office never changes the test.
 - Applaud what is genuinely good, with receipts: a kept promise, a finished road, a good law, a public officer doing the
@@ -313,6 +314,18 @@ FAIR, NOT NEUTRAL (accountability with no bias)
 - The opposition gets the same treatment: their false claims, their divisive talk, their own past records in office.
 - Every post states `side`: "government" | "opposition" | "both" | "none", and `tone`: "credit" | "criticism" | "explainer".
   Across a week, aim for both sides held to account and at least one credit where it is earned.
+
+NEWS AS IT HAPPENS, AND WHAT IT MEANS FOR KENYANS (every post)
+- We analyse the news, we don't repeat it. Each post answers in order: what happened (who, where, when), why it
+  matters, and what it changes for an ordinary Kenyan: their pocket, services, rights, safety or vote, in numbers
+  where the record has them ("Sh2 more per litre", "1.2 million farmers wait for payment", "your SHA claim now
+  takes 90 days").
+- `impact` (max 140 chars): that effect on ordinary Kenyans in one plain sentence, concrete and sourced. Never
+  vague ("this affects all of us"). It goes in the caption as "What it means for you: ...".
+- When a story is contested, give each side's position in its own words and judge only by the record. Our voice
+  never adopts any side's slogans or labels ("regime", "hustler nation", "dynasties", "wantam", "tutam").
+- No side taken: the same story told about the other side's leader would read the same. If we cannot say what
+  it changes for Kenyans, it is not a post.
 
 THE MESSAGE AND THE BEST ACTION (every post)
 - A Kenyan must get it in one look: what happened, why it touches their pocket, rights, safety or vote, and what
@@ -812,10 +825,11 @@ MOCK_SAMPLES = {
 }
 
 
-for _s in MOCK_SAMPLES.values():   # every civic post declares its side and tone (guard requires them)
+for _s in MOCK_SAMPLES.values():   # every civic post declares side, tone and what it means for Kenyans
     if "message" in _s:
         _s.setdefault("side", "government")
         _s.setdefault("tone", "criticism")
+        _s.setdefault("impact", "Taxpayers fund it: Sh1 billion a year that could pay 2,000 nurses.")
 
 
 def mock_draft(slots: list[dict]) -> dict:
@@ -852,6 +866,8 @@ CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio.
   decorative scene scores low; a concrete, real scene that IS the message scores high)
 - demand: is this a story Kenyans are on right now (high in WHAT KENYA IS ON), or a deadline/anniversary that
   matters? A topic nobody is talking about scores low however well it is written
+- impact: does it say plainly, with numbers where they exist, what this changes for an ordinary Kenyan (pocket,
+  services, rights, safety, vote)? Repeating the headline without its effect on people scores low
 - fair: would the same post read the same if the other side had done it? credit and criticism both with receipts,
   sarcasm at the decision or record, never an insult or our own verdict of guilt
 - action: does a Kenyan know exactly what to do next (where, how, by when), and is it real, legal and peaceful?
@@ -859,7 +875,7 @@ CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio.
 - hold: would they read or watch to the end? do the `beats` build like a short video (hook, receipt, stakes,
   sting, action)? any paragraph-length text scores low
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
-{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n, "fair": n,
+{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n, "fair": n, "impact": n,
              "note": "the single most important fix, in one sentence"}]}"""
 
 
@@ -886,7 +902,7 @@ def critique(posts: list[dict]) -> dict[str, dict]:
             print(f"  critic batch skipped: {e}")
     out = {}
     for s in scores:
-        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold", "demand", "action", "fair")
+        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold", "demand", "action", "fair", "impact")
         vals = [float(s[k]) for k in keys if isinstance(s.get(k), (int, float))] or [0.0]
         out[s.get("id")] = {**{k: s.get(k) for k in keys}, "avg": round(sum(vals) / len(vals), 1), "note": s.get("note", "")}
     return out

@@ -693,6 +693,8 @@ def _preview_text(p: dict) -> str:
     lines = [f"<b>{esc(p['id'])}</b> · {esc(p['template'])} · lane: {esc(str(p.get('lane', '-')))}", f"🕒 {when} EAT"]
     if p.get("message"):
         lines += [f"🎯 <i>{esc(p['message'])}</i>" + (f"  ({esc(p['symbol'])})" if p.get("symbol") else "")]
+    if p.get("impact"):
+        lines += [f"💡 {esc(p['impact'])}"]
     if p.get("action"):
         lines += [f"👉 <b>{esc(p['action'])}</b>"]
     if p.get("side") or p.get("tone"):
@@ -1040,6 +1042,11 @@ def caption_for(post: dict) -> str:
     for old in ("#JuaKesho", "#KenyansAreAsking"):   # drafts written before the rename carry the old tag
         if tag and old != tag:
             cap = cap.replace(old, tag)
+    imp = str(post.get("impact") or "").strip()
+    if imp and imp.lower()[:30] not in cap.lower():   # what the news changes for Kenyans, above the action
+        tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
+        body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
+        cap = f"{body.rstrip()}\n\nWhat it means for you: {imp}{tail}"
     act = str(post.get("action") or "").strip()
     if act and act.lower()[:30] not in cap.lower():
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)

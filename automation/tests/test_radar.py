@@ -59,5 +59,8 @@ class Hashtags(unittest.TestCase):
         self.assertTrue(any("never our tags" in e for e in rep.errors))
         protest = draft.boost_hashtags([{"id": "c", "template": "sauti", "line": "Ruto signs the Finance Bill",
                                          "caption": "Read the receipts. #KenyansAreAsking"}], live=["#RutoMustGo"])
-        self.assertIn("#RutoMustGo", protest[0]["caption"])   # the people's accountability tags are ours to use
-        self.assertFalse(guard.PARTISAN_TAG.search("#RejectFinanceBill2027") or guard.PARTISAN_TAG.search("#Wantam"))
+        self.assertNotIn("#RutoMustGo", protest[0]["caption"])   # no side: no tag against a leader either
+        for tag in ("#Wantam", "#OneTermPresident", "#RutoMustGo", "#RutoDelivers", "#Tutam"):
+            self.assertTrue(guard.PARTISAN_TAG.search(tag), tag)
+        for tag in ("#RejectFinanceBill2027", "#HousingLevy", "#EndAbductions", "#KerichoHelicopterCrash"):
+            self.assertFalse(guard.PARTISAN_TAG.search(tag), tag)   # issue tags name what people search
