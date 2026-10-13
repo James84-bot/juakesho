@@ -318,10 +318,18 @@ def plan(label: str) -> dict:
 # ---------------------------------------------------------------------------
 # 2. Draft
 # ---------------------------------------------------------------------------
-def draft(label: str, mock: bool = False) -> dict:
+DRAFT_AHEAD = dt.timedelta(days=4, hours=12)   # Sunday writes Mon-Thu; Wednesday writes Fri-Sun: news stays fresh
+
+
+def draft(label: str, mock: bool = False, horizon: dt.timedelta | None = DRAFT_AHEAD) -> dict:
     import draft as drafter
     data = load_week(label)
     todo = [p for p in data["posts"] if p["status"] == "planned"]
+    if horizon is not None and not mock:   # a carousel's slides share one slot, so they stay together
+        later = [p["id"] for p in todo if dt.datetime.fromisoformat(p["publish_at"]) - now() > horizon]
+        todo = [p for p in todo if p["id"] not in later]
+        if later:
+            log(f"written closer to their slot (midweek run): {later}")
     if not todo:
         log("nothing to draft")
         return data
@@ -329,6 +337,8 @@ def draft(label: str, mock: bool = False) -> dict:
     drafter.TAKEN = [p for p in data["posts"] if p["status"] not in {"planned", "rejected", "missed"}]
     drafted, scripts = drafter.draft_week(label, todo, lanes, mock=mock)
     data_spend = round(drafter.SPEND["usd"], 4)
+    for p in drafted:
+        p.setdefault("drafted_at", now().isoformat())
     by_id = {p["id"]: p for p in drafted}
     data["posts"] = [by_id.get(p["id"], p) for p in data["posts"]]
     data["scripts"] = scripts or data.get("scripts", {})
@@ -855,6 +865,59 @@ def apply_decision(data: dict, key: str, approve: bool | str) -> list[str]:
             p["decided_at"] = now().isoformat()
             changed.append(p["id"])
     return changed
+
+
+FRESH_WINDOW = dt.timedelta(hours=30)   # check a post this long before its slot
+FRESH_RULES = """You check whether a social media post written days ago is still true and still timely TODAY,
+against today's Kenyan headlines. Outdated means: the story moved on (the project was finished, the bill passed or
+was withdrawn, the official resigned, a court ruled, the deadline passed), a number or date in it is now wrong, or
+it reads as old news next to what Kenyans are talking about now. A post that is still accurate is fine even if the
+story is quiet. Return ONLY JSON: {"verdict": "ok" | "outdated", "reason": "one sentence, specific"}"""
+
+
+def freshness_check(dry_run: bool = False) -> list[str]:
+    """Posts written ahead get one check against today's news ~a day before they go out. Outdated ones are held
+    (never published stale) and redrafted by the run that follows, so a fresh card reaches you in time."""
+    import draft as drafter
+    try:
+        import news
+        headlines = news.prompt_block()
+    except Exception:
+        headlines = ""
+    held = []
+    for f in sorted(WEEKS.glob("*.json"))[-2:]:
+        data = json.loads(f.read_text(encoding="utf-8"))
+        changed = False
+        for p in data["posts"]:
+            if p["status"] not in {"approved", "awaiting"} or p.get("hot") or p.get("n") or p.get("fresh_checked") \
+                    or p.get("template") == "tazama":
+                continue
+            due = dt.datetime.fromisoformat(p["publish_at"]) - now()
+            written = dt.datetime.fromisoformat(p.get("drafted_at") or data.get("created") or now().isoformat())
+            if not (dt.timedelta(0) < due <= FRESH_WINDOW) or now() - written < dt.timedelta(hours=20):
+                continue
+            body = json.dumps({k: p.get(k) for k in ("message", "impact", "action", "caption", "who", "where", "when",
+                                                        "promise", "reality", "claim", "fact", "line", "question", "verdict")
+                               if p.get(k)}, ensure_ascii=False)
+            try:
+                reply = drafter.extract_json(drafter.call_claude(FRESH_RULES, f"TODAY: {now():%A %d %B %Y}\n{headlines}\n\nPOST:\n{body}",
+                                                                 max_tokens=400))
+            except Exception as e:
+                log(f"freshness check skipped for {p['id']}: {str(e)[:120]}")
+                continue
+            p["fresh_checked"] = now().isoformat()
+            changed = True
+            if str(reply.get("verdict", "ok")).lower() == "outdated" and not dry_run:
+                why = str(reply.get("reason", "the story has moved on"))[:200]
+                p["status"] = "needs_human"
+                p.setdefault("guard", {}).setdefault("errors", []).append(f"outdated: {why}")
+                held.append(p["id"])
+                _notify(f"⏱ <b>{_esc(p['id'])}</b> was held: it went stale since it was written ({_esc(why)}). "
+                        "A fresh version is being written now and comes back for ✅.")
+        if changed:
+            save_week(data)
+    log(f"freshness: {held or 'all still current'}")
+    return held
 
 
 def expire_unanswered() -> list[str]:
@@ -1452,7 +1515,8 @@ def _main(argv: list[str] | None = None) -> int:
         if rephoto(label) and not a.dry_run:
             _notify(f"🖼 New photos for <b>{label}</b> coming up (same words). Buttons on the older cards no longer do anything.")
     if a.command in {"week", "tracker", "hot", "redo", "draft", "remake"}:
-        draft(label, mock=a.mock)
+        # only the weekly run writes ahead in two halves; a batch you asked for, a redo or today's post is written now
+        draft(label, mock=a.mock, horizon=DRAFT_AHEAD if a.command == "week" else None)
     if a.command in {"week", "tracker", "hot", "redo", "render", "remake", "rephoto"}:
         render_week(label)
     if a.command in {"week", "tracker", "hot", "redo", "ask", "remake", "rephoto"}:
@@ -1461,6 +1525,11 @@ def _main(argv: list[str] | None = None) -> int:
         collect()
     if a.command == "tick":
         expire_unanswered()
+        if not a.dry_run:
+            try:   # posts written days ahead are checked against today's news before they go out
+                freshness_check()
+            except Exception as e:
+                log(f"freshness check failed: {e}")
         if not a.dry_run:
             try:   # keep 6 days of Kenyan news reports, so each post can find its story's photo
                 import posted

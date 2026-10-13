@@ -346,7 +346,7 @@ class RedoTests(TempWeeks):
         with mock.patch.object(pl, "tg", lambda *a, **k: {"ok": True}):
             note = pl.held_summary(pl.load_week("2026-W40"))
             self.assertIn("53 chars", note)
-            with mock.patch.object(pl, "draft", lambda label, mock=False: None), \
+            with mock.patch.object(pl, "draft", lambda label, mock=False, **kw: None), \
                     mock.patch.object(pl, "render_week", lambda label: None), \
                     mock.patch.object(pl, "ask", lambda label, dry_run=False: None), \
                     mock.patch.object(pl, "current_week_label", lambda: "2026-W41"):
@@ -1029,6 +1029,54 @@ class TrackerTests(TempWeeks):
             errs = guard.check({"template": "promise", "verdict": v}).errors
             self.assertFalse(any(e.startswith("'verdict' must be one of") for e in errs), errs)
         self.assertTrue(any(e.startswith("'verdict' must be one of") for e in guard.check({"template": "promise", "verdict": "x"}).errors))
+
+
+class TimelinessTests(TempWeeks):
+    def test_weekly_run_writes_only_the_next_few_days(self):
+        t = pl.now()
+        self.week([{"id": "soon", "template": "sauti", "status": "planned", "publish_at": (t + pl.dt.timedelta(days=2)).isoformat()},
+                   {"id": "later", "template": "sauti", "status": "planned", "publish_at": (t + pl.dt.timedelta(days=6)).isoformat()}])
+        import draft as drafter
+        seen = []
+        with mock.patch.object(drafter, "draft_week", lambda label, todo, lanes, mock=False: (seen.extend(p["id"] for p in todo) or
+                                                                                          [dict(p, status="drafted") for p in todo], {})):
+            pl.draft("2026-W41")
+        self.assertEqual(seen, ["soon"])
+        posts = {p["id"]: p for p in pl.load_week("2026-W41")["posts"]}
+        self.assertEqual((posts["soon"]["status"], posts["later"]["status"]), ("drafted", "planned"))
+        self.assertIn("drafted_at", posts["soon"])
+
+    def test_stale_post_is_held_before_it_goes_out(self):
+        t = pl.now()
+        old = (t - pl.dt.timedelta(days=5)).isoformat()
+        self.week([{"id": "a", "template": "promise", "status": "approved", "publish_at": (t + pl.dt.timedelta(hours=10)).isoformat(),
+                    "drafted_at": old, "message": "The Kitale market is still stalled."},
+                   {"id": "b", "template": "sauti", "status": "approved", "publish_at": (t + pl.dt.timedelta(hours=12)).isoformat(),
+                    "drafted_at": old, "message": "Still true."},
+                   {"id": "c", "template": "sauti", "status": "approved", "publish_at": (t + pl.dt.timedelta(days=3)).isoformat(),
+                    "drafted_at": old, "message": "Not due yet."}])
+        import draft as drafter
+        answers = {"The Kitale": '{"verdict": "outdated", "reason": "The market was opened on 20 Oct."}'}
+        calls = []
+
+        def judge(system, user, max_tokens=400, model=None):
+            calls.append(user)
+            return next((v for k, v in answers.items() if k in user), '{"verdict": "ok", "reason": ""}')
+        with mock.patch.object(drafter, "call_claude", judge), mock.patch.object(pl, "_notify", lambda t: None):
+            self.assertEqual(pl.freshness_check(), ["a"])
+            self.assertEqual(pl.freshness_check(), [])   # each post is checked once
+        posts = {p["id"]: p for p in pl.load_week("2026-W41")["posts"]}
+        self.assertEqual(posts["a"]["status"], "needs_human")
+        self.assertTrue(posts["a"]["guard"]["errors"][-1].startswith("outdated:"))
+        self.assertEqual(posts["b"]["status"], "approved")
+        self.assertEqual(len(calls), 2)   # c is not due yet
+
+    def test_written_ahead_post_cannot_say_today(self):
+        import guard
+        errs = guard.check({"template": "sauti", "message": "MPs vote today on the fuel levy."}).errors
+        self.assertTrue(any("'today'" in e for e in errs))
+        self.assertFalse(any("'today'" in e for e in guard.check({"template": "sauti", "hot": True,
+                                                                    "message": "MPs vote today on the fuel levy."}).errors))
 
 if __name__ == "__main__":
     unittest.main()

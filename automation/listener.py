@@ -8,7 +8,7 @@ inside a GitHub Actions job for ~5h45m at a time (free on a public repo) and:
   * starts the autopilot `tick` run right away (taps a few seconds apart share one run);
   * acknowledges clips and photos you send (the tick run makes the Reel or swaps the post's picture);
   * keeps the clock for the daily hot post (09:05 EAT) and Sunday's new week (17:00 EAT); the autopilot's own
-    schedule stays as a backup, and both commands are safe to run twice;
+    schedule stays as a backup, and the commands are safe to run twice; Wednesday's run writes Friday-Sunday;
   * starts `tick` the moment an approved post is due, so it publishes on time instead of whenever the
     schedule wakes up (a post that is too late is skipped as missed, so this matters).
 
@@ -89,7 +89,7 @@ def schedule() -> list[tuple[str, float]]:
     return out
 
 
-CLOCK = (("hot", None, 6, 5), ("week", 6, 14, 0))   # (command, weekday Mon=0 or None for daily, UTC hour, minute)
+CLOCK = (("hot", None, 6, 5), ("week", 6, 14, 0), ("this-week", 2, 14, 0))   # Wed 17:00 EAT: write Fri-Sun   # (command, weekday Mon=0 or None for daily, UTC hour, minute)
 
 
 def clock_due(utc, fired: set[str]) -> list[str]:

@@ -13,7 +13,10 @@ Handle **@kenyansareasking** · hashtag **#KenyansAreAsking**.
 GitHub Actions (free, in the cloud)
   Listener (always on)  answers your taps in seconds, starts the run that saves them, and starts publishing
                         the moment an approved post is due (listener.yml, restarts itself every ~6 hours)
-  Sunday 17:00 EAT      plan next week → research → draft → check → editor scores → design → Reels → Telegram
+  Sunday 17:00 EAT      plan next week; write Mon-Thu → check → editor scores → design → Reels → Telegram
+  Wednesday 17:00 EAT   write Fri-Sun, close to their slots
+  ~A day before a slot  posts written days ahead are re-checked against today's news; stale ones are held and
+                        rewritten for a fresh ✅ (a stale post is never published)
   Daily 09:05 EAT       trend radar to Telegram + one hot post on the day's biggest story
   Backup schedule       autopilot's own cron repeats the above if the listener is ever down
 You (Telegram)          ✅ approve · ❌ reject · 🎵 post it yourself · reply/hide comments · send clips
