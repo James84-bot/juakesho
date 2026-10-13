@@ -132,6 +132,13 @@ def _live_items() -> list[dict]:
     for f in json.loads(FEEDS.read_text(encoding="utf-8"))["feeds"]:
         try:
             got = parse_feed(_get(f["url"]), f["name"], bool(f.get("official")))
+            # WordPress feeds page backwards (?paged=2): reach the last few days, not just the last few hours
+            for n in range(2, int(f.get("pages", 1)) + 1):
+                try:
+                    sep = "&" if "?" in f["url"] else "?"
+                    got += parse_feed(_get(f"{f['url']}{sep}paged={n}"), f["name"], bool(f.get("official")))
+                except Exception:
+                    break
             items += got
             _note(f"  feed {f['name']}: {len(got)} items, {sum(1 for x in got if x['img'])} with an image")
         except Exception as e:
