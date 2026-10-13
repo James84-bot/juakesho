@@ -985,6 +985,24 @@ class PhotoSwapTests(TempWeeks):
         self.assertIn("Symbolic photo", pl._preview_text(p))
         self.assertIn("from the event", pl._preview_text({**p, "photo_kind": "event"}))
 
+
+class WriterFallbackTests(unittest.TestCase):
+    def test_busy_gemini_tries_next_model_then_claude(self):
+        import io
+        import urllib.error
+        import draft as drafter
+        tried = []
+
+        def busy(req, timeout=300):
+            tried.append(req.full_url.split("/models/")[1].split(":")[0])
+            raise urllib.error.HTTPError(req.full_url, 503, "busy", {}, io.BytesIO(b'{"error":"high demand"}'))
+        with mock.patch.dict(os.environ, {"GEMINI_API_KEY": "g", "ANTHROPIC_API_KEY": "a", "JUA_GEMINI_MODEL": "", "JUA_PROVIDER": ""}), \
+                mock.patch.object(drafter.urllib.request, "urlopen", busy), mock.patch.object(drafter.time, "sleep", lambda s: None), \
+                mock.patch.object(drafter, "_anthropic", lambda *a, **k: "from claude"), \
+                mock.patch.dict(drafter.SPEND, {"calls": 0}):
+            self.assertEqual(drafter.call_claude("s", "u", 100), "from claude")
+        self.assertEqual(sorted(set(tried)), sorted(drafter.GEMINI_MODELS))
+
 if __name__ == "__main__":
     unittest.main()
 
