@@ -89,16 +89,45 @@ def parse_feed(xml: bytes, name: str, official: bool = False) -> list[dict]:
         if not img and enc is not None and str(enc.get("type", "")).startswith("image/"):
             img = enc.get("url", "")
         img = img or _img_from_html(body) or _img_from_html(desc)
-        text = re.sub(r"<[^>]+>", " ", html.unescape(desc))[:600]
+        text = re.sub(r"<[^>]+>", " ", html.unescape(desc))[:300]
         out.append({"title": title, "link": link, "when": _when(it.findtext("pubDate")), "img": img,
                     "credit": credit.strip(), "text": text, "outlet": name, "official": official})
     return out
 
 
-def feed_items() -> list[dict]:
-    """Every item from every feed that answers (cached for the run)."""
-    if "all" in _FEED_CACHE:
-        return _FEED_CACHE["all"]
+ARCHIVE = HERE / "state" / "feed_photos.json"
+KEEP = dt.timedelta(days=6)
+
+
+def _load_archive() -> list[dict]:
+    try:
+        rows = json.loads(ARCHIVE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    for r in rows:
+        r["when"] = dt.datetime.fromisoformat(r["when"]) if r.get("when") else None
+    return rows
+
+
+def collect() -> int:
+    """Reads every feed and adds new reports to a rolling 6-day archive (state/feed_photos.json), so a story
+    from three days ago is still findable after it has scrolled off the live feeds. Run on every tick."""
+    now = dt.datetime.now(dt.timezone.utc)
+    rows = {r["link"]: r for r in _load_archive() if r["when"] is None or now - r["when"] <= KEEP}
+    before = len(rows)
+    for item in _live_items():
+        rows.setdefault(item["link"], item)
+    keep = sorted(rows.values(), key=lambda r: r["when"] or now, reverse=True)[:800]
+    ARCHIVE.parent.mkdir(parents=True, exist_ok=True)
+    ARCHIVE.write_text(json.dumps([{**r, "when": r["when"].isoformat() if r["when"] else ""} for r in keep],
+                                  ensure_ascii=False), encoding="utf-8")
+    _FEED_CACHE.pop("all", None)
+    return len(rows) - before
+
+
+def _live_items() -> list[dict]:
+    if "live" in _FEED_CACHE:
+        return _FEED_CACHE["live"]
     items = []
     for f in json.loads(FEEDS.read_text(encoding="utf-8"))["feeds"]:
         try:
@@ -107,8 +136,18 @@ def feed_items() -> list[dict]:
             _note(f"  feed {f['name']}: {len(got)} items, {sum(1 for x in got if x['img'])} with an image")
         except Exception as e:
             _note(f"  feed {f['name']} failed: {str(e)[:100]}")
-    _FEED_CACHE["all"] = items
+    _FEED_CACHE["live"] = items
     return items
+
+
+def feed_items() -> list[dict]:
+    """Live feed items plus the 6-day archive, one per link (cached for the run)."""
+    if "all" not in _FEED_CACHE:
+        rows = {r["link"]: r for r in _load_archive()}
+        for item in _live_items():
+            rows[item["link"]] = item
+        _FEED_CACHE["all"] = list(rows.values())
+    return _FEED_CACHE["all"]
 
 
 def terms_for(post: dict) -> tuple[str, list[str]]:

@@ -1,5 +1,5 @@
 {
-  "note": "Where the system looks for a photo already posted of the day's story (posted.py). Official sources are tried first. A feed that fails is skipped; `photocheck` reports which ones answered. Removed after the first live check: The Star (404), Citizen Digital (400), Kenya News Agency (its site's TLS certificate is broken; re-add when fixed).",
+  "note": "Where the system looks for a photo already posted of the day's story (posted.py). Official sources are tried first. A feed that fails is skipped; `photocheck` reports which ones answered. Removed after the first live check: The Star (404), Citizen Digital (400), People Daily (broken XML), Kenya News Agency (its site's TLS certificate is broken; re-add when fixed).",
   "feeds": [
     {
       "name": "KBC",
@@ -17,10 +17,6 @@
     {
       "name": "Kenyans.co.ke",
       "url": "https://www.kenyans.co.ke/feeds/news"
-    },
-    {
-      "name": "People Daily",
-      "url": "https://www.pd.co.ke/feed/"
     },
     {
       "name": "The Standard",
