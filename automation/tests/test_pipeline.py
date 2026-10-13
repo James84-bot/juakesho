@@ -1003,6 +1003,33 @@ class WriterFallbackTests(unittest.TestCase):
             self.assertEqual(drafter.call_claude("s", "u", 100), "from claude")
         self.assertEqual(sorted(set(tried)), sorted(drafter.GEMINI_MODELS))
 
+
+class TrackerTests(TempWeeks):
+    def test_tracker_turns_next_week_into_project_checks(self):
+        ids = pl.tracker("2026-W43")
+        posts = pl.load_week("2026-W43")["posts"]
+        checks = [p for p in posts if p["template"] == "promise"]
+        polls = [p for p in posts if p["template"] == "glasspoll"]
+        self.assertEqual(len(ids), len(posts))
+        self.assertEqual({p["angle"] for p in checks}, {"done", "stalled", "ignored", "diverted"})
+        self.assertTrue(all(p["series"] == "Development Tracker" and p["status"] == "planned" for p in posts))
+        self.assertTrue(polls and all(p["angle"] == "tracker_poll" for p in polls))
+        self.assertEqual(len({p["id"] for p in posts}), len(posts))
+
+    def test_tracker_never_replans_a_week_with_decisions(self):
+        pl.tracker("2026-W43")
+        data = pl.load_week("2026-W43")
+        data["posts"][0]["status"] = "approved"
+        pl.save_week(data)
+        self.assertEqual(pl.tracker("2026-W43"), [])
+
+    def test_new_verdicts_pass_the_guard(self):
+        import guard
+        for v in ("ignored", "diverted"):
+            errs = guard.check({"template": "promise", "verdict": v}).errors
+            self.assertFalse(any(e.startswith("'verdict' must be one of") for e in errs), errs)
+        self.assertTrue(any(e.startswith("'verdict' must be one of") for e in guard.check({"template": "promise", "verdict": "x"}).errors))
+
 if __name__ == "__main__":
     unittest.main()
 

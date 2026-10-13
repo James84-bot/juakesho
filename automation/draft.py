@@ -431,7 +431,7 @@ SERIES = {
     "kesho": "Kesho Kutwa slide: one coming change in Kenya (a bill, a tax, a deadline, an election date): `leo` (where it stands today), `kesho` (what it will mean for us), `anza` (what to do now: read it, comment in public participation, register). Sourced.",
     "poll": "Your Say story poll: a question anyone can answer with 2 options.",
     "straight": "Set It Straight: a false or demeaning claim about Kenya/Africa (or a viral falsehood), answered with sourced facts. `claim` quoted exactly (max 120), `who` said it (max 44, e.g. 'a viral TikTok, May 2026'), `claim_source` where exactly, `verdict` false|misleading|missing_context, `truth` the headline fact (max 70), `proof` 2-3 short facts, `pride` a proud closing line (max 50), `source` for the facts. If a public office holder said it: `who` = 'Name, Office (where, date)', optional `person_photo` (commons:File:...) + `person_role`.",
-    "promise": "Promise Tracker: one specific, checkable promise by a named public office holder, quoted exactly (`promise`), `who` = 'Name, Office', `said` where and when (e.g. 'Kenya Kwanza manifesto, 2022'), `verdict` kept|partly|stalled|broken judged ONLY from official or reputable records, optional `measure` (max 16 chars, e.g. '0 of 6', '12%'), `reality` what the record shows, `proof` 1-3 sourced facts, `ask` the accountability question (max 60). `source` required, with every document. Judge every side by the same standard. Optional licensed `person_photo` + `person_role`.",
+    "promise": "Promise Tracker: one specific, checkable promise by a named public office holder, quoted exactly (`promise`), `who` = 'Name, Office', `said` where and when (e.g. 'Kenya Kwanza manifesto, 2022'), `verdict` kept|partly|stalled|broken|ignored|diverted judged ONLY from official or reputable records, optional `measure` (max 16 chars, e.g. '0 of 6', '12%'), `reality` what the record shows, `proof` 1-3 sourced facts, `ask` the accountability question (max 60). `source` required, with every document. Judge every side by the same standard. Optional licensed `person_photo` + `person_role`.",
     "sauti": "Sauti ya Mwananchi (the people's voice, our signature format): a real photo fills the post. `kicker` who is talking, in English (max 24, e.g. 'Taxpayers', 'Students', 'Gen Z', 'Parents', 'Boda riders'), `line` the headline: what Kenyans are already thinking, in our voice, with one *marker* on the words that hit hardest and a sarcastic turn (max 120), `fact` the one sourced fact that proves it (max 150), `source` required, `photo_query` required (a real Kenyan scene that IS the feeling).",
     "kumbuka": "Hatutasahau (We won't forget): one documented event where the state harmed Kenyans (protest killings, abductions, goons, deaths in custody). `date` (e.g. '25 June 2024'), `event` headline with one *marker* (max 100), `facts` 1-3 attributed facts (KNCHR, IPOA, courts, reputable media), `status` what accountability has followed (max 110), `ask` closing line (max 50, e.g. 'Hatutasahau.'), `source` with every link. Symbolic `photo_query` (candles, Kenyan flag, Parliament), never a crowd.",
     "scorecard": "The Chapter Six Test: one leader or serious 2027 candidate (any side) measured against Chapter Six of the Constitution and their record. `who` name (max 40), `office` current office or seat sought (max 50), `checks` 3-5 of {test (max 40, e.g. 'Kept their key promise', 'Court cases', 'Divisive statements', 'Shows up in the House'), result pass|fail|unclear, note (max 80, the evidence)}, `verdict` one line (max 70, never 'vote for/against'), `source` for every check. Same tests for every side. Optional licensed `person_photo` + `person_role`.",
@@ -541,6 +541,22 @@ ANGLES = {
                "delivered: a kept promise, a finished project, a good law, money accounted for. Receipts required "
                "(the official record or two reputable outlets). Promise template: verdict 'kept'. Still end with the next "
                "question (\"Now do the same for ...\") and the action."),
+    "done": ("DEVELOPMENT TRACKER, DONE: one public project or promise that was actually completed AND is in use "
+             "(a road, hospital, market, water project, law in force), named and located, with the record that proves it "
+             "is finished and working. Promise template, verdict 'kept', tone credit. Impact: who now benefits and how much."),
+    "stalled": ("DEVELOPMENT TRACKER, STALLED: one public project that started, took money, and stopped: name, place, year "
+                "it started, money spent, how far it got (`measure` e.g. '40% done' or 'since 2019'). Verdict 'stalled'. "
+                "Impact: what people still go without, in numbers. Action: the real office to ask, by name."),
+    "ignored": ("DEVELOPMENT TRACKER, IGNORED: one thing promised, budgeted, ordered by a court or recommended by the "
+                "Auditor-General or a parliamentary committee that was never started or acted on. Verdict 'ignored'. "
+                "Quote the promise or order exactly with where and when. Impact and the office to ask."),
+    "diverted": ("DEVELOPMENT TRACKER, DIVERTED: public money moved away from what it was budgeted for (supplementary "
+                 "budget cuts, reallocations, money the Auditor-General could not trace) only as the official record says "
+                 "it. Verdict 'diverted'. Name the budget line, the amount, from what to what. Impact: what that money was "
+                 "meant to buy for Kenyans. Never call it theft unless a court or EACC has."),
+    "tracker_poll": ("DEVELOPMENT TRACKER POLL: ask about one public project or service people can judge from their own "
+                     "life this week (e.g. 'Has the affordable housing project in your county started?' A Yes / B No). "
+                     "Never about who to vote for."),
     "opposition": ("SAME STANDARD: hold the opposition (an opposition leader, party or opposition-led county) to account: "
                    "something false, divisive, stalled, or a promise of theirs against their own record. Receipts required. "
                    "If they genuinely did something right this week, say that instead."),

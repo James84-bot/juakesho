@@ -275,6 +275,35 @@ def _calendar_posts(label: str) -> list[dict]:
     return posts
 
 
+TRACKER_ANGLES = ["done", "stalled", "ignored", "diverted", "stalled"]   # one of each, plus a second stalled
+
+
+def tracker(label: str) -> list[str]:
+    """Development Tracker week: every planned post becomes a project check (done, stalled, ignored or money
+    diverted), the polls ask about a project people can see. Only a week nobody has decided anything in."""
+    data = load_week(label) if week_file(label).exists() else {"collection": label, "created": now().isoformat(),
+                                                                "posts": _calendar_posts(label), "scripts": {}}
+    if any(p["status"] not in {"planned", "drafted", "rendered", "needs_human"} for p in data["posts"]):
+        log(f"tracker {label}: posts already sent or decided; not replanning")
+        return []
+    angles = iter(TRACKER_ANGLES)
+    out = []
+    for p in data["posts"]:
+        if p.get("group"):
+            continue
+        if p["template"] == "glasspoll":
+            p.update(angle="tracker_poll", series="Development Tracker")
+        else:
+            p.update(template="promise", angle=next(angles, "stalled"), series="Development Tracker",
+                     id=re.sub(r"-d(\d)-[a-z]+$", r"-d\1-promise", p["id"]))
+        p["status"] = "planned"
+        out.append(p)
+    data["posts"] = out
+    save_week(data)
+    log(f"tracker {label}: {[(p['id'], p.get('angle')) for p in out]}")
+    return [p["id"] for p in out]
+
+
 def plan(label: str) -> dict:
     if week_file(label).exists():
         log(f"{label} already planned, keeping it")
@@ -1351,7 +1380,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenyans Are Asking autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -1365,7 +1394,7 @@ def _main(argv: list[str] | None = None) -> int:
             learn()
         except Exception as e:
             log(f"learn skipped: {e}")
-    if a.command in {"week", "hot", "trends", "news", "remake", "radar"} and not a.mock:
+    if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "radar"} and not a.mock:
         try:
             import trends
             t = trends.collect()
@@ -1401,6 +1430,10 @@ def _main(argv: list[str] | None = None) -> int:
         label = hot_slot(a.mock)
         if not label:
             return 0
+    if a.command == "tracker":   # next week as a Development Tracker batch, drafted and sent now
+        label = a.week or current_week_label(ahead=1)
+        if not tracker(label):
+            return 0
     if a.command in {"week", "plan"}:
         plan(label)
     if a.command == "redo":
@@ -1418,11 +1451,11 @@ def _main(argv: list[str] | None = None) -> int:
         label = a.week or current_week_label(ahead=0)
         if rephoto(label) and not a.dry_run:
             _notify(f"🖼 New photos for <b>{label}</b> coming up (same words). Buttons on the older cards no longer do anything.")
-    if a.command in {"week", "hot", "redo", "draft", "remake"}:
+    if a.command in {"week", "tracker", "hot", "redo", "draft", "remake"}:
         draft(label, mock=a.mock)
-    if a.command in {"week", "hot", "redo", "render", "remake", "rephoto"}:
+    if a.command in {"week", "tracker", "hot", "redo", "render", "remake", "rephoto"}:
         render_week(label)
-    if a.command in {"week", "hot", "redo", "ask", "remake", "rephoto"}:
+    if a.command in {"week", "tracker", "hot", "redo", "ask", "remake", "rephoto"}:
         ask(label, dry_run=a.dry_run)
     if a.command in {"tick", "collect"} and not a.dry_run:
         collect()

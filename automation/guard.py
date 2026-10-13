@@ -69,7 +69,7 @@ CHOICES = {
     "ukweli": {"verdict": {"uongo", "ukweli", "kiasi"}},
     "cap": {"verdict": {"cap", "nocap", "kinda"}},
     "straight": {"verdict": {"false", "misleading", "missing_context"}},
-    "promise": {"verdict": {"kept", "partly", "stalled", "broken"}},
+    "promise": {"verdict": {"kept", "partly", "stalled", "broken", "ignored", "diverted"}},
 }
 FACT_TEMPLATES = {"africa", "hapa", "usiibiwe", "kesho", "pov", "cap", "spotlight", "money", "straight", "promise", "sauti",
                   "kumbuka", "scorecard"}

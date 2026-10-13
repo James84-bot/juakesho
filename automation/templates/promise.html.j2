@@ -1,9 +1,10 @@
 {#- Promise Tracker — a public office holder's promise vs the record.
-    Fields: who (name + office), promise (quoted exactly), said (where/when), verdict (kept|partly|stalled|broken),
+    Fields: who (name + office), promise (quoted exactly), said (where/when), verdict (kept|partly|stalled|broken|ignored|diverted),
             measure? (short, e.g. "0 of 6", "12%"), reality, proof (1-3), ask (the accountability question), source -#}
 {% extends "base.html.j2" %}
 {% set S = {"kept": ("Kept", "var(--chai-600)", "#fff"), "partly": ("Partly kept", "var(--ink-50)", "var(--ink-950)"),
-            "stalled": ("Stalled", "var(--shuka-200)", "var(--ink-950)"), "broken": ("Broken", "var(--shuka-600)", "#fff")}[verdict] %}
+            "stalled": ("Stalled", "var(--shuka-200)", "var(--ink-950)"), "broken": ("Broken", "var(--shuka-600)", "#fff"),
+            "ignored": ("Ignored", "var(--ink-900)", "#fff"), "diverted": ("Money diverted", "var(--shuka-700)", "#fff")}[verdict] %}
 {% block style %}
 .has-photo { --ph: 460px; }
 .promise { font-size: {{ fitw('“' ~ promise ~ '”', 936, 4, 76 if photo_uri is not defined else 62) }}px; }
@@ -15,7 +16,7 @@
 .rows .row { font-size: 27px; padding: 16px 0; }
 .ask { margin-top: 24px; color: var(--accent); }
 {% endblock %}
-{% block top %}<span class="tag">Promise Tracker</span><span class="meta">{{ context_line or (person_role if person_shown is defined and person_role is defined else 'On the record') }}</span>{% endblock %}
+{% block top %}<span class="tag">{{ series if series is defined and series else "Promise Tracker" }}</span><span class="meta">{{ context_line or (person_role if person_shown is defined and person_role is defined else 'On the record') }}</span>{% endblock %}
 {% block content %}
   <p class="label">The promise</p>
   <h1 class="display promise">&ldquo;{{ promise }}&rdquo;</h1>
