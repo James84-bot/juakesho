@@ -1,4 +1,12 @@
-commons 'Mombasa port containers' for 2026-w42-d2-money-r2: 13 found, 13 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-commons 'Nairobi open air market' for 2026-w42-d3-promise-r2: 25 found, 19 usable, dropped {'size': 3, 'licence': 0, 'place': 3, 'subject': 0}
-commons 'University of Nairobi campus' for 2026-w42-d4-sauti-r2: 25 found, 1 usable, dropped {'size': 24, 'licence': 0, 'place': 0, 'subject': 0}
-commons 'Kenya National Assembly' for 2026-w42-d7-glasspoll-r2: 25 found, 23 usable, dropped {'size': 2, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'National Treasury Nairobi' for 2026-w42-d2-money-r3: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'National Treasury' for 2026-w42-d2-money-r3: 25 found, 0 usable, dropped {'size': 1, 'licence': 0, 'place': 24, 'subject': 0}
+openverse 'National Treasury Nairobi' for 2026-w42-d2-money-r3: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+openverse 'National Treasury' for 2026-w42-d2-money-r3: 20 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 20, 'subject': 0}
+commons 'Kenyan shilling banknotes' for 2026-w42-d2-money-r3: 13 found, 10 usable, dropped {'size': 3, 'licence': 0, 'place': 0, 'subject': 0}
+photo for 2026-w42-d2-money-r3: nothing for 'National Treasury Nairobi', used 'Kenyan shilling banknotes'
+commons 'ballot box Kenya' for 2026-w42-d4-sauti-r3: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'ballot box' for 2026-w42-d4-sauti-r3: 25 found, 0 usable, dropped {'size': 4, 'licence': 0, 'place': 21, 'subject': 0}
+openverse 'ballot box Kenya' for 2026-w42-d4-sauti-r3: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+openverse 'ballot box' for 2026-w42-d4-sauti-r3: 20 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 20, 'subject': 0}
+commons 'Kenyan shilling banknotes' for 2026-w42-d4-sauti-r3: 13 found, 10 usable, dropped {'size': 3, 'licence': 0, 'place': 0, 'subject': 0}
+photo for 2026-w42-d4-sauti-r3: nothing for 'ballot box Kenya', used 'Kenyan shilling banknotes'
