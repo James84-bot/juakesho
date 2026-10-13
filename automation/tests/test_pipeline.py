@@ -14,7 +14,8 @@ from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import posted as _posted  # noqa: E402
-_posted.feed_items = lambda: []   # tests never read live news feeds
+_posted._live_items = lambda: []                  # tests never read live news feeds
+_posted.ARCHIVE = Path("/nonexistent/feed_photos.json")   # ...nor the bot's real archive
 
 HERE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(HERE))
