@@ -76,5 +76,21 @@ class Posted(unittest.TestCase):
         self.assertEqual(meta["credit"], "Photo: Kenyans.co.ke / John Doe")
 
 
+    def test_archive_keeps_reports_after_they_leave_the_live_feed(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(posted, "ARCHIVE", Path(d) / "a.json"):
+            now = dt.datetime.now(dt.timezone.utc)
+            fresh = [dict(self.items[0], when=now - dt.timedelta(days=2)), dict(self.items[1], when=now - dt.timedelta(days=9))]
+            posted._FEED_CACHE.clear()
+            with mock.patch.object(posted, "_live_items", lambda: fresh):
+                self.assertEqual(posted.collect(), 2)
+            posted._FEED_CACHE.clear()
+            with mock.patch.object(posted, "_live_items", lambda: []):
+                self.assertEqual(posted.collect(), 0)
+                links = [r["link"] for r in posted.feed_items()]
+            self.assertEqual(links, ["https://k.test/a"])   # the 9-day-old report aged out
+            posted._FEED_CACHE.clear()
+
+
 if __name__ == "__main__":
     unittest.main()

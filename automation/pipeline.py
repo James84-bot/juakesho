@@ -1380,6 +1380,12 @@ def _main(argv: list[str] | None = None) -> int:
         collect()
     if a.command == "tick":
         expire_unanswered()
+        if not a.dry_run:
+            try:   # keep 6 days of Kenyan news reports, so each post can find its story's photo
+                import posted
+                log(f"photo archive: {posted.collect()} new reports")
+            except Exception as e:
+                log(f"photo archive skipped: {e}")
     if a.command in {"tick", "publish"}:
         publish(dry_run=a.dry_run)
     if a.command in {"tick", "engage"} and not a.dry_run and meta_ready():
