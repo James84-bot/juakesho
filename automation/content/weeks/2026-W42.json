@@ -139,7 +139,7 @@
       ],
       "bg": "usiku",
       "publish_at": "2026-10-14T18:30:00+03:00",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -166,7 +166,8 @@
       "ink": {
         "1": "#F8F7F6"
       },
-      "reel": true
+      "reel": true,
+      "decided_at": "2026-10-13T04:49:39.829874+03:00"
     },
     {
       "id": "2026-w42-d4-sauti-r3",
@@ -196,7 +197,7 @@
       ],
       "bg": "usiku",
       "publish_at": "2026-10-15T19:30:00+03:00",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -220,7 +221,8 @@
       },
       "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d4-sauti-r3-photo.jpg",
       "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
-      "reel": true
+      "reel": true,
+      "decided_at": "2026-10-13T04:49:38.977241+03:00"
     },
     {
       "id": "2026-w42-d5-straight-r3",
@@ -254,7 +256,7 @@
       ],
       "bg": "usiku",
       "publish_at": "2026-10-16T17:00:00+03:00",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -277,7 +279,8 @@
       "trend": "#NandiFocus",
       "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d5-straight-r3-photo.jpg",
       "photo_credit": "Photo: Sir. Kevin Macharia / Wikimedia Commons, CC BY-SA 2.0",
-      "reel": true
+      "reel": true,
+      "decided_at": "2026-10-13T04:49:38.138355+03:00"
     },
     {
       "id": "2026-w42-d6-promise-r3",
@@ -313,7 +316,7 @@
       ],
       "bg": "chai",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -337,7 +340,8 @@
       },
       "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-promise-r3-photo.jpg",
       "photo_credit": "Photo: Arthur Buliva / Wikimedia Commons, CC BY-SA 3.0",
-      "reel": true
+      "reel": true,
+      "decided_at": "2026-10-13T04:49:37.372350+03:00"
     },
     {
       "id": "2026-w42-d7-glasspoll-r3",
@@ -363,7 +367,7 @@
       "bg": "usiku",
       "publish_at": "2026-10-18T18:00:00+03:00",
       "size": "story",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -384,7 +388,8 @@
         "note": "Good story poll timed perfectly with the Cherargei noise."
       },
       "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d7-glasspoll-r3-photo.jpg",
-      "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0"
+      "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0",
+      "decided_at": "2026-10-13T04:49:36.484054+03:00"
     }
   ],
   "scripts": {
