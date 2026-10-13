@@ -380,7 +380,7 @@ def rephoto(label: str) -> list[str]:
         p["id"] = _next_rev(old)
         if p.get("group"):
             p["group"] = groups.setdefault(p["group"], _next_rev(p["group"]))
-        for k in ("photo_file", "photo_credit", "photo_kind"):
+        for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet"):
             p.pop(k, None)
         p["status"] = "drafted"
         changed.append(p["id"])
@@ -708,6 +708,8 @@ def _preview_text(p: dict) -> str:
     kind = p.get("photo_kind")
     if kind == "event":
         lines += ["📷 Photo from the event itself (licensed)"]
+    elif kind == "posted":
+        lines += [f"📷 The day's photo, from {esc(str(p.get('photo_outlet') or 'the news report'))} (credited)"]
     elif kind == "yours":
         lines += ["📷 Posted photo, credited (news and commentary use)" if p.get("photo_use") == "posted" else "📷 Your photo"]
     elif p.get("photo_file") and p.get("template") != "tazama" and not p.get("group"):

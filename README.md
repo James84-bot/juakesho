@@ -40,10 +40,13 @@ slot (you get one note); you never have to reject old cards.
      `ruhusa @who (how they agreed)`, or `chanzo @who https://link` (already posted online: credited to whoever
      posted it, used for news and commentary). Agency photos (Getty, AFP, Reuters, AP...) are refused: they bill
      for reuse. The post is redone with the photo and a new card comes back in minutes.
-  2. **The event itself**: a licensed photo (CC0 / public domain / CC BY / CC BY-SA, credited) of that story,
+  2. **The event itself, openly licensed**: a photo (CC0 / public domain / CC BY / CC BY-SA, credited) of that story,
      taken in the days around it, found on Wikimedia Commons. The named office holder may be in it; a
      stranger's face may not fill the frame.
-  3. **Symbolic**: a real Kenyan place or object that stands for the story, or a landmark when nothing fits.
+  3. **The day's posted photo**: the lead photo of the news report of that story (Kenya News Agency and KBC
+     first, then Kenyan outlets: `content/photo_feeds.json`), found automatically, credited to the outlet and
+     photographer, used for news and commentary. Agency photos (Getty, AFP, Reuters, AP...) are skipped.
+  4. **Symbolic**: a real Kenyan place or object that stands for the story, or a landmark when nothing fits.
   Every card says which one it carries; the credit goes on the design and in the caption.
 
 ### Formats (calendar.json)

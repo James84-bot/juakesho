@@ -397,11 +397,19 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
         hit = _cached(out_dir, post["id"])
         if hit:
             return hit
-        if post.get("event_query") and post.get("template") in CIVIC_TEMPLATES | {"glasspoll"}:
+        if post.get("template") in CIVIC_TEMPLATES | {"glasspoll"} and not post.get("group"):
             try:
                 got = event_photo(post)
             except Exception as e:
                 _note(f"  event photo search failed for {post.get('id')}: {e}")
+                got = None
+            if got:
+                return _save(out_dir, post["id"], *got)
+            try:   # the photo already posted of the day's story (credited, news and commentary use)
+                import posted
+                got = posted.find(post)
+            except Exception as e:
+                _note(f"  posted-photo search failed for {post.get('id')}: {e}")
                 got = None
             if got:
                 return _save(out_dir, post["id"], *got)
@@ -503,6 +511,8 @@ def _attach(posts: list[dict], out_dir: Path) -> None:
             if got:
                 p["photo_file"], p["photo_credit"] = got["file"], got["credit"]
                 p["photo_kind"] = got.get("kind", "symbolic")
+                p["photo_outlet"] = got.get("outlet", "")
+                p["photo_source"] = p.get("photo_source") or got.get("url", "")
             else:
-                for k in ("photo_file", "photo_credit", "photo_kind"):
+                for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet"):
                     p.pop(k, None)

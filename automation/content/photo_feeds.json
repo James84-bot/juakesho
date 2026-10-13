@@ -1,0 +1,15 @@
+{
+  "note": "Where the system looks for a photo already posted of the day's story (posted.py). Official sources are tried first. A feed that fails is skipped; `photocheck` reports which ones answered.",
+  "feeds": [
+    {"name": "Kenya News Agency", "url": "https://www.kenyanews.go.ke/feed/", "official": true},
+    {"name": "KBC", "url": "https://www.kbc.co.ke/feed/", "official": true},
+    {"name": "Capital FM", "url": "https://capitalfm.africa/news/feed/"},
+    {"name": "Capital FM Politics", "url": "https://capitalfm.africa/news/category/politics/feed/"},
+    {"name": "Kenyans.co.ke", "url": "https://www.kenyans.co.ke/feeds/news"},
+    {"name": "The Star", "url": "https://www.the-star.co.ke/rss"},
+    {"name": "Citizen Digital", "url": "https://www.citizen.digital/rss"},
+    {"name": "People Daily", "url": "https://www.pd.co.ke/feed/"},
+    {"name": "The Standard", "url": "https://www.standardmedia.co.ke/rss/headlines.php"},
+    {"name": "Nation", "url": "https://nation.africa/kenya/rss.xml"}
+  ]
+}

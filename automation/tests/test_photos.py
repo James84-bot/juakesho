@@ -11,6 +11,10 @@ for _k in ("ANTHROPIC_API_KEY", "GEMINI_API_KEY"):   # AI keys never reach the t
 from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+import posted as _posted  # noqa: E402
+_posted.feed_items = lambda: []   # tests never read live news feeds
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import photos  # noqa: E402
 
 HIT = {"title": "Matatu in Nairobi", "tags": [{"name": "kenya"}], "license": "by", "license_version": "2.0",
