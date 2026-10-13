@@ -11,13 +11,16 @@ Handle **@kenyansareasking** · hashtag **#KenyansAreAsking**.
 
 ```
 GitHub Actions (free, in the cloud)
-  Sunday 17:00 EAT   plan next week → research → draft → check → editor scores → design → Reels → Telegram
-  Daily 09:05 EAT    trend radar to Telegram + one hot post on the day's biggest story
-  Every 2 hours      collect your taps → publish what's due → comments to answer → clips you sent
-You (Telegram)       ✅ approve · ❌ reject · 🎵 post it yourself · reply/hide comments · send clips
+  Listener (always on)  answers your taps in seconds, starts the run that saves them, and starts publishing
+                        the moment an approved post is due (listener.yml, restarts itself every ~6 hours)
+  Sunday 17:00 EAT      plan next week → research → draft → check → editor scores → design → Reels → Telegram
+  Daily 09:05 EAT       trend radar to Telegram + one hot post on the day's biggest story
+  Backup schedule       autopilot's own cron repeats the above if the listener is ever down
+You (Telegram)          ✅ approve · ❌ reject · 🎵 post it yourself · reply/hide comments · send clips
 ```
 
-Nothing is published, replied to or hidden without your tap.
+Nothing is published, replied to or hidden without your tap. A card you don't tap expires two hours after its
+slot (you get one note); you never have to reject old cards.
 
 ### What the writer knows before it writes
 - **What Kenya is on** (`demand.py`): stories ranked by outlets carrying them + live X trends + Kenyan TV clips

@@ -898,6 +898,21 @@ class HttpRetryTests(unittest.TestCase):
         self.assertEqual(sent, ["good"])
         self.assertEqual([p["status"] for p in data["posts"]], ["rendered", "awaiting"])
 
+
+class ExpiryTests(TempWeeks):
+    def test_untapped_card_expires_two_hours_after_its_slot(self):
+        t = pl.now()
+        self.week([{"id": "old", "status": "awaiting", "publish_at": (t - pl.dt.timedelta(hours=3)).isoformat()},
+                   {"id": "soon", "status": "awaiting", "publish_at": (t - pl.dt.timedelta(minutes=30)).isoformat()},
+                   {"id": "ok", "status": "approved", "publish_at": (t - pl.dt.timedelta(hours=5)).isoformat()}])
+        notes = []
+        with mock.patch.object(pl, "_notify", notes.append):
+            self.assertEqual(pl.expire_unanswered(), ["old"])
+        self.assertEqual([p["status"] for p in pl.load_week("2026-W41")["posts"]], ["expired", "awaiting", "approved"])
+        self.assertEqual(len(notes), 1)
+        data = pl.load_week("2026-W41")
+        self.assertEqual(pl.apply_decision(data, "old", True), [])   # a late ✅ can't revive it
+
 if __name__ == "__main__":
     unittest.main()
 

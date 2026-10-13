@@ -800,6 +800,12 @@ MOCK_SAMPLES = {
 }
 
 
+for _s in MOCK_SAMPLES.values():   # every civic post declares its side and tone (guard requires them)
+    if "message" in _s:
+        _s.setdefault("side", "government")
+        _s.setdefault("tone", "criticism")
+
+
 def mock_draft(slots: list[dict]) -> dict:
     """Offline stand-in for testing: reuses the launch posts for each template."""
     library = {}

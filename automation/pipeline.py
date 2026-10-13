@@ -51,6 +51,7 @@ EXPORTS = ROOT / "exports"
 EAT = dt.timezone(dt.timedelta(hours=3))
 BRAND = json.loads((HERE / "brand.json").read_text(encoding="utf-8"))
 MAX_PUBLISH_ATTEMPTS = 3
+EXPIRE_AFTER = dt.timedelta(hours=2)  # a card nobody tapped this long after its slot is dropped: no tap = no post
 LATE_LIMIT = dt.timedelta(hours=36)  # a post this late is marked "missed", never dumped out as a backlog
 META_KEYS = ("META_ACCESS_TOKEN", "META_PAGE_ID", "META_IG_USER_ID")
 
@@ -698,6 +699,26 @@ def apply_decision(data: dict, key: str, approve: bool | str) -> list[str]:
     return changed
 
 
+def expire_unanswered() -> list[str]:
+    """Cards you never tapped don't hang around: two hours after their slot they are marked 'expired' and
+    you get one note. Nothing is ever posted without your ✅."""
+    gone = []
+    for f in sorted(WEEKS.glob("*.json")):
+        data = json.loads(f.read_text(encoding="utf-8"))
+        hit = [p for p in data["posts"] if p["status"] == "awaiting"
+               and now() - dt.datetime.fromisoformat(p["publish_at"]) > EXPIRE_AFTER]
+        for p in hit:
+            p["status"] = "expired"
+        if hit:
+            save_week(data)
+            gone += sorted({p.get("group") or p["id"] for p in hit})
+    if gone:
+        log(f"expired (never approved): {gone}")
+        _notify("⌛ Not approved in time, so not posted: " + ", ".join(f"<b>{_esc(g)}</b>" for g in gone)
+                + ". Their buttons no longer do anything.")
+    return gone
+
+
 def _answer(cq_id: str, text: str) -> None:
     """Stops the button spinner. Telegram refuses answers to taps older than a few minutes; the decision
     still counts, so a refused answer is never an error (the listener usually answered it already)."""
@@ -743,6 +764,11 @@ def collect() -> None:
         data = weeks.setdefault(label, load_week(label))
         changed = apply_decision(data, key, "manual" if action == "m" else action == "a")
         verdict = {"a": "Approved ✅", "m": "Yours to post 🎵"}.get(action, "Rejected ❌")
+        if not changed:   # an expired, replaced or already-decided card
+            _answer(cq["id"], "This card is no longer active (expired or already decided).")
+            if action == "a":
+                _notify(f"ℹ️ That ✅ was on <b>{_esc(key)}</b>, which is no longer active (expired or already decided). Nothing was posted.")
+            continue
         _answer(cq["id"], f"{verdict} ({len(changed)})")
         if action == "a" and changed:   # the WhatsApp Channel and Status have no API: hand over a ready-to-paste version
             post = next(q for q in data["posts"] if q["id"] == changed[0])
@@ -1181,13 +1207,17 @@ def _main(argv: list[str] | None = None) -> int:
             log(f"radar: {len(r['x'])} X trends, {len(r['videos'])} clips, errors {r['errors'] or 'none'}")
         except Exception as e:
             log(f"radar skipped: {e}")
-    if a.command in {"hot", "radar"} and not a.mock and not a.dry_run:
+    sent_file = STATE / "radar_sent.txt"   # the hot run can start twice (listener + schedule): one radar a day
+    radar_done = a.command == "hot" and sent_file.exists() and sent_file.read_text().strip() == str(now().date())
+    if a.command in {"hot", "radar"} and not a.mock and not a.dry_run and not radar_done:
         try:   # the daily radar on Telegram: live hashtags and the clips Kenya is watching, with links
             import radar
             text = radar.telegram_text()
             if text:
                 tg("sendMessage", {"chat_id": need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"], "text": text,
                                    "parse_mode": "HTML", "disable_web_page_preview": "true"})
+                STATE.mkdir(parents=True, exist_ok=True)
+                sent_file.write_text(str(now().date()))
         except Exception as e:
             log(f"radar message skipped: {e}")
     if a.command == "hot":
@@ -1219,6 +1249,8 @@ def _main(argv: list[str] | None = None) -> int:
         ask(label, dry_run=a.dry_run)
     if a.command in {"tick", "collect"} and not a.dry_run:
         collect()
+    if a.command == "tick":
+        expire_unanswered()
     if a.command in {"tick", "publish"}:
         publish(dry_run=a.dry_run)
     if a.command in {"tick", "engage"} and not a.dry_run and meta_ready():

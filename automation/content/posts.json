@@ -36,7 +36,9 @@
       "action": "Check the levy lines on your payslip, then ask your MP what they bought",
       "who": "Parliament and the National Treasury",
       "where": "National",
-      "when": "Since Dec 2024"
+      "when": "Since Dec 2024",
+      "side": "none",
+      "tone": "explainer"
     },
     {
       "id": "01-hack-lecture-notes",
@@ -80,7 +82,9 @@
         "MP. Woman Rep. MCA.",
         "Know the job. *Then* pick the person."
       ],
-      "action": "Check you're registered: verify.iebc.or.ke or SMS your ID number to 70000"
+      "action": "Check you're registered: verify.iebc.or.ke or SMS your ID number to 70000",
+      "side": "none",
+      "tone": "explainer"
     },
     {
       "id": "02-decode-prompt",
@@ -116,7 +120,9 @@
         "You have a right to be heard.",
         "Read it. *Speak up.*"
       ],
-      "action": "Read the Bill on parliament.go.ke and send your view to the Finance Committee"
+      "action": "Read the Bill on parliament.go.ke and send your view to the Finance Committee",
+      "side": "none",
+      "tone": "explainer"
     },
     {
       "id": "03-cap-coding",
@@ -395,7 +401,9 @@
       "punch": "Phone imeibiwa? Files ziko salama.",
       "expr": "wink",
       "caption": "Cloud storage, explained the Kenyan way. Turn on Google Photos or iCloud backup today, then send this to the friend who lost everything with their last phone.\n\n#KenyansAreAsking",
-      "action": "Turn on Google Photos or iCloud backup today"
+      "action": "Turn on Google Photos or iCloud backup today",
+      "side": "none",
+      "tone": "explainer"
     }
   ]
 }
