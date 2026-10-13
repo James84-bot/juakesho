@@ -19,7 +19,9 @@ GitHub Actions (free, in the cloud)
 You (Telegram)          ✅ approve · ❌ reject · 🎵 post it yourself · reply/hide comments · send clips
 ```
 
-Nothing is published, replied to or hidden without your tap. A card you don't tap expires two hours after its
+Nothing is published, replied to or hidden without your tap. Every post that goes out is also put on the
+Instagram Story automatically (the same content you approved), so followers see it in their top row.
+Polls ("Your Say", Thursday and Sunday) go out as Reels: people vote A or B in the comments. A card you don't tap expires two hours after its
 slot (you get one note); you never have to reject old cards.
 
 ### What the writer knows before it writes
@@ -51,7 +53,7 @@ slot (you get one note); you never have to reject old cards.
 
 ### Formats (calendar.json)
 Sauti ya Mwananchi · Set It Straight · Follow the Money · Promise Tracker · Chapter Six Test · scam alerts ·
-Sunday poll on the week's biggest issue · daily hot post · **Tazama Hii** (clips you send) · Hatutasahau
+Your Say polls (Thursday and Sunday) · daily hot post · **Tazama Hii** (clips you send) · Hatutasahau
 anniversaries. Every post also ships as a 9:16 Reel told in beats.
 
 ## Running it (GitHub → Actions → autopilot → Run workflow)

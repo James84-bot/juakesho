@@ -1,14 +1,15 @@
 {
  "timezone": "Africa/Nairobi",
  "utc_offset": "+03:00",
- "note": "Only formats that earn shares: receipts on the stories Kenyans are already on (Sauti, Set It Straight, Follow the Money, Promise Tracker, Chapter Six Test), scam alerts, and a Sunday poll on the week's biggest issue. Daily hot posts, Tazama Hii clips and Hatutasahau anniversaries come on top.",
+ "note": "Only formats that earn shares: receipts on the stories Kenyans are already on (Sauti, Set It Straight, Follow the Money, Promise Tracker, Chapter Six Test), scam alerts, and two Your Say polls a week (Thursday and Sunday, posted as Reels: people vote A or B in the comments). Daily hot posts, Tazama Hii clips and Hatutasahau anniversaries come on top.",
  "slots": [
   {
    "day": 1,
    "time": "07:30",
    "template": [
     "sauti",
-    "straight"
+    "straight",
+    "usiibiwe"
    ],
    "bg": [
     "usiku"
@@ -56,19 +57,14 @@
   {
    "day": 4,
    "time": "19:30",
-   "template": [
-    "sauti",
-    "usiibiwe"
-   ],
+   "template": "glasspoll",
    "bg": [
-    "usiku",
-    "shuka"
+    "usiku"
    ],
    "lanes": [
-    "campus",
-    "hustle",
-    "creator"
-   ]
+    "everyone"
+   ],
+   "size": "story"
   },
   {
    "day": 5,
@@ -202,6 +198,7 @@
   "straight",
   "promise",
   "kumbuka",
-  "scorecard"
+  "scorecard",
+  "glasspoll"
  ]
 }

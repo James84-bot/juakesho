@@ -659,8 +659,9 @@ def render_week(label: str) -> dict:
 
 def is_reel(p: dict) -> bool:
     cal = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))
+    # polls are 9:16 already: as a Reel they reach the feed, and comments (the votes) push them further
     return (p["template"] in set(cal.get("reel_templates", [])) and not p.get("group")
-            and p.get("size", "post") == "post")
+            and (p.get("size", "post") == "post" or p["template"] == "glasspoll"))
 
 
 # ---------------------------------------------------------------------------
@@ -1008,6 +1009,29 @@ def wait_until_ready(container: str, timeout_s: int = 300, every_s: int = 10) ->
     raise RuntimeError("Instagram video processing timed out")
 
 
+def share_story(label: str, members: list[dict]) -> str | None:
+    """Puts a post that just went out on the Instagram Story too: followers see Stories first, and a Story
+    of every post keeps the account in their top row. Same content you approved; never blocks publishing.
+    (The API can't add interactive stickers, so polls are voted on in the post's comments.)"""
+    first = members[0]
+    if first.get("size") == "story" and not first.get("reel"):
+        return None   # it already was a Story
+    try:
+        ig = need("META_IG_USER_ID")["META_IG_USER_ID"]
+        if first.get("reel"):
+            container = graph(f"{ig}/media", {"media_type": "STORIES", "video_url": public_url(label, first["id"], "mp4")})["id"]
+            wait_until_ready(container)
+        else:
+            container = graph(f"{ig}/media", {"media_type": "STORIES", "image_url": public_url(label, first["id"])})["id"]
+            time.sleep(3)
+        sid = graph(f"{ig}/media_publish", {"creation_id": container})["id"]
+        log(f"story {first['id']}: {sid}")
+        return sid
+    except Exception as e:
+        log(f"story skipped for {first['id']}: {str(e)[:200]}")
+        return None
+
+
 def caption_for(post: dict) -> str:
     """The approved caption plus credits: the photographer of a real photo, the artist of a licensed track.
     The post's action is always in the caption: added as the last line if the writer left it out."""
@@ -1040,13 +1064,13 @@ def publish_instagram(label: str, members: list[dict]) -> str:
                     for m in members[:10]]
         container = graph(f"{ig}/media", {"media_type": "CAROUSEL", "children": ",".join(children),
                                           "caption": caption_for(first)})["id"]
-    elif first.get("size") == "story":
-        container = graph(f"{ig}/media", {"media_type": "STORIES", "image_url": public_url(label, first["id"])})["id"]
-    elif first.get("reel"):
+    elif first.get("reel"):   # before the Story check: a 9:16 poll with a video goes out as a Reel
         container = graph(f"{ig}/media", {"media_type": "REELS", "video_url": public_url(label, first["id"], "mp4"),
                                           "cover_url": public_url(label, f"{first['id']}-cover"),
                                           "caption": caption_for(first), "share_to_feed": "true"})["id"]
         wait_until_ready(container)
+    elif first.get("size") == "story":
+        container = graph(f"{ig}/media", {"media_type": "STORIES", "image_url": public_url(label, first["id"])})["id"]
     else:
         container = graph(f"{ig}/media", {"image_url": public_url(label, first["id"]), "caption": caption_for(first)})["id"]
     time.sleep(3)  # give Instagram a moment to fetch the image before publishing
@@ -1056,7 +1080,7 @@ def publish_instagram(label: str, members: list[dict]) -> str:
 def publish_facebook(label: str, members: list[dict]) -> str | None:
     page = need("META_PAGE_ID")["META_PAGE_ID"]
     first = members[0]
-    if first.get("size") == "story":
+    if first.get("size") == "story" and not first.get("reel"):
         return None  # Page stories use a different API; Instagram story only
     if first.get("reel"):   # video is what Facebook pushes (and pays for in Kenya): post the Reel as a Page video
         return graph(f"{page}/videos", {"file_url": public_url(label, first["id"], "mp4"), "description": caption_for(first)})["id"]
@@ -1156,6 +1180,10 @@ def publish(dry_run: bool = False) -> None:
                 for m in members:
                     m.update(status="published", published_at=now().isoformat(), ig_id=ig_id, fb_id=fb_id)
                 post_receipts(first_of(members), ig_id, fb_id)
+                story = share_story(label, members)
+                if story:
+                    for m in members:
+                        m["story_id"] = story
                 record_evidence(members)
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
                 link = fb_link(fb_id)
