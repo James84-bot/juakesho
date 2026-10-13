@@ -68,17 +68,39 @@ def mark(x: float, y: float, s: float, bubble: str | None = None, q: str = "#FFF
          colours: tuple[str, str, str] | None = None) -> str:
     """Three bubbles, s wide, top-left at (x, y): red behind on the left, green behind on the right, black in
     front with the white "?". One-colour versions pass `bubble` (all three in one ink, bands in `gap`)."""
+    return "".join(mark_parts(x, y, s, bubble, q, gap, colours))
+
+
+def mark_parts(x: float, y: float, s: float, bubble: str | None = None, q: str = "#FFFFFF", gap: str = "#FFFFFF",
+               colours: tuple[str, str, str] | None = None) -> list[str]:
+    """The mark as its four pieces (red, green, black, "?"), so the Reel sting can animate each voice."""
     black, red, green = colours or ((bubble,) * 3 if bubble else (FLAG_BLACK, FLAG_RED, FLAG_GREEN))
     bw, bh, r = s * 0.58, s * 0.42, s * 0.11
     gw = s * 0.05
-    out = _bubble(x, y, bw, bh, r, red, gap, gw, tail="none")   # the back voices: no tails, so no stray slivers
-    out += _bubble(x + s - bw, y, bw, bh, r, green, gap, gw, tail="none")
+    parts = [_bubble(x, y, bw, bh, r, red, gap, gw, tail="none"),   # the back voices: no tails, no stray slivers
+             _bubble(x + s - bw, y, bw, bh, r, green, gap, gw, tail="none")]
     fw, fh = s * 0.66, s * 0.50
     fx, fy = x + (s - fw) / 2, y + s * 0.22
-    out += _bubble(fx, fy, fw, fh, s * 0.13, black, gap, gw * 1.4, tail="left")
+    parts.append(_bubble(fx, fy, fw, fh, s * 0.13, black, gap, gw * 1.4, tail="left"))
     qx0, qend = text_outline("?", fh * 0.62, 0, 0)
     qd, _ = text_outline("?", fh * 0.62, fx + (fw - qend) / 2, fy + fh / 2 + fh * 0.31)
-    return out + f'<path d="{qd}" fill="{q}"/>'
+    return parts + [f'<path d="{qd}" fill="{q}"/>']
+
+
+def sting_svg() -> str:
+    """assets/logo/sting.svg: the mark with each piece in its own group (#red #green #black #q) and the wordmark
+    (#word), for the animated end card of every Reel (video.py)."""
+    s, x, y = 520, 280, 560
+    red, green, black, q = mark_parts(x, y, s)
+    cx = x + s / 2
+    d, end = text_outline("KENYANS ARE ASKING", 60, 0, 0, track=-0.01)
+    d, _ = text_outline("KENYANS ARE ASKING", 60, (1080 - end) / 2, y + s * 0.92 + 150, track=-0.01)   # 120px margins
+    o = f"transform-origin:{cx:.0f}px {y + s * 0.45:.0f}px"
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">'
+            f'<g id="red" style="transform-origin:{x + s * 0.29:.0f}px {y + s * 0.21:.0f}px">{red}</g>'
+            f'<g id="green" style="transform-origin:{x + s * 0.71:.0f}px {y + s * 0.21:.0f}px">{green}</g>'
+            f'<g id="black" style="{o}">{black}</g><g id="q" style="{o}">{q}</g>'
+            f'<g id="word"><path d="{d}" fill="#F8F7F6"/></g></svg>')
 
 
 def lockup(ink: str, stacked: bool, bg: str | None = None, mono: bool = False, q: str = "#FFFFFF") -> str:
@@ -129,6 +151,7 @@ def main() -> None:
     (OUT / "icon-paper.svg").write_text(icon("#FFFFFF"), encoding="utf-8")
     (OUT / "icon-night.svg").write_text(icon(NIGHT, gap="#FFFFFF"), encoding="utf-8")
     (OUT / "icon-red.svg").write_text(icon("#FFFFFF"), encoding="utf-8")   # kept for old references: same as paper
+    (OUT / "sting.svg").write_text(sting_svg(), encoding="utf-8")
     print("logo set written to", OUT)
 
 
