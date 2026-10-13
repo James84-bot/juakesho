@@ -1155,7 +1155,7 @@ class ReelPublishTests(TempWeeks):
 
     def test_reel_waits_for_processing_and_checks_media_types(self):
         self.week([{"id": "r", "status": "approved", "publish_at": self.PAST, "caption": "c", "reel": True}])
-        calls, statuses = [], iter(["IN_PROGRESS", "FINISHED"])
+        calls, statuses = [], iter(["IN_PROGRESS", "FINISHED", "FINISHED"])
 
         def fake_http(method, url, fields=None, files=None, timeout=60):
             calls.append((method, url.split("/v26.0/")[-1].split("?")[0], dict(fields or {})))
@@ -1170,9 +1170,26 @@ class ReelPublishTests(TempWeeks):
         media = next(f for m, p, f in calls if p == "ig/media")
         self.assertEqual(media["media_type"], "REELS")
         self.assertTrue(media["video_url"].endswith("/exports/2026-W41/r.mp4"))
-        self.assertEqual(sum(1 for m, p, f in calls if m == "GET"), 2)  # polled until FINISHED
+        self.assertEqual(sum(1 for m, p, f in calls if m == "GET"), 3)  # Reel polled until FINISHED, then its Story
         self.assertIn(("mp4", "video"), checked)
-        self.assertEqual(pl.load_week("2026-W41")["posts"][0]["status"], "published")
+        story = [f for m, p, f in calls if p == "ig/media" and f.get("media_type") == "STORIES"]
+        self.assertTrue(story and story[0]["video_url"].endswith("/r.mp4"))   # the Reel also went to the Story
+        post = pl.load_week("2026-W41")["posts"][0]
+        self.assertEqual(post["status"], "published")
+        self.assertTrue(post.get("story_id"))
+
+    def test_a_failed_story_never_undoes_the_post(self):
+        self.week([{"id": "p", "status": "approved", "publish_at": self.PAST, "caption": "c"}])
+
+        def fake_http(method, url, fields=None, files=None, timeout=60):
+            if (fields or {}).get("media_type") == "STORIES":
+                raise RuntimeError("stories not allowed")
+            return {"id": "x1"}
+        with mock.patch.object(pl, "http", fake_http), mock.patch.object(pl, "preflight", lambda u, k: None):
+            pl.publish()
+        post = pl.load_week("2026-W41")["posts"][0]
+        self.assertEqual(post["status"], "published")
+        self.assertNotIn("story_id", post)
 
     def test_wrong_content_type_blocks_publishing(self):
         class Resp:

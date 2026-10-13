@@ -429,7 +429,7 @@ SERIES = {
     "pov": "POV: Kesho: a near-future scenario written as a POV ('your AI agent ...'), `year`, `real` = what exists today. "
            "`cast`: 1-3 of {who, pose, mood, phone} from the stick cast (who can also be jua).",
     "build": "Build With Me: a real build (bots, automations, sites), shown as a flow of 3-6 steps, `stack` chips, `result` with a comment-to-get CTA.",
-    "glasspoll": "Your Say (story): a question about this week's Kenyan political story that every side can answer (never 'who will you vote for'). `hook`, question, 2 options, `cta`.",
+    "glasspoll": "Your Say poll (posted as a Reel): a sharp question about this week's biggest Kenyan political story that every side can answer and will argue about (never 'who will you vote for'). `hook`, question, 2 options (shown as A and B), `cta` that asks for the vote in the comments, e.g. 'Comment A or B'. The caption repeats the question and ends 'Vote A or B in the comments.'",
     "still": "Still in 2026?: `industry`, the outdated `thing` we still do (a habit or process, never a person), `old` way, `new` way that exists today, `cta`.",
     "spotlight": "Put Us On: a real African artist, creator or startup. `kind` (Artist/Creator/Startup), `name`, `country`, `what` they do, `why` it matters, `cta` (stream/follow/share). Positive only. MUST include a verifiable `source`.",
     "vichekesho": "Vichekesho: a 3-panel comic with the stick cast. Panels: [{bg, left?, right?}], bg one of jua|pwani|waridi|maziwa|ziwa. "
