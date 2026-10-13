@@ -223,6 +223,75 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
     return target_mp4
 
 
+STING_S = 1.8   # the end card: three voices, one question, then the name
+STING_HTML = """<!doctype html><html><head><meta charset="utf-8"><style>__FONTS__
+html,body{margin:0;width:1080px;height:1920px;background:#0E0C0B;overflow:hidden}
+svg{position:absolute;inset:0} #handle{position:absolute;left:0;right:0;top:1300px;text-align:center;
+font:600 40px/1 Inter,system-ui,sans-serif;color:#A8A5A3;letter-spacing:.01em}
+#red{animation:pop .42s cubic-bezier(.3,1.6,.5,1) .05s both}
+#green{animation:pop .42s cubic-bezier(.3,1.6,.5,1) .22s both}
+#black{animation:drop .5s cubic-bezier(.25,1.45,.5,1) .42s both}
+#q{animation:pop .36s cubic-bezier(.3,1.9,.5,1) .78s both}
+#word{animation:rise .5s ease-out 1.0s both} #handle{animation:rise .5s ease-out 1.12s both}
+@keyframes pop{from{transform:scale(.2);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes drop{from{transform:translateY(-160px) scale(.7);opacity:0}to{transform:none;opacity:1}}
+@keyframes rise{from{transform:translateY(30px);opacity:0}to{transform:none;opacity:1}}
+</style></head><body>__SVG__<div id="handle">__HANDLE__</div>
+<script>document.getAnimations().forEach(a=>a.pause());
+window.__seek=t=>document.getAnimations().forEach(a=>{a.currentTime=t*1000});</script></body></html>"""
+_STING: dict[str, Path] = {}
+
+
+def sting(ff: str, work: Path) -> Path | None:
+    """The animated end card as an mp4 (made once per run): red pops, green pops, the black bubble drops in and
+    asks, then KENYANS ARE ASKING and the handle. A soft chime; silence underneath so it joins any Reel."""
+    if "mp4" in _STING and _STING["mp4"].exists():
+        return _STING["mp4"]
+    svg = ROOT / "assets" / "logo" / "sting.svg"
+    if not svg.exists():
+        return None
+    try:
+        brand = json.loads((HERE / "brand.json").read_text(encoding="utf-8"))
+        work.mkdir(parents=True, exist_ok=True)
+        page = work / "sting.html"
+        import brandkit
+        fonts = brandkit.font_faces((ROOT / "assets" / "fonts").as_uri())
+        page.write_text(STING_HTML.replace("__FONTS__", fonts).replace("__SVG__", svg.read_text(encoding="utf-8"))
+                        .replace("__HANDLE__", brand.get("handle", "")), encoding="utf-8")
+        frames = int(STING_S * FPS)
+        render_frames(page, work, frames)
+        tail = np.zeros(int(sound.SR * STING_S), dtype=np.float32)
+        ch = sound.chime()[: len(tail)] * 0.6
+        tail[int(sound.SR * 0.78): int(sound.SR * 0.78) + len(ch)] += ch[: len(tail) - int(sound.SR * 0.78)]
+        sound.write_wav(tail, work / "sting.wav")
+        out = work / "sting.mp4"
+        subprocess.run([ff, "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", str(work / "f%04d.jpg"),
+                        "-i", str(work / "sting.wav"), "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-pix_fmt", "yuv420p", "-vf", "scale=1080:1920:flags=lanczos,setsar=1",
+                        "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-ac", "2", "-shortest", str(out)], check=True)
+        _STING["mp4"] = out
+        return out
+    except Exception as e:   # an end card must never cost us the Reel
+        print(f"  sting skipped: {e}")
+        return None
+
+
+def add_sting(ff: str, reel: Path, card: Path) -> None:
+    """Joins the end card to a finished Reel (re-encoded once so both halves match exactly)."""
+    joined = reel.with_name(reel.stem + ".joined.mp4")
+    graph = ("[0:v]fps=30,format=yuv420p,setsar=1[v0];[1:v]fps=30,format=yuv420p,setsar=1[v1];"
+             "[0:a]aformat=sample_rates=44100:channel_layouts=stereo[a0];[1:a]aformat=sample_rates=44100:channel_layouts=stereo[a1];"
+             "[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]")
+    try:
+        subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(card), "-filter_complex", graph,
+                        "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(joined)], check=True)
+        joined.replace(reel)
+    except Exception as e:
+        print(f"  sting not joined to {reel.name}: {e}")
+        joined.unlink(missing_ok=True)
+
+
 def make_reels(posts: list[dict], out_dir: Path) -> list[Path]:
     from playwright.sync_api import sync_playwright
 
@@ -237,6 +306,9 @@ def make_reels(posts: list[dict], out_dir: Path) -> list[Path]:
             if post["template"] in SKIP_TEMPLATES:
                 continue
             path = make_reel(page, env, post, out_dir, ff)
+            card = sting(ff, Path(tempfile.gettempdir()) / "kaa-sting")
+            if card and post.get("template") != "tazama":
+                add_sting(ff, path, card)
             made.append(path)
             print(f"  ✓ {path.name}  ({path.stat().st_size // 1024} KB)")
         browser.close()
