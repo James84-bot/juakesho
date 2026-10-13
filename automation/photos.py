@@ -334,7 +334,8 @@ def _event_window(post: dict) -> tuple[dt.datetime, dt.datetime]:
         day = dt.datetime.fromisoformat(post["publish_at"]).astimezone(dt.timezone.utc)
     except (KeyError, ValueError):
         day = dt.datetime.now(dt.timezone.utc)
-    return day - dt.timedelta(days=EVENT_DAYS_BEFORE), day + dt.timedelta(days=EVENT_DAYS_AFTER)
+    start = min(day, dt.datetime.now(dt.timezone.utc)) - dt.timedelta(days=EVENT_DAYS_BEFORE)   # story precedes the slot
+    return start, day + dt.timedelta(days=EVENT_DAYS_AFTER)
 
 
 def _when_taken(info: dict) -> dt.datetime | None:

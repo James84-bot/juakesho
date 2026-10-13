@@ -223,7 +223,9 @@ def find(post: dict) -> tuple[bytes, dict] | None:
         day = dt.datetime.fromisoformat(post["publish_at"]).astimezone(dt.timezone.utc)
     except (KeyError, ValueError):
         day = dt.datetime.now(dt.timezone.utc)
-    start, end = day - dt.timedelta(days=DAYS_BEFORE), day + dt.timedelta(days=DAYS_AFTER)
+    # the story happened before the post was written: count back from today when the slot is days ahead
+    start = min(day, dt.datetime.now(dt.timezone.utc)) - dt.timedelta(days=DAYS_BEFORE)
+    end = day + dt.timedelta(days=DAYS_AFTER)
     ranked = sorted(((score(x, surname, words), x) for x in feed_items()
                      if x["when"] is None or start <= x["when"] <= end), key=lambda t: (-t[0], not t[1]["official"]))
     ranked = [(s, x) for s, x in ranked if s > 0][:5]
