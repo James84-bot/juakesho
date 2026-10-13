@@ -46,228 +46,363 @@
       "photo_credit": "Photo: Jorge Láscar from Bogotá, Colombia / Wikimedia Commons, CC BY-SA 2.0"
     },
     {
-      "id": "2026-w42-d2-money-r2",
+      "id": "2026-w42-d2-money-r3",
       "template": "money",
       "lane": "young_pro",
-      "message": "KRA collected Sh965m more than planned in September 2026, mostly from import taxes.",
-      "hook": "KRA beat target by Sh965m",
-      "number": "Sh965m",
-      "unit": "extra revenue collected, Sept 2026",
-      "what": "KRA collected Sh965 million more than its September 2026 target, driven mostly by import taxes.",
-      "why": "More tax collected on imports. The question: do we see it in services or just higher prices?",
-      "check": "Read KRA's monthly revenue reports and Treasury exchequer data at treasury.go.ke.",
+      "demand": 8,
+      "hook": "Where did the loan go?",
+      "number": "Sh10.5trn",
+      "unit": "public debt with no public register",
+      "what": "Kenya's total public debt without a single publicly accessible register listing lenders, terms, and projects.",
+      "why": "We pay foreign loans via PAYE and fuel levies without knowing the terms.",
+      "check": "Read the National Assembly Public Debt Committee Report on parliament.go.ke.",
+      "message": "Kenya owes over Sh10.5 trillion in public debt, yet Parliament is only now pushing for an open register.",
+      "action": "Track your taxes: read the Public Debt Committee report on parliament.go.ke",
+      "photo_query": "National Treasury Nairobi",
+      "source": "National Assembly Public Debt and Privatisation Committee Report, October 2026; Central Bank of Kenya Public Debt Statistical Bulletin",
+      "who": "Parliament Public Debt Committee",
+      "where": "National",
+      "when": "13 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "caption": "Kenya owes Sh10.5 trillion, but ordinary taxpayers cannot look up who was paid what. Now Parliament admits we need an open debt register. We pay the bills; show us the books.\n\n#PublicDebt #FollowTheMoney #KenyansAreAsking",
       "beats": [
-        "KRA just *beat* its target.",
-        "Extra Sh965 million in September.",
-        "Mostly from import taxes at the port.",
-        "We feel the tax, not the upgrade.",
-        "So where does the extra *go*?",
-        "Check the exchequer report yourself."
+        "Kenya owes *Sh10.5 trillion* today.",
+        "Who are the lenders?",
+        "Nobody can show the register.",
+        "Our *PAYE pays* the interest.",
+        "Why hide the contracts?",
+        "Demand the open debt register."
       ],
-      "photo_query": "Mombasa port containers",
-      "caption": "KRA beat its September target by Sh965 million. Imports are up, taxes are up with them. Where does the extra go?\n\n#KRA #FollowTheMoney #JuaKesho",
-      "source": "Livenow Africa, 'KRA Beats September Target by KSh965 Million as Imports Rise', 12 Oct 2026, https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTklZeFdtTm0ybTFQM2U1eFE0b1RydUVwZnc4R1Q1QmlOei00cUwweFhGUWF5NGdkZkFOVUpjRHlVQ0dlOGtTbWoxY3duaEtjSGduSzFIWlZWQ3k0MFZGZGZHemNpa2lvS0Y1UmhoQy1jcm1HaWlydTRVQUFuWDRnNGxXYk9HbWt2VUxXdWFCaERlU2t4cTdyQ28tNDhKRzhGa2Z5OUluRVBkUms?oc=5",
       "bg": "shuka",
       "publish_at": "2026-10-13T12:45:00+03:00",
-      "status": "awaiting",
+      "status": "rendered",
       "guard": {
         "errors": [],
         "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
+          "caption has no send/share/save call: sends and saves drive reach",
+          "possible named person(s): Committee National, Debt Committee Report, National Assembly Public, National Treasury Nairobi, Now Parliament, Parliament Public Debt, Public Debt Committee. Civic posts target systems, not people."
         ]
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d2-money-r2-photo.jpg",
-      "photo_credit": "Photo: Ian Kiptoo / Wikimedia Commons, CC BY 4.0",
+      "critic": {
+        "hook": 8,
+        "send": 9,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "avg": 8.0,
+        "note": "Make the hook punchier: drop the rhetorical question and state the Sh10.5 trillion figure immediately."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d2-money-r3-photo.jpg",
+      "photo_credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
+      "ink": {
+        "1": "#FFFFFF"
+      },
       "reel": true
     },
     {
-      "id": "2026-w42-d3-promise-r2",
+      "id": "2026-w42-d3-promise-r3",
       "template": "promise",
       "lane": "campus",
-      "message": "Hustler Fund gave collateral-free loans as promised, but over half of borrowers are in default.",
-      "who": "William Ruto, President of Kenya",
-      "promise": "We will set up a Hustler Fund giving Kenyans collateral-free loans at single-digit interest.",
-      "said": "Kenya Kwanza manifesto, 2022",
-      "reality": "Fund launched at 8% interest, no collateral, but Treasury data shows over half of loans in default.",
-      "ask": "Did your Hustler Fund loan help you, or bury you in debt?",
-      "verdict": "partly",
+      "demand": 3,
+      "who": "Samson Cherargei, Nandi Senator",
+      "promise": "Respect Article 142(2) and uphold the five-year term limit set by the Constitution.",
+      "said": "Oath of Office, Senate of Kenya, 2022",
+      "verdict": "broken",
+      "reality": "Pushed a fresh legislative push to extend the presidential term limit from 5 to 7 years.",
+      "ask": "Kenyans are asking: why extend terms instead of delivering?",
       "proof": [
-        "Hustler Fund launched Nov 2022: 8% reducing-balance interest, no collateral.",
-        "By 2024, Treasury data showed over 50% default on personal loans.",
-        "Govt added savings/insurance tiers in 2024 to try to fix defaults."
+        "Sponsored the Constitution of Kenya (Amendment) Bill seeking 7-year terms for President.",
+        "Over 90% of public participation submissions rejected the bill in October 2024.",
+        "Announced a fresh bid in October 2026 despite widespread public rejection."
       ],
-      "source": "Kenya Kwanza manifesto, 2022; Hustler Fund terms, hustlerfund.go.ke; Business Daily and The Standard, 2024 reports on Hustler Fund default rates citing National Treasury data.",
+      "message": "Senator Cherargei renews push to extend presidential term limits from 5 to 7 years against public will.",
+      "action": "Submit your rejection to Senate: clerk.senate@parliament.go.ke",
+      "photo_query": "Kenya National Assembly",
+      "source": "Capital FM, Cherargei threatens fresh bid to extend Ruto stay in power, 12 Oct 2026; Senate Hansard",
+      "where": "National",
+      "when": "12 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "caption": "Over 90% of Kenyans rejected the 7-year term limit in 2024. Now a fresh push is back on the table. The Constitution belongs to the people, not politicians looking for extra years.\n\n#TermLimits #Cherargei #KenyansAreAsking",
       "beats": [
-        "Promised in 2022: *no collateral* loans.",
-        "Launched at 8% interest. Kept, so far.",
-        "But over *half* default on their loans.",
-        "Zero collateral cuts both ways.",
-        "Built hustles, or just more debt?",
-        "Check your Hustler Fund status today."
+        "They want *7 years* now.",
+        "Kenyans rejected it in 2024.",
+        "Now Senator Cherargei tries again.",
+        "Article 142 protects *5 years*.",
+        "Why fear the ballot box?",
+        "Reject term limit extensions."
       ],
-      "photo_query": "Nairobi open air market",
-      "caption": "Hustler Fund: collateral-free loans at 8%, as promised in 2022. But over half the loans are in default, Treasury data shows. Did yours help, or just pile up debt?\n\n#HustlerFund #PromiseTracker #JuaKesho",
       "bg": "usiku",
       "publish_at": "2026-10-14T18:30:00+03:00",
-      "status": "awaiting",
+      "status": "needs_human",
       "guard": {
-        "errors": [],
+        "errors": [
+          "weak: editor scored 6.0/10. Demand is low this week because this is a recycled 2024 debate; focus on live stories like the Ruto-Uhuru fallout."
+        ],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d3-promise-r2-photo.jpg",
-      "photo_credit": "Photo: Wawerumacha / Wikimedia Commons, CC BY-SA 4.0",
-      "ink": {
-        "1": "#F8F7F6"
-      },
-      "reel": true
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 6,
+        "hold": 6,
+        "demand": 3,
+        "action": 5,
+        "fair": 7,
+        "avg": 6.0,
+        "note": "Demand is low this week because this is a recycled 2024 debate; focus on live stories like the Ruto-Uhuru fallout."
+      }
     },
     {
-      "id": "2026-w42-d4-sauti-r2",
+      "id": "2026-w42-d4-sauti-r3",
       "template": "sauti",
       "lane": "campus",
-      "kicker": "Comrades",
-      "line": "Lecturers and government can't agree on pay, *again*, and our semester pays the price.",
-      "fact": "UASU says CBA talks with the government have collapsed, raising strike threats.",
-      "source": "NTV Kenya, 'University lecturers threaten to escalate strike as negotiations with govt collapse', 12 Oct 2026, https://www.youtube.com/watch?v=_uFkGmxCins",
-      "message": "Lecturers' strike talks with government have collapsed, threatening another disrupted semester.",
-      "photo_query": "University of Nairobi campus",
+      "demand": 6,
+      "kicker": "First-time voters",
+      "line": "IEBC targets *6.3 million* new voters for 2027. Too bad our IDs are still stuck at Huduma Centre.",
+      "fact": "IEBC plans 9,164 new polling stations for 6.3m new voters while thousands wait months for national ID cards.",
+      "message": "IEBC targets 6.3 million new voters for 2027, but national ID processing bottlenecks lock youth out.",
+      "action": "Check your ID application status at your local Huduma Centre today",
+      "photo_query": "ballot box Kenya",
+      "source": "Pulse Kenya, IEBC 2027 Election plan: 9,164 more polling stations and 6.3 million new voters, 12 Oct 2026",
+      "who": "IEBC and National Registration Bureau",
+      "where": "National",
+      "when": "12 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "caption": "6.3 million new voters targeted for 2027, but young Kenyans spend months waiting for an ID card to register. You cannot participate without an ID. Print the cards.\n\n#IEBC #VoterRegistration #KenyansAreAsking",
       "beats": [
-        "Semester on hold. *Again*.",
-        "Lecturers, govt: CBA talks collapsed.",
-        "Strike threat looms over our semester.",
-        "We still pay fees on time.",
-        "Whose deadline actually matters here?"
+        "IEBC wants *6.3 million* youth.",
+        "9,164 new polling stations.",
+        "The catch? *No ID cards*.",
+        "Comrades wait months for plastic.",
+        "No ID means no vote.",
+        "Check your ID status today."
       ],
-      "caption": "UASU says talks with government have collapsed. Again. We're the ones who lose class time and still pay fees on time. How many semesters have you lost to a strike?\n\n#JuaKesho #UASU #CampusKE",
       "bg": "usiku",
       "publish_at": "2026-10-15T19:30:00+03:00",
-      "status": "awaiting",
+      "status": "rendered",
       "guard": {
         "errors": [],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d4-sauti-r2-photo.jpg",
-      "photo_credit": "Photo: EstherWikipedian / Wikimedia Commons, CC BY-SA 4.0",
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 7,
+        "demand": 6,
+        "action": 7,
+        "fair": 7,
+        "avg": 7.3,
+        "note": "Sharpen the contrast between the 6.3 million target and the Huduma Centre queues in the beats."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d4-sauti-r3-photo.jpg",
+      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
       "reel": true
     },
     {
-      "id": "2026-w42-d5-straight-r2",
+      "id": "2026-w42-d5-straight-r3",
       "template": "straight",
       "lane": "everyone",
-      "claim": "KRA never hits its revenue targets.",
-      "who": "a widely shared claim on Kenyan X, October 2026",
-      "claim_source": "Common tax-complaint claim circulating on Kenyan X, October 2026",
-      "verdict": "false",
-      "truth": "KRA beat its September 2026 target by Ksh965 million.",
+      "demand": 4,
+      "who": "United Opposition Leaders, Nairobi Rally, Oct 2026",
+      "claim": "We are united as one team and have zero internal deals with the Kenya Kwanza administration.",
+      "verdict": "misleading",
+      "truth": "Opposition leaders trade mole claims while backing government bills.",
       "proof": [
-        "KRA collected above target in September 2026, per its own report.",
-        "Rising imports lifted import duty and VAT collections."
+        "Key opposition MPs voted with government to approve broad-based cabinet nominees.",
+        "Senators Methu and Nyoro publicly accused allied factions of being state-sponsored moles.",
+        "Coalition parties remain divided over joint presidential candidate selection for 2027."
       ],
-      "pride": "When enforcement works, the taxman delivers.",
-      "source": "Livenow Africa, 'KRA Beats September Target by KSh965 Million as Imports Rise', 12 Oct 2026, https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTklZeFdtTm0ybTFQM2U1eFE0b1RydUVwZnc4R1Q1QmlOei00cUwweFhGUWF5NGdkZkFOVUpjRHlVQ0dlOGtTbWoxY3duaEtjSGduSzFIWlZWQ3k0MFZGZGZHemNpa2lvS0Y1UmhoQy1jcm1HaWlydTRVQUFuWDRnNGxXYk9HbWt2VUxXdWFCaERlU2t4cTdyQ28tNDhKRzhGa2Z5OUluRVBkUms?oc=5",
-      "message": "KRA beat its September 2026 revenue target by Ksh965 million, despite claims it never hits targets.",
-      "photo_query": "Mombasa port containers",
+      "pride": "Kenyans see right through cosmetic alliances.",
+      "message": "The united opposition claims complete unity, but internal trade-offs and mole accusations show otherwise.",
+      "action": "Check how your opposition MP voted on recent tax bills at parliament.go.ke",
+      "photo_query": "Kenya National Assembly",
+      "claim_source": "Opposition Joint Presser, Nairobi, October 2026; The Standard, Nyoro is a mole in opposition, 12 Oct 2026",
+      "source": "The Standard, Nyoro is a mole in opposition, Methu claims, 12 Oct 2026; National Assembly Hansard",
+      "where": "National",
+      "when": "12 Oct 2026",
+      "side": "opposition",
+      "tone": "criticism",
+      "caption": "The opposition promises a united front against government policies, yet their own members trade accusations of secret pacts with the state. Holding leaders to account means checking every side.\n\n#SetItStraight #Opposition #KenyansAreAsking",
       "beats": [
-        "KRA never hits targets. *Myth*.",
-        "September 2026: beat target by Ksh965m.",
-        "Imports rose, duty collections followed.",
-        "Enforcement works when applied.",
-        "Verify before you share this."
+        "They claimed *complete unity*.",
+        "Then called each other moles.",
+        "Broad-based deals behind closed doors.",
+        "Kenyans deserve a *real opposition*.",
+        "Check how your MP voted.",
+        "Hold every leader accountable."
       ],
-      "caption": "Claim: KRA never meets its targets. Reality: it beat September's target by Ksh965 million as imports rose. Verify before you share.\n\n#JuaKesho #SetItStraight #KRA",
       "bg": "usiku",
       "publish_at": "2026-10-16T17:00:00+03:00",
       "status": "needs_human",
       "guard": {
         "errors": [
-          "'source' is 370 chars (max 240)"
+          "weak: editor scored 6.3/10. Needs a stronger, more specific hook about the opposition squabbles rather than a generic claim verdict."
         ],
-        "warnings": []
-      }
-    },
-    {
-      "id": "2026-w42-d6-promise-r2",
-      "template": "promise",
-      "lane": "everyone",
-      "who": "William Ruto, President of Kenya",
-      "promise": "A *Hustler Fund*: collateral-free loans for every Kenyan, no shylocks",
-      "said": "Kenya Kwanza manifesto, 2022",
-      "reality": "Fund launched and lent billions, but over half the loans sit unpaid",
-      "ask": "Where's the credit without the debt trap he promised?",
-      "verdict": "partly",
-      "proof": [
-        "Hustler Fund launched Nov 2022, disbursed over Ksh50bn in micro-loans by 2024 (National Treasury)",
-        "Auditor-General flagged a default rate above 50% on Hustler Fund loans",
-        "The promised bigger business-tier loans rolled out years behind schedule"
-      ],
-      "source": "National Treasury Hustler Fund performance reports, 2023-2024; Auditor-General reports on the Hustler Fund; Business Daily and Nation coverage, 2023-2024",
-      "message": "The Hustler Fund promised loans with no collateral; more than half of what it lent is unpaid.",
-      "beats": [
-        "He promised loans with *no collateral*.",
-        "Over *Ksh50bn* given out since 2022.",
-        "More than half unpaid, auditors say.",
-        "The bigger loans? Still *waiting*.",
-        "Where's the credit without the trap?"
-      ],
-      "photo_query": "Kenyan shilling notes",
-      "caption": "He promised credit with no collateral. Kenya Kwanza manifesto, 2022.\n\nOver Ksh50bn out the door. More than half unpaid, the Auditor-General says. The bigger business loans are still coming.\n\nDid you ever get a Hustler Fund loan? Did you repay it?\n\n#HustlerFund #PromiseTracker #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-17T11:00:00+03:00",
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "'proof[0]' is 97 chars (max 90)"
-        ],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      }
-    },
-    {
-      "id": "2026-w42-d7-glasspoll-r2",
-      "template": "glasspoll",
-      "lane": "everyone",
-      "hook": "Ruto to Uhuru: retire",
-      "question": "Should ex-presidents stay in politics?",
-      "options": [
-        "Ndio, speak freely",
-        "La, let it go"
-      ],
-      "cta": "Vote and see what Kenya says",
-      "message": "Ruto told Uhuru to retire from politics; we're asking where Kenyans actually stand on that.",
-      "beats": [
-        "Ruto to Uhuru: *you're a conman*.",
-        "Told him to retire, in public.",
-        "Former presidents keep talking anyway.",
-        "Should they, though? *You* decide.",
-        "Vote. See what Kenya really thinks."
-      ],
-      "photo_query": "Kenya National Assembly",
-      "caption": "Ruto told Uhuru to retire. Again. Former presidents keep weighing in on current politics, and we keep arguing about whether that's okay.\n\nShould ex-presidents stay out of active politics? #JuaKesho",
-      "bg": "usiku",
-      "publish_at": "2026-10-18T18:00:00+03:00",
-      "size": "story",
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d7-glasspoll-r2-photo.jpg",
-      "photo_credit": "Photo: Sir. Kevin / Wikimedia Commons, CC BY-SA 2.0"
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 6,
+        "hold": 6,
+        "demand": 4,
+        "action": 6,
+        "fair": 8,
+        "avg": 6.3,
+        "note": "Needs a stronger, more specific hook about the opposition squabbles rather than a generic claim verdict."
+      }
+    },
+    {
+      "id": "2026-w42-d6-promise-r3",
+      "template": "promise",
+      "lane": "everyone",
+      "demand": 5,
+      "who": "Central Bank of Kenya and National Treasury",
+      "promise": "Launch an over-the-counter secondary market platform to open up government securities trading.",
+      "said": "Medium Term Debt Strategy, National Treasury, 2023",
+      "verdict": "kept",
+      "reality": "CBK launched the dealer-led OTC platform for government bonds, boosting liquidity and price transparency.",
+      "ask": "Kenyans are asking: when do retail bond minimums drop?",
+      "proof": [
+        "Launched automated OTC trading platform for Treasury bonds in October 2026.",
+        "Allows direct settlement and real-time pricing away from commercial bank monopoly.",
+        "Shortens transaction turnaround times from three days to same-day settlement."
+      ],
+      "message": "CBK delivered the OTC bond platform for transparent trading. Next step: lower retail access limits.",
+      "action": "Learn how Treasury bonds work on centralbank.go.ke/investments",
+      "photo_query": "Kenyan shilling banknotes",
+      "source": "Briefs Finance, Kenya to Launch Dealer-Led OTC Platform for Government Securities, 12 Oct 2026; Central Bank of Kenya Notices",
+      "where": "National",
+      "when": "12 Oct 2026",
+      "side": "government",
+      "tone": "credit",
+      "caption": "Credit where due: CBK has rolled out the dealer-led OTC platform for government securities. This breaks the bank monopoly on bond prices. Now make minimum investment sizes small enough for ordinary savers.\n\n#CreditWhereDue #CentralBank #KenyansAreAsking",
+      "beats": [
+        "Treasury promised an *OTC platform*.",
+        "CBK officially delivered it.",
+        "Bond prices are now *transparent*.",
+        "Bank monopoly broken on trading.",
+        "Good step. Now *open retail* access.",
+        "Learn bond basics on CBK site."
+      ],
+      "bg": "chai",
+      "publish_at": "2026-10-17T11:00:00+03:00",
+      "series": "Credit Where Due",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 5.2/10. A 22-year-old scrolling past a generic photo of shilling notes won't stop for bond market infrastructure; it needs to connect directly to why treasury bills matter to their pocket today."
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 6,
+        "fresh": 5,
+        "voice": 5,
+        "craft": 6,
+        "picture": 4,
+        "hold": 5,
+        "demand": 5,
+        "action": 6,
+        "fair": 6,
+        "avg": 5.2,
+        "note": "A 22-year-old scrolling past a generic photo of shilling notes won't stop for bond market infrastructure; it needs to connect directly to why treasury bills matter to their pocket today."
+      }
+    },
+    {
+      "id": "2026-w42-d7-glasspoll-r3",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "demand": 3,
+      "hook": "Senate term limit bid",
+      "question": "Extend presidential term to 7 years?",
+      "options": [
+        "No, keep 5 years",
+        "Yes, extend to 7"
+      ],
+      "cta": "Vote to see Kenya's verdict",
+      "message": "Kenyans vote on whether presidential terms should be extended from 5 to 7 years.",
+      "action": "Cast your vote in the poll to record your stance on term limits",
+      "photo_query": "Supreme Court of Kenya",
+      "source": "Capital FM, Cherargei threatens fresh bid to extend Ruto stay in power, 12 Oct 2026",
+      "who": "Samson Cherargei, Nandi Senator",
+      "where": "National",
+      "when": "12 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "caption": "Senator Samson Cherargei is mounting a fresh bid to extend the presidential term limit from 5 to 7 years. Where do you stand on changing the 2010 Constitution? Vote below.\n\n#YourSay #TermLimits #KenyansAreAsking",
+      "beats": [
+        "Should term limits *change to 7*?",
+        "Article 142 gives us *5 years*.",
+        "Senator Cherargei wants more time.",
+        "Cast your vote below.",
+        "Let the people decide."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-18T18:00:00+03:00",
+      "size": "story",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.9/10. Hook with the specific Senator and term proposal right in the first line instead of a vague label, since term limit talk always drives engagement."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 7,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 7,
+        "craft": 7,
+        "picture": 5,
+        "hold": 6,
+        "demand": 8,
+        "action": 7,
+        "fair": 7,
+        "avg": 6.9,
+        "note": "Hook with the specific Senator and term proposal right in the first line instead of a vague label, since term limit talk always drives engagement."
+      }
     }
   ],
   "scripts": {
-    "radio": "Habari, hii ni Jua Kesho, mimi ni Jua. This week, let's talk about who's paying and who's not. Kenyans are keeping their end of the bargain — electricity bills paid on time. But the state? It owes Kenya Power Sh7.35 billion, unpaid, as of October 2026. Meanwhile at HELB, the man in charge of student loans has never needed one himself — and students are still waiting on theirs. Now, a fact worth repeating: M-Pesa is not British. It was built, tested, and launched right here in Kenya, in 2007. Say it with your chest. And speaking of homegrown wins — M-KOPA, a Kenyan startup, now powers over five million homes across Africa with pay-as-you-go solar. Kenyan innovation lighting up a continent. But let's zoom out. 2027 is closer than you think. Five things are quietly moving us there: the election date, fixed by law; boundary reviews, overdue, deciding how much your vote counts; party primaries, the real gatekeepers to your ballot; the budget calendar, set every February 15th before any Finance Bill; and us, Jua Kesho, building a record of promises now, so 2027 is judged on receipts. Stay informed. Stay ready. Kwa Kiswahili: Wakenya wanalipa umeme kwa wakati, lakini serikali inadaiwa mabilioni na Kenya Power. M-Pesa ilizaliwa Kenya, si Uingereza. M-KOPA, kampuni ya Kikenya, inawasha nyumba milioni tano Afrika. Na njia ya 2027 inaanza sasa — tarehe ya uchaguzi, mipaka ya kura, chaguzi za ndani za vyama, na bajeti ya taifa. Jua Kesho inarekodi ahadi zote, ili tuwe tayari.",
-    "voice_note": "Niaje, ni Jua hapa. Quick one today. Kenya Power says Kenyans are paying their electricity bills on time, good for us. But guess who's not paying? The government — Sh7.35 billion owed, as of this October. Make that make sense. Also, quick myth-bust: next time someone says M-Pesa is British, tell them no, it was built, tested and launched right here in Kenya back in 2007. We did that. Something else to watch: a Kenyan startup, M-KOPA, is now powering over five million homes across Africa with solar, pay as you go. That's us exporting solutions, not just importing problems. Last thing, 2027 isn't far. The election date is fixed by law, second Tuesday of August. But boundaries, party primaries, and the budget calendar are moving right now, quietly, and they'll decide a lot. We're tracking it all at Jua Kesho, building receipts so promises don't just disappear. That's your sixty seconds. Tuonane next week.",
-    "sms": "Usiibiwe: Don't repeat 'M-Pesa ni ya Uingereza.' It was built, tested & launched in Kenya, 2007. Verify facts before you share them.",
-    "reels": "Five things are quietly moving Kenya toward 2027. One: the election date, fixed, second Tuesday of August. Two: your constituency boundaries, overdue for review, deciding how much your vote counts. Three: party primaries, the real test before the ballot. Four: the budget calendar, set by law every February 15th, before any Finance Bill. Five: promises, we're tracking them now, so by 2027 it's receipts, not rhetoric. Follow Jua Kesho. Let's get ready."
+    "radio": "Habari zenu, this is Kenyans Are Asking.\n\nThis week, three numbers demand our attention: 10.5 trillion, seven years, and 6.3 million.\n\nFirst, Kenya’s public debt has breached 10.5 trillion shillings. Parliament is finally talking about setting up an open register. Why did it take this long? When debt is contracted behind closed doors, ordinary citizens pay for it in broad daylight through punishing taxes. We must insist on a transparent ledger showing every lender, every interest rate, and every stalled project.\n\nSecond, Senator Samson Cherargei is reviving his bid to extend the presidential term from five to seven years. Let us be plain: sovereign power belongs to the people under Article 1. Tinkering with constitutional term limits while citizens struggle with basic survival shows political priorities that are completely out of touch.\n\nFinally, the IEBC plans to register 6.3 million new voters ahead of 2027. But how does that happen when thousands of young Kenyans cannot get national IDs? Processing bottlenecks at Huduma centres are locking out the next generation. If the state cannot print IDs on time, it compromises the integrity of the next election before it even starts.\n\nKwa ufupi: Deni la taifa limevuka trilioni kumi nukta tano, na bunge lazima liweke wazi kila senti. Wakati huo huo, mpango wa kuongeza muhula wa rais hadi miaka saba hauna mashiko huku vijana wakinyimwa vitambulisho vya kupiga kura. Simama imara, uliza maswali, na usikubali kupotoshwa.",
+    "voice_note": "Jambo fam, here is your weekly briefing from Kenyans Are Asking.\n\nWatch the political sleight of hand happening right now. Senator Cherargei is back with that proposal to stretch the presidential term limit from five to seven years. Kenyans already said no to this, and sovereign power rests with citizens, not politicians looking to secure longer tenures.\n\nMeanwhile, the IEBC wants to register 6.3 million new voters for 2027, but national ID processing is practically frozen in several sub-counties. If young people cannot get IDs, they cannot register to vote. That is disenfranchisement through bureaucratic neglect.\n\nAdd to that our public debt passing 10.5 trillion shillings, with Parliament only now waking up to push for an open register.\n\nDo not let constitutional sideshows distract you from service delivery and governance failures. Check on your ID status, follow the debt register debate, and pass this note along.",
+    "sms": "Usiibiwe tip: Getting your national ID is a constitutional right, not a favor. Don't let bureaucratic delays lock you out of voting in 2027. Demand it early.",
+    "reels": "Five years isn't too short; it is a constitutional contract. Yet Senator Samson Cherargei is back, pushing to extend the presidential term limit to seven years. When Kenyans are battling high taxes, unemployment, and rising debt, whose priority is keeping politicians in power longer? Article 1 says sovereign power belongs to the people, not leaders rewriting terms to suit themselves. We don't need longer terms. We need accountable leadership."
   },
   "spend_usd": 3.0807,
-  "revision": 2
+  "revision": 3
 }
