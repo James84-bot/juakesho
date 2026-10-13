@@ -1,0 +1,490 @@
+{
+  "collection": "2026-W43",
+  "created": "2026-10-14T00:46:06.367461+03:00",
+  "posts": [
+    {
+      "id": "2026-w43-d1-promise",
+      "template": "promise",
+      "lane": "everyone",
+      "series": "Development Tracker",
+      "who": "KeNHA and Ministry of Roads",
+      "where": "Mombasa",
+      "when": "October 2022",
+      "promise": "Build a modern four-lane dual bridge to replace the 1929 Makupa causeway",
+      "said": "Project contract signing, November 2020",
+      "reality": "The 457-metre Makupa Bridge in Mombasa is complete and open to traffic",
+      "ask": "Can we see all coast transit links finished on time?",
+      "source": "Kenya National Highways Authority (KeNHA) project completion report, Makupa Bridge Mombasa",
+      "proof": [
+        "Sh4.5 billion project completed and fully open to vehicular traffic",
+        "Restored marine water flow between Tudor Creek and Port Reitz",
+        "Ended decades of traffic gridlock into Mombasa Island"
+      ],
+      "verdict": "kept",
+      "measure": "100% complete",
+      "side": "government",
+      "tone": "credit",
+      "impact": "Over 100,000 commuters enter Mombasa Island daily without the historic 3-hour traffic jam.",
+      "message": "The Sh4.5bn Makupa Bridge was finished and opened, restoring marine flow and easing traffic into Mombasa.",
+      "action": "Check completed road projects in your county on the KeNHA project portal at kenha.co.ke",
+      "photo_query": "road bridge Mombasa Kenya",
+      "caption": "Makupa Bridge is complete, open, and working. Credit where it is earned: 457 metres of dual carriageway that cleared a notorious island bottleneck.\n\nWhat completed project in your county actually works? Drop it below.\n\n#DevelopmentTracker #KenyansAreAsking",
+      "beats": [
+        "Makupa Bridge is *complete*.",
+        "Sh4.5 billion spent.",
+        "Traffic into Mombasa Island now flows.",
+        "The causeway bottleneck is *gone*.",
+        "Credit where it is earned.",
+        "Track public roads at *kenha.co.ke*."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-19T07:30:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 9,
+        "hold": 8,
+        "demand": 3,
+        "action": 8,
+        "fair": 9,
+        "impact": 9,
+        "avg": 7.9,
+        "note": "Link this completed project directly to current #1 Ruto development tour news to match active demand."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d1-promise-photo.jpg",
+      "photo_credit": "Photo: Andrew Atina / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:The_SGR_and_a_new_bypass_meet_in_Mombasa,_Kenya.jpg",
+      "ink": {
+        "1": "#F8F7F6"
+      },
+      "reel": true,
+      "tg_msg": 148
+    },
+    {
+      "id": "2026-w43-d2-promise",
+      "template": "promise",
+      "lane": "hustle",
+      "series": "Development Tracker",
+      "who": "State Department for Housing and Urban Development",
+      "where": "Trans Nzoia",
+      "when": "October 2026",
+      "promise": "Complete the modern Masinde Muliro commercial market in Kitale town",
+      "said": "State Department for Housing announcement, 2021",
+      "reality": "Construction stalled mid-way, leaving thousands of traders out in the mud",
+      "ask": "When will Kitale traders get their completed stalls?",
+      "source": "Trans Nzoia County Government official statements and State Department for Housing project status 2026",
+      "proof": [
+        "Project launched to house over 4,000 displaced street vendors",
+        "Over Sh400 million committed but site work ground to a halt",
+        "County government now threatening litigation over stalled delivery"
+      ],
+      "verdict": "stalled",
+      "measure": "stalled at 55%",
+      "side": "both",
+      "tone": "criticism",
+      "impact": "Over 4,000 informal traders in Kitale lose stock to rain and pay daily county cess without proper stalls.",
+      "message": "Masinde Muliro Market in Kitale remains stalled after years of promises, leaving 4,000 traders stranded.",
+      "action": "Email housing@housingandurban.go.ke to demand an audit on this project",
+      "photo_query": "open air market stall Kenya",
+      "caption": "Sh400m allocated, but Masinde Muliro Market in Kitale sits stalled. Traders pay daily cess while selling on muddy pavements. \n\nKenyans are asking: when does this market open for business?\n\n#DevelopmentTracker #KenyansAreAsking",
+      "beats": [
+        "Masinde Muliro Market is *stalled*.",
+        "Sh400 million assigned.",
+        "4,000 traders still in the *mud*.",
+        "County threatens court action.",
+        "Where did the contractor go?",
+        "Demand answers at *housing.go.ke*."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-20T12:45:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 10,
+        "action": 8,
+        "fair": 9,
+        "impact": 9,
+        "avg": 9.0,
+        "note": "Directly hits the trending Natembeya vs Ruto Masinde Muliro market dispute at rank #2."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d2-promise-photo.jpg",
+      "photo_credit": "Photo: safaritravelplus / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Market_In_Africa.jpg",
+      "ink": {
+        "1": "#F8F7F6"
+      },
+      "reel": true,
+      "tg_msg": 149
+    },
+    {
+      "id": "2026-w43-d3-promise",
+      "template": "promise",
+      "lane": "hustle",
+      "series": "Development Tracker",
+      "who": "William Ruto, President of Kenya",
+      "where": "National",
+      "when": "October 2022",
+      "promise": "Establish a judicial commission of inquiry into state capture within 30 days",
+      "said": "Kenya Kwanza Manifesto, June 2022",
+      "reality": "Four years into the administration, no judicial commission was ever gazetted",
+      "ask": "Why was the state capture inquiry quietly dropped?",
+      "source": "Kenya Kwanza Manifesto (The Plan) 2022, Governance Chapter, Page 57",
+      "proof": [
+        "Pledged within 30 days of taking oath of office in September 2022",
+        "Zero gazette notices issued establishing the judicial commission",
+        "Public procurement and state capture files remain untouched"
+      ],
+      "verdict": "ignored",
+      "measure": "0 of 1 formed",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Billions lost in historical irregular contracts remain unrecovered while public debt service climbs.",
+      "message": "The promised 30-day judicial inquiry into state capture was completely ignored and never gazetted.",
+      "action": "Read Chapter Six on klrc.go.ke to track executive commitments",
+      "photo_query": "Supreme Court of Kenya",
+      "caption": "The promise was written in black and white: a judicial commission into state capture within 30 days. Four years later, not a single page gazetted.\n\nKenyans are asking: who was protected when this promise was buried?\n\n#PromiseTracker #KenyansAreAsking",
+      "beats": [
+        "Promised within *30 days*.",
+        "Judicial inquiry into state capture.",
+        "Four years have passed.",
+        "*Zero* gazette notices published.",
+        "The file was quietly buried.",
+        "Read Chapter Six on *klrc.go.ke*."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-21T18:30:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 4,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.6,
+        "note": "Tie this state capture reminder to the ongoing 2027 political realignments at rank #1."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-promise-photo.jpg",
+      "photo_credit": "Photo: Kriddl / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_Kenya.JPG",
+      "ink": {
+        "1": "#FFFFFF"
+      },
+      "reel": true,
+      "tg_msg": 150
+    },
+    {
+      "id": "2026-w43-d4-glasspoll",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "series": "Development Tracker",
+      "hook": "Your payslip pays for it",
+      "question": "Has housing started in your area?",
+      "cta": "Comment A or B below",
+      "options": [
+        "A: Yes, active site",
+        "B: No, empty ground"
+      ],
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Every formal employee loses 1.5% of gross pay monthly to the housing levy.",
+      "message": "Kenyans vote on whether the mandatory housing levy has translated into actual local construction.",
+      "action": "Vote A or B in the comments and tag your constituency to verify local site records",
+      "photo_query": "construction site Kenya",
+      "caption": "Every month 1.5% comes off your payslip for affordable housing. Has a single foundation been laid in your constituency?\n\nVote A or B in the comments.\n\n#HousingLevy #KenyansAreAsking",
+      "beats": [
+        "1.5% leaves your payslip monthly.",
+        "The Housing Fund collects billions.",
+        "Is there a project in *your* town?",
+        "A: Active building site.",
+        "B: Completely *empty* ground.",
+        "Drop your answer in the comments."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-22T19:30:00+03:00",
+      "size": "story",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 6,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "avg": 8.2,
+        "note": "Keep it sharp; ensure the 1.5% levy figure is tied cleanly to current housing debate."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d4-glasspoll-photo.jpg",
+      "photo_credit": "Photo: Mugambi Muriuki / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Construction_site_workers_loading_water,_sand,_ballast_and_cememt_into_a_concrete_mixer_in_Embu,_Kenya_5a.jpg",
+      "ink": {
+        "1": "#F8F7F6"
+      },
+      "reel": true,
+      "tg_msg": 151
+    },
+    {
+      "id": "2026-w43-d5-promise",
+      "template": "promise",
+      "lane": "young_pro",
+      "series": "Development Tracker",
+      "who": "National Treasury and Parliament",
+      "where": "National",
+      "when": "FY 2024/25",
+      "promise": "Ring-fence Sh3.7 billion for healthcare worker salaries and medical intern postings",
+      "said": "National Budget Estimates, June 2024",
+      "reality": "Funds were reallocated in supplementary budgets to executive renovations",
+      "ask": "Why take medical payroll cash for office refurbishments?",
+      "source": "Controller of Budget National Government Budget Implementation Review Report, FY 2024/25",
+      "proof": [
+        "Sh3.7bn health personnel line trimmed under Supplementary Budget revisions",
+        "State House and executive renovations received upward adjustments",
+        "Medical intern postings remained delayed for months over budget shortfall"
+      ],
+      "verdict": "diverted",
+      "measure": "Sh3.7bn shifted",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Over 1,200 medical intern doctors remained unposted while public referral hospitals faced staff shortages.",
+      "message": "Sh3.7 billion meant for health worker payroll was cut and moved to executive renovations.",
+      "action": "Check the Controller of Budget review reports at cob.go.ke to track reallocation lines",
+      "photo_query": "hospital ward Kenya",
+      "caption": "Money budgeted for doctors and medical interns was trimmed, while executive renovation votes expanded. \n\nKenyans are asking: why does paint in government offices beat doctors in county hospitals?\n\n#FollowTheMoney #KenyansAreAsking",
+      "beats": [
+        "Sh3.7 billion for *doctors*.",
+        "Voted in the June budget.",
+        "Cut in the supplementary budget.",
+        "Moved to executive *renovations*.",
+        "Hospitals wait. Offices shine.",
+        "Track the budget on *cob.go.ke*."
+      ],
+      "bg": "shuka",
+      "publish_at": "2026-10-23T17:00:00+03:00",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "visual QA: low contrast 2.7:1 (needs 4:1) on 'The promise'"
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "avg": 8.5,
+        "note": "Sharp contrast between intern doctor shortages and executive office renovations."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-promise-photo.jpg",
+      "photo_credit": "Photo: Moving Mountains Trust / Wikimedia Commons, CC BY 2.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Ward_block,_Dophil_Maternity_and_Nursing_Home.jpg",
+      "ink": {
+        "1": "#0E0C0B",
+        "3": "#F8F7F6"
+      }
+    },
+    {
+      "id": "2026-w43-d6-promise",
+      "template": "promise",
+      "lane": "hustle",
+      "series": "Development Tracker",
+      "who": "Ministry of Sports and Sports Kenya",
+      "where": "Elgeyo Marakwet",
+      "when": "January 2017",
+      "promise": "Deliver an international standard athletics stadium at Kamariny in six months",
+      "said": "State project launch, January 2017",
+      "reality": "Contract stalled, earthworks abandoned, and athletes train on dirt paths",
+      "ask": "Where did the Sh287 million stadium budget go?",
+      "source": "Auditor-General Report on Sports Kenya and National Sports Development Fund",
+      "proof": [
+        "Contract awarded in 2017 for Sh287 million with a 6-month completion window",
+        "Auditor-General flagged millions paid for incomplete and abandoned earthworks",
+        "Elgeyo Marakwet champions still train on uneven community fields"
+      ],
+      "verdict": "stalled",
+      "measure": "stalled at 30%",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "World-class runners in Iten must travel long distances or train on dirt roads due to a fenced-off stalled site.",
+      "message": "Kamariny Stadium in Iten was promised in six months in 2017; nine years later it sits abandoned.",
+      "action": "Submit a public records petition to Sports Kenya via info@sportskenya.org",
+      "photo_query": "running track Kenya",
+      "caption": "Kamariny Stadium was promised in six months back in 2017. Sh287 million later, world-record athletes in Iten train in the dust.\n\nKenyans are asking: where is the stadium Sports Kenya paid for?\n\n#DevelopmentTracker #KenyansAreAsking",
+      "beats": [
+        "Kamariny Stadium: *6 months* promised.",
+        "Launched in January 2017.",
+        "Sh287 million contracted.",
+        "Still weeds and red dirt.",
+        "Athletes train on *dust*.",
+        "Demand audit files from *sportskenya.org*."
+      ],
+      "bg": "chai",
+      "publish_at": "2026-10-24T11:00:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 7,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "avg": 8.7,
+        "note": "Iten's world champions training in dust while a Sh287m stadium stalls is an instantly shareable Kenyan reality."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d6-promise-photo.jpg",
+      "photo_credit": "Photo: Nick Webb from London, United Kingdom / Wikimedia Commons, CC BY 2.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:2012_Summer_Olympics_%E2%80%93_Womens_5000_metres_heat_1_-_1.jpg",
+      "ink": {
+        "1": "#0E0C0B"
+      },
+      "reel": true,
+      "tg_msg": 152
+    },
+    {
+      "id": "2026-w43-d7-glasspoll",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "series": "Development Tracker",
+      "hook": "Tokens paid, but the power?",
+      "question": "Has power supply improved near you?",
+      "cta": "Vote A or B in the comments",
+      "options": [
+        "A: Yes, reliable",
+        "B: No, still blackouts"
+      ],
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Consumers pay upfront while Sh41.5bn in unpaid utility bills threatens grid reliability.",
+      "message": "Kenyans pay upfront for electricity while Kenya Power chases Sh41.5bn in debt. Has your power supply improved?",
+      "action": "Vote A or B in comments and share your county to map grid reliability",
+      "beats": [
+        "We pay *tokens* before switching lights on.",
+        "Kenya Power unpaid bills hit *Sh41.5bn*.",
+        "Yet blackouts still hit our work.",
+        "Has power supply *improved* near you?",
+        "Vote A or B in comments."
+      ],
+      "photo_query": "power transmission lines Kenya",
+      "source": "Citizen Digital (13 Oct 2026): Kenya Power unpaid electricity bills rise to Ksh.41.5 billion",
+      "caption": "Ordinary Kenyans buy tokens upfront every week, but Kenya Power says unpaid electricity bills have climbed to Sh41.5 billion. We pay cash upfront while the grid still trips.\n\nHas power supply improved near you?\nA: Yes, reliable\nB: No, still blackouts\n\nVote A or B in the comments.\n\n#DevelopmentTracker #KenyaPower #KenyansAreAsking",
+      "bg": "usiku",
+      "publish_at": "2026-10-25T18:00:00+03:00",
+      "size": "story",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "avg": 8.7,
+        "note": "Ties the breaking Sh41.5bn Kenya Power debt story directly to daily token pain via a high-engagement poll."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d7-glasspoll-photo.jpg",
+      "photo_credit": "Photo: CT Cooper / Wikimedia, CC BY 3.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/w/index.php?curid=20744347",
+      "reel": true,
+      "tg_msg": 153
+    }
+  ],
+  "scripts": {
+    "radio": "Good evening, and welcome to Kenyans Are Asking. This week, we examine the true cost of public promises. In Mombasa, there is genuine relief: the Sh4.5 billion Makupa Bridge is complete, easing traffic and reconnecting the island's waters. It proves public works can succeed when completed properly. But that progress stands in sharp contrast to the rest of the country. In Kitale, four thousand traders remain stranded in the dust because Masinde Muliro Market has stalled yet again. In Iten, Kamariny Stadium—promised within six months back in 2017—sits abandoned nine years later. And in the national budget, Sh3.7 billion meant for health workers' payroll was quietly reallocated to renovate executive offices. How do we justify plush carpets and fresh paint while our clinics lack medical staff? Meanwhile, citizens pay upfront for electricity and a mandatory housing levy, wondering when those deductions will translate to reliable power and actual homes in their wards. Kwa ufupi: Ingawa daraja la Makupa limekamilika, ahadi za soko la Kitale na uwanja wa Kamariny bado zinasuasua. Zaidi ya hayo, Shilingi bilioni 3.7 za mishahara ya wahudumu wa afya zimepelekwa kukarabati ofisi za serikali. Ni wakati wa kuuliza: je, kodi yako inakufaa wewe, ama inafaa wachache?",
+    "voice_note": "Habari zenu. This is the weekly update from Kenyans Are Asking. Look at how our money moved this week. While the Sh4.5 billion Makupa Bridge in Mombasa is finally open, look at what happened to the health sector: Sh3.7 billion meant for health workers' salaries was quietly diverted to renovate executive offices. At the same time, four thousand traders in Kitale are still waiting for the stalled Masinde Muliro Market, and Kamariny Stadium in Iten is now nine years late. We pay our electricity bills upfront, we pay the mandatory housing levy every month, yet everyday services are treated as an afterthought. Let's stop focusing on political speeches and start tracking the budget reallocations. Share this voice note with your neighbourhood group—accountability begins with knowing where the shilling went.",
+    "sms": "Usiibiwe: Sh3.7B ya mishahara ya madaktari imeenda kwa ukarabati wa ofisi za wakubwa. Fuatilia bajeti ya kaunti na taifa; kodi yako si ya kupaka ofisi rangi.",
+    "reels": "Sh3.7 billion. That is the exact amount quietly stripped from health workers' payroll and moved into executive office renovations. Think about that next time you visit a public hospital and find no doctor or basic supplies. We are told the exchequer is broke, yet there is always money for VIP lounges and executive paint. Priorities are not declared in press briefings; they are decided in budget lines. Who approved this trade-off?"
+  },
+  "spend_usd": 0.0
+}
