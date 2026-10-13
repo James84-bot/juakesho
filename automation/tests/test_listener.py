@@ -36,7 +36,7 @@ class ListenerTests(unittest.TestCase):
         clock = iter(range(0, 10_000, 5))
         with mock.patch.dict(os.environ, {"TELEGRAM_CHAT_ID": CHAT}), mock.patch.object(listener, "tg", fake_tg), \
                 mock.patch.object(listener, "dispatch", lambda c: runs.append(c) or True), \
-                mock.patch.object(listener.time, "sleep", lambda s: None), \
+                mock.patch.object(listener.time, "sleep", lambda s: None), mock.patch.object(listener, "schedule", lambda: []), \
                 mock.patch.object(listener.time, "time", lambda: next(clock)):
             listener.run(minutes=3)
         self.assertEqual(calls.count("answerCallbackQuery"), 2)
@@ -52,11 +52,35 @@ class ListenerTests(unittest.TestCase):
         clock = iter(range(0, 10_000, 5))
         with mock.patch.dict(os.environ, {"TELEGRAM_CHAT_ID": CHAT}), mock.patch.object(listener, "tg", fake_tg), \
                 mock.patch.object(listener, "dispatch", lambda c: runs.append(c) or True), \
-                mock.patch.object(listener.time, "sleep", lambda s: None), \
+                mock.patch.object(listener.time, "sleep", lambda s: None), mock.patch.object(listener, "schedule", lambda: []), \
                 mock.patch.object(listener.time, "time", lambda: next(clock)):
             listener.run(minutes=2)
         self.assertNotIn("answerCallbackQuery", calls)
         self.assertEqual(runs, ["tick"])
+
+
+    def test_due_post_starts_one_run_on_time(self):
+        calls, runs = [], []
+        clock = iter(range(0, 10_000, 5))
+        with mock.patch.dict(os.environ, {"TELEGRAM_CHAT_ID": CHAT}), \
+                mock.patch.object(listener, "tg", lambda m, f: {"result": []}), \
+                mock.patch.object(listener, "dispatch", lambda c: runs.append(c) or True), \
+                mock.patch.object(listener.time, "sleep", lambda s: None), \
+                mock.patch.object(listener, "schedule", lambda: [("p1#0", 60.0), ("p2#0", 99_999.0)]), \
+                mock.patch.object(listener.time, "time", lambda: next(clock)):
+            listener.run(minutes=5)
+        self.assertEqual(runs, ["tick"])   # p1 once, p2 not yet due
+
+    def test_schedule_reads_approved_posts_with_eat_times(self):
+        week = {"posts": [{"id": "a", "status": "approved", "publish_at": "2026-10-13T12:45:00+03:00"},
+                          {"id": "b", "status": "awaiting", "publish_at": "2026-10-13T13:00:00+03:00"},
+                          {"id": "c", "status": "publish_failed", "attempts": 1, "publish_at": "2026-10-13T12:45:00"}]}
+        def fake(path, raw=False):
+            return [{"name": "2026-W42.json"}] if path.endswith("weeks") else week
+        with mock.patch.object(listener, "_gh", fake):
+            got = dict(listener.schedule())
+        self.assertEqual(set(got), {"a#0", "c#1"})
+        self.assertEqual(got["a#0"], got["c#1"])   # a naive time is read as EAT
 
 
 if __name__ == "__main__":
