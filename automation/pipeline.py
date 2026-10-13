@@ -735,6 +735,33 @@ def graph_get(path: str, fields: dict) -> dict:
     return http("GET", f"https://graph.facebook.com/{version}/{path}?{q}")
 
 
+def meta_check(dry_run: bool = False) -> bool:
+    """Reads (never posts) the Page and the Instagram account with the stored token, and says what works."""
+    lines, ok = [], True
+    if not meta_ready():
+        lines.append("❌ Missing secrets: " + ", ".join(k for k in META_KEYS if not os.environ.get(k)))
+        ok = False
+    else:
+        checks = [("Facebook Page", lambda: graph_get(os.environ["META_PAGE_ID"], {"fields": "name,followers_count"}),
+                   lambda r: f"{r.get('name')} ({r.get('followers_count', '?')} followers)"),
+                  ("Instagram", lambda: graph_get(os.environ["META_IG_USER_ID"], {"fields": "username,followers_count,media_count"}),
+                   lambda r: f"@{r.get('username')} ({r.get('followers_count', '?')} followers)"),
+                  ("Page link", lambda: graph_get(os.environ["META_PAGE_ID"], {"fields": "instagram_business_account"}),
+                   lambda r: "Instagram is linked to the Page" if (r.get("instagram_business_account") or {}).get("id") == os.environ["META_IG_USER_ID"]
+                   else "⚠️ the Page links a different Instagram account (check META_IG_USER_ID)")]
+        for name, call, show in checks:
+            try:
+                lines.append(f"✅ {name}: {show(call())}")
+            except Exception as e:
+                ok = False
+                lines.append(f"❌ {name}: {str(e)[:200]}")
+    text = "🔌 <b>Meta connection check</b> (nothing was posted)\n" + "\n".join(_esc(x) for x in lines)
+    log(text.replace("<b>", "").replace("</b>", ""))
+    if not dry_run:
+        _notify(text + ("\n\nAll set: approved posts will publish at their times." if ok else ""))
+    return ok
+
+
 def preflight(url: str, kind: str) -> None:
     """Instagram only accepts media it can fetch with the right Content-Type. Check before we ask it to."""
     req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "jua-kesho/1.0"})
@@ -1069,7 +1096,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenyans Are Asking autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -1159,6 +1186,8 @@ def _main(argv: list[str] | None = None) -> int:
         collect()   # pick up clips you just sent
     if a.command in {"clips", "clipwork"}:
         process_clips(dry_run=a.dry_run)
+    if a.command == "metacheck":
+        meta_check(dry_run=a.dry_run)
     if a.command == "reels":
         send_reels(a.week or current_week_label(ahead=0), dry_run=a.dry_run)
     if a.command == "photocheck":   # searches this week's photo queries again and explains each result (state/photos.log)
