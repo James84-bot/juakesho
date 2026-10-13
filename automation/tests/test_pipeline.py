@@ -717,7 +717,7 @@ class FreeProviderTests(unittest.TestCase):
         url, key, body = seen[0]
         self.assertEqual(url, self.draft.GEMINI_URL.format(model=self.draft.GEMINI_MODELS[0]))
         self.assertEqual(key, "gm-test")
-        self.assertEqual(body["generationConfig"]["maxOutputTokens"], self.draft.GEMINI_LIMITS["out"])
+        self.assertEqual(body["generationConfig"]["maxOutputTokens"], self.draft.GEMINI_LIMITS["out"] + self.draft.GEMINI_THINK_ROOM)  # reply + room to think
         self.assertEqual(body["systemInstruction"], {"parts": [{"text": "sys"}]})
         self.assertEqual(self.draft._price("anything"), (0.0, 0.0))      # costs nothing
 
