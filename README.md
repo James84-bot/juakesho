@@ -35,8 +35,14 @@ slot (you get one note); you never have to reject old cards.
   Under 8 gets one rewrite; still under 7 is held back, never sent to you. No two posts on one story.
 - **Live hashtags**: matching trending hashtags (including the people's accountability tags) are added to captions
   automatically.
-- **Photos** (`photos.py`): real, licensed (CC0 / public domain / CC BY / CC BY-SA, credited) photos of the
-  subject, taken in Kenya; no stranger's face fills a frame; a real Kenyan landmark when nothing fits.
+- **Photos** (`photos.py`), in this order:
+  1. **Your photo**: reply to a post's card with a photo whose caption starts `yangu` (you took it) or
+     `ruhusa @who (how they agreed)`. The post is redone with it and a new card comes back in minutes.
+  2. **The event itself**: a licensed photo (CC0 / public domain / CC BY / CC BY-SA, credited) of that story,
+     taken in the days around it, found on Wikimedia Commons. The named office holder may be in it; a
+     stranger's face may not fill the frame.
+  3. **Symbolic**: a real Kenyan place or object that stands for the story, or a landmark when nothing fits.
+  Every card says which one it carries. TV and newspaper photos are never used without the owner's permission.
 
 ### Formats (calendar.json)
 Sauti ya Mwananchi · Set It Straight · Follow the Money · Promise Tracker · Chapter Six Test · scam alerts ·

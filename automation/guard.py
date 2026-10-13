@@ -332,6 +332,8 @@ def check(post: dict) -> Report:
         for f in ("side", "tone"):
             if not post.get(f):
                 rep.errors.append(f"no `{f}`: every post says {'side: government, opposition, both or none' if f == 'side' else 'tone: credit, criticism or explainer'}")
+    if len(str(post.get("event_query") or "")) > 60:
+        rep.errors.append("'event_query' is over 60 characters: name the person and the occasion, 2-5 words")
     if post.get("side") is not None and post.get("side") not in {"government", "opposition", "both", "none"}:
         rep.errors.append("'side' must be government, opposition, both or none")
     if post.get("tone") is not None and post.get("tone") not in {"credit", "criticism", "explainer"}:

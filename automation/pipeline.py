@@ -159,7 +159,7 @@ def _pick(value, week_no: int):
     return value[week_no % len(value)] if isinstance(value, list) else value
 
 
-EVIDENCE_SKIP = {"status", "guard", "critic", "ink", "symbol_box", "seed", "attempts", "last_error", "photo_file", "person_file"}
+EVIDENCE_SKIP = {"status", "guard", "critic", "ink", "symbol_box", "seed", "attempts", "last_error", "photo_file", "person_file", "tg_msg"}
 
 
 def record_evidence(members: list[dict]) -> None:
@@ -380,7 +380,7 @@ def rephoto(label: str) -> list[str]:
         p["id"] = _next_rev(old)
         if p.get("group"):
             p["group"] = groups.setdefault(p["group"], _next_rev(p["group"]))
-        for k in ("photo_file", "photo_credit"):
+        for k in ("photo_file", "photo_credit", "photo_kind"):
             p.pop(k, None)
         p["status"] = "drafted"
         changed.append(p["id"])
@@ -392,6 +392,81 @@ def rephoto(label: str) -> list[str]:
     save_week(data)
     log(f"rephoto {label}: {len(changed)} post(s) get new photos")
     return changed
+
+
+PHOTO_HOW_TO = ("📷 To use your photo on a post: <b>reply to that post's card</b> with the photo, and make the caption's "
+                 "first line say where it came from:\n<code>yangu</code>  we took it\n"
+                 "<code>ruhusa @who (how they said yes)</code>  the photographer agreed\n"
+                 "Photos from TV stations or newspapers can't be used without their permission.")
+
+
+def _is_image(msg: dict) -> bool:
+    doc = msg.get("document") or {}
+    return bool(msg.get("photo")) or str(doc.get("mime_type", "")).startswith("image/")
+
+
+def _photo_intake(msg: dict, chat: str) -> None:
+    """You replied to a card with a photo: that post gets your picture, a new id and a fresh card.
+    Only photos you took or have permission for (first caption line, as for clips)."""
+    import tazama
+
+    def reply(text: str) -> None:
+        try:
+            tg("sendMessage", {"chat_id": chat, "text": text, "parse_mode": "HTML", "reply_to_message_id": msg["message_id"]})
+        except Exception as e:
+            log(f"photo reply skipped: {e}")
+
+    target = (msg.get("reply_to_message") or {}).get("message_id")
+    hit = None
+    for f in sorted(WEEKS.glob("*.json"), reverse=True)[:3] if target else []:
+        data = json.loads(f.read_text(encoding="utf-8"))
+        post = next((p for p in data["posts"] if p.get("tg_msg") == target), None)
+        if post:
+            hit = (data, post)
+            break
+    if not hit:
+        return reply(PHOTO_HOW_TO)
+    data, post = hit
+    if post["status"] not in {"awaiting", "approved"} or post.get("group"):
+        return reply(f"📷 <b>{_esc(post['id'])}</b> can't take a new photo now ({_esc(post['status'])}).")
+    rights = tazama.parse_caption(msg.get("caption", ""))
+    if not rights or rights["rights"] not in {"own", "permission"}:
+        return reply("📷 Got the photo, but I can't use it yet.\n\n" + PHOTO_HOW_TO)
+    photo = (msg.get("document") if not msg.get("photo") else max(msg["photo"], key=lambda x: x.get("width", 0)))
+    if not msg.get("document") and photo.get("width", 0) < 800:
+        return reply("📷 That photo is too small (under 800 px wide). Send the original, or send it as a file.")
+    label = data["collection"]
+    new_id = _next_rev(post["id"])
+    rel = Path("exports") / label / "photos" / f"{new_id}-sent.jpg"
+    try:
+        (ROOT / rel).parent.mkdir(parents=True, exist_ok=True)
+        tazama.download(_tg_file_path, need("TELEGRAM_BOT_TOKEN")["TELEGRAM_BOT_TOKEN"], photo["file_id"], ROOT / rel)
+        from PIL import Image
+        with Image.open(ROOT / rel) as im:   # whatever arrived (PNG, HEIC-as-JPEG...), store a clean JPEG
+            im.convert("RGB").save(ROOT / rel, "JPEG", quality=92)
+    except Exception as e:
+        return reply(f"📷 Couldn't download that photo ({_esc(str(e)[:120])}). Try again.")
+    credit = "Photo: Kenyans Are Asking" if rights["rights"] == "own" else f"Photo: {rights['credit']} (with permission)"
+    for k in ("photo_file", "photo_credit", "photo_kind", "tg_msg", "decided_at"):
+        post.pop(k, None)
+    post.update(id=new_id, photo=f"sent:{rel.as_posix()}", photo_rights_credit=credit,
+                photo_rights=rights["evidence"], status="drafted")
+    save_week(data)
+    log(f"photo swap: {new_id} ({rights['rights']})")
+    reply(f"📷 Got it. <b>{_esc(new_id)}</b> gets your photo; the new card comes back here in a few minutes for ✅. "
+          "The old card's buttons no longer do anything.")
+
+
+def swapwork() -> int:
+    """Renders and re-sends posts whose photo you swapped (status drafted after a photo reply)."""
+    done = 0
+    for f in sorted(WEEKS.glob("*.json")):
+        data = json.loads(f.read_text(encoding="utf-8"))
+        if any(p["status"] == "drafted" and str(p.get("photo", "")).startswith("sent:") for p in data["posts"]):
+            render_week(data["collection"])
+            ask(data["collection"])
+            done += 1
+    return done
 
 
 def _clip_intake(msg: dict, chat: str) -> None:
@@ -603,6 +678,13 @@ def _preview_text(p: dict) -> str:
         c = p["critic"]
         parts = " · ".join(f"{k} {c[k]}" for k in ("hook", "clarity", "picture", "send", "fresh") if c.get(k) is not None)
         lines += ["", f"⭐ {c.get('avg')}/10  {parts}", f"✏️ {esc(str(c.get('note', '')))}"]
+    kind = p.get("photo_kind")
+    if kind == "event":
+        lines += ["📷 Photo from the event itself (licensed)"]
+    elif kind == "yours":
+        lines += ["📷 Your photo"]
+    elif p.get("photo_file") and p.get("template") != "tazama" and not p.get("group"):
+        lines += ["🖼 Symbolic photo: no licensed photo of the day was found. Reply to this card with yours to swap it."]
     for credit in (p.get("person_credit") or p.get("photo_credit"), p.get("track_credit")):
         if credit:
             lines += [f"©️ {esc(credit)}"]
@@ -680,18 +762,23 @@ def ask(label: str, dry_run: bool = False) -> dict:
 
 
 def _send_card(chat: str, label: str, p: dict, out_dir: Path) -> None:
-    """One approval card. A Reel that won't upload falls back to its still image, so you still get to decide."""
+    """One approval card. A Reel that won't upload falls back to its still image, so you still get to decide.
+    The card's message id is kept on the post: replying to the card with a photo swaps the picture."""
+    res = None
     if p.get("reel") and (out_dir / f"{p['id']}.mp4").exists():
         try:
-            tg("sendVideo", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML", "supports_streaming": "true",
-                             "reply_markup": _buttons(f"{label}|{p['id']}", reel=True)},
-               {"video": out_dir / f"{p['id']}.mp4"})
-            return
+            res = tg("sendVideo", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML", "supports_streaming": "true",
+                                   "reply_markup": _buttons(f"{label}|{p['id']}", reel=True)},
+                     {"video": out_dir / f"{p['id']}.mp4"})
         except Exception as e:
             log(f"reel upload failed for {p['id']}, sending the still: {e}")
-    tg("sendPhoto", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML",
-                     "reply_markup": _buttons(f"{label}|{p['id']}", reel=bool(p.get("reel")))},
-       {"photo": out_dir / f"{p['id']}.png"})
+    if res is None:
+        res = tg("sendPhoto", {"chat_id": chat, "caption": _preview_text(p), "parse_mode": "HTML",
+                               "reply_markup": _buttons(f"{label}|{p['id']}", reel=bool(p.get("reel")))},
+                 {"photo": out_dir / f"{p['id']}.png"})
+    msg_id = ((res or {}).get("result") or {}).get("message_id")
+    if msg_id:
+        p["tg_msg"] = msg_id
 
 
 # ---------------------------------------------------------------------------
@@ -748,8 +835,11 @@ def collect() -> None:
     for u in updates.get("result", []):
         offset = max(offset, u["update_id"] + 1)
         msg = u.get("message")
-        if msg and str(msg.get("chat", {}).get("id")) == allowed_chat:   # a clip you sent for a Tazama Hii Reel
-            _clip_intake(msg, allowed_chat)
+        if msg and str(msg.get("chat", {}).get("id")) == allowed_chat:
+            if _is_image(msg):            # a photo you replied to a card with: swaps that post's picture
+                _photo_intake(msg, allowed_chat)
+            else:                         # a clip you sent for a Tazama Hii Reel
+                _clip_intake(msg, allowed_chat)
             continue
         cq = u.get("callback_query")
         if not cq:
@@ -1184,7 +1274,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenyans Are Asking autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -1280,6 +1370,8 @@ def _main(argv: list[str] | None = None) -> int:
         collect()   # pick up clips you just sent
     if a.command in {"clips", "clipwork"}:
         process_clips(dry_run=a.dry_run)
+    if a.command == "swapwork" and not a.dry_run:
+        swapwork()
     if a.command == "aicheck":   # one tiny call to the writer: which provider answers, and does it work
         import draft as drafter
         try:

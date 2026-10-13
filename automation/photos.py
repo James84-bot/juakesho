@@ -19,6 +19,7 @@ for a real person or project we're talking about. On civic posts the design is l
 """
 from __future__ import annotations
 
+import datetime as dt
 import html
 import json
 import os
@@ -304,6 +305,83 @@ def _commons_once(query: str, pid: str, place: str | None = None, full: str | No
     return _pick(good, pid)
 
 
+EVENT_DAYS_BEFORE, EVENT_DAYS_AFTER = 4, 1   # a photo taken/uploaded in this window around the post counts as "of the day"
+
+
+def _surname(who: str) -> str:
+    """'Energy CS Opiyo Wandayi' -> 'wandayi' (the word a caption of their photo would carry)."""
+    words = [w for w in re.findall(r"[A-Z][a-z]{2,}", who or "") if w.lower() not in
+             {"president", "deputy", "senator", "governor", "speaker", "minister", "cabinet", "secretary", "chief",
+              "justice", "the", "mp", "mca", "energy", "treasury", "interior", "health", "education", "national",
+              "county", "assembly", "opposition", "leader", "former", "commissioner", "chairperson", "chair"}]
+    return words[-1].lower() if words else ""
+
+
+def _event_window(post: dict) -> tuple[dt.datetime, dt.datetime]:
+    try:
+        day = dt.datetime.fromisoformat(post["publish_at"]).astimezone(dt.timezone.utc)
+    except (KeyError, ValueError):
+        day = dt.datetime.now(dt.timezone.utc)
+    return day - dt.timedelta(days=EVENT_DAYS_BEFORE), day + dt.timedelta(days=EVENT_DAYS_AFTER)
+
+
+def _when_taken(info: dict) -> dt.datetime | None:
+    md = info.get("extmetadata", {})
+    raw = re.sub(r"<[^>]+>", "", md.get("DateTimeOriginal", {}).get("value", "")).strip()
+    m = re.match(r"(\d{4})[-:](\d{2})[-:](\d{2})", raw)
+    if m:
+        return dt.datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), 12, tzinfo=dt.timezone.utc)
+    ts = info.get("timestamp")   # upload time: a fresh upload of an older photo still fails the window below
+    return dt.datetime.fromisoformat(ts.replace("Z", "+00:00")) if ts else None
+
+
+def event_photo(post: dict) -> tuple[bytes, dict] | None:
+    """A licensed photo OF the story, taken in the days around it (Wikimedia Commons, newest first).
+    A named public figure may be in it (their name must be in the photo's own description); anyone else's
+    face still may not fill the frame."""
+    query = (post.get("event_query") or "").strip()
+    if not query:
+        return None
+    start, end = _event_window(post)
+    surname = _surname(str(post.get("who", "")))
+    for q in _query_ladder(query):
+        params = {"action": "query", "generator": "search", "gsrsearch": f"{q} filetype:bitmap", "gsrnamespace": 6,
+                  "gsrlimit": 30, "gsrsort": "create_timestamp_desc", "prop": "imageinfo",
+                  "iiprop": "url|extmetadata|size|mime|timestamp", "iiurlwidth": 1600, "format": "json"}
+        pages = json.loads(_get(f"{COMMONS}?{urllib.parse.urlencode(params)}")).get("query", {}).get("pages", {})
+        good, why = [], {"size": 0, "licence": 0, "date": 0, "subject": 0}
+        for page in sorted(pages.values(), key=lambda p: p.get("index", 0)):
+            info = (page.get("imageinfo") or [{}])[0]
+            md = info.get("extmetadata", {})
+            lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
+            if info.get("mime") not in {"image/jpeg", "image/png"} or info.get("width", 0) < 1000 or info.get("height", 0) < 700:
+                why["size"] += 1
+                continue
+            if not _licence_ok(lic):
+                why["licence"] += 1
+                continue
+            taken = _when_taken(info)
+            if not taken or not (start <= taken <= end):
+                why["date"] += 1
+                continue
+            about = " ".join([page.get("title", ""), md.get("ImageDescription", {}).get("value", ""),
+                              md.get("Categories", {}).get("value", "")]).lower()
+            if not _relevant(about, query) or ("kenya" not in about and not (surname and surname in about)):
+                why["subject"] += 1
+                continue
+            artist = html.unescape(re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown"))).strip()[:50]
+            good.append((info.get("thumburl") or info["url"],
+                         {"credit": f"Photo: {artist} / Wikimedia Commons, {lic}", "url": info.get("descriptionurl", ""),
+                          "kind": "event", "named": bool(surname and surname in about)}))
+        _note(f"  event '{q}' for {post['id']} ({start:%d %b}-{end:%d %b}): {len(pages)} found, {len(good)} usable, dropped {why}")
+        for url, meta in good[:4]:
+            data = _get(url)
+            if meta.pop("named") or faces_ok(data):   # the named office holder may be the face; a stranger may not
+                return data, meta
+            _note(f"  event photo skipped for {post['id']}: an unnamed face fills the frame ({meta.get('url')})")
+    return None
+
+
 def fetch(post: dict, out_dir: Path) -> dict | None:
     """Resolves the post's photo to a local file. Returns {"file", "credit", "url"} or None (never raises)."""
     try:
@@ -311,12 +389,24 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
         if own.startswith("own:"):
             f = OWN / Path(own[4:]).name
             return {"file": str(f), "credit": "", "url": ""} if f.exists() else None
+        if own.startswith("sent:"):   # a photo you replied to the card with (rights given in its caption)
+            f = HERE.parent / own[5:]
+            return ({"file": str(f), "credit": post.get("photo_rights_credit", ""), "url": "", "kind": "yours"}
+                    if f.exists() else None)
         query = (post.get("photo_query") or "").strip()
-        if not query:
-            return None
         hit = _cached(out_dir, post["id"])
         if hit:
             return hit
+        if post.get("event_query") and post.get("template") in CIVIC_TEMPLATES | {"glasspoll"}:
+            try:
+                got = event_photo(post)
+            except Exception as e:
+                _note(f"  event photo search failed for {post.get('id')}: {e}")
+                got = None
+            if got:
+                return _save(out_dir, post["id"], *got)
+        if not query:
+            return None
         order = (commons, openverse, pexels) if LOCAL.search(query) else (pexels, openverse, commons)
         tries = [(source, query) for source in order]
         if post.get("hot"):   # today's story: try this week's real photos of it first
@@ -333,6 +423,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             if got:
                 if q != query:
                     _note(f"  photo for {post['id']}: nothing for '{query}', used '{q}'")
+                got[1].setdefault("kind", "symbolic")
                 return _save(out_dir, post["id"], *got)
         _note(f"  no photo found for {post['id']} ('{query}')")
         return None
@@ -407,10 +498,11 @@ def _attach(posts: list[dict], out_dir: Path) -> None:
             else:
                 p.pop("person_file", None)
                 p.pop("person_credit", None)
-        if p.get("photo") or p.get("photo_query"):
+        if p.get("photo") or p.get("photo_query") or p.get("event_query"):
             got = fetch(p, out_dir / "photos")
             if got:
                 p["photo_file"], p["photo_credit"] = got["file"], got["credit"]
+                p["photo_kind"] = got.get("kind", "symbolic")
             else:
-                p.pop("photo_file", None)
-                p.pop("photo_credit", None)
+                for k in ("photo_file", "photo_credit", "photo_kind"):
+                    p.pop(k, None)
