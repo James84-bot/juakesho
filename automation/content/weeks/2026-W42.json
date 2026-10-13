@@ -76,7 +76,7 @@
       ],
       "bg": "shuka",
       "publish_at": "2026-10-13T12:45:00+03:00",
-      "status": "rendered",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
@@ -110,61 +110,63 @@
       "id": "2026-w42-d3-promise-r3",
       "template": "promise",
       "lane": "campus",
-      "demand": 3,
-      "who": "Samson Cherargei, Nandi Senator",
-      "promise": "Respect Article 142(2) and uphold the five-year term limit set by the Constitution.",
-      "said": "Oath of Office, Senate of Kenya, 2022",
-      "verdict": "broken",
-      "reality": "Pushed a fresh legislative push to extend the presidential term limit from 5 to 7 years.",
-      "ask": "Kenyans are asking: why extend terms instead of delivering?",
-      "proof": [
-        "Sponsored the Constitution of Kenya (Amendment) Bill seeking 7-year terms for President.",
-        "Over 90% of public participation submissions rejected the bill in October 2024.",
-        "Announced a fresh bid in October 2026 despite widespread public rejection."
-      ],
-      "message": "Senator Cherargei renews push to extend presidential term limits from 5 to 7 years against public will.",
-      "action": "Submit your rejection to Senate: clerk.senate@parliament.go.ke",
-      "photo_query": "Kenya National Assembly",
-      "source": "Capital FM, Cherargei threatens fresh bid to extend Ruto stay in power, 12 Oct 2026; Senate Hansard",
+      "who": "William Ruto, President of Kenya",
       "where": "National",
-      "when": "12 Oct 2026",
-      "side": "government",
-      "tone": "criticism",
-      "caption": "Over 90% of Kenyans rejected the 7-year term limit in 2024. Now a fresh push is back on the table. The Constitution belongs to the people, not politicians looking for extra years.\n\n#TermLimits #Cherargei #KenyansAreAsking",
+      "when": "14 Oct 2026",
+      "promise": "Guaranteed paid internships for all university and college graduates within six months of completion.",
+      "said": "Kenya Kwanza Manifesto, 2022",
+      "reality": "PSC recruits fewer than 10,000 interns a year while over 100,000 students graduate annually.",
+      "ask": "Kenyans are asking: where are the graduate internships?",
+      "source": "Kenya Kwanza Manifesto 2022, Youth Charter; Public Service Commission Annual Reports 2023-2025",
+      "proof": [
+        "PSC reports show under 10,000 paid slots available per fiscal year.",
+        "Over 100,000 comrades leave universities and TVETs annually with no placement.",
+        "Graduates still rely on unpaid attachments to seek entry-level roles."
+      ],
+      "verdict": "broken",
+      "measure": "Under 10% placed",
+      "message": "Over 100,000 comrades graduate annually into unpaid work despite a promise of guaranteed paid internships.",
+      "action": "Demand your MP push for expanded public internship funding in the next budget",
+      "photo_query": "university graduation Kenya",
+      "caption": "Every graduation season, thousands of comrades leave campus with degrees but zero paid openings. The promise was guaranteed paid internships for every graduate within six months. The record shows under 10,000 public slots a year.\n\nDid you or anyone you know secure a state internship after campus?\n\n#PromiseTracker #KenyansAreAsking",
       "beats": [
-        "They want *7 years* now.",
-        "Kenyans rejected it in 2024.",
-        "Now Senator Cherargei tries again.",
-        "Article 142 protects *5 years*.",
-        "Why fear the ballot box?",
-        "Reject term limit extensions."
+        "Guaranteed paid *internships* promised.",
+        "That was the 2022 *promise*.",
+        "100,000 comrades graduate every year.",
+        "Fewer than *10,000* get state slots.",
+        "Kenyans are asking: *where are the jobs?*",
+        "Push your MP for *internship funding*."
       ],
       "bg": "usiku",
       "publish_at": "2026-10-14T18:30:00+03:00",
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "weak: editor scored 6.0/10. Demand is low this week because this is a recycled 2024 debate; focus on live stories like the Ruto-Uhuru fallout."
-        ],
+        "errors": [],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
       "critic": {
-        "hook": 6,
-        "send": 6,
-        "clarity": 7,
-        "fresh": 6,
-        "voice": 7,
-        "craft": 7,
-        "picture": 6,
-        "hold": 6,
-        "demand": 3,
-        "action": 5,
-        "fair": 7,
-        "avg": 6.0,
-        "note": "Demand is low this week because this is a recycled 2024 debate; focus on live stories like the Ruto-Uhuru fallout."
-      }
+        "hook": 9,
+        "send": 9,
+        "clarity": 10,
+        "fresh": 9,
+        "voice": 8,
+        "craft": 8,
+        "picture": 9,
+        "hold": 8,
+        "demand": 9,
+        "action": 8,
+        "fair": 9,
+        "avg": 8.7,
+        "note": "Make the voice sound more like an ordinary Kenyan comrade on X instead of a policy brief."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d3-promise-r3-photo.jpg",
+      "photo_credit": "Photo: Dkiplimo / Wikimedia Commons, CC BY-SA 4.0",
+      "ink": {
+        "1": "#F8F7F6"
+      },
+      "reel": true
     },
     {
       "id": "2026-w42-d4-sauti-r3",
@@ -194,7 +196,7 @@
       ],
       "bg": "usiku",
       "publish_at": "2026-10-15T19:30:00+03:00",
-      "status": "rendered",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
@@ -224,184 +226,172 @@
       "id": "2026-w42-d5-straight-r3",
       "template": "straight",
       "lane": "everyone",
-      "demand": 4,
-      "who": "United Opposition Leaders, Nairobi Rally, Oct 2026",
-      "claim": "We are united as one team and have zero internal deals with the Kenya Kwanza administration.",
-      "verdict": "misleading",
-      "truth": "Opposition leaders trade mole claims while backing government bills.",
-      "proof": [
-        "Key opposition MPs voted with government to approve broad-based cabinet nominees.",
-        "Senators Methu and Nyoro publicly accused allied factions of being state-sponsored moles.",
-        "Coalition parties remain divided over joint presidential candidate selection for 2027."
-      ],
-      "pride": "Kenyans see right through cosmetic alliances.",
-      "message": "The united opposition claims complete unity, but internal trade-offs and mole accusations show otherwise.",
-      "action": "Check how your opposition MP voted on recent tax bills at parliament.go.ke",
-      "photo_query": "Kenya National Assembly",
-      "claim_source": "Opposition Joint Presser, Nairobi, October 2026; The Standard, Nyoro is a mole in opposition, 12 Oct 2026",
-      "source": "The Standard, Nyoro is a mole in opposition, Methu claims, 12 Oct 2026; National Assembly Hansard",
+      "who": "Samson Cherargei, Nandi Senator (Senate debate)",
       "where": "National",
       "when": "12 Oct 2026",
-      "side": "opposition",
-      "tone": "criticism",
-      "caption": "The opposition promises a united front against government policies, yet their own members trade accusations of secret pacts with the state. Holding leaders to account means checking every side.\n\n#SetItStraight #Opposition #KenyansAreAsking",
+      "claim": "Parliament can extend presidential term limits to seven years without taking the vote to a referendum.",
+      "claim_source": "Capital FM: Cherargei threatens fresh bid to extend Ruto’s stay in power, 12 Oct 2026",
+      "truth": "Changing presidential term limits requires a mandatory referendum.",
+      "pride": "Sovereign power over terms rests with wananchi.",
+      "source": "Constitution of Kenya 2010, Article 255(1)(f) and Article 256; Elections Act, s.49",
+      "proof": [
+        "Article 255(1)(f) of the Constitution protects presidential terms from direct MP votes.",
+        "Any bill altering term limits must pass both houses and go to a citizen ballot.",
+        "At least 20 percent of registered voters across 24 counties must vote in the poll."
+      ],
+      "verdict": "false",
+      "message": "No politician can extend presidential term limits through Parliament alone without a national referendum.",
+      "action": "Read Article 255 of the Constitution to protect your vote",
+      "photo_query": "Kenya National Assembly",
+      "caption": "Talk of extending the presidential term from five to seven years is back in Parliament. The law is clear: politicians cannot vote away your term limits on their own. Article 255 requires every registered voter to decide.\n\nWhat do you think of attempts to extend presidential terms? Share below.\n\n#SetItStraight #NandiFocus #KenyansAreAsking",
       "beats": [
-        "They claimed *complete unity*.",
-        "Then called each other moles.",
-        "Broad-based deals behind closed doors.",
-        "Kenyans deserve a *real opposition*.",
-        "Check how your MP voted.",
-        "Hold every leader accountable."
+        "Can MPs extend the *presidential term*?",
+        "A senator claimed Parliament *can decide*.",
+        "*False.* The Constitution says no.",
+        "Article 255 demands a *referendum*.",
+        "Wananchi hold the *final vote*.",
+        "Read Article 255 to *protect your vote*."
       ],
       "bg": "usiku",
       "publish_at": "2026-10-16T17:00:00+03:00",
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "weak: editor scored 6.3/10. Needs a stronger, more specific hook about the opposition squabbles rather than a generic claim verdict."
-        ],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
+        "errors": [],
+        "warnings": []
       },
       "critic": {
-        "hook": 6,
-        "send": 6,
-        "clarity": 7,
-        "fresh": 6,
-        "voice": 7,
-        "craft": 7,
-        "picture": 6,
-        "hold": 6,
-        "demand": 4,
-        "action": 6,
-        "fair": 8,
-        "avg": 6.3,
-        "note": "Needs a stronger, more specific hook about the opposition squabbles rather than a generic claim verdict."
-      }
+        "hook": 9,
+        "send": 10,
+        "clarity": 10,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 10,
+        "action": 9,
+        "fair": 9,
+        "avg": 9.3,
+        "note": "Strong, keep the direct constitutional receipts tight."
+      },
+      "trend": "#NandiFocus",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d5-straight-r3-photo.jpg",
+      "photo_credit": "Photo: Sir. Kevin Macharia / Wikimedia Commons, CC BY-SA 2.0",
+      "reel": true
     },
     {
       "id": "2026-w42-d6-promise-r3",
       "template": "promise",
       "lane": "everyone",
-      "demand": 5,
-      "who": "Central Bank of Kenya and National Treasury",
-      "promise": "Launch an over-the-counter secondary market platform to open up government securities trading.",
-      "said": "Medium Term Debt Strategy, National Treasury, 2023",
-      "verdict": "kept",
-      "reality": "CBK launched the dealer-led OTC platform for government bonds, boosting liquidity and price transparency.",
-      "ask": "Kenyans are asking: when do retail bond minimums drop?",
-      "proof": [
-        "Launched automated OTC trading platform for Treasury bonds in October 2026.",
-        "Allows direct settlement and real-time pricing away from commercial bank monopoly.",
-        "Shortens transaction turnaround times from three days to same-day settlement."
-      ],
-      "message": "CBK delivered the OTC bond platform for transparent trading. Next step: lower retail access limits.",
-      "action": "Learn how Treasury bonds work on centralbank.go.ke/investments",
-      "photo_query": "Kenyan shilling banknotes",
-      "source": "Briefs Finance, Kenya to Launch Dealer-Led OTC Platform for Government Securities, 12 Oct 2026; Central Bank of Kenya Notices",
+      "series": "Credit Where Due",
+      "who": "Kamau Thugge, Central Bank of Kenya Governor",
       "where": "National",
       "when": "12 Oct 2026",
-      "side": "government",
-      "tone": "credit",
-      "caption": "Credit where due: CBK has rolled out the dealer-led OTC platform for government securities. This breaks the bank monopoly on bond prices. Now make minimum investment sizes small enough for ordinary savers.\n\n#CreditWhereDue #CentralBank #KenyansAreAsking",
+      "promise": "Launch a dealer-led Over-The-Counter platform to modernize secondary trading of Treasury securities.",
+      "said": "CBK Monetary Policy Statement, 2024",
+      "reality": "CBK and market players rolled out the dealer-led OTC platform for trading Treasury bills and bonds.",
+      "ask": "Kenyans are asking: will this lower public borrowing costs?",
+      "source": "Briefs Finance, Oct 2026; Central Bank of Kenya Secondary Market Framework",
+      "proof": [
+        "The dealer-led OTC platform enables commercial banks to trade securities in real time.",
+        "Replaces slow manual trading to increase liquidity in domestic debt markets.",
+        "Aimed at providing transparent pricing for Treasury bills and government bonds."
+      ],
+      "verdict": "kept",
+      "measure": "Delivered",
+      "message": "The Central Bank delivered its pledge to modernize bond trading through a dealer-led market platform.",
+      "action": "Track government bond rates on the Central Bank website",
+      "photo_query": "Central Bank of Kenya Nairobi",
+      "caption": "Credit where due: the Central Bank promised an Over-The-Counter platform to modernize how Treasury bills and bonds are traded, and it has gone live. Open market pricing brings transparency to domestic borrowing.\n\nWill this translate to lower interest rates on our public debt? Tell us what you think.\n\n#FollowTheMoney #KenyansAreAsking",
       "beats": [
-        "Treasury promised an *OTC platform*.",
-        "CBK officially delivered it.",
-        "Bond prices are now *transparent*.",
-        "Bank monopoly broken on trading.",
-        "Good step. Now *open retail* access.",
-        "Learn bond basics on CBK site."
+        "A financial promise *delivered*.",
+        "CBK promised an *OTC trading platform*.",
+        "Bonds traded electronically in *real time*.",
+        "Brings transparency to *domestic debt*.",
+        "Now: will it *lower debt costs*?",
+        "Track bond yields on *cbk.go.ke*."
       ],
       "bg": "chai",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "series": "Credit Where Due",
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "weak: editor scored 5.2/10. A 22-year-old scrolling past a generic photo of shilling notes won't stop for bond market infrastructure; it needs to connect directly to why treasury bills matter to their pocket today."
-        ],
+        "errors": [],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
       "critic": {
-        "hook": 5,
-        "send": 4,
-        "clarity": 6,
-        "fresh": 5,
-        "voice": 5,
-        "craft": 6,
-        "picture": 4,
-        "hold": 5,
+        "hook": 7,
+        "send": 6,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 7,
         "demand": 5,
-        "action": 6,
-        "fair": 6,
-        "avg": 5.2,
-        "note": "A 22-year-old scrolling past a generic photo of shilling notes won't stop for bond market infrastructure; it needs to connect directly to why treasury bills matter to their pocket today."
-      }
+        "action": 8,
+        "fair": 9,
+        "avg": 7.1,
+        "note": "Topic is low demand compared to the political fights; make the headline punchier."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d6-promise-r3-photo.jpg",
+      "photo_credit": "Photo: Arthur Buliva / Wikimedia Commons, CC BY-SA 3.0",
+      "reel": true
     },
     {
       "id": "2026-w42-d7-glasspoll-r3",
       "template": "glasspoll",
       "lane": "everyone",
-      "demand": 3,
-      "hook": "Senate term limit bid",
-      "question": "Extend presidential term to 7 years?",
+      "hook": "Presidential term limits",
+      "question": "Should presidential terms stay 5 years?",
+      "cta": "Vote and share your view",
       "options": [
-        "No, keep 5 years",
-        "Yes, extend to 7"
+        "Keep 5-year limit",
+        "Extend the term"
       ],
-      "cta": "Vote to see Kenya's verdict",
-      "message": "Kenyans vote on whether presidential terms should be extended from 5 to 7 years.",
-      "action": "Cast your vote in the poll to record your stance on term limits",
-      "photo_query": "Supreme Court of Kenya",
-      "source": "Capital FM, Cherargei threatens fresh bid to extend Ruto stay in power, 12 Oct 2026",
-      "who": "Samson Cherargei, Nandi Senator",
-      "where": "National",
-      "when": "12 Oct 2026",
-      "side": "none",
-      "tone": "explainer",
-      "caption": "Senator Samson Cherargei is mounting a fresh bid to extend the presidential term limit from 5 to 7 years. Where do you stand on changing the 2010 Constitution? Vote below.\n\n#YourSay #TermLimits #KenyansAreAsking",
+      "message": "Kenyans vote on whether presidential terms should stay at five years or be changed.",
+      "action": "Cast your vote in the poll and discuss with your friends",
+      "photo_query": "ballot box Kenya",
+      "caption": "Senators are floating proposals to extend the presidential term beyond five years. Article 255 gives the final say to you in a referendum. Where do you stand on term limits?\n\nVote above and drop your reason in the comments.\n\n#KenyansAreAsking",
       "beats": [
-        "Should term limits *change to 7*?",
-        "Article 142 gives us *5 years*.",
-        "Senator Cherargei wants more time.",
-        "Cast your vote below.",
-        "Let the people decide."
+        "Should presidential terms *change*?",
+        "MPs want to debate *seven years*.",
+        "The Constitution gives *you* the vote.",
+        "Cast your vote on our *story poll*."
       ],
       "bg": "usiku",
       "publish_at": "2026-10-18T18:00:00+03:00",
       "size": "story",
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "weak: editor scored 6.9/10. Hook with the specific Senator and term proposal right in the first line instead of a vague label, since term limit talk always drives engagement."
-        ],
+        "errors": [],
         "warnings": []
       },
       "critic": {
-        "hook": 7,
-        "send": 7,
-        "clarity": 8,
-        "fresh": 7,
-        "voice": 7,
-        "craft": 7,
-        "picture": 5,
-        "hold": 6,
-        "demand": 8,
-        "action": 7,
-        "fair": 7,
-        "avg": 6.9,
-        "note": "Hook with the specific Senator and term proposal right in the first line instead of a vague label, since term limit talk always drives engagement."
-      }
+        "hook": 8,
+        "send": 9,
+        "clarity": 10,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 10,
+        "action": 8,
+        "fair": 9,
+        "avg": 8.5,
+        "note": "Good story poll timed perfectly with the Cherargei noise."
+      },
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d7-glasspoll-r3-photo.jpg",
+      "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0"
     }
   ],
   "scripts": {
-    "radio": "Habari zenu, this is Kenyans Are Asking.\n\nThis week, three numbers demand our attention: 10.5 trillion, seven years, and 6.3 million.\n\nFirst, Kenya’s public debt has breached 10.5 trillion shillings. Parliament is finally talking about setting up an open register. Why did it take this long? When debt is contracted behind closed doors, ordinary citizens pay for it in broad daylight through punishing taxes. We must insist on a transparent ledger showing every lender, every interest rate, and every stalled project.\n\nSecond, Senator Samson Cherargei is reviving his bid to extend the presidential term from five to seven years. Let us be plain: sovereign power belongs to the people under Article 1. Tinkering with constitutional term limits while citizens struggle with basic survival shows political priorities that are completely out of touch.\n\nFinally, the IEBC plans to register 6.3 million new voters ahead of 2027. But how does that happen when thousands of young Kenyans cannot get national IDs? Processing bottlenecks at Huduma centres are locking out the next generation. If the state cannot print IDs on time, it compromises the integrity of the next election before it even starts.\n\nKwa ufupi: Deni la taifa limevuka trilioni kumi nukta tano, na bunge lazima liweke wazi kila senti. Wakati huo huo, mpango wa kuongeza muhula wa rais hadi miaka saba hauna mashiko huku vijana wakinyimwa vitambulisho vya kupiga kura. Simama imara, uliza maswali, na usikubali kupotoshwa.",
-    "voice_note": "Jambo fam, here is your weekly briefing from Kenyans Are Asking.\n\nWatch the political sleight of hand happening right now. Senator Cherargei is back with that proposal to stretch the presidential term limit from five to seven years. Kenyans already said no to this, and sovereign power rests with citizens, not politicians looking to secure longer tenures.\n\nMeanwhile, the IEBC wants to register 6.3 million new voters for 2027, but national ID processing is practically frozen in several sub-counties. If young people cannot get IDs, they cannot register to vote. That is disenfranchisement through bureaucratic neglect.\n\nAdd to that our public debt passing 10.5 trillion shillings, with Parliament only now waking up to push for an open register.\n\nDo not let constitutional sideshows distract you from service delivery and governance failures. Check on your ID status, follow the debt register debate, and pass this note along.",
-    "sms": "Usiibiwe tip: Getting your national ID is a constitutional right, not a favor. Don't let bureaucratic delays lock you out of voting in 2027. Demand it early.",
-    "reels": "Five years isn't too short; it is a constitutional contract. Yet Senator Samson Cherargei is back, pushing to extend the presidential term limit to seven years. When Kenyans are battling high taxes, unemployment, and rising debt, whose priority is keeping politicians in power longer? Article 1 says sovereign power belongs to the people, not leaders rewriting terms to suit themselves. We don't need longer terms. We need accountable leadership."
+    "radio": "Hamjambo listeners, this is Kenyans Are Asking, where we keep track of promises, public money, and power.\n\nFirst, on youth and employment: over one hundred thousand comrades leave our universities every single year, stepping directly into an economy that demands experience but offers zero pay. Despite official pledges guaranteeing paid internships, thousands of graduates remain trapped in unpaid labor. Free work is not employment, and policy delivery must match political rhetoric.\n\nOver at the Central Bank, however, a promise was delivered. The CBK has modernized government bond trading by launching a dealer-led platform, improving transparency and opening up local debt markets. It proves that when institutional focus is present, targets can be met.\n\nFinally, amid renewed political chatter about extending the presidential term limit, let us be clear on the law. No politician and no Parliament can alter presidential term limits through a routine legislative vote. Under Article 255 of our Constitution, any amendment affecting the term of office of the President requires an approval by the people through a national referendum. The final say does not belong to politicians; it belongs to you.\n\nKwa ufupi: Zaidi ya wahitimu laki moja wanakabiliwa na kazi za bure licha ya ahadi za kulipwa. Benki Kuu imezindua mfumo mpya wa biashara ya bondi kama ilivyoahidi. Na kuhusu wanaopanga kuongeza muda wa urais, Katiba inasema wazi—hakuna mbunge anayeweza kubadilisha hilo bila kura ya maoni kutoka kwa wananchi wenyewe. Stay informed, stay vigilant.",
+    "voice_note": "Habari yenu, quick accountability update from Kenyans Are Asking this week.\n\nFirst, do not be misled by political chatter about MPs extending presidential term limits. The Constitution is unequivocal: altering the presidential term cannot be done within Parliament alone. Under Article 255, it mandates a direct national referendum. The ultimate decision rests with the Kenyan voter, not legislators in Nairobi.\n\nOn the job market, over one hundred thousand comrades graduate annually into unpaid internships, despite high-level commitments to deliver paid placements. Real talent cannot run on empty promises.\n\nOn the flip side, Central Bank has kept its word, modernizing bond trading through a dealer-led market to make public borrowing more transparent.\n\nHead over to our Glasspoll today and vote on whether presidential terms should stay at five years or change. Let us know what you think.",
+    "sms": "Usiibiwe: MPs cannot quietly extend presidential terms. Article 255 requires a mandatory national referendum. Your vote alone decides constitutional changes.",
+    "reels": "Can Parliament quietly change the presidential term limit? The short answer is no. Whatever political trial balloons are floated, Article 255 of the Constitution settles the matter. No bill, no coalition, and no majority in Parliament can alter the term of office of the President on their own. It legally mandates a national referendum. The power belongs to you at the ballot, not politicians in boardroom deals."
   },
   "spend_usd": 3.0807,
   "revision": 3
