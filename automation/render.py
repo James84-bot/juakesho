@@ -290,6 +290,7 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         ctx.update(photo_uri=Path(person).as_uri(), photo_credit=post.get("person_credit") or "", person_shown=True)
     elif photo and Path(photo).exists() and post["template"] in PHOTO_TEMPLATES:
         civic = post["template"] in {"money", "straight", "promise", "sauti", "kumbuka", "scorecard"} or post.get("series") in {"See Through It"}
+        civic = civic and post.get("photo_kind") not in {"event", "yours"}   # a photo OF the event is not illustrative
         ctx.update(photo_uri=Path(photo).as_uri(),
                    photo_credit=("Illustrative photo · " if civic else "") + (post.get("photo_credit") or ""))
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)

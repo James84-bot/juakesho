@@ -394,10 +394,31 @@ def rephoto(label: str) -> list[str]:
     return changed
 
 
-PHOTO_HOW_TO = ("📷 To use your photo on a post: <b>reply to that post's card</b> with the photo, and make the caption's "
+PHOTO_HOW_TO = ("📷 To put a photo on a post: <b>reply to that post's card</b> with the photo, and make the caption's "
                  "first line say where it came from:\n<code>yangu</code>  we took it\n"
                  "<code>ruhusa @who (how they said yes)</code>  the photographer agreed\n"
-                 "Photos from TV stations or newspapers can't be used without their permission.")
+                 "<code>chanzo @StateHouseKenya https://link</code>  a photo already posted online, credited to "
+                 "whoever posted it (news and commentary use, with credit)\n"
+                 "Photo agencies (Getty, AFP, Reuters, AP...) are the exception: they sell their photos and bill for reuse.")
+SOURCE_LINE = re.compile(r"^\s*(chanzo|source|via|kutoka|credit)\b[\s:,-]*(.+)$", re.I)
+# Agencies and stock libraries license photos for money and file claims; a credit is not enough for them
+PAID_PHOTOS = re.compile(r"\b(getty|afp|reuters|associated press|\bap\b|ap photo|shutterstock|alamy|xinhua|anadolu|"
+                         r"epa|istock|adobe stock|dreamstime|bloomberg)\b", re.I)
+
+
+def _posted_source(caption: str) -> dict | None:
+    """'chanzo @StateHouseKenya https://x.com/...' -> the credit for a photo already posted online."""
+    first = next((ln.strip() for ln in (caption or "").splitlines() if ln.strip()), "")
+    m = SOURCE_LINE.match(first)
+    if not m:
+        return None
+    url = re.search(r"https?://\S+", m.group(2))
+    credit = re.sub(r"https?://\S+", "", m.group(2)).strip(" ,;-")
+    if len(credit) < 2 and url:
+        credit = urllib.parse.urlsplit(url.group(0)).netloc.removeprefix("www.")
+    if len(credit) < 2:
+        return None
+    return {"rights": "posted", "credit": credit[:60], "source": url.group(0) if url else "", "evidence": first[:160]}
 
 
 def _is_image(msg: dict) -> bool:
@@ -431,7 +452,12 @@ def _photo_intake(msg: dict, chat: str) -> None:
         return reply(f"📷 <b>{_esc(post['id'])}</b> can't take a new photo now ({_esc(post['status'])}).")
     rights = tazama.parse_caption(msg.get("caption", ""))
     if not rights or rights["rights"] not in {"own", "permission"}:
+        rights = _posted_source(msg.get("caption", ""))
+    if not rights:
         return reply("📷 Got the photo, but I can't use it yet.\n\n" + PHOTO_HOW_TO)
+    if rights["rights"] == "posted" and PAID_PHOTOS.search(rights["evidence"]):
+        return reply("📷 That's an agency photo: agencies sell their photos and bill for reuse, so a credit isn't "
+                     "enough. Use the same moment from the office's or politician's own page instead.")
     photo = (msg.get("document") if not msg.get("photo") else max(msg["photo"], key=lambda x: x.get("width", 0)))
     if not msg.get("document") and photo.get("width", 0) < 800:
         return reply("📷 That photo is too small (under 800 px wide). Send the original, or send it as a file.")
@@ -446,11 +472,12 @@ def _photo_intake(msg: dict, chat: str) -> None:
             im.convert("RGB").save(ROOT / rel, "JPEG", quality=92)
     except Exception as e:
         return reply(f"📷 Couldn't download that photo ({_esc(str(e)[:120])}). Try again.")
-    credit = "Photo: Kenyans Are Asking" if rights["rights"] == "own" else f"Photo: {rights['credit']} (with permission)"
+    credit = {"own": "Photo: Kenyans Are Asking", "permission": f"Photo: {rights['credit']} (with permission)",
+              "posted": f"Photo: {rights['credit']}"}[rights["rights"]]
     for k in ("photo_file", "photo_credit", "photo_kind", "tg_msg", "decided_at"):
         post.pop(k, None)
-    post.update(id=new_id, photo=f"sent:{rel.as_posix()}", photo_rights_credit=credit,
-                photo_rights=rights["evidence"], status="drafted")
+    post.update(id=new_id, photo=f"sent:{rel.as_posix()}", photo_rights_credit=credit, photo_rights=rights["evidence"],
+                photo_source=rights.get("source", ""), photo_use=rights["rights"], status="drafted")
     save_week(data)
     log(f"photo swap: {new_id} ({rights['rights']})")
     reply(f"📷 Got it. <b>{_esc(new_id)}</b> gets your photo; the new card comes back here in a few minutes for ✅. "
@@ -682,9 +709,9 @@ def _preview_text(p: dict) -> str:
     if kind == "event":
         lines += ["📷 Photo from the event itself (licensed)"]
     elif kind == "yours":
-        lines += ["📷 Your photo"]
+        lines += ["📷 Posted photo, credited (news and commentary use)" if p.get("photo_use") == "posted" else "📷 Your photo"]
     elif p.get("photo_file") and p.get("template") != "tazama" and not p.get("group"):
-        lines += ["🖼 Symbolic photo: no licensed photo of the day was found. Reply to this card with yours to swap it."]
+        lines += ["🖼 Symbolic photo: no licensed photo of the day was found. Reply to this card with the day's photo to swap it."]
     for credit in (p.get("person_credit") or p.get("photo_credit"), p.get("track_credit")):
         if credit:
             lines += [f"©️ {esc(credit)}"]
