@@ -328,6 +328,10 @@ def check(post: dict) -> Report:
                                         r"2027|deserves?|should lead|best (leader|candidate))", poll_text, re.I):
         rep.errors.append("candidate-preference poll: we never run 'who will you vote for / who will win' polls; "
                           "ask about an issue or a leader's record, and report professional polls with their method")
+    if "message" in post and not post.get("n") and tpl not in {"tazama", "cover"}:   # the weekly fairness count needs both
+        for f in ("side", "tone"):
+            if not post.get(f):
+                rep.errors.append(f"no `{f}`: every post says {'side: government, opposition, both or none' if f == 'side' else 'tone: credit, criticism or explainer'}")
     if post.get("side") is not None and post.get("side") not in {"government", "opposition", "both", "none"}:
         rep.errors.append("'side' must be government, opposition, both or none")
     if post.get("tone") is not None and post.get("tone") not in {"credit", "criticism", "explainer"}:

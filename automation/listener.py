@@ -7,6 +7,8 @@ inside a GitHub Actions job for ~5h45m at a time (free on a public repo) and:
   * answers every ✅/❌/🎵 tap within seconds, so the button stops spinning and you know it landed;
   * starts the autopilot `tick` run right away (taps a few seconds apart share one run);
   * acknowledges clips you send (the tick run turns them into Tazama Hii Reels);
+  * keeps the clock for the daily hot post (09:05 EAT) and Sunday's new week (17:00 EAT); the autopilot's own
+    schedule stays as a backup, and both commands are safe to run twice;
   * starts `tick` the moment an approved post is due, so it publishes on time instead of whenever the
     schedule wakes up (a post that is too late is skipped as missed, so this matters).
 
@@ -17,6 +19,7 @@ autopilot's collect() still reads every tap and stays the only writer of state. 
 """
 from __future__ import annotations
 
+import datetime as dt
 import json
 import os
 import sys
@@ -25,6 +28,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+_HOUR = dt.timedelta(hours=1)
 POLL_SECONDS = 2.5
 DEBOUNCE_SECONDS = 12          # wait this long after the last tap so a burst of taps rides one run
 DUE_CHECK_SECONDS = 300        # how often to re-read the week files for posts coming due
@@ -73,7 +77,6 @@ def schedule() -> list[tuple[str, float]]:
     """(key, epoch) for every approved post in the two newest weeks, read live from the repo so approvals
     made after this listener started are included. key changes with each publish attempt, so a retry is
     started again but a post is never started twice for the same attempt."""
-    import datetime as dt
     names = sorted(e["name"] for e in _gh("automation/content/weeks") if e["name"].endswith(".json"))[-2:]
     out = []
     for name in names:
@@ -83,6 +86,21 @@ def schedule() -> list[tuple[str, float]]:
                 if at.tzinfo is None:
                     at = at.replace(tzinfo=dt.timezone(dt.timedelta(hours=3)))   # times are EAT
                 out.append((f"{p.get('group') or p['id']}#{p.get('attempts', 0)}", at.timestamp()))
+    return out
+
+
+CLOCK = (("hot", None, 6, 5), ("week", 6, 14, 0))   # (command, weekday Mon=0 or None for daily, UTC hour, minute)
+
+
+def clock_due(utc, fired: set[str]) -> list[str]:
+    """Commands whose time came in the last hour and that this listener hasn't started yet."""
+    out = []
+    for command, weekday, hour, minute in CLOCK:
+        start = utc.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        key = f"{command}-{utc:%Y-%m-%d}"
+        if (weekday is None or utc.weekday() == weekday) and start <= utc < start.replace(minute=0) + _HOUR and key not in fired:
+            fired.add(key)
+            out.append(command)
     return out
 
 
@@ -111,10 +129,14 @@ def run(minutes: float) -> None:
     seen: set[int] = set()
     due: float | None = None            # when to start the tick run
     first = True
-    started: set[str] = set()           # posts already given a publishing run
+    started: set[str] = set()
+    fired: set[str] = set()             # clock commands already started by this listener           # posts already given a publishing run
     upcoming: list[tuple[str, float]] = []
     next_check = 0.0
     while time.time() < end:
+        for command in clock_due(dt.datetime.fromtimestamp(time.time(), dt.timezone.utc), fired):
+            log(f"clock: starting {command}")
+            dispatch(command)
         if time.time() >= next_check:
             try:
                 upcoming = schedule()

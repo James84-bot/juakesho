@@ -83,5 +83,16 @@ class ListenerTests(unittest.TestCase):
         self.assertEqual(got["a#0"], got["c#1"])   # a naive time is read as EAT
 
 
+    def test_clock_fires_hot_daily_and_week_on_sunday_once(self):
+        fired = set()
+        utc = listener.dt.timezone.utc
+        sun = listener.dt.datetime(2026, 10, 18, 14, 3, tzinfo=utc)
+        self.assertEqual(listener.clock_due(sun, fired), ["week"])
+        self.assertEqual(listener.clock_due(sun, fired), [])
+        mon = listener.dt.datetime(2026, 10, 19, 6, 20, tzinfo=utc)
+        self.assertEqual(listener.clock_due(mon, fired), ["hot"])
+        self.assertEqual(listener.clock_due(mon.replace(hour=7, minute=10), set()), [])   # window over
+
+
 if __name__ == "__main__":
     unittest.main()
