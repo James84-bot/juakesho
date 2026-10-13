@@ -75,11 +75,21 @@ jobs:
         run: pip install -r automation/requirements.txt
 
       - name: Tests
+        id: tests
         if: steps.cmd.outputs.c != 'skip'
+        # a tick only collects taps and publishes what you approved: a failing test must not stop that
+        continue-on-error: ${{ steps.cmd.outputs.c == 'tick' }}
         run: |
           cd automation
           set -o pipefail
           python -m unittest discover -s tests 2>&1 | tee run.log   # a failure shows in "Show why it failed"
+
+      - name: Warn about failing tests
+        if: steps.tests.outcome == 'failure' && steps.cmd.outputs.c == 'tick' && env.TELEGRAM_BOT_TOKEN != ''
+        run: |
+          curl -s -o /dev/null "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=⚠️ A self-check failed (taps and publishing still ran). New drafts are paused until it's fixed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" || true
 
       - name: Rehearse (mock week, dry run)
         if: steps.cmd.outputs.c == 'rehearse'
