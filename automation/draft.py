@@ -639,7 +639,14 @@ def provider() -> str:
 def call_claude(system: str, user: str, max_tokens: int = 12000, model: str | None = None) -> str:
     """The one way the system talks to an AI (named for history; routes to the chosen provider)."""
     if provider() == "gemini":
-        return _gemini(system, user, min(max_tokens, GEMINI_LIMITS["out"]), model)
+        try:
+            return _gemini(system, user, min(max_tokens, GEMINI_LIMITS["out"]), model)
+        except RuntimeError as e:
+            # Google's free models were all busy: the paid Claude key (if set, within its budget) keeps the run alive
+            if not os.environ.get("ANTHROPIC_API_KEY") or not re.search(r"\b(429|50[0234])\b|unreachable|no Gemini", str(e)):
+                raise
+            print(f"  Gemini unavailable ({str(e)[:80]}); using Claude for this call")
+            return _anthropic(system, user, max_tokens, model if model and not model.startswith("gemini") else None)
     return _anthropic(system, user, max_tokens, model)
 
 
@@ -691,8 +698,8 @@ def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
                     time.sleep(float(e.headers.get("retry-after") or 0) or 20 * 2 ** attempt)
                     continue
                 last = RuntimeError(f"Gemini {e.code} ({m}): {detail}")
-                if e.code in (400, 404, 429) and ("model" in detail.lower() or e.code == 429):
-                    break   # this model isn't available (or its free quota is used up): try the next one
+                if e.code in (429, 500, 502, 503, 504) or (e.code in (400, 404) and "model" in detail.lower()):
+                    break   # overloaded, out of free quota or not available: try the next model
                 raise last from e
             except (urllib.error.URLError, TimeoutError) as e:
                 if attempt < 3:
