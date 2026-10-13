@@ -208,7 +208,7 @@ def build_body() -> str:
 
   <section id="logo" class="sec" aria-labelledby="t-logo">
     <p class="kicker">02</p><h2 id="t-logo">Logo</h2>
-    <p class="note">The mark is a speech bubble with a question mark: Kenyans asking. Flag red, white question mark. The wordmark is KENYANS ARE ASKING in Inter Tight Black. All files are outlined SVGs in <code>assets/logo/</code>.</p>
+    <p class="note">The mark is many voices, one question: three speech bubbles in the flag&rsquo;s black, red and green, separated by its white bands, the front one carrying the question mark. Every Kenyan asking together, in the national colours only, so no single party colour leads. The wordmark is KENYANS ARE ASKING in Inter Tight Black. All files are outlined SVGs in <code>assets/logo/</code>.</p>
     <div class="logos">
       <div class="lg lg--night">{svg_inline(LOGO / 'wordmark-on-dark.svg', 'lg-svg', 'Wordmark on night')}</div>
       <div class="lg lg--paper">{svg_inline(LOGO / 'wordmark-on-light.svg', 'lg-svg', 'Wordmark on paper')}</div>

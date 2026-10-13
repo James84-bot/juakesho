@@ -1,8 +1,9 @@
 """
 build_logo.py — the Kenyans Are Asking logo set as font-independent SVGs (text converted to outlines).
 
-Mark: a speech bubble with a question mark: Kenyans asking. Flag red bubble, white "?", a green rule under the
-wordmark's first line in the stacked version. Flag colours, no flag, no shield.
+Mark: "many voices, one question". Three speech bubbles in the flag's black, red and green, separated by the
+flag's white bands; the front one carries the question mark. Every Kenyan asking together, in the national
+colours only: no single party colour leads, no flag, no shield.
 Wordmark: KENYANS ARE ASKING in Inter Tight Black, cap height matched to the mark.
 
     python build_logo.py      # writes assets/logo/*.svg
@@ -46,49 +47,68 @@ def text_outline(text: str, cap_px: float, x: float, baseline: float, track: flo
     return pen.getCommands(), x
 
 
-BUBBLE_H, TAIL = 0.80, 0.20    # bubble body height and tail depth (shares of the mark's width)
-MARK_H = BUBBLE_H + TAIL       # mark ink height as a share of its width
+BUBBLE_H, TAIL = 0.80, 0.12    # kept for the lockup's spacing maths
+MARK_H = 0.92                  # mark ink height as a share of its width
+FLAG_BLACK, FLAG_RED, FLAG_GREEN = "#141210", P["shuka"]["600"], P["chai"]["700"]
 
 
-def mark(x: float, y: float, s: float, bubble: str = SUN, q: str = "#FFFFFF") -> str:
-    """A speech bubble (s wide, top-left at (x, y)) with a bold question mark inside, tail at the lower left."""
-    h, r = s * BUBBLE_H, s * 0.2
-    tail = (f'<path d="M{x + s * .16:.1f},{y + h - 1:.1f} L{x + s * .16:.1f},{y + h + s * TAIL:.1f} '
-            f'L{x + s * .44:.1f},{y + h - 1:.1f} Z" fill="{bubble}"/>')
-    qd, qend = text_outline("?", s * 0.52, 0, 0)
-    qw = qend
-    qx, qy = x + (s - qw) / 2, y + h / 2 + s * 0.26
-    qd, _ = text_outline("?", s * 0.52, qx, qy)
-    return (f'<rect x="{x:.1f}" y="{y:.1f}" width="{s:.1f}" height="{h:.1f}" rx="{r:.1f}" fill="{bubble}"/>{tail}'
-            f'<path d="{qd}" fill="{q}"/>')
+def _bubble(x: float, y: float, w: float, h: float, r: float, fill: str, gap: str | None, gw: float,
+            tail: str = "left") -> str:
+    """One rounded speech bubble with its tail; `gap` draws the flag's white band around it."""
+    tx = x + w * (0.18 if tail == "left" else 0.62)
+    d = (f"M{x + r:.1f},{y:.1f} H{x + w - r:.1f} Q{x + w:.1f},{y:.1f} {x + w:.1f},{y + r:.1f} "
+         f"V{y + h - r:.1f} Q{x + w:.1f},{y + h:.1f} {x + w - r:.1f},{y + h:.1f} "
+         + (f"H{tx + w * 0.22:.1f} L{tx:.1f},{y + h + w * 0.2:.1f} L{tx:.1f},{y + h:.1f} " if tail == "left" else "")
+         + f"H{x + r:.1f} Q{x:.1f},{y + h:.1f} {x:.1f},{y + h - r:.1f} V{y + r:.1f} Q{x:.1f},{y:.1f} {x + r:.1f},{y:.1f} Z")
+    band = f'<path d="{d}" fill="{gap}" stroke="{gap}" stroke-width="{gw:.1f}" stroke-linejoin="round"/>' if gap else ""
+    return band + f'<path d="{d}" fill="{fill}"/>'
+
+
+def mark(x: float, y: float, s: float, bubble: str | None = None, q: str = "#FFFFFF", gap: str = "#FFFFFF",
+         colours: tuple[str, str, str] | None = None) -> str:
+    """Three bubbles, s wide, top-left at (x, y): red behind on the left, green behind on the right, black in
+    front with the white "?". One-colour versions pass `bubble` (all three in one ink, bands in `gap`)."""
+    black, red, green = colours or ((bubble,) * 3 if bubble else (FLAG_BLACK, FLAG_RED, FLAG_GREEN))
+    bw, bh, r = s * 0.58, s * 0.42, s * 0.11
+    gw = s * 0.05
+    out = _bubble(x, y, bw, bh, r, red, gap, gw, tail="none")   # the back voices: no tails, so no stray slivers
+    out += _bubble(x + s - bw, y, bw, bh, r, green, gap, gw, tail="none")
+    fw, fh = s * 0.66, s * 0.50
+    fx, fy = x + (s - fw) / 2, y + s * 0.22
+    out += _bubble(fx, fy, fw, fh, s * 0.13, black, gap, gw * 1.4, tail="left")
+    qx0, qend = text_outline("?", fh * 0.62, 0, 0)
+    qd, _ = text_outline("?", fh * 0.62, fx + (fw - qend) / 2, fy + fh / 2 + fh * 0.31)
+    return out + f'<path d="{qd}" fill="{q}"/>'
 
 
 def lockup(ink: str, stacked: bool, bg: str | None = None, mono: bool = False, q: str = "#FFFFFF") -> str:
     cap, pad = 100, 24
-    bubble = ink if mono else SUN
+    bubble = ink if mono else None
+    gap = "#FFFFFF"   # the flag's white bands: they also outline the black bubble on dark backgrounds
     if stacked:
         s = 210
-        m = mark(pad, pad, s, bubble, q)
+        m = mark(pad, pad, s, bubble, q, gap)
         top = pad + s * MARK_H + 46
         d1, e1 = text_outline("KENYANS", cap, pad, top + cap, track=-0.01)
         d2, e2 = text_outline("ARE ASKING", cap, pad, top + 2 * cap + 30, track=-0.01)
         w, h, d = max(e1, e2, pad + s) + pad, top + 2 * cap + 30 + pad, d1 + d2
     else:
-        s = cap / MARK_H * 1.25     # the bubble a little taller than the capitals, tail hanging below the line
-        m = mark(pad, pad - cap * 0.12, s, bubble, q)
-        d, end = text_outline("KENYANS ARE ASKING", cap, pad + s + 28, pad + cap, track=-0.01)
-        w, h = end + pad, cap + 2 * pad + cap * 0.25
+        s = cap / MARK_H * 1.55     # the bubbles a little taller than the capitals, tail hanging below the line
+        m = mark(pad, pad - cap * 0.22, s, bubble, q, gap)
+        d, end = text_outline("KENYANS ARE ASKING", cap, pad + s + 30, pad + cap, track=-0.01)
+        w, h = end + pad, cap + 2 * pad + cap * 0.45
     bg_el = f'<rect width="{w:.0f}" height="{h:.0f}" fill="{bg}"/>' if bg else ""
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w:.0f} {h:.0f}" width="{w:.0f}" height="{h:.0f}">'
             f'<title>Kenyans Are Asking</title>{bg_el}{m}<path d="{d}" fill="{ink}"/></svg>')
 
 
-def icon(bg: str, bubble: str, q: str) -> str:
+def icon(bg: str, gap: str | None = None, **kw) -> str:
     """Profile picture / app icon: the mark alone, centred on a flat field (survives a circle crop)."""
-    s = 128
-    x, y = (200 - s) / 2, (200 - s * MARK_H) / 2
+    s = 136
+    x, y = (200 - s) / 2, (200 - s * 0.82) / 2   # optical centre: bubbles plus the front tail
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="512" height="512">'
-            f'<title>Kenyans Are Asking icon</title><rect width="200" height="200" fill="{bg}"/>{mark(x, y, s, bubble, q)}</svg>')
+            f'<title>Kenyans Are Asking icon</title><rect width="200" height="200" fill="{bg}"/>'
+            f'{mark(x, y, s, gap=gap or bg, **kw)}</svg>')
 
 
 def main() -> None:
@@ -100,12 +120,15 @@ def main() -> None:
         (OUT / f"stacked-{name}.svg").write_text(lockup(ink, stacked=True), encoding="utf-8")
     # one-colour versions for red and green backgrounds (the red sun would vanish on red)
     # one-colour versions for red and green backgrounds: a white bubble, the "?" cut in the background colour
-    for name, ink, q in (("mono-light", "#FFFFFF", SUN), ("mono-dark", NIGHT, "#FFFFFF")):
-        (OUT / f"wordmark-{name}.svg").write_text(lockup(ink, stacked=False, mono=True, q=q), encoding="utf-8")
-        (OUT / f"stacked-{name}.svg").write_text(lockup(ink, stacked=True, mono=True, q=q), encoding="utf-8")
-    (OUT / "icon-night.svg").write_text(icon(NIGHT, SUN, "#FFFFFF"), encoding="utf-8")
-    (OUT / "icon-paper.svg").write_text(icon(PAPER, SUN, "#FFFFFF"), encoding="utf-8")
-    (OUT / "icon-red.svg").write_text(icon(SUN, "#FFFFFF", SUN), encoding="utf-8")
+    for name, ink, q, bg in (("mono-light", "#FFFFFF", SUN, SUN), ("mono-dark", NIGHT, "#FFFFFF", "#FFFFFF")):
+        (OUT / f"wordmark-{name}.svg").write_text(lockup(ink, stacked=False, mono=True, q=q).replace(
+            'fill="#FFFFFF" stroke="#FFFFFF"', f'fill="{bg}" stroke="{bg}"'), encoding="utf-8")
+        (OUT / f"stacked-{name}.svg").write_text(lockup(ink, stacked=True, mono=True, q=q).replace(
+            'fill="#FFFFFF" stroke="#FFFFFF"', f'fill="{bg}" stroke="{bg}"'), encoding="utf-8")
+    # the profile picture: white field, so the flag colours and white bands read at any size
+    (OUT / "icon-paper.svg").write_text(icon("#FFFFFF"), encoding="utf-8")
+    (OUT / "icon-night.svg").write_text(icon(NIGHT, gap="#FFFFFF"), encoding="utf-8")
+    (OUT / "icon-red.svg").write_text(icon("#FFFFFF"), encoding="utf-8")   # kept for old references: same as paper
     print("logo set written to", OUT)
 
 

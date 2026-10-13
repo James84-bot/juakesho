@@ -35,8 +35,10 @@ slot (you get one note); you never have to reject old cards.
   words, no Swahili filler slang, no shouting (capitals, "!!", BREAKING, 🚨), no politician PR or insult hashtags.
 - **Editor** (`draft.py` critic): scores hook, send, clarity, freshness, voice, craft, picture, hold and demand.
   Under 8 gets one rewrite; still under 7 is held back, never sent to you. No two posts on one story.
-- **Live hashtags**: matching trending hashtags (including the people's accountability tags) are added to captions
-  automatically.
+- **Live hashtags**: matching trending issue hashtags are added to captions automatically. No tag for or
+  against any politician or party (no #...Delivers, no #...MustGo, no #Wantam).
+- **What it means for you**: every news post says what it changes for an ordinary Kenyan (pocket, services,
+  rights, safety, vote), with numbers from the record; the editor scores it, and posts without it are fixed.
 - **Photos** (`photos.py`), in this order:
   1. **Your photo of the day**: reply to a post's card with a photo whose caption starts `yangu` (you took it),
      `ruhusa @who (how they agreed)`, or `chanzo @who https://link` (already posted online: credited to whoever
