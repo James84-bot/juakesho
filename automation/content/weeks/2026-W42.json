@@ -76,7 +76,7 @@
       ],
       "bg": "shuka",
       "publish_at": "2026-10-13T12:45:00+03:00",
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -105,7 +105,10 @@
         "1": "#FFFFFF"
       },
       "reel": true,
-      "decided_at": "2026-10-13T05:32:04.856330+03:00"
+      "decided_at": "2026-10-13T05:32:04.856330+03:00",
+      "published_at": "2026-10-13T12:47:05.776463+03:00",
+      "ig_id": "18447933208125648",
+      "fb_id": "998166569966152"
     },
     {
       "id": "2026-w42-d3-promise-r3",
