@@ -962,8 +962,21 @@ def meta_check(dry_run: bool = False) -> bool:
             except Exception as e:
                 ok = False
                 lines.append(f"❌ {name}: {str(e)[:200]}")
+        if ok:   # what Instagram actually shows: the latest posts, their type and whether they're live
+            try:
+                media = graph_get(f"{os.environ['META_IG_USER_ID']}/media", {
+                    "fields": "timestamp,media_product_type,media_type,permalink,caption", "limit": "6"}).get("data", [])
+                lines.append(f"📸 Latest on Instagram ({len(media)}):")
+                for m in media:
+                    when = dt.datetime.fromisoformat(m["timestamp"].replace("+0000", "+00:00")).astimezone(EAT)
+                    lines.append(f"  {when:%a %d %b %H:%M} · {m.get('media_product_type', '?')} · "
+                                 f"{(m.get('caption') or '')[:50]!s} · {m.get('permalink', '')}")
+            except Exception as e:
+                lines.append(f"⚠️ Couldn't list Instagram posts: {str(e)[:150]}")
     text = "🔌 <b>Meta connection check</b> (nothing was posted)\n" + "\n".join(_esc(x) for x in lines)
     log(text.replace("<b>", "").replace("</b>", ""))
+    if os.environ.get("GITHUB_ACTIONS"):   # readable from the run page and the API, not only the raw log
+        print("::notice title=metacheck::" + " | ".join(lines).replace("\n", " ")[:3500])
     if not dry_run:
         _notify(text + ("\n\nAll set: approved posts will publish at their times." if ok else ""))
     return ok
