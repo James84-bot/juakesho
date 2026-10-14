@@ -1,25 +1,69 @@
 {
-  "fetched": "2026-10-14T06:06:18.360170+00:00",
+  "fetched": "2026-10-14T11:41:51.676861+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "inter milan vs club brugge standings",
-      "traffic": "2000+",
+      "title": "capital punishment",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Inter Milan 3-4 Club Brugge: Nicolo Tresoldi scores Champions League hat-trick",
-          "url": "https://www.bbc.com/sport/football/live/cq8rzj6v614vt",
+          "title": "Nidal Hasan execution - why US is bringing back firing squads",
+          "url": "https://www.bbc.com/news/articles/cmpwg28vrexzo",
           "source": "BBC"
         },
         {
-          "title": "Champions League roundup: Tresoldi treble stuns Inter in Club Brugge win",
-          "url": "https://www.theguardian.com/football/2026/oct/13/champions-league-lens-sporting-inter-barcelona-bayern-napoli",
-          "source": "The Guardian"
+          "title": "Trump privately expresses doubts about livestreaming execution",
+          "url": "https://www.axios.com/2026/10/12/trump-livestream-execution",
+          "source": "Axios"
         },
         {
-          "title": "An unprecedented statistic: Inter write a dark page in their European history",
-          "url": "https://www.goal.com/en/news/unprecedented-figure-inter-write-a-black-page-in-their-european-history/blt7fd7167ee01d178c",
-          "source": "Goal.com"
+          "title": "Trump debates calling off livestream of firing squad execution after learning Fort Hood shooter was paralyzed",
+          "url": "https://www.cnn.com/2026/10/13/politics/trump-fort-hood-shooter-livestream-execution",
+          "source": "CNN"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kenya national examinations council",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "KNEC begins online training for examination question setters",
+          "url": "https://www.the-star.co.ke/news/2026-10-12-knec-starts-online-training-for-exam-setters",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "KNEC opens online training for CBE exam question writers",
+          "url": "https://educationnews.co.ke/news/knec-opens-online-training-for-cbe-exam-question-writers",
+          "source": "Education News"
+        },
+        {
+          "title": "KNEC Launches Online Training For Examination Question Setters",
+          "url": "https://sokodirectory.com/2026/10/knec-launches-online-training-for-examination-question-setters/",
+          "source": "Soko Directory"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "cba",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "KNH, nurses’ union sign 2025–2029 CBA",
+          "url": "https://www.kbc.co.ke/knh-nurses-union-sign-2025-2029-cba/",
+          "source": "KBC Digital"
+        },
+        {
+          "title": "Kenyatta National Hospital, nurses and midwives sign new CBA",
+          "url": "https://peopledaily.digital/news/kenyatta-national-hospital-nurses-and-midwives-sign-new-cba",
+          "source": "People Daily"
+        },
+        {
+          "title": "The painful cost of public universities shutdown",
+          "url": "https://nation.africa/kenya/news/education/the-painful-cost-of-public-universities-shutdown--5629664",
+          "source": "Daily Nation"
         }
       ]
     },
@@ -29,19 +73,19 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "USA 2-2 Spain (Oct 13, 2026) Game Analysis",
-          "url": "https://www.espn.com/soccer/report/_/gameId/401890784",
+          "title": "Swanson's late goal, 'fearless' substitutes salvage draw for USWNT vs. No. 1 Spain",
+          "url": "https://www.espn.com/soccer/story/_/id/50179142/swanson-late-goal-salvages-draw-usa-spain",
           "source": "ESPN"
         },
         {
-          "title": "USWNT returnees earn 2-2 draw against Spain, an early World Cup wake-up call",
-          "url": "https://www.theguardian.com/football/2026/oct/13/uswnt-spain-friendly-ashley-sanchez-mallory-swanson",
-          "source": "The Guardian"
+          "title": "USWNT showed they have depth against Spain. Suddenly, Emma Hayes’ core group is under pressure",
+          "url": "https://www.nytimes.com/athletic/7688943/2026/10/14/uswnt-spain-emma-hayes-substitutes/",
+          "source": "The New York Times"
         },
         {
-          "title": "USWNT faces a new reality against Spain: The Americans are now the hunters, not the hunted",
-          "url": "https://sports.yahoo.com/soccer/article/uswnt-faces-a-new-reality-against-spain-the-americans-are-now-the-hunters-not-the-hunted-220400328.html",
-          "source": "Yahoo Sports"
+          "title": "Mallory Swanson nets first goal since Olympics as USWNT draws 2-2 with Spain",
+          "url": "https://www.nbcnews.com/sports/soccer/swanson-nets-first-goal-olympics-uswnt-draws-2-2-spain-rcna603322",
+          "source": "NBC News"
         }
       ]
     },
@@ -69,107 +113,118 @@
     },
     {
       "geo": "KE",
-      "title": "michael olise",
+      "title": "apple event",
       "traffic": "200+",
       "news": [
         {
-          "title": "‘Super dumb’: Michael Olise suspended for Arsenal clash after throwing ball at opponent’s face",
-          "url": "https://www.independent.co.uk/sport/football/michael-olise-red-card-bayern-munich-viking-champions-league-b3066275.html",
-          "source": "The Independent"
+          "title": "Apple Is About to Close the Biggest Hole In Its Ecosystem With HomeView",
+          "url": "https://www.bloomberg.com/news/newsletters/2026-10-11/apple-smart-home-launch-oct-13-plans-homeview-has-mid-november-release",
+          "source": "Bloomberg.com"
         },
         {
-          "title": "Bayern’s Michael Olise sent off for ‘super dumb’ yellows within seconds",
-          "url": "https://www.aljazeera.com/sports/2026/10/13/bayerns-michael-olise-sent-off-for-super-dumb-yellows-within-seconds",
-          "source": "Al Jazeera"
+          "title": "Apple just announced a new gadget that could be key to its AI push",
+          "url": "https://www.cnn.com/2026/10/13/tech/apple-homeview-siri-ai",
+          "source": "CNN"
         },
         {
-          "title": "Harry Kane laments 'shame' of Michael Olise red card as Bayern Munich held by Viking in Champions League thriller",
-          "url": "https://www.goal.com/en-ke/lists/harry-kane-laments-shame-of-michael-olise-red-card-as-bayern-munich-held-by-viking-in-champions-league-thriller/blt1c888ab2268ee6f6",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "man city vs psg",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Manchester City v PSG is a reminder of the path not taken in sanctions battles",
-          "url": "https://www.theguardian.com/football/2026/oct/13/champions-league-manchester-city-psg-uefa-sanctions-nasser-al-khelaifi-khaldoon-al-mubarak",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Man City vs PSG: Champions League – teams, predictions, line ups",
-          "url": "https://www.aljazeera.com/sports/2026/10/13/manchester-city-psg-champions-league-haaland-torres-predictions-teams",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": "Paddy Power Sign Up Offer: 50/1 A Goal to be Scored in Man City vs PSG!",
-          "url": "https://footyaccumulators.com/news/bookmaker-offers/paddy-power-sign-up-offer-501-a-goal-to-be-scored-in-man-city-vs-psg",
-          "source": "Footy Accumulators"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "2028 presidential candidates",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Kamala Harris, Ocasio-Cortez and the rocky midterms campaign trail",
-          "url": "https://www.usatoday.com/story/news/politics/2026/10/11/midterm-campaign-trail-2028-viability-democrats-harris-aoc/92169420007/",
-          "source": "USA Today"
-        },
-        {
-          "title": "Who will Run for President in 2028? Early FEC Filings and Polling Reveal Potential Contenders",
-          "url": "https://www.jagranjosh.com/general-knowledge/who-will-run-for-president-in-2028-candidates-list-1820013014-1",
-          "source": "Jagran Josh"
-        },
-        {
-          "title": "The 2028 Democratic Presidential Candidates Prediction Markets Ranking",
-          "url": "https://www.yahoo.com/news/politics/articles/2028-democratic-presidential-candidates-prediction-134758431.html",
-          "source": "Yahoo"
+          "title": "One Countertop Device To Rule Them All — Apple’s Bid For Your Kitchen",
+          "url": "https://www.forbes.com/sites/anthonykarcz/2026/10/13/one-countertop-device-to-rule-them-all---apples-bid-for-your-kitchen/",
+          "source": "Forbes"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "leipzig fc",
+      "title": "arrest",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Russia arrests Japanese journalist for alleged espionage",
+          "url": "https://www.bbc.com/news/articles/cwp9g1el7x9zo",
+          "source": "BBC"
+        },
+        {
+          "title": "Moscow warns Tokyo's information gathering attempts will strain ties",
+          "url": "https://news.cgtn.com/news/2026-10-14/Moscow-warns-Tokyo-s-information-gathering-attempts-will-strain-ties-1Re4koACRFK/p.html",
+          "source": "CGTN"
+        },
+        {
+          "title": "Russia warns Japan to stop hostile actions",
+          "url": "https://safir.af/en/2026/10/14/russia-warns-japan-to-stop-hostile-actions/",
+          "source": "تلویزیون سفیر"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "pope leo xiv",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Pope diagnosed with lung cancer but had successful surgery, Vatican says",
+          "url": "https://www.bbc.com/news/articles/ck1wvd9dvv22o",
+          "source": "BBC"
+        },
+        {
+          "title": "World prays for Pope Leo after lung cancer diagnosis",
+          "url": "https://www.reuters.com/world/pope-leo-spent-peaceful-night-hospital-after-surgery-vatican-says-2026-10-14/",
+          "source": "Reuters"
+        },
+        {
+          "title": "Who’s in charge when the pope is unconscious and unable to govern? The pope",
+          "url": "https://apnews.com/article/vatican-pope-leo-power-law-incapacitation-804296261667a36bee47983d9636d721",
+          "source": "AP News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "government vodacom safaricom share dispute",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Vodacom loses bid to stay court ruling on Safaricom share sale",
+          "url": "https://www.telecompaper.com/news/vodacom-loses-bid-to-stay-court-ruling-on-safaricom-share-sale--1585649",
+          "source": "Telecompaper"
+        },
+        {
+          "title": "Blow to Ruto’s govt as Court of Appeal upholds ruling on Safaricom share sale",
+          "url": "https://peopledaily.digital/business/blow-to-rutos-govt-as-court-of-appeal-upholds-ruling-on-safaricom-share-sale",
+          "source": "People Daily"
+        },
+        {
+          "title": "Vodacom appeals Safaricom ruling: what it means for Vodacom stock",
+          "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/vodacom-appeals-safaricom-ruling-what-it-means-for-vodacom-stock/70307052",
+          "source": "ad-hoc-news.de"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "outlook",
       "traffic": "100+",
       "news": [
         {
-          "title": "FC Bayern – RB Leipzig (17.10.) live im TV: Welcher Sender überträgt?",
-          "url": "https://wc.sportwetten24.com/magazin/fc-bayern-rb-leipzig-17-10-live-im-tv-welcher-sender-uebertraegt/",
-          "source": "Sportwetten24.com"
+          "title": "ASML says it's getting order interest through 2030 as profit smashes expectations",
+          "url": "https://www.cnbc.com/2026/10/14/asml-3q-earnings-ai-demand-orders-capacity.html",
+          "source": "CNBC"
         },
         {
-          "title": "FC Bayern - Ticketaktion: Paulaner schickt dich zu Bayern - Leipzig",
-          "url": "https://www.fupa.net/news/fc-bayern-ticketaktion-paulaner-schickt-dich-zu-bayern-leipzig-3223353",
-          "source": "FuPa ⚽️"
+          "title": "ASML Q3 2026 earnings: profit beats, customers eye 2030 orders",
+          "url": "https://qz.com/asml-quarterly-earnings-profit-customers-orders-2030-101426",
+          "source": "Quartz"
         },
         {
-          "title": "FC Bayern München vs. RB Leipzig live: Alle Infos zum Bundesliga-Topspiel im TV, Stream und Ticker",
-          "url": "https://ran.joyn.de/sports/fussball/bundesliga/fc-bayern-muenchen-vs-rb-leipzig-live-alle-informationen-zum-bundesliga-topspiel-am-samstagabend-im-tv-stream-und-ticker-199374",
-          "source": "Joyn"
+          "title": "ASML Rises as Chip-Gear Maker Can’t Keep Up With AI Demand",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-14/asml-raises-full-year-sales-outlook-as-ai-boom-drives-demand",
+          "source": "Bloomberg.com"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "outlook",
-      "why": "unsafe: 'crash'"
-    },
-    {
-      "title": "psv fc",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "livescores",
-      "why": "unsafe: 'Bet'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
