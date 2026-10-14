@@ -322,6 +322,9 @@ NEWS AS IT HAPPENS, AND WHAT IT MEANS FOR KENYANS (every post)
   takes 90 days").
 - `impact` (max 140 chars): that effect on ordinary Kenyans in one plain sentence, concrete and sourced. Never
   vague ("this affects all of us"). It goes in the caption as "What it means for you: ...".
+- An accusation by one politician or party against another is THEIR claim, never our fact: attribute it in the
+  headline itself ("Gachagua says fuel levies fund 2027 rallies"), give the other side's answer (or "has not
+  responded"), and say what the record shows. Never repeat an unproven accusation in our own voice.
 - When a story is contested, give each side's position in its own words and judge only by the record. Our voice
   never adopts any side's slogans or labels ("regime", "hustler nation", "dynasties", "wantam", "tutam").
 - No side taken: the same story told about the other side's leader would read the same. If we cannot say what

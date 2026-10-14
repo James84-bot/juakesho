@@ -1078,6 +1078,23 @@ class TimelinessTests(TempWeeks):
         self.assertFalse(any("'today'" in e for e in guard.check({"template": "sauti", "hot": True,
                                                                     "message": "MPs vote today on the fuel levy."}).errors))
 
+
+class FalsePositiveTests(unittest.TestCase):
+    def test_fuel_pump_is_not_crypto(self):
+        import guard
+        ok = guard.check({"template": "sauti", "line": "Pump prices go up again", "caption": "Pump prices rose on 14 Oct."})
+        self.assertFalse(any("crypto" in e for e in ok.errors))
+        bad = guard.check({"template": "sauti", "line": "Pump and dump this token", "caption": "x"})
+        self.assertTrue(any("crypto" in e for e in bad.errors))
+
+    def test_betting_news_is_not_betting_promotion(self):
+        import guard
+        news = guard.check({"template": "money", "what": "Treasury raised the betting tax; MPs are at odds over it",
+                            "caption": "Excise on betting rose to 20%."})
+        self.assertFalse(any("betting" in e for e in news.errors))
+        promo = guard.check({"template": "sauti", "line": "Place your bets on the mega jackpot", "caption": "x"})
+        self.assertTrue(any("betting" in e for e in promo.errors))
+
 if __name__ == "__main__":
     unittest.main()
 

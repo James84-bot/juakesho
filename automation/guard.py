@@ -94,7 +94,9 @@ BLOCK = {
 }
 # Topics the brand never touches (keeps it for everyone, everywhere)
 BANNED_TOPICS = {
-    "betting": r"\b(bet|betting|sportpesa|odds|jackpot|kamari)\b",
+    # promoting gambling, never reporting on it (the betting tax and gambling debt are real political stories)
+    "betting": r"\b(place (a|your) bets?|bet now|sure bets?|betting tips|best odds|odds (boost|of \d)|win the jackpot|"
+               r"mega ?jackpot|(join|download|use) (sportpesa|betika|odibets|mozzartbet|shabiki)|cheza kamari)\b",
     "get-rich-quick": r"\b(get rich|guaranteed (profit|income|returns)|double your money|100% win)\b",
     # Criticising public office holders is in scope; telling people who to vote for is not
     "party-campaigning": r"\b((do not |don'?t )?vote (for|against) (him|her|them|uda|odm|jubilee|azimio|wiper|dcp|anc|kenya kwanza|"
@@ -102,7 +104,8 @@ BANNED_TOPICS = {
                          r"(odm|uda|jubilee|azimio|wiper|dcp|anc|kenya kwanza) (is|are) the (best|only|answer)|join (odm|uda|jubilee|azimio|wiper|dcp))\b",
     # The revolution is informed and peaceful: protest and voting yes, violence and harassment never
     "violence": r"\b((burn|torch|storm|attack|lynch|kill|beat|stone|loot) (the |their |his |her )?(parliament|state house|offices?|homes?|houses?|police|them|him|her|mps?|leaders?)|overthrow|coup|go to (his|her|their) (home|house)|find (his|her|their) (home|house|family)|doxx?)\b",
-    "crypto-shill": r"\b(buy (now|this coin)|to the moon|pump)\b",
+    "crypto-shill": r"\b(buy (now|this coin|this token)|to the moon|pump (and|n) dump|pump (it|this coin|this token)|"
+                    r"100x|next big coin|guaranteed returns?)\b",   # 'pump' alone is a fuel pump
     # Banter wars roast a country's situations, never its people: no xenophobic slurs, no "go home" lines
     "xenophobia": r"\b(ma?kwerekwere|kwerekwere|amakwerekwere|go back (to|home)( to)? your (own )?country|"
                   r"(nigerians|south africans|ugandans|tanzanians|somalis|ethiopians|congolese) are (all )?(thieves|criminals|"
