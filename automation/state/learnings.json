@@ -1,6 +1,28 @@
 {
-  "updated": "2026-10-14T17:01:27.663521+03:00",
+  "updated": "2026-10-14T21:36:48.424058+03:00",
   "top": [
+    {
+      "id": "2026-w42-hot-1014",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3000.0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1
+    },
+    {
+      "id": "2026-w42-d3-promise-r3",
+      "series": "promise",
+      "lane": "campus",
+      "score": 500.0,
+      "reach": 6,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1
+    },
     {
       "id": "2026-w42-d2-money-r3",
       "series": "money",
@@ -16,8 +38,8 @@
       "id": "2026-w42-hot-1013",
       "series": "sauti",
       "lane": "everyone",
-      "score": 150.0,
-      "reach": 20,
+      "score": 142.9,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -27,6 +49,28 @@
   "bottom": [],
   "all": [
     {
+      "id": "2026-w42-hot-1014",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3000.0,
+      "reach": 0,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1
+    },
+    {
+      "id": "2026-w42-d3-promise-r3",
+      "series": "promise",
+      "lane": "campus",
+      "score": 500.0,
+      "reach": 6,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1
+    },
+    {
       "id": "2026-w42-d2-money-r3",
       "series": "money",
       "lane": "young_pro",
@@ -41,8 +85,8 @@
       "id": "2026-w42-hot-1013",
       "series": "sauti",
       "lane": "everyone",
-      "score": 150.0,
-      "reach": 20,
+      "score": 142.9,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "comments": 1,
