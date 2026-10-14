@@ -1,231 +1,192 @@
 {
-  "fetched": "2026-10-14T14:01:28.197246+00:00",
+  "fetched": "2026-10-14T18:36:48.998812+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "arrest",
+      "title": "liverpool",
+      "traffic": "5000+",
+      "news": [
+        {
+          "title": "LASK vs Liverpool: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmqjnvyn28k4t",
+          "source": "BBC"
+        },
+        {
+          "title": "Lask v Liverpool: Champions League – live",
+          "url": "https://www.theguardian.com/football/live/2026/oct/14/lask-v-liverpool-champions-league-live-score-updates",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Video: Araujo and Barcola open their scoring accounts with Liverpool in the Champions League",
+          "url": "https://www.goal.com/en/news/video-araujo-and-barcola-open-their-liverpool-scoring-accounts-in-the-champions-league/blta83ea5832cbff8da",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "aston villa vs fenerbahçe",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Police arrest five suspects, recover dozens of phones in Nairobi, Thika",
-          "url": "https://www.the-star.co.ke/news/2026-10-14-five-suspects-arrested-phones-recovered-in-nairobi-thika",
-          "source": "The Star, Kenya"
+          "title": "Aston Villa vs Fenerbahçe: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmp3gj7gz9kwt",
+          "source": "BBC"
         },
         {
-          "title": "How robbery suspect linked Nairobi businessman to phone theft syndicate",
-          "url": "https://nation.africa/kenya/news/-how-robbery-suspect-linked-nairobi-businessman-to-phone-theft-syndicate-5629330",
-          "source": "Daily Nation"
+          "title": "Aston Villa vs Fenerbahce LIVE! Champions League score updates, news, prediction and line-ups",
+          "url": "https://www.skysports.com/football/live-blog/13598851/aston-villa-vs-fenerbahce-live-champions-league-score-updates-news-prediction-and-line-ups",
+          "source": "Sky Sports"
         },
         {
-          "title": "57 Phones Recovered in Thika as Police Bust Suspected Electronics Racket",
-          "url": "https://www.thikatowntoday.co.ke/2026/10/57-phones-recovered-in-thika-as-police-bust-suspected-electronics-racket.html",
-          "source": "https://www.thikatowntoday.co.ke/"
+          "title": "'Villa Park is our fortress' - Unai Emery urges Aston Villa to end home drought against Fenerbahce as left-back injury crisis deepens",
+          "url": "https://www.goal.com/en-ke/lists/unai-emery-aston-villa-fenerbahce-champions-league/bltdc6b8a6bb1af7291",
+          "source": "Goal.com"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
-      "title": "forex factory",
+      "title": "como fc",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Feyenoord vs Como: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmx2q49qypv9t",
+          "source": "BBC"
+        },
+        {
+          "title": "Fabregas: ‘Como find way to hurt Feyenoord, Champions League is unforgiving’",
+          "url": "https://sports.yahoo.com/articles/fabregas-como-way-hurt-feyenoord-162000068.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Giovanni van Bronckhorst has no surprises in store for clash with Como",
+          "url": "https://www.goal.com/en/news/giovanni-van-bronckhorst-has-no-surprises-in-store-for-clash-with-como/blt9986f5c8446cefe6",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mancity vs psg",
       "traffic": "500+",
       "news": [
         {
-          "title": "US CPI Preview: Follow the Fed and Look Past the Hot Headline",
-          "url": "https://www.forex.com/en-us/news-and-analysis/us-cpi-preview-follow-the-fed-and-look-past-the-hot-headline/",
-          "source": "FOREX.com"
+          "title": "Maresca: City need the perfect game to overcome PSG",
+          "url": "https://www.mancity.com/news/mens/enzo-maresca-manchester-city-v-paris-saint-germain-preview-63927478",
+          "source": "Manchester City FC"
         },
         {
-          "title": "Will US Consumer Price Index data revive expectations for an October Fed rate hike?",
-          "url": "https://www.fxstreet.com/news/us-cpi-data-expected-to-rise-in-september-as-markets-reassess-fed-rate-outlook-202610140830",
-          "source": "FXStreet"
+          "title": "Man City vs PSG LIVE Champions League updates",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/man-city-vs-psg-live-34764953",
+          "source": "Manchester Evening News"
         },
         {
-          "title": "US inflation rises more than expected ahead of midterm elections",
-          "url": "https://www.bbc.com/news/articles/cwy8lx3pg4k2o",
-          "source": "BBC"
+          "title": "Man City vs PSG: Champions League – teams, predictions, line ups",
+          "url": "https://www.aljazeera.com/sports/2026/10/13/manchester-city-psg-champions-league-haaland-torres-predictions-teams",
+          "source": "Al Jazeera"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
-      "title": "epra",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Brace for high pump prices: Kenya’s shrinking subsidy budget forces 90-day tax relief extension",
-          "url": "https://nation.africa/kenya/business/brace-for-high-pump-prices-kenyas-shrinking-subsidy-budget-5631174",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Opiyo Wandayi Addresses Gachagua's Explosive Claims on Fuel Prices",
-          "url": "https://www.kenyans.co.ke/news/127837-opiyo-wandayi-slams-gachagua-over-claims-govt-plans-hike-pump-prices",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Wandayi: Kenya's fuel supply secure despite global oil crisis",
-          "url": "https://www.the-star.co.ke/news/2026-10-13-wandayi-fuel-supply-secure-despite-global-oil-crisis",
-          "source": "The Star, Kenya"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "lisandro martínez",
+      "title": "bodø/glimt vs dortmund",
       "traffic": "200+",
       "news": [
         {
-          "title": "Rooney, Ferdinand y Carragher cuestionaron a Lisandro Martínez tras sus fuertes dichos :: Olé - ole.com.ar",
-          "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/criticas-lisandro-martinez-rooney-carragher-ferdinand_0_N8aF8jILFh.html",
-          "source": "Olé"
+          "title": "Die besondere Familiendynastie des BVB-Gegners",
+          "url": "https://www.sport1.de/tv-video/video/die-besondere-familiendynastie-des-bvb-gegners__c1dfa246-6325-43b7-b30b-c421fdf41fb3",
+          "source": "SPORT1"
         },
         {
-          "title": "«¡Una p*** vergüenza, no tengo palabras!»: Amad Diallo estalla con un exabrupto malsonante mientras el malestar en la plantilla del Manchester United se desborda tras la derrota ante el Atlético de Madrid",
-          "url": "https://es-us.noticias.yahoo.com/deportes/p-verg%C3%BCenza-palabras-amad-diallo-054004032.html",
-          "source": "Yahoo"
+          "title": "[[LIVE/4K=]Dortmund vs Bodø/Glimt LIVE-STREAMS AUF TV-Sender 14. Oktober 2026",
+          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2FsaWJhYmExMDk5LmdpdGh1Yi5pby9lc3BuL2ZjYi54bWwiLz48L2tycGFubz4=&id=video-%CF%89-live-4k-dortmund-vs-bod%C3%B8-glimt-live-streams-auf-de4k",
+          "source": "Universidad de Córdoba (UCO)"
         },
         {
-          "title": "Una estrella del Manchester United critica públicamente a los altos ejecutivos tras la derrota ante el Atlético de Madrid.",
-          "url": "https://www.vietnam.vn/es/sao-mu-cong-khai-chi-trich-cac-sep-bu-sau-tran-thua-atletico",
-          "source": "Vietnam.vn"
+          "title": "《 =𝕃𝕀𝕍𝔼=]𝕋𝕍! 》 Sehen Sie sich Dortmund vs. Bodø/Glimt Live-Streams auf kostenlosen TV-Kanälen vom 14. Oktober 2026 an, „Hass“ ist ein starkes Wort, doch es beschreibt kaum angemessen die Verachtung, die die Lokal- und Championship-Rivalen Sout",
+          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2FsaWJhYmExMDk5LmdpdGh1Yi5pby9lc3BuL2ZjYi54bWwiLz48L2tycGFubz4=&id=video-%CF%89-%F0%9D%95%83%F0%9D%95%80%F0%9D%95%8D%F0%9D%94%BC-%F0%9D%95%8B%F0%9D%95%8D-sehen-sie-sich-dortmund-vs-bod%C3%B8-glimt-li-de4k",
+          "source": "Universidad de Córdoba (UCO)"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "feyenoord vs como",
+      "title": "lincoln city vs west ham",
       "traffic": "200+",
       "news": [
         {
-          "title": "Pronóstico Feyenoord vs Como: Un choque entre dos equipos en buena forma.",
-          "url": "https://www.vietnam.vn/es/nhan-dinh-feyenoord-vs-como-man-so-tai-cua-hai-doi-vao-phom",
-          "source": "Vietnam.vn"
+          "title": "Lincoln City v West Ham United: Championship stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c83vqp3qexrlt",
+          "source": "BBC"
         },
         {
-          "title": "Fàbregas: «A Nico Paz se le juzga solo por los goles y las asistencias, no me preocupa. Echo de menos la Champions",
-          "url": "https://es-us.noticias.yahoo.com/deportes/f%C3%A0bregas-nico-paz-juzga-goles-153726169.html",
-          "source": "Yahoo"
+          "title": "Lincoln City vs West Ham United Prediction & Stats | 14 Oct 2026",
+          "url": "https://www.betshoot.com/football/19729050-Lincoln-City-vs-West-Ham-United-prediction/",
+          "source": "Betshoot"
         },
         {
-          "title": "Montaña rusa de Nico Paz",
-          "url": "https://as.com/futbol/champions/montana-rusa-de-nico-paz-f202610-n/",
-          "source": "Diario AS"
+          "title": "Preview: Lincoln City vs West Ham United - prediction, team news, lineups",
+          "url": "https://www.sportsmole.co.uk/football/west-ham-united/preview/lincoln-vs-west-ham-prediction-team-news-lineups_606719.html",
+          "source": "Sports Mole"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "apple event",
+      "title": "psg",
       "traffic": "200+",
       "news": [
         {
-          "title": "Meet Apple HomeView, a new way to enjoy entertainment, stay connected, and manage the home",
-          "url": "https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/",
-          "source": "Apple"
+          "title": "++【Live Streaming】TV!!】 Manchester City vs Les Parisiens UEFA Champions League Football Live Streaming free",
+          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5bmVwcHkuZ2l0aHViLmlvL2JhYnUvbGl2ZXNvY2NlcnR2LnhtbCIvPjwva3JwYW5vPg==&id=video-manchester-city-vs-les-parisiens-on-366",
+          "source": "Universidad de Córdoba (UCO)"
         },
         {
-          "title": "Apple Is About to Close the Biggest Hole In Its Ecosystem With HomeView",
-          "url": "https://www.bloomberg.com/news/newsletters/2026-10-11/apple-smart-home-launch-oct-13-plans-homeview-has-mid-november-release",
-          "source": "Bloomberg.com"
+          "title": "PSG - Luis Enrique et Ousmane Dembélé ravis de retrouver Gianluigi Donnarumma : \"Une personne merveilleuse\"",
+          "url": "https://madeinfoot.ouest-france.fr/infos/article-psg-luis-enrique-et-ousmane-dembele-ravis-de-retrouver-gianluigi-donnarumma-une-personne-merveilleuse-542168.html",
+          "source": "MadeInFOOT"
         },
         {
-          "title": "Apple just announced a new gadget that could be key to its AI push",
-          "url": "https://www.cnn.com/2026/10/13/tech/apple-homeview-siri-ai",
-          "source": "CNN"
+          "title": "️[2J-C1] « Les adversaires ne dorment pas » : Appadoo met en garde le PSG avant d’affronter Man City (L'Equipe)",
+          "url": "https://www.lestitisdupsg.fr/a-la-une/%F0%9F%8E%99%EF%B8%8F2j-c1-les-adversaires-ne-dorment-pas-appadoo-met-en-garde-le-psg-avant-daffronter-man-city-lequipe/",
+          "source": "Les Titis du PSG"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "samsung galaxy",
-      "traffic": "100+",
+      "title": "feyenoord",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Samsung Galaxy S26 Ultra Cheat Sheet: New Price, Specs, Features, and More",
-          "url": "https://www.techrepublic.com/article/news-samsung-galaxy-s26-ultra-cheat-sheet/",
-          "source": "TechRepublic"
+          "title": "‘Krijg de investering!’ Na vijf jaar is er weer een woonprotest",
+          "url": "https://www.nrc.nl/nieuws/2026/10/10/krijg-de-investering-na-vijf-jaar-is-er-weer-een-woonprotest-a4938685",
+          "source": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek"
         },
         {
-          "title": "If You Buy Only One Thing on Prime Day, Make It the Samsung Galaxy S26 Ultra",
-          "url": "https://creators.yahoo.com/lifestyle/story/if-you-buy-only-one-thing-on-prime-day-make-it-the-samsung-galaxy-s26-ultra-110024446.html",
-          "source": "Yahoo Creators"
+          "title": "Vastgoed in 5 minuten: 'Niemand zit te wachten op meer vrijesectorwoningen'",
+          "url": "https://www.vastgoedmarkt.nl/211505/vastgoed-in-5-minuten-niemand-zit-te-wachten-op-meer-vrijesectorwoningen",
+          "source": "Vastgoedmarkt"
         },
         {
-          "title": "Miraculous new Amazon deal slashes an incredible $455 off a 512GB Galaxy S26+ model",
-          "url": "https://www.phonearena.com/news/samsung-galaxy-s26-plus-new-amazon-deal-incredible-discount-512gb-model_id184050",
-          "source": "PhoneArena"
+          "title": "“Waarom accepteren we dat een huis steeds meer wordt gezien als een verdienmodel?”",
+          "url": "https://www.doorbraak.eu/waarom-accepteren-we-dat-een-huis-steeds-meer-wordt-gezien-als-een-verdienmodel/",
+          "source": "Doorbraak.eu"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "elephant",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Pictured: Winning entries for Wildlife Photographer of the Year 2026",
-          "url": "https://www.bbc.com/news/articles/cw5y4nv05rp8o",
-          "source": "BBC"
-        },
-        {
-          "title": "Incredible winning images from Wildlife Photographer of the Year 2026",
-          "url": "https://www.cnn.com/2026/10/13/travel/wildlife-photographer-2026-winners-scli-intl",
-          "source": "CNN"
-        },
-        {
-          "title": "Awe-Inspiring Wildlife Captured: From Namibia’s Elephants to Thailand’s Urban Lizards",
-          "url": "https://freeyork.org/photography/photographer-of-the-year-awe-inspiring-wildlife/",
-          "source": "freeyork"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ukraine",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Trump suggests Russia and Ukraine did not agree to his ‘energy ceasefire’ before he announced it | CNN Politics",
-          "url": "https://edition.cnn.com/2026/10/11/politics/trump-ukraine-russia-energy-ceasefire",
-          "source": "CNN"
-        },
-        {
-          "title": "Trump says Russia and Ukraine agree to an ‘energy ceasefire’ but Kyiv says attacks continue",
-          "url": "https://apnews.com/article/russia-ukraine-war-yandex-trump-zelenskyy-f621fa788196f204448e7f75fcc78c68",
-          "source": "AP News"
-        },
-        {
-          "title": "OPINION: Trump’s Phantom Ceasefires Are a National Security Problem",
-          "url": "https://www.kyivpost.com/opinion/87017",
-          "source": "Kyiv Post"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "toilet",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Saudi employee charged with planting recording device at OpenAI office",
-          "url": "https://www.bbc.com/news/articles/cwg5jq4vlddzo",
-          "source": "BBC"
-        },
-        {
-          "title": "OpenAI engineer arrested in bugging of executive conference room",
-          "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
-          "source": "The San Francisco Standard"
-        },
-        {
-          "title": "FBI arrests OpenAI employee accused of planting hidden recording device in conference room",
-          "url": "https://techcrunch.com/2026/10/13/fbi-arrests-openai-employee-accused-of-planting-hidden-recording-device-in-conference-room/",
-          "source": "TechCrunch"
-        }
-      ],
-      "civic": true
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "norwich city vs southampton",
+      "why": "unsafe: 'Bet'"
+    },
+    {
+      "title": "portsmouth vs sheffield united",
+      "why": "unsafe: 'Betting'"
+    }
+  ],
   "errors": {}
 }
