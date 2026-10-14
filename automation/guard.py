@@ -95,7 +95,7 @@ BLOCK = {
 # Topics the brand never touches (keeps it for everyone, everywhere)
 BANNED_TOPICS = {
     # promoting gambling, never reporting on it (the betting tax and gambling debt are real political stories)
-    "betting": r"\b(place (a|your) bets?|bet now|sure bets?|betting tips|best odds|odds (boost|of \d)|win the jackpot|"
+    "betting": r"\b(place (a|your) bets?|bet now|bet on (the )?(jackpot|match|game|team)|sure bets?|betting tips|best odds|odds (boost|of \d)|win the jackpot|"
                r"mega ?jackpot|(join|download|use) (sportpesa|betika|odibets|mozzartbet|shabiki)|cheza kamari)\b",
     "get-rich-quick": r"\b(get rich|guaranteed (profit|income|returns)|double your money|100% win)\b",
     # Criticising public office holders is in scope; telling people who to vote for is not
