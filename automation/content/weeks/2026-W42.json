@@ -461,37 +461,39 @@
       "id": "2026-w42-hot-1014",
       "template": "sauti",
       "lane": "everyone",
-      "demand": 3,
-      "kicker": "Taxpayers",
-      "line": "Fuel prices go up again, and fuel the *campaigns* for 2027.",
-      "fact": "Former DP Rigathi Gachagua accuses the State of using fuel price hikes to fund early 2027 political rallies.",
-      "message": "Fuel price increases fund political campaigns instead of public services.",
-      "action": "Check fuel taxes at pump: ask your MP why levies keep rising",
-      "beats": [
-        "Fuel prices up again.",
-        "*Extra* money at the pump.",
-        "Funding early 2027 *campaigns*.",
-        "Who pays the bill?",
-        "Ask your MP today."
-      ],
-      "photo_query": "fuel station pump Nairobi",
-      "source": "Capital FM News, October 14, 2026: Gachagua accuses Ruto of using fuel price hikes to fund 2027 campaigns (https://capitalfm.africa/gachagua-accuses-ruto-of-using-fuel-price-hikes-to-fund-2027-campaigns/)",
-      "caption": "Pump prices go up, and the money goes straight to rallies. Gachagua says fuel levies fund the 2027 campaigns. We are the ones paying for our own political noise.\n\nWho pays for your fuel? Tag your MP 👇🏾\n\n#KenyansAreAsking",
-      "who": "President William Ruto",
+      "kicker": "Taxpayers at the pump",
+      "line": "Gachagua claims *fuel price hikes* fund 2027 campaigns, but at the pump we just pay. Where does our money go?",
+      "fact": "Fuel carries nine taxes and levies, making up about 40% of the pump price per litre in Kenya.",
+      "source": "Capital FM (14 Oct 2026): https://capitalfm.africa/gachagua-accuses-ruto-of-using-fuel-price-hikes-to-fund-2027-campaigns/ | EPRA pricing breakdown",
+      "message": "Politicians trade 2027 campaign claims over fuel, but ordinary Kenyans still pay nine levies on every litre.",
+      "action": "Check EPRA's tax breakdown on your fuel receipt and ask your MP why levies stay high",
+      "photo_query": "petrol station pump Kenya",
+      "event_query": "Gachagua press conference Nairobi",
+      "who": "Rigathi Gachagua and Energy CS Opiyo Wandayi",
       "where": "National",
       "when": "14 Oct 2026",
-      "side": "opposition",
+      "side": "both",
       "tone": "criticism",
-      "impact": "Every pump price hike pushes up transport and food costs for ordinary Kenyans.",
+      "demand": 3,
+      "impact": "Taxes take about 40% of every litre, driving up matatu fares, electricity, and basic food costs.",
+      "beats": [
+        "Fuel prices are *political football* again.",
+        "Gachagua claims hikes fund 2027.",
+        "State House denies the claim.",
+        "Meanwhile, we pay *nine levies*.",
+        "Taxes take 40% of every litre.",
+        "Demand your MP audit fuel taxes."
+      ],
+      "caption": "Politicians are trading 2027 campaign claims over fuel, but wananchi are the ones footing the bill at the pump.\n\nWhat it means for you: Taxes take about 40% of every litre, driving up matatu fares, electricity, and basic food costs.\n\nKenyans are asking the National Treasury: why do ordinary Kenyans carry nine fuel levies while leaders fight over 2027? Check EPRA's tax breakdown on your fuel receipt and ask your MP to audit fuel levies.\n\n#FuelPrices #KenyansAreAsking",
       "bg": "usiku",
       "publish_at": "2026-10-14T20:00:00+03:00",
       "hot": true,
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "banned topic: crypto-shill"
-        ],
-        "warnings": []
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
       },
       "critic": {
         "hook": 8,
@@ -500,23 +502,30 @@
         "fresh": 8,
         "voice": 7,
         "craft": 8,
-        "picture": 7,
+        "picture": 8,
         "hold": 8,
-        "demand": 3,
+        "demand": 8,
         "action": 6,
         "fair": 7,
-        "impact": 8,
-        "avg": 7.2,
-        "note": "Make the call-to-action more concrete by telling them to check the specific road and fuel levies on their next receipt."
+        "impact": 9,
+        "avg": 7.8,
+        "note": "Make the action concrete by naming the specific EPRA tax percentage or giving a direct way to contact MPs."
       },
-      "drafted_at": "2026-10-14T09:19:30.195447+03:00"
+      "drafted_at": "2026-10-14T11:18:40.833083+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1014-photo.jpg",
+      "photo_credit": "Photo: Sambaza2 / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_Railways_Locomotive.jpg",
+      "reel": true,
+      "tg_msg": 177
     }
   ],
   "scripts": {
-    "radio": "Habari za asubuhi, msikilizaji wa Kenyans Are Asking. Leo lazima tuzungumzie ukweli mchungu kuhusu bei ya mafuta. Kila wakati bei inapopanda pale pampu, tunaambiwa ni mambo ya kimataifa. Lakini ukweli ni upi? Wananchi wanalia, bei ya chakula inapanda, nauli zinatisha—lakini pesa hizi zinaenda wapi? Kuna tetesi na hata ushahidi unaoibuka kwamba fedha hizi za ziada zinazotoka mifukoni mwetu zinachangia kufadhili kampeni za kisiasa badala ya huduma za umma kama hospitali na barabara.\n\nSasa hivi, mwananchi wa kawaida anajinyima ili mwanasiasa ajinufufishe. Hii si haki. Barabara zimejaa mashimo, hospitali hazina dawa, lakini ushuru wetu unatumika kwenye mikutano ya kisiasa na magari ya kifahari ya serikali. Tunahitaji uwajibikaji. Pesa za wananchi zitumie wananchi. Tukae macho.\n\n[Kiswahili Summary]\nLeo tunaangazia bei ya mafuta na jinsi inavyoaminika kuwa ushuru tunaolipia unatumika kufadhili kampeni za kisiasa badala ya kuboresha huduma za umma kama afya na miundombinu. Wananchi wanastahili uwajibikaji na matumizi bora ya kodi zao.",
-    "voice_note": "Wadau, mambo gani haya? Hebu tuongee ukweli kidogo. Bei ya mafuta inapanda kila mwezi, alafu tunaambiwavyo eti ni bei za kimataifa. Lakini ukiangalia kwa makini, pesa hizi zote zinakwenda wapi? Badala ya kujenga barabara, kununua dawa hospitalini, au kupunguza mzigo kwa mwananchi, pesa za mafuta zinaishia kwenye kampeni za kisiasa na matumizi ya anasa ya viongozi. Mwananchi analipa ushuru ili fulani afanya siasa? Hii sio sawa kabisa. Lazima tuulize maswali magumu. Pesa zetu, huduma zetu!",
-    "sms": "Usiibiwe: Kodi yako ya mafuta si ya kampeni. Dai huduma bora za umma kama hospitali na barabara, sio ufadhili wa siasa. Simamia haki yako!",
-    "reels": "Hivi mnajua pesa zenu za mafuta zinaenda wapi? Kila wakati bei inapopanda pale pampu, mwananchi wa kawaida anaumia. Lakini pesa hizo hazisaidii kujenga hospitali au barabara bora—zinaenda kufadhili kampeni za kisiasa! Tunatoza ushuru mzito ili wachache wafanye siasa na starehe. Hii haikubaliki. Wakenya, tuamke. Pesa zetu, huduma zetu!"
+    "radio": "Hamjambo msikilizaji, welcome back to Kenyans Are Asking. This week, political rallies have turned into shouting matches about fuel prices. On one side, politicians promise that a vote in 2027 will finally bring cheap petrol. On the other, the blame is tossed backward to global crude oil markets. But while leaders trade campaign slogans, let us look at the actual receipt. Right now, on every single litre of super petrol or diesel you buy for your boda boda, matatu, or family car, you pay nine separate taxes and levies. That includes the Road Maintenance Levy, Petroleum Development Levy, Railway Development Levy, and standard VAT, among others. In fact, taxes make up roughly forty percent of the final pump price. When fuel goes up, the price of unga, transport, and basic electricity rises immediately. So when a leader stands on an SUV promising you cheaper living in 2027, ask them a simple question: why aren't they sponsoring a bill to review or reduce those nine levies on the floor of Parliament today? The legal power to lower fuel taxes sits in the National Assembly right now, not in the next ballot box. Kwa ufupi: Wanasiasa wameanza kampeni za 2027 wakiahidi mafuta nafuu, lakini ukweli ni kwamba mwananchi analipa tozo tisa tofauti kwa kila lita ya mafuta. Bunge lina uwezo wa kupunguza tozo hizi leo, si lazima tusubiri uchaguzi ujao.",
+    "voice_note": "Hey everyone, quick accountability check from Kenyans Are Asking. Have you noticed how fuel prices are suddenly the loudest talking point for 2027 campaigns? Politicians from across the political divide are already promising to 'rescue' us if we back them in the next election. But don't let campaign rhetoric distract from the reality at the pump. On every single litre of fuel you buy today, you are paying nine distinct taxes and levies. Nearly forty percent of that cost is government taxation approved right in Parliament. The very same leaders asking for your future vote are sitting in the National Assembly this week. If they genuinely wanted to lower pump prices, they would amend the tax laws and scrap unnecessary levies today. Let’s hold them accountable now, not five years down the road.",
+    "sms": "Usiibiwe: Fuel is costly because of 9 government levies per litre, not just global crude. MPs can cut those taxes in Parliament today, not in 2027.",
+    "reels": "Politicians are already promising cheap fuel if you vote for them in 2027. But look at your pump receipt today. On every single litre, you are paying nine separate taxes and levies. Nearly forty percent of the pump price is pure taxation voted in by Parliament. Why wait for the next election? The MPs asking for your vote can table a bill to cut those levies right now."
   },
   "spend_usd": 3.0807,
   "revision": 3
