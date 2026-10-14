@@ -456,13 +456,67 @@
       "published_at": "2026-10-13T18:32:00.094212+03:00",
       "ig_id": "18093515756670136",
       "fb_id": "1126273406420341"
+    },
+    {
+      "id": "2026-w42-hot-1014",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 3,
+      "kicker": "Taxpayers",
+      "line": "Fuel prices go up again, and fuel the *campaigns* for 2027.",
+      "fact": "Former DP Rigathi Gachagua accuses the State of using fuel price hikes to fund early 2027 political rallies.",
+      "message": "Fuel price increases fund political campaigns instead of public services.",
+      "action": "Check fuel taxes at pump: ask your MP why levies keep rising",
+      "beats": [
+        "Fuel prices up again.",
+        "*Extra* money at the pump.",
+        "Funding early 2027 *campaigns*.",
+        "Who pays the bill?",
+        "Ask your MP today."
+      ],
+      "photo_query": "fuel station pump Nairobi",
+      "source": "Capital FM News, October 14, 2026: Gachagua accuses Ruto of using fuel price hikes to fund 2027 campaigns (https://capitalfm.africa/gachagua-accuses-ruto-of-using-fuel-price-hikes-to-fund-2027-campaigns/)",
+      "caption": "Pump prices go up, and the money goes straight to rallies. Gachagua says fuel levies fund the 2027 campaigns. We are the ones paying for our own political noise.\n\nWho pays for your fuel? Tag your MP 👇🏾\n\n#KenyansAreAsking",
+      "who": "President William Ruto",
+      "where": "National",
+      "when": "14 Oct 2026",
+      "side": "opposition",
+      "tone": "criticism",
+      "impact": "Every pump price hike pushes up transport and food costs for ordinary Kenyans.",
+      "bg": "usiku",
+      "publish_at": "2026-10-14T20:00:00+03:00",
+      "hot": true,
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "banned topic: crypto-shill"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 7,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 8,
+        "avg": 7.2,
+        "note": "Make the call-to-action more concrete by telling them to check the specific road and fuel levies on their next receipt."
+      },
+      "drafted_at": "2026-10-14T09:19:30.195447+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari zenu listeners, and welcome back to Kenyans Are Asking. Picture this: you delay paying your electricity bill by just a few days, maybe owing a mere five hundred or one thousand shillings. What happens? Kenya Power technicians show up, ladder in hand, and you are plunged into darkness. No negotiations. Now, look at the other side of town. Government ministries, departments, and agencies currently owe Kenya Power a staggering 7.35 billion shillings in unpaid electricity bills. Seven point three five billion! Yet, their offices remain brightly lit and air-conditioned, while ordinary taxpayers cover the shortfall. Why does Kenya Power pursue wananchi with ruthless efficiency while treating state defaulters with kid gloves? When government institutions refuse to clear their bills, it chokes utility operations, and those financial gaps are quietly passed back to us through higher tariffs and inflated charges. Accountability cannot be a one-way street. If a mama mboga must pay upfront or sit in darkness, state offices that receive annual budget allocations for utilities must do the same. No more double standards. Kwa ufupi: Wananchi wanazimiwa stima mara moja kwa madeni madogo, ilhali idara za serikali zinarundika madeni ya shilingi bilioni saba nukta tatu tano bila kukatiwa. Hii si haki. Ni lazima mashirika ya serikali yalipe bili zao za stima kama raia wengine wote.",
-    "voice_note": "Hey everyone, check this out. If you or your neighbour owe Kenya Power even five hundred shillings, they climb the pole and disconnect you before sunset. No second chances. But right now, government departments and state agencies are sitting on unpaid electricity bills totalling 7.35 billion shillings. 7.35 billion! Their lights stay on, air conditioners humming, while ordinary wananchi bear the brunt of higher tariffs to cover those deficits. Why are there two sets of rules? One for the struggling citizen and another for government offices that already receive taxpayer funds budgeted for utilities? Let us demand fairness. Share this note with your circles—if wananchi must pay on time, the government must clear its bills too.",
-    "sms": "Usiibiwe: KPLC cuts your power over Sh500 while state agencies owe Sh7.35B. Demand leaders account for utility budgets. Equal rules for all!",
-    "reels": "You owe Kenya Power a thousand shillings, and your lights go off before sunset. But government agencies owe that same power company over 7.35 billion shillings, and their offices stay fully lit. Why are ordinary Kenyans punished for small debts while state offices pile up billions on our tab? It is time public institutions paid their bills like everyone else."
+    "radio": "Habari za asubuhi, msikilizaji wa Kenyans Are Asking. Leo lazima tuzungumzie ukweli mchungu kuhusu bei ya mafuta. Kila wakati bei inapopanda pale pampu, tunaambiwa ni mambo ya kimataifa. Lakini ukweli ni upi? Wananchi wanalia, bei ya chakula inapanda, nauli zinatisha—lakini pesa hizi zinaenda wapi? Kuna tetesi na hata ushahidi unaoibuka kwamba fedha hizi za ziada zinazotoka mifukoni mwetu zinachangia kufadhili kampeni za kisiasa badala ya huduma za umma kama hospitali na barabara.\n\nSasa hivi, mwananchi wa kawaida anajinyima ili mwanasiasa ajinufufishe. Hii si haki. Barabara zimejaa mashimo, hospitali hazina dawa, lakini ushuru wetu unatumika kwenye mikutano ya kisiasa na magari ya kifahari ya serikali. Tunahitaji uwajibikaji. Pesa za wananchi zitumie wananchi. Tukae macho.\n\n[Kiswahili Summary]\nLeo tunaangazia bei ya mafuta na jinsi inavyoaminika kuwa ushuru tunaolipia unatumika kufadhili kampeni za kisiasa badala ya kuboresha huduma za umma kama afya na miundombinu. Wananchi wanastahili uwajibikaji na matumizi bora ya kodi zao.",
+    "voice_note": "Wadau, mambo gani haya? Hebu tuongee ukweli kidogo. Bei ya mafuta inapanda kila mwezi, alafu tunaambiwavyo eti ni bei za kimataifa. Lakini ukiangalia kwa makini, pesa hizi zote zinakwenda wapi? Badala ya kujenga barabara, kununua dawa hospitalini, au kupunguza mzigo kwa mwananchi, pesa za mafuta zinaishia kwenye kampeni za kisiasa na matumizi ya anasa ya viongozi. Mwananchi analipa ushuru ili fulani afanya siasa? Hii sio sawa kabisa. Lazima tuulize maswali magumu. Pesa zetu, huduma zetu!",
+    "sms": "Usiibiwe: Kodi yako ya mafuta si ya kampeni. Dai huduma bora za umma kama hospitali na barabara, sio ufadhili wa siasa. Simamia haki yako!",
+    "reels": "Hivi mnajua pesa zenu za mafuta zinaenda wapi? Kila wakati bei inapopanda pale pampu, mwananchi wa kawaida anaumia. Lakini pesa hizo hazisaidii kujenga hospitali au barabara bora—zinaenda kufadhili kampeni za kisiasa! Tunatoza ushuru mzito ili wachache wafanye siasa na starehe. Hii haikubaliki. Wakenya, tuamke. Pesa zetu, huduma zetu!"
   },
   "spend_usd": 3.0807,
   "revision": 3
