@@ -493,7 +493,7 @@
       "bg": "usiku",
       "publish_at": "2026-10-14T20:00:00+03:00",
       "hot": true,
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -524,7 +524,11 @@
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_Railways_Locomotive.jpg",
       "reel": true,
       "tg_msg": 177,
-      "decided_at": "2026-10-14T11:58:55.111091+03:00"
+      "decided_at": "2026-10-14T11:58:55.111091+03:00",
+      "published_at": "2026-10-14T20:02:10.768993+03:00",
+      "ig_id": "18133562206763836",
+      "fb_id": "1102674085822126",
+      "story_id": "17937236649400630"
     }
   ],
   "scripts": {
