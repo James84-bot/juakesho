@@ -529,13 +529,72 @@
       "ig_id": "18133562206763836",
       "fb_id": "1102674085822126",
       "story_id": "17937236649400630"
+    },
+    {
+      "id": "2026-w42-hot-1015",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 1,
+      "message": "Parliament approved a new fuel tax relief extension while motorists face surging pump prices.",
+      "action": "Check the EPRA price breakdown at the pump, then ask your MP",
+      "beats": [
+        "*EPRA* hiked the prices.",
+        "Now Parliament extends fuel tax relief.",
+        "Relief for *90 days* only.",
+        "What changes on day 91?",
+        "Where is the permanent fix?"
+      ],
+      "photo_query": "Nairobi fuel station pump Kenya",
+      "source": "People Daily, 'MPs extend fuel VAT relief for 90 days as Kenyans face rising costs', 15 Oct 2026",
+      "kicker": "Motorists",
+      "line": "Another *90-day* fuel tax extension. We're still waiting for a permanent fix at the pump.",
+      "fact": "Parliament extended fuel VAT relief for 90 days as motorists face high pump prices.",
+      "caption": "Another 90-day fuel tax extension while prices stay high. We pay. One question: what happens on day 91? 👇🏾\n\nSend this to someone who buys fuel every week.\n\n#EPRA #KenyansAreAsking",
+      "who": "National Assembly and EPRA",
+      "where": "National",
+      "when": "15 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Every pump price hike drives up matatu fares and maize flour transport costs.",
+      "bg": "usiku",
+      "publish_at": "2026-10-15T21:00:00+03:00",
+      "hot": true,
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 9,
+        "action": 6,
+        "fair": 7,
+        "impact": 9,
+        "avg": 8.0,
+        "note": "Make the action specific by telling them to track whether fuel prices drop next month."
+      },
+      "drafted_at": "2026-10-15T09:09:58.024205+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1015-photo.jpg",
+      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
+      "reel": true,
+      "tg_msg": 185
     }
   ],
   "scripts": {
-    "radio": "Hamjambo msikilizaji, welcome back to Kenyans Are Asking. This week, political rallies have turned into shouting matches about fuel prices. On one side, politicians promise that a vote in 2027 will finally bring cheap petrol. On the other, the blame is tossed backward to global crude oil markets. But while leaders trade campaign slogans, let us look at the actual receipt. Right now, on every single litre of super petrol or diesel you buy for your boda boda, matatu, or family car, you pay nine separate taxes and levies. That includes the Road Maintenance Levy, Petroleum Development Levy, Railway Development Levy, and standard VAT, among others. In fact, taxes make up roughly forty percent of the final pump price. When fuel goes up, the price of unga, transport, and basic electricity rises immediately. So when a leader stands on an SUV promising you cheaper living in 2027, ask them a simple question: why aren't they sponsoring a bill to review or reduce those nine levies on the floor of Parliament today? The legal power to lower fuel taxes sits in the National Assembly right now, not in the next ballot box. Kwa ufupi: Wanasiasa wameanza kampeni za 2027 wakiahidi mafuta nafuu, lakini ukweli ni kwamba mwananchi analipa tozo tisa tofauti kwa kila lita ya mafuta. Bunge lina uwezo wa kupunguza tozo hizi leo, si lazima tusubiri uchaguzi ujao.",
-    "voice_note": "Hey everyone, quick accountability check from Kenyans Are Asking. Have you noticed how fuel prices are suddenly the loudest talking point for 2027 campaigns? Politicians from across the political divide are already promising to 'rescue' us if we back them in the next election. But don't let campaign rhetoric distract from the reality at the pump. On every single litre of fuel you buy today, you are paying nine distinct taxes and levies. Nearly forty percent of that cost is government taxation approved right in Parliament. The very same leaders asking for your future vote are sitting in the National Assembly this week. If they genuinely wanted to lower pump prices, they would amend the tax laws and scrap unnecessary levies today. Let’s hold them accountable now, not five years down the road.",
-    "sms": "Usiibiwe: Fuel is costly because of 9 government levies per litre, not just global crude. MPs can cut those taxes in Parliament today, not in 2027.",
-    "reels": "Politicians are already promising cheap fuel if you vote for them in 2027. But look at your pump receipt today. On every single litre, you are paying nine separate taxes and levies. Nearly forty percent of the pump price is pure taxation voted in by Parliament. Why wait for the next election? The MPs asking for your vote can table a bill to cut those levies right now."
+    "radio": "Hamjambo msikilizaji. This is Kenyans Are Asking, and this week we look at the fuel pump. On paper, the National Assembly has just approved an extension of fuel tax relief. Lawmakers patted themselves on the back, telling us they are cushioning Kenyans from the rising cost of living. But drive into any petrol station from Mombasa to Kisumu, and the story on the ground is completely different—pump prices have surged once again. So, where is this relief going? If taxes were cushioned or extended, why is that relief not reaching the boda boda rider, the matatu operator, or the family struggling with rising food costs? The hard truth is that our fuel pricing formula remains an opaque black box. Far too often, paper relief gets swallowed up in settling legacy debts with oil marketers or plugging deficits in stabilization funds, while mwananchi absorbs the full shock at the pump. Passing relief in parliament makes for great headlines, but accountability is measured in the shillings leaving your pocket at the till. Until EPRA and the Ministry of Energy lay bare the exact ledger showing who benefits from this tax variance, these extensions remain political theatre. Kwa ufupi: Bunge limeidhinisha kuongezwa kwa unafuu wa kodi ya mafuta, lakini bei vituoni inazidi kupanda. Wananchi wana haki ya kuuliza: ikiwa serikali inatoa unafuu wa kodi, mbona bei ya mafuta haishuki mfukoni mwa mwananchi?",
+    "voice_note": "Hey everyone, quick update from Kenyans Are Asking. You might have seen the news that Parliament approved an extension on fuel tax relief this week. It sounds like a win, right? But check your receipt the next time you fuel—pump prices are actually climbing. Here is the disconnect: every time politicians announce 'relief', the actual margin never trickles down to you. Instead, it gets swallowed into backroom settlements with oil marketers or diverted to offset stabilization arrears, while you pay full price. We cannot keep celebrating tax relief that only exists on parliamentary records while our daily transport costs go up. If public money is being used to cushion fuel, that discount must reflect at the pump. Ask your MP: who exactly is this fuel relief protecting, if not the taxpayer?",
+    "sms": "Usiibiwe: Parliament extended fuel tax relief, yet pump prices keep surging. Check EPRA's monthly breakdown and demand full transparency on fuel levies.",
+    "reels": "Parliament just told us they extended fuel tax relief. So why did your fuel receipt just go up? Every time lawmakers claim they're cushioning wananchi, pump prices hit new highs. The truth? These tax breaks often settle debts with oil marketers instead of lowering your fare or pump price. Stop reading the press releases. Look at the meter. Kenyans are asking: who exactly is pocketing our fuel relief?"
   },
   "spend_usd": 3.0807,
   "revision": 3
