@@ -1,17 +1,20 @@
-event 'Gachagua press conference Nairobi' for 2026-w42-hot-1014 (10 Oct-15 Oct): 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 0, 'subject': 0}
-event 'Gachagua press' for 2026-w42-hot-1014 (10 Oct-15 Oct): 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 0, 'subject': 0}
 feed KBC: 60 items, 60 with an image
-feed Capital FM: 60 items, 4 with an image
-feed Capital FM Politics: 60 items, 7 with an image
+feed Capital FM: 60 items, 3 with an image
+feed Capital FM Politics: 60 items, 6 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
 feed Nation: 25 items, 0 with an image
-posted for 2026-w42-hot-1014: 0 matching reports (person 'wandayi', words ['gachagua', 'press', 'conference'])
-commons 'petrol station pump Kenya' for 2026-w42-hot-1014: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-commons 'petrol station' for 2026-w42-hot-1014: 25 found, 0 usable, dropped {'size': 1, 'licence': 0, 'place': 24, 'subject': 0}
-commons 'petrol station pump Kenya' for 2026-w42-hot-1014: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-commons 'petrol station' for 2026-w42-hot-1014: 25 found, 0 usable, dropped {'size': 5, 'licence': 1, 'place': 19, 'subject': 0}
-openverse 'petrol station pump Kenya' for 2026-w42-hot-1014: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-openverse 'petrol station' for 2026-w42-hot-1014: 20 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 20, 'subject': 0}
-commons 'power lines Kenya' for 2026-w42-hot-1014: 6 found, 6 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-photo for 2026-w42-hot-1014: nothing for 'petrol station pump Kenya', used 'power lines Kenya'
+posted for 2026-w42-hot-1015: 2 matching reports (person '', words ['parliament', 'approved', 'fuel', 'relief', 'extension'])
+skipped The Standard: image too small or not a photo
+skipped Kenyans.co.ke: image too small or not a photo
+commons 'Nairobi fuel station pump Kenya' for 2026-w42-hot-1015: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'fuel station pump Nairobi' for 2026-w42-hot-1015: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'fuel station' for 2026-w42-hot-1015: 25 found, 0 usable, dropped {'size': 2, 'licence': 0, 'place': 23, 'subject': 0}
+commons 'Nairobi fuel station pump Kenya' for 2026-w42-hot-1015: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'fuel station pump Nairobi' for 2026-w42-hot-1015: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'fuel station' for 2026-w42-hot-1015: 25 found, 0 usable, dropped {'size': 2, 'licence': 0, 'place': 23, 'subject': 0}
+openverse 'Nairobi fuel station pump Kenya' for 2026-w42-hot-1015: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+openverse 'fuel station pump Nairobi' for 2026-w42-hot-1015: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+openverse 'fuel station' for 2026-w42-hot-1015: 20 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 20, 'subject': 0}
+commons 'Kenyan shilling banknotes' for 2026-w42-hot-1015: 13 found, 10 usable, dropped {'size': 3, 'licence': 0, 'place': 0, 'subject': 0}
+photo for 2026-w42-hot-1015: nothing for 'Nairobi fuel station pump Kenya', used 'Kenyan shilling banknotes'
