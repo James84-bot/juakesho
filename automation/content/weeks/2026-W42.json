@@ -206,7 +206,7 @@
       ],
       "bg": "usiku",
       "publish_at": "2026-10-15T19:30:00+03:00",
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -232,7 +232,11 @@
       "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
       "reel": true,
       "decided_at": "2026-10-13T04:49:38.977241+03:00",
-      "fresh_checked": "2026-10-14T16:49:03.784431+03:00"
+      "fresh_checked": "2026-10-14T16:49:03.784431+03:00",
+      "published_at": "2026-10-15T19:32:18.333597+03:00",
+      "ig_id": "18636064657008478",
+      "fb_id": "1441028444656230",
+      "story_id": "17866076595678285"
     },
     {
       "id": "2026-w42-d5-straight-r3",
