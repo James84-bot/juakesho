@@ -238,59 +238,68 @@
       "id": "2026-w42-d5-straight-r3",
       "template": "straight",
       "lane": "everyone",
-      "who": "Samson Cherargei, Nandi Senator (Senate debate)",
-      "where": "National",
-      "when": "12 Oct 2026",
-      "claim": "Parliament can extend presidential term limits to seven years without taking the vote to a referendum.",
-      "claim_source": "Capital FM: Cherargei threatens fresh bid to extend Ruto’s stay in power, 12 Oct 2026",
-      "truth": "Changing presidential term limits requires a mandatory referendum.",
-      "pride": "Sovereign power over terms rests with wananchi.",
-      "source": "Constitution of Kenya 2010, Article 255(1)(f) and Article 256; Elections Act, s.49",
-      "proof": [
-        "Article 255(1)(f) of the Constitution protects presidential terms from direct MP votes.",
-        "Any bill altering term limits must pass both houses and go to a citizen ballot.",
-        "At least 20 percent of registered voters across 24 counties must vote in the poll."
-      ],
+      "claim": "Elections can be manipulated by using fingerprints of dead voters.",
+      "who": "Hassan Omar, UDA Secretary-General",
+      "claim_source": "Remarks cited in IEBC summons notice, 15 Oct 2026",
       "verdict": "false",
-      "message": "No politician can extend presidential term limits through Parliament alone without a national referendum.",
-      "action": "Read Article 255 of the Constitution to protect your vote",
-      "photo_query": "Kenya National Assembly",
-      "caption": "Talk of extending the presidential term from five to seven years is back in Parliament. The law is clear: politicians cannot vote away your term limits on their own. Article 255 requires every registered voter to decide.\n\nWhat do you think of attempts to extend presidential terms? Share below.\n\n#SetItStraight #NandiFocus #KenyansAreAsking",
-      "beats": [
-        "Can MPs extend the *presidential term*?",
-        "A senator claimed Parliament *can decide*.",
-        "*False.* The Constitution says no.",
-        "Article 255 demands a *referendum*.",
-        "Wananchi hold the *final vote*.",
-        "Read Article 255 to *protect your vote*."
+      "truth": "KIEMS kits require live biometrics and reject deceased records.",
+      "proof": [
+        "Elections Act Sec 8 requires IEBC to expunge deceased voters via civil registry data.",
+        "KIEMS kits require a live optical biometric match against registered voter records.",
+        "System logs create an immutable audit trail rejecting unverified biometric attempts."
       ],
+      "pride": "Kenyan voter technology runs on verifiable law.",
+      "source": "Elections Act 2011 s.8; Supreme Court of Kenya Petition No. E005 of 2022; IEBC Voter Registration Regulations",
+      "photo_query": "ballot box Kenya",
+      "event_query": "IEBC voter registration Nairobi",
+      "message": "KIEMS kits require live biometrics: dead voters cannot cast ballots under Kenyan election law.",
+      "action": "Check your voter registration status: SMS your ID number to 70000",
+      "beats": [
+        "They claim *dead voters* cast ballots.",
+        "The official record says no.",
+        "KIEMS kits need a *live match*.",
+        "Civil registry data purges dead files.",
+        "*SMS ID to 70000* to check."
+      ],
+      "caption": "Politicians are talking about dead voters casting ballots ahead of 2027. The law and the technology say otherwise: KIEMS kits require live biometric verification, and Section 8 of the Elections Act mandates continuous register cleanups.\n\nWhat it means for you: Unbacked claims create voter apathy before the election even starts.\n\nCheck your voter registration status: SMS your ID number to 70000.\n\n#SetItStraight #KenyansAreAsking",
+      "side": "government",
+      "tone": "explainer",
+      "where": "National",
+      "when": "15 Oct 2026",
+      "impact": "Sensational voter claims create voter apathy and undermine trust in lawful election tech.",
       "bg": "usiku",
       "publish_at": "2026-10-16T17:00:00+03:00",
-      "status": "approved",
+      "status": "awaiting",
       "guard": {
         "errors": [],
-        "warnings": []
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
       },
       "critic": {
-        "hook": 9,
-        "send": 10,
-        "clarity": 10,
-        "fresh": 9,
-        "voice": 9,
-        "craft": 9,
-        "picture": 9,
-        "hold": 9,
-        "demand": 10,
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 7,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
         "action": 9,
-        "fair": 9,
-        "avg": 9.3,
-        "note": "Strong, keep the direct constitutional receipts tight."
+        "fair": 8,
+        "impact": 9,
+        "avg": 8.1,
+        "note": "Make the caption sound more like a skeptical Kenyan on X rather than an official civic education pamphlet."
       },
-      "trend": "#NandiFocus",
+      "drafted_at": "2026-10-15T11:57:32.629283+03:00",
       "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d5-straight-r3-photo.jpg",
-      "photo_credit": "Photo: Sir. Kevin Macharia / Wikimedia Commons, CC BY-SA 2.0",
+      "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:2022_Kenya_election_detailed_partial_results.png",
       "reel": true,
-      "decided_at": "2026-10-13T04:49:38.138355+03:00"
+      "tg_msg": 189
     },
     {
       "id": "2026-w42-d6-promise-r3",
@@ -559,7 +568,7 @@
       "bg": "usiku",
       "publish_at": "2026-10-15T21:00:00+03:00",
       "hot": true,
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -587,14 +596,15 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
       "reel": true,
-      "tg_msg": 185
+      "tg_msg": 185,
+      "decided_at": "2026-10-15T11:48:44.121380+03:00"
     }
   ],
   "scripts": {
-    "radio": "Hamjambo msikilizaji. This is Kenyans Are Asking, and this week we look at the fuel pump. On paper, the National Assembly has just approved an extension of fuel tax relief. Lawmakers patted themselves on the back, telling us they are cushioning Kenyans from the rising cost of living. But drive into any petrol station from Mombasa to Kisumu, and the story on the ground is completely different—pump prices have surged once again. So, where is this relief going? If taxes were cushioned or extended, why is that relief not reaching the boda boda rider, the matatu operator, or the family struggling with rising food costs? The hard truth is that our fuel pricing formula remains an opaque black box. Far too often, paper relief gets swallowed up in settling legacy debts with oil marketers or plugging deficits in stabilization funds, while mwananchi absorbs the full shock at the pump. Passing relief in parliament makes for great headlines, but accountability is measured in the shillings leaving your pocket at the till. Until EPRA and the Ministry of Energy lay bare the exact ledger showing who benefits from this tax variance, these extensions remain political theatre. Kwa ufupi: Bunge limeidhinisha kuongezwa kwa unafuu wa kodi ya mafuta, lakini bei vituoni inazidi kupanda. Wananchi wana haki ya kuuliza: ikiwa serikali inatoa unafuu wa kodi, mbona bei ya mafuta haishuki mfukoni mwa mwananchi?",
-    "voice_note": "Hey everyone, quick update from Kenyans Are Asking. You might have seen the news that Parliament approved an extension on fuel tax relief this week. It sounds like a win, right? But check your receipt the next time you fuel—pump prices are actually climbing. Here is the disconnect: every time politicians announce 'relief', the actual margin never trickles down to you. Instead, it gets swallowed into backroom settlements with oil marketers or diverted to offset stabilization arrears, while you pay full price. We cannot keep celebrating tax relief that only exists on parliamentary records while our daily transport costs go up. If public money is being used to cushion fuel, that discount must reflect at the pump. Ask your MP: who exactly is this fuel relief protecting, if not the taxpayer?",
-    "sms": "Usiibiwe: Parliament extended fuel tax relief, yet pump prices keep surging. Check EPRA's monthly breakdown and demand full transparency on fuel levies.",
-    "reels": "Parliament just told us they extended fuel tax relief. So why did your fuel receipt just go up? Every time lawmakers claim they're cushioning wananchi, pump prices hit new highs. The truth? These tax breaks often settle debts with oil marketers instead of lowering your fare or pump price. Stop reading the press releases. Look at the meter. Kenyans are asking: who exactly is pocketing our fuel relief?"
+    "radio": "Sasa, wasikilizaji wetu wa 'Kenyans Are Asking'. Hapa Nairobi na kote nchini, maandalizi ya uchaguzi yameanza kushika kasi, na kuna swali moja ambalo lazima tulizingatie kwa makini: Je, mifumo yetu iko thabiti kiasi gani? Wengi wamekuwa wakiuliza kuhusu usafi wa kura zetu. Sheria ya uchaguzi hapa Kenya iko wazi sana. Matumizi ya vifaa vya KIEMS yanahitaji uthibitisho wa kibiolojia wa moja kwa moja—live biometrics. Maana yake ni nini? Mtu aliyefariki hawezi kupiga kura. Teknolojia hii imewekwa ili kuhakikisha kwamba kila kura inayohesabiwa ni ya mtu aliye hai. Lakini kama wananchi, kazi yetu sio tu kutegemea mashine; ni kuhakikisha kwamba sajili ya wapiga kura inasafishwa kikamilifu kabla ya siku ya uchaguzi. Hii inamaanisha ni lazima tushirikiane na Tume ya Uchaguzi, IEBC, kuhakikisha majina ya wapendwa wetu waliotangulia mbele ya haki yameondolewa. Usalama wa kura yako ndio usalama wa taifa letu. \n\nKwa ufupi: Sheria na teknolojia ya KIEMS inazuia wafu kupiga kura kwa sababu inataka alama za vidole na sura ya mtu aliye hai wakati wa kupiga kura.",
+    "voice_note": "Wadau, amkeni mapema! Swali la wiki hii hapa 'Kenyans Are Asking' ni kuhusu usalama wa kura zetu. Watu wengi wamekuwa na hofu kwamba wafu wanaweza kupiga kura. Lakini sheria iko wazi. Vifaa vya KIEMS vinahitaji live biometrics—yaani alama za vidole na sura ya mtu aliye hai ndipo kura ipite. Mtu aliyefariki hawezi kujitokeza hapo na mashine ikamkubalia. Hata hivyo, jukumu letu kama raia ni kuhakikisha majina ya marehemu yameondolewa kwenye sajili. Kura yako ni sauti yako, hakikisha haipotei!",
+    "sms": "Usiibiwe: Sheria ya uchaguzi inahitaji live biometrics kupitia KIEMS. Wafu hawawezi kupiga kura. Hakikisha majina ya marehemu yameondolewa kwenye sajili ya IEBC.",
+    "reels": "Wengi wanauliza: Je, wafu wanaweza kupiga kura nchini Kenya? Jibu fupi ni hapana! Chini ya sheria yetu ya uchaguzi, vifaa vya KIEMS vinahitaji live biometrics—alama za vidole na sura ya mtu aliye hai wakati wa kupiga kura. Mashine haidanganyiki. Teknolojia ipo, lakini kazi yetu ni kufuatilia ili sajili iwe safi. Kura yako, sauti yako."
   },
   "spend_usd": 3.0807,
   "revision": 3
