@@ -607,13 +607,74 @@
       "ig_id": "18113899481038394",
       "fb_id": "1652132559940305",
       "story_id": "18114536081169912"
+    },
+    {
+      "id": "2026-w42-hot-1016",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 1,
+      "message": "KRA uncovered Sh4 billion in VAT fraud using fake invoices.",
+      "action": "Report fake invoice schemes to the KRA whistleblower portal",
+      "beats": [
+        "Ksh *4 billion* in fake VAT.",
+        "Invoices printed, taxes dodged.",
+        "KRA uncovers the paper trail.",
+        "We pay tax. Others forge receipts.",
+        "Where does the fake paper go?"
+      ],
+      "photo_query": "Kenyan shilling banknotes and calculator",
+      "source": "Sacco Review, KRA uncovers Ksh 4 billion VAT fraud using fake invoices, 16 October 2026",
+      "kicker": "Taxpayers",
+      "line": "Ksh *4 billion* lost in fake VAT invoices while ordinary Kenyans pay every single shilling at the till.",
+      "fact": "KRA uncovered a Ksh 4 billion VAT fraud scheme operated entirely through fake invoices.",
+      "who": "Kenya Revenue Authority",
+      "where": "National",
+      "when": "16 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Ordinary Kenyans carry the tax burden while fraudulent invoices siphon billions.",
+      "caption": "Ksh *4 billion* in fake VAT invoices discovered by KRA. While everyone else pays tax at the till, some are printing paper to dodge it. What are we doing about the masterminds?\n\n#KenyansAreAsking",
+      "bg": "usiku",
+      "publish_at": "2026-10-16T18:30:00+03:00",
+      "hot": true,
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 7,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 3,
+        "action": 5,
+        "fair": 7,
+        "impact": 8,
+        "avg": 7.0,
+        "note": "Match demand to the top active stories Kenyans are discussing this week."
+      },
+      "drafted_at": "2026-10-16T09:17:22.403630+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1016-photo.jpg",
+      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_banknote,_reverse.jpg",
+      "reel": true,
+      "tg_msg": 202
     }
   ],
   "scripts": {
-    "radio": "Sasa, wasikilizaji wetu wa 'Kenyans Are Asking'. Hapa Nairobi na kote nchini, maandalizi ya uchaguzi yameanza kushika kasi, na kuna swali moja ambalo lazima tulizingatie kwa makini: Je, mifumo yetu iko thabiti kiasi gani? Wengi wamekuwa wakiuliza kuhusu usafi wa kura zetu. Sheria ya uchaguzi hapa Kenya iko wazi sana. Matumizi ya vifaa vya KIEMS yanahitaji uthibitisho wa kibiolojia wa moja kwa moja—live biometrics. Maana yake ni nini? Mtu aliyefariki hawezi kupiga kura. Teknolojia hii imewekwa ili kuhakikisha kwamba kila kura inayohesabiwa ni ya mtu aliye hai. Lakini kama wananchi, kazi yetu sio tu kutegemea mashine; ni kuhakikisha kwamba sajili ya wapiga kura inasafishwa kikamilifu kabla ya siku ya uchaguzi. Hii inamaanisha ni lazima tushirikiane na Tume ya Uchaguzi, IEBC, kuhakikisha majina ya wapendwa wetu waliotangulia mbele ya haki yameondolewa. Usalama wa kura yako ndio usalama wa taifa letu. \n\nKwa ufupi: Sheria na teknolojia ya KIEMS inazuia wafu kupiga kura kwa sababu inataka alama za vidole na sura ya mtu aliye hai wakati wa kupiga kura.",
-    "voice_note": "Wadau, amkeni mapema! Swali la wiki hii hapa 'Kenyans Are Asking' ni kuhusu usalama wa kura zetu. Watu wengi wamekuwa na hofu kwamba wafu wanaweza kupiga kura. Lakini sheria iko wazi. Vifaa vya KIEMS vinahitaji live biometrics—yaani alama za vidole na sura ya mtu aliye hai ndipo kura ipite. Mtu aliyefariki hawezi kujitokeza hapo na mashine ikamkubalia. Hata hivyo, jukumu letu kama raia ni kuhakikisha majina ya marehemu yameondolewa kwenye sajili. Kura yako ni sauti yako, hakikisha haipotei!",
-    "sms": "Usiibiwe: Sheria ya uchaguzi inahitaji live biometrics kupitia KIEMS. Wafu hawawezi kupiga kura. Hakikisha majina ya marehemu yameondolewa kwenye sajili ya IEBC.",
-    "reels": "Wengi wanauliza: Je, wafu wanaweza kupiga kura nchini Kenya? Jibu fupi ni hapana! Chini ya sheria yetu ya uchaguzi, vifaa vya KIEMS vinahitaji live biometrics—alama za vidole na sura ya mtu aliye hai wakati wa kupiga kura. Mashine haidanganyiki. Teknolojia ipo, lakini kazi yetu ni kufuatilia ili sajili iwe safi. Kura yako, sauti yako."
+    "radio": "Habari za jioni, mwananchi. Karibu kwenye 'Kenyans Are Asking' na mimi sauti yako ya kuaminika. Wiki hii, kuna mambo mazito yanayozunguka pesa zetu za kodi.\n\nKwanza kabisa, je, ulisikia vile KRA imetufunulia? Wachunguzi wamegundua njama chafu ya Shilingi bilioni 4 ya ulaghai wa VAT kupitia stakabadhi za uwongo—maarufu kama *fake invoices*. Hebu fikiria kiasi hicho cha pesa. Bilioni nne nzima zinapotea kutoka kwa mfuko wa umma kuelekea mifukoni mwa watu binafsi. Hii ndiyo pesa inayofaa kujenga barabara zetu, kununua dawa hospitalini, na kulipa walimu wetu mishahara bora.\n\nLakini swali kuu ambalo kila Mkenya anapaswa kujiuliza leo ni hili: Hawa watu wanapata wapi ujasiri wa kutengeneza stakabadhi za uwongo bila kuogopa? Je, kuna mtandao mkubwa ndani ya taasisi zenyewe unaowasaidia kuficha haya madhambi? Tunahitaji majibu, na tunahitaji uwazi. Huu sio wakati wa kusalia kimya wakati rasilimali za nchi zinatafunwa na wachache.\n\n[Kiswahili Summary]\n*Kwa ufupi: KRA imefichua ulaghai wa VAT wa shilingi bilioni 4 kupitia stakabadhi ghushi. Hii inaonyesha jinsi fedha za umma zinavyopulizwa na kuacha huduma za kijamii zikiwa duni. Tunahitaji uwajibikaji kamili kutoka kwa mamlaka husika.*",
+    "voice_note": "Aki zangu, mnasikia haya madhambi? KRA imefichua udanganyifu wa Shilingi bilioni nne za VAT zilizoliwa kupitia stakabadhi za uwongo! Bilioni nne nzima! Hizi sio pesa za mchezo—ni zile zile zinazofaa kujenga barabara na kununua dawa hospitalini. Swali langu ni moja tu leo: Hawa wajanja wanapata wapi nguvu ya kuiba hivi bila hofu? Si heri tuwe macho na tuulize maswali mazito? Usiibiwe, simama kidete!",
+    "sms": "USIIBIWE: KRA imefichua Sh4B ya ulaghai wa VAT kupitia stakabadhi ghushi. Usikubali biashara yako itumike kwa njia haramu. Daima thibitisha risiti zako.",
+    "reels": "[Visual: Host looking directly into the camera with a serious, grounded expression, holding a fake receipt prop.]\n\n[Audio/VO]: 'Shilingi bilioni nne. Hiyo ndiyo pesa ambayo KRA imegundua imepotea kupitia stakabadhi za uwongo za VAT wiki hii. Bilioni nne! Hizo ni shule, hospitali, na barabara zilizomeza na wajanja wachache. Swali ni moja tu kwa serikali na wafanyabiashara: Hii impunity itaisha lini? Kenyans Are Asking, na hatutanyamaza. Wewe unasema nini?'"
   },
   "spend_usd": 3.0807,
   "revision": 3
