@@ -296,10 +296,22 @@ JARGON = {"procurement": "buying goods and services", "procurements": "purchases
           "liquidity": "cash", "incumbent": "the current holder", "plenary": "the full House", "quorum": "enough members"}
 
 
+# American words a Kenyan presenter never says: Kenyan English uses British forms.
+AMERICAN = {"gas price": "fuel price", "gas prices": "fuel prices", "gasoline": "fuel", "cell phone": "phone",
+            "cellphone": "phone", "apartment": "flat / house", "apartments": "flats / houses", "mom": "mum",
+            "favor": "favour", "center": "centre", "centers": "centres", "labor": "labour", "neighbor": "neighbour",
+            "neighbors": "neighbours", "color": "colour", "honor": "honour", "defense": "defence",
+            "traveling": "travelling", "canceled": "cancelled", "program": "programme", "programs": "programmes",
+            "sidewalk": "pavement", "highway": "road / highway is fine for Thika Superhighway only", "truck": "lorry"}
+
+
 def jargon(text: str) -> list[str]:
     """Hard words in the text, each with its plain replacement."""
     low = text.lower().replace("*", "")
-    return [f"'{w}' (say: {plain})" for w, plain in JARGON.items() if re.search(rf"\b{re.escape(w)}\b", low)]
+    hard = [f"'{w}' (say: {plain})" for w, plain in JARGON.items() if re.search(rf"\b{re.escape(w)}\b", low)]
+    us = [f"'{w}' (Kenyan English: {k})" for w, k in AMERICAN.items()
+          if re.search(rf"\b{re.escape(w)}\b", low)]
+    return hard + us
 
 
 def fragment(line: str) -> str:
