@@ -32,8 +32,8 @@
 .stage { top: {{ 300 + [photo_band, 760] | min + 40 }}px; bottom: 300px; }
 {% endif %}
 {% if presenter is defined and presenter %}
-/* the presenter stands bottom-right for the whole Reel: the lines end above his head */
-.stage { bottom: 600px; }
+/* the presenter stays bottom-right for the whole Reel: the lines end above him */
+.stage { bottom: {{ 740 if presenter == 'pip' else 600 }}px; }
 {% if photo_band %}.photo-band { height: min(var(--bh), 460px); }
 .stage { top: {{ 300 + [photo_band, 460] | min + 40 }}px; }{% endif %}
 {% endif %}

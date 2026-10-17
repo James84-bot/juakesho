@@ -223,11 +223,38 @@ def mix_voice(ff: str, voice: Path, bed: Path, out: Path) -> None:
                     "-map", "[a]", "-ar", "44100", "-ac", "2", str(out)], check=True)
 
 
-def add_presenter(ff: str, reel: Path, voice: dict, work: Path, seed: int) -> None:
+PORTRAIT = HERE / "content" / "presenter" / "portrait.jpg"   # the realistic presenter's one photo
+
+
+def presenter_style() -> str:
+    """'pip': the realistic presenter (a portrait brought to life) in a studio window; 'illustrated': the drawn
+    host. Realistic whenever the portrait and its face-mapping library are available."""
+    if PORTRAIT.exists():
+        try:
+            import mediapipe  # noqa: F401
+            return "pip"
+        except ImportError:
+            print("  realistic presenter unavailable (mediapipe not installed): using the illustrated host")
+    return "illustrated"
+
+
+def add_presenter(ff: str, reel: Path, voice: dict, work: Path, seed: int, style: str = "illustrated",
+                  dur: float = 0.0) -> None:
     """Lays the talking presenter over the finished Reel (same audio), in place."""
+    out = work / "voiced.mp4"
+    if style == "pip":
+        import living
+        clip = living.talk(PORTRAIT, voice["wav"], voice["script"], work / "presenter.mp4", ff, seed)
+        graph = living.overlay_graph("0:v", "pv", "v")
+        subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(clip),
+                        "-filter_complex", f"[1:v]setpts=PTS-STARTPTS+{VOICE_DELAY}/TB[pv];" + graph,
+                        "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart"]
+                       + (["-t", f"{dur:.3f}"] if dur else []) + [str(out)], check=True)
+        shutil.move(str(out), str(reel))
+        return
     import presenter
     mov = presenter.talk(voice["wav"], voice["script"], work / "presenter.mov", ff, seed)
-    out = work / "voiced.mp4"
     graph = presenter.overlay_graph("0:v", "pv", "v", width=PRESENTER_W, right=20)
     subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(mov),
                     "-filter_complex", f"[1:v]setpts=PTS-STARTPTS+{VOICE_DELAY}/TB[pv];" + graph,
@@ -242,9 +269,10 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
     voice_dir = Path(tempfile.mkdtemp(prefix="reel-voice-"))
     voice = voice_for(post, beats["beats"], voice_dir) if beats and post.get("template") != "tazama" else None
     render.SPOKEN.clear()
+    style = presenter_style() if voice else ""
     if voice:   # each line stays up exactly as long as the presenter takes to say it
         render.SPOKEN.update(zip(beats["beats"], voice["durs"]))
-        beats["presenter"] = True
+        beats["presenter"] = style
     if beats:   # the Reel is its own script: one punchy line at a time, over the real photo
         html = render.build_html(env, beats, motion=True, reel=False)
         starts, t = [], 0.0
@@ -294,7 +322,7 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         render.SPOKEN.clear()
         if voice:
             try:
-                add_presenter(ff, target_mp4, voice, voice_dir, seed)
+                add_presenter(ff, target_mp4, voice, voice_dir, seed, style, dur)
                 post["voiced"] = voice["name"]
             except Exception as e:   # the Reel without the presenter is still a good Reel
                 print(f"  presenter skipped for {post['id']}: {str(e)[:200]}")

@@ -83,6 +83,9 @@ jobs:
           if (cd automation && python -c "import voicelab,sys; sys.exit(0 if voicelab.chosen() else 1)"); then
             pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0 torchaudio==2.6.0 \
               && pip install chatterbox-tts soundfile || echo "::warning::voice tools failed to install: Reels stay text-only"
+            # the realistic presenter needs his one portrait and the face mapper (MediaPipe 0.10.14: Face Mesh bundled)
+            [ -f automation/content/presenter/portrait.jpg ] && { pip install "mediapipe==0.10.14" \
+              || echo "::warning::face mapper failed to install: the illustrated host stands in"; }
           fi
 
       - name: Install (light)
