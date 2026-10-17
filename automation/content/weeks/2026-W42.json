@@ -381,49 +381,67 @@
       "id": "2026-w42-d7-glasspoll-r3",
       "template": "glasspoll",
       "lane": "everyone",
-      "hook": "Presidential term limits",
-      "question": "Should presidential terms stay 5 years?",
-      "cta": "Vote and share your view",
+      "hook": "New tax laws are here.",
+      "question": "How should Kenya fund the budget?",
       "options": [
-        "Keep 5-year limit",
-        "Extend the term"
+        "Collect more taxes",
+        "Cut public spending"
       ],
-      "message": "Kenyans vote on whether presidential terms should stay at five years or be changed.",
-      "action": "Cast your vote in the poll and discuss with your friends",
-      "photo_query": "ballot box Kenya",
-      "caption": "Senators are floating proposals to extend the presidential term beyond five years. Article 255 gives the final say to you in a referendum. Where do you stand on term limits?\n\nVote above and drop your reason in the comments.\n\n#KenyansAreAsking",
+      "cta": "Vote A or B in the comments",
+      "message": "Kenyans must decide whether public budgets should be balanced by raising taxes or cutting state waste.",
+      "action": "Submit your budget priorities to the National Assembly clerk at cna@parliament.go.ke.",
       "beats": [
-        "Should presidential terms *change*?",
-        "MPs want to debate *seven years*.",
-        "The Constitution gives *you* the vote.",
-        "Cast your vote on our *story poll*."
+        "President William Ruto signed *two* tax bills into law this week.",
+        "The Treasury seeks new revenue to bridge the budget gap.",
+        "Kenyans continue to shoulder heavier deduction burdens.",
+        "Kenyans demand: the Treasury cuts waste before raising taxes.",
+        "Share your view on balancing the public budget."
       ],
+      "photo_query": "National Treasury Nairobi",
+      "caption": "President William Ruto signed two tax bills into law this week to raise public revenue. How should Kenya fund the budget?\n\nA: Collect more taxes\nB: Cut public spending\n\nVote A or B in the comments.\n\n#TaxDebate #KenyaOnRecord",
+      "source": "Tuko News, 2026-10-17",
+      "who": "President William Ruto and the National Treasury",
+      "where": "National",
+      "when": "17 Oct 2026",
+      "side": "both",
+      "tone": "explainer",
+      "impact": "Every new tax law shifts revenue collection targets onto Kenyan households.",
+      "demand": 2,
       "bg": "usiku",
       "publish_at": "2026-10-18T18:00:00+03:00",
       "size": "story",
-      "status": "approved",
+      "source_links": [
+        {
+          "outlet": "Tuko News",
+          "title": "Passed by MPs: Ruto signs 2 tax bills into law, State House issues statement",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbzhkc2ZtZkhpa08zaWRiU1FicnlEd25mMUd5UVlybHNnZ1JxMWpiNDlzSkRKVmhPbUh0al9yYVRWZnBLakUzcDc1WFFRRHNnZE91SUNQcVJfaE9fQWw5ZElsZDFsckVuc0gySU1VeExHX2JVVnJhaEtVR1hwWnlYUlhwdXpIWk9EZ0swREtPRzV4d1o5MV96d2pjRDdsU3MzOUdSSEJHQmpRbHhG?oc=5",
+          "published": "2026-10-17"
+        }
+      ],
+      "status": "needs_human",
       "guard": {
-        "errors": [],
+        "errors": [
+          "weak: editor scored 3.8/10. The hook is a generic fragment and the poll forces a false binary; lead with the actual names of the signed tax laws and the exact collection targets."
+        ],
         "warnings": []
       },
       "critic": {
-        "hook": 8,
-        "send": 9,
-        "clarity": 10,
-        "fresh": 8,
-        "voice": 8,
-        "craft": 8,
-        "picture": 8,
-        "hold": 8,
-        "demand": 10,
-        "action": 8,
-        "fair": 9,
-        "avg": 8.5,
-        "note": "Good story poll timed perfectly with the Cherargei noise."
+        "hook": 3,
+        "send": 3,
+        "clarity": 5,
+        "fresh": 3,
+        "voice": 5,
+        "craft": 4,
+        "picture": 4,
+        "hold": 4,
+        "demand": 2,
+        "action": 3,
+        "fair": 6,
+        "impact": 4,
+        "avg": 3.8,
+        "note": "The hook is a generic fragment and the poll forces a false binary; lead with the actual names of the signed tax laws and the exact collection targets."
       },
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-d7-glasspoll-r3-photo.jpg",
-      "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0",
-      "decided_at": "2026-10-13T04:49:36.484054+03:00"
+      "drafted_at": "2026-10-17T14:07:40.843802+03:00"
     },
     {
       "id": "2026-w42-hot-1013",
@@ -750,10 +768,10 @@
     }
   ],
   "scripts": {
-    "radio": "Hamjambo na karibuni to Kenyans Are Asking. This week, we are looking at the civil service payroll, where an eye-watering six point two billion shillings has vanished into thin air through ghost workers and duplicate payments. In response, eighty-four human resource officers across various ministries and state departments have been sent on thirty days compulsory leave to pave the way for investigations.\n\nNow, let us be completely honest with each other. Thirty days of paid leave is not accountability. Sending people home on full pay while billions of public money sit unaccounted for feels like an insult to millions of Kenyans struggling under heavy taxes. Every single coin siphoned through ghost workers represents medicine that was never bought, roads left unfinished, and schools without teachers.\n\nKenyans are not asking for administrative slaps on the wrist. We are demanding asset recovery, criminal prosecution, and a complete forensic audit of the entire public wage bill. If individuals stole six point two billion, they must be named, charged in a court of law, and made to return every single cent.\n\nKwa ufupi: Maafisa themanini na wanne wa rasilimali watu wametumwa likizo ya siku thelathini kufuatia wizi wa shilingi bilioni sita nukta mbili za mishahara ya hewa. Likizo ya malipo haitoshi. Wananchi wanadai washukiwa wafikishwe mahakamani, mali zao zikamatwe, na pesa za umma zirudishwe bila kuchelewa.",
-    "voice_note": "Hey people, hope you're keeping well. This week on Kenyans Are Asking, we need to talk about this Sh6.2 billion payroll scandal. Eighty-four HR officers have been sent on thirty days compulsory leave over ghost workers and inflated payrolls. But let us ask the hard question: since when did a paid one-month break become the penalty for grand theft? Taxpayers are working hard to make ends meet, yet billions are walking out of public coffers through simple manipulation of government payrolls. Kenyans are clear this time round—compulsory leave is not enough. We want the full forensic report made public, criminal charges pressed, and every single coin recovered from those responsible. Share this note, and let's keep demanding real accountability.",
-    "sms": "Usiibiwe: 30 days leave is not justice for Sh6.2B payroll theft. We must demand full asset recovery and prosecution, not paid holidays for looters.",
-    "reels": "Eighty-four HR officers sent on thirty days leave over six point two billion shillings stolen through ghost workers. Think about that for a second. Billions disappear from the public wage bill, and the immediate consequence is a month-long paid holiday? Kenyans are not buying it. We want names, asset freezes, and criminal prosecutions. Compulsory leave is an administrative step, not justice. Return our money."
+    "radio": "Habari zenu, this is Kenya on Record. Every financial year, our public accounts reveal a familiar problem: the government has planned to spend far more money than it actually has. And inevitably, the debate begins on how to bridge that gap. The state’s default response has consistently been to widen the tax net—taxing basic commodities, small enterprises, and the salaried worker. But an increasing number of Kenyans are asking the vital question: why must public budgets always be balanced on the backs of citizens, rather than by cutting state waste? Official audit reports year after year document billions lost to inflated procurement tenders, non-essential foreign travel, bloated executive delegations, and redundant agencies. Real fiscal responsibility does not mean extracting more revenue from people who are already struggling to survive high living costs; it requires institutional discipline. If the government cannot plug the leaks in its spending, no amount of tax collection will ever be enough. We must demand that our leaders cut the fat in government before asking mwananchi to tighten an already painful belt.\n\nKwa ufupi: Kabla ya serikali kufikiria kuwaongezea wananchi mzigo wa ushuru ili kusawazisha bajeti, hatua ya kwanza lazima iwe kuzuia ufujaji wa fedha, kupunguza safari zisizo na umuhimu, na kuondoa matumizi ya anasa serikalini. Uwajibikaji huanzia juu.",
+    "voice_note": "Jambo everyone, here is something we need to reflect on from Kenya on Record this week. Whenever Treasury faces a budget deficit, the immediate proposal is always to increase taxes—fuel levies, VAT, turnover tax, you name it. But here is the grown-up question we must ask: why is the solution always to extract more from ordinary citizens, rather than cutting state waste? Every year, the Auditor-General flags billions spent on luxury spending, questionable allowances, and duplicated parastatals. Why should mwananchi carry the burden of balancing the national budget while state offices maintain exorbitant lifestyles? A government serious about growth balances its books by stopping waste first. Before our MPs vote to raise taxes, let’s insist they demand spending cuts right from the top. Think about that, and pass this note along.",
+    "sms": "Usiibiwe: Budget deficit? Demand leaders cut state waste and luxury spending before raising taxes on wananchi. Hold your MP accountable on the Finance Bill.",
+    "reels": "Every financial year, it is the same story: a massive budget deficit, followed by new taxes on ordinary Kenyans. But why is cutting state waste never the first option? Billions disappear annually into inflated tenders, travel junkets, and unnecessary offices. A responsible government does not balance its books by squeezing citizens who are already struggling. True fiscal discipline means cutting government extravagance first, not raising taxes."
   },
   "spend_usd": 3.0807,
   "revision": 3
