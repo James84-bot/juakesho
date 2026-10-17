@@ -200,8 +200,9 @@ HOT = {"time": (12, 45), "template": "sauti", "min_lead": dt.timedelta(hours=3)}
 # News posts every day, each on a different story: morning, lunchtime and evening editions, plus "breaking" posts
 # when several newsrooms report one story at once. A breaking post is due 20 minutes after drafting (time to
 # render), so it goes out on the run your ✅ triggers; unapproved, it expires as usual. At most BREAKING_MAX a day.
-EDITIONS = {"morning": {"time": (9, 45), "suffix": "m"}, "midday": {"time": (12, 45), "suffix": ""},
-            "evening": {"time": (19, 30), "suffix": "e"}}
+EDITIONS = {"morning": {"time": (9, 45), "suffix": "m", "beat": "life"},
+            "midday": {"time": (12, 45), "suffix": "", "beat": "life"},
+            "evening": {"time": (19, 30), "suffix": "e", "beat": "politics"}}   # six in ten posts are everyday life
 BREAKING_LEAD, BREAKING_MAX = dt.timedelta(minutes=20), 2
 
 
@@ -262,6 +263,8 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
         when = _clear_of(when, data["posts"])
     post = {"id": hot_id, "template": HOT["template"], "bg": "usiku", "lane": "everyone",
             "publish_at": when.isoformat(), "status": "planned", "hot": True, **extra}
+    if edition != "breaking":
+        post["beat"] = EDITIONS[edition]["beat"]
     if covered:   # never two posts on the same story in one day
         post["avoid"] = covered[:4]
     data["posts"].append(post)
@@ -286,8 +289,11 @@ def _calendar_posts(label: str) -> list[dict]:
         post = {"id": base_id, "template": template, "bg": bg, "lane": lane, "publish_at": when, "status": "planned"}
         if slot.get("size"):
             post["size"] = slot["size"]
-        if slot.get("angle"):
-            post["angle"] = slot["angle"]
+        angle = slot.get("angle")
+        if isinstance(angle, dict):   # {"money": "real_price"}: an angle for one of the slot's templates
+            angle = angle.get(template)
+        if angle:
+            post["angle"] = angle
         series = slot.get("series")
         if isinstance(series, dict):   # {"hack": "Civic 101"}: a series name for one of the slot's templates
             series = series.get(template)

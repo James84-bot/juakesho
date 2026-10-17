@@ -13,7 +13,7 @@
 .cta { margin-top: 44px; }
 .foot { bottom: 250px; }
 {% endblock %}
-{% block top %}<span class="tag">Your Say</span><span class="meta">Poll</span>{% endblock %}
+{% block top %}<span class="tag">{{ series if series is defined and series else 'Your Say' }}</span><span class="meta">{{ 'Quiz' if series is defined and series == 'Guess the Price' else 'Poll' }}</span>{% endblock %}
 {% block content %}
   <p class="label">{{ hook }}</p>
   <h1 class="display q">{{ question | mark }}</h1>
