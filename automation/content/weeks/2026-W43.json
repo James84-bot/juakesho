@@ -255,7 +255,7 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -283,7 +283,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
       "reel": true,
-      "tg_msg": 259
+      "tg_msg": 259,
+      "decided_at": "2026-10-17T16:47:25.738972+03:00"
     },
     {
       "id": "2026-w43-d5-straight-r5",
