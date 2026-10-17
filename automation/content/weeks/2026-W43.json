@@ -3,7 +3,7 @@
   "created": "2026-10-14T00:46:06.367461+03:00",
   "posts": [
     {
-      "id": "2026-w43-d1-straight-r4",
+      "id": "2026-w43-d1-straight-r5",
       "template": "straight",
       "lane": "everyone",
       "claim": "Kenya’s economy is collapsing and has fallen completely behind all Eastern African peers in output.",
@@ -45,7 +45,7 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": [
@@ -69,16 +69,12 @@
         "note": "Solid execution on macroeconomic data with clear IMF attribution."
       },
       "drafted_at": "2026-10-17T11:51:47.547087+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d1-straight-r4-photo.jpg",
-      "photo_credit": "Photo: Kenyans.co.ke",
-      "photo_kind": "posted",
-      "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/127812-kenyas-gdp-estimates-rise-ksh-504b-ksh196t-imf-rankings",
       "reel": true,
       "tg_msg": 228
     },
     {
-      "id": "2026-w43-d2-kenya-r4",
+      "id": "2026-w43-d2-kenya-r5",
       "template": "kenya",
       "lane": "diaspora",
       "series": "Kenya at its best",
@@ -104,7 +100,7 @@
       "impact": "Protected natural parks sustain our tourism earnings and preserve vital water catchment zones.",
       "bg": "usiku",
       "publish_at": "2026-10-20T12:45:00+03:00",
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": [
@@ -128,16 +124,12 @@
         "note": "Standard tourism showcase; clean and well-structured."
       },
       "drafted_at": "2026-10-17T11:51:47.547095+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d2-kenya-r4-photo.jpg",
-      "photo_credit": "Photo: RVBS / Wikimedia Commons, CC BY-SA 4.0",
-      "photo_kind": "place",
-      "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Mount_Longonot_in_Kenya_07.jpg",
       "reel": true,
       "tg_msg": 229
     },
     {
-      "id": "2026-w43-d3-scorecard-r4",
+      "id": "2026-w43-d3-scorecard-r5",
       "template": "scorecard",
       "lane": "hustle",
       "who": "Anne Waiguru",
@@ -187,7 +179,7 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": []
@@ -209,16 +201,12 @@
         "note": "Exceptional political accountability piece directly tackling the top national news."
       },
       "drafted_at": "2026-10-17T11:51:47.547097+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-scorecard-r4-photo.jpg",
-      "photo_credit": "File photo: KBC",
-      "photo_kind": "file",
-      "photo_outlet": "KBC",
       "photo_source": "https://www.kbc.co.ke/waiguru-urges-mt-kenya-to-back-ruto-or-risk-30-years-in-opposition/",
       "reel": true,
       "tg_msg": 230
     },
     {
-      "id": "2026-w43-d4-glasspoll-r4",
+      "id": "2026-w43-d4-glasspoll-r5",
       "template": "glasspoll",
       "lane": "everyone",
       "hook": "Who decides state resources?",
@@ -256,7 +244,7 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": []
@@ -278,16 +266,12 @@
         "note": "Engaging poll cleanly tied to the Waiguru regional politics controversy."
       },
       "drafted_at": "2026-10-17T11:51:47.547099+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d4-glasspoll-r4-photo.jpg",
-      "photo_credit": "Photo: Sir. Kevin Macharia / Wikimedia Commons, CC BY-SA 2.0",
-      "photo_kind": "symbolic",
-      "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_National_Assembly_speaker_chair.jpg",
       "reel": true,
       "tg_msg": 231
     },
     {
-      "id": "2026-w43-d5-money-r4",
+      "id": "2026-w43-d5-money-r5",
       "template": "money",
       "lane": "young_pro",
       "hook": "CDF spending questioned",
@@ -324,7 +308,7 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": [
@@ -349,16 +333,12 @@
         "note": "Solid execution on bursary accountability with a clear lawful demand."
       },
       "drafted_at": "2026-10-17T11:51:47.547100+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-money-r4-photo.jpg",
-      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
-      "photo_kind": "symbolic",
-      "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_banknote,_reverse.jpg",
       "reel": true,
       "tg_msg": 232
     },
     {
-      "id": "2026-w43-d6-kenya-r4",
+      "id": "2026-w43-d6-kenya-r5",
       "template": "kenya",
       "lane": "hustle",
       "series": "Built in Kenya",
@@ -392,7 +372,7 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": [
@@ -416,16 +396,12 @@
         "note": "Good infrastructure spotlight, but tie the source link directly to the topic instead of sportspesa leagues."
       },
       "drafted_at": "2026-10-17T11:51:47.547102+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d6-kenya-r4-photo.jpg",
-      "photo_credit": "Photo: Unknown photographer / Wikimedia Commons, Public domain",
-      "photo_kind": "place",
-      "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Opening_ceremony_of_the_Salisbury_Bridge,_Makupa_Causeway,_Kenya,_July_1898.jpg",
       "reel": true,
       "tg_msg": 233
     },
     {
-      "id": "2026-w43-d7-glasspoll-r4",
+      "id": "2026-w43-d7-glasspoll-r5",
       "template": "glasspoll",
       "lane": "everyone",
       "demand": 8,
@@ -457,7 +433,7 @@
       "bg": "usiku",
       "publish_at": "2026-10-25T18:00:00+03:00",
       "size": "story",
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": []
@@ -480,10 +456,6 @@
       },
       "trend": "#TransNzoiaFocus",
       "drafted_at": "2026-10-17T11:51:47.547104+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d7-glasspoll-r4-photo.jpg",
-      "photo_credit": "Photo: Kenyans.co.ke",
-      "photo_kind": "posted",
-      "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/127904-two-police-officers-injured-vehicles-damaged-chaos-erupts-trans-nzoia",
       "reel": true,
       "tg_msg": 234
