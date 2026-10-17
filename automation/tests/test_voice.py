@@ -72,6 +72,19 @@ class Intake(unittest.TestCase):
         clip.assert_not_called()
 
 
+class Notes(unittest.TestCase):
+    def test_a_text_message_is_kept_for_claude_and_acknowledged(self):
+        update = {"update_id": 6, "message": voice_msg(text="Use the calm voice please")}
+        with tempfile.TemporaryDirectory() as d, \
+             mock.patch.object(pipeline, "STATE", Path(d)), \
+             mock.patch.object(pipeline, "need", return_value={"TELEGRAM_CHAT_ID": "42"}), \
+             mock.patch.object(pipeline, "tg", return_value={"result": [update]}) as tg:
+            pipeline.collect()
+            saved = [json.loads(l) for l in (Path(d) / "inbox.jsonl").read_text().splitlines()]
+        self.assertEqual(saved[0]["text"], "Use the calm voice please")
+        self.assertIn("Noted", tg.call_args_list[-1][0][1]["text"])
+
+
 class Listener(unittest.TestCase):
     def test_a_voice_note_wakes_the_autopilot(self):
         self.assertEqual(listener.classify({"message": voice_msg(voice={"file_id": "v"})}, "42"), "clip")
