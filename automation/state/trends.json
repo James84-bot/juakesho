@@ -1,192 +1,198 @@
 {
-  "fetched": "2026-10-17T11:38:20.300679+00:00",
+  "fetched": "2026-10-17T16:20:15.272838+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "cooperative",
+      "title": "epl",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Team news for Leeds away",
+          "url": "https://www.manutd.com/en/news/team-news-for-leeds-v-united-18-october-2026",
+          "source": "Manchester United"
+        },
+        {
+          "title": "Team News: Daniel Farke gives positive update on Wales duo",
+          "url": "https://www.leedsunited.com/en/news/team-news-daniel-farke-gives-positive-update-on-wales-duo",
+          "source": "Leeds United | Official Website - Leeds United"
+        },
+        {
+          "title": "'All the senses are alive!' – Michael Carrick fires up Man Utd stars for Elland Road cauldron",
+          "url": "https://www.goal.com/en-ke/lists/michael-carrick-man-utd-leeds-injury-updates-elland-road/bltd0acb72c73a7df59",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "epl fixtures today",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Ten KEY questions for Matchweek 7's fixtures",
+          "url": "https://www.premierleague.com/en/news/4737266/ten-key-questions-for-matchweek-7s-fixtures",
+          "source": "Premier League"
+        },
+        {
+          "title": "Premier League Predictions: Everton Host Goal-Crazy Chelsea, Man Utd at Rivals Leeds",
+          "url": "https://www.si.com/soccer/premier-league-predictions-everton-chelsea-man-utd-leeds-gameweek-7",
+          "source": "Sports Illustrated"
+        },
+        {
+          "title": "Premier League: 10 things to look out for this weekend",
+          "url": "https://www.theguardian.com/football/2026/oct/16/premier-league-10-things-to-look-out-for-this-weekend",
+          "source": "The Guardian"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bayern vs rb leipzig",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Co-op Bank faulted for flawed sacking of poor performer",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/co-op-bank-faulted-for-flawed-sacking-of-poor-performer-5635038",
-          "source": "Business Daily"
+          "title": "FC Bayern: Entscheidung um Manuel Neuer vor dem Leipzig-Spiel gefallen",
+          "url": "https://www.bild.de/sport/fussball/fc-bayern-entscheidung-um-manuel-neuer-im-training-vor-leipzig-topspiel-gefallen-6ad2189e51e5094f7a56eb9d",
+          "source": "BILD"
         },
         {
-          "title": "Two Saccos under liquidation as creditors get 60 days to claim",
-          "url": "https://saccoreview.co.ke/two-saccos-under-liquidation-as-creditors-get-60-days-to-claim/",
-          "source": "Sacco Review"
+          "title": "Vom Wackelkandidaten zum Angstgegner: Ex-Münchner sorgt bei seinem alten Klub für Schockwellen",
+          "url": "https://www.absolutfussball.com/deutschland/fc-bayern-muenchen/fuer-bayern-hat-ex-star-demichelis-rb-zur-unzeit-wachgekuesst-94545936.html",
+          "source": "Absolut Fussball"
         },
         {
-          "title": "Two Kenyan co-operative societies placed under liquidation",
-          "url": "https://capitalfm.africa/two-kenyan-co-operative-societies-placed-under-liquidation/",
-          "source": "Capital FM Africa"
+          "title": "Warum spielt Manuel Neuer nicht für den FC Bayern München beim Topspiel der Bundesliga gegen RB Leipzig?",
+          "url": "https://www.spox.com/fussball/news/warum-spielt-manuel-neuer-nicht-fuer-den-fc-bayern-muenchen-beim-topspiel-der-bundesliga-gegen-rb-leipzig-ist-er-verletzt-oder-wurde-jonas-urbig-befoerdert/bltc2d0e2426cc44606",
+          "source": "SPOX"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "police",
+      "title": "erling haaland",
       "traffic": "500+",
       "news": [
         {
-          "title": "Police probe Kitale incident that left two officers injured",
-          "url": "https://www.the-star.co.ke/news/2026-10-17-police-probe-kitale-incident-that-left-2-cops-injured",
-          "source": "The Star, Kenya"
+          "title": "Erling Haaland told he must leave Man City for Premier League rivals in January",
+          "url": "https://talksport.com/football/4647245/erling-haaland-man-city-arsenal-transfer-january/",
+          "source": "talkSPORT"
         },
         {
-          "title": "Two Police Officers Injured After Chaos Erupts During Sifuna-led Rally",
-          "url": "https://www.kenyans.co.ke/news/127904-two-police-officers-injured-vehicles-damaged-chaos-erupts-trans-nzoia",
-          "source": "Kenyans.co.ke"
+          "title": "Mikel Arteta told to sign Man City star in January to replace two Arsenal players",
+          "url": "https://metro.co.uk/2026/10/16/mikel-arteta-told-sign-man-city-star-january-replace-two-arsenal-players-29716754/",
+          "source": "Metro.co.uk"
         },
         {
-          "title": "Police investigate Kitale incident that left two officers injured, vehicle damaged",
-          "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001560300/police-investigate-kitale-incident-that-left-two-officers-injured-vehicle-damaged",
-          "source": "The Standard"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "matatu fare increase kenya",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Ruto signs new legislation aimed at lowering fuel costs and cost of living",
-          "url": "https://citizen.digital/article/ruto-assents-to-tax-kra-bills-targeting-fuel-prices-and-revenue-governance-n392162",
-          "source": "Citizen Digital"
-        },
-        {
-          "title": "Matatu operators raise fares by upto 50pc against MoA directive",
-          "url": "https://www.the-star.co.ke/news/2026-10-17-matatu-operators-raise-fares-by-upto-50pc-against-moa-directive",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Broken promise: Double-digit pump price hikes push Kenya's inflation to the brink",
-          "url": "https://www.standardmedia.co.ke/national/article/2001560277/broken-promise-double-digit-pump-price-hikes-push-kenyas-inflation-to-the-brink",
-          "source": "The Standard"
+          "title": "Transfer rumors, news: Chelsea confident in January move for Scott",
+          "url": "https://www.espn.com/soccer/story/_/id/50171789/transfer-rumors-news-barcelona-real-madrid-scout-erling-haaland-anfield",
+          "source": "ESPN"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "play store",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "I find the best new Android apps in minutes by skipping the Play Store",
-          "url": "https://www.androidpolice.com/i-find-the-best-android-apps-in-minutes-by-skipping-the-play-store/",
-          "source": "Android Police"
-        },
-        {
-          "title": "After Chrome, we now have a WhatsApp dupe on the Play Store with 500,000+ downloads",
-          "url": "https://www.androidauthority.com/fake-whatsapp-app-3724337/",
-          "source": "Android Authority"
-        },
-        {
-          "title": "A fake WhatsApp clone is showing up before the real version on the Play Store",
-          "url": "https://www.theverge.com/tech/1012918/google-play-store-fake-whatsapp-android",
-          "source": "The Verge"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "arrest",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Actress Selma Blair says she 'did not intend to harm anyone' in plane altercation",
-          "url": "https://www.bbc.com/news/articles/cwly3zd1r45ro",
-          "source": "BBC"
-        },
-        {
-          "title": "Selma Blair Breaks Her Silence on Plane Arrest in Statement from Rep (Exclusive)",
-          "url": "https://people.com/selma-blair-breaks-silence-plane-arrest-statement-rep-did-not-intend-to-harm-anyone-exclusive-12177768",
-          "source": "People.com"
-        },
-        {
-          "title": "Selma Blair Arrested, Attacks Flight Crew In Mid-Air",
-          "url": "https://www.tmz.com/2026/10/12/selma-blair-arrested-after-attacking-flight-crew/",
-          "source": "TMZ"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "watford vs charlton",
+      "title": "alexander isak",
       "traffic": "100+",
       "news": [
         {
-          "title": "Watford v Charlton Athletic: Championship stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cqde829kww7rt",
-          "source": "BBC"
+          "title": "Fitness update: Andoni Iraola on Gakpo, Isak, Szoboszlai and changes v Brentford",
+          "url": "https://www.liverpoolfc.com/news/fitness-update-andoni-iraola-gakpo-isak-szoboszlai-changes-brentford",
+          "source": "Liverpool FC"
         },
         {
-          "title": "Watford vs Charlton: Confirmed Lineups & Match Prediction",
-          "url": "https://www.oddschecker.com/insight/football/cng102-20261017-watford-vs-charlton-confirmed-lineups",
-          "source": "Oddschecker"
-        },
-        {
-          "title": "Watford vs Charlton match lineup | EFL Championship · 17 Oct 2026",
-          "url": "https://www.ysscores.com/en/lineup/5836883/Watford-FC-vs-Charlton-Athletic",
-          "source": "YSscores"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "bologna vs inter",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Bologna vs Inter Milan: Italian Serie A stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/ck054nlprm0dt",
-          "source": "BBC"
-        },
-        {
-          "title": "Bologna, Palladino: “Skorupski or Pessina? I’ve made my choice. Dovbyk will have to wait for his chance, I like Enem”",
-          "url": "https://www.goal.com/en/lists/bologna-palladino-skorupski-or-pessina-i-ve-made-my-choice-dovbyk-will-have-to-wait-for-his-chance-i-like-enem/bltf53abb2dd7999c22",
+          "title": "Andoni Iraola plans squad rotation as Liverpool prepare for Brentford trip amid injury updates",
+          "url": "https://www.goal.com/en-ke/lists/andoni-iraola-liverpool-brentford-rotation-injury/blt8ea509d921115d8c",
           "source": "Goal.com"
         },
         {
-          "title": "Chivu looking to get Inter back on track",
-          "url": "https://www.beinsports.com/en-nz/football/serie-a/articles/chivu-looking-to-get-inter-back-on-track-2026-10-16",
-          "source": "beIN SPORTS"
+          "title": "Szoboszlai drops major new hint over Liverpool return in huge boost",
+          "url": "https://www.standard.co.uk/sport/football/dominik-szoboszlai-injury-latest-liverpool-fc-b1301243.html",
+          "source": "London Evening Standard"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "dynamo dresden vs magdeburg",
+      "title": "villarreal",
       "traffic": "100+",
       "news": [
         {
-          "title": "FCM-Trainer Sander: \"Mit heißem Herz und kühlem Kopf\"",
-          "url": "https://www.mdr.de/sport/sport-im-osten/fcm-dynamo-sander-pk,video-1667366.html",
-          "source": "MDR.de"
+          "title": "Alineación del partido Villarreal vs Elche | LaLiga · 17 oct. 2026",
+          "url": "https://www.ysscores.com/es/lineup/5868100/Villarreal-CF-vs-Elche-CF",
+          "source": "YSscores"
         },
         {
-          "title": "Kein Glücksbringer: Schiedsrichter Braun pfeift FCM gegen Dynamo",
-          "url": "https://magdeburg-fussball.de/news/fcm-dynamo-dresden-schiedsrichter-braun-4340492",
-          "source": "Magdeburg Blau-Weiß"
+          "title": "Iñigo Pérez introduce nueve cambios ante un Elche con Sangaré, Cepeda y Osorio",
+          "url": "https://www.infobae.com/espana/agencias/2026/10/17/inigo-perez-introduce-nueve-cambios-ante-un-elche-con-sangare-cepeda-y-osorio/",
+          "source": "Infobae"
         },
         {
-          "title": "Derby mit Brisanz: Stößt Magdeburg Dresden noch weiter in den Keller?",
-          "url": "https://ostdeutscheallgemeine.com/article/derby-mit-brisanz-stoesst-magdeburg-dresden-noch-weiter-in-den-keller-10502351",
-          "source": "Ostdeutsche Allgemeine"
+          "title": "Alineaciones de Villarreal vs Elche: Estadísticas, horarios y dónde ver",
+          "url": "https://xpectrofm.com/alineaciones-de-villarreal-vs-elche-estadisticas-horarios-y-donde-ver/",
+          "source": "Xpectro FM"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "villarreal cf",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Aguado enciende las alarmas en La Cerámica",
+          "url": "https://as.com/futbol/primera/aguado-enciende-las-alarmas-en-la-ceramica-f202610-n/",
+          "source": "Diario AS"
+        },
+        {
+          "title": "Marc Aguado sufre una lesión en el tobillo preocupante",
+          "url": "https://www.jornadaperfecta.com/blog/marc-aguado-lesion-tobillo-elche/",
+          "source": "Jornada Perfecta"
+        },
+        {
+          "title": "Marc Aguado se retira lesionado del partido en La Cerámica",
+          "url": "https://www.futbolfantasy.com/laliga/noticias/152994-marc-aguado-se-retira-lesionado-del-partido-en-la-ceramica",
+          "source": "FútbolFantasy"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "man city standings",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Manchester City charges: Premier League clubs planning legal action in response to guilty verdicts - The Athletic",
+          "url": "https://www.nytimes.com/athletic/7630331/2026/09/25/man-city-charges-premier-league-clubs/",
+          "source": "The New York Times"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "man city fixtures",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Foden and Bouaddi set to start in Ipswich clash",
+          "url": "https://www.mancity.com/news/mens/man-city-ipswich-premier-league-team-news-october-2026-63927837",
+          "source": "Manchester City FC"
+        },
+        {
+          "title": "FPL Gameweek 7 team news: Friday’s live injury updates",
+          "url": "https://www.fantasyfootballscout.co.uk/2026/10/16/fpl-gameweek-7-team-news-fridays-live-injury-updates-4/",
+          "source": "Fantasy Football Scout"
+        },
+        {
+          "title": "Enzo Maresca admits he may have to DROP Erling Haaland for Man City",
+          "url": "https://www.mirror.co.uk/sport/football/news/enzo-maresca-erling-haaland-city-37781756",
+          "source": "Daily Mirror"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "millwall vs lincoln city",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "espanyol vs atlético",
+      "title": "psv fc",
       "why": "unsafe: 'Betting'"
     }
   ],
