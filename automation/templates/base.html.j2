@@ -35,13 +35,13 @@ html, body { background: {{ 'transparent' if video_bg else '#777' }}; }
   --bg: {{ bg }}; --fg: {{ T[0] }}; --soft: {{ T[1] }}; --muted: {{ T[2] }}; --line: {{ T[3] }}; --accent: {{ T[4] }};
   --tag-bg: {{ T[5] }}; --tag-ink: {{ T[6] }};
   --mark-bg: {{ 'var(--ink-950)' if bg_name in ('shuka', 'jua', 'chai') else 'var(--shuka-600)' }}; --mark-ink: #fff;
-  --m: {{ pad | default(72) }}px; --ph: 0px;
+  --m: {{ pad | default(72) }}px; --ph: 0px; --fy: {{ photo_fy | default(30) }}%;   /* --fy: where faces sit, so a crop never cuts a head */
   font-family: "Inter", system-ui, sans-serif; font-feature-settings: "ss01" 0, "cv11" 1;
   -webkit-font-smoothing: antialiased;
 }
 .backdrop, .art { position: absolute; inset: 0; width: 100%; height: 100%; }
 /* ---- Photo: real colour, full width, fading into the background where the words begin ---- */
-.photo { position: absolute; left: 0; right: 0; top: 0; height: var(--ph); background-size: cover; background-position: center 30%;
+.photo { position: absolute; left: 0; right: 0; top: 0; height: var(--ph); background-size: cover; background-position: center var(--fy, 30%);
   filter: saturate(1.06) contrast(1.06) brightness(1.03); }
 .photo-fade { position: absolute; left: 0; right: 0; top: 0; height: var(--ph);
   background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 92%, transparent) 0, color-mix(in srgb, var(--bg) 62%, transparent) 11%, transparent 24%,
@@ -51,7 +51,7 @@ html, body { background: {{ 'transparent' if video_bg else '#777' }}; }
 /* A small news photo: sharp at its own shape across the top, over a blurred, darkened copy that fills the frame */
 .photo--blur { filter: blur(30px) brightness(.5) saturate(1.1) !important; left: -80px; right: -80px; top: -80px;
   height: calc(var(--ph) + 160px); }
-.photo-band { position: absolute; left: 0; top: var(--band-top, 124px); width: 100%; object-fit: cover; z-index: 1;
+.photo-band { position: absolute; left: 0; top: var(--band-top, 124px); width: 100%; object-fit: cover; object-position: center var(--fy, 30%); z-index: 1;
   height: min(var(--bh), calc(var(--ph) - var(--band-top, 124px) - 150px));   /* ends where the words begin */
   -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 82%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0, #000 82%, transparent 100%); }
 .has-photo .layer, .top, .foot { z-index: 2; }
