@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-10-17T10:35:14.213427+00:00",
+  "fetched": "2026-10-17T11:38:20.300679+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "cooperative",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Co-op Bank faulted for flawed sacking of poor performer",
@@ -25,23 +25,46 @@
     },
     {
       "geo": "KE",
-      "title": "elon musk tesla roadster flying car",
+      "title": "police",
       "traffic": "500+",
       "news": [
         {
-          "title": "Watch: Did Tesla really just unveil a flying car?",
-          "url": "https://www.bbc.com/news/videos/ckly4mj1g3n9o",
-          "source": "BBC"
-        },
-        {
-          "title": "Tesla's new Roadster turns in air with SpaceX thrusters, won't land until 2028",
-          "url": "https://www.reuters.com/business/autos-transportation/tesla-set-unveil-next-generation-roadster-sports-ev-after-years-delay-2026-10-15/",
-          "source": "Reuters"
-        },
-        {
-          "title": "Tesla unveils redesigned Roadster with rocket-style thrusters",
-          "url": "https://www.the-star.co.ke/news/2026-10-16-tesla-unveils-redesigned-roadster-with-rocket-style-thrusters",
+          "title": "Police probe Kitale incident that left two officers injured",
+          "url": "https://www.the-star.co.ke/news/2026-10-17-police-probe-kitale-incident-that-left-2-cops-injured",
           "source": "The Star, Kenya"
+        },
+        {
+          "title": "Two Police Officers Injured After Chaos Erupts During Sifuna-led Rally",
+          "url": "https://www.kenyans.co.ke/news/127904-two-police-officers-injured-vehicles-damaged-chaos-erupts-trans-nzoia",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Police investigate Kitale incident that left two officers injured, vehicle damaged",
+          "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001560300/police-investigate-kitale-incident-that-left-two-officers-injured-vehicle-damaged",
+          "source": "The Standard"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "matatu fare increase kenya",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Ruto signs new legislation aimed at lowering fuel costs and cost of living",
+          "url": "https://citizen.digital/article/ruto-assents-to-tax-kra-bills-targeting-fuel-prices-and-revenue-governance-n392162",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "Matatu operators raise fares by upto 50pc against MoA directive",
+          "url": "https://www.the-star.co.ke/news/2026-10-17-matatu-operators-raise-fares-by-upto-50pc-against-moa-directive",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Broken promise: Double-digit pump price hikes push Kenya's inflation to the brink",
+          "url": "https://www.standardmedia.co.ke/national/article/2001560277/broken-promise-double-digit-pump-price-hikes-push-kenyas-inflation-to-the-brink",
+          "source": "The Standard"
         }
       ]
     },
@@ -61,34 +84,11 @@
           "source": "Android Authority"
         },
         {
-          "title": "Fake Chrome app racks up 100,000 downloads, with Google's own ads pushing it above the real thing",
-          "url": "https://cybernews.com/security/fake-chrome-app-100000-downloads-google-ads/",
-          "source": "Cybernews"
+          "title": "A fake WhatsApp clone is showing up before the real version on the Play Store",
+          "url": "https://www.theverge.com/tech/1012918/google-play-store-fake-whatsapp-android",
+          "source": "The Verge"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "police",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Police probe Kitale incident that left two officers injured",
-          "url": "https://www.the-star.co.ke/news/2026-10-17-police-probe-kitale-incident-that-left-2-cops-injured",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Two Police Officers Injured After Chaos Erupts During Sifuna-led Rally",
-          "url": "https://www.kenyans.co.ke/news/127904-two-police-officers-injured-vehicles-damaged-chaos-erupts-trans-nzoia",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Police: 2 officers injured during linda mwananchi, UDA night clash in Kitale",
-          "url": "https://peopledaily.digital/inside-politics/police-2-officers-injured-during-linda-mwananchi-uda-night-clash-in-kitale",
-          "source": "People Daily"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -101,23 +101,61 @@
           "source": "BBC"
         },
         {
+          "title": "Selma Blair Breaks Her Silence on Plane Arrest in Statement from Rep (Exclusive)",
+          "url": "https://people.com/selma-blair-breaks-silence-plane-arrest-statement-rep-did-not-intend-to-harm-anyone-exclusive-12177768",
+          "source": "People.com"
+        },
+        {
           "title": "Selma Blair Arrested, Attacks Flight Crew In Mid-Air",
           "url": "https://www.tmz.com/2026/10/12/selma-blair-arrested-after-attacking-flight-crew/",
           "source": "TMZ"
-        },
-        {
-          "title": "Selma Blair accused of attacking 2 flight attendants and assaulting a police officer and nurse",
-          "url": "https://apnews.com/article/selma-blair-plane-9bce750da2a33f042b208388dd0b0f40",
-          "source": "AP News"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "venezia vs napoli prediction",
-      "traffic": "200+",
-      "news": []
+      "title": "watford vs charlton",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Watford v Charlton Athletic: Championship stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cqde829kww7rt",
+          "source": "BBC"
+        },
+        {
+          "title": "Watford vs Charlton: Confirmed Lineups & Match Prediction",
+          "url": "https://www.oddschecker.com/insight/football/cng102-20261017-watford-vs-charlton-confirmed-lineups",
+          "source": "Oddschecker"
+        },
+        {
+          "title": "Watford vs Charlton match lineup | EFL Championship · 17 Oct 2026",
+          "url": "https://www.ysscores.com/en/lineup/5836883/Watford-FC-vs-Charlton-Athletic",
+          "source": "YSscores"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bologna vs inter",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Bologna vs Inter Milan: Italian Serie A stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/ck054nlprm0dt",
+          "source": "BBC"
+        },
+        {
+          "title": "Bologna, Palladino: “Skorupski or Pessina? I’ve made my choice. Dovbyk will have to wait for his chance, I like Enem”",
+          "url": "https://www.goal.com/en/lists/bologna-palladino-skorupski-or-pessina-i-ve-made-my-choice-dovbyk-will-have-to-wait-for-his-chance-i-like-enem/bltf53abb2dd7999c22",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Chivu looking to get Inter back on track",
+          "url": "https://www.beinsports.com/en-nz/football/serie-a/articles/chivu-looking-to-get-inter-back-on-track-2026-10-16",
+          "source": "beIN SPORTS"
+        }
+      ]
     },
     {
       "geo": "KE",
@@ -130,66 +168,26 @@
           "source": "MDR.de"
         },
         {
-          "title": "Mittendrin statt nur dabei! Dynamos Raschl will Fan-Wucht endlich auf dem Platz erleben",
-          "url": "https://www.tag24.de/sport/fussball/verein/sg-dynamo-dresden/mittendrin-statt-nur-dabei-dynamos-raschl-will-fan-wucht-endlich-auf-dem-platz-erleben-3540828",
-          "source": "TAG24"
-        },
-        {
           "title": "Kein Glücksbringer: Schiedsrichter Braun pfeift FCM gegen Dynamo",
           "url": "https://magdeburg-fussball.de/news/fcm-dynamo-dresden-schiedsrichter-braun-4340492",
           "source": "Magdeburg Blau-Weiß"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "villarreal vs elche prediction",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Villarreal vs Elche: Spanish La Liga stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cqm26x3em100t",
-          "source": "BBC"
         },
         {
-          "title": "Lorient - Monaco (Ligue 1) : compositions probables, heure et chaîne",
-          "url": "https://www.befoot.net/match/lorient-monaco-1552787/",
-          "source": "www.befoot.net"
-        },
-        {
-          "title": "Villarreal face Elche test between Napoli win and Anfield trip",
-          "url": "https://onefootball.com/en/news/villarreal-face-elche-test-between-napoli-win-and-anfield-trip-43624617",
-          "source": "OneFootball"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "tecno spark 50s",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Tecno Spark 50s and 50C unveiled with 120Hz displays - GSMArena.com news",
-          "url": "https://www.gsmarena.com/tecno_spark_50s_spark_50c_features_price_sale_date-news-75083.php",
-          "source": "GSMArena.com"
-        },
-        {
-          "title": "Tecno brings Pixel 11-inspired design to its new affordable 5G smartphone",
-          "url": "https://www.notebookcheck.net/Tecno-brings-Pixel-11-inspired-design-to-its-new-affordable-5G-smartphone.1425907.0.html",
-          "source": "Notebookcheck"
-        },
-        {
-          "title": "TECNO launches Aggressive 5G for the Festive Season with SPARK 50s 5G at Rs.19,999",
-          "url": "https://www.itvoice.in/tecno-launches-aggressive-5g-for-the-festive-season-with-spark-50s-5g-at-rs-19999",
-          "source": "IT Voice Media"
+          "title": "Derby mit Brisanz: Stößt Magdeburg Dresden noch weiter in den Keller?",
+          "url": "https://ostdeutscheallgemeine.com/article/derby-mit-brisanz-stoesst-magdeburg-dresden-noch-weiter-in-den-keller-10502351",
+          "source": "Ostdeutsche Allgemeine"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "union berlin vs dortmund",
-      "why": "unsafe: 'betting'"
+      "title": "millwall vs lincoln city",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "espanyol vs atlético",
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
