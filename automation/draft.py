@@ -35,6 +35,11 @@ half-sentence. Write like a sharp Kenyan news editor: simple words, but complete
 - Every line is a full sentence with a subject and a verb. No fragments ("Invoices printed, taxes dodged."), no
   trailing dots ("Meanwhile..."), no lines that start with "Meanwhile", "Yet", "And", "But", "The catch?", "Too bad".
 - No forced jokes, no sarcasm, no "we just pay" filler. The facts carry the anger; we state the demand.
+- Simple, clear English that every Kenyan understands, including people for whom English is a second language:
+  everyday words, sentences under 15 words, one idea per sentence. Say what an official term means in plain words:
+  "money counties owe suppliers" (not "pending bills"), "buying goods and services" (not "procurement"), "the size of
+  the economy" (not "nominal GDP"). Money in shillings, with a comparison people feel ("enough to pay 10,000
+  teachers for a year") only when the source gives the numbers.
 - No slang or internet shorthand: no "receipts", "254", "KOT", Sheng or meme phrases. Natural, plain English
   that any Kenyan, of any age, reads easily.
 - Tell them what they don't already know: the amount, the date, the document, who decides, what happens next.
@@ -609,6 +614,7 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
          **({"hot": "Today's post: react to the biggest Kenyan political story in THIS WEEK IN KENYA, with its link in `source`"}
             if s.get("hot") else {}),
          **({"angle": ANGLES[s["angle"]]} if s.get("angle") in ANGLES else {}),
+         **({"avoid": "Already posted today, so pick a DIFFERENT story: " + " | ".join(s["avoid"])} if s.get("avoid") else {}),
          "series_brief": SERIES[s["template"]],
          "fields": _field_spec(s["template"])}
         for s in slots
@@ -839,7 +845,7 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     out = []
     for s in slots:
         d = by_id.get(s["id"], {})
-        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot") if k in s}
+        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "avoid") if k in s}
         out.append(news.resolve({**d, **locked}, table))
     return out
 

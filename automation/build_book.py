@@ -52,14 +52,14 @@ FAMILIES = [
 ]
 
 SERIES = [
-    ("Mon 07:30", "The People's Voice · Set It Straight", "sauti", "The week's biggest story in one plain sentence over a real photo, with the source and a clear demand."),
+    ("Mon 07:30", "Follow the Money · Scam alert", "money", "Your pocket: a price, levy, fee or scam explained in plain words, with the source and what to do."),
     ("Tue 12:45", "Kenya at its best", "kenya", "A real Kenyan place at its best: the photo or footage of the place itself and one sourced fact."),
     ("Wed 18:30", "Promise Tracker · The Chapter Six Test", "promise", "A leader's promise against the record, or a leader measured against the Constitution's integrity standard. Every side, same tests."),
     ("Thu 19:30", "Your Say", "glasspoll", "A poll on the week's biggest issue, posted as a Reel; people answer A or B in the comments."),
-    ("Fri 17:00", "Same Standard", "straight", "The opposition held to the same test: their claims, their divisive talk, their own records."),
+    ("Fri 17:00", "Scam alert · Set It Straight", "usiibiwe", "The scam going round now and how to stay safe, or a viral claim checked against the record."),
     ("Sat 11:00", "Built in Kenya", "kenya", "A finished, working public project, shown as it is today, with one sourced fact. Credit makes criticism believable."),
     ("Sun 18:00", "Your Say", "glasspoll", "A poll on the week's biggest issue. The answers pick next week's topics."),
-    ("Daily", "The hot post · Watch This", "sauti", "Every morning the system ranks what Kenya is on, writes one post on the biggest story and sends it for approval in time for the evening. Clips you send become Watch This Reels."),
+    ("Daily", "The news posts · Watch This", "sauti", "Twice a day the system finds what Kenya is talking about and writes one post on the biggest story: at lunchtime and in the evening, never the same story twice. Clips you send become Watch This Reels."),
 ]
 
 GLOSSARY = [

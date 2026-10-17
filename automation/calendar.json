@@ -1,23 +1,22 @@
 {
   "timezone": "Africa/Nairobi",
   "utc_offset": "+03:00",
-  "note": "Two kinds of post. Accountability: the stories Kenyans are already on, with sources and a concrete demand (Sauti, Set It Straight, Follow the Money, Promise Tracker, Chapter Six Test), scam alerts and two Your Say polls (Thursday and Sunday). Showcase, a third of the weekly slots: Kenya at its best (Tuesday) and Built in Kenya (Saturday), a real photo of the place or finished project and one sourced fact. Daily hot posts, Tazama Hii clips and Hatutasahau anniversaries come on top.",
+  "note": "Three kinds of post. Money and daily life (Monday and Friday, and most news posts): prices, levies, fees, jobs, scams, in plain words. Kenya's pride (Tuesday: Kenya at its best; Saturday: Built in Kenya). Accountability (Wednesday: Promise Tracker or the Chapter Six Test; the daily news posts), with sources and a clear demand. Two polls a week (Thursday and Sunday). Two news posts every day: lunchtime and evening.",
   "slots": [
     {
       "day": 1,
       "time": "07:30",
       "template": [
-        "sauti",
-        "straight",
+        "money",
         "usiibiwe"
       ],
       "bg": [
+        "shuka",
         "usiku"
       ],
       "lanes": [
-        "campus",
-        "hustle",
         "young_pro",
+        "hustle",
         "everyone"
       ]
     },
@@ -67,21 +66,17 @@
       "day": 5,
       "time": "17:00",
       "template": [
-        "straight",
-        "money",
-        "sauti"
+        "usiibiwe",
+        "straight"
       ],
       "bg": [
-        "usiku",
-        "shuka",
         "usiku"
       ],
       "lanes": [
         "everyone",
-        "young_pro",
-        "diaspora"
-      ],
-      "angle": "opposition"
+        "campus",
+        "hustle"
+      ]
     },
     {
       "day": 6,

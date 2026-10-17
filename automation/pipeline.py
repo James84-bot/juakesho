@@ -196,7 +196,9 @@ def _anniversaries(posts: list[dict], year: int, wk: int) -> None:
         target.pop("series", None)
 
 
-HOT = {"time": (18, 30), "template": "sauti", "min_lead": dt.timedelta(hours=3)}
+HOT = {"time": (12, 45), "template": "sauti", "min_lead": dt.timedelta(hours=3)}
+# Two news posts a day: lunchtime from the morning's news, evening from the afternoon's (a different story)
+HOT_EVENING = {"time": (19, 30), "suffix": "e"}
 
 
 def _clear_of(when: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timedelta(minutes=90)) -> dt.datetime:
@@ -208,17 +210,18 @@ def _clear_of(when: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timed
     return when
 
 
-def hot_slot(mock: bool = False) -> str | None:
-    """Daily: one extra post that reacts to today's biggest Kenyan story, out the same evening.
-    Adds a planned Sauti post to this week's file (made if missing); returns the week label, or None if today's
-    hot post already exists or there's no news to react to."""
+def hot_slot(mock: bool = False, evening: bool = False) -> str | None:
+    """Twice daily: a post on the biggest Kenyan story right now. The lunchtime one is drafted from the morning's
+    news; the evening one from the afternoon's, on a different story than the lunchtime post.
+    Adds a planned Sauti post to this week's file (made if missing); returns the week label, or None if this
+    edition already exists or there's no news to react to."""
     label = current_week_label(ahead=0)
     today = now().date()
     if week_file(label).exists():
         data = load_week(label)
     else:
         data = {"collection": label, "created": now().isoformat(), "posts": [], "scripts": {}}
-    hot_id = f"{label.lower()}-hot-{today:%m%d}"
+    hot_id = f"{label.lower()}-hot-{today:%m%d}{HOT_EVENING['suffix'] if evening else ''}"
     if any(p["id"] == hot_id for p in data["posts"]):
         log(f"today's hot post {hot_id} already exists")
         return None
@@ -227,12 +230,17 @@ def hot_slot(mock: bool = False) -> str | None:
         if not news.prompt_block():
             log("hot: no fresh news to react to, skipping today")
             return None
-    when = dt.datetime(today.year, today.month, today.day, *HOT["time"], tzinfo=EAT)
+    when = dt.datetime(today.year, today.month, today.day, *(HOT_EVENING if evening else HOT)["time"], tzinfo=EAT)
     if when - now() < HOT["min_lead"]:   # late start: give the owner time to approve
         when = (now() + HOT["min_lead"]).replace(second=0, microsecond=0)
     when = _clear_of(when, data["posts"])
-    data["posts"].append({"id": hot_id, "template": HOT["template"], "bg": "usiku", "lane": "everyone",
-                          "publish_at": when.isoformat(), "status": "planned", "hot": True})
+    post = {"id": hot_id, "template": HOT["template"], "bg": "usiku", "lane": "everyone",
+            "publish_at": when.isoformat(), "status": "planned", "hot": True}
+    covered = [str(p.get("message") or p.get("line") or "") for p in data["posts"]
+               if p.get("hot") and p["publish_at"][:10] == today.isoformat() and p["id"] != hot_id]
+    if covered:   # never two posts on the same story in one day
+        post["avoid"] = [c for c in covered if c][:3]
+    data["posts"].append(post)
     save_week(data)
     log(f"hot: planned {hot_id} for {when:%a %H:%M} EAT")
     return label
@@ -1031,14 +1039,12 @@ def collect() -> None:
                 _notify(f"ℹ️ That ✅ was on <b>{_esc(key)}</b>, which is no longer active (expired or already decided). Nothing was posted.")
             continue
         _answer(cq["id"], f"{verdict} ({len(changed)})")
-        if action == "a" and changed:   # the WhatsApp Channel and Status have no API: hand over a ready-to-paste version
+        if action == "a" and changed:   # TikTok, YouTube Shorts and WhatsApp: ready-to-paste, posted from your phone
             post = next(q for q in data["posts"] if q["id"] == changed[0])
-            from html import escape as esc
             try:
-                tg("sendMessage", {"chat_id": allowed_chat, "parse_mode": "HTML", "text":
-                                   f"📲 <b>For WhatsApp</b> (Channel + Status), paste with the image:\n\n<code>{esc(whatsapp_text(post))[:3500]}</code>"})
+                tg("sendMessage", {"chat_id": allowed_chat, "parse_mode": "HTML", "text": crosspost_text(post)})
             except Exception as e:
-                log(f"whatsapp text skipped: {e}")
+                log(f"cross-post package skipped: {e}")
         if action == "m" and changed:
             post = next(q for q in data["posts"] if q["id"] == changed[0])
             from html import escape as esc
@@ -1257,6 +1263,29 @@ def post_receipts(post: dict, ig_id: str | None, fb_id: str | None) -> None:
             graph(f"{target}/comments", {"message": text})
         except Exception as e:   # a missing comment never undoes a published post
             log(f"receipts comment skipped on {target}: {e}")
+
+
+def shorts_title(post: dict) -> str:
+    """YouTube Shorts title: the news line itself (YouTube allows 100 characters), with #Shorts."""
+    first = str((post.get("beats") or [post.get("message") or ""])[0]).replace("*", "").strip()
+    return (first[:90].rsplit(" ", 1)[0] if len(first) > 90 else first) + " #Shorts"
+
+
+def crosspost_text(post: dict) -> str:
+    """One Telegram message with everything to post the approved Reel where the API can't: TikTok (with a trending
+    sound, which only the app can add), YouTube Shorts and WhatsApp. TikTok and Facebook hold Kenya's largest
+    audiences; WhatsApp is where people forward what they trust."""
+    from html import escape as esc
+    cap = caption_for(post)
+    parts = ["📲 <b>Post it everywhere</b> (save the video from the card above):"]
+    if post.get("reel"):
+        parts += ["", "<b>TikTok</b>: upload, tap <b>Add sound</b>, pick a trending Kenyan sound at low volume. Caption:",
+                  f"<code>{esc(cap[:1500])}</code>",
+                  "", "<b>YouTube Shorts</b>: title, then the caption as the description:",
+                  f"<code>{esc(shorts_title(post))}</code>"]
+    parts += ["", "<b>WhatsApp</b> (Channel, Status, your groups), with the image:",
+              f"<code>{esc(whatsapp_text(post))[:1200]}</code>"]
+    return "\n".join(parts)   # caption 1,500 + WhatsApp 1,200 + labels stay under Telegram's 4,096
 
 
 def whatsapp_text(post: dict) -> str:
@@ -1502,6 +1531,7 @@ def _main(argv: list[str] | None = None) -> int:
                                         "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
+    ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
     a = ap.parse_args(argv)
     label = a.week or current_week_label()
@@ -1546,7 +1576,7 @@ def _main(argv: list[str] | None = None) -> int:
         except Exception as e:
             log(f"radar message skipped: {e}")
     if a.command == "hot":
-        label = hot_slot(a.mock)
+        label = hot_slot(a.mock, evening=a.evening)
         if not label:
             return 0
     if a.command == "tracker":   # next week as a Development Tracker batch, drafted and sent now
