@@ -1061,6 +1061,12 @@ def collect() -> None:
         offset = max(offset, u["update_id"] + 1)
         msg = u.get("message")
         if msg and str(msg.get("chat", {}).get("id")) == allowed_chat:
+            if str(msg.get("text", "")).strip().lower().startswith("/voice-off"):   # Reels go back to text only
+                import voicelab
+                voicelab.choose_off()
+                tg("sendMessage", {"chat_id": allowed_chat, "text": "🔇 Presenter voice off. Tap ✅ Use this voice on any "
+                                   "voice sample to turn it back on.", "reply_to_message_id": msg["message_id"]})
+                continue
             if _voice_of(msg):            # a voice note or audio file: the presenter's voice reference
                 _voice_intake(msg, allowed_chat)
             elif _is_image(msg):          # a photo you replied to a card with: swaps that post's picture
@@ -1076,6 +1082,15 @@ def collect() -> None:
         try:
             action, label, key = cq["data"].split("|", 2)
         except ValueError:
+            continue
+        if action == "v":   # ✅ Use this voice, under a voice lab sample: v|voice|<character name>
+            import voicelab
+            ok = voicelab.choose(key)
+            _answer(cq["id"], f"🎙 {key} is now the presenter's voice." if ok else "That voice isn't available any more.")
+            if ok:
+                _notify(f"🎙 <b>{_esc(key)}</b> is now the presenter's voice. New Reels will be read by the presenter "
+                        "and labelled as an AI voice. Send /voice-off here any time to stop.")
+            log(f"voice chosen: {key} ({ok})")
             continue
         if action == "c":   # a comment card: c|r|cid reply, c|h|cid hide, c|s|cid skip
             import engage
@@ -1256,6 +1271,8 @@ def caption_for(post: dict) -> str:
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
         body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
         cap = f"{body.rstrip()}\n\n📩 Were you there? Send us your video and we'll credit you.{tail}"
+    if post.get("voiced") and "ai voice" not in cap.lower():   # honest by default: platforms and Kenyans should know
+        cap = f"{cap}\n\n🎙 Presenter voice is AI-generated."
     clip = post.get("credit") if post.get("template") == "tazama" and post.get("rights_kind") != "own" else None
     credits = [f"{icon} {c}" for icon, c in (("📹 Video:", clip), ("🎥", post.get("video_credit")),
                                              ("📷", post.get("person_credit") or post.get("photo_credit")),
@@ -1341,6 +1358,9 @@ def crosspost_text(post: dict) -> str:
     cap = caption_for(post)
     parts = ["📲 <b>Post it everywhere</b> (save the video from the card above):"]
     if post.get("reel"):
+        if post.get("voiced"):   # TikTok requires the label for realistic AI audio; YouTube has an altered-content setting
+            parts += ["", "🎙 <b>AI voice</b>: on TikTok turn on <b>AI-generated content</b> (More options); on YouTube "
+                          "answer <b>Yes</b> to altered or synthetic content."]
         parts += ["", "<b>TikTok</b>: upload, tap <b>Add sound</b>, pick a trending Kenyan sound at low volume. Caption:",
                   f"<code>{esc(cap[:1500])}</code>",
                   "", "<b>YouTube Shorts</b>: title, then the caption as the description:",

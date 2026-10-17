@@ -79,6 +79,11 @@ jobs:
           python -m playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg || true   # video.py falls back to imageio-ffmpeg
           if [ "${{ steps.cmd.outputs.c }}" = "clips" ]; then pip install faster-whisper; fi   # captions from the clip's audio
+          # the presenter (only once James has picked a voice): the voice model on CPU; Rhubarb downloads itself
+          if (cd automation && python -c "import voicelab,sys; sys.exit(0 if voicelab.chosen() else 1)"); then
+            pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0 torchaudio==2.6.0 \
+              && pip install chatterbox-tts soundfile || echo "::warning::voice tools failed to install: Reels stay text-only"
+          fi
 
       - name: Install (light)
         if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'hot' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'this-week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'redo' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'samples' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'remake' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'renew' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rephoto' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'clips' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tracker' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip'

@@ -31,6 +31,12 @@
 .photo-band { animation: kb {{ BT.t + 1 }}s linear both; }
 .stage { top: {{ 300 + [photo_band, 760] | min + 40 }}px; bottom: 300px; }
 {% endif %}
+{% if presenter is defined and presenter %}
+/* the presenter stands bottom-right for the whole Reel: the lines end above his head */
+.stage { bottom: 600px; }
+{% if photo_band %}.photo-band { height: min(var(--bh), 460px); }
+.stage { top: {{ 300 + [photo_band, 460] | min + 40 }}px; }{% endif %}
+{% endif %}
 .beat { grid-area: 1 / 1; font-family: "Inter Tight", sans-serif; font-weight: 900; letter-spacing: -.03em; line-height: 1.02;
   color: #fff; text-shadow: 0 3px 28px rgba(0, 0, 0, .45); opacity: 0; }
 .beat .t { display: inline-block; margin-right: .22em; }
