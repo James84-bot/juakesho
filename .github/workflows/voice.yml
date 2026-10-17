@@ -2,13 +2,14 @@
 # Nothing is posted publicly. Run from Actions → voice → Run workflow.
 #   kokoro : ready-made open-source AI voices (accent and speed check)
 #   clone  : the presenter's character voices from the newest voice note you sent the bot
+#   selftest : the clone path end to end with a stand-in voice (no recording needed)
 name: voice
 
 on:
   workflow_dispatch:
     inputs:
       step:
-        description: "kokoro | clone"
+        description: "kokoro | clone | selftest"
         default: "kokoro"
 
 concurrency:
@@ -39,7 +40,7 @@ jobs:
         run: |
           cd automation
           nproc
-          python voicelab.py ${{ inputs.step }}
+          if [ "${{ inputs.step }}" = "selftest" ]; then python voicelab.py clone --selftest; else python voicelab.py ${{ inputs.step }}; fi
       - name: Save which recording the voice was made from
         if: inputs.step == 'clone'
         run: |

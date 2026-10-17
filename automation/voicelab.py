@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
 import subprocess
 import sys
@@ -60,6 +61,8 @@ CHARACTERS = [
 
 def log(msg: str) -> None:
     P.log(f"voicelab: {msg}")
+    if os.environ.get("GITHUB_ACTIONS"):   # readable on the run page and through the API (logs are not)
+        print(f"::notice title=voicelab::{msg}", flush=True)
 
 
 def ffmpeg() -> str:
@@ -162,12 +165,27 @@ def reference(tmp: Path) -> Path:
     return ref
 
 
-def clone(out: Path, dry: bool) -> None:
+def stand_in(tmp: Path) -> Path:
+    """A reference clip from Chatterbox's own built-in voice: proves the whole clone path works before James's
+    recording arrives. Never used for a real post."""
+    import torchaudio as ta
+    from chatterbox.tts import ChatterboxTTS
+    t0 = time.time()
+    model = ChatterboxTTS.from_pretrained(device="cpu")
+    wav = model.generate("This is a stand-in voice for testing. It reads a few plain sentences so the clone has "
+                         "enough clean speech to learn from, and then the real recording replaces it.")
+    ref = tmp / "stand-in.wav"
+    ta.save(str(ref), wav, model.sr)
+    log(f"stand-in reference: {seconds(ref):.1f}s made in {time.time() - t0:.0f}s")
+    return ref
+
+
+def clone(out: Path, dry: bool, selftest: bool = False) -> None:
     import torch
     import torchaudio as ta
     from chatterbox.tts_turbo import ChatterboxTurboTTS
     with tempfile.TemporaryDirectory() as t:
-        ref = reference(Path(t))
+        ref = stand_in(Path(t)) if selftest else reference(Path(t))
         t0 = time.time()
         model = ChatterboxTurboTTS.from_pretrained(device="cpu")
         load = time.time() - t0
@@ -180,13 +198,14 @@ def clone(out: Path, dry: bool) -> None:
     ta.save(str(base), wav, model.sr)
     dur = seconds(base)
     log(f"clone: {dur:.1f}s audio in {took:.1f}s (+{load:.0f}s model load)")
-    note("🎙 <b>Voice lab 2/2: the presenter's voice</b>, made from your recording on our own free machines. "
+    note(("🧪 <b>Voice lab self-test</b> (a stand-in voice, not yours): proves the clone works on our free machines. "
+          if selftest else "🎙 <b>Voice lab 2/2: the presenter's voice</b>, made from your recording on our own free machines. ") +
          f"{dur:.0f} s of speech took {took:.0f} s ({dur / max(took, 0.01):.2f}× real time). "
          "Pick the one that sounds right; each carries an inaudible AI watermark.", dry)
     for name, why, rate, tempo in CHARACTERS:
         mp3 = to_mp3(base, out / f"{name.lower().replace(' ', '-')}.mp3", rate, tempo)
         send(mp3, name, f"<b>{name}</b>: {why}", dry)
-    if not dry:   # the tick only remakes the voice when a newer recording arrives
+    if not dry and not selftest:   # the tick only remakes the voice when a newer recording arrives
         rec = json.loads(VOICE_STATE.read_text())
         rec["made_for"] = rec.get("file_unique_id") or rec["file_id"]
         rec["made_at"] = P.now().isoformat()
@@ -205,12 +224,16 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("step", choices=["kokoro", "clone", "pending"])
     ap.add_argument("--dry", action="store_true", help="write files to ./voicelab-out, send nothing")
+    ap.add_argument("--selftest", action="store_true", help="clone a stand-in voice instead of James's recording")
     a = ap.parse_args(argv)
     if a.step == "pending":   # exit 0 = a new recording is waiting for its voice
         return 0 if pending() else 1
     out = Path("voicelab-out") if a.dry else Path(tempfile.mkdtemp(prefix="voicelab-"))
     out.mkdir(exist_ok=True)
-    (kokoro if a.step == "kokoro" else clone)(out, a.dry)
+    if a.step == "kokoro":
+        kokoro(out, a.dry)
+    else:
+        clone(out, a.dry, a.selftest)
     return 0
 
 
