@@ -1,25 +1,25 @@
 {
-  "fetched": "2026-10-17T09:36:16.813323+00:00",
+  "fetched": "2026-10-17T10:14:58.613233+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "nairobi building collapse moi avenue",
-      "traffic": "1000+",
+      "title": "cooperative",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Photos: Former Club Avenida building on Moi Avenue collapses, four injured",
-          "url": "https://nation.africa/kenya/news/photos-former-club-avenida-building-on-moi-avenue-collapses-5635446",
-          "source": "Daily Nation"
+          "title": "Co-op Bank faulted for flawed sacking of poor performer",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/co-op-bank-faulted-for-flawed-sacking-of-poor-performer-5635038",
+          "source": "Business Daily"
         },
         {
-          "title": "Four Injured as Nairobi CBD Building Collapses During Night Demolition",
-          "url": "https://www.kenyans.co.ke/news/127901-four-injured-nairobi-cbd-building-collapses-during-night-demolition",
-          "source": "Kenyans.co.ke"
+          "title": "Two Saccos under liquidation as creditors get 60 days to claim",
+          "url": "https://saccoreview.co.ke/two-saccos-under-liquidation-as-creditors-get-60-days-to-claim/",
+          "source": "Sacco Review"
         },
         {
-          "title": "Four injured as building collapses along Moi Avenue in Nairobi",
-          "url": "https://www.the-star.co.ke/news/2026-10-17-four-injured-as-building-collapses-along-moi-avenue",
-          "source": "The Star, Kenya"
+          "title": "Two Kenyan co-operative societies placed under liquidation",
+          "url": "https://capitalfm.africa/two-kenyan-co-operative-societies-placed-under-liquidation/",
+          "source": "Capital FM Africa"
         }
       ]
     },
@@ -47,47 +47,48 @@
     },
     {
       "geo": "KE",
-      "title": "cooperative",
+      "title": "play store",
       "traffic": "200+",
       "news": [
         {
-          "title": "Co-op Bank faulted for flawed sacking of poor performer",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/co-op-bank-faulted-for-flawed-sacking-of-poor-performer-5635038",
-          "source": "Business Daily"
+          "title": "I find the best new Android apps in minutes by skipping the Play Store",
+          "url": "https://www.androidpolice.com/i-find-the-best-android-apps-in-minutes-by-skipping-the-play-store/",
+          "source": "Android Police"
         },
         {
-          "title": "Two Saccos under liquidation as creditors get 60 days to claim",
-          "url": "https://saccoreview.co.ke/two-saccos-under-liquidation-as-creditors-get-60-days-to-claim/",
-          "source": "Sacco Review"
+          "title": "After Chrome, we now have a WhatsApp dupe on the Play Store with 500,000+ downloads",
+          "url": "https://www.androidauthority.com/fake-whatsapp-app-3724337/",
+          "source": "Android Authority"
         },
         {
-          "title": "Two Kenyan co-operative societies placed under liquidation",
-          "url": "https://capitalfm.africa/two-kenyan-co-operative-societies-placed-under-liquidation/",
-          "source": "Capital FM Africa"
+          "title": "Fake Chrome app crosses 100,000 downloads before removal | It was a chat application | Inshorts",
+          "url": "https://inshorts.com/en/news/fake-chrome-app-crosses-100-000-downloads-before-removal-1792067583800",
+          "source": "Inshorts"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "fulham vs hull city prediction",
+      "title": "arrest",
       "traffic": "200+",
       "news": [
         {
-          "title": "Fulham vs Hull City: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cx98zgy30d4zt",
-          "source": "BBC"
+          "title": "4 persons of interest arrested with 38.6 kg of suspected game meat in Laikipia",
+          "url": "https://peopledaily.digital/news/4-persons-of-interest-arrested-with-38-6-kg-of-suspected-game-meat-in-laikipia",
+          "source": "People Daily"
         },
         {
-          "title": "Pre-Hull Press Conference",
-          "url": "https://www.fulhamfc.com/news/2026/october/16/pre-hull-press-conference/",
-          "source": "Fulham FC"
+          "title": "Month-old baby girl sold for N2m in Oyo, mother arrested",
+          "url": "https://www.vanguardngr.com/2026/10/month-old-baby-girl-sold-for-n2m-mother-arrested/",
+          "source": "Vanguard News"
         },
         {
-          "title": "Preview: Fulham vs Hull City - prediction, team news, lineups",
-          "url": "https://www.sportsmole.co.uk/football/fulham/preview/fulham-vs-hull-city-prediction-team-news-lineups_606929.html",
-          "source": "Sports Mole"
+          "title": "Mother, health facility owner arrested over sale of baby for N2m in Oyo",
+          "url": "https://dailypost.ng/2026/10/17/mother-health-facility-owner-arrested-over-sale-of-baby-for-n2m-in-oyo/",
+          "source": "Daily Post Nigeria"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -114,45 +115,63 @@
     },
     {
       "geo": "KE",
-      "title": "venezia vs napoli prediction",
-      "traffic": "100+",
-      "news": []
-    },
-    {
-      "geo": "KE",
-      "title": "betis vs barcelona",
+      "title": "villarreal vs elche prediction",
       "traffic": "100+",
       "news": [
         {
-          "title": "Antes del fuego de La Cartuja: Pellegrini revela su plan mágico para derribar al Barcelona",
-          "url": "https://es-us.noticias.yahoo.com/deportes/fuego-cartuja-pellegrini-revela-plan-123706558.html",
-          "source": "Yahoo"
+          "title": "Villarreal vs Elche: Spanish La Liga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cqm26x3em100t",
+          "source": "BBC"
         },
         {
-          "title": "Real Betis vs FC Barcelona en vivo: canales, streaming y horarios de LaLiga 2026/27 para México, Latinoamérica y USA",
-          "url": "https://www.dazn.com/es-MX/news/f%C3%BAtbol/real-betis-vs-fc-barcelona-vivo-canales-streaming-horarios-laliga/1jtrr7a74p45n1fvxwr5q2vclg",
-          "source": "DAZN"
+          "title": "Lorient - Monaco (Ligue 1) : compositions probables, heure et chaîne",
+          "url": "https://www.befoot.net/match/lorient-monaco-1552787/",
+          "source": "www.befoot.net"
         },
         {
-          "title": "Flick cambia la rutina del Barça en una semana de órdago",
-          "url": "https://www.sport.es/es/noticias/barca/flick-cambia-rutina-barca-semana-135439264",
-          "source": "SPORT"
+          "title": "Villarreal face Elche test between Napoli win and Anfield trip",
+          "url": "https://onefootball.com/en/news/villarreal-face-elche-test-between-napoli-win-and-anfield-trip-43624617",
+          "source": "OneFootball"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "tecno spark 50s",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Tecno Spark 50s and 50C unveiled with 120Hz displays - GSMArena.com news",
+          "url": "https://www.gsmarena.com/tecno_spark_50s_spark_50c_features_price_sale_date-news-75083.php",
+          "source": "GSMArena.com"
+        },
+        {
+          "title": "Tecno brings Pixel 11-inspired design to its new affordable 5G smartphone",
+          "url": "https://www.notebookcheck.net/Tecno-brings-Pixel-11-inspired-design-to-its-new-affordable-5G-smartphone.1425907.0.html",
+          "source": "Notebookcheck"
+        },
+        {
+          "title": "TECNO launches Aggressive 5G for the Festive Season with SPARK 50s 5G at Rs.19,999",
+          "url": "https://www.itvoice.in/tecno-launches-aggressive-5g-for-the-festive-season-with-spark-50s-5g-at-rs-19999",
+          "source": "IT Voice Media"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "venezia vs napoli prediction",
+      "traffic": "100+",
+      "news": []
     }
   ],
   "dropped": [
     {
-      "title": "villarreal vs elche prediction",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "arrest",
-      "why": "unsafe: 'attack'"
-    },
-    {
       "title": "union berlin vs dortmund",
       "why": "unsafe: 'betting'"
+    },
+    {
+      "title": "fulham vs hull city prediction",
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
