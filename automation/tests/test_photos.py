@@ -1,6 +1,7 @@
 """Photo sources: licence and place filters, and the civic fallback (no network)."""
 import json
 import os
+import re
 import sys
 import tempfile
 import unittest
@@ -147,8 +148,84 @@ class Relevance(unittest.TestCase):
 
 
 class Symbolic(unittest.TestCase):
-    def test_topic_picks_a_symbolic_background(self):
+    def test_last_resort_is_the_real_institution_not_a_stand_in_object(self):
         self.assertEqual(photos.symbols_for({"line": "The state owes Kenya Power Sh7.35bn"})[:2],
-                         ["power lines Kenya", "electricity pylon Kenya"])
-        self.assertIn("ballot box Kenya", photos.symbols_for({"line": "IEBC adds 9,164 polling stations"}))
+                         ["Stima Plaza Nairobi", "Kenya Power"])
+        self.assertIn("Anniversary Towers Nairobi", photos.symbols_for({"line": "IEBC adds 9,164 polling stations"}))
+        self.assertIn("Times Tower Nairobi", photos.symbols_for({"line": "KRA uncovers Ksh 4 billion VAT fraud"}))
+        every = [q for _, qs in photos.SYMBOLS for q in qs]
+        self.assertFalse([q for q in every if re.search(r"banknote|pylon|ballot box|power lines|title deed", q, re.I)])
         self.assertEqual(photos.symbols_for({"line": "Nice weather"}), [])
+
+
+def _wiki(page: dict, file_info: dict | None):
+    """A fake _get for wiki_photo: the Wikipedia article, then its Commons file, then the image bytes."""
+    def get(url, headers=None, timeout=30):
+        if "wikipedia.org" in url:
+            return json.dumps({"query": {"pages": {"1": page}}}).encode()
+        if "commons.wikimedia.org" in url:
+            return json.dumps({"query": {"pages": {"-1": {"imageinfo": [file_info]} if file_info else {"missing": ""}}}}).encode()
+        return b"JPEGDATA"
+    return get
+
+
+PORTRAIT = {"mime": "image/jpeg", "width": 900, "url": "https://up/r.jpg", "thumburl": "https://up/r-1600.jpg",
+            "extmetadata": {"LicenseShortName": {"value": "CC BY-SA 4.0"}, "Artist": {"value": "<a>PCS Kenya</a>"}}}
+RUTO = {"title": "William Ruto", "pageimage": "Ruto.jpg", "extract": "William Ruto is a Kenyan politician..."}
+
+
+class SubjectPhoto(unittest.TestCase):
+    def test_the_named_person_gets_their_licensed_portrait(self):
+        with mock.patch.object(photos, "_get", _wiki(RUTO, PORTRAIT)):
+            data, meta = photos.subject_photo({"id": "p", "who": "President William Ruto"})
+        self.assertEqual(meta["kind"], "portrait")
+        self.assertEqual(meta["credit"], "Photo: PCS Kenya / Wikimedia Commons, CC BY-SA 4.0")
+
+    def test_namesakes_disambiguation_logos_and_restrictive_licences_are_refused(self):
+        cases = [
+            (dict(RUTO, extract="William Ruto is a footballer from Ghana."), PORTRAIT),   # not about Kenya
+            (dict(RUTO, pageprops={"disambiguation": ""}), PORTRAIT),
+            (RUTO, dict(PORTRAIT, mime="image/svg+xml")),                                   # a logo
+            (RUTO, dict(PORTRAIT, extmetadata={"LicenseShortName": {"value": "CC BY-NC 2.0"}})),
+            (RUTO, None),                                                                    # a local, non-free file
+        ]
+        for page, info in cases:
+            with mock.patch.object(photos, "_get", _wiki(page, info)):
+                self.assertIsNone(photos.wiki_photo("William Ruto"), (page.get("extract"), info and info.get("mime")))
+
+    def test_an_institution_story_gets_the_institution_photo(self):
+        kra = {"title": "Kenya Revenue Authority", "pageimage": "Times_Tower.jpg", "extract": "The KRA..."}
+        with mock.patch.object(photos, "_get", _wiki(kra, dict(PORTRAIT, width=2000))):
+            data, meta = photos.subject_photo({"id": "k", "line": "KRA uncovered a Ksh 4 billion VAT fraud"})
+        self.assertEqual(meta["kind"], "institution")
+
+    def test_person_names_come_out_of_who(self):
+        for who, name in [("Energy CS Opiyo Wandayi", "Opiyo Wandayi"), ("Hassan Omar, UDA Secretary-General", "Hassan Omar"),
+                          ("National Assembly Public Debt Committee", ""), ("Senator Samson Cherargei", "Samson Cherargei")]:
+            self.assertEqual(photos.person_name(who), name)
+
+
+class ExtraPhotos(unittest.TestCase):
+    def _img(self, box):
+        import io
+        from PIL import Image
+        b = io.BytesIO(); im = Image.new("RGB", (1600, 900), "white"); im.paste("black", box); im.save(b, "JPEG")
+        return b.getvalue()
+
+    def test_reel_gets_other_real_photos_of_the_story_once_each_and_cached(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            main = d / "m.jpg"; main.write_bytes(self._img((0, 0, 800, 900)))
+            same, other = self._img((0, 0, 800, 900)), self._img((0, 0, 1600, 450))
+            post = {"id": "x", "template": "sauti", "who": "Kenya Revenue Authority"}
+            found = [(same, {"credit": "Photo: Nation", "kind": "posted"}), (other, {"credit": "Photo: KBC", "kind": "posted"})]
+            with mock.patch("posted.find_all", lambda p, n: list(found)), \
+                    mock.patch.object(photos, "subject_photo", lambda p: None):
+                got = photos.extras(post, d, {"file": str(main), "kind": "posted"})
+            self.assertEqual([g["credit"] for g in got], ["Photo: KBC"])     # the copy of the main photo is dropped
+            with mock.patch("posted.find_all", side_effect=AssertionError("searched again")):
+                self.assertEqual(photos.extras(post, d, {"file": str(main), "kind": "posted"}), got)   # cached
+
+    def test_no_extras_behind_a_stand_in_scene(self):
+        with tempfile.TemporaryDirectory() as d:
+            self.assertEqual(photos.extras({"id": "y", "template": "sauti"}, Path(d), {"file": "", "kind": "symbolic"}), [])

@@ -290,9 +290,15 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         ctx.update(photo_uri=Path(person).as_uri(), photo_credit=post.get("person_credit") or "", person_shown=True)
     elif photo and Path(photo).exists() and post["template"] in PHOTO_TEMPLATES:
         civic = post["template"] in {"money", "straight", "promise", "sauti", "kumbuka", "scorecard"} or post.get("series") in {"See Through It"}
-        civic = civic and post.get("photo_kind") not in {"event", "yours", "posted"}   # a photo OF the event is not illustrative
-        ctx.update(photo_uri=Path(photo).as_uri(),
-                   photo_credit=("Illustrative photo · " if civic else "") + (post.get("photo_credit") or ""))
+        kind = post.get("photo_kind")
+        # a photo OF the event is not illustrative; a portrait or the institution's own photo is a file photo
+        label = ("File photo · " if kind in {"portrait", "institution"} else
+                 "Illustrative photo · " if civic and kind not in {"event", "yours", "posted"} else "")
+        ctx.update(photo_uri=Path(photo).as_uri(), photo_credit=label + (post.get("photo_credit") or ""))
+        # more real photos of the same story: a Reel cuts between them, one per line
+        ctx["extra_photos"] = [(Path(x["file"]).as_uri(), ("File photo · " if x.get("kind") in {"portrait", "institution"} else "")
+                                + (x.get("credit") or "")) for x in (post.get("photo_extra") or [])
+                               if isinstance(x, dict) and x.get("file") and Path(x["file"]).exists()][:3]
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
 
 

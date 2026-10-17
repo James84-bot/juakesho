@@ -633,6 +633,50 @@ def _attach(posts: list[dict], out_dir: Path) -> None:
                 p["photo_kind"] = got.get("kind", "symbolic")
                 p["photo_outlet"] = got.get("outlet", "")
                 p["photo_source"] = p.get("photo_source") or got.get("url", "")
+                extra = extras(p, out_dir / "photos", got)
+                if extra:
+                    p["photo_extra"] = extra
+                else:
+                    p.pop("photo_extra", None)
             else:
-                for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet"):
+                for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "photo_extra"):
                     p.pop(k, None)
+
+
+def extras(post: dict, out_dir: Path, main: dict, limit: int = 2) -> list[dict]:
+    """More real photos of the same story for the Reel to cut between: other outlets' photos of it, then the
+    person's or institution's own photo. Only when the main photo is itself real (never mixed with a scene).
+    Cached next to the main photo, so a re-render shows the same pictures."""
+    if post.get("template") not in CIVIC_TEMPLATES or main.get("kind") not in {"posted", "event", "portrait", "institution"}:
+        return []
+    meta = out_dir / f"{post['id']}-extra.json"
+    if meta.exists():
+        try:
+            rows = json.loads(meta.read_text(encoding="utf-8"))
+            return [r for r in rows if Path(r.get("file", "")).exists()]
+        except (OSError, ValueError):
+            pass
+    import posted
+    try:
+        main_key = posted._fingerprint(Path(main["file"]).read_bytes())
+        found, seen = [], {main_key}
+        more = posted.find_all(post, limit + 1)
+        if len(more) < limit + 1 and main.get("kind") not in {"portrait", "institution"}:
+            more.append(subject_photo(post))
+        for data, info in [m for m in more if m]:
+            key = posted._fingerprint(data)
+            if key in seen:
+                continue
+            seen.add(key)
+            target = out_dir / f"{post['id']}-photo-{len(found) + 2}.jpg"
+            target.write_bytes(data)
+            found.append({"file": str(target), "credit": info.get("credit", ""), "kind": info.get("kind", "posted"),
+                          "url": info.get("url", "")})
+            if len(found) >= limit:
+                break
+    except Exception as e:   # extras are a bonus: never block the post
+        _note(f"  extra photos skipped for {post.get('id')}: {e}")
+        return []
+    meta.write_text(json.dumps(found), encoding="utf-8")
+    _note(f"  extra photos for {post['id']}: {len(found)}")
+    return found

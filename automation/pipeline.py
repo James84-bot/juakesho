@@ -159,7 +159,7 @@ def _pick(value, week_no: int):
     return value[week_no % len(value)] if isinstance(value, list) else value
 
 
-EVIDENCE_SKIP = {"status", "guard", "critic", "ink", "symbol_box", "seed", "attempts", "last_error", "photo_file", "person_file", "tg_msg"}
+EVIDENCE_SKIP = {"status", "guard", "critic", "ink", "symbol_box", "seed", "attempts", "last_error", "photo_file", "person_file", "tg_msg", "photo_extra"}
 
 
 def record_evidence(members: list[dict]) -> None:
@@ -419,7 +419,7 @@ def rephoto(label: str) -> list[str]:
         p["id"] = _next_rev(old)
         if p.get("group"):
             p["group"] = groups.setdefault(p["group"], _next_rev(p["group"]))
-        for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet"):
+        for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "photo_extra"):
             p.pop(k, None)
         p["status"] = "drafted"
         changed.append(p["id"])
@@ -513,7 +513,7 @@ def _photo_intake(msg: dict, chat: str) -> None:
         return reply(f"📷 Couldn't download that photo ({_esc(str(e)[:120])}). Try again.")
     credit = {"own": "Photo: Kenyans Are Asking", "permission": f"Photo: {rights['credit']} (with permission)",
               "posted": f"Photo: {rights['credit']}"}[rights["rights"]]
-    for k in ("photo_file", "photo_credit", "photo_kind", "tg_msg", "decided_at"):
+    for k in ("photo_file", "photo_credit", "photo_kind", "photo_extra", "tg_msg", "decided_at"):
         post.pop(k, None)
     post.update(id=new_id, photo=f"sent:{rel.as_posix()}", photo_rights_credit=credit, photo_rights=rights["evidence"],
                 photo_source=rights.get("source", ""), photo_use=rights["rights"], status="drafted")
