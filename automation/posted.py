@@ -51,6 +51,24 @@ GENERIC = {"kenya", "kenyan", "kenyans", "nairobi", "the", "a", "an", "we", "our
            "development", "management", "revenue", "market", "bridge", "stadium", "id", "hr", "opposition", "court",
            "senate", "assembly", "bill", "report", "office", "city", "town", "road", "project", "minister"}
 FILE_DAYS = 6   # a file photo of the person or institution: the newest report about them in the archive
+# Bodies whose photo stands for them (their offices, officials, sites). A tax or a programme (VAT, SHIF) is not one:
+# "VAT" in a headline is any of a dozen stories.
+INSTITUTIONS = {"iebc", "kra", "epra", "cbk", "kenha", "kura", "kerra", "kplc", "knbs", "ppra", "eacc", "dci", "odpp",
+                "ipoa", "nlc", "tsc", "knut", "kuppet", "helb", "kemsa", "kpa", "krc", "kaa", "kebs", "nema", "kws", "kdf",
+                "nps", "nhif", "sha", "nssf", "cma", "ira", "ca", "jsc", "srb", "src", "cok", "lsk", "kuccps", "knec",
+                "nys", "kfs", "wra", "kenao", "oag", "osg", "nca"}
+_ORIGINAL = [(re.compile(r"/styles/[^/]+/public/"), "/"),            # Drupal (Kenyans.co.ke): the uploaded original
+             (re.compile(r"-\d{2,4}x\d{2,4}(?=\.\w{3,4}(?:\?|$))"), "")]   # WordPress (KBC, Capital FM): '-300x200'
+
+
+def _originals(url: str) -> list[str]:
+    """The full-size original first (sites serve resized copies in feeds and og tags), then the URL as given."""
+    out = []
+    for rx, sub in _ORIGINAL:
+        alt = rx.sub(sub, url)
+        if alt != url and alt not in out:
+            out.append(alt)
+    return out + [url]
 NS = {"media": "http://search.yahoo.com/mrss/", "content": "http://purl.org/rss/1.0/modules/content/"}
 _FEED_CACHE: dict[str, list[dict]] = {}
 
@@ -257,6 +275,15 @@ def _photographer(credit: str) -> str:
     return ""
 
 
+def _size(data: bytes) -> str:
+    try:
+        from PIL import Image
+        with Image.open(io.BytesIO(data)) as im:
+            return "%dx%d" % im.size
+    except Exception:
+        return "not an image"
+
+
 def _check_image(data: bytes) -> bool:
     try:
         from PIL import Image
@@ -305,10 +332,8 @@ def _photo_of(item: dict) -> tuple[bytes, dict] | None:
         _note(f"    {item['outlet']} page not read: {str(e)[:80]}")
     candidates.append(item.get("img", ""))
     seen = set()
-    for img in candidates:
-        if not img:
-            continue
-        img = urllib.parse.urljoin(item["link"], img)
+    full = [u for c in candidates if c for u in _originals(urllib.parse.urljoin(item["link"], c))]
+    for img in full:
         if img in seen:
             continue
         seen.add(img)
@@ -320,11 +345,11 @@ def _photo_of(item: dict) -> tuple[bytes, dict] | None:
         except Exception as e:
             _note(f"    skipped {item['outlet']} image: {str(e)[:80]}")
             continue
-        if _check_image(data):
+        if _check_image(data):   # (sizes below are logged so a too-strict limit shows up in photos.log)
             who = _photographer(credit)
             line = f"Photo: {item['outlet']}" + (f" / {who}" if who and who.lower() not in item["outlet"].lower() else "")
             return data, {"credit": line, "url": item["link"], "outlet": item["outlet"]}
-        _note(f"    skipped {item['outlet']}: image too small or not a photo ({img[:70]})")
+        _note(f"    skipped {item['outlet']}: image too small or not a photo ({_size(data)}, {img[:70]})")
     return None
 
 
@@ -332,13 +357,28 @@ def find_named(post: dict) -> tuple[bytes, dict] | None:
     """A file photo when no report of this exact story has one: the newest report whose HEADLINE names the post's
     person (by surname) or, failing that, its institution by acronym (IEBC, KRA, EPRA). Never by place: a report
     that merely mentions Iten or Mombasa is usually about something else. Labelled "File photo"."""
+    import photos
     surname = terms_for(post)[0]
-    acronyms = [n for n in names_for(post) if len(n) >= 3 and n in acronyms_for(post)]
-    keys = ([surname] if surname else []) + [a for a in acronyms if a != surname][:2]
+    first = (photos.full_name(str(post.get("who", ""))).split() or [""])[0].lower()
+    bodies = [n for n in names_for(post) if n in INSTITUTIONS and n in acronyms_for(post)]
+    keys = ([surname] if surname else []) + [b for b in bodies if b != surname][:2]
     now = dt.datetime.now(dt.timezone.utc)
+
+    def names_it(x: dict, key: str) -> bool:
+        if not _has(x["title"].lower(), key):
+            return False
+        if key != surname or not first:
+            return True
+        # a person: no OTHER first name right before the surname ("Ilhan Omar" is not Hassan Omar; "CS Ruku",
+        # "President Ruto" and "Opiyo Wandayi" are fine)
+        for m in re.finditer(rf"\b([A-Z][a-z]+)\s+{re.escape(surname)}\b", f"{x['title']} {x['text']}", re.I):
+            w = m.group(1).lower()
+            if m.group(1)[0].isupper() and w != first and w not in photos.TITLES and not photos.INSTITUTION.match(w):
+                return False
+        return True
     for key in keys:
         hits = [x for x in feed_items()
-                if _has(x["title"].lower(), key) and (x["when"] is None or now - x["when"] <= dt.timedelta(days=FILE_DAYS))]
+                if names_it(x, key) and (x["when"] is None or now - x["when"] <= dt.timedelta(days=FILE_DAYS))]
         hits.sort(key=lambda x: (x["when"] or now), reverse=True)
         _note(f"  file photo for {post.get('id')}: {len(hits)} recent reports name '{key}'")
         for item in hits[:4]:
