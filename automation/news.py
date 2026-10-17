@@ -59,6 +59,18 @@ def _key(title: str) -> str:
     return " ".join(sorted(set(re.findall(r"[a-z0-9]{4,}", title.lower())))[:8])
 
 
+# Only established newsrooms: a fact we publish must come from an outlet with editors and a corrections policy.
+# Google News also lists Facebook pages, betting-site blogs and aggregators; those never become a source.
+NEWSROOMS = re.compile(r"^(capital fm|people daily|the star|daily nation|nation|the standard|standard digital|"
+                       r"kbc|kenya news agency|citizen digital|citizen tv|k24|tv47|kenyans\.co\.ke|tuko|"
+                       r"the eastafrican|business daily|ntv|ktn|the eastleigh voice|nairobi law monthly|"
+                       r"africa check|reuters|bbc|associated press|ap news|al jazeera|bloomberg)", re.I)
+
+
+def newsroom(outlet: str) -> bool:
+    return bool(NEWSROOMS.match((outlet or "").strip()))
+
+
 def collect() -> dict:
     cfg = json.loads(FEEDS.read_text(encoding="utf-8"))
     now = dt.datetime.now(dt.timezone.utc)
@@ -69,7 +81,7 @@ def collect() -> dict:
                 if it["published"] and now - it["published"] > MAX_AGE:
                     continue
                 k = _key(it["title"])
-                if k in seen:
+                if k in seen or not newsroom(it.get("outlet", "")):
                     continue
                 seen.add(k)
                 items.append({**it, "published": it["published"].isoformat() if it["published"] else "",

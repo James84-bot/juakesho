@@ -215,6 +215,18 @@ class FilePhoto(unittest.TestCase):
         self.assertEqual(posted._originals("https://k.test/plain.jpg"), ["https://k.test/plain.jpg"])
 
 
+class Colour(unittest.TestCase):
+    def test_archive_black_and_white_photos_are_not_a_place_today(self):
+        import photos
+        from PIL import Image
+        def img(colour):
+            b = io.BytesIO()
+            Image.new("RGB", (400, 300), colour).save(b, "JPEG")
+            return b.getvalue()
+        self.assertFalse(photos.in_colour(img((128, 128, 128))))
+        self.assertTrue(photos.in_colour(img((40, 120, 60))))
+
+
 class Band(unittest.TestCase):
     def test_small_news_photos_are_shown_as_a_sharp_band(self):
         import tempfile

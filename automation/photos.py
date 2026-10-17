@@ -399,6 +399,18 @@ def event_photo(post: dict) -> tuple[bytes, dict] | None:
     return None
 
 
+def in_colour(data: bytes) -> bool:
+    """False for a black-and-white or sepia photo (mean saturation under 8%)."""
+    try:
+        import io
+        from PIL import Image, ImageStat
+        with Image.open(io.BytesIO(data)) as im:
+            sat = ImageStat.Stat(im.convert("RGB").resize((160, 160)).convert("HSV")).mean[1]
+        return sat >= 0.08 * 255
+    except Exception:
+        return True
+
+
 def full_name(who: str) -> str:
     """'Energy CS Opiyo Wandayi' -> 'Opiyo Wandayi'; '' when `who` names no person."""
     surname = _surname(who)
@@ -485,12 +497,16 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             return None
         order = (commons, openverse, pexels) if LOCAL.search(query) else (pexels, openverse, commons)
         if post.get("template") == "kenya":   # the real place itself: documentary sources only, never stock or a symbol
-            tries = [(commons, query), (openverse, query)]
+            # newest first: a finished project must be shown as it is today, not at a 1929 opening
+            tries = [(commons_newest, query), (commons, query), (openverse, query)]
             for source, q in tries:
                 try:
                     got = source(q, post["id"])
                 except Exception as e:
                     _note(f"  photo source {source.__name__} failed for {post.get('id')}: {e}")
+                    got = None
+                if got and not in_colour(got[0]):
+                    _note(f"  photo for {post['id']} skipped: black and white (an archive photo, not the place today)")
                     got = None
                 if got:
                     got[1]["kind"] = "place"
