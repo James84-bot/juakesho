@@ -277,6 +277,33 @@ def performance(cues: list[dict], duration: float, seed: int = 0) -> list[tuple[
     return out
 
 
+def render_video(idle: Path, mouth: dict | None, cues: list[dict], duration: float, size: tuple[int, int],
+                 out_dir: Path, seed: int = 0) -> int:
+    """Lip sync over real video: every frame of the idle clip keeps his real breathing, blinks and head movement;
+    only the jaw and lips are moved to the voice (no synthetic blinks or sway: the video has the real ones)."""
+    import mediapipe as mp
+    out_dir.mkdir(parents=True, exist_ok=True)
+    perf = performance(cues, duration, seed)
+    base = base_frames(idle, size, len(perf))
+    last = None
+    with mp.solutions.face_mesh.FaceMesh(static_image_mode=False, refine_landmarks=True, max_num_faces=1) as fm:
+        for i, ((jaw, width, teeth, _, _), img) in enumerate(zip(perf, base)):
+            res = fm.process(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+            if res.multi_face_landmarks:
+                h, w = img.shape[:2]
+                lm = np.array([[p.x * w, p.y * h] for p in res.multi_face_landmarks[0].landmark], np.float32)
+                last = lm if last is None else 0.6 * lm + 0.4 * last      # steady landmarks: no jitter
+            if last is None:
+                cv2.imwrite(str(out_dir / f"p{i:05d}.jpg"), img)
+                continue
+            face = Face(img=img, lm=last, mouth_w=float(np.linalg.norm(last[291] - last[61])), centre=tuple(last[1]))
+            if mouth:
+                face.extra["mouth"] = mouth
+            SHAPES_TEETH["current"] = teeth
+            cv2.imwrite(str(out_dir / f"p{i:05d}.jpg"), frame(face, jaw, width, 0.0), [cv2.IMWRITE_JPEG_QUALITY, 92])
+    return len(perf)
+
+
 def render(face: Face, cues: list[dict], duration: float, out_dir: Path, seed: int = 0) -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     perf = performance(cues, duration, seed)
@@ -293,8 +320,8 @@ PIP_W, PIP_H = 460, 560          # the presenter's window on a 1080x1920 Reel
 MARGIN = 1.12                    # rendered a little larger so head motion never shows an edge
 
 
-def head_crop(img: np.ndarray, face: Face, size: tuple[int, int]) -> np.ndarray:
-    """Head and shoulders, the face a little above centre, scaled to `size` (w, h)."""
+def crop_box(face: Face, size: tuple[int, int]) -> tuple[int, int, int, int]:
+    """Head and shoulders, the face a little above centre: (x0, y0, x1, y1) in the source, at size's shape."""
     lm = face.lm
     top, chin = lm[10][1], lm[152][1]
     fh = chin - top
@@ -303,12 +330,40 @@ def head_crop(img: np.ndarray, face: Face, size: tuple[int, int]) -> np.ndarray:
     box_w = box_h * w / h
     cx, cy = lm[1][0], top + fh * 0.62
     x0, y0 = int(round(cx - box_w / 2)), int(round(cy - box_h * 0.47))
-    x1, y1 = int(round(x0 + box_w)), int(round(y0 + box_h))
+    return x0, y0, int(round(x0 + box_w)), int(round(y0 + box_h))
+
+
+def apply_box(img: np.ndarray, box: tuple[int, int, int, int], size: tuple[int, int]) -> np.ndarray:
+    x0, y0, x1, y1 = box
     pad = max(0, -x0, -y0, x1 - img.shape[1], y1 - img.shape[0])
-    if pad:
+    if pad:   # a face near the edge: extend the picture rather than show black
         img = cv2.copyMakeBorder(img, pad, pad, pad, pad, cv2.BORDER_REPLICATE)
         x0, y0, x1, y1 = x0 + pad, y0 + pad, x1 + pad, y1 + pad
-    return cv2.resize(img[y0:y1, x0:x1], (w, h), interpolation=cv2.INTER_AREA)
+    return cv2.resize(img[y0:y1, x0:x1], size, interpolation=cv2.INTER_AREA)
+
+
+def head_crop(img: np.ndarray, face: Face, size: tuple[int, int]) -> np.ndarray:
+    """Head and shoulders, scaled to `size` (w, h)."""
+    return apply_box(img, crop_box(face, size), size)
+
+
+def base_frames(video: Path, size: tuple[int, int], need: int) -> list[np.ndarray]:
+    """Frames of the idle clip (him sitting, breathing, blinking, mouth closed), cropped with ONE box so his real
+    movement shows, played forward then backward as often as the voice needs (no jump at the loop)."""
+    cap = cv2.VideoCapture(str(video))
+    frames = []
+    while True:
+        ok, f = cap.read()
+        if not ok:
+            break
+        frames.append(f)
+    cap.release()
+    if len(frames) < FPS:
+        raise ValueError("the idle video is shorter than a second")
+    box = crop_box(detect(frames[0]), size)
+    frames = [apply_box(f, box, size) for f in frames]
+    loop = frames + frames[-2:0:-1]
+    return [loop[i % len(loop)] for i in range(need)]
 
 
 def talk(portrait: Path, wav: Path, script: str, out: Path, ff: str, seed: int = 0) -> Path:
@@ -330,8 +385,12 @@ def talk(portrait: Path, wav: Path, script: str, out: Path, ff: str, seed: int =
             print(f"  mouth photo not used: {e}")
     dur = presenter.seconds(wav)
     cues = presenter.cues(wav, script)
+    idle = portrait.with_name("idle.mp4")                   # optional: a silent clip of him, for real motion
     with tempfile.TemporaryDirectory() as t:
-        n = render(face, cues, dur, Path(t), seed)
+        if idle.exists():
+            n = render_video(idle, face.extra.get("mouth"), cues, dur, big, Path(t), seed)
+        else:
+            n = render(face, cues, dur, Path(t), seed)
         ox, oy = (big[0] - PIP_W) // 2, (big[1] - PIP_H) // 2
         subprocess.run([ff, "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", str(Path(t) / "p%05d.jpg"),
                         "-vf", f"crop={PIP_W}:{PIP_H}:{ox}:{oy},format=yuv420p", "-frames:v", str(n),
