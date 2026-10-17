@@ -145,6 +145,10 @@ W5_TEMPLATES = {"sauti", "straight", "promise", "money", "scorecard", "kumbuka",
 #   Against: campaigns to remove or reject a person ("...MustGo", "Wantam", "OneTerm"), and mocking nicknames.
 #   Personal insults ("tapeli", "conman", "mwizi": name-calling, and the defamation risk sits with us).
 # Issue tags (#FinanceBill2026, #HousingLevy, #EndAbductions) are fine: they name what people search, not a side.
+# Hashtags never carry a politician's name: a tag like #RutoDevelopmentRecord or #RailaLegacy is someone's PR
+POLITICIAN_TAG = re.compile(r"ruto|raila|odinga|gachagua|riggy|kalonzo|musyoka|mudavadi|wetangula|kindiki|matiang|"
+                            r"maraga|sifuna|natembeya|sakaja|uhuru|kenyatta|karua|nyoro|kahiga|joho|ichung|kuria|"
+                            r"cherargei|murkomen|mbadi|duale|omtatah|babu|owino|salasya|mwaura|kaluma|wandayi", re.I)
 PARTISAN_TAG = re.compile(r"delivers|tutam|ikombele|iko ?mbele|imara|tosha|forever|mustgo|must ?go|mustfall|wantam|"
                           r"one ?term|oneterm|kasongo|zakayo|riggy|wanjiku ?sacco|uda ?ni|odm ?ni|ruto ?out|raila ?out|"
                           r"gachagua ?out|tapeli|conman|mwizi|wezi|thief|thieves|liar|murderer|killer|traitor|msaliti", re.I)
@@ -239,6 +243,47 @@ NOT_NAMES = {"The", "This", "That", "These", "Your", "Just", "Check", "Real", "N
 
 
 FRAGMENT_START = re.compile(r"^\W*(meanwhile|yet|and|but|so|too bad|the catch|plot twist|imagine|guess what)\b", re.I)
+
+
+# A fact must be traceable: a headline the system collected (its link is in `source_links`), a web address that
+# opens, or a named Act or the Constitution. "Political party announcements" or "county reports" is not a source.
+VERIFY_LINKS = False   # drafting on GitHub turns this on: every web address in a source is opened once
+_LINK_OK: dict[str, bool] = {}
+STATUTE = re.compile(r"\b(constitution of kenya|[A-Z][A-Za-z()' ]+ act,? (19|20)\d\d)", re.I)
+URL = re.compile(r"(?:https?://)?(?:[a-z0-9-]+\.)+(?:ke|org|com|africa|int|net|gov|edu|info|news|co|uk|io)\b(?:/[^\s,;)]*)?",
+                 re.I)
+# where an invented fact does damage: accountability, polls about the news, and the showcase
+SOURCE_CHECKED = {"money", "straight", "promise", "sauti", "kumbuka", "scorecard", "kenya", "glasspoll"}
+
+
+def link_opens(url: str) -> bool:
+    if url not in _LINK_OK:
+        import urllib.request
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (KenyansAreAsking source check)"})
+            with urllib.request.urlopen(req, timeout=12) as r:
+                _LINK_OK[url] = r.status < 400
+        except Exception as e:   # 403 from a bot wall still proves the page exists
+            _LINK_OK[url] = getattr(e, "code", 0) in {401, 403, 405, 429}
+    return _LINK_OK[url]
+
+
+def source_problem(post: dict) -> str:
+    """Why the post's source can't be checked by a reader ('' when it can)."""
+    text = " ".join(str(post.get(k) or "") for k in ("source", "claim_source"))
+    if post.get("source_links"):
+        return ""
+    urls = URL.findall(text)
+    if urls:
+        if VERIFY_LINKS:
+            dead = [u for u in urls if not link_opens(u if u.lower().startswith("http") else "https://" + u)]
+            if dead:
+                return f"source link does not open ({dead[0][:80]}): use a real page or a headline id"
+        return ""
+    if STATUTE.search(text):
+        return ""
+    return ("source must be a headline id (n3), the exact web address of the official record, or a named Act; "
+            "a description like 'county reports' can't be checked")
 
 
 def fragment(line: str) -> str:
@@ -481,7 +526,7 @@ def check(post: dict) -> Report:
     caption = post.get("caption", "")
     if caption:
         tags = re.findall(r"#[A-Za-z]\w*", caption)
-        bad = [t for t in tags if PARTISAN_TAG.search(t)]
+        bad = [t for t in tags if PARTISAN_TAG.search(t) or POLITICIAN_TAG.search(t)]
         if bad:
             rep.errors.append(f"hashtag is a politician's PR or a personal insult ({', '.join(bad)}): never our tags")
         if len(tags) > 3:
@@ -501,6 +546,11 @@ def check(post: dict) -> Report:
                  if m not in SAFE_NAMES and not set(m.split()) & NOT_NAMES}
         if names:
             rep.warnings.append(f"possible named person(s): {', '.join(sorted(names))}. Civic posts target systems, not people.")
+    if (tpl in SOURCE_CHECKED or post.get("series") in CIVIC_SERIES) and post.get("source") \
+            and "rehearsal sample" not in str(post.get("source")).lower():
+        problem = source_problem(post)
+        if problem:
+            rep.errors.append(problem)
     if tpl in FACT_TEMPLATES and not post.get("source"):
         rep.warnings.append("states facts but has no `source`; verify before approving")
     if re.search(r"\b(19|20)\d{2}\b|\d+%|\bksh\s?\d", low) and not post.get("source"):
