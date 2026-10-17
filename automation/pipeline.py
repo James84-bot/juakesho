@@ -1386,6 +1386,8 @@ def prune(keep_weeks: int = KEEP_WEEKS) -> list[str]:
 # 7. Learn — pull Instagram results so the next week's drafts improve
 # ---------------------------------------------------------------------------
 LEARN_METRICS = "reach,saved,shares,comments,likes"
+# Asked for separately: a Reel-only metric must never cost us the main numbers if Meta refuses it for a post
+REEL_METRICS = "ig_reels_avg_watch_time"
 
 
 def learn(weeks_back: int = 4) -> dict:
@@ -1408,10 +1410,20 @@ def learn(weeks_back: int = 4) -> dict:
                 log(f"insights unavailable for {key}: {e}")
                 continue
             m = {d["name"]: (d.get("values") or [{}])[0].get("value", 0) for d in res.get("data", [])}
+            if p.get("reel"):   # how long people stayed: the measure of the skip rate we can get from the API
+                try:
+                    rr = http("GET", f"https://graph.facebook.com/{version}/{p['ig_id']}/insights?"
+                                     + urllib.parse.urlencode({"metric": REEL_METRICS, "access_token": token}))
+                    ms = {d["name"]: (d.get("values") or [{}])[0].get("value", 0) for d in rr.get("data", [])}
+                    if ms.get("ig_reels_avg_watch_time") is not None:
+                        m["avg_watch_s"] = round(float(ms["ig_reels_avg_watch_time"]) / 1000, 1)
+                except (RuntimeError, ValueError, TypeError) as e:
+                    log(f"watch time unavailable for {key}: {str(e)[:120]}")
             reach = max(1, m.get("reach", 0))
             score = round((m.get("saved", 0) * 3 + m.get("shares", 0) * 4 + m.get("comments", 0) * 2
                            + m.get("likes", 0)) * 1000 / reach, 1)
-            rows.append({"id": key, "series": p["template"], "lane": p.get("lane", "-"), "score": score, **m})
+            rows.append({"id": key, "series": p["template"], "lane": p.get("lane", "-"), "score": score,
+                         "opening": str((p.get("beats") or [""])[0]).replace("*", "")[:90], **m})
     rows.sort(key=lambda r: r["score"], reverse=True)
     out = {"updated": now().isoformat(), "top": rows[:5], "bottom": rows[-3:] if len(rows) > 5 else [], "all": rows}
     STATE.mkdir(exist_ok=True)

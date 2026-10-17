@@ -503,8 +503,16 @@ def learnings_text() -> str:
     data = json.loads(f.read_text(encoding="utf-8"))
     top = "\n".join(f"- {x['series']} / {x['lane']}: score {x['score']} ({x['id']})" for x in data.get("top", []))
     low = "\n".join(f"- {x['series']} / {x['lane']}: score {x['score']} ({x['id']})" for x in data.get("bottom", []))
+    watched = sorted((x for x in data.get("all", []) if x.get("avg_watch_s") is not None and x.get("opening")),
+                     key=lambda x: x["avg_watch_s"], reverse=True)
+    held = ""
+    if len(watched) >= 4:   # the openings that kept people watching, and the ones they swiped past
+        held = ("\nREEL OPENINGS THAT HELD VIEWERS (average seconds watched)\n"
+                + "\n".join(f"- {x['avg_watch_s']}s: {x['opening']}" for x in watched[:3])
+                + "\nOPENINGS THEY SKIPPED\n" + "\n".join(f"- {x['avg_watch_s']}s: {x['opening']}" for x in watched[-3:])
+                + "\nOpen the way the first ones did.")
     return (f"\nWHAT WORKED LATELY (score = saves*3 + shares*4 + comments*2 + likes, per 1,000 reached)\n{top}"
-            f"\nWHAT DIDN'T\n{low}\nLean into what worked; try a new angle on what didn't.\n")
+            f"\nWHAT DIDN'T\n{low}\nLean into what worked; try a new angle on what didn't.\n{held}\n")
 
 
 def music_menu() -> str:

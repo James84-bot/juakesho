@@ -50,7 +50,7 @@ html, body { background: #777; }
 .photo--blur { filter: blur(30px) brightness(.5) saturate(1.1) !important; left: -80px; right: -80px; top: -80px;
   height: calc(var(--ph) + 160px); }
 .photo-band { position: absolute; left: 0; top: var(--band-top, 124px); width: 100%; object-fit: cover; z-index: 1;
-  height: min(var(--bh), calc(var(--ph) - var(--band-top, 124px)));
+  height: min(var(--bh), calc(var(--ph) - var(--band-top, 124px) - 150px));   /* ends where the words begin */
   -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 82%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0, #000 82%, transparent 100%); }
 .has-photo .layer, .top, .foot { z-index: 2; }
 /* Photo credit: small, vertical, in the right margin over the photo, clear of the text column */
