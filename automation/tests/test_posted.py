@@ -214,5 +214,17 @@ class FilePhoto(unittest.TestCase):
         self.assertEqual(posted._originals("https://k.test/plain.jpg"), ["https://k.test/plain.jpg"])
 
 
+class Band(unittest.TestCase):
+    def test_small_news_photos_are_shown_as_a_sharp_band(self):
+        import tempfile
+        import render
+        with tempfile.TemporaryDirectory() as d:
+            small, big = Path(d) / "s.jpg", Path(d) / "b.jpg"
+            small.write_bytes(jpeg(800, 535))
+            big.write_bytes(jpeg(1600, 1067))
+            self.assertEqual(render.photo_band(small, 1080), 722)   # 800px wide: blown up 2-4x if it filled the frame
+            self.assertEqual(render.photo_band(big, 1080), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
