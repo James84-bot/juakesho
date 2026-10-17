@@ -234,7 +234,7 @@ def _all_text(post: dict) -> str:
     return " ".join(parts)
 
 
-SAFE_NAMES = {"Kenyans Are Asking", "Jua Kesho", "Bwana Ahadi", "Mama Mboga", "Google Translate", "National Assembly", "Mombasa Gate Bridge",
+SAFE_NAMES = {"Kenya on Record", "Jua Kesho", "Bwana Ahadi", "Mama Mboga", "Google Translate", "National Assembly", "Mombasa Gate Bridge",
               "Controller Budget", "Auditor General", "Follow The Money", "See Through It"}
 
 
@@ -260,7 +260,7 @@ def link_opens(url: str) -> bool:
     if url not in _LINK_OK:
         import urllib.request
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (KenyansAreAsking source check)"})
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (KenyaOnRecord source check)"})
             with urllib.request.urlopen(req, timeout=12) as r:
                 _LINK_OK[url] = r.status < 400
         except Exception as e:   # 403 from a bot wall still proves the page exists

@@ -1,5 +1,5 @@
 """
-build_book.py — builds the Kenyans Are Asking brand book as one self-contained HTML file.
+build_book.py — builds the Kenya on Record brand book as one self-contained HTML file.
 
 Everything is read from the live system (brand.json palette, logo SVGs, rendered exports),
 so the book always matches what the pipeline produces.
@@ -52,28 +52,28 @@ FAMILIES = [
 ]
 
 SERIES = [
-    ("Mon 07:30", "Sauti ya Mwananchi · Set It Straight", "sauti", "What Kenyans are already saying about the week's biggest story, over a real photo, with the receipt and the one thing to do."),
-    ("Tue 12:45", "Follow the Money · Set It Straight", "money", "One public-money number on red, sourced, and how to check it yourself; or a politician's claim against the facts."),
+    ("Mon 07:30", "The People's Voice · Set It Straight", "sauti", "The week's biggest story in one plain sentence over a real photo, with the source and a clear demand."),
+    ("Tue 12:45", "Kenya at its best", "kenya", "A real Kenyan place at its best: the photo or footage of the place itself and one sourced fact."),
     ("Wed 18:30", "Promise Tracker · The Chapter Six Test", "promise", "A leader's promise against the record, or a leader measured against the Constitution's integrity standard. Every side, same tests."),
-    ("Thu 19:30", "Sauti ya Mwananchi · Scam alert", "usiibiwe", "The people's voice again, and the scams hitting Kenyans now."),
+    ("Thu 19:30", "Your Say", "glasspoll", "A poll on the week's biggest issue, posted as a Reel; people answer A or B in the comments."),
     ("Fri 17:00", "Same Standard", "straight", "The opposition held to the same test: their claims, their divisive talk, their own records."),
-    ("Sat 11:00", "Credit Where Due", "promise", "On green: one thing a leader or the government actually delivered, with receipts. Credit makes criticism believable."),
+    ("Sat 11:00", "Built in Kenya", "kenya", "A finished, working public project, shown as it is today, with one sourced fact. Credit makes criticism believable."),
     ("Sun 18:00", "Your Say", "glasspoll", "A poll on the week's biggest issue. The answers pick next week's topics."),
-    ("Daily", "The hot post · Tazama Hii", "sauti", "Every morning the system ranks what Kenya is on, writes one post on the biggest story and sends it for approval in time for the evening. Clips you send become Tazama Hii Reels."),
+    ("Daily", "The hot post · Watch This", "sauti", "Every morning the system ranks what Kenya is on, writes one post on the biggest story and sends it for approval in time for the evening. Clips you send become Watch This Reels."),
 ]
 
 GLOSSARY = [
-    ("Kenyans Are Asking", "name", "The questions every Kenyan is already asking the people in power, asked out loud, with receipts."),
-    ("The ordinary Kenyan, asking with receipts.", "line", "Under the name on every profile."),
+    ("Kenya on Record", "name", "What leaders promised and did, what our money paid for, and what Kenya has built: checked and kept on record."),
+    ("Facts today. A better Kenya tomorrow.", "line", "Under the name on every profile."),
     ("Kenyans demand: …", "sign-off", "Every accountability post ends with one concrete demand to a named office, and the one thing to do."),
     ("Usiibiwe", "series", "“Don't get robbed.” Scam alerts, on the red background."),
     ("Promise Tracker", "series", "A leader's own promise against the record. Kept, partly kept, stalled or broken."),
     ("Set It Straight", "series", "Our answer to falsehoods and put-downs: the claim, quoted and sourced, then the facts."),
     ("Follow the Money", "series", "One public-money number, sourced, and how to check it yourself."),
-    ("Tazama Hii", "series", "A real clip someone filmed, credited, with our take around it."),
-    ("Hatutasahau", "series", "“We won't forget.” Documented events, on their anniversaries."),
+    ("Watch This", "series", "A real clip someone filmed, credited, with our take around it."),
+    ("We Remember", "series", "Documented events, on their anniversaries."),
     ("Your Say", "series", "The Sunday poll on the week's biggest issue."),
-    ("Credit Where Due", "series", "Applause for what was genuinely delivered, with receipts, whoever delivered it."),
+    ("Credit Where Due", "series", "Applause for what was genuinely delivered, with proof, whoever delivered it."),
     ("Same Standard", "rule", "Government and opposition get the same test. Ridicule the decision and the record, never the person."),
     ("Kenyan English", "voice", "Plain Kenyan English. Kiswahili only where a Kenyan would really say it, never as decoration. No numbering, no shouting."),
 ]
@@ -87,7 +87,7 @@ MONEY = [
 ]
 
 DAY_90 = [
-    ("Weeks 1–2", "Claim @kenyansareasking everywhere. Profiles from the kit, the WhatsApp Channel and the Telegram bot. First posts."),
+    ("Weeks 1–2", "Claim the Kenya on Record name everywhere. Profiles from the kit, the WhatsApp Channel and the Telegram bot. First posts."),
     ("Weeks 3–6", "Autopilot on: daily posts, about 15 minutes of approvals. Let the Sunday poll choose topics."),
     ("Weeks 7–10", "Reels every day; Tazama Hii clips from followers. Keep what earns shares and saves, drop the rest."),
     ("Weeks 11–13", "Apply for Facebook monetisation and the YouTube Partner Program. Build the sponsor deck from real reach."),
@@ -121,8 +121,8 @@ def pair(fg: str, bg: str, label: str) -> str:
 
 
 def build_body() -> str:
-    lock_light = svg_inline(LOGO / "wordmark-on-light.svg", "logo logo--light", "Kenyans Are Asking")
-    lock_dark = svg_inline(LOGO / "wordmark-on-dark.svg", "logo logo--dark", "Kenyans Are Asking")
+    lock_light = svg_inline(LOGO / "wordmark-on-light.svg", "logo logo--light", "Kenya on Record")
+    lock_dark = svg_inline(LOGO / "wordmark-on-dark.svg", "logo logo--dark", "Kenya on Record")
     ink, shuka, chai = P["ink"], P["shuka"], P["chai"]
     ramps = "".join(ramp_html(*f) for f in FAMILIES)
     pairs = "".join([
@@ -138,7 +138,7 @@ def build_body() -> str:
 
     def thumb(pid: str | None, tpl: str, w: int = 220) -> str:
         post = next((p for p in POSTS if (pid and p["id"] == pid) or (not pid and p["template"] == tpl)), None)
-        if not post:
+        if not post or not (EXP / "posts" / (post["id"] + ".png")).exists():   # not rendered yet: no thumbnail
             return ""
         h = 391 if post.get("size") == "story" else 275
         return f'<img src="{img_uri(EXP / "posts" / (post["id"] + ".png"), w)}" alt="{e(tpl)} example" width="{w // 2}" height="{h // 2 if w == 220 else h}">'
@@ -184,9 +184,9 @@ def build_body() -> str:
 
 <main class="book">
   <section class="hero" aria-labelledby="t-hero">
-    <h1 id="t-hero">{lock_light}{lock_dark}<span class="sr">Kenyans Are Asking</span></h1>
+    <h1 id="t-hero">{lock_light}{lock_dark}<span class="sr">Kenya on Record</span></h1>
     <p class="tagline">{e(B['tagline_sw'])} <span>{e(B['tagline_en'])}</span></p>
-    <p class="lede">An independent Kenyan channel for 18–30s: the general knowledge every Kenyan should have, politics with receipts, money, scams and the future. Sourced, fearless, non-partisan, clean. The revolution we drive is an informed Kenya.</p>
+    <p class="lede">An independent Kenyan channel for 18–30s: what leaders promised and did, what our money paid for, and what Kenya has built, all with sources. Fair to every side, clear, and clean.</p>
   </section>
 
   <section class="manifesto" aria-label="Manifesto">
@@ -197,18 +197,18 @@ def build_body() -> str:
 
   <section id="idea" class="sec" aria-labelledby="t-idea">
     <p class="kicker">01</p><h2 id="t-idea">The idea</h2>
-    <p class="big">Ordinary Kenyans asking the people in power the questions everyone is already asking, with receipts. A real photo, one plain headline, the facts, the question, and the one thing to do today. Not with any government or party: every side, same standard.</p>
+    <p class="big">Informed Kenyans holding the people in power to account with proof, and showing what Kenya gets right. A real photo, one plain headline, the facts, and a clear demand to the office responsible. Not with any government or party: every side, same standard.</p>
     <ul class="pillars">
-      <li><b>Ask</b><span>One clear question per post, to a named office, with the one thing to do.</span></li>
+      <li><b>Demand</b><span>One concrete demand per accountability post, to a named office, with the one thing to do.</span></li>
       <li><b>Prove</b><span>Every number and claim carries a source. Accuracy is what makes us fearless.</span></li>
       <li><b>Belong</b><span>Every Kenyan welcome, whatever their party, tribe or county.</span></li>
-      <li><b>Clean</b><span>Grown-up and workplace-safe. Edgy about ideas, never cruel, never dirty.</span></li>
+      <li><b>Proud</b><span>Kenya at its best and what Kenya builds, shown with the same care as what goes wrong.</span></li>
     </ul>
   </section>
 
   <section id="logo" class="sec" aria-labelledby="t-logo">
     <p class="kicker">02</p><h2 id="t-logo">Logo</h2>
-    <p class="note">The mark is many voices, one question: three speech bubbles in the flag&rsquo;s black, red and green, separated by its white bands, the front one carrying the question mark. Every Kenyan asking together, in the national colours only, so no single party colour leads. The wordmark is KENYANS ARE ASKING in Inter Tight Black. All files are outlined SVGs in <code>assets/logo/</code>.</p>
+    <p class="note">The mark is a record: a sheet with a folded corner in the flag&rsquo;s black, with a tick for what has been checked, and the flag&rsquo;s red and green bands, with their white edges, across it. National colours only, so no party colour leads. The wordmark is KENYA ON RECORD in Inter Tight Black. All files are outlined SVGs in <code>assets/logo/</code>.</p>
     <div class="logos">
       <div class="lg lg--night">{svg_inline(LOGO / 'wordmark-on-dark.svg', 'lg-svg', 'Wordmark on night')}</div>
       <div class="lg lg--paper">{svg_inline(LOGO / 'wordmark-on-light.svg', 'lg-svg', 'Wordmark on paper')}</div>
@@ -276,15 +276,15 @@ def build_body() -> str:
   </section>
 
   <section id="voice" class="sec" aria-labelledby="t-voice">
-    <p class="kicker">08</p><h2 id="t-voice">Voice: we are the people</h2>
-    <p class="big">Kenyans don't react to raw knowledge. They react to their own thoughts said out loud. So we start from what people already feel, speak as them, prove it with one fact, and say the dry line everyone was thinking.</p>
+    <p class="kicker">08</p><h2 id="t-voice">Voice: plain, informed, fair</h2>
+    <p class="big">Our readers follow the news. We write like a sharp Kenyan news editor: simple words in complete, correct sentences, the facts they don&rsquo;t already have, and one clear demand. No slang, no sarcasm, no meme phrases.</p>
     <ol class="cards cards--num">
-      <li><b>The feeling</b><span>What Kenyans already say in the matatu, on X, in the WhatsApp group: the shrinking payslip, the clinic with no drugs, the road launched three times.</span></li>
-      <li><b>The receipt</b><span>One hard, sourced fact that proves the feeling right, or honestly corrects it.</span></li>
-      <li><b>The sarcasm</b><span>One dry line at the system or the decision: &ldquo;We're still waiting for the receipt.&rdquo; Never at a person's character.</span></li>
-      <li><b>What we do</b><span>A legal action, or a question that makes people comment and share.</span></li>
+      <li><b>The news</b><span>The whole story in one sentence: who did what, with the number.</span></li>
+      <li><b>The proof</b><span>One hard, sourced fact: the report, the page, the date, the link.</span></li>
+      <li><b>What it means</b><span>Who pays or what changes for ordinary Kenyans, with the number.</span></li>
+      <li><b>The demand</b><span>&ldquo;Kenyans demand: the Treasury publishes the full list of lenders.&rdquo; Lawful, possible, to a named office.</span></li>
     </ol>
-    <p class="note" style="margin-top:22px">We say &ldquo;we&rdquo;, &ldquo;sisi&rdquo;, &ldquo;tunalipa&rdquo;, never &ldquo;you should&rdquo;. Headlines can be Sheng or Kiswahili when that's how people say it; the fact line stays in plain English. The words that hit hardest go on the <mark style="background:{P['shuka']['600']};color:#fff;padding:0 .15em">red marker</mark>, one per headline.</p>
+    <p class="note" style="margin-top:22px">We say &ldquo;we&rdquo; and &ldquo;our money&rdquo;, never &ldquo;you should&rdquo;. Plain English throughout; a Kiswahili word only where every Kenyan would say it that way.</p>
     <div class="doit">
       <div class="yes"><span class="lbl">Say it like this</span><p>&ldquo;Fake job offers on WhatsApp: real jobs never ask you to pay to start.&rdquo; Plain topic words, a fact, something to do.</p></div>
       <div class="no"><span class="lbl">Never like this</span><p>&ldquo;People from [place] are the ones who steal.&rdquo; No blaming groups, no talking down, no vague teaser headlines.</p></div>
@@ -293,14 +293,14 @@ def build_body() -> str:
       <li><b>Attract</b><span>First words and the photo open a question, a surprise or instant recognition. Specific beats general.</span></li>
       <li><b>Sustain</b><span>Each line pays off the last and opens the next. The most surprising fact goes second.</span></li>
       <li><b>Reward</b><span>Something to use, say or send within the hour. That's why they come back.</span></li>
-      <li><b>Deadpan</b><span>&ldquo;Only Sh304bn idle. Minor.&rdquo; Lands because the number is real and sourced.</span></li>
-      <li><b>Hype</b><span>Go loud for African wins, with names, places and years.</span></li>
+      <li><b>Calm</b><span>The facts carry the weight. No jokes on civic posts, no exclamation marks.</span></li>
+      <li><b>Pride</b><span>Show Kenya&rsquo;s places and finished projects with names, places and years.</span></li>
       <li><b>Punch up</b><span>Systems, tactics, decisions of the powerful. Never down at victims, ordinary people or groups.</span></li>
     </ul>
-    <h3 class="sub">Post like Kenyans post</h3>
-    <p class="note">We are informed ordinary Kenyans, not a media house. Short lines, English, Kiswahili and Sheng mixed the way people text (&ldquo;Hii nchi bana.&rdquo; &ldquo;Kwani tunalipa ushuru ya nini?&rdquo;), dry KOT sarcasm (&ldquo;Very normal country.&rdquo;), receipts with the page and the link, one Kenyan-trend hashtag, and a question that gets people commenting. Tribeless, partyless: &ldquo;nothing for us without us&rdquo;. Never corporate (&ldquo;stay tuned&rdquo;, &ldquo;we're excited&rdquo;): the checker blocks it.</p>
-    <h3 class="sub">Sound human</h3>
-    <p class="note">Kenyans scroll past anything that smells of AI. Short lines, Sheng where natural, one strong opinion, uneven rhythm. No em dashes, no &ldquo;it's not just X, it's Y&rdquo;, no &ldquo;delve&rdquo;, &ldquo;navigate&rdquo;, &ldquo;unlock&rdquo; or &ldquo;pivotal&rdquo;: the checker blocks them. Real photos only, never AI images.</p>
+    <h3 class="sub">Sound natural</h3>
+    <p class="note">Informed ordinary Kenyans, not a media house and not a meme page. Complete sentences, natural English that any Kenyan of any age reads easily. No slang or internet shorthand.</p>
+    <h3 class="sub">Never sound machine-made</h3>
+    <p class="note">No em dashes, no &ldquo;it&rsquo;s not just X, it&rsquo;s Y&rdquo;, no &ldquo;delve&rdquo;, &ldquo;navigate&rdquo;, &ldquo;unlock&rdquo;. The checker blocks these before anything is sent for approval.</p>
     <dl class="glossary">{glossary}</dl>
   </section>
 
@@ -334,7 +334,7 @@ def build_body() -> str:
       <li><b>No favourites</b><span>Government and opposition, old names and new: one standard. That is what makes us untouchable.</span></li>
       <li><b>Hatutasahau</b><span>Protest killings, abductions, hired goons, deaths in custody: documented by KNCHR, IPOA, the courts or reputable media, date by date, with what accountability has followed. Anniversaries come up automatically.</span></li>
       <li><b>Church and state</b><span>Cash at the pulpit, clergy campaigning, public favours to religious bodies. We scrutinise the relationship, never faith or believers.</span></li>
-      <li><b>Keep the receipts</b><span>Every published post is logged with its exact text and sources in <code>state/evidence.jsonl</code>: the defence file if anyone takes us to court.</span></li>
+      <li><b>Keep the record</b><span>Every published post is logged with its exact text and sources in <code>state/evidence.jsonl</code>: the defence file if anyone takes us to court.</span></li>
     </ul>
     <h3 class="sub">Names people relate to</h3>
     <p class="note">Kenyans already have names for their leaders, and those names stop the scroll. We use them by the rules in <code>content/nicknames.json</code>, which the writer reads and the checker enforces. The real name and office are always in the same post.</p>
@@ -345,7 +345,7 @@ def build_body() -> str:
 
   <section id="motion" class="sec" aria-labelledby="t-motion">
     <p class="kicker">11</p><h2 id="t-motion">Motion &amp; sound</h2>
-    <p class="note">Every post ships as a 9:16 Reel told in <b>beats</b>: 3&ndash;6 lines of at most 8 words, one at a time, full screen over the real photo. Hook, receipt, what it means for us, the sting, the action. Words slam in, the hardest word lands on the red marker, a bar counts down each line. No paragraphs, ever.</p>
+    <p class="note">Every post ships as a 9:16 Reel told in <b>beats</b>: 3&ndash;5 complete sentences, one at a time, over the real photo or real footage. The first line is the whole news and is on screen from the first frame; then the proof, what it means, and the demand. The hardest word lands on the red marker; a bar counts down each line.</p>
     <div class="reels">{reel_strip}</div>
     <ul class="cards">
       <li><b>Trending sounds</b><span>The strongest reach. Tap &ldquo;🎵 I'll post it&rdquo; on Telegram, then add a trending Kenyan sound in the app (the platform licenses it) and mute the original audio.</span></li>
@@ -390,7 +390,7 @@ def build_body() -> str:
 </main>
 
 <footer class="bookfoot">
-  <p><b>Kenyans Are Asking</b> brand book v3 · {e(B['tagline_en'])} · Built from <code>automation/</code>; re-run <code>build_book.py</code> after any brand change.</p>
+  <p><b>Kenya on Record</b> brand book v3 · {e(B['tagline_en'])} · Built from <code>automation/</code>; re-run <code>build_book.py</code> after any brand change.</p>
 </footer>
 """
 
@@ -529,7 +529,7 @@ FONTS = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=I
 
 def main() -> None:
     body = build_body()
-    head = f"<title>Kenyans Are Asking Brand Book</title>\n{FONTS}\n<style>{CSS}</style>"
+    head = f"<title>Kenya on Record Brand Book</title>\n{FONTS}\n<style>{CSS}</style>"
     out = ROOT / "brand-book"
     out.mkdir(exist_ok=True)
     if "--fragment" in sys.argv:

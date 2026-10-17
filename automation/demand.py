@@ -111,4 +111,4 @@ def prompt_block(top: int = 10) -> str:
     return ("\nWHAT KENYA IS ON THIS WEEK (ranked by demand: outlets + X trends + TV clips + searches)\n" + "\n".join(lines) +
             "\nGive Kenyans what they are already talking about: build most posts on stories 1-5, every post on the "
             "list unless it is an anniversary (Hatutasahau) or a deadline this week. Find the angle nobody has posted "
-            "yet: the receipt, the number, the promise they made last time. Put the rank in a `demand` field.\n")
+            "yet: the document, the number, the promise they made last time. Put the rank in a `demand` field.\n")

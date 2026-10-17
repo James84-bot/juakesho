@@ -18,7 +18,7 @@ NOW = dt.datetime(2026, 10, 12, 20, tzinfo=dt.timezone(dt.timedelta(hours=3)))
 class Tazama(unittest.TestCase):
     def test_caption_must_say_where_the_clip_came_from(self):
         self.assertEqual(tazama.parse_caption("ruhusa @kevo254 DM 12 Oct\nMCA road promise")["rights"], "permission")
-        self.assertEqual(tazama.parse_caption("yangu\nwe filmed the queue")["credit"], "Kenyans Are Asking")
+        self.assertEqual(tazama.parse_caption("yangu\nwe filmed the queue")["credit"], "Kenya on Record")
         q = tazama.parse_caption("nukuu Citizen TV https://youtu.be/x\nCS on teargas")
         self.assertEqual((q["rights"], q["credit"], q["source"]), ("quote", "Citizen TV", "https://youtu.be/x"))
         self.assertIsNone(tazama.parse_caption("check this out"))
@@ -78,14 +78,14 @@ class Action(unittest.TestCase):
         import pipeline
         post = {"id": "w-a", "template": "sauti", "kicker": "Taxpayers", "line": "We pay *4.25%* in levies.",
                 "fact": "1.5% housing levy and 2.75% SHIF, Finance Act 2023.", "source": "https://kra.go.ke",
-                "photo_query": "payslip Kenya", "message": "We pay levies every month.", "caption": "What do we get? #KenyansAreAsking"}
+                "photo_query": "payslip Kenya", "message": "We pay levies every month.", "caption": "What do we get? #KenyaOnRecord"}
         self.assertTrue(any("no `action`" in e for e in guard.check(post).errors))
         self.assertTrue(any("vague" in e for e in guard.check({**post, "action": "Stay informed."}).errors))
         ok = {**post, "action": "Ask your MP what the levy built: parliament.go.ke"}
         self.assertFalse([e for e in guard.check(ok).errors if "action" in e])
         cap = pipeline.caption_for(ok)
         self.assertIn("👉 Ask your MP", cap)
-        self.assertTrue(cap.rstrip().endswith("#KenyansAreAsking"))   # the action sits above the hashtags
+        self.assertTrue(cap.rstrip().endswith("#KenyaOnRecord"))   # the action sits above the hashtags
 
 
 class Fairness(unittest.TestCase):
@@ -112,7 +112,7 @@ class WhoWhereWhen(unittest.TestCase):
         post = {"id": "w-w", "template": "sauti", "kicker": "Taxpayers", "line": "The state owes *Sh7.35bn*.",
                 "fact": "State agencies owe Kenya Power Sh7.35bn, Business Daily.", "source": "https://x",
                 "photo_query": "power lines Kenya", "message": "m", "action": "Ask your MP: parliament.go.ke",
-                "caption": "c #KenyansAreAsking"}
+                "caption": "c #KenyaOnRecord"}
         errs = guard.check(post).errors
         self.assertTrue(all(any(f"no `{f}`" in e for e in errs) for f in ("who", "where", "when")))
         ok = {**post, "who": "National Treasury", "where": "National", "when": "12 Oct 2026"}

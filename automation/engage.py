@@ -1,6 +1,6 @@
 """
 engage.py — answering comments, the way the biggest Kenyan accounts do: fast, short, in the people's voice,
-with receipts. Every reply is drafted by the writer, checked by the guard, and approved by you on Telegram.
+with proof. Every reply is drafted by the writer, checked by the guard, and approved by you on Telegram.
 
 Runs with every tick (every 2 hours) once Instagram/Facebook are connected:
   1. fetch new comments on our recent posts (Instagram media + Facebook posts)
@@ -27,13 +27,13 @@ MAX_NEW = 15            # comments considered per run (keeps AI calls and your T
 LOOKBACK = dt.timedelta(days=7)
 REPLY_MAX = 280
 
-REPLY_RULES = """You answer comments for KENYANS ARE ASKING: informed ordinary Kenyans, not a media house. Reply the way
+REPLY_RULES = """You answer comments for KENYA ON RECORD: informed ordinary Kenyans, not a media house. Reply the way
 the best Kenyan accounts do: fast, short, warm, a bit of dry humour, in the commenter's language (English,
 Kiswahili or Sheng). One to three short sentences, max 280 characters. Never corporate.
 
 For each comment choose an action:
 - "reply": a question (answer it with the fact and where to check it), a good point (thank them, add one fact,
-  invite them to share), pushback or a wrong claim (calm correction with the receipt, never mocking the person),
+  invite them to share), pushback or a wrong claim (calm correction with the source, never mocking the person),
   someone hurting (empathy first, then one practical step).
 - "hide": tribal insults, hate against a group, sexual content, spam/scams, doxxing, calls to violence.
 - "flag": threats against us or anyone, or anything needing a human (legal threats, a victim's private details).

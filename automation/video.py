@@ -1,5 +1,5 @@
 """
-video.py — turns any Kenyans Are Asking post into a 9:16 Reel / TikTok / Short.
+video.py — turns any Kenya on Record post into a 9:16 Reel / TikTok / Short.
 
 The post's own HTML gets motion (staggered entrances, word-by-word headlines,
 sticker pops, a bobbing Jua, drifting aurora). Animations are paused and stepped
@@ -37,11 +37,11 @@ READ_WPS = 3.6            # on-screen reading speed for young, fast readers (wor
 SKIP_TEMPLATES = {"avatar", "banner"}
 # Serious topics get the urgent bed; good news keeps the kalimba-and-benga one
 URGENT_TEMPLATES = {"tazama", "sauti", "straight", "promise", "kumbuka", "scorecard", "money", "usiibiwe", "cap", "still"}
-KICKERS = {"sauti": "Sauti ya Mwananchi", "straight": "Set It Straight", "promise": "Promise Tracker", "kumbuka": "Hatutasahau",
+KICKERS = {"sauti": "The People's Voice", "straight": "Set It Straight", "promise": "Promise Tracker", "kumbuka": "We Remember",
            "scorecard": "Chapter Six Test", "money": "Follow the Money", "usiibiwe": "Scam alert", "cap": "Cap or No Cap?",
            "still": "Still in 2026?", "decode": "Decode", "spotlight": "Put Us On", "africa": "Made in Africa",
-           "hack": "Civic 101", "makanga": "Explained", "cover": "Kenyans Are Asking", "glasspoll": "Your Say", "build": "Build With Me",
-           "tazama": "Tazama Hii"}
+           "hack": "Civic 101", "makanga": "Explained", "cover": "Kenya on Record", "glasspoll": "Your Say", "build": "Build With Me",
+           "tazama": "Watch This"}
 
 
 def beat_reel(post: dict) -> dict | None:
@@ -51,7 +51,7 @@ def beat_reel(post: dict) -> dict | None:
         return None
     reel = {k: v for k, v in post.items() if k not in {"template", "size", "ink"}}
     reel.update(template="reel", size="story", beats=beats,
-                kicker=post.get("series") or KICKERS.get(post["template"], "Kenyans Are Asking"))
+                kicker=post.get("series") or KICKERS.get(post["template"], "Kenya on Record"))
     return reel
 
 
@@ -270,7 +270,7 @@ _STING: dict[str, Path] = {}
 
 def sting(ff: str, work: Path) -> Path | None:
     """The animated end card as an mp4 (made once per run): red pops, green pops, the black bubble drops in and
-    asks, then KENYANS ARE ASKING and the handle. A soft chime; silence underneath so it joins any Reel."""
+    asks, then KENYA ON RECORD and the handle. A soft chime; silence underneath so it joins any Reel."""
     if "mp4" in _STING and _STING["mp4"].exists():
         return _STING["mp4"]
     svg = ROOT / "assets" / "logo" / "sting.svg"
@@ -342,7 +342,7 @@ def make_reels(posts: list[dict], out_dir: Path) -> list[Path]:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description="Render Kenyans Are Asking Reels")
+    ap = argparse.ArgumentParser(description="Render Kenya on Record Reels")
     ap.add_argument("--file", default=str(HERE / "content" / "posts.json"))
     ap.add_argument("--only")
     ap.add_argument("--out", default=str(ROOT / "exports" / "reels"))
