@@ -318,7 +318,9 @@ INSTITUTION = re.compile(r"^(kenya\w*|nairobi|national|county|assembly|senate|pa
                          r"united|democratic|party|movement|alliance|coalition|republic|east|africa|african|"
                          r"constitution|act|bill|report|annual|statistical|bulletin|development|management|urban|"
                          r"housing|roads?|transport|infrastructure|sports|power|lighting|company|limited|corporation|"
-                         r"directorate|division|revenue|market|bridge|stadium)$", re.I)
+                         r"directorate|division|revenue|market|bridge|stadium|leaders?|political|politicians?|"
+                         r"officials?|residents?|traders?|students?|farmers?|members?|kenyans?|workers?|teachers?|"
+                         r"doctors?|nurses?|lawmakers?|mps|mcas|governors?|senators?|citizens?|voters?|youths?)$", re.I)
 
 
 def _surname(who: str) -> str:

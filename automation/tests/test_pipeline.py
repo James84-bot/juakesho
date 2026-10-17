@@ -307,6 +307,27 @@ class PublishTests(TempWeeks):
         self.assertFalse(any("/media" in c[0] for c in calls))
 
 
+class LearnTests(TempWeeks):
+    def test_reel_watch_time_is_learned_and_a_refusal_costs_nothing(self):
+        self.week([{"id": "r1", "status": "published", "ig_id": "1", "reel": True, "template": "sauti",
+                    "beats": ["KRA uncovers *Sh4bn* VAT fraud.", "b", "c"]},
+                   {"id": "r2", "status": "published", "ig_id": "2", "reel": True, "template": "money", "beats": ["x", "y", "z"]}])
+
+        def http(method, url, *a, **k):
+            if "ig_reels_avg_watch_time" in url:
+                if "/2/" in url:
+                    raise RuntimeError("(#100) metric not supported")
+                return {"data": [{"name": "ig_reels_avg_watch_time", "values": [{"value": 4300}]}]}
+            return {"data": [{"name": "reach", "values": [{"value": 100}]}, {"name": "likes", "values": [{"value": 5}]}]}
+        with mock.patch.object(pl, "http", http):
+            out = pl.learn()
+        rows = {r["id"]: r for r in out["all"]}
+        self.assertEqual(rows["r1"]["avg_watch_s"], 4.3)
+        self.assertEqual(rows["r1"]["opening"], "KRA uncovers Sh4bn VAT fraud.")
+        self.assertNotIn("avg_watch_s", rows["r2"])
+        self.assertEqual(rows["r2"]["reach"], 100)   # the main numbers survive the refused metric
+
+
 class PruneTests(TempWeeks):
     def test_old_weeks_are_pruned_whatever_their_status(self):
         exports = Path(self.tmp.name) / "exports"

@@ -135,6 +135,7 @@ class Matching(unittest.TestCase):
         self.assertEqual(photos._surname("Energy CS Opiyo Wandayi"), "wandayi")
         self.assertEqual(photos.full_name("Energy CS Opiyo Wandayi"), "Opiyo Wandayi")
         self.assertEqual(photos.full_name("Kenya Revenue Authority"), "")
+        self.assertEqual(photos._surname("Political Leaders in Bungoma"), "")   # live check, 17 Oct
 
     def test_a_foreign_story_sharing_common_words_is_not_a_match(self):
         post = {"template": "glasspoll", "message": "Should Kenya Power demand upfront electricity payment while it "

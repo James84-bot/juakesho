@@ -293,11 +293,10 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         civic = civic and post.get("photo_kind") not in {"event", "yours", "posted", "file"}   # real photos are not illustrative
         ctx.update(photo_uri=Path(photo).as_uri(),
                    photo_credit=("Illustrative photo · " if civic else "") + (post.get("photo_credit") or ""))
+    ctx["photo_band"] = 0
     if ctx.get("photo_uri"):
         from urllib.parse import unquote, urlparse
-        band = photo_band(Path(unquote(urlparse(ctx["photo_uri"]).path)), W)
-        if band:
-            ctx["photo_band"] = band
+        ctx["photo_band"] = photo_band(Path(unquote(urlparse(ctx["photo_uri"]).path)), W)
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
 
 
