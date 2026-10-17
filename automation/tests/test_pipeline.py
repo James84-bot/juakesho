@@ -635,6 +635,10 @@ class QualitySystemTests(unittest.TestCase):
             data = news.collect()
             self.assertEqual(len(data["items"]), 1)   # the same story from two feeds counts once
             self.assertIn("[n1] [Capital FM] MPs pass Finance Bill", news.prompt_block())
+            for ok in ("Capital FM News", "Daily Nation", "The Standard", "Kenyans.co.ke", "Citizen Digital"):
+                self.assertTrue(news.newsroom(ok), ok)
+            for bad in ("Facebook", "SportPesa Blog", "Uzalendo News", "https://streamlinefeed.co.ke/"):
+                self.assertFalse(news.newsroom(bad), bad)
             # the writer cites the id; the real link is recorded on the post, once
             post = news.resolve({"source": "n1", "template": "sauti"})
             self.assertEqual(post["source_links"][0]["link"], "https://x.test/1")
