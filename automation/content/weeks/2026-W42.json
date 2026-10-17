@@ -679,13 +679,76 @@
       "ig_id": "18180349864438236",
       "fb_id": "2887947401592039",
       "story_id": "18117505823060512"
+    },
+    {
+      "id": "2026-w42-hot-1017",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 3,
+      "kicker": "Taxpayers",
+      "line": "Lose *Sh6.2bn* to ghost workers, get sent home on 30 days leave. We call that a holiday.",
+      "fact": "Public Service CS suspended 84 HR officers for 30 days to probe a Sh6.2 billion ghost payroll fraud.",
+      "message": "84 HR officers were sent on 30 days leave over Sh6.2bn payroll fraud while Kenyans demand stolen funds back.",
+      "action": "Demand public payroll audit reports from your county and national offices",
+      "source": "People Daily (16 Oct 2026): CS Ruku suspends 84 govt HR officials over Ksh6.2 billion payroll fraud; Ministry of Public Service",
+      "photo_query": "National Treasury Nairobi",
+      "event_query": "Kenya civil service Nairobi",
+      "who": "Public Service CS Geoffrey Ruku",
+      "where": "National",
+      "when": "16 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Taxes pay ghost salaries while genuine workers and youth miss out on real opportunities.",
+      "caption": "Over Sh6.2 billion vanished through government ghost payrolls. The response: 84 HR officers get 30 days leave.\nWhat it means for you: Your taxes fund ghost salaries while essential public services stall.\nKenyans are asking the Ministry of Public Service: where is our Sh6.2 billion? Demand full payroll audit reports today.\n\n#FollowTheMoney #PublicMoney #KenyansAreAsking",
+      "beats": [
+        "*Sh6.2 billion* gone on ghost workers.",
+        "84 HR officers ordered to *step aside*.",
+        "Their penalty? *30 days leave*.",
+        "Meanwhile our taxes fund the gap.",
+        "Is it a *probe* or a holiday?",
+        "*Demand full audit* of public payrolls."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-17T18:30:00+03:00",
+      "hot": true,
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 9,
+        "action": 7,
+        "fair": 8,
+        "impact": 9,
+        "avg": 8.4,
+        "note": "Make the action specific to X/TikTok sharing or Freedom of Information requests rather than a generic demand."
+      },
+      "drafted_at": "2026-10-17T09:07:24.065454+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1017-photo.jpg",
+      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
+      "reel": true,
+      "tg_msg": 212
     }
   ],
   "scripts": {
-    "radio": "Habari za jioni, mwananchi. Karibu kwenye 'Kenyans Are Asking' na mimi sauti yako ya kuaminika. Wiki hii, kuna mambo mazito yanayozunguka pesa zetu za kodi.\n\nKwanza kabisa, je, ulisikia vile KRA imetufunulia? Wachunguzi wamegundua njama chafu ya Shilingi bilioni 4 ya ulaghai wa VAT kupitia stakabadhi za uwongo—maarufu kama *fake invoices*. Hebu fikiria kiasi hicho cha pesa. Bilioni nne nzima zinapotea kutoka kwa mfuko wa umma kuelekea mifukoni mwa watu binafsi. Hii ndiyo pesa inayofaa kujenga barabara zetu, kununua dawa hospitalini, na kulipa walimu wetu mishahara bora.\n\nLakini swali kuu ambalo kila Mkenya anapaswa kujiuliza leo ni hili: Hawa watu wanapata wapi ujasiri wa kutengeneza stakabadhi za uwongo bila kuogopa? Je, kuna mtandao mkubwa ndani ya taasisi zenyewe unaowasaidia kuficha haya madhambi? Tunahitaji majibu, na tunahitaji uwazi. Huu sio wakati wa kusalia kimya wakati rasilimali za nchi zinatafunwa na wachache.\n\n[Kiswahili Summary]\n*Kwa ufupi: KRA imefichua ulaghai wa VAT wa shilingi bilioni 4 kupitia stakabadhi ghushi. Hii inaonyesha jinsi fedha za umma zinavyopulizwa na kuacha huduma za kijamii zikiwa duni. Tunahitaji uwajibikaji kamili kutoka kwa mamlaka husika.*",
-    "voice_note": "Aki zangu, mnasikia haya madhambi? KRA imefichua udanganyifu wa Shilingi bilioni nne za VAT zilizoliwa kupitia stakabadhi za uwongo! Bilioni nne nzima! Hizi sio pesa za mchezo—ni zile zile zinazofaa kujenga barabara na kununua dawa hospitalini. Swali langu ni moja tu leo: Hawa wajanja wanapata wapi nguvu ya kuiba hivi bila hofu? Si heri tuwe macho na tuulize maswali mazito? Usiibiwe, simama kidete!",
-    "sms": "USIIBIWE: KRA imefichua Sh4B ya ulaghai wa VAT kupitia stakabadhi ghushi. Usikubali biashara yako itumike kwa njia haramu. Daima thibitisha risiti zako.",
-    "reels": "[Visual: Host looking directly into the camera with a serious, grounded expression, holding a fake receipt prop.]\n\n[Audio/VO]: 'Shilingi bilioni nne. Hiyo ndiyo pesa ambayo KRA imegundua imepotea kupitia stakabadhi za uwongo za VAT wiki hii. Bilioni nne! Hizo ni shule, hospitali, na barabara zilizomeza na wajanja wachache. Swali ni moja tu kwa serikali na wafanyabiashara: Hii impunity itaisha lini? Kenyans Are Asking, na hatutanyamaza. Wewe unasema nini?'"
+    "radio": "Hamjambo na karibuni to Kenyans Are Asking. This week, we are looking at the civil service payroll, where an eye-watering six point two billion shillings has vanished into thin air through ghost workers and duplicate payments. In response, eighty-four human resource officers across various ministries and state departments have been sent on thirty days compulsory leave to pave the way for investigations.\n\nNow, let us be completely honest with each other. Thirty days of paid leave is not accountability. Sending people home on full pay while billions of public money sit unaccounted for feels like an insult to millions of Kenyans struggling under heavy taxes. Every single coin siphoned through ghost workers represents medicine that was never bought, roads left unfinished, and schools without teachers.\n\nKenyans are not asking for administrative slaps on the wrist. We are demanding asset recovery, criminal prosecution, and a complete forensic audit of the entire public wage bill. If individuals stole six point two billion, they must be named, charged in a court of law, and made to return every single cent.\n\nKwa ufupi: Maafisa themanini na wanne wa rasilimali watu wametumwa likizo ya siku thelathini kufuatia wizi wa shilingi bilioni sita nukta mbili za mishahara ya hewa. Likizo ya malipo haitoshi. Wananchi wanadai washukiwa wafikishwe mahakamani, mali zao zikamatwe, na pesa za umma zirudishwe bila kuchelewa.",
+    "voice_note": "Hey people, hope you're keeping well. This week on Kenyans Are Asking, we need to talk about this Sh6.2 billion payroll scandal. Eighty-four HR officers have been sent on thirty days compulsory leave over ghost workers and inflated payrolls. But let us ask the hard question: since when did a paid one-month break become the penalty for grand theft? Taxpayers are working hard to make ends meet, yet billions are walking out of public coffers through simple manipulation of government payrolls. Kenyans are clear this time round—compulsory leave is not enough. We want the full forensic report made public, criminal charges pressed, and every single coin recovered from those responsible. Share this note, and let's keep demanding real accountability.",
+    "sms": "Usiibiwe: 30 days leave is not justice for Sh6.2B payroll theft. We must demand full asset recovery and prosecution, not paid holidays for looters.",
+    "reels": "Eighty-four HR officers sent on thirty days leave over six point two billion shillings stolen through ghost workers. Think about that for a second. Billions disappear from the public wage bill, and the immediate consequence is a month-long paid holiday? Kenyans are not buying it. We want names, asset freezes, and criminal prosecutions. Compulsory leave is an administrative step, not justice. Return our money."
   },
   "spend_usd": 3.0807,
   "revision": 3
