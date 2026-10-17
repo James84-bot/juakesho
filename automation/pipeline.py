@@ -499,6 +499,34 @@ def _is_image(msg: dict) -> bool:
     return bool(msg.get("photo")) or str(doc.get("mime_type", "")).startswith("image/")
 
 
+def _voice_of(msg: dict) -> dict | None:
+    """A voice note, an audio message or an audio file sent as a document: the presenter's voice reference."""
+    doc = msg.get("document") or {}
+    if str(doc.get("mime_type", "")).startswith("audio/"):
+        return doc
+    return msg.get("voice") or msg.get("audio")
+
+
+def _voice_intake(msg: dict, chat: str) -> None:
+    """Keeps the newest recording as the reference for the presenter's voice (voicelab.py clone).
+    Only the file id is stored: the audio stays on Telegram and is fetched when the voice is made."""
+    v = _voice_of(msg) or {}
+    rec = {"file_id": v["file_id"], "file_unique_id": v.get("file_unique_id"), "duration": v.get("duration"),
+           "mime_type": v.get("mime_type"), "received_at": now().isoformat()}
+    STATE.mkdir(exist_ok=True)
+    (STATE / "voice.json").write_text(json.dumps(rec, indent=2) + "\n")
+    secs = rec["duration"]
+    text = ("🎙 <b>Got your recording</b>" + (f" ({secs} s)" if secs else "") + ". It will be used to make the presenter's "
+            "voice. Samples come back here to choose from; nothing is posted.")
+    if secs is not None and secs < 20:
+        text += "\n⚠️ It's short: a 1 to 2 minute recording in a quiet room gives a much better voice."
+    try:
+        tg("sendMessage", {"chat_id": chat, "text": text, "parse_mode": "HTML", "reply_to_message_id": msg["message_id"]})
+    except Exception as e:
+        log(f"voice reply skipped: {e}")
+    log(f"voice reference saved ({secs}s)")
+
+
 def _photo_intake(msg: dict, chat: str) -> None:
     """You replied to a card with a photo: that post gets your picture, a new id and a fresh card.
     Only photos you took or have permission for (first caption line, as for clips)."""
@@ -1033,7 +1061,9 @@ def collect() -> None:
         offset = max(offset, u["update_id"] + 1)
         msg = u.get("message")
         if msg and str(msg.get("chat", {}).get("id")) == allowed_chat:
-            if _is_image(msg):            # a photo you replied to a card with: swaps that post's picture
+            if _voice_of(msg):            # a voice note or audio file: the presenter's voice reference
+                _voice_intake(msg, allowed_chat)
+            elif _is_image(msg):          # a photo you replied to a card with: swaps that post's picture
                 _photo_intake(msg, allowed_chat)
             else:                         # a clip you sent for a Tazama Hii Reel
                 _clip_intake(msg, allowed_chat)
