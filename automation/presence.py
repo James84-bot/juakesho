@@ -51,7 +51,7 @@ ICONS = {
 # Highlight name (shown under the circle, max ~15 chars) -> icon, and what goes inside it
 HIGHLIGHTS = [
     ("PROMISES", "ahadi", "The promise tracker: every 'kept / broken / stalled' post, newest first."),
-    ("RECEIPTS", "receipts", "Screenshots of the sources behind our biggest posts: Auditor-General, Hansard, gazette notices."),
+    ("SOURCES", "receipts", "Screenshots of the sources behind our biggest posts: Auditor-General, Hansard, gazette notices."),
     ("HATUTASAHAU", "hatutasahau", "One Story per date we remember, re-shared on its anniversary."),
     ("YOUR RIGHTS", "civic", "Your rights in 15 seconds: arrest, protest, voter registration, public participation."),
     ("POLLS", "polls", "Every Story poll and its result. People come back to see how they voted against everyone else."),

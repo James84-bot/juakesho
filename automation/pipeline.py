@@ -1,5 +1,5 @@
 """
-pipeline.py — the Kenyans Are Asking autopilot.
+pipeline.py — the Kenya on Record autopilot.
 
     python pipeline.py week   [--week 2026-W40] [--mock]   plan → draft → check → render → ask for approval
     python pipeline.py hot                                  today's extra post on the biggest Kenyan story (daily)
@@ -513,7 +513,7 @@ def _photo_intake(msg: dict, chat: str) -> None:
             im.convert("RGB").save(ROOT / rel, "JPEG", quality=92)
     except Exception as e:
         return reply(f"📷 Couldn't download that photo ({_esc(str(e)[:120])}). Try again.")
-    credit = {"own": "Photo: Kenyans Are Asking", "permission": f"Photo: {rights['credit']} (with permission)",
+    credit = {"own": "Photo: Kenya on Record", "permission": f"Photo: {rights['credit']} (with permission)",
               "posted": f"Photo: {rights['credit']}"}[rights["rights"]]
     for k in ("photo_file", "photo_credit", "photo_kind", "tg_msg", "decided_at", "video_file", "video_credit", "video_source"):
         post.pop(k, None)
@@ -750,7 +750,7 @@ def _preview_text(p: dict) -> str:
     from html import escape as esc
     warn = p.get("guard", {}).get("warnings", [])
     when = dt.datetime.fromisoformat(p["publish_at"]).strftime("%a %d %b, %H:%M")
-    cap = p.get("caption", "")
+    cap = brand_tags(p.get("caption", ""))
     cap = cap if len(cap) <= 420 else cap[:417].rstrip() + "..."
     lines = [f"<b>{esc(p['id'])}</b> · {esc(p['template'])} · lane: {esc(str(p.get('lane', '-')))}", f"🕒 {when} EAT"]
     if p.get("message"):
@@ -1163,14 +1163,21 @@ def share_story(label: str, members: list[dict]) -> str | None:
         return None
 
 
+OLD_TAGS = ("#JuaKesho", "#KenyansAreAsking")   # drafts written before a rename carry an old tag
+
+
+def brand_tags(cap: str) -> str:
+    tag = BRAND.get("hashtag", "")
+    for old in OLD_TAGS:
+        if tag and old != tag:
+            cap = cap.replace(old, tag)
+    return cap
+
+
 def caption_for(post: dict) -> str:
     """The approved caption plus credits: the photographer of a real photo, the artist of a licensed track.
     The post's action is always in the caption: added as the last line if the writer left it out."""
-    cap = post.get("caption", "")
-    tag = BRAND.get("hashtag", "")
-    for old in ("#JuaKesho", "#KenyansAreAsking"):   # drafts written before the rename carry the old tag
-        if tag and old != tag:
-            cap = cap.replace(old, tag)
+    cap = brand_tags(post.get("caption", ""))
     imp = str(post.get("impact") or "").strip()
     if imp and imp.lower()[:30] not in cap.lower():   # what the news changes for Kenyans, above the action
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
@@ -1236,7 +1243,7 @@ def receipts_comment(post: dict) -> str | None:
     parts = [x for x in dict.fromkeys(parts) if len(x) >= 8 and "sample" not in x.lower()]
     if not parts:
         return None
-    return ("Receipts 👇🏾\n" + "\n".join(f"• {x}" for x in parts))[:2000]
+    return ("Sources:\n" + "\n".join(f"• {x}" for x in parts))[:2000]
 
 
 def post_receipts(post: dict, ig_id: str | None, fb_id: str | None) -> None:
@@ -1257,7 +1264,7 @@ def whatsapp_text(post: dict) -> str:
     beats = [b.replace("*", "") for b in (post.get("beats") or [])]
     body = " ".join(beats[:3]) if beats else str(post.get("message") or "")
     src = str(post.get("source") or "").split(";")[0].strip()
-    return (body + (f"\n\nReceipts: {src}" if len(src) >= 8 else "") + "\n\nFollow Kenyans Are Asking for the receipts.").strip()
+    return (body + (f"\n\nSource: {src}" if len(src) >= 8 else "") + "\n\nFollow Kenya on Record for more.").strip()
 
 
 def fb_link(fb_id: str | None) -> str | None:
@@ -1363,7 +1370,7 @@ def send_samples(dry_run: bool = False) -> None:
        {"photo": presence.OUT / "highlights-row.png"})
     plan = "\n".join(f"• <b>{_esc(n.title())}</b>: {_esc(h)}" for n, _, h in presence.HIGHLIGHTS)
     tg("sendMessage", {"chat_id": chat, "parse_mode": "HTML", "text": (
-        "🧪 <b>Profile kit</b>\n\n<b>Bio</b>\n<code>The ordinary Kenyan, asking with receipts.\nEvery side, same standard.\n"
+        "🧪 <b>Profile kit</b>\n\n<b>Bio</b>\n<code>Facts today. A better Kenya tomorrow.\nEvery side, same standard.\n"
         "Not with any government or party. 📩 Tips: DM</code>\n\n<b>Pinned</b>\n1. Manifesto carousel: why we exist, our rules, non-partisan\n"
         "2. Best Promise Tracker post\n3. Reel: how we check our facts\n\n<b>Highlights</b>\n" + plan)})
     n = engage.samples(WEEKS, drafter.call_claude, lambda text, buttons: tg(
@@ -1490,7 +1497,7 @@ def main(argv: list[str] | None = None) -> int:
 def _main(argv: list[str] | None = None) -> int:
     load_env()
     sys.path.insert(0, str(HERE))
-    ap = argparse.ArgumentParser(description="Kenyans Are Asking autopilot")
+    ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
                                         "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")

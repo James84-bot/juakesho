@@ -10,7 +10,7 @@ and, on the next lines, what it is about. Nothing without that line is ever used
 The Reel, 1080x1920:
     1. HOOK    1-2 beats over a still of the clip, urgent sound
     2. CLIP    the moment, boxed in our frame: headline on top, live captions from the real audio, credit below
-    3. VERDICT 2-4 beats: what the record says, the receipts, the question for the leaders
+    3. VERDICT 2-4 beats: what the record says, the proof, the demand to the leaders
 The raw clip never enters the public repo; only the finished, credited Reel does.
 """
 from __future__ import annotations
@@ -37,15 +37,15 @@ RIGHTS = [
     ("quote", re.compile(r"^\s*(nukuu|quote|news)\b[\s:,-]*(.+)$", re.I)),
 ]
 
-TAZAMA_RULES = """You write "Tazama Hii" Reels for KENYANS ARE ASKING: informed ordinary Kenyans who show a real clip and say what it
-means, with receipts. You get: the owner's note on what the clip is, how we may use it (rights), the credit, the clip
+TAZAMA_RULES = """You write "Tazama Hii" Reels for KENYA ON RECORD: informed ordinary Kenyans who show a real clip and say what it
+means, with proof. You get: the owner's note on what the clip is, how we may use it (rights), the credit, the clip
 length, the transcript with timestamps (may be empty), and this week's real headlines.
 
 Return ONLY JSON:
 {"headline": "max 70 chars, one *marker* on the words that hit hardest (sits above the clip)",
  "hook": ["1-2 beats before the clip: why you must watch, max 8 words / 44 chars each"],
  "start": seconds, "end": seconds,
- "verdict": ["2-4 beats after the clip: what the record says, the receipt, the question for the leaders; one *marker* max per beat"],
+ "verdict": ["2-4 beats after the clip: what the record says, the proof, the demand to the leaders; one *marker* max per beat"],
  "message": "the one thing the viewer must walk away with (max 120)",
  "caption": "Instagram caption in our KOT voice, credit the source by name, 2-4 live hashtags that fit, ask a question",
  "source": "links that back the verdict (from the headlines or official records); empty only if the verdict states no fact",
@@ -72,7 +72,7 @@ def parse_caption(text: str) -> dict | None:
         if m:
             rest = m.group(2).strip()
             url = re.search(r"https?://\S+", rest)
-            credit = re.sub(r"https?://\S+", "", rest).strip(" ,;-") if kind != "own" else "Kenyans Are Asking"
+            credit = re.sub(r"https?://\S+", "", rest).strip(" ,;-") if kind != "own" else "Kenya on Record"
             if kind != "own" and len(credit) < 2:
                 return None   # permission or a quote must say from whom
             return {"rights": kind, "credit": credit[:60], "source": url.group(0) if url else "",
@@ -200,7 +200,7 @@ def frame_html(post: dict, info: dict, bx: tuple[int, int, int, int]) -> str:
     import render
     x, y, w, h = bx
     credit = (f"📹 {info['credit']} · used with permission" if info["rights"] == "permission" else
-              "📹 Kenyans Are Asking" if info["rights"] == "own" else f"📺 Clip: {info['credit']} · short excerpt for commentary")
+              "📹 Kenya on Record" if info["rights"] == "own" else f"📺 Clip: {info['credit']} · short excerpt for commentary")
     logo = (render.LOGO / "wordmark-on-dark.svg").as_uri()
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{bk.font_faces(render.FONTS)}
 html,body{{margin:0;width:1080px;height:1920px;background:#0E0C0B;color:#fff;font-family:Inter,sans-serif;overflow:hidden}}
@@ -211,7 +211,7 @@ h1{{position:absolute;left:48px;right:48px;bottom:{1920 - y + 44}px;margin:0;fon
 mark{{background:#C4111A;color:#fff;padding:0 .08em}}
 .box{{position:absolute;left:{x - 6}px;top:{y - 6}px;width:{w + 12}px;height:{h + 12}px;background:#1B1917;border-radius:6px}}
 .credit{{position:absolute;left:48px;right:48px;top:1760px;font:600 30px/1.3 Inter;color:#CAC8C7}}
-</style></head><body><div class="top"><span class="tag">Tazama Hii</span><img src="{logo}"></div>
+</style></head><body><div class="top"><span class="tag">Watch This</span><img src="{logo}"></div>
 <h1>{_marked(post.get("headline", ""))}</h1><div class="box"></div>
 <div class="credit">{htmlmod.escape(credit)}</div></body></html>"""
 
@@ -281,13 +281,13 @@ def make(post: dict, info: dict, src: Path, segments: list[dict], out_dir: Path)
         subprocess.run([ff, "-y", "-loglevel", "error", "-ss", str(round((a + b) / 2, 2)), "-i", str(src),
                         "-frames:v", "1", "-q:v", "2", str(still)], check=True)
         base = {**post, "photo_file": str(still)}
-        video.beats_segment(env, base, post["hook"], "Tazama Hii", tmp / "a.mp4", ff, tail=0.3)
+        video.beats_segment(env, base, post["hook"], "Watch This", tmp / "a.mp4", ff, tail=0.3)
         with sync_playwright() as p:
             browser = p.chromium.launch()
             page = browser.new_page(viewport={"width": 1080, "height": 1920})
             clip_segment(ff, page, post, info, src, meta, a, b, captions(segments, a, b), tmp / "b.mp4", tmp)
             browser.close()
-        video.beats_segment(env, base, post["verdict"], "Tazama Hii", tmp / "c.mp4", ff, tail=1.2)
+        video.beats_segment(env, base, post["verdict"], "Watch This", tmp / "c.mp4", ff, tail=1.2)
         target = out_dir / f"{post['id']}.mp4"
         subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(tmp / "a.mp4"), "-i", str(tmp / "b.mp4"), "-i", str(tmp / "c.mp4"),
                         "-filter_complex", "[0:v][0:a][1:v][1:a][2:v][2:a]concat=n=3:v=1:a=1[v][a]",

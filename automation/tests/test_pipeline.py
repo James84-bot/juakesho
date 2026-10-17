@@ -94,12 +94,12 @@ class ReachTests(unittest.TestCase):
         post = {"claim_source": "Capital FM, 12 Oct 2026 (link)", "source": "Auditor-General report 2025; Capital FM",
                 "beats": ["*Sh304bn.* Idle.", "59% never used.", "14 projects waiting.", "Ask your MP."], "message": "m"}
         c = pl.receipts_comment(post)
-        self.assertTrue(c.startswith("Receipts"))
+        self.assertTrue(c.startswith("Sources:"))   # plain words, no slang
         self.assertIn("Auditor-General", c)
         self.assertIsNone(pl.receipts_comment({"source": "Rehearsal sample: not real data"}))
         w = pl.whatsapp_text(post)
         self.assertTrue(w.startswith("Sh304bn. Idle. 59% never used. 14 projects waiting."))
-        self.assertIn("Receipts: Auditor-General report 2025", w)
+        self.assertIn("Source: Auditor-General report 2025", w)
 
 
 class ApprovalTests(TempWeeks):
@@ -401,7 +401,7 @@ class QualitySystemTests(unittest.TestCase):
                 "claim": "Africa is one country.", "who": "a viral post", "claim_source": "Viral X post, May 2026 (link)",
                 "verdict": "false", "truth": "54 countries.", "proof": ["UN lists 54 African member states.", "Over 2,000 languages."],
                 "pride": "One continent. 54 flags.", "source": "un.org member states",
-                "caption": "Set It Straight. Send this to a friend.\n\n#KenyansAreAsking"}
+                "caption": "Set It Straight. Send this to a friend.\n\n#KenyaOnRecord"}
         post.update(kw)
         return post
 
@@ -436,7 +436,7 @@ class QualitySystemTests(unittest.TestCase):
     def test_real_people_photos_need_rights(self):
         spot = {"id": "2026-w41-d5-spotlight", "template": "spotlight", "kind": "Artist", "name": "Amina", "country": "Kenya",
                 "what": "Makes music.", "why": "Proof our sound travels.", "cta": "Stream her.", "source": "her site",
-                "symbol": "music", "caption": "Put Us On. Share this.\n\n#KenyansAreAsking"}
+                "symbol": "music", "caption": "Put Us On. Share this.\n\n#KenyaOnRecord"}
         self.assertTrue(guard.check({**spot, "person_photo": "people/amina.jpg", "photo_rights": "permission from her manager, Oct 2026"}).ok)
         self.assertTrue(any("photo_rights" in e for e in guard.check({**spot, "person_photo": "people/amina.jpg"}).errors))
         self.assertTrue(any("must be" in e for e in guard.check({**spot, "person_photo": "https://instagram.com/x.jpg"}).errors))
@@ -1014,7 +1014,7 @@ class PhotoSwapTests(TempWeeks):
         p = self.intake("yangu\nAt the Senate this morning")
         self.assertEqual((p["id"], p["status"]), ("p1-r4", "drafted"))
         self.assertTrue(p["photo"].startswith("sent:exports/2026-W41/photos/p1-r4-sent.jpg"))
-        self.assertEqual(p["photo_rights_credit"], "Photo: Kenyans Are Asking")
+        self.assertEqual(p["photo_rights_credit"], "Photo: Kenya on Record")
         self.assertNotIn("photo_file", p)
         self.assertTrue((self.root / p["photo"][5:]).exists())
 

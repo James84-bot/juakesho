@@ -50,7 +50,7 @@
 .b1, .b1 .t { animation: none !important; opacity: 1; }
 .b1 { animation: {{ 'none' if beats|length == 1 else 'show ' ~ BT.durs[0] ~ 's linear both' }} !important; }
 {% endblock %}
-{% block top %}<span class="tag live">{{ kicker }}</span><img src="{{ logo_on_dark }}" alt="Kenyans Are Asking">{% endblock %}
+{% block top %}<span class="tag live">{{ kicker }}</span><img src="{{ logo_on_dark }}" alt="Kenya on Record">{% endblock %}
 {% block footer %}
   {% if context_line %}<div class="ctx">{{ context_line }}</div>{% endif %}
   <div class="bars">{% for b in beats %}<i><b></b></i>{% endfor %}</div>

@@ -1,9 +1,10 @@
-# Kenyans Are Asking
+# Kenya on Record
 
-The ordinary Kenyan, asking with receipts. An independent, faceless channel that asks the people in power what every Kenyan is already asking: promises against
-records, Set It Straight, Follow the Money, scam alerts, and the stories Kenya is talking about this week, in plain
-Kenyan English with real photos and sources. Not with any government or party; every side held to the same standard.
-Handle **@kenyansareasking** · hashtag **#KenyansAreAsking**.
+Facts today. A better Kenya tomorrow. An independent, faceless channel: informed Kenyans holding the people in power
+to account with proof, and showing what Kenya gets right. Promises against records, Set It Straight, Follow the
+Money, scam alerts, Kenya at its best and Built in Kenya, in plain English with real photos and sources. Not with any
+government or party; every side held to the same standard.
+Handle **@kenyansareasking** · hashtag **#KenyaOnRecord**.
 
 **Live:** brand book <https://james84-bot.github.io/juakesho/brand-book/> · repo <https://github.com/James84-bot/juakesho>
 
