@@ -512,7 +512,7 @@ def _place_symbol_legacy(page, env: Environment, post: dict, tmp_dir: Path) -> N
 PERSON_TEMPLATES = {"spotlight", "straight", "money", "cap", "promise", "sauti", "scorecard", "reel"}
 # Layouts that take a real photo across the top of the canvas
 PHOTO_TEMPLATES = {"cover", "kesho", "spotlight", "money", "still", "straight", "hack", "decode", "build", "glasspoll",
-                   "africa", "cap", "usiibiwe", "promise", "sauti", "kumbuka", "scorecard", "reel"}
+                   "africa", "cap", "usiibiwe", "promise", "sauti", "kumbuka", "scorecard", "reel", "kenya"}
 # Templates where Jua is a character in the scene (keep it), or that are brand assets
 NO_SYMBOL = {"vichekesho", "pov", "avatar", "banner", "intro"}
 # Templates whose mascot is decoration: a symbol replaces it in the same, collision-checked spot

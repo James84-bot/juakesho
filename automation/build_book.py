@@ -65,7 +65,7 @@ SERIES = [
 GLOSSARY = [
     ("Kenyans Are Asking", "name", "The questions every Kenyan is already asking the people in power, asked out loud, with receipts."),
     ("The ordinary Kenyan, asking with receipts.", "line", "Under the name on every profile."),
-    ("Kenyans are asking: …", "sign-off", "Every post ends with the question Kenyans are asking, to a named office, and the one thing to do."),
+    ("Kenyans demand: …", "sign-off", "Every accountability post ends with one concrete demand to a named office, and the one thing to do."),
     ("Usiibiwe", "series", "“Don't get robbed.” Scam alerts, on the red background."),
     ("Promise Tracker", "series", "A leader's own promise against the record. Kept, partly kept, stalled or broken."),
     ("Set It Straight", "series", "Our answer to falsehoods and put-downs: the claim, quoted and sourced, then the facts."),
@@ -150,7 +150,7 @@ def build_body() -> str:
     gallery = "".join(
         f'<figure class="g-item"><img src="{img_uri(EXP / "posts" / (p["id"] + ".png"), 400)}" alt="{e(p["id"])}" '
         f'width="400" height="{711 if p.get("size") == "story" else 500}" loading="lazy"><figcaption>{e(p["id"])}</figcaption></figure>'
-        for p in POSTS)
+        for p in POSTS if (EXP / "posts" / (p["id"] + ".png")).exists())   # an example not rendered yet is left out
     prof = EXP / "profiles"
     profiles = (f'<figure class="pf pf--wide"><img src="{img_uri(prof / "youtube-banner-2560x1440.png", 900)}" alt="YouTube banner" width="900" height="506"><figcaption>YouTube 2560×1440, key content in the safe zone</figcaption></figure>'
                 f'<figure class="pf"><img src="{img_uri(prof / "x-header-1500x500.png", 700)}" alt="X header" width="700" height="233"><figcaption>X header 1500×500</figcaption></figure>'

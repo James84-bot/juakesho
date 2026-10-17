@@ -376,13 +376,15 @@ def _next_rev(pid: str) -> str:
     return f"{m.group(1)}-r{int(m.group(2)) + 1}" if m else f"{pid}-r2"
 
 
-def remake(label: str) -> list[str]:
+def remake(label: str, replace_approved: bool = False) -> list[str]:
     """Re-plans the rest of the week from the CURRENT calendar and drafts it from scratch with the current rules.
     Kept: published, approved and hand-posted posts, hot posts and Tazama Hii clips. Everything else still waiting
     is dropped; slots already past (or under two hours away) are not refilled. New ids carry a revision (…-r2),
-    so a tap on an older Telegram card can never approve the new version unseen."""
+    so a tap on an older Telegram card can never approve the new version unseen.
+    replace_approved (the `renew` command): approved posts that haven't gone out yet are redrafted too, for when
+    the rules change after you approved a batch; they come back to you for approval."""
     data = load_week(label)
-    keep = {"published", "approved", "manual"}
+    keep = {"published", "manual"} if replace_approved else {"published", "approved", "manual"}
     kept = [p for p in data["posts"] if p["status"] in keep or p.get("hot") or p.get("template") == "tazama"]
     rev = int(data.get("revision", 1)) + 1
     taken = {p["id"] for p in data["posts"]}
@@ -752,6 +754,10 @@ def _preview_text(p: dict) -> str:
         lines += ["📷 Photo from the event itself (licensed)"]
     elif kind == "posted":
         lines += [f"📷 The day's photo, from {esc(str(p.get('photo_outlet') or 'the news report'))} (credited)"]
+    elif kind == "place":
+        lines += ["📷 A real photo of the place itself (licensed, credited)"]
+    elif p.get("template") == "kenya" and not p.get("photo_file"):
+        lines += ["⚠️ No photo of this place was found. Reply to this card with a real photo, or reject it."]
     elif kind == "file":
         lines += [f"📷 File photo of who the post is about ({esc(str(p.get('photo_outlet') or 'Wikimedia Commons'))}, credited). "
                   "Reply with the day's photo to swap it."]
@@ -1446,7 +1452,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenyans Are Asking autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
@@ -1460,7 +1466,7 @@ def _main(argv: list[str] | None = None) -> int:
             learn()
         except Exception as e:
             log(f"learn skipped: {e}")
-    if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "radar"} and not a.mock:
+    if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "renew", "radar"} and not a.mock:
         try:
             import trends
             t = trends.collect()
@@ -1513,16 +1519,21 @@ def _main(argv: list[str] | None = None) -> int:
         if remake(label) and not a.dry_run:
             _notify(f"♻️ Fresh batch for <b>{label}</b> coming up: new drafts, real photos. "
                     "Buttons on the older cards for these posts no longer do anything.")
+    if a.command == "renew":   # next week again under the current rules, approved posts included
+        label = a.week or current_week_label(ahead=1)
+        if remake(label, replace_approved=True) and not a.dry_run:
+            _notify(f"♻️ <b>{label}</b> redrafted under the new rules (real photos, plain sentences, demands, "
+                    "Kenya showcase posts). Approve again: buttons on the older cards no longer do anything.")
     if a.command == "rephoto":
         label = a.week or current_week_label(ahead=0)
         if rephoto(label) and not a.dry_run:
             _notify(f"🖼 New photos for <b>{label}</b> coming up (same words). Buttons on the older cards no longer do anything.")
-    if a.command in {"week", "tracker", "hot", "redo", "draft", "remake"}:
+    if a.command in {"week", "tracker", "hot", "redo", "draft", "remake", "renew"}:
         # only the weekly run writes ahead in two halves; a batch you asked for, a redo or today's post is written now
         draft(label, mock=a.mock, horizon=DRAFT_AHEAD if a.command == "week" else None)
-    if a.command in {"week", "tracker", "hot", "redo", "render", "remake", "rephoto"}:
+    if a.command in {"week", "tracker", "hot", "redo", "render", "remake", "renew", "rephoto"}:
         render_week(label)
-    if a.command in {"week", "tracker", "hot", "redo", "ask", "remake", "rephoto"}:
+    if a.command in {"week", "tracker", "hot", "redo", "ask", "remake", "renew", "rephoto"}:
         ask(label, dry_run=a.dry_run)
     if a.command in {"tick", "collect"} and not a.dry_run:
         collect()

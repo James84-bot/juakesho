@@ -47,6 +47,7 @@ SCHEMAS: dict[str, dict[str, int]] = {
     "kumbuka":  {"date": 24, "event": 100, "status": 90, "ask": 50, "source": 240},
     "scorecard": {"who": 40, "office": 50, "verdict": 70, "source": 240},
     "sauti":    {"kicker": 24, "line": 120, "fact": 110, "source": 240},
+    "kenya":    {"series": 20, "place": 40, "line": 110, "fact": 150, "source": 240},
     "promise":  {"who": 60, "promise": 120, "said": 50, "reality": 120, "ask": 60, "source": 240},
     "tazama":   {"headline": 70, "credit": 60, "rights": 120},
     "avatar":   {},
@@ -70,8 +71,9 @@ CHOICES = {
     "cap": {"verdict": {"cap", "nocap", "kinda"}},
     "straight": {"verdict": {"false", "misleading", "missing_context"}},
     "promise": {"verdict": {"kept", "partly", "stalled", "broken", "ignored", "diverted"}},
+    "kenya": {"series": {"Kenya at its best", "Built in Kenya"}},
 }
-FACT_TEMPLATES = {"africa", "hapa", "usiibiwe", "kesho", "pov", "cap", "spotlight", "money", "straight", "promise", "sauti",
+FACT_TEMPLATES = {"kenya", "africa", "hapa", "usiibiwe", "kesho", "pov", "cap", "spotlight", "money", "straight", "promise", "sauti",
                   "kumbuka", "scorecard"}
 # Feed templates where the picture must carry the message: the writer chooses a symbol (symbols.py)
 SYMBOL_TEMPLATES = {"hack", "decode", "cap", "usiibiwe", "still", "glasspoll", "cover", "kesho", "spotlight",
@@ -79,9 +81,9 @@ SYMBOL_TEMPLATES = {"hack", "decode", "cap", "usiibiwe", "still", "glasspoll", "
 CIVIC_SERIES = {"money", "See Through It"}  # must carry a source
 # Posts whose Reel should be told in beats (one punchy line at a time)
 REEL_FIRST = {"sauti", "straight", "promise", "kumbuka", "scorecard", "money", "usiibiwe", "cap", "decode", "hack",
-              "still", "africa", "spotlight", "makanga"}
+              "still", "africa", "spotlight", "makanga", "kenya"}
 # Feed posts that should always carry a real photo (the design is photo-first)
-PHOTO_FIRST = {"kumbuka", "scorecard", "sauti", "hack", "decode", "cap", "money", "still", "straight", "promise", "africa", "spotlight", "usiibiwe", "cover"}
+PHOTO_FIRST = {"kenya", "kumbuka", "scorecard", "sauti", "hack", "decode", "cap", "money", "still", "straight", "promise", "africa", "spotlight", "usiibiwe", "cover"}
 # Real, named people may appear with their licensed photo: celebrated (spotlight) or on the public record
 PERSON_PHOTO_TEMPLATES = {"spotlight", "straight", "money", "cap", "promise", "sauti", "scorecard"}
 
@@ -160,6 +162,11 @@ NEVER_WORDS = {"leverage", "seamless", "game-changer", "game changer", "cutting-
 # Tribe: we call out divisive politics (quote it, name who said it, source it), we never practise it.
 TRIBE_TALK = r"\b(tribe|tribes|tribal|tribalism|kabila|ukabila)\b"
 CALLOUT_TEMPLATES = {"straight", "sauti", "promise", "cap", "hack", "kumbuka", "scorecard"}
+# Place names that share a word with a community (Lake Turkana, Turkana County, Samburu National Reserve, Embu town,
+# Meru National Park) are places, not people: blanked out before the community check.
+PLACE_FORMS = (r"\b(lake|mount|mt|county of)\s+(turkana|kenya|elgon|victoria|baringo|naivasha)\b|"
+               r"\b(turkana|samburu|meru|embu|pokot|kisii|taita|kuria|teso)\s+(county|national|reserve|park|town|"
+               r"university|level|referral|hospital|basin|wind|road|airport|stadium|market|hills?|south|north|west|east|central)\b")
 COMMUNITIES = (r"\b(kikuyus?|luos?|kalenjins?|luhyas?|kambas?|kisiis?|merus?|mijikenda|somalis|turkanas?|embus?|kurias?|"
                r"taitas?|pokots?|tesos?|samburus?|gusii|agikuyu|abaluhya)\b")
 
@@ -427,6 +434,13 @@ def check(post: dict) -> Report:
                     rep.errors.append(f"checks[{i}] needs result pass|fail|unclear")
                 elif not 3 <= len(str(c.get("test", ""))) <= 40 or not 3 <= len(str(c.get("note", ""))) <= 80:
                     rep.errors.append(f"checks[{i}]: `test` max 40 chars and `note` max 80 chars, both required")
+    if tpl == "kenya":
+        q = str(post.get("photo_query") or "")
+        if "kenya" not in q.lower():
+            rep.errors.append("Kenya showcase: `photo_query` must name the place or project and include 'Kenya'")
+        place_words = {w.lower() for w in re.findall(r"[A-Za-z']{4,}", str(post.get("place") or ""))}
+        if place_words and not place_words & {w.lower() for w in re.findall(r"[A-Za-z']{4,}", q)}:
+            rep.errors.append("Kenya showcase: `photo_query` must name the same place as `place`")
     beats = post.get("beats")
     if beats is not None:
         if not isinstance(beats, list) or not 3 <= len(beats) <= (6 if tpl == "tazama" else 5):
@@ -459,7 +473,7 @@ def check(post: dict) -> Report:
         rep.errors.append("sounds AI-written: em dash; use a full stop or a comma")
     if re.search(TRIBE_TALK, low) and tpl not in CALLOUT_TEMPLATES:
         rep.errors.append("tribe only comes up when we call out divisive politics (Set It Straight, Sauti, Promise Tracker)")
-    m = re.search(COMMUNITIES, low)
+    m = re.search(COMMUNITIES, re.sub(PLACE_FORMS, " ", low))
     if m:
         rep.errors.append(f"names a community ('{m.group(0)}'): describe divisive speech without repeating which "
                           "community was targeted; quote the speaker, never stereotype a people")

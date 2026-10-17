@@ -1,0 +1,24 @@
+{#- Kenya at its best / Built in Kenya — the showcase. A real photo of the named place or finished project fills
+    the whole post; one plain headline and one sourced fact sit at the bottom over a dark scrim.
+    Fields: series ("Kenya at its best" | "Built in Kenya"), place (where it is), line (the headline, one *mark*),
+            fact (the sourced detail), source -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.has-photo { --ph: {{ H }}px; }
+.has-photo .photo { background-position: center 45%; filter: saturate(1.08) contrast(1.04); }
+/* the photo is the post: clear at the top, darkening only where the words sit */
+.has-photo .photo-fade { background: linear-gradient(to bottom, rgba(0, 0, 0, .38) 0, transparent 14%, transparent 44%,
+  rgba(0, 0, 0, .55) 64%, rgba(0, 0, 0, .86) 84%, rgba(0, 0, 0, .92) 100%); }
+.layer { justify-content: flex-end; }
+.has-photo .layer { padding-top: 168px; }
+.place { font: 800 26px/1 "Inter Tight"; letter-spacing: .08em; text-transform: uppercase; color: #fff; opacity: .9; }
+.line { margin-top: 22px; color: #fff; font-size: {{ fitw(line, 936, 4, 92) }}px; line-height: 1.04;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, .45); }
+.fact { margin-top: 26px; color: rgba(255, 255, 255, .92); padding-left: 24px; border-left: 6px solid var(--chai-500, #2e9e5b); }
+{% endblock %}
+{% block top %}<span class="tag tag--green">{{ series }}</span>{% endblock %}
+{% block content %}
+  <p class="place">{{ place }}</p>
+  <h1 class="display line">{{ line | mark }}</h1>
+  <p class="lead fact">{{ fact | nb }}</p>
+{% endblock %}

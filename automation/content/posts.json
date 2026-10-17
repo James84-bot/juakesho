@@ -396,6 +396,50 @@
       "action": "Turn on Google Photos or iCloud backup today",
       "side": "none",
       "tone": "explainer"
+    },
+    {
+      "id": "20-kenya-hells-gate",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": "usiku",
+      "lane": "everyone",
+      "place": "Hell's Gate, Naivasha",
+      "line": "Hell's Gate is a Kenyan park you can *cycle* through.",
+      "fact": "Kenya Wildlife Service lets visitors walk and cycle past zebra, giraffe and buffalo, then hike the gorge.",
+      "message": "Hell's Gate in Naivasha is a Kenyan park you can explore on foot or by bike.",
+      "source": "Kenya Wildlife Service, Hell's Gate National Park (kws.go.ke)",
+      "photo_query": "Hell's Gate National Park Kenya",
+      "beats": [
+        "Hell's Gate is a Kenyan park you can *cycle* through.",
+        "You ride past zebra, giraffe and buffalo, then hike the gorge.",
+        "It is in Naivasha, about two hours from Nairobi."
+      ],
+      "caption": "Hell's Gate, Naivasha: one of the few parks in Kenya you can explore by bike. Save this for your next weekend out.\n\n#KenyansAreAsking #Naivasha",
+      "side": "none",
+      "tone": "explainer",
+      "action": "Plan a day trip to Naivasha and hire a bike at the park gate"
+    },
+    {
+      "id": "21-kenya-turkana-wind",
+      "template": "kenya",
+      "series": "Built in Kenya",
+      "bg": "usiku",
+      "lane": "everyone",
+      "place": "Loiyangalani, Marsabit",
+      "line": "Lake Turkana Wind Power feeds *310 MW* into the national grid.",
+      "fact": "Its 365 turbines near Loiyangalani have run since 2019, among the largest wind farms in Africa.",
+      "message": "Lake Turkana Wind Power in Marsabit supplies 310 MW of clean power to Kenya's grid.",
+      "source": "Lake Turkana Wind Power (ltwp.co.ke): 365 turbines, 310 MW, fully operational 2019",
+      "photo_query": "Lake Turkana Wind Power Loiyangalani Kenya",
+      "beats": [
+        "Lake Turkana Wind Power feeds *310 MW* into the national grid.",
+        "Its 365 turbines have run near Loiyangalani since 2019.",
+        "It is among the largest wind farms in Africa."
+      ],
+      "caption": "Built in Kenya: 365 turbines in Marsabit, 310 MW of clean power on the grid since 2019. Share this with someone who says nothing works.\n\n#KenyansAreAsking #RenewableEnergy",
+      "side": "none",
+      "tone": "credit",
+      "action": "Share this with someone who says nothing in Kenya works"
     }
   ]
 }
