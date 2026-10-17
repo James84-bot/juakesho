@@ -14,26 +14,30 @@ openverse 'National Treasury' for 2026-w42-d2-money-r3: 20 found, 0 usable, drop
 commons 'Kenyan shilling banknotes' for 2026-w42-d2-money-r3: 13 found, 10 usable, dropped {'size': 3, 'licence': 0, 'place': 0, 'subject': 0}
 photo for 2026-w42-d2-money-r3: nothing for 'National Treasury Nairobi', used 'Kenyan shilling banknotes'
 posted for 2026-w42-d3-promise-r3: 0 matching reports (person 'ruto', names ['ruto', 'psc'], words ['comrades', 'graduate', 'unpaid', 'promise', 'guaranteed'])
-file photo for 2026-w42-d3-promise-r3: 64 recent reports name 'ruto'
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
-file photo for 2026-w42-d3-promise-r3: 0 recent reports name 'psc'
+file photo for 2026-w42-d3-promise-r3: 53 recent reports name 'ruto'
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
 portrait 'William Ruto' for 2026-w42-d3-promise-r3: 20 found, 16 usable
 posted for 2026-w42-d4-sauti-r3: 2 matching reports (person '', names ['huduma', 'iebc'], words ['iebc', 'voters', 'processing', 'bottlenecks', 'lock'])
 picked Nation (3): IEBC cleared to proceed with Sh6.5bn election technology tender
 event 'IEBC voter registration Nairobi' for 2026-w42-d5-straight-r3 (12 Oct-17 Oct): 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 0, 'subject': 0}
 event 'IEBC voter' for 2026-w42-d5-straight-r3 (12 Oct-17 Oct): 1 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 1, 'subject': 0}
 posted for 2026-w42-d5-straight-r3: 1 matching reports (person 'omar', names ['omar', 'uda', 'iebc', 'kiems'], words ['iebc', 'voter', 'registration'])
-skipped Capital FM: image too small or not a photo (https://capitalfm.africa/wp-content/uploads/news/2025/11/HASSAN-OMAR-s)
-file photo for 2026-w42-d5-straight-r3: 4 recent reports name 'omar'
-file photo from Nation: Federal raid on Ilhan Omar's home signals threat to her US citizenship
+skipped Capital FM: image too small or not a photo (800x535, https://capitalfm.africa/wp-content/uploads/news/2025/11/HASSAN-OMAR-s)
+file photo for 2026-w42-d5-straight-r3: 2 recent reports name 'omar'
+skipped Capital FM: image too small or not a photo (800x535, https://capitalfm.africa/wp-content/uploads/news/2025/11/HASSAN-OMAR-s)
+file photo from KBC: Kenya’s Dolphin Omare claims victory at Hyundai Half Marathon
 posted for 2026-w42-d6-promise-r3: 0 matching reports (person 'thugge', names ['thugge', 'otc', 'cbk'], words ['central', 'bank', 'pledge', 'modernize', 'bond'])
 file photo for 2026-w42-d6-promise-r3: 0 recent reports name 'thugge'
-file photo for 2026-w42-d6-promise-r3: 0 recent reports name 'otc'
 file photo for 2026-w42-d6-promise-r3: 1 recent reports name 'cbk'
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
 portrait 'Kamau Thugge' for 2026-w42-d6-promise-r3: 0 found, 0 usable
 commons 'Central Bank of Kenya Nairobi' for 2026-w42-d6-promise-r3: 25 found, 8 usable, dropped {'size': 5, 'licence': 0, 'place': 9, 'subject': 3}
 posted for 2026-w42-d7-glasspoll-r3: 0 matching reports (person '', names [], words ['vote', 'presidential', 'terms', 'stay', 'five'])
@@ -47,26 +51,40 @@ commons 'Kenya election' for 2026-w42-d7-glasspoll-r3: 25 found, 6 usable, dropp
 photo for 2026-w42-d7-glasspoll-r3: nothing for 'ballot box Kenya', used 'Kenya election'
 posted for 2026-w42-hot-1013: 0 matching reports (person 'wandayi', names ['opiyo', 'wandayi'], words ['wananchi', 'disconnected', 'small', 'debts', 'departments'])
 file photo for 2026-w42-hot-1013: 2 recent reports name 'wandayi'
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
 file photo from Capital FM: ‘You know nothing about fuel prices,’ Wandayi tells Gachagua
 event 'Gachagua press conference Nairobi' for 2026-w42-hot-1014 (10 Oct-15 Oct): 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 0, 'subject': 0}
 event 'Gachagua press' for 2026-w42-hot-1014 (10 Oct-15 Oct): 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 0, 'subject': 0}
 posted for 2026-w42-hot-1014: 1 matching reports (person 'wandayi', names ['gachagua', 'opiyo', 'wandayi'], words ['gachagua', 'press', 'conference'])
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
 file photo for 2026-w42-hot-1014: 2 recent reports name 'wandayi'
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
 file photo from Capital FM: ‘You know nothing about fuel prices,’ Wandayi tells Gachagua
 posted for 2026-w42-hot-1015: 5 matching reports (person '', names ['epra', 'vat'], words ['parliament', 'approved', 'fuel', 'relief', 'extension'])
 picked Capital FM (7): Ruto signs fuel VAT extension as motorists react to EPRA’s latest pric
 posted for 2026-w42-hot-1016: 5 matching reports (person '', names ['vat', 'kra'], words ['fraud', 'fake', 'invoices'])
 Nation page not read: HTTP Error 403: Forbidden
-skipped Capital FM: image too small or not a photo (https://capitalfm.africa/wp-content/uploads/news/2023/11/Online-Fraud.)
-skipped KBC: image too small or not a photo (https://www.kbc.co.ke/wp-content/uploads/2026/09/hammer-1.jpeg)
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
-file photo for 2026-w42-hot-1016: 9 recent reports name 'vat'
-skipped Kenyans.co.ke: image too small or not a photo (https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
-file photo from Capital FM: Ruto signs fuel VAT extension as motorists react to EPRA’s latest pric
+skipped Capital FM: image too small or not a photo (838x558, https://capitalfm.africa/wp-content/uploads/news/2023/11/Online-Fraud.)
+skipped KBC: image too small or not a photo (540x360, https://www.kbc.co.ke/wp-content/uploads/2026/09/hammer-1.jpeg)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+file photo for 2026-w42-hot-1016: 8 recent reports name 'kra'
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+skipped Kenyans.co.ke: image too small or not a photo (700x350, https://www.kenyans.co.ke/files/styles/article_style/public/images/med)
+commons 'Kenyan shilling banknotes and calculator' for 2026-w42-hot-1016: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'shilling banknotes calculator Kenyan' for 2026-w42-hot-1016: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'shilling banknotes' for 2026-w42-hot-1016: 25 found, 2 usable, dropped {'size': 4, 'licence': 0, 'place': 19, 'subject': 0}
 event 'Kenya civil service Nairobi' for 2026-w42-hot-1017 (13 Oct-18 Oct): 30 found, 0 usable, dropped {'size': 6, 'licence': 0, 'date': 24, 'subject': 0}
 event 'civil service Nairobi Kenya' for 2026-w42-hot-1017 (13 Oct-18 Oct): 30 found, 0 usable, dropped {'size': 6, 'licence': 0, 'date': 24, 'subject': 0}
 event 'civil service' for 2026-w42-hot-1017 (13 Oct-18 Oct): 30 found, 0 usable, dropped {'size': 9, 'licence': 0, 'date': 15, 'subject': 6}
