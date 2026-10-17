@@ -19,7 +19,8 @@ class ListenerTests(unittest.TestCase):
         self.assertEqual(listener.classify(tap(1), CHAT), "tap")
         self.assertIsNone(listener.classify(tap(2, chat="7"), CHAT))
         self.assertEqual(listener.classify({"update_id": 3, "message": {"chat": {"id": 42}, "video": {}}}, CHAT), "clip")
-        self.assertIsNone(listener.classify({"update_id": 4, "message": {"chat": {"id": 42}, "text": "hi"}}, CHAT))
+        # a text from the owner is now a note for Claude: it wakes the run that saves it
+        self.assertEqual(listener.classify({"update_id": 4, "message": {"chat": {"id": 42}, "text": "hi"}}, CHAT), "clip")
 
     def test_ack_says_what_happened(self):
         self.assertIn("Approved", listener.ack_text(tap(1, "a|w|p")))

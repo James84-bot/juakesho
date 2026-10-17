@@ -1067,6 +1067,16 @@ def collect() -> None:
                 tg("sendMessage", {"chat_id": allowed_chat, "text": "🔇 Presenter voice off. Tap ✅ Use this voice on any "
                                    "voice sample to turn it back on.", "reply_to_message_id": msg["message_id"]})
                 continue
+            text = str(msg.get("text", "")).strip()
+            if text and not text.startswith("/"):   # a note to the team: kept so Claude can read it, never lost
+                with (STATE / "inbox.jsonl").open("a", encoding="utf-8") as f:
+                    f.write(json.dumps({"at": now().isoformat(), "text": text[:4000]}, ensure_ascii=False) + "\n")
+                try:
+                    tg("sendMessage", {"chat_id": allowed_chat, "reply_to_message_id": msg["message_id"],
+                                       "text": "📝 Noted. Your message is saved for Claude to read and act on."})
+                except Exception as e:
+                    log(f"note reply skipped: {e}")
+                continue
             if _voice_of(msg):            # a voice note or audio file: the presenter's voice reference
                 _voice_intake(msg, allowed_chat)
             elif _is_image(msg):          # a photo you replied to a card with: swaps that post's picture
