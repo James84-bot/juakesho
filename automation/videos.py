@@ -107,7 +107,7 @@ def pexels_video(query: str, pid: str) -> tuple[str, dict] | None:
         slug = urllib.parse.unquote(str(v.get("url", ""))).lower()
         # Pexels returns any skyline for "Nairobi skyline": the clip's page must name the place (Nairobi) and,
         # when the query has one, the distinctive subject (Longonot); "Kenya" alone names nothing
-        if (named and named not in slug) or (core and not any(w[:5] in slug for w in core)) or not (named or core):
+        if not _named_in(slug, query):
             continue
         files = sorted((f for f in v.get("video_files", []) if f.get("file_type") == "video/mp4"
                         and max(f.get("width") or 0, f.get("height") or 0) >= 1080),
@@ -121,16 +121,32 @@ def pexels_video(query: str, pid: str) -> tuple[str, dict] | None:
     return None
 
 
+KENYA_RX = re.compile(r"\b(kenya|kenyan|nairobi|mombasa|kisumu|nakuru|eldoret|naivasha|malindi|lamu|diani|"
+                      r"maasai|masai|mara|amboseli|tsavo|samburu|turkana|kilifi|nanyuki|thika|machakos|kiambu)\b", re.I)
+
+
 def _named_in(text: str, query: str) -> bool:
-    """The clip's own words (tags, page address) name the place and, when the query has one, the subject:
-    'Nairobi skyline' needs Nairobi; 'Mount Longonot Kenya' needs Longonot. 'Kenya' alone names nothing."""
-    text = text.lower()
+    """The clip's own words (tags, page address) name the place and the subject asked for.
+    'Nairobi skyline' needs Nairobi; 'Mount Longonot Kenya' needs Longonot. A search about Kenya needs the clip to
+    be in Kenya: Seoul's National Assembly and US dollar bills share our words but are not our story."""
+    low = text.lower()
     place = photos._place(query).lower()
     named = place if place and place not in GENERIC_PLACES else ""
     core = [w for w in photos._core(query) if w not in GENERIC_WORDS]
     if not (named or core):
         return False
-    return (not named or named in text) and (not core or any(w[:5] in text for w in core))
+    if named and named not in low:
+        return False
+    if core and not any(w[:5] in low for w in core):
+        return False
+    if KENYA_RX.search(query) or photos.LOCAL.search(query):
+        # a proper name in the query (Longonot, Makupa) is itself Kenyan; otherwise the clip must say Kenya
+        proper = [w.lower() for w in re.findall(r"\b[A-Z][a-z]{4,}\b", query)
+                  if w.lower() not in GENERIC_WORDS and not photos.LOCAL.fullmatch(w)]
+        own_name = [w for w in proper if w not in {"national", "assembly", "parliament", "bridge", "market", "hospital"}]
+        if not KENYA_RX.search(low) and not any(w in low for w in own_name):
+            return False
+    return True
 
 
 def _pixabay_search(query: str, key: str) -> dict:

@@ -83,6 +83,16 @@ class Sources(unittest.TestCase):
         os.environ.pop("PIXABAY_API_KEY", None)
         self.assertIsNone(videos.pixabay_video("Nairobi skyline", "p"))
 
+    def test_a_clip_about_kenya_must_be_in_kenya(self):
+        # live check, 17 Oct 2026: these two passed the first filter
+        seoul = "Seoul, Hangang River, Yeouido, National Assembly, Night View, South Korea, Skyline"
+        usd = "Money, Cash, Bank, Banknote, Bill, Currency, Dollar, Usd, Dollar Bill, One Hundred"
+        self.assertFalse(videos._named_in(seoul, "National Assembly Kenya"))
+        self.assertFalse(videos._named_in(usd, "Kenyan shilling banknotes"))
+        self.assertTrue(videos._named_in("Kenya, parliament, Nairobi, National Assembly", "National Assembly Kenya"))
+        self.assertTrue(videos._named_in("longonot, crater, volcano, hiking", "Mount Longonot Kenya"))
+        self.assertFalse(videos._named_in("crater, volcano, hiking, iceland", "Mount Longonot Kenya"))
+
     def test_a_stranger_filling_the_frame_is_skipped_on_critical_posts(self):
         with tempfile.TemporaryDirectory() as d:
             post = {"id": "p", "template": "sauti", "beats": ["x"] * 3, "photo_kind": "symbolic", "photo_query": "Nairobi CBD"}
