@@ -157,6 +157,20 @@ NEVER_WORDS = {"leverage", "seamless", "game-changer", "game changer", "cutting-
                # brand-speak: we are wananchi, not a company
                "we're excited", "we are excited", "stay tuned", "don't miss", "let us know your thoughts",
                "check out our", "in this post", "dear followers", "kindly engage"}
+# Habits that make our copy read careless or uneducated to informed readers (the visible text and the Reel lines;
+# a direct quote inside "..." is exempt: we quote people exactly).
+CARELESS = [
+    (r"\btoo bad\b", "'too bad' reads as a careless aside: state the fact"),
+    (r"\b\d+\s*bob\b", "slang money ('50 bob'): write Sh50"),
+    (r"\.\.\.|\u2026", "ellipsis teaser: say the whole thing in one sentence"),
+    (r"\bmeanwhile in\b", "teaser fragment ('Meanwhile in...'): state the fact plainly"),
+    (r"\bwhere does our money go\b|\bwhat are we doing about\b|\bwho is fooling who\b",
+     "vague rhetorical question: ask the named office something it can answer"),
+    (r"\b(smh|lol|lmao|wtf|bruh|sasa what)\b", "slang: write it the way a newspaper would"),
+    (r"\bk?sh\s?[\d.,]+\s?(bn|tn|tm|tr|m|b)\b", "abbreviated money: write Sh4 billion or Sh10.5 trillion in full"),
+    (r"\bksh\b|\bkes\b|\bkshs\b", "write Sh (Sh4 billion), as Kenyan newspapers do, not Ksh or KES"),
+    (r"!{2,}|\?{2,}", "repeated punctuation"),
+]
 # Tribe: we call out divisive politics (quote it, name who said it, source it), we never practise it.
 TRIBE_TALK = r"\b(tribe|tribes|tribal|tribalism|kabila|ukabila)\b"
 CALLOUT_TEMPLATES = {"straight", "sauti", "promise", "cap", "hack", "kumbuka", "scorecard"}
@@ -410,16 +424,18 @@ def check(post: dict) -> Report:
     beats = post.get("beats")
     if beats is not None:
         if not isinstance(beats, list) or not 3 <= len(beats) <= 6:
-            rep.errors.append("'beats' (the Reel script) needs 3-6 short lines")
+            rep.errors.append("'beats' (the Reel script) needs 3-5 complete sentences")
         else:
             for i, b in enumerate(beats):
                 words = len(str(b).replace("*", "").split())
-                if not isinstance(b, str) or len(b.replace("*", "")) > 44 or words > 8:
-                    rep.errors.append(f"beats[{i}] must be one punchy line: max 8 words / 44 characters")
+                if not isinstance(b, str) or len(b.replace("*", "")) > 80 or words > 12:
+                    rep.errors.append(f"beats[{i}] must be one sentence: max 12 words / 80 characters")
+                elif not re.search(r"[.?!\"\u201d]$", b.replace("*", "").strip()):
+                    rep.errors.append(f"beats[{i}] must be a complete sentence ending in a full stop or question mark")
                 elif str(b).count("*") % 2:
                     rep.errors.append(f"beats[{i}]: unbalanced *marker*")
     elif tpl in REEL_FIRST:
-        rep.warnings.append("no `beats`: the Reel falls back to the animated card (write 3-6 punchy lines)")
+        rep.warnings.append("no `beats`: the Reel falls back to the animated card (write 3-5 complete sentences)")
     if tpl == "promise" and len(str(post.get("measure") or "")) > 16:
         rep.errors.append("'measure' is over 16 chars (e.g. '0 of 6', '12%')")
     for w in BLOCK:
@@ -431,6 +447,14 @@ def check(post: dict) -> Report:
     for w in NEVER_WORDS:
         if re.search(rf"(?<![a-z]){re.escape(w)}", low):
             rep.errors.append(f"sounds AI-written: '{w}' (say it the way a Kenyan would)")
+    unquoted = low
+    for f in ("sms", "claim", "promise", "said", "quote"):   # other people's exact words, shown as they wrote them
+        if isinstance(post.get(f), str) and post[f].strip():
+            unquoted = unquoted.replace(post[f].lower(), " ")
+    unquoted = re.sub(r"\"[^\"]*\"|\u201c[^\u201d]*\u201d", " ", unquoted)
+    for rx, why in CARELESS:
+        if re.search(rx, unquoted):
+            rep.errors.append(f"reads careless: {why}")
     if "\u2014" in text or " \u2013 " in text:
         rep.errors.append("sounds AI-written: em dash; use a full stop or a comma")
     if re.search(TRIBE_TALK, low) and tpl not in CALLOUT_TEMPLATES:

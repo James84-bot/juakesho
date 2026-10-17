@@ -27,11 +27,10 @@
       "source": "Affordable Housing Act, 2024 (s.4: 1.5% of gross salary); Social Health Insurance Act, 2023 and Social Health Insurance (General) Regulations, 2024 (2.75% of gross salary)",
       "caption": "Check your payslip. 1.5% housing levy + 2.75% SHIF, every month. We pay. One question: what are we getting? 👇🏾\n\nWhat have you seen from this money? Drop it in the comments.\n\n#HousingLevy #KenyansAreAsking",
       "beats": [
-        "Check your payslip.",
-        "*4.25%* gone before you see it.",
-        "1.5% housing levy.",
-        "2.75% SHIF.",
-        "Tunalipa. *Tunapata nini?*"
+        "Before your salary arrives, *4.25%* has gone to two levies.",
+        "The housing levy takes 1.5% of gross pay.",
+        "SHIF takes another 2.75%.",
+        "What have the two deductions delivered so far?"
       ],
       "action": "Check the levy lines on your payslip, then ask your MP what they bought",
       "who": "Parliament and the National Treasury",
@@ -45,7 +44,7 @@
       "id": "01-hack-lecture-notes",
       "template": "hack",
       "bg": "usiku",
-      "hook": "nobody told you this…",
+      "hook": "a faster way to revise",
       "title": "Turn a 1-hour lecture into notes in *2 minutes*",
       "moves": [
         "Record the lecture on your phone (ask the lecturer first).",
@@ -75,13 +74,12 @@
       "message": "On 10 August 2027 you elect six leaders, each with a different job.",
       "photo_query": "ballot box polling station Kenya",
       "source": "Constitution of Kenya 2010, Articles 95, 96, 97, 177, 180, 185; IEBC: general election on 10 August 2027 (standardmedia.co.ke/article/2001551158)",
-      "caption": "10 August 2027. Six ballots, one day. We all know the President and the Governor... but what does your MCA actually do? Save this before the campaign noise starts.\n\nTag a first-time voter.\n\n#Civic101 #KenyansAreAsking",
+      "caption": "10 August 2027. Six ballots, one day. Most voters know what the President and the Governor do. Fewer know what their MCA does. Save this before the campaign noise starts.\n\nTag a first-time voter.\n\n#Civic101 #KenyansAreAsking",
       "beats": [
-        "10 August 2027.",
-        "*Six* ballots. One day.",
-        "President. Governor. Senator.",
-        "MP. Woman Rep. MCA.",
-        "Know the job. *Then* pick the person."
+        "Kenya votes on *10 August 2027*.",
+        "Each voter will mark six ballots that day.",
+        "They choose a President, Governor, Senator, MP, Woman Rep and MCA.",
+        "Learn what each office does before you choose who fills it."
       ],
       "action": "Check you're registered: verify.iebc.or.ke or SMS your ID number to 70000",
       "side": "none",
@@ -91,7 +89,7 @@
       "id": "02-decode-prompt",
       "template": "decode",
       "bg": "usiku",
-      "hook": "everyone's saying it…",
+      "hook": "a word you keep hearing",
       "word": "Prompt",
       "number": 1,
       "meaning": "What you type to tell an AI what you want. Vague prompt, vague answer. Give it a role, a task and an example.",
@@ -115,11 +113,11 @@
       "source": "Constitution of Kenya 2010, Art. 118 (public participation in Parliament) and Art. 221 (budget estimates); Public Finance Management Act, 2012",
       "caption": "Every year the same story: Finance Bill comes, prices go up, we complain on X. This time we read it first. The Constitution gives us a say before MPs vote.\n\nShare this before it's tabled.\n\n#FinanceBill #KenyansAreAsking",
       "beats": [
-        "It comes back *every year.*",
-        "The Finance Bill sets your taxes.",
-        "Treasury drafts. MPs vote.",
-        "You have a right to be heard.",
-        "Read it. *Speak up.*"
+        "The Finance Bill returns to Parliament *every year*.",
+        "It sets the taxes you will pay.",
+        "Treasury drafts it and MPs vote on it.",
+        "You have a right to be heard before it passes.",
+        "Read the Bill and submit your views."
       ],
       "action": "Read the Bill on parliament.go.ke and send your view to the Finance Committee",
       "side": "none",
@@ -138,10 +136,9 @@
       "photo_query": "laptop code screen dark room",
       "beats": [
         "\"You need coding for AI.\"",
-        "*Cap.*",
-        "Most AI tools take plain English.",
-        "Build a bot this weekend.",
-        "No code. *Just start.*"
+        "That claim is *false*.",
+        "Most AI tools take instructions in plain English.",
+        "You can build a simple bot this weekend without writing code."
       ]
     },
     {
@@ -163,17 +160,17 @@
       "photo_query": "hand holding phone text message",
       "beats": [
         "\"Get paid to like TikToks.\"",
-        "Pay Ksh 500 to start?",
-        "*That's the scam.*",
-        "Real jobs never ask you to pay.",
-        "Send this to someone job hunting."
+        "Then they ask for *Sh500* to register.",
+        "That registration fee is the scam.",
+        "Real employers never ask you to pay to start.",
+        "Send this to someone who is job hunting."
       ]
     },
     {
       "id": "07-build-comrade",
       "template": "build",
       "bg": "usiku",
-      "hook": "I got tired of PDF timetables…",
+      "hook": "PDF timetables were slowing us down",
       "title": "So I built a bot that reads campus notices for me",
       "flow": [
         "Notice lands on WhatsApp",
@@ -207,11 +204,10 @@
       "symbol": "rocket",
       "photo_query": "M-Pesa shop Kenya",
       "beats": [
-        "2007. Kenya.",
-        "*M-Pesa* is born.",
-        "Money by SMS. For everyone.",
-        "The world followed.",
-        "We started it. *Wanakesho.*"
+        "M-Pesa launched in Kenya in *2007*.",
+        "It let anyone send money by SMS.",
+        "Mobile money services around the world followed.",
+        "Kenya started it."
       ]
     },
     {
@@ -252,7 +248,7 @@
       "template": "glasspoll",
       "size": "story",
       "bg": "usiku",
-      "hook": "be honest…",
+      "hook": "your honest answer",
       "question": "Would you let AI reply your DMs?",
       "options": [
         "Yes, save my time",
@@ -291,33 +287,31 @@
       "symbol": "eye",
       "photo_query": "laptop showing a map",
       "beats": [
-        "Built in *Kenya.*",
-        "Ushahidi. 2008.",
-        "Report by SMS. See it on a map.",
-        "Used by responders worldwide.",
-        "African tech *travels.*"
+        "Ushahidi was built in *Kenya* in 2008.",
+        "People report by SMS and see events on a map.",
+        "Emergency responders around the world use it.",
+        "African technology travels."
       ]
     },
     {
       "id": "14-money-idle-funds",
       "template": "money",
       "bg": "usiku",
-      "hook": "read that number again…",
-      "number": "Sh304bn",
+      "hook": "the Auditor-General's figure",
+      "number": "Sh304 billion",
       "unit": "idle in 14 flagship projects",
-      "what": "59% of the Sh515bn for 14 flagship projects was never used, says the Auditor-General.",
+      "what": "59% of the Sh515 billion for 14 flagship projects was never used, says the Auditor-General.",
       "why": "Idle money still costs us: fees on undrawn loans, and projects we never get.",
       "check": "Auditor-General reports are public on parliament.go.ke. Read one page tonight.",
       "source": "Auditor-General Nancy Gathungu to the National Assembly Budget Committee, 2 June 2025 (Capital FM: capitalfm.africa/audit-exposes-sh304bn-in-idle-govt-project-funds)",
-      "caption": "Sh304bn. Idle. Sitting there while loans charge fees. Receipts: the Auditor-General's report 👇🏾\n\nRead it, then share and ask your MP where the projects are.\n\n#FollowTheMoney #KenyansAreAsking",
+      "caption": "Sh304 billion meant for 14 flagship projects is lying idle while the loans behind it still charge fees. The Auditor-General's report is on parliament.go.ke.\n\nRead it, share it and ask your MP where the projects are.\n\n#FollowTheMoney #KenyansAreAsking",
       "symbol": "crane",
       "photo_query": "stalled construction site Kenya",
       "beats": [
-        "*Sh304bn.* Idle.",
-        "59% of the money. Never used.",
-        "14 flagship projects waiting.",
-        "And loans still charge fees.",
-        "Where is the money? *Read the report.*"
+        "*Sh304 billion* meant for 14 flagship projects is lying idle.",
+        "That is 59% of the money set aside for them.",
+        "The loans behind it still charge fees.",
+        "Which ministries hold the money, and when will the projects start?"
       ]
     },
     {
@@ -325,7 +319,7 @@
       "template": "hack",
       "bg": "usiku",
       "series": "See Through It",
-      "hook": "trending ≠ true…",
+      "hook": "trending is not the same as true",
       "title": "How to spot a *paid hashtag* in 30 seconds",
       "moves": [
         "Same phrase, many accounts, same hour? Copy-paste army.",
@@ -338,11 +332,11 @@
       "symbol": "puppet",
       "photo_query": "phone screen social media feed",
       "beats": [
-        "That trending hashtag?",
-        "Some get *$10-15 a day* to push it.",
-        "Same words. Same hour.",
-        "New accounts. Few real followers.",
-        "Check before you *share.*"
+        "Some trending hashtags are paid for.",
+        "Promoters are paid *$10-15 a day* to push them.",
+        "Look for identical posts sent within the same hour.",
+        "Check whether the accounts are new, with few real followers.",
+        "Check before you share."
       ]
     },
     {
@@ -384,10 +378,9 @@
       "photo_query": "map of Africa",
       "beats": [
         "\"Africa is one country.\"",
-        "*False.*",
-        "54 countries.",
-        "2,000+ languages.",
-        "One continent. *54 flags.*"
+        "That claim is *false*.",
+        "Africa has 54 countries.",
+        "Its people speak more than 2,000 languages."
       ]
     },
     {

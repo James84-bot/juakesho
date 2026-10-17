@@ -37,39 +37,35 @@ centres?"), to a named office, never an insult, then the one action.
 Line: "The ordinary Kenyan, asking with receipts." Hashtag: #KenyansAreAsking.
 Look: the colours of the Kenyan flag (black, white, red, green), real photos, bold headlines. Belongs to every Kenyan.
 
-WE ARE THE PEOPLE (the most important rule)
-- Kenyans don't react to raw knowledge. They react to their own thoughts said out loud. So every post starts from
-  what ordinary Kenyans already feel and say (in the matatu, on X, in the WhatsApp group): the payslip that shrinks,
-  the hospital with no drugs, the road that was "launched" three times, the job ads that want 5 years' experience.
-- Speak AS the people, not to them: "we", "our taxes", "we pay". Never lecture from above.
-- Then the receipt: one hard, sourced fact that proves the feeling right (or, honestly, corrects it).
-- Then the sarcasm: one dry line aimed at the system or the decision, never at a person's character
-  ("We're still waiting for the receipt." "Launched again. Third time lucky?").
-- Then what we do: one legal action, or a question that makes people comment and share.
-- Knowledge is still the payload (how the budget works, what your MP does), but it rides on a feeling people
-  already have. The feeling is the hook; the fact is the punch; the sarcasm is why they share it.
-- Headlines: wrap the 1-3 words that hit hardest in *asterisks* (they get the red marker), e.g.
-  "Every month *4.25%* of our pay goes to levies." One marker per headline, two at most.
+HOW WE WRITE (the most important rule: our readers are informed Kenyans)
+- Write to the standard of a good Kenyan newspaper editor, for readers who follow the news closely: complete,
+  grammatical sentences, exact names, offices, numbers and dates. Simple means clear, never dumbed down: short
+  sentences, common words, subject-verb-object, one fact per sentence.
+- State the news first, plainly: who did what, where, when, and the number. "KRA has uncovered a Sh4 billion VAT
+  fraud built on fake invoices." Then the detail that matters most, then what it means for the reader, then the
+  question. The reader should never have to guess what happened.
+- Our angle is the reader's stake: what it costs Kenyans, what it changes for their pay, services, rights or vote.
+  Say it with the number ("That is Sh80 for every Kenyan.") rather than with attitude.
+- The question goes to a named office and can be answered: "Who approved these invoices, and will anyone be
+  charged?" Never a vague or rhetorical one ("Where does our money go?", "What are we doing about it?").
+- No sarcasm, no sneering, no jokes about the news, no rhetorical teasers, no ellipses ("Meanwhile in government
+  offices..."), no fragments that only make sense with the next line, no slang or street numbers ("50 bob",
+  "Sh7.35bn" in a headline: write "Sh7.35 billion"). When facts contradict each other, state both facts side by
+  side and let the reader see it.
+- Headlines: one complete statement of the news, sentence case, with the number. Wrap the 1-3 words that matter
+  most in *asterisks* (they get the red marker), e.g. "KRA uncovers *Sh4 billion* VAT fraud built on fake invoices".
+  One marker per headline, two at most.
 
 VOICE
-- Plain Kenyan English first. Kiswahili or Sheng only where a Kenyan would genuinely say it that way, at most one
-  short phrase per post, never dropped in for flavour. Sprinkled Swahili reads machine-made, so when in doubt, leave
-  it out. Fact lines always in plain English. Brand terms stay as they are: Kenyans Are Asking, Usiibiwe, Promise Tracker, Set It Straight, Follow the Money.
-- Funny through situations and analogies (matatu, M-Pesa, mama mboga, Shosh), never by mocking people.
-- Simple words, short sentences, one idea per post. Practical: the reader can do something today.
-- Hopeful about the future and honest about risks.
+- Plain Kenyan English. Kiswahili only inside a direct quote. Fact lines always in plain English. Brand terms stay
+  as they are: Kenyans Are Asking, Usiibiwe, Promise Tracker, Set It Straight, Follow the Money.
+- Calm, exact and serious. Confidence comes from the receipts, not from tone. Respect the reader's intelligence.
+- Practical: the reader can verify the claim or act on it today.
 
-THE VOICE (Kenyans Are Asking is informed, ordinary Kenyans talking: wananchi who read the documents. Not a media house,
-not a brand, not a party. A collective "we"; it never claims to be one named person)
-- Who: the Kenyan who read the documents. Big-sibling energy: the friend who is always first to know,
-  explains it in two lines, asks the question everyone is thinking, and would never let you get scammed.
-- Traits: curious, quick, funny, a little extra. Proud of Africa without being defensive. Allergic to hype and to
-  anything that wastes your time or money.
-- Habits: talks to "you"; short sentences; plain English, no slang fillers; always ends with a nudge to act.
-- Consistent opinions: Africa can't wait. Free knowledge beats gatekept knowledge. Builders over complainers.
-  Verify before you share. Nobody should pay to get paid.
-- Running lines: "Kesho iko hapa"; "Where is the money?"; "Verify before you share"; Bwana Ahadi ("Mr Promise")
-  is the archetype for promises that never arrive (words only, never drawn)
+THE VOICE (Kenyans Are Asking is a collective of informed Kenyans who read the documents. Not a party; it never
+claims to be one named person)
+- Who: the reader's most reliable source. Checks before posting, gives the number and the document, asks the
+  question an informed citizen would ask.
 - Never: pretend to be a person, invent testimonials or reviews, fake numbers, beg for likes, attack people.
 
 CLEAN, NOT CHILDISH (hard rules)
@@ -88,7 +84,8 @@ FACTS
 - Predictions are phrased as likely, not certain.
 
 WHAT TRENDS (researched, 2026)
-- The first line is the hook: 7 words max, a pattern interrupt, curiosity or a bold claim. It must work in under 2 seconds.
+- The first line is the hook: the news itself, stated in one complete sentence with its number. A surprising,
+  exact fact stops the scroll; a teaser does not.
 - Design for SENDS: DM shares weigh far more than likes for reaching new people. Ask "who would send this to whom?"
   and write for that moment ("send this to your friend who...").
 - Saves come from genuinely useful posts (hacks, steps, prompts). Comments come from takes people want to argue with.
@@ -357,18 +354,21 @@ URGENT, NOT PARAGRAPHS
 - Never fake urgency: no invented deadlines, no "BREAKING" on old news, no exaggerated numbers. Real stakes only.
 
 REELS ARE SCRIPTS (`beats`, on every post)
-- Every post gets `beats`: 3-6 lines, max 8 words each, shown one at a time full screen over the photo.
-- Shape: 1 the hook (the shock or the stake, so they stop scrolling) - 2/3 the receipt (the number, the fact) -
-  4 what it means for us - 5 the sarcastic sting or the question - 6 the action ("Send this to...", "Read the report").
-- One *marker* on the word that hits hardest in a line, at most one per line. The first beat must work alone as a
-  thumbnail. Every number in the beats must already be in the post and its `source`.
+- Every post gets `beats`: 3-5 lines, max 12 words each, shown one at a time full screen over real photos of the
+  story. Each beat is a complete sentence that makes sense on its own: a viewer who sees only one still learns a fact.
+- Shape: 1 the news in one sentence, with the number (it is also the thumbnail) - 2 the key detail or the record -
+  3 what it means for Kenyans, in numbers - 4 the question to the named office - 5 (optional) where to check it.
+- One *marker* on the word that matters most in a line, at most one per line. Every number in the beats must
+  already be in the post and its `source`.
+- Example (KRA fraud): "KRA has uncovered a *Sh4 billion* VAT fraud." / "The scheme ran on invoices for goods that
+  were never sold." / "Honest traders and buyers paid that tax in full." / "Who approved the invoices, and will
+  anyone be charged?"
 
 SOUND HUMAN (Kenyans scroll past anything that smells of AI)
-- Write like a sharp Kenyan typing fast on their phone: short lines, contractions, plain English, one strong
-  opinion. Uneven rhythm is good. Don't make everything a neat list of three.
+- Write like an experienced Kenyan journalist: natural, varied sentence length, concrete detail, no padding. Don't
+  make everything a neat list of three.
 - Never: em dashes, "it's not just X, it's Y", "in today's world", "delve", "navigate", "landscape", "unlock",
   "elevate", "pivotal", "crucial", "harness", "foster", "here's the thing", "let's dive in". The checker blocks these.
-- Max one emoji per caption, often none. Hashtags only at the end, max three.
 
 PUBLIC OFFICE HOLDERS (criticise without fear, and without error)
 - Kenya's Constitution (Art. 33, 35) protects criticism of public officers. Defamation law and the Computer Misuse
@@ -435,7 +435,7 @@ SERIES = {
     "poll": "Your Say story poll: a question anyone can answer with 2 options.",
     "straight": "Set It Straight: a false or demeaning claim about Kenya/Africa (or a viral falsehood), answered with sourced facts. `claim` quoted exactly (max 120), `who` said it (max 44, e.g. 'a viral TikTok, May 2026'), `claim_source` where exactly, `verdict` false|misleading|missing_context, `truth` the headline fact (max 70), `proof` 2-3 short facts, `pride` a proud closing line (max 50), `source` for the facts. If a public office holder said it: `who` = 'Name, Office (where, date)', optional `person_photo` (commons:File:...) + `person_role`.",
     "promise": "Promise Tracker: one specific, checkable promise by a named public office holder, quoted exactly (`promise`), `who` = 'Name, Office', `said` where and when (e.g. 'Kenya Kwanza manifesto, 2022'), `verdict` kept|partly|stalled|broken|ignored|diverted judged ONLY from official or reputable records, optional `measure` (max 16 chars, e.g. '0 of 6', '12%'), `reality` what the record shows, `proof` 1-3 sourced facts, `ask` the accountability question (max 60). `source` required, with every document. Judge every side by the same standard. Optional licensed `person_photo` + `person_role`.",
-    "sauti": "Sauti ya Mwananchi (the people's voice, our signature format): a real photo fills the post. `kicker` who is talking, in English (max 24, e.g. 'Taxpayers', 'Students', 'Gen Z', 'Parents', 'Boda riders'), `line` the headline: what Kenyans are already thinking, in our voice, with one *marker* on the words that hit hardest and a sarcastic turn (max 120), `fact` the one sourced fact that proves it (max 150), `source` required, `photo_query` required (a real Kenyan scene that IS the feeling).",
+    "sauti": "Sauti ya Mwananchi (the people's voice, our signature format): a real photo fills the post. `kicker` who is talking, in English (max 24, e.g. 'Taxpayers', 'Students', 'Gen Z', 'Parents', 'Boda riders'), `line` the headline: the news as one complete, factual sentence with its number, one *marker* on the words that matter most (max 120), `fact` the one sourced fact that proves it (max 150), `source` required, `photo_query` required (the real institution or place the story is about), `who` the person or institution the story is about (exact name and office), `event_query` required.",
     "kumbuka": "Hatutasahau (We won't forget): one documented event where the state harmed Kenyans (protest killings, abductions, goons, deaths in custody). `date` (e.g. '25 June 2024'), `event` headline with one *marker* (max 100), `facts` 1-3 attributed facts (KNCHR, IPOA, courts, reputable media), `status` what accountability has followed (max 110), `ask` closing line (max 50, e.g. 'Hatutasahau.'), `source` with every link. Symbolic `photo_query` (candles, Kenyan flag, Parliament), never a crowd.",
     "scorecard": "The Chapter Six Test: one leader or serious 2027 candidate (any side) measured against Chapter Six of the Constitution and their record. `who` name (max 40), `office` current office or seat sought (max 50), `checks` 3-5 of {test (max 40, e.g. 'Kept their key promise', 'Court cases', 'Divisive statements', 'Shows up in the House'), result pass|fail|unclear, note (max 80, the evidence)}, `verdict` one line (max 70, never 'vote for/against'), `source` for every check. Same tests for every side. Optional licensed `person_photo` + `person_role`.",
     "money": "Follow the Money: one public-money number (`number` short like Sh304bn), `unit`, `what` it is, `why` it matters to a young person, `check` how to verify it themselves. Source required. Optional: the responsible office holder's licensed `person_photo` + `person_role` when the post is about their decision.",
@@ -467,7 +467,7 @@ def _field_spec(template: str) -> dict:
     if template == "kesho":
         spec.update({"n": "slide number", "total": "total slides"})
     if template in guard.REEL_FIRST:
-        spec["beats"] = "the Reel script: list of 3-6 lines, each max 8 words / 44 chars, one *marker* max per line"
+        spec["beats"] = "the Reel script: list of 3-5 complete sentences, each max 12 words / 80 chars, one *marker* max per line"
     return spec
 
 
@@ -601,7 +601,7 @@ EXAMPLES OF FINISHED POSTS (style reference only)
 
 Return ONLY JSON, no commentary:
 Every post also needs "message" (the one takeaway, max 120 chars), "action" (the one thing to do, max 90 chars),
-"beats" (the Reel script: 3-6 lines, max 8 words each, the LAST beat is the action) and, almost always, "photo_query" (a real scene).
+"beats" (the Reel script: 3-5 complete sentences, max 12 words each: the news, the detail, what it means, the question) and, almost always, "photo_query" (a real scene).
 {{"posts": [{{"id": "...", "template": "...", "lane": "...", "message": "...", "action": "...", "beats": ["...", "..."], "photo_query": "...", "caption": "...", "source": "...(when needed)", "...fields": "..."}}],
  "scripts": {{"radio": "...", "voice_note": "...", "sms": "...", "reels": "..."}}}}"""
     return system, user
@@ -870,16 +870,18 @@ def mock_draft(slots: list[dict]) -> dict:
 
 CRITIC_BAR = 8.0    # under this, one rewrite with the editor's note
 WEAK_FLOOR = 7.0
+LITERATE_FLOOR = 7.0   # careless or uneducated-sounding writing is held back whatever its other scores
 CRITIC_SLACK = 0.25  # dollars the critic may go past the budget: scoring every post is not optional    # still under this after the rewrite: held back, never sent for approval
 CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio. Score each post 1-10 on:
-- hook: would a 22-year-old in Nairobi stop scrolling within 2 seconds? does it say what Kenyans are already
-  thinking, instead of teaching from above?
+- hook: would an informed Kenyan stop scrolling within 2 seconds? is the first line the news itself, with an exact,
+  surprising fact (a teaser or a vague line scores low)?
 - send: is there an obvious person they'd DM this to? (sends drive reach)
 - clarity: a stranger can say exactly what this post is about from the headline alone (plain topic words,
   no vague teaser headlines, no jargon), one idea only
 - fresh: not generic advice they've seen 100 times; a real angle, a real Kenyan detail
-- voice: sounds like informed ordinary Kenyans posting on X/TikTok ("we", plain English with Kiswahili only where it's natural,
-  dry KOT sarcasm about the system), never a lecture, a textbook, a media house, a brand or an ad
+- literate: would a good Kenyan newspaper editor print every line as written? complete, grammatical sentences,
+  exact names and numbers, no slang, no sarcasm, no rhetorical teasers or fragments, no ellipses. Any line that
+  sounds careless or uneducated scores 4 or lower here, however catchy it is
 - craft: every word earns its place; the payoff lands
 - picture: do the `photo_query` scene and the headline ALONE deliver the `message` in one second? (a generic or
   decorative scene scores low; a concrete, real scene that IS the message scores high)
@@ -888,13 +890,13 @@ CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio.
 - impact: does it say plainly, with numbers where they exist, what this changes for an ordinary Kenyan (pocket,
   services, rights, safety, vote)? Repeating the headline without its effect on people scores low
 - fair: would the same post read the same if the other side had done it? credit and criticism both with receipts,
-  sarcasm at the decision or record, never an insult or our own verdict of guilt
+  facts about the decision or record, never an insult or our own verdict of guilt
 - action: does a Kenyan know exactly what to do next (where, how, by when), and is it real, legal and peaceful?
   No action, a vague one ("stay informed") or an invented channel scores low
-- hold: would they read or watch to the end? do the `beats` build like a short video (hook, receipt, stakes,
-  sting, action)? any paragraph-length text scores low
+- hold: would they read or watch to the end? does each beat add a new fact (news, detail, what it means, question)
+  as a complete sentence? any paragraph-length text scores low
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
-{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n, "fair": n, "impact": n,
+{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "literate": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n, "fair": n, "impact": n,
              "note": "the single most important fix, in one sentence"}]}"""
 
 
@@ -921,17 +923,26 @@ def critique(posts: list[dict]) -> dict[str, dict]:
             print(f"  critic batch skipped: {e}")
     out = {}
     for s in scores:
-        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold", "demand", "action", "fair", "impact")
+        keys = ("hook", "send", "clarity", "fresh", "literate", "craft", "picture", "hold", "demand", "action", "fair", "impact")
         vals = [float(s[k]) for k in keys if isinstance(s.get(k), (int, float))] or [0.0]
         out[s.get("id")] = {**{k: s.get(k) for k in keys}, "avg": round(sum(vals) / len(vals), 1), "note": s.get("note", "")}
     return out
+
+
+def _lit(score: dict) -> float:
+    v = score.get("literate")
+    return float(v) if isinstance(v, (int, float)) else 10.0   # not scored (old critic reply): never blocks
+
+
+def _weak(score: dict, bar: float) -> bool:
+    return score.get("avg", 0) < bar or _lit(score) < LITERATE_FLOOR
 
 
 def elevate(week_label: str, slots: list[dict], lanes: dict, posts: list[dict]) -> list[dict]:
     """Critic pass: anything under the bar gets one rewrite with the critic's notes, then is re-scored."""
     scores = critique(posts)
     # only posts the critic actually scored can be judged weak (a skipped critic batch never blocks the week)
-    weak = [p for p in posts if p["id"] in scores and scores[p["id"]]["avg"] < CRITIC_BAR and p.get("status") != "needs_human"]
+    weak = [p for p in posts if p["id"] in scores and _weak(scores[p["id"]], CRITIC_BAR) and p.get("status") != "needs_human"]
     if weak and can_afford(6000 + 900 * len(weak), 700 * len(weak)):
         system, _ = build_prompt(week_label, slots, lanes, [])
         notes = "\n".join(f"{p['id']} (avg {scores[p['id']]['avg']}): {scores[p['id']]['note']}" for p in weak)
@@ -952,7 +963,9 @@ def elevate(week_label: str, slots: list[dict], lanes: dict, posts: list[dict]) 
         if better:
             rescored = critique(list(better.values()))
             for pid, p in better.items():
-                if rescored.get(pid, {}).get("avg", 0) > scores[pid]["avg"]:  # keep a rewrite only if it scores higher
+                new, old = rescored.get(pid, {}), scores[pid]
+                # keep a rewrite only if it scores higher, or if it fixes writing that was below the literacy floor
+                if new.get("avg", 0) > old["avg"] or (_lit(new) >= LITERATE_FLOOR > _lit(old) and new.get("avg", 0) >= WEAK_FLOOR):
                     p["status"], p["guard"] = "drafted", {"errors": [], "warnings": checked[pid].warnings}
                     posts = [p if q["id"] == pid else q for q in posts]
                     scores[pid] = rescored[pid]
@@ -960,10 +973,12 @@ def elevate(week_label: str, slots: list[dict], lanes: dict, posts: list[dict]) 
         if p["id"] in scores:
             p["critic"] = scores[p["id"]]
             # weak content is not our way: still under the floor after a rewrite, it never reaches your phone
-            if scores[p["id"]]["avg"] < WEAK_FLOOR and p.get("status") == "drafted":
+            sc = scores[p["id"]]
+            if _weak(sc, WEAK_FLOOR) and p.get("status") == "drafted":
                 p["status"] = "needs_human"
-                p.setdefault("guard", {"errors": [], "warnings": []})["errors"] = (
-                    p.get("guard", {}).get("errors", []) + [f"weak: editor scored {scores[p['id']]['avg']}/10. {scores[p['id']]['note']}"])
+                why = (f"writing: editor scored it {_lit(sc):g}/10 for literacy. {sc['note']}" if _lit(sc) < LITERATE_FLOOR
+                       else f"weak: editor scored {sc['avg']}/10. {sc['note']}")
+                p.setdefault("guard", {"errors": [], "warnings": []})["errors"] = p.get("guard", {}).get("errors", []) + [why]
     return posts
 
 

@@ -543,11 +543,14 @@ class QualitySystemTests(unittest.TestCase):
 
     def test_reel_beats(self):
         import render, video
-        ok = self.base_straight(beats=["Check your payslip.", "*4.25%* gone.", "Tunalipa. *Tunapata nini?*"])
+        ok = self.base_straight(beats=["Before your salary arrives, *4.25%* has gone to two levies.",
+                                       "The housing levy takes 1.5% of gross pay.", "What have the deductions delivered?"])
         self.assertTrue(guard.check(ok).ok, guard.check(ok).errors)
-        long = self.base_straight(beats=["This line is far too long to read in one second on a phone", "b", "c"])
-        self.assertTrue(any("punchy line" in e for e in guard.check(long).errors))
-        self.assertTrue(any("3-6" in e for e in guard.check(self.base_straight(beats=["a"])).errors))
+        long = self.base_straight(beats=["This line is far too long to read on a phone before the next one comes up.", "b.", "c."])
+        self.assertTrue(any("one sentence" in e for e in guard.check(long).errors))
+        fragment = self.base_straight(beats=["Meanwhile in government offices", "b.", "c."])
+        self.assertTrue(any("complete sentence" in e for e in guard.check(fragment).errors))
+        self.assertTrue(any("3-5" in e for e in guard.check(self.base_straight(beats=["a"])).errors))
         self.assertEqual(render.beat_tokens("We pay *4.25% now* ok"), [("We", False), ("pay", False), ("4.25%", True), ("now", True), ("ok", False)])
         self.assertTrue(render.BEAT["min"] <= render.beat_seconds("one two three four five six seven eight") <= render.BEAT["max"])
         reel = video.beat_reel({**ok, "id": "x"})
@@ -1207,6 +1210,38 @@ class VisualQATests(unittest.TestCase):
             render.render([good, broken], Path(d), qa=qa)
         self.assertEqual(qa[good["id"]], [])
         self.assertTrue(any(k in i["what"] for i in qa["qa-broken"] for k in ("collides", "off the canvas", "wider than its box")))
+
+
+class WritingTests(unittest.TestCase):
+    """Informed readers: no careless habits in our own words; other people's quoted words stay as they were."""
+    def post(self, **kw):
+        return {"id": "w-x", "template": "sauti", "kicker": "Taxpayers", "fact": "KRA uncovered a Sh4 billion VAT fraud.",
+                "source": "https://www.kra.go.ke/news", "photo_query": "Times Tower Nairobi", "caption": "Share this.",
+                "line": "KRA uncovers *Sh4 billion* VAT fraud built on fake invoices.", **kw}
+
+    def test_careless_habits_are_blocked(self):
+        for line, why in [("Too bad our IDs are still stuck at Huduma.", "too bad"), ("Miss 50 bob and tokens stop.", "slang money"),
+                          ("Meanwhile in government offices...", "ellipsis"), ("Where does our money go?", "rhetorical"),
+                          ("Kenya owes *Sh10.5tn* today.", "abbreviated money"), ("Ksh 4 billion lost in VAT fraud.", "write Sh")]:
+            errors = guard.check(self.post(line=line)).errors
+            self.assertTrue(any(why in e for e in errors), (line, errors))
+        self.assertTrue(guard.check(self.post()).ok, guard.check(self.post()).errors)
+
+    def test_quoted_words_are_exempt(self):
+        r = guard.check(self.post(line='MP says "too bad for the poor" as levy rises.'))
+        self.assertFalse([e for e in r.errors if "careless" in e], r.errors)
+
+    def test_writing_below_the_literacy_floor_never_reaches_the_phone(self):
+        import draft
+        base = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"]
+        hack = next(p for p in base if p["template"] == "hack")
+        posts = [{**hack, "id": "w-1", "status": "drafted"}]
+        score = {"id": "w-1", "hook": 9, "send": 9, "clarity": 9, "fresh": 9, "literate": 4, "craft": 9, "note": "Fragments."}
+        with mock.patch.object(draft, "call_claude", lambda *a, **k: json.dumps({"scores": [score]}) if a[0].startswith("You are")
+                               else json.dumps({"posts": []})), mock.patch.object(draft, "can_afford", lambda *a, **k: True):
+            out = draft.elevate("2026-W43", [], {}, posts)
+        self.assertEqual(out[0]["status"], "needs_human")
+        self.assertTrue(any(e.startswith("writing:") for e in out[0]["guard"]["errors"]))
 
 
 class CriticTests(unittest.TestCase):
