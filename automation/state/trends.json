@@ -1,112 +1,46 @@
 {
-  "fetched": "2026-10-17T06:06:13.099605+00:00",
+  "fetched": "2026-10-17T08:07:07.844391+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "everton vs chelsea",
+      "title": "nairobi building collapse moi avenue",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Photos: Former Club Avenida building on Moi Avenue collapses, four injured",
+          "url": "https://nation.africa/kenya/news/photos-former-club-avenida-building-on-moi-avenue-collapses-5635446",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Four Injured as Nairobi CBD Building Collapses During Night Demolition",
+          "url": "https://www.kenyans.co.ke/news/127901-four-injured-nairobi-cbd-building-collapses-during-night-demolition",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Four injured as building collapses along Moi Avenue in Nairobi",
+          "url": "https://www.the-star.co.ke/news/2026-10-17-four-injured-as-building-collapses-along-moi-avenue",
+          "source": "The Star, Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "elon musk tesla roadster flying car",
       "traffic": "200+",
       "news": [
         {
-          "title": "Everton vs Chelsea: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c6398j10mrrxt",
+          "title": "Watch: Did Tesla really just unveil a flying car?",
+          "url": "https://www.bbc.com/news/videos/ckly4mj1g3n9o",
           "source": "BBC"
         },
         {
-          "title": "Predicted line-ups for Premier League teams in Matchweek 7",
-          "url": "https://www.premierleague.com/en/news/4737644/predicted-line-ups-for-matchweek-7",
-          "source": "Premier League"
+          "title": "Tesla's new Roadster turns in air with SpaceX thrusters, won't land until 2028",
+          "url": "https://www.reuters.com/business/autos-transportation/tesla-set-unveil-next-generation-roadster-sports-ev-after-years-delay-2026-10-15/",
+          "source": "Reuters"
         },
         {
-          "title": "Triple Fitness Update As Moyes Reveals Everton Team News For Chelsea Test",
-          "url": "https://www.evertonfc.com/news/2026/october/16/Chelseateamnews/",
-          "source": "Everton FC"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "brentford vs liverpool prediction",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Premier League predictions & Jones Knows' best bets: Brentford vs Liverpool, Leeds vs Manchester United and more",
-          "url": "https://www.skysports.com/football/news/13598732/premier-league-predictions-and-jones-knows-best-bets-brentford-vs-liverpool-leeds-vs-manchester-united-and-more",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Brentford v Liverpool team news: Schade and Schuster injury update",
-          "url": "https://www.brentfordfc.com/en/news/first-team-news-brentford-v-liverpool-premier-league-kevin-schade-jannik-schuster",
-          "source": "Brentford FC"
-        },
-        {
-          "title": "Brentford v Liverpool: Team news",
-          "url": "https://www.liverpoolfc.com/news/brentford-v-liverpool-team-news-premier-league",
-          "source": "Liverpool FC"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "levante fc",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Deportivo de A Coruña vs Levante: Spanish La Liga stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c61wv0zyjqe8t",
-          "source": "BBC"
-        },
-        {
-          "title": "Deportivo v Levante | Match Highlights | LaLiga EA Sports Matchday 9",
-          "url": "https://supersport.com/football/video/e268bbc3-7d1e-4cf0-9f43-956293a7618e/deportivo-v-levante-match-highlights-laliga-ea-sports-matchday-9",
-          "source": "supersport.com"
-        },
-        {
-          "title": "October 18, 2026: Milan vs Atalanta: First Half Winner Soccer Prediction Market",
-          "url": "https://robinhood.com/us/en/prediction-markets/soccer/events/milan-vs-atalanta-first-half-winner-oct-18-2026/",
-          "source": "Robinhood"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "andré onana",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "VIDEO: Andre Onana suffers fresh embarrassment as Man Utd loanee concedes directly from corner in Trabzonspor blunder",
-          "url": "https://www.goal.com/en-ke/lists/video-andre-onana-man-utd-loanee-corner-trabzonspor-blunder/blt4a02bf01555a7436",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Andre Onana goes from hero to zero in nightmare Conference League moment",
-          "url": "https://talksport.com/football/4647146/andre-onana-nightmare-moment-trabzonspor-man-utd/",
-          "source": "talkSPORT"
-        },
-        {
-          "title": "Andre Onana: Man United flop makes latest stunning blunder for Trabzonspor",
-          "url": "https://sports.yahoo.com/articles/andre-onana-man-united-flop-050000602.html",
-          "source": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mikel arteta",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Mikel Arteta: Arsenal boss told job cuts made to \"achieve the success we want to create\"",
-          "url": "https://www.bbc.com/sport/football/articles/cr3wv4xd2l6yo",
-          "source": "BBC"
-        },
-        {
-          "title": "Arsenal set to layoff 60 staff despite recent success",
-          "url": "https://insidersport.com/2026/10/16/sideline-moves-arsenal-staff-layoffs/",
-          "source": "Insider Sport"
-        },
-        {
-          "title": "Mikel Arteta defends job cuts at Arsenal to help club ‘evolve and create success’",
-          "url": "https://www.theguardian.com/football/2026/oct/16/mikel-arteta-defends-job-cuts-at-arsenal-to-help-club-evolve-and-create-success",
+          "title": "Elon Musk reveals ‘world’s first flying car’ at Tesla event",
+          "url": "https://www.theguardian.com/technology/2026/oct/16/elon-musk-reveals-worlds-first-flying-car-spacex",
           "source": "The Guardian"
         }
       ]
@@ -114,29 +48,29 @@
     {
       "geo": "KE",
       "title": "australia vs new zealand",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
-          "title": "New Zealand v Australia: All Blacks power past Wallabies 50-19 to retain Bledisloe Cup",
-          "url": "https://www.bbc.com/sport/rugby-union/articles/c9zrdl4028mko",
-          "source": "BBC"
-        },
-        {
-          "title": "‘It’s on this group’: Harry Wilson’s message before Bledisloe II",
-          "url": "https://www.rugbypass.com/news/its-on-this-group-harry-wilsons-message-before-bledisloe-ii/",
-          "source": "Rugbypass.com"
-        },
-        {
-          "title": "Wallabies seek to rediscover optimism after pain of Bledisloe Cup humbling | Jack Snape",
-          "url": "https://www.theguardian.com/sport/2026/oct/16/rugby-wallabies-all-blacks-aus-nz-bledisloe-cup-2026-second-test",
+          "title": "Australia 21-43 New Zealand: Bledisloe Cup rugby union international – as it happened",
+          "url": "https://www.theguardian.com/sport/live/2026/oct/17/aus-vs-nz-australia-wallabies-v-new-zealand-all-blacks-bledisloe-cup-rugby-union-test-live-updates",
           "source": "The Guardian"
+        },
+        {
+          "title": "Rampant All Blacks crush Wallabies 43-21 to extend dominance",
+          "url": "https://www.france24.com/en/live-news/20261017-rampant-all-blacks-crush-wallabies-43-21-to-extend-dominance",
+          "source": "France 24"
+        },
+        {
+          "title": "New Zealand beat Australia 43:21 in the Bledisloe Cup — The Guardian",
+          "url": "https://ua.news/en/sport/nova-zelandiia-obigrala-avstraliiu-43-21-u-kubku-bledislou-the-guardian",
+          "source": "UA.NEWS"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "court",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "IG Kanja wins police recruitment battle as court limits NPSC powers",
@@ -149,12 +83,56 @@
           "source": "Citizen Digital"
         },
         {
-          "title": "IG has power to hire police officers, Appeals Court deals blow to NPSC",
-          "url": "https://www.standardmedia.co.ke/article/2001560267/ig-has-power-to-hire-police-officers-appeals-court-deals-blow-to-npsc",
-          "source": "The Standard"
+          "title": "Court of Appeal upholds decision stripping NPSC of police recruitment role",
+          "url": "https://www.the-star.co.ke/news/2026-10-16-court-strips-npsc-of-police-recruitment-powers",
+          "source": "The Star, Kenya"
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "betis vs barcelona",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Betis - Barcelona: El Betis mide su osadía contra el mejor del mundo",
+          "url": "https://www.abc.es/deportes/alfinaldelapalmera/noticias-betis/betis-barcelona-betis-prueba-traje-ilusion-20261017133103-nts.html",
+          "source": "ABC"
+        },
+        {
+          "title": "Antes del fuego de La Cartuja: Pellegrini revela su plan mágico para derribar al Barcelona",
+          "url": "https://es-us.noticias.yahoo.com/deportes/fuego-cartuja-pellegrini-revela-plan-123706558.html",
+          "source": "Yahoo"
+        },
+        {
+          "title": "Examen de altura en La Cartuja",
+          "url": "https://onefootball.com/es/noticias/examen-de-altura-en-la-cartuja-43620998",
+          "source": "OneFootball"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "venezia vs napoli",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "La casa di recupero Allegri rilancia anche Beukema: oggi a Venezia giocano cinque ospiti della struttura",
+          "url": "https://www.ilnapolista.it/2026/10/la-casa-di-recupero-allegri-accoglie-anche-beukema-oggi-a-venezia-giocano-cinque-ospiti-della-struttura/",
+          "source": "ilNapolista"
+        },
+        {
+          "title": "Venezia-Napoli streaming gratis: dove vederla live oggi",
+          "url": "https://cybernews.com/it/guardare-online/venezia-vs-napoli-streaming-gratis-serie-a-2026-10-17/",
+          "source": "Cybernews"
+        },
+        {
+          "title": "Venezia-Napoli, le ultime di formazione: da Lucca a De Bruyne, Hainaut, Hojlund, Yeboah, Lang e Giovane",
+          "url": "https://www.sosfanta.com/news/probabili-formazioni-venezia-napoli-lucca-hojlund-de-bruyne-giovane-hainaut-yeboah/",
+          "source": "SOS Fanta"
+        }
+      ]
     },
     {
       "geo": "KE",
@@ -181,12 +159,16 @@
   ],
   "dropped": [
     {
-      "title": "newcastle vs aston villa",
-      "why": "unsafe: 'Bet'"
+      "title": "fulham vs hull city prediction",
+      "why": "unsafe: 'Betting'"
     },
     {
-      "title": "katie zacharia",
-      "why": "unsafe: 'fire'"
+      "title": "espanyol vs atlético madrid",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "douglas kanja lazarus opicho tribute",
+      "why": "unsafe: 'funeral'"
     }
   ],
   "errors": {}
