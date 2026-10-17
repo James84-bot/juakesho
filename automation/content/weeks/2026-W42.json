@@ -345,7 +345,7 @@
       ],
       "bg": "chai",
       "publish_at": "2026-10-17T11:00:00+03:00",
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -371,7 +371,11 @@
       "photo_credit": "Photo: Arthur Buliva / Wikimedia Commons, CC BY-SA 3.0",
       "reel": true,
       "decided_at": "2026-10-13T04:49:37.372350+03:00",
-      "fresh_checked": "2026-10-16T10:17:36.022421+03:00"
+      "fresh_checked": "2026-10-16T10:17:36.022421+03:00",
+      "published_at": "2026-10-17T11:02:08.014152+03:00",
+      "ig_id": "18114586352115085",
+      "fb_id": "1792905908685387",
+      "story_id": "17874728445637159"
     },
     {
       "id": "2026-w42-d7-glasspoll-r3",
