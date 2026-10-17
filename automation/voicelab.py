@@ -7,9 +7,8 @@ Two engines, both open source and free for commercial use, run on GitHub's free 
   * Chatterbox-Turbo (MIT, Resemble AI): clones a voice from a 5 s+ reference clip. Every file it makes carries
     Resemble's inaudible Perth watermark, so the audio can always be identified as AI-made.
 
-The presenter must sound Kenyan, and no free model ships a Kenyan voice, so the character voice is made from a
-real Kenyan recording given with consent (James's own voice note to the bot). It is then shifted into a distinct
-character with plain ffmpeg filters, so it does not sound like James.
+The presenter must sound Kenyan, and no free model ships a Kenyan voice, so his voice is cloned from James's own
+recording (Kenyan English, his accent). The 'full' and Swahili-tuned engines keep that accent most closely.
 
     python voicelab.py kokoro       # synthetic voices: accent check + CPU speed, sent to Telegram
     python voicelab.py clone        # the character voices from the newest voice note James sent the bot
@@ -53,10 +52,12 @@ KOKORO_VOICES = [("am_michael", "American male"), ("am_fenrir", "American male, 
 # Character voices made from one clean clone. asetrate shifts pitch and formants together (a different-sounding
 # person, not a chipmunk at these small steps); atempo puts the speed back; the EQ/compressor give broadcast body.
 BODY = "highpass=f=70,equalizer=f=180:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.2:g=2,acompressor=threshold=-18dB:ratio=3:attack=10:release=120,loudnorm=I=-16:TP=-1.5:LRA=11"
-CHARACTERS = [
-    ("Calm anchor", "Your clone, deeper and slower: steady and trusted", 0.92, 0.97),
-    ("Street reporter", "Your clone, a little brighter and quicker: young and energetic", 1.05, 1.04),
-    ("Your voice, polished", "Your own voice, studio-cleaned and a touch slower: the most natural", 1.0, 0.97),
+CHARACTERS = [   # (name, what it is, rate, tempo, engine)
+    ("Kenyan accent", "Your voice from the full model, which keeps your Kenyan accent most closely", 1.0, 0.98, "full"),
+    ("Kenyan accent, Swahili-tuned", "Your voice with the model set to Swahili sounds: the strongest Kenyan accent, "
+     "but test it: it can bend a few English words", 1.0, 0.98, "sw"),
+    ("Calm anchor", "Fast model, your voice a little deeper and slower: steady and trusted", 0.92, 0.97, "turbo"),
+    ("Your voice, polished", "Fast model, your own voice studio-cleaned and a touch slower", 1.0, 0.97, "turbo"),
 ]
 
 
@@ -191,27 +192,37 @@ def stand_in(tmp: Path) -> Path:
 def clone(out: Path, dry: bool, selftest: bool = False) -> None:
     import torch
     import torchaudio as ta
-    from chatterbox.tts_turbo import ChatterboxTurboTTS
     with tempfile.TemporaryDirectory() as t:
-        ref = stand_in(Path(t)) if selftest else reference(Path(t))
-        t0 = time.time()
-        model = ChatterboxTurboTTS.from_pretrained(device="cpu")
-        load = time.time() - t0
-        t0 = time.time()
-        parts = [model.generate(line, audio_prompt_path=str(ref)) for line in LINES]
-        took = time.time() - t0
-    gap = torch.zeros(1, int(model.sr * 0.35))
-    wav = torch.cat([x for p in parts for x in (p, gap)], dim=1)
-    base = out / "clone.wav"
-    ta.save(str(base), wav, model.sr)
-    dur = seconds(base)
-    log(f"clone: {dur:.1f}s audio in {took:.1f}s (+{load:.0f}s model load)")
+        ref = str(stand_in(Path(t)) if selftest else reference(Path(t)))
+        bases, timing = {}, []
+        for eng in dict.fromkeys(c[4] for c in CHARACTERS):
+            try:
+                t0 = time.time()
+                engine(eng)
+                load = time.time() - t0
+                t0 = time.time()
+                parts = [say(eng, line, ref) for line in LINES]
+                took = time.time() - t0
+            except Exception as e:   # one engine failing never blocks the others
+                log(f"{eng} failed: {str(e)[:200]}")
+                continue
+            sr = engine(eng).sr
+            gap = torch.zeros(1, int(sr * 0.35))
+            base = out / f"clone-{eng}.wav"
+            ta.save(str(base), torch.cat([x for p in parts for x in (p, gap)], dim=1), sr)
+            bases[eng] = base
+            dur = seconds(base)
+            timing.append(f"{eng}: {dur:.0f} s in {took:.0f} s")
+            log(f"clone {eng}: {dur:.1f}s audio in {took:.1f}s (+{load:.0f}s model load)")
     note(("🧪 <b>Voice lab self-test</b> (a stand-in voice, not yours): proves the clone works on our free machines. "
-          if selftest else "🎙 <b>Voice lab 2/2: the presenter's voice</b>, made from your recording on our own free machines. ") +
-         f"{dur:.0f} s of speech took {took:.0f} s ({dur / max(took, 0.01):.2f}× real time). "
-         "Pick the one that sounds right; each carries an inaudible AI watermark.", dry)
-    for name, why, rate, tempo in CHARACTERS:
-        mp3 = to_mp3(base, out / f"{name.lower().replace(' ', '-')}.mp3", rate, tempo)
+          if selftest else "🎙 <b>The presenter's voice</b>, made from your recording on our own free machines "
+          f"({'; '.join(timing)}). ") +
+         "Listen for the Kenyan accent and tap ✅ on the one that sounds most like a Kenyan presenter. "
+         "Each carries an inaudible AI watermark.", dry)
+    for name, why, rate, tempo, eng in CHARACTERS:
+        if eng not in bases:
+            continue
+        mp3 = to_mp3(bases[eng], out / f"{name.lower().replace(' ', '-').replace(',', '')}.mp3", rate, tempo)
         send(mp3, name, f"<b>{name}</b>: {why}", dry, None if selftest else name)
     if not dry and not selftest:   # the tick only remakes the voice when a newer recording arrives
         rec = json.loads(VOICE_STATE.read_text())
@@ -220,12 +231,12 @@ def clone(out: Path, dry: bool, selftest: bool = False) -> None:
         VOICE_STATE.write_text(json.dumps(rec, indent=2) + "\n")
 
 
-def chosen() -> tuple[str, float, float] | None:
-    """The character voice James picked (name, rate, tempo), or None: no presenter until he picks one."""
+def chosen() -> tuple[str, float, float, str] | None:
+    """The character voice James picked (name, rate, tempo, engine), or None: no presenter until he picks one."""
     if os.environ.get("PRESENTER", "").lower() in {"0", "off", "no"} or not VOICE_STATE.exists():
         return None
     name = json.loads(VOICE_STATE.read_text()).get("chosen")
-    return next(((n, r, t) for n, _, r, t in CHARACTERS if n == name), None)
+    return next(((n, r, t, e) for n, _, r, t, e in CHARACTERS if n == name), None)
 
 
 def choose(name: str) -> bool:
@@ -250,26 +261,46 @@ def choose_off() -> None:
 _MODEL: dict = {}
 
 
-def speak(lines: list[str], out_wav: Path, character: tuple[str, float, float], gap: float = 0.28,
+def engine(name: str):
+    """The Chatterbox model behind a character, loaded once per run. 'full' (500M) and 'sw' (multilingual, Swahili
+    phonetics) follow the reference speaker's accent more closely than 'turbo' (350M, fastest)."""
+    if name not in _MODEL:
+        if name == "turbo":
+            from chatterbox.tts_turbo import ChatterboxTurboTTS as M
+        elif name == "full":
+            from chatterbox.tts import ChatterboxTTS as M
+        else:
+            from chatterbox.mtl_tts import ChatterboxMultilingualTTS as M
+        _MODEL[name] = M.from_pretrained(device="cpu")
+    return _MODEL[name]
+
+
+def say(name: str, text: str, ref: str):
+    """One line in the reference speaker's voice, with the engine's own settings."""
+    m = engine(name)
+    if name == "turbo":
+        return m.generate(text, audio_prompt_path=ref)
+    if name == "full":   # cfg 0.5 keeps the reference's accent and rhythm (Chatterbox lowers it to drop an accent)
+        return m.generate(text, audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.5)
+    return m.generate(text, language_id="sw", audio_prompt_path=ref, exaggeration=0.5, cfg_weight=0.5)
+
+
+def speak(lines: list[str], out_wav: Path, character: tuple, gap: float = 0.28,
           stand_in_voice: bool = False) -> list[float]:
     """Reads each line in the presenter's voice into one wav (44.1 kHz mono, broadcast-polished) and returns how
     long each line lasts in it, gap included, so the Reel can hold each beat exactly as long as it is spoken."""
     import numpy as np
     import soundfile as sf
-    import torch
-    from chatterbox.tts_turbo import ChatterboxTurboTTS
-    _, rate, tempo = character
+    _, rate, tempo, eng = character
     with tempfile.TemporaryDirectory() as t:
         t = Path(t)
         if "ref" not in _MODEL or not Path(_MODEL["ref"]).exists():
             keep = Path(tempfile.mkdtemp(prefix="voice-ref-"))
             _MODEL["ref"] = str(stand_in(keep) if stand_in_voice else reference(keep))
-        if "tts" not in _MODEL:
-            _MODEL["tts"] = ChatterboxTurboTTS.from_pretrained(device="cpu")
-        model = _MODEL["tts"]
+        model = engine(eng)
         raw, lens = [], []
         for line in lines:
-            wav = model.generate(line.replace("*", ""), audio_prompt_path=_MODEL["ref"]).squeeze(0).numpy()
+            wav = say(eng, line.replace("*", ""), _MODEL["ref"]).squeeze(0).numpy()
             pad = np.zeros(int(model.sr * gap), dtype=wav.dtype)
             raw += [wav, pad]
             lens.append((len(wav) + len(pad)) / model.sr)

@@ -79,7 +79,7 @@ class VoiceChoice(unittest.TestCase):
         self.assertIsNone(voicelab.chosen())
 
     def test_tapping_use_this_voice_in_telegram_picks_it(self):
-        tap = {"update_id": 9, "callback_query": {"id": "q", "data": "v|voice|Street reporter",
+        tap = {"update_id": 9, "callback_query": {"id": "q", "data": "v|voice|Kenyan accent",
                                                    "message": {"chat": {"id": 42}}}}
         with tempfile.TemporaryDirectory() as d, \
              mock.patch.object(pipeline, "STATE", Path(d)), \
@@ -87,7 +87,8 @@ class VoiceChoice(unittest.TestCase):
              mock.patch.object(pipeline, "tg", return_value={"result": [tap]}), \
              mock.patch.object(pipeline, "_answer") as answer, mock.patch.object(pipeline, "_notify"):
             pipeline.collect()
-        self.assertEqual(voicelab.chosen()[0], "Street reporter")
+        self.assertEqual(voicelab.chosen()[0], "Kenyan accent")
+        self.assertEqual(voicelab.chosen()[3], "full")
         self.assertIn("presenter's voice", answer.call_args[0][1])
 
     def test_unknown_voice_is_refused(self):
