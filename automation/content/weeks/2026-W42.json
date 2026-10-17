@@ -724,7 +724,7 @@
       "bg": "usiku",
       "publish_at": "2026-10-17T18:30:00+03:00",
       "hot": true,
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -755,7 +755,11 @@
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
       "reel": true,
       "tg_msg": 212,
-      "decided_at": "2026-10-17T09:49:02.810565+03:00"
+      "decided_at": "2026-10-17T09:49:02.810565+03:00",
+      "published_at": "2026-10-17T18:32:10.463333+03:00",
+      "ig_id": "17924334150214039",
+      "fb_id": "1840391166988725",
+      "story_id": "17998037901019979"
     }
   ],
   "scripts": {
