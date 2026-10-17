@@ -1,28 +1,6 @@
 {
-  "fetched": "2026-10-17T08:18:42.912990+00:00",
+  "fetched": "2026-10-17T08:39:59.234364+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "standard group ceo resigns",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Standard Group CEO Resigns, Company Announces Immediate Board Changes",
-          "url": "https://www.kenyans.co.ke/news/127893-standard-group-ceo-chacha-mwita-resigns-company-announces-three-board-changes",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Chaacha Mwita resigns as Standard Group chief executive in board shake-up",
-          "url": "https://peopledaily.digital/news/chaacha-mwita-resigns-as-standard-group-chief-executive-in-board-shake-up",
-          "source": "People Daily"
-        },
-        {
-          "title": "Standard Group Appoints Three New Directors After Resignations",
-          "url": "https://thekenyatimes.com/latest-kenya-times-news/standard-group-appoints-three-new-directors-after-resignations/",
-          "source": "The Kenya Times"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "nairobi building collapse moi avenue",
@@ -78,14 +56,14 @@
           "source": "The Guardian"
         },
         {
-          "title": "Rampant All Blacks crush Wallabies 43-21 to extend dominance",
-          "url": "https://www.france24.com/en/live-news/20261017-rampant-all-blacks-crush-wallabies-43-21-to-extend-dominance",
+          "title": "Wallabies coach Kiss calls latest All Blacks humbling 'unacceptable'",
+          "url": "https://www.france24.com/en/live-news/20261017-wallabies-coach-kiss-calls-latest-all-blacks-humbling-unacceptable",
           "source": "France 24"
         },
         {
-          "title": "New Zealand beat Australia 43:21 in the Bledisloe Cup — The Guardian",
-          "url": "https://ua.news/en/sport/nova-zelandiia-obigrala-avstraliiu-43-21-u-kubku-bledislou-the-guardian",
-          "source": "UA.NEWS"
+          "title": "Wallabies player ratings: All Blacks exploit 'lost' Joseph-Aukuso Sua'ali'i while outside backs flex 'attacking prowess' in defeat",
+          "url": "https://www.planetrugby.com/news/wallabies-player-ratings-all-blacks-exploit-lost-joseph-aukuso-suaalii-while-outside-backs-flex-attacking-prowess-in-defeat",
+          "source": "Planet Rugby"
         }
       ]
     },
@@ -100,9 +78,9 @@
           "source": "Daily Nation"
         },
         {
-          "title": "Court of Appeal upholds ruling giving IG power to recruit police officers",
-          "url": "https://citizen.digital/article/court-of-appeal-upholds-ruling-giving-ig-power-to-recruit-police-officers-n392176",
-          "source": "Citizen Digital"
+          "title": "IG has power to hire police officers, Appeals Court deals blow to NPSC",
+          "url": "https://www.standardmedia.co.ke/article/2001560267/ig-has-power-to-hire-police-officers-appeals-court-deals-blow-to-npsc",
+          "source": "The Standard"
         },
         {
           "title": "Court of Appeal upholds decision stripping NPSC of police recruitment role",
@@ -128,9 +106,9 @@
           "source": "Mundo Deportivo"
         },
         {
-          "title": "Código promocional Marca Apuestas TOPESP: Supercuota 5,00 al triunfo del Barcelona en el Betis vs Barcelona (LaLiga)",
-          "url": "https://www.eurosport.es/apuestas/pronosticos/codigo-promocional-marca-apuestas-topesp-supercuota-500-al-triunfo-del-barcelona-en-el-betis-vs-barcelona-laliga/",
-          "source": "Eurosport"
+          "title": "Betis - Barcelona: a qué hora es el partido de LaLiga y dónde ver en televisión y online hoy",
+          "url": "https://www.abc.es/deportes/futbol/ver-television-online-betis-barcelona-hora-partido-20261017050035-nt.html",
+          "source": "ABC"
         }
       ]
     },
@@ -150,9 +128,31 @@
           "source": "Cybernews"
         },
         {
-          "title": "Venezia-Napoli, le ultime di formazione: da Lucca a De Bruyne, Hainaut, Hojlund, Yeboah, Lang e Giovane",
-          "url": "https://www.sosfanta.com/news/probabili-formazioni-venezia-napoli-lucca-hojlund-de-bruyne-giovane-hainaut-yeboah/",
-          "source": "SOS Fanta"
+          "title": "VENEZIA-NAPOLI, MCTOMINAY CAMBIA RUOLO: LE ULTIME",
+          "url": "https://www.napolicalcionews.it/news-calcio-napoli/Venezia-Napoli--McTominay-cambia-ruolo--le-ultime-150776.aspx",
+          "source": "NapoliCalcioNews.it"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "great white shark",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "'What the hell did this?': The orca brothers preying on great white sharks",
+          "url": "https://www.bbc.com/future/article/20261015-sharks-washed-up-one-after-another-after-another-why-orcas-are-hunting-great-whites",
+          "source": "BBC"
+        },
+        {
+          "title": "'Aggressive' great white shark spotted off coast of California beach... as experts warn that it is hungry",
+          "url": "https://www.dailymail.com/news/article-16208361/Aggressive-great-white-shark-California-beach-hungry.html",
+          "source": "Daily Mail"
+        },
+        {
+          "title": "Surfer speaks after spotting great white shark off Huntington Beach coast",
+          "url": "https://www.cbsnews.com/losangeles/video/surfer-speaks-after-spotting-great-white-shark-off-huntington-beach-coast/",
+          "source": "CBS News"
         }
       ]
     }
