@@ -48,6 +48,25 @@ class Performance(unittest.TestCase):
             self.assertLess(abs(deg), 2)
 
 
+class RealMouth(unittest.TestCase):
+    def test_real_teeth_fill_the_opening_anchored_at_the_top(self):
+        out = np.full((200, 200, 3), 120, np.uint8)
+        tex = np.zeros((20, 60, 3), np.uint8)
+        tex[:6] = 240                                                  # upper teeth: bright band at the top
+        real = {"tex": tex, "mask": np.full((20, 60), 255, np.uint8), "width": 60.0}
+        up = np.array([[70, 100], [100, 98], [130, 100]], np.float32)
+        lo = np.array([[70, 100], [100, 116], [130, 100]], np.float32)
+        self.assertTrue(living._real_interior(out, up, lo, real))
+        self.assertGreater(out[101, 100].mean(), 180)                  # teeth just under the upper lip
+        self.assertLess(out[112, 100].mean(), 60)                      # dark mouth below
+        self.assertEqual(out[150, 100].mean(), 120)                    # nothing outside the lips changes
+
+    def test_a_closed_mouth_shows_no_interior(self):
+        out = np.full((50, 50, 3), 120, np.uint8)
+        line = np.array([[10, 20], [25, 20], [40, 20]], np.float32)
+        self.assertFalse(living._real_interior(out, line, line, {"tex": np.zeros((5, 5, 3), np.uint8)}))
+
+
 class Crop(unittest.TestCase):
     def test_head_and_shoulders_at_the_window_size(self):
         img = np.zeros((900, 700, 3), np.uint8)
