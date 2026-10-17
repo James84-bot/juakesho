@@ -760,13 +760,80 @@
       "ig_id": "17924334150214039",
       "fb_id": "1840391166988725",
       "story_id": "17998037901019979"
+    },
+    {
+      "id": "2026-w42-hot-1017e",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 1,
+      "kicker": "Taxpayers",
+      "line": "President William Ruto has signed *two new tax bills* into law following approval by Parliament.",
+      "fact": "State House confirmed the signing after MPs approved both tax bills in Parliament.",
+      "source": "Tuko News, 2026-10-17",
+      "beats": [
+        "President Ruto signed *two tax bills* into law today.",
+        "Parliament passed both bills before sending them to State House.",
+        "Every new tax measure directly hits *household budgets*.",
+        "Kenyans demand: State House *publishes* the full signed texts."
+      ],
+      "message": "President Ruto signed two new tax bills into law as Kenyans demand transparent tax schedules.",
+      "action": "Read the signed tax legislation on parliament.go.ke to verify upcoming levy changes.",
+      "who": "President William Ruto",
+      "where": "Nairobi",
+      "when": "17 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "New tax provisions alter deductions and product levies on ordinary consumers.",
+      "photo_query": "National Treasury Nairobi",
+      "event_query": "Ruto State House Nairobi",
+      "caption": "State House confirms President William Ruto has signed two tax bills into law after passage by MPs.\n\nWhat it means for you: changes to levies alter what you take home and spend.\n\nKenyans demand: the National Treasury publishes the complete tax schedules immediately.\n\nHow will new tax laws affect your pocket?\n\n#FinanceBill #Taxation #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-17T22:20:00+03:00",
+      "hot": true,
+      "avoid": [
+        "84 HR officers were sent on 30 days leave over Sh6.2bn payroll fraud while Kenyans demand stolen funds back."
+      ],
+      "source_links": [
+        {
+          "outlet": "Tuko News",
+          "title": "Passed by MPs: Ruto signs 2 tax bills into law, State House issues statement",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbzhkc2ZtZkhpa08zaWRiU1FicnlEd25mMUd5UVlybHNnZ1JxMWpiNDlzSkRKVmhPbUh0al9yYVRWZnBLakUzcDc1WFFRRHNnZE91SUNQcVJfaE9fQWw5ZElsZDFsckVuc0gySU1VeExHX2JVVnJhaEtVR1hwWnlYUlhwdXpIWk9EZ0swREtPRzV4d1o5MV96d2pjRDdsU3MzOUdSSEJHQmpRbHhG?oc=5",
+          "published": "2026-10-17"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 5.8/10. Name the specific tax bills and state the exact levies changed rather than using vague 'two tax bills' phrasing."
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 6,
+        "fresh": 4,
+        "voice": 7,
+        "craft": 6,
+        "picture": 4,
+        "hold": 5,
+        "demand": 9,
+        "action": 6,
+        "fair": 7,
+        "impact": 6,
+        "avg": 5.8,
+        "note": "Name the specific tax bills and state the exact levies changed rather than using vague 'two tax bills' phrasing."
+      },
+      "drafted_at": "2026-10-17T19:22:30.708142+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening and welcome to Kenya on Record. Today, we address a critical ruling that reshapes the governance of law enforcement in our country.\n\nFor over a decade, there has been an institutional tug-of-war between the National Police Service Commission and the Inspector General over who holds the legal power to recruit, hire, and deploy officers. This week, the Court of Appeal brought that contest to an end. The appellate judges ruled that the command and recruitment of police personnel rest firmly with the Inspector General, not the civilian commission.\n\nWhy does this matter to ordinary Kenyans? Every recruitment season, thousands of our youth gather on dusty sports grounds across the counties, seeking an honest livelihood. Too often, the process is clouded by claims of bribery, irregular lists, and finger-pointing between the Commission and the police command. With the court firmly placing hiring powers on the IG's desk, administrative excuses must end. The authority is unified, and so is the responsibility for fairness, transparency, and integrity.\n\nKwa ufupi: Mahakama ya Rufaa imeamua rasmi kwamba mamlaka ya kuajiri maafisa wapya wa polisi yako mikononi mwa Inspekta Jenerali, wala si Tume ya Huduma ya Polisi, NPSC. Sasa kwa vile utata wa kisheria umeondolewa, wajibu wa kuhakikisha zoezi la uajiri linafanyika kwa uwazi, haki, na bila ufisadi upo kwenye dawati la Inspekta Jenerali pekee.\n\nKeep the record straight, and hold power accountable.",
-    "voice_note": "Habari zenu. Here is an important accountability update for your week. You probably know about the long-running dispute between the National Police Service Commission and the Inspector General regarding who actually controls recruitment. The Court of Appeal has now settled the matter: the power to recruit police officers lies with the Inspector General, not the NPSC. This is significant. For years, whenever scandals hit recruitment drives—whether extortion or skewed quotas—the two bodies traded blame. Now, the law is clear. The buck stops directly with the Inspector General. As citizens, when the next recruitment drive opens, we know exactly who is responsible for ensuring the process is clean and merit-based. Please share this note with anyone preparing for the next intake.",
-    "sms": "Usiibiwe: The Court of Appeal ruled the IG controls police hiring. Recruitment drives are free by law. Anyone demanding money for a police slot is a con artist.",
-    "reels": "Who really controls who enters the police service? For years, the National Police Service Commission and the Inspector General fought over hiring authority. Now, the Court of Appeal has made the final call: recruitment belongs to the Inspector General. Why does this matter? Because accountability stops at one desk. No more institutional blame games. Next recruitment season, we know exactly who to hold responsible."
+    "radio": "Good evening and welcome to Kenya on Record. Let us talk plainly about our money. This week, President William Ruto signed two new tax bills into law. Even before the ink dries, citizens across the country are asking a fundamental question: where are the transparent schedules? Over the last two years, Kenyans have weathered shifting tax brackets, sudden levies, and deductions that leave payslips looking leaner by the month. What the public is demanding now is not unreasonable. It is basic fiscal decency. If the government expects citizens and small businesses to carry an increased burden, it must provide a clear, plain-language breakdown of what is being taxed, when it takes effect, and exactly where that revenue is channeled. Revenue mobilization cannot succeed in an environment of confusion and distrust. As these laws come into force, do not simply accept unexplained deductions. Review your payslip, question unexpected charges on your invoices, and ask your elected leaders why these schedules were not made public beforehand. We must normalize holding the state accountable for every shilling it takes from our pockets.\n\nKwa ufupi: Rais ametia saini miswada miwili mipya ya ushuru kuwa sheria wiki hii. Wananchi wanadai uwazi kamili na ratiba iliyo wazi ya makato hayo. Kagua mshahara wako kwa makini, uliza maswali, na udai uwajibikaji kutoka kwa viongozi wako.",
+    "voice_note": "Hey everyone, quick update from Kenya on Record. So, the President officially signed two new tax bills into law this week. Whatever your view on government revenue, one thing is non-negotiable: transparency. Right now, Kenyans are demanding clear, publicly available tax schedules. We have seen too many instances where new laws pass and citizens are left confused by sudden deductions on their payslips or unexpected costs at the till. A government that respects its taxpayers must explain clearly who is paying what, starting when, and for what purpose. As these laws roll out, please take a close look at your payslips and business invoices this month. Don't just absorb unexplained charges quietly. Ask the tough questions, share this note with your colleagues, and let’s keep our eyes on the numbers.",
+    "sms": "Usiibiwe: New tax laws are signed. Check your payslip deductions carefully this month and demand clear explanations from KRA on any new charges.",
+    "reels": "Two new tax bills are now law, signed by the President this week. But here is the real issue: where are the transparent schedules? Kenyans aren't asking for favours—we are asking for clarity. If the state expects you to dig deeper into your pocket, it owes you an exact breakdown of what changes, when it starts, and where that money goes. Stay awake. Check your payslips."
   },
   "spend_usd": 3.0807,
   "revision": 3
