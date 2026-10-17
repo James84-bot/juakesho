@@ -193,9 +193,58 @@ def beats_segment(env, post: dict, beats: list[str], kicker: str, out_mp4: Path,
     return dur
 
 
+SIGN_OFF = "Facts today. A better Kenya tomorrow."
+PRESENTER_W = 440          # px on the 1080-wide Reel: head and shoulders, bottom-right, clear of the lines
+VOICE_DELAY = 0.15         # s of air before the first word
+
+
+def voice_for(post: dict, lines: list[str], work: Path) -> dict | None:
+    """The presenter reads the beats, then the sign-off. None when no voice has been chosen yet, or if anything
+    fails: a voiced Reel is a bonus and must never stop the post."""
+    try:
+        import voicelab
+        character = voicelab.chosen()
+        if not character:
+            return None
+        wav = work / "voice.wav"
+        durs = voicelab.speak(lines + [SIGN_OFF], wav, character, stand_in_voice=bool(os.environ.get("VOICE_STAND_IN")))
+        script = " ".join(l.replace("*", "") for l in lines + [SIGN_OFF])
+        return {"wav": wav, "durs": durs[:-1], "tail": durs[-1], "script": script, "name": character[0]}
+    except Exception as e:
+        print(f"  voice skipped for {post['id']}: {str(e)[:200]}")
+        return None
+
+
+def mix_voice(ff: str, voice: Path, bed: Path, out: Path) -> None:
+    """The voice up front, the music bed low underneath, as long as the bed."""
+    ms = int(VOICE_DELAY * 1000)
+    subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(bed), "-i", str(voice), "-filter_complex",
+                    f"[0:a]volume=0.16[b];[1:a]adelay={ms}|{ms},apad[v];[b][v]amix=inputs=2:duration=first:normalize=0[a]",
+                    "-map", "[a]", "-ar", "44100", "-ac", "2", str(out)], check=True)
+
+
+def add_presenter(ff: str, reel: Path, voice: dict, work: Path, seed: int) -> None:
+    """Lays the talking presenter over the finished Reel (same audio), in place."""
+    import presenter
+    mov = presenter.talk(voice["wav"], voice["script"], work / "presenter.mov", ff, seed)
+    out = work / "voiced.mp4"
+    graph = presenter.overlay_graph("0:v", "pv", "v", width=PRESENTER_W, right=20)
+    subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(mov),
+                    "-filter_complex", f"[1:v]setpts=PTS-STARTPTS+{VOICE_DELAY}/TB[pv];" + graph,
+                    "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                    "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart", str(out)], check=True)
+    shutil.move(str(out), str(reel))
+
+
 def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
     is_story = post.get("size", "post") == "story"
     beats = beat_reel(post)
+    voice_dir = Path(tempfile.mkdtemp(prefix="reel-voice-"))
+    voice = voice_for(post, beats["beats"], voice_dir) if beats and post.get("template") != "tazama" else None
+    render.SPOKEN.clear()
+    if voice:   # each line stays up exactly as long as the presenter takes to say it
+        render.SPOKEN.update(zip(beats["beats"], voice["durs"]))
+        beats["presenter"] = True
     if beats:   # the Reel is its own script: one punchy line at a time, over the real photo
         html = render.build_html(env, beats, motion=True, reel=False)
         starts, t = [], 0.0
@@ -209,7 +258,8 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         tmp = Path(tmp)
         (tmp / "page.html").write_text(html, encoding="utf-8")
         _open(page, tmp / "page.html")
-        dur = round(t + 1.2, 2) if beats else duration_for(post, page.evaluate("window.__motionEnd()"))
+        tail = max(1.2, voice["tail"] + VOICE_DELAY + 0.3) if voice else 1.2   # the sign-off is said over the last line
+        dur = round(t + tail, 2) if beats else duration_for(post, page.evaluate("window.__motionEnd()"))
         frames = int(dur * FPS)
         render_frames(tmp / "page.html", tmp, frames, alpha=bool(footage))
         seed = zlib.crc32(post["id"].encode()) % 1000
@@ -221,6 +271,9 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
             sound.write_wav(sound.tension(dur, starts if beats else [0.0], seed), tmp / "audio.wav")
         else:
             sound.write_wav(sound.bed(dur, seed), tmp / "audio.wav")
+        if voice:
+            shutil.move(str(tmp / "audio.wav"), str(tmp / "bed.wav"))
+            mix_voice(ff, voice["wav"], tmp / "bed.wav", tmp / "audio.wav")
         target_mp4 = out_dir / f"{post['id']}.mp4"
         if footage:   # real moving footage underneath, the design frames on top
             cmd = [ff, "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(post["video_file"]),
@@ -238,6 +291,13 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
                    "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
                    "-shortest", "-movflags", "+faststart", str(target_mp4)]
         subprocess.run(cmd, check=True)
+        render.SPOKEN.clear()
+        if voice:
+            try:
+                add_presenter(ff, target_mp4, voice, voice_dir, seed)
+                post["voiced"] = voice["name"]
+            except Exception as e:   # the Reel without the presenter is still a good Reel
+                print(f"  presenter skipped for {post['id']}: {str(e)[:200]}")
         # Cover frame: the hook line fully landed (beat Reels), or the fully-built design
         from PIL import Image
         cover = min(frames - 1, int((min(1.2, render.beat_seconds(beats["beats"][0]) - 0.2)) * FPS)) if beats else frames - 1
@@ -246,6 +306,7 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
                             "-frames:v", "1", "-q:v", "3", str(out_dir / f"{post['id']}-cover.jpg")], check=True)
         else:
             Image.open(tmp / f"f{cover:04d}.jpg").convert("RGB").save(out_dir / f"{post['id']}-cover.jpg", quality=90)
+    shutil.rmtree(voice_dir, ignore_errors=True)
     return target_mp4
 
 

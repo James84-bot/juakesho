@@ -163,8 +163,14 @@ def mark(text: str) -> Markup:
 BEAT = {"min": 1.5, "max": 3.4, "base": 0.9, "per_word": 0.3}   # seconds on screen per Reel beat
 
 
+SPOKEN: dict[str, float] = {}   # beat text -> seconds it takes the presenter to say it (set while a voiced Reel renders)
+
+
 def beat_seconds(text: str) -> float:
-    """How long one Reel line stays up: enough to read it twice at a fast scroll."""
+    """How long one Reel line stays up: enough to read it twice at a fast scroll, or, in a voiced Reel, exactly
+    as long as the presenter takes to say it."""
+    if text in SPOKEN:
+        return SPOKEN[text]
     n = len(plain(text).split())
     return round(min(BEAT["max"], max(BEAT["min"], BEAT["base"] + BEAT["per_word"] * n)), 2)
 
