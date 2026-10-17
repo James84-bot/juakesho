@@ -188,6 +188,31 @@ class FilePhoto(unittest.TestCase):
         with mock.patch.object(posted, "feed_items", lambda: items), mock.patch.object(posted, "_get", lambda u, timeout=20: jpeg()):
             self.assertEqual(posted.find_named(post)[1]["url"], "https://k.test/new")
 
+    def test_same_surname_different_person_is_not_a_file_photo(self):
+        # live check, 17 Oct 2026: Hassan Omar (UDA) got a photo of Ilhan Omar (US Congress)
+        post = {"id": "p", "who": "Hassan Omar, UDA Secretary-General", "message": "IEBC says dead voters cannot vote."}
+        items = [self.item("Federal raid on Ilhan Omar's home signals threat to her US citizenship", "https://k.test/ilhan", 1),
+                 self.item("IEBC summons Hassan Omar over deceased voters remarks", "https://k.test/hassan", 3)]
+        with mock.patch.object(posted, "feed_items", lambda: items), mock.patch.object(posted, "_get", lambda u, timeout=20: jpeg()):
+            self.assertEqual(posted.find_named(post)[1]["url"], "https://k.test/hassan")
+
+    def test_a_tax_is_not_an_institution(self):
+        # live check: a VAT-fraud post got a photo of a fuel-VAT story
+        post = {"id": "p", "who": "Kenya Revenue Authority", "message": "KRA uncovered Sh4bn in fake VAT invoices."}
+        items = [self.item("Ruto signs fuel VAT extension", "https://k.test/fuel", 1)]
+        with mock.patch.object(posted, "feed_items", lambda: items), mock.patch.object(posted, "_get", lambda u, timeout=20: jpeg()):
+            self.assertIsNone(posted.find_named(post))
+        items.append(self.item("KRA boss speaks on revenue targets", "https://k.test/kra", 2))
+        with mock.patch.object(posted, "feed_items", lambda: items), mock.patch.object(posted, "_get", lambda u, timeout=20: jpeg()):
+            self.assertEqual(posted.find_named(post)[1]["url"], "https://k.test/kra")
+
+    def test_full_size_originals_are_tried_first(self):
+        self.assertEqual(posted._originals("https://www.kenyans.co.ke/files/styles/article_style/public/images/media/a.jpg")[0],
+                         "https://www.kenyans.co.ke/files/images/media/a.jpg")
+        self.assertEqual(posted._originals("https://capitalfm.africa/wp-content/uploads/2026/10/x-1024x683.jpeg")[0],
+                         "https://capitalfm.africa/wp-content/uploads/2026/10/x.jpeg")
+        self.assertEqual(posted._originals("https://k.test/plain.jpg"), ["https://k.test/plain.jpg"])
+
 
 if __name__ == "__main__":
     unittest.main()
