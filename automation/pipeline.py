@@ -421,7 +421,7 @@ def rephoto(label: str) -> list[str]:
         p["id"] = _next_rev(old)
         if p.get("group"):
             p["group"] = groups.setdefault(p["group"], _next_rev(p["group"]))
-        for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet"):
+        for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source"):
             p.pop(k, None)
         p["status"] = "drafted"
         changed.append(p["id"])
@@ -515,7 +515,7 @@ def _photo_intake(msg: dict, chat: str) -> None:
         return reply(f"📷 Couldn't download that photo ({_esc(str(e)[:120])}). Try again.")
     credit = {"own": "Photo: Kenyans Are Asking", "permission": f"Photo: {rights['credit']} (with permission)",
               "posted": f"Photo: {rights['credit']}"}[rights["rights"]]
-    for k in ("photo_file", "photo_credit", "photo_kind", "tg_msg", "decided_at"):
+    for k in ("photo_file", "photo_credit", "photo_kind", "tg_msg", "decided_at", "video_file", "video_credit", "video_source"):
         post.pop(k, None)
     post.update(id=new_id, photo=f"sent:{rel.as_posix()}", photo_rights_credit=credit, photo_rights=rights["evidence"],
                 photo_source=rights.get("source", ""), photo_use=rights["rights"], status="drafted")
@@ -677,6 +677,20 @@ def render_week(label: str) -> dict:
     out_dir = EXPORTS / label
     import photos
     photos.attach(todo, out_dir)   # real photos where the writer asked for one (skipped quietly without a key)
+    try:   # the TV clip of the story, for the card: you can add up to 8 s of it as a Tazama Hii Reel
+        import radar
+        for p in todo:
+            if p["template"] in CLIP_TEMPLATES or p.get("hot"):
+                clip = radar.clip_for(p)
+                if clip:
+                    p["tv_clip"] = clip
+    except Exception as e:
+        log(f"TV clip match skipped: {e}")
+    import videos
+    try:   # real moving footage for showcase Reels and posts that only have a symbolic photo
+        videos.attach([p for p in todo if is_reel(p)], out_dir)
+    except Exception as e:   # footage is a bonus: the photo Reel still goes out
+        log(f"footage skipped: {e}")
     qa: dict = {}
     renderer.render(todo, out_dir, qa=qa)
     for p in todo:
@@ -700,6 +714,9 @@ def render_week(label: str) -> dict:
     save_week(data)
     log(f"rendered {len(todo)} designs ({len(reel_posts)} reels) → {out_dir}")
     return data
+
+
+CLIP_TEMPLATES = {"sauti", "straight", "promise", "kumbuka", "scorecard", "money", "glasspoll"}
 
 
 def is_reel(p: dict) -> bool:
@@ -753,6 +770,13 @@ def _preview_text(p: dict) -> str:
         c = p["critic"]
         parts = " · ".join(f"{k} {c[k]}" for k in ("hook", "clarity", "picture", "send", "fresh") if c.get(k) is not None)
         lines += ["", f"⭐ {c.get('avg')}/10  {parts}", f"✏️ {esc(str(c.get('note', '')))}"]
+    if p.get("video_file"):
+        lines += [f"🎥 Real footage behind the Reel ({esc(str(p.get('video_credit') or ''))})"]
+    clip = p.get("tv_clip")
+    if clip:
+        lines += [f"🎬 TV clip of this story: <a href=\"{esc(clip['url'])}\">{esc(clip['channel'])}: {esc(clip['title'][:80])}</a>",
+                  "To add the real footage: screen-record up to 8 seconds of the key moment and send it to me with",
+                  f"<code>nukuu {esc(clip['channel'])} {esc(clip['url'])}</code>"]
     kind = p.get("photo_kind")
     if kind == "event":
         lines += ["📷 Photo from the event itself (licensed)"]
@@ -1158,7 +1182,7 @@ def caption_for(post: dict) -> str:
         body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
         cap = f"{body.rstrip()}\n\n👉 {act}{tail}"
     clip = post.get("credit") if post.get("template") == "tazama" and post.get("rights_kind") != "own" else None
-    credits = [f"{icon} {c}" for icon, c in (("📹 Video:", clip),
+    credits = [f"{icon} {c}" for icon, c in (("📹 Video:", clip), ("🎥", post.get("video_credit")),
                                              ("📷", post.get("person_credit") or post.get("photo_credit")),
                                              ("🎵", post.get("track_credit"))) if c and c not in cap]
     return f"{cap}\n\n" + "\n".join(credits) if credits else cap
@@ -1482,7 +1506,7 @@ def _main(argv: list[str] | None = None) -> int:
             learn()
         except Exception as e:
             log(f"learn skipped: {e}")
-    if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "renew", "radar"} and not a.mock:
+    if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "renew", "radar", "photocheck"} and not a.mock:
         try:
             import trends
             t = trends.collect()
@@ -1610,6 +1634,17 @@ def _main(argv: list[str] | None = None) -> int:
         photos.attach(posts, EXPORTS / "_photocheck" / "photos")
         found = sum(1 for p in posts if p.get("photo_file"))
         log(f"photocheck {wk}: {found}/{len(posts)} found a photo (details in state/photos.log)")
+        import radar
+        import videos
+        reels = [p for p in posts if is_reel(p)]
+        videos.attach(reels, EXPORTS / "_photocheck")
+        for p in posts:
+            clip = radar.clip_for(p) if (p["template"] in CLIP_TEMPLATES or p.get("hot")) else None
+            photos._note(f"  TV clip for {p['id']}: {clip['channel'] + ': ' + clip['title'] if clip else 'none matched'}")
+            if p.get("video_file"):
+                photos._note(f"  footage for {p['id']}: {p['video_credit']} ({p.get('video_source', '')})")
+        (STATE / "photos.log").write_text("\n".join(photos.NOTES[-400:]) + "\n", encoding="utf-8")
+        log(f"photocheck {wk}: footage for {sum(1 for p in reels if p.get('video_file'))}/{len(reels)} Reels")
     if a.command == "tick" and not a.dry_run:
         prune()
     if a.command == "status":

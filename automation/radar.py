@@ -101,6 +101,9 @@ def collect(now: dt.datetime | None = None) -> dict:
             data["errors"][ch["name"]] = str(e)[:160]
     fresh = [v for v in vids if now - dt.datetime.fromisoformat(v["published"]) <= dt.timedelta(hours=36)]
     data["videos"] = sorted(fresh, key=lambda v: -v["per_hour"])[:15]
+    # every recent clip, not just the most watched: the day's story may be a quieter upload (clip_for)
+    data["catalog"] = sorted((v for v in vids if now - dt.datetime.fromisoformat(v["published"]) <= dt.timedelta(hours=72)),
+                             key=lambda v: v["published"], reverse=True)
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     return data
@@ -113,6 +116,33 @@ def _load(max_age_hours: int) -> dict | None:
     if dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(data["fetched"]) > dt.timedelta(hours=max_age_hours):
         return None
     return data
+
+
+BULLETIN = re.compile(r"\b(news|bulletin|live|prime ?time|newsnight|nipashe|leo|sunday|saturday)\b.*\d{4}|~|\blive\b", re.I)
+QUOTE_S = 8   # a news quote for commentary is capped here, and in tazama.py
+
+
+def clip_for(post: dict, data: dict | None = None) -> dict | None:
+    """The TV clip of this post's story: the same matching as the day's news photo (posted.py), against the titles of
+    the channels' recent uploads. Whole bulletins ("PRIME TIME NEWS ~ Oct 16") are skipped: the moment is in a
+    story clip. None when nothing clearly matches."""
+    import posted
+    data = data if data is not None else (_load(48) or {})
+    surname, words = posted.terms_for(post)
+    names, acronyms = posted.names_for(post), posted.acronyms_for(post)
+    best = None
+    for v in data.get("catalog") or data.get("videos") or []:
+        if BULLETIN.search(v.get("title", "")):
+            continue
+        item = {"title": v["title"], "text": ""}
+        s = posted.score(item, surname, words, names, acronyms)
+        if not s:   # TV titles are short: three shared content words ("scrap housing levy") are already specific
+            hay = v["title"].lower()
+            hits = sum(1 for w in words if len(w) >= 4 and (w[:5] if len(w) >= 6 else w) in hay)
+            s = hits if hits >= 3 else 0
+        if s and (best is None or (s, v.get("per_hour", 0)) > best[0]):
+            best = ((s, v.get("per_hour", 0)), v)
+    return {k: best[1][k] for k in ("channel", "title", "url")} if best else None
 
 
 def hashtags(limit: int = 12) -> list[str]:

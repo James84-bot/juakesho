@@ -17,7 +17,9 @@
   {% endfor %}
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html, body { background: #777; }
+html, body { background: {{ 'transparent' if video_bg else '#777' }}; }
+{% if video_bg %}/* moving footage is composited underneath by video.py: only the scrim and the words are drawn */
+.canvas { background: transparent !important; }{% endif %}
 {#- Theme per background: foreground, softer text, muted meta, rules, the accent for labels, the tag -#}
 {% set T = {
   "usiku":  ("var(--ink-50)", "var(--ink-300)", "var(--ink-400)", "var(--ink-800)", "var(--shuka-400)", "var(--shuka-600)", "#fff"),
@@ -117,14 +119,16 @@ mark { background: var(--mark-bg); color: var(--mark-ink); padding: 0 .1em; marg
 </head>
 <body>
 {% if reel %}<div class="reel" id="reel"><div class="reel-top"><img src="{{ logo_on_dark if dark else logo_on_light }}" alt=""></div>{% endif %}
-<div class="canvas{{ ' has-photo' if photo_uri is defined }}" id="canvas">
-  {% if photo_uri is defined %}<div class="photo{{ ' photo--blur' if photo_band }}" style="background-image: url('{{ photo_uri }}')"></div><div class="photo-fade"></div>
+<div class="canvas{{ ' has-photo' if photo_uri is defined or video_bg }}" id="canvas">
+  {% if video_bg %}<div class="photo-fade"></div>
+  {% elif photo_uri is defined %}<div class="photo{{ ' photo--blur' if photo_band }}" style="background-image: url('{{ photo_uri }}')"></div><div class="photo-fade"></div>
   {% if photo_band %}<img class="photo-band" src="{{ photo_uri }}" alt="" style="--bh: {{ photo_band }}px">{% endif %}{% endif %}
   <svg class="backdrop" viewBox="0 0 {{ W }} {{ H }}" preserveAspectRatio="none">{% block backdrop %}{% endblock %}</svg>
   <svg class="art" viewBox="0 0 {{ W }} {{ H }}" preserveAspectRatio="none">{% block art %}{% endblock %}</svg>
   <div class="layer">{% block content %}{% endblock %}</div>
   <div class="top">{% block top %}{% endblock %}</div>
-  {% if photo_uri is defined and photo_credit %}<span class="credit">{{ photo_credit }}</span>{% endif %}
+  {% if video_bg and video_credit %}<span class="credit">{{ video_credit }}</span>
+  {% elif photo_uri is defined and photo_credit %}<span class="credit">{{ photo_credit }}</span>{% endif %}
   {% block footer %}
   <div class="foot">
     <img src="{{ logo_on_dark if dark else logo_on_light }}" alt="Kenyans Are Asking">

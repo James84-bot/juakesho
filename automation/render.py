@@ -294,7 +294,11 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         ctx.update(photo_uri=Path(photo).as_uri(),
                    photo_credit=("Illustrative photo · " if civic else "") + (post.get("photo_credit") or ""))
     ctx["photo_band"] = 0
-    if ctx.get("photo_uri"):
+    # a beat Reel with real footage: frames are drawn transparent and video.py lays them over the moving clip
+    vf = post.get("video_file")
+    ctx["video_bg"] = bool(post["template"] == "reel" and vf and Path(vf).exists())
+    ctx["video_credit"] = (post.get("video_credit") or "") if ctx["video_bg"] else ""
+    if ctx.get("photo_uri") and not ctx["video_bg"]:
         from urllib.parse import unquote, urlparse
         ctx["photo_band"] = photo_band(Path(unquote(urlparse(ctx["photo_uri"]).path)), W)
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
