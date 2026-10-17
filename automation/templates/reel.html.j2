@@ -1,5 +1,6 @@
 {#- Reel (9:16): the post told in beats. One short line at a time, full screen, over the real photo.
-    Words slam in; the *marked* words land on the red marker; a progress bar counts down each beat.
+    The first line is on screen from frame 0; later lines' words land fast (no blank frames between lines);
+    the *marked* words land on the red marker; a progress bar counts down each beat.
     Fields: beats (3-6 lines, the script), kicker (series tag), plus the post's photo. Rendered by video.py. -#}
 {% extends "base.html.j2" %}
 {% set BT = namespace(t=0.0, starts=[], durs=[]) %}
@@ -29,16 +30,19 @@
 .beat .t { display: inline-block; margin-right: .22em; }
 .beat .m { background: var(--shuka-600); padding: 0 .1em; margin-right: .3em; border-radius: .05em; text-shadow: none; }
 .foot, .layer { display: none; }
-@keyframes show { 0% { opacity: 0; } 4% { opacity: 1; } 93% { opacity: 1; } 100% { opacity: 0; translate: 0 -40px; } }
+@keyframes show { 0% { opacity: 1; } 97% { opacity: 1; } 100% { opacity: 0; } }
 @keyframes stay { 0% { opacity: 0; } 100% { opacity: 1; } }
-@keyframes slam { 0% { opacity: 0; scale: 1.45; translate: 0 .12em; } 100% { opacity: 1; scale: 1; translate: 0 0; } }
+@keyframes slam { 0% { opacity: 0; scale: 1.25; translate: 0 .08em; } 100% { opacity: 1; scale: 1; translate: 0 0; } }
 @keyframes fill { to { scale: 1 1; } }
 {% for b in beats %}{% set s = BT.starts[loop.index0] %}{% set d = BT.durs[loop.index0] %}
 .b{{ loop.index }} { font-size: {{ fitw(b, 860, 4, 132) }}px;
   animation: {{ 'stay .15s linear both' if loop.last else 'show ' ~ d ~ 's linear both' }}; animation-delay: {{ s }}s; }
 .bars i:nth-child({{ loop.index }}) b { animation: fill {{ d }}s linear {{ s }}s both; }
 {% endfor %}
-.beat .t { animation: slam .34s cubic-bezier(.2, .9, .25, 1.15) both; }
+.beat .t { animation: slam .22s cubic-bezier(.2, .9, .25, 1.1) both; }
+/* the first line is fully on screen from the first frame: it is the thumbnail and the reason to stay */
+.b1, .b1 .t { animation: none !important; opacity: 1; }
+.b1 { animation: {{ 'none' if beats|length == 1 else 'show ' ~ BT.durs[0] ~ 's linear both' }} !important; }
 {% endblock %}
 {% block top %}<span class="tag live">{{ kicker }}</span><img src="{{ logo_on_dark }}" alt="Kenyans Are Asking">{% endblock %}
 {% block footer %}
@@ -46,7 +50,7 @@
   <div class="bars">{% for b in beats %}<i><b></b></i>{% endfor %}</div>
   <div class="stage">
     {% for b in beats %}{% set s = BT.starts[loop.index0] %}
-    <div class="beat b{{ loop.index }}">{% for w, m in beat_tokens(b) %}<span class="t{{ ' m' if m }}" style="animation-delay: {{ '%.2f' % (s + 0.08 + loop.index0 * 0.07) }}s">{{ w }}</span>{% endfor %}</div>
+    <div class="beat b{{ loop.index }}">{% for w, m in beat_tokens(b) %}<span class="t{{ ' m' if m }}" style="animation-delay: {{ '%.2f' % (s + loop.index0 * 0.035) }}s">{{ w }}</span>{% endfor %}</div>
     {% endfor %}
   </div>
 {% endblock %}

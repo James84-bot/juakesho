@@ -231,6 +231,26 @@ NOT_NAMES = {"The", "This", "That", "These", "Your", "Just", "Check", "Real", "N
              "Through", "Why", "What", "How", "Read", "Save", "Send", "Kazi", "Tag", "Follow", "Money", "Every", "Some"}
 
 
+FRAGMENT_START = re.compile(r"^\W*(meanwhile|yet|and|but|so|too bad|the catch|plot twist|imagine|guess what)\b", re.I)
+
+
+def fragment(line: str) -> str:
+    """Why a Reel beat reads as a fragment or a meme caption ('' when it is a proper sentence). Our readers are
+    informed; half-sentences and trailing dots read as careless."""
+    text = line.replace("*", "").strip()
+    if "..." in text or "\u2026" in text:
+        return "trails off with dots"
+    if FRAGMENT_START.search(text):
+        return f"opens with '{FRAGMENT_START.search(text).group(1)}' (a fragment that leans on the line before)"
+    if len(text.split()) < 4:
+        return "is under four words"
+    if not re.search(r"[.?!:]['\"”’]?$|\d$|[A-Za-z]$", text):
+        return "has no proper ending"
+    if re.search(r"\?\s+\S", text):
+        return "is a teaser question followed by its answer"
+    return ""
+
+
 def check(post: dict) -> Report:
     rep = Report(post.get("id", "?"))
     tpl = post.get("template")
@@ -409,15 +429,19 @@ def check(post: dict) -> Report:
                     rep.errors.append(f"checks[{i}]: `test` max 40 chars and `note` max 80 chars, both required")
     beats = post.get("beats")
     if beats is not None:
-        if not isinstance(beats, list) or not 3 <= len(beats) <= 6:
-            rep.errors.append("'beats' (the Reel script) needs 3-6 short lines")
+        if not isinstance(beats, list) or not 3 <= len(beats) <= (6 if tpl == "tazama" else 5):
+            rep.errors.append("'beats' (the Reel script) needs 3-5 sentences")
         else:
             for i, b in enumerate(beats):
                 words = len(str(b).replace("*", "").split())
-                if not isinstance(b, str) or len(b.replace("*", "")) > 44 or words > 8:
-                    rep.errors.append(f"beats[{i}] must be one punchy line: max 8 words / 44 characters")
+                if not isinstance(b, str) or len(b.replace("*", "")) > 72 or words > 12:
+                    rep.errors.append(f"beats[{i}] is too long: max 12 words / 72 characters")
                 elif str(b).count("*") % 2:
                     rep.errors.append(f"beats[{i}]: unbalanced *marker*")
+                elif tpl != "tazama":
+                    problem = fragment(str(b))
+                    if problem:
+                        rep.errors.append(f"beats[{i}] {problem}: write each beat as a complete, plain sentence")
     elif tpl in REEL_FIRST:
         rep.warnings.append("no `beats`: the Reel falls back to the animated card (write 3-6 punchy lines)")
     if tpl == "promise" and len(str(post.get("measure") or "")) > 16:
