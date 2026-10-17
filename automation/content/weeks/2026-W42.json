@@ -381,21 +381,25 @@
       "id": "2026-w42-d7-glasspoll-r3",
       "template": "glasspoll",
       "lane": "everyone",
-      "hook": "New tax laws are here.",
-      "question": "How should Kenya fund the budget?",
+      "side": "none",
+      "tone": "explainer",
+      "hook": "Court decides police hiring",
+      "question": "Who should recruit police officers?",
       "options": [
-        "Collect more taxes",
-        "Cut public spending"
+        "Inspector General",
+        "Civilian Commission"
       ],
-      "cta": "Vote A or B in the comments",
-      "message": "Kenyans must decide whether public budgets should be balanced by raising taxes or cutting state waste.",
-      "action": "Submit your budget priorities to the National Assembly clerk at cna@parliament.go.ke.",
+      "cta": "Vote A or B below",
+      "message": "The Court of Appeal ruled that the Inspector General, not the NPSC, controls police hiring.",
+      "action": "Read Articles 245 and 246 of the Constitution on police command mandates.",
+      "photo_query": "Kenya police vehicle",
+      "source": "Court of Appeal ruling on National Police Service Commission v Inspector General (October 2026); Constitution of Kenya Articles 245 and 246",
+      "caption": "The Court of Appeal upheld the Inspector General's mandate to recruit police officers over the civilian commission. Who should recruit police officers?\n\nA: Inspector General\nB: Civilian Commission\n\nVote A or B in the comments.\n\n#PoliceRecruitment #KenyaOnRecord",
       "beats": [
-        "President William Ruto signed *two* tax bills into law this week.",
-        "The Treasury seeks new revenue to bridge the budget gap.",
-        "Kenyans continue to shoulder heavier deduction burdens.",
-        "Kenyans demand: the Treasury cuts waste before raising taxes.",
-        "Share your view on balancing the public budget."
+        "Court gives the IG *recruitment powers* over police.",
+        "The civilian *NPSC* lost its mandate to hire officers.",
+        "Commanders want control while the public seeks *fair hiring*.",
+        "Who should recruit Kenya's police officers today?"
       ],
       "photo_query": "National Treasury Nairobi",
       "caption": "President William Ruto signed two tax bills into law this week to raise public revenue. How should Kenya fund the budget?\n\nA: Collect more taxes\nB: Cut public spending\n\nVote A or B in the comments.\n\n#TaxDebate #KenyaOnRecord",
@@ -410,38 +414,30 @@
       "bg": "usiku",
       "publish_at": "2026-10-18T18:00:00+03:00",
       "size": "story",
-      "source_links": [
-        {
-          "outlet": "Tuko News",
-          "title": "Passed by MPs: Ruto signs 2 tax bills into law, State House issues statement",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbzhkc2ZtZkhpa08zaWRiU1FicnlEd25mMUd5UVlybHNnZ1JxMWpiNDlzSkRKVmhPbUh0al9yYVRWZnBLakUzcDc1WFFRRHNnZE91SUNQcVJfaE9fQWw5ZElsZDFsckVuc0gySU1VeExHX2JVVnJhaEtVR1hwWnlYUlhwdXpIWk9EZ0swREtPRzV4d1o5MV96d2pjRDdsU3MzOUdSSEJHQmpRbHhG?oc=5",
-          "published": "2026-10-17"
-        }
-      ],
       "status": "needs_human",
       "guard": {
         "errors": [
-          "weak: editor scored 3.8/10. The hook is a generic fragment and the poll forces a false binary; lead with the actual names of the signed tax laws and the exact collection targets."
+          "weak: editor scored 6.2/10. Raise demand by tying the police recruitment ruling directly to the active court battle between IG Kanja and the NPSC."
         ],
         "warnings": []
       },
       "critic": {
-        "hook": 3,
-        "send": 3,
-        "clarity": 5,
-        "fresh": 3,
-        "voice": 5,
-        "craft": 4,
-        "picture": 4,
-        "hold": 4,
-        "demand": 2,
-        "action": 3,
-        "fair": 6,
-        "impact": 4,
-        "avg": 3.8,
-        "note": "The hook is a generic fragment and the poll forces a false binary; lead with the actual names of the signed tax laws and the exact collection targets."
+        "hook": 6,
+        "send": 6,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 6,
+        "demand": 5,
+        "action": 5,
+        "fair": 7,
+        "impact": 6,
+        "avg": 6.2,
+        "note": "Raise demand by tying the police recruitment ruling directly to the active court battle between IG Kanja and the NPSC."
       },
-      "drafted_at": "2026-10-17T14:07:40.843802+03:00"
+      "drafted_at": "2026-10-17T14:14:54.136178+03:00"
     },
     {
       "id": "2026-w42-hot-1013",
@@ -768,10 +764,10 @@
     }
   ],
   "scripts": {
-    "radio": "Habari zenu, this is Kenya on Record. Every financial year, our public accounts reveal a familiar problem: the government has planned to spend far more money than it actually has. And inevitably, the debate begins on how to bridge that gap. The state’s default response has consistently been to widen the tax net—taxing basic commodities, small enterprises, and the salaried worker. But an increasing number of Kenyans are asking the vital question: why must public budgets always be balanced on the backs of citizens, rather than by cutting state waste? Official audit reports year after year document billions lost to inflated procurement tenders, non-essential foreign travel, bloated executive delegations, and redundant agencies. Real fiscal responsibility does not mean extracting more revenue from people who are already struggling to survive high living costs; it requires institutional discipline. If the government cannot plug the leaks in its spending, no amount of tax collection will ever be enough. We must demand that our leaders cut the fat in government before asking mwananchi to tighten an already painful belt.\n\nKwa ufupi: Kabla ya serikali kufikiria kuwaongezea wananchi mzigo wa ushuru ili kusawazisha bajeti, hatua ya kwanza lazima iwe kuzuia ufujaji wa fedha, kupunguza safari zisizo na umuhimu, na kuondoa matumizi ya anasa serikalini. Uwajibikaji huanzia juu.",
-    "voice_note": "Jambo everyone, here is something we need to reflect on from Kenya on Record this week. Whenever Treasury faces a budget deficit, the immediate proposal is always to increase taxes—fuel levies, VAT, turnover tax, you name it. But here is the grown-up question we must ask: why is the solution always to extract more from ordinary citizens, rather than cutting state waste? Every year, the Auditor-General flags billions spent on luxury spending, questionable allowances, and duplicated parastatals. Why should mwananchi carry the burden of balancing the national budget while state offices maintain exorbitant lifestyles? A government serious about growth balances its books by stopping waste first. Before our MPs vote to raise taxes, let’s insist they demand spending cuts right from the top. Think about that, and pass this note along.",
-    "sms": "Usiibiwe: Budget deficit? Demand leaders cut state waste and luxury spending before raising taxes on wananchi. Hold your MP accountable on the Finance Bill.",
-    "reels": "Every financial year, it is the same story: a massive budget deficit, followed by new taxes on ordinary Kenyans. But why is cutting state waste never the first option? Billions disappear annually into inflated tenders, travel junkets, and unnecessary offices. A responsible government does not balance its books by squeezing citizens who are already struggling. True fiscal discipline means cutting government extravagance first, not raising taxes."
+    "radio": "Good evening and welcome to Kenya on Record. Today, we address a critical ruling that reshapes the governance of law enforcement in our country.\n\nFor over a decade, there has been an institutional tug-of-war between the National Police Service Commission and the Inspector General over who holds the legal power to recruit, hire, and deploy officers. This week, the Court of Appeal brought that contest to an end. The appellate judges ruled that the command and recruitment of police personnel rest firmly with the Inspector General, not the civilian commission.\n\nWhy does this matter to ordinary Kenyans? Every recruitment season, thousands of our youth gather on dusty sports grounds across the counties, seeking an honest livelihood. Too often, the process is clouded by claims of bribery, irregular lists, and finger-pointing between the Commission and the police command. With the court firmly placing hiring powers on the IG's desk, administrative excuses must end. The authority is unified, and so is the responsibility for fairness, transparency, and integrity.\n\nKwa ufupi: Mahakama ya Rufaa imeamua rasmi kwamba mamlaka ya kuajiri maafisa wapya wa polisi yako mikononi mwa Inspekta Jenerali, wala si Tume ya Huduma ya Polisi, NPSC. Sasa kwa vile utata wa kisheria umeondolewa, wajibu wa kuhakikisha zoezi la uajiri linafanyika kwa uwazi, haki, na bila ufisadi upo kwenye dawati la Inspekta Jenerali pekee.\n\nKeep the record straight, and hold power accountable.",
+    "voice_note": "Habari zenu. Here is an important accountability update for your week. You probably know about the long-running dispute between the National Police Service Commission and the Inspector General regarding who actually controls recruitment. The Court of Appeal has now settled the matter: the power to recruit police officers lies with the Inspector General, not the NPSC. This is significant. For years, whenever scandals hit recruitment drives—whether extortion or skewed quotas—the two bodies traded blame. Now, the law is clear. The buck stops directly with the Inspector General. As citizens, when the next recruitment drive opens, we know exactly who is responsible for ensuring the process is clean and merit-based. Please share this note with anyone preparing for the next intake.",
+    "sms": "Usiibiwe: The Court of Appeal ruled the IG controls police hiring. Recruitment drives are free by law. Anyone demanding money for a police slot is a con artist.",
+    "reels": "Who really controls who enters the police service? For years, the National Police Service Commission and the Inspector General fought over hiring authority. Now, the Court of Appeal has made the final call: recruitment belongs to the Inspector General. Why does this matter? Because accountability stops at one desk. No more institutional blame games. Next recruitment season, we know exactly who to hold responsible."
   },
   "spend_usd": 3.0807,
   "revision": 3
