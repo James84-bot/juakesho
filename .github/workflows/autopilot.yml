@@ -60,13 +60,14 @@ jobs:
           if [ -z "$TELEGRAM_BOT_TOKEN" ] && [ "${{ github.event_name }}" = "schedule" ]; then
             echo "Secrets not set yet: skipping. See automation/.env.example"; echo "c=skip" >> "$GITHUB_OUTPUT"; exit 0; fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "c=${{ inputs.command }}" >> "$GITHUB_OUTPUT";
+            echo "base=$(echo '${{ inputs.command }}' | awk '{print $1}')" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "0 14 * * 0" ]; then echo "c=week" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "5 6 * * *" ]; then echo "c=hot" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "10 14 * * 3" ]; then echo "c=this-week" >> "$GITHUB_OUTPUT";
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
       - name: Install
-        if: steps.cmd.outputs.c == 'week' || steps.cmd.outputs.c == 'hot' || steps.cmd.outputs.c == 'this-week' || steps.cmd.outputs.c == 'redo' || steps.cmd.outputs.c == 'rehearse' || steps.cmd.outputs.c == 'samples' || steps.cmd.outputs.c == 'remake' || steps.cmd.outputs.c == 'renew' || steps.cmd.outputs.c == 'rephoto' || steps.cmd.outputs.c == 'clips' || steps.cmd.outputs.c == 'tracker'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'hot' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'this-week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'redo' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rehearse' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'samples' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'remake' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'renew' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rephoto' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'clips' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tracker'
         run: |
           pip install -r automation/requirements.txt
           python -m playwright install --with-deps chromium
@@ -74,7 +75,7 @@ jobs:
           if [ "${{ steps.cmd.outputs.c }}" = "clips" ]; then pip install faster-whisper; fi   # captions from the clip's audio
 
       - name: Install (light)
-        if: steps.cmd.outputs.c != 'week' && steps.cmd.outputs.c != 'hot' && steps.cmd.outputs.c != 'this-week' && steps.cmd.outputs.c != 'redo' && steps.cmd.outputs.c != 'rehearse' && steps.cmd.outputs.c != 'samples' && steps.cmd.outputs.c != 'remake' && steps.cmd.outputs.c != 'renew' && steps.cmd.outputs.c != 'rephoto' && steps.cmd.outputs.c != 'clips' && steps.cmd.outputs.c != 'tracker' && steps.cmd.outputs.c != 'skip'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'hot' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'this-week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'redo' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'samples' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'remake' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'renew' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rephoto' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'clips' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tracker' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip'
         run: pip install -r automation/requirements.txt
 
       - name: Tests
@@ -95,11 +96,11 @@ jobs:
             --data-urlencode "text=⚠️ A self-check failed (taps and publishing still ran). New drafts are paused until it's fixed: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" || true
 
       - name: Rehearse (mock week, dry run)
-        if: steps.cmd.outputs.c == 'rehearse'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rehearse'
         run: cd automation && python pipeline.py week --mock --dry-run
 
       - name: Download the rehearsal
-        if: steps.cmd.outputs.c == 'rehearse'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rehearse'
         uses: actions/upload-artifact@v6
         with:
           name: rehearsal-week
@@ -107,7 +108,7 @@ jobs:
           retention-days: 7
 
       - name: Run ${{ steps.cmd.outputs.c }}
-        if: steps.cmd.outputs.c != 'skip' && steps.cmd.outputs.c != 'rehearse'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse'
         run: |
           cd automation
           set -o pipefail
@@ -161,7 +162,7 @@ jobs:
           [ -f automation/run.log ] && echo "::error title=autopilot failed::$(tail -25 automation/run.log | sed ':a;N;$!ba;s/%/%25/g;s/\r//g;s/\n/%0A/g')" || true
 
       - name: Save state and renders
-        if: always() && steps.cmd.outputs.c != 'skip' && steps.cmd.outputs.c != 'rehearse'
+        if: always() && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse'
         run: |
           git config user.name "jua-kesho-bot"
           git config user.email "bot@users.noreply.github.com"
