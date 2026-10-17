@@ -19,19 +19,18 @@
       "template": "sauti",
       "bg": "usiku",
       "lane": "young_pro",
-      "kicker": "Sisi wananchi",
-      "line": "Every month *4.25%* of our gross pay goes to the housing levy and SHA. We're still waiting for the receipt.",
+      "kicker": "Taxpayers",
+      "line": "Every month *4.25%* of our gross pay goes to the housing levy and SHIF before we see it.",
       "fact": "Housing levy: 1.5% of gross salary. SHIF: 2.75% of gross salary. Both come off before your net pay.",
       "message": "Kenyans pay 4.25% of gross pay to housing and health levies and want to see what it buys.",
       "photo_query": "payslip and Kenyan shilling notes",
       "source": "Affordable Housing Act, 2024 (s.4: 1.5% of gross salary); Social Health Insurance Act, 2023 and Social Health Insurance (General) Regulations, 2024 (2.75% of gross salary)",
       "caption": "Check your payslip. 1.5% housing levy + 2.75% SHIF, every month. We pay. One question: what are we getting? 👇🏾\n\nWhat have you seen from this money? Drop it in the comments.\n\n#HousingLevy #KenyansAreAsking",
       "beats": [
-        "Check your payslip.",
-        "*4.25%* gone before you see it.",
-        "1.5% housing levy.",
-        "2.75% SHIF.",
-        "Tunalipa. *Tunapata nini?*"
+        "The housing levy and SHIF take *4.25%* of gross pay.",
+        "The housing levy is 1.5% of gross salary.",
+        "SHIF takes another 2.75% before your net pay.",
+        "Kenyans are asking: what has the money *delivered so far?*"
       ],
       "action": "Check the levy lines on your payslip, then ask your MP what they bought",
       "who": "Parliament and the National Treasury",
@@ -77,11 +76,10 @@
       "source": "Constitution of Kenya 2010, Articles 95, 96, 97, 177, 180, 185; IEBC: general election on 10 August 2027 (standardmedia.co.ke/article/2001551158)",
       "caption": "10 August 2027. Six ballots, one day. We all know the President and the Governor... but what does your MCA actually do? Save this before the campaign noise starts.\n\nTag a first-time voter.\n\n#Civic101 #KenyansAreAsking",
       "beats": [
-        "10 August 2027.",
-        "*Six* ballots. One day.",
-        "President. Governor. Senator.",
-        "MP. Woman Rep. MCA.",
-        "Know the job. *Then* pick the person."
+        "Kenya votes on *10 August 2027*.",
+        "You will cast six ballots on that one day.",
+        "They are for President, Governor, Senator, MP, Woman Rep and MCA.",
+        "Learn what each office does, *then* pick the person."
       ],
       "action": "Check you're registered: verify.iebc.or.ke or SMS your ID number to 70000",
       "side": "none",
@@ -137,11 +135,10 @@
       "symbol": "robot",
       "photo_query": "laptop code screen dark room",
       "beats": [
-        "\"You need coding for AI.\"",
-        "*Cap.*",
-        "Most AI tools take plain English.",
-        "Build a bot this weekend.",
-        "No code. *Just start.*"
+        "Many people think you need coding to use AI.",
+        "Most AI tools take *plain English* instructions.",
+        "You can build a simple bot this weekend.",
+        "No code is needed, so *just start.*"
       ]
     },
     {
@@ -162,11 +159,11 @@
       "symbol": "hook",
       "photo_query": "hand holding phone text message",
       "beats": [
-        "\"Get paid to like TikToks.\"",
-        "Pay Ksh 500 to start?",
-        "*That's the scam.*",
+        "Some job ads promise pay for liking TikToks.",
+        "Then they ask for *Ksh 500* to get started.",
+        "That fee is the scam.",
         "Real jobs never ask you to pay.",
-        "Send this to someone job hunting."
+        "Send this to someone who is job hunting."
       ]
     },
     {
@@ -207,11 +204,9 @@
       "symbol": "rocket",
       "photo_query": "M-Pesa shop Kenya",
       "beats": [
-        "2007. Kenya.",
-        "*M-Pesa* is born.",
-        "Money by SMS. For everyone.",
-        "The world followed.",
-        "We started it. *Wanakesho.*"
+        "*M-Pesa* was launched in Kenya in 2007.",
+        "It let anyone send money by SMS.",
+        "Kenya started it, and *the world followed.*"
       ]
     },
     {
@@ -291,11 +286,9 @@
       "symbol": "eye",
       "photo_query": "laptop showing a map",
       "beats": [
-        "Built in *Kenya.*",
-        "Ushahidi. 2008.",
-        "Report by SMS. See it on a map.",
-        "Used by responders worldwide.",
-        "African tech *travels.*"
+        "Ushahidi was built in *Kenya* in 2008.",
+        "People report by SMS and see each report on a map.",
+        "Responders around the world use it."
       ]
     },
     {
@@ -313,11 +306,10 @@
       "symbol": "crane",
       "photo_query": "stalled construction site Kenya",
       "beats": [
-        "*Sh304bn.* Idle.",
-        "59% of the money. Never used.",
-        "14 flagship projects waiting.",
-        "And loans still charge fees.",
-        "Where is the money? *Read the report.*"
+        "*Sh304bn* for 14 flagship projects was never used.",
+        "That is 59% of the Sh515bn set aside, says the Auditor-General.",
+        "Undrawn loans still charge us fees.",
+        "Read the Auditor-General's report on *parliament.go.ke.*"
       ]
     },
     {
@@ -338,10 +330,10 @@
       "symbol": "puppet",
       "photo_query": "phone screen social media feed",
       "beats": [
-        "That trending hashtag?",
-        "Some get *$10-15 a day* to push it.",
-        "Same words. Same hour.",
-        "New accounts. Few real followers.",
+        "Some trending hashtags are *paid for*.",
+        "Some accounts get *$10-15 a day* to push one.",
+        "Watch for the same words posted in the same hour.",
+        "Look for new accounts with few real followers.",
         "Check before you *share.*"
       ]
     },
@@ -383,11 +375,10 @@
       "caption": "\"Africa is one country.\" No. 54 countries, 2,000+ languages, and Kenya alone speaks 40+.\n\nSend this to the friend who says \"I'm going to Africa\" like it's one town.\n\n#SetItStraight #KenyansAreAsking",
       "photo_query": "map of Africa",
       "beats": [
-        "\"Africa is one country.\"",
-        "*False.*",
-        "54 countries.",
-        "2,000+ languages.",
-        "One continent. *54 flags.*"
+        "Some people still say Africa is one country.",
+        "That is *false*: Africa has 54 countries.",
+        "Africa speaks more than 2,000 languages.",
+        "It is one continent with *54 flags.*"
       ]
     },
     {

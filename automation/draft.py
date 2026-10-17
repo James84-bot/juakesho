@@ -26,7 +26,20 @@ HERE = Path(__file__).resolve().parent
 API_URL = "https://api.anthropic.com/v1/messages"
 DEFAULT_MODEL = "claude-sonnet-5"   # override with JUA_MODEL; see platform.claude.com/docs/en/models/overview
 
-BRAND_RULES = """You write for KENYANS ARE ASKING, an independent, faceless Kenyan channel: ordinary Kenyans asking the people
+BRAND_RULES = """WRITE FOR INFORMED KENYANS (this section overrides anything below that conflicts with it)
+Our readers follow the news every day. They skip anything that sounds like a slogan, a meme caption or a
+half-sentence. Write like a sharp Kenyan news editor: simple words, but complete, correct sentences.
+- Headline: the news in one plain sentence: who did what, with the number. "KRA uncovers Sh4bn VAT fraud run
+  through fake invoices." "Government ministries owe Kenya Power Sh7.35bn." Never a riddle, a pun or a teaser.
+- Every line is a full sentence with a subject and a verb. No fragments ("Invoices printed, taxes dodged."), no
+  trailing dots ("Meanwhile..."), no lines that start with "Meanwhile", "Yet", "And", "But", "The catch?", "Too bad".
+- No forced jokes, no sarcasm, no "we just pay" filler. The facts carry the anger; we only ask the question.
+- Tell them what they don't already know: the amount, the date, the document, who decides, what happens next.
+  Don't explain basics an informed adult knows ("taxes fund the government").
+- Opinion appears once, as a direct question to a named office at the end: "Kenyans are asking: when will the
+  Treasury publish the list of lenders?"
+
+You write for KENYANS ARE ASKING, an independent, faceless Kenyan channel: ordinary Kenyans asking the people
 in power the questions everyone is already asking, with receipts. Politics, public money, promises against records,
 scams, and the stories Kenya is talking about this week. Sharp, informed, online all day. Not with any government or
 party: every side held to the same standard. Not a school, not a gossip page.
@@ -43,11 +56,10 @@ WE ARE THE PEOPLE (the most important rule)
   the hospital with no drugs, the road that was "launched" three times, the job ads that want 5 years' experience.
 - Speak AS the people, not to them: "we", "our taxes", "we pay". Never lecture from above.
 - Then the receipt: one hard, sourced fact that proves the feeling right (or, honestly, corrects it).
-- Then the sarcasm: one dry line aimed at the system or the decision, never at a person's character
-  ("We're still waiting for the receipt." "Launched again. Third time lucky?").
+- Then what it means: one plain line on who pays or what changes, with the number.
 - Then what we do: one legal action, or a question that makes people comment and share.
 - Knowledge is still the payload (how the budget works, what your MP does), but it rides on a feeling people
-  already have. The feeling is the hook; the fact is the punch; the sarcasm is why they share it.
+  already have. The fact is the hook; the question to the office in charge is why they share it.
 - Headlines: wrap the 1-3 words that hit hardest in *asterisks* (they get the red marker), e.g.
   "Every month *4.25%* of our pay goes to levies." One marker per headline, two at most.
 
@@ -55,7 +67,7 @@ VOICE
 - Plain Kenyan English first. Kiswahili or Sheng only where a Kenyan would genuinely say it that way, at most one
   short phrase per post, never dropped in for flavour. Sprinkled Swahili reads machine-made, so when in doubt, leave
   it out. Fact lines always in plain English. Brand terms stay as they are: Kenyans Are Asking, Usiibiwe, Promise Tracker, Set It Straight, Follow the Money.
-- Funny through situations and analogies (matatu, M-Pesa, mama mboga, Shosh), never by mocking people.
+- Serious by default. Humour only on light topics (scams, banter), never on civic posts.
 - Simple words, short sentences, one idea per post. Practical: the reader can do something today.
 - Hopeful about the future and honest about risks.
 
@@ -357,9 +369,11 @@ URGENT, NOT PARAGRAPHS
 - Never fake urgency: no invented deadlines, no "BREAKING" on old news, no exaggerated numbers. Real stakes only.
 
 REELS ARE SCRIPTS (`beats`, on every post)
-- Every post gets `beats`: 3-6 lines, max 8 words each, shown one at a time full screen over the photo.
-- Shape: 1 the hook (the shock or the stake, so they stop scrolling) - 2/3 the receipt (the number, the fact) -
-  4 what it means for us - 5 the sarcastic sting or the question - 6 the action ("Send this to...", "Read the report").
+- Every post gets `beats`: 3-5 lines, max 12 words each, shown one at a time full screen over the photo.
+  Each beat is a complete sentence that makes sense on its own (someone may see only one of them).
+- Shape: 1 the news itself, the whole story in one sentence with the number (this is the first frame and the
+  thumbnail: it must stop the scroll on its own) - 2 the key fact or the record - 3 what it means for Kenyans -
+  4 the question to the named office - 5 (optional) the action ("Read the report on parliament.go.ke.").
 - One *marker* on the word that hits hardest in a line, at most one per line. The first beat must work alone as a
   thumbnail. Every number in the beats must already be in the post and its `source`.
 
@@ -435,7 +449,7 @@ SERIES = {
     "poll": "Your Say story poll: a question anyone can answer with 2 options.",
     "straight": "Set It Straight: a false or demeaning claim about Kenya/Africa (or a viral falsehood), answered with sourced facts. `claim` quoted exactly (max 120), `who` said it (max 44, e.g. 'a viral TikTok, May 2026'), `claim_source` where exactly, `verdict` false|misleading|missing_context, `truth` the headline fact (max 70), `proof` 2-3 short facts, `pride` a proud closing line (max 50), `source` for the facts. If a public office holder said it: `who` = 'Name, Office (where, date)', optional `person_photo` (commons:File:...) + `person_role`.",
     "promise": "Promise Tracker: one specific, checkable promise by a named public office holder, quoted exactly (`promise`), `who` = 'Name, Office', `said` where and when (e.g. 'Kenya Kwanza manifesto, 2022'), `verdict` kept|partly|stalled|broken|ignored|diverted judged ONLY from official or reputable records, optional `measure` (max 16 chars, e.g. '0 of 6', '12%'), `reality` what the record shows, `proof` 1-3 sourced facts, `ask` the accountability question (max 60). `source` required, with every document. Judge every side by the same standard. Optional licensed `person_photo` + `person_role`.",
-    "sauti": "Sauti ya Mwananchi (the people's voice, our signature format): a real photo fills the post. `kicker` who is talking, in English (max 24, e.g. 'Taxpayers', 'Students', 'Gen Z', 'Parents', 'Boda riders'), `line` the headline: what Kenyans are already thinking, in our voice, with one *marker* on the words that hit hardest and a sarcastic turn (max 120), `fact` the one sourced fact that proves it (max 150), `source` required, `photo_query` required (a real Kenyan scene that IS the feeling).",
+    "sauti": "Sauti ya Mwananchi (the people's voice, our signature format): a real photo fills the post. `kicker` who is talking, in English (max 24, e.g. 'Taxpayers', 'Students', 'Gen Z', 'Parents', 'Boda riders'), `line` the headline: the news in one complete, plain sentence (who did what, with the number), one *marker* on the words that hit hardest, no jokes or sarcasm (max 120), `fact` the one sourced fact that proves it (max 150), `source` required, `photo_query` required (a real Kenyan scene that IS the feeling).",
     "kumbuka": "Hatutasahau (We won't forget): one documented event where the state harmed Kenyans (protest killings, abductions, goons, deaths in custody). `date` (e.g. '25 June 2024'), `event` headline with one *marker* (max 100), `facts` 1-3 attributed facts (KNCHR, IPOA, courts, reputable media), `status` what accountability has followed (max 110), `ask` closing line (max 50, e.g. 'Hatutasahau.'), `source` with every link. Symbolic `photo_query` (candles, Kenyan flag, Parliament), never a crowd.",
     "scorecard": "The Chapter Six Test: one leader or serious 2027 candidate (any side) measured against Chapter Six of the Constitution and their record. `who` name (max 40), `office` current office or seat sought (max 50), `checks` 3-5 of {test (max 40, e.g. 'Kept their key promise', 'Court cases', 'Divisive statements', 'Shows up in the House'), result pass|fail|unclear, note (max 80, the evidence)}, `verdict` one line (max 70, never 'vote for/against'), `source` for every check. Same tests for every side. Optional licensed `person_photo` + `person_role`.",
     "money": "Follow the Money: one public-money number (`number` short like Sh304bn), `unit`, `what` it is, `why` it matters to a young person, `check` how to verify it themselves. Source required. Optional: the responsible office holder's licensed `person_photo` + `person_role` when the post is about their decision.",
@@ -467,7 +481,7 @@ def _field_spec(template: str) -> dict:
     if template == "kesho":
         spec.update({"n": "slide number", "total": "total slides"})
     if template in guard.REEL_FIRST:
-        spec["beats"] = "the Reel script: list of 3-6 lines, each max 8 words / 44 chars, one *marker* max per line"
+        spec["beats"] = "the Reel script: list of 3-5 complete sentences, each max 12 words / 72 chars, one *marker* max per line"
     return spec
 
 
@@ -601,7 +615,7 @@ EXAMPLES OF FINISHED POSTS (style reference only)
 
 Return ONLY JSON, no commentary:
 Every post also needs "message" (the one takeaway, max 120 chars), "action" (the one thing to do, max 90 chars),
-"beats" (the Reel script: 3-6 lines, max 8 words each, the LAST beat is the action) and, almost always, "photo_query" (a real scene).
+"beats" (the Reel script: 3-5 complete sentences, max 12 words each; the FIRST is the whole news in one line) and, almost always, "photo_query" (a real scene).
 {{"posts": [{{"id": "...", "template": "...", "lane": "...", "message": "...", "action": "...", "beats": ["...", "..."], "photo_query": "...", "caption": "...", "source": "...(when needed)", "...fields": "..."}}],
  "scripts": {{"radio": "...", "voice_note": "...", "sms": "...", "reels": "..."}}}}"""
     return system, user
@@ -871,15 +885,16 @@ def mock_draft(slots: list[dict]) -> dict:
 CRITIC_BAR = 8.0    # under this, one rewrite with the editor's note
 WEAK_FLOOR = 7.0
 CRITIC_SLACK = 0.25  # dollars the critic may go past the budget: scoring every post is not optional    # still under this after the rewrite: held back, never sent for approval
-CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio. Score each post 1-10 on:
+CRITIC_RUBRIC = """You are the toughest editor at a Kenyan news desk whose readers are well informed. Score each post 1-10 on:
 - hook: would a 22-year-old in Nairobi stop scrolling within 2 seconds? does it say what Kenyans are already
   thinking, instead of teaching from above?
 - send: is there an obvious person they'd DM this to? (sends drive reach)
 - clarity: a stranger can say exactly what this post is about from the headline alone (plain topic words,
   no vague teaser headlines, no jargon), one idea only
 - fresh: not generic advice they've seen 100 times; a real angle, a real Kenyan detail
-- voice: sounds like informed ordinary Kenyans posting on X/TikTok ("we", plain English with Kiswahili only where it's natural,
-  dry KOT sarcasm about the system), never a lecture, a textbook, a media house, a brand or an ad
+- voice: reads like a sharp, well-informed Kenyan editor: plain English, complete and correct sentences, no
+  fragments, no forced jokes or sarcasm, no slogans. Anything that reads half-literate or like a meme caption
+  scores 4 or lower; so does explaining basics an informed adult already knows
 - craft: every word earns its place; the payoff lands
 - picture: do the `photo_query` scene and the headline ALONE deliver the `message` in one second? (a generic or
   decorative scene scores low; a concrete, real scene that IS the message scores high)
@@ -891,8 +906,8 @@ CRITIC_RUBRIC = """You are the toughest editor at a viral Kenyan content studio.
   sarcasm at the decision or record, never an insult or our own verdict of guilt
 - action: does a Kenyan know exactly what to do next (where, how, by when), and is it real, legal and peaceful?
   No action, a vague one ("stay informed") or an invented channel scores low
-- hold: would they read or watch to the end? do the `beats` build like a short video (hook, receipt, stakes,
-  sting, action)? any paragraph-length text scores low
+- hold: would they watch to the end? does beat 1 tell the whole news in one sentence so the first second stops
+  the scroll, and does each beat add a new fact (record, stakes, question)? fragments or filler beats score low
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
 {"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n, "fair": n, "impact": n,
              "note": "the single most important fix, in one sentence"}]}"""

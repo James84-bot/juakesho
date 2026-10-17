@@ -543,11 +543,21 @@ class QualitySystemTests(unittest.TestCase):
 
     def test_reel_beats(self):
         import render, video
-        ok = self.base_straight(beats=["Check your payslip.", "*4.25%* gone.", "Tunalipa. *Tunapata nini?*"])
+        ok = self.base_straight(beats=["The housing levy and SHIF take *4.25%* of gross pay.",
+                                       "Both come off before your net pay.",
+                                       "Kenyans are asking: what has the money *delivered?*"])
         self.assertTrue(guard.check(ok).ok, guard.check(ok).errors)
-        long = self.base_straight(beats=["This line is far too long to read in one second on a phone", "b", "c"])
-        self.assertTrue(any("punchy line" in e for e in guard.check(long).errors))
-        self.assertTrue(any("3-6" in e for e in guard.check(self.base_straight(beats=["a"])).errors))
+        long = self.base_straight(beats=["This line is far too long to read on a phone in the second or two it stays up",
+                                         "Both come off before your net pay.", "What has the money delivered so far?"])
+        self.assertTrue(any("too long" in e for e in guard.check(long).errors))
+        self.assertTrue(any("3-5" in e for e in guard.check(self.base_straight(beats=["a"])).errors))
+        # fragments and meme captions are sent back to the writer (real beats published in October 2026)
+        for bad in ("Meanwhile in government offices...", "Yet their lights stay on.", "*Cap.*",
+                    "The catch? *No ID cards*.", "Where is the money? *Read the report.*"):
+            errs = guard.check(self.base_straight(beats=[bad, "Both come off before your net pay.",
+                                                          "What has the money delivered so far?"])).errors
+            self.assertTrue(any("complete, plain sentence" in e for e in errs), bad)
+        self.assertEqual(guard.fragment('"You need coding for AI," they say.'), "")
         self.assertEqual(render.beat_tokens("We pay *4.25% now* ok"), [("We", False), ("pay", False), ("4.25%", True), ("now", True), ("ok", False)])
         self.assertTrue(render.BEAT["min"] <= render.beat_seconds("one two three four five six seven eight") <= render.BEAT["max"])
         reel = video.beat_reel({**ok, "id": "x"})

@@ -752,6 +752,9 @@ def _preview_text(p: dict) -> str:
         lines += ["📷 Photo from the event itself (licensed)"]
     elif kind == "posted":
         lines += [f"📷 The day's photo, from {esc(str(p.get('photo_outlet') or 'the news report'))} (credited)"]
+    elif kind == "file":
+        lines += [f"📷 File photo of who the post is about ({esc(str(p.get('photo_outlet') or 'Wikimedia Commons'))}, credited). "
+                  "Reply with the day's photo to swap it."]
     elif kind == "yours":
         lines += ["📷 Posted photo, credited (news and commentary use)" if p.get("photo_use") == "posted" else "📷 Your photo"]
     elif p.get("photo_file") and p.get("template") != "tazama" and not p.get("group"):

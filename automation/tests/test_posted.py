@@ -98,6 +98,96 @@ class Posted(unittest.TestCase):
             self.assertEqual(links, ["https://k.test/a"])   # the 9-day-old report aged out
             posted._FEED_CACHE.clear()
 
+    def test_full_size_article_photo_beats_the_feed_thumbnail(self):
+        item = dict(self.items[0], img="https://k.test/thumb.jpg")
+        page = b'<html><meta property="og:image" content="https://k.test/full.jpg"></html>'
+
+        def get(u, timeout=20):
+            return {"https://k.test/a": page, "https://k.test/thumb.jpg": jpeg(300, 200)}.get(u, jpeg())
+        with mock.patch.object(posted, "feed_items", lambda: [item]), mock.patch.object(posted, "_get", get):
+            data, meta = posted.find(POST)
+        self.assertEqual(len(data), len(jpeg()))
+        # and the thumbnail is still the fallback when the page can't be read
+        def get2(u, timeout=20):
+            if u == "https://k.test/a":
+                raise OSError("down")
+            return jpeg()
+        with mock.patch.object(posted, "feed_items", lambda: [item]), mock.patch.object(posted, "_get", get2):
+            self.assertIsNotNone(posted.find(POST))
+
+
+class Matching(unittest.TestCase):
+    """Real cases from October 2026 that the old matcher got wrong."""
+
+    def test_names_are_distinctive_words_not_titles_or_sentence_starts(self):
+        post = {"who": "Energy CS Opiyo Wandayi", "message": "Kenya Power cuts tokens over Sh50 while IEBC waits.",
+                "fact": "The State Department for Housing and Urban Development stalled Masinde Muliro market."}
+        names = posted.names_for(post)
+        for w in ("wandayi", "iebc", "masinde", "muliro"):
+            self.assertIn(w, names)
+        for w in ("c", "cs", "power", "kenya", "development", "state", "the"):
+            self.assertNotIn(w, names)
+
+    def test_an_institution_is_not_a_surname(self):
+        import photos
+        self.assertEqual(photos._surname("State Department for Housing and Urban Development"), "")
+        self.assertEqual(photos._surname("Kenya Power Management"), "")
+        self.assertEqual(photos._surname("Energy CS Opiyo Wandayi"), "wandayi")
+        self.assertEqual(photos.full_name("Energy CS Opiyo Wandayi"), "Opiyo Wandayi")
+        self.assertEqual(photos.full_name("Kenya Revenue Authority"), "")
+
+    def test_a_foreign_story_sharing_common_words_is_not_a_match(self):
+        post = {"template": "glasspoll", "message": "Should Kenya Power demand upfront electricity payment while it "
+                "chases public debts?"}
+        kyiv = {"title": "Russian strikes hit key power plant in Kyiv, Zelensky says", "text": "electricity supply cut while"}
+        s, w = posted.terms_for(post)
+        self.assertEqual(posted.score(kyiv, s, w, posted.names_for(post)), 0)
+
+    def test_a_shared_acronym_finds_the_same_story(self):
+        post = {"who": "Kenya Revenue Authority", "message": "KRA uncovered a Sh4 billion VAT fraud using fake invoices."}
+        report = {"title": "Sh3.9bn VAT fraud: Court issues arrest warrants for missing suspects", "text": ""}
+        s, w = posted.terms_for(post)
+        self.assertGreater(posted.score(report, s, w, posted.names_for(post), posted.acronyms_for(post)), 0)
+
+    def test_a_shared_place_name_alone_is_not_the_same_story(self):
+        post = {"who": "State Department for Housing and Urban Development", "where": "Trans Nzoia",
+                "promise": "Complete the modern Masinde Muliro commercial market in Kitale town",
+                "message": "Masinde Muliro Market in Kitale remains stalled after years of promises, leaving 4,000 traders stranded."}
+        report = {"title": "Ruto turns Trans Nzoia tour into campaign to unseat Natembeya", "text": "market"}
+        s, w = posted.terms_for(post)
+        self.assertEqual(posted.score(report, s, w, posted.names_for(post), posted.acronyms_for(post)), 0)
+
+
+class FilePhoto(unittest.TestCase):
+    NOW = dt.datetime.now(dt.timezone.utc)
+
+    def item(self, title, link, days=1):
+        return {"title": title, "link": link, "when": self.NOW - dt.timedelta(days=days), "img": link + ".jpg",
+                "credit": "", "text": "", "outlet": "Capital FM", "official": False}
+
+    def test_newest_report_naming_the_person_gives_a_labelled_file_photo(self):
+        items = [self.item("CS Ruku revokes payroll access for 84 HR officers", "https://k.test/ruku", 2),
+                 self.item("Ruku meets unions", "https://k.test/ruku2", 1)]
+        post = {"id": "p", "who": "Public Service CS Geoffrey Ruku", "message": "Civil servants wait for promotions."}
+        with mock.patch.object(posted, "feed_items", lambda: items), mock.patch.object(posted, "_get", lambda u, timeout=20: jpeg()):
+            data, meta = posted.find_named(post)
+        self.assertEqual(meta["kind"], "file")
+        self.assertEqual(meta["url"], "https://k.test/ruku2")   # the newest
+        self.assertTrue(meta["credit"].startswith("File photo: Capital FM"))
+
+    def test_never_by_place_and_never_from_an_old_report(self):
+        post = {"id": "p", "who": "Ministry of Sports", "message": "Kamariny stadium in Iten is still unfinished."}
+        items = [self.item("Kipruto from Iten wins Chicago marathon", "https://k.test/iten")]
+        with mock.patch.object(posted, "feed_items", lambda: items), mock.patch.object(posted, "_get", lambda u, timeout=20: jpeg()):
+            self.assertIsNone(posted.find_named(post))
+        post = {"id": "p", "who": "IEBC", "message": "IEBC targets 6.3 million new voters."}
+        items = [self.item("IEBC chair speaks", "https://k.test/old", days=30)]
+        with mock.patch.object(posted, "feed_items", lambda: items), mock.patch.object(posted, "_get", lambda u, timeout=20: jpeg()):
+            self.assertIsNone(posted.find_named(post))
+        items = [self.item("IEBC chair speaks", "https://k.test/new", days=2)]
+        with mock.patch.object(posted, "feed_items", lambda: items), mock.patch.object(posted, "_get", lambda u, timeout=20: jpeg()):
+            self.assertEqual(posted.find_named(post)[1]["url"], "https://k.test/new")
+
 
 if __name__ == "__main__":
     unittest.main()

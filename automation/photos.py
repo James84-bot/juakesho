@@ -316,7 +316,9 @@ INSTITUTION = re.compile(r"^(kenya\w*|nairobi|national|county|assembly|senate|pa
                          r"police|service|board|council|agency|fund|treasury|registration|public|debt|privatisation|"
                          r"central|youth|charter|manifesto|energy|interior|health|education|finance|opposition|"
                          r"united|democratic|party|movement|alliance|coalition|republic|east|africa|african|"
-                         r"constitution|act|bill|report|annual|statistical|bulletin)$", re.I)
+                         r"constitution|act|bill|report|annual|statistical|bulletin|development|management|urban|"
+                         r"housing|roads?|transport|infrastructure|sports|power|lighting|company|limited|corporation|"
+                         r"directorate|division|revenue|market|bridge|stadium)$", re.I)
 
 
 def _surname(who: str) -> str:
@@ -395,6 +397,46 @@ def event_photo(post: dict) -> tuple[bytes, dict] | None:
     return None
 
 
+def full_name(who: str) -> str:
+    """'Energy CS Opiyo Wandayi' -> 'Opiyo Wandayi'; '' when `who` names no person."""
+    surname = _surname(who)
+    if not surname:
+        return ""
+    m = re.search(rf"\b([A-Z][a-z'-]{{2,}})\s+({surname})\b", who or "", re.I)
+    return f"{m.group(1)} {m.group(2).title()}" if m and m.group(1).lower() not in TITLES else ""
+
+
+def commons_portrait(post: dict) -> tuple[bytes, dict] | None:
+    """A licensed photo of the public figure the post is about (Wikimedia Commons, CC0 / PD / CC BY / BY-SA),
+    found by their full name, which must be in the file's title. Labelled "File photo": it shows the real person,
+    not the day itself."""
+    name = full_name(str(post.get("who", "")))
+    if not name:
+        return None
+    surname = name.split()[-1].lower()
+    params = {"action": "query", "generator": "search", "gsrsearch": f'"{name}" filetype:bitmap', "gsrnamespace": 6,
+              "gsrlimit": 20, "prop": "imageinfo", "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600,
+              "format": "json"}
+    pages = json.loads(_get(f"{COMMONS}?{urllib.parse.urlencode(params)}")).get("query", {}).get("pages", {})
+    good = []
+    for page in sorted(pages.values(), key=lambda p: p.get("index", 0)):
+        info = (page.get("imageinfo") or [{}])[0]
+        md = info.get("extmetadata", {})
+        lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
+        if surname not in page.get("title", "").lower():   # a photo OF them, not one that merely mentions them
+            continue
+        if info.get("mime") not in {"image/jpeg", "image/png"} or info.get("width", 0) < 800 or not _licence_ok(lic):
+            continue
+        artist = html.unescape(re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown"))).strip()[:50]
+        good.append((info.get("thumburl") or info["url"],
+                     {"credit": f"File photo: {artist} / Wikimedia Commons, {lic}", "url": info.get("descriptionurl", ""),
+                      "kind": "file"}))
+    _note(f"  portrait '{name}' for {post.get('id')}: {len(pages)} found, {len(good)} usable")
+    for url, meta in good[:2]:
+        return _get(url), meta
+    return None
+
+
 def fetch(post: dict, out_dir: Path) -> dict | None:
     """Resolves the post's photo to a local file. Returns {"file", "credit", "url"} or None (never raises)."""
     try:
@@ -411,6 +453,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
         if hit:
             return hit
         if post.get("template") in CIVIC_TEMPLATES | {"glasspoll"} and not post.get("group"):
+            import posted
             try:
                 got = event_photo(post)
             except Exception as e:
@@ -426,6 +469,16 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
                 got = None
             if got:
                 return _save(out_dir, post["id"], *got)
+            # nothing of the day itself: a real file photo of the person or body the post is about, before any symbol
+            for name, step in (("file photo from the news", lambda: posted.find_named(post)),
+                               ("portrait", lambda: commons_portrait(post))):
+                try:
+                    got = step()
+                except Exception as e:
+                    _note(f"  {name} search failed for {post.get('id')}: {e}")
+                    got = None
+                if got:
+                    return _save(out_dir, post["id"], *got)
         if not query:
             return None
         order = (commons, openverse, pexels) if LOCAL.search(query) else (pexels, openverse, commons)
