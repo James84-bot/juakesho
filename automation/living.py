@@ -133,6 +133,44 @@ def _eye_controls(face: Face, blink: float):
     return np.array(pts, np.float32), np.array(dsp, np.float32)
 
 
+def mouth_texture(open_photo: np.ndarray) -> dict:
+    """The real inside of the presenter's mouth (teeth, tongue, shadow) from a photo of him saying 'ah':
+    the area inside his lips, cut out once and reused for every opening."""
+    f = detect(open_photo)
+    poly = np.array([f.lm[i] for i in LIPS_IN_UP] + [f.lm[i] for i in LIPS_IN_LO[::-1]], np.float32)
+    x, y, w, h = cv2.boundingRect(poly.astype(np.int32))
+    tex = open_photo[y:y + h, x:x + w].copy()
+    mask = np.zeros((h, w), np.uint8)
+    cv2.fillPoly(mask, [(poly - [x, y]).astype(np.int32)], 255)
+    return {"tex": tex, "mask": mask, "width": float(np.linalg.norm(f.lm[308] - f.lm[78]))}
+
+
+def _real_interior(out: np.ndarray, up: np.ndarray, lo: np.ndarray, real: dict) -> bool:
+    """Lays the real mouth interior into the opened lips: scaled to the opening's width, anchored at the upper
+    teeth, cropped to the opening's height, feathered at the lips."""
+    poly = np.concatenate([up, lo[::-1]]).astype(np.int32)
+    x, y, bw, bh = cv2.boundingRect(poly)
+    if bw < 6 or bh < 3:
+        return False
+    tex = real["tex"]
+    k = bw / tex.shape[1]
+    th = max(1, int(round(tex.shape[0] * k)))
+    t = cv2.resize(tex, (bw, th), interpolation=cv2.INTER_CUBIC)
+    if th < bh:   # a very wide opening: extend the bottom of the mouth (tongue, shadow) downwards
+        t = cv2.copyMakeBorder(t, 0, bh - th, 0, 0, cv2.BORDER_REPLICATE)
+    t = t[:bh]
+    h, w = out.shape[:2]
+    x1, y1 = min(w, x + bw), min(h, y + bh)
+    if x1 <= x or y1 <= y or x < 0 or y < 0:
+        return False
+    mask = np.zeros((h, w), np.uint8)
+    cv2.fillPoly(mask, [poly], 255)
+    soft = (cv2.GaussianBlur(mask, (0, 0), 1.1) / 255.0)[y:y1, x:x1, None]
+    region = out[y:y1, x:x1].astype(np.float32)
+    out[y:y1, x:x1] = (region * (1 - soft) + t[: y1 - y, : x1 - x].astype(np.float32) * soft).astype(np.uint8)
+    return True
+
+
 def _mouth_interior(out: np.ndarray, up: np.ndarray, lo: np.ndarray, teeth: float, jaw: float, mw: float) -> None:
     """Fills the opened mouth: dark throat, upper teeth under the upper lip, tongue low, feathered edges."""
     poly = np.concatenate([up, lo[::-1]]).astype(np.int32)
@@ -148,15 +186,15 @@ def _mouth_interior(out: np.ndarray, up: np.ndarray, lo: np.ndarray, teeth: floa
     shade = np.clip((yy - y) / max(bh, 1), 0, 1)[..., None]
     layer = (layer * (0.7 + 0.5 * shade)).astype(np.uint8)
     if teeth > 0:
-        th = max(2, int(min(bh * 0.42, 0.13 * mw) * (0.6 + 0.4 * teeth)))
+        th = max(2, int(min(bh * 0.36, 0.085 * mw) * (0.6 + 0.4 * teeth)))
         tmask = np.zeros((h, w), np.uint8)
         top = np.concatenate([up, up[::-1] + [0, th]]).astype(np.int32)
         cv2.fillPoly(tmask, [top], 255)
         xx = np.arange(w)[None, :].repeat(h, 0)
         side = np.clip(1 - np.abs(xx - (x + bw / 2)) / max(bw / 2, 1), 0, 1)[..., None]   # 1 centre, 0 corners
-        tcol = np.full(out.shape, (196, 210, 224), np.float32) * (0.72 + 0.28 * side) * (0.88 + 0.12 * (1 - shade))
+        tcol = np.full(out.shape, (150, 182, 222), np.float32) * (0.66 + 0.34 * side) * (0.9 + 0.1 * (1 - shade))   # warm ivory, darker at the corners
         tcol = tcol.astype(np.uint8)
-        a = (cv2.GaussianBlur(tmask, (0, 0), 1.6) / 255.0 * teeth * 0.92)[..., None]
+        a = (cv2.GaussianBlur(tmask, (0, 0), 1.8) / 255.0 * teeth * 0.9)[..., None]
         layer = (layer * (1 - a) + tcol * a).astype(np.uint8)
     if jaw > 0.3:                                                     # tongue rests low in a wide mouth
         tm = np.zeros((h, w), np.uint8)
@@ -190,8 +228,9 @@ def frame(face: Face, jaw: float, width: float, blink: float, head: tuple[float,
     up[:, 0] = cx + (up[:, 0] - cx) * width
     lo[:, 0] = cx + (lo[:, 0] - cx) * width
     if drop > 0.6:
-        teeth = SHAPES_TEETH.get("current", 0.7)
-        _mouth_interior(out, up, lo, teeth, jaw, face.mouth_w)
+        real = face.extra.get("mouth")
+        if not (real and _real_interior(out, up, lo, real)):
+            _mouth_interior(out, up, lo, SHAPES_TEETH.get("current", 0.7), jaw, face.mouth_w)
     dx, dy, deg = head
     if dx or dy or deg:
         m = cv2.getRotationMatrix2D(face.centre, deg, 1.0)
@@ -283,6 +322,12 @@ def talk(portrait: Path, wav: Path, script: str, out: Path, ff: str, seed: int =
     big = (int(PIP_W * MARGIN) // 2 * 2, int(PIP_H * MARGIN) // 2 * 2)
     crop = head_crop(img, detect(img), big)
     face = detect(crop)
+    open_photo = portrait.with_name("mouth-open.jpg")       # optional: him saying "ah", for real teeth
+    if open_photo.exists():
+        try:
+            face.extra["mouth"] = mouth_texture(cv2.imread(str(open_photo)))
+        except Exception as e:
+            print(f"  mouth photo not used: {e}")
     dur = presenter.seconds(wav)
     cues = presenter.cues(wav, script)
     with tempfile.TemporaryDirectory() as t:
