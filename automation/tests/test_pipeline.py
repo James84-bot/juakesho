@@ -165,6 +165,18 @@ class ApprovalTests(TempWeeks):
         self.assertEqual(pl.apply_decision(pl.load_week("2026-W41"), "p1", True), [])
         self.assertEqual(pl._next_rev("p1-r2"), "p1-r3")
 
+    def test_renew_redrafts_approved_posts_that_have_not_gone_out(self):
+        self.week([{"id": "a1", "status": "approved", "template": "promise", "publish_at": "2026-10-08T18:30:00+03:00"},
+                   {"id": "pub", "status": "published", "template": "sauti", "publish_at": "2026-10-05T07:30:00+03:00"}])
+        with mock.patch.object(pl, "now", lambda: dt.datetime(2026, 10, 3, 10, 0, tzinfo=pl.EAT)):   # the Saturday before
+            ids = pl.remake("2026-W41", replace_approved=True)
+        posts = {p["id"]: p for p in pl.load_week("2026-W41")["posts"]}
+        self.assertNotIn("a1", posts)                  # comes back as a new draft for approval
+        self.assertIn("pub", posts)                    # what already went out is never touched
+        self.assertTrue(ids and all(posts[i]["status"] == "planned" for i in ids))
+        self.assertEqual(pl.apply_decision(pl.load_week("2026-W41"), "a1", True), [])   # the old card is dead
+        self.assertTrue(any(posts[i]["template"] == "kenya" for i in ids))   # the new calendar's showcase slots
+
     def test_rephoto_keeps_words_new_ids_whole_carousel(self):
         self.week([{"id": "p1", "status": "awaiting", "line": "kept", "photo_query": "x", "photo_file": "f", "photo_credit": "c",
                     "publish_at": "2026-10-05T07:15:00+03:00"},

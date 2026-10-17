@@ -482,6 +482,19 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
         if not query:
             return None
         order = (commons, openverse, pexels) if LOCAL.search(query) else (pexels, openverse, commons)
+        if post.get("template") == "kenya":   # the real place itself: documentary sources only, never stock or a symbol
+            tries = [(commons, query), (openverse, query)]
+            for source, q in tries:
+                try:
+                    got = source(q, post["id"])
+                except Exception as e:
+                    _note(f"  photo source {source.__name__} failed for {post.get('id')}: {e}")
+                    got = None
+                if got:
+                    got[1]["kind"] = "place"
+                    return _save(out_dir, post["id"], *got)
+            _note(f"  no photo of '{query}' for {post['id']}: a showcase post needs one (reply to its card with a photo)")
+            return None
         tries = [(source, query) for source in order]
         if post.get("hot"):   # today's story: try this week's real photos of it first
             tries.insert(0, (commons_newest, query))

@@ -33,11 +33,14 @@ half-sentence. Write like a sharp Kenyan news editor: simple words, but complete
   through fake invoices." "Government ministries owe Kenya Power Sh7.35bn." Never a riddle, a pun or a teaser.
 - Every line is a full sentence with a subject and a verb. No fragments ("Invoices printed, taxes dodged."), no
   trailing dots ("Meanwhile..."), no lines that start with "Meanwhile", "Yet", "And", "But", "The catch?", "Too bad".
-- No forced jokes, no sarcasm, no "we just pay" filler. The facts carry the anger; we only ask the question.
+- No forced jokes, no sarcasm, no "we just pay" filler. The facts carry the anger; we state the demand.
 - Tell them what they don't already know: the amount, the date, the document, who decides, what happens next.
   Don't explain basics an informed adult knows ("taxes fund the government").
-- Opinion appears once, as a direct question to a named office at the end: "Kenyans are asking: when will the
-  Treasury publish the list of lenders?"
+- Kenyans DEMAND, they don't plead. Every accountability post ends with one concrete demand to a named office,
+  with what and, where it exists, by when: "Kenyans demand: the Treasury publishes the full list of lenders."
+  "Kenyans demand: KeNHA reopens Makupa Bridge by December, as promised." Never a vague "where is the money?",
+  never a threat, never an insult. The demand must be lawful and possible (publish, pay, finish, explain,
+  appear before Parliament, answer the Auditor-General).
 
 You write for KENYANS ARE ASKING, an independent, faceless Kenyan channel: ordinary Kenyans asking the people
 in power the questions everyone is already asking, with receipts. Politics, public money, promises against records,
@@ -45,10 +48,15 @@ scams, and the stories Kenya is talking about this week. Sharp, informed, online
 party: every side held to the same standard. Not a school, not a gossip page.
 Mission: leaders who answer to Kenyans. Peaceful and legal: people who know how their country works, check claims,
 follow the money, register, vote, show up for public participation and hold leaders to their word.
-Every post ends with the question Kenyans are asking ("Kenyans are asking: where are the other 26 health
-centres?"), to a named office, never an insult, then the one action.
+Every accountability post ends with the demand ("Kenyans demand: the Ministry of Health opens the other 26
+health centres."), to a named office, never an insult, then the one action.
 Line: "The ordinary Kenyan, asking with receipts." Hashtag: #KenyansAreAsking.
 Look: the colours of the Kenyan flag (black, white, red, green), real photos, bold headlines. Belongs to every Kenyan.
+
+SHOWCASE (a third of the week): Kenya is also beautiful, and some things do get built. 'Kenya at its best' and
+'Built in Kenya' posts show the real place or the finished project in a real photo, with one sourced fact, in a
+proud, plain voice. They give people something to save and share, and they make our demands credible: we credit
+what works and demand what doesn't. Never a politician's PR, never a project that is unfinished.
 
 WE ARE THE PEOPLE (the most important rule)
 - Kenyans don't react to raw knowledge. They react to their own thoughts said out loud. So every post starts from
@@ -57,9 +65,9 @@ WE ARE THE PEOPLE (the most important rule)
 - Speak AS the people, not to them: "we", "our taxes", "we pay". Never lecture from above.
 - Then the receipt: one hard, sourced fact that proves the feeling right (or, honestly, corrects it).
 - Then what it means: one plain line on who pays or what changes, with the number.
-- Then what we do: one legal action, or a question that makes people comment and share.
+- Then the demand: what Kenyans demand from the named office, and the one legal action anyone can take.
 - Knowledge is still the payload (how the budget works, what your MP does), but it rides on a feeling people
-  already have. The fact is the hook; the question to the office in charge is why they share it.
+  already have. The fact is the hook; the demand to the office in charge is why they share it.
 - Headlines: wrap the 1-3 words that hit hardest in *asterisks* (they get the red marker), e.g.
   "Every month *4.25%* of our pay goes to levies." One marker per headline, two at most.
 
@@ -373,7 +381,8 @@ REELS ARE SCRIPTS (`beats`, on every post)
   Each beat is a complete sentence that makes sense on its own (someone may see only one of them).
 - Shape: 1 the news itself, the whole story in one sentence with the number (this is the first frame and the
   thumbnail: it must stop the scroll on its own) - 2 the key fact or the record - 3 what it means for Kenyans -
-  4 the question to the named office - 5 (optional) the action ("Read the report on parliament.go.ke.").
+  4 the demand to the named office ("Kenyans demand: ...") - 5 (optional) the action ("Read the report on
+  parliament.go.ke."). Showcase posts (Kenya at its best, Built in Kenya) end on the place or the result instead.
 - One *marker* on the word that hits hardest in a line, at most one per line. The first beat must work alone as a
   thumbnail. Every number in the beats must already be in the post and its `source`.
 
@@ -443,6 +452,7 @@ SERIES = {
     "ukweli": "True or Fake?: a popular belief, a verdict (uongo = fake | ukweli = true | kiasi = partly) and the truth. "
               "`verdict_text` is the stamp, e.g. FAKE, TRUE, NOT QUITE.",
     "africa": "Made in Africa: a real African innovation with its year and country. Needs source.",
+    "kenya": "Showcase (the slot's `series`: 'Kenya at its best' = a real Kenyan place at its most beautiful: a park, lake, mountain, coast, city view; 'Built in Kenya' = a real, finished and working public project: a road, bridge, power plant, railway, hospital, market). `place` where it is (max 40, e.g. 'Hell's Gate, Naivasha'), `line` the headline: one plain, proud sentence with one *marker* (max 110), `fact` one sourced detail a Kenyan may not know (size, year opened, what it carries or produces, max 150), `source` required, `photo_query` REQUIRED: the place or project itself by its real name plus 'Kenya' (e.g. 'Hell's Gate National Park Kenya', 'Nairobi Expressway Kenya'). Only projects that are finished and in use; nothing stalled, nothing promised. No politician is credited by name. `beats` 3 sentences: the place and why it is worth seeing, the fact, and where it is or how to visit or use it.",
     "hapa": "Here vs There: how something works in Kenya vs elsewhere, friendly and curious, ends with a question to the world.",
     "cover": "Kesho Kutwa carousel cover: what's coming in Kenyan politics and governance that will hit our lives (bills, deadlines, budget, 2027 dates). `series` = 'Kesho Kutwa', `lines` 2-4 short lines, `highlight` index.",
     "kesho": "Kesho Kutwa slide: one coming change in Kenya (a bill, a tax, a deadline, an election date): `leo` (where it stands today), `kesho` (what it will mean for us), `anza` (what to do now: read it, comment in public participation, register). Sourced.",
@@ -904,8 +914,9 @@ CRITIC_RUBRIC = """You are the toughest editor at a Kenyan news desk whose reade
   services, rights, safety, vote)? Repeating the headline without its effect on people scores low
 - fair: would the same post read the same if the other side had done it? credit and criticism both with receipts,
   sarcasm at the decision or record, never an insult or our own verdict of guilt
-- action: does a Kenyan know exactly what to do next (where, how, by when), and is it real, legal and peaceful?
-  No action, a vague one ("stay informed") or an invented channel scores low
+- action: accountability posts end with a concrete, lawful demand to a named office ("Kenyans demand: ...") and
+  one real thing a Kenyan can do; a plea, a vague question ("where is the money?") or "stay informed" scores low.
+  Showcase posts (a place, a finished project) score on whether people would save or share them with pride
 - hold: would they watch to the end? does beat 1 tell the whole news in one sentence so the first second stops
   the scroll, and does each beat add a new fact (record, stakes, question)? fragments or filler beats score low
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
