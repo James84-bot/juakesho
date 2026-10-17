@@ -615,6 +615,10 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
             if s.get("hot") else {}),
          **({"angle": ANGLES[s["angle"]]} if s.get("angle") in ANGLES else {}),
          **({"avoid": "Already posted today, so pick a DIFFERENT story: " + " | ".join(s["avoid"])} if s.get("avoid") else {}),
+         **({"breaking": "BREAKING: write about THIS story, which several newsrooms are reporting right now: "
+                         + s["breaking"]["title"] + " (" + ", ".join(s["breaking"]["outlets"]) + "). Facts only from "
+                         "what is reported; first beat = the news in one sentence. Leave `source` as the outlet names."}
+            if s.get("breaking") else {}),
          "series_brief": SERIES[s["template"]],
          "fields": _field_spec(s["template"])}
         for s in slots
@@ -845,7 +849,7 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     out = []
     for s in slots:
         d = by_id.get(s["id"], {})
-        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "avoid") if k in s}
+        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "avoid", "breaking", "source_links") if k in s}
         out.append(news.resolve({**d, **locked}, table))
     return out
 

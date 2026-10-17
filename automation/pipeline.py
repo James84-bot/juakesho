@@ -197,8 +197,12 @@ def _anniversaries(posts: list[dict], year: int, wk: int) -> None:
 
 
 HOT = {"time": (12, 45), "template": "sauti", "min_lead": dt.timedelta(hours=3)}
-# Two news posts a day: lunchtime from the morning's news, evening from the afternoon's (a different story)
-HOT_EVENING = {"time": (19, 30), "suffix": "e"}
+# News posts every day, each on a different story: morning, lunchtime and evening editions, plus "breaking" posts
+# when several newsrooms report one story at once. A breaking post is due 20 minutes after drafting (time to
+# render), so it goes out on the run your ✅ triggers; unapproved, it expires as usual. At most BREAKING_MAX a day.
+EDITIONS = {"morning": {"time": (9, 45), "suffix": "m"}, "midday": {"time": (12, 45), "suffix": ""},
+            "evening": {"time": (19, 30), "suffix": "e"}}
+BREAKING_LEAD, BREAKING_MAX = dt.timedelta(minutes=20), 2
 
 
 def _clear_of(when: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timedelta(minutes=90)) -> dt.datetime:
@@ -210,39 +214,59 @@ def _clear_of(when: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timed
     return when
 
 
-def hot_slot(mock: bool = False, evening: bool = False) -> str | None:
-    """Twice daily: a post on the biggest Kenyan story right now. The lunchtime one is drafted from the morning's
-    news; the evening one from the afternoon's, on a different story than the lunchtime post.
-    Adds a planned Sauti post to this week's file (made if missing); returns the week label, or None if this
-    edition already exists or there's no news to react to."""
+def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = None) -> str | None:
+    """A news post on the biggest Kenyan story right now, never one already covered today.
+    Editions: morning, midday (lunchtime) and evening, drafted about three hours before they go out; and
+    "breaking", only when three or more newsrooms report one story within three hours and we haven't covered it,
+    out as soon as you approve it, at most BREAKING_MAX a day.
+    Adds a planned Sauti post to this week's file (made if missing); returns the week label, or None if there is
+    nothing to do (this edition exists, no fresh news, or no breaking story)."""
+    edition = edition or ("evening" if evening else "midday")
     label = current_week_label(ahead=0)
     today = now().date()
     if week_file(label).exists():
         data = load_week(label)
     else:
         data = {"collection": label, "created": now().isoformat(), "posts": [], "scripts": {}}
-    hot_id = f"{label.lower()}-hot-{today:%m%d}{HOT_EVENING['suffix'] if evening else ''}"
-    if any(p["id"] == hot_id for p in data["posts"]):
-        log(f"today's hot post {hot_id} already exists")
-        return None
-    if not mock:
+    todays = [p for p in data["posts"] if p.get("hot") and p["publish_at"][:10] == today.isoformat()]
+    covered = [str(p.get("message") or p.get("line") or p.get("breaking", {}).get("title") or "") for p in todays]
+    covered = [c for c in covered if c]
+    extra: dict = {}
+    if edition == "breaking":
         import news
-        if not news.prompt_block():
-            log("hot: no fresh news to react to, skipping today")
+        if sum(1 for p in todays if p.get("breaking")) >= BREAKING_MAX:
+            log("breaking: today's limit reached")
             return None
-    when = dt.datetime(today.year, today.month, today.day, *(HOT_EVENING if evening else HOT)["time"], tzinfo=EAT)
-    if when - now() < HOT["min_lead"]:   # late start: give the owner time to approve
-        when = (now() + HOT["min_lead"]).replace(second=0, microsecond=0)
-    when = _clear_of(when, data["posts"])
+        story = next((c for c in news.breaking() if not any(news.same_story(c["title"], x) for x in covered)), None)
+        if not story:
+            log("breaking: nothing new is being reported by several newsrooms at once")
+            return None
+        hot_id = f"{label.lower()}-hot-{today:%m%d}b{now():%H%M}"
+        when = (now() + BREAKING_LEAD).replace(second=0, microsecond=0)
+        extra = {"breaking": {"title": story["title"], "outlets": story["outlets"]},
+                 "source_links": [{"outlet": x["outlet"], "title": x["title"], "link": x["link"],
+                                   "published": x.get("published", "")[:10]} for x in story["items"][:4]]}
+    else:
+        hot_id = f"{label.lower()}-hot-{today:%m%d}{EDITIONS[edition]['suffix']}"
+        if any(p["id"] == hot_id for p in data["posts"]):
+            log(f"today's {edition} news post {hot_id} already exists")
+            return None
+        if not mock:
+            import news
+            if not news.prompt_block():
+                log("hot: no fresh news to react to, skipping")
+                return None
+        when = dt.datetime(today.year, today.month, today.day, *EDITIONS[edition]["time"], tzinfo=EAT)
+        if when - now() < HOT["min_lead"]:   # late start: give the owner time to approve
+            when = (now() + HOT["min_lead"]).replace(second=0, microsecond=0)
+        when = _clear_of(when, data["posts"])
     post = {"id": hot_id, "template": HOT["template"], "bg": "usiku", "lane": "everyone",
-            "publish_at": when.isoformat(), "status": "planned", "hot": True}
-    covered = [str(p.get("message") or p.get("line") or "") for p in data["posts"]
-               if p.get("hot") and p["publish_at"][:10] == today.isoformat() and p["id"] != hot_id]
+            "publish_at": when.isoformat(), "status": "planned", "hot": True, **extra}
     if covered:   # never two posts on the same story in one day
-        post["avoid"] = [c for c in covered if c][:3]
+        post["avoid"] = covered[:4]
     data["posts"].append(post)
     save_week(data)
-    log(f"hot: planned {hot_id} for {when:%a %H:%M} EAT")
+    log(f"hot ({edition}): planned {hot_id} for {when:%a %H:%M} EAT")
     return label
 
 
@@ -761,6 +785,10 @@ def _preview_text(p: dict) -> str:
     cap = brand_tags(p.get("caption", ""))
     cap = cap if len(cap) <= 420 else cap[:417].rstrip() + "..."
     lines = [f"<b>{esc(p['id'])}</b> · {esc(p['template'])} · lane: {esc(str(p.get('lane', '-')))}", f"🕒 {when} EAT"]
+    if p.get("breaking"):   # several newsrooms are on it now: approve fast and it goes out on the next run
+        b = p["breaking"]
+        lines = [f"🔴 <b>BREAKING</b>: {esc(b['title'][:120])} ({esc(', '.join(b['outlets'][:4]))}). "
+                 "Approve now and it goes out within minutes."] + lines
     if p.get("message"):
         lines += [f"🎯 <i>{esc(p['message'])}</i>" + (f"  ({esc(p['symbol'])})" if p.get("symbol") else "")]
     if p.get("impact"):
@@ -1194,6 +1222,10 @@ def caption_for(post: dict) -> str:
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
         body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
         cap = f"{body.rstrip()}\n\n👉 {act}{tail}"
+    if post.get("hot") and "send us" not in cap.lower():   # news posts: footage from the scene, credited, is ours to use
+        tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
+        body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
+        cap = f"{body.rstrip()}\n\n📩 Were you there? Send us your video and we'll credit you.{tail}"
     clip = post.get("credit") if post.get("template") == "tazama" and post.get("rights_kind") != "own" else None
     credits = [f"{icon} {c}" for icon, c in (("📹 Video:", clip), ("🎥", post.get("video_credit")),
                                              ("📷", post.get("person_credit") or post.get("photo_credit")),
@@ -1532,6 +1564,8 @@ def _main(argv: list[str] | None = None) -> int:
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
+    ap.add_argument("--morning", action="store_true", help="hot: the morning edition")
+    ap.add_argument("--breaking", action="store_true", help="hot: only if several newsrooms report a new story now")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
     a = ap.parse_args(argv)
     label = a.week or current_week_label()
@@ -1576,7 +1610,8 @@ def _main(argv: list[str] | None = None) -> int:
         except Exception as e:
             log(f"radar message skipped: {e}")
     if a.command == "hot":
-        label = hot_slot(a.mock, evening=a.evening)
+        label = hot_slot(a.mock, edition="breaking" if a.breaking else "morning" if a.morning
+                         else "evening" if a.evening else "midday")
         if not label:
             return 0
     if a.command == "tracker":   # next week as a Development Tracker batch, drafted and sent now

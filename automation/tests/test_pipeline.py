@@ -100,6 +100,39 @@ class HotPostTests(TempWeeks):
             self.assertEqual(post["publish_at"], "2026-10-14T20:00:00+03:00")   # 3 hours to approve
 
 
+class BreakingTests(TempWeeks):
+    ITEMS = [  # real headlines, 16-17 Oct 2026
+        {"title": "IG Kanja wins police recruitment battle as court limits NPSC", "outlet": "The Star, Kenya",
+         "link": "https://s.test/1", "published": "2026-10-17T08:00:00+00:00"},
+        {"title": "Court of Appeal upholds ruling barring NPSC from recruiting police constables", "outlet": "Daily Nation",
+         "link": "https://s.test/2", "published": "2026-10-17T08:30:00+00:00"},
+        {"title": "Court bars NPSC from police recruitment, hands IG Kanja win", "outlet": "Tuko News",
+         "link": "https://s.test/3", "published": "2026-10-17T09:10:00+00:00"},
+        {"title": "Ruto signs 2 tax bills into law", "outlet": "Tuko News", "link": "https://s.test/4",
+         "published": "2026-10-17T09:00:00+00:00"}]
+
+    def test_a_story_several_newsrooms_report_at_once_is_breaking(self):
+        import news
+        now = dt.datetime(2026, 10, 17, 10, 0, tzinfo=dt.timezone.utc)
+        got = news.breaking(self.ITEMS, now=now)
+        self.assertEqual(len(got), 1)
+        self.assertEqual(got[0]["outlets"], ["Daily Nation", "The Star, Kenya", "Tuko News"])
+        self.assertEqual(news.breaking(self.ITEMS, now=now + dt.timedelta(hours=5)), [])   # old news is not breaking
+
+    def test_breaking_post_is_planned_once_and_never_twice_on_one_story(self):
+        import news
+        eat = dt.datetime(2026, 10, 17, 13, 0, tzinfo=pl.EAT)
+        clusters = news.breaking(self.ITEMS, now=eat)
+        with mock.patch.object(pl, "now", lambda: eat), mock.patch.object(news, "breaking", lambda: clusters):
+            self.assertEqual(pl.hot_slot(edition="breaking"), "2026-W42")
+            post = pl.load_week("2026-W42")["posts"][-1]
+            self.assertTrue(post["breaking"]["title"])
+            self.assertEqual(len(post["source_links"]), 3)
+            self.assertEqual(post["publish_at"], "2026-10-17T13:20:00+03:00")   # out as soon as it is approved
+            self.assertIsNone(pl.hot_slot(edition="breaking"))                  # the same story is covered
+            self.assertIn("BREAKING", pl._preview_text(post))   # the card says so at the top
+
+
 class ReachTests(unittest.TestCase):
     def test_crosspost_package_has_tiktok_shorts_and_whatsapp(self):
         post = {"id": "p", "reel": True, "caption": "KRA uncovers fraud. #KenyansAreAsking",
@@ -110,6 +143,9 @@ class ReachTests(unittest.TestCase):
                      "KRA uncovers a Sh4bn VAT fraud run through fake invoices. #Shorts"):
             self.assertIn(part, text)
         self.assertNotIn("#KenyansAreAsking", text)   # the old tag is replaced
+        cap = pl.caption_for(dict(post, hot=True))
+        self.assertIn("Send us your video", cap)
+        self.assertTrue(cap.rstrip().endswith("#KenyaOnRecord") or "📷" in cap)   # hashtags stay last
         self.assertLess(len(text), 4096)
         self.assertNotIn("TikTok", pl.crosspost_text(dict(post, reel=False)))   # an image post: WhatsApp only
         long = dict(post, caption="x " * 3000)

@@ -123,6 +123,38 @@ def prompt_block(max_items: int = MAX_ITEMS, max_age_hours: int = 30) -> str:
             "stories that touch people's pockets, rights, safety and votes.\n")
 
 
+def _stems(title: str) -> set[str]:
+    import posted
+    words = re.findall(r"[a-z][a-z'-]{3,}", title.lower().replace("’", "'"))
+    return {w[:6] for w in words if w not in posted.STOP and w not in posted.GENERIC}
+
+
+def same_story(a: str, b: str) -> bool:
+    """Two headlines about one story: at least three shared content words (stems: 'convicted' ~ 'conviction')."""
+    return len(_stems(a) & _stems(b)) >= 3
+
+
+def breaking(items: list[dict] | None = None, hours: float = 3.0, min_outlets: int = 3,
+             now: dt.datetime | None = None) -> list[dict]:
+    """Stories several newsrooms are reporting at once: the moment to be first with the facts.
+    Returns clusters ({"title", "outlets", "items"}), the most widely reported first."""
+    now = now or dt.datetime.now(dt.timezone.utc)
+    if items is None:
+        items = json.loads(OUT.read_text(encoding="utf-8")).get("items", []) if OUT.exists() else []
+    fresh = [x for x in items if x.get("published")
+             and now - dt.datetime.fromisoformat(x["published"]) <= dt.timedelta(hours=hours)]
+    clusters: list[list[dict]] = []
+    for x in sorted(fresh, key=lambda x: x["published"]):
+        home = next((c for c in clusters if any(same_story(x["title"], y["title"]) for y in c)), None)
+        (home.append(x) if home is not None else clusters.append([x]))
+    out = []
+    for c in clusters:
+        outlets = sorted({y["outlet"] for y in c})
+        if len(outlets) >= min_outlets:
+            out.append({"title": c[-1]["title"], "outlets": outlets, "items": c})
+    return sorted(out, key=lambda c: -len(c["outlets"]))
+
+
 def resolve(post: dict, table: dict[str, dict] | None = None) -> dict:
     """Turns headline ids in `source` / `claim_source` ("n3") into the outlet and date, and records the real
     article links in `source_links`, once, at drafting: later news can't change what an id meant."""
