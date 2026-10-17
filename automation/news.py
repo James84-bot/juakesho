@@ -83,7 +83,18 @@ def collect() -> dict:
     return data
 
 
-def prompt_block(max_items: int = 18, max_age_hours: int = 30) -> str:
+MAX_ITEMS = 18
+
+
+def refs(max_items: int = MAX_ITEMS) -> dict[str, dict]:
+    """The headlines the writer sees, by the short id it cites them with: {"n1": item, ...}."""
+    if not OUT.exists():
+        return {}
+    data = json.loads(OUT.read_text(encoding="utf-8"))
+    return {f"n{i + 1}": x for i, x in enumerate(data.get("items", [])[:max_items])}
+
+
+def prompt_block(max_items: int = MAX_ITEMS, max_age_hours: int = 30) -> str:
     """Headlines for the writer; empty if there's no fresh data."""
     if not OUT.exists():
         return ""
@@ -91,12 +102,36 @@ def prompt_block(max_items: int = 18, max_age_hours: int = 30) -> str:
     age = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(data["fetched"])
     if age > dt.timedelta(hours=max_age_hours) or not data.get("items"):
         return ""
-    lines = [f"- [{x['outlet']}] {x['title']} ({x['published'][:10]}) {x['link']}" for x in data["items"][:max_items]]
-    return ("\nTHIS WEEK IN KENYA (real headlines, newest first)\n" + "\n".join(lines) +
-            "\nBuild most posts on these stories: what Kenyans are already talking about. Use only facts you can "
-            "trace to these reports or to official records, and put the article link in `source` (and "
-            "`claim_source` for quotes). Never invent details a headline doesn't give; if a story is unclear, "
-            "pick another. Prefer stories that touch people's pockets, rights, safety and votes.\n")
+    lines = [f"- [{k}] [{x['outlet']}] {x['title']} ({x['published'][:10]})" for k, x in refs(max_items).items()]
+    return ("\nTHIS WEEK IN KENYA (real headlines, newest first, each with its id in brackets)\n" + "\n".join(lines) +
+            "\nBuild most posts on these stories: what Kenyans are already talking about. Use only facts these "
+            "headlines state or that an official record states. In `source` (and `claim_source` for quotes) write "
+            "the headline id(s) you used, e.g. \"n3\" or \"n3, n7\"; the system replaces them with the article "
+            "links. Never invent a detail a headline doesn't give; if a story is unclear, pick another. Prefer "
+            "stories that touch people's pockets, rights, safety and votes.\n")
+
+
+def resolve(post: dict, table: dict[str, dict] | None = None) -> dict:
+    """Turns headline ids in `source` / `claim_source` ("n3") into the outlet and date, and records the real
+    article links in `source_links`, once, at drafting: later news can't change what an id meant."""
+    table = refs() if table is None else table
+    links = list(post.get("source_links") or [])
+    for field in ("source", "claim_source"):
+        text = str(post.get(field) or "")
+        def sub(m):
+            x = table.get(m.group(0).lower())
+            if not x:
+                return m.group(0)
+            if x["link"] not in [l["link"] for l in links]:
+                links.append({"outlet": x["outlet"], "title": x["title"], "link": x["link"],
+                              "published": x.get("published", "")[:10]})
+            return f"{x['outlet']}, {x.get('published', '')[:10]}"
+        new = re.sub(r"\b[nN]\d{1,2}\b", sub, text)
+        if new != text:
+            post[field] = new
+    if links:
+        post["source_links"] = links
+    return post
 
 
 if __name__ == "__main__":

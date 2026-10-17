@@ -21,6 +21,7 @@ import urllib.request
 from pathlib import Path
 
 import guard
+import news
 
 HERE = Path(__file__).resolve().parent
 API_URL = "https://api.anthropic.com/v1/messages"
@@ -832,11 +833,12 @@ def extract_json(text: str) -> dict:
 def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     """Model output fills content; the plan keeps control of id/template/bg/time/group."""
     by_id = {d.get("id"): d for d in drafted}
+    table = news.refs()   # headline ids the writer cited -> the real article links
     out = []
     for s in slots:
         d = by_id.get(s["id"], {})
         locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot") if k in s}
-        out.append({**d, **locked})
+        out.append(news.resolve({**d, **locked}, table))
     return out
 
 
@@ -1091,6 +1093,7 @@ TAKEN: list[dict] = []   # posts already in the week (kept through a remake): se
 
 
 def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = False) -> tuple[list[dict], dict]:
+    guard.VERIFY_LINKS = not mock   # a real run opens every source link once; an invented one goes back for a rewrite
     if mock:
         result = mock_draft(slots)
     else:

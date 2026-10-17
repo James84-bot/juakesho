@@ -682,7 +682,11 @@ def render_week(label: str) -> dict:
     for p in todo:
         png = out_dir / f"{p['id']}.png"
         Image.open(png).convert("RGB").save(out_dir / f"{p['id']}.jpg", "JPEG", quality=90, optimize=True)
-        if qa.get(p["id"]):  # visual QA found overflow or collisions: a human must look first
+        if p["template"] == "kenya" and not p.get("photo_file"):   # a showcase without the real place is nothing
+            p["status"] = "needs_human"
+            p.setdefault("guard", {}).setdefault("errors", []).append(
+                "no real photo of this place or project was found: redraft with another one")
+        elif qa.get(p["id"]):  # visual QA found overflow or collisions: a human must look first
             p["status"] = "needs_human"
             p.setdefault("guard", {}).setdefault("errors", []).extend(f"visual QA: {i['what']}" for i in qa[p["id"]])
         else:

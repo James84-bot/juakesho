@@ -634,7 +634,19 @@ class QualitySystemTests(unittest.TestCase):
                 mock.patch.object(news, "MAX_AGE", dt.timedelta(days=36500)):
             data = news.collect()
             self.assertEqual(len(data["items"]), 1)   # the same story from two feeds counts once
-            self.assertIn("https://x.test/1", news.prompt_block())
+            self.assertIn("[n1] [Capital FM] MPs pass Finance Bill", news.prompt_block())
+            # the writer cites the id; the real link is recorded on the post, once
+            post = news.resolve({"source": "n1", "template": "sauti"})
+            self.assertEqual(post["source_links"][0]["link"], "https://x.test/1")
+            self.assertTrue(post["source"].startswith("Capital FM, 2026-10-12"))
+            self.assertEqual(guard.source_problem(post), "")
+            self.assertIn("can't be checked", guard.source_problem({"source": "Political party announcements, October 2026"}))
+            self.assertEqual(guard.source_problem({"source": "Affordable Housing Act, 2024 (s.4)"}), "")
+            self.assertEqual(guard.source_problem({"source": "Kenya Wildlife Service (kws.go.ke)"}), "")
+            tagged = guard.check({"id": "x", "template": "glasspoll", "caption": "Vote A or B. #YourSay #RutoDevelopmentRecord"})
+            self.assertTrue(any("RutoDevelopmentRecord" in e for e in tagged.errors))   # published-to-be, 17 Oct
+            with mock.patch.object(guard, "VERIFY_LINKS", True), mock.patch.object(guard, "link_opens", lambda u: False):
+                self.assertIn("does not open", guard.source_problem({"source": "https://kws.go.ke/made-up-page"}))
 
     def test_commons_licences(self):
         import photos
