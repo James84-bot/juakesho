@@ -1,7 +1,7 @@
 {
   "timezone": "Africa/Nairobi",
   "utc_offset": "+03:00",
-  "note": "Three kinds of post. Money and daily life (Monday and Friday, and most news posts): prices, levies, fees, jobs, scams, in plain words. Kenya's pride (Tuesday: Kenya at its best; Saturday: Built in Kenya). Accountability (Wednesday: Promise Tracker or the Chapter Six Test; the daily news posts), with sources and a clear demand. Two polls a week (Thursday and Sunday). Two news posts every day: lunchtime and evening.",
+  "note": "Six in ten posts are about everyday life, four in ten hold power to account. Everyday life: The Real Price (Monday, what things really cost), Kenya at its best (Tuesday), Guess the Price (Thursday quiz), Myth or Fact (Friday, viral claims checked), Built in Kenya (Saturday), and the morning and lunchtime news posts on the biggest non-political story (money, jobs, prices, health, sport, tech, Kenyan wins). Accountability: Promise Tracker or the Chapter Six Test (Wednesday), the Sunday poll and the evening news post, with sources and a clear demand.",
   "slots": [
     {
       "day": 1,
@@ -18,7 +18,13 @@
         "young_pro",
         "hustle",
         "everyone"
-      ]
+      ],
+      "angle": {
+        "money": "real_price"
+      },
+      "series": {
+        "money": "The Real Price"
+      }
     },
     {
       "day": 2,
@@ -60,15 +66,14 @@
       "lanes": [
         "everyone"
       ],
-      "size": "story"
+      "size": "story",
+      "angle": "price_quiz",
+      "series": "Guess the Price"
     },
     {
       "day": 5,
       "time": "17:00",
-      "template": [
-        "usiibiwe",
-        "straight"
-      ],
+      "template": "straight",
       "bg": [
         "usiku"
       ],
@@ -76,7 +81,9 @@
         "everyone",
         "campus",
         "hustle"
-      ]
+      ],
+      "angle": "myth",
+      "series": "Myth or Fact"
     },
     {
       "day": 6,

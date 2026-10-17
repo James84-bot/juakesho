@@ -588,6 +588,24 @@ def nickname_menu() -> str:
 
 
 ANGLES = {
+    "real_price": ("THE REAL PRICE (everyday life, not politics): what one everyday thing really costs Kenyans now: unga, "
+                   "sugar, cooking gas, fuel, a matatu fare on a named route, rent for a bedsitter or one-bedroom in a "
+                   "named estate, school fees, data bundles, a clinic visit. `number` = the price (e.g. Sh180), `unit` = "
+                   "what it buys (e.g. '2kg unga, Nairobi'), `what` = how it changed and since when, `why` = what that "
+                   "means for a household's week, `check` = where anyone can see the price themselves (EPRA, KNBS, a "
+                   "supermarket, the fare chart). Only prices from the news list or an official source; never invent "
+                   "one. No politician, no blame: just the real number and one money-saving tip if the source gives one."),
+    "price_quiz": ("GUESS THE PRICE (everyday life, not politics; this replaces the poll's political topic): a quiz "
+                   "about what something really costs in Kenya, from a price in the news list or an official source. "
+                   "`hook` makes people want to guess, question 'How much is ... now?', two options (A and B), one of "
+                   "them the real price. `beats`: the question, the two options, then the answer as the LAST beat ('The "
+                   "answer is B: 2kg of unga now costs Sh180 in Nairobi.'), so people watch to the end. The caption "
+                   "asks them to guess in the comments before the end and never gives the answer. Never political."),
+    "myth": ("MYTH OR FACT (everyday life, not politics): one claim Kenyans are forwarding on WhatsApp or TikTok: health "
+             "cures, 'free government money' or job offers, 'new law' rumours, money or M-Pesa myths, fake school or "
+             "exam notices. `claim` quoted exactly, `who` = where it spreads (e.g. 'a viral WhatsApp message, October "
+             "2026'), verdict from a real check: the Ministry of Health, CBK, KEBS, Safaricom, KNEC, PesaCheck or Africa "
+             "Check, named in `source`. Never a claim by a politician or party. `pride` = the safe thing to do instead."),
     "credit": ("CREDIT WHERE DUE: applaud one thing a leader, the government, a county or the opposition actually "
                "delivered: a kept promise, a finished project, a good law, money accounted for. Proof required "
                "(the official record or two reputable outlets). Promise template: verdict 'kept'. Still end with the next "
@@ -619,7 +637,12 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
     slot_txt = json.dumps([
         {"id": s["id"], "template": s["template"], "lane": s["lane"], **({"series": s["series"]} if s.get("series") else {}),
          **({"anniversary": s["remember"]} if s.get("remember") else {}),
-         **({"hot": "Today's post: react to the biggest Kenyan political story in THIS WEEK IN KENYA, with its link in `source`"}
+         **({"hot": ("Today's post: react to the biggest Kenyan EVERYDAY-LIFE story in THIS WEEK IN KENYA (money and "
+                     "prices, jobs, health, schools, sport, tech, weather, scams, a Kenyan win), NOT a politician's "
+                     "statement or a party fight, with its link in `source`. A government decision counts only for "
+                     "what it changes in people's lives (a new fee, a price, a service).")
+                    if s.get("beat") == "life" else
+                    "Today's post: react to the biggest Kenyan political story in THIS WEEK IN KENYA, with its link in `source`"}
             if s.get("hot") else {}),
          **({"angle": ANGLES[s["angle"]]} if s.get("angle") in ANGLES else {}),
          **({"avoid": "Already posted today, so pick a DIFFERENT story: " + " | ".join(s["avoid"])} if s.get("avoid") else {}),
@@ -857,7 +880,7 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     out = []
     for s in slots:
         d = by_id.get(s["id"], {})
-        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "avoid", "breaking", "source_links") if k in s}
+        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "beat", "avoid", "breaking", "source_links") if k in s}
         out.append(news.resolve({**d, **locked}, table))
     return out
 
