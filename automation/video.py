@@ -91,8 +91,9 @@ def _open(page, html_path: Path) -> None:
 
 
 def _frame_worker(args) -> int:
-    """Renders every n-th frame in its own browser (frames are independent once time is seeked)."""
-    html_path, frame_dir, frames, k, n, w, h = args
+    """Renders every n-th frame in its own browser (frames are independent once time is seeked).
+    alpha: transparent PNGs (the words and scrim only), for laying over moving footage."""
+    html_path, frame_dir, frames, k, n, w, h, alpha = args
     from playwright.sync_api import sync_playwright
     with sync_playwright() as p:
         browser = p.chromium.launch()
@@ -100,8 +101,12 @@ def _frame_worker(args) -> int:
         _open(page, Path(html_path))
         for f in range(k, frames, n):
             page.evaluate(f"window.__seek({f / FPS})")
-            page.screenshot(path=f"{frame_dir}/f{f:04d}.jpg", type="jpeg", quality=93,
-                            clip={"x": 0, "y": 0, "width": w, "height": h}, animations="allow")
+            if alpha:
+                page.screenshot(path=f"{frame_dir}/f{f:04d}.png", type="png", omit_background=True,
+                                clip={"x": 0, "y": 0, "width": w, "height": h}, animations="allow")
+            else:
+                page.screenshot(path=f"{frame_dir}/f{f:04d}.jpg", type="jpeg", quality=93,
+                                clip={"x": 0, "y": 0, "width": w, "height": h}, animations="allow")
         browser.close()
     return k
 
@@ -149,12 +154,20 @@ def workers() -> int:
     return max(1, min(int(os.environ.get("JUA_VIDEO_WORKERS", "0")) or (os.cpu_count() or 2), 6))
 
 
-def render_frames(html_path: Path, frame_dir: Path, frames: int, w: int = 1080, h: int = 1920) -> None:
-    """Every frame of an animated page as f0000.jpg..., rendered in parallel browsers."""
+def render_frames(html_path: Path, frame_dir: Path, frames: int, w: int = 1080, h: int = 1920, alpha: bool = False) -> None:
+    """Every frame of an animated page as f0000.jpg... (or transparent f0000.png), rendered in parallel browsers."""
     n = workers()
     ctx = mp.get_context("spawn")
     with ctx.Pool(n) as pool:
-        pool.map(_frame_worker, [(str(html_path), str(frame_dir), frames, k, n, w, h) for k in range(n)])
+        pool.map(_frame_worker, [(str(html_path), str(frame_dir), frames, k, n, w, h, alpha) for k in range(n)])
+
+
+def footage_graph(dur: float) -> str:
+    """The clip filling 9:16 (cropped from the centre, looped if short), slightly darkened and moving, with the
+    transparent design frames on top."""
+    return ("[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30,"
+            f"eq=brightness=-0.08:saturation=1.05,trim=duration={dur},setpts=PTS-STARTPTS[bg];"
+            "[bg][1:v]overlay=0:0:format=auto:shortest=1,format=yuv420p[v]")
 
 
 def beats_segment(env, post: dict, beats: list[str], kicker: str, out_mp4: Path, ff: str, tail: float = 0.5) -> float:
@@ -191,13 +204,14 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
             t += render.beat_seconds(b)
     else:
         html = render.build_html(env, post, motion=True, reel=not is_story)
+    footage = beats and post.get("video_file") and Path(post["video_file"]).exists()
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         (tmp / "page.html").write_text(html, encoding="utf-8")
         _open(page, tmp / "page.html")
         dur = round(t + 1.2, 2) if beats else duration_for(post, page.evaluate("window.__motionEnd()"))
         frames = int(dur * FPS)
-        render_frames(tmp / "page.html", tmp, frames)
+        render_frames(tmp / "page.html", tmp, frames, alpha=bool(footage))
         seed = zlib.crc32(post["id"].encode()) % 1000
         track = music_track(post)
         if track:   # an artist's track we have permission for: chime first, then their hook
@@ -208,18 +222,30 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         else:
             sound.write_wav(sound.bed(dur, seed), tmp / "audio.wav")
         target_mp4 = out_dir / f"{post['id']}.mp4"
-        cmd = [ff, "-y", "-loglevel", "error",
-               "-framerate", str(FPS), "-i", str(tmp / "f%04d.jpg"),
-               "-i", str(tmp / "audio.wav"),
-               "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
-               "-vf", "scale=1080:1920:flags=lanczos,setsar=1",
-               "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
-               "-shortest", "-movflags", "+faststart", str(target_mp4)]
+        if footage:   # real moving footage underneath, the design frames on top
+            cmd = [ff, "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(post["video_file"]),
+                   "-framerate", str(FPS), "-i", str(tmp / "f%04d.png"), "-i", str(tmp / "audio.wav"),
+                   "-filter_complex", footage_graph(dur), "-map", "[v]", "-map", "2:a",
+                   "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                   "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-t", str(dur),
+                   "-movflags", "+faststart", str(target_mp4)]
+        else:
+            cmd = [ff, "-y", "-loglevel", "error",
+                   "-framerate", str(FPS), "-i", str(tmp / "f%04d.jpg"),
+                   "-i", str(tmp / "audio.wav"),
+                   "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
+                   "-vf", "scale=1080:1920:flags=lanczos,setsar=1",
+                   "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
+                   "-shortest", "-movflags", "+faststart", str(target_mp4)]
         subprocess.run(cmd, check=True)
         # Cover frame: the hook line fully landed (beat Reels), or the fully-built design
         from PIL import Image
         cover = min(frames - 1, int((min(1.2, render.beat_seconds(beats["beats"][0]) - 0.2)) * FPS)) if beats else frames - 1
-        Image.open(tmp / f"f{cover:04d}.jpg").convert("RGB").save(out_dir / f"{post['id']}-cover.jpg", quality=90)
+        if footage:   # the finished picture at that moment, footage included
+            subprocess.run([ff, "-y", "-loglevel", "error", "-ss", f"{cover / FPS:.2f}", "-i", str(target_mp4),
+                            "-frames:v", "1", "-q:v", "3", str(out_dir / f"{post['id']}-cover.jpg")], check=True)
+        else:
+            Image.open(tmp / f"f{cover:04d}.jpg").convert("RGB").save(out_dir / f"{post['id']}-cover.jpg", quality=90)
     return target_mp4
 
 
