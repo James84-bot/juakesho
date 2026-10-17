@@ -42,23 +42,26 @@ OWN = HERE / "content" / "photos"
 API = "https://api.pexels.com/v1/search"
 COMMONS = "https://commons.wikimedia.org/w/api.php"
 OPENVERSE = "https://api.openverse.org/v1/images/"
-# Symbolic backgrounds: when a post's own search finds nothing, a real photo of the object or place that stands for its
-# topic, picked by the words in the post. Never people. The last resort for any civic post is Parliament or the flag.
+# Last-resort backgrounds: when no photo of the story, its person or its institution turns up, a real photo of the
+# institution or place the story is about, picked by the words in the post. Never stand-in objects (banknotes,
+# pylons, ballot boxes): readers took those for stock filler. Never people.
 SYMBOLS = [
-    (r"\b(power|electricity|kplc|tokens?|blackouts?)\b", ["power lines Kenya", "electricity pylon Kenya"]),
-    (r"\b(tax|budget|treasury|levy|debt|loan|billion|shilling|revenue|kra|money|funds?|bills?)\b|\bsh ?[\d.,]+ ?(bn|m)?\b|\d(bn|m)\b",
-     ["Kenyan shilling banknotes", "Central Bank of Kenya"]),
-    (r"\b(court|judge|judiciary|ruling|petition|case)\b", ["Supreme Court of Kenya", "Milimani Law Courts"]),
-    (r"\b(iebc|election|vote|voters?|ballot|2027|polling)\b", ["ballot box Kenya", "Kenya election"]),
-    (r"\b(hospital|health|shif|sha|doctors?|nurses?|clinic)\b", ["hospital ward Kenya", "Kenyatta National Hospital"]),
-    (r"\b(school|students?|university|helb|lecturers?|teachers?|exam)\b", ["classroom Kenya", "University of Nairobi"]),
-    (r"\b(road|bridge|project|stalled|construction|housing)\b", ["road construction Kenya", "construction site Nairobi"]),
-    (r"\b(police|abduct\w*|killed|teargas|protest\w*)\b", ["Flag of Kenya", "Kenya police vehicle"]),
-    (r"\b(land|title)\b", ["title deed Kenya", "farmland Kenya"]),
-    (r"\b(farm\w*|maize|tea|coffee|fertili[sz]er)\b", ["maize farm Kenya", "tea plantation Kenya"]),
-    (r"\b(mp|mps|parliament|bill|senate|law)\b", ["Kenya National Assembly", "Parliament Buildings Nairobi"]),
+    (r"\b(kenya power|kplc|electricity|tokens?|blackouts?)\b", ["Stima Plaza Nairobi", "Kenya Power"]),
+    (r"\b(kra|tax|vat|paye|revenue|levy)\b", ["Times Tower Nairobi", "Kenya Revenue Authority"]),
+    (r"\b(budget|treasury|debt|loans?|eurobond)\b", ["Treasury Building Nairobi", "Central Bank of Kenya"]),
+    (r"\b(court|judges?|judiciary|ruling|petition)\b", ["Supreme Court of Kenya", "Milimani Law Courts"]),
+    (r"\b(iebc|election|voters?|ballot|2027|polling)\b", ["Anniversary Towers Nairobi", "Bomas of Kenya"]),
+    (r"\b(hospital|health|shif|sha|doctors?|nurses?)\b", ["Kenyatta National Hospital", "Afya House Nairobi"]),
+    (r"\b(university|students?|helb|lecturers?|internships?|graduates?)\b", ["University of Nairobi", "Kenyatta University"]),
+    (r"\b(school|teachers?|tsc|exam|knec)\b", ["Jogoo House Nairobi", "Kenya National Examinations Council"]),
+    (r"\b(huduma|national id|ids?|passports?|immigration)\b", ["Nyayo House Nairobi", "Huduma Centre"]),
+    (r"\b(road|bridge|expressway|kenha)\b", ["Nairobi Expressway", "Thika Superhighway"]),
+    (r"\b(fuel|petrol|diesel|pump|epra)\b", ["petrol station Nairobi", "Kenya Pipeline Company"]),
+    (r"\b(police|abduct\w*|dci|ipoa)\b", ["Vigilance House Nairobi", "National Police Service Kenya"]),
+    (r"\b(mps?|parliament|bill|senate|senators?)\b", ["Parliament Buildings Nairobi", "Kenya National Assembly"]),
+    (r"\b(state house|president|cabinet)\b", ["State House Nairobi", "Harambee House Nairobi"]),
 ]
-CIVIC_FALLBACK = ["Parliament Buildings Nairobi", "Kenya National Assembly", "Flag of Kenya", "Nairobi Central Business District"]
+CIVIC_FALLBACK = ["Parliament Buildings Nairobi", "Kenya National Assembly", "Nairobi Central Business District"]
 
 
 def symbols_for(post: dict) -> list[str]:
@@ -329,6 +332,107 @@ def _surname(who: str) -> str:
     return pairs[-1].lower() if pairs else ""
 
 
+def person_name(who: str) -> str:
+    """The person's full name in `who` ('Energy CS Opiyo Wandayi' -> 'Opiyo Wandayi', 'Hassan Omar, UDA
+    Secretary-General' -> 'Hassan Omar'); '' when `who` names an institution or nobody."""
+    surname = _surname(who)
+    if not surname:
+        return ""
+    names = [w for w in re.findall(r"[A-Z][a-z'-]{2,}", who.split(",")[0]) if w.lower() not in TITLES and not INSTITUTION.match(w)]
+    if not names or names[-1].lower() != surname:
+        names = [w for w in re.findall(r"[A-Z][a-z'-]{2,}", who) if w.lower() not in TITLES and not INSTITUTION.match(w)]
+        names = names[:names.index(next(n for n in names if n.lower() == surname)) + 1]
+    m = re.search(r"((?:[A-Z][a-z'-]{2,}\s+){1,3}" + re.escape(names[-1]) + r")\b", who)
+    full = m.group(1) if m else names[-1]
+    return " ".join(w for w in full.split() if w.lower() not in TITLES and not INSTITUTION.match(w))
+
+
+# Institutions Kenyan posts name, and their Wikipedia articles (their lead image, when it is a photo).
+INSTITUTIONS = [
+    (r"\b(kra|kenya revenue authority)\b", "Kenya Revenue Authority"),
+    (r"\b(iebc)\b", "Independent Electoral and Boundaries Commission"),
+    (r"\b(kenya power|kplc)\b", "Kenya Power and Lighting Company"),
+    (r"\b(cbk|central bank)\b", "Central Bank of Kenya"),
+    (r"\b(treasury)\b", "National Treasury (Kenya)"),
+    (r"\b(sha|social health authority|shif)\b", "Social Health Authority"),
+    (r"\b(helb)\b", "Higher Education Loans Board"),
+    (r"\b(eacc)\b", "Ethics and Anti-Corruption Commission"),
+    (r"\b(dci)\b", "Directorate of Criminal Investigations"),
+    (r"\b(huduma)\b", "Huduma Kenya"),
+    (r"\b(national assembly|mps)\b", "National Assembly (Kenya)"),
+    (r"\b(senate|senators)\b", "Senate of Kenya"),
+    (r"\b(supreme court)\b", "Supreme Court of Kenya"),
+    (r"\b(kenyatta national hospital|knh)\b", "Kenyatta National Hospital"),
+]
+WIKI = "https://en.wikipedia.org/w/api.php"
+
+
+def _commons_file(title: str, min_width: int) -> tuple[str, str] | None:
+    """(image url, credit) for a Commons file we may use with a credit, or None (missing, local non-free,
+    a logo or drawing, too small, or a licence that needs more than a credit)."""
+    q = urllib.parse.urlencode({"action": "query", "titles": f"File:{title}", "prop": "imageinfo", "format": "json",
+                                "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600})
+    page = next(iter(json.loads(_get(f"{COMMONS}?{q}"))["query"]["pages"].values()))
+    info = (page.get("imageinfo") or [None])[0]
+    if not info or info.get("mime") not in {"image/jpeg", "image/png"} or info.get("width", 0) < min_width:
+        return None
+    md = info.get("extmetadata", {})
+    lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
+    if not _licence_ok(lic):
+        return None
+    artist = html.unescape(re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown"))).strip()[:50]
+    return info.get("thumburl") or info["url"], f"Photo: {artist} / Wikimedia Commons, {lic}"
+
+
+def wiki_photo(title: str, kenyan: bool = True, min_width: int = 600) -> tuple[bytes, dict] | None:
+    """The lead photo of a Wikipedia article (a person's portrait, an institution's building), when it is a
+    freely licensed photo on Commons. `kenyan`: the article must be about someone or something in Kenya, so a
+    namesake elsewhere is never used."""
+    q = urllib.parse.urlencode({"action": "query", "titles": title, "redirects": 1, "format": "json",
+                                "prop": "pageimages|pageprops|extracts", "piprop": "name", "exintro": 1,
+                                "explaintext": 1, "exchars": 600})
+    pages = json.loads(_get(f"{WIKI}?{q}")).get("query", {}).get("pages", {})
+    page = next(iter(pages.values()), {})
+    if "missing" in page or "disambiguation" in page.get("pageprops", {}) or not page.get("pageimage"):
+        return None
+    if kenyan and "kenya" not in page.get("extract", "").lower():
+        return None
+    got = _commons_file(page["pageimage"], min_width)
+    if not got:
+        return None
+    url, credit = got
+    return _get(url), {"credit": credit, "url": f"https://en.wikipedia.org/wiki/{urllib.parse.quote(page['title'])}"}
+
+
+def subject_photo(post: dict) -> tuple[bytes, dict] | None:
+    """A real photo of who or what the post is about: the named person's portrait, else the institution's own
+    photo. Marked as a file photo on the design (it is the subject, not this week's event)."""
+    name = person_name(str(post.get("who", "")))
+    if name:
+        try:
+            got = wiki_photo(name)
+        except Exception as e:
+            _note(f"  portrait search failed for {post.get('id')}: {e}")
+            got = None
+        _note(f"  portrait of '{name}' for {post.get('id')}: {'found' if got else 'none usable'}")
+        if got:
+            got[1]["kind"] = "portrait"
+            return got
+    text = " ".join(str(post.get(k, "")) for k in ("who", "message", "headline", "title", "line", "event_query")).lower()
+    for rx, article in INSTITUTIONS:
+        if re.search(rx, text):
+            try:
+                got = wiki_photo(article, kenyan=False, min_width=1000)
+            except Exception as e:
+                _note(f"  institution photo search failed for {post.get('id')}: {e}")
+                got = None
+            _note(f"  institution photo '{article}' for {post.get('id')}: {'found' if got else 'none usable'}")
+            if got:
+                got[1]["kind"] = "institution"
+                return got
+    return None
+
+
 def _event_window(post: dict) -> tuple[dt.datetime, dt.datetime]:
     try:
         day = dt.datetime.fromisoformat(post["publish_at"]).astimezone(dt.timezone.utc)
@@ -424,6 +528,9 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             except Exception as e:
                 _note(f"  posted-photo search failed for {post.get('id')}: {e}")
                 got = None
+            if got:
+                return _save(out_dir, post["id"], *got)
+            got = subject_photo(post)   # the person or institution itself, before any scene
             if got:
                 return _save(out_dir, post["id"], *got)
         if not query:

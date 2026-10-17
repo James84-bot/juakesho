@@ -82,6 +82,46 @@ class Posted(unittest.TestCase):
             data, meta = posted.find(POST)
         self.assertEqual(meta["credit"], "Photo: Kenyans.co.ke / John Doe")
 
+    def test_a_feed_thumbnail_falls_back_to_the_full_size_photo(self):
+        item = dict(self.items[0], img="https://k.test/cherargei-300x200.jpg")
+        def get(url, timeout=20):
+            return jpeg() if url == "https://k.test/cherargei.jpg" else jpeg(300, 200)
+        with mock.patch.object(posted, "feed_items", lambda: [item]), mock.patch.object(posted, "_get", get):
+            self.assertIsNotNone(posted.find(POST))
+
+    def test_a_small_feed_image_falls_back_to_the_article_og_image(self):
+        item = dict(self.items[0], img="https://k.test/thumb.jpg")
+        page = b'<html><meta property="og:image" content="https://k.test/lead.jpg"></html>'
+        def get(url, timeout=20):
+            return {"https://k.test/a": page, "https://k.test/lead.jpg": jpeg()}.get(url, jpeg(300, 200))
+        with mock.patch.object(posted, "feed_items", lambda: [item]), mock.patch.object(posted, "_get", get):
+            self.assertIsNotNone(posted.find(POST))
+
+    def test_organisation_initials_match_a_story_without_a_named_person(self):
+        post = {"id": "k", "message": "KRA uncovered a Ksh 4 billion VAT fraud scheme run through fake invoices.",
+                "event_query": "KRA VAT fraud invoices", "publish_at": "2026-10-16T18:30:00+03:00"}
+        report = {"title": "KRA busts Sh4 billion fake invoice racket", "text": "The taxman says traders..."}
+        unrelated = {"title": "Kenya Power tokens delay", "text": "fraud claims"}
+        s, w = posted.terms_for(post)
+        self.assertIn("KRA", w)
+        self.assertGreater(posted.score(report, s, w), 0)
+        self.assertEqual(posted.score(unrelated, s, w), 0)
+        self.assertEqual(posted.score({"title": "Kraft paper prices rise", "text": "fraud invoices"}, s, w), 0)  # 'Kraft' is not KRA
+
+    def test_find_all_returns_different_photos_only(self):
+        from PIL import Image
+        def img(box):   # a dark block on white: where the block sits makes it a different photo
+            b = io.BytesIO(); im = Image.new("RGB", (1600, 900), "white")
+            im.paste("black", box); im.save(b, "JPEG"); return b.getvalue()
+        a = dict(self.items[0]); b = dict(self.items[0], link="https://k.test/a2", img="https://k.test/same.jpg")
+        c = dict(self.items[0], link="https://k.test/a3", img="https://k.test/other.jpg",
+                 title="Cherargei term push: senators split", text="")
+        photos_by_url = {"https://k.test/cherargei.jpg": img((0, 0, 800, 900)), "https://k.test/same.jpg": img((0, 0, 800, 900)),
+                         "https://k.test/other.jpg": img((0, 0, 1600, 450))}
+        with mock.patch.object(posted, "feed_items", lambda: [a, b, c]), \
+                mock.patch.object(posted, "_get", lambda u, timeout=20: photos_by_url.get(u, b"x")):
+            got = posted.find_all(POST, 3)
+        self.assertEqual(len(got), 2)   # the copy of the first photo is dropped
 
     def test_archive_keeps_reports_after_they_leave_the_live_feed(self):
         import tempfile

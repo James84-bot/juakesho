@@ -158,23 +158,37 @@ def feed_items() -> list[dict]:
     return _FEED_CACHE["all"]
 
 
+# Organisations Kenyan reports name by their initials. They are the surest sign two reports are on one story,
+# and too short to pass the 4-letter word filter, so they are matched as whole words.
+ACRONYM = re.compile(r"\b[A-Z]{2,6}\b")
+NOT_ORGS = {"MP", "MPS", "MCA", "MCAS", "CS", "PS", "TV", "AI", "ID", "IDS", "US", "UK", "OK", "VAT", "PAYE", "BN", "KES", "KSH", "SH"}
+
+
 def terms_for(post: dict) -> tuple[str, list[str]]:
-    """(surname of the post's person, the subject words) to match reports against."""
+    """(surname of the post's person, the subject words) to match reports against. Organisation initials
+    (KRA, IEBC, SHA) come first, upper-case, so score() can match them as whole words."""
     import photos
     surname = photos._surname(str(post.get("who", "")))
     source = post.get("event_query") or " ".join(str(post.get(k, "")) for k in ("message", "headline", "title"))
+    full = " ".join(str(post.get(k, "")) for k in ("event_query", "message", "headline", "title", "line", "who"))
+    orgs = [a for a in dict.fromkeys(ACRONYM.findall(full)) if a not in NOT_ORGS]
     words = [w.lower() for w in re.findall(r"[A-Za-z][A-Za-z-]{3,}", source)]
-    words = [w for w in dict.fromkeys(words) if w not in STOP and w != surname]
-    return surname, words[:8]
+    words = [w for w in dict.fromkeys(words) if w not in STOP and w != surname and w.upper() not in orgs]
+    return surname, (orgs[:3] + words)[:9]
 
 
 def score(item: dict, surname: str, words: list[str]) -> int:
     """How surely this report is about the post's story. 0 = not about it.
     With a person: the report names them AND shares a subject word. Without: three subject words."""
-    hay = f"{item['title']} {item['text']}".lower()
-    hits = sum(1 for w in words if (w[:5] if len(w) >= 6 else w) in hay)   # 'senate' ~ 'senator'
+    raw = f"{item['title']} {item['text']}"
+    hay = raw.lower()
+    orgs = [w for w in words if w.isupper()]
+    org_hits = sum(1 for w in orgs if re.search(rf"\b{w}\b", raw))
+    hits = org_hits + sum(1 for w in words if not w.isupper() and (w[:5] if len(w) >= 6 else w) in hay)   # 'senate' ~ 'senator'
     if surname:   # the person AND two subject words: a leader is in many stories, only one is this one
         return hits + 3 if surname in hay and hits >= 2 else 0
+    if org_hits:   # the organisation by name plus one more subject word
+        return hits + 1 if hits >= 2 else 0
     return hits if hits >= 3 else 0
 
 
@@ -215,11 +229,53 @@ def _check_image(data: bytes) -> bool:
         return False
 
 
+def full_size(url: str) -> str:
+    """WordPress serves thumbnails as name-300x200.jpg; the original is name.jpg."""
+    return re.sub(r"-\d{2,4}x\d{2,4}(?=\.(?:jpe?g|png|webp)(?:\?|$))", "", url, flags=re.I)
+
+
+def _download(item: dict) -> tuple[bytes, str] | None:
+    """The report's lead photo at full size, and its credit. Tries the feed's image (and its full-size original),
+    then the article's own og:image, which outlets publish large for link previews."""
+    tried = set()
+    credit = item["credit"]
+    candidates = [item["img"]] if item["img"] else []
+    page_img = None
+    for _ in range(2):
+        for img in [c for c in candidates for c in (full_size(c), c)]:
+            img = urllib.parse.urljoin(item["link"], img)
+            if img in tried:
+                continue
+            tried.add(img)
+            if PAID.search(f"{credit} {img}"):
+                _note(f"    skipped {item['outlet']}: agency photo ({credit[:60] or img[:60]})")
+                return None
+            try:
+                data = _get(img)
+            except Exception:
+                continue
+            if _check_image(data):
+                return data, credit
+        if page_img is not None:
+            break
+        page_img, page_credit = _og_image(_get(item["link"]).decode("utf-8", "replace"))
+        credit = credit or page_credit
+        candidates = [page_img] if page_img else []
+    _note(f"    skipped {item['outlet']}: image too small or not a photo")
+    return None
+
+
 def find(post: dict) -> tuple[bytes, dict] | None:
     """The lead photo of the best report of this post's story, with its credit. None if nothing fits."""
+    got = find_all(post, 1)
+    return got[0] if got else None
+
+
+def find_all(post: dict, limit: int = 3) -> list[tuple[bytes, dict]]:
+    """Up to `limit` different photos of this post's story, best report first (a Reel cuts between them)."""
     surname, words = terms_for(post)
     if not surname and len(words) < 2:
-        return None
+        return []
     try:
         day = dt.datetime.fromisoformat(post["publish_at"]).astimezone(dt.timezone.utc)
     except (KeyError, ValueError):
@@ -229,32 +285,42 @@ def find(post: dict) -> tuple[bytes, dict] | None:
     end = day + dt.timedelta(days=DAYS_AFTER)
     ranked = sorted(((score(x, surname, words), x) for x in feed_items()
                      if x["when"] is None or start <= x["when"] <= end), key=lambda t: (-t[0], not t[1]["official"]))
-    ranked = [(s, x) for s, x in ranked if s > 0][:5]
-    _note(f"  posted for {post.get('id')}: {len(ranked)} matching reports (person '{surname}', words {words[:5]})")
+    ranked = [(s, x) for s, x in ranked if s > 0][:8]
+    _note(f"  posted for {post.get('id')}: {len(ranked)} matching reports (person '{surname}', words {words[:6]})")
+    out, seen = [], set()
     for s, item in ranked:
-        img, credit = item["img"], item["credit"]
         try:
-            if not img or not credit:
-                page_img, page_credit = _og_image(_get(item["link"]).decode("utf-8", "replace"))
-                img, credit = img or page_img, credit or page_credit
-            if not img:
-                continue
-            img = urllib.parse.urljoin(item["link"], img)
-            if PAID.search(f"{credit} {img}"):
-                _note(f"    skipped {item['outlet']}: agency photo ({credit[:60] or img[:60]})")
-                continue
-            data = _get(img)
-            if not _check_image(data):
-                _note(f"    skipped {item['outlet']}: image too small or not a photo")
-                continue
+            got = _download(item)
         except Exception as e:
             _note(f"    skipped {item['outlet']}: {str(e)[:80]}")
             continue
+        if not got:
+            continue
+        data, credit = got
+        key = _fingerprint(data)
+        if key in seen:   # the same agency or State House photo, run by two outlets
+            continue
+        seen.add(key)
         who = _photographer(credit)
         line = f"Photo: {item['outlet']}" + (f" / {who}" if who and who.lower() not in item["outlet"].lower() else "")
         _note(f"    picked {item['outlet']} ({s}): {item['title'][:70]}")
-        return data, {"credit": line, "url": item["link"], "kind": "posted", "outlet": item["outlet"]}
-    return None
+        out.append((data, {"credit": line, "url": item["link"], "kind": "posted", "outlet": item["outlet"]}))
+        if len(out) >= limit:
+            break
+    return out
+
+
+def _fingerprint(data: bytes) -> str:
+    """Same photo at different sizes or compression -> same key (an 8x8 average hash)."""
+    try:
+        from PIL import Image
+        with Image.open(io.BytesIO(data)) as im:
+            g = im.convert("L").resize((8, 8))
+            px = list(g.tobytes())
+        avg = sum(px) / 64
+        return "".join("1" if p > avg else "0" for p in px)
+    except Exception:
+        return str(len(data))
 
 
 if __name__ == "__main__":
