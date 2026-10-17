@@ -109,7 +109,7 @@ def classify(update: dict, chat: str) -> str | None:
     msg = update.get("message")
     if msg:
         own = str(msg.get("chat", {}).get("id")) == chat
-        return "clip" if own and ("video" in msg or "document" in msg or "photo" in msg) else None
+        return "clip" if own and any(k in msg for k in ("video", "document", "photo", "voice", "audio")) else None
     cq = update.get("callback_query")
     if cq and str(cq.get("message", {}).get("chat", {}).get("id")) == chat:
         return "tap"

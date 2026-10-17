@@ -161,6 +161,18 @@ jobs:
           set -o pipefail
           python pipeline.py swapwork 2>&1 | tee -a run.log
 
+      - name: Your voice recording (the presenter's voice)
+        if: steps.cmd.outputs.c == 'tick'
+        run: |
+          cd automation
+          # only when the tick just saved a new voice note: the voice tools are installed for that run alone
+          python voicelab.py pending || { echo "no new voice recording"; exit 0; }
+          sudo apt-get install -y ffmpeg || true
+          pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0 torchaudio==2.6.0
+          pip install chatterbox-tts soundfile
+          set -o pipefail
+          python voicelab.py clone 2>&1 | tee -a run.log
+
       - name: Show why it failed
         if: failure()
         run: |
