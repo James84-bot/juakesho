@@ -294,13 +294,16 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         ctx.update(photo_uri=Path(photo).as_uri(),
                    photo_credit=("Illustrative photo · " if civic else "") + (post.get("photo_credit") or ""))
     ctx["photo_band"] = 0
+    ctx["photo_fy"] = 30
     # a beat Reel with real footage: frames are drawn transparent and video.py lays them over the moving clip
     vf = post.get("video_file")
     ctx["video_bg"] = bool(post["template"] == "reel" and vf and Path(vf).exists())
     ctx["video_credit"] = (post.get("video_credit") or "") if ctx["video_bg"] else ""
     if ctx.get("photo_uri") and not ctx["video_bg"]:
         from urllib.parse import unquote, urlparse
-        ctx["photo_band"] = photo_band(Path(unquote(urlparse(ctx["photo_uri"]).path)), W)
+        shown = Path(unquote(urlparse(ctx["photo_uri"]).path))
+        ctx["photo_band"] = photo_band(shown, W)
+        ctx["photo_fy"] = focus_y(shown)
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
 
 
@@ -318,6 +321,28 @@ def photo_band(path: Path, width: int) -> int:
     except Exception:
         return 0
     return round(width * h / w) if w < BAND_BELOW else 0
+
+
+def focus_y(path: Path, default: int = 30) -> int:
+    """Where a cropped photo is anchored, top to bottom in percent: on the largest face when there are people
+    (a governor's head must never be cut off at the top of the band), else `default`. Same YuNet detector as
+    photos.faces_ok."""
+    try:
+        import cv2
+        import photos
+        img = cv2.imread(str(path), cv2.IMREAD_COLOR)
+        if img is None:
+            return default
+        h, w = img.shape[:2]
+        img = cv2.resize(img, (900, max(1, int(h * 900 / max(w, 1)))))
+        det = cv2.FaceDetectorYN.create(str(photos.FACE_MODEL), "", (img.shape[1], img.shape[0]), 0.75)
+        _, faces = det.detect(img)
+    except Exception:
+        return default
+    if faces is None or not len(faces):
+        return default
+    x, y, fw, fh = max(faces, key=lambda f: f[2] * f[3])[:4]
+    return max(0, min(100, round(100 * (y + fh * 0.2) / img.shape[0])))   # a little above the eyes: hair stays in
 
 
 def hero_beat(box: list, w: int, h: int) -> dict:

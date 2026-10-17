@@ -238,6 +238,28 @@ class Band(unittest.TestCase):
             self.assertEqual(render.photo_band(small, 1080), 722)   # 800px wide: blown up 2-4x if it filled the frame
             self.assertEqual(render.photo_band(big, 1080), 0)
 
+    def test_crop_is_anchored_on_the_face_so_heads_are_never_cut(self):
+        import tempfile
+        import render
+        from unittest import mock
+        import numpy as np
+
+        class Det:
+            def __init__(self, faces):
+                self.faces = faces
+
+            def detect(self, img):
+                return 1, self.faces
+
+        with tempfile.TemporaryDirectory() as d:
+            photo = Path(d) / "p.jpg"
+            photo.write_bytes(jpeg(900, 600))
+            self.assertEqual(render.focus_y(photo), 30)                     # no face: the usual crop
+            # a 100px face whose top is at y=60 in a 900x600 frame: anchor just above the eyes
+            with mock.patch("cv2.FaceDetectorYN.create", return_value=Det(np.array([[400, 60, 100, 100, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, .9]]))):
+                self.assertEqual(render.focus_y(photo), 13)
+            self.assertEqual(render.focus_y(Path(d) / "missing.jpg"), 30)
+
 
 if __name__ == "__main__":
     unittest.main()
