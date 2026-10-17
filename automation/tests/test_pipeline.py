@@ -80,8 +80,19 @@ class HotPostTests(TempWeeks):
             self.assertEqual(label, "2026-W42")
             post = pl.load_week(label)["posts"][-1]
             self.assertEqual((post["id"], post["template"], post["status"], post["hot"]), ("2026-w42-hot-1013", "sauti", "planned", True))
-            self.assertEqual(post["publish_at"], "2026-10-13T18:30:00+03:00")
-            self.assertIsNone(pl.hot_slot(mock=True))   # never twice a day
+            self.assertEqual(post["publish_at"], "2026-10-13T12:45:00+03:00")   # lunchtime edition
+            self.assertIsNone(pl.hot_slot(mock=True))   # never twice the same edition
+        afternoon = dt.datetime(2026, 10, 13, 16, 5, tzinfo=pl.EAT)
+        with mock.patch.object(pl, "now", lambda: afternoon):
+            data = pl.load_week("2026-W42")
+            data["posts"][-1]["message"] = "Parliament extends the fuel VAT relief by 90 days."
+            pl.save_week(data)
+            pl.hot_slot(mock=True, evening=True)
+            post = pl.load_week("2026-W42")["posts"][-1]
+            self.assertEqual(post["id"], "2026-w42-hot-1013e")
+            self.assertEqual(post["publish_at"], "2026-10-13T19:30:00+03:00")
+            self.assertEqual(post["avoid"], ["Parliament extends the fuel VAT relief by 90 days."])   # a different story
+            self.assertIsNone(pl.hot_slot(mock=True, evening=True))
         late = dt.datetime(2026, 10, 14, 17, 0, tzinfo=pl.EAT)
         with mock.patch.object(pl, "now", lambda: late):
             pl.hot_slot(mock=True)
@@ -90,6 +101,20 @@ class HotPostTests(TempWeeks):
 
 
 class ReachTests(unittest.TestCase):
+    def test_crosspost_package_has_tiktok_shorts_and_whatsapp(self):
+        post = {"id": "p", "reel": True, "caption": "KRA uncovers fraud. #KenyansAreAsking",
+                "beats": ["KRA uncovers a *Sh4bn* VAT fraud run through fake invoices.", "b c d e.", "f g h i."],
+                "source": "Nation, 2026-10-16", "message": "m"}
+        text = pl.crosspost_text(post)
+        for part in ("TikTok", "YouTube Shorts", "WhatsApp", "#KenyaOnRecord",
+                     "KRA uncovers a Sh4bn VAT fraud run through fake invoices. #Shorts"):
+            self.assertIn(part, text)
+        self.assertNotIn("#KenyansAreAsking", text)   # the old tag is replaced
+        self.assertLess(len(text), 4096)
+        self.assertNotIn("TikTok", pl.crosspost_text(dict(post, reel=False)))   # an image post: WhatsApp only
+        long = dict(post, caption="x " * 3000)
+        self.assertLess(len(pl.crosspost_text(long)), 4096)
+
     def test_receipts_comment_and_whatsapp_text(self):
         post = {"claim_source": "Capital FM, 12 Oct 2026 (link)", "source": "Auditor-General report 2025; Capital FM",
                 "beats": ["*Sh304bn.* Idle.", "59% never used.", "14 projects waiting.", "Ask your MP."], "message": "m"}
@@ -591,6 +616,9 @@ class QualitySystemTests(unittest.TestCase):
                                                           "What has the money delivered so far?"])).errors
             self.assertTrue(any("complete, plain sentence" in e for e in errs), bad)
         self.assertEqual(guard.fragment('"You need coding for AI," they say.'), "")
+        hard = guard.check(self.base_straight(beats=["IMF data puts nominal GDP at 115 billion dollars.",
+                                                     "Both come off before your net pay.", "What has the money delivered so far?"]))
+        self.assertTrue(any("everyday words" in e and "size of the economy" in e for e in hard.errors))
         self.assertEqual(render.beat_tokens("We pay *4.25% now* ok"), [("We", False), ("pay", False), ("4.25%", True), ("now", True), ("ok", False)])
         self.assertTrue(render.BEAT["min"] <= render.beat_seconds("one two three four five six seven eight") <= render.BEAT["max"])
         reel = video.beat_reel({**ok, "id": "x"})

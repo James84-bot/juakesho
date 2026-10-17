@@ -286,6 +286,22 @@ def source_problem(post: dict) -> str:
             "a description like 'county reports' can't be checked")
 
 
+# Words most Kenyans don't use: the reader must get the post in one look. Each has a plain way to say it.
+JARGON = {"procurement": "buying goods and services", "procurements": "purchases", "fiscal": "budget / money",
+          "expenditure": "spending", "disbursement": "paying out", "disbursed": "paid out", "allocation": "money set aside",
+          "appropriation": "money approved by Parliament", "nominal gdp": "the size of the economy",
+          "macroeconomic": "the economy", "remittances": "money sent home from abroad", "stakeholders": "the people affected",
+          "mitigate": "reduce", "jurisdiction": "area", "pending bills": "money owed to suppliers",
+          "accrued": "added up", "arrears": "money still owed", "devolved functions": "county duties",
+          "liquidity": "cash", "incumbent": "the current holder", "plenary": "the full House", "quorum": "enough members"}
+
+
+def jargon(text: str) -> list[str]:
+    """Hard words in the text, each with its plain replacement."""
+    low = text.lower().replace("*", "")
+    return [f"'{w}' (say: {plain})" for w, plain in JARGON.items() if re.search(rf"\b{re.escape(w)}\b", low)]
+
+
 def fragment(line: str) -> str:
     """Why a Reel beat reads as a fragment or a meme caption ('' when it is a proper sentence). Our readers are
     informed; half-sentences and trailing dots read as careless."""
@@ -486,6 +502,10 @@ def check(post: dict) -> Report:
         place_words = {w.lower() for w in re.findall(r"[A-Za-z']{4,}", str(post.get("place") or ""))}
         if place_words and not place_words & {w.lower() for w in re.findall(r"[A-Za-z']{4,}", q)}:
             rep.errors.append("Kenya showcase: `photo_query` must name the same place as `place`")
+    hard = jargon(" ".join(str(post.get(k) or "") for k in ("line", "message", "headline", "title", "promise", "reality",
+                                                             "what", "why", "truth", "fact")) + " " + " ".join(map(str, post.get("beats") or [])))
+    if hard and tpl != "tazama":
+        rep.errors.append("use everyday words Kenyans use: " + "; ".join(hard[:4]))
     beats = post.get("beats")
     if beats is not None:
         if not isinstance(beats, list) or not 3 <= len(beats) <= (6 if tpl == "tazama" else 5):
