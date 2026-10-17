@@ -60,11 +60,35 @@ class Sources(unittest.TestCase):
             os.environ.pop("PEXELS_API_KEY", None)
             self.assertIsNone(videos.pexels_video("Nairobi skyline", "p"))   # no key: skipped quietly
 
+    def test_pixabay_clip_must_be_tagged_with_the_place_and_searches_are_cached(self):
+        hits = {"hits": [
+            {"pageURL": "https://pixabay.com/videos/city-skyline-night-1/", "tags": "city, skyline, night", "user": "A",
+             "videos": {"large": {"url": "https://x.test/1.mp4", "width": 3840, "size": 9_000_000}}},
+            {"pageURL": "https://pixabay.com/videos/nairobi-kenya-city-2/", "tags": "nairobi, skyline, kenya", "user": "B",
+             "videos": {"large": {"url": "", "width": 0, "size": 0},
+                        "medium": {"url": "https://x.test/2.mp4", "width": 1920, "size": 8_000_000}}}]}
+        calls = []
+
+        def get(url, headers=None, timeout=30):
+            calls.append(url)
+            return json.dumps(hits).encode()
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(videos, "PIXABAY_CACHE", Path(d) / "c.json"), \
+                mock.patch.dict(os.environ, {"PIXABAY_API_KEY": "secret"}), mock.patch.object(videos.photos, "_get", get):
+            url, meta = videos.pixabay_video("Nairobi skyline", "p")
+            self.assertEqual(url, "https://x.test/2.mp4")   # large missing: medium, and only the Nairobi clip
+            self.assertEqual(meta["credit"], "Footage: B / Pixabay")
+            videos.pixabay_video("Nairobi skyline", "q")
+            self.assertEqual(len(calls), 1)                  # the same search within 24 h comes from the cache
+            self.assertNotIn("secret", (Path(d) / "c.json").read_text())
+        os.environ.pop("PIXABAY_API_KEY", None)
+        self.assertIsNone(videos.pixabay_video("Nairobi skyline", "p"))
+
     def test_a_stranger_filling_the_frame_is_skipped_on_critical_posts(self):
         with tempfile.TemporaryDirectory() as d:
             post = {"id": "p", "template": "sauti", "beats": ["x"] * 3, "photo_kind": "symbolic", "photo_query": "Nairobi CBD"}
             with mock.patch.object(videos, "commons_video", lambda q, pid: ("https://u.test/v", {"credit": "c", "url": "u"})), \
                     mock.patch.object(videos, "pexels_video", lambda q, pid: None), \
+                    mock.patch.object(videos, "pixabay_video", lambda q, pid: None), \
                     mock.patch.object(videos.photos, "_get", lambda url, headers=None, timeout=30: b"raw"), \
                     mock.patch.object(videos, "cut", lambda src, out: out.write_bytes(b"x" * 20000) or True), \
                     mock.patch.object(videos, "frames_ok", lambda clip: False):

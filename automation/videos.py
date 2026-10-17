@@ -4,8 +4,10 @@ videos.py — real moving footage behind a Reel, legally: the place itself, not 
 Sources, in order:
   1. Wikimedia Commons videos: real footage people uploaded under open licences. Only CC0 / public domain /
      CC BY / CC BY-SA (credited on the Reel and in the caption), the same rule as photos.py.
-  2. Pexels videos: free for commercial use under the Pexels licence (we credit anyway). Needs PEXELS_API_KEY.
-     Pexels search is loose, so a clip counts only if its own page names the place we asked for.
+  2. Pixabay videos: free for commercial use under the Pixabay Content License (we credit anyway). Needs
+     PIXABAY_API_KEY. Searches are cached for 24 hours, as Pixabay's API terms ask.
+  3. Pexels videos: same idea, under the Pexels licence. Needs PEXELS_API_KEY (Pexels paused new keys in Oct 2026).
+  Stock search is loose, so a clip counts only if its own tags or page name the place we asked for.
 
 Used only where it beats what the post already has: a showcase post (Kenya at its best, Built in Kenya) or a
 post whose photo is symbolic. A real news photo of the day's story is never swapped for generic footage.
@@ -30,6 +32,9 @@ import photos
 HERE = Path(__file__).resolve().parent
 COMMONS = photos.COMMONS
 PEXELS = "https://api.pexels.com/videos/search"
+PIXABAY = "https://pixabay.com/api/videos/"
+PIXABAY_CACHE = HERE / "state" / "pixabay_cache.json"
+DAY = 86400
 CLIP_S = 20            # longer than any beat Reel; the composer loops a shorter clip
 MAX_BYTES = 150_000_000
 MIN_WIDTH = 1280       # landscape footage is cropped to 9:16, so it needs width to spare
@@ -116,6 +121,61 @@ def pexels_video(query: str, pid: str) -> tuple[str, dict] | None:
     return None
 
 
+def _named_in(text: str, query: str) -> bool:
+    """The clip's own words (tags, page address) name the place and, when the query has one, the subject:
+    'Nairobi skyline' needs Nairobi; 'Mount Longonot Kenya' needs Longonot. 'Kenya' alone names nothing."""
+    text = text.lower()
+    place = photos._place(query).lower()
+    named = place if place and place not in GENERIC_PLACES else ""
+    core = [w for w in photos._core(query) if w not in GENERIC_WORDS]
+    if not (named or core):
+        return False
+    return (not named or named in text) and (not core or any(w[:5] in text for w in core))
+
+
+def _pixabay_search(query: str, key: str) -> dict:
+    """One search, cached for 24 hours on disk (Pixabay's terms); the key never goes into the cache."""
+    import time
+    try:
+        cache = json.loads(PIXABAY_CACHE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        cache = {}
+    now = time.time()
+    cache = {q: v for q, v in cache.items() if now - v.get("at", 0) < DAY}
+    if query not in cache:
+        params = urllib.parse.urlencode({"key": key, "q": query[:100], "per_page": 20, "safesearch": "true",
+                                         "video_type": "film"})
+        cache[query] = {"at": now, "data": json.loads(photos._get(f"{PIXABAY}?{params}"))}
+        try:
+            PIXABAY_CACHE.parent.mkdir(exist_ok=True)
+            PIXABAY_CACHE.write_text(json.dumps(cache), encoding="utf-8")
+        except OSError:
+            pass
+    return cache[query]["data"]
+
+
+def pixabay_video(query: str, pid: str) -> tuple[str, dict] | None:
+    """(download url, meta) of a Pixabay video whose tags or page name the query's place and subject."""
+    key = os.environ.get("PIXABAY_API_KEY")
+    if not key:
+        return None
+    data = _pixabay_search(query, key)
+    hits = data.get("hits", [])
+    for h in hits:
+        if not _named_in(f"{h.get('tags', '')} {urllib.parse.unquote(str(h.get('pageURL', '')))}", query):
+            continue
+        sizes = h.get("videos") or {}
+        pick = next((sizes[k] for k in ("large", "medium") if (sizes.get(k) or {}).get("url")
+                     and (sizes[k].get("width") or 0) >= MIN_WIDTH and 0 < (sizes[k].get("size") or 0) <= MAX_BYTES), None)
+        if not pick:
+            continue
+        _note(f"  video '{query}' for {pid}: Pixabay {h.get('pageURL', '')[:80]}")
+        return pick["url"], {"credit": f"Footage: {str(h.get('user') or 'Pixabay')[:50]} / Pixabay",
+                             "url": h.get("pageURL", ""), "source": "pixabay"}
+    _note(f"  video '{query}' for {pid}: Pixabay {len(hits)} found, none of the named place")
+    return None
+
+
 def _ffmpeg() -> str:
     import video
     return video.ffmpeg_bin()
@@ -159,7 +219,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
     clip, meta = out_dir / f"{post['id']}-video.mp4", out_dir / f"{post['id']}-video.json"
     if clip.exists() and meta.exists():   # stable across re-renders: what you approved is what goes out
         return {**json.loads(meta.read_text(encoding="utf-8")), "file": str(clip)}
-    for source in (commons_video, pexels_video):
+    for source in (commons_video, pixabay_video, pexels_video):
         try:
             got = source(query, post["id"])
             if not got:
