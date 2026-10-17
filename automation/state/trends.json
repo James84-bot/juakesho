@@ -1,10 +1,32 @@
 {
-  "fetched": "2026-10-17T08:07:07.844391+00:00",
+  "fetched": "2026-10-17T08:18:42.912990+00:00",
   "safe": [
     {
       "geo": "KE",
+      "title": "standard group ceo resigns",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Standard Group CEO Resigns, Company Announces Immediate Board Changes",
+          "url": "https://www.kenyans.co.ke/news/127893-standard-group-ceo-chacha-mwita-resigns-company-announces-three-board-changes",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Chaacha Mwita resigns as Standard Group chief executive in board shake-up",
+          "url": "https://peopledaily.digital/news/chaacha-mwita-resigns-as-standard-group-chief-executive-in-board-shake-up",
+          "source": "People Daily"
+        },
+        {
+          "title": "Standard Group Appoints Three New Directors After Resignations",
+          "url": "https://thekenyatimes.com/latest-kenya-times-news/standard-group-appoints-three-new-directors-after-resignations/",
+          "source": "The Kenya Times"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "nairobi building collapse moi avenue",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Photos: Former Club Avenida building on Moi Avenue collapses, four injured",
@@ -29,19 +51,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Watch: Did Tesla really just unveil a flying car?",
-          "url": "https://www.bbc.com/news/videos/ckly4mj1g3n9o",
-          "source": "BBC"
-        },
-        {
-          "title": "Tesla's new Roadster turns in air with SpaceX thrusters, won't land until 2028",
-          "url": "https://www.reuters.com/business/autos-transportation/tesla-set-unveil-next-generation-roadster-sports-ev-after-years-delay-2026-10-15/",
-          "source": "Reuters"
+          "title": "With flying Roadster, Tesla waves goodbye to the car business",
+          "url": "https://www.axios.com/2026/10/16/tesla-flying-roadster-goodbye-car-business",
+          "source": "Axios"
         },
         {
           "title": "Elon Musk reveals ‘world’s first flying car’ at Tesla event",
           "url": "https://www.theguardian.com/technology/2026/oct/16/elon-musk-reveals-worlds-first-flying-car-spacex",
           "source": "The Guardian"
+        },
+        {
+          "title": "Tesla's new Roadster turns in air with SpaceX thrusters, won't land until 2028",
+          "url": "https://www.reuters.com/business/autos-transportation/tesla-set-unveil-next-generation-roadster-sports-ev-after-years-delay-2026-10-15/",
+          "source": "Reuters"
         }
       ]
     },
@@ -96,19 +118,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Betis - Barcelona: El Betis mide su osadía contra el mejor del mundo",
-          "url": "https://www.abc.es/deportes/alfinaldelapalmera/noticias-betis/betis-barcelona-betis-prueba-traje-ilusion-20261017133103-nts.html",
-          "source": "ABC"
-        },
-        {
           "title": "Antes del fuego de La Cartuja: Pellegrini revela su plan mágico para derribar al Barcelona",
           "url": "https://es-us.noticias.yahoo.com/deportes/fuego-cartuja-pellegrini-revela-plan-123706558.html",
           "source": "Yahoo"
         },
         {
-          "title": "Examen de altura en La Cartuja",
-          "url": "https://onefootball.com/es/noticias/examen-de-altura-en-la-cartuja-43620998",
-          "source": "OneFootball"
+          "title": "Gol a gol: Post betis-barça/J9 (2026) | Esport 3",
+          "url": "https://www.mundodeportivo.com/guia-tv/programa/gol-a-gol-post-betis-barca-j9-esport-3",
+          "source": "Mundo Deportivo"
+        },
+        {
+          "title": "Código promocional Marca Apuestas TOPESP: Supercuota 5,00 al triunfo del Barcelona en el Betis vs Barcelona (LaLiga)",
+          "url": "https://www.eurosport.es/apuestas/pronosticos/codigo-promocional-marca-apuestas-topesp-supercuota-500-al-triunfo-del-barcelona-en-el-betis-vs-barcelona-laliga/",
+          "source": "Eurosport"
         }
       ]
     },
@@ -131,28 +153,6 @@
           "title": "Venezia-Napoli, le ultime di formazione: da Lucca a De Bruyne, Hainaut, Hojlund, Yeboah, Lang e Giovane",
           "url": "https://www.sosfanta.com/news/probabili-formazioni-venezia-napoli-lucca-hojlund-de-bruyne-giovane-hainaut-yeboah/",
           "source": "SOS Fanta"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "great white shark",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "'What the hell did this?': The orca brothers preying on great white sharks",
-          "url": "https://www.bbc.com/future/article/20261015-sharks-washed-up-one-after-another-after-another-why-orcas-are-hunting-great-whites",
-          "source": "BBC"
-        },
-        {
-          "title": "'Aggressive' great white shark spotted off coast of California beach... as experts warn that it is hungry",
-          "url": "https://www.dailymail.com/news/article-16208361/Aggressive-great-white-shark-California-beach-hungry.html",
-          "source": "Daily Mail"
-        },
-        {
-          "title": "Surfer speaks after spotting great white shark off Huntington Beach coast",
-          "url": "https://www.cbsnews.com/losangeles/video/surfer-speaks-after-spotting-great-white-shark-off-huntington-beach-coast/",
-          "source": "CBS News"
         }
       ]
     }
