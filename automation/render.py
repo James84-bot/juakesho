@@ -293,7 +293,28 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         civic = civic and post.get("photo_kind") not in {"event", "yours", "posted", "file"}   # real photos are not illustrative
         ctx.update(photo_uri=Path(photo).as_uri(),
                    photo_credit=("Illustrative photo · " if civic else "") + (post.get("photo_credit") or ""))
+    if ctx.get("photo_uri"):
+        from urllib.parse import unquote, urlparse
+        band = photo_band(Path(unquote(urlparse(ctx["photo_uri"]).path)), W)
+        if band:
+            ctx["photo_band"] = band
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
+
+
+BAND_BELOW = 1000   # a photo narrower than this would be blown up to fill a full post or Reel
+
+
+def photo_band(path: Path, width: int) -> int:
+    """For a small photo (news sites publish at 700-840px): the height it takes at full canvas width, so the design
+    shows it sharp at its own shape over a blurred copy of itself, instead of stretching it 2-4x to fill the frame.
+    0 for a photo big enough to fill the frame."""
+    try:
+        from PIL import Image
+        with Image.open(path) as im:
+            w, h = im.size
+    except Exception:
+        return 0
+    return round(width * h / w) if w < BAND_BELOW else 0
 
 
 def hero_beat(box: list, w: int, h: int) -> dict:

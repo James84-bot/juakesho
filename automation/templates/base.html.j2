@@ -46,6 +46,13 @@ html, body { background: #777; }
                               transparent 46%, color-mix(in srgb, var(--bg) 88%, transparent) 70%, var(--bg) 86%); }
 /* words that start over the faded photo keep their contrast whatever the photo is (a pale wall, the sky) */
 .has-photo .layer > :first-child, .has-photo .layer > :nth-child(2) { text-shadow: 0 0 22px color-mix(in srgb, var(--bg) 85%, transparent), 0 1px 2px rgba(0, 0, 0, .35); }
+/* A small news photo: sharp at its own shape across the top, over a blurred, darkened copy that fills the frame */
+.photo--blur { filter: blur(30px) brightness(.5) saturate(1.1) !important; left: -80px; right: -80px; top: -80px;
+  height: calc(var(--ph) + 160px); }
+.photo-band { position: absolute; left: 0; top: var(--band-top, 124px); width: 100%; object-fit: cover; z-index: 1;
+  height: min(var(--bh), calc(var(--ph) - var(--band-top, 124px)));
+  -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 82%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0, #000 82%, transparent 100%); }
+.has-photo .layer, .top, .foot { z-index: 2; }
 /* Photo credit: small, vertical, in the right margin over the photo, clear of the text column */
 .credit { position: absolute; right: 26px; top: 150px; white-space: nowrap;
   writing-mode: vertical-rl; rotate: 180deg; font: 500 15px "Inter"; color: #fff; opacity: .85; letter-spacing: .02em;
@@ -111,7 +118,8 @@ mark { background: var(--mark-bg); color: var(--mark-ink); padding: 0 .1em; marg
 <body>
 {% if reel %}<div class="reel" id="reel"><div class="reel-top"><img src="{{ logo_on_dark if dark else logo_on_light }}" alt=""></div>{% endif %}
 <div class="canvas{{ ' has-photo' if photo_uri is defined }}" id="canvas">
-  {% if photo_uri is defined %}<div class="photo" style="background-image: url('{{ photo_uri }}')"></div><div class="photo-fade"></div>{% endif %}
+  {% if photo_uri is defined %}<div class="photo{{ ' photo--blur' if photo_band }}" style="background-image: url('{{ photo_uri }}')"></div><div class="photo-fade"></div>
+  {% if photo_band %}<img class="photo-band" src="{{ photo_uri }}" alt="" style="--bh: {{ photo_band }}px">{% endif %}{% endif %}
   <svg class="backdrop" viewBox="0 0 {{ W }} {{ H }}" preserveAspectRatio="none">{% block backdrop %}{% endblock %}</svg>
   <svg class="art" viewBox="0 0 {{ W }} {{ H }}" preserveAspectRatio="none">{% block art %}{% endblock %}</svg>
   <div class="layer">{% block content %}{% endblock %}</div>

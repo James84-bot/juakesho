@@ -28,7 +28,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 FEEDS = HERE / "content" / "photo_feeds.json"
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-MIN_WIDTH = 900
+MIN_WIDTH = 640   # news sites publish lead photos at 700-840px; the design shows small ones as a sharp band
 DAYS_BEFORE, DAYS_AFTER = 4, 1
 PAID = re.compile(r"\b(getty|afp|reuters|associated press|ap photo|shutterstock|alamy|xinhua|anadolu|epa-efe|"
                   r"istock|adobe ?stock|dreamstime|bloomberg)\b", re.I)
@@ -365,7 +365,7 @@ def find_named(post: dict) -> tuple[bytes, dict] | None:
     now = dt.datetime.now(dt.timezone.utc)
 
     def names_it(x: dict, key: str) -> bool:
-        if not _has(x["title"].lower(), key):
+        if not re.search(rf"\b{re.escape(key)}(?:'s|’s)?\b", x["title"].lower()):   # 'omar' is not 'omare'
             return False
         if key != surname or not first:
             return True
