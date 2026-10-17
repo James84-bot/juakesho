@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-17T10:21:10.171570+00:00",
+  "fetched": "2026-10-17T10:24:44.354384+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -73,22 +73,28 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "4 persons of interest arrested with 38.6 kg of suspected game meat in Laikipia",
-          "url": "https://peopledaily.digital/news/4-persons-of-interest-arrested-with-38-6-kg-of-suspected-game-meat-in-laikipia",
-          "source": "People Daily"
+          "title": "Actress Selma Blair says she 'did not intend to harm anyone' in plane altercation",
+          "url": "https://www.bbc.com/news/articles/cwly3zd1r45ro",
+          "source": "BBC"
         },
         {
-          "title": "Month-old baby girl sold for N2m in Oyo, mother arrested",
-          "url": "https://www.vanguardngr.com/2026/10/month-old-baby-girl-sold-for-n2m-mother-arrested/",
-          "source": "Vanguard News"
+          "title": "Selma Blair Arrested, Attacks Flight Crew In Mid-Air",
+          "url": "https://www.tmz.com/2026/10/12/selma-blair-arrested-after-attacking-flight-crew/",
+          "source": "TMZ"
         },
         {
-          "title": "Mother, health facility owner arrested over sale of baby for N2m in Oyo",
-          "url": "https://dailypost.ng/2026/10/17/mother-health-facility-owner-arrested-over-sale-of-baby-for-n2m-in-oyo/",
-          "source": "Daily Post Nigeria"
+          "title": "Selma Blair accused of attacking 2 flight attendants and assaulting a police officer and nurse",
+          "url": "https://apnews.com/article/selma-blair-plane-9bce750da2a33f042b208388dd0b0f40",
+          "source": "AP News"
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "venezia vs napoli prediction",
+      "traffic": "200+",
+      "news": []
     },
     {
       "geo": "KE",
@@ -115,28 +121,6 @@
     },
     {
       "geo": "KE",
-      "title": "villarreal vs elche prediction",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Villarreal vs Elche: Spanish La Liga stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cqm26x3em100t",
-          "source": "BBC"
-        },
-        {
-          "title": "Lorient - Monaco (Ligue 1) : compositions probables, heure et chaîne",
-          "url": "https://www.befoot.net/match/lorient-monaco-1552787/",
-          "source": "www.befoot.net"
-        },
-        {
-          "title": "Villarreal face Elche test between Napoli win and Anfield trip",
-          "url": "https://onefootball.com/en/news/villarreal-face-elche-test-between-napoli-win-and-anfield-trip-43624617",
-          "source": "OneFootball"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "tecno spark 50s",
       "traffic": "100+",
       "news": [
@@ -159,9 +143,25 @@
     },
     {
       "geo": "KE",
-      "title": "venezia vs napoli prediction",
+      "title": "villarreal vs elche",
       "traffic": "100+",
-      "news": []
+      "news": [
+        {
+          "title": "Villarreal vs Elche: Spanish La Liga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cqm26x3em100t",
+          "source": "BBC"
+        },
+        {
+          "title": "Lorient - Monaco (Ligue 1) : compositions probables, heure et chaîne",
+          "url": "https://www.befoot.net/match/lorient-monaco-1552787/",
+          "source": "www.befoot.net"
+        },
+        {
+          "title": "Villarreal face Elche test between Napoli win and Anfield trip",
+          "url": "https://onefootball.com/en/news/villarreal-face-elche-test-between-napoli-win-and-anfield-trip-43624617",
+          "source": "OneFootball"
+        }
+      ]
     }
   ],
   "dropped": [
