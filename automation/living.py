@@ -299,10 +299,10 @@ def head_crop(img: np.ndarray, face: Face, size: tuple[int, int]) -> np.ndarray:
     top, chin = lm[10][1], lm[152][1]
     fh = chin - top
     w, h = size
-    box_h = fh * 2.35
+    box_h = fh * 2.0                     # close enough to read his expression on a phone
     box_w = box_h * w / h
     cx, cy = lm[1][0], top + fh * 0.62
-    x0, y0 = int(round(cx - box_w / 2)), int(round(cy - box_h * 0.40))
+    x0, y0 = int(round(cx - box_w / 2)), int(round(cy - box_h * 0.47))
     x1, y1 = int(round(x0 + box_w)), int(round(y0 + box_h))
     pad = max(0, -x0, -y0, x1 - img.shape[1], y1 - img.shape[0])
     if pad:
