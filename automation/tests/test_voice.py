@@ -104,7 +104,7 @@ class Character(unittest.TestCase):
             sr = 24000
             tone = 0.2 * np.sin(2 * np.pi * 180 * np.arange(sr * 3) / sr).astype("float32")
             sf.write(str(wav), tone, sr)
-            for _, _, rate, tempo in voicelab.CHARACTERS:
+            for _, _, rate, tempo, _ in voicelab.CHARACTERS:
                 mp3 = voicelab.to_mp3(wav, Path(t) / f"{rate}.mp3", rate, tempo)
                 got = voicelab.seconds(mp3)
                 self.assertAlmostEqual(got, 3.0 / tempo, delta=0.25)
