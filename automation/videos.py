@@ -244,6 +244,9 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
 
 def attach(posts: list[dict], out_dir: Path) -> None:
     """Sets video_file / video_credit / video_source on the posts that should move."""
+    keys = [k for k in ("PIXABAY_API_KEY", "PEXELS_API_KEY") if os.environ.get(k)]
+    _note(f"  footage sources: Wikimedia Commons{''.join(', ' + k.split('_')[0].title() for k in keys)}"
+          f"{'' if keys else ' only (no PIXABAY_API_KEY or PEXELS_API_KEY secret reached this run)'}")
     for p in posts:
         if not wanted(p):
             continue
