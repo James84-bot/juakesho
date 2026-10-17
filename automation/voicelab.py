@@ -34,6 +34,7 @@ from pathlib import Path
 import pipeline as P
 
 VOICE_STATE = P.STATE / "voice.json"
+RECORDING = P.HERE / "content" / "presenter" / "voice.mp3"   # James reading the script, noise removed and EQ'd
 MIN_REF_SECONDS = 6.0       # Chatterbox refuses references of 5 s or less; keep a margin
 REF_SECONDS = 20.0          # it only conditions on the first ~10-15 s; 20 s of clean speech is plenty
 
@@ -55,7 +56,7 @@ BODY = "highpass=f=70,equalizer=f=180:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.2:g=2
 CHARACTERS = [
     ("Calm anchor", "Your clone, deeper and slower: steady and trusted", 0.92, 0.97),
     ("Street reporter", "Your clone, a little brighter and quicker: young and energetic", 1.05, 1.04),
-    ("Your clone", "Your own voice as the model hears it, cleaned up (for comparison)", 1.0, 1.0),
+    ("Your voice, polished", "Your own voice, studio-cleaned and a touch slower: the most natural", 1.0, 0.97),
 ]
 
 
@@ -152,11 +153,14 @@ def reference(tmp: Path) -> Path:
     if not VOICE_STATE.exists():
         raise SystemExit("No voice recording yet: send a voice note (or an audio file) to the bot first.")
     rec = json.loads(VOICE_STATE.read_text())
-    token = P.need("TELEGRAM_BOT_TOKEN")["TELEGRAM_BOT_TOKEN"]
-    path = P._tg_file_path(rec["file_id"])
-    raw = tmp / ("source" + (Path(path).suffix or ".ogg"))
-    with urllib.request.urlopen(f"https://api.telegram.org/file/bot{token}/{path}", timeout=120) as r:
-        raw.write_bytes(r.read())
+    if rec.get("file_id") == "repo":   # the studio-cleaned recording kept with the presenter's photos
+        raw = RECORDING
+    else:
+        token = P.need("TELEGRAM_BOT_TOKEN")["TELEGRAM_BOT_TOKEN"]
+        path = P._tg_file_path(rec["file_id"])
+        raw = tmp / ("source" + (Path(path).suffix or ".ogg"))
+        with urllib.request.urlopen(f"https://api.telegram.org/file/bot{token}/{path}", timeout=120) as r:
+            raw.write_bytes(r.read())
     ref = tmp / "reference.wav"
     run([ffmpeg(), "-y", "-loglevel", "error", "-i", str(raw), "-af",
          "highpass=f=70,silenceremove=start_periods=1:start_threshold=-45dB:stop_periods=-1:stop_duration=0.6:stop_threshold=-45dB,"
