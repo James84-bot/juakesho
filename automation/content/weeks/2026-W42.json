@@ -902,13 +902,91 @@
       "voiced": "Kenyan accent",
       "reel": true,
       "tg_msg": 335
+    },
+    {
+      "id": "2026-w42-hot-1018m",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 1,
+      "kicker": "Kenyans",
+      "line": "Kenya confirms *seven Ebola cases* as Africa CDC demands tighter health checks.",
+      "fact": "Africa CDC confirmed Kenya now has seven Ebola cases and called for stricter cross-border screening.",
+      "message": "Kenya records seven Ebola cases, requiring strict public health surveillance and clear updates.",
+      "action": "Report unexplained high fever and bleeding immediately to the nearest health facility.",
+      "source": "Capital FM News, 2026-10-18",
+      "photo_query": "hospital ward Kenya",
+      "who": "Ministry of Health",
+      "where": "National",
+      "when": "18 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Kenyans face heightened health risks and need equipped isolation centres in every county.",
+      "beats": [
+        "Confirmed Ebola cases in Kenya have risen to *seven*.",
+        "Africa CDC called for stronger regional *surveillance* across all borders.",
+        "Families need immediate protection and clear health *guidelines* now.",
+        "Kenyans demand: the Ministry of Health provides *daily updates*.",
+        "Report symptoms immediately to the nearest *health facility*."
+      ],
+      "caption": "Confirmed Ebola cases in Kenya have risen to seven, according to Africa CDC. Health surveillance at all border points and isolation wards must be fully operational.\n\nWhat safety measures have you seen at your local clinic?\n\n#HealthKE #EbolaAlert #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-18T14:21:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "DCI impounded two UK-stolen cars as syndicates target unsuspecting Kenyan buyers."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Africa CDC calls for stronger regional Ebola surveillance as Kenya cases rise to 7",
+          "link": "https://capitalfm.africa/africa-cdc-calls-for-stronger-regional-ebola-surveillance-as-kenya-cases-rise-to-7/",
+          "published": "2026-10-18"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 10,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.8,
+        "note": "none"
+      },
+      "drafted_at": "2026-10-18T11:23:38.352870+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1018m-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/africa-cdc-calls-for-stronger-regional-ebola-surveillance-as-kenya-cases-rise-to-7/",
+      "tv_clip": {
+        "channel": "KTN News",
+        "title": "Kenya Confirms Four New Ebola Cases, Total Rises to Seven",
+        "url": "https://www.youtube.com/watch?v=BDJhuPBD6-Q"
+      },
+      "reel": true,
+      "tg_msg": 346
     }
   ],
   "scripts": {
-    "radio": "Good evening and welcome to Kenya on Record. Let us talk about that car you have been saving up to buy. This week, the DCI impounded two high-end vehicles in Nairobi that were flagged as stolen property from the United Kingdom. International syndicates are partnering with local cartels to ship stolen cars into Mombasa, forge clearance documents, and sell them to unsuspecting Kenyans at tempting prices. You believe you have secured a clean import, only to have detectives show up at your gate months later. When Interpol flags a chassis number, the vehicle is seized as evidence. You lose your car, your hard-earned millions are gone, and the broker’s phone goes permanently offline. Beyond the syndicates, we must ask hard questions about border accountability. How do stolen foreign vehicles clear the port, bypass KRA customs checks, and obtain local registration plates without insider facilitation? Systems exist to flag these vehicles, but corruption leaves the door wide open. If you are buying a foreign-used car, do not just trust a printed logbook. Run the chassis number through international databases and verify clearance records directly before wiring any payment.\n\nKwa ufupi: DCI wamenasa magari mawili jijini Nairobi yaliyoibwa nchini Uingereza na kuuzwa kimagendo. Kabla ya kununua gari lililotoka ng'ambo, hakikisha umekagua nambari ya chasi na mifumo ya Interpol na NTSA. Usikubali kulaghaiwa na bei rahisi ukapoteza mamilioni yako.",
-    "voice_note": "Habari zenu, this is Kenya on Record with an urgent heads-up for anyone car shopping right now. The DCI just seized two luxury cars in Nairobi that were stolen in the UK and sneaked into the country. Here is how the trap works: syndicates ship in stolen vehicles using forged import papers, get them registered locally, and sell them slightly below market value. You buy in good faith, receive a seemingly valid logbook, but weeks later, Interpol tracks the chassis number. The police confiscate the car, you become a person of interest in a criminal case, and your millions vanish into thin air because the dealer is nowhere to be found. If a deal looks unusually cheap, stop and think. Always insist on verifying the vehicle identification number with Interpol and cross-checking KRA import clearance before sending a single shilling. Please share this note with family and friends before someone gets burned.",
-    "sms": "Usiibiwe: DCI is impounding UK-stolen cars sold locally. Never buy an import without verifying the chassis number with NTSA and Interpol. Cheap is expensive.",
-    "reels": "Imagine spending millions on your dream car, only for the DCI to tow it away from your driveway. Detectives just impounded two luxury vehicles in Nairobi stolen straight from the UK. Cross-border syndicates forge clearance papers and sell stolen imports to unsuspecting Kenyans. When Interpol flags the chassis, you lose both the car and your cash. Never rely on a logbook alone—verify the VIN before paying. Don't finance car thieves."
+    "radio": "Good evening. You are listening to Kenya on Record. This week, our public health reality demands cold facts and active civic vigilance: Kenya has confirmed seven cases of Ebola. We do not need panic, but we do need radical accountability from Afya House and our county health executives. Disease outbreaks thrive in two conditions: poor sanitation and state secrecy. We have seen before how official silence breeds wild rumours, dangerous stigma, and fatal delays. Border surveillance must be real, not just a desk with a broken thermometer. Contact tracing must be funded, thorough, and transparently reported every single day. Most importantly, are our public referral hospitals and frontline health workers supplied with certified PPE, or are doctors being sent into isolation wards unprotected? As citizens, our duty is clear: practice strict hand hygiene, avoid unnecessary physical contact in crowded areas, and report symptoms—severe fever, body pains, vomiting, and unusual bleeding—to official medical facilities immediately. We must protect each other, while demanding honest, prompt data from those in charge.\n\nKwa ufupi: Visa saba vya ugonjwa wa Ebola vimethibitishwa nchini. Wizara ya Afya lazima itoe taarifa za uwazi kila siku na kuwapa wahudumu wa afya vifaa vya kujilinda bila ubaguzi. Epuka uvumi mtandaoni, zingatia usafi, na ukiona dalili kama homa kali na kutokwa na damu mwilini, ripoti mara moja katika kituo cha afya kilicho karibu nawe.",
+    "voice_note": "Habari zenu, this is Kenya on Record. Please listen carefully and share this across your family and estate groups. Kenya has now confirmed seven cases of Ebola. Panic helps no one, but preparedness will save lives. First, demand accountability from your local county clinic: ask whether frontline staff actually have personal protective gear and functioning isolation spaces. Second, cut out the misinformation. Ebola is not cured by salt water, herbal teas, or conspiracy theories. It spreads through direct contact with body fluids of an infected person. Look out for sudden high fever, intense weakness, severe diarrhea, and unexplained bleeding. If someone shows these symptoms, isolate them safely and contact the nearest public health facility or toll-free emergency numbers immediately. Insist on facts, practice hygiene, and hold our leaders accountable for every shilling allocated to surveillance.",
+    "sms": "Usiibiwe: Ignore fake online Ebola cures or panic forwards. Rely on verified MoH briefs. Report severe fever and bleeding immediately to a public clinic.",
+    "reels": "Kenya has seven confirmed Ebola cases. Let’s be completely clear: public health depends on truth, not PR spin. Afya House must deliver honest daily briefings, thorough contact tracing, and guaranteed protective gear for our frontline medical workers right now. We cannot repeat past blunders of secrecy and delayed responses. Watch for high fever and unusual bleeding, verify before forwarding rumors, and demand total transparency from your leaders. Lives depend on it."
   },
   "spend_usd": 3.0807,
   "revision": 3

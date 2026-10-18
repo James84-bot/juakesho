@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-10-18T07:14:07.010854+00:00",
+  "fetched": "2026-10-18T08:20:59.005876+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "leeds vs man utd",
-      "traffic": "100+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Team news for Leeds away",
@@ -12,21 +12,44 @@
           "source": "Manchester United"
         },
         {
-          "title": "Leeds United vs Manchester United: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cwzrdvx44pkpt",
-          "source": "BBC"
-        },
-        {
           "title": "Leeds United vs Man Utd: How to watch, TV channel, live stream, NOW TV, team news and score prediction",
           "url": "https://www.skysports.com/football/news/13599879/leeds-united-vs-man-utd-how-to-watch-tv-channel-live-stream-now-tv-team-news-and-score-prediction",
           "source": "Sky Sports"
+        },
+        {
+          "title": "Leeds United vs Manchester United: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cwzrdvx44pkpt",
+          "source": "BBC"
         }
       ]
     },
     {
       "geo": "KE",
+      "title": "george natembeya",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Natembeya explains why he is at loggerheads with Ruto",
+          "url": "https://www.the-star.co.ke/news/2026-10-18-natembeya-why-im-clashing-with-ruto",
+          "source": "www.the-star.co.ke"
+        },
+        {
+          "title": "Kalonzo condemns alleged plot to arrest Natembeya, slams Ruto over ‘leaders will face accidents’ remark",
+          "url": "https://citizen.digital/article/kalonzo-condemns-alleged-plot-to-arrest-natembeya-slams-ruto-over-leaders-will-face-accidents-remark-n392228",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "Natembeya vows to confront Ruto over Trans Nzoia market",
+          "url": "https://peopledaily.digital/inside-politics/natembeya-vows-to-confront-ruto-over-trans-nzoia-market",
+          "source": "People Daily"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
       "title": "lyon vs nice",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "OL : Paulo Fonseca fustige les plaintes de l’OGC Nice sur l’arbitrage",
@@ -39,9 +62,9 @@
           "source": "RMC Sport"
         },
         {
-          "title": "Lyon : changement de gardien contre Nice",
-          "url": "https://www.maxifoot.fr/lyon/changement-de-gardien-contre-nice-foot-465883.htm",
-          "source": "Maxifoot"
+          "title": "Descamps remplace Greif, l'OL a tranché",
+          "url": "https://www.foot01.com/ol/descamps-remplace-greif-lol-a-tranche",
+          "source": "Foot01"
         }
       ]
     },
@@ -66,34 +89,12 @@
           "source": "شبكة تواصل الإخبارية"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "valkyries vs dream",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Daily life around the world, in photos",
-          "url": "https://www.bastillepost.com/global/article/6264059-daily-life-around-the-world-in-photos-16",
-          "source": "巴士的報"
-        },
-        {
-          "title": "HERE’S!* WAY TO WATCH Valkyries vs Dream LIVE STREAMS Soccer ON TV CHANNEL",
-          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2ZyYW5jaXNqaGFycmlzby5naXRodWIuaW8vbXBtL2xudC54bWwiLz48L2tycGFubz4=&id=to-watch-valkyries-vs-dream-live-fox-sports-aynoo",
-          "source": "Universidad de Córdoba (UCO)"
-        },
-        {
-          "title": "Bird: Williams will 'figure it out' for Valkyries",
-          "url": "https://www.nbcsports.com/watch/wnba/sue-bird-says-that-gabby-williams-likes-to-have-her-back-against-the-wall",
-          "source": "NBC Sports"
-        }
-      ]
     }
   ],
   "dropped": [
     {
-      "title": "george natembeya",
-      "why": "unsafe: 'war'"
+      "title": "ac milan vs atalanta",
+      "why": "unsafe: 'Betting'"
     },
     {
       "title": "juventus vs lazio",
