@@ -466,7 +466,17 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
         hit = _cached(out_dir, post["id"])
         if hit:
             return hit
-        if post.get("template") in CIVIC_TEMPLATES | {"glasspoll"} and not post.get("group"):
+        on_report = isinstance(post.get("material"), dict) and post["material"].get("kind") != "bank"
+        if on_report:   # built on one report: its own story's photo, or a neutral one; never a file photo of a person
+            import posted
+            try:
+                got = posted.find(post)
+            except Exception as e:
+                _note(f"  posted-photo search failed for {post.get('id')}: {e}")
+                got = None
+            if got:
+                return _save(out_dir, post["id"], *got)
+        elif post.get("template") in CIVIC_TEMPLATES | {"glasspoll"} and not post.get("group"):
             import posted
             try:
                 got = event_photo(post)
