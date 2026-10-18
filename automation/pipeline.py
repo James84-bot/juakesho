@@ -1643,7 +1643,7 @@ def _main(argv: list[str] | None = None) -> int:
             learn()
         except Exception as e:
             log(f"learn skipped: {e}")
-    if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "renew", "radar", "photocheck"} and not a.mock:
+    if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "renew", "redo", "radar", "photocheck"} and not a.mock:
         try:
             import trends
             t = trends.collect()
@@ -1654,6 +1654,9 @@ def _main(argv: list[str] | None = None) -> int:
             import news
             n = news.collect()
             log(f"news: {len(n['items'])} stories, errors {n['errors'] or 'none'}")
+            for topic in sorted(news.SERIES_TOPICS):   # what the everyday series can be built on this week
+                got = [x["title"][:70] for x in n.get("series", []) if x["topic"] == topic]
+                print(f"::notice::series material, {topic}: {len(got)}" + (" | " + " | ".join(got[:3]) if got else ""))
         except Exception as e:
             log(f"news skipped: {e}")
         try:

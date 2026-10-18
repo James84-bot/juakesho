@@ -388,7 +388,7 @@
       "drafted_at": "2026-10-18T05:24:34.976591+03:00"
     },
     {
-      "id": "2026-w43-d7-glasspoll-r8",
+      "id": "2026-w43-d7-glasspoll-r9",
       "template": "glasspoll",
       "lane": "everyone",
       "message": "Voters weigh in on political pacts ahead of the 2027 elections.",
@@ -406,8 +406,8 @@
       "question": "Does the UDA-ODM pact help Kenya?",
       "cta": "Comment A or B",
       "options": [
-        "A: Yes, it unites",
-        "B: No, we need opp"
+        "A: Yes, it unites us",
+        "B: No, weak opposition"
       ],
       "caption": "The political realignments for 2027 are gathering pace across the country. Does the UDA-ODM pact help Kenya move forward, or do we need a strong opposition? Vote A or B in the comments.\n\n#KenyaOnRecord",
       "bg": "usiku",
@@ -421,7 +421,7 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": []
@@ -443,14 +443,8 @@
         "note": "Directly taps into the high-demand UDA-ODM pact debate currently leading the national news."
       },
       "drafted_at": "2026-10-18T05:24:34.976594+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d7-glasspoll-r8-photo.jpg",
-      "photo_credit": "Photo: Queen Asali / Wikimedia Commons, CC BY-SA 4.0",
-      "photo_kind": "symbolic",
-      "photo_outlet": "",
-      "photo_source": "https://commons.wikimedia.org/wiki/File:UNDP_WiR_-_CFA_Kenyan_Election_Project_2022.png",
       "voiced": "Kenyan accent",
-      "reel": true,
-      "tg_msg": 308
+      "reel": true
     }
   ],
   "scripts": {

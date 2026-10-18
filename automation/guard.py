@@ -665,6 +665,10 @@ def series_rules(post: dict, rep: "Report") -> None:
                                         str(post.get("who") or ""), re.I):
         rep.errors.append("The Chapter Six Test measures ONE named leader or candidate (who = 'Firstname Lastname'), "
                           "never a group")
+    import material
+    wrong = material.numbers_problem(post)
+    if wrong:
+        rep.errors.append(wrong)
     mismatch = story_mismatch(post)
     if mismatch:
         rep.errors.append(mismatch)
