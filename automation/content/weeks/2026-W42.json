@@ -980,13 +980,94 @@
       },
       "reel": true,
       "tg_msg": 346
+    },
+    {
+      "id": "2026-w42-hot-1018e",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 2,
+      "kicker": "Voters",
+      "line": "Senator Edwin Sifuna declared a *2027* presidential bid as leaders trade campaign insults.",
+      "fact": "Senator Edwin Sifuna confirmed his 2027 presidential run during a church service in Donholm, Nairobi.",
+      "source": "People Daily, 2026-10-18, People Daily, 2026-10-18",
+      "message": "Elected leaders must deliver their constitutional mandates to Kenyans before launching 2027 presidential campaigns.",
+      "action": "Demand your senator and CS show their five-year delivery records before campaigning",
+      "photo_query": "Kenya National Assembly",
+      "who": "Senator Edwin Sifuna and Prime CS Musalia Mudavadi",
+      "where": "Nairobi",
+      "when": "18 Oct 2026",
+      "side": "both",
+      "tone": "criticism",
+      "impact": "Early presidential campaigns divert state officers from fixing public services, stalled projects, and the cost of living.",
+      "caption": "Elected leaders have started 2027 presidential campaigns while wananchi tackle taxes and stalled services. What has your elected leader delivered in your county? Drop their record below.\n\n#KenyaOnRecord",
+      "beats": [
+        "Senator Edwin Sifuna launched his *2027* presidential campaign.",
+        "Mudavadi warned rivals that their political *parachutes* will collapse.",
+        "Early campaigns distract leaders while Kenyans face *high costs*.",
+        "Kenyans demand: state officers focus on *public service*, not 2027.",
+        "Track your leaders on parliament.go.ke before they ask for *votes*."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-18T22:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "DCI impounded two UK-stolen cars as syndicates target unsuspecting Kenyan buyers.",
+        "Kenya records seven Ebola cases, requiring strict public health surveillance and clear updates."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Sifuna: I will make history as Kenya’s first-term senator to become president",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQTkRPeWhvV2VwVG1DTkJRT2FXYWtFUDRFMmNrajctMTI5S0tFMHlyVXAtNW9ZVTZNQ043WldUbHhkNVBaeEZEUHJQc3BjNDR0ZzJuUVpPSG56aDJTQ245MzFCeW5QRXBQRjF3SXByYXY1VV9VLUYyYUtjdVF0R3JfOHRmRC1rMWlxOFNXUTZJeHkwV2JfSDVpRnFFTXRTZk96Ql9ucmE1elk0MVJITjhXbUxFRzcyTW5Id2Vj?oc=5",
+          "published": "2026-10-18"
+        },
+        {
+          "outlet": "People Daily",
+          "title": "Sifuna tells Mudavadi – ‘I will be Kenya’s president before you’",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQa3dDckVpMU1fb2hwN0RaN2c0YkFJQXAwRjd5SVRWa1ZkcXBrWkdRb0JnXzZJbVZQYkdXc3ZZN1k3WUE4RTNlSncxWmZzaHMzTDdwV0NJOUhHTXMyTDcyamo3YkdxU3lwaVozaXg3WjB3RDdDY3ozRkdPek5vbi1YV0EyandyQW9PNy02S1JhTmpnX1pmV1FkVnlPOTE1bGJ3dkJkalFR?oc=5",
+          "published": "2026-10-18"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 2,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.3,
+        "note": "Use the exact news hook about the Sifuna-Mudavadi clash for the visual and headline."
+      },
+      "drafted_at": "2026-10-18T19:32:51.302053+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1018e-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/new-ifad-country-director-takes-office-as-kenya-partnership-nears-50-years/",
+      "ink": {
+        "2": "#FFFFFF"
+      },
+      "reel": true,
+      "tg_msg": 352
     }
   ],
   "scripts": {
-    "radio": "Good evening. You are listening to Kenya on Record. This week, our public health reality demands cold facts and active civic vigilance: Kenya has confirmed seven cases of Ebola. We do not need panic, but we do need radical accountability from Afya House and our county health executives. Disease outbreaks thrive in two conditions: poor sanitation and state secrecy. We have seen before how official silence breeds wild rumours, dangerous stigma, and fatal delays. Border surveillance must be real, not just a desk with a broken thermometer. Contact tracing must be funded, thorough, and transparently reported every single day. Most importantly, are our public referral hospitals and frontline health workers supplied with certified PPE, or are doctors being sent into isolation wards unprotected? As citizens, our duty is clear: practice strict hand hygiene, avoid unnecessary physical contact in crowded areas, and report symptoms—severe fever, body pains, vomiting, and unusual bleeding—to official medical facilities immediately. We must protect each other, while demanding honest, prompt data from those in charge.\n\nKwa ufupi: Visa saba vya ugonjwa wa Ebola vimethibitishwa nchini. Wizara ya Afya lazima itoe taarifa za uwazi kila siku na kuwapa wahudumu wa afya vifaa vya kujilinda bila ubaguzi. Epuka uvumi mtandaoni, zingatia usafi, na ukiona dalili kama homa kali na kutokwa na damu mwilini, ripoti mara moja katika kituo cha afya kilicho karibu nawe.",
-    "voice_note": "Habari zenu, this is Kenya on Record. Please listen carefully and share this across your family and estate groups. Kenya has now confirmed seven cases of Ebola. Panic helps no one, but preparedness will save lives. First, demand accountability from your local county clinic: ask whether frontline staff actually have personal protective gear and functioning isolation spaces. Second, cut out the misinformation. Ebola is not cured by salt water, herbal teas, or conspiracy theories. It spreads through direct contact with body fluids of an infected person. Look out for sudden high fever, intense weakness, severe diarrhea, and unexplained bleeding. If someone shows these symptoms, isolate them safely and contact the nearest public health facility or toll-free emergency numbers immediately. Insist on facts, practice hygiene, and hold our leaders accountable for every shilling allocated to surveillance.",
-    "sms": "Usiibiwe: Ignore fake online Ebola cures or panic forwards. Rely on verified MoH briefs. Report severe fever and bleeding immediately to a public clinic.",
-    "reels": "Kenya has seven confirmed Ebola cases. Let’s be completely clear: public health depends on truth, not PR spin. Afya House must deliver honest daily briefings, thorough contact tracing, and guaranteed protective gear for our frontline medical workers right now. We cannot repeat past blunders of secrecy and delayed responses. Watch for high fever and unusual bleeding, verify before forwarding rumors, and demand total transparency from your leaders. Lives depend on it."
+    "radio": "Habari zenu, this is Kenya on Record. Take a look around your ward, your constituency, and your county today. We are in late 2026, and already, convoys are rolling, church pulpits have turned into political podiums, and the premature race for 2027 is in full gear. But pause and ask yourself: what happened to the five-year contract you signed with your leaders in 2022?\n\nOur Constitution is crystal clear. Leaders hold power in trust, mandated to deliver public services—from stocking dispensaries and fixing feeder roads to managing CDF bursaries transparently and passing legislation that shields the common mwananchi. Instead, public resources and official working hours are being diverted to early re-election bids and succession battles.\n\nYou did not hire leaders for a three-year term followed by two years of non-stop campaigning. When a leader comes to your area seeking endorsement for 2027, refuse to get distracted by slogans. Demand the receipts of their current term. How did they vote on taxes? Where are the audited project reports? Who accounted for your development funds? Do not let anyone audition for a promotion when they have abandoned the job they are already paid to do.\n\nKwa ufupi: Viongozi waliopewa mamlaka mwaka 2022 walichaguliwa kufanya kazi kwa miaka mitano kamili. Sio haki kuanza kampeni za 2027 mapema kwa rasilimali za umma huku zahanati hazina dawa na barabara zikiwa mbovu. Kabla ya siasa, wadai uwajibikaji wa kazi waliyoahidi.",
+    "voice_note": "Habari zenu, quick one for the family group. Have you noticed how every weekend now looks like campaign season? Convoys everywhere, politicians hopping from church to church, declaring lineups for 2027. But wait kidogo—it’s late 2026. What happened to the work we hired them to do?\n\nThe dispensaries that need basic drugs, the stalled water projects, the pending bursaries—who is attending to those when elected leaders spend the whole week strategizing on taxpayers' fuel? \n\nA five-year term means five years of delivery, not three years of work and two years of campaigning. Before anyone hands you another branded t-shirt or asks for your loyalty in 2027, stop them and ask for the receipts of the job they are currently holding. Don’t let anyone skip the work and demand a promotion. Share this note with a friend.",
+    "sms": "Usiibiwe: Leaders owe you 5 years of service, not 3 years of work and 2 of campaigns. Demand project receipts before entertaining 2027 talk. Simama imara.",
+    "reels": "It’s barely late 2026, but the convoys are already rolling for 2027. Big sound systems, empty slogans, zero accountability. But wait—did you elect them for three years, or five? Your local dispensary still has no medicine. The community water project is still incomplete. Don’t let politicians turn your mandate into an early campaign rally. Demand delivery first, politics later."
   },
   "spend_usd": 3.0807,
   "revision": 3
