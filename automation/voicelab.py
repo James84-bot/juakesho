@@ -316,6 +316,29 @@ def speak(lines: list[str], out_wav: Path, character: tuple, gap: float = 0.28,
     return [round(x / tempo, 3) for x in lens]   # rate and tempo together change the speed by `tempo` only
 
 
+def reeltest(out: Path, dry: bool) -> int:
+    """Renders the first beat Reel of the current week with the chosen voice and the presenter, end to end,
+    and sends it to Telegram as a test (nothing is posted). Proves the whole presenter path on the real runner."""
+    import video
+    weeks = sorted((P.HERE / "content" / "weeks").glob("*.json"))
+    posts = [p for f in weeks[-2:] for p in json.loads(f.read_text())["posts"]
+             if p.get("beats") and p["status"] in {"awaiting", "approved"} and p["template"] not in video.SKIP_TEMPLATES]
+    if not posts or not chosen():
+        log("reeltest: no voiced Reel to make (no beat post, or no voice chosen)")
+        return 1
+    post = dict(posts[-1], id=posts[-1]["id"] + "-voicetest")
+    for k in ("photo_file", "video_file", "person_file"):   # renders live in the runner: those files are gone
+        post.pop(k, None)
+    t0 = time.time()
+    made = video.make_reels([post], out)
+    log(f"reeltest: {post['id']} in {time.time() - t0:.0f}s, voiced={post.get('voiced')}")
+    if made and not dry:
+        P.tg("sendVideo", {"chat_id": P.need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"], "supports_streaming": "true",
+                           "caption": f"🧪 Presenter test ({post.get('voiced') or 'NO VOICE'}): a real post of this week, "
+                                      "voiced and presented. Not posted."}, files={"video": made[0]})
+    return 0 if post.get("voiced") else 1
+
+
 def pending() -> bool:
     """True when a recording arrived that has no voice samples yet (the tick's cue to run clone)."""
     if not VOICE_STATE.exists():
@@ -326,7 +349,7 @@ def pending() -> bool:
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    ap.add_argument("step", choices=["kokoro", "clone", "pending"])
+    ap.add_argument("step", choices=["kokoro", "clone", "pending", "reeltest"])
     ap.add_argument("--dry", action="store_true", help="write files to ./voicelab-out, send nothing")
     ap.add_argument("--selftest", action="store_true", help="clone a stand-in voice instead of James's recording")
     a = ap.parse_args(argv)
@@ -334,6 +357,8 @@ def main(argv: list[str] | None = None) -> int:
         return 0 if pending() else 1
     out = Path("voicelab-out") if a.dry else Path(tempfile.mkdtemp(prefix="voicelab-"))
     out.mkdir(exist_ok=True)
+    if a.step == "reeltest":   # one real Reel of this week, voiced and with the presenter, sent to Telegram
+        return reeltest(out, a.dry)
     if a.step == "kokoro":
         kokoro(out, a.dry)
     else:

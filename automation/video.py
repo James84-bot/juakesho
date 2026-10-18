@@ -211,7 +211,12 @@ def voice_for(post: dict, lines: list[str], work: Path) -> dict | None:
         script = " ".join(l.replace("*", "") for l in lines + [SIGN_OFF])
         return {"wav": wav, "durs": durs[:-1], "tail": durs[-1], "script": script, "name": character[0]}
     except Exception as e:
-        print(f"  voice skipped for {post['id']}: {str(e)[:200]}")
+        import traceback
+        where = traceback.extract_tb(e.__traceback__)[-1]
+        msg = f"voice skipped for {post['id']}: {type(e).__name__}: {str(e)[:300]} at {Path(where.filename).name}:{where.lineno}"
+        print("  " + msg + "\n" + traceback.format_exc()[-1500:])
+        if os.environ.get("GITHUB_ACTIONS"):   # visible on the run page: logs are not readable from outside
+            print(f"::warning title=presenter::{msg}", flush=True)
         return None
 
 
@@ -325,7 +330,13 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
                 add_presenter(ff, target_mp4, voice, voice_dir, seed, style, dur)
                 post["voiced"] = voice["name"]
             except Exception as e:   # the Reel without the presenter is still a good Reel
-                print(f"  presenter skipped for {post['id']}: {str(e)[:200]}")
+                import traceback
+                where = traceback.extract_tb(e.__traceback__)[-1]
+                msg = (f"presenter skipped for {post['id']}: {type(e).__name__}: {str(e)[:300]} "
+                       f"at {Path(where.filename).name}:{where.lineno}")
+                print("  " + msg + "\n" + traceback.format_exc()[-1500:])
+                if os.environ.get("GITHUB_ACTIONS"):
+                    print(f"::warning title=presenter::{msg}", flush=True)
         # Cover frame: the hook line fully landed (beat Reels), or the fully-built design
         from PIL import Image
         cover = min(frames - 1, int((min(1.2, render.beat_seconds(beats["beats"][0]) - 0.2)) * FPS)) if beats else frames - 1

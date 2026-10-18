@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       step:
-        description: "kokoro | clone | selftest"
+        description: "kokoro | clone | selftest | reeltest"
         default: "kokoro"
 
 concurrency:
@@ -36,6 +36,10 @@ jobs:
           sudo apt-get install -y ffmpeg espeak-ng
           pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0 torchaudio==2.6.0
           if [ "${{ inputs.step }}" = "kokoro" ]; then pip install "kokoro>=0.9.4" soundfile; else pip install chatterbox-tts soundfile; fi
+          if [ "${{ inputs.step }}" = "reeltest" ]; then
+            pip install -r automation/requirements.txt "mediapipe==0.10.14"
+            python -m playwright install --with-deps chromium
+          fi
       - name: Make the samples
         run: |
           cd automation
