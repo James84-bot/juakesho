@@ -410,3 +410,21 @@ def overlay_graph(base_label: str, pip_label: str, out_label: str, right: int = 
             f"if(lte(hypot({r + 3}-(W/2-abs(W/2-X)),{r + 3}-(H/2-abs(H/2-Y))),{r + 3}),140,0),140)'[edge];"
             f"[{base_label}][edge]overlay=x=W-w-{right - 3}:y=H-h-{bottom - 3}:shortest=0[b1];"
             f"[b1][pr]overlay=x=W-w-{right}:y=H-h-{bottom}:eof_action=repeat[{out_label}]")
+
+
+
+def main(argv: list[str]) -> int:
+    """python living.py talk <portrait> <voice.wav> <script.txt> <out.mp4> <ffmpeg> [seed]
+    Runs in the face environment (MediaPipe needs an older protobuf than the voice model), so the Reel builder
+    calls it as a separate process."""
+    if len(argv) >= 6 and argv[0] == "talk":
+        talk(Path(argv[1]), Path(argv[2]), Path(argv[3]).read_text(encoding="utf-8"), Path(argv[4]), argv[5],
+             int(argv[6]) if len(argv) > 6 else 0)
+        return 0
+    print(main.__doc__)
+    return 2
+
+
+if __name__ == "__main__":
+    import sys
+    sys.exit(main(sys.argv[1:]))

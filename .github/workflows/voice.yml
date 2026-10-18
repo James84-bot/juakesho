@@ -37,8 +37,10 @@ jobs:
           pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0 torchaudio==2.6.0
           if [ "${{ inputs.step }}" = "kokoro" ]; then pip install "kokoro>=0.9.4" soundfile; else pip install chatterbox-tts soundfile; fi
           if [ "${{ inputs.step }}" = "reeltest" ]; then
-            pip install -r automation/requirements.txt "mediapipe==0.10.14"
+            pip install -r automation/requirements.txt
             python -m playwright install --with-deps chromium
+            python -m venv /tmp/face && /tmp/face/bin/pip install -q "mediapipe==0.10.14" "numpy<2" "opencv-python-headless<4.12"
+            echo "FACE_PYTHON=/tmp/face/bin/python" >> "$GITHUB_ENV"
           fi
       - name: Make the samples
         run: |

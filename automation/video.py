@@ -235,6 +235,8 @@ def presenter_style() -> str:
     """'pip': the realistic presenter (a portrait brought to life) in a studio window; 'illustrated': the drawn
     host. Realistic whenever the portrait and its face-mapping library are available."""
     if PORTRAIT.exists():
+        if os.environ.get("FACE_PYTHON") and Path(os.environ["FACE_PYTHON"]).exists():
+            return "pip"
         try:
             import mediapipe  # noqa: F401
             return "pip"
@@ -249,7 +251,16 @@ def add_presenter(ff: str, reel: Path, voice: dict, work: Path, seed: int, style
     out = work / "voiced.mp4"
     if style == "pip":
         import living
-        clip = living.talk(PORTRAIT, voice["wav"], voice["script"], work / "presenter.mp4", ff, seed)
+        clip = work / "presenter.mp4"
+        face_py = os.environ.get("FACE_PYTHON")   # MediaPipe lives in its own environment (protobuf clash)
+        if face_py:
+            (work / "script.txt").write_text(voice["script"], encoding="utf-8")
+            res = subprocess.run([face_py, str(HERE / "living.py"), "talk", str(PORTRAIT), str(voice["wav"]),
+                                  str(work / "script.txt"), str(clip), ff, str(seed)], capture_output=True, text=True)
+            if res.returncode or not clip.exists():
+                raise RuntimeError(f"face animation failed: {res.stderr.strip()[-400:]}")
+        else:
+            living.talk(PORTRAIT, voice["wav"], voice["script"], clip, ff, seed)
         graph = living.overlay_graph("0:v", "pv", "v")
         subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(clip),
                         "-filter_complex", f"[1:v]setpts=PTS-STARTPTS+{VOICE_DELAY}/TB[pv];" + graph,
