@@ -880,7 +880,7 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     out = []
     for s in slots:
         d = by_id.get(s["id"], {})
-        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "beat", "avoid", "breaking", "source_links") if k in s}
+        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "beat", "angle", "avoid", "breaking", "source_links") if k in s}
         out.append(news.resolve({**d, **locked}, table))
     return out
 

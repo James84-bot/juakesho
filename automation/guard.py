@@ -587,7 +587,49 @@ def check(post: dict) -> Report:
         rep.warnings.append("states facts but has no `source`; verify before approving")
     if re.search(r"\b(19|20)\d{2}\b|\d+%|\bksh\s?\d", low) and not post.get("source"):
         rep.warnings.append("contains a year, % or amount with no `source`")
+    series_rules(post, rep)
     return rep
+
+
+PRICE_SERIES, MYTH_SERIES = {"The Real Price", "Guess the Price"}, {"Myth or Fact"}
+PRICE_WORDS = re.compile(r"\b(price|prices|priced|cost|costs|costlier|cheaper|sh\s?\d|ksh|unga|maize|flour|fuel|petrol|"
+                         r"diesel|kerosene|fares?|rent|fees?|tariffs?|sugar|bread|milk|cooking gas|lpg|electricity|tokens|"
+                         r"bundles?|inflation|cpi)\b", re.I)
+RUMOUR_WORDS = re.compile(r"\b(fake|false|hoax|rumou?rs?|misinformation|disinformation|fact.?check|debunk\w*|viral|"
+                          r"not true|misleading|scam|warns?|alert|pesacheck|africa check)\b", re.I)
+OLD_NAMES = {"money": "Follow the Money", "straight": "Set It Straight", "glasspoll": "Your Say"}
+
+
+def _reports(post: dict) -> str:
+    return " ".join([str(post.get("source") or ""), str(post.get("claim_source") or "")]
+                    + [str(x.get("title", "")) for x in post.get("source_links") or [] if isinstance(x, dict)])
+
+
+def series_rules(post: dict, rep: "Report") -> None:
+    """The everyday series stay true: prices only from a price report, myths only when the rumour is documented,
+    phone numbers in scam posts always masked, the series named in the caption."""
+    series, tpl = post.get("series") or "", post.get("template")
+    angle = post.get("angle") or ""
+    sender = str(post.get("sender") or "")
+    if sender and len(re.findall(r"\d", sender.replace("+254", "", 1))) > 2:
+        rep.errors.append("`sender` must be masked like +254 7XX XXX XXX: a real-looking number may belong to a real "
+                          "person")
+    if series in PRICE_SERIES or angle in {"real_price", "price_quiz"}:
+        if not PRICE_WORDS.search(_reports(post)):
+            rep.errors.append("the price must come from a report about that price (KNBS, EPRA, a newsroom's price "
+                              "story); none of the linked sources is about a price. Pick an item whose price is in "
+                              "the news list, or an official price list")
+        if (series == "Guess the Price" or angle == "price_quiz") and post.get("beats") \
+                and "answer" not in str(post["beats"][-1]).lower():
+            rep.errors.append("Guess the Price: the LAST beat must give the answer ('The answer is B: ...')")
+    if series in MYTH_SERIES or angle == "myth":
+        if not RUMOUR_WORDS.search(_reports(post)):
+            rep.errors.append("Myth or Fact needs proof the claim is really circulating: a fact-check (PesaCheck, "
+                              "Africa Check) or a news report or official warning about the rumour. Never invent a "
+                              "viral message")
+    old = OLD_NAMES.get(tpl)
+    if series and old and series != old and old.lower() in str(post.get("caption") or "").lower():
+        rep.errors.append(f"the caption calls it '{old}': this post's series is '{series}'")
 
 
 COMIC_CAST = {"shosh", "makanga", "mama_mboga", "boda", "student", "pro", "farmer", "creator", "techie", "ahadi", "jua"}
