@@ -127,5 +127,36 @@ class Tightened(unittest.TestCase):
         self.assertTrue(any("Set It Straight" in e for e in rep.errors))
 
 
+
+class Round5(unittest.TestCase):
+    def test_quiz_falls_back_to_a_verified_price_valid_on_the_day(self):
+        slot = {"id": "q", "template": "glasspoll", "series": "Guess the Price", "publish_at": "2026-10-22T18:00:00+03:00"}
+        m = material.pick(slot, set(), used={}, news=[])
+        self.assertIn("226.96", m["title"])
+        late = {**slot, "publish_at": "2026-12-01T18:00:00+03:00"}
+        self.assertIsNone(material.pick(late, set(), used={}, news=[]))
+
+    def test_added_claims_are_caught(self):
+        m = {"kind": "bank", "fact": "The 27.1-kilometre road opened on 14 May 2022."}
+        self.assertIn("Thousands", material.numbers_problem({"material": m, "beats": ["Thousands use it every day."]}))
+        self.assertIn("nationwide", material.numbers_problem({"material": {"kind": "scam", "title": "DCI warns of SIM swap scam"},
+                                                              "beats": ["A nationwide crackdown began."]}))
+        self.assertEqual(material.numbers_problem({"material": m, "beats": ["It opened in 2022."],
+                                                   "caption": "Built in Kenya. Facts on 18 Oct 2026."}), "")
+
+    def test_court_cases_are_not_scam_tips_and_doctored_counts_as_a_check(self):
+        self.assertFalse(material._fits("scam", "Congolese in Sh10bn gold scam case charged over fake Kenyan passport"))
+        rep = guard.Report(id="x")
+        guard.series_rules({"template": "straight", "series": "Myth or Fact", "source_links": [
+            {"title": "Image of Kenyan senator Edwin Sifuna asleep at public event is doctored"}],
+            "claim": "Image shows senator Edwin Sifuna asleep at public event", "beats": ["The image is doctored."]}, rep)
+        self.assertFalse(any("circulating" in e for e in rep.errors), rep.errors)
+
+    def test_a_showcase_keeps_its_own_series_name(self):
+        rep = guard.Report(id="x")
+        guard.series_rules({"template": "kenya", "series": "Built in Kenya", "beats": ["Kenya at its best: a road."]}, rep)
+        self.assertTrue(any("must not call itself" in e for e in rep.errors))
+
+
 if __name__ == "__main__":
     unittest.main()

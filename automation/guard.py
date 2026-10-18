@@ -597,7 +597,7 @@ PRICE_WORDS = re.compile(r"\b(price|prices|priced|cost|costs|costlier|cheaper|sh
                          r"diesel|kerosene|fares?|rent|fees?|tariffs?|sugar|bread|milk|cooking gas|lpg|electricity|tokens|"
                          r"bundles?|inflation|cpi|exchange rate|shilling|dollar)\b", re.I)
 RUMOUR_WORDS = re.compile(r"\b(fake|false|hoax|rumou?rs?|misinformation|disinformation|fact.?check|debunk\w*|viral|"
-                          r"not true|misleading|scam|warns?|alert|pesacheck|africa check)\b", re.I)
+                          r"not true|misleading|scam|warns?|alert|pesacheck|africa check|doctored|altered|fabricated|manipulated)\b", re.I)
 OLD_NAMES = {"money": "Follow the Money", "straight": "Set It Straight", "glasspoll": "Your Say"}
 
 
@@ -679,6 +679,11 @@ def series_rules(post: dict, rep: "Report") -> None:
         rep.errors.append(mismatch)
     old = OLD_NAMES.get(tpl)
     flat = lambda t: re.sub(r"[^a-z]", "", t.lower())
+    if tpl == "kenya" and series in {"Kenya at its best", "Built in Kenya"}:
+        other = ({"Kenya at its best", "Built in Kenya"} - {series}).pop()
+        said = " ".join(str(x) for x in [post.get("caption"), post.get("line"), *(post.get("beats") or [])])
+        if flat(other) in flat(said):
+            rep.errors.append(f"this post is '{series}': it must not call itself '{other}'")
     if series and old and series != old and flat(old) in flat(str(post.get("caption") or "")):
         rep.errors.append(f"the caption calls it '{old}': this post's series is '{series}'")
 

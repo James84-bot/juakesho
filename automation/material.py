@@ -23,6 +23,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 BANK = HERE / "content" / "facts.json"
+PRICES = HERE / "content" / "prices.json"   # verified prices for Guess the Price, each valid for one review
 NEWS = HERE / "state" / "news.json"
 USED = HERE / "state" / "material_used.json"
 BANK_REST = dt.timedelta(days=120)   # a showcase fact comes back at most three times a year
@@ -38,6 +39,11 @@ SCAM = re.compile(r"\b(scams?|scammers?|fraudsters|conm[ae]n|con artists?|phishi
 # not a proposed cut, a subsidy or a fraud total
 PRICE_STATED = re.compile(r"\b(?:to|at|now|costs?|sells?(?: at)?|retail(?:s|ing)? at)\s+(?:k?sh\.?|kes)\s?\d[\d,.]*\b"
                           r"|\b(?:k?sh\.?|kes)\s?\d[\d,.]*\s*(?:per|a|for)\s+(?:litre|kg|kilo|packet|unit|bag|loaf|kwh)", re.I)
+DATE = re.compile(r"\b\d{1,2}\s+(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?(?:\s+\d{4})?\b", re.I)
+NOT_A_TIP = re.compile(r"\b(charged|court|arraigned|sentenced|warrants?|convicted|jailed|trial)\b", re.I)
+# claims a writer likes to add that no source gave: each must be in the material to be used
+UNSOURCED = re.compile(r"\b(thousands|hundreds|millions|every day|daily|in minutes|fastest|largest|biggest|record|"
+                       r"nationwide|crackdown|sparking panic|panic)\b", re.I)
 NOT_A_PRICE = re.compile(r"\b(cut|subsidy|billion|bn|million|fraud|loss|budget|tax)\b", re.I)
 
 WHY = {
@@ -90,8 +96,8 @@ def _fits(k: str, title: str) -> bool:
         return bool(PRICE.search(title) and PRICE_STATED.search(title) and not NOT_A_PRICE.search(title))
     if k == "myth":
         return bool(MYTH.search(title))
-    if k == "scam":
-        return bool(SCAM.search(title))
+    if k == "scam":   # a scam readers can spot, not a court case about one
+        return bool(SCAM.search(title) and not NOT_A_TIP.search(title))
     return False
 
 
@@ -115,12 +121,27 @@ def pick(slot: dict, taken: set[str], used: dict | None = None, today: dt.date |
         fresh.sort(key=lambda e: used.get("bank:" + e["id"], ""))   # never used first, then the longest rested
         e = fresh[0]
         return {"kind": "bank", "key": "bank:" + e["id"], **e}
+    if k == "price_figure":   # a verified price for the day the post goes out, if no headline states one
+        try:
+            prices = json.loads(PRICES.read_text(encoding="utf-8"))["entries"]
+        except (OSError, ValueError):
+            prices = []
+        day = str(slot.get("publish_at") or today.isoformat())[:10]
+        for e in prices:
+            key = "price:" + e["id"]
+            if key not in taken and key not in used and e["valid_from"] <= day <= e["valid_until"]:
+                break
+        else:
+            e = None
     for x in (_news() if news is None else news):
         key = "news:" + x["link"]
         if key in taken or key in used or not _fits(k, x["title"]):
             continue
         return {"kind": k, "key": key, "title": x["title"], "outlet": x["outlet"], "link": x["link"],
                 "published": (x.get("published") or "")[:10]}
+    if k == "price_figure" and e:
+        return {"kind": k, "key": "price:" + e["id"], "title": e["fact"], "outlet": e["outlet"], "link": e["source"],
+                "published": e["valid_from"], "wrong_hint": e.get("wrong_hint", "")}
     return None
 
 
@@ -172,7 +193,8 @@ def brief(m: dict) -> str:
             f"Every fact and every number must come from this headline; `source` is filled in for you.")
     if m["kind"] == "price_figure":
         base += (" The correct option is the price in this headline (same item, same size); the other option is a "
-                 "plausible wrong price. The last beat reveals the answer with that price.")
+                 "plausible wrong price" + (f" ({m['wrong_hint']})" if m.get("wrong_hint") else "") +
+                 ". The last beat reveals the answer with that price.")
     if m["kind"] == "myth":
         base += " The claim is the rumour this report checks; the verdict is what the report found."
     if m["kind"] == "scam":
@@ -190,6 +212,12 @@ def numbers_problem(post: dict) -> str:
     body = " ".join(str(post.get(k) or "") for k in keys)
     body += " " + " ".join(str(b) for b in post.get("beats") or [])
     body += " " + " ".join(str(o) for o in post.get("options") or [])
+    claims = [w for w in UNSOURCED.findall(body + " " + str(post.get("caption") or ""))
+              if w.lower() not in str(allowed or "").lower()]
+    if claims:
+        return (f"'{claims[0]}' is not in this post's material ({str(allowed)[:90]}): say only what it states")
+    body += " " + str(post.get("caption") or "").split("\n")[0]
+    body = DATE.sub(" ", body)   # "on 16 Oct 2026": naming when is not a claim
     num = re.compile(r"\d[\d,]*(?:\.\d+)?")
     norm = lambda s: re.sub(r"[,\s]", "", s.lower()).rstrip(".")
     have = {norm(n) for n in num.findall(str(allowed or ""))}
