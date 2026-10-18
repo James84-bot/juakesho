@@ -1,28 +1,6 @@
 {
-  "fetched": "2026-10-18T04:07:08.235226+00:00",
+  "fetched": "2026-10-18T04:41:11.936746+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "newcastle united f.c. vs aston villa standings",
-      "traffic": "10000+",
-      "news": [
-        {
-          "title": "Young star Johan Manzambi proving his worth for rising Aston Villa",
-          "url": "https://www.bbc.com/sport/football/articles/ck054652mv07o",
-          "source": "BBC"
-        },
-        {
-          "title": "Newcastle 0-1 Aston Villa commentary and highlights",
-          "url": "https://www.skysports.com/football/live-blog/13592695/newcastle-vs-aston-villa-live-premier-league-match-updates-news-and-score",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "'Skills and intelligence' - Aston Villa manager Unai Emery hails Johan Manzambi following decisive goal against Newcastle",
-          "url": "https://www.goal.com/en-ke/lists/skills-intelligence-aston-villa-manager-unai-emery-hails-johan-manzambi-decisive-goal-newcastle-united/blt62958d54c3b85e6c",
-          "source": "Goal.com"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "real betis vs fc barcelona standings",
@@ -47,52 +25,8 @@
     },
     {
       "geo": "KE",
-      "title": "bayern munich vs rb leipzig standings",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Kane scores in 100th Bundesliga game as Bayern thrash Leipzig",
-          "url": "https://www.bbc.com/sport/football/live/cmn8wvygnzeqt",
-          "source": "BBC"
-        },
-        {
-          "title": "Bayern Munich player ratings vs Rb Leipzig: Luis Diaz hat-trick dismantles visitors in six-goal masterclass",
-          "url": "https://www.goal.com/en-ke/lists/-bayern-munich-player-ratings-rb-leipzig-luis-diaz-hat-trick-masterclass-/bltf1a115b3479071ca",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Reaction to Bundesliga game at home to RB Leipzig",
-          "url": "https://fcbayern.com/en/news/2026/10/reaction-to-bundesliga-game-at-home-to-rb-leipzig",
-          "source": "FC Bayern"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "valencia vs athletic",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Athletic y Valencia empatan sin goles en Mestalla",
-          "url": "https://kirolakeitb.eus/es/futbol/equipos/athletic-club/2026/10/17/athletic-valencia-empatan-sin-goles-en-mestalla/",
-          "source": "kirolakeitb.eus"
-        },
-        {
-          "title": "Javier Aguirre suma otro empate con el Valencia y mantiene la lucha por la permanencia",
-          "url": "https://www.excelsior.com.mx/deportes/javier-aguirre-suma-empate-con-valencia-y-mantiene-lucha-por-permanencia",
-          "source": "Excélsior"
-        },
-        {
-          "title": "Valencia — Athletic Bilbao: alineaciones y directo",
-          "url": "https://zamin.uz/es/deportes/224820-valencia-athletic-bilbao-alineaciones-y-directo.html",
-          "source": "Zamin.uz"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "daniel arap moi",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "GSU officers forcefully occupy Moi land",
@@ -153,6 +87,28 @@
     },
     {
       "geo": "KE",
+      "title": "as roma vs genoa cfc standings",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Highlights: Roma v. Genoa (En Español)",
+          "url": "https://sports.yahoo.com/videos/highlights-roma-v-genoa-en-211450518.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Roma Bounces Back From Real Madrid Defeat With Convincing Win Over Genoa",
+          "url": "https://www.chiesaditotti.com/roma-matchday-coverage/43831/roma-genoa-match-recap-castro-luli",
+          "source": "Chiesa Di Totti"
+        },
+        {
+          "title": "LIVE/FREE:TCS Amsterdam Marathon LIVE STREA.Ms 18. 10. 2026",
+          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:gsf,%3Ckrpano%3E%3Cinclude%20url=%22/%5C/maliamadeline.github.io/marathon/sports.xml%22/%3E%3C/krpano%3E&id=amsterdammarathon",
+          "source": "Universidad de Córdoba (UCO)"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "minnesota united fc",
       "traffic": "200+",
       "news": [
@@ -175,6 +131,50 @@
     },
     {
       "geo": "KE",
+      "title": "valencia",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Javier Aguirre: “Se ha logrado un empate con buen sabor”",
+          "url": "https://as.com/futbol/primera/javier-aguirre-se-ha-logrado-un-empate-con-buen-sabor-f202610-n/",
+          "source": "Diario AS"
+        },
+        {
+          "title": "Vasco Aguirre asegura que va por el camino correcto con Valencia pero acepta: \"Hoy no jugamos bien\"",
+          "url": "https://www.marca.com/mx/futbol/mexicanos-mundo/2026/10/18/vasco-aguirre-asegura-camino-correcto-valencia-acepta-hoy-jugamos-bien-video.html",
+          "source": "MARCA"
+        },
+        {
+          "title": "Aguirre confirma que pidió sentarse en el banquillo derecho de Mestalla",
+          "url": "https://www.lasprovincias.es/valenciacf/aguirre-confirma-pidio-sentarse-banquillo-derecho-mestalla-20261016154245-nt.html",
+          "source": "Las Provincias"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mls",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Tampa Bay Rays at Cleveland Guardians - MLB Game Summary - Oct 18, 2026",
+          "url": "https://sportsdata.usatoday.com/baseball/mlb/summary/3036353",
+          "source": "USA Today"
+        },
+        {
+          "title": "CF Montreal at Seattle Sounders FC - MLS Game Summary - Oct 17, 2026",
+          "url": "https://www.usatoday.com/sports/mls/event/2026/2937251/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=MLS&tile=3",
+          "source": "USA Today"
+        },
+        {
+          "title": "New York Rangers at Columbus Blue Jackets - NHL Game Summary - Oct 17, 2026",
+          "url": "https://www.usatoday.com/sports/nhl/event/2026/2999349/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NHL&tile=14",
+          "source": "USA Today"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "valencia fc",
       "traffic": "100+",
       "news": [
@@ -184,13 +184,13 @@
           "source": "OneFootball"
         },
         {
-          "title": "Maresca gives Haaland and four Man City players injury updates",
-          "url": "https://onefootball.com/en/news/maresca-gives-haaland-and-four-man-city-players-injury-updates-43629403",
+          "title": "Seedorf explains why he accepted Corinthians job on his return to Brazil",
+          "url": "https://onefootball.com/en/video/seedorf-explains-why-he-accepted-corinthians-job-on-his-return-to-brazil-3Ki17C0C36juAAlFWRjIlqCCCC7",
           "source": "OneFootball"
         },
         {
-          "title": "HIGHLIGHTS: VALENCIA CF - ATHLETIC CLUB",
-          "url": "https://onefootball.com/en/news/highlights-valencia-cf-athletic-club-43629078",
+          "title": "Maresca gives Haaland and four Man City players injury updates",
+          "url": "https://onefootball.com/en/news/maresca-gives-haaland-and-four-man-city-players-injury-updates-43629403",
           "source": "OneFootball"
         }
       ]
