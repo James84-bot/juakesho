@@ -75,6 +75,9 @@ def ask(post: dict, label: str, chat: str) -> bool:
         return False   # a Reel without lines has no script to read
     if dt.datetime.fromisoformat(post["publish_at"]) - P.now() < MIN_LEAD:
         return False
+    import twin
+    if twin.ready():   # the AI presenter already reads it
+        return False
     res = P.tg("sendMessage", {"chat_id": chat, "text": ask_text(post, label), "parse_mode": "HTML",
                                "reply_markup": json.dumps({"force_reply": True, "input_field_placeholder":
                                                            "Reply with your video"})})

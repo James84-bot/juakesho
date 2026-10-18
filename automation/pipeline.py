@@ -1086,6 +1086,14 @@ def collect() -> None:
                     log(f"note reply skipped: {e}")
                 continue
             import takes
+            import twin
+            if twin.is_base(msg):          # your #presenter video: the AI presenter is built from it
+                try:
+                    tg("sendMessage", {"chat_id": allowed_chat, "text": twin.intake(msg),
+                                       "reply_to_message_id": msg["message_id"]})
+                except Exception as e:
+                    log(f"presenter video reply skipped: {e}")
+                continue
             if takes.is_take(msg):         # your recording of a Reel's script, sent as a reply to it
                 reply = takes.intake(msg, allowed_chat, weeks)
                 if reply:
@@ -1118,6 +1126,12 @@ def collect() -> None:
                 _notify(f"🎙 <b>{_esc(key)}</b> is now the presenter's voice. New Reels will be read by the presenter "
                         "and labelled as an AI voice. Send /voice-off here any time to stop.")
             log(f"voice chosen: {key} ({ok})")
+            continue
+        if action == "w":   # under the AI presenter sample: w|twin|yes / w|twin|no
+            import twin
+            said = twin.decide(key == "yes")
+            _answer(cq["id"], said[:190])
+            log(f"AI presenter: {said}")
             continue
         if action == "t":   # under your take: t|<week>|ok:<id> use it, t|<week>|re:<id> record again
             import takes

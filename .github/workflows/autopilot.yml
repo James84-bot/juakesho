@@ -45,6 +45,8 @@ jobs:
       META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
       META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
       META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}     # AI presenter: James's cloned voice (twin.py)
+      REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}   # AI presenter: lip sync on his real video
       # GitHub Pages serves images/videos with correct content types (enable Pages: Settings → Pages → main / root)
       PUBLIC_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
     steps:
@@ -184,6 +186,15 @@ jobs:
           pip install chatterbox-tts soundfile
           set -o pipefail
           python voicelab.py clone 2>&1 | tee -a run.log
+
+      - name: Your presenter video (the AI presenter's face and voice)
+        if: steps.cmd.outputs.c == 'tick'
+        run: |
+          cd automation
+          python twin.py pending || { echo "no new presenter video"; exit 0; }
+          sudo apt-get install -y ffmpeg || true
+          set -o pipefail
+          python twin.py setup 2>&1 | tee -a run.log
 
       - name: Your recorded takes (you reading a Reel's script)
         if: steps.cmd.outputs.c == 'tick'

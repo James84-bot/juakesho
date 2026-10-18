@@ -298,6 +298,16 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str, voice: dict | None 
     beats = beat_reel(post)
     voice_dir = Path(tempfile.mkdtemp(prefix="reel-voice-"))
     take = bool(voice and voice.get("take"))
+    seed = zlib.crc32(post["id"].encode()) % 1000
+    if not take and beats and post.get("template") != "tazama":   # the AI presenter built from James's real video
+        import twin
+        if twin.ready():
+            try:
+                lines = [b.replace("*", "") for b in beats["beats"]] + [SIGN_OFF]
+                voice, take = twin.voice_for(lines, voice_dir, seed, ff), True
+            except Exception as e:   # the Reel without the presenter is still a good Reel
+                print(f"::warning title=presenter::AI presenter skipped for {post['id']}: {str(e)[:300]}", flush=True)
+                voice = None
     if not take:
         voice = voice_for(post, beats["beats"], voice_dir) if beats and post.get("template") != "tazama" else None
     render.SPOKEN.clear()
@@ -322,7 +332,6 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str, voice: dict | None 
         dur = round(t + tail, 2) if beats else duration_for(post, page.evaluate("window.__motionEnd()"))
         frames = int(dur * FPS)
         render_frames(tmp / "page.html", tmp, frames, alpha=bool(footage))
-        seed = zlib.crc32(post["id"].encode()) % 1000
         track = music_track(post)
         if track:   # an artist's track we have permission for: chime first, then their hook
             mix_track(ff, track, dur, tmp / "audio.wav")
@@ -355,7 +364,7 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str, voice: dict | None 
         if voice:
             try:
                 add_presenter(ff, target_mp4, voice, voice_dir, seed, style, dur)
-                if not take:   # an AI voice is labelled as one; your own recording is not AI
+                if not take or voice.get("ai"):   # an AI presenter is labelled as one; your own recording is not
                     post["voiced"] = voice["name"]
             except Exception as e:   # the Reel without the presenter is still a good Reel
                 import traceback
