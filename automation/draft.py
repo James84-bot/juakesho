@@ -28,6 +28,21 @@ HERE = Path(__file__).resolve().parent
 API_URL = "https://api.anthropic.com/v1/messages"
 DEFAULT_MODEL = "claude-sonnet-5"   # override with JUA_MODEL; see platform.claude.com/docs/en/models/overview
 
+CRAFT_RULES = """MAKE IT WORTH STOPPING FOR (reach comes from the first 2 seconds and from people sending it on)
+- First beat: the single most surprising or useful specific in the material, with its number. Not the topic name,
+  not scene-setting. Weak: "Hell's Gate Park sits on the Rift Valley floor." Strong: "You can walk and cycle among
+  zebras and giraffes at Hell's Gate, one of the few Kenyan parks that allows it" (only if the material says so).
+- Every beat adds a NEW fact from the material. If a line only restates, praises or summarises, delete it and
+  write fewer beats (3 is fine). Never pad.
+- No puffery or filler: breathtaking, stunning, towering, iconic, a key link, remains a vital, plays a crucial role,
+  visitors enjoy, gathering pace, "Kenyans demand verified facts", "never share without checking" as a closer.
+- The last line gives the viewer a reason to act, specific to THIS post: a place gets "Tag who you'd take" or
+  "Save this for your next trip"; a price gets "Tell us what you paid at your station"; a myth gets "Send this
+  to the person who shared it"; a poll gets the question itself. Never "Send this to someone who needs..." or
+  "Share to spread awareness".
+- Write the way a Kenyan friend would say it aloud: contractions are fine, short, concrete, no brochure voice.
+"""
+
 BRAND_RULES = """WRITE FOR INFORMED KENYANS (this section overrides anything below that conflicts with it)
 Our readers follow the news every day. They skip anything that sounds like a slogan, a meme caption or a
 half-sentence. Write like a sharp Kenyan news editor: simple words, but complete, correct sentences.
@@ -660,7 +675,7 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
     import news
     import radar
     import trends
-    system = (BRAND_RULES + "\nAUDIENCE LANES\n" + lane_txt + "\n" + nickname_menu() + music_menu() + learnings_text()
+    system = (BRAND_RULES + "\n" + CRAFT_RULES + "\nAUDIENCE LANES\n" + lane_txt + "\n" + nickname_menu() + music_menu() + learnings_text()
               + demand.prompt_block() + news.prompt_block() + trends.prompt_block() + radar.prompt_block())
     scripts_block = ("Also write reach-everyone scripts: \"radio\" (2-minute community radio segment, one host, ~250 words, "
                      "Kiswahili summary at the end), \"voice_note\" (60-second WhatsApp script), \"sms\" (the week's Usiibiwe tip, "

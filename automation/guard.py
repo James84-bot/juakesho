@@ -120,6 +120,13 @@ ACRONYM_OK = {"MP", "MPS", "MCA", "MCAS", "IEBC", "KSH", "KES", "CS", "PS", "DCI
               "LSK", "COTU", "KMPDU", "KNUT", "JSS", "CBC", "KCSE", "KCPE", "TIFA", "WHO", "EU", "USA", "SA", "DRC", "SGR"}
 
 
+PUFFERY = re.compile(
+    r"\b(breathtaking|stunning|majestic|iconic|picturesque|awe-inspiring|visitors enjoy|a key link|key link for|"
+    r"vital role|crucial role|gathering pace|spread awareness|needs a weekend|"
+    r"kenyans demand (verified|accurate|honest|truthful) (facts|information)|in public discourse|"
+    r"never share (manipulated|fake|false))\b", re.I)
+
+
 def _shouting(texts: list[str] | str) -> str:
     """'' if the copy is calm; otherwise what is too loud. Each piece (design text, caption) is judged on its own."""
     texts = [texts] if isinstance(texts, str) else texts
@@ -488,6 +495,9 @@ def check(post: dict) -> Report:
     fillers = [f for f in SWAHILI_FILLERS if re.search(rf"(?<![\w]){re.escape(f)}(?![\w])", low)]
     if fillers:
         rep.errors.append(f"filler slang reads generated: {', '.join(fillers)} (say it in plain English)")
+    puff = PUFFERY.search(text + " " + str(post.get("caption", "")))
+    if puff and tpl not in {"kesho", "cover"}:
+        rep.errors.append(f"filler/puffery ('{puff.group(0)}'): replace it with a specific fact from the material")
     if tpl == "tazama":   # someone else's clip: only with a recorded right to use it
         if post.get("rights_kind") not in {"permission", "own", "quote"}:
             rep.errors.append("clip without a recorded right to use it (permission / ours / short news quote)")

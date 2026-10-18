@@ -196,3 +196,17 @@ class Round7(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Puffery(unittest.TestCase):
+    def test_filler_lines_are_rejected(self):
+        import guard
+        for line in ("Visitors enjoy towering cliffs.", "It remains a key link for freight.",
+                     "Never share manipulated images.", "Alliances are gathering pace."):
+            post = {"id": "x", "template": "kenya", "beats": [line], "caption": ""}
+            self.assertTrue(any("puffery" in e for e in guard.check(post).errors), line)
+
+    def test_specific_line_passes_the_filler_check(self):
+        import guard
+        post = {"id": "x", "template": "kenya", "beats": ["Hell's Gate covers 68 square kilometres."], "caption": ""}
+        self.assertFalse(any("puffery" in e for e in guard.check(post).errors))
