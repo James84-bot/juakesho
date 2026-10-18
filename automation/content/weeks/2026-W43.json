@@ -147,9 +147,11 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "needs_human",
       "guard": {
-        "errors": [],
+        "errors": [
+          "withdrawn on inspection: grades Rigathi Gachagua 'pass' three times with no record behind it; the Chapter Six Test is now researched by hand only"
+        ],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
@@ -258,7 +260,7 @@
       "tg_msg": 322
     },
     {
-      "id": "2026-w43-d5-straight-r9",
+      "id": "2026-w43-d5-straight-r10",
       "template": "straight",
       "lane": "campus",
       "claim": "Image of Senator Edwin Sifuna asleep at public event is real.",
@@ -275,13 +277,13 @@
       "message": "A viral photo claiming to show Senator Edwin Sifuna asleep is doctored.",
       "action": "Verify viral images before forwarding them in chats.",
       "beats": [
-        "A viral image claimed to show a senator asleep.",
+        "An image claimed to show Senator Edwin Sifuna *asleep* at an event.",
         "Africa Check tested the photo and found it doctored.",
         "Never share manipulated images without checking facts.",
         "Kenyans demand verified facts in public discourse."
       ],
       "photo_query": "smartphone showing fake news warning",
-      "caption": "Not everything you see on WhatsApp is real. Africa Check confirms the viral photo of Senator Edwin Sifuna is doctored.\n\nVerify before you share.\n\n#MythOrFact #KenyaOnRecord",
+      "caption": "Not every photo online is real. Africa Check found that the image of Senator Edwin Sifuna asleep at a public event is doctored.\n\nVerify before you share.\n\n#MythOrFact #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-23T17:00:00+03:00",
       "series": "Myth or Fact",
@@ -307,7 +309,7 @@
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZldsd1liT1p0dEptSUtqd2JZZHFoaXoyZFFLeGlyZjBKLURwbEtfZ3BkN1hUMXV6TnZEOVhoT2FUOTZlWWRCR296UzVFOXFKVVR5Y3FLNlNobndHTjAwVlF2NUJlMWVkbGpkN08yTzhxQnNqMGNGR3JjR0prN042ZnkwQ0c3QzdkdDV2dmd3ajBKemxMTzhqM0VQNXZpVEFrb3NKLTNyWDFmY21BSmV2ejc0RHg0OFE?oc=5",
         "published": "2026-10-16"
       },
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": []
@@ -329,14 +331,7 @@
         "note": "Action requires a concrete step against disinformation rather than a general reminder."
       },
       "drafted_at": "2026-10-18T08:02:41.834597+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-straight-r9-photo.jpg",
-      "photo_credit": "Photo: KBC",
-      "photo_kind": "posted",
-      "photo_outlet": "KBC",
-      "photo_source": "https://www.kbc.co.ke/winnie-odinga-declares-bid-for-nairobi-senate-seat/",
-      "voiced": "Kenyan accent",
-      "reel": true,
-      "tg_msg": 323
+      "reel": true
     },
     {
       "id": "2026-w43-d6-kenya-r9",

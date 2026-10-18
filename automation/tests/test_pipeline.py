@@ -443,7 +443,10 @@ class RedoTests(TempWeeks):
             with mock.patch.object(pl, "draft", lambda label, mock=False, **kw: None), \
                     mock.patch.object(pl, "render_week", lambda label: None), \
                     mock.patch.object(pl, "ask", lambda label, dry_run=False: None), \
-                    mock.patch.object(pl, "current_week_label", lambda: "2026-W41"):
+                    mock.patch.object(pl, "current_week_label", lambda: "2026-W41"), \
+                    mock.patch("news.collect", lambda: {"items": [], "series": [], "errors": {}}), \
+                    mock.patch("trends.collect", lambda: {"safe": [], "dropped": [], "errors": {}}), \
+                    mock.patch("radar.collect", lambda: {"x": [], "videos": [], "errors": {}}):
                 pl.main(["redo"])   # finds W40 by itself, although "next week" is W41
         posts = {p["id"]: p for p in pl.load_week("2026-W40")["posts"]}
         self.assertEqual(posts["a"]["status"], "awaiting")      # untouched, still in your Telegram

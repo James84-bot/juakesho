@@ -294,8 +294,18 @@ def _check_image(data: bytes) -> bool:
         return False
 
 
+def same_story(title: str, story: str) -> bool:
+    """A report about the same story as the post's material: two shared distinctive words."""
+    import guard
+    return len(guard._stems(title) & guard._stems(story)) >= 2
+
+
 def find(post: dict) -> tuple[bytes, dict] | None:
-    """The lead photo of the best report of this post's story, with its credit. None if nothing fits."""
+    """The lead photo of the best report of this post's story, with its credit. None if nothing fits.
+    A post built on one report (material.py) only takes a photo from coverage of that same story: a photo of
+    another politician on a post about a doctored image of a senator is a false picture."""
+    m = post.get("material") if isinstance(post.get("material"), dict) else {}
+    story = m.get("title", "") if m and m.get("kind") != "bank" else ""
     surname, words = terms_for(post)
     if not surname and len(words) < 2:
         return None
@@ -309,7 +319,7 @@ def find(post: dict) -> tuple[bytes, dict] | None:
     names, acronyms = names_for(post), acronyms_for(post)
     ranked = sorted(((score(x, surname, words, names, acronyms), x) for x in feed_items()
                      if x["when"] is None or start <= x["when"] <= end), key=lambda t: (-t[0], not t[1]["official"]))
-    ranked = [(s, x) for s, x in ranked if s > 0][:5]
+    ranked = [(s, x) for s, x in ranked if s > 0 and (not story or same_story(x["title"], story))][:5]
     _note(f"  posted for {post.get('id')}: {len(ranked)} matching reports (person '{surname}', names {names[:4]}, "
           f"words {words[:5]})")
     for s, item in ranked:

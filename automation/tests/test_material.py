@@ -158,5 +158,29 @@ class Round5(unittest.TestCase):
         self.assertTrue(any("must not call itself" in e for e in rep.errors))
 
 
+
+class Round6(unittest.TestCase):
+    def test_every_bank_entry_passes_the_showcase_photo_rule(self):
+        for e in json.loads(material.BANK.read_text(encoding="utf-8"))["entries"]:
+            rep = guard.Report(id=e["id"])
+            post = {"template": "kenya", "place": e["place"], "photo_query": e["photo_query"]}
+            guard._check_template(post, rep) if hasattr(guard, "_check_template") else None
+            place = {w.lower() for w in __import__("re").findall(r"[A-Za-z']{4,}", e["place"])}
+            query = {w.lower() for w in __import__("re").findall(r"[A-Za-z']{4,}", e["photo_query"])}
+            self.assertTrue(place & query and "kenya" in e["photo_query"].lower(), e["id"])
+
+    def test_a_photo_from_another_story_is_refused(self):
+        import posted
+        story = "Image of Kenyan senator Edwin Sifuna asleep at public event is doctored"
+        self.assertFalse(posted.same_story("Winnie Odinga declares bid for Nairobi senate seat", story))
+        self.assertTrue(posted.same_story("Africa Check: doctored image of Sifuna asleep at event", story))
+
+    def test_the_chapter_six_test_is_never_auto_written(self):
+        rep = guard.Report(id="x")
+        guard.series_rules({"template": "scorecard", "who": "Rigathi Gachagua",
+                            "source_links": [{"title": "Fires await Rigathi Gachagua on return from US trip"}]}, rep)
+        self.assertTrue(any("researched" in e for e in rep.errors))
+
+
 if __name__ == "__main__":
     unittest.main()
