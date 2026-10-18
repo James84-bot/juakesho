@@ -48,3 +48,40 @@ class NewsBeat(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class SeriesRules(unittest.TestCase):
+    def setUp(self):
+        import guard
+        self.guard = guard
+
+    def errs(self, post):
+        rep = self.guard.Report(id="t")
+        self.guard.series_rules(post, rep)
+        return " ".join(rep.errors)
+
+    def test_scam_numbers_must_be_masked(self):
+        self.assertIn("masked", self.errs({"template": "usiibiwe", "sender": "+254 712 345 678"}))
+        self.assertEqual("", self.errs({"template": "usiibiwe", "sender": "+254 7XX XXX XXX"}))
+
+    def test_price_needs_a_price_report_and_the_quiz_its_answer(self):
+        post = {"template": "glasspoll", "series": "Guess the Price", "beats": ["How much?", "A or B?", "Comment!"],
+                "source_links": [{"title": "Luxury car stolen in UK traced to Nairobi"}]}
+        e = self.errs(post)
+        self.assertIn("report about that price", e)
+        self.assertIn("LAST beat", e)
+        post["source_links"] = [{"title": "Unga prices drop to Sh160 as maize harvest arrives"}]
+        post["beats"][-1] = "The answer is B: Sh160."
+        self.assertEqual("", self.errs(post))
+
+    def test_myth_needs_proof_the_rumour_exists(self):
+        post = {"template": "straight", "series": "Myth or Fact", "caption": "Myth or Fact: ...",
+                "source_links": [{"title": "Ebola cases rise to 7"}]}
+        self.assertIn("really circulating", self.errs(post))
+        post["source_links"].append({"title": "Health ministry warns of fake Ebola cure messages"})
+        self.assertEqual("", self.errs(post))
+
+    def test_caption_uses_the_new_series_name(self):
+        post = {"template": "straight", "series": "Myth or Fact", "caption": "Set It Straight: x",
+                "source_links": [{"title": "PesaCheck: fake notice"}]}
+        self.assertIn("series is 'Myth or Fact'", self.errs(post))
