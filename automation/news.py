@@ -21,6 +21,7 @@ HERE = Path(__file__).resolve().parent
 FEEDS = HERE / "content" / "news_feeds.json"
 OUT = HERE / "state" / "news.json"
 MAX_AGE = dt.timedelta(days=4)
+SERIES_TOPICS = {"prices", "factcheck", "scams"}   # feeds read only for material.py
 
 
 def _get(url: str, timeout: int = 20) -> bytes:
@@ -64,7 +65,7 @@ def _key(title: str) -> str:
 NEWSROOMS = re.compile(r"^(capital fm|people daily|the star|daily nation|nation|the standard|standard digital|"
                        r"kbc|kenya news agency|citizen digital|citizen tv|k24|tv47|kenyans\.co\.ke|tuko|"
                        r"the eastafrican|business daily|ntv|ktn|the eastleigh voice|nairobi law monthly|"
-                       r"africa check|reuters|bbc|associated press|ap news|al jazeera|bloomberg)", re.I)
+                       r"africa check|pesacheck|reuters|bbc|associated press|ap news|al jazeera|bloomberg)", re.I)
 
 
 def newsroom(outlet: str) -> bool:
@@ -78,7 +79,7 @@ def collect() -> dict:
     for feed in cfg["feeds"]:
         try:
             for it in parse(_get(feed["url"]), feed["name"]):
-                if it["published"] and now - it["published"] > MAX_AGE:
+                if it["published"] and now - it["published"] > dt.timedelta(days=feed.get("days", MAX_AGE.days)):
                     continue
                 k = _key(it["title"])
                 if k in seen or not newsroom(it.get("outlet", "")):
@@ -89,7 +90,10 @@ def collect() -> dict:
         except Exception as e:   # one feed down never stops the week
             errors[feed["name"]] = str(e)[:160]
     items.sort(key=lambda x: x["published"], reverse=True)
-    data = {"fetched": now.isoformat(), "items": items[:60], "errors": errors}
+    # material for the everyday series (material.py) is kept apart, so it never crowds the writer's headlines
+    series = [x for x in items if x["topic"] in SERIES_TOPICS][:45]
+    general = [x for x in items if x["topic"] not in SERIES_TOPICS][:60]
+    data = {"fetched": now.isoformat(), "items": general, "series": series, "errors": errors}
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     return data

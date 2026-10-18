@@ -1,5 +1,5 @@
 {
-  "note": "Free RSS feeds the writer reads every week (news.py). Add or remove freely; a feed that fails is skipped.",
+  "note": "Free RSS feeds the writer reads every week (news.py). Add or remove freely; a feed that fails is skipped. Feeds with topic prices, factcheck or scams are read only for the everyday series' material (material.py); `days` sets how old an item may be.",
   "feeds": [
     {
       "name": "Capital FM News",
@@ -45,6 +45,24 @@
       "name": "Google News: counties",
       "url": "https://news.google.com/rss/search?q=Kenya+governor+county+assembly+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
       "topic": "counties"
+    },
+    {
+      "name": "Google News: prices",
+      "url": "https://news.google.com/rss/search?q=Kenya+(price+OR+prices+OR+EPRA+OR+unga+OR+fare+OR+fares+OR+tariff)+when%3A7d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "prices",
+      "days": 7
+    },
+    {
+      "name": "Google News: fact-checks",
+      "url": "https://news.google.com/rss/search?q=Kenya+(PesaCheck+OR+%22fact+check%22+OR+fake+OR+hoax+OR+misleading+OR+doctored)+when%3A14d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "factcheck",
+      "days": 14
+    },
+    {
+      "name": "Google News: scams",
+      "url": "https://news.google.com/rss/search?q=Kenya+(scam+OR+scammers+OR+fraudsters+OR+conmen+OR+phishing)+when%3A14d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "scams",
+      "days": 14
     }
   ]
 }

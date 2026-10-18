@@ -21,6 +21,7 @@ import urllib.request
 from pathlib import Path
 
 import guard
+import material
 import news
 
 HERE = Path(__file__).resolve().parent
@@ -645,6 +646,7 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
                     "Today's post: react to the biggest Kenyan political story in THIS WEEK IN KENYA, with its link in `source`"}
             if s.get("hot") else {}),
          **({"angle": ANGLES[s["angle"]]} if s.get("angle") in ANGLES else {}),
+         **({"material": material.brief(s["material"])} if s.get("material") else {}),
          **({"avoid": "Already posted today, so pick a DIFFERENT story: " + " | ".join(s["avoid"])} if s.get("avoid") else {}),
          **({"breaking": "BREAKING: write about THIS story, which several newsrooms are reporting right now: "
                          + s["breaking"]["title"] + " (" + ", ".join(s["breaking"]["outlets"]) + "). Facts only from "
@@ -881,7 +883,7 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     for s in slots:
         d = by_id.get(s["id"], {})
         locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "beat", "angle", "avoid", "breaking", "source_links") if k in s}
-        out.append(news.resolve({**d, **locked}, table))
+        out.append(material.lock(news.resolve({**d, **locked}, table), s))
     return out
 
 
@@ -1140,6 +1142,14 @@ TAKEN: list[dict] = []   # posts already in the week (kept through a remake): se
 
 def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = False) -> tuple[list[dict], dict]:
     guard.VERIFY_LINKS = not mock   # a real run opens every source link once; an invented one goes back for a rewrite
+    held = []
+    if not mock:   # the series that must never be invented get their real material first, or are held
+        slots, held = material.attach(slots)
+        for s, why in held:
+            print(f"::notice::held {s['id']}: {why}")
+        for s in slots:
+            if s.get("material"):
+                print(f"::notice::{s['id']} built on: {s['material'].get('title') or s['material'].get('name')}")
     if mock:
         result = mock_draft(slots)
     else:
@@ -1163,4 +1173,6 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
             posts = boost_hashtags(posts)
         except Exception as e:   # trend data missing never blocks the week
             print(f"  hashtag boost skipped: {e}")
+        material.mark([p for p in posts if p["status"] == "drafted"])
+    posts += [{**s, "status": "needs_human", "guard": {"errors": [why], "warnings": []}} for s, why in held]
     return posts, result.get("scripts", {})
