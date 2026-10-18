@@ -508,31 +508,25 @@ def _is_image(msg: dict) -> bool:
 
 
 def _voice_of(msg: dict) -> dict | None:
-    """A voice note, an audio message or an audio file sent as a document: the presenter's voice reference."""
+    """A voice note, an audio message or an audio file sent as a document."""
     doc = msg.get("document") or {}
     if str(doc.get("mime_type", "")).startswith("audio/"):
         return doc
     return msg.get("voice") or msg.get("audio")
 
 
-def _voice_intake(msg: dict, chat: str) -> None:
-    """Keeps the newest recording as the reference for the presenter's voice (voicelab.py clone).
-    Only the file id is stored: the audio stays on Telegram and is fetched when the voice is made."""
+def _voice_note(msg: dict, chat: str) -> None:
+    """A voice note is a note to the team, like a text: kept (Telegram's file id) so Claude can listen and act."""
     v = _voice_of(msg) or {}
-    rec = {"file_id": v["file_id"], "file_unique_id": v.get("file_unique_id"), "duration": v.get("duration"),
-           "mime_type": v.get("mime_type"), "received_at": now().isoformat()}
     STATE.mkdir(exist_ok=True)
-    (STATE / "voice.json").write_text(json.dumps(rec, indent=2) + "\n")
-    secs = rec["duration"]
-    text = ("🎙 <b>Got your recording</b>" + (f" ({secs} s)" if secs else "") + ". It will be used to make the presenter's "
-            "voice. Samples come back here to choose from; nothing is posted.")
-    if secs is not None and secs < 20:
-        text += "\n⚠️ It's short: a 1 to 2 minute recording in a quiet room gives a much better voice."
+    with (STATE / "inbox.jsonl").open("a", encoding="utf-8") as f:
+        f.write(json.dumps({"at": now().isoformat(), "voice_file_id": v.get("file_id"),
+                            "duration": v.get("duration")}) + "\n")
     try:
-        tg("sendMessage", {"chat_id": chat, "text": text, "parse_mode": "HTML", "reply_to_message_id": msg["message_id"]})
+        tg("sendMessage", {"chat_id": chat, "reply_to_message_id": msg["message_id"],
+                           "text": "📝 Noted. Your voice note is saved for Claude to listen to and act on."})
     except Exception as e:
-        log(f"voice reply skipped: {e}")
-    log(f"voice reference saved ({secs}s)")
+        log(f"voice note reply skipped: {e}")
 
 
 def _photo_intake(msg: dict, chat: str) -> None:
@@ -1069,12 +1063,6 @@ def collect() -> None:
         offset = max(offset, u["update_id"] + 1)
         msg = u.get("message")
         if msg and str(msg.get("chat", {}).get("id")) == allowed_chat:
-            if str(msg.get("text", "")).strip().lower().startswith("/voice-off"):   # Reels go back to text only
-                import voicelab
-                voicelab.choose_off()
-                tg("sendMessage", {"chat_id": allowed_chat, "text": "🔇 Presenter voice off. Tap ✅ Use this voice on any "
-                                   "voice sample to turn it back on.", "reply_to_message_id": msg["message_id"]})
-                continue
             text = str(msg.get("text", "")).strip()
             if text and not text.startswith("/"):   # a note to the team: kept so Claude can read it, never lost
                 with (STATE / "inbox.jsonl").open("a", encoding="utf-8") as f:
@@ -1085,25 +1073,8 @@ def collect() -> None:
                 except Exception as e:
                     log(f"note reply skipped: {e}")
                 continue
-            import takes
-            import twin
-            if twin.is_base(msg):          # your #presenter video: the AI presenter is built from it
-                try:
-                    tg("sendMessage", {"chat_id": allowed_chat, "text": twin.intake(msg),
-                                       "reply_to_message_id": msg["message_id"]})
-                except Exception as e:
-                    log(f"presenter video reply skipped: {e}")
-                continue
-            if takes.is_take(msg):         # your recording of a Reel's script, sent as a reply to it
-                reply = takes.intake(msg, allowed_chat, weeks)
-                if reply:
-                    try:
-                        tg("sendMessage", {"chat_id": allowed_chat, "text": reply, "reply_to_message_id": msg["message_id"]})
-                    except Exception as e:
-                        log(f"take reply skipped: {e}")
-                continue
-            if _voice_of(msg):            # a voice note or audio file: the presenter's voice reference
-                _voice_intake(msg, allowed_chat)
+            if _voice_of(msg):            # a voice note: a note to the team, like a text
+                _voice_note(msg, allowed_chat)
             elif _is_image(msg):          # a photo you replied to a card with: swaps that post's picture
                 _photo_intake(msg, allowed_chat)
             else:                         # a clip you sent for a Tazama Hii Reel
@@ -1117,33 +1088,6 @@ def collect() -> None:
         try:
             action, label, key = cq["data"].split("|", 2)
         except ValueError:
-            continue
-        if action == "v":   # ✅ Use this voice, under a voice lab sample: v|voice|<character name>
-            import voicelab
-            ok = voicelab.choose(key)
-            _answer(cq["id"], f"🎙 {key} is now the presenter's voice." if ok else "That voice isn't available any more.")
-            if ok:
-                _notify(f"🎙 <b>{_esc(key)}</b> is now the presenter's voice. New Reels will be read by the presenter "
-                        "and labelled as an AI voice. Send /voice-off here any time to stop.")
-            log(f"voice chosen: {key} ({ok})")
-            continue
-        if action == "w":   # under the AI presenter sample: w|twin|yes / w|twin|no
-            import twin
-            said = twin.decide(key == "yes")
-            _answer(cq["id"], said[:190])
-            log(f"AI presenter: {said}")
-            continue
-        if action == "t":   # under your take: t|<week>|ok:<id> use it, t|<week>|re:<id> record again
-            import takes
-            if not week_file(label).exists():
-                continue
-            data = weeks.setdefault(label, load_week(label))
-            try:
-                said = takes.decide(data, key, allowed_chat)
-            except Exception as e:
-                said = f"Couldn't do that: {str(e)[:120]}"
-            _answer(cq["id"], said[:190])
-            log(f"take {key}: {said}")
             continue
         if action == "c":   # a comment card: c|r|cid reply, c|h|cid hide, c|s|cid skip
             import engage
@@ -1165,14 +1109,6 @@ def collect() -> None:
                 _notify(f"ℹ️ That ✅ was on <b>{_esc(key)}</b>, which is no longer active (expired or already decided). Nothing was posted.")
             continue
         _answer(cq["id"], f"{verdict} ({len(changed)})")
-        if action == "a" and changed:   # you on camera: the script of each approved Reel, to record
-            import takes
-            for pid in changed:
-                q = next(x for x in data["posts"] if x["id"] == pid)
-                try:
-                    takes.ask(q, label, allowed_chat)
-                except Exception as e:
-                    log(f"script for {pid} not sent: {e}")
         if action == "a" and changed:   # TikTok, YouTube Shorts and WhatsApp: ready-to-paste, posted from your phone
             post = next(q for q in data["posts"] if q["id"] == changed[0])
             try:
@@ -1332,8 +1268,6 @@ def caption_for(post: dict) -> str:
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
         body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
         cap = f"{body.rstrip()}\n\n📩 Were you there? Send us your video and we'll credit you.{tail}"
-    if post.get("voiced") and "ai voice" not in cap.lower():   # honest by default: platforms and Kenyans should know
-        cap = f"{cap}\n\n🎙 Presenter voice is AI-generated."
     clip = post.get("credit") if post.get("template") == "tazama" and post.get("rights_kind") != "own" else None
     credits = [f"{icon} {c}" for icon, c in (("📹 Video:", clip), ("🎥", post.get("video_credit")),
                                              ("📷", post.get("person_credit") or post.get("photo_credit")),
@@ -1419,9 +1353,6 @@ def crosspost_text(post: dict) -> str:
     cap = caption_for(post)
     parts = ["📲 <b>Post it everywhere</b> (save the video from the card above):"]
     if post.get("reel"):
-        if post.get("voiced"):   # TikTok requires the label for realistic AI audio; YouTube has an altered-content setting
-            parts += ["", "🎙 <b>AI voice</b>: on TikTok turn on <b>AI-generated content</b> (More options); on YouTube "
-                          "answer <b>Yes</b> to altered or synthetic content."]
         parts += ["", "<b>TikTok</b>: upload, tap <b>Add sound</b>, pick a trending Kenyan sound at low volume. Caption:",
                   f"<code>{esc(cap[:1500])}</code>",
                   "", "<b>YouTube Shorts</b>: title, then the caption as the description:",

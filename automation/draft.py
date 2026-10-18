@@ -43,14 +43,13 @@ half-sentence. Write like a sharp Kenyan news editor: simple words, but complete
   teachers for a year") only when the source gives the numbers.
 - No slang or internet shorthand: no "receipts", "254", "KOT", Sheng or meme phrases. Natural, plain English
   that any Kenyan, of any age, reads easily.
-- Kenyan English, the way a Kenyan presenter speaks it: British spelling (programme, favour, cheque, licence,
+- Kenyan English, the way Kenyans write and speak it: British spelling (programme, favour, cheque, licence,
   centre), money as "Sh" ("Sh2.5 billion", spoken "two point five billion shillings"), Kenyan titles (CS, PS, MP,
   MCA, the Governor, the DCI, the Auditor-General) and the words Kenyans really use for everyday things: matatu,
   boda boda, mama mboga, unga, jua kali, wananchi, harambee, chama, county, ward, sub-county. At most one such
   word per post, and only where it is the natural word (a matatu, not "a public service vehicle"). Never
-  American terms (gas, cell phone, check, mom, apartment complex): fuel, phone, cheque, mum, flats. The beats
-  are read aloud by our presenter, a young Kenyan man: they must sound natural spoken in a Kenyan accent,
-  warm and direct, like a sharp friend explaining the news, never like a foreign newsreader.
+  American terms (gas, cell phone, check, mom, apartment complex): fuel, phone, cheque, mum, flats. Warm and
+  direct, like a sharp Kenyan friend explaining the news, never like a foreign newsreader.
 - Tell them what they don't already know: the amount, the date, the document, who decides, what happens next.
   Don't explain basics an informed adult knows ("taxes fund the government").
 - Kenyans DEMAND, they don't plead. Every accountability post ends with one concrete demand to a named office,

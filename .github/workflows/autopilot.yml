@@ -45,8 +45,6 @@ jobs:
       META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
       META_PAGE_ID: ${{ secrets.META_PAGE_ID }}
       META_IG_USER_ID: ${{ secrets.META_IG_USER_ID }}
-      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}     # AI presenter: James's cloned voice (twin.py)
-      REPLICATE_API_TOKEN: ${{ secrets.REPLICATE_API_TOKEN }}   # AI presenter: lip sync on his real video
       # GitHub Pages serves images/videos with correct content types (enable Pages: Settings → Pages → main / root)
       PUBLIC_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
     steps:
@@ -81,18 +79,6 @@ jobs:
           python -m playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg || true   # video.py falls back to imageio-ffmpeg
           if [ "${{ steps.cmd.outputs.c }}" = "clips" ]; then pip install faster-whisper; fi   # captions from the clip's audio
-          # the presenter (only once James has picked a voice): the voice model on CPU; Rhubarb downloads itself
-          if (cd automation && python -c "import voicelab,sys; sys.exit(0 if voicelab.chosen() else 1)"); then
-            pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0 torchaudio==2.6.0 \
-              && pip install chatterbox-tts soundfile || echo "::warning::voice tools failed to install: Reels stay text-only"
-            # the realistic presenter needs his one portrait and the face mapper (MediaPipe 0.10.14: Face Mesh bundled)
-            # in its OWN environment: MediaPipe 0.10.14 needs protobuf 4, the voice model needs protobuf 5
-            if [ -f automation/content/presenter/portrait.jpg ]; then
-              python -m venv /tmp/face && /tmp/face/bin/pip install -q "mediapipe==0.10.14" "numpy<2" "opencv-python-headless<4.12" \
-                && echo "FACE_PYTHON=/tmp/face/bin/python" >> "$GITHUB_ENV" \
-                || echo "::warning::face mapper failed to install: the illustrated host stands in"
-            fi
-          fi
 
       - name: Install (light)
         if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'hot' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'this-week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'redo' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'samples' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'remake' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'renew' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rephoto' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'clips' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tracker' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip'
@@ -174,39 +160,6 @@ jobs:
           sudo apt-get install -y ffmpeg || true
           set -o pipefail
           python pipeline.py swapwork 2>&1 | tee -a run.log
-
-      - name: Your voice recording (the presenter's voice)
-        if: steps.cmd.outputs.c == 'tick'
-        run: |
-          cd automation
-          # only when the tick just saved a new voice note: the voice tools are installed for that run alone
-          python voicelab.py pending || { echo "no new voice recording"; exit 0; }
-          sudo apt-get install -y ffmpeg || true
-          pip install --index-url https://download.pytorch.org/whl/cpu torch==2.6.0 torchaudio==2.6.0
-          pip install chatterbox-tts soundfile
-          set -o pipefail
-          python voicelab.py clone 2>&1 | tee -a run.log
-
-      - name: Your presenter video (the AI presenter's face and voice)
-        if: steps.cmd.outputs.c == 'tick'
-        run: |
-          cd automation
-          python twin.py pending || { echo "no new presenter video"; exit 0; }
-          sudo apt-get install -y ffmpeg || true
-          set -o pipefail
-          python twin.py setup 2>&1 | tee -a run.log
-
-      - name: Your recorded takes (you reading a Reel's script)
-        if: steps.cmd.outputs.c == 'tick'
-        run: |
-          cd automation
-          # only when the tick just saved a recording you replied with: the build tools are installed for that run alone
-          python takes.py pending || { echo "no new recording"; exit 0; }
-          sudo apt-get install -y ffmpeg || true
-          python -m playwright install --with-deps chromium
-          pip install faster-whisper
-          set -o pipefail
-          python takes.py build 2>&1 | tee -a run.log
 
       - name: Show why it failed
         if: failure()
