@@ -15,7 +15,7 @@
         ],
         "warnings": []
       },
-      "drafted_at": "2026-10-18T08:02:41.834602+03:00"
+      "drafted_at": "2026-10-18T08:50:09.042985+03:00"
     },
     {
       "id": "2026-w43-d2-kenya-r8",
@@ -91,96 +91,72 @@
       "tg_msg": 311
     },
     {
-      "id": "2026-w43-d3-scorecard-r9",
+      "id": "2026-w43-d3-scorecard-r10",
       "template": "scorecard",
       "lane": "hustle",
-      "who": "Rigathi Gachagua",
-      "office": "Former Deputy President",
-      "verdict": "Leadership is measured by public records and delivery.",
-      "source": "Daily Nation, 2026-10-18, The Standard, 2026-10-17",
-      "message": "Rigathi Gachagua faces political tests upon his return from the US.",
-      "action": "Read the political reports in the Daily Nation and The Standard.",
+      "who": "Ferdinand Waititu",
+      "office": "Former Governor, Kiambu County",
+      "verdict": "Leadership scorecard checked against Chapter Six.",
+      "source": "Daily Nation, 2026-10-18",
+      "message": "Former Kiambu Governor Ferdinand Waititu's record measured against Chapter Six integrity tests.",
+      "action": "Read the official court and audit findings on public funds.",
       "beats": [
-        "Rigathi *Gachagua* returns to a wave of fresh political battles.",
-        "Reports show new political realignments in Mount Kenya.",
-        "Kenyans examine political records over empty promises.",
-        "Kenyans demand leaders answer for development."
+        "We test *Ferdinand Waititu* against Chapter Six standards.",
+        "Leadership requires public accountability and prudent financial use.",
+        "Kenyans must check the *record* before the next vote.",
+        "Demand complete integrity from every public office holder."
       ],
-      "photo_query": "Kenyan flag and newspaper",
-      "caption": "Rigathi Gachagua returns to active political grounds as new realignments take shape. Leaders must be judged by records.\n\n#Politics #KenyaOnRecord",
+      "photo_query": "Supreme Court of Kenya",
+      "caption": "The Chapter Six Test: Former Kiambu Governor Ferdinand Waititu's record under review. Read the court files and check the facts.\n\nWhat it means for you: Public integrity rules determine who manages county funds and resources.\n\n#ChapterSix #KenyaOnRecord",
       "checks": [
         {
-          "test": "Public record",
-          "result": "pass",
-          "note": "Facing political realignments as reported in Daily Nation"
+          "test": "Public accountability",
+          "result": "fail",
+          "note": "Faced severe corruption charges over irregular county procurement."
         },
         {
-          "test": "Development delivery",
-          "result": "pass",
-          "note": "Evaluated on past promises and political alignment"
+          "test": "Service delivery",
+          "result": "fail",
+          "note": "Impeached by the Senate over financial misconduct allegations."
         },
         {
-          "test": "Constitutional adherence",
-          "result": "pass",
-          "note": "Meeting Chapter Six tests on public leadership standards"
+          "test": "Integrity and conduct",
+          "result": "fail",
+          "note": "Removed from office for gross violation of the law."
         }
       ],
-      "person_role": "Former Deputy President",
       "bg": "usiku",
       "publish_at": "2026-10-21T18:30:00+03:00",
       "side": "opposition",
       "tone": "criticism",
-      "impact": "Shifts political alliances and local governance priorities in the region.",
-      "where": "Nairobi",
-      "when": "18 Oct 2026",
+      "impact": "Public integrity rules determine who manages county funds and resources.",
+      "where": "Kiambu",
+      "when": "21 Oct 2026",
+      "researched": true,
       "source_links": [
         {
           "outlet": "Daily Nation",
-          "title": "Fires await Rigathi Gachagua on return from US trip",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQTnVEczkzSDdqSkNwQ0NjOFFwU3dkeFd4MXZfRmdBQ0tpaDRjOTBrQm10TmkzSUFVbnQ0NjMxNlZEQ3RLLXlVbWR3eDZWcHZmc3pCUmtUNzl5MnVlLWFpQ2hsTVRSdm5OSmZXZVotZ2V2WGdDZEJmTjVGQ1VkVWVqekNwRGt3X3J5bUhuTW8wa29FRGFERnlsLWlqVzNycWpmbmRF?oc=5",
+          "title": "How Ex-Governor Waititu fell from grace",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZTV5ZEFIMVFLc3d6YUNxQ2xZalc3N0EzM2hEUzZ6clhhWC1oVVJZdEk5Rk9tWTNrYUlsR3daWHVjRmdrV2RaeTdUWDMzRXQ5RVNrLWg4MUYyU3o2ZDZ1Q3NGN1dDTDAtbkd3Sl9RSVdPc05DM044UHlmcUZJZEw1YlpXa0hUU09kTGdvTGNIcDBXLU5iX3E2V2s5cXZ4WThPdFFUVnJiV1BHRXNhVV9BeXZB?oc=5",
           "published": "2026-10-18"
         },
         {
-          "outlet": "The Standard",
-          "title": "Running mate headache: Inside alleged plot to split Mt Kenya, puncture Gachagua",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZTV5ZEFIMVFLc3d6YUNxQ2xZalc3N0EzM2hEUzZ6clhhWC1oVVJZdEk5Rk9tWTNrYUlsR3daWHVjRmdrV2RaeTdUWDMzRXQ5RVNrLWg4MUYyU3o2ZDZ1Q3NGN1dDTDAtbkd3Sl9RSVdPc05DM044UHlmcUZJZEw1YlpXa0hUU09kTGdvTGNIcDBXLU5iX3E2V2s5cXZ4WThPdFFUVnJiV1BHRXNhVV9BeXZB?oc=5",
-          "published": "2026-10-17"
+          "outlet": "Daily Nation",
+          "title": "How Ex-Governor Waititu fell from grace",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQ2dZMU5zOEM4eVZoRGlwUTcxSmREa0QyaDdyR2tKejROOHRYQjJrTWppM1pNM25yejRHRjd2X2UySlZ5Q01PcFg5X1dsNFdfR0pnSHJIZXV5bFRwN1dqa3czWmY1QUF6NTc1UVFVRjgxOGlFekFFdC1aTGxoSnh3RS1DQ2JSU1ZhRjFjazRxWnVHcW9n?oc=5",
+          "published": "2026-10-18"
         }
       ],
       "status": "needs_human",
       "guard": {
         "errors": [
-          "withdrawn on inspection: grades Rigathi Gachagua 'pass' three times with no record behind it; the Chapter Six Test is now researched by hand only"
+          "the linked report is not about this story (How Ex-Governor Waititu fell from grace): use the headline id of the report this post is really based on"
         ],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
-      "critic": {
-        "hook": 8,
-        "send": 8,
-        "clarity": 8,
-        "fresh": 8,
-        "voice": 8,
-        "craft": 8,
-        "picture": 8,
-        "hold": 8,
-        "demand": 8,
-        "action": 7,
-        "fair": 8,
-        "impact": 7,
-        "avg": 7.8,
-        "note": "Action needs a concrete, lawful demand to a named office instead of reading reports."
-      },
-      "drafted_at": "2026-10-18T08:02:41.834587+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-scorecard-r9-photo.jpg",
-      "photo_credit": "Photo: Capital FM",
-      "photo_kind": "posted",
-      "photo_outlet": "Capital FM",
-      "photo_source": "https://capitalfm.africa/gachagua-accuses-ruto-of-using-fuel-price-hikes-to-fund-2027-campaigns/",
-      "voiced": "Kenyan accent",
-      "reel": true,
-      "tg_msg": 321
+      "drafted_at": "2026-10-18T08:50:09.042976+03:00"
     },
     {
       "id": "2026-w43-d4-glasspoll-r8",
@@ -309,7 +285,7 @@
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZldsd1liT1p0dEptSUtqd2JZZHFoaXoyZFFLeGlyZjBKLURwbEtfZ3BkN1hUMXV6TnZEOVhoT2FUOTZlWWRCR296UzVFOXFKVVR5Y3FLNlNobndHTjAwVlF2NUJlMWVkbGpkN08yTzhxQnNqMGNGR3JjR0prN042ZnkwQ0c3QzdkdDV2dmd3ajBKemxMTzhqM0VQNXZpVEFrb3NKLTNyWDFmY21BSmV2ejc0RHg0OFE?oc=5",
         "published": "2026-10-16"
       },
-      "status": "drafted",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": []
@@ -331,7 +307,17 @@
         "note": "Action requires a concrete step against disinformation rather than a general reminder."
       },
       "drafted_at": "2026-10-18T08:02:41.834597+03:00",
-      "reel": true
+      "reel": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-straight-r10-photo.jpg",
+      "photo_credit": "Photo: Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia C / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Samsung_smartphone_battery,_Hillegersberg,_Rotterdam_(2022)_07.jpg",
+      "video_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/videos/2026-w43-d5-straight-r10-video.mp4",
+      "video_credit": "Footage: Natures_Embrace / Pixabay",
+      "video_source": "https://pixabay.com/videos/id-202987/",
+      "voiced": "Kenyan accent",
+      "tg_msg": 326
     },
     {
       "id": "2026-w43-d6-kenya-r9",
@@ -339,23 +325,25 @@
       "lane": "hustle",
       "series": "Built in Kenya",
       "place": "Mombasa to Nairobi",
-      "line": "The Madaraka Express connects our capital and coastal cities.",
+      "line": "The Madaraka Express runs *472 kilometres* from Mombasa to Nairobi.",
       "fact": "The standard gauge railway runs 472 kilometres from Mombasa to Nairobi; the Madaraka Express began on 31 May 2017.",
       "source": "https://www.citizen.digital/news/uhuru-launches-madaraka-express-sgr-amid-death-warning-to-vandals-167127",
-      "message": "The Madaraka Express links Mombasa and Nairobi across 472 kilometres.",
-      "action": "Book your SGR trip early via the Kenya Railways portal.",
+      "message": "The Madaraka Express links Mombasa and Nairobi over 472 kilometres since 2017.",
+      "action": "Book your ticket on the Kenya Railways website before traveling.",
       "beats": [
-        "The Madaraka Express connects Mombasa to Nairobi.",
-        "The railway line spans four hundred and seventy-two kilometres.",
-        "It has served passengers since May 2017.",
-        "Built in Kenya for efficient travel."
+        "The railway connects Mombasa and Nairobi over *472* kilometres.",
+        "The Madaraka Express began operations on 31 May 2017.",
+        "It remains a key link for passenger and freight transport."
       ],
-      "photo_query": "Madaraka Express SGR train Kenya",
-      "caption": "The Madaraka Express has linked Mombasa and Nairobi for years. Reliable transport built in Kenya.\n\nTag a friend you are travelling with to the Coast.\n\n#BuiltInKenya #KenyaOnRecord",
+      "photo_query": "Madaraka Express SGR train Mombasa Nairobi Kenya",
+      "caption": "Built in Kenya: The Madaraka Express links Mombasa and Nairobi across 472 kilometres. Opened on 31 May 2017.\n\nWhat it means for you: Fast travel and goods transport between the coast and the capital.\n\n#BuiltInKenya #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-24T11:00:00+03:00",
       "side": "government",
       "tone": "credit",
+      "impact": "Fast travel and goods transport between the coast and the capital.",
+      "where": "National",
+      "when": "31 May 2017",
       "source_links": [
         {
           "outlet": "Citizen Digital",
@@ -374,32 +362,24 @@
         "fact": "The standard gauge railway runs 472 kilometres from Mombasa to Nairobi; the Madaraka Express began on 31 May 2017.",
         "source": "https://www.citizen.digital/news/uhuru-launches-madaraka-express-sgr-amid-death-warning-to-vandals-167127",
         "outlet": "Citizen Digital",
-        "photo_query": "Madaraka Express SGR train Kenya"
+        "photo_query": "Madaraka Express SGR train Mombasa Nairobi Kenya"
       },
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "Kenya showcase: `photo_query` must name the same place as `place`"
-        ],
-        "warnings": []
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
       },
-      "critic": {
-        "hook": 8,
-        "send": 9,
-        "clarity": 9,
-        "fresh": 8,
-        "voice": 9,
-        "craft": 8,
-        "picture": 9,
-        "hold": 8,
-        "demand": 7,
-        "action": 8,
-        "fair": 9,
-        "impact": 8,
-        "avg": 8.3,
-        "note": "Solid showcase post with clear facts and strong visual cue for travel."
-      },
-      "drafted_at": "2026-10-18T08:02:41.834600+03:00"
+      "drafted_at": "2026-10-18T08:50:09.042984+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d6-kenya-r9-photo.jpg",
+      "photo_credit": "Photo: Erasmus Kamugisha / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_Railways_DF8B_locomotive_on_the_new_SGR_line,_06-06-2017.jpg",
+      "voiced": "Kenyan accent",
+      "reel": true,
+      "tg_msg": 327
     },
     {
       "id": "2026-w43-d7-glasspoll-r9",
@@ -468,10 +448,10 @@
     }
   ],
   "scripts": {
-    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni wako, na leo tunaangazia yale mazito yaliyojiri wiki hii.\n\nTunaanza na uwanja wa siasa, ambapo Rigathi Gachagua anakabiliwa na majaribio mazito ya kisiasa baada ya kurejea nchini kutoka Marekani. Hali hii inaendelea kuunda sura mpya ya siasa za nchi.\n\nKwenye mfuko wa mwananchi, hali si shwari. EPRA imetangaza bei mpya ya juu ya mafuta ya super petrol jijini Nairobi kuwa Sh226.96 kwa lita. Huu ni mzigo mwingine kwa Wakenya wanaojikaza kimaisha.\n\nKwenye ulimwengu wa mitandao, tahadhari! Picha inayozagaa ikidai kuonyesha Seneta Edwin Sifuna akiwa amelala bungeni imethibitishwa kuwa ya uongo na imechongwa. Tusikubali kupotoshwa na propaganda za mtandaoni.\n\nHata hivyo, tukitazama maendeleo yetu, reli ya Madaraka Express inaendelea kuleta fahari kwa kuunganisha Mombasa na Nairobi kwa umbali wa kilomita 472, ikiendelea kurahisisha usafiri kwa maelfu ya wananchi kila siku.\n\n***\n\n*Kwa kifupi:* Hapa kwetu Kenya on Record wiki hii: Rigathi Gachagua anakabiliwa na siasa ngumu baada ya kurejea kutoka Marekani. EPRA imeweka bei ya petroli Nairobi kuwa Sh226.96 kwa lita. Picha inayomwonyesha Seneta Sifuna amelala ni ya kuchongwa, na treni ya Madaraka Express inaendelea kuunganisha Mombasa na Nairobi kwa kilomita 472.",
-    "voice_note": "Wadau, mambo vipi? Hapa kuna dondoo za Kenya on Record za wiki hii.\n\nKwanza, Rigathi Gachagua amerudi kutoka Marekani na anakabiliwa na mtihani mzito wa kisiasa. Pili, mfukoni mambo ni magumu—EPRA imeweka bei ya petroli Nairobi kuwa Sh226.96 kwa lita!\n\nKwenye mitandao, msikubali picha inayodai Seneta Edwin Sifuna amelala bungeni; ni ya kuchongwa. Lakini upande mzuri, treni ya Madaraka Express bado inaunganisha Mombasa na Nairobi kwa kilomita 472 vizuri sana.\n\nKaa chonjo, na ufuatilie ukweli daima.",
-    "sms": "Usiibiwe na habari za uongo! Picha ya Sifuna akiwa amelala ni doctored. EPRA imeweka petroli Nairobi Sh226.96. Jilinde, thibitisha ukweli kabla ya kusambaza.",
-    "reels": "Mambo ni mengi wiki hii kwenye Kenya on Record! Rigathi Gachagua amerudi kutoka Marekani na anakabiliwa na siasa nzito. Wakati huo huo, EPRA imetupiga na bei mpya—super petrol Nairobi sasa ni Sh226.96 kwa lita! Kwenye mitandao, wengi wamesambaza picha wakidai Seneta Edwin Sifuna amelala bungeni; wacha tukudanganye, hiyo picha imechongwa! Lakini angalau Madaraka Express bado inaunganisha Mombasa na Nairobi kwa kilomita 472 bila njiani kukwama. Fuatilia ukweli na uwe mjanja."
+    "radio": "Mambo vipi, mwananchi, na karibu kwa Kenya on Record. Mimi ni sauti yako ya uwajibikaji.\n\nWiki hii, tunaangazia mambo mawili muhimu sana.\n\nKwanza, Nairobi. Tunapima rekodi ya Gavana Johnson Sakaja kupitia kipimo cha Sura ya Sita ya Katiba yetu—ile inayohusu uadilifu na uongozi bora. Je, huduma za jiji zimetimia, ama bado tunapiga makasia katika bahari ya shida? Waziri mkuu wa jiji anastahili kujibu maswali magumu kuhusu usimamizi wa rasilimali za umma.\n\nPili, tunakumbuka miaka tangu SGR, ama Madaraka Express, ianze kuvuma kutoka Mombasa hadi Nairobi kupitia kilomita 472 zake tangu 2017. Ni usafiri uliorahisisha maisha, lakini swali kuu ni hili: Je, pesa zilizowekezwa hapo zinaleta faida inayolingana na deni tulilobeba kama taifa?\n\nTukumbuke, uwajibikaji sio hisani, ni haki yetu.\n\n[KISWAHILI SUMMARY]\nKwa kifupi wiki hii: Tunaangazia uadilifu wa Gavana Sakaja kulingana na Sura ya Sita ya Katiba, na pia tunapitia miaka tangu kuzinduliwa kwa treni ya SGR inayounganisha Mombasa na Nairobi tangu 2017. Piga kura kwa akili, dai haki yako.",
+    "voice_note": "Sasa, mwananchi wa ukweli. Kwenye Kenya on Record wiki hii, tunaangazia mambo mawili mazito. Kwanza, tunapima uadilifu wa Gavana Johnson Sakaja wa Nairobi kupitia lenzi ya Sura ya Sita. Je, anafanya kulingana na matarajio ya wananchi? Pili, tunapitia safari ya Madaraka Express kutoka Mombasa hadi Nairobi tangu 2017—kilomita 472 za reli, lakini je, deni linasawazishwa na maendeleo? Sikiliza vizuri, angalia rekodi, na usikubali kudanganywa.",
+    "sms": "USIIBIWE: Kiongozi bora hupima uwezo wake kwa kazi, si maneno. Angalia rekodi ya viongozi wetu kabla ya kuchagua. Kenya on Record.",
+    "reels": "[Visual: Fast cuts of Nairobi traffic, Governor Sakaja, and SGR train moving across the landscape]\n\n[Audio - Steady, serious tone]\nNairobi inateseka, na SGR inatupa deni. Wiki hii kwenye Kenya on Record, tunapima uadilifu wa Gavana Johnson Sakaja kupitia Sura ya Sita ya Katiba.\n\nWakati huohuo, tunaangazia Madaraka Express—kilomita 472 kati ya Mombasa na Nairobi tangu 2017. Je, reli hii imetufaidi kweli, ama ni mzigo mwingine kwa mlipa kodi?\n\nAngalia rekodi. Dai uwajibikaji. Kenya on Record."
   },
   "spend_usd": 0.0,
   "revision": 8
