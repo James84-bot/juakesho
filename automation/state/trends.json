@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-10-18T08:20:59.005876+00:00",
+  "fetched": "2026-10-18T09:55:31.079852+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "real madrid vs sevilla",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Real Madrid vs Sevilla: Spanish La Liga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cw0k0xyeee56t",
+          "source": "BBC"
+        },
+        {
+          "title": "Who will be the victim? Substitutes' uprising leaves Mourinho facing tough decisions against Sevilla",
+          "url": "https://www.goal.com/en/news/who-will-be-the-victim-substitutes-uprising-leaves-mourinho-facing-tough-decisions-against-sevilla/blt5157b12a06d0c30e",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Final training session before the match against Sevilla",
+          "url": "https://www.realmadrid.com/en-US/news/football/first-team/trainings/el-equipo-se-esta-entrenando-17-10-2026",
+          "source": "Real Madrid CF | Web Oficial"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "leeds vs man utd",
@@ -12,8 +34,8 @@
           "source": "Manchester United"
         },
         {
-          "title": "Leeds United vs Man Utd: How to watch, TV channel, live stream, NOW TV, team news and score prediction",
-          "url": "https://www.skysports.com/football/news/13599879/leeds-united-vs-man-utd-how-to-watch-tv-channel-live-stream-now-tv-team-news-and-score-prediction",
+          "title": "Premier League predictions & Jones Knows' best bets: Leeds vs Manchester United and more",
+          "url": "https://www.skysports.com/football/news/13598732/premier-league-predictions-and-jones-knows-best-bets-leeds-vs-manchester-united-and-more",
           "source": "Sky Sports"
         },
         {
@@ -22,29 +44,6 @@
           "source": "BBC"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "george natembeya",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Natembeya explains why he is at loggerheads with Ruto",
-          "url": "https://www.the-star.co.ke/news/2026-10-18-natembeya-why-im-clashing-with-ruto",
-          "source": "www.the-star.co.ke"
-        },
-        {
-          "title": "Kalonzo condemns alleged plot to arrest Natembeya, slams Ruto over ‘leaders will face accidents’ remark",
-          "url": "https://citizen.digital/article/kalonzo-condemns-alleged-plot-to-arrest-natembeya-slams-ruto-over-leaders-will-face-accidents-remark-n392228",
-          "source": "Citizen Digital"
-        },
-        {
-          "title": "Natembeya vows to confront Ruto over Trans Nzoia market",
-          "url": "https://peopledaily.digital/inside-politics/natembeya-vows-to-confront-ruto-over-trans-nzoia-market",
-          "source": "People Daily"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -62,46 +61,50 @@
           "source": "RMC Sport"
         },
         {
-          "title": "Descamps remplace Greif, l'OL a tranché",
-          "url": "https://www.foot01.com/ol/descamps-remplace-greif-lol-a-tranche",
-          "source": "Foot01"
+          "title": "Tout sur Lyon - Nice (J7 - 2026/27)",
+          "url": "https://www.ogcnice.com/fr/article/131001/tout-sur-lyon-nice-j7-2026-27.html",
+          "source": "OGC Nice"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "mls",
+      "title": "fiorentina vs como",
       "traffic": "100+",
       "news": [
         {
-          "title": "Seattle Sounders vs Montréal: Major League Soccer stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/ck4g12y00el2t",
-          "source": "BBC"
+          "title": "@@&[𝐋𝐈𝐕𝐄-𝐓𝐕!!!] Fiorentina v Como Live ONLINE free Soccer Match 18 October 2026 Right Now",
+          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3h2aWRlb2luZG8uZ2l0aHViLmlvL2xld3JhdmlkZW8vZmlsZTE0LnhtbCIvPjwva3JwYW5vPg==&id=fiorentina-v-como-liv-cast-en-us-669-mrxjh02929",
+          "source": "Universidad de Córdoba (UCO)"
         },
         {
-          "title": "Gomez scores for Sounders in 1-1 tie with Montreal",
-          "url": "https://www.union-bulletin.com/sports/pro_sports/sounders_fc/gomez-scores-for-sounders-in-1-1-tie-with-montreal/article_f6bc52e3-739c-54c7-a429-8b3b90d6d58f.html",
-          "source": "Union-Bulletin"
+          "title": "Fiorentina y Como 1907 se miden por la fecha 7",
+          "url": "https://anecdotarios.com/2026/10/17/fiorentina-vs-como-1907-previa-horario-y-como-llegan-para-la-fecha-7/",
+          "source": "Anecdotarios"
         },
         {
-          "title": "Why Seattle Look Heavy Favorites Against Montreal in Montreal Vs Seattle Sounders",
-          "url": "https://twaslnews1.twaslnews.com/6151687/",
-          "source": "شبكة تواصل الإخبارية"
+          "title": "Fiorentina-Como EN DIRECTO: goles y jugadas destacadas, ficha del partido",
+          "url": "https://www.goal.com/es/listados/fiorentina-como-en-directo-goles-y-jugadas-destacadas-ficha-del-partido/blte712fb89d44bdaa5",
+          "source": "Goal.com"
         }
       ]
     }
   ],
   "dropped": [
     {
+      "title": "udinese vs lecce",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "ac milan vs atalanta",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "juventus vs lazio",
-      "why": "unsafe: 'Betting'"
+      "title": "george natembeya",
+      "why": "unsafe: 'war'"
     },
     {
-      "title": "brighton vs crystal palace",
+      "title": "juventus vs lazio",
       "why": "unsafe: 'Bet'"
     },
     {
@@ -109,12 +112,8 @@
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "bournemouth vs sunderland",
+      "title": "brighton vs crystal palace",
       "why": "unsafe: 'Bet'"
-    },
-    {
-      "title": "atlanta united vs inter miami",
-      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
