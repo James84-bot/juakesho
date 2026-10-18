@@ -1,19 +1,743 @@
 {
- "fetched": "2026-10-18T02:51:51.407725+00:00",
- "items": [],
- "series": [],
- "errors": {
-  "Capital FM News": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Capital FM Politics": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Google News: Kenya politics": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Google News: Parliament": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Google News: money": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Google News: accountability": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Google News: rights": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Google News: 2027": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Google News: counties": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Google News: prices": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Google News: fact-checks": "<urlopen error Tunnel connection failed: 403 Forbidden>",
-  "Google News: scams": "<urlopen error Tunnel connection failed: 403 Forbidden>"
- }
+ "fetched": "2026-10-18T02:56:07.942369+00:00",
+ "items": [
+  {
+   "title": "EACC seeks UNODC support to boost cross-border corruption investigations",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZVVpVVd3RzE2dklMd0NDZVhfRXRYVXBqSTBMOTlWS1NBTFdvZW5oUTA5ZHhXdk1OVnc5T0t6YWprLTFScHNzRDFGemgtVldfWlBFY1o4akM5ZHdfU3Vpcks5SnBnSUJLREV5aFBabjZLTmNoSlNoNGpISExtdWVESmZOckFmdkZicmxrQmVfc29SQkh3eHhaTGVLUHZpdWxvMHpiY095ckxjTXhlQjBDdlp3?oc=5",
+   "outlet": "Citizen Digital",
+   "published": "2026-10-17T23:10:32+00:00",
+   "topic": "accountability"
+  },
+  {
+   "title": "Inside the battle for Ruto's running mate in Mt Kenya",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZTV5ZEFIMVFLc3d6YUNxQ2xZalc3N0EzM2hEUzZ6clhhWC1oVVJZdEk5Rk9tWTNrYUlsR3daWHVjRmdrV2RaeTdUWDMzRXQ5RVNrLWg4MUYyU3o2ZDZ1Q3NGN1dDTDAtbkd3Sl9RSVdPc05DM044UHlmcUZJZEw1YlpXa0hUU09kTGdvTGNIcDBXLU5iX3E2V2s5cXZ4WThPdFFUVnJiV1BHRXNhVV9BeXZB?oc=5",
+   "outlet": "The Standard",
+   "published": "2026-10-17T21:00:00+00:00",
+   "topic": "politics"
+  },
+  {
+   "title": "Junet skips Raila memorial over Gachagua’s inclusion on guest list",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPYXdDQ2o3ODN2VEotUGhJQ3EtSXZNaEJ1UzVFY0Q3b1B5dHZwU3pEd2JfMDBzbjd4RmhucDN5NV8tUjlFQXFKTFRNeUd6enZrNVJOWW8yRjhyZUxqZ2s5MU5UVTlIUGxyYjFvX0YtMVlRRGtrV21IYkhWN0NfTW1Va2tQS2JmcmF5NGxYNlpSNFQ4MGtLU1I4dGdJUkRXX3NhSTZaVnZ2X2lSWFdNd3BF?oc=5",
+   "outlet": "Citizen Digital",
+   "published": "2026-10-17T20:32:16+00:00",
+   "topic": "accountability"
+  },
+  {
+   "title": "JKIA cleaner arrested carrying bags containing 52 phones, three drones",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdzhvaktfTElTZXhlSW1nMGVUeENoSUdrd3ZUSWJDN3FhS0pJUG96eDVjMTRyUFhOUzhQbjIxUTZTbzRUcVBvRmJNdm9lamFmYXVqZWRrTWloS0lmbC1Iei14VUc1NUVfaFdOZTZvUno4UzBVQzRPVzQ4T0lFLWNxTUxadzRoQUpJRzltUlpnS2QtNDhVOG40bURQQndkdnJ5VmpkY043R1c0eERkUHc?oc=5",
+   "outlet": "Citizen Digital",
+   "published": "2026-10-17T17:51:48+00:00",
+   "topic": "accountability"
+  },
+  {
+   "title": "Raila Odinga's literary legacy renews call for more Kenyan political memoirs",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcWRoVkhVeVNQLUF1bFhEOU5lSjk5dVhMNXl0andWNjZsWDFzT2xnR1BCWGowWkxSaHdPMmlDa0FjVXdyOUh1Smg1ZXJ2eUFIbE9VV0RwOTE1enRFMTZXejZReFdYa1puX0dDQkZpTDA5UUVsdVB3YmFtZVhKUDdPcW0xWkFkbGJvTi1WcWM5RHN5RUpPc1JoeXV2Y2tnU2JmcmNKcTBMeVNRWFpEVDJtOVEtb1MxbVE?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-17T17:49:25+00:00",
+   "topic": "politics"
+  },
+  {
+   "title": "Ruto takes re-election pitch to Eldoret home turf, defends UDA-ODM pact",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTElZVEVjak5YY3FZbnQzRktEUW9Vb2tFdTZGMG1MYVBpbXlJYmg5SDJkNWY2Wkh6UFRkb0VJZjRiNnpwSkp4SVFRTGtUdkVwM0JjRG1JekRiQ0Q1b3p1dlFCZENHenFrWlZkZlFzUklTNThJV2ROUWJ0a2Y3Q2RrUUJMM0d4dEVWZnFYbW13YXVmZklYc2dBSEdibHNHWE4yOFg5VHRoX3kwNVZiN21iektjZThWR1ozWnFVNQ?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-17T16:09:18+00:00",
+   "topic": "politics"
+  },
+  {
+   "title": "Gor Mahia edge stubborn APS Bomet to maintain perfect start",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWGY3djNqQnpQbWVlUFlxYWR5XzBkUk9oVGZldlR4bTV4enlpRlBmQ1RxdmtrMkFkUzBaMnk1MDQxMVU4RF9yZWFWaEJwdWN3bjN2Z09yN3JwOFhQZi16emFpbXB3RWRwV0FaUVFwM2YwSFZuVU9kWWN5SHUyVTF6eHZ4bzlnOHUwTmVXWFpuRHVFWUw0Y19XUnlrSklaZklFa1ZjcWJMOXM0OEFTTzV1ZkdHTFV4Q2tOU1Z3dXI5U1NaNm1LeURIUVNR0gHKAUFVX3lxTE9YZjd2M2pCelBtZWVQWXFhZHlfMGRST2hUZmV2VHhtNXh6eWlGUGZDVHF2a2syQWRTMFoyeTUwNDExVThEX3JlYVZoQnB1Y3duM3ZnT3I3cnA4WFBmLXp6YWltcHdFZHBXQVpRUXAzZjBIVm5VT2RZY3lIdTJVMXp4dnhvOWc4dTBOZVdYWm5EdUVZTDRjX1dSeWtKSVpmSUVrVmNxYkw5czQ4QVNPNXVmR0dMVXhDa05TVnd1cjlTU1o2bUt5REhRU1E?oc=5",
+   "outlet": "The Standard",
+   "published": "2026-10-17T15:52:57+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "When voter turns extortionist: Accounts from political aspirants",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOQ0w1UTk0VE1zUmpldXVZTlJGUGxzU3JnWkhFU2NlbVJkVnZaNkh1RzBBV3dyY2tnajg0cnV1MXZ3VTRhLVc0ZTdNUExRWEYyZFNpMDZUWWlXQkhxck9hRDh4ZzFVdmV6MVoyTXZKMnBUR2hWSTVOd2pOSU13cXA3ZVRjeXdTT1VWTDFleldqM1Fzb2RNdnltc3RNaVk5X3JkR2NXMXFmY1pvUWw1a09NNGRJMA?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-17T15:36:29+00:00",
+   "topic": "politics"
+  },
+  {
+   "title": "Kenyan shilling shrugs off risks to sustain two-year stability around Sh129",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNejVQSVEtNk8wMW0tbUQwbUVTbG1mTGlQSVU0SXpwdkhyc0s3SnNPWVh2djNydTR0QVNEV1NmdjlmVjRxUVBaZU9qNkFrVExES201TGZIRU5UYlVyYlZYRENmZm9wUmM3N2h0MDNrTlVmUzYxYW1lTS1pT3NzTnNLUzg0dUF4djlmTHE1TmlkUU9sbklKZVdVeGdYclNONGV1QUNBZ3M0Tk5LSVdZWEwwelpmNnRFV3JsbWg3UktKcDdLTHpF?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-17T15:35:01+00:00",
+   "topic": "money"
+  },
+  {
+   "title": "Macky Sall withdraws from UN Secretary-General race after Sixth straw poll",
+   "link": "https://capitalfm.africa/macky-sall-withdraws-from-un-secretary-general-race-after-sixth-straw-poll/",
+   "outlet": "Capital FM News",
+   "published": "2026-10-17T15:34:46+00:00",
+   "topic": "news"
+  },
+  {
+   "title": "Ebola cases rise to 7 as 4 new cases detected in quarantine",
+   "link": "https://capitalfm.africa/ebola-cases-rise-to-seven-in-kenya-as-three-health-workers-test-positive/",
+   "outlet": "Capital FM News",
+   "published": "2026-10-17T14:51:11+00:00",
+   "topic": "news"
+  },
+  {
+   "title": "Luxury vehicle stolen in UK recovered in Nairobi after DCI launched nationwide vehicle theft operation",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPNkwzUkVXei1iMTdFS3R6QW9WWkVpVjM2TThwZHY4RFRXX2hsendFSG1USlpqa3NfNHRhNEtTYnFiUXQ5LVN5enFtcGZpYVhjdEp3S1ptc1FOczROenFTOVZYOUV3SUpmeEhKaEZ3Tm5tMjFNSmFUb1R6YjJoX0VJY1o3bndNSGd2c0VoSlY4V1hCUk8wZ2UxU21OaVM3ZllaRmxUTy1uN2VUWW1VWTFGTEg3MXpPZm91ZTRwbUQyanUwb0hlallXREI1aDRENjFYWmFHUm1nZEZzdkJLU25KVGVoOA?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-17T14:26:23+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "African blocs push joint funding, local production of medical supplies",
+   "link": "https://capitalfm.africa/african-blocs-push-joint-funding-local-production-of-medical-supplies/",
+   "outlet": "Capital FM News",
+   "published": "2026-10-17T14:23:56+00:00",
+   "topic": "news"
+  },
+  {
+   "title": "Arrests, phone confiscations and denied medication: Why police must pay Sh2.2m in Mombasa chemical probe",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOb3RwT094aHQzN0dkRkoyYzF3LUFLMldHc3V1V2QxRVd1ZFg0N2dCRlVaRWY0QmprdERORHozNVItOXdCbFJZLXVvSkNOQVZ6bVV1RlFWa1FGVmJHRTg4WW1fNDFKZDdRUW9VcVpOWlBibDdnLWxNUTdzajk5LTRudjF6N3kyTS1vQzVTTmFfbUpvRmlOTE44Vkx4WW9MSkx3em5tNGFTWjg?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-17T14:00:00+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Court blocks 24bn Nakuru County budget over Sh27.5m disability funds query",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQMDNJRHlQWFJleXJvaHRDRFg2S212b0QyMGVPSWNFX3ZDbzc3OGl4VkJ0NS1fUS1VcUpwMm1RTGliWVBNQU1uNE15LTNPaXc3X2M3cktBa0tBYm9UbHZrdHVwb1FBUGFJYXV2WGtfUEtGMXFaaHdnLUJMd19xN2hxNGhHS2VLQzRzaDdrMUVMYVdsOFpxYThfU0dJSURuMklnbFZhQUhYZTRxRUlqSWw1YjNZN2RDNXd5QVlkamdEd2pjNXpU?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-17T13:58:35+00:00",
+   "topic": "money"
+  },
+  {
+   "title": "All workers accounted for after former Club Avenida demolition injures four",
+   "link": "https://capitalfm.africa/all-workers-accounted-for-after-former-club-avenida-demolition-injures-four/",
+   "outlet": "Capital FM News",
+   "published": "2026-10-17T13:54:11+00:00",
+   "topic": "news"
+  },
+  {
+   "title": "Detectives recover Land Rover Discovery stolen in UK",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQaTRoV2pWeng4TF9pSjkzRGVMekVtOERNTGdDc0ctaUV0Sk0xVHktbHdrdXJSYnctT2FjX1pUREZ0akI0VTFBM3ZYRnJQQS1wLV9TcDd4aVNSWVlGRlhKNVllRkRHdzFqUWlfeUxXV1lxZ2VIY21OYjYxMXlrMUEyOA?oc=5",
+   "outlet": "KBC Digital",
+   "published": "2026-10-17T13:53:25+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "DCI, INTERPOL Trace UK Vehicle Theft Network to Kenya",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPd1FMcHY3SjBJeEpOWG51akVLZDN3OW53NzMxbmU1YVVMdGJESkJ3QUNoSHFvZVlvZzRCOTNpeHdDbDVxOWh6VW9nYmFkUHJMbFlJWUN0cDY1WXctZl9QWUN4RjlDV2xOQVE2R3pMUVEtQnJJem0wN0lyazlZTkFzZWFxMmRtZTJxRzNOX0Fzb2gwcWNS?oc=5",
+   "outlet": "Kenyans.co.ke",
+   "published": "2026-10-17T13:52:31+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "DCI recovers UK-stolen luxury Land Rover in nationwide crackdown in Kenya",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNb0x3andJUmZ6VHVaX2FDeHZEUmFZUm0tdzFHZWVFQ2VMNXZsa053WllyT3ExLVFUOS1lU0R5ZEtMYm45MnFLWWJnd1FVV3Z2bGxZNUs1MjBVQjRqeFhMejNMV08xYlNfdm5pY2hvTUdrV2xlVUtWR3k5VF90WUxyd1ZuX3lKams5VTc4eHBVOWdfeXlvSHdad0xOdFR0bVg2Q05RNlMzYVRaUQ?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-17T13:03:26+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Pope Leo to leave hospital Saturday, lead Sunday Angelus",
+   "link": "https://capitalfm.africa/pope-leo-to-leave-hospital-saturday-lead-sunday-angelus/",
+   "outlet": "Capital FM News",
+   "published": "2026-10-17T11:42:58+00:00",
+   "topic": "news"
+  },
+  {
+   "title": "Govt promises crackdown on criminals disrupting traders",
+   "link": "https://capitalfm.africa/govt-promises-crackdown-on-criminals-disrupting-traders/",
+   "outlet": "Capital FM News",
+   "published": "2026-10-17T10:53:37+00:00",
+   "topic": "news"
+  },
+  {
+   "title": "IMF cuts Kenya’s 2026 growth outlook to 4.5 per cent amid global headwinds",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQaTFpSnJSbUxlMUZMbTJCT083WGowdU9ZSHMtYm5IVjduQzRaeDgzUXRkY1BFTnMxM3pUOEtSbll0UFZQRlg4Y045RkZEa3JqaWJmTHlJMll1UjByZ01ManpVejdfNW9fdTc3QjQxMTdsV3N1ZDBhNTVMS1R6YkxDOFpsWEdHcXpXdHJaNWlvdmFyTVZyRE5idmk5NGNLdldkNHE3d2h1MG1uWGxRdU5sczlOSDBVZExn?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-17T10:32:57+00:00",
+   "topic": "elections"
+  },
+  {
+   "title": "Sh14.6m against Sh3.6bn target: Regulatory gap blocks Hustler Fund pension billions",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPR1JyQkt5TlZGTkRyUExRcVo0eUo4bV92b2o3R2dwR1BodkZoZ0UyREJNOHZqazBkeGlGd2EwN2xERnd1dHVGRVE4VGM2TkFocDFpeTh5WkVveFN3ZV9OT2t3UWFsVUJib3dsd3Z2Y2dWN1JTOWEycDdKeF9XSklSZi1QblY4ME94SUpBel9xcDhMMjdjdDZyU3R6Tjh3eHRx?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-17T10:29:56+00:00",
+   "topic": "accountability"
+  },
+  {
+   "title": "Police service reveals plan to prepare officers for 2027 elections after training with journalists",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNNXFFMzlGeW03MkhwMGdHWU9tcXdRZ1lCYUdzLXNRWFVJOHM1MXJhZDBrbTZiSnVhUlF4Q3ZGRGZfbmVPY0VZNjJMRmw0WnQxVzYxZXpSZVlPYkt5YjNuVy1sb3pjU3k4bDJ0cjM3LXhiUFR3WWp3UmhHZ0dSTGtkOG1WMXhjcWF0LUdqLWcxN0FYSWN5NjhxM0tDVDAtNFFEcHN5ZmZEc0ZWY19OTHlFdUl6TTNKZXBBMUxXMXZnSWcxVXhwa3Nxa3RBRQ?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-17T09:16:29+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Passed by MPs: Ruto signs 2 tax bills into law, State House issues statement",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbzhkc2ZtZkhpa08zaWRiU1FicnlEd25mMUd5UVlybHNnZ1JxMWpiNDlzSkRKVmhPbUh0al9yYVRWZnBLakUzcDc1WFFRRHNnZE91SUNQcVJfaE9fQWw5ZElsZDFsckVuc0gySU1VeExHX2JVVnJhaEtVR1hwWnlYUlhwdXpIWk9EZ0swREtPRzV4d1o5MV96d2pjRDdsU3MzOUdSSEJHQmpRbHhG?oc=5",
+   "outlet": "Tuko News",
+   "published": "2026-10-17T08:50:28+00:00",
+   "topic": "money"
+  },
+  {
+   "title": "ÑACADA Board validates community based rehabilitation guidelines in landmark move for demand reduction",
+   "link": "https://capitalfm.africa/nacada-board-validates-community-based-rehabilitation-guidelines-in-landmark-move-for-demand-reduction/",
+   "outlet": "Capital FM News",
+   "published": "2026-10-17T08:43:13+00:00",
+   "topic": "news"
+  },
+  {
+   "title": "Arati targets Onyonka, Woman Rep and ‘hostile’ MCAs ahead of 2027 polls",
+   "link": "https://capitalfm.africa/arati-targets-onyonka-woman-rep-and-hostile-mcas-ahead-of-2027-polls/",
+   "outlet": "Capital FM News",
+   "published": "2026-10-17T08:42:35+00:00",
+   "topic": "news"
+  },
+  {
+   "title": "Two men face life in jail over elephant tusks, leopard and cheetah skins",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQ2Zrd1BRVEdRX0hDRkpVVkF4Z1NXcU83c2wzWnlfT0R3c1E4cG9jSXlPdVNnVmFPaGFlVUlrcXFLTEJRbzg5Y1pRWW5lUVpWNUF2UmZZZlRaNHNzYlNJOXBuQk9nNjFXbFQyZElkZmNNUUJYZHhSMmhDeGM2a3hvYzlCV05xV1VGQ2h6d29zSDkxbjNmMFp2Z1JLU1VwOE4wQTg3eGJ0WXh1UTdkQ0lDNWdFNFFreXo3ZVE?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-17T07:50:43+00:00",
+   "topic": "accountability"
+  },
+  {
+   "title": "Edwin Sifuna’s Convoy Clashes With Ruto’s in Kitale, 2 Officers Injured as Police Issue Warning",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQ3NVamM1b0N2OXpvcEpfaWNLWmRtYXEzdUY1VlFZTUJEZWt0S0dQTmF2bjlEOTNJQmpSSXVSTHdYU3J3cjdqSlFlUUJ2STI2R2c1TW02SnIza1ZnQUVhOTBDQzVKOWhtRFJmZ29wSnhlelZRRHJDN1lqSC1iNmItVFlsY1gzSmQ1X1RfbU5keXdSNGZGN0FNRHNETVFjY0tYVzhoQXo0TVI0NXlaa1FKVmxEWDh4N3dFdjZNbzVn?oc=5",
+   "outlet": "Tuko News",
+   "published": "2026-10-17T07:28:44+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "ODM announces rally at Jacaranda Grounds as Nairobi political battle heats up",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNTXZlOGVkMWNwNVM5dWdMRXlMZEtsQmNjcTFZQUJJQ3RsdHZfQWh2cFNEdTRjdUczU1hjX3htd1U4bTlNX1NjVHV3SU5odUVQb3h0dzhobWpZMEdIN3pLdTZ2UmlWa19ScHNfWDNPT1JzZG5wNk9BaERkbHhGeV8xcVlqVkRVd2RvN3EzeXNYT2tVRDZrTUVVU3pKc2pnYVBiUXVOWmtnUTV6M1lPRHhV?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-17T06:51:44+00:00",
+   "topic": "counties"
+  },
+  {
+   "title": "Boniface Mwangi presses IEBC to declare diaspora voting expansion plan",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSzM4dzB1M3BacV9nak9DYjV0UG9PTzc2d1hDbURaYTdiTk5PMi1JbWJRaklnVHNMQ0t5c3FjdjJiS0ZzRnVJd0trbFRYTk45R3lLcWZMNFFkZE55U1RGNkszd3pFZjk4UnlGd29zYkZQbWZIVUQ3VWJfQ0FBVnZkTnRKSGNvMWc3SjNlMlVDcGcyTHRnRzFRbmhfX01mbGVuOWhOSkM0SXN5cW1QekpWQQ?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-17T06:40:59+00:00",
+   "topic": "elections"
+  },
+  {
+   "title": "Section of Govt Workers Targeted in Fresh Salary Probe",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSHN0UmJ2SVJoaWJXTGZKUENycHFlb1FlZVhHS2ZzeDZnZEZtU2RySmJzclF2Q1lBclAwNFI2Tk4zUFhKVjF6MmEwOVJXRUtqSjhQem1lT1MyMDlfWTZiYUJzRUtDYzhnWFVlckhOb2ZHRjI2X0h6bUhLaE9Bb3Y5ZnJCbzNjSElyMHNBbmJSM1pjRGVNSUE?oc=5",
+   "outlet": "Kenyans.co.ke",
+   "published": "2026-10-17T06:34:49+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Ndindi Nyoro fronts formula to take pump prices below Sh200 mark",
+   "link": "https://capitalfm.africa/ndindi-nyoro-fronts-formula-to-take-pump-prices-below-sh200-mark/",
+   "outlet": "Capital FM News",
+   "published": "2026-10-17T06:17:41+00:00",
+   "topic": "news"
+  },
+  {
+   "title": "EACC, UNODC step up cross-border fight against corruption",
+   "link": "https://capitalfm.africa/eacc-unodc-step-up-cross-border-fight-against-corruption/",
+   "outlet": "Capital FM News",
+   "published": "2026-10-17T06:10:41+00:00",
+   "topic": "news"
+  },
+  {
+   "title": "EACC, UNODC strengthen partnership in fight against corruption",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOQXAyNnNaVk5IWFFQUzhWSExnRnBYdkhCalJrb1BLZlpnRllXeWpwNzNzaFNLNUdMWnJ2MzRVRkJacHJjSy04VzJCbmNVVDZtSFpHd0R5WEVYNDZDVDFNY19Ca3ExeG9ReU5EWUtWai1QSDlQRVhzSzVuSWY1dnlQQXhtQkUwMTl6ekIyeg?oc=5",
+   "outlet": "KBC Digital",
+   "published": "2026-10-17T05:29:12+00:00",
+   "topic": "accountability"
+  },
+  {
+   "title": "EACC, UNODC seek stronger cooperation in corruption fight",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMVdzSjJnbGxpeHdNeW9MRTg3ektGM2QyUU93QzhleFhONFlHNFV0MGcyb05IcGRHdV8tY2F3TUVlX2F4d24wZ0hscG8ybmJFMXJBeXJYNmZDZ2pnT0ZDQzc2UXZUVkdRWkxTdW9FU0xvSUpHRGJybzJnR0FkM3dqQ3dkTVJVV3E0SUVjZWpuX2lkUDJhNk84cE90ZkZVLUUx?oc=5",
+   "outlet": "The Star, Kenya",
+   "published": "2026-10-17T05:19:00+00:00",
+   "topic": "accountability"
+  },
+  {
+   "title": "Mbadi admits Kenyans still struggling despite economic gains",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNb2FBX3ZCdFl6VlktdUE5cWFyT2g3WnpoalFJX3ppVnprdk1EOWk3MTVzZy1vNkV6OXhhN29OS01DY0tWTFNNbmV5YkllcktWY3RTTXN4MHNlYXFCa2psRUhFNm5ZWnJiQThnaXRpSEEzRjkwSlVnRW9QYWNZSnk2bGN3cEJMa3ZiTFphVHc2bVZ5cmRBTkk0NA?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-17T04:48:13+00:00",
+   "topic": "money"
+  },
+  {
+   "title": "\"30-day leave\": Ruku orders 84 HR officers to step aside over KSh 6.2b fraud",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQjFRejdyenVmRXl0b2Q5SmQ3OE05eGpyaU9PTWg2RGlCbmxRaUMtMXZUSW85elIzNnY3dVd5U09RZFdCSEJyYjNienFSZlRTdnpFX3JnRmt0cFJvT0VSZFhlX0NEeEpkdlg2Rk9VRUtNbE4zNG1weWExeklCakJBc3MyOWhUbHp4VTY3YWZQeFI5YjlneWVPOGVTU3ZPdm1waGtVNmRHSFBEZnNHZTB2T3Jqdw?oc=5",
+   "outlet": "Tuko News",
+   "published": "2026-10-17T04:43:16+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Integrity in public services calls for more than tests, declarations",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPRWFZSGl2MVpoSUpkODVsUmdnVHVNZHNVa3dTTjNtaGxFTE1FSlppdlIxd0QxVEtrR3JrSmVZNnJ5Vm4wQWNIcHY5RkxaeUVBUzZoRVRIeGxzLWk4bmx1VzVtd0NlZWVVa1pxcXMtRk9oWFhHMzlDbXpEVi1wa00zZlBmdWZZTWRiaW4zakNKR1h5TjdmeWh1emoxMzIxR1RPWlh4QUR4UW9BUzhfaFU0dFZHNjJvY0VZeHczM3Q5VDJQRDNjNko4UXRvekc1d1c1?oc=5",
+   "outlet": "The Standard",
+   "published": "2026-10-17T04:29:00+00:00",
+   "topic": "accountability"
+  },
+  {
+   "title": "Police welcome AFC Leopards, Gor Mahia face APS Bomet test as KPL enters second round",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbHU0UHR3bldLOEpVXzZ2UUQ1WTUwcnBZRjRVRWdacjR3U0lIVG1Mb2pFdnBEbmZUa3lRclVDTFBWNm1lbVZyRENuSms3bVZCZmxmVy1TS0w1dFB6TG9ILWplcHY2aWZ4bUNpU0taQUl1bm5CbjZyNHg2RW83ZmhZQXlVQzUzOEgyaC1oTmQ3V2wtUzVGdlpNWHVxRVRQbWZjOVdyZGZnZ1NDMTh6N0k4aW8wUmFCZw?oc=5",
+   "outlet": "K24 Digital",
+   "published": "2026-10-17T03:35:44+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Lobbies, IEBC form electoral integrity alliance to guard Garissa 2027 polls",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORUVtNXBzZHFOdEJOb1dhWGpRQ2NDeWpLSVo0bF9qNmlocU9RbURzblhEblEweGY1QjU5eWlMbmxRQVVBRFFNek1HWFN1SkdvcVhaa1ZPUEFfUUFWLW5ISHluMlpmdmowdVJFaDNLZHA1dGxLV1hhSnpKMk5DbDNCekdKLVRHX2NiTHVRVjFueWt1clN3SkdMTk1Tb3BUVk51NkVSeDVZdm5sOXNaWjQyaG0ydkYyRW42QmdfR18yU2JZd3ZGV2RpN3NBckZJVG9N?oc=5",
+   "outlet": "The Star, Kenya",
+   "published": "2026-10-17T03:20:00+00:00",
+   "topic": "elections"
+  },
+  {
+   "title": "Placing bets on both sides: Odinga family’s big gamble",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcEhiM3N6c2kxcnZzT0NEQUpfVE1faVVLM3ZYcXhtS2hJVVZDVjFmVmtrb1dtT1FzZWwzRDlUR3NuWm44OG9qeHNWbndsRnRfSEZsWFdKd3YwNU9IMEdienljdEJuLU5RZlBYWktqQllIXzJMaWpJODdwaTBoYWl1cFVCSXEwLVh6enl5VWRMZ01HQjBlanJkRlRZOWJfSVBEWjBDb0NR?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-17T03:00:00+00:00",
+   "topic": "politics"
+  },
+  {
+   "title": "In the footsteps of Laboso: Joylene Kosgey seeks to become fourth Bomet governor",
+   "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOYnFwOFU1V0szYTBpQndHQzZLdi1YWUt3SHVGWWR0eWhoMElaX0JNOTRBYlhWTHZ5OXdNS2E2SWNlTVpaNWZGblMwT3NERk5fYlBnSUFkR0JFNzBGdTF3dDB3NWk4ZzJIdWMzQ2hwX0tvbldfRGRJanQ3M0dLMTVOWnVuWFJJcWRhTjBlY19SZk1vQ3RBLWdTZF92LUNIVDRiWmNoN3A0UEowbXNvZ1l6SmlOYUdVaFdiSWhpRnhicm80N0tHck1OWHhB?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-17T03:00:00+00:00",
+   "topic": "counties"
+  },
+  {
+   "title": "CS Ruku suspends 84 govt HR officials over Ksh6.2 billion payroll fraud",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNbTJIVy1LVG4wMWkwNkVKYjlJTG9pOWJpdlRDQ1dJRTRfVnF5cGhUZUM3eVctaEo3ck5xS0F4cTlrTVFBY1NVZzdnT011WU84ZU5HSWtiNl9YYzAzSXFSUDQtSURlOUtMaDRlUlNaSDV2c2h5N0Rzb0NoSGxRemx2dC1ISkUwQXdRei1jazBYRG5tbVFuY0NXZEdKSnNmOF90WWphTGpUYw?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-16T19:38:12+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Kenya in talks for fresh multilateral financing, central bank chief says",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQSmVmYklEYVRhN01vVjdJRmJTX2tQRU9Va1Z1Ym9sVlprY1FYM3pvQVpBczR0SjU2UE1MLV8zUXFTUmRXTTVaVHR2R0dic2swUDhQcGtTQ0tEeGpocDdNeGtvaHdDaUk1UG5pQU0zZ2tfV2xfcXZBaEVlOVk5aHBiRklFaXpsSmNZcFQ1YUpBbEM2UmQzQWhFeU9idC1KRjM3ZVhSbFpwaHlkQQ?oc=5",
+   "outlet": "The EastAfrican",
+   "published": "2026-10-16T19:30:00+00:00",
+   "topic": "money"
+  },
+  {
+   "title": "𝐄𝐚𝐬𝐭𝐥𝐞𝐢𝐠𝐡 𝐕𝐨𝐢𝐜𝐞 𝐚𝐭 𝐍𝐢𝐧𝐞 - Cancer survivors, patients call for early breast cancer screening",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZ2dwNGN4bVpwV0c0ZGpyZGQzNXlOWmtHRHlOOTlYOWFvbWJtTzVWOWl3R1dBWXpMY1U0eVRWSFdmWGtIazUtdFIzRlY1VVU0SUk4S3NSQjZtMC14NGRWT0xhYjJaMV9IOXZHVU1ILTJYMXhYc0pzdW1raUdWbVBUajFFeDFCdkFBcEFUUG9PVVRQOGp4bVZnSjVrblEzX1pxZFVjOGZxTUY0MjJnZWdaUUJXdw?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-16T18:19:28+00:00",
+   "topic": "counties"
+  },
+  {
+   "title": "KWPL returns with top-spot showdowns as matchday 4 takes centre stage",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRlVrVGVQWm9TeUlTUW5xUVJ2R29CMGl1aWJCWGxGbml3VzdBQW4zSkdQOWRGLTdiT2w4eVctc1NsVzdsRy15TUxOeXdWZjVLclh5S3ZNYXpxVndOc0JsbkcyYUxjMDBid1dhRDdSMmloWnF0dXBlUjNCZnQ5eWUwTG9BQ1ZsejFGMjN6cktzeXBrWl8xRG9rX2ZYSQ?oc=5",
+   "outlet": "Capital FM Africa",
+   "published": "2026-10-16T17:01:56+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Police fraternity bids farewell to veteran officer Lazarus Opicho",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRkotRTkwdk5BMUhKR2VNMzctVl8zblVfc3lSNm1kbUo5NGxaWVcyR0d1LUlPQkxOYUZ6M3daZExMSW9qU21GZFV0SU5Ha1lHSzJFSG5WdGVkLVZTdjlLTmYzM3RFNkdTbWdfQ0RWNmVpV19rdjQ3Sl9JdE5TNDNGU3lLckhCMWJ2cXR0a2tnUUJmNVA1a2dldld5VGZBRnRyZjcxQzQwdVA?oc=5",
+   "outlet": "Citizen Digital",
+   "published": "2026-10-16T16:13:26+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "DIG Lagat honours Lazarus Opicho’s legacy in Judiciary Police Unit",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOOWMtQ2tkbFdmcXFnQ1pUMG05ZzZyR0dqS0UtSUlJZThNck1UeWpuazBCbU9MN0UzVm5XRkV2N2E3NklFcXlsRXQtd3h6T3VNMkJsd1ZuVkt1SUNHLWd5SGFsdnNRWjBoTmE4M21Dc0lFSnFnR1FIdW8zSTFRbEpZS2wxeC1EZlFzOFowbzNoNG5oRXlDRUZsUnhpTlZDQjQ?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-16T16:13:10+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "IG Kanja wins police recruitment battle as court limits NPSC powers",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNmxLbW5fYUpSZERQVzl5VHdWdDE3Vnd6SGtSdHNuNktidzNTTHFWRUdBQVphNDNuc2FwN0hucktTaHAzOVdycGlJOER2ZzZ5N3NENlFjOGpEdnIzSm93TmRnMkR6MEVlWGtKbGZISHc1QW5nNjhKOHVUMU5PSG1JTFFhWTVnNFM3RndYTG5ZLXhEZHZfZ2xuRTFNTnBNWXNidjJieXRPbXZJRGxy?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-16T16:11:46+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "‘A Trusted Friend and Colleague’: Police Leaders Honour Lazarus Opicho’s Memory",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdHJPRF84LW9YN1M4U2xwMm5zaWhyWEdfRjJyNF9DNkNsTEdmUFU5NnhIektYMVhTM0pISXpoWGoyNGJLaXJtTGJtclIyQTVrcW5yR1ZDRXZFMzUyWGI2VTAxaWFnV3RUcXA2aVM1dzZ0bG9KbjktcHlqRG9OalpLNURtdjRyRERsN21PaWdkWFhRWklVNllkMF9jNkM2MXFBdHB5Wjc0QlUtQVd3?oc=5",
+   "outlet": "TV47 Digital",
+   "published": "2026-10-16T15:52:38+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Waiguru urges Mt Kenya to back Ruto or risk 30 years in opposition",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQZ3FRZkVkQ0xFWjNoMm1OLWY5b25ySXJscV92TVZBUzVIZ29qMXgtUVdBS2JhVGZtVXIyZ2NPWTN0MWJJZW5Fd0gySnlaeW1PNmtnb252LWJTZFpQNVB0QjFpSXN0LXJOQzNxdGhSNTZSMmhjcjQ1cGJuT2ZDbWV4bzYyd25KT1dSMmZZSnpnVzhraWs?oc=5",
+   "outlet": "KBC Digital",
+   "published": "2026-10-16T15:30:22+00:00",
+   "topic": "politics"
+  },
+  {
+   "title": "Five arrested over violence at Raila Odinga’s anniversary event in Bondo",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdlo2Q3dPTU5wX3JnMnY1OXdudWgwOWFwdHdmR1NyczE4QjZudWsyTXliRnJ3UXFFWUdpMU1IUEpaVFRPS1JxQzBKaDFOQllMc3R6dmFfSlpITXpDal9mb3hDcnNtRDBRRXdJZEVfZlJlMTFOXy16S0M2bmIxMW1ubDdfMUM5a1l4QThTTXhaVVNLUU5wUG1IU1JFNkFFNkJmcUxid09wX29rbW1EWkNrbHpKUEhLSXBITEE?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-16T15:18:52+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Edwin Sifuna Reacts After Being Denied Chance to Address Mourners at SAIG Opicho Burial: \"I Forgive\"",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNQVNUZEdXdVpKc21jdWR1VjlHLVY3cHNNNm1GeWZBM2t5ZWRuRWlWdTd0Z0VJRXlkNXhBbTFBUWdUWlVBaGJfVVVpdF9McWo2MHFUNFByUk0zb0dNZXM5NzBSck1rLWtrQklVZjFWSkp1Zk5EYV9zamFUYlpjTmFNUzV1SUd3TXYzRWRzdDdRUGUxOXBKY19UbU1pcFloa1ZERXA2TFFOem1qM25qNjdhc1B3enlUd2M?oc=5",
+   "outlet": "Tuko News",
+   "published": "2026-10-16T15:15:33+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Court decides who should recruit police after petition challenging NPS role",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQOEhmRWJpQ3NUSXJQWDdhdnV2QzlUc2hOdFNpZE5ScnV5SW5NZVZnYnUxZzF0VVY2dHlNSnUzZzV3aGxoUlo0ZnZfUEdrNEVBbkdsdi1pbDAwSV9nWVNqWEZ5YzU4aEVMeDJYaDlYTWNQVkc0QllJcFZ1ZjZqdUNtcWdRYjJJODVKR3FzZ0ZSMWxmUQ?oc=5",
+   "outlet": "Tuko News",
+   "published": "2026-10-16T15:10:38+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Maraga vows to fix Kenya’s ‘chaotic’ health sector if elected president",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQemt5Q1pJRmNxYWFDYV94RXVUWnRqY3l0djZiRkQzWmZIWW40R2lpbDVTbGloMEFTX2NldExla042UEo4clg3dnlhNW5pLWdpRHJoZkZiWVVEbnR1a3RSanNjVkNHWEIzRFdvZDlYamxLQkhNRmR1d3JMZ08zQWRrZG9ETVA4SUJKQ0c3S0xodmFtZ050?oc=5",
+   "outlet": "The Star, Kenya",
+   "published": "2026-10-16T14:25:00+00:00",
+   "topic": "accountability"
+  },
+  {
+   "title": "CS Ruku orders 84 HR officers to step aside over suspected Ksh.6.2B payroll fraud",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPU19sb0QxTmlEVm5SaTZHZDRMRTZpQmFqdXVmZnVpY1VxUzR3MFdQWndJbEJudTNYTGdZNXlDMUJoWUFXOGpQWEN5Z21Cd1JQZS1IblJURU5FcmsxcUpsYXpqTjNaa25JME9vWHdqMHE1MVNqaVlQX19tWk9mVjVWeHdsQU42R25hTmNFbWpvcHU0cWVuSXFrWkdQYkh1UGwzMzE5RVh5WnJqbkVmSl9BenJTTm1FLVNtYjBV?oc=5",
+   "outlet": "Citizen Digital",
+   "published": "2026-10-16T14:17:32+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Laikipia ODM supporters vow to remain in broad-based government",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOQ2t3VENYWkVlZE1BbkhhZ3BleXpob2hrSjJkblNMTFN3aXNxc2QzMEx2S3BUR1V3aFhBTWhCXzNuZUE2Qm10SFFuaEd1dm9YNGVQLUFrbjlFODRNaXY3bm55bnZLaDRyYWFqb0pWazdvS2RPVjRTR1prb1c3QWdLRVJ4U2dUYkIxMG03ZGdLV09hbmYxZUdj?oc=5",
+   "outlet": "Kenya News Agency",
+   "published": "2026-10-16T14:14:21+00:00",
+   "topic": "politics"
+  },
+  {
+   "title": "Video: Govt spokesperson blocks Sifuna, his allies from speaking at funeral",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNa1JBM2d6b0lHOWI3SGIxRUJpTjIwSVZHOU5GQXg2NXFBM20yMWIwa2MyZGtDMDNLVElaYXNmMW5DZXdyTXZSLWZFTlIyeTljS3lWeFQ4b1A0Y3lLbTFvdmNkdmhFMlFDajVGX0xrTnp6ZTdDM0c4M1MwQmI2VjFvYUtfZVlyYWpuTnR3SGFRY1Utem5ZUENLV1F6UEttVW5vQXlGQmlnSVNXZ0t0U1RFaE4yX3VQbEU?oc=5",
+   "outlet": "Tuko News",
+   "published": "2026-10-16T14:14:05+00:00",
+   "topic": "rights"
+  },
+  {
+   "title": "Stakeholders resolve to strengthen election security ahead of 2027 polls",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdkxJLURsX2hQVTE5d1BIRDY5bDBseUFEMUxpWFQxbHppYU1TZVJvcnA2d0hHSWlULWEzUEY2M010dHhTaGY2dzFqek1pWWdVMWxLaUtsd0RsMUtuUkJCS3h0elBGRUZ3LUVfMzk2OEg4Q2RuM0lScmVuSjRFdkIwQURBbGMzWDBiSVByZVoxNUE4QVpQWl9WemlVYUEtdUtlSFEw?oc=5",
+   "outlet": "Kenya News Agency",
+   "published": "2026-10-16T14:09:59+00:00",
+   "topic": "elections"
+  }
+ ],
+ "series": [
+  {
+   "title": "Senator Maanzo faults Ruto of taking Kenyans for a ride over fuel prices",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWGUydmd3TGlDY21oQUY0ckZMUk45ZkVaazRMZWlBZnlEWHNPM0kwanBuYkhIMjJiSVc2NXB5TGlzSlFWdVVzd2VPOFJDd093RVRaSndlY3BDUU01Rm9wMnlWM3RpSEY2QzhINGxoZ3o2ZVZnRExhSWNEUUVXNmxnb2NhYjR0TDFVb2xqS09RUlVTSHlNWHVGUWMwNWxSZm1oTm1vMHhaa0F2RXp2cS1vVkhud2Exdk0?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-17T16:11:23+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Counterfeit alcohol worth more than Sh 2 million seized in Nyeri",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNWnEtaENrdl9vSXE3Q0lhX0JSc0E1QVluYmlUSHcybUxPMTdnZENqa3JVQmZmSTE4N0haLUsyTjc5SldrTlFfd3NOQWRxSk0tbU4xSmtPNVI4NWNHZ3JVbjVjUnZVWGxzWWpNRlMyb2MzSzlvZE8xWVJ5MzQ2aloxZGt1N2NIdDBGOUJPZ240WXZEek9WbHZpbw?oc=5",
+   "outlet": "Kenya News Agency",
+   "published": "2026-10-17T15:19:59+00:00",
+   "topic": "factcheck"
+  },
+  {
+   "title": "Standalone houses drive 2.2 per cent rise in Kenya property prices in Q2",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVlNha1VCN21fM1JPWnRwazJyTzFLQzcxTHRheTg3WFE1SlRzWVJ0bm9BQnlDZS1rZ3RBeHNxX1BDRXcxRmxEZnJTeVhHYkNSSE1xS3FXSV9vQzNuTXFXZEtnb0txZFdLSmtDWEszOHJiQVM2WTlUdjl0RVg3a2RaWTJ0VmZoQm1DQTZkajhQNldjN2REZ0d1Xy1xUzVBWVZ2RGhFTExuV295SXpES193ODZRLTJNamc?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-17T10:05:34+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Kenya’s growth momentum eases to 5.1 per cent in Q2",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQVVFUNWt2QmpqUWJOSDYxRHRtYmRqOEFvX2Z6X0JzRDRfLVVYdWxtQjA2eXdYbm9GaS1xWUIxWEkxUzJhMUVXNHU2YVRVUG5BVWVzcjJFeVFhWFUtQU40WVJoSWtYemhUV0xwQW5scU0tNk5pTHlvNERyeDE3bGdsUWtVb0tvY3Z1aHFkcXZjeEpQcUdoeEhCYjVYN0tOYVBnM2c?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-17T09:15:37+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Nyoro's PPK proposes Sh29 fuel price cut, calls for Sh5.5 billion subsidy after EPRA hike",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTXJjTUh6djZSSVpNMlBxaTVVeS1fc25RNFFFemRMaldwNVF1UFNLVHZGUEpRUDkxNXNSVTV4bUFCbUZySkRLS3Q4Q3A5eS1iMjI4UUhSSF9JNkk0MFRnVV9Ed0FfdEdXT0NNYlJXY0NOejdYb3VjdUZ4cjBLUnM4WTY5bjFzZ0NGOUREa21oTXZqTEJmTFVUZ1RtSHpYQUpkblB2RjRSUkZBRlJiT3JLLVFqZWRwM3FKLU5Sckw1My1WYkxKTWQyX05KZ1JUUQ?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-17T09:03:03+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Global oil prices hit Ksh13,300 per barrel as US inflation rises to 3.7%, CBK says",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeElMNEJFV1Y0eEFfMm9ka2pwMUt1R00yS3JFRjlNcTJQQlNPZFNSemVuSGhWUTBoUXE2eTFiRWFDaHRiRWE1S1dHR1FrSHBjMGUyWFhTNV9MdHFzYlFMU1Y1aEVwNWQ4d3YtVkk3TUlzS3JPSnlKTHgtZ3hjVFlrYnJFVHF2UWY4bmQ2X0NUTmhDT3hSWEJ1MjBMRjRTV2JFWHNSWUZfZE83bGNSUXk2UG5jR2RFWDg?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-17T07:28:13+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Matatu operators raise fares by upto 50pc against MoA directive",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbkthMkxSSjltUmVLWGQtd3Vfd3VLdEhFQnhqUG5jWmhORHh2dXN1RVVneFU4cVNzdXRHMXpQbG9wbFZyR0NVWElXWmxFNlBtMUlFOEZTQ3BLcHkxYndvT1lDOExnNktVRFgxLXhwaEJrMzJlUmpDd1NaTmNoc2RqcUtCekJhdmF4di1fdHNRSUliYXB4My1GRVVGbFZCWFFMc3BoX3h1TmFsZw?oc=5",
+   "outlet": "The Star, Kenya",
+   "published": "2026-10-17T05:22:03+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Broken promise: Double-digit pump price hikes push Kenya's inflation to the brink",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUUsxMmdrUEdFNkZ2b1ZMQWdBMkRPZUJJY1pKOERvend3ZGo1LWIwM0k1QjkzWjYwY1BHNWFRRktvS2drdDlMSGRfdElNSzkyOEFMcWJGeFV2VjlnWFhQbzZxZGkwOE1yeVd2dndxbWNuWEF3MmxhSGF1WHhfNWNQaUNRNk0wc0Y1eVdVODYycHlnd0ZFMk53ZVR2cGZRNm8wcm41UWt2NmRjeVl2RWo4OFl4aEQ5dnhuSUUyMWc0aG5RTWRsdURMaDBzY2gtYTQ3QjlvNk9B?oc=5",
+   "outlet": "The Standard",
+   "published": "2026-10-16T21:00:08+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Basketball programme reaches more than 103,000 children in Kenya",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSE1icUxPaDhHa2VmTHY5V2drMmtYMVBYR2tXb0V1d0U5dU1Nbm5MaC1fMTEwRy1XakhDc1hfZW13SFRjTzJOb0RpcXRzb3dUSllLQnl3Rm14dk9ZRkp6aUs1djV2NC1VWmRnTkkzRlp6LWVyZzZ1U3lqRlJZWmNHSG8wd1U5d0ZjcDdzY1dGVW8yZFdKRHp5RVJTeW50Y0U1Qk5OaURn?oc=5",
+   "outlet": "Citizen Digital",
+   "published": "2026-10-16T17:16:57+00:00",
+   "topic": "scams"
+  },
+  {
+   "title": "Kenya’s economy grows 5.1pc despite Iran war price shocks",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeER5NVhJMUZTOFdYcjJ5T0VEVVJKRTNYZzE0VTZKY1lGcEVLN1gxTzNtZEYwdjlIdVlrQUhzcng2ejQxbmZMUmFNbFF5WUExdGc3UzJzVGxtNzZLY2NFRmZIS0Z6UUJfZUhGUldhUWQzMU1TUmZSX2o3RkhsN3RJeklBdEY4WkRMeG5jdWpjMTRLWGhQOG1JdEYyaVhsb1U2dHBnTUpzNTR2YmNTcW5FZFRB?oc=5",
+   "outlet": "Business Daily",
+   "published": "2026-10-16T16:50:21+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Kenya confirms third Ebola case, 127 contacts placed under quarantine",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdGJlVW83Q255cUFlc1Y2ekRUZkxCWmFvSmhtT1hUanBVT0NHRV9sOUppNkR0aEptbm9xbnAxTUFFb0kyQU9tVE1KdmluTWlOenE3aVdKWWtkTVFMR2U4R3RtZ2VZLTI4MjdlZWoyUFBqX2JTWk12OEdfWENZMzZFLWY5bmJ0Z0U1NTB6NDBJcWRyenhWMUwzVFVSa1h1M05FQ01EWWRucXF0OFVT?oc=5",
+   "outlet": "Citizen Digital",
+   "published": "2026-10-16T16:20:42+00:00",
+   "topic": "scams"
+  },
+  {
+   "title": "Ignore social media posts using altered image to claim Kenyan politician Oburu Oginga seen for the first time since death rumours",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZkZYeGwyaE50MWFvYkxvb1czby1iVlktUVM3cHhnZ01QZGpKUndzczZYbzA5b3o3QnFlNll5QnFkUUdlZmpyZTFSYk15cE5TM2FDZWdCQjBkc1NvT1l0YWE1TFlETktkSUZoSk1LTnpTX3NjU0U4NnFxSHhMbVF1SDBQQmF4Yld0SFNlR0ZkNl8zUkVMX1FBblRtSUYxNEppQ192WnFyRzRVQjRCVWYzT29BNEVzLXkwNGJOS3Rn?oc=5",
+   "outlet": "Africa Check",
+   "published": "2026-10-16T14:11:10+00:00",
+   "topic": "factcheck"
+  },
+  {
+   "title": "Image of Kenyan senator Edwin Sifuna asleep at public event is doctored",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZldsd1liT1p0dEptSUtqd2JZZHFoaXoyZFFLeGlyZjBKLURwbEtfZ3BkN1hUMXV6TnZEOVhoT2FUOTZlWWRCR296UzVFOXFKVVR5Y3FLNlNobndHTjAwVlF2NUJlMWVkbGpkN08yTzhxQnNqMGNGR3JjR0prN042ZnkwQ0c3QzdkdDV2dmd3ajBKemxMTzhqM0VQNXZpVEFrb3NKLTNyWDFmY21BSmV2ejc0RHg0OFE?oc=5",
+   "outlet": "Africa Check",
+   "published": "2026-10-16T14:11:09+00:00",
+   "topic": "factcheck"
+  },
+  {
+   "title": "Kenya’s economy grows 5.1pc in Q2 despite higher oil prices",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQd19wYmt5b3BBUnJMYnlKbmlaMnAxTy1TMEE0QkNGV0MweTNvTkh5RkhoTlNTMExxcDJLWmdwUng2OVJRUTBKRjZjakxOampCQnNIVVBYWFZRWkJCTUtLaHBWaC1YSkNYZkplUmwwNktLd2lFakVjVG1EeUtSbU92Qm5TWXlmWlZtWDZaMQ?oc=5",
+   "outlet": "Capital FM Africa",
+   "published": "2026-10-16T13:03:45+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Protests loom as activists issue Ruto 72-hour ultimatum to address rising fuel prices",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOLUo0V0hVVVBCLXY5TzZzT2QxRC1RM3Y4TlZsYkxNOFlaemlIbzRrYUJCRHpTdGMtVnU4LTU5dFJFVms2YVVsUWVUZ01XeXRyaDRLTDgwRlh1OUVORzdhbThDM29rTVB5T0tlOGUtUmxxbkdacGRlM0RmN3Fac0c4My0zQlp0Nk4ySlZDUnJYUXVFRmdsX3RZY2lyVGZFZFFzVjBYNWhsSlJkWHlNbi1ZWmFDaDh6d195anRybDVXSEwzZ2UtVE5tbmE2Q2dyamNSdkE?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-16T12:45:16+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Transport Disruption Looms as Ride-Hailing Drivers Threaten Mass Protests",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPYWVTRGM1ZUFRN3pZOHQwQ2lkT25zOGpwRmJHek5vbFlSaXk0QkVQRXR2TFhFVG5kZkdBelNRTmdrbFFLcl94VWNsUmZjOXhVWXB2VEMxQzdTWFpFSHpOTGM2Ujc2QTZaMl9aUjZFRUZGTWwzWW41RUJ3ZmpKUEZzX3FUUDZNSHdQc1BpSVZEQTVsX2d0VTZMQng0am9adTNUV3ZvZC00cU1BZkxk?oc=5",
+   "outlet": "Kenyans.co.ke",
+   "published": "2026-10-16T11:51:29+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Experts Reveals Why Kenyan Shilling Could Weaken in Coming Week",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeFlXTHJkQmlEZ2VYUVUtTS1SUTNXT0lpbURZbzVoWW5pN1NGdVpsY1FObkRWQ1hMZmM0WERfZVpOdHRtWHhER3p1ZFlVUFdZM2hXeDlQTHBYZnIzN1NBLTBVQ1dKX1lxeDRDQ2VfS2NlRUg1T0lodGVhd2tocXktdS1oZk1GSEZ1Y0RBakIyWFJ5Ri1mbjFSU3kyb0tOcHJhNUlfd1dTRXAxU1Bkd2c?oc=5",
+   "outlet": "Kenyans.co.ke",
+   "published": "2026-10-16T09:14:25+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Kenyans face 10 per cent matatu fare hike as fuel prices rise",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdlhiMnhWZkVkeWNFZUFsN2Q4bUlsTXU1bzdHN1JjQktETFNRWnRtU093UUs1V3I0UUNmNzg0REFWRi05MUF4aXFnMzlXRG5kQVVDbjZReGVGSmxaNFI5U21RYjduZmczWm51UE05VEVIZFd1TXk5MU9tZmRJSG44ZjVnZXNXWS1FZFpPTk16RzlTUHRHRm02OGN3?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-16T08:52:56+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Sh3.9bn VAT fraud: Court issues arrest warrants for missing suspects",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM25uZm5rTWM1RmVTN2lQTWVNT1N3cHYtNER0YkxrME42blNlNEtXekoxcDJzNFlERTMyQUxMSDRta296UnE3dHVjMzA5YkR3VG9lWFpib1dfRXhCcFBTcUV0eGw3aGVHZ2pZOVRBZ2c4WmdySEJCRS0yYkFxWGg0a2k2czJ6Q1NpQjBHZHQ5aWJBb2pNVjVNQUFBRXk0M0VPekJrQUhMTWZqNm9jSDRON2F3?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-16T08:00:00+00:00",
+   "topic": "scams"
+  },
+  {
+   "title": "President Ruto assents to two Bills to ease cost of living, keep fuel prices down",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOVUxZ3o5UzdFVFUxWEFhWnJQN2IyVTRMUmRodFl5aVZ5X3dIbXA1enNXMW8zS0xTelRVN25GelQwOXF0aVBEMmVsaWd2cmVqb3NPVmtRaDFZOFJTdUdoWUlheDNudHFCc18wXzZaa1pFRHc0Y0JWWldBMlk1ckVzLTJBNGNfOEVSU2JjeVc5bW1zanBXdW52cGtGZV9WZUFCUTVkellfU3VxbzhIekxIZ2pObkFuNzlYRV9JMzg4UlVyM2gtMEE?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-16T07:03:29+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Fuel shocks, climate change risk pushing up Kenya’s cost of living",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPYkV0SE8zRDQ5aHZmLTlRRXpPYzgwYzhJQkw4UldYZXJZOFJJOTdwM1hDWmVRcXQzZTk4NEotdnpjN0NiUFVfMEVGLWZzZmdZUmZXOG5YVTdWOHZDZTA0MVM0OEIzUnI1MlhTOHg0eE9WaDdwR2p1U3FkeWtINExIMS1DVHlpTXdJM2tIcEFESmVtUXdwdUxFMW1tY1k5enB5N2dwb3ZscWFXeTc5U0Z3UA?oc=5",
+   "outlet": "The Star, Kenya",
+   "published": "2026-10-16T06:00:00+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Pain in the pocket: How 10% matatu fare increase will hit Kenyan commuters, household budgets",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNTVg5bkdtSUNkWmpTNWJ0OW5peHpqLXc5RWZITlJFa3REbFVOZlZtSzB3bjhoZFM2TUZ6dk1CR2Jpa2FvRWI5N2pWcUZvbDd6Z0dMRnQ2VlV5V0Q0MzBYeEFQMWk3RlJ2R3RCMVBnR2lOQTJzRDBMV0l5dXhpZTdYR1FXMGVyaTd5LVA2ZlRZMXV3N0FpaFhLSXZFQ0RENjVhTFBKLUtaT2RGenp4RThzb3g2OGhJeDBGTG1BNkNtRkJiMEtrV2c?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-16T05:29:54+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Cushion Kenyans against skyrocketing fuel prices",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOMzdoVkxEazFWYmMzUkNOUFBLNVhPVGJTQWw1ZGZGcUQ5ajBEaklDbk1faDdjT3htdnJLMVZlRU54R1cwOFEwaHV2d0tES1htQWNGbld3YjJXT3hWdzBoS0JaejlfUjRpU0h1alJDX2x1Y1pfR3FOaG5tcFY3TUJxTWIwZGRwX1hXREY3SlpKYkx6eENRQ21pRTlDUE4yTUFHTzhKUjM3QmxzZ2pDckk0aDFVVQ?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-15T21:02:00+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "How dry subsidy kitty, heightened global tensions spell tough times for Kenyans",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQ3FoTVpXTjNNbUl4TUVHekU1aEV3cGVnTVdrR254UU5UWG42aHlDb0pNNDA1eWpRZFVXcmFoXzBsWnpIT0w5djVTN01XbzFYSWtHWDlKbWFxTUNnbUsweWVIbTVBYVliSVRISlhxRkVka2taaHF5MFl4MmRwbUhvbFQzX2k2ejU4N0Y4UzdKR3F1dXdDX2NZVFJiVm9fV014TlB1eWJEQVRlMjI1UjdqVjlJU1ppOW84RGNvVXJR?oc=5",
+   "outlet": "The Standard",
+   "published": "2026-10-15T21:00:49+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "EPRA Boss Issues Fresh Warning to Motorists After Latest Fuel Price Increase",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPWm10ejZUcnNWY0kyNnJxdTJNQThHLWpwbm1YVm5CUzdIUEVaakpKd3NLZkVQT1diTzYzS2I3UzdDMW5UUk9sZVA0bFFYSWJWQVZMRjN0d3B1S2pZWHBQVTQzeGF2emRBM3dRNXduWHR5Y0NMWXlMaTJKRW96UlFHYy0yODAyNFU4UVBIbVdBTWhyWE9NT19lak9YV0ZsMnluRmMwMFBNWFdHaVd4QkhVNTFTNW1oZUk?oc=5",
+   "outlet": "Kenyans.co.ke",
+   "published": "2026-10-15T16:38:09+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Global oil crisis pushes EPRA to hike fuel prices",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOb3pOMXF0alI2ZENRYTM2NnVLdjZBbWRqUlQ2MlppQTl0Mnh1OTkxX3Jsd3J6V19YckVUZDdCRGtnaTFqcmdjRGJpVlQ2d2V1ZVBrNVgzMW9Wczl1TFBGNHlFcGJfM01pdXNOalJwLXpnck9GMUMyMzZRSkctRzRCTkQxMDQ?oc=5",
+   "outlet": "Kenya News Agency",
+   "published": "2026-10-15T15:12:56+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Nyoro proposes VAT cuts, fuel levy withdrawal to lower pump prices by Ksh.26",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNc3VRQ292Sks1Ynp2MEVHTWpxcjhFTm5OTm9qM2dYdWdha2JXQzJudVd2bUxFblJfcWZZOUFyZDNSTGdwRjBtU05qMzNIM1hHektpMTZIMW9hSzh6MkFNM1FXakY0VUlhWnZmQ0ZBcUxCUjBmNVR3alhtbWRrOHJHTUsyVXowLXMzRUw5a2w2djRNbUdSSmFPLTdKQlZKWEpxRHRSMElITzJxQW9ZcG1weU14SnM?oc=5",
+   "outlet": "Citizen Digital",
+   "published": "2026-10-15T15:00:24+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Fuel prices explained: Taxes and levies Kenyans pay and where the money goes",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPalpHUjhMOG1KdkJzRGVfNXg3SW43SGQ2NUVSbkZKWE5RN2UzOUZmbzNvLUEyVkRWRHNLUEhHQzdoMDdpU0M0OHkzUnR0N09VVnVQY2hubHNDR1ByemI5VEVpQU15ODhrYncxQkFDMmQyeXNjRlhLbjJQRHFVVHItRUZOQTZUemlyYXI2X2g1RzFDbkRxaFVzS2R1elA2MzI2NmwyLTdFelgyS0x5M2FHcWVR?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-15T13:57:45+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Matatu Owners Association orders 10 per cent fare hike after latest fuel price increase",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPcDFNRHNUSHBleHdNYk1PNHJoMGFrX3FnWUhrZHJESEVuYXFFUVdldnQ5N1g1ZkZWVGZtYXZIOEFnLVlfaS02Q2FuSUlXRFJyZjVRTmdLeUFiTHcydGhlRnV4VEFTdmNycWFaV2NuNkxnVDVPQ2oyNlY3bllUdlVCSzc5enM2QXFYUHJuZjVwcU5nRktka0R1U1VBMW9jT2ZxX1BNbjlMMFpXanVmN3JHaFByU3dfTmRKRnZ0N28xOUFpOFV2NmFsdXkxcThIRUlz?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-15T13:50:16+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "KRA unmasks Sh4 billion VAT scheme involving 62,869 fake invoices",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQTV9uTGx0Z29BYjVfM1d6TllLNjhxRDY4UjduMGwtOVVpdmQ2dHpyN1pJSHFGRU1URWc0TjNPZ0JHTFFHalVfQU9ncGduUnVkWVRTNjVOMzR1dXNGZG5pX0JGQlFaWXV5TldZZEQyZ1M0UXpYTTJmMm5JTEVUblBkeFEyQWNJLW5iSmFnYXNVbUtWRXpyU2Q0LW5lcWE0MFVDMEE?oc=5",
+   "outlet": "The Star, Kenya",
+   "published": "2026-10-15T13:17:00+00:00",
+   "topic": "factcheck"
+  },
+  {
+   "title": "No, Kenyan polling firm Tifa did not publish survey on Nairobi county gubernatorial race",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNTZzaTRmZmVtajhXdE14TDFpZHM4SU5DdmZJcG5LZmN5aEhibE9sLVpYZkRpTndiejVhRldvOUFlNHZKeEdVekdCUHB3Z0RGRlEwdHk0UWVtSlJRY2hUa3VnazFYN0pUUEQzcVAzRU56THRDUTgtaWltTzIycmdtMzcwZU92ZEg2WVFDQ2xONFpSZnFvOWFDVER4ZDFoS3lXa0pJY2MtOUZDV1AxYk1hNTBPMkJub2N5bkNDZlJn?oc=5",
+   "outlet": "Africa Check",
+   "published": "2026-10-15T11:29:31+00:00",
+   "topic": "factcheck"
+  },
+  {
+   "title": "Congolese National in Ksh10 Billion Gold Case Dealt New Blow After JKIA Arrest",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPSWdzcEtxVk9ObUdhd0RVbW5aSGpSTWdCSTZmNW5GUVpEWlhwcFFyVE9EdWVYR3BzUk9TeHlmVzRBVjRsOHptZWd5U3N2VkYwdWJia3J0eEdJcTh1bUdhQVdnNzNGTWc3NjlsY2ZRR1VDTXNXZzQ1clRfZFdKczVMd2tIS1kyOGsyWmtFYkIzeWY5aGVXUFR4VXZBV2F1cktrY3R5Q1pWOHE4TkZtZUNSb3pGNGw?oc=5",
+   "outlet": "Kenyans.co.ke",
+   "published": "2026-10-15T10:44:24+00:00",
+   "topic": "factcheck"
+  },
+  {
+   "title": "Nearly one in five products in Kenya may be counterfeit, ACA says",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQdVdBWXBWZWo4QkFuNl9NaEFscFhLV1RFQm92LUc3VWYxWlNwQnIxUktJa3JCYlRkbGp2amhpWkMwNGtxWk1DaGhGZUJRRkNKVEhmT2J1RElieFRRMG5pTkRsRUVBZEJRREFRWjZxdG1nLTRqTjVWZGEtX2Iweko2VzhZN2FsNXl6ZzU4U1FzWlh3a0loTW5GUXFaM1pMT1FqV0M0dHl0SlhDRHdub2c?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-15T09:48:34+00:00",
+   "topic": "factcheck"
+  },
+  {
+   "title": "Kenya raises fuel prices as Middle East conflict lifts import costs",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQal9MVUlacGx1Mk5qWU44N3lMY3FFZGhPQnpJT2xJQkdkdGlaUEI0dEJqdXVzWkxhOWI5SFFZS3lKN2tkX1I3TlV1OG5RSFJqU2xOd2VUWU8zcFdWdFZldENEWm9ybkdiOUc3am5wU19YaEJyZ3FFUDN1N194YlA4c29xbWxoMTVlekNRZHByWFQ4eHFpNmQyckxVVGRHcXY5el9MajgwMF9vYnd2emNNWk90aw?oc=5",
+   "outlet": "Reuters",
+   "published": "2026-10-15T09:46:48+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Matatu owners warn of fare hikes as fuel prices soar",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPS1FveWRscGVoZzZtN1BGUzVMSHlTR0tGeHhqNlAzMGtqX1dYUm9kUU9mYkxDZDQ2WjRRLXh4eW00bkZyOUtSYktHc1lGRmJuZWxINHRCYmdPUkJvaVhZdlFkQ3h5VTRCbXZndDI4WVVxaF8tZHJ0VDhxZTF3LXkxWEdmTVRNaDYwYkFuT2xhMFNGVzJ2V2dQMw?oc=5",
+   "outlet": "Daily Nation",
+   "published": "2026-10-15T09:28:30+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "The fuel price shocker: What Kenyans should brace for",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZS1UdklaUnBNcERMeGdZTW1VWTU0cG5uYVpnUDlLQTdiODlUNlpxNnJZUjJ6Ry1YWkRDNm5rZjc4V2tRMExBb18wUEp6T3Y4TkkyYlk5YnJKOWE4eWQ5a1U5ZEFfcVhNWi16VWxEcVlXaThLSTBZQXg1a0c1UVNRRWNWcEJhbmZZbVc0d1BZN1FKaU5BUjFR?oc=5",
+   "outlet": "Citizen Digital",
+   "published": "2026-10-15T07:00:00+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Tough times: Kenyans turn to side hustles as incomes weaken, fraud risks mount",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNVmx5RE9ONzBBVk1pcVpsUGRMb2lYOGxhMk85Rk1RQm5PbmYxS0FKV3BQOGQ4a2o5WXpnRWlHRVlrZGVWREVfVWJibVl5cUpKdjk4aEF1dmVySmU3ckZrLTdFVl8zTFY0MTV0ZjFEa2xScjFiTFNJRG5YbHlEalgyN00wT05xWFFSVmJfTTVfUWh3b0Z3eUtpQkVaaWd6WXUyaHlGZnpoYU9qVHhvbEJLaHFRZXpzSC0zM1dxVk11MUd2bUZuMXc?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-15T06:53:59+00:00",
+   "topic": "scams"
+  },
+  {
+   "title": "Fuel price hike sparks protests threat as Kenyans question government’s G-G oil deal",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdUFHMDEtR2Q5UDB3UnJVQm9YbXU0OU5XM29tY013MWtRdDJ5NG1DeEJuakE4OHZkWnJ6ZmItaTU4c2ZybFY2QWV4THRnMlZ2Q2VLQVA5MFNLeElWTm1Jam1odmZSTjNnYktGV1kxNXowVWtFREZrMENGeHU5NElOcElVTkVFRTRIQ283MVN4TnRpSThrRWlBRU1iTFpLVFVrSmRyQmtadUNmV0dVVVM4bjk0Q3FpQlR6Q3VTRkV5dzdxZw?oc=5",
+   "outlet": "The Eastleigh Voice",
+   "published": "2026-10-15T06:38:53+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Congolese in Sh10bn gold scam case charged over fake Kenyan passport after JKIA arrest",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeUROZTZmUndHb19DVkMybUhac1B2elktREFPYXVvMEIxNHBDRzl6Q25ZT3B3SEQtcVlVam45QWNSWGhlaXpzOGJRSnpZTGlPX01QdWZxNjAzMldYQTk2TEVCWHc2M3VJZ2x4cnY5cGF4X0Z2WnZSVUY1UmtFUEc1QXFnbm12TGhrTzVnOUFR?oc=5",
+   "outlet": "The Star, Kenya",
+   "published": "2026-10-15T05:40:00+00:00",
+   "topic": "factcheck"
+  },
+  {
+   "title": "Motorists Threaten Protests Over EPRA Fuel Price Hikes",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSVJkQldyV2pBVTRHRXM5WWdhS2c2QzRoclBvYWYtQ1hMS0VOOWZ2eWtxSHYtVEJqMjNFREJ4Z2pUUE1WcE5INWF2QS1MRF9yN0VONV9uWHdqbUdBcmx4dzV5bzJZSEJ2Y0llSW12R0d0c1lTbFAzMXNpZUhFeG5GU1hzWEZpZ01xZi0tRUxyNmxUeWFPa19XWWFkWDFHMWFhSlB0ZUhaVW9RSFhwVnR1bnpEWEpkUQ?oc=5",
+   "outlet": "Kenyans.co.ke",
+   "published": "2026-10-15T05:19:05+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "More pain for suffering Kenyans as fuel prices rise to historical levels",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQelhLOXVTZGo5V2FTbTd0N0tHTDI1MTNST0tEblp0czdkdXhzanpJR25rcGdaaW1WaG45c1JqdFJLenk5by1vcmFHQnVSajZpZXVYV3RXemV3U2NPeF9hZV9udTNaTndncUljQ0ZqNFdzYzNXd096LXZWdkU3bWJQbnEzS0hvRlpNY0RUMDFwTEV2OUVxeV93bTZFaG9zdlFKV2xQcmJhMjkwTnBxQm5hbTN5Z1ZUYmRIV21EcjhvSUpIZ2Ewb2NJR2VQVjg4MG5w0gHQAUFVX3lxTFB6WEs5dVNkajlXYVNtN3Q3S0dMMjUxM1JPS0RuWnRzN2R1eHNqeklHbmtwZ1ppbVZobjlzUmp0Ukt6eTlvLW9yYUdCdVJqNmlldVhXdFd6ZXdTY094X2FlX251M1pOd2dxSWNDRmo0V3NjM1d3T3otdlZ2RTdtYlBucTNLSG9GWk1jRFQwMXBMRXY5RXF5X3dtNkVob3N2UUpXbFByYmEyOTBOcHFCbmFtM3lnVlRiZEhXbURyOG9JSkhnYTBvY0lHZVBWODgwbnA?oc=5",
+   "outlet": "The Standard",
+   "published": "2026-10-15T04:37:11+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Trio stage VAT fraud through Sh42bn fake invoices",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPc2dSY1BoVl9uazFSRUFKaW5xV2Z4bWt3dTZJSEJkc0tQS1RXb0J4X0wyWTBWTUplS0tyQVZxaU02NWVmWXFMRnIyU2lOd3V1VVpBRHU2a09HSGg0aWNQSHpONEpLMW1qT2R1ZXVZMlFwR1pKVXNMc2RMWW1waW1idWNkN2d6eXdGaGFEaTBub2FEYnloWERmY05hcEVEUUpEdFB2bFg4UGUzS0gza3M1cl9JYjRRZ3hK?oc=5",
+   "outlet": "Business Daily",
+   "published": "2026-10-14T18:30:00+00:00",
+   "topic": "factcheck"
+  },
+  {
+   "title": "EPRA explains rise in fuel prices",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQTjBNaHRnUjgxcml0cWhLSXpTV1dPNmJDc0VnMDdnM25wR0R2NDltUXZTTks2YWZwVV9MazBKdVliakpyMUZoQmRJZk9VVF83RDZMcXc1aFU0T2FyS0U2ckg5X3VYR2JmUEp3eGhfSi16VUR0SGtoZ0VnQWxCTFBwVHVR?oc=5",
+   "outlet": "The Star, Kenya",
+   "published": "2026-10-14T17:51:00+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "Explainer: How EPRA calculates pump prices for petrol, diesel and kerosene in Kenya",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNOHZTaHFjWVpTN1VIV2NFczBGYjBFRkNDZFBMUzdoN2tJNHZBVmVHeEw0dVF6eV8zZ25yUEdNLWRLWlh2d01jbW53Nl9mckQtcXpYazdDMmQ3NFFaQVVqUUZyWXJTSmtLT1RtcmtpMVZxZm80ZzZ2TmwtSUhfQUxDV3FnSnpQTWM1clQyaDJxOElHTUNONWFic1E1amFqUEtMbDlhb1VrNS1vb1NjSE9lQ1JVYmZKNVJ5U0E?oc=5",
+   "outlet": "People Daily",
+   "published": "2026-10-14T17:16:59+00:00",
+   "topic": "prices"
+  },
+  {
+   "title": "EPRA raises Petrol by Sh12.93, Kerosene by Sh28.49",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBhWXpWLTdXN1E4VWxOcHpiTzBBc3BuS2t2RUw5S3BSUFdGSUJCQTdDWElkdFUzVGlNYmluNkNoRzJnaVlLNElVV2p3R3FTSzF4NndRX21fYVVWNG5ndThYTE1XUzhBSnVKcDVjekVjQkNqSGFsWXpZelBYZw?oc=5",
+   "outlet": "The Star, Kenya",
+   "published": "2026-10-14T16:21:57+00:00",
+   "topic": "prices"
+  }
+ ],
+ "errors": {}
 }
