@@ -403,7 +403,9 @@ def redo(label: str) -> list[str]:
     for i, p in enumerate(data["posts"]):
         if p["status"] == "needs_human" or (p.get("group") in groups and p["status"] != "published"):
             data["posts"][i] = {k: v for k, v in p.items() if k in PLAN_KEYS} | {"status": "planned"}
-            reset.append(p["id"])
+            if p.get("tg_msg"):   # its card is in Telegram: a new id, so that old card can't approve new words
+                data["posts"][i]["id"] = _next_rev(p["id"])
+            reset.append(data["posts"][i]["id"])
     save_week(data)
     log(f"redo {label}: {reset or 'nothing held'}")
     return reset

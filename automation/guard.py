@@ -661,6 +661,11 @@ def series_rules(post: dict, rep: "Report") -> None:
                                         str(post.get("question") or "") + " " + str(post.get("hook") or ""), re.I):
         rep.errors.append("never ask Kenyans to assign blame for violence, a clash or a crime: ask what should "
                           "happen next, or what a public office must do")
+    rehearsal = str(post.get("source") or "").lower().startswith("rehearsal sample")   # mock weeks only, never posted
+    if tpl == "scorecard" and not post.get("source_links") and not rehearsal:
+        rep.errors.append("The Chapter Six Test grades a real person: every check needs a newsroom or official report "
+                          "about THIS leader's record (a headline id). The Constitution says what the test is, not how "
+                          "they did; never grade without a report")
     if tpl == "scorecard" and re.search(r"\b(leaders|officials|politicians|mps|governors|elected|everyone|all)\b",
                                         str(post.get("who") or ""), re.I):
         rep.errors.append("The Chapter Six Test measures ONE named leader or candidate (who = 'Firstname Lastname'), "
@@ -673,7 +678,8 @@ def series_rules(post: dict, rep: "Report") -> None:
     if mismatch:
         rep.errors.append(mismatch)
     old = OLD_NAMES.get(tpl)
-    if series and old and series != old and old.lower() in str(post.get("caption") or "").lower():
+    flat = lambda t: re.sub(r"[^a-z]", "", t.lower())
+    if series and old and series != old and flat(old) in flat(str(post.get("caption") or "")):
         rep.errors.append(f"the caption calls it '{old}': this post's series is '{series}'")
 
 
