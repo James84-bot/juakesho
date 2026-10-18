@@ -15,7 +15,7 @@
         ],
         "warnings": []
       },
-      "drafted_at": "2026-10-18T10:16:46.714427+03:00"
+      "drafted_at": "2026-10-19T02:41:19.438256+03:00"
     },
     {
       "id": "2026-w43-d2-kenya-r9",
@@ -90,89 +90,19 @@
       "tg_msg": 338
     },
     {
-      "id": "2026-w43-d3-scorecard-r10",
+      "id": "2026-w43-d3-scorecard-r11",
       "template": "scorecard",
       "lane": "hustle",
-      "researched": true,
-      "who": "George Natembeya",
-      "office": "Governor, Trans Nzoia County",
-      "checks": [
-        {
-          "test": "Trading space for hustlers",
-          "result": "pass",
-          "note": "Completed modern stalls at Kitale market to house small traders."
-        },
-        {
-          "test": "County audit compliance",
-          "result": "fail",
-          "note": "Auditor-General flagged revenue leakages and pending supplier bills."
-        },
-        {
-          "test": "Constitutional decorum",
-          "result": "unclear",
-          "note": "Regular public exchanges with national leaders over devolved power."
-        }
-      ],
-      "verdict": "Traders got new stalls, but county audit records show spending gaps.",
-      "source": "The Standard, 2026-10-18; Auditor-General report on Trans Nzoia County Executive",
-      "message": "Leaders must match stall delivery with clean financial records under Chapter Six.",
-      "action": "Read your county audit report at oagkenya.go.ke to track county money.",
-      "photo_query": "Kitale town market Kenya",
-      "caption": "We measure Trans Nzoia Governor George Natembeya against Chapter Six standards. Traders have modern market stalls in Kitale, but audit questions remain on county spending.\n\nWhat score does your county boss get on integrity?\n\n#TransNzoia #KitaleMarket #KenyaOnRecord",
-      "beats": [
-        "Governor George Natembeya faces the *Chapter Six* integrity test.",
-        "He opened modern Kitale market stalls for over *2,000* traders.",
-        "County audit reports still flag *unsupported spending* in Trans Nzoia.",
-        "Kenyans demand: Trans Nzoia County *answers* all audit queries publicly."
-      ],
-      "where": "Trans Nzoia",
-      "when": "18 Oct 2026",
-      "side": "both",
-      "tone": "explainer",
-      "impact": "Traders receive modern spaces while county audits track value for money.",
       "bg": "usiku",
       "publish_at": "2026-10-21T18:30:00+03:00",
-      "source_links": [
-        {
-          "outlet": "The Standard",
-          "title": "Kitale market launch deepens Ruto, Natembeya political supremacy war",
-          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbVpud2xOVG5mRldibk5RZ3JicmlxeHEyMExUYkdvNjVVZ1hxQzZGOU40dHVGNXhmdDJKallaQm9tMWg3R1loekd2ZUpoeWExcVdTTHBlTFFwWmI0bmtxR0wtSlVVdENLdGpjd0VHTXlCZ3ZXQnJRU0JIY2xSR1MwU3YyVmYwUWs0V2tFLVVKdkFFNkY5ZFJvSHoxRDBJZ19feWdVeUJiT1haM0l3cUJPZU5WekZkTTFnZnlnTU5VMHo2WlhxQjhQRTlMSDlIM2M3NGc?oc=5",
-          "published": "2026-10-18"
-        }
-      ],
       "status": "needs_human",
       "guard": {
         "errors": [
-          "withdrawn on inspection: the writer set `researched` itself; '2,000 traders' and the audit finding are not in its source"
+          "The Chapter Six Test grades a real person: it is written by hand from a researched record, never drafted automatically"
         ],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
+        "warnings": []
       },
-      "critic": {
-        "hook": 8,
-        "send": 8,
-        "clarity": 8,
-        "fresh": 8,
-        "voice": 8,
-        "craft": 8,
-        "picture": 8,
-        "hold": 8,
-        "demand": 8,
-        "action": 8,
-        "fair": 8,
-        "impact": 8,
-        "avg": 8.0,
-        "note": "Solid execution on accountability standards with clear local context."
-      },
-      "drafted_at": "2026-10-18T10:16:46.714420+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-scorecard-r10-photo.jpg",
-      "photo_credit": "Photo: Nation",
-      "photo_kind": "posted",
-      "photo_outlet": "Nation",
-      "photo_source": "https://nation.africa/kenya/news/politics/ruto-turns-trans-nzoia-tour-into-campaign-to-unseat-natembeya-5632654",
-      "reel": true,
-      "tg_msg": 339
+      "drafted_at": "2026-10-19T02:41:19.438249+03:00"
     },
     {
       "id": "2026-w43-d4-glasspoll-r9",
@@ -460,10 +390,10 @@
     }
   ],
   "scripts": {
-    "radio": "Hamjambo na karibuni to Kenya on Record. This week, we need to have a serious conversation about how we measure performance in our counties and constituencies.\n\nAcross the country, we see leaders cutting ribbons on new modern market stalls. It makes for great photos. Mama mboga gets a shed, traders move off the road, and the leader gets applause. Tangible delivery matters. But here is the hard question: at what cost did those stalls come, and where are the receipts?\n\nUnder Chapter Six of our Constitution, leadership and integrity are non-negotiable. It is simply not enough to point at twenty completed stalls while the Auditor-General’s report shows millions unaccounted for in inflated tenders, procurement shortcuts, or kickbacks paid to proxies. A completed project is not an immunity shield against financial accountability.\n\nTrue service means matching physical delivery on the ground with clean, verifiable records at the treasury. If public funds were siphoned in the background, a new market is not development—it is just public theft covered with fresh paint. As citizens, our duty is to demand both: functional spaces for our traders and absolute integrity from those holding the checkbook.\n\nKwa ufupi: Kujenga vibanda vya soko pekee haitoshi. Kiongozi bora lazima azingatie Sura ya Sita ya Katiba kwa kuweka hesabu wazi bila wizi. Tusiridhike na saruji huku fedha zetu za umma zikipotea bila maelezo.",
-    "voice_note": "Habari zenu. Quick thought for the week from Kenya on Record. Have you noticed how quickly politicians rush to launch market stalls whenever audit queries start making headlines? They bring cameras, hand over keys, and tell everyone to focus on work instead of politics. But let’s be sharp. Chapter Six of our Constitution demands integrity in public resource management. Building fifty stalls does not give anyone a license to loot fifty million shillings in the procurement process. You cannot cover up financial audit queries with fresh paint and ribbon-cutting ceremonies. Stalls are our right because we pay taxes; clean books are our constitutional demand. Next time your leader brags about a new market, ask to see the tender awards and the audit report. Delivery without financial honesty is just PR. Share this note with your local group.",
-    "sms": "Usiibiwe: New market stalls do not excuse dirty books. Demand audited procurement records alongside completed projects. Chapter Six matters.",
-    "reels": "Cutting a ribbon on new market stalls makes for a great photo op. But fresh paint cannot cover dirty books. Under Chapter Six of our Constitution, delivery must walk hand in hand with integrity. When public funds are looted through inflated tenders, a completed stall is not a victory—it’s evidence. Don’t just applaud the concrete. Check the receipts. Demand clean financial records from your leaders."
+    "radio": "Sasa, wasikilizaji wa Kenya on Record. Karibu kwenye kipindi cha leo ambapo tunaweka kidole kwenye jeraha la pesa za umma. Wiki hii, tunachunguza zabuni za halmashauri za kaunti ambazo zinaonekana kuota mbawa kabla hata miradi haijaanza. Tumeona ripoti mpya ikionyesha jinsi mamilioni ya ushuru wako yanalipwa kwa kampuni za hewa—kampuni ambazo hazina hata ofisi ya mwili, lakini zinapokea mamilioni kwa 'ushauri' na 'usafirishaji wa hewa'. Hii sio tu ufisadi mdogo mdogo; huu ni wizi wa wazi unaoacha hospitali zetu bila dawa na shule zetu bila madawati. Mwananchi, pesa hizi sio za mifuko ya wanasiasa. Ni jasho lako. Tunahitaji kuuliza maswali magumu kwa viongozi wetu wa kaunti. Usikae kimya wakati haki yako inapokanyagwa. Kaa macho na ufuatilie Kenya on Record kwa ukweli wote.\n\n[Swahili summary: Kenya on Record inaangazia ufisadi katika kaunti ambapo mamilioni ya pesa za umma zinalipwa kampuni za uwongo kwa kazi ambazo hazijafanywa, huku huduma za wananchi zikidorora.]",
+    "voice_note": "Wadau, habari zenu. Hapa Kenya on Record. Angalieni sana hizi kampuni mpya zinazopata zabuni kubwa za kaunti bila historia yoyote. Tumegundua kampuni nyingi za 'briefcase' zinazofuja ushuru wenu kwa njia ya 'consultancy' na huduma za hewa. Hospitali hazina dawa, lakini wanafanya malipo ya mamilioni usiku. Tembelea kurasa zetu uone majina. Usiwe mtazamaji tu, simama upinge wizi huu.",
+    "sms": "Kenya on Record: Usikubali ushuru wako ufujwe na kampuni za hewa kaunti. Kagua zabuni, uliza maswali, simamia haki yako. Usiibiwe!",
+    "reels": "[Visual: A serious, well-lit Kenyan host holding a document stamped 'APPROVED' while shaking their head in disbelief.]\n\nHost (Voice-Over): 'Milioni mia moja za kaunti zimeenda wapi? Kampuni ya siku tatu imelipwa milioni hamsini kwa \"ushauri wa hewa\", wakati hospitali ya mtaa haina hata panadol! Hii ndiyo pesa yako ya ushuru. Usilaze damu. Kagua, uliza, na usinyamaze. Fuatilia Kenya on Record kwa ukweli wote.'"
   },
   "spend_usd": 0.0,
   "revision": 8
