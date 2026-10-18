@@ -1,157 +1,182 @@
 {
-  "fetched": "2026-10-18T10:54:49.745143+00:00",
+  "fetched": "2026-10-18T14:02:08.969794+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "leeds vs man utd",
+      "title": "manchester united",
+      "traffic": "5000+",
+      "news": [
+        {
+          "title": "Leeds United v Manchester United: Premier League – live",
+          "url": "https://www.theguardian.com/football/live/2026/oct/18/leeds-v-manchester-united-premier-league-live",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Leeds vs Manchester United LIVE: score and goal updates as Martinez starts but no Mainoo or Shaw",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/leeds-vs-manchester-united-live-34773629",
+          "source": "Manchester Evening News"
+        },
+        {
+          "title": "WATCH: Mbeumo slides in to put Man Utd ahead at rivals Leeds",
+          "url": "https://www.101greatgoals.com/football/watch-mbeumo-slides-in-to-put-man-utd-ahead-at-rivals-leeds/",
+          "source": "101 Great Goals"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "flashscore",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Premier League predictions & Jones Knows' best bets: Leeds vs Manchester United and more",
-          "url": "https://www.skysports.com/football/news/13598732/premier-league-predictions-and-jones-knows-best-bets-leeds-vs-manchester-united-and-more",
+          "title": "Viktor Gyokeres playing like he knows Arsenal don’t need him",
+          "url": "https://www.thetimes.com/sport/football/article/viktor-gyokeres-arsenal-rxs2w5w8z",
+          "source": "The Times"
+        },
+        {
+          "title": "Viktor Gyokeres 'tax' warning rings true as Jekyll-and-Hyde Arsenal striker looks utterly lost",
+          "url": "https://www.football.london/arsenal-fc/news/viktor-gyokeres-arsenal-sweden-sporting-34774711",
+          "source": "Football London"
+        },
+        {
+          "title": "Mikel Arteta Defends Viktor Gyökeres: 'This is just a phase!'",
+          "url": "https://sports.yahoo.com/articles/mikel-arteta-defends-viktor-gy-113504102.html",
+          "source": "Yahoo Sports"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "como",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Quedan boletos para el GP Estados Unidos 2026: cómo comprar y precios de la carrera en Austin",
+          "url": "https://www.sportingnews.com/us-es/tickets/news/quedan-boletos-f1-austin-como-comprar-precios/d500897d68201782b07f4fad",
+          "source": "www.sportingnews.com"
+        },
+        {
+          "title": "Franco Colapinto: día, hora y lugar de su próximo Gran Premio en la Fórmula 1",
+          "url": "https://deportv.gob.ar/motor/franco-colapinto-dia-hora-formula-1-nid:18067",
+          "source": "DeporTV"
+        },
+        {
+          "title": "La F1 ya se instala en Austin, sede del GP de Estados Unidos",
+          "url": "https://campeones.com.ar/la-f1-ya-se-instala-en-austin-sede-del-gp-de-estados-unidos/",
+          "source": "Campeones"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "football live",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Erling Haaland scores twice as Manchester City beat Ipswich Town",
+          "url": "https://www.bbc.com/sport/football/live/cky83qp9z4v2t",
+          "source": "BBC"
+        },
+        {
+          "title": "Man City 3-2 Ipswich: Erling Haaland's incredible scoring run continues as Enzo Maresca's side continue to weather storm",
+          "url": "https://www.skysports.com/football/news/13598864/man-city-3-2-ipswich-erling-haalands-incredible-scoring-run-continues-as-enzo-marescas-side-continue-to-weather-storm",
           "source": "Sky Sports"
         },
         {
-          "title": "Team news for Leeds away",
-          "url": "https://www.manutd.com/en/news/team-news-for-leeds-v-united-18-october-2026",
-          "source": "Manchester United"
+          "title": "Haaland helps Maresca achieve record start as Manchester City defeat Ipswich",
+          "url": "https://www.theguardian.com/football/2026/oct/17/manchester-city-ipswich-premier-league-match-report",
+          "source": "The Guardian"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "manu",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Transfer news LIVE: Shock Arsenal targets; Man Utd double deal",
+          "url": "https://www.standard.co.uk/sport/football/transfer-news-live-arsenal-fc-chelsea-man-utd-liverpool-schade-alvarez-scott-b1284294.html",
+          "source": "London Evening Standard"
         },
         {
-          "title": "Leeds United vs Manchester United: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cwzrdvx44pkpt",
+          "title": "Arsenal’s January targets rated, from Kenan Yildiz to Julián Álvarez",
+          "url": "https://onefootball.com/en/news/arsenals-january-targets-rated-from-kenan-yildiz-to-julian-alvarez-43609748",
+          "source": "OneFootball"
+        },
+        {
+          "title": "Arsenal signing on as Chelsea agreement confirmed",
+          "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/10/arsenal-chelsea-man-utd-transfer-news-julian-alvarez-cole-palmer-joshua-zirkzee-murillo-footballtransfers-recap",
+          "source": "FootballTransfers.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "live football tv",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Oregon likely to start Brock Thomas at QB: Ducks make key change as CFP hopes hang in balance",
+          "url": "https://www.cbssports.com/college-football/news/oregon-brock-thomas-starting-qb-dylan-raiola-cfp-hopes/",
+          "source": "CBS Sports"
+        },
+        {
+          "title": "Licensable picture: NCAA Football: Nebraska at Oregon",
+          "url": "https://www.reutersconnect.com/item/ncaa-football-nebraska-at-oregon/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAxMjE0ODI",
+          "source": "Reuters Connect"
+        },
+        {
+          "title": "Nebraska's Matt Rhule after loss to Oregon",
+          "url": "https://omaha.com/video/sports/video_bc4591bb-3625-5f2f-986c-8e84c32aa8b7.html",
+          "source": "Omaha World-Herald"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "fc salzburg vs scr altach",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Season ticket gift can be collected from team bus on Sunday",
+          "url": "https://www.redbullsalzburg.at/en/recent/news/dauerkarten-geschenk-2026-27",
+          "source": "Red Bull Salzburg"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "aston villa vs liverpool",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Aston Villa vs Liverpool: Women's Super League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cqj9kegrrp8gt",
           "source": "BBC"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "chelsea vs tottenham",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "WSL LIVE: Build-up to six games - team news, radio commentary, text & score updates & match stats",
-          "url": "https://www.bbc.com/sport/football/live/cw8r6r0d4y7pt",
-          "source": "BBC"
         },
         {
-          "title": "Confirmed Chelsea Women line up vs Tottenham | News | Official Site",
-          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-tottenham-wsl",
-          "source": "Chelsea Football Club"
+          "title": "LFC Women team news: Vivien Endemann, Lucy Parry and Mari Ward set to return",
+          "url": "https://www.liverpoolfc.com/news/lfc-women-team-news-vivien-endemann-lucy-parry-and-mari-ward-set-to-return",
+          "source": "Liverpool FC"
         },
         {
-          "title": "Martin Ho: Tottenham Women boss on summer signings, WSL start and facing Chelsea and Arsenal",
-          "url": "https://www.skysports.com/football/news/13598902/martin-ho-tottenham-women-head-coach-on-summer-transfer-window-wsl-start-and-facing-chelsea-and-arsenal",
-          "source": "Sky Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "sociedad vs barcelona",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Real Sociedad - Barcelona, en directo: Liga F Moeve, hoy en vivo",
-          "url": "https://as.com/futbol/femenino/real-sociedad-barcelona-en-directo-liga-f-moeve-hoy-en-vivo-f202610-n/",
-          "source": "Diario AS"
-        },
-        {
-          "title": "Zubieta examina la metamorfosis azulgrana",
-          "url": "https://www.diariovasco.com/real-sociedad/femenino/zubieta-examina-metamorfosis-azulgrana-20261017090520-nt.html",
-          "source": "El Diario Vasco"
-        },
-        {
-          "title": "Horario, canal y dónde ver por TV el Real Sociedad - Barça femenino de la Liga F",
-          "url": "https://www.mundodeportivo.com/horarios/futbol/20261017/1004239626/horario-canal-ver-tv-real-sociedad-barca-femenino-liga-f.html",
-          "source": "Mundo Deportivo"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "fiorentina vs como",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "@@&[𝐋𝐈𝐕𝐄-𝐓𝐕!!!] Fiorentina v Como Live ONLINE free Soccer Match 18 October 2026 Right Now",
-          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3h2aWRlb2luZG8uZ2l0aHViLmlvL2xld3JhdmlkZW8vZmlsZTE0LnhtbCIvPjwva3JwYW5vPg==&id=fiorentina-v-como-liv-cast-en-us-669-mrxjh02929",
-          "source": "Universidad de Córdoba (UCO)"
-        },
-        {
-          "title": "Fiorentina y Como 1907 se miden por la fecha 7",
-          "url": "https://anecdotarios.com/2026/10/18/fiorentina-vs-como-1907-previa-horario-y-como-llegan-para-la-fecha-7/",
-          "source": "Anecdotarios"
-        },
-        {
-          "title": "Fiorentina-Como EN DIRECTO: goles, jugadas destacadas y ficha del partido",
-          "url": "https://es-us.noticias.yahoo.com/deportes/fiorentina-directo-goles-jugadas-destacadas-074356624.html",
-          "source": "Yahoo"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "tanzania",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Tanzania tightens border controls as Ebola cases rise in Kenya",
-          "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/-tanzania-tightens-border-controls-as-ebola-cases-rise-in-kenya-5636248",
-          "source": "The EastAfrican"
-        },
-        {
-          "title": "Tanzania Announces New Travel Rules Affecting Kenyans as Ebola Cases Rises to 7",
-          "url": "https://www.kenyans.co.ke/news/127926-tanzania-introduces-mandatory-ebola-screening-21-day-monitoring-high-risk-travelers",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "“With Immediate Effect”: Tanzania tightens checks as 7 Ebola cases hit Kenya",
-          "url": "https://www.tuko.co.ke/world/africa/643580-tanzania-issues-ebola-travel-advisory-kenya-confirms-7-cases-immediate-effect/",
-          "source": "Tuko News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "fiorentina vs como prediction",
-      "traffic": "100+",
-      "news": []
-    },
-    {
-      "geo": "KE",
-      "title": "leverkusen vs freiburg",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "SC Freiburg spielt in Leverkusen: Der Tabellenführer ist gefordert",
-          "url": "https://breisgau.live/breisgaunews/sc-freiburg-spielt-in-leverkusen-der-tabellenfuehrer-ist-gefordert/",
-          "source": "BreisgauLIVE"
-        },
-        {
-          "title": "Kurzpässe: Die Heimstärke gegen den Tabellenführer zeigen",
-          "url": "https://www.bayer04.de/de-de/news/bundesliga/kurzpaesse-die-heimstaerke-gegen-den-tabellenfuehrer-zeigen",
-          "source": "Bayer04.de"
-        },
-        {
-          "title": "Leipzig unsicher: Bayern drängen auf das zweite Tor – 1:0 | Bundesliga | Liveticker",
-          "url": "https://www.t-online.de/sport/live-ticker/fussball/bundesliga/sdc_fm-59333/leipzig-unsicher-bayern-draengen-auf-das-zweite-tor-1-0-bundesliga-liveticker.html",
-          "source": "T-Online"
+          "title": "Women’s Super League Predictions: Liverpool fancied for victory at 17/20",
+          "url": "https://news.williamhill.com/football/womens-super-league-predictions/",
+          "source": "William Hill News"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "real madrid vs sevilla",
-      "why": "unsafe: 'Betting'"
+      "title": "football live stream",
+      "why": "unsafe: 'odds'"
     },
     {
-      "title": "udinese vs lecce",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "ac milan vs atalanta",
-      "why": "unsafe: 'Betting'"
+      "title": "live football streaming",
+      "why": "unsafe: 'missing'"
     }
   ],
   "errors": {}
