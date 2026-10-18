@@ -167,9 +167,11 @@
       "caption": "Chapter Six demands integrity, accountability, and honest service from every leader in public office. We look at the records without fear or favour. Read the standards and know your rights.\n\n#ChapterSix #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-21T18:30:00+03:00",
-      "status": "awaiting",
+      "status": "needs_human",
       "guard": {
-        "errors": [],
+        "errors": [
+          "held by Claude on inspection: measures 'elected leaders', not one named leader"
+        ],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
