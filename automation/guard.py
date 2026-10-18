@@ -595,7 +595,7 @@ def check(post: dict) -> Report:
 PRICE_SERIES, MYTH_SERIES = {"The Real Price", "Guess the Price"}, {"Myth or Fact"}
 PRICE_WORDS = re.compile(r"\b(price|prices|priced|cost|costs|costlier|cheaper|sh\s?\d|ksh|unga|maize|flour|fuel|petrol|"
                          r"diesel|kerosene|fares?|rent|fees?|tariffs?|sugar|bread|milk|cooking gas|lpg|electricity|tokens|"
-                         r"bundles?|inflation|cpi)\b", re.I)
+                         r"bundles?|inflation|cpi|exchange rate|shilling|dollar)\b", re.I)
 RUMOUR_WORDS = re.compile(r"\b(fake|false|hoax|rumou?rs?|misinformation|disinformation|fact.?check|debunk\w*|viral|"
                           r"not true|misleading|scam|warns?|alert|pesacheck|africa check)\b", re.I)
 OLD_NAMES = {"money": "Follow the Money", "straight": "Set It Straight", "glasspoll": "Your Say"}
@@ -646,9 +646,12 @@ def series_rules(post: dict, rep: "Report") -> None:
             rep.errors.append("the price must come from a report about that price (KNBS, EPRA, a newsroom's price "
                               "story); none of the linked sources is about a price. Pick an item whose price is in "
                               "the news list, or an official price list")
-        if (series == "Guess the Price" or angle == "price_quiz") and post.get("beats") \
-                and "answer" not in str(post["beats"][-1]).lower():
-            rep.errors.append("Guess the Price: the LAST beat must give the answer ('The answer is B: ...')")
+        if (series == "Guess the Price" or angle == "price_quiz") and post.get("beats"):
+            last = str(post["beats"][-1]).lower()
+            values = [re.sub(r"^[ab]\s*[:.)-]\s*", "", str(o).lower()).strip() for o in post.get("options") or []]
+            if "answer" not in last or not any(v and v in last for v in values):
+                rep.errors.append("Guess the Price: the LAST beat must reveal the answer with its price ('The answer "
+                                  "is B: Sh160 for 2kg in Nairobi.')")
     if series in MYTH_SERIES or angle == "myth":
         if not RUMOUR_WORDS.search(_reports(post)):
             rep.errors.append("Myth or Fact needs proof the claim is really circulating: a fact-check (PesaCheck, "
@@ -658,6 +661,10 @@ def series_rules(post: dict, rep: "Report") -> None:
                                         str(post.get("question") or "") + " " + str(post.get("hook") or ""), re.I):
         rep.errors.append("never ask Kenyans to assign blame for violence, a clash or a crime: ask what should "
                           "happen next, or what a public office must do")
+    if tpl == "scorecard" and re.search(r"\b(leaders|officials|politicians|mps|governors|elected|everyone|all)\b",
+                                        str(post.get("who") or ""), re.I):
+        rep.errors.append("The Chapter Six Test measures ONE named leader or candidate (who = 'Firstname Lastname'), "
+                          "never a group")
     mismatch = story_mismatch(post)
     if mismatch:
         rep.errors.append(mismatch)

@@ -66,6 +66,7 @@ class SeriesRules(unittest.TestCase):
 
     def test_price_needs_a_price_report_and_the_quiz_its_answer(self):
         post = {"template": "glasspoll", "series": "Guess the Price", "question": "How much is 2kg of unga now?",
+                "options": ["A: Sh140", "B: Sh160"],
                 "beats": ["How much?", "A or B?", "Comment!"],
                 "source_links": [{"title": "Luxury car stolen in UK traced to Nairobi"}]}
         e = self.errs(post)
