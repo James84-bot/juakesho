@@ -6,365 +6,194 @@
       "id": "2026-w43-d1-usiibiwe-r8",
       "template": "usiibiwe",
       "lane": "hustle",
-      "sender": "+254 7XX XXX XXX",
-      "sms": "Dear Customer, your M-Pesa account will be blocked today. Click link to verify your ID.",
-      "tips": [
-        "Safaricom never asks for your secret numbers via text messages.",
-        "Never share your ID number or secret numbers with strangers.",
-        "Report suspicious numbers to the Safaricom fraud team immediately."
-      ],
+      "message": "Court issues arrest warrants for missing suspects in Sh3.9bn tax fraud.",
+      "action": "Report suspicious tax invoices to the DCI or KRA hotline",
       "beats": [
-        "Scammers are sending text links to block your mobile account.",
-        "Safaricom never asks for your secret numbers via a text message.",
-        "Do not click the link or share your personal details online.",
-        "Kenyans demand: Safaricom block fraudulent lines instantly."
+        "Courts issued *warrants* for missing suspects in a tax fraud.",
+        "Investigators uncovered fake invoices used to drain public funds.",
+        "Kenyans pay the price when billions vanish through tax fraud.",
+        "Kenyans demand: the DCI publishes all suspects on the run."
       ],
-      "message": "Never click text links claiming your M-Pesa account will be blocked.",
-      "action": "Report suspicious messages to Safaricom by forwarding them to 333.",
-      "photo_query": "mobile phone screen message Kenya",
-      "title": "Scammers target M-Pesa",
-      "caption": "A new text scam claims your line faces immediate blocking unless you click a link. Safaricom never asks for your details over text. Stay alert and protect your hard-earned cash.\n\nSend this to your family group.\n\n#Usiibiwe #KenyaOnRecord",
-      "source": "KBC Digital, 2026-10-17",
-      "side": "none",
-      "tone": "explainer",
+      "photo_query": "Kenyan shilling banknotes",
+      "title": "Sh3.9bn Tax Fraud Arrest Warrants",
+      "sender": "+254 7XX XXX XXX",
+      "sms": "Verify all your tax invoices and KRA tax certificates before filing returns.",
+      "tips": [
+        "Check all tax invoices against the official KRA portal.",
+        "Report unregistered entities selling goods without papers.",
+        "Demand official receipts for every transaction."
+      ],
+      "source": "Daily Nation, 2026-10-16",
+      "caption": "Sh3.9 billion lost in a fake tax invoice scheme. The court has now issued arrest warrants for the suspects on the run. Verify your transactions.\n\nWho should face court first? Drop it below.\n\n#Usajili #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-19T07:30:00+03:00",
+      "side": "none",
+      "tone": "criticism",
       "source_links": [
         {
-          "outlet": "KBC Digital",
-          "title": "Detectives recover Land Rover Discovery stolen in UK",
-          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOYzh3UGZfdkVmZzhTblpXU3M2NUVsVWl1X0ptR3JkOVlWbEx3RDRUa0x5R1MyVzRjT091TmhJbmltT29pTkZ1Zld1UWV0VW9QVkV6aU9Tcnl2T3d3QWxzRmVUdm1zZk82TV84R1d2SkJ2aG9LckxWTVlqZ002TmlBNDV3Tk5VbTZvN3ZlcmpsUnFzWEZld0dtcmJpUWprc29wbmN4ZUF1TzBfd29PclBLXw?oc=5",
-          "published": "2026-10-17"
+          "outlet": "Daily Nation",
+          "title": "Sh3.9bn VAT fraud: Court issues arrest warrants for missing suspects",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM25uZm5rTWM1RmVTN2lQTWVNT1N3cHYtNER0YkxrME42blNlNEtXekoxcDJzNFlERTMyQUxMSDRta296UnE3dHVjMzA5YkR3VG9lWFpib1dfRXhCcFBTcUV0eGw3aGVHZ2pZOVRBZ2c4WmdySEJCRS0yYkFxWGg0a2k2czJ6Q1NpQjBHZHQ5aWJBb2pNVjVNQUFBRXk0M0VPekJrQUhMTWZqNm9jSDRON2F3?oc=5",
+          "published": "2026-10-16"
         }
       ],
-      "status": "needs_human",
+      "material": {
+        "kind": "scam",
+        "key": "news:https://news.google.com/rss/articles/CBMisgFBVV95cUxOM25uZm5rTWM1RmVTN2lQTWVNT1N3cHYtNER0YkxrME42blNlNEtXekoxcDJzNFlERTMyQUxMSDRta296UnE3dHVjMzA5YkR3VG9lWFpib1dfRXhCcFBTcUV0eGw3aGVHZ2pZOVRBZ2c4WmdySEJCRS0yYkFxWGg0a2k2czJ6Q1NpQjBHZHQ5aWJBb2pNVjVNQUFBRXk0M0VPekJrQUhMTWZqNm9jSDRON2F3?oc=5",
+        "title": "Sh3.9bn VAT fraud: Court issues arrest warrants for missing suspects",
+        "outlet": "Daily Nation",
+        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM25uZm5rTWM1RmVTN2lQTWVNT1N3cHYtNER0YkxrME42blNlNEtXekoxcDJzNFlERTMyQUxMSDRta296UnE3dHVjMzA5YkR3VG9lWFpib1dfRXhCcFBTcUV0eGw3aGVHZ2pZOVRBZ2c4WmdySEJCRS0yYkFxWGg0a2k2czJ6Q1NpQjBHZHQ5aWJBb2pNVjVNQUFBRXk0M0VPekJrQUhMTWZqNm9jSDRON2F3?oc=5",
+        "published": "2026-10-16"
+      },
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "the linked report is not about this story (Detectives recover Land Rover Discovery stolen in UK): use the headline id of the report this post is really based on"
-        ],
+        "errors": [],
         "warnings": []
       },
       "critic": {
         "hook": 8,
-        "send": 8,
+        "send": 7,
         "clarity": 8,
-        "fresh": 8,
+        "fresh": 7,
         "voice": 8,
         "craft": 8,
         "picture": 8,
         "hold": 8,
         "demand": 8,
-        "action": 8,
-        "fair": 8,
+        "action": 7,
+        "fair": 7,
         "impact": 8,
-        "avg": 8.0,
-        "note": "the single most important fix, in one sentence"
+        "avg": 7.7,
+        "note": "Action must name a specific official reporting desk at the DCI instead of a generic hotline."
       },
-      "drafted_at": "2026-10-18T05:24:34.976573+03:00"
+      "drafted_at": "2026-10-18T06:15:42.936424+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d1-usiibiwe-r8-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127809-bungoma-teacher-accused-demanding-ksh300000-bribe-secure-tsc-jobs-arrested",
+      "voiced": "Kenyan accent",
+      "reel": true,
+      "tg_msg": 310
     },
     {
       "id": "2026-w43-d2-kenya-r8",
       "template": "kenya",
       "lane": "diaspora",
       "series": "Kenya at its best",
-      "place": "Aberdare National Park",
-      "line": "Discover the stunning *waterfalls* and misty peaks of the Aberdare ranges.",
-      "fact": "Established in 1950, the park spans 767 square kilometres and sits at over 3,000 metres above sea level.",
-      "source": "The Eastleigh Voice, 2026-10-17",
-      "side": "none",
-      "tone": "credit",
+      "message": "Hell's Gate National Park covers 68 square kilometres on the Rift Valley floor.",
+      "action": "Plan a weekend visit to Naivasha and explore the gorges",
+      "beats": [
+        "Hell's Gate Park sits on the *Rift* Valley floor.",
+        "Gazetted in 1984 across 68 square kilometres.",
+        "Visitors enjoy towering cliffs and steam vents."
+      ],
+      "photo_query": "Hell's Gate National Park Kenya",
+      "place": "Hell's Gate, Naivasha",
+      "line": "Explore the dramatic cliffs and geothermal wonders of *Hell's* Gate National Park.",
+      "fact": "Gazetted in 1984, the park covers about 68 square kilometres of cliffs, gorges and geothermal steam on the Rift Valley floor.",
+      "source": "https://kws.go.ke/park/hells-gate-national-park/",
+      "caption": "Breathtaking cliffs, towering gorges and natural steam vents at Hell's Gate National Park. Gazetted in 1984 across 68 square kilometres in Naivasha.\n\nSend this to someone who needs a weekend road trip.\n\n#KenyaAtItsBest #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-20T12:45:00+03:00",
-      "beats": [
-        "The Aberdare ranges offer breathtaking *waterfalls* and rich wildlife.",
-        "The park covers 767 square kilometres of protected forest.",
-        "Plan your weekend trip to Nyeri or Nyandarua counties."
-      ],
-      "message": "Aberdare National Park covers 767 square kilometres of stunning mountain scenery.",
-      "action": "Plan a weekend trip and support local conservation efforts.",
-      "photo_query": "Aberdare National Park Kenya",
-      "caption": "Misty peaks, roaring waterfalls and deep bamboo forests. The Aberdare ranges remain one of our finest natural treasures.\n\nTag someone you are taking on a road trip here.\n\n#KenyaAtItsBest #KenyaOnRecord",
+      "side": "none",
+      "tone": "credit",
       "source_links": [
         {
-          "outlet": "The Eastleigh Voice",
-          "title": "Kenyan shilling shrugs off risks to sustain two-year stability around Sh129",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNejVQSVEtNk8wMW0tbUQwbUVTbG1mTGlQSVU0SXpwdkhyc0s3SnNPWVh2djNydTR0QVNEV1NmdjlmVjRxUVBaZU9qNkFrVExES201TGZIRU5UYlVyYlZYRENmZm9wUmM3N2h0MDNrTlVmUzYxYW1lTS1pT3NzTnNLUzg0dUF4djlmTHE1TmlkUU9sbklKZVdVeGdYclNONGV1QUNBZ3M0Tk5LSVdZWEwwelpmNnRFV3JsbWg3UktKcDdLTHpF?oc=5",
-          "published": "2026-10-17"
+          "outlet": "Kenya Wildlife Service",
+          "title": "Hell's Gate National Park: Gazetted in 1984, the park covers about 68 square kilometres of cliffs, gorges and geothermal steam on the Rift Valley floor.",
+          "link": "https://kws.go.ke/park/hells-gate-national-park/",
+          "published": ""
         }
       ],
-      "status": "needs_human",
+      "material": {
+        "kind": "bank",
+        "key": "bank:hells-gate",
+        "id": "hells-gate",
+        "series": "Kenya at its best",
+        "place": "Hell's Gate, Naivasha",
+        "name": "Hell's Gate National Park",
+        "fact": "Gazetted in 1984, the park covers about 68 square kilometres of cliffs, gorges and geothermal steam on the Rift Valley floor.",
+        "source": "https://kws.go.ke/park/hells-gate-national-park/",
+        "outlet": "Kenya Wildlife Service",
+        "photo_query": "Hell's Gate National Park Kenya"
+      },
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "the linked report is not about this story (Kenyan shilling shrugs off risks to sustain two-year stability around Sh129): use the headline id of the report this post is really based on"
-        ],
+        "errors": [],
         "warnings": []
       },
       "critic": {
         "hook": 8,
         "send": 8,
-        "clarity": 8,
-        "fresh": 8,
+        "clarity": 9,
+        "fresh": 7,
         "voice": 8,
         "craft": 8,
-        "picture": 8,
+        "picture": 9,
         "hold": 8,
-        "demand": 8,
+        "demand": 7,
         "action": 8,
-        "fair": 8,
-        "impact": 8,
-        "avg": 8.0,
-        "note": "the single most important fix, in one sentence"
+        "fair": 7,
+        "impact": 7,
+        "avg": 7.8,
+        "note": "Solid evergreen post with clean detail on park dimensions."
       },
-      "drafted_at": "2026-10-18T05:24:34.976582+03:00"
+      "drafted_at": "2026-10-18T06:15:42.936433+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d2-kenya-r8-photo.jpg",
+      "photo_credit": "Photo: Superchilum / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Hell%27s_Gate_National_Park_(Kenya)_43.jpg",
+      "voiced": "Kenyan accent",
+      "reel": true,
+      "tg_msg": 311
     },
     {
       "id": "2026-w43-d3-scorecard-r8",
       "template": "scorecard",
       "lane": "hustle",
+      "message": "William Ruto must be measured against Chapter Six integrity tests and delivery records.",
+      "action": "Check elected representative scorecards on parliament.go.ke",
+      "beats": [
+        "Every leader is measured against Chapter *Six*.",
+        "Public conduct and audit reports form the test.",
+        "Voters must check records before the election.",
+        "Kenyans demand: William Ruto publishes his scorecard."
+      ],
+      "photo_query": "Kenyan National Assembly",
       "who": "William Ruto",
       "office": "President of Kenya",
-      "verdict": "Chapter Six demands public integrity and fiscal responsibility.",
-      "source": "Daily Nation, 2026-10-17",
-      "side": "government",
-      "tone": "criticism",
-      "impact": "Decides how public funds and development priorities are managed in your county.",
-      "where": "National",
-      "when": "17 Oct 2026",
-      "checks": [
-        {
-          "test": "Declared all financial interests.",
-          "result": "pass",
-          "note": "Checked via official leadership integrity filings."
-        },
-        {
-          "test": "Maintains personal integrity.",
-          "result": "unclear",
-          "note": "Requires ongoing audit verification."
-        },
-        {
-          "test": "Demonstrates public accountability.",
-          "result": "pass",
-          "note": "Project launches recorded across counties."
-        },
-        {
-          "test": "Respects public participation laws.",
-          "result": "unclear",
-          "note": "Legal petitions pending in court."
-        }
-      ],
-      "beats": [
-        "Chapter Six requires leaders to serve with *integrity*.",
-        "Voters check records on spending and public participation.",
-        "Hold your leaders accountable for every shilling spent.",
-        "Kenyans demand: Parliament publish all development fund audits."
-      ],
-      "message": "Chapter Six of our Constitution sets strict standards for all elected leaders.",
-      "action": "Read your local CDF allocation report on parliament.go.ke.",
-      "photo_query": "Kenya National Assembly",
-      "caption": "Leadership is about public service, not personal gain. Measure every elected official against the standards of Chapter Six.\n\nWhat is the presidential track record?\n\n#ChapterSix #KenyaOnRecord",
+      "verdict": "Check records, audit findings and public conduct before 2027.",
+      "source": "Constitution of Kenya, Chapter Six (Articles 73-80)",
+      "caption": "Leadership is measured by records, not promises. Chapter Six sets the standard for integrity, public service and accountability.\n\nWhat grade does William Ruto get this term? Let us know.\n\n#Scorecard #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-21T18:30:00+03:00",
-      "source_links": [
-        {
-          "outlet": "Daily Nation",
-          "title": "Ruto takes re-election pitch to Eldoret home turf, defends UDA-ODM pact",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTElZVEVjak5YY3FZbnQzRktEUW9Vb2tFdTZGMG1MYVBpbXlJYmg5SDJkNWY2Wkh6UFRkb0VJZjRiNnpwSkp4SVFRTGtUdkVwM0JjRG1JekRiQ0Q1b3p1dlFCZENHenFrWlZkZlFzUklTNThJV2ROUWJ0a2Y3Q2RrUUJMM0d4dEVWZnFYbW13YXVmZklYc2dBSEdibHNHWE4yOFg5VHRoX3kwNVZiN21iektjZThWR1ozWnFVNQ?oc=5",
-          "published": "2026-10-17"
-        }
-      ],
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "the linked report is not about this story (Ruto takes re-election pitch to Eldoret home turf, defends UDA-ODM pact): use the headline id of the report this post is really based on"
-        ],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "critic": {
-        "hook": 8,
-        "send": 8,
-        "clarity": 8,
-        "fresh": 8,
-        "voice": 8,
-        "craft": 8,
-        "picture": 8,
-        "hold": 8,
-        "demand": 8,
-        "action": 8,
-        "fair": 8,
-        "impact": 8,
-        "avg": 8.0,
-        "note": "the single most important fix, in one sentence"
-      },
-      "drafted_at": "2026-10-18T05:24:34.976585+03:00"
-    },
-    {
-      "id": "2026-w43-d4-glasspoll-r8",
-      "template": "glasspoll",
-      "lane": "everyone",
-      "series": "Guess the Price",
-      "angle": "price_quiz",
-      "hook": "Guess the price",
-      "question": "How much is a 2kg packet of unga?",
-      "cta": "Comment A or B",
-      "options": [
-        "A: Sh140",
-        "B: Sh160"
-      ],
-      "beats": [
-        "Test your knowledge on everyday shopping costs on 14 Oct.",
-        "How much does a standard 2kg packet of unga cost in Nairobi?",
-        "Option A is Sh140 and Option B is Sh160.",
-        "The answer is B: Sh160 for 2kg in Nairobi."
-      ],
-      "message": "Test your knowledge on current market prices for essential food items.",
-      "action": "Comment A or B with your guess before checking replies.",
-      "photo_query": "supermarket maize flour Kenya",
-      "caption": "Let us test your market knowledge today. How much does a standard 2kg packet of unga cost in Nairobi supermarkets right now?\n\nVote A or B in the comments.\n\n#GuessThePrice #KenyaOnRecord",
-      "source": "The Eastleigh Voice, 2026-10-17",
-      "side": "none",
+      "side": "government",
       "tone": "explainer",
-      "bg": "usiku",
-      "publish_at": "2026-10-22T19:30:00+03:00",
-      "size": "story",
-      "source_links": [
-        {
-          "outlet": "The Eastleigh Voice",
-          "title": "Kenyan shilling shrugs off risks to sustain two-year stability around Sh129",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNejVQSVEtNk8wMW0tbUQwbUVTbG1mTGlQSVU0SXpwdkhyc0s3SnNPWVh2djNydTR0QVNEV1NmdjlmVjRxUVBaZU9qNkFrVExES201TGZIRU5UYlVyYlZYRENmZm9wUmM3N2h0MDNrTlVmUzYxYW1lTS1pT3NzTnNLUzg0dUF4djlmTHE1TmlkUU9sbklKZVdVeGdYclNONGV1QUNBZ3M0Tk5LSVdZWEwwelpmNnRFV3JsbWg3UktKcDdLTHpF?oc=5",
-          "published": "2026-10-17"
-        }
-      ],
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "'today': this post goes out days after it is written; use the date (e.g. 'on 14 Oct') instead",
-          "the linked report is not about this story (Kenyan shilling shrugs off risks to sustain two-year stability around Sh129): use the headline id of the report this post is really based on"
-        ],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 8,
-        "send": 8,
-        "clarity": 8,
-        "fresh": 8,
-        "voice": 8,
-        "craft": 8,
-        "picture": 8,
-        "hold": 8,
-        "demand": 8,
-        "action": 8,
-        "fair": 8,
-        "impact": 8,
-        "avg": 8.0,
-        "note": "the single most important fix, in one sentence"
-      },
-      "drafted_at": "2026-10-18T05:24:34.976587+03:00"
-    },
-    {
-      "id": "2026-w43-d5-straight-r8",
-      "template": "straight",
-      "lane": "campus",
-      "series": "Myth or Fact",
-      "angle": "myth",
-      "claim": "The government is distributing free laptops to all university students via WhatsApp links.",
-      "who": "Communications Authority",
-      "truth": "No such government gadget scheme exists for students.",
-      "pride": "Verify announcements on official sites.",
-      "claim_source": "Daily Nation, 2026-10-17",
-      "source": "Daily Nation, 2026-10-17",
-      "proof": [
-        "Official government programmes are gazetted and announced on state portals.",
-        "Clicking unknown links risks your personal data and phone security."
-      ],
-      "verdict": "false",
-      "side": "government",
-      "tone": "criticism",
-      "impact": "Protects students from losing private personal data to online fraudsters.",
+      "impact": "This shapes public accountability and voter choices in upcoming elections.",
       "where": "National",
-      "when": "17 Oct 2026",
-      "beats": [
-        "A viral message claims free government *laptops* are waiting for students.",
-        "The official record shows no such programme exists anywhere.",
-        "Always check verified government portals before sharing links.",
-        "Kenyans demand: Communications Authority block phishing domains."
-      ],
-      "message": "Viral claims about free student laptops via WhatsApp links are false.",
-      "action": "Check official ministry websites before clicking viral links.",
-      "photo_query": "university student using laptop Kenya",
-      "caption": "Do not fall for the viral free laptop scam doing rounds on student WhatsApp groups. If it sounds too good to be true, verify the source.\n\nSend this to your college group.\n\n#SetItStraight #KenyaOnRecord",
-      "bg": "usiku",
-      "publish_at": "2026-10-23T17:00:00+03:00",
-      "source_links": [
+      "when": "21 Oct 2026",
+      "checks": [
         {
-          "outlet": "Daily Nation",
-          "title": "When voter turns extortionist: Accounts from political aspirants",
-          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNa2c0R2o0U0R2b2hfZ2VjUXJ2SElQODlMUGNfWkZkWE05dmdLd0ZqWEdQd2N0b0xJTGZ6ckpPdk04aXlaSFZ2bTZqS2FfVGNZOHJ4blB3Z3Y0Z1RUTnFvM05vQkFzTFdDREx1Sl9sOHR5N3B1SlN2TFRfVW5hR01jNURwSkdYcEZwRWptb01pU0M5dmk5bkVpSGp5aWp6a1l6V055UGcwc25zVGN0Q3hQZw?oc=5",
-          "published": "2026-10-17"
+          "test": "Declared wealth publicly",
+          "result": "pass",
+          "note": "Required state officer wealth declarations filed with EACC."
+        },
+        {
+          "test": "No abuse of office findings",
+          "result": "unclear",
+          "note": "Auditor-General reports show queries on public expenditure."
+        },
+        {
+          "test": "Met public service integrity",
+          "result": "pass",
+          "note": "Assessed against Chapter Six requirements of the Constitution."
         }
       ],
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "Myth or Fact needs proof the claim is really circulating: a fact-check (PesaCheck, Africa Check) or a news report or official warning about the rumour. Never invent a viral message",
-          "the linked report is not about this story (When voter turns extortionist: Accounts from political aspirants): use the headline id of the report this post is really based on"
-        ],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 7,
-        "send": 8,
-        "clarity": 8,
-        "fresh": 7,
-        "voice": 7,
-        "craft": 8,
-        "picture": 7,
-        "hold": 7,
-        "demand": 3,
-        "action": 8,
-        "fair": 7,
-        "impact": 8,
-        "avg": 7.1,
-        "note": "Demand is low for this evergreen scam alert relative to the weekly news topics provided."
-      },
-      "drafted_at": "2026-10-18T05:24:34.976589+03:00"
-    },
-    {
-      "id": "2026-w43-d6-kenya-r8",
-      "template": "kenya",
-      "lane": "hustle",
-      "series": "Built in Kenya",
-      "place": "Nairobi Expressway",
-      "line": "The 27-kilometre *road* connects Jomo Kenyatta International Airport to Westlands.",
-      "fact": "Completed in 2022, the four-lane toll road significantly cuts down traffic across Nairobi.",
-      "source": "The Eastleigh Voice, 2026-10-17",
-      "side": "government",
-      "tone": "credit",
-      "bg": "usiku",
-      "publish_at": "2026-10-24T11:00:00+03:00",
-      "beats": [
-        "The Nairobi Expressway links the airport to the city centre.",
-        "The 27-kilometre road has transformed urban transit since 2022.",
-        "Drive safely and experience modern infrastructure in action."
-      ],
-      "message": "The Nairobi Expressway links JKIA to Westlands across 27 kilometres.",
-      "action": "Use the toll road to beat Nairobi traffic during rush hour.",
-      "photo_query": "Nairobi Expressway Kenya",
-      "caption": "Speeding above city traffic on the 27-kilometre Nairobi Expressway. A modern transport link built to keep our capital moving.\n\nHave you used this road this week?\n\n#BuiltInKenya #KenyaOnRecord",
-      "source_links": [
-        {
-          "outlet": "The Eastleigh Voice",
-          "title": "Kenyan shilling shrugs off risks to sustain two-year stability around Sh129",
-          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNejVQSVEtNk8wMW0tbUQwbUVTbG1mTGlQSVU0SXpwdkhyc0s3SnNPWVh2djNydTR0QVNEV1NmdjlmVjRxUVBaZU9qNkFrVExES201TGZIRU5UYlVyYlZYRENmZm9wUmM3N2h0MDNrTlVmUzYxYW1lTS1pT3NzTnNLUzg0dUF4djlmTHE1TmlkUU9sbklKZVdVeGdYclNONGV1QUNBZ3M0Tk5LSVdZWEwwelpmNnRFV3JsbWg3UktKcDdLTHpF?oc=5",
-          "published": "2026-10-17"
-        }
-      ],
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "the linked report is not about this story (Kenyan shilling shrugs off risks to sustain two-year stability around Sh129): use the headline id of the report this post is really based on"
-        ],
+        "errors": [],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
@@ -372,20 +201,247 @@
       "critic": {
         "hook": 7,
         "send": 7,
-        "clarity": 9,
-        "fresh": 7,
-        "voice": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
         "craft": 8,
-        "picture": 8,
+        "picture": 7,
         "hold": 7,
-        "demand": 3,
+        "demand": 8,
         "action": 7,
         "fair": 7,
-        "impact": 7,
-        "avg": 7.0,
-        "note": "Demand is low for this routine showcase piece compared to active political and health news."
+        "impact": 8,
+        "avg": 7.5,
+        "note": "Ensure the demand section points to specific accountability portals."
       },
-      "drafted_at": "2026-10-18T05:24:34.976591+03:00"
+      "drafted_at": "2026-10-18T06:15:42.936435+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-scorecard-r8-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/dp-kindiki-defends-rutos-development-record-frames-2027-polls-as-contest-between-delivery-and-empty-rhetoric/",
+      "voiced": "Kenyan accent",
+      "reel": true,
+      "tg_msg": 312
+    },
+    {
+      "id": "2026-w43-d4-glasspoll-r8",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "message": "Nyoro's PPK proposes Sh29 fuel price cut, calls for Sh5.5 billion subsidy after EPRA hike",
+      "action": "Comment A or B with your guess before checking the answer",
+      "beats": [
+        "Proposes Sh29 fuel price cut.",
+        "Option A is the old price.",
+        "Option B is the current price.",
+        "The answer is B: Sh192."
+      ],
+      "photo_query": "petrol station Kenya",
+      "hook": "Guess the fuel price!",
+      "question": "How much is petrol in Nairobi now?",
+      "cta": "Comment A or B",
+      "options": [
+        "A: Sh180 per litre",
+        "B: Sh192 per litre"
+      ],
+      "source": "The Eastleigh Voice, 2026-10-17",
+      "caption": "Test your knowledge on everyday living costs. Can you guess the current pump price in Nairobi after the EPRA review?\n\nComment A or B in the comments.\n\n#GuessThePrice #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-22T19:30:00+03:00",
+      "size": "story",
+      "series": "Guess the Price",
+      "angle": "price_quiz",
+      "side": "none",
+      "tone": "explainer",
+      "source_links": [
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "Nyoro's PPK proposes Sh29 fuel price cut, calls for Sh5.5 billion subsidy after EPRA hike",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTXJjTUh6djZSSVpNMlBxaTVVeS1fc25RNFFFemRMaldwNVF1UFNLVHZGUEpRUDkxNXNSVTV4bUFCbUZySkRLS3Q4Q3A5eS1iMjI4UUhSSF9JNkk0MFRnVV9Ed0FfdEdXT0NNYlJXY0NOejdYb3VjdUZ4cjBLUnM4WTY5bjFzZ0NGOUREa21oTXZqTEJmTFVUZ1RtSHpYQUpkblB2RjRSUkZBRlJiT3JLLVFqZWRwM3FKLU5Sckw1My1WYkxKTWQyX05KZ1JUUQ?oc=5",
+          "published": "2026-10-17"
+        }
+      ],
+      "material": {
+        "kind": "price_figure",
+        "key": "news:https://news.google.com/rss/articles/CBMizgFBVV95cUxQTXJjTUh6djZSSVpNMlBxaTVVeS1fc25RNFFFemRMaldwNVF1UFNLVHZGUEpRUDkxNXNSVTV4bUFCbUZySkRLS3Q4Q3A5eS1iMjI4UUhSSF9JNkk0MFRnVV9Ed0FfdEdXT0NNYlJXY0NOejdYb3VjdUZ4cjBLUnM4WTY5bjFzZ0NGOUREa21oTXZqTEJmTFVUZ1RtSHpYQUpkblB2RjRSUkZBRlJiT3JLLVFqZWRwM3FKLU5Sckw1My1WYkxKTWQyX05KZ1JUUQ?oc=5",
+        "title": "Nyoro's PPK proposes Sh29 fuel price cut, calls for Sh5.5 billion subsidy after EPRA hike",
+        "outlet": "The Eastleigh Voice",
+        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTXJjTUh6djZSSVpNMlBxaTVVeS1fc25RNFFFemRMaldwNVF1UFNLVHZGUEpRUDkxNXNSVTV4bUFCbUZySkRLS3Q4Q3A5eS1iMjI4UUhSSF9JNkk0MFRnVV9Ed0FfdEdXT0NNYlJXY0NOejdYb3VjdUZ4cjBLUnM4WTY5bjFzZ0NGOUREa21oTXZqTEJmTFVUZ1RtSHpYQUpkblB2RjRSUkZBRlJiT3JLLVFqZWRwM3FKLU5Sckw1My1WYkxKTWQyX05KZ1JUUQ?oc=5",
+        "published": "2026-10-17"
+      },
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "Guess the Price: the LAST beat must reveal the answer with its price ('The answer is B: Sh160 for 2kg in Nairobi.')",
+          "Guess the Price: the last beat must give the price in the headline (Nyoro's PPK proposes Sh29 fuel price cut, calls for Sh5.5 billion subsidy after EPRA hike)"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 7,
+        "impact": 8,
+        "avg": 8.0,
+        "note": "Clean execution of the daily fuel price quiz."
+      },
+      "drafted_at": "2026-10-18T06:15:42.936438+03:00"
+    },
+    {
+      "id": "2026-w43-d5-straight-r8",
+      "template": "straight",
+      "lane": "campus",
+      "message": "Africa Check proves social media posts used altered images regarding death rumours.",
+      "action": "Verify viral images and death rumours on Africa Check before sharing",
+      "beats": [
+        "Social media posts used *altered* images.",
+        "Africa Check confirmed the photo was fake.",
+        "Always verify viral claims on WhatsApp groups.",
+        "Kenyans demand: we stop sharing doctored photos."
+      ],
+      "photo_query": "smartphone screen Kenya",
+      "claim": "Altered image used to claim politician Oburu Oginga seen for first time since death rumours.",
+      "who": "Viral social media posts, October 2026",
+      "claim_source": "Africa Check verification report, October 2026",
+      "verdict": "false",
+      "truth": "The circulating image was altered.",
+      "proof": [
+        "Africa Check analysed the photo and found digital manipulation.",
+        "No credible news outlet reported the viral claim as stated online."
+      ],
+      "pride": "Verify every image before sharing.",
+      "source": "Africa Check, 2026-10-16",
+      "caption": "Doctored images and false death rumours are still making rounds on social media, sparking panic online. Africa Check confirmed the image was altered.\n\nVerify before you share.\n\n#SetItStraight #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-23T17:00:00+03:00",
+      "series": "Myth or Fact",
+      "angle": "myth",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "This prevents the spread of misinformation during public discussions.",
+      "where": "National",
+      "when": "23 Oct 2026",
+      "source_links": [
+        {
+          "outlet": "Africa Check",
+          "title": "Ignore social media posts using altered image to claim Kenyan politician Oburu Oginga seen for the first time since death rumours",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZkZYeGwyaE50MWFvYkxvb1czby1iVlktUVM3cHhnZ01QZGpKUndzczZYbzA5b3o3QnFlNll5QnFkUUdlZmpyZTFSYk15cE5TM2FDZWdCQjBkc1NvT1l0YWE1TFlETktkSUZoSk1LTnpTX3NjU0U4NnFxSHhMbVF1SDBQQmF4Yld0SFNlR0ZkNl8zUkVMX1FBblRtSUYxNEppQ192WnFyRzRVQjRCVWYzT29BNEVzLXkwNGJOS3Rn?oc=5",
+          "published": "2026-10-16"
+        }
+      ],
+      "material": {
+        "kind": "myth",
+        "key": "news:https://news.google.com/rss/articles/CBMivgFBVV95cUxPZkZYeGwyaE50MWFvYkxvb1czby1iVlktUVM3cHhnZ01QZGpKUndzczZYbzA5b3o3QnFlNll5QnFkUUdlZmpyZTFSYk15cE5TM2FDZWdCQjBkc1NvT1l0YWE1TFlETktkSUZoSk1LTnpTX3NjU0U4NnFxSHhMbVF1SDBQQmF4Yld0SFNlR0ZkNl8zUkVMX1FBblRtSUYxNEppQ192WnFyRzRVQjRCVWYzT29BNEVzLXkwNGJOS3Rn?oc=5",
+        "title": "Ignore social media posts using altered image to claim Kenyan politician Oburu Oginga seen for the first time since death rumours",
+        "outlet": "Africa Check",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZkZYeGwyaE50MWFvYkxvb1czby1iVlktUVM3cHhnZ01QZGpKUndzczZYbzA5b3o3QnFlNll5QnFkUUdlZmpyZTFSYk15cE5TM2FDZWdCQjBkc1NvT1l0YWE1TFlETktkSUZoSk1LTnpTX3NjU0U4NnFxSHhMbVF1SDBQQmF4Yld0SFNlR0ZkNl8zUkVMX1FBblRtSUYxNEppQ192WnFyRzRVQjRCVWYzT29BNEVzLXkwNGJOS3Rn?oc=5",
+        "published": "2026-10-16"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 4,
+        "action": 7,
+        "fair": 8,
+        "impact": 7,
+        "avg": 7.3,
+        "note": "Fact-checks perform best when tied directly to viral rumours circulating right now."
+      },
+      "drafted_at": "2026-10-18T06:15:42.936440+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-straight-r8-photo.jpg",
+      "photo_credit": "Photo: Jorge Láscar from Bogotá, Colombia / Wikimedia Commons, CC BY-SA 2.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Parliament_Buildings,_Nairobi,_Kenya_-entrance-15April2010.jpg",
+      "voiced": "Kenyan accent",
+      "reel": true,
+      "tg_msg": 313
+    },
+    {
+      "id": "2026-w43-d6-kenya-r8",
+      "template": "kenya",
+      "lane": "hustle",
+      "message": "The Nairobi Expressway runs 27.1 kilometres from Mlolongo to Westlands.",
+      "action": "Use the expressway to beat Nairobi traffic jams safely",
+      "beats": [
+        "The expressway stretches *27.1* kilometres.",
+        "It connects Mlolongo to Westlands.",
+        "The road opened on 14 May 2022."
+      ],
+      "photo_query": "Nairobi Expressway Kenya",
+      "place": "Mlolongo to Westlands, Nairobi",
+      "line": "Cutting across the capital, the *Nairobi* Expressway connects Mlolongo to Westlands.",
+      "fact": "The 27.1-kilometre road runs from Mlolongo to the James Gichuru junction on Waiyaki Way and opened on 14 May 2022.",
+      "source": "https://capitalfm.africa/nairobi-expressway-now-open-but-you-must-pay/",
+      "caption": "From Mlolongo to Westlands in minutes. The 27.1-kilometre Nairobi Expressway opened on 14 May 2022 and transformed daily commuting.\n\nTag a friend who uses it every morning.\n\n#BuiltInKenya #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-24T11:00:00+03:00",
+      "series": "Built in Kenya",
+      "side": "none",
+      "tone": "credit",
+      "source_links": [
+        {
+          "outlet": "Capital FM",
+          "title": "Nairobi Expressway: The 27.1-kilometre road runs from Mlolongo to the James Gichuru junction on Waiyaki Way and opened on 14 May 2022.",
+          "link": "https://capitalfm.africa/nairobi-expressway-now-open-but-you-must-pay/",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:expressway",
+        "id": "expressway",
+        "series": "Built in Kenya",
+        "place": "Mlolongo to Westlands, Nairobi",
+        "name": "Nairobi Expressway",
+        "fact": "The 27.1-kilometre road runs from Mlolongo to the James Gichuru junction on Waiyaki Way and opened on 14 May 2022.",
+        "source": "https://capitalfm.africa/nairobi-expressway-now-open-but-you-must-pay/",
+        "outlet": "Capital FM",
+        "photo_query": "Nairobi Expressway Kenya"
+      },
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.7/10. A solid infrastructure showcase, but needs a sharper local hook for Nairobi commuters."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 6,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 5,
+        "voice": 7,
+        "craft": 7,
+        "picture": 8,
+        "hold": 7,
+        "demand": 6,
+        "action": 6,
+        "fair": 7,
+        "impact": 6,
+        "avg": 6.7,
+        "note": "A solid infrastructure showcase, but needs a sharper local hook for Nairobi commuters."
+      },
+      "drafted_at": "2026-10-18T06:15:42.936441+03:00"
     },
     {
       "id": "2026-w43-d7-glasspoll-r9",
@@ -421,7 +477,7 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "drafted",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": []
@@ -444,14 +500,20 @@
       },
       "drafted_at": "2026-10-18T05:24:34.976594+03:00",
       "voiced": "Kenyan accent",
-      "reel": true
+      "reel": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d7-glasspoll-r9-photo.jpg",
+      "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:2022_Kenya_election_detailed_partial_results.png",
+      "tg_msg": 314
     }
   ],
   "scripts": {
-    "radio": "Habari za wiki na karibu kwenye Kenya on Record. Mimi ni mtangazaji wako, na leo tunapitia masuala mazito yanayohusu maisha yetu ya kila siku, kuanzia usalama wa kifedha hadi uwajibikaji wa viongozi wetu.\n\nTuanze na usalama wako wa kifedha. Hivi majuzi, kuna ujumbe mfupi wa simu umekuwa ukienea ukidai kwamba akaunti yako ya M-Pesa itazuiwa usipobofya kiungo fulani. Tafadhali, usiibiwe! Hayo ni ulaghai mtupu. Usiwahi kubofya hizo link za SMS. Watu hao wanataka tu kupora jasho lako.\n\nTukiangazia uchumi wetu, maswali yameibuka kuhusu bei za vyakula sokoni. Kupitia Glasspoll yetu wiki hii, wananchi wanaendelea kupima ujuzi wao kuhusu bei halisi za bidhaa muhimu kama unga na sukari. Ni muhimu tukae macho.\n\nVile vile, tunaonya vijana na wazazi dhidi ya propaganda mitandaoni. Kuna tetesi za uongo zinazosambaa WhatsApp kwamba kuna laptops za bure kwa wanafunzi zinazotolewa kupitia link fulani. Hiyo ni uwongo mtupu; usiingie mkenge.\n\nKwenye uongozi na utawala, ni vyema tukakumbuka kuwa Sura ya Sita ya Katiba yetu inaweka viwango vikali sana kwa viongozi wetu wote waliochaguliwa. Hakuna aliye juu ya sheria. Huku tukiangazia maandalizi ya 2027, wapiga kura wanazidi kupima miapasuko na miungano ya kisiasa. Wakenya siku hizi wameamka.\n\nMwisho kabisa, hebu tuthamini nchi yetu. Hali ya anga ya milima yetu inavutia sana—kama vile Hifadhi ya Taifa ya Aberdare inayochukua kilomita za mraba mia saba sitini na saba, au hata barabara ya Nairobi Expressway inayounganisha JKIA na Westlands kwa kilomita ishirini na saba.\n\nAsante kwa kusikiliza. Hii ni Kenya on Record, ukweli mtupu.\n\n***\n\n**Muhtasari kwa Kiswahili:**\nWiki hii kupitia Kenya on Record, tunakumbusha wananchi kujihadhari na ulaghai wa M-Pesa kupitia SMS na kupuuza habari za uongo kuhusu laptops za bure za WhatsApp. Vile vile, tunasisitiza umuhimu wa Sura ya Sita ya Katiba kwa viongozi, huku wananchi wakitathmini bei za vyakula na miungano ya kisiasa kuelekea 2027.",
-    "voice_note": "Wadau, habari zenu. Hapa ni Kenya on Record. Wiki hii tunaonya: usiibiwe! Ukipokea SMS inayodai M-Pesa yako itafungwa usipobofya link, ipuuze mara moja. Ni matapeli wanawinda pesa zako. Pia, jihadharini na hizo link za WhatsApp zinazodai eti kuna laptops za bure kwa wanafunzi—ni uongo mtupu. Tusome alama za nyakati. Kwenye siasa, wananchi wanaendelea kupima miungano ya 2027 huku tukikumbushana kuwa Sura ya Sita ya Katiba inataka viongozi wetu wawe na maadili thabiti. Wacha tukae macho, tuchague ukweli.",
-    "sms": "USIIBIWE: Usiwahi kubofya SMS yoyote inayodai M-Pesa yako itazuiwa. Hayo ni matapeli! Kinga pesa zako na usiwahi kutoa namba yako ya siri kwa mtu yeyote.",
-    "reels": "Hivi unaamini bado kuna watu wanabofya hizo link za SMS wakidaiwa M-Pesa yao itazuiwa? Sikiliza hapa: Usiibiwe! Hakuna benki au kampuni ya simu inayotuma link za kubadilisha au kuzuia akaunti yako. Matapeli wako kazini. Epuka hasara, futa hiyo ujumbe mara moja. Hii ni Kenya on Record!"
+    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni wako, na leo tunaangazia mambo mazito yanayohusu maisha yetu, pesa zetu, na uwajibikaji. Kwanza, wacha tuanze na 'Usiibiwe'. Mahakama imetoa waraka wa ukamatwaji wa washukiwa waliotoweka kwenye sakata ya wizi wa bilioni tatu nukta tisa za VAT. Pesa za wananchi zinatafutwa, na hakuna mahali pa kujificha. Kwenye ukweli na uongo, 'Straight' inatujuza jinsi picha bandia zimesambazwa mitandaoni kuhusu uvumi wa vifo—tuwe waangalifu sana kabla ya kusambaza habari ambazo hatujahakikisha. Upande wa 'Scorecard', ujumbe uko wazi: viongozi wetu lazima wapimwe kwa misingi ya sura ya sita ya katiba na rekodi zao za utendakazi kazi, sio maneno matamu ya kampeni. Na kwa wale wanapenda utalii, kumbuka Hell's Gate National Park iko kwenye eneo la kilomita za mraba sitini na nane kwenye sakafu ya Bonde la Ufa, na Barabara ya Expressway ya Nairobi ina urefu wa kilomita ishirini na saba nukta moja kutoka Mlolongo hadi Westlands. Uliza maswali, dai uwajibikaji, na usikubali kuibiwa!\n\n[Swahili summary: Wiki hii kwenye Kenya on Record: Mahakama imetoa waraka wa kuwakamata washukiwa wa sakata ya Sh3.9bn ya VAT; Africa Check imefichua picha bandia za vifo mitandaoni; viongozi wanakumbushwa kupimwa kwa maadili ya Sura ya Sita; na tumekuletea habari fupi kuhusu Hell's Gate na Nairobi Expressway.]",
+    "voice_note": "Sasa wakuu, mko vipi? Wiki hii mambo ni moto pale Kenya on Record. Kwanza kabisa, kwenye kona ya Usiibiwe, mahakama imetoa waraka wa kukamatwa kwa washukiwa waliotoweka kwenye ile sakata ya bilioni tatu nukta tisa za VAT. Hapa hakuna kuachana na mali ya umma! Kisha, upande wa Scorecard, tunawakumbusha kwamba viongozi lazima wapimwe kwa Sura ya Sita na kile wametenda, sio porojo. Pia, angalieni sana mtandaoni; Africa Check imethibitisha picha za vifo zinazozunguka ni za uongo, msikubali kupotoshwa na 'fake news'. Endelea kufuatilia ukurasa wetu ujue mengi, na usiibiwa!",
+    "sms": "USIIBIWE: Mahakama imetoa waraka wa kukamatwa kwa washukiwa waliotoweka kwenye sakata ya Sh3.9bn ya VAT. Simamia kodi yako, dai uwajibikaji!",
+    "reels": "[Visual: Bold text 'SH3.9B VAT FRAUD SUSPECTS ON THE RUN' with court gavel background]\n\nVoice-over (Firm, serious tone): Billioni tatu nukta tisa za ushuru wa wananchi zimepotea, na sasa mahakama imeagiza wakamatwe! Washukiwa wametoweka, lakini Kenya on Record haitanyamaza. Fuatilia ukweli, linda rasilimali zako, na Usiibiwe!"
   },
   "spend_usd": 0.0,
   "revision": 8
