@@ -1,59 +1,15 @@
 {
-  "fetched": "2026-10-18T17:02:07.865329+00:00",
+  "fetched": "2026-10-18T18:18:26.129421+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "arsenal",
-      "traffic": "10000+",
-      "news": [
-        {
-          "title": "Nottingham Forest vs Arsenal LIVE! Premier League match updates, news and score",
-          "url": "https://www.skysports.com/football/live-blog/13592733/nottingham-forest-vs-arsenal-live-premier-league-match-updates-news-and-score",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Nottingham Forest vs Arsenal live online: score, stats, goals & updates | Premier League 2026/27",
-          "url": "https://en.as.com/soccer/nottingham-forest-vs-arsenal-live-online-score-stats-goals-updates-premier-league-202627-f202610-n/",
-          "source": "Diario AS"
-        },
-        {
-          "title": "[▔LIVE@STREAMs▔]! Nottingham vs Arsenal Free Event 18 October 2026",
-          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3ZlbXBpcmVzLmdpdGh1Yi5pby9BdWJ1cm4vdHYueG1sIi8+PC9rcnBhbm8+&id=nottingham-vs-arsenal-free-event-fox-sports-2otdh",
-          "source": "Universidad de Córdoba (UCO)"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ebola kenya",
+      "title": "málaga vs real sociedad",
       "traffic": "500+",
       "news": [
         {
-          "title": "WHO supports Kenya’s Ebola response as third case is found early in quarantine",
-          "url": "https://www.afro.who.int/countries/kenya/news/who-supports-kenyas-ebola-response-third-case-found-early-quarantine",
-          "source": "WHO | Regional Office for Africa"
-        },
-        {
-          "title": "Kenya confirms four new Ebola cases, bringing total number to seven",
-          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/kenya-confirms-four-new-ebola-cases-bringing-total-number-seven-2026-10-17/",
-          "source": "Reuters"
-        },
-        {
-          "title": "Kenya confirms four more Ebola cases, bringing total to seven",
-          "url": "https://www.aljazeera.com/news/2026/10/17/kenya-confirms-four-more-ebola-cases-bringing-total-to-seven",
-          "source": "Al Jazeera"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "málaga vs real sociedad",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Alineación del partido Malaga vs Sociedad | LaLiga · 18 oct. 2026",
-          "url": "https://www.ysscores.com/es/lineup/5868096/M%C3%A1laga-CF-vs-Real-Sociedad",
-          "source": "YSscores"
+          "title": "EN VIVO: Real Sociedad domina el partido 2-0 sobre Málaga en el segundo tiempo",
+          "url": "https://www.directvsports.com/futbol/en-vivo-real-sociedad-domina-el-partido-2-0-sobre-malaga-en-el-segundo-tiempo-20261015-0027.html",
+          "source": "DSports"
         },
         {
           "title": "Posiciones de Málaga vs Real Sociedad: Estadísticas, horarios y dónde ver",
@@ -64,6 +20,28 @@
           "title": "🚨Alineaciones listas: Málaga quiere resurgir ante la Real",
           "url": "https://es-us.noticias.yahoo.com/deportes/alineaciones-listas-m%C3%A1laga-resurgir-real-153200595.html",
           "source": "Yahoo"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "viktor gyökeres",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Gyokeres farta-se e quer sair do Arsenal. Revelados os dois motivos",
+          "url": "https://m.noticiasaominuto.com/desporto/3068486/gyokeres-farta-se-e-quer-sair-do-arsenal-revelados-os-dois-motivos",
+          "source": "Notícias ao Minuto"
+        },
+        {
+          "title": "Arteta elogia Gyökeres apesar da seca de golos: \"Tem uma vontade incrível\"",
+          "url": "https://www.flashscore.pt/noticias/futebol-premier-league-arteta-elogia-gyokeres-apesar-da-seca-de-golos-tem-uma-vontade-incrivel/OjcR5g4d/",
+          "source": "Flashscore.pt"
+        },
+        {
+          "title": "Gyökeres quer sair do Arsenal",
+          "url": "https://diadejogo.pt/noticias/la-fora-gyokeres-2026-10-17",
+          "source": "diadejogo.pt"
         }
       ]
     },
@@ -83,104 +61,16 @@
           "source": "WhoScored.com"
         },
         {
-          "title": "‍‍‍[ESPN+] Hoffenheim v M'gladbach ＬＩＶＥ Football Coverage",
-          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vcGFraGlwb2suZ2l0aHViLmlvL3NyLmVkdS94b2QueG1sIi8+PC9rcnBhbm8+&id=video-hoffenheim-v-m-gladbach-match-lie-btieklf",
-          "source": "Universidad de Córdoba (UCO)"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "hoffenheim",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Zors Doppelpack stellt die Weichen - Kaube lässt Ausgleichschance liegen",
-          "url": "https://www.kicker.de/hoffenheim-ii-gegen-verl-2026-liga-5233305/spielbericht",
-          "source": "Kicker"
-        },
-        {
-          "title": "Jetzt im Liveticker: SC Verl zu Gast bei der TSG Hoffenheim II",
-          "url": "https://www.nw.de/sport/lokalsport/sport_im_kreis_guetersloh/sport_in_guetersloh/24442914_Jetzt-im-Liveticker-SC-Verl-zu-Gast-bei-der-TSG-Hoffenheim-II.html",
-          "source": "Neue Westfälische"
-        },
-        {
-          "title": "Serie des SC Verl reißt in Hoffenheim: Shala hadert mit frühem Doppelschlag",
-          "url": "https://www.die-glocke.de/lokalsport/kreis-guetersloh/artikel/serie-des-sc-verl-reisst-in-hoffenheim-shala-hadert-mit-fruehem-doppelschlag-1792339804",
-          "source": "Die Glocke"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "arsenal vs",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Women's Super League: Arsenal 1-1 Birmingham City - Olivia Smith earns Gunners draw",
-          "url": "https://www.bbc.com/sport/football/live/cmgj9l26qz2xt",
-          "source": "BBC"
-        },
-        {
-          "title": "Boos at Arsenal as draw with Birmingham extends winless WSL run",
-          "url": "https://www.theguardian.com/football/2026/oct/17/arsenal-birmingham-wsl-match-report",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Arsenal 1-1 Birmingham: Olivia Smith stunner saves Gunners from shocking defeat but pressure intensifies on Renee Slegers",
-          "url": "https://www.skysports.com/football/news/13600177/arsenal-1-1-birmingham-olivia-smith-stunner-saves-gunners-from-shocking-defeat-but-pressure-intensifies-on-renee-slegers",
-          "source": "Sky Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "paris fc vs rennes",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Incredible: he scores twice, 8 years after his last Ligue 1 goal 🤯",
-          "url": "https://sports.yahoo.com/articles/incredible-scores-twice-8-years-161800406.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Incredible: he scores twice, 8 years after his last Ligue 1 goal 🤯",
-          "url": "https://onefootball.com/en/news/incredible-he-scores-twice-8-years-after-his-last-ligue-1-goal-43632532",
-          "source": "OneFootball"
-        },
-        {
-          "title": "Rennes predicted XI v Paris FC: Bryan Reynolds and Mahamadou Nagida to start",
-          "url": "https://sports.yahoo.com/articles/rennes-predicted-xi-v-paris-090800274.html",
-          "source": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ajax",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Geen penalty voor FC Groningen na VAR-ingreep, Dennis Higler verklaart voor scherm zijn besluit",
-          "url": "https://www.ad.nl/voetbal/geen-penalty-voor-fc-groningen-na-var-ingreep-dennis-higler-verklaart-voor-scherm-zijn-besluit~a81a99cd/",
-          "source": "AD.nl"
-        },
-        {
-          "title": "FC in Euroborg onderuit tegen effectief Ajax",
-          "url": "https://www.fcgroningen.nl/nieuws/fc-in-euroborg-onderuit-tegen-effectief-ajax/",
-          "source": "FC Groningen"
-        },
-        {
-          "title": "Brandt zet met zijn tweede treffer Ajax op 3-1",
-          "url": "https://www.rtvnoord.nl/sport/1445450/brandt-zet-met-zijn-tweede-treffer-ajax-op-3-1",
-          "source": "RTV Noord"
+          "title": "Borussia Monchengladbach vs 1899 Hoffenheim – Prediction, Where to Watch, Kick-off Time and Lineups 18-10",
+          "url": "https://oddsscanner.com/predictions/football/borussia-monchengladbach-x-1899-hoffenheim-18-10-2026",
+          "source": "Odds Scanner"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "arsenal f.c. standings",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Arsenal top, Man Utd fourth",
@@ -201,27 +91,69 @@
     },
     {
       "geo": "KE",
-      "title": "le havre vs auxerre",
+      "title": "hoffenheim",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "((LIVE ANSEHEN#)) Gladbach - Hoffenheim heute live im TV. Sie die Partie live im TV 18. Oktober 2026",
+          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vcGFraGlwb2suZ2l0aHViLmlvL3NyLmVkdS94b2QueG1sIi8+PC9rcnBhbm8+&id=video-gladbach-hoffenheim-heute-lie-en-kvxauye",
+          "source": "Universidad de Córdoba (UCO)"
+        },
+        {
+          "title": "Borussia verliert gegen Hoffenheim",
+          "url": "https://www.borussia.de/news/borussia-verliert-gegen-hoffenheim",
+          "source": "Borussia Mönchengladbach"
+        },
+        {
+          "title": "BMG vs. TSG live: Nächster Rückschlag für Gladbach!",
+          "url": "https://www.tipico.de/wett-tipps/sportwetten-news/bmg-vs-tsg-live-naechster-rueckschlag-fuer-gladbach",
+          "source": "Tipico"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "lyon",
       "traffic": "100+",
       "news": [
         {
-          "title": "Le Havre AC vs AJ Auxerre - Where to Watch, Stream Info, TV Channel, and Live Updates (October 18, 2026)",
-          "url": "https://www.fubo.tv/news/soccer/le-havre-ac-vs-aj-auxerre-where-to-watch-stream-info-tv-channel-and-live-updates-october-18-2026/",
-          "source": "Fubo"
+          "title": "Pillages du 17 octobre à Lyon : Vuitton, JD, Nike... la liste des plus de 40 enseignes tombées lors le chaos",
+          "url": "https://actu.fr/auvergne-rhone-alpes/lyon_69123/pillages-du-17-octobre-a-lyon-vuitton-jd-nike-la-liste-des-plus-de-40-enseignes-tombees-lors-le-chaos_64941421.html",
+          "source": "Actu.fr"
         },
         {
-          "title": "Le Havre vs Auxerre: Lineups and Live Text Commentary",
-          "url": "https://zamin.uz/en/sport/224893-le-havre-vs-auxerre-lineups-and-live-text-commentary.html",
-          "source": "Zamin.uz"
+          "title": "Incendie en marge des manifs dans un centre de rétention de Lyon",
+          "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/rhone/lyon/contestation-et-incendie-en-marge-des-manifs-dans-un-centre-de-retention-de-lyon-3435429.html",
+          "source": "France 3 Régions"
         },
         {
-          "title": "Le Havre v Auxerre: relegation fight meets away day frailties",
-          "url": "https://onefootball.com/en/news/le-havre-v-auxerre-relegation-fight-meets-away-day-frailties-43621272",
-          "source": "OneFootball"
+          "title": "« Nous allons y arriver ». Après le chaos à Lyon, la police scientifique sur la trace des pilleurs",
+          "url": "https://tribunedelyon.fr/societe/nous-allons-y-arriver-apres-le-chaos-a-lyon-la-police-scientifique-sur-la-trace-des-pilleurs/",
+          "source": "Tribune de Lyon"
         }
-      ]
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "ars",
+      "traffic": "100+",
+      "news": []
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "lyon vs nice prediction",
+      "why": "unsafe: 'betting'"
+    },
+    {
+      "title": "copenhagen fc",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "le havre vs auxerre",
+      "why": "unsafe: 'Betting'"
+    }
+  ],
   "errors": {}
 }
