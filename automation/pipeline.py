@@ -1355,8 +1355,11 @@ def crosspost_text(post: dict) -> str:
     if post.get("reel"):
         parts += ["", "<b>TikTok</b>: upload, tap <b>Add sound</b>, pick a trending Kenyan sound at low volume. Caption:",
                   f"<code>{esc(cap[:1500])}</code>",
-                  "", "<b>YouTube Shorts</b>: title, then the caption as the description:",
-                  f"<code>{esc(shorts_title(post))}</code>"]
+                  ]
+        import youtube
+        if not youtube.ready():   # with the YouTube keys set, publishing uploads the Short itself
+            parts += ["", "<b>YouTube Shorts</b>: title, then the caption as the description:",
+                      f"<code>{esc(shorts_title(post))}</code>"]
     parts += ["", "<b>WhatsApp</b> (Channel, Status, your groups), with the image:",
               f"<code>{esc(whatsapp_text(post))[:1200]}</code>"]
     return "\n".join(parts)   # caption 1,500 + WhatsApp 1,200 + labels stay under Telegram's 4,096
@@ -1368,6 +1371,25 @@ def whatsapp_text(post: dict) -> str:
     body = " ".join(beats[:3]) if beats else str(post.get("message") or "")
     src = str(post.get("source") or "").split(";")[0].strip()
     return (body + (f"\n\nSource: {src}" if len(src) >= 8 else "") + "\n\nFollow Kenya on Record for more.").strip()
+
+
+def _youtube_short(label: str, post: dict) -> None:
+    """Send the approved Reel to YouTube Shorts as well. Optional and never fatal: Instagram and Facebook are
+    already out by now, so a YouTube problem is reported, not retried into a duplicate."""
+    import youtube
+    if not (post.get("reel") and youtube.ready()):
+        return
+    video = EXPORTS / label / f"{post['id']}.mp4"
+    try:
+        desc = caption_for(post)
+        res = youtube.upload(video, shorts_title(post), desc)
+        post["yt_id"] = res["id"]
+        note = "" if res["privacy"] == "public" else (
+            f" ⚠️ YouTube set it to <b>{_esc(res['privacy'])}</b>, not public: the API project may need Google's audit.")
+        _notify(f"▶️ YouTube Shorts: https://youtube.com/shorts/{res['id']}{note}")
+    except Exception as e:
+        log(f"youtube skipped for {post['id']}: {e}")
+        _notify(f"⚠️ YouTube Shorts upload failed for <b>{_esc(post['id'])}</b> (the Instagram and Facebook posts are fine): {_esc(str(e)[:250])}")
 
 
 def fb_link(fb_id: str | None) -> str | None:
@@ -1431,6 +1453,7 @@ def publish(dry_run: bool = False) -> None:
                     for m in members:
                         m["story_id"] = story
                 record_evidence(members)
+                _youtube_short(label, first_of(members))
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
                 link = fb_link(fb_id)
                 _notify(f"✅ Published <b>{_esc(key)}</b>."
