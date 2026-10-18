@@ -65,7 +65,8 @@ class SeriesRules(unittest.TestCase):
         self.assertEqual("", self.errs({"template": "usiibiwe", "sender": "+254 7XX XXX XXX"}))
 
     def test_price_needs_a_price_report_and_the_quiz_its_answer(self):
-        post = {"template": "glasspoll", "series": "Guess the Price", "beats": ["How much?", "A or B?", "Comment!"],
+        post = {"template": "glasspoll", "series": "Guess the Price", "question": "How much is 2kg of unga now?",
+                "beats": ["How much?", "A or B?", "Comment!"],
                 "source_links": [{"title": "Luxury car stolen in UK traced to Nairobi"}]}
         e = self.errs(post)
         self.assertIn("report about that price", e)
@@ -76,10 +77,19 @@ class SeriesRules(unittest.TestCase):
 
     def test_myth_needs_proof_the_rumour_exists(self):
         post = {"template": "straight", "series": "Myth or Fact", "caption": "Myth or Fact: ...",
+                "claim": "A herbal tea is an Ebola cure.",
                 "source_links": [{"title": "Ebola cases rise to 7"}]}
         self.assertIn("really circulating", self.errs(post))
         post["source_links"].append({"title": "Health ministry warns of fake Ebola cure messages"})
         self.assertEqual("", self.errs(post))
+
+    def test_linked_report_must_be_about_the_story(self):
+        post = {"template": "straight", "claim": "Free laptops for every student this week.",
+                "source_links": [{"title": "JKIA cleaner arrested carrying bags containing 52 phones"}]}
+        self.assertIn("not about this story", self.errs(post))
+
+    def test_no_blame_polls(self):
+        self.assertIn("blame", self.errs({"template": "glasspoll", "question": "Who caused the Kitale clashes?"}))
 
     def test_caption_uses_the_new_series_name(self):
         post = {"template": "straight", "series": "Myth or Fact", "caption": "Set It Straight: x",

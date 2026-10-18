@@ -504,7 +504,8 @@ def check(post: dict) -> Report:
         else:
             for i, c in enumerate(checks):
                 if not isinstance(c, dict) or c.get("result") not in {"pass", "fail", "unclear"}:
-                    rep.errors.append(f"checks[{i}] needs result pass|fail|unclear")
+                    rep.errors.append(f"checks[{i}] must be an object {{\"test\": ..., \"result\": \"pass|fail|unclear\", "
+                                      f"\"note\": the evidence}}, not a plain string")
                 elif not 3 <= len(str(c.get("test", ""))) <= 40 or not 3 <= len(str(c.get("note", ""))) <= 80:
                     rep.errors.append(f"checks[{i}]: `test` max 40 chars and `note` max 80 chars, both required")
     if tpl == "kenya":
@@ -601,8 +602,34 @@ OLD_NAMES = {"money": "Follow the Money", "straight": "Set It Straight", "glassp
 
 
 def _reports(post: dict) -> str:
-    return " ".join([str(post.get("source") or ""), str(post.get("claim_source") or "")]
-                    + [str(x.get("title", "")) for x in post.get("source_links") or [] if isinstance(x, dict)])
+    """Only what we did not write ourselves: the real headlines behind the post, and a fact-checker's address."""
+    src = str(post.get("source") or "")
+    titles = [str(x.get("title", "")) for x in post.get("source_links") or [] if isinstance(x, dict)]
+    return " ".join(titles + ([src] if re.search(r"pesacheck|africacheck|https?://", src, re.I) else []))
+
+
+STOP_STEMS = {"kenya", "kenyan", "county", "counti", "govern", "nation", "nairob", "says", "after", "about", "their",
+              "there", "which", "would", "could", "people", "public", "report", "this", "that", "with", "from", "have",
+              "will", "they", "said", "what", "when", "more", "than", "over", "into", "news", "your", "were", "been",
+              "only", "also", "just", "very", "most", "every"}
+
+
+def _stems(text: str) -> set[str]:
+    return {w[:6] for w in re.findall(r"[a-z0-9]{4,}", text.lower().replace(",", ""))} - STOP_STEMS
+
+
+def story_mismatch(post: dict) -> str:
+    """The linked report must be about the story the post tells (a headline id can resolve to the wrong item)."""
+    titles = [str(x.get("title", "")) for x in post.get("source_links") or [] if isinstance(x, dict)]
+    if not titles:
+        return ""
+    body = " ".join(str(post.get(k) or "") for k in ("line", "message", "headline", "title", "claim", "question",
+                                                       "hook", "truth", "promise", "reality", "number", "unit", "what"))
+    body += " " + " ".join(str(b) for b in post.get("beats") or [])
+    if len(_stems(" ".join(titles)) & _stems(body)) < 2:
+        return ("the linked report is not about this story (" + titles[0][:80] + "): use the headline id of the "
+                "report this post is really based on")
+    return ""
 
 
 def series_rules(post: dict, rep: "Report") -> None:
@@ -627,6 +654,13 @@ def series_rules(post: dict, rep: "Report") -> None:
             rep.errors.append("Myth or Fact needs proof the claim is really circulating: a fact-check (PesaCheck, "
                               "Africa Check) or a news report or official warning about the rumour. Never invent a "
                               "viral message")
+    if tpl == "glasspoll" and re.search(r"\bwho (caused|started|is to blame|is responsible|provoked)\b|\bblame\b",
+                                        str(post.get("question") or "") + " " + str(post.get("hook") or ""), re.I):
+        rep.errors.append("never ask Kenyans to assign blame for violence, a clash or a crime: ask what should "
+                          "happen next, or what a public office must do")
+    mismatch = story_mismatch(post)
+    if mismatch:
+        rep.errors.append(mismatch)
     old = OLD_NAMES.get(tpl)
     if series and old and series != old and old.lower() in str(post.get("caption") or "").lower():
         rep.errors.append(f"the caption calls it '{old}': this post's series is '{series}'")

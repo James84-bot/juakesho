@@ -962,7 +962,10 @@ CRITIC_RUBRIC = """You are the toughest editor at a Kenyan news desk whose reade
 - picture: do the `photo_query` scene and the headline ALONE deliver the `message` in one second? (a generic or
   decorative scene scores low; a concrete, real scene that IS the message scores high)
 - demand: is this a story Kenyans are on right now (high in WHAT KENYA IS ON), or a deadline/anniversary that
-  matters? A topic nobody is talking about scores low however well it is written
+  matters? A topic nobody is talking about scores low however well it is written. EXCEPTION: everyday series
+  (Kenya at its best, Built in Kenya, The Real Price, Guess the Price, Myth or Fact) and scam alerts are scored on
+  whether Kenyans care about it in daily life (a place worth visiting, a price they pay, a scam that is going
+  round), not on whether it is in this week's news: evergreen is right for them
 - impact: does it say plainly, with numbers where they exist, what this changes for an ordinary Kenyan (pocket,
   services, rights, safety, vote)? Repeating the headline without its effect on people scores low
 - fair: would the same post read the same if the other side had done it? credit and criticism both with proof,
