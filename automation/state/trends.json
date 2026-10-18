@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-10-18T04:41:11.936746+00:00",
+  "fetched": "2026-10-18T04:46:48.875509+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "newcastle united f.c. vs aston villa standings",
+      "traffic": "10000+",
+      "news": [
+        {
+          "title": "Premier League: Aston Villa beat Newcastle after wins for Chelsea, Fulham, Liverpool and Man City",
+          "url": "https://www.bbc.com/sport/football/live/c699d2z1v4gmt",
+          "source": "BBC"
+        },
+        {
+          "title": "Newcastle 0-1 Aston Villa commentary and highlights",
+          "url": "https://www.skysports.com/football/live-blog/13592695/newcastle-vs-aston-villa-live-premier-league-match-updates-news-and-score",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "'Skills and intelligence' - Aston Villa manager Unai Emery hails Johan Manzambi following decisive goal against Newcastle",
+          "url": "https://www.goal.com/en-ke/lists/skills-intelligence-aston-villa-manager-unai-emery-hails-johan-manzambi-decisive-goal-newcastle-united/blt62958d54c3b85e6c",
+          "source": "Goal.com"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "real betis vs fc barcelona standings",
@@ -17,8 +39,8 @@
           "source": "SuperSport"
         },
         {
-          "title": "“An application letter for the Ballon d’Or”: Lamine Yamal makes Hansi Flick go wild with an incredible goal for Barcelona",
-          "url": "https://www.goal.com/en/news/an-application-letter-for-the-ballon-d-or-lamine-yamal-makes-hansi-flick-go-wild-with-an-incredible-goal-for-barcelona/blt39071f1f1ddc89c1",
+          "title": "“An application for the Ballon d’Or”: Lamine Yamal sends Hansi Flick wild with an incredible goal for Barcelona",
+          "url": "https://www.goal.com/en/news/an-application-for-the-ballon-d-or-lamine-yamal-sends-hansi-flick-wild-with-an-incredible-goal-for-barcelona/blt39071f1f1ddc89c1",
           "source": "Goal.com"
         }
       ]
@@ -40,6 +62,28 @@
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "mls",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Austin vs. Vancouver (18 Oct, 2026) Team Stats",
+          "url": "https://www.espn.co.uk/football/team-stats/_/gameId/761882/league/usa.1",
+          "source": "ESPN"
+        },
+        {
+          "title": "Utah 0-2 Kansas City (17 Oct, 2026) Team Stats",
+          "url": "https://www.espn.co.uk/football/team-stats/_/gameId/401854022/league/usa.nwsl",
+          "source": "ESPN"
+        },
+        {
+          "title": "Cruz Azul vs. Juárez (18 Oct, 2026) Team Stats",
+          "url": "https://www.espn.in/football/team-stats/_/gameId/401876939/league/mex.1",
+          "source": "ESPN India"
+        }
+      ]
     },
     {
       "geo": "KE",
@@ -118,7 +162,7 @@
           "source": "Betfair"
         },
         {
-          "title": "St. Louis City's unbeaten MLS run ends at 19, Union's reaches 15",
+          "title": "Messi brace lifts Inter Miami to 3-1 win in Atlanta",
           "url": "https://sports.yahoo.com/articles/st-louis-citys-unbeaten-mls-225633631.html",
           "source": "Yahoo Sports"
         },
@@ -126,50 +170,6 @@
           "title": "Loons rally to top City, end eight-game winless skid",
           "url": "https://www.twincities.com/2026/10/17/loons-rally-to-top-city-end-eight-game-winless-skid/",
           "source": "Pioneer Press"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "valencia",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Javier Aguirre: “Se ha logrado un empate con buen sabor”",
-          "url": "https://as.com/futbol/primera/javier-aguirre-se-ha-logrado-un-empate-con-buen-sabor-f202610-n/",
-          "source": "Diario AS"
-        },
-        {
-          "title": "Vasco Aguirre asegura que va por el camino correcto con Valencia pero acepta: \"Hoy no jugamos bien\"",
-          "url": "https://www.marca.com/mx/futbol/mexicanos-mundo/2026/10/18/vasco-aguirre-asegura-camino-correcto-valencia-acepta-hoy-jugamos-bien-video.html",
-          "source": "MARCA"
-        },
-        {
-          "title": "Aguirre confirma que pidió sentarse en el banquillo derecho de Mestalla",
-          "url": "https://www.lasprovincias.es/valenciacf/aguirre-confirma-pidio-sentarse-banquillo-derecho-mestalla-20261016154245-nt.html",
-          "source": "Las Provincias"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mls",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Tampa Bay Rays at Cleveland Guardians - MLB Game Summary - Oct 18, 2026",
-          "url": "https://sportsdata.usatoday.com/baseball/mlb/summary/3036353",
-          "source": "USA Today"
-        },
-        {
-          "title": "CF Montreal at Seattle Sounders FC - MLS Game Summary - Oct 17, 2026",
-          "url": "https://www.usatoday.com/sports/mls/event/2026/2937251/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=MLS&tile=3",
-          "source": "USA Today"
-        },
-        {
-          "title": "New York Rangers at Columbus Blue Jackets - NHL Game Summary - Oct 17, 2026",
-          "url": "https://www.usatoday.com/sports/nhl/event/2026/2999349/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NHL&tile=14",
-          "source": "USA Today"
         }
       ]
     },
