@@ -1,28 +1,6 @@
 {
-  "fetched": "2026-10-18T04:46:48.875509+00:00",
+  "fetched": "2026-10-18T05:36:25.011228+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "newcastle united f.c. vs aston villa standings",
-      "traffic": "10000+",
-      "news": [
-        {
-          "title": "Premier League: Aston Villa beat Newcastle after wins for Chelsea, Fulham, Liverpool and Man City",
-          "url": "https://www.bbc.com/sport/football/live/c699d2z1v4gmt",
-          "source": "BBC"
-        },
-        {
-          "title": "Newcastle 0-1 Aston Villa commentary and highlights",
-          "url": "https://www.skysports.com/football/live-blog/13592695/newcastle-vs-aston-villa-live-premier-league-match-updates-news-and-score",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "'Skills and intelligence' - Aston Villa manager Unai Emery hails Johan Manzambi following decisive goal against Newcastle",
-          "url": "https://www.goal.com/en-ke/lists/skills-intelligence-aston-villa-manager-unai-emery-hails-johan-manzambi-decisive-goal-newcastle-united/blt62958d54c3b85e6c",
-          "source": "Goal.com"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "real betis vs fc barcelona standings",
@@ -39,8 +17,8 @@
           "source": "SuperSport"
         },
         {
-          "title": "“An application for the Ballon d’Or”: Lamine Yamal sends Hansi Flick wild with an incredible goal for Barcelona",
-          "url": "https://www.goal.com/en/news/an-application-for-the-ballon-d-or-lamine-yamal-sends-hansi-flick-wild-with-an-incredible-goal-for-barcelona/blt39071f1f1ddc89c1",
+          "title": "“An application letter for the Ballon d’Or”: Lamine Yamal makes Hansi Flick go wild with an incredible goal for Barcelona",
+          "url": "https://www.goal.com/en/news/an-application-letter-for-the-ballon-d-or-lamine-yamal-makes-hansi-flick-go-wild-with-an-incredible-goal-for-barcelona/blt39071f1f1ddc89c1",
           "source": "Goal.com"
         }
       ]
@@ -65,23 +43,23 @@
     },
     {
       "geo": "KE",
-      "title": "mls",
+      "title": "as roma vs genoa cfc standings",
       "traffic": "500+",
       "news": [
         {
-          "title": "Austin vs. Vancouver (18 Oct, 2026) Team Stats",
-          "url": "https://www.espn.co.uk/football/team-stats/_/gameId/761882/league/usa.1",
-          "source": "ESPN"
+          "title": "Highlights: Roma v. Genoa (En Español)",
+          "url": "https://sports.yahoo.com/videos/highlights-roma-v-genoa-en-211450518.html",
+          "source": "Yahoo Sports"
         },
         {
-          "title": "Utah 0-2 Kansas City (17 Oct, 2026) Team Stats",
-          "url": "https://www.espn.co.uk/football/team-stats/_/gameId/401854022/league/usa.nwsl",
-          "source": "ESPN"
+          "title": "Roma Bounces Back From Real Madrid Defeat With Convincing Win Over Genoa",
+          "url": "https://www.chiesaditotti.com/roma-matchday-coverage/43831/roma-genoa-match-recap-castro-luli",
+          "source": "Chiesa Di Totti"
         },
         {
-          "title": "Cruz Azul vs. Juárez (18 Oct, 2026) Team Stats",
-          "url": "https://www.espn.in/football/team-stats/_/gameId/401876939/league/mex.1",
-          "source": "ESPN India"
+          "title": "LIVE/FREE:TCS Amsterdam Marathon LIVE STREA.Ms 18. 10. 2026",
+          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:gsf,%3Ckrpano%3E%3Cinclude%20url=%22/%5C/maliamadeline.github.io/marathon/sports.xml%22/%3E%3C/krpano%3E&id=amsterdammarathon",
+          "source": "Universidad de Córdoba (UCO)"
         }
       ]
     },
@@ -131,28 +109,6 @@
     },
     {
       "geo": "KE",
-      "title": "as roma vs genoa cfc standings",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Highlights: Roma v. Genoa (En Español)",
-          "url": "https://sports.yahoo.com/videos/highlights-roma-v-genoa-en-211450518.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Roma Bounces Back From Real Madrid Defeat With Convincing Win Over Genoa",
-          "url": "https://www.chiesaditotti.com/roma-matchday-coverage/43831/roma-genoa-match-recap-castro-luli",
-          "source": "Chiesa Di Totti"
-        },
-        {
-          "title": "LIVE/FREE:TCS Amsterdam Marathon LIVE STREA.Ms 18. 10. 2026",
-          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:gsf,%3Ckrpano%3E%3Cinclude%20url=%22/%5C/maliamadeline.github.io/marathon/sports.xml%22/%3E%3C/krpano%3E&id=amsterdammarathon",
-          "source": "Universidad de Córdoba (UCO)"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "minnesota united fc",
       "traffic": "200+",
       "news": [
@@ -162,14 +118,31 @@
           "source": "Betfair"
         },
         {
-          "title": "Messi brace lifts Inter Miami to 3-1 win in Atlanta",
-          "url": "https://sports.yahoo.com/articles/st-louis-citys-unbeaten-mls-225633631.html",
-          "source": "Yahoo Sports"
-        },
-        {
           "title": "Loons rally to top City, end eight-game winless skid",
           "url": "https://www.twincities.com/2026/10/17/loons-rally-to-top-city-end-eight-game-winless-skid/",
           "source": "Pioneer Press"
+        },
+        {
+          "title": "Postgame Presser: Coach Knowles on the Comeback Win Over St. Louis",
+          "url": "https://www.mnufc.com/video/postgame-presser-coach-knowles-on-the-comeback-win-over-st-louis",
+          "source": "Minnesota United FC"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mls",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Houston Dynamo FC Clinch 2026 Playoff Berth",
+          "url": "https://www.houstondynamofc.com/news/houston-dynamo-fc-clinch-2026-playoff-berth",
+          "source": "Houston Dynamo FC"
+        },
+        {
+          "title": "Houston Dynamo clinch Audi 2026 MLS Cup Playoffs spot",
+          "url": "https://sports.yahoo.com/articles/houston-dynamo-clinch-audi-2026-045100150.html",
+          "source": "Yahoo Sports"
         }
       ]
     },
@@ -197,6 +170,10 @@
     }
   ],
   "dropped": [
+    {
+      "title": "bournemouth vs sunderland",
+      "why": "unsafe: 'Bet'"
+    },
     {
       "title": "atlanta united vs inter miami",
       "why": "unsafe: 'Odds'"
