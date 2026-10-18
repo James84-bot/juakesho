@@ -256,11 +256,11 @@ def face_y(ff: str, video: Path, at: float) -> float:
 
 
 def presenter_graph(face: float, src_w: int, src_h: int) -> str:
-    """Scale your video to fill 1080 wide and crop TAKE_H tall around your face (eyes about a third down)."""
+    """Scale your video to fill 1080 wide and crop TAKE_H tall around your face (face centred a little low: headroom)."""
     scaled_h = round(src_h * 1080 / src_w / 2) * 2
     if scaled_h < TAKE_H:   # a landscape recording: fill the height instead
         return f"scale=-2:{TAKE_H},crop=1080:{TAKE_H},setsar=1"
-    y = int(min(max(face * scaled_h - TAKE_H * 0.42, 0), scaled_h - TAKE_H))
+    y = int(min(max(face * scaled_h - TAKE_H * 0.52, 0), scaled_h - TAKE_H))   # headroom above the hair
     return f"scale=1080:{scaled_h},crop=1080:{TAKE_H}:0:{y},setsar=1"
 
 
