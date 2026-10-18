@@ -1,0 +1,71 @@
+name: lab (free AI presenter test)
+# Can a free CPU runner lip-sync James's real video convincingly (MuseTalk 1.5, MIT), and how fast?
+# Input: automation/lab/base.mp4 (10 s of his video, presenter frame) + automation/lab/voice.wav (his voice).
+# Output: exports/_lab/musetalk.mp4 and the timing as a notice on the run.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  musetalk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.10"
+
+      - name: Install MuseTalk (CPU)
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          git clone --depth 1 https://github.com/TMElyralab/MuseTalk /tmp/mt
+          pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cpu
+          # the inference path needs these (tensorflow, tensorboard and gradio are for training and the web demo)
+          pip install diffusers==0.30.2 accelerate==0.28.0 numpy==1.23.5 opencv-python==4.9.0.80 soundfile==0.12.1 \
+            transformers==4.39.2 "huggingface_hub[cli]==0.30.2" librosa==0.11.0 einops==0.8.1 gdown requests \
+            "imageio[ffmpeg]" omegaconf ffmpeg-python moviepy
+          pip install -U openmim
+          mim install mmengine
+          pip install mmcv==2.0.1 -f https://download.openmmlab.com/mmcv/dist/cpu/torch2.0/index.html
+          mim install "mmdet==3.1.0" "mmpose==1.1.0"
+
+      - name: Weights
+        run: |
+          cd /tmp/mt
+          M=models
+          mkdir -p $M/musetalkV15 $M/sd-vae $M/whisper $M/dwpose $M/syncnet $M/face-parse-bisent
+          huggingface-cli download TMElyralab/MuseTalk --local-dir $M --include "musetalkV15/musetalk.json" "musetalkV15/unet.pth"
+          huggingface-cli download stabilityai/sd-vae-ft-mse --local-dir $M/sd-vae --include config.json diffusion_pytorch_model.bin
+          huggingface-cli download openai/whisper-tiny --local-dir $M/whisper --include config.json pytorch_model.bin preprocessor_config.json
+          huggingface-cli download yzd-v/DWPose --local-dir $M/dwpose --include dw-ll_ucoco_384.pth
+          gdown --id 154JgKpzCPW82qINcVieuPH3fZ2e0P812 -O $M/face-parse-bisent/79999_iter.pth \
+            || huggingface-cli download ManyOtherFunctions/face-parse-bisent --local-dir $M/face-parse-bisent --include 79999_iter.pth
+          curl -sL https://download.pytorch.org/models/resnet18-5c106cde.pth -o $M/face-parse-bisent/resnet18-5c106cde.pth
+          ls -la $M/*
+
+      - name: Lip-sync 10 s on the CPU
+        run: |
+          cd /tmp/mt
+          mkdir -p data/lab
+          cp $GITHUB_WORKSPACE/automation/lab/base.mp4 $GITHUB_WORKSPACE/automation/lab/voice.wav data/lab/
+          printf 'task_0:\n  video_path: "data/lab/base.mp4"\n  audio_path: "data/lab/voice.wav"\n' > configs/inference/lab.yaml
+          start=$(date +%s)
+          python -m scripts.inference --inference_config configs/inference/lab.yaml --result_dir results/lab \
+            --unet_model_path models/musetalkV15/unet.pth --unet_config models/musetalkV15/musetalk.json \
+            --version v15 --ffmpeg_path /usr/bin --batch_size 4 --output_vid_name musetalk.mp4 2>&1 | tail -40
+          secs=$(( $(date +%s) - start ))
+          echo "::notice title=musetalk::10 s of video lip-synced on a $(nproc)-core CPU runner in ${secs} s"
+          find results -name "*.mp4" -exec ls -la {} \;
+          mkdir -p $GITHUB_WORKSPACE/exports/_lab
+          cp "$(find results -name 'musetalk.mp4' | head -1)" $GITHUB_WORKSPACE/exports/_lab/musetalk.mp4
+
+      - name: Save the result
+        run: |
+          git config user.name "jua-kesho-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add exports/_lab
+          git commit -m "lab: MuseTalk CPU test" && for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && exit 0; sleep 10; done
