@@ -1,0 +1,17 @@
+{
+  "note": "Verified prices for Guess the Price when no headline states one. Each `fact` is quoted from the source and agreed by a second newsroom (`check`). Use only until `valid_until`; add the next EPRA review (the 14th of each month) the same way.",
+  "entries": [
+    {"id": "petrol-nbi-2026-10", "item": "super petrol in Nairobi",
+     "fact": "Nairobi's maximum pump price for super petrol is Sh226.96 per litre from 15 Oct to 14 Nov 2026, after EPRA's review.",
+     "wrong_hint": "last month's price, Sh214.03 per litre",
+     "valid_from": "2026-10-15", "valid_until": "2026-11-14",
+     "source": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293", "outlet": "The Star",
+     "check": "https://citizen.digital/article/more-pain-for-motorists-as-super-petrol-price-increases-by-ksh1293-diesel-by-ksh990-n392062"},
+    {"id": "diesel-nbi-2026-10", "item": "diesel in Nairobi",
+     "fact": "Nairobi's maximum pump price for diesel is Sh227.76 per litre from 15 Oct to 14 Nov 2026, after EPRA's review.",
+     "wrong_hint": "last month's price, Sh217.86 per litre",
+     "valid_from": "2026-10-15", "valid_until": "2026-11-14",
+     "source": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293", "outlet": "The Star",
+     "check": "https://citizen.digital/article/more-pain-for-motorists-as-super-petrol-price-increases-by-ksh1293-diesel-by-ksh990-n392062"}
+  ]
+}

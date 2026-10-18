@@ -46,9 +46,11 @@
         "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeUROZTZmUndHb19DVkMybUhac1B2elktREFPYXVvMEIxNHBDRzl6Q25ZT3B3SEQtcVlVam45QWNSWGhlaXpzOGJRSnpZTGlPX01QdWZxNjAzMldYQTk2TEVCWHc2M3VJZ2x4cnY5cGF4X0Z2WnZSVUY1UmtFUEc1QXFnbm12TGhrTzVnOUFR?oc=5",
         "published": "2026-10-15"
       },
-      "status": "awaiting",
+      "status": "needs_human",
       "guard": {
-        "errors": [],
+        "errors": [
+          "withdrawn on inspection: a court case, not a scam tip; 'nationwide crackdown' is not in the report"
+        ],
         "warnings": []
       },
       "critic": {
@@ -362,9 +364,11 @@
         "outlet": "Capital FM",
         "photo_query": "Nairobi Expressway Kenya"
       },
-      "status": "awaiting",
+      "status": "needs_human",
       "guard": {
-        "errors": [],
+        "errors": [
+          "withdrawn on inspection: 'thousands of motorists every day' and 'minutes' are not in the source; calls itself 'Kenya at its best'"
+        ],
         "warnings": []
       },
       "critic": {
