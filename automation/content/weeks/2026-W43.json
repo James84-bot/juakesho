@@ -266,9 +266,11 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "needs_human",
       "guard": {
-        "errors": [],
+        "errors": [
+          "held by Claude on inspection: the linked report is not about this story"
+        ],
         "warnings": []
       },
       "critic": {
@@ -382,9 +384,11 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "needs_human",
       "guard": {
-        "errors": [],
+        "errors": [
+          "held by Claude on inspection: the linked report is not about this story"
+        ],
         "warnings": []
       },
       "critic": {
