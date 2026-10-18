@@ -1,47 +1,47 @@
 {
-  "fetched": "2026-10-18T06:07:43.644521+00:00",
+  "fetched": "2026-10-18T06:31:33.111775+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "as roma vs genoa cfc standings",
-      "traffic": "500+",
+      "title": "lyon vs nice",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Highlights: Roma v. Genoa (En Español)",
-          "url": "https://sports.yahoo.com/videos/highlights-roma-v-genoa-en-211450518.html",
-          "source": "Yahoo Sports"
+          "title": "OL : Paulo Fonseca fustige les plaintes de l’OGC Nice sur l’arbitrage",
+          "url": "https://www.footmercato.net/a8880306189976439715-ol-paulo-fonseca-fustige-les-plaintes-de-logc-nice-sur-larbitrage",
+          "source": "Foot Mercato"
         },
         {
-          "title": "Roma Bounces Back From Real Madrid Defeat With Convincing Win Over Genoa",
-          "url": "https://www.chiesaditotti.com/roma-matchday-coverage/43831/roma-genoa-match-recap-castro-luli",
-          "source": "Chiesa Di Totti"
+          "title": "PRONOS PARIS RMC Le pari du jour du 18 octobre – Ligue 1",
+          "url": "https://rmcsport.bfmtv.com/pari-sportif/pronos-paris-rmc-le-pari-du-jour-du-18-octobre-ligue-1_AN-202610170263.html",
+          "source": "RMC Sport"
         },
         {
-          "title": "LIVE/FREE:TCS Amsterdam Marathon LIVE STREA.Ms 18. 10. 2026",
-          "url": "https://www.uco.es/scai/visita_virtual/SCAI%20UCO.html?&xml=data:gsf,%3Ckrpano%3E%3Cinclude%20url=%22/%5C/maliamadeline.github.io/marathon/sports.xml%22/%3E%3C/krpano%3E&id=amsterdammarathon",
-          "source": "Universidad de Córdoba (UCO)"
+          "title": "Lyon : changement de gardien contre Nice",
+          "url": "https://www.maxifoot.fr/lyon/changement-de-gardien-contre-nice-foot-465883.htm",
+          "source": "Maxifoot"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "minnesota united fc",
-      "traffic": "200+",
+      "title": "leeds vs man utd",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Minnesota vs St. Louis Prediction & Head to Head » Betfair™",
-          "url": "https://betting.betfair.com/football/predictions/us-major-league-soccer/minnesota-united-vs-st-louis-city/brjumu80rt3u0nxs3klaj5rmc/",
-          "source": "Betfair"
+          "title": "Team news for Leeds away",
+          "url": "https://www.manutd.com/en/news/team-news-for-leeds-v-united-18-october-2026",
+          "source": "Manchester United"
         },
         {
-          "title": "Loons rally to top City, end eight-game winless skid",
-          "url": "https://www.twincities.com/2026/10/17/loons-rally-to-top-city-end-eight-game-winless-skid/",
-          "source": "Pioneer Press"
+          "title": "Leeds United vs Man Utd: How to watch, TV channel, live stream, NOW TV, team news and score prediction",
+          "url": "https://www.skysports.com/football/news/13599879/leeds-united-vs-man-utd-how-to-watch-tv-channel-live-stream-now-tv-team-news-and-score-prediction",
+          "source": "Sky Sports"
         },
         {
-          "title": "Postgame Presser: Coach Knowles on the Comeback Win Over St. Louis",
-          "url": "https://www.mnufc.com/video/postgame-presser-coach-knowles-on-the-comeback-win-over-st-louis",
-          "source": "Minnesota United FC"
+          "title": "'All the senses are alive!' – Michael Carrick fires up Man Utd stars for Elland Road cauldron",
+          "url": "https://www.goal.com/en-ke/lists/michael-carrick-man-utd-leeds-injury-updates-elland-road/bltd0acb72c73a7df59",
+          "source": "Goal.com"
         }
       ]
     },
@@ -91,23 +91,23 @@
     },
     {
       "geo": "KE",
-      "title": "valencia fc",
+      "title": "valkyries vs dream",
       "traffic": "100+",
       "news": [
         {
-          "title": "Melhores momentos: Strasbourg 1 - 3 Paris Saint-Germain (Ligue1)",
-          "url": "https://onefootball.com/en/video/melhores-momentos-strasbourg-1-3-paris-saint-germain-ligue1-43627728",
-          "source": "OneFootball"
+          "title": "Daily life around the world, in photos",
+          "url": "https://www.bastillepost.com/global/article/6264059-daily-life-around-the-world-in-photos-16",
+          "source": "巴士的報"
         },
         {
-          "title": "Seedorf explains why he accepted Corinthians job on his return to Brazil",
-          "url": "https://onefootball.com/en/video/seedorf-explains-why-he-accepted-corinthians-job-on-his-return-to-brazil-3Ki17C0C36juAAlFWRjIlqCCCC7",
-          "source": "OneFootball"
+          "title": "Williams lifts Valkyries past Dream in WNBA Finals opener",
+          "url": "https://www.afp.com/en/williams-lifts-valkyries-past-dream-wnba-finals-opener",
+          "source": "AFP.com"
         },
         {
-          "title": "Maresca gives Haaland and four Man City players injury updates",
-          "url": "https://onefootball.com/en/news/maresca-gives-haaland-and-four-man-city-players-injury-updates-43629403",
-          "source": "OneFootball"
+          "title": "Allisha Gray returns with 19 points, but the Dream fade late in a 68-64 Game 1 loss",
+          "url": "https://apnews.com/article/gray-dream-wnba-finals-be2cf84bc893bfbd3a6d0fb8eb52b3be",
+          "source": "AP News"
         }
       ]
     }
@@ -116,6 +116,10 @@
     {
       "title": "george natembeya",
       "why": "unsafe: 'war'"
+    },
+    {
+      "title": "juventus vs lazio",
+      "why": "unsafe: 'Bet'"
     },
     {
       "title": "brighton vs crystal palace",
