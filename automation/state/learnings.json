@@ -1,13 +1,13 @@
 {
-  "updated": "2026-10-18T17:02:08.366013+03:00",
+  "updated": "2026-10-18T20:02:07.217548+03:00",
   "top": [
     {
       "id": "2026-w42-d6-promise-r3",
       "series": "promise",
       "lane": "everyone",
-      "score": 1500.0,
+      "score": 1000.0,
       "opening": "A financial promise delivered.",
-      "reach": 2,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -54,17 +54,17 @@
       "avg_watch_s": 9.3
     },
     {
-      "id": "2026-w42-d4-sauti-r3",
+      "id": "2026-w42-hot-1017",
       "series": "sauti",
-      "lane": "campus",
+      "lane": "everyone",
       "score": 222.2,
-      "opening": "IEBC wants 6.3 million youth.",
+      "opening": "Sh6.2 billion gone on ghost workers.",
       "reach": 9,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 0,
-      "avg_watch_s": 6.1
+      "avg_watch_s": 8.5
     }
   ],
   "bottom": [
@@ -113,9 +113,9 @@
       "id": "2026-w42-d6-promise-r3",
       "series": "promise",
       "lane": "everyone",
-      "score": 1500.0,
+      "score": 1000.0,
       "opening": "A financial promise delivered.",
-      "reach": 2,
+      "reach": 3,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -162,19 +162,6 @@
       "avg_watch_s": 9.3
     },
     {
-      "id": "2026-w42-d4-sauti-r3",
-      "series": "sauti",
-      "lane": "campus",
-      "score": 222.2,
-      "opening": "IEBC wants 6.3 million youth.",
-      "reach": 9,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 6.1
-    },
-    {
       "id": "2026-w42-hot-1017",
       "series": "sauti",
       "lane": "everyone",
@@ -186,6 +173,19 @@
       "comments": 1,
       "likes": 0,
       "avg_watch_s": 8.5
+    },
+    {
+      "id": "2026-w42-d4-sauti-r3",
+      "series": "sauti",
+      "lane": "campus",
+      "score": 200.0,
+      "opening": "IEBC wants 6.3 million youth.",
+      "reach": 10,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 6.0
     },
     {
       "id": "2026-w42-hot-1014",
