@@ -18,7 +18,7 @@
       "drafted_at": "2026-10-18T08:50:09.042985+03:00"
     },
     {
-      "id": "2026-w43-d2-kenya-r8",
+      "id": "2026-w43-d2-kenya-r9",
       "template": "kenya",
       "lane": "diaspora",
       "series": "Kenya at its best",
@@ -59,7 +59,7 @@
         "outlet": "Kenya Wildlife Service",
         "photo_query": "Hell's Gate National Park Kenya"
       },
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": []
@@ -86,9 +86,7 @@
       "photo_kind": "place",
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Hell%27s_Gate_National_Park_(Kenya)_43.jpg",
-      "voiced": "Kenyan accent",
-      "reel": true,
-      "tg_msg": 311
+      "reel": true
     },
     {
       "id": "2026-w43-d3-scorecard-r10",
@@ -159,7 +157,7 @@
       "drafted_at": "2026-10-18T08:50:09.042976+03:00"
     },
     {
-      "id": "2026-w43-d4-glasspoll-r8",
+      "id": "2026-w43-d4-glasspoll-r9",
       "template": "glasspoll",
       "lane": "everyone",
       "hook": "Super petrol price check",
@@ -204,7 +202,7 @@
         "published": "2026-10-15",
         "wrong_hint": "last month's price, Sh214.03 per litre"
       },
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": []
@@ -231,12 +229,10 @@
       "photo_kind": "posted",
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/127878-epra-warns-possible-further-fuel-price-hikes-if-middle-east-conflict-escalates",
-      "voiced": "Kenyan accent",
-      "reel": true,
-      "tg_msg": 322
+      "reel": true
     },
     {
-      "id": "2026-w43-d5-straight-r10",
+      "id": "2026-w43-d5-straight-r11",
       "template": "straight",
       "lane": "campus",
       "claim": "Image of Senator Edwin Sifuna asleep at public event is real.",
@@ -285,7 +281,7 @@
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZldsd1liT1p0dEptSUtqd2JZZHFoaXoyZFFLeGlyZjBKLURwbEtfZ3BkN1hUMXV6TnZEOVhoT2FUOTZlWWRCR296UzVFOXFKVVR5Y3FLNlNobndHTjAwVlF2NUJlMWVkbGpkN08yTzhxQnNqMGNGR3JjR0prN042ZnkwQ0c3QzdkdDV2dmd3ajBKemxMTzhqM0VQNXZpVEFrb3NKLTNyWDFmY21BSmV2ejc0RHg0OFE?oc=5",
         "published": "2026-10-16"
       },
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": []
@@ -315,12 +311,10 @@
       "photo_source": "https://commons.wikimedia.org/wiki/File:Samsung_smartphone_battery,_Hillegersberg,_Rotterdam_(2022)_07.jpg",
       "video_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/videos/2026-w43-d5-straight-r10-video.mp4",
       "video_credit": "Footage: Natures_Embrace / Pixabay",
-      "video_source": "https://pixabay.com/videos/id-202987/",
-      "voiced": "Kenyan accent",
-      "tg_msg": 326
+      "video_source": "https://pixabay.com/videos/id-202987/"
     },
     {
-      "id": "2026-w43-d6-kenya-r9",
+      "id": "2026-w43-d6-kenya-r10",
       "template": "kenya",
       "lane": "hustle",
       "series": "Built in Kenya",
@@ -364,7 +358,7 @@
         "outlet": "Citizen Digital",
         "photo_query": "Madaraka Express SGR train Mombasa Nairobi Kenya"
       },
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": [
@@ -377,12 +371,10 @@
       "photo_kind": "place",
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_Railways_DF8B_locomotive_on_the_new_SGR_line,_06-06-2017.jpg",
-      "voiced": "Kenyan accent",
-      "reel": true,
-      "tg_msg": 327
+      "reel": true
     },
     {
-      "id": "2026-w43-d7-glasspoll-r9",
+      "id": "2026-w43-d7-glasspoll-r10",
       "template": "glasspoll",
       "lane": "everyone",
       "message": "Voters weigh in on political pacts ahead of the 2027 elections.",
@@ -415,7 +407,7 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "awaiting",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": []
@@ -437,14 +429,12 @@
         "note": "Directly taps into the high-demand UDA-ODM pact debate currently leading the national news."
       },
       "drafted_at": "2026-10-18T05:24:34.976594+03:00",
-      "voiced": "Kenyan accent",
       "reel": true,
       "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d7-glasspoll-r9-photo.jpg",
       "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0",
       "photo_kind": "symbolic",
       "photo_outlet": "",
-      "photo_source": "https://commons.wikimedia.org/wiki/File:2022_Kenya_election_detailed_partial_results.png",
-      "tg_msg": 314
+      "photo_source": "https://commons.wikimedia.org/wiki/File:2022_Kenya_election_detailed_partial_results.png"
     }
   ],
   "scripts": {
