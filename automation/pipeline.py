@@ -1085,6 +1085,15 @@ def collect() -> None:
                 except Exception as e:
                     log(f"note reply skipped: {e}")
                 continue
+            import takes
+            if takes.is_take(msg):         # your recording of a Reel's script, sent as a reply to it
+                reply = takes.intake(msg, allowed_chat, weeks)
+                if reply:
+                    try:
+                        tg("sendMessage", {"chat_id": allowed_chat, "text": reply, "reply_to_message_id": msg["message_id"]})
+                    except Exception as e:
+                        log(f"take reply skipped: {e}")
+                continue
             if _voice_of(msg):            # a voice note or audio file: the presenter's voice reference
                 _voice_intake(msg, allowed_chat)
             elif _is_image(msg):          # a photo you replied to a card with: swaps that post's picture
@@ -1110,6 +1119,18 @@ def collect() -> None:
                         "and labelled as an AI voice. Send /voice-off here any time to stop.")
             log(f"voice chosen: {key} ({ok})")
             continue
+        if action == "t":   # under your take: t|<week>|ok:<id> use it, t|<week>|re:<id> record again
+            import takes
+            if not week_file(label).exists():
+                continue
+            data = weeks.setdefault(label, load_week(label))
+            try:
+                said = takes.decide(data, key, allowed_chat)
+            except Exception as e:
+                said = f"Couldn't do that: {str(e)[:120]}"
+            _answer(cq["id"], said[:190])
+            log(f"take {key}: {said}")
+            continue
         if action == "c":   # a comment card: c|r|cid reply, c|h|cid hide, c|s|cid skip
             import engage
             if key.startswith("sample-"):
@@ -1130,6 +1151,14 @@ def collect() -> None:
                 _notify(f"ℹ️ That ✅ was on <b>{_esc(key)}</b>, which is no longer active (expired or already decided). Nothing was posted.")
             continue
         _answer(cq["id"], f"{verdict} ({len(changed)})")
+        if action == "a" and changed:   # you on camera: the script of each approved Reel, to record
+            import takes
+            for pid in changed:
+                q = next(x for x in data["posts"] if x["id"] == pid)
+                try:
+                    takes.ask(q, label, allowed_chat)
+                except Exception as e:
+                    log(f"script for {pid} not sent: {e}")
         if action == "a" and changed:   # TikTok, YouTube Shorts and WhatsApp: ready-to-paste, posted from your phone
             post = next(q for q in data["posts"] if q["id"] == changed[0])
             try:

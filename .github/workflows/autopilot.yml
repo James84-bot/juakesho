@@ -185,6 +185,18 @@ jobs:
           set -o pipefail
           python voicelab.py clone 2>&1 | tee -a run.log
 
+      - name: Your recorded takes (you reading a Reel's script)
+        if: steps.cmd.outputs.c == 'tick'
+        run: |
+          cd automation
+          # only when the tick just saved a recording you replied with: the build tools are installed for that run alone
+          python takes.py pending || { echo "no new recording"; exit 0; }
+          sudo apt-get install -y ffmpeg || true
+          python -m playwright install --with-deps chromium
+          pip install faster-whisper
+          set -o pipefail
+          python takes.py build 2>&1 | tee -a run.log
+
       - name: Show why it failed
         if: failure()
         run: |
