@@ -296,7 +296,7 @@ JARGON = {"procurement": "buying goods and services", "procurements": "purchases
           "liquidity": "cash", "incumbent": "the current holder", "plenary": "the full House", "quorum": "enough members"}
 
 
-# American words a Kenyan presenter never says: Kenyan English uses British forms.
+# American words Kenyans don't use: Kenyan English uses British forms.
 AMERICAN = {"gas price": "fuel price", "gas prices": "fuel prices", "gasoline": "fuel", "cell phone": "phone",
             "cellphone": "phone", "apartment": "flat / house", "apartments": "flats / houses", "mom": "mum",
             "favor": "favour", "center": "centre", "centers": "centres", "labor": "labour", "neighbor": "neighbour",

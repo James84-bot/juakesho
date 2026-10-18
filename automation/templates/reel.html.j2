@@ -31,19 +31,6 @@
 .photo-band { animation: kb {{ BT.t + 1 }}s linear both; }
 .stage { top: {{ 300 + [photo_band, 760] | min + 40 }}px; bottom: 300px; }
 {% endif %}
-{% if presenter is defined and presenter %}
-/* the presenter stays bottom-right for the whole Reel: the lines end above him */
-{% if presenter == 'take' %}
-/* you, full width in the bottom half: the lines sit in the top half */
-.stage { top: 330px; bottom: 1000px; right: var(--m); }
-{% if photo_band %}.photo-band { height: min(var(--bh), 280px); }
-.stage { top: 620px; }{% endif %}
-{% else %}
-.stage { bottom: {{ 740 if presenter == 'pip' else 600 }}px; }
-{% if photo_band %}.photo-band { height: min(var(--bh), 460px); }
-.stage { top: {{ 300 + [photo_band, 460] | min + 40 }}px; }{% endif %}
-{% endif %}
-{% endif %}
 .beat { grid-area: 1 / 1; font-family: "Inter Tight", sans-serif; font-weight: 900; letter-spacing: -.03em; line-height: 1.02;
   color: #fff; text-shadow: 0 3px 28px rgba(0, 0, 0, .45); opacity: 0; }
 .beat .t { display: inline-block; margin-right: .22em; }
@@ -54,7 +41,7 @@
 @keyframes slam { 0% { opacity: 0; scale: 1.25; translate: 0 .08em; } 100% { opacity: 1; scale: 1; translate: 0 0; } }
 @keyframes fill { to { scale: 1 1; } }
 {% for b in beats %}{% set s = BT.starts[loop.index0] %}{% set d = BT.durs[loop.index0] %}
-.b{{ loop.index }} { font-size: {{ fitw(b, 940, 3, 70 if photo_band else 100) if presenter is defined and presenter == 'take' else fitw(b, 860, 4, 96 if photo_band else 132) }}px;
+.b{{ loop.index }} { font-size: {{ fitw(b, 860, 4, 96 if photo_band else 132) }}px;
   animation: {{ 'stay .15s linear both' if loop.last else 'show ' ~ d ~ 's linear both' }}; animation-delay: {{ s }}s; }
 .bars i:nth-child({{ loop.index }}) b { animation: fill {{ d }}s linear {{ s }}s both; }
 {% endfor %}

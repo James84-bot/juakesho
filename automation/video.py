@@ -193,128 +193,10 @@ def beats_segment(env, post: dict, beats: list[str], kicker: str, out_mp4: Path,
     return dur
 
 
-SIGN_OFF = "Facts today. A better Kenya tomorrow."
-PRESENTER_W = 440          # px on the 1080-wide Reel: head and shoulders, bottom-right, clear of the lines
-VOICE_DELAY = 0.15         # s of air before the first word
-
-
-def voice_for(post: dict, lines: list[str], work: Path) -> dict | None:
-    """The presenter reads the beats, then the sign-off. None when no voice has been chosen yet, or if anything
-    fails: a voiced Reel is a bonus and must never stop the post."""
-    try:
-        import voicelab
-        character = voicelab.chosen()
-        if not character:
-            return None
-        wav = work / "voice.wav"
-        durs = voicelab.speak(lines + [SIGN_OFF], wav, character, stand_in_voice=bool(os.environ.get("VOICE_STAND_IN")))
-        script = " ".join(l.replace("*", "") for l in lines + [SIGN_OFF])
-        return {"wav": wav, "durs": durs[:-1], "tail": durs[-1], "script": script, "name": character[0]}
-    except Exception as e:
-        import traceback
-        where = traceback.extract_tb(e.__traceback__)[-1]
-        msg = f"voice skipped for {post['id']}: {type(e).__name__}: {str(e)[:300]} at {Path(where.filename).name}:{where.lineno}"
-        print("  " + msg + "\n" + traceback.format_exc()[-1500:])
-        if os.environ.get("GITHUB_ACTIONS"):   # visible on the run page: logs are not readable from outside
-            print(f"::warning title=presenter::{msg}", flush=True)
-        return None
-
-
-def mix_voice(ff: str, voice: Path, bed: Path, out: Path) -> None:
-    """The voice up front, the music bed low underneath, as long as the bed."""
-    ms = int(VOICE_DELAY * 1000)
-    subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(bed), "-i", str(voice), "-filter_complex",
-                    f"[0:a]volume=0.16[b];[1:a]adelay={ms}|{ms},apad[v];[b][v]amix=inputs=2:duration=first:normalize=0[a]",
-                    "-map", "[a]", "-ar", "44100", "-ac", "2", str(out)], check=True)
-
-
-PORTRAIT = HERE / "content" / "presenter" / "portrait.jpg"   # the realistic presenter's one photo
-
-
-def presenter_style() -> str:
-    """'pip': the realistic presenter (a portrait brought to life) in a studio window; 'illustrated': the drawn
-    host. Realistic whenever the portrait and its face-mapping library are available."""
-    if PORTRAIT.exists():
-        if os.environ.get("FACE_PYTHON") and Path(os.environ["FACE_PYTHON"]).exists():
-            return "pip"
-        try:
-            import mediapipe  # noqa: F401
-            return "pip"
-        except ImportError:
-            print("  realistic presenter unavailable (mediapipe not installed): using the illustrated host")
-    return "illustrated"
-
-
-def add_presenter(ff: str, reel: Path, voice: dict, work: Path, seed: int, style: str = "illustrated",
-                  dur: float = 0.0) -> None:
-    """Lays the talking presenter over the finished Reel (same audio), in place."""
-    out = work / "voiced.mp4"
-    if style == "take":   # your own recording, full width under the lines, a thin brand line on top
-        import takes
-        top = 1920 - takes.TAKE_H
-        subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(voice["take"]),
-                        "-filter_complex",
-                        f"[1:v]setpts=PTS-STARTPTS+{VOICE_DELAY}/TB[pv];"
-                        f"[0:v][pv]overlay=x=0:y={top}:eof_action=repeat[b1];"
-                        f"[b1]drawbox=x=0:y={top - 3}:w=1080:h=6:color=0xDF3636@1:t=fill[v]",
-                        "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
-                        "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart"]
-                       + (["-t", f"{dur:.3f}"] if dur else []) + [str(out)], check=True)
-        shutil.move(str(out), str(reel))
-        return
-    if style == "pip":
-        import living
-        clip = work / "presenter.mp4"
-        face_py = os.environ.get("FACE_PYTHON")   # MediaPipe lives in its own environment (protobuf clash)
-        if face_py:
-            (work / "script.txt").write_text(voice["script"], encoding="utf-8")
-            res = subprocess.run([face_py, str(HERE / "living.py"), "talk", str(PORTRAIT), str(voice["wav"]),
-                                  str(work / "script.txt"), str(clip), ff, str(seed)], capture_output=True, text=True)
-            if res.returncode or not clip.exists():
-                raise RuntimeError(f"face animation failed: {res.stderr.strip()[-400:]}")
-        else:
-            living.talk(PORTRAIT, voice["wav"], voice["script"], clip, ff, seed)
-        graph = living.overlay_graph("0:v", "pv", "v")
-        subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(clip),
-                        "-filter_complex", f"[1:v]setpts=PTS-STARTPTS+{VOICE_DELAY}/TB[pv];" + graph,
-                        "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
-                        "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart"]
-                       + (["-t", f"{dur:.3f}"] if dur else []) + [str(out)], check=True)
-        shutil.move(str(out), str(reel))
-        return
-    import presenter
-    mov = presenter.talk(voice["wav"], voice["script"], work / "presenter.mov", ff, seed)
-    graph = presenter.overlay_graph("0:v", "pv", "v", width=PRESENTER_W, right=20)
-    subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(mov),
-                    "-filter_complex", f"[1:v]setpts=PTS-STARTPTS+{VOICE_DELAY}/TB[pv];" + graph,
-                    "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
-                    "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart", str(out)], check=True)
-    shutil.move(str(out), str(reel))
-
-
-def make_reel(page, env, post: dict, out_dir: Path, ff: str, voice: dict | None = None, name: str = "") -> Path:
-    """voice: a recording of you reading the script (takes.py) -> you appear full-width below the lines."""
+def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
     is_story = post.get("size", "post") == "story"
     beats = beat_reel(post)
-    voice_dir = Path(tempfile.mkdtemp(prefix="reel-voice-"))
-    take = bool(voice and voice.get("take"))
     seed = zlib.crc32(post["id"].encode()) % 1000
-    if not take and beats and post.get("template") != "tazama":   # the AI presenter built from James's real video
-        import twin
-        if twin.ready():
-            try:
-                lines = [b.replace("*", "") for b in beats["beats"]] + [SIGN_OFF]
-                voice, take = twin.voice_for(lines, voice_dir, seed, ff), True
-            except Exception as e:   # the Reel without the presenter is still a good Reel
-                print(f"::warning title=presenter::AI presenter skipped for {post['id']}: {str(e)[:300]}", flush=True)
-                voice = None
-    if not take:
-        voice = voice_for(post, beats["beats"], voice_dir) if beats and post.get("template") != "tazama" else None
-    render.SPOKEN.clear()
-    style = "take" if take else (presenter_style() if voice else "")
-    if voice:   # each line stays up exactly as long as the presenter takes to say it
-        render.SPOKEN.update(zip(beats["beats"], voice["durs"]))
-        beats["presenter"] = style
     if beats:   # the Reel is its own script: one punchy line at a time, over the real photo
         html = render.build_html(env, beats, motion=True, reel=False)
         starts, t = [], 0.0
@@ -328,8 +210,7 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str, voice: dict | None 
         tmp = Path(tmp)
         (tmp / "page.html").write_text(html, encoding="utf-8")
         _open(page, tmp / "page.html")
-        tail = max(1.2, voice["tail"] + VOICE_DELAY + 0.3) if voice else 1.2   # the sign-off is said over the last line
-        dur = round(t + tail, 2) if beats else duration_for(post, page.evaluate("window.__motionEnd()"))
+        dur = round(t + 1.2, 2) if beats else duration_for(post, page.evaluate("window.__motionEnd()"))
         frames = int(dur * FPS)
         render_frames(tmp / "page.html", tmp, frames, alpha=bool(footage))
         track = music_track(post)
@@ -340,10 +221,7 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str, voice: dict | None 
             sound.write_wav(sound.tension(dur, starts if beats else [0.0], seed), tmp / "audio.wav")
         else:
             sound.write_wav(sound.bed(dur, seed), tmp / "audio.wav")
-        if voice:
-            shutil.move(str(tmp / "audio.wav"), str(tmp / "bed.wav"))
-            mix_voice(ff, voice["wav"], tmp / "bed.wav", tmp / "audio.wav")
-        target_mp4 = out_dir / f"{name or post['id']}.mp4"
+        target_mp4 = out_dir / f"{post['id']}.mp4"
         if footage:   # real moving footage underneath, the design frames on top
             cmd = [ff, "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(post["video_file"]),
                    "-framerate", str(FPS), "-i", str(tmp / "f%04d.png"), "-i", str(tmp / "audio.wav"),
@@ -360,29 +238,14 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str, voice: dict | None 
                    "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
                    "-shortest", "-movflags", "+faststart", str(target_mp4)]
         subprocess.run(cmd, check=True)
-        render.SPOKEN.clear()
-        if voice:
-            try:
-                add_presenter(ff, target_mp4, voice, voice_dir, seed, style, dur)
-                if not take or voice.get("ai"):   # an AI presenter is labelled as one; your own recording is not
-                    post["voiced"] = voice["name"]
-            except Exception as e:   # the Reel without the presenter is still a good Reel
-                import traceback
-                where = traceback.extract_tb(e.__traceback__)[-1]
-                msg = (f"presenter skipped for {post['id']}: {type(e).__name__}: {str(e)[:300]} "
-                       f"at {Path(where.filename).name}:{where.lineno}")
-                print("  " + msg + "\n" + traceback.format_exc()[-1500:])
-                if os.environ.get("GITHUB_ACTIONS"):
-                    print(f"::warning title=presenter::{msg}", flush=True)
         # Cover frame: the hook line fully landed (beat Reels), or the fully-built design
         from PIL import Image
         cover = min(frames - 1, int((min(1.2, render.beat_seconds(beats["beats"][0]) - 0.2)) * FPS)) if beats else frames - 1
         if footage:   # the finished picture at that moment, footage included
             subprocess.run([ff, "-y", "-loglevel", "error", "-ss", f"{cover / FPS:.2f}", "-i", str(target_mp4),
-                            "-frames:v", "1", "-q:v", "3", str(out_dir / f"{name or post['id']}-cover.jpg")], check=True)
+                            "-frames:v", "1", "-q:v", "3", str(out_dir / f"{post['id']}-cover.jpg")], check=True)
         else:
-            Image.open(tmp / f"f{cover:04d}.jpg").convert("RGB").save(out_dir / f"{name or post['id']}-cover.jpg", quality=90)
-    shutil.rmtree(voice_dir, ignore_errors=True)
+            Image.open(tmp / f"f{cover:04d}.jpg").convert("RGB").save(out_dir / f"{post['id']}-cover.jpg", quality=90)
     return target_mp4
 
 
