@@ -249,6 +249,19 @@ def add_presenter(ff: str, reel: Path, voice: dict, work: Path, seed: int, style
                   dur: float = 0.0) -> None:
     """Lays the talking presenter over the finished Reel (same audio), in place."""
     out = work / "voiced.mp4"
+    if style == "take":   # your own recording, full width under the lines, a thin brand line on top
+        import takes
+        top = 1920 - takes.TAKE_H
+        subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(voice["take"]),
+                        "-filter_complex",
+                        f"[1:v]setpts=PTS-STARTPTS+{VOICE_DELAY}/TB[pv];"
+                        f"[0:v][pv]overlay=x=0:y={top}:eof_action=repeat[b1];"
+                        f"[b1]drawbox=x=0:y={top - 3}:w=1080:h=6:color=0xDF3636@1:t=fill[v]",
+                        "-map", "[v]", "-map", "0:a", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-pix_fmt", "yuv420p", "-c:a", "copy", "-movflags", "+faststart"]
+                       + (["-t", f"{dur:.3f}"] if dur else []) + [str(out)], check=True)
+        shutil.move(str(out), str(reel))
+        return
     if style == "pip":
         import living
         clip = work / "presenter.mp4"
@@ -279,13 +292,16 @@ def add_presenter(ff: str, reel: Path, voice: dict, work: Path, seed: int, style
     shutil.move(str(out), str(reel))
 
 
-def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
+def make_reel(page, env, post: dict, out_dir: Path, ff: str, voice: dict | None = None, name: str = "") -> Path:
+    """voice: a recording of you reading the script (takes.py) -> you appear full-width below the lines."""
     is_story = post.get("size", "post") == "story"
     beats = beat_reel(post)
     voice_dir = Path(tempfile.mkdtemp(prefix="reel-voice-"))
-    voice = voice_for(post, beats["beats"], voice_dir) if beats and post.get("template") != "tazama" else None
+    take = bool(voice and voice.get("take"))
+    if not take:
+        voice = voice_for(post, beats["beats"], voice_dir) if beats and post.get("template") != "tazama" else None
     render.SPOKEN.clear()
-    style = presenter_style() if voice else ""
+    style = "take" if take else (presenter_style() if voice else "")
     if voice:   # each line stays up exactly as long as the presenter takes to say it
         render.SPOKEN.update(zip(beats["beats"], voice["durs"]))
         beats["presenter"] = style
@@ -318,7 +334,7 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         if voice:
             shutil.move(str(tmp / "audio.wav"), str(tmp / "bed.wav"))
             mix_voice(ff, voice["wav"], tmp / "bed.wav", tmp / "audio.wav")
-        target_mp4 = out_dir / f"{post['id']}.mp4"
+        target_mp4 = out_dir / f"{name or post['id']}.mp4"
         if footage:   # real moving footage underneath, the design frames on top
             cmd = [ff, "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(post["video_file"]),
                    "-framerate", str(FPS), "-i", str(tmp / "f%04d.png"), "-i", str(tmp / "audio.wav"),
@@ -339,7 +355,8 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         if voice:
             try:
                 add_presenter(ff, target_mp4, voice, voice_dir, seed, style, dur)
-                post["voiced"] = voice["name"]
+                if not take:   # an AI voice is labelled as one; your own recording is not AI
+                    post["voiced"] = voice["name"]
             except Exception as e:   # the Reel without the presenter is still a good Reel
                 import traceback
                 where = traceback.extract_tb(e.__traceback__)[-1]
@@ -353,9 +370,9 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         cover = min(frames - 1, int((min(1.2, render.beat_seconds(beats["beats"][0]) - 0.2)) * FPS)) if beats else frames - 1
         if footage:   # the finished picture at that moment, footage included
             subprocess.run([ff, "-y", "-loglevel", "error", "-ss", f"{cover / FPS:.2f}", "-i", str(target_mp4),
-                            "-frames:v", "1", "-q:v", "3", str(out_dir / f"{post['id']}-cover.jpg")], check=True)
+                            "-frames:v", "1", "-q:v", "3", str(out_dir / f"{name or post['id']}-cover.jpg")], check=True)
         else:
-            Image.open(tmp / f"f{cover:04d}.jpg").convert("RGB").save(out_dir / f"{post['id']}-cover.jpg", quality=90)
+            Image.open(tmp / f"f{cover:04d}.jpg").convert("RGB").save(out_dir / f"{name or post['id']}-cover.jpg", quality=90)
     shutil.rmtree(voice_dir, ignore_errors=True)
     return target_mp4
 
