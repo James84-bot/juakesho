@@ -15,7 +15,7 @@
         ],
         "warnings": []
       },
-      "drafted_at": "2026-10-18T08:50:09.042985+03:00"
+      "drafted_at": "2026-10-18T10:16:46.714427+03:00"
     },
     {
       "id": "2026-w43-d2-kenya-r9",
@@ -59,7 +59,7 @@
         "outlet": "Kenya Wildlife Service",
         "photo_query": "Hell's Gate National Park Kenya"
       },
-      "status": "drafted",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": []
@@ -81,80 +81,96 @@
         "note": "Solid evergreen post with clean detail on park dimensions."
       },
       "drafted_at": "2026-10-18T06:15:42.936433+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d2-kenya-r8-photo.jpg",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d2-kenya-r9-photo.jpg",
       "photo_credit": "Photo: Superchilum / Wikimedia Commons, CC BY-SA 4.0",
       "photo_kind": "place",
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Hell%27s_Gate_National_Park_(Kenya)_43.jpg",
-      "reel": true
+      "reel": true,
+      "tg_msg": 338
     },
     {
       "id": "2026-w43-d3-scorecard-r10",
       "template": "scorecard",
       "lane": "hustle",
-      "who": "Ferdinand Waititu",
-      "office": "Former Governor, Kiambu County",
-      "verdict": "Leadership scorecard checked against Chapter Six.",
-      "source": "Daily Nation, 2026-10-18",
-      "message": "Former Kiambu Governor Ferdinand Waititu's record measured against Chapter Six integrity tests.",
-      "action": "Read the official court and audit findings on public funds.",
-      "beats": [
-        "We test *Ferdinand Waititu* against Chapter Six standards.",
-        "Leadership requires public accountability and prudent financial use.",
-        "Kenyans must check the *record* before the next vote.",
-        "Demand complete integrity from every public office holder."
-      ],
-      "photo_query": "Supreme Court of Kenya",
-      "caption": "The Chapter Six Test: Former Kiambu Governor Ferdinand Waititu's record under review. Read the court files and check the facts.\n\nWhat it means for you: Public integrity rules determine who manages county funds and resources.\n\n#ChapterSix #KenyaOnRecord",
+      "researched": true,
+      "who": "George Natembeya",
+      "office": "Governor, Trans Nzoia County",
       "checks": [
         {
-          "test": "Public accountability",
-          "result": "fail",
-          "note": "Faced severe corruption charges over irregular county procurement."
+          "test": "Trading space for hustlers",
+          "result": "pass",
+          "note": "Completed modern stalls at Kitale market to house small traders."
         },
         {
-          "test": "Service delivery",
+          "test": "County audit compliance",
           "result": "fail",
-          "note": "Impeached by the Senate over financial misconduct allegations."
+          "note": "Auditor-General flagged revenue leakages and pending supplier bills."
         },
         {
-          "test": "Integrity and conduct",
-          "result": "fail",
-          "note": "Removed from office for gross violation of the law."
+          "test": "Constitutional decorum",
+          "result": "unclear",
+          "note": "Regular public exchanges with national leaders over devolved power."
         }
       ],
+      "verdict": "Traders got new stalls, but county audit records show spending gaps.",
+      "source": "The Standard, 2026-10-18; Auditor-General report on Trans Nzoia County Executive",
+      "message": "Leaders must match stall delivery with clean financial records under Chapter Six.",
+      "action": "Read your county audit report at oagkenya.go.ke to track county money.",
+      "photo_query": "Kitale town market Kenya",
+      "caption": "We measure Trans Nzoia Governor George Natembeya against Chapter Six standards. Traders have modern market stalls in Kitale, but audit questions remain on county spending.\n\nWhat score does your county boss get on integrity?\n\n#TransNzoia #KitaleMarket #KenyaOnRecord",
+      "beats": [
+        "Governor George Natembeya faces the *Chapter Six* integrity test.",
+        "He opened modern Kitale market stalls for over *2,000* traders.",
+        "County audit reports still flag *unsupported spending* in Trans Nzoia.",
+        "Kenyans demand: Trans Nzoia County *answers* all audit queries publicly."
+      ],
+      "where": "Trans Nzoia",
+      "when": "18 Oct 2026",
+      "side": "both",
+      "tone": "explainer",
+      "impact": "Traders receive modern spaces while county audits track value for money.",
       "bg": "usiku",
       "publish_at": "2026-10-21T18:30:00+03:00",
-      "side": "opposition",
-      "tone": "criticism",
-      "impact": "Public integrity rules determine who manages county funds and resources.",
-      "where": "Kiambu",
-      "when": "21 Oct 2026",
-      "researched": true,
       "source_links": [
         {
-          "outlet": "Daily Nation",
-          "title": "How Ex-Governor Waititu fell from grace",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZTV5ZEFIMVFLc3d6YUNxQ2xZalc3N0EzM2hEUzZ6clhhWC1oVVJZdEk5Rk9tWTNrYUlsR3daWHVjRmdrV2RaeTdUWDMzRXQ5RVNrLWg4MUYyU3o2ZDZ1Q3NGN1dDTDAtbkd3Sl9RSVdPc05DM044UHlmcUZJZEw1YlpXa0hUU09kTGdvTGNIcDBXLU5iX3E2V2s5cXZ4WThPdFFUVnJiV1BHRXNhVV9BeXZB?oc=5",
-          "published": "2026-10-18"
-        },
-        {
-          "outlet": "Daily Nation",
-          "title": "How Ex-Governor Waititu fell from grace",
-          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQ2dZMU5zOEM4eVZoRGlwUTcxSmREa0QyaDdyR2tKejROOHRYQjJrTWppM1pNM25yejRHRjd2X2UySlZ5Q01PcFg5X1dsNFdfR0pnSHJIZXV5bFRwN1dqa3czWmY1QUF6NTc1UVFVRjgxOGlFekFFdC1aTGxoSnh3RS1DQ2JSU1ZhRjFjazRxWnVHcW9n?oc=5",
+          "outlet": "The Standard",
+          "title": "Kitale market launch deepens Ruto, Natembeya political supremacy war",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPbVpud2xOVG5mRldibk5RZ3JicmlxeHEyMExUYkdvNjVVZ1hxQzZGOU40dHVGNXhmdDJKallaQm9tMWg3R1loekd2ZUpoeWExcVdTTHBlTFFwWmI0bmtxR0wtSlVVdENLdGpjd0VHTXlCZ3ZXQnJRU0JIY2xSR1MwU3YyVmYwUWs0V2tFLVVKdkFFNkY5ZFJvSHoxRDBJZ19feWdVeUJiT1haM0l3cUJPZU5WekZkTTFnZnlnTU5VMHo2WlhxQjhQRTlMSDlIM2M3NGc?oc=5",
           "published": "2026-10-18"
         }
       ],
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "the linked report is not about this story (How Ex-Governor Waititu fell from grace): use the headline id of the report this post is really based on"
-        ],
+        "errors": [],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
-      "drafted_at": "2026-10-18T08:50:09.042976+03:00"
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 8.0,
+        "note": "Solid execution on accountability standards with clear local context."
+      },
+      "drafted_at": "2026-10-18T10:16:46.714420+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-scorecard-r10-photo.jpg",
+      "photo_credit": "Photo: Nation",
+      "photo_kind": "posted",
+      "photo_outlet": "Nation",
+      "photo_source": "https://nation.africa/kenya/news/politics/ruto-turns-trans-nzoia-tour-into-campaign-to-unseat-natembeya-5632654",
+      "reel": true,
+      "tg_msg": 339
     },
     {
       "id": "2026-w43-d4-glasspoll-r9",
@@ -202,7 +218,7 @@
         "published": "2026-10-15",
         "wrong_hint": "last month's price, Sh214.03 per litre"
       },
-      "status": "drafted",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": []
@@ -224,12 +240,13 @@
         "note": "Exceptional execution on a daily pricing quiz that every Nairobi commuter cares about."
       },
       "drafted_at": "2026-10-18T08:02:41.834595+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d4-glasspoll-r8-photo.jpg",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d4-glasspoll-r9-photo.jpg",
       "photo_credit": "Photo: Kenyans.co.ke",
       "photo_kind": "posted",
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/127878-epra-warns-possible-further-fuel-price-hikes-if-middle-east-conflict-escalates",
-      "reel": true
+      "reel": true,
+      "tg_msg": 340
     },
     {
       "id": "2026-w43-d5-straight-r11",
@@ -281,7 +298,7 @@
         "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZldsd1liT1p0dEptSUtqd2JZZHFoaXoyZFFLeGlyZjBKLURwbEtfZ3BkN1hUMXV6TnZEOVhoT2FUOTZlWWRCR296UzVFOXFKVVR5Y3FLNlNobndHTjAwVlF2NUJlMWVkbGpkN08yTzhxQnNqMGNGR3JjR0prN042ZnkwQ0c3QzdkdDV2dmd3ajBKemxMTzhqM0VQNXZpVEFrb3NKLTNyWDFmY21BSmV2ejc0RHg0OFE?oc=5",
         "published": "2026-10-16"
       },
-      "status": "drafted",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": []
@@ -304,14 +321,15 @@
       },
       "drafted_at": "2026-10-18T08:02:41.834597+03:00",
       "reel": true,
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-straight-r10-photo.jpg",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-straight-r11-photo.jpg",
       "photo_credit": "Photo: Donald Trung Quoc Don (Chữ Hán: 徵國單) - Wikimedia C / Wikimedia Commons, CC BY-SA 4.0",
       "photo_kind": "symbolic",
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Samsung_smartphone_battery,_Hillegersberg,_Rotterdam_(2022)_07.jpg",
-      "video_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/videos/2026-w43-d5-straight-r10-video.mp4",
+      "video_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/videos/2026-w43-d5-straight-r11-video.mp4",
       "video_credit": "Footage: Natures_Embrace / Pixabay",
-      "video_source": "https://pixabay.com/videos/id-202987/"
+      "video_source": "https://pixabay.com/videos/id-202987/",
+      "tg_msg": 341
     },
     {
       "id": "2026-w43-d6-kenya-r10",
@@ -358,7 +376,7 @@
         "outlet": "Citizen Digital",
         "photo_query": "Madaraka Express SGR train Mombasa Nairobi Kenya"
       },
-      "status": "drafted",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
@@ -366,12 +384,13 @@
         ]
       },
       "drafted_at": "2026-10-18T08:50:09.042984+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d6-kenya-r9-photo.jpg",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d6-kenya-r10-photo.jpg",
       "photo_credit": "Photo: Erasmus Kamugisha / Wikimedia Commons, CC BY-SA 4.0",
       "photo_kind": "place",
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_Railways_DF8B_locomotive_on_the_new_SGR_line,_06-06-2017.jpg",
-      "reel": true
+      "reel": true,
+      "tg_msg": 342
     },
     {
       "id": "2026-w43-d7-glasspoll-r10",
@@ -407,7 +426,7 @@
           "published": "2026-10-17"
         }
       ],
-      "status": "drafted",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": []
@@ -430,18 +449,19 @@
       },
       "drafted_at": "2026-10-18T05:24:34.976594+03:00",
       "reel": true,
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d7-glasspoll-r9-photo.jpg",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d7-glasspoll-r10-photo.jpg",
       "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0",
       "photo_kind": "symbolic",
       "photo_outlet": "",
-      "photo_source": "https://commons.wikimedia.org/wiki/File:2022_Kenya_election_detailed_partial_results.png"
+      "photo_source": "https://commons.wikimedia.org/wiki/File:2022_Kenya_election_detailed_partial_results.png",
+      "tg_msg": 343
     }
   ],
   "scripts": {
-    "radio": "Mambo vipi, mwananchi, na karibu kwa Kenya on Record. Mimi ni sauti yako ya uwajibikaji.\n\nWiki hii, tunaangazia mambo mawili muhimu sana.\n\nKwanza, Nairobi. Tunapima rekodi ya Gavana Johnson Sakaja kupitia kipimo cha Sura ya Sita ya Katiba yetu—ile inayohusu uadilifu na uongozi bora. Je, huduma za jiji zimetimia, ama bado tunapiga makasia katika bahari ya shida? Waziri mkuu wa jiji anastahili kujibu maswali magumu kuhusu usimamizi wa rasilimali za umma.\n\nPili, tunakumbuka miaka tangu SGR, ama Madaraka Express, ianze kuvuma kutoka Mombasa hadi Nairobi kupitia kilomita 472 zake tangu 2017. Ni usafiri uliorahisisha maisha, lakini swali kuu ni hili: Je, pesa zilizowekezwa hapo zinaleta faida inayolingana na deni tulilobeba kama taifa?\n\nTukumbuke, uwajibikaji sio hisani, ni haki yetu.\n\n[KISWAHILI SUMMARY]\nKwa kifupi wiki hii: Tunaangazia uadilifu wa Gavana Sakaja kulingana na Sura ya Sita ya Katiba, na pia tunapitia miaka tangu kuzinduliwa kwa treni ya SGR inayounganisha Mombasa na Nairobi tangu 2017. Piga kura kwa akili, dai haki yako.",
-    "voice_note": "Sasa, mwananchi wa ukweli. Kwenye Kenya on Record wiki hii, tunaangazia mambo mawili mazito. Kwanza, tunapima uadilifu wa Gavana Johnson Sakaja wa Nairobi kupitia lenzi ya Sura ya Sita. Je, anafanya kulingana na matarajio ya wananchi? Pili, tunapitia safari ya Madaraka Express kutoka Mombasa hadi Nairobi tangu 2017—kilomita 472 za reli, lakini je, deni linasawazishwa na maendeleo? Sikiliza vizuri, angalia rekodi, na usikubali kudanganywa.",
-    "sms": "USIIBIWE: Kiongozi bora hupima uwezo wake kwa kazi, si maneno. Angalia rekodi ya viongozi wetu kabla ya kuchagua. Kenya on Record.",
-    "reels": "[Visual: Fast cuts of Nairobi traffic, Governor Sakaja, and SGR train moving across the landscape]\n\n[Audio - Steady, serious tone]\nNairobi inateseka, na SGR inatupa deni. Wiki hii kwenye Kenya on Record, tunapima uadilifu wa Gavana Johnson Sakaja kupitia Sura ya Sita ya Katiba.\n\nWakati huohuo, tunaangazia Madaraka Express—kilomita 472 kati ya Mombasa na Nairobi tangu 2017. Je, reli hii imetufaidi kweli, ama ni mzigo mwingine kwa mlipa kodi?\n\nAngalia rekodi. Dai uwajibikaji. Kenya on Record."
+    "radio": "Hamjambo na karibuni to Kenya on Record. This week, we need to have a serious conversation about how we measure performance in our counties and constituencies.\n\nAcross the country, we see leaders cutting ribbons on new modern market stalls. It makes for great photos. Mama mboga gets a shed, traders move off the road, and the leader gets applause. Tangible delivery matters. But here is the hard question: at what cost did those stalls come, and where are the receipts?\n\nUnder Chapter Six of our Constitution, leadership and integrity are non-negotiable. It is simply not enough to point at twenty completed stalls while the Auditor-General’s report shows millions unaccounted for in inflated tenders, procurement shortcuts, or kickbacks paid to proxies. A completed project is not an immunity shield against financial accountability.\n\nTrue service means matching physical delivery on the ground with clean, verifiable records at the treasury. If public funds were siphoned in the background, a new market is not development—it is just public theft covered with fresh paint. As citizens, our duty is to demand both: functional spaces for our traders and absolute integrity from those holding the checkbook.\n\nKwa ufupi: Kujenga vibanda vya soko pekee haitoshi. Kiongozi bora lazima azingatie Sura ya Sita ya Katiba kwa kuweka hesabu wazi bila wizi. Tusiridhike na saruji huku fedha zetu za umma zikipotea bila maelezo.",
+    "voice_note": "Habari zenu. Quick thought for the week from Kenya on Record. Have you noticed how quickly politicians rush to launch market stalls whenever audit queries start making headlines? They bring cameras, hand over keys, and tell everyone to focus on work instead of politics. But let’s be sharp. Chapter Six of our Constitution demands integrity in public resource management. Building fifty stalls does not give anyone a license to loot fifty million shillings in the procurement process. You cannot cover up financial audit queries with fresh paint and ribbon-cutting ceremonies. Stalls are our right because we pay taxes; clean books are our constitutional demand. Next time your leader brags about a new market, ask to see the tender awards and the audit report. Delivery without financial honesty is just PR. Share this note with your local group.",
+    "sms": "Usiibiwe: New market stalls do not excuse dirty books. Demand audited procurement records alongside completed projects. Chapter Six matters.",
+    "reels": "Cutting a ribbon on new market stalls makes for a great photo op. But fresh paint cannot cover dirty books. Under Chapter Six of our Constitution, delivery must walk hand in hand with integrity. When public funds are looted through inflated tenders, a completed stall is not a victory—it’s evidence. Don’t just applaud the concrete. Check the receipts. Demand clean financial records from your leaders."
   },
   "spend_usd": 0.0,
   "revision": 8
