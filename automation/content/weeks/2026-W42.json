@@ -827,13 +827,87 @@
         "note": "Name the specific tax bills and state the exact levies changed rather than using vague 'two tax bills' phrasing."
       },
       "drafted_at": "2026-10-17T19:22:30.708142+03:00"
+    },
+    {
+      "id": "2026-w42-hot-1018",
+      "template": "sauti",
+      "lane": "everyone",
+      "hot": true,
+      "message": "Ebola cases rose to seven in Kenya as four new cases were detected in quarantine.",
+      "action": "Send this to someone who needs to see the latest health safety updates.",
+      "beats": [
+        "Ebola cases rose to *seven* in Kenya.",
+        "Four new cases were detected in quarantine.",
+        "Three health workers tested positive in isolation.",
+        "Kenyans demand: the Ministry of Health provides daily safety updates."
+      ],
+      "photo_query": "hospital ward Kenya",
+      "event_query": "Ministry of Health Nairobi",
+      "source": "Capital FM News, 2026-10-18",
+      "kicker": "Public Health",
+      "line": "Ebola cases rose to *seven* in Kenya as four new cases were detected in quarantine.",
+      "fact": "Three health workers tested positive while in isolation at the health facility.",
+      "caption": "Ebola cases rose to *seven* in Kenya as four new cases were detected in quarantine.\n\nSend this to someone who needs to see the latest health safety updates.\n\n#EbolaControlled #KenyaOnRecord",
+      "who": "Ministry of Health",
+      "where": "National",
+      "when": "18 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Ordinary Kenyans face health risks and need clear official protection guidelines.",
+      "bg": "usiku",
+      "publish_at": "2026-10-18T12:45:00+03:00",
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Ebola cases rise to seven in Kenya as three health workers test positive",
+          "link": "https://capitalfm.africa/ebola-cases-rise-to-seven-in-kenya-as-three-health-workers-test-positive/",
+          "published": "2026-10-18"
+        },
+        {
+          "outlet": "Capital FM News",
+          "title": "DCI recovers UK-stolen Land Rover in nationwide vehicle crackdown",
+          "link": "https://capitalfm.africa/dci-recovers-uk-stolen-land-rover-in-nationwide-vehicle-crackdown/",
+          "published": "2026-10-18"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 4,
+        "action": 6,
+        "fair": 7,
+        "impact": 8,
+        "avg": 7.3,
+        "note": "Fix the action line so it tells readers to demand daily testing kits and clear isolation protocols from the Ministry of Health instead of a vague share prompt."
+      },
+      "drafted_at": "2026-10-18T09:21:06.992434+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W42/photos/2026-w42-hot-1018-photo.jpg",
+      "photo_credit": "Photo: Unknown authorUnknown author / Wikimedia Commons, Public domain",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Leper_Ward,_Tumutumu_Hospital,_Kenya,_ca.1905-ca.1940_(imp-cswc-GB-237-CSWC47-LS7-046).jpg",
+      "voiced": "Kenyan accent",
+      "reel": true,
+      "tg_msg": 331
     }
   ],
   "scripts": {
-    "radio": "Good evening and welcome to Kenya on Record. Let us talk plainly about our money. This week, President William Ruto signed two new tax bills into law. Even before the ink dries, citizens across the country are asking a fundamental question: where are the transparent schedules? Over the last two years, Kenyans have weathered shifting tax brackets, sudden levies, and deductions that leave payslips looking leaner by the month. What the public is demanding now is not unreasonable. It is basic fiscal decency. If the government expects citizens and small businesses to carry an increased burden, it must provide a clear, plain-language breakdown of what is being taxed, when it takes effect, and exactly where that revenue is channeled. Revenue mobilization cannot succeed in an environment of confusion and distrust. As these laws come into force, do not simply accept unexplained deductions. Review your payslip, question unexpected charges on your invoices, and ask your elected leaders why these schedules were not made public beforehand. We must normalize holding the state accountable for every shilling it takes from our pockets.\n\nKwa ufupi: Rais ametia saini miswada miwili mipya ya ushuru kuwa sheria wiki hii. Wananchi wanadai uwazi kamili na ratiba iliyo wazi ya makato hayo. Kagua mshahara wako kwa makini, uliza maswali, na udai uwajibikaji kutoka kwa viongozi wako.",
-    "voice_note": "Hey everyone, quick update from Kenya on Record. So, the President officially signed two new tax bills into law this week. Whatever your view on government revenue, one thing is non-negotiable: transparency. Right now, Kenyans are demanding clear, publicly available tax schedules. We have seen too many instances where new laws pass and citizens are left confused by sudden deductions on their payslips or unexpected costs at the till. A government that respects its taxpayers must explain clearly who is paying what, starting when, and for what purpose. As these laws roll out, please take a close look at your payslips and business invoices this month. Don't just absorb unexplained charges quietly. Ask the tough questions, share this note with your colleagues, and let’s keep our eyes on the numbers.",
-    "sms": "Usiibiwe: New tax laws are signed. Check your payslip deductions carefully this month and demand clear explanations from KRA on any new charges.",
-    "reels": "Two new tax bills are now law, signed by the President this week. But here is the real issue: where are the transparent schedules? Kenyans aren't asking for favours—we are asking for clarity. If the state expects you to dig deeper into your pocket, it owes you an exact breakdown of what changes, when it starts, and where that money goes. Stay awake. Check your payslips."
+    "radio": "Habari za jioni na karibu kwenye Kenya on Record. Mimi ni sauti yako ya kuaminika kwa uwajibikaji. Leo tunazungumzia hali ya afya nchini, haswa kuhusu ripoti ya hivi punde ya ugonjwa wa Ebola.\n\nWizara ya Afya imethibitisha kuwa idadi ya visa vya Ebola nchini imepanda hadi kufikia saba, baada ya visa vinne vipya kugunduliwa ndani ya vituo vya karantini. Hii ni habari inayohitaji kila mmoja wetu kuwa macho, lakini bila kuingia katika hofu isiyo ya lazima.\n\nKilicho muhimu hapa ni kwamba visa hivi vipya vilipatikana wakiwa tayari wako chini ya uangalizi wa madaktari kwenye karantini. Hii inaonyesha kuwa mifumo yetu ya ufuatiliaji inafanya kazi, lakini haimaanishi sasa tushushe walinzi wetu. Usalama wa taifa huanza na mwananchi binafsi. Fuatilia maagizo kutoka kwa wataalam wa afya, epuka kusambaza uvumi ambao haujathibitishwa, na ripoti dalili zozote zisizo za kawaida kwa nambari rasmi za dharura.\n\nTutaendelea kufuatilia suala hili kwa karibu ili kukupa ukweli mtupu bila kupotosha. Kumbuka, Kenya on Record iko hapa kukuhabarisha na kukulinda.\n\n*Kwa muhtasari:* Visa vya Ebola nchini vimeongezeka hadi kufikia saba baada ya visa vinne vipya kugunduliwa ndani ya karantini. Wizara ya Afya inahimiza umma kuzingatia kanuni za usalama wa afya na kuepuka uvumi.",
+    "voice_note": "Niaje mwananchi? Hapa ni Kenya on Record na dokezo lako la wiki kuhusu afya na usalama wetu. Wizara ya Afya imetangaza kuwa visa vya Ebola vimepanda hadi saba baada ya watu wanne zaidi kupatikana na maambukizi wakiwa tayari ndani ya karantini. Hii si sababu ya kupiga nduru au kusambaza hofu kwenye magroup ya WhatsApp, lakini ni onyo tosha kwamba lazima tuwe makini. Fuata maelekezo ya wataalam wa afya na kuripoti dalili zozote kwa mamlaka husika. Usiingie boxi na tetesi; pata ukweli hapa Kenya on Record.",
+    "sms": "Kenya on Record: Visa vya Ebola vimefika 7 baada ya visa 4 vipya kugunduliwa karantini. Kuwa mwangalifu, fuata maagizo ya afya na epuka uvumi.",
+    "reels": "[Visual: Clean, serious aesthetic with bold text: EBOLA: CASES RISE TO 7]\n\n[Voice-over, calm and authoritative]:\n\nIdadi ya visa vya Ebola nchini imepanda hadi kufikia saba, baada ya visa vinne vipya kugunduliwa ndani ya karantini.\n\nLakini tusipige kelele za hofu—visa hivi vipya vimepatikana kwa sababu wale walioambukizwa walikuwa tayari chini ya uangalizi wa wataalam wetu.\n\nHata hivyo, kazi haijaisha. Hali hii inatukumbusha kuwa usalama wa afya yetu ni jukumu la kila mmoja wetu.\n\nFuata maagizo rasmi. Epuka kupokea na kusambaza habari za uongo. Kuwa mwangalifu, kuwa salama.\n\nHii ni Kenya on Record. Ukweli mtupu."
   },
   "spend_usd": 3.0807,
   "revision": 3
