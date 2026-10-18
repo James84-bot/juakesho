@@ -3,80 +3,79 @@
   "created": "2026-10-14T00:46:06.367461+03:00",
   "posts": [
     {
-      "id": "2026-w43-d1-usiibiwe-r8",
+      "id": "2026-w43-d1-usiibiwe-r9",
       "template": "usiibiwe",
       "lane": "hustle",
-      "message": "Court issues arrest warrants for missing suspects in Sh3.9bn tax fraud.",
-      "action": "Report suspicious tax invoices to the DCI or KRA hotline",
+      "message": "Congolese nationals in a Sh10bn gold scam were charged over a fake Kenyan passport at JKIA.",
+      "action": "Verify all travel and business documents through official eCitizen channels.",
       "beats": [
-        "Courts issued *warrants* for missing suspects in a tax fraud.",
-        "Investigators uncovered fake invoices used to drain public funds.",
-        "Kenyans pay the price when billions vanish through tax fraud.",
-        "Kenyans demand: the DCI publishes all suspects on the run."
+        "A Sh10bn gold scam suspect had a *fake* passport.",
+        "The DCI arrested suspects in a nationwide crackdown.",
+        "Gold scams rely on fake papers and forged stamps.",
+        "Kenyans demand: the DCI publishes the full network."
       ],
-      "photo_query": "Kenyan shilling banknotes",
-      "title": "Sh3.9bn Tax Fraud Arrest Warrants",
+      "photo_query": "Jomo Kenyatta International Airport Nairobi",
+      "title": "Fake Passport Arrests in Sh10bn Gold Scam",
       "sender": "+254 7XX XXX XXX",
-      "sms": "Verify all your tax invoices and KRA tax certificates before filing returns.",
+      "sms": "Your gold cargo requires clearance fees of Sh45,000 to release funds. Reply to confirm payment.",
       "tips": [
-        "Check all tax invoices against the official KRA portal.",
-        "Report unregistered entities selling goods without papers.",
-        "Demand official receipts for every transaction."
+        "Never pay upfront fees for gold deals or cargo clearance.",
+        "Verify passport numbers directly on the official eCitizen portal.",
+        "Report suspicious foreign investors to the DCI hotline."
       ],
-      "source": "Daily Nation, 2026-10-16",
-      "caption": "Sh3.9 billion lost in a fake tax invoice scheme. The court has now issued arrest warrants for the suspects on the run. Verify your transactions.\n\nWho should face court first? Drop it below.\n\n#Usajili #KenyaOnRecord",
+      "source": "The Star, Kenya, 2026-10-15",
+      "caption": "Sh10bn gold scam suspects arrested with fake Kenyan passports at JKIA. Never send money for clearance fees. Verify documents before you pay.\n\nSend this to someone who needs to see it.\n\n#Usiibiwe #KenyaOnRecord",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Fake passports and gold scams cost victims billions and damage our trade reputation.",
       "bg": "usiku",
       "publish_at": "2026-10-19T07:30:00+03:00",
-      "side": "none",
-      "tone": "criticism",
       "source_links": [
         {
-          "outlet": "Daily Nation",
-          "title": "Sh3.9bn VAT fraud: Court issues arrest warrants for missing suspects",
-          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM25uZm5rTWM1RmVTN2lQTWVNT1N3cHYtNER0YkxrME42blNlNEtXekoxcDJzNFlERTMyQUxMSDRta296UnE3dHVjMzA5YkR3VG9lWFpib1dfRXhCcFBTcUV0eGw3aGVHZ2pZOVRBZ2c4WmdySEJCRS0yYkFxWGg0a2k2czJ6Q1NpQjBHZHQ5aWJBb2pNVjVNQUFBRXk0M0VPekJrQUhMTWZqNm9jSDRON2F3?oc=5",
-          "published": "2026-10-16"
+          "outlet": "The Star, Kenya",
+          "title": "Congolese in Sh10bn gold scam case charged over fake Kenyan passport after JKIA arrest",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeUROZTZmUndHb19DVkMybUhac1B2elktREFPYXVvMEIxNHBDRzl6Q25ZT3B3SEQtcVlVam45QWNSWGhlaXpzOGJRSnpZTGlPX01QdWZxNjAzMldYQTk2TEVCWHc2M3VJZ2x4cnY5cGF4X0Z2WnZSVUY1UmtFUEc1QXFnbm12TGhrTzVnOUFR?oc=5",
+          "published": "2026-10-15"
         }
       ],
       "material": {
         "kind": "scam",
-        "key": "news:https://news.google.com/rss/articles/CBMisgFBVV95cUxOM25uZm5rTWM1RmVTN2lQTWVNT1N3cHYtNER0YkxrME42blNlNEtXekoxcDJzNFlERTMyQUxMSDRta296UnE3dHVjMzA5YkR3VG9lWFpib1dfRXhCcFBTcUV0eGw3aGVHZ2pZOVRBZ2c4WmdySEJCRS0yYkFxWGg0a2k2czJ6Q1NpQjBHZHQ5aWJBb2pNVjVNQUFBRXk0M0VPekJrQUhMTWZqNm9jSDRON2F3?oc=5",
-        "title": "Sh3.9bn VAT fraud: Court issues arrest warrants for missing suspects",
-        "outlet": "Daily Nation",
-        "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM25uZm5rTWM1RmVTN2lQTWVNT1N3cHYtNER0YkxrME42blNlNEtXekoxcDJzNFlERTMyQUxMSDRta296UnE3dHVjMzA5YkR3VG9lWFpib1dfRXhCcFBTcUV0eGw3aGVHZ2pZOVRBZ2c4WmdySEJCRS0yYkFxWGg0a2k2czJ6Q1NpQjBHZHQ5aWJBb2pNVjVNQUFBRXk0M0VPekJrQUhMTWZqNm9jSDRON2F3?oc=5",
-        "published": "2026-10-16"
+        "key": "news:https://news.google.com/rss/articles/CBMijgFBVV95cUxOeUROZTZmUndHb19DVkMybUhac1B2elktREFPYXVvMEIxNHBDRzl6Q25ZT3B3SEQtcVlVam45QWNSWGhlaXpzOGJRSnpZTGlPX01QdWZxNjAzMldYQTk2TEVCWHc2M3VJZ2x4cnY5cGF4X0Z2WnZSVUY1UmtFUEc1QXFnbm12TGhrTzVnOUFR?oc=5",
+        "title": "Congolese in Sh10bn gold scam case charged over fake Kenyan passport after JKIA arrest",
+        "outlet": "The Star, Kenya",
+        "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOeUROZTZmUndHb19DVkMybUhac1B2elktREFPYXVvMEIxNHBDRzl6Q25ZT3B3SEQtcVlVam45QWNSWGhlaXpzOGJRSnpZTGlPX01QdWZxNjAzMldYQTk2TEVCWHc2M3VJZ2x4cnY5cGF4X0Z2WnZSVUY1UmtFUEc1QXFnbm12TGhrTzVnOUFR?oc=5",
+        "published": "2026-10-15"
       },
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "withdrawn on inspection: a VAT-fraud court case is not a scam Kenyans can spot; 'fake invoices' is not in the report; photo from an unrelated story"
-        ],
+        "errors": [],
         "warnings": []
       },
       "critic": {
         "hook": 8,
-        "send": 7,
+        "send": 8,
         "clarity": 8,
-        "fresh": 7,
+        "fresh": 8,
         "voice": 8,
         "craft": 8,
         "picture": 8,
         "hold": 8,
-        "demand": 8,
-        "action": 7,
-        "fair": 7,
+        "demand": 3,
+        "action": 8,
+        "fair": 8,
         "impact": 8,
-        "avg": 7.7,
-        "note": "Action must name a specific official reporting desk at the DCI instead of a generic hotline."
+        "avg": 7.6,
+        "note": "Match the demand score to the active news list."
       },
-      "drafted_at": "2026-10-18T06:15:42.936424+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d1-usiibiwe-r8-photo.jpg",
+      "drafted_at": "2026-10-18T07:22:44.097452+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d1-usiibiwe-r9-photo.jpg",
       "photo_credit": "Photo: Kenyans.co.ke",
       "photo_kind": "posted",
       "photo_outlet": "Kenyans.co.ke",
-      "photo_source": "https://www.kenyans.co.ke/news/127809-bungoma-teacher-accused-demanding-ksh300000-bribe-secure-tsc-jobs-arrested",
+      "photo_source": "https://www.kenyans.co.ke/news/127866-congolese-national-ksh10-billion-gold-scam-charged-over-fake-kenyan-passport",
       "voiced": "Kenyan accent",
       "reel": true,
-      "tg_msg": 310
+      "tg_msg": 317
     },
     {
       "id": "2026-w43-d2-kenya-r8",
@@ -152,139 +151,65 @@
       "tg_msg": 311
     },
     {
-      "id": "2026-w43-d3-scorecard-r8",
+      "id": "2026-w43-d3-scorecard-r9",
       "template": "scorecard",
       "lane": "hustle",
-      "message": "William Ruto must be measured against Chapter Six integrity tests and delivery records.",
-      "action": "Check elected representative scorecards on parliament.go.ke",
+      "message": "Leaders must be measured against Chapter Six records and public delivery.",
+      "action": "Read the official audit report on parliament.go.ke before voting.",
       "beats": [
-        "Every leader is measured against Chapter *Six*.",
-        "Public conduct and audit reports form the test.",
-        "Voters must check records before the election.",
-        "Kenyans demand: William Ruto publishes his scorecard."
+        "Chapter Six requires honesty from leaders.",
+        "Voters must check audit reports from n2.",
+        "Promises without records are just noise.",
+        "Kenyans demand: governors publish audit scores."
       ],
-      "photo_query": "Kenyan National Assembly",
-      "who": "William Ruto",
-      "office": "President of Kenya",
-      "verdict": "Check records, audit findings and public conduct before 2027.",
-      "source": "Constitution of Kenya, Chapter Six (Articles 73-80)",
-      "caption": "Leadership is measured by records, not promises. Chapter Six sets the standard for integrity, public service and accountability.\n\nWhat grade does William Ruto get this term? Let us know.\n\n#Scorecard #KenyaOnRecord",
+      "photo_query": "Kenya National Assembly",
+      "who": "Ferdinand Waititu",
+      "office": "Former Governor",
+      "where": "Kiambu",
+      "when": "18 Oct 2026",
+      "verdict": "Failed Chapter Six integrity and audit tests.",
+      "source": "Daily Nation, 2026-10-18",
+      "caption": "Chapter Six is not a suggestion. Measure every leader by their audit record, attendance, and promises kept. Facts on 18 Oct 2026.\n\nWhat is your MP's score this term?\n\n#ChapterSix #KenyaOnRecord",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Voters need clear records to choose leaders who deliver on their promises.",
       "bg": "usiku",
       "publish_at": "2026-10-21T18:30:00+03:00",
-      "side": "government",
-      "tone": "explainer",
-      "impact": "This shapes public accountability and voter choices in upcoming elections.",
-      "where": "National",
-      "when": "21 Oct 2026",
       "checks": [
+        "Record reviewed by auditor",
+        "Public office holder named",
+        "Source cited"
+      ],
+      "source_links": [
         {
-          "test": "Declared wealth publicly",
-          "result": "pass",
-          "note": "Required state officer wealth declarations filed with EACC."
+          "outlet": "Daily Nation",
+          "title": "How Ex-Governor Waititu fell from grace",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQ2dZMU5zOEM4eVZoRGlwUTcxSmREa0QyaDdyR2tKejROOHRYQjJrTWppM1pNM25yejRHRjd2X2UySlZ5Q01PcFg5X1dsNFdfR0pnSHJIZXV5bFRwN1dqa3czWmY1QUF6NTc1UVFVRjgxOGlFekFFdC1aTGxoSnh3RS1DQ2JSU1ZhFjFjazRxWnVHcW9n?oc=5",
+          "published": "2026-10-18"
         },
         {
-          "test": "No abuse of office findings",
-          "result": "unclear",
-          "note": "Auditor-General reports show queries on public expenditure."
-        },
-        {
-          "test": "Met public service integrity",
-          "result": "pass",
-          "note": "Assessed against Chapter Six requirements of the Constitution."
+          "outlet": "Daily Nation",
+          "title": "How Ex-Governor Waititu fell from grace",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQ2dZMU5zOEM4eVZoRGlwUTcxSmREa0QyaDdyR2tKejROOHRYQjJrTWppM1pNM25yejRHRjd2X2UySlZ5Q01PcFg5X1dsNFdfR0pnSHJIZXV5bFRwN1dqa3czWmY1QUF6NTc1UVFVRjgxOGlFekFFdC1aTGxoSnh3RS1DQ2JSU1ZhRjFjazRxWnVHcW9n?oc=5",
+          "published": "2026-10-18"
         }
       ],
       "status": "needs_human",
       "guard": {
         "errors": [
-          "withdrawn on inspection: grades the President pass/unclear with no report on his record"
+          "checks[0] must be an object {\"test\": ..., \"result\": \"pass|fail|unclear\", \"note\": the evidence}, not a plain string",
+          "checks[1] must be an object {\"test\": ..., \"result\": \"pass|fail|unclear\", \"note\": the evidence}, not a plain string",
+          "checks[2] must be an object {\"test\": ..., \"result\": \"pass|fail|unclear\", \"note\": the evidence}, not a plain string",
+          "the linked report is not about this story (How Ex-Governor Waititu fell from grace): use the headline id of the report this post is really based on"
         ],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
       "critic": {
-        "hook": 7,
-        "send": 7,
-        "clarity": 8,
-        "fresh": 8,
-        "voice": 8,
-        "craft": 8,
-        "picture": 7,
-        "hold": 7,
-        "demand": 8,
-        "action": 7,
-        "fair": 7,
-        "impact": 8,
-        "avg": 7.5,
-        "note": "Ensure the demand section points to specific accountability portals."
-      },
-      "drafted_at": "2026-10-18T06:15:42.936435+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-scorecard-r8-photo.jpg",
-      "photo_credit": "Photo: Capital FM",
-      "photo_kind": "posted",
-      "photo_outlet": "Capital FM",
-      "photo_source": "https://capitalfm.africa/dp-kindiki-defends-rutos-development-record-frames-2027-polls-as-contest-between-delivery-and-empty-rhetoric/",
-      "voiced": "Kenyan accent",
-      "reel": true,
-      "tg_msg": 312
-    },
-    {
-      "id": "2026-w43-d4-glasspoll-r8",
-      "template": "glasspoll",
-      "lane": "everyone",
-      "message": "Nyoro's PPK proposes Sh29 fuel price cut, calls for Sh5.5 billion subsidy after EPRA hike",
-      "action": "Comment A or B with your guess before checking the answer",
-      "beats": [
-        "Proposes Sh29 fuel price cut.",
-        "Option A is the old price.",
-        "Option B is the current price.",
-        "The answer is B: Sh192."
-      ],
-      "photo_query": "petrol station Kenya",
-      "hook": "Guess the fuel price!",
-      "question": "How much is petrol in Nairobi now?",
-      "cta": "Comment A or B",
-      "options": [
-        "A: Sh180 per litre",
-        "B: Sh192 per litre"
-      ],
-      "source": "The Eastleigh Voice, 2026-10-17",
-      "caption": "Test your knowledge on everyday living costs. Can you guess the current pump price in Nairobi after the EPRA review?\n\nComment A or B in the comments.\n\n#GuessThePrice #KenyaOnRecord",
-      "bg": "usiku",
-      "publish_at": "2026-10-22T19:30:00+03:00",
-      "size": "story",
-      "series": "Guess the Price",
-      "angle": "price_quiz",
-      "side": "none",
-      "tone": "explainer",
-      "source_links": [
-        {
-          "outlet": "The Eastleigh Voice",
-          "title": "Nyoro's PPK proposes Sh29 fuel price cut, calls for Sh5.5 billion subsidy after EPRA hike",
-          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTXJjTUh6djZSSVpNMlBxaTVVeS1fc25RNFFFemRMaldwNVF1UFNLVHZGUEpRUDkxNXNSVTV4bUFCbUZySkRLS3Q4Q3A5eS1iMjI4UUhSSF9JNkk0MFRnVV9Ed0FfdEdXT0NNYlJXY0NOejdYb3VjdUZ4cjBLUnM4WTY5bjFzZ0NGOUREa21oTXZqTEJmTFVUZ1RtSHpYQUpkblB2RjRSUkZBRlJiT3JLLVFqZWRwM3FKLU5Sckw1My1WYkxKTWQyX05KZ1JUUQ?oc=5",
-          "published": "2026-10-17"
-        }
-      ],
-      "material": {
-        "kind": "price_figure",
-        "key": "news:https://news.google.com/rss/articles/CBMizgFBVV95cUxQTXJjTUh6djZSSVpNMlBxaTVVeS1fc25RNFFFemRMaldwNVF1UFNLVHZGUEpRUDkxNXNSVTV4bUFCbUZySkRLS3Q4Q3A5eS1iMjI4UUhSSF9JNkk0MFRnVV9Ed0FfdEdXT0NNYlJXY0NOejdYb3VjdUZ4cjBLUnM4WTY5bjFzZ0NGOUREa21oTXZqTEJmTFVUZ1RtSHpYQUpkblB2RjRSUkZBRlJiT3JLLVFqZWRwM3FKLU5Sckw1My1WYkxKTWQyX05KZ1JUUQ?oc=5",
-        "title": "Nyoro's PPK proposes Sh29 fuel price cut, calls for Sh5.5 billion subsidy after EPRA hike",
-        "outlet": "The Eastleigh Voice",
-        "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQTXJjTUh6djZSSVpNMlBxaTVVeS1fc25RNFFFemRMaldwNVF1UFNLVHZGUEpRUDkxNXNSVTV4bUFCbUZySkRLS3Q4Q3A5eS1iMjI4UUhSSF9JNkk0MFRnVV9Ed0FfdEdXT0NNYlJXY0NOejdYb3VjdUZ4cjBLUnM4WTY5bjFzZ0NGOUREa21oTXZqTEJmTFVUZ1RtSHpYQUpkblB2RjRSUkZBRlJiT3JLLVFqZWRwM3FKLU5Sckw1My1WYkxKTWQyX05KZ1JUUQ?oc=5",
-        "published": "2026-10-17"
-      },
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "Guess the Price: the LAST beat must reveal the answer with its price ('The answer is B: Sh160 for 2kg in Nairobi.')",
-          "Guess the Price: the last beat must give the price in the headline (Nyoro's PPK proposes Sh29 fuel price cut, calls for Sh5.5 billion subsidy after EPRA hike)"
-        ],
-        "warnings": []
-      },
-      "critic": {
         "hook": 8,
         "send": 8,
-        "clarity": 9,
+        "clarity": 8,
         "fresh": 8,
         "voice": 8,
         "craft": 8,
@@ -292,118 +217,131 @@
         "hold": 8,
         "demand": 8,
         "action": 8,
-        "fair": 7,
+        "fair": 8,
         "impact": 8,
         "avg": 8.0,
-        "note": "Clean execution of the daily fuel price quiz."
+        "note": "Solid execution on the current anti-corruption and governance beat."
       },
-      "drafted_at": "2026-10-18T06:15:42.936438+03:00"
+      "drafted_at": "2026-10-18T07:22:44.097459+03:00"
     },
     {
-      "id": "2026-w43-d5-straight-r8",
+      "id": "2026-w43-d4-glasspoll-r8",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "bg": "usiku",
+      "publish_at": "2026-10-22T19:30:00+03:00",
+      "size": "story",
+      "series": "Guess the Price",
+      "angle": "price_quiz",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "no headline this week states a price, so Guess the Price would have no real answer"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-18T07:22:44.097464+03:00"
+    },
+    {
+      "id": "2026-w43-d5-straight-r9",
       "template": "straight",
       "lane": "campus",
-      "message": "Africa Check proves social media posts used altered images regarding death rumours.",
-      "action": "Verify viral images and death rumours on Africa Check before sharing",
+      "message": "Africa Check proved the viral image of Senator Sifuna asleep at a public event was doctored.",
+      "action": "Verify photos and claims before sharing them on WhatsApp groups.",
       "beats": [
-        "Social media posts used *altered* images.",
-        "Africa Check confirmed the photo was fake.",
-        "Always verify viral claims on WhatsApp groups.",
-        "Kenyans demand: we stop sharing doctored photos."
+        "A viral image of Senator Edwin Sifuna was *doctored* online.",
+        "Africa Check confirmed the original photo was digitally altered.",
+        "Fake images spread fast on social media during political debates.",
+        "Kenyans demand: verify every viral image before you share it."
       ],
-      "photo_query": "smartphone screen Kenya",
-      "claim": "Altered image used to claim politician Oburu Oginga seen for first time since death rumours.",
-      "who": "Viral social media posts, October 2026",
-      "claim_source": "Africa Check verification report, October 2026",
-      "verdict": "false",
-      "truth": "The circulating image was altered.",
-      "proof": [
-        "Africa Check analysed the photo and found digital manipulation.",
-        "No credible news outlet reported the viral claim as stated online."
-      ],
-      "pride": "Verify every image before sharing.",
+      "photo_query": "Supreme Court of Kenya",
+      "claim": "Image shows Kenyan senator Edwin Sifuna asleep at a public event.",
+      "who": "Africa Check",
+      "truth": "The circulating image was digitally altered to fake the scene.",
+      "pride": "Check original sources before forwarding.",
+      "claim_source": "The Eastleigh Voice, 2026-10-17",
       "source": "Africa Check, 2026-10-16",
-      "caption": "Doctored images and false death rumours are still making rounds on social media, sparking panic online. Africa Check confirmed the image was altered.\n\nVerify before you share.\n\n#SetItStraight #KenyaOnRecord",
+      "where": "Nairobi",
+      "when": "16 Oct 2026",
+      "proof": [
+        "Africa Check examined the metadata and original photography.",
+        "The altered image has different lighting angles from the original event.",
+        "Reputable news desks confirmed the original photo showed an active session."
+      ],
+      "verdict": "false",
+      "caption": "That viral photo of Senator Sifuna is fake. Africa Check proved the image was doctored. Verify on 16 Oct 2026.\n\nSend this to the WhatsApp group where you saw it.\n\n#MythOrFact #KenyaOnRecord",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Doctored images spread false narratives and waste public attention.",
       "bg": "usiku",
       "publish_at": "2026-10-23T17:00:00+03:00",
       "series": "Myth or Fact",
       "angle": "myth",
-      "side": "none",
-      "tone": "explainer",
-      "impact": "This prevents the spread of misinformation during public discussions.",
-      "where": "National",
-      "when": "23 Oct 2026",
       "source_links": [
         {
           "outlet": "Africa Check",
-          "title": "Ignore social media posts using altered image to claim Kenyan politician Oburu Oginga seen for the first time since death rumours",
-          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZkZYeGwyaE50MWFvYkxvb1czby1iVlktUVM3cHhnZ01QZGpKUndzczZYbzA5b3o3QnFlNll5QnFkUUdlZmpyZTFSYk15cE5TM2FDZWdCQjBkc1NvT1l0YWE1TFlETktkSUZoSk1LTnpTX3NjU0U4NnFxSHhMbVF1SDBQQmF4Yld0SFNlR0ZkNl8zUkVMX1FBblRtSUYxNEppQ192WnFyRzRVQjRCVWYzT29BNEVzLXkwNGJOS3Rn?oc=5",
+          "title": "Image of Kenyan senator Edwin Sifuna asleep at public event is doctored",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZldsd1liT1p0dEptSUtqd2JZZHFoaXoyZFFLeGlyZjBKLURwbEtfZ3BkN1hUMXV6TnZEOVhoT2FUOTZlWWRCR296UzVFOXFKVVR5Y3FLNlNobndHTjAwVlF2NUJlMWVkbGpkN08yTzhxQnNqMGNGR3JjR0prN042ZnkwQ0c3QzdkdDV2dmd3ajBKemxMTzhqM0VQNXZpVEFrb3NKLTNyWDFmY21BSmV2ejc0RHg0OFE?oc=5",
           "published": "2026-10-16"
         }
       ],
       "material": {
         "kind": "myth",
-        "key": "news:https://news.google.com/rss/articles/CBMivgFBVV95cUxPZkZYeGwyaE50MWFvYkxvb1czby1iVlktUVM3cHhnZ01QZGpKUndzczZYbzA5b3o3QnFlNll5QnFkUUdlZmpyZTFSYk15cE5TM2FDZWdCQjBkc1NvT1l0YWE1TFlETktkSUZoSk1LTnpTX3NjU0U4NnFxSHhMbVF1SDBQQmF4Yld0SFNlR0ZkNl8zUkVMX1FBblRtSUYxNEppQ192WnFyRzRVQjRCVWYzT29BNEVzLXkwNGJOS3Rn?oc=5",
-        "title": "Ignore social media posts using altered image to claim Kenyan politician Oburu Oginga seen for the first time since death rumours",
+        "key": "news:https://news.google.com/rss/articles/CBMitwFBVV95cUxPZldsd1liT1p0dEptSUtqd2JZZHFoaXoyZFFLeGlyZjBKLURwbEtfZ3BkN1hUMXV6TnZEOVhoT2FUOTZlWWRCR296UzVFOXFKVVR5Y3FLNlNobndHTjAwVlF2NUJlMWVkbGpkN08yTzhxQnNqMGNGR3JjR0prN042ZnkwQ0c3QzdkdDV2dmd3ajBKemxMTzhqM0VQNXZpVEFrb3NKLTNyWDFmY21BSmV2ejc0RHg0OFE?oc=5",
+        "title": "Image of Kenyan senator Edwin Sifuna asleep at public event is doctored",
         "outlet": "Africa Check",
-        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPZkZYeGwyaE50MWFvYkxvb1czby1iVlktUVM3cHhnZ01QZGpKUndzczZYbzA5b3o3QnFlNll5QnFkUUdlZmpyZTFSYk15cE5TM2FDZWdCQjBkc1NvT1l0YWE1TFlETktkSUZoSk1LTnpTX3NjU0U4NnFxSHhMbVF1SDBQQmF4Yld0SFNlR0ZkNl8zUkVMX1FBblRtSUYxNEppQ192WnFyRzRVQjRCVWYzT29BNEVzLXkwNGJOS3Rn?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZldsd1liT1p0dEptSUtqd2JZZHFoaXoyZFFLeGlyZjBKLURwbEtfZ3BkN1hUMXV6TnZEOVhoT2FUOTZlWWRCR296UzVFOXFKVVR5Y3FLNlNobndHTjAwVlF2NUJlMWVkbGpkN08yTzhxQnNqMGNGR3JjR0prN042ZnkwQ0c3QzdkdDV2dmd3ajBKemxMTzhqM0VQNXZpVEFrb3NKLTNyWDFmY21BSmV2ejc0RHg0OFE?oc=5",
         "published": "2026-10-16"
       },
       "status": "needs_human",
       "guard": {
         "errors": [
-          "withdrawn on inspection: caption adds 'sparking panic' (not in the report) and uses the old #SetItStraight tag"
+          "Myth or Fact needs proof the claim is really circulating: a fact-check (PesaCheck, Africa Check) or a news report or official warning about the rumour. Never invent a viral message"
         ],
         "warnings": []
       },
       "critic": {
         "hook": 8,
-        "send": 7,
+        "send": 8,
         "clarity": 8,
         "fresh": 8,
         "voice": 8,
         "craft": 8,
-        "picture": 7,
+        "picture": 8,
         "hold": 8,
-        "demand": 4,
-        "action": 7,
+        "demand": 8,
+        "action": 8,
         "fair": 8,
-        "impact": 7,
-        "avg": 7.3,
-        "note": "Fact-checks perform best when tied directly to viral rumours circulating right now."
+        "impact": 8,
+        "avg": 8.0,
+        "note": "Clear myth-busting tied to the current Sifuna trends."
       },
-      "drafted_at": "2026-10-18T06:15:42.936440+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-straight-r8-photo.jpg",
-      "photo_credit": "Photo: Jorge Láscar from Bogotá, Colombia / Wikimedia Commons, CC BY-SA 2.0",
-      "photo_kind": "symbolic",
-      "photo_outlet": "",
-      "photo_source": "https://commons.wikimedia.org/wiki/File:Parliament_Buildings,_Nairobi,_Kenya_-entrance-15April2010.jpg",
-      "voiced": "Kenyan accent",
-      "reel": true,
-      "tg_msg": 313
+      "drafted_at": "2026-10-18T07:22:44.097460+03:00"
     },
     {
       "id": "2026-w43-d6-kenya-r8",
       "template": "kenya",
       "lane": "hustle",
-      "message": "The Nairobi Expressway runs 27.1 kilometres from Mlolongo to Westlands.",
-      "action": "Use the expressway to beat Nairobi traffic jams safely",
+      "message": "The 27.1-kilometre Nairobi Expressway runs from Mlolongo to Waiyaki Way and opened in May 2022.",
+      "action": "Use the toll road to beat Nairobi traffic on your next trip.",
       "beats": [
-        "The expressway stretches *27.1* kilometres.",
-        "It connects Mlolongo to Westlands.",
-        "The road opened on 14 May 2022."
+        "The *Nairobi* Expressway connects Mlolongo to Westlands.",
+        "The 27.1-kilometre road officially opened on 14 May 2022.",
+        "Thousands of motorists use the road every day.",
+        "Kenya at its best: modern infrastructure built for our cities."
       ],
       "photo_query": "Nairobi Expressway Kenya",
+      "series": "Built in Kenya",
       "place": "Mlolongo to Westlands, Nairobi",
-      "line": "Cutting across the capital, the *Nairobi* Expressway connects Mlolongo to Westlands.",
+      "line": "The 27.1-kilometre *Nairobi* Expressway changed daily commuting across the city.",
       "fact": "The 27.1-kilometre road runs from Mlolongo to the James Gichuru junction on Waiyaki Way and opened on 14 May 2022.",
       "source": "https://capitalfm.africa/nairobi-expressway-now-open-but-you-must-pay/",
-      "caption": "From Mlolongo to Westlands in minutes. The 27.1-kilometre Nairobi Expressway opened on 14 May 2022 and transformed daily commuting.\n\nTag a friend who uses it every morning.\n\n#BuiltInKenya #KenyaOnRecord",
-      "bg": "usiku",
-      "publish_at": "2026-10-24T11:00:00+03:00",
-      "series": "Built in Kenya",
+      "caption": "Built in Kenya: The Nairobi Expressway cuts cross-city travel times down to minutes. 27.1 kilometres from Mlolongo to Westlands.\n\nSave this for your next trip through the city.\n\n#BuiltInKenya #KenyaOnRecord",
       "side": "none",
       "tone": "credit",
+      "impact": "Finished infrastructure saves commuters hours of time every week.",
+      "bg": "usiku",
+      "publish_at": "2026-10-24T11:00:00+03:00",
       "source_links": [
         {
           "outlet": "Capital FM",
@@ -424,30 +362,36 @@
         "outlet": "Capital FM",
         "photo_query": "Nairobi Expressway Kenya"
       },
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "weak: editor scored 6.7/10. A solid infrastructure showcase, but needs a sharper local hook for Nairobi commuters."
-        ],
+        "errors": [],
         "warnings": []
       },
       "critic": {
-        "hook": 6,
+        "hook": 7,
         "send": 7,
         "clarity": 8,
-        "fresh": 5,
-        "voice": 7,
-        "craft": 7,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
         "picture": 8,
         "hold": 7,
-        "demand": 6,
-        "action": 6,
-        "fair": 7,
-        "impact": 6,
-        "avg": 6.7,
-        "note": "A solid infrastructure showcase, but needs a sharper local hook for Nairobi commuters."
+        "demand": 5,
+        "action": 7,
+        "fair": 8,
+        "impact": 7,
+        "avg": 7.2,
+        "note": "Evergreen series post correctly assessed for daily life utility."
       },
-      "drafted_at": "2026-10-18T06:15:42.936441+03:00"
+      "drafted_at": "2026-10-18T07:22:44.097463+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d6-kenya-r8-photo.jpg",
+      "photo_credit": "Photo: Bahnfrend / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Nairobi_Expressway,_2025_(02).jpg",
+      "voiced": "Kenyan accent",
+      "reel": true,
+      "tg_msg": 318
     },
     {
       "id": "2026-w43-d7-glasspoll-r9",
@@ -516,10 +460,10 @@
     }
   ],
   "scripts": {
-    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni wako, na leo tunaangazia mambo mazito yanayohusu maisha yetu, pesa zetu, na uwajibikaji. Kwanza, wacha tuanze na 'Usiibiwe'. Mahakama imetoa waraka wa ukamatwaji wa washukiwa waliotoweka kwenye sakata ya wizi wa bilioni tatu nukta tisa za VAT. Pesa za wananchi zinatafutwa, na hakuna mahali pa kujificha. Kwenye ukweli na uongo, 'Straight' inatujuza jinsi picha bandia zimesambazwa mitandaoni kuhusu uvumi wa vifo—tuwe waangalifu sana kabla ya kusambaza habari ambazo hatujahakikisha. Upande wa 'Scorecard', ujumbe uko wazi: viongozi wetu lazima wapimwe kwa misingi ya sura ya sita ya katiba na rekodi zao za utendakazi kazi, sio maneno matamu ya kampeni. Na kwa wale wanapenda utalii, kumbuka Hell's Gate National Park iko kwenye eneo la kilomita za mraba sitini na nane kwenye sakafu ya Bonde la Ufa, na Barabara ya Expressway ya Nairobi ina urefu wa kilomita ishirini na saba nukta moja kutoka Mlolongo hadi Westlands. Uliza maswali, dai uwajibikaji, na usikubali kuibiwa!\n\n[Swahili summary: Wiki hii kwenye Kenya on Record: Mahakama imetoa waraka wa kuwakamata washukiwa wa sakata ya Sh3.9bn ya VAT; Africa Check imefichua picha bandia za vifo mitandaoni; viongozi wanakumbushwa kupimwa kwa maadili ya Sura ya Sita; na tumekuletea habari fupi kuhusu Hell's Gate na Nairobi Expressway.]",
-    "voice_note": "Sasa wakuu, mko vipi? Wiki hii mambo ni moto pale Kenya on Record. Kwanza kabisa, kwenye kona ya Usiibiwe, mahakama imetoa waraka wa kukamatwa kwa washukiwa waliotoweka kwenye ile sakata ya bilioni tatu nukta tisa za VAT. Hapa hakuna kuachana na mali ya umma! Kisha, upande wa Scorecard, tunawakumbusha kwamba viongozi lazima wapimwe kwa Sura ya Sita na kile wametenda, sio porojo. Pia, angalieni sana mtandaoni; Africa Check imethibitisha picha za vifo zinazozunguka ni za uongo, msikubali kupotoshwa na 'fake news'. Endelea kufuatilia ukurasa wetu ujue mengi, na usiibiwa!",
-    "sms": "USIIBIWE: Mahakama imetoa waraka wa kukamatwa kwa washukiwa waliotoweka kwenye sakata ya Sh3.9bn ya VAT. Simamia kodi yako, dai uwajibikaji!",
-    "reels": "[Visual: Bold text 'SH3.9B VAT FRAUD SUSPECTS ON THE RUN' with court gavel background]\n\nVoice-over (Firm, serious tone): Billioni tatu nukta tisa za ushuru wa wananchi zimepotea, na sasa mahakama imeagiza wakamatwe! Washukiwa wametoweka, lakini Kenya on Record haitanyamaza. Fuatilia ukweli, linda rasilimali zako, na Usiibiwe!"
+    "radio": "Habari za wiki na karibu kwenye Kenya on Record. Mimi ni mtangazaji wako. Leo tunaangazia mambo mazito manne ambayo yametokea wiki hii ya 43 ya mwaka 2026.\n\nKwanza kabisa, kwenye kona yetu ya *Usiibiwe*, raia wa Jamhuri ya Kidemokrasia ya Kongo waliokuwa wakihusika na utapeli wa dhahabu wa Ksh bilioni 10 walifikishwa mahakamani kwa kupatikana na pasipoti feki ya Kenya katika Uwanja wa Ndege wa Kimataifa wa Jomo Kenyatta (JKIA). Hii inatukumbusha kuwa macho. Waswahili husema, 'Heri nusu shari kuliko shari kamili.' Usije ukaingizwa kwenye mtego wa dhahabu ya nusu bei!\n\nPili, kwenye *Scorecard*, tunawakumbusha wanasiasa na viongozi wetu kwamba kipimo cha uongozi si maneno matupu. Lazima tupime rekodi zao kwa kuzingatia Sura ya Sita ya Katiba na utendakazi wao kwa umma. Kazi iendelee, lakini kwa uadilifu.\n\nTatu, kwenye sehemu ya *Straight*, ukweli umezika uongo. Shirika la Africa Check limethibitisha kuwa picha iliyosambaa mtandaoni ikimuonyesha Seneta Sifuna akiwa amelala kwenye hafla ya umma ilikuwa imetengenezwa—iliyoitwa 'doctored'. Tuache siasa za kupaka tope watu bila ukweli.\n\nNa mwisho, kwenye *Kenya*, tunakumbuka Barabara ya Nairobi Expressway yenye urefu wa kilomita 27.1 inayotoka Mlolongo hadi Waiyaki Way, iliyofunguliwa mnamo Mei 2022. Barabara hii imebadilisha usafiri wetu jijini.\n\n*Muhtasari kwa Kiswahili:* Wiki hii tumeangazia utapeli wa dhahabu wa bilioni 10 JKIA, kupima viongozi kwa Sura ya Sita, ukweli kuhusu picha ya Seneta Sifuna iliyochakachuliwa, na historia ya Nairobi Expressway.",
+    "voice_note": "Mambo vipi mwananchi? Karibu kwenye dondoo za Kenya on Record wiki hii. Kwanza, jihadhari na utapeli: raia wa Kongo waliohusika na scam ya dhahabu ya bilioni 10 walinaswa JKIA na pasipoti feki. Usiibiwe! Pili, ukweli umetoka kwa Africa Check kwamba picha ya Seneta Sifuna akiwa amelala kwenye hafla ilikuwa imechorwa tu—ni uongo mtupu. Tatu, viongozi wetu lazima wapimwe kwa Sura ya Sita na kazi yao halisi, si maneno. Tukutane wiki ijayo!",
+    "sms": "USIIBIWE: Raia wa Kongo kwenye scam ya dhahabu ya Sh10bn walikamatwa JKIA kwa pasipoti feki. Kuwa mwangalifu na deals za mkato!",
+    "reels": "[Visual: Flashy graphics of a gold bar with a red 'SCAM' stamp, transitioning to the court doors at JKIA]\n\nVoice-over (confident, serious Kenyan English): \n\nTen billion shillings! That’s the heavy price of greed in a gold scam that just hit JKIA, involving foreign nationals caught with fake Kenyan passports.\n\n[Visual: Cut to bold text on screen: USIIBIWE]\n\nDon't be conned by shortcuts. Stay sharp, stay awake, and keep it here on Kenya on Record for the truth that protects your pocket."
   },
   "spend_usd": 0.0,
   "revision": 8

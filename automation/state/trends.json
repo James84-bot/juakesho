@@ -1,8 +1,206 @@
 {
-  "fetched": "2026-10-18T04:04:19.256848+00:00",
-  "safe": [],
-  "dropped": [],
-  "errors": {
-    "KE": "<urlopen error Tunnel connection failed: 403 Forbidden>"
-  }
+  "fetched": "2026-10-18T04:07:08.235226+00:00",
+  "safe": [
+    {
+      "geo": "KE",
+      "title": "newcastle united f.c. vs aston villa standings",
+      "traffic": "10000+",
+      "news": [
+        {
+          "title": "Young star Johan Manzambi proving his worth for rising Aston Villa",
+          "url": "https://www.bbc.com/sport/football/articles/ck054652mv07o",
+          "source": "BBC"
+        },
+        {
+          "title": "Newcastle 0-1 Aston Villa commentary and highlights",
+          "url": "https://www.skysports.com/football/live-blog/13592695/newcastle-vs-aston-villa-live-premier-league-match-updates-news-and-score",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "'Skills and intelligence' - Aston Villa manager Unai Emery hails Johan Manzambi following decisive goal against Newcastle",
+          "url": "https://www.goal.com/en-ke/lists/skills-intelligence-aston-villa-manager-unai-emery-hails-johan-manzambi-decisive-goal-newcastle-united/blt62958d54c3b85e6c",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "real betis vs fc barcelona standings",
+      "traffic": "5000+",
+      "news": [
+        {
+          "title": "European football: Barcelona thrash Real Betis to maintain 100% record",
+          "url": "https://www.theguardian.com/football/2026/oct/17/european-football-bayern-munich-barcelona-psg-inter",
+          "source": "The Guardian"
+        },
+        {
+          "title": "'Best in world' Yamal powers Barca to Betis rout, Atletico strike late",
+          "url": "https://supersport.com/football/news/ef8c89aa-9384-4480-9f46-c4d25d215a7a/-best-in-world-yamal-powers-barca-to-betis-rout-atletico-strike-late",
+          "source": "SuperSport"
+        },
+        {
+          "title": "“An application letter for the Ballon d’Or”: Lamine Yamal makes Hansi Flick go wild with an incredible goal for Barcelona",
+          "url": "https://www.goal.com/en/news/an-application-letter-for-the-ballon-d-or-lamine-yamal-makes-hansi-flick-go-wild-with-an-incredible-goal-for-barcelona/blt39071f1f1ddc89c1",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bayern munich vs rb leipzig standings",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Kane scores in 100th Bundesliga game as Bayern thrash Leipzig",
+          "url": "https://www.bbc.com/sport/football/live/cmn8wvygnzeqt",
+          "source": "BBC"
+        },
+        {
+          "title": "Bayern Munich player ratings vs Rb Leipzig: Luis Diaz hat-trick dismantles visitors in six-goal masterclass",
+          "url": "https://www.goal.com/en-ke/lists/-bayern-munich-player-ratings-rb-leipzig-luis-diaz-hat-trick-masterclass-/bltf1a115b3479071ca",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Reaction to Bundesliga game at home to RB Leipzig",
+          "url": "https://fcbayern.com/en/news/2026/10/reaction-to-bundesliga-game-at-home-to-rb-leipzig",
+          "source": "FC Bayern"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "valencia vs athletic",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Athletic y Valencia empatan sin goles en Mestalla",
+          "url": "https://kirolakeitb.eus/es/futbol/equipos/athletic-club/2026/10/17/athletic-valencia-empatan-sin-goles-en-mestalla/",
+          "source": "kirolakeitb.eus"
+        },
+        {
+          "title": "Javier Aguirre suma otro empate con el Valencia y mantiene la lucha por la permanencia",
+          "url": "https://www.excelsior.com.mx/deportes/javier-aguirre-suma-empate-con-valencia-y-mantiene-lucha-por-permanencia",
+          "source": "Excélsior"
+        },
+        {
+          "title": "Valencia — Athletic Bilbao: alineaciones y directo",
+          "url": "https://zamin.uz/es/deportes/224820-valencia-athletic-bilbao-alineaciones-y-directo.html",
+          "source": "Zamin.uz"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "daniel arap moi",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "GSU officers forcefully occupy Moi land",
+          "url": "https://www.standardmedia.co.ke/rift-valley/article/2001560337/gsu-officers-forcefully-occupy-moi-land",
+          "source": "The Standard"
+        },
+        {
+          "title": "Moi family protests GSU invasion of Eldoret land",
+          "url": "https://peopledaily.digital/news/moi-family-protests-gsu-invasion-of-eldoret-land",
+          "source": "People Daily"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "dundee vs rangers",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Dundee 2-2 Rangers LIVE: Scottish Premiership radio, updates, team news, report, reaction, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c62kev5xw9wgt",
+          "source": "BBC"
+        },
+        {
+          "title": "Dundee vs Rangers LIVE! Scottish Premiership score updates, news, prediction, lineups and how to watch or stream",
+          "url": "https://www.skysports.com/football/live-blog/13593659/dundee-vs-rangers-live-scottish-premiership-score-updates-news-prediction-lineups-and-how-to-watch-or-stream",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Gallery: Dundee 2-2 Rangers",
+          "url": "https://www.rangers.co.uk/news/gallery-dundee-2-2-rangers-0",
+          "source": "Rangers Football Club"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "lille fc",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Lille vs Brest Confirmed Lineups",
+          "url": "https://www.whoscored.com/news/4PjNSi-TyEmEWsRHmsqZMg/show/cng112-20261017-lille-vs-brest-confirmed-lineup-1792260185",
+          "source": "WhoScored.com"
+        },
+        {
+          "title": "Giroud converts from the spot to deny Brest",
+          "url": "https://onefootball.com/en/news/giroud-converts-from-the-spot-to-deny-brest-43628661",
+          "source": "OneFootball"
+        },
+        {
+          "title": "LIVE: Lille vs Stade Brest | Ligue 1",
+          "url": "https://www.beinsports.com/en-us/soccer/ligue-1/articles/live-lille-vs-stade-brest-ligue-1-2026-10-17",
+          "source": "beIN SPORTS"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "minnesota united fc",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Minnesota vs St. Louis Prediction & Head to Head » Betfair™",
+          "url": "https://betting.betfair.com/football/predictions/us-major-league-soccer/minnesota-united-vs-st-louis-city/brjumu80rt3u0nxs3klaj5rmc/",
+          "source": "Betfair"
+        },
+        {
+          "title": "St. Louis City's unbeaten MLS run ends at 19, Union's reaches 15",
+          "url": "https://sports.yahoo.com/articles/st-louis-citys-unbeaten-mls-225633631.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Loons rally to top City, end eight-game winless skid",
+          "url": "https://www.twincities.com/2026/10/17/loons-rally-to-top-city-end-eight-game-winless-skid/",
+          "source": "Pioneer Press"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "valencia fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Melhores momentos: Strasbourg 1 - 3 Paris Saint-Germain (Ligue1)",
+          "url": "https://onefootball.com/en/video/melhores-momentos-strasbourg-1-3-paris-saint-germain-ligue1-43627728",
+          "source": "OneFootball"
+        },
+        {
+          "title": "Maresca gives Haaland and four Man City players injury updates",
+          "url": "https://onefootball.com/en/news/maresca-gives-haaland-and-four-man-city-players-injury-updates-43629403",
+          "source": "OneFootball"
+        },
+        {
+          "title": "HIGHLIGHTS: VALENCIA CF - ATHLETIC CLUB",
+          "url": "https://onefootball.com/en/news/highlights-valencia-cf-athletic-club-43629078",
+          "source": "OneFootball"
+        }
+      ]
+    }
+  ],
+  "dropped": [
+    {
+      "title": "atlanta united vs inter miami",
+      "why": "unsafe: 'Odds'"
+    }
+  ],
+  "errors": {}
 }
