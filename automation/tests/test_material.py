@@ -182,5 +182,17 @@ class Round6(unittest.TestCase):
         self.assertTrue(any("researched" in e for e in rep.errors))
 
 
+
+class Round7(unittest.TestCase):
+    def test_the_writer_cannot_mark_its_own_work_researched(self):
+        out = draft._merge([{"id": "s", "template": "scorecard"}], [{"id": "s", "researched": True, "who": "X Y"}])
+        self.assertNotIn("researched", out[0])
+
+    def test_guard_message_does_not_explain_how_to_get_past_it(self):
+        rep = guard.Report(id="x")
+        guard.series_rules({"template": "scorecard", "who": "George Natembeya", "source_links": [{"title": "t"}]}, rep)
+        self.assertFalse(any("`researched`" in e for e in rep.errors))
+
+
 if __name__ == "__main__":
     unittest.main()

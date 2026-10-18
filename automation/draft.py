@@ -881,7 +881,7 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     table = news.refs()   # headline ids the writer cited -> the real article links
     out = []
     for s in slots:
-        d = by_id.get(s["id"], {})
+        d = {k: v for k, v in by_id.get(s["id"], {}).items() if k != "researched"}   # only a person sets that
         locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "beat", "angle", "avoid", "breaking", "source_links") if k in s}
         out.append(material.lock(news.resolve({**d, **locked}, table), s))
     return out
@@ -1142,9 +1142,12 @@ TAKEN: list[dict] = []   # posts already in the week (kept through a remake): se
 
 def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = False) -> tuple[list[dict], dict]:
     guard.VERIFY_LINKS = not mock   # a real run opens every source link once; an invented one goes back for a rewrite
-    held = []
+    held = [(s, "The Chapter Six Test grades a real person: it is written by hand from a researched record, never "
+                "drafted automatically") for s in slots if s["template"] == "scorecard" and not mock]
+    slots = [s for s in slots if not (s["template"] == "scorecard" and not mock)]
     if not mock:   # the series that must never be invented get their real material first, or are held
-        slots, held = material.attach(slots)
+        slots, more = material.attach(slots)
+        held += more
         for s, why in held:
             print(f"::notice::held {s['id']}: {why}")
         for s in slots:

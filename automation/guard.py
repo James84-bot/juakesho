@@ -663,8 +663,8 @@ def series_rules(post: dict, rep: "Report") -> None:
                           "happen next, or what a public office must do")
     rehearsal = str(post.get("source") or "").lower().startswith("rehearsal sample")   # mock weeks only, never posted
     if tpl == "scorecard" and not post.get("researched") and not rehearsal:
-        rep.errors.append("The Chapter Six Test grades a real person, so it is written from a researched record "
-                          "(set `researched` once each check is backed by a report), never drafted automatically")
+        rep.errors.append("The Chapter Six Test grades a real person, so it is written by hand from a researched "
+                          "record, never drafted automatically")
     if tpl == "scorecard" and not post.get("source_links") and not rehearsal:
         rep.errors.append("The Chapter Six Test grades a real person: every check needs a newsroom or official report "
                           "about THIS leader's record (a headline id). The Constitution says what the test is, not how "

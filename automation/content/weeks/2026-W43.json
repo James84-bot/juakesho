@@ -140,9 +140,11 @@
           "published": "2026-10-18"
         }
       ],
-      "status": "awaiting",
+      "status": "needs_human",
       "guard": {
-        "errors": [],
+        "errors": [
+          "withdrawn on inspection: the writer set `researched` itself; '2,000 traders' and the audit finding are not in its source"
+        ],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
