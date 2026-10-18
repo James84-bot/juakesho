@@ -31,12 +31,11 @@ jobs:
           run pip install diffusers==0.30.2 accelerate==0.28.0 numpy==1.23.5 opencv-python==4.9.0.80 soundfile==0.12.1 \
             transformers==4.39.2 "huggingface_hub[cli]==0.30.2" librosa==0.11.0 einops==0.8.1 gdown requests \
             "imageio[ffmpeg]" omegaconf ffmpeg-python moviepy
-          run pip install -U openmim
-          run mim install mmengine
+          run pip install "setuptools<70" wheel   # setuptools 70+ breaks the old OpenMMLab packages
+          run pip install mmengine==0.10.4
           run pip install mmcv==2.0.1 -f https://download.openmmlab.com/mmcv/dist/cpu/torch2.0/index.html
-          run pip install -U wheel setuptools
           run pip install --no-build-isolation chumpy   # an old mmpose dependency that cannot build in isolation
-          run mim install "mmdet==3.1.0" "mmpose==1.1.0"
+          run pip install mmdet==3.1.0 mmpose==1.1.0
           python -c "import mmcv, mmdet, mmpose, torch; print('ok', mmcv.__version__, torch.__version__)"
 
       - name: Weights
