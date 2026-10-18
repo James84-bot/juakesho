@@ -872,7 +872,7 @@
           "published": "2026-10-18"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": []
@@ -944,7 +944,7 @@
           "published": "2026-10-18"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": [
