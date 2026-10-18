@@ -3,464 +3,371 @@
   "created": "2026-10-14T00:46:06.367461+03:00",
   "posts": [
     {
-      "id": "2026-w43-d1-usiibiwe-r5",
+      "id": "2026-w43-d1-usiibiwe-r6",
       "template": "usiibiwe",
       "lane": "hustle",
-      "title": "Fake *county invoice* payment SMS",
-      "sender": "+254 712 XXX XXX",
-      "sms": "Dear supplier, your pending bill voucher has been approved. Pay Sh4,500 clearance fee to release your Sh380,000 cheque.",
-      "tips": [
-        "No county government asks for cash to process vouchers.",
-        "Check all money owed to suppliers on county portals.",
-        "Report fake county clearance notices to the DCI."
-      ],
-      "message": "Scammers target county suppliers with fake clearance fee demands for money owed to suppliers.",
-      "action": "Report suspicious procurement texts to the DCI hotline on 0800722203",
-      "photo_query": "Kenyan shilling banknotes",
-      "source": "https://www.ppra.go.ke",
-      "side": "none",
-      "tone": "explainer",
-      "caption": "No government office asks you to pay money to receive your payment. Verify your voucher status in person at the county treasury.\n\nHave you received this fake voucher text?\n\n#Usiibiwe #KenyaOnRecord",
+      "message": "Fake job agents are taking money for non-existent overseas employment.",
+      "action": "Verify any recruitment agency on the National Employment Authority portal.",
       "beats": [
-        "Scammers are targeting small traders with *fake county payment* alerts.",
-        "They demand cash before releasing your approved voucher.",
-        "No county department charges a fee to clear cheques.",
-        "Kenyans demand: county governments publish supplier lists.",
-        "Verify your payment status at your county treasury."
+        "Fake job agents take money for *overseas* employment.",
+        "They demand upfront fees for visas and medical tests.",
+        "Real licensed agencies never ask for cash via personal lines.",
+        "Kenyans demand: the DCI investigates rogue agencies."
+      ],
+      "photo_query": "Nairobi skyline",
+      "caption": "Usiibiwe!: Do not pay anyone promising a job abroad via personal mobile money numbers. Check the National Employment Authority before you send money.\n\nSend this to a friend who is job hunting.\n\n#Usiibiwe #KenyaOnRecord",
+      "title": "Fake overseas job scams on WhatsApp",
+      "sender": "+254 712 345 678",
+      "sms": "Qatar hotel jobs available. Pay Sh5,000 processing fee to this number today for your ticket.",
+      "tips": [
+        "Check the National Employment Authority website for licensed agencies",
+        "Never send money to personal mobile numbers for visa processing",
+        "Visit the physical office before signing any contract"
       ],
       "bg": "usiku",
       "publish_at": "2026-10-19T07:30:00+03:00",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Job scams rob unemployed youth of hard-earned savings meant for family survival.",
+      "where": "National",
+      "when": "19 Oct 2026",
       "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
+          "states facts but has no `source`; verify before approving",
+          "contains a year, % or amount with no `source`"
         ]
       },
       "critic": {
-        "hook": 9,
-        "send": 9,
-        "clarity": 10,
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
         "fresh": 8,
-        "voice": 10,
-        "craft": 10,
-        "picture": 9,
-        "hold": 9,
-        "demand": 8,
-        "action": 9,
-        "fair": 10,
-        "impact": 9,
-        "avg": 9.2,
-        "note": "Hook uses a precise scam detail that every small trader recognizes instantly."
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 9,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 8.0,
+        "note": "Solid hustle utility post that speaks directly to job seekers without preaching."
       },
-      "drafted_at": "2026-10-17T14:55:32.268434+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d1-usiibiwe-r5-photo.jpg",
+      "drafted_at": "2026-10-18T03:12:08.009053+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d1-usiibiwe-r6-photo.jpg",
+      "photo_credit": "Photo: This Photo was taken by Timothy A. Gonsalves.  Fee / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Buffalo_Nairobi_Skyline_Savannah_Kenya_May19_R1600769.jpg",
+      "reel": true,
+      "tg_msg": 291
+    },
+    {
+      "id": "2026-w43-d2-kenya-r6",
+      "template": "kenya",
+      "lane": "diaspora",
+      "series": "Kenya at its best",
+      "message": "Aberdare National Park protects critical water towers and wildlife in Kenya.",
+      "action": "Plan a weekend visit to explore the waterfalls and bamboo forests.",
+      "beats": [
+        "The Aberdare National Park offers *stunning* mountain views and wildlife.",
+        "The park covers over 700 square kilometres of forest and moorland.",
+        "It is located in Nyeri and Nyandarua counties, open daily for visitors."
+      ],
+      "photo_query": "Aberdare National Park Kenya",
+      "place": "Aberdare National Park",
+      "line": "The Aberdare *forests* supply water to millions of homes.",
+      "fact": "Established in 1950, the park covers 767 square kilometres and sits between 2,000 and 4,000 metres above sea level.",
+      "source": "The Star, Kenya, 2026-10-17",
+      "caption": "Kenya at its best: The Aberdare ranges protect our rivers and wildlife. Save this for your next road trip.\n\n#KenyaAtItsBest #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-20T12:45:00+03:00",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Protected water towers ensure steady water supply for millions of homes and farms.",
+      "where": "Nyeri",
+      "when": "20 Oct 2026",
+      "source_links": [
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Luxury car stolen in UK traced to Nairobi motor yard, DCI says",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSmZrd0RoRkktd1hlMjcyS2sxNGtOVGRvY0FvNmd3d0FDcEdDQm9qNjV4UkMzMWhTZGpwTWtiU09pU3ZpWXR5TEcwU3V0Tzk0anNrZDNmdXBQZmV5bklCUHZ6eElzREtXdWZYYTZiRTVZdml1eEF1a0Q2ZGMxUjBkcE11Sy1sSml6dTFvS1dLVktGZXc4Q001a3l6MA?oc=5",
+          "published": "2026-10-17"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 7,
+        "demand": 4,
+        "action": 7,
+        "fair": 8,
+        "impact": 7,
+        "avg": 7.2,
+        "note": "Clean showcase post, though park tourism is not the dominant news demand this week."
+      },
+      "drafted_at": "2026-10-18T03:12:08.009061+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d2-kenya-r6-photo.jpg",
+      "photo_credit": "Photo: Daniel Case / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:African_buffalo_on_mud_next_to_watering_hole_at_Ark_Lodge,_Aberdare_National_Park,_Kenya.jpg",
+      "reel": true,
+      "tg_msg": 292
+    },
+    {
+      "id": "2026-w43-d3-scorecard-r6",
+      "template": "scorecard",
+      "lane": "hustle",
+      "message": "Public leaders must meet Chapter Six integrity standards.",
+      "action": "Check your elected leader's attendance and audit record on parliament.go.ke.",
+      "beats": [
+        "Leaders are measured against Chapter Six of our *Constitution*.",
+        "We check development records, audit findings, and public conduct.",
+        "Kenyans demand full accountability from every elected official."
+      ],
+      "photo_query": "Kenya National Assembly",
+      "who": "Elected Leaders",
+      "office": "Members of Parliament",
+      "verdict": "Voters examine audit reports and delivery records.",
+      "source": "The Star, Kenya, 2026-10-17",
+      "caption": "The Chapter Six Test: Public office is a public trust, not personal property. Read the audit reports before you decide.\n\nTag your MP in the comments.\n\n#ChapterSix #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-21T18:30:00+03:00",
+      "side": "both",
+      "tone": "criticism",
+      "impact": "Integrity checks prevent corrupt leaders from misusing public development funds.",
+      "where": "National",
+      "when": "21 Oct 2026",
+      "checks": [
+        "Check financial asset declarations: pass",
+        "Review Auditor-General fund reports: pass",
+        "Verify public participation records: fail"
+      ],
+      "source_links": [
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Luxury car stolen in UK traced to Nairobi motor yard, DCI says",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSmZrd0RoRkktd1hlMjcyS2sxNGtOVGRvY0FvNmd3d0FDcEdDQm9qNjV4UkMzMWhTZGpwTWtiU09pU3ZpWXR5TEcwU3V0Tzk0anNrZDNmdXBQZmV5bklCUHZ6eElzREtXdWZYYTZiRTVZdml1eEF1a0Q2ZGMxUjBkcE11Sy1sSml6dTFvS1dLVktGZXc4Q001a3l6MA?oc=5",
+          "published": "2026-10-17"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "checks[0] needs result pass|fail|unclear",
+          "checks[1] needs result pass|fail|unclear",
+          "checks[2] needs result pass|fail|unclear"
+        ],
+        "warnings": [
+          "serious allegation words: attribute them to the record ('the Auditor-General found', 'charged with', 'the court ruled') and keep the source in `source`"
+        ]
+      },
+      "critic": {
+        "hook": 7,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 7,
+        "demand": 7,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.4,
+        "note": "Good accountability framework, but needs to tie directly to a specific current parliamentary debate or MP record this week."
+      },
+      "drafted_at": "2026-10-18T03:12:08.009064+03:00"
+    },
+    {
+      "id": "2026-w43-d4-glasspoll-r6",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "message": "Kenyans vote on everyday economic pressures and market prices.",
+      "action": "Comment A or B to cast your vote on the weekly price quiz.",
+      "beats": [
+        "Guess the current retail price in our weekly market quiz.",
+        "Compare prices across Nairobi supermarkets and local open-air markets.",
+        "Drop your vote in the comments before the results are tallied."
+      ],
+      "photo_query": "Kenyan shilling banknotes",
+      "hook": "Guess the Price",
+      "question": "How much is 2kg of unga now?",
+      "cta": "Comment A or B",
+      "options": [
+        "A: Sh140",
+        "B: Sh180"
+      ],
+      "caption": "Guess the Price: What does a 2kg packet of maize flour cost in Nairobi supermarkets this week? Vote A or B in the comments.\n\n#GuessThePrice #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-22T19:30:00+03:00",
+      "size": "story",
+      "series": "Guess the Price",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Market price tracking reveals the real cost of living for urban households.",
+      "where": "Nairobi",
+      "when": "22 Oct 2026",
+      "source": "The Star, Kenya, 2026-10-17",
+      "source_links": [
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Luxury car stolen in UK traced to Nairobi motor yard, DCI says",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSmZrd0RoRkktd1hlMjcyS2sxNGtOVGRvY0FvNmd3d0FDcEdDQm9qNjV4UkMzMWhTZGpwTWtiU09pU3ZpWXR5TEcwU3V0Tzk0anNrZDNmdXBQZmV5bklCUHZ6eElzREtXdWZYYTZiRTVZdml1eEF1a0Q2ZGMxUjBkcE11Sy1sSml6dTFvS1dLVktGZXc4Q001a3l6MA?oc=5",
+          "published": "2026-10-17"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 7,
+        "demand": 8,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.6,
+        "note": "Engaging poll on living costs, but anchor it to this week's newly signed tax bills impact."
+      },
+      "drafted_at": "2026-10-18T03:12:08.009066+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d4-glasspoll-r6-photo.jpg",
       "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
       "photo_kind": "symbolic",
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
       "reel": true,
-      "tg_msg": 256
+      "tg_msg": 293
     },
     {
-      "id": "2026-w43-d2-kenya-r5x",
-      "template": "kenya",
-      "lane": "diaspora",
-      "series": "Kenya at its best",
-      "place": "Lake Nakuru National Park",
-      "line": "Lake Nakuru protects over *four hundred* bird species and prime rhino sanctuary.",
-      "fact": "The 188-square-kilometre park hosts both black and white rhinos alongside over 450 bird species.",
-      "source": "Capital FM News, 2026-10-17",
-      "side": "none",
-      "tone": "credit",
-      "impact": "Boosts local tourism revenue and preserves national wildlife heritage.",
-      "where": "Nakuru County",
-      "when": "17 Oct 2026",
-      "message": "Lake Nakuru remains one of Kenya's most successful public wildlife and rhino sanctuaries.",
-      "action": "Plan a visit through the official eCitizen KWS parks portal",
-      "photo_query": "Lake Nakuru National Park Kenya",
-      "caption": "Kenya preserves vital wildlife habitats that belong to all citizens. Support public conservation efforts.\n\nWhen did you last visit Lake Nakuru?\n\n#KenyaOnRecord #VisitKenya",
-      "beats": [
-        "Lake Nakuru protects over *four hundred* bird species.",
-        "The 188-square-kilometre park hosts both black and white rhinos.",
-        "Visit this sanctuary through the official Kenya Wildlife Service portal."
-      ],
-      "bg": "usiku",
-      "publish_at": "2026-10-20T12:45:00+03:00",
-      "source_links": [
-        {
-          "outlet": "Capital FM News",
-          "title": "ÑACADA Board validates community based rehabilitation guidelines in landmark move for demand reduction",
-          "link": "https://capitalfm.africa/nacada-board-validates-community-based-rehabilitation-guidelines-in-landmark-move-for-demand-reduction/",
-          "published": "2026-10-17"
-        }
-      ],
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "critic": {
-        "hook": 7,
-        "send": 8,
-        "clarity": 10,
-        "fresh": 7,
-        "voice": 10,
-        "craft": 9,
-        "picture": 10,
-        "hold": 8,
-        "demand": 4,
-        "action": 9,
-        "fair": 10,
-        "impact": 7,
-        "avg": 8.2,
-        "note": "Clear showcase post with solid park details and a working official action."
-      },
-      "drafted_at": "2026-10-17T14:55:32.268441+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d2-kenya-r5x-photo.jpg",
-      "photo_credit": "Photo: Superchilum / Wikimedia Commons, CC BY-SA 4.0",
-      "photo_kind": "place",
-      "photo_outlet": "",
-      "photo_source": "https://commons.wikimedia.org/wiki/File:Lake_Nakuru_National_Park_(Kenya)_27.jpg",
-      "reel": true,
-      "tg_msg": 257
-    },
-    {
-      "id": "2026-w43-d3-scorecard-r5x",
-      "template": "scorecard",
-      "lane": "hustle",
-      "who": "George Natembeya",
-      "office": "Governor, Trans Nzoia County",
-      "checks": [
-        {
-          "test": "Development spending rule",
-          "result": "pass",
-          "note": "County met the 30% development budget threshold in 2024/2025."
-        },
-        {
-          "test": "Pending bills audit",
-          "result": "unclear",
-          "note": "Auditor-General questioned Sh1.4bn historical money owed to suppliers."
-        },
-        {
-          "test": "Public healthcare delivery",
-          "result": "fail",
-          "note": "Kitale Hospital upgrade faced delays over disputed contractor payments."
-        }
-      ],
-      "verdict": "Chapter Six requires transparent records and timely project delivery.",
-      "source": "Capital FM News, 2026-10-17",
-      "side": "government",
-      "tone": "criticism",
-      "impact": "Delays medical services for residents depending on public healthcare.",
-      "where": "Trans Nzoia County",
-      "when": "17 Oct 2026",
-      "message": "Trans Nzoia County balances high development money set aside with healthcare project delays.",
-      "action": "Read your county budget implementation report on cob.go.ke",
-      "photo_query": "Kitale hospital Kenya",
-      "caption": "Every governor answers to the people through audits and completed public services. Read the audit reports for your county.\n\nDoes your county deliver on its hospital promises?\n\n#LeadershipAndIntegrity #RutovsNatembeya #KenyaOnRecord",
-      "beats": [
-        "Trans Nzoia County faces questions over *delayed hospital projects*.",
-        "The county met the thirty percent development spending requirement.",
-        "Auditors raised queries on historical bills awaiting full verification.",
-        "Kenyans demand: the county executive finishes the Kitale upgrade.",
-        "Read the official county audit report on oagkenya.go.ke."
-      ],
-      "bg": "usiku",
-      "publish_at": "2026-10-21T18:30:00+03:00",
-      "source_links": [
-        {
-          "outlet": "Capital FM News",
-          "title": "Govt promises crackdown on criminals disrupting traders",
-          "link": "https://capitalfm.africa/govt-promises-crackdown-on-criminals-disrupting-traders/",
-          "published": "2026-10-17"
-        }
-      ],
-      "status": "awaiting",
-      "guard": {
-        "errors": [],
-        "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
-        ]
-      },
-      "critic": {
-        "hook": 9,
-        "send": 9,
-        "clarity": 10,
-        "fresh": 9,
-        "voice": 10,
-        "craft": 10,
-        "picture": 9,
-        "hold": 9,
-        "demand": 9,
-        "action": 9,
-        "fair": 9,
-        "impact": 9,
-        "avg": 9.2,
-        "note": "Directly addresses the Kitale hospital dispute with verifiable audit metrics."
-      },
-      "trend": "#RutovsNatembeya",
-      "drafted_at": "2026-10-17T14:55:32.268443+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-scorecard-r5x-photo.jpg",
-      "photo_credit": "Photo: Kenyans.co.ke",
-      "photo_kind": "posted",
-      "photo_outlet": "Kenyans.co.ke",
-      "photo_source": "https://www.kenyans.co.ke/news/127856-natembeya-raises-alarm-over-second-security-detail-withdrawal",
-      "reel": true,
-      "tg_msg": 258
-    },
-    {
-      "id": "2026-w43-d4-glasspoll-r5x",
-      "template": "glasspoll",
-      "lane": "everyone",
-      "hook": "Tax relief or spending cuts?",
-      "question": "Lower fuel taxes?",
-      "cta": "Vote A or B in comments",
-      "options": [
-        "Lower fuel taxes now",
-        "Cut state travel first"
-      ],
-      "message": "Kenyans debate whether fuel tax cuts or government spending curbs offer faster relief.",
-      "action": "Submit your views on fuel levies to clerk.nationalassembly@parliament.go.ke",
-      "photo_query": "petrol station pump Kenya",
-      "source": "Tuko News, 2026-10-17",
-      "side": "both",
-      "tone": "explainer",
-      "impact": "Changes transport costs and everyday commodity prices for all citizens.",
-      "where": "National",
-      "when": "17 Oct 2026",
-      "caption": "High transport costs touch every Kenyan pocket every day. How should Parliament lower your living costs right now? Vote A or B in the comments.\n\n#CostOfLiving #KenyaOnRecord",
-      "beats": [
-        "Fuel taxes affect every *matatu fare* and food price in Kenya.",
-        "Parliament is debating formulas to lower prices at the pump.",
-        "Kenyans demand: the National Treasury lowers living costs immediately.",
-        "Tell your MP your priority before the next vote."
-      ],
-      "bg": "usiku",
-      "publish_at": "2026-10-22T19:30:00+03:00",
-      "size": "story",
-      "source_links": [
-        {
-          "outlet": "Tuko News",
-          "title": "Passed by MPs: Ruto signs 2 tax bills into law, State House issues statement",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbzhkc2ZtZkhpa08zaWRiU1FicnlEd25mMUd5UVlybHNnZ1JxMWpiNDlzSkRKVmhPbUh0al9yYVRWZnBLakUzcDc1WFFRRHNnZE91SUNQcVJfaE9fQWw5ZElsZDFsckVuc0gySU1VeExHX2JVVnJhaEtVR1hwWnlYUlhwdXpIWk9EZ0swREtPRzV4d1o5MV96d2pjRDdsU3MzOUdSSEJHQmpRbHhG?oc=5",
-          "published": "2026-10-17"
-        },
-        {
-          "outlet": "Capital FM News",
-          "title": "Ndindi Nyoro fronts formula to take pump prices below Sh200 mark",
-          "link": "https://capitalfm.africa/ndindi-nyoro-fronts-formula-to-take-pump-prices-below-sh200-mark/",
-          "published": "2026-10-17"
-        }
-      ],
-      "status": "approved",
-      "guard": {
-        "errors": [],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 9,
-        "send": 8,
-        "clarity": 10,
-        "fresh": 8,
-        "voice": 10,
-        "craft": 10,
-        "picture": 9,
-        "hold": 9,
-        "demand": 9,
-        "action": 9,
-        "fair": 10,
-        "impact": 9,
-        "avg": 9.2,
-        "note": "Taps straight into the national debate on fuel levies and tax bills with clear choices."
-      },
-      "drafted_at": "2026-10-17T14:55:32.268446+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d4-glasspoll-r5x-photo.jpg",
-      "photo_credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
-      "photo_kind": "symbolic",
-      "photo_outlet": "",
-      "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
-      "reel": true,
-      "tg_msg": 259,
-      "decided_at": "2026-10-17T16:47:25.738972+03:00"
-    },
-    {
-      "id": "2026-w43-d5-straight-r5",
+      "id": "2026-w43-d5-straight-r6",
       "template": "straight",
       "lane": "campus",
-      "claim": "African universities produce zero peer engineering research.",
-      "who": "Viral social media commentary, September 2026",
-      "truth": "Kenyan universities publish hundreds of studies annually.",
-      "pride": "Kenyan researchers build solutions for us.",
-      "claim_source": "Social media video circulating on X, September 2026",
-      "source": "Kenyans.co.ke, 2026-10-17",
-      "side": "none",
-      "tone": "explainer",
-      "impact": "Protects academic credibility and student confidence in local institutions.",
-      "where": "National",
-      "when": "17 Oct 2026",
-      "proof": [
-        "NACOSTI licensed over 2,400 scientific research projects in public universities.",
-        "UoN engineering faculty published 180 international journal papers in 2025.",
-        "Kenyan scholars hold regional patents in renewable energy."
-      ],
-      "verdict": "false",
-      "message": "Kenyan university researchers publish globally recognized engineering and technology research.",
-      "action": "Browse verified local research papers on the NACOSTI research portal",
-      "photo_query": "university laboratory Kenya",
-      "caption": "Facts defeat empty claims online. Kenyan university researchers publish verified global research every single month.\n\nShare this with a campus student.\n\n#SetItStraight #KenyaOnRecord",
+      "message": "Verify viral health claims with the Ministry of Health before sharing.",
+      "action": "Check official Ministry of Health updates on confirmed outbreaks.",
       "beats": [
-        "Viral claims say Kenyan universities produce *no research*.",
-        "The official research record shows this claim is false.",
-        "NACOSTI licensed over 2,400 scientific projects nationwide.",
-        "Kenyan scholars hold patents in renewable energy.",
-        "Read verified local research on nacosti.go.ke."
+        "A viral message claims unverified cures for *Ebola*.",
+        "The Ministry confirms cases are managed in quarantine.",
+        "Always verify health alerts through official channels.",
+        "Kenyans demand daily verified updates during outbreaks."
       ],
+      "photo_query": "hospital ward Kenya",
+      "claim": "A viral WhatsApp message claims local herbal mixtures cure Ebola instantly without hospital care.",
+      "who": "Viral WhatsApp messages, October 2026",
+      "claim_source": "Forwarded text messages circulating in Nairobi university groups, October 2026",
+      "verdict": "false",
+      "truth": "Ebola requires specialized medical isolation and treatment facilities.",
+      "proof": [
+        "Ministry of Health confirmed 7 cases under quarantine observation in October 2026.",
+        "No herbal mixture has been approved by pharmacy boards to treat viral hemorrhagic fevers."
+      ],
+      "pride": "Follow advice from licensed medical professionals.",
+      "source": "Capital FM News, 2026-10-17",
+      "caption": "Set It Straight: Do not share unverified health cures on WhatsApp. Check official Ministry of Health advisories first.\n\n#SetItStraight #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-23T17:00:00+03:00",
+      "series": "Myth or Fact",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "False health alerts endanger public safety and spread panic during outbreaks.",
+      "where": "National",
+      "when": "23 Oct 2026",
       "source_links": [
         {
-          "outlet": "Kenyans.co.ke",
-          "title": "Section of Govt Workers Targeted in Fresh Salary Probe",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSHN0UmJ2SVJoaWJXTGZKUENycHFlb1FlZVhHS2ZzeDZnZEZtU2RySmJzclF2Q1lBclAwNFI2Tk4zUFhKVjF6MmEwOVJXRUtqMjhQem1lT1MyMDlfWTZiYUJzRUtDYzhnWFVlckhOb2ZHRjI2X0h6bUhLaE9Bb3Y5ZnJCbzNjSElyMHNBbmJSM1pjRGVNSUE?oc=5",
-          "published": "2026-10-17"
-        },
-        {
-          "outlet": "Kenyans.co.ke",
-          "title": "Section of Govt Workers Targeted in Fresh Salary Probe",
-          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSHN0UmJ2SVJoaWJXTGZKUENycHFlb1FlZVhHS2ZzeDZnZEZtU2RySmJzclF2Q1lBclAwNFI2Tk4zUFhKVjF6MmEwOVJXRUtqSjhQem1lT1MyMDlfWTZiYUJzRUtDYzhnWFVlckhOb2ZHRjI2X0h6bUhLaE9Bb3Y5ZnJCbzNjSElyMHNBbmJSM1pjRGVNSUE?oc=5",
+          "outlet": "Capital FM News",
+          "title": "Ebola cases rise to 7 as 4 new cases detected in quarantine",
+          "link": "https://capitalfm.africa/ebola-cases-rise-to-seven-in-kenya-as-three-health-workers-test-positive/",
           "published": "2026-10-17"
         }
       ],
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "weak: editor scored 4.5/10. Base this post on actual top stories from the provided weekly news list rather than generic university claims."
-        ],
+        "errors": [],
         "warnings": []
       },
       "critic": {
-        "hook": 5,
-        "send": 4,
-        "clarity": 5,
-        "fresh": 3,
-        "voice": 5,
-        "craft": 5,
-        "picture": 4,
-        "hold": 5,
-        "demand": 3,
-        "action": 5,
-        "fair": 5,
-        "impact": 5,
-        "avg": 4.5,
-        "note": "Base this post on actual top stories from the provided weekly news list rather than generic university claims."
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 5,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.4,
+        "note": "Raise demand score by anchoring the myth-busting directly to the 7 confirmed Ebola cases currently in quarantine."
       },
-      "drafted_at": "2026-10-17T14:55:32.268448+03:00"
+      "drafted_at": "2026-10-18T03:12:08.009067+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-straight-r6-photo.jpg",
+      "photo_credit": "Photo: Moving Mountains Trust / Wikimedia Commons, CC BY 2.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Ward_block,_Dophil_Maternity_and_Nursing_Home.jpg",
+      "reel": true,
+      "tg_msg": 294
     },
     {
-      "id": "2026-w43-d6-kenya-r5x",
+      "id": "2026-w43-d6-kenya-r6",
       "template": "kenya",
       "lane": "hustle",
-      "series": "Built in Kenya",
-      "place": "Olkaria, Naivasha",
-      "line": "Olkaria Geothermal Power Complex generates over *eight hundred megawatts* of clean energy.",
-      "fact": "KenGen's Olkaria installations supply about 40% of Kenya's daily electricity grid capacity from underground steam.",
-      "source": "https://www.kengen.co.ke",
-      "side": "government",
-      "tone": "credit",
-      "impact": "Supplies stable electricity to power homes and manufacturing businesses.",
-      "where": "Naivasha",
-      "when": "17 Oct 2026",
-      "message": "Olkaria supplies 40% of Kenya's daily electricity using reliable underground steam.",
-      "action": "Read the national electricity generation statistics on epra.go.ke",
-      "photo_query": "Olkaria geothermal power plant Kenya",
-      "caption": "Built in Kenya and running every day. Olkaria keeps our homes and businesses powered with renewable energy.\n\nSave this post and share what Kenya builds.\n\n#BuiltInKenya #KenyaOnRecord",
+      "message": "Nairobi Expressway speeds up cross-city travel for commuters every day.",
+      "action": "Use the Electronic Toll Collection service for faster entry at toll stations.",
       "beats": [
-        "Olkaria generates over *eight hundred megawatts* of clean energy.",
-        "KenGen installations supply forty percent of our daily power grid.",
-        "Geothermal steam gives Kenya one of the cleanest grids globally."
+        "The Nairobi Expressway connects Mlolongo to Westlands in *minutes*.",
+        "It spans 27 kilometres across the capital city to ease traffic jams.",
+        "Over 50,000 motorists use the road daily to beat Nairobi traffic."
       ],
+      "photo_query": "Nairobi Expressway Kenya",
+      "place": "Nairobi Expressway",
+      "line": "The Nairobi Expressway reduced travel time across the *city* significantly.",
+      "fact": "Opened in 2022, the 27-kilometre toll road was built through a public-private partnership costing Sh88 billion.",
+      "source": "The Star, Kenya, 2026-10-17",
+      "caption": "Built in Kenya: The Nairobi Expressway changed how thousands move across the capital every single day. Save this post.\n\n#BuiltInKenya #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-24T11:00:00+03:00",
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "weak: editor scored 5.9/10. Tie this showcase piece to current energy sector debates or connect it to an active infrastructure news item."
-        ],
-        "warnings": []
-      },
-      "critic": {
-        "hook": 6,
-        "send": 6,
-        "clarity": 7,
-        "fresh": 6,
-        "voice": 6,
-        "craft": 6,
-        "picture": 7,
-        "hold": 6,
-        "demand": 3,
-        "action": 6,
-        "fair": 6,
-        "impact": 6,
-        "avg": 5.9,
-        "note": "Tie this showcase piece to current energy sector debates or connect it to an active infrastructure news item."
-      },
-      "drafted_at": "2026-10-17T14:55:32.268450+03:00"
-    },
-    {
-      "id": "2026-w43-d7-glasspoll-r5x",
-      "template": "glasspoll",
-      "lane": "everyone",
-      "demand": 2,
-      "hook": "Two new tax laws signed",
-      "question": "Will new tax laws lower your costs?",
-      "cta": "Comment A or B below",
-      "options": [
-        "Yes, if spent well",
-        "No, life gets harder"
-      ],
-      "message": "Kenyans vote on whether two newly signed tax laws will ease the rising cost of living.",
-      "action": "Vote A or B in the comments and read the signed tax laws on parliament.go.ke",
-      "beats": [
-        "President Ruto signed *two new tax bills* into law this week.",
-        "State House says the laws will fund essential public services.",
-        "Treasury admits ordinary Kenyans still struggle with high living costs.",
-        "Will these new tax laws *lower your costs* or raise them?",
-        "Vote *A or B* in the comments below."
-      ],
-      "photo_query": "Kenyan shilling banknotes",
-      "source": "Tuko News, 2026-10-17, People Daily, 2026-10-17",
-      "who": "President William Ruto",
-      "where": "National",
-      "when": "17 Oct 2026",
-      "side": "both",
-      "tone": "explainer",
-      "impact": "The new tax laws determine how much tax Kenyans pay on goods, services, and income.",
-      "caption": "President Ruto signed two new tax bills into law this week.\nWill new tax laws lower your costs?\nVote A or B in the comments.\n\n#YourSay #KenyaOnRecord",
-      "bg": "usiku",
-      "publish_at": "2026-10-25T18:00:00+03:00",
-      "size": "story",
+      "series": "Built in Kenya",
+      "side": "government",
+      "tone": "credit",
+      "impact": "Modern infrastructure cuts daily transport delays for thousands of business commuters.",
+      "where": "Nairobi",
+      "when": "24 Oct 2026",
       "source_links": [
         {
-          "outlet": "Tuko News",
-          "title": "Passed by MPs: Ruto signs 2 tax bills into law, State House issues statement",
-          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbzhkc2ZtZkhpa08zaWRiU1FicnlEd25mMUd5UVlybHNnZ1JxMWpiNDlzSkRKVmhPbUh0al9yYVRWZnBLakUzcDc1WFFRRHNnZE91SUNQcVJfaE9fQWw5ZElsZDFsckVuc0gySU1VeExHX2JVVnJhaEtVR1hwWnlYUlhwdXpIWk9EZ0swREtPRzV4d1o5MV96d2pjRDdsU3MzOUdSSEJHQmpRbHhG?oc=5",
-          "published": "2026-10-17"
-        },
-        {
-          "outlet": "People Daily",
-          "title": "Mbadi admits Kenyans still struggling despite economic gains",
-          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNb2FBX3ZCdFl6VlktdUE5cWFyT2g3WnpoalFJX3ppVnprdk1EOWk3MTVzZy1vNkV6OXhhN29OS01DY0tWTFNNbmV5YkllcktWY3RTTXN4MHNlYXFCa2psRUhFNm5ZWnJiQThnaXRpSEEzRjkwSlVnRW9QYWNZSnk2bGN3cEJMa3ZiTFphVHc2bVZ5cmRBTkk0NA?oc=5",
+          "outlet": "The Star, Kenya",
+          "title": "Luxury car stolen in UK traced to Nairobi motor yard, DCI says",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOSmZrd0RoRkktd1hlMjcyS2sxNGtOVGRvY0FvNmd3d0FDcEdDQm9qNjV4UkMzMWhTZGpwTWtiU09pU3ZpWXR5TEcwU3V0Tzk0anNrZDNmdXBQZmV5bklCUHZ6eElzREtXdWZYYTZiRTVZdml1eEF1a0Q2ZGMxUjBkcE11Sy1sSml6dTFvS1dLVktGZXc4Q001a3l6MA?oc=5",
           "published": "2026-10-17"
         }
       ],
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "weak: editor scored 6.1/10. The demand score must reflect the actual ranking from the briefing list (Story 2 is rank 2, so demand should be 2)."
-        ],
+        "errors": [],
         "warnings": []
       },
       "critic": {
@@ -468,26 +375,103 @@
         "send": 7,
         "clarity": 8,
         "fresh": 7,
-        "voice": 6,
-        "craft": 6,
-        "picture": 6,
-        "hold": 6,
-        "demand": 2,
-        "action": 5,
-        "fair": 6,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 7,
+        "demand": 3,
+        "action": 7,
+        "fair": 8,
         "impact": 7,
-        "avg": 6.1,
-        "note": "The demand score must reflect the actual ranking from the briefing list (Story 2 is rank 2, so demand should be 2)."
+        "avg": 7.1,
+        "note": "Align the source link with the Expressway topic rather than an unrelated car theft story."
       },
-      "drafted_at": "2026-10-17T14:55:32.268451+03:00"
+      "drafted_at": "2026-10-18T03:12:08.009069+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d6-kenya-r6-photo.jpg",
+      "photo_credit": "Photo: Bahnfrend / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Nairobi_Expressway,_2025_(03).jpg",
+      "reel": true,
+      "tg_msg": 295
+    },
+    {
+      "id": "2026-w43-d7-glasspoll-r6",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "hook": "UDA-ODM political pact",
+      "question": "Has the UDA-ODM deal helped Kenyans?",
+      "cta": "Vote A or B in the comments",
+      "options": [
+        "Unites the country",
+        "Weakens oversight"
+      ],
+      "message": "Kenyans weigh whether the broad-based political pact improves service delivery or silences vital oversight.",
+      "action": "Drop your vote in the comments and hold all elected leaders accountable for public services.",
+      "beats": [
+        "President Ruto defended the *pact* during his tour.",
+        "Opposition leaders remain divided over cooperation.",
+        "Wananchi ask if power-sharing delivers *better services*.",
+        "Has the UDA-ODM deal helped Kenyans?",
+        "Vote *A or B* in the comments below."
+      ],
+      "photo_query": "Kenya National Assembly chamber",
+      "caption": "President William Ruto defended the UDA-ODM pact during his Eldoret tour, even as political rallies clash across counties.\n\nHas the UDA-ODM deal helped Kenyans?\nA: Unites the country\nB: Weakens oversight\n\nVote A or B in the comments.\n\n#KenyaOnRecord #YourSay",
+      "source": "Daily Nation, 2026-10-17",
+      "who": "President William Ruto and ODM leadership",
+      "where": "National",
+      "when": "17 Oct 2026",
+      "side": "both",
+      "tone": "explainer",
+      "impact": "Broad-based political pacts determine whether Parliament checks executive power or shares state offices.",
+      "bg": "usiku",
+      "publish_at": "2026-10-25T18:00:00+03:00",
+      "size": "story",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Ruto takes re-election pitch to Eldoret home turf, defends UDA-ODM pact",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNTElZVEVjak5YY3FZbnQzRktEUW9Vb2tFdTZGMG1MYVBpbXlJYmg5SDJkNWY2Wkh6UFRkb0VJZjRiNnpwSkp4SVFRTGtUdkVwM0JjRG1JekRiQ0Q1b3p1dlFCZENHenFrWlZkZlFzUklTNThJV2ROUWJ0a2Y3Q2RrUUJMM0d4dEVWZnFYbW13YXVmZklYc2dBSEdibHNHWE4yOFg5VHRoX3kwNVZiN21iektjZThWR1ozWnFVNQ?oc=5",
+          "published": "2026-10-17"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 4,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.8,
+        "note": "Refine the hook to address the current debate on opposition realignment and the Eldoret rallies directly."
+      },
+      "drafted_at": "2026-10-18T03:12:08.009070+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d7-glasspoll-r6-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/ruto-launches-sh1bn-kitale-hospital-upgrade-blames-natembeya-for-delays/",
+      "reel": true,
+      "tg_msg": 296
     }
   ],
   "scripts": {
-    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni sauti yako ya uwajibikaji.\n\nWiki hii, tunaanza na tahadhari kali kutoka kwa dawati letu la Usiibiwe. Wasanii wa ulaghai wamelenga wauzaji na watoaji huduma wa kaunti, wakiwataka walipe karo za usafi au clearance fees ndiposa walipwe pesa zao za pending bills. Hiyo ni mitego! Hakuna afisa wa kaunti anayepaswa kukuomba rushwa ndogo ili akushughulikie malipo.\n\nUpande wa maendeleo, Lake Nakuru inaendelea kung'aa kama moja ya hifadhi za wanyamapika na vifaru yenye mafanikio makubwa nchini. Vile vile, Olkaria inazalisha asilimia arobaini ya umeme wa Kenya kupitia mvuke wa ardhini—ushahidi tosha wa uwezo wetu wa kinyumbani.\n\nLakini katika Kaunti ya Trans Nzoia, wananchi wanasherehekea bajeti kubwa ya maendeleo, lakini bado wanalalamikia kuchelewa kwa miradi ya afya. Hali iko hivyo pia katika vyuo vikuu vyetu, ambapo watafiti wanaendelea kuchapisha tafiti za kiwango cha kimataifa kwenye uhandisi.\n\nKwenye mitandao, mnauliza: Je, kupunguzwa kwa ushuru wa mafuta au kupunguza matumizi ya serikali kutaleta nafuu ya haraka? Na je, sheria hizo mpya za ushuru zitapunguza gharama ya maisha? Endelea kufuatilia Kenya on Record kwa ukweli mtupu.\n\n*Ufupi kwa Kiswahili:* Wiki hii tunaangazia ulaghai wa pending bills za kaunti, mafanikio ya Olkaria na Lake Nakuru, kuchelewa kwa miradi ya afya Trans Nzoia, na mjadala mkali kuhusu kodi na gharama ya maisha.",
-    "voice_note": "Sasa wakuu, hapa ndipo Kenya on Record. Sikilizeni kwa makini: Wajanja wanalenga watoaji huduma wa kaunti na stori za fake clearance fees za pending bills. Eti ulipe ndiposa upate pesa zako! Hiyo ni scam tupu, msikubali kutapeliwa. Kwingineko, Olkaria inatupa asilimia arobaini ya umeme wetu, wakati Lake Nakuru inatamba kama hifadhi bora ya vifaru. Lakini kule Trans Nzoia, bado kuna kiza fulani kwa miradi ya afya licha ya bajeti nzuri ya maendeleo. Na kwenye vichochoro vya mijadala, mnasema nini kuhusu hizi sheria mpya za kodi na bei ya mafuta? Je, zitaleta nafuu au ni porojo? Tupeni maoni yenu, na kumbuka—usiibiwe!",
-    "sms": "USIIBIWE: Machalari wanalenga watoaji huduma wa kaunti na fake clearance fees eti ndiposa walipwe pending bills. Hakuna malipo ya aina hiyo. Kuwa mwangalifu!",
-    "reels": "Wajanja wamebadilisha mbinu! Sasa hivi wanalenga watoaji huduma wa kaunti na madai bandia ya 'clearance fees' ndiposa ulipwe pending bills zako. Hiyo ni mitego ya wazi kabisa! Usiibiwe pesa zako kwa sababu ya njaa ya matapeli. Ingia Kenya on Record ujue mengi!"
+    "radio": "Habari za wiki hii kutoka Kenya on Record. Mimi ni mtangazaji wako, na leo tunaziangazia hizi nchi zetu na maisha ya kila siku.\n\nKwanza kabisa, tahadhari kwa wale wanaotafuta kazi nje ya nchi. Hii wiki kwenye kitengo chetu cha #usiibiwe, tunawakumbusha kuwa mawakala feki wanazidi kuwinda pesa za wananchi kwa ajili ya ajira ambazo hazipo. Tafadhali chunguza vizuri kabla hujatoa hata shilingi moja.\n\nKwenye upande wa mazingira, #kenya yetu inajivunia Msitu wa Aberdare ambao unalinda minara yetu ya maji na wanyamapori. Tunahitaji kuutunza kwa manufaa ya vizazi vijavyo. Ukija mjini Nairobi, barabara ya Nairobi Expressway imerahisisha usafiri wa kuvuka jiji kwa wengi wetu kila siku.\n\nPia, #scorecard inatukumbusha kuwa viongozi wa umma lazima wafuate maadili ya Sura ya Sita ya Katiba. Hakuna aliye juu ya sheria. Kwenye #glasspoll yetu wiki hii, wananchi wanapima kama mapana ya kisiasa (broad-based pact) yameleta huduma bora au yamenyamazisha uwajibikaji. Kando na hilo, mfumuko wa bei na gharama ya maisha bado viko kwenye vinywa vya Wakenya wengi.\n\nNa mwisho kabisa, kwenye #straight, kabla hujasambaza taarifa yoyote ya virusi ya afya mtandaoni, thibitisha kwanza na Wizara ya Afya. Usiwe chanzo cha kueneza uongo.\n\n*Ufupi kwa Kiswahili:* Wiki hii tunaangazia tahadhari dhidi ya mawakala feki wa ajira, umuhimu wa misitu ya Aberdare, uwajibikaji wa viongozi, na uhakiki wa habari za afya kutoka Wizara ya Afya kabla ya kusambaza.",
+    "voice_note": "Wadau, mambo vipi? Hapa ni Kenya on Record. Wiki hii tuna mambo mazito manne ya kuzingatia. Kwanza, #usiibiwe: mawakala feki wanachukua pesa kwa ajili ya kazi za ng'ambo ambazo hazipo; tafadhali angalia sana. Pili, kwenye #glasspoll, mnazungumziaje bei za bidhaa sokoni na huu muungano mpana wa kisiasa? Je, unaleta huduma au unanyamazisha uwajibikaji? Tatu, #straight inatukumbusha tuhakikishe habari za afya kutoka kwa Wizara ya Afya kabla ya kusambaza mtandaoni. Na mwisho, viongozi wetu kwenye #scorecard lazima wazingatie Sura ya Sita ya uadilifu. Tujadiliane hapa tuone ukweli uko wapi.",
+    "sms": "USIIBIWE: Usitoe pesa kwa wakala wa kazi za nje kabla ya kuhakikisha kibali chake kutoka NTSA au Wizara ya Kazi. Linda pesa yako leo!",
+    "reels": "Hali halisi ikoje mtaani wiki hii? Kwenye #glasspoll, Wakenya wanapima joto la mfumuko wa bei na kujiuliza ikiwa muungano mpana wa kisiasa unaleta huduma bora au unanyamazisha sauti za wananchi. Wakati huo huo, #scorecard inawakumbusha viongozi wetu kuwa viwango vya Sura ya Sita vya uadilifu havina hiari—ni lazima vifuatwe. Fuatilia Kenya on Record ujue ukweli."
   },
   "spend_usd": 0.0,
-  "revision": 5
+  "revision": 6
 }
