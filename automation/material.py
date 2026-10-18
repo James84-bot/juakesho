@@ -33,7 +33,12 @@ PRICE = re.compile(r"\b(price|prices|priced|cost|costs|cheaper|costlier|unga|mai
 FIGURE = re.compile(r"\b(?:k?sh\.?|kes)\s?\d[\d,]*(?:\.\d+)?\b", re.I)
 MYTH = re.compile(r"\b(fake|false|hoax|fact.?check\w*|misleading|debunk\w*|not true|doctored|fabricated|"
                   r"misinformation|disinformation|rumou?rs?)\b|pesacheck|africa check", re.I)
-SCAM = re.compile(r"\b(scams?|scammers?|fraud\w*|conm[ae]n|con artists?|phishing|swindl\w*)\b", re.I)
+SCAM = re.compile(r"\b(scams?|scammers?|fraudsters|conm[ae]n|con artists?|phishing|swindl\w*)\b", re.I)
+# a price the reader can guess: an item's price stated as a fact ("unga at Sh160", "Sh217 per litre"),
+# not a proposed cut, a subsidy or a fraud total
+PRICE_STATED = re.compile(r"\b(?:to|at|now|costs?|sells?(?: at)?|retail(?:s|ing)? at)\s+(?:k?sh\.?|kes)\s?\d[\d,.]*\b"
+                          r"|\b(?:k?sh\.?|kes)\s?\d[\d,.]*\s*(?:per|a|for)\s+(?:litre|kg|kilo|packet|unit|bag|loaf|kwh)", re.I)
+NOT_A_PRICE = re.compile(r"\b(cut|subsidy|billion|bn|million|fraud|loss|budget|tax)\b", re.I)
 
 WHY = {
     "bank": "no verified fact left in content/facts.json for this series (all used recently): add entries",
@@ -82,7 +87,7 @@ def _fits(k: str, title: str) -> bool:
     if k == "price":
         return bool(PRICE.search(title))
     if k == "price_figure":
-        return bool(PRICE.search(title) and FIGURE.search(title))
+        return bool(PRICE.search(title) and PRICE_STATED.search(title) and not NOT_A_PRICE.search(title))
     if k == "myth":
         return bool(MYTH.search(title))
     if k == "scam":

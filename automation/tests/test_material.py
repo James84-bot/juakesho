@@ -105,5 +105,27 @@ class Numbers(unittest.TestCase):
         self.assertTrue(any("2019" in e for e in rep.errors))
 
 
+
+class Tightened(unittest.TestCase):
+    def test_quiz_needs_a_stated_price_not_a_proposal(self):
+        self.assertFalse(material._fits("price_figure", "Nyoro's PPK proposes Sh29 fuel price cut, calls for Sh5.5 billion subsidy"))
+        self.assertTrue(material._fits("price_figure", "EPRA: petrol now Sh217 per litre in Nairobi"))
+        self.assertTrue(material._fits("price_figure", "Unga prices drop to Sh160 for 2kg packet"))
+
+    def test_a_court_fraud_case_is_not_a_scam_tip(self):
+        self.assertFalse(material._fits("scam", "Sh3.9bn VAT fraud: Court issues arrest warrants for missing suspects"))
+        self.assertTrue(material._fits("scam", "Fraudsters target M-Pesa users with fake reversal texts"))
+
+    def test_scorecard_without_a_report_is_held(self):
+        rep = guard.Report(id="x")
+        guard.series_rules({"template": "scorecard", "who": "William Ruto", "source": "Constitution of Kenya, Chapter Six"}, rep)
+        self.assertTrue(any("report" in e for e in rep.errors))
+
+    def test_old_series_name_as_a_hashtag_is_caught(self):
+        rep = guard.Report(id="x")
+        guard.series_rules({"template": "straight", "series": "Myth or Fact", "caption": "Verify. #SetItStraight"}, rep)
+        self.assertTrue(any("Set It Straight" in e for e in rep.errors))
+
+
 if __name__ == "__main__":
     unittest.main()
