@@ -1,402 +1,475 @@
 {
- "collection": "2026-W43",
- "created": "2026-10-14T00:46:06.367461+03:00",
- "posts": [
-  {
-   "id": "2026-w43-d1-usiibiwe-r9",
-   "template": "usiibiwe",
-   "bg": "usiku",
-   "lane": "hustle",
-   "publish_at": "2026-10-19T07:30:00+03:00",
-   "status": "needs_human",
-   "guard": {
-    "errors": [
-     "no report or warning about a scam this week"
-    ],
-    "warnings": []
-   },
-   "drafted_at": "2026-10-19T03:11:47.798447+03:00"
-  },
-  {
-   "id": "2026-w43-d2-kenya-r9x-r2",
-   "template": "kenya",
-   "lane": "diaspora",
-   "series": "Kenya at its best",
-   "place": "Nairobi National Park",
-   "line": "Kenya's first national park sits just outside *Nairobi*, 117 square kilometres of it.",
-   "fact": "Gazetted in 1946 as Kenya's first national park, it covers 117 square kilometres just outside the city.",
-   "source": "https://kws.go.ke/park/nairobi-national-park/",
-   "message": "Kenya's first national park is just outside Nairobi.",
-   "action": "Tag the person you would take.",
-   "beats": [
-    "Kenya's first national park is *just outside Nairobi*.",
-    "It was gazetted in 1946 and covers 117 square kilometres.",
-    "Giraffes there graze with the city skyline behind them.",
-    "Tag the person you would take."
-   ],
-   "photo_query": "Nairobi National Park skyline giraffe Kenya",
-   "caption": "Kenya's first national park, gazetted in 1946, covers 117 square kilometres just outside Nairobi. Giraffes graze with the city skyline behind them.\n\nTag the person you would take.\n\n#KenyaAtItsBest #KenyaOnRecord",
-   "bg": "usiku",
-   "publish_at": "2026-10-20T12:45:00+03:00",
-   "side": "none",
-   "tone": "credit",
-   "source_links": [
+  "collection": "2026-W43",
+  "created": "2026-10-14T00:46:06.367461+03:00",
+  "posts": [
     {
-     "outlet": "Kenya Wildlife Service",
-     "title": "Nairobi National Park: Gazetted in 1946 as Kenya's first national park, it covers 117 square kilometres just outside the city.",
-     "link": "https://kws.go.ke/park/nairobi-national-park/",
-     "published": ""
-    }
-   ],
-   "material": {
-    "kind": "bank",
-    "key": "bank:nairobi-np",
-    "id": "nairobi-np",
-    "series": "Kenya at its best",
-    "place": "Nairobi National Park",
-    "name": "Nairobi National Park",
-    "fact": "Gazetted in 1946 as Kenya's first national park, it covers 117 square kilometres just outside the city.",
-    "source": "https://kws.go.ke/park/nairobi-national-park/",
-    "outlet": "Kenya Wildlife Service",
-    "photo_query": "Nairobi National Park skyline giraffe Kenya"
-   },
-   "status": "drafted",
-   "guard": {
-    "errors": [],
-    "warnings": []
-   },
-   "critic": {
-    "hook": 8,
-    "send": 8,
-    "clarity": 10,
-    "fresh": 8,
-    "voice": 9,
-    "craft": 9,
-    "picture": 10,
-    "hold": 9,
-    "demand": 6,
-    "action": 8,
-    "fair": 10,
-    "impact": 7,
-    "avg": 8.5,
-    "note": "Great evergreen wildlife post with clean photography and clear facts."
-   },
-   "drafted_at": "2026-10-19T02:57:22.744637+03:00",
-   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d2-kenya-r9x-photo.jpg",
-   "photo_credit": "Photo: Alexmbogo / Wikimedia Commons, CC BY-SA 4.0",
-   "photo_kind": "place",
-   "photo_outlet": "",
-   "photo_source": "https://commons.wikimedia.org/wiki/File:A_giraffe_with_a_beautiful_background_of_Nairobi_City_Skyline_(cropped).jpg",
-   "video_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/videos/2026-w43-d2-kenya-r9x-video.mp4",
-   "video_credit": "Footage: ROCKY / Wikimedia Commons, CC BY-SA 4.0",
-   "video_source": "https://commons.wikimedia.org/wiki/File:Safari_at_Nairobi_National_Park,_Aug_2025.webm",
-   "reel": true
-  },
-  {
-   "id": "2026-w43-d3-promise-r10",
-   "template": "promise",
-   "lane": "hustle",
-   "bg": "usiku",
-   "publish_at": "2026-10-21T18:30:00+03:00",
-   "status": "planned"
-  },
-  {
-   "id": "2026-w43-d4-glasspoll-r9x-r2",
-   "template": "glasspoll",
-   "lane": "everyone",
-   "series": "Guess the Price",
-   "hook": "Guess Nairobi pump price",
-   "question": "What is diesel per litre?",
-   "cta": "Guess A or B in comments",
-   "options": [
-    "A: Sh217.86",
-    "B: Sh227.76"
-   ],
-   "source": "The Star, 2026-10-15",
-   "beats": [
-    "What does a litre of *diesel* cost in Nairobi right now?",
-    "A is Sh217.86 per litre.",
-    "B is Sh227.76 per litre.",
-    "The answer is B: *diesel costs Sh227.76* per litre in Nairobi."
-   ],
-   "message": "Diesel pump prices in Nairobi sit at Sh227.76 per litre.",
-   "action": "Check EPRA monthly price caps before paying at your local pump.",
-   "photo_query": "petrol station Kenya",
-   "caption": "EPRA's pump prices now run to mid-November 2026. What does a litre of diesel cost in Nairobi? Comment A or B, then tell us what you paid at your station.\n\nVote A or B in the comments.\n\n#GuessThePrice #KenyaOnRecord",
-   "side": "none",
-   "tone": "explainer",
-   "impact": "High diesel prices raise bus fares and food transport costs.",
-   "bg": "usiku",
-   "publish_at": "2026-10-22T19:30:00+03:00",
-   "size": "story",
-   "angle": "price_quiz",
-   "source_links": [
+      "id": "2026-w43-d1-usiibiwe-r9",
+      "template": "usiibiwe",
+      "bg": "usiku",
+      "lane": "hustle",
+      "publish_at": "2026-10-19T07:30:00+03:00",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "no report or warning about a scam this week"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-19T11:16:25.922702+03:00"
+    },
     {
-     "outlet": "The Star",
-     "title": "Nairobi's maximum pump price for diesel is Sh227.76 per litre from 15 Oct to 14 Nov 2026, after EPRA's review.",
-     "link": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
-     "published": "2026-10-15"
-    }
-   ],
-   "material": {
-    "kind": "price_figure",
-    "key": "price:diesel-nbi-2026-10",
-    "title": "Nairobi's maximum pump price for diesel is Sh227.76 per litre from 15 Oct to 14 Nov 2026, after EPRA's review.",
-    "outlet": "The Star",
-    "link": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
-    "published": "2026-10-15",
-    "wrong_hint": "last month's price, Sh217.86 per litre"
-   },
-   "status": "drafted",
-   "guard": {
-    "errors": [],
-    "warnings": []
-   },
-   "critic": {
-    "hook": 9,
-    "send": 8,
-    "clarity": 9,
-    "fresh": 8,
-    "voice": 9,
-    "craft": 9,
-    "picture": 8,
-    "hold": 9,
-    "demand": 9,
-    "action": 8,
-    "fair": 9,
-    "impact": 9,
-    "avg": 8.7,
-    "note": "Engaging price quiz with clear local impact on transport costs."
-   },
-   "drafted_at": "2026-10-19T03:11:47.798444+03:00",
-   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d4-glasspoll-r9x-photo.jpg",
-   "photo_credit": "Photo: Queen Asali / Wikimedia Commons, CC BY-SA 4.0",
-   "photo_kind": "symbolic",
-   "photo_outlet": "",
-   "photo_source": "https://commons.wikimedia.org/wiki/File:Energy_in_Kenya-_Petrocity_Petroln_Station_in_Gigiri.jpg",
-   "reel": true
-  },
-  {
-   "id": "2026-w43-d5-straight-r10",
-   "template": "straight",
-   "lane": "campus",
-   "series": "Myth or Fact",
-   "bg": "usiku",
-   "publish_at": "2026-10-23T17:00:00+03:00",
-   "angle": "myth",
-   "status": "planned"
-  },
-  {
-   "id": "2026-w43-d6-kenya-r10",
-   "template": "kenya",
-   "lane": "hustle",
-   "series": "Built in Kenya",
-   "place": "Loiyangalani, Marsabit",
-   "line": "In Marsabit County, 365 turbines can produce *310 megawatts*.",
-   "fact": "Its 365 turbines in Loiyangalani, Marsabit County, can produce 310 megawatts.",
-   "source": "https://www.cnbc.com/2019/07/22/the-biggest-wind-farm-in-africa-is-officially-up-and-running.html",
-   "message": "Lake Turkana Wind Power has 365 turbines that can produce 310 megawatts.",
-   "action": "Tell us if you had heard of Loiyangalani.",
-   "beats": [
-    "In Marsabit County, 365 wind turbines can produce *310 megawatts*.",
-    "The farm is Lake Turkana Wind Power, at Loiyangalani.",
-    "Built in Kenya, in one of its driest corners.",
-    "Tell us below if you had heard of Loiyangalani before today."
-   ],
-   "photo_query": "Lake Turkana Wind Power turbines Loiyangalani Marsabit Kenya",
-   "caption": "In Loiyangalani, Marsabit County, 365 wind turbines can produce 310 megawatts. This is Lake Turkana Wind Power, built in Kenya.\n\nHad you heard of Loiyangalani before today? Tell us below.\n\n#BuiltInKenya #KenyaOnRecord",
-   "bg": "usiku",
-   "publish_at": "2026-10-24T11:00:00+03:00",
-   "side": "none",
-   "tone": "credit",
-   "source_links": [
+      "id": "2026-w43-d2-kenya-r9x-r2",
+      "template": "kenya",
+      "lane": "diaspora",
+      "series": "Kenya at its best",
+      "place": "Nairobi National Park",
+      "line": "Kenya's first national park sits just outside *Nairobi*, 117 square kilometres of it.",
+      "fact": "Gazetted in 1946 as Kenya's first national park, it covers 117 square kilometres just outside the city.",
+      "source": "https://kws.go.ke/park/nairobi-national-park/",
+      "message": "Kenya's first national park is just outside Nairobi.",
+      "action": "Tag the person you would take.",
+      "beats": [
+        "Kenya's first national park is *just outside Nairobi*.",
+        "It was gazetted in 1946 and covers 117 square kilometres.",
+        "Giraffes there graze with the city skyline behind them.",
+        "Tag the person you would take."
+      ],
+      "photo_query": "Nairobi National Park skyline giraffe Kenya",
+      "caption": "Kenya's first national park, gazetted in 1946, covers 117 square kilometres just outside Nairobi. Giraffes graze with the city skyline behind them.\n\nTag the person you would take.\n\n#KenyaAtItsBest #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-20T12:45:00+03:00",
+      "side": "none",
+      "tone": "credit",
+      "source_links": [
+        {
+          "outlet": "Kenya Wildlife Service",
+          "title": "Nairobi National Park: Gazetted in 1946 as Kenya's first national park, it covers 117 square kilometres just outside the city.",
+          "link": "https://kws.go.ke/park/nairobi-national-park/",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:nairobi-np",
+        "id": "nairobi-np",
+        "series": "Kenya at its best",
+        "place": "Nairobi National Park",
+        "name": "Nairobi National Park",
+        "fact": "Gazetted in 1946 as Kenya's first national park, it covers 117 square kilometres just outside the city.",
+        "source": "https://kws.go.ke/park/nairobi-national-park/",
+        "outlet": "Kenya Wildlife Service",
+        "photo_query": "Nairobi National Park skyline giraffe Kenya"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 10,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 10,
+        "hold": 9,
+        "demand": 6,
+        "action": 8,
+        "fair": 10,
+        "impact": 7,
+        "avg": 8.5,
+        "note": "Great evergreen wildlife post with clean photography and clear facts."
+      },
+      "drafted_at": "2026-10-19T02:57:22.744637+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d2-kenya-r9x-r2-photo.jpg",
+      "photo_credit": "Photo: Alexmbogo / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:A_giraffe_with_a_beautiful_background_of_Nairobi_City_Skyline_(cropped).jpg",
+      "video_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/videos/2026-w43-d2-kenya-r9x-r2-video.mp4",
+      "video_credit": "Footage: ROCKY / Wikimedia Commons, CC BY-SA 4.0",
+      "video_source": "https://commons.wikimedia.org/wiki/File:Safari_at_Nairobi_National_Park,_Aug_2025.webm",
+      "reel": true,
+      "tg_msg": 375
+    },
     {
-     "outlet": "CNBC",
-     "title": "Lake Turkana Wind Power: Its 365 turbines in Loiyangalani, Marsabit County, can produce 310 megawatts.",
-     "link": "https://www.cnbc.com/2019/07/22/the-biggest-wind-farm-in-africa-is-officially-up-and-running.html",
-     "published": ""
-    }
-   ],
-   "material": {
-    "kind": "bank",
-    "key": "bank:turkana-wind",
-    "id": "turkana-wind",
-    "series": "Built in Kenya",
-    "place": "Loiyangalani, Marsabit",
-    "name": "Lake Turkana Wind Power",
-    "fact": "Its 365 turbines in Loiyangalani, Marsabit County, can produce 310 megawatts.",
-    "source": "https://www.cnbc.com/2019/07/22/the-biggest-wind-farm-in-africa-is-officially-up-and-running.html",
-    "outlet": "CNBC",
-    "photo_query": "Lake Turkana Wind Power turbines Loiyangalani Marsabit Kenya"
-   },
-   "status": "drafted",
-   "guard": {
-    "errors": [],
-    "warnings": []
-   },
-   "critic": {
-    "hook": 7,
-    "send": 8,
-    "clarity": 9,
-    "fresh": 7,
-    "voice": 9,
-    "craft": 8,
-    "picture": 8,
-    "hold": 8,
-    "demand": 7,
-    "action": 8,
-    "fair": 9,
-    "impact": 8,
-    "avg": 8.0,
-    "note": "Make the impact on everyday power bills clear."
-   },
-   "drafted_at": "2026-10-19T02:57:22.744657+03:00",
-   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d6-kenya-r9-photo.jpg",
-   "photo_credit": "Photo: george garang / Wikimedia Commons, CC BY-SA 2.0",
-   "photo_kind": "place",
-   "photo_outlet": "",
-   "photo_source": "https://commons.wikimedia.org/wiki/File:Lake_turkana_wind_power_project.jpg",
-   "video_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/videos/2026-w43-d6-kenya-r9-video.mp4",
-   "video_credit": "Footage: Matthias_Groeneveld / Pixabay",
-   "video_source": "https://pixabay.com/videos/id-282086/",
-   "reel": true
-  },
-  {
-   "id": "2026-w43-d7-glasspoll-r10",
-   "template": "glasspoll",
-   "lane": "everyone",
-   "hook": "Broad-based government",
-   "question": "Does broad-based government help us?",
-   "options": [
-    "Yes, it brings unity",
-    "No, it kills debate"
-   ],
-   "cta": "Comment A or B",
-   "source": "National Assembly Hansard; Political Parties Act, 2011",
-   "message": "Kenyans debate whether broad-based alliances help wananchi or weaken parliamentary oversight.",
-   "action": "Attend public participation sessions to keep all elected leaders accountable",
-   "beats": [
-    "Ruling-party and opposition leaders now govern together.",
-    "Supporters say unity speeds up development.",
-    "Critics say deals between leaders weaken Parliament's oversight.",
-    "Comment A or B to pick your side."
-   ],
-   "photo_query": "Kenya National Assembly",
-   "who": "Parliament of Kenya",
-   "where": "National",
-   "when": "October 2026",
-   "side": "both",
-   "tone": "explainer",
-   "impact": "Alliances change how MPs vote on taxes, public debt and government appointments.",
-   "caption": "Opposition and ruling-party leaders are now working together in government. Supporters say it unites the country. Critics say it removes oversight in Parliament.\n\nA: Yes, it brings unity.\nB: No, it kills debate.\n\nVote A or B in the comments.\n\n#KenyaOnRecord",
-   "bg": "usiku",
-   "publish_at": "2026-10-25T18:00:00+03:00",
-   "size": "story",
-   "status": "drafted",
-   "guard": {
-    "errors": [],
-    "warnings": []
-   },
-   "critic": {
-    "hook": 8,
-    "send": 8,
-    "clarity": 9,
-    "fresh": 8,
-    "voice": 9,
-    "craft": 8,
-    "picture": 7,
-    "hold": 8,
-    "demand": 8,
-    "action": 7,
-    "fair": 9,
-    "impact": 8,
-    "avg": 8.1,
-    "note": "Ensure the accountability demand targets a specific parliamentary office."
-   },
-   "drafted_at": "2026-10-19T02:57:22.744658+03:00",
-   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d7-glasspoll-r9-photo.jpg",
-   "photo_credit": "Photo: Sir. Kevin Macharia / Wikimedia Commons, CC BY-SA 2.0",
-   "photo_kind": "symbolic",
-   "photo_outlet": "",
-   "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_National_Assembly_seating.jpg",
-   "reel": true
-  },
-  {
-   "id": "2026-w43-hot-1019",
-   "template": "sauti",
-   "lane": "everyone",
-   "kicker": "Taxpayers",
-   "line": "The government begins a fresh headcount as a *Sh6.2bn* payroll fraud inquiry widens.",
-   "fact": "A nationwide public servant headcount is underway following a Sh6.2 billion payroll fraud inquiry.",
-   "source": "Daily Nation, 2026-10-19",
-   "photo_query": "National Treasury Nairobi",
-   "message": "The government is auditing all public workers after Sh6.2 billion was lost to ghost worker payroll fraud.",
-   "action": "Demand your county public service board publishes full staff audit findings online.",
-   "beats": [
-    "A fresh headcount begins over *Sh6.2bn* in payroll fraud.",
-    "Investigators are tracking ghost workers across public offices.",
-    "Money stolen through fake workers drains our public services.",
-    "Kenyans demand: the Public Service Commission *publishes* the audit.",
-    "Follow the audit report on your county website."
-   ],
-   "caption": "A nationwide headcount of civil servants is underway after Sh6.2 billion was flagged in payroll fraud.\n\nWhat it means for you: tax shillings meant for public hospitals and schools pay people who do not exist.\n\nHas your county ever audited its payroll? Tell us below.\n\n#SautiYaMwananchi #KenyaOnRecord",
-   "who": "Public Service Commission",
-   "where": "National",
-   "when": "19 Oct 2026",
-   "side": "none",
-   "tone": "criticism",
-   "impact": "Tax shillings meant for public clinics and schools pay non-existent staff.",
-   "bg": "usiku",
-   "publish_at": "2026-10-19T12:45:00+03:00",
-   "hot": true,
-   "beat": "life",
-   "source_links": [
+      "id": "2026-w43-d3-promise-r10",
+      "template": "promise",
+      "lane": "hustle",
+      "who": "William Ruto, President of Kenya",
+      "promise": "We will provide business loans of up to Sh2.5 million to small traders through the Hustler Fund.",
+      "said": "Hustler Fund Launch, November 2022",
+      "verdict": "stalled",
+      "measure": "Under Sh2,000",
+      "reality": "Most small traders remain capped at under Sh2,000 as the promised enterprise loans stall.",
+      "proof": [
+        "Most active borrowers remain restricted to personal loans between Sh500 and Sh2,000.",
+        "The Auditor-General flagged Sh11.5 billion in overdue defaults on the fund.",
+        "The Ministry of Cooperatives has not rolled out the full SME loan portfolio."
+      ],
+      "ask": "When will small traders access the promised Sh2.5m loans?",
+      "source": "Public Finance Management Act 2012",
+      "beats": [
+        "State promised *Sh2.5 million* business loans for small traders.",
+        "Most borrowers still receive loans between Sh500 and Sh2,000.",
+        "Traders cannot restock shops with two thousand shillings.",
+        "Kenyans demand: the Cooperatives CS explains the stalled loans.",
+        "Check your loan limit on your phone using star 254 hash."
+      ],
+      "message": "Hustler Fund enterprise loans of up to Sh2.5 million remain stalled for small traders.",
+      "action": "Dial *254# to check your limit and submit business feedback to the MSME ministry.",
+      "photo_query": "mama mboga market Kenya",
+      "impact": "Small traders must still rely on expensive digital lenders to restock their shops.",
+      "where": "National",
+      "when": "October 2026",
+      "side": "government",
+      "tone": "criticism",
+      "caption": "The Hustler Fund was meant to fund small businesses up to Sh2.5 million. Most traders are still stuck with limits below Sh2,000. What is your current limit? Let us know in the comments.\n\n#KenyaOnRecord #HustlerFund",
+      "bg": "usiku",
+      "publish_at": "2026-10-21T18:30:00+03:00",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 9,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.9,
+        "note": "All checks passed."
+      },
+      "drafted_at": "2026-10-19T11:16:25.922694+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-promise-r10-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "file",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127779-john-methu-questions-matiangi-ndindi-nyoros-loyalty-opposition",
+      "ink": {
+        "3": "#F8F7F6"
+      },
+      "reel": true,
+      "tg_msg": 376
+    },
     {
-     "outlet": "Daily Nation",
-     "title": "Fresh public servants headcount begins as Sh6.2bn payroll fraud probe widens",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUmZLQWtIN1IxaFhoRmpuei1zRXk2UEFYeFY3MjJqV3J1TFJoSkp2YkwxckxKQkh2MXVKRVNTTVBkQ0g3NFQ5TER2a3RoLV93ZGNTRXlUWDlIRmhwdnNKT0JZV1ZwWXh0QnJUU1EyWW9OaVFwTlB0cHdiNS1ueE5IeWEyajJ3TzFaSFRGd1l6cFAxUkVrdDZYN0FaUFRab1hoYTZJTzRqOA?oc=5",
-     "published": "2026-10-19"
+      "id": "2026-w43-d4-glasspoll-r9x-r2",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "series": "Guess the Price",
+      "hook": "Guess Nairobi pump price",
+      "question": "What is diesel per litre?",
+      "cta": "Guess A or B in comments",
+      "options": [
+        "A: Sh217.86",
+        "B: Sh227.76"
+      ],
+      "source": "The Star, 2026-10-15",
+      "beats": [
+        "What does a litre of *diesel* cost in Nairobi right now?",
+        "A is Sh217.86 per litre.",
+        "B is Sh227.76 per litre.",
+        "The answer is B: *diesel costs Sh227.76* per litre in Nairobi."
+      ],
+      "message": "Diesel pump prices in Nairobi sit at Sh227.76 per litre.",
+      "action": "Check EPRA monthly price caps before paying at your local pump.",
+      "photo_query": "petrol station Kenya",
+      "caption": "EPRA's pump prices now run to mid-November 2026. What does a litre of diesel cost in Nairobi? Comment A or B, then tell us what you paid at your station.\n\nVote A or B in the comments.\n\n#GuessThePrice #KenyaOnRecord",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "High diesel prices raise bus fares and food transport costs.",
+      "bg": "usiku",
+      "publish_at": "2026-10-22T19:30:00+03:00",
+      "size": "story",
+      "angle": "price_quiz",
+      "source_links": [
+        {
+          "outlet": "The Star",
+          "title": "Nairobi's maximum pump price for diesel is Sh227.76 per litre from 15 Oct to 14 Nov 2026, after EPRA's review.",
+          "link": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
+          "published": "2026-10-15"
+        }
+      ],
+      "material": {
+        "kind": "price_figure",
+        "key": "price:diesel-nbi-2026-10",
+        "title": "Nairobi's maximum pump price for diesel is Sh227.76 per litre from 15 Oct to 14 Nov 2026, after EPRA's review.",
+        "outlet": "The Star",
+        "link": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
+        "published": "2026-10-15",
+        "wrong_hint": "last month's price, Sh217.86 per litre"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 9,
+        "action": 8,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.7,
+        "note": "Engaging price quiz with clear local impact on transport costs."
+      },
+      "drafted_at": "2026-10-19T03:11:47.798444+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d4-glasspoll-r9x-r2-photo.jpg",
+      "photo_credit": "Photo: Queen Asali / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Energy_in_Kenya-_Petrocity_Petroln_Station_in_Gigiri.jpg",
+      "reel": true,
+      "tg_msg": 377
+    },
+    {
+      "id": "2026-w43-d5-straight-r10",
+      "template": "straight",
+      "lane": "campus",
+      "series": "Myth or Fact",
+      "bg": "usiku",
+      "publish_at": "2026-10-23T17:00:00+03:00",
+      "angle": "myth",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "no fact-check or report on a rumour this week, so Myth or Fact would have to invent the rumour"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-19T11:16:25.922704+03:00"
+    },
+    {
+      "id": "2026-w43-d6-kenya-r10",
+      "template": "kenya",
+      "lane": "hustle",
+      "series": "Built in Kenya",
+      "place": "Loiyangalani, Marsabit",
+      "line": "In Marsabit County, 365 turbines can produce *310 megawatts*.",
+      "fact": "Its 365 turbines in Loiyangalani, Marsabit County, can produce 310 megawatts.",
+      "source": "https://www.cnbc.com/2019/07/22/the-biggest-wind-farm-in-africa-is-officially-up-and-running.html",
+      "message": "Lake Turkana Wind Power has 365 turbines that can produce 310 megawatts.",
+      "action": "Tell us if you had heard of Loiyangalani.",
+      "beats": [
+        "In Marsabit County, 365 wind turbines can produce *310 megawatts*.",
+        "The farm is Lake Turkana Wind Power, at Loiyangalani.",
+        "Built in Kenya, in one of its driest corners.",
+        "Tell us below if you had heard of Loiyangalani before today."
+      ],
+      "photo_query": "Lake Turkana Wind Power turbines Loiyangalani Marsabit Kenya",
+      "caption": "In Loiyangalani, Marsabit County, 365 wind turbines can produce 310 megawatts. This is Lake Turkana Wind Power, built in Kenya.\n\nHad you heard of Loiyangalani before today? Tell us below.\n\n#BuiltInKenya #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-24T11:00:00+03:00",
+      "side": "none",
+      "tone": "credit",
+      "source_links": [
+        {
+          "outlet": "CNBC",
+          "title": "Lake Turkana Wind Power: Its 365 turbines in Loiyangalani, Marsabit County, can produce 310 megawatts.",
+          "link": "https://www.cnbc.com/2019/07/22/the-biggest-wind-farm-in-africa-is-officially-up-and-running.html",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:turkana-wind",
+        "id": "turkana-wind",
+        "series": "Built in Kenya",
+        "place": "Loiyangalani, Marsabit",
+        "name": "Lake Turkana Wind Power",
+        "fact": "Its 365 turbines in Loiyangalani, Marsabit County, can produce 310 megawatts.",
+        "source": "https://www.cnbc.com/2019/07/22/the-biggest-wind-farm-in-africa-is-officially-up-and-running.html",
+        "outlet": "CNBC",
+        "photo_query": "Lake Turkana Wind Power turbines Loiyangalani Marsabit Kenya"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 7,
+        "voice": 9,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 7,
+        "action": 8,
+        "fair": 9,
+        "impact": 8,
+        "avg": 8.0,
+        "note": "Make the impact on everyday power bills clear."
+      },
+      "drafted_at": "2026-10-19T02:57:22.744657+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d6-kenya-r10-photo.jpg",
+      "photo_credit": "Photo: george garang / Wikimedia Commons, CC BY-SA 2.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Lake_turkana_wind_power_project.jpg",
+      "video_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/videos/2026-w43-d6-kenya-r10-video.mp4",
+      "video_credit": "Footage: Matthias_Groeneveld / Pixabay",
+      "video_source": "https://pixabay.com/videos/id-282086/",
+      "reel": true,
+      "tg_msg": 378
+    },
+    {
+      "id": "2026-w43-d7-glasspoll-r10",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "hook": "Broad-based government",
+      "question": "Does broad-based government help us?",
+      "options": [
+        "Yes, it brings unity",
+        "No, it kills debate"
+      ],
+      "cta": "Comment A or B",
+      "source": "National Assembly Hansard; Political Parties Act, 2011",
+      "message": "Kenyans debate whether broad-based alliances help wananchi or weaken parliamentary oversight.",
+      "action": "Attend public participation sessions to keep all elected leaders accountable",
+      "beats": [
+        "Ruling-party and opposition leaders now govern together.",
+        "Supporters say unity speeds up development.",
+        "Critics say deals between leaders weaken Parliament's oversight.",
+        "Comment A or B to pick your side."
+      ],
+      "photo_query": "Kenya National Assembly",
+      "who": "Parliament of Kenya",
+      "where": "National",
+      "when": "October 2026",
+      "side": "both",
+      "tone": "explainer",
+      "impact": "Alliances change how MPs vote on taxes, public debt and government appointments.",
+      "caption": "Opposition and ruling-party leaders are now working together in government. Supporters say it unites the country. Critics say it removes oversight in Parliament.\n\nA: Yes, it brings unity.\nB: No, it kills debate.\n\nVote A or B in the comments.\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-25T18:00:00+03:00",
+      "size": "story",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
+        "action": 7,
+        "fair": 9,
+        "impact": 8,
+        "avg": 8.1,
+        "note": "Ensure the accountability demand targets a specific parliamentary office."
+      },
+      "drafted_at": "2026-10-19T02:57:22.744658+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d7-glasspoll-r10-photo.jpg",
+      "photo_credit": "Photo: Sir. Kevin Macharia / Wikimedia Commons, CC BY-SA 2.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_National_Assembly_seating.jpg",
+      "reel": true,
+      "tg_msg": 379
+    },
+    {
+      "id": "2026-w43-hot-1019",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "The government begins a fresh headcount as a *Sh6.2bn* payroll fraud inquiry widens.",
+      "fact": "A nationwide public servant headcount is underway following a Sh6.2 billion payroll fraud inquiry.",
+      "source": "Daily Nation, 2026-10-19",
+      "photo_query": "National Treasury Nairobi",
+      "message": "The government is auditing all public workers after Sh6.2 billion was lost to ghost worker payroll fraud.",
+      "action": "Demand your county public service board publishes full staff audit findings online.",
+      "beats": [
+        "A fresh headcount begins over *Sh6.2bn* in payroll fraud.",
+        "Investigators are tracking ghost workers across public offices.",
+        "Money stolen through fake workers drains our public services.",
+        "Kenyans demand: the Public Service Commission *publishes* the audit.",
+        "Follow the audit report on your county website."
+      ],
+      "caption": "A nationwide headcount of civil servants is underway after Sh6.2 billion was flagged in payroll fraud.\n\nWhat it means for you: tax shillings meant for public hospitals and schools pay people who do not exist.\n\nHas your county ever audited its payroll? Tell us below.\n\n#SautiYaMwananchi #KenyaOnRecord",
+      "who": "Public Service Commission",
+      "where": "National",
+      "when": "19 Oct 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Tax shillings meant for public clinics and schools pay non-existent staff.",
+      "bg": "usiku",
+      "publish_at": "2026-10-19T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Fresh public servants headcount begins as Sh6.2bn payroll fraud probe widens",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUmZLQWtIN1IxaFhoRmpuei1zRXk2UEFYeFY3MjJqV3J1TFJoSkp2YkwxckxKQkh2MXVKRVNTTVBkQ0g3NFQ5TER2a3RoLV93ZGNTRXlUWDlIRmhwdnNKT0JZV1ZwWXh0QnJUU1EyWW9OaVFwTlB0cHdiNS1ueE5IeWEyajJ3TzFaSFRGd1l6cFAxUkVrdDZYN0FaUFRab1hoYTZJTzRqOA?oc=5",
+          "published": "2026-10-19"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
+        "action": 7,
+        "fair": 8,
+        "impact": 9,
+        "avg": 7.8,
+        "note": "Make the hook hit the exact payroll frustration Kenyans feel without leaning on generic state headings."
+      },
+      "drafted_at": "2026-10-19T09:08:56.750095+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1019-photo.jpg",
+      "photo_credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
+      "reel": true,
+      "tg_msg": 372
     }
-   ],
-   "status": "awaiting",
-   "guard": {
-    "errors": [],
-    "warnings": [
-     "caption has no send/share/save call: sends and saves drive reach"
-    ]
-   },
-   "critic": {
-    "hook": 8,
-    "send": 7,
-    "clarity": 8,
-    "fresh": 8,
-    "voice": 8,
-    "craft": 8,
-    "picture": 7,
-    "hold": 8,
-    "demand": 8,
-    "action": 7,
-    "fair": 8,
-    "impact": 9,
-    "avg": 7.8,
-    "note": "Make the hook hit the exact payroll frustration Kenyans feel without leaning on generic state headings."
-   },
-   "drafted_at": "2026-10-19T09:08:56.750095+03:00",
-   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1019-photo.jpg",
-   "photo_credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
-   "photo_kind": "symbolic",
-   "photo_outlet": "",
-   "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
-   "reel": true,
-   "tg_msg": 372
-  }
- ],
- "scripts": {
-  "radio": "Hamjambo wasikilizaji, and welcome back to Kenya on Record. Today, we need to talk plainly about public money and where it actually goes.\n\nThis week, the government announced an audit of all public sector workers across ministries, departments, and counties. Why now? Because an astounding 6.2 billion shillings has slipped through the cracks—paid out directly to ghost workers. That is over six billion shillings disbursed to non-existent employees, people who never set foot in an office, or names kept deliberately on the payroll by syndicates manipulating public systems.\n\nLet us put that figure into perspective. Six point two billion shillings is not just a budget line item. That is enough money to stock hundreds of dispensaries with essential medication, hire thousands of desperately needed junior secondary teachers, or build permanent classrooms. Instead, it vanishes into private accounts every single month while citizens are squeezed harder through taxes.\n\nAn audit is a start, but an audit alone is not accountability. We have had headcounts before, biometric registration drives, and special task forces. What matters is what happens after the names are scrubbed. The officials who signed off on those vouchers, the HR officers who maintained those lists, and the bank accounts that received that public cash must face the law. Recovery of the money must follow.\n\nKwa ufupi: Serikali imeanza ukaguzi wa wafanyikazi wote wa umma baada ya shilingi bilioni sita nukta mbili kupotea kupitia wafanyikazi hewa. Pesa hizi za umma zinafaa kurejeshwa, na wahusika wote wachukuliwe hatua kali za kisheria mara moja.",
-  "voice_note": "Habari zenu, hope your week is moving well. Just dropping a quick update here from Kenya on Record because this ghost worker story needs our full attention.\n\nThe state is finally conducting a comprehensive audit of all public service staff. Why? Over 6.2 billion shillings has been stolen through ghost worker payroll fraud. Think about that number for a minute. That is 6.2 billion shillings of our tax money going to imaginary people, while civil servants who actually show up struggle with delayed allowances, and public clinics run out of basic supplies.\n\nEvery time we are told the government has no money for critical services, remember this: the resources exist, but the leakages are massive. We will be tracking this audit closely to ensure it doesn't just end with another report gathering dust. Demand names, demand prosecutions. Tuanze hapo.",
-  "sms": "Usiibiwe: Sh6.2B lost to ghost workers is money stolen from hospitals and schools. If someone on your local payroll never shows up to work, report it to EACC.",
-  "reels": "Six point two billion shillings. That is what ghost workers have cost Kenyan taxpayers.\n\nNow, the government is launching a nationwide audit of every public employee. But we have to ask the hard question: who was approving these payrolls month after month?\n\nGhost workers don't create themselves—corrupt officials do. An audit without arrests and full asset recovery is just public relations.\n\nFollow Kenya on Record. We follow the paper trail."
- },
- "spend_usd": 0.0,
- "revision": 9
+  ],
+  "scripts": {
+    "radio": "Hamjambo listeners, this is Kenya on Record. Today, we revisit the Hustler Fund promise that was supposed to lift small enterprises into sustainable growth.\n\nWhen the fund launched, the headline pledge was straightforward: once personal micro-loans established borrowing histories, government would unveil the SME and chama facility. Small traders, mama mbogas, and artisans were promised enterprise credit of up to 2.5 million shillings at single-digit interest rates.\n\nFour years in, where is that working capital? Our tracking shows the enterprise window remains effectively stalled. Millions of Kenyans continue to borrow and repay petty amounts—often between five hundred and two thousand shillings—yet the financing needed for serious restocking, commercial machinery, and premises expansion never arrived.\n\nMeanwhile, informal traders remain at the mercy of predatory digital lenders and tough commercial bank terms. A national credit scheme that merely funds daily subsistence without building asset-owning enterprises cannot transform the economy. We must ask plainly: was this enterprise facility a genuine industrial policy, or simply political rhetoric to pacify small traders?\n\nKwa ufupi: Serikali iliahidi mikopo ya biashara ya hadi shilingi milioni mbili nukta tano kupitia Hustler Fund ili kukuza biashara ndogondogo. Hadi leo, mpango huo umekwama na wananchi wamebaki tu na mikopo midogo ya kibinafsi isiyoweza kukuza uchumi. Viongozi wanafaa kueleza fedha hizi zilikwama wapi.",
+    "voice_note": "Habari zenu. Quick check-in from Kenya on Record on the Hustler Fund enterprise loans. Remember the big promise that chamas, small retailers, and jua kali groups would access up to 2.5 million shillings at low interest to expand their operations? Four years later, that enterprise window is virtually stalled. Most traders are still stuck recycling two thousand shillings on their phones, which cannot restock a kiosk, let alone buy equipment. Meanwhile, private credit is more expensive than ever. If billions were allocated to establish this fund, why hasn’t the SME facility reached the grassroots? We cannot keep celebrating emergency survival loans when real business capital was promised. Ask your area leaders where the enterprise fund went. Share this with your chama.",
+    "sms": "Usiibiwe: Ignore messages asking for upfront 'registration fees' to unlock Hustler Fund Sh2.5M enterprise loans. The SME rollout is stalled; fees are scams.",
+    "reels": "Whatever happened to the 2.5-million-shilling Hustler Fund enterprise loans? Four years on, that small-business facility remains stalled. Millions of mama mbogas and small traders are still limited to tiny personal loans of two thousand shillings while waiting for real capital that never arrived. If public funds were set aside to expand your hustle, why is the SME window still shut? It’s Kenya on Record—let’s hold them to their word."
+  },
+  "spend_usd": 0.0,
+  "revision": 9
 }
