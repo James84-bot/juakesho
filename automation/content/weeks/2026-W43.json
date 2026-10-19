@@ -210,7 +210,7 @@
         "published": "2026-10-15",
         "wrong_hint": "last month's price, Sh217.86 per litre"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -238,7 +238,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Energy_in_Kenya-_Petrocity_Petroln_Station_in_Gigiri.jpg",
       "reel": true,
-      "tg_msg": 377
+      "tg_msg": 377,
+      "decided_at": "2026-10-19T23:18:46.367706+03:00"
     },
     {
       "id": "2026-w43-d5-straight-r10",
@@ -332,7 +333,7 @@
       "video_source": "https://pixabay.com/videos/id-282086/",
       "reel": true,
       "tg_msg": 378,
-      "decided_at": "2026-10-19T23:17:17.624512+03:00"
+      "decided_at": "2026-10-19T23:18:45.591589+03:00"
     },
     {
       "id": "2026-w43-d7-glasspoll-r10",
