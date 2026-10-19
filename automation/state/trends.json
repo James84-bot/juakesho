@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-18T23:38:36.752331+00:00",
+  "fetched": "2026-10-18T23:47:41.222182+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -37,11 +37,6 @@
           "title": "Musalia Mudavadi's group to pay Absa $23m for two insurers",
           "url": "https://www.billionaires.africa/2026/10/18/wealthy-kenyan-politician-musalia-mudavadis-firm-to-pay-absa-23-million-for-two-insurers/",
           "source": "Billionaires.Africa"
-        },
-        {
-          "title": "Absa Group Executive continues Pan-African engagements with clients and colleagues",
-          "url": "https://techreviewafrica.com/news/7779/absa-group-executive-continues-pan-african-engagements-with-clients-and-colleagues",
-          "source": "Tech Review Africa"
         }
       ]
     },
@@ -64,28 +59,6 @@
           "title": "SportMediaset XXL: Pazzini: \"La Juve è in ritardo\" Video",
           "url": "https://mediasetinfinity.mediaset.it/video/sportmediasetxxl/pazzini-la-juve-e-in-ritardo_F314666401007C08",
           "source": "Mediaset Infinity"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "la liga",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Licensable picture: Real Madrid v Sevilla FC - La Liga",
-          "url": "https://www.reutersconnect.com/item/real-madrid-v-sevilla-fc-la-liga/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwMVRHVzdW",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "Licensable picture: Real Madrid v Sevilla FC - La Liga",
-          "url": "https://www.reutersconnect.com/item/real-madrid-v-sevilla-fc-la-liga/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwM04yOERO",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "Licensable picture: Runners take part in Tokyo Half Marathon in Japan",
-          "url": "https://www.reutersconnect.com/item/runners-take-part-in-tokyo-half-marathon-in-japan/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwM04yMzdO",
-          "source": "Reuters Connect"
         }
       ]
     },
@@ -167,6 +140,10 @@
     },
     {
       "title": "fluminense vs santos",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "twente vs utrecht",
       "why": "unsafe: 'Betting'"
     }
   ],
