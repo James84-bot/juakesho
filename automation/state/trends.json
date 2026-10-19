@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-19T00:05:53.851836+00:00",
+  "fetched": "2026-10-19T06:06:18.046117+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -12,9 +12,9 @@
           "source": "MARCA"
         },
         {
-          "title": "Jose Mourinho encuentra el equilibrio",
-          "url": "https://holanews.com/jose-mourinho-encuentra-el-equilibrio/",
-          "source": "HolaNews"
+          "title": "Arda Güler fue la gran estrella del equipo blanco",
+          "url": "https://fdpradio.com/arda-guler-fue-la-gran-estrella-del-equipo-blanco/",
+          "source": "FDP Radio"
         },
         {
           "title": "Liga | Kylian Mbappé y Arda Güler marcan el ritmo en el Real Madrid",
@@ -22,46 +22,6 @@
           "source": "Fichajes.com"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "musalia mudavadi business acquisition sh3bn",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Mudavadi group pays Absa Sh3bn for insurance firms",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/mudavadi-group-pays-absa-sh3bn-for-insurance-firms-5636986",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Musalia Mudavadi's group to pay Absa $23m for two insurers",
-          "url": "https://www.billionaires.africa/2026/10/18/wealthy-kenyan-politician-musalia-mudavadis-firm-to-pay-absa-23-million-for-two-insurers/",
-          "source": "Billionaires.Africa"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "real madrid fc",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Licensable picture: Real Madrid v Sevilla FC - La Liga",
-          "url": "https://www.reutersconnect.com/item/real-madrid-v-sevilla-fc-la-liga/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwMVRHVzdW",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "Licensable picture: Real Madrid v Sevilla FC - La Liga",
-          "url": "https://www.reutersconnect.com/item/real-madrid-v-sevilla-fc-la-liga/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwM04yOERO",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "Licensable picture: Aftermath of clashes during nationwide protests in Paris",
-          "url": "https://www.reutersconnect.com/item/aftermath-of-clashes-during-nationwide-protests-in-paris/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwM04yOENV",
-          "source": "Reuters Connect"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -74,14 +34,58 @@
           "source": "La Gazzetta dello Sport"
         },
         {
-          "title": "Juventus-Lazio: dove vederla in tv (Sky, Dazn), probabili formazioni, orario e classifica Serie A",
-          "url": "https://www.ilmessaggero.it/sport/schede/juventus_lazio_dove_vederla_tv_sky_dazn_probabili_formazioni_orario_serie_a-dove_vederla_in_tv-4-9831365.html",
-          "source": "Il Messaggero"
+          "title": "Il commento di Luciano: 7a giornata di serie A",
+          "url": "https://www.milanopost.info/2026/10/19/il-commento-di-luciano-7a-giornata-di-serie-a-8/",
+          "source": "Milano Post"
         },
         {
-          "title": "Lazio: Gattuso 'non guardiamo la classifica, siamo una bella famiglia'",
-          "url": "https://www.mattinopadova.it/italia/lazio-gattuso-non-guardiamo-la-classifica-siamo-una-bella-famiglia-gmrurwou",
-          "source": "Il Mattino di Padova"
+          "title": "Juventus, se non è crisi è un bluff",
+          "url": "https://www.ilgiornale.it/news/calcio/juventus-se-non-e-crisi-e-un-bluff/",
+          "source": "il Giornale"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "laliga",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Real demand Tebas resign over Goebbels comparison",
+          "url": "https://www.bbc.com/sport/football/articles/cr5yngpgejw0o",
+          "source": "BBC"
+        },
+        {
+          "title": "New escalation from Real Madrid TV: \"Negreira is not here, but Tebas is\"",
+          "url": "https://www.goal.com/en/news/new-escalation-from-real-madrid-tv-negreira-is-not-here-but-tebas-is/blt9e1693d46df08c29",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Real Madrid have built a legacy over 124 years that Javier Tebas neither has the capacity to understand nor, after his disgraceful remarks, should have the authority to govern or question",
+          "url": "https://www.managingmadrid.com/real-madrid-cf-la-liga/114213/real-madrid-have-built-a-legacy-over-124-years-that-javier-tebas-neither-has-the-capacity-to-understand-nor-after-his-disgraceful-remarks-should-have-the-authority-to-govern-or-question",
+          "source": "Managing Madrid"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "la liga",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Football gossip: Ramos, Wirtz, Scott, Banjaqui, Ebnoutalib",
+          "url": "https://www.bbc.com/sport/football/articles/ckjrw11dv5xjo",
+          "source": "BBC"
+        },
+        {
+          "title": "Sergio Ramos could be heading back to Madrid! Getafe chief confirms contact with defender’s brother over potential transfer",
+          "url": "https://www.goal.com/en-ke/lists/sergio-ramos-madrid-getafe-chief-contact-defender-brother-potential-transfer/blt79df81a2911a8e70",
+          "source": "Goal.com"
+        },
+        {
+          "title": "😱Back to LaLiga? The Spanish club opening its doors to Sergio Ramos",
+          "url": "https://sports.yahoo.com/articles/back-laliga-spanish-club-opening-181200399.html",
+          "source": "Yahoo Sports"
         }
       ]
     },
@@ -93,7 +97,7 @@
         {
           "title": "Un gol de Curro Sánchez da el triunfo al Burgos CF",
           "url": "https://www.laliga.com/videos/un-gol-de-curro-sanchez-da-el-triunfo-al-burgos-cf",
-          "source": "LALIGA official website"
+          "source": "LALIGA"
         },
         {
           "title": "Sergio Francisco: “El resultado es corto para los méritos que hicimos”",
@@ -101,50 +105,68 @@
           "source": "Diario AS"
         },
         {
-          "title": "Un Sabadell gris suma su segunda derrota de la temporada",
-          "url": "https://www.mundodeportivo.com/futbol/liga-segunda-division/20261018/1004240367/sabadell-gris-suma-segunda-derrota-temporada.html",
-          "source": "Mundo Deportivo"
+          "title": "La repetición de un polémico penalti corta las alas al Sabadell",
+          "url": "https://es.ara.cat/deportes/futbol/repeticion-polemico-penalti-corta-alas-sabadell_1_5883125.html",
+          "source": "Diari ARA"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "payroll",
+      "title": "juventus fc",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Kolo Muani e Woltemade insieme? Sì, ma non sempre e non subito. Ecco perché",
+          "url": "https://www.gazzetta.it/Calcio/Serie-A/Juventus/18-10-2026/juventus-tentazione-kolo-muani-e-woltemade-insieme-ma-non-subito.shtml",
+          "source": "La Gazzetta dello Sport"
+        },
+        {
+          "title": "Ora si, anzi no: il dubbio di Spalletti risolto dall’uomo Juve che agisce nell’ombra",
+          "url": "https://www.tuttosport.com/news/calcio/serie-a/juventus/2026/10/18-151971936/ora_si_anzi_no_il_dubbio_di_spalletti_risolto_dalluomo_juve_che_agisce_nellombra",
+          "source": "Tuttosport"
+        },
+        {
+          "title": "Chiesa 🔙 in A, Retroscena Cisse e l'ora di Pio e Woltemade: le news del mattino ☀️",
+          "url": "https://onefootball.com/it/notizie/chiesa-in-a-retroscena-cisse-e-lora-di-pio-e-woltemade-le-news-del-mattino-43625050",
+          "source": "OneFootball"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "daily nation",
       "traffic": "100+",
       "news": [
         {
-          "title": "84 HR officers linked to Sh6.2 billion payroll fraud sent on forced leave",
-          "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001560370/84-hr-officers-linked-to-sh62-billion-payroll-fraud-sent-on-forced-leave",
+          "title": "US TV presenter just one of many foreign broadcasters Kenyans have ‘greeted’",
+          "url": "https://nation.africa/kenya/life-and-style/lifestyle/us-tv-presenter-just-one-of-many-foreign-broadcasters-kenyans-have-greeted--5635694",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Lynn Ngugi speaks out on US Visa restrictions after row involving American TV host",
+          "url": "https://www.pulse.co.ke/story/lynn-ngugi-reopens-us-visa-vetting-debate-after-criticising-rob-finnerty-2026101411104146225",
+          "source": "Pulse Kenya"
+        },
+        {
+          "title": "US anchor eats humble pie after Nairobi-New York on-air gaffe",
+          "url": "https://www.standardmedia.co.ke/national/article/2001560110/us-anchor-eats-humble-pie-after-nairobi-new-york-on-air-gaffe",
           "source": "The Standard"
-        },
-        {
-          "title": "Section of Govt Workers Targeted in Fresh Salary Probe",
-          "url": "https://www.kenyans.co.ke/news/127907-govt-probes-health-police-and-prisons-payroll-systems",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "CS Ruku orders 84 HR officers to step aside over suspected Ksh.6.2B payroll fraud",
-          "url": "https://citizen.digital/article/cs-ruku-orders-84-hr-officers-to-step-aside-over-suspected-ksh62b-payroll-fraud-n392183",
-          "source": "Citizen Digital"
         }
       ]
     }
   ],
   "dropped": [
     {
+      "title": "real madrid fc",
+      "why": "unsafe: 'Bet'"
+    },
+    {
       "title": "paok",
       "why": "unsafe: 'Betting'"
     },
     {
       "title": "málaga cf vs real sociedad standings",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "fluminense vs santos",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "twente vs utrecht",
       "why": "unsafe: 'Betting'"
     }
   ],
