@@ -300,7 +300,7 @@
         "outlet": "CNBC",
         "photo_query": "Lake Turkana Wind Power turbines Loiyangalani Marsabit Kenya"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -331,7 +331,8 @@
       "video_credit": "Footage: Matthias_Groeneveld / Pixabay",
       "video_source": "https://pixabay.com/videos/id-282086/",
       "reel": true,
-      "tg_msg": 378
+      "tg_msg": 378,
+      "decided_at": "2026-10-19T23:17:17.624512+03:00"
     },
     {
       "id": "2026-w43-d7-glasspoll-r10",
@@ -364,7 +365,7 @@
       "bg": "usiku",
       "publish_at": "2026-10-25T18:00:00+03:00",
       "size": "story",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -392,7 +393,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_National_Assembly_seating.jpg",
       "reel": true,
-      "tg_msg": 379
+      "tg_msg": 379,
+      "decided_at": "2026-10-19T23:17:16.558312+03:00"
     },
     {
       "id": "2026-w43-hot-1019",
@@ -628,7 +630,7 @@
       "video_source": "https://pixabay.com/videos/id-50109/",
       "reel": true,
       "tg_msg": 386,
-      "decided_at": "2026-10-19T23:15:50.432074+03:00"
+      "decided_at": "2026-10-19T23:17:14.610486+03:00"
     }
   ],
   "scripts": {
