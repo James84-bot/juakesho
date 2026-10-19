@@ -1,16 +1,20 @@
 {
- "fetched": "2026-10-19T11:16:56.632326+00:00",
+ "fetched": "2026-10-19T12:56:42.300255+00:00",
  "x": [
+  {
+   "name": "gender equality",
+   "tweets": ""
+  },
   {
    "name": "#MtKenyaSpeaks",
    "tweets": ""
   },
   {
-   "name": "#WaiguruViews",
+   "name": "#waiguruviews",
    "tweets": ""
   },
   {
-   "name": "Gender Equality",
+   "name": "#SayNoToAvianInfluenza",
    "tweets": ""
   },
   {
@@ -18,11 +22,11 @@
    "tweets": ""
   },
   {
-   "name": "Ruto Delivers AHP",
+   "name": "#ShakaholaGovernor",
    "tweets": ""
   },
   {
-   "name": "Over2157 Home Owners",
+   "name": "Ruto Delivers AHP",
    "tweets": ""
   },
   {
@@ -30,15 +34,11 @@
    "tweets": ""
   },
   {
-   "name": "KSh 61",
+   "name": "Wamasanduku",
    "tweets": ""
   },
   {
-   "name": "Deputy President",
-   "tweets": ""
-  },
-  {
-   "name": "The KSh 5.3",
+   "name": "Kitale Level 5 Hospital",
    "tweets": ""
   },
   {
@@ -46,27 +46,11 @@
    "tweets": ""
   },
   {
-   "name": "KSh 264",
-   "tweets": ""
-  },
-  {
    "name": "Usawa Kwa Ground",
    "tweets": ""
   },
   {
-   "name": "KSh 3.8",
-   "tweets": ""
-  },
-  {
-   "name": "#JASPERCONCERT",
-   "tweets": ""
-  },
-  {
-   "name": "Kirinyaga",
-   "tweets": ""
-  },
-  {
-   "name": "#RepentOrPerishCall",
+   "name": "Over2157 Home Owners",
    "tweets": ""
   },
   {
@@ -82,15 +66,7 @@
    "tweets": ""
   },
   {
-   "name": "Shakahola",
-   "tweets": ""
-  },
-  {
    "name": "people's movement",
-   "tweets": ""
-  },
-  {
-   "name": "kakamega rising",
    "tweets": ""
   },
   {
@@ -98,15 +74,11 @@
    "tweets": ""
   },
   {
-   "name": "The Mwea",
-   "tweets": ""
-  },
-  {
    "name": "Japan",
    "tweets": ""
   },
   {
-   "name": "Brighton",
+   "name": "Mwea",
    "tweets": ""
   },
   {
@@ -114,553 +86,581 @@
    "tweets": ""
   },
   {
-   "name": "nairobi and nyeri",
+   "name": "Kalonzo Musyoka",
    "tweets": ""
   },
   {
-   "name": "Reuben Ndolo",
+   "name": "Regional",
+   "tweets": ""
+  },
+  {
+   "name": "Luo Nyanza",
+   "tweets": ""
+  },
+  {
+   "name": "KSh 264",
+   "tweets": ""
+  },
+  {
+   "name": "Farmers",
+   "tweets": ""
+  },
+  {
+   "name": "Deputy President",
+   "tweets": ""
+  },
+  {
+   "name": "Kirinyaga",
+   "tweets": ""
+  },
+  {
+   "name": "Brighton",
+   "tweets": ""
+  },
+  {
+   "name": "Albert Ojwang",
    "tweets": ""
   }
  ],
  "videos": [
   {
-   "title": "Maandalizi ya sherehe za Mashujaa yakamilika katika uga wa Kipchoge Keino Eldoret",
-   "channel": "Citizen TV",
-   "views": 1041,
-   "published": "2026-10-19T10:15:51+00:00",
-   "per_hour": 1022,
-   "url": "https://www.youtube.com/watch?v=uPnu4RML5ik",
-   "short": "https://youtube.com/shorts/uPnu4RML5ik"
-  },
-  {
    "title": "Muungano wa upinzani watoa taarifa kuhusu masuala ya kitaifa Nairobi",
    "channel": "Citizen TV",
-   "views": 956,
+   "views": 2926,
    "published": "2026-10-19T10:49:05+00:00",
-   "per_hour": 956,
+   "per_hour": 1376,
    "url": "https://www.youtube.com/watch?v=Zg-dWoCQ1-o",
    "short": "https://youtube.com/shorts/Zg-dWoCQ1-o"
   },
   {
    "title": "Kalonzo explains why Uhuru Kenyatta skipped Raila's memorial service in Bondo",
    "channel": "NTV Kenya",
-   "views": 930,
+   "views": 3081,
    "published": "2026-10-19T10:35:54+00:00",
-   "per_hour": 930,
+   "per_hour": 1313,
    "url": "https://www.youtube.com/watch?v=d1bWqAWkbWA",
    "short": "https://youtube.com/shorts/d1bWqAWkbWA"
   },
   {
-   "title": "Shakahola Massacre: Court Delivers Judgment in Paul Mackenzie Case",
+   "title": "Maandalizi ya sherehe za Mashujaa yakamilika katika uga wa Kipchoge Keino Eldoret",
+   "channel": "Citizen TV",
+   "views": 3299,
+   "published": "2026-10-19T10:15:51+00:00",
+   "per_hour": 1231,
+   "url": "https://www.youtube.com/watch?v=uPnu4RML5ik",
+   "short": "https://youtube.com/shorts/uPnu4RML5ik"
+  },
+  {
+   "title": "Kalonzo Musyoka’s Address to the Nation: Key Issues Facing Kenya",
    "channel": "KTN News",
-   "views": 722,
-   "published": "2026-10-19T10:22:33+00:00",
-   "per_hour": 722,
-   "url": "https://www.youtube.com/watch?v=N99NWJqYptM",
-   "short": "https://youtube.com/shorts/N99NWJqYptM"
+   "views": 1267,
+   "published": "2026-10-19T11:35:40+00:00",
+   "per_hour": 938,
+   "url": "https://www.youtube.com/watch?v=uVihu00qImI",
+   "short": "https://youtube.com/shorts/uVihu00qImI"
+  },
+  {
+   "title": "Data point: Fuel prices variation",
+   "channel": "Citizen TV",
+   "views": 2358,
+   "published": "2026-10-19T10:21:48+00:00",
+   "per_hour": 913,
+   "url": "https://www.youtube.com/watch?v=wqUVj2L7CUM",
+   "short": "https://youtube.com/shorts/wqUVj2L7CUM"
   },
   {
    "title": "Kalonzo calls for arrest of goons accused of causing chaos during Raila’s memorial service in Bondo",
    "channel": "NTV Kenya",
-   "views": 535,
+   "views": 1271,
    "published": "2026-10-19T10:31:46+00:00",
-   "per_hour": 535,
+   "per_hour": 526,
    "url": "https://www.youtube.com/watch?v=XudWDwwWnjg",
    "short": "https://youtube.com/shorts/XudWDwwWnjg"
   },
   {
+   "title": "Kalonzo Musyoka: Harassment of Governor Natembeya Is a National Matter",
+   "channel": "KTN News",
+   "views": 709,
+   "published": "2026-10-19T11:12:18+00:00",
+   "per_hour": 407,
+   "url": "https://www.youtube.com/watch?v=MT8kbnY5sB8",
+   "short": "https://youtube.com/shorts/MT8kbnY5sB8"
+  },
+  {
    "title": "Jaji Diana Kavedza asema kanisa la mhubiri tata Paul Mackenzie lilikuwa la kupotosha, yaani ‘cult’",
    "channel": "NTV Kenya",
-   "views": 365,
+   "views": 1026,
    "published": "2026-10-19T10:21:10+00:00",
-   "per_hour": 365,
+   "per_hour": 396,
    "url": "https://www.youtube.com/watch?v=3yGN860UCdg",
    "short": "https://youtube.com/shorts/3yGN860UCdg"
   },
   {
    "title": "High Court finds Mackenzie guilty of radicalising his followers, leading to the deaths of 429 people",
    "channel": "NTV Kenya",
-   "views": 939,
+   "views": 1710,
    "published": "2026-10-19T08:33:10+00:00",
-   "per_hour": 344,
+   "per_hour": 389,
    "url": "https://www.youtube.com/watch?v=MpcprDFfEGc",
    "short": "https://youtube.com/shorts/MpcprDFfEGc"
   },
   {
-   "title": "President Ruto Signs Law Releasing KSh71.09 Billion in Additional Funds to Counties",
-   "channel": "KTN News",
-   "views": 270,
-   "published": "2026-10-19T10:18:45+00:00",
-   "per_hour": 270,
-   "url": "https://www.youtube.com/watch?v=qZAiBIcWksQ",
-   "short": "https://youtube.com/shorts/qZAiBIcWksQ"
-  },
-  {
-   "title": "Matayarisho ya maadhimisho ya sherehe za Mashujaa yamekamilika katika uwanja wa Kipchoge Keino",
-   "channel": "NTV Kenya",
-   "views": 269,
-   "published": "2026-10-19T10:14:26+00:00",
-   "per_hour": 258,
-   "url": "https://www.youtube.com/watch?v=X4cphPXQE3c",
-   "short": "https://youtube.com/shorts/X4cphPXQE3c"
-  },
-  {
-   "title": "YANAYOJIRI KTN || 19TH OKTOBA 2026",
-   "channel": "KTN News",
-   "views": 377,
-   "published": "2026-10-19T09:41:04+00:00",
-   "per_hour": 236,
-   "url": "https://www.youtube.com/watch?v=grUCXM35by4",
-   "short": "https://youtube.com/shorts/grUCXM35by4"
-  },
-  {
-   "title": "63rd Mashujaa Day: Three Counties Unite to Host National Celebrations",
-   "channel": "KTN News",
-   "views": 228,
-   "published": "2026-10-19T10:31:17+00:00",
-   "per_hour": 228,
-   "url": "https://www.youtube.com/watch?v=a-TmAz2T6Lw",
-   "short": "https://youtube.com/shorts/a-TmAz2T6Lw"
-  },
-  {
-   "title": "| UKUMBI | Uwekezaji wa wageni nchini [Part 3]",
-   "channel": "Citizen TV",
-   "views": 302,
-   "published": "2026-10-19T09:37:07+00:00",
-   "per_hour": 182,
-   "url": "https://www.youtube.com/watch?v=IxZ5DEokFLA",
-   "short": "https://youtube.com/shorts/IxZ5DEokFLA"
-  },
-  {
-   "title": "Wamiliki wa baa na mikahawa Kajiado Kaskazini wapinga ada za leseni",
-   "channel": "Citizen TV",
-   "views": 581,
-   "published": "2026-10-19T08:01:47+00:00",
-   "per_hour": 179,
-   "url": "https://www.youtube.com/watch?v=p-HNskeY4vU",
-   "short": "https://youtube.com/shorts/p-HNskeY4vU"
-  },
-  {
    "title": "Kalonzo Musyoka: Stones Were Thrown at Our VIP Tent at Migwena Grounds, but We Didn't Run",
    "channel": "KTN News",
-   "views": 144,
+   "views": 700,
    "published": "2026-10-19T10:52:43+00:00",
-   "per_hour": 144,
+   "per_hour": 339,
    "url": "https://www.youtube.com/watch?v=-idfTSOnJb8",
    "short": "https://youtube.com/shorts/-idfTSOnJb8"
   },
   {
-   "title": "| UKUMBI | Uwekezaji wa wageni nchini [Part 1]",
+   "title": "| UKUMBI | Uwekezaji wa wageni nchini [Part 3]",
    "channel": "Citizen TV",
-   "views": 374,
-   "published": "2026-10-19T08:38:43+00:00",
-   "per_hour": 142,
-   "url": "https://www.youtube.com/watch?v=E9jv6GnpA70",
-   "short": "https://youtube.com/shorts/E9jv6GnpA70"
+   "views": 894,
+   "published": "2026-10-19T09:37:07+00:00",
+   "per_hour": 269,
+   "url": "https://www.youtube.com/watch?v=IxZ5DEokFLA",
+   "short": "https://youtube.com/shorts/IxZ5DEokFLA"
+  },
+  {
+   "title": "Kalonzo Musyoka: Ruto’s Regime Is Eating Its Own Children for Demanding Accountability",
+   "channel": "KTN News",
+   "views": 388,
+   "published": "2026-10-19T11:04:42+00:00",
+   "per_hour": 208,
+   "url": "https://www.youtube.com/watch?v=vZLT4UfaeyA",
+   "short": "https://youtube.com/shorts/vZLT4UfaeyA"
+  },
+  {
+   "title": "Kalonzo Musyoka: If Given the Flagship, I Will Defeat Ruto in Luo Nyanza",
+   "channel": "KTN News",
+   "views": 372,
+   "published": "2026-10-19T11:07:40+00:00",
+   "per_hour": 205,
+   "url": "https://www.youtube.com/watch?v=Ixf3V3HESCU",
+   "short": "https://youtube.com/shorts/Ixf3V3HESCU"
+  },
+  {
+   "title": "Matayarisho ya maadhimisho ya sherehe za Mashujaa yamekamilika katika uwanja wa Kipchoge Keino",
+   "channel": "NTV Kenya",
+   "views": 515,
+   "published": "2026-10-19T10:14:26+00:00",
+   "per_hour": 190,
+   "url": "https://www.youtube.com/watch?v=X4cphPXQE3c",
+   "short": "https://youtube.com/shorts/X4cphPXQE3c"
+  },
+  {
+   "title": "Wamiliki wa baa na mikahawa Kajiado Kaskazini wapinga ada za leseni",
+   "channel": "Citizen TV",
+   "views": 900,
+   "published": "2026-10-19T08:01:47+00:00",
+   "per_hour": 183,
+   "url": "https://www.youtube.com/watch?v=p-HNskeY4vU",
+   "short": "https://youtube.com/shorts/p-HNskeY4vU"
   }
  ],
  "errors": {},
  "catalog": [
   {
+   "title": "Bandari FC Target First Home Win Against 3K FC in Mombasa",
+   "channel": "KTN News",
+   "views": 43,
+   "published": "2026-10-19T11:51:15+00:00",
+   "per_hour": 39,
+   "url": "https://www.youtube.com/watch?v=ELMvvFr_x2M",
+   "short": "https://youtube.com/shorts/ELMvvFr_x2M"
+  },
+  {
+   "title": "Junior Starlets Face China in U17 Women’s World Cup Opener in Morocco",
+   "channel": "KTN News",
+   "views": 69,
+   "published": "2026-10-19T11:48:25+00:00",
+   "per_hour": 61,
+   "url": "https://www.youtube.com/watch?v=da2fc0Jw_1w",
+   "short": "https://youtube.com/shorts/da2fc0Jw_1w"
+  },
+  {
+   "title": "Kisumu Stakeholders Call for Cold Rooms to Reduce Food Waste",
+   "channel": "KTN News",
+   "views": 16,
+   "published": "2026-10-19T11:46:18+00:00",
+   "per_hour": 14,
+   "url": "https://www.youtube.com/watch?v=g2bMTsekERc",
+   "short": "https://youtube.com/shorts/g2bMTsekERc"
+  },
+  {
+   "title": "World Food Day: KALRO Showcases Innovations to Boost Food Production and Nutrition",
+   "channel": "KTN News",
+   "views": 16,
+   "published": "2026-10-19T11:44:07+00:00",
+   "per_hour": 13,
+   "url": "https://www.youtube.com/watch?v=0wrap_0La8w",
+   "short": "https://youtube.com/shorts/0wrap_0La8w"
+  },
+  {
+   "title": "Electric Motorbikes Could Cut Milk Transport Costs by 80%, Boost Farmers’ Earnings",
+   "channel": "KTN News",
+   "views": 27,
+   "published": "2026-10-19T11:41:05+00:00",
+   "per_hour": 21,
+   "url": "https://www.youtube.com/watch?v=FsQtOB1ltuQ",
+   "short": "https://youtube.com/shorts/FsQtOB1ltuQ"
+  },
+  {
+   "title": "Smallholder Farmers Urge Government to Invest in Agroecology and Cooperatives",
+   "channel": "KTN News",
+   "views": 4,
+   "published": "2026-10-19T11:39:26+00:00",
+   "per_hour": 3,
+   "url": "https://www.youtube.com/watch?v=Es34r-popCw",
+   "short": "https://youtube.com/shorts/Es34r-popCw"
+  },
+  {
+   "title": "Traders Demand Lower Taxes and Faster Customs Clearance to Cut Business Costs",
+   "channel": "KTN News",
+   "views": 20,
+   "published": "2026-10-19T11:37:50+00:00",
+   "per_hour": 15,
+   "url": "https://www.youtube.com/watch?v=Z3xo0MA-sMw",
+   "short": "https://youtube.com/shorts/Z3xo0MA-sMw"
+  },
+  {
+   "title": "Kalonzo Musyoka’s Address to the Nation: Key Issues Facing Kenya",
+   "channel": "KTN News",
+   "views": 1267,
+   "published": "2026-10-19T11:35:40+00:00",
+   "per_hour": 938,
+   "url": "https://www.youtube.com/watch?v=uVihu00qImI",
+   "short": "https://youtube.com/shorts/uVihu00qImI"
+  },
+  {
+   "title": "From walk-ins to social media sales. Meet the Gen Z boss redefining the bookstore hustle",
+   "channel": "NTV Kenya",
+   "views": 108,
+   "published": "2026-10-19T11:34:42+00:00",
+   "per_hour": 79,
+   "url": "https://www.youtube.com/watch?v=DDr2Ah9mGuM",
+   "short": "https://youtube.com/shorts/DDr2Ah9mGuM"
+  },
+  {
    "title": "Kalonzo Musyoka: Harassment of Governor Natembeya Is a National Matter",
    "channel": "KTN News",
-   "views": 1,
+   "views": 709,
    "published": "2026-10-19T11:12:18+00:00",
-   "per_hour": 1,
+   "per_hour": 407,
    "url": "https://www.youtube.com/watch?v=MT8kbnY5sB8",
    "short": "https://youtube.com/shorts/MT8kbnY5sB8"
   },
   {
    "title": "Kalonzo Musyoka: If Given the Flagship, I Will Defeat Ruto in Luo Nyanza",
    "channel": "KTN News",
-   "views": 66,
+   "views": 372,
    "published": "2026-10-19T11:07:40+00:00",
-   "per_hour": 66,
+   "per_hour": 205,
    "url": "https://www.youtube.com/watch?v=Ixf3V3HESCU",
    "short": "https://youtube.com/shorts/Ixf3V3HESCU"
   },
   {
    "title": "Kalonzo Musyoka: Ruto’s Regime Is Eating Its Own Children for Demanding Accountability",
    "channel": "KTN News",
-   "views": 19,
+   "views": 388,
    "published": "2026-10-19T11:04:42+00:00",
-   "per_hour": 19,
+   "per_hour": 208,
    "url": "https://www.youtube.com/watch?v=vZLT4UfaeyA",
    "short": "https://youtube.com/shorts/vZLT4UfaeyA"
   },
   {
    "title": "Wadau wa elimu Kabondo Kasipul waweka mikakati ya usalama wa wanafunzi wakati wa mvua",
    "channel": "Citizen TV",
-   "views": 24,
+   "views": 173,
    "published": "2026-10-19T11:00:57+00:00",
-   "per_hour": 24,
+   "per_hour": 90,
    "url": "https://www.youtube.com/watch?v=oy5QwAvwIt4",
    "short": "https://youtube.com/shorts/oy5QwAvwIt4"
   },
   {
    "title": "Wajane Kericho wahimizwa kujiunga na makundi ya kijamii kutetea haki zao",
    "channel": "Citizen TV",
-   "views": 20,
+   "views": 142,
    "published": "2026-10-19T10:59:04+00:00",
-   "per_hour": 20,
+   "per_hour": 72,
    "url": "https://www.youtube.com/watch?v=gPeYUe-WhXQ",
    "short": "https://youtube.com/shorts/gPeYUe-WhXQ"
   },
   {
    "title": "Kalonzo Musyoka Warns Youth Against Being Used as Political Goons",
    "channel": "KTN News",
-   "views": 49,
+   "views": 197,
    "published": "2026-10-19T10:58:23+00:00",
-   "per_hour": 49,
+   "per_hour": 100,
    "url": "https://www.youtube.com/watch?v=LcWdGU3ZW5E",
    "short": "https://youtube.com/shorts/LcWdGU3ZW5E"
   },
   {
    "title": "Serikali yakabidhi nyumba 2,157 za bei nafuu Kapsaret",
    "channel": "Citizen TV",
-   "views": 31,
+   "views": 170,
    "published": "2026-10-19T10:56:15+00:00",
-   "per_hour": 31,
+   "per_hour": 85,
    "url": "https://www.youtube.com/watch?v=V3UNlrjFNRI",
    "short": "https://youtube.com/shorts/V3UNlrjFNRI"
   },
   {
    "title": "Uhaba wa maziwa ya ng’ombe wachochea ufugaji wa mbuzi wa maziwa Kajiado",
    "channel": "Citizen TV",
-   "views": 45,
+   "views": 321,
    "published": "2026-10-19T10:54:28+00:00",
-   "per_hour": 45,
+   "per_hour": 158,
    "url": "https://www.youtube.com/watch?v=Ffx-QPHTewU",
    "short": "https://youtube.com/shorts/Ffx-QPHTewU"
   },
   {
    "title": "Kalonzo Musyoka: Stones Were Thrown at Our VIP Tent at Migwena Grounds, but We Didn't Run",
    "channel": "KTN News",
-   "views": 144,
+   "views": 700,
    "published": "2026-10-19T10:52:43+00:00",
-   "per_hour": 144,
+   "per_hour": 339,
    "url": "https://www.youtube.com/watch?v=-idfTSOnJb8",
    "short": "https://youtube.com/shorts/-idfTSOnJb8"
   },
   {
    "title": "Muungano wa upinzani watoa taarifa kuhusu masuala ya kitaifa Nairobi",
    "channel": "Citizen TV",
-   "views": 956,
+   "views": 2926,
    "published": "2026-10-19T10:49:05+00:00",
-   "per_hour": 956,
+   "per_hour": 1376,
    "url": "https://www.youtube.com/watch?v=Zg-dWoCQ1-o",
    "short": "https://youtube.com/shorts/Zg-dWoCQ1-o"
   },
   {
    "title": "Kombe la Dunia: Junior Starlets kuivaa Uchina",
    "channel": "NTV Kenya",
-   "views": 11,
+   "views": 66,
    "published": "2026-10-19T10:46:26+00:00",
-   "per_hour": 11,
+   "per_hour": 30,
    "url": "https://www.youtube.com/watch?v=GMfrQsAPLJE",
    "short": "https://youtube.com/shorts/GMfrQsAPLJE"
   },
   {
    "title": "Kalonzo Musyoka: Pharaoh Will Drown in the Red Sea on 10th August 2027",
    "channel": "KTN News",
-   "views": 43,
+   "views": 142,
    "published": "2026-10-19T10:46:11+00:00",
-   "per_hour": 43,
+   "per_hour": 65,
    "url": "https://www.youtube.com/watch?v=Ii0jhuR4q6Y",
    "short": "https://youtube.com/shorts/Ii0jhuR4q6Y"
   },
   {
    "title": "Shirika la misitu nchini laungana na kanisa kupanda miti",
    "channel": "NTV Kenya",
-   "views": 6,
+   "views": 65,
    "published": "2026-10-19T10:44:26+00:00",
-   "per_hour": 6,
+   "per_hour": 29,
    "url": "https://www.youtube.com/watch?v=IbAPJTjTgFw",
    "short": "https://youtube.com/shorts/IbAPJTjTgFw"
   },
   {
    "title": "Kalonzo Musyoka: I Want My Late Brother Raila to Know the Journey to Canaan Is Still On",
    "channel": "KTN News",
-   "views": 37,
+   "views": 171,
    "published": "2026-10-19T10:42:32+00:00",
-   "per_hour": 37,
+   "per_hour": 76,
    "url": "https://www.youtube.com/watch?v=dN6BJtEH1t4",
    "short": "https://youtube.com/shorts/dN6BJtEH1t4"
   },
   {
    "title": "Zaidi ya watoto 300 walio na ulemavu wafanyiwa tathmini na kuelekezwa kupata huduma maalumu",
    "channel": "NTV Kenya",
-   "views": 6,
+   "views": 59,
    "published": "2026-10-19T10:41:46+00:00",
-   "per_hour": 6,
+   "per_hour": 26,
    "url": "https://www.youtube.com/watch?v=siV7xFMn2wY",
    "short": "https://youtube.com/shorts/siV7xFMn2wY"
   },
   {
    "title": "Wanaharakati wataka Wakenya kuandamana kushinikiza serikali kupunguza bei ya mafuta",
    "channel": "NTV Kenya",
-   "views": 42,
+   "views": 177,
    "published": "2026-10-19T10:40:24+00:00",
-   "per_hour": 42,
+   "per_hour": 78,
    "url": "https://www.youtube.com/watch?v=OAVaxw5ZNBs",
    "short": "https://youtube.com/shorts/OAVaxw5ZNBs"
   },
   {
    "title": "Wakenya wahimizwa kuongeza tahadhari na kuchukua hatua za kujikinga dhidi ya ugonjwa wa Ebola",
    "channel": "NTV Kenya",
-   "views": 16,
+   "views": 107,
    "published": "2026-10-19T10:36:43+00:00",
-   "per_hour": 16,
+   "per_hour": 46,
    "url": "https://www.youtube.com/watch?v=kq_xBLsEoJ4",
    "short": "https://youtube.com/shorts/kq_xBLsEoJ4"
   },
   {
    "title": "Kalonzo explains why Uhuru Kenyatta skipped Raila's memorial service in Bondo",
    "channel": "NTV Kenya",
-   "views": 930,
+   "views": 3081,
    "published": "2026-10-19T10:35:54+00:00",
-   "per_hour": 930,
+   "per_hour": 1313,
    "url": "https://www.youtube.com/watch?v=d1bWqAWkbWA",
    "short": "https://youtube.com/shorts/d1bWqAWkbWA"
   },
   {
    "title": "Kalonzo Musyoka: I will deliver Kenyans to Raila’s Canaan. Pharaoh (Ruto) will drown in August 2027",
    "channel": "NTV Kenya",
-   "views": 98,
+   "views": 300,
    "published": "2026-10-19T10:33:00+00:00",
-   "per_hour": 98,
+   "per_hour": 125,
    "url": "https://www.youtube.com/watch?v=Yt9yJfmWUtk",
    "short": "https://youtube.com/shorts/Yt9yJfmWUtk"
   },
   {
    "title": "Kalonzo calls for arrest of goons accused of causing chaos during Raila’s memorial service in Bondo",
    "channel": "NTV Kenya",
-   "views": 535,
+   "views": 1271,
    "published": "2026-10-19T10:31:46+00:00",
-   "per_hour": 535,
+   "per_hour": 526,
    "url": "https://www.youtube.com/watch?v=XudWDwwWnjg",
    "short": "https://youtube.com/shorts/XudWDwwWnjg"
   },
   {
-   "title": "63rd Mashujaa Day: Three Counties Unite to Host National Celebrations",
-   "channel": "KTN News",
-   "views": 228,
-   "published": "2026-10-19T10:31:17+00:00",
-   "per_hour": 228,
-   "url": "https://www.youtube.com/watch?v=a-TmAz2T6Lw",
-   "short": "https://youtube.com/shorts/a-TmAz2T6Lw"
-  },
-  {
-   "title": "Ali Mbogo Declares Mombasa Governor Bid Ahead of 2027 Elections",
-   "channel": "KTN News",
-   "views": 77,
-   "published": "2026-10-19T10:26:52+00:00",
-   "per_hour": 77,
-   "url": "https://www.youtube.com/watch?v=qBsRwuLFU-E",
-   "short": "https://youtube.com/shorts/qBsRwuLFU-E"
-  },
-  {
-   "title": "Shakahola Massacre: Court Delivers Judgment in Paul Mackenzie Case",
-   "channel": "KTN News",
-   "views": 722,
-   "published": "2026-10-19T10:22:33+00:00",
-   "per_hour": 722,
-   "url": "https://www.youtube.com/watch?v=N99NWJqYptM",
-   "short": "https://youtube.com/shorts/N99NWJqYptM"
-  },
-  {
    "title": "Data point: Fuel prices variation",
    "channel": "Citizen TV",
-   "views": 116,
+   "views": 2358,
    "published": "2026-10-19T10:21:48+00:00",
-   "per_hour": 116,
+   "per_hour": 913,
    "url": "https://www.youtube.com/watch?v=wqUVj2L7CUM",
    "short": "https://youtube.com/shorts/wqUVj2L7CUM"
   },
   {
    "title": "Jaji Diana Kavedza asema kanisa la mhubiri tata Paul Mackenzie lilikuwa la kupotosha, yaani ‘cult’",
    "channel": "NTV Kenya",
-   "views": 365,
+   "views": 1026,
    "published": "2026-10-19T10:21:10+00:00",
-   "per_hour": 365,
+   "per_hour": 396,
    "url": "https://www.youtube.com/watch?v=3yGN860UCdg",
    "short": "https://youtube.com/shorts/3yGN860UCdg"
   },
   {
-   "title": "President Ruto Signs Law Releasing KSh71.09 Billion in Additional Funds to Counties",
-   "channel": "KTN News",
-   "views": 270,
-   "published": "2026-10-19T10:18:45+00:00",
-   "per_hour": 270,
-   "url": "https://www.youtube.com/watch?v=qZAiBIcWksQ",
-   "short": "https://youtube.com/shorts/qZAiBIcWksQ"
-  },
-  {
    "title": "Sherehe za Mashujaa: Biashara zanoga Eldoret",
    "channel": "NTV Kenya",
-   "views": 18,
+   "views": 110,
    "published": "2026-10-19T10:18:44+00:00",
-   "per_hour": 18,
+   "per_hour": 42,
    "url": "https://www.youtube.com/watch?v=WFhn2Z6Dz_Y",
    "short": "https://youtube.com/shorts/WFhn2Z6Dz_Y"
   },
   {
    "title": "Maandalizi ya sherehe za Mashujaa yakamilika katika uga wa Kipchoge Keino Eldoret",
    "channel": "Citizen TV",
-   "views": 1041,
+   "views": 3299,
    "published": "2026-10-19T10:15:51+00:00",
-   "per_hour": 1022,
+   "per_hour": 1231,
    "url": "https://www.youtube.com/watch?v=uPnu4RML5ik",
    "short": "https://youtube.com/shorts/uPnu4RML5ik"
   },
   {
    "title": "Matayarisho ya maadhimisho ya sherehe za Mashujaa yamekamilika katika uwanja wa Kipchoge Keino",
    "channel": "NTV Kenya",
-   "views": 269,
+   "views": 515,
    "published": "2026-10-19T10:14:26+00:00",
-   "per_hour": 258,
+   "per_hour": 190,
    "url": "https://www.youtube.com/watch?v=X4cphPXQE3c",
    "short": "https://youtube.com/shorts/X4cphPXQE3c"
   },
   {
    "title": "Serikali ya kaunti ya Isiolo yaimarisha juhudi za kuzuia kuenea kwa Ebola",
    "channel": "Citizen TV",
-   "views": 100,
+   "views": 472,
    "published": "2026-10-19T10:11:23+00:00",
-   "per_hour": 92,
+   "per_hour": 171,
    "url": "https://www.youtube.com/watch?v=V2KZZvjN41w",
    "short": "https://youtube.com/shorts/V2KZZvjN41w"
   },
   {
    "title": "Mahakama ya Mombasa kutoa hukumu katika kesi ya mauaji ya Shakahola [Part 3]",
    "channel": "Citizen TV",
-   "views": 155,
+   "views": 490,
    "published": "2026-10-19T10:08:03+00:00",
-   "per_hour": 135,
+   "per_hour": 174,
    "url": "https://www.youtube.com/watch?v=hM4XGi9PS40",
    "short": "https://youtube.com/shorts/hM4XGi9PS40"
   },
   {
-   "title": "Mzozo Waibuka Kanisa la ABC Makadara, Waumini Wamlilia Askofu Ndambuki",
-   "channel": "KTN News",
-   "views": 156,
-   "published": "2026-10-19T10:05:08+00:00",
-   "per_hour": 130,
-   "url": "https://www.youtube.com/watch?v=8stGDsUak64",
-   "short": "https://youtube.com/shorts/8stGDsUak64"
-  },
-  {
-   "title": "| YANAYOJIRI | USALAMA WA WANAFUNZI [Part 2]",
-   "channel": "KTN News",
-   "views": 32,
-   "published": "2026-10-19T10:00:07+00:00",
-   "per_hour": 25,
-   "url": "https://www.youtube.com/watch?v=C_6aG5pqsng",
-   "short": "https://youtube.com/shorts/C_6aG5pqsng"
-  },
-  {
    "title": "| UKUMBI | Uwekezaji wa wageni nchini [Part 4]",
    "channel": "Citizen TV",
-   "views": 76,
+   "views": 340,
    "published": "2026-10-19T09:59:17+00:00",
-   "per_hour": 59,
+   "per_hour": 115,
    "url": "https://www.youtube.com/watch?v=VaVK4TMjKAI",
    "short": "https://youtube.com/shorts/VaVK4TMjKAI"
   },
   {
-   "title": "| YANAYOJIRI | USALAMA WA WANAFUNZI [Part 1]",
-   "channel": "KTN News",
-   "views": 22,
-   "published": "2026-10-19T09:52:08+00:00",
-   "per_hour": 16,
-   "url": "https://www.youtube.com/watch?v=pcRPX_EmJaQ",
-   "short": "https://youtube.com/shorts/pcRPX_EmJaQ"
-  },
-  {
-   "title": "YANAYOJIRI KTN || 19TH OKTOBA 2026",
-   "channel": "KTN News",
-   "views": 377,
-   "published": "2026-10-19T09:41:04+00:00",
-   "per_hour": 236,
-   "url": "https://www.youtube.com/watch?v=grUCXM35by4",
-   "short": "https://youtube.com/shorts/grUCXM35by4"
-  },
-  {
    "title": "| UKUMBI | Uwekezaji wa wageni nchini [Part 3]",
    "channel": "Citizen TV",
-   "views": 302,
+   "views": 894,
    "published": "2026-10-19T09:37:07+00:00",
-   "per_hour": 182,
+   "per_hour": 269,
    "url": "https://www.youtube.com/watch?v=IxZ5DEokFLA",
    "short": "https://youtube.com/shorts/IxZ5DEokFLA"
   },
   {
    "title": "Lang'ata's Next MP? | Dr Davji Atellah talks Ebola, Healthcare & More",
    "channel": "NTV Kenya",
-   "views": 101,
+   "views": 404,
    "published": "2026-10-19T09:13:47+00:00",
-   "per_hour": 49,
+   "per_hour": 109,
    "url": "https://www.youtube.com/watch?v=7J5bLIIcGXY",
    "short": "https://youtube.com/shorts/7J5bLIIcGXY"
   },
   {
    "title": "Ebola: How To Stop The Spread | Moses Masika",
    "channel": "NTV Kenya",
-   "views": 162,
+   "views": 453,
    "published": "2026-10-19T09:13:38+00:00",
-   "per_hour": 79,
+   "per_hour": 122,
    "url": "https://www.youtube.com/watch?v=SO0lXohlr0Q",
    "short": "https://youtube.com/shorts/SO0lXohlr0Q"
   },
   {
    "title": "| UKUMBI | Uwekezaji wa wageni nchini [Part 2]",
    "channel": "Citizen TV",
-   "views": 81,
+   "views": 464,
    "published": "2026-10-19T09:01:59+00:00",
-   "per_hour": 36,
+   "per_hour": 119,
    "url": "https://www.youtube.com/watch?v=D4Eq3eXXuKk",
    "short": "https://youtube.com/shorts/D4Eq3eXXuKk"
   },
   {
    "title": "| UKUMBI | Uwekezaji wa wageni nchini [Part 1]",
    "channel": "Citizen TV",
-   "views": 374,
+   "views": 640,
    "published": "2026-10-19T08:38:43+00:00",
-   "per_hour": 142,
+   "per_hour": 149,
    "url": "https://www.youtube.com/watch?v=E9jv6GnpA70",
    "short": "https://youtube.com/shorts/E9jv6GnpA70"
   },
   {
    "title": "High Court finds Mackenzie guilty of radicalising his followers, leading to the deaths of 429 people",
    "channel": "NTV Kenya",
-   "views": 939,
+   "views": 1710,
    "published": "2026-10-19T08:33:10+00:00",
-   "per_hour": 344,
+   "per_hour": 389,
    "url": "https://www.youtube.com/watch?v=MpcprDFfEGc",
    "short": "https://youtube.com/shorts/MpcprDFfEGc"
   },
   {
-   "title": "MP Mwengi Mutuse challenges opposition to present clear development agenda ahead of the 2027 polls",
-   "channel": "NTV Kenya",
-   "views": 32,
-   "published": "2026-10-19T08:26:51+00:00",
-   "per_hour": 11,
-   "url": "https://www.youtube.com/watch?v=PPrxwKZDOU0",
-   "short": "https://youtube.com/shorts/PPrxwKZDOU0"
-  },
-  {
    "title": "Wamiliki wa baa na mikahawa Kajiado Kaskazini wapinga ada za leseni",
    "channel": "Citizen TV",
-   "views": 581,
+   "views": 900,
    "published": "2026-10-19T08:01:47+00:00",
-   "per_hour": 179,
+   "per_hour": 183,
    "url": "https://www.youtube.com/watch?v=p-HNskeY4vU",
    "short": "https://youtube.com/shorts/p-HNskeY4vU"
   },
   {
    "title": "Wakazi wa Kiwayu kaunti ya Lamu kutafuta suluhu ya mzozo wa ardhi wa miaka 40",
    "channel": "Citizen TV",
-   "views": 210,
+   "views": 317,
    "published": "2026-10-19T08:01:17+00:00",
    "per_hour": 64,
    "url": "https://www.youtube.com/watch?v=_z1B_Fk6U10",
