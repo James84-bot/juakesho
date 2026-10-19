@@ -449,13 +449,82 @@
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_National_Assembly_seating.jpg",
       "reel": true,
       "tg_msg": 364
+    },
+    {
+      "id": "2026-w43-hot-1019",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "The government begins a fresh headcount as a *Sh6.2bn* payroll fraud inquiry widens.",
+      "fact": "A nationwide public servant headcount is underway following a Sh6.2 billion payroll fraud inquiry.",
+      "source": "Daily Nation, 2026-10-19",
+      "photo_query": "National Treasury Nairobi",
+      "message": "The government is auditing all public workers after Sh6.2 billion was lost to ghost worker payroll fraud.",
+      "action": "Demand your county public service board publishes full staff audit findings online.",
+      "beats": [
+        "A fresh headcount begins over *Sh6.2bn* in payroll fraud.",
+        "Investigators are tracking ghost workers across public offices.",
+        "Money stolen through fake workers drains our public services.",
+        "Kenyans demand: the Public Service Commission *publishes* the audit.",
+        "Follow the audit report on your county website."
+      ],
+      "caption": "A nationwide headcount of civil servants is underway after Sh6.2 billion was flagged in payroll fraud.\n\nWhat it means for you: tax shillings meant for public hospitals and schools pay people who do not exist.\n\nHas your county ever audited its payroll? Tell us below.\n\n#SautiYaMwananchi #KenyaOnRecord",
+      "who": "Public Service Commission",
+      "where": "National",
+      "when": "19 Oct 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Tax shillings meant for public clinics and schools pay non-existent staff.",
+      "bg": "usiku",
+      "publish_at": "2026-10-19T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Fresh public servants headcount begins as Sh6.2bn payroll fraud probe widens",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQUmZLQWtIN1IxaFhoRmpuei1zRXk2UEFYeFY3MjJqV3J1TFJoSkp2YkwxckxKQkh2MXVKRVNTTVBkQ0g3NFQ5TER2a3RoLV93ZGNTRXlUWDlIRmhwdnNKT0JZV1ZwWXh0QnJUU1EyWW9OaVFwTlB0cHdiNS1ueE5IeWEyajJ3TzFaSFRGd1l6cFAxUkVrdDZYN0FaUFRab1hoYTZJTzRqOA?oc=5",
+          "published": "2026-10-19"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
+        "action": 7,
+        "fair": 8,
+        "impact": 9,
+        "avg": 7.8,
+        "note": "Make the hook hit the exact payroll frustration Kenyans feel without leaning on generic state headings."
+      },
+      "drafted_at": "2026-10-19T09:08:56.750095+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1019-photo.jpg",
+      "photo_credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
+      "reel": true,
+      "tg_msg": 372
     }
   ],
   "scripts": {
-    "radio": "Habari za jioni. This is Kenya on Record.\n\nLet us begin at the pump. In Nairobi today, diesel is retailing at 227 shillings and 76 cents a litre. For the transporter hauling cabbages from Nyandarua, the matatu operator balancing daily targets, and the family budgeting for unga, that figure is suffocating. High diesel does not remain at the petrol station; it enters every kitchen, pushing food and retail prices beyond the reach of ordinary Kenyans.\n\nThen we look at our trading spaces. Across several counties, newly constructed markets sit underutilised while leaders engage in bitter turf wars over whose name should be engraved on the opening plaque. It is an insult to common sense. A brass plaque does not preserve perishable goods. A ribbon-cutting ceremony will not clean a blocked sewer. Traders who pay daily cess need reliable running water, working drainage, hygienic sanitation, and secure stalls to earn an honest living.\n\nPublic infrastructure is funded by your taxes, not the personal philanthropy of politicians. When leaders spend more energy fighting over ceremonial credit than fixing running water, they abandon their primary duty.\n\nKwa ufupi: Bei ya dizeli Nairobi ikiwa Sh227.76 kwa lita, gharama ya usafirishaji na vyakula inazidi kuumiza wananchi. Wakati huo huo, wafanyabiashara masokoni wanahitaji maji safi na vyoo bora, si mizozo ya viongozi kuhusu mabango ya uzinduzi. Kodi yetu lazima ilete huduma halisi, si sarakasi za kisiasa.",
-    "voice_note": "Jambo. Here is your Kenya on Record weekly brief.\n\nFirst, diesel in Nairobi sits at 227 shillings and 76 cents. That single number explains why your grocery bill isn't coming down. Every time transport costs rise, the burden lands squarely on the consumer.\n\nSecond, look at what is happening in our public markets. Politicians are clashing in public, fighting over who gets credit and whose name appears on the launch plaque. Meanwhile, mama mboga is sitting near an open trench without clean running water to wash her produce or accessible toilets for traders.\n\nWe must get our priorities straight. A market is not built to polish a politician's ego; it is built with taxpayers' money to provide a safe, dignified working environment. Stop settling for ceremonial launches. Demand clean stalls and working taps from your county leadership. Share this note with your local community group.",
-    "sms": "Usiibiwe: You pay market cess daily. Demand running water and clean toilets from your county, not political launch ceremonies. Accountability begins locally.",
-    "reels": "Politicians are still fighting over who gets their name on the market plaque. But ask any mama mboga inside: does a brass plaque unblock a drainage trench? Does a politician’s signature bring running water to the stalls? You pay daily market levies. You deserve sanitation, clean water, and basic dignity—not another ribbon-cutting circus funded by your own taxes."
+    "radio": "Hamjambo wasikilizaji, and welcome back to Kenya on Record. Today, we need to talk plainly about public money and where it actually goes.\n\nThis week, the government announced an audit of all public sector workers across ministries, departments, and counties. Why now? Because an astounding 6.2 billion shillings has slipped through the cracks—paid out directly to ghost workers. That is over six billion shillings disbursed to non-existent employees, people who never set foot in an office, or names kept deliberately on the payroll by syndicates manipulating public systems.\n\nLet us put that figure into perspective. Six point two billion shillings is not just a budget line item. That is enough money to stock hundreds of dispensaries with essential medication, hire thousands of desperately needed junior secondary teachers, or build permanent classrooms. Instead, it vanishes into private accounts every single month while citizens are squeezed harder through taxes.\n\nAn audit is a start, but an audit alone is not accountability. We have had headcounts before, biometric registration drives, and special task forces. What matters is what happens after the names are scrubbed. The officials who signed off on those vouchers, the HR officers who maintained those lists, and the bank accounts that received that public cash must face the law. Recovery of the money must follow.\n\nKwa ufupi: Serikali imeanza ukaguzi wa wafanyikazi wote wa umma baada ya shilingi bilioni sita nukta mbili kupotea kupitia wafanyikazi hewa. Pesa hizi za umma zinafaa kurejeshwa, na wahusika wote wachukuliwe hatua kali za kisheria mara moja.",
+    "voice_note": "Habari zenu, hope your week is moving well. Just dropping a quick update here from Kenya on Record because this ghost worker story needs our full attention.\n\nThe state is finally conducting a comprehensive audit of all public service staff. Why? Over 6.2 billion shillings has been stolen through ghost worker payroll fraud. Think about that number for a minute. That is 6.2 billion shillings of our tax money going to imaginary people, while civil servants who actually show up struggle with delayed allowances, and public clinics run out of basic supplies.\n\nEvery time we are told the government has no money for critical services, remember this: the resources exist, but the leakages are massive. We will be tracking this audit closely to ensure it doesn't just end with another report gathering dust. Demand names, demand prosecutions. Tuanze hapo.",
+    "sms": "Usiibiwe: Sh6.2B lost to ghost workers is money stolen from hospitals and schools. If someone on your local payroll never shows up to work, report it to EACC.",
+    "reels": "Six point two billion shillings. That is what ghost workers have cost Kenyan taxpayers.\n\nNow, the government is launching a nationwide audit of every public employee. But we have to ask the hard question: who was approving these payrolls month after month?\n\nGhost workers don't create themselves—corrupt officials do. An audit without arrests and full asset recovery is just public relations.\n\nFollow Kenya on Record. We follow the paper trail."
   },
   "spend_usd": 0.0,
   "revision": 9
