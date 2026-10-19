@@ -1,64 +1,42 @@
 {
-  "fetched": "2026-10-19T11:16:49.819277+00:00",
+  "fetched": "2026-10-19T12:56:36.136181+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "real madrid vs sevilla fc standings",
-      "traffic": "5000+",
-      "news": [
-        {
-          "title": "Real Madrid 4-1 Sevilla - Kylian Mbappe scores twice as Real win",
-          "url": "https://www.bbc.com/sport/football/live/cw0k0xyeee56t",
-          "source": "BBC"
-        },
-        {
-          "title": "Mourinho after Sevilla's four-goal haul: We don't enjoy the peace of mind other coaches have!",
-          "url": "https://www.goal.com/en/news/mourinho-after-sevilla-s-four-goal-haul-we-don-t-enjoy-the-peace-of-mind-other-coaches-have/blta5f13ea86fbedd33",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Real Madrid Player Ratings vs. Sevilla: Sensational Diomande Erases Vinicius Jr",
-          "url": "https://www.si.com/soccer/real-madrid-player-ratings-vs-sevilla-10-18-26",
-          "source": "Sports Illustrated"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "zimbabwe",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Zimbabwe turn the tables on Bangladesh in ODIs",
-          "url": "https://www.thedailystar.net/sports/cricket/news/zimbabwe-turn-the-tables-bangladesh-odis-4301556",
-          "source": "The Daily Star"
+          "title": "Afghanistan bat; Zimbabwe bring in Burl and Masuku",
+          "url": "https://www.cricinfo.com/story/afghanistan-bat-zimbabwe-bring-in-burl-and-masuku-1559048",
+          "source": "Cricinfo"
         },
         {
-          "title": "Taskin Ahmed unhappy with batters owing to a grim collapse",
-          "url": "https://www.guerillacricket.com/80685,taskin-ahmed-unhappy-with-batters-owing-to-a-grim-collapse",
-          "source": "Guerilla Cricket"
+          "title": "Live Cricket Score, Schedule, Latest News, Stats & Videos",
+          "url": "https://www.cricbuzz.com/player-match-performance/match/172677/player/8541/bowling?inningsId=1",
+          "source": "Cricbuzz"
         },
         {
-          "title": "Raza hails 'unity and culture of the team' after Zimbabwe's hard-fought win",
-          "url": "https://africa.espn.com/cricket/story/_/id/50208358/zimbabwe-captain-sikandar-raza-raza-hails-unity-culture-team",
-          "source": "ESPN"
+          "title": "Cricket: Zimbabwe have two games to book a place in the tri-series final · SNA",
+          "url": "https://sportnewsafrica.com/en/news/two-matches-to-put-zimbabwe-on-course-for-the-tri-series-final/",
+          "source": "Sport News Africa"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "mashujaa day",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
+        {
+          "title": "Security, traffic measures in place ahead of Mashujaa Day fete in Eldoret",
+          "url": "https://citizen.digital/article/security-traffic-measures-in-place-ahead-of-mashujaa-day-fete-in-eldoret-n392322",
+          "source": "Citizen Digital"
+        },
         {
           "title": "Kip Keino Stadium: Eldoret’s long wait for a venue worthy of its champions",
           "url": "https://nation.africa/kenya/sports/kip-keino-stadium-eldoret-long-wait-venue-worthy-of-champions-5635036",
           "source": "Daily Nation"
-        },
-        {
-          "title": "Murkomen: Security beefed up ahead of Mashujaa Day celebrations",
-          "url": "https://www.the-star.co.ke/news/2026-10-19-murkomen-security-beefed-up-ahead-of-mashujaa-day-celebrations",
-          "source": "The Star, Kenya"
         },
         {
           "title": "Kipchoge Keino Stadium races against time for Mashujaa Day",
@@ -69,52 +47,8 @@
     },
     {
       "geo": "KE",
-      "title": "economic community of west african states",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Nearly 21 months after leaving ECOWAS, breakaway Sahel states agree to negotiate new deal with West African bloc",
-          "url": "https://africa.businessinsider.com/local/markets/nearly-21-months-after-leaving-ecowas-breakaway-sahel-states-agree-to-negotiate-new/mwhmlnz",
-          "source": "Business Insider Africa"
-        },
-        {
-          "title": "Nigeria Reaffirms Commitment to Regional Unity",
-          "url": "https://von.gov.ng/nigeria-reaffirms-commitment-to-regional-unity/",
-          "source": "Voice of Nigeria"
-        },
-        {
-          "title": "Kungiyar AES ta Nijar Mali da Burkina Faso na tattaunawa da ECOWAS",
-          "url": "https://www.dw.com/ha/kungiyar-aes-ta-nijar-mali-da-burkina-faso-na-tattaunawa-da-ecowas/a-79691054",
-          "source": "DW.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "la liga",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Football gossip: Ramos, Wirtz, Scott, Banjaqui, Ebnoutalib",
-          "url": "https://www.bbc.com/sport/football/articles/ckjrw11dv5xjo",
-          "source": "BBC"
-        },
-        {
-          "title": "Sergio Ramos could be heading back to Madrid! Getafe chief confirms contact with defender’s brother over potential transfer",
-          "url": "https://www.goal.com/en-ke/lists/sergio-ramos-madrid-getafe-chief-contact-defender-brother-potential-transfer/blt79df81a2911a8e70",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Spain and Real Madrid legend Sergio Ramos offered shock LaLiga return",
-          "url": "https://www.tribalfootball.com/article/soccer-laliga-spain-and-real-madrid-legend-sergio-ramos-offered-shock-laliga-return-fdd4293a-5ce9-4ff4-ba3e-7ed670180f7e",
-          "source": "TribalFootball"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "francis atwoli",
-      "traffic": "100+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Atwoli hits back at MPs over claims NSSF staff demand bribes",
@@ -135,6 +69,50 @@
     },
     {
       "geo": "KE",
+      "title": "chelsea football club",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Injury update: Emiliano Martinez | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/injury-update-emiliano-martinez",
+          "source": "Chelsea Football Club"
+        },
+        {
+          "title": "Everton 0-2 Chelsea: Pedro Neto scores twice after Morgan Rogers escapes red card in Premier League win",
+          "url": "https://www.skysports.com/football/news/13598748/everton-0-2-chelsea-pedro-neto-scores-twice-after-morgan-rogers-escapes-red-card-in-premier-league-win",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Neto double gives Chelsea win marred by Martinez injury",
+          "url": "https://supersport.com/football/news/e22dc765-289b-4298-b866-6edf611ea235/neto-double-gives-chelsea-win-marred-by-martinez-injury",
+          "source": "SuperSport"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "economic community of west african states",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "ECOWAS opens talks with 3 Russia-backed Sahel nations as Nigeria moves to repair Africa’s biggest political split",
+          "url": "https://africa.businessinsider.com/local/markets/nigeria-moves-to-repair-africas-biggest-political-split-as-western-aligned-ecowas/l647t42",
+          "source": "Business Insider Africa"
+        },
+        {
+          "title": "Nigeria Reaffirms Commitment to Regional Unity",
+          "url": "https://von.gov.ng/nigeria-reaffirms-commitment-to-regional-unity/",
+          "source": "Voice of Nigeria"
+        },
+        {
+          "title": "Kungiyar AES ta Nijar Mali da Burkina Faso na tattaunawa da ECOWAS",
+          "url": "https://www.dw.com/ha/kungiyar-aes-ta-nijar-mali-da-burkina-faso-na-tattaunawa-da-ecowas/a-79691054",
+          "source": "DW.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "bank",
       "traffic": "100+",
       "news": [
@@ -144,9 +122,9 @@
           "source": "CNN"
         },
         {
-          "title": "Israeli police arrest 10 over settler attacks on journalist and diplomats in West Bank",
-          "url": "https://www.bbc.com/news/articles/cqn7323p0dxyo",
-          "source": "BBC"
+          "title": "Israeli Police Detain 10 Over Violent Settler Attacks in West Bank",
+          "url": "https://www.nytimes.com/2026/10/19/world/middleeast/israel-west-bank-settlers-palestinians.html",
+          "source": "The New York Times"
         },
         {
           "title": "Photographer attacked by settlers in the West Bank feels insulted by Netanyahu",
@@ -158,48 +136,39 @@
     },
     {
       "geo": "KE",
-      "title": "the star",
+      "title": "new tesla roadster",
       "traffic": "100+",
       "news": [
         {
-          "title": "Kenya overtakes Ethiopia as East Africa’s largest economy after five years of trailing",
-          "url": "https://www.businessdailyafrica.com/bd/economy/kenya-overtakes-ethiopia-as-east-africa-s-largest-economy-5633674",
-          "source": "Business Daily"
+          "title": "What Tesla’s Flying Roadster Really Means for the Global Auto Race",
+          "url": "https://www.wsj.com/business/autos/what-teslas-flying-roadster-really-means-for-the-global-auto-race-0ede8702",
+          "source": "WSJ"
         },
         {
-          "title": "South Africa remains Africa’s largest economy at $489.1 billion in latest rankings, but sluggish growth and high unemployment cloud its dominance",
-          "url": "https://africa.businessinsider.com/local/markets/south-africa-remains-africas-largest-economy-at-dollar4891-billion-in-latest-rankings/21j88hy",
-          "source": "Business Insider Africa"
+          "title": "Watch: Did Tesla really just unveil a flying car?",
+          "url": "https://www.bbc.com/news/videos/ckly4mj1g3n9o",
+          "source": "BBC"
         },
         {
-          "title": "Top African countries by GDP [$ billions]",
-          "url": "https://www.the-star.co.ke/news/infographics/2026-10-19-top-african-countries-by-gdp-billions",
-          "source": "The Star, Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "daily nation",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Drone strikes stall two fuel tankers bound for Kenya",
-          "url": "https://nation.africa/kenya/news/drone-strikes-stall-two-fuel-tankers-bound-for-kenya--5637112",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "More pain at the pump for motorists as drones hit two fuel tankers bound for Kenya",
-          "url": "https://eastleighvoice.co.ke/news/413688/more-pain-at-the-pump-for-motorists-as-drones-hit-two-fuel-tankers-bound-for-kenya",
-          "source": "The Eastleigh Voice"
+          "title": "Tesla's new Roadster turns in air with SpaceX thrusters, won't land until 2028",
+          "url": "https://www.reuters.com/business/autos-transportation/tesla-set-unveil-next-generation-roadster-sports-ev-after-years-delay-2026-10-15/",
+          "source": "Reuters"
         }
       ]
     }
   ],
   "dropped": [
     {
+      "title": "parma vs torino",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "priest",
-      "why": "unsafe: 'death'"
+      "why": "unsafe: 'dies'"
+    },
+    {
+      "title": "the star",
+      "why": "unsafe: 'murder'"
     }
   ],
   "errors": {}
