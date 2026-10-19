@@ -91,7 +91,8 @@
       "video_credit": "Footage: ROCKY / Wikimedia Commons, CC BY-SA 4.0",
       "video_source": "https://commons.wikimedia.org/wiki/File:Safari_at_Nairobi_National_Park,_Aug_2025.webm",
       "reel": true,
-      "tg_msg": 375
+      "tg_msg": 375,
+      "fresh_checked": "2026-10-19T23:00:22.630543+03:00"
     },
     {
       "id": "2026-w43-d3-promise-r11",
@@ -508,7 +509,7 @@
           "published": "2026-10-19"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": [
