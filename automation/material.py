@@ -32,8 +32,22 @@ PRICE = re.compile(r"\b(price|prices|priced|cost|costs|cheaper|costlier|unga|mai
                    r"kerosene|fares?|rent|fees?|tariffs?|sugar|bread|milk|cooking gas|lpg|electricity|tokens|"
                    r"bundles?|inflation|epra)\b", re.I)
 FIGURE = re.compile(r"\b(?:k?sh\.?|kes)\s?\d[\d,]*(?:\.\d+)?\b", re.I)
-MYTH = re.compile(r"\b(fake|false|hoax|fact.?check\w*|misleading|debunk\w*|not true|doctored|fabricated|"
-                  r"misinformation|disinformation|rumou?rs?)\b|pesacheck|africa check", re.I)
+# A myth needs a claim that is being checked. "Fake" or "false" alone also names crimes ("fake invoices",
+# "false pretences"), which are news, not rumours: those count only next to a word for something being passed around.
+_MYTH_STRONG = re.compile(r"\b(hoax|fact.?check\w*|misleading|debunk\w*|not true|doctored|fabricated|fake news|"
+                          r"misinformation|disinformation|rumou?rs?)\b|pesacheck|africa check", re.I)
+_MYTH_WEAK = re.compile(r"\b(fake|false)\b", re.I)
+_PASSED_AROUND = re.compile(r"\b(claims?|claimed|viral|circulating|social media|photos?|images?|videos?|clips?|"
+                            r"audio|messages?|posts?|whatsapp|tiktok|screenshots?|letters?)\b", re.I)
+
+
+class _Myth:
+    @staticmethod
+    def search(title: str):
+        return _MYTH_STRONG.search(title) or (_MYTH_WEAK.search(title) and _PASSED_AROUND.search(title))
+
+
+MYTH = _Myth()
 SCAM = re.compile(r"\b(scams?|scammers?|fraudsters|conm[ae]n|con artists?|phishing|swindl\w*)\b", re.I)
 # a price the reader can guess: an item's price stated as a fact ("unga at Sh160", "Sh217 per litre"),
 # not a proposed cut, a subsidy or a fraud total

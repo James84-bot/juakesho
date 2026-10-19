@@ -210,3 +210,13 @@ class Puffery(unittest.TestCase):
         import guard
         post = {"id": "x", "template": "kenya", "beats": ["Hell's Gate covers 68 square kilometres."], "caption": ""}
         self.assertFalse(any("puffery" in e for e in guard.check(post).errors))
+
+
+class MythNeedsAClaim(unittest.TestCase):
+    def test_fraud_headline_is_not_a_myth(self):
+        self.assertFalse(material._fits("myth", "KRA uncovers tax fraud involving Ksh33.8 billion in fake invoices"))
+
+    def test_checked_claims_are_myths(self):
+        for t in ("Africa Check: photo of Sifuna asleep is doctored", "Viral message about free NHIF is fake",
+                  "PesaCheck: no, the Finance Bill does not tax mobile money again", "Fake news about unga prices"):
+            self.assertTrue(material._fits("myth", t), t)
