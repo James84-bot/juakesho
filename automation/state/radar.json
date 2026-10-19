@@ -1,12 +1,36 @@
 {
- "fetched": "2026-10-19T06:06:23.806404+00:00",
+ "fetched": "2026-10-19T08:13:08.063706+00:00",
  "x": [
   {
-   "name": "#MikeAndKingangi",
+   "name": "#PioneerAffordableHousing",
    "tweets": ""
   },
   {
-   "name": "#SifunaGoons",
+   "name": "Ruto Delivers AHP",
+   "tweets": ""
+  },
+  {
+   "name": "Pioneer",
+   "tweets": ""
+  },
+  {
+   "name": "#WaiguruSpeaks",
+   "tweets": ""
+  },
+  {
+   "name": "Jua Kali",
+   "tweets": ""
+  },
+  {
+   "name": "#JASPERCONCERT",
+   "tweets": ""
+  },
+  {
+   "name": "Usawa Kwa Ground",
+   "tweets": ""
+  },
+  {
+   "name": "Albert Ojwang",
    "tweets": ""
   },
   {
@@ -18,15 +42,11 @@
    "tweets": ""
   },
   {
-   "name": "#PioneerAHPHandover",
+   "name": "#nairobieditionpmparty",
    "tweets": ""
   },
   {
-   "name": "#JASPERCONCERT",
-   "tweets": ""
-  },
-  {
-   "name": "Brighton",
+   "name": "Over2157 Home Owners",
    "tweets": ""
   },
   {
@@ -35,6 +55,10 @@
   },
   {
    "name": "forging onwards",
+   "tweets": ""
+  },
+  {
+   "name": "Japan",
    "tweets": ""
   },
   {
@@ -50,19 +74,15 @@
    "tweets": ""
   },
   {
+   "name": "Uasin Gishu",
+   "tweets": ""
+  },
+  {
    "name": "kakamega rising",
    "tweets": ""
   },
   {
-   "name": "Leeds",
-   "tweets": ""
-  },
-  {
-   "name": "Carrick",
-   "tweets": ""
-  },
-  {
-   "name": "Arsenal",
+   "name": "KSh 264",
    "tweets": ""
   },
   {
@@ -70,19 +90,23 @@
    "tweets": ""
   },
   {
-   "name": "Blessed Sunday",
+   "name": "Brighton",
    "tweets": ""
   },
   {
-   "name": "Japan",
+   "name": "Deputy President",
    "tweets": ""
   },
   {
-   "name": "rutos grand reception",
+   "name": "Mama Ida Must Explain",
    "tweets": ""
   },
   {
-   "name": "Happy New Week",
+   "name": "KSh 3.8",
+   "tweets": ""
+  },
+  {
+   "name": "KSh 5.3",
    "tweets": ""
   },
   {
@@ -90,43 +114,557 @@
    "tweets": ""
   },
   {
-   "name": "man on a mission",
+   "name": "Mackenzie",
    "tweets": ""
   },
   {
-   "name": "Madueke",
-   "tweets": ""
-  },
-  {
-   "name": "nairobi and nyeri",
-   "tweets": ""
-  },
-  {
-   "name": "Nottingham Forest",
-   "tweets": ""
-  },
-  {
-   "name": "kitale level 5 hospital",
-   "tweets": ""
-  },
-  {
-   "name": "Waiguru",
-   "tweets": ""
-  },
-  {
-   "name": "Manchester United",
-   "tweets": ""
-  },
-  {
-   "name": "Amen",
+   "name": "JKLive",
    "tweets": ""
   }
  ],
- "videos": [],
- "errors": {
-  "Citizen TV": "HTTP Error 404: Not Found",
-  "NTV Kenya": "HTTP Error 404: Not Found",
-  "KTN News": "HTTP Error 500: Internal Server Error"
- },
- "catalog": []
+ "videos": [
+  {
+   "title": "NTV KENYA LIVE | Shakahola Massacre Judgment",
+   "channel": "NTV Kenya",
+   "views": 1324,
+   "published": "2026-10-19T06:57:53+00:00",
+   "per_hour": 1056,
+   "url": "https://www.youtube.com/watch?v=TvqLcEx-Y9k",
+   "short": "https://youtube.com/shorts/TvqLcEx-Y9k"
+  },
+  {
+   "title": "DEAR MR. PRESIDENT: Stop the Political Rhetoric, Fuel and Milk Prices Are Hurting Kenyans",
+   "channel": "KTN News",
+   "views": 580,
+   "published": "2026-10-19T07:06:47+00:00",
+   "per_hour": 524,
+   "url": "https://www.youtube.com/watch?v=paginkN_7kc",
+   "short": "https://youtube.com/shorts/paginkN_7kc"
+  },
+  {
+   "title": "Commuters' association threatens to sue Epra over October fuel price increase",
+   "channel": "NTV Kenya",
+   "views": 6076,
+   "published": "2026-10-18T19:07:08+00:00",
+   "per_hour": 464,
+   "url": "https://www.youtube.com/watch?v=IdxWoHDDqJA",
+   "short": "https://youtube.com/shorts/IdxWoHDDqJA"
+  },
+  {
+   "title": "Seneta wa Nairobi Edwin Sifuna atangaza azma ya kuwania urais katika uchaguzi mkuu ujao",
+   "channel": "Citizen TV",
+   "views": 418,
+   "published": "2026-10-19T07:35:51+00:00",
+   "per_hour": 418,
+   "url": "https://www.youtube.com/watch?v=Tnd3sqD6-SM",
+   "short": "https://youtube.com/shorts/Tnd3sqD6-SM"
+  },
+  {
+   "title": "Ruto awashambulia Sifuna na Natembeya wakati wa ziara ya Bonde la Ufa",
+   "channel": "Citizen TV",
+   "views": 329,
+   "published": "2026-10-19T07:32:11+00:00",
+   "per_hour": 329,
+   "url": "https://www.youtube.com/watch?v=Scz7asrAOW4",
+   "short": "https://youtube.com/shorts/Scz7asrAOW4"
+  },
+  {
+   "title": "Gavana Natembeya adai njama ya kumkamata kutokana na msimamo wake kuhusu soko la Kitale",
+   "channel": "Citizen TV",
+   "views": 317,
+   "published": "2026-10-19T07:33:51+00:00",
+   "per_hour": 317,
+   "url": "https://www.youtube.com/watch?v=V6zEqxeWIWs",
+   "short": "https://youtube.com/shorts/V6zEqxeWIWs"
+  },
+  {
+   "title": "#PoliticsWithoutRaila: How Kenya's political landscape has changed",
+   "channel": "NTV Kenya",
+   "views": 3230,
+   "published": "2026-10-18T20:03:35+00:00",
+   "per_hour": 266,
+   "url": "https://www.youtube.com/watch?v=NgmyxecVNro",
+   "short": "https://youtube.com/shorts/NgmyxecVNro"
+  },
+  {
+   "title": "Martin Oloo: There is housing being built but it is not affordable housing",
+   "channel": "KTN News",
+   "views": 672,
+   "published": "2026-10-19T05:14:03+00:00",
+   "per_hour": 225,
+   "url": "https://www.youtube.com/watch?v=TvRbcYerTCg",
+   "short": "https://youtube.com/shorts/TvRbcYerTCg"
+  },
+  {
+   "title": "Wamiliki wa mashamba Mlolongo waishi kwa hofu kufuatia vitisho vya genge la vijana",
+   "channel": "Citizen TV",
+   "views": 224,
+   "published": "2026-10-19T07:23:29+00:00",
+   "per_hour": 224,
+   "url": "https://www.youtube.com/watch?v=1si6W-Ji9oQ",
+   "short": "https://youtube.com/shorts/1si6W-Ji9oQ"
+  },
+  {
+   "title": "Ruto-Moi fallout: State's daring occupation as armed GSU storm Moi's family property| In the dailies",
+   "channel": "KTN News",
+   "views": 657,
+   "published": "2026-10-19T05:10:35+00:00",
+   "per_hour": 216,
+   "url": "https://www.youtube.com/watch?v=1GZZq9aEsT4",
+   "short": "https://youtube.com/shorts/1GZZq9aEsT4"
+  },
+  {
+   "title": "Mahakama ya Mombasa kutoa hukumu katika kesi ya mauaji ya Shakahola [Part 1]",
+   "channel": "Citizen TV",
+   "views": 201,
+   "published": "2026-10-19T07:18:39+00:00",
+   "per_hour": 201,
+   "url": "https://www.youtube.com/watch?v=42SoYgr5OKE",
+   "short": "https://youtube.com/shorts/42SoYgr5OKE"
+  },
+  {
+   "title": "Political Rhetoric Grows as Kenyans Grapple With Rising Cost of Living",
+   "channel": "KTN News",
+   "views": 178,
+   "published": "2026-10-19T06:32:34+00:00",
+   "per_hour": 106,
+   "url": "https://www.youtube.com/watch?v=1O52k6dHEwU",
+   "short": "https://youtube.com/shorts/1O52k6dHEwU"
+  },
+  {
+   "title": "Chama cha kutetea maslahi ya abiria, COCOWA yaipa EPRA siku 14 kufutilia mbali bei mpya za mafuta",
+   "channel": "Citizen TV",
+   "views": 84,
+   "published": "2026-10-19T07:25:05+00:00",
+   "per_hour": 84,
+   "url": "https://www.youtube.com/watch?v=J6oPdGMSixg",
+   "short": "https://youtube.com/shorts/J6oPdGMSixg"
+  },
+  {
+   "title": "Polisi kaunti ya Nyamira wachunguza mauaji ya wanandoa katika Kijiji cha Enchoro",
+   "channel": "Citizen TV",
+   "views": 81,
+   "published": "2026-10-19T07:21:20+00:00",
+   "per_hour": 81,
+   "url": "https://www.youtube.com/watch?v=jeWcbWh6AE8",
+   "short": "https://youtube.com/shorts/jeWcbWh6AE8"
+  },
+  {
+   "title": "Remembering Raila Odinga: The 10 key issues Ruto and Raila agreed on",
+   "channel": "KTN News",
+   "views": 900,
+   "published": "2026-10-18T20:05:48+00:00",
+   "per_hour": 74,
+   "url": "https://www.youtube.com/watch?v=CqZbEuY9VaM",
+   "short": "https://youtube.com/shorts/CqZbEuY9VaM"
+  }
+ ],
+ "errors": {},
+ "catalog": [
+  {
+   "title": "Tottenham Waikodolea Macho Shoka la Mchujo Huku Vijana wa Carrick Wakisuasua",
+   "channel": "KTN News",
+   "views": 1,
+   "published": "2026-10-19T08:09:07+00:00",
+   "per_hour": 1,
+   "url": "https://www.youtube.com/watch?v=ruyI9Qp1HnI",
+   "short": "https://youtube.com/shorts/ruyI9Qp1HnI"
+  },
+  {
+   "title": "Timu ya Taifa ya Kabaddi Yalenga Kung’ara Katika Mashindano ya Hadhi ya Juu India",
+   "channel": "KTN News",
+   "views": 2,
+   "published": "2026-10-19T08:05:26+00:00",
+   "per_hour": 2,
+   "url": "https://www.youtube.com/watch?v=_LVI3k4hkZw",
+   "short": "https://youtube.com/shorts/_LVI3k4hkZw"
+  },
+  {
+   "title": "Soka Mashinani Machakos: Timu Zaendelea Kushamiri",
+   "channel": "KTN News",
+   "views": 2,
+   "published": "2026-10-19T07:59:42+00:00",
+   "per_hour": 2,
+   "url": "https://www.youtube.com/watch?v=vVoESsWfCx8",
+   "short": "https://youtube.com/shorts/vVoESsWfCx8"
+  },
+  {
+   "title": "Police Bullets Waendeleza Msururu wa Matokeo Mazuri kwa Ushindi Dhidi ya Trinity Starlets",
+   "channel": "KTN News",
+   "views": 3,
+   "published": "2026-10-19T07:56:39+00:00",
+   "per_hour": 3,
+   "url": "https://www.youtube.com/watch?v=7rn_sw9xcAY",
+   "short": "https://youtube.com/shorts/7rn_sw9xcAY"
+  },
+  {
+   "title": "Jamii ya Wabajuni Malindi waiomba serikali kuharakisha utoaji wa vitambulisho",
+   "channel": "Citizen TV",
+   "views": 8,
+   "published": "2026-10-19T07:55:28+00:00",
+   "per_hour": 8,
+   "url": "https://www.youtube.com/watch?v=oIHvT29-b7U",
+   "short": "https://youtube.com/shorts/oIHvT29-b7U"
+  },
+  {
+   "title": "Waziri wa usalama Kipchumba Murkomen atangaza maandalizi ya Siku ya Mashujaa kukamilika",
+   "channel": "Citizen TV",
+   "views": 16,
+   "published": "2026-10-19T07:54:44+00:00",
+   "per_hour": 16,
+   "url": "https://www.youtube.com/watch?v=eLQDPfBMOdU",
+   "short": "https://youtube.com/shorts/eLQDPfBMOdU"
+  },
+  {
+   "title": "Justice Diana Kavedza: Mackenzie used scriptures that are not divinely inspired",
+   "channel": "NTV Kenya",
+   "views": 9,
+   "published": "2026-10-19T07:53:37+00:00",
+   "per_hour": 9,
+   "url": "https://www.youtube.com/watch?v=va_fAGrY15o",
+   "short": "https://youtube.com/shorts/va_fAGrY15o"
+  },
+  {
+   "title": "Mombasa United Yaapa Kufufua Kampeni Yake Dhidi ya Mara Sugar",
+   "channel": "KTN News",
+   "views": 4,
+   "published": "2026-10-19T07:52:32+00:00",
+   "per_hour": 4,
+   "url": "https://www.youtube.com/watch?v=bZClzydMwxM",
+   "short": "https://youtube.com/shorts/bZClzydMwxM"
+  },
+  {
+   "title": "Mahakama ya Mombasa kutoa hukumu katika kesi ya mauaji ya Shakahola [Part 2]",
+   "channel": "Citizen TV",
+   "views": 26,
+   "published": "2026-10-19T07:50:02+00:00",
+   "per_hour": 26,
+   "url": "https://www.youtube.com/watch?v=rncnJ2QO0KI",
+   "short": "https://youtube.com/shorts/rncnJ2QO0KI"
+  },
+  {
+   "title": "Viongozi wa Upinzani waitaka IEBC kuweka wazi orodha ya wapiga kura wapya",
+   "channel": "Citizen TV",
+   "views": 56,
+   "published": "2026-10-19T07:40:53+00:00",
+   "per_hour": 56,
+   "url": "https://www.youtube.com/watch?v=7QxFYg2jtAg",
+   "short": "https://youtube.com/shorts/7QxFYg2jtAg"
+  },
+  {
+   "title": "Viongozi wa Kenya Kwanza na ODM waendeleza kampeni za kumuunga mkono rais Ruto",
+   "channel": "Citizen TV",
+   "views": 51,
+   "published": "2026-10-19T07:39:37+00:00",
+   "per_hour": 51,
+   "url": "https://www.youtube.com/watch?v=rhLx33IsPW8",
+   "short": "https://youtube.com/shorts/rhLx33IsPW8"
+  },
+  {
+   "title": "Seneta wa Nairobi Edwin Sifuna atangaza azma ya kuwania urais katika uchaguzi mkuu ujao",
+   "channel": "Citizen TV",
+   "views": 418,
+   "published": "2026-10-19T07:35:51+00:00",
+   "per_hour": 418,
+   "url": "https://www.youtube.com/watch?v=Tnd3sqD6-SM",
+   "short": "https://youtube.com/shorts/Tnd3sqD6-SM"
+  },
+  {
+   "title": "Justice Diana Kavedza: Mackenzie GNI Ministries was a cult",
+   "channel": "NTV Kenya",
+   "views": 59,
+   "published": "2026-10-19T07:35:09+00:00",
+   "per_hour": 59,
+   "url": "https://www.youtube.com/watch?v=ihvkIkwVJOo",
+   "short": "https://youtube.com/shorts/ihvkIkwVJOo"
+  },
+  {
+   "title": "Gavana Natembeya adai njama ya kumkamata kutokana na msimamo wake kuhusu soko la Kitale",
+   "channel": "Citizen TV",
+   "views": 317,
+   "published": "2026-10-19T07:33:51+00:00",
+   "per_hour": 317,
+   "url": "https://www.youtube.com/watch?v=V6zEqxeWIWs",
+   "short": "https://youtube.com/shorts/V6zEqxeWIWs"
+  },
+  {
+   "title": "Ruto awashambulia Sifuna na Natembeya wakati wa ziara ya Bonde la Ufa",
+   "channel": "Citizen TV",
+   "views": 329,
+   "published": "2026-10-19T07:32:11+00:00",
+   "per_hour": 329,
+   "url": "https://www.youtube.com/watch?v=Scz7asrAOW4",
+   "short": "https://youtube.com/shorts/Scz7asrAOW4"
+  },
+  {
+   "title": "Wakulima wa majani chai Bomet waanza kung’oa michai kutokana na bonasi ya chini",
+   "channel": "Citizen TV",
+   "views": 27,
+   "published": "2026-10-19T07:30:48+00:00",
+   "per_hour": 27,
+   "url": "https://www.youtube.com/watch?v=ZnYe9rGLts0",
+   "short": "https://youtube.com/shorts/ZnYe9rGLts0"
+  },
+  {
+   "title": "Chama cha kutetea maslahi ya abiria, COCOWA yaipa EPRA siku 14 kufutilia mbali bei mpya za mafuta",
+   "channel": "Citizen TV",
+   "views": 84,
+   "published": "2026-10-19T07:25:05+00:00",
+   "per_hour": 84,
+   "url": "https://www.youtube.com/watch?v=J6oPdGMSixg",
+   "short": "https://youtube.com/shorts/J6oPdGMSixg"
+  },
+  {
+   "title": "Wamiliki wa mashamba Mlolongo waishi kwa hofu kufuatia vitisho vya genge la vijana",
+   "channel": "Citizen TV",
+   "views": 224,
+   "published": "2026-10-19T07:23:29+00:00",
+   "per_hour": 224,
+   "url": "https://www.youtube.com/watch?v=1si6W-Ji9oQ",
+   "short": "https://youtube.com/shorts/1si6W-Ji9oQ"
+  },
+  {
+   "title": "Polisi kaunti ya Nyamira wachunguza mauaji ya wanandoa katika Kijiji cha Enchoro",
+   "channel": "Citizen TV",
+   "views": 81,
+   "published": "2026-10-19T07:21:20+00:00",
+   "per_hour": 81,
+   "url": "https://www.youtube.com/watch?v=jeWcbWh6AE8",
+   "short": "https://youtube.com/shorts/jeWcbWh6AE8"
+  },
+  {
+   "title": "Mahakama ya Mombasa kutoa hukumu katika kesi ya mauaji ya Shakahola [Part 1]",
+   "channel": "Citizen TV",
+   "views": 201,
+   "published": "2026-10-19T07:18:39+00:00",
+   "per_hour": 201,
+   "url": "https://www.youtube.com/watch?v=42SoYgr5OKE",
+   "short": "https://youtube.com/shorts/42SoYgr5OKE"
+  },
+  {
+   "title": "DEAR MR. PRESIDENT: Stop the Political Rhetoric, Fuel and Milk Prices Are Hurting Kenyans",
+   "channel": "KTN News",
+   "views": 580,
+   "published": "2026-10-19T07:06:47+00:00",
+   "per_hour": 524,
+   "url": "https://www.youtube.com/watch?v=paginkN_7kc",
+   "short": "https://youtube.com/shorts/paginkN_7kc"
+  },
+  {
+   "title": "NTV KENYA LIVE | Shakahola Massacre Judgment",
+   "channel": "NTV Kenya",
+   "views": 1324,
+   "published": "2026-10-19T06:57:53+00:00",
+   "per_hour": 1056,
+   "url": "https://www.youtube.com/watch?v=TvqLcEx-Y9k",
+   "short": "https://youtube.com/shorts/TvqLcEx-Y9k"
+  },
+  {
+   "title": "| MONDAY SPORTS | Bundesliga analysis with Zitah Jimoi",
+   "channel": "Citizen TV",
+   "views": 52,
+   "published": "2026-10-19T06:52:27+00:00",
+   "per_hour": 39,
+   "url": "https://www.youtube.com/watch?v=Ht_I2c-VM1U",
+   "short": "https://youtube.com/shorts/Ht_I2c-VM1U"
+  },
+  {
+   "title": "Nature’s future is on the table! COP17 kicks off in Yerevan, Armenia, on October 19",
+   "channel": "NTV Kenya",
+   "views": 96,
+   "published": "2026-10-19T06:50:15+00:00",
+   "per_hour": 69,
+   "url": "https://www.youtube.com/watch?v=zEByk_AlEqg",
+   "short": "https://youtube.com/shorts/zEByk_AlEqg"
+  },
+  {
+   "title": "| SPORTY MONDAY | F1 roast back to Africa",
+   "channel": "Citizen TV",
+   "views": 56,
+   "published": "2026-10-19T06:38:34+00:00",
+   "per_hour": 36,
+   "url": "https://www.youtube.com/watch?v=t40JEpuoICE",
+   "short": "https://youtube.com/shorts/t40JEpuoICE"
+  },
+  {
+   "title": "Political Rhetoric Grows as Kenyans Grapple With Rising Cost of Living",
+   "channel": "KTN News",
+   "views": 178,
+   "published": "2026-10-19T06:32:34+00:00",
+   "per_hour": 106,
+   "url": "https://www.youtube.com/watch?v=1O52k6dHEwU",
+   "short": "https://youtube.com/shorts/1O52k6dHEwU"
+  },
+  {
+   "title": "Martin Oloo: There is housing being built but it is not affordable housing",
+   "channel": "KTN News",
+   "views": 672,
+   "published": "2026-10-19T05:14:03+00:00",
+   "per_hour": 225,
+   "url": "https://www.youtube.com/watch?v=TvRbcYerTCg",
+   "short": "https://youtube.com/shorts/TvRbcYerTCg"
+  },
+  {
+   "title": "Ruto-Moi fallout: State's daring occupation as armed GSU storm Moi's family property| In the dailies",
+   "channel": "KTN News",
+   "views": 657,
+   "published": "2026-10-19T05:10:35+00:00",
+   "per_hour": 216,
+   "url": "https://www.youtube.com/watch?v=1GZZq9aEsT4",
+   "short": "https://youtube.com/shorts/1GZZq9aEsT4"
+  },
+  {
+   "title": "Remembering Raila Odinga: The 10 key issues Ruto and Raila agreed on",
+   "channel": "KTN News",
+   "views": 900,
+   "published": "2026-10-18T20:05:48+00:00",
+   "per_hour": 74,
+   "url": "https://www.youtube.com/watch?v=CqZbEuY9VaM",
+   "short": "https://youtube.com/shorts/CqZbEuY9VaM"
+  },
+  {
+   "title": "Ugandan duo Jordan Schleck and Mary Aleper win the 2026 safari gravel series",
+   "channel": "NTV Kenya",
+   "views": 412,
+   "published": "2026-10-18T20:03:46+00:00",
+   "per_hour": 34,
+   "url": "https://www.youtube.com/watch?v=SaqTDl1JcT0",
+   "short": "https://youtube.com/shorts/SaqTDl1JcT0"
+  },
+  {
+   "title": "Duracat Golf Masters series: Homeboy Collins Chepkurui clinches the overall gross title",
+   "channel": "NTV Kenya",
+   "views": 757,
+   "published": "2026-10-18T20:03:44+00:00",
+   "per_hour": 62,
+   "url": "https://www.youtube.com/watch?v=1npci33zfro",
+   "short": "https://youtube.com/shorts/1npci33zfro"
+  },
+  {
+   "title": "Ulinzi Starlets climb to the top of the FKF Women's Premier League",
+   "channel": "NTV Kenya",
+   "views": 246,
+   "published": "2026-10-18T20:03:40+00:00",
+   "per_hour": 20,
+   "url": "https://www.youtube.com/watch?v=KG4zaKuEEjg",
+   "short": "https://youtube.com/shorts/KG4zaKuEEjg"
+  },
+  {
+   "title": "Kakamega Homeboyz force a 1-1 draw against the Ulinzi Stars at Bukhanga Stadium in Kakamega",
+   "channel": "NTV Kenya",
+   "views": 333,
+   "published": "2026-10-18T20:03:38+00:00",
+   "per_hour": 27,
+   "url": "https://www.youtube.com/watch?v=QS-xAV8imYs",
+   "short": "https://youtube.com/shorts/QS-xAV8imYs"
+  },
+  {
+   "title": "#PoliticsWithoutRaila: How Kenya's political landscape has changed",
+   "channel": "NTV Kenya",
+   "views": 3230,
+   "published": "2026-10-18T20:03:35+00:00",
+   "per_hour": 266,
+   "url": "https://www.youtube.com/watch?v=NgmyxecVNro",
+   "short": "https://youtube.com/shorts/NgmyxecVNro"
+  },
+  {
+   "title": "KPSEA set to kick off on Monday, October 26",
+   "channel": "NTV Kenya",
+   "views": 290,
+   "published": "2026-10-18T20:03:31+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=Sa6AVxnT-CI",
+   "short": "https://youtube.com/shorts/Sa6AVxnT-CI"
+  },
+  {
+   "title": "How Uasin Gishu county is looking to build on Eldoret city status milestone",
+   "channel": "NTV Kenya",
+   "views": 302,
+   "published": "2026-10-18T20:03:26+00:00",
+   "per_hour": 25,
+   "url": "https://www.youtube.com/watch?v=UUHyRTtC_S0",
+   "short": "https://youtube.com/shorts/UUHyRTtC_S0"
+  },
+  {
+   "title": "Thousands of Uasin Gishu farmers embrace coffee farming for its potential to boost incomes",
+   "channel": "NTV Kenya",
+   "views": 704,
+   "published": "2026-10-18T19:08:12+00:00",
+   "per_hour": 54,
+   "url": "https://www.youtube.com/watch?v=sjHC8RLvbmk",
+   "short": "https://youtube.com/shorts/sjHC8RLvbmk"
+  },
+  {
+   "title": "Kenya moves to safeguard mursik, traditional fermented milk associated with Kalenjin community",
+   "channel": "NTV Kenya",
+   "views": 423,
+   "published": "2026-10-18T19:07:47+00:00",
+   "per_hour": 32,
+   "url": "https://www.youtube.com/watch?v=OAUDCAspqWo",
+   "short": "https://youtube.com/shorts/OAUDCAspqWo"
+  },
+  {
+   "title": "Beyond the scars: How women who survive breast cancer struggle",
+   "channel": "NTV Kenya",
+   "views": 263,
+   "published": "2026-10-18T19:07:43+00:00",
+   "per_hour": 20,
+   "url": "https://www.youtube.com/watch?v=R0V8-f6abE8",
+   "short": "https://youtube.com/shorts/R0V8-f6abE8"
+  },
+  {
+   "title": "Commuters' association threatens to sue Epra over October fuel price increase",
+   "channel": "NTV Kenya",
+   "views": 6076,
+   "published": "2026-10-18T19:07:08+00:00",
+   "per_hour": 464,
+   "url": "https://www.youtube.com/watch?v=IdxWoHDDqJA",
+   "short": "https://youtube.com/shorts/IdxWoHDDqJA"
+  },
+  {
+   "title": "Uganda's Jordan Schleck and Mary Aleper Win LOOP Safari Gravel Series Finale in Nanyuki",
+   "channel": "KTN News",
+   "views": 579,
+   "published": "2026-10-18T18:56:24+00:00",
+   "per_hour": 44,
+   "url": "https://www.youtube.com/watch?v=LUFp2Ar8i5A",
+   "short": "https://youtube.com/shorts/LUFp2Ar8i5A"
+  },
+  {
+   "title": "Over 250 Skaters Compete at 2026 PIPSSA Kenya Speed Skating Championships",
+   "channel": "KTN News",
+   "views": 421,
+   "published": "2026-10-18T18:55:37+00:00",
+   "per_hour": 32,
+   "url": "https://www.youtube.com/watch?v=ff_JhyIESP0",
+   "short": "https://youtube.com/shorts/ff_JhyIESP0"
+  },
+  {
+   "title": "Imani Gakinya and Samaira Habib Shine at Nairobi Level 2 Swimming Championships",
+   "channel": "KTN News",
+   "views": 404,
+   "published": "2026-10-18T18:53:59+00:00",
+   "per_hour": 30,
+   "url": "https://www.youtube.com/watch?v=Gc45GWd-4Cw",
+   "short": "https://youtube.com/shorts/Gc45GWd-4Cw"
+  },
+  {
+   "title": "Bandari Target First Win of the Season Against FKF Premier League Newcomers 3K FC",
+   "channel": "KTN News",
+   "views": 343,
+   "published": "2026-10-18T18:50:48+00:00",
+   "per_hour": 26,
+   "url": "https://www.youtube.com/watch?v=kvV3d-eRkOA",
+   "short": "https://youtube.com/shorts/kvV3d-eRkOA"
+  },
+  {
+   "title": "Shabana Held by Bandari as Murang'a Seal Hit Posta Rangers for Five",
+   "channel": "KTN News",
+   "views": 231,
+   "published": "2026-10-18T18:50:12+00:00",
+   "per_hour": 17,
+   "url": "https://www.youtube.com/watch?v=eLeQ1Z9qOYQ",
+   "short": "https://youtube.com/shorts/eLeQ1Z9qOYQ"
+  }
+ ]
 }
