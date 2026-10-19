@@ -15,7 +15,7 @@
         ],
         "warnings": []
       },
-      "drafted_at": "2026-10-19T02:57:22.744660+03:00"
+      "drafted_at": "2026-10-19T03:11:47.798447+03:00"
     },
     {
       "id": "2026-w43-d2-kenya-r9x",
@@ -96,99 +96,97 @@
       "id": "2026-w43-d3-promise-r9",
       "template": "promise",
       "lane": "hustle",
-      "who": "President William Ruto",
-      "promise": "We will build 400 modern markets across Kenya for traders.",
+      "who": "William Ruto, President of Kenya",
+      "where": "Kitale, Trans Nzoia",
+      "when": "18 Oct 2026",
+      "promise": "Build modern markets for mama mboga across all 47 counties.",
       "said": "Kenya Kwanza manifesto, 2022",
-      "reality": "Dozens of markets are open, but hundreds remain unbuilt across counties.",
-      "ask": "When will the government complete all 400 modern markets?",
-      "source": "Daily Nation, 2026-10-18",
+      "reality": "Leadership fights stall market handovers, leaving traders on open roads.",
+      "ask": "When will traders get stalls instead of political fights?",
+      "source": "https://www.youtube.com/watch?v=aKU0y8JamGs",
       "proof": [
-        "The 2022 manifesto promised 400 modern markets across 47 counties.",
-        "The State Department has commissioned several dozen markets so far."
+        "Kitale market launch sparked political supremacy fights between leaders.",
+        "Traders continue selling on roadside verges without clean water."
       ],
-      "verdict": "partly",
-      "message": "Traders demand the fast completion of the 400 promised modern markets.",
-      "action": "Ask your MP whether your sub-county market is funded this financial year",
+      "verdict": "stalled",
+      "measure": "stalled launch",
       "beats": [
-        "President Ruto promised *400 modern markets* for traders.",
-        "The manifesto pledged markets in all counties.",
-        "Hundreds remain unbuilt across counties.",
-        "Kenyans demand: the Ministry finishes markets."
+        "Political fights *delay market handovers* promised to mama mboga.",
+        "Leaders argue over plaques while traders sell on roadside dirt.",
+        "Traders pay daily county fees but lack basic market sheds.",
+        "Kenyans demand: national and county leaders open markets immediately."
       ],
-      "photo_query": "market stall Kenya",
-      "who_target": "State Department for Housing and Urban Development",
-      "where": "National",
-      "when": "Since 2022",
-      "side": "government",
+      "message": "Traders need clean stalls and running water, not political fights over market plaques.",
+      "action": "Attend your county budget participation and demand market stall completions.",
+      "photo_query": "open air market Kenya",
+      "caption": "Traders pay county market fees every day. Yet new markets remain locked in supremacy battles between politicians. We need working stalls, not plaque wars.\n\nWhen was your local market last upgraded?\n\n#HustleTracker #KenyaOnRecord",
+      "side": "both",
       "tone": "criticism",
-      "impact": "Traders continue working in open weather without cold storage and clean water.",
-      "caption": "Traders pay daily market fees to county governments across Kenya. The manifesto promised 400 modern markets with electricity and water.\n\nKenyans demand: the State Department for Housing publishes the completion date for every stalled market.\n\nHas your local market been built yet?\n\n#PromiseTracker #KenyaOnRecord",
+      "impact": "Traders lose stock to rain while completed markets stay locked.",
       "bg": "usiku",
       "publish_at": "2026-10-21T18:30:00+03:00",
-      "source_links": [
-        {
-          "outlet": "Daily Nation",
-          "title": "Ruto alliance for Baba's family: Sifuna accusses ODM leaders of turning on Raila’s family",
-          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQS2RaYndSbnJDRFpoOVo2MC1oQV9YMWxPR2d6X2JVOUR2MHJoOFRsUEFJU1B4UkpYUlIxZ3lLazk3dDZUTEZEXzZoMUpCc3g2V0FyVXZoSkxLZUx1a3VRVFQzWGdXbGFhSlhCQ1V5VDdFbWJBdGNrbEdjbjdacDZyYjE2cXdpa3JkMlBGT0VRTmU5aHNSbXI0dFpnMHVnQVMxMkZYb255RDJ3ZXRBU1lSbzZTS280b2c4c0dvQ19OOEQwcG5FM0txcXlOQmN6S3ZGWldKZkp3?oc=5",
-          "published": "2026-10-18"
-        }
-      ],
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "the linked report is not about this story (Ruto alliance for Baba's family: Sifuna accusses ODM leaders of turning on Raila): use the headline id of the report this post is really based on"
-        ],
+        "errors": [],
         "warnings": [
           "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
       "critic": {
-        "hook": 9,
-        "send": 9,
-        "clarity": 10,
-        "fresh": 9,
-        "voice": 9,
-        "craft": 9,
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
         "picture": 8,
-        "hold": 9,
-        "demand": 8,
-        "action": 9,
-        "fair": 9,
-        "impact": 9,
-        "avg": 8.9,
-        "note": "Solid execution on the market construction pledges with a concrete accountability demand."
+        "hold": 8,
+        "demand": 7,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.8,
+        "note": "Clear focus on stalled markets affecting traders."
       },
-      "drafted_at": "2026-10-19T02:57:22.744646+03:00"
+      "drafted_at": "2026-10-19T03:11:47.798436+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-promise-r9-photo.jpg",
+      "photo_credit": "Photo: Nation",
+      "photo_kind": "posted",
+      "photo_outlet": "Nation",
+      "photo_source": "https://nation.africa/kenya/news/politics/ruto-odm-face-power-sharing-impasse-amid-stalled-reforms-5632252",
+      "reel": true,
+      "tg_msg": 367
     },
     {
       "id": "2026-w43-d4-glasspoll-r9x",
       "template": "glasspoll",
       "lane": "everyone",
       "series": "Guess the Price",
-      "hook": "Guess the pump price",
-      "question": "What is diesel per litre in Nairobi?",
+      "hook": "Guess Nairobi pump price",
+      "question": "What is diesel per litre?",
+      "cta": "Guess A or B in comments",
       "options": [
-        "Sh227.76 per litre",
-        "Sh217.86 per litre"
+        "A: Sh217.86",
+        "B: Sh227.76"
       ],
-      "cta": "Comment A or B",
       "source": "The Star, 2026-10-15",
-      "message": "Nairobi pump price for diesel is Sh227.76 per litre until 14 November 2026.",
-      "action": "Check the EPRA price chart at your local petrol station",
       "beats": [
-        "What does a litre of *diesel* cost in Nairobi today?",
-        "Option A is Sh227.76 per litre.",
-        "Option B is Sh217.86 per litre.",
-        "The answer is A: Sh227.76 for diesel in Nairobi."
+        "EPRA set Nairobi's *maximum diesel pump price* this month.",
+        "Option A is Sh217.86 per litre.",
+        "Option B is Sh227.76 per litre.",
+        "The answer is B: *diesel costs Sh227.76* per litre in Nairobi."
       ],
+      "message": "Diesel pump prices in Nairobi sit at Sh227.76 per litre.",
+      "action": "Check EPRA monthly price caps before paying at your local pump.",
       "photo_query": "petrol station Kenya",
-      "caption": "Guess the pump price before watching the final beat.\n\nVote A or B in the comments.\n\n#GuessThePrice #KenyaOnRecord",
+      "caption": "EPRA announced new pump prices running through mid-November 2026. What does a litre of diesel cost in Nairobi right now?\n\nVote A or B in the comments.\n\n#GuessThePrice #KenyaOnRecord",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "High diesel prices raise bus fares and food transport costs.",
       "bg": "usiku",
       "publish_at": "2026-10-22T19:30:00+03:00",
       "size": "story",
       "angle": "price_quiz",
-      "side": "none",
-      "tone": "explainer",
       "source_links": [
         {
           "outlet": "The Star",
@@ -206,17 +204,15 @@
         "published": "2026-10-15",
         "wrong_hint": "last month's price, Sh217.86 per litre"
       },
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "Guess the Price: the LAST beat must reveal the answer with its price ('The answer is B: Sh160 for 2kg in Nairobi.')"
-        ],
+        "errors": [],
         "warnings": []
       },
       "critic": {
         "hook": 9,
-        "send": 9,
-        "clarity": 10,
+        "send": 8,
+        "clarity": 9,
         "fresh": 8,
         "voice": 9,
         "craft": 9,
@@ -224,12 +220,19 @@
         "hold": 9,
         "demand": 9,
         "action": 8,
-        "fair": 10,
+        "fair": 9,
         "impact": 9,
-        "avg": 8.9,
-        "note": "Engaging fuel price quiz that directly addresses everyday cost-of-living concerns."
+        "avg": 8.7,
+        "note": "Engaging price quiz with clear local impact on transport costs."
       },
-      "drafted_at": "2026-10-19T02:57:22.744652+03:00"
+      "drafted_at": "2026-10-19T03:11:47.798444+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d4-glasspoll-r9x-photo.jpg",
+      "photo_credit": "Photo: Queen Asali / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Energy_in_Kenya-_Petrocity_Petroln_Station_in_Gigiri.jpg",
+      "reel": true,
+      "tg_msg": 368
     },
     {
       "id": "2026-w43-d5-straight-r9",
@@ -449,10 +452,10 @@
     }
   ],
   "scripts": {
-    "radio": "Good evening and welcome to Kenya on Record. Here is what matters for your pocket and your community this week.\n\nAcross our counties, traders are demanding straight answers on the four hundred modern markets promised by the national government. For thousands of vendors working beside roadside trenches in the rain, construction delays mean direct economic hardship—especially with Nairobi diesel pegged at two hundred and twenty-seven shillings and seventy-six cents a litre, keeping transportation and commodity costs painfully high.\n\nAt the same time, we have a vital compliance alert: do not fall for syndicates selling fake eTIMS invoices online. The taxman’s systems actively reconcile digital trails. Buying fake paperwork to lower your tax liability is outright fraud and will lead to prosecution and heavy penalties. Build your enterprise on legal ground.\n\nOn the national stage, citizens continue to debate whether broad-based political alliances serve the mwananchi or merely dilute vital parliamentary oversight.\n\nYet, our national heritage and green infrastructure remind us of what Kenya can achieve when public capital works: Lake Turkana Wind Power is steadily pumping three hundred and ten megawatts of clean energy into the grid, while Nairobi National Park continues to safeguard one hundred and seventeen square kilometres of unique wildlife habitat right on our doorstep.\n\nKwa ufupi: Wafanyabiashara wanataka masoko mia nne yaliyeahidiwa yakamilishwe haraka huku gharama ya dizeli ikibaki juu. Pia, tahadhari imetolewa dhidi ya ununuzi wa ankara ghushi za eTIMS mtandaoni—ni kosa la jinai. Kuwa makini, linda haki yako.",
-    "voice_note": "Habari zenu. Here is your Kenya on Record briefing for the week.\n\nFirst, small traders are speaking up loudly, demanding the fast completion of the four hundred modern markets promised across counties. Operating in open-air mud while Nairobi diesel sits high at Sh227.76 a litre eats away at every single shilling of profit.\n\nSecond, a crucial consumer and legal alert: steer clear of brokers peddling fake eTIMS invoices online. It is illegal, KRA’s audit trails catch up quickly, and the penalty is criminal prosecution alongside heavy back taxes. Protect your hustle.\n\nFinally, as politicians push broad-based alliances, Kenyans are asking a valid accountability question: who checks the executive when the opposition sits in Cabinet?\n\nKeep asking the hard questions, demand delivery on public projects, and stay legal. Have a focused week ahead.",
-    "sms": "Usiibiwe: Buying fake eTIMS invoices online is illegal. KRA tracks digital receipts, and buyers face severe fines and criminal prosecution. Keep it legitimate.",
-    "reels": "Four hundred modern markets were promised to Kenyan traders and mama mbogas. \n\nToday, thousands still sell in open dust and mud, while Nairobi diesel at over Sh227 a litre eats into every thin margin. \n\nPublic funds were committed. Groundbreaking ceremonies happened. But until those sites have roofs, cold rooms, and running water, promises don't feed families. \n\nKenya on Record is tracking these projects. Is the modern market in your constituency completed?"
+    "radio": "Habari za jioni. This is Kenya on Record.\n\nLet us begin at the pump. In Nairobi today, diesel is retailing at 227 shillings and 76 cents a litre. For the transporter hauling cabbages from Nyandarua, the matatu operator balancing daily targets, and the family budgeting for unga, that figure is suffocating. High diesel does not remain at the petrol station; it enters every kitchen, pushing food and retail prices beyond the reach of ordinary Kenyans.\n\nThen we look at our trading spaces. Across several counties, newly constructed markets sit underutilised while leaders engage in bitter turf wars over whose name should be engraved on the opening plaque. It is an insult to common sense. A brass plaque does not preserve perishable goods. A ribbon-cutting ceremony will not clean a blocked sewer. Traders who pay daily cess need reliable running water, working drainage, hygienic sanitation, and secure stalls to earn an honest living.\n\nPublic infrastructure is funded by your taxes, not the personal philanthropy of politicians. When leaders spend more energy fighting over ceremonial credit than fixing running water, they abandon their primary duty.\n\nKwa ufupi: Bei ya dizeli Nairobi ikiwa Sh227.76 kwa lita, gharama ya usafirishaji na vyakula inazidi kuumiza wananchi. Wakati huo huo, wafanyabiashara masokoni wanahitaji maji safi na vyoo bora, si mizozo ya viongozi kuhusu mabango ya uzinduzi. Kodi yetu lazima ilete huduma halisi, si sarakasi za kisiasa.",
+    "voice_note": "Jambo. Here is your Kenya on Record weekly brief.\n\nFirst, diesel in Nairobi sits at 227 shillings and 76 cents. That single number explains why your grocery bill isn't coming down. Every time transport costs rise, the burden lands squarely on the consumer.\n\nSecond, look at what is happening in our public markets. Politicians are clashing in public, fighting over who gets credit and whose name appears on the launch plaque. Meanwhile, mama mboga is sitting near an open trench without clean running water to wash her produce or accessible toilets for traders.\n\nWe must get our priorities straight. A market is not built to polish a politician's ego; it is built with taxpayers' money to provide a safe, dignified working environment. Stop settling for ceremonial launches. Demand clean stalls and working taps from your county leadership. Share this note with your local community group.",
+    "sms": "Usiibiwe: You pay market cess daily. Demand running water and clean toilets from your county, not political launch ceremonies. Accountability begins locally.",
+    "reels": "Politicians are still fighting over who gets their name on the market plaque. But ask any mama mboga inside: does a brass plaque unblock a drainage trench? Does a politician’s signature bring running water to the stalls? You pay daily market levies. You deserve sanitation, clean water, and basic dignity—not another ribbon-cutting circus funded by your own taxes."
   },
   "spend_usd": 0.0,
   "revision": 9
