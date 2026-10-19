@@ -593,7 +593,7 @@
           "published": "2026-10-19"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -632,7 +632,11 @@
       "video_source": "https://pixabay.com/videos/id-50109/",
       "reel": true,
       "tg_msg": 386,
-      "decided_at": "2026-10-19T23:17:14.610486+03:00"
+      "decided_at": "2026-10-19T23:17:14.610486+03:00",
+      "published_at": "2026-10-20T01:18:10.423470+03:00",
+      "ig_id": "18185852692418540",
+      "fb_id": "28430522306631022",
+      "story_id": "18152033545552369"
     }
   ],
   "scripts": {
