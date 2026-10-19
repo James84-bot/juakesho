@@ -539,13 +539,101 @@
       "photo_source": "https://www.kbc.co.ke/80-kings-over-50000-visitors-expected-at-iteso-cultural-celebrations/",
       "reel": true,
       "tg_msg": 382
+    },
+    {
+      "id": "2026-w43-hot-1019e",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Citizens",
+      "line": "The High Court convicts Paul Mackenzie and *28 co-accused* of murder.",
+      "fact": "Justice Diana Kavedza convicted all 29 accused, setting sentencing for 6 November 2026.",
+      "source": "Capital FM News, 2026-10-19, Al Jazeera, 2026-10-19",
+      "demand": 2,
+      "message": "The High Court convicted Paul Mackenzie and 28 co-accused of murder, setting sentencing for November.",
+      "action": "Follow the sentencing proceedings on judiciary.go.ke on 6 November 2026.",
+      "beats": [
+        "The High Court convicted Paul Mackenzie and *28 others* of murder.",
+        "Sentencing for all 29 convicted persons is set for 6 November 2026.",
+        "Families of 191 victims finally get a *murder conviction* in court.",
+        "Kenyans demand: the courts conclude all *remaining* Shakahola trials."
+      ],
+      "photo_query": "Supreme Court of Kenya",
+      "event_query": "Paul Mackenzie court Malindi",
+      "who": "Lady Justice Diana Kavedza, High Court",
+      "where": "Malindi",
+      "when": "19 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Grieving families secure legal accountability as courts conclude murder trials for Shakahola deaths.",
+      "caption": "The High Court has convicted cult leader Paul Mackenzie and 28 co-accused of murder over the Shakahola tragedy. Sentencing is scheduled for 6 November 2026. What reforms should Kenya enforce to stop dangerous cults before lives are lost?\n\n#Shakahola #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-20T01:16:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "The government is auditing all public workers after Sh6.2 billion was lost to ghost worker payroll fraud.",
+        "Sh71 billion has been released for counties to buy medicine and clear debts."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Court convicts all 29 Shakahola accused of murder, sets sentencing for November 6",
+          "link": "https://capitalfm.africa/court-convicts-all-29-shakahola-accused-of-murder-sets-sentencing-for-november-6/",
+          "published": "2026-10-19"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Who is cult head Paul Mackenzie, convicted of convincing followers to die?",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTktkSkd5NE9pS0o3el9Qb0pFY3daX29kaDUzMGNPd3kzdENLUVF5WWp3Q0J2R0JpN0s0WWhzZnJuS2RrVFhINVl4WTJvUWxkWDZYdzZzazRWaGx5VGJFekc2ZHZITGtFWDZOU191RHhKMUg2ZkM5cTNEQkdnTFFxbHJwWmlwcG0tT29qeG9qZWNUX2xySFJpeHZlUkxPUGtlUlFDYTBRUDdybkdmUVQ3UHhfekLSAboBQVVfeXFMTzZhN1FMR2dtOW00RmVRYW00NmRfOGZJSW42eW1QSmJMTm44YzVXYzFzcUtHanpuMHVhbl9hX1pnWkV3VElVVFFVMmptLVdnUUdWUlVQaWVpSWFLVkxhUjJPMnRkNHdodkFTX3BWVTBYMjh6VkkxaHNGT3R2dFJwTVRHcWptLTlUUFdCc3hoeUlpMmFkRzg4XzBMZVB5V0VVLW1iNl81ejNPdFI1c3hWOTFMOG1ZUTJlZ0dR?oc=5",
+          "published": "2026-10-19"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 9,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 8.0,
+        "note": "Make the demand name the specific State office responsible for monitoring fringe religious groups."
+      },
+      "drafted_at": "2026-10-19T22:20:59.046216+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1019e-photo.jpg",
+      "photo_credit": "Photo: Francis Akuka for the Wikimedia Foundation / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_Kenya_05.jpg",
+      "tv_clip": {
+        "channel": "NTV Kenya",
+        "title": "Shakahola: High Court finds controversial preacher Paul Mackenzie guilty of murder of 191",
+        "url": "https://www.youtube.com/watch?v=TY4QdYYfc9I"
+      },
+      "video_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/videos/2026-w43-hot-1019e-video.mp4",
+      "video_credit": "Footage: xat-ch / Pixabay",
+      "video_source": "https://pixabay.com/videos/id-50109/",
+      "reel": true,
+      "tg_msg": 386
     }
   ],
   "scripts": {
-    "radio": "Good evening, listeners. You are tuned in to Kenya on Record. This week, we are looking directly at devolution and how public resources translate into services at the grassroots.\n\nThe National Treasury has released seventy-one billion shillings to the forty-seven county governments. This is a significant disbursement specifically earmarked for two critical priorities: restocking medicine in public hospitals and clearing historical pending bills owed to suppliers and small businesses.\n\nFor far too long, the reality on the ground has been grim. You fall sick, walk into a local dispensary or Level Four hospital, and end up being directed to a private chemist across the street to buy basic painkillers, antibiotics, or even cotton wool. At the same time, local contractors who delivered services to counties have had their livelihoods ruined by delayed payments.\n\nWith seventy-one billion shillings now in county bank accounts, that narrative must change. County leadership can no longer use cash delays from the national government as a cover for empty pharmacies or unpaid debts. As citizens, this is our cue to conduct civic audits. Ask your MCA whether medical supplies have arrived at your local clinic, and demand transparency on who is getting paid.\n\nKwa ufupi: Serikali ya kitaifa imetoa shilingi bilioni sabini na moja kwa kaunti zote arobaini na saba. Pesa hizi ni za ununuzi wa dawa hospitalini na kulipa madeni ya wafanyabiashara. Hakuna kisingizio tena cha hospitali kukosa dawa. Tufuatilie utendakazi wa magavana wetu. Keep Kenya on record.",
-    "voice_note": "Habari zenu. Here is your Kenya on Record briefing for the week. The National Treasury has finally released seventy-one billion shillings to county governments. This money is meant specifically for two things: restocking essential drugs in public hospitals and clearing pending bills owed to local suppliers. For months, ordinary Kenyans have had to buy basic medicine and supplies from private chemists while visiting public clinics. Small business owners who supplied counties have been struggling with debt. Now that the funds have reached county accounts, the excuses must stop. Visit your local dispensary this week—are the shelves stocked? Ask your MCA which suppliers are being cleared. Civic accountability begins where you live. Share this note with your local community groups and let’s keep our county officials accountable.",
-    "sms": "Usiibiwe: Sh71B imeenda kwa counties kununua dawa na kulipa madeni. Tembelea zahanati yenu; dawa zikikosekana, uliza serikali ya kaunti maswali.",
-    "reels": "Seventy-one billion shillings has just been disbursed to county governments. The specific mandate? Restock local dispensaries and public hospitals with medicine, and clear pending bills owed to suppliers. The next time you walk into a county health facility and are told there are no basic drugs, remember this allocation. The money has left Treasury. Demanding accountability at the grassroots begins now. Hold your county leadership to task."
+    "radio": "Hamjambo and welcome to Kenya on Record, your weekly check-in on public accountability and the rule of law. \n\nThis week, our justice system reached a significant, sobering milestone. The High Court has convicted Paul Mackenzie alongside twenty-eight of his co-accused of murder in connection with the horrific tragedy in Shakahola forest. The court has scheduled sentencing for November.\n\nFor months, the nation watched in disbelief as hundreds of bodies—many of them innocent children—were exhumed from shallow graves in Kilifi County, starved to death under the guise of religious devotion. The legal process has been slow, heavy, and painful, but this verdict matters. It reinforces an essential principle: religious freedom does not grant anyone a license to manipulate, exploit, and destroy human life. State institutions and judicial officers had to prove these charges beyond reasonable doubt, and the conviction shows that accountability is possible even in cases of overwhelming scale.\n\nYet, a conviction alone cannot heal the deep wounds left in those communities, nor does it excuse the administrative blind spots that allowed this crisis to grow unnoticed for so long. As citizens, our duty is to remain vigilant, protect the vulnerable in our midst, and question any group that demands complete isolation from family and society.\n\nKwa ufupi: Mahakama Kuu imempata Paul Mackenzie na wenzake ishirini na wanane na hatia ya mauaji kuhusiana na vifo vya msitu wa Shakahola, huku hukumu ikipangwa kutolewa mwezi Novemba. Sheria imechukua mkondo wake, lakini wajibu wa kulinda jamii zetu unabaki mikononi mwetu.",
+    "voice_note": "Hey everyone, quick accountability update from Kenya on Record. The High Court has officially convicted Paul Mackenzie and twenty-eight co-accused of murder over the Shakahola deaths, with formal sentencing set for November. This verdict doesn't erase the grief or bring back the hundreds who starved to death in that forest, but it is an essential reckoning. Legally, it draws a firm boundary: faith cannot be weaponized as an excuse for abuse, coercion, and murder. Justice is grinding forward through our courts. But beyond the courtroom, the takeaway for all of us is vigilance. When any group isolates your relatives, tells them to stop eating, or demands they cut off society, don't keep quiet. Report it early and look out for one another. Pass this on.",
+    "sms": "Usiibiwe: Faith should never demand starvation, secrecy, or cutting off your family. If a religious group isolates its members, speak out and report it early.",
+    "reels": "A major turning point in the Shakahola tragedy. The High Court has convicted Paul Mackenzie and twenty-eight co-accused of murder, setting sentencing for this November. While no verdict can restore the hundreds of lives lost to starvation and indoctrination, this ruling sends an unequivocal message: faith cannot shield anyone from criminal accountability. Justice is moving. Let’s stay alert, protect our vulnerable, and never look away."
   },
   "spend_usd": 0.0,
   "revision": 9
