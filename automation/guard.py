@@ -679,6 +679,9 @@ def series_rules(post: dict, rep: "Report") -> None:
         rep.errors.append("The Chapter Six Test grades a real person: every check needs a newsroom or official report "
                           "about THIS leader's record (a headline id). The Constitution says what the test is, not how "
                           "they did; never grade without a report")
+    if tpl == "promise" and not post.get("source_links") and not rehearsal:
+        rep.errors.append("A Promise Tracker post names a promise and a verdict, so it needs a collected report about "
+                          "THIS promise (a headline id), not an Act or a guess; figures without a report are held")
     if tpl == "scorecard" and re.search(r"\b(leaders|officials|politicians|mps|governors|elected|everyone|all)\b",
                                         str(post.get("who") or ""), re.I):
         rep.errors.append("The Chapter Six Test measures ONE named leader or candidate (who = 'Firstname Lastname'), "
