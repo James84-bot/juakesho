@@ -1,193 +1,191 @@
 {
-  "fetched": "2026-10-20T15:51:40.775524+00:00",
+  "fetched": "2026-10-20T17:57:25.261490+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "kra rental tax exemption threshold",
+      "title": "sabah vs dortmund",
       "traffic": "2000+",
       "news": [
         {
-          "title": "KRA Reveals Category of Landlords Exempted from Rental Tax",
-          "url": "https://www.kenyans.co.ke/news/127968-landlords-earning-below-ksh288000-annually-exempted-rental-tax-kra-says",
-          "source": "Kenyans.co.ke"
+          "title": "Trainer von BVB-Gegner verdankt seine Karriere „Wer wird Millionär?“",
+          "url": "https://www.absolutfussball.com/deutschland/borussia-dortmund/bvb-gegner-sabah-coach-dambrauskas-finanzierte-studium-mit-quizgewinn-94550044.html",
+          "source": "Absolut Fussball"
         },
         {
-          "title": "How KRA’s new rental tax rules exempt landlords earning below Ksh24,000 monthly",
-          "url": "https://peopledaily.digital/business/how-kras-new-rental-tax-rules-exempt-landlords-earning-below-ksh24000-monthly",
-          "source": "People Daily"
+          "title": "Zum Geburtstag: Startelf-Debüt für ÖFB-Profi",
+          "url": "https://www.skysportaustria.at/zum-geburtstag-startelf-debuet-fuer-oefb-profi/",
+          "source": "Sky Sport Austria"
         },
         {
-          "title": "Landlords earning below Sh288,000 annually exempted from rental tax, KRA says",
-          "url": "https://www.pulse.co.ke/story/landlords-earning-below-sh288000-annually-exempted-from-rental-tax-kra-says-2026102009290009178",
-          "source": "Pulse Kenya"
+          "title": "Dortmund unter Druck: Beendet der BVB die Mini-Krise in Aserbaidschan?",
+          "url": "https://www.watson.ch/sport/liveticker/405595660-champions-league-live-sabah-baku-borussia-dortmund-im-ticker",
+          "source": "Watson"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
-      "title": "milk",
+      "title": "al-nassr vs neom",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Kenya's milk supply in numbers",
-          "url": "https://www.the-star.co.ke/news/infographics/2026-10-20-kenyas-milk-supply-in-numbers",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Ruto’s dairy promise: Sh65 milk and farmer-owned New KCC",
-          "url": "https://nation.africa/kenya/news/politics/ruto-s-dairy-promise-sh65-milk-and-farmer-owned-new-kcc-5637000",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Ruto Announces New Milk Prices Starting This Month",
-          "url": "https://www.kenyans.co.ke/news/127972-milk-farmers-be-paid-ksh65-litre-starting-month",
-          "source": "Kenyans.co.ke"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "rigathi gachagua",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "From US retreat to Wamunyoro talks: Gachagua meets Sifuna to plot 2027 strategy",
-          "url": "https://nation.africa/kenya/news/politics/from-us-retreat-to-wamunyoro-talks-gachagua-meets-sifuna-to-plot-2027-strategy-5639120",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Gachagua, Sifuna meet amid Malala’s push for 2027 alliance",
-          "url": "https://www.the-star.co.ke/news/2026-10-20-gachagua-sifuna-meet-amid-malalas-push-for-2027-alliance",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Caleb Amisi: Sifuna backing Gachagua would be difficult to sell",
-          "url": "https://peopledaily.digital/inside-politics/caleb-amisi-sifuna-backing-gachagua-would-be-difficult-to-sell",
-          "source": "People Daily"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "elon musk",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Elon Musk’s Equity-Based Tesla Pay Was $158 Billion In 2025—2.5 Million Times Median Employee Pay",
-          "url": "https://www.forbes.com/sites/fionariley/2026/10/19/elon-musks-equity-based-tesla-pay-was-158-billion-in-2025-25-million-times-median-employee-pay/",
-          "source": "Forbes"
-        },
-        {
-          "title": "Tesla's Optimus V3 Ready for Mass Production, Sparking Limit-Up Rally in China's A-Share Robotics Supply Chain",
-          "url": "https://finance.biggo.com/news/10127d79-8a19-4a31-a82b-80fd13c826b8",
-          "source": "BigGo Finance"
-        },
-        {
-          "title": "Tesla's proxy statement suggests the board is preparing for a potential merger with SpaceX.",
-          "url": "https://www.kucoin.com/news/flash/tesla-proxy-statement-suggests-board-preparing-for-potential-merger-with-spacex",
-          "source": "KuCoin"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "dstv",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Cheaper DStv Premium deal available in South Africa",
-          "url": "https://mybroadband.co.za/news/broadcasting/672600-cheaper-dstv-premium-deal-available-in-south-africa.html",
-          "source": "MyBroadband"
-        },
-        {
-          "title": "Canal+ and MultiChoice to Relaunch Simplified DStv Packages for Rest of Africa in November: 'Nigeria is Changing, and So Are We'",
-          "url": "https://teeveetee.blogspot.com/2026/10/canal-and-multichoice-to-relaunch.html",
-          "source": "TV with Thinus"
-        },
-        {
-          "title": "Good news for subscribers as DStv launches 5 new packages in November",
-          "url": "https://www.legit.ng/business-economy/industry/1736931-dstv-announces-major-package-nigeria-unveils-5-bouquets/",
-          "source": "Legit.ng"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "tax exemption",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Mashujaa Day: Ruto promises tax cuts, 50,000 jobs in 2027 pitch",
-          "url": "https://nation.africa/kenya/news/mashujaa-day-ruto-promises-tax-cuts-50-000-jobs-in-2027-pitch-5639314",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Ruto signals tax cuts for workers, land buyers and phone users",
-          "url": "https://www.businessdailyafrica.com/bd/markets/market-news/ruto-signals-tax-cuts-for-workers-land-buyers-and-phone-users-5639398",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Ruto proposes scrapping 25% mobile-phone import tax",
-          "url": "https://www.the-star.co.ke/news/2026-10-20-ruto-proposes-scrapping-25-tax-on-mobile-phones",
-          "source": "The Star, Kenya"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "bruno fernandes",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Broken Bruno Fernandes must be taken out of the firing line for Man Utd to kickstart their season",
-          "url": "https://www.goal.com/en-ke/originals/broken-bruno-fernandes-taken-out-firing-line-man-utd-kickstart-season/blt4ce8a6cae86b5282",
+          "title": "Ronaldo leads Al-Nassr's striking force against Neom, and a single crisis haunts Postecoglou",
+          "url": "https://www.goal.com/en/news/ronaldo-leads-al-nassr-s-attacking-force-against-neom-one-crisis-haunts-postecoglou/blt7547346e700bccbe",
           "source": "Goal.com"
         },
         {
-          "title": "Boss quashes Fernandes fitness fears",
-          "url": "https://www.manutd.com/en/news/bruno-fernandes-injury-news-atletico-madrid-v-united",
-          "source": "Manchester United"
+          "title": "A painful blow for Al-Nassr with the injury of its star",
+          "url": "https://www.livescore.com/en/news/football/more/a-painful-blow-for-al-nassr-with-the-injury-of-its-star-goal/",
+          "source": "LiveScore"
         },
         {
-          "title": "Michael Carrick may have to bench his only 'undroppable' Manchester United player",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-bench-only-undroppable-34791193",
-          "source": "Manchester Evening News"
+          "title": "Al Nassr v NEOM: Preview, expected line-ups, stats and where to watch as Ronaldo aims to stay on goal trail",
+          "url": "https://www.101greatgoals.com/match-previews/al-nassr-v-neom-preview-expected-line-ups-stats-stream-where-to-watch-cristiano-ronaldo/",
+          "source": "101 Great Goals"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "fabian hürzeler",
-      "traffic": "100+",
+      "title": "ucl",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Erfolgs-Trainer Hürzeler heiratet „Sturm der Liebe“-Schauspielerin",
-          "url": "https://www.bild.de/sport/fussball/erfolgs-trainer-huerzeler-heiratet-sturm-der-liebe-schauspielerin-6ad7423b2352c608d83cf3e0",
-          "source": "BILD"
+          "title": "Arsenal were spooked by Brighton defeat and have reverted to type - they won't beat Bayern Munich, says Paul Merson",
+          "url": "https://www.skysports.com/football/news/13600922/arsenal-were-spooked-by-brighton-defeat-and-have-reverted-to-type-they-wont-beat-bayern-munich-says-paul-merson",
+          "source": "Sky Sports"
         },
         {
-          "title": "Deutscher Trainer hat offenbar heimlich „Sturm der Liebe“-Star geheiratet",
-          "url": "https://www.merkur.de/sport/fussball/deutscher-trainer-huerzeler-heiratet-offenbar-sturm-der-liebe-star-berger-94550190.html",
-          "source": "Merkur"
+          "title": "How to watch Bayern v Arsenal live on TV | Arsenal FC Official Website",
+          "url": "https://www.arsenal.com/news/how-to-watch-bayern-v-arsenal-live-on-tv-auVZQ2q980tN",
+          "source": "Arsenal.com"
         },
         {
-          "title": "Fabian Hürzeler heiratet Schauspielerin Anna Karolin Berger",
-          "url": "https://suaragarut.id/de/huerzeler-heiratet-anna-karolin-berger",
-          "source": "SuaraGarut.ID"
+          "title": "Four mistakes Bayern Munich must avoid in Champions League rematch against Arsenal",
+          "url": "https://www.getfootballnewsgermany.com/2026/bayern-arsenal-mistakes/",
+          "source": "Get German Football News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "fenerbahçe vs slavia praha",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Jako když startuje stíhačka. Slavia odvrací prokletí v tureckém pekle",
+          "url": "https://www.seznamzpravy.cz/clanek/sport-fotbal-fotbal-miluji-soupere-nenavidi-v-turecku-budou-slavisty-bolet-usi-318223",
+          "source": "Seznam Zprávy"
+        },
+        {
+          "title": "Jak jsme bez Jindry vyzráli na Turka. Köstl o výhře na Fenerbahce: Slavia ji zopakuje!",
+          "url": "https://www.idnes.cz/fotbal/pohary/jak-jsme-bez-jindry-vyzrali-na-turka-kostl-o-vyhre-na-fenerbahce-slavia-ji-zopakuje.A261019_161644_fot_pohary_duff",
+          "source": "iDNES.cz"
+        },
+        {
+          "title": "Fotbal v televizi: V úterý laďte Slavii v Lize mistrů. Máme kompletní evropský program",
+          "url": "https://www.footballclub.cz/doma/fotbal-v-televizi-v-utery-ladte-slavii-v-lize-mistru-mame-kompletni-evropsky-program",
+          "source": "Footballclub.cz"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "champions league fixtures",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Champions League predicted line-ups: Matchday 3 team news, injuries, suspensions",
+          "url": "https://www.uefa.com/uefachampionsleague/news/02aa-21dd60778d8f-1ea14fd92256-1000--champions-league-predicted-line-ups-matchday-3-team-news-/",
+          "source": "UEFA.com"
+        },
+        {
+          "title": "Champions League Matchday 3 Rate My Team UCL Fantasy Team",
+          "url": "https://www.nevermanagealone.com/ucl/16698/champions-league-matchday-3-rate-my-team-ucl-fantasy-team",
+          "source": "Never Manage Alone"
+        },
+        {
+          "title": "Fantasy Champions League Round 3 Player Picks: Team Selection & Sleeper Picks (2026/27)",
+          "url": "https://www.footballcoin.io/blog/fantasy-champions-league-round-3-player-picks-team-selection-sleeper-picks-2026-27/",
+          "source": "FootballCoin.io"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ucl fixtures",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Champions League: Liverpool host Villarreal and Man City face AEK Athens",
+          "url": "https://www.bbc.com/sport/football/live/c6zxzxpw1584t",
+          "source": "BBC"
+        },
+        {
+          "title": "Champions League Predictions 10/20: PSG Host Barcelona; Man City, Liverpool in Action",
+          "url": "https://www.si.com/soccer/champions-league-predictions-10-20-26-psg-barcelona-man-city-liverpool",
+          "source": "Sports Illustrated"
+        },
+        {
+          "title": "Champions League Predictions – All nine matchday three games on Tuesday",
+          "url": "https://www.livescore.com/en/news/football/champions-league/predictions/champions-league-predictions-all-nine-matchday-three-games-on-tuesday/",
+          "source": "LiveScore"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "fenerbahçe",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Fenerbahçe'de sakatlık: Nathan Ake oyuna devam edemedi!",
+          "url": "https://www.cumhuriyet.com.tr/spor/fenerbahce-de-sakatlik-nathan-ake-oyuna-devam-edemedi-2548662",
+          "source": "Cumhuriyet"
+        },
+        {
+          "title": "Fenerbahçe Slavia Prag canlı izle, TRT 1 yayını",
+          "url": "https://www.sporx.com/fenerbahce-slavia-prag-canli-izle-trt-1-yayini-SXHBQ1179977SXQ",
+          "source": "Sporx.com"
+        },
+        {
+          "title": "Mert Müldür ve Marco Asensio neden yok? Mert Müldür ve Marco Asensio FB Prag maçında neden oynamıyor?",
+          "url": "https://www.cnnturk.com/spor/mert-muldur-ve-marco-asensio-neden-yok-mert-muldur-ve-marco-asensio-fb-prag-macinda-neden-oynamiyor-3482165",
+          "source": "CNN Türk"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "al qadsiah",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Al Taawoun vs Al Qadsiah: Saudi Pro League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmx28jxrkzdwt",
+          "source": "BBC"
+        },
+        {
+          "title": "Al-Qadsiah on top: Reinders rocks Al-Hilal's throne before the summit with a last-gasp goal",
+          "url": "https://www.goal.com/en/news/al-qadsiah-on-top-reinders-shakes-al-hilal-s-throne-before-the-clash-with-a-last-gasp-goal/blt54645666bbef8f97",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Razovic: Ready despite busy fixture schedule",
+          "url": "https://www.ysscores.com/en/news/14074688/razovic-ready-despite-busy-fixture-schedule",
+          "source": "YSscores"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "erik ten hag",
-      "why": "unsafe: 'attack'"
+      "title": "fenerbahce vs slavia prague",
+      "why": "unsafe: 'Betting'"
     },
     {
-      "title": "afc leopards",
-      "why": "unsafe: 'SportPesa'"
+      "title": "eva ngigi",
+      "why": "unsafe: 'Dies'"
     }
   ],
   "errors": {}

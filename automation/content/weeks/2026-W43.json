@@ -783,13 +783,80 @@
         "note": "Ground this in current news topics like Mashujaa Day or Eldoret housing rather than random job ads."
       },
       "drafted_at": "2026-10-20T12:05:52.680761+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1020e",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "600 *CEOs* issue a direct demand to President Ruto over taxes and loan interest rates.",
+      "fact": "Over 600 chief executive officers gathered to demand tax reforms and lower lending rates.",
+      "message": "600 CEOs demand tax reforms and lower interest rates from the President.",
+      "action": "Read the 600 CEOs' petition on kenyans.co.ke",
+      "beats": [
+        "Over *600* CEOs demand lower taxes and cheaper loans.",
+        "High levies and costly credit hurt private sector growth.",
+        "Fewer expanding firms means fewer jobs for young Kenyans.",
+        "Kenyans demand: the Treasury cuts borrowing costs."
+      ],
+      "photo_query": "Nairobi skyline",
+      "source": "Kenyans.co.ke, 2026-10-20",
+      "who": "President William Ruto and the National Treasury",
+      "where": "Nairobi",
+      "when": "20 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "High taxes and loan rates shrink business growth and kill local jobs.",
+      "bg": "usiku",
+      "publish_at": "2026-10-20T23:57:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "The High Court convicted Paul Mackenzie and 28 co-accused of murder, setting sentencing for November.",
+        "New law requires employers to provide clean breastfeeding spaces and breaks for working mothers.",
+        "IPOA opened applications for 41 jobs across multiple departments."
+      ],
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "600 CEOs Issue Demand to Ruto Over Taxes & Loan Interest Rates",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSnR6bTgwZGtBMFZnNGtxU1J4ZkVDMGJ1b1hHR29pMm05NVp2SDBtUl9CVnJUdk5FUnFXZFRvRWtWSXg2cjI5S0VtOTBUTDE1QzVjVC0zb1V4MWFVVi1SNjRGQVdEWVdSVldUNGExYlpzV2ozd0t6T24xLS1SZ0E4NXhSREwwVERxRUdyUHhnc2xBWkhPLXhZRGk5dDRtMzg?oc=5",
+          "published": "2026-10-20"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.6/10. Match the demand score and topic to the actual high-demand items on the news desk list."
+        ],
+        "warnings": [
+          "no caption yet"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 5,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 2,
+        "action": 3,
+        "fair": 5,
+        "impact": 5,
+        "avg": 4.6,
+        "note": "Match the demand score and topic to the actual high-demand items on the news desk list."
+      },
+      "drafted_at": "2026-10-20T21:13:05.041052+03:00"
     }
   ],
   "scripts": {
-    "radio": "Welcome back to Kenya on Record. This week on our Sauti segment, the Independent Policing Oversight Authority, IPOA, officially opened applications for 41 positions across multiple departments. These range from investigative officers to corporate support roles—crucial positions for an institution tasked with holding our police service accountable to the public.\n\nNow, here is the conversation we must have. Every time public sector vacancies are announced, predatory cartels emerge to target unemployed Kenyans. Let us make this completely clear: IPOA recruitment is conducted strictly through their official portal, and the application process does not cost a single shilling. There is no such thing as an interview reservation fee, an internal connection, or shortcut facilitation. If anyone asks you for money to secure one of these positions, they are conning you.\n\nAt the same time, we put IPOA on notice. The public demands a clean, transparent recruitment process that respects regional balance and rewards competence, not patronage. Those who watch over the police must themselves be beyond reproach.\n\nKwa ufupi: Shirika la IPOA limetangaza nafasi 41 za kazi katika idara mbalimbali. Maombi yote yanafanywa bure kabisa kupitia tovuti yao rasmi. Usikubali kulipa mtu yeyote pesa ili upate kazi au kuitwa kwenye mahojiano. Kazi za umma si za kuuzwa—chunga usidanganywe.",
-    "voice_note": "Habari zenu. Quick accountability update from Kenya on Record that you should forward to family and job-hunting groups. IPOA—the policing oversight authority—has advertised 41 vacancies across several departments. While this is a welcome opportunity, please stay alert. The moment public service jobs drop, conmen start circulating fake links and promising backdoor slots for a fee. Do not send anyone money. IPOA does not charge a single cent for applications, vetting, or interviews. Apply directly via their official portal, meet the qualifications, and protect your hard-earned money. If anyone asks for 'facilitation cash', that is a scam. Pata kazi kihalali, usikubali kuibiwa.",
-    "sms": "IPOA is hiring for 41 positions. Remember: government job applications are 100% free. Never pay anyone for interviews, forms, or placement. Usiibiwe!",
-    "reels": "IPOA has officially opened applications for 41 jobs across multiple departments. But here is the golden rule: public service jobs are never for sale. Do not send a single cent to brokers, agents, or anyone promising to fast-track your interview. The process is fully transparent and free of charge. Apply directly through the official IPOA portal, tell a friend, and let’s keep public recruitment honest. Usiibiwe."
+    "radio": "Habari zenu, this is Kenya on Record. When ordinary wananchi raise concerns about the cost of living, high taxes, and expensive credit, the official response is often that we simply need to tighten our belts. But this week, the belt snapped in the boardroom.\n\nOver six hundred Chief Executive Officers—the individuals who run manufacturing plants, service firms, and logistics hubs—met directly with the President. Their message was resolute: the current tax regime and exorbitant interest rates are bleeding enterprise dry. These are not partisan figures playing politics; these are employers who balance payrolls every month. They pointed out the obvious: erratic, unpredictable tax policy drives investors across our borders, while high lending rates ensure local companies cannot borrow to scale. When businesses cannot expand, they downsize. When they downsize, households suffer, and state revenue drops.\n\nThe private sector has put it plainly: you cannot extract prosperity from a suffocated economy. The ball is now firmly with the Treasury and the Central Bank to decide whether they will listen to job creators or continue squeezing an exhausted productive sector.\n\nKwa ufupi: Zaidi ya wakurugenzi mia sita wa kampuni nchini wamemtaka Rais kurekebisha sera za kodi na kupunguza riba ya mikopo, wakionya kwamba mzigo uliopo sasa unalemaza biashara, unakandamiza uwekezaji, na kuangamiza nafasi za kazi.",
+    "voice_note": "Habari zenu. Quick accountability update from Kenya on Record. This week, the conversation on the cost of doing business reached the highest office. Over 600 CEOs held a session with President Ruto, and they did not mince their words. Their demand was direct: fix the erratic tax policies and lower the cost of credit. For months, everyday citizens have talked about shrinking wallets. Now, corporate Kenya has brought the receipts. They told the President that aggressive taxation and punishing interest rates aren’t creating wealth—they’re driving capital out of Kenya, shutting down expansion, and putting jobs on the chopping block. You simply cannot tax a nation into prosperity while making borrowing impossible for the productive sector. Let’s see if policy follows reality. Share this with an entrepreneur today.",
+    "sms": "Usiibiwe: Unstable taxes and high interest rates hurt your pocket directly. Check total cost of credit before borrowing, and demand fiscal accountability.",
+    "reels": "When 600 CEOs look the President in the eye and say 'the tax burden is unbearable,' the debate is over. Corporate Kenya has drawn the line. They told State House that erratic tax hikes and crushing interest rates are choking local enterprises and destroying jobs. Squeezing productive business cannot replace sound economic management. The warning has been delivered. The only question left is: will the executive listen?"
   },
   "spend_usd": 0.0,
   "revision": 9
