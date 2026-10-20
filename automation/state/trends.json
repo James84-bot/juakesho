@@ -1,54 +1,10 @@
 {
-  "fetched": "2026-10-20T08:52:37.630450+00:00",
+  "fetched": "2026-10-20T10:26:16.853941+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "al hilal sfc vs al-hazem f.c. standings",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Al Hilal vs Al Hazem: Saudi Pro League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cq77p1vl18vkt",
-          "source": "BBC"
-        },
-        {
-          "title": "Martinelli köpft den Ball in den Winkel und erzielt den Siegtreffer für Al-Hilal",
-          "url": "https://onefootball.com/en/video/martinelli-koepft-den-ball-in-den-winkel-und-erzielt-den-siegtreffer-fuer-al-hilal-3KvbtrOXq0Rxe2IHRG1P2vxa5dF",
-          "source": "OneFootball"
-        },
-        {
-          "title": "Video: Is Salem Al-Dawsari turning into a substitute at Al-Hilal?",
-          "url": "https://www.goal.com/en/news/video-is-salem-al-dawsari-turning-into-a-substitute-at-al-hilal/blt3d42c9cfb1ee6b57",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mashujaa",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Mashujaa Day: Ruto’s balancing act as North Rift hosts historic event in Eldoret",
-          "url": "https://nation.africa/kenya/news/politics/mashujaa-day-ruto-s-balancing-act-as-north-rift-hosts-historic-event-in-eldoret--5638122",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Watch Live: Mashujaa Day celebrations begin in earnest in Eldoret",
-          "url": "https://www.kbc.co.ke/watch-live-mashujaa-day-celebrations-begin-in-earnest-in-eldoret/",
-          "source": "KBC Digital"
-        },
-        {
-          "title": "Mashujaa Day: Maroon Commandos entertain Eldoret crowd",
-          "url": "https://www.the-star.co.ke/news/2026-10-20-mashujaa-day-maroon-commandos-entertain-eldoret-crowd",
-          "source": "The Star, Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "ipoa",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "IPOA advertises 41 vacancies in fresh recruitment drive",
@@ -69,47 +25,8 @@
     },
     {
       "geo": "KE",
-      "title": "travel warning",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "US says travelers should reconsider Kenya trips on health risks amid Ebola spread",
-          "url": "https://www.reuters.com/world/africa/us-state-department-asks-americans-reconsider-travel-kenya-2026-10-19/",
-          "source": "Reuters"
-        },
-        {
-          "title": "US raises Kenya travel advisory to Level 3 over Ebola",
-          "url": "https://www.the-star.co.ke/news/2026-10-20-us-raises-kenya-travel-advisory-to-level-3-over-ebola",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "U.S. Names Kenyan Areas Americans Should Avoid in New Advisory",
-          "url": "https://www.kenyans.co.ke/news/127958-us-issues-level-3-travel-advisory-kenya-flags-eastleigh-kibera",
-          "source": "Kenyans.co.ke"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "trabzonspor vs beşiktaş standings",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Rejuvenated top scorer Mohamed Salah inspires Trabzonspor to crucial derby win over Besiktas as Andre Onana continues to shine",
-          "url": "https://www.goal.com/en-ke/lists/rejuvenated-top-scorer-mohamed-salah-inspires-trabzonspor-crucial-derby-win-besiktas-andre-onana-continues-shine/blt1c8c00f771852804",
-          "source": "Goal.com"
-        },
-        {
-          "title": "How and Where to Watch: Trabzonspor vs Beşiktaş LIVE on beIN SPORTS",
-          "url": "https://www.beinsports.com/en-us/soccer/sper-lig/articles/how-and-where-to-watch-trabzonspor-vs-be-ikta-live-on-bein-sports-2026-10-19",
-          "source": "beIN SPORTS"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "kenha world bank road project",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "KeNHA Unveils Plans to Construct 536KM of Roads Linking 7 Counties",
@@ -131,7 +48,7 @@
     {
       "geo": "KE",
       "title": "mostafa ziko",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Egypt hit with FIFA sanctions! Hossam Hassan, Ibrahim Hassan and Mostafa Zico punished after Argentina World Cup clash",
@@ -142,35 +59,124 @@
     },
     {
       "geo": "KE",
-      "title": "torino fc",
+      "title": "citizen tv",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Citizen TV journalist Francis Ode arrested in Nairobi",
+          "url": "https://citizen.digital/article/citizen-tv-journalist-francis-ode-arrested-inairobi-n392385",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "Police Arrest Citizen TV Journalist Covering Fuel Protests in Nairobi CBD",
+          "url": "https://www.kenyans.co.ke/news/127970-citizen-tv-journalist-odee-francis-arrested-while-covering-protests-nairobi-cbd",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Citizen TV Journalist Arrested In Nairobi CBD",
+          "url": "https://thekenyatimes.com/breaking-news/citizen-tv-journalist-arrested-in-nairobi-cbd/",
+          "source": "The Kenya Times"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "antoine semenyo",
       "traffic": "100+",
       "news": [
         {
-          "title": "Serie A ai raggi X: crisi Parma, rilancio Simeone e crollo Cagliari",
-          "url": "https://www.diretta.it/news/calcio-serie-a-la-serie-a-ai-raggi-x-la-crisi-del-parma-la-frenata-del-cagliari-e-il-riscatto-di-simeone/Ymu0TcWs/",
-          "source": "Diretta"
+          "title": "Erling Haaland doubt, Antoine Semenyo injured: Who could play for Man City against AEK Athens?",
+          "url": "https://www.bbc.com/sport/football/articles/c5djv21rkekwo",
+          "source": "BBC"
         },
         {
-          "title": "Serie A, Torino e Monza vincono in goleada, stasera la Champions League - 20/10/2026",
-          "url": "https://www.raiplay.it/video/2026/10/Serie-A-Torino-e-Monza-vincono-in-goleada-stasera-la-Champions-League---1mattina-News-20102026-9aecfc53-deec-45ab-ab0e-d704e2d16c8c.html",
-          "source": "RaiPlay"
+          "title": "Semenyo out for eight weeks, says Maresca",
+          "url": "https://www.mancity.com/news/mens/maresca-aek-athen-written-press-conference-63928003",
+          "source": "Manchester City FC"
         },
         {
-          "title": "BAGOLOZOOM di Claudio Mastellari / SENZA PAROLE (E SENZA PRIMO TEMPO)",
-          "url": "https://www.stadiotardini.it/2026/10/bagolozoom-di-claudio-mastellari-senza-parole-e-senza-primo-tempo.html",
-          "source": "Stadio Tardini"
+          "title": "Maresca faces anxious wait over Haaland injury scare",
+          "url": "https://www.standardmedia.co.ke/sports/premier-league/article/2001560363/maresca-faces-anxious-wait-over-haaland-injury-scare",
+          "source": "The Standard"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "games",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "WNBA Finals 2026: Valkyries vs. Dream schedule, scores, more",
+          "url": "https://www.espn.com/wnba/story/_/id/50176202/2026-wnba-finals-valkyries-dream-schedule-scores-news",
+          "source": "ESPN"
+        },
+        {
+          "title": "Angel Reese dominates Game 2 as Atlanta Dream even WNBA Finals against Golden State Valkyries",
+          "url": "https://www.foxnews.com/outkick-sports/angel-reese-dominates-game-2-atlanta-dream-even-wnba-finals-golden-state-valkyries",
+          "source": "Fox News"
+        },
+        {
+          "title": "Angel Reese has 30 points, 16 rebounds as Dream beat Valkyries 79-65 to even WNBA Finals at 1-1",
+          "url": "https://apnews.com/article/dream-valkyries-score-wnba-finals-game-2-8561417b17cc6fb3e3e890e331fb6525",
+          "source": "AP News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "play store app",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "What’s new in Android’s October 2026 Google System Updates [U]",
+          "url": "https://9to5google.com/2026/10/19/october-2026-google-system-updates/",
+          "source": "9to5Google"
+        },
+        {
+          "title": "Android October 2026 updates boost Play services and Play Store",
+          "url": "https://www.newsbytesapp.com/news/science/android-october-2026-updates-boost-play-services-and-play-store/tldr",
+          "source": "NewsBytes"
+        },
+        {
+          "title": "Google Wallet may be getting ready for 2 major new features",
+          "url": "https://www.androidauthority.com/google-wallet-agents-auto-add-passes-from-partners-3724191/",
+          "source": "Android Authority"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "liverpool vs villarreal prediction",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Virgil van Dijk: Winning is a habit - and it is a habit we all want to get into",
+          "url": "https://www.liverpoolfc.com/news/virgil-van-dijk-villarreal-matchday-programme-notes",
+          "source": "Liverpool FC"
+        },
+        {
+          "title": "Champions League build-up LIVE: Man City team news; Liverpool team news; managers speaking",
+          "url": "https://www.bbc.com/sport/football/live/c90k07gyvjx6t",
+          "source": "BBC"
+        },
+        {
+          "title": "Liverpool XI vs Villarreal: Predicted lineup and confirmed team news",
+          "url": "https://www.standard.co.uk/sport/football/liverpool-fc-xi-vs-villarreal-predicted-lineup-confirmed-team-news-injury-latest-champions-league-2026-today-b1301507.html",
+          "source": "London Evening Standard"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "stuttgart vs atletico madrid prediction",
-      "why": "unsafe: 'Betting'"
+      "title": "benjamin netanyahu",
+      "why": "unsafe: 'attack'"
     },
     {
-      "title": "psg vs barcelona prediction",
-      "why": "unsafe: 'bet'"
+      "title": "stuttgart vs atletico madrid prediction",
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
