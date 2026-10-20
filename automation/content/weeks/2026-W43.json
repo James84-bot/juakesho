@@ -60,7 +60,7 @@
         "outlet": "Kenya Wildlife Service",
         "photo_query": "Nairobi National Park skyline giraffe Kenya"
       },
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": []
@@ -93,7 +93,11 @@
       "reel": true,
       "tg_msg": 375,
       "fresh_checked": "2026-10-19T23:00:22.630543+03:00",
-      "decided_at": "2026-10-19T23:20:38.940099+03:00"
+      "decided_at": "2026-10-19T23:20:38.940099+03:00",
+      "published_at": "2026-10-20T12:48:07.503095+03:00",
+      "ig_id": "18107150633625467",
+      "fb_id": "2726728891133606",
+      "story_id": "18632066827022520"
     },
     {
       "id": "2026-w43-d3-promise-r11",
