@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-20T10:26:16.853941+00:00",
+  "fetched": "2026-10-20T11:24:34.131655+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -20,6 +20,50 @@
           "title": "IPOA Announces Job Vacancies; How to Apply",
           "url": "https://nairobileo.co.ke/news/article/30933/ipoa-announces-job-vacancies-how-to-apply",
           "source": "Nairobi Leo"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "games",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Angel Reese has 30 points, 16 rebounds as Dream even WNBA Finals vs. Valkyries",
+          "url": "https://www.espn.com/wnba/story/_/id/50223797/angel-reese-30-points-16-rebounds-dream-even-wnba-finals-vs-valkyries",
+          "source": "ESPN"
+        },
+        {
+          "title": "Natalie Nakase states Dream out-hustled Valkyries in Game 2 to even WNBA Finals",
+          "url": "https://sports.yahoo.com/videos/natalie-nakase-states-dream-hustled-103357398.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Angel Reese dominates Game 2 as Atlanta Dream even WNBA Finals against Golden State Valkyries",
+          "url": "https://www.foxnews.com/outkick-sports/angel-reese-dominates-game-2-atlanta-dream-even-wnba-finals-golden-state-valkyries",
+          "source": "Fox News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "liverpool vs villarreal prediction",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Champions League build-up LIVE: Man City team news; Liverpool team news; managers speaking",
+          "url": "https://www.bbc.com/sport/football/live/c90k07gyvjx6t",
+          "source": "BBC"
+        },
+        {
+          "title": "Virgil van Dijk: Winning is a habit - and it is a habit we all want to get into",
+          "url": "https://www.liverpoolfc.com/news/virgil-van-dijk-villarreal-matchday-programme-notes",
+          "source": "Liverpool FC"
+        },
+        {
+          "title": "Liverpool XI vs Villarreal: Predicted lineup and confirmed team news",
+          "url": "https://www.standard.co.uk/sport/football/liverpool-fc-xi-vs-villarreal-predicted-lineup-confirmed-team-news-injury-latest-champions-league-2026-today-b1301507.html",
+          "source": "London Evening Standard"
         }
       ]
     },
@@ -73,9 +117,9 @@
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "Citizen TV Journalist Arrested In Nairobi CBD",
-          "url": "https://thekenyatimes.com/breaking-news/citizen-tv-journalist-arrested-in-nairobi-cbd/",
-          "source": "The Kenya Times"
+          "title": "Ode Francis: Citizen TV Crime Reporter Arrested in Nairobi",
+          "url": "https://www.tuko.co.ke/kenya/counties/643792-ode-francis-citizen-tv-crime-reporter-arrested-nairobi/",
+          "source": "Tuko News"
         }
       ],
       "civic": true
@@ -104,28 +148,6 @@
     },
     {
       "geo": "KE",
-      "title": "games",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "WNBA Finals 2026: Valkyries vs. Dream schedule, scores, more",
-          "url": "https://www.espn.com/wnba/story/_/id/50176202/2026-wnba-finals-valkyries-dream-schedule-scores-news",
-          "source": "ESPN"
-        },
-        {
-          "title": "Angel Reese dominates Game 2 as Atlanta Dream even WNBA Finals against Golden State Valkyries",
-          "url": "https://www.foxnews.com/outkick-sports/angel-reese-dominates-game-2-atlanta-dream-even-wnba-finals-golden-state-valkyries",
-          "source": "Fox News"
-        },
-        {
-          "title": "Angel Reese has 30 points, 16 rebounds as Dream beat Valkyries 79-65 to even WNBA Finals at 1-1",
-          "url": "https://apnews.com/article/dream-valkyries-score-wnba-finals-game-2-8561417b17cc6fb3e3e890e331fb6525",
-          "source": "AP News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "play store app",
       "traffic": "100+",
       "news": [
@@ -143,28 +165,6 @@
           "title": "Google Wallet may be getting ready for 2 major new features",
           "url": "https://www.androidauthority.com/google-wallet-agents-auto-add-passes-from-partners-3724191/",
           "source": "Android Authority"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "liverpool vs villarreal prediction",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Virgil van Dijk: Winning is a habit - and it is a habit we all want to get into",
-          "url": "https://www.liverpoolfc.com/news/virgil-van-dijk-villarreal-matchday-programme-notes",
-          "source": "Liverpool FC"
-        },
-        {
-          "title": "Champions League build-up LIVE: Man City team news; Liverpool team news; managers speaking",
-          "url": "https://www.bbc.com/sport/football/live/c90k07gyvjx6t",
-          "source": "BBC"
-        },
-        {
-          "title": "Liverpool XI vs Villarreal: Predicted lineup and confirmed team news",
-          "url": "https://www.standard.co.uk/sport/football/liverpool-fc-xi-vs-villarreal-predicted-lineup-confirmed-team-news-injury-latest-champions-league-2026-today-b1301507.html",
-          "source": "London Evening Standard"
         }
       ]
     }
