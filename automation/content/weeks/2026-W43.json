@@ -678,7 +678,7 @@
           "published": "2026-10-20"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -708,7 +708,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:US_infantry,_Kenya_Defense_Forces_rangers,_familiarize_themselves_with_principles_of_Unmanned_Aircraft_Systems_(9575214).jpg",
       "reel": true,
-      "tg_msg": 412
+      "tg_msg": 412,
+      "decided_at": "2026-10-20T10:09:18.513825+03:00"
     }
   ],
   "scripts": {
