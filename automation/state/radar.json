@@ -1,56 +1,20 @@
 {
- "fetched": "2026-10-20T06:06:35.199447+00:00",
+ "fetched": "2026-10-20T08:52:43.913445+00:00",
  "x": [
   {
    "name": "#MashujaaDay",
    "tweets": ""
   },
   {
-   "name": "#NatembeyaIsLying",
+   "name": "#BetterHealthcareForNandi",
    "tweets": ""
   },
   {
-   "name": "Uongo Tawe",
+   "name": "Kapsabet Referral Hospital",
    "tweets": ""
   },
   {
-   "name": "Mbele Pamoja",
-   "tweets": ""
-  },
-  {
-   "name": "#KhemjiraForeverTheSeries",
-   "tweets": ""
-  },
-  {
-   "name": "#TheGravityOfRapture",
-   "tweets": ""
-  },
-  {
-   "name": "Usawa Ni Sawa",
-   "tweets": ""
-  },
-  {
-   "name": "dp waiguru",
-   "tweets": ""
-  },
-  {
-   "name": "#เขมจิราต้องรอดตลอดกาลSeries",
-   "tweets": ""
-  },
-  {
-   "name": "Universal Health Coverage",
-   "tweets": ""
-  },
-  {
-   "name": "gender equality",
-   "tweets": ""
-  },
-  {
-   "name": "ruto delivers ahp",
-   "tweets": ""
-  },
-  {
-   "name": "Kitale Market",
+   "name": "670Beds For BetterCare",
    "tweets": ""
   },
   {
@@ -58,7 +22,59 @@
    "tweets": ""
   },
   {
-   "name": "World Bank",
+   "name": "#RobiVisitorApp",
+   "tweets": ""
+  },
+  {
+   "name": "Contactless VisitorApp",
+   "tweets": ""
+  },
+  {
+   "name": "Kenya",
+   "tweets": ""
+  },
+  {
+   "name": "#NatembeyaIsLying",
+   "tweets": ""
+  },
+  {
+   "name": "dp waiguru",
+   "tweets": ""
+  },
+  {
+   "name": "#TheGravityOfRapture",
+   "tweets": ""
+  },
+  {
+   "name": "Uongo Tawe",
+   "tweets": ""
+  },
+  {
+   "name": "KDSP",
+   "tweets": ""
+  },
+  {
+   "name": "Gender Equality",
+   "tweets": ""
+  },
+  {
+   "name": "Ruto Delivers AHP",
+   "tweets": ""
+  },
+  {
+   "name": "Mau Mau",
+   "tweets": ""
+  },
+  {
+   "name": "Universal Health Coverage",
+   "tweets": ""
+  },
+  {
+   "name": "Rwanda",
+   "tweets": ""
+  },
+  {
+   "name": "Eldoret",
    "tweets": ""
   },
   {
@@ -70,15 +86,11 @@
    "tweets": ""
   },
   {
-   "name": "Contactless VisitorApp",
+   "name": "Kitale Market",
    "tweets": ""
   },
   {
-   "name": "Eldoret",
-   "tweets": ""
-  },
-  {
-   "name": "Zone VA2",
+   "name": "Mbele Pamoja",
    "tweets": ""
   },
   {
@@ -86,15 +98,19 @@
    "tweets": ""
   },
   {
-   "name": "Kipchoge Keino Stadium",
+   "name": "End The Debt Trap",
    "tweets": ""
   },
   {
-   "name": "Zone 2900",
+   "name": "Obinna",
    "tweets": ""
   },
   {
    "name": "84 jua kali",
+   "tweets": ""
+  },
+  {
+   "name": "Kipchoge Keino Stadium",
    "tweets": ""
   },
   {
@@ -104,29 +120,551 @@
   {
    "name": "ksh 264",
    "tweets": ""
-  },
-  {
-   "name": "Tesa",
-   "tweets": ""
-  },
-  {
-   "name": "kitale level 5 hospital",
-   "tweets": ""
-  },
-  {
-   "name": "Maumau",
-   "tweets": ""
-  },
-  {
-   "name": "Paul Mackenzie",
-   "tweets": ""
   }
  ],
- "videos": [],
- "errors": {
-  "Citizen TV": "HTTP Error 500: Internal Server Error",
-  "NTV Kenya": "HTTP Error 404: Not Found",
-  "KTN News": "HTTP Error 404: Not Found"
- },
- "catalog": []
+ "videos": [
+  {
+   "title": "The Kenya Air Force showcases its aerial prowess with an impressive military aircraft fly-past",
+   "channel": "Citizen TV",
+   "views": 5953,
+   "published": "2026-10-20T07:44:03+00:00",
+   "per_hour": 5200,
+   "url": "https://www.youtube.com/watch?v=0SXt_DsQiMg",
+   "short": "https://youtube.com/shorts/0SXt_DsQiMg"
+  },
+  {
+   "title": "President Ruto inspects the Guard of Honour during the Mashujaa Day 2026 celebrations in Eldoret",
+   "channel": "Citizen TV",
+   "views": 5259,
+   "published": "2026-10-20T07:19:22+00:00",
+   "per_hour": 3380,
+   "url": "https://www.youtube.com/watch?v=_2UDH80dinE",
+   "short": "https://youtube.com/shorts/_2UDH80dinE"
+  },
+  {
+   "title": "Military Delivers Spectacular Air Show at 63rd Mashujaa Day Celebrations in Eldoret",
+   "channel": "KTN News",
+   "views": 3273,
+   "published": "2026-10-20T07:47:06+00:00",
+   "per_hour": 2992,
+   "url": "https://www.youtube.com/watch?v=ZGj5LzDOG94",
+   "short": "https://youtube.com/shorts/ZGj5LzDOG94"
+  },
+  {
+   "title": "KDF showcases marching prowess during Mashujaa Day celebrations at Kipchoge Keino Stadium",
+   "channel": "NTV Kenya",
+   "views": 3296,
+   "published": "2026-10-20T07:38:39+00:00",
+   "per_hour": 2669,
+   "url": "https://www.youtube.com/watch?v=8O9xoX7XsAY",
+   "short": "https://youtube.com/shorts/8O9xoX7XsAY"
+  },
+  {
+   "title": "Mashujaa Day: President Ruto inspects guard of honour at Kipchoge Keino Stadium",
+   "channel": "NTV Kenya",
+   "views": 3534,
+   "published": "2026-10-20T07:31:46+00:00",
+   "per_hour": 2619,
+   "url": "https://www.youtube.com/watch?v=lAaZcE0llPc",
+   "short": "https://youtube.com/shorts/lAaZcE0llPc"
+  },
+  {
+   "title": "Full Military parade at the 63rd Mashujaa Day Celebrations",
+   "channel": "KTN News",
+   "views": 2238,
+   "published": "2026-10-20T07:44:19+00:00",
+   "per_hour": 1963,
+   "url": "https://www.youtube.com/watch?v=nyIMjFSL1Rg",
+   "short": "https://youtube.com/shorts/nyIMjFSL1Rg"
+  },
+  {
+   "title": "President Ruto inspects the guard of honor at the 63rd Mashujaa Day celebrations in Eldoret",
+   "channel": "KTN News",
+   "views": 1927,
+   "published": "2026-10-20T07:14:07+00:00",
+   "per_hour": 1172,
+   "url": "https://www.youtube.com/watch?v=ik8S0rwCEYc",
+   "short": "https://youtube.com/shorts/ik8S0rwCEYc"
+  },
+  {
+   "title": "President Ruto arrives at Kipchoge Keino Stadium in Eldoret for the Mashujaa Day 2026 celebrations",
+   "channel": "Citizen TV",
+   "views": 1743,
+   "published": "2026-10-20T07:15:01+00:00",
+   "per_hour": 1070,
+   "url": "https://www.youtube.com/watch?v=FJ_UIJ7DL3M",
+   "short": "https://youtube.com/shorts/FJ_UIJ7DL3M"
+  },
+  {
+   "title": "MONDAY REPORT NEWS ~19TH OCT, 2026",
+   "channel": "Citizen TV",
+   "views": 10468,
+   "published": "2026-10-19T21:05:57+00:00",
+   "per_hour": 889,
+   "url": "https://www.youtube.com/watch?v=QJRUAkX0w4Y",
+   "short": "https://youtube.com/shorts/QJRUAkX0w4Y"
+  },
+  {
+   "title": "Mashujaa Day Celebrations 2026: Sights and Sounds",
+   "channel": "NTV Kenya",
+   "views": 1137,
+   "published": "2026-10-20T07:26:01+00:00",
+   "per_hour": 787,
+   "url": "https://www.youtube.com/watch?v=2WkISrFxFXA",
+   "short": "https://youtube.com/shorts/2WkISrFxFXA"
+  },
+  {
+   "title": "President Ruto takes a lap of honour around Kipchoge Keino Stadium during Mashujaa Day celebrations",
+   "channel": "NTV Kenya",
+   "views": 1337,
+   "published": "2026-10-20T07:08:10+00:00",
+   "per_hour": 767,
+   "url": "https://www.youtube.com/watch?v=ZHL3LL0qq84",
+   "short": "https://youtube.com/shorts/ZHL3LL0qq84"
+  },
+  {
+   "title": "President Ruto arrives for the 63rd Mashujaa celebrations at Kipchoge Keino Stadium",
+   "channel": "KTN News",
+   "views": 1306,
+   "published": "2026-10-20T07:07:50+00:00",
+   "per_hour": 747,
+   "url": "https://www.youtube.com/watch?v=E--ufaUL0dE",
+   "short": "https://youtube.com/shorts/E--ufaUL0dE"
+  },
+  {
+   "title": "Kenyans Sleep At Kipchoge Keino Stadium Ready For Mashujaa Day",
+   "channel": "NTV Kenya",
+   "views": 3411,
+   "published": "2026-10-20T04:13:02+00:00",
+   "per_hour": 732,
+   "url": "https://www.youtube.com/watch?v=Wju0zNsrnSY",
+   "short": "https://youtube.com/shorts/Wju0zNsrnSY"
+  },
+  {
+   "title": "Chief of the Defence Forces General Charles Kahariri escorts President William Ruto to the VIP dais",
+   "channel": "Citizen TV",
+   "views": 955,
+   "published": "2026-10-20T07:33:29+00:00",
+   "per_hour": 723,
+   "url": "https://www.youtube.com/watch?v=K40vH2k0prI",
+   "short": "https://youtube.com/shorts/K40vH2k0prI"
+  },
+  {
+   "title": "Kenyans Arrive at Kipchoge Keino Stadium as Early as 5am for 63rd Mashujaa Day Celebrations",
+   "channel": "KTN News",
+   "views": 1894,
+   "published": "2026-10-20T05:29:07+00:00",
+   "per_hour": 558,
+   "url": "https://www.youtube.com/watch?v=-zKGrpnv4lE",
+   "short": "https://youtube.com/shorts/-zKGrpnv4lE"
+  }
+ ],
+ "errors": {},
+ "catalog": [
+  {
+   "title": "President Ruto orders 23,000 households in Nandi County to be connected to electricity by April 2027",
+   "channel": "Citizen TV",
+   "views": 269,
+   "published": "2026-10-20T07:59:23+00:00",
+   "per_hour": 269,
+   "url": "https://www.youtube.com/watch?v=HarC8Klkaa4",
+   "short": "https://youtube.com/shorts/HarC8Klkaa4"
+  },
+  {
+   "title": "COP17 Armenia: Utamaduni wa Armenia watoa wito wa kulinda Bioanuwai na tofauti za tamaduni",
+   "channel": "NTV Kenya",
+   "views": 23,
+   "published": "2026-10-20T07:52:44+00:00",
+   "per_hour": 23,
+   "url": "https://www.youtube.com/watch?v=jAHiEaNtCo4",
+   "short": "https://youtube.com/shorts/jAHiEaNtCo4"
+  },
+  {
+   "title": "Military Delivers Spectacular Air Show at 63rd Mashujaa Day Celebrations in Eldoret",
+   "channel": "KTN News",
+   "views": 3273,
+   "published": "2026-10-20T07:47:06+00:00",
+   "per_hour": 2992,
+   "url": "https://www.youtube.com/watch?v=ZGj5LzDOG94",
+   "short": "https://youtube.com/shorts/ZGj5LzDOG94"
+  },
+  {
+   "title": "Full Military parade at the 63rd Mashujaa Day Celebrations",
+   "channel": "KTN News",
+   "views": 2238,
+   "published": "2026-10-20T07:44:19+00:00",
+   "per_hour": 1963,
+   "url": "https://www.youtube.com/watch?v=nyIMjFSL1Rg",
+   "short": "https://youtube.com/shorts/nyIMjFSL1Rg"
+  },
+  {
+   "title": "The Kenya Air Force showcases its aerial prowess with an impressive military aircraft fly-past",
+   "channel": "Citizen TV",
+   "views": 5953,
+   "published": "2026-10-20T07:44:03+00:00",
+   "per_hour": 5200,
+   "url": "https://www.youtube.com/watch?v=0SXt_DsQiMg",
+   "short": "https://youtube.com/shorts/0SXt_DsQiMg"
+  },
+  {
+   "title": "KDF showcases marching prowess during Mashujaa Day celebrations at Kipchoge Keino Stadium",
+   "channel": "NTV Kenya",
+   "views": 3296,
+   "published": "2026-10-20T07:38:39+00:00",
+   "per_hour": 2669,
+   "url": "https://www.youtube.com/watch?v=8O9xoX7XsAY",
+   "short": "https://youtube.com/shorts/8O9xoX7XsAY"
+  },
+  {
+   "title": "Chief of the Defence Forces General Charles Kahariri escorts President William Ruto to the VIP dais",
+   "channel": "Citizen TV",
+   "views": 955,
+   "published": "2026-10-20T07:33:29+00:00",
+   "per_hour": 723,
+   "url": "https://www.youtube.com/watch?v=K40vH2k0prI",
+   "short": "https://youtube.com/shorts/K40vH2k0prI"
+  },
+  {
+   "title": "Mashujaa Day: President Ruto inspects guard of honour at Kipchoge Keino Stadium",
+   "channel": "NTV Kenya",
+   "views": 3534,
+   "published": "2026-10-20T07:31:46+00:00",
+   "per_hour": 2619,
+   "url": "https://www.youtube.com/watch?v=lAaZcE0llPc",
+   "short": "https://youtube.com/shorts/lAaZcE0llPc"
+  },
+  {
+   "title": "Mashujaa Day Celebrations 2026: Sights and Sounds",
+   "channel": "NTV Kenya",
+   "views": 1137,
+   "published": "2026-10-20T07:26:01+00:00",
+   "per_hour": 787,
+   "url": "https://www.youtube.com/watch?v=2WkISrFxFXA",
+   "short": "https://youtube.com/shorts/2WkISrFxFXA"
+  },
+  {
+   "title": "President Ruto inspects the Guard of Honour during the Mashujaa Day 2026 celebrations in Eldoret",
+   "channel": "Citizen TV",
+   "views": 5259,
+   "published": "2026-10-20T07:19:22+00:00",
+   "per_hour": 3380,
+   "url": "https://www.youtube.com/watch?v=_2UDH80dinE",
+   "short": "https://youtube.com/shorts/_2UDH80dinE"
+  },
+  {
+   "title": "President Ruto arrives at Kipchoge Keino Stadium in Eldoret for the Mashujaa Day 2026 celebrations",
+   "channel": "Citizen TV",
+   "views": 1743,
+   "published": "2026-10-20T07:15:01+00:00",
+   "per_hour": 1070,
+   "url": "https://www.youtube.com/watch?v=FJ_UIJ7DL3M",
+   "short": "https://youtube.com/shorts/FJ_UIJ7DL3M"
+  },
+  {
+   "title": "President Ruto inspects the guard of honor at the 63rd Mashujaa Day celebrations in Eldoret",
+   "channel": "KTN News",
+   "views": 1927,
+   "published": "2026-10-20T07:14:07+00:00",
+   "per_hour": 1172,
+   "url": "https://www.youtube.com/watch?v=ik8S0rwCEYc",
+   "short": "https://youtube.com/shorts/ik8S0rwCEYc"
+  },
+  {
+   "title": "President Ruto takes a lap of honour around Kipchoge Keino Stadium during Mashujaa Day celebrations",
+   "channel": "NTV Kenya",
+   "views": 1337,
+   "published": "2026-10-20T07:08:10+00:00",
+   "per_hour": 767,
+   "url": "https://www.youtube.com/watch?v=ZHL3LL0qq84",
+   "short": "https://youtube.com/shorts/ZHL3LL0qq84"
+  },
+  {
+   "title": "President Ruto arrives for the 63rd Mashujaa celebrations at Kipchoge Keino Stadium",
+   "channel": "KTN News",
+   "views": 1306,
+   "published": "2026-10-20T07:07:50+00:00",
+   "per_hour": 747,
+   "url": "https://www.youtube.com/watch?v=E--ufaUL0dE",
+   "short": "https://youtube.com/shorts/E--ufaUL0dE"
+  },
+  {
+   "title": "First Lady Rachel Ruto arrives at Kipchoge Keino Stadium for Mashujaa Day celebrations",
+   "channel": "NTV Kenya",
+   "views": 728,
+   "published": "2026-10-20T06:59:58+00:00",
+   "per_hour": 387,
+   "url": "https://www.youtube.com/watch?v=73AOOBDHGH8",
+   "short": "https://youtube.com/shorts/73AOOBDHGH8"
+  },
+  {
+   "title": "COP17: Kenya urged to turn agricultural innovation into a weapon against food insecurity.",
+   "channel": "NTV Kenya",
+   "views": 224,
+   "published": "2026-10-20T06:59:55+00:00",
+   "per_hour": 119,
+   "url": "https://www.youtube.com/watch?v=3Jq56DI6X1E",
+   "short": "https://youtube.com/shorts/3Jq56DI6X1E"
+  },
+  {
+   "title": "Ethiopian Prime Minister Abiy Ahmed arrives at Kipchoge Keino Stadium for Mashujaa Day celebrations",
+   "channel": "NTV Kenya",
+   "views": 651,
+   "published": "2026-10-20T06:55:03+00:00",
+   "per_hour": 332,
+   "url": "https://www.youtube.com/watch?v=idE17Xwd6VA",
+   "short": "https://youtube.com/shorts/idE17Xwd6VA"
+  },
+  {
+   "title": "Kindiki arrives at Kipchoge Keino Stadium for Mashujaa Day celebrations",
+   "channel": "NTV Kenya",
+   "views": 443,
+   "published": "2026-10-20T06:49:43+00:00",
+   "per_hour": 216,
+   "url": "https://www.youtube.com/watch?v=_dGvMovzFJg",
+   "short": "https://youtube.com/shorts/_dGvMovzFJg"
+  },
+  {
+   "title": "Mudavadi, Wetangula and Kingi arrive at Kipchoge Keino Stadium for Mashujaa Day celebrations",
+   "channel": "NTV Kenya",
+   "views": 619,
+   "published": "2026-10-20T06:47:47+00:00",
+   "per_hour": 297,
+   "url": "https://www.youtube.com/watch?v=ApDjwrQRDU4",
+   "short": "https://youtube.com/shorts/ApDjwrQRDU4"
+  },
+  {
+   "title": "Sifa Favour: From StreetChild To Philanthropist",
+   "channel": "NTV Kenya",
+   "views": 39,
+   "published": "2026-10-20T06:40:33+00:00",
+   "per_hour": 18,
+   "url": "https://www.youtube.com/watch?v=Yx_cBAuLepk",
+   "short": "https://youtube.com/shorts/Yx_cBAuLepk"
+  },
+  {
+   "title": "Kenyans explain why they flocked Kipchoge Keino Stadium for Mashujaa Day celebrations",
+   "channel": "NTV Kenya",
+   "views": 768,
+   "published": "2026-10-20T06:37:13+00:00",
+   "per_hour": 340,
+   "url": "https://www.youtube.com/watch?v=CEIBT-vjxKg",
+   "short": "https://youtube.com/shorts/CEIBT-vjxKg"
+  },
+  {
+   "title": "Celebrating Every-Day Shujaas | Daddy Owen",
+   "channel": "NTV Kenya",
+   "views": 27,
+   "published": "2026-10-20T06:34:19+00:00",
+   "per_hour": 12,
+   "url": "https://www.youtube.com/watch?v=1NPCe86NDBU",
+   "short": "https://youtube.com/shorts/1NPCe86NDBU"
+  },
+  {
+   "title": "Ruto allies express optimism as Kenya marks Mashujaa Day in Eldoret",
+   "channel": "NTV Kenya",
+   "views": 772,
+   "published": "2026-10-20T06:31:16+00:00",
+   "per_hour": 327,
+   "url": "https://www.youtube.com/watch?v=F1kCgnP9eOo",
+   "short": "https://youtube.com/shorts/F1kCgnP9eOo"
+  },
+  {
+   "title": "This is my hero: Happy Mashujaa Day!",
+   "channel": "Citizen TV",
+   "views": 951,
+   "published": "2026-10-20T06:00:07+00:00",
+   "per_hour": 331,
+   "url": "https://www.youtube.com/watch?v=H1jC1ROjc6Q",
+   "short": "https://youtube.com/shorts/H1jC1ROjc6Q"
+  },
+  {
+   "title": "Kenyans Arrive at Kipchoge Keino Stadium as Early as 5am for 63rd Mashujaa Day Celebrations",
+   "channel": "KTN News",
+   "views": 1894,
+   "published": "2026-10-20T05:29:07+00:00",
+   "per_hour": 558,
+   "url": "https://www.youtube.com/watch?v=-zKGrpnv4lE",
+   "short": "https://youtube.com/shorts/-zKGrpnv4lE"
+  },
+  {
+   "title": "Luchetu Likaka: The current regime mirrors KANU regime, the reform agenda has completely stalled",
+   "channel": "KTN News",
+   "views": 738,
+   "published": "2026-10-20T05:19:42+00:00",
+   "per_hour": 208,
+   "url": "https://www.youtube.com/watch?v=-Mkd1bhwpv4",
+   "short": "https://youtube.com/shorts/-Mkd1bhwpv4"
+  },
+  {
+   "title": "Promises vs reality: Where is Kenya?",
+   "channel": "KTN News",
+   "views": 479,
+   "published": "2026-10-20T05:13:53+00:00",
+   "per_hour": 131,
+   "url": "https://www.youtube.com/watch?v=_Um7bYcjwo4",
+   "short": "https://youtube.com/shorts/_Um7bYcjwo4"
+  },
+  {
+   "title": "Kenyans Sleep At Kipchoge Keino Stadium Ready For Mashujaa Day",
+   "channel": "NTV Kenya",
+   "views": 3411,
+   "published": "2026-10-20T04:13:02+00:00",
+   "per_hour": 732,
+   "url": "https://www.youtube.com/watch?v=Wju0zNsrnSY",
+   "short": "https://youtube.com/shorts/Wju0zNsrnSY"
+  },
+  {
+   "title": "Mara Sugar claim first win with 2-1 victory over Mombasa United",
+   "channel": "Citizen TV",
+   "views": 2251,
+   "published": "2026-10-19T21:12:16+00:00",
+   "per_hour": 193,
+   "url": "https://www.youtube.com/watch?v=7Uldfu6yT6o",
+   "short": "https://youtube.com/shorts/7Uldfu6yT6o"
+  },
+  {
+   "title": "Kenya’s hit squad extends winning streak to five at African Boxing Championships",
+   "channel": "Citizen TV",
+   "views": 1071,
+   "published": "2026-10-19T21:10:58+00:00",
+   "per_hour": 92,
+   "url": "https://www.youtube.com/watch?v=4SFcxo9HQrM",
+   "short": "https://youtube.com/shorts/4SFcxo9HQrM"
+  },
+  {
+   "title": "AFC Leopards and Kenya Police chase first win of the season",
+   "channel": "Citizen TV",
+   "views": 665,
+   "published": "2026-10-19T21:09:00+00:00",
+   "per_hour": 57,
+   "url": "https://www.youtube.com/watch?v=SadRcRozY50",
+   "short": "https://youtube.com/shorts/SadRcRozY50"
+  },
+  {
+   "title": "50 of Kenya’s 60 public-private partnership projects yet to begin implementation",
+   "channel": "Citizen TV",
+   "views": 2311,
+   "published": "2026-10-19T21:07:23+00:00",
+   "per_hour": 197,
+   "url": "https://www.youtube.com/watch?v=rw2zqFvrIbw",
+   "short": "https://youtube.com/shorts/rw2zqFvrIbw"
+  },
+  {
+   "title": "Mastercard and Moovn sign five-year deal to expand digital payments in East Africa",
+   "channel": "Citizen TV",
+   "views": 522,
+   "published": "2026-10-19T21:06:14+00:00",
+   "per_hour": 44,
+   "url": "https://www.youtube.com/watch?v=8q9buOqwlxU",
+   "short": "https://youtube.com/shorts/8q9buOqwlxU"
+  },
+  {
+   "title": "MONDAY REPORT NEWS ~19TH OCT, 2026",
+   "channel": "Citizen TV",
+   "views": 10468,
+   "published": "2026-10-19T21:05:57+00:00",
+   "per_hour": 889,
+   "url": "https://www.youtube.com/watch?v=QJRUAkX0w4Y",
+   "short": "https://youtube.com/shorts/QJRUAkX0w4Y"
+  },
+  {
+   "title": "KDC targets farmers and businesses with financing through SACCOs and cooperatives",
+   "channel": "Citizen TV",
+   "views": 341,
+   "published": "2026-10-19T21:04:29+00:00",
+   "per_hour": 29,
+   "url": "https://www.youtube.com/watch?v=8uTOczkSFos",
+   "short": "https://youtube.com/shorts/8uTOczkSFos"
+  },
+  {
+   "title": "Made in Kenya: Nebsam Digital Solutions uses technology to tackle vehicle theft",
+   "channel": "Citizen TV",
+   "views": 2403,
+   "published": "2026-10-19T21:00:20+00:00",
+   "per_hour": 202,
+   "url": "https://www.youtube.com/watch?v=kxaCOt8rshY",
+   "short": "https://youtube.com/shorts/kxaCOt8rshY"
+  },
+  {
+   "title": "DCP’s John Methu accuses Ruto of mismanaging the economy",
+   "channel": "Citizen TV",
+   "views": 517,
+   "published": "2026-10-19T20:57:44+00:00",
+   "per_hour": 43,
+   "url": "https://www.youtube.com/watch?v=fWpnVLaRqdY",
+   "short": "https://youtube.com/shorts/fWpnVLaRqdY"
+  },
+  {
+   "title": "“You Cannot Expect Police to Kiss You”: Gachagua’s 2023 Remarks on Protest Policing Revisited",
+   "channel": "KTN News",
+   "views": 3617,
+   "published": "2026-10-19T20:06:48+00:00",
+   "per_hour": 283,
+   "url": "https://www.youtube.com/watch?v=DhxDUvrZI6I",
+   "short": "https://youtube.com/shorts/DhxDUvrZI6I"
+  },
+  {
+   "title": "Eldoret, a city that isn't: Why Eldoret Residents Say Their City Is Being Neglected",
+   "channel": "KTN News",
+   "views": 1830,
+   "published": "2026-10-19T19:02:43+00:00",
+   "per_hour": 132,
+   "url": "https://www.youtube.com/watch?v=4pLhBgW8zFk",
+   "short": "https://youtube.com/shorts/4pLhBgW8zFk"
+  },
+  {
+   "title": "Team Kenya Finishes Sixth at World Amateur Golf Cup After Strong Comeback",
+   "channel": "KTN News",
+   "views": 303,
+   "published": "2026-10-19T19:01:27+00:00",
+   "per_hour": 22,
+   "url": "https://www.youtube.com/watch?v=2lIMr77XIY8",
+   "short": "https://youtube.com/shorts/2lIMr77XIY8"
+  },
+  {
+   "title": "Kenya's Hit Squad Remains Unbeaten After Two Days at African Boxing Championships",
+   "channel": "KTN News",
+   "views": 492,
+   "published": "2026-10-19T19:00:35+00:00",
+   "per_hour": 35,
+   "url": "https://www.youtube.com/watch?v=kYndR8WHfRM",
+   "short": "https://youtube.com/shorts/kYndR8WHfRM"
+  },
+  {
+   "title": "Mara Sugar Sink Mombasa United 2-1 to Claim FKF Premier League Victory",
+   "channel": "KTN News",
+   "views": 295,
+   "published": "2026-10-19T19:00:09+00:00",
+   "per_hour": 21,
+   "url": "https://www.youtube.com/watch?v=St0I7rr6MsM",
+   "short": "https://youtube.com/shorts/St0I7rr6MsM"
+  },
+  {
+   "title": "Kisumu Turns to Cold Rooms to Cut Food Waste and Protect Fish Traders",
+   "channel": "KTN News",
+   "views": 1205,
+   "published": "2026-10-19T18:51:21+00:00",
+   "per_hour": 86,
+   "url": "https://www.youtube.com/watch?v=XeqhOb8TOiU",
+   "short": "https://youtube.com/shorts/XeqhOb8TOiU"
+  },
+  {
+   "title": "31 Countries Unite in Nairobi to Demand Fair Share of Africa's Clean Energy Wealth",
+   "channel": "KTN News",
+   "views": 470,
+   "published": "2026-10-19T18:50:05+00:00",
+   "per_hour": 33,
+   "url": "https://www.youtube.com/watch?v=gokgr1hDlOw",
+   "short": "https://youtube.com/shorts/gokgr1hDlOw"
+  },
+  {
+   "title": "Small Traders Demand Tax Cuts as Import Costs and Customs Delays Bite",
+   "channel": "KTN News",
+   "views": 203,
+   "published": "2026-10-19T18:49:29+00:00",
+   "per_hour": 14,
+   "url": "https://www.youtube.com/watch?v=onr5qEr1aRE",
+   "short": "https://youtube.com/shorts/onr5qEr1aRE"
+  }
+ ]
 }
