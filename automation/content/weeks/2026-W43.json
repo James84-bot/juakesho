@@ -710,13 +710,78 @@
       "reel": true,
       "tg_msg": 412,
       "decided_at": "2026-10-20T10:09:18.513825+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1020m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Job Seekers",
+      "line": "IPOA advertises *41* vacant jobs for drivers, lawyers, and office assistants.",
+      "fact": "The Independent Policing Oversight Authority is recruiting staff across 41 new positions.",
+      "source": "Tuko News, 2026-10-20",
+      "photo_query": "Nairobi skyline",
+      "message": "IPOA opened applications for 41 jobs across multiple departments.",
+      "action": "Check the full vacancy list on the IPOA portal and apply before the deadline",
+      "beats": [
+        "IPOA advertises *41* job vacancies across Kenya.",
+        "Roles include drivers, lawyers, and office assistants.",
+        "Vacancies offer new jobs in police oversight.",
+        "Kenyans demand: IPOA conducts transparent hiring."
+      ],
+      "who": "IPOA",
+      "where": "National",
+      "when": "20 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Job seekers get fresh employment openings in public oversight.",
+      "caption": "IPOA has opened 41 vacancies for drivers, lawyers, and office assistants. Check the official portal for requirements and deadlines. Send this to someone looking for work.\n\n#IPOARecruitment #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-20T15:52:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The High Court convicted Paul Mackenzie and 28 co-accused of murder, setting sentencing for November.",
+        "New law requires employers to provide clean breastfeeding spaces and breaks for working mothers."
+      ],
+      "source_links": [
+        {
+          "outlet": "Tuko News",
+          "title": "IPOA Announces 41 Job Vacancies For Drivers, Lawyers, Office Assistants, Others",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdEc5TTZxZUJiVFh3NUFGb2VEcGdFUDA4cVE2anBzS1Uxblpub1V6aEVHTjNyWmFhMndmV3FSRzJnRnNjdzFrdVVpNHNhTnRkV1UzWXV4eFNCSnFIUnJncmRBZ29WenpVdDd3dm9UQ0E0ajY4eU5tUGw5YnAzY2FZNU5CR0ZBeHlOUmlqRGlJVlN0OHZhWUdsVkhDMHVnZ2FCYndsUkZVa2w?oc=5",
+          "published": "2026-10-20"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.9/10. Ground this in current news topics like Mashujaa Day or Eldoret housing rather than random job ads."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 5,
+        "send": 6,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 5,
+        "craft": 5,
+        "picture": 4,
+        "hold": 5,
+        "demand": 3,
+        "action": 5,
+        "fair": 6,
+        "impact": 5,
+        "avg": 4.9,
+        "note": "Ground this in current news topics like Mashujaa Day or Eldoret housing rather than random job ads."
+      },
+      "drafted_at": "2026-10-20T12:05:52.680761+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari zenu, listeners. This is Kenya on Record. Today, we address what happens when a mother returns to work after maternity leave. For far too long, working mothers in this country have been forced into degrading compromises—expressing milk in dirty office washrooms, enduring subtle penalties from HR, or being pushed out of their jobs entirely. That era is officially closing. Under the newly enacted legal provisions, every employer is now mandated to provide a clean, private, and sanitary breastfeeding space, alongside designated nursing breaks during working hours. Let us be clear: this is not a corporate perk. It is not an act of benevolence from your CEO. It is a statutory obligation under our labour laws. It exists to safeguard child health and ensure that a woman's career does not come at the cost of basic human dignity. If your workplace employs staff, setting up a safe, hygienic lactation space is now as mandatory as having clean running water or an occupational health standard. To every working mother listening today: understand your rights, cite the law, and refuse to let anyone treat your child’s nourishment as an inconvenience. Kwa kifupi: Sheria mpya sasa inalazimisha waajiri wote kutoa nafasi safi na salama za kunyonyesha, pamoja na kutoa muda rasmi wa kina mama kunyonyesha wakiwa kazini. Hii si hisani ya ofisi; ni haki yako kisheria.",
-    "voice_note": "Morning team, quick update from Kenya on Record that you need to pass around. If you or someone you know has recently returned to work after maternity leave, take note. The law now formally requires employers to provide clean, private, and secure lactation spaces, along with dedicated daily breaks for working mothers to express milk. The days of mothers pumping in cramped, unsanitary office toilets or feeling intimidated by management are over. An employer cannot legally dock your pay or penalize you for utilizing these breaks. It is a standard workplace requirement, plain and simple. If your HR department is pretending not to know the update, hold them accountable. Pass this note to any working mother or office group that needs to hear it today.",
-    "sms": "Usiibiwe: Employers are now legally required to give mothers clean breastfeeding rooms and daily breaks. Do not let HR treat your legal rights as a favor.",
-    "reels": "Pumping breastmilk in an office toilet stall is no longer just degrading—it is illegal. New labour regulations now mandate employers to provide clean, private breastfeeding spaces and dedicated nursing breaks for working mothers. Your livelihood should never come at the expense of your child’s nutrition. This isn’t company benevolence; it is statutory law. If your office hasn’t set up a compliant space, it's time to ask management hard questions."
+    "radio": "Welcome back to Kenya on Record. This week on our Sauti segment, the Independent Policing Oversight Authority, IPOA, officially opened applications for 41 positions across multiple departments. These range from investigative officers to corporate support roles—crucial positions for an institution tasked with holding our police service accountable to the public.\n\nNow, here is the conversation we must have. Every time public sector vacancies are announced, predatory cartels emerge to target unemployed Kenyans. Let us make this completely clear: IPOA recruitment is conducted strictly through their official portal, and the application process does not cost a single shilling. There is no such thing as an interview reservation fee, an internal connection, or shortcut facilitation. If anyone asks you for money to secure one of these positions, they are conning you.\n\nAt the same time, we put IPOA on notice. The public demands a clean, transparent recruitment process that respects regional balance and rewards competence, not patronage. Those who watch over the police must themselves be beyond reproach.\n\nKwa ufupi: Shirika la IPOA limetangaza nafasi 41 za kazi katika idara mbalimbali. Maombi yote yanafanywa bure kabisa kupitia tovuti yao rasmi. Usikubali kulipa mtu yeyote pesa ili upate kazi au kuitwa kwenye mahojiano. Kazi za umma si za kuuzwa—chunga usidanganywe.",
+    "voice_note": "Habari zenu. Quick accountability update from Kenya on Record that you should forward to family and job-hunting groups. IPOA—the policing oversight authority—has advertised 41 vacancies across several departments. While this is a welcome opportunity, please stay alert. The moment public service jobs drop, conmen start circulating fake links and promising backdoor slots for a fee. Do not send anyone money. IPOA does not charge a single cent for applications, vetting, or interviews. Apply directly via their official portal, meet the qualifications, and protect your hard-earned money. If anyone asks for 'facilitation cash', that is a scam. Pata kazi kihalali, usikubali kuibiwa.",
+    "sms": "IPOA is hiring for 41 positions. Remember: government job applications are 100% free. Never pay anyone for interviews, forms, or placement. Usiibiwe!",
+    "reels": "IPOA has officially opened applications for 41 jobs across multiple departments. But here is the golden rule: public service jobs are never for sale. Do not send a single cent to brokers, agents, or anyone promising to fast-track your interview. The process is fully transparent and free of charge. Apply directly through the official IPOA portal, tell a friend, and let’s keep public recruitment honest. Usiibiwe."
   },
   "spend_usd": 0.0,
   "revision": 9

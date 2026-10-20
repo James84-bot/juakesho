@@ -1,28 +1,6 @@
 {
-  "fetched": "2026-10-20T06:06:28.757656+00:00",
+  "fetched": "2026-10-20T08:52:37.630450+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "spurs vs coventry",
-      "traffic": "20000+",
-      "news": [
-        {
-          "title": "Spurs 3-1 Coventry: James Maddison shines on Tottenham return",
-          "url": "https://www.bbc.com/sport/football/articles/cwz0v8le7y3eo",
-          "source": "BBC"
-        },
-        {
-          "title": "James Maddison marks first Tottenham start in nearly 18 months with stunning goal in first Premier League win of season",
-          "url": "https://www.skysports.com/football/news/13601183/james-maddison-marks-first-tottenham-start-in-nearly-18-months-with-stunning-goal-in-first-premier-league-win-of-season",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Tottenham beat Coventry to claim first Premier League win of season – as it happened",
-          "url": "https://www.theguardian.com/football/live/2026/oct/19/tottenham-v-coventry-premier-league-live",
-          "source": "The Guardian"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "al hilal sfc vs al-hazem f.c. standings",
@@ -34,35 +12,57 @@
           "source": "BBC"
         },
         {
-          "title": "Full-length Replay: Al-Hilal vs Al-Hazem",
-          "url": "https://www.foxsports.com/replay/fmc-80s8uee9t8r5kc41",
-          "source": "FOX Sports"
-        },
-        {
           "title": "Martinelli köpft den Ball in den Winkel und erzielt den Siegtreffer für Al-Hilal",
           "url": "https://onefootball.com/en/video/martinelli-koepft-den-ball-in-den-winkel-und-erzielt-den-siegtreffer-fuer-al-hilal-3KvbtrOXq0Rxe2IHRG1P2vxa5dF",
           "source": "OneFootball"
+        },
+        {
+          "title": "Video: Is Salem Al-Dawsari turning into a substitute at Al-Hilal?",
+          "url": "https://www.goal.com/en/news/video-is-salem-al-dawsari-turning-into-a-substitute-at-al-hilal/blt3d42c9cfb1ee6b57",
+          "source": "Goal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "kplc scheduled power outage three counties",
-      "traffic": "1000+",
+      "title": "mashujaa",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Necessary for maintenance: KPLC lists areas facing power cuts tomorrow",
-          "url": "https://www.tuko.co.ke/kenya/counties/643699-kenya-power-announces-maintenance-related-outages-3-counties-october-20/",
+          "title": "Mashujaa Day: Ruto’s balancing act as North Rift hosts historic event in Eldoret",
+          "url": "https://nation.africa/kenya/news/politics/mashujaa-day-ruto-s-balancing-act-as-north-rift-hosts-historic-event-in-eldoret--5638122",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Watch Live: Mashujaa Day celebrations begin in earnest in Eldoret",
+          "url": "https://www.kbc.co.ke/watch-live-mashujaa-day-celebrations-begin-in-earnest-in-eldoret/",
+          "source": "KBC Digital"
+        },
+        {
+          "title": "Mashujaa Day: Maroon Commandos entertain Eldoret crowd",
+          "url": "https://www.the-star.co.ke/news/2026-10-20-mashujaa-day-maroon-commandos-entertain-eldoret-crowd",
+          "source": "The Star, Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ipoa",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "IPOA advertises 41 vacancies in fresh recruitment drive",
+          "url": "https://peopledaily.digital/news/ipoa-advertises-41-vacancies-in-fresh-recruitment-drive",
+          "source": "People Daily"
+        },
+        {
+          "title": "IPOA Announces 41 Job Vacancies For Drivers, Lawyers, Office Assistants, Others",
+          "url": "https://www.tuko.co.ke/business-economy/643703-mbadi-confirms-expansion-salary-amounts-set-paye-tax-bill/",
           "source": "Tuko News"
         },
         {
-          "title": "Kenya Power Announces Thursday Blackouts in Nairobi, Kajiado, Nyeri, Kiambu and Kitui",
-          "url": "https://www.ghafla.co.ke/kenya-power-announces-thursday-blackouts-in-nairobi-kajiado-nyeri-kiambu-and-kitui/",
-          "source": "Ghafla!"
-        },
-        {
-          "title": "KPLC Announces Power Shutdowns in 7 Counties on Monday",
-          "url": "https://nairobileo.co.ke/news/article/30902/kplc-announces-power-shutdowns-in-7-counties-on-monday",
+          "title": "IPOA Announces Job Vacancies; How to Apply",
+          "url": "https://nairobileo.co.ke/news/article/30933/ipoa-announces-job-vacancies-how-to-apply",
           "source": "Nairobi Leo"
         }
       ]
@@ -78,14 +78,14 @@
           "source": "Reuters"
         },
         {
+          "title": "US raises Kenya travel advisory to Level 3 over Ebola",
+          "url": "https://www.the-star.co.ke/news/2026-10-20-us-raises-kenya-travel-advisory-to-level-3-over-ebola",
+          "source": "The Star, Kenya"
+        },
+        {
           "title": "U.S. Names Kenyan Areas Americans Should Avoid in New Advisory",
           "url": "https://www.kenyans.co.ke/news/127958-us-issues-level-3-travel-advisory-kenya-flags-eastleigh-kibera",
           "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "US State Department asks Americans to reconsider travel to Kenya By Reuters",
-          "url": "https://www.investing.com/news/world-news/us-state-department-asks-americans-to-reconsider-travel-to-kenya-4958461",
-          "source": "Investing.com"
         }
       ]
     },
@@ -108,23 +108,35 @@
     },
     {
       "geo": "KE",
-      "title": "braga fc",
-      "traffic": "200+",
+      "title": "kenha world bank road project",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Murilo, o \"Homem do Jogo\" em Braga",
-          "url": "https://www.sporttv.pt/noticias/839541/murilo-o-homem-do-jogo-em-braga",
-          "source": "Sport TV"
+          "title": "KeNHA Unveils Plans to Construct 536KM of Roads Linking 7 Counties",
+          "url": "https://www.kenyans.co.ke/news/127960-kenha-lists-536km-roads-upgrade-under-ksh778-billion-world-bank-project",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Lenços brancos não foram de adeus à crise bracarense (crónica)",
-          "url": "https://www.abola.pt/noticias/lencos-brancos-nao-foram-de-adeus-a-crise-bracarense-cronica-2026101922570884046",
-          "source": "A Bola"
+          "title": "Kenya seeks Sh77.9 billion World Bank funding for construction of rural roads",
+          "url": "https://eastleighvoice.co.ke/news/414014/kenya-seeks-sh779-billion-world-bank-funding-for-construction-of-rural-roads",
+          "source": "The Eastleigh Voice"
         },
         {
-          "title": "Carlos Vicens fala em “momento difícil”: «Precisamos de deitar os fantasmas para trás»",
-          "url": "https://www.record.pt/futebol/futebol-nacional/liga-betclic/sp--braga/detalhe/carlos-vicens-fala-em-momento-dificil-precisamos-de-deitar-os-fantasmas-para-tras",
-          "source": "Record"
+          "title": "Ruto's Govt to Construct 536km of Roads Across 7 Rift Valley Counties, Issues Procurement Notice",
+          "url": "https://www.tuko.co.ke/business-economy/industry/643763-rutos-govt-construct-536km-roads-7-rift-valley-counties-issues-procurement-notice/",
+          "source": "Tuko News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mostafa ziko",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Egypt hit with FIFA sanctions! Hossam Hassan, Ibrahim Hassan and Mostafa Zico punished after Argentina World Cup clash",
+          "url": "https://www.goal.com/en-ke/lists/egypt-fifa-sanctions-hossam-hassan-ibrahim-hassan-mostafa-zico-punished-argentina-world-cup-clash/blt0ce5503506c4c56f",
+          "source": "Goal.com"
         }
       ]
     },
@@ -134,14 +146,14 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Simeone spezza il digiuno: segnale ai fantallenatori dopo Parma",
-          "url": "https://www.fantacalcio.it/news/calcio-italia/20_10_2026/simeone-spezza-il-digiuno-segnale-ai-fantallenatori-dopo-parma-499450",
-          "source": "Fantacalcio"
+          "title": "Serie A ai raggi X: crisi Parma, rilancio Simeone e crollo Cagliari",
+          "url": "https://www.diretta.it/news/calcio-serie-a-la-serie-a-ai-raggi-x-la-crisi-del-parma-la-frenata-del-cagliari-e-il-riscatto-di-simeone/Ymu0TcWs/",
+          "source": "Diretta"
         },
         {
-          "title": "Serie A, classifica: Torino a 10 punti",
-          "url": "https://ildomaniditalia.eu/serie-a-classifica-torino-a-10-punti/",
-          "source": "Il Domani d'Italia"
+          "title": "Serie A, Torino e Monza vincono in goleada, stasera la Champions League - 20/10/2026",
+          "url": "https://www.raiplay.it/video/2026/10/Serie-A-Torino-e-Monza-vincono-in-goleada-stasera-la-Champions-League---1mattina-News-20102026-9aecfc53-deec-45ab-ab0e-d704e2d16c8c.html",
+          "source": "RaiPlay"
         },
         {
           "title": "BAGOLOZOOM di Claudio Mastellari / SENZA PAROLE (E SENZA PRIMO TEMPO)",
@@ -149,38 +161,16 @@
           "source": "Stadio Tardini"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "besiktas fc",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Mehmet Cemil Altın: Avrupa Fatihlerinin Kapışması",
-          "url": "https://www.takagazete.com.tr/avrupa-fatihlerinin-kapismasi",
-          "source": "Taka Gazete"
-        },
-        {
-          "title": "Vincenzo Italiano: En büyük odağımız lig aşamasından çıkmak",
-          "url": "https://www.mackolik.com/diger/haber/vincenzo-italiano-en-buyuk-odagimiz-lig-asamasindan-cikmak/ed23d19d-d271-400c-b799-7c292db496a8",
-          "source": "Mackolik.com"
-        },
-        {
-          "title": "Hyeon-gyu Oh’un gözünden Hoffenheim deplasmanı. (2. Bölüm) #Beşiktaş #Oh #duhuliye #haber1903",
-          "url": "https://www.instagram.com/reel/DepTXcrAyqu/",
-          "source": "Instagram"
-        }
-      ]
     }
   ],
   "dropped": [
     {
-      "title": "kim jong un",
-      "why": "unsafe: 'death'"
+      "title": "stuttgart vs atletico madrid prediction",
+      "why": "unsafe: 'Betting'"
     },
     {
-      "title": "getafe vs rayo",
-      "why": "unsafe: 'Odds'"
+      "title": "psg vs barcelona prediction",
+      "why": "unsafe: 'bet'"
     }
   ],
   "errors": {}
