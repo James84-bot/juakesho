@@ -1,182 +1,193 @@
 {
-  "fetched": "2026-10-20T11:24:34.131655+00:00",
+  "fetched": "2026-10-20T15:51:40.775524+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "ipoa",
-      "traffic": "500+",
+      "title": "kra rental tax exemption threshold",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "IPOA advertises 41 vacancies in fresh recruitment drive",
-          "url": "https://peopledaily.digital/news/ipoa-advertises-41-vacancies-in-fresh-recruitment-drive",
+          "title": "KRA Reveals Category of Landlords Exempted from Rental Tax",
+          "url": "https://www.kenyans.co.ke/news/127968-landlords-earning-below-ksh288000-annually-exempted-rental-tax-kra-says",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "How KRA’s new rental tax rules exempt landlords earning below Ksh24,000 monthly",
+          "url": "https://peopledaily.digital/business/how-kras-new-rental-tax-rules-exempt-landlords-earning-below-ksh24000-monthly",
           "source": "People Daily"
         },
         {
-          "title": "IPOA Announces 41 Job Vacancies For Drivers, Lawyers, Office Assistants, Others",
-          "url": "https://www.tuko.co.ke/business-economy/643703-mbadi-confirms-expansion-salary-amounts-set-paye-tax-bill/",
-          "source": "Tuko News"
-        },
-        {
-          "title": "IPOA Announces Job Vacancies; How to Apply",
-          "url": "https://nairobileo.co.ke/news/article/30933/ipoa-announces-job-vacancies-how-to-apply",
-          "source": "Nairobi Leo"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "games",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Angel Reese has 30 points, 16 rebounds as Dream even WNBA Finals vs. Valkyries",
-          "url": "https://www.espn.com/wnba/story/_/id/50223797/angel-reese-30-points-16-rebounds-dream-even-wnba-finals-vs-valkyries",
-          "source": "ESPN"
-        },
-        {
-          "title": "Natalie Nakase states Dream out-hustled Valkyries in Game 2 to even WNBA Finals",
-          "url": "https://sports.yahoo.com/videos/natalie-nakase-states-dream-hustled-103357398.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Angel Reese dominates Game 2 as Atlanta Dream even WNBA Finals against Golden State Valkyries",
-          "url": "https://www.foxnews.com/outkick-sports/angel-reese-dominates-game-2-atlanta-dream-even-wnba-finals-golden-state-valkyries",
-          "source": "Fox News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "liverpool vs villarreal prediction",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Champions League build-up LIVE: Man City team news; Liverpool team news; managers speaking",
-          "url": "https://www.bbc.com/sport/football/live/c90k07gyvjx6t",
-          "source": "BBC"
-        },
-        {
-          "title": "Virgil van Dijk: Winning is a habit - and it is a habit we all want to get into",
-          "url": "https://www.liverpoolfc.com/news/virgil-van-dijk-villarreal-matchday-programme-notes",
-          "source": "Liverpool FC"
-        },
-        {
-          "title": "Liverpool XI vs Villarreal: Predicted lineup and confirmed team news",
-          "url": "https://www.standard.co.uk/sport/football/liverpool-fc-xi-vs-villarreal-predicted-lineup-confirmed-team-news-injury-latest-champions-league-2026-today-b1301507.html",
-          "source": "London Evening Standard"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenha world bank road project",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "KeNHA Unveils Plans to Construct 536KM of Roads Linking 7 Counties",
-          "url": "https://www.kenyans.co.ke/news/127960-kenha-lists-536km-roads-upgrade-under-ksh778-billion-world-bank-project",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Kenya seeks Sh77.9 billion World Bank funding for construction of rural roads",
-          "url": "https://eastleighvoice.co.ke/news/414014/kenya-seeks-sh779-billion-world-bank-funding-for-construction-of-rural-roads",
-          "source": "The Eastleigh Voice"
-        },
-        {
-          "title": "Ruto's Govt to Construct 536km of Roads Across 7 Rift Valley Counties, Issues Procurement Notice",
-          "url": "https://www.tuko.co.ke/business-economy/industry/643763-rutos-govt-construct-536km-roads-7-rift-valley-counties-issues-procurement-notice/",
-          "source": "Tuko News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mostafa ziko",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Egypt hit with FIFA sanctions! Hossam Hassan, Ibrahim Hassan and Mostafa Zico punished after Argentina World Cup clash",
-          "url": "https://www.goal.com/en-ke/lists/egypt-fifa-sanctions-hossam-hassan-ibrahim-hassan-mostafa-zico-punished-argentina-world-cup-clash/blt0ce5503506c4c56f",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "citizen tv",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Citizen TV journalist Francis Ode arrested in Nairobi",
-          "url": "https://citizen.digital/article/citizen-tv-journalist-francis-ode-arrested-inairobi-n392385",
-          "source": "Citizen Digital"
-        },
-        {
-          "title": "Police Arrest Citizen TV Journalist Covering Fuel Protests in Nairobi CBD",
-          "url": "https://www.kenyans.co.ke/news/127970-citizen-tv-journalist-odee-francis-arrested-while-covering-protests-nairobi-cbd",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Ode Francis: Citizen TV Crime Reporter Arrested in Nairobi",
-          "url": "https://www.tuko.co.ke/kenya/counties/643792-ode-francis-citizen-tv-crime-reporter-arrested-nairobi/",
-          "source": "Tuko News"
+          "title": "Landlords earning below Sh288,000 annually exempted from rental tax, KRA says",
+          "url": "https://www.pulse.co.ke/story/landlords-earning-below-sh288000-annually-exempted-from-rental-tax-kra-says-2026102009290009178",
+          "source": "Pulse Kenya"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "antoine semenyo",
-      "traffic": "100+",
+      "title": "milk",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Erling Haaland doubt, Antoine Semenyo injured: Who could play for Man City against AEK Athens?",
-          "url": "https://www.bbc.com/sport/football/articles/c5djv21rkekwo",
-          "source": "BBC"
+          "title": "Kenya's milk supply in numbers",
+          "url": "https://www.the-star.co.ke/news/infographics/2026-10-20-kenyas-milk-supply-in-numbers",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Semenyo out for eight weeks, says Maresca",
-          "url": "https://www.mancity.com/news/mens/maresca-aek-athen-written-press-conference-63928003",
-          "source": "Manchester City FC"
+          "title": "Ruto’s dairy promise: Sh65 milk and farmer-owned New KCC",
+          "url": "https://nation.africa/kenya/news/politics/ruto-s-dairy-promise-sh65-milk-and-farmer-owned-new-kcc-5637000",
+          "source": "Daily Nation"
         },
         {
-          "title": "Maresca faces anxious wait over Haaland injury scare",
-          "url": "https://www.standardmedia.co.ke/sports/premier-league/article/2001560363/maresca-faces-anxious-wait-over-haaland-injury-scare",
-          "source": "The Standard"
+          "title": "Ruto Announces New Milk Prices Starting This Month",
+          "url": "https://www.kenyans.co.ke/news/127972-milk-farmers-be-paid-ksh65-litre-starting-month",
+          "source": "Kenyans.co.ke"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "play store app",
+      "title": "rigathi gachagua",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "From US retreat to Wamunyoro talks: Gachagua meets Sifuna to plot 2027 strategy",
+          "url": "https://nation.africa/kenya/news/politics/from-us-retreat-to-wamunyoro-talks-gachagua-meets-sifuna-to-plot-2027-strategy-5639120",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Gachagua, Sifuna meet amid Malala’s push for 2027 alliance",
+          "url": "https://www.the-star.co.ke/news/2026-10-20-gachagua-sifuna-meet-amid-malalas-push-for-2027-alliance",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Caleb Amisi: Sifuna backing Gachagua would be difficult to sell",
+          "url": "https://peopledaily.digital/inside-politics/caleb-amisi-sifuna-backing-gachagua-would-be-difficult-to-sell",
+          "source": "People Daily"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "elon musk",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Elon Musk’s Equity-Based Tesla Pay Was $158 Billion In 2025—2.5 Million Times Median Employee Pay",
+          "url": "https://www.forbes.com/sites/fionariley/2026/10/19/elon-musks-equity-based-tesla-pay-was-158-billion-in-2025-25-million-times-median-employee-pay/",
+          "source": "Forbes"
+        },
+        {
+          "title": "Tesla's Optimus V3 Ready for Mass Production, Sparking Limit-Up Rally in China's A-Share Robotics Supply Chain",
+          "url": "https://finance.biggo.com/news/10127d79-8a19-4a31-a82b-80fd13c826b8",
+          "source": "BigGo Finance"
+        },
+        {
+          "title": "Tesla's proxy statement suggests the board is preparing for a potential merger with SpaceX.",
+          "url": "https://www.kucoin.com/news/flash/tesla-proxy-statement-suggests-board-preparing-for-potential-merger-with-spacex",
+          "source": "KuCoin"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "dstv",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Cheaper DStv Premium deal available in South Africa",
+          "url": "https://mybroadband.co.za/news/broadcasting/672600-cheaper-dstv-premium-deal-available-in-south-africa.html",
+          "source": "MyBroadband"
+        },
+        {
+          "title": "Canal+ and MultiChoice to Relaunch Simplified DStv Packages for Rest of Africa in November: 'Nigeria is Changing, and So Are We'",
+          "url": "https://teeveetee.blogspot.com/2026/10/canal-and-multichoice-to-relaunch.html",
+          "source": "TV with Thinus"
+        },
+        {
+          "title": "Good news for subscribers as DStv launches 5 new packages in November",
+          "url": "https://www.legit.ng/business-economy/industry/1736931-dstv-announces-major-package-nigeria-unveils-5-bouquets/",
+          "source": "Legit.ng"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "tax exemption",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Mashujaa Day: Ruto promises tax cuts, 50,000 jobs in 2027 pitch",
+          "url": "https://nation.africa/kenya/news/mashujaa-day-ruto-promises-tax-cuts-50-000-jobs-in-2027-pitch-5639314",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Ruto signals tax cuts for workers, land buyers and phone users",
+          "url": "https://www.businessdailyafrica.com/bd/markets/market-news/ruto-signals-tax-cuts-for-workers-land-buyers-and-phone-users-5639398",
+          "source": "Business Daily"
+        },
+        {
+          "title": "Ruto proposes scrapping 25% mobile-phone import tax",
+          "url": "https://www.the-star.co.ke/news/2026-10-20-ruto-proposes-scrapping-25-tax-on-mobile-phones",
+          "source": "The Star, Kenya"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "bruno fernandes",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Broken Bruno Fernandes must be taken out of the firing line for Man Utd to kickstart their season",
+          "url": "https://www.goal.com/en-ke/originals/broken-bruno-fernandes-taken-out-firing-line-man-utd-kickstart-season/blt4ce8a6cae86b5282",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Boss quashes Fernandes fitness fears",
+          "url": "https://www.manutd.com/en/news/bruno-fernandes-injury-news-atletico-madrid-v-united",
+          "source": "Manchester United"
+        },
+        {
+          "title": "Michael Carrick may have to bench his only 'undroppable' Manchester United player",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/michael-carrick-bench-only-undroppable-34791193",
+          "source": "Manchester Evening News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "fabian hürzeler",
       "traffic": "100+",
       "news": [
         {
-          "title": "What’s new in Android’s October 2026 Google System Updates [U]",
-          "url": "https://9to5google.com/2026/10/19/october-2026-google-system-updates/",
-          "source": "9to5Google"
+          "title": "Erfolgs-Trainer Hürzeler heiratet „Sturm der Liebe“-Schauspielerin",
+          "url": "https://www.bild.de/sport/fussball/erfolgs-trainer-huerzeler-heiratet-sturm-der-liebe-schauspielerin-6ad7423b2352c608d83cf3e0",
+          "source": "BILD"
         },
         {
-          "title": "Android October 2026 updates boost Play services and Play Store",
-          "url": "https://www.newsbytesapp.com/news/science/android-october-2026-updates-boost-play-services-and-play-store/tldr",
-          "source": "NewsBytes"
+          "title": "Deutscher Trainer hat offenbar heimlich „Sturm der Liebe“-Star geheiratet",
+          "url": "https://www.merkur.de/sport/fussball/deutscher-trainer-huerzeler-heiratet-offenbar-sturm-der-liebe-star-berger-94550190.html",
+          "source": "Merkur"
         },
         {
-          "title": "Google Wallet may be getting ready for 2 major new features",
-          "url": "https://www.androidauthority.com/google-wallet-agents-auto-add-passes-from-partners-3724191/",
-          "source": "Android Authority"
+          "title": "Fabian Hürzeler heiratet Schauspielerin Anna Karolin Berger",
+          "url": "https://suaragarut.id/de/huerzeler-heiratet-anna-karolin-berger",
+          "source": "SuaraGarut.ID"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "benjamin netanyahu",
+      "title": "erik ten hag",
       "why": "unsafe: 'attack'"
     },
     {
-      "title": "stuttgart vs atletico madrid prediction",
-      "why": "unsafe: 'Betting'"
+      "title": "afc leopards",
+      "why": "unsafe: 'SportPesa'"
     }
   ],
   "errors": {}
