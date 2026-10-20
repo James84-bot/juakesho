@@ -1,76 +1,54 @@
 {
-  "fetched": "2026-10-19T19:16:00.674139+00:00",
+  "fetched": "2026-10-20T06:06:28.757656+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "al-hilal vs al-hazem",
+      "title": "spurs vs coventry",
+      "traffic": "20000+",
+      "news": [
+        {
+          "title": "Spurs 3-1 Coventry: James Maddison shines on Tottenham return",
+          "url": "https://www.bbc.com/sport/football/articles/cwz0v8le7y3eo",
+          "source": "BBC"
+        },
+        {
+          "title": "James Maddison marks first Tottenham start in nearly 18 months with stunning goal in first Premier League win of season",
+          "url": "https://www.skysports.com/football/news/13601183/james-maddison-marks-first-tottenham-start-in-nearly-18-months-with-stunning-goal-in-first-premier-league-win-of-season",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Tottenham beat Coventry to claim first Premier League win of season – as it happened",
+          "url": "https://www.theguardian.com/football/live/2026/oct/19/tottenham-v-coventry-premier-league-live",
+          "source": "The Guardian"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "al hilal sfc vs al-hazem f.c. standings",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Bahrain vs. Yemen (14 Nov, 2026) Live Score",
-          "url": "https://www.espn.co.uk/soccer/match/_/gameId/401930879/yemen-bahrain",
-          "source": "ESPN"
+          "title": "Al Hilal vs Al Hazem: Saudi Pro League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cq77p1vl18vkt",
+          "source": "BBC"
         },
         {
-          "title": "Cristiano Ronaldo fined €255, suspended 30 days after Portugal walk-out",
-          "url": "https://www.espn.com/soccer/story/_/id/50220261/cristiano-ronaldo-fined-255-suspended-30-days-portugal-walk-out",
-          "source": "ESPN"
+          "title": "Full-length Replay: Al-Hilal vs Al-Hazem",
+          "url": "https://www.foxsports.com/replay/fmc-80s8uee9t8r5kc41",
+          "source": "FOX Sports"
         },
         {
-          "title": "Kalen DeBoer emphasizes consistency for No. 13 Alabama",
-          "url": "https://www.espn.com/video/clip/_/id/50220041/kalen-deboer-emphasizes-consistency-no-13-alabama",
-          "source": "ESPN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "morgan rogers james garner tackle",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Chelsea told why TWO key players should have been sent off at Everton",
-          "url": "https://www.standard.co.uk/sport/football/chelsea-fc-everton-morgan-rogers-cole-palmer-b1301444.html",
-          "source": "London Evening Standard"
-        },
-        {
-          "title": "Chelsea handed red card punishment verdict after Everton footage as player 'very lucky'",
-          "url": "https://www.football.london/chelsea-fc/news/chelsea-morgan-rogers-tackle-everton-34784842",
-          "source": "Football London"
-        },
-        {
-          "title": "'Unfair!' - David Moyes fumes over controversial refereeing decisions after Chelsea defeat",
-          "url": "https://www.goal.com/en-ke/lists/unfair-david-moyes-controversial-refereeing-decisions-chelsea-defeat-/blt3b6f38f1150672ab",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "monza",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Serie A, Monza-Cagliari 4-0",
-          "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/10/19/serie-a-monza-cagliari-4-0_f19290ed-4a5c-4b69-9830-e7e5861bb342.html",
-          "source": "ANSA"
-        },
-        {
-          "title": "Primo gol in Serie A per il pratese Kouadio",
-          "url": "https://www.sportdiprato.it/sport/calcio/18638-primo-gol-in-serie-a-per-il-pratese-kouadio",
-          "source": "Sport di Prato"
-        },
-        {
-          "title": "Sulle ali di un sogno - L'Unione Sarda.it",
-          "url": "https://www.unionesarda.it/podcast/sulle-ali-di-un-sogno-wbkg8ekf",
-          "source": "L'Unione Sarda.it"
+          "title": "Martinelli köpft den Ball in den Winkel und erzielt den Siegtreffer für Al-Hilal",
+          "url": "https://onefootball.com/en/video/martinelli-koepft-den-ball-in-den-winkel-und-erzielt-den-siegtreffer-fuer-al-hilal-3KvbtrOXq0Rxe2IHRG1P2vxa5dF",
+          "source": "OneFootball"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "kplc scheduled power outage three counties",
-      "traffic": "100+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Necessary for maintenance: KPLC lists areas facing power cuts tomorrow",
@@ -91,18 +69,101 @@
     },
     {
       "geo": "KE",
+      "title": "travel warning",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "US says travelers should reconsider Kenya trips on health risks amid Ebola spread",
+          "url": "https://www.reuters.com/world/africa/us-state-department-asks-americans-reconsider-travel-kenya-2026-10-19/",
+          "source": "Reuters"
+        },
+        {
+          "title": "U.S. Names Kenyan Areas Americans Should Avoid in New Advisory",
+          "url": "https://www.kenyans.co.ke/news/127958-us-issues-level-3-travel-advisory-kenya-flags-eastleigh-kibera",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "US State Department asks Americans to reconsider travel to Kenya By Reuters",
+          "url": "https://www.investing.com/news/world-news/us-state-department-asks-americans-to-reconsider-travel-to-kenya-4958461",
+          "source": "Investing.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "trabzonspor vs beşiktaş standings",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Rejuvenated top scorer Mohamed Salah inspires Trabzonspor to crucial derby win over Besiktas as Andre Onana continues to shine",
+          "url": "https://www.goal.com/en-ke/lists/rejuvenated-top-scorer-mohamed-salah-inspires-trabzonspor-crucial-derby-win-besiktas-andre-onana-continues-shine/blt1c8c00f771852804",
+          "source": "Goal.com"
+        },
+        {
+          "title": "How and Where to Watch: Trabzonspor vs Beşiktaş LIVE on beIN SPORTS",
+          "url": "https://www.beinsports.com/en-us/soccer/sper-lig/articles/how-and-where-to-watch-trabzonspor-vs-be-ikta-live-on-bein-sports-2026-10-19",
+          "source": "beIN SPORTS"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "braga fc",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Murilo, o \"Homem do Jogo\" em Braga",
+          "url": "https://www.sporttv.pt/noticias/839541/murilo-o-homem-do-jogo-em-braga",
+          "source": "Sport TV"
+        },
+        {
+          "title": "Lenços brancos não foram de adeus à crise bracarense (crónica)",
+          "url": "https://www.abola.pt/noticias/lencos-brancos-nao-foram-de-adeus-a-crise-bracarense-cronica-2026101922570884046",
+          "source": "A Bola"
+        },
+        {
+          "title": "Carlos Vicens fala em “momento difícil”: «Precisamos de deitar os fantasmas para trás»",
+          "url": "https://www.record.pt/futebol/futebol-nacional/liga-betclic/sp--braga/detalhe/carlos-vicens-fala-em-momento-dificil-precisamos-de-deitar-os-fantasmas-para-tras",
+          "source": "Record"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "torino fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Simeone spezza il digiuno: segnale ai fantallenatori dopo Parma",
+          "url": "https://www.fantacalcio.it/news/calcio-italia/20_10_2026/simeone-spezza-il-digiuno-segnale-ai-fantallenatori-dopo-parma-499450",
+          "source": "Fantacalcio"
+        },
+        {
+          "title": "Serie A, classifica: Torino a 10 punti",
+          "url": "https://ildomaniditalia.eu/serie-a-classifica-torino-a-10-punti/",
+          "source": "Il Domani d'Italia"
+        },
+        {
+          "title": "BAGOLOZOOM di Claudio Mastellari / SENZA PAROLE (E SENZA PRIMO TEMPO)",
+          "url": "https://www.stadiotardini.it/2026/10/bagolozoom-di-claudio-mastellari-senza-parole-e-senza-primo-tempo.html",
+          "source": "Stadio Tardini"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "besiktas fc",
       "traffic": "100+",
       "news": [
         {
-          "title": "Italiano'dan derbi 11'inde biri zorunlu 3 değişiklik! Orkun Kökçü'nün yerine forma onun",
-          "url": "https://www.ntvspor.net/futbol/galeri-italianodan-derbi-11inde-biri-zorunlu-3-degisiklik-orkun-kokcunun-yerine-forma-onun-431478",
-          "source": "NTVSpor"
+          "title": "Mehmet Cemil Altın: Avrupa Fatihlerinin Kapışması",
+          "url": "https://www.takagazete.com.tr/avrupa-fatihlerinin-kapismasi",
+          "source": "Taka Gazete"
         },
         {
-          "title": "Beşiktaş UEFA Avrupa Ligi’nde 2'de 2 yaptı: Almanya’da zafer gecesi",
-          "url": "https://ehamedya.com.tr/haber/besiktas-uefa-avrupa-liginde-2de-2-yapti-almanyada-zafer-gecesi",
-          "source": "EHA Medya"
+          "title": "Vincenzo Italiano: En büyük odağımız lig aşamasından çıkmak",
+          "url": "https://www.mackolik.com/diger/haber/vincenzo-italiano-en-buyuk-odagimiz-lig-asamasindan-cikmak/ed23d19d-d271-400c-b799-7c292db496a8",
+          "source": "Mackolik.com"
         },
         {
           "title": "Hyeon-gyu Oh’un gözünden Hoffenheim deplasmanı. (2. Bölüm) #Beşiktaş #Oh #duhuliye #haber1903",
@@ -110,64 +171,16 @@
           "source": "Instagram"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "deportation",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Only people from Ukraine, Sudan and El Salvador remain protected from deportation in the US while Somalia, Ethiopia, Haiti and 6 other countries lose protection",
-          "url": "https://africa.businessinsider.com/local/lifestyle/only-people-from-ukraine-sudan-and-el-salvador-remain-protected-from-deportation-in/bfhb12j",
-          "source": "Business Insider Africa"
-        },
-        {
-          "title": "Immigrants from Ukraine and Sudan to retain deportation protections for now",
-          "url": "https://www.cbsnews.com/news/ukraine-sudan-immigrants-deportation-protections-tps/",
-          "source": "CBS News"
-        },
-        {
-          "title": "Trump officials soften approach to key immigration policy ahead of midterms",
-          "url": "https://www.washingtonpost.com/business/2026/10/19/trump-officials-soften-approach-key-immigration-policy-ahead-midterms/",
-          "source": "The Washington Post"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "florian wirtz",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "\"Keine Chance, dass Wirtz im Januar geht\" | So denken Journalisten und Fans über den DFB-Star | Video",
-          "url": "https://www.kicker.de/keine-chance-dass-wirtz-im-januar-geht-1261997/video",
-          "source": "Kicker"
-        },
-        {
-          "title": "Liverpool-Star bleibt wohl trotz Interesse von La-Liga-Größen und anderen",
-          "url": "https://onefootball.com/de/news/liverpool-star-bleibt-wohl-trotz-interesse-von-la-liga-groessen-und-anderen-43636316",
-          "source": "OneFootball"
-        },
-        {
-          "title": "FC Bayern-Präsident Hainer über Florian Wirtz: \"Haben einen Top-Kader\"",
-          "url": "https://www.ligaportal.at/international/deutsche-bundesliga/94684-hainer-ueber-wirtz-haben-einen-top-kader",
-          "source": "Ligaportal"
-        }
-      ]
     }
   ],
   "dropped": [
     {
+      "title": "kim jong un",
+      "why": "unsafe: 'death'"
+    },
+    {
       "title": "getafe vs rayo",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "spurs vs coventry",
-      "why": "unsafe: 'Bet'"
-    },
-    {
-      "title": "braga vs gil vicente",
-      "why": "unsafe: 'Betting'"
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
