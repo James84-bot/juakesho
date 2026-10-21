@@ -1,76 +1,10 @@
 {
-  "fetched": "2026-10-21T10:36:30.966566+00:00",
+  "fetched": "2026-10-21T11:39:56.132957+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "ebola kenya",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Paradox of Kenya hosting Ebola centre for Americans as US issues travel advisory",
-          "url": "https://nation.africa/kenya/health/paradox-kenya-ebola-centre-us-issues-travel-advisory-5639680",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "US raises Kenya travel alert to Level 3 as health risks mount",
-          "url": "https://www.businessdailyafrica.com/bd/news/world/-us-raises-kenya-travel-alert-to-level-3-as-health-risks-mount-5639014",
-          "source": "Business Daily"
-        },
-        {
-          "title": "US says travelers should reconsider Kenya trips on health risks amid Ebola spread",
-          "url": "https://www.reuters.com/world/africa/us-state-department-asks-americans-reconsider-travel-kenya-2026-10-19/",
-          "source": "Reuters"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "spurs vs thunder",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Thunder win chippy opener vs. Spurs, throw support behind Chet Holmgren",
-          "url": "https://www.espn.com/nba/story/_/id/50235276/thunder-win-chippy-opener-vs-spurs-back-chet-holmgren",
-          "source": "ESPN"
-        },
-        {
-          "title": "SGA pours in 32/5/4/2/2 line in WCF rematch",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-21/sga-pours-in-32-5-4-2-2-line-in-wcf-rematch",
-          "source": "NBC Sports"
-        },
-        {
-          "title": "Watch: Wemby Gets Into Scuffle After De'Aaron Fox Tosses Chet Holmgren To Ground",
-          "url": "https://www.yardbarker.com/nba/articles/watch_wemby_gets_into_scuffle_after_deaaron_fox_tosses_chet_holmgren_to_ground/s1_15653_44454038",
-          "source": "Yardbarker"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ne-yo one night only nairobi",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Nairobi brings the drip to Ne-Yo’s ‘One Night Only’ concert",
-          "url": "https://www.the-star.co.ke/news/2026-10-20-ne-yo-brings-the-music-nairobi-brings-the-style",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Ne-Yo Performs 'Marry You' and Honors Diamond Platnumz in Nairobi",
-          "url": "https://www.mpasho.co.ke/lifestyle-yetu/events/2026-10-21-ne-yo-performs-marry-you-and-honors-diamond-platnumz-in-nairobi",
-          "source": "Mpasho"
-        },
-        {
-          "title": "How Ne-Yo’s Mashujaa Day Concert Brought R&B, Fashion and Fine Dining to Nairobi",
-          "url": "https://businesstoday.co.ke/how-ne-yos-mashujaa-day-concert-unfolded/",
-          "source": "Business Today Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "milk prices",
-      "traffic": "200+",
+      "traffic": "10000+",
       "news": [
         {
           "title": "Ruto’s dairy promise: Sh65 milk and farmer-owned New KCC",
@@ -92,7 +26,7 @@
     {
       "geo": "KE",
       "title": "job",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Kenya Railways Explains New Recruitment Drive for Hundreds of Jobs",
@@ -105,38 +39,38 @@
           "source": "The Kenya Times"
         },
         {
-          "title": "HOAX: This advertisement for vacancies at Kenya Power is fraudulent",
-          "url": "https://pesacheck.org/hoax-this-advertisement-for-vacancies-at-kenya-power-is-fraudulent/",
-          "source": "PesaCheck"
+          "title": "NLC Raises Alarm Over Fake Job Interview Invitation Circulating Online",
+          "url": "https://uzalendonews.co.ke/nlc-raises-alarm-over-fake-job-interview-invitation-circulating-online",
+          "source": "Uzalendo News"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "outlook",
-      "traffic": "200+",
+      "title": "ebola kenya",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Hasbro Lifts Outlook on Surging Magic Card Game Sales",
-          "url": "https://www.wsj.com/business/earnings/hasbro-lifts-outlook-as-revenue-jumps-ed1dab70",
-          "source": "WSJ"
+          "title": "Paradox of Kenya hosting Ebola centre for Americans as US issues travel advisory",
+          "url": "https://nation.africa/kenya/health/paradox-kenya-ebola-centre-us-issues-travel-advisory-5639680",
+          "source": "Daily Nation"
         },
         {
-          "title": "HAS Q3 Earnings Beat Estimates on Magic Growth, Outlook Raised",
-          "url": "https://finance.yahoo.com/markets/stocks/articles/q3-earnings-beat-estimates-magic-125200776.html",
-          "source": "Yahoo Finance"
+          "title": "US raises Kenya travel alert to Level 3 as health risks mount",
+          "url": "https://www.businessdailyafrica.com/bd/news/world/-us-raises-kenya-travel-alert-to-level-3-as-health-risks-mount-5639014",
+          "source": "Business Daily"
         },
         {
-          "title": "Hasbro raises annual revenue forecast on strong demand for digital games",
-          "url": "https://www.reuters.com/technology/hasbro-raises-annual-revenue-forecast-strong-demand-digital-games-toys-2026-10-20/",
-          "source": "Reuters"
+          "title": "PS Sing'Oei: US advisory for Kenya will have no implications on travelers",
+          "url": "https://citizen.digital/article/ps-singoei-us-advisory-for-kenya-will-have-no-implications-on-travelers-n392430",
+          "source": "Citizen Digital"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "lille vs galatasaray",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Lille vs Galatasaray: UEFA Champions League stats & head-to-head",
@@ -154,17 +88,119 @@
           "source": "UA.NEWS"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "spurs vs thunder",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Thunder win chippy opener vs. Spurs, throw support behind Chet Holmgren",
+          "url": "https://www.espn.com/nba/story/_/id/50235276/thunder-win-chippy-opener-vs-spurs-back-chet-holmgren",
+          "source": "ESPN"
+        },
+        {
+          "title": "‘Unstoppable’ – Skip Bayless names ‘by far the best player’ from the Thunder’s win over the Spurs",
+          "url": "https://uk.sports.yahoo.com/news/unstoppable-skip-bayless-names-far-110500893.html",
+          "source": "Yahoo"
+        },
+        {
+          "title": "Wemby shoots 1-of-13 in season-opening loss",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-21/wemby-shoots-1-of-13-in-season-opening-loss",
+          "source": "NBC Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "toyota",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "New Toyota Fortuner Debut On 1st Dec - India Launch 2027",
+          "url": "https://www.rushlane.com/new-toyota-fortuner-debut-on-1st-dec-india-launch-2027-12559076.html",
+          "source": "RushLane"
+        },
+        {
+          "title": "Toyota Fortuner Facelift To Make Global Debut On December 1",
+          "url": "https://www.ndtv.com/auto/toyota-fortuner-facelift-to-make-global-debut-on-december-1-12214962",
+          "source": "NDTV"
+        },
+        {
+          "title": "2027 Toyota Fortuner spied again in Thailand",
+          "url": "https://www.carexpert.com.au/car-news/2027-toyota-fortuner-spied-again-in-thailand",
+          "source": "CarExpert"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "fine",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Poland says social media firms are 'silent ally' of Russia, threatens fines",
+          "url": "https://www.reuters.com/technology/poland-says-social-media-firms-are-silent-ally-russia-threatens-fines-2026-10-21/",
+          "source": "Reuters"
+        },
+        {
+          "title": "Lawyer caught offering to make illegal-worker fine go away",
+          "url": "https://www.bbc.com/news/articles/c30rln4pz58xo",
+          "source": "BBC"
+        },
+        {
+          "title": "Undercover: Solicitor offers to help 'mini-mart owner' dodge fine for illegal worker | BBC News",
+          "url": "https://www.modernghana.com/videonews/bbc/1/738714",
+          "source": "Modern Ghana"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "outlook",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Netflix Is Great at Making Money. Its Problem Is Keeping Viewers Hooked.",
+          "url": "https://www.nytimes.com/2026/10/20/business/media/netflix-earnings-ted-sarandos-peter-rice.html",
+          "source": "The New York Times"
+        },
+        {
+          "title": "Netflix Stock and Price Targets Drop as Wall Street Debates If the Streamer Can Flip the Script",
+          "url": "https://www.hollywoodreporter.com/business/business-news/netflix-stock-analyst-reactions-q3-2026-earnings-report-1236736638/",
+          "source": "The Hollywood Reporter"
+        },
+        {
+          "title": "Netflix posts third-quarter earnings beat, but shares fall on advertising and revenue guidance",
+          "url": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
+          "source": "CNBC"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mikel arteta arsenal bayern match",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Injury latest on Zubimendi, Hincapie, Tzolis and Saliba",
+          "url": "https://www.arsenal.com/news/injury-latest-on-zubimendi-hincapie-tzolis-and-saliba-a2zDM9u0H6CB",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Six players set to miss Bayern vs Arsenal as Mikel Arteta gets triple boost",
+          "url": "https://www.football.london/arsenal-fc/news/arsenal-bayern-munich-player-injuries-34793881",
+          "source": "Football London"
+        },
+        {
+          "title": "Arsenal set for injury boost as Hincapie return timeline revealed",
+          "url": "https://www.standard.co.uk/sport/football/arsenal-fc-injury-news-hincapie-b1301675.html",
+          "source": "London Evening Standard"
+        }
+      ]
     }
   ],
   "dropped": [
-    {
-      "title": "toyota",
-      "why": "unsafe: 'Fire'"
-    },
-    {
-      "title": "fine",
-      "why": "unsafe: 'war'"
-    },
     {
       "title": "mother",
       "why": "unsafe: 'Attack'"
