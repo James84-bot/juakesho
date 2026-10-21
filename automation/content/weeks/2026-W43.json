@@ -850,13 +850,88 @@
         "note": "Match the demand score and topic to the actual high-demand items on the news desk list."
       },
       "drafted_at": "2026-10-20T21:13:05.041052+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1021",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Phone buyers",
+      "line": "The government plans to scrap the *25% import tax* on mobile phones.",
+      "fact": "Mobile phones currently attract a 25% import duty that increases shop prices across Kenya.",
+      "source": "The Standard, 2026-10-21, Tuko News, 2026-10-21",
+      "message": "Scrapping the 25% phone import tax will make smartphones affordable for wananchi.",
+      "photo_query": "mobile phone Kenya",
+      "beats": [
+        "The government plans to drop the *25% import tax* on phones.",
+        "High taxes currently keep basic *smartphones* out of reach.",
+        "Scrapping the duty will lower everyday *phone prices* in shops.",
+        "Kenyans demand: the Treasury gazettes the *tax exemption* promptly."
+      ],
+      "action": "Follow the tax amendment bill on parliament.go.ke",
+      "caption": "The government plans to scrap the 25% mobile phone import tax. Lower taxes must reflect immediately in retail shop prices. What is the highest price you would pay for a basic smartphone?\n\n#TaxRelief #KenyaOnRecord",
+      "who": "National Treasury",
+      "where": "National",
+      "when": "21 Oct 2026",
+      "side": "government",
+      "tone": "explainer",
+      "demand": 2,
+      "impact": "Lower import taxes could reduce retail smartphone prices for wananchi.",
+      "bg": "usiku",
+      "publish_at": "2026-10-21T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "The Standard",
+          "title": "From tax relief to cheaper phones and internship: Ruto's plan to woo Kenyans",
+          "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOSmo0S2NXYXlEVUVnNGxDQW5kZEVFUFhaOTBEREFNamtsU2g1eW45MXBFOXRHWnFDTUtkVFNVb092MW5JdjlEdVBRVmRlTlV3SWlSSmxzT1RSSUQxT1JoYTdsWU5iQ1BNSW5qNkdZUl8yenJHUjBoNkRqWWh4X09FUy1vcDBRbE9YdE9vN0hWZ25CcVdGQ3FiSURSTV9MaExCSWNnUVNtUVFFM2VwZzg3cjgzUlZIM1o2blllcmdHTUpwVnQzQnBKZWNzemNPVm8?oc=5",
+          "published": "2026-10-21"
+        },
+        {
+          "outlet": "Tuko News",
+          "title": "\"No longer a luxury\": Ruto announces plan to scrap 25% mobile phone import tax",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTGRMWlhEal8zVzJBYlVlYjR5TnF0TG8tUU93UzVaeXo0OXQxQ0dmcmlJT203N0pRVElGX0xyNmd3NGU1N3hhX3N1MUNJYUN4aGdkNmlGQ0hyYXNKZVNCNEkxbEpZZWk3TFFVbjV3Y1lyNzFOX3l6MVZKTEVZN2hOQ3dIY2dRSGNVOHBhN0Q4R0tCSldNMDFIOWJDYm5pU3g0alhOS0liX3Zib0wyUzVCQkt5VWZ1Mk0?oc=5",
+          "published": "2026-10-21"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 2,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.3,
+        "note": "The action item points to a specific parliamentary bill instead of vague advice."
+      },
+      "drafted_at": "2026-10-21T09:13:47.146758+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1021-photo.jpg",
+      "photo_credit": "Photo: CDC Global / Wikimedia Commons, CC BY 2.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Signal_Searching_-_Kenya_(16437544653).jpg",
+      "reel": true,
+      "tg_msg": 423
     }
   ],
   "scripts": {
-    "radio": "Habari zenu, this is Kenya on Record. When ordinary wananchi raise concerns about the cost of living, high taxes, and expensive credit, the official response is often that we simply need to tighten our belts. But this week, the belt snapped in the boardroom.\n\nOver six hundred Chief Executive Officers—the individuals who run manufacturing plants, service firms, and logistics hubs—met directly with the President. Their message was resolute: the current tax regime and exorbitant interest rates are bleeding enterprise dry. These are not partisan figures playing politics; these are employers who balance payrolls every month. They pointed out the obvious: erratic, unpredictable tax policy drives investors across our borders, while high lending rates ensure local companies cannot borrow to scale. When businesses cannot expand, they downsize. When they downsize, households suffer, and state revenue drops.\n\nThe private sector has put it plainly: you cannot extract prosperity from a suffocated economy. The ball is now firmly with the Treasury and the Central Bank to decide whether they will listen to job creators or continue squeezing an exhausted productive sector.\n\nKwa ufupi: Zaidi ya wakurugenzi mia sita wa kampuni nchini wamemtaka Rais kurekebisha sera za kodi na kupunguza riba ya mikopo, wakionya kwamba mzigo uliopo sasa unalemaza biashara, unakandamiza uwekezaji, na kuangamiza nafasi za kazi.",
-    "voice_note": "Habari zenu. Quick accountability update from Kenya on Record. This week, the conversation on the cost of doing business reached the highest office. Over 600 CEOs held a session with President Ruto, and they did not mince their words. Their demand was direct: fix the erratic tax policies and lower the cost of credit. For months, everyday citizens have talked about shrinking wallets. Now, corporate Kenya has brought the receipts. They told the President that aggressive taxation and punishing interest rates aren’t creating wealth—they’re driving capital out of Kenya, shutting down expansion, and putting jobs on the chopping block. You simply cannot tax a nation into prosperity while making borrowing impossible for the productive sector. Let’s see if policy follows reality. Share this with an entrepreneur today.",
-    "sms": "Usiibiwe: Unstable taxes and high interest rates hurt your pocket directly. Check total cost of credit before borrowing, and demand fiscal accountability.",
-    "reels": "When 600 CEOs look the President in the eye and say 'the tax burden is unbearable,' the debate is over. Corporate Kenya has drawn the line. They told State House that erratic tax hikes and crushing interest rates are choking local enterprises and destroying jobs. Squeezing productive business cannot replace sound economic management. The warning has been delivered. The only question left is: will the executive listen?"
+    "radio": "Hamjambo wasikilizaji, karibuni kwa Kenya on Record. This week, we are looking at something sitting right inside your pocket: your mobile phone.\n\nCurrently, bringing a basic smartphone into Kenya attracts hefty levies, chief among them the 25% import and excise burden on fully built units. There is now a growing push to scrap this tax entirely to make smart devices truly affordable for ordinary citizens.\n\nHere is the accountability question: how do we reconcile government’s ambition for a digital highway with policies that make the vehicle too expensive to buy? The state wants every mwananchi to access e-Citizen, file documents, and run businesses online. Yet, when an entry-level smartphone that should cost eight thousand shillings retails at twelve thousand because of border taxes, millions are locked out of the digital economy.\n\nTreasury may argue that this levy protects local assembly plants and generates revenue. But taxing connectivity is short-sighted. An unconnected citizen cannot participate in modern trade or access digitized public services. The real long-term economic dividend lies in what people do once they are connected, not in punishing them at the port of entry.\n\nKwa ufupi: Kupunguza au kuondoa ushuru wa asilimia 25 kwa simu za rununu kutafanya bei ishuke ili kila mwananchi apate uwezo wa kujiunga na huduma za serikali na kufanya biashara mtandaoni bila vikwazo.\n\nThis is Kenya on Record. Let us keep the leaders accountable.",
+    "voice_note": "Habari zenu. Quick thought from Kenya on Record this week. We talk about digitising government services—from e-Citizen to farm subsidies—yet buying an ordinary smartphone still carries a heavy 25% tax penalty. That means before a mama mboga or a young hustler even downloads an app or accesses an online portal, they are paying a steep entry fee just to own the screen. If digital access is an essential public infrastructure, why is the tool to access it taxed like a luxury? Revenue collection is important, but leaving millions offline because handsets are unaffordable slows down the entire economy. Scrapping this tax isn't a favour; it's common sense. Share this note, and let us demand policies that actually support digital inclusion.",
+    "sms": "USIIBIWE: High phone taxes push fake gadgets into the market. Before buying a device, dial *#06# to get the IMEI, then verify it via SMS to 1555 for free.",
+    "reels": "You cannot digitise a country while overtaxing the very tools needed to get online. A 25% tax on imported smartphones is simply a barrier between wananchi and essential services. From finding work to paying for healthcare and accessing e-Citizen, a smartphone is basic infrastructure, not a luxury. Cut the tax, lower device prices, and let ordinary Kenyans participate in the digital economy. Let's keep the record straight."
   },
   "spend_usd": 0.0,
   "revision": 9
