@@ -1,5 +1,5 @@
 {
- "fetched": "2026-10-21T13:53:54.339628+00:00",
+ "fetched": "2026-10-21T14:10:04.350124+00:00",
  "x": [
   {
    "name": "Hands On Leadership",
@@ -124,275 +124,311 @@
  ],
  "videos": [
   {
-   "title": "Gladys Wanga akosoa kundi la Sifuna kwa madai ya kudhalilisha urithi wa Raila Odinga",
-   "channel": "Citizen TV",
-   "views": 4735,
-   "published": "2026-10-21T10:39:41+00:00",
-   "per_hour": 1463,
-   "url": "https://www.youtube.com/watch?v=3CWKCqKpcm0",
-   "short": "https://youtube.com/shorts/3CWKCqKpcm0"
-  },
-  {
    "title": "EACC recovers Sh207 million in properties linked to former Trans Nzoia accountant",
    "channel": "Citizen TV",
-   "views": 574,
+   "views": 1409,
    "published": "2026-10-21T13:26:40+00:00",
-   "per_hour": 574,
+   "per_hour": 1409,
    "url": "https://www.youtube.com/watch?v=Al-_tSY2ewI",
    "short": "https://youtube.com/shorts/Al-_tSY2ewI"
   },
   {
    "title": "Wandani wa Rais Ruto Kaunti ya Trans Nzoia wamtaka Gavana Natembeya kuweka kando tofauti za kisiasa",
    "channel": "Citizen TV",
-   "views": 1628,
+   "views": 1882,
    "published": "2026-10-21T10:48:24+00:00",
-   "per_hour": 527,
+   "per_hour": 560,
    "url": "https://www.youtube.com/watch?v=O4YZu42wnww",
    "short": "https://youtube.com/shorts/O4YZu42wnww"
   },
   {
-   "title": "Ruto Promises Tax Relief Amid Questions Over Economic Reforms",
-   "channel": "KTN News",
-   "views": 887,
-   "published": "2026-10-21T10:30:54+00:00",
-   "per_hour": 262,
-   "url": "https://www.youtube.com/watch?v=uJmwNPkUQxc",
-   "short": "https://youtube.com/shorts/uJmwNPkUQxc"
-  },
-  {
-   "title": "Hassan Omar afika mbele ya IEBC kujibu maswali kuhusu matamshi kuhusu kutumia wafu kupiga kura",
-   "channel": "NTV Kenya",
-   "views": 931,
-   "published": "2026-10-21T10:18:04+00:00",
-   "per_hour": 259,
-   "url": "https://www.youtube.com/watch?v=1CdGIasjP-0",
-   "short": "https://youtube.com/shorts/1CdGIasjP-0"
-  },
-  {
    "title": "UoN students demand education CS Ogamba’s resignation",
    "channel": "Citizen TV",
-   "views": 252,
+   "views": 529,
    "published": "2026-10-21T13:21:54+00:00",
-   "per_hour": 252,
+   "per_hour": 529,
    "url": "https://www.youtube.com/watch?v=5idV0MFpSn4",
    "short": "https://youtube.com/shorts/5idV0MFpSn4"
   },
   {
-   "title": "Prof Ndetei arrives in court for cross-examination over opposition to his ex-wife's bail application",
-   "channel": "Citizen TV",
-   "views": 565,
-   "published": "2026-10-21T11:31:01+00:00",
-   "per_hour": 237,
-   "url": "https://www.youtube.com/watch?v=u8wwInPH3mw",
-   "short": "https://youtube.com/shorts/u8wwInPH3mw"
-  },
-  {
-   "title": "Hassan Omar defends remarks on deceased voters",
-   "channel": "Citizen TV",
-   "views": 200,
-   "published": "2026-10-21T13:14:54+00:00",
-   "per_hour": 200,
-   "url": "https://www.youtube.com/watch?v=3oMKlRJWxpY",
-   "short": "https://youtube.com/shorts/3oMKlRJWxpY"
-  },
-  {
    "title": "Wanafunzi wa UoN Waingia Barabarani, Watishia Kuungana na Wahadhiri Kugoma",
    "channel": "KTN News",
-   "views": 145,
+   "views": 362,
    "published": "2026-10-21T13:40:19+00:00",
-   "per_hour": 145,
+   "per_hour": 362,
    "url": "https://www.youtube.com/watch?v=NRvTFemW9Xk",
    "short": "https://youtube.com/shorts/NRvTFemW9Xk"
   },
   {
+   "title": "Hassan Omar defends remarks on deceased voters",
+   "channel": "Citizen TV",
+   "views": 278,
+   "published": "2026-10-21T13:14:54+00:00",
+   "per_hour": 278,
+   "url": "https://www.youtube.com/watch?v=3oMKlRJWxpY",
+   "short": "https://youtube.com/shorts/3oMKlRJWxpY"
+  },
+  {
+   "title": "Prof Ndetei arrives in court for cross-examination over opposition to his ex-wife's bail application",
+   "channel": "Citizen TV",
+   "views": 709,
+   "published": "2026-10-21T11:31:01+00:00",
+   "per_hour": 267,
+   "url": "https://www.youtube.com/watch?v=u8wwInPH3mw",
+   "short": "https://youtube.com/shorts/u8wwInPH3mw"
+  },
+  {
+   "title": "Hassan Omar afika mbele ya IEBC kujibu maswali kuhusu matamshi kuhusu kutumia wafu kupiga kura",
+   "channel": "NTV Kenya",
+   "views": 997,
+   "published": "2026-10-21T10:18:04+00:00",
+   "per_hour": 258,
+   "url": "https://www.youtube.com/watch?v=1CdGIasjP-0",
+   "short": "https://youtube.com/shorts/1CdGIasjP-0"
+  },
+  {
    "title": "Health officers protest over Ebola preparedness and welfare",
    "channel": "Citizen TV",
-   "views": 127,
+   "views": 210,
    "published": "2026-10-21T13:18:17+00:00",
-   "per_hour": 127,
+   "per_hour": 210,
    "url": "https://www.youtube.com/watch?v=sHdLCVC_lD4",
    "short": "https://youtube.com/shorts/sHdLCVC_lD4"
   },
   {
+   "title": "Student protests paralyse learning at Kenya Coast National Polytechnic",
+   "channel": "Citizen TV",
+   "views": 197,
+   "published": "2026-10-21T13:24:27+00:00",
+   "per_hour": 197,
+   "url": "https://www.youtube.com/watch?v=A5glxP-s2TM",
+   "short": "https://youtube.com/shorts/A5glxP-s2TM"
+  },
+  {
+   "title": "NCIC summons former Makadara MP Reuben Ndolo",
+   "channel": "Citizen TV",
+   "views": 152,
+   "published": "2026-10-21T13:16:15+00:00",
+   "per_hour": 152,
+   "url": "https://www.youtube.com/watch?v=HkT3ZO03MF0",
+   "short": "https://youtube.com/shorts/HkT3ZO03MF0"
+  },
+  {
+   "title": "Hassan Omar Aomba IEBC Kutupilia Mbali Kesi ya Kauli Zake Kuhusu Wapiga Kura Waliokufa",
+   "channel": "KTN News",
+   "views": 143,
+   "published": "2026-10-21T13:43:01+00:00",
+   "per_hour": 143,
+   "url": "https://www.youtube.com/watch?v=Vrug2qnr5_c",
+   "short": "https://youtube.com/shorts/Vrug2qnr5_c"
+  },
+  {
    "title": "Wazalendo United watwaa ubingwa wa Mashujaa Cup 2026",
    "channel": "Citizen TV",
-   "views": 349,
+   "views": 429,
    "published": "2026-10-21T11:03:04+00:00",
-   "per_hour": 123,
+   "per_hour": 138,
    "url": "https://www.youtube.com/watch?v=mncsgCq_oV0",
    "short": "https://youtube.com/shorts/mncsgCq_oV0"
   },
   {
    "title": "Hofu Kiambaa kufuatia vifo vya watu kwenye bwawa",
    "channel": "NTV Kenya",
-   "views": 344,
+   "views": 365,
    "published": "2026-10-21T11:02:08+00:00",
-   "per_hour": 120,
+   "per_hour": 117,
    "url": "https://www.youtube.com/watch?v=ETGay7ciTA0",
    "short": "https://youtube.com/shorts/ETGay7ciTA0"
   },
   {
-   "title": "Maafisa wa UDA kaunti ya Vihiga wasifu miradi ya serikali na kukosoa upinzani",
-   "channel": "Citizen TV",
-   "views": 328,
-   "published": "2026-10-21T10:49:52+00:00",
-   "per_hour": 107,
-   "url": "https://www.youtube.com/watch?v=iwM2V7chc94",
-   "short": "https://youtube.com/shorts/iwM2V7chc94"
-  },
-  {
    "title": "Vyama vya matatu vinataka bei ya mafuta ipunguzwe",
    "channel": "NTV Kenya",
-   "views": 292,
+   "views": 344,
    "published": "2026-10-21T11:06:14+00:00",
-   "per_hour": 104,
+   "per_hour": 112,
    "url": "https://www.youtube.com/watch?v=eLql1PhfHxw",
    "short": "https://youtube.com/shorts/eLql1PhfHxw"
   },
   {
-   "title": "NCIC summons former Makadara MP Reuben Ndolo",
+   "title": "Karicheni residents urge politicians to keep off proposed cement factory",
    "channel": "Citizen TV",
-   "views": 99,
-   "published": "2026-10-21T13:16:15+00:00",
-   "per_hour": 99,
-   "url": "https://www.youtube.com/watch?v=HkT3ZO03MF0",
-   "short": "https://youtube.com/shorts/HkT3ZO03MF0"
+   "views": 108,
+   "published": "2026-10-21T13:30:43+00:00",
+   "per_hour": 108,
+   "url": "https://www.youtube.com/watch?v=Hu0ziyh_6p4",
+   "short": "https://youtube.com/shorts/Hu0ziyh_6p4"
   }
  ],
  "errors": {},
  "catalog": [
   {
+   "title": "Zaidi ya Washukiwa 50 Wakamatwa Homa Bay Katika Msako Dhidi ya Genge la Wahuni",
+   "channel": "KTN News",
+   "views": 23,
+   "published": "2026-10-21T13:59:15+00:00",
+   "per_hour": 23,
+   "url": "https://www.youtube.com/watch?v=EPJLlsQLdvc",
+   "short": "https://youtube.com/shorts/EPJLlsQLdvc"
+  },
+  {
+   "title": "Wakazi wa Lamu Wadai Hasara Kubwa Baada ya Kukosa Umeme kwa Wiki Moja",
+   "channel": "KTN News",
+   "views": 16,
+   "published": "2026-10-21T13:57:08+00:00",
+   "per_hour": 16,
+   "url": "https://www.youtube.com/watch?v=kYV61u8rwVI",
+   "short": "https://youtube.com/shorts/kYV61u8rwVI"
+  },
+  {
+   "title": "Bwawa la Kawaida Kiambaa Lazua Maswali, Wakazi Wataka Usalama na Msaada wa Kijamii",
+   "channel": "KTN News",
+   "views": 7,
+   "published": "2026-10-21T13:55:34+00:00",
+   "per_hour": 7,
+   "url": "https://www.youtube.com/watch?v=8oTEw8eyQ9U",
+   "short": "https://youtube.com/shorts/8oTEw8eyQ9U"
+  },
+  {
    "title": "Kirinyaga Yaonya Kuhusu Pombe Haramu, Polisi Wasema Mustakabali wa Vijana Uko Hatarini",
    "channel": "KTN News",
-   "views": 0,
+   "views": 18,
    "published": "2026-10-21T13:51:57+00:00",
-   "per_hour": 0,
+   "per_hour": 18,
    "url": "https://www.youtube.com/watch?v=sC8J-WkTYoY",
    "short": "https://youtube.com/shorts/sC8J-WkTYoY"
   },
   {
    "title": "Naibu Rais Kindiki Ataka Pombe Haramu Itambuliwe kama Janga la Kitaifa",
    "channel": "KTN News",
-   "views": 1,
+   "views": 20,
    "published": "2026-10-21T13:50:52+00:00",
-   "per_hour": 1,
+   "per_hour": 20,
    "url": "https://www.youtube.com/watch?v=t17erUURDr0",
    "short": "https://youtube.com/shorts/t17erUURDr0"
   },
   {
+   "title": "Wajir West MP calls for action over alleged incitement in Kanjara",
+   "channel": "Citizen TV",
+   "views": 43,
+   "published": "2026-10-21T13:49:39+00:00",
+   "per_hour": 43,
+   "url": "https://www.youtube.com/watch?v=S4W9thbMRe0",
+   "short": "https://youtube.com/shorts/S4W9thbMRe0"
+  },
+  {
    "title": "Kisumu Yaongeza Tahadhari ya Ebola, Serikali Yasema Hatua za Kukabiliana na Visa Zimewekwa",
    "channel": "KTN News",
-   "views": 8,
+   "views": 12,
    "published": "2026-10-21T13:45:51+00:00",
-   "per_hour": 8,
+   "per_hour": 12,
    "url": "https://www.youtube.com/watch?v=HSVbRAdkqXY",
    "short": "https://youtube.com/shorts/HSVbRAdkqXY"
   },
   {
    "title": "Busia Yataka Kituo cha Kudumu cha Karantini Alupe Kukabili Ebola na Magonjwa ya Kuambukiza",
    "channel": "KTN News",
-   "views": 9,
+   "views": 15,
    "published": "2026-10-21T13:43:59+00:00",
-   "per_hour": 9,
+   "per_hour": 15,
    "url": "https://www.youtube.com/watch?v=P6pZ5laGTDY",
    "short": "https://youtube.com/shorts/P6pZ5laGTDY"
   },
   {
    "title": "Hassan Omar Aomba IEBC Kutupilia Mbali Kesi ya Kauli Zake Kuhusu Wapiga Kura Waliokufa",
    "channel": "KTN News",
-   "views": 54,
+   "views": 143,
    "published": "2026-10-21T13:43:01+00:00",
-   "per_hour": 54,
+   "per_hour": 143,
    "url": "https://www.youtube.com/watch?v=Vrug2qnr5_c",
    "short": "https://youtube.com/shorts/Vrug2qnr5_c"
   },
   {
    "title": "Musalia Mudavadi Aongoza Viongozi Kutoa Heshima za Mwisho kwa Burudi Nabwera",
    "channel": "KTN News",
-   "views": 17,
+   "views": 33,
    "published": "2026-10-21T13:41:15+00:00",
-   "per_hour": 17,
+   "per_hour": 33,
    "url": "https://www.youtube.com/watch?v=skd5oldX0_0",
    "short": "https://youtube.com/shorts/skd5oldX0_0"
   },
   {
    "title": "Wanafunzi wa UoN Waingia Barabarani, Watishia Kuungana na Wahadhiri Kugoma",
    "channel": "KTN News",
-   "views": 145,
+   "views": 362,
    "published": "2026-10-21T13:40:19+00:00",
-   "per_hour": 145,
+   "per_hour": 362,
    "url": "https://www.youtube.com/watch?v=NRvTFemW9Xk",
    "short": "https://youtube.com/shorts/NRvTFemW9Xk"
   },
   {
    "title": "Karicheni residents urge politicians to keep off proposed cement factory",
    "channel": "Citizen TV",
-   "views": 37,
+   "views": 108,
    "published": "2026-10-21T13:30:43+00:00",
-   "per_hour": 37,
+   "per_hour": 108,
    "url": "https://www.youtube.com/watch?v=Hu0ziyh_6p4",
    "short": "https://youtube.com/shorts/Hu0ziyh_6p4"
   },
   {
    "title": "EACC recovers Sh207 million in properties linked to former Trans Nzoia accountant",
    "channel": "Citizen TV",
-   "views": 574,
+   "views": 1409,
    "published": "2026-10-21T13:26:40+00:00",
-   "per_hour": 574,
+   "per_hour": 1409,
    "url": "https://www.youtube.com/watch?v=Al-_tSY2ewI",
    "short": "https://youtube.com/shorts/Al-_tSY2ewI"
   },
   {
    "title": "Student protests paralyse learning at Kenya Coast National Polytechnic",
    "channel": "Citizen TV",
-   "views": 66,
+   "views": 197,
    "published": "2026-10-21T13:24:27+00:00",
-   "per_hour": 66,
+   "per_hour": 197,
    "url": "https://www.youtube.com/watch?v=A5glxP-s2TM",
    "short": "https://youtube.com/shorts/A5glxP-s2TM"
   },
   {
    "title": "UoN students demand education CS Ogamba’s resignation",
    "channel": "Citizen TV",
-   "views": 252,
+   "views": 529,
    "published": "2026-10-21T13:21:54+00:00",
-   "per_hour": 252,
+   "per_hour": 529,
    "url": "https://www.youtube.com/watch?v=5idV0MFpSn4",
    "short": "https://youtube.com/shorts/5idV0MFpSn4"
   },
   {
    "title": "Health officers protest over Ebola preparedness and welfare",
    "channel": "Citizen TV",
-   "views": 127,
+   "views": 210,
    "published": "2026-10-21T13:18:17+00:00",
-   "per_hour": 127,
+   "per_hour": 210,
    "url": "https://www.youtube.com/watch?v=sHdLCVC_lD4",
    "short": "https://youtube.com/shorts/sHdLCVC_lD4"
   },
   {
    "title": "NCIC summons former Makadara MP Reuben Ndolo",
    "channel": "Citizen TV",
-   "views": 99,
+   "views": 152,
    "published": "2026-10-21T13:16:15+00:00",
-   "per_hour": 99,
+   "per_hour": 152,
    "url": "https://www.youtube.com/watch?v=HkT3ZO03MF0",
    "short": "https://youtube.com/shorts/HkT3ZO03MF0"
   },
   {
    "title": "Hassan Omar defends remarks on deceased voters",
    "channel": "Citizen TV",
-   "views": 200,
+   "views": 278,
    "published": "2026-10-21T13:14:54+00:00",
-   "per_hour": 200,
+   "per_hour": 278,
    "url": "https://www.youtube.com/watch?v=3oMKlRJWxpY",
    "short": "https://youtube.com/shorts/3oMKlRJWxpY"
   },
   {
    "title": "One person killed, unknown number trapped as quarry caves in at Mutonga, Meru County",
    "channel": "NTV Kenya",
-   "views": 176,
+   "views": 221,
    "published": "2026-10-21T12:07:33+00:00",
-   "per_hour": 99,
+   "per_hour": 108,
    "url": "https://www.youtube.com/watch?v=nd7hhEN9oOw",
    "short": "https://youtube.com/shorts/nd7hhEN9oOw"
   },
@@ -401,250 +437,214 @@
    "channel": "NTV Kenya",
    "views": 35,
    "published": "2026-10-21T11:53:24+00:00",
-   "per_hour": 17,
+   "per_hour": 15,
    "url": "https://www.youtube.com/watch?v=ycmw4ZtH_ok",
    "short": "https://youtube.com/shorts/ycmw4ZtH_ok"
   },
   {
    "title": "Balozi wa Ufaransa atarajiwa kuzindua mpango wa kupambana na dhuluma za kijinsia Elgeyo Marakwet",
    "channel": "NTV Kenya",
-   "views": 27,
+   "views": 39,
    "published": "2026-10-21T11:52:34+00:00",
-   "per_hour": 13,
+   "per_hour": 17,
    "url": "https://www.youtube.com/watch?v=xFTeiPJxSBg",
    "short": "https://youtube.com/shorts/xFTeiPJxSBg"
   },
   {
    "title": "Familia zilizopoteza wapendwa wao katika shambulizi za mamba zapata afueni",
    "channel": "NTV Kenya",
-   "views": 67,
+   "views": 96,
    "published": "2026-10-21T11:44:28+00:00",
-   "per_hour": 31,
+   "per_hour": 40,
    "url": "https://www.youtube.com/watch?v=AailO-TNMq0",
    "short": "https://youtube.com/shorts/AailO-TNMq0"
   },
   {
    "title": "Prof Ndetei arrives in court for cross-examination over opposition to his ex-wife's bail application",
    "channel": "Citizen TV",
-   "views": 565,
+   "views": 709,
    "published": "2026-10-21T11:31:01+00:00",
-   "per_hour": 237,
+   "per_hour": 267,
    "url": "https://www.youtube.com/watch?v=u8wwInPH3mw",
    "short": "https://youtube.com/shorts/u8wwInPH3mw"
   },
   {
    "title": "Wazazi waombwa kuwa mifano mizuri kwa watoto wao msimu huu wa likizo",
    "channel": "NTV Kenya",
-   "views": 149,
+   "views": 219,
    "published": "2026-10-21T11:10:09+00:00",
-   "per_hour": 55,
+   "per_hour": 73,
    "url": "https://www.youtube.com/watch?v=3z3_eBMwhmo",
    "short": "https://youtube.com/shorts/3z3_eBMwhmo"
   },
   {
    "title": "Wakazi Kajiado wakabiliwa na uhaba mkubwa wa maji na tishio la njaa",
    "channel": "NTV Kenya",
-   "views": 28,
+   "views": 160,
    "published": "2026-10-21T11:07:28+00:00",
-   "per_hour": 10,
+   "per_hour": 53,
    "url": "https://www.youtube.com/watch?v=wA8giRNnSuE",
    "short": "https://youtube.com/shorts/wA8giRNnSuE"
   },
   {
    "title": "Vyama vya matatu vinataka bei ya mafuta ipunguzwe",
    "channel": "NTV Kenya",
-   "views": 292,
+   "views": 344,
    "published": "2026-10-21T11:06:14+00:00",
-   "per_hour": 104,
+   "per_hour": 112,
    "url": "https://www.youtube.com/watch?v=eLql1PhfHxw",
    "short": "https://youtube.com/shorts/eLql1PhfHxw"
   },
   {
    "title": "Wamama wajawazito Luanda wahimizwa kutembelea vituo vya afya ili kupata mafunzo na matibabu",
    "channel": "NTV Kenya",
-   "views": 60,
+   "views": 76,
    "published": "2026-10-21T11:05:20+00:00",
-   "per_hour": 21,
+   "per_hour": 25,
    "url": "https://www.youtube.com/watch?v=gNRGLb6Bm-0",
    "short": "https://youtube.com/shorts/gNRGLb6Bm-0"
   },
   {
    "title": "Wazalendo United watwaa ubingwa wa Mashujaa Cup 2026",
    "channel": "Citizen TV",
-   "views": 349,
+   "views": 429,
    "published": "2026-10-21T11:03:04+00:00",
-   "per_hour": 123,
+   "per_hour": 138,
    "url": "https://www.youtube.com/watch?v=mncsgCq_oV0",
    "short": "https://youtube.com/shorts/mncsgCq_oV0"
   },
   {
    "title": "Hofu Kiambaa kufuatia vifo vya watu kwenye bwawa",
    "channel": "NTV Kenya",
-   "views": 344,
+   "views": 365,
    "published": "2026-10-21T11:02:08+00:00",
-   "per_hour": 120,
+   "per_hour": 117,
    "url": "https://www.youtube.com/watch?v=ETGay7ciTA0",
    "short": "https://youtube.com/shorts/ETGay7ciTA0"
   },
   {
    "title": "Wadau wa  elimu na Wazazi wataka serikali kuboresha miundombinu ya shule ya St. Dorcas",
    "channel": "Citizen TV",
-   "views": 261,
+   "views": 302,
    "published": "2026-10-21T11:00:51+00:00",
-   "per_hour": 90,
+   "per_hour": 96,
    "url": "https://www.youtube.com/watch?v=G6-poNBfw0I",
    "short": "https://youtube.com/shorts/G6-poNBfw0I"
   },
   {
    "title": "Wazee Kirinyaga wapokea msaada wa bidhaa muhimu wakati wa Mashujaa Day",
    "channel": "Citizen TV",
-   "views": 281,
+   "views": 341,
    "published": "2026-10-21T10:57:04+00:00",
-   "per_hour": 95,
+   "per_hour": 106,
    "url": "https://www.youtube.com/watch?v=yatlcwSj3V0",
    "short": "https://youtube.com/shorts/yatlcwSj3V0"
   },
   {
    "title": "Mbunge wa Ganze Kenneth Kzungu akosoa KWS kwa uvamizi wa ndovu",
    "channel": "Citizen TV",
-   "views": 207,
+   "views": 255,
    "published": "2026-10-21T10:55:35+00:00",
-   "per_hour": 70,
+   "per_hour": 79,
    "url": "https://www.youtube.com/watch?v=I5nRAxk0164",
    "short": "https://youtube.com/shorts/I5nRAxk0164"
   },
   {
    "title": "Maafisa wa UDA kaunti ya Vihiga wasifu miradi ya serikali na kukosoa upinzani",
    "channel": "Citizen TV",
-   "views": 328,
+   "views": 350,
    "published": "2026-10-21T10:49:52+00:00",
-   "per_hour": 107,
+   "per_hour": 105,
    "url": "https://www.youtube.com/watch?v=iwM2V7chc94",
    "short": "https://youtube.com/shorts/iwM2V7chc94"
   },
   {
    "title": "Wandani wa Rais Ruto Kaunti ya Trans Nzoia wamtaka Gavana Natembeya kuweka kando tofauti za kisiasa",
    "channel": "Citizen TV",
-   "views": 1628,
+   "views": 1882,
    "published": "2026-10-21T10:48:24+00:00",
-   "per_hour": 527,
+   "per_hour": 560,
    "url": "https://www.youtube.com/watch?v=O4YZu42wnww",
    "short": "https://youtube.com/shorts/O4YZu42wnww"
   },
   {
    "title": "Familia mbili Ukraine Mlima Elgon waishi na wasiwasi wakisubiri wana wao waliofungwa Ukraine",
    "channel": "NTV Kenya",
-   "views": 218,
+   "views": 228,
    "published": "2026-10-21T10:47:17+00:00",
-   "per_hour": 70,
+   "per_hour": 67,
    "url": "https://www.youtube.com/watch?v=89X6-64HPhQ",
    "short": "https://youtube.com/shorts/89X6-64HPhQ"
   },
   {
    "title": "Hakeem Mutungi wins boys’ under-10 title at East Africa Junior Golf Rankings",
    "channel": "KTN News",
-   "views": 175,
+   "views": 58,
    "published": "2026-10-21T10:46:36+00:00",
-   "per_hour": 56,
+   "per_hour": 17,
    "url": "https://www.youtube.com/watch?v=NeCyN5vaNZE",
    "short": "https://youtube.com/shorts/NeCyN5vaNZE"
   },
   {
    "title": "Walimu 100 wa elimu ya awali Baringo walienziwa kwa mchango wao katika kukuza elimu",
    "channel": "NTV Kenya",
-   "views": 97,
+   "views": 109,
    "published": "2026-10-21T10:43:11+00:00",
-   "per_hour": 31,
+   "per_hour": 32,
    "url": "https://www.youtube.com/watch?v=yDddlinFlXE",
    "short": "https://youtube.com/shorts/yDddlinFlXE"
   },
   {
    "title": "Cereal Growers Association raises alarm over climate-driven crop failures in the North Rift region",
    "channel": "KTN News",
-   "views": 195,
+   "views": 227,
    "published": "2026-10-21T10:43:08+00:00",
-   "per_hour": 61,
+   "per_hour": 66,
    "url": "https://www.youtube.com/watch?v=a_kPcjDYAOs",
    "short": "https://youtube.com/shorts/a_kPcjDYAOs"
   },
   {
    "title": "Nyandarua seeks uniform enforcement of potato packaging regulations across counties",
    "channel": "KTN News",
-   "views": 30,
+   "views": 24,
    "published": "2026-10-21T10:41:27+00:00",
-   "per_hour": 9,
+   "per_hour": 7,
    "url": "https://www.youtube.com/watch?v=MJuCHu0nOu0",
    "short": "https://youtube.com/shorts/MJuCHu0nOu0"
   },
   {
    "title": "African firms turn to in-house technology teams to solve business challenges",
    "channel": "KTN News",
-   "views": 80,
+   "views": 21,
    "published": "2026-10-21T10:40:03+00:00",
-   "per_hour": 25,
+   "per_hour": 6,
    "url": "https://www.youtube.com/watch?v=RU-Ey57pn5Q",
    "short": "https://youtube.com/shorts/RU-Ey57pn5Q"
   },
   {
-   "title": "Gladys Wanga akosoa kundi la Sifuna kwa madai ya kudhalilisha urithi wa Raila Odinga",
-   "channel": "Citizen TV",
-   "views": 4735,
-   "published": "2026-10-21T10:39:41+00:00",
-   "per_hour": 1463,
-   "url": "https://www.youtube.com/watch?v=3CWKCqKpcm0",
-   "short": "https://youtube.com/shorts/3CWKCqKpcm0"
-  },
-  {
    "title": "Kenya urged to invest in digital skills to unlock artificial intelligence potential",
    "channel": "KTN News",
-   "views": 307,
+   "views": 19,
    "published": "2026-10-21T10:38:39+00:00",
-   "per_hour": 94,
+   "per_hour": 5,
    "url": "https://www.youtube.com/watch?v=JTgP99QL440",
    "short": "https://youtube.com/shorts/JTgP99QL440"
   },
   {
-   "title": "Kenya’s luxury market attracts global brands amid rising demand for premium goods",
-   "channel": "KTN News",
-   "views": 185,
-   "published": "2026-10-21T10:38:11+00:00",
-   "per_hour": 57,
-   "url": "https://www.youtube.com/watch?v=bHVupJbvJaE",
-   "short": "https://youtube.com/shorts/bHVupJbvJaE"
-  },
-  {
-   "title": "Ruto Promises Tax Relief Amid Questions Over Economic Reforms",
-   "channel": "KTN News",
-   "views": 887,
-   "published": "2026-10-21T10:30:54+00:00",
-   "per_hour": 262,
-   "url": "https://www.youtube.com/watch?v=uJmwNPkUQxc",
-   "short": "https://youtube.com/shorts/uJmwNPkUQxc"
-  },
-  {
    "title": "Mwili mmoja umepatikana baada ya tukio la kuporomoka kwa machimbo ya mawe Meru",
    "channel": "NTV Kenya",
-   "views": 321,
+   "views": 346,
    "published": "2026-10-21T10:28:15+00:00",
    "per_hour": 94,
    "url": "https://www.youtube.com/watch?v=8rBzX9wTFjs",
    "short": "https://youtube.com/shorts/8rBzX9wTFjs"
   },
   {
-   "title": "Ruiru MP Simon King'ara calls for increased funding for older persons and people with disabilities",
-   "channel": "KTN News",
-   "views": 167,
-   "published": "2026-10-21T10:27:18+00:00",
-   "per_hour": 48,
-   "url": "https://www.youtube.com/watch?v=-tB0F9xSfZo",
-   "short": "https://youtube.com/shorts/-tB0F9xSfZo"
-  },
-  {
    "title": "Hassan Omar afika mbele ya IEBC kujibu maswali kuhusu matamshi kuhusu kutumia wafu kupiga kura",
    "channel": "NTV Kenya",
-   "views": 931,
+   "views": 997,
    "published": "2026-10-21T10:18:04+00:00",
-   "per_hour": 259,
+   "per_hour": 258,
    "url": "https://www.youtube.com/watch?v=1CdGIasjP-0",
    "short": "https://youtube.com/shorts/1CdGIasjP-0"
   },
@@ -662,7 +662,7 @@
    "channel": "NTV Kenya",
    "views": 201,
    "published": "2026-10-21T09:12:23+00:00",
-   "per_hour": 43,
+   "per_hour": 41,
    "url": "https://www.youtube.com/watch?v=vCUg3LNiUpM",
    "short": "https://youtube.com/shorts/vCUg3LNiUpM"
   }
