@@ -934,22 +934,175 @@
     {
       "id": "2026-w43-hot-1021m",
       "template": "sauti",
-      "bg": "usiku",
       "lane": "everyone",
+      "kicker": "Students",
+      "line": "University of Nairobi students block Waiyaki Way over the *lecturers' strike*.",
+      "fact": "Lecturers downed tools across public universities over money still owed to them.",
+      "source": "Capital FM News, 2026-10-21",
+      "message": "University students demand an immediate end to the lecturers' strike that has disrupted learning.",
+      "action": "Follow the strike updates on universities.go.ke and engage your student council",
+      "photo_query": "University of Nairobi campus",
+      "who": "Ministry of Education",
+      "where": "Nairobi",
+      "when": "21 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Thousands of university students face prolonged academic delays and wasted rent.",
+      "caption": "University of Nairobi students took to Waiyaki Way to protest the ongoing lecturers' strike. Another semester is on the line while government and union officials argue over pay agreements.\n\nWhat is the situation at your campus? Drop it below.\n\n#UoNStrike #KenyaOnRecord",
+      "beats": [
+        "UoN students blocked Waiyaki Way over the *lecturers' strike*.",
+        "Learning remains stalled across public universities nationwide.",
+        "Students are paying rent and food bills for empty lecture halls.",
+        "Kenyans demand: the Ministry of Education settles the dispute *now*.",
+        "Check strike status on education.go.ke."
+      ],
+      "bg": "usiku",
       "publish_at": "2026-10-21T14:53:00+03:00",
-      "status": "planned",
       "hot": true,
       "beat": "life",
       "avoid": [
         "Scrapping the 25% phone import tax will make smartphones affordable for wananchi."
-      ]
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "UoN students block Waiyaki Way, demand end to lecturers’ strike",
+          "link": "https://capitalfm.africa/uon-students-block-waiyaki-way-demand-end-to-lecturers-strike/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-21"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 9,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "avg": 8.2,
+        "note": "Make sure the action uses a concrete URL that exists."
+      },
+      "drafted_at": "2026-10-21T13:41:57.673801+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1021m-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/uon-students-block-waiyaki-way-demand-end-to-lecturers-strike/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 429
+    },
+    {
+      "id": "2026-w43-hot-1021b1336",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "EACC recovers *Sh207 million* in unexplained wealth from a Trans Nzoia accountant.",
+      "fact": "The High Court ordered forfeiture of land, houses, and luxury cars bought with public funds.",
+      "source": "Kenyans.co.ke, The Eastleigh Voice, Tuko News",
+      "message": "EACC recovered Sh207m in unexplained assets from a Trans Nzoia accountant and returned them to the state.",
+      "action": "Track recovered public assets on eacc.go.ke",
+      "photo_query": "High Court of Kenya Nairobi",
+      "who": "Ethics and Anti-Corruption Commission",
+      "where": "Trans Nzoia",
+      "when": "21 Oct 2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Stolen county revenue returns to the public purse instead of private pockets.",
+      "caption": "EACC has recovered Sh207 million in unexplained assets from a former Trans Nzoia County accountant. The High Court ruled the houses, plots, and cars were acquired with public money.\n\nWhat should county governments do to seal payroll theft?\n\n#FollowTheMoney #KenyaOnRecord",
+      "beats": [
+        "EACC recovers *Sh207 million* from an ex-county accountant.",
+        "The High Court forfeited houses, plots, and vehicles to the state.",
+        "The former official failed to explain the source of his wealth.",
+        "Kenyans demand: Trans Nzoia County channels this *Sh207m* to hospitals.",
+        "Track asset recoveries on eacc.go.ke."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-21T13:56:00+03:00",
+      "hot": true,
+      "avoid": [
+        "Scrapping the 25% phone import tax will make smartphones affordable for wananchi."
+      ],
+      "breaking": {
+        "title": "EACC Recovers KSh207m in Unexplained Assets from Former Trans Nzoia County Accountant",
+        "outlets": [
+          "Kenyans.co.ke",
+          "The Eastleigh Voice",
+          "Tuko News"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "EACC Recovers Assets Worth Ksh207 Million From Former Govt Account",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWkdFcGhwY2daVWpyM2lkQ2ZJcnJPV3U3LTE3dFhCNUE2NGF6STc1RVRocm9xOEt0THpfUFFfeG1LRE9MRmx0T2M0dVJuOGZTWEFOcW85ZWlCd1l2Umg0TlRtYWg5SG1Ic0VzN1g1QjdDcWcyQTNvUjBVbjVqdi1wV1RYNHNUUlJRalBaeFpZeW5vX1ZBUnEydHV1R18xZm5qQlNZekhn?oc=5",
+          "published": "2026-10-21"
+        },
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "EACC recovers Sh207.7 million from former Trans Nzoia County accountant",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSm90eTRzVEl5U3h6OGxsN0g2UkxDQzNTVm9TeWc2ZU00ZEFVTXdIVlRNVVdEZmFKaWlmOVE5dVp0aG12a0lnSjN6aS1pa2RNT19HZkRYR3QxWVpkWWRucjRfdHBDWHZ3d193SGF1UVBGcGZOOTBmR3BIdFc1SHI5S1gxRnJCZEtkUXczMjFZRUxUN2lOUVFkRlBSRTBCbEs4Q005UDI5bjY4clBRZ1BZb2gzRzdDTHhM?oc=5",
+          "published": "2026-10-21"
+        },
+        {
+          "outlet": "Tuko News",
+          "title": "EACC Recovers KSh207m in Unexplained Assets from Former Trans Nzoia County Accountant",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNUUdLeTJUZFFxbmhraVB6UXpJUlJVbkw3Z3ota2ZxSFlOZ3JnTEJxQWM3bGhCYU45ZzdJUTc5TE9GWV8yT25aZDc3UjlMVW1FQVkxM3FvSFJyaDNCMS1panFlVnY4TV9mZ1FubkNUVVJmb3NXQk5MU2JONXlNeElMMDVUUmlxYXBHNnJ6U0R6ci0xWGRRa2NBUy1YYw?oc=5",
+          "published": "2026-10-21"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 5,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.6,
+        "note": "Increase demand score to match actual trending news priority."
+      },
+      "drafted_at": "2026-10-21T13:41:57.673808+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1021b1336-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/eacc-recovers-ksh-207m-unexplained-assets-from-ex-trans-nzoia-accountant/",
+      "tv_clip": {
+        "channel": "Citizen TV",
+        "title": "Walimu wa kike Trans Nzoia wataka serikali kuzingatia afya ya akili ya walimu",
+        "url": "https://www.youtube.com/watch?v=CHTOszOpeZU"
+      },
+      "reel": true,
+      "tg_msg": 430
     }
   ],
   "scripts": {
-    "radio": "Hamjambo wasikilizaji, karibuni kwa Kenya on Record. This week, we are looking at something sitting right inside your pocket: your mobile phone.\n\nCurrently, bringing a basic smartphone into Kenya attracts hefty levies, chief among them the 25% import and excise burden on fully built units. There is now a growing push to scrap this tax entirely to make smart devices truly affordable for ordinary citizens.\n\nHere is the accountability question: how do we reconcile government’s ambition for a digital highway with policies that make the vehicle too expensive to buy? The state wants every mwananchi to access e-Citizen, file documents, and run businesses online. Yet, when an entry-level smartphone that should cost eight thousand shillings retails at twelve thousand because of border taxes, millions are locked out of the digital economy.\n\nTreasury may argue that this levy protects local assembly plants and generates revenue. But taxing connectivity is short-sighted. An unconnected citizen cannot participate in modern trade or access digitized public services. The real long-term economic dividend lies in what people do once they are connected, not in punishing them at the port of entry.\n\nKwa ufupi: Kupunguza au kuondoa ushuru wa asilimia 25 kwa simu za rununu kutafanya bei ishuke ili kila mwananchi apate uwezo wa kujiunga na huduma za serikali na kufanya biashara mtandaoni bila vikwazo.\n\nThis is Kenya on Record. Let us keep the leaders accountable.",
-    "voice_note": "Habari zenu. Quick thought from Kenya on Record this week. We talk about digitising government services—from e-Citizen to farm subsidies—yet buying an ordinary smartphone still carries a heavy 25% tax penalty. That means before a mama mboga or a young hustler even downloads an app or accesses an online portal, they are paying a steep entry fee just to own the screen. If digital access is an essential public infrastructure, why is the tool to access it taxed like a luxury? Revenue collection is important, but leaving millions offline because handsets are unaffordable slows down the entire economy. Scrapping this tax isn't a favour; it's common sense. Share this note, and let us demand policies that actually support digital inclusion.",
-    "sms": "USIIBIWE: High phone taxes push fake gadgets into the market. Before buying a device, dial *#06# to get the IMEI, then verify it via SMS to 1555 for free.",
-    "reels": "You cannot digitise a country while overtaxing the very tools needed to get online. A 25% tax on imported smartphones is simply a barrier between wananchi and essential services. From finding work to paying for healthcare and accessing e-Citizen, a smartphone is basic infrastructure, not a luxury. Cut the tax, lower device prices, and let ordinary Kenyans participate in the digital economy. Let's keep the record straight."
+    "radio": "Welcome to Kenya on Record. This week, we examine the cost of broken systems on ordinary citizens.\n\nFirst, lecture halls across public universities remain quiet as the lecturers' strike continues. Students have now raised their voices, demanding an immediate resolution. Families sacrifice heavily to pay tuition and hostel rent, yet young people find themselves stranded halfway through their semesters while negotiations drag on. Higher education cannot be treated as a secondary priority if we expect our youth to build this nation.\n\nMeanwhile, in the fight against graft, the Ethics and Anti-Corruption Commission has recovered 207 million shillings in unexplained assets from a former county accountant in Trans Nzoia. These assets—including prime parcels of land, vehicles, and cash—have officially been handed back to the public purse. While we welcome this court victory, it raises an unavoidable question: how does a single county officer siphon off over two hundred million shillings without internal controls and audit systems catching it immediately? Asset recovery is vital, but shutting the door before public coffers are looted must be the standard.\n\nKwa ufupi wa taarifa hizi: Wanafunzi wa vyuo vikuu vya umma wanataka suluhu ya haraka ipatikane kuhusu mgomo wa wahadhiri ili masomo yarejee kawaida. Kwingineko, tume ya EACC imerejesha mali ya thamani ya shilingi milioni 207 kutoka kwa mhasibu wa Kaunti ya Trans Nzoia iliyopatikana kwa njia ya ufisadi. Ni ukumbusho kuwa mali ya umma inafaa kulindwa kikamilifu.",
+    "voice_note": "Habari zenu. Here is your weekly Kenya on Record update on where your public money and priorities stand.\n\nFirst, public university students are demanding an immediate end to the lecturers' strike. Semesters are halted, rent is running, and young people are losing time because commitments made to academic staff remain unresolved. When public education stalls, ordinary households bear the heaviest burden.\n\nSecond, the EACC has recovered 207 million shillings in unexplained wealth from an accountant in Trans Nzoia County. Prime land, luxury cars, and millions in cash have been forfeited back to the government. It is a solid win for the rule of law. But let's ask the hard question: how does one county staffer divert two hundred million shillings without internal auditors noticing? Real accountability is not just recovering stolen funds; it is fixing systems so public money cannot walk away in the first place. Tufungue macho.",
+    "sms": "Usiibiwe: Track your county budget. When public funds leak through weak audits, hospitals lack drugs and schools suffer. Demand transparency from your MCA.",
+    "reels": "Two hundred and seven million shillings. That is the value of unexplained wealth EACC has just recovered from a single county accountant in Trans Nzoia. Prime land, high-end cars, and cash—now returned to the public purse. It is a commendable win for the taxpayer. But here is the grown-up question: how does one officer divert over Sh200 million without supervisory alarms going off? Until internal controls are airtight, recovery is only treating the symptom."
   },
   "spend_usd": 0.0,
   "revision": 9

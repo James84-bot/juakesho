@@ -1,47 +1,25 @@
 {
-  "fetched": "2026-10-21T08:53:21.506830+00:00",
+  "fetched": "2026-10-21T10:36:30.966566+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "ebola",
-      "traffic": "2000+",
+      "title": "ebola kenya",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Nigeria confirms Ebola case linked to East Africa",
-          "url": "https://www.bbc.com/news/articles/cm2l4xw7xpjgo",
-          "source": "BBC"
+          "title": "Paradox of Kenya hosting Ebola centre for Americans as US issues travel advisory",
+          "url": "https://nation.africa/kenya/health/paradox-kenya-ebola-centre-us-issues-travel-advisory-5639680",
+          "source": "Daily Nation"
         },
         {
-          "title": "Nigeria confirms first Ebola case amid concerns about continental spread",
-          "url": "https://www.aljazeera.com/news/2026/10/20/kenya-confirms-ninth-ebola-case",
-          "source": "Al Jazeera"
+          "title": "US raises Kenya travel alert to Level 3 as health risks mount",
+          "url": "https://www.businessdailyafrica.com/bd/news/world/-us-raises-kenya-travel-alert-to-level-3-as-health-risks-mount-5639014",
+          "source": "Business Daily"
         },
         {
-          "title": "Nigeria confirms Ebola case in patient who arrived from Uganda",
-          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/nigeria-confirms-ebola-case-health-minister-says-2026-10-20/",
+          "title": "US says travelers should reconsider Kenya trips on health risks amid Ebola spread",
+          "url": "https://www.reuters.com/world/africa/us-state-department-asks-americans-reconsider-travel-kenya-2026-10-19/",
           "source": "Reuters"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "bayern vs arsenal",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Arsenal: Criticism of team's style from very small minority - Mikel Arteta",
-          "url": "https://www.bbc.com/sport/football/articles/cm8xzrwv5zpko",
-          "source": "BBC"
-        },
-        {
-          "title": "Every word of Mikel Arteta's pre-Bayern presser",
-          "url": "https://www.arsenal.com/news/every-word-of-mikel-artetas-pre-bayern-presser-agdMk0a7U4Ft",
-          "source": "Arsenal.com"
-        },
-        {
-          "title": "Arsenal were spooked by Brighton defeat and have reverted to type - they won't beat Bayern Munich, says Paul Merson",
-          "url": "https://www.skysports.com/football/news/13600922/arsenal-were-spooked-by-brighton-defeat-and-have-reverted-to-type-they-wont-beat-bayern-munich-says-paul-merson",
-          "source": "Sky Sports"
         }
       ]
     },
@@ -61,53 +39,75 @@
           "source": "NBC Sports"
         },
         {
-          "title": "Shai Gilgeous-Alexander pours in 32 to get the season-opening road win in San Antonio",
-          "url": "https://www.nba.com/watch/video/shai-gilgeous-alexander-pours-in-32-to-get-the-season-opening-road-win-in-san-antonio?plsrc=nba&collection=more-to-watch",
-          "source": "NBA.com"
+          "title": "Watch: Wemby Gets Into Scuffle After De'Aaron Fox Tosses Chet Holmgren To Ground",
+          "url": "https://www.yardbarker.com/nba/articles/watch_wemby_gets_into_scuffle_after_deaaron_fox_tosses_chet_holmgren_to_ground/s1_15653_44454038",
+          "source": "Yardbarker"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "knicks vs 76ers",
+      "title": "ne-yo one night only nairobi",
       "traffic": "500+",
       "news": [
         {
-          "title": "Karl-Anthony Towns cashes a logo 3 for the Knicks",
-          "url": "https://www.espn.co.uk/video/clip/_/id/50233865/karl-anthony-towns-cashes-logo-3-knicks",
-          "source": "ESPN"
+          "title": "Nairobi brings the drip to Ne-Yo’s ‘One Night Only’ concert",
+          "url": "https://www.the-star.co.ke/news/2026-10-20-ne-yo-brings-the-music-nairobi-brings-the-style",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Karl-Anthony Towns sends warning after Knicks lose to 76ers",
-          "url": "https://basketnews.com/news-257783-karl-anthony-towns-sends-warning-after-knicks-lose-to-76ers.html",
-          "source": "BasketNews.com"
+          "title": "Ne-Yo Performs 'Marry You' and Honors Diamond Platnumz in Nairobi",
+          "url": "https://www.mpasho.co.ke/lifestyle-yetu/events/2026-10-21-ne-yo-performs-marry-you-and-honors-diamond-platnumz-in-nairobi",
+          "source": "Mpasho"
         },
         {
-          "title": "Karl-Anthony Towns records 19/12/1/1/2 line",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-20/karl-anthony-towns-records-19-12-1-1-2-line",
-          "source": "NBC Sports"
+          "title": "How Ne-Yo’s Mashujaa Day Concert Brought R&B, Fashion and Fine Dining to Nairobi",
+          "url": "https://businesstoday.co.ke/how-ne-yos-mashujaa-day-concert-unfolded/",
+          "source": "Business Today Kenya"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "ebola kenya",
+      "title": "milk prices",
       "traffic": "200+",
       "news": [
         {
-          "title": "Paradox of Kenya hosting Ebola centre for Americans as US issues travel advisory",
-          "url": "https://nation.africa/kenya/health/paradox-kenya-ebola-centre-us-issues-travel-advisory-5639680",
+          "title": "Ruto’s dairy promise: Sh65 milk and farmer-owned New KCC",
+          "url": "https://nation.africa/kenya/news/politics/ruto-s-dairy-promise-sh65-milk-and-farmer-owned-new-kcc-5637000",
           "source": "Daily Nation"
         },
         {
-          "title": "PS Sing'Oei: US advisory for Kenya will have no implications on travelers",
-          "url": "https://citizen.digital/article/ps-singoei-us-advisory-for-kenya-will-have-no-implications-on-travelers-n392430",
-          "source": "Citizen Digital"
+          "title": "Ruto Announces New Milk Prices Starting This Month",
+          "url": "https://www.kenyans.co.ke/news/127972-milk-farmers-be-paid-ksh65-litre-starting-month",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "US raises Kenya travel alert to Level 3 as health risks mount",
-          "url": "https://www.businessdailyafrica.com/bd/news/world/-us-raises-kenya-travel-alert-to-level-3-as-health-risks-mount-5639014",
-          "source": "Business Daily"
+          "title": "Ruto announces new milk prices for farmers starting October",
+          "url": "https://peopledaily.digital/business/ruto-announces-new-milk-prices-for-farmers-starting-october",
+          "source": "People Daily"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "job",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Kenya Railways Explains New Recruitment Drive for Hundreds of Jobs",
+          "url": "https://www.kenyans.co.ke/news/128736-kenya-railways-disowns-recruitment-drive-advertising-hundreds-jobs",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "KDF Issues Clarification On Recruitment Notices For 2026",
+          "url": "https://thekenyatimes.com/latest-kenya-times-news/kdf-issues-clarification-on-recruitment-notices/",
+          "source": "The Kenya Times"
+        },
+        {
+          "title": "HOAX: This advertisement for vacancies at Kenya Power is fraudulent",
+          "url": "https://pesacheck.org/hoax-this-advertisement-for-vacancies-at-kenya-power-is-fraudulent/",
+          "source": "PesaCheck"
         }
       ]
     },
@@ -154,74 +154,21 @@
           "source": "UA.NEWS"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "ne-yo one night only nairobi",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Gold, glamour and Ne-Yo: Inside Nairobi’s sold-out Brunch Edition",
-          "url": "https://www.the-star.co.ke/news/2026-10-20-gold-glamour-and-ne-yo-inside-nairobis-sold-out-brunch-edition",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Ne-Yo Lands in Nairobi Ahead of Highly Anticipated Mashujaa Day Concert",
-          "url": "https://www.mpasho.co.ke/entertainment/2026-10-20-ne-yo-lands-in-nairobi-ahead-of-highly-anticipated-concert",
-          "source": "Mpasho"
-        },
-        {
-          "title": "Ne-Yo’s Return To Nairobi Is The Ultimate R&B Nostalgia Trip",
-          "url": "https://capitalfm.africa/ne-yos-return-to-nairobi-is-the-ultimate-rb-nostalgia-trip/",
-          "source": "Capital FM Africa"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "como vs man utd",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "La posible alineación titular del Manchester United para enfrentar al Como",
-          "url": "https://www.si.com/es-us/la-posible-alineacion-titular-del-manchester-united-para-enfrentar-al-como-21-10-2026",
-          "source": "Sports Illustrated"
-        },
-        {
-          "title": "Primera prueba de fuego para el Como de Cesc Fàbregas",
-          "url": "https://www.mundodeportivo.com/futbol/champions-league/20261021/1004241146/primera-prueba-fuego-cesc-fabregas.html",
-          "source": "Mundo Deportivo"
-        },
-        {
-          "title": "Lille - Galatasaray en directo - Champions League: Resultados y resúmenes de Fútbol - 21/10/2026",
-          "url": "https://www.eurosport.es/futbol/champions-league/2026-2027/live-lille-galatasaray_mtc21878436/live.shtml",
-          "source": "Eurosport"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "lamine yamal",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "The Daily Hilario: Wednesday",
-          "url": "https://www.yahoo.com/news/science/articles/daily-hilario-wednesday-070000595.html",
-          "source": "Yahoo"
-        },
-        {
-          "title": "Rio Ngumoha joins Lamine Yamal and Cristiano Ronaldo in exclusive Champions League club",
-          "url": "https://worldsoccertalk.com/news/rio-ngumoha-joins-lamine-yamal-and-cristiano-ronaldo-in-exclusive-champions-league-club/",
-          "source": "World Soccer Talk"
-        },
-        {
-          "title": "Rio Ngumoha joins Lamine Yamal in rare Champions League stat after Liverpool 6-3 win",
-          "url": "https://www.livescore.com/en/news/football/champions-league/rio-ngumoha-joins-lamine-yamal-in-rare-champions-league-stat-after-liverpool-6-3-win-rush-the-kop/",
-          "source": "LiveScore"
-        }
-      ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "toyota",
+      "why": "unsafe: 'Fire'"
+    },
+    {
+      "title": "fine",
+      "why": "unsafe: 'war'"
+    },
+    {
+      "title": "mother",
+      "why": "unsafe: 'Attack'"
+    }
+  ],
   "errors": {}
 }
