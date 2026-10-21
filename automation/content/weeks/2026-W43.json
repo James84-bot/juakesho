@@ -45,7 +45,7 @@
         "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNVkh5a3ZLS2FuanI2Mk1GTWZIdlowT2lmWVJlWV84Y1hraWc2bnphR0RWSFpuVzFFMnl3MUZrY0tsRHRLeDBSdHVCeEk0SnpFeGVIOWpvdnkyN1lXMXNtN3dvSXpTeGNzdVNNdW5PSWVEVEhoZ3BjZmRGZmxuX2pybTJhUlp0MmRNZmg4LVdqek9XUGlYekY3WG5FUDNJY3loTzRjcWI5TklUV1EzcUZXa1NRZm9PTU8yQ1ZNZU1ITHp5dFFCOFpYMkxjaVJlXy01QXhEZEJKME9uQXRhMi0xVkw2WQ?oc=5",
         "published": "2026-10-21"
       },
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": []
@@ -197,7 +197,7 @@
           "published": "2026-10-21"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": [
@@ -901,7 +901,7 @@
           "published": "2026-10-21"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": []
@@ -1052,7 +1052,7 @@
           "published": "2026-10-21"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": []
