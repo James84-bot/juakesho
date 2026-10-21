@@ -1,174 +1,227 @@
 {
-  "fetched": "2026-10-21T18:37:23.761580+00:00",
+  "fetched": "2026-10-21T20:55:37.335478+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "manchester united",
-      "traffic": "20000+",
+      "title": "flashscore",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Champions League: Man Utd visit Como, before Arsenal and Villa in action",
+          "title": "Chelsea open to Malo Gusto sale",
+          "url": "https://www.getfootballnewsfrance.com/2026/chelsea-open-to-malo-gusto-sale/",
+          "source": "Get French Football News"
+        },
+        {
+          "title": "Second Chelsea star 'considering future' under Xabi Alonso after Tottenham transfer talks",
+          "url": "https://www.football.london/chelsea-fc/transfer-news/chelsea-transfer-news-malo-gusto-34754715",
+          "source": "Football London"
+        },
+        {
+          "title": "Bayern Munich News: Chelsea star not on FC Bayern’s radar; Erik ten Hag lays out Cristiano Ronaldo; and MORE!",
+          "url": "https://sports.yahoo.com/articles/bayern-munich-news-chelsea-star-040000787.html",
+          "source": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "real madrid",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Video | Gol de Bernardo Silva en el 1-0 de Real Madrid contra RB Leipzig en la Champions",
+          "url": "https://www.minuto60.com/deportes/video-gol-bernardo-silva-real-madrid-leipzig-champions/17521",
+          "source": "Minuto60"
+        },
+        {
+          "title": "R. Madrid-Leipzig: Mourinho da la sorpresa con Bernardo desde el arranque",
+          "url": "https://onefootball.com/es/noticias/r-madrid-leipzig-mourinho-da-la-sorpresa-con-bernardo-desde-el-arranque-43649433",
+          "source": "OneFootball"
+        },
+        {
+          "title": "Arda Güler aumenta la ventaja del Real Madrid",
+          "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261021/1004241646/arda-gueler-aumenta-ventaja-real-madrid.html",
+          "source": "Mundo Deportivo"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bayern",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Verletzung nach wenigen Minuten: Arsenal-Topstar muss gegen den FC Bayern früh runter",
+          "url": "https://www.spox.com/fussball/news/verletzung-nach-wenigen-minuten-arsenal-topstar-muss-gegen-den-fc-bayern-frueh-runter/bltfe3335726687e4db",
+          "source": "SPOX.com"
+        },
+        {
+          "title": "Torserie in zehn Spielen: Kane mit Klubrekord",
+          "url": "https://web.de/magazine/sport/fussball/champions-league/torserie-kane-klubrekord-42861792",
+          "source": "WEB.DE"
+        },
+        {
+          "title": "Dritter Spieltag: Der Ausgleich – Rice bestraft Bayerns Abwehrfehler",
+          "url": "https://www.welt.de/sport/fussball/champions-league/article6ad8f61d2c40700de0801031/dritter-spieltag-der-ausgleich-rice-bestraft-bayerns-abwehrfehler.html",
+          "source": "WELT"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "betis",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Pellegrini cambia a más de medio equipo para recibir al Feyenoord",
+          "url": "https://holanews.com/pellegrini-cambia-a-mas-de-medio-equipo-para-recibir-al-feyenoord/",
+          "source": "HolaNews"
+        },
+        {
+          "title": "¡GOL DEL BETIS! Mano en el área e Isco no desaprovecha la oportunidad desde el manchón penal",
+          "url": "https://www.tudn.com/futbol/uefa-champions-league/gol-del-betis-mano-en-el-area-e-isco-no-desaprovecha-la-oportunidad-desde-el-manchon-penal-video",
+          "source": "TUDN"
+        },
+        {
+          "title": "La reflexión de Troy Parrott sobre la personalidad en el fútbol: “Cómo te vistes y te expresas refleja cómo juegas en el campo”",
+          "url": "https://www.infobae.com/espana/deportes/2026/10/21/la-reflexion-de-troy-parrott-sobre-la-personalidad-en-el-futbol-como-te-vistes-y-te-expresas-refleja-como-juegas-en-el-campo/",
+          "source": "Infobae"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "eberechi eze",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Why Eze is struggling to find his form at Arsenal",
+          "url": "https://www.bbc.com/sport/football/articles/cqgm0ze7vepmo",
+          "source": "BBC"
+        },
+        {
+          "title": "Paul Merson raises doubt over future of £60m Arsenal star",
+          "url": "https://metro.co.uk/2026/10/20/paul-merson-raises-doubt-future-60m-arsenal-star-29724339/",
+          "source": "Metro.co.uk"
+        },
+        {
+          "title": "Arsenal news: Mikel Arteta issue with star identified and update on £55m transfer target",
+          "url": "https://www.mirror.co.uk/sport/football/news/arsenal-news-transfers-arteta-eze-37787509",
+          "source": "Daily Mirror"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "football live",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Champions League: Rice levels for Arsenal at Bayern, Villa lead Viking",
           "url": "https://www.bbc.com/sport/football/live/cwm2m2v4d5pvt",
           "source": "BBC"
         },
         {
-          "title": "Como v Manchester United: Champions League – live",
-          "url": "https://www.theguardian.com/football/live/2026/oct/21/como-v-manchester-united-champions-league-live",
-          "source": "The Guardian"
+          "title": "Bayern Munich vs Arsenal LIVE! Champions League score updates, news, prediction and line-ups",
+          "url": "https://www.skysports.com/football/live-blog/13600981/bayern-munich-vs-arsenal-live-champions-league-score-updates-news-prediction-and-line-ups",
+          "source": "Sky Sports"
         },
         {
-          "title": "Team news for Como v United",
-          "url": "https://www.manutd.com/en/news/press-conference-team-news-for-como-v-united",
-          "source": "Manchester United"
+          "title": "Team news: Madueke returns to starting line up",
+          "url": "https://www.arsenal.com/news/team-news-madueke-returns-to-starting-line-up-aiM5S1D3rLF6",
+          "source": "Arsenal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "real madrid vs rb leipzig",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Real Madrid vs. RB Leipzig: Preview, Predictions and Lineups",
-          "url": "https://www.si.com/soccer/real-madrid-vs-rb-leipzig-preview-predictions-lineups-10-21-26",
-          "source": "Sports Illustrated"
-        },
-        {
-          "title": "RB Leipzig boss Martin Demichelis raves about Yan Diomande ahead of daunting Real Madrid clash",
-          "url": "https://www.goal.com/en-ke/lists/rb-leipzig-martin-demichelis-yan-diomande-real-madrid/blt8510105f61789c3b",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Tip of the Day: Vinicius Jr to star for Real Madrid as part of three-leg acca",
-          "url": "https://www.101greatgoals.com/football/champions-league/tip-of-the-day-vinicius-jr-real-madrid-three-leg-acca/",
-          "source": "101 Great Goals"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "levante vs athletic",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "El Levante sale con Ratkov e Iván Romero; el Athletic con Maroan en punta",
-          "url": "https://www.infobae.com/espana/agencias/2026/10/21/el-levante-sale-con-ratkov-e-ivan-romero-el-athletic-con-maroan-en-punta/",
-          "source": "Infobae"
-        },
-        {
-          "title": "Movida Deportiva con José Manuel Monje (21/10/26) | Hoy sólo vale la victoria para un Athletic que debe demostrar lo que realmente puede hacer",
-          "url": "https://www.ondavasca.com/movida-deportiva-con-jose-manuel-monje-211026/",
-          "source": "Onda Vasca"
-        },
-        {
-          "title": "Tres puntos para no desviarse del camino",
-          "url": "https://www.superdeporte.es/levante-ud/2026/10/21/tres-puntos-desviarse-camino-135549354.html",
-          "source": "Superdeporte"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "manu",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Manchester United Ltd. $MANU Stock: Pinnacle Associates Ltd. Boosts Position",
-          "url": "https://www.marketbeat.com/instant-alerts/filing-manchester-united-ltd-manu-stock-pinnacle-associates-ltd-boosts-position-2026-10-21/",
-          "source": "MarketBeat"
-        },
-        {
-          "title": "Manchester United stock sits 13.82 percent below its 52-week high",
-          "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/manchester-united-stock-sits-13-82-percent-below-its-52-week-high/70377169",
-          "source": "AD HOC NEWS"
-        },
-        {
-          "title": "Mateo Silvetti Named to MLS’ 2026 22 Under 22 List",
-          "url": "https://www.intermiamicf.com/news/mateo-silvetti-named-to-mls-2026-22-under-22-list",
-          "source": "Inter Miami CF"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "betis vs feyenoord",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Real Betis vs Feyenoord: UEFA Champions League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cw8dz6r33myrt",
-          "source": "BBC"
-        },
-        {
-          "title": "Predicted Feyenoord line-up: Van Bronckhorst picks strong team against Real Betis",
-          "url": "https://www.goal.com/en/news/predicted-feyenoord-line-up-van-bronckhorst-picks-strong-team-against-real-betis/blt12c37eb4d85ce525",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Preview: Real Betis vs Feyenoord - prediction, team news, lineups",
-          "url": "https://www.sportsmole.co.uk/football/betis/champions-league/preview/betis-vs-feyenoord-prediction-team-news-lineups_607262.html",
-          "source": "Sports Mole"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "galatasaray",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Galatasaray Taraftarının Fransa Çıkarmasını Serhan Türk Aktardı",
-          "url": "https://www.bolgegundemi.com/video/galatasaray-taraftarinin-fransa-cikarmasini-serhan-turk-aktardi-217116.html",
-          "source": "Bölge Gündemi"
-        },
-        {
-          "title": "Osimhen Lille olayı nedir, Lille Osimhen’i babasının cenazesine göndermedi mi?",
-          "url": "https://www.haberler.com/haber/osimhen-lille-olayi-nedir-lille-osimheni-20353222-haberi/",
-          "source": "Haberler"
-        },
-        {
-          "title": "Galatasaray'da Okan Buruk'tan 3 değişiklik!",
-          "url": "https://www.haberturk.com/spor/galatasaray-da-okan-buruk-tan-3-degisiklik-3921527",
-          "source": "Habertürk"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ethan nwaneri",
+      "title": "sporting",
       "traffic": "100+",
       "news": [
         {
-          "title": "U19s preview: Bayern Munich v Arsenal",
-          "url": "https://www.arsenal.com/news/u19s-preview-bayern-munich-v-arsenal-ad9ax9O7SdLJ",
-          "source": "Arsenal.com"
+          "title": "Rui Borges repete onze com Kaique no Alvalade",
+          "url": "https://diadejogo.pt/noticias/rui-borges-repete-onze-com-kaique-no-alvalade-2026-10-21",
+          "source": "diadejogo.pt"
         },
         {
-          "title": "Arsenal news: Nwaneri scores late equaliser in Uefa Youth League",
-          "url": "https://www.bbc.com/sport/football/articles/cq8jzr0wnx4wo",
-          "source": "BBC"
+          "title": "▶️ Remate de Christoph Lang empata o jogo para o LASK Linz ⚽",
+          "url": "https://www.sporttv.pt/noticias/842693/-remate-de-christoph-lang-empata-o-jogo-para-o-lask-linz",
+          "source": "Sport TV"
         },
         {
-          "title": "Marli Salmon, Céadach O’Neill and Maalik Hashi named in provisional Arsenal U19 squad to face Bayern Munich",
-          "url": "https://arsenalyouth.wordpress.com/2026/10/20/marli-salmon-ceadach-oneill-and-maalik-hashi-named-in-provisional-arsenal-u19-squad-to-face-bayern-munich/",
-          "source": "Jeorge Bird's Arsenal Youth"
+          "title": "12h30 Juary e Marques Lopes analisam crise do Porto",
+          "url": "https://www.rtp.pt/noticias/noticiario-desporto/12h30-juary-e-marques-lopes-analisam-crise-do-porto_a1_1773217",
+          "source": "RTP"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "betis fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Will that do? Lamine Yamal conjures another magical spell as Barça pass first test | Sid Lowe",
+          "url": "https://www.theguardian.com/football/2026/oct/19/lamine-yamal-wonder-goal-barcelona-real-betis-la-liga",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Betis 2-5 Barcelona | Highlights",
+          "url": "https://www.beinsports.com/en-mena/football/la-liga/articles-video/unstoppable-barca-thrash-betis-to-extend-perfect-start-2026-10-17",
+          "source": "beIN SPORTS"
+        },
+        {
+          "title": "Barcelona, beware! Isco-inspired Real Betis look like genuine contenders under perennially underrated Manuel Pellegrini",
+          "url": "https://www.goal.com/en-ke/originals/barcelona-beware-isco-inspired-real-betis-perennially-underrated-manuel-pellegrini/blt77b35cc9b2a0425d",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "harry kane",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "On video: Timber plays the goalkeeper role as Kane punishes Arsenal",
+          "url": "https://www.goal.com/en/news/on-video-timber-takes-on-the-goalkeeper-s-role-and-kane-punishes-arsenal/blt995297af69c0b7f2",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Arsenal can stop Harry Kane from breaking Champions League record set by Cristiano Ronaldo",
+          "url": "https://www.football.london/arsenal-fc/news/harry-kane-ronaldo-record-arsenal-34795130",
+          "source": "Football London"
+        },
+        {
+          "title": "Inside Harry Kane's Ballon d'Or charge as Cristiano Ronaldo record eyed vs Arsenal",
+          "url": "https://www.mirror.co.uk/sport/football/news/harry-kane-arsenal-ballon-dor-37794924",
+          "source": "Daily Mirror"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "real",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Trainer Mourinho vor dem Spiel Real Madrid gegen Leipzig: „Lebe im Hier und Jetzt.“",
+          "url": "https://www.vietnam.vn/de/hlv-mourinho-truoc-tran-real-leipzig-hay-song-cho-hien-tai",
+          "source": "Vietnam.vn"
+        },
+        {
+          "title": "Real Madrid vs. RB Leipzig kostenlos auf SRF 2 Schweiz streamen – Champions League 2026/27",
+          "url": "https://cybernews.com/de/online-schauen/real-madrid-vs-rb-leipzig-kostenlos-auf-srf-21-10-2026/",
+          "source": "Cybernews"
+        },
+        {
+          "title": "Holt Real im dritten Spiel den dritten Sieg oder wird Leipzig zum Stolperstein?",
+          "url": "https://www.bluewin.ch/de/sport/fussball/champions-league/holt-real-im-dritten-spiel-den-dritten-sieg-oder-wird-leipzig-zum-stolperstein-li.3643744",
+          "source": "blue News"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "inter vs shakhtar donetsk",
-      "why": "unsafe: 'Bet'"
-    },
-    {
-      "title": "aston villa vs viking",
-      "why": "unsafe: 'Bet'"
-    },
-    {
-      "title": "sporting vs lask",
-      "why": "unsafe: 'Odds'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
