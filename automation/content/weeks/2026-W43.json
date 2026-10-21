@@ -5,17 +5,75 @@
     {
       "id": "2026-w43-d1-usiibiwe-r9",
       "template": "usiibiwe",
-      "bg": "usiku",
       "lane": "hustle",
+      "title": "Fake Money Market Fund website targets *investors*",
+      "sender": "+254 7XX XXX XXX",
+      "sms": "Earn 25% interest on your savings. Deposit your money through our new web portal today.",
+      "tips": [
+        "Regulated money market funds never promise fixed returns.",
+        "Check all licenced fund managers on cma.or.ke before investing.",
+        "Never send investment money through unverified web links."
+      ],
+      "beats": [
+        "A fake Money Market Fund website is targeting *Kenyan investors*.",
+        "Scammers promise impossible returns to steal savings.",
+        "The Capital Markets Authority regulates all legal fund managers.",
+        "Verify all financial firms directly on the *CMA website*."
+      ],
+      "message": "Scammers clone money market fund websites to steal savings from Kenyan investors.",
+      "action": "Verify any fund manager licence on the CMA website before depositing money",
+      "photo_query": "Kenyan shilling banknotes",
+      "source": "Tuko News, 2026-10-21",
+      "caption": "Scammers have set up cloned money market fund websites promising huge returns. Check any fund manager on cma.or.ke before sending your hard-earned cash.\n\nHave you seen these fake investment links? Drop them in the comments.\n\n#Usiibiwe #KenyaOnRecord",
+      "bg": "usiku",
       "publish_at": "2026-10-19T07:30:00+03:00",
-      "status": "needs_human",
+      "side": "none",
+      "tone": "explainer",
+      "source_links": [
+        {
+          "outlet": "Tuko News",
+          "title": "\"Scam alert\": Money Market Fund names fake website targeting Kenyans",
+          "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNVkh5a3ZLS2FuanI2Mk1GTWZIdlowT2lmWVJlWV84Y1hraWc2bnphR0RWSFpuVzFFMnl3MUZrY0tsRHRLeDBSdHVCeEk0SnpFeGVIOWpvdnkyN1lXMXNtN3dvSXpTeGNzdVNNdW5PSWVEVEhoZ3BjZmRGZmxuX2pybTJhUlp0MmRNZmg4LVdqek9XUGlYekY3WG5FUDNJY3loTzRjcWI5TklUV1EzcUZXa1NRZm9PTU8yQ1ZNZU1ITHp5dFFCOFpYMkxjaVJlXy01QXhEZEJKME9uQXRhMi0xVkw2WQ?oc=5",
+          "published": "2026-10-21"
+        }
+      ],
+      "material": {
+        "kind": "scam",
+        "key": "news:https://news.google.com/rss/articles/CBMi4wFBVV95cUxNVkh5a3ZLS2FuanI2Mk1GTWZIdlowT2lmWVJlWV84Y1hraWc2bnphR0RWSFpuVzFFMnl3MUZrY0tsRHRLeDBSdHVCeEk0SnpFeGVIOWpvdnkyN1lXMXNtN3dvSXpTeGNzdVNNdW5PSWVEVEhoZ3BjZmRGZmxuX2pybTJhUlp0MmRNZmg4LVdqek9XUGlYekY3WG5FUDNJY3loTzRjcWI5TklUV1EzcUZXa1NRZm9PTU8yQ1ZNZU1ITHp5dFFCOFpYMkxjaVJlXy01QXhEZEJKME9uQXRhMi0xVkw2WQ?oc=5",
+        "title": "\"Scam alert\": Money Market Fund names fake website targeting Kenyans",
+        "outlet": "Tuko News",
+        "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNVkh5a3ZLS2FuanI2Mk1GTWZIdlowT2lmWVJlWV84Y1hraWc2bnphR0RWSFpuVzFFMnl3MUZrY0tsRHRLeDBSdHVCeEk0SnpFeGVIOWpvdnkyN1lXMXNtN3dvSXpTeGNzdVNNdW5PSWVEVEhoZ3BjZmRGZmxuX2pybTJhUlp0MmRNZmg4LVdqek9XUGlYekY3WG5FUDNJY3loTzRjcWI5TklUV1EzcUZXa1NRZm9PTU8yQ1ZNZU1ITHp5dFFCOFpYMkxjaVJlXy01QXhEZEJKME9uQXRhMi0xVkw2WQ?oc=5",
+        "published": "2026-10-21"
+      },
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "no report or warning about a scam this week"
-        ],
+        "errors": [],
         "warnings": []
       },
-      "drafted_at": "2026-10-19T11:16:25.922702+03:00"
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 8,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.9,
+        "note": "clean execution."
+      },
+      "drafted_at": "2026-10-21T17:03:01.995504+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d1-usiibiwe-r9-photo.jpg",
+      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_banknote,_reverse.jpg",
+      "reel": true,
+      "tg_msg": 435
     },
     {
       "id": "2026-w43-d2-kenya-r9x-r2",
@@ -103,38 +161,43 @@
       "id": "2026-w43-d3-promise-r11",
       "template": "promise",
       "lane": "hustle",
-      "who": "William Ruto, President of Kenya",
-      "promise": "We will provide business loans of up to Sh2.5 million to small traders through the Hustler Fund.",
-      "said": "Hustler Fund Launch, November 2022",
-      "verdict": "stalled",
-      "measure": "Under Sh2,000",
-      "reality": "Most small traders remain capped at under Sh2,000 as the promised enterprise loans stall.",
+      "who": "President William Ruto",
+      "where": "West Mugirango",
+      "when": "21 Oct 2026",
+      "promise": "Deliver key roads and electricity projects across West Mugirango.",
+      "said": "Presidential tour of Nyamira County, August 2024",
+      "verdict": "kept",
+      "reality": "National government development projects in West Mugirango are funded and ongoing.",
+      "ask": "When will KeNHA complete the remaining tarmac link roads?",
       "proof": [
-        "Most active borrowers remain restricted to personal loans between Sh500 and Sh2,000.",
-        "The Auditor-General flagged Sh11.5 billion in overdue defaults on the fund.",
-        "The Ministry of Cooperatives has not rolled out the full SME loan portfolio."
+        "West Mugirango MP Stephen Mogaka confirmed projects are active on 21 Oct 2026.",
+        "National funding covers local tarmac roads and power grid expansion."
       ],
-      "ask": "When will small traders access the promised Sh2.5m loans?",
-      "source": "Public Finance Management Act 2012",
       "beats": [
-        "State promised *Sh2.5 million* business loans for small traders.",
-        "Most borrowers still receive loans between Sh500 and Sh2,000.",
-        "Traders cannot restock shops with two thousand shillings.",
-        "Kenyans demand: the Cooperatives CS explains the stalled loans.",
-        "Check your loan limit on your phone using star 254 hash."
+        "Ruto promised development projects for *West Mugirango*.",
+        "MP Stephen Mogaka confirmed national funding on 21 Oct 2026.",
+        "The projects cover local road upgrades and electricity connections.",
+        "Kenyans demand: KeNHA finishes all *tarmac link roads*."
       ],
-      "message": "Hustler Fund enterprise loans of up to Sh2.5 million remain stalled for small traders.",
-      "action": "Dial *254# to check your limit and submit business feedback to the MSME ministry.",
-      "photo_query": "mama mboga market Kenya",
-      "impact": "Small traders must still rely on expensive digital lenders to restock their shops.",
-      "where": "National",
-      "when": "October 2026",
-      "side": "government",
-      "tone": "criticism",
-      "caption": "The Hustler Fund was meant to fund small businesses up to Sh2.5 million. Most traders are still stuck with limits below Sh2,000. What is your current limit? Let us know in the comments.\n\n#KenyaOnRecord #HustlerFund",
+      "message": "National development projects in West Mugirango are funded and moving forward.",
+      "action": "Track road progress updates through the KeNHA regional project registry",
+      "impact": "Completed tarmac roads and grid power reduce transport costs and power local shops.",
+      "photo_query": "road construction Kenya",
+      "source": "Capital FM News, 2026-10-21",
+      "caption": "MP Stephen Mogaka confirmed development projects in West Mugirango are funded and progressing. Wananchi expect timely completion of every road.\n\nAre government projects moving in your area?\n\n#PromiseTracker #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-21T18:30:00+03:00",
-      "status": "needs_human",
+      "side": "government",
+      "tone": "credit",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "MP Mogaka Backs Ruto, Cites Development Projects in West Mugirango",
+          "link": "https://capitalfm.africa/mp-mogaka-backs-ruto-cites-development-projects-in-west-mugirango/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-21"
+        }
+      ],
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
@@ -143,125 +206,127 @@
       },
       "critic": {
         "hook": 9,
-        "send": 9,
+        "send": 8,
         "clarity": 9,
         "fresh": 8,
         "voice": 9,
         "craft": 9,
         "picture": 9,
         "hold": 9,
-        "demand": 9,
+        "demand": 8,
         "action": 9,
         "fair": 9,
         "impact": 9,
-        "avg": 8.9,
-        "note": "All checks passed."
+        "avg": 8.8,
+        "note": "solid development check."
       },
-      "drafted_at": "2026-10-19T11:16:25.922694+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-promise-r10-photo.jpg",
-      "photo_credit": "File photo: Kenyans.co.ke",
-      "photo_kind": "file",
-      "photo_outlet": "Kenyans.co.ke",
-      "photo_source": "https://www.kenyans.co.ke/news/127779-john-methu-questions-matiangi-ndindi-nyoros-loyalty-opposition",
-      "ink": {
-        "3": "#F8F7F6"
-      },
-      "reel": true
+      "drafted_at": "2026-10-21T17:03:01.995511+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d3-promise-r11-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/mp-mogaka-backs-ruto-cites-development-projects-in-west-mugirango/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 436
     },
     {
-      "id": "2026-w43-d4-glasspoll-r9x-r2",
+      "id": "2026-w43-d4-glasspoll-r9x-r3",
       "template": "glasspoll",
       "lane": "everyone",
       "series": "Guess the Price",
-      "hook": "Guess Nairobi pump price",
-      "question": "What is diesel per litre?",
-      "cta": "Guess A or B in comments",
-      "options": [
-        "A: Sh217.86",
-        "B: Sh227.76"
-      ],
-      "source": "The Star, 2026-10-15",
-      "beats": [
-        "What does a litre of *diesel* cost in Nairobi right now?",
-        "A is Sh217.86 per litre.",
-        "B is Sh227.76 per litre.",
-        "The answer is B: *diesel costs Sh227.76* per litre in Nairobi."
-      ],
-      "message": "Diesel pump prices in Nairobi sit at Sh227.76 per litre.",
-      "action": "Check EPRA monthly price caps before paying at your local pump.",
-      "photo_query": "petrol station Kenya",
-      "caption": "EPRA's pump prices now run to mid-November 2026. What does a litre of diesel cost in Nairobi? Comment A or B, then tell us what you paid at your station.\n\nVote A or B in the comments.\n\n#GuessThePrice #KenyaOnRecord",
-      "side": "none",
-      "tone": "explainer",
-      "impact": "High diesel prices raise bus fares and food transport costs.",
       "bg": "usiku",
       "publish_at": "2026-10-22T19:30:00+03:00",
       "size": "story",
       "angle": "price_quiz",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "no headline this week states a price, so Guess the Price would have no real answer"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-21T17:03:01.995521+03:00"
+    },
+    {
+      "id": "2026-w43-d5-straight-r10",
+      "template": "straight",
+      "lane": "campus",
+      "who": "a viral WhatsApp message, October 2026",
+      "where": "National",
+      "when": "21 Oct 2026",
+      "claim": "Kenya Railways is recruiting staff with an online application deadline in 2026.",
+      "truth": "Kenya Railways confirmed the viral recruitment advert is fake.",
+      "pride": "Check official job portals before applying.",
+      "claim_source": "Circulating WhatsApp poster claiming recruitment, October 2026",
+      "source": "People Daily, 2026-10-21",
+      "proof": [
+        "Kenya Railways issued an official notice disowning the viral job advert.",
+        "Legitimate vacancies are published exclusively on krc.co.ke careers portal.",
+        "The fake advert collected personal data through third-party links."
+      ],
+      "verdict": "false",
+      "beats": [
+        "A fake Kenya Railways job advert is circulating on *social media*.",
+        "The corporation confirmed that no such recruitment exists.",
+        "Scammers use fake links to harvest personal details from applicants.",
+        "Verify public rail vacancies only on *krc.co.ke*."
+      ],
+      "message": "Kenya Railways warns that viral online job adverts targeting youth are fake.",
+      "action": "Check legitimate vacancies only on the official Kenya Railways careers portal",
+      "impact": "Job seekers avoid losing money and personal data to recruitment fraudsters.",
+      "photo_query": "railway station Nairobi Kenya",
+      "caption": "Kenya Railways has flagged a viral job advert as fake. Scammers use fake links to harvest data from job seekers. Always verify vacancies on krc.co.ke.\n\nSend this to your campus WhatsApp group.\n\n#MythOrFact #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-23T17:00:00+03:00",
+      "side": "none",
+      "tone": "explainer",
+      "series": "Myth or Fact",
+      "angle": "myth",
       "source_links": [
         {
-          "outlet": "The Star",
-          "title": "Nairobi's maximum pump price for diesel is Sh227.76 per litre from 15 Oct to 14 Nov 2026, after EPRA's review.",
-          "link": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
-          "published": "2026-10-15"
+          "outlet": "People Daily",
+          "title": "Kenya Railways warns Kenyans against fake job advert with 2026 deadline circulating online",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdVg1VFFyUFhyN0Z3V0tpcnlZOEJTR1FRSEFQMlRoQ2ZNcVRpWGtuNnhRcEVPdmxUMVN3X3FyVXRGZV9FZzZxUnZDdzQwZGxmeV9XcTd2VVhESXhIY1QzaTdMYklQWnRIR1RDOFRza0t1cjBvWVZSanBFVnhBcVN6eGlCOUctRm5rek1zY21zXzdBbjFoZnQxN0lPTGotSW56WHJVT1FPcXRKUkk0dWxUMlJSdUY4OFJHcl9lTGE2UFc?oc=5",
+          "published": "2026-10-21"
         }
       ],
       "material": {
-        "kind": "price_figure",
-        "key": "price:diesel-nbi-2026-10",
-        "title": "Nairobi's maximum pump price for diesel is Sh227.76 per litre from 15 Oct to 14 Nov 2026, after EPRA's review.",
-        "outlet": "The Star",
-        "link": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
-        "published": "2026-10-15",
-        "wrong_hint": "last month's price, Sh217.86 per litre"
+        "kind": "myth",
+        "key": "news:https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdVg1VFFyUFhyN0Z3V0tpcnlZOEJTR1FRSEFQMlRoQ2ZNcVRpWGtuNnhRcEVPdmxUMVN3X3FyVXRGZV9FZzZxUnZDdzQwZGxmeV9XcTd2VVhESXhIY1QzaTdMYklQWnRIR1RDOFRza0t1cjBvWVZSanBFVnhBcVN6eGlCOUctRm5rek1zY21zXzdBbjFoZnQxN0lPTGotSW56WHJVT1FPcXRKUkk0dWxUMlJSdUY4OFJHcl9lTGE2UFc?oc=5",
+        "title": "Kenya Railways warns Kenyans against fake job advert with 2026 deadline circulating online",
+        "outlet": "People Daily",
+        "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdVg1VFFyUFhyN0Z3V0tpcnlZOEJTR1FRSEFQMlRoQ2ZNcVRpWGtuNnhRcEVPdmxUMVN3X3FyVXRGZV9FZzZxUnZDdzQwZGxmeV9XcTd2VVhESXhIY1QzaTdMYklQWnRIR1RDOFRza0t1cjBvWVZSanBFVnhBcVN6eGlCOUctRm5rek1zY21zXzdBbjFoZnQxN0lPTGotSW56WHJVT1FPcXRKUkk0dWxUMlJSdUY4OFJHcl9lTGE2UFc?oc=5",
+        "published": "2026-10-21"
       },
-      "status": "approved",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": []
       },
       "critic": {
         "hook": 9,
-        "send": 8,
+        "send": 9,
         "clarity": 9,
-        "fresh": 8,
+        "fresh": 9,
         "voice": 9,
         "craft": 9,
-        "picture": 8,
+        "picture": 9,
         "hold": 9,
-        "demand": 9,
-        "action": 8,
+        "demand": 8,
+        "action": 9,
         "fair": 9,
         "impact": 9,
-        "avg": 8.7,
-        "note": "Engaging price quiz with clear local impact on transport costs."
+        "avg": 8.9,
+        "note": "great safety alert."
       },
-      "drafted_at": "2026-10-19T03:11:47.798444+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d4-glasspoll-r9x-r2-photo.jpg",
-      "photo_credit": "Photo: Queen Asali / Wikimedia Commons, CC BY-SA 4.0",
+      "drafted_at": "2026-10-21T17:03:01.995515+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-d5-straight-r10-photo.jpg",
+      "photo_credit": "Photo: Erasmus Kamugisha / Wikimedia Commons, CC BY-SA 4.0",
       "photo_kind": "symbolic",
       "photo_outlet": "",
-      "photo_source": "https://commons.wikimedia.org/wiki/File:Energy_in_Kenya-_Petrocity_Petroln_Station_in_Gigiri.jpg",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Diesel_locomotive_9607_at_Nairobi_railway_station,_Kenya.jpg",
       "reel": true,
-      "tg_msg": 377,
-      "decided_at": "2026-10-19T23:18:46.367706+03:00"
-    },
-    {
-      "id": "2026-w43-d5-straight-r10",
-      "template": "straight",
-      "lane": "campus",
-      "series": "Myth or Fact",
-      "bg": "usiku",
-      "publish_at": "2026-10-23T17:00:00+03:00",
-      "angle": "myth",
-      "status": "needs_human",
-      "guard": {
-        "errors": [
-          "no fact-check or report on a rumour this week, so Myth or Fact would have to invent the rumour"
-        ],
-        "warnings": []
-      },
-      "drafted_at": "2026-10-19T11:16:25.922704+03:00"
+      "tg_msg": 437
     },
     {
       "id": "2026-w43-d6-kenya-r10",
@@ -723,133 +788,149 @@
       "id": "2026-w43-hot-1020m",
       "template": "sauti",
       "lane": "everyone",
-      "kicker": "Job Seekers",
-      "line": "IPOA advertises *41* vacant jobs for drivers, lawyers, and office assistants.",
-      "fact": "The Independent Policing Oversight Authority is recruiting staff across 41 new positions.",
-      "source": "Tuko News, 2026-10-20",
-      "photo_query": "Nairobi skyline",
-      "message": "IPOA opened applications for 41 jobs across multiple departments.",
-      "action": "Check the full vacancy list on the IPOA portal and apply before the deadline",
+      "who": "UDA Secretary-General Hassan Omar",
+      "where": "Nairobi",
+      "when": "21 Oct 2026",
+      "kicker": "Voters",
+      "line": "UDA Secretary-General Hassan Omar defended remarks on *deceased voters* before the electoral commission.",
+      "fact": "The IEBC summoned Omar over statements suggesting deceased voters cast ballots in past elections.",
+      "source": "Capital FM Politics, 2026-10-21, The Eastleigh Voice, 2026-10-21",
+      "photo_query": "ballot box Kenya",
+      "message": "Electoral integrity demands clean voter rolls and accountability from political party officials.",
+      "action": "Check your voter registration status with IEBC to protect roll integrity",
+      "impact": "A credible voter roll protects your vote from being cancelled out by illegal ballots.",
       "beats": [
-        "IPOA advertises *41* job vacancies across Kenya.",
-        "Roles include drivers, lawyers, and office assistants.",
-        "Vacancies offer new jobs in police oversight.",
-        "Kenyans demand: IPOA conducts transparent hiring."
+        "UDA Secretary-General Hassan Omar appeared before *the IEBC*.",
+        "The commission questioned him over remarks about deceased voters.",
+        "Omar stated his comments were satirical and taken out of context.",
+        "Kenyans demand: IEBC audits and publishes the *voter register*."
       ],
-      "who": "IPOA",
-      "where": "National",
-      "when": "20 Oct 2026",
-      "side": "none",
-      "tone": "explainer",
-      "impact": "Job seekers get fresh employment openings in public oversight.",
-      "caption": "IPOA has opened 41 vacancies for drivers, lawyers, and office assistants. Check the official portal for requirements and deadlines. Send this to someone looking for work.\n\n#IPOARecruitment #KenyaOnRecord",
+      "caption": "UDA Secretary-General Hassan Omar appeared before the IEBC over remarks on deceased voters, calling them satirical. Public trust requires an audited register.\n\nWhat do you think of this explanation?\n\n#KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-20T15:52:00+03:00",
+      "side": "government",
+      "tone": "criticism",
       "hot": true,
-      "beat": "life",
-      "avoid": [
-        "The High Court convicted Paul Mackenzie and 28 co-accused of murder, setting sentencing for November.",
-        "New law requires employers to provide clean breastfeeding spaces and breaks for working mothers."
-      ],
       "source_links": [
         {
-          "outlet": "Tuko News",
-          "title": "IPOA Announces 41 Job Vacancies For Drivers, Lawyers, Office Assistants, Others",
-          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdEc5TTZxZUJiVFh3NUFGb2VEcGdFUDA4cVE2anBzS1Uxblpub1V6aEVHTjNyWmFhMndmV3FSRzJnRnNjdzFrdVVpNHNhTnRkV1UzWXV4eFNCSnFIUnJncmRBZ29WenpVdDd3dm9UQ0E0ajY4eU5tUGw5YnAzY2FZNU5CR0ZBeHlOUmlqRGlJVlN0OHZhWUdsVkhDMHVnZ2FCYndsUkZVa2w?oc=5",
-          "published": "2026-10-20"
+          "outlet": "Capital FM Politics",
+          "title": "‘Remarks on deceased voters were satirical and taken out of context,’UDA SG tells IEBC",
+          "link": "https://capitalfm.africa/remarks-on-deceased-voters-were-satirical-and-taken-out-of-contextuda-sg-tells-iebc/?utm_source=rss&utm_medium=feed&utm_campaign=feed-politics",
+          "published": "2026-10-21"
+        },
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "Hassan Omar appears before IEBC committee, defends 'dead voters' remarks",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVG1VVjFPYlFYOUs4ZmhKUWxrTkoyV1FmYmVuSWx6Ty04aElzM3lLQ21sWmRQbjJFTFg5cUtxZGVQWUE3SHVzQzZxS0VJc1RuU2o4Q2Y3d05YRS1WQmw2N2Y0dWc4NUxqRGJLcUNSWWNabmk4bFBJRFpPMTBjZ1lnRnFMcTI1aEdxY0hZLS1WR0F2NzZGb1hqdVZ2N0JnN00ybDJEaEtMRDh4Mm5CSmZidktjMTlLTmc?oc=5",
+          "published": "2026-10-21"
         }
       ],
       "status": "needs_human",
       "guard": {
         "errors": [
-          "weak: editor scored 4.9/10. Ground this in current news topics like Mashujaa Day or Eldoret housing rather than random job ads."
+          "visual QA: low contrast 1.9:1 (needs 3:1) on 'Secretary-General'"
         ],
-        "warnings": []
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
       },
       "critic": {
-        "hook": 5,
-        "send": 6,
-        "clarity": 5,
-        "fresh": 5,
-        "voice": 5,
-        "craft": 5,
-        "picture": 4,
-        "hold": 5,
-        "demand": 3,
-        "action": 5,
-        "fair": 6,
-        "impact": 5,
-        "avg": 4.9,
-        "note": "Ground this in current news topics like Mashujaa Day or Eldoret housing rather than random job ads."
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 9,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "avg": 9.0,
+        "note": "exceptional political accountability post."
       },
-      "drafted_at": "2026-10-20T12:05:52.680761+03:00"
+      "drafted_at": "2026-10-21T17:03:01.995517+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1020m-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/remarks-on-deceased-voters-were-satirical-and-taken-out-of-contextuda-sg-tells-iebc/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "tv_clip": {
+        "channel": "NTV Kenya",
+        "title": "Hassan Omar afika mbele ya IEBC kujibu maswali kuhusu matamshi kuhusu kutumia wafu kupiga kura",
+        "url": "https://www.youtube.com/watch?v=1CdGIasjP-0"
+      },
+      "ink": {
+        "2": "#FFFFFF",
+        "2/1": "#FFFFFF"
+      }
     },
     {
       "id": "2026-w43-hot-1020e",
       "template": "sauti",
       "lane": "everyone",
-      "kicker": "Taxpayers",
-      "line": "600 *CEOs* issue a direct demand to President Ruto over taxes and loan interest rates.",
-      "fact": "Over 600 chief executive officers gathered to demand tax reforms and lower lending rates.",
-      "message": "600 CEOs demand tax reforms and lower interest rates from the President.",
-      "action": "Read the 600 CEOs' petition on kenyans.co.ke",
+      "who": "Governor Kawira Mwangaza",
+      "where": "National",
+      "when": "21 Oct 2026",
+      "kicker": "Citizens",
+      "line": "Lobby group Linda Mwananchi condemned an attack on Governor *Kawira Mwangaza* during an inspection tour.",
+      "fact": "Armed individuals disrupted Governor Mwangaza's community project inspection and destroyed public property.",
+      "source": "Capital FM News, 2026-10-21",
+      "photo_query": "Kenya police vehicle",
+      "message": "Political violence against elected leaders undermines devolution and citizen safety.",
+      "action": "Demand the National Police Service arrest and prosecute perpetrators of political violence",
+      "impact": "Political violence stops public services and endangers ordinary citizens at project sites.",
       "beats": [
-        "Over *600* CEOs demand lower taxes and cheaper loans.",
-        "High levies and costly credit hurt private sector growth.",
-        "Fewer expanding firms means fewer jobs for young Kenyans.",
-        "Kenyans demand: the Treasury cuts borrowing costs."
+        "Lobby group Linda Mwananchi condemned an attack on *Kawira Mwangaza*.",
+        "Goons disrupted the Governor's inspection of public projects.",
+        "The lobby faulted the Council of Governors for staying silent.",
+        "Kenyans demand: the police arrest and charge *all attackers*."
       ],
-      "photo_query": "Nairobi skyline",
-      "source": "Kenyans.co.ke, 2026-10-20",
-      "who": "President William Ruto and the National Treasury",
-      "where": "Nairobi",
-      "when": "20 Oct 2026",
-      "side": "government",
-      "tone": "criticism",
-      "impact": "High taxes and loan rates shrink business growth and kill local jobs.",
+      "caption": "Lobby group Linda Mwananchi has condemned the attack on Governor Kawira Mwangaza during project inspections. Political violence has no place in Kenya.\n\nShould the Council of Governors speak up? Drop your view below.\n\n#LindaHeshimuKatiba #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-20T23:57:00+03:00",
+      "side": "none",
+      "tone": "criticism",
       "hot": true,
-      "beat": "politics",
-      "avoid": [
-        "The High Court convicted Paul Mackenzie and 28 co-accused of murder, setting sentencing for November.",
-        "New law requires employers to provide clean breastfeeding spaces and breaks for working mothers.",
-        "IPOA opened applications for 41 jobs across multiple departments."
-      ],
       "source_links": [
         {
-          "outlet": "Kenyans.co.ke",
-          "title": "600 CEOs Issue Demand to Ruto Over Taxes & Loan Interest Rates",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQSnR6bTgwZGtBMFZnNGtxU1J4ZkVDMGJ1b1hHR29pMm05NVp2SDBtUl9CVnJUdk5FUnFXZFRvRWtWSXg2cjI5S0VtOTBUTDE1QzVjVC0zb1V4MWFVVi1SNjRGQVdEWVdSVldUNGExYlpzV2ozd0t6T24xLS1SZ0E4NXhSREwwVERxRUdyUHhnc2xBWkhPLXhZRGk5dDRtMzg?oc=5",
-          "published": "2026-10-20"
+          "outlet": "Capital FM News",
+          "title": "Linda Mwananchi condemns attack on Mwangaza, faults governors’ council",
+          "link": "https://capitalfm.africa/linda-mwananchi-condemns-attack-on-mwangaza-faults-governors-council/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-21"
         }
       ],
-      "status": "needs_human",
+      "status": "awaiting",
       "guard": {
-        "errors": [
-          "weak: editor scored 4.6/10. Match the demand score and topic to the actual high-demand items on the news desk list."
-        ],
-        "warnings": [
-          "no caption yet"
-        ]
+        "errors": [],
+        "warnings": []
       },
       "critic": {
-        "hook": 5,
-        "send": 5,
-        "clarity": 5,
-        "fresh": 5,
-        "voice": 5,
-        "craft": 5,
-        "picture": 5,
-        "hold": 5,
-        "demand": 2,
-        "action": 3,
-        "fair": 5,
-        "impact": 5,
-        "avg": 4.6,
-        "note": "Match the demand score and topic to the actual high-demand items on the news desk list."
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 9,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.9,
+        "note": "Ensure the police vehicle photo query clearly matches the local context of the incident."
       },
-      "drafted_at": "2026-10-20T21:13:05.041052+03:00"
+      "trend": "#LindaHeshimuKatiba",
+      "drafted_at": "2026-10-21T17:03:01.995519+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1020e-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/linda-mwananchi-condemns-attack-on-mwangaza-faults-governors-council/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 438
     },
     {
       "id": "2026-w43-hot-1021",
@@ -1060,7 +1141,7 @@
           "published": "2026-10-21"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1099,10 +1180,10 @@
     }
   ],
   "scripts": {
-    "radio": "Welcome to Kenya on Record. This week, we examine the cost of broken systems on ordinary citizens.\n\nFirst, lecture halls across public universities remain quiet as the lecturers' strike continues. Students have now raised their voices, demanding an immediate resolution. Families sacrifice heavily to pay tuition and hostel rent, yet young people find themselves stranded halfway through their semesters while negotiations drag on. Higher education cannot be treated as a secondary priority if we expect our youth to build this nation.\n\nMeanwhile, in the fight against graft, the Ethics and Anti-Corruption Commission has recovered 207 million shillings in unexplained assets from a former county accountant in Trans Nzoia. These assets—including prime parcels of land, vehicles, and cash—have officially been handed back to the public purse. While we welcome this court victory, it raises an unavoidable question: how does a single county officer siphon off over two hundred million shillings without internal controls and audit systems catching it immediately? Asset recovery is vital, but shutting the door before public coffers are looted must be the standard.\n\nKwa ufupi wa taarifa hizi: Wanafunzi wa vyuo vikuu vya umma wanataka suluhu ya haraka ipatikane kuhusu mgomo wa wahadhiri ili masomo yarejee kawaida. Kwingineko, tume ya EACC imerejesha mali ya thamani ya shilingi milioni 207 kutoka kwa mhasibu wa Kaunti ya Trans Nzoia iliyopatikana kwa njia ya ufisadi. Ni ukumbusho kuwa mali ya umma inafaa kulindwa kikamilifu.",
-    "voice_note": "Habari zenu. Here is your weekly Kenya on Record update on where your public money and priorities stand.\n\nFirst, public university students are demanding an immediate end to the lecturers' strike. Semesters are halted, rent is running, and young people are losing time because commitments made to academic staff remain unresolved. When public education stalls, ordinary households bear the heaviest burden.\n\nSecond, the EACC has recovered 207 million shillings in unexplained wealth from an accountant in Trans Nzoia County. Prime land, luxury cars, and millions in cash have been forfeited back to the government. It is a solid win for the rule of law. But let's ask the hard question: how does one county staffer divert two hundred million shillings without internal auditors noticing? Real accountability is not just recovering stolen funds; it is fixing systems so public money cannot walk away in the first place. Tufungue macho.",
-    "sms": "Usiibiwe: Track your county budget. When public funds leak through weak audits, hospitals lack drugs and schools suffer. Demand transparency from your MCA.",
-    "reels": "Two hundred and seven million shillings. That is the value of unexplained wealth EACC has just recovered from a single county accountant in Trans Nzoia. Prime land, high-end cars, and cash—now returned to the public purse. It is a commendable win for the taxpayer. But here is the grown-up question: how does one officer divert over Sh200 million without supervisory alarms going off? Until internal controls are airtight, recovery is only treating the symptom."
+    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni wako, na leo tunachambua mambo mazito yanayogusa maisha yetu hapa nchini.\n\nTuanze na pesa zako. Kuna wajanja wametengeneza websites bandia za Money Market Funds. Wanajifanya ni kampuni za uwekezaji ili kuiba akiba yako. Kabla hujaweka pesa mahali, hakikisha ni halali. Usiibiwe jasho lako!\n\nPili, tukumbuke ahadi. Wakati wa kampeni, tuliambiwa Hustler Fund itakuwa ya riba sifuri. Lakini ukweli ni kwamba inatoza asilimia nane kwa mwaka. Ni muhimu serikali iwe wazi kwa wananchi.\n\nKwenye upande wa ajira, Kenya Railways imetoa onyo kali kuhusu matangazo ya kazi ya uongo mtandaoni yanayolenga vijana wetu. Wasichana na wavulana wetu, msitume pesa ili mpate kazi. Ni utapeli mtupu.\n\nTukiangalia siasa na uongozi wetu, usalama wa wananchi na viongozi ni msingi wa devolution. Vurugu za kisiasa hazikubaliki. Na kuelekea chaguzi zijazo, integrity ya kura zetu inahitaji voters' roll safi na viongozi waaminifu.\n\nKaa macho, dai haki yako, na usinyamaze.\n\n[Swahili Summary]\nKenya on Record ya wiki hii: Jihadharini na websites bandia za uwekezaji, Hustler Fund inatoza riba ya 8%, kazi za mtandao za Kenya Railways ni za utapeli, na tunahitaji uchaguzi huru bila vurugu wala udanganyifu.",
+    "voice_note": "Sasa wakuu, ni mimi tena na dondoo za Kenya on Record kwa wiki hii. Kwanza kabisa, macho yenu kwa wale matapeli wanaclone websites za Money Market Funds kuiba pesa zenu za akiba. Usiibiwe! Pili, ile ahadi ya Hustler Fund ya zero interest haipo; wanachukua 8% annually. Tatu, msidanganywe na hizo kazi za Kenya Railways zinazozunguka mtandaoni, ni fake! Na mwisho, tuwe waangalifu na usalama wetu na tukatae vurugu za kisiasa. Tujilinde na tuweke nchi yetu safi. Kaa chonjo!",
+    "sms": "USIIBIWE: Matapeli wanaclone websites za Money Market Funds kuiba akiba yako! Kagua vizuri kampuni kabla hujaweka pesa zako. Usikubali kupoteza jasho lako.",
+    "reels": "Wajanja wameleta mchezo mchafu! Sasa hivi wanaclone websites za Money Market Funds ili kuiba akiba yako ya maana. Unafikiri umewekeza, kumbe pesa inaenda kwa mfuko wa tapeli! Usiibiwe jasho lako. Kwanza thibitisha kampuni iko na leseni halali kabla hujatuma senti moja. Kaa macho, linda pesa zako!"
   },
   "spend_usd": 0.0,
   "revision": 9
