@@ -894,7 +894,7 @@
           "published": "2026-10-21"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -924,7 +924,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Signal_Searching_-_Kenya_(16437544653).jpg",
       "reel": true,
-      "tg_msg": 423
+      "tg_msg": 423,
+      "decided_at": "2026-10-21T09:43:39.156134+03:00"
     }
   ],
   "scripts": {
