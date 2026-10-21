@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-21T13:53:48.270437+00:00",
+  "fetched": "2026-10-21T14:09:58.161429+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -51,9 +51,9 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "Tuesday’s Headlines: Creative Enforcement Edition",
-          "url": "https://nyc.streetsblog.org/2026/10/20/tuesdays-headlines-creative-enforcement-edition",
-          "source": "Streetsblog New York City"
+          "title": "‘Fine and sexy’: Millie Odhiambo tells age-shamers ‘we shall not be moved’",
+          "url": "https://www.the-star.co.ke/news/2026-10-21-fine-and-sexy-millie-odhiambo-fires-back-at-age-shamers",
+          "source": "The Star, Kenya"
         },
         {
           "title": "Red light jumping cyclists offered film over fine",
@@ -113,6 +113,28 @@
     },
     {
       "geo": "KE",
+      "title": "jason wilcox",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Man Utd: Club 'paying price' for not strengthening defence",
+          "url": "https://www.bbc.com/sport/football/videos/ck5ynjvypw9jo",
+          "source": "BBC"
+        },
+        {
+          "title": "Man Utd squad for Como trip should be a sackable offence for Jason Wilcox",
+          "url": "https://www.football365.com/news/man-utd-squad-champions-league-como-carrick-jason-wilcox",
+          "source": "Football365"
+        },
+        {
+          "title": "Sir Jim Ratcliffe 'kills' Man Utd transfer agreed by Jason Wilcox - 'It's a mess'",
+          "url": "https://www.mirror.co.uk/sport/football/news/man-utd-ratcliffe-wilcox-transfer-37785976",
+          "source": "The Mirror"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "edward mwirigi epra fuel disruption",
       "traffic": "100+",
       "news": [
@@ -164,10 +186,6 @@
     {
       "title": "toyota",
       "why": "unsafe: 'fire'"
-    },
-    {
-      "title": "mother",
-      "why": "unsafe: 'Attack'"
     }
   ],
   "errors": {}
