@@ -1,186 +1,98 @@
 {
-  "fetched": "2026-10-21T11:39:56.132957+00:00",
+  "fetched": "2026-10-21T13:53:48.270437+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "milk prices",
-      "traffic": "10000+",
+      "title": "kenya milk and maize price forecast",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Ruto’s dairy promise: Sh65 milk and farmer-owned New KCC",
-          "url": "https://nation.africa/kenya/news/politics/ruto-s-dairy-promise-sh65-milk-and-farmer-owned-new-kcc-5637000",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Ruto Announces New Milk Prices Starting This Month",
-          "url": "https://www.kenyans.co.ke/news/127972-milk-farmers-be-paid-ksh65-litre-starting-month",
+          "title": "CBK Lists Commodities Whose Prices Are Set to Rise",
+          "url": "https://www.kenyans.co.ke/news/128743-cbk-survey-lists-milk-and-maize-among-items-set-further-rise-prices",
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "Ruto announces new milk prices for farmers starting October",
-          "url": "https://peopledaily.digital/business/ruto-announces-new-milk-prices-for-farmers-starting-october",
+          "title": "CBK : Your Market Basket May Cost More, And Fuel Is Partly to Blame",
+          "url": "https://www.dawan.africa/news/cbk-your-market-basket-may-cost-more-and-fuel-is-partly-to-blame",
+          "source": "Dawan Africa"
+        },
+        {
+          "title": "𝐑𝐢𝐬𝐢𝐧𝐠 𝐥𝐢𝐯𝐢𝐧𝐠 𝐜𝐨𝐬𝐭𝐬 𝐬𝐭𝐫𝐚𝐢𝐧 𝐊𝐰𝐚𝐥𝐞 𝐡𝐨𝐮𝐬𝐞𝐡𝐨𝐥𝐝𝐬 Residents of Kwale County are concerned about the rising cost of meeting basic household needs as Kenyans await the latest fuel-price review, with food, transport and other essential expens",
+          "url": "https://www.facebook.com/kenyanewsagency/posts/%F0%9D%90%91%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%A0-%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%AF%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%A0-%F0%9D%90%9C%F0%9D%90%A8%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%AC-%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%AB%F0%9D%90%9A%F0%9D%90%A2%F0%9D%90%A7-%F0%9D%90%8A%F0%9D%90%B0%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%9E-%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%AE%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%A5%F0%9D%90%9D%F0%9D%90%AC-residents-of-kwale-county-are-concer/1418982933750682/",
+          "source": "Facebook"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "dangote kenya pipeline company stake",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Dangote buys 24pc stake of Kenya Pipeline Company",
+          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/dangote-buys-24pc-stake-of-kenya-pipeline-company-5640152",
+          "source": "Business Daily"
+        },
+        {
+          "title": "Nyoro renews claims over KPC shares sale to mystery investor",
+          "url": "https://www.the-star.co.ke/news/2026-10-21-nyoro-renews-claims-over-kpc-shares-sale-to-mystery-investor",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Ndindi Nyoro links KPC shares deal to Dangote refinery, claims secret Ruto interests",
+          "url": "https://peopledaily.digital/news/ndindi-nyoro-links-kpc-shares-deal-to-dangote-refinery-claims-secret-ruto-interests",
           "source": "People Daily"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "job",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Kenya Railways Explains New Recruitment Drive for Hundreds of Jobs",
-          "url": "https://www.kenyans.co.ke/news/128736-kenya-railways-disowns-recruitment-drive-advertising-hundreds-jobs",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "KDF Issues Clarification On Recruitment Notices For 2026",
-          "url": "https://thekenyatimes.com/latest-kenya-times-news/kdf-issues-clarification-on-recruitment-notices/",
-          "source": "The Kenya Times"
-        },
-        {
-          "title": "NLC Raises Alarm Over Fake Job Interview Invitation Circulating Online",
-          "url": "https://uzalendonews.co.ke/nlc-raises-alarm-over-fake-job-interview-invitation-circulating-online",
-          "source": "Uzalendo News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ebola kenya",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Paradox of Kenya hosting Ebola centre for Americans as US issues travel advisory",
-          "url": "https://nation.africa/kenya/health/paradox-kenya-ebola-centre-us-issues-travel-advisory-5639680",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "US raises Kenya travel alert to Level 3 as health risks mount",
-          "url": "https://www.businessdailyafrica.com/bd/news/world/-us-raises-kenya-travel-alert-to-level-3-as-health-risks-mount-5639014",
-          "source": "Business Daily"
-        },
-        {
-          "title": "PS Sing'Oei: US advisory for Kenya will have no implications on travelers",
-          "url": "https://citizen.digital/article/ps-singoei-us-advisory-for-kenya-will-have-no-implications-on-travelers-n392430",
-          "source": "Citizen Digital"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "lille vs galatasaray",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Lille vs Galatasaray: UEFA Champions League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c6ly3z9772g7t",
-          "source": "BBC"
-        },
-        {
-          "title": "Osimhen, Leao return to Lille as Galatasaray seek European lifeline",
-          "url": "https://www.dailysabah.com/sports/football/osimhen-leao-return-to-lille-as-galatasaray-seek-european-lifeline",
-          "source": "Daily Sabah"
-        },
-        {
-          "title": "Galatasaray has filed a complaint with UEFA over the disturbances in France ahead of its match against Lille",
-          "url": "https://ua.news/en/sport/galatasarai-zvernuvsia-do-uefa-cherez-zavorushennia-u-frantsiyi-pered-matchem-iz-lillem",
-          "source": "UA.NEWS"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "spurs vs thunder",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Thunder win chippy opener vs. Spurs, throw support behind Chet Holmgren",
-          "url": "https://www.espn.com/nba/story/_/id/50235276/thunder-win-chippy-opener-vs-spurs-back-chet-holmgren",
-          "source": "ESPN"
-        },
-        {
-          "title": "‘Unstoppable’ – Skip Bayless names ‘by far the best player’ from the Thunder’s win over the Spurs",
-          "url": "https://uk.sports.yahoo.com/news/unstoppable-skip-bayless-names-far-110500893.html",
-          "source": "Yahoo"
-        },
-        {
-          "title": "Wemby shoots 1-of-13 in season-opening loss",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-21/wemby-shoots-1-of-13-in-season-opening-loss",
-          "source": "NBC Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "toyota",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "New Toyota Fortuner Debut On 1st Dec - India Launch 2027",
-          "url": "https://www.rushlane.com/new-toyota-fortuner-debut-on-1st-dec-india-launch-2027-12559076.html",
-          "source": "RushLane"
-        },
-        {
-          "title": "Toyota Fortuner Facelift To Make Global Debut On December 1",
-          "url": "https://www.ndtv.com/auto/toyota-fortuner-facelift-to-make-global-debut-on-december-1-12214962",
-          "source": "NDTV"
-        },
-        {
-          "title": "2027 Toyota Fortuner spied again in Thailand",
-          "url": "https://www.carexpert.com.au/car-news/2027-toyota-fortuner-spied-again-in-thailand",
-          "source": "CarExpert"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "fine",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Poland says social media firms are 'silent ally' of Russia, threatens fines",
-          "url": "https://www.reuters.com/technology/poland-says-social-media-firms-are-silent-ally-russia-threatens-fines-2026-10-21/",
-          "source": "Reuters"
+          "title": "Tuesday’s Headlines: Creative Enforcement Edition",
+          "url": "https://nyc.streetsblog.org/2026/10/20/tuesdays-headlines-creative-enforcement-edition",
+          "source": "Streetsblog New York City"
         },
         {
-          "title": "Lawyer caught offering to make illegal-worker fine go away",
-          "url": "https://www.bbc.com/news/articles/c30rln4pz58xo",
+          "title": "Red light jumping cyclists offered film over fine",
+          "url": "https://www.bbc.co.uk/news/articles/cj1dwe539wr0o",
           "source": "BBC"
         },
         {
-          "title": "Undercover: Solicitor offers to help 'mini-mart owner' dodge fine for illegal worker | BBC News",
-          "url": "https://www.modernghana.com/videonews/bbc/1/738714",
-          "source": "Modern Ghana"
+          "title": "I’ve cycled through 40,000 red lights and won’t stop now",
+          "url": "https://www.telegraph.co.uk/news/2026/10/16/cyclist-dont-need-to-stop-at-red-lights/",
+          "source": "The Telegraph"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "outlook",
+      "title": "ministry of defence",
       "traffic": "200+",
       "news": [
         {
-          "title": "Netflix Is Great at Making Money. Its Problem Is Keeping Viewers Hooked.",
-          "url": "https://www.nytimes.com/2026/10/20/business/media/netflix-earnings-ted-sarandos-peter-rice.html",
-          "source": "The New York Times"
+          "title": "Kenya Defence Forces (KDF) Strengthens Personnel Welfare to Boost Morale and Operational Readiness",
+          "url": "https://africa.com/apo/kenya-defence-forces-kdf-strengthens-personnel-welfare-to-boost-morale-and-operational-readiness",
+          "source": "Africa.com"
         },
         {
-          "title": "Netflix Stock and Price Targets Drop as Wall Street Debates If the Streamer Can Flip the Script",
-          "url": "https://www.hollywoodreporter.com/business/business-news/netflix-stock-analyst-reactions-q3-2026-earnings-report-1236736638/",
-          "source": "The Hollywood Reporter"
+          "title": "Kenya reaffirms commitment to veteran welfare",
+          "url": "https://apanews.net/kenya-reaffirms-commitment-to-veteran-welfare/",
+          "source": "APAnews - Agence de Presse Africaine"
         },
         {
-          "title": "Netflix posts third-quarter earnings beat, but shares fall on advertising and revenue guidance",
-          "url": "https://www.cnbc.com/2026/10/20/netflix-nflx-earnings-q3-2026.html",
-          "source": "CNBC"
+          "title": "KDF ADVANCES VETERANS’ WELFARE THROUGH STRATEGIC POLICY REFORMS",
+          "url": "https://www.mod.go.ke/news/kdf-advances-veterans-welfare-through-strategic-policy-reforms/",
+          "source": "Ministry of Defence – Kenya"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "mikel arteta arsenal bayern match",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Injury latest on Zubimendi, Hincapie, Tzolis and Saliba",
@@ -198,9 +110,61 @@
           "source": "London Evening Standard"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "edward mwirigi epra fuel disruption",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Fresh Hope for Fuel Supply After Drone Strikes on Kenya-Bound Oil Tankers",
+          "url": "https://www.kenyans.co.ke/news/128241-us-iran-talks-raise-hope-relief-after-two-kenya-bound-fuel-tankers-hit",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Six oil tankers among 51 ships expected at Mombasa, Lamu ports",
+          "url": "https://capitalfm.africa/six-oil-tankers-among-51-ships-expected-at-mombasa-lamu-ports/",
+          "source": "Capital FM Africa"
+        },
+        {
+          "title": "Wandayi assures Kenyans of steady fuel supply amid Middle East crisis",
+          "url": "https://www.standardmedia.co.ke/national/article/2001560493/wandayi-assures-kenyans-of-steady-fuel-supply-amid-middle-east-crisis",
+          "source": "The Standard"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kenya travel advisory",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "US raises Kenya travel alert to Level 3 as health risks mount",
+          "url": "https://www.businessdailyafrica.com/bd/news/world/-us-raises-kenya-travel-alert-to-level-3-as-health-risks-mount-5639014",
+          "source": "Business Daily"
+        },
+        {
+          "title": "US says travelers should reconsider Kenya trips on health risks amid Ebola spread",
+          "url": "https://www.reuters.com/world/africa/us-state-department-asks-americans-reconsider-travel-kenya-2026-10-19/",
+          "source": "Reuters"
+        },
+        {
+          "title": "Vacation spot slapped with US travel warning over crime, sexual assaults and kidnappings",
+          "url": "https://www.foxnews.com/travel/vacation-spot-slapped-us-travel-warning-over-crime-sexual-assaults-kidnappings",
+          "source": "Fox News"
+        }
+      ]
     }
   ],
   "dropped": [
+    {
+      "title": "hiroshima fc",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "toyota",
+      "why": "unsafe: 'fire'"
+    },
     {
       "title": "mother",
       "why": "unsafe: 'Attack'"
