@@ -1177,13 +1177,82 @@
       },
       "reel": true,
       "tg_msg": 430
+    },
+    {
+      "id": "2026-w43-hot-1021e",
+      "template": "sauti",
+      "lane": "everyone",
+      "hot": true,
+      "avoid": [
+        "Scrapping the 25% phone import tax will make smartphones affordable for wananchi.",
+        "University students demand an immediate end to the lecturers' strike that has disrupted learning.",
+        "EACC recovered Sh207m in unexplained assets from a Trans Nzoia accountant and returned them to the state."
+      ],
+      "series_brief": "Sauti ya Mwananchi (the people's voice, our signature format): a real photo fills the post. `kicker` who is talking, in English (max 24, e.g. 'Taxpayers', 'Students', 'Gen Z', 'Parents', 'Boda riders'), `line` the headline: the news in one complete, plain sentence (who did what, with the number), one *marker* on the words that hit hardest, no jokes or sarcasm (max 120), `fact` the one sourced fact that proves it (max 150), `source` required, `photo_query` required (a real Kenyan scene that IS the feeling).",
+      "message": "BAT Kenya wins a debt dispute with a distributor as commercial cases continue in court.",
+      "action": "Check business dispute records on the Kenya Law reports portal",
+      "beats": [
+        "BAT Kenya wins *debt* battle with its distributor in court.",
+        "The High Court delivered the commercial ruling on Tuesday.",
+        "Businesses need clear commercial terms to protect jobs.",
+        "Kenyans demand: the Judiciary speeds up commercial disputes."
+      ],
+      "photo_query": "Nairobi high court building",
+      "source": "Business Daily, 2026-10-21",
+      "kicker": "Business Owners",
+      "line": "BAT Kenya *wins* a long commercial debt dispute with its distributor.",
+      "fact": "The High Court ruled in favour of BAT Kenya in the distributor debt case.",
+      "caption": "Business disputes affect jobs and supplies across the country. Clear contracts protect everyone in the market.\n\n#BusinessRedefined #KenyaOnRecord",
+      "who": "Commercial Division High Court",
+      "where": "Nairobi",
+      "when": "21 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Commercial court rulings shape how distributors and manufacturers trade across Kenya.",
+      "bg": "usiku",
+      "publish_at": "2026-10-22T00:00:00+03:00",
+      "beat": "politics",
+      "source_links": [
+        {
+          "outlet": "Business Daily",
+          "title": "BAT Kenya wins debt fight with distributor",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPT2VnQ3R5QUpPVmJOVS1xSUdXWGZGY2VWMk9rRGJjdFMtZ3BnSDZPWWUtcF9FU0trTEFRWVV4eDF6QTIzemVvU2VrM2dDdTFSRVhxNFRFXzdUdDMySUJtSW1GLXVDU2ZFcUNsdUIxM1NrRDJrdmtQcWtaZVRaYV9NY3lsb2Vid2Vnd1Z5ZXFIbzRkQjlXcVFNS3c4TVd2dEZaMHN6czduUVdWZ2FvY2c?oc=5",
+          "published": "2026-10-21"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.8/10. Pick a story from the live Kenyan news desk list (1-5) rather than stale peripheral briefs."
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 5,
+        "craft": 5,
+        "picture": 6,
+        "hold": 5,
+        "demand": 2,
+        "action": 5,
+        "fair": 6,
+        "impact": 5,
+        "avg": 4.8,
+        "note": "Pick a story from the live Kenyan news desk list (1-5) rather than stale peripheral briefs."
+      },
+      "drafted_at": "2026-10-21T21:09:06.783606+03:00"
     }
   ],
   "scripts": {
-    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni wako, na leo tunachambua mambo mazito yanayogusa maisha yetu hapa nchini.\n\nTuanze na pesa zako. Kuna wajanja wametengeneza websites bandia za Money Market Funds. Wanajifanya ni kampuni za uwekezaji ili kuiba akiba yako. Kabla hujaweka pesa mahali, hakikisha ni halali. Usiibiwe jasho lako!\n\nPili, tukumbuke ahadi. Wakati wa kampeni, tuliambiwa Hustler Fund itakuwa ya riba sifuri. Lakini ukweli ni kwamba inatoza asilimia nane kwa mwaka. Ni muhimu serikali iwe wazi kwa wananchi.\n\nKwenye upande wa ajira, Kenya Railways imetoa onyo kali kuhusu matangazo ya kazi ya uongo mtandaoni yanayolenga vijana wetu. Wasichana na wavulana wetu, msitume pesa ili mpate kazi. Ni utapeli mtupu.\n\nTukiangalia siasa na uongozi wetu, usalama wa wananchi na viongozi ni msingi wa devolution. Vurugu za kisiasa hazikubaliki. Na kuelekea chaguzi zijazo, integrity ya kura zetu inahitaji voters' roll safi na viongozi waaminifu.\n\nKaa macho, dai haki yako, na usinyamaze.\n\n[Swahili Summary]\nKenya on Record ya wiki hii: Jihadharini na websites bandia za uwekezaji, Hustler Fund inatoza riba ya 8%, kazi za mtandao za Kenya Railways ni za utapeli, na tunahitaji uchaguzi huru bila vurugu wala udanganyifu.",
-    "voice_note": "Sasa wakuu, ni mimi tena na dondoo za Kenya on Record kwa wiki hii. Kwanza kabisa, macho yenu kwa wale matapeli wanaclone websites za Money Market Funds kuiba pesa zenu za akiba. Usiibiwe! Pili, ile ahadi ya Hustler Fund ya zero interest haipo; wanachukua 8% annually. Tatu, msidanganywe na hizo kazi za Kenya Railways zinazozunguka mtandaoni, ni fake! Na mwisho, tuwe waangalifu na usalama wetu na tukatae vurugu za kisiasa. Tujilinde na tuweke nchi yetu safi. Kaa chonjo!",
-    "sms": "USIIBIWE: Matapeli wanaclone websites za Money Market Funds kuiba akiba yako! Kagua vizuri kampuni kabla hujaweka pesa zako. Usikubali kupoteza jasho lako.",
-    "reels": "Wajanja wameleta mchezo mchafu! Sasa hivi wanaclone websites za Money Market Funds ili kuiba akiba yako ya maana. Unafikiri umewekeza, kumbe pesa inaenda kwa mfuko wa tapeli! Usiibiwe jasho lako. Kwanza thibitisha kampuni iko na leseni halali kabla hujatuma senti moja. Kaa macho, linda pesa zako!"
+    "radio": "Mambo vipi, mwananchi, na karibu kwa Kenya on Record. Mimi ni sauti yako ya uwajibikaji. Leo tunatazama kesi za kibiashara zinazoendelea mahakamani kati ya kampuni kubwa ya tumbaku, BAT Kenya, na msambazaji fulani.\n\nSasa, hii hapa ndiyo picha kubwa. BAT Kenya imeshinda mzozo wa deni dhidi ya huyu msambazaji. Lakini kinachovutia zaidi sio tu ushindi huu wa leo, bali ni jinsi gani kesi za kibiashara zinavyoendelea kuchukua muda mrefu kupigwa kalenda katika mahakama zetu. Unajua, kwa mfanyabiashara mdogo au wa kati, uhakika wa sheria na kasi ya mahakama ndio nguzo kuu ya kufanya biashara bila hofu.\n\nKesi za kibiashara zikichukua miaka mingi kusikilizwa, mtaji unakufa na ajira zinatoweka. Hapa hatuchukui upande wa kampuni fulani, bali tunakumbusha taasisi za haki kwamba ucheleweshaji wa haki ni unyimaji wa haki. Biashara inahitaji mazingira safi na ya wazi ili uchumi wetu usonge mbele. Fuatilia ukweli, uliza maswali, na usikubali kuibiwa kiuchumi.\n\n*Kwa kifupi: BAT Kenya imeshinda mzozo wa deni dhidi ya msambazaji mahakamani, huku maswali yakiendelea kuhusu kasi ya kusuluhisha kesi za kibiashara nchini.*",
+    "voice_note": "Wadau, mko vipi? Hapa ni Kenya on Record na dondoo letu la wiki. British American Tobacco (BAT) Kenya wameshinda mzozo wa deni mahakamani dhidi ya mmoja wa wasambazaji wao. Lakini swali kuu sio tu nani aliyeshinda kesi hii. Ni kwa nini kesi nyingi za kibiashara huchukua milele kabla ya kutolewa uamuzi? Hali hii inaua mtaji wa wafanyabiashara wadogo na kuweka uchumi wetu mashakani. Tunahitaji mahakama za haraka na za kuaminika. Sambaza ujumbe huu kwa mshikaji wako ili tuendelee kuwa macho.",
+    "sms": "USIIBIWE: Kesi za kibiashara zikichelewa mahakamani, mtaji wako unakufa. Dai mikataba iwe wazi na utumie usuluhishi wa haraka kulinda biashara yako. #KenyaOnRecord",
+    "reels": "Wakati kampuni kubwa kama BAT Kenya zinashinda au kushindwa kesi za mamilioni mahakamani, swali letu kuu ni hili: Je, mfanyabiashara wa kawaida anaweza kuvumilia miaka mingi ya kusubiri haki ya kibiashara? Kasi ya mahakama zetu inaamua kama uchumi wetu utakua au utadumaa. Jua haki zako, dai uwazi, na usikubali kuibiwa!"
   },
   "spend_usd": 0.0,
   "revision": 9
