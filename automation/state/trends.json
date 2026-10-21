@@ -1,194 +1,222 @@
 {
-  "fetched": "2026-10-21T16:08:29.334477+00:00",
+  "fetched": "2026-10-21T18:00:38.659781+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "kenya milk and maize price forecast",
+      "title": "manchester united",
+      "traffic": "20000+",
+      "news": [
+        {
+          "title": "Champions League: Man Utd trail Como after third-minute Paz curler",
+          "url": "https://www.bbc.com/sport/football/live/cwm2m2v4d5pvt?page=2",
+          "source": "BBC"
+        },
+        {
+          "title": "Champions League live updates: Como host Man United in early match",
+          "url": "https://global.espn.com/football/story/_/id/50191263/champions-league-live-updates-manchester-united-bayern-arsenal-real-madrid",
+          "source": "ESPN Global"
+        },
+        {
+          "title": "Predicted line-ups v Como",
+          "url": "https://www.manutd.com/en/news/predicted-lineups-como-v-united-champions-league",
+          "source": "Manchester United"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "losc vs galatasaray",
+      "traffic": "5000+",
+      "news": [
+        {
+          "title": "Lille vs Galatasaray: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6ly3z9772g7t",
+          "source": "BBC"
+        },
+        {
+          "title": "Osimhen, Leao return to Lille as Galatasaray seek European lifeline",
+          "url": "https://www.dailysabah.com/sports/football/osimhen-leao-return-to-lille-as-galatasaray-seek-european-lifeline",
+          "source": "Daily Sabah"
+        },
+        {
+          "title": "Licensable video: Lille OSC boards up shop amid unrest ahead of Galatasaray match",
+          "url": "https://www.reutersconnect.com/item/lille-osc-boards-up-shop-amid-unrest-ahead-of-galatasaray-match/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XQU5BQ0FBVklERU8yMDI2MTAyMTQyODIxOTcx",
+          "source": "Reuters Connect"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "como",
       "traffic": "2000+",
       "news": [
         {
-          "title": "CBK Lists Commodities Whose Prices Are Set to Rise",
-          "url": "https://www.kenyans.co.ke/news/128743-cbk-survey-lists-milk-and-maize-among-items-set-further-rise-prices",
-          "source": "Kenyans.co.ke"
+          "title": "Cómo los centros de datos se convirtieron en el tema latente que podría decidir las elecciones de mitad de mandato en Estados Unidos.",
+          "url": "https://www.bbc.com/mundo/articles/c64g12190082o",
+          "source": "BBC"
         },
         {
-          "title": "𝐑𝐢𝐬𝐢𝐧𝐠 𝐥𝐢𝐯𝐢𝐧𝐠 𝐜𝐨𝐬𝐭𝐬 𝐬𝐭𝐫𝐚𝐢𝐧 𝐊𝐰𝐚𝐥𝐞 𝐡𝐨𝐮𝐬𝐞𝐡𝐨𝐥𝐝𝐬 Residents of Kwale County are concerned about the rising cost of meeting basic household needs as Kenyans await the latest fuel-price review, with food, transport and other essential expens",
-          "url": "https://www.facebook.com/kenyanewsagency/posts/%F0%9D%90%91%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%A0-%F0%9D%90%A5%F0%9D%90%A2%F0%9D%90%AF%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%A0-%F0%9D%90%9C%F0%9D%90%A8%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%AC-%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%AB%F0%9D%90%9A%F0%9D%90%A2%F0%9D%90%A7-%F0%9D%90%8A%F0%9D%90%B0%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%9E-%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%AE%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%A5%F0%9D%90%9D%F0%9D%90%AC-residents-of-kwale-county-are-concer/1418982933750682/",
-          "source": "Facebook"
+          "title": "La IA entra como un factor electoral incómodo en EEUU entre recelo social y las donaciones",
+          "url": "https://holanews.com/la-ia-entra-como-un-factor-electoral-incomodo-en-eeuu-entre-recelo-social-y-las-donaciones-2/",
+          "source": "HolaNews"
         },
         {
-          "title": "Why Kenya must make life more affordable for young people",
-          "url": "https://www.the-star.co.ke/opinion/2026-10-14-why-kenya-must-make-life-more-affordable-for-young-people",
-          "source": "The Star, Kenya"
+          "title": "Dinámicas cambiantes: Aspectos a tener en cuenta en la construcción de centros de datos en EE. UU.",
+          "url": "https://www.cranebriefing.com/es/news/dinamicas-cambiantes-aspectos-a-tener-en-cuenta-en-la-construccion-de-centros-de-datos-en-ee-uu/8133010.article",
+          "source": "Crane & Transport Briefing"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "dangote kenya pipeline company stake",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Dangote buys 24pc stake of Kenya Pipeline Company",
-          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/dangote-buys-24pc-stake-of-kenya-pipeline-company-5640152",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Nyoro renews claims over KPC shares sale to mystery investor",
-          "url": "https://www.the-star.co.ke/news/2026-10-21-nyoro-renews-claims-over-kpc-shares-sale-to-mystery-investor",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Ndindi Nyoro claims President Ruto is arm-twisting parties in sale of KPC shares",
-          "url": "https://citizen.digital/article/ndindi-nyoro-claims-president-ruto-is-arm-twisting-parties-in-sale-of-kpc-shares-n392448",
-          "source": "Citizen Digital"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "kenya travel advisory",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "US raises Kenya travel alert to Level 3 as health risks mount",
-          "url": "https://www.businessdailyafrica.com/bd/news/world/-us-raises-kenya-travel-alert-to-level-3-as-health-risks-mount-5639014",
-          "source": "Business Daily"
-        },
-        {
-          "title": "US says travelers should reconsider Kenya trips on health risks amid Ebola spread",
-          "url": "https://www.reuters.com/world/africa/us-state-department-asks-americans-reconsider-travel-kenya-2026-10-19/",
-          "source": "Reuters"
-        },
-        {
-          "title": "PS Sing'Oei: US advisory for Kenya will have no implications on travelers",
-          "url": "https://citizen.digital/article/ps-singoei-us-advisory-for-kenya-will-have-no-implications-on-travelers-n392430",
-          "source": "Citizen Digital"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "jason wilcox",
+      "title": "levante vs athletic",
       "traffic": "500+",
       "news": [
         {
-          "title": "Man Utd: Club 'paying price' for not strengthening defence",
-          "url": "https://www.bbc.com/sport/football/videos/ck5ynjvypw9jo",
-          "source": "BBC"
+          "title": "Alineaciones confirmadas de Levante y Athletic hoy, partido aplazado de la jornada 6",
+          "url": "https://www.eldesmarque.com/futbol/liga-1a-division/20261021/alineaciones-confirmadas-levante-athletic-aplazado_18_020500774.html",
+          "source": "El Desmarque"
         },
         {
-          "title": "Man Utd squad for Como trip should be a sackable offence for Jason Wilcox",
-          "url": "https://www.football365.com/news/man-utd-squad-champions-league-como-carrick-jason-wilcox",
-          "source": "Football365"
+          "title": "Movida Deportiva con José Manuel Monje (21/10/26) | Hoy sólo vale la victoria para un Athletic que debe demostrar lo que realmente puede hacer",
+          "url": "https://www.ondavasca.com/movida-deportiva-con-jose-manuel-monje-211026/",
+          "source": "Onda Vasca"
         },
         {
-          "title": "Sir Jim Ratcliffe 'kills' Man Utd transfer agreed by Jason Wilcox - 'It's a mess'",
-          "url": "https://www.mirror.co.uk/sport/football/news/man-utd-ratcliffe-wilcox-transfer-37785976",
-          "source": "The Mirror"
+          "title": "Tres puntos para no desviarse del camino",
+          "url": "https://www.superdeporte.es/levante-ud/2026/10/21/tres-puntos-desviarse-camino-135549354.html",
+          "source": "Superdeporte"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "mosiria",
+      "title": "man united vs como",
       "traffic": "200+",
       "news": [
         {
-          "title": "Nairobi Governor Sakaja fires Chief Officer Geoffrey Mosiria in latest county changes",
-          "url": "https://nation.africa/kenya/counties/nairobi/nairobi-governor-sakaja-fires-chief-officer-geoffrey-mosiria-in-latest-county-changes-5640626",
-          "source": "Daily Nation"
+          "title": "Como v Manchester United: Champions League – live",
+          "url": "https://www.theguardian.com/football/live/2026/oct/21/como-v-manchester-united-champions-league-live",
+          "source": "The Guardian"
         },
         {
-          "title": "Sakaja reassigns three Nairobi chief officers in new administrative changes",
-          "url": "https://www.the-star.co.ke/news/2026-10-21-sakaja-reassigns-three-nairobi-chief-officers",
-          "source": "The Star, Kenya"
+          "title": "Cesc Fabregas is the exact kind of coach Man Utd need after proving himself with Como",
+          "url": "https://www.goal.com/en/originals/cesc-fabregas-is-the-exact-kind-of-coach-man-utd-need-after-proving-himself-with-como/blt1ef82b61e5fe06ee",
+          "source": "Goal.com"
         },
         {
-          "title": "Nairobi Governor Sakaja fires Chief Officer Geoffrey Mosiria in latest reshuffle",
-          "url": "https://citizen.digital/article/nairobi-governor-sakaja-fires-chief-officer-geoffrey-mosiria-in-latest-reshuffle-n392457",
-          "source": "Citizen Digital"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "tea",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "How you drink your tea could determine whether you gain or lose heart health benefits",
-          "url": "https://www.cnn.com/2026/10/21/health/tea-heart-health-temperature-cardiovascular-disease-wellness",
-          "source": "CNN"
-        },
-        {
-          "title": "Can drinking tea help protect against cardiovascular disease?",
-          "url": "https://medicalxpress.com/news/2026-10-tea-cardiovascular-disease.html",
-          "source": "Medical Xpress"
-        },
-        {
-          "title": "Drinking seven cups of tea a day linked to better heart health",
-          "url": "https://www.thetimes.com/uk/healthcare/article/seven-cups-tea-day-better-heart-health-study-9f6dvv8v8",
-          "source": "The Times"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "edward mwirigi epra fuel disruption",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Fresh Hope for Fuel Supply After Drone Strikes on Kenya-Bound Oil Tankers",
-          "url": "https://www.kenyans.co.ke/news/128241-us-iran-talks-raise-hope-relief-after-two-kenya-bound-fuel-tankers-hit",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Six oil tankers among 51 ships expected at Mombasa, Lamu ports",
-          "url": "https://capitalfm.africa/six-oil-tankers-among-51-ships-expected-at-mombasa-lamu-ports/",
-          "source": "Capital FM Africa"
-        },
-        {
-          "title": "Wandayi assures Kenyans of steady fuel supply amid Middle East crisis",
-          "url": "https://www.standardmedia.co.ke/national/article/2001560493/wandayi-assures-kenyans-of-steady-fuel-supply-amid-middle-east-crisis",
-          "source": "The Standard"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "viktor gyökeres",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Transfer rumors, news: Could Viktor Gyökeres leave Arsenal in January?",
-          "url": "https://www.espn.com/soccer/story/_/id/50208929/transfer-rumors-news-viktor-gyokeres-leave-arsenal-january",
-          "source": "ESPN"
-        },
-        {
-          "title": "Football gossip: Gyokeres, Rabiot, De Jong, Kounde, Nmecha",
-          "url": "https://www.bbc.com/sport/football/articles/c9gkv34kezdko",
-          "source": "BBC"
-        },
-        {
-          "title": "Arsenal in for 'complete striker' to replace outgoing Viktor Gyokeres: report",
-          "url": "https://sports.yahoo.com/articles/arsenal-complete-striker-replace-outgoing-102922750.html",
+          "title": "Carrick: ‘Como are a really good team, United want to control the game’",
+          "url": "https://sports.yahoo.com/articles/carrick-como-really-good-team-165500769.html",
           "source": "Yahoo Sports"
         }
       ]
-    }
-  ],
-  "dropped": [
-    {
-      "title": "club brugge vs lens",
-      "why": "unsafe: 'Betting'"
     },
     {
-      "title": "manchester united vs como",
-      "why": "unsafe: 'Bet'"
+      "geo": "KE",
+      "title": "galatasaray",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Galatasaray'da Okan Buruk'tan 3 değişiklik!",
+          "url": "https://www.haberturk.com/spor/galatasaray-da-okan-buruk-tan-3-degisiklik-3921527",
+          "source": "Habertürk"
+        },
+        {
+          "title": "Rade Obrenovic kimdir? Trabzonspor'un 4-0 yenildiği maçın hakemi Lille'de düdük çalacak",
+          "url": "https://www.haberler.com/haber/rade-obrenovic-kimdir-trabzonsporun-4-0-yenildigi-20352715-haberi/",
+          "source": "Haberler"
+        },
+        {
+          "title": "LİLLE - GALATASARAY MAÇI KAÇ KAÇ BİTER? Yapay zekadan UEFA Şampiyonlar Ligi'nin 3. hafta karşılaşması için sürpriz tahmin",
+          "url": "https://www.cnnturk.com/spor/futbol/galeri/lille-galatasaray-maci-kac-kac-biter-yapay-zekadan-uefa-sampiyonlar-liginin-3-hafta-karsilasmasi-icin-surpriz-tahmin-3482689",
+          "source": "CNN Türk"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "manu",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Manchester United Ltd. $MANU Stock: Pinnacle Associates Ltd. Boosts Position",
+          "url": "https://www.marketbeat.com/instant-alerts/filing-manchester-united-ltd-manu-stock-pinnacle-associates-ltd-boosts-position-2026-10-21/",
+          "source": "MarketBeat"
+        },
+        {
+          "title": "Manchester United stock sits 13.82 percent below its 52-week high",
+          "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/manchester-united-stock-sits-13-82-percent-below-its-52-week-high/70377169",
+          "source": "AD HOC NEWS"
+        },
+        {
+          "title": "MKR hosts Colin and Manu: ‘We’re grumpy old men now!’",
+          "url": "https://www.nowtolove.co.nz/celebrity/mkr-hosts-colin-and-manu-wont-retire/",
+          "source": "Now to Love NZ"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ethan nwaneri",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Marli Salmon, Céadach O’Neill and Maalik Hashi named in provisional Arsenal U19 squad to face Bayern Munich",
+          "url": "https://arsenalyouth.wordpress.com/2026/10/20/marli-salmon-ceadach-oneill-and-maalik-hashi-named-in-provisional-arsenal-u19-squad-to-face-bayern-munich/",
+          "source": "Jeorge Bird's Arsenal Youth"
+        },
+        {
+          "title": "Nwaneri scores stoppage time equaliser in Uefa Youth League",
+          "url": "https://sports.yahoo.com/articles/nwaneri-scores-stoppage-time-equaliser-172346825.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Bayern Munich U19s draw 3-3 against Arsenal in epic UEFA Youth League encounter",
+          "url": "https://www.livescore.com/en/news/football/premier-league/bayern-munich-u19s-draw-3-3-against-arsenal-in-epic-uefa-youth-league-encounter-bayern-strikes/",
+          "source": "LiveScore"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "lille",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Licensable picture: Lille LOSC v Galatasaray - UEFA Champions League",
+          "url": "https://www.reutersconnect.com/item/lille-losc-v-galatasaray-uefa-champions-league/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwNzBHMkMz",
+          "source": "Reuters Connect"
+        },
+        {
+          "title": "Licensable picture: Lille LOSC v Galatasaray - UEFA Champions League",
+          "url": "https://www.reutersconnect.com/item/lille-losc-v-galatasaray-uefa-champions-league/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwNzBHMzBa",
+          "source": "Reuters Connect"
+        },
+        {
+          "title": "Licensable picture: Lille LOSC v Galatasaray - UEFA Champions League",
+          "url": "https://www.reutersconnect.com/item/lille-losc-v-galatasaray-uefa-champions-league/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwNzBHMkJF",
+          "source": "Reuters Connect"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "como fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "En Directo: Lille OSC - Galatasaray SK. Partido de la Liga de Campeones 2026-2027 | Fútbol en El Correo",
+          "url": "https://www.elcorreo.com/deportes/futbol/directos/liga-campeones/2026-2027/lille-galatasaray-11435-4253-11435-10-3-sd.html",
+          "source": "El Correo"
+        },
+        {
+          "title": "Liga de Campeones",
+          "url": "https://www.elcorreo.com/deportes/futbol/directos/liga-campeones/2026-2027/como-145782-manchester-united-145782-1470-10-3-sd.html",
+          "source": "El Correo"
+        }
+      ]
     }
   ],
+  "dropped": [],
   "errors": {}
 }
