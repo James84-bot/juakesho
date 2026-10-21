@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-10-21T06:06:40.657110+00:00",
+  "fetched": "2026-10-21T08:53:21.506830+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "ebola",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "Nigeria confirms Ebola case linked to East Africa",
@@ -12,9 +12,9 @@
           "source": "BBC"
         },
         {
-          "title": "Nigeria confirms Ebola case as outbreak spreads into western Africa",
-          "url": "https://www.theguardian.com/world/2026/oct/21/nigeria-first-ebola-case-africa-outbreak-latest",
-          "source": "The Guardian"
+          "title": "Nigeria confirms first Ebola case amid concerns about continental spread",
+          "url": "https://www.aljazeera.com/news/2026/10/20/kenya-confirms-ninth-ebola-case",
+          "source": "Al Jazeera"
         },
         {
           "title": "Nigeria confirms Ebola case in patient who arrived from Uganda",
@@ -25,67 +25,89 @@
     },
     {
       "geo": "KE",
-      "title": "knicks vs 76ers",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Jalen Brunson Gives Surprising Quote Why It Was 'Good' for Knicks to Lose Season-Opener to 76ers",
-          "url": "https://bleacherreport.com/articles/25513969-jalen-brunson-gives-surprising-quote-why-it-was-good-knicks-lose-season-opener-76ers",
-          "source": "Bleacher Report"
-        },
-        {
-          "title": "Grant Williams (hamstring) ruled out for opener",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-20/grant-williams-hamstring-ruled-out-for-opener",
-          "source": "NBC Sports"
-        },
-        {
-          "title": "Mike Brown: Would not have felt good about a win vs. 76ers given Knicks' play",
-          "url": "https://abc7ny.com/post/mike-brown-would-not-have-felt-good-win-76ers-given-knicks-play/19963249/",
-          "source": "ABC7 New York"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "bayern vs arsenal",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
+        {
+          "title": "Arsenal: Criticism of team's style from very small minority - Mikel Arteta",
+          "url": "https://www.bbc.com/sport/football/articles/cm8xzrwv5zpko",
+          "source": "BBC"
+        },
+        {
+          "title": "Every word of Mikel Arteta's pre-Bayern presser",
+          "url": "https://www.arsenal.com/news/every-word-of-mikel-artetas-pre-bayern-presser-agdMk0a7U4Ft",
+          "source": "Arsenal.com"
+        },
         {
           "title": "Arsenal were spooked by Brighton defeat and have reverted to type - they won't beat Bayern Munich, says Paul Merson",
           "url": "https://www.skysports.com/football/news/13600922/arsenal-were-spooked-by-brighton-defeat-and-have-reverted-to-type-they-wont-beat-bayern-munich-says-paul-merson",
           "source": "Sky Sports"
-        },
-        {
-          "title": "Bayern Munich vs Arsenal: UEFA Champions League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c98rzp066dd8t",
-          "source": "BBC"
-        },
-        {
-          "title": "Arsenal vs Bayern Munich: Classic match - late London drama as Arsenal stun the German giants at the Emirates",
-          "url": "https://www.goal.com/en-ke/lists/arsenal-vs-bayern-munich-classic-match-the-gunners-champions-league-emirates/bltbd8841aa05bce655",
-          "source": "Goal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "champions league table",
+      "title": "spurs vs thunder",
       "traffic": "500+",
       "news": [
         {
-          "title": "Tuesday's Champions League results and reports",
-          "url": "https://www.rte.ie/sport/soccer/2026/1020/1596070-tuesdays-champions-league-updates/",
-          "source": "RTE.ie"
+          "title": "Thunder win chippy opener vs. Spurs, throw support behind Chet Holmgren",
+          "url": "https://www.espn.com/nba/story/_/id/50235276/thunder-win-chippy-opener-vs-spurs-back-chet-holmgren",
+          "source": "ESPN"
         },
         {
-          "title": "UEFA Champions League Live Updates, Scores, Highlights and Standings (10/20)",
-          "url": "https://bleacherreport.com/liveblogs/25513280-uefa-champions-league-live-updates-scores-highlights-and-standings-1020",
-          "source": "Bleacher Report"
+          "title": "SGA pours in 32/5/4/2/2 line in WCF rematch",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-21/sga-pours-in-32-5-4-2-2-line-in-wcf-rematch",
+          "source": "NBC Sports"
         },
         {
-          "title": "How the Champions League table stands after Tuesday's results",
-          "url": "https://onefootball.com/en/news/how-the-champions-league-table-stands-after-tuesdays-results-43644950",
-          "source": "OneFootball"
+          "title": "Shai Gilgeous-Alexander pours in 32 to get the season-opening road win in San Antonio",
+          "url": "https://www.nba.com/watch/video/shai-gilgeous-alexander-pours-in-32-to-get-the-season-opening-road-win-in-san-antonio?plsrc=nba&collection=more-to-watch",
+          "source": "NBA.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "knicks vs 76ers",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Karl-Anthony Towns cashes a logo 3 for the Knicks",
+          "url": "https://www.espn.co.uk/video/clip/_/id/50233865/karl-anthony-towns-cashes-logo-3-knicks",
+          "source": "ESPN"
+        },
+        {
+          "title": "Karl-Anthony Towns sends warning after Knicks lose to 76ers",
+          "url": "https://basketnews.com/news-257783-karl-anthony-towns-sends-warning-after-knicks-lose-to-76ers.html",
+          "source": "BasketNews.com"
+        },
+        {
+          "title": "Karl-Anthony Towns records 19/12/1/1/2 line",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-20/karl-anthony-towns-records-19-12-1-1-2-line",
+          "source": "NBC Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ebola kenya",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Paradox of Kenya hosting Ebola centre for Americans as US issues travel advisory",
+          "url": "https://nation.africa/kenya/health/paradox-kenya-ebola-centre-us-issues-travel-advisory-5639680",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "PS Sing'Oei: US advisory for Kenya will have no implications on travelers",
+          "url": "https://citizen.digital/article/ps-singoei-us-advisory-for-kenya-will-have-no-implications-on-travelers-n392430",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "US raises Kenya travel alert to Level 3 as health risks mount",
+          "url": "https://www.businessdailyafrica.com/bd/news/world/-us-raises-kenya-travel-alert-to-level-3-as-health-risks-mount-5639014",
+          "source": "Business Daily"
         }
       ]
     },
@@ -95,19 +117,41 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Australian central banker says inflation outlook worse, unsure about November rate hike",
-          "url": "https://www.reuters.com/world/asia-pacific/australia-central-banker-says-policy-working-inflation-outlook-worse-2026-10-20/",
-          "source": "Reuters"
-        },
-        {
-          "title": "RBA’s Hauser Says Australia Inflation Outlook ‘Materially Worse’",
-          "url": "https://www.bloomberg.com/news/articles/2026-10-20/rba-s-hauser-says-australia-inflation-outlook-materially-worse",
-          "source": "Bloomberg.com"
-        },
-        {
-          "title": "Australia’s Inflation Outlook Materially Worse, RBA Says",
-          "url": "https://www.wsj.com/economy/central-banking/australias-inflation-outlook-materially-worse-rba-says-55d68979",
+          "title": "Hasbro Lifts Outlook on Surging Magic Card Game Sales",
+          "url": "https://www.wsj.com/business/earnings/hasbro-lifts-outlook-as-revenue-jumps-ed1dab70",
           "source": "WSJ"
+        },
+        {
+          "title": "HAS Q3 Earnings Beat Estimates on Magic Growth, Outlook Raised",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/q3-earnings-beat-estimates-magic-125200776.html",
+          "source": "Yahoo Finance"
+        },
+        {
+          "title": "Hasbro raises annual revenue forecast on strong demand for digital games",
+          "url": "https://www.reuters.com/technology/hasbro-raises-annual-revenue-forecast-strong-demand-digital-games-toys-2026-10-20/",
+          "source": "Reuters"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "lille vs galatasaray",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Lille vs Galatasaray: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6ly3z9772g7t",
+          "source": "BBC"
+        },
+        {
+          "title": "Osimhen, Leao return to Lille as Galatasaray seek European lifeline",
+          "url": "https://www.dailysabah.com/sports/football/osimhen-leao-return-to-lille-as-galatasaray-seek-european-lifeline",
+          "source": "Daily Sabah"
+        },
+        {
+          "title": "Galatasaray has filed a complaint with UEFA over the disturbances in France ahead of its match against Lille",
+          "url": "https://ua.news/en/sport/galatasarai-zvernuvsia-do-uefa-cherez-zavorushennia-u-frantsiyi-pered-matchem-iz-lillem",
+          "source": "UA.NEWS"
         }
       ]
     },
@@ -135,30 +179,8 @@
     },
     {
       "geo": "KE",
-      "title": "uefa champions league table",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "2026/27 Women's Champions League: All the league phase fixtures and results",
-          "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-women-s-champions-league-all-the-league-phase-fixtu/",
-          "source": "UEFA.com"
-        },
-        {
-          "title": "2026/27 Champions League: All the league phase fixtures and results",
-          "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
-          "source": "UEFA.com"
-        },
-        {
-          "title": "Champions League league phase fixtures and results by team",
-          "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-and-results-by-team/",
-          "source": "UEFA.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "como vs man utd",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "La posible alineación titular del Manchester United para enfrentar al Como",
@@ -166,45 +188,40 @@
           "source": "Sports Illustrated"
         },
         {
-          "title": "El Revelador Como de Cesc Fàbregas Pone a Prueba las Dudas del Manchester United",
-          "url": "https://onefootball.com/es/noticias/el-revelador-como-de-cesc-fabregas-pone-a-prueba-las-dudas-del-manchester-united-43645924",
-          "source": "OneFootball"
+          "title": "Primera prueba de fuego para el Como de Cesc Fàbregas",
+          "url": "https://www.mundodeportivo.com/futbol/champions-league/20261021/1004241146/primera-prueba-fuego-cesc-fabregas.html",
+          "source": "Mundo Deportivo"
         },
         {
-          "title": "«No es una pregunta muy agradable»: Fabregas rechaza airadamente los rumores irrespetuosos sobre sustituir a Carrick en el Manchester United",
-          "url": "https://es-us.noticias.yahoo.com/deportes/pregunta-agradable-fabregas-rechaza-airado-172137910.html",
-          "source": "Yahoo"
+          "title": "Lille - Galatasaray en directo - Champions League: Resultados y resúmenes de Fútbol - 21/10/2026",
+          "url": "https://www.eurosport.es/futbol/champions-league/2026-2027/live-lille-galatasaray_mtc21878436/live.shtml",
+          "source": "Eurosport"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "champions league stats",
-      "traffic": "100+",
+      "title": "lamine yamal",
+      "traffic": "200+",
       "news": [
         {
-          "title": "'If you need a player there, you need Flo!' – Andoni Iraola hails record-breaking Liverpool star",
-          "url": "https://www.goal.com/en/lists/florian-wirtz-record-andoni-iraola-liverpool-brentford-quotes/blt9f12bba74967b62b",
-          "source": "Goal.com"
+          "title": "The Daily Hilario: Wednesday",
+          "url": "https://www.yahoo.com/news/science/articles/daily-hilario-wednesday-070000595.html",
+          "source": "Yahoo"
         },
         {
-          "title": "Victor Munoz top rated for Liverpool – Florian Wirtz creates NINE chances!",
-          "url": "https://www.thisisanfield.com/2026/10/victor-munoz-top-rated-for-liverpool-florian-wirtz-creates-nine-chances/",
-          "source": "This Is Anfield"
+          "title": "Rio Ngumoha joins Lamine Yamal and Cristiano Ronaldo in exclusive Champions League club",
+          "url": "https://worldsoccertalk.com/news/rio-ngumoha-joins-lamine-yamal-and-cristiano-ronaldo-in-exclusive-champions-league-club/",
+          "source": "World Soccer Talk"
         },
         {
-          "title": "Jamie Carragher performs Florian Wirtz U-turn after 'special' moment against Brentford",
-          "url": "https://www.liverpool.com/liverpool-fc-news/features/jamie-carragher-florian-wirtz-liverpool-34788542",
-          "source": "Liverpool.com"
+          "title": "Rio Ngumoha joins Lamine Yamal in rare Champions League stat after Liverpool 6-3 win",
+          "url": "https://www.livescore.com/en/news/football/champions-league/rio-ngumoha-joins-lamine-yamal-in-rare-champions-league-stat-after-liverpool-6-3-win-rush-the-kop/",
+          "source": "LiveScore"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "lille vs galatasaray",
-      "why": "unsafe: 'Betting'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }

@@ -926,6 +926,19 @@
       "reel": true,
       "tg_msg": 423,
       "decided_at": "2026-10-21T09:43:39.156134+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1021m",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-10-21T14:53:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Scrapping the 25% phone import tax will make smartphones affordable for wananchi."
+      ]
     }
   ],
   "scripts": {
