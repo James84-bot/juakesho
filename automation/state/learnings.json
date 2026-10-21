@@ -1,19 +1,6 @@
 {
-  "updated": "2026-10-21T17:52:50.873018+03:00",
+  "updated": "2026-10-21T21:37:23.551415+03:00",
   "top": [
-    {
-      "id": "2026-w43-hot-1021",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 600.0,
-      "opening": "The government plans to drop the 25% import tax on phones.",
-      "reach": 5,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 6.1
-    },
     {
       "id": "2026-w42-d6-promise-r3",
       "series": "promise",
@@ -26,6 +13,19 @@
       "comments": 1,
       "likes": 2,
       "avg_watch_s": 6.7
+    },
+    {
+      "id": "2026-w43-hot-1021",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 375.0,
+      "opening": "The government plans to drop the 25% import tax on phones.",
+      "reach": 8,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 5.8
     },
     {
       "id": "2026-w42-d2-money-r3",
@@ -110,19 +110,6 @@
   ],
   "all": [
     {
-      "id": "2026-w43-hot-1021",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 600.0,
-      "opening": "The government plans to drop the 25% import tax on phones.",
-      "reach": 5,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 6.1
-    },
-    {
       "id": "2026-w42-d6-promise-r3",
       "series": "promise",
       "lane": "everyone",
@@ -134,6 +121,19 @@
       "comments": 1,
       "likes": 2,
       "avg_watch_s": 6.7
+    },
+    {
+      "id": "2026-w43-hot-1021",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 375.0,
+      "opening": "The government plans to drop the 25% import tax on phones.",
+      "reach": 8,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 5.8
     },
     {
       "id": "2026-w42-d2-money-r3",
