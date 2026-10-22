@@ -1246,13 +1246,85 @@
         "note": "Pick a story from the live Kenyan news desk list (1-5) rather than stale peripheral briefs."
       },
       "drafted_at": "2026-10-21T21:09:06.783606+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1022",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "County workers",
+      "line": "Counties owe staff *Sh100 billion* in money still owed for pensions.",
+      "fact": "County governments deducted pension money from worker salaries but failed to remit Sh100 billion.",
+      "source": "People Daily, 2026-10-22",
+      "message": "County governments owe staff Sh100 billion in deducted pension money that was never remitted.",
+      "impact": "Thousands of retired county staff face poverty without their earned pensions.",
+      "action": "Check your pension statement today and ask your county HR for proof of remittance.",
+      "photo_query": "county government office Kenya",
+      "who": "Council of Governors",
+      "where": "National",
+      "when": "22 Oct 2026",
+      "side": "both",
+      "tone": "criticism",
+      "beats": [
+        "Counties owe workers *Sh100 billion* in money still owed for pensions.",
+        "Counties deducted retirement savings from staff payslips every month.",
+        "Thousands of retired workers face poverty without their savings.",
+        "Kenyans demand: *governors* clear the money still owed.",
+        "Verify your pension remittance with your scheme office today."
+      ],
+      "caption": "Counties deducted pension contributions from staff salaries but failed to remit Sh100 billion.\nThousands of retired county workers are waiting for money they already paid.\nWhat it means for you: thousands of county workers risk retiring with zero savings.\nCheck your pension account today and ask your county human resource office for proof.\n\n#CountyPensions #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-22T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "BAT Kenya wins a debt dispute with a distributor as commercial cases continue in court."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Ksh100B in County arrears: What new Pension Bill means for County workers",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMlBwOGw2bjZXY1REQlMxOEthQ05SV3pyWTVZRFA1czdWMFFiN1A1MmlxdmI5djA5U2txN0s2VkpxX1BSQVlPQ01OaGhRdHNweXFpV20zekFpY1gxOW82TzRDeDFUZlFiUS1xVW5qRWZ5SzgxbzNjQkZoZWZ2eHhCZnJkczVYUThBX2hlanB4R21LZTEwTjJvZUF5ajJPcXNGejIxal9mQXJQclBkUmc?oc=5",
+          "published": "2026-10-22"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.9,
+        "note": "Make the call to action a specific demand addressed to the Council of Governors."
+      },
+      "drafted_at": "2026-10-22T09:21:24.806287+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1022-photo.jpg",
+      "photo_credit": "Photo: U.S. Department of State / Wikimedia Commons, Public domain",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Secretary_Rubio_Meets_with_Kenyan_President_(55544313031).jpg",
+      "reel": true,
+      "tg_msg": 460
     }
   ],
   "scripts": {
-    "radio": "Mambo vipi, mwananchi, na karibu kwa Kenya on Record. Mimi ni sauti yako ya uwajibikaji. Leo tunatazama kesi za kibiashara zinazoendelea mahakamani kati ya kampuni kubwa ya tumbaku, BAT Kenya, na msambazaji fulani.\n\nSasa, hii hapa ndiyo picha kubwa. BAT Kenya imeshinda mzozo wa deni dhidi ya huyu msambazaji. Lakini kinachovutia zaidi sio tu ushindi huu wa leo, bali ni jinsi gani kesi za kibiashara zinavyoendelea kuchukua muda mrefu kupigwa kalenda katika mahakama zetu. Unajua, kwa mfanyabiashara mdogo au wa kati, uhakika wa sheria na kasi ya mahakama ndio nguzo kuu ya kufanya biashara bila hofu.\n\nKesi za kibiashara zikichukua miaka mingi kusikilizwa, mtaji unakufa na ajira zinatoweka. Hapa hatuchukui upande wa kampuni fulani, bali tunakumbusha taasisi za haki kwamba ucheleweshaji wa haki ni unyimaji wa haki. Biashara inahitaji mazingira safi na ya wazi ili uchumi wetu usonge mbele. Fuatilia ukweli, uliza maswali, na usikubali kuibiwa kiuchumi.\n\n*Kwa kifupi: BAT Kenya imeshinda mzozo wa deni dhidi ya msambazaji mahakamani, huku maswali yakiendelea kuhusu kasi ya kusuluhisha kesi za kibiashara nchini.*",
-    "voice_note": "Wadau, mko vipi? Hapa ni Kenya on Record na dondoo letu la wiki. British American Tobacco (BAT) Kenya wameshinda mzozo wa deni mahakamani dhidi ya mmoja wa wasambazaji wao. Lakini swali kuu sio tu nani aliyeshinda kesi hii. Ni kwa nini kesi nyingi za kibiashara huchukua milele kabla ya kutolewa uamuzi? Hali hii inaua mtaji wa wafanyabiashara wadogo na kuweka uchumi wetu mashakani. Tunahitaji mahakama za haraka na za kuaminika. Sambaza ujumbe huu kwa mshikaji wako ili tuendelee kuwa macho.",
-    "sms": "USIIBIWE: Kesi za kibiashara zikichelewa mahakamani, mtaji wako unakufa. Dai mikataba iwe wazi na utumie usuluhishi wa haraka kulinda biashara yako. #KenyaOnRecord",
-    "reels": "Wakati kampuni kubwa kama BAT Kenya zinashinda au kushindwa kesi za mamilioni mahakamani, swali letu kuu ni hili: Je, mfanyabiashara wa kawaida anaweza kuvumilia miaka mingi ya kusubiri haki ya kibiashara? Kasi ya mahakama zetu inaamua kama uchumi wetu utakua au utadumaa. Jua haki zako, dai uwazi, na usikubali kuibiwa!"
+    "radio": "Sasa wasikilizaji, karibu kwenye Kenya on Record. Mimi ni wako, na leo tunagusa swala ambalo linavuja damu kimya kimya kwenye kaunti zetu. Hivi unajua kwamba serikali za kaunti zinadaiwa zaidi ya shilingi bilioni mia moja? Sio pesa za maendeleo yaliyokwama, hapana. Hizi ni pesa za pensheni za wafanyikazi wenyewe. Pesa ambazo zilikatwa moja kwa moja kutoka kwa mishahara yao ya mwisho wa mwezi, lakini hazikupelekwa kamwe kwenye mifuko ya pensheni.\n\nWafanyikazi hawa wametumikia nchi yetu kwa uaminifu, wakiamka asubuhi na mapema kuhakikisha huduma zinafika mashinani. Lakini wakifikisha umri wa kustaafu, wanapata akaunti zao ziko wazi. Hakuna kitu. Wanazurura ofisini wakitafuta haki yao baada ya miaka ya jasho.\n\nHuu sio tu ubadhirifu; ni unyama na uhalifu wa kiuchumi. Fedha za makato ya wafanyikazi ni mali yao binafsi, sio ruzuku ya kaunti ya kutumia kufadhili miradi mingine au kulipia matumizi mengine ya siri. Viongozi wetu lazima wawajibike. Serikali za kaunti hazina budi kulipa deni hili mara moja ili wazee wetu wapate amani wakati wa uzee wao.\n\n[Kiswahili Summary]\n*Kwa ufupi: Serikali za kaunti zinadaiwa zaidi ya shilingi bilioni 100 kwa kutowasilisha pesa za pensheni walizowakata wafanyikazi wao kutoka kwa mishahara. Hali hii inawaacha wafanyikazi wengi mashinani katika uchochole wanapostaafu. Hii ni ukiukaji mkubwa wa haki za wafanyikazi na lazima ichunguzwe na kuchukuliwa hatua.*",
+    "voice_note": "Wadau, mko tayari kusikia ukweli kuhusu pesa zetu za kaunti? Hivi karibuni imefichuka kwamba serikali za kaunti zinadaiwa zaidi ya shilingi bilioni mia moja! Na hizi si pesa za mradi wa barabara—hapana. Hizi ni pesa za pensheni ambazo zilikatwa kutoka kwa mishahara ya wafanyikazi lakini hazikupelekwa kamwe kwenye mifuko ya kustaafu. Watu wamefanya kazi miaka nenda rudi, wakidhani maisha yao ya uzee yako salama, kumbe jasho lao limeliwa gizani. Wafanyikazi wanastaafu na kukuta mifuko yao ni mitupu. Huu ni wizi wa wazi na ukatili kwa mtumishi wa umma. Tusinyamaze hili likiendelea. Sambaza ujumbe huu tujue hatima ya haki za wafanyikazi wetu.",
+    "sms": "Usiibiwe: Pesa za pensheni zilizokatwa kutoka mshahara wako ni haki yako. Dai ripoti ya michango yako leo. Usikubali uzee wako uwe wa masikitiko!",
+    "reels": "Shilingi bilioni mia moja! Hiyo ndiyo pesa ambayo serikali za kaunti zinadaiwa kwa kuzuia makato ya pensheni ya wafanyikazi. Unakatwa pesa kila mwezi ukidhani uzee wako uko salama, kumbe hazipelekwi kokote! Jasho la wafanyikazi linatumika vibaya huku wengine wakistaafu bila chochote. Hadi lini?"
   },
   "spend_usd": 0.0,
   "revision": 9
