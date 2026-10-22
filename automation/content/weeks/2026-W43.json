@@ -1405,13 +1405,79 @@
       "photo_source": "https://commons.wikimedia.org/wiki/File:DINNER_TO_DELEGATES_OF_THE_PENNSYLVANIA_BANKERS%27_ASSOCIATION_(held_by)_THE_CLEARING_HOUSE_ASSOCIATION_OF_THE_BANKS_OF_PHILADELPHIA_(at)_PHILADELPHIA_BOURSE_(NYPL_Hades-270611-4000003258).jpg",
       "reel": true,
       "tg_msg": 469
+    },
+    {
+      "id": "2026-w43-hot-1022e",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "Karua calls out Ruto over *insults* as families battle the high cost of living.",
+      "fact": "Martha Karua criticized leaders for hurling insults while wananchi face heavy economic pressure.",
+      "message": "Politicians must address high living costs instead of trading insults.",
+      "action": "Demand your leaders focus on economic relief at public forums.",
+      "beats": [
+        "Karua calls out Ruto over *insults* as living costs bite.",
+        "Wananchi face heavy economic pressure across the country today.",
+        "Leaders must focus on bread-and-butter issues instead of politics.",
+        "Kenyans demand: elected leaders address the cost of living now."
+      ],
+      "photo_query": "Nairobi street scene Kenya",
+      "source": "Daily Nation, 2026-10-22",
+      "who": "Political leaders",
+      "where": "National",
+      "when": "22 Oct 2026",
+      "side": "both",
+      "tone": "criticism",
+      "impact": "Ordinary Kenyans struggle with high prices while politicians argue.",
+      "caption": "Prices are up. Insults are up. Wananchi carry the weight. Send this to someone who feels the pinch.\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-22T23:57:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "Claims of private investors acquiring Kenya Pipeline spark public debate on national assets.",
+        "County governments owe staff Sh100 billion in deducted pension money that was never remitted.",
+        "Bankers propose a 5% PAYE cut to give workers relief from shrinking payslips."
+      ],
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Summit calls for meaningful public participation to rebuild public trust",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQ1FFSWplZXd3Uk52UUZBNVNRLS1uWHNSR1IyaGpraXN5bEQ1aDB0WFFZMkxkdWdiYTNpSTZDdW5HRjQ4bTdITjJvQ21IdDFEX1VaakcyQTducW83a0FTN0NrX203VW95ZUhFSDN4alU2QTdnSkw4NnB1RTJjdTVib3YzVXpRNmJ4SlRUbXdvanlpUEdXREpSaVhfX19wX0RxX05wZ1ZubmtXNFFyQ2Zhcm1vLXV3RVBUY2p2QjExZw?oc=5",
+          "published": "2026-10-22"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "the linked report is not about this story (Summit calls for meaningful public participation to rebuild public trust): use the headline id of the report this post is really based on"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 5,
+        "craft": 5,
+        "picture": 4,
+        "hold": 5,
+        "demand": 1,
+        "action": 3,
+        "fair": 6,
+        "impact": 5,
+        "avg": 4.4,
+        "note": "The post relies on a generic stock quote and a vague stock photo instead of hard facts from the current news cycle."
+      },
+      "drafted_at": "2026-10-22T21:11:34.514475+03:00"
     }
   ],
   "scripts": {
-    "radio": "Sasa, na karibu kwenye Kenya on Record. Mimi ni wako wa kuwaletea ukweli mtupu bila porojo. Wiki hii, kuna mambo mengi yameuma na kuacha wengi wakishangaa. Kwanza kabisa, wacha tuweke rekodi sawa kuhusu afya. Kuna uvumi uliosambaa kwa kasi sana ukidai eti kuna mlipuko wa ugonjwa wa Ebola hapa nchini. Wacha tuwaambie ukweli: Hizo habari ni za uongo mtupu. Wizara ya Afya imethibitisha hakuna kesi hata moja iliyoripotiwa. Usisambaze hofu kwa kikundi cha WhatsApp bila uhakika.\n\nPia, kikosi cha EACC kimemkamata mfanyakazi wa zamani wa Ofisi ya Mkaguzi Mkuu wa Hesabu za Serikali kwa kujipatia mamilioni—sawa na shilingi milioni tano nukta nane—kwa kutumia vyeti bandia. Haki, kazi ya mtu inafaa ipatikane kwa jasho lake, sio kwa karatasi za kughushi!\n\nKuhusu uchumi wetu, kumekuwa na mjadala mkali kuhusu madai ya wawekezaji wa kibinafsi kutaka kumiliki Kenya Pipeline. Wananchi wanataka kujua: Je, mali yetu ya kitaifa inauzwa siri siri? Hapa ndipo tunahitaji uwazi mtupu kutoka serikalini. Na upande mzuri, mabenki yamependekeza kupunguzwa kwa ushuru wa PAYE kwa asilimia tano ili kupunguza mzigo unaolemea wafanyakazi wetu ambao mishahara yao imekuwa ikifyatuliwa kila kukicha.\n\n[Swahili Summary]\nKwa kifupi: Hakuna Ebola Kenya, EACC imemnasa aliyekuwa mfanyakazi wa ukaguzi kwa vyeti feki vya Sh5.8M, wananchi wanahoji mipango ya kuuza Kenya Pipeline, na mabenki yanapendekeza kupunguzwa kwa ushuru wa PAYE kwa asilimia tano ili kusaidia wafanyakazi.",
-    "voice_note": "Sasa ndugu yangu, karibu kwenye dondoo za Kenya on Record za wiki hii. Wacha nikuambie, kuna mengi yamejiri! Kwanza, ile habari ya eti kuna Ebola Kenya ni uongo mtupu—hakuna kesi hata moja, usipige nduru bure. Pili, EACC imetia mbaroni aliyekuwa mfanyakazi wa Auditor-General aliyetumia vyeti bandia kula shilingi milioni tano nukta nane za umma. Halafu, kuna gumzo kubwa kuhusu wawekezaji kutaka kuchukua Kenya Pipeline, wananchi wanataka kujua ukweli. Lakini habari njema ni kwamba mabenki yamependekeza kukata ushuru wa PAYE kwa asilimia tano ili tupumue kidogo kwenye hii hali ngumu ya kiuchumi. Kaa chonjo, endelea kufuatilia ukweli.",
-    "sms": "Usiibiwe! Usisambaze uvumi wa uongo kuhusu Ebola; hakuna kesi Kenya. Piga vita ufisadi na uthibitishe kila taarifa kabla ya kuamini. Kenya on Record.",
-    "reels": "[Visual: Quick cuts of a scrolling phone showing fake news, then stamped 'FAKE', transitioning to an EACC logo and a bank building]\n\nHost Voice-over:\nUongo mtupu! Eti Ebola iko Kenya? Hiyo ni uongo, hakuna mgonjwa hata mmoja. Lakini hili ni la ukweli: EACC imemnasa aliyekuwa mfanyakazi wa Auditor-General aliyekula milioni tano nukta nane kwa vyeti feki! Wakati huo huo, wananchi wanahoji kuhusu mipango ya kunyakua Kenya Pipeline, huku mabenki yakipendekeza kupunguza ushuru wa PAYE kwa asilimia tano ili mfanyakazi apumue. Jilinde, jueni ukweli na Kenya on Record."
+    "radio": "Sasa, wasikilizaji wenzangu, karibuni kwa Kenya on Record. Mimi ni mtangazaji wenu, na leo tunazungumzia jambo ambalo linagusa kila mmoja wetu nyumbani na sokoni—gharama ya maisha.\n\nUkiangalia TV ama usome magazeti siku hizi, utadhani wanasiasa wetu wako kwenye mashindano ya matusi na vijembe. Bei ya unga imepanda, mafuta yanatugharimu jasho, na huduma za afya zinazidi kuwa ghali, lakini viongozi wetu wana wakati wa kutukana kila mmoja kwenye majukwaa ya kisiasa.\n\nHuu sio wakati wa siasa za kugawanya wananchi ama kutupiana lawama. Wananchi wa kawaida wanataabika kupata mlo mmoja kwa siku. Watoto wetu wanafukuzwa shule kwa sababu ya karo, na wagonjwa wanalala hospitalini bila dawa. Tunataka viongozi wetu waweke kando tofauti zao na kuzingatia jinsi ya kupunguza mzigo huu wa kiuchumi.\n\nWakati mwingine tukikaa kimya, tunawapa ruhusa ya kuendelea kupuuza shida zetu. Sauti yetu iwe moja: Wanasiasa, acheni matusi, leteni suluhu ya gharama ya maisha!\n\n*Kwa kifupi: Viongozi wetu wanapaswa kuacha matusi na kushughulikia bei ya juu ya bidhaa zinazowatesa Wakenya kila siku.*",
+    "voice_note": "Wadau, amkeni kidogo. Hali imekuwa ngumu mtaani, lakini ukiangalia viongozi wetu, wanapoteza muda mwingi kutukanana kwenye mikutano badala ya kushughulikia bei ya unga na mafuta. Sisi kama Wakenya hatuna muda wa kusikiliza kejeli zao; tunataka kuona bei zikishuka na uchumi ukitengemaa. Hebu tuwakumbushe wajibu wao kupitia kura zetu na sauti zetu. Usiibiwe, dai maendeleo!",
+    "sms": "Kenya on Record: Wanasiasa acheni matusi na siasa za vijembe! Wananchi tunataka masuluhisho ya gharama ya juu ya maisha. Usiibiwe, dai uwajibikaji leo.",
+    "reels": "Wakati bei ya unga na mafuta inapanda kila siku, viongozi wetu wanapoteza muda kutukanana kwenye mikutano badala ya kutafuta suluhu. Hii sio kazi tuliyowatuma kufanya. Uchumi wetu unazidi kuzama, na wao wanacheza siasa za majukwaani. Acheni matusi, shughulikeni na gharama ya maisha!"
   },
   "spend_usd": 0.0,
   "revision": 9
