@@ -1287,7 +1287,7 @@
           "published": "2026-10-22"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1317,7 +1317,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Secretary_Rubio_Meets_with_Kenyan_President_(55544313031).jpg",
       "reel": true,
-      "tg_msg": 460
+      "tg_msg": 460,
+      "decided_at": "2026-10-22T11:49:35.752356+03:00"
     }
   ],
   "scripts": {
