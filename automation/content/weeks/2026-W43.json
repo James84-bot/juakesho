@@ -831,7 +831,7 @@
           "published": "2026-10-22"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1218,7 +1218,7 @@
           "published": "2026-10-22"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1374,7 +1374,7 @@
           "published": "2026-10-22"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": [
