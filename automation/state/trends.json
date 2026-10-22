@@ -1,120 +1,10 @@
 {
-  "fetched": "2026-10-22T08:55:17.994043+00:00",
+  "fetched": "2026-10-22T10:40:21.162602+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "lakers vs warriors",
+      "title": "ebola",
       "traffic": "1000+",
-      "news": [
-        {
-          "title": "No LeBron, no problem as Lakers blow out Warriors to open season",
-          "url": "https://www.reuters.com/sports/no-lebron-no-problem-lakers-blow-out-warriors-open-season-2026-10-22/",
-          "source": "Reuters"
-        },
-        {
-          "title": "On opening night, Luka Doncic, Walker Kessler pairing works beautifully",
-          "url": "https://sports.yahoo.com/articles/opening-night-luka-doncic-walker-060044069.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Game Recap: Lakers 127, Warriors 105",
-          "url": "https://www.nba.com/watch/video/game-recap-los-angeles-lakers-127-golden-state-warriors-105",
-          "source": "NBA.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "champions league standings",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Champions League power rankings: PSG remain top – but at what cost? Man United tumble",
-          "url": "https://www.independent.co.uk/sport/football/champions-league-table-standings-power-rankings-b3070522.html",
-          "source": "The Independent"
-        },
-        {
-          "title": "PSG lead Champions League power rankings as Barcelona climb to second",
-          "url": "https://sports.yahoo.com/articles/psg-lead-champions-league-power-144500548.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Champions League Power Rankings before MD3: Who's No. 1?",
-          "url": "https://www.espn.com/soccer/story/_/id/50211589/champions-league-power-rankings-md3-no-1-psg-arsenal-barcelona-bayern-munich",
-          "source": "ESPN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "chelsea news",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "How should Chelsea line up against Spurs?",
-          "url": "https://weaintgotnohistory.sbnation.com/premier-league/173292/how-should-chelsea-line-up-against-spurs",
-          "source": "We Ain't Got No History"
-        },
-        {
-          "title": "Tottenham must break eight-year Chelsea curse and Roberto De Zerbi may just know how",
-          "url": "https://www.football.london/tottenham-hotspur-fc/news/tottenham-must-break-eight-year-34796314",
-          "source": "Football London"
-        },
-        {
-          "title": "Chelsea vs Tottenham: Key statistics and facts | News | Official Site",
-          "url": "https://www.chelseafc.com/en/news/article/chelsea-vs-tottenham-key-statistics-and-facts-26-27",
-          "source": "Chelsea Football Club"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "nz vs ind",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "NZ vs IND 2026/27, NZ vs IND 1st T20I Match Preview - Jetlagged India brace for New Zealand challenge",
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-t20i-1539432/match-preview",
-          "source": "Cricinfo"
-        },
-        {
-          "title": "India vs New Zealand Live Score, 1st T20I: Glenn Phillips, Bevon Jacobs lead New Zealand run charge against India",
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand-live-score-ind-vs-nz-1st-t20i-2026-christchurch-shreyas-iyer-playing-xi-toss-scorecard-live-streaming/liveblog/135107679.cms",
-          "source": "The Times of India"
-        },
-        {
-          "title": "India wins the toss and bowls in the 1st T20 cricket international against New Zealand",
-          "url": "https://www.dailyunion.com/sports/national/india-wins-the-toss-and-bowls-in-the-1st-t20-cricket-international-against-new-zealand/article_b6816288-94e3-555d-b20e-0efe4ef93a8f.html",
-          "source": "Daily Jefferson County Union"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "new zealand vs india",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "NZ vs IND 1st T20I LIVE REPORT - Phillips and Jacobs eye big finish",
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-t20i-1539432/live-match-blog",
-          "source": "Cricinfo"
-        },
-        {
-          "title": "New Zealand vs. India live score, win probability, chances of victory for 1st T20I in Christchurch",
-          "url": "https://www.sportingnews.com/in/cricket/news/new-zealand-india-live-score-win-probability-chances-1st-t20i-christchurch/62dd90273ec5e4c8e907691f",
-          "source": "Sporting News"
-        },
-        {
-          "title": "Live: Black Caps v India - first T20",
-          "url": "https://www.stuff.co.nz/sport/361048917/live-black-caps-v-india-first-t20",
-          "source": "Stuff"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "nigeria ebola case",
-      "traffic": "200+",
       "news": [
         {
           "title": "Ebola has spread from Congo to 4 other countries. A look at where things stand",
@@ -127,31 +17,120 @@
           "source": "BBC"
         },
         {
-          "title": "Nigeria reports Ebola case as outbreak reaches West Africa",
-          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/nigeria-reports-ebola-case-fourth-african-country-affected-by-outbreak-2026-10-21/",
-          "source": "Reuters"
+          "title": "Uganda on the spot as Ebola infections grow in Kenya and Nigeria",
+          "url": "https://www.the-star.co.ke/news/2026-10-22-uganda-on-the-spot-as-ebola-cases-rise-in-kenya-nigeria",
+          "source": "The Star, Kenya"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "ucl results",
+      "title": "lakers vs warriors",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Warriors' Yaxel Lendeborg: 'Lost all respect' for Luka Doncic",
+          "url": "https://www.espn.com/nba/story/_/id/50245902/warriors-yaxel-lendeborg-lost-all-respect-luka-doncic",
+          "source": "ESPN"
+        },
+        {
+          "title": "“This was a great welcome-to-the-NBA game for him. …",
+          "url": "https://sports.yahoo.com/articles/great-welcome-nba-game-him-092855028.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Draymond Green uses Kevin Durant lesson to defend Warriors rookie vs Luka Doncic",
+          "url": "https://basketnews.com/news-257869-draymond-green-uses-kevin-durant-lesson-to-defend-warriors-rookie-vs-luka-doncic.html",
+          "source": "BasketNews.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nz vs ind",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Gluten-Free Diet, No Excuses: Inside Bhuvneshwar Kumar's Quiet Road Back To T20I Team",
+          "url": "https://sports.ndtv.com/cricket/gluten-free-diet-no-excuses-inside-bhuvneshwar-kumars-quiet-road-back-to-t20i-team-12216003",
+          "source": "NDTV Sports"
+        },
+        {
+          "title": "Bhuvi brings a lot of experience to the team – Shreyas Iyer and Mitchell Santner on India’s pace ace",
+          "url": "https://www.royalchallengers.com/rcb-cricket-news/news/bhuvi-brings-a-lot-of-experience-to-the-team-shreyas-iyer-and-mitchell",
+          "source": "Royal Challengers Bengaluru Official Website"
+        },
+        {
+          "title": "India opt to bowl first as Bhuvneshwar Kumar returns in 1st T20I vs New Zealand",
+          "url": "https://thenewsmill.com/2026/10/india-opt-to-bowl-first-as-bhuvneshwar-kumar-returns-in-1st-t20i-vs-new-zealand/",
+          "source": "The News Mill"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nairobi",
       "traffic": "200+",
       "news": [
         {
-          "title": "2026/27 Champions League: All the league phase fixtures and results",
-          "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
-          "source": "UEFA.com"
+          "title": "‘Hii Nairobi ilienda kitambo’: Babu dismisses claims Gachagua wants him to vie for Nairobi Senate seat",
+          "url": "https://www.the-star.co.ke/news/2026-10-22-babu-dismisses-reports-of-senate-switch",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Champions League top scorer: Harry Kane, Erling Haaland part of six-way tie",
-          "url": "https://www.uefa.com/uefachampionsleague/news/02a9-218f8e669a0a-debba167a199-1000--champions-league-top-scorer-harry-kane-erling-haaland-part/",
-          "source": "UEFA.com"
+          "title": "Babu Owino Explains Dropping Out of Nairobi Governor Race After Meeting Gachagua",
+          "url": "https://www.kenyans.co.ke/news/128765-babu-owino-dismisses-claims-dropping-nairobi-governor-bid-after-gachagua-meeting",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Champions League league phase fixtures and results by team",
-          "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-and-results-by-team/",
-          "source": "UEFA.com"
+          "title": "From Babu to Sakaja, Aladwa and Winnie Odinga: Nairobi race crowded ahead of 2027",
+          "url": "https://www.standardmedia.co.ke/article/2001560565/from-babu-to-sakaja-aladwa-and-winnie-odinga-nairobi-race-crowded-ahead-of-2027?utm_source=KenyaMOJA.com",
+          "source": "The Standard"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "formula 1",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Cadillac unveils $222,500 Sergio Perez special-edition ahead of 300th F1 start",
+          "url": "https://www.motorsport.com/f1/news/cadillac-unveils-222500-sergio-perez-special-edition-ahead-of-300th-f1-start/10866891/",
+          "source": "Motorsport.com"
+        },
+        {
+          "title": "Cadillac's Near-Perfect Escalade-V Officially Gets F1-Inspired Makeover For Mexico",
+          "url": "https://carbuzz.com/cadillac-escalade-v-checo-perez-edition-debut/",
+          "source": "CarBuzz"
+        },
+        {
+          "title": "Cadillac’s Rarest Escalade V Yet Honors F1 Driver Checo Perez, And You Can’t Buy One",
+          "url": "https://www.hotcars.com/cadillac-escalade-v-checo-perez-edition/",
+          "source": "HotCars"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "new zealand vs india",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 1st T20I",
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-t20i-1539432/ball-by-ball-commentary",
+          "source": "Cricinfo"
+        },
+        {
+          "title": "First time in history! India bowlers make unwanted record as New Zealand run riot",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/first-time-in-history-india-bowlers-make-unwanted-record-as-new-zealand-run-riot/articleshow/135114643.cms",
+          "source": "The Times of India"
+        },
+        {
+          "title": "India wins the toss and bowls in the 1st T20 cricket international against New Zealand",
+          "url": "https://www.dailyunion.com/sports/national/india-wins-the-toss-and-bowls-in-the-1st-t20-cricket-international-against-new-zealand/article_b6816288-94e3-555d-b20e-0efe4ef93a8f.html",
+          "source": "Daily Jefferson County Union"
         }
       ]
     },
@@ -166,26 +145,30 @@
           "source": "ESPN"
         },
         {
-          "title": "Timberwolves’ new-look roster looks terrifying in season-opening blowout",
-          "url": "https://bringmethesports.com/timberwolves-new-look-roster-looks-terrifying-in-season-opening-blowout",
-          "source": "Bring Me the Sports"
+          "title": "Giannis takes blame for heavy defeat: “I have to be better”",
+          "url": "https://www.eurohoops.net/en/nba-news/2024119/giannis-antetokounmpo-talks-miami-heat-loss-nba/",
+          "source": "Eurohoops"
         },
         {
-          "title": "Giannis Antetokounmpo breaks LeBron James' franchise record in Heat debut",
-          "url": "https://www.sportingnews.com/in/nba/miami-heat/news/giannis-antetokounmpo-lebron-james-heat-debut/0da04c6df9a99b33b8497f7f",
-          "source": "Sporting News"
+          "title": "Game Recap: Timberwolves 131, Heat 106",
+          "url": "https://www.nba.com/watch/video/game-recap-timberwolves-131-heat-106",
+          "source": "NBA.com"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "eva ngigi sarwari",
-      "why": "unsafe: 'Dies'"
+      "title": "odee francis police detention kenya",
+      "why": "unsafe: 'assault'"
     },
     {
-      "title": "levante ud vs athletic bilbao standings",
-      "why": "unsafe: 'Betting'"
+      "title": "king fahd international airport",
+      "why": "unsafe: 'Attack'"
+    },
+    {
+      "title": "eva ngigi sarwari",
+      "why": "unsafe: 'Dies'"
     }
   ],
   "errors": {}
