@@ -1319,6 +1319,20 @@
       "reel": true,
       "tg_msg": 460,
       "decided_at": "2026-10-22T11:49:35.752356+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1022m",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-10-22T14:56:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "BAT Kenya wins a debt dispute with a distributor as commercial cases continue in court.",
+        "County governments owe staff Sh100 billion in deducted pension money that was never remitted."
+      ]
     }
   ],
   "scripts": {

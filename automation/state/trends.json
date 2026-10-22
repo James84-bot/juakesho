@@ -1,47 +1,25 @@
 {
-  "fetched": "2026-10-22T06:06:27.094129+00:00",
+  "fetched": "2026-10-22T08:55:17.994043+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "nigeria ebola case",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Nigeria's first Ebola patient holidayed in Uganda, officials say",
-          "url": "https://www.bbc.com/news/articles/c62kepvg2x9lo",
-          "source": "BBC"
-        },
-        {
-          "title": "Ebola has spread from Congo to 4 other countries. A look at where things stand",
-          "url": "https://www.cnn.com/2026/10/21/health/ebola-kenya-congo-nigeria-uganda-france",
-          "source": "CNN"
-        },
-        {
-          "title": "Uganda on the spot as Ebola infections grow in Kenya and Nigeria",
-          "url": "https://www.the-star.co.ke/news/2026-10-22-uganda-on-the-spot-as-ebola-cases-rise-in-kenya-nigeria",
-          "source": "The Star, Kenya"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "lakers vs warriors",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Lakers, Warriors announce official starters for NBA season opener clash",
-          "url": "https://basketnews.com/news-257846-lakers-warriors-announce-official-starters-for-nba-season-opener-clash.html",
-          "source": "BasketNews.com"
+          "title": "No LeBron, no problem as Lakers blow out Warriors to open season",
+          "url": "https://www.reuters.com/sports/no-lebron-no-problem-lakers-blow-out-warriors-open-season-2026-10-22/",
+          "source": "Reuters"
         },
         {
-          "title": "Luka Dončić with 28/8/7/3 against Warriors",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-22/luka-doncic-with-28-8-7-3-against-warriors",
-          "source": "NBC Sports"
+          "title": "On opening night, Luka Doncic, Walker Kessler pairing works beautifully",
+          "url": "https://sports.yahoo.com/articles/opening-night-luka-doncic-walker-060044069.html",
+          "source": "Yahoo Sports"
         },
         {
-          "title": "Doncic leads Lakers to emphatic opening night blowout win",
-          "url": "https://www.eurohoops.net/en/nba-news/2024121/luka-doncic-scores-28-points-los-angeles-lakers-beat-golden-state-warriors-nba/",
-          "source": "Eurohoops"
+          "title": "Game Recap: Lakers 127, Warriors 105",
+          "url": "https://www.nba.com/watch/video/game-recap-los-angeles-lakers-127-golden-state-warriors-105",
+          "source": "NBA.com"
         }
       ]
     },
@@ -51,48 +29,26 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "Sabah sit 25th in Champions League standings after three rounds",
-          "url": "https://operativmm.az/en/post/sabah-sit-25th-in-champions-league-standings-after-three-rounds/83623",
-          "source": "Operativ Məlumat Mərkəzi"
+          "title": "Champions League power rankings: PSG remain top – but at what cost? Man United tumble",
+          "url": "https://www.independent.co.uk/sport/football/champions-league-table-standings-power-rankings-b3070522.html",
+          "source": "The Independent"
         },
         {
-          "title": "Two Sabah Players Rank Among the Champions League's Top Three in Key Statistics",
-          "url": "https://www.idman.biz/en/news/az-football/162560",
-          "source": "İdman.Biz"
-        },
-        {
-          "title": "Sabah rank second in Champions League discipline stats, goalkeeper stands out",
-          "url": "https://news.az/news/sabah-rank-second-in-champions-league-discipline-stats-goalkeeper-stands-out",
-          "source": "Latest news from Azerbaijan"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "nba",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Exclusive | Luka Dončić is all-in on the Lakers and winning over LA basketball fans",
-          "url": "https://nypost.com/2026/10/21/sports/luka-doncic-reveals-desire-to-retire-with-lakers-and-win-over-fans/",
-          "source": "New York Post"
-        },
-        {
-          "title": "JJ Redick Reacts To NBA GM Survey, Lakers’ ‘Tough To Predict’ Success",
-          "url": "https://sports.yahoo.com/articles/jj-redick-reacts-nba-gm-191207989.html",
+          "title": "PSG lead Champions League power rankings as Barcelona climb to second",
+          "url": "https://sports.yahoo.com/articles/psg-lead-champions-league-power-144500548.html",
           "source": "Yahoo Sports"
         },
         {
-          "title": "Licensable video: Lakers fans pay tribute to LeBron as Doncic ushers in a new era",
-          "url": "https://www.reutersconnect.com/item/lakers-fans-pay-tribute-to-lebron-as-doncic-ushers-in-a-new-era/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzU1MDIxNzUyNjE1MDAx",
-          "source": "Reuters Connect"
+          "title": "Champions League Power Rankings before MD3: Who's No. 1?",
+          "url": "https://www.espn.com/soccer/story/_/id/50211589/champions-league-power-rankings-md3-no-1-psg-arsenal-barcelona-bayern-munich",
+          "source": "ESPN"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "chelsea news",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "How should Chelsea line up against Spurs?",
@@ -100,36 +56,102 @@
           "source": "We Ain't Got No History"
         },
         {
+          "title": "Tottenham must break eight-year Chelsea curse and Roberto De Zerbi may just know how",
+          "url": "https://www.football.london/tottenham-hotspur-fc/news/tottenham-must-break-eight-year-34796314",
+          "source": "Football London"
+        },
+        {
           "title": "Chelsea vs Tottenham: Key statistics and facts | News | Official Site",
           "url": "https://www.chelseafc.com/en/news/article/chelsea-vs-tottenham-key-statistics-and-facts-26-27",
           "source": "Chelsea Football Club"
-        },
-        {
-          "title": "Mike Penders And Pep Chavarria To Start; Jorrel Hato Out: Chelsea Predicted Lineup To Play Tottenham",
-          "url": "https://chelseanews.com/blog/chelsea-predicted-lineup-vs-tottenham/",
-          "source": "Chelsea News"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "uefa",
+      "title": "nz vs ind",
       "traffic": "200+",
       "news": [
         {
-          "title": "Beşiktaş'ın Crystal Palace İle Büyük Buluşması 🦅",
-          "url": "https://www.beyazbelgehaber.com/haber/besiktas-in-crystal-palace-i-le-buyuk-bulusmasi",
-          "source": "https://beyazbelgehaber.com/"
+          "title": "NZ vs IND 2026/27, NZ vs IND 1st T20I Match Preview - Jetlagged India brace for New Zealand challenge",
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-t20i-1539432/match-preview",
+          "source": "Cricinfo"
         },
         {
-          "title": "Beşiktaş Teknik Direktörü Italiano: Kaptan Orkun Kökçü'nün eksikliğini kalite açısından hissediyoruz",
-          "url": "https://www.kibristurk.com/besiktas-teknik-direktoru-italiano-kaptan-orkun-kokcunun-eksikligini-kalite-acisindan-hissediyoruz",
-          "source": "Kıbrıs Türk Haber"
+          "title": "India vs New Zealand Live Score, 1st T20I: Glenn Phillips, Bevon Jacobs lead New Zealand run charge against India",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand-live-score-ind-vs-nz-1st-t20i-2026-christchurch-shreyas-iyer-playing-xi-toss-scorecard-live-streaming/liveblog/135107679.cms",
+          "source": "The Times of India"
         },
         {
-          "title": "İlk 8 için kazanmalıyız",
-          "url": "https://www.fotomac.com.tr/besiktas/2026/10/22/ilk-8-icin-kazanmaliyiz",
-          "source": "Fotomaç"
+          "title": "India wins the toss and bowls in the 1st T20 cricket international against New Zealand",
+          "url": "https://www.dailyunion.com/sports/national/india-wins-the-toss-and-bowls-in-the-1st-t20-cricket-international-against-new-zealand/article_b6816288-94e3-555d-b20e-0efe4ef93a8f.html",
+          "source": "Daily Jefferson County Union"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "new zealand vs india",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "NZ vs IND 1st T20I LIVE REPORT - Phillips and Jacobs eye big finish",
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-t20i-1539432/live-match-blog",
+          "source": "Cricinfo"
+        },
+        {
+          "title": "New Zealand vs. India live score, win probability, chances of victory for 1st T20I in Christchurch",
+          "url": "https://www.sportingnews.com/in/cricket/news/new-zealand-india-live-score-win-probability-chances-1st-t20i-christchurch/62dd90273ec5e4c8e907691f",
+          "source": "Sporting News"
+        },
+        {
+          "title": "Live: Black Caps v India - first T20",
+          "url": "https://www.stuff.co.nz/sport/361048917/live-black-caps-v-india-first-t20",
+          "source": "Stuff"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nigeria ebola case",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Ebola has spread from Congo to 4 other countries. A look at where things stand",
+          "url": "https://www.cnn.com/2026/10/21/health/ebola-kenya-congo-nigeria-uganda-france",
+          "source": "CNN"
+        },
+        {
+          "title": "Nigeria's first Ebola patient holidayed in Uganda, officials say",
+          "url": "https://www.bbc.com/news/articles/c62kepvg2x9lo",
+          "source": "BBC"
+        },
+        {
+          "title": "Nigeria reports Ebola case as outbreak reaches West Africa",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/nigeria-reports-ebola-case-fourth-african-country-affected-by-outbreak-2026-10-21/",
+          "source": "Reuters"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ucl results",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "2026/27 Champions League: All the league phase fixtures and results",
+          "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a/",
+          "source": "UEFA.com"
+        },
+        {
+          "title": "Champions League top scorer: Harry Kane, Erling Haaland part of six-way tie",
+          "url": "https://www.uefa.com/uefachampionsleague/news/02a9-218f8e669a0a-debba167a199-1000--champions-league-top-scorer-harry-kane-erling-haaland-part/",
+          "source": "UEFA.com"
+        },
+        {
+          "title": "Champions League league phase fixtures and results by team",
+          "url": "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-and-results-by-team/",
+          "source": "UEFA.com"
         }
       ]
     },
@@ -149,31 +171,9 @@
           "source": "Bring Me the Sports"
         },
         {
-          "title": "Giannis takes blame for heavy defeat: “I have to be better”",
-          "url": "https://www.eurohoops.net/en/nba-news/2024119/giannis-antetokounmpo-talks-miami-heat-loss-nba/",
-          "source": "Eurohoops"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "livescore today",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Man Utd transfer news: Michael Carrick opens door to January signings ahead of planned defensive rebuild",
-          "url": "https://www.skysports.com/football/news/13599969/man-utd-transfer-news-michael-carrick-opens-door-to-january-signings-ahead-of-planned-defensive-rebuild",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Inside Man Utd’s plans to rip up their leaky defence",
-          "url": "https://inews.co.uk/sport/football/man-utd-transfer-targets-lewis-hall-adrien-truffert-4839572",
-          "source": "The i Paper"
-        },
-        {
-          "title": "Manchester United set to return for Premier League star",
-          "url": "https://onefootball.com/en/news/manchester-united-set-to-return-for-premier-league-star-43647474",
-          "source": "OneFootball"
+          "title": "Giannis Antetokounmpo breaks LeBron James' franchise record in Heat debut",
+          "url": "https://www.sportingnews.com/in/nba/miami-heat/news/giannis-antetokounmpo-lebron-james-heat-debut/0da04c6df9a99b33b8497f7f",
+          "source": "Sporting News"
         }
       ]
     }
