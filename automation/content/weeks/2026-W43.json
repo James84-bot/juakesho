@@ -402,7 +402,8 @@
       "video_source": "https://pixabay.com/videos/id-282086/",
       "reel": true,
       "tg_msg": 378,
-      "decided_at": "2026-10-19T23:18:45.591589+03:00"
+      "decided_at": "2026-10-19T23:18:45.591589+03:00",
+      "fresh_checked": "2026-10-23T10:01:28.890323+03:00"
     },
     {
       "id": "2026-w43-d7-glasspoll-r10",
@@ -1512,7 +1513,7 @@
           "published": "2026-10-23"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1542,7 +1543,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:John_Mbadi_Ng%E2%80%99ongo_official_portrait.jpg",
       "reel": true,
-      "tg_msg": 482
+      "tg_msg": 482,
+      "decided_at": "2026-10-23T09:58:18.317867+03:00"
     }
   ],
   "scripts": {
