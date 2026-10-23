@@ -1471,13 +1471,85 @@
         "note": "The post relies on a generic stock quote and a vague stock photo instead of hard facts from the current news cycle."
       },
       "drafted_at": "2026-10-22T21:11:34.514475+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1023",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "The National Treasury plans to scrap the *Sh2,400* monthly PAYE tax relief for all salaried workers.",
+      "fact": "Personal relief currently cuts Sh2,400 every month from income tax for every employed Kenyan.",
+      "source": "Kenyans.co.ke, 2026-10-23",
+      "trend": "tax",
+      "demand": 10,
+      "message": "Scrapping PAYE personal relief will raise income taxes by Sh2,400 every month for all salaried Kenyans.",
+      "action": "Send your comments on the tax plan to the National Treasury: ps@treasury.go.ke",
+      "photo_query": "National Treasury Nairobi",
+      "event_query": "National Treasury Nairobi",
+      "who": "Treasury CS John Mbadi",
+      "where": "National",
+      "when": "23 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Your monthly take-home pay will reduce by at least Sh2,400 as income tax deductions rise.",
+      "beats": [
+        "The Treasury plans to scrap the *Sh2,400* monthly PAYE tax relief.",
+        "Personal relief currently saves workers *Sh28,800* in tax each year.",
+        "Scrapping relief will reduce *take-home pay* for all formal employees.",
+        "Kenyans demand: the Treasury *drops* the plan to scrap relief.",
+        "Submit your views to the *Treasury* before the bill is tabled."
+      ],
+      "caption": "The National Treasury plans to scrap PAYE personal relief for all workers.\nThat means an extra Sh2,400 deduction from your payslip every month.\nKenyans demand: the Treasury withdraws the plan to raise employee taxes.\nHow much more tax can your payslip handle?\n\n#PAYE #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-23T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "Treasury to Scrap PAYE Relief for Employees in New Tax Plan",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbjg1Y1RtY2dvbHBnekg0aDZoWjBlY3RSVThxTThhdEEyOGNNcDhndzRpVWxOeGQ4NlJfeVdCb01GdUx1aXFVZnVaSmpDLVE5c3pVMlJ5MURGT0gxOE9TM0Vid0FHeGVla04tWFBpeG9PejE2V3BwLVJQOVcwMEwzdFM5bnRrNTNEaVdHX2VsdXRMdXpWQlFtdHhlWlBKSlZ4QkRqcnM4cEdlcWc?oc=5",
+          "published": "2026-10-23"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 10,
+        "action": 9,
+        "fair": 8,
+        "impact": 9,
+        "avg": 8.5,
+        "note": "The post clearly connects the Treasury tax proposal to the exact loss on a worker's monthly payslip."
+      },
+      "drafted_at": "2026-10-23T09:41:54.489251+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1023-photo.jpg",
+      "photo_credit": "File photo: Government of Kenya / Wikimedia Commons, Public domain",
+      "photo_kind": "file",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:John_Mbadi_Ng%E2%80%99ongo_official_portrait.jpg",
+      "reel": true,
+      "tg_msg": 482
     }
   ],
   "scripts": {
-    "radio": "Sasa, wasikilizaji wenzangu, karibuni kwa Kenya on Record. Mimi ni mtangazaji wenu, na leo tunazungumzia jambo ambalo linagusa kila mmoja wetu nyumbani na sokoni—gharama ya maisha.\n\nUkiangalia TV ama usome magazeti siku hizi, utadhani wanasiasa wetu wako kwenye mashindano ya matusi na vijembe. Bei ya unga imepanda, mafuta yanatugharimu jasho, na huduma za afya zinazidi kuwa ghali, lakini viongozi wetu wana wakati wa kutukana kila mmoja kwenye majukwaa ya kisiasa.\n\nHuu sio wakati wa siasa za kugawanya wananchi ama kutupiana lawama. Wananchi wa kawaida wanataabika kupata mlo mmoja kwa siku. Watoto wetu wanafukuzwa shule kwa sababu ya karo, na wagonjwa wanalala hospitalini bila dawa. Tunataka viongozi wetu waweke kando tofauti zao na kuzingatia jinsi ya kupunguza mzigo huu wa kiuchumi.\n\nWakati mwingine tukikaa kimya, tunawapa ruhusa ya kuendelea kupuuza shida zetu. Sauti yetu iwe moja: Wanasiasa, acheni matusi, leteni suluhu ya gharama ya maisha!\n\n*Kwa kifupi: Viongozi wetu wanapaswa kuacha matusi na kushughulikia bei ya juu ya bidhaa zinazowatesa Wakenya kila siku.*",
-    "voice_note": "Wadau, amkeni kidogo. Hali imekuwa ngumu mtaani, lakini ukiangalia viongozi wetu, wanapoteza muda mwingi kutukanana kwenye mikutano badala ya kushughulikia bei ya unga na mafuta. Sisi kama Wakenya hatuna muda wa kusikiliza kejeli zao; tunataka kuona bei zikishuka na uchumi ukitengemaa. Hebu tuwakumbushe wajibu wao kupitia kura zetu na sauti zetu. Usiibiwe, dai maendeleo!",
-    "sms": "Kenya on Record: Wanasiasa acheni matusi na siasa za vijembe! Wananchi tunataka masuluhisho ya gharama ya juu ya maisha. Usiibiwe, dai uwajibikaji leo.",
-    "reels": "Wakati bei ya unga na mafuta inapanda kila siku, viongozi wetu wanapoteza muda kutukanana kwenye mikutano badala ya kutafuta suluhu. Hii sio kazi tuliyowatuma kufanya. Uchumi wetu unazidi kuzama, na wao wanacheza siasa za majukwaani. Acheni matusi, shughulikeni na gharama ya maisha!"
+    "radio": "Good evening and welcome back to Kenya on Record.\n\nIf you earn a salary in this country, you already know the pinch at the end of the month. Between statutory deductions, housing levy, and healthcare contributions, take-home pay has been shrinking steadily. But there is a proposal on the table that demands our collective attention: the scrapping of PAYE personal relief.\n\nCurrently, the personal relief of Sh2,400 per month is granted to every resident individual. It is not a bonus or a loophole; it is a basic tax cushion designed to shield the first layer of your hard-earned income. Scrapping it means your income tax liability automatically increases by Sh2,400 every single month. That is Sh28,800 taken out of your pocket every year. For low and middle-income workers, that is not small change—it is school fees, transport, or weeks of groceries.\n\nTrue tax reform should focus on expanding the base and eliminating wasteful public spending, not squeezing the small pool of formally employed citizens whose taxes are deducted before their pay even hits the bank.\n\nKwa ufupi: Mpango wa kuondoa unafuu wa kodi wa kibinafsi, yaani personal relief, utaongeza kodi ya kila mfanyakazi kwa shilingi elfu mbili na mia nne kila mwezi. Huo ni mzigo mkubwa sana kwa wananchi ambao tayari wamelemewa na gharama ya maisha. Ni lazima tuwaulize wabunge wetu: mbona mzigo mzito uendelee kubebeshwa wale wachache wanaolipa kodi tayari?\n\nThis is Kenya on Record. Stay informed, stay engaged.",
+    "voice_note": "Habari zenu. Here is something every salaried Kenyan needs to hear this week. There is a serious proposal being pushed to scrap the PAYE personal relief. Right now, that Sh2,400 monthly relief is the only small buffer protecting your salary from immediate, aggressive tax bands. If it is scrapped, every single person on a formal payroll will pay an extra Sh2,400 in income tax every month. That is nearly Sh29,000 lost from your household budget every year—money meant for school fees, rent, or basic food. We are repeatedly told that the government needs revenue, but milking the compliant formal sector while corruption and waste continue unchecked is unacceptable. Please share this note in your work and family groups. Find out where your MP stands on this before it quietly passes into law. This is Kenya on Record.",
+    "sms": "Usiibiwe: Scrapping the Sh2,400 PAYE personal relief cuts take-home pay for every formal worker. Check your payslip deductions and hold your MP accountable.",
+    "reels": "If you receive a formal payslip in Kenya, listen closely. The proposal to scrap PAYE personal relief is not an abstract tax reform—it is an outright pay cut of 2,400 shillings every month for every salaried worker. That is nearly 29,000 shillings gone each year, hitting low and middle earners the hardest. Widening the tax base should never mean squeezing the already compliant. Know the numbers, and hold your leaders accountable. This is Kenya on Record."
   },
   "spend_usd": 0.0,
   "revision": 9
