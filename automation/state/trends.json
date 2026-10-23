@@ -1,78 +1,32 @@
 {
-  "fetched": "2026-10-23T17:51:53.920779+00:00",
+  "fetched": "2026-10-23T21:28:33.594306+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "al nassr",
-      "traffic": "500+",
+      "title": "ipswich town vs nottm forest",
+      "traffic": "20000+",
       "news": [
         {
-          "title": "Footage: ‘Cristiano Ronaldo is credited with a stolen goal’",
-          "url": "https://www.goal.com/en/news/footage-cristiano-ronaldo-is-credited-with-a-stolen-goal/bltd52bf4ebe5525aa2",
-          "source": "Goal.com"
+          "title": "Ipswich Town vs Nottingham Forest: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmn0628p5rkyt",
+          "source": "BBC"
         },
         {
-          "title": "Al-Faisaly FC 1-3 Al-Nassr: Ronaldo’s 982nd goal moves Postecoglou’s men level at top",
-          "url": "https://www.101greatgoals.com/match-reports/al-faisaly-fc-1-3-al-nassr-ronaldos-982nd-goal-moves-postecoglous-men-level-at-top/",
-          "source": "101 Great Goals"
+          "title": "Ipswich 1-1 Nottingham Forest: Julio Enciso cancels out Neco Williams opener amid VAR controversy",
+          "url": "https://www.skysports.com/football/news/13599227/ipswich-1-1-nottingham-forest-julio-enciso-cancels-out-neco-williams-opener-amid-var-controversy",
+          "source": "Sky Sports"
         },
         {
-          "title": "Video: \"A legend we learn from\": Al-Hamdan praises Ronaldo after awarding him the Al-Faisaly prize",
-          "url": "https://www.livescore.com/en/news/football/more/video-a-legend-we-learn-from-al-hamdan-praises-ronaldo-after-awarding-him-the-al-faisaly-prize-goal/",
-          "source": "LiveScore"
+          "title": "Ipswich v Nottingham Forest: Back an away win with goals at both ends",
+          "url": "https://betting.betfair.com/football/premier-league/ipswich-v-nottingham-forest-betting-tips-predictions-bet-builder-best-bets-151026-200.html",
+          "source": "Betfair"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "citizen.digital",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Wetangula: Sifuna too green for presidency",
-          "url": "https://capitalfm.africa/wetangula-sifuna-too-green-for-presidency/",
-          "source": "Capital FM Africa"
-        },
-        {
-          "title": "Wetang’ula tells first-time presidential hopefuls to gain experience before eyeing State House",
-          "url": "https://www.the-star.co.ke/news/2026-10-23-wetangula-kenya-is-not-ready-for-inexperienced-president",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "No First-Time MP Has Become President on His First Attempt - Wetang'ula on Sifuna's Bid",
-          "url": "https://nairobileo.co.ke/news/article/31015/no-first-time-mp-has-become-president-on-his-first-attempt-wetangula-on-sifunas-bid",
-          "source": "Nairobi Leo"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "citizen tv",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Kanja’s warning to police after Citizen TV journalist’s protest ordeal",
-          "url": "https://www.the-star.co.ke/news/2026-10-22-kanjas-warning-to-police-after-journalists-protest-ordeal",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "IPOA launches probe into Citizen TV journalist Francis Ode's arrest",
-          "url": "https://www.standardmedia.co.ke/national/article/2001560655/ipoa-launches-probe-into-citizen-tv-journalist-francis-odes-arrest",
-          "source": "The Standard"
-        },
-        {
-          "title": "Francis Ode arrest: NPS vows to cooperate with IPOA on investigations",
-          "url": "https://citizen.digital/article/francis-ode-arrest-nps-vows-to-cooperate-with-ipoa-on-investigations-n392528",
-          "source": "Citizen Digital"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "vincent kompany",
-      "traffic": "100+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Vincent Kompany: Bayern Munich manager taken to hospital after collapsing",
@@ -80,79 +34,140 @@
           "source": "BBC"
         },
         {
-          "title": "Air ambulance on Bayern Munich training pitch: serious concerns for Vincent Kompany",
-          "url": "https://www.goal.com/en/news/air-ambulance-on-bayern-munich-training-pitch-serious-concerns-for-vincent-kompany/blt8623d22c56785e02",
+          "title": "Vincent Kompany taken to hospital after collapsing at Bayern training",
+          "url": "https://www.theguardian.com/football/2026/oct/23/vincent-kompany-hospital-collapsing-bayern-munich-training",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Vincent Kompany taken to hospital after emergency doctor called to Bayern Munich training ground",
+          "url": "https://www.goal.com/en-ke/news/vincent-kompany-bayern-munich-hospital-emergency-doctor-sabener-strasse/blt93478999a2f1f234",
           "source": "Goal.com"
-        },
-        {
-          "title": "Vincent Kompany: Bayern Munich boss taken to hospital after collapsing at training ground",
-          "url": "https://www.skysports.com/football/news/13602757/vincent-kompany-bayern-munich-boss-taken-to-hospital-after-collapsing-at-training-ground",
-          "source": "Sky Sports"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "widzew lodz gornik zabrze",
-      "traffic": "100+",
+      "title": "orlando pirates",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Skład Widzewa Łódź na mecz z Górnikiem Zabrze - Widzew Łódź - WWW",
-          "url": "https://www.widzew.com/pl/w/sklad-widgor-2026",
-          "source": "Widzew Łódź"
+          "title": "Orlando Pirates vs African Stars LIVE Score Updates in CAF Champions League Match",
+          "url": "https://www.vavel.com/en-us/soccer/2026/10/23/1276494-orlando-pirates-vs-african-stars-live-score-caf-champions-league.html",
+          "source": "VAVEL.com"
         },
         {
-          "title": "Stolarski docenił trenera z Ekstraklasy. \"Patrzę na jego pracę z uznaniem\"",
-          "url": "https://www.goal.pl/ekstraklasa/stolarski-docenil-trenera-z-ekstraklasy-patrze-na-jego-prace-z-uznaniem/",
-          "source": "Goal.pl"
+          "title": "Orlando Pirates | Orlando Pirates Or 2026 27 Or Caf Or Pre Game Press Or Thu 22 Oct Oct Or Vs African Stars 2 Nd Leg",
+          "url": "https://vodacomsoccer.com/video/play/orlando-pirates-or-2026-27-or-caf-or-pre-game-press-or-thu-22-oct-oct-or-vs-african-stars-2-nd-leg",
+          "source": "Vodacom Soccer"
         },
         {
-          "title": "Czy wyjazdowa siódemka okaże się dla Górnika Zabrze szczęśliwa? \"Nie ma już dużej różnicy pomiędzy tym, jak gramy w domu, a na wyjeździe\"",
-          "url": "https://roosevelta81.pl/czy-wyjazdowa-siodemka-okaze-sie-dla-gornika-zabrze-szczesliwa-nie-ma-juz-duzej-roznicy-pomiedzy-tym-jak-gramy-w-domu-a-na-wyjezdzie/",
-          "source": "Roosevelta 81"
+          "title": "Pirates coach reveals close relationship with Arsene Wenger",
+          "url": "https://www.africaninsider.com/sport/pirates-coach-reveals-close-relationship-arsene-wenger/",
+          "source": "African Insider"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "citizen live",
+      "title": "alavés vs málaga",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Alavés arruinó el sueño de Málaga con un empate agónico",
+          "url": "https://es-us.noticias.yahoo.com/deportes/alav%C3%A9s-arruin%C3%B3-sue%C3%B1o-m%C3%A1laga-empate-205400894.html",
+          "source": "Yahoo"
+        },
+        {
+          "title": "Gol de Adrián Niño (0-1) en el Alavés 1-1 Málaga CF",
+          "url": "https://www.marca.com/futbol/primera-division/2026/10/23/gol-adrian-nino-0-1-alaves-1-1-malaga-cf-video.html",
+          "source": "MARCA"
+        },
+        {
+          "title": "Alavés empató 1-1 con Málaga, por la Liga de España",
+          "url": "https://www.lanacion.com.ar/deportes/canchallena/alaves-empato-1-1-con-malaga-por-la-liga-de-espana-nid23102026/",
+          "source": "La Nación"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "antonio conte",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Manchester United: Antonio Conte dismisses 'unfounded' speculation",
+          "url": "https://www.bbc.com/sport/football/articles/cmvg6j8jezn7o",
+          "source": "BBC"
+        },
+        {
+          "title": "Conte dismisses reports of Man United takeover with Carrick’s job uncertain",
+          "url": "https://www.aljazeera.com/sports/2026/10/23/conte-dismisses-reports-of-man-united-takeover-with-carricks-job-uncertain",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": "Antonio Conte breaks silence on Juventus and Manchester United links to deny 'baseless' negotiation rumours",
+          "url": "https://www.goal.com/en-ke/news/antonio-conte-juventus-manchester-united-rumours/bltf7e1fb8005285e8c",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bucks vs bulls",
       "traffic": "100+",
       "news": [
         {
-          "title": "MPs pull plug on livestreaming of election results",
-          "url": "https://www.standardmedia.co.ke/national/article/2001560688/mps-pull-plug-on-livestreaming-of-election-results",
-          "source": "The Standard"
+          "title": "Milwaukee Bucks host Chicago Bulls in home opener on Television Wisconsin",
+          "url": "https://www.channel3000.com/news/milwaukee-bucks-host-chicago-bulls-in-home-opener-on-television-wisconsin/article_f4c2f2a5-85d4-4e06-9f63-84f00575132e.html",
+          "source": "Channel 3000"
         },
         {
-          "title": "National Assembly passes Elections Bill removing mandatory livestreaming of poll results",
-          "url": "https://citizen.digital/article/national-assembly-passes-elections-bill-removing-mandatory-livestreaming-of-poll-results-n392589",
-          "source": "Citizen Digital"
+          "title": "NBA Matchups: October 23",
+          "url": "https://establishtherun.com/nba-matchups-october-23-2/",
+          "source": "Establish The Run"
         },
         {
-          "title": "Muturi, Odhiambo oppose removal of election livestreaming requirement",
-          "url": "https://www.the-star.co.ke/news/2026-10-23-muturi-odhiambo-oppose-removal-of-election-livestreaming-requirement",
-          "source": "The Star, Kenya"
+          "title": "@#)𝘏𝘌𝘙𝘌'𝘚!!(* 𝘞𝘈𝘠 𝘛𝘖 𝘞𝘈𝘛𝘊𝘏 Bucks vs Bucks Live free tv! 24 October 2026",
+          "url": "https://www.town.shodoshima.lg.jp/section/VR_choseiyoran/shodoshima349.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3ZlbXBpcmVzLmdpdGh1Yi5pby9UZXJhL2h0cy54bWwiLz48L2tycGFubz4=&id=bucks-vs-live-free-cbs-sports-opokt",
+          "source": "小豆島町"
         }
-      ],
-      "civic": true
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "torino",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "La Maratona attacca: \"Juric, uomo di me**a\"",
+          "url": "https://www.toronews.net/toro/la-maratona-attacca-juric-uomo-di-mea/",
+          "source": "Toro News"
+        },
+        {
+          "title": "I Top&Flop di Torino-Monza",
+          "url": "https://www.torinocronaca.it/news/sport/717112/i-top-flop-di-torino-monza.html",
+          "source": "Torino Cronaca"
+        },
+        {
+          "title": "Serie A: Torino-Monza 1-0 DIRETTA e FOTO",
+          "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/10/23/serie-a-torino-monza-1-0-diretta-e-foto_3103b24d-f062-443f-85de-251baa8873d4.html",
+          "source": "ANSA"
+        }
+      ]
     }
   ],
   "dropped": [
     {
-      "title": "al qadsiah vs al-hilal",
-      "why": "unsafe: 'betting'"
-    },
-    {
-      "title": "ethiopia",
-      "why": "unsafe: 'war'"
-    },
-    {
-      "title": "bolton vs middlesbrough",
+      "title": "brest fc",
       "why": "unsafe: 'Bet'"
     },
     {
-      "title": "sochaux vs annecy",
-      "why": "banned: violence"
+      "title": "stuttgart fc",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "coventry vs fulham",
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
