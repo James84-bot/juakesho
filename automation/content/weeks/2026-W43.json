@@ -1513,7 +1513,7 @@
           "published": "2026-10-23"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1544,7 +1544,11 @@
       "photo_source": "https://commons.wikimedia.org/wiki/File:John_Mbadi_Ng%E2%80%99ongo_official_portrait.jpg",
       "reel": true,
       "tg_msg": 482,
-      "decided_at": "2026-10-23T09:58:18.317867+03:00"
+      "decided_at": "2026-10-23T09:58:18.317867+03:00",
+      "published_at": "2026-10-23T12:48:18.947458+03:00",
+      "ig_id": "17974966836152267",
+      "fb_id": "1663678428652100",
+      "story_id": "17866829148675248"
     },
     {
       "id": "2026-w43-hot-1023m",
