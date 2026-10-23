@@ -1,33 +1,10 @@
 {
-  "fetched": "2026-10-23T10:32:10.644666+00:00",
+  "fetched": "2026-10-23T11:29:18.059621+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "tax",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "1.7m workers to get tax free salary, top earners pay more",
-          "url": "https://www.businessdailyafrica.com/bd/economy/1-7m-workers-to-get-tax-free-salary-top-earners-pay-more-5642252",
-          "source": "Business Daily"
-        },
-        {
-          "title": "High earners set to pay more as 362,000 workers spared from taxes",
-          "url": "https://nation.africa/kenya/business/high-earners-set-to-pay-more-as-362-000-workers-spared-from-taxes-5642342",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "PAYE changes: Scrapping Ksh.2,400 relief raises questions over employees’ take-home pay",
-          "url": "https://citizen.digital/article/paye-changes-scrapping-ksh2400-relief-raises-questions-over-employees-take-home-pay-n392579",
-          "source": "Citizen Digital"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "universities academic staff union",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Students threaten to join lecturers’ strike",
@@ -35,14 +12,14 @@
           "source": "Daily Nation"
         },
         {
+          "title": "Lecturers’ strike enters fourth week as unions petition Parliament",
+          "url": "https://www.the-star.co.ke/news/2026-10-23-lecturers-strike-enters-fourth-week-as-unions-petition-parliament",
+          "source": "The Star, Kenya"
+        },
+        {
           "title": "Parliament urges government to end 20-day university lecturers’ strike",
           "url": "https://citizen.digital/article/parliament-urges-government-to-end-20-day-university-lecturers-strike-n392548",
           "source": "Citizen Digital"
-        },
-        {
-          "title": "Varsities' mess: Broken promises, students in limbo as strike drags on",
-          "url": "https://www.standardmedia.co.ke/article/2001560684/varsities-mess-broken-promises-students-in-limbo-as-strike-drags-on",
-          "source": "The Standard"
         }
       ],
       "civic": true
@@ -58,36 +35,36 @@
           "source": "L'Équipe"
         },
         {
-          "title": "Ligue 1. « On veut amener de l’alternance », le Stade Brestois veut retrouver son allant offensif contre Nice",
-          "url": "https://quimper.maville.com/sport/detail_-ligue-1-on-veut-amener-de-l-alternance-le-stade-brestois-veut-retrouver-son-allant-offensif-contre-nice_dep-7541060_actu.Htm",
-          "source": "maville.com"
+          "title": "Les arguments pour valider la candidature d’Ajorque en équipe de France",
+          "url": "https://www.sofoot.com/articles/les-vrais-bons-arguments-pour-selectionner-ludovic-ajorque-en-equipe-de-france",
+          "source": "SO FOOT.com"
         },
         {
-          "title": "Dans la tempête en déplacement, l’OGC Nice espère décoller à Brest",
-          "url": "https://www.nicematin.com/sports/football/dans-la-tempete-en-deplacement-l-ogc-nice-espere-decoller-a-brest-10744742",
-          "source": "Nice-Matin"
+          "title": "Stade Brestois - OGC Nice. Vers un troisième match de suite avec le même onze... Les compositions probables",
+          "url": "https://quimper.maville.com/sport/detail_-stade-brestois-ogc-nice-vers-un-troisieme-match-de-suite-avec-le-meme-onze-les-compositions-probables_region-7541006_actu.Htm",
+          "source": "maville.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "nba",
+      "title": "76ers vs cavaliers",
       "traffic": "200+",
       "news": [
         {
-          "title": "NBA All-Breakout Team, starring Cooper Flagg, Dylan Harper and … Leonard Miller?",
-          "url": "https://www.nytimes.com/athletic/7713043/2026/10/23/nba-breakout-players-cooper-flagg-dylan-harper/",
-          "source": "The New York Times"
+          "title": "76ers 114-106 Cavaliers (Oct 22, 2026) Game Recap",
+          "url": "https://www.espn.com/nba/recap?gameId=401909093",
+          "source": "ESPN"
         },
         {
-          "title": "7 NBA Players Who Can Be First-Time All-Stars",
-          "url": "https://bleacherreport.com/articles/25509698-7-nba-players-who-can-be-first-time-all-stars",
-          "source": "Bleacher Report"
+          "title": "LeBron James’ 76ers rally from 29-point deficit to beat Cavaliers",
+          "url": "https://www.aa.com.tr/en/sports/lebron-james-76ers-rally-from-29-point-deficit-to-beat-cavaliers/4098361",
+          "source": "Anadolu Ajansı"
         },
         {
-          "title": "The Five Players Who Will Define the 2026-27 NBA Season",
-          "url": "https://www.si.com/nba/five-players-who-will-define-the-2026-27-nba-season",
-          "source": "Sports Illustrated"
+          "title": "LeBron James grateful for Philadelphia debut, calls boos 'amazing'",
+          "url": "https://www.reuters.com/sports/lebron-james-grateful-philadelphia-debut-calls-boos-amazing--fldm-2026-10-23/",
+          "source": "Reuters"
         }
       ]
     },
@@ -107,11 +84,56 @@
           "source": "Reuters"
         },
         {
-          "title": "Mbadi defends KPC share sale, warns Ndindi Nyoro against scaring off investors",
-          "url": "https://citizen.digital/article/mbadi-defends-kpc-share-sale-warns-ndindi-nyoro-against-scaring-off-investors-n392546",
+          "title": "Nyoro alleges Ruto, Dangote plot to take over majority stake in Kenya Pipeline Company",
+          "url": "https://citizen.digital/article/nyoro-alleges-ruto-dangote-plot-to-take-majority-stake-in-kenya-pipeline-company-n392550",
           "source": "Citizen Digital"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "ethics and anti-corruption commission",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "EACC vice chairperson champions asset recovery as a pathway to public trust",
+          "url": "https://www.the-star.co.ke/news/2026-10-23-eacc-asset-recovery-key-to-rebuilding-public-trust",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Walk the talk on rebuilding trust, Mudavadi tells Nairobi summit",
+          "url": "https://nation.africa/kenya/news/walk-the-talk-on-rebuilding-trust-mudavadi-tells-nairobi-summit-5642334",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "How public trust in leaders can weaken accountability",
+          "url": "https://www.standardmedia.co.ke/nairobi/article/2001560656/how-public-trust-in-leaders-can-weaken-accountability",
+          "source": "The Standard"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "transfer pricing",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Software Payments, Critical Minerals: Transfer Pricing Report",
+          "url": "https://news.bloombergtax.com/daily-tax-report/software-payments-critical-minerals-transfer-pricing-report",
+          "source": "Bloomberg Tax"
+        },
+        {
+          "title": "KRA tightens grip on cross-border company transactions to curb transfer pricing",
+          "url": "https://www.the-star.co.ke/business/2026-10-22-kra-tightens-grip-on-cross-border-company-transactions-to-curb-transfer-pricing",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Kenya issues new Income Tax (Transfer Pricing) Rules, 2026",
+          "url": "https://www.cliffedekkerhofmeyr.com/en/news/publications/2026/Kenya/Tax-Exchange-Control/tax-and-exchange-control-alert-22-october-Kenya-issues-new-Income-Tax-Transfer-Pricing-Rules-2026",
+          "source": "Cliffe Dekker Hofmeyr"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -137,7 +159,7 @@
     },
     {
       "geo": "KE",
-      "title": "daily nation",
+      "title": "kenyans",
       "traffic": "100+",
       "news": [
         {
@@ -166,10 +188,6 @@
     {
       "title": "thunder vs nuggets",
       "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "76ers vs cavaliers",
-      "why": "unsafe: 'Fire'"
     }
   ],
   "errors": {}
