@@ -1,174 +1,158 @@
 {
-  "fetched": "2026-10-23T15:56:26.520908+00:00",
+  "fetched": "2026-10-23T17:51:53.920779+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "al-faisaly vs al-nassr",
-      "traffic": "5000+",
+      "title": "al nassr",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Cristiano Ronaldo wins and scores: he is up to 982 goals in official matches",
-          "url": "https://www.goal.com/en/lists/cristiano-ronaldo-wins-and-scores-he-is-up-to-982-goals-in-official-matches/blt80a1151c9db2718e",
+          "title": "Footage: ‘Cristiano Ronaldo is credited with a stolen goal’",
+          "url": "https://www.goal.com/en/news/footage-cristiano-ronaldo-is-credited-with-a-stolen-goal/bltd52bf4ebe5525aa2",
           "source": "Goal.com"
         },
         {
-          "title": "On the way to Al-Somah and Al-Dossari: Ronaldo breaks Al-Hilal's legend's record with a controversial goal",
-          "url": "https://www.livescore.com/en/news/football/more/on-the-way-to-al-somah-and-al-dossari-ronaldo-breaks-al-hilals-legends-record-with-a-controversial-goal-goal/",
-          "source": "LiveScore"
+          "title": "Al-Faisaly FC 1-3 Al-Nassr: Ronaldo’s 982nd goal moves Postecoglou’s men level at top",
+          "url": "https://www.101greatgoals.com/match-reports/al-faisaly-fc-1-3-al-nassr-ronaldos-982nd-goal-moves-postecoglous-men-level-at-top/",
+          "source": "101 Great Goals"
         },
         {
-          "title": "Ronaldo 18 from 1000 as Al-Nassr win 3-1",
-          "url": "https://www.sofascore.com/news/cristiano-ronaldo-is-18-goals-away-from-historic-1000-goals-milestone",
-          "source": "Sofascore"
+          "title": "Video: \"A legend we learn from\": Al-Hamdan praises Ronaldo after awarding him the Al-Faisaly prize",
+          "url": "https://www.livescore.com/en/news/football/more/video-a-legend-we-learn-from-al-hamdan-praises-ronaldo-after-awarding-him-the-al-faisaly-prize-goal/",
+          "source": "LiveScore"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "theft",
-      "traffic": "1000+",
+      "title": "citizen.digital",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Fresh phone-theft probe lands Kitui MCA Cyrus Musyoka in custody",
-          "url": "https://nation.africa/kenya/news/fresh-phone-theft-probe-lands-kitui-mca-cyrus-musyoka-custody-5643194",
-          "source": "Daily Nation"
+          "title": "Wetangula: Sifuna too green for presidency",
+          "url": "https://capitalfm.africa/wetangula-sifuna-too-green-for-presidency/",
+          "source": "Capital FM Africa"
         },
         {
-          "title": "MCA arrested over alleged Nairobi phone thefts",
-          "url": "https://www.the-star.co.ke/news/2026-10-23-mca-arrested-over-alleged-nairobi-phone-thefts",
+          "title": "Wetang’ula tells first-time presidential hopefuls to gain experience before eyeing State House",
+          "url": "https://www.the-star.co.ke/news/2026-10-23-wetangula-kenya-is-not-ready-for-inexperienced-president",
           "source": "The Star, Kenya"
         },
         {
-          "title": "Kitui MCA arrested over links to Nairobi CBD phone theft",
-          "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001560722/kitui-mca-arrested-over-links-to-nairobi-cbd-phone-theft",
-          "source": "The Standard"
+          "title": "No First-Time MP Has Become President on His First Attempt - Wetang'ula on Sifuna's Bid",
+          "url": "https://nairobileo.co.ke/news/article/31015/no-first-time-mp-has-become-president-on-his-first-attempt-wetangula-on-sifunas-bid",
+          "source": "Nairobi Leo"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "al nassr",
+      "title": "citizen tv",
       "traffic": "200+",
       "news": [
         {
-          "title": "A Saudi media figure attacks Postecoglou: I speak better than him in the dressing room!",
-          "url": "https://www.goal.com/en/news/a-saudi-media-figure-attacks-postecoglou-i-speak-better-than-him-in-the-dressing-room/blt8af6cc107e337d9f",
-          "source": "Goal.com"
+          "title": "Kanja’s warning to police after Citizen TV journalist’s protest ordeal",
+          "url": "https://www.the-star.co.ke/news/2026-10-22-kanjas-warning-to-police-after-journalists-protest-ordeal",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Ange Postecoglou clamps Saudi reporter as ex Celtic boss delivers another mic drop moment after grilling",
-          "url": "https://www.celticnewsnow.com/news/ange-postecoglou-clamps-saudi-reporter-as-ex-celtic-boss-delivers-another-mic-drop-moment-after-grilling/739875/",
-          "source": "Celtic news now - Celtic FC News"
+          "title": "IPOA launches probe into Citizen TV journalist Francis Ode's arrest",
+          "url": "https://www.standardmedia.co.ke/national/article/2001560655/ipoa-launches-probe-into-citizen-tv-journalist-francis-odes-arrest",
+          "source": "The Standard"
         },
         {
-          "title": "Ange Postecoglou clamps Saudi reporter as ex Celtic boss delivers another mic drop moment after grilling",
-          "url": "https://www.dailyrecord.co.uk/sport/football/football-news/ange-postecoglou-clamps-saudi-reporter-37797928",
-          "source": "Daily Record"
+          "title": "Francis Ode arrest: NPS vows to cooperate with IPOA on investigations",
+          "url": "https://citizen.digital/article/francis-ode-arrest-nps-vows-to-cooperate-with-ipoa-on-investigations-n392528",
+          "source": "Citizen Digital"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
-      "title": "cole palmer",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "João Pedro: I told Cole Palmer 'I didn't want to take his spot' at Chelsea",
-          "url": "https://www.espn.co.uk/football/story/_/id/50226791/joao-pedro-chelsea-brazil-aims-goals-cole-palmer-morgan-rogers",
-          "source": "ESPN"
-        },
-        {
-          "title": "Joao Pedro reveals how Xabi Alonso unlocked his form as Chelsea star reflects on Cole Palmer bond",
-          "url": "https://www.goal.com/en-ke/news/joao-pedro-xabi-alonso-chelsea-cole-palmer/blt5771674e09246816",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Joao Pedro explains how he built his exceptional relationship with one Chelsea teammate",
-          "url": "https://www.talkchelsea.net/news/joao-pedro-how-he-built-his-relationship-chelsea-teammate/",
-          "source": "Talk Chelsea"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "saudi pro league",
+      "title": "vincent kompany",
       "traffic": "100+",
       "news": [
         {
-          "title": "Despite the hard-fought win: Postecoglou draws on the Neom match against Al-Faisaly",
-          "url": "https://www.goal.com/en/news/despite-the-hard-fought-win-postecoglou-draws-on-neom-s-match-against-al-faisaly/blt4bd5de6080fb6728",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Al-Faisaly v Al-Nassr: Preview, expected line-ups, stats and where to watch as Ronaldo continues hunt for 1,000",
-          "url": "https://www.101greatgoals.com/match-previews/al-faisaly-v-al-nassr-preview-expected-line-ups-stats-and-where-to-watch-as-ronaldo-continues-hunt-for-1000/",
-          "source": "101 Great Goals"
-        },
-        {
-          "title": "Massive “Super Friday” For Saudi Football: Accumulator Tip for October 23",
-          "url": "https://www.telecomasia.net/sports-betting/tips/accumulator/accumulator-tip-for-october-23-predictions-betting-tips-and-odds-or-23-october-2026/",
-          "source": "Telecom Asia Sport"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "dunkerque vs metz",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Ligue 2 : le parcage visiteurs fermé pour la rencontre Dunkerque-Metz",
-          "url": "https://www.foot-national.com/actus/ligue-2-le-parcage-visiteurs-ferme-pour-la-rencontre-dunkerque-metz-960047",
-          "source": "Foot National"
-        },
-        {
-          "title": "Communiqué officiel – USL Dunkerque",
-          "url": "https://www.usldunkerque.com/communique-officiel-usl-dunkerque/",
-          "source": "USL Dunkerque"
-        },
-        {
-          "title": "Ligue 2. Adrien Lebeau (USL Dunkerque) : « Grégory Proment est le bon coach pour le FC Metz »",
-          "url": "https://www.republicain-lorrain.fr/sport/2026/10/23/adrien-lebeau-(usl-dunkerque)-gregory-proment-est-le-bon-coach-pour-le-fc-metz",
-          "source": "Le Republicain Lorrain"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya ebola",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Is Ebola under control in Kenya after nine cases confirmed?",
-          "url": "https://www.bbc.com/news/articles/c693z948px0jo",
+          "title": "Vincent Kompany: Bayern Munich manager taken to hospital after collapsing",
+          "url": "https://www.bbc.com/sport/football/articles/ck3r5792en7go",
           "source": "BBC"
         },
         {
-          "title": "Kenya confirms new Ebola case, total at nine, health ministry says",
-          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/kenya-confirms-new-ebola-case-total-nine-health-ministry-says-2026-10-20/",
-          "source": "Reuters"
+          "title": "Air ambulance on Bayern Munich training pitch: serious concerns for Vincent Kompany",
+          "url": "https://www.goal.com/en/news/air-ambulance-on-bayern-munich-training-pitch-serious-concerns-for-vincent-kompany/blt8623d22c56785e02",
+          "source": "Goal.com"
         },
         {
-          "title": "Health Ministry Reveals When First Ebola Contacts Will Be Released",
-          "url": "https://www.kenyans.co.ke/news/128773-first-group-ebola-contacts-leave-quarantine-sunday-moh-confirms",
-          "source": "Kenyans.co.ke"
+          "title": "Vincent Kompany: Bayern Munich boss taken to hospital after collapsing at training ground",
+          "url": "https://www.skysports.com/football/news/13602757/vincent-kompany-bayern-munich-boss-taken-to-hospital-after-collapsing-at-training-ground",
+          "source": "Sky Sports"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "widzew lodz gornik zabrze",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Skład Widzewa Łódź na mecz z Górnikiem Zabrze - Widzew Łódź - WWW",
+          "url": "https://www.widzew.com/pl/w/sklad-widgor-2026",
+          "source": "Widzew Łódź"
+        },
+        {
+          "title": "Stolarski docenił trenera z Ekstraklasy. \"Patrzę na jego pracę z uznaniem\"",
+          "url": "https://www.goal.pl/ekstraklasa/stolarski-docenil-trenera-z-ekstraklasy-patrze-na-jego-prace-z-uznaniem/",
+          "source": "Goal.pl"
+        },
+        {
+          "title": "Czy wyjazdowa siódemka okaże się dla Górnika Zabrze szczęśliwa? \"Nie ma już dużej różnicy pomiędzy tym, jak gramy w domu, a na wyjeździe\"",
+          "url": "https://roosevelta81.pl/czy-wyjazdowa-siodemka-okaze-sie-dla-gornika-zabrze-szczesliwa-nie-ma-juz-duzej-roznicy-pomiedzy-tym-jak-gramy-w-domu-a-na-wyjezdzie/",
+          "source": "Roosevelta 81"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "citizen live",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "MPs pull plug on livestreaming of election results",
+          "url": "https://www.standardmedia.co.ke/national/article/2001560688/mps-pull-plug-on-livestreaming-of-election-results",
+          "source": "The Standard"
+        },
+        {
+          "title": "National Assembly passes Elections Bill removing mandatory livestreaming of poll results",
+          "url": "https://citizen.digital/article/national-assembly-passes-elections-bill-removing-mandatory-livestreaming-of-poll-results-n392589",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "Muturi, Odhiambo oppose removal of election livestreaming requirement",
+          "url": "https://www.the-star.co.ke/news/2026-10-23-muturi-odhiambo-oppose-removal-of-election-livestreaming-requirement",
+          "source": "The Star, Kenya"
+        }
+      ],
+      "civic": true
     }
   ],
   "dropped": [
     {
-      "title": "torino vs monza",
-      "why": "unsafe: 'Betting'"
+      "title": "al qadsiah vs al-hilal",
+      "why": "unsafe: 'betting'"
     },
     {
-      "title": "kenya football",
-      "why": "unsafe: 'SportPesa'"
+      "title": "ethiopia",
+      "why": "unsafe: 'war'"
     },
     {
-      "title": "brest vs nice prediction",
+      "title": "bolton vs middlesbrough",
       "why": "unsafe: 'Bet'"
+    },
+    {
+      "title": "sochaux vs annecy",
+      "why": "banned: violence"
     }
   ],
   "errors": {}

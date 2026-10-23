@@ -1729,6 +1729,21 @@
       "ig_id": "18197669332390944",
       "fb_id": "1641658160685441",
       "story_id": "18116189312467980"
+    },
+    {
+      "id": "2026-w43-hot-1023e",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-10-23T23:52:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "Scrapping PAYE personal relief will raise income taxes by Sh2,400 every month for all salaried Kenyans.",
+        "Kenya Met forecasts heavy rain in 44 counties, urging immediate county drainage clearance.",
+        "Scrapping live election streaming weakens public transparency during presidential vote tallying."
+      ]
     }
   ],
   "scripts": {
