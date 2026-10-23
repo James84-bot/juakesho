@@ -1545,13 +1545,85 @@
       "reel": true,
       "tg_msg": 482,
       "decided_at": "2026-10-23T09:58:18.317867+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1023m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Residents",
+      "line": "Kenya Met warns of heavy rain across *44 counties* over five days.",
+      "fact": "Kenya Met warned of heavy downpours in 44 counties and thunderstorms in 21.",
+      "source": "Tuko News, 2026-10-23",
+      "photo_query": "flooded street Kenya",
+      "message": "Kenya Met forecasts heavy rain in 44 counties, urging immediate county drainage clearance.",
+      "action": "Call toll-free 1199 or your county emergency desk to report flooding.",
+      "who": "Kenya Meteorological Department",
+      "where": "National",
+      "when": "23 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Heavy downpours threaten transport, homes, and farms across 44 counties.",
+      "beats": [
+        "Kenya Met warns of heavy rain in *44 counties* this week.",
+        "Forecasters project severe thunderstorms across *21 counties*.",
+        "Blocked storm drains threaten to flood roads, estates, and *farms*.",
+        "Kenyans demand: county governments clear all *blocked drains* today.",
+        "Call toll-free *1199* to report flood emergencies immediately."
+      ],
+      "caption": "Kenya Met warns of heavy rain across 44 counties over five days.\n\nWhat it means for you: poor storm drainage will submerge roads and homes.\n\nCall toll-free 1199 or your county emergency desk to report flooding.\n\n#KenyaWeather #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-23T14:50:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Scrapping PAYE personal relief will raise income taxes by Sh2,400 every month for all salaried Kenyans."
+      ],
+      "source_links": [
+        {
+          "outlet": "Tuko News",
+          "title": "Kenya Met Warns of Rain in 44 counties, Thunderstorms in 21 Over Next 5 Days",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPNkhBVmEtTG9kZnJtb2t2MEhYNU85eGtsTWlHeGNheUtRSktJUHJhUFZOYzJXWmNmZmx1THVKRmdhUEZYSWd6LWNwNk1LV2tReUNZNVIwQ2lCQ04xTHViUGo1MXZrRndKTklOVTF4dWcwcGtTd2s4LTh5NUdvNDZzWG1oZ0E1N0VjQXBNWlNzNVJjUi02OVVYWTd6VU4?oc=5",
+          "published": "2026-10-23"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.4,
+        "note": "The action is concrete and lawful, pointing straight to the emergency desk."
+      },
+      "drafted_at": "2026-10-23T12:00:48.617000+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1023m-photo.jpg",
+      "photo_credit": "Photo: GiveMeMollusks / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Flooded_hotel_on_Lake_Naivasha,_Kenya.jpg",
+      "reel": true,
+      "tg_msg": 486
     }
   ],
   "scripts": {
-    "radio": "Good evening and welcome back to Kenya on Record.\n\nIf you earn a salary in this country, you already know the pinch at the end of the month. Between statutory deductions, housing levy, and healthcare contributions, take-home pay has been shrinking steadily. But there is a proposal on the table that demands our collective attention: the scrapping of PAYE personal relief.\n\nCurrently, the personal relief of Sh2,400 per month is granted to every resident individual. It is not a bonus or a loophole; it is a basic tax cushion designed to shield the first layer of your hard-earned income. Scrapping it means your income tax liability automatically increases by Sh2,400 every single month. That is Sh28,800 taken out of your pocket every year. For low and middle-income workers, that is not small change—it is school fees, transport, or weeks of groceries.\n\nTrue tax reform should focus on expanding the base and eliminating wasteful public spending, not squeezing the small pool of formally employed citizens whose taxes are deducted before their pay even hits the bank.\n\nKwa ufupi: Mpango wa kuondoa unafuu wa kodi wa kibinafsi, yaani personal relief, utaongeza kodi ya kila mfanyakazi kwa shilingi elfu mbili na mia nne kila mwezi. Huo ni mzigo mkubwa sana kwa wananchi ambao tayari wamelemewa na gharama ya maisha. Ni lazima tuwaulize wabunge wetu: mbona mzigo mzito uendelee kubebeshwa wale wachache wanaolipa kodi tayari?\n\nThis is Kenya on Record. Stay informed, stay engaged.",
-    "voice_note": "Habari zenu. Here is something every salaried Kenyan needs to hear this week. There is a serious proposal being pushed to scrap the PAYE personal relief. Right now, that Sh2,400 monthly relief is the only small buffer protecting your salary from immediate, aggressive tax bands. If it is scrapped, every single person on a formal payroll will pay an extra Sh2,400 in income tax every month. That is nearly Sh29,000 lost from your household budget every year—money meant for school fees, rent, or basic food. We are repeatedly told that the government needs revenue, but milking the compliant formal sector while corruption and waste continue unchecked is unacceptable. Please share this note in your work and family groups. Find out where your MP stands on this before it quietly passes into law. This is Kenya on Record.",
-    "sms": "Usiibiwe: Scrapping the Sh2,400 PAYE personal relief cuts take-home pay for every formal worker. Check your payslip deductions and hold your MP accountable.",
-    "reels": "If you receive a formal payslip in Kenya, listen closely. The proposal to scrap PAYE personal relief is not an abstract tax reform—it is an outright pay cut of 2,400 shillings every month for every salaried worker. That is nearly 29,000 shillings gone each year, hitting low and middle earners the hardest. Widening the tax base should never mean squeezing the already compliant. Know the numbers, and hold your leaders accountable. This is Kenya on Record."
+    "radio": "Habari za wakati huu. This is Kenya on Record.\n\nThe Kenya Meteorological Department has issued a heavy rainfall advisory touching 44 counties across the country. We have walked this road before, and we know how the story ends when preparation is neglected until floodwaters enter living rooms and ruin livelihoods.\n\nEvery financial year, county governments allocate contingency funds and public works budgets for disaster preparedness and routine maintenance. Yet, when the skies open, urban centres and rural access roads turn into rivers simply because storm drains remain choked with silt, uncollected garbage, and construction debris.\n\nThe warning from the Met department is an early call to action. Clearing blocked waterways, unclogging culverts, and securing flood-prone areas must happen right now, not as an afterthought during an emergency press conference. Flooding in our neighbourhoods is rarely an act of nature alone; how a county prepares beforehand is a basic test of administrative competence and fiscal accountability.\n\nAs citizens, let us look around our wards. Find out what your county emergency committee is doing today. Ask your ward administrator whether public works teams have been deployed to desilt drains along critical roads. We must also play our part by keeping trash out of open drainage lines.\n\nKwa ufupi: Idara ya Utabiri wa Hali ya Hewa imeonya kuhusu mvua kubwa katika kaunti 44. Serikali za kaunti lazima zitumie fedha zilizotengwa kusafisha mitaro na kuzuia mafuriko mara moja, kabla ya maafa kutokea. Uzembe wa viongozi usifanywe kuwa janga la kiasili.\n\nStay alert, stay safe, and let’s keep Kenya on record.",
+    "voice_note": "Jambo family, Kenya on Record hapa. Kenya Met has just warned that heavy rains are set to hit 44 counties starting this week. Look, every budget cycle, our counties set aside public funds for drainage maintenance and emergency mitigation. Yet every rainy season, roads turn into rivers because simple culverts were left clogged with mud and rubbish. Don't wait until water enters your gate. If you notice blocked drainage lines or neglected culverts in your area, take clear photos and demand answers from your MCA and county works office today. Let them account for preparedness funds before disaster strikes. And as residents, let's also stop dumping waste in open drains. Preparedness is accountability. Share this with your estate group and stay safe.",
+    "sms": "Usiibiwe: Kenya Met warns of heavy rains in 44 counties. Demand your county clears drains now using disaster funds before floods destroy property. Stay vigilant.",
+    "reels": "Kenya Met has warned that heavy rains are hitting 44 counties. But let's be honest: towns don't drown from rainfall alone; they drown from neglected drainage. Every county has budgets for public works and disaster preparedness. Ask your MCA and county officials today: are storm drains being cleared right now, or are they waiting to launch expensive emergency tenders after people lose property? Demand action before the skies open."
   },
   "spend_usd": 0.0,
   "revision": 9
