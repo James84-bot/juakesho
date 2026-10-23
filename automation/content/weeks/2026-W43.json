@@ -1690,7 +1690,7 @@
           "published": "2026-10-23"
         }
       ],
-      "status": "awaiting",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": []
@@ -1719,7 +1719,12 @@
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/127838-iebc-summons-uda-secretary-general-hassan-omar-over-remarks-dead-voters",
       "reel": true,
-      "tg_msg": 491
+      "tg_msg": 491,
+      "decided_at": "2026-10-23T14:43:22.505168+03:00",
+      "published_at": "2026-10-23T14:44:34.064273+03:00",
+      "ig_id": "18197669332390944",
+      "fb_id": "1641658160685441",
+      "story_id": "18116189312467980"
     }
   ],
   "scripts": {
