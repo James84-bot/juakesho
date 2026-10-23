@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-23T08:50:29.982151+00:00",
+  "fetched": "2026-10-23T10:32:10.644666+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -26,25 +26,26 @@
     },
     {
       "geo": "KE",
-      "title": "juventus vs stade rennais f.c. standings",
-      "traffic": "500+",
+      "title": "universities academic staff union",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Luciano Spalletti uses Lionel Messi to teach Juventus a lesson after their frustrating Rennes draw in the Europa League",
-          "url": "https://www.goal.com/en-ke/news/luciano-spalletti-lionel-messi-juventus-rennes-europa-league/blta052979d7424cc92",
-          "source": "Goal.com"
+          "title": "Students threaten to join lecturers’ strike",
+          "url": "https://nation.africa/kenya/news/education/students-threaten-to-join-lecturers-strike-5642446",
+          "source": "Daily Nation"
         },
         {
-          "title": "Juventus salvage Rennes draw as Benfica, Leverkusen stay perfect",
-          "url": "https://www.reuters.com/sports/soccer/juventus-fight-back-draw-with-rennes-leverkusen-go-top-2026-10-22/",
-          "source": "Reuters"
+          "title": "Parliament urges government to end 20-day university lecturers’ strike",
+          "url": "https://citizen.digital/article/parliament-urges-government-to-end-20-day-university-lecturers-strike-n392548",
+          "source": "Citizen Digital"
         },
         {
-          "title": "Celik and Woltemade score in Stade Rennais draw",
-          "url": "https://www.juventus.com/en/news/articles/celik-and-woltemade-score-in-stade-rennais-draw-22-10-26",
-          "source": "Juventus.com"
+          "title": "Varsities' mess: Broken promises, students in limbo as strike drags on",
+          "url": "https://www.standardmedia.co.ke/article/2001560684/varsities-mess-broken-promises-students-in-limbo-as-strike-drags-on",
+          "source": "The Standard"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -57,36 +58,14 @@
           "source": "L'Équipe"
         },
         {
-          "title": "Les arguments pour valider la candidature d’Ajorque en équipe de France",
-          "url": "https://www.sofoot.com/articles/les-vrais-bons-arguments-pour-selectionner-ludovic-ajorque-en-equipe-de-france",
-          "source": "SO FOOT.com"
+          "title": "Ligue 1. « On veut amener de l’alternance », le Stade Brestois veut retrouver son allant offensif contre Nice",
+          "url": "https://quimper.maville.com/sport/detail_-ligue-1-on-veut-amener-de-l-alternance-le-stade-brestois-veut-retrouver-son-allant-offensif-contre-nice_dep-7541060_actu.Htm",
+          "source": "maville.com"
         },
         {
-          "title": "Football | Brest – Nice : Chaîne, streaming, où voir le match et à quelle heure en France ?",
-          "url": "https://www.mediasportif.fr/2026/10/23/football-brest-nice-chaine-streaming-ou-voir-le-match-et-a-quelle-heure-en-france/",
-          "source": "Mediasportif"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "76ers vs cavaliers",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "76ers’ VJ Edgecombe gives update after getting clocked in the nose by LeBron James",
-          "url": "https://sports.yahoo.com/articles/76ers-vj-edgecombe-gives-getting-062842081.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "LeBron accidentally hits V.J. Edgecombe in the face giving him a bloody nose | NBA on ESPN",
-          "url": "https://bvmsports.com/2026/10/22/lebron-accidentally-hits-v-j-edgecombe-in-the-face-giving-him-a-bloody-nose-nba-on-espn/",
-          "source": "BVM Sports"
-        },
-        {
-          "title": "LeBron James gives 76ers teammate VJ Edgecombe bloody nose via accidental elbow",
-          "url": "https://www.usatoday.com/story/sports/nba/76ers/2026/10/22/lebron-james-elbow-vj-edgecombe-bloody-nose/92389356007/",
-          "source": "USA Today"
+          "title": "Dans la tempête en déplacement, l’OGC Nice espère décoller à Brest",
+          "url": "https://www.nicematin.com/sports/football/dans-la-tempete-en-deplacement-l-ogc-nice-espere-decoller-a-brest-10744742",
+          "source": "Nice-Matin"
         }
       ]
     },
@@ -96,41 +75,41 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "76ers 114-106 Cavaliers (Oct 22, 2026) Game Recap",
-          "url": "https://www.espn.com/nba/recap?gameId=401909093",
-          "source": "ESPN"
+          "title": "NBA All-Breakout Team, starring Cooper Flagg, Dylan Harper and … Leonard Miller?",
+          "url": "https://www.nytimes.com/athletic/7713043/2026/10/23/nba-breakout-players-cooper-flagg-dylan-harper/",
+          "source": "The New York Times"
         },
         {
-          "title": "Tyrese Maxey Reveals Halftime Pep Talk Following 24-Point Deficit Against Cavs",
-          "url": "https://www.sportscapemagazine.com/blog/tyrese-maxey-reveals-halftime-pep-talk-following-24-point-deficit-against-cavs",
-          "source": "Sportscape Magazine"
+          "title": "7 NBA Players Who Can Be First-Time All-Stars",
+          "url": "https://bleacherreport.com/articles/25509698-7-nba-players-who-can-be-first-time-all-stars",
+          "source": "Bleacher Report"
         },
         {
-          "title": "Philly's 29-point comeback win is the largest comeback …",
-          "url": "https://sports.yahoo.com/articles/phillys-29-point-comeback-win-021757241.html",
-          "source": "Yahoo Sports"
+          "title": "The Five Players Who Will Define the 2026-27 NBA Season",
+          "url": "https://www.si.com/nba/five-players-who-will-define-the-2026-27-nba-season",
+          "source": "Sports Illustrated"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "student loan",
-      "traffic": "200+",
+      "title": "dangote acquisition kenya pipeline company",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Public Service Loan Forgiveness overhaul dropped by Trump administration. Here's what to know.",
-          "url": "https://www.cbsnews.com/news/trump-drops-public-service-loan-forgiveness-overhaul/",
-          "source": "CBS News"
+          "title": "Dangote’s KPC stake and the fight ahead",
+          "url": "https://www.businessdailyafrica.com/bd/opinion-analysis/columnists/dangote-s-kpc-stake-and-the-fight-ahead-5642408",
+          "source": "Business Daily"
         },
         {
-          "title": "Government Drops Appeal, Preserving Win for Plaintiffs in Challenge to Trump-Vance Administration’s Weaponization of Public Service Loan Forgiveness",
-          "url": "https://democracyforward.org/news/press-releases/government-drops-appeal-preserving-win-for-plaintiffs-in-challenge-to-trump-vance-administrations-weaponization-of-public-service-loan-forgiveness/",
-          "source": "Democracy Forward"
+          "title": "Nigeria's Dangote buys 25% stake in Kenya's oil pipeline network",
+          "url": "https://www.reuters.com/business/energy/nigerias-dangote-buys-25-stake-kenyas-oil-pipeline-network-2026-10-21/",
+          "source": "Reuters"
         },
         {
-          "title": "New Student Loan Forgiveness Rule Scrapped After the Education Department Backs Down in Legal Fight",
-          "url": "https://www.investopedia.com/new-student-loan-forgiveness-rule-scrapped-after-the-education-department-abandons-legal-fight-12188013",
-          "source": "Investopedia"
+          "title": "Mbadi defends KPC share sale, warns Ndindi Nyoro against scaring off investors",
+          "url": "https://citizen.digital/article/mbadi-defends-kpc-share-sale-warns-ndindi-nyoro-against-scaring-off-investors-n392546",
+          "source": "Citizen Digital"
         }
       ]
     },
@@ -145,8 +124,8 @@
           "source": "Bloomberg.com"
         },
         {
-          "title": "BioWare Reportedly Had a Mass Effect 5 Trailer Ready to Go Before EA Canceled the Game and Shut the Studio Down",
-          "url": "https://www.ign.com/articles/mass-effect-5-trailer-reportedly-ready-to-go-before-bioware-closure",
+          "title": "Mass Effect 5 Trailer Leaks Online With 'Mass Effect: Universe' Title, Reveals Returning Characters and Much More",
+          "url": "https://www.ign.com/articles/mass-effect-5-trailer-leaks-online-with-mass-effect-universe-title-reveals-returning-characters-and-much-more",
           "source": "IGN"
         },
         {
@@ -158,23 +137,23 @@
     },
     {
       "geo": "KE",
-      "title": "crystal palace",
+      "title": "daily nation",
       "traffic": "100+",
       "news": [
         {
-          "title": "Europa League reaction: Wilfred Ndidi on Beşiktaş draw | Video",
-          "url": "https://www.uefa.com/news-media/video/02aa-21e4245c4d1f-5dd3e89539d9-1000--europa-league-reaction-wilfred-ndidi-on-besiktas-draw/",
-          "source": "UEFA.com"
+          "title": "13 years on the run: Inside final hours of Kenyan Sancho Kibutu’s flight from US justice",
+          "url": "https://nation.africa/kenya/news/diaspora/diaspora-news/13-years-on-the-run-sancho-kibutu-s-flight-from-us-justice-5642796",
+          "source": "Daily Nation"
         },
         {
-          "title": "Ndidi Scores First Goal of New Europa League Season, Dessers Fires Brace",
-          "url": "https://www.thisdaylive.com/2026/10/23/ndidi-scores-first-goal-of-new-europa-league-season-dessers-fires-brace/",
-          "source": "THISDAYLIVE"
+          "title": "Kenyan fugitive extradited to US after 13 years on the run",
+          "url": "https://citizen.digital/article/kenyan-fugitive-extradited-to-us-after-13-years-on-the-run-1-n392584",
+          "source": "Citizen Digital"
         },
         {
-          "title": "Europa League: Wilfred Ndidi Opens Season's Goal Account as Beşiktaş Hold Crystal Palace to 2-2 Draw",
-          "url": "https://www.sports247.ng/europa-league-wilfred-ndidi-opens-seasons-goal-account-as-besiktas-hold-crystal-palace-to-2-2-draw/",
-          "source": "Sports247 Nigeria"
+          "title": "Kenyan fugitive Sancho Kibutu extradited to US",
+          "url": "https://www.the-star.co.ke/news/2026-10-23-kenyan-fugitive-sancho-kibutu-extradited-to-us",
+          "source": "The Star, Kenya"
         }
       ]
     }
@@ -187,6 +166,10 @@
     {
       "title": "thunder vs nuggets",
       "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "76ers vs cavaliers",
+      "why": "unsafe: 'Fire'"
     }
   ],
   "errors": {}

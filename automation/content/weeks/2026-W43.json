@@ -1622,13 +1622,111 @@
       "reel": true,
       "tg_msg": 486,
       "decided_at": "2026-10-23T13:25:57.520404+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1023b1332",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Kenyan Voters",
+      "line": "MPs passed a Bill scrapping mandatory *live streaming* of election results.",
+      "fact": "The Elections Bill removes IEBC's legal duty to broadcast presidential tallies live to the public.",
+      "source": "Citizen Digital, K24 Digital, Nairobi Law Monthly, People Daily",
+      "photo_query": "ballot box Kenya",
+      "event_query": "Kenya National Assembly",
+      "who": "National Assembly",
+      "where": "Nairobi",
+      "when": "23 Oct 2026",
+      "side": "both",
+      "tone": "criticism",
+      "impact": "Kenyans will not be able to track presidential election tallies live on television and online.",
+      "message": "Scrapping live election streaming weakens public transparency during presidential vote tallying.",
+      "action": "Petition your Senator to reject the clause removing live result streaming",
+      "beats": [
+        "MPs passed a Bill scrapping *live streaming* of election results.",
+        "The law removes the duty on IEBC to broadcast tallies publicly.",
+        "Voters will not see presidential results *updated live* on screen.",
+        "Kenyans demand: the Senate *rejects* the secrecy clause in this Bill."
+      ],
+      "caption": "MPs have passed changes to the Elections Bill removing mandatory livestreaming of election results. Transparency protects our vote. Tell your Senator what you think.\n\n#RejectElectionBill2024 #ShofcoKisumuSunElection #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-23T13:52:00+03:00",
+      "hot": true,
+      "avoid": [
+        "Scrapping PAYE personal relief will raise income taxes by Sh2,400 every month for all salaried Kenyans.",
+        "Kenya Met forecasts heavy rain in 44 counties, urging immediate county drainage clearance."
+      ],
+      "breaking": {
+        "title": "MPs pass Bill scrapping IEBC’s obligation to livestream election results",
+        "outlets": [
+          "Citizen Digital",
+          "K24 Digital",
+          "Nairobi Law Monthly",
+          "People Daily"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "K24 Digital",
+          "title": "2027 Elections: How removing livestreaming could affect Kenyans’ access to information",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPWVpiNlBxcy1qNW5XZDJtdkY2dGVIQlpUQkEwU0RrY0xRY0piamZ0R2tMdXhaa1VsMlE4ZzE5d1ZBTjIwWlZqb3JfOUEyZDFRRUJEeFlhVEFnczB6RnVEaXNCYWxjWGtaY3V2dUNlTGlEQ1phT3l0N3lvWF9ZTml4ZndSZGJPMG4ydWFuMTdFZjZLcE5lcExUdWtFTFJlWjBuMFVtcGlRVVBNZHpKVjhLMWtZREVubmhNcklIbUp1N3dyclk?oc=5",
+          "published": "2026-10-23"
+        },
+        {
+          "outlet": "Citizen Digital",
+          "title": "National Assembly passes Elections Bill removing mandatory livestreaming of poll results",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQLTVWSjgyUXphN1otRTFIbm4xdlJsb0RNaGp1Q0JqN3JsWXp0SzRfeC1CbG9WWkFnenAxZ2p5dVh1d2phMFNNbHNxNDhUQzAwRWxiX3M1dE9wa3BUVW5JSFFmd3FFQlVvb25QU0JYQmJOd2h2NkpVNXhQUzdMdUEzVV82eVRmalBhZkVtemRVaEJLLVBldHBrVWxSUXJ6QW9ZQUJvRlFKMEhxY0kzb21tekQxWmJTd0dBNTk5VjNqNXB0Z0V5ellr?oc=5",
+          "published": "2026-10-23"
+        },
+        {
+          "outlet": "People Daily",
+          "title": "Faith Odhiambo raises alarm over possible livestreaming ban of 2027 election results",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNVTBLQktqYXp1RDgxMXlQQWhtb1RZb1MzczZBTWRZVE9OUTIyYVh3cUZjSUtsanJ2WVBZYnpSbHJnMS1YMVpORDVGLWotNXJJdzc5Wm12RGs3X01QWUJrbXhMRDRJN19yWGVpQUxFQ3ZEUGo5SFZVUkdWdXBFejNZZ20xYndTSmpfTHpia3JPdmNidC1BSGkxVzNaNGZYWGVORWJvMGI1ZmduVG4xU0tMRnczeWdwaXZjdDlMd2ZFcUR1SE5rOFRn?oc=5",
+          "published": "2026-10-23"
+        },
+        {
+          "outlet": "Nairobi Law Monthly",
+          "title": "MPs pass Bill scrapping IEBC’s obligation to livestream election results",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ2EtTDQ3VGQ5QzVtdDcxTmNpYm5keGI2SXN0djRTLU5UMFhDallJSmJMeWxOTk5WVjBKcnhIamdmSUNHVGdCdTNkUUM3cklFNVdYVXVLWFBuVkstZGtSS0sxalFGTzVkSjlaaVFIejd0dDlJNHlUQ0NTRG5DY0ZmclNkc3VveFJfNzV5YnYxeFBmc3FDQ2tPQUd3V2ZrQ2RoRHc1TA?oc=5",
+          "published": "2026-10-23"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 10,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 10,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "avg": 9.2,
+        "note": "The post meets all rigorous news desk standards with a strong hook, clear facts, and a concrete call to action."
+      },
+      "trend": "#ShofcoKisumuSunElection",
+      "drafted_at": "2026-10-23T13:40:43.565977+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1023b1332-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "file",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127838-iebc-summons-uda-secretary-general-hassan-omar-over-remarks-dead-voters",
+      "reel": true,
+      "tg_msg": 491
     }
   ],
   "scripts": {
-    "radio": "Habari za wakati huu. This is Kenya on Record.\n\nThe Kenya Meteorological Department has issued a heavy rainfall advisory touching 44 counties across the country. We have walked this road before, and we know how the story ends when preparation is neglected until floodwaters enter living rooms and ruin livelihoods.\n\nEvery financial year, county governments allocate contingency funds and public works budgets for disaster preparedness and routine maintenance. Yet, when the skies open, urban centres and rural access roads turn into rivers simply because storm drains remain choked with silt, uncollected garbage, and construction debris.\n\nThe warning from the Met department is an early call to action. Clearing blocked waterways, unclogging culverts, and securing flood-prone areas must happen right now, not as an afterthought during an emergency press conference. Flooding in our neighbourhoods is rarely an act of nature alone; how a county prepares beforehand is a basic test of administrative competence and fiscal accountability.\n\nAs citizens, let us look around our wards. Find out what your county emergency committee is doing today. Ask your ward administrator whether public works teams have been deployed to desilt drains along critical roads. We must also play our part by keeping trash out of open drainage lines.\n\nKwa ufupi: Idara ya Utabiri wa Hali ya Hewa imeonya kuhusu mvua kubwa katika kaunti 44. Serikali za kaunti lazima zitumie fedha zilizotengwa kusafisha mitaro na kuzuia mafuriko mara moja, kabla ya maafa kutokea. Uzembe wa viongozi usifanywe kuwa janga la kiasili.\n\nStay alert, stay safe, and let’s keep Kenya on record.",
-    "voice_note": "Jambo family, Kenya on Record hapa. Kenya Met has just warned that heavy rains are set to hit 44 counties starting this week. Look, every budget cycle, our counties set aside public funds for drainage maintenance and emergency mitigation. Yet every rainy season, roads turn into rivers because simple culverts were left clogged with mud and rubbish. Don't wait until water enters your gate. If you notice blocked drainage lines or neglected culverts in your area, take clear photos and demand answers from your MCA and county works office today. Let them account for preparedness funds before disaster strikes. And as residents, let's also stop dumping waste in open drains. Preparedness is accountability. Share this with your estate group and stay safe.",
-    "sms": "Usiibiwe: Kenya Met warns of heavy rains in 44 counties. Demand your county clears drains now using disaster funds before floods destroy property. Stay vigilant.",
-    "reels": "Kenya Met has warned that heavy rains are hitting 44 counties. But let's be honest: towns don't drown from rainfall alone; they drown from neglected drainage. Every county has budgets for public works and disaster preparedness. Ask your MCA and county officials today: are storm drains being cleared right now, or are they waiting to launch expensive emergency tenders after people lose property? Demand action before the skies open."
+    "radio": "Good evening and welcome to Kenya on Record.\n\nToday, we must confront a dangerous proposal quietly gaining traction: the push to scrap the live streaming of presidential election results during tallying. \n\nLet us be unequivocal: public transparency is not an administrative courtesy; it is a constitutional command under Articles 10 and 38. The integrity of an election does not rely solely on the ballot paper placed in a box; it relies on the verifiable chain of custody through counting, transmission, and tallying. \n\nIn recent elections, whatever institutional weaknesses emerged, the presence of real-time public broadcasts allowed media houses, observers, and citizens to cross-examine results against physical tally sheets. Removing that live window retreats tallying into opacity. It creates an information vacuum—and history teaches us that in Kenyan elections, secrecy breeds rumour, panic, and disputed legitimacy.\n\nIf the concern is provisional discrepancies, the answer is robust validation systems, not an information blackout. You cannot build public trust by switching off the lights.\n\nKwa ufupi kwa Kiswahili: Mpango wa kuondoa urushaji wa moja kwa moja wa matokeo ya kura ya urais unadhoofisha uwazi na kukiuka Katiba. Wananchi wana haki ya kufuatilia jinsi kura zao zinavyojumuishwa. Kuficha mchakato huu hakuzuii migogoro; kunaleta mashaka na kuvuruga imani ya umma. Kamera lazima zibaki wazi.\n\nThis is Kenya on Record. Stay informed, and stay vigilant.",
+    "voice_note": "Habari zenu. This is a quick alert from Kenya on Record that everyone needs to hear.\n\nThere is an active conversation around dropping the live streaming of presidential election results at the national tallying centre. We need to reject this completely. \n\nYour vote does not belong to the commission or political party agents—it belongs to you. The live broadcast is the only tool that allows 50 million citizens to audit the count in real time against the forms uploaded from polling stations. When you shut down the live feed, you invite suspicion, disinformation, and manufactured numbers. \n\nIf an election process is honest and verifiable, it has nothing to fear from a camera. Do not let administrative convenience roll back our hard-won transparency. Forward this note, engage your MP, and let us insist: the tallying stays live.",
+    "sms": "Usiibiwe: Transparency is your right under Art 10. Any move to stop live election tally streaming hides the vote from you. Demand open, verifiable counts.",
+    "reels": "When you cast your ballot, you earn the right to watch it counted. Any proposal to scrap the live streaming of presidential election results is a direct attack on public transparency. Live broadcasts are not entertainment; they are the public's primary shield against electoral fraud. A credible process welcomes scrutiny—it does not pull the plug. Demand that your leaders keep the cameras on."
   },
   "spend_usd": 0.0,
   "revision": 9
