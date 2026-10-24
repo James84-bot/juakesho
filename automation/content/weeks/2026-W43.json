@@ -1892,13 +1892,87 @@
       "reel": true,
       "tg_msg": 508,
       "decided_at": "2026-10-24T09:47:08.616534+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1024m",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 4,
+      "kicker": "Salaried workers",
+      "line": "Workers earning *Sh50,000 and above* face higher taxes to fund low-income exemptions.",
+      "fact": "The government plans tax exemptions for low earners by increasing taxes on salaries from Sh50,000.",
+      "message": "Workers earning Sh50,000 and above face higher taxes to finance exemptions for low-income earners.",
+      "action": "Submit your views on tax changes to the National Assembly Clerk at cna@parliament.go.ke",
+      "source": "People Daily, 2026-10-24",
+      "photo_query": "Kenyan shilling banknotes",
+      "who": "President William Ruto and the National Treasury",
+      "where": "National",
+      "when": "24 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Middle-income earners will see smaller take-home pay each month as deductions rise.",
+      "beats": [
+        "Workers earning *Sh50,000 and above* face higher income taxes.",
+        "Low earners get tax relief by *raising deductions* on middle incomes.",
+        "Salaried Kenyans will lose *more take-home pay* every single month.",
+        "Kenyans demand: the Treasury *protects workers* from new tax burdens.",
+        "Send your views on tax plans to *cna@parliament.go.ke* today."
+      ],
+      "caption": "Workers earning Sh50,000 and above face higher taxes under new proposals.\nMiddle-class payslips are already shrinking under existing levies.\nWhat it means for you: your monthly take-home pay will reduce further.\nSend your views on the tax proposals to cna@parliament.go.ke.\n\n#IncomeTax #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-24T14:24:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Nine confirmed Ebola cases and two deaths require strict public health precautions nationwide."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Pain for Kenyans earning Ksh50,000 and above as Ruto seeks tax exemption for low-income earners",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWm1LRDJnQVFUa29XbElORE4zRjZrYmw2ZkloV0J1QjUzVDN1Z3lYRHpkV0VwWFluVm84QWV3Nlg2RW8xSDF4cERZSjZncnNKRzFqb2Y5TUtwclYweGRyLTQxMWc2b1JsaHhmQU5lczdTUEdpRS12bFpFNWJGUGRUVm54UWx1bkE4cFhCdm9JdV9fdmdiTDQ4VzhldmlnRllleVJoeHhZckctV1VLRXFQbnRZOEI0M2hhLWF1UW1CcEtYWXgtZGxrN3RTdw?oc=5",
+          "published": "2026-10-24"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 4,
+        "action": 8,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.3,
+        "note": "Fix demand score to reflect the actual trending position (topic 4 on the list)."
+      },
+      "drafted_at": "2026-10-24T11:33:34.837678+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1024m-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/atwoli-lauds-rutos-plan-to-exempt-low-income-workers-from-paye/",
+      "ink": {
+        "2": "#FFFFFF"
+      },
+      "reel": true,
+      "tg_msg": 516
     }
   ],
   "scripts": {
-    "radio": "Good evening. This is Kenya on Record, and this week, two critical matters demand our sober attention.\n\nFirst, an urgent public health alert. The Ministry of Health has confirmed nine cases of Ebola, with two fatalities recorded. This is not a cause for panic, but it demands strict discipline. Health facilities are on alert, and we must do our part. Wash your hands frequently with soap and clean running water, avoid direct contact with body fluids of anyone showing symptoms, and report cases of sudden high fever, vomiting, or unusual bleeding to the nearest health post immediately. Vigilance and early reporting will stop this outbreak in its tracks.\n\nMeanwhile, in Parliament, an important step for devolution accountability is unfolding. The Senate is considering a bill that bars exiting county governors from contesting any elective office until they have fully responded to all outstanding Auditor-General queries. For a decade, some county bosses have ignored summonses, left billions unaccounted for, and hopped onto the ballot for Senate or MP to secure immunity. If enacted, this legislation makes audit clearance a mandatory condition before clearance by the IEBC. You cannot seek a fresh mandate while hiding public books.\n\nKwa ufupi: Wizara ya Afya imethibitisha visa tisa vya Ebola na vifo viwili. Chukueni tahadhari za usafi na mripoti dalili zozote mara moja. Bungeni, Seneti inapanga mswada wa kuwazuia magavana wanaoondoka kuwania viti vipya hadi wajibu maswali yote ya ukaguzi wa fedha za umma. Tusiibiwe, tuchukue tahadhari.",
-    "voice_note": "Habari zenu. This is a quick weekly brief from Kenya on Record.\n\nFirst, please take this seriously: nine cases of Ebola and two deaths have been confirmed nationally. Remind your household and neighbours about basic precautions—regular handwashing with soap, avoiding contact with symptomatic individuals, and reporting sudden severe fevers or bleeding to a public hospital immediately. Avoid forwarding unverified remedies; let's stick to verified guidance.\n\nSecond, on public funds: the Senate is pushing a bill to block exiting governors from running for any office until they settle every single pending audit query. For years, county chiefs have looted public funds, ignored oversight committees, and jumped straight into Parliament to protect themselves. That loophole must close. Ambition cannot come before accountability.\n\nShare this voice note with your community, stay vigilant, and let’s keep our leaders on record.",
-    "sms": "USIIBIWE: With Ebola confirmed, ignore fake cures and paid SMS alerts. Trust only verified advisories from the Ministry of Health and public hospitals.",
-    "reels": "For ten years, governors have treated county funds like personal purses, then ran for Senate to dodge their own audit queries. That door might finally be closing. A new Senate bill will bar any exiting county boss from running for elective office until they answer every pending Auditor-General query. No clearance, no ballot. Devolution was meant to serve Kenyans, not create untouchable politicians."
+    "radio": "Hamjambo, welcome back to Kenya on Record. Let’s speak plainly about your payslip.\n\nThis week, proposals show that workers earning fifty thousand shillings and above face higher taxes to finance exemptions for low-income earners. \n\nNow, protecting our lowest-earning citizens during tough economic times is vital. But consider the reality on the ground: fifty thousand shillings is not wealth. In today’s Kenya, after rent, food, transport, and healthcare, that money is barely holding households together. We are talking about teachers, nurses, junior officers, and mid-level professionals.\n\nBy categorising this bracket as comfortable enough to absorb fresh levies, the state falls back on an old habit: squeezing the compliant, formally employed Kenyan simply because PAYE is easy to collect. Meanwhile, wasteful public spending, duplicate allowances, and procurement inflation continue largely unchecked. True economic equity does not mean pushing one struggling worker into poverty to cushion another. It requires cutting government fat and broadening the base fairly.\n\nKwa ufupi: Serikali inapanga kuongeza kodi kwa wafanyakazi wanaopata kuanzia shilingi elfu hamsini ili kufadhili unafuu wa kodi kwa wanaopata mshahara wa chini. Lakini elfu hamsini si utajiri katika uchumi wa sasa. Huwezi kutatua umaskini kwa kuwakamua wafanyakazi wa kawaida huku ubadhirifu serikalini ukiendelea bila kukomeshwa. Tuitishe uwajibikaji.",
+    "voice_note": "Habari zenu. Quick update from Kenya on Record that touches your pocket directly.\n\nIf you earn fifty thousand shillings and above, your taxes are slated to go up. The government says this will finance tax exemptions for low-income earners.\n\nProtecting vulnerable workers is necessary, but let’s be honest: earning fifty k does not make anyone rich in Kenya today. After rent, food, transport, and school fees, that money is already finished. What is happening here is familiar: the salaried middle class has become the state’s default cash machine simply because PAYE cannot be evaded.\n\nBefore Parliament asks ordinary workers to carry an even heavier burden, what concrete steps are being taken to cut public wastage and executive excess? True equity isn't punishing one struggling Kenyan to relieve another. Watch this debate closely, and share this with your colleagues.",
+    "sms": "Usiibiwe: Earning Sh50k is not wealth in this economy. Demand fiscal discipline and an end to state wastage before accepting higher taxes on your payslip.",
+    "reels": "If you earn fifty thousand shillings or more, the state wants you to pay higher taxes to cushion low-income earners. But let’s ask the hard question: since when did fifty thousand shillings make anyone rich in Kenya? In this economy, that payslip is already stretched to the limit. Instead of repeatedly raiding salaried workers, when will the state cut government wastage? Let’s talk about that."
   },
   "spend_usd": 0.0,
   "revision": 9
