@@ -1939,7 +1939,7 @@
           "published": "2026-10-24"
         }
       ],
-      "status": "awaiting",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": []
@@ -1970,7 +1970,12 @@
         "2": "#FFFFFF"
       },
       "reel": true,
-      "tg_msg": 516
+      "tg_msg": 516,
+      "decided_at": "2026-10-24T16:35:52.591895+03:00",
+      "published_at": "2026-10-24T16:37:38.018191+03:00",
+      "ig_id": "18127158484768259",
+      "fb_id": "1849178182880813",
+      "story_id": "17943741624362426"
     }
   ],
   "scripts": {
