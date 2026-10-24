@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-24T06:06:32.529254+00:00",
+  "fetched": "2026-10-24T06:17:13.480997+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -20,6 +20,28 @@
           "title": "Equity Bank employee charged over alleged plot to steal through duplicated system profiles",
           "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001560752/equity-bank-employee-charged-over-alleged-plot-to-steal-through-duplicated-system-profiles",
           "source": "The Standard"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "celtics vs knicks",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "“He’s special,” Paul George Rallies Behind Jayson Tatum’s Clutch Performance Against Knicks",
+          "url": "https://www.sportscapemagazine.com/blog/hes-special-paul-george-rallies-behind-jayson-tatums-clutch-performance-against-knicks",
+          "source": "Sportscape Magazine"
+        },
+        {
+          "title": "Jayson Tatum Clutch Buckets Lead Celtics to Victory in Their Home Opener",
+          "url": "https://www.clnsmedia.com/jayson-tatum-clutch-buckets-lead-celtics-to-victory-in-their-home-opener/",
+          "source": "CLNS Media"
+        },
+        {
+          "title": "Game Recap: Celtics 107, Knicks 103",
+          "url": "https://www.nba.com/watch/video/game-recap-celtics-107-knicks-103-2",
+          "source": "NBA.com"
         }
       ]
     },
@@ -69,6 +91,29 @@
     },
     {
       "geo": "KE",
+      "title": "daily nation",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Back to square one: How MPs reverted to livestream law declared unconstitutional",
+          "url": "https://nation.africa/kenya/news/politics/back-to-square-one-how-mps-reverted-to-livestream-law-declared-unconstitutional-5643690",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Babu Owino's party wants IEBC compelled to livestream election results from polling stations",
+          "url": "https://citizen.digital/article/babu-owinos-party-wants-iebc-compelled-to-livestream-election-results-from-polling-stations-n392636",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "MPs split over recall rules as new law shapes ’27 race",
+          "url": "https://www.the-star.co.ke/news/2026-10-24-mps-split-over-recall-rules-as-new-law-shapes-27-race",
+          "source": "The Star, Kenya"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
       "title": "napoli vs roma prediction",
       "traffic": "200+",
       "news": [
@@ -86,50 +131,6 @@
           "title": "Allegri: \"The match with Roma is important but not crucial.\"",
           "url": "https://romapress.net/allegri-the-match-with-roma-is-important-but-not-crucial/",
           "source": "RomaPress"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "celtics vs knicks",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "“He’s special,” Paul George Rallies Behind Jayson Tatum’s Clutch Performance Against Knicks",
-          "url": "https://www.sportscapemagazine.com/blog/hes-special-paul-george-rallies-behind-jayson-tatums-clutch-performance-against-knicks",
-          "source": "Sportscape Magazine"
-        },
-        {
-          "title": "Jayson Tatum Clutch Buckets Lead Celtics to Victory in Their Home Opener",
-          "url": "https://www.clnsmedia.com/jayson-tatum-clutch-buckets-lead-celtics-to-victory-in-their-home-opener/",
-          "source": "CLNS Media"
-        },
-        {
-          "title": "Game Recap: Celtics 107, Knicks 103",
-          "url": "https://www.nba.com/watch/video/game-recap-celtics-107-knicks-103-2",
-          "source": "NBA.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "spurs vs rockets",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "No updates on Detroit injuries",
-          "url": "https://www.nytimes.com/athletic/live-blogs/nba-scores-season-games-schedule-today/iAdFcCak0Nx8/qgEsnkaiRZT3/",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Rockets Make Statement With Win Over Spurs, Move to 2-0",
-          "url": "https://slamonline.com/nba/rockets-make-statement-with-win-over-spurs-move-to-2-0/",
-          "source": "SLAM Online"
-        },
-        {
-          "title": "De’Aaron Fox (wrist) upgraded to available vs. HOU",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-23/deaaron-fox-wrist-upgraded-to-available-vs-hou",
-          "source": "NBC Sports"
         }
       ]
     },
@@ -154,31 +155,13 @@
           "source": "Everton FC"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "nba",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Mavericks 121-105 Pacers (Oct 23, 2026) Game Recap",
-          "url": "https://www.espn.com/nba/recap?gameId=401909844",
-          "source": "ESPN"
-        },
-        {
-          "title": "Naji Marshall, Dusty May sends strong message to Aaron Nesmith after Cooper Flagg injury",
-          "url": "https://basketnews.com/news-258011-naji-marshall-dusty-may-sends-strong-message-to-aaron-nesmith-after-cooper-flagg-injury.html",
-          "source": "BasketNews.com"
-        },
-        {
-          "title": "Kyrie Irving leads Mavs to win without Flagg",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-23/kyrie-irving-leads-mavs-to-win-without-flagg",
-          "source": "NBC Sports"
-        }
-      ]
     }
   ],
   "dropped": [
+    {
+      "title": "spurs vs rockets",
+      "why": "unsafe: 'odds'"
+    },
     {
       "title": "crystal palace vs newcastle",
       "why": "unsafe: 'Betting'"
