@@ -1772,7 +1772,7 @@
           "published": "2026-10-24"
         }
       ],
-      "status": "awaiting",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1805,7 +1805,12 @@
       "video_credit": "Footage: Narendra Modi / Wikimedia Commons, CC BY 3.0",
       "video_source": "https://commons.wikimedia.org/wiki/File:Details_of_the_New_Parliament_Building_AOzpFXocKI.webm",
       "reel": true,
-      "tg_msg": 507
+      "tg_msg": 507,
+      "decided_at": "2026-10-24T09:47:07.516870+03:00",
+      "published_at": "2026-10-24T09:48:32.468456+03:00",
+      "ig_id": "18092427251199043",
+      "fb_id": "1891460535204020",
+      "story_id": "18106726832265771"
     },
     {
       "id": "2026-w43-hot-1024",
@@ -1851,7 +1856,7 @@
           "published": "2026-10-23"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1881,7 +1886,8 @@
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/128732-el-salvador-imposes-visa-restrictions-kenya-and-7-other-african-countries",
       "reel": true,
-      "tg_msg": 508
+      "tg_msg": 508,
+      "decided_at": "2026-10-24T09:47:08.616534+03:00"
     }
   ],
   "scripts": {
