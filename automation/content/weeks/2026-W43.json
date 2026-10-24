@@ -370,7 +370,7 @@
         "outlet": "CNBC",
         "photo_query": "Lake Turkana Wind Power turbines Loiyangalani Marsabit Kenya"
       },
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": []
@@ -403,7 +403,11 @@
       "reel": true,
       "tg_msg": 378,
       "decided_at": "2026-10-19T23:18:45.591589+03:00",
-      "fresh_checked": "2026-10-23T10:01:28.890323+03:00"
+      "fresh_checked": "2026-10-23T10:01:28.890323+03:00",
+      "published_at": "2026-10-24T11:02:20.817445+03:00",
+      "ig_id": "18109348022245654",
+      "fb_id": "1123999456878755",
+      "story_id": "18078138629423310"
     },
     {
       "id": "2026-w43-d7-glasspoll-r10",
