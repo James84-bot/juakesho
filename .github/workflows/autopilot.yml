@@ -80,7 +80,7 @@ jobs:
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
       - name: Install
-        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'hot' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'this-week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'redo' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rehearse' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'samples' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'remake' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'renew' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rephoto' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'clips' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tracker'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'hot' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'this-week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'redo' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rehearse' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'samples' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'remake' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'renew' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rephoto' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'clips' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tracker' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'render'
         run: |
           pip install -r automation/requirements.txt
           python -m playwright install --with-deps chromium
@@ -88,7 +88,7 @@ jobs:
           if [ "${{ steps.cmd.outputs.c }}" = "clips" ]; then pip install faster-whisper; fi   # captions from the clip's audio
 
       - name: Install (light)
-        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'hot' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'this-week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'redo' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'samples' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'remake' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'renew' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rephoto' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'clips' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tracker' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'hot' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'this-week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'redo' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'samples' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'remake' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'renew' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rephoto' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'clips' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tracker' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'render' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip'
         run: pip install -r automation/requirements.txt
 
       - name: Tests
