@@ -1592,6 +1592,36 @@ def send_samples(dry_run: bool = False) -> None:
     log(f"samples sent: {len(covers)} covers, {n} comment cards")
 
 
+PREVIEW = EXPORTS / "_preview"
+
+
+def send_preview(dry_run: bool = False) -> int:
+    """Sends the files in exports/_preview to Telegram as plain samples (no approve buttons, nothing is posted).
+    exports/_preview/manifest.json: [{"file": "name.mp4", "caption": "..."}]"""
+    manifest = PREVIEW / "manifest.json"
+    if not manifest.exists():
+        log("preview: no manifest")
+        return 0
+    chat = "dry-run" if dry_run else need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
+    sent = 0
+    for item in json.loads(manifest.read_text(encoding="utf-8")):
+        f = PREVIEW / item["file"]
+        if not f.exists():
+            continue
+        caption = "🧪 <b>SAMPLE, nothing is posted</b>\n" + item.get("caption", "")
+        method, field = ("sendVideo", "video") if f.suffix == ".mp4" else ("sendPhoto", "photo")
+        if dry_run:
+            log(f"[dry-run] would send {f.name}")
+        else:
+            fields = {"chat_id": chat, "caption": caption[:1000], "parse_mode": "HTML"}
+            if method == "sendVideo":
+                fields["supports_streaming"] = "true"
+            tg(method, fields, {field: f})
+        sent += 1
+    log(f"preview sent: {sent}")
+    return sent
+
+
 def _esc(text: str) -> str:
     from html import escape
     return escape(str(text), quote=False)
@@ -1711,7 +1741,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -1857,6 +1887,8 @@ def _main(argv: list[str] | None = None) -> int:
             return 1
     if a.command == "metacheck" and not meta_check(dry_run=a.dry_run):
         return 1   # a failed check shows on the run page too, with the reason
+    if a.command == "preview":
+        send_preview(dry_run=a.dry_run)
     if a.command == "reels":
         send_reels(a.week or current_week_label(ahead=0), dry_run=a.dry_run)
     if a.command == "photocheck":   # searches this week's photo queries again and explains each result (state/photos.log)
