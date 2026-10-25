@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-25T22:43:25.674172+00:00",
+  "fetched": "2026-10-25T22:45:52.268277+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -17,7 +17,7 @@
           "source": "ESPN"
         },
         {
-          "title": "Kylian Mbappe goals lead Real Madrid past Barcelona in El Clasico: Live updates, reaction",
+          "title": "Barcelona vs Real Madrid live updates: El Clasico predictions, team news and more",
           "url": "https://www.nytimes.com/athletic/live-blogs/barcelona-vs-real-madrid-live-updates-el-clasico-predictions-team-news-and-more/cZB0CJqaIcUo/",
           "source": "The New York Times"
         }
@@ -25,23 +25,23 @@
     },
     {
       "geo": "KE",
-      "title": "f1",
+      "title": "sporting cp",
       "traffic": "1000+",
       "news": [
         {
-          "title": "F1 LIVE: US Grand Prix 2026 times, results & radio from Austin",
-          "url": "https://www.bbc.com/sport/formula1/live/c87w8r725y8t",
+          "title": "Sporting 2-3 LASK: Austrian champions earn first league phase win in Champions League",
+          "url": "https://www.bbc.com/sport/football/live/cqly08zkkje0t",
           "source": "BBC"
         },
         {
-          "title": "F1 United States GP LIVE: Race updates, results, stream, highlights from 18th round of 2026 Formula 1 season in Austin",
-          "url": "https://www.skysports.com/f1/live-blog/13603251/f1-united-states-gp-live-race-updates-results-stream-highlights-from-18th-round-of-2026-formula-1-season-in-austin",
-          "source": "Sky Sports"
+          "title": "Licensable picture: Sporting CP V LASK - UEFA Champions League, Lisbon, Portugal",
+          "url": "https://www.reutersconnect.com/item/sporting-cp-v-lask-uefa-champions-league-lisbon-portugal/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDA5MUNMRlo",
+          "source": "Reuters Connect"
         },
         {
-          "title": "Kimi Antonelli edges closer to title after winning United States Grand Prix: Formula One – as it happened",
-          "url": "https://www.theguardian.com/sport/live/2026/oct/25/united-states-grand-prix-formula-one-live",
-          "source": "The Guardian"
+          "title": "++[𝕎𝔸𝕋ℂℍ𝕃𝕀𝕍𝔼]𝕋𝕍!] Rays vs Brewers Ｌｉｖｅ Ｓｔｒｅａｍｉｎｇ Ｆｒｅｅ ＯＮ Tv Channel 24 October ２０２6",
+          "url": "https://www.town.shodoshima.lg.jp/section/VR_choseiyoran/shodoshima349.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8venphbWFuYXNhZDk1LmdpdGh1Yi5pby9ueXUuZWR1L3VpLnhtbCIvPjwva3JwYW5vPg==&id=video-rays-v-brewers-mlb-liv-espn-uss2",
+          "source": "小豆島町"
         }
       ]
     },
@@ -73,19 +73,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Liveticker | FC Barcelona - Real Madrid 0:1 | 10. Spieltag | La Liga 2026/27",
-          "url": "https://www.kicker.ch/barcelona-gegen-real-madrid-2026-la-liga-5223887/ticker",
-          "source": "https://www.kicker.ch/"
+          "title": "Mourinho geht auf die Knie: Slapstick und Traum-Kombination: Mbappé-Doppelpack schockt Barcelona",
+          "url": "https://www.n-tv.de/sport/fussball/Slapstick-und-Traum-Kombination-Mbappe-Doppelpack-schockt-Barcelona-id31456975.html",
+          "source": "n-tv.de"
         },
         {
-          "title": "Fußball heute live im TV und LIVE-STREAM: Alles zu den Übertragungen am Sonntag (25.10.)",
-          "url": "https://www.dazn.com/de-DE/news/fussball/fussball-heute-tv-live-stream-uebertragungen-sonntag-laliga-bundesliga/10zbghtuygbmw1wnecb9hbapyn",
-          "source": "DAZN"
+          "title": "Tor im Clasico - Gurkerl! Hier macht Raphina das 1:1 für Barca",
+          "url": "https://www.krone.at/4349569",
+          "source": "Kronen Zeitung"
         },
         {
-          "title": "Experte erklärt: Was bei Barca viel besser läuft als bei Real",
-          "url": "https://fussball-news.de/2026/10/25/experte-erklaert-was-bei-barca-viel-besser-laeuft-als-bei-real/",
-          "source": "fussball-news.de"
+          "title": "Barça im Camp Nou düpiert: „Wir waren nicht wir selbst“",
+          "url": "https://www.barcawelt.de/interview/fc-barcelona-vs-real-madrid-el-clasico-la-liga-2026-27-reaktionen/",
+          "source": "Barçawelt"
         }
       ]
     },
@@ -136,6 +136,10 @@
   ],
   "dropped": [
     {
+      "title": "sporting vs academico",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "ballon d'or",
       "why": "unsafe: 'betting'"
     },
@@ -145,10 +149,6 @@
     },
     {
       "title": "az alkmaar",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "sporting cp",
       "why": "unsafe: 'Betting'"
     }
   ],
