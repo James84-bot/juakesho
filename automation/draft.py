@@ -29,7 +29,7 @@ API_URL = "https://api.anthropic.com/v1/messages"
 DEFAULT_MODEL = "claude-sonnet-5"   # override with JUA_MODEL; see platform.claude.com/docs/en/models/overview
 
 CRAFT_RULES = """MAKE IT WORTH STOPPING FOR (reach comes from the first 2 seconds and from people sending it on)
-- First beat: the single most surprising or useful specific in the material, with its number. Not the topic name,
+- First beat (max 14 words, must contain a figure or a named person, place or body; never open with \"Here's\", \"Did you know\", \"Today\", \"The latest\"): the single most surprising or useful specific in the material, with its number. Not the topic name,
   not scene-setting. Weak: "Hell's Gate Park sits on the Rift Valley floor." Strong: "You can walk and cycle among
   zebras and giraffes at Hell's Gate, one of the few Kenyan parks that allows it" (only if the material says so).
 - Every beat adds a NEW fact from the material. If a line only restates, praises or summarises, delete it and

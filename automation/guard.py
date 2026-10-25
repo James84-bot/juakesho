@@ -127,6 +127,43 @@ PUFFERY = re.compile(
     r"never share (manipulated|fake|false))\b", re.I)
 
 
+# --- Hook test: the first Reel line is the thumbnail and the reason to stay (average watch time is 2-10 s) ---
+FILLER_OPENER = re.compile(
+    r"^\W*(here'?s|here is|did you know|let'?s|today|welcome|in this|have you ever|breaking\W*$|this is about|"
+    r"you need to know|what you need to know|everything you|are you|things? to know|a quick|quick update|"
+    r"the (latest|truth|story|facts?)\b|so,|well,|ok(ay)?,)", re.I)
+HOOK_MAX_WORDS = 16
+HOOK_TEMPLATES = {"sauti", "kenya", "promise", "straight", "money", "usiibiwe", "kumbuka", "scorecard", "africa", "spotlight"}
+
+
+def hook_problem(first: str) -> str:
+    """What is wrong with a Reel's first line, or '' when it earns the stop: short, and carrying a figure or a named thing."""
+    line = re.sub(r"[*_]", "", str(first or "")).strip()
+    words = line.split()
+    if not words:
+        return "the first line is empty"
+    if FILLER_OPENER.search(line):
+        return f"the first line opens with filler ('{' '.join(words[:3])}...'): start with the number, the name or the claim"
+    if len(words) > HOOK_MAX_WORDS:
+        return f"the first line is {len(words)} words (max {HOOK_MAX_WORDS}): it must read in under 2 seconds"
+    has_figure = bool(re.search(r"\d|\b(per cent|percent|million|billion|trillion|half|double|triple)\b", line, re.I))
+    named = [w for w in words[1:] if re.match(r"[A-Z][a-z]|[A-Z]{3,}\b", w)]   # Nairobi, Ruto, KRA, PAYE   # a proper noun after the first word: a person, place, body
+    if not has_figure and not named:
+        return "the first line has no figure and no named person, place or body: it is a topic, not a hook"
+    return ""
+
+
+def _check_hook(post: dict, rep: "Report") -> None:
+    beats = [b for b in (post.get("beats") or []) if isinstance(b, str) and b.strip()]
+    if len(beats) < 3:   # no Reel script: nothing to judge here
+        return
+    if post.get("template") not in HOOK_TEMPLATES:   # explainers, polls (the question is the hook) and clip posts have their own shape
+        return
+    msg = hook_problem(beats[0])
+    if msg:
+        rep.errors.append("hook: " + msg)
+
+
 def _shouting(texts: list[str] | str) -> str:
     """'' if the copy is calm; otherwise what is too loud. Each piece (design text, caption) is judged on its own."""
     texts = [texts] if isinstance(texts, str) else texts
@@ -425,6 +462,7 @@ def check(post: dict) -> Report:
     text = _all_text(post)
     low = text.lower()
     _check_nicknames(post, rep)
+    _check_hook(post, rep)
     if tpl in PHOTO_FIRST and not (post.get("photo_query") or post.get("photo") or post.get("person_photo")):
         (rep.errors if tpl == "sauti" else rep.warnings).append("no photo: add a `photo_query` (a real Kenyan scene); visuals carry the post")
     if str(post.get("line", "")).count("*") % 2 or any(str(post.get(f, "")).count("*") % 2 for f in ("title", "thing", "truth", "claim", "headline", "question", "topic")):
