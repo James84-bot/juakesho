@@ -152,3 +152,29 @@ class Symbolic(unittest.TestCase):
                          ["power lines Kenya", "electricity pylon Kenya"])
         self.assertIn("ballot box Kenya", photos.symbols_for({"line": "IEBC adds 9,164 polling stations"}))
         self.assertEqual(photos.symbols_for({"line": "Nice weather"}), [])
+
+
+class UnfitStockPhotos(unittest.TestCase):
+    """Stand-in photos must not show officials, diplomats or soldiers (a US Air Force drone photo once
+    illustrated a Kenyan breastfeeding bill)."""
+
+    def pages(self, title, desc):
+        info = {"mime": "image/jpeg", "width": 2000, "height": 1500, "url": "https://x/p.jpg", "thumburl": "https://x/t.jpg",
+                "descriptionurl": "https://c/File:p.jpg",
+                "extmetadata": {"LicenseShortName": {"value": "CC0"}, "Artist": {"value": "A"},
+                                "ImageDescription": {"value": desc}, "Categories": {"value": "Kenya"}}}
+        return json.dumps({"query": {"pages": {"1": {"title": title, "index": 1, "imageinfo": [info]}}}}).encode()
+
+    def run_search(self, title, desc):
+        with mock.patch.object(photos, "_get", lambda url, *a, **k: self.pages(title, desc)), \
+             mock.patch.object(photos, "faces_ok", lambda d: True):
+            return photos._commons_once("modern office Nairobi Kenya", "p1")
+
+    def test_foreign_official_and_military_photos_are_dropped(self):
+        for title, desc in (("File:Secretary Rubio Meets with Kenyan President.jpg", "Secretary meets Kenyan President in modern office"),
+                            ("File:Airmen train.jpg", "U.S. Air Force photo of unmanned aircraft training in Kenya, modern office")):
+            self.assertIsNone(self.run_search(title, desc), title)
+
+    def test_plain_office_photo_is_kept(self):
+        got = self.run_search("File:Modern office Nairobi.jpg", "A modern office in Nairobi, Kenya")
+        self.assertIsNotNone(got)

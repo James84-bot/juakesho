@@ -164,6 +164,8 @@ def _openverse_once(query: str, pid: str, place: str | None = None, full: str | 
         if place and place.lower() not in about and "kenya" not in about:   # same place rule as Commons
             why["place"] += 1
             continue
+        if UNFIT.search(about):
+            continue
         if not _relevant(about, full or query):
             why["subject"] += 1
             continue
@@ -250,6 +252,14 @@ def _pick(good: list[tuple[str, dict]], pid: str, tries: int = 4) -> tuple[bytes
     return None
 
 
+# A stand-in photo must not show people with power, diplomacy or armed forces: "Secretary Rubio meets Kenyan
+# President" once illustrated county pensions, and a US Air Force drone photo a breastfeeding bill.
+UNFIT = re.compile(r"\b(air force|army|navy|marines?|soldiers?|military|troops?|embassy|ambassador|secretary of state|"
+                   r"state department|department of state|meets?|meeting|summit|delegation|visits?|president|"
+                   r"prime minister|minister|cabinet|official portrait|signing|ceremony|handshake|unmanned|aircraft|drone)\b",
+                   re.I)
+
+
 def _place(query: str) -> str:
     m = LOCAL.search(query)
     return m.group(0) if m and m.group(0).lower() not in {"africa", "african"} else ""
@@ -294,6 +304,9 @@ def _commons_once(query: str, pid: str, place: str | None = None, full: str | No
                           md.get("Categories", {}).get("value", "")]).lower()
         if place and place.lower() not in about and "kenya" not in about:
             why["place"] += 1
+            continue
+        if UNFIT.search(about):   # a stock photo never shows officials, diplomats or soldiers: it would speak for a story
+            why["unfit"] = why.get("unfit", 0) + 1
             continue
         if not _relevant(about, full or query):   # "Kenya" alone isn't enough: it must be a photo OF the subject
             why["subject"] += 1
