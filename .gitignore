@@ -6,3 +6,5 @@ exports/**/.*.html
 exports/**/photos/
 automation/run.log
 exports/**/videos/
+# Telegram notes stay in the chat, never in this public repo
+automation/state/inbox.jsonl
