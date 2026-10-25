@@ -1,0 +1,247 @@
+{
+  "collection": "2026-W44",
+  "created": "2026-10-25T17:02:44.686654+03:00",
+  "posts": [
+    {
+      "id": "2026-w44-d1-money",
+      "template": "money",
+      "lane": "everyone",
+      "series": "The Real Price",
+      "hook": "Global crude costs hit the pump",
+      "number": "Crude",
+      "unit": "Landed fuel import cost",
+      "what": "Pump prices face upward pressure as Middle East conflicts raise landed fuel import costs.",
+      "why": "Transport fares and household cooking expenses climb with every rise in pump prices.",
+      "check": "Check EPRA monthly fuel pricing notices published on epra.go.ke.",
+      "message": "Middle East conflicts drive up Kenya's pump prices, raising household transport and food budgets.",
+      "action": "Track monthly fuel prices on epra.go.ke before planning your transport budget.",
+      "beats": [
+        "Middle East conflicts push up *fuel prices* at Kenyan pumps.",
+        "Higher landed crude costs directly raise pump prices for consumers.",
+        "Transport fares and household food expenses climb as fuel costs rise.",
+        "Kenyans demand: EPRA enforces fair retail margins on oil marketers."
+      ],
+      "caption": "Middle East wars are hitting Kenyan petrol stations directly. When crude import costs rise, transport fares and groceries follow immediately. Check your route fares this week.\n\nHow much is super petrol at your local station? Tell us below.\n\n#FuelPrices #TheRealPrice #KenyaOnRecord",
+      "source": "Daily Nation, 2026-10-25",
+      "photo_query": "petrol station pump Kenya",
+      "who": "EPRA Director-General Daniel Kiptoo",
+      "where": "National",
+      "when": "25 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Higher fuel prices raise daily matatu fares and increase the cost of moving food to markets.",
+      "bg": "shuka",
+      "publish_at": "2026-10-26T07:30:00+03:00",
+      "angle": "real_price",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Middle East to Kenyan petrol stations: How wars are hitting households",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOa2lELXFRbzZTanF4b2kyaFBHMFZpRXRkUXp6Y0ZMakRDRExEblBWUlRqTkpGS19vWE5STmJOblI1eTNjQWpWVmVqQVZCaGRHUkNDWEhkclNxcmhtLWNkcTI3ak5ic3dQRUFtTkNvZ2ZjajJyWk1PMUlJSm4yT3l2bm5oMUFlcjlaZVc1b0hERXFEM0laeGxLMF9mdkxJX3dOclpKTUpSRjkzNVJGY0paSDE2U3R5R0ZBRE5n?oc=5",
+          "published": "2026-10-25"
+        }
+      ],
+      "material": {
+        "kind": "price",
+        "key": "news:https://news.google.com/rss/articles/CBMiuwFBVV95cUxOa2lELXFRbzZTanF4b2kyaFBHMFZpRXRkUXp6Y0ZMakRDRExEblBWUlRqTkpGS19vWE5STmJOblI1eTNjQWpWVmVqQVZCaGRHUkNDWEhkclNxcmhtLWNkcTI3ak5ic3dQRUFtTkNvZ2ZjajJyWk1PMUlJSm4yT3l2bm5oMUFlcjlaZVc1b0hERXFEM0laeGxLMF9mdkxJX3dOclpKTUpSRjkzNVJGY0paSDE2U3R5R0ZBRE5n?oc=5",
+        "title": "Middle East to Kenyan petrol stations: How wars are hitting households",
+        "outlet": "Daily Nation",
+        "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOa2lELXFRbzZTanF4b2kyaFBHMFZpRXRkUXp6Y0ZMakRDRExEblBWUlRqTkpGS19vWE5STmJOblI1eTNjQWpWVmVqQVZCaGRHUkNDWEhkclNxcmhtLWNkcTI3ak5ic3dQRUFtTkNvZ2ZjajJyWk1PMUlJSm4yT3l2bm5oMUFlcjlaZVc1b0hERXFEM0laeGxLMF9mdkxJX3dOclpKTUpSRjkzNVJGY0paSDE2U3R5R0ZBRE5n?oc=5",
+        "published": "2026-10-25"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach",
+          "possible named person(s): Crude Landed, General Daniel Kiptoo, Middle East. Civic posts target systems, not people."
+        ]
+      },
+      "drafted_at": "2026-10-25T17:14:42.434585+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d1-money-photo.jpg",
+      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
+      "reel": true,
+      "tg_msg": 537
+    },
+    {
+      "id": "2026-w44-d2-kenya",
+      "template": "kenya",
+      "lane": "young_pro",
+      "series": "Kenya at its best",
+      "place": "Aberdare ranges, Nyeri",
+      "line": "A historic *mugumo fig tree* served as a secret post office during the liberation struggle.",
+      "fact": "Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
+      "source": "https://kws.go.ke/park/aberdare-national-park/",
+      "message": "Aberdare National Park preserves the mugumo tree Mau Mau fighters used as a secret drop.",
+      "action": "Plan a visit through the Kenya Wildlife Service portal at kws.go.ke.",
+      "beats": [
+        "Aberdare Park preserves Kenya's *Mau Mau Post Office tree*.",
+        "Mau Mau fighters used the mugumo tree to drop secret messages.",
+        "The park protects forested ranges and water towers in Nyeri.",
+        "Save this post for your next trip to the Aberdare ranges."
+      ],
+      "caption": "Deep inside Aberdare National Park stands a mugumo fig tree that carried freedom secrets. Mau Mau fighters used its hollow trunk to exchange coded messages during the liberation struggle. Our history lives in our forests.\n\nSave this for your next trip to Nyeri.\n\n#Aberdare #KenyaAtItsBest #KenyaOnRecord",
+      "photo_query": "Aberdare National Park waterfall Kenya",
+      "who": "Kenya Wildlife Service",
+      "where": "Nyeri County",
+      "when": "2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Kenyans preserve historic liberation sites alongside indigenous forest water towers.",
+      "bg": "usiku",
+      "publish_at": "2026-10-27T12:45:00+03:00",
+      "source_links": [
+        {
+          "outlet": "Kenya Wildlife Service",
+          "title": "Aberdare National Park: Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
+          "link": "https://kws.go.ke/park/aberdare-national-park/",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:aberdare",
+        "id": "aberdare",
+        "series": "Kenya at its best",
+        "place": "Aberdare ranges, Nyeri",
+        "name": "Aberdare National Park",
+        "fact": "Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
+        "source": "https://kws.go.ke/park/aberdare-national-park/",
+        "outlet": "Kenya Wildlife Service",
+        "photo_query": "Aberdare National Park waterfall Kenya"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-25T17:14:42.434592+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d2-kenya-photo.jpg",
+      "photo_credit": "Photo: Matteo Frigo / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Gura_Giant_Falls_view_from_the_top_of_Karuru_Falls.jpg",
+      "reel": true,
+      "tg_msg": 538
+    },
+    {
+      "id": "2026-w44-d3-promise",
+      "template": "promise",
+      "lane": "everyone",
+      "who": "William Ruto, President of Kenya",
+      "promise": "Guarantee full public transparency on all public asset sales and state corporation partnerships.",
+      "said": "Kenya Kwanza manifesto, 2022",
+      "verdict": "stalled",
+      "reality": "President Ruto defended Dangote's 25% stake in Kenya Pipeline Company without making the agreement public.",
+      "proof": [
+        "Ruto defended Dangote's 25% KPC acquisition amid public questions on process.",
+        "Citizens have demanded full disclosure of terms governing strategic state energy assets."
+      ],
+      "ask": "Where is the full public agreement on the KPC stake?",
+      "source": "People Daily, 2026-10-25, Capital FM News, 2026-10-25",
+      "message": "State asset sales require full public disclosure under the law and campaign commitments.",
+      "action": "Demand the KPC deal details by writing to the National Assembly Energy Committee.",
+      "beats": [
+        "President Ruto defended Dangote's *25% stake* in Kenya Pipeline.",
+        "The 2022 manifesto promised full transparency on all state assets.",
+        "Wananchi still wait for the official agreement documents.",
+        "Kenyans demand: the Treasury publishes the full *KPC agreement*."
+      ],
+      "caption": "The government is defending Dangote's 25% stake in Kenya Pipeline Company amid public outcry. Strategic national infrastructure belongs to wananchi. When public assets are sold or shared, the full terms must be laid out in daylight.\n\nShould the KPC transaction agreement be published in full? Drop your view below.\n\n#KPC #PromiseTracker #KenyaOnRecord",
+      "photo_query": "Kenya National Assembly",
+      "where": "National",
+      "when": "25 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Selling stakes in strategic national pipelines directly affects state revenue and public oversight.",
+      "bg": "usiku",
+      "publish_at": "2026-10-28T18:30:00+03:00",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Ruto tells critics to keep petty politics off Dangote’s KPC stake",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdk5RZG96Z0hCLS0ybGRkRkpjbGx5My1peG9DR3E0VzJTd1pVS2owVU1VOWpVXzc2RGhMLS16Q0lrbnJUQ2xQVHFqR1pBdXlOUkxzWEx3LW9JaTkwc2dSaENFRS1ZWU4xWUpHNm1VNm9EQ3NqSkdDVGphMTJJZnBqWlVSaUZVcWRKd3ljQ21KRlpXdFJNX194aUJqZHBMYU43Zkxr?oc=5",
+          "published": "2026-10-25"
+        },
+        {
+          "outlet": "Capital FM News",
+          "title": "President Ruto Defends Dangote’s 25% KPC Stake Amid Public Outcry",
+          "link": "https://capitalfm.africa/president-ruto-defends-dangotes-25-kpc-stake-amid-public-outcry/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-25"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-25T17:14:42.434595+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d3-promise-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/president-ruto-defends-dangotes-25-kpc-stake-amid-public-outcry/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "ink": {
+        "1": "#F8F7F6"
+      },
+      "reel": true,
+      "tg_msg": 539
+    },
+    {
+      "id": "2026-w44-d4-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-10-29T19:30:00+03:00",
+      "status": "needs_human",
+      "size": "story",
+      "angle": "price_quiz",
+      "series": "Guess the Price",
+      "guard": {
+        "errors": [
+          "no headline this week states a price, so Guess the Price would have no real answer"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-25T17:14:42.434597+03:00"
+    },
+    {
+      "id": "2026-w44-d5-straight",
+      "template": "straight",
+      "bg": "usiku",
+      "lane": "hustle",
+      "publish_at": "2026-10-30T17:00:00+03:00",
+      "status": "planned",
+      "angle": "myth",
+      "series": "Myth or Fact"
+    },
+    {
+      "id": "2026-w44-d6-kenya",
+      "template": "kenya",
+      "bg": "usiku",
+      "lane": "diaspora",
+      "publish_at": "2026-10-31T11:00:00+03:00",
+      "status": "planned",
+      "series": "Built in Kenya"
+    },
+    {
+      "id": "2026-w44-d7-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-01T18:00:00+03:00",
+      "status": "planned",
+      "size": "story"
+    }
+  ],
+  "scripts": {
+    "radio": "Good evening, listener, and welcome to Kenya on Record. This week, our household budgets are absorbing another shock. Escalating conflicts in the Middle East have driven up global crude costs, and as always, the effect at our local fuel pump is immediate. When diesel and petrol rise, it is never just about motorists. Matatu fares creep up, farm produce costs more to transport to market, and the family shopping basket shrinks.\n\nAway from the markets, there is quiet dignity in our history. Deep inside the Aberdare National Park, the Kenya Wildlife Service continues to preserve a historic mugumo tree once used by Mau Mau freedom fighters as an ingenious, clandestine postal drop. It stands as an enduring monument to the discipline and sacrifice that birthed our nation.\n\nThat legacy demands that we safeguard what belongs to the public today. As debates intensify over the sale of key state enterprises, we must hold government strictly to the law and its campaign pledges. National assets belong to the people of Kenya. Any disposal done without comprehensive public disclosure, independent valuations, and citizen participation violates both legal statutes and democratic trust.\n\nKwa ufupi: Kupanda kwa bei ya mafuta duniani kumezidisha gharama ya maisha na usafiri nchini. Huko Aberdare, mti wa mugumo uliotumiwa na Mau Mau unakumbusha umuhimu wa kulinda urithi wetu. Mwisho, uuzaji wowote wa mashirika ya umma lazima ufanyike kwa uwazi kamili na kufuata sheria bila kuficha chochote.",
+    "voice_note": "Habari zenu, this is Kenya on Record with your weekly accountability briefing. \n\nFirst, check your wallet: international crude prices spiked due to renewed conflicts in the Middle East, and the ripple effect has hit our pump prices. Expect matatu operators and food distributors to pass down the extra cost, so plan your weekly budget with care.\n\nSecond, keep your eyes on public property. The government is moving forward with plans to sell several state corporations. The law and past political promises are very clear: privatising public wealth requires open disclosure, parliamentary scrutiny, and public participation. Demand to see the valuation reports and buyer lists.\n\nFinally, a point of national pride: the historic mugumo tree in the Aberdares, used as a secret message drop by the Mau Mau, remains protected. Our forebears guarded this country with their lives—let us guard its resources with our vigilance. Forward this to your group, and stay informed.",
+    "sms": "Usiibiwe: Any sale of state corporations requires full public disclosure and public participation by law. Demand transparency before national assets are sold.",
+    "reels": "Who actually owns Kenya's state corporations? You do. When the state moves to sell public assets, the law and campaign commitments require total transparency. No boardroom shortcuts, no undervalued disposals, and no hidden buyers. Every valuation and tender detail must be made public before a single asset changes hands. National wealth is not private property. Stay vigilant, ask the hard questions, and hold leadership to account."
+  },
+  "spend_usd": 0.0
+}

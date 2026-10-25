@@ -1,31 +1,44 @@
 {
-  "updated": "2026-10-21T21:37:23.551415+03:00",
+  "updated": "2026-10-25T17:02:37.100504+03:00",
   "top": [
     {
       "id": "2026-w42-d6-promise-r3",
       "series": "promise",
       "lane": "everyone",
-      "score": 571.4,
+      "score": 500.0,
       "opening": "A financial promise delivered.",
-      "reach": 7,
+      "reach": 8,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 6.7
+      "avg_watch_s": 6.0
     },
     {
       "id": "2026-w43-hot-1021",
       "series": "sauti",
       "lane": "everyone",
-      "score": 375.0,
+      "score": 444.4,
       "opening": "The government plans to drop the 25% import tax on phones.",
-      "reach": 8,
+      "reach": 9,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 2,
+      "avg_watch_s": 5.7
+    },
+    {
+      "id": "2026-w43-hot-1024m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 428.6,
+      "opening": "Workers earning Sh50,000 and above face higher income taxes.",
+      "reach": 7,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 5.8
+      "avg_watch_s": 4.3
     },
     {
       "id": "2026-w42-d2-money-r3",
@@ -52,60 +65,47 @@
       "comments": 1,
       "likes": 2,
       "avg_watch_s": 4.0
-    },
-    {
-      "id": "2026-w42-hot-1015",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 285.7,
-      "opening": "EPRA hiked the prices.",
-      "reach": 14,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 2,
-      "avg_watch_s": 5.2
     }
   ],
   "bottom": [
     {
-      "id": "2026-w42-hot-1013",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 178.6,
-      "opening": "Miss Sh50 and tokens cut off.",
-      "reach": 28,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 3,
-      "avg_watch_s": 6.1
-    },
-    {
-      "id": "2026-w42-d3-promise-r3",
-      "series": "promise",
-      "lane": "campus",
-      "score": 173.9,
-      "opening": "Guaranteed paid internships promised.",
-      "reach": 23,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 2,
-      "avg_watch_s": 5.0
-    },
-    {
       "id": "2026-w43-hot-1019e",
       "series": "sauti",
       "lane": "everyone",
-      "score": 97.6,
+      "score": 93.0,
       "opening": "The High Court convicted Paul Mackenzie and 28 others of murder.",
-      "reach": 41,
+      "reach": 43,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 5.2
+      "avg_watch_s": 5.1
+    },
+    {
+      "id": "2026-w43-hot-1025",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 39.2,
+      "opening": "A building collapse in Eastleigh has left 31 people missing.",
+      "reach": 51,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 3.4
+    },
+    {
+      "id": "2026-w43-hot-1023m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 23.4,
+      "opening": "Kenya Met warns of heavy rain in 44 counties this week.",
+      "reach": 128,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 4.0
     }
   ],
   "all": [
@@ -113,27 +113,40 @@
       "id": "2026-w42-d6-promise-r3",
       "series": "promise",
       "lane": "everyone",
-      "score": 571.4,
+      "score": 500.0,
       "opening": "A financial promise delivered.",
-      "reach": 7,
+      "reach": 8,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 6.7
+      "avg_watch_s": 6.0
     },
     {
       "id": "2026-w43-hot-1021",
       "series": "sauti",
       "lane": "everyone",
-      "score": 375.0,
+      "score": 444.4,
       "opening": "The government plans to drop the 25% import tax on phones.",
-      "reach": 8,
+      "reach": 9,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 2,
+      "avg_watch_s": 5.7
+    },
+    {
+      "id": "2026-w43-hot-1024m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 428.6,
+      "opening": "Workers earning Sh50,000 and above face higher income taxes.",
+      "reach": 7,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 5.8
+      "avg_watch_s": 4.3
     },
     {
       "id": "2026-w42-d2-money-r3",
@@ -175,30 +188,43 @@
       "avg_watch_s": 5.2
     },
     {
+      "id": "2026-w43-d6-kenya-r10",
+      "series": "kenya",
+      "lane": "hustle",
+      "score": 285.7,
+      "opening": "In Marsabit County, 365 wind turbines can produce 310 megawatts.",
+      "reach": 7,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 4.6
+    },
+    {
       "id": "2026-w43-hot-1020",
       "series": "sauti",
       "lane": "everyone",
-      "score": 266.7,
+      "score": 235.3,
       "opening": "Parliament passes a bill requiring breastfeeding rooms in offices.",
-      "reach": 15,
+      "reach": 17,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 4.7
+      "avg_watch_s": 4.2
     },
     {
       "id": "2026-w42-d4-sauti-r3",
       "series": "sauti",
       "lane": "campus",
-      "score": 230.8,
+      "score": 214.3,
       "opening": "IEBC wants 6.3 million youth.",
-      "reach": 13,
+      "reach": 14,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 5.0
+      "avg_watch_s": 5.4
     },
     {
       "id": "2026-w42-hot-1016",
@@ -211,7 +237,7 @@
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 4.9
+      "avg_watch_s": 4.7
     },
     {
       "id": "2026-w42-hot-1017",
@@ -227,32 +253,6 @@
       "avg_watch_s": 7.0
     },
     {
-      "id": "2026-w42-hot-1014",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 210.5,
-      "opening": "Fuel prices are political football again.",
-      "reach": 19,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 2,
-      "avg_watch_s": 8.9
-    },
-    {
-      "id": "2026-w43-d2-kenya-r9x-r2",
-      "series": "kenya",
-      "lane": "diaspora",
-      "score": 187.5,
-      "opening": "Kenya's first national park is just outside Nairobi.",
-      "reach": 16,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 5.6
-    },
-    {
       "id": "2026-w42-hot-1013",
       "series": "sauti",
       "lane": "everyone",
@@ -266,30 +266,147 @@
       "avg_watch_s": 6.1
     },
     {
-      "id": "2026-w42-d3-promise-r3",
-      "series": "promise",
-      "lane": "campus",
+      "id": "2026-w42-hot-1014",
+      "series": "sauti",
+      "lane": "everyone",
       "score": 173.9,
-      "opening": "Guaranteed paid internships promised.",
+      "opening": "Fuel prices are political football again.",
       "reach": 23,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 5.0
+      "avg_watch_s": 9.8
+    },
+    {
+      "id": "2026-w43-d2-kenya-r9x-r2",
+      "series": "kenya",
+      "lane": "diaspora",
+      "score": 166.7,
+      "opening": "Kenya's first national park is just outside Nairobi.",
+      "reach": 18,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 5.8
+    },
+    {
+      "id": "2026-w43-hot-1024e",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 166.7,
+      "opening": "Kenya's national budget is set to hit Sh5.4 trillion by 2028.",
+      "reach": 12,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 5.8
+    },
+    {
+      "id": "2026-w42-d3-promise-r3",
+      "series": "promise",
+      "lane": "campus",
+      "score": 160.0,
+      "opening": "Guaranteed paid internships promised.",
+      "reach": 25,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 2,
+      "avg_watch_s": 4.7
+    },
+    {
+      "id": "2026-w43-hot-1022",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 153.8,
+      "opening": "Counties owe workers Sh100 billion in money still owed for pensions.",
+      "reach": 13,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 1.9
+    },
+    {
+      "id": "2026-w43-hot-1023",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 142.9,
+      "opening": "The Treasury plans to scrap the Sh2,400 monthly PAYE tax relief.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 3.3
+    },
+    {
+      "id": "2026-w43-hot-1024",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 133.3,
+      "opening": "The Ministry of Health confirms a second Ebola death.",
+      "reach": 15,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 9.7
+    },
+    {
+      "id": "2026-w43-hot-1023b1332",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 125.0,
+      "opening": "MPs passed a Bill scrapping live streaming of election results.",
+      "reach": 16,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 6.9
     },
     {
       "id": "2026-w43-hot-1019e",
       "series": "sauti",
       "lane": "everyone",
-      "score": 97.6,
+      "score": 93.0,
       "opening": "The High Court convicted Paul Mackenzie and 28 others of murder.",
-      "reach": 41,
+      "reach": 43,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 5.2
+      "avg_watch_s": 5.1
+    },
+    {
+      "id": "2026-w43-hot-1025",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 39.2,
+      "opening": "A building collapse in Eastleigh has left 31 people missing.",
+      "reach": 51,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 3.4
+    },
+    {
+      "id": "2026-w43-hot-1023m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 23.4,
+      "opening": "Kenya Met warns of heavy rain in 44 counties this week.",
+      "reach": 128,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 4.0
     }
   ]
 }
