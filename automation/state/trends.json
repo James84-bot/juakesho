@@ -1,156 +1,227 @@
 {
-  "fetched": "2026-10-25T14:02:37.368384+00:00",
+  "fetched": "2026-10-25T15:05:34.726566+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "inter milan",
-      "traffic": "2000+",
+      "title": "liverpool",
+      "traffic": "5000+",
       "news": [
         {
-          "title": "Inter player ratings vs Fiorentina: Marcus Thuram and Piotr Zielinski spark incredible late turnaround",
-          "url": "https://www.goal.com/en-ke/lists/inter-player-ratings-fiorentina-marcus-thuram-piotr-zielinski-serie-a/bltd2f669160fb7979f",
-          "source": "Goal.com"
-        },
-        {
-          "title": "+[in diretta]+ Inter-Fiorentina Calcio In Diretta Streaming Gratis (Coppa Italia)25 october 2026",
-          "url": "https://www.fctokyo.co.jp/en/panorama/back_sb.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vY2ltYW5nby5naXRodWIuaW8vc2FuaS9idWQueG1sIi8+PC9rcnBhbm8+&id=video-inter-fiorentina-calcio-viv-directo-tv-ukkk0.0.0.0.0.0.91-472",
-          "source": "FC東京オフィシャルホームページ"
-        },
-        {
-          "title": "Marcus Thuram sparks a madcap finale for Inter, who make a miraculous escape",
-          "url": "https://www.livescore.com/en/news/football/serie-a/marcus-thuram-sparks-a-madcap-finale-for-inter-who-make-a-miraculous-escape-goal/",
-          "source": "LiveScore"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "crystal palace vs chelsea",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Crystal Palace vs Chelsea: Women's Super League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cw0k0nldmy54t",
-          "source": "BBC"
-        },
-        {
-          "title": "Crystal Palace Women vs Chelsea Women LIVE! WSL score updates, news, prediction, lineups and how to watch or stream",
-          "url": "https://www.skysports.com/football/live-blog/13602633/crystal-palace-women-vs-chelsea-women-live-wsl-score-updates-news-prediction-lineups-and-how-to-watch-or-stream",
+          "title": "Liverpool vs Brighton LIVE! Premier League score updates, news, prediction, line-ups and how to watch or stream",
+          "url": "https://www.skysports.com/football/live-blog/13602620/liverpool-vs-brighton-live-premier-league-score-updates-news-prediction-lineups-and-how-to-watch-or-stream",
           "source": "Sky Sports"
         },
         {
-          "title": "Confirmed Chelsea Women line up vs Crystal Palace | News | Official Site",
-          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-crystal-palace-wsl",
-          "source": "Chelsea Football Club"
+          "title": "Team news: Confirmed Liverpool line-up v Brighton & Hove Albion",
+          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-brighton-and-hove-albion",
+          "source": "Liverpool FC"
+        },
+        {
+          "title": "Liverpool vs. Brighton: Preview, Predictions and Lineups",
+          "url": "https://www.si.com/soccer/liverpool-vs-brighton-preview-predictions-lineups-10-25-26",
+          "source": "Sports Illustrated"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "athletic vs getafe",
+      "title": "manchester united f.c. vs afc bournemouth standings",
       "traffic": "500+",
       "news": [
         {
-          "title": "Athletic-Getafe, en directo: Bordalás da el once y vuelve Carvajal",
-          "url": "https://onefootball.com/es/noticias/athletic-getafe-en-directo-bordalas-da-el-once-y-vuelve-carvajal-43669528",
-          "source": "OneFootball"
+          "title": "Premier League: Fernandes left out by Man Utd plus Liverpool v Brighton & two more games",
+          "url": "https://www.bbc.com/sport/football/live/c5dj4kvpd4j9t",
+          "source": "BBC"
         },
         {
-          "title": "[VER DAZN EN VIVO] Athletic Club y Getafe GRATIS vía ESPN y STAR Plus",
-          "url": "https://www.fctokyo.co.jp/en/panorama/back_sb.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2FsaXNjaWFqYW1lczEuZ2l0aHViLmlvL25iYy5lZHUveHl6LnhtbCIvPjwva3JwYW5vPg==&id=ver-dazn-en-vivo-athletic-club-y-getafe-q29lf",
+          "title": "Bruno Fernandes: Manchester United captain dropped for crucial Premier League game against Bournemouth",
+          "url": "https://www.skysports.com/football/news/13603513/bruno-fernandes-manchester-united-captain-dropped-for-crucial-premier-league-game-against-bournemouth",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Bruno Fernandes left out of Manchester United starting line-up vs. Bournemouth after Como outburst",
+          "url": "https://www.nytimes.com/athletic/7722277/2026/10/25/bruno-fernandes-manchester-united-team-bournemouth/",
+          "source": "The New York Times"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "leverkusen",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Bundesliga im Liveticker: TSG 1899 Hoffenheim trifft auf Bayer 04 Leverkusen - Alle Highlights!",
+          "url": "https://www.zdfheute.de/sport/fussball-bundesliga/tsg-1899-hoffenheim-bayer-04-leverkusen-liveticker-bundesliga-highlights-saison-2026-27-100.html",
+          "source": "ZDFheute"
+        },
+        {
+          "title": "Livestream: Hoffenheim - Bayer Leverkusen",
+          "url": "https://www.dazn.com/de-AT/news/fussball/livestream-hoffenheim-bayer-leverkusen-bundesliga/ae3u2vcd8ers18larlc0q4cqq",
+          "source": "DAZN"
+        },
+        {
+          "title": "Hoffenheim vs. Leverkusen Tipp, Quoten, News & Prognose | 25.10.2026",
+          "url": "https://onefootball.com/de/news/hoffenheim-vs-leverkusen-tipp-quoten-news-prognose-25102026-43668251",
+          "source": "OneFootball"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "live score",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "With Nick Bosa out longer than expected, 49ers may not have enough healthy players for roster spots on Sunday",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/with-nick-bosa-out-longer-than-expected-49ers-may-not-have-enough-healthy-players-for-roster-spots-on-sunday",
+          "source": "NBC Sports"
+        },
+        {
+          "title": "Titans vs. Browns Live Score NFLTM Match Today",
+          "url": "https://www.fctokyo.co.jp/en/panorama/back_sb.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2x4Y2x4ZHMuZ2l0aHViLmlvL25mbC9ob3QueG1sIi8+PC9rcnBhbm8+&id=video-titans-vs-browns-live-score-pro",
           "source": "FC東京オフィシャルホームページ"
         },
         {
-          "title": "🚨 Maroan, Iván Azón...hay ONCES confirmados en el Athletic-Getafe",
-          "url": "https://es-us.noticias.yahoo.com/deportes/maroan-iv%C3%A1n-az%C3%B3n-onces-confirmados-115000288.html",
+          "title": "5 Best NFL Bets and Player Props for Sunday’s NFL Matchup Falcons vs 49ers With Prediction",
+          "url": "https://www.fanduel.com/research/5-best-nfl-bets-and-player-props-for-sunday-s-nfl-matchup-falcons-vs-49ers-with-prediction",
+          "source": "FanDuel"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "celta vs betis",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Celta - Betis: El calendario prueba la madurez del Betis",
+          "url": "https://www.abc.es/deportes/alfinaldelapalmera/noticias-betis/celta-betis-calendario-prueba-madurez-betis-20261025071803-nts.html",
+          "source": "ABC"
+        },
+        {
+          "title": "🚨 Durán, Isco, sin Parrott...hay ONCES en el Celta-Betis",
+          "url": "https://es-us.noticias.yahoo.com/deportes/dur%C3%A1n-isco-parrott-onces-celta-140500412.html",
+          "source": "Yahoo"
+        },
+        {
+          "title": "Giráldez: “El cansancio no nos tiene que valer de excusa\"",
+          "url": "https://www.atlantico.net/celtismo/giraldez-cansancio-no-valer-excusa_1_20261025-4465220.html",
+          "source": "Atlántico"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "pl",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Tak kończy hegemon. Największa gospodarka UE na dnie deficytu",
+          "url": "https://www.money.pl/biznes/tak-konczy-hegemon-najwieksza-gospodarka-ue-na-dnie-deficytu-7343131620894816a.html",
+          "source": "Money.pl"
+        },
+        {
+          "title": "Chiński import wygasi polskie fabryki? Na liście prawie 400 grup towarowych",
+          "url": "https://www.rp.pl/biznes/art45390861-chinskie-towary-zalewaja-polske-prawie-400-grup-produktow-zagraza-krajowym-fabrykom",
+          "source": "Rzeczpospolita"
+        },
+        {
+          "title": "MRiT: Polska za zrównoważeniem wymiany handlowej z Chinami i dywersyfikacją partnerstw gospodarczych (komunikat)",
+          "url": "https://www.portalsamorzadowy.pl/polityka-i-spoleczenstwo/mrit-polska-za-zrownowazeniem-wymiany-handlowej-z-chinami-i-dywersyfikacja-partnerstw-gospodarczych-komunikat,681470.html",
+          "source": "Portal Samorządowy"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "live football tv",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Utah 21-13 Houston (Oct 24, 2026) Game Recap",
+          "url": "https://www.espn.com/college-football/recap?gameId=401856837",
+          "source": "ESPN"
+        },
+        {
+          "title": "ESPN College Football FPI Week 8: Utah, UCLA Win; IU Survives",
+          "url": "https://finchannel.com/utah-and-ucla-stay-unbeaten-as-week-8-delivers-another-round-of-upsets/139376/sport/2026/10/",
+          "source": "finchannel"
+        },
+        {
+          "title": "Utah emerges as lone Big 12 unbeaten in CFP race after rallying past Houston",
+          "url": "https://uk.sports.yahoo.com/news/utah-emerges-lone-big-12-055840800.html",
           "source": "Yahoo"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "hibernian vs celtic",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Hibernian vs Celtic: Scottish Premiership radio commentary, updates & report",
-          "url": "https://www.bbc.com/sport/football/live/cm93z0vn52x3t",
-          "source": "BBC"
-        },
-        {
-          "title": "Hibernian vs Celtic LIVE! Scottish Premiership score updates, news, prediction, line-ups and how to watch or stream",
-          "url": "https://www.skysports.com/football/live-blog/13601823/hibs-vs-celtic-live-scottish-premiership-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Hibs striker Nathan Lowe to be out for longer than expected",
-          "url": "https://www.deadlinenews.co.uk/2026/10/24/hibs-striker-nathan-lowe-to-be-out-for-longer-than-expected/",
-          "source": "Deadline News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "celtic",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Sunday's Scottish Premiership LIVE: Hibernian v Celtic, Motherwell v Hearts - radio & text",
-          "url": "https://www.bbc.com/sport/football/live/cr4g10g2l29zt",
-          "source": "BBC"
-        },
-        {
-          "title": "[!LIVESTREAMs!]Tv] Hibernian vs Celtic Ｌｉｖｅ Ｓｔｒｅａｍｉｎｇ Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 25 October 2026 Stream",
-          "url": "https://www.fctokyo.co.jp/en/panorama/back_sb.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5bmVwcHkuZ2l0aHViLmlvL2JhYnUvTWF0Y2hlbmdpbmUueG1sIi8+PC9rcnBhbm8+&id=video-hibernian-vs-celtic-stream-684",
-          "source": "FC東京オフィシャルホームページ"
-        },
-        {
-          "title": "Goals and highlights of Hibernian 1 x 2 Celtic in the Scottish Premiership",
-          "url": "https://www.vavel.com/en-us/soccer/2026/10/25/1276581-hibernian-vs-celtic-live-score-scottish-premiership-2026-27.html",
-          "source": "VAVEL.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "afc leopards",
+      "title": "psv",
       "traffic": "100+",
       "news": [
         {
-          "title": "AFC Leopards, Shabana headline Sunday’s Premier League action",
-          "url": "https://eastleighvoice.co.ke/sports/415951/afc-leopards-shabana-headline-sundays-premier-league-action",
-          "source": "The Eastleigh Voice"
+          "title": "PSV vs Feyenoord: Dutch Eredivisie stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cqwy78zxl6jkt",
+          "source": "BBC"
         },
         {
-          "title": "Boost for AFC Leopards as Gambian striker returns ahead of Shabana clash",
-          "url": "https://www.mozzartsport.co.ke/football/news/boost-for-afc-leopards-as-gambian-striker-returns-ahead-of-shabana-clash/70146",
-          "source": "Mozzart Sport Kenya"
+          "title": "Preview: PSV Eindhoven vs. Feyenoord - prediction, team news, lineups",
+          "url": "https://www.sportsmole.co.uk/football/psv-eindhoven/preview/psv-vs-feyenoord-prediction-team-news-lineups_607525.html",
+          "source": "Sports Mole"
         },
         {
-          "title": "“We are ready”: Shabana FC coach Ahmed Fathi declares ahead of AFC Leopards clash",
-          "url": "https://blog.ke.sportpesa.com/2026/10/24/we-are-ready-shabana-fc-coach-ahmed-fathi-declares-ahead-of-afc-leopards-clash/",
-          "source": "SportPesa Blog"
+          "title": "PSV Injury Update: Ricardo Pepi and Sam Lammers Latest as Peter Bosz Faces Major Striker Headache Against Feyenoord",
+          "url": "https://roundtable.io/sports/soccer/eredivisie/psv-eindhoven/news/psv-injury-update-ricardo-pepi-and-sam-lammers-latest-as-peter-bosz-faces-major-striker-headache-against-feyenoord",
+          "source": "roundtable.io"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "university of nairobi ksh20 billion debt",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "MPs demand UoN plan to tackle Sh20bn debt",
+          "url": "https://www.the-star.co.ke/news/2026-10-24-mps-demand-uon-plan-to-tackle-sh20bn-debt",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "MPs question UoN's management over insolvency, Sh20bn debt",
+          "url": "https://www.standardmedia.co.ke/business/education/article/2001560783/mps-question-uons-management-over-insolvency-sh20bn-debt",
+          "source": "The Standard"
+        },
+        {
+          "title": "Auditor-General declares the University of Nairobi technically insolvent amid Ksh20B debt",
+          "url": "https://peopledaily.digital/news/auditor-general-declares-the-university-of-nairobi-technically-insolvent-amid-ksh20b-debt",
+          "source": "People Daily"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "monaco vs losc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "« Je suis un jeune entraîneur » : Davide Ancelotti fait son auto-évaluation avant AS Monaco - LOSC",
+          "url": "https://lepetitlillois.com/2026/10/25/jeune-entraineur-ancelotti-autoevaluation-monaco-losc/",
+          "source": "Le Petit Lillois"
+        },
+        {
+          "title": "Le groupe de l’AS Monaco pour l’affiche au Stade Louis-II face à Lille",
+          "url": "https://www.asmonaco.com/fr/news/le-groupe-de-l-as-monaco-pour-l-affiche-au-stade-louis-ii-face-a-lille",
+          "source": "AS Monaco"
+        },
+        {
+          "title": "Ligue 1 : rebond monégasque attendu avec Camara en leader",
+          "url": "https://information.tv5monde.com/sport/ligue-1-rebond-monegasque-attendu-avec-camara-en-leader-2843054",
+          "source": "tv5monde"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "palace vs newcastle",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "inter milan vs acf fiorentina",
-      "why": "unsafe: 'betting'"
-    },
-    {
-      "title": "hull vs brentford",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "nca eastleigh building collapse contractor",
-      "why": "unsafe: 'missing'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
