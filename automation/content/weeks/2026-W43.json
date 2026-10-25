@@ -2099,7 +2099,7 @@
           "published": "2026-10-24"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": []
@@ -2128,7 +2128,11 @@
       "photo_source": "https://capitalfm.africa/architects-alliance-calls-for-national-audit-of-buildings-after-eastleigh-collapse/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
       "reel": true,
       "tg_msg": 529,
-      "decided_at": "2026-10-25T10:42:51.479033+03:00"
+      "decided_at": "2026-10-25T10:42:51.479033+03:00",
+      "published_at": "2026-10-25T12:47:35.757783+03:00",
+      "ig_id": "17886352179625637",
+      "fb_id": "1091687210344181",
+      "story_id": "18106231889222853"
     },
     {
       "id": "2026-w43-hot-1025m",
