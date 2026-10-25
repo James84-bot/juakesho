@@ -2052,13 +2052,89 @@
       "ig_id": "18083303147397713",
       "fb_id": "1515589303678268",
       "story_id": "18153438898491595"
+    },
+    {
+      "id": "2026-w43-hot-1025",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 5,
+      "trend": "Eastleigh",
+      "kicker": "Nairobi tenants",
+      "line": "Police pursue an Eastleigh developer after a building collapsed leaving *31 people missing*.",
+      "fact": "The Architects Alliance calls for a nationwide audit of buildings after the Eastleigh tragedy.",
+      "source": "Capital FM News, 2026-10-24, Capital FM News, 2026-10-24",
+      "photo_query": "building construction site Nairobi Kenya",
+      "event_query": "Eastleigh building collapse Nairobi",
+      "message": "Weak county approvals and rogue developers put Kenyan tenants at risk when buildings collapse.",
+      "impact": "Substandard buildings put families in danger when developers skip mandatory safety inspections.",
+      "action": "Report cracked or unapproved buildings directly to the National Construction Authority.",
+      "who": "Nairobi County and National Construction Authority",
+      "where": "Nairobi",
+      "when": "24 Oct 2026",
+      "side": "none",
+      "tone": "criticism",
+      "beats": [
+        "A building collapse in Eastleigh has left *31 people missing*.",
+        "Police are pursuing the building owner and the contractor.",
+        "Skipped safety checks put families in *daily danger*.",
+        "Kenyans demand: Nairobi County publishes the site approvals.",
+        "Report unsafe sites to the National Construction Authority."
+      ],
+      "caption": "A building collapsed in Eastleigh leaving 31 people missing as police pursue the developer.\n\nWhat it means for you: Substandard buildings put families in danger when developers skip mandatory safety inspections.\n\nKenyans demand: Nairobi County publishes the site approvals.\n\nSave this to verify your building's approvals, and send it to neighbours in your estate.\n\n#Eastleigh #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-25T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Police Pursue Eastleigh Building Owner, Contractor Over Deadly Collapse, 31 still missing",
+          "link": "https://capitalfm.africa/police-pursue-eastleigh-building-owner-contractor-over-deadly-collapse-31-still-missing/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-24"
+        },
+        {
+          "outlet": "Capital FM News",
+          "title": "Architects Alliance Calls for National Audit of Buildings After Eastleigh Collapse",
+          "link": "https://capitalfm.africa/architects-alliance-calls-for-national-audit-of-buildings-after-eastleigh-collapse/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-24"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.3,
+        "note": "The action field is specific and names the right statutory body."
+      },
+      "drafted_at": "2026-10-25T09:12:04.686970+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1025-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/architects-alliance-calls-for-national-audit-of-buildings-after-eastleigh-collapse/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 529
     }
   ],
   "scripts": {
-    "radio": "Good evening. This is Kenya on Record. Let us talk about our national purse. The government has put forward a budget projection of 5.4 trillion shillings. That is an enormous figure, funded ultimately by your sweat, your income, and the VAT on every essential item you buy.\n\nNow, ask yourself: where is this money actually going? The records show that the lion's share is swallowed by recurrent expenditure. That means civil service wage bills, VIP allowances, administrative upkeep, and servicing old debt. Strikingly little is left for development—the tangible things that change ordinary lives, like medicines in local dispensaries, clean piped water, or desks in public primary schools. We are being taxed heavily not to build the future, but to maintain the daily running of state machinery.\n\nWhen county and national budget hearings come around, do not dismiss them. Demand to know why development spending shrinks while administrative consumption expands. It is your constitutional right to question where every shilling goes.\n\nKwa ufupi: Bajeti ya Kenya sasa imefika shilingi trilioni 5.4, lakini sehemu kubwa inaenda kwenye matumizi ya kawaida ya serikali badala ya miradi ya maendeleo. Ni jukumu letu kama wananchi kufuatilia na kuhoji: je, kodi zetu zinatufaa au zinaishia kufadhili maisha ya anasa serikalini?",
-    "voice_note": "Hey everyone, quick accountability check from Kenya on Record. Kenya’s national budget has now climbed to a record 5.4 trillion shillings. That is an astronomical amount of money. But here is the hard truth: the largest share of this budget isn't going into building local infrastructure, fixing county hospitals, or empowering farmers. It is going straight into recurrent spending—paying for government operations, perks, and debt obligations. In plain terms, wananchi are being squeezed to fund the daily comfort of the bureaucracy while actual development gets the crumbs. When you look at your payslip deductions this month, remember this 5.4 trillion figure. Let us stop normalizing wastage. Ask your MP hard questions, share this note, and let’s keep our eyes on the purse.",
-    "sms": "Usiibiwe: Kenya’s budget is Sh5.4T, mostly recurrent costs. Demand that your MP prioritises local clinics and water over government administrative luxuries.",
-    "reels": "Five point four trillion shillings. That is the staggering size of Kenya's latest national budget. But before you think of development, look at the fine print. The biggest chunk isn't funding public schools, fixing local roads, or equipping our dispensaries. It is recurrent expenditure—consumed by state bureaucracy, government upkeep, and mounting debt. We are taxing citizens to maintain the machinery, not to build the country. Who is this budget truly working for?"
+    "radio": "Good evening, you are listening to Kenya on Record. Tonight, we must talk about the roofs over our heads. Every few months, the sirens wail, excavators roll in, and families wait in agony beside piles of twisted steel and crushed concrete. From Kasarani to Ruaka, multi-storey buildings are giving way—not because of natural disasters, but because of calculated greed and compromised county enforcement.\n\nHere is how the cycle works: a developer secures approval for a four-storey block, then quietly adds three more floors. Saltwater and subpar ballast replace quality materials, while county planning officers sign off inspection certificates from the comfort of their offices without conducting mandatory site visits. By the time tenants move in, paying forty thousand shillings a month for fresh paint and fancy tiles, they are living inside structural death traps.\n\nWe cannot normalize press releases and task forces while nobody goes to jail. Building approvals are a public trust. If a county engineer clears an illegal structure that collapses, they belong in the dock alongside the rogue contractor.\n\nKwa ufupi: Kuporomoka kwa majengo sio ajali; ni njama ya wajenzi walafi na maafisa wa kaunti wanaochukua hongo na kuidhinisha ujenzi duni. Ni lazima wahusika wafunguliwe mashtaka ya jinai. Kama mpangaji, kuwa makini: usikubali kuweka maisha yako hatarini bila kuhakikisha jengo limekaguliwa na kupewa cheti halali cha kukaliwa.",
+    "voice_note": "Habari zenu. Quick check from Kenya on Record, especially if you are house-hunting this month. We need to be extremely vigilant about where we put our families. Too many developers across our towns are cutting corners—adding extra floors overnight that were never approved, using substandard steel, and bypassing basic soil testing. And the county inspection teams? Many are simply rubber-stamping these sites without stepping foot on the ground. Before you pay that deposit, look beyond the fresh coat of paint. Look at the basement columns. Check for diagonal shearing cracks on the stairwells. Demand to see the county occupation certificate and NCA compliance certificate. Moving into a house shouldn't feel like gambling with your life. Share this with anyone planning to move this weekend.",
+    "sms": "Usiibiwe: Before paying rent, ask for a county occupation certificate and inspect for deep cracks. Never ignore unapproved extra floors. Safety comes first.",
+    "reels": "A fresh coat of paint will hide poor curing. Ceramic tiles will hide a weak beam. But nothing stops gravity when a developer adds three illegal floors with cheap cement. Every collapsed apartment in our estates has a paper trail signed by a county inspector. When buildings crumble, it isn't an accident—it’s corruption. Demand the occupation certificate before you sign that lease. Kenya on Record."
   },
   "spend_usd": 0.0,
   "revision": 9

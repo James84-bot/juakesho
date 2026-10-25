@@ -1,227 +1,157 @@
 {
-  "fetched": "2026-10-24T18:23:09.150193+00:00",
+  "fetched": "2026-10-25T06:06:29.152803+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "napoli fc",
-      "traffic": "1000+",
+      "title": "rbny vs inter miami",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Max's SOS! Allegri warns leaky Napoli must fix leaky defence or face Roma derby disaster",
-          "url": "https://www.goal.com/en-ke/news/massimiliano-allegri-napoli-roma-serie-a-preview/bltc7fe8b9d6fd84c76",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Serie A Liveblog: Napoli-Roma, Lazio-Parma, Como-Sassuolo, Cagliari-Bologna",
-          "url": "https://football-italia.net/serie-a-liveblog-napoli-roma-lazio-pa-como-sas/",
-          "source": "Football Italia"
-        },
-        {
-          "title": "Gasperini: \"A victory today would give us a huge boost.\"",
-          "url": "https://romapress.net/gasperini-a-victory-today-would-give-us-a-huge-boost/",
-          "source": "RomaPress"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya defence forces",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "KENYA ARMY BOOSTS AIR POWER THROUGH MODERNISED HELICOPTERS AND STRATEGIC DEFENCE PARTNERSHIPS – Ministry of Defence – Kenya",
-          "url": "https://www.mod.go.ke/news/kenya-army-boosts-air-power-through-modernised-helicopters-and-strategic-defence-partnerships/",
-          "source": "Ministry of Defence – Kenya"
-        },
-        {
-          "title": "KDF Receives 8 Military Helicopters in Major U.S.-Backed Deal",
-          "url": "https://www.kenyans.co.ke/news/128822-kdf-receives-8-helicopters-under-us-south-korea-defence-partnership",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Kenya inducts surplus South Korean MD 500 helicopters",
-          "url": "https://www.janes.com/defence-intelligence-insights/defence-news/defence/kenya-inducts-surplus-south-korean-md-500-helicopters",
-          "source": "Janes"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "dream vs valkyries",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Atlanta Dream beat the Golden State Valkyries 97-71 for a 2-1 lead in the WNBA Finals",
-          "url": "https://apnews.com/article/dream-valkyries-score-wnba-finals-fe026712fec47e6d76b1794186d991ea",
-          "source": "AP News"
-        },
-        {
-          "title": "WNBA Finals live: Valkyries-Dream Game 4 analysis, updates and highlights",
-          "url": "https://www.espn.com/wnba/story/_/id/50263122/finals-game-4-golden-state-valkyries-atlanta-dream",
+          "title": "Lionel Messi comes off bench as Casemiro own goal sees Red Bulls beat Miami",
+          "url": "https://www.espn.com/soccer/story/_/id/50271291/lionel-messi-red-bull-new-york-vs-inter-miami-casemiro",
           "source": "ESPN"
         },
         {
-          "title": "WNBA Finals sets another viewership mark in rescheduled Game 3",
-          "url": "https://www.sportsmediawatch.com/2026/10/wnba-finals-viewership-game-3-high/",
-          "source": "Sports Media Watch"
+          "title": "MATCH PREVIEW, pres. by Toyota: Red Bull New York Host Inter Miami CF on Saturday Afternoon at Sports Illustrated Stadium",
+          "url": "https://www.newyorkredbulls.com/news/match-preview-pres-by-toyota-red-bull-new-york-host-inter-miami-cf-on-saturday-afternoon-at-sports-illustrated-stadium",
+          "source": "Red Bull New York"
+        },
+        {
+          "title": "Red Bulls use own goal to grab lead, then Emil Forsberg to wrap up 2-0 victory over Inter Miami",
+          "url": "https://www.cbsnews.com/newyork/news/red-bulls-use-own-goal-to-grab-lead-then-emil-forsberg-to-wrap-up-2-0-victory-over-inter-miami/",
+          "source": "CBS News"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "roma",
-      "traffic": "200+",
+      "title": "atletico madrid",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Roma, il corteo scende lungo via Cavour e svolta verso il Colosseo",
-          "url": "https://www.ilnordest.it/italia-ed-esteri/roma-il-corteo-scende-lungo-via-cavour-e-svolta-verso-il-colosseo-guhse9z5",
-          "source": "il Nord Est"
-        },
-        {
-          "title": "Ore 18 del 25 ottobre",
-          "url": "https://www.ilmessaggero.it/nl/ore18/ore_18_newsletter_messaggero_24_ottobre-9846106.html",
-          "source": "Il Messaggero"
-        },
-        {
-          "title": "Scontri a Roma, lancio di oggetti e petardi: la polizia risponde con gli idranti",
-          "url": "https://video.corriere.it/roma/scontri-a-roma-lancio-di-oggetti-e-petardi-la-polizia-risponde-con-gli-idranti/4b4b2145-ba25-4ab3-ac31-00192e321xlk",
-          "source": "Corriere della Sera"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ufc",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "UFC 333: Alexander Volkanovski nears featherweight immortality as record beckons",
-          "url": "https://www.bbc.com/sport/mixed-martial-arts/articles/cq5ynjgkn68vo",
-          "source": "BBC"
-        },
-        {
-          "title": "+!+^$[Here's How to Watch] Movsar Evloev Fight Live-Berichterstattung im TV – 24. Oktober 2026",
-          "url": "https://www.fctokyo.co.jp/en/panorama/back_sb.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5aHVicy5ubC92b3MvbmV3L2EueG1sIi8+PC9rcnBhbm8+&id=video-movsar-evloev-fight-lie-en-yewabcn",
-          "source": "FC東京オフィシャルホームページ"
-        },
-        {
-          "title": "UFC 333 live results and play-by-play analysis",
-          "url": "https://sports.yahoo.com/articles/ufc-333-live-results-play-121900273.html",
-          "source": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mike penders",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Mike Penders schrijft geschiedenis bij Chelsea: zelfs straffer dan Courtois",
-          "url": "https://www.voetbalkrant.com/nieuws/2026-10-21/mike-penders-schrijft-geschiedenis-bij-chelsea-zelfs-straffer-dan-courtois",
-          "source": "Voetbalkrant.com"
-        },
-        {
-          "title": "Doelman Emiliano Martinez zorgt voor opluchting na vreselijke botsing tijdens Everton - Chelsea",
-          "url": "https://www.telegraaf.nl/sport/voetbal/doelman-emiliano-martinez-zorgt-voor-opluchting-na-vreselijke-botsing-tijdens-everton-chelsea/163229419.html",
-          "source": "De Telegraaf"
-        },
-        {
-          "title": "Opvolger van Courtois bij Rode Duivels aangeduid: \"Veel overeenkomsten\"",
-          "url": "https://voetbal24.be/premier-league/opvolger-van-courtois-bij-rode-duivels-aangeduid-veel-overeenkomsten",
-          "source": "Voetbal24.be"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "maize",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Kenya faces a massive shortfall of 2.3 million tonnes of maize imports",
-          "url": "https://nation.africa/kenya/business/kenya-faces-a-massive-shortfall-of-2-3-million-tonnes-of-maize-imports-5642590",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Kenya braces for record maize imports as drought hits crops",
-          "url": "https://saccoreview.co.ke/kenya-braces-for-record-maize-imports-as-drought-hits-crops/",
-          "source": "Sacco Review"
-        },
-        {
-          "title": "Trans Nzoia maize farmers count losses after massive crop failure",
-          "url": "https://www.the-star.co.ke/counties/rift-valley/2026-10-20-trans-nzoia-maize-farmers-count-losses-after-massive-crop-failure",
+          "title": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
+          "url": "https://www.the-star.co.ke/news/world/2026-10-23-hundreds-of-flights-cancelled-as-typhoon-champi-shuts-taiwan",
           "source": "The Star, Kenya"
+        },
+        {
+          "title": "Super Typhoon Champi, Churning Over Pacific, Becomes Strongest Storm of 2026",
+          "url": "https://www.nytimes.com/2026/10/21/weather/super-typhoon-champi-strongest-storm-year.html",
+          "source": "The New York Times"
+        },
+        {
+          "title": "Tropical Storm Champi nears China after battering Taiwan, Japan",
+          "url": "https://www.afp.com/en/tropical-storm-champi-nears-china-after-battering-taiwan-japan",
+          "source": "AFP.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "slavia prague",
-      "traffic": "100+",
+      "title": "suns vs warriors",
+      "traffic": "200+",
       "news": [
         {
-          "title": "How to get Slavia Prague vs Arsenal tickets: Champions League prices, fixture information, last-minute sales & more",
-          "url": "https://www.goal.com/en-ke/tickets-travel/match/slavia-prague-arsenal-tickets/A~blt731fdf2a82241d46",
-          "source": "Goal.com"
+          "title": "Steph Curry, Brandin Podziemski not expected to play in Warriors vs. Suns game",
+          "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steph-curry-brandin-podziemski-not-expected-to-play-suns/1973812/",
+          "source": "NBC Sports Bay Area & California"
         },
         {
-          "title": "Pubs in Prague: Best places for Arsenal fans to eat and drink",
-          "url": "https://footballgroundguide.com/news/pubs-in-prague.html",
-          "source": "Football Ground Guide"
+          "title": "“Completely Chokes the Game & Now This”: NBA Fans Bash Steph Curry Going 0-4 in Clutch Loss to Grizzlies and Hinting at Resting Next Game vs. Suns",
+          "url": "https://sports.yahoo.com/articles/completely-chokes-game-now-nba-140930313.html",
+          "source": "Yahoo Sports"
         },
         {
-          "title": "Things to do in Prague: Best attractions for Arsenal fans before Champions League game",
-          "url": "https://footballgroundguide.com/news/things-to-do-in-prague.html",
-          "source": "Football Ground Guide"
+          "title": "3 Takeaways from Warriors' Loss to Suns: Dubs Must Evolve Center Rotation",
+          "url": "https://www.si.com/nba/warriors/onsi/3-takeaways-from-warriors-loss-to-suns-dubs-must-evolve-center-rotation-01m5rnfn8yw0",
+          "source": "Sports Illustrated"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "brighton vs west ham",
+      "title": "porto",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Andebol: FC Porto goleia em Santo Tirso e sobe à liderança sem derrotas",
+          "url": "https://tvi.iol.pt/noticias/andebol/modalidades/fc-porto-goleia-em-santo-tirso-e-sobe-a-lideranca-sem-derrotas",
+          "source": "TVI"
+        },
+        {
+          "title": "FC Porto goleia GC Santo Tirso e segue na liderança do campeonato",
+          "url": "https://www.zerozero.pt/noticias/fc-porto-goleia-gc-santo-tirso-e-segue-na-lideranca-do-campeonato-/1238461",
+          "source": "zerozero.pt"
+        },
+        {
+          "title": "FC Porto chega aos 47 golos com o Santo Tirso e mantém pleno vitorioso",
+          "url": "https://www.abola.pt/noticias/fc-porto-chega-aos-47-golos-com-o-santo-tirso-e-mantem-pleno-vitorioso-2026102421063405775",
+          "source": "A Bola"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "housing",
       "traffic": "100+",
       "news": [
         {
-          "title": "Brighton & Hove Albion vs West Ham United: Women's Super League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cj75pqdw60vvt",
+          "title": "Budget to include £1bn for social and affordable housing",
+          "url": "https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o",
           "source": "BBC"
         },
         {
-          "title": "Matchday Gallery | Hammers take on the Seagulls in WSL",
-          "url": "https://www.whufc.com/en/news/matchday-gallery-or-hammers-take-on-the-seagulls-in-wsl",
-          "source": "West Ham United"
+          "title": "Labour unveils £285m funding boost for local communities so 'decisions can be made closer to home'",
+          "url": "https://news.sky.com/story/labour-unveils-285m-funding-boost-for-local-communities-so-decisions-can-be-made-closer-to-home-13603437",
+          "source": "Sky News"
         },
         {
-          "title": "Live WSL on Sky Sports Football: full details and when it's on",
-          "url": "https://www.tvguide.co.uk/schedule/aa67ea21-2b06-5d7e-b229-78773038889d/live-wsl",
-          "source": "TVGuide.co.uk"
+          "title": "Andy Burnham vows to end 'cap in hand' reliance on Whitehall for struggling councils",
+          "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/andy-burnham-vows-end-cap-34813236",
+          "source": "Manchester Evening News"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
-      "title": "shakhtar donetsk",
+      "title": "76ers vs bucks",
       "traffic": "100+",
       "news": [
         {
-          "title": "Rinat Akhmetov: “This victory is very important for the fans and the country”",
-          "url": "https://shakhtar.com/en/news/2026/october/15_news/15_rla/",
-          "source": "Офіційний сайт ФК «Шахтар"
+          "title": "Joel Embiid logs 11th career triple-double in 76ers win over Bucks",
+          "url": "https://www.nytimes.com/athletic/7721628/2026/10/24/joel-embiid-triple-double-sixers-bucks/",
+          "source": "The New York Times"
         },
         {
-          "title": "Shakhtar Donetsk finds temporary home, measure of joy in London",
-          "url": "https://subscription.ukrweekly.com/shakhtar-donetsk-finds-temporary-home-measure-of-joy-in-london/",
-          "source": "The Ukrainian Weekly"
+          "title": "No LeBron, no problem as Sixers roll on",
+          "url": "https://www.france24.com/en/live-news/20261025-no-lebron-no-problem-as-sixers-roll-on",
+          "source": "France 24"
         },
         {
-          "title": "Arda Turan explained what helped Shakhtar secure its first victory in the Champions League",
-          "url": "https://ua.news/en/sport/arda-turan-poiasniv-zavdiaki-chomu-shakhtar-zdobuv-debiutnu-peremogu-v-lizi-chempioniv",
-          "source": "UA.NEWS"
+          "title": "Dean Wade (ankle) plays 28 minutes in 76ers debut",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-24/dean-wade-ankle-plays-28-minutes-in-76ers-debut",
+          "source": "NBC Sports"
         }
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "crystal palace vs newcastle",
+      "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "ebola in kenya",
+      "why": "unsafe: 'Death'"
+    },
+    {
+      "title": "porto fc",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "fc porto",
+      "why": "unsafe: 'Betting'"
+    }
+  ],
   "errors": {}
 }
