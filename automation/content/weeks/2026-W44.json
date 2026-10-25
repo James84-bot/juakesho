@@ -1,198 +1,191 @@
 {
- "collection": "2026-W44",
- "created": "2026-10-25T17:02:44.686654+03:00",
- "posts": [
-  {
-   "id": "2026-w44-d1-money-r2",
-   "template": "money",
-   "lane": "everyone",
-   "series": "The Real Price",
-   "hook": "Petrol is up Sh12.93 a litre",
-   "number": "Sh226.96",
-   "unit": "per litre of super petrol in Nairobi",
-   "what": "The new cap on super petrol in Nairobi, up Sh12.93 from Sh214.03.",
-   "why": "Diesel is up Sh9.90 to Sh227.76 and kerosene is up Sh28.49 to Sh219.87.",
-   "check": "Compare the cap with the price on your station's pump.",
-   "message": "Nairobi's super petrol cap is Sh226.96 a litre, up Sh12.93.",
-   "action": "Tell us what your station charges.",
-   "beats": [
-    "Super petrol now costs *Sh226.96* a litre in Nairobi.",
-    "That is Sh12.93 more than last month's Sh214.03.",
-    "Diesel rose Sh9.90 to Sh227.76, and kerosene rose Sh28.49 to Sh219.87.",
-    "Stations can charge less than these caps, but not more.",
-    "Tell us your town and what your station charges."
-   ],
-   "caption": "EPRA's new Nairobi price caps run from 15 Oct to 14 Nov.\n\nSuper petrol: Sh226.96 (up Sh12.93)\nDiesel: Sh227.76 (up Sh9.90)\nKerosene: Sh219.87 (up Sh28.49)\n\nStations can charge less than a cap, never more. What does your station charge? Tell us the town and the price.\n\n#TheRealPrice #KenyaOnRecord",
-   "source": "The Star, 2026-10-14; Tech-ish, 2026-10-14",
-   "photo_query": "petrol station pump Kenya",
-   "who": "EPRA",
-   "where": "Nairobi",
-   "when": "15 Oct 2026",
-   "side": "none",
-   "tone": "explainer",
-   "impact": "Petrol, diesel and kerosene all cost more per litre in Nairobi until 14 Nov.",
-   "bg": "shuka",
-   "publish_at": "2026-10-26T07:30:00+03:00",
-   "angle": "real_price",
-   "source_links": [
+  "collection": "2026-W44",
+  "created": "2026-10-25T17:02:44.686654+03:00",
+  "posts": [
     {
-     "outlet": "The Star",
-     "title": "EPRA raises petrol by Sh12.93",
-     "link": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
-     "published": "2026-10-14"
+      "id": "2026-w44-d1-money-r2",
+      "template": "money",
+      "lane": "everyone",
+      "series": "The Real Price",
+      "hook": "Petrol is up Sh12.93 a litre",
+      "number": "Sh226.96",
+      "unit": "per litre of super petrol in Nairobi",
+      "what": "The new cap on super petrol in Nairobi, up Sh12.93 from Sh214.03.",
+      "why": "Diesel is up Sh9.90 to Sh227.76 and kerosene is up Sh28.49 to Sh219.87.",
+      "check": "Compare the cap with the price on your station's pump.",
+      "message": "Nairobi's super petrol cap is Sh226.96 a litre, up Sh12.93.",
+      "action": "Tell us what your station charges.",
+      "beats": [
+        "Super petrol now costs *Sh226.96* a litre in Nairobi.",
+        "That is Sh12.93 more than last month's Sh214.03.",
+        "Diesel rose Sh9.90 to Sh227.76, and kerosene rose Sh28.49 to Sh219.87.",
+        "Stations can charge less than these caps, but not more.",
+        "Tell us your town and what your station charges."
+      ],
+      "caption": "EPRA's new Nairobi price caps run from 15 Oct to 14 Nov.\n\nSuper petrol: Sh226.96 (up Sh12.93)\nDiesel: Sh227.76 (up Sh9.90)\nKerosene: Sh219.87 (up Sh28.49)\n\nStations can charge less than a cap, never more. What does your station charge? Tell us the town and the price.\n\n#TheRealPrice #KenyaOnRecord",
+      "source": "The Star, 2026-10-14; Tech-ish, 2026-10-14",
+      "photo_query": "petrol station pump Kenya",
+      "who": "EPRA",
+      "where": "Nairobi",
+      "when": "15 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Petrol, diesel and kerosene all cost more per litre in Nairobi until 14 Nov.",
+      "bg": "shuka",
+      "publish_at": "2026-10-26T07:30:00+03:00",
+      "angle": "real_price",
+      "source_links": [
+        {
+          "outlet": "The Star",
+          "title": "EPRA raises petrol by Sh12.93",
+          "link": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
+          "published": "2026-10-14"
+        },
+        {
+          "outlet": "Tech-ish",
+          "title": "Petrol rises to KES 226.96 in Nairobi and kerosene jumps KES 28.49",
+          "link": "https://tech-ish.com/2026/10/14/petrol-rises-to-kes-226-96-in-nairobi-and-kerosene-jumps-kes-28-49/",
+          "published": "2026-10-14"
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "fuel:2026-10",
+        "id": "fuel-2026-10",
+        "series": "The Real Price",
+        "fact": "From 15 Oct to 14 Nov 2026 the Nairobi price caps are: super petrol Sh226.96 (up Sh12.93 from Sh214.03), diesel Sh227.76 (up Sh9.90 from Sh217.86) and kerosene Sh219.87 (up Sh28.49 from Sh191.38). Stations can charge less than a cap, not more.",
+        "source": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
+        "outlet": "The Star"
+      },
+      "status": "drafted",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach",
+          "possible named person(s): Crude Landed, General Daniel Kiptoo, Middle East. Civic posts target systems, not people."
+        ]
+      },
+      "drafted_at": "2026-10-25T17:14:42.434585+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d1-money-photo.jpg",
+      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
+      "reel": true
     },
     {
-     "outlet": "Tech-ish",
-     "title": "Petrol rises to KES 226.96 in Nairobi and kerosene jumps KES 28.49",
-     "link": "https://tech-ish.com/2026/10/14/petrol-rises-to-kes-226-96-in-nairobi-and-kerosene-jumps-kes-28-49/",
-     "published": "2026-10-14"
-    }
-   ],
-   "material": {
-    "kind": "bank",
-    "key": "fuel:2026-10",
-    "id": "fuel-2026-10",
-    "series": "The Real Price",
-    "fact": "From 15 Oct to 14 Nov 2026 the Nairobi price caps are: super petrol Sh226.96 (up Sh12.93 from Sh214.03), diesel Sh227.76 (up Sh9.90 from Sh217.86) and kerosene Sh219.87 (up Sh28.49 from Sh191.38). Stations can charge less than a cap, not more.",
-    "source": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
-    "outlet": "The Star"
-   },
-   "status": "drafted",
-   "guard": {
-    "errors": [],
-    "warnings": [
-     "caption has no send/share/save call: sends and saves drive reach",
-     "possible named person(s): Crude Landed, General Daniel Kiptoo, Middle East. Civic posts target systems, not people."
-    ]
-   },
-   "drafted_at": "2026-10-25T17:14:42.434585+03:00",
-   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d1-money-photo.jpg",
-   "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
-   "photo_kind": "symbolic",
-   "photo_outlet": "",
-   "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
-   "reel": true
-  },
-  {
-   "id": "2026-w44-d2-kenya-r2",
-   "template": "kenya",
-   "lane": "young_pro",
-   "series": "Kenya at its best",
-   "place": "Aberdare ranges, Nyeri",
-   "line": "A fig tree in the Aberdares was a *secret post office* for Mau Mau fighters.",
-   "fact": "Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
-   "source": "https://kws.go.ke/park/aberdare-national-park/",
-   "message": "Aberdare's Mau Mau Post Office tree was a secret message drop.",
-   "action": "Tag someone who would make the trip.",
-   "beats": [
-    "A mugumo fig in the Aberdares was a *secret message drop*.",
-    "Mau Mau fighters used the Post Office tree.",
-    "You will find it in the Aberdare ranges, in Nyeri.",
-    "Tag someone who would make the trip."
-   ],
-   "caption": "The Mau Mau Post Office tree in Aberdare National Park, Nyeri, is a mugumo fig that was a secret message drop for Mau Mau fighters.\n\nTag someone who would make the trip.\n\n#Aberdare #KenyaAtItsBest #KenyaOnRecord",
-   "photo_query": "Aberdare National Park waterfall Kenya",
-   "who": "Kenya Wildlife Service",
-   "where": "Nyeri County",
-   "when": "2026",
-   "side": "none",
-   "tone": "credit",
-   "impact": "Kenyans preserve historic liberation sites alongside indigenous forest water towers.",
-   "bg": "usiku",
-   "publish_at": "2026-10-27T12:45:00+03:00",
-   "source_links": [
+      "id": "2026-w44-d2-kenya-r2",
+      "template": "kenya",
+      "lane": "young_pro",
+      "series": "Kenya at its best",
+      "place": "Aberdare ranges, Nyeri",
+      "line": "A fig tree in the Aberdares was a *secret post office* for Mau Mau fighters.",
+      "fact": "Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
+      "source": "https://kws.go.ke/park/aberdare-national-park/",
+      "message": "Aberdare's Mau Mau Post Office tree was a secret message drop.",
+      "action": "Tag someone who would make the trip.",
+      "beats": [
+        "A mugumo fig in the Aberdares was a *secret message drop*.",
+        "Mau Mau fighters used the Post Office tree.",
+        "You will find it in the Aberdare ranges, in Nyeri.",
+        "Tag someone who would make the trip."
+      ],
+      "caption": "The Mau Mau Post Office tree in Aberdare National Park, Nyeri, is a mugumo fig that was a secret message drop for Mau Mau fighters.\n\nTag someone who would make the trip.\n\n#Aberdare #KenyaAtItsBest #KenyaOnRecord",
+      "photo_query": "Aberdare National Park waterfall Kenya",
+      "who": "Kenya Wildlife Service",
+      "where": "Nyeri County",
+      "when": "2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Kenyans preserve historic liberation sites alongside indigenous forest water towers.",
+      "bg": "usiku",
+      "publish_at": "2026-10-27T12:45:00+03:00",
+      "source_links": [
+        {
+          "outlet": "Kenya Wildlife Service",
+          "title": "Aberdare National Park: Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
+          "link": "https://kws.go.ke/park/aberdare-national-park/",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:aberdare",
+        "id": "aberdare",
+        "series": "Kenya at its best",
+        "place": "Aberdare ranges, Nyeri",
+        "name": "Aberdare National Park",
+        "fact": "Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
+        "source": "https://kws.go.ke/park/aberdare-national-park/",
+        "outlet": "Kenya Wildlife Service",
+        "photo_query": "Aberdare National Park waterfall Kenya"
+      },
+      "status": "drafted",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-25T17:14:42.434592+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d2-kenya-photo.jpg",
+      "photo_credit": "Photo: Matteo Frigo / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Gura_Giant_Falls_view_from_the_top_of_Karuru_Falls.jpg",
+      "reel": true
+    },
     {
-     "outlet": "Kenya Wildlife Service",
-     "title": "Aberdare National Park: Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
-     "link": "https://kws.go.ke/park/aberdare-national-park/",
-     "published": ""
+      "id": "2026-w44-d3-promise-r2",
+      "template": "promise",
+      "lane": "everyone",
+      "bg": "usiku",
+      "publish_at": "2026-10-28T18:30:00+03:00",
+      "status": "planned"
+    },
+    {
+      "id": "2026-w44-d4-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-10-29T19:30:00+03:00",
+      "size": "story",
+      "angle": "price_quiz",
+      "series": "Guess the Price",
+      "status": "planned"
+    },
+    {
+      "id": "2026-w44-d5-straight",
+      "template": "straight",
+      "bg": "usiku",
+      "lane": "hustle",
+      "publish_at": "2026-10-30T17:00:00+03:00",
+      "status": "planned",
+      "angle": "myth",
+      "series": "Myth or Fact"
+    },
+    {
+      "id": "2026-w44-d6-kenya",
+      "template": "kenya",
+      "bg": "usiku",
+      "lane": "diaspora",
+      "publish_at": "2026-10-31T11:00:00+03:00",
+      "status": "planned",
+      "series": "Built in Kenya"
+    },
+    {
+      "id": "2026-w44-d7-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-01T18:00:00+03:00",
+      "status": "planned",
+      "size": "story"
     }
-   ],
-   "material": {
-    "kind": "bank",
-    "key": "bank:aberdare",
-    "id": "aberdare",
-    "series": "Kenya at its best",
-    "place": "Aberdare ranges, Nyeri",
-    "name": "Aberdare National Park",
-    "fact": "Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
-    "source": "https://kws.go.ke/park/aberdare-national-park/",
-    "outlet": "Kenya Wildlife Service",
-    "photo_query": "Aberdare National Park waterfall Kenya"
-   },
-   "status": "drafted",
-   "guard": {
-    "errors": [],
-    "warnings": []
-   },
-   "drafted_at": "2026-10-25T17:14:42.434592+03:00",
-   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d2-kenya-photo.jpg",
-   "photo_credit": "Photo: Matteo Frigo / Wikimedia Commons, CC BY-SA 4.0",
-   "photo_kind": "place",
-   "photo_outlet": "",
-   "photo_source": "https://commons.wikimedia.org/wiki/File:Gura_Giant_Falls_view_from_the_top_of_Karuru_Falls.jpg",
-   "reel": true
+  ],
+  "scripts": {
+    "radio": "Good evening, listener, and welcome to Kenya on Record. This week, our household budgets are absorbing another shock. Escalating conflicts in the Middle East have driven up global crude costs, and as always, the effect at our local fuel pump is immediate. When diesel and petrol rise, it is never just about motorists. Matatu fares creep up, farm produce costs more to transport to market, and the family shopping basket shrinks.\n\nAway from the markets, there is quiet dignity in our history. Deep inside the Aberdare National Park, the Kenya Wildlife Service continues to preserve a historic mugumo tree once used by Mau Mau freedom fighters as an ingenious, clandestine postal drop. It stands as an enduring monument to the discipline and sacrifice that birthed our nation.\n\nThat legacy demands that we safeguard what belongs to the public today. As debates intensify over the sale of key state enterprises, we must hold government strictly to the law and its campaign pledges. National assets belong to the people of Kenya. Any disposal done without comprehensive public disclosure, independent valuations, and citizen participation violates both legal statutes and democratic trust.\n\nKwa ufupi: Kupanda kwa bei ya mafuta duniani kumezidisha gharama ya maisha na usafiri nchini. Huko Aberdare, mti wa mugumo uliotumiwa na Mau Mau unakumbusha umuhimu wa kulinda urithi wetu. Mwisho, uuzaji wowote wa mashirika ya umma lazima ufanyike kwa uwazi kamili na kufuata sheria bila kuficha chochote.",
+    "voice_note": "Habari zenu, this is Kenya on Record with your weekly accountability briefing. \n\nFirst, check your wallet: international crude prices spiked due to renewed conflicts in the Middle East, and the ripple effect has hit our pump prices. Expect matatu operators and food distributors to pass down the extra cost, so plan your weekly budget with care.\n\nSecond, keep your eyes on public property. The government is moving forward with plans to sell several state corporations. The law and past political promises are very clear: privatising public wealth requires open disclosure, parliamentary scrutiny, and public participation. Demand to see the valuation reports and buyer lists.\n\nFinally, a point of national pride: the historic mugumo tree in the Aberdares, used as a secret message drop by the Mau Mau, remains protected. Our forebears guarded this country with their lives—let us guard its resources with our vigilance. Forward this to your group, and stay informed.",
+    "sms": "Usiibiwe: Any sale of state corporations requires full public disclosure and public participation by law. Demand transparency before national assets are sold.",
+    "reels": "Who actually owns Kenya's state corporations? You do. When the state moves to sell public assets, the law and campaign commitments require total transparency. No boardroom shortcuts, no undervalued disposals, and no hidden buyers. Every valuation and tender detail must be made public before a single asset changes hands. National wealth is not private property. Stay vigilant, ask the hard questions, and hold leadership to account."
   },
-  {
-   "id": "2026-w44-d3-promise-r2",
-   "template": "promise",
-   "lane": "everyone",
-   "bg": "usiku",
-   "publish_at": "2026-10-28T18:30:00+03:00",
-   "status": "needs_human"
-  },
-  {
-   "id": "2026-w44-d4-glasspoll",
-   "template": "glasspoll",
-   "bg": "usiku",
-   "lane": "everyone",
-   "publish_at": "2026-10-29T19:30:00+03:00",
-   "status": "needs_human",
-   "size": "story",
-   "angle": "price_quiz",
-   "series": "Guess the Price",
-   "guard": {
-    "errors": [
-     "no headline this week states a price, so Guess the Price would have no real answer"
-    ],
-    "warnings": []
-   },
-   "drafted_at": "2026-10-25T17:14:42.434597+03:00"
-  },
-  {
-   "id": "2026-w44-d5-straight",
-   "template": "straight",
-   "bg": "usiku",
-   "lane": "hustle",
-   "publish_at": "2026-10-30T17:00:00+03:00",
-   "status": "planned",
-   "angle": "myth",
-   "series": "Myth or Fact"
-  },
-  {
-   "id": "2026-w44-d6-kenya",
-   "template": "kenya",
-   "bg": "usiku",
-   "lane": "diaspora",
-   "publish_at": "2026-10-31T11:00:00+03:00",
-   "status": "planned",
-   "series": "Built in Kenya"
-  },
-  {
-   "id": "2026-w44-d7-glasspoll",
-   "template": "glasspoll",
-   "bg": "usiku",
-   "lane": "everyone",
-   "publish_at": "2026-11-01T18:00:00+03:00",
-   "status": "planned",
-   "size": "story"
-  }
- ],
- "scripts": {
-  "radio": "Good evening, listener, and welcome to Kenya on Record. This week, our household budgets are absorbing another shock. Escalating conflicts in the Middle East have driven up global crude costs, and as always, the effect at our local fuel pump is immediate. When diesel and petrol rise, it is never just about motorists. Matatu fares creep up, farm produce costs more to transport to market, and the family shopping basket shrinks.\n\nAway from the markets, there is quiet dignity in our history. Deep inside the Aberdare National Park, the Kenya Wildlife Service continues to preserve a historic mugumo tree once used by Mau Mau freedom fighters as an ingenious, clandestine postal drop. It stands as an enduring monument to the discipline and sacrifice that birthed our nation.\n\nThat legacy demands that we safeguard what belongs to the public today. As debates intensify over the sale of key state enterprises, we must hold government strictly to the law and its campaign pledges. National assets belong to the people of Kenya. Any disposal done without comprehensive public disclosure, independent valuations, and citizen participation violates both legal statutes and democratic trust.\n\nKwa ufupi: Kupanda kwa bei ya mafuta duniani kumezidisha gharama ya maisha na usafiri nchini. Huko Aberdare, mti wa mugumo uliotumiwa na Mau Mau unakumbusha umuhimu wa kulinda urithi wetu. Mwisho, uuzaji wowote wa mashirika ya umma lazima ufanyike kwa uwazi kamili na kufuata sheria bila kuficha chochote.",
-  "voice_note": "Habari zenu, this is Kenya on Record with your weekly accountability briefing. \n\nFirst, check your wallet: international crude prices spiked due to renewed conflicts in the Middle East, and the ripple effect has hit our pump prices. Expect matatu operators and food distributors to pass down the extra cost, so plan your weekly budget with care.\n\nSecond, keep your eyes on public property. The government is moving forward with plans to sell several state corporations. The law and past political promises are very clear: privatising public wealth requires open disclosure, parliamentary scrutiny, and public participation. Demand to see the valuation reports and buyer lists.\n\nFinally, a point of national pride: the historic mugumo tree in the Aberdares, used as a secret message drop by the Mau Mau, remains protected. Our forebears guarded this country with their lives—let us guard its resources with our vigilance. Forward this to your group, and stay informed.",
-  "sms": "Usiibiwe: Any sale of state corporations requires full public disclosure and public participation by law. Demand transparency before national assets are sold.",
-  "reels": "Who actually owns Kenya's state corporations? You do. When the state moves to sell public assets, the law and campaign commitments require total transparency. No boardroom shortcuts, no undervalued disposals, and no hidden buyers. Every valuation and tender detail must be made public before a single asset changes hands. National wealth is not private property. Stay vigilant, ask the hard questions, and hold leadership to account."
- },
- "spend_usd": 0.0
+  "spend_usd": 0.0
 }
