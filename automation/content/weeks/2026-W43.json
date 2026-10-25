@@ -2174,7 +2174,7 @@
           "published": "2026-10-25"
         }
       ],
-      "status": "awaiting",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -2204,7 +2204,12 @@
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/127788-kra-collects-ksh-90b-customs-revenue-exceeding-september-target-ksh-965m",
       "reel": true,
-      "tg_msg": 533
+      "tg_msg": 533,
+      "decided_at": "2026-10-25T17:21:50.982452+03:00",
+      "published_at": "2026-10-25T17:23:20.728998+03:00",
+      "ig_id": "18109314830081524",
+      "fb_id": "2437856416742882",
+      "story_id": "17911373814555322"
     }
   ],
   "scripts": {
