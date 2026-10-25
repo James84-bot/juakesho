@@ -124,6 +124,7 @@ def pexels_video(query: str, pid: str) -> tuple[str, dict] | None:
 
 YT_API = "https://www.googleapis.com/youtube/v3"
 YT_SKIP = re.compile(r"\b(tts|text.to.speech|wikipedia|slideshow|podcast|reaction|compilation|audiobook|lyrics|asmr)\b", re.I)   # not footage of the place
+YT_CANDIDATES: list[dict] = []   # CC videos found this run, for the owner to download by hand when the server cannot
 YT_MAX_S = 600   # a source video longer than 10 minutes is a programme, not a clip of a place or an event
 
 
@@ -161,6 +162,8 @@ def youtube_cc_video(query: str, pid: str) -> tuple[str, dict] | None:
             continue
         who = str(sn.get("channelTitle") or "YouTube")[:50]
         _note(f"  video '{query}' for {pid}: YouTube CC {v['id']} ({who})")
+        YT_CANDIDATES.append({"post": pid, "title": str(sn.get("title", ""))[:90], "channel": who,
+                              "url": f"https://www.youtube.com/watch?v={v['id']}"})
         return f"yt:{v['id']}", {"credit": f"Footage: {who} / YouTube (CC BY)", "url": f"https://www.youtube.com/watch?v={v['id']}",
                                  "source": "youtube-cc"}
     _note(f"  video '{query}' for {pid}: YouTube CC {len(ids)} found, none named the place and licensed CC BY")

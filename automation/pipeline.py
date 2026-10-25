@@ -1909,6 +1909,15 @@ def _main(argv: list[str] | None = None) -> int:
                 photos._note(f"  footage for {p['id']}: {p['video_credit']} ({p.get('video_source', '')})")
         (STATE / "photos.log").write_text("\n".join(photos.NOTES[-400:]) + "\n", encoding="utf-8")
         log(f"photocheck {wk}: footage for {sum(1 for p in reels if p.get('video_file'))}/{len(reels)} Reels")
+        if videos.YT_CANDIDATES and os.environ.get("TELEGRAM_CHAT_ID") and not a.dry_run:
+            seen, lines = set(), []
+            for c in videos.YT_CANDIDATES:
+                if c["url"] not in seen:
+                    seen.add(c["url"])
+                    lines.append(f"• <b>{_esc(c['post'])}</b>: {_esc(c['title'])} ({_esc(c['channel'])})\n{c['url']}")
+            _notify("🎞 <b>Creative Commons footage candidates</b> (licence checked as CC BY on YouTube). "
+                    "YouTube blocks downloads from our servers, so these are links only: nothing is used unless you download "
+                    "one and send it back as a clip (credit the channel).\n\n" + "\n".join(lines[:8]))
         if os.environ.get("TELEGRAM_CHAT_ID") and not a.dry_run:   # the clips go to you as samples, never into the public repo
             for p in reels:
                 if p.get("video_file") and Path(p["video_file"]).exists():
