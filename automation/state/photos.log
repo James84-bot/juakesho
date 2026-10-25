@@ -3,14 +3,20 @@ feed Capital FM: 60 items, 60 with an image
 feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
-feed Nation: 25 items, 0 with an image
-posted for 2026-w44-d1-money: 0 matching reports (person 'kiptoo', names ['director', 'daniel', 'kiptoo', 'epra'], words ['middle', 'east', 'conflicts', 'drive', 'pump'])
-commons 'petrol station pump Kenya' for 2026-w44-d1-money: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-commons 'petrol station' for 2026-w44-d1-money: 25 found, 0 usable, dropped {'size': 5, 'licence': 1, 'place': 19, 'subject': 0}
-openverse 'petrol station pump Kenya' for 2026-w44-d1-money: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-openverse 'petrol station' for 2026-w44-d1-money: 20 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 20, 'subject': 0}
-commons 'Kenyan shilling banknotes' for 2026-w44-d1-money: 13 found, 10 usable, dropped {'size': 3, 'licence': 0, 'place': 0, 'subject': 0}
-photo for 2026-w44-d1-money: nothing for 'petrol station pump Kenya', used 'Kenyan shilling banknotes'
-commons 'Aberdare National Park waterfall Kenya' for 2026-w44-d2-kenya: 2 found, 2 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-posted for 2026-w44-d3-promise: 2 matching reports (person 'ruto', names ['ruto', 'dangote', 'pipeline'], words ['state', 'asset', 'sales', 'require', 'full'])
+feed Nation failed: HTTP Error 404: Not Found
+posted for 2026-w44-d1-money-r2: 5 matching reports (person '', names ['epra'], words ['super', 'petrol', 'litre'])
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+picked Kenyans.co.ke (5): EPRA Boss Issues Fresh Warning to Motorists After Latest Fuel Price In
+commons 'Aberdare National Park waterfall Kenya' for 2026-w44-d2-kenya-r2: 2 found, 2 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'Garissa solar power plant Kenya' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'Garissa solar power Kenya' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'Garissa solar' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'Garissa solar power plant Kenya' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'Garissa solar power Kenya' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'Garissa solar' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+openverse 'Garissa solar power plant Kenya' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+openverse 'Garissa solar power Kenya' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+openverse 'Garissa solar' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+no photo of 'Garissa solar power plant Kenya' for 2026-w44-d6-kenya: a showcase post needs one (reply to its card with a photo)
+posted for 2026-w44-d7-glasspoll: 2 matching reports (person '', names ['pipeline', 'dangote'], words ['debate', 'sell', 'stake', 'pipeline', 'dangote'])
 picked Capital FM (5): President Ruto Defends Dangote’s 25% KPC Stake Amid Public Outcry
