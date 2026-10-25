@@ -1,4 +1,4 @@
 {
-  "note": "auto_approve true: a post that passes every automatic check is approved by the system and goes out at its slot; you are told, and a tap on its card's red cross before the slot stops it. Posts that fail a check still wait for your tap. Set false to go back to approving everything yourself.",
-  "auto_approve": true
+  "note": "auto_approve is OFF until you have reviewed sample posts and said go. Set true: posts that pass every automatic check are approved by the system and go out at their slot; a tap on a card's red cross before the slot stops one. Posts that fail a check always wait for your tap.",
+  "auto_approve": false
 }
