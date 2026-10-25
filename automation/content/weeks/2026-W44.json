@@ -166,7 +166,7 @@
         ],
         "warnings": []
       },
-      "drafted_at": "2026-10-25T20:25:57.683203+03:00"
+      "drafted_at": "2026-10-26T02:18:57.715975+03:00"
     },
     {
       "id": "2026-w44-d4-glasspoll",
@@ -184,44 +184,41 @@
         ],
         "warnings": []
       },
-      "drafted_at": "2026-10-25T20:25:57.683205+03:00"
+      "drafted_at": "2026-10-26T02:18:57.715978+03:00"
     },
     {
       "id": "2026-w44-d5-straight",
       "template": "straight",
       "lane": "hustle",
       "series": "Myth or Fact",
-      "claim": "The government has banned media houses from livestreaming 2027 election results.",
-      "who": "Viral political posts and commentary",
-      "claim_source": "Kenyans.co.ke, 2026-10-25",
-      "truth": "No ban on livestreaming election results exists in Kenyan law today.",
-      "verdict": "false",
-      "proof": [
-        "President William Ruto dismissed claims of any plan to stop live tallies.",
-        "Article 34 of the Constitution protects media freedom and public broadcast rights.",
-        "Former CS Justin Muturi asked the IEBC to issue binding coverage rules."
-      ],
-      "pride": "Kenyan elections depend on open scrutiny and constitutional safeguards.",
-      "source": "The Star, Kenya, 2026-10-22",
-      "demand": 7,
-      "message": "No ban exists on livestreaming 2027 election results. Media freedom is constitutionally protected.",
-      "action": "Track election reforms and regulations directly on the official portal at iebc.or.ke",
-      "photo_query": "ballot box Kenya",
-      "event_query": "Ruto State House Nairobi",
-      "beats": [
-        "Reports claiming a *livestream ban* on 2027 election results are false.",
-        "President William Ruto confirmed the government plans no media restrictions.",
-        "The Constitution protects the right of broadcasters to cover public tallies.",
-        "Kenyans demand: the IEBC gazettes clear *livestreaming rules* well before 2027."
-      ],
-      "caption": "Claims of a state ban on livestreaming 2027 election results are false. The Constitution protects media coverage and open tallying of votes.\n\nWhat rules do you want the IEBC to put in place for 2027?\n\n#SetItStraight #KenyaOnRecord",
-      "bg": "usiku",
-      "publish_at": "2026-10-30T17:00:00+03:00",
       "side": "none",
       "tone": "explainer",
-      "impact": "Assures voters that 2027 presidential poll results remain open to public media scrutiny.",
       "where": "National",
-      "when": "25 October 2026",
+      "when": "22 Oct 2026",
+      "impact": "Believing false health advice delays proper medical care and harms your health.",
+      "claim": "Kenyans seeing misleading Ebola information are told drinking salt water cures it.",
+      "who": "Viral online forwards, October 2026",
+      "truth": "Salt water cannot cure or prevent Ebola infection.",
+      "pride": "Rely on verified medical guidance to stay safe.",
+      "claim_source": "Social media posts cited in The Star, 22 Oct 2026",
+      "source": "The Star, Kenya, 2026-10-22",
+      "verdict": "false",
+      "proof": [
+        "The Ministry of Health confirms salt water does not stop Ebola.",
+        "Excessive salt intake causes severe dehydration and high blood pressure."
+      ],
+      "message": "Kenyans seeing misleading Ebola information should follow official health guidance.",
+      "action": "Verify health claims with the Ministry of Health before sharing them.",
+      "photo_query": "hospital ward Kenya",
+      "beats": [
+        "Kenyans are seeing *misleading Ebola information* spread online.",
+        "The Ministry of Health warns that salt water *cannot cure* Ebola.",
+        "Excessive salt intake causes *severe dehydration*.",
+        "Get verified health updates from the *Ministry of Health*."
+      ],
+      "caption": "Kenyans are seeing misleading Ebola information spreading across social media. Viral posts claim that drinking boiled salt water prevents infection. The Ministry of Health confirms this is false and warns that excessive salt causes severe dehydration.\n\nSend this to your family WhatsApp groups to stop the rumour.\n\n#MythOrFact #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-30T17:00:00+03:00",
       "angle": "myth",
       "source_links": [
         {
@@ -242,103 +239,100 @@
       "status": "needs_human",
       "guard": {
         "errors": [
-          "'pride' is 71 chars (max 50)",
-          "beats[1] is too long: max 12 words / 72 characters",
-          "beats[2] is too long: max 12 words / 72 characters",
-          "beats[3] is too long: max 12 words / 72 characters",
-          "'2027' is not in this post's material (Where are Kenyans seeing potentially misleading Ebola information?): use only the numbers it gives",
-          "the linked report is not about this story (Where are Kenyans seeing potentially misleading Ebola information?): use the headline id of the report this post is really based on",
-          "the caption calls it 'Set It Straight': this post's series is 'Myth or Fact'"
+          "weak: editor scored 5.1/10. Ebola rumors are not this week's active news; tie the post to current trending safety alerts or drop it."
         ],
         "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
         ]
       },
       "critic": {
-        "hook": 7,
-        "send": 8,
-        "clarity": 8,
-        "fresh": 7,
-        "voice": 8,
-        "craft": 8,
-        "picture": 7,
-        "hold": 7,
-        "demand": 7,
-        "action": 7,
-        "fair": 8,
-        "impact": 8,
-        "avg": 7.5,
-        "note": "Make the hook speak directly to the viral posts circulating on social media."
+        "hook": 5,
+        "send": 4,
+        "clarity": 6,
+        "fresh": 4,
+        "voice": 6,
+        "craft": 6,
+        "picture": 5,
+        "hold": 5,
+        "demand": 3,
+        "action": 4,
+        "fair": 7,
+        "impact": 6,
+        "avg": 5.1,
+        "note": "Ebola rumors are not this week's active news; tie the post to current trending safety alerts or drop it."
       },
-      "drafted_at": "2026-10-25T20:25:57.683190+03:00"
+      "drafted_at": "2026-10-26T02:18:57.715965+03:00"
     },
     {
       "id": "2026-w44-d6-kenya",
       "template": "kenya",
       "lane": "diaspora",
       "series": "Built in Kenya",
-      "place": "Garissa",
-      "line": "Garissa powers clean energy with a *54.65 megawatt* solar installation.",
-      "fact": "With 54.65 megawatts installed, REREC calls it the largest grid-connected solar plant in East and Central Africa.",
-      "source": "https://rerec.co.ke/garissa-solar-power-plant.php",
-      "message": "Garissa Solar Power Plant delivers 54.65 megawatts of clean power to the national grid.",
-      "action": "Track Kenya's renewable energy generation progress on the EPRA portal",
-      "photo_query": "Garissa solar power plant Kenya",
+      "side": "none",
+      "tone": "credit",
+      "where": "Lamu",
+      "when": "May 2021",
+      "impact": "The completed port provides 32 berths to handle maritime cargo.",
+      "place": "Lamu",
+      "line": "Lamu Port opened its first berth in May 2021 and plans *32 berths*.",
+      "fact": "Lamu Port's first berth opened in May 2021; when complete the port will have 32 berths.",
+      "source": "https://capitalfm.africa/kenya-opens-new-32-berth-lamu-port/",
+      "message": "Lamu Port opened its first berth in May 2021 and will have 32 berths.",
+      "action": "Save this post for your next trip to the Coast.",
+      "photo_query": "Lamu Port Kenya ship berth",
       "beats": [
-        "Garissa hosts East Africa's largest *grid-connected* solar station.",
-        "The plant delivers 54.65 megawatts of clean electricity.",
-        "Solar power lowers reliance on expensive diesel generators.",
-        "Garissa feeds clean power directly into the national grid."
+        "Lamu Port opened its *first berth* in May 2021.",
+        "When complete the port will feature *32 berths*.",
+        "The facility expands maritime transport in *Lamu*.",
+        "Save this post for your next trip to *Lamu*."
       ],
-      "caption": "Garissa Solar Power Plant delivers 54.65 megawatts of clean energy to the national grid, cutting reliance on expensive thermal generators. Built in Kenya and working today.\n\nSave this for your next trip through Garissa.\n\n#BuiltInKenya #KenyaOnRecord",
+      "caption": "Lamu Port opened its first berth in May 2021. When complete, the port will have 32 berths.\n\nSave this post for your next trip to Lamu.\n\n#BuiltInKenya #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-10-31T11:00:00+03:00",
-      "side": "government",
-      "tone": "credit",
       "source_links": [
         {
-          "outlet": "REREC",
-          "title": "Garissa Solar Power Plant: With 54.65 megawatts installed, REREC calls it the largest grid-connected solar plant in East and Central Africa.",
-          "link": "https://rerec.co.ke/garissa-solar-power-plant.php",
+          "outlet": "Capital FM",
+          "title": "Lamu Port: Lamu Port's first berth opened in May 2021; when complete the port will have 32 berths.",
+          "link": "https://capitalfm.africa/kenya-opens-new-32-berth-lamu-port/",
           "published": ""
         }
       ],
       "material": {
         "kind": "bank",
-        "key": "bank:garissa-solar",
-        "id": "garissa-solar",
+        "key": "bank:lamu-port",
+        "id": "lamu-port",
         "series": "Built in Kenya",
-        "place": "Garissa",
-        "name": "Garissa Solar Power Plant",
-        "fact": "With 54.65 megawatts installed, REREC calls it the largest grid-connected solar plant in East and Central Africa.",
-        "source": "https://rerec.co.ke/garissa-solar-power-plant.php",
-        "outlet": "REREC",
-        "photo_query": "Garissa solar power plant Kenya"
+        "place": "Lamu",
+        "name": "Lamu Port",
+        "fact": "Lamu Port's first berth opened in May 2021; when complete the port will have 32 berths.",
+        "source": "https://capitalfm.africa/kenya-opens-new-32-berth-lamu-port/",
+        "outlet": "Capital FM",
+        "photo_query": "Lamu Port Kenya ship berth"
       },
       "status": "needs_human",
       "guard": {
         "errors": [
-          "no real photo of this place or project was found: redraft with another one"
+          "weak: editor scored 6.0/10. Evergreen showcase posts need a sharper hook about trade or shipping numbers rather than a generic travel prompt."
         ],
         "warnings": []
       },
       "critic": {
-        "hook": 7,
-        "send": 8,
-        "clarity": 9,
-        "fresh": 8,
-        "voice": 8,
-        "craft": 8,
-        "picture": 8,
-        "hold": 8,
-        "demand": 6,
-        "action": 8,
-        "fair": 8,
-        "impact": 8,
-        "avg": 7.8,
-        "note": "Ensure the image query targets the actual solar farm installation in Garissa."
+        "hook": 6,
+        "send": 6,
+        "clarity": 7,
+        "fresh": 5,
+        "voice": 7,
+        "craft": 6,
+        "picture": 7,
+        "hold": 6,
+        "demand": 4,
+        "action": 6,
+        "fair": 7,
+        "impact": 5,
+        "avg": 6.0,
+        "note": "Evergreen showcase posts need a sharper hook about trade or shipping numbers rather than a generic travel prompt."
       },
-      "drafted_at": "2026-10-25T20:25:57.683198+03:00"
+      "drafted_at": "2026-10-26T02:18:57.715973+03:00"
     },
     {
       "id": "2026-w44-d7-glasspoll",
@@ -413,10 +407,10 @@
     }
   ],
   "scripts": {
-    "radio": "Good evening. This is Kenya on Record, bringing you the facts that shape our public life and economy.\n\nFirst, on energy infrastructure: the Garissa Solar Power Plant is now delivering 54.65 megawatts of clean power into the national grid. Harnessing solar potential in northern Kenya is a necessary step toward diversifying our energy mix. The accountability question remains whether these clean megawatts will translate into lower, more predictable electricity tariffs for Kenyan households and businesses.\n\nSecond, on public assets: a critical national debate has opened up over whether the government should sell a 25 percent stake in the Kenya Pipeline Company to the Dangote Group. Kenya Pipeline is a profitable, strategic national utility that underpins fuel distribution across the region. As citizens, we must ask: does private capital improve efficiency, or does divesting critical infrastructure compromise our energy sovereignty? Public participation on this transaction must be genuine and transparent.\n\nFinally, a vital health advisory: salt water does not cure or prevent Ebola. Drinking or bathing in high concentrations of salt water is dangerous and offers zero protection. Rely strictly on certified health guidelines and report any symptoms immediately to authorized medical facilities.\n\nKwa ufupi: Mtambo wa sola wa Garissa unaingiza megawati 54.65 kwenye gridi ya taifa. Wananchi wanajadili mpango wa serikali kuuza asilimia 25 ya hisa za Kenya Pipeline kwa kampuni ya Dangote. Na ukweli wa afya: maji ya chumvi hayatibu Ebola; fuata ushauri wa wataalamu wa afya pekee. \n\nStay informed, and hold the record.",
-    "voice_note": "Habari zenu. Here is your weekly accountability update from Kenya on Record.\n\nFirst, a critical health warning: salt water does not cure or prevent Ebola. Please disregard those viral messages. Rely strictly on verified health ministry guidelines, and report suspected symptoms to a hospital immediately.\n\nOn the national balance sheet, a major debate is brewing: should the government sell a 25 percent stake in Kenya Pipeline to Dangote? KPC is a profitable strategic asset handling our regional fuel corridor. We need total transparency on valuation and terms before public property is signed away.\n\nOn energy, Garissa Solar Plant is feeding 54.65 megawatts of renewable power into the national grid. The real test is whether our power bills reflect that clean energy.\n\nForward this note to your groups to keep the facts straight.",
-    "sms": "Usiibiwe: Maji ya chumvi haitibu Ebola. Beware of fake health remedies online. If unwell, seek immediate medical care from certified facilities.",
-    "reels": "Should Kenya sell a 25 percent stake in Kenya Pipeline to the Dangote Group?\n\nKPC is not a struggling parastatal. It is a profitable, strategic artery that secures fuel supply across East Africa.\n\nPrivate capital can drive expansion, but selling public monopolies requires total transparency, not closed-door deals.\n\nIs this a smart strategic partnership, or the surrender of a vital national asset? Put your voice on record."
+    "radio": "Good day and welcome to Kenya on Record. This week, we address a dangerous health myth circulating on our phones, alongside a progress check on our major transport infrastructure.\n\nFirst, public health. A viral message has resurfaced claiming that drinking warm salt water or bathing in brine protects you against Ebola. Let us be unequivocal: salt water does not prevent or cure Ebola. Consuming excessive salt draws water out of your body, causing acute dehydration, dangerous spikes in blood pressure, and potential kidney failure. In severe cases, salt toxicity can be fatal. Legitimate prevention relies on proven hygiene—washing hands frequently with soap and running water, and immediately reporting fever and unusual bleeding to health professionals. Do not substitute medical protocol with online fictions.\n\nMeanwhile, on infrastructure, attention remains focused on Lamu Port. Positioned as Kenya’s premier deep-sea transshipment facility under the LAPSSET corridor, the master plan targets thirty-two deep-water berths capable of handling modern mega-cargo vessels. As public resources flow into northern Kenya’s transport networks, accountability requires that this massive port delivers not just impressive concrete, but transparent trade revenue and sustainable local jobs.\n\nKwa ufupi: Kunywa maji ya chumvi hakukukingi dhidi ya Ebola; badala yake, kunaweza kuharibu figo zako na kuhatarisha maisha. Zingatia usafi na maagizo ya matibabu. Kuhusu miundombinu, ujenzi wa Bandari ya Lamu yenye gati thelathini na mbili zilizopangwa unaendelea ili kuimarisha uchumi wa kitaifa. Kuwa mwangalifu na utetee ukweli.",
+    "voice_note": "Habari zenu. Here is your Kenya on Record weekly accountability brief.\n\nFirst, please warn your family WhatsApp groups: drinking concentrated salt water does not protect against Ebola. This is a hazardous falsehood. High salt intake leads to severe dehydration and kidney damage, not immunity. In an outbreak, stick to established guidance—proper handwashing with soap and running water, and seeking immediate medical attention if someone falls ill.\n\nOn the economic front, we are monitoring Lamu Port. Built as Kenya's premier deep-sea maritime facility, the master plan features 32 planned berths designed to handle the world's largest container ships and open northern trade routes. Our task as citizens is ensuring these mega-investments operate efficiently and create real economic value.\n\nStop the spread of fake health tips, demand delivery on national projects, and always check the record before you share.",
+    "sms": "Usiibiwe: Drinking salt water will not protect you against Ebola. It causes severe dehydration and kidney damage. Trust verified health advisories only.",
+    "reels": "Stop forwarding that message. Drinking salt water does not protect you from Ebola. In fact, it can kill you.\n\nHigh doses of salt do not neutralize a virus. Instead, it triggers acute dehydration and kidney complications. Misinformation during a health scare spreads faster than disease—and it carries real casualties.\n\nProtect your household with verified facts, proper hygiene, and clinical care. Verify before you share. That is Kenya on Record."
   },
   "spend_usd": 0.0
 }
