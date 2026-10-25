@@ -26,3 +26,13 @@ class ChartReel(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Stake(unittest.TestCase):
+    def test_stake_line_is_computed_from_the_chart(self):
+        chart = [{"label": "Super petrol", "old": 214.03, "new": 226.96}]
+        self.assertEqual(render.stake_line(chart, 20), "A 20-litre fill-up of super petrol now costs Sh258.60 more.")
+        self.assertEqual(render.stake_line(chart, None), "")
+        self.assertEqual(render.stake_line([], 20), "")
+        down = [{"label": "Diesel", "old": 230.0, "new": 225.0}]
+        self.assertIn("Sh100.00 less", render.stake_line(down, 20))

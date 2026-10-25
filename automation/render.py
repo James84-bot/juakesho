@@ -255,6 +255,21 @@ def _dateline(post: dict) -> str:
     return f"{d.day} {d:%b %Y}"
 
 
+def stake_line(chart: list[dict], litres) -> str:
+    """What the rise means in the viewer's pocket, computed from the same figures as the chart: the extra cost of a
+    fill-up of the first fuel in the chart. Empty when the post does not ask for it (`stake_litres`)."""
+    try:
+        n = int(litres)
+    except (TypeError, ValueError):
+        return ""
+    if not chart or n <= 0:
+        return ""
+    c = chart[0]
+    extra = round((c["new"] - c["old"]) * n, 2)
+    word = "more" if extra >= 0 else "less"
+    return f"A {n}-litre fill-up of {str(c['label']).lower()} now costs Sh{abs(extra):,.2f} {word}."
+
+
 def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = False, measure: bool = False) -> str:
     kind = post.get("size", "post")
     W, H = SIZES[kind]
@@ -296,6 +311,7 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
     ctx["chart"] = []
     if post.get("chart"):   # rise = new - old, computed here so the figures on screen can't drift from the data
         ctx["chart"] = [{**c, "rise": round(c["new"] - c["old"], 2)} for c in post["chart"]]
+        ctx["stake"] = stake_line(post["chart"], post.get("stake_litres"))
     ctx["photo_band"] = 0
     ctx["photo_fy"] = 30
     # a beat Reel with real footage: frames are drawn transparent and video.py lays them over the moving clip
