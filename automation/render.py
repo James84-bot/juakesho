@@ -288,11 +288,14 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
     if person and Path(person).exists() and post["template"] in PERSON_TEMPLATES:
         # A real, named person (someone we celebrate, or a public office holder on the record): their real photo
         ctx.update(photo_uri=Path(person).as_uri(), photo_credit=post.get("person_credit") or "", person_shown=True)
-    elif photo and Path(photo).exists() and post["template"] in PHOTO_TEMPLATES:
+    elif photo and Path(photo).exists() and post["template"] in PHOTO_TEMPLATES and not post.get("chart"):   # a chart Reel carries its own visual, no third-party photo
         civic = post["template"] in {"money", "straight", "promise", "sauti", "kumbuka", "scorecard"} or post.get("series") in {"See Through It"}
         civic = civic and post.get("photo_kind") not in {"event", "yours", "posted", "file"}   # real photos are not illustrative
         ctx.update(photo_uri=Path(photo).as_uri(),
                    photo_credit=("Illustrative photo · " if civic else "") + (post.get("photo_credit") or ""))
+    ctx["chart"] = []
+    if post.get("chart"):   # rise = new - old, computed here so the figures on screen can't drift from the data
+        ctx["chart"] = [{**c, "rise": round(c["new"] - c["old"], 2)} for c in post["chart"]]
     ctx["photo_band"] = 0
     ctx["photo_fy"] = 30
     # a beat Reel with real footage: frames are drawn transparent and video.py lays them over the moving clip

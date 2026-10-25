@@ -40,6 +40,18 @@
 @keyframes stay { 0% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes slam { 0% { opacity: 0; scale: 1.25; translate: 0 .08em; } 100% { opacity: 1; scale: 1; translate: 0 0; } }
 @keyframes fill { to { scale: 1 1; } }
+{% if chart %}
+/* the rise as bars: how many shillings more per litre, each fuel against the biggest rise */
+.stage { bottom: 760px; }
+.cx { position: absolute; left: var(--m); right: var(--m); bottom: 190px; z-index: 3; display: grid; gap: 38px; }
+.cx-r { display: grid; gap: 10px; opacity: 0; animation: stay .5s linear both; }
+.cx-h { display: flex; justify-content: space-between; align-items: baseline; font: 900 40px/1 "Inter Tight"; color: #fff; letter-spacing: -.01em; }
+.cx-h b { font-size: 52px; }
+.cx-b { height: 26px; border-radius: 4px; background: #fff; scale: 0 1; transform-origin: left; animation: fill .9s cubic-bezier(.2,.8,.2,1) both; }
+.cx-n { font: 700 28px/1 "Inter Tight"; color: rgba(255,255,255,.88); letter-spacing: .02em; }
+{% for r in chart %}.cx-r:nth-child({{ loop.index }}), .cx-r:nth-child({{ loop.index }}) .cx-b { animation-delay: {{ '%.2f' % (1.0 + loop.index0 * 0.35) }}s; }
+{% endfor %}
+{% endif %}
 {% for b in beats %}{% set s = BT.starts[loop.index0] %}{% set d = BT.durs[loop.index0] %}
 .b{{ loop.index }} { font-size: {{ fitw(b, 860, 4, 96 if photo_band else 132) }}px;
   animation: {{ 'stay .15s linear both' if loop.last else 'show ' ~ d ~ 's linear both' }}; animation-delay: {{ s }}s; }
@@ -59,4 +71,10 @@
     <div class="beat b{{ loop.index }}">{% for w, m in beat_tokens(b) %}<span class="t{{ ' m' if m }}" style="animation-delay: {{ '%.2f' % (s + loop.index0 * 0.035) }}s">{{ w }}</span>{% endfor %}</div>
     {% endfor %}
   </div>
+  {% if chart %}{% set top = chart | map(attribute='rise') | max %}
+  <div class="cx">{% for r in chart %}
+    <div class="cx-r"><div class="cx-h"><span>{{ r.label }}</span><b>+Sh{{ '%.2f' % r.rise }}</b></div>
+      <div class="cx-b" style="width: {{ '%.1f' % (r.rise / top * 100) }}%"></div>
+      <div class="cx-n">Sh{{ '%.2f' % r.old }} to Sh{{ '%.2f' % r.new }} a litre</div></div>{% endfor %}
+  </div>{% endif %}
 {% endblock %}
