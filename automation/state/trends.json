@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-10-25T08:44:10.456133+00:00",
+  "fetched": "2026-10-25T10:10:27.897474+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "housing",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "NEMA Issues Notice on Ruto's Planned Nairobi Housing Project With 7,000 Units",
+          "url": "https://www.kenyans.co.ke/news/128842-nema-invites-public-comments-plan-build-7128-housing-units-nairobi",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "NEMA seeks public views on 2,970 housing units planned for Southlands, Nairobi",
+          "url": "https://peopledaily.digital/news/nema-seeks-public-views-on-2970-housing-units-planned-for-southlands-nairobi",
+          "source": "People Daily"
+        },
+        {
+          "title": "Select Nairobi Residents Face Possible Relocation Under New Govt Housing Project",
+          "url": "https://thekenyatimes.com/latest-kenya-times-news/select-nairobi-residents-face-possible-relocation-under-new-govt-housing-project/",
+          "source": "The Kenya Times"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "ebola in kenya",
@@ -25,97 +47,8 @@
     },
     {
       "geo": "KE",
-      "title": "housing",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "NEMA Issues Notice on Ruto's Planned Nairobi Housing Project With 7,000 Units",
-          "url": "https://www.kenyans.co.ke/news/128842-nema-invites-public-comments-plan-build-7128-housing-units-nairobi",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Select Nairobi Residents Face Possible Relocation Under New Govt Housing Project",
-          "url": "https://thekenyatimes.com/latest-kenya-times-news/select-nairobi-residents-face-possible-relocation-under-new-govt-housing-project/",
-          "source": "The Kenya Times"
-        },
-        {
-          "title": "Budget to include £1bn for social and affordable housing",
-          "url": "https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o",
-          "source": "BBC"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "atletico madrid",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Atletico Madrid vs Deportivo de A Coruña: Spanish La Liga stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cqpvglrn2w8xt",
-          "source": "BBC"
-        },
-        {
-          "title": "Atletico Madrid v Deportivo La Coruna | Match Highlights | LaLiga EA Sports Matchday 10",
-          "url": "https://supersport.com/football/video/5dd78004-7840-44eb-bbd5-78b3007caca8/atletico-madrid-v-deportivo-la-coruna-match-highlights-laliga-ea-sports-matchday-10",
-          "source": "SuperSport"
-        },
-        {
-          "title": "Alvarez’s apology goal hands Atlético a sixth consecutive league win",
-          "url": "https://www.intothecalderon.com/atletico-madrid-columns/29305/takeaways-atletico-madrid-deportivo-a-coruna-julian-alvarez-diego-simeone-la-liga-barcelona",
-          "source": "Into the Calderon"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "celta vigo vs real betis",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "El Real Betis, el \"fenómeno\", continúa con confianza su racha ganadora.",
-          "url": "https://www.vietnam.vn/es/hien-tuong-real-betis-tu-tin-tiep-da-thang-hoa",
-          "source": "Vietnam.vn"
-        },
-        {
-          "title": "Duelo generacional; empate técnico",
-          "url": "https://www.farodevigo.es/celta-de-vigo/2026/10/25/duelo-generacional-empate-tecnico-135592500.html",
-          "source": "Faro de Vigo"
-        },
-        {
-          "title": "Celta - Betis: El calendario prueba la madurez del Betis",
-          "url": "https://www.abc.es/deportes/alfinaldelapalmera/noticias-betis/celta-betis-calendario-prueba-madurez-betis-20261025071803-nts.html",
-          "source": "ABC"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "suns vs warriors",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Suns 131-122 Warriors (Oct 24, 2026) Game Recap",
-          "url": "https://www.espn.com/nba/recap?gameId=401909860",
-          "source": "ESPN"
-        },
-        {
-          "title": "Jalen Johnson posts 26/9/16/2 line in loss",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-24/jalen-johnson-posts-26-9-16-2-line-in-loss",
-          "source": "NBC Sports"
-        },
-        {
-          "title": "Steph Curry officially ruled out tonight in Phoenix …",
-          "url": "https://sports.yahoo.com/articles/steph-curry-officially-ruled-tonight-201758367.html",
-          "source": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "man u vs bournemouth",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Carrick's team news for Cherries clash",
@@ -136,6 +69,50 @@
     },
     {
       "geo": "KE",
+      "title": "suns vs warriors",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Shorthanded Warriors put up a fight in entertaining loss to Suns",
+          "url": "https://www.goldenstateofmind.com/warriors-scores-results/112885/warriors-suns-recap-yaxel-lendeborg-deanthony-melton",
+          "source": "Golden State Of Mind"
+        },
+        {
+          "title": "Postgame analysis of rookie Yaxel Lendeborg's big game despite the loss to Suns",
+          "url": "https://www.nba.com/watch/video/postgame-analysis-of-rookie-yaxel-lendeborgs-big-game-despite-the-loss-to-suns?plsrc=nba&collection=more-to-watch-2",
+          "source": "NBA.com"
+        },
+        {
+          "title": "Miles Bridges scores 16 points in Suns home debut",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-25/miles-bridges-scores-16-points-in-suns-home-debut",
+          "source": "NBC Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "celta vigo vs real betis",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "El Betis solo ganó en Balaídos en la primera campaña con Pellegrini",
+          "url": "https://mundobetis.com/2026/10/25/el-betis-solo-gano-en-balaidos-en-la-primera-campana-con-pellegrini/",
+          "source": "MundoBetis"
+        },
+        {
+          "title": "Duelo generacional; empate técnico",
+          "url": "https://www.farodevigo.es/celta-de-vigo/2026/10/25/duelo-generacional-empate-tecnico-135592500.html",
+          "source": "Faro de Vigo"
+        },
+        {
+          "title": "Celta - Betis: El calendario prueba la madurez del Betis",
+          "url": "https://www.abc.es/deportes/alfinaldelapalmera/noticias-betis/celta-betis-calendario-prueba-madurez-betis-20261025071803-nts.html",
+          "source": "ABC"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "76ers vs bucks",
       "traffic": "100+",
       "news": [
@@ -150,14 +127,18 @@
           "source": "France 24"
         },
         {
-          "title": "Dean Wade (ankle) plays 28 minutes in 76ers debut",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-24/dean-wade-ankle-plays-28-minutes-in-76ers-debut",
-          "source": "NBC Sports"
+          "title": "Milwaukee Bucks vs. Philadelphia 76ers: Game Highlights",
+          "url": "https://www.espn.com/video/clip/_/id/50272923/game-highlights",
+          "source": "ESPN"
         }
       ]
     }
   ],
   "dropped": [
+    {
+      "title": "psv vs feyenoord",
+      "why": "unsafe: 'Betting'"
+    },
     {
       "title": "crystal palace vs newcastle",
       "why": "unsafe: 'Odds'"
