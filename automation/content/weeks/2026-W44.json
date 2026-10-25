@@ -1,405 +1,409 @@
 {
- "collection": "2026-W44",
- "created": "2026-10-25T17:02:44.686654+03:00",
- "posts": [
-  {
-   "id": "2026-w44-d1-money-r2",
-   "template": "money",
-   "lane": "everyone",
-   "series": "The Real Price",
-   "hook": "Petrol is up Sh12.93 a litre",
-   "number": "Sh226.96",
-   "unit": "per litre of super petrol in Nairobi",
-   "what": "The new cap on super petrol in Nairobi, up Sh12.93 from Sh214.03.",
-   "why": "Diesel is up Sh9.90 to Sh227.76 and kerosene is up Sh28.49 to Sh219.87.",
-   "check": "Compare the cap with the price on your station's pump.",
-   "message": "Nairobi's super petrol cap is Sh226.96 a litre, up Sh12.93.",
-   "action": "Tell us what your station charges.",
-   "beats": [
-    "Super petrol now costs *Sh226.96* a litre in Nairobi.",
-    "That is Sh12.93 more than last month's Sh214.03.",
-    "Diesel rose Sh9.90 to Sh227.76, and kerosene rose Sh28.49 to Sh219.87.",
-    "Stations can charge less than these caps, but not more.",
-    "Tell us your town and what your station charges."
-   ],
-   "caption": "EPRA's new Nairobi price caps run from 15 Oct to 14 Nov.\n\nSuper petrol: Sh226.96 (up Sh12.93)\nDiesel: Sh227.76 (up Sh9.90)\nKerosene: Sh219.87 (up Sh28.49)\n\nStations can charge less than a cap, never more. What does your station charge? Tell us the town and the price.\n\n#TheRealPrice #KenyaOnRecord",
-   "source": "The Star, 2026-10-14; Tech-ish, 2026-10-14",
-   "photo_query": "petrol station pump Kenya",
-   "who": "EPRA",
-   "where": "Nairobi",
-   "when": "15 Oct 2026",
-   "side": "none",
-   "tone": "explainer",
-   "impact": "Petrol, diesel and kerosene all cost more per litre in Nairobi until 14 Nov.",
-   "bg": "shuka",
-   "publish_at": "2026-10-26T07:30:00+03:00",
-   "angle": "real_price",
-   "source_links": [
+  "collection": "2026-W44",
+  "created": "2026-10-25T17:02:44.686654+03:00",
+  "posts": [
     {
-     "outlet": "The Star",
-     "title": "EPRA raises petrol by Sh12.93",
-     "link": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
-     "published": "2026-10-14"
+      "id": "2026-w44-d1-money-r2",
+      "template": "money",
+      "lane": "everyone",
+      "series": "The Real Price",
+      "hook": "Petrol is up Sh12.93 a litre",
+      "number": "Sh226.96",
+      "unit": "per litre of super petrol in Nairobi",
+      "what": "The new cap on super petrol in Nairobi, up Sh12.93 from Sh214.03.",
+      "why": "Diesel is up Sh9.90 to Sh227.76 and kerosene is up Sh28.49 to Sh219.87.",
+      "check": "Compare the cap with the price on your station's pump.",
+      "message": "Nairobi's super petrol cap is Sh226.96 a litre, up Sh12.93.",
+      "action": "Tell us what your station charges.",
+      "beats": [
+        "Super petrol now costs *Sh226.96* a litre in Nairobi.",
+        "That is Sh12.93 more than last month's Sh214.03.",
+        "Diesel rose Sh9.90 to Sh227.76, and kerosene rose Sh28.49 to Sh219.87.",
+        "Stations can charge less than these caps, but not more.",
+        "Tell us your town and what your station charges."
+      ],
+      "caption": "EPRA's new Nairobi price caps run from 15 Oct to 14 Nov.\n\nSuper petrol: Sh226.96 (up Sh12.93)\nDiesel: Sh227.76 (up Sh9.90)\nKerosene: Sh219.87 (up Sh28.49)\n\nStations can charge less than a cap, never more. What does your station charge? Tell us the town and the price.\n\n#TheRealPrice #KenyaOnRecord",
+      "source": "The Star, 2026-10-14; Tech-ish, 2026-10-14",
+      "photo_query": "petrol station pump Kenya",
+      "who": "EPRA",
+      "where": "Nairobi",
+      "when": "15 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Petrol, diesel and kerosene all cost more per litre in Nairobi until 14 Nov.",
+      "bg": "shuka",
+      "publish_at": "2026-10-26T07:30:00+03:00",
+      "angle": "real_price",
+      "source_links": [
+        {
+          "outlet": "The Star",
+          "title": "EPRA raises petrol by Sh12.93",
+          "link": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
+          "published": "2026-10-14"
+        },
+        {
+          "outlet": "Tech-ish",
+          "title": "Petrol rises to KES 226.96 in Nairobi and kerosene jumps KES 28.49",
+          "link": "https://tech-ish.com/2026/10/14/petrol-rises-to-kes-226-96-in-nairobi-and-kerosene-jumps-kes-28-49/",
+          "published": "2026-10-14"
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "fuel:2026-10",
+        "id": "fuel-2026-10",
+        "series": "The Real Price",
+        "fact": "From 15 Oct to 14 Nov 2026 the Nairobi price caps are: super petrol Sh226.96 (up Sh12.93 from Sh214.03), diesel Sh227.76 (up Sh9.90 from Sh217.86) and kerosene Sh219.87 (up Sh28.49 from Sh191.38). Stations can charge less than a cap, not more.",
+        "source": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
+        "outlet": "The Star"
+      },
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "drafted_at": "2026-10-25T17:14:42.434585+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d1-money-r2-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
+      "reel": true,
+      "tg_msg": 547,
+      "hand": true,
+      "auto": true,
+      "decided_at": "2026-10-25T21:01:08.905477+03:00"
     },
     {
-     "outlet": "Tech-ish",
-     "title": "Petrol rises to KES 226.96 in Nairobi and kerosene jumps KES 28.49",
-     "link": "https://tech-ish.com/2026/10/14/petrol-rises-to-kes-226-96-in-nairobi-and-kerosene-jumps-kes-28-49/",
-     "published": "2026-10-14"
-    }
-   ],
-   "material": {
-    "kind": "bank",
-    "key": "fuel:2026-10",
-    "id": "fuel-2026-10",
-    "series": "The Real Price",
-    "fact": "From 15 Oct to 14 Nov 2026 the Nairobi price caps are: super petrol Sh226.96 (up Sh12.93 from Sh214.03), diesel Sh227.76 (up Sh9.90 from Sh217.86) and kerosene Sh219.87 (up Sh28.49 from Sh191.38). Stations can charge less than a cap, not more.",
-    "source": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
-    "outlet": "The Star"
-   },
-   "status": "awaiting",
-   "guard": {
-    "errors": [],
-    "warnings": [
-     "caption has no send/share/save call: sends and saves drive reach"
-    ]
-   },
-   "drafted_at": "2026-10-25T17:14:42.434585+03:00",
-   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d1-money-r2-photo.jpg",
-   "photo_credit": "Photo: Kenyans.co.ke",
-   "photo_kind": "posted",
-   "photo_outlet": "Kenyans.co.ke",
-   "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
-   "reel": true,
-   "tg_msg": 547,
-   "hand": true
-  },
-  {
-   "id": "2026-w44-d2-kenya-r2",
-   "template": "kenya",
-   "lane": "young_pro",
-   "series": "Kenya at its best",
-   "place": "Aberdare ranges, Nyeri",
-   "line": "A fig tree in the Aberdares was a *secret post office* for Mau Mau fighters.",
-   "fact": "Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
-   "source": "https://kws.go.ke/park/aberdare-national-park/",
-   "message": "Aberdare's Mau Mau Post Office tree was a secret message drop.",
-   "action": "Tag someone who would make the trip.",
-   "beats": [
-    "A mugumo fig in the Aberdares was a *secret message drop*.",
-    "Mau Mau fighters used the Post Office tree.",
-    "You will find it in the Aberdare ranges, in Nyeri.",
-    "Tag someone who would make the trip."
-   ],
-   "caption": "The Mau Mau Post Office tree in Aberdare National Park, Nyeri, is a mugumo fig that was a secret message drop for Mau Mau fighters.\n\nTag someone who would make the trip.\n\n#Aberdare #KenyaAtItsBest #KenyaOnRecord",
-   "photo_query": "Aberdare National Park waterfall Kenya",
-   "who": "Kenya Wildlife Service",
-   "where": "Nyeri County",
-   "when": "2026",
-   "side": "none",
-   "tone": "credit",
-   "impact": "Kenyans preserve historic liberation sites alongside indigenous forest water towers.",
-   "bg": "usiku",
-   "publish_at": "2026-10-27T12:45:00+03:00",
-   "source_links": [
-    {
-     "outlet": "Kenya Wildlife Service",
-     "title": "Aberdare National Park: Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
-     "link": "https://kws.go.ke/park/aberdare-national-park/",
-     "published": ""
-    }
-   ],
-   "material": {
-    "kind": "bank",
-    "key": "bank:aberdare",
-    "id": "aberdare",
-    "series": "Kenya at its best",
-    "place": "Aberdare ranges, Nyeri",
-    "name": "Aberdare National Park",
-    "fact": "Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
-    "source": "https://kws.go.ke/park/aberdare-national-park/",
-    "outlet": "Kenya Wildlife Service",
-    "photo_query": "Aberdare National Park waterfall Kenya"
-   },
-   "status": "awaiting",
-   "guard": {
-    "errors": [],
-    "warnings": []
-   },
-   "drafted_at": "2026-10-25T17:14:42.434592+03:00",
-   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d2-kenya-r2-photo.jpg",
-   "photo_credit": "Photo: Matteo Frigo / Wikimedia Commons, CC BY-SA 4.0",
-   "photo_kind": "place",
-   "photo_outlet": "",
-   "photo_source": "https://commons.wikimedia.org/wiki/File:Gura_Giant_Falls_view_from_the_top_of_Karuru_Falls.jpg",
-   "reel": true,
-   "tg_msg": 548,
-   "hand": true
-  },
-  {
-   "id": "2026-w44-d3-promise-r2",
-   "template": "promise",
-   "lane": "everyone",
-   "bg": "usiku",
-   "publish_at": "2026-10-28T18:30:00+03:00",
-   "status": "needs_human",
-   "guard": {
-    "errors": [
-     "The Promise Tracker names a real promise and says it was not kept: the promise and its source must be researched by a person, never invented by the writer to fit a headline"
-    ],
-    "warnings": []
-   },
-   "drafted_at": "2026-10-25T20:25:57.683203+03:00"
-  },
-  {
-   "id": "2026-w44-d4-glasspoll",
-   "template": "glasspoll",
-   "bg": "usiku",
-   "lane": "everyone",
-   "publish_at": "2026-10-29T19:30:00+03:00",
-   "size": "story",
-   "angle": "price_quiz",
-   "series": "Guess the Price",
-   "status": "needs_human",
-   "guard": {
-    "errors": [
-     "no headline this week states a price, so Guess the Price would have no real answer"
-    ],
-    "warnings": []
-   },
-   "drafted_at": "2026-10-25T20:25:57.683205+03:00"
-  },
-  {
-   "id": "2026-w44-d5-straight",
-   "template": "straight",
-   "lane": "hustle",
-   "series": "Myth or Fact",
-   "claim": "The government has banned media houses from livestreaming 2027 election results.",
-   "who": "Viral political posts and commentary",
-   "claim_source": "Kenyans.co.ke, 2026-10-25",
-   "truth": "No ban on livestreaming election results exists in Kenyan law today.",
-   "verdict": "false",
-   "proof": [
-    "President William Ruto dismissed claims of any plan to stop live tallies.",
-    "Article 34 of the Constitution protects media freedom and public broadcast rights.",
-    "Former CS Justin Muturi asked the IEBC to issue binding coverage rules."
-   ],
-   "pride": "Kenyan elections depend on open scrutiny and constitutional safeguards.",
-   "source": "The Star, Kenya, 2026-10-22",
-   "demand": 7,
-   "message": "No ban exists on livestreaming 2027 election results. Media freedom is constitutionally protected.",
-   "action": "Track election reforms and regulations directly on the official portal at iebc.or.ke",
-   "photo_query": "ballot box Kenya",
-   "event_query": "Ruto State House Nairobi",
-   "beats": [
-    "Reports claiming a *livestream ban* on 2027 election results are false.",
-    "President William Ruto confirmed the government plans no media restrictions.",
-    "The Constitution protects the right of broadcasters to cover public tallies.",
-    "Kenyans demand: the IEBC gazettes clear *livestreaming rules* well before 2027."
-   ],
-   "caption": "Claims of a state ban on livestreaming 2027 election results are false. The Constitution protects media coverage and open tallying of votes.\n\nWhat rules do you want the IEBC to put in place for 2027?\n\n#SetItStraight #KenyaOnRecord",
-   "bg": "usiku",
-   "publish_at": "2026-10-30T17:00:00+03:00",
-   "side": "none",
-   "tone": "explainer",
-   "impact": "Assures voters that 2027 presidential poll results remain open to public media scrutiny.",
-   "where": "National",
-   "when": "25 October 2026",
-   "angle": "myth",
-   "source_links": [
-    {
-     "outlet": "The Star, Kenya",
-     "title": "Where are Kenyans seeing potentially misleading Ebola information?",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSGd3SmlFd1lWUDZ5SW8yd3dnZ3FIQ1NRVGZjUE04aXc3aENTRkt3R0VuXy03NzVRU2dmSUdGVDh6TktXY2Q0VVhwZXBNSEE1RnpoUnJuLUtyMEgwd1FNdHpmUTJtOGo3SDUxdFowVF9KbG0zNXdhOGlzOHdiMlItVnFSLXViRW10WGZrZV9kYXJrY0xBZmU4OV9nU1B3bnQxTzZWbmpJcjFTS0JuSW1ReFFocDV6WU1mc3hUNzVn?oc=5",
-     "published": "2026-10-22"
-    }
-   ],
-   "material": {
-    "kind": "myth",
-    "key": "news:https://news.google.com/rss/articles/CBMivgFBVV95cUxNSGd3SmlFd1lWUDZ5SW8yd3dnZ3FIQ1NRVGZjUE04aXc3aENTRkt3R0VuXy03NzVRU2dmSUdGVDh6TktXY2Q0VVhwZXBNSEE1RnpoUnJuLUtyMEgwd1FNdHpmUTJtOGo3SDUxdFowVF9KbG0zNXdhOGlzOHdiMlItVnFSLXViRW10WGZrZV9kYXJrY0xBZmU4OV9nU1B3bnQxTzZWbmpJcjFTS0JuSW1ReFFocDV6WU1mc3hUNzVn?oc=5",
-    "title": "Where are Kenyans seeing potentially misleading Ebola information?",
-    "outlet": "The Star, Kenya",
-    "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSGd3SmlFd1lWUDZ5SW8yd3dnZ3FIQ1NRVGZjUE04aXc3aENTRkt3R0VuXy03NzVRU2dmSUdGVDh6TktXY2Q0VVhwZXBNSEE1RnpoUnJuLUtyMEgwd1FNdHpmUTJtOGo3SDUxdFowVF9KbG0zNXdhOGlzOHdiMlItVnFSLXViRW10WGZrZV9kYXJrY0xBZmU4OV9nU1B3bnQxTzZWbmpJcjFTS0JuSW1ReFFocDV6WU1mc3hUNzVn?oc=5",
-    "published": "2026-10-22"
-   },
-   "status": "needs_human",
-   "guard": {
-    "errors": [
-     "'pride' is 71 chars (max 50)",
-     "beats[1] is too long: max 12 words / 72 characters",
-     "beats[2] is too long: max 12 words / 72 characters",
-     "beats[3] is too long: max 12 words / 72 characters",
-     "'2027' is not in this post's material (Where are Kenyans seeing potentially misleading Ebola information?): use only the numbers it gives",
-     "the linked report is not about this story (Where are Kenyans seeing potentially misleading Ebola information?): use the headline id of the report this post is really based on",
-     "the caption calls it 'Set It Straight': this post's series is 'Myth or Fact'"
-    ],
-    "warnings": [
-     "caption has no send/share/save call: sends and saves drive reach"
-    ]
-   },
-   "critic": {
-    "hook": 7,
-    "send": 8,
-    "clarity": 8,
-    "fresh": 7,
-    "voice": 8,
-    "craft": 8,
-    "picture": 7,
-    "hold": 7,
-    "demand": 7,
-    "action": 7,
-    "fair": 8,
-    "impact": 8,
-    "avg": 7.5,
-    "note": "Make the hook speak directly to the viral posts circulating on social media."
-   },
-   "drafted_at": "2026-10-25T20:25:57.683190+03:00"
-  },
-  {
-   "id": "2026-w44-d6-kenya",
-   "template": "kenya",
-   "lane": "diaspora",
-   "series": "Built in Kenya",
-   "place": "Garissa",
-   "line": "Garissa powers clean energy with a *54.65 megawatt* solar installation.",
-   "fact": "With 54.65 megawatts installed, REREC calls it the largest grid-connected solar plant in East and Central Africa.",
-   "source": "https://rerec.co.ke/garissa-solar-power-plant.php",
-   "message": "Garissa Solar Power Plant delivers 54.65 megawatts of clean power to the national grid.",
-   "action": "Track Kenya's renewable energy generation progress on the EPRA portal",
-   "photo_query": "Garissa solar power plant Kenya",
-   "beats": [
-    "Garissa hosts East Africa's largest *grid-connected* solar station.",
-    "The plant delivers 54.65 megawatts of clean electricity.",
-    "Solar power lowers reliance on expensive diesel generators.",
-    "Garissa feeds clean power directly into the national grid."
-   ],
-   "caption": "Garissa Solar Power Plant delivers 54.65 megawatts of clean energy to the national grid, cutting reliance on expensive thermal generators. Built in Kenya and working today.\n\nSave this for your next trip through Garissa.\n\n#BuiltInKenya #KenyaOnRecord",
-   "bg": "usiku",
-   "publish_at": "2026-10-31T11:00:00+03:00",
-   "side": "government",
-   "tone": "credit",
-   "source_links": [
-    {
-     "outlet": "REREC",
-     "title": "Garissa Solar Power Plant: With 54.65 megawatts installed, REREC calls it the largest grid-connected solar plant in East and Central Africa.",
-     "link": "https://rerec.co.ke/garissa-solar-power-plant.php",
-     "published": ""
-    }
-   ],
-   "material": {
-    "kind": "bank",
-    "key": "bank:garissa-solar",
-    "id": "garissa-solar",
-    "series": "Built in Kenya",
-    "place": "Garissa",
-    "name": "Garissa Solar Power Plant",
-    "fact": "With 54.65 megawatts installed, REREC calls it the largest grid-connected solar plant in East and Central Africa.",
-    "source": "https://rerec.co.ke/garissa-solar-power-plant.php",
-    "outlet": "REREC",
-    "photo_query": "Garissa solar power plant Kenya"
-   },
-   "status": "needs_human",
-   "guard": {
-    "errors": [
-     "no real photo of this place or project was found: redraft with another one"
-    ],
-    "warnings": []
-   },
-   "critic": {
-    "hook": 7,
-    "send": 8,
-    "clarity": 9,
-    "fresh": 8,
-    "voice": 8,
-    "craft": 8,
-    "picture": 8,
-    "hold": 8,
-    "demand": 6,
-    "action": 8,
-    "fair": 8,
-    "impact": 8,
-    "avg": 7.8,
-    "note": "Ensure the image query targets the actual solar farm installation in Garissa."
-   },
-   "drafted_at": "2026-10-25T20:25:57.683198+03:00"
-  },
-  {
-   "id": "2026-w44-d7-glasspoll",
-   "template": "glasspoll",
-   "lane": "everyone",
-   "hook": "Who owns Kenya Pipeline?",
-   "question": "Sell KPC shares to Dangote?",
-   "cta": "Comment A or B below",
-   "options": [
-    "Keep 100% state owned",
-    "Sell 25% to Dangote"
-   ],
-   "source": "People Daily, 2026-10-25, Capital FM News, 2026-10-25",
-   "message": "Kenyans debate whether the government should sell a 25% stake in Kenya Pipeline to Dangote.",
-   "action": "Share your view on strategic state assets in the comments",
-   "photo_query": "fuel tanker truck Kenya",
-   "beats": [
-    "President Ruto defended selling a *25% stake* in Kenya Pipeline.",
-    "Critics argue Kenya Pipeline is a strategic public asset.",
-    "Private capital expands regional trade.",
-    "Should Kenya sell Kenya Pipeline shares?"
-   ],
-   "caption": "President Ruto defended the plan to sell a 25% stake in Kenya Pipeline to the Dangote Group, while critics demand strategic public assets stay fully state-owned.\n\nSell 25% to Dangote or keep 100% state owned? Vote A or B in the comments.\n\n#KenyaPipeline #KenyaOnRecord",
-   "bg": "usiku",
-   "publish_at": "2026-11-01T18:00:00+03:00",
-   "size": "story",
-   "side": "both",
-   "tone": "explainer",
-   "source_links": [
-    {
-     "outlet": "People Daily",
-     "title": "Ruto tells critics to keep petty politics off Dangote’s KPC stake",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdk5RZG96Z0hCLS0ybGRkRkpjbGx5My1peG9DR3E0VzJTd1pVS2owVU1VOWpVXzc2RGhMLS16Q0lrbnJUQ2xQVHFqR1pBdXlOUkxzWEx3LW9JaTkwc2dSaENFRS1ZWU4xWUpHNm1VNm9EQ3NqSkdDVGphMTJJZnBqWlVSaUZVcWRKd3ljQ21KRlpXdFJNX194aUJqZHBMYU43Zkxr?oc=5",
-     "published": "2026-10-25"
+      "id": "2026-w44-d2-kenya-r2",
+      "template": "kenya",
+      "lane": "young_pro",
+      "series": "Kenya at its best",
+      "place": "Aberdare ranges, Nyeri",
+      "line": "A fig tree in the Aberdares was a *secret post office* for Mau Mau fighters.",
+      "fact": "Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
+      "source": "https://kws.go.ke/park/aberdare-national-park/",
+      "message": "Aberdare's Mau Mau Post Office tree was a secret message drop.",
+      "action": "Tag someone who would make the trip.",
+      "beats": [
+        "A mugumo fig in the Aberdares was a *secret message drop*.",
+        "Mau Mau fighters used the Post Office tree.",
+        "You will find it in the Aberdare ranges, in Nyeri.",
+        "Tag someone who would make the trip."
+      ],
+      "caption": "The Mau Mau Post Office tree in Aberdare National Park, Nyeri, is a mugumo fig that was a secret message drop for Mau Mau fighters.\n\nTag someone who would make the trip.\n\n#Aberdare #KenyaAtItsBest #KenyaOnRecord",
+      "photo_query": "Aberdare National Park waterfall Kenya",
+      "who": "Kenya Wildlife Service",
+      "where": "Nyeri County",
+      "when": "2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Kenyans preserve historic liberation sites alongside indigenous forest water towers.",
+      "bg": "usiku",
+      "publish_at": "2026-10-27T12:45:00+03:00",
+      "source_links": [
+        {
+          "outlet": "Kenya Wildlife Service",
+          "title": "Aberdare National Park: Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
+          "link": "https://kws.go.ke/park/aberdare-national-park/",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:aberdare",
+        "id": "aberdare",
+        "series": "Kenya at its best",
+        "place": "Aberdare ranges, Nyeri",
+        "name": "Aberdare National Park",
+        "fact": "Its Mau Mau Post Office tree, a mugumo fig, was a secret message drop for Mau Mau fighters.",
+        "source": "https://kws.go.ke/park/aberdare-national-park/",
+        "outlet": "Kenya Wildlife Service",
+        "photo_query": "Aberdare National Park waterfall Kenya"
+      },
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-25T17:14:42.434592+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d2-kenya-r2-photo.jpg",
+      "photo_credit": "Photo: Matteo Frigo / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Gura_Giant_Falls_view_from_the_top_of_Karuru_Falls.jpg",
+      "reel": true,
+      "tg_msg": 548,
+      "hand": true,
+      "auto": true,
+      "decided_at": "2026-10-25T21:01:08.905490+03:00"
     },
     {
-     "outlet": "Capital FM News",
-     "title": "President Ruto Defends Dangote’s 25% KPC Stake Amid Public Outcry",
-     "link": "https://capitalfm.africa/president-ruto-defends-dangotes-25-kpc-stake-amid-public-outcry/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
-     "published": "2026-10-25"
+      "id": "2026-w44-d3-promise-r2",
+      "template": "promise",
+      "lane": "everyone",
+      "bg": "usiku",
+      "publish_at": "2026-10-28T18:30:00+03:00",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "The Promise Tracker names a real promise and says it was not kept: the promise and its source must be researched by a person, never invented by the writer to fit a headline"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-25T20:25:57.683203+03:00"
+    },
+    {
+      "id": "2026-w44-d4-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-10-29T19:30:00+03:00",
+      "size": "story",
+      "angle": "price_quiz",
+      "series": "Guess the Price",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "no headline this week states a price, so Guess the Price would have no real answer"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-10-25T20:25:57.683205+03:00"
+    },
+    {
+      "id": "2026-w44-d5-straight",
+      "template": "straight",
+      "lane": "hustle",
+      "series": "Myth or Fact",
+      "claim": "The government has banned media houses from livestreaming 2027 election results.",
+      "who": "Viral political posts and commentary",
+      "claim_source": "Kenyans.co.ke, 2026-10-25",
+      "truth": "No ban on livestreaming election results exists in Kenyan law today.",
+      "verdict": "false",
+      "proof": [
+        "President William Ruto dismissed claims of any plan to stop live tallies.",
+        "Article 34 of the Constitution protects media freedom and public broadcast rights.",
+        "Former CS Justin Muturi asked the IEBC to issue binding coverage rules."
+      ],
+      "pride": "Kenyan elections depend on open scrutiny and constitutional safeguards.",
+      "source": "The Star, Kenya, 2026-10-22",
+      "demand": 7,
+      "message": "No ban exists on livestreaming 2027 election results. Media freedom is constitutionally protected.",
+      "action": "Track election reforms and regulations directly on the official portal at iebc.or.ke",
+      "photo_query": "ballot box Kenya",
+      "event_query": "Ruto State House Nairobi",
+      "beats": [
+        "Reports claiming a *livestream ban* on 2027 election results are false.",
+        "President William Ruto confirmed the government plans no media restrictions.",
+        "The Constitution protects the right of broadcasters to cover public tallies.",
+        "Kenyans demand: the IEBC gazettes clear *livestreaming rules* well before 2027."
+      ],
+      "caption": "Claims of a state ban on livestreaming 2027 election results are false. The Constitution protects media coverage and open tallying of votes.\n\nWhat rules do you want the IEBC to put in place for 2027?\n\n#SetItStraight #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-30T17:00:00+03:00",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Assures voters that 2027 presidential poll results remain open to public media scrutiny.",
+      "where": "National",
+      "when": "25 October 2026",
+      "angle": "myth",
+      "source_links": [
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Where are Kenyans seeing potentially misleading Ebola information?",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSGd3SmlFd1lWUDZ5SW8yd3dnZ3FIQ1NRVGZjUE04aXc3aENTRkt3R0VuXy03NzVRU2dmSUdGVDh6TktXY2Q0VVhwZXBNSEE1RnpoUnJuLUtyMEgwd1FNdHpmUTJtOGo3SDUxdFowVF9KbG0zNXdhOGlzOHdiMlItVnFSLXViRW10WGZrZV9kYXJrY0xBZmU4OV9nU1B3bnQxTzZWbmpJcjFTS0JuSW1ReFFocDV6WU1mc3hUNzVn?oc=5",
+          "published": "2026-10-22"
+        }
+      ],
+      "material": {
+        "kind": "myth",
+        "key": "news:https://news.google.com/rss/articles/CBMivgFBVV95cUxNSGd3SmlFd1lWUDZ5SW8yd3dnZ3FIQ1NRVGZjUE04aXc3aENTRkt3R0VuXy03NzVRU2dmSUdGVDh6TktXY2Q0VVhwZXBNSEE1RnpoUnJuLUtyMEgwd1FNdHpmUTJtOGo3SDUxdFowVF9KbG0zNXdhOGlzOHdiMlItVnFSLXViRW10WGZrZV9kYXJrY0xBZmU4OV9nU1B3bnQxTzZWbmpJcjFTS0JuSW1ReFFocDV6WU1mc3hUNzVn?oc=5",
+        "title": "Where are Kenyans seeing potentially misleading Ebola information?",
+        "outlet": "The Star, Kenya",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNSGd3SmlFd1lWUDZ5SW8yd3dnZ3FIQ1NRVGZjUE04aXc3aENTRkt3R0VuXy03NzVRU2dmSUdGVDh6TktXY2Q0VVhwZXBNSEE1RnpoUnJuLUtyMEgwd1FNdHpmUTJtOGo3SDUxdFowVF9KbG0zNXdhOGlzOHdiMlItVnFSLXViRW10WGZrZV9kYXJrY0xBZmU4OV9nU1B3bnQxTzZWbmpJcjFTS0JuSW1ReFFocDV6WU1mc3hUNzVn?oc=5",
+        "published": "2026-10-22"
+      },
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "'pride' is 71 chars (max 50)",
+          "beats[1] is too long: max 12 words / 72 characters",
+          "beats[2] is too long: max 12 words / 72 characters",
+          "beats[3] is too long: max 12 words / 72 characters",
+          "'2027' is not in this post's material (Where are Kenyans seeing potentially misleading Ebola information?): use only the numbers it gives",
+          "the linked report is not about this story (Where are Kenyans seeing potentially misleading Ebola information?): use the headline id of the report this post is really based on",
+          "the caption calls it 'Set It Straight': this post's series is 'Myth or Fact'"
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 7,
+        "demand": 7,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.5,
+        "note": "Make the hook speak directly to the viral posts circulating on social media."
+      },
+      "drafted_at": "2026-10-25T20:25:57.683190+03:00"
+    },
+    {
+      "id": "2026-w44-d6-kenya",
+      "template": "kenya",
+      "lane": "diaspora",
+      "series": "Built in Kenya",
+      "place": "Garissa",
+      "line": "Garissa powers clean energy with a *54.65 megawatt* solar installation.",
+      "fact": "With 54.65 megawatts installed, REREC calls it the largest grid-connected solar plant in East and Central Africa.",
+      "source": "https://rerec.co.ke/garissa-solar-power-plant.php",
+      "message": "Garissa Solar Power Plant delivers 54.65 megawatts of clean power to the national grid.",
+      "action": "Track Kenya's renewable energy generation progress on the EPRA portal",
+      "photo_query": "Garissa solar power plant Kenya",
+      "beats": [
+        "Garissa hosts East Africa's largest *grid-connected* solar station.",
+        "The plant delivers 54.65 megawatts of clean electricity.",
+        "Solar power lowers reliance on expensive diesel generators.",
+        "Garissa feeds clean power directly into the national grid."
+      ],
+      "caption": "Garissa Solar Power Plant delivers 54.65 megawatts of clean energy to the national grid, cutting reliance on expensive thermal generators. Built in Kenya and working today.\n\nSave this for your next trip through Garissa.\n\n#BuiltInKenya #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-31T11:00:00+03:00",
+      "side": "government",
+      "tone": "credit",
+      "source_links": [
+        {
+          "outlet": "REREC",
+          "title": "Garissa Solar Power Plant: With 54.65 megawatts installed, REREC calls it the largest grid-connected solar plant in East and Central Africa.",
+          "link": "https://rerec.co.ke/garissa-solar-power-plant.php",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:garissa-solar",
+        "id": "garissa-solar",
+        "series": "Built in Kenya",
+        "place": "Garissa",
+        "name": "Garissa Solar Power Plant",
+        "fact": "With 54.65 megawatts installed, REREC calls it the largest grid-connected solar plant in East and Central Africa.",
+        "source": "https://rerec.co.ke/garissa-solar-power-plant.php",
+        "outlet": "REREC",
+        "photo_query": "Garissa solar power plant Kenya"
+      },
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "no real photo of this place or project was found: redraft with another one"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 6,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.8,
+        "note": "Ensure the image query targets the actual solar farm installation in Garissa."
+      },
+      "drafted_at": "2026-10-25T20:25:57.683198+03:00"
+    },
+    {
+      "id": "2026-w44-d7-glasspoll",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "hook": "Who owns Kenya Pipeline?",
+      "question": "Sell KPC shares to Dangote?",
+      "cta": "Comment A or B below",
+      "options": [
+        "Keep 100% state owned",
+        "Sell 25% to Dangote"
+      ],
+      "source": "People Daily, 2026-10-25, Capital FM News, 2026-10-25",
+      "message": "Kenyans debate whether the government should sell a 25% stake in Kenya Pipeline to Dangote.",
+      "action": "Share your view on strategic state assets in the comments",
+      "photo_query": "fuel tanker truck Kenya",
+      "beats": [
+        "President Ruto defended selling a *25% stake* in Kenya Pipeline.",
+        "Critics argue Kenya Pipeline is a strategic public asset.",
+        "Private capital expands regional trade.",
+        "Should Kenya sell Kenya Pipeline shares?"
+      ],
+      "caption": "President Ruto defended the plan to sell a 25% stake in Kenya Pipeline to the Dangote Group, while critics demand strategic public assets stay fully state-owned.\n\nSell 25% to Dangote or keep 100% state owned? Vote A or B in the comments.\n\n#KenyaPipeline #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-01T18:00:00+03:00",
+      "size": "story",
+      "side": "both",
+      "tone": "explainer",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Ruto tells critics to keep petty politics off Dangote’s KPC stake",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQdk5RZG96Z0hCLS0ybGRkRkpjbGx5My1peG9DR3E0VzJTd1pVS2owVU1VOWpVXzc2RGhMLS16Q0lrbnJUQ2xQVHFqR1pBdXlOUkxzWEx3LW9JaTkwc2dSaENFRS1ZWU4xWUpHNm1VNm9EQ3NqSkdDVGphMTJJZnBqWlVSaUZVcWRKd3ljQ21KRlpXdFJNX194aUJqZHBMYU43Zkxr?oc=5",
+          "published": "2026-10-25"
+        },
+        {
+          "outlet": "Capital FM News",
+          "title": "President Ruto Defends Dangote’s 25% KPC Stake Amid Public Outcry",
+          "link": "https://capitalfm.africa/president-ruto-defends-dangotes-25-kpc-stake-amid-public-outcry/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-25"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 5,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.8,
+        "note": "Frame the poll cleanly around the public stake sale debate."
+      },
+      "drafted_at": "2026-10-25T20:25:57.683200+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d7-glasspoll-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/president-ruto-defends-dangotes-25-kpc-stake-amid-public-outcry/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 549
     }
-   ],
-   "status": "awaiting",
-   "guard": {
-    "errors": [],
-    "warnings": []
-   },
-   "critic": {
-    "hook": 8,
-    "send": 8,
-    "clarity": 9,
-    "fresh": 8,
-    "voice": 8,
-    "craft": 8,
-    "picture": 7,
-    "hold": 8,
-    "demand": 5,
-    "action": 8,
-    "fair": 8,
-    "impact": 8,
-    "avg": 7.8,
-    "note": "Frame the poll cleanly around the public stake sale debate."
-   },
-   "drafted_at": "2026-10-25T20:25:57.683200+03:00",
-   "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-d7-glasspoll-photo.jpg",
-   "photo_credit": "Photo: Capital FM",
-   "photo_kind": "posted",
-   "photo_outlet": "Capital FM",
-   "photo_source": "https://capitalfm.africa/president-ruto-defends-dangotes-25-kpc-stake-amid-public-outcry/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
-   "reel": true,
-   "tg_msg": 549
-  }
- ],
- "scripts": {
-  "radio": "Good evening. This is Kenya on Record, bringing you the facts that shape our public life and economy.\n\nFirst, on energy infrastructure: the Garissa Solar Power Plant is now delivering 54.65 megawatts of clean power into the national grid. Harnessing solar potential in northern Kenya is a necessary step toward diversifying our energy mix. The accountability question remains whether these clean megawatts will translate into lower, more predictable electricity tariffs for Kenyan households and businesses.\n\nSecond, on public assets: a critical national debate has opened up over whether the government should sell a 25 percent stake in the Kenya Pipeline Company to the Dangote Group. Kenya Pipeline is a profitable, strategic national utility that underpins fuel distribution across the region. As citizens, we must ask: does private capital improve efficiency, or does divesting critical infrastructure compromise our energy sovereignty? Public participation on this transaction must be genuine and transparent.\n\nFinally, a vital health advisory: salt water does not cure or prevent Ebola. Drinking or bathing in high concentrations of salt water is dangerous and offers zero protection. Rely strictly on certified health guidelines and report any symptoms immediately to authorized medical facilities.\n\nKwa ufupi: Mtambo wa sola wa Garissa unaingiza megawati 54.65 kwenye gridi ya taifa. Wananchi wanajadili mpango wa serikali kuuza asilimia 25 ya hisa za Kenya Pipeline kwa kampuni ya Dangote. Na ukweli wa afya: maji ya chumvi hayatibu Ebola; fuata ushauri wa wataalamu wa afya pekee. \n\nStay informed, and hold the record.",
-  "voice_note": "Habari zenu. Here is your weekly accountability update from Kenya on Record.\n\nFirst, a critical health warning: salt water does not cure or prevent Ebola. Please disregard those viral messages. Rely strictly on verified health ministry guidelines, and report suspected symptoms to a hospital immediately.\n\nOn the national balance sheet, a major debate is brewing: should the government sell a 25 percent stake in Kenya Pipeline to Dangote? KPC is a profitable strategic asset handling our regional fuel corridor. We need total transparency on valuation and terms before public property is signed away.\n\nOn energy, Garissa Solar Plant is feeding 54.65 megawatts of renewable power into the national grid. The real test is whether our power bills reflect that clean energy.\n\nForward this note to your groups to keep the facts straight.",
-  "sms": "Usiibiwe: Maji ya chumvi haitibu Ebola. Beware of fake health remedies online. If unwell, seek immediate medical care from certified facilities.",
-  "reels": "Should Kenya sell a 25 percent stake in Kenya Pipeline to the Dangote Group?\n\nKPC is not a struggling parastatal. It is a profitable, strategic artery that secures fuel supply across East Africa.\n\nPrivate capital can drive expansion, but selling public monopolies requires total transparency, not closed-door deals.\n\nIs this a smart strategic partnership, or the surrender of a vital national asset? Put your voice on record."
- },
- "spend_usd": 0.0
+  ],
+  "scripts": {
+    "radio": "Good evening. This is Kenya on Record, bringing you the facts that shape our public life and economy.\n\nFirst, on energy infrastructure: the Garissa Solar Power Plant is now delivering 54.65 megawatts of clean power into the national grid. Harnessing solar potential in northern Kenya is a necessary step toward diversifying our energy mix. The accountability question remains whether these clean megawatts will translate into lower, more predictable electricity tariffs for Kenyan households and businesses.\n\nSecond, on public assets: a critical national debate has opened up over whether the government should sell a 25 percent stake in the Kenya Pipeline Company to the Dangote Group. Kenya Pipeline is a profitable, strategic national utility that underpins fuel distribution across the region. As citizens, we must ask: does private capital improve efficiency, or does divesting critical infrastructure compromise our energy sovereignty? Public participation on this transaction must be genuine and transparent.\n\nFinally, a vital health advisory: salt water does not cure or prevent Ebola. Drinking or bathing in high concentrations of salt water is dangerous and offers zero protection. Rely strictly on certified health guidelines and report any symptoms immediately to authorized medical facilities.\n\nKwa ufupi: Mtambo wa sola wa Garissa unaingiza megawati 54.65 kwenye gridi ya taifa. Wananchi wanajadili mpango wa serikali kuuza asilimia 25 ya hisa za Kenya Pipeline kwa kampuni ya Dangote. Na ukweli wa afya: maji ya chumvi hayatibu Ebola; fuata ushauri wa wataalamu wa afya pekee. \n\nStay informed, and hold the record.",
+    "voice_note": "Habari zenu. Here is your weekly accountability update from Kenya on Record.\n\nFirst, a critical health warning: salt water does not cure or prevent Ebola. Please disregard those viral messages. Rely strictly on verified health ministry guidelines, and report suspected symptoms to a hospital immediately.\n\nOn the national balance sheet, a major debate is brewing: should the government sell a 25 percent stake in Kenya Pipeline to Dangote? KPC is a profitable strategic asset handling our regional fuel corridor. We need total transparency on valuation and terms before public property is signed away.\n\nOn energy, Garissa Solar Plant is feeding 54.65 megawatts of renewable power into the national grid. The real test is whether our power bills reflect that clean energy.\n\nForward this note to your groups to keep the facts straight.",
+    "sms": "Usiibiwe: Maji ya chumvi haitibu Ebola. Beware of fake health remedies online. If unwell, seek immediate medical care from certified facilities.",
+    "reels": "Should Kenya sell a 25 percent stake in Kenya Pipeline to the Dangote Group?\n\nKPC is not a struggling parastatal. It is a profitable, strategic artery that secures fuel supply across East Africa.\n\nPrivate capital can drive expansion, but selling public monopolies requires total transparency, not closed-door deals.\n\nIs this a smart strategic partnership, or the surrender of a vital national asset? Put your voice on record."
+  },
+  "spend_usd": 0.0
 }
