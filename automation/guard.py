@@ -164,6 +164,38 @@ def _check_hook(post: dict, rep: "Report") -> None:
         rep.errors.append("hook: " + msg)
 
 
+# --- Closing line: a reason to save or send, specific to THIS post ---
+GENERIC_CLOSER = re.compile(
+    r"(send this to (someone|a friend|anyone|people|those|your friends)( who (needs?|should|must|has to) (to )?(see|know|read|hear|watch|it|this)( this| it)?)?\W*$|share (this )?(to|and) (spread|raise|create)|"
+    r"spread (the )?awareness|share this (post|reel|video|with everyone)|tag (a|your) friends?\W*$|follow (us )?for more|"
+    r"like (and|&) share|stay informed|what do you think\??\W*$|let us know what you think|drop a comment below|"
+    r"don'?t forget to|turn on notifications|link in bio)", re.I)
+CLOSER_ACTION = re.compile(r"\b(send|share|save|tag|tell|forward|screenshot|compare|check|reply|comment|vote|bring|ask|count|report|call|submit|read|track|verify|follow|find|write|visit|demand|compare)\b", re.I)
+
+
+def closer_problem(last: str) -> str:
+    """What is wrong with a Reel's last line, or '' when it gives the viewer a specific thing to do."""
+    line = re.sub(r"[*_]", "", str(last or "")).strip()
+    if not line:
+        return "the last line is empty"
+    if GENERIC_CLOSER.search(line):
+        return "the last line is a generic ask ('send this to someone...', 'share to spread awareness'): name who or what, specific to this post"
+    if re.match(r"\W*kenyans demand\b", line, re.I) or not CLOSER_ACTION.search(line):
+        return "WARN: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+    return ""
+
+
+def _check_closer(post: dict, rep: "Report") -> None:
+    beats = [b for b in (post.get("beats") or []) if isinstance(b, str) and b.strip()]
+    if len(beats) < 3 or post.get("template") not in HOOK_TEMPLATES:
+        return
+    msg = closer_problem(beats[-1])
+    if msg.startswith("WARN: "):   # a weak closer is flagged on the card; only a generic one holds the post
+        rep.warnings.append("closer: " + msg[6:])
+    elif msg:
+        rep.errors.append("closer: " + msg)
+
+
 def _shouting(texts: list[str] | str) -> str:
     """'' if the copy is calm; otherwise what is too loud. Each piece (design text, caption) is judged on its own."""
     texts = [texts] if isinstance(texts, str) else texts
@@ -463,6 +495,7 @@ def check(post: dict) -> Report:
     low = text.lower()
     _check_nicknames(post, rep)
     _check_hook(post, rep)
+    _check_closer(post, rep)
     if tpl in PHOTO_FIRST and not (post.get("photo_query") or post.get("photo") or post.get("person_photo")):
         (rep.errors if tpl == "sauti" else rep.warnings).append("no photo: add a `photo_query` (a real Kenyan scene); visuals carry the post")
     if str(post.get("line", "")).count("*") % 2 or any(str(post.get(f, "")).count("*") % 2 for f in ("title", "thing", "truth", "claim", "headline", "question", "topic")):
@@ -616,7 +649,7 @@ def check(post: dict) -> Report:
             rep.errors.append("caption over 2,000 characters")
     elif tpl not in {"avatar", "banner"}:
         rep.warnings.append("no caption yet")
-    if caption and not re.search(r"\b(send|share|tag|save|comment|reply|vote|drop)\b", caption.lower()):
+    if caption and not re.search(r"\b(send|share|tag|save|comment|reply|vote|drop|tell|forward|screenshot|compare)\b", caption.lower()):
         rep.warnings.append("caption has no send/share/save call: sends and saves drive reach")
 
     # Civic content: systems and money, never accusations against a named person

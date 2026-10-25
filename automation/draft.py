@@ -36,7 +36,7 @@ CRAFT_RULES = """MAKE IT WORTH STOPPING FOR (reach comes from the first 2 second
   write fewer beats (3 is fine). Never pad.
 - No puffery or filler: breathtaking, stunning, towering, iconic, a key link, remains a vital, plays a crucial role,
   visitors enjoy, gathering pace, "Kenyans demand verified facts", "never share without checking" as a closer.
-- The last line gives the viewer a reason to act, specific to THIS post: a place gets "Tag who you'd take" or
+- The last line gives the viewer ONE specific thing to do (send, save, tell us, check, call, submit), never a slogan like "Kenyans demand: ..." and never generic. It is a reason to act, specific to THIS post: a place gets "Tag who you'd take" or
   "Save this for your next trip"; a price gets "Tell us what you paid at your station"; a myth gets "Send this
   to the person who shared it"; a poll gets the question itself. Never "Send this to someone who needs..." or
   "Share to spread awareness".
