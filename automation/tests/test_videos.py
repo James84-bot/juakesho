@@ -148,3 +148,45 @@ class TvClip(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class YouTubeCC(unittest.TestCase):
+    """The YouTube Creative Commons source: the licence is read from each video's own status (no network)."""
+
+    def _run(self, items):
+        import videos
+        search = json.dumps({"items": [{"id": {"videoId": i["id"]}} for i in items]}).encode()
+        detail = json.dumps({"items": items}).encode()
+        calls = []
+
+        def fake_get(url, **kw):
+            calls.append(url)
+            return search if "/search?" in url else detail
+        with mock.patch.dict(os.environ, {"YOUTUBE_API_KEY": "k"}), mock.patch.object(videos.photos, "_get", fake_get):
+            return videos.youtube_cc_video("Hell's Gate Naivasha", "p1"), calls
+
+    def _item(self, vid, lic="creativeCommon", dur="PT2M10S", title="Cycling in Hell's Gate, Naivasha"):
+        return {"id": vid, "snippet": {"title": title, "description": "", "tags": [], "channelTitle": "Wanjiku Travels"},
+                "status": {"license": lic}, "contentDetails": {"duration": dur}}
+
+    def test_takes_a_cc_video_that_names_the_place_and_credits_the_channel(self):
+        got, calls = self._run([self._item("abc")])
+        self.assertEqual(got[0], "yt:abc")
+        self.assertEqual(got[1]["credit"], "Footage: Wanjiku Travels / YouTube (CC BY)")
+        self.assertIn("videoLicense=creativeCommon", calls[0])
+
+    def test_rejects_standard_licence_long_and_off_topic_videos(self):
+        got, _ = self._run([self._item("a", lic="youtube"), self._item("b", dur="PT45M"),
+                            self._item("c", title="Paris travel vlog")])
+        self.assertIsNone(got)
+
+    def test_no_key_means_no_source(self):
+        import videos
+        with mock.patch.dict(os.environ, {}, clear=False):
+            os.environ.pop("YOUTUBE_API_KEY", None)
+            self.assertIsNone(videos.youtube_cc_video("x", "p"))
+
+    def test_iso_duration(self):
+        import videos
+        self.assertEqual(videos._iso_seconds("PT1H2M3S"), 3723)
+        self.assertEqual(videos._iso_seconds("PT45S"), 45)

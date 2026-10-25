@@ -39,6 +39,7 @@ jobs:
       ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}   # optional
       JUA_MODEL: ${{ vars.JUA_MODEL }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}   # optional: Creative Commons footage search
       PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}   # optional: real photos
       PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}   # optional: real video footage (pixabay.com/api/docs)
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
@@ -82,7 +83,7 @@ jobs:
       - name: Install
         if: (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'hot' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'this-week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'redo' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rehearse' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'samples' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'remake' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'renew' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rephoto' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'clips' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tracker' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'render'
         run: |
-          pip install -r automation/requirements.txt
+          pip install -r automation/requirements.txt yt-dlp
           python -m playwright install --with-deps chromium
           sudo apt-get install -y ffmpeg || true   # video.py falls back to imageio-ffmpeg
           if [ "${{ steps.cmd.outputs.c }}" = "clips" ]; then pip install faster-whisper; fi   # captions from the clip's audio

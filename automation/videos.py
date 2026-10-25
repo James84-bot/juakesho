@@ -22,6 +22,7 @@ import html
 import json
 import os
 import re
+import shutil
 import subprocess
 import tempfile
 import urllib.parse
@@ -119,6 +120,58 @@ def pexels_video(query: str, pid: str) -> tuple[str, dict] | None:
         return files[0]["link"], {"credit": f"Footage: {who} / Pexels", "url": v.get("url", ""), "source": "pexels"}
     _note(f"  video '{query}' for {pid}: Pexels {len(data.get('videos', []))} found, none of the named place")
     return None
+
+
+YT_API = "https://www.googleapis.com/youtube/v3"
+YT_MAX_S = 600   # a source video longer than 10 minutes is a programme, not a clip of a place or an event
+
+
+def _iso_seconds(d: str) -> int:
+    m = re.fullmatch(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?", d or "")
+    return (int(m.group(1) or 0) * 3600 + int(m.group(2) or 0) * 60 + int(m.group(3) or 0)) if m else 10 ** 9
+
+
+def youtube_cc_video(query: str, pid: str) -> tuple[str, dict] | None:
+    """A YouTube video its owner released under Creative Commons (CC BY): the licence is read from the video's own
+    status, not from the search filter. Returns ("yt:<id>", meta); fetch() cuts a short clip with yt-dlp.
+    Needs YOUTUBE_API_KEY (YouTube Data API v3, free quota)."""
+    key = os.environ.get("YOUTUBE_API_KEY")
+    if not key:
+        return None
+    search = json.loads(photos._get(f"{YT_API}/search?" + urllib.parse.urlencode({
+        "part": "snippet", "q": query, "type": "video", "videoLicense": "creativeCommon", "maxResults": 15,
+        "regionCode": "KE", "safeSearch": "strict", "videoEmbeddable": "true", "key": key})))
+    ids = [i["id"]["videoId"] for i in search.get("items", []) if i.get("id", {}).get("videoId")]
+    if not ids:
+        _note(f"  video '{query}' for {pid}: YouTube CC found none")
+        return None
+    detail = json.loads(photos._get(f"{YT_API}/videos?" + urllib.parse.urlencode({
+        "part": "snippet,status,contentDetails", "id": ",".join(ids), "key": key})))
+    for v in detail.get("items", []):
+        sn = v.get("snippet", {})
+        if (v.get("status") or {}).get("license") != "creativeCommon":
+            continue
+        if _iso_seconds((v.get("contentDetails") or {}).get("duration", "")) > YT_MAX_S:
+            continue
+        text = " ".join([str(sn.get("title", "")), str(sn.get("description", ""))[:400], " ".join(sn.get("tags") or [])])
+        if not _named_in(text.lower(), query):
+            continue
+        who = str(sn.get("channelTitle") or "YouTube")[:50]
+        _note(f"  video '{query}' for {pid}: YouTube CC {v['id']} ({who})")
+        return f"yt:{v['id']}", {"credit": f"Footage: {who} / YouTube (CC BY)", "url": f"https://www.youtube.com/watch?v={v['id']}",
+                                 "source": "youtube-cc"}
+    _note(f"  video '{query}' for {pid}: YouTube CC {len(ids)} found, none named the place and licensed CC BY")
+    return None
+
+
+def _ytdlp_download(video_id: str, dest: Path) -> None:
+    """Downloads one CC video at 720p or below. The licence grants the copyright permission; YouTube's own terms
+    also restrict downloads, so this runs only for videos checked as Creative Commons above and is credited on the post."""
+    exe = shutil.which("yt-dlp")
+    if not exe:
+        raise RuntimeError("yt-dlp is not installed")
+    subprocess.run([exe, "-q", "--no-playlist", "-f", "bv*[height<=720][ext=mp4]/b[height<=720]", "-o", str(dest),
+                    f"https://www.youtube.com/watch?v={video_id}"], check=True, timeout=240)
 
 
 KENYA_RX = re.compile(r"\b(kenya|kenyan|nairobi|mombasa|kisumu|nakuru|eldoret|naivasha|malindi|lamu|diani|"
@@ -235,7 +288,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
     clip, meta = out_dir / f"{post['id']}-video.mp4", out_dir / f"{post['id']}-video.json"
     if clip.exists() and meta.exists():   # stable across re-renders: what you approved is what goes out
         return {**json.loads(meta.read_text(encoding="utf-8")), "file": str(clip)}
-    for source in (commons_video, pixabay_video, pexels_video):
+    for source in (commons_video, youtube_cc_video, pixabay_video, pexels_video):
         try:
             got = source(query, post["id"])
             if not got:
@@ -243,7 +296,11 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             url, info = got
             with tempfile.TemporaryDirectory() as tmp:
                 raw = Path(tmp) / "raw"
-                raw.write_bytes(photos._get(url, timeout=120))
+                if url.startswith("yt:"):
+                    raw = raw.with_suffix(".mp4")
+                    _ytdlp_download(url[3:], raw)
+                else:
+                    raw.write_bytes(photos._get(url, timeout=120))
                 if not cut(raw, clip):
                     _note(f"  video for {post['id']} could not be converted ({url[:80]})")
                     continue
@@ -260,7 +317,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
 
 def attach(posts: list[dict], out_dir: Path) -> None:
     """Sets video_file / video_credit / video_source on the posts that should move."""
-    keys = [k for k in ("PIXABAY_API_KEY", "PEXELS_API_KEY") if os.environ.get(k)]
+    keys = [k for k in ("YOUTUBE_API_KEY", "PIXABAY_API_KEY", "PEXELS_API_KEY") if os.environ.get(k)]
     _note(f"  footage sources: Wikimedia Commons{''.join(', ' + k.split('_')[0].title() for k in keys)}"
           f"{'' if keys else ' only (no PIXABAY_API_KEY or PEXELS_API_KEY secret reached this run)'}")
     for p in posts:
