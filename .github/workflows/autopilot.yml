@@ -13,7 +13,6 @@ on:
     - cron: "5 13 * * *"      # daily 13:05 UTC = 16:05 EAT: the evening news post (a different story)
     - cron: "35 3 * * *"      # daily 03:35 UTC = 06:35 EAT: the morning news post
     - cron: "40 5-17/2 * * *" # every 2 h, 08:40-20:40 EAT: a breaking post, only when several newsrooms report a new story
-    - cron: "50 4 * * *"      # daily 07:50 EAT: Creative Commons footage links for this week's Reels (Telegram)
     - cron: "10 14 * * 3"     # Wednesday 17:10 EAT: write Friday-Sunday close to their slots (backup to the listener)
   workflow_dispatch:
     inputs:
@@ -78,7 +77,6 @@ jobs:
           elif [ "${{ github.event.schedule }}" = "5 13 * * *" ]; then echo "c=hot --evening" >> "$GITHUB_OUTPUT"; echo "base=hot" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "35 3 * * *" ]; then echo "c=hot --morning" >> "$GITHUB_OUTPUT"; echo "base=hot" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "40 5-17/2 * * *" ]; then echo "c=hot --breaking" >> "$GITHUB_OUTPUT"; echo "base=hot" >> "$GITHUB_OUTPUT";
-          elif [ "${{ github.event.schedule }}" = "50 4 * * *" ]; then echo "c=ccfind" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "10 14 * * 3" ]; then echo "c=this-week" >> "$GITHUB_OUTPUT";
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
