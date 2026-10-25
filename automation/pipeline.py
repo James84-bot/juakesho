@@ -977,12 +977,79 @@ def _send_card(chat: str, label: str, p: dict, out_dir: Path) -> None:
 # ---------------------------------------------------------------------------
 # 5. Collect approvals
 # ---------------------------------------------------------------------------
+POLICY = HERE / "content" / "policy.json"
+AUTO_NEVER = {"promise", "scorecard", "tazama"}   # a real person's record or someone else's clip: a human decides
+AUTO_PHOTO_NEVER = {"file", "event"}              # a named person's portrait on a story
+
+
+def auto_approve_on() -> bool:
+    try:
+        return bool(json.loads(POLICY.read_text(encoding="utf-8")).get("auto_approve"))
+    except (OSError, ValueError):
+        return False   # no readable policy: you approve
+
+
+def auto_ok(p: dict) -> str:
+    """"" when the system may approve this post by itself; otherwise the reason it waits for your tap."""
+    if p.get("template") in AUTO_NEVER:
+        return f"{p.get('template')} posts are always decided by a person"
+    g = p.get("guard") or {}
+    if g.get("errors"):
+        return "failed a guard rule"
+    if any("named person" in str(w) for w in g.get("warnings") or []):
+        return "may name a person"
+    crit = (p.get("critic") or {}).get("avg")
+    if not p.get("hand") and (crit is None or crit < drafter_bar()):
+        return "the editor's score is missing or under the bar"
+    if p.get("hand") and crit is not None and crit < drafter_bar():
+        return "the editor's score is under the bar"
+    if not (p.get("source_links") or isinstance(p.get("material"), dict) or str(p.get("source") or "").startswith("http")):
+        return "no collected report or official page behind it"
+    if p.get("photo_kind") in AUTO_PHOTO_NEVER:
+        return "uses a named person's portrait"
+    if p.get("hot") and p.get("beat") == "politics":
+        return "a political story"
+    return ""
+
+
+def drafter_bar() -> float:
+    import draft as drafter
+    return drafter.CRITIC_BAR
+
+
+def auto_approve(dry_run: bool = False) -> list[str]:
+    """Approves every awaiting post that passes auto_ok (when the policy allows). Anything else waits for you."""
+    if not auto_approve_on():
+        return []
+    done: list[str] = []
+    for f in sorted(WEEKS.glob("*.json"))[-2:]:
+        data = json.loads(f.read_text(encoding="utf-8"))
+        changed = False
+        for p in data["posts"]:
+            if p["status"] != "awaiting" or p.get("n") or p.get("group"):   # carousels stay with you
+                continue
+            why = auto_ok(p)
+            if why:
+                continue
+            if not dry_run:
+                p.update(status="approved", auto=True, decided_at=now().isoformat())
+            done.append(f"{p['id']} ({p['publish_at'][5:16].replace('T', ' ')})")
+            changed = True
+        if changed and not dry_run:
+            save_week(data)
+    if done and not dry_run:
+        _notify("🤖 <b>Auto-approved</b> (passed every check): " + "; ".join(_esc(x) for x in done)
+                + ". Tap ❌ on a card before its time to stop it.")
+    return done
+
+
 def apply_decision(data: dict, key: str, approve: bool | str) -> list[str]:
     """key = post id or carousel group id; approve = True / False / "manual" (you post it in the app).
     Returns the ids changed."""
     changed = []
     for p in data["posts"]:
-        if (p["id"] == key or p.get("group") == key) and p["status"] == "awaiting":
+        stoppable = p["status"] == "awaiting" or (p["status"] == "approved" and p.get("auto") and not approve)
+        if (p["id"] == key or p.get("group") == key) and stoppable:
             p["status"] = "manual" if approve == "manual" else "approved" if approve else "rejected"
             p["decided_at"] = now().isoformat()
             changed.append(p["id"])
@@ -1734,6 +1801,7 @@ def _main(argv: list[str] | None = None) -> int:
         render_week(label)
     if a.command in {"week", "tracker", "hot", "redo", "ask", "remake", "renew", "rephoto"}:
         ask(label, dry_run=a.dry_run)
+        auto_approve(dry_run=a.dry_run)
     if a.command in {"tick", "collect"} and not a.dry_run:
         collect()
     if a.command == "tick":
@@ -1749,6 +1817,11 @@ def _main(argv: list[str] | None = None) -> int:
                 log(f"photo archive: {posted.collect()} new reports")
             except Exception as e:
                 log(f"photo archive skipped: {e}")
+    if a.command == "tick" and not a.dry_run:
+        try:
+            auto_approve()
+        except Exception as e:
+            log(f"auto-approve skipped: {e}")
     if a.command in {"tick", "publish"}:
         publish(dry_run=a.dry_run)
     if a.command in {"tick", "engage"} and not a.dry_run and meta_ready():
