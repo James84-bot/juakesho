@@ -1,0 +1,13 @@
+{
+  "note": "Nairobi maximum pump prices (Sh per litre) by EPRA review period, from news reports of each review. Source for the Pump Tracker series (original charts and comparisons). Add a row on the 14th of each month from two newsrooms.",
+  "periods": [
+    {"from": "2026-07-15", "to": "2026-08-14", "petrol": 214.03, "diesel": 222.86, "kerosene": 191.38,
+     "source": "https://www.kenyans.co.ke/news/125252-epra-retains-fuel-prices-petrol-diesel-and-kerosene-costs-remain-unchanged-until-august", "outlet": "Kenyans.co.ke, 14 Jul 2026"},
+    {"from": "2026-08-15", "to": "2026-09-14", "petrol": 214.03, "diesel": 217.86, "kerosene": 191.38,
+     "source": "https://www.kenyans.co.ke/news/126194-epra-cuts-diesel-price-ksh5-keeps-petrol-and-kerosene-prices-unchanged-until-september", "outlet": "Kenyans.co.ke, 14 Aug 2026"},
+    {"from": "2026-09-15", "to": "2026-10-14", "petrol": 214.03, "diesel": 217.86, "kerosene": 191.38,
+     "source": "https://tech-ish.com/2026/10/14/petrol-rises-to-kes-226-96-in-nairobi-and-kerosene-jumps-kes-28-49/", "outlet": "Tech-ish, 14 Oct 2026 (the 'until 14 October' column)"},
+    {"from": "2026-10-15", "to": "2026-11-14", "petrol": 226.96, "diesel": 227.76, "kerosene": 219.87,
+     "source": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293", "outlet": "The Star, 14 Oct 2026; kerosene from Tech-ish"}
+  ]
+}
