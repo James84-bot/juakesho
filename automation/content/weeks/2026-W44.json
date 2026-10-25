@@ -57,7 +57,7 @@
         "source": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
         "outlet": "The Star"
       },
-      "status": "rendered",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
@@ -71,7 +71,7 @@
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
       "reel": true,
-      "tg_msg": 547,
+      "tg_msg": 558,
       "hand": true,
       "chart": [
         {
