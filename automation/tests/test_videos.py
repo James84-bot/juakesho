@@ -195,3 +195,28 @@ class YouTubeCC(unittest.TestCase):
         got, _ = self._run([self._item("t", title="Hell's Gate Naivasha Wikipedia TTS"),
                             self._item("u", title="Hell's Gate Naivasha compilation")])
         self.assertIsNone(got)
+
+
+class InternetArchive(unittest.TestCase):
+    def _run(self, doc, files):
+        import videos
+
+        def fake_get(url, **kw):
+            if "advancedsearch" in url:
+                return json.dumps({"response": {"docs": [doc]}}).encode()
+            return json.dumps({"files": files}).encode()
+        with mock.patch.object(videos.photos, "_get", fake_get):
+            return videos.internet_archive_video("Nairobi street market", "p1")
+
+    def test_takes_an_open_licence_video_naming_the_place(self):
+        got = self._run({"identifier": "nbo1", "title": "Nairobi street market 1972", "description": "",
+                         "licenseurl": "https://creativecommons.org/licenses/by/4.0/", "creator": "A. Mwangi"},
+                        [{"name": "market.mp4", "size": "5000000"}, {"name": "market_thumb.mp4", "size": "100"}])
+        self.assertEqual(got[0], "https://archive.org/download/nbo1/market.mp4")
+        self.assertEqual(got[1]["credit"], "Footage: A. Mwangi / Internet Archive (CC BY)")
+
+    def test_rejects_noncommercial_and_off_topic(self):
+        nc = {"identifier": "x", "title": "Nairobi street market", "licenseurl": "https://creativecommons.org/licenses/by-nc/4.0/"}
+        self.assertIsNone(self._run(nc, [{"name": "a.mp4", "size": "10"}]))
+        off = {"identifier": "y", "title": "Paris cafe", "licenseurl": "https://creativecommons.org/licenses/by/4.0/"}
+        self.assertIsNone(self._run(off, [{"name": "a.mp4", "size": "10"}]))

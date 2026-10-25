@@ -182,6 +182,45 @@ def _ytdlp_download(video_id: str, dest: Path) -> None:
         raise RuntimeError("yt-dlp: " + (r.stderr.strip().splitlines() or ["failed"])[-1][:200])
 
 
+IA_SEARCH = "https://archive.org/advancedsearch.php"
+# Internet Archive items carry a licence URL: only these open ones are used (never -nc or -nd)
+IA_LICENCE = re.compile(r"creativecommons\.org/(licenses/(by|by-sa)/|publicdomain/(zero|mark)/)|/publicdomain/", re.I)
+
+
+def internet_archive_video(query: str, pid: str) -> tuple[str, dict] | None:
+    """An Internet Archive video under CC BY, CC BY-SA, CC0 or public domain whose title or description names the
+    place. Files download directly from archive.org (no sign-in, no bot check)."""
+    words = " ".join(w for w in re.findall(r"[A-Za-z']{3,}", query) if w.lower() not in GENERIC_WORDS)[:80] or query
+    q = f"({words}) AND mediatype:movies AND (licenseurl:*creativecommons* OR licenseurl:*publicdomain*)"
+    params = urllib.parse.urlencode({"q": q, "fl[]": ["identifier", "title", "description", "licenseurl", "creator"],
+                                     "rows": 10, "output": "json", "sort[]": "downloads desc"}, doseq=True)
+    data = json.loads(photos._get(f"{IA_SEARCH}?{params}"))
+    docs = (data.get("response") or {}).get("docs", [])
+    for d in docs:
+        lic = str(d.get("licenseurl") or "")
+        if not IA_LICENCE.search(lic):
+            continue
+        text = f"{d.get('title', '')} {d.get('description', '')}".lower()
+        if not _named_in(text, query) or YT_SKIP.search(text):
+            continue
+        meta = json.loads(photos._get(f"https://archive.org/metadata/{d['identifier']}"))
+        files = [f for f in meta.get("files", []) if str(f.get("name", "")).lower().endswith((".mp4", ".m4v"))
+                 and "thumb" not in str(f.get("name", "")).lower() and 0 < int(f.get("size") or 0) <= MAX_BYTES]
+        if not files:
+            continue
+        files.sort(key=lambda f: int(f.get("size") or 0))
+        who = d.get("creator")
+        who = str(who[0] if isinstance(who, list) and who else who or "Internet Archive")[:50]
+        label = "CC BY-SA" if "by-sa" in lic else "CC BY" if "/by/" in lic else "public domain"
+        _note(f"  video '{query}' for {pid}: Internet Archive {d['identifier']} ({label})")
+        name = urllib.parse.quote(files[-1]["name"])
+        return (f"https://archive.org/download/{d['identifier']}/{name}",
+                {"credit": f"Footage: {who} / Internet Archive ({label})", "url": f"https://archive.org/details/{d['identifier']}",
+                 "source": "internet-archive"})
+    _note(f"  video '{query}' for {pid}: Internet Archive {len(docs)} found, none openly licensed and naming the place")
+    return None
+
+
 KENYA_RX = re.compile(r"\b(kenya|kenyan|nairobi|mombasa|kisumu|nakuru|eldoret|naivasha|malindi|lamu|diani|"
                       r"maasai|masai|mara|amboseli|tsavo|samburu|turkana|kilifi|nanyuki|thika|machakos|kiambu)\b", re.I)
 
@@ -296,7 +335,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
     clip, meta = out_dir / f"{post['id']}-video.mp4", out_dir / f"{post['id']}-video.json"
     if clip.exists() and meta.exists():   # stable across re-renders: what you approved is what goes out
         return {**json.loads(meta.read_text(encoding="utf-8")), "file": str(clip)}
-    for source in (commons_video, youtube_cc_video, pixabay_video, pexels_video):
+    for source in (commons_video, internet_archive_video, youtube_cc_video, pixabay_video, pexels_video):
         try:
             got = source(query, post["id"])
             if not got:
