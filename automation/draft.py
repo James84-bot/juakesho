@@ -1156,9 +1156,12 @@ TAKEN: list[dict] = []   # posts already in the week (kept through a remake): se
 
 def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = False) -> tuple[list[dict], dict]:
     guard.VERIFY_LINKS = not mock   # a real run opens every source link once; an invented one goes back for a rewrite
-    held = [(s, "The Chapter Six Test grades a real person: it is written by hand from a researched record, never "
-                "drafted automatically") for s in slots if s["template"] == "scorecard" and not mock]
-    slots = [s for s in slots if not (s["template"] == "scorecard" and not mock)]
+    HAND = {"scorecard": "The Chapter Six Test grades a real person: it is written by hand from a researched record, "
+                         "never drafted automatically",
+            "promise": "The Promise Tracker names a real promise and says it was not kept: the promise and its source "
+                       "must be researched by a person, never invented by the writer to fit a headline"}
+    held = [(s, HAND[s["template"]]) for s in slots if s["template"] in HAND and not mock]
+    slots = [s for s in slots if not (s["template"] in HAND and not mock)]
     if not mock:   # the series that must never be invented get their real material first, or are held
         slots, more = material.attach(slots)
         held += more
