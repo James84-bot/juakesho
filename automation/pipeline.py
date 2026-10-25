@@ -1909,6 +1909,12 @@ def _main(argv: list[str] | None = None) -> int:
                 photos._note(f"  footage for {p['id']}: {p['video_credit']} ({p.get('video_source', '')})")
         (STATE / "photos.log").write_text("\n".join(photos.NOTES[-400:]) + "\n", encoding="utf-8")
         log(f"photocheck {wk}: footage for {sum(1 for p in reels if p.get('video_file'))}/{len(reels)} Reels")
+        if os.environ.get("TELEGRAM_CHAT_ID") and not a.dry_run:   # the clips go to you as samples, never into the public repo
+            for p in reels:
+                if p.get("video_file") and Path(p["video_file"]).exists():
+                    tg("sendVideo", {"chat_id": os.environ["TELEGRAM_CHAT_ID"], "parse_mode": "HTML", "supports_streaming": "true",
+                                     "caption": ("🧪 <b>SAMPLE footage, nothing is posted</b>\n" f"For: {_esc(p['id'])}\n{_esc(p.get('video_credit', ''))}\n"
+                                                 f"{_esc(p.get('video_source', ''))}")[:1000]}, {"video": Path(p["video_file"])})
     if a.command == "tick" and not a.dry_run:
         prune()
     if a.command == "status":

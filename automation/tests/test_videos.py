@@ -190,3 +190,8 @@ class YouTubeCC(unittest.TestCase):
         import videos
         self.assertEqual(videos._iso_seconds("PT1H2M3S"), 3723)
         self.assertEqual(videos._iso_seconds("PT45S"), 45)
+
+    def test_skips_tts_and_compilation_videos(self):
+        got, _ = self._run([self._item("t", title="Hell's Gate Naivasha Wikipedia TTS"),
+                            self._item("u", title="Hell's Gate Naivasha compilation")])
+        self.assertIsNone(got)

@@ -123,6 +123,7 @@ def pexels_video(query: str, pid: str) -> tuple[str, dict] | None:
 
 
 YT_API = "https://www.googleapis.com/youtube/v3"
+YT_SKIP = re.compile(r"\b(tts|text.to.speech|wikipedia|slideshow|podcast|reaction|compilation|audiobook|lyrics|asmr)\b", re.I)   # not footage of the place
 YT_MAX_S = 600   # a source video longer than 10 minutes is a programme, not a clip of a place or an event
 
 
@@ -152,6 +153,8 @@ def youtube_cc_video(query: str, pid: str) -> tuple[str, dict] | None:
         if (v.get("status") or {}).get("license") != "creativeCommon":
             continue
         if _iso_seconds((v.get("contentDetails") or {}).get("duration", "")) > YT_MAX_S:
+            continue
+        if YT_SKIP.search(str(sn.get("title", "")) + " " + str(sn.get("channelTitle", ""))):
             continue
         text = " ".join([str(sn.get("title", "")), str(sn.get("description", ""))[:400], " ".join(sn.get("tags") or [])])
         if not _named_in(text.lower(), query):

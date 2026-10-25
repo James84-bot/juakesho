@@ -6,3 +6,4 @@ fonttools[woff]>=4.50
 numpy>=1.26,<2         # opencv 4.11 wheels (face detection for photos) are built for NumPy 1.x
 imageio-ffmpeg>=0.5
 opencv-python-headless>=4.9,<4.12   # 4.12+ wheels require NumPy 2
+yt-dlp>=2025.1.1   # Creative Commons footage from YouTube (videos.py); only for videos checked as CC BY
