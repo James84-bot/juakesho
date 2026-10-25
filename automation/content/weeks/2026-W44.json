@@ -71,7 +71,6 @@
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_bill,_reverse.jpg",
       "reel": true,
-      "tg_msg": 558,
       "hand": true,
       "chart": [
         {
@@ -150,7 +149,6 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Gura_Giant_Falls_view_from_the_top_of_Karuru_Falls.jpg",
       "reel": true,
-      "tg_msg": 548,
       "hand": true
     },
     {
@@ -408,8 +406,7 @@
       "photo_kind": "posted",
       "photo_outlet": "Capital FM",
       "photo_source": "https://capitalfm.africa/president-ruto-defends-dangotes-25-kpc-stake-amid-public-outcry/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
-      "reel": true,
-      "tg_msg": 549
+      "reel": true
     }
   ],
   "scripts": {
