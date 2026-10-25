@@ -57,7 +57,7 @@
         "source": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
         "outlet": "The Star"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -88,7 +88,8 @@
           "old": 191.38,
           "new": 219.87
         }
-      ]
+      ],
+      "decided_at": "2026-10-25T23:44:32.697211+03:00"
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -137,7 +138,7 @@
         "outlet": "Kenya Wildlife Service",
         "photo_query": "Aberdare National Park waterfall Kenya"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -149,7 +150,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Gura_Giant_Falls_view_from_the_top_of_Karuru_Falls.jpg",
       "reel": true,
-      "hand": true
+      "hand": true,
+      "decided_at": "2026-10-25T23:44:31.973403+03:00"
     },
     {
       "id": "2026-w44-d3-promise-r2",
@@ -379,7 +381,7 @@
           "published": "2026-10-25"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -406,7 +408,8 @@
       "photo_kind": "posted",
       "photo_outlet": "Capital FM",
       "photo_source": "https://capitalfm.africa/president-ruto-defends-dangotes-25-kpc-stake-amid-public-outcry/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
-      "reel": true
+      "reel": true,
+      "decided_at": "2026-10-25T23:44:31.260890+03:00"
     }
   ],
   "scripts": {
