@@ -133,41 +133,49 @@ def _iso_seconds(d: str) -> int:
     return (int(m.group(1) or 0) * 3600 + int(m.group(2) or 0) * 60 + int(m.group(3) or 0)) if m else 10 ** 9
 
 
-def youtube_cc_video(query: str, pid: str) -> tuple[str, dict] | None:
-    """A YouTube video its owner released under Creative Commons (CC BY): the licence is read from the video's own
-    status, not from the search filter. Returns ("yt:<id>", meta); fetch() cuts a short clip with yt-dlp.
-    Needs YOUTUBE_API_KEY (YouTube Data API v3, free quota)."""
+def youtube_cc_candidates(query: str, limit: int = 3) -> list[dict]:
+    """YouTube videos their owners released under Creative Commons (CC BY): the licence is read from each video's own
+    status, not from the search filter. Needs YOUTUBE_API_KEY (YouTube Data API v3, free quota). The server cannot
+    download them (YouTube blocks cloud IPs), so these are found here and fetched on the owner's computer (cc_local.py)."""
     key = os.environ.get("YOUTUBE_API_KEY")
     if not key:
-        return None
+        return []
     search = json.loads(photos._get(f"{YT_API}/search?" + urllib.parse.urlencode({
         "part": "snippet", "q": query, "type": "video", "videoLicense": "creativeCommon", "maxResults": 15,
         "regionCode": "KE", "safeSearch": "strict", "videoEmbeddable": "true", "key": key})))
     ids = [i["id"]["videoId"] for i in search.get("items", []) if i.get("id", {}).get("videoId")]
     if not ids:
-        _note(f"  video '{query}' for {pid}: YouTube CC found none")
-        return None
+        return []
     detail = json.loads(photos._get(f"{YT_API}/videos?" + urllib.parse.urlencode({
         "part": "snippet,status,contentDetails", "id": ",".join(ids), "key": key})))
+    out = []
     for v in detail.get("items", []):
         sn = v.get("snippet", {})
-        if (v.get("status") or {}).get("license") != "creativeCommon":
-            continue
-        if _iso_seconds((v.get("contentDetails") or {}).get("duration", "")) > YT_MAX_S:
+        secs = _iso_seconds((v.get("contentDetails") or {}).get("duration", ""))
+        if (v.get("status") or {}).get("license") != "creativeCommon" or secs > YT_MAX_S:
             continue
         if YT_SKIP.search(str(sn.get("title", "")) + " " + str(sn.get("channelTitle", ""))):
             continue
         text = " ".join([str(sn.get("title", "")), str(sn.get("description", ""))[:400], " ".join(sn.get("tags") or [])])
         if not _named_in(text.lower(), query):
             continue
-        who = str(sn.get("channelTitle") or "YouTube")[:50]
-        _note(f"  video '{query}' for {pid}: YouTube CC {v['id']} ({who})")
-        YT_CANDIDATES.append({"post": pid, "title": str(sn.get("title", ""))[:90], "channel": who,
-                              "url": f"https://www.youtube.com/watch?v={v['id']}"})
-        return f"yt:{v['id']}", {"credit": f"Footage: {who} / YouTube (CC BY)", "url": f"https://www.youtube.com/watch?v={v['id']}",
-                                 "source": "youtube-cc"}
-    _note(f"  video '{query}' for {pid}: YouTube CC {len(ids)} found, none named the place and licensed CC BY")
-    return None
+        out.append({"id": v["id"], "title": str(sn.get("title", ""))[:90], "channel": str(sn.get("channelTitle") or "YouTube")[:50],
+                    "seconds": secs, "url": f"https://www.youtube.com/watch?v={v['id']}"})
+        if len(out) >= limit:
+            break
+    return out
+
+
+def youtube_cc_video(query: str, pid: str) -> tuple[str, dict] | None:
+    """The first candidate as a downloadable source. Not in the automatic source list: servers are blocked from
+    downloading, so fetch() skips it; kept for a runner or network where yt-dlp works."""
+    got = youtube_cc_candidates(query, 1)
+    if not got:
+        _note(f"  video '{query}' for {pid}: YouTube CC found none naming the place")
+        return None
+    c = got[0]
+    _note(f"  video '{query}' for {pid}: YouTube CC {c['id']} ({c['channel']})")
+    return f"yt:{c['id']}", {"credit": f"Footage: {c['channel']} / YouTube (CC BY)", "url": c["url"], "source": "youtube-cc"}
 
 
 def _ytdlp_download(video_id: str, dest: Path) -> None:
@@ -335,7 +343,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
     clip, meta = out_dir / f"{post['id']}-video.mp4", out_dir / f"{post['id']}-video.json"
     if clip.exists() and meta.exists():   # stable across re-renders: what you approved is what goes out
         return {**json.loads(meta.read_text(encoding="utf-8")), "file": str(clip)}
-    for source in (commons_video, internet_archive_video, youtube_cc_video, pixabay_video, pexels_video):
+    for source in (commons_video, internet_archive_video, pixabay_video, pexels_video):
         try:
             got = source(query, post["id"])
             if not got:

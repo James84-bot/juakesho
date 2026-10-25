@@ -1622,6 +1622,34 @@ def send_preview(dry_run: bool = False) -> int:
     return sent
 
 
+def send_cc_candidates(label: str, dry_run: bool = False) -> int:
+    """Creative Commons YouTube videos for this week's Reels, as links with the exact command to run on your computer
+    (cc_local.py). Only links: nothing is downloaded or used until you run it."""
+    import videos
+    posts = [p for p in load_week(label)["posts"] if p.get("beats") and p["status"] in {"drafted", "rendered", "awaiting", "approved"}
+             and (p.get("video_query") or p.get("photo_query"))]
+    blocks, seen = [], set()
+    for p in posts[:8]:
+        q = str(p.get("video_query") or p.get("photo_query"))
+        try:
+            found = [c for c in videos.youtube_cc_candidates(q, 2) if c["url"] not in seen]
+        except Exception as e:
+            log(f"ccfind {p['id']}: {str(e)[:120]}")
+            continue
+        for c in found:
+            seen.add(c["url"])
+        if found:
+            about = _esc(str(p.get("message") or p.get("hook") or q))[:120]
+            blocks.append(f"<b>{_esc(p['id'])}</b> ({_esc(q)})\n" + "\n".join(
+                f"• {_esc(c['title'])}, {_esc(c['channel'])}, {c['seconds']}s\n{c['url']}\n"
+                f"<code>python automation/cc_local.py {c['url']} \"{about}\"</code>" for c in found))
+    log(f"ccfind {label}: {len(blocks)} posts with candidates")
+    if blocks and not dry_run:
+        _notify("🎞 <b>Creative Commons footage (CC BY, licence checked on YouTube)</b>\nRun the command on your computer to turn one "
+                "into a credited Reel. Nothing is used unless you run it.\n\n" + "\n\n".join(blocks))
+    return len(blocks)
+
+
 def _esc(text: str) -> str:
     from html import escape
     return escape(str(text), quote=False)
@@ -1741,7 +1769,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -1887,6 +1915,8 @@ def _main(argv: list[str] | None = None) -> int:
             return 1
     if a.command == "metacheck" and not meta_check(dry_run=a.dry_run):
         return 1   # a failed check shows on the run page too, with the reason
+    if a.command == "ccfind":
+        send_cc_candidates(a.week or current_week_label(ahead=0), dry_run=a.dry_run)
     if a.command == "preview":
         send_preview(dry_run=a.dry_run)
     if a.command == "reels":
@@ -1909,15 +1939,6 @@ def _main(argv: list[str] | None = None) -> int:
                 photos._note(f"  footage for {p['id']}: {p['video_credit']} ({p.get('video_source', '')})")
         (STATE / "photos.log").write_text("\n".join(photos.NOTES[-400:]) + "\n", encoding="utf-8")
         log(f"photocheck {wk}: footage for {sum(1 for p in reels if p.get('video_file'))}/{len(reels)} Reels")
-        if videos.YT_CANDIDATES and os.environ.get("TELEGRAM_CHAT_ID") and not a.dry_run:
-            seen, lines = set(), []
-            for c in videos.YT_CANDIDATES:
-                if c["url"] not in seen:
-                    seen.add(c["url"])
-                    lines.append(f"• <b>{_esc(c['post'])}</b>: {_esc(c['title'])} ({_esc(c['channel'])})\n{c['url']}")
-            _notify("🎞 <b>Creative Commons footage candidates</b> (licence checked as CC BY on YouTube). "
-                    "YouTube blocks downloads from our servers, so these are links only: nothing is used unless you download "
-                    "one and send it back as a clip (credit the channel).\n\n" + "\n".join(lines[:8]))
         if os.environ.get("TELEGRAM_CHAT_ID") and not a.dry_run:   # the clips go to you as samples, never into the public repo
             for p in reels:
                 if p.get("video_file") and Path(p["video_file"]).exists():

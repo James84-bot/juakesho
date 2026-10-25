@@ -220,3 +220,17 @@ class InternetArchive(unittest.TestCase):
         self.assertIsNone(self._run(nc, [{"name": "a.mp4", "size": "10"}]))
         off = {"identifier": "y", "title": "Paris cafe", "licenseurl": "https://creativecommons.org/licenses/by/4.0/"}
         self.assertIsNone(self._run(off, [{"name": "a.mp4", "size": "10"}]))
+
+
+class YouTubeCandidates(unittest.TestCase):
+    def test_candidates_are_licence_checked_and_capped(self):
+        import videos
+        items = [{"id": f"v{i}", "snippet": {"title": "Nairobi market day", "description": "", "tags": [], "channelTitle": "C"},
+                  "status": {"license": "creativeCommon" if i != 1 else "youtube"}, "contentDetails": {"duration": "PT1M"}} for i in range(5)]
+
+        def fake_get(url, **kw):
+            return json.dumps({"items": [{"id": {"videoId": i["id"]}} for i in items]} if "/search?" in url else {"items": items}).encode()
+        with mock.patch.dict(os.environ, {"YOUTUBE_API_KEY": "k"}), mock.patch.object(videos.photos, "_get", fake_get):
+            got = videos.youtube_cc_candidates("Nairobi market", 3)
+        self.assertEqual([c["id"] for c in got], ["v0", "v2", "v3"])   # v1 is not CC: skipped
+        self.assertTrue(all(c["url"].startswith("https://www.youtube.com/watch?v=") for c in got))
