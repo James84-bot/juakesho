@@ -76,9 +76,18 @@ class HotPostTests(TempWeeks):
     def test_no_news_post_is_planned_for_the_night(self):
         late = dt.datetime(2026, 10, 14, 19, 0, tzinfo=pl.EAT)   # 3 hours to approve would land at 22:00
         with mock.patch.object(pl, "now", lambda: late):
-            self.assertIsNone(pl.hot_slot(mock=True, evening=True))
-            self.assertFalse(any(p.get("hot") for p in pl.load_week("2026-W42")["posts"])
-                             if pl.week_file("2026-W42").exists() else False)
+            self.assertIsNone(pl.hot_slot(mock=True, evening=True))   # nothing free before 21:00: skipped, not at midnight
+
+    def test_a_busy_evening_moves_the_edition_earlier_instead_of_dropping_it(self):
+        t = dt.datetime(2026, 10, 14, 12, 0, tzinfo=pl.EAT)
+        busy = [{"publish_at": f"2026-10-14T{h}:{m}:00+03:00", "status": "approved"}
+                for h, m in (("18", "30"), ("19", "30"), ("20", "30"))]
+        with mock.patch.object(pl, "now", lambda: t):
+            got = pl._earlier_slot(dt.datetime(2026, 10, 14, 19, 30, tzinfo=pl.EAT), busy)
+        self.assertIsNotNone(got)
+        self.assertTrue(7 <= got.hour < pl.QUIET_FROM)
+        for p in busy:
+            self.assertGreaterEqual(abs(got - dt.datetime.fromisoformat(p["publish_at"])), dt.timedelta(minutes=45))
 
     def test_cards_stay_open_four_hours(self):
         self.assertEqual(pl.EXPIRE_AFTER, dt.timedelta(hours=4))

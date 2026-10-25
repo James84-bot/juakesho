@@ -216,6 +216,18 @@ def _clear_of(when: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timed
     return when
 
 
+def _earlier_slot(want: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timedelta(minutes=45)) -> dt.datetime | None:
+    """The free time nearest to `want` (earlier or later) between 07:00 and QUIET_FROM that is still ahead of now and
+    `gap` from every other post: a news post goes out in waking hours, never dropped just because the day is busy."""
+    taken = [dt.datetime.fromisoformat(p["publish_at"]) for p in posts
+             if p.get("publish_at") and p.get("status") not in {"rejected", "expired", "missed"}]
+    lo = max(want.replace(hour=7, minute=0), now() + HOT["min_lead"])
+    hi = want.replace(hour=QUIET_FROM - 1, minute=30)
+    candidates = sorted((want + dt.timedelta(minutes=30 * k) for k in range(-26, 27)),
+                        key=lambda t: abs(t - want))
+    return next((t for t in candidates if lo <= t <= hi and all(abs(t - x) >= gap for x in taken)), None)
+
+
 def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = None) -> str | None:
     """A news post on the biggest Kenyan story right now, never one already covered today.
     Editions: morning, midday (lunchtime) and evening, drafted about three hours before they go out; and
@@ -263,8 +275,11 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
             when = (now() + HOT["min_lead"]).replace(second=0, microsecond=0)
         when = _clear_of(when, data["posts"])
         if when.date() != today or when.hour >= QUIET_FROM:   # pushed into the night: nobody is awake to approve it
-            log(f"hot ({edition}): no slot before {QUIET_FROM}:00 EAT, skipping today's {edition} edition")
-            return None
+            when = _earlier_slot(dt.datetime(today.year, today.month, today.day, *EDITIONS[edition]["time"], tzinfo=EAT),
+                                 data["posts"])
+            if when is None:
+                log(f"hot ({edition}): no free slot between 07:00 and {QUIET_FROM}:00 EAT today, skipping this edition")
+                return None
     post = {"id": hot_id, "template": HOT["template"], "bg": "usiku", "lane": "everyone",
             "publish_at": when.isoformat(), "status": "planned", "hot": True, **extra}
     if edition != "breaking":
