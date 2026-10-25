@@ -173,8 +173,10 @@ def _ytdlp_download(video_id: str, dest: Path) -> None:
     exe = shutil.which("yt-dlp")
     if not exe:
         raise RuntimeError("yt-dlp is not installed")
-    subprocess.run([exe, "-q", "--no-playlist", "-f", "bv*[height<=720][ext=mp4]/b[height<=720]", "-o", str(dest),
-                    f"https://www.youtube.com/watch?v={video_id}"], check=True, timeout=240)
+    r = subprocess.run([exe, "-q", "--no-playlist", "-f", "bv*[height<=720][ext=mp4]/b[height<=720]", "-o", str(dest),
+                        f"https://www.youtube.com/watch?v={video_id}"], capture_output=True, text=True, timeout=240)
+    if r.returncode:
+        raise RuntimeError("yt-dlp: " + (r.stderr.strip().splitlines() or ["failed"])[-1][:200])
 
 
 KENYA_RX = re.compile(r"\b(kenya|kenyan|nairobi|mombasa|kisumu|nakuru|eldoret|naivasha|malindi|lamu|diani|"
