@@ -73,6 +73,16 @@ class PlanTests(TempWeeks):
 
 
 class HotPostTests(TempWeeks):
+    def test_no_news_post_is_planned_for_the_night(self):
+        late = dt.datetime(2026, 10, 14, 19, 0, tzinfo=pl.EAT)   # 3 hours to approve would land at 22:00
+        with mock.patch.object(pl, "now", lambda: late):
+            self.assertIsNone(pl.hot_slot(mock=True, evening=True))
+            self.assertFalse(any(p.get("hot") for p in pl.load_week("2026-W42")["posts"])
+                             if pl.week_file("2026-W42").exists() else False)
+
+    def test_cards_stay_open_four_hours(self):
+        self.assertEqual(pl.EXPIRE_AFTER, dt.timedelta(hours=4))
+
     def test_one_hot_post_a_day_with_time_to_approve(self):
         morning = dt.datetime(2026, 10, 13, 9, 5, tzinfo=pl.EAT)
         with mock.patch.object(pl, "now", lambda: morning):
@@ -1031,11 +1041,11 @@ class HttpRetryTests(unittest.TestCase):
 
 
 class ExpiryTests(TempWeeks):
-    def test_untapped_card_expires_two_hours_after_its_slot(self):
+    def test_untapped_card_expires_four_hours_after_its_slot(self):
         t = pl.now()
-        self.week([{"id": "old", "status": "awaiting", "publish_at": (t - pl.dt.timedelta(hours=3)).isoformat()},
+        self.week([{"id": "old", "status": "awaiting", "publish_at": (t - pl.dt.timedelta(hours=5)).isoformat()},
                    {"id": "soon", "status": "awaiting", "publish_at": (t - pl.dt.timedelta(minutes=30)).isoformat()},
-                   {"id": "ok", "status": "approved", "publish_at": (t - pl.dt.timedelta(hours=5)).isoformat()}])
+                   {"id": "ok", "status": "approved", "publish_at": (t - pl.dt.timedelta(hours=9)).isoformat()}])
         notes = []
         with mock.patch.object(pl, "_notify", notes.append):
             self.assertEqual(pl.expire_unanswered(), ["old"])

@@ -51,7 +51,7 @@ EXPORTS = ROOT / "exports"
 EAT = dt.timezone(dt.timedelta(hours=3))
 BRAND = json.loads((HERE / "brand.json").read_text(encoding="utf-8"))
 MAX_PUBLISH_ATTEMPTS = 3
-EXPIRE_AFTER = dt.timedelta(hours=2)  # a card nobody tapped this long after its slot is dropped: no tap = no post
+EXPIRE_AFTER = dt.timedelta(hours=4)  # a card nobody tapped this long after its slot is dropped: no tap = no post
 LATE_LIMIT = dt.timedelta(hours=36)  # a post this late is marked "missed", never dumped out as a backlog
 META_KEYS = ("META_ACCESS_TOKEN", "META_PAGE_ID", "META_IG_USER_ID")
 
@@ -204,6 +204,7 @@ EDITIONS = {"morning": {"time": (9, 45), "suffix": "m", "beat": "life"},
             "midday": {"time": (12, 45), "suffix": "", "beat": "life"},
             "evening": {"time": (19, 30), "suffix": "e", "beat": "politics"}}   # six in ten posts are everyday life
 BREAKING_LEAD, BREAKING_MAX = dt.timedelta(minutes=20), 2
+QUIET_FROM = 21   # no news post is planned for 21:00 EAT or later (last week four went out between 22:30 and 01:16 and expired)
 
 
 def _clear_of(when: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timedelta(minutes=90)) -> dt.datetime:
@@ -261,6 +262,9 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
         if when - now() < HOT["min_lead"]:   # late start: give the owner time to approve
             when = (now() + HOT["min_lead"]).replace(second=0, microsecond=0)
         when = _clear_of(when, data["posts"])
+        if when.date() != today or when.hour >= QUIET_FROM:   # pushed into the night: nobody is awake to approve it
+            log(f"hot ({edition}): no slot before {QUIET_FROM}:00 EAT, skipping today's {edition} edition")
+            return None
     post = {"id": hot_id, "template": HOT["template"], "bg": "usiku", "lane": "everyone",
             "publish_at": when.isoformat(), "status": "planned", "hot": True, **extra}
     if edition != "breaking":
