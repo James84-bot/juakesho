@@ -1,27 +1,50 @@
 {
-  "fetched": "2026-10-25T06:06:29.152803+00:00",
+  "fetched": "2026-10-25T08:44:10.456133+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "rbny vs inter miami",
-      "traffic": "2000+",
+      "title": "ebola in kenya",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Lionel Messi comes off bench as Casemiro own goal sees Red Bulls beat Miami",
-          "url": "https://www.espn.com/soccer/story/_/id/50271291/lionel-messi-red-bull-new-york-vs-inter-miami-casemiro",
-          "source": "ESPN"
+          "title": "Woman, 65, becomes second patient to die of Ebola in Kenya",
+          "url": "https://www.bbc.com/news/articles/c6x2355448eyo",
+          "source": "BBC"
         },
         {
-          "title": "MATCH PREVIEW, pres. by Toyota: Red Bull New York Host Inter Miami CF on Saturday Afternoon at Sports Illustrated Stadium",
-          "url": "https://www.newyorkredbulls.com/news/match-preview-pres-by-toyota-red-bull-new-york-host-inter-miami-cf-on-saturday-afternoon-at-sports-illustrated-stadium",
-          "source": "Red Bull New York"
+          "title": "Second Ebola victim buried under strict safety protocols",
+          "url": "https://www.standardmedia.co.ke/health/health-science/article/2001560775/second-ebola-victim-buried-under-strict-safety-protocols",
+          "source": "The Standard Media Group"
         },
         {
-          "title": "Red Bulls use own goal to grab lead, then Emil Forsberg to wrap up 2-0 victory over Inter Miami",
-          "url": "https://www.cbsnews.com/newyork/news/red-bulls-use-own-goal-to-grab-lead-then-emil-forsberg-to-wrap-up-2-0-victory-over-inter-miami/",
-          "source": "CBS News"
+          "title": "Ebola hunt: How Kenya tracked 135 contacts",
+          "url": "https://www.the-star.co.ke/news/2026-10-24-ebola-hunt-how-kenya-tracked-135-contacts",
+          "source": "The Star, Kenya"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "housing",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "NEMA Issues Notice on Ruto's Planned Nairobi Housing Project With 7,000 Units",
+          "url": "https://www.kenyans.co.ke/news/128842-nema-invites-public-comments-plan-build-7128-housing-units-nairobi",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Select Nairobi Residents Face Possible Relocation Under New Govt Housing Project",
+          "url": "https://thekenyatimes.com/latest-kenya-times-news/select-nairobi-residents-face-possible-relocation-under-new-govt-housing-project/",
+          "source": "The Kenya Times"
+        },
+        {
+          "title": "Budget to include £1bn for social and affordable housing",
+          "url": "https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o",
+          "source": "BBC"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -29,19 +52,41 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "Hundreds of flights cancelled as Typhoon Champi shuts Taiwan",
-          "url": "https://www.the-star.co.ke/news/world/2026-10-23-hundreds-of-flights-cancelled-as-typhoon-champi-shuts-taiwan",
-          "source": "The Star, Kenya"
+          "title": "Atletico Madrid vs Deportivo de A Coruña: Spanish La Liga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cqpvglrn2w8xt",
+          "source": "BBC"
         },
         {
-          "title": "Super Typhoon Champi, Churning Over Pacific, Becomes Strongest Storm of 2026",
-          "url": "https://www.nytimes.com/2026/10/21/weather/super-typhoon-champi-strongest-storm-year.html",
-          "source": "The New York Times"
+          "title": "Atletico Madrid v Deportivo La Coruna | Match Highlights | LaLiga EA Sports Matchday 10",
+          "url": "https://supersport.com/football/video/5dd78004-7840-44eb-bbd5-78b3007caca8/atletico-madrid-v-deportivo-la-coruna-match-highlights-laliga-ea-sports-matchday-10",
+          "source": "SuperSport"
         },
         {
-          "title": "Tropical Storm Champi nears China after battering Taiwan, Japan",
-          "url": "https://www.afp.com/en/tropical-storm-champi-nears-china-after-battering-taiwan-japan",
-          "source": "AFP.com"
+          "title": "Alvarez’s apology goal hands Atlético a sixth consecutive league win",
+          "url": "https://www.intothecalderon.com/atletico-madrid-columns/29305/takeaways-atletico-madrid-deportivo-a-coruna-julian-alvarez-diego-simeone-la-liga-barcelona",
+          "source": "Into the Calderon"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "celta vigo vs real betis",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "El Real Betis, el \"fenómeno\", continúa con confianza su racha ganadora.",
+          "url": "https://www.vietnam.vn/es/hien-tuong-real-betis-tu-tin-tiep-da-thang-hoa",
+          "source": "Vietnam.vn"
+        },
+        {
+          "title": "Duelo generacional; empate técnico",
+          "url": "https://www.farodevigo.es/celta-de-vigo/2026/10/25/duelo-generacional-empate-tecnico-135592500.html",
+          "source": "Faro de Vigo"
+        },
+        {
+          "title": "Celta - Betis: El calendario prueba la madurez del Betis",
+          "url": "https://www.abc.es/deportes/alfinaldelapalmera/noticias-betis/celta-betis-calendario-prueba-madurez-betis-20261025071803-nts.html",
+          "source": "ABC"
         }
       ]
     },
@@ -51,66 +96,43 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Steph Curry, Brandin Podziemski not expected to play in Warriors vs. Suns game",
-          "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steph-curry-brandin-podziemski-not-expected-to-play-suns/1973812/",
-          "source": "NBC Sports Bay Area & California"
+          "title": "Suns 131-122 Warriors (Oct 24, 2026) Game Recap",
+          "url": "https://www.espn.com/nba/recap?gameId=401909860",
+          "source": "ESPN"
         },
         {
-          "title": "“Completely Chokes the Game & Now This”: NBA Fans Bash Steph Curry Going 0-4 in Clutch Loss to Grizzlies and Hinting at Resting Next Game vs. Suns",
-          "url": "https://sports.yahoo.com/articles/completely-chokes-game-now-nba-140930313.html",
+          "title": "Jalen Johnson posts 26/9/16/2 line in loss",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-24/jalen-johnson-posts-26-9-16-2-line-in-loss",
+          "source": "NBC Sports"
+        },
+        {
+          "title": "Steph Curry officially ruled out tonight in Phoenix …",
+          "url": "https://sports.yahoo.com/articles/steph-curry-officially-ruled-tonight-201758367.html",
           "source": "Yahoo Sports"
-        },
-        {
-          "title": "3 Takeaways from Warriors' Loss to Suns: Dubs Must Evolve Center Rotation",
-          "url": "https://www.si.com/nba/warriors/onsi/3-takeaways-from-warriors-loss-to-suns-dubs-must-evolve-center-rotation-01m5rnfn8yw0",
-          "source": "Sports Illustrated"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "porto",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Andebol: FC Porto goleia em Santo Tirso e sobe à liderança sem derrotas",
-          "url": "https://tvi.iol.pt/noticias/andebol/modalidades/fc-porto-goleia-em-santo-tirso-e-sobe-a-lideranca-sem-derrotas",
-          "source": "TVI"
-        },
-        {
-          "title": "FC Porto goleia GC Santo Tirso e segue na liderança do campeonato",
-          "url": "https://www.zerozero.pt/noticias/fc-porto-goleia-gc-santo-tirso-e-segue-na-lideranca-do-campeonato-/1238461",
-          "source": "zerozero.pt"
-        },
-        {
-          "title": "FC Porto chega aos 47 golos com o Santo Tirso e mantém pleno vitorioso",
-          "url": "https://www.abola.pt/noticias/fc-porto-chega-aos-47-golos-com-o-santo-tirso-e-mantem-pleno-vitorioso-2026102421063405775",
-          "source": "A Bola"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "housing",
+      "title": "man u vs bournemouth",
       "traffic": "100+",
       "news": [
         {
-          "title": "Budget to include £1bn for social and affordable housing",
-          "url": "https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o",
+          "title": "Carrick's team news for Cherries clash",
+          "url": "https://www.manutd.com/en/news/carricks-team-news-for-man-utd-v-bournemouth-25-october",
+          "source": "Manchester United"
+        },
+        {
+          "title": "Manchester United vs Bournemouth: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/ck62yqmle02mt",
           "source": "BBC"
         },
         {
-          "title": "Labour unveils £285m funding boost for local communities so 'decisions can be made closer to home'",
-          "url": "https://news.sky.com/story/labour-unveils-285m-funding-boost-for-local-communities-so-decisions-can-be-made-closer-to-home-13603437",
-          "source": "Sky News"
-        },
-        {
-          "title": "Andy Burnham vows to end 'cap in hand' reliance on Whitehall for struggling councils",
-          "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/andy-burnham-vows-end-cap-34813236",
-          "source": "Manchester Evening News"
+          "title": "Man Utd vs Bournemouth: How to watch, TV channel, live stream, NOW TV, team news and score prediction",
+          "url": "https://www.skysports.com/football/news/13602771/man-utd-vs-bournemouth-how-to-watch-tv-channel-live-stream-now-tv-team-news-and-score-prediction",
+          "source": "Sky Sports"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
@@ -141,16 +163,12 @@
       "why": "unsafe: 'Odds'"
     },
     {
-      "title": "ebola in kenya",
-      "why": "unsafe: 'Death'"
-    },
-    {
-      "title": "porto fc",
+      "title": "monaco vs lille",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "fc porto",
-      "why": "unsafe: 'Betting'"
+      "title": "rbny vs inter miami",
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}

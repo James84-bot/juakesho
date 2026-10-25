@@ -1,6 +1,58 @@
 {
- "fetched": "2026-10-25T06:06:35.238032+00:00",
+ "fetched": "2026-10-25T08:44:18.929160+00:00",
  "x": [
+  {
+   "name": "Equalisation Party TeP",
+   "tweets": ""
+  },
+  {
+   "name": "Kikuyu Privilege",
+   "tweets": ""
+  },
+  {
+   "name": "Sessional Paper No10",
+   "tweets": ""
+  },
+  {
+   "name": "The 5th Estate",
+   "tweets": ""
+  },
+  {
+   "name": "#UsawaNiSawa",
+   "tweets": ""
+  },
+  {
+   "name": "Eastleigh",
+   "tweets": ""
+  },
+  {
+   "name": "Biashara Street",
+   "tweets": ""
+  },
+  {
+   "name": "Abdi",
+   "tweets": ""
+  },
+  {
+   "name": "Otieno",
+   "tweets": ""
+  },
+  {
+   "name": "Chelsea",
+   "tweets": ""
+  },
+  {
+   "name": "Gitonga",
+   "tweets": ""
+  },
+  {
+   "name": "Spurs",
+   "tweets": ""
+  },
+  {
+   "name": "#TheSpecialRescue",
+   "tweets": ""
+  },
   {
    "name": "#SundayInstructions",
    "tweets": ""
@@ -10,27 +62,11 @@
    "tweets": ""
   },
   {
-   "name": "#รักแห่งสยามTheMusical",
+   "name": "#ImarishaUchumiParty",
    "tweets": ""
   },
   {
-   "name": "Eastleigh",
-   "tweets": ""
-  },
-  {
-   "name": "Chelsea",
-   "tweets": ""
-  },
-  {
-   "name": "Spurs",
-   "tweets": ""
-  },
-  {
-   "name": "#Nuru47Jumapili",
-   "tweets": ""
-  },
-  {
-   "name": "#TheSpecialRescue",
+   "name": "#Inatuhusu",
    "tweets": ""
   },
   {
@@ -38,11 +74,19 @@
    "tweets": ""
   },
   {
-   "name": "#pafliofficiallaunch",
+   "name": "IUP PARTY LAUNCH",
    "tweets": ""
   },
   {
-   "name": "religious leaders must act",
+   "name": "Justina Wamae",
+   "tweets": ""
+  },
+  {
+   "name": "Tottenham",
+   "tweets": ""
+  },
+  {
+   "name": "Vision 2030",
    "tweets": ""
   },
   {
@@ -50,15 +94,11 @@
    "tweets": ""
   },
   {
-   "name": "Nicolas Jackson",
+   "name": "the kigali declaration",
    "tweets": ""
   },
   {
-   "name": "Aston Villa",
-   "tweets": ""
-  },
-  {
-   "name": "Palmer",
+   "name": "Mandera",
    "tweets": ""
   },
   {
@@ -66,23 +106,11 @@
    "tweets": ""
   },
   {
-   "name": "Alonso",
+   "name": "Bournemouth",
    "tweets": ""
   },
   {
-   "name": "coast endorses orengo",
-   "tweets": ""
-  },
-  {
-   "name": "Section 39",
-   "tweets": ""
-  },
-  {
-   "name": "irs poll",
-   "tweets": ""
-  },
-  {
-   "name": "clause 22",
+   "name": "Palmer",
    "tweets": ""
   },
   {
@@ -90,43 +118,553 @@
    "tweets": ""
   },
   {
-   "name": "the national assembly",
-   "tweets": ""
-  },
-  {
-   "name": "Quenda",
-   "tweets": ""
-  },
-  {
-   "name": "Welbeck",
-   "tweets": ""
-  },
-  {
-   "name": "Adrian",
-   "tweets": ""
-  },
-  {
-   "name": "nithi bridge",
-   "tweets": ""
-  },
-  {
-   "name": "kaiti",
-   "tweets": ""
-  },
-  {
-   "name": "kilungu kmtc",
-   "tweets": ""
-  },
-  {
-   "name": "elections amendment bill 2024",
+   "name": "Alonso",
    "tweets": ""
   }
  ],
- "videos": [],
- "errors": {
-  "Citizen TV": "HTTP Error 404: Not Found",
-  "NTV Kenya": "HTTP Error 404: Not Found",
-  "KTN News": "HTTP Error 404: Not Found"
- },
- "catalog": []
+ "videos": [
+  {
+   "title": "CITIZEN WEEKEND NEWS ~ OCT 24, 2026",
+   "channel": "Citizen TV",
+   "views": 23268,
+   "published": "2026-10-24T19:17:27+00:00",
+   "per_hour": 1730,
+   "url": "https://www.youtube.com/watch?v=Mwi2uxEswV0",
+   "short": "https://youtube.com/shorts/Mwi2uxEswV0"
+  },
+  {
+   "title": "Standard Chartered Nairobi Marathon 2026 kicks off",
+   "channel": "NTV Kenya",
+   "views": 8870,
+   "published": "2026-10-25T03:16:49+00:00",
+   "per_hour": 1625,
+   "url": "https://www.youtube.com/watch?v=EGSyBStPUZk",
+   "short": "https://youtube.com/shorts/EGSyBStPUZk"
+  },
+  {
+   "title": "Sifuna's Presidential Bid Gains Western Support as Leaders Clash at Burudi Nabwera's Burial",
+   "channel": "KTN News",
+   "views": 15060,
+   "published": "2026-10-24T18:50:04+00:00",
+   "per_hour": 1083,
+   "url": "https://www.youtube.com/watch?v=xPAwD7iXksc",
+   "short": "https://youtube.com/shorts/xPAwD7iXksc"
+  },
+  {
+   "title": "Two people rescued so far from Eastleigh building collapse",
+   "channel": "NTV Kenya",
+   "views": 12740,
+   "published": "2026-10-24T19:42:18+00:00",
+   "per_hour": 977,
+   "url": "https://www.youtube.com/watch?v=e96gq2UdETo",
+   "short": "https://youtube.com/shorts/e96gq2UdETo"
+  },
+  {
+   "title": "Governor Sakaja Faces Scrutiny Over Eastleigh Building Collapse",
+   "channel": "KTN News",
+   "views": 13319,
+   "published": "2026-10-24T18:10:18+00:00",
+   "per_hour": 914,
+   "url": "https://www.youtube.com/watch?v=1fOYOGtinF8",
+   "short": "https://youtube.com/shorts/1fOYOGtinF8"
+  },
+  {
+   "title": "DCI Arrests Inspector Kenneth Kipkemboi Sang in Eldoret Over Murders of Lawyer Mbobu and Dr Victoria",
+   "channel": "KTN News",
+   "views": 8492,
+   "published": "2026-10-24T18:52:17+00:00",
+   "per_hour": 612,
+   "url": "https://www.youtube.com/watch?v=L51NxxAsulY",
+   "short": "https://youtube.com/shorts/L51NxxAsulY"
+  },
+  {
+   "title": "Standard Chartered Nairobi Marathon 2026",
+   "channel": "NTV Kenya",
+   "views": 1265,
+   "published": "2026-10-25T06:00:19+00:00",
+   "per_hour": 463,
+   "url": "https://www.youtube.com/watch?v=ZMvkKmNnMVk",
+   "short": "https://youtube.com/shorts/ZMvkKmNnMVk"
+  },
+  {
+   "title": "Mercy Kandie Rotich wins women’s 42km race at Standard Chartered Nairobi Marathon 2026",
+   "channel": "NTV Kenya",
+   "views": 969,
+   "published": "2026-10-25T06:07:01+00:00",
+   "per_hour": 370,
+   "url": "https://www.youtube.com/watch?v=AHZM5V4jYkU",
+   "short": "https://youtube.com/shorts/AHZM5V4jYkU"
+  },
+  {
+   "title": "37-year-old Abraham Kiptum wins men’s 42km race at Standard Chartered Nairobi Marathon 2026",
+   "channel": "NTV Kenya",
+   "views": 932,
+   "published": "2026-10-25T06:06:10+00:00",
+   "per_hour": 354,
+   "url": "https://www.youtube.com/watch?v=ZER6uIu4wTQ",
+   "short": "https://youtube.com/shorts/ZER6uIu4wTQ"
+  },
+  {
+   "title": "Gideon Moi Courts Rift Valley Elders as Opposition Weighs His Political Options",
+   "channel": "KTN News",
+   "views": 4815,
+   "published": "2026-10-24T18:22:46+00:00",
+   "per_hour": 335,
+   "url": "https://www.youtube.com/watch?v=zQ2o3XDYCN0",
+   "short": "https://youtube.com/shorts/zQ2o3XDYCN0"
+  },
+  {
+   "title": "From Hustler to Usawa: Ruto's Changing Political Message Raises Questions About His 2022 Promises",
+   "channel": "KTN News",
+   "views": 4505,
+   "published": "2026-10-24T18:54:43+00:00",
+   "per_hour": 326,
+   "url": "https://www.youtube.com/watch?v=uyIcX4HyAh4",
+   "short": "https://youtube.com/shorts/uyIcX4HyAh4"
+  },
+  {
+   "title": "Ruto Praises Kalonzo Musyoka During Ukambani Tour as Political Tensions Rise Ahead of 2027 Elections",
+   "channel": "KTN News",
+   "views": 4427,
+   "published": "2026-10-24T18:53:03+00:00",
+   "per_hour": 320,
+   "url": "https://www.youtube.com/watch?v=Pbdz9S8fhWA",
+   "short": "https://youtube.com/shorts/Pbdz9S8fhWA"
+  },
+  {
+   "title": "Standard Chartered Nairobi Marathon 2026: Fun fair highlights and interviews",
+   "channel": "NTV Kenya",
+   "views": 335,
+   "published": "2026-10-25T07:35:13+00:00",
+   "per_hour": 291,
+   "url": "https://www.youtube.com/watch?v=GtdzOiki3yQ",
+   "short": "https://youtube.com/shorts/GtdzOiki3yQ"
+  },
+  {
+   "title": "Eastleigh Building Collapse Triggers Multi-Agency Investigation as Authorities Prioritise Rescue",
+   "channel": "KTN News",
+   "views": 4128,
+   "published": "2026-10-24T18:18:38+00:00",
+   "per_hour": 286,
+   "url": "https://www.youtube.com/watch?v=9o7b3picOHk",
+   "short": "https://youtube.com/shorts/9o7b3picOHk"
+  },
+  {
+   "title": "Eastleigh Building Collapse Rescue Enters Second Day as 31 People Remain Missing Beneath the Rubble",
+   "channel": "KTN News",
+   "views": 4163,
+   "published": "2026-10-24T18:08:07+00:00",
+   "per_hour": 285,
+   "url": "https://www.youtube.com/watch?v=bZuBrbXBCX4",
+   "short": "https://youtube.com/shorts/bZuBrbXBCX4"
+  }
+ ],
+ "errors": {},
+ "catalog": [
+  {
+   "title": "Official results of #StanChartNairobiMarathon 2026",
+   "channel": "NTV Kenya",
+   "views": 1,
+   "published": "2026-10-25T08:40:00+00:00",
+   "per_hour": 1,
+   "url": "https://www.youtube.com/watch?v=HQx0aKoqUpE",
+   "short": "https://youtube.com/shorts/HQx0aKoqUpE"
+  },
+  {
+   "title": "| DIASPORA CONNECT | Eliud: Fourishing Classes",
+   "channel": "Citizen TV",
+   "views": 35,
+   "published": "2026-10-25T08:01:51+00:00",
+   "per_hour": 35,
+   "url": "https://www.youtube.com/watch?v=2EA-GhnXmyE",
+   "short": "https://youtube.com/shorts/2EA-GhnXmyE"
+  },
+  {
+   "title": "DIASPORA CONNECT ~ OCTOBER 24, 2026 [Part 1]",
+   "channel": "Citizen TV",
+   "views": 41,
+   "published": "2026-10-25T07:58:40+00:00",
+   "per_hour": 41,
+   "url": "https://www.youtube.com/watch?v=wrISY4vxlZI",
+   "short": "https://youtube.com/shorts/wrISY4vxlZI"
+  },
+  {
+   "title": "| DIASPORA CONNECT | Eric in Norway",
+   "channel": "Citizen TV",
+   "views": 18,
+   "published": "2026-10-25T07:57:26+00:00",
+   "per_hour": 18,
+   "url": "https://www.youtube.com/watch?v=zlluqX_04o0",
+   "short": "https://youtube.com/shorts/zlluqX_04o0"
+  },
+  {
+   "title": "Standard Chartered Nairobi Marathon 2026: Fun fair highlights and interviews",
+   "channel": "NTV Kenya",
+   "views": 335,
+   "published": "2026-10-25T07:35:13+00:00",
+   "per_hour": 291,
+   "url": "https://www.youtube.com/watch?v=GtdzOiki3yQ",
+   "short": "https://youtube.com/shorts/GtdzOiki3yQ"
+  },
+  {
+   "title": "CEO Birju Sanghrajka speaks on what it takes to organise #StanChartNairobiMarathon",
+   "channel": "NTV Kenya",
+   "views": 44,
+   "published": "2026-10-25T07:14:04+00:00",
+   "per_hour": 29,
+   "url": "https://www.youtube.com/watch?v=Ub-sLuxxU6I",
+   "short": "https://youtube.com/shorts/Ub-sLuxxU6I"
+  },
+  {
+   "title": "Michael celebrates completing the 42km race in a wheelchair at #StanChartNairobiMarathon",
+   "channel": "NTV Kenya",
+   "views": 28,
+   "published": "2026-10-25T07:08:15+00:00",
+   "per_hour": 17,
+   "url": "https://www.youtube.com/watch?v=9v3uiipwKLs",
+   "short": "https://youtube.com/shorts/9v3uiipwKLs"
+  },
+  {
+   "title": "#StanChartNairobiMarathon is our pilgrimage. We come here to sign off",
+   "channel": "NTV Kenya",
+   "views": 236,
+   "published": "2026-10-25T06:31:46+00:00",
+   "per_hour": 107,
+   "url": "https://www.youtube.com/watch?v=DV2pM6VfjP0",
+   "short": "https://youtube.com/shorts/DV2pM6VfjP0"
+  },
+  {
+   "title": "Tanzanians and Ugandans share their joy after taking part in the #StanChartNairobiMarathon",
+   "channel": "NTV Kenya",
+   "views": 488,
+   "published": "2026-10-25T06:21:27+00:00",
+   "per_hour": 205,
+   "url": "https://www.youtube.com/watch?v=lslUGmdfNeo",
+   "short": "https://youtube.com/shorts/lslUGmdfNeo"
+  },
+  {
+   "title": "Mercy Kandie Rotich wins women’s 42km race at Standard Chartered Nairobi Marathon 2026",
+   "channel": "NTV Kenya",
+   "views": 969,
+   "published": "2026-10-25T06:07:01+00:00",
+   "per_hour": 370,
+   "url": "https://www.youtube.com/watch?v=AHZM5V4jYkU",
+   "short": "https://youtube.com/shorts/AHZM5V4jYkU"
+  },
+  {
+   "title": "37-year-old Abraham Kiptum wins men’s 42km race at Standard Chartered Nairobi Marathon 2026",
+   "channel": "NTV Kenya",
+   "views": 932,
+   "published": "2026-10-25T06:06:10+00:00",
+   "per_hour": 354,
+   "url": "https://www.youtube.com/watch?v=ZER6uIu4wTQ",
+   "short": "https://youtube.com/shorts/ZER6uIu4wTQ"
+  },
+  {
+   "title": "Standard Chartered Nairobi Marathon 2026",
+   "channel": "NTV Kenya",
+   "views": 1265,
+   "published": "2026-10-25T06:00:19+00:00",
+   "per_hour": 463,
+   "url": "https://www.youtube.com/watch?v=ZMvkKmNnMVk",
+   "short": "https://youtube.com/shorts/ZMvkKmNnMVk"
+  },
+  {
+   "title": "Standard Chartered Nairobi Marathon 2026 kicks off",
+   "channel": "NTV Kenya",
+   "views": 8870,
+   "published": "2026-10-25T03:16:49+00:00",
+   "per_hour": 1625,
+   "url": "https://www.youtube.com/watch?v=EGSyBStPUZk",
+   "short": "https://youtube.com/shorts/EGSyBStPUZk"
+  },
+  {
+   "title": "DIASPORA CONNECT ~ OCTOBER 24, 2026 [Part 2]",
+   "channel": "Citizen TV",
+   "views": 1342,
+   "published": "2026-10-24T21:20:15+00:00",
+   "per_hour": 118,
+   "url": "https://www.youtube.com/watch?v=g4Bkn9ewVzg",
+   "short": "https://youtube.com/shorts/g4Bkn9ewVzg"
+  },
+  {
+   "title": "Understanding the difference between harvesting in a plantation and deforestation | Earthwise Mtaani",
+   "channel": "NTV Kenya",
+   "views": 686,
+   "published": "2026-10-24T21:07:35+00:00",
+   "per_hour": 59,
+   "url": "https://www.youtube.com/watch?v=Xn_d5wcTzf0",
+   "short": "https://youtube.com/shorts/Xn_d5wcTzf0"
+  },
+  {
+   "title": "Two people rescued so far from Eastleigh building collapse",
+   "channel": "NTV Kenya",
+   "views": 12740,
+   "published": "2026-10-24T19:42:18+00:00",
+   "per_hour": 977,
+   "url": "https://www.youtube.com/watch?v=e96gq2UdETo",
+   "short": "https://youtube.com/shorts/e96gq2UdETo"
+  },
+  {
+   "title": "Sigona breaks ground on new clubhouse",
+   "channel": "NTV Kenya",
+   "views": 1021,
+   "published": "2026-10-24T19:37:16+00:00",
+   "per_hour": 78,
+   "url": "https://www.youtube.com/watch?v=Nwh19ixzJIg",
+   "short": "https://youtube.com/shorts/Nwh19ixzJIg"
+  },
+  {
+   "title": "Boxing | Kenya tops medal standings",
+   "channel": "NTV Kenya",
+   "views": 416,
+   "published": "2026-10-24T19:36:31+00:00",
+   "per_hour": 32,
+   "url": "https://www.youtube.com/watch?v=TrA2vxQSR48",
+   "short": "https://youtube.com/shorts/TrA2vxQSR48"
+  },
+  {
+   "title": "AFC Leopards to renew rivalry with Shabana FC on Sunday",
+   "channel": "NTV Kenya",
+   "views": 321,
+   "published": "2026-10-24T19:35:14+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=Gp7_Lajn4HA",
+   "short": "https://youtube.com/shorts/Gp7_Lajn4HA"
+  },
+  {
+   "title": "CITIZEN WEEKEND NEWS ~ OCT 24, 2026",
+   "channel": "Citizen TV",
+   "views": 23268,
+   "published": "2026-10-24T19:17:27+00:00",
+   "per_hour": 1730,
+   "url": "https://www.youtube.com/watch?v=Mwi2uxEswV0",
+   "short": "https://youtube.com/shorts/Mwi2uxEswV0"
+  },
+  {
+   "title": "Chairman’s Prize golf tournament concludes at Muthaiga Golf Club",
+   "channel": "Citizen TV",
+   "views": 1266,
+   "published": "2026-10-24T19:12:30+00:00",
+   "per_hour": 94,
+   "url": "https://www.youtube.com/watch?v=xyCC-wbRdnI",
+   "short": "https://youtube.com/shorts/xyCC-wbRdnI"
+  },
+  {
+   "title": "South Africa clinch double gold at African Road Cycling Championships",
+   "channel": "Citizen TV",
+   "views": 852,
+   "published": "2026-10-24T19:11:06+00:00",
+   "per_hour": 63,
+   "url": "https://www.youtube.com/watch?v=2CGp8zOBqnk",
+   "short": "https://youtube.com/shorts/2CGp8zOBqnk"
+  },
+  {
+   "title": "Kisii Grand Prix chess opener attracts players from four countries",
+   "channel": "Citizen TV",
+   "views": 708,
+   "published": "2026-10-24T19:09:51+00:00",
+   "per_hour": 52,
+   "url": "https://www.youtube.com/watch?v=xDN_fyqgvl4",
+   "short": "https://youtube.com/shorts/xDN_fyqgvl4"
+  },
+  {
+   "title": "FKF Nairobi East Gala honours outstanding football performers",
+   "channel": "Citizen TV",
+   "views": 420,
+   "published": "2026-10-24T19:06:44+00:00",
+   "per_hour": 31,
+   "url": "https://www.youtube.com/watch?v=b41qp5aj5LQ",
+   "short": "https://youtube.com/shorts/b41qp5aj5LQ"
+  },
+  {
+   "title": "Gor Mahia maintain perfect start with win over Bandari FC",
+   "channel": "Citizen TV",
+   "views": 653,
+   "published": "2026-10-24T19:05:20+00:00",
+   "per_hour": 48,
+   "url": "https://www.youtube.com/watch?v=eoLrUDu17e0",
+   "short": "https://youtube.com/shorts/eoLrUDu17e0"
+  },
+  {
+   "title": "Sigona Golf Club Breaks Ground on New Clubhouse After Devastating Fire Destroyed Original Structure",
+   "channel": "KTN News",
+   "views": 1406,
+   "published": "2026-10-24T19:01:41+00:00",
+   "per_hour": 103,
+   "url": "https://www.youtube.com/watch?v=ILx6WEocS7Y",
+   "short": "https://youtube.com/shorts/ILx6WEocS7Y"
+  },
+  {
+   "title": "FKF Delegation Visits Morocco's Mohamed VI Football Complex to Study the Country's Football Success",
+   "channel": "KTN News",
+   "views": 537,
+   "published": "2026-10-24T19:00:57+00:00",
+   "per_hour": 39,
+   "url": "https://www.youtube.com/watch?v=88B63GPH4W8",
+   "short": "https://youtube.com/shorts/88B63GPH4W8"
+  },
+  {
+   "title": "FKF Nairobi East Awards Honour Top Players as Branch Promises Better Welfare for Coaches and Referee",
+   "channel": "KTN News",
+   "views": 330,
+   "published": "2026-10-24T19:00:18+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=2L2VSDSgiGw",
+   "short": "https://youtube.com/shorts/2L2VSDSgiGw"
+  },
+  {
+   "title": "Motorists urged to observe traffic rules to curb road accidents",
+   "channel": "Citizen TV",
+   "views": 458,
+   "published": "2026-10-24T18:59:02+00:00",
+   "per_hour": 33,
+   "url": "https://www.youtube.com/watch?v=2WGLRkQ3F9Q",
+   "short": "https://youtube.com/shorts/2WGLRkQ3F9Q"
+  },
+  {
+   "title": "Musyi FM engages listeners and promotes Joy Millers products in Emali",
+   "channel": "Citizen TV",
+   "views": 575,
+   "published": "2026-10-24T18:57:48+00:00",
+   "per_hour": 42,
+   "url": "https://www.youtube.com/watch?v=zb_mjF6zDwo",
+   "short": "https://youtube.com/shorts/zb_mjF6zDwo"
+  },
+  {
+   "title": "From Hustler to Usawa: Ruto's Changing Political Message Raises Questions About His 2022 Promises",
+   "channel": "KTN News",
+   "views": 4505,
+   "published": "2026-10-24T18:54:43+00:00",
+   "per_hour": 326,
+   "url": "https://www.youtube.com/watch?v=uyIcX4HyAh4",
+   "short": "https://youtube.com/shorts/uyIcX4HyAh4"
+  },
+  {
+   "title": "Leaders urged to uphold peace and shun political violence",
+   "channel": "Citizen TV",
+   "views": 604,
+   "published": "2026-10-24T18:54:30+00:00",
+   "per_hour": 44,
+   "url": "https://www.youtube.com/watch?v=rP1fHTWCwzg",
+   "short": "https://youtube.com/shorts/rP1fHTWCwzg"
+  },
+  {
+   "title": "Government pledges increased support for Maralal International Camel Derby",
+   "channel": "Citizen TV",
+   "views": 886,
+   "published": "2026-10-24T18:53:13+00:00",
+   "per_hour": 64,
+   "url": "https://www.youtube.com/watch?v=SFZM86YSwhU",
+   "short": "https://youtube.com/shorts/SFZM86YSwhU"
+  },
+  {
+   "title": "Ruto Praises Kalonzo Musyoka During Ukambani Tour as Political Tensions Rise Ahead of 2027 Elections",
+   "channel": "KTN News",
+   "views": 4427,
+   "published": "2026-10-24T18:53:03+00:00",
+   "per_hour": 320,
+   "url": "https://www.youtube.com/watch?v=Pbdz9S8fhWA",
+   "short": "https://youtube.com/shorts/Pbdz9S8fhWA"
+  },
+  {
+   "title": "DCI Arrests Inspector Kenneth Kipkemboi Sang in Eldoret Over Murders of Lawyer Mbobu and Dr Victoria",
+   "channel": "KTN News",
+   "views": 8492,
+   "published": "2026-10-24T18:52:17+00:00",
+   "per_hour": 612,
+   "url": "https://www.youtube.com/watch?v=L51NxxAsulY",
+   "short": "https://youtube.com/shorts/L51NxxAsulY"
+  },
+  {
+   "title": "Orengo Warns of No Elections if Rigging Is Planned as Wandayi Cautions Youths Against Protests",
+   "channel": "KTN News",
+   "views": 3252,
+   "published": "2026-10-24T18:51:10+00:00",
+   "per_hour": 234,
+   "url": "https://www.youtube.com/watch?v=NpUnBo_RxyU",
+   "short": "https://youtube.com/shorts/NpUnBo_RxyU"
+  },
+  {
+   "title": "Sifuna's Presidential Bid Gains Western Support as Leaders Clash at Burudi Nabwera's Burial",
+   "channel": "KTN News",
+   "views": 15060,
+   "published": "2026-10-24T18:50:04+00:00",
+   "per_hour": 1083,
+   "url": "https://www.youtube.com/watch?v=xPAwD7iXksc",
+   "short": "https://youtube.com/shorts/xPAwD7iXksc"
+  },
+  {
+   "title": "Kenya Kwanza leaders accuse opposition of politicising IEBC ahead of 2027 polls",
+   "channel": "Citizen TV",
+   "views": 677,
+   "published": "2026-10-24T18:49:23+00:00",
+   "per_hour": 49,
+   "url": "https://www.youtube.com/watch?v=5yvCHqrxl74",
+   "short": "https://youtube.com/shorts/5yvCHqrxl74"
+  },
+  {
+   "title": "Health Digest: Kenya Explores Potential Ebola Treatments",
+   "channel": "KTN News",
+   "views": 1360,
+   "published": "2026-10-24T18:48:40+00:00",
+   "per_hour": 98,
+   "url": "https://www.youtube.com/watch?v=TKx4O8e7y_4",
+   "short": "https://youtube.com/shorts/TKx4O8e7y_4"
+  },
+  {
+   "title": "Gideon Moi Courts Rift Valley Elders as Opposition Weighs His Political Options",
+   "channel": "KTN News",
+   "views": 4815,
+   "published": "2026-10-24T18:22:46+00:00",
+   "per_hour": 335,
+   "url": "https://www.youtube.com/watch?v=zQ2o3XDYCN0",
+   "short": "https://youtube.com/shorts/zQ2o3XDYCN0"
+  },
+  {
+   "title": "Second Ebola victim buried under strict safety protocols at Langata Cemetery",
+   "channel": "KTN News",
+   "views": 1847,
+   "published": "2026-10-24T18:21:44+00:00",
+   "per_hour": 128,
+   "url": "https://www.youtube.com/watch?v=LGVKudQ6LMc",
+   "short": "https://youtube.com/shorts/LGVKudQ6LMc"
+  },
+  {
+   "title": "Eastleigh Building Collapse Triggers Multi-Agency Investigation as Authorities Prioritise Rescue",
+   "channel": "KTN News",
+   "views": 4128,
+   "published": "2026-10-24T18:18:38+00:00",
+   "per_hour": 286,
+   "url": "https://www.youtube.com/watch?v=9o7b3picOHk",
+   "short": "https://youtube.com/shorts/9o7b3picOHk"
+  },
+  {
+   "title": "Governor Sakaja Faces Scrutiny Over Eastleigh Building Collapse",
+   "channel": "KTN News",
+   "views": 13319,
+   "published": "2026-10-24T18:10:18+00:00",
+   "per_hour": 914,
+   "url": "https://www.youtube.com/watch?v=1fOYOGtinF8",
+   "short": "https://youtube.com/shorts/1fOYOGtinF8"
+  },
+  {
+   "title": "Eastleigh Building Collapse Rescue Enters Second Day as 31 People Remain Missing Beneath the Rubble",
+   "channel": "KTN News",
+   "views": 4163,
+   "published": "2026-10-24T18:08:07+00:00",
+   "per_hour": 285,
+   "url": "https://www.youtube.com/watch?v=bZuBrbXBCX4",
+   "short": "https://youtube.com/shorts/bZuBrbXBCX4"
+  },
+  {
+   "title": "Tusker Yalenga Ushindi Dhidi ya Singida Black Stars Katika Kombe la Mashirikisho Dar es Salaam",
+   "channel": "KTN News",
+   "views": 361,
+   "published": "2026-10-24T16:29:13+00:00",
+   "per_hour": 22,
+   "url": "https://www.youtube.com/watch?v=MjodGW1dm_U",
+   "short": "https://youtube.com/shorts/MjodGW1dm_U"
+  }
+ ]
 }

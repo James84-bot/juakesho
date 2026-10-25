@@ -2129,13 +2129,85 @@
       "reel": true,
       "tg_msg": 529,
       "decided_at": "2026-10-25T10:42:51.479033+03:00"
+    },
+    {
+      "id": "2026-w43-hot-1025m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "Kenya loses *Sh403 billion* every year through illicit cash flows and tax evasion.",
+      "fact": "Illicit financial flows drain Sh403 billion from Kenya's economy each year.",
+      "message": "Kenya loses Sh403 billion annually to illicit financial flows while ordinary citizens face higher taxes.",
+      "action": "Demand KRA and the Financial Reporting Centre publish the annual illicit cash report.",
+      "beats": [
+        "Kenya loses *Sh403 billion* every year to illicit financial flows.",
+        "Multinational firms and smugglers move untaxed profits abroad.",
+        "Ordinary workers carry the burden through *rising income taxes*.",
+        "Kenyans demand: KRA and Treasury plug *illegal cash leaks* now.",
+        "Track public finance reports at treasury.go.ke."
+      ],
+      "photo_query": "Kenyan shilling banknotes",
+      "source": "The Standard, 2026-10-25",
+      "caption": "Kenya loses Sh403 billion every year to illicit financial flows. While big corporations dodge taxes, ordinary Kenyans face rising levies on every payslip. What should the government fix first to stop this leak?\n\n#SautiYaMwananchi #TaxJustice #KenyaOnRecord",
+      "who": "National Treasury and KRA",
+      "where": "National",
+      "when": "25 Oct 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Tax evasion by big players shifts the tax burden onto ordinary workers.",
+      "bg": "usiku",
+      "publish_at": "2026-10-25T14:44:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Weak county approvals and rogue developers put Kenyan tenants at risk when buildings collapse."
+      ],
+      "source_links": [
+        {
+          "outlet": "The Standard",
+          "title": "How Kenya loses Sh403 billion annually to illicit financial flows",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQk9OUVhxMFpfbGsyQlBGQy1uakY0M19FdVhXVDVHVkxvU0NKQ1FabUNsR04wd2lPai1waHMtWWtaRjJiYXFBbV92TzNYT2RWc1RyMi1WZHRaYnhHM2FDZEZHaDFEX25JVUZTam9qbldhekxSVTNMeFAwZF9YeGgtV3dmT1U0SHp3RlBJdTgxTGZuWkVGa2ZlVUowSHZjM3BtSkJnZlNGd0tEUjdPSW40U0M2M0ZZcVNiR0VyMWVkSmRPYzQ?oc=5",
+          "published": "2026-10-25"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 3,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "avg": 7.6,
+        "note": "Link this financial leakage directly to a live news item or recent budget deficit to match the current demand criteria."
+      },
+      "drafted_at": "2026-10-25T11:51:13.030742+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W43/photos/2026-w43-hot-1025m-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127788-kra-collects-ksh-90b-customs-revenue-exceeding-september-target-ksh-965m",
+      "reel": true,
+      "tg_msg": 533
     }
   ],
   "scripts": {
-    "radio": "Good evening, you are listening to Kenya on Record. Tonight, we must talk about the roofs over our heads. Every few months, the sirens wail, excavators roll in, and families wait in agony beside piles of twisted steel and crushed concrete. From Kasarani to Ruaka, multi-storey buildings are giving way—not because of natural disasters, but because of calculated greed and compromised county enforcement.\n\nHere is how the cycle works: a developer secures approval for a four-storey block, then quietly adds three more floors. Saltwater and subpar ballast replace quality materials, while county planning officers sign off inspection certificates from the comfort of their offices without conducting mandatory site visits. By the time tenants move in, paying forty thousand shillings a month for fresh paint and fancy tiles, they are living inside structural death traps.\n\nWe cannot normalize press releases and task forces while nobody goes to jail. Building approvals are a public trust. If a county engineer clears an illegal structure that collapses, they belong in the dock alongside the rogue contractor.\n\nKwa ufupi: Kuporomoka kwa majengo sio ajali; ni njama ya wajenzi walafi na maafisa wa kaunti wanaochukua hongo na kuidhinisha ujenzi duni. Ni lazima wahusika wafunguliwe mashtaka ya jinai. Kama mpangaji, kuwa makini: usikubali kuweka maisha yako hatarini bila kuhakikisha jengo limekaguliwa na kupewa cheti halali cha kukaliwa.",
-    "voice_note": "Habari zenu. Quick check from Kenya on Record, especially if you are house-hunting this month. We need to be extremely vigilant about where we put our families. Too many developers across our towns are cutting corners—adding extra floors overnight that were never approved, using substandard steel, and bypassing basic soil testing. And the county inspection teams? Many are simply rubber-stamping these sites without stepping foot on the ground. Before you pay that deposit, look beyond the fresh coat of paint. Look at the basement columns. Check for diagonal shearing cracks on the stairwells. Demand to see the county occupation certificate and NCA compliance certificate. Moving into a house shouldn't feel like gambling with your life. Share this with anyone planning to move this weekend.",
-    "sms": "Usiibiwe: Before paying rent, ask for a county occupation certificate and inspect for deep cracks. Never ignore unapproved extra floors. Safety comes first.",
-    "reels": "A fresh coat of paint will hide poor curing. Ceramic tiles will hide a weak beam. But nothing stops gravity when a developer adds three illegal floors with cheap cement. Every collapsed apartment in our estates has a paper trail signed by a county inspector. When buildings crumble, it isn't an accident—it’s corruption. Demand the occupation certificate before you sign that lease. Kenya on Record."
+    "radio": "Hamjambo wasikilizaji, this is Kenya on Record. Every month, your payslip gets leaner. Every trip to the duka costs more as VAT and fuel levies squeeze your pocket dry. We are told the government needs revenue, that we must tighten our belts to build the nation.\n\nFair enough. But here is the number they don't say out loud on podiums: Kenya is losing an estimated 403 billion shillings every single year through illicit financial flows. That is 403 billion slipping through our fingers through corrupt deals, trade misinvoicing, tax evasion by multinational corporations, and secret offshore accounts.\n\nTo put that into perspective, 403 billion is enough to fully fund healthcare, fix broken classrooms, and service a massive chunk of our public debt without adding a single cent to your bread, fuel, or salary. The tragedy is that while ordinary citizens and mama mbogas are tracked down for every coin, the big players siphoning billions overseas face little scrutiny. Accountability cannot be a burden carried only by the poor. If we plugged the leaks, we wouldn't need to bleed the mwananchi.\n\nKwa kifupi kwa lugha yetu ya taifa: Kenya inapoteza shilingi bilioni mia nne na tatu kila mwaka kupitia ufisadi na ukwepaji kodi wa mashirika makubwa, huku mwananchi wa kawaida akilemewa na mzigo wa ushuru. Lazima serikali ifunge mianya hii badala ya kumkaba koo mlipakodi mdogo.",
+    "voice_note": "Hey people, think about this for a minute. Every single year, Kenya loses 403 billion shillings through illicit financial flows. We are talking about massive tax evasion by multinationals, fake trade invoices, and looted public cash hidden in offshore accounts. Meanwhile, what happens back home? The government turns to you and me, raising taxes on fuel, food, and basic salaries to bridge budget deficits. It makes no sense. If our authorities put half the energy they spend taxing salaried workers and small traders into actually stopping these illegal cross-border leaks, nobody would need to hike your taxes. Let’s stop accepting the narrative that the country has no money. The resources exist—they are just leaking out into private pockets abroad. Ask your leaders today: what concrete steps are they taking to stop illicit financial flows?",
+    "sms": "Usiibiwe: Kenya loses Sh403B yearly to illicit financial leaks while you get overtaxed. Demand leaders seal offshore tax evasion, not squeeze your pocket.",
+    "reels": "Four hundred and three billion shillings. That is what Kenya loses every year to illicit financial flows—through corporate tax dodging, fake invoicing, and offshore looting. Yet every budget cycle, the state hikes taxes on your food, fuel, and salary to cover the gap. The country isn’t broke; our system is bleeding cash to the corrupt. Demand leaders seal the leaks, instead of squeezing the citizen."
   },
   "spend_usd": 0.0,
   "revision": 9
