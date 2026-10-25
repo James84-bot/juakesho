@@ -15,7 +15,7 @@ openverse 'ballot box Kenya' for 2026-w44-d5-straight: 0 found, 0 usable, droppe
 openverse 'ballot box' for 2026-w44-d5-straight: 20 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 20, 'subject': 0}
 commons 'ballot box Kenya' for 2026-w44-d5-straight: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
 commons 'ballot box' for 2026-w44-d5-straight: 25 found, 0 usable, dropped {'size': 4, 'licence': 0, 'place': 21, 'subject': 0}
-commons 'Kenya election' for 2026-w44-d5-straight: 25 found, 5 usable, dropped {'size': 20, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'Kenya election' for 2026-w44-d5-straight: 25 found, 6 usable, dropped {'size': 19, 'licence': 0, 'place': 0, 'subject': 0}
 photo for 2026-w44-d5-straight: nothing for 'ballot box Kenya', used 'Kenya election'
 commons 'Garissa solar power plant Kenya' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
 commons 'Garissa solar power Kenya' for 2026-w44-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
@@ -34,18 +34,18 @@ video 'Aberdare National Park waterfall Kenya' for 2026-w44-d2-kenya-r2: Commons
 video 'Aberdare National Park Kenya' for 2026-w44-d2-kenya-r2: Commons 0 found, none usable {'size': 0, 'licence': 0, 'subject': 0}
 video 'Aberdare National' for 2026-w44-d2-kenya-r2: Commons 11 found, none usable {'size': 5, 'licence': 0, 'subject': 6}
 video 'Aberdare National Park waterfall Kenya' for 2026-w44-d2-kenya-r2: YouTube CC 3TIAA-I8TEs (Wild Springs Adventures)
-video source youtube_cc_video failed for 2026-w44-d2-kenya-r2: yt-dlp is not installed
+video source youtube_cc_video failed for 2026-w44-d2-kenya-r2: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/yt-dlp', '-q', '--no-playlist', '-f', 'bv*[height<=720][ext=mp4]/
 video 'Aberdare National Park waterfall Kenya' for 2026-w44-d2-kenya-r2: Pixabay 20 found, none of the named place
 video 'ballot box Kenya' for 2026-w44-d5-straight: Commons 1 found, none usable {'size': 0, 'licence': 0, 'subject': 1}
 video 'ballot box' for 2026-w44-d5-straight: Commons 8 found, none usable {'size': 3, 'licence': 0, 'subject': 5}
 video 'ballot box Kenya' for 2026-w44-d5-straight: YouTube CC OAfOaBmF3NA (BKK NEWS KENYA TV)
-video source youtube_cc_video failed for 2026-w44-d5-straight: yt-dlp is not installed
+video source youtube_cc_video failed for 2026-w44-d5-straight: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/yt-dlp', '-q', '--no-playlist', '-f', 'bv*[height<=720][ext=mp4]/
 video 'ballot box Kenya' for 2026-w44-d5-straight: Pixabay 20 found, none of the named place
 video 'Garissa solar power plant Kenya' for 2026-w44-d6-kenya: Commons 0 found, none usable {'size': 0, 'licence': 0, 'subject': 0}
 video 'Garissa solar power Kenya' for 2026-w44-d6-kenya: Commons 0 found, none usable {'size': 0, 'licence': 0, 'subject': 0}
 video 'Garissa solar' for 2026-w44-d6-kenya: Commons 0 found, none usable {'size': 0, 'licence': 0, 'subject': 0}
-video 'Garissa solar power plant Kenya' for 2026-w44-d6-kenya: YouTube CC pzD-ylKXKaY (wikipedia tts)
-video source youtube_cc_video failed for 2026-w44-d6-kenya: yt-dlp is not installed
+video 'Garissa solar power plant Kenya' for 2026-w44-d6-kenya: YouTube CC dq2YnW45Vw8 (Stockholm Environment Institute)
+video source youtube_cc_video failed for 2026-w44-d6-kenya: Command '['/opt/hostedtoolcache/Python/3.11.17/x64/bin/yt-dlp', '-q', '--no-playlist', '-f', 'bv*[height<=720][ext=mp4]/
 video 'Garissa solar power plant Kenya' for 2026-w44-d6-kenya: Pixabay 20 found, none of the named place
 TV clip for 2026-w44-d1-money-r2: none matched
 TV clip for 2026-w44-d2-kenya-r2: none matched
