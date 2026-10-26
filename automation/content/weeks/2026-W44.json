@@ -412,19 +412,80 @@
     {
       "id": "2026-w44-hot-1026",
       "template": "sauti",
-      "bg": "usiku",
       "lane": "everyone",
-      "publish_at": "2026-10-26T12:54:00+03:00",
-      "status": "planned",
+      "kicker": "Nairobi residents",
+      "line": "Nairobi Water shuts down piped water supply across parts of the capital for *three days*.",
+      "fact": "The shutdown allows maintenance and pipe interconnections before supply resumes.",
+      "source": "Capital FM News, 2026-10-26",
+      "message": "Nairobi residents face three days of dry taps as Nairobi Water shuts down pipes for maintenance.",
+      "action": "Store clean water for three days and report leaking pipes to Nairobi Water.",
+      "photo_query": "water jerrycans Nairobi",
+      "beats": [
+        "Nairobi Water has shut down piped supply for *three days*.",
+        "The shutdown allows repairs on major *water pipes* across the city.",
+        "Thousands of households must now rely on *expensive water bowsers*.",
+        "Kenyans demand: Nairobi Water restores supply on *schedule*.",
+        "Store enough clean water and *report dry taps* to the county."
+      ],
+      "caption": "Nairobi Water has shut down supply to estates across the capital for three days to carry out pipe repairs.\n\nWhat it means for you: store enough clean water now and boil any water bought from vendors.\n\nHow much is a 20-litre jerrican in your estate today?\n\n#NairobiWater #KenyaOnRecord",
+      "who": "Nairobi City Water and Sewerage Company",
+      "where": "Nairobi",
+      "when": "26 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Households must buy water from vendors and bowsers during the three-day shutdown.",
+      "bg": "usiku",
+      "publish_at": "2026-10-26T13:03:00+03:00",
       "hot": true,
-      "beat": "life"
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Nairobi Water Shutdown to Hit Parts of Nairobi for Three Days",
+          "link": "https://capitalfm.africa/nairobi-water-shutdown-to-hit-parts-of-nairobi-for-three-days/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-26"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 8.0,
+        "note": "Make sure the action points directly to the specific water utility office and includes a concrete phone number or reporting desk."
+      },
+      "drafted_at": "2026-10-26T10:11:44.880438+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-hot-1026-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/nairobi-water-shutdown-to-hit-parts-of-nairobi-for-three-days/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 595,
+      "auto": true,
+      "decided_at": "2026-10-26T10:13:25.738528+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good day and welcome to Kenya on Record. This week, we address a dangerous health myth circulating on our phones, alongside a progress check on our major transport infrastructure.\n\nFirst, public health. A viral message has resurfaced claiming that drinking warm salt water or bathing in brine protects you against Ebola. Let us be unequivocal: salt water does not prevent or cure Ebola. Consuming excessive salt draws water out of your body, causing acute dehydration, dangerous spikes in blood pressure, and potential kidney failure. In severe cases, salt toxicity can be fatal. Legitimate prevention relies on proven hygiene—washing hands frequently with soap and running water, and immediately reporting fever and unusual bleeding to health professionals. Do not substitute medical protocol with online fictions.\n\nMeanwhile, on infrastructure, attention remains focused on Lamu Port. Positioned as Kenya’s premier deep-sea transshipment facility under the LAPSSET corridor, the master plan targets thirty-two deep-water berths capable of handling modern mega-cargo vessels. As public resources flow into northern Kenya’s transport networks, accountability requires that this massive port delivers not just impressive concrete, but transparent trade revenue and sustainable local jobs.\n\nKwa ufupi: Kunywa maji ya chumvi hakukukingi dhidi ya Ebola; badala yake, kunaweza kuharibu figo zako na kuhatarisha maisha. Zingatia usafi na maagizo ya matibabu. Kuhusu miundombinu, ujenzi wa Bandari ya Lamu yenye gati thelathini na mbili zilizopangwa unaendelea ili kuimarisha uchumi wa kitaifa. Kuwa mwangalifu na utetee ukweli.",
-    "voice_note": "Habari zenu. Here is your Kenya on Record weekly accountability brief.\n\nFirst, please warn your family WhatsApp groups: drinking concentrated salt water does not protect against Ebola. This is a hazardous falsehood. High salt intake leads to severe dehydration and kidney damage, not immunity. In an outbreak, stick to established guidance—proper handwashing with soap and running water, and seeking immediate medical attention if someone falls ill.\n\nOn the economic front, we are monitoring Lamu Port. Built as Kenya's premier deep-sea maritime facility, the master plan features 32 planned berths designed to handle the world's largest container ships and open northern trade routes. Our task as citizens is ensuring these mega-investments operate efficiently and create real economic value.\n\nStop the spread of fake health tips, demand delivery on national projects, and always check the record before you share.",
-    "sms": "Usiibiwe: Drinking salt water will not protect you against Ebola. It causes severe dehydration and kidney damage. Trust verified health advisories only.",
-    "reels": "Stop forwarding that message. Drinking salt water does not protect you from Ebola. In fact, it can kill you.\n\nHigh doses of salt do not neutralize a virus. Instead, it triggers acute dehydration and kidney complications. Misinformation during a health scare spreads faster than disease—and it carries real casualties.\n\nProtect your household with verified facts, proper hygiene, and clinical care. Verify before you share. That is Kenya on Record."
+    "radio": "Habari zenu, this is Kenya on Record. Nairobi taps are set to run dry once again. This week, the Nairobi City Water and Sewerage Company announced a three-day complete shutdown of the main supply line to allow for pipeline maintenance. While routine maintenance is an accepted part of utility management, the lived reality for Nairobi residents tells a much heavier story.\n\nFor households across Kasarani, Lang'ata, Dagoretti, and Eastlands, three days of dry taps is not a minor inconvenience. It is a costly disruption. The moment an official shutdown notice is circulated, private water bowsers and vendors instantly inflate their prices, turning an essential public service into an extortionate commodity. Families are forced to dig deep into their pockets just to cook and access basic sanitation.\n\nWe must ask Nairobi Water and the County Government: what safeguards have been instituted to protect citizens from price-gouging cartels during scheduled works? Where are the emergency relief bowsers for public clinics, schools, and informal settlements? Infrastructure maintenance must not continually penalize the taxpayer while enriching private profiteers. Take note of your meter readings before the shutdown begins, monitor what your ward representatives are doing, and hold your utility provider accountable.\n\nKwa ufupi: Kampuni ya Maji ya Nairobi imetangaza kufunga mabomba kwa siku tatu kwa ajili ya ukarabati. Hakikisha umehifadhi maji ya kutosha mapema, piga picha mita yako, na uwe mwangalifu na walanguzi wanaopandisha bei za maji kiholela wakati huu.",
+    "voice_note": "Habari zenu, this is Kenya on Record with a heads-up for everyone in Nairobi. Nairobi Water has announced a three-day maintenance shutdown that will cut supply across several estates. We all know what happens next: the taps dry up and the water bowser business immediately doubles or triples prices. Here is what we need to do. First, harvest and store enough water for domestic use right now before pressure falls off. Second, if you rely on vendors, agree on prices beforehand so you are not exploited in an emergency. Lastly, check and document your water meter reading today before the shutdown starts, so you aren't billed for air when the lines are repressurized. Tuwe macho, share this note with your estate group, and plan ahead.",
+    "sms": "Usiibiwe: Nairobi Water shutdown is here. Store water early and record your meter reading today. Do not let vendors overcharge you for essential public water.",
+    "reels": "Three full days without a single drop from the tap. Nairobi Water calls it scheduled maintenance. But on the ground, it means families paying triple to private water vendors just to survive the week. Maintenance is necessary, but leaving citizens at the mercy of informal cartels is unacceptable. Store your water today, check your meter, and demand proper contingency plans from City Hall."
   },
   "spend_usd": 0.0
 }
