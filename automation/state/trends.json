@@ -1,32 +1,10 @@
 {
-  "fetched": "2026-10-26T19:10:37.827977+00:00",
+  "fetched": "2026-10-26T21:53:19.950068+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "road safety",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "NTSA road safety operation: What will be checked at roadblocks",
-          "url": "https://nation.africa/kenya/news/ntsa-road-safety-operation-what-will-be-checked-at-roadblocks-5646622",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "NTSA Releases Mandatory Road Safety Checklist Targeting Night Drivers",
-          "url": "https://www.kenyans.co.ke/news/128881-ntsa-issues-safety-checklist-psv-drivers-ahead-festive-season",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "NTSA lists 7 things officers will check during new road safety crackdown",
-          "url": "https://peopledaily.digital/news/ntsa-lists-7-things-officers-will-check-during-new-road-safety-crackdown",
-          "source": "People Daily"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "psg vs ol",
-      "traffic": "500+",
+      "traffic": "10000+",
       "news": [
         {
           "title": "Quand se jouera PSG-OL ? La préfecture de police de Paris a écrit à la LFP, qui a dit non à un report",
@@ -39,139 +17,213 @@
           "source": "RMC Sport"
         },
         {
-          "title": "Paris Saint-Germain - Lyon : Pronostic : L'équipe à domicile prolongera-t-elle sa série de victoires ?",
-          "url": "https://www.vietnam.vn/fr/nhan-dinh-paris-saint-germain-vs-lyon-chu-nha-noi-dai-mach-thang-hoa",
-          "source": "Vietnam.vn"
+          "title": "Les compositions pour le match Paris SG - Lyon",
+          "url": "https://www.20minutes.fr/sport/football/ligue-1/4257804-20261026-paris-sg-lyon-composition-officielle-8e-journee-ligue-1-2027",
+          "source": "20 Minutes"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "live",
-      "traffic": "200+",
+      "title": "psg vs olympique lyon standings",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "World Weightlifting Championships 2026: Know schedule, squad and where to watch live streaming in India",
-          "url": "https://www.olympics.com/en/news/world-weightlifting-championships-2026-india-live-streaming-schedule",
-          "source": "www.olympics.com"
+          "title": "Paris Saint-Germain vs Olympique Lyonnais: French Ligue 1 stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/ckpqg5048n7qt",
+          "source": "BBC"
         },
         {
-          "title": "Turkmenistan’s national weightlifting team to compete at the 2026 World Championships in China",
-          "url": "https://turkmenportal.com/en/news/106090-turkmenistans-national-weightlifting-team-to-compete-at-the-2026-world-championships-in-china",
-          "source": "Turkmenportal.com"
+          "title": "How to watch PSG vs. Lyon online for free",
+          "url": "https://mashable.com/entertainment/psg-lyon-ligue-1-2026-live-stream-for-free",
+          "source": "Mashable"
         },
         {
-          "title": "Turkmenistan to compete for medals and Olympic licenses in Ningbo",
-          "url": "https://arzuw.news/en/turkmenistan-to-compete-for-medals-and-olympic-licenses-in-ningbo",
-          "source": "Arzuw news"
+          "title": "PSG-Lyon match moved to Monday amid Paris protests, NFL game",
+          "url": "https://www.espn.com/soccer/story/_/id/50258584/psg-lyon-match-moved-monday-paris-protests-nfl-game",
+          "source": "ESPN"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "dazn ballon d or",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Ballon d'Or 2026 LIVE: Winners, times & updates from ceremony in London",
+          "url": "https://www.bbc.com/sport/football/live/cmd7qz7xrwe3t",
+          "source": "BBC"
+        },
+        {
+          "title": "Ballon d'Or 2026 ceremony LIVE! Harry Kane & Alexia Putellas among favourites for France Football award",
+          "url": "https://www.skysports.com/football/live-blog/13601936/ballon-dor-2026-ceremony-live-harry-kane-and-alexia-putellas-among-favourites-for-france-football-award",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Ballon d’Or 2026 award ceremony LIVE: Winners, reactions and latest news",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/10/26/ballon-dor-2026-award-ceremony-live-winners-reactions-and-latest-news",
+          "source": "Al Jazeera"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "ai bubble",
-      "traffic": "200+",
+      "title": "galatasaray",
+      "traffic": "500+",
       "news": [
         {
-          "title": "AI Funding Angst Stands in Way of Return to Highs: Taking Stock",
-          "url": "https://www.bloomberg.com/news/articles/2026-10-26/ai-funding-angst-stands-in-way-of-return-to-highs-taking-stock",
-          "source": "Bloomberg.com"
+          "title": "Derbi aslanı Victor Osimhen: Fenerbahçe’ye 2 gol daha attı, rekorunu geliştirdi",
+          "url": "https://velev.press/spor/derbi-aslani-victor-osimhen-fenerbahceye-2-gol-daha-atti-rekorunu-gelistirdi/",
+          "source": "velev"
         },
         {
-          "title": "High Growth Investing Newsletter #365",
-          "url": "https://hightechinvesting.substack.com/p/high-growth-investing-newsletter-5e6",
-          "source": "Stefan Waldhauser | Substack"
+          "title": "Fenerbahçe-Galatasaray maçı biter bitmez sahada kavga çıktı",
+          "url": "https://tr.euronews.com/2026/10/26/fenerbahce-galatasaray-maci-biter-bitmez-saha-karisti",
+          "source": "Euronews.com"
         },
         {
-          "title": "The AI Selloff Is a Chance to Shift to Value Investing",
-          "url": "https://www.barrons.com/articles/ai-selloff-investor-shift-value-investing-c060b5f6",
-          "source": "Barron's"
+          "title": "Galatasaray'dan Fenerbahçe'ye olay gönderme: İsmail Kartal, Jorge Jesus, Mourinho ve Tedesco...",
+          "url": "https://www.gzt.com/spor/galatasaraydan-fenerbahceye-olay-gonderme-ismail-kartal-jorge-jesus-mourinho-ve-tedesco-paylasimi-4273066",
+          "source": "GZT"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "nicco movers psv licence suspension appeal",
+      "title": "unai simon",
       "traffic": "200+",
       "news": [
         {
-          "title": "Nicco Movers allowed back on the road pending court hearing over NTSA ban",
-          "url": "https://nation.africa/kenya/news/nicco-movers-back-on-road-pending-court-hearing-ntsa-ban--5645526",
-          "source": "Daily Nation"
+          "title": "Balón de Oro 2026 en directo | Unai Simón y Cata Coll ganan el premio al mejor portero del año",
+          "url": "https://elpais.com/deportes/futbol/2026-10-26/premio-balon-de-oro-en-directo-la-gala-en-vivo.html",
+          "source": "EL PAÍS"
         },
         {
-          "title": "Nicco Movers seeks partial operations resumption for NTSA-verified vehicles",
-          "url": "https://citizen.digital/article/nicco-movers-seeks-partial-operations-resumption-for-ntsa-verified-vehicles-n392745",
+          "title": "La dura competencia que tiene Vozinha para quedarse con el premio Lev Yashin en la ceremonia del Balón de Oro",
+          "url": "https://www.latercera.com/el-deportivo/noticia/la-dura-competencia-que-tiene-vozinha-para-quedarse-con-el-premio-lev-yashin-en-la-ceremonia-del-balon-de-oro/",
+          "source": "La Tercera"
+        },
+        {
+          "title": "El Athletic presume de sus porteros históricos antes de la gran cita para Unai Simón",
+          "url": "https://www.elcorreo.com/athletic/athletic-presume-porteros-historicos-gran-cita-unai-20261026201334-nt.html",
+          "source": "El Correo"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "sevilla",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Sevilla - Osasuna, las estadísticas del partido",
+          "url": "https://www.abc.es/deportes/orgullodenervion/noticias-sevilla-fc/sevilla-osasuna-estadisticas-partido-20261026212230-dis.html",
+          "source": "ABC"
+        },
+        {
+          "title": "Sevilla - Osasuna, en directo: El Sevilla marca el segundo al contragolpe",
+          "url": "https://www.diariodenavarra.es/noticias/deportes/futbol/osasuna/2026/10/26/sevilla-osasuna-directo-test-altura-nuevo-osasuna-840169-32.html",
+          "source": "Diario de Navarra"
+        },
+        {
+          "title": "13:00H | 26 OCTUBRE 2026 | DEPORTES COPE EN SEVILLA",
+          "url": "https://www.cope.es/emisoras/andalucia/sevilla-provincia/sevilla/podcast/episodios/13-00h-26-octubre-2026-deportes-cope-sevilla-20261026_3462945.html",
+          "source": "COPE"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "al qadsiah vs al sadd",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Afif’s 30-yard thunderbolt not enough as Quinones salvages Al-Qadsiah draw",
+          "url": "https://www.arabnews.com/football/afifs-30-yard-thunderbolt-not-enough-as-quinones-salvages-al-qadsiah-draw-3008417",
+          "source": "Arab News"
+        },
+        {
+          "title": "Sadd draw with Qadsiah to earn first point as Gharafa suffer third straight loss",
+          "url": "https://www.gulf-times.com/article/736793/sport/football/sadd-draw-with-qadsiah-to-earn-first-point-as-gharafa-suffer-third-straight-loss",
+          "source": "Gulf Times"
+        },
+        {
+          "title": "Al Sadd prepare to face Al Qadsiah in the AFC Champions League",
+          "url": "https://www.news.com.au/sport/al-sadd-prepare-to-face-al-qadsiah-in-the-afc-champions-league/video/5e7f87d2ea0c6b22ce71ce70de106b72",
+          "source": "News.com.au"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "dazn tv",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "San Antonio Spurs Announce Regional Broadcast Schedule for 2026-27 Season",
+          "url": "https://www.nba.com/spurs/news/san-antonio-spurs-announce-regional-broadcast-schedule-for-2026-27-season",
+          "source": "NBA.com"
+        },
+        {
+          "title": "Spurs basketball coming to CW SA with 22 games, beginning Tuesday against Kings",
+          "url": "https://foxsanantonio.com/sports/san-antonio-spurs-basketball-is-coming-to-cwsa",
+          "source": "KABB"
+        },
+        {
+          "title": "Spurs net local TV deal to expand fan access",
+          "url": "https://www.bizjournals.com/sanantonio/news/2026/10/26/spurs-net-local-tv-deal-to-expand-fan-access.html",
+          "source": "The Business Journals"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mercy masika",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Mercy Masika’s ‘Becoming a wife’ masterclass draws mixed reactions",
+          "url": "https://citizen.digital/article/mercy-masikas-becoming-a-wife-masterclass-draws-mixed-reactions-n392772",
           "source": "Citizen Digital"
         },
         {
-          "title": "Temporary relief: Nicco Movers allowed to resume operations after suspension",
-          "url": "https://www.tuko.co.ke/kenya/644329-kmtc-students-death-high-court-nicco-movers-lifeline-159-vehicle-shutdown/",
-          "source": "Tuko News"
+          "title": "Kate Actress Weighs in on Mercy Masika’s Marriage Master Class as Akothee Backs Initiative",
+          "url": "https://www.mpasho.co.ke/entertainment/2026-10-26-kate-actress-weighs-in-on-mercy-masikas-marriage-class",
+          "source": "Mpasho"
+        },
+        {
+          "title": "Nairobi Women Push Back Against Mercy Masika’s Marriage Masterclasses",
+          "url": "https://thekenyatimes.com/latest-kenya-times-news/nairobi-mercy-masika/",
+          "source": "The Kenya Times"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
-      "title": "court",
+      "title": "copenhagen",
       "traffic": "100+",
       "news": [
         {
-          "title": "Jefferson Family Court judge to be suspended for 30 days",
-          "url": "https://kentuckylantern.com/2026/10/26/jefferson-family-court-judge-to-be-suspended-for-30-days/",
-          "source": "Kentucky Lantern"
+          "title": "Meet the sommelier: Lasse Peder Nielsen of Copenhagen's Restaurant Koan",
+          "url": "https://www.decanter.com/wine/meet-the-sommelier-lasse-peder-nielsen-of-copenhagens-restaurant-koan/",
+          "source": "Decanter"
         },
         {
-          "title": "Louisville family court judge suspended over courtroom misconduct",
-          "url": "https://www.wlky.com/article/louisville-family-court-judge-suspended-lauren-ogden/74250425",
-          "source": "WLKY"
+          "title": "Security Check Meltdown At Kastrup Airport (CPH) In Copenhagen With Hours-Long Lines & Missed Flights",
+          "url": "https://loyaltylobby.com/2026/10/23/security-check-meltdown-at-kastrup-airport-cph-in-copenhagen-with-hours-long-lines-missed-flights/",
+          "source": "LoyaltyLobby"
         },
         {
-          "title": "Texting during court, ignoring orders: KY judge suspended without pay for conduct issues",
-          "url": "https://www.kentucky.com/news/local/crime/article317781920.html",
-          "source": "Lexington Herald Leader"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "ballon d'or live stream",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Kurz vor Ballon-d’Or-Gala: Matthäus stellt Harry Kane auf eine Stufe mit einer Bayern-Legende",
-          "url": "https://www.absolutfussball.com/deutschland/fc-bayern-muenchen/matthaeus-adelt-bayern-star-kane-mit-beckenbauer-vergleich-94559154.html",
-          "source": "Absolut Fussball"
-        },
-        {
-          "title": "Vor der Kür: Artikel über Ballon-d'Or-Sieger online",
-          "url": "https://www.focusplus.de/gesellschaft/vor-kuer-artikel-ueber-ballon-dor-sieger-online-19120",
-          "source": "FOCUS+"
-        },
-        {
-          "title": "(k+) Messi macht und nimmt Kane Hoffnung: Wer in WM-Jahren warum den Ballon d'Or gewann",
-          "url": "https://www.kicker.ch/messi-macht-und-nimmt-kane-hoffnung-wer-in-wm-jahren-warum-den-ballon-d-or-gewann-1261690/artikel",
-          "source": "https://www.kicker.ch/"
+          "title": "Copenhagen Airport faces major security queues after new screening requirements",
+          "url": "https://www.aviation24.be/airports/copenhagen/faces-major-security-queues-after-new-screening-requirements/",
+          "source": "Aviation24.be"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "kjsea exams",
-      "why": "unsafe: 'missing'"
-    },
-    {
-      "title": "al-nassr vs al wasl",
-      "why": "unsafe: 'fire'"
-    },
-    {
-      "title": "trabzonspor fc",
-      "why": "unsafe: 'betting'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
