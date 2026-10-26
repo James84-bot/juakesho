@@ -57,7 +57,7 @@
         "source": "https://www.the-star.co.ke/news/2026-10-14-epra-raises-petrol-by-sh1293",
         "outlet": "The Star"
       },
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -89,7 +89,11 @@
           "new": 219.87
         }
       ],
-      "decided_at": "2026-10-25T23:44:32.697211+03:00"
+      "decided_at": "2026-10-25T23:44:32.697211+03:00",
+      "published_at": "2026-10-26T07:32:55.590801+03:00",
+      "ig_id": "18098310659412576",
+      "fb_id": "1137952995756022",
+      "story_id": "18012565337768464"
     },
     {
       "id": "2026-w44-d2-kenya-r2",
