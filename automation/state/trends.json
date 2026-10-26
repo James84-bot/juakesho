@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-26T11:32:45.953728+00:00",
+  "fetched": "2026-10-26T12:31:08.168440+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -17,9 +17,9 @@
           "source": "Kenya Insights"
         },
         {
-          "title": "Saini Wants a Bank: ABC's Own Audited Books Show a Lender Short of Capital, Buried in Bad Loans and Waiting for a Rescuer",
-          "url": "https://kenyainsights.com/saini-wants-a-bank-abcs-own-audited-books-show-a-lender-short-of-capital-buried-in-bad-loans-and-waiting-for-a-rescuer",
-          "source": "Kenya Insights"
+          "title": "Kenyan tycoon Jayesh Saini cleared to take over ABC Bank",
+          "url": "https://www.billionaires.africa/2026/10/26/kenyan-hospital-tycoon-jayesh-saini-wins-approval-to-take-over-abc-bank/",
+          "source": "Billionaires.Africa"
         }
       ],
       "civic": true
@@ -49,6 +49,28 @@
     },
     {
       "geo": "KE",
+      "title": "lecturers strike update",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Uasu turns to MPs to end ongoing strike",
+          "url": "https://nation.africa/kenya/news/education/uasu-turns-to-mps-to-end-ongoing-strike--5645300",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Ogamba: We’re in talks with Treasury over new offer for striking lecturers",
+          "url": "https://www.the-star.co.ke/news/2026-10-25-ogamba-talks-with-treasury-over-dons-strike-ongoing",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Honour CBA with lecturers for genuine varsity education",
+          "url": "https://www.standardmedia.co.ke/barrack-muluka/article/2001560790/honour-cba-with-lecturers-for-genuine-varsity-education",
+          "source": "The Standard"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "quickmart ipo local investor share reduction",
       "traffic": "500+",
       "news": [
@@ -71,26 +93,25 @@
     },
     {
       "geo": "KE",
-      "title": "psg vs lyon prediction",
+      "title": "biogas",
       "traffic": "200+",
       "news": [
         {
-          "title": "Ligue 1: PSG v Lyon at Parc des Princes moved to Monday as Paris prepares for another weekend of protests",
-          "url": "https://www.bbc.com/sport/football/articles/cw8rz3eyn26po",
-          "source": "BBC"
+          "title": "Foresight Environmental Infrastructure makes ‘positive’ £104m disposal",
+          "url": "https://www.investmentweek.co.uk/news/4537828/foresight-environmental-infrastructure-makes-positive-104m-disposal",
+          "source": "Investment Week"
         },
         {
-          "title": "Luis Enrique brushes off Ballon d'Or clash as PSG's top-of-the-table showdown with Lyon is moved to Monday",
-          "url": "https://www.goal.com/en-ke/news/luis-enrique-ballon-d-or-psg-lyon/blta3c350487473915b",
-          "source": "Goal.com"
+          "title": "Foresight Environmental Sells Remaining 49% Interest In Six Anaerobic Digestion Facilities For £104 Mln",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_TUC122WCH:0-foresight-environmental-sells-remaining-49-interest-in-six-anaerobic-digestion-facilities-for-104-mln/",
+          "source": "TradingView"
         },
         {
-          "title": "Tip of the Day: Ferran Torres to star for PSG",
-          "url": "https://www.101greatgoals.com/football/ligue-1/tip-of-the-day-ferran-torres-psg/",
-          "source": "101 Great Goals"
+          "title": "Foresight Environmental Infrastructure sells remaining anaerobic digestion stake for £104m",
+          "url": "https://uk.finance.yahoo.com/news/foresight-environmental-infrastructure-sells-remaining-073600727.html",
+          "source": "Yahoo Finance UK"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
@@ -113,28 +134,6 @@
           "source": "Friends of Football"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "lecturers strike update",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Uasu turns to MPs to end ongoing strike",
-          "url": "https://nation.africa/kenya/news/education/uasu-turns-to-mps-to-end-ongoing-strike--5645300",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Ogamba: We’re in talks with Treasury over new offer for striking lecturers",
-          "url": "https://www.the-star.co.ke/news/2026-10-25-ogamba-talks-with-treasury-over-dons-strike-ongoing",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Honour CBA with lecturers for genuine varsity education",
-          "url": "https://www.standardmedia.co.ke/barrack-muluka/article/2001560790/honour-cba-with-lecturers-for-genuine-varsity-education",
-          "source": "The Standard"
-        }
-      ]
     }
   ],
   "dropped": [
@@ -147,12 +146,12 @@
       "why": "unsafe: 'Missing'"
     },
     {
-      "title": "sevilla vs osasuna",
+      "title": "galatasaray vs fenerbahçe",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "kenyans",
-      "why": "unsafe: 'Dies'"
+      "title": "sevilla vs osasuna",
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
