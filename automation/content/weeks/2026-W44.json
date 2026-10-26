@@ -408,6 +408,16 @@
       "photo_source": "https://capitalfm.africa/president-ruto-defends-dangotes-25-kpc-stake-amid-public-outcry/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
       "reel": true,
       "decided_at": "2026-10-25T23:44:31.260890+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1026",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-10-26T12:54:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "beat": "life"
     }
   ],
   "scripts": {
