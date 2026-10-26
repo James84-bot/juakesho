@@ -496,6 +496,46 @@
       "avoid": [
         "Nairobi residents face three days of dry taps as Nairobi Water shuts down pipes for maintenance."
       ]
+    },
+    {
+      "id": "2026-w44-hot-1026b1432",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-10-26T14:52:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "breaking": {
+        "title": "Linda Mwananchi condemns abduction of Tanzanian activist Twaha Mwaipaya in Kenya",
+        "outlets": [
+          "Capital FM News",
+          "Citizen Digital",
+          "People Daily"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Linda Mwananchi Opposes Abduction of Tanzanian Activist Twaha Mwaipaya",
+          "link": "https://capitalfm.africa/linda-mwananchi-opposes-abduction-of-tanzanian-activist-twaha-mwaipaya/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-26"
+        },
+        {
+          "outlet": "Citizen Digital",
+          "title": "Linda Mwananchi condemns alleged abduction of Tanzanian activist Twaha Mwaipaya",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPTGdja2NVLThycFNuSTFPZ1BVNm1hZkxwd1U4dnZfSFpUbERHNUpiYnIzTVFEVy00VjNyZ2hUWnFjb0p2Skhha0hvWlYwUkhYQ2VjOUM2MEVBd2ZwU0ZiakFHYmNoYUlGbGNWS01ydXVINTdacjNudWlLY3JHQU9vb2xjMUo0Q2NILWZSOXp6WmtHenlDZDVGZ2JrYS1HZjhESnVnMXFJdWdYMlhsTGdMbko1bzd5QzZuYTRv?oc=5",
+          "published": "2026-10-26"
+        },
+        {
+          "outlet": "People Daily",
+          "title": "Linda Mwananchi condemns abduction of Tanzanian activist Twaha Mwaipaya in Kenya",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQmlOaUo2WTNTUE56bk05Q0YyOFdiM2lKcTFHMks5ZUx1U1BtRi0zc3NBXzg0Mi1GZWRLQ2tRWW1LcHhmT0tiazduMVROLVNJRk1hZ0RkdTdQT1dhX2gzOVJMbklZQmFkSU5wcjVGMHdyX0w4Y1FXSlRUeVhwMFJmd3I0SzVlSjlsQ1RUSXo0TTZRUGRpNW51Y090cVBSUWhNTDA5d2hERUZQclNMZENBYXhXX3E1UTRaZ0hRbVpNUVQ0Zw?oc=5",
+          "published": "2026-10-26"
+        }
+      ],
+      "avoid": [
+        "Nairobi residents face three days of dry taps as Nairobi Water shuts down pipes for maintenance."
+      ]
     }
   ],
   "scripts": {
