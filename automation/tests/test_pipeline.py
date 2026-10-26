@@ -1437,3 +1437,26 @@ class ReelPublishTests(TempWeeks):
             with self.assertRaises(RuntimeError) as ctx:
                 REAL_PREFLIGHT("https://x.test/a.mp4", "video")
         self.assertIn("text/plain", str(ctx.exception))
+
+
+class WriterNetworkDrops(unittest.TestCase):
+    def test_a_dropped_connection_is_retried_not_fatal(self):
+        import http.client
+        import draft
+        calls = []
+
+        class Resp:
+            def __enter__(self): return self
+            def __exit__(self, *a): return False
+            def read(self): return json.dumps({"content": [{"type": "text", "text": "ok"}], "usage": {}}).encode()
+
+        def fake_open(req, timeout=0):
+            calls.append(1)
+            if len(calls) == 1:
+                raise http.client.RemoteDisconnected("Remote end closed connection without response")
+            return Resp()
+        with mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "k"}), mock.patch.object(draft.urllib.request, "urlopen", fake_open), \
+                mock.patch.object(draft.time, "sleep", lambda s: None):
+            out = draft._anthropic("s", "u")
+        self.assertEqual(len(calls), 2)
+        self.assertEqual(out, "ok")

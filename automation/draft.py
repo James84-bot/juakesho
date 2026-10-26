@@ -12,6 +12,7 @@ one repair pass with the exact errors. Anything still failing is marked
 """
 from __future__ import annotations
 
+import http.client
 import json
 import os
 import re
@@ -760,6 +761,10 @@ def provider() -> str:
     return "gemini"   # fails with a clear "set GEMINI_API_KEY" message
 
 
+# a dropped connection (RemoteDisconnected is a ConnectionResetError) is as temporary as a timeout
+NET_ERRORS = (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException)
+
+
 def call_claude(system: str, user: str, max_tokens: int = 12000, model: str | None = None) -> str:
     """The one way the system talks to an AI (named for history; routes to the chosen provider)."""
     if provider() == "gemini":
@@ -825,7 +830,7 @@ def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
                 if e.code in (429, 500, 502, 503, 504) or (e.code in (400, 404) and "model" in detail.lower()):
                     break   # overloaded, out of free quota or not available: try the next model
                 raise last from e
-            except (urllib.error.URLError, TimeoutError) as e:
+            except NET_ERRORS as e:
                 if attempt < 3:
                     time.sleep(15 * 2 ** attempt)
                     continue
@@ -861,7 +866,7 @@ def _anthropic(system: str, user: str, max_tokens: int = 12000, model: str | Non
                 time.sleep(float(e.headers.get("retry-after") or 0) or 15 * 2 ** attempt)
                 continue
             raise RuntimeError(f"Anthropic API {e.code}: {detail}") from e
-        except (urllib.error.URLError, TimeoutError) as e:
+        except NET_ERRORS as e:
             if attempt < 3:
                 time.sleep(15 * 2 ** attempt)
                 continue
