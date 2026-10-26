@@ -1,54 +1,10 @@
 {
-  "fetched": "2026-10-26T17:40:15.460511+00:00",
+  "fetched": "2026-10-26T19:10:37.827977+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "xabi alonso",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Xabi Alonso se pronuncia sobre su salida del Real Madrid: \"Acabó antes de lo previsto...\"",
-          "url": "https://www.sport.es/es/noticias/real-madrid/xabi-alonso-pronuncia-salida-real-135706484",
-          "source": "SPORT"
-        },
-        {
-          "title": "«No miro atrás con rencor»: Xabi Alonso se sincera sobre su «prematuro» despido del Real Madrid y el ex del Liverpool revela por qué decidió fichar por el Chelsea",
-          "url": "https://es-us.noticias.yahoo.com/deportes/miro-atr%C3%A1s-rencor-xabi-alonso-082231277.html",
-          "source": "Yahoo"
-        },
-        {
-          "title": "Xabi Alonso reconoce su frustración por su despido del Real Madrid: «No miro atrás con enfado»",
-          "url": "https://okdiario.com/diariomadridista/real-madrid/xabi-alonso-reconoce-frustracion-despido-del-real-madrid-no-miro-atras-enfado-671337",
-          "source": "OkDiario"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "al-nassr vs al wasl",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "\"An ambiguous decision with no regulation\": legal expert attacks the Asian Football Confederation and opens the file on the \"injustice\" against Saudi clubs",
-          "url": "https://www.goal.com/en/news/an-ambiguous-decision-with-no-regulation-legal-expert-attacks-the-afc-and-opens-the-file-on-the-injustice-against-saudi-clubs/bltaf6c0ec1a4d0b316",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Today’s match schedule and broadcast channels: Al Wasl faces Al Nasr, while Al Ain clashes with Tractor in the \"Elite\" Champions League",
-          "url": "https://www.voiceofemirates.com/en/sport/2026/10/26/todays-match-schedule-and-broadcast-channels-al-wasl-faces-al-nasr-while-al-ain-clashes-with-tractor-in-the-elite-champions-league/",
-          "source": "صوت الإمارات"
-        },
-        {
-          "title": "Al-Nassr vs Al-Wasl - AFC Champions League - October 26, 2026 - Match Guide, Data Analysis, Standings - Football",
-          "url": "https://www.sportsmole.co.uk/football/afc-champions-league/al-nassr-vs-al-wasl_game_260489.html",
-          "source": "Sports Mole"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "road safety",
-      "traffic": "200+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "NTSA road safety operation: What will be checked at roadblocks",
@@ -69,74 +25,53 @@
     },
     {
       "geo": "KE",
-      "title": "besiktas",
-      "traffic": "200+",
+      "title": "psg vs ol",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Beşiktaş ile Başakşehir ilk yarıda gol sesi çıkarmadı",
-          "url": "https://www.aksiyon.com.tr/besiktas-ile-basaksehir-ilk-yarida-gol-sesi-cikarmadi-381991",
-          "source": "Aksiyon.com.TR"
+          "title": "Quand se jouera PSG-OL ? La préfecture de police de Paris a écrit à la LFP, qui a dit non à un report",
+          "url": "https://www.lequipe.fr/Football/Actualites/Quand-se-jouera-psg-ol-la-prefecture-de-police-de-paris-a-ecrit-a-la-lfp-qui-a-dit-non-a-un-report/1737866",
+          "source": "L'Équipe"
         },
         {
-          "title": "﻿Nuri Şahin'den ilk 11'de 2 değişiklik",
-          "url": "https://www.star.com.tr/spor/nuri-sahinden-ilk-11de-2-degisiklik-haber-2049277/",
-          "source": "STAR - Haberler"
+          "title": "INFO RMC SPORT. Pourquoi les autorités envisagent un report de la rencontre PSG-OL",
+          "url": "https://rmcsport.bfmtv.com/football/ligue-1/info-rmc-sport-pourquoi-les-autorites-envisagent-un-report-de-la-rencontre-psg-ol_AV-202610210739.html",
+          "source": "RMC Sport"
         },
         {
-          "title": "BJK-BAŞAKŞEHİR MAÇI | Beşiktaş-Başakşehir maçı bu akşam saat kaçta hangi kanalda canlı yayınlanacak? Beşiktaş-Başakşehir maçı canlı yayın bilgisi",
-          "url": "https://www.milliyet.com.tr/galeri/bjk-basaksehir-maci-ilk-11ler-besiktas-basaksehir-maci-bu-aksam-saat-kacta-hangi-kanalda-canli-yayinlanacak-besiktas-basaksehir-7687593",
-          "source": "Milliyet"
+          "title": "Paris Saint-Germain - Lyon : Pronostic : L'équipe à domicile prolongera-t-elle sa série de victoires ?",
+          "url": "https://www.vietnam.vn/fr/nhan-dinh-paris-saint-germain-vs-lyon-chu-nha-noi-dai-mach-thang-hoa",
+          "source": "Vietnam.vn"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
-      "title": "trabzonspor",
+      "title": "live",
       "traffic": "200+",
       "news": [
         {
-          "title": "Rizespor-Trabzonspor ve Beşiktaş-Başakşehir İlk 11’leri Açıklandı",
-          "url": "https://www.bolgegundemi.com/video/rizespor-trabzonspor-ve-besiktas-basaksehir-ilk-11leri-aciklandi-220793.html",
-          "source": "Bölge Gündemi"
+          "title": "World Weightlifting Championships 2026: Know schedule, squad and where to watch live streaming in India",
+          "url": "https://www.olympics.com/en/news/world-weightlifting-championships-2026-india-live-streaming-schedule",
+          "source": "www.olympics.com"
         },
         {
-          "title": "Thomas Reis: \"Bu onları daha tehlikeli hale getiriyor\"",
-          "url": "https://beinsports.com.tr/haber/thomas-reis-bu-onlari-daha-tehlikeli-hale-getiriyor",
-          "source": "beinsports.com.tr"
+          "title": "Turkmenistan’s national weightlifting team to compete at the 2026 World Championships in China",
+          "url": "https://turkmenportal.com/en/news/106090-turkmenistans-national-weightlifting-team-to-compete-at-the-2026-world-championships-in-china",
+          "source": "Turkmenportal.com"
         },
         {
-          "title": "Trabzonspor'da Thomas Reis'tan 7 değişiklik! - Trabzonspor Haberler - HT Spor",
-          "url": "https://www.haberturk.com/spor/trabzonspor-da-thomas-reis-tan-7-degisiklik-3922722",
-          "source": "Habertürk"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "dazn live",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Fury vs Joshua: Tyson Fury vows to fight on but says Anthony Joshua is having 'final payday' in December 11 showdown",
-          "url": "https://www.skysports.com/boxing/news/13602988/tyson-fury-vows-to-fight-on-but-says-anthony-joshua-is-having-his-final-payday-in-their-december-11-stadium-showdown",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Tyson Fury drops ‘final’ verdict on Anthony Joshua’s future ahead of mega fight",
-          "url": "https://sports.yahoo.com/articles/tyson-fury-drops-final-verdict-141451699.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Eddie Hearn weighs in on potential Daniel Dubois vs Tyson Fury fight: \"Look what Usyk did to him\"",
-          "url": "https://boxingnewsonline.net/news/eddie-hearn-on-fury-chances-vs-dubois/",
-          "source": "Boxing News Online"
+          "title": "Turkmenistan to compete for medals and Olympic licenses in Ningbo",
+          "url": "https://arzuw.news/en/turkmenistan-to-compete-for-medals-and-olympic-licenses-in-ningbo",
+          "source": "Arzuw news"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "ai bubble",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "AI Funding Angst Stands in Way of Return to Highs: Taking Stock",
@@ -157,71 +92,86 @@
     },
     {
       "geo": "KE",
-      "title": "moon",
-      "traffic": "100+",
+      "title": "nicco movers psv licence suspension appeal",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Japanese weather satellite snaps Moon beyond Earth’s horizon",
-          "url": "https://www.ttownmedia.com/news/national/japanese-weather-satellite-snaps-moon-beyond-earth-s-horizon/article_84b3589a-05a3-5250-883d-b6bf2f7a0248.html",
-          "source": "ttownmedia.com"
+          "title": "Nicco Movers allowed back on the road pending court hearing over NTSA ban",
+          "url": "https://nation.africa/kenya/news/nicco-movers-back-on-road-pending-court-hearing-ntsa-ban--5645526",
+          "source": "Daily Nation"
         },
         {
-          "title": "Japanese weather satellite snaps Moon beyond Earth’s horizon",
-          "url": "https://www.thepress.net/news/national/japanese-weather-satellite-snaps-moon-beyond-earth-s-horizon/article_481ea533-4277-5a7e-a9ef-52c6bfe55a99.html",
-          "source": "thepress.net"
+          "title": "Nicco Movers seeks partial operations resumption for NTSA-verified vehicles",
+          "url": "https://citizen.digital/article/nicco-movers-seeks-partial-operations-resumption-for-ntsa-verified-vehicles-n392745",
+          "source": "Citizen Digital"
         },
         {
-          "title": "Japanese weather satellite snaps Moon beyond Earth’s horizon",
-          "url": "https://themercury.com/news/national/japanese-weather-satellite-snaps-moon-beyond-earth-s-horizon/article_0933d2da-9f58-5313-bc94-93db93833918.html",
-          "source": "themercury.com"
+          "title": "Temporary relief: Nicco Movers allowed to resume operations after suspension",
+          "url": "https://www.tuko.co.ke/kenya/644329-kmtc-students-death-high-court-nicco-movers-lifeline-159-vehicle-shutdown/",
+          "source": "Tuko News"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
-      "title": "beşiktaş vs başakşehir",
+      "title": "court",
       "traffic": "100+",
       "news": [
         {
-          "title": "LIVE: Beşiktaş vs İstanbul Başakşehir LIVE on beIN SPORTS",
-          "url": "https://www.beinsports.com/en-us/soccer/sper-lig/articles/live-be-ikta-vs-i-stanbul-ba-ak-ehir-live-on-bein-sports-2026-10-25",
-          "source": "beIN SPORTS"
+          "title": "Jefferson Family Court judge to be suspended for 30 days",
+          "url": "https://kentuckylantern.com/2026/10/26/jefferson-family-court-judge-to-be-suspended-for-30-days/",
+          "source": "Kentucky Lantern"
         },
         {
-          "title": "Beşiktaş ile Başakşehir ilk yarıda gol sesi çıkarmadı",
-          "url": "https://www.aksiyon.com.tr/besiktas-ile-basaksehir-ilk-yarida-gol-sesi-cikarmadi-381991",
-          "source": "Aksiyon.com.TR"
+          "title": "Louisville family court judge suspended over courtroom misconduct",
+          "url": "https://www.wlky.com/article/louisville-family-court-judge-suspended-lauren-ogden/74250425",
+          "source": "WLKY"
         },
         {
-          "title": "﻿Nuri Şahin'den ilk 11'de 2 değişiklik",
-          "url": "https://www.star.com.tr/spor/nuri-sahinden-ilk-11de-2-degisiklik-haber-2049277/",
-          "source": "STAR - Haberler"
+          "title": "Texting during court, ignoring orders: KY judge suspended without pay for conduct issues",
+          "url": "https://www.kentucky.com/news/local/crime/article317781920.html",
+          "source": "Lexington Herald Leader"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
-      "title": "balon de oro 2026 ranking",
+      "title": "ballon d'or live stream",
       "traffic": "100+",
       "news": [
         {
-          "title": "El Balón de Oro se entrega en Londres con Kane y Yamal como favoritos",
-          "url": "https://www.vssports.com.py/versus/2026/10/26/el-balon-de-oro-se-entrega-en-londres-con-kane-y-yamal-como-favoritos",
-          "source": "VS Sports"
+          "title": "Kurz vor Ballon-d’Or-Gala: Matthäus stellt Harry Kane auf eine Stufe mit einer Bayern-Legende",
+          "url": "https://www.absolutfussball.com/deutschland/fc-bayern-muenchen/matthaeus-adelt-bayern-star-kane-mit-beckenbauer-vergleich-94559154.html",
+          "source": "Absolut Fussball"
         },
         {
-          "title": "Los medios de comunicación occidentales descubren una anomalía y revelan quién es el \"ganador del Balón de Oro\".",
-          "url": "https://www.vietnam.vn/es/truyen-thong-phuong-tay-phat-hien-diem-bat-thuong-tiet-lo-nguoi-thang-qua-bong-vang",
-          "source": "Vietnam.vn"
+          "title": "Vor der Kür: Artikel über Ballon-d'Or-Sieger online",
+          "url": "https://www.focusplus.de/gesellschaft/vor-kuer-artikel-ueber-ballon-dor-sieger-online-19120",
+          "source": "FOCUS+"
         },
         {
-          "title": "¿Quién vota por el Balón de Oro? El representante de Inglaterra y su historial de votación",
-          "url": "https://www.es.themirror.com/deportes/balon-de-oro-ganador-quien-2084623",
-          "source": "The Mirror US en Español"
+          "title": "(k+) Messi macht und nimmt Kane Hoffnung: Wer in WM-Jahren warum den Ballon d'Or gewann",
+          "url": "https://www.kicker.ch/messi-macht-und-nimmt-kane-hoffnung-wer-in-wm-jahren-warum-den-ballon-d-or-gewann-1261690/artikel",
+          "source": "https://www.kicker.ch/"
         }
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "kjsea exams",
+      "why": "unsafe: 'missing'"
+    },
+    {
+      "title": "al-nassr vs al wasl",
+      "why": "unsafe: 'fire'"
+    },
+    {
+      "title": "trabzonspor fc",
+      "why": "unsafe: 'betting'"
+    }
+  ],
   "errors": {}
 }
