@@ -1,27 +1,73 @@
 {
-  "fetched": "2026-10-26T07:03:14.223940+00:00",
+  "fetched": "2026-10-26T09:20:50.643103+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "kenyans",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "CS Duale: Kenya will be free from Ebola in 42 days",
-          "url": "https://citizen.digital/article/cs-duale-kenya-will-be-free-from-ebola-in-42-days-n392727",
-          "source": "Citizen Digital"
+          "title": "Quickmart cuts Kenyans shares in IPO, global funds splash Sh7.1bn",
+          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/quickmart-cut-kenyans-shares-in-ipo-global-funds-splash-sh7-1bn-5645456",
+          "source": "Business Daily"
         },
         {
-          "title": "Duale Reveals When Kenya Could Be Declared Ebola-Free",
-          "url": "https://www.kenyans.co.ke/news/128863-cs-duale-says-kenya-could-be-ebola-free-21-days-if-no-new-cases-emerge",
+          "title": "Trade and Financial Services Round-Up",
+          "url": "https://vellum.co.ke/trade-and-financial-services-round-up-75/",
+          "source": "Vellum Kenya"
+        },
+        {
+          "title": "Kenya’s Quickmart IPO Draws Two More Cornerstone Investors",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-25/kenya-s-quickmart-ipo-draws-two-more-cornerstone-investors",
+          "source": "Bloomberg.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "building",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Sakaja Issues 6-Hour Ultimatum to Babu Owino, Threatens Legal Action",
+          "url": "https://www.kenyans.co.ke/news/128858-sakaja-threatens-legal-action-against-babu-owino-over-eastleigh-approval-dispute",
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "Duale: Kenya to be declared Ebola-free after 42 days",
-          "url": "https://www.the-star.co.ke/news/2026-10-26-duale-kenya-to-be-declared-ebola-free-after-42-days",
-          "source": "www.the-star.co.ke"
+          "title": "Two survivors rescued as police launch manhunt for Eastleigh building owner",
+          "url": "https://nation.africa/kenya/counties/nairobi/two-survivors-rescued-police-manhunt-eastleigh-building-owner-5644286",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Architects demand release of past building collapse reports",
+          "url": "https://www.standardmedia.co.ke/nairobi/article/2001560845/architects-demand-release-of-past-building-collapse-reports",
+          "source": "The Standard"
         }
-      ]
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "abc bank",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Competition Authority approves tycoon's takeover of ABC Bank",
+          "url": "https://www.standardmedia.co.ke/business/business/article/2001560858/competition-authority-approves-tycoons-takeover-of-abc-bank",
+          "source": "The Standard"
+        },
+        {
+          "title": "Saini’s ABC Bank Bid After TSC, Police Cover Monopoly Losses Raises Questions on Public Money, Phantom Claims, Opaque Ownership",
+          "url": "https://kenyainsights.com/sainis-abc-bank-bid-after-tsc-police-cover-monopoly-losses-raises-questions-on-public-money-phantom-claims-opaque-ownership",
+          "source": "Kenya Insights"
+        },
+        {
+          "title": "Saini Wants a Bank: ABC's Own Audited Books Show a Lender Short of Capital, Buried in Bad Loans and Waiting for a Rescuer",
+          "url": "https://kenyainsights.com/saini-wants-a-bank-abcs-own-audited-books-show-a-lender-short-of-capital-buried-in-bad-loans-and-waiting-for-a-rescuer",
+          "source": "Kenya Insights"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -47,80 +93,13 @@
     },
     {
       "geo": "KE",
-      "title": "la liga standings",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Real Sociedad vs Levante: Spanish La Liga stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cv0ldkr955g1t",
-          "source": "BBC"
-        },
-        {
-          "title": "🚨Confirmed line-ups: Blockbuster clash at the Reale Arena",
-          "url": "https://sports.yahoo.com/articles/confirmed-line-ups-blockbuster-clash-163900284.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Plus three more",
-          "url": "https://www.realsociedad.eus/en/news/details/plus-three-more",
-          "source": "Real Sociedad"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "jazz vs lakers",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Los Angeles Lakers vs Utah Jazz Oct 25, 2026 Box Scores",
-          "url": "https://www.nba.com/game/lal-vs-uta-0022600112/box-score",
-          "source": "NBA.com"
-        },
-        {
-          "title": "Drew Litton: Denver Nuggets make a spirited return to the court",
-          "url": "https://coloradosun.com/2026/10/23/drew-litton-denver-nuggets-poltergeist-start-season/",
-          "source": "The Colorado Sun"
-        },
-        {
-          "title": "Two Breakout Candidates Who Could Save Nuggets’ 2026-27 Season",
-          "url": "https://sports.yahoo.com/articles/two-breakout-candidates-could-save-134357083.html",
-          "source": "Yahoo Sports"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "quickmart ipo local investor share reduction",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Quickmart cuts Kenyans shares in IPO, global funds splash Sh7.1bn",
-          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/quickmart-cut-kenyans-shares-in-ipo-global-funds-splash-sh7-1bn-5645456",
-          "source": "Business Daily"
-        },
-        {
-          "title": "UK government bets $15 million on one of Kenya’s biggest supermarket chains as QuickMart heads for IPO",
-          "url": "https://africa.businessinsider.com/local/markets/uk-government-bets-dollar15-million-on-one-of-kenyas-biggest-supermarket-chains-as/l68z4ms",
-          "source": "Business Insider Africa"
-        },
-        {
-          "title": "Trade and Financial Services Round-Up",
-          "url": "https://vellum.co.ke/trade-and-financial-services-round-up-75/",
-          "source": "Vellum Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "76ers vs pistons",
       "traffic": "100+",
       "news": [
         {
-          "title": "Pistons 106-93 76ers (Oct 25, 2026) Game Recap",
-          "url": "https://www.espn.com/nba/recap?gameId=401909866",
-          "source": "ESPN"
+          "title": "Pistons quiet Philly 106-93 as Cunningham runs the show",
+          "url": "https://www.sofascore.com/news/pistons-quiet-philly-106-93-as-cunningham-runs-the-show",
+          "source": "Sofascore"
         },
         {
           "title": "Sixers Bell Ringer: Maxey’s 4th quarter blitz not enough vs. Detroit",
@@ -128,9 +107,9 @@
           "source": "Liberty Ballers"
         },
         {
-          "title": "Cade Cunningham drops 26 as Pistons hand Sixers first loss of season",
-          "url": "https://www.nba.com/watch/video/highlights-from-cade-cunningham-26-point-game-4?plsrc=nba&collection=must-watch-videos",
-          "source": "NBA.com"
+          "title": "Pistons 76ers Basketball",
+          "url": "https://www.corsicanadailysun.com/sports/national_sports/pistons-76ers-basketball/image_b2724f6f-e2d9-5141-850f-68b7ba318157.html",
+          "source": "Corsicana Daily Sun"
         }
       ]
     },
@@ -140,35 +119,58 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Brasil: Lula deveria priorizar os direitos humanos em seu novo mandato",
-          "url": "https://www.hrw.org/pt/news/2026/10/25/brazil-lula-should-focus-on-human-rights-in-new-term",
-          "source": "Human Rights Watch"
+          "title": "Os primeiros líderes mundiais a parabenizarem Lula pela vitória",
+          "url": "https://www.bbc.com/portuguese/articles/c679prgnn48qo",
+          "source": "BBC"
         },
         {
-          "title": "Operado o milagre, uma tarefa muito complexa à frente",
-          "url": "https://oglobo.globo.com/blogs/vera-magalhaes/coluna/2026/10/operado-o-milagre-uma-tarefa-muito-complexa-a-frente.ghtml",
-          "source": "O GLOBO"
+          "title": "Do funk ao silêncio: como foi a noite em que Flávio viu a vitória de Lula",
+          "url": "https://noticias.uol.com.br/eleicoes/2026/10/26/churrasco-funk-e-silencio-a-noite-em-que-flavio-viu-a-vitoria-de-lula.htm",
+          "source": "UOL Notícias"
         },
         {
-          "title": "Vídeo. Brasil: filas longas e viagens fluviais marcam voto presidencial decisivo",
-          "url": "https://pt.euronews.com/video/2026/10/25/brasil-filas-longas-e-viagens-fluviais-marcam-voto-presidencial-decisivo",
-          "source": "Euronews"
+          "title": "Eleitores sem transporte público, um tribunal polémico e o perdedor que não o reconhece: o filme da noite eleitoral que deu a Lula uma vitória inédita",
+          "url": "https://cnnportugal.iol.pt/brasil-2026/lula-da-silva/eleitores-sem-transporte-publico-um-tribunal-polemico-e-o-perdedor-que-nao-o-reconhece-o-filme-da-noite-eleitoral-que-deu-a-lula-uma-vitoria-inedita/20261026/6adeb8d9d34e53c759c77f62",
+          "source": "CNN Portugal"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "psg vs lyon",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Paris Saint-Germain vs Olympique Lyonnais: French Ligue 1 stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/ckpqg5048n7qt",
+          "source": "BBC"
+        },
+        {
+          "title": "Luis Enrique brushes off Ballon d'Or clash as PSG's top-of-the-table showdown with Lyon is moved to Monday",
+          "url": "https://www.goal.com/en-ke/news/luis-enrique-ballon-d-or-psg-lyon/blta3c350487473915b",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Monday’s football tips: Torres 6/5 for over 1.5 shots on target as PSG bid to maul Lyon",
+          "url": "https://mrfixitstips.co.uk/mondays-football-tips-torres-6-5-for-over-1-5-shots-on-target-as-psg-bid-to-maul-lyon/",
+          "source": "MrFixitsTips"
+        }
+      ],
+      "civic": true
     }
   ],
   "dropped": [
     {
-      "title": "nairobi–mombasa road",
+      "title": "mtito andei",
       "why": "unsafe: 'crash'"
+    },
+    {
+      "title": "sevilla vs osasuna",
+      "why": "unsafe: 'Betting'"
     },
     {
       "title": "kpsea",
       "why": "unsafe: 'missing'"
-    },
-    {
-      "title": "psg vs lyon",
-      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}

@@ -479,6 +479,19 @@
       "tg_msg": 595,
       "auto": true,
       "decided_at": "2026-10-26T10:13:25.738528+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1026m",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-10-26T15:20:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Nairobi residents face three days of dry taps as Nairobi Water shuts down pipes for maintenance."
+      ]
     }
   ],
   "scripts": {
