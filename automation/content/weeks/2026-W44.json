@@ -446,7 +446,7 @@
           "published": "2026-10-26"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -478,7 +478,11 @@
       "reel": true,
       "tg_msg": 595,
       "auto": true,
-      "decided_at": "2026-10-26T10:13:25.738528+03:00"
+      "decided_at": "2026-10-26T10:13:25.738528+03:00",
+      "published_at": "2026-10-26T13:05:30.020070+03:00",
+      "ig_id": "18106377725525561",
+      "fb_id": "1468861118462262",
+      "story_id": "17914185477499124"
     },
     {
       "id": "2026-w44-hot-1026m",
