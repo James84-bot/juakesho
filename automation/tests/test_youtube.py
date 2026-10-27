@@ -87,6 +87,14 @@ class Upload(unittest.TestCase):
             with self.assertRaises(RuntimeError):
                 youtube.check()
 
+    def test_the_youtubecheck_command_reports_missing_keys_and_success(self):
+        with mock.patch.dict(os.environ, {}, clear=False):
+            for k in KEYS:
+                os.environ.pop(k, None)
+            self.assertEqual(pipeline._main(["youtubecheck", "--dry-run"]), 1)
+        with mock.patch.dict(os.environ, KEYS), mock.patch.object(youtube, "check", return_value="Kenya on Record"):
+            self.assertNotEqual(pipeline._main(["youtubecheck", "--dry-run"]), 1)
+
 
 class Hook(unittest.TestCase):
     post = {"id": "p1", "reel": True, "beats": ["A line"], "caption": "cap #KenyaOnRecord"}

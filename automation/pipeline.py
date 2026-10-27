@@ -1993,6 +1993,7 @@ def _main(argv: list[str] | None = None) -> int:
     if a.command == "metacheck" and not meta_check(dry_run=a.dry_run):
         return 1   # a failed check shows on the run page too, with the reason
     if a.command == "youtubecheck":
+        import youtube
         if not youtube.ready():
             print("::error title=youtubecheck::One or more of YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN is missing")
             return 1
