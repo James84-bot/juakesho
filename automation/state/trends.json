@@ -1,37 +1,81 @@
 {
-  "fetched": "2026-10-27T16:53:08.020694+00:00",
+  "fetched": "2026-10-27T19:24:00.702260+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "mikel arteta",
+      "title": "al-shamal vs al-hilal",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Fleetwood Town vs Arsenal: League Cup stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cwgkveyrgpndt",
-          "source": "BBC"
+          "title": "After Somerville and Martinelli: Inzaghi's decision deprives Al-Hilal of three stars against Al-Shamal",
+          "url": "https://www.goal.com/en/news/after-somerville-and-martinelli-inzaghi-s-decision-deprives-al-hilal-of-three-stars-against-al-shamal/bltee0575239a3149ca",
+          "source": "Goal.com"
         },
         {
-          "title": "Arteta on Fleetwood, Gyokeres and basics",
-          "url": "https://www.arsenal.com/news/arteta-on-fleetwood-gyokeres-and-basics-aIj1u8g1vBum",
-          "source": "Arsenal.com"
+          "title": "Mahrez troubles Inzaghi: a firm response from the Italian coach before the anticipated battle",
+          "url": "https://www.yardbarker.com/soccer/articles/mahrez_troubles_inzaghi_a_firm_response_from_the_italian_coach_before_the_anticipated_battle/s1_17790_44476304",
+          "source": "Yardbarker"
         },
         {
-          "title": "‘The wind goes in all directions’: Fleetwood prepare wet welcome for Arsenal at Highbury",
-          "url": "https://www.theguardian.com/football/2026/oct/27/the-wind-goes-in-all-directions-fleetwood-prepare-wet-welcome-for-arsenal-at-highbury",
-          "source": "The Guardian"
+          "title": "Saudi Pro League representatives face tough Asian tes…",
+          "url": "https://www.ysscores.com/en/news/14080056/saudi-pro-league-representatives-face-tough-asian-tests-in-the-elite",
+          "source": "YSscores"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "essen vs rb leipzig",
+      "title": "dortmund vs werder",
       "traffic": "500+",
       "news": [
         {
-          "title": "RW Essen vs. RB Leipzig: Die offiziellen Aufstellungen sind da!",
-          "url": "https://www.tipico.de/wett-tipps/sportwetten-news/rw-essen-vs-rb-leipzig-die-offiziellen-aufstellungen-sind-da",
-          "source": "Tipico"
+          "title": "DFB-Pokal 2026/27: Spielplan und Termine – wann spielt der FC Augsburg?",
+          "url": "https://www.augsburger-allgemeine.de/sport/dfb-pokal-26-27-spielplan-und-termine-27-10-26-114720457",
+          "source": "Augsburger Allgemeine"
+        },
+        {
+          "title": "Thioune rotiert: Itten stürmt in Dortmund",
+          "url": "https://www.werder.de/news/maenner/2026-2027/aufstellung-dortmund-27102026",
+          "source": "Werder Bremen"
+        },
+        {
+          "title": "Pokalvorschau mit Nils Petersen: \"Das sind Spiele, die sind untippbar\"",
+          "url": "https://www.kicker.de/pokalvorschau-mit-nils-petersen-das-sind-spiele-die-sind-untippbar-1265485/video",
+          "source": "Kicker"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "leipzig fc",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "1. FC Lokomotive Leipzig - VSG Altglienicke: Altglienicke mit breiter Brust - Regionalliga Nordost",
+          "url": "https://www.welt.de/sport/fussball/regionalliga/regionalliga-nordost/article6ae0f7dab3eed7c01bd702fa/1-fc-lokomotive-leipzig-vsg-altglienicke-altglienicke-mit-breiter-brust-regionalliga-nordost.html",
+          "source": "WELT"
+        },
+        {
+          "title": "Lok Leipzig und Hallescher FC trennen sich 2:2 - Highlights im Video",
+          "url": "https://www.lvz.de/sport/regional/lok-leipzig-und-hallescher-fc-trennen-sich-2-2-highlights-im-video-6LIVGB7I5JC5RP3O6AQOFWHNZE.html",
+          "source": "LVZ - Leipziger Volkszeitung"
+        },
+        {
+          "title": "Aus zwei mach drei: HFC mischt im Aufstiegsrennen wieder mit",
+          "url": "https://www.mdr.de/sport/fussball_rl/regionalliga-hallescher-fc-rot-weiss-erfurt-chemnitzer-fc-meisterrennen,regionalliga-dreikampf-100.html",
+          "source": "MDR.de"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "essen vs leipzig",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "[Übertragung**] RB Leipzig gegen Rot-Weiss Essen im live TV",
+          "url": "https://www.nychealthandhospitals.org/gouverneur-virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2FsaXNjaWFqYW1lczEuZ2l0aHViLmlvL255Yy94eXoueG1sIi8+PC9rcnBhbm8+&id=ubertragung-rb-leipzig-gegen-rot-weiss-essen-7z307",
+          "source": "NYC Health + Hospitals"
         },
         {
           "title": "RWE gegen Leipzig: Schon zwei Stunden vor Anpfiff gibt es eine Sperrung",
@@ -39,173 +83,110 @@
           "source": "t-online – Essen"
         },
         {
-          "title": "DFB-Pokal: Vor Pokal gegen Leipzig: Gäste-Einlass in Essen zubetoniert",
-          "url": "https://www.zeit.de/news/2026-10/27/vor-pokal-gegen-leipzig-gaeste-einlass-in-essen-zubetoniert",
+          "title": "DFB-Pokal: Dank Baumgartner: Leipzig entgeht Pokal-Blamage in Essen",
+          "url": "https://www.zeit.de/news/2026-10/27/dank-baumgartner-leipzig-entgeht-pokal-blamage-in-essen",
           "source": "DIE ZEIT"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "sassuolo vs lazio prediction",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Sassuolo vs Lazio: Italian Serie A stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cwdr8nlkgm60t",
-          "source": "BBC"
-        },
-        {
-          "title": "Serie A predictions: Sassuolo vs Lazio opens the midweek round today, plus a 7/1 acca",
-          "url": "https://www.squawka.com/en/news/serie-a-predictions-midweek-today-27-10-2026/",
-          "source": "Squawka"
-        },
-        {
-          "title": "October 27, 2026: Roma vs Cagliari: First Half Winner Soccer Prediction Market",
-          "url": "https://robinhood.com/us/en/prediction-markets/soccer/events/roma-vs-cagliari-first-half-winner-oct-27-2026/",
-          "source": "Robinhood"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "fraud",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "South Portland personal care agency accused of defrauding MaineCare in long-running scheme",
-          "url": "https://www.wabi.tv/2026/10/27/south-portland-personal-care-agency-accused-defrauding-mainecare-long-running-scheme/",
-          "source": "WABI"
-        },
-        {
-          "title": "6 charged in alleged MaineCare fraud scheme in South Portland",
-          "url": "https://wgme.com/news/local/6-charged-in-alleged-mainecare-fraud-scheme-in-south-portland-community-home-health-care-llc-maine-crime-us-attorneys-office",
-          "source": "WGME"
-        },
-        {
-          "title": "Feds to announce 6 arrests in alleged MaineCare fraud scheme",
-          "url": "https://www.bangordailynews.com/2026/10/27/portland/portland-police-courts/south-portland-maine-mainecare-fraud-arrests-press-conference/",
-          "source": "Bangor Daily News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "eddie howe",
+      "title": "lazio",
       "traffic": "200+",
       "news": [
         {
-          "title": "Eddie Howe emerges as new favourite for Man United job as Michael Carrick's authority diminishes",
-          "url": "https://talksport.com/football/4661717/eddie-howe-man-utd-manager-contenders-michael-carrick/",
-          "source": "talkSPORT"
+          "title": "++CALCIO!!Sassuolo-Lazio In Diretta Streaming Gratis (Serie A) 27 Ottobre 2026",
+          "url": "https://www.nychealthandhospitals.org/gouverneur-virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2FsaXNjaWFqYW1lczEuZ2l0aHViLmlvL255Yy94eXoueG1sIi8+PC9rcnBhbm8+&id=video-calcio-sassuolo-lazio-in-diretta-streaming",
+          "source": "NYC Health + Hospitals"
         },
         {
-          "title": "Manchester United hit by Eddie Howe compensation bombshell with Newcastle United owed payout",
-          "url": "https://www.chroniclelive.co.uk/sport/football/football-news/manchester-united-hit-eddie-howe-34819896",
-          "source": "Chronicle Live"
+          "title": "Torino-Como, dove vederla (Sky o Dazn) in tv e streaming: orario, probabili formazioni, arbitro, precedenti e quote",
+          "url": "https://www.ilmessaggero.it/sport/schede/torino_como_orario_formazioni_dove_vederla_sky_dazn_tv_streaming_arbitro_precedenti_quote_serie_a-torino_como_orario_e_dove_si_gioca-2-9851781.html",
+          "source": "Il Messaggero"
         },
         {
-          "title": "If Michael Carrick moves on, who should be the next Manchester United manager?",
-          "url": "https://www.nbcsports.com/soccer/news/if-michael-carrick-moves-on-who-should-be-the-next-manchester-united-manager",
-          "source": "NBC Sports"
+          "title": "Lazio, Frattesi: \"Tornare qui è sempre bello, oggi sembra di giocare in casa\"",
+          "url": "https://www.lazialita.com/2026/10/27/lazio-frattesi-tornare-qui-e-sempre-bello-oggi-sembra-di-giocare-in-casa/",
+          "source": "Lazialità"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "food",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Can Tini Younger, One of TikTok’s Biggest Food Influencers, Get Gen Z in the Kitchen?",
-          "url": "https://www.nytimes.com/2026/10/27/dining/tini-younger-tiktok-food-cooking.html",
-          "source": "The New York Times"
-        },
-        {
-          "title": "At 24, Tini Younger is one of the biggest food influencers on TikTok. Her new challenge: Selling a cookbook to young people with scant connection to the kitchen.",
-          "url": "https://www.facebook.com/nytimes/posts/at-24-tini-younger-is-one-of-the-biggest-food-influencers-on-tiktok-her-new-chal/1528796752436116/",
-          "source": "Facebook"
-        },
-        {
-          "title": "Wright-Locke Farm to hold final Farm Talk ‘Food for Thought’ on Nov. 17",
-          "url": "https://winchesternews.org/20261030_wright-locke-farm-to-hold-final-farm-talk-food-for-thought-on-nov-17/",
-          "source": "https://winchesternews.org/"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "apple iphone duo",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Apple to replace iPhone Duos affected by screen problem",
-          "url": "https://www.bbc.com/news/articles/c893zwlev2xpo",
-          "source": "BBC"
-        },
-        {
-          "title": "Apple’s Foldable iPhone Duo Draws Early Complaints of the Screen Cracking",
-          "url": "https://www.bloomberg.com/news/articles/2026-10-26/apple-s-foldable-iphone-duo-draws-early-complaints-of-the-screen-cracking",
-          "source": "Bloomberg.com"
-        },
-        {
-          "title": "iPhone Duo owners report cracks in Apple’s first foldable handset",
-          "url": "https://www.theguardian.com/technology/2026/oct/26/iphone-duo-owners-cracks-apple-first-foldable-handset",
-          "source": "The Guardian"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "poverty",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Poverty, Prosperity, and Planet Report 2026: Jobs at the Center of Poverty Eradication",
-          "url": "https://www.worldbank.org/en/news/video/2026/10/22/poverty-prosperity-and-planet-report-2026-jobs-at-the-center-of-poverty-eradicatio",
-          "source": "World Bank Group"
-        },
-        {
-          "title": "Progress on reducing extreme poverty at a standstill - report",
-          "url": "https://eastleighvoice.co.ke/business/416594/progress-on-reducing-extreme-poverty-at-a-standstill-report",
-          "source": "The Eastleigh Voice"
-        },
-        {
-          "title": "Half the World Lives on Less Than $8.30 a Day: Why Has Poverty Reduction Lost Momentum?",
-          "url": "https://www.devdiscourse.com/article/international/3997709-half-the-world-lives-on-less-than-830-a-day-why-has-poverty-reduction-lost-momentum",
-          "source": "Devdiscourse"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "hamburg vs eintracht frankfurt",
+      "title": "vinícius júnior",
       "traffic": "100+",
       "news": [
         {
-          "title": "Eintracht Frankfurt News-Ticker: Maluze, Götze und Uzun starten in Hamburg",
-          "url": "https://www.hessenschau.de/sport/fussball/eintracht-frankfurt/eintracht-frankfurt-news-ticker-maluze-goetze-und-uzun-starten-in-hamburg,bundesliga-ticker-104.html",
-          "source": "hessenschau.de"
+          "title": "Uma propriedade de 650 bilhões de VND, que lembra um palácio, para o vencedor da Bola de Ouro, Harry Kane.",
+          "url": "https://www.vietnam.vn/pt/bat-dong-san-650-ty-dong-nhu-cung-dien-cua-qua-bong-vang-harry-kane",
+          "source": "Vietnam.vn"
         },
         {
-          "title": "Torwartwechsel beim HSV: Tangvik erhält Pokalspiel",
-          "url": "https://www.ligainsider.de/sander-tangvik_24494/torwartwechsel-beim-hsv-tangvik-erhaelt-pokalspiel-419787/",
-          "source": "LigaInsider"
+          "title": "Harry Kane ganha a Bola de Ouro",
+          "url": "https://www.deutschland.de/pt-br/news/harry-kane-ganha-a-bola-de-ouro",
+          "source": "deutschland.de"
         },
         {
-          "title": "„Wir kriegen ein geiles Spiel!“",
-          "url": "https://profis.eintracht.de/news/wir-kriegen-ein-geiles-spiel-180045/",
-          "source": "Eintracht Frankfurt"
+          "title": "Mistério até o último momento: Barcelona e Real Madrid sob o mesmo teto na noite da Bola de Ouro",
+          "url": "https://www.goal.com/br/not%C3%ADcias/misterio-ate-o-ultimo-momento-barcelona-e-real-madrid-sob-o-mesmo-teto-na-noite-da-bola-de-ouro/blt84b9780491ea6036",
+          "source": "Goal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "torino vs como prediction",
+      "title": "joão pedro",
       "traffic": "100+",
-      "news": []
+      "news": [
+        {
+          "title": "João Pedro vira assunto na Europa após derrota do Chelsea: 'Não há'",
+          "url": "https://www.lance.com.br/fora-de-campo/joao-pedro-vira-assunto-na-europa-apos-derrota-do-chelsea-nao-ha.html",
+          "source": "LANCE!"
+        },
+        {
+          "title": "João Pedro sofre lesão e deve perder Data Fifa da seleção",
+          "url": "https://www.correiodopovo.com.br/esportes/selecaobrasileira/joao-pedro-sofre-lesao-e-deve-perder-data-fifa-da-selecao-1.1759466",
+          "source": "Correio do Povo"
+        },
+        {
+          "title": "João Pedro desfalca Chelsea e deve ficar fora da Seleção",
+          "url": "https://odia.ig.com.br/esporte/2026/10/7316701-joao-pedro-desfalca-chelsea-e-deve-ficar-fora-da-selecao.html",
+          "source": "O Dia"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "shakhtar donetsk vs dynamo kyiv",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Dynamo have travelled to Lviv for Shakhtar clash",
+          "url": "https://fcdynamo.com/en/news/dinamo-virusilo-do-lvova-na-matc-iz-saxtarem",
+          "source": "Динамо» Київ. Офіційний сайт"
+        },
+        {
+          "title": "Video: Shakhtar crushed Dynamo and advanced to the quarterfinals of the Ukrainian Cup",
+          "url": "https://ua.news/en/sport/video-shakhtar-rozgromiv-dinamo-ta-viishov-do-chvertfinalu-kubka-ukrayini",
+          "source": "UA.NEWS"
+        },
+        {
+          "title": "Shakhtar - Dynamo Kyiv, 2026: watch sports online in high quality on Kyivstar TV",
+          "url": "https://tv.kyivstar.ua/en/event/6ad61200eb5d93422a9738d0-2026-shakhtar-dynamo-kyiv",
+          "source": "Київстар ТБ"
+        }
+      ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "rescue",
+      "why": "unsafe: 'missing'"
+    },
+    {
+      "title": "mainz fc",
+      "why": "unsafe: 'Betting'"
+    }
+  ],
   "errors": {}
 }
