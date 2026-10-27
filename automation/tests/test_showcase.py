@@ -43,7 +43,8 @@ class Showcase(unittest.TestCase):
         n, manifest, out = self.run_it(found=True)
         self.assertEqual(n, 2)                                   # the non-news post is not a sample
         self.assertTrue((out / "showcase-1.jpg").exists())
-        self.assertIn("Photo: Agency / Outlet", manifest[0]["caption"])
+        self.assertIn("Photo: Agency / Outlet (news)", manifest[0]["caption"])
+        self.assertNotIn("Photo: Photo:", manifest[0]["caption"])
         self.assertIn("EACC recovers 2.7 acres.", manifest[0]["caption"])   # markers stripped
         self.assertIn("No real photo found", manifest[1]["caption"])         # said plainly, never invented
 

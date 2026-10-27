@@ -1676,7 +1676,7 @@ def showcase(label: str, dry_run: bool = False, count: int = 3) -> int:
         png = PREVIEW / f"{q['id']}.png"
         Image.open(png).convert("RGB").save(PREVIEW / f"{q['id']}.jpg", "JPEG", quality=90, optimize=True)
         png.unlink(missing_ok=True)
-        photo = (f"Photo: {_esc(q['photo_credit'])} ({_esc(q.get('photo_kind', 'photo'))})" if q.get("photo_file") and q.get("photo_credit")
+        photo = (f"{_esc(q['photo_credit'])} ({_esc(q.get('photo_kind', 'photo'))})" if q.get("photo_file") and q.get("photo_credit")
                  else "No real photo found under the rules: the card runs without one" if not q.get("photo_file")
                  else "Photo found (no credit recorded)")
         manifest.append({"file": f"{q['id']}.jpg",
