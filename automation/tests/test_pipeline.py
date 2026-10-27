@@ -352,10 +352,12 @@ class PublishTests(TempWeeks):
         self.assertTrue(any(p == "page/feed" for p, _ in calls))
         self.assertTrue(all(p["status"] == "published" for p in posts))
 
-    def test_story_is_instagram_only(self):
+    def test_story_goes_to_both_stories_rows_and_never_the_feed(self):
         calls, _ = self.run_publish([{"id": "s", "size": "story", "status": "approved", "publish_at": self.PAST}])
         self.assertTrue(any(f.get("media_type") == "STORIES" for p, f in calls if p == "ig/media"))
-        self.assertFalse(any(p.startswith("page/") for p, _ in calls))
+        self.assertTrue(any(p == "page/photo_stories" for p, _ in calls))        # Facebook Story
+        feed = [f for p, f in calls if p == "page/photos" and f.get("published") != "false"]
+        self.assertFalse(feed)                                                    # but no Facebook feed photo
 
     def test_failure_is_recorded_and_retries_stop(self):
         post = {"id": "p", "status": "approved", "publish_at": self.PAST}
@@ -1438,6 +1440,37 @@ class ReelPublishTests(TempWeeks):
         post = pl.load_week("2026-W41")["posts"][0]
         self.assertEqual(post["status"], "published")
         self.assertNotIn("story_id", post)
+
+    def test_every_post_also_goes_on_the_facebook_story(self):
+        self.week([{"id": "p", "status": "approved", "publish_at": self.PAST, "caption": "c"},
+                   {"id": "r", "status": "approved", "publish_at": self.PAST, "caption": "c", "reel": True}])
+        calls = []
+
+        def fake_http(method, url, fields=None, files=None, timeout=60):
+            calls.append((url.split("/v26.0/")[-1].split("?")[0], dict(fields or {})))
+            return {"id": f"id{len(calls)}", "status_code": "FINISHED"}
+        with mock.patch.object(pl, "http", fake_http), mock.patch.object(pl, "preflight", lambda u, k: None):
+            pl.publish()
+        unpublished = [f for p, f in calls if p.endswith("/photos") and f.get("published") == "false"]
+        self.assertEqual(len(unpublished), 2)
+        self.assertTrue(any(f["url"].endswith("/p.jpg") for f in unpublished))
+        self.assertTrue(any(f["url"].endswith("/r-cover.jpg") for f in unpublished))   # a Reel's story is its cover
+        self.assertEqual(sum(1 for p, f in calls if p.endswith("/photo_stories")), 2)
+        posts = {x["id"]: x for x in pl.load_week("2026-W41")["posts"]}
+        self.assertTrue(posts["p"].get("fb_story_id"))
+
+    def test_a_failed_facebook_story_never_undoes_the_post(self):
+        self.week([{"id": "p", "status": "approved", "publish_at": self.PAST, "caption": "c"}])
+
+        def fake_http(method, url, fields=None, files=None, timeout=60):
+            if "photo_stories" in url:
+                raise RuntimeError("not allowed")
+            return {"id": "x1"}
+        with mock.patch.object(pl, "http", fake_http), mock.patch.object(pl, "preflight", lambda u, k: None):
+            pl.publish()
+        post = pl.load_week("2026-W41")["posts"][0]
+        self.assertEqual(post["status"], "published")
+        self.assertNotIn("fb_story_id", post)
 
     def test_wrong_content_type_blocks_publishing(self):
         class Resp:

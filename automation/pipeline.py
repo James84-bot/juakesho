@@ -1325,6 +1325,25 @@ def share_story(label: str, members: list[dict]) -> str | None:
         return None
 
 
+def share_facebook_story(label: str, members: list[dict]) -> str | None:
+    """The same post on the Facebook Page Story. The Stories row is the first thing Kenyans see when they open
+    Facebook and it is where newsrooms like Kenyans.co.ke put out 20 cards a day, so every post of ours goes there
+    too. Photo stories only (a Reel uses its cover); a Page Story is a two-step call: upload the photo unpublished,
+    then attach it as a story. Never blocks or undoes the post."""
+    first = members[0]
+    try:
+        page = need("META_PAGE_ID")["META_PAGE_ID"]
+        image = public_url(label, f"{first['id']}-cover" if first.get("reel") else first["id"])
+        photo = graph(f"{page}/photos", {"url": image, "published": "false"})["id"]
+        res = graph(f"{page}/photo_stories", {"photo_id": photo})
+        sid = str(res.get("post_id") or res.get("id") or photo)
+        log(f"facebook story {first['id']}: {sid}")
+        return sid
+    except Exception as e:
+        log(f"facebook story skipped for {first['id']}: {str(e)[:200]}")
+        return None
+
+
 OLD_TAGS = ("#JuaKesho", "#KenyansAreAsking")   # drafts written before a rename carry an old tag
 
 
@@ -1538,6 +1557,10 @@ def publish(dry_run: bool = False) -> None:
                 if story:
                     for m in members:
                         m["story_id"] = story
+                fb_story = share_facebook_story(label, members)
+                if fb_story:
+                    for m in members:
+                        m["fb_story_id"] = fb_story
                 record_evidence(members)
                 _youtube_short(label, first_of(members))
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
