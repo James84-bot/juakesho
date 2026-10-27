@@ -142,7 +142,7 @@
         "outlet": "Kenya Wildlife Service",
         "photo_query": "Aberdare National Park waterfall Kenya"
       },
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": []
@@ -156,7 +156,11 @@
       "reel": true,
       "hand": true,
       "decided_at": "2026-10-25T23:44:31.973403+03:00",
-      "fresh_checked": "2026-10-26T16:13:07.883578+03:00"
+      "fresh_checked": "2026-10-26T16:13:07.883578+03:00",
+      "published_at": "2026-10-27T12:47:28.387345+03:00",
+      "ig_id": "18222415150343950",
+      "fb_id": "1137568032575371",
+      "story_id": "18107832704246883"
     },
     {
       "id": "2026-w44-d3-promise-r2",
