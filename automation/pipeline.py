@@ -1685,7 +1685,8 @@ def showcase(label: str, dry_run: bool = False, count: int = 3) -> int:
     cards = len(manifest)
     try:   # one of them as the Reel it would go out as (the sample with a real photo if there is one)
         import video
-        reel = next((q for q in posts if q.get("photo_file")), posts[0])
+        reel = next((q for q in posts if q.get("photo_file") and q.get("photo_kind") == "posted"),   # a real news photo first
+                    next((q for q in posts if q.get("photo_file")), posts[0]))
         video.make_reels([reel], PREVIEW)
         mp4 = PREVIEW / f"{reel['id']}.mp4"
         if mp4.exists():
