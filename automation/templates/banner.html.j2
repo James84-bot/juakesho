@@ -1,15 +1,17 @@
 {#- Profile banner for youtube / x / facebook. Key content stays in the centre safe zone. Fields: line, sub -#}
 {% extends "base.html.j2" %}
-{% set safe = {2560: (1546, 423), 1500: (1100, 360), 1640: (1300, 480)}[W] %}
+{#- safe areas = what every device shows: YouTube 1235x338, Facebook Page 640x312 (x2), Group middle 664 rows, X minus the avatar corner -#}
+{% set safe = {(2560, 1440): (1235, 338), (1500, 500): (1100, 360), (1640, 720): (1280, 560), (1640, 856): (1300, 600)}[(W, H)] %}
 {% set sx = (W - safe[0]) / 2 %}{% set sy = (H - safe[1]) / 2 %}
 {% if W == 1500 %}{% set sx = 380 %}{% endif %}
 {% block style %}
 .safe { position: absolute; left: {{ sx }}px; top: {{ sy }}px; width: {{ safe[0] }}px; height: {{ safe[1] }}px;
   display: flex; flex-direction: column; justify-content: center; }
-.logo { height: {{ safe[1] * 0.2 }}px; align-self: flex-start; }
-.line { margin-top: {{ safe[1] * 0.08 }}px; font-size: {{ safe[1] * 0.15 }}px; }
-.sub { margin-top: {{ safe[1] * 0.05 }}px; font: 800 {{ safe[1] * 0.065 }}px/1.2 "Inter Tight"; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.logo { height: {{ safe[1] * 0.28 }}px; align-self: flex-start; }
+.line { margin-top: {{ safe[1] * 0.07 }}px; font-size: {{ [safe[1] * 0.14, safe[0] / 18.5]|min }}px; white-space: nowrap; }
+.sub { margin-top: {{ safe[1] * 0.05 }}px; font: 800 {{ safe[1] * 0.07 }}px/1.2 "Inter Tight"; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
 .base { position: absolute; left: 0; right: 0; bottom: 0; height: {{ H * 0.02 }}px; background: var(--shuka-600); }
+.base2 { position: absolute; left: 0; right: 0; bottom: {{ H * 0.02 }}px; height: {{ H * 0.01 }}px; background: var(--chai-600, #046E30); }
 {% endblock %}
 {% block content %}{% endblock %}
 {% block footer %}
@@ -18,5 +20,5 @@
     <p class="display line">{{ line }}</p>
     <p class="sub">{{ sub }}</p>
   </div>
-  <div class="base"></div>
+  <div class="base"></div><div class="base2"></div>
 {% endblock %}

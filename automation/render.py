@@ -40,7 +40,8 @@ SIZES = {
     "square": (1080, 1080),
     "youtube": (2560, 1440),
     "x": (1500, 500),
-    "facebook": (1640, 624),
+    "facebook": (1640, 720),     # Page cover: upload 2x of 820x360; desktop shows 820x312, mobile 640x360
+    "fbgroup": (1640, 856),      # Group cover: desktop shows the middle 1640x664
     "avatar": (1080, 1080),
 }
 DARK_BGS = {"usiku", "jacaranda", "chai", "shuka", "udongo", "jua"}

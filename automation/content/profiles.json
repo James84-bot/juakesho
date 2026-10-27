@@ -9,20 +9,31 @@
       "expr": "happy"
     },
     {
-      "id": "avatar-red",
-      "template": "avatar",
-      "size": "avatar",
-      "bg": "jua",
-      "expr": "happy"
-    },
-    {
       "id": "youtube-banner-2560x1440",
       "template": "banner",
       "size": "youtube",
       "bg": "usiku",
       "seed": 41,
-      "line": "Tech & the future, the Kenyan way.",
-      "sub": "Kesho iko hapa. Tomorrow is here."
+      "line": "Facts today. A better Kenya tomorrow.",
+      "sub": "Sourced. Non-partisan. Daily."
+    },
+    {
+      "id": "facebook-cover-1640x720",
+      "template": "banner",
+      "size": "facebook",
+      "bg": "usiku",
+      "seed": 43,
+      "line": "Facts today. A better Kenya tomorrow.",
+      "sub": "Sourced. Non-partisan. Daily."
+    },
+    {
+      "id": "facebook-group-cover-1640x856",
+      "template": "banner",
+      "size": "fbgroup",
+      "bg": "usiku",
+      "seed": 44,
+      "line": "Facts today. A better Kenya tomorrow.",
+      "sub": "Sourced. Non-partisan. Daily."
     },
     {
       "id": "x-header-1500x500",
@@ -30,17 +41,8 @@
       "size": "x",
       "bg": "usiku",
       "seed": 42,
-      "line": "Tech & the future, the Kenyan way.",
-      "sub": "Kesho iko hapa."
-    },
-    {
-      "id": "facebook-cover-1640x624",
-      "template": "banner",
-      "size": "facebook",
-      "bg": "usiku",
-      "seed": 43,
-      "line": "Tech & the future, the Kenyan way.",
-      "sub": "Kesho iko hapa. Tomorrow is here."
+      "line": "Facts today. A better Kenya tomorrow.",
+      "sub": "Sourced. Non-partisan. Daily."
     }
   ]
 }
