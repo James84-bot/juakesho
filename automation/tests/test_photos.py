@@ -178,3 +178,17 @@ class UnfitStockPhotos(unittest.TestCase):
     def test_plain_office_photo_is_kept(self):
         got = self.run_search("File:Modern office Nairobi.jpg", "A modern office in Nairobi, Kenya")
         self.assertIsNotNone(got)
+
+
+class NewsPhotosOff(unittest.TestCase):
+    def test_other_newsrooms_photos_are_off_unless_policy_says_so(self):
+        import json as _json
+        import tempfile
+        import photos
+        self.assertFalse(photos.news_photos_ok())   # the shipped policy
+        with tempfile.TemporaryDirectory() as t:
+            p = Path(t) / "content"
+            p.mkdir()
+            (p / "policy.json").write_text(_json.dumps({"news_photos": True}))
+            with mock.patch.object(photos, "__file__", str(Path(t) / "photos.py")):
+                self.assertTrue(photos.news_photos_ok())

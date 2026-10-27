@@ -35,6 +35,15 @@ HERE = Path(__file__).resolve().parent
 NOTES: list[str] = []   # what each search found and why photos were passed over (saved to state/photos.log)
 
 
+def news_photos_ok() -> bool:
+    """Other newsrooms' photos are used only when content/policy.json says "news_photos": true. Off by default: the
+    outlet owns the picture, and a monetised account is not a safe place to lean on a fair-dealing argument."""
+    try:
+        return bool(json.loads((Path(__file__).with_name("content") / "policy.json").read_text(encoding="utf-8")).get("news_photos"))
+    except (OSError, ValueError):
+        return False
+
+
 def _note(msg: str) -> None:
     print(msg)
     NOTES.append(msg.strip())
@@ -483,7 +492,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
         if on_report:   # built on one report: its own story's photo, or a neutral one; never a file photo of a person
             import posted
             try:
-                got = posted.find(post)
+                got = posted.find(post) if news_photos_ok() else None
             except Exception as e:
                 _note(f"  posted-photo search failed for {post.get('id')}: {e}")
                 got = None
@@ -500,14 +509,14 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
                 return _save(out_dir, post["id"], *got)
             try:   # the photo already posted of the day's story (credited, news and commentary use)
                 import posted
-                got = posted.find(post)
+                got = posted.find(post) if news_photos_ok() else None
             except Exception as e:
                 _note(f"  posted-photo search failed for {post.get('id')}: {e}")
                 got = None
             if got:
                 return _save(out_dir, post["id"], *got)
             # nothing of the day itself: a real file photo of the person or body the post is about, before any symbol
-            for name, step in (("file photo from the news", lambda: posted.find_named(post)),
+            for name, step in (("file photo from the news", lambda: posted.find_named(post) if news_photos_ok() else None),
                                ("portrait", lambda: commons_portrait(post))):
                 try:
                     got = step()
