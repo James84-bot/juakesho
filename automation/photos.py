@@ -35,6 +35,12 @@ HERE = Path(__file__).resolve().parent
 NOTES: list[str] = []   # what each search found and why photos were passed over (saved to state/photos.log)
 
 
+def _accused(post: dict) -> bool:
+    """True when the post carries an allegation: no face of a person is ever fetched for it (guard.accusation_problems)."""
+    import guard
+    return bool(guard.CRIME_WORDS.search(guard._all_text(post)))
+
+
 def news_photos_ok() -> bool:
     """Other newsrooms' photos are used only when content/policy.json says "news_photos": true. Off by default: the
     outlet owns the picture, and a monetised account is not a safe place to lean on a fair-dealing argument."""
@@ -501,7 +507,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
         elif post.get("template") in CIVIC_TEMPLATES | {"glasspoll"} and not post.get("group"):
             import posted
             try:
-                got = event_photo(post)
+                got = event_photo(post) if not _accused(post) else None
             except Exception as e:
                 _note(f"  event photo search failed for {post.get('id')}: {e}")
                 got = None
@@ -516,8 +522,8 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             if got:
                 return _save(out_dir, post["id"], *got)
             # nothing of the day itself: a real file photo of the person or body the post is about, before any symbol
-            for name, step in (("file photo from the news", lambda: posted.find_named(post) if news_photos_ok() else None),
-                               ("portrait", lambda: commons_portrait(post))):
+            for name, step in (("file photo from the news", lambda: posted.find_named(post) if news_photos_ok() and not _accused(post) else None),
+                               ("portrait", lambda: commons_portrait(post) if not _accused(post) else None)):
                 try:
                     got = step()
                 except Exception as e:

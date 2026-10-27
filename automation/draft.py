@@ -894,6 +894,29 @@ def extract_json(text: str) -> dict:
         return json.loads(fixed)
 
 
+def attribute_single_source(post: dict) -> dict:
+    """A post resting on one outlet says so ("Capital FM reports: ..."): we repeat their report, we do not assert it as
+    our own finding. Our own verified data (a bank fact) is exempt. The Reel's first line gets the outlet too when it still fits."""
+    if isinstance(post.get("material"), dict) and post["material"].get("kind") == "bank":
+        return post
+    outlets = []
+    for x in post.get("source_links") or []:
+        name = str(x.get("outlet", "")).strip() if isinstance(x, dict) else ""
+        if name and name.lower() not in [o.lower() for o in outlets]:
+            outlets.append(name)
+    if len(outlets) != 1:
+        return post
+    name = outlets[0]
+    cap = str(post.get("caption") or "")
+    if cap and name.lower() not in cap.lower()[:160] and not re.search(r"\b(reports?|reported|according to)\b", cap[:160], re.I):
+        post["caption"] = f"{name} reports: {cap}"
+    beats = post.get("beats")
+    if isinstance(beats, list) and beats and isinstance(beats[0], str) and name.lower() not in beats[0].lower() \
+            and not re.search(r"\b(reports?|reported|according to)\b", beats[0], re.I) and len(beats[0].split()) + len(name.split()) + 1 <= 16:
+        post["beats"] = [f"{name} reports: {beats[0]}"] + beats[1:]
+    return post
+
+
 def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     """Model output fills content; the plan keeps control of id/template/bg/time/group."""
     by_id = {d.get("id"): d for d in drafted}
@@ -902,7 +925,7 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     for s in slots:
         d = {k: v for k, v in by_id.get(s["id"], {}).items() if k != "researched"}   # only a person sets that
         locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "beat", "angle", "avoid", "breaking", "source_links") if k in s}
-        out.append(material.lock(news.resolve({**d, **locked}, table), s))
+        out.append(attribute_single_source(material.lock(news.resolve({**d, **locked}, table), s)))
     return out
 
 

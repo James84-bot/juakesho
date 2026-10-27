@@ -196,6 +196,41 @@ def _check_closer(post: dict, rep: "Report") -> None:
         rep.errors.append("closer: " + msg)
 
 
+# --- Accusations: no face beside an allegation, two sources or an official one, and the wording stays attributed ---
+CRIME_WORDS = re.compile(r"\b(arrest(ed|s)?|charged|accused|suspect(ed|s)?|fraud\w*|stole\w*|theft|embezzl\w*|corrupt\w*|bribe\w*|"
+                         r"kickbacks?|looted|laundering|murder\w*|convicted|jailed|grabbed|graft)\b", re.I)
+PERSON_TITLE = re.compile(r"\b(CS|Governor|Senator|MP|MCA|Hon\.?|President|Justice|Judge|Dr|Mr|Mrs|Ms|Cabinet Secretary|"
+                          r"Principal Secretary|PS|Chief Executive|Speaker|Deputy Governor|Mayor)\s+[A-Z][a-z]+", re.U)
+ATTRIBUTED = re.compile(r"\b(alleged(ly)?|accused|charged|arrested|convicted|reports?|reported|according to|says|said|claims?|"
+                        r"found|ruled|court|audit(or)?)\b", re.I)
+OFFICIAL_SOURCE = re.compile(r"\.go\.ke|judiciary|kenya gazette|hansard|auditor[- ]general|controller of budget|eacc|dpp|odpp", re.I)
+
+
+def accusation_problems(post: dict) -> list[str]:
+    """Rules for any post that puts an allegation next to a named person or a face. Pure: returns messages."""
+    text = _all_text(post)
+    if not CRIME_WORDS.search(text):
+        return []
+    out = []
+    face = bool(post.get("person_file")) or post.get("photo_kind") in {"file", "event"}
+    if face:
+        out.append("accusation: no face beside an allegation: use the office or institution, not a person's photo")
+    if PERSON_TITLE.search(text) or post.get("person_role"):
+        links = [x for x in post.get("source_links") or [] if isinstance(x, dict)]
+        outlets = {str(x.get("outlet", "")).strip().lower() for x in links if x.get("outlet")}
+        official = bool(OFFICIAL_SOURCE.search(str(post.get("source", "")) + " " + " ".join(str(x.get("link", "")) for x in links)))
+        if len(outlets) < 2 and not official and not (isinstance(post.get("material"), dict) and post["material"].get("kind") == "bank"):
+            out.append("accusation: a named person with an allegation needs two outlets or an official source "
+                       "(court, EACC, DPP, Auditor-General, a .go.ke page)")
+        if not ATTRIBUTED.search(text):
+            out.append("accusation: say who says it ('alleged', 'charged with', 'the court found', 'the report says'), never state guilt")
+    return out
+
+
+def _check_accusation(post: dict, rep: "Report") -> None:
+    rep.errors.extend(accusation_problems(post))
+
+
 def _shouting(texts: list[str] | str) -> str:
     """'' if the copy is calm; otherwise what is too loud. Each piece (design text, caption) is judged on its own."""
     texts = [texts] if isinstance(texts, str) else texts
@@ -496,6 +531,7 @@ def check(post: dict) -> Report:
     _check_nicknames(post, rep)
     _check_hook(post, rep)
     _check_closer(post, rep)
+    _check_accusation(post, rep)
     if tpl in PHOTO_FIRST and not (post.get("photo_query") or post.get("photo") or post.get("person_photo")):
         (rep.errors if tpl == "sauti" else rep.warnings).append("no photo: add a `photo_query` (a real Kenyan scene); visuals carry the post")
     if str(post.get("line", "")).count("*") % 2 or any(str(post.get(f, "")).count("*") % 2 for f in ("title", "thing", "truth", "claim", "headline", "question", "topic")):
