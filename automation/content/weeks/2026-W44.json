@@ -488,24 +488,99 @@
     {
       "id": "2026-w44-hot-1026m",
       "template": "sauti",
-      "bg": "usiku",
       "lane": "everyone",
+      "kicker": "Diplomacy",
+      "line": "Kenya is yet to back *any* candidate for the UN Secretary-General position.",
+      "fact": "PS Korir Sing'Oei confirmed Kenya has not endorsed anyone.",
+      "source": "Capital FM News, 2026-10-27",
+      "photo_query": "United Nations flag Nairobi",
+      "message": "Kenya has not backed any candidate for the UN Secretary-General race yet.",
+      "action": "Read the Ministry statement on capitalfm.africa and share this update",
+      "beats": [
+        "PS Korir Sing'Oei confirmed Kenya has not endorsed *anyone* yet.",
+        "The Ministry is yet to name a preferred candidate.",
+        "Kenya's diplomatic position remains undecided on the global stage.",
+        "Kenyans demand: the Ministry updates the public."
+      ],
+      "caption": "Kenya has not endorsed any candidate for the UN race yet. Read the details and share this update.\n\n#ForeignAffairs #KenyaOnRecord",
+      "who": "PS Korir Sing'Oei",
+      "where": "Nairobi",
+      "when": "27 Oct 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Kenya's official diplomatic position remains undecided on the global stage.",
+      "bg": "usiku",
       "publish_at": "2026-10-26T15:20:00+03:00",
-      "status": "planned",
       "hot": true,
       "beat": "life",
       "avoid": [
         "Nairobi residents face three days of dry taps as Nairobi Water shuts down pipes for maintenance."
-      ]
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Kenya Yet to Back Any Candidate for UN Secretary-General, PS Sing’Oei Says",
+          "link": "https://capitalfm.africa/kenya-yet-to-back-any-candidate-for-un-secretary-general-ps-singoei-says/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-27"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 5.4/10. Demand score 7 is too high for a routine non-endorsement statement; needs real stakes for ordinary Kenyans."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 6,
+        "picture": 4,
+        "hold": 5,
+        "demand": 7,
+        "action": 3,
+        "fair": 7,
+        "impact": 4,
+        "avg": 5.4,
+        "note": "Demand score 7 is too high for a routine non-endorsement statement; needs real stakes for ordinary Kenyans."
+      },
+      "drafted_at": "2026-10-27T09:25:07.156582+03:00"
     },
     {
       "id": "2026-w44-hot-1026b1432",
       "template": "sauti",
-      "bg": "usiku",
       "lane": "everyone",
+      "kicker": "Citizens",
+      "line": "Linda Mwananchi condemns the reported *abduction* of Tanzanian activist Twaha Mwaipaya in Kenya.",
+      "fact": "Civil society groups and regional lawyers report Mwaipaya was taken while in Kenya.",
+      "source": "People Daily, 2026-10-26",
+      "photo_query": "Kenyan flag and Nairobi skyline",
+      "message": "Linda Mwananchi condemns the reported abduction of Tanzanian activist Twaha Mwaipaya.",
+      "action": "Demand police accountability: report any missing persons to KNCHR",
+      "beats": [
+        "Linda Mwananchi condemns the *abduction* of Twaha Mwaipaya.",
+        "Lawyers report the Tanzanian activist was taken.",
+        "Activists demand answers from security agencies.",
+        "Kenyans demand: the IG investigates this."
+      ],
+      "caption": "Activists demand answers over the reported abduction of a regional visitor. Safety is a right for all.\n\n#HumanRights #KenyaOnRecord",
+      "who": "Inspector-General of Police",
+      "where": "Nairobi",
+      "when": "26 Oct 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Cross-border safety and human rights standards are called into question.",
+      "bg": "usiku",
       "publish_at": "2026-10-26T14:52:00+03:00",
-      "status": "planned",
       "hot": true,
+      "avoid": [
+        "Nairobi residents face three days of dry taps as Nairobi Water shuts down pipes for maintenance."
+      ],
       "breaking": {
         "title": "Linda Mwananchi condemns abduction of Tanzanian activist Twaha Mwaipaya in Kenya",
         "outlets": [
@@ -532,18 +607,121 @@
           "title": "Linda Mwananchi condemns abduction of Tanzanian activist Twaha Mwaipaya in Kenya",
           "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQmlOaUo2WTNTUE56bk05Q0YyOFdiM2lKcTFHMks5ZUx1U1BtRi0zc3NBXzg0Mi1GZWRLQ2tRWW1LcHhmT0tiazduMVROLVNJRk1hZ0RkdTdQT1dhX2gzOVJMbklZQmFkSU5wcjVGMHdyX0w4Y1FXSlRUeVhwMFJmd3I0SzVlSjlsQ1RUSXo0TTZRUGRpNW51Y090cVBSUWhNTDA5d2hERUZQclNMZENBYXhXX3E1UTRaZ0hRbVpNUVQ0Zw?oc=5",
           "published": "2026-10-26"
+        },
+        {
+          "outlet": "People Daily",
+          "title": "Uganda Law Society condemns reported abduction of Tanzanian activist Mwaipaya in Kenya",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPX1NuUU9pb250QWlkanY4UUZRay05ODQxSjdEYlNDd2FQVlJ4TkNtQWNQTFZPOEpBUENhTm4tbV9DNl96aEVMbjVEN0RNNFBqcDVfRXYzZFVqNl9sZzExNy11OGxYeGpTWGdyUkk5TjhjWjJ3MDBDaGFET0pkN2FhOURYZW1vS09KOWh0dXY0TDZDZEdWcVRicy1FWE1VUUlqdlpwSnFLa1lIRHVMNzlpM2VTNk5TWmRYbnh3?oc=5",
+          "published": "2026-10-26"
         }
       ],
-      "avoid": [
-        "Nairobi residents face three days of dry taps as Nairobi Water shuts down pipes for maintenance."
-      ]
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 7,
+        "picture": 7,
+        "hold": 7,
+        "demand": 8,
+        "action": 5,
+        "fair": 7,
+        "impact": 7,
+        "avg": 7.2,
+        "note": "Action must end with a concrete, lawful demand to a named office, not a vague report instruction."
+      },
+      "drafted_at": "2026-10-27T09:25:07.156589+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-hot-1026b1432-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/linda-mwananchi-opposes-abduction-of-tanzanian-activist-twaha-mwaipaya/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 604
+    },
+    {
+      "id": "2026-w44-hot-1027",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Students",
+      "line": "EACC recovers a *2.7-acre* school playground in Kiambu after a successful court ruling.",
+      "fact": "The anti-graft agency secured the recovery of the grabbed public school land in Kiambu county.",
+      "source": "Capital FM News, 2026-10-27",
+      "photo_query": "primary school playground Kenya",
+      "message": "EACC recovers a 2.7-acre school playground after a court ruling.",
+      "action": "Report grabbed public land to EACC through their official portal",
+      "beats": [
+        "EACC recovers a *2.7-acre* school playground after court ruling.",
+        "The land had been grabbed from public school children.",
+        "Courts ruled that public school property must be returned.",
+        "Kenyans demand: EACC targets all other grabbed school land next."
+      ],
+      "caption": "Public land belongs to our children. EACC takes back 2.7 acres in Kiambu. Share this win.\n\n#FollowTheMoney #KenyaOnRecord",
+      "who": "EACC CEO Twalib Mbarak",
+      "where": "Kiambu",
+      "when": "27 Oct 2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "School children get their playground back from private grabbers.",
+      "bg": "usiku",
+      "publish_at": "2026-10-27T14:15:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "EACC Recovers 2.7-Acre School Playground in Kikuyu After Court Ruling",
+          "link": "https://capitalfm.africa/eacc-recovers-2-7-acre-school-playground-in-kikuyu-after-court-ruling/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-27"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 7,
+        "picture": 7,
+        "hold": 7,
+        "demand": 8,
+        "action": 7,
+        "fair": 7,
+        "impact": 8,
+        "avg": 7.5,
+        "note": "Solid post with clear impact; ensure the action names the specific office and lawful demand directly."
+      },
+      "drafted_at": "2026-10-27T09:25:07.156592+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-hot-1027-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "file",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127809-bungoma-teacher-accused-demanding-ksh300000-bribe-secure-tsc-jobs-arrested",
+      "reel": true,
+      "tg_msg": 605
     }
   ],
   "scripts": {
-    "radio": "Habari zenu, this is Kenya on Record. Nairobi taps are set to run dry once again. This week, the Nairobi City Water and Sewerage Company announced a three-day complete shutdown of the main supply line to allow for pipeline maintenance. While routine maintenance is an accepted part of utility management, the lived reality for Nairobi residents tells a much heavier story.\n\nFor households across Kasarani, Lang'ata, Dagoretti, and Eastlands, three days of dry taps is not a minor inconvenience. It is a costly disruption. The moment an official shutdown notice is circulated, private water bowsers and vendors instantly inflate their prices, turning an essential public service into an extortionate commodity. Families are forced to dig deep into their pockets just to cook and access basic sanitation.\n\nWe must ask Nairobi Water and the County Government: what safeguards have been instituted to protect citizens from price-gouging cartels during scheduled works? Where are the emergency relief bowsers for public clinics, schools, and informal settlements? Infrastructure maintenance must not continually penalize the taxpayer while enriching private profiteers. Take note of your meter readings before the shutdown begins, monitor what your ward representatives are doing, and hold your utility provider accountable.\n\nKwa ufupi: Kampuni ya Maji ya Nairobi imetangaza kufunga mabomba kwa siku tatu kwa ajili ya ukarabati. Hakikisha umehifadhi maji ya kutosha mapema, piga picha mita yako, na uwe mwangalifu na walanguzi wanaopandisha bei za maji kiholela wakati huu.",
-    "voice_note": "Habari zenu, this is Kenya on Record with a heads-up for everyone in Nairobi. Nairobi Water has announced a three-day maintenance shutdown that will cut supply across several estates. We all know what happens next: the taps dry up and the water bowser business immediately doubles or triples prices. Here is what we need to do. First, harvest and store enough water for domestic use right now before pressure falls off. Second, if you rely on vendors, agree on prices beforehand so you are not exploited in an emergency. Lastly, check and document your water meter reading today before the shutdown starts, so you aren't billed for air when the lines are repressurized. Tuwe macho, share this note with your estate group, and plan ahead.",
-    "sms": "Usiibiwe: Nairobi Water shutdown is here. Store water early and record your meter reading today. Do not let vendors overcharge you for essential public water.",
-    "reels": "Three full days without a single drop from the tap. Nairobi Water calls it scheduled maintenance. But on the ground, it means families paying triple to private water vendors just to survive the week. Maintenance is necessary, but leaving citizens at the mercy of informal cartels is unacceptable. Store your water today, check your meter, and demand proper contingency plans from City Hall."
+    "radio": "Welcome to Kenya on Record, keeping public interest on the ledger. \n\nFirst, public property belongs to the public. The Ethics and Anti-Corruption Commission has officially recovered a 2.7-acre school playground in Kikuyu following a landmark court ruling. For years, private interests have attempted to carve up recreational spaces meant for our children. This judgment sends a direct message to land cartels: title deeds acquired through fraud will remain worthless paper.\n\nIn the capital, taps ran dry as Nairobi Water shut down supply across several estates for three days of pipeline maintenance. While scheduled repairs are necessary to plug system losses, Nairobi City County must ensure rationing schedules are strictly adhered to and that water bowsers do not exploit desperate residents in the interim.\n\nMeanwhile, human rights defenders under Linda Mwananchi have raised alarm following the reported abduction of Tanzanian activist Twaha Mwaipaya. The group is demanding an immediate investigation from Kenyan authorities, stressing that Kenya's territorial integrity must never be compromised to silence foreign dissidents seeking refuge.\n\nKwa ufupi wiki hii: Shirika la EACC limefaulu kurejesha ekari 2.7 za uwanja wa shule huko Kikuyu baada ya uamuzi wa mahakama. Nairobi Water ilisitisha usambazaji wa maji kwa siku tatu ili kufanya ukarabati wa mabomba, huku wanaharakati wa Linda Mwananchi wakilaani kutekwa nyara kwa mwanaharakati wa Tanzania, Twaha Mwaipaya, hapa nchini. Kaa macho, linda haki yako.",
+    "voice_note": "Hello everyone, Kenya on Record here with your weekly brief.\n\nA big win for public assets: EACC has recovered a 2.7-acre school playground in Kikuyu through a court order. If you've been eying public school land, take note—the courts are revoking those illegal titles.\n\nIn Nairobi, Nairobi Water's three-day pipeline shutdown disrupted several estates. Upgrades are fair, but we demand predictability and an end to artificial cartels hiking water prices during maintenance.\n\nFinally, human rights group Linda Mwananchi has called out the reported abduction of Tanzanian activist Twaha Mwaipaya in Kenya. Our sovereignty and constitutional guarantees on asylum cannot be discarded quietly.\n\nKeep safe, question the paperwork, and look out for your community.",
+    "sms": "Usiibiwe: Public utilities and school grounds cannot be privatised legally. Always do an official search at Ardhisasa or Lands Registry before buying land.",
+    "reels": "For years, private grabbers thought they could swallow a 2.7-acre school playground in Kikuyu. They were wrong. Following a decisive court ruling, the EACC has reclaimed the land for the community. The lesson is plain: public property cannot be laundered through corrupt paperwork. If you bought grabbed school land, you don't own property—you own a lawsuit waiting to happen."
   },
   "spend_usd": 0.0
 }

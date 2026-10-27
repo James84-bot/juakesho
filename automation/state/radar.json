@@ -1,32 +1,16 @@
 {
- "fetched": "2026-10-26T21:53:25.966053+00:00",
+ "fetched": "2026-10-27T06:06:20.955114+00:00",
  "x": [
-  {
-   "name": "Nyaribari Si Chache",
-   "tweets": ""
-  },
-  {
-   "name": "#ZaheerJhandaOnObinnaShow",
-   "tweets": ""
-  },
-  {
-   "name": "Ballon",
-   "tweets": ""
-  },
   {
    "name": "Harry Kane",
    "tweets": ""
   },
   {
-   "name": "#EternalDwellingPlace",
+   "name": "#BallonDor",
    "tweets": ""
   },
   {
-   "name": "Keumbu",
-   "tweets": ""
-  },
-  {
-   "name": "Messi",
+   "name": "#MainaAndKingangi",
    "tweets": ""
   },
   {
@@ -34,19 +18,23 @@
    "tweets": ""
   },
   {
-   "name": "Serbia",
+   "name": "Kanyari",
    "tweets": ""
   },
   {
-   "name": "#KituiFocus",
+   "name": "#eternaldwellingplace",
    "tweets": ""
   },
   {
-   "name": "Brazil",
+   "name": "#KonzaNeverSleeps",
    "tweets": ""
   },
   {
-   "name": "Ruto Delivers",
+   "name": "#RobisearchBoostingSMEs",
+   "tweets": ""
+  },
+  {
+   "name": "nyaribari si chache",
    "tweets": ""
   },
   {
@@ -54,27 +42,19 @@
    "tweets": ""
   },
   {
-   "name": "kaa rada",
+   "name": "RobiVisitorApp Na Robisearch",
    "tweets": ""
   },
   {
-   "name": "#CousinsUnited",
+   "name": "Serbia",
    "tweets": ""
   },
   {
-   "name": "pwani innovation week",
+   "name": "Contactless VisitorApp",
    "tweets": ""
   },
   {
-   "name": "DSTV",
-   "tweets": ""
-  },
-  {
-   "name": "Lamine Yamal",
-   "tweets": ""
-  },
-  {
-   "name": "#swahilipotat10",
+   "name": "ruto delivers",
    "tweets": ""
   },
   {
@@ -82,11 +62,23 @@
    "tweets": ""
   },
   {
+   "name": "Brazil",
+   "tweets": ""
+  },
+  {
    "name": "livestreaming intact",
    "tweets": ""
   },
   {
-   "name": "Kusema Na Kutenda",
+   "name": "Maasai Mall",
+   "tweets": ""
+  },
+  {
+   "name": "Konza Technopolis",
+   "tweets": ""
+  },
+  {
+   "name": "DSTV",
    "tweets": ""
   },
   {
@@ -94,19 +86,19 @@
    "tweets": ""
   },
   {
-   "name": "Lula",
+   "name": "Tash",
    "tweets": ""
   },
   {
-   "name": "Kalonzo",
+   "name": "kusema na kutenda",
    "tweets": ""
   },
   {
-   "name": "Kisii University",
+   "name": "Messi",
    "tweets": ""
   },
   {
-   "name": "DAZN",
+   "name": "Ongata Rongai",
    "tweets": ""
   },
   {
@@ -114,557 +106,27 @@
    "tweets": ""
   },
   {
-   "name": "Somalis Are Peaceful",
+   "name": "somalis are peaceful",
    "tweets": ""
   },
   {
-   "name": "wakamba na ruto",
+   "name": "Raya",
+   "tweets": ""
+  },
+  {
+   "name": "obinna show live",
+   "tweets": ""
+  },
+  {
+   "name": "Lula",
    "tweets": ""
   }
  ],
- "videos": [
-  {
-   "title": "NTV reveals the faces behind the collapsed Eastleigh building in Nairobi",
-   "channel": "NTV Kenya",
-   "views": 8408,
-   "published": "2026-10-26T18:48:14+00:00",
-   "per_hour": 2724,
-   "url": "https://www.youtube.com/watch?v=n0iBnUyd6aY",
-   "short": "https://youtube.com/shorts/n0iBnUyd6aY"
-  },
-  {
-   "title": "Mombasa County Officer Killed in Likoni Gang Attack, Rifle and Ammunition Stolen",
-   "channel": "KTN News",
-   "views": 6411,
-   "published": "2026-10-26T18:42:00+00:00",
-   "per_hour": 2009,
-   "url": "https://www.youtube.com/watch?v=nI973hvhqgw",
-   "short": "https://youtube.com/shorts/nI973hvhqgw"
-  },
-  {
-   "title": "MONDAY REPORT NEWS ~26TH OCT, 2026",
-   "channel": "Citizen TV",
-   "views": 4575,
-   "published": "2026-10-26T19:32:28+00:00",
-   "per_hour": 1947,
-   "url": "https://www.youtube.com/watch?v=MiGivJEBQRQ",
-   "short": "https://youtube.com/shorts/MiGivJEBQRQ"
-  },
-  {
-   "title": "Suspect linked to two murders after bodies allegedly buried in bedrooms",
-   "channel": "Citizen TV",
-   "views": 1977,
-   "published": "2026-10-26T19:12:32+00:00",
-   "per_hour": 737,
-   "url": "https://www.youtube.com/watch?v=Py-QexstqbM",
-   "short": "https://youtube.com/shorts/Py-QexstqbM"
-  },
-  {
-   "title": "“I Don’t Think They Understand Kalonzo Musyoka”: Fresh Attack on Kenya Kwanza || State of Politics",
-   "channel": "KTN News",
-   "views": 1016,
-   "published": "2026-10-26T20:29:37+00:00",
-   "per_hour": 727,
-   "url": "https://www.youtube.com/watch?v=KE4JRlSrP9E",
-   "short": "https://youtube.com/shorts/KE4JRlSrP9E"
-  },
-  {
-   "title": "Kalonzo meets Gachagua as opposition’s push to unseat President Ruto in 2027 gathers momentum.",
-   "channel": "NTV Kenya",
-   "views": 1991,
-   "published": "2026-10-26T18:49:15+00:00",
-   "per_hour": 649,
-   "url": "https://www.youtube.com/watch?v=j4VyqIohOaU",
-   "short": "https://youtube.com/shorts/j4VyqIohOaU"
-  },
-  {
-   "title": "MPs face scrutiny over failure to amend election results livestreaming law",
-   "channel": "Citizen TV",
-   "views": 1808,
-   "published": "2026-10-26T19:02:57+00:00",
-   "per_hour": 636,
-   "url": "https://www.youtube.com/watch?v=FWpG8EI6Cx4",
-   "short": "https://youtube.com/shorts/FWpG8EI6Cx4"
-  },
-  {
-   "title": "Inside the Ebola quarantine centre: Kenyans in quarantine facility speak out",
-   "channel": "NTV Kenya",
-   "views": 1922,
-   "published": "2026-10-26T18:47:13+00:00",
-   "per_hour": 619,
-   "url": "https://www.youtube.com/watch?v=TkNUbN7hXoc",
-   "short": "https://youtube.com/shorts/TkNUbN7hXoc"
-  },
-  {
-   "title": "DCP and Wiper dismiss claims of power-sharing talks between Gachagua and Kalonzo",
-   "channel": "Citizen TV",
-   "views": 1418,
-   "published": "2026-10-26T19:00:00+00:00",
-   "per_hour": 491,
-   "url": "https://www.youtube.com/watch?v=_XjJk8ZBomY",
-   "short": "https://youtube.com/shorts/_XjJk8ZBomY"
-  },
-  {
-   "title": "Mtito Andei accident: Survivors recount tensions, disagreements that preceded the deadly journey",
-   "channel": "NTV Kenya",
-   "views": 1445,
-   "published": "2026-10-26T18:48:30+00:00",
-   "per_hour": 469,
-   "url": "https://www.youtube.com/watch?v=DnMUQPKuhno",
-   "short": "https://youtube.com/shorts/DnMUQPKuhno"
-  },
-  {
-   "title": "Ruto courts Kalonzo’s support ahead of 2027 elections",
-   "channel": "Citizen TV",
-   "views": 1291,
-   "published": "2026-10-26T18:55:27+00:00",
-   "per_hour": 435,
-   "url": "https://www.youtube.com/watch?v=P-bCCMgs25g",
-   "short": "https://youtube.com/shorts/P-bCCMgs25g"
-  },
-  {
-   "title": "MONDAY REPORT I EASTLEIGH: ANATOMY OF TRAGEDIES",
-   "channel": "Citizen TV",
-   "views": 427,
-   "published": "2026-10-26T20:49:06+00:00",
-   "per_hour": 398,
-   "url": "https://www.youtube.com/watch?v=GsILfG9NZ58",
-   "short": "https://youtube.com/shorts/GsILfG9NZ58"
-  },
-  {
-   "title": "NSE market value crosses 4 trillion shillings despite declining trading activity",
-   "channel": "Citizen TV",
-   "views": 955,
-   "published": "2026-10-26T19:13:50+00:00",
-   "per_hour": 359,
-   "url": "https://www.youtube.com/watch?v=-50vbyhL_yc",
-   "short": "https://youtube.com/shorts/-50vbyhL_yc"
-  },
-  {
-   "title": "Election Law Push & Pull: Battle over electoral reforms shifts between  Senate and National Assembly",
-   "channel": "NTV Kenya",
-   "views": 1020,
-   "published": "2026-10-26T18:48:55+00:00",
-   "per_hour": 332,
-   "url": "https://www.youtube.com/watch?v=dgDF49ZK4HQ",
-   "short": "https://youtube.com/shorts/dgDF49ZK4HQ"
-  },
-  {
-   "title": "Eastleigh Building Collapse: Search Enters Day Four as Hopes of Finding Survivors Fade",
-   "channel": "KTN News",
-   "views": 1078,
-   "published": "2026-10-26T18:38:45+00:00",
-   "per_hour": 332,
-   "url": "https://www.youtube.com/watch?v=CvA7PBc5dOk",
-   "short": "https://youtube.com/shorts/CvA7PBc5dOk"
-  }
- ],
- "errors": {},
- "catalog": [
-  {
-   "title": "MONDAY REPORT I EASTLEIGH: ANATOMY OF TRAGEDIES",
-   "channel": "Citizen TV",
-   "views": 427,
-   "published": "2026-10-26T20:49:06+00:00",
-   "per_hour": 398,
-   "url": "https://www.youtube.com/watch?v=GsILfG9NZ58",
-   "short": "https://youtube.com/shorts/GsILfG9NZ58"
-  },
-  {
-   "title": "“I Don’t Think They Understand Kalonzo Musyoka”: Fresh Attack on Kenya Kwanza || State of Politics",
-   "channel": "KTN News",
-   "views": 1016,
-   "published": "2026-10-26T20:29:37+00:00",
-   "per_hour": 727,
-   "url": "https://www.youtube.com/watch?v=KE4JRlSrP9E",
-   "short": "https://youtube.com/shorts/KE4JRlSrP9E"
-  },
-  {
-   "title": "Mombasa: Armed gang attack leaves county askari dead, three other people injured",
-   "channel": "NTV Kenya",
-   "views": 428,
-   "published": "2026-10-26T20:22:35+00:00",
-   "per_hour": 283,
-   "url": "https://www.youtube.com/watch?v=eAOAp4rAo6o",
-   "short": "https://youtube.com/shorts/eAOAp4rAo6o"
-  },
-  {
-   "title": "Standard Chartered Nairobi Marathon organisers reflect on the 2026 edition | Sport On",
-   "channel": "NTV Kenya",
-   "views": 67,
-   "published": "2026-10-26T20:09:24+00:00",
-   "per_hour": 39,
-   "url": "https://www.youtube.com/watch?v=TRhknW0N_PI",
-   "short": "https://youtube.com/shorts/TRhknW0N_PI"
-  },
-  {
-   "title": "MONDAY REPORT NEWS ~26TH OCT, 2026",
-   "channel": "Citizen TV",
-   "views": 4575,
-   "published": "2026-10-26T19:32:28+00:00",
-   "per_hour": 1947,
-   "url": "https://www.youtube.com/watch?v=MiGivJEBQRQ",
-   "short": "https://youtube.com/shorts/MiGivJEBQRQ"
-  },
-  {
-   "title": "KCB reach Impala Floodlit Tournament final after thrashing Mwamba",
-   "channel": "Citizen TV",
-   "views": 237,
-   "published": "2026-10-26T19:27:50+00:00",
-   "per_hour": 98,
-   "url": "https://www.youtube.com/watch?v=VKOcpjHbRDI",
-   "short": "https://youtube.com/shorts/VKOcpjHbRDI"
-  },
-  {
-   "title": "172 junior golfers take part in the NCBA U.S. Kids Golf Nairobi Local Tour Championship",
-   "channel": "NTV Kenya",
-   "views": 73,
-   "published": "2026-10-26T19:26:10+00:00",
-   "per_hour": 30,
-   "url": "https://www.youtube.com/watch?v=NOZ0km_SpAg",
-   "short": "https://youtube.com/shorts/NOZ0km_SpAg"
-  },
-  {
-   "title": "Edwin Mudanyi takes a three-shot lead ahead of final round of Sunshine Development Tour",
-   "channel": "NTV Kenya",
-   "views": 109,
-   "published": "2026-10-26T19:26:07+00:00",
-   "per_hour": 44,
-   "url": "https://www.youtube.com/watch?v=nx5TnlDZlvk",
-   "short": "https://youtube.com/shorts/nx5TnlDZlvk"
-  },
-  {
-   "title": "Standing Rock crowned 2026 Pink Polo champions",
-   "channel": "Citizen TV",
-   "views": 390,
-   "published": "2026-10-26T19:26:01+00:00",
-   "per_hour": 159,
-   "url": "https://www.youtube.com/watch?v=DN2iubB1QcQ",
-   "short": "https://youtube.com/shorts/DN2iubB1QcQ"
-  },
-  {
-   "title": "Junior Starlets make history with FIFA U-17 World Cup round of 16 qualification",
-   "channel": "Citizen TV",
-   "views": 532,
-   "published": "2026-10-26T19:20:53+00:00",
-   "per_hour": 209,
-   "url": "https://www.youtube.com/watch?v=SvIQpSaQ7H8",
-   "short": "https://youtube.com/shorts/SvIQpSaQ7H8"
-  },
-  {
-   "title": "Made in Kenya:Heritage Foods Kenya taps into growing demand for locally made dog food",
-   "channel": "Citizen TV",
-   "views": 468,
-   "published": "2026-10-26T19:16:03+00:00",
-   "per_hour": 178,
-   "url": "https://www.youtube.com/watch?v=Fnro5N0roME",
-   "short": "https://youtube.com/shorts/Fnro5N0roME"
-  },
-  {
-   "title": "NSE market value crosses 4 trillion shillings despite declining trading activity",
-   "channel": "Citizen TV",
-   "views": 955,
-   "published": "2026-10-26T19:13:50+00:00",
-   "per_hour": 359,
-   "url": "https://www.youtube.com/watch?v=-50vbyhL_yc",
-   "short": "https://youtube.com/shorts/-50vbyhL_yc"
-  },
-  {
-   "title": "37 Uber motorbike riders secure court victory against Uber company",
-   "channel": "NTV Kenya",
-   "views": 832,
-   "published": "2026-10-26T19:13:40+00:00",
-   "per_hour": 312,
-   "url": "https://www.youtube.com/watch?v=UOHQQdyK0Mo",
-   "short": "https://youtube.com/shorts/UOHQQdyK0Mo"
-  },
-  {
-   "title": "President Ruto flagged off a Sh75 million last-mile electricity project in Katheka, Makueni County",
-   "channel": "NTV Kenya",
-   "views": 186,
-   "published": "2026-10-26T19:13:37+00:00",
-   "per_hour": 70,
-   "url": "https://www.youtube.com/watch?v=GnMLqkoqWno",
-   "short": "https://youtube.com/shorts/GnMLqkoqWno"
-  },
-  {
-   "title": "Nairobi Securities Exchange attracts 333,043 new investors in nine months",
-   "channel": "NTV Kenya",
-   "views": 207,
-   "published": "2026-10-26T19:13:33+00:00",
-   "per_hour": 78,
-   "url": "https://www.youtube.com/watch?v=hE1udmhlfoY",
-   "short": "https://youtube.com/shorts/hE1udmhlfoY"
-  },
-  {
-   "title": "DSTV slashes subscription fees to retain its market share",
-   "channel": "NTV Kenya",
-   "views": 737,
-   "published": "2026-10-26T19:13:15+00:00",
-   "per_hour": 276,
-   "url": "https://www.youtube.com/watch?v=BrYMwpwEZls",
-   "short": "https://youtube.com/shorts/BrYMwpwEZls"
-  },
-  {
-   "title": "Police officer Kipkemboi Sang arrested, detained over Dr Mutiso murder",
-   "channel": "NTV Kenya",
-   "views": 570,
-   "published": "2026-10-26T19:12:59+00:00",
-   "per_hour": 213,
-   "url": "https://www.youtube.com/watch?v=aFqMVd-HdYc",
-   "short": "https://youtube.com/shorts/aFqMVd-HdYc"
-  },
-  {
-   "title": "Suspect linked to two murders after bodies allegedly buried in bedrooms",
-   "channel": "Citizen TV",
-   "views": 1977,
-   "published": "2026-10-26T19:12:32+00:00",
-   "per_hour": 737,
-   "url": "https://www.youtube.com/watch?v=Py-QexstqbM",
-   "short": "https://youtube.com/shorts/Py-QexstqbM"
-  },
-  {
-   "title": "MultiChoice unveils new packages in major pricing overhaul",
-   "channel": "Citizen TV",
-   "views": 801,
-   "published": "2026-10-26T19:10:44+00:00",
-   "per_hour": 295,
-   "url": "https://www.youtube.com/watch?v=1KIK10vYcMs",
-   "short": "https://youtube.com/shorts/1KIK10vYcMs"
-  },
-  {
-   "title": "Royal Media Services receives Global Leadership Award",
-   "channel": "Citizen TV",
-   "views": 528,
-   "published": "2026-10-26T19:08:27+00:00",
-   "per_hour": 192,
-   "url": "https://www.youtube.com/watch?v=VDM8-kW_MME",
-   "short": "https://youtube.com/shorts/VDM8-kW_MME"
-  },
-  {
-   "title": "Kenya releases first 20 Ebola contacts after 21 days of monitoring",
-   "channel": "Citizen TV",
-   "views": 321,
-   "published": "2026-10-26T19:06:28+00:00",
-   "per_hour": 115,
-   "url": "https://www.youtube.com/watch?v=mcu-XHiR_DQ",
-   "short": "https://youtube.com/shorts/mcu-XHiR_DQ"
-  },
-  {
-   "title": "MPs face scrutiny over failure to amend election results livestreaming law",
-   "channel": "Citizen TV",
-   "views": 1808,
-   "published": "2026-10-26T19:02:57+00:00",
-   "per_hour": 636,
-   "url": "https://www.youtube.com/watch?v=FWpG8EI6Cx4",
-   "short": "https://youtube.com/shorts/FWpG8EI6Cx4"
-  },
-  {
-   "title": "Kenya’s Baseball5 Team Prepares for Historic Youth Olympic Games Debut",
-   "channel": "KTN News",
-   "views": 174,
-   "published": "2026-10-26T19:00:49+00:00",
-   "per_hour": 60,
-   "url": "https://www.youtube.com/watch?v=eqj-_QwjxAw",
-   "short": "https://youtube.com/shorts/eqj-_QwjxAw"
-  },
-  {
-   "title": "DCP and Wiper dismiss claims of power-sharing talks between Gachagua and Kalonzo",
-   "channel": "Citizen TV",
-   "views": 1418,
-   "published": "2026-10-26T19:00:00+00:00",
-   "per_hour": 491,
-   "url": "https://www.youtube.com/watch?v=_XjJk8ZBomY",
-   "short": "https://youtube.com/shorts/_XjJk8ZBomY"
-  },
-  {
-   "title": "Tusker FC Eliminated From CAF Confederation Cup After Draw With Singida",
-   "channel": "KTN News",
-   "views": 185,
-   "published": "2026-10-26T18:59:52+00:00",
-   "per_hour": 64,
-   "url": "https://www.youtube.com/watch?v=F9EOhtsy8To",
-   "short": "https://youtube.com/shorts/F9EOhtsy8To"
-  },
-  {
-   "title": "Junior Starlets Draw Japan in Historic U17 Women’s World Cup Round of 16",
-   "channel": "KTN News",
-   "views": 337,
-   "published": "2026-10-26T18:58:27+00:00",
-   "per_hour": 116,
-   "url": "https://www.youtube.com/watch?v=sgc4KBQfHr0",
-   "short": "https://youtube.com/shorts/sgc4KBQfHr0"
-  },
-  {
-   "title": "Kenya’s Junior Starlets Make History, Reach U17 Women’s World Cup Round of 16",
-   "channel": "KTN News",
-   "views": 436,
-   "published": "2026-10-26T18:57:44+00:00",
-   "per_hour": 149,
-   "url": "https://www.youtube.com/watch?v=ul_4Lv0K_kE",
-   "short": "https://youtube.com/shorts/ul_4Lv0K_kE"
-  },
-  {
-   "title": "Court grants DCI 14 days to detain police inspector over two murders",
-   "channel": "Citizen TV",
-   "views": 462,
-   "published": "2026-10-26T18:57:10+00:00",
-   "per_hour": 157,
-   "url": "https://www.youtube.com/watch?v=ek5zD5E4yUM",
-   "short": "https://youtube.com/shorts/ek5zD5E4yUM"
-  },
-  {
-   "title": "KTN PRIME NEWS || OCTOBER 26TH 2027",
-   "channel": "KTN News",
-   "views": 925,
-   "published": "2026-10-26T18:56:19+00:00",
-   "per_hour": 313,
-   "url": "https://www.youtube.com/watch?v=6q_x7OamRCI",
-   "short": "https://youtube.com/shorts/6q_x7OamRCI"
-  },
-  {
-   "title": "Ruto courts Kalonzo’s support ahead of 2027 elections",
-   "channel": "Citizen TV",
-   "views": 1291,
-   "published": "2026-10-26T18:55:27+00:00",
-   "per_hour": 435,
-   "url": "https://www.youtube.com/watch?v=P-bCCMgs25g",
-   "short": "https://youtube.com/shorts/P-bCCMgs25g"
-  },
-  {
-   "title": "3,000 Western Kenya Farmers Trained to Boost Milk Production and Incomes",
-   "channel": "KTN News",
-   "views": 108,
-   "published": "2026-10-26T18:52:25+00:00",
-   "per_hour": 36,
-   "url": "https://www.youtube.com/watch?v=igwMB6oZXwc",
-   "short": "https://youtube.com/shorts/igwMB6oZXwc"
-  },
-  {
-   "title": "1,200 Entrepreneurs Head to Kigali as Kenyan MSMEs Target New Markets",
-   "channel": "KTN News",
-   "views": 128,
-   "published": "2026-10-26T18:51:33+00:00",
-   "per_hour": 42,
-   "url": "https://www.youtube.com/watch?v=16c4GMwnExQ",
-   "short": "https://youtube.com/shorts/16c4GMwnExQ"
-  },
-  {
-   "title": "Kenya and 18 African Countries Back Regional Shipping Network to Cut Trade Costs",
-   "channel": "KTN News",
-   "views": 189,
-   "published": "2026-10-26T18:50:05+00:00",
-   "per_hour": 62,
-   "url": "https://www.youtube.com/watch?v=g_QlcqduCu8",
-   "short": "https://youtube.com/shorts/g_QlcqduCu8"
-  },
-  {
-   "title": "Kalonzo meets Gachagua as opposition’s push to unseat President Ruto in 2027 gathers momentum.",
-   "channel": "NTV Kenya",
-   "views": 1991,
-   "published": "2026-10-26T18:49:15+00:00",
-   "per_hour": 649,
-   "url": "https://www.youtube.com/watch?v=j4VyqIohOaU",
-   "short": "https://youtube.com/shorts/j4VyqIohOaU"
-  },
-  {
-   "title": "Election Law Push & Pull: Battle over electoral reforms shifts between  Senate and National Assembly",
-   "channel": "NTV Kenya",
-   "views": 1020,
-   "published": "2026-10-26T18:48:55+00:00",
-   "per_hour": 332,
-   "url": "https://www.youtube.com/watch?v=dgDF49ZK4HQ",
-   "short": "https://youtube.com/shorts/dgDF49ZK4HQ"
-  },
-  {
-   "title": "National exams for primary and junior secondary school learners begin across Kenya",
-   "channel": "NTV Kenya",
-   "views": 442,
-   "published": "2026-10-26T18:48:38+00:00",
-   "per_hour": 144,
-   "url": "https://www.youtube.com/watch?v=bR0uBToNpts",
-   "short": "https://youtube.com/shorts/bR0uBToNpts"
-  },
-  {
-   "title": "Mtito Andei accident: Survivors recount tensions, disagreements that preceded the deadly journey",
-   "channel": "NTV Kenya",
-   "views": 1445,
-   "published": "2026-10-26T18:48:30+00:00",
-   "per_hour": 469,
-   "url": "https://www.youtube.com/watch?v=DnMUQPKuhno",
-   "short": "https://youtube.com/shorts/DnMUQPKuhno"
-  },
-  {
-   "title": "NTV reveals the faces behind the collapsed Eastleigh building in Nairobi",
-   "channel": "NTV Kenya",
-   "views": 8408,
-   "published": "2026-10-26T18:48:14+00:00",
-   "per_hour": 2724,
-   "url": "https://www.youtube.com/watch?v=n0iBnUyd6aY",
-   "short": "https://youtube.com/shorts/n0iBnUyd6aY"
-  },
-  {
-   "title": "Inside the Ebola quarantine centre: Kenyans in quarantine facility speak out",
-   "channel": "NTV Kenya",
-   "views": 1922,
-   "published": "2026-10-26T18:47:13+00:00",
-   "per_hour": 619,
-   "url": "https://www.youtube.com/watch?v=TkNUbN7hXoc",
-   "short": "https://youtube.com/shorts/TkNUbN7hXoc"
-  },
-  {
-   "title": "Russia-Africa Summit: Kenya Seeks Answers Over Citizens Caught in Ukraine War",
-   "channel": "KTN News",
-   "views": 423,
-   "published": "2026-10-26T18:44:23+00:00",
-   "per_hour": 134,
-   "url": "https://www.youtube.com/watch?v=TP9Dq9FHXxE",
-   "short": "https://youtube.com/shorts/TP9Dq9FHXxE"
-  },
-  {
-   "title": "Mombasa County Officer Killed in Likoni Gang Attack, Rifle and Ammunition Stolen",
-   "channel": "KTN News",
-   "views": 6411,
-   "published": "2026-10-26T18:42:00+00:00",
-   "per_hour": 2009,
-   "url": "https://www.youtube.com/watch?v=nI973hvhqgw",
-   "short": "https://youtube.com/shorts/nI973hvhqgw"
-  },
-  {
-   "title": "Eastleigh Building Collapse: Search Enters Day Four as Hopes of Finding Survivors Fade",
-   "channel": "KTN News",
-   "views": 1078,
-   "published": "2026-10-26T18:38:45+00:00",
-   "per_hour": 332,
-   "url": "https://www.youtube.com/watch?v=CvA7PBc5dOk",
-   "short": "https://youtube.com/shorts/CvA7PBc5dOk"
-  },
-  {
-   "title": "Foreign Learners Join Kenyan Candidates for KPSEA and KJSEA in Uasin Gishu",
-   "channel": "KTN News",
-   "views": 164,
-   "published": "2026-10-26T18:36:09+00:00",
-   "per_hour": 50,
-   "url": "https://www.youtube.com/watch?v=6Wj3WoFFoG8",
-   "short": "https://youtube.com/shorts/6Wj3WoFFoG8"
-  },
-  {
-   "title": "2.5 Million Learners Begin KPSEA and KJSEA as Government Warns Against Cheating",
-   "channel": "KTN News",
-   "views": 438,
-   "published": "2026-10-26T18:34:29+00:00",
-   "per_hour": 132,
-   "url": "https://www.youtube.com/watch?v=zHYjKBZaTns",
-   "short": "https://youtube.com/shorts/zHYjKBZaTns"
-  },
-  {
-   "title": "The Bold Standard: Closing ranks",
-   "channel": "KTN News",
-   "views": 344,
-   "published": "2026-10-26T18:26:06+00:00",
-   "per_hour": 100,
-   "url": "https://www.youtube.com/watch?v=vUh2TACeNmI",
-   "short": "https://youtube.com/shorts/vUh2TACeNmI"
-  }
- ]
+ "videos": [],
+ "errors": {
+  "Citizen TV": "HTTP Error 404: Not Found",
+  "NTV Kenya": "HTTP Error 404: Not Found",
+  "KTN News": "HTTP Error 404: Not Found"
+ },
+ "catalog": []
 }
