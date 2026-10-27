@@ -1,184 +1,148 @@
 {
-  "fetched": "2026-10-27T19:24:00.702260+00:00",
+  "fetched": "2026-10-27T21:30:31.544524+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "dortmund vs werder",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Fans verzögern Anpfiff von BVB-Spiel",
+          "url": "https://www.t-online.de/sport/fussball/dfb-pokal/id_101500498/dfb-pokal-fans-verzoegern-anpfiff-bei-bvb-gegen-werder-bremen.html",
+          "source": "T-Online"
+        },
+        {
+          "title": "Pokalvorschau mit Nils Petersen: \"Das sind Spiele, die sind untippbar\"",
+          "url": "https://www.kicker.de/pokalvorschau-mit-nils-petersen-das-sind-spiele-die-sind-untippbar-1265485/video",
+          "source": "Kicker"
+        },
+        {
+          "title": "Vorbericht",
+          "url": "https://www.werder.de/spiele/maenner/detail/2026-2027/078f48c4-5282-4ec6-bcd5-251a920a6c2b/vorbericht",
+          "source": "www.werder.de"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "al-shamal vs al-hilal",
       "traffic": "1000+",
       "news": [
         {
-          "title": "After Somerville and Martinelli: Inzaghi's decision deprives Al-Hilal of three stars against Al-Shamal",
-          "url": "https://www.goal.com/en/news/after-somerville-and-martinelli-inzaghi-s-decision-deprives-al-hilal-of-three-stars-against-al-shamal/bltee0575239a3149ca",
+          "title": "Video: In a historic victory, Qatar's Al-Shamal hand Al-Hilal their first defeat in the AFC Champions League Elite",
+          "url": "https://www.goal.com/en/news/video-in-a-historic-victory-qatar-s-al-shamal-hand-al-hilal-their-first-defeat-in-the-afc-champions-league-elite/blt3b261d02a85d7cce",
           "source": "Goal.com"
         },
         {
-          "title": "Mahrez troubles Inzaghi: a firm response from the Italian coach before the anticipated battle",
-          "url": "https://www.yardbarker.com/soccer/articles/mahrez_troubles_inzaghi_a_firm_response_from_the_italian_coach_before_the_anticipated_battle/s1_17790_44476304",
+          "title": "Paderborn vs Stuttgart: First Half BTTS",
+          "url": "https://www.coinbase.com/predictions/event/KXDFBPOKAL1HBTTS-26OCT28PADVFB",
+          "source": "Coinbase"
+        },
+        {
+          "title": "Salem Al-Dawsari in the starting line-up for the first time: Al-Hilal face Al-Shamal with a side of substitutes",
+          "url": "https://www.yardbarker.com/soccer/articles/salem_al_dawsari_in_the_starting_line_up_for_the_first_time_al_hilal_face_al_shamal_with_a_side_of_substitutes/s1_17790_44480529",
           "source": "Yardbarker"
-        },
-        {
-          "title": "Saudi Pro League representatives face tough Asian tes…",
-          "url": "https://www.ysscores.com/en/news/14080056/saudi-pro-league-representatives-face-tough-asian-tests-in-the-elite",
-          "source": "YSscores"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "dortmund vs werder",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "DFB-Pokal 2026/27: Spielplan und Termine – wann spielt der FC Augsburg?",
-          "url": "https://www.augsburger-allgemeine.de/sport/dfb-pokal-26-27-spielplan-und-termine-27-10-26-114720457",
-          "source": "Augsburger Allgemeine"
-        },
-        {
-          "title": "Thioune rotiert: Itten stürmt in Dortmund",
-          "url": "https://www.werder.de/news/maenner/2026-2027/aufstellung-dortmund-27102026",
-          "source": "Werder Bremen"
-        },
-        {
-          "title": "Pokalvorschau mit Nils Petersen: \"Das sind Spiele, die sind untippbar\"",
-          "url": "https://www.kicker.de/pokalvorschau-mit-nils-petersen-das-sind-spiele-die-sind-untippbar-1265485/video",
-          "source": "Kicker"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "leipzig fc",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "1. FC Lokomotive Leipzig - VSG Altglienicke: Altglienicke mit breiter Brust - Regionalliga Nordost",
-          "url": "https://www.welt.de/sport/fussball/regionalliga/regionalliga-nordost/article6ae0f7dab3eed7c01bd702fa/1-fc-lokomotive-leipzig-vsg-altglienicke-altglienicke-mit-breiter-brust-regionalliga-nordost.html",
-          "source": "WELT"
-        },
-        {
-          "title": "Lok Leipzig und Hallescher FC trennen sich 2:2 - Highlights im Video",
-          "url": "https://www.lvz.de/sport/regional/lok-leipzig-und-hallescher-fc-trennen-sich-2-2-highlights-im-video-6LIVGB7I5JC5RP3O6AQOFWHNZE.html",
-          "source": "LVZ - Leipziger Volkszeitung"
-        },
-        {
-          "title": "Aus zwei mach drei: HFC mischt im Aufstiegsrennen wieder mit",
-          "url": "https://www.mdr.de/sport/fussball_rl/regionalliga-hallescher-fc-rot-weiss-erfurt-chemnitzer-fc-meisterrennen,regionalliga-dreikampf-100.html",
-          "source": "MDR.de"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "essen vs leipzig",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "[Übertragung**] RB Leipzig gegen Rot-Weiss Essen im live TV",
-          "url": "https://www.nychealthandhospitals.org/gouverneur-virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2FsaXNjaWFqYW1lczEuZ2l0aHViLmlvL255Yy94eXoueG1sIi8+PC9rcnBhbm8+&id=ubertragung-rb-leipzig-gegen-rot-weiss-essen-7z307",
-          "source": "NYC Health + Hospitals"
-        },
-        {
-          "title": "RWE gegen Leipzig: Schon zwei Stunden vor Anpfiff gibt es eine Sperrung",
-          "url": "https://essen.t-online.de/region/essen/id_101498288/rwe-pokalspiel-in-essen-strassen-gesperrt-zugausfaelle-bei-der-anreise.html",
-          "source": "t-online – Essen"
-        },
-        {
-          "title": "DFB-Pokal: Dank Baumgartner: Leipzig entgeht Pokal-Blamage in Essen",
-          "url": "https://www.zeit.de/news/2026-10/27/dank-baumgartner-leipzig-entgeht-pokal-blamage-in-essen",
-          "source": "DIE ZEIT"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "lazio",
+      "title": "roma",
       "traffic": "200+",
       "news": [
         {
-          "title": "++CALCIO!!Sassuolo-Lazio In Diretta Streaming Gratis (Serie A) 27 Ottobre 2026",
-          "url": "https://www.nychealthandhospitals.org/gouverneur-virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2FsaXNjaWFqYW1lczEuZ2l0aHViLmlvL255Yy94eXoueG1sIi8+PC9rcnBhbm8+&id=video-calcio-sassuolo-lazio-in-diretta-streaming",
-          "source": "NYC Health + Hospitals"
+          "title": "Roma vs Cagliari: Italian Serie A stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/ck3r57d482xqt",
+          "source": "BBC"
         },
         {
-          "title": "Torino-Como, dove vederla (Sky o Dazn) in tv e streaming: orario, probabili formazioni, arbitro, precedenti e quote",
-          "url": "https://www.ilmessaggero.it/sport/schede/torino_como_orario_formazioni_dove_vederla_sky_dazn_tv_streaming_arbitro_precedenti_quote_serie_a-torino_como_orario_e_dove_si_gioca-2-9851781.html",
-          "source": "Il Messaggero"
+          "title": "Roma’s Unbeaten Run Faces Another Test in Midweek Clash With Cagliari",
+          "url": "https://www.chiesaditotti.com/roma-matchday-coverage/44023/romas-unbeaten-run-faces-another-test-in-midweek-clash-with-cagliari",
+          "source": "Chiesa Di Totti"
         },
         {
-          "title": "Lazio, Frattesi: \"Tornare qui è sempre bello, oggi sembra di giocare in casa\"",
-          "url": "https://www.lazialita.com/2026/10/27/lazio-frattesi-tornare-qui-e-sempre-bello-oggi-sembra-di-giocare-in-casa/",
-          "source": "Lazialità"
+          "title": "Gasperini: ‘Roma need to keep everyone in top shape, Castro decisive’",
+          "url": "https://sports.yahoo.com/articles/gasperini-roma-keep-everyone-top-194000573.html",
+          "source": "Yahoo Sports"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "vinícius júnior",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
+        {
+          "title": "Beckham parabeniza Kane por Bola de Ouro com foto de infância do atacante ao lado da atual esposa",
+          "url": "https://ge.globo.com/futebol/futebol-internacional/noticia/2026/10/27/beckham-parabeniza-kane-por-bola-de-ouro-com-foto-de-infancia-do-atacante-ao-lado-da-atual-esposa.ghtml",
+          "source": "ge"
+        },
         {
           "title": "Uma propriedade de 650 bilhões de VND, que lembra um palácio, para o vencedor da Bola de Ouro, Harry Kane.",
           "url": "https://www.vietnam.vn/pt/bat-dong-san-650-ty-dong-nhu-cung-dien-cua-qua-bong-vang-harry-kane",
           "source": "Vietnam.vn"
         },
         {
-          "title": "Harry Kane ganha a Bola de Ouro",
-          "url": "https://www.deutschland.de/pt-br/news/harry-kane-ganha-a-bola-de-ouro",
-          "source": "deutschland.de"
-        },
-        {
-          "title": "Mistério até o último momento: Barcelona e Real Madrid sob o mesmo teto na noite da Bola de Ouro",
-          "url": "https://www.goal.com/br/not%C3%ADcias/misterio-ate-o-ultimo-momento-barcelona-e-real-madrid-sob-o-mesmo-teto-na-noite-da-bola-de-ouro/blt84b9780491ea6036",
-          "source": "Goal.com"
+          "title": "Argentina não cala revolta: «Relegaram o GOAT para um modesto 5.º lugar»",
+          "url": "https://www.abola.pt/noticias/argentina-nao-cala-revolta-relegaram-o-goat-para-um-modesto-5o-lugar-2026102716514337466",
+          "source": "A Bola"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "joão pedro",
+      "title": "sporting vs marítimo",
       "traffic": "100+",
       "news": [
         {
-          "title": "João Pedro vira assunto na Europa após derrota do Chelsea: 'Não há'",
-          "url": "https://www.lance.com.br/fora-de-campo/joao-pedro-vira-assunto-na-europa-apos-derrota-do-chelsea-nao-ha.html",
-          "source": "LANCE!"
+          "title": "Sporting e Marítimo em aquecimento",
+          "url": "https://www.abola.pt/video/sporting-e-maritimo-em-aquecimento-2026102719430416047",
+          "source": "A Bola"
         },
         {
-          "title": "João Pedro sofre lesão e deve perder Data Fifa da seleção",
-          "url": "https://www.correiodopovo.com.br/esportes/selecaobrasileira/joao-pedro-sofre-lesao-e-deve-perder-data-fifa-da-selecao-1.1759466",
-          "source": "Correio do Povo"
+          "title": "VÍDEO: adeptos assobiam Rui Borges durante apresentação das equipas",
+          "url": "https://cnnportugal.iol.pt/taca-da-liga/sporting/video-adeptos-assobiam-rui-borges-durante-apresentacao-das-equipas",
+          "source": "CNN Portugal"
         },
         {
-          "title": "João Pedro desfalca Chelsea e deve ficar fora da Seleção",
-          "url": "https://odia.ig.com.br/esporte/2026/10/7316701-joao-pedro-desfalca-chelsea-e-deve-ficar-fora-da-selecao.html",
-          "source": "O Dia"
+          "title": "Sporting x Marítimo: data, hora, onzes prováveis, antevisão e favorito no jogo da Taça da Liga",
+          "url": "https://www.dazn.com/pt-PT/news/futebol/sporting-x-maritimo-data-hora-onzes-provaveis-antevisao-e-favorito-no-jogo-da-taca-da-liga/mp4n72gem6uc1ap3uqvc840ax",
+          "source": "DAZN"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "shakhtar donetsk vs dynamo kyiv",
+      "title": "rayo vallecano",
       "traffic": "100+",
       "news": [
         {
-          "title": "Dynamo have travelled to Lviv for Shakhtar clash",
-          "url": "https://fcdynamo.com/en/news/dinamo-virusilo-do-lvova-na-matc-iz-saxtarem",
-          "source": "Динамо» Київ. Офіційний сайт"
+          "title": "Why aren’t Real Madrid and Barcelona playing in the Copa del Rey this week?",
+          "url": "https://en.as.com/soccer/why-arent-real-madrid-and-barcelona-playing-in-the-copa-del-rey-this-week-f202610-n/",
+          "source": "Diario AS"
         },
         {
-          "title": "Video: Shakhtar crushed Dynamo and advanced to the quarterfinals of the Ukrainian Cup",
-          "url": "https://ua.news/en/sport/video-shakhtar-rozgromiv-dinamo-ta-viishov-do-chvertfinalu-kubka-ukrayini",
-          "source": "UA.NEWS"
+          "title": "Copa del Rey 2026-27 first round dates and Movistar Plus coverage",
+          "url": "https://onefootball.com/en/news/copa-del-rey-2026-27-first-round-dates-and-movistar-plus-coverage-43677186",
+          "source": "OneFootball"
         },
         {
-          "title": "Shakhtar - Dynamo Kyiv, 2026: watch sports online in high quality on Kyivstar TV",
-          "url": "https://tv.kyivstar.ua/en/event/6ad61200eb5d93422a9738d0-2026-shakhtar-dynamo-kyiv",
-          "source": "Київстар ТБ"
+          "title": "Football: Betis, Valencia among five La Liga clubs in Copa del Rey action",
+          "url": "https://www.thehawk.in/news/sports/football-betis-valencia-among-five-la-liga-clubs-in-copa-del-rey-action",
+          "source": "The Hawk"
         }
       ]
     }
   ],
   "dropped": [
+    {
+      "title": "leicester city vs wigan athletic",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "espanyol",
+      "why": "unsafe: 'Odds'"
+    },
     {
       "title": "rescue",
       "why": "unsafe: 'missing'"
