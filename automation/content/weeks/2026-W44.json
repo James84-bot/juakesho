@@ -798,13 +798,111 @@
       "tg_msg": 612,
       "auto": true,
       "decided_at": "2026-10-27T12:34:51.726825+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1027b1358",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "EACC",
+      "line": "EACC recovers *Sh40 million* in public land and three government houses near a State Lodge.",
+      "fact": "The Ethics and Anti-Corruption Commission recovered the grabbed land in Kakamega.",
+      "message": "EACC recovered Sh40m in public land and three government houses in Kakamega.",
+      "action": "Check land status in your county on the ArdhiSasa portal today",
+      "beats": [
+        "EACC recovers *Sh40 million* in public land in Kakamega.",
+        "The property holds three government houses in Kakamega.",
+        "Public land must return to the *wananchi* without delay.",
+        "Kenyans demand: EACC publishes the full list of recovered lands."
+      ],
+      "photo_query": "Kenyan land title deed and government office",
+      "source": "Capital FM News, 2026-10-27, Tuko News, 2026-10-27, The Eastleigh Voice, 2026-10-27",
+      "who": "EACC Chief Executive Twalib Mbarak",
+      "where": "Kakamega",
+      "when": "27 Oct 2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Public property returns to state use instead of private hands.",
+      "caption": "Sh40 million in public land and three houses recovered near the Kakamega State Lodge. EACC acted on grabbed property. Tag someone who needs to see this win.\n\n#FollowTheMoney #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-27T14:18:00+03:00",
+      "hot": true,
+      "avoid": [
+        "EACC recovers a 2.7-acre school playground after a court ruling.",
+        "Makueni oil spill victims must get their Sh3bn compensation now that KPC has dropped its court appeals."
+      ],
+      "breaking": {
+        "title": "EACC recovers Sh40m public land with three government houses in Kakamega",
+        "outlets": [
+          "Capital FM News",
+          "Kenyans.co.ke",
+          "The Eastleigh Voice",
+          "Tuko News"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "EACC Recovers Ksh40 Million Grabbed Public Land Adjacent to State Lodge",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNVJFczBzM0JsN1FLZm5wYUhFYzNTU1VSQzIxLWF4U3RVRUtiRkRjM21JT05zV2tVZG1zYk1COFYyUkF5YmdMTDFwUmh5dFZYckpFQ183QlRwbTJvdTdjUUhMWnZ2aENIcC1GOG0zX0U2dEVHYnRlaU4zdlI2Y0JldlViaVNGVHVUU28xdzRWZWoxeW93VWtmcTJsNGRnMGpMVTVzN3VQSQ?oc=5",
+          "published": "2026-10-27"
+        },
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "EACC reclaims Sh40 million public land near Kakamega State Lodge",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMFZaYzJ1WGhEVHVHZ2V2cG9wWHBqNC1oMHBZdjM5ejBVQ1ZCZmNKNFoyRk1oMldlUWNQcF9tSDM2Q0MySG9lT3VDOGFJSnhuWEU1aGRXdnF0VWVSamotTGxZaGU4ZUFDTUlGN1BCTVdBakFxUm1RNldPTTB4U1RrdFZleGFtU0lrM1hnYUJlMFctYmF2TVNEQlRrR1dUWE1tV1F6Rms1SUlWQ3FSc1AycA?oc=5",
+          "published": "2026-10-27"
+        },
+        {
+          "outlet": "Tuko News",
+          "title": "EACC Recovers KSh 40m Government Land, 3 Houses Near Kakamega State Lodge",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOTVQxMGV6NzhWQndSV21zODVTTXFmU2dzT2RnTDE1WEJTRDB4LW81VHFvMEdtalN4c21HdHo4U1AwREpvQjZEQzQtS2RiRE5uVTB2WFVtalVZNzY3WHhsZlVCOVBSQzNkWVZkVjdsdS1XMVVFYU14WWRyX3BKLURnZ2JhYjlnRWktT3lEdnNLZU5KbHRmT3BHTUxISlNYODZpVE1ub2g0VFkyRFdXWjB2enE2Zw?oc=5",
+          "published": "2026-10-27"
+        },
+        {
+          "outlet": "Capital FM News",
+          "title": "EACC recovers Sh40m public land with three government houses in Kakamega",
+          "link": "https://capitalfm.africa/eacc-recovers-sh40m-public-land-with-three-government-houses-in-kakamega/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-27"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 4,
+        "action": 8,
+        "fair": 9,
+        "impact": 8,
+        "avg": 7.8,
+        "note": "Match demand to current headlines; rank 4 is too low for the top-tier stories listed this week."
+      },
+      "drafted_at": "2026-10-27T14:23:38.256167+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-hot-1027b1358-photo.jpg",
+      "photo_credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
+      "reel": true,
+      "tg_msg": 619
     }
   ],
   "scripts": {
-    "radio": "Good evening and welcome to Kenya on Record.\n\nTonight, we turn our attention to Kibwezi, Makueni County, where the community of Thange Valley has carried an unfair burden for over a decade. Back in 2015, a major leak from a Kenya Pipeline Company line poisoned local water sources, seeped into farmlands, and compromised the health and livelihoods of hundreds of families.\n\nFor years, KPC mounted endless legal challenges, dragging devastated residents through the courts while medical expenses piled up and productive soils went barren. Now, finally, the corporation has withdrawn its appeals against the court award granting three billion shillings in compensation.\n\nThis withdrawal is welcome, but dropping the appeal is only half the assignment. The real measure of justice is prompt, transparent disbursement. Three billion shillings cannot erase a lost decade of pain, but it is the rightful due of these citizens. There must be no procedural delays, no political games, and no room for brokers to siphon funds intended for sick and displaced families. The National Treasury and KPC management must release every single cent directly to the verified victims without further excuses.\n\nKwa ufupi: Baada ya miaka mingi ya kesi mahakamani, KPC hatimaye imetupilia mbali rufaa zake dhidi ya fidia ya shilingi bilioni tatu kwa wakaazi wa Thange, Makueni, walioathiriwa na mkasa wa mafuta mwaka wa 2015. Sasa, serikali lazima ilipe fidia hii haraka na kwa uwazi bila ucheleweshaji wowote.",
-    "voice_note": "Hello everyone, this is Kenya on Record. Here is what you need to know this week. In Makueni, the families of Thange who endured the toxic 2015 oil spill have reached a significant milestone. Kenya Pipeline Company has finally dropped its court appeals against the three-billion-shilling compensation award. For ten long years, these residents battled poisoned boreholes, ruined farms, and severe medical conditions while the state fought them in court. Now that the appeals are dropped, there are no more excuses left. KPC and the Ministry of Energy must ensure this money is paid directly and transparently to the verified victims—no delays, and no middlemen eating into their settlement. Justice has been delayed far too long; it must be delivered now. Share this with your networks.",
-    "sms": "Usiibiwe: During public compensation payouts, never pay brokers claiming to speed up your cash. Deal only with verified legal and community representatives.",
-    "reels": "Ten years after toxic oil contaminated their water and farms in Makueni, justice is finally within reach for Thange residents. Kenya Pipeline Company has officially dropped its court appeals against the Sh3 billion compensation award. But dropping the case is only step one. The money must reach the affected families immediately—cleanly, transparently, and without greedy middlemen taking a cut. Pay the victims now."
+    "radio": "Habari za leo, mwananchi wa Kenya on Record. Wiki hii, tunawaletea habari njema kutoka kaunti ya Kakamega, ambapo Tume ya Maadili na Kupambana na Ufisadi, EACC, imefanikiwa kurejesha mali ya umma yenye thamani ya mamilioni ya pesa.\n\nKatika operesheni hiyo, EACC imerejesha kipande cha ardhi ya umma na nyumba tatu za serikali zilizokuwa zimepokonywa na kunyakuliwa kinyume cha sheria na watu binafsi. Mali hii yote ina thamani ya shilingi milioni arobaini. Hii ni ishara toka kwa mamlaka kwamba sheria inaanza kuwakamata wale wote wanaomezea mate mali ya umma.\n\nKumbuka, ardhi na rasilimali za serikali ni mali yetu sote. Unapoona mtu ananyakua mali ya shule, hospitali, au nyumba za serikali pale kwenu, usikae kimya. Ripoti kwa EACC ndipo tuweze kujenga nchi yenye uwajibikaji.\n\n[Kiswahili Summary]\nKwa ufupi, EACC imerejesha ardhi na nyumba tatu za serikali Kakamega zenye thamani ya Sh40m zilizokuwa zimenyakuliwa.",
+    "voice_note": "Mambo vipi mwananchi wa Kenya on Record? Hapa kuna habari njema kutoka kaunti ya Kakamega wiki hii. Tume ya EACC imefanikiwa kurejesha mali ya umma ya thamani ya shilingi milioni arobaini! Hii inajumuisha kipande cha ardhi ya umma na nyumba tatu za serikali ambazo zilikuwa zimenyakuliwa na watu binafsi. Hii inatukumbusha kwamba mali ya umma sio ya mtu mmoja. Ukiona uonevu wa aina hii mtaani kwako,simama kidete na uripoti. Kila rasilimali ikirudishwa, ni ushindi wetu sote.",
+    "sms": "EACC imerejesha shilingi milioni 40 za mali ya umma Kakamega, ikiwemo ardhi na nyumba tatu za serikali zilizonyakuliwa. Usinyamazie ufisadi; ripoti!",
+    "reels": "Hizi ndizo habari tunazotaka kusikia! EACC imerejesha mali ya umma ya shilingi milioni arubaini kule Kakamega. Ardhi ya umma na nyumba tatu za serikali zilizonyakuliwa na wajanja zimerudi mikononi mwa wananchi. Mali ya umma sio ya kugawana. Je, kwenu kuna mali ya serikali iliyonyakuliwa? Weka ujumbe hapa chini!"
   },
   "spend_usd": 0.0
 }
