@@ -285,6 +285,36 @@ PLACE_FORMS = (r"\b(lake|mount|mt|county of)\s+(turkana|kenya|elgon|victoria|bar
 COMMUNITIES = (r"\b(kikuyus?|luos?|kalenjins?|luhyas?|kambas?|kisiis?|merus?|mijikenda|somalis|turkanas?|embus?|kurias?|"
                r"taitas?|pokots?|tesos?|samburus?|gusii|agikuyu|abaluhya)\b")
 
+QUOTE_SPAN = re.compile(r"[\"“][^\"”]{3,}[\"”]")
+HATE_CONTEXT = re.compile(r"hate speech|incitement|ethnic|divisive|ncic|tribal", re.I)
+
+
+def community_problem(text: str, tpl: str) -> str | None:
+    """Naming a community is fine: a callout has to show what was said, as it was said, and news names who was
+    targeted. What we refuse is making a people the subject of a generalisation or a crime.
+      - "Kalenjins are ...", "all Luos", "those Kikuyus": stereotype. Allowed only inside a direct quote in a callout,
+        where it is the speaker's words and the post says so.
+      - a community sitting next to a crime word ("Kikuyu officials stole"): pins the act on a people instead of a
+        person. Allowed when the post is about hate speech / incitement itself."""
+    low = re.sub(PLACE_FORMS, " ", text.lower())
+    quoted = [m.span() for m in QUOTE_SPAN.finditer(low)]
+    inside = lambda i: any(a <= i < b for a, b in quoted)
+    comm = COMMUNITIES
+    stereo = re.compile(rf"\b(all|those|these|typical|every|the entire)\s+(the\s+)?{comm}|{comm}\s+(people\s+)?"
+                        r"(are|always|never|cannot|can't|don't|do not|should)\b")
+    for m in stereo.finditer(low):
+        if not (tpl in CALLOUT_TEMPLATES and inside(m.start())):
+            return (f"generalises about a community ('{m.group(0).strip()}'): speak about the person or the act. "
+                    "A direct quote of the speaker, in a callout, is the only place that wording may appear")
+    if not HATE_CONTEXT.search(low):
+        crime = re.compile(rf"{comm}\W+(?:\w+\W+){{0,5}}{CRIME_WORDS.pattern}|{CRIME_WORDS.pattern}\W+(?:\w+\W+){{0,5}}{comm}")
+        for m in crime.finditer(low):
+            if not inside(m.start()):
+                return (f"ties a crime to a community ('{m.group(0).strip()}'): name the person and the charge, "
+                        "never a whole people")
+    return None
+
+
 _extra = Path(__file__).with_name("blocklist.txt")
 if _extra.exists():
     BLOCK |= {w.strip().lower() for w in _extra.read_text(encoding="utf-8").splitlines() if w.strip()}
@@ -668,10 +698,9 @@ def check(post: dict) -> Report:
         rep.errors.append("sounds AI-written: em dash; use a full stop or a comma")
     if re.search(TRIBE_TALK, low) and tpl not in CALLOUT_TEMPLATES:
         rep.errors.append("tribe only comes up when we call out divisive politics (Set It Straight, Sauti, Promise Tracker)")
-    m = re.search(COMMUNITIES, re.sub(PLACE_FORMS, " ", low))
-    if m:
-        rep.errors.append(f"names a community ('{m.group(0)}'): describe divisive speech without repeating which "
-                          "community was targeted; quote the speaker, never stereotype a people")
+    problem = community_problem(text, tpl)
+    if problem:
+        rep.errors.append(problem)
 
     caption = post.get("caption", "")
     if caption:

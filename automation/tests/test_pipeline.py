@@ -615,8 +615,19 @@ class QualitySystemTests(unittest.TestCase):
         callout = self.base_straight(claim="Our people must not let those people take this county.",
                                      who="A. Name, MP (rally, 3 Oct 2026)", truth="That is *tribal politics*, and hate speech is an offence.")
         self.assertTrue(guard.check(callout).ok, guard.check(callout).errors)
+        # naming who was targeted is a plain fact; a callout shows what was said, as it was said
         named = self.base_straight(truth="He attacked the Kalenjins.")
-        self.assertTrue(any("names a community" in e for e in guard.check(named).errors))
+        self.assertTrue(guard.check(named).ok, guard.check(named).errors)
+        quoted = self.base_straight(claim="\"The Luos should not own land here,\" he told the crowd.",
+                                    who="A. Name, MP (rally, 3 Oct 2026)", truth="That is hate speech, and it is an offence.")
+        self.assertTrue(guard.check(quoted).ok, guard.check(quoted).errors)
+        # what stays blocked: our own voice generalising about a people, or pinning a crime on one
+        stereo = self.base_straight(truth="The Kalenjins are always like that.")
+        self.assertTrue(any("generalises about a community" in e for e in guard.check(stereo).errors))
+        crime = self.base_straight(truth="Kikuyu officials stole the funds.")
+        self.assertTrue(any("ties a crime to a community" in e for e in guard.check(crime).errors))
+        place = self.base_straight(truth="Lake Turkana and Turkana County got the grid.")
+        self.assertTrue(guard.check(place).ok, guard.check(place).errors)
         hack = {"id": "x-hack", "template": "decode", "hook": "h", "word": "Tribe", "meaning": "m", "try_this": "t",
                 "number": "1", "caption": "Save this."}
         self.assertTrue(any("tribe only comes up" in e for e in guard.check(hack).errors))
