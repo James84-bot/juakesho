@@ -615,7 +615,7 @@
           "published": "2026-10-26"
         }
       ],
-      "status": "awaiting",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -646,7 +646,12 @@
       "photo_outlet": "Capital FM",
       "photo_source": "https://capitalfm.africa/linda-mwananchi-opposes-abduction-of-tanzanian-activist-twaha-mwaipaya/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
       "reel": true,
-      "tg_msg": 604
+      "tg_msg": 604,
+      "decided_at": "2026-10-27T10:54:24.911535+03:00",
+      "published_at": "2026-10-27T10:56:01.118163+03:00",
+      "ig_id": "17915910402494894",
+      "fb_id": "2243492189550201",
+      "story_id": "18100113098437656"
     },
     {
       "id": "2026-w44-hot-1027",
@@ -684,7 +689,7 @@
           "published": "2026-10-27"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -714,7 +719,8 @@
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/127809-bungoma-teacher-accused-demanding-ksh300000-bribe-secure-tsc-jobs-arrested",
       "reel": true,
-      "tg_msg": 605
+      "tg_msg": 605,
+      "decided_at": "2026-10-27T10:54:25.906007+03:00"
     }
   ],
   "scripts": {
