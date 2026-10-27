@@ -1645,6 +1645,48 @@ def send_preview(dry_run: bool = False) -> int:
     return sent
 
 
+PHOTO_KEYS = ("photo_file", "photo_credit", "photo_kind", "person_file", "person_credit", "video_file", "video_credit")
+
+
+def showcase(label: str, dry_run: bool = False, count: int = 3) -> int:
+    """Real samples of the CURRENT rules: the newest news posts of this week, written as they were, with their photos
+    searched again under today's policy and rendered fresh into exports/_preview (nothing is posted). Each sample's
+    caption says what photo was found, its credit, or why there is none. Sent by `preview`."""
+    import copy
+    import render as renderer
+    import photos
+    from PIL import Image
+    src = [p for p in load_week(label)["posts"] if p.get("hot") and p.get("beats")
+           and p["status"] in {"published", "approved", "awaiting", "rendered"}][-count:]
+    if not src:
+        log("showcase: no news post to show")
+        return 0
+    PREVIEW.mkdir(parents=True, exist_ok=True)
+    posts = []
+    for i, p in enumerate(src, 1):
+        q = copy.deepcopy(p)
+        for k in PHOTO_KEYS:
+            q.pop(k, None)
+        q.update(id=f"showcase-{i}", status="drafted", reel=False)
+        posts.append(q)
+    photos.attach(posts, PREVIEW)
+    renderer.render(posts, PREVIEW, qa={})
+    manifest = []
+    for q, p in zip(posts, src):
+        png = PREVIEW / f"{q['id']}.png"
+        Image.open(png).convert("RGB").save(PREVIEW / f"{q['id']}.jpg", "JPEG", quality=90, optimize=True)
+        png.unlink(missing_ok=True)
+        photo = (f"Photo: {_esc(q['photo_credit'])} ({_esc(q.get('photo_kind', 'photo'))})" if q.get("photo_file") and q.get("photo_credit")
+                 else "No real photo found under the rules: the card runs without one" if not q.get("photo_file")
+                 else "Photo found (no credit recorded)")
+        manifest.append({"file": f"{q['id']}.jpg",
+                         "caption": f"<b>{_esc(str(p['beats'][0]).replace('*', ''))}</b>\nSource: {_esc(str(p.get('source', '')))}\n{photo}\n"
+                                    f"News photos policy: {'ON' if photos.news_photos_ok() else 'OFF'}"})
+    (PREVIEW / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
+    log(f"showcase: {len(manifest)} samples rendered ({sum(1 for q in posts if q.get('photo_file'))} with a real photo)")
+    return len(manifest)
+
+
 def send_cc_candidates(label: str, dry_run: bool = False) -> int:
     """Creative Commons YouTube videos for this week's Reels, as links with the exact command to run on your computer
     (cc_local.py). Only links: nothing is downloaded or used until you run it."""
@@ -1792,7 +1834,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -1940,6 +1982,9 @@ def _main(argv: list[str] | None = None) -> int:
         return 1   # a failed check shows on the run page too, with the reason
     if a.command == "ccfind":
         send_cc_candidates(a.week or current_week_label(ahead=0), dry_run=a.dry_run)
+    if a.command == "showcase":
+        if showcase(a.week or current_week_label(ahead=0), dry_run=a.dry_run):
+            send_preview(dry_run=a.dry_run)
     if a.command == "preview":
         send_preview(dry_run=a.dry_run)
     if a.command == "reels":
