@@ -721,13 +721,86 @@
       "reel": true,
       "tg_msg": 605,
       "decided_at": "2026-10-27T10:54:25.906007+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1027m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Makueni residents",
+      "line": "Makueni oil spill victims await *Sh3 billion* after Kenya Pipeline drops appeals against compensation.",
+      "fact": "KPC fought court orders to pay Makueni residents Sh3 billion for the Thange oil leak.",
+      "source": "Capital FM News, 2026-10-27",
+      "message": "Makueni oil spill victims must get their Sh3bn compensation now that KPC has dropped its court appeals.",
+      "photo_query": "polluted soil oil spill",
+      "action": "Track the withdrawal of the case through the Judiciary portal causelist.",
+      "caption": "Makueni residents waited nine years while a state corporation fought them in court over oil pollution.\n\nWhat it means for you: Public corporations must compensate citizens when state operations destroy community land and water.\n\nSave this to follow the court update.\n\n#SautiyaMwananchi #Makueni #KenyaOnRecord",
+      "beats": [
+        "KPC drops cases blocking *Sh3 billion* for Makueni oil spill victims.",
+        "The Thange oil leak contaminated *water and soil* in 2015.",
+        "Families spent nine years fighting state lawyers for *compensation*.",
+        "Kenyans demand: KPC *pays* every validated victim without fresh appeals.",
+        "Save this to follow the court update."
+      ],
+      "who": "Kenya Pipeline Company",
+      "where": "Makueni",
+      "when": "27 Oct 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Public corporations must compensate citizens when state operations destroy community land and water.",
+      "demand": 2,
+      "bg": "usiku",
+      "publish_at": "2026-10-27T15:50:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "EACC recovers a 2.7-acre school playground after a court ruling."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Ruto Orders KPC to Withdraw Case Blocking Sh3bn Compensation for Makueni Oil Spill Victims",
+          "link": "https://capitalfm.africa/ruto-orders-kpc-to-withdraw-case-blocking-sh3bn-compensation-for-makueni-oil-spill-victims/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-27"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 8,
+        "demand": 9,
+        "action": 7,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.4,
+        "note": "Action should point to a specific lawful step or demand addressed to KPC rather than just tracking the court causelist."
+      },
+      "drafted_at": "2026-10-27T12:32:49.187946+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-hot-1027m-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/ruto-orders-kpc-to-withdraw-case-blocking-sh3bn-compensation-for-makueni-oil-spill-victims/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 612,
+      "auto": true,
+      "decided_at": "2026-10-27T12:34:51.726825+03:00"
     }
   ],
   "scripts": {
-    "radio": "Welcome to Kenya on Record, keeping public interest on the ledger. \n\nFirst, public property belongs to the public. The Ethics and Anti-Corruption Commission has officially recovered a 2.7-acre school playground in Kikuyu following a landmark court ruling. For years, private interests have attempted to carve up recreational spaces meant for our children. This judgment sends a direct message to land cartels: title deeds acquired through fraud will remain worthless paper.\n\nIn the capital, taps ran dry as Nairobi Water shut down supply across several estates for three days of pipeline maintenance. While scheduled repairs are necessary to plug system losses, Nairobi City County must ensure rationing schedules are strictly adhered to and that water bowsers do not exploit desperate residents in the interim.\n\nMeanwhile, human rights defenders under Linda Mwananchi have raised alarm following the reported abduction of Tanzanian activist Twaha Mwaipaya. The group is demanding an immediate investigation from Kenyan authorities, stressing that Kenya's territorial integrity must never be compromised to silence foreign dissidents seeking refuge.\n\nKwa ufupi wiki hii: Shirika la EACC limefaulu kurejesha ekari 2.7 za uwanja wa shule huko Kikuyu baada ya uamuzi wa mahakama. Nairobi Water ilisitisha usambazaji wa maji kwa siku tatu ili kufanya ukarabati wa mabomba, huku wanaharakati wa Linda Mwananchi wakilaani kutekwa nyara kwa mwanaharakati wa Tanzania, Twaha Mwaipaya, hapa nchini. Kaa macho, linda haki yako.",
-    "voice_note": "Hello everyone, Kenya on Record here with your weekly brief.\n\nA big win for public assets: EACC has recovered a 2.7-acre school playground in Kikuyu through a court order. If you've been eying public school land, take note—the courts are revoking those illegal titles.\n\nIn Nairobi, Nairobi Water's three-day pipeline shutdown disrupted several estates. Upgrades are fair, but we demand predictability and an end to artificial cartels hiking water prices during maintenance.\n\nFinally, human rights group Linda Mwananchi has called out the reported abduction of Tanzanian activist Twaha Mwaipaya in Kenya. Our sovereignty and constitutional guarantees on asylum cannot be discarded quietly.\n\nKeep safe, question the paperwork, and look out for your community.",
-    "sms": "Usiibiwe: Public utilities and school grounds cannot be privatised legally. Always do an official search at Ardhisasa or Lands Registry before buying land.",
-    "reels": "For years, private grabbers thought they could swallow a 2.7-acre school playground in Kikuyu. They were wrong. Following a decisive court ruling, the EACC has reclaimed the land for the community. The lesson is plain: public property cannot be laundered through corrupt paperwork. If you bought grabbed school land, you don't own property—you own a lawsuit waiting to happen."
+    "radio": "Good evening and welcome to Kenya on Record.\n\nTonight, we turn our attention to Kibwezi, Makueni County, where the community of Thange Valley has carried an unfair burden for over a decade. Back in 2015, a major leak from a Kenya Pipeline Company line poisoned local water sources, seeped into farmlands, and compromised the health and livelihoods of hundreds of families.\n\nFor years, KPC mounted endless legal challenges, dragging devastated residents through the courts while medical expenses piled up and productive soils went barren. Now, finally, the corporation has withdrawn its appeals against the court award granting three billion shillings in compensation.\n\nThis withdrawal is welcome, but dropping the appeal is only half the assignment. The real measure of justice is prompt, transparent disbursement. Three billion shillings cannot erase a lost decade of pain, but it is the rightful due of these citizens. There must be no procedural delays, no political games, and no room for brokers to siphon funds intended for sick and displaced families. The National Treasury and KPC management must release every single cent directly to the verified victims without further excuses.\n\nKwa ufupi: Baada ya miaka mingi ya kesi mahakamani, KPC hatimaye imetupilia mbali rufaa zake dhidi ya fidia ya shilingi bilioni tatu kwa wakaazi wa Thange, Makueni, walioathiriwa na mkasa wa mafuta mwaka wa 2015. Sasa, serikali lazima ilipe fidia hii haraka na kwa uwazi bila ucheleweshaji wowote.",
+    "voice_note": "Hello everyone, this is Kenya on Record. Here is what you need to know this week. In Makueni, the families of Thange who endured the toxic 2015 oil spill have reached a significant milestone. Kenya Pipeline Company has finally dropped its court appeals against the three-billion-shilling compensation award. For ten long years, these residents battled poisoned boreholes, ruined farms, and severe medical conditions while the state fought them in court. Now that the appeals are dropped, there are no more excuses left. KPC and the Ministry of Energy must ensure this money is paid directly and transparently to the verified victims—no delays, and no middlemen eating into their settlement. Justice has been delayed far too long; it must be delivered now. Share this with your networks.",
+    "sms": "Usiibiwe: During public compensation payouts, never pay brokers claiming to speed up your cash. Deal only with verified legal and community representatives.",
+    "reels": "Ten years after toxic oil contaminated their water and farms in Makueni, justice is finally within reach for Thange residents. Kenya Pipeline Company has officially dropped its court appeals against the Sh3 billion compensation award. But dropping the case is only step one. The money must reach the affected families immediately—cleanly, transparently, and without greedy middlemen taking a cut. Pay the victims now."
   },
   "spend_usd": 0.0
 }
