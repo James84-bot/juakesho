@@ -873,7 +873,7 @@
           "published": "2026-10-27"
         }
       ],
-      "status": "awaiting",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -903,7 +903,12 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
       "reel": true,
-      "tg_msg": 619
+      "tg_msg": 619,
+      "decided_at": "2026-10-27T19:57:36.381966+03:00",
+      "published_at": "2026-10-27T19:58:59.360159+03:00",
+      "ig_id": "18227472319327757",
+      "fb_id": "2032851294086840",
+      "story_id": "17892535227453111"
     }
   ],
   "scripts": {
