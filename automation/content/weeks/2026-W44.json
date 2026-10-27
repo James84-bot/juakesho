@@ -693,7 +693,7 @@
           "published": "2026-10-27"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -724,7 +724,11 @@
       "photo_source": "https://www.kenyans.co.ke/news/127809-bungoma-teacher-accused-demanding-ksh300000-bribe-secure-tsc-jobs-arrested",
       "reel": true,
       "tg_msg": 605,
-      "decided_at": "2026-10-27T10:54:25.906007+03:00"
+      "decided_at": "2026-10-27T10:54:25.906007+03:00",
+      "published_at": "2026-10-27T14:28:37.883220+03:00",
+      "ig_id": "17990102385117597",
+      "fb_id": "4545760302372515",
+      "story_id": "18144746179578649"
     },
     {
       "id": "2026-w44-hot-1027m",
