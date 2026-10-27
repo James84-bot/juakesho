@@ -34,7 +34,10 @@ class Showcase(unittest.TestCase):
         def render(posts, d, qa=None):
             for q in posts:
                 Image.new("RGB", (20, 20)).save(Path(d) / f"{q['id']}.png")
-        with mock.patch.object(pl, "PREVIEW", out), mock.patch.object(pl, "load_week", lambda label: {"posts": POSTS}), \
+        def make_reels(posts, d):   # one Reel, of the sample that has a photo
+            self.reel_for = posts[0]["id"]
+            (Path(d) / f"{posts[0]['id']}.mp4").write_bytes(b"MP4")
+        with mock.patch("video.make_reels", make_reels), mock.patch.object(pl, "PREVIEW", out), mock.patch.object(pl, "load_week", lambda label: {"posts": POSTS}), \
                 mock.patch("photos.attach", attach), mock.patch("render.render", render):
             n = pl.showcase("2026-W44")
         return n, json.loads((out / "manifest.json").read_text(encoding="utf-8")), out
@@ -42,6 +45,9 @@ class Showcase(unittest.TestCase):
     def test_samples_are_news_posts_with_the_credit_found_under_todays_rules(self):
         n, manifest, out = self.run_it(found=True)
         self.assertEqual(n, 2)                                   # the non-news post is not a sample
+        self.assertEqual(self.reel_for, "showcase-1")            # the Reel is made from the sample with the photo
+        self.assertEqual(manifest[-1]["file"], "showcase-1.mp4")
+        self.assertIn("REEL version", manifest[-1]["caption"])
         self.assertTrue((out / "showcase-1.jpg").exists())
         self.assertIn("Photo: Agency / Outlet (news)", manifest[0]["caption"])
         self.assertNotIn("Photo: Photo:", manifest[0]["caption"])
@@ -50,7 +56,8 @@ class Showcase(unittest.TestCase):
 
     def test_no_photo_found_is_stated(self):
         _, manifest, _ = self.run_it(found=False)
-        self.assertTrue(all("No real photo found" in m["caption"] for m in manifest))
+        cards = [m for m in manifest if m["file"].endswith(".jpg")]
+        self.assertTrue(cards and all("No real photo found" in m["caption"] for m in cards))
 
 
 if __name__ == "__main__":

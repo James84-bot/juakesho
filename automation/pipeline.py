@@ -1682,9 +1682,20 @@ def showcase(label: str, dry_run: bool = False, count: int = 3) -> int:
         manifest.append({"file": f"{q['id']}.jpg",
                          "caption": f"<b>{_esc(str(p['beats'][0]).replace('*', ''))}</b>\nSource: {_esc(str(p.get('source', '')))}\n{photo}\n"
                                     f"News photos policy: {'ON' if photos.news_photos_ok() else 'OFF'}"})
+    cards = len(manifest)
+    try:   # one of them as the Reel it would go out as (the sample with a real photo if there is one)
+        import video
+        reel = next((q for q in posts if q.get("photo_file")), posts[0])
+        video.make_reels([reel], PREVIEW)
+        mp4 = PREVIEW / f"{reel['id']}.mp4"
+        if mp4.exists():
+            manifest.append({"file": mp4.name, "caption": f"<b>REEL version</b> of the sample above ({_esc(str(reel['beats'][0]).replace('*', ''))}). "
+                                                           f"Footage: {_esc(reel.get('video_credit') or 'none, animated card over the photo')}"})
+    except Exception as e:   # a Reel sample is a bonus: the card samples still go out
+        log(f"showcase reel skipped: {str(e)[:200]}")
     (PREVIEW / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
-    log(f"showcase: {len(manifest)} samples rendered ({sum(1 for q in posts if q.get('photo_file'))} with a real photo)")
-    return len(manifest)
+    log(f"showcase: {cards} cards + {len(manifest) - cards} reel rendered ({sum(1 for q in posts if q.get('photo_file'))} with a real photo)")
+    return cards
 
 
 def send_cc_candidates(label: str, dry_run: bool = False) -> int:
