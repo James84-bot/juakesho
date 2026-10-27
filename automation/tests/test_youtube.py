@@ -70,6 +70,23 @@ class Upload(unittest.TestCase):
             with self.assertRaises(RuntimeError):
                 youtube.access_token()
 
+    def test_check_reads_the_channel_name_and_uploads_nothing(self):
+        seen = []
+
+        def fake(req, timeout=0):
+            seen.append((req.get_method(), req.full_url))
+            return Resp(json.dumps({"items": [{"snippet": {"title": "Kenya on Record"}}]}).encode())
+        with mock.patch.dict(os.environ, KEYS), mock.patch.object(youtube, "access_token", return_value="tok"), \
+             mock.patch("urllib.request.urlopen", fake):
+            self.assertEqual(youtube.check(), "Kenya on Record")
+        self.assertEqual(seen, [("GET", "https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true")])
+
+    def test_check_fails_clearly_when_the_account_has_no_channel(self):
+        with mock.patch.dict(os.environ, KEYS), mock.patch.object(youtube, "access_token", return_value="tok"), \
+             mock.patch("urllib.request.urlopen", lambda req, timeout=0: Resp(b"{}")):
+            with self.assertRaises(RuntimeError):
+                youtube.check()
+
 
 class Hook(unittest.TestCase):
     post = {"id": "p1", "reel": True, "beats": ["A line"], "caption": "cap #KenyaOnRecord"}

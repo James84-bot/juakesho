@@ -1846,7 +1846,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -1992,6 +1992,18 @@ def _main(argv: list[str] | None = None) -> int:
             return 1
     if a.command == "metacheck" and not meta_check(dry_run=a.dry_run):
         return 1   # a failed check shows on the run page too, with the reason
+    if a.command == "youtubecheck":
+        if not youtube.ready():
+            print("::error title=youtubecheck::One or more of YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN is missing")
+            return 1
+        try:
+            name = youtube.check()
+        except RuntimeError as e:
+            print(f"::error title=youtubecheck::{e}")
+            return 1
+        print(f"::notice title=youtubecheck::Signed in to YouTube channel: {name}")
+        if not a.dry_run:
+            _notify(f"▶️ YouTube is connected: {_esc(name)}. Shorts will upload with approved Reels.")
     if a.command == "ccfind":
         send_cc_candidates(a.week or current_week_label(ahead=0), dry_run=a.dry_run)
     if a.command == "showcase":

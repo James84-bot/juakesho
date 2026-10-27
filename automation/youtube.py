@@ -98,5 +98,20 @@ def auth() -> None:
     sys.exit("The code expired. Run it again.")
 
 
+def check() -> str:
+    """Sign in with the three secrets and read the channel's name. Uploads nothing."""
+    token = access_token()
+    req = urllib.request.Request("https://www.googleapis.com/youtube/v3/channels?part=snippet&mine=true",
+                                 headers={"Authorization": f"Bearer {token}"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            items = json.loads(r.read() or b"{}").get("items") or []
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"YouTube channel lookup → {e.code}: {e.read().decode(errors='replace')[:300]}") from e
+    if not items:
+        raise RuntimeError("Signed in, but this Google account has no YouTube channel")
+    return items[0]["snippet"]["title"]
+
+
 if __name__ == "__main__":
     auth() if sys.argv[1:] == ["auth"] else sys.exit("usage: python youtube.py auth")
