@@ -50,6 +50,70 @@ def news_photos_ok() -> bool:
         return False
 
 
+PERMISSIONS = HERE / "content" / "permissions.json"
+APPROVED = HERE / "content" / "approved"
+
+
+def _grant_problem(g: dict) -> str | None:
+    """Why a recorded permission is not usable. Nothing is assumed: a grant counts only with the grantor's name, the
+    credit they asked for, a dated written record of the permission, and photos that exist on disk."""
+    if not str(g.get("grantor") or "").strip():
+        return "no grantor"
+    if len(str(g.get("credit") or "").strip()) < 6:
+        return "no credit line"
+    if len(str(g.get("evidence") or "").strip()) < 12:
+        return "no written record of the permission (say where the reply is kept)"
+    try:
+        dt.date.fromisoformat(str(g.get("granted_on") or ""))
+    except ValueError:
+        return "granted_on is not a date (YYYY-MM-DD)"
+    exp = str(g.get("expires") or "").strip()
+    if exp:
+        try:
+            if dt.date.fromisoformat(exp) < dt.date.today():
+                return f"permission expired on {exp}"
+        except ValueError:
+            return "expires is not a date (YYYY-MM-DD)"
+    if not isinstance(g.get("photos"), list) or not g["photos"]:
+        return "no photos listed"
+    return None
+
+
+def grants() -> list[dict]:
+    """The permissions on record (content/permissions.json); unusable ones are skipped and the reason logged."""
+    try:
+        raw = json.loads(PERMISSIONS.read_text(encoding="utf-8")).get("grants", [])
+    except (OSError, ValueError):
+        return []
+    good = []
+    for g in raw if isinstance(raw, list) else []:
+        why = _grant_problem(g) if isinstance(g, dict) else "not an object"
+        if why:
+            _note(f"  permission from {g.get('grantor', '?') if isinstance(g, dict) else '?'} not used: {why}")
+        else:
+            good.append(g)
+    return good
+
+
+def approved_photo(post: dict) -> tuple[bytes, dict] | None:
+    """A photo of the named person from a source that gave written permission (see grants()). Used only for a post
+    about a named person that carries no allegation; the credit is the one the grantor asked for."""
+    name = full_name(str(post.get("who", ""))).lower()
+    if not name or _accused(post):
+        return None
+    found = []
+    for g in grants():
+        for ph in g["photos"]:
+            f = APPROVED / Path(str(ph.get("file", ""))).name
+            if str(ph.get("person", "")).strip().lower() == name and f.is_file():
+                found.append((str(ph.get("taken") or ""), f, g))
+    if not found:
+        return None
+    _, f, g = max(found, key=lambda t: t[0])   # newest photo first
+    _note(f"  approved photo for {post.get('id')}: {f.name} ({g['grantor']})")
+    return f.read_bytes(), {"credit": str(g["credit"]).strip(), "url": "", "kind": "approved"}
+
+
 def _note(msg: str) -> None:
     print(msg)
     NOTES.append(msg.strip())
@@ -506,6 +570,13 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
                 return _save(out_dir, post["id"], *got)
         elif post.get("template") in CIVIC_TEMPLATES | {"glasspoll"} and not post.get("group"):
             import posted
+            try:   # a photo we have written permission for comes before any search
+                got = approved_photo(post)
+            except Exception as e:
+                _note(f"  approved photo failed for {post.get('id')}: {e}")
+                got = None
+            if got:
+                return _save(out_dir, post["id"], *got)
             try:
                 got = event_photo(post) if not _accused(post) else None
             except Exception as e:

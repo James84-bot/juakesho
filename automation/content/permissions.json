@@ -1,0 +1,4 @@
+{
+  "note": "Photos we have WRITTEN permission to use. Empty until a reply arrives. Add one grant per permission: grantor, credit (the line they asked for), granted_on (YYYY-MM-DD), evidence (where the reply is kept, 12+ characters), optional expires, and photos: [{file (in content/approved/), person (full name as in the post's `who`), taken (YYYY-MM-DD, optional)}]. A grant missing any of these is ignored and the reason is logged. Used only for posts about a named person with no allegation.",
+  "grants": []
+}
