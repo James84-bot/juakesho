@@ -185,7 +185,9 @@ class NewsPhotosOff(unittest.TestCase):
         import json as _json
         import tempfile
         import photos
-        self.assertFalse(photos.news_photos_ok())   # the shipped policy
+        with tempfile.TemporaryDirectory() as empty:   # no policy file: off, never assumed on
+            with mock.patch.object(photos, "__file__", str(Path(empty) / "photos.py")):
+                self.assertFalse(photos.news_photos_ok())
         with tempfile.TemporaryDirectory() as t:
             p = Path(t) / "content"
             p.mkdir()
