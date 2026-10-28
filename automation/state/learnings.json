@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T17:03:47.041042+03:00",
+  "updated": "2026-10-28T22:33:37.613745+03:00",
   "top": [
     {
       "id": "2026-w42-d6-promise-r3",
@@ -31,14 +31,14 @@
       "id": "2026-w44-hot-1026b1432",
       "series": "sauti",
       "lane": "everyone",
-      "score": 444.4,
+      "score": 400.0,
       "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
-      "reach": 9,
+      "reach": 10,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 7.6
+      "avg_watch_s": 7.1
     },
     {
       "id": "2026-w44-hot-1027m",
@@ -85,9 +85,9 @@
       "id": "2026-w43-hot-1025",
       "series": "sauti",
       "lane": "everyone",
-      "score": 32.8,
+      "score": 32.5,
       "opening": "A building collapse in Eastleigh has left 31 people missing.",
-      "reach": 122,
+      "reach": 123,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -98,14 +98,14 @@
       "id": "2026-w43-hot-1023m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 29.4,
+      "score": 29.2,
       "opening": "Kenya Met warns of heavy rain in 44 counties this week.",
-      "reach": 136,
+      "reach": 137,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 4.4
+      "avg_watch_s": 4.5
     }
   ],
   "all": [
@@ -139,14 +139,14 @@
       "id": "2026-w44-hot-1026b1432",
       "series": "sauti",
       "lane": "everyone",
-      "score": 444.4,
+      "score": 400.0,
       "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
-      "reach": 9,
+      "reach": 10,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 7.6
+      "avg_watch_s": 7.1
     },
     {
       "id": "2026-w44-hot-1027m",
@@ -266,19 +266,6 @@
       "avg_watch_s": 4.2
     },
     {
-      "id": "2026-w42-d4-sauti-r3",
-      "series": "sauti",
-      "lane": "campus",
-      "score": 200.0,
-      "opening": "IEBC wants 6.3 million youth.",
-      "reach": 15,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 5.4
-    },
-    {
       "id": "2026-w42-hot-1017",
       "series": "sauti",
       "lane": "everyone",
@@ -318,17 +305,17 @@
       "avg_watch_s": 6.7
     },
     {
-      "id": "2026-w44-hot-1027b1358",
+      "id": "2026-w42-d4-sauti-r3",
       "series": "sauti",
-      "lane": "everyone",
+      "lane": "campus",
       "score": 187.5,
-      "opening": "EACC recovers Sh40 million in public land in Kakamega.",
+      "opening": "IEBC wants 6.3 million youth.",
       "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 2.2
+      "avg_watch_s": 5.1
     },
     {
       "id": "2026-w42-hot-1013",
@@ -355,6 +342,19 @@
       "comments": 1,
       "likes": 1,
       "avg_watch_s": 2.3
+    },
+    {
+      "id": "2026-w44-hot-1027b1358",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 176.5,
+      "opening": "EACC recovers Sh40 million in public land in Kakamega.",
+      "reach": 17,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 2.1
     },
     {
       "id": "2026-w43-hot-1023",
@@ -490,9 +490,9 @@
       "id": "2026-w43-hot-1025",
       "series": "sauti",
       "lane": "everyone",
-      "score": 32.8,
+      "score": 32.5,
       "opening": "A building collapse in Eastleigh has left 31 people missing.",
-      "reach": 122,
+      "reach": 123,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -503,14 +503,14 @@
       "id": "2026-w43-hot-1023m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 29.4,
+      "score": 29.2,
       "opening": "Kenya Met warns of heavy rain in 44 counties this week.",
-      "reach": 136,
+      "reach": 137,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 4.4
+      "avg_watch_s": 4.5
     }
   ]
 }
