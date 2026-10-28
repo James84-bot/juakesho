@@ -909,13 +909,76 @@
       "ig_id": "18227472319327757",
       "fb_id": "2032851294086840",
       "story_id": "17892535227453111"
+    },
+    {
+      "id": "2026-w44-hot-1028",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Fuel dealers",
+      "line": "Fuel shortages *threaten* parts of the country as dealers protest EPRA price caps.",
+      "fact": "Fuel dealers warn of looming supply disruptions over alleged breaches of EPRA price limits.",
+      "message": "Fuel shortages loom as dealers dispute EPRA price caps.",
+      "action": "Check your local fuel station and report unfair pricing to EPRA",
+      "beats": [
+        "Capital FM News reports: Fuel *shortages* loom as dealers protest price caps.",
+        "Dealers claim set caps violate agreed pricing guidelines.",
+        "Motorists face dry pumps and long queues today.",
+        "Kenyans demand: EPRA and fuel marketers resolve disputes."
+      ],
+      "photo_query": "fuel station pump Nairobi",
+      "source": "Capital FM News, 2026-10-28",
+      "caption": "Capital FM News reports: Fuel *shortages* loom as dealers protest price caps. Motorists feel the squeeze at the pump.\n\nHave you seen any fuel queues today? Tell us in the comments.\n\n#FuelPrices #KenyaOnRecord",
+      "who": "Energy and Petroleum Regulatory Authority",
+      "where": "National",
+      "when": "28 Oct 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Motorists and transport businesses face higher costs and supply delays.",
+      "bg": "usiku",
+      "publish_at": "2026-10-28T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Fuel shortages loom as dealers protest alleged breach of EPRA price caps",
+          "link": "https://capitalfm.africa/fuel-shortages-loom-as-dealers-protest-alleged-breach-of-epra-price-caps/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-28"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "beats[0] is too long: max 12 words / 72 characters"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 5,
+        "craft": 4,
+        "picture": 5,
+        "hold": 5,
+        "demand": 10,
+        "action": 2,
+        "fair": 6,
+        "impact": 4,
+        "avg": 5.0,
+        "note": "Replace the vague action with a concrete lawful demand to EPRA and explain the exact price breach involved."
+      },
+      "drafted_at": "2026-10-28T09:23:21.592135+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari za leo, mwananchi wa Kenya on Record. Wiki hii, tunawaletea habari njema kutoka kaunti ya Kakamega, ambapo Tume ya Maadili na Kupambana na Ufisadi, EACC, imefanikiwa kurejesha mali ya umma yenye thamani ya mamilioni ya pesa.\n\nKatika operesheni hiyo, EACC imerejesha kipande cha ardhi ya umma na nyumba tatu za serikali zilizokuwa zimepokonywa na kunyakuliwa kinyume cha sheria na watu binafsi. Mali hii yote ina thamani ya shilingi milioni arobaini. Hii ni ishara toka kwa mamlaka kwamba sheria inaanza kuwakamata wale wote wanaomezea mate mali ya umma.\n\nKumbuka, ardhi na rasilimali za serikali ni mali yetu sote. Unapoona mtu ananyakua mali ya shule, hospitali, au nyumba za serikali pale kwenu, usikae kimya. Ripoti kwa EACC ndipo tuweze kujenga nchi yenye uwajibikaji.\n\n[Kiswahili Summary]\nKwa ufupi, EACC imerejesha ardhi na nyumba tatu za serikali Kakamega zenye thamani ya Sh40m zilizokuwa zimenyakuliwa.",
-    "voice_note": "Mambo vipi mwananchi wa Kenya on Record? Hapa kuna habari njema kutoka kaunti ya Kakamega wiki hii. Tume ya EACC imefanikiwa kurejesha mali ya umma ya thamani ya shilingi milioni arobaini! Hii inajumuisha kipande cha ardhi ya umma na nyumba tatu za serikali ambazo zilikuwa zimenyakuliwa na watu binafsi. Hii inatukumbusha kwamba mali ya umma sio ya mtu mmoja. Ukiona uonevu wa aina hii mtaani kwako,simama kidete na uripoti. Kila rasilimali ikirudishwa, ni ushindi wetu sote.",
-    "sms": "EACC imerejesha shilingi milioni 40 za mali ya umma Kakamega, ikiwemo ardhi na nyumba tatu za serikali zilizonyakuliwa. Usinyamazie ufisadi; ripoti!",
-    "reels": "Hizi ndizo habari tunazotaka kusikia! EACC imerejesha mali ya umma ya shilingi milioni arubaini kule Kakamega. Ardhi ya umma na nyumba tatu za serikali zilizonyakuliwa na wajanja zimerudi mikononi mwa wananchi. Mali ya umma sio ya kugawana. Je, kwenu kuna mali ya serikali iliyonyakuliwa? Weka ujumbe hapa chini!"
+    "radio": "Good evening, and welcome back to Kenya on Record. This week, we are looking closely at the energy sector, where tension is brewing between independent petroleum dealers and the Energy and Petroleum Regulatory Authority, EPRA. Dealers are pushing back against the latest monthly price caps, claiming the current wholesale margins are unsustainable given shifting global landed costs and foreign exchange pressures. But as this boardroom standoff drags on, the familiar threat of artificial fuel shortages is once again looming over retail pumps across the country.\n\nLet us be clear: fuel is the lifeblood of our local economy. The moment pumps run dry or dealers quietly withhold stock to force the regulator's hand, it is the mama mboga, the boda boda rider, and the daily commuter who bear the brunt through spiked transport fares and food prices. While dealers have a right to dispute margins through proper legal channels, using the public as leverage through silent supply cuts is unacceptable. EPRA, on its part, owes Kenyans absolute transparency on how these pricing formulas are derived and must strictly penalize any deliberate hoarding.\n\nKwa ufupi kwa lugha yetu ya Kiswahili: Kumekuwa na mvutano kati ya wauzaji wa mafuta na mamlaka ya EPRA kuhusu viwango vya bei vilivyowekwa, hali inayotishia uhaba wa mafuta nchini. Hatukubali wananchi wateseke kwa uhaba bandia wakati wadau wakivutana kibiashara; serikali lazima ilinde haki ya mwananchi kupata nishati kwa bei halali.",
+    "voice_note": "Habari zenu, this is Kenya on Record with a quick heads-up on the fuel situation. If you have noticed queues forming or a few dry pumps in your neighborhood, here is what is happening. A section of fuel dealers is currently disputing EPRA’s monthly price caps, arguing that their profit margins have been wiped out. Now, while negotiations are supposedly ongoing, there are growing concerns about artificial rationing and hoarding behind the scenes. We have been here before, and it always ends with wananchi being squeezed on fares and basic goods. Keep an eye out at your local station. If a station has fuel but refuses to sell, or tries to charge a shilling above the gazetted EPRA pump price, that is an illegality. Demand your ETR receipt, stay vigilant, and let us not normalize manufactured crises.",
+    "sms": "Usiibiwe: Stations cannot charge above EPRA price caps even during shortages. Always check the official monthly pump rate and demand your ETR receipt.",
+    "reels": "Dry pumps or manufactured crisis? As fuel dealers dispute EPRA's latest price caps, the threat of shortages is once again knocking on our doors. When oil marketers and regulators fight over profit margins, it’s ordinary commuters and small businesses who get stranded. EPRA must ensure oil companies honor their licensing obligations and release supply. Boardroom disputes cannot be settled by holding the Kenyan public hostage."
   },
   "spend_usd": 0.0
 }

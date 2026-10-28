@@ -1,54 +1,76 @@
 {
-  "fetched": "2026-10-27T21:30:31.544524+00:00",
+  "fetched": "2026-10-28T06:06:45.087439+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "dortmund vs werder",
-      "traffic": "1000+",
+      "title": "torino fc vs como 1907 standings",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Fans verzögern Anpfiff von BVB-Spiel",
-          "url": "https://www.t-online.de/sport/fussball/dfb-pokal/id_101500498/dfb-pokal-fans-verzoegern-anpfiff-bei-bvb-gegen-werder-bremen.html",
-          "source": "T-Online"
+          "title": "Torino vs Como: Italian Serie A stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cqkgjl1dxe4jt",
+          "source": "BBC"
         },
         {
-          "title": "Pokalvorschau mit Nils Petersen: \"Das sind Spiele, die sind untippbar\"",
-          "url": "https://www.kicker.de/pokalvorschau-mit-nils-petersen-das-sind-spiele-die-sind-untippbar-1265485/video",
-          "source": "Kicker"
-        },
-        {
-          "title": "Vorbericht",
-          "url": "https://www.werder.de/spiele/maenner/detail/2026-2027/078f48c4-5282-4ec6-bcd5-251a920a6c2b/vorbericht",
-          "source": "www.werder.de"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "al-shamal vs al-hilal",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Video: In a historic victory, Qatar's Al-Shamal hand Al-Hilal their first defeat in the AFC Champions League Elite",
-          "url": "https://www.goal.com/en/news/video-in-a-historic-victory-qatar-s-al-shamal-hand-al-hilal-their-first-defeat-in-the-afc-champions-league-elite/blt3b261d02a85d7cce",
+          "title": "Como, Fabregas: “We hit the woodwork twice, weren’t given a penalty – last year we wouldn’t have won it”",
+          "url": "https://www.goal.com/en/lists/como-fabregas-we-hit-the-woodwork-twice-had-a-penalty-not-given-last-year-we-wouldn-t-have-won-it/blteb47f3a983c9c42b",
           "source": "Goal.com"
         },
         {
-          "title": "Paderborn vs Stuttgart: First Half BTTS",
-          "url": "https://www.coinbase.com/predictions/event/KXDFBPOKAL1HBTTS-26OCT28PADVFB",
-          "source": "Coinbase"
-        },
-        {
-          "title": "Salem Al-Dawsari in the starting line-up for the first time: Al-Hilal face Al-Shamal with a side of substitutes",
-          "url": "https://www.yardbarker.com/soccer/articles/salem_al_dawsari_in_the_starting_line_up_for_the_first_time_al_hilal_face_al_shamal_with_a_side_of_substitutes/s1_17790_44480529",
-          "source": "Yardbarker"
+          "title": "Torino v. Como 1-3 | Match Report",
+          "url": "https://comofootball.com/en/torino-v-como-1-3-match-report/",
+          "source": "Como 1907"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "roma",
-      "traffic": "200+",
+      "title": "lakers vs trail blazers",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Trail Blazers at Lakers Preview",
+          "url": "https://www.blazersedge.com/gameday-coverage/117536/portland-trail-blazers-los-angeles-lakers-nba-preview-injury-report-tv-time-luka-doncic-damian-lillard-ja-morant-nbc-peacock",
+          "source": "Blazer's Edge"
+        },
+        {
+          "title": "Licensable picture: NBA: Portland Trail Blazers at Los Angeles Lakers",
+          "url": "https://www.reutersconnect.com/item/nba-portland-trail-blazers-at-los-angeles-lakers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAyMDIwNTY",
+          "source": "Reuters Connect"
+        },
+        {
+          "title": "Lakers vs. Blazers: NBA Prediction, Picks and Prop Bets (Oct. 27)",
+          "url": "https://www.fanduel.com/research/lakers-vs-blazers-nba-prediction-picks-and-prop-bets-oct-27",
+          "source": "FanDuel"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "leicester city vs wigan athletic standings",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Leicester City 3-0 Wigan Athletic - Foxes continue revival with home win",
+          "url": "https://www.bbc.com/sport/football/live/cqj9kylweprjt",
+          "source": "BBC"
+        },
+        {
+          "title": "Leicester City vs. Wigan Athletic Lineups, Live Streaming, How & Where to Watch on TV",
+          "url": "https://sports.yahoo.com/articles/leicester-city-vs-wigan-athletic-185511653.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Russell Martin hopes Leicester honoured late chairman with Wigan win",
+          "url": "https://www.largsandmillportnews.com/sport/national/26675894.russell-martin-hopes-leicester-honoured-late-chairman-wigan-win/",
+          "source": "Largs and Millport News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "as roma vs cagliari calcio standings",
+      "traffic": "500+",
       "news": [
         {
           "title": "Roma vs Cagliari: Italian Serie A stats & head-to-head",
@@ -61,38 +83,16 @@
           "source": "Chiesa Di Totti"
         },
         {
-          "title": "Gasperini: ‘Roma need to keep everyone in top shape, Castro decisive’",
-          "url": "https://sports.yahoo.com/articles/gasperini-roma-keep-everyone-top-194000573.html",
+          "title": "Gasperini analyzes win over Cagliari: “It wasn’t easy, we had several banged-up players.”",
+          "url": "https://sports.yahoo.com/articles/gasperini-analyzes-win-over-cagliari-222100313.html",
           "source": "Yahoo Sports"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "vinícius júnior",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Beckham parabeniza Kane por Bola de Ouro com foto de infância do atacante ao lado da atual esposa",
-          "url": "https://ge.globo.com/futebol/futebol-internacional/noticia/2026/10/27/beckham-parabeniza-kane-por-bola-de-ouro-com-foto-de-infancia-do-atacante-ao-lado-da-atual-esposa.ghtml",
-          "source": "ge"
-        },
-        {
-          "title": "Uma propriedade de 650 bilhões de VND, que lembra um palácio, para o vencedor da Bola de Ouro, Harry Kane.",
-          "url": "https://www.vietnam.vn/pt/bat-dong-san-650-ty-dong-nhu-cung-dien-cua-qua-bong-vang-harry-kane",
-          "source": "Vietnam.vn"
-        },
-        {
-          "title": "Argentina não cala revolta: «Relegaram o GOAT para um modesto 5.º lugar»",
-          "url": "https://www.abola.pt/noticias/argentina-nao-cala-revolta-relegaram-o-goat-para-um-modesto-5o-lugar-2026102716514337466",
-          "source": "A Bola"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "sporting vs marítimo",
-      "traffic": "100+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Sporting e Marítimo em aquecimento",
@@ -100,56 +100,92 @@
           "source": "A Bola"
         },
         {
-          "title": "VÍDEO: adeptos assobiam Rui Borges durante apresentação das equipas",
-          "url": "https://cnnportugal.iol.pt/taca-da-liga/sporting/video-adeptos-assobiam-rui-borges-durante-apresentacao-das-equipas",
-          "source": "CNN Portugal"
+          "title": "Rui Borges: \"Acabamos com dois minutos de incerteza, escusadamente\"",
+          "url": "https://sapo.pt/artigo/rui-borges-acabamos-com-dois-minutos-de-incerteza-escusadamente-6ae12ba46c1c029df5a65edb",
+          "source": "SAPO"
         },
         {
-          "title": "Sporting x Marítimo: data, hora, onzes prováveis, antevisão e favorito no jogo da Taça da Liga",
-          "url": "https://www.dazn.com/pt-PT/news/futebol/sporting-x-maritimo-data-hora-onzes-provaveis-antevisao-e-favorito-no-jogo-da-taca-da-liga/mp4n72gem6uc1ap3uqvc840ax",
-          "source": "DAZN"
+          "title": "Pedro Lima radiante: \"Há muito tempo que esperava por esta noite...\"",
+          "url": "https://www.noticiasaominuto.com/desporto/3074069/pedro-lima-radiante-ha-muito-tempo-que-esperava-por-esta-noite",
+          "source": "Notícias ao Minuto"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "rayo vallecano",
-      "traffic": "100+",
+      "title": "mpesa",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Why aren’t Real Madrid and Barcelona playing in the Copa del Rey this week?",
-          "url": "https://en.as.com/soccer/why-arent-real-madrid-and-barcelona-playing-in-the-copa-del-rey-this-week-f202610-n/",
-          "source": "Diario AS"
+          "title": "The hidden cost of M-PESA downtime for Kenya’s small businesses",
+          "url": "https://peopledaily.digital/business/the-hidden-cost-of-m-pesa-downtime-for-kenyas-small-businesses",
+          "source": "People Daily"
         },
         {
-          "title": "Copa del Rey 2026-27 first round dates and Movistar Plus coverage",
-          "url": "https://onefootball.com/en/news/copa-del-rey-2026-27-first-round-dates-and-movistar-plus-coverage-43677186",
+          "title": "Distressed customers question safety of their savings after KCB M-PESA glitch",
+          "url": "https://254news.co.ke/distressed-customers-question-safety-of-their-savings-after-kcb-m-pesa-glitch/",
+          "source": "254 News"
+        },
+        {
+          "title": "Safaricom confirms nationwide M-Pesa outage",
+          "url": "https://capitalfm.africa/safaricom-confirms-nationwide-m-pesa-outage/",
+          "source": "Capital FM Africa"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "arsenal fixtures",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Arsenal v Man City: Next Five Fixtures Compared – Gunners Face Tough November",
+          "url": "https://onefootball.com/en/news/arsenal-v-man-city-next-five-fixtures-compared-gunners-face-tough-november-43671372",
           "source": "OneFootball"
         },
         {
-          "title": "Football: Betis, Valencia among five La Liga clubs in Copa del Rey action",
-          "url": "https://www.thehawk.in/news/sports/football-betis-valencia-among-five-la-liga-clubs-in-copa-del-rey-action",
-          "source": "The Hawk"
+          "title": "Opinion: Man City has opened the door for Arsenal to defend the title",
+          "url": "https://www.justarsenal.com/opinion-man-city-has-opened-the-door-for-arsenal-to-defend-the-title/424597",
+          "source": "Just Arsenal News"
+        },
+        {
+          "title": "Previewing Arsenal’s Next 5 Games After Return To Top Of Premier League",
+          "url": "https://goonernews.com/blog/arsenal-news-next-5-games-preview/?utm_source=thumbnail&utm_medium=aggregator&utm_campaign=related-stories",
+          "source": "GoonerNews.com | Latest Arsenal News and Transfers"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "arsenal vs",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Arsenal latest: Mikel Arteta reveals Max Dowman message after Carabao Cup red card",
+          "url": "https://www.independent.co.uk/sport/football/arsenal-max-dowman-mikel-arteta-fleetwood-carabao-cup-result-b3074542.html",
+          "source": "The Independent"
+        },
+        {
+          "title": "LIVE.FREE: Arsenal vs Fleetwood LIVE STREA.MsArsenal vs Fleetwood fight results, updates, analysis",
+          "url": "https://www.town.shodoshima.lg.jp/section/VR_choseiyoran/shodoshima349.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2Rvb3Jsb29rMzU0Ni5naXRodWIuaW8vcnZuZy5lZHUveHl6LnhtbCIvPjwva3JwYW5vPg==&id=livefreearcenal-mmzli",
+          "source": "小豆島町"
+        },
+        {
+          "title": "【FS1-FUBO/LIVESTREAMS】 Fleetwood vs Arsenal Match today ＬＩＶＥ Ｓｔｒｅａｍｉｎｇ",
+          "url": "https://www.town.shodoshima.lg.jp/section/VR_choseiyoran/shodoshima349.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vbGVvZ29hdHMuZ2l0aHViLmlvL2JmLmVkdS91am0ueG1sIi8+PC9rcnBhbm8+&id=video-fleetwood-vs-arsenal-liv-str-ckygmhv",
+          "source": "小豆島町"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "leicester city vs wigan athletic",
-      "why": "unsafe: 'Betting'"
+      "title": "flood",
+      "why": "unsafe: 'flood'"
     },
     {
-      "title": "espanyol",
+      "title": "rayo vallecano",
       "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "rescue",
-      "why": "unsafe: 'missing'"
-    },
-    {
-      "title": "mainz fc",
-      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
