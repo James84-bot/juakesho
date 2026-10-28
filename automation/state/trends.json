@@ -1,27 +1,116 @@
 {
-  "fetched": "2026-10-28T17:29:37.587118+00:00",
+  "fetched": "2026-10-28T18:54:15.841536+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "bayern vs ajax",
+      "title": "weather tomorrow",
+      "traffic": "20000+",
+      "news": [
+        {
+          "title": "Kauai Weather Forecast for October 28, 2026",
+          "url": "https://kauainownews.com/2026/10/27/kauai-weather-forecast-for-october-28-2026-2/",
+          "source": "Kauai Now"
+        },
+        {
+          "title": "Kauai Weather Forecast for October 27, 2026",
+          "url": "https://kauainownews.com/2026/10/26/kauai-weather-forecast-for-october-27-2026/",
+          "source": "Kauai Now"
+        },
+        {
+          "title": "Kauai Weather Forecast for October 23, 2026",
+          "url": "https://kauainownews.com/2026/10/22/kauai-weather-forecast-for-october-23-2026/",
+          "source": "Kauai Now"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "man city vs brighton",
+      "traffic": "10000+",
+      "news": [
+        {
+          "title": "Man City vs Brighton LIVE! Carabao Cup updates, news, prediction, line-ups and how to watch or stream",
+          "url": "https://www.skysports.com/football/live-blog/13604062/man-city-vs-brighton-live-carabao-cup-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Maresca provides squad update ahead of Brighton Carabao Cup clash",
+          "url": "https://www.mancity.com/news/mens/enzo-maresca-manchester-city-v-brighton-team-news-63928692",
+          "source": "Manchester City FC"
+        },
+        {
+          "title": "Man City XI vs Brighton: Predicted lineup and confirmed team news",
+          "url": "https://www.standard.co.uk/sport/football/man-city-xi-vs-brighton-predicted-lineup-confirmed-team-news-injury-latest-carabao-cup-2026-today-b1302370.html",
+          "source": "London Evening Standard"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "chelsea vs roma",
       "traffic": "2000+",
       "news": [
         {
-          "title": "FC Bayern to play Ajax in Amsterdam",
-          "url": "https://fcbayern.com/en/news/2026/10/special-match-in-nairobi-fc-bayern-to-take-on-ajax",
-          "source": "FC Bayern"
+          "title": "WCL: Chelsea vs Roma, Arsenal vs Benfica LIVE! UEFA Women's Champions League updates, news, prediction and line-ups",
+          "url": "https://www.skysports.com/football/live-blog/13604148/wcl-chelsea-vs-roma-arsenal-vs-benfica-live-uefa-womens-champions-league-updates-news-prediction-and-line-ups",
+          "source": "Sky Sports"
         },
         {
-          "title": "Talanta Stadium to open with FC Bayern versus AFC Ajax match",
-          "url": "https://nation.africa/kenya/sports/football/talanta-stadium-to-open-with-fc-bayern-versus-afc-ajax-match-5649670",
-          "source": "Daily Nation"
+          "title": "Confirmed Chelsea Women line up vs Roma | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-roma",
+          "source": "Chelsea Football Club"
         },
         {
-          "title": "Bayern Munich to play Ajax in Kenya during winter break",
-          "url": "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-to-play-ajax-in-kenya-nairobi-39563",
-          "source": "Bundesliga | official website"
+          "title": "Bompastor confirms Chelsea duo are set to return",
+          "url": "https://sports.yahoo.com/articles/bompastor-confirms-chelsea-duo-set-165500534.html",
+          "source": "Yahoo Sports"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "ac milan",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Christian Pulisic’s reported new AC Milan contract shows he remains big business: What it means for the Rossoneri, the USMNT and MLS",
+          "url": "https://www.goal.com/en-ke/originals/usmnt-star-christian-pulisic-new-ac-milan-american-soccer/blt360f4b4b595f7573",
+          "source": "Goal.com"
+        },
+        {
+          "title": "MLS transfer or AC Milan stay? Christian Pulisic's future decided",
+          "url": "https://www.footballtransfers.com/us/transfer-news/us-united-states-mls/2026/10/mls-transfer-or-ac-milan-stay-christian-pulisics-future-decided",
+          "source": "www.footballtransfers.com"
+        },
+        {
+          "title": "Milan in contract negotiations with Rabiot after Pulisic agreement",
+          "url": "https://sports.yahoo.com/articles/milan-contract-negotiations-rabiot-pulisic-144000954.html",
+          "source": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kenya revenue authority",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "KRA to Scrutinise Payroll Records, Mobile Transactions in Revenue Drive",
+          "url": "https://www.kenyans.co.ke/news/128934-kra-targets-payroll-data-mobile-money-transactions-after-ksh132-billion-revenue",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "KRA Goes After Payroll Data, M-Pesa Payments And Landlords In New Tax Crackdown",
+          "url": "https://thekenyatimes.com/business/kra-goes-after-payroll-data-m-pesa-payments-and-landlords-in-new-tax-crackdown/",
+          "source": "The Kenya Times"
+        },
+        {
+          "title": "KRA blames PAYE, VAT and oil tax changes for Sh132bn revenue shortfall",
+          "url": "https://capitalfm.africa/kra-blames-paye-vat-and-oil-tax-changes-for-sh132bn-revenue-shortfall/",
+          "source": "Capital FM Africa"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -29,118 +118,68 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Schiedsrichter Jarno Wienefeld: Auftritt vor einem Millionenpublikum",
-          "url": "https://www.abendblatt.de/hamburg/bergedorf/article413520185/schiedsrichter-jarno-wienefeld-auftritt-vor-einem-millionenpublikum.html",
-          "source": "Hamburger Abendblatt"
-        },
-        {
-          "title": "#[Fußball-TV#] SC Paderborn 07 gegen VfB Stuttgart live im TV und Stream 28. Oktober 2026",
-          "url": "https://vantage-dc.com/virtual-tour-montreal-data-center/?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2FsaXNjaWFqYW1lczEuZ2l0aHViLmlvL255Yy94eXoueG1sIi8+PC9rcnBhbm8+&id=fu%C3%9Fball-tv-sc-paderborn-07-gegen-vfb-htrzu",
-          "source": "Vantage Data Centers"
+          "title": "VfB Stuttgart: Undav, Teuer-Zugang, Karazor: Krisen-Stars müssen im DFB-Pokal liefern",
+          "url": "https://www.bild.de/sport/fussball/vfb-stuttgart-undav-teuer-zugang-karazor-krisen-stars-muessen-im-dfb-pokal-liefern-6ae06a29606708eb0870c1d2",
+          "source": "BILD"
         },
         {
           "title": "Jetzt mitmachen: Benoten Sie die Leistung der SCP-Spieler im Pokalspiel gegen den VfB Stuttgart",
           "url": "https://www.nw.de/sport/fussball/sc_paderborn_07/24401598_Jetzt-mitmachen-Benoten-Sie-die-Leistung-der-SCP-Spieler-im-Pokalspiel-gegen-den-VfB-Stuttgart.html",
           "source": "Neue Westfälische"
+        },
+        {
+          "title": "VfB unter Druck - Freiburg und TSG gegen Zweitligisten",
+          "url": "https://www.zvw.de/sport/vfb-unter-druck-freiburg-und-tsg-gegen-zweitligisten_arid-1103165",
+          "source": "Zeitungsverlag Waiblingen"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "lecturers strike update",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Sh98bn vs Sh11.96bn: The numbers behind lecturers’ pay dispute",
-          "url": "https://nation.africa/kenya/news/education/sh98bn-vs-sh11-96bn-the-numbers-behind-lecturers-pay-dispute--5648404",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Section of Waiyaki Way paralysed as UoN students clash with police over lecturers’ strike",
-          "url": "https://www.the-star.co.ke/news/2026-10-27-section-of-waiyaki-way-paralysed-as-uon-students-protest",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Waiyaki Way Closed as UoN Students, Police Clash",
-          "url": "https://www.kenyans.co.ke/news/128904-waiyaki-way-closed-uon-students-protest-lecturers-strike",
-          "source": "Kenyans.co.ke"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "fulham vs crystal palace prediction",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Smith Rowe and Kevin ‘have to be patient’, Arbeloa says",
-          "url": "https://www.westlondonsport.com/fulham/smith-rowe-and-kevin-have-to-be-patient-arbeloa-says",
-          "source": "West London Sport"
-        },
-        {
-          "title": "Cairney: ‘It is Fulham’s time to get to a final’",
-          "url": "https://roundtable.io/sports/soccer/premier-league/fulham/news/cairney-it-is-fulham-s-time-to-get-to-a-final",
-          "source": "roundtable.io"
-        },
-        {
-          "title": "Dean Henderson set for Crystal Palace return, Ismaila Sarr a doubt",
-          "url": "https://www.nytimes.com/athletic/7729155/2026/10/27/dean-henderson-crystal-palace-injury-return/",
-          "source": "The New York Times"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "copa del rey",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "La RFEF suspende los 24 partidos de Copa del Rey de este miércoles por el accidente ferroviario",
-          "url": "https://www.notimerica.com/videos/video-rfef-suspende-24-partidos-copa-rey-miercoles-accidente-ferroviario-20261028135315.html",
-          "source": "Notimérica"
-        },
-        {
-          "title": "El Betis vuelve a Sevilla y no jugará mañana el encuentro de Copa del Rey",
-          "url": "https://es-us.noticias.yahoo.com/deportes/betis-vuelve-sevilla-jugar%C3%A1-ma%C3%B1ana-160500816.html",
-          "source": "Yahoo"
-        },
-        {
-          "title": "El Sabadell mantiene su gira hasta Albacete",
-          "url": "https://as.com/futbol/segunda/el-sabadell-mantiene-su-gira-hasta-albacete-f202610-n/",
-          "source": "Diario AS"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "dstv packages",
+      "title": "freiburg fc",
       "traffic": "100+",
       "news": [
         {
-          "title": "MultiChoice cuts DStv prices in bid to win back subscribers",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/multichoice-cuts-dstv-prices-in-bid-to-win-back-subscribers-5646728",
-          "source": "Business Daily"
+          "title": "Freiburg im Check: Mit klarem Konzept zum Erfolg",
+          "url": "https://www.fcaugsburg.de/article/freiburg-im-check-mit-klarem-konzept-zum-erfolg-23625",
+          "source": "FC Augsburg"
         },
         {
-          "title": "DStv Kenya's new packages start at KES 750, and Premium's replacement costs KES 4,400 less",
-          "url": "https://tech-ish.com/2026/10/26/dstv-kenya-new-package-prices-november-5/",
-          "source": "Techish Kenya"
+          "title": "Pokal-Sieg für Augsburg: Freiburg trifft auf FCA mit neuem Schwung",
+          "url": "https://www.wochenblatt-reporter.de/c-sport/pokal-sieg-fuer-augsburg-freiburg-trifft-auf-fca-mit-neuem-schwung_a922826",
+          "source": "Wochenblatt Reporter"
         },
         {
-          "title": "Canal+ takes a knife to DStv prices",
-          "url": "https://techcentral.co.za/canal-plus-dstv-price-cuts/287756/",
-          "source": "TechCentral"
+          "title": "FC Augsburg - SC Freiburg: Kommt Augsburg wieder in die Spur? - Bundesliga",
+          "url": "https://www.welt.de/sport/fussball/bundesliga/article6ae218228f0a4dd417a5f2ff/fc-augsburg-sc-freiburg-kommt-augsburg-wieder-in-die-spur-bundesliga.html",
+          "source": "WELT"
         }
-      ],
-      "civic": true
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bayern vs real madrid",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Licensable picture: Football Women Uefa Champions League 2026 - 2027 Bayern Munchen Vs Real Madrid",
+          "url": "https://www.reutersconnect.com/item/football-women-uefa-champions-league-2026-2027-bayern-munchen-vs-real-madrid/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBPUDdONDg",
+          "source": "Reuters Connect"
+        },
+        {
+          "title": "Bayern Host Real Madrid in Women's Champions League Matchday 3 Opener",
+          "url": "https://aroundprague.cz/en/news/world/bayern-host-real-madrid-in-women-s-champions-league-matchday-3-opener",
+          "source": "Around Prague"
+        },
+        {
+          "title": "Pau Quesada: \"It’s the first time we face each other, and it will be an exciting match\"",
+          "url": "https://www.realmadrid.com/en-US/news/football/womens-team/press-conference/rueda-de-prensa-de-pau-quesada-y-jugadora-pre-bayern-de-munich-real-madrid-j3-wcl-27-10-2026",
+          "source": "Real Madrid CF | Web Oficial"
+        }
+      ]
     }
   ],
   "dropped": [
-    {
-      "title": "chelsea vs roma",
-      "why": "unsafe: 'Bet'"
-    },
     {
       "title": "milan vs bologna",
       "why": "unsafe: 'Betting'"
@@ -148,10 +187,6 @@
     {
       "title": "venezia vs inter",
       "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "child custody",
-      "why": "unsafe: 'Death'"
     }
   ],
   "errors": {}
