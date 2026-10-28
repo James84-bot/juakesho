@@ -1,12 +1,20 @@
 {
- "fetched": "2026-10-28T06:06:51.126358+00:00",
+ "fetched": "2026-10-28T10:00:55.363383+00:00",
  "x": [
   {
-   "name": "Fleetwood",
+   "name": "Konza On TheRise",
    "tweets": ""
   },
   {
-   "name": "#KonzaEducationRevolution",
+   "name": "Kiambu County Scorecard",
+   "tweets": ""
+  },
+  {
+   "name": "#PIW2026",
+   "tweets": ""
+  },
+  {
+   "name": "Fleetwood",
    "tweets": ""
   },
   {
@@ -14,23 +22,39 @@
    "tweets": ""
   },
   {
+   "name": "#WamatangiAmeweza",
+   "tweets": ""
+  },
+  {
+   "name": "Pwani Innovation Week",
+   "tweets": ""
+  },
+  {
+   "name": "Boresha Barabara",
+   "tweets": ""
+  },
+  {
+   "name": "ECDE",
+   "tweets": ""
+  },
+  {
+   "name": "#UnmaskingUnethicalLeader",
+   "tweets": ""
+  },
+  {
+   "name": "MakamuRais Ndejembi",
+   "tweets": ""
+  },
+  {
+   "name": "Level 3",
+   "tweets": ""
+  },
+  {
    "name": "Harry Kane",
    "tweets": ""
   },
   {
-   "name": "Magadi",
-   "tweets": ""
-  },
-  {
    "name": "#MainaAndKingangi",
-   "tweets": ""
-  },
-  {
-   "name": "#CelebratingTheGlory",
-   "tweets": ""
-  },
-  {
-   "name": "Ballon",
    "tweets": ""
   },
   {
@@ -42,15 +66,11 @@
    "tweets": ""
   },
   {
-   "name": "swahilipot hub",
+   "name": "Open University of Kenya",
    "tweets": ""
   },
   {
-   "name": "#PaidProtestorsKe",
-   "tweets": ""
-  },
-  {
-   "name": "Mbappe",
+   "name": "Riara University",
    "tweets": ""
   },
   {
@@ -58,15 +78,19 @@
    "tweets": ""
   },
   {
-   "name": "africa ppp 2026",
+   "name": "Bosnia",
    "tweets": ""
   },
   {
-   "name": "Havertz",
+   "name": "Ballon",
    "tweets": ""
   },
   {
-   "name": "babu drama queen",
+   "name": "Kibaki",
+   "tweets": ""
+  },
+  {
+   "name": "Governor Wamatangi",
    "tweets": ""
   },
   {
@@ -74,59 +98,573 @@
    "tweets": ""
   },
   {
+   "name": "Kiambaa Municipality",
+   "tweets": ""
+  },
+  {
+   "name": "Kiandutu",
+   "tweets": ""
+  },
+  {
+   "name": "babu drama queen",
+   "tweets": ""
+  },
+  {
+   "name": "Swahilipot Hub Foundation",
+   "tweets": ""
+  },
+  {
+   "name": "Havertz",
+   "tweets": ""
+  },
+  {
    "name": "ug kenya tourismcollaboration",
-   "tweets": ""
-  },
-  {
-   "name": "robivisitorapp na robisearch",
-   "tweets": ""
-  },
-  {
-   "name": "contactless visitorapp",
-   "tweets": ""
-  },
-  {
-   "name": "Mpesa",
-   "tweets": ""
-  },
-  {
-   "name": "east africa connectivity",
-   "tweets": ""
-  },
-  {
-   "name": "Ultra",
-   "tweets": ""
-  },
-  {
-   "name": "kmtc yatta campus",
-   "tweets": ""
-  },
-  {
-   "name": "Carabao Cup",
-   "tweets": ""
-  },
-  {
-   "name": "Delivering The Plan",
-   "tweets": ""
-  },
-  {
-   "name": "sustainability report",
-   "tweets": ""
-  },
-  {
-   "name": "beyond the politics",
-   "tweets": ""
-  },
-  {
-   "name": "Grimsby",
    "tweets": ""
   }
  ],
- "videos": [],
- "errors": {
-  "Citizen TV": "HTTP Error 404: Not Found",
-  "NTV Kenya": "HTTP Error 404: Not Found",
-  "KTN News": "HTTP Error 404: Not Found"
- },
- "catalog": []
+ "videos": [
+  {
+   "title": "Jaji mkuu Martha Koome atoa taarifa kuhusu uchaguzi",
+   "channel": "Citizen TV",
+   "views": 3743,
+   "published": "2026-10-28T07:58:34+00:00",
+   "per_hour": 1835,
+   "url": "https://www.youtube.com/watch?v=HU25RsTnnUI",
+   "short": "https://youtube.com/shorts/HU25RsTnnUI"
+  },
+  {
+   "title": "Has Parliament banned election results livestreaming? | The Last Word",
+   "channel": "NTV Kenya",
+   "views": 22655,
+   "published": "2026-10-27T21:08:21+00:00",
+   "per_hour": 1759,
+   "url": "https://www.youtube.com/watch?v=h3XToS08JmQ",
+   "short": "https://youtube.com/shorts/h3XToS08JmQ"
+  },
+  {
+   "title": "Ethiopia conflict kills 10, displaces 15,000 as families flee to Kenya’s Moyale",
+   "channel": "NTV Kenya",
+   "views": 9659,
+   "published": "2026-10-27T18:26:39+00:00",
+   "per_hour": 620,
+   "url": "https://www.youtube.com/watch?v=uv_Uzgrvuro",
+   "short": "https://youtube.com/shorts/uv_Uzgrvuro"
+  },
+  {
+   "title": "Deputy Speaker Gladys Boss breaks down the contentious election amendment bill",
+   "channel": "NTV Kenya",
+   "views": 5930,
+   "published": "2026-10-27T20:54:57+00:00",
+   "per_hour": 453,
+   "url": "https://www.youtube.com/watch?v=zRTDskhl7jo",
+   "short": "https://youtube.com/shorts/zRTDskhl7jo"
+  },
+  {
+   "title": "DCI yachunguza madai ya mgonjwa kuvunjika miguu mara tatu katika hospitali ya Khunyangu huko Busia",
+   "channel": "Citizen TV",
+   "views": 1059,
+   "published": "2026-10-28T07:29:02+00:00",
+   "per_hour": 418,
+   "url": "https://www.youtube.com/watch?v=vNVhhT4I1ps",
+   "short": "https://youtube.com/shorts/vNVhhT4I1ps"
+  },
+  {
+   "title": "Church pastor tells court murdered student’s phone was found in offering basket",
+   "channel": "NTV Kenya",
+   "views": 6235,
+   "published": "2026-10-27T18:36:33+00:00",
+   "per_hour": 405,
+   "url": "https://www.youtube.com/watch?v=tL83sIzDdUs",
+   "short": "https://youtube.com/shorts/tL83sIzDdUs"
+  },
+  {
+   "title": "Wafanyabiashara 2,700 wa Masinde Muliro waamriwa kuondoka ndani ya saa 24",
+   "channel": "Citizen TV",
+   "views": 792,
+   "published": "2026-10-28T07:44:34+00:00",
+   "per_hour": 348,
+   "url": "https://www.youtube.com/watch?v=Eln_FojAN5w",
+   "short": "https://youtube.com/shorts/Eln_FojAN5w"
+  },
+  {
+   "title": "Viongozi wa UASU wakutana na kamati ya bunge",
+   "channel": "Citizen TV",
+   "views": 343,
+   "published": "2026-10-28T09:32:07+00:00",
+   "per_hour": 343,
+   "url": "https://www.youtube.com/watch?v=2uNxEA7dKds",
+   "short": "https://youtube.com/shorts/2uNxEA7dKds"
+  },
+  {
+   "title": "| JUKWAA LA AFYA | Ugonjwa wa Spina Bifida [Part 2]",
+   "channel": "Citizen TV",
+   "views": 251,
+   "published": "2026-10-28T09:06:11+00:00",
+   "per_hour": 251,
+   "url": "https://www.youtube.com/watch?v=ZTaobU-7FEU",
+   "short": "https://youtube.com/shorts/ZTaobU-7FEU"
+  },
+  {
+   "title": "Rais Ruto ataka hatua dhidi ya matapeli, aagiza kuvunjwa kwa ukiritimba wa TATA Chemicals",
+   "channel": "Citizen TV",
+   "views": 582,
+   "published": "2026-10-28T07:39:49+00:00",
+   "per_hour": 247,
+   "url": "https://www.youtube.com/watch?v=EIheo-coPNk",
+   "short": "https://youtube.com/shorts/EIheo-coPNk"
+  },
+  {
+   "title": "Seneti yaibua wasiwasi kuhusu ununuzi wa serikali wa Sh trilioni 3",
+   "channel": "KTN News",
+   "views": 408,
+   "published": "2026-10-28T08:13:08+00:00",
+   "per_hour": 227,
+   "url": "https://www.youtube.com/watch?v=-L5o7yHYlyI",
+   "short": "https://youtube.com/shorts/-L5o7yHYlyI"
+  },
+  {
+   "title": "Likoni residents demand tough action against gangs after county official’s killing",
+   "channel": "NTV Kenya",
+   "views": 3426,
+   "published": "2026-10-27T18:35:19+00:00",
+   "per_hour": 222,
+   "url": "https://www.youtube.com/watch?v=LzX5hFY_M30",
+   "short": "https://youtube.com/shorts/LzX5hFY_M30"
+  },
+  {
+   "title": "Baadhi ya wanachama wa ODM Kisumu wataka mkataba wa maandishi na UDA kabla ya 2027",
+   "channel": "KTN News",
+   "views": 358,
+   "published": "2026-10-28T08:18:32+00:00",
+   "per_hour": 210,
+   "url": "https://www.youtube.com/watch?v=I2VzlH0maFk",
+   "short": "https://youtube.com/shorts/I2VzlH0maFk"
+  },
+  {
+   "title": "Ruto tells investors to resist extortion as Devki launches Sh70bn Kitui factory",
+   "channel": "NTV Kenya",
+   "views": 3094,
+   "published": "2026-10-27T18:44:14+00:00",
+   "per_hour": 203,
+   "url": "https://www.youtube.com/watch?v=jM3ynKvjZsc",
+   "short": "https://youtube.com/shorts/jM3ynKvjZsc"
+  },
+  {
+   "title": "Wasiwasi waibuka kuhusu usalama kabla na baada ya uchaguzi mkuu wa 2027",
+   "channel": "Citizen TV",
+   "views": 407,
+   "published": "2026-10-28T07:41:57+00:00",
+   "per_hour": 176,
+   "url": "https://www.youtube.com/watch?v=zliViy0iyUs",
+   "short": "https://youtube.com/shorts/zliViy0iyUs"
+  }
+ ],
+ "errors": {},
+ "catalog": [
+  {
+   "title": "| JUKWAA LA AFYA | Ugonjwa wa Spina Bifida [Part 5]",
+   "channel": "Citizen TV",
+   "views": 7,
+   "published": "2026-10-28T09:53:54+00:00",
+   "per_hour": 7,
+   "url": "https://www.youtube.com/watch?v=Rmyrf1F1cNQ",
+   "short": "https://youtube.com/shorts/Rmyrf1F1cNQ"
+  },
+  {
+   "title": "Zoezi la uokoaji bado linaendelea Eastleigh",
+   "channel": "Citizen TV",
+   "views": 64,
+   "published": "2026-10-28T09:48:30+00:00",
+   "per_hour": 64,
+   "url": "https://www.youtube.com/watch?v=VQTTqc5MYqQ",
+   "short": "https://youtube.com/shorts/VQTTqc5MYqQ"
+  },
+  {
+   "title": "| JUKWAA LA AFYA | Ugonjwa wa Spina Bifida [Part 4]",
+   "channel": "Citizen TV",
+   "views": 31,
+   "published": "2026-10-28T09:35:21+00:00",
+   "per_hour": 31,
+   "url": "https://www.youtube.com/watch?v=S99aqCeB2js",
+   "short": "https://youtube.com/shorts/S99aqCeB2js"
+  },
+  {
+   "title": "Viongozi wa UASU wakutana na kamati ya bunge",
+   "channel": "Citizen TV",
+   "views": 343,
+   "published": "2026-10-28T09:32:07+00:00",
+   "per_hour": 343,
+   "url": "https://www.youtube.com/watch?v=2uNxEA7dKds",
+   "short": "https://youtube.com/shorts/2uNxEA7dKds"
+  },
+  {
+   "title": "| JUKWAA LA AFYA | Ugonjwa wa Spina Bifida [Part 3]",
+   "channel": "Citizen TV",
+   "views": 23,
+   "published": "2026-10-28T09:26:10+00:00",
+   "per_hour": 23,
+   "url": "https://www.youtube.com/watch?v=pJKKhxVIrvc",
+   "short": "https://youtube.com/shorts/pJKKhxVIrvc"
+  },
+  {
+   "title": "| JUKWAA LA AFYA | Ugonjwa wa Spina Bifida [Part 2]",
+   "channel": "Citizen TV",
+   "views": 251,
+   "published": "2026-10-28T09:06:11+00:00",
+   "per_hour": 251,
+   "url": "https://www.youtube.com/watch?v=ZTaobU-7FEU",
+   "short": "https://youtube.com/shorts/ZTaobU-7FEU"
+  },
+  {
+   "title": "| JUKWAA LA AFYA | Ugonjwa wa Spina Bifida [Part 1]",
+   "channel": "Citizen TV",
+   "views": 69,
+   "published": "2026-10-28T08:40:56+00:00",
+   "per_hour": 52,
+   "url": "https://www.youtube.com/watch?v=cLiXPUBp1K0",
+   "short": "https://youtube.com/shorts/cLiXPUBp1K0"
+  },
+  {
+   "title": "Journalism expectations vs realityThe shocking truth of being a journalist #NationVerticals",
+   "channel": "NTV Kenya",
+   "views": 147,
+   "published": "2026-10-28T08:29:37+00:00",
+   "per_hour": 97,
+   "url": "https://www.youtube.com/watch?v=KGrQ5YWgQ2Q",
+   "short": "https://youtube.com/shorts/KGrQ5YWgQ2Q"
+  },
+  {
+   "title": "Wakazi wa Bissil walalamikia uhaba wa maji huku bei ya mtungi ikipanda hadi Sh50",
+   "channel": "KTN News",
+   "views": 71,
+   "published": "2026-10-28T08:29:29+00:00",
+   "per_hour": 47,
+   "url": "https://www.youtube.com/watch?v=qg_RlpMp3Ww",
+   "short": "https://youtube.com/shorts/qg_RlpMp3Ww"
+  },
+  {
+   "title": "Familia za waathiriwa wa ajali ya Kanga kusaidiwa",
+   "channel": "KTN News",
+   "views": 168,
+   "published": "2026-10-28T08:27:38+00:00",
+   "per_hour": 108,
+   "url": "https://www.youtube.com/watch?v=2IV_i8gTRnM",
+   "short": "https://youtube.com/shorts/2IV_i8gTRnM"
+  },
+  {
+   "title": "Vijana wa Migori wahimizwa kupinga taarifa potofu mitandaoni kuelekea uchaguzi wa 2027",
+   "channel": "KTN News",
+   "views": 29,
+   "published": "2026-10-28T08:25:39+00:00",
+   "per_hour": 18,
+   "url": "https://www.youtube.com/watch?v=CLA08c-D89I",
+   "short": "https://youtube.com/shorts/CLA08c-D89I"
+  },
+  {
+   "title": "Mbunge wa zamani Mark Lomunokol atetea matamshi yake yaliyotajwa kuwalenga jamii zisizo za Pokot",
+   "channel": "KTN News",
+   "views": 44,
+   "published": "2026-10-28T08:23:50+00:00",
+   "per_hour": 27,
+   "url": "https://www.youtube.com/watch?v=aFpg_spT2sQ",
+   "short": "https://youtube.com/shorts/aFpg_spT2sQ"
+  },
+  {
+   "title": "Garissa yazindua mpango wa tahadhari ya mapema kuelekea uchaguzi wa 2027",
+   "channel": "KTN News",
+   "views": 105,
+   "published": "2026-10-28T08:20:15+00:00",
+   "per_hour": 63,
+   "url": "https://www.youtube.com/watch?v=-CAp7UK_FMw",
+   "short": "https://youtube.com/shorts/-CAp7UK_FMw"
+  },
+  {
+   "title": "Baadhi ya wanachama wa ODM Kisumu wataka mkataba wa maandishi na UDA kabla ya 2027",
+   "channel": "KTN News",
+   "views": 358,
+   "published": "2026-10-28T08:18:32+00:00",
+   "per_hour": 210,
+   "url": "https://www.youtube.com/watch?v=I2VzlH0maFk",
+   "short": "https://youtube.com/shorts/I2VzlH0maFk"
+  },
+  {
+   "title": "Familia yadai haki baada ya kijana wa miaka 16 kuuawa kwa risasi Meru",
+   "channel": "KTN News",
+   "views": 56,
+   "published": "2026-10-28T08:17:21+00:00",
+   "per_hour": 32,
+   "url": "https://www.youtube.com/watch?v=k0K8hkHRuL0",
+   "short": "https://youtube.com/shorts/k0K8hkHRuL0"
+  },
+  {
+   "title": "Familia yadai haki baada ya kijana wa miaka 26 kuuawa Kericho",
+   "channel": "KTN News",
+   "views": 63,
+   "published": "2026-10-28T08:14:22+00:00",
+   "per_hour": 35,
+   "url": "https://www.youtube.com/watch?v=_Zj1Y8rQZ64",
+   "short": "https://youtube.com/shorts/_Zj1Y8rQZ64"
+  },
+  {
+   "title": "KEMSA yataka kaunti 47 kuruhusu SHA kulipia dawa moja kwa moja",
+   "channel": "KTN News",
+   "views": 34,
+   "published": "2026-10-28T08:13:48+00:00",
+   "per_hour": 19,
+   "url": "https://www.youtube.com/watch?v=EBG0EvLDFNo",
+   "short": "https://youtube.com/shorts/EBG0EvLDFNo"
+  },
+  {
+   "title": "Seneti yaibua wasiwasi kuhusu ununuzi wa serikali wa Sh trilioni 3",
+   "channel": "KTN News",
+   "views": 408,
+   "published": "2026-10-28T08:13:08+00:00",
+   "per_hour": 227,
+   "url": "https://www.youtube.com/watch?v=-L5o7yHYlyI",
+   "short": "https://youtube.com/shorts/-L5o7yHYlyI"
+  },
+  {
+   "title": "Jaji Mkuu Martha Koome azungumzia utayari wa idara ya mahakama kwa uchaguzi mkuu wa 2027",
+   "channel": "KTN News",
+   "views": 164,
+   "published": "2026-10-28T08:11:01+00:00",
+   "per_hour": 90,
+   "url": "https://www.youtube.com/watch?v=oFWzs1dTSuA",
+   "short": "https://youtube.com/shorts/oFWzs1dTSuA"
+  },
+  {
+   "title": "Moja kwa moja na mabingwa wa Ndondi ya wanawake waliong'aa kwenye mashindano ya Ndondo Afrika",
+   "channel": "KTN News",
+   "views": 35,
+   "published": "2026-10-28T08:04:53+00:00",
+   "per_hour": 18,
+   "url": "https://www.youtube.com/watch?v=9tiC1w-r2Xc",
+   "short": "https://youtube.com/shorts/9tiC1w-r2Xc"
+  },
+  {
+   "title": "Droo ya 16 yakombe la dunia U-17",
+   "channel": "KTN News",
+   "views": 11,
+   "published": "2026-10-28T08:00:53+00:00",
+   "per_hour": 5,
+   "url": "https://www.youtube.com/watch?v=OJCI7eBBi9I",
+   "short": "https://youtube.com/shorts/OJCI7eBBi9I"
+  },
+  {
+   "title": "Jaji mkuu Martha Koome atoa taarifa kuhusu uchaguzi",
+   "channel": "Citizen TV",
+   "views": 3743,
+   "published": "2026-10-28T07:58:34+00:00",
+   "per_hour": 1835,
+   "url": "https://www.youtube.com/watch?v=HU25RsTnnUI",
+   "short": "https://youtube.com/shorts/HU25RsTnnUI"
+  },
+  {
+   "title": "Wafanyabiashara 2,700 wa Masinde Muliro waamriwa kuondoka ndani ya saa 24",
+   "channel": "Citizen TV",
+   "views": 792,
+   "published": "2026-10-28T07:44:34+00:00",
+   "per_hour": 348,
+   "url": "https://www.youtube.com/watch?v=Eln_FojAN5w",
+   "short": "https://youtube.com/shorts/Eln_FojAN5w"
+  },
+  {
+   "title": "Wasiwasi waibuka kuhusu usalama kabla na baada ya uchaguzi mkuu wa 2027",
+   "channel": "Citizen TV",
+   "views": 407,
+   "published": "2026-10-28T07:41:57+00:00",
+   "per_hour": 176,
+   "url": "https://www.youtube.com/watch?v=zliViy0iyUs",
+   "short": "https://youtube.com/shorts/zliViy0iyUs"
+  },
+  {
+   "title": "Michezo ya bunge za kaunti yaanza rasmi Kisumu",
+   "channel": "KTN News",
+   "views": 69,
+   "published": "2026-10-28T07:40:28+00:00",
+   "per_hour": 29,
+   "url": "https://www.youtube.com/watch?v=EWVt7R1ouv4",
+   "short": "https://youtube.com/shorts/EWVt7R1ouv4"
+  },
+  {
+   "title": "Rais Ruto ataka hatua dhidi ya matapeli, aagiza kuvunjwa kwa ukiritimba wa TATA Chemicals",
+   "channel": "Citizen TV",
+   "views": 582,
+   "published": "2026-10-28T07:39:49+00:00",
+   "per_hour": 247,
+   "url": "https://www.youtube.com/watch?v=EIheo-coPNk",
+   "short": "https://youtube.com/shorts/EIheo-coPNk"
+  },
+  {
+   "title": "Timu ya taifa ya chipukizi ya Baseball 5 yajinoa kwa mashindano ya olimpiki",
+   "channel": "KTN News",
+   "views": 44,
+   "published": "2026-10-28T07:38:34+00:00",
+   "per_hour": 19,
+   "url": "https://www.youtube.com/watch?v=NFqS_NY-MGA",
+   "short": "https://youtube.com/shorts/NFqS_NY-MGA"
+  },
+  {
+   "title": "Jamii ya Warabai kaunti ya Kilifi yasherehekea mwaka mpya kwa shangwe na nderemo",
+   "channel": "Citizen TV",
+   "views": 73,
+   "published": "2026-10-28T07:36:28+00:00",
+   "per_hour": 30,
+   "url": "https://www.youtube.com/watch?v=7soakNYtvCA",
+   "short": "https://youtube.com/shorts/7soakNYtvCA"
+  },
+  {
+   "title": "Serikali yatetea miradi ya barabara Kajiado dhidi ya lawama za upinzani",
+   "channel": "Citizen TV",
+   "views": 203,
+   "published": "2026-10-28T07:33:16+00:00",
+   "per_hour": 82,
+   "url": "https://www.youtube.com/watch?v=2J9t6EXrcUE",
+   "short": "https://youtube.com/shorts/2J9t6EXrcUE"
+  },
+  {
+   "title": "Viongozi wa Kiislamu wataka uteuzi wa haraka wa makamishna wa tume ya wakfu",
+   "channel": "Citizen TV",
+   "views": 172,
+   "published": "2026-10-28T07:31:21+00:00",
+   "per_hour": 69,
+   "url": "https://www.youtube.com/watch?v=MObMBWfFCGA",
+   "short": "https://youtube.com/shorts/MObMBWfFCGA"
+  },
+  {
+   "title": "DCI yachunguza madai ya mgonjwa kuvunjika miguu mara tatu katika hospitali ya Khunyangu huko Busia",
+   "channel": "Citizen TV",
+   "views": 1059,
+   "published": "2026-10-28T07:29:02+00:00",
+   "per_hour": 418,
+   "url": "https://www.youtube.com/watch?v=vNVhhT4I1ps",
+   "short": "https://youtube.com/shorts/vNVhhT4I1ps"
+  },
+  {
+   "title": "Has Parliament banned election results livestreaming? | The Last Word",
+   "channel": "NTV Kenya",
+   "views": 22655,
+   "published": "2026-10-27T21:08:21+00:00",
+   "per_hour": 1759,
+   "url": "https://www.youtube.com/watch?v=h3XToS08JmQ",
+   "short": "https://youtube.com/shorts/h3XToS08JmQ"
+  },
+  {
+   "title": "Deputy Speaker Gladys Boss breaks down the contentious election amendment bill",
+   "channel": "NTV Kenya",
+   "views": 5930,
+   "published": "2026-10-27T20:54:57+00:00",
+   "per_hour": 453,
+   "url": "https://www.youtube.com/watch?v=zRTDskhl7jo",
+   "short": "https://youtube.com/shorts/zRTDskhl7jo"
+  },
+  {
+   "title": "Naivas partners with NOC-K to support young Kenyan athletes ahead of Dakar Youth Olympics",
+   "channel": "NTV Kenya",
+   "views": 525,
+   "published": "2026-10-27T18:56:49+00:00",
+   "per_hour": 35,
+   "url": "https://www.youtube.com/watch?v=kG0aqFuXEws",
+   "short": "https://youtube.com/shorts/kG0aqFuXEws"
+  },
+  {
+   "title": "Kenya proposes tougher anti-doping laws with Sh5 million fines and five-year jail terms",
+   "channel": "NTV Kenya",
+   "views": 359,
+   "published": "2026-10-27T18:55:54+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=eEym3mVjDGw",
+   "short": "https://youtube.com/shorts/eEym3mVjDGw"
+  },
+  {
+   "title": "Nigeria’s Godwin Okoko wins maiden Sunshine Development Tour title in Nakuru",
+   "channel": "NTV Kenya",
+   "views": 311,
+   "published": "2026-10-27T18:53:53+00:00",
+   "per_hour": 21,
+   "url": "https://www.youtube.com/watch?v=4TokavFGx8I",
+   "short": "https://youtube.com/shorts/4TokavFGx8I"
+  },
+  {
+   "title": "Nation Digital Summit calls for stronger intellectual property protection for creatives",
+   "channel": "NTV Kenya",
+   "views": 367,
+   "published": "2026-10-27T18:51:39+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=Z_eu2LDMvlQ",
+   "short": "https://youtube.com/shorts/Z_eu2LDMvlQ"
+  },
+  {
+   "title": "Kenya targets increased tea, coffee and horticultural exports to Russia",
+   "channel": "NTV Kenya",
+   "views": 1313,
+   "published": "2026-10-27T18:47:55+00:00",
+   "per_hour": 86,
+   "url": "https://www.youtube.com/watch?v=mtU6UOU1ztY",
+   "short": "https://youtube.com/shorts/mtU6UOU1ztY"
+  },
+  {
+   "title": "Ruto tells investors to resist extortion as Devki launches Sh70bn Kitui factory",
+   "channel": "NTV Kenya",
+   "views": 3094,
+   "published": "2026-10-27T18:44:14+00:00",
+   "per_hour": 203,
+   "url": "https://www.youtube.com/watch?v=jM3ynKvjZsc",
+   "short": "https://youtube.com/shorts/jM3ynKvjZsc"
+  },
+  {
+   "title": "Africa’s growing pension funds eyed to finance infrastructure as foreign funding declines",
+   "channel": "NTV Kenya",
+   "views": 420,
+   "published": "2026-10-27T18:40:31+00:00",
+   "per_hour": 27,
+   "url": "https://www.youtube.com/watch?v=mZ6c6PYr-2o",
+   "short": "https://youtube.com/shorts/mZ6c6PYr-2o"
+  },
+  {
+   "title": "Church pastor tells court murdered student’s phone was found in offering basket",
+   "channel": "NTV Kenya",
+   "views": 6235,
+   "published": "2026-10-27T18:36:33+00:00",
+   "per_hour": 405,
+   "url": "https://www.youtube.com/watch?v=tL83sIzDdUs",
+   "short": "https://youtube.com/shorts/tL83sIzDdUs"
+  },
+  {
+   "title": "Likoni residents demand tough action against gangs after county official’s killing",
+   "channel": "NTV Kenya",
+   "views": 3426,
+   "published": "2026-10-27T18:35:19+00:00",
+   "per_hour": 222,
+   "url": "https://www.youtube.com/watch?v=LzX5hFY_M30",
+   "short": "https://youtube.com/shorts/LzX5hFY_M30"
+  },
+  {
+   "title": "Religious leaders urge politicians to keep politics out of churches ahead of 2027 polls",
+   "channel": "NTV Kenya",
+   "views": 646,
+   "published": "2026-10-27T18:31:44+00:00",
+   "per_hour": 42,
+   "url": "https://www.youtube.com/watch?v=F6ncHs3yFsM",
+   "short": "https://youtube.com/shorts/F6ncHs3yFsM"
+  },
+  {
+   "title": "Ethiopia conflict kills 10, displaces 15,000 as families flee to Kenya’s Moyale",
+   "channel": "NTV Kenya",
+   "views": 9659,
+   "published": "2026-10-27T18:26:39+00:00",
+   "per_hour": 620,
+   "url": "https://www.youtube.com/watch?v=uv_Uzgrvuro",
+   "short": "https://youtube.com/shorts/uv_Uzgrvuro"
+  },
+  {
+   "title": "Ndindi Nyoro accuses Ruto of conflict of interest in KPC share sale",
+   "channel": "NTV Kenya",
+   "views": 304,
+   "published": "2026-10-27T18:20:55+00:00",
+   "per_hour": 19,
+   "url": "https://www.youtube.com/watch?v=kU9hX9hzerk",
+   "short": "https://youtube.com/shorts/kU9hX9hzerk"
+  }
+ ]
 }

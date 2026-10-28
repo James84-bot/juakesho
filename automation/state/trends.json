@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-28T06:06:45.087439+00:00",
+  "fetched": "2026-10-28T10:00:49.033615+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -25,23 +25,45 @@
     },
     {
       "geo": "KE",
+      "title": "blackpool f.c.",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "EFL Trophy: Blackpool beat Aston Villa while Port Vale thrash Man City",
+          "url": "https://www.bbc.com/sport/football/articles/cmly0zyd15jqo",
+          "source": "BBC"
+        },
+        {
+          "title": "Match Preview: Aston Villa U21 (H)",
+          "url": "https://www.blackpoolfc.co.uk/news/2026/october/27/match-preview-/",
+          "source": "Blackpool FC"
+        },
+        {
+          "title": "Ian Evatt: Blackpool performance showed the Seasiders' naivety",
+          "url": "https://www.blackpoolgazette.co.uk/sport/ian-evatt-blackpool-aston-villa-u21s-jersey-mikes-trophy-9313387",
+          "source": "Blackpool Gazette"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "lakers vs trail blazers",
       "traffic": "500+",
       "news": [
         {
-          "title": "Trail Blazers at Lakers Preview",
-          "url": "https://www.blazersedge.com/gameday-coverage/117536/portland-trail-blazers-los-angeles-lakers-nba-preview-injury-report-tv-time-luka-doncic-damian-lillard-ja-morant-nbc-peacock",
-          "source": "Blazer's Edge"
+          "title": "Luka Doncic gets a harsh reality check",
+          "url": "https://www.mundodeportivo.com/en/20261028/1004244126/luka-doncic-gets-harsh-reality-check.html",
+          "source": "Mundo Deportivo"
         },
         {
-          "title": "Licensable picture: NBA: Portland Trail Blazers at Los Angeles Lakers",
-          "url": "https://www.reutersconnect.com/item/nba-portland-trail-blazers-at-los-angeles-lakers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAyMDIwNTY",
-          "source": "Reuters Connect"
+          "title": "NBA: Los Angeles Lakers vs. Portland Trail Blazers",
+          "url": "https://english.news.cn/20261028/1ca7a4e20f5347e7bac652c926f7020c/c.html",
+          "source": "Xinhua"
         },
         {
-          "title": "Lakers vs. Blazers: NBA Prediction, Picks and Prop Bets (Oct. 27)",
-          "url": "https://www.fanduel.com/research/lakers-vs-blazers-nba-prediction-picks-and-prop-bets-oct-27",
-          "source": "FanDuel"
+          "title": "Luka Dončić goes for game-high 41 points vs. POR",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-28/luka-doncic-goes-for-game-high-41-points-vs-por",
+          "source": "NBC Sports"
         }
       ]
     },
@@ -56,14 +78,14 @@
           "source": "BBC"
         },
         {
-          "title": "Leicester City vs. Wigan Athletic Lineups, Live Streaming, How & Where to Watch on TV",
-          "url": "https://sports.yahoo.com/articles/leicester-city-vs-wigan-athletic-185511653.html",
-          "source": "Yahoo Sports"
-        },
-        {
           "title": "Russell Martin hopes Leicester honoured late chairman with Wigan win",
           "url": "https://www.largsandmillportnews.com/sport/national/26675894.russell-martin-hopes-leicester-honoured-late-chairman-wigan-win/",
           "source": "Largs and Millport News"
+        },
+        {
+          "title": "Caldwell delivers verdict on Latics defeat at Leicester",
+          "url": "https://www.wigantoday.net/sport/football/wigan-athletic/gary-caldwell-verdict-wigan-athletic-leicester-city-9313163",
+          "source": "Wigan Today"
         }
       ]
     },
@@ -83,31 +105,53 @@
           "source": "Chiesa Di Totti"
         },
         {
-          "title": "Gasperini analyzes win over Cagliari: “It wasn’t easy, we had several banged-up players.”",
-          "url": "https://sports.yahoo.com/articles/gasperini-analyzes-win-over-cagliari-222100313.html",
+          "title": "Over 60,000 at the Olimpico for Cagliari: all the info fans need",
+          "url": "https://www.asroma.com/en/news/76139/over-60000-at-the-olimpico-for-cagliari-all-the-info-fans-need",
+          "source": "AS Roma"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "antonio conte manchester united rumors",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "If Manchester United don’t hire Antonio Conte, fear of being challenged is not an acceptable reason",
+          "url": "https://www.nytimes.com/athletic/7723942/2026/10/26/manchester-united-head-coach-antonio-conte/",
+          "source": "The New York Times"
+        },
+        {
+          "title": "Uncompromising Antonio Conte is the only manager who can whip miserable Man Utd into shape",
+          "url": "https://www.goal.com/en/originals/uncompromising-antonio-conte-only-manager-whip-miserable-man-utd-into-shape/blt234cbf30aae328e1",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Conte breaks silence amidst reports he could return to Juventus",
+          "url": "https://sports.yahoo.com/articles/conte-breaks-silence-amidst-reports-150500371.html",
           "source": "Yahoo Sports"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "sporting vs marítimo",
-      "traffic": "500+",
+      "title": "jayesh saini abc bank acquisition",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Sporting e Marítimo em aquecimento",
-          "url": "https://www.abola.pt/video/sporting-e-maritimo-em-aquecimento-2026102719430416047",
-          "source": "A Bola"
+          "title": "Kenyan healthcare tycoon Jayesh Saini cleared to take control of ABC Bank",
+          "url": "https://africa.businessinsider.com/local/markets/kenyan-healthcare-tycoon-jayesh-saini-cleared-to-take-control-of-abc-bank/5jrd16q",
+          "source": "Business Insider Africa"
         },
         {
-          "title": "Rui Borges: \"Acabamos com dois minutos de incerteza, escusadamente\"",
-          "url": "https://sapo.pt/artigo/rui-borges-acabamos-com-dois-minutos-de-incerteza-escusadamente-6ae12ba46c1c029df5a65edb",
-          "source": "SAPO"
+          "title": "Multi-Billion Business Empire of Jayesh Saini: Kenya’s Healthcare Tycoon Venturing in Banking",
+          "url": "https://thekenyatimes.com/profiles/jayesh-saini-the-man-behind-bliss-healthcare-and-lifecare-hospitals/",
+          "source": "The Kenya Times"
         },
         {
-          "title": "Pedro Lima radiante: \"Há muito tempo que esperava por esta noite...\"",
-          "url": "https://www.noticiasaominuto.com/desporto/3074069/pedro-lima-radiante-ha-muito-tempo-que-esperava-por-esta-noite",
-          "source": "Notícias ao Minuto"
+          "title": "Kenya clears healthcare tycoon Saini to take control of Africa Business Corp.",
+          "url": "https://app.dealroom.co/news/note/kenya-clears-healthcare-tycoon-saini-to-take-control-of-africa-business-corp",
+          "source": "Dealroom"
         }
       ]
     },
@@ -117,8 +161,8 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "The hidden cost of M-PESA downtime for Kenya’s small businesses",
-          "url": "https://peopledaily.digital/business/the-hidden-cost-of-m-pesa-downtime-for-kenyas-small-businesses",
+          "title": "Safaricom confirms M-PESA system glitch after massive complaints",
+          "url": "https://peopledaily.digital/business/safaricom-confirms-m-pesa-system-glitch-after-massive-complaints",
           "source": "People Daily"
         },
         {
@@ -127,53 +171,31 @@
           "source": "254 News"
         },
         {
-          "title": "Safaricom confirms nationwide M-Pesa outage",
-          "url": "https://capitalfm.africa/safaricom-confirms-nationwide-m-pesa-outage/",
-          "source": "Capital FM Africa"
+          "title": "M-Pesa Disruption Leaves Safaricom Users Frustrated And Unable To Transact",
+          "url": "https://thekenyatimes.com/latest-kenya-times-news/safcom-m-pesa-transact/",
+          "source": "The Kenya Times"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "arsenal fixtures",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Arsenal v Man City: Next Five Fixtures Compared – Gunners Face Tough November",
-          "url": "https://onefootball.com/en/news/arsenal-v-man-city-next-five-fixtures-compared-gunners-face-tough-november-43671372",
-          "source": "OneFootball"
-        },
-        {
-          "title": "Opinion: Man City has opened the door for Arsenal to defend the title",
-          "url": "https://www.justarsenal.com/opinion-man-city-has-opened-the-door-for-arsenal-to-defend-the-title/424597",
-          "source": "Just Arsenal News"
-        },
-        {
-          "title": "Previewing Arsenal’s Next 5 Games After Return To Top Of Premier League",
-          "url": "https://goonernews.com/blog/arsenal-news-next-5-games-preview/?utm_source=thumbnail&utm_medium=aggregator&utm_campaign=related-stories",
-          "source": "GoonerNews.com | Latest Arsenal News and Transfers"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "arsenal vs",
+      "title": "arsenal results",
       "traffic": "100+",
       "news": [
         {
-          "title": "Arsenal latest: Mikel Arteta reveals Max Dowman message after Carabao Cup red card",
-          "url": "https://www.independent.co.uk/sport/football/arsenal-max-dowman-mikel-arteta-fleetwood-carabao-cup-result-b3074542.html",
-          "source": "The Independent"
+          "title": "2026 Ballon d'Or recap: Winners, results, reaction",
+          "url": "https://www.espn.com/soccer/story/_/id/50259091/2026-ballon-dor-live-updates-winners-results-reaction",
+          "source": "ESPN"
         },
         {
-          "title": "LIVE.FREE: Arsenal vs Fleetwood LIVE STREA.MsArsenal vs Fleetwood fight results, updates, analysis",
-          "url": "https://www.town.shodoshima.lg.jp/section/VR_choseiyoran/shodoshima349.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2Rvb3Jsb29rMzU0Ni5naXRodWIuaW8vcnZuZy5lZHUveHl6LnhtbCIvPjwva3JwYW5vPg==&id=livefreearcenal-mmzli",
-          "source": "小豆島町"
+          "title": "The 2026 Ballon d'Or gala was held",
+          "url": "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/hoy-se-celebra-la-gala-del-balon-de-oro-2026-mbappe-vini-jr-bellingham-y-cucurella-nominados-26-10-2026",
+          "source": "Real Madrid CF | Web Oficial"
         },
         {
-          "title": "【FS1-FUBO/LIVESTREAMS】 Fleetwood vs Arsenal Match today ＬＩＶＥ Ｓｔｒｅａｍｉｎｇ",
-          "url": "https://www.town.shodoshima.lg.jp/section/VR_choseiyoran/shodoshima349.html?xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vbGVvZ29hdHMuZ2l0aHViLmlvL2JmLmVkdS91am0ueG1sIi8+PC9rcnBhbm8+&id=video-fleetwood-vs-arsenal-liv-str-ckygmhv",
-          "source": "小豆島町"
+          "title": "【VER EN VIVO】 The 70th France Football Ballon d'Or en directo",
+          "url": "https://www.nychealthandhospitals.org/gouverneur-virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii8vY2ltYW5nby5naXRodWIuaW8vc2FuaS9idWQueG1sIi8+PC9rcnBhbm8+&id=video-the-70th-france-football-ballon-d%27or-en-vivo-tv-063454-112",
+          "source": "NYC Health + Hospitals"
         }
       ]
     }
@@ -182,10 +204,6 @@
     {
       "title": "flood",
       "why": "unsafe: 'flood'"
-    },
-    {
-      "title": "rayo vallecano",
-      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}

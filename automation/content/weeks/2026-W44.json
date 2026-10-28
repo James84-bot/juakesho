@@ -972,13 +972,79 @@
         "note": "Replace the vague action with a concrete lawful demand to EPRA and explain the exact price breach involved."
       },
       "drafted_at": "2026-10-28T09:23:21.592135+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1028m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "The Treasury exposes *Sh414 billion* in termination fees threatening public-private deals.",
+      "fact": "Treasury documents show Sh414bn in potential liabilities tied to stalled infrastructure deals.",
+      "message": "Public-private deals carry Sh414bn in termination fees that taxpayers might have to pay.",
+      "action": "Read the Treasury budget review report on treasury.go.ke",
+      "beats": [
+        "Daily Nation reports: Treasury exposes *Sh414bn* in deal termination fees.",
+        "The penalties threaten stalled and contested government contracts.",
+        "Kenyans carry the risk when infrastructure deals go wrong.",
+        "Kenyans demand: the Treasury publishes the full contract list."
+      ],
+      "photo_query": "National Treasury Nairobi",
+      "source": "Daily Nation, 2026-10-28",
+      "caption": "Daily Nation reports: Sh414 billion in termination fees is a heavy burden for our budget. We pay when deals stall. Check the details.\n\nWhat other contracts need auditing? Drop it below.\n\n#FollowTheMoney #KenyaOnRecord",
+      "who": "The National Treasury",
+      "where": "National",
+      "when": "28 Oct 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Sh414 billion in termination fees threatens public funds and essential services.",
+      "bg": "usiku",
+      "publish_at": "2026-10-28T16:00:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Fuel shortages loom as dealers dispute EPRA price caps."
+      ],
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Treasury exposes Sh414bn termination fees threatening public-private deals",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYy1zdFNWdGlLQlUwMUd2R1pOdWI1LUI3Y2xLNkx0d3ROMjZmSm01OElSM3NuSFhmQldOaGJyZzg4RjM5QjE2WHNBT2hJY2p3UHdfMzR2RkR1N1cxNnRWWFREWEVqWklPbzZCUzM2enhJLW1seGlha0RNM1pxQWFhWDVxMWYzSEp3Rk81QmpGMmdsYm1WVHZhUUVzRjI5S0lKbS15cTNuQko5dEk1bzFQVEhkTDZOdkJ6dEVaR0VyTFR3Zmc?oc=5",
+          "published": "2026-10-28"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.1/10. Base this post on a current high-demand news topic from the list, such as the Russia-Africa summit or the Judiciary training."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 6,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 6,
+        "picture": 7,
+        "hold": 6,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 7,
+        "avg": 6.1,
+        "note": "Base this post on a current high-demand news topic from the list, such as the Russia-Africa summit or the Judiciary training."
+      },
+      "drafted_at": "2026-10-28T13:32:39.846409+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening, and welcome back to Kenya on Record. This week, we are looking closely at the energy sector, where tension is brewing between independent petroleum dealers and the Energy and Petroleum Regulatory Authority, EPRA. Dealers are pushing back against the latest monthly price caps, claiming the current wholesale margins are unsustainable given shifting global landed costs and foreign exchange pressures. But as this boardroom standoff drags on, the familiar threat of artificial fuel shortages is once again looming over retail pumps across the country.\n\nLet us be clear: fuel is the lifeblood of our local economy. The moment pumps run dry or dealers quietly withhold stock to force the regulator's hand, it is the mama mboga, the boda boda rider, and the daily commuter who bear the brunt through spiked transport fares and food prices. While dealers have a right to dispute margins through proper legal channels, using the public as leverage through silent supply cuts is unacceptable. EPRA, on its part, owes Kenyans absolute transparency on how these pricing formulas are derived and must strictly penalize any deliberate hoarding.\n\nKwa ufupi kwa lugha yetu ya Kiswahili: Kumekuwa na mvutano kati ya wauzaji wa mafuta na mamlaka ya EPRA kuhusu viwango vya bei vilivyowekwa, hali inayotishia uhaba wa mafuta nchini. Hatukubali wananchi wateseke kwa uhaba bandia wakati wadau wakivutana kibiashara; serikali lazima ilinde haki ya mwananchi kupata nishati kwa bei halali.",
-    "voice_note": "Habari zenu, this is Kenya on Record with a quick heads-up on the fuel situation. If you have noticed queues forming or a few dry pumps in your neighborhood, here is what is happening. A section of fuel dealers is currently disputing EPRA’s monthly price caps, arguing that their profit margins have been wiped out. Now, while negotiations are supposedly ongoing, there are growing concerns about artificial rationing and hoarding behind the scenes. We have been here before, and it always ends with wananchi being squeezed on fares and basic goods. Keep an eye out at your local station. If a station has fuel but refuses to sell, or tries to charge a shilling above the gazetted EPRA pump price, that is an illegality. Demand your ETR receipt, stay vigilant, and let us not normalize manufactured crises.",
-    "sms": "Usiibiwe: Stations cannot charge above EPRA price caps even during shortages. Always check the official monthly pump rate and demand your ETR receipt.",
-    "reels": "Dry pumps or manufactured crisis? As fuel dealers dispute EPRA's latest price caps, the threat of shortages is once again knocking on our doors. When oil marketers and regulators fight over profit margins, it’s ordinary commuters and small businesses who get stranded. EPRA must ensure oil companies honor their licensing obligations and release supply. Boardroom disputes cannot be settled by holding the Kenyan public hostage."
+    "radio": "Good evening and welcome to Kenya on Record. Today, we need an honest conversation about the fine print in our public-private partnerships.\n\nWhen government enters mega-infrastructure agreements with private investors, wananchi are repeatedly told private capital absorbs the risk. But scrutiny of these contracts reveals a troubling truth: taxpayers currently face an exposure of up to Sh414 billion in termination fees across various public-private deals.\n\nIn simple terms, if the state defaults, alters terms, or cancels a deal—even for legitimate public interest—private consortiums are legally entitled to walk away with hundreds of billions of our money. That is capital diverted directly from healthcare, classrooms, and debt relief. Risk transfer cannot simply mean private firms pocket the upside while the public guarantees the loss. Parliament must demand an open contract registry and audit every sovereign guarantee before contracts are finalized.\n\nKwa ufupi: Mikataba ya ubia kati ya serikali na wawekezaji wa kibinafsi inabeba mzigo mzito, ambapo walipakodi wanaweza kulazimika kulipa shilingi bilioni mia nne na kumi na nne endapo miradi hii itavunjika. Ni lazima bunge lihakikishe masharti yote yanawekwa wazi mapema ili kulinda fedha zetu.",
+    "voice_note": "Habari zenu. Here is something we must pay attention to before it turns into our next debt crisis. You know those big infrastructure deals signed under Public-Private Partnerships? The ones we are told carry zero risk for the taxpayer? Official scrutiny shows that if these contracts are terminated, wananchi could be forced to pay up to 414 billion shillings in termination fees. Think about that. If the investment succeeds, the private sector banks the profits. If it falls apart, our taxes pay the exit bill. That is not risk sharing; it is a hidden liability. We must demand that Parliament subjects every single PPP contract to public scrutiny before signing away our collective future. Please share this note.",
+    "sms": "Usiibiwe: PPP deals aren't free money. Taxpayers face Sh414bn in hidden exit fees if contracts fail. Demand full transparency on all sovereign guarantees.",
+    "reels": "Four hundred and fourteen billion shillings. That is the staggering bill Kenyan taxpayers could face if our public-private partnership deals collapse. We are told these arrangements protect the public purse, yet hidden termination clauses leave wananchi carrying the ultimate risk. Private investors take the profits, but we underwrite the downside. It is time to demand fully open contracts before anyone signs away our taxes."
   },
   "spend_usd": 0.0
 }
