@@ -1,69 +1,136 @@
 {
-  "fetched": "2026-10-29T06:06:32.707186+00:00",
+  "fetched": "2026-10-29T10:23:46.480506+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "vehicle",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "NTSA Lists 7 Safety Violations as 13 Vehicles Are Detained on Southern Bypass",
+          "url": "https://www.kenyans.co.ke/news/128973-ntsa-flags-cracked-windscreens-broken-headlights-after-night-operation-13-vehicles",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "NTSA road safety operation: What will be checked at roadblocks",
+          "url": "https://nation.africa/kenya/news/ntsa-road-safety-operation-what-will-be-checked-at-roadblocks-5646622",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "NTSA warns Miraa drivers over dangerous overtaking",
+          "url": "https://peopledaily.digital/news/ntsa-warns-miraa-drivers-over-dangerous-overtaking",
+          "source": "People Daily"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kra rental income tax crackdown",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "KRA Targets 1 Million Landlords in New Tax Crackdown",
+          "url": "https://www.kenyans.co.ke/news/128969-kra-targets-1-million-landlords-new-rental-income-tax-crackdown",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "KRA targets 1M landlords: What happens if your rental tax records don’t match?",
+          "url": "https://peopledaily.digital/business/kra-targets-1m-landlords-what-happens-if-your-rental-tax-records-dont-match",
+          "source": "People Daily"
+        },
+        {
+          "title": "KRA places over one million landlords under tax scrutiny",
+          "url": "https://saccoreview.co.ke/kra-places-over-one-million-landlords-under-tax-scrutiny/",
+          "source": "Sacco Review"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "business daily africa",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Safaricom sacks 118 staff in fraud crackdown",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/safaricom-sacks-118-staff-in-fraud-crackdown-5648112",
+          "source": "Business Daily"
+        },
+        {
+          "title": "Safaricom sustainability efforts create Sh1.25tr societal value",
+          "url": "https://www.standardmedia.co.ke/business/article/2001560997/safaricom-sustainability-efforts-create-sh1-25tr-societal-value",
+          "source": "www.standardmedia.co.ke"
+        },
+        {
+          "title": "Inside Safaricom’s fight to keep M-PESA secure",
+          "url": "https://kenyanwallstreet.com/newsletter/inside-safaricom-s-fight-to-keep-m-pesa-secure",
+          "source": "The Kenyan Wallstreet"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "timberwolves vs warriors",
       "traffic": "500+",
       "news": [
         {
-          "title": "Stephen Curry, Warriors start strong in win over Timberwolves",
-          "url": "https://lufkindailynews.com/news_reuters/sports/stephen-curry-warriors-start-strong-in-win-over-timberwolves/article_9a8ed6d2-db50-5b3a-b213-766716dcea86.html",
-          "source": "The Lufkin Daily News"
+          "title": "Anthony Edwards to undergo arthroscopic procedure on knee, miss at least 2 months: Sources",
+          "url": "https://www.nytimes.com/athletic/7730967/2026/10/27/anthony-edwards-surgery-right-knee-two-months-out/",
+          "source": "The New York Times"
         },
         {
-          "title": "‘He feels terrible’: Steve Kerr says why Yaxel Lendeborg is ‘not happy at all’ despite Warriors win",
-          "url": "https://uk.sports.yahoo.com/news/feels-terrible-steve-kerr-says-053304222.html",
-          "source": "Yahoo"
+          "title": "\"We Want To See Him Healthy\" - Stephen Curry Delivers Heartwarming Message For Anthony Edwards After Golden State Warriors' Stunning Win",
+          "url": "https://sports.ndtv.com/us/nba/we-want-to-see-him-healthy-stephen-curry-delivers-heartwarming-message-for-anthony-edwards-after-golden-state-warriors-stunning-win-12252169",
+          "source": "NDTV Sports"
         },
         {
-          "title": "Warriors Timberwolves Basketball",
-          "url": "https://www.couriernews.com/sports/warriors-timberwolves-basketball/image_aad131cc-ecd7-5a42-8a93-3f0a76ec9906.html",
-          "source": "couriernews.com"
+          "title": "'Really need him to': Chris Finch shares what LaMelo Ball must do now after Anthony Edwards' injury",
+          "url": "https://www.hitc.com/really-need-him-to-chris-finch-shares-what-lamelo-ball-must-do-now-after-anthony-edwards-injury/",
+          "source": "HITC"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "efl results",
-      "traffic": "500+",
+      "title": "estêvão willian",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Carabao Cup draw: Fleetwood Town to face Everton or Newcastle in quarter-final",
-          "url": "https://www.bbc.com/sport/football/articles/cmp3glnle0wdo",
+          "title": "'He could be happier' - why is Estevao becoming Chelsea's forgotten man?",
+          "url": "https://www.bbc.com/sport/football/articles/cv5ynwkndw61o",
           "source": "BBC"
         },
         {
-          "title": "Iraola on Bournemouth draw in Carabao Cup: 'Only team that I don't want'",
-          "url": "https://www.espn.com/soccer/story/_/id/50312281/iraola-bournemouth-draw-carabao-cup",
-          "source": "ESPN"
+          "title": "Estevao is becoming an issue for Xabi Alonso and Chelsea",
+          "url": "https://www.nytimes.com/athletic/7734139/2026/10/29/estevao-chelsea-alonso-liverpool/",
+          "source": "The New York Times"
         },
         {
-          "title": "Liverpool beat Chelsea 6-5 on penalties: Carabao Cup plus quarter-final draw – as it happened",
-          "url": "https://www.theguardian.com/football/live/2026/oct/28/liverpool-v-chelsea-carabao-cup-fourth-round-live",
-          "source": "The Guardian"
+          "title": "Alonso makes brutal decision for Liverpool clash as concerns over personal rift with Chelsea star emerge",
+          "url": "https://www.football365.com/news/alonso-brutal-decision-liverpool-clash-push-chelsea-star-psg",
+          "source": "Football365"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "flashscore",
-      "traffic": "500+",
+      "title": "jadon sancho",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Tottenham and Aston Villa threaten Arsenal’s pursuit of 29-year-old defensive target",
-          "url": "https://www.livescore.com/en/news/football/premier-league/tottenham-and-aston-villa-threaten-arsenals-pursuit-of-29-year-old-defensive-target-caughtoffside/",
-          "source": "LiveScore"
+          "title": "Football gossip: Sancho, Doue, Rashford, Camara, Branthwaite, Oskarsson, Lopez",
+          "url": "https://www.bbc.com/sport/football/articles/ckyvr1q72v84o",
+          "source": "BBC"
         },
         {
-          "title": "Arsenal to consider defensive depth as Fleetwood defeat sinks in",
-          "url": "https://www.flashscore.com/news/soccer-premier-league-flashscore-sources-arsenal-to-consider-defensive-depth-as-fleetwood-defeat-sinks-in/CWHyzqAb/",
-          "source": "Flashscore.com"
+          "title": "Former Borussia Dortmund star Jadon Sancho reportedly turns down a tiny salary in Spain and leaves Europe",
+          "url": "https://www.goal.com/en/news/no-meagre-salary-at-getafe-after-all-former-borussia-dortmund-star-jadon-sancho-apparently-opts-for-a-far-more-lucrative-option-and-leaves-europe/blt05c05b3ed99950e9",
+          "source": "Goal.com"
         },
         {
-          "title": "Arsenal line up January raid on Bayern Munich after Fleetwood humiliation",
-          "url": "https://www.teamtalk.com/arsenal/january-transfer-bayern-munich-kim-min-jae-fleetwood-town-league-cup",
-          "source": "TEAMtalk"
+          "title": "Jadon Sancho offered cut-price contract by Getafe",
+          "url": "https://www.telegraph.co.uk/football/2026/10/23/jadon-sancho-offered-cut-price-contract-by-getafe/",
+          "source": "The Telegraph"
         }
       ]
     },
@@ -73,41 +140,41 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Oklahoma City Thunder vs Dallas Mavericks Oct 28, 2026 Box Scores",
-          "url": "https://www.nba.com/game/0022600142/box-score",
-          "source": "NBA.com"
+          "title": "‘NBA is weak now’ - Luka Doncic's LA Lakers absence sparks heated load management debate",
+          "url": "https://www.hitc.com/nba-is-weak-now-luka-doncics-la-lakers-absence-sparks-heated-load-management-debate/",
+          "source": "HITC"
         },
         {
-          "title": "Los Angeles Lakers vs LA Clippers Oct 28, 2026 Box Scores",
-          "url": "https://www.nba.com/game/lal-vs-lac-0022600143/box-score",
-          "source": "NBA.com"
+          "title": "JJ Redick Provides Clarity On Luka Doncic And Ziaire Williams After Being Ruled Out vs. Clippers",
+          "url": "https://www.yardbarker.com/nba/articles/jj_redick_provides_clarity_on_luka_doncic_and_ziaire_williams_after_being_ruled_out_vs_clippers/s1_16751_44487206",
+          "source": "Yardbarker"
         },
         {
-          "title": "Philadelphia 76ers vs Indiana Pacers Oct 28, 2026 Box Scores",
-          "url": "https://www.nba.com/game/phi-vs-ind-0022600135/box-score",
-          "source": "NBA.com"
+          "title": "Lakers 103-87 Clippers (Oct 28, 2026) Game Recap",
+          "url": "https://www.espn.com/nba/recap?gameId=401909892",
+          "source": "ESPN"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "live score",
-      "traffic": "200+",
+      "title": "calafiori injury",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Schmeichel says INEOS signing was set up to fail at Man Utd – even his own teammates wouldn’t pass to him",
-          "url": "https://www.livescore.com/en/news/football/premier-league/schmeichel-says-ineos-signing-was-set-up-to-fail-at-man-utd-even-his-own-teammates-wouldnt-pass-to-him-utdreport/",
-          "source": "LiveScore"
+          "title": "Mikel Arteta confirms fresh TRIPLE Arsenal injury nightmare as Declan Rice and two other stars face race to be fit for Liverpool clash after Fleetwood defeat",
+          "url": "https://www.goal.com/en-ke/news/mikel-arteta-triple-arsenal-injury-declan-rice-calafiori-madueke-liverpool-fleetwood/blt7563f86a03ca67d3",
+          "source": "Goal.com"
         },
         {
-          "title": "Peter Schmeichel accuses Man Utd stars of refusing to pass to to 'fantastic' player",
-          "url": "https://metro.co.uk/2026/10/28/peter-schmeichel-accuses-man-utd-stars-refusing-pass-fantastic-player-29745722/",
-          "source": "Metro.co.uk"
+          "title": "Arsenal eye triple injury boost vs Liverpool as key men near returns",
+          "url": "https://www.standard.co.uk/sport/football/arsenal-fc-rice-madueke-injury-latest-liverpool-b1302698.html",
+          "source": "London Evening Standard"
         },
         {
-          "title": "Schmeichel questions Man Utd’s decision to sell “Goal Machine” Hojlund too soon",
-          "url": "https://www.livescore.com/en/news/football/premier-league/schmeichel-questions-man-utds-decision-to-sell-goal-machine-hojlund-too-soon-football-muse/",
-          "source": "LiveScore"
+          "title": "Tzolis, Calafiori, Rice, Saliba, Saka, Madueke - Arsenal injury updates and return dates",
+          "url": "https://www.football.london/arsenal-fc/news/tzolis-calafiori-rice-saliba-saka-34830864",
+          "source": "Football London"
         }
       ]
     },
@@ -122,70 +189,22 @@
           "source": "Reuters"
         },
         {
-          "title": "P.J. Washington has 18 points, nine boards in win",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-29/p-j-washington-has-18-points-nine-boards-in-win",
-          "source": "NBC Sports"
-        },
-        {
-          "title": "Cooper Flagg puts on a show with 26-point display",
-          "url": "https://www.nba.com/watch/video/highlights-from-cooper-flagg-26-point-game-4?plsrc=nba&collection=must-watch-videos",
+          "title": "Game Recap: Mavericks 120, Thunder 96",
+          "url": "https://www.nba.com/watch/video/game-recap-mavericks-120-thunder-96",
           "source": "NBA.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "fulham",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Aston Villa vs Fulham Predicted Lineup: Jackson Leads, Sessegnon Banned",
-          "url": "https://thefalse9.com/2026/10/aston-villa-vs-fulham-predicted-lineup.html",
-          "source": "The False 9"
         },
         {
-          "title": "Aston Villa - Fulham FC prediction & tips 31.10.2026",
-          "url": "https://www.transfermarkt.com/betting/tips/aston-villa-vs-fulham-fc-prediction-31-10-2026/",
-          "source": "Transfermarkt"
-        },
-        {
-          "title": "Aston Villa vs Fulham: Kalshi Promo Code & $25 Bonus",
-          "url": "https://www.squawka.com/us/news/premier-league/kalshi-promo-code-aston-villa-vs-fulham-31-10-26-premier-league/",
-          "source": "Squawka"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "juventus",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Dove vedere Austria Wien W-Juventus in diretta tv e in streaming: canali, data, orario e formazioni",
-          "url": "https://www.goal.com/it/notizie/dove-vedere-austria-wien-w-juventus-diretta-tv-streaming-online/blt59e1e5e23be76a57",
-          "source": "Goal.com"
-        },
-        {
-          "title": "LIVE Austria Vienna-Juventus, Champions League calcio femminile in DIRETTA: serve una vittoria per alimentare la qualificazione",
-          "url": "https://www.oasport.it/2026/10/live-austria-vienna-juventus-champions-league-calcio-femminile-in-diretta-serve-una-vittoria-per-alimentare-la-qualificazione/",
-          "source": "OA Sport"
-        },
-        {
-          "title": "Women | Austria Wien-Juventus, la conferenza stampa della vigilia",
-          "url": "https://www.juventus.com/it/news/articoli/women-austria-wien-juventus-la-conferenza-stampa-della-vigilia",
-          "source": "Juventus.com"
+          "title": "Mavs Blow By Thunder 120-96 in Kyrie Irving's Home Return From Injury",
+          "url": "https://roundtable.io/sports/nba/mavericks/game-day/mavs-blow-by-thunder-120-96-in-kyrie-irvings-home-return-from-injury",
+          "source": "roundtable.io"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "inter miami vs fc cincinnati standings",
-      "why": "unsafe: 'Odds'"
-    },
-    {
       "title": "inter miami vs cincinnati",
-      "why": "unsafe: 'Fire'"
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}

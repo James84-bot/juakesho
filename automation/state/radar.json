@@ -1,8 +1,36 @@
 {
- "fetched": "2026-10-29T06:06:38.018542+00:00",
+ "fetched": "2026-10-29T10:23:51.564442+00:00",
  "x": [
   {
    "name": "Ajax",
+   "tweets": ""
+  },
+  {
+   "name": "Made In Kenya",
+   "tweets": ""
+  },
+  {
+   "name": "Konza For The Future",
+   "tweets": ""
+  },
+  {
+   "name": "#LecturesStrikeEnds",
+   "tweets": ""
+  },
+  {
+   "name": "Talanta Stadium",
+   "tweets": ""
+  },
+  {
+   "name": "Ksh20B Pay Deal",
+   "tweets": ""
+  },
+  {
+   "name": "#DeogratiusNdejembi",
+   "tweets": ""
+  },
+  {
+   "name": "Unethical Leader",
    "tweets": ""
   },
   {
@@ -10,47 +38,7 @@
    "tweets": ""
   },
   {
-   "name": "The Russia",
-   "tweets": ""
-  },
-  {
-   "name": "Ukraine War",
-   "tweets": ""
-  },
-  {
-   "name": "#TalantaStadiumLaunch",
-   "tweets": ""
-  },
-  {
-   "name": "Opening Match",
-   "tweets": ""
-  },
-  {
-   "name": "Fofana",
-   "tweets": ""
-  },
-  {
-   "name": "Teamily",
-   "tweets": ""
-  },
-  {
-   "name": "#MainaAndKingangi",
-   "tweets": ""
-  },
-  {
-   "name": "waiguru leads",
-   "tweets": ""
-  },
-  {
-   "name": "#4yearsofbisau",
-   "tweets": ""
-  },
-  {
-   "name": "kakai bissau delivers",
-   "tweets": ""
-  },
-  {
-   "name": "#konzaeducationrevolution",
+   "name": "#RecognizeCareWork",
    "tweets": ""
   },
   {
@@ -58,19 +46,31 @@
    "tweets": ""
   },
   {
-   "name": "kenyans deserve answers",
+   "name": "#LOOPBIZ",
    "tweets": ""
   },
   {
-   "name": "Yvonne Okwara",
+   "name": "Inclusive Care",
    "tweets": ""
   },
   {
-   "name": "Estevao",
+   "name": "waiguru leads",
    "tweets": ""
   },
   {
-   "name": "jofri must explain",
+   "name": "Fofana",
+   "tweets": ""
+  },
+  {
+   "name": "Russia",
+   "tweets": ""
+  },
+  {
+   "name": "2029 CBA",
+   "tweets": ""
+  },
+  {
+   "name": "kakai bissau delivers",
    "tweets": ""
   },
   {
@@ -78,15 +78,19 @@
    "tweets": ""
   },
   {
+   "name": "Julius Ogamba",
+   "tweets": ""
+  },
+  {
    "name": "prof babu owino",
    "tweets": ""
   },
   {
-   "name": "Fleetwood",
+   "name": "Estevao",
    "tweets": ""
   },
   {
-   "name": "makamurais ndejembi",
+   "name": "Attend CitamKaren SMEsExpo",
    "tweets": ""
   },
   {
@@ -98,11 +102,7 @@
    "tweets": ""
   },
   {
-   "name": "Welcome to Kenya",
-   "tweets": ""
-  },
-  {
-   "name": "wamunyoro conman",
+   "name": "Rigathi Gachagua",
    "tweets": ""
   },
   {
@@ -118,15 +118,553 @@
    "tweets": ""
   },
   {
-   "name": "kiambu county scorecard",
+   "name": "AFCON 2027",
    "tweets": ""
   }
  ],
- "videos": [],
- "errors": {
-  "Citizen TV": "HTTP Error 404: Not Found",
-  "NTV Kenya": "HTTP Error 404: Not Found",
-  "KTN News": "HTTP Error 404: Not Found"
- },
- "catalog": []
+ "videos": [
+  {
+   "title": "Oparesheni ya kuwaokoa manusura katika jengo liliporomoka Eastleigh yaendelea",
+   "channel": "KTN News",
+   "views": 1287,
+   "published": "2026-10-29T08:55:19+00:00",
+   "per_hour": 872,
+   "url": "https://www.youtube.com/watch?v=P0zRDe_oy2o",
+   "short": "https://youtube.com/shorts/P0zRDe_oy2o"
+  },
+  {
+   "title": "Cherargei amkosoa Murango kwa wimbo, ajivunia miradi ya maendeleo",
+   "channel": "Citizen TV",
+   "views": 1223,
+   "published": "2026-10-29T08:34:29+00:00",
+   "per_hour": 671,
+   "url": "https://www.youtube.com/watch?v=ye8dMaibwFM",
+   "short": "https://youtube.com/shorts/ye8dMaibwFM"
+  },
+  {
+   "title": "| Maskani na Rashid | Karata za 2027 [Part 3]",
+   "channel": "Citizen TV",
+   "views": 712,
+   "published": "2026-10-29T09:15:34+00:00",
+   "per_hour": 626,
+   "url": "https://www.youtube.com/watch?v=iO_w-CWA47c",
+   "short": "https://youtube.com/shorts/iO_w-CWA47c"
+  },
+  {
+   "title": "NTV KENYA LIVE | Pensions Conference & Expo 2026",
+   "channel": "NTV Kenya",
+   "views": 493,
+   "published": "2026-10-29T09:54:11+00:00",
+   "per_hour": 493,
+   "url": "https://www.youtube.com/watch?v=jgAND9Tq2iM",
+   "short": "https://youtube.com/shorts/jgAND9Tq2iM"
+  },
+  {
+   "title": "| Maskani na Rashid | Karata za 2027 [Part 1]",
+   "channel": "Citizen TV",
+   "views": 997,
+   "published": "2026-10-29T08:04:51+00:00",
+   "per_hour": 430,
+   "url": "https://www.youtube.com/watch?v=o17K7h99nUw",
+   "short": "https://youtube.com/shorts/o17K7h99nUw"
+  },
+  {
+   "title": "| Maskani na Rashid | Karata za 2027 [Part 2]",
+   "channel": "Citizen TV",
+   "views": 584,
+   "published": "2026-10-29T08:42:19+00:00",
+   "per_hour": 345,
+   "url": "https://www.youtube.com/watch?v=KXBsl57qtl8",
+   "short": "https://youtube.com/shorts/KXBsl57qtl8"
+  },
+  {
+   "title": "Ol Kalou court halts Geta Forest logging after MP Wanjiku Muhia and environmentalists sue KFS, KWS",
+   "channel": "NTV Kenya",
+   "views": 261,
+   "published": "2026-10-29T09:25:05+00:00",
+   "per_hour": 261,
+   "url": "https://www.youtube.com/watch?v=WtToNCudjjk",
+   "short": "https://youtube.com/shorts/WtToNCudjjk"
+  },
+  {
+   "title": "Seneta Kamau Murango: Wimbo huo unalenga changamoto za jamii na ajira kwa vijana",
+   "channel": "Citizen TV",
+   "views": 428,
+   "published": "2026-10-29T08:34:53+00:00",
+   "per_hour": 236,
+   "url": "https://www.youtube.com/watch?v=rbSOUa_lCHc",
+   "short": "https://youtube.com/shorts/rbSOUa_lCHc"
+  },
+  {
+   "title": "Bayern Munich and Ajax to open Talanta Stadium in January 2027",
+   "channel": "NTV Kenya",
+   "views": 3520,
+   "published": "2026-10-28T18:57:55+00:00",
+   "per_hour": 228,
+   "url": "https://www.youtube.com/watch?v=_aBtGpxvo8w",
+   "short": "https://youtube.com/shorts/_aBtGpxvo8w"
+  },
+  {
+   "title": "Potato trials underway for three new seed varieties to boost farmers’ yields",
+   "channel": "NTV Kenya",
+   "views": 3201,
+   "published": "2026-10-28T18:49:20+00:00",
+   "per_hour": 206,
+   "url": "https://www.youtube.com/watch?v=1PUpmAnSA3o",
+   "short": "https://youtube.com/shorts/1PUpmAnSA3o"
+  },
+  {
+   "title": "| Maskani na Rashid | Karata za 2027 [Part 4]",
+   "channel": "Citizen TV",
+   "views": 180,
+   "published": "2026-10-29T09:38:23+00:00",
+   "per_hour": 180,
+   "url": "https://www.youtube.com/watch?v=dHX7v2eAg20",
+   "short": "https://youtube.com/shorts/dHX7v2eAg20"
+  },
+  {
+   "title": "Hospital ya rufaa kaunti ya Nakuru yaanza kutoa vipimo vya saratani ya matiti bila malipo",
+   "channel": "Citizen TV",
+   "views": 521,
+   "published": "2026-10-29T07:27:40+00:00",
+   "per_hour": 177,
+   "url": "https://www.youtube.com/watch?v=OOtXicKCHS8",
+   "short": "https://youtube.com/shorts/OOtXicKCHS8"
+  },
+  {
+   "title": "Wakazi wa Nairobi Waisuta Serikali ya Kaunti kwa Utepetevu Baada ya Jengo la Eastleigh Kuporomoka",
+   "channel": "KTN News",
+   "views": 166,
+   "published": "2026-10-29T09:33:05+00:00",
+   "per_hour": 166,
+   "url": "https://www.youtube.com/watch?v=bcjc0AWBbxY",
+   "short": "https://youtube.com/shorts/bcjc0AWBbxY"
+  },
+  {
+   "title": "Mzozo wa Ardhi Wazua Hofu Baada ya Nyumba Kubomolewa Machakos",
+   "channel": "KTN News",
+   "views": 266,
+   "published": "2026-10-29T08:21:40+00:00",
+   "per_hour": 131,
+   "url": "https://www.youtube.com/watch?v=UnexY1hZQhk",
+   "short": "https://youtube.com/shorts/UnexY1hZQhk"
+  },
+  {
+   "title": "Cost of Lecturers' Strike on Comrades | Haya Dennis Aketch",
+   "channel": "NTV Kenya",
+   "views": 528,
+   "published": "2026-10-29T06:04:16+00:00",
+   "per_hour": 122,
+   "url": "https://www.youtube.com/watch?v=SpLsmwZldy0",
+   "short": "https://youtube.com/shorts/SpLsmwZldy0"
+  }
+ ],
+ "errors": {},
+ "catalog": [
+  {
+   "title": "Wakazi wa Mosoriot waitaka serikali kuimarisha doria za polisi kukabili uhalifu Nandi",
+   "channel": "Citizen TV",
+   "views": 0,
+   "published": "2026-10-29T10:22:04+00:00",
+   "per_hour": 0,
+   "url": "https://www.youtube.com/watch?v=y42D0MOrf1Y",
+   "short": "https://youtube.com/shorts/y42D0MOrf1Y"
+  },
+  {
+   "title": "Wakazi Maasai Mau wamtaka serikali kuwakamata washukiwa wa ufisadi wa fidia ya shilingi bilioni 2.6",
+   "channel": "Citizen TV",
+   "views": 2,
+   "published": "2026-10-29T10:20:25+00:00",
+   "per_hour": 2,
+   "url": "https://www.youtube.com/watch?v=RS0UWM4HyOw",
+   "short": "https://youtube.com/shorts/RS0UWM4HyOw"
+  },
+  {
+   "title": "Wataalam waonya kuhusu ongezeko la wagonjwa wa saratani ya matiti Kenya",
+   "channel": "Citizen TV",
+   "views": 5,
+   "published": "2026-10-29T10:18:53+00:00",
+   "per_hour": 5,
+   "url": "https://www.youtube.com/watch?v=yskePoIYi3c",
+   "short": "https://youtube.com/shorts/yskePoIYi3c"
+  },
+  {
+   "title": "Viongozi wa dini na wazee Isiolo waomba Ruto na Abiy Ahmed Kusitisha mapigano ya Oromo na Somali",
+   "channel": "Citizen TV",
+   "views": 17,
+   "published": "2026-10-29T10:17:39+00:00",
+   "per_hour": 17,
+   "url": "https://www.youtube.com/watch?v=u8jzDJXTgB0",
+   "short": "https://youtube.com/shorts/u8jzDJXTgB0"
+  },
+  {
+   "title": "Shughuli za uokoaji Eastleigh zaingia siku ya saba",
+   "channel": "Citizen TV",
+   "views": 116,
+   "published": "2026-10-29T10:13:47+00:00",
+   "per_hour": 116,
+   "url": "https://www.youtube.com/watch?v=e_DvTbZAG9Y",
+   "short": "https://youtube.com/shorts/e_DvTbZAG9Y"
+  },
+  {
+   "title": "Since 2013 Nakuru has never re-elected a governor for a second term. Will Kihika break the pattern?",
+   "channel": "NTV Kenya",
+   "views": 60,
+   "published": "2026-10-29T10:01:06+00:00",
+   "per_hour": 60,
+   "url": "https://www.youtube.com/watch?v=IA_0R9e3Vdc",
+   "short": "https://youtube.com/shorts/IA_0R9e3Vdc"
+  },
+  {
+   "title": "| Maskani na Rashid | Karata za 2027 [Part 5]",
+   "channel": "Citizen TV",
+   "views": 64,
+   "published": "2026-10-29T09:57:17+00:00",
+   "per_hour": 64,
+   "url": "https://www.youtube.com/watch?v=6D-mEDYTAFc",
+   "short": "https://youtube.com/shorts/6D-mEDYTAFc"
+  },
+  {
+   "title": "NTV KENYA LIVE | Pensions Conference & Expo 2026",
+   "channel": "NTV Kenya",
+   "views": 493,
+   "published": "2026-10-29T09:54:11+00:00",
+   "per_hour": 493,
+   "url": "https://www.youtube.com/watch?v=jgAND9Tq2iM",
+   "short": "https://youtube.com/shorts/jgAND9Tq2iM"
+  },
+  {
+   "title": "Role of Water Sector Institutions in Securing Kenya's Water Future",
+   "channel": "NTV Kenya",
+   "views": 17,
+   "published": "2026-10-29T09:39:12+00:00",
+   "per_hour": 17,
+   "url": "https://www.youtube.com/watch?v=mCHffERmvw0",
+   "short": "https://youtube.com/shorts/mCHffERmvw0"
+  },
+  {
+   "title": "| Maskani na Rashid | Karata za 2027 [Part 4]",
+   "channel": "Citizen TV",
+   "views": 180,
+   "published": "2026-10-29T09:38:23+00:00",
+   "per_hour": 180,
+   "url": "https://www.youtube.com/watch?v=dHX7v2eAg20",
+   "short": "https://youtube.com/shorts/dHX7v2eAg20"
+  },
+  {
+   "title": "When Your Spouse Is Also Your Business Partner! 😂😂 | Boera Bisieri x Andrew Smollo",
+   "channel": "NTV Kenya",
+   "views": 22,
+   "published": "2026-10-29T09:38:20+00:00",
+   "per_hour": 22,
+   "url": "https://www.youtube.com/watch?v=5-cuIxb4DpM",
+   "short": "https://youtube.com/shorts/5-cuIxb4DpM"
+  },
+  {
+   "title": "Wakazi wa Nairobi Waisuta Serikali ya Kaunti kwa Utepetevu Baada ya Jengo la Eastleigh Kuporomoka",
+   "channel": "KTN News",
+   "views": 166,
+   "published": "2026-10-29T09:33:05+00:00",
+   "per_hour": 166,
+   "url": "https://www.youtube.com/watch?v=bcjc0AWBbxY",
+   "short": "https://youtube.com/shorts/bcjc0AWBbxY"
+  },
+  {
+   "title": "Ol Kalou court halts Geta Forest logging after MP Wanjiku Muhia and environmentalists sue KFS, KWS",
+   "channel": "NTV Kenya",
+   "views": 261,
+   "published": "2026-10-29T09:25:05+00:00",
+   "per_hour": 261,
+   "url": "https://www.youtube.com/watch?v=WtToNCudjjk",
+   "short": "https://youtube.com/shorts/WtToNCudjjk"
+  },
+  {
+   "title": "| Maskani na Rashid | Karata za 2027 [Part 3]",
+   "channel": "Citizen TV",
+   "views": 712,
+   "published": "2026-10-29T09:15:34+00:00",
+   "per_hour": 626,
+   "url": "https://www.youtube.com/watch?v=iO_w-CWA47c",
+   "short": "https://youtube.com/shorts/iO_w-CWA47c"
+  },
+  {
+   "title": "Kaikai Bisau: Ushirikiano wa viongozi wahitajika kuboresha huduma na maendeleo Trans Nzoia",
+   "channel": "Citizen TV",
+   "views": 48,
+   "published": "2026-10-29T08:55:32+00:00",
+   "per_hour": 33,
+   "url": "https://www.youtube.com/watch?v=KGVxGikjWvs",
+   "short": "https://youtube.com/shorts/KGVxGikjWvs"
+  },
+  {
+   "title": "Oparesheni ya kuwaokoa manusura katika jengo liliporomoka Eastleigh yaendelea",
+   "channel": "KTN News",
+   "views": 1287,
+   "published": "2026-10-29T08:55:19+00:00",
+   "per_hour": 872,
+   "url": "https://www.youtube.com/watch?v=P0zRDe_oy2o",
+   "short": "https://youtube.com/shorts/P0zRDe_oy2o"
+  },
+  {
+   "title": "| Maskani na Rashid | Karata za 2027 [Part 2]",
+   "channel": "Citizen TV",
+   "views": 584,
+   "published": "2026-10-29T08:42:19+00:00",
+   "per_hour": 345,
+   "url": "https://www.youtube.com/watch?v=KXBsl57qtl8",
+   "short": "https://youtube.com/shorts/KXBsl57qtl8"
+  },
+  {
+   "title": "KEPHIS na Chuo Kikuu cha Eldoret Vafanya Majaribio ya Mbegu Mpya za Viazi",
+   "channel": "KTN News",
+   "views": 43,
+   "published": "2026-10-29T08:36:05+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=skzvKFeJdcM",
+   "short": "https://youtube.com/shorts/skzvKFeJdcM"
+  },
+  {
+   "title": "Seneta Kamau Murango: Wimbo huo unalenga changamoto za jamii na ajira kwa vijana",
+   "channel": "Citizen TV",
+   "views": 428,
+   "published": "2026-10-29T08:34:53+00:00",
+   "per_hour": 236,
+   "url": "https://www.youtube.com/watch?v=rbSOUa_lCHc",
+   "short": "https://youtube.com/shorts/rbSOUa_lCHc"
+  },
+  {
+   "title": "Cherargei amkosoa Murango kwa wimbo, ajivunia miradi ya maendeleo",
+   "channel": "Citizen TV",
+   "views": 1223,
+   "published": "2026-10-29T08:34:29+00:00",
+   "per_hour": 671,
+   "url": "https://www.youtube.com/watch?v=ye8dMaibwFM",
+   "short": "https://youtube.com/shorts/ye8dMaibwFM"
+  },
+  {
+   "title": "Kenya na IGAD Zaimarisha Ushirikiano Kukabili Ukame na Mafuriko",
+   "channel": "KTN News",
+   "views": 56,
+   "published": "2026-10-29T08:34:15+00:00",
+   "per_hour": 31,
+   "url": "https://www.youtube.com/watch?v=znncna-5ypg",
+   "short": "https://youtube.com/shorts/znncna-5ypg"
+  },
+  {
+   "title": "Chama Cha Jubilee Trans Nzoia Yapata Uongozi Mpya Baada ya Uchaguzi",
+   "channel": "KTN News",
+   "views": 67,
+   "published": "2026-10-29T08:33:27+00:00",
+   "per_hour": 36,
+   "url": "https://www.youtube.com/watch?v=OIFXSjZUHd4",
+   "short": "https://youtube.com/shorts/OIFXSjZUHd4"
+  },
+  {
+   "title": "Wakazi wa Mombasa Wataka Polisi Kuimarisha Vita dhidi ya Makundi ya Panga Boys",
+   "channel": "KTN News",
+   "views": 61,
+   "published": "2026-10-29T08:30:34+00:00",
+   "per_hour": 32,
+   "url": "https://www.youtube.com/watch?v=M6Oxn_IvxIE",
+   "short": "https://youtube.com/shorts/M6Oxn_IvxIE"
+  },
+  {
+   "title": "Wakazi wa Kisumu Waunga Mkono Ushirikiano wa ODM na UDA Bila Mkataba",
+   "channel": "KTN News",
+   "views": 207,
+   "published": "2026-10-29T08:27:29+00:00",
+   "per_hour": 107,
+   "url": "https://www.youtube.com/watch?v=b7Q1GhyidsQ",
+   "short": "https://youtube.com/shorts/b7Q1GhyidsQ"
+  },
+  {
+   "title": "Watahiniwa wa Shule ya Father Okodoi Kaunti ya Busia Wapanda Miti Kuacha Alama ya Kihistoria",
+   "channel": "KTN News",
+   "views": 49,
+   "published": "2026-10-29T08:25:27+00:00",
+   "per_hour": 25,
+   "url": "https://www.youtube.com/watch?v=OCNnZGIQiwU",
+   "short": "https://youtube.com/shorts/OCNnZGIQiwU"
+  },
+  {
+   "title": "Spika wa Lamu Atoa Wito wa Kupunguza Kelele Shuleni Wakati wa Mitihani",
+   "channel": "KTN News",
+   "views": 7,
+   "published": "2026-10-29T08:24:17+00:00",
+   "per_hour": 4,
+   "url": "https://www.youtube.com/watch?v=ceG9avjXeIc",
+   "short": "https://youtube.com/shorts/ceG9avjXeIc"
+  },
+  {
+   "title": "Mzozo wa Ardhi Wazua Hofu Baada ya Nyumba Kubomolewa Machakos",
+   "channel": "KTN News",
+   "views": 266,
+   "published": "2026-10-29T08:21:40+00:00",
+   "per_hour": 131,
+   "url": "https://www.youtube.com/watch?v=UnexY1hZQhk",
+   "short": "https://youtube.com/shorts/UnexY1hZQhk"
+  },
+  {
+   "title": "Wakazi wa Turkana Wataka Kampuni za Mafuta Kuweka Maslahi ya Jamii Mbele",
+   "channel": "KTN News",
+   "views": 122,
+   "published": "2026-10-29T08:17:32+00:00",
+   "per_hour": 58,
+   "url": "https://www.youtube.com/watch?v=aOs6LrQMi9Y",
+   "short": "https://youtube.com/shorts/aOs6LrQMi9Y"
+  },
+  {
+   "title": "Maafisa wa Leba Wazuiwa Kuingia Kiwanda cha Nguo Athi River",
+   "channel": "KTN News",
+   "views": 76,
+   "published": "2026-10-29T08:16:32+00:00",
+   "per_hour": 36,
+   "url": "https://www.youtube.com/watch?v=n4l1ELcxiuo",
+   "short": "https://youtube.com/shorts/n4l1ELcxiuo"
+  },
+  {
+   "title": "Viongozi wa Kiislamu Isio­lo Wataka Amani Kufuatia Mapigano Ethiopia",
+   "channel": "KTN News",
+   "views": 257,
+   "published": "2026-10-29T08:14:07+00:00",
+   "per_hour": 119,
+   "url": "https://www.youtube.com/watch?v=KjZS-aRd_h8",
+   "short": "https://youtube.com/shorts/KjZS-aRd_h8"
+  },
+  {
+   "title": "Gavana wa Marsabit Mohamed Ali Aitaka Jumuiya ya Kimataifa Kusaidia Wakimbizi wa Moyale",
+   "channel": "KTN News",
+   "views": 179,
+   "published": "2026-10-29T08:12:01+00:00",
+   "per_hour": 81,
+   "url": "https://www.youtube.com/watch?v=IV-HCxVE3D4",
+   "short": "https://youtube.com/shorts/IV-HCxVE3D4"
+  },
+  {
+   "title": "Vyama vya Wahadhiri Vyafikia Makubaliano na Serikali kuhusu CBA",
+   "channel": "KTN News",
+   "views": 92,
+   "published": "2026-10-29T08:09:40+00:00",
+   "per_hour": 41,
+   "url": "https://www.youtube.com/watch?v=y4NJKnR6P-Q",
+   "short": "https://youtube.com/shorts/y4NJKnR6P-Q"
+  },
+  {
+   "title": "| Maskani na Rashid | Karata za 2027 [Part 1]",
+   "channel": "Citizen TV",
+   "views": 997,
+   "published": "2026-10-29T08:04:51+00:00",
+   "per_hour": 430,
+   "url": "https://www.youtube.com/watch?v=o17K7h99nUw",
+   "short": "https://youtube.com/shorts/o17K7h99nUw"
+  },
+  {
+   "title": "Hospital ya rufaa kaunti ya Nakuru yaanza kutoa vipimo vya saratani ya matiti bila malipo",
+   "channel": "Citizen TV",
+   "views": 521,
+   "published": "2026-10-29T07:27:40+00:00",
+   "per_hour": 177,
+   "url": "https://www.youtube.com/watch?v=OOtXicKCHS8",
+   "short": "https://youtube.com/shorts/OOtXicKCHS8"
+  },
+  {
+   "title": "Breast Cancer: What Next After Screening?",
+   "channel": "NTV Kenya",
+   "views": 116,
+   "published": "2026-10-29T07:26:05+00:00",
+   "per_hour": 39,
+   "url": "https://www.youtube.com/watch?v=sEu74XTDwOM",
+   "short": "https://youtube.com/shorts/sEu74XTDwOM"
+  },
+  {
+   "title": "EU-Kenya | New Ambassador, Same Focus? | Amb Andreas Peschke.",
+   "channel": "NTV Kenya",
+   "views": 276,
+   "published": "2026-10-29T07:23:40+00:00",
+   "per_hour": 92,
+   "url": "https://www.youtube.com/watch?v=6CKfu-HQHkc",
+   "short": "https://youtube.com/shorts/6CKfu-HQHkc"
+  },
+  {
+   "title": "Wakazi wa Mbololo kaunti ya Taita Taveta wateseka kwa ukosefu wa maji kwa zaidi ya mwaka mmoja",
+   "channel": "Citizen TV",
+   "views": 199,
+   "published": "2026-10-29T07:22:27+00:00",
+   "per_hour": 66,
+   "url": "https://www.youtube.com/watch?v=_PNkqftJrkQ",
+   "short": "https://youtube.com/shorts/_PNkqftJrkQ"
+  },
+  {
+   "title": "Breast Cancer: The Journey Beyond Diagnosis",
+   "channel": "NTV Kenya",
+   "views": 267,
+   "published": "2026-10-29T06:05:45+00:00",
+   "per_hour": 62,
+   "url": "https://www.youtube.com/watch?v=CxzSi0Ovqu0",
+   "short": "https://youtube.com/shorts/CxzSi0Ovqu0"
+  },
+  {
+   "title": "Cost of Lecturers' Strike on Comrades | Haya Dennis Aketch",
+   "channel": "NTV Kenya",
+   "views": 528,
+   "published": "2026-10-29T06:04:16+00:00",
+   "per_hour": 122,
+   "url": "https://www.youtube.com/watch?v=SpLsmwZldy0",
+   "short": "https://youtube.com/shorts/SpLsmwZldy0"
+  },
+  {
+   "title": "Absa marks 100 years in Eldoret with inaugural City Run this Sunday",
+   "channel": "NTV Kenya",
+   "views": 750,
+   "published": "2026-10-28T19:04:53+00:00",
+   "per_hour": 49,
+   "url": "https://www.youtube.com/watch?v=A5iPXptWzHE",
+   "short": "https://youtube.com/shorts/A5iPXptWzHE"
+  },
+  {
+   "title": "Uganda Legends win 2026 East African Legends Festival in Nairobi",
+   "channel": "NTV Kenya",
+   "views": 424,
+   "published": "2026-10-28T19:03:11+00:00",
+   "per_hour": 28,
+   "url": "https://www.youtube.com/watch?v=JguPqf22Rpk",
+   "short": "https://youtube.com/shorts/JguPqf22Rpk"
+  },
+  {
+   "title": "Kenya’s Junior Starlets prepare for historic U17 World Cup clash against Japan",
+   "channel": "NTV Kenya",
+   "views": 925,
+   "published": "2026-10-28T19:00:21+00:00",
+   "per_hour": 60,
+   "url": "https://www.youtube.com/watch?v=ACpUOJp41zU",
+   "short": "https://youtube.com/shorts/ACpUOJp41zU"
+  },
+  {
+   "title": "Your Past Doesn't Define You | The Elevate Show",
+   "channel": "NTV Kenya",
+   "views": 943,
+   "published": "2026-10-28T19:00:08+00:00",
+   "per_hour": 61,
+   "url": "https://www.youtube.com/watch?v=gDE8N6nGX0U",
+   "short": "https://youtube.com/shorts/gDE8N6nGX0U"
+  },
+  {
+   "title": "Bayern Munich and Ajax to open Talanta Stadium in January 2027",
+   "channel": "NTV Kenya",
+   "views": 3520,
+   "published": "2026-10-28T18:57:55+00:00",
+   "per_hour": 228,
+   "url": "https://www.youtube.com/watch?v=_aBtGpxvo8w",
+   "short": "https://youtube.com/shorts/_aBtGpxvo8w"
+  },
+  {
+   "title": "Potato trials underway for three new seed varieties to boost farmers’ yields",
+   "channel": "NTV Kenya",
+   "views": 3201,
+   "published": "2026-10-28T18:49:20+00:00",
+   "per_hour": 206,
+   "url": "https://www.youtube.com/watch?v=1PUpmAnSA3o",
+   "short": "https://youtube.com/shorts/1PUpmAnSA3o"
+  }
+ ]
 }

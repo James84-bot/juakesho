@@ -1103,13 +1103,85 @@
         "note": "Raise the demand score to match active news cycles and sharpen the hook to speak directly to student frustration."
       },
       "drafted_at": "2026-10-29T09:30:06.416715+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1029m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "KRA targets *1 million landlords* in a nationwide digital rental tax crackdown.",
+      "fact": "KRA matches property utility records and land registry data to find unregistered rental income.",
+      "source": "People Daily, 2026-10-29",
+      "trend": "kra rental income tax crackdown",
+      "photo_query": "residential flats Nairobi",
+      "message": "KRA is reviewing utility and registry data to collect unpaid rental taxes from one million landlords.",
+      "impact": "What it means for you: landlords face audits while tenants risk sudden rent increases to cover tax bills.",
+      "action": "Verify your rental tax compliance status directly on the KRA iTax portal.",
+      "who": "KRA Commissioner-General Humphrey Wattanga",
+      "where": "National",
+      "when": "29 Oct 2026",
+      "side": "government",
+      "tone": "explainer",
+      "caption": "People Daily reports: KRA is matching property data to trace one million landlords dodging rental income tax. When landlords face back taxes, tenants often see rent increases. Verify your compliance status before penalties start.\n\nAre you worried your landlord will raise rent? Drop your view below.\n\n#RentalTax #KRA #KenyaOnRecord",
+      "beats": [
+        "People Daily reports: KRA targets *1 million landlords* in new rental tax audits.",
+        "KRA matches utility data and land registries against tax returns.",
+        "Tenants fear higher rents if landlords pass *back taxes* onto them.",
+        "Kenyans demand: KRA provides clear guidance before issuing penalties.",
+        "Check your rental tax compliance status directly on the iTax portal."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-29T16:23:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Public universities reopen as lecturers and the government resolve their dispute over agreed pay."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "KRA’s digital rental tax drive puts landlords’ property records under scrutiny",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQ2hPM1IyRGU0dTBLaWJZMUF3cUItNmF4ZGpfTDhwbnFIU091X0FFZlFBRVRYREVKR1hEYXMxWXkxRzlrRnBXNFpSZlFjbkplODNyZ01HbmJnbmRLVkotNWloR1JwRDdybFJjUm51WEUwdlZPQkNWWHZ6WEJvTHp0VXl0eG90MjNqd29KY0MtS0taVi1fQnBEZUhqOGNQZUZVc21hdDJ0UjdxLU5wX1JFMjlhVQ?oc=5",
+          "published": "2026-10-29"
+        },
+        {
+          "outlet": "People Daily",
+          "title": "KRA targets 1M landlords: What happens if your rental tax records don’t match?",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNUEE1TDRDZFA5V3gxbV9MYXdyZGJ4RkxxajdONEowSE9sa2YzaDVtZUlKdFVIekc0aDcxU2RQc2JCclByeTVpd0V4TER3UDR2NGlYRk9zLWJoN0xMdDhkZHAwanBXdndKMlY5T0JOVWZIUWh4U01saHI0eWFmNzBDMHUwamRiSS1hQWEwZDh6RTNtbUwxOXp1RDR5MVdqZ2pmUUhYZHM3d3VBd2NMME1qT3hn?oc=5",
+          "published": "2026-10-29"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "beats[0] is too long: max 12 words / 72 characters"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 8.0,
+        "note": "Solid execution on all fronts; maintain sharp focus on the direct taxpayer impact in future iterations."
+      },
+      "drafted_at": "2026-10-29T14:04:20.356918+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari za wiki, msikilizaji wa Kenya on Record. Mimi ni wako wa ukweli, na leo tunatazama habari njema kutoka kwa sekta ya elimu ya juu. Baada ya miezi ya sintofahamu na kupoteza muda kwa wanafunzi wetu, hatimaye vyuo vikuu vya umma vimefunguliwa tena.\n\nHii ni baada ya serikali na vyama vya wahadhiri kufikia mwafaka kuhusu mzozo wa mishahara na utekelezaji wa makubaliano yao ya pamoja (CBA). Tunapopongeza hatua hii ya kuleta utulivu, ni muhimu pia kuuliza: Serikali imejipanga vipi kuhakikisha hatufikii hapa tena muhula ujao? Migomo hii haiathiri tu ratiba ya masomo, bali inaumiza mifuko ya wazazi na ndoto za vijana wetu.\n\nTukiangazia upande wa uwajibikaji, tunaonya pande zote mbili kwamba suluhu ya kudumu inahitajika. Wanafunzi sasa wanarejea madarasani; wacha masomo yaanze na haki za wahadhiri ziheshimiwe bila visingizio. Elimu bora si fadhila, ni haki.\n\n***\n\n*Kwa ufupi kwa Kiswahili:* Vyuo vikuu vya umma vimefunguliwa rasmi baada ya serikali na wahadhiri kumaliza mzozo wao wa mishahara. Wanafunzi wamerejea madarasani huku wadau wakitakiwa kutafuta suluhu ya kudumu ili kuepuka migomo ya hapo baadaye.",
-    "voice_note": "Mambo vipi mwananchi? Hapa ni Kenya on Record na dondoo letu la wiki. Habari njema ni kwamba vyuo vikuu vya umma vimefunguliwa rasmi baada ya serikali na wahadhiri kusuluhisha mzozo wao wa malipo. Lakini swali ni moja: Je, serikali imeweka mikakati gani ya kuzuia mgomo mwingine hapo mbeleni, au tunazima moto tu na kusubiri uwashe tena? Mwanafunzi amerudi darasani, lakini tunataka utulivu wa kudumu, sio maridhiano ya muda mfupi. Kaa chonjo, fuatilia uwajibikaji na usipitwe na uhalisia hapa Kenya on Record.",
-    "sms": "Vyuo vikuu vimefunguliwa baada ya serikali na wahadhiri kuelewana mishahara. Wanafunzi wamerudi darasani. Tunataka suluhu ya kudumu, sio kuzima moto tu!",
-    "reels": "Wanafunzi wamerejea vyuo vikuu, mlango uko wazi na mihadhara imeanza tena baada ya serikali na wahadhiri kutatua mzozo wao wa mishahara. Lakini hapa Kenya on Record tunauliza: Hii ni suluhu ya kudumu, au ni kuongeza muda tu kabla moto haujawaka tena? Elimu ya watoto wetu si ya kuchezea. Fuatilia ukweli."
+    "radio": "Welcome to Kenya on Record. If you own property or pay rent at the end of the month, pay close attention. The Kenya Revenue Authority is quietly closing the net on unpaid residential rental taxes by tapping into everyday utility data. By cross-referencing electricity meters from Kenya Power and water accounts with the Ministry of Lands registry, the taxman is targeting roughly one million landlords currently operating off the books.\n\nFor a long time, the rental sector has run largely on cash, informal receipts, and silence. But digital integration means utility connections tied to your name or property now leave a direct trail. Legally, landlords earning rental income must remit the monthly rental income tax, currently set at seven point five percent. While expanding the tax bracket is legitimate state work, accountability must cut both ways. KRA must avoid arbitrary harassment or inflated assessments, and landlords must resist the urge to pass their historical tax negligence onto tenants through abrupt, unlawful rent increases.\n\nKwa ufupi: Shirika la KRA linafuatilia mita za umeme na maji pamoja na sajili za ardhi ili kuwasaka wamiliki wa nyumba milioni moja wasiolipa kodi ya pango. Wamiliki wanashauriwa kufuata sheria na kulipa asilimia saba nukta tano mapema kabla ya faini. Nao wapangaji, kuweni makini kodi hii isigeuzwe kuwa mzigo wenu kinyume cha mkataba.",
+    "voice_note": "Hey everyone, here is a quick accountability check from Kenya on Record. If you are a landlord or a tenant, this matters to you. KRA is actively pulling utility data—specifically your Kenya Power tokens and water bills—and cross-checking them against land registries. The target? Over one million landlords who haven’t been declaring rental income tax. With that 7.5 percent tax rate on the line, the taxman is moving fast. If you own rentals, verify your iTax filings now before automatic penalties kick in. And if you are renting, know your contract rights. Landlords cannot simply slap you with sudden, illegal rent increments to cover their back taxes. Share this in your neighborhood or family WhatsApp groups so people stay informed.",
+    "sms": "Usiibiwe: KRA is tracking rental income via utility data. Landlords must remit tax; tenants, know your rights—rent cannot be raised without lawful notice.",
+    "reels": "Your electricity meter might just deliver your tax bill. KRA is now matching Kenya Power meters and water registries to land records to track down one million landlords evading rental income tax. The era of running off-the-books rentals is closing fast. Property owners need to regularize their 7.5% compliance before back taxes catch up. And tenants: check your leases, because your landlord's tax bill is not your illegal rent hike."
   },
   "spend_usd": 0.0
 }
