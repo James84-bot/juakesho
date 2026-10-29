@@ -1,47 +1,25 @@
 {
-  "fetched": "2026-10-29T10:23:46.480506+00:00",
+  "fetched": "2026-10-29T11:45:16.833198+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "vehicle",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "NTSA Lists 7 Safety Violations as 13 Vehicles Are Detained on Southern Bypass",
-          "url": "https://www.kenyans.co.ke/news/128973-ntsa-flags-cracked-windscreens-broken-headlights-after-night-operation-13-vehicles",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "NTSA road safety operation: What will be checked at roadblocks",
-          "url": "https://nation.africa/kenya/news/ntsa-road-safety-operation-what-will-be-checked-at-roadblocks-5646622",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "NTSA warns Miraa drivers over dangerous overtaking",
-          "url": "https://peopledaily.digital/news/ntsa-warns-miraa-drivers-over-dangerous-overtaking",
-          "source": "People Daily"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "kra rental income tax crackdown",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
+        {
+          "title": "KRA eyes M-Pesa invoices for small and micro traders",
+          "url": "https://www.businessdailyafrica.com/bd/economy/kra-eyes-m-pesa-invoices-for-small-and-micro-traders-5650014",
+          "source": "Business Daily"
+        },
         {
           "title": "KRA Targets 1 Million Landlords in New Tax Crackdown",
           "url": "https://www.kenyans.co.ke/news/128969-kra-targets-1-million-landlords-new-rental-income-tax-crackdown",
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "KRA targets 1M landlords: What happens if your rental tax records don’t match?",
-          "url": "https://peopledaily.digital/business/kra-targets-1m-landlords-what-happens-if-your-rental-tax-records-dont-match",
-          "source": "People Daily"
-        },
-        {
-          "title": "KRA places over one million landlords under tax scrutiny",
-          "url": "https://saccoreview.co.ke/kra-places-over-one-million-landlords-under-tax-scrutiny/",
-          "source": "Sacco Review"
+          "title": "How KRA plans to ease tax compliance for small businesses through M-Pesa",
+          "url": "https://www.the-star.co.ke/news/2026-10-29-how-kra-plans-to-ease-tax-compliance-for-msmes",
+          "source": "The Star, Kenya"
         }
       ],
       "civic": true
@@ -49,7 +27,7 @@
     {
       "geo": "KE",
       "title": "business daily africa",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "Safaricom sacks 118 staff in fraud crackdown",
@@ -70,6 +48,28 @@
     },
     {
       "geo": "KE",
+      "title": "vehicle",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "NTSA Lists 7 Safety Violations as 13 Vehicles Are Detained on Southern Bypass",
+          "url": "https://www.kenyans.co.ke/news/128973-ntsa-flags-cracked-windscreens-broken-headlights-after-night-operation-13-vehicles",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "NTSA road safety operation: What will be checked at roadblocks",
+          "url": "https://nation.africa/kenya/news/ntsa-road-safety-operation-what-will-be-checked-at-roadblocks-5646622",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "\"For your safety\": NTSA outlines 3 rules drivers must follow when travelling",
+          "url": "https://www.tuko.co.ke/business-economy/industry/644924-ntsa-outlines-3-rules-drivers-follow-travelling-night/",
+          "source": "Tuko News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "timberwolves vs warriors",
       "traffic": "500+",
       "news": [
@@ -84,9 +84,31 @@
           "source": "NDTV Sports"
         },
         {
-          "title": "'Really need him to': Chris Finch shares what LaMelo Ball must do now after Anthony Edwards' injury",
-          "url": "https://www.hitc.com/really-need-him-to-chris-finch-shares-what-lamelo-ball-must-do-now-after-anthony-edwards-injury/",
-          "source": "HITC"
+          "title": "\"Yes, so what I'm told he's in good spirits. He's …",
+          "url": "https://sports.yahoo.com/articles/yes-im-told-hes-good-221556612.html",
+          "source": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "calafiori injury",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Mikel Arteta confirms fresh TRIPLE Arsenal injury nightmare as Declan Rice and two other stars face race to be fit for Liverpool clash after Fleetwood defeat",
+          "url": "https://www.goal.com/en-ke/news/mikel-arteta-triple-arsenal-injury-declan-rice-calafiori-madueke-liverpool-fleetwood/blt7563f86a03ca67d3",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Arsenal eye triple injury boost vs Liverpool as key men near returns",
+          "url": "https://www.standard.co.uk/sport/football/arsenal-fc-rice-madueke-injury-latest-liverpool-b1302698.html",
+          "source": "London Evening Standard"
+        },
+        {
+          "title": "Tzolis, Calafiori, Rice, Saliba, Saka, Madueke - Arsenal injury updates and return dates",
+          "url": "https://www.football.london/arsenal-fc/news/tzolis-calafiori-rice-saliba-saka-34830864",
+          "source": "Football London"
         }
       ]
     },
@@ -96,19 +118,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "'He could be happier' - why is Estevao becoming Chelsea's forgotten man?",
-          "url": "https://www.bbc.com/sport/football/articles/cv5ynwkndw61o",
-          "source": "BBC"
+          "title": "Pedro Neto tira minutos a Estêvão no Chelsea",
+          "url": "https://diadejogo.pt/noticias/la-fora-pedro-neto-2026-10-29",
+          "source": "diadejogo.pt"
         },
         {
-          "title": "Estevao is becoming an issue for Xabi Alonso and Chelsea",
-          "url": "https://www.nytimes.com/athletic/7734139/2026/10/29/estevao-chelsea-alonso-liverpool/",
-          "source": "The New York Times"
+          "title": "Estêvão, ex-Palmeiras, vive situação delicada na Europa",
+          "url": "https://www.terra.com.br/esportes/palmeiras/estevao-ex-palmeiras-vive-situacao-delicada-na-europa,c046b8a9105967f6188b987b390276e5jmbwpmg1.html",
+          "source": "Terra"
         },
         {
-          "title": "Alonso makes brutal decision for Liverpool clash as concerns over personal rift with Chelsea star emerge",
-          "url": "https://www.football365.com/news/alonso-brutal-decision-liverpool-clash-push-chelsea-star-psg",
-          "source": "Football365"
+          "title": "Sem gols e assistências, Estêvão busca mostrar valor na Copa da Liga",
+          "url": "https://www.lance.com.br/futebol-internacional/sem-gols-e-assistencias-estevao-busca-mostrar-valor-na-copa-da-liga.html",
+          "source": "LANCE!"
         }
       ]
     },
@@ -140,41 +162,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "‘NBA is weak now’ - Luka Doncic's LA Lakers absence sparks heated load management debate",
-          "url": "https://www.hitc.com/nba-is-weak-now-luka-doncics-la-lakers-absence-sparks-heated-load-management-debate/",
-          "source": "HITC"
+          "title": "Los Angeles Lakers vs LA Clippers Oct 28, 2026 Box Scores",
+          "url": "https://www.nba.com/game/lal-vs-lac-0022600143/box-score",
+          "source": "NBA.com"
         },
         {
-          "title": "JJ Redick Provides Clarity On Luka Doncic And Ziaire Williams After Being Ruled Out vs. Clippers",
-          "url": "https://www.yardbarker.com/nba/articles/jj_redick_provides_clarity_on_luka_doncic_and_ziaire_williams_after_being_ruled_out_vs_clippers/s1_16751_44487206",
-          "source": "Yardbarker"
+          "title": "Oklahoma City Thunder vs Dallas Mavericks Oct 28, 2026 Box Scores",
+          "url": "https://www.nba.com/game/0022600142/box-score",
+          "source": "NBA.com"
         },
         {
-          "title": "Lakers 103-87 Clippers (Oct 28, 2026) Game Recap",
-          "url": "https://www.espn.com/nba/recap?gameId=401909892",
-          "source": "ESPN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "calafiori injury",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Mikel Arteta confirms fresh TRIPLE Arsenal injury nightmare as Declan Rice and two other stars face race to be fit for Liverpool clash after Fleetwood defeat",
-          "url": "https://www.goal.com/en-ke/news/mikel-arteta-triple-arsenal-injury-declan-rice-calafiori-madueke-liverpool-fleetwood/blt7563f86a03ca67d3",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Arsenal eye triple injury boost vs Liverpool as key men near returns",
-          "url": "https://www.standard.co.uk/sport/football/arsenal-fc-rice-madueke-injury-latest-liverpool-b1302698.html",
-          "source": "London Evening Standard"
-        },
-        {
-          "title": "Tzolis, Calafiori, Rice, Saliba, Saka, Madueke - Arsenal injury updates and return dates",
-          "url": "https://www.football.london/arsenal-fc/news/tzolis-calafiori-rice-saliba-saka-34830864",
-          "source": "Football London"
+          "title": "Miami Heat vs Atlanta Hawks Oct 28, 2026 Box Scores",
+          "url": "https://www.nba.com/game/mia-vs-atl-0022600132/box-score",
+          "source": "NBA.com"
         }
       ]
     },
@@ -184,28 +184,45 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Cooper Flagg-led Mavericks hand Thunder first loss of season",
-          "url": "https://www.reuters.com/sports/basketball/cooper-flagg-led-mavericks-hand-thunder-first-loss-season--flm-2026-10-29/",
-          "source": "Reuters"
+          "title": "The Mavericks Handed OKC Their First Loss of the Season on Wednesday Night | HOOPS, 10/29/26",
+          "url": "https://readhoops.substack.com/p/the-mavericks-handed-okc-their-first",
+          "source": "Substack"
         },
         {
-          "title": "Game Recap: Mavericks 120, Thunder 96",
-          "url": "https://www.nba.com/watch/video/game-recap-mavericks-120-thunder-96",
-          "source": "NBA.com"
+          "title": "Solid night for Cooper Flagg",
+          "url": "https://www.nytimes.com/athletic/live-blogs/nba-cup-scores-season-games-schedule/8uid2umpFT0Q/zrwV6nbhwO6Q/",
+          "source": "The New York Times"
         },
         {
-          "title": "Mavs Blow By Thunder 120-96 in Kyrie Irving's Home Return From Injury",
-          "url": "https://roundtable.io/sports/nba/mavericks/game-day/mavs-blow-by-thunder-120-96-in-kyrie-irvings-home-return-from-injury",
-          "source": "roundtable.io"
+          "title": "How to Watch Thunder vs Mavs for Free: TV Channels, Live Stream Options",
+          "url": "https://sports.yahoo.com/articles/watch-thunder-vs-mavs-free-003000497.html",
+          "source": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "efl results",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "EFL Championship results 2026/27: latest matches of the season",
+          "url": "https://www.vavel.com/en/data/efl-championship/results/",
+          "source": "VAVEL.com"
+        },
+        {
+          "title": "Every word from Mikel Arteta's post-Fleetwood presser",
+          "url": "https://www.arsenal.com/news/every-word-from-mikel-artetas-post-fleetwood-presser-a7Hfy8b7s2UJ",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Arsenal to appeal against Max Dowman's red card against Fleetwood in Carabao Cup",
+          "url": "https://www.bbc.com/sport/football/articles/c3dxwdnjqj17o",
+          "source": "BBC"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "inter miami vs cincinnati",
-      "why": "unsafe: 'Odds'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
