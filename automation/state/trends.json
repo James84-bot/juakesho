@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-29T18:56:32.040773+00:00",
+  "fetched": "2026-10-29T19:13:38.845096+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -51,26 +51,26 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "Dream say concerns over finding available WNBA Finals venue went unheeded",
-          "url": "https://www.espn.com/wnba/story/_/id/50302463/dream-say-concerns-finding-available-wnba-finals-venue-went-unheeded",
-          "source": "ESPN"
+          "title": "Inside the scramble that moved Thursday's WNBA Finals game to 12:30 p.m. ET",
+          "url": "https://www.cnbc.com/2026/10/29/the-wnbas-scramble-to-move-thursdays-finals-game-6-to-1230-pm-et.html",
+          "source": "CNBC"
         },
         {
-          "title": "In fairness to Dream and Valkyries, scheduling dilemma shouldn't overshadow Game 6 of WNBA Finals",
-          "url": "https://apnews.com/article/wnba-finals-game-6-start-time-e526257824886257185c1049f03c888e",
-          "source": "AP News"
+          "title": "WWE’s Nick Khan Offered to Delay SmackDown to Help WNBA Finals Avoid Scheduling Nightmare",
+          "url": "https://thesource.com/2026/10/29/wwes-nick-khan-offered-to-delay-smackdown-to-help-wnba-finals-avoid-scheduling-nightmare/",
+          "source": "The Source Magazine"
         },
         {
-          "title": "Angel Reese rocks all-black fit for must-win Game 6 of WNBA Finals",
-          "url": "https://sports.yahoo.com/articles/angel-reese-rocks-black-fit-165922617.html",
-          "source": "Yahoo Sports"
+          "title": "Usher leads star-studded Game 6 crowd at 2026 WNBA Finals in Atlanta",
+          "url": "https://www.usatoday.com/story/sports/wnba/2026/10/29/celebrities-wnba-finals-game-6-valkyries-dream/92498832007/",
+          "source": "USA Today"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "pyramids fc",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "TotalEnergies CAF Confederation Cup 2026/27 Group Stage Draw produces exciting encounters",
@@ -105,9 +105,9 @@
           "source": "FC Bayern"
         },
         {
-          "title": "Bayern Munich - Ajax to open Kenya's national stadium",
-          "url": "https://english.ajax.nl/articles/bayern-munich-ajax-to-open-kenyas-national-stadium",
-          "source": "Ajax.nl"
+          "title": "Bayern Munich to play Ajax in Kenya during winter break",
+          "url": "https://www.bundesliga.com/en/bundesliga/news/bayern-munich-to-play-ajax-in-kenya-nairobi-39563",
+          "source": "Bundesliga | official website"
         }
       ]
     },
@@ -150,9 +150,9 @@
           "source": "Techish Kenya"
         },
         {
-          "title": "MultiChoice Unveils New DStv, GOtv Packages Ahead of November 5 Rollout",
-          "url": "https://www.thisdaylive.com/2026/10/28/multichoice-unveils-new-dstv-gotv-packages-ahead-of-november-5-rollout/",
-          "source": "THISDAYLIVE"
+          "title": "Can DStv’s cheaper packages win back subscribers without hurting revenue?",
+          "url": "https://businessday.ng/analysis/article/can-dstvs-cheaper-packages-win-back-subscribers-without-hurting-revenue/",
+          "source": "Businessday NG"
         }
       ],
       "civic": true
@@ -161,7 +161,7 @@
   "dropped": [
     {
       "title": "fiorentina vs atalanta",
-      "why": "unsafe: 'betting'"
+      "why": "unsafe: 'Bet'"
     },
     {
       "title": "matatu",
