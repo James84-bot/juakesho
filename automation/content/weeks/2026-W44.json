@@ -1038,13 +1038,78 @@
         "note": "Base this post on a current high-demand news topic from the list, such as the Russia-Africa summit or the Judiciary training."
       },
       "drafted_at": "2026-10-28T13:32:39.846409+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1029",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 4,
+      "kicker": "Students and Parents",
+      "line": "UASU and the State sign a deal to end the strike across *35 public universities*.",
+      "fact": "UASU agreed on a return-to-work formula with the government after weeks of halted academic programmes.",
+      "message": "Public universities reopen as lecturers and the government resolve their dispute over agreed pay.",
+      "impact": "Over 500,000 university students can resume classes and sit examinations after weeks of disrupted studies.",
+      "action": "Check your university portal for the updated semester and examination dates",
+      "who": "Ministry of Education and UASU",
+      "where": "National",
+      "when": "29 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "source": "Capital FM News, 2026-10-29",
+      "photo_query": "lecture hall University of Nairobi",
+      "beats": [
+        "Capital FM News reports: UASU and the State agree to reopen *35 public universities*.",
+        "Lecturers agreed on a *return-to-work formula* with the State.",
+        "Over *500,000 students* can now resume classes and sit exams.",
+        "Kenyans demand: the State honours the deal without *new delays*.",
+        "Check your campus portal today for the *resumption timetable*."
+      ],
+      "caption": "Capital FM News reports: UASU and the government have signed a deal to end the strike in public universities.\n\nWhat it means for you: over 500,000 university students can return to lecture halls and resume exams.\n\nCheck your campus portal for the updated semester dates.\n\n#LecturersStrike #HigherEducation #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-29T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "UASU, State strike deal to end university lecturers’ strike",
+          "link": "https://capitalfm.africa/uasu-state-strike-deal-to-end-university-lecturers-strike/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-29"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "beats[0] is too long: max 12 words / 72 characters"
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 8,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 6,
+        "hold": 6,
+        "demand": 4,
+        "action": 6,
+        "fair": 7,
+        "impact": 7,
+        "avg": 6.3,
+        "note": "Raise the demand score to match active news cycles and sharpen the hook to speak directly to student frustration."
+      },
+      "drafted_at": "2026-10-29T09:30:06.416715+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening and welcome to Kenya on Record. Today, we need an honest conversation about the fine print in our public-private partnerships.\n\nWhen government enters mega-infrastructure agreements with private investors, wananchi are repeatedly told private capital absorbs the risk. But scrutiny of these contracts reveals a troubling truth: taxpayers currently face an exposure of up to Sh414 billion in termination fees across various public-private deals.\n\nIn simple terms, if the state defaults, alters terms, or cancels a deal—even for legitimate public interest—private consortiums are legally entitled to walk away with hundreds of billions of our money. That is capital diverted directly from healthcare, classrooms, and debt relief. Risk transfer cannot simply mean private firms pocket the upside while the public guarantees the loss. Parliament must demand an open contract registry and audit every sovereign guarantee before contracts are finalized.\n\nKwa ufupi: Mikataba ya ubia kati ya serikali na wawekezaji wa kibinafsi inabeba mzigo mzito, ambapo walipakodi wanaweza kulazimika kulipa shilingi bilioni mia nne na kumi na nne endapo miradi hii itavunjika. Ni lazima bunge lihakikishe masharti yote yanawekwa wazi mapema ili kulinda fedha zetu.",
-    "voice_note": "Habari zenu. Here is something we must pay attention to before it turns into our next debt crisis. You know those big infrastructure deals signed under Public-Private Partnerships? The ones we are told carry zero risk for the taxpayer? Official scrutiny shows that if these contracts are terminated, wananchi could be forced to pay up to 414 billion shillings in termination fees. Think about that. If the investment succeeds, the private sector banks the profits. If it falls apart, our taxes pay the exit bill. That is not risk sharing; it is a hidden liability. We must demand that Parliament subjects every single PPP contract to public scrutiny before signing away our collective future. Please share this note.",
-    "sms": "Usiibiwe: PPP deals aren't free money. Taxpayers face Sh414bn in hidden exit fees if contracts fail. Demand full transparency on all sovereign guarantees.",
-    "reels": "Four hundred and fourteen billion shillings. That is the staggering bill Kenyan taxpayers could face if our public-private partnership deals collapse. We are told these arrangements protect the public purse, yet hidden termination clauses leave wananchi carrying the ultimate risk. Private investors take the profits, but we underwrite the downside. It is time to demand fully open contracts before anyone signs away our taxes."
+    "radio": "Habari za wiki, msikilizaji wa Kenya on Record. Mimi ni wako wa ukweli, na leo tunatazama habari njema kutoka kwa sekta ya elimu ya juu. Baada ya miezi ya sintofahamu na kupoteza muda kwa wanafunzi wetu, hatimaye vyuo vikuu vya umma vimefunguliwa tena.\n\nHii ni baada ya serikali na vyama vya wahadhiri kufikia mwafaka kuhusu mzozo wa mishahara na utekelezaji wa makubaliano yao ya pamoja (CBA). Tunapopongeza hatua hii ya kuleta utulivu, ni muhimu pia kuuliza: Serikali imejipanga vipi kuhakikisha hatufikii hapa tena muhula ujao? Migomo hii haiathiri tu ratiba ya masomo, bali inaumiza mifuko ya wazazi na ndoto za vijana wetu.\n\nTukiangazia upande wa uwajibikaji, tunaonya pande zote mbili kwamba suluhu ya kudumu inahitajika. Wanafunzi sasa wanarejea madarasani; wacha masomo yaanze na haki za wahadhiri ziheshimiwe bila visingizio. Elimu bora si fadhila, ni haki.\n\n***\n\n*Kwa ufupi kwa Kiswahili:* Vyuo vikuu vya umma vimefunguliwa rasmi baada ya serikali na wahadhiri kumaliza mzozo wao wa mishahara. Wanafunzi wamerejea madarasani huku wadau wakitakiwa kutafuta suluhu ya kudumu ili kuepuka migomo ya hapo baadaye.",
+    "voice_note": "Mambo vipi mwananchi? Hapa ni Kenya on Record na dondoo letu la wiki. Habari njema ni kwamba vyuo vikuu vya umma vimefunguliwa rasmi baada ya serikali na wahadhiri kusuluhisha mzozo wao wa malipo. Lakini swali ni moja: Je, serikali imeweka mikakati gani ya kuzuia mgomo mwingine hapo mbeleni, au tunazima moto tu na kusubiri uwashe tena? Mwanafunzi amerudi darasani, lakini tunataka utulivu wa kudumu, sio maridhiano ya muda mfupi. Kaa chonjo, fuatilia uwajibikaji na usipitwe na uhalisia hapa Kenya on Record.",
+    "sms": "Vyuo vikuu vimefunguliwa baada ya serikali na wahadhiri kuelewana mishahara. Wanafunzi wamerudi darasani. Tunataka suluhu ya kudumu, sio kuzima moto tu!",
+    "reels": "Wanafunzi wamerejea vyuo vikuu, mlango uko wazi na mihadhara imeanza tena baada ya serikali na wahadhiri kutatua mzozo wao wa mishahara. Lakini hapa Kenya on Record tunauliza: Hii ni suluhu ya kudumu, au ni kuongeza muda tu kabla moto haujawaka tena? Elimu ya watoto wetu si ya kuchezea. Fuatilia ukweli."
   },
   "spend_usd": 0.0
 }
