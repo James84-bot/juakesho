@@ -1,6 +1,29 @@
 {
-  "fetched": "2026-10-30T11:38:03.388686+00:00",
+  "fetched": "2026-10-30T12:24:53.166603+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "francis mogambi grand jury indictment",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Feds charge 5 people as part of alleged sprawling 'ghost students' probe",
+          "url": "https://abcnews.com/US/feds-charge-5-people-part-alleged-sprawling-ghost/story?id=137686361",
+          "source": "ABC News - Breaking News, Latest News and Videos"
+        },
+        {
+          "title": "From green card to fraud: Kenyans arrested in $130m US ghost student scam",
+          "url": "https://www.bbc.com/news/articles/cxvgdzpy7241o",
+          "source": "BBC"
+        },
+        {
+          "title": "'Operation Ghostbusters': DOJ charges five in alleged $1.3 million 'ghost student' financial aid fraud scheme",
+          "url": "https://abc7.com/post/operation-ghostbusters-doj-charges-alleged-13-million-ghost-student-financial-aid-fraud-scheme/19997368/",
+          "source": "ABC7 Los Angeles"
+        }
+      ],
+      "civic": true
+    },
     {
       "geo": "KE",
       "title": "ntsa warning fake traffic notices",
@@ -29,64 +52,19 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "Safaricom sacks 118 staff in fraud crackdown",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/safaricom-sacks-118-staff-in-fraud-crackdown-5648112",
-          "source": "Business Daily"
+          "title": "Safaricom turns to solar as diesel prices hit record high",
+          "url": "https://nation.africa/kenya/business/companies/safaricom-turns-to-solar-as-diesel-prices-hit-record-high--5649942",
+          "source": "Daily Nation"
         },
         {
-          "title": "Safaricom sustainability efforts create Sh1.25tr societal value",
-          "url": "https://www.standardmedia.co.ke/enterprise/article/2001560997/safaricom-sustainability-efforts-create-sh125tr-societal-value",
-          "source": "www.standardmedia.co.ke"
+          "title": "Safaricom Solar Network: Telecom Giant Powers 2,028 Base Stations",
+          "url": "https://constructionreviewonline.com/safaricom-solar-network-telecom-giant-powers-2028-base-stations/",
+          "source": "Construction Review"
         },
         {
-          "title": "M-Pesa active users hit 41.7 million",
-          "url": "https://peopledaily.digital/business/m-pesa-active-users-hit-41-7-million",
-          "source": "People Daily"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "francis mogambi grand jury indictment",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "From green card to fraud: Kenyans arrested in $130m US ghost student scam",
-          "url": "https://www.bbc.com/news/articles/cxvgdzpy7241o",
-          "source": "BBC"
-        },
-        {
-          "title": "Feds charge 5 people as part of alleged sprawling 'ghost students' probe",
-          "url": "https://abcnews.com/US/feds-charge-5-people-part-alleged-sprawling-ghost/story?id=137686361",
-          "source": "ABC News - Breaking News, Latest News and Videos"
-        },
-        {
-          "title": "'Operation Ghostbusters': DOJ charges five in alleged $1.3 million 'ghost student' financial aid fraud scheme",
-          "url": "https://abc7.com/post/operation-ghostbusters-doj-charges-alleged-13-million-ghost-student-financial-aid-fraud-scheme/19997368/",
-          "source": "ABC7 Los Angeles"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "nz vs ind",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "NZ vs IND T20 2026: India suffer their biggest defeat against New Zealand after Glenn Phillips century",
-          "url": "https://www.olympics.com/en/news/new-zealand-vs-india-t20-cricket-2026-match-4-report",
-          "source": "www.olympics.com"
-        },
-        {
-          "title": "Watch - 4, 6, 6, 6, 6: Glenn Phillips Smashes 32 Runs In 1 Over; Nitish Reddy Joins Unwanted List",
-          "url": "https://sports.ndtv.com/new-zealand-vs-india-2026-27/4-6-6-6-6-glenn-phillips-smashes-32-runs-in-1-over-nitish-reddy-joins-unwanted-list-watch-12258327",
-          "source": "NDTV Sports"
-        },
-        {
-          "title": "What are the highest totals scored against India in T20I cricket? | To view the entire list | Inshorts",
-          "url": "https://inshorts.com/en/news/what-are-the-highest-totals-scored-against-india-in-t20i-cricket--1793353429892",
-          "source": "Inshorts"
+          "title": "Safaricom Drops Diesel for Solar Power, Explains 5,000 Network Sites Target",
+          "url": "https://www.tuko.co.ke/business-economy/644927-safaricom-drops-diesel-solar-power-explains-5000-network-sites-target/",
+          "source": "Tuko News"
         }
       ]
     },
@@ -114,23 +92,45 @@
     },
     {
       "geo": "KE",
+      "title": "tana river & lamu counties floods",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Heavy rains displace 302 households in Tana River",
+          "url": "https://www.the-star.co.ke/news/2026-10-30-heavy-rains-displace-302-households-in-tana-river",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Over 300 households displaced as floods hit Tana River County",
+          "url": "https://eastleighvoice.co.ke/national/418016/over-300-households-displaced-as-floods-hit-tana-river-county",
+          "source": "The Eastleigh Voice"
+        },
+        {
+          "title": "Over 300 households displaced by floods in Tana River",
+          "url": "https://capitalfm.africa/over-300-households-displaced-by-floods-in-tana-river/",
+          "source": "Capital FM Africa"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "estêvão willian",
       "traffic": "200+",
       "news": [
+        {
+          "title": "Gigante se interessa e Estêvão pode ganhar nova chance na Europa",
+          "url": "https://esporte.ig.com.br/futebol/2026-10-28/gigante-se-interessa-e-estevao-pode-ganhar-nova-chance-na-europa.html",
+          "source": "iG Esportes"
+        },
         {
           "title": "Eliminado na Carabao Cup pro Liverpool, Xabi Alonso é questionado sobre a falta de minutos de Estêvão Willian",
           "url": "https://www.chelseafcbrasil.com/2026/10/28/eliminado-na-carabao-cup-pro-liverpool-xabi-alonso-e-questionado-sobre-a-falta-de-minutos-de-estevao-willian/",
           "source": "Chelsea Fans Brasil"
         },
         {
-          "title": "Estêvão volta a ficar sem jogar no Chelsea, e técnico promete chances",
-          "url": "https://odia.ig.com.br/esporte/2026/10/7317270-estevao-volta-a-ficar-sem-jogar-no-chelsea-e-tecnico-promete-chances.html",
-          "source": "O Dia"
-        },
-        {
-          "title": "Depois de Vini Jr. e Endrick, Xabi Alonso volta a atormentar a vida de outro brasileiro",
-          "url": "https://oglobo.globo.com/esportes/fernando-kallas/coluna/2026/10/depois-de-vini-jr-e-endrick-xabi-alonso-volta-a-atormentar-a-vida-de-outro-brasileiro.ghtml",
-          "source": "O GLOBO"
+          "title": "Barcelona monitora situação de Estevão após falta de oportunidades no Chelsea",
+          "url": "https://www.gazetaesportiva.com/times/barcelona/estevao-chelsea-barcelona-mercado-da-bola/",
+          "source": "Gazeta Esportiva"
         }
       ]
     },
@@ -158,29 +158,6 @@
     },
     {
       "geo": "KE",
-      "title": "citizen tv kenya",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "RMS staff bid farewell to exiting Citizen TV news anchor Yvonne Okwara",
-          "url": "https://citizen.digital/article/rms-staff-bid-farewell-to-exiting-citizen-tv-news-anchor-yvonne-okwara-n392932",
-          "source": "Citizen Digital"
-        },
-        {
-          "title": "Story Of The UK-Based Organisation Hiring Yvonne Okwara",
-          "url": "https://thekenyatimes.com/featured/shuga-global-yvonne/",
-          "source": "The Kenya Times"
-        },
-        {
-          "title": "Sifuna pays tribute to Yvonne Okwara, recalls journalist gave him first TV appearance",
-          "url": "https://sifafm.co.ke/sifuna-pays-tribute-to-yvonne-okwara-recalls-journalist-gave-him-first-tv-appearance/",
-          "source": "Sifa FM Kenya"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "sifuna",
       "traffic": "100+",
       "news": [
@@ -190,20 +167,24 @@
           "source": "Daily Nation"
         },
         {
-          "title": "Sifuna steps in as crowd interrupts Kalonzo's speech",
-          "url": "https://www.the-star.co.ke/news/2026-10-30-sifuna-steps-in-as-crowd-interrupts-kalonzos-speech",
-          "source": "The Star, Kenya"
-        },
-        {
           "title": "LIST: Linda Mwananchi unveils proposed Secretariat, with Osotsi as party chair",
           "url": "https://citizen.digital/article/list-linda-mwananchi-unveils-proposed-secretariat-names-osotsi-party-chair-n393028",
           "source": "Citizen Digital"
+        },
+        {
+          "title": "Sifuna vows to scrap fuel, electricity and housing levies using Sh500bn budget cuts",
+          "url": "https://www.the-star.co.ke/news/2026-10-30-sifuna-pledges-sh500bn-budget-cuts-if-elected-president",
+          "source": "The Star, Kenya"
         }
       ],
       "civic": true
     }
   ],
   "dropped": [
+    {
+      "title": "chelsea vs man united",
+      "why": "unsafe: 'Bet'"
+    },
     {
       "title": "moi university student strikes",
       "why": "unsafe: 'Missing'"
