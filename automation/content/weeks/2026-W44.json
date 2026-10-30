@@ -1308,13 +1308,76 @@
         "note": "Add the specific river or catchment name to ground the flood impact."
       },
       "drafted_at": "2026-10-30T13:38:20.572505+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1031",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Families",
+      "line": "First casualty retrieved after an *Eastleigh* building collapsed.",
+      "fact": "Emergency teams recovered the first body from the rubble in Eastleigh, Nairobi.",
+      "source": "Capital FM News, 2026-10-30",
+      "photo_query": "collapsed building Nairobi rubble",
+      "message": "A building collapse in Eastleigh takes a life, raising safety questions.",
+      "action": "Report unsafe buildings to your county office",
+      "beats": [
+        "The *first* casualty was retrieved from the Eastleigh building collapse.",
+        "Emergency teams are still searching the rubble for survivors.",
+        "Families want answers on building safety and county approvals.",
+        "Kenyans demand: Nairobi County inspects all high-risk sites."
+      ],
+      "who": "County Government of Nairobi",
+      "where": "Nairobi",
+      "when": "30 Oct 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Ordinary Kenyans lose lives and homes to unsafe construction.",
+      "caption": "Capital FM News reports: A life lost in the Eastleigh building collapse. Who approved this site? Send this to someone who lives in apartments.\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-31T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "First casualty retrieved from Eastleigh building collapse",
+          "link": "https://capitalfm.africa/first-casualty-retrieved-from-eastleigh-building-collapse/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-30"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.2/10. This is an older developing incident, not among the active top-ranked stories Kenyans are discussing this week."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 6,
+        "picture": 7,
+        "hold": 6,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 7,
+        "avg": 6.2,
+        "note": "This is an older developing incident, not among the active top-ranked stories Kenyans are discussing this week."
+      },
+      "drafted_at": "2026-10-31T01:26:50.632403+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening, you are listening to Kenya on Record. In Tana River County, tragedy has struck again as over three hundred families find themselves displaced by severe flooding. Homes have been submerged, farms washed away, and hundreds of men, women, and children are in desperate need of emergency shelter, clean drinking water, and food supplies.\n\nWhile our immediate appeal goes to the Red Cross and emergency response teams to secure these families, we must confront the uncomfortable truth of governance. Tana River does not flood by surprise. The seasonal patterns are known, early warnings are issued, and public budgets regularly allocate millions toward disaster preparedness and climate adaptation. Yet year after year, the response remains reactive—waiting for villages to sink before dispatching temporary tents and a few bags of maize.\n\nWhere are the permanent dykes? What happened to the promised structured resettlement programs out of the flood plains? Our people cannot remain perpetual victims of poor planning while disaster response funds disappear into bureaucratic pockets. Relief must reach Tana River today, but long-term accountability must follow tomorrow.\n\nKwa ufupi, zaidi ya familia mia tatu katika kaunti ya Tana River zimekosa makao kufuatia mafuriko makali. Wanahitaji hifadhi na chakula cha dharura mara moja. Hata hivyo, viongozi wa kaunti na serikali ya kitaifa lazima wawajibike: mbona hakuna mikakati ya kudumu kuzuia janga hili linalojirudia kila mwaka? Tusikubali uzembe huu uendelee.",
-    "voice_note": "Habari zenu, this is Kenya on Record with an urgent update. In Tana River, over three hundred families are out in the cold after severe floods swept through their villages. They need emergency shelter, clean water, and food assistance immediately. But as we push for rapid relief, we have to demand accountability. Flooding in the lower Tana basin is not a sudden accident—it is a regular, seasonal occurrence. Every financial year, funds are set aside for disaster mitigation and water management, yet our people are still abandoned to rely on emergency handouts when the rains peak. Support must reach the ground right now, but county and national leaders must tell us why long-term flood control projects are never completed. Let's stay vigilant and hold them to account.",
-    "sms": "Usiibiwe: When donating to flood relief, send aid only through verified local leaders or registered Red Cross channels to avoid rogue fundraisers cashing in.",
-    "reels": "Over three hundred families in Tana River are homeless tonight following severe floods. They urgently need shelter and food, but here is the real issue: this crisis happens every single year. Why are we still doing emergency handouts instead of permanent flood mitigation? Disaster budgets must serve the people, not enrich contractors. Immediate relief now, full accountability next."
+    "radio": "Welcome to Kenya on Record. This week, grief hangs heavy over Eastleigh after a building collapsed, claiming a life and injuring others. Our deepest thoughts are with the bereaved family. But grief must now turn into sharp accountability.\n\nHow does a multi-storey building rise in broad daylight, cut corners on reinforcement, and crumble to dust? This was not an act of God. It was the predictable result of developer greed, substandard materials, and regulatory failure. \n\nEvery construction project in Nairobi requires sign-offs from the National Construction Authority and City Hall planners. If a building is structurally defective, who cleared the drawings? Who conducted the site visits? And why do county compliance teams only show up after the rubble has settled, clutching clipboards to a scene they should have sealed months ago?\n\nWe cannot normalize death by rogue construction. Public safety is not negotiable. If your apartment or a site in your neighborhood shows alarming signs—deep diagonal wall cracks, sagging beams, or suspicious additional floors—speak out and report it immediately.\n\nKwa ufupi: Kuporomoka kwa jengo kule Eastleigh na kupoteza maisha ya mkenya si ajali, bali ni uzembe wa wajenzi walafi na maafisa wa kaunti waliofumbia macho ujenzi duni. Ni lazima walioidhinisha jengo hili wachukuliwe hatua za kisheria. Ukiona jengo lolote lenye nyufa au ujenzi usiozingatia usalama, ripoti mara moja kabla maafa hayajatokea.",
+    "voice_note": "Hae, it’s Kenya on Record. This week, we are mourning another life needlessly lost after a building collapsed in Eastleigh. It is tragic, but worse, it was entirely preventable.\n\nBuildings don’t just collapse. They fall when developers cut corners on cement, hire quacks, or slap extra floors on weak foundations to maximize rent. And behind every collapsed wall is an inspector who signed a paper they shouldn't have, or looked the other way.\n\nWe must look out for ourselves and each other. If you notice sudden structural cracks in your building, pillars bending, or doors that suddenly won't shut because the frame has shifted, don’t sit on it. Document it, notify your neighbors, and demand immediate inspection from the NCA. Silence is costing lives. Share this note with your estate group.",
+    "sms": "Usiibiwe: Before renting, confirm the building has an NCA compliance cert and no severe wall cracks. Never risk your life on cheap, unchecked construction.",
+    "reels": "Another building down in Eastleigh. Another life cut short beneath twisted metal and broken concrete. This was not an accident. It was sheer greed, compromised materials, and county inspectors who chose to look away. When regulators take shortcuts, ordinary Kenyans pay with their lives. Who approved this site? We demand criminal charges for rogue developers and corrupt officials. No more excuses."
   },
   "spend_usd": 0.0
 }

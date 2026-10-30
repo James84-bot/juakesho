@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-10-30T21:43:04.012044+00:00",
+  "fetched": "2026-10-30T22:11:55.172414+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -12,13 +12,47 @@
           "source": "ESPN"
         },
         {
+          "title": "Hakimi sparkles with hat-trick as PSG ease past Le Havre",
+          "url": "https://sports.yahoo.com/articles/hakimi-sparkles-hat-trick-psg-204821920.html",
+          "source": "Yahoo Sports"
+        },
+        {
           "title": "Le Havre vs Paris Saint-Germain: Predicted starting lineup for Ligue 1 game",
           "url": "https://psgpost.com/le-havre-vs-paris-saint-germain-predicted-starting-lineup-for-ligue-1-game-01m668s8kjsv",
           "source": "PSG Post"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "losc vs lens",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Lille - Lens : les compositions officielles",
+          "url": "https://www.footmercato.net/a69500762239078317-lille-lens-les-compositions-officielles",
+          "source": "Foot Mercato"
         },
         {
-          "title": "Le Havre 1-5 PSG | Highlights",
-          "url": "https://www.beinsports.com/en-mena/football/ligue-1/articles-video/hakimi-bags-hat-trick-as-paris-saint-germain-rip-le-havre-to-pieces-2026-10-30",
+          "title": "\"Direct\"!! PSG - Le Havre En Direct 30 octobre 2026",
+          "url": "https://www.portofrotterdam.com/sites/default/files/uploads/360panorama/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5aHVicy5ubC92b3MvbmV3L2EueG1sIi8+PC9rcnBhbm8+&id=video-psg-le-havre-lie-en-crkfdxs",
+          "source": "Port of Rotterdam"
+        },
+        {
+          "title": "LOSC – RC Lens : Rémy Cabella préférait l’ambiance du derby à Lille plutôt qu’à Lens",
+          "url": "https://www.live-mercato.com/article/202050-losc-rc-lens-remy-cabella-preferait-lambiance-du-derby-a-lille-plutot-qua-lens",
+          "source": "www.live-mercato.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "casa pia vs sporting",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Live: Casa Pia vs Sporting CP | Liga Portugal",
+          "url": "https://www.beinsports.com/en-us/soccer/primeira-liga/articles/live-casa-pia-vs-sporting-cp-liga-portugal-2026-10-30",
           "source": "beIN SPORTS"
         }
       ]
@@ -47,53 +81,69 @@
     },
     {
       "geo": "KE",
-      "title": "sv elversberg vs mainz",
+      "title": "club brugge",
       "traffic": "200+",
       "news": [
         {
-          "title": "Elversberg vs Mainz 05: German Bundesliga stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cv62yw1ln38gt",
+          "title": "“De boodschap van Leko was duidelijk aangekomen”: dit zijn onze punten en conclusies na Zulte Waregem-Club Brugge",
+          "url": "https://www.hbvl.be/sport/voetbal/de-boodschap-van-leko-was-duidelijk-aangekomen-dit-zijn-onze-punten-en-conclusies-na-zulte-waregem-club-brugge/163889519.html",
+          "source": "HBVL"
+        },
+        {
+          "title": "LIVE. Dan toch nog sprankeltje hoop? Hedl brengt Zulte Waregem met tweede treffer terug tot 2-4",
+          "url": "https://www.hln.be/jupiler-pro-league/live-dan-toch-nog-sprankeltje-hoop-hedl-brengt-zulte-waregem-met-tweede-treffer-terug-tot-2-4~ad4d2f58/",
+          "source": "HLN"
+        },
+        {
+          "title": "Carlos Forbs scoort voor Club Brugge in aanloop naar PSV-uit, Mika Godts en Achraf Hakimi schitteren voor PSG",
+          "url": "https://www.ad.nl/voetbal/carlos-forbs-scoort-voor-club-brugge-in-aanloop-naar-psv-uit-mika-godts-en-achraf-hakimi-schitteren-voor-psg~a21c9742/",
+          "source": "AD.nl"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ligue 1",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "OL : Paulo Fonseca redoute une longue absence pour Tyler Morton",
+          "url": "https://www.footmercato.net/a675947669288368712-ol-paulo-fonseca-redoute-une-longue-absence-pour-tyler-morton",
+          "source": "Foot Mercato"
+        },
+        {
+          "title": "Paulo Fonseca avant le Angers SCO : \"Nous n’avons aucune raison de ne pas être confiants.\"",
+          "url": "https://www.ol.fr/fr/actualites/paulo-fonseca-avant-le-angers-sco-nous-n-avons-aucune-raison-de-ne-pas-etre-confiants",
+          "source": "www.ol.fr"
+        },
+        {
+          "title": "Khalis Merah sur l'absence de Tyler Morton avant le match face à Angers : « La santé passe avant tout » - Foot - Ligue 1",
+          "url": "https://sports.orange.fr/videos/football/khalis-merah-sur-l-absence-de-tyler-morton-avant-le-match-face-a-angers-la-sante-passe-avant-tout-foot-ligue-1-CNT000002tteiX.html",
+          "source": "Sports - Orange"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "eddie howe",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Eddie Howe to Man Utd? The fans, the finances, the football structure",
+          "url": "https://www.bbc.com/sport/football/articles/cr74pd99vwq3o",
           "source": "BBC"
         },
         {
-          "title": "Bundesliga tips: Friday October 30 predictions and best bets for Elversberg vs Mainz",
-          "url": "https://www.sportinglife.com/football/news/bundesliga-tips-friday-october-30-predictions-and-best-bets-for-elversberg-vs-mainz/235112",
-          "source": "Sporting Life"
+          "title": "Fabrizio Romano names manager Man Utd want to replace Michael Carrick - it's NOT Eddie Howe",
+          "url": "https://www.teamtalk.com/manchester-united/fabrizio-romano-unai-emery-man-utd-michael-carrick-eddie-howe",
+          "source": "TEAMtalk"
         },
         {
-          "title": "Licensable picture: SV Elversberg V 1. FSV Mainz 05: Matchday 9 - Bundesliga",
-          "url": "https://www.reutersconnect.com/item/sv-elversberg-v-1-fsv-mainz-05-matchday-9-bundesliga/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDA4Nkk2QU0",
-          "source": "Reuters Connect"
+          "title": "Unai Emery or Cesc Fabregas: Senior Man United figures want INEOS to show some ambition instead of another safe hire",
+          "url": "https://thepeoplesperson.com/2026/10/29/unai-emery-and-cesc-fabregas-man-united-urged-to-show-ambition-320694/",
+          "source": "The Peoples Person"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "losc vs lens",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Communiqué officiel du Racing Club de Lens",
-          "url": "https://www.rclens.fr/fr/communique-officiel-rclens-20261028",
-          "source": "RC Lens"
-        },
-        {
-          "title": "\"Direct\"!! PSG - Le Havre En Direct 30 octobre 2026",
-          "url": "https://www.portofrotterdam.com/sites/default/files/uploads/360panorama/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2hhcHB5aHVicy5ubC92b3MvbmV3L2EueG1sIi8+PC9rcnBhbm8+&id=video-psg-le-havre-lie-en-crkfdxs",
-          "source": "Port of Rotterdam"
-        },
-        {
-          "title": "Ligue 1 - LOSC - RC Lens : les compos officielles du derby du Nord",
-          "url": "https://madeinfoot.ouest-france.fr/infos/article-ligue-1-losc-rc-lens-les-compos-officielles-du-derby-du-nord-544076.html",
-          "source": "MadeInFOOT"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "casa pia vs sporting",
-      "traffic": "200+",
-      "news": []
     },
     {
       "geo": "KE",
@@ -119,28 +169,6 @@
     },
     {
       "geo": "KE",
-      "title": "club brugge",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Club Brugge loopt vlak voor rust uit tegen Zulte Waregem",
-          "url": "https://voetbalfocus.be/club-brugge-loopt-uit-tegen-zulte-waregem/",
-          "source": "VoetbalFocus"
-        },
-        {
-          "title": "LIVE: Vanaken maakt er zelfs 1-4 van vlak voor rust",
-          "url": "https://www.voetbalkrant.com/belgie/jupiler-pro-league/2026-2027/kalender/speeldag-10/zulte-waregem/club-brugge/live-vanaken-maakt-er-zelfs-1-4-van-vlak-voor-rust",
-          "source": "Voetbalkrant.com"
-        },
-        {
-          "title": "LIVE. Daar is meteen de 1-0! Vetlesen knalt Club van afstand op voorsprong",
-          "url": "https://www.hln.be/jupiler-pro-league/live-daar-is-meteen-de-1-0-vetlesen-knalt-club-van-afstand-op-voorsprong~ad4d2f58/",
-          "source": "HLN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "rapid bucuresti",
       "traffic": "100+",
       "news": [
@@ -150,14 +178,14 @@
           "source": "Digi Sport"
         },
         {
+          "title": "Valentin Suciu e convins că echipa sa merita mai mult pe Giuleşti: \"Cel puţin un egal\"",
+          "url": "https://orangesport.ro/valentin-suciu-e-convins-ca-echipa-sa-merita-mai-mult-pe-giulesti-cel-putin-un-egal-22911185",
+          "source": "Orangesport"
+        },
+        {
           "title": "Au dat verdictul despre Andrei Șucu, titular în premieră la Rapid: „Stai, mă! Te expui aiurea”",
           "url": "https://www.gsp.ro/fotbal/liga-1/rapid-csikszereda-andrei-sucu-herea-panduru-994140.html",
           "source": "GSP"
-        },
-        {
-          "title": "Fotbal: Victorie pentru Rapid București în fața ultimei clasate în Superligă, 2-0 cu FK Csikszereda",
-          "url": "https://agerpres.ro/sport/2026/10/30/fotbal-victorie-pentru-rapid-bucuresti-in-fata-ultimei-clasate-in-superliga-2-0-cu-fk-csikszereda--1608633",
-          "source": "Agerpres"
         }
       ]
     }
@@ -166,10 +194,6 @@
     {
       "title": "zulte waregem vs club brugge",
       "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "bodo glimt",
-      "why": "unsafe: 'betting'"
     }
   ],
   "errors": {}
