@@ -917,6 +917,28 @@ def attribute_single_source(post: dict) -> dict:
     return post
 
 
+ATTRIBUTION = re.compile(r"^\s*[A-Z][\w&'.\- ]{2,40}?\s+(?:reports?|reported|says?|said|confirms?|confirmed)\s*:\s*")
+
+
+def tidy_beats(post: dict) -> dict:
+    """The writer likes to open the Reel with "<Outlet> reports: ...", which pushes the line over the 72-character
+    limit, and models cannot count characters. When (and only when) a line is too long, drop that attribution:
+    the source is still on the card, in `source` and in the caption. Nothing else is touched."""
+    beats = post.get("beats")
+    if not isinstance(beats, list):
+        return post
+    out = []
+    for b in beats:
+        if isinstance(b, str):
+            plain = b.replace("*", "")
+            if len(plain) > 72 or len(plain.split()) > 12:
+                short = ATTRIBUTION.sub("", b, count=1)
+                if short != b and short:
+                    b = short[0].upper() + short[1:]
+        out.append(b)
+    return {**post, "beats": out}
+
+
 def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     """Model output fills content; the plan keeps control of id/template/bg/time/group."""
     by_id = {d.get("id"): d for d in drafted}
@@ -925,7 +947,7 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     for s in slots:
         d = {k: v for k, v in by_id.get(s["id"], {}).items() if k != "researched"}   # only a person sets that
         locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "beat", "angle", "avoid", "breaking", "source_links") if k in s}
-        out.append(attribute_single_source(material.lock(news.resolve({**d, **locked}, table), s)))
+        out.append(tidy_beats(attribute_single_source(material.lock(news.resolve({**d, **locked}, table), s))))
     return out
 
 
