@@ -335,6 +335,46 @@ def _calendar_posts(label: str) -> list[dict]:
 TRACKER_ANGLES = ["done", "stalled", "ignored", "diverted", "stalled"]   # one of each, plus a second stalled
 
 
+QUIET_HOURS = 18   # no post for this long during the day means something is stuck, not that there is no news
+
+
+def quiet_check(at: dt.datetime | None = None, notify=None) -> str | None:
+    """Tells you on Telegram when nothing has gone out for QUIET_HOURS, and why the newest posts were held.
+    A silent run of green checks once hid three days without a post. One alert per 12 hours; none at night."""
+    at = at or now()
+    if not 8 <= at.hour < 22:
+        return None
+    last, held = None, []
+    for f in sorted(WEEKS.glob("*.json"))[-2:]:
+        for p in json.loads(f.read_text(encoding="utf-8"))["posts"]:
+            if p.get("published_at"):
+                t = dt.datetime.fromisoformat(p["published_at"])
+                last = t if last is None or t > last else last
+            elif p.get("status") == "needs_human":
+                held.append(p)
+    if last is None or at - last < dt.timedelta(hours=QUIET_HOURS):
+        return None
+    marker = STATE / "quiet_alert.json"
+    try:
+        prev = dt.datetime.fromisoformat(json.loads(marker.read_text(encoding="utf-8"))["at"])
+        if at - prev < dt.timedelta(hours=12):
+            return None
+    except (OSError, ValueError, KeyError):
+        pass
+    hours = int((at - last).total_seconds() // 3600)
+    reasons: dict[str, int] = {}
+    for p in held[-12:]:
+        for e in (p.get("guard") or {}).get("errors", [])[:1]:
+            key = re.sub(r"\d+(\.\d+)?", "N", e)[:70]
+            reasons[key] = reasons.get(key, 0) + 1
+    top = "; ".join(f"{k} (x{n})" for k, n in sorted(reasons.items(), key=lambda kv: -kv[1])[:3]) or "no held posts on record"
+    msg = f"⏸ Nothing has been posted for {hours} hours. Held posts: {len(held)}. Main reasons: {top}."
+    STATE.mkdir(exist_ok=True)
+    marker.write_text(json.dumps({"at": at.isoformat()}), encoding="utf-8")
+    (notify or _notify)(_esc(msg))
+    return msg
+
+
 def tracker(label: str) -> list[str]:
     """Development Tracker week: every planned post becomes a project check (done, stalled, ignored or money
     diverted), the polls ask about a project people can see. Only a week nobody has decided anything in."""
@@ -1957,6 +1997,10 @@ def _main(argv: list[str] | None = None) -> int:
             auto_approve()
         except Exception as e:
             log(f"auto-approve skipped: {e}")
+        try:   # a stuck pipeline must say so
+            quiet_check()
+        except Exception as e:
+            log(f"quiet check skipped: {e}")
     if a.command in {"tick", "publish"}:
         publish(dry_run=a.dry_run)
     if a.command in {"tick", "engage"} and not a.dry_run and meta_ready():
