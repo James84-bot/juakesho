@@ -1,28 +1,6 @@
 {
-  "fetched": "2026-10-30T10:26:51.256869+00:00",
+  "fetched": "2026-10-30T11:38:03.388686+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "binance hacked",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Binance hack updates: Crypto firm finds multiple 'points of breach' in $6.3bn heist",
-          "url": "https://www.bbc.com/news/live/cqrmynd3042gt",
-          "source": "BBC"
-        },
-        {
-          "title": "Binance says $6.3bn stolen in biggest crypto heist in history",
-          "url": "https://www.aljazeera.com/economy/2026/10/30/binance-says-2-54bn-in-crypto-funds-frozen-amid-potential-security-issue",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": "World’s largest crypto exchange hit by world’s largest heist",
-          "url": "https://www.cnn.com/2026/10/30/tech/binance-crypto-heist-hnk-intl",
-          "source": "CNN"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "ntsa warning fake traffic notices",
@@ -69,45 +47,68 @@
     },
     {
       "geo": "KE",
+      "title": "francis mogambi grand jury indictment",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "From green card to fraud: Kenyans arrested in $130m US ghost student scam",
+          "url": "https://www.bbc.com/news/articles/cxvgdzpy7241o",
+          "source": "BBC"
+        },
+        {
+          "title": "Feds charge 5 people as part of alleged sprawling 'ghost students' probe",
+          "url": "https://abcnews.com/US/feds-charge-5-people-part-alleged-sprawling-ghost/story?id=137686361",
+          "source": "ABC News - Breaking News, Latest News and Videos"
+        },
+        {
+          "title": "'Operation Ghostbusters': DOJ charges five in alleged $1.3 million 'ghost student' financial aid fraud scheme",
+          "url": "https://abc7.com/post/operation-ghostbusters-doj-charges-alleged-13-million-ghost-student-financial-aid-fraud-scheme/19997368/",
+          "source": "ABC7 Los Angeles"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
       "title": "nz vs ind",
       "traffic": "500+",
       "news": [
         {
-          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 4th T20I",
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-4th-t20i-1539435/ball-by-ball-commentary",
-          "source": "Cricinfo"
+          "title": "NZ vs IND T20 2026: India suffer their biggest defeat against New Zealand after Glenn Phillips century",
+          "url": "https://www.olympics.com/en/news/new-zealand-vs-india-t20-cricket-2026-match-4-report",
+          "source": "www.olympics.com"
         },
         {
-          "title": "Bhuvneshwar Kumar out as India opt to chase against New Zealand in 4th T20I; Ishan Kishan, Mayank Yadav return to playing XI",
-          "url": "https://www.bignewsnetwork.com/news/279404165/bhuvneshwar-kumar-out-as-india-opt-to-chase-against-new-zealand-in-4th-t20i-ishan-kishan-mayank-yadav-return-to-playing-xi",
-          "source": "Big News Network.com"
+          "title": "Watch - 4, 6, 6, 6, 6: Glenn Phillips Smashes 32 Runs In 1 Over; Nitish Reddy Joins Unwanted List",
+          "url": "https://sports.ndtv.com/new-zealand-vs-india-2026-27/4-6-6-6-6-glenn-phillips-smashes-32-runs-in-1-over-nitish-reddy-joins-unwanted-list-watch-12258327",
+          "source": "NDTV Sports"
         },
         {
-          "title": "India wins the toss and bowls in the 4th T20 vs New Zealand with the series decided",
-          "url": "https://www.postregister.com/sports/pro/india-wins-the-toss-and-bowls-in-the-4th-t20-vs-new-zealand-with-the/article_cbc6ada7-05e2-50ec-a020-26e10accb558.html",
-          "source": "Post Register"
+          "title": "What are the highest totals scored against India in T20I cricket? | To view the entire list | Inshorts",
+          "url": "https://inshorts.com/en/news/what-are-the-highest-totals-scored-against-india-in-t20i-cricket--1793353429892",
+          "source": "Inshorts"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "nice vs rennes",
-      "traffic": "500+",
+      "title": "estevao willian",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Le groupe pour le déplacement à Nice",
-          "url": "https://www.staderennais.com/actualites/ligue-1-mcdonalds/le-groupe-pour-le-deplacement-a-nice",
-          "source": "Stade Rennais"
+          "title": "Alonso delivers updates on Caicedo, Gusto and Lacroix | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/alonso-delivers-updates-on-caicedo-gusto-and-lacroix",
+          "source": "Chelsea Football Club"
         },
         {
-          "title": "La minute Rouge et Noir : l'heure de régler les comptes avec le Stade Rennais de Franck Haise",
-          "url": "https://www.ici.fr/emissions/la-minute-rouge-et-noir/la-minute-rouge-et-noir-l-heure-de-regler-les-comptes-avec-le-stade-rennais-de-franck-haise-7835886",
-          "source": "ici.fr"
+          "title": "Estevao Willian agreement reached and Cole Palmer decision made - Chelsea line-ups for Man United",
+          "url": "https://www.football.london/chelsea-fc/news/estevao-willian-agreement-reached-cole-34834231",
+          "source": "Football London"
         },
         {
-          "title": "Ligue 1 : les supporters compréhensifs face aux reports de matches",
-          "url": "https://rmc.bfmtv.com/actualites/societe/video-ligue-1-les-supporters-comprehensifs-face-aux-reports-de-matches_VN-202610300201.html",
-          "source": "RMC"
+          "title": "Concern in France: the Liverpool-Chelsea clash deals a blow to Zidane",
+          "url": "https://www.goal.com/en/news/concern-in-france-liverpool-chelsea-clash-deals-a-blow-to-zidane/blt441bd9b7227a943d",
+          "source": "Goal.com"
         }
       ]
     },
@@ -117,19 +118,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Gigante se interessa e Estêvão pode ganhar nova chance na Europa",
-          "url": "https://esporte.ig.com.br/futebol/2026-10-28/gigante-se-interessa-e-estevao-pode-ganhar-nova-chance-na-europa.html",
-          "source": "iG Esportes"
+          "title": "Eliminado na Carabao Cup pro Liverpool, Xabi Alonso é questionado sobre a falta de minutos de Estêvão Willian",
+          "url": "https://www.chelseafcbrasil.com/2026/10/28/eliminado-na-carabao-cup-pro-liverpool-xabi-alonso-e-questionado-sobre-a-falta-de-minutos-de-estevao-willian/",
+          "source": "Chelsea Fans Brasil"
         },
         {
-          "title": "Xabi Alonso enfrenta críticas por sua postura em relação a astro do Chelsea",
-          "url": "https://www.goal.com/br/not%C3%ADcias/xabi-alonso-enfrenta-criticas-por-sua-postura-em-relacao-a-astro-do-chelsea/blt900fd74878064577",
-          "source": "Goal.com"
+          "title": "Estêvão volta a ficar sem jogar no Chelsea, e técnico promete chances",
+          "url": "https://odia.ig.com.br/esporte/2026/10/7317270-estevao-volta-a-ficar-sem-jogar-no-chelsea-e-tecnico-promete-chances.html",
+          "source": "O Dia"
         },
         {
-          "title": "Barcelona está de olho em Estêvão, que está no banco do Chelsea",
-          "url": "https://www.metropoles.com/esportes/barcelona-esta-de-olho-em-estevao-que-esta-no-banco-do-chelsea",
-          "source": "Metrópoles"
+          "title": "Depois de Vini Jr. e Endrick, Xabi Alonso volta a atormentar a vida de outro brasileiro",
+          "url": "https://oglobo.globo.com/esportes/fernando-kallas/coluna/2026/10/depois-de-vini-jr-e-endrick-xabi-alonso-volta-a-atormentar-a-vida-de-outro-brasileiro.ghtml",
+          "source": "O GLOBO"
         }
       ]
     },
@@ -177,16 +178,35 @@
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "sifuna",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Sifuna unveils Linda Mwananchi Movement party dream team",
+          "url": "https://nation.africa/kenya/videos/sifuna-unveils-linda-mwananchi-movement-party-dream-team-5651898",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Sifuna steps in as crowd interrupts Kalonzo's speech",
+          "url": "https://www.the-star.co.ke/news/2026-10-30-sifuna-steps-in-as-crowd-interrupts-kalonzos-speech",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "LIST: Linda Mwananchi unveils proposed Secretariat, with Osotsi as party chair",
+          "url": "https://citizen.digital/article/list-linda-mwananchi-unveils-proposed-secretariat-names-osotsi-party-chair-n393028",
+          "source": "Citizen Digital"
+        }
+      ],
+      "civic": true
     }
   ],
   "dropped": [
     {
       "title": "moi university student strikes",
       "why": "unsafe: 'Missing'"
-    },
-    {
-      "title": "nice vs rennes prediction",
-      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
