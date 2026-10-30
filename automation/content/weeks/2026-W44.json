@@ -1240,13 +1240,81 @@
         "note": "Ensure the demand names the specific office responsible for school placements clearly."
       },
       "drafted_at": "2026-10-30T09:15:29.664622+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1030m",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 7,
+      "kicker": "Flood victims",
+      "line": "Floods displace *over 300 households* in Tana River as heavy rains continue.",
+      "fact": "Flooding in Tana River County displaced over 300 households following continuous heavy rains.",
+      "source": "Capital FM News, 2026-10-30",
+      "message": "Over 300 families in Tana River need emergency shelter and relief after severe floods.",
+      "action": "Report displaced families needing rescue to the Kenya Red Cross on 1199",
+      "photo_query": "flooding Tana River Kenya",
+      "who": "National Disaster Operations Centre",
+      "where": "Tana River",
+      "when": "30 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Over 300 families have lost their homes and urgently need clean water and food.",
+      "caption": "Capital FM News reports: Over 300 households in Tana River are displaced after severe floods hit the county. Families need dry shelter, clean water and emergency food.\n\nWhat is the flood situation where you live?\n\n#KenyaOnRecord #TanaRiverFloods",
+      "beats": [
+        "Capital FM News reports: Floods displace *over 300 households* in Tana River.",
+        "Heavy rains caused local rivers to overflow into villages.",
+        "Affected families urgently need clean water, food and shelter.",
+        "Kenyans demand: the *government* delivers relief supplies today.",
+        "Call the Kenya Red Cross toll-free on 1199 for flood help."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-10-30T18:58:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Over 2.5 million learners completed national assessments as families prepare for senior school placements."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Over 300 households displaced by floods in Tana River",
+          "link": "https://capitalfm.africa/over-300-households-displaced-by-floods-in-tana-river/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-30"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "beats[0] is too long: max 12 words / 72 characters"
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 7,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.7,
+        "note": "Add the specific river or catchment name to ground the flood impact."
+      },
+      "drafted_at": "2026-10-30T13:38:20.572505+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening and welcome to Kenya on Record. I am your host.\n\nThis week, we mark a massive milestone in our education calendar. Over two and a half million young Kenyans have completed their national assessments, closing one chapter and looking ahead to the next: senior school placements.\n\nThis transition is critical. It tests not just our children’s readiness, but the integrity of our education system. As parents and guardians, we know the stress that comes with placement season. The worry about school choices, the cost of requirements, and, unfortunately, the emergence of cartels looking to profit from parental anxiety.\n\nLet us be clear and vigilant: no parent should be asked to pay an unofficial facilitation fee to secure a legitimate senior school slot. Placement must remain strictly merit-based, transparent, and fair, regardless of whether a child comes from a remote rural village or an urban center. We must hold the Ministry of Education accountable for a seamless and transparent process.\n\nKwa ufupi: Zaidi ya wanafunzi milioni mbili nukta tano wamekamilisha tathmini zao za kitaifa huku wazazi wakijiandaa kwa mchakato wa kujiunga na shule za upili. Kuweni macho msimu huu. Hakuna afisa anayefaa kuitisha hongo ili kumpa mwanao nafasi ya shule. Tusiruhusu matapeli watumie hofu zetu kutuibia. Haki ya mtoto wako inatokana na bidii yake, siyo mlungula.\n\nVerify every admission letter through official school channels and report extortion immediately. Until next time, stay informed.",
-    "voice_note": "Hujambo, this is Kenya on Record. Over 2.5 million of our children have just finished their national assessments, marking a major milestone under the ongoing curriculum transition. But as families prepare for Senior School placements, an old problem threatens to rear its head: admission exploitation.\n\nEvery year around this time, desperate parents fall prey to middlemen promising guaranteed slots in prestigious schools for a cash fee. Let’s protect one another. Placements are managed through official Ministry systems. Do not pay a single shilling under the table to secure a space.\n\nIf someone calls asking for facilitation money or claiming they have special access at Jogoo House, flag it. Let’s hold our school heads and education officials accountable. Our children’s hard work shouldn’t be auctioned off. Share this with a parent who needs the reminder today.",
-    "sms": "Usiibiwe: Senior school placement is done via official Ministry channels. Do not pay anyone claiming they can alter your child's placement or school slot.",
-    "reels": "Over 2.5 million learners across Kenya have just completed their national assessments. For parents and guardians, the real anxiety begins now: the transition to Senior School. We already know how this season goes—brokers emerge, promising elite slots for a fee. Let's be clear: placement integrity is a test for the Ministry of Education. Watch out for scams, keep your records straight, and demand fairness for every child."
+    "radio": "Good evening, you are listening to Kenya on Record. In Tana River County, tragedy has struck again as over three hundred families find themselves displaced by severe flooding. Homes have been submerged, farms washed away, and hundreds of men, women, and children are in desperate need of emergency shelter, clean drinking water, and food supplies.\n\nWhile our immediate appeal goes to the Red Cross and emergency response teams to secure these families, we must confront the uncomfortable truth of governance. Tana River does not flood by surprise. The seasonal patterns are known, early warnings are issued, and public budgets regularly allocate millions toward disaster preparedness and climate adaptation. Yet year after year, the response remains reactive—waiting for villages to sink before dispatching temporary tents and a few bags of maize.\n\nWhere are the permanent dykes? What happened to the promised structured resettlement programs out of the flood plains? Our people cannot remain perpetual victims of poor planning while disaster response funds disappear into bureaucratic pockets. Relief must reach Tana River today, but long-term accountability must follow tomorrow.\n\nKwa ufupi, zaidi ya familia mia tatu katika kaunti ya Tana River zimekosa makao kufuatia mafuriko makali. Wanahitaji hifadhi na chakula cha dharura mara moja. Hata hivyo, viongozi wa kaunti na serikali ya kitaifa lazima wawajibike: mbona hakuna mikakati ya kudumu kuzuia janga hili linalojirudia kila mwaka? Tusikubali uzembe huu uendelee.",
+    "voice_note": "Habari zenu, this is Kenya on Record with an urgent update. In Tana River, over three hundred families are out in the cold after severe floods swept through their villages. They need emergency shelter, clean water, and food assistance immediately. But as we push for rapid relief, we have to demand accountability. Flooding in the lower Tana basin is not a sudden accident—it is a regular, seasonal occurrence. Every financial year, funds are set aside for disaster mitigation and water management, yet our people are still abandoned to rely on emergency handouts when the rains peak. Support must reach the ground right now, but county and national leaders must tell us why long-term flood control projects are never completed. Let's stay vigilant and hold them to account.",
+    "sms": "Usiibiwe: When donating to flood relief, send aid only through verified local leaders or registered Red Cross channels to avoid rogue fundraisers cashing in.",
+    "reels": "Over three hundred families in Tana River are homeless tonight following severe floods. They urgently need shelter and food, but here is the real issue: this crisis happens every single year. Why are we still doing emergency handouts instead of permanent flood mitigation? Disaster budgets must serve the people, not enrich contractors. Immediate relief now, full accountability next."
   },
   "spend_usd": 0.0
 }
