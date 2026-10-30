@@ -1175,13 +1175,78 @@
         "note": "Solid execution on all fronts; maintain sharp focus on the direct taxpayer impact in future iterations."
       },
       "drafted_at": "2026-10-29T14:04:20.356918+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1030",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Parents",
+      "line": "Over *2.5 million learners* have completed national assessments as junior school examinations end.",
+      "fact": "KNEC concluded junior school assessments for 2.5 million candidates before KCSE examinations begin.",
+      "source": "Capital FM News, 2026-10-30",
+      "photo_query": "classroom Kenya",
+      "message": "Over 2.5 million learners completed national assessments as families prepare for senior school placements.",
+      "action": "Track official admission guidelines for senior school on education.go.ke",
+      "caption": "Capital FM News reports: Over 2.5 million learners have finished their national assessments across the country. Attention now shifts to senior school admissions and KCSE examinations. What support does your local school need before term one?\n\n#KJSEA #CBC #KenyaOnRecord",
+      "beats": [
+        "Capital FM News reports: Over *2.5 million learners* completed national assessments.",
+        "KNEC confirmed junior assessments ended as KCSE exams *draw near*.",
+        "Parents now await clear guidelines on senior school *placement* fees.",
+        "Kenyans demand: the Ministry publishes fair *admission rules*."
+      ],
+      "demand": 8,
+      "who": "Education CS Julius Ogamba",
+      "where": "National",
+      "when": "30 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Families face impending senior school transitions, fee structures, and placement decisions.",
+      "bg": "usiku",
+      "publish_at": "2026-10-30T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Over 2.5mn learners take national assessments as KJSEA concludes",
+          "link": "https://capitalfm.africa/over-2-5mn-learners-take-national-assessments-as-kjsea-concludes-focus-shifts-to-kcse/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-30"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "beats[0] is too long: max 12 words / 72 characters"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.8,
+        "note": "Ensure the demand names the specific office responsible for school placements clearly."
+      },
+      "drafted_at": "2026-10-30T09:15:29.664622+03:00"
     }
   ],
   "scripts": {
-    "radio": "Welcome to Kenya on Record. If you own property or pay rent at the end of the month, pay close attention. The Kenya Revenue Authority is quietly closing the net on unpaid residential rental taxes by tapping into everyday utility data. By cross-referencing electricity meters from Kenya Power and water accounts with the Ministry of Lands registry, the taxman is targeting roughly one million landlords currently operating off the books.\n\nFor a long time, the rental sector has run largely on cash, informal receipts, and silence. But digital integration means utility connections tied to your name or property now leave a direct trail. Legally, landlords earning rental income must remit the monthly rental income tax, currently set at seven point five percent. While expanding the tax bracket is legitimate state work, accountability must cut both ways. KRA must avoid arbitrary harassment or inflated assessments, and landlords must resist the urge to pass their historical tax negligence onto tenants through abrupt, unlawful rent increases.\n\nKwa ufupi: Shirika la KRA linafuatilia mita za umeme na maji pamoja na sajili za ardhi ili kuwasaka wamiliki wa nyumba milioni moja wasiolipa kodi ya pango. Wamiliki wanashauriwa kufuata sheria na kulipa asilimia saba nukta tano mapema kabla ya faini. Nao wapangaji, kuweni makini kodi hii isigeuzwe kuwa mzigo wenu kinyume cha mkataba.",
-    "voice_note": "Hey everyone, here is a quick accountability check from Kenya on Record. If you are a landlord or a tenant, this matters to you. KRA is actively pulling utility data—specifically your Kenya Power tokens and water bills—and cross-checking them against land registries. The target? Over one million landlords who haven’t been declaring rental income tax. With that 7.5 percent tax rate on the line, the taxman is moving fast. If you own rentals, verify your iTax filings now before automatic penalties kick in. And if you are renting, know your contract rights. Landlords cannot simply slap you with sudden, illegal rent increments to cover their back taxes. Share this in your neighborhood or family WhatsApp groups so people stay informed.",
-    "sms": "Usiibiwe: KRA is tracking rental income via utility data. Landlords must remit tax; tenants, know your rights—rent cannot be raised without lawful notice.",
-    "reels": "Your electricity meter might just deliver your tax bill. KRA is now matching Kenya Power meters and water registries to land records to track down one million landlords evading rental income tax. The era of running off-the-books rentals is closing fast. Property owners need to regularize their 7.5% compliance before back taxes catch up. And tenants: check your leases, because your landlord's tax bill is not your illegal rent hike."
+    "radio": "Good evening and welcome to Kenya on Record. I am your host.\n\nThis week, we mark a massive milestone in our education calendar. Over two and a half million young Kenyans have completed their national assessments, closing one chapter and looking ahead to the next: senior school placements.\n\nThis transition is critical. It tests not just our children’s readiness, but the integrity of our education system. As parents and guardians, we know the stress that comes with placement season. The worry about school choices, the cost of requirements, and, unfortunately, the emergence of cartels looking to profit from parental anxiety.\n\nLet us be clear and vigilant: no parent should be asked to pay an unofficial facilitation fee to secure a legitimate senior school slot. Placement must remain strictly merit-based, transparent, and fair, regardless of whether a child comes from a remote rural village or an urban center. We must hold the Ministry of Education accountable for a seamless and transparent process.\n\nKwa ufupi: Zaidi ya wanafunzi milioni mbili nukta tano wamekamilisha tathmini zao za kitaifa huku wazazi wakijiandaa kwa mchakato wa kujiunga na shule za upili. Kuweni macho msimu huu. Hakuna afisa anayefaa kuitisha hongo ili kumpa mwanao nafasi ya shule. Tusiruhusu matapeli watumie hofu zetu kutuibia. Haki ya mtoto wako inatokana na bidii yake, siyo mlungula.\n\nVerify every admission letter through official school channels and report extortion immediately. Until next time, stay informed.",
+    "voice_note": "Hujambo, this is Kenya on Record. Over 2.5 million of our children have just finished their national assessments, marking a major milestone under the ongoing curriculum transition. But as families prepare for Senior School placements, an old problem threatens to rear its head: admission exploitation.\n\nEvery year around this time, desperate parents fall prey to middlemen promising guaranteed slots in prestigious schools for a cash fee. Let’s protect one another. Placements are managed through official Ministry systems. Do not pay a single shilling under the table to secure a space.\n\nIf someone calls asking for facilitation money or claiming they have special access at Jogoo House, flag it. Let’s hold our school heads and education officials accountable. Our children’s hard work shouldn’t be auctioned off. Share this with a parent who needs the reminder today.",
+    "sms": "Usiibiwe: Senior school placement is done via official Ministry channels. Do not pay anyone claiming they can alter your child's placement or school slot.",
+    "reels": "Over 2.5 million learners across Kenya have just completed their national assessments. For parents and guardians, the real anxiety begins now: the transition to Senior School. We already know how this season goes—brokers emerge, promising elite slots for a fee. Let's be clear: placement integrity is a test for the Ministry of Education. Watch out for scams, keep your records straight, and demand fairness for every child."
   },
   "spend_usd": 0.0
 }
