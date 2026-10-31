@@ -359,7 +359,7 @@ class Report:
 def _all_text(post: dict) -> str:
     parts = []
     for k, v in post.items():
-        if k in {"id", "template", "bg", "size", "expr", "seed", "status", "source", "publish_at", "platforms", "trend", "lane", "guard"}:
+        if k in {"id", "template", "bg", "size", "expr", "seed", "status", "source", "publish_at", "platforms", "trend", "lane", "guard", "avoid"}:
             continue
         if isinstance(v, str):
             parts.append(v)

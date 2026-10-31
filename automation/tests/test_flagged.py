@@ -36,6 +36,12 @@ class Flagged(unittest.TestCase):
         bad = {**POST, "guard": {"errors": ["use <b> & 'x'"], "warnings": []}}
         self.assertIn("&lt;b&gt;", pipeline._preview_text(bad))
 
+    def test_the_stories_to_avoid_are_not_checked_as_the_posts_own_words(self):
+        import guard
+        text = guard._all_text({"message": "Fuel prices rise.", "avoid": ["Twelve motorists arrested for drunk driving"]})
+        self.assertNotIn("drunk", text)
+        self.assertIn("Fuel prices", text)
+
 
 if __name__ == "__main__":
     unittest.main()
