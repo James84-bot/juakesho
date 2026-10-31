@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-10-31T09:57:05.270451+00:00",
+  "fetched": "2026-10-31T11:13:38.841235+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "university staff pay deal kenya",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "What lecturers will earn under new Sh20bn deal",
+          "url": "https://nation.africa/kenya/news/education/what-lecturers-will-earn-under-new-sh20bn-deal-5653004",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "University unions call off nationwide strike after Sh20 billion deal",
+          "url": "https://eastleighvoice.co.ke/education/418255/lectures-set-to-resume-as-university-unions-end-strike-after-sh20-billion-deal",
+          "source": "The Eastleigh Voice"
+        },
+        {
+          "title": "How University Lecturers And Professors Will Earn More Under New UASU Salary Deal",
+          "url": "https://www.kenyans.live/news/news/how-university-lecturers-and-professors-will-earn-more-under-new-uasu-salary-dea--business-today-kenya_158513",
+          "source": "www.kenyans.live"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "absa",
@@ -48,8 +70,96 @@
     },
     {
       "geo": "KE",
-      "title": "linda mwananchi movement",
+      "title": "drunk driving",
       "traffic": "200+",
+      "news": [
+        {
+          "title": "NTSA arrests 12 drivers in Meru, records shocking alcohol levels",
+          "url": "https://www.the-star.co.ke/news/2026-10-31-ntsa-night-crackdown-in-meru-nets-12-drivers",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "NTSA Exposes New Scam Targeting Drivers Amid Ongoing Crackdown",
+          "url": "https://www.kenyans.co.ke/news/128998-ntsa-issues-warning-motorists-over-fake-traffic-offence-notices",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "NTSA impounds 13 vehicles in Southern Bypass crackdown",
+          "url": "https://www.standardmedia.co.ke/national/article/2001561107/ntsa-impounds-13-vehicles-in-southern-bypass-crackdown",
+          "source": "The Standard"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "jamie carragher",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Jamie Carragher sued: Aston Villa to take legal action against pundit over 'unacceptable insults'",
+          "url": "https://www.bbc.com/sport/football/articles/cqd09p3kppyvo",
+          "source": "BBC"
+        },
+        {
+          "title": "Aston Villa to take legal action against Jamie Carragher for ‘unacceptable insults’",
+          "url": "https://www.theguardian.com/football/2026/oct/30/aston-villa-to-take-legal-action-against-jamie-carragher-for-unacceptable-insults",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Liverpool legend Jamie Carragher apologises for foul-mouthed Aston Villa rant as club threatens legal action",
+          "url": "https://www.goal.com/en-ke/news/liverpool-jamie-carragher-clarifies-aston-villa-insults-legal-action/blt2a073f25b5eb03a0",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ac milan vs inter milan",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "AC Milan v Inter and the tale of an iconic image",
+          "url": "https://www.bbc.com/sport/football/articles/cq99zlpzm87ro",
+          "source": "BBC"
+        },
+        {
+          "title": "Manuel Akanji issues Inter warning ahead of Milan derby as Nerazzurri eye massive Scudetto advantage",
+          "url": "https://www.goal.com/en-ke/news/manuel-akanji-inter-ac-milan-derby/blt039dc285b1905897",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Milan derby tips: AC Milan vs Inter predictions, best bets & preview",
+          "url": "https://www.sportinglife.com/football/news/milan-derby-tips-ac-milan-vs-inter-predictions-best-bets-and-preview/235122",
+          "source": "Sporting Life"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "levante vs atletico madrid prediction",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Levante vs Atletico Madrid: Spanish La Liga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cxj0ldmj9q5mt",
+          "source": "BBC"
+        },
+        {
+          "title": "Levante vs Atletico Madrid: How to watch, live stream, TV channel and kick-off time",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-levante-v-atletico-madrid/blt6c36985c86e6d596",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Simeone still without Koke and Cardoso ahead of Levante clash 🤕",
+          "url": "https://onefootball.com/en/news/simeone-still-without-koke-and-cardoso-ahead-of-levante-clash-43696540",
+          "source": "OneFootball"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "linda mwananchi movement",
+      "traffic": "100+",
       "news": [
         {
           "title": "Kalonzo versus Sifuna: A generational battle in Kenya’s opposition building up",
@@ -67,79 +177,9 @@
           "source": "The Star, Kenya"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "peacekeeping",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Competing US, Russia resolutions on Western Sahara defeated in UN Security Council",
-          "url": "https://www.reuters.com/world/russia-vetos-us-drafted-resolution-western-sahara-2026-10-30/",
-          "source": "Reuters"
-        },
-        {
-          "title": "Rival US and Russian resolutions on Western Sahara fail at UN",
-          "url": "https://www.aljazeera.com/news/2026/10/31/rival-us-and-russian-resolutions-on-western-sahara-fail-at-un",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": "UN Peace Mission to Western Sahara Hits Unprecedented Standoff",
-          "url": "https://www.bloomberg.com/news/articles/2026-10-30/un-peace-mission-to-western-sahara-hits-unprecedented-standoff",
-          "source": "Bloomberg"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "cole palmer",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Xabi Alonso confirms Chelsea team news for Manchester United | News | Official Site",
-          "url": "https://www.chelseafc.com/en/news/article/xabi-alonso-confirms-chelsea-team-news-for-manchester-united",
-          "source": "Chelsea Football Club"
-        },
-        {
-          "title": "Fears Chelsea's Lacroix could be out until January",
-          "url": "https://www.bbc.com/sport/football/articles/cmkgkpexjzneo",
-          "source": "BBC"
-        },
-        {
-          "title": "Predicted Chelsea XI vs Man Utd as Xabi Alonso makes Cole Palmer and Estevao Willian decisions",
-          "url": "https://www.football.london/chelsea-fc/news/predicted-chelsea-xi-vs-man-34838511",
-          "source": "Football London"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "jamie carragher",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Jamie Carragher sued: Aston Villa to take legal action against pundit over 'unacceptable insults'",
-          "url": "https://www.bbc.com/sport/football/articles/cqd09p3kppyvo",
-          "source": "BBC"
-        },
-        {
-          "title": "Aston Villa to take legal action against Jamie Carragher for ‘unacceptable insults’",
-          "url": "https://www.theguardian.com/football/2026/oct/30/aston-villa-to-take-legal-action-against-jamie-carragher-for-unacceptable-insults",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Ashton Villa to sue former Liverpool player over ‘Villa will never be Manchester United’ comments",
-          "url": "https://indianexpress.com/article/sports/football/ashton-villa-liverpool-unai-emry-manchester-united-10944811/",
-          "source": "The Indian Express"
-        }
-      ]
     }
   ],
   "dropped": [
-    {
-      "title": "ac milan vs inter milan",
-      "why": "unsafe: 'Bet'"
-    },
     {
       "title": "tottenham vs crystal palace",
       "why": "unsafe: 'Betting'"
@@ -147,10 +187,6 @@
     {
       "title": "brentford vs nottm forest",
       "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "aston villa vs fulham",
-      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}
