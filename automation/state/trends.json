@@ -1,120 +1,54 @@
 {
-  "fetched": "2026-10-31T16:51:25.654893+00:00",
+  "fetched": "2026-10-31T17:39:30.401262+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "man city",
-      "traffic": "10000+",
-      "news": [
-        {
-          "title": "Premier League: Brighton lead Man City, Coventry, Brentford and Bournemouth in front",
-          "url": "https://www.bbc.com/sport/football/live/cm2l8lx5k1zvt",
-          "source": "BBC"
-        },
-        {
-          "title": "B'mouth vs Leeds LIVE! Premier League match updates, news and score",
-          "url": "https://www.skysports.com/football/live-blog/13606127/bournemouth-vs-leeds-live-premier-league-match-updates-news-and-score",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Daniel Farke shares latest news on Nico Elvedi, Dominic Calvert-Lewin & Joe Rodon",
-          "url": "https://www.leedsunited.com/en/news/daniel-farke-shares-latest-news-on-nico-elvedi-dominic-calvert-lewin-and-joe-rodon",
-          "source": "Leeds United | Official Website - Leeds United"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "sunderland",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Coventry vs Sunderland LIVE! Premier League match updates, news and score",
-          "url": "https://www.skysports.com/football/live-blog/13604898/coventry-vs-sunderland-live-premier-league-match-updates-news-and-score",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Coventry vs Sunderland predictions: Chris Sutton on Premier League game",
-          "url": "https://www.bbc.com/sport/football/articles/c804029rk45xo",
-          "source": "BBC"
-        },
-        {
-          "title": "Tatsuhiro Sakamoto blasts Coventry City ahead of Sunderland",
-          "url": "https://www.nbcsports.com/watch/watch/premier-league/tatsuhiro-sakamoto-blasts-coventry-city-ahead-of-sunderland",
-          "source": "NBC Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "udinese vs roma",
+      "title": "table premier league",
       "traffic": "200+",
       "news": [
         {
-          "title": "Udinese vs Roma: Italian Serie A stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cm89zkevgj8gt",
-          "source": "BBC"
+          "title": "The Expected Premier League Table MD9: Shots from open-play crosses – Man Utd have them, but Chelsea don’t",
+          "url": "https://www.nytimes.com/athletic/7732371/2026/10/29/expected-premier-league-table-crosses/",
+          "source": "The New York Times"
         },
         {
-          "title": "The giallorossi squad for Udinese v Roma",
-          "url": "https://www.asroma.com/en/news/76156/the-giallorossi-squad-for-udinese-v-roma",
-          "source": "AS Roma"
+          "title": "The Expected Premier League Table MD8: xPts – Arsenal above City, Spurs above Chelsea, Forest hard done by?",
+          "url": "https://www.nytimes.com/athletic/7710254/2026/10/22/expected-premier-league-table-md8-expected-points/",
+          "source": "The New York Times"
         },
         {
-          "title": "Udinese threaten Roma's wolves with a feat not achieved in 28 years",
-          "url": "https://www.goal.com/en/news/udinese-threaten-roma-with-a-feat-not-achieved-in-28-years/blte03ad896370b950c",
-          "source": "Goal.com"
+          "title": "Final Premier League table revealed by supercomputer after Man Utd drop points again in worst start to season ever",
+          "url": "https://www.thesun.co.uk/sport/40733894/premier-league-table-revealed-by-supercomputer/",
+          "source": "The Sun"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "health care",
+      "title": "betis vs málaga",
       "traffic": "200+",
       "news": [
         {
-          "title": "Health insurance open enrollment: 5 things to review before choosing a plan",
-          "url": "https://www.foxbusiness.com/economy/health-insurance-open-enrollment-5-things-review-before-choosing-plan",
-          "source": "Fox Business"
+          "title": "🚨XIs confirmados: Emotivo derbi andaluz en La Cartuja",
+          "url": "https://es-us.noticias.yahoo.com/deportes/xis-confirmados-emotivo-derbi-andaluz-164000658.html",
+          "source": "Yahoo"
         },
         {
-          "title": "How to choose the right health insurance plan for 2027",
-          "url": "https://www.kcci.com/article/how-to-choose-the-right-health-insurance-plan-for-2027/74285525",
-          "source": "KCCI"
+          "title": "Pellegrini hace 6 cambios, con Parrott en punta; y Calero por Recio, el único en el Málaga",
+          "url": "https://www.infobae.com/espana/agencias/2026/10/31/pellegrini-hace-6-cambios-con-parrott-en-punta-y-calero-por-recio-el-unico-en-el-malaga/",
+          "source": "Infobae"
         },
         {
-          "title": "9 Things to Watch for the 2027 ACA Open Enrollment Period",
-          "url": "https://www.kff.org/affordable-care-act/9-things-to-watch-for-the-2027-aca-open-enrollment-period/",
-          "source": "KFF"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "yasin ayari",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Chelsea ready raid for ANOTHER Brighton star as crucial contract negotiations stall",
-          "url": "https://www.teamtalk.com/chelsea/yasin-ayari-update-contract-talks-stall-chelsea-move-raid-brighton",
-          "source": "TEAMtalk"
-        },
-        {
-          "title": "Football gossip: Ayari, Mac Allister, Manzambi, Beljo, Gyokeres, Vinicius Jr",
-          "url": "https://www.bbc.com/sport/football/articles/cme3xk2jkyv0o",
-          "source": "BBC"
-        },
-        {
-          "title": "Update In Newcastle United’s Chase For This €50m Midfielder: Should Jaissle Push For A Deal?",
-          "url": "https://sports.yahoo.com/articles/newcastle-united-chase-50m-midfielder-200500321.html",
-          "source": "Yahoo Sports"
+          "title": "Sigue EN DIRECTO el Málaga CF vs Real Sociedad",
+          "url": "https://www.merchanendirecto.es/directo-real-betis-malaga-cf-2/",
+          "source": "Radio Marca Málaga"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "ntsa warning fake traffic notices",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "NTSA arrests 12 drivers in Meru, records shocking alcohol levels",
@@ -135,75 +69,124 @@
     },
     {
       "geo": "KE",
-      "title": "man city games",
+      "title": "feyenoord fc",
       "traffic": "100+",
       "news": [
         {
-          "title": "Coventry City vs Sunderland: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/ck7vpjr37devt",
-          "source": "BBC"
+          "title": "Buijs erupts in anger against Feyenoord and audibly shouts 4 words at one man",
+          "url": "https://www.goal.com/en/news/buijs-erupts-in-anger-against-feyenoord-and-audibly-shouts-4-words-at-one-man/blt45123a791c371bce",
+          "source": "Goal.com"
         },
         {
-          "title": "Aston Villa vs Fulham: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cq0ldj4pnz10t",
-          "source": "BBC"
+          "title": "Buijs erupts in fury at Feyenoord and audibly shouts 4 words at one man",
+          "url": "https://www.goal.com/en/news/buijs-erupts-in-anger-against-feyenoord-and-shouts-4-words-at-one-man-loud-enough-to-be-heard/blt45123a791c371bce",
+          "source": "Goal.com"
         },
         {
-          "title": "Manchester City vs Brighton - Premier League: Yasin Ayari puts visitors ahead - plus updates from all the...",
-          "url": "https://www.dailymail.com/sport/football/article-16249173/Chelsea-vs-Manchester-United-Premier-League-LIVE.html",
-          "source": "Daily Mail"
+          "title": "Buijs erupts in anger against Feyenoord and can be heard shouting four words at one man",
+          "url": "https://www.goal.com/en/news/buijs-explodes-with-rage-against-feyenoord-and-audibly-shouts-4-words-at-one-man/blt45123a791c371bce",
+          "source": "Goal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "west ham",
+      "title": "fenerbahçe vs göztepe",
       "traffic": "100+",
       "news": [
         {
-          "title": "West Ham vs West Brom LIVE! Championship match updates, score and free highlights at 5.15pm",
-          "url": "https://www.skysports.com/football/live-blog/13605475/stoke-city-vs-preston-live-championship-match-updates-score-stream-and-free-highlights",
-          "source": "Sky Sports"
+          "title": "Dirk Kuyt'tan Greenwood açıklaması: 'Grip olduğu için oynayamayacak'",
+          "url": "https://www.yenicaggazetesi.com/dirk-kuyttan-greenwood-aciklamasi-grip-oldugu-icin-oynayamayacak-1086891h.htm",
+          "source": "Yeniçağ Gazetesi"
         },
         {
-          "title": "West Ham United mark Remembrance Day",
-          "url": "https://www.whufc.com/en/news/west-ham-united-mark-remembrance-day",
-          "source": "West Ham United"
+          "title": "#$%~[Canlı+İzle]TV!] Göztepe Fenerbahçe Canlı Ücretsiz Şampiyonlar Ligi Maçı TV'de 09 Eylül 2026",
+          "url": "https://www.portofrotterdam.com/sites/default/files/uploads/360panorama/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vbGVvZ29hdHMuZ2l0aHViLmlvL2JmLmVkdS91am0ueG1sIi8+PC9rcnBhbm8+&id=video-goztepe-fenerbahce-match-lie-pshdbng",
+          "source": "Port of Rotterdam"
         },
         {
-          "title": "West Ham United v West Bromwich Albion: Championship stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cq8jzx1yenr3t",
-          "source": "BBC"
+          "title": "Fenerbahçe - Göztepe Karşılaşması Öncesi Sarı-Lacivertlilerde Son Durum! | Kadıköy’de Kritik Randevu - Aspor",
+          "url": "https://www.aspor.com.tr/video/program/aspor/fenerbahce-goztepe-karsilasmasi-oncesi-sari-lacivertlilerde-son-durum-kadikoyde-kritik-randevu",
+          "source": "A Spor"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "feyenoord vs fortuna sittard",
+      "title": "table",
       "traffic": "100+",
       "news": [
         {
-          "title": "LIVE Eredivisie | Deel Feyenoord-fans juicht per abuis na enorme kans Gjivai Zechiël",
-          "url": "https://www.telegraaf.nl/sport/voetbal/live-eredivisie-deel-feyenoord-fans-juicht-per-abuis-na-enorme-kans-gjivai-zechiel/163891809.html",
-          "source": "De Telegraaf"
+          "title": "Major League Table Tennis to expand by two teams",
+          "url": "https://www.sportsbusinessjournal.com/Articles/2026/10/30/major-league-table-tennis-to-expand-by-two-teams/",
+          "source": "Sports Business Journal"
         },
         {
-          "title": "Van Bronckhorst over balans in het elftal tegen Fortuna: \"Dat moeten zij wel bewaken\"",
-          "url": "https://www.fr12.nl/nieuws/van-bronckhorst-over-balans-in-het-elftal-tegen-fortuna-dat-moeten-zij-wel-bewaken",
-          "source": "FR12.nl"
+          "title": "Table tennis good way to bridge cultures between Germany, China: Timo Boll",
+          "url": "https://www.bastillepost.com/global/article/6311153-table-tennis-good-way-to-bridge-cultures-between-germany-china-timo-boll",
+          "source": "巴士的報"
         },
         {
-          "title": "Fortuna houdt stand tegen koploper Feyenoord: 0-0 • Straks PSV-Willem II",
-          "url": "https://nos.nl/liveblog/2637450-fortuna-houdt-stand-tegen-koploper-feyenoord-0-0-straks-psv-willem-ii",
-          "source": "NOS"
+          "title": "Nina GUO ZHENG (FRA) stays cool in bid for Dakar 2026 table tennis medal",
+          "url": "https://www.olympics.com/en/dakar-2026/olympic-information-service/nina-guo-zheng-fra-stays-cool-in-bid-for-dakar-2026-table-tennis-medal",
+          "source": "www.olympics.com"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "table premier league 2026",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Chris Sutton predicts more Everton misery for Newcastle at St James' Park",
+          "url": "https://nufcblog.co.uk/chris-sutton-predicts-more-everton-misery-for-newcastle-at-st-james-park-43344",
+          "source": "NUFC Blog"
+        },
+        {
+          "title": "Looking at the Premier League table, is this really disaster for Newcastle United?",
+          "url": "https://www.themag.co.uk/2026/10/looking-at-the-premier-league-table-is-this-really-disaster-for-newcastle-united/",
+          "source": "The Mag"
+        },
+        {
+          "title": "Newcastle United 13th in Premier League Form Table",
+          "url": "https://www.nufcblog.com/post/newcastle-united-premier-league-form-table-everton",
+          "source": "www.nufcblog.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "hull city",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Hull City - Ipswich Maçı Tahmini: Zirve Yarışında Sürpriz Nokta",
+          "url": "https://www.vietnam.vn/tr/nhan-dinh-hull-city-vs-ipswich-diem-nong-cuoc-dua-top-dau",
+          "source": "Vietnam.vn"
+        },
+        {
+          "title": "ÖZET | Müthiş gol Hull City'e yetmedi!",
+          "url": "https://www.beinsports.com.tr/haber/ozet-muthis-gol-hull-citye-yetmedi",
+          "source": "beinsports.com.tr"
+        },
+        {
+          "title": "CANLI GOL | Hull City 0-1 Ipswich Town - Florentino (22. dakika)",
+          "url": "https://www.canligaste.com/canli-gol-hull-city-0-1-ipswich-town-florentino-22-dakika/939989/",
+          "source": "Canlı Gaste"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "leicester city vs stevenage",
-      "why": "unsafe: 'Betting'"
+      "title": "scandal",
+      "why": "unsafe: 'scandal'"
+    },
+    {
+      "title": "spurs vs palace",
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
