@@ -1,6 +1,51 @@
 {
-  "fetched": "2026-10-31T11:13:38.841235+00:00",
+  "fetched": "2026-10-31T11:54:43.220649+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "chelsea vs man utd",
+      "traffic": "20000+",
+      "news": [
+        {
+          "title": "Confirmed Chelsea line up vs Manchester United | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-line-up-vs-manchester-united-oct-26",
+          "source": "Chelsea Football Club"
+        },
+        {
+          "title": "Chelsea vs Man Utd LIVE! Premier League match updates, news and score",
+          "url": "https://www.skysports.com/football/live-blog/13604875/chelsea-vs-man-utd-live-premier-league-match-updates-news-and-score",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Chelsea vs Manchester United: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6z7xglw0ewzt",
+          "source": "BBC"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kenya defence forces",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Why KDF was blocked from Supreme Court appeal over Sh25m award",
+          "url": "https://nation.africa/kenya/news/why-kdf-was-blocked-from-supreme-court-appeal-over-sh25m-award-5649558",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Former KDF soldier awarded Sh25m for unfair dismissal",
+          "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001561016/former-kdf-soldier-awarded-sh25m-for-unfair-dismissal",
+          "source": "The Standard"
+        },
+        {
+          "title": "Kenya Defence Forces (KDF) Medical Specialists Bring Advanced Medical Care Closer to Dhobley Community",
+          "url": "https://africa.com/apo/kenya-defence-forces-kdf-medical-specialists-bring-advanced-medical-care-closer-to-dhobley-community",
+          "source": "Africa.com"
+        }
+      ],
+      "civic": true
+    },
     {
       "geo": "KE",
       "title": "university staff pay deal kenya",
@@ -25,48 +70,25 @@
     },
     {
       "geo": "KE",
-      "title": "absa",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Absa Raids Safaricom Again, Poaches M-PESA Executive",
-          "url": "https://thekenyatimes.com/business/absa-raids-safaricom-again-poaches-m-pesa-executive/",
-          "source": "The Kenya Times"
-        },
-        {
-          "title": "Naima Yusuf Moves From M-Pesa to Absa Group",
-          "url": "https://khusoko.com/2026/10/28/naima-yusuf-joins-absa-group-from-m-pesa/",
-          "source": "Khusoko"
-        },
-        {
-          "title": "Absa Group appoints Safaricom’s Naima Yusuf as Executive Head of Absa Pay",
-          "url": "https://www.pulse.co.ke/story/absa-group-appoints-safaricoms-naima-yusuf-as-executive-head-of-absa-pay-2026102910121306218",
-          "source": "Pulse Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya defence forces",
+      "title": "ac milan vs inter milan",
       "traffic": "500+",
       "news": [
         {
-          "title": "Why KDF was blocked from Supreme Court appeal over Sh25m award",
-          "url": "https://nation.africa/kenya/news/why-kdf-was-blocked-from-supreme-court-appeal-over-sh25m-award-5649558",
-          "source": "Daily Nation"
+          "title": "AC Milan v Inter and the tale of an iconic image",
+          "url": "https://www.bbc.com/sport/football/articles/cq99zlpzm87ro",
+          "source": "BBC"
         },
         {
-          "title": "Former KDF soldier awarded Sh25m for unfair dismissal",
-          "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001561016/former-kdf-soldier-awarded-sh25m-for-unfair-dismissal",
-          "source": "The Standard"
+          "title": "Manuel Akanji issues Inter warning ahead of Milan derby as Nerazzurri eye massive Scudetto advantage",
+          "url": "https://www.goal.com/en-ke/news/manuel-akanji-inter-ac-milan-derby/blt039dc285b1905897",
+          "source": "Goal.com"
         },
         {
-          "title": "Kenya Defence Forces (KDF) Medical Specialists Bring Advanced Medical Care Closer to Dhobley Community",
-          "url": "https://africa.com/apo/kenya-defence-forces-kdf-medical-specialists-bring-advanced-medical-care-closer-to-dhobley-community",
-          "source": "Africa.com"
+          "title": "Milan derby tips: AC Milan vs Inter predictions, best bets & preview",
+          "url": "https://www.sportinglife.com/football/news/milan-derby-tips-ac-milan-vs-inter-predictions-best-bets-and-preview/235122",
+          "source": "Sporting Life"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
@@ -114,23 +136,23 @@
     },
     {
       "geo": "KE",
-      "title": "ac milan vs inter milan",
-      "traffic": "200+",
+      "title": "currency",
+      "traffic": "100+",
       "news": [
         {
-          "title": "AC Milan v Inter and the tale of an iconic image",
-          "url": "https://www.bbc.com/sport/football/articles/cq99zlpzm87ro",
-          "source": "BBC"
+          "title": "CBK Reveals How Kenyan Shilling Is Performing Against Dollar As Global Oil Prices Rise",
+          "url": "https://thekenyatimes.com/business/cbk-reveals-how-kenyan-shilling-is-performing-against-dollar-as-global-oil-prices-rise/",
+          "source": "The Kenya Times"
         },
         {
-          "title": "Manuel Akanji issues Inter warning ahead of Milan derby as Nerazzurri eye massive Scudetto advantage",
-          "url": "https://www.goal.com/en-ke/news/manuel-akanji-inter-ac-milan-derby/blt039dc285b1905897",
-          "source": "Goal.com"
+          "title": "Kenyan Shilling Continues to Weaken Against US Dollar, CBK Reveals Exchange Rate",
+          "url": "https://www.tuko.co.ke/business-economy/economy/645131-kenyan-shilling-continues-weaken-dollar-cbk-reveals-exchange-rate/",
+          "source": "Tuko News"
         },
         {
-          "title": "Milan derby tips: AC Milan vs Inter predictions, best bets & preview",
-          "url": "https://www.sportinglife.com/football/news/milan-derby-tips-ac-milan-vs-inter-predictions-best-bets-and-preview/235122",
-          "source": "Sporting Life"
+          "title": "How Kenyan Shilling Is Performing Against EAC Currencies After Slight Depreciation Against US Dollar",
+          "url": "https://www.tuko.co.ke/business-economy/economy/645163-how-kenyan-shilling-performing-eac-currencies-slight-depreciation-dollar/",
+          "source": "Tuko News"
         }
       ]
     },
@@ -158,23 +180,23 @@
     },
     {
       "geo": "KE",
-      "title": "linda mwananchi movement",
+      "title": "enzo fernández",
       "traffic": "100+",
       "news": [
         {
-          "title": "Kalonzo versus Sifuna: A generational battle in Kenya’s opposition building up",
-          "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/kalonzo-versus-sifuna-a-generational-battle-5652844",
-          "source": "The EastAfrican"
+          "title": "La autocrítica de Enzo Fernández por la expulsión en la final: \"Es una espina que tengo clavada\"",
+          "url": "https://www.marca.com/futbol/mundial/2026/10/30/autocritica-enzo-fernandez-expulsion-final-espina-clavada.html",
+          "source": "MARCA"
         },
         {
-          "title": "From Raila to Matiang’i and now Sifuna: Richard Onyonka’s political acrobatics",
-          "url": "https://nation.africa/kenya/news/politics/raila-to-matiang-i-sifuna-richard-onyonka-political-acrobatics-5652662",
-          "source": "Daily Nation"
+          "title": "Enzo Fernández opinó sobre su nivel en el Mundial 2026 con la Selección argentina: \"No me sentía bien\"",
+          "url": "https://www.ambito.com/deportes/enzo-fernandez-opino-su-nivel-el-mundial-2026-la-seleccion-argentina-no-me-sentia-bien-n6339883",
+          "source": "Ambito"
         },
         {
-          "title": "Sifuna, Natembeya handed top roles as Linda Mwananchi unveils leadership",
-          "url": "https://www.the-star.co.ke/news/2026-10-31-linda-mwananchi-unveils-leadership-team",
-          "source": "The Star, Kenya"
+          "title": "Enzo Fernandez rompió el silencio sobre la final con España: su expulsión, la arenga de Messi y más",
+          "url": "https://www.mdzol.com/deportes/2026/10/29/enzo-fernandez-rompio-el-silencio-sobre-la-final-con-espana-su-expulsion-la-arenga-de-messi-y-mas-1991763.html",
+          "source": "MDZ Online"
         }
       ]
     }
@@ -182,11 +204,7 @@
   "dropped": [
     {
       "title": "tottenham vs crystal palace",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "brentford vs nottm forest",
-      "why": "unsafe: 'Betting'"
+      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}
