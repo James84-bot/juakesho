@@ -1109,13 +1109,17 @@ def elevate(week_label: str, slots: list[dict], lanes: dict, posts: list[dict]) 
             p["critic"] = scores[p["id"]]
             # weak content is not our way: still under the floor after a rewrite, it never reaches your phone
             if scores[p["id"]]["avg"] < WEAK_FLOOR and p.get("status") == "drafted":
-                p["status"] = "needs_human"
                 p.setdefault("guard", {"errors": [], "warnings": []})["errors"] = (
                     p.get("guard", {}).get("errors", []) + [f"weak: editor scored {scores[p['id']]['avg']}/10. {scores[p['id']]['note']}"])
     return posts
 
 
 REPAIR_ROUNDS = 3
+
+
+def has_content(p: dict) -> bool:
+    """True when the writer produced something the owner can read and judge."""
+    return bool(p.get("message") or p.get("line") or p.get("headline") or p.get("beats") or p.get("caption"))
 
 
 def repair(week_label: str, slots: list[dict], lanes: dict, posts: list[dict], reports: list) -> tuple[list, list]:
@@ -1235,7 +1239,10 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
         posts, reports = repair(week_label, slots, lanes, posts, reports)
 
     for p, r in zip(posts, reports):
-        p["status"] = "drafted" if r.ok else "needs_human"
+        # a post that fails a check still goes to Telegram, marked with what failed, for the owner to decide;
+        # auto-approval never takes it (auto_ok refuses any post with guard errors). Only a slot with nothing
+        # written at all stays needs_human.
+        p["status"] = "drafted" if (r.ok or has_content(p)) else "needs_human"
         p["guard"] = {"errors": r.errors, "warnings": r.warnings}
     if not mock:
         posts = elevate(week_label, slots, lanes, posts)

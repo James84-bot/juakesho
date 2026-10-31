@@ -916,6 +916,9 @@ def _preview_text(p: dict) -> str:
         b = p["breaking"]
         lines = [f"🔴 <b>BREAKING</b>: {esc(b['title'][:120])} ({esc(', '.join(b['outlets'][:4]))}). "
                  "Approve now and it goes out within minutes."] + lines
+    errs = (p.get("guard") or {}).get("errors") or []
+    if errs:   # it failed our checks: it is here because you decide, never because it passed
+        lines += ["⛔ <b>Did not pass our checks. Approve only if you are sure:</b>"] + [f"• {esc(str(e)[:170])}" for e in errs[:4]]
     if p.get("message"):
         lines += [f"🎯 <i>{esc(p['message'])}</i>" + (f"  ({esc(p['symbol'])})" if p.get("symbol") else "")]
     if p.get("impact"):
