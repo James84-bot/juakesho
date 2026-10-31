@@ -1483,7 +1483,7 @@
           "published": "2026-10-31"
         }
       ],
-      "status": "awaiting",
+      "status": "rejected",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1513,7 +1513,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Minister_Maritime_Ali_Haider_Zaidi_chairs_meeting_on_Blue_Economy._Federal_Secretary_Rizwan_Ahmed,_Vice_Chief_of_Naval_Staff_Admiral_Kaleem_Shaukat_and_other_senior_officers_attend_the_meeting.jpg",
       "reel": true,
-      "tg_msg": 671
+      "tg_msg": 671,
+      "decided_at": "2026-10-31T19:57:28.212923+03:00"
     },
     {
       "id": "2026-w44-hot-1031m-r2",
