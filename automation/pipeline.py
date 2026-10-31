@@ -475,6 +475,44 @@ def _next_rev(pid: str) -> str:
     return f"{m.group(1)}-r{int(m.group(2)) + 1}" if m else f"{pid}-r2"
 
 
+HOT_RETRIES = 2   # extra attempts per held news post, so one rejected draft does not cost the whole slot
+
+
+def _revision(pid: str) -> int:
+    m = re.match(r"^.*-r(\d+)$", pid)
+    return int(m.group(1)) - 1 if m else 0
+
+
+def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> list[str]:
+    """A news post that was held (a check failed, or the editor found the story weak) used to block its slot all day,
+    which once meant four days without a post. Now a held post from today is closed and replaced by a fresh draft on
+    a different story, up to `tries` times. Returns the ids of the replacements."""
+    made = []
+    for _ in range(tries):
+        data = load_week(label)
+        today = now().date().isoformat()
+        held = [p for p in data["posts"] if p.get("hot") and not p.get("breaking") and p["status"] == "needs_human"
+                and not p.get("replaced_by") and str(p.get("drafted_at", ""))[:10] == today
+                and _revision(p["id"]) < tries]
+        if not held:
+            break
+        for p in held:
+            story = str(p.get("message") or p.get("line") or "")[:120]
+            new = {k: v for k, v in p.items() if k in PLAN_KEYS | {"beat"}}
+            new["id"] = _next_rev(p["id"])
+            new["status"] = "planned"
+            new["avoid"] = [x for x in [*(p.get("avoid") or []), story] if x]
+            slot = dt.datetime.fromisoformat(p["publish_at"])
+            new["publish_at"] = max(slot, now() + dt.timedelta(minutes=20)).replace(second=0, microsecond=0).isoformat()
+            p["status"], p["replaced_by"] = "rejected", new["id"]
+            data["posts"].append(new)
+            made.append(new["id"])
+        save_week(data)
+        log(f"held news post replaced: {made[-len(held):]}")
+        draft(label, mock=mock, horizon=None)
+    return made
+
+
 def remake(label: str, replace_approved: bool = False) -> list[str]:
     """Re-plans the rest of the week from the CURRENT calendar and drafts it from scratch with the current rules.
     Kept: published, approved and hand-posted posts, hot posts and Tazama Hii clips. Everything else still waiting
@@ -1942,7 +1980,16 @@ def _main(argv: list[str] | None = None) -> int:
         label = hot_slot(a.mock, edition="breaking" if a.breaking else "morning" if a.morning
                          else "evening" if a.evening else "midday")
         if not label:
-            return 0
+            # nothing new to plan, but a post held earlier today may still need a replacement
+            label = current_week_label(ahead=0)
+            replaced = []
+            if not (a.mock or a.dry_run or a.breaking) and week_file(label).exists():
+                try:
+                    replaced = retry_held_hot(label)
+                except Exception as e:
+                    log(f"retry of held news posts skipped: {e}")
+            if not replaced:
+                return 0
     if a.command == "tracker":   # next week as a Development Tracker batch, drafted and sent now
         label = a.week or current_week_label(ahead=1)
         if not tracker(label):
@@ -1972,6 +2019,11 @@ def _main(argv: list[str] | None = None) -> int:
     if a.command in {"week", "tracker", "hot", "redo", "draft", "remake", "renew"}:
         # only the weekly run writes ahead in two halves; a batch you asked for, a redo or today's post is written now
         draft(label, mock=a.mock, horizon=DRAFT_AHEAD if a.command == "week" else None)
+        if a.command == "hot" and not a.mock and not a.dry_run:
+            try:   # a held news post must not cost the slot: write another on a different story
+                retry_held_hot(label)
+            except Exception as e:
+                log(f"retry of held news posts skipped: {e}")
     if a.command in {"week", "tracker", "hot", "redo", "render", "remake", "renew", "rephoto"}:
         render_week(label)
     if a.command in {"week", "tracker", "hot", "redo", "ask", "remake", "renew", "rephoto"}:
