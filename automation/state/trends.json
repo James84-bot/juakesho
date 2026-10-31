@@ -1,192 +1,199 @@
 {
-  "fetched": "2026-10-31T17:39:30.401262+00:00",
+  "fetched": "2026-10-31T20:41:15.055019+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "table premier league",
+      "title": "barcelona vs alavés",
+      "traffic": "10000+",
+      "news": [
+        {
+          "title": "La cuenta pendiente de Raphinha con el Alavés",
+          "url": "https://www.marca.com/futbol/barcelona/2026/10/31/cuenta-pendiente-raphinha-alaves.html",
+          "source": "MARCA"
+        },
+        {
+          "title": "VIDEO: El gol de Raphinha vs Alavés para el 1-0 del Barcelona en LaLiga",
+          "url": "https://www.365scores.com/es/news/gol-raphinha-barcelona-vs-alaves-video/",
+          "source": "365Scores"
+        },
+        {
+          "title": "Barcelona - Alavés en directo | De Jong hará de central y debuta Brian Fariñas en el lateral",
+          "url": "https://elpais.com/deportes/futbol/2026-10-31/barcelona-alaves-en-directo-el-partido-de-la-liga-en-vivo.html",
+          "source": "EL PAÍS"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bayern munich vs borussia dortmund standings",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Bayern Munich 2-2 Borussia Dortmund: Dortmund twice come from behind to draw",
+          "url": "https://www.bbc.com/sport/football/live/cke8rnzy49m7t",
+          "source": "BBC"
+        },
+        {
+          "title": "Bayern Munich 2-2 Borussia Dortmund highlights",
+          "url": "https://www.skysports.com/football/live-blog/13605682/bayern-munich-vs-dortmund-live-bundesliga-match-updates-news-score-stream-and-highlights",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Preview: Bayern vs. Borussia Dortmund, Bundesliga Matchday 8",
+          "url": "https://fcbayern.com/en/news/matchpreviews/2026/10/preview-bayern-borussia-dortmund-bundesliga-matchday-8",
+          "source": "FC Bayern"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "udinese vs as roma standings",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Udinese vs Roma: Italian Serie A stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cm89zkevgj8gt",
+          "source": "BBC"
+        },
+        {
+          "title": "Roma Travel to Udine Looking to Keep Pressure on Inter and Lazio",
+          "url": "https://www.chiesaditotti.com/roma-matchday-coverage/44072/roma-travel-to-udine-looking-to-keep-pressure-on-inter-and-lazio",
+          "source": "Chiesa Di Totti"
+        },
+        {
+          "title": "The giallorossi squad for Udinese v Roma",
+          "url": "https://www.asroma.com/en/news/76156/the-giallorossi-squad-for-udinese-v-roma",
+          "source": "AS Roma"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "milan vs inter",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "AC Milan vs Inter Milan LIVE: Italian Serie A - watch, stats, table & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cw99zj4rpd4dt",
+          "source": "BBC"
+        },
+        {
+          "title": "Manuel Akanji issues Inter warning ahead of Milan derby as Nerazzurri eye massive Scudetto advantage",
+          "url": "https://www.goal.com/en-ke/news/manuel-akanji-inter-ac-milan-derby/blt039dc285b1905897",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Serie A Predictions – All 10 Matchday 10 games",
+          "url": "https://www.livescore.com/en/news/football/serie-a/predictions/serie-a-predictions-all-10-matchday-10-games/",
+          "source": "LiveScore"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kenya power",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Kenya Power announces outage in parts of Nairobi, Kiambu, six other counties on Sunday",
+          "url": "https://citizen.digital/article/kenya-power-announces-outage-in-parts-of-nairobi-kiambu-six-other-counties-on-sunday-n393099",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "KPLC Names Nairobi, 2 Other Counties to Face Power Outages on Thursday, October 29",
+          "url": "https://www.tuko.co.ke/kenya/644858-kplc-names-nairobi-2-counties-face-power-outages-thursday-october-29/",
+          "source": "Tuko News"
+        },
+        {
+          "title": "Kenya Power Lists Scheduled Blackouts: See Affected Areas on Sunday November 1",
+          "url": "https://www.pulse.co.ke/story/kenya-power-lists-scheduled-blackouts-see-affected-areas-on-sunday-november-1-2026103118103647137",
+          "source": "Pulse Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "dinamo zagreb",
       "traffic": "200+",
       "news": [
         {
-          "title": "The Expected Premier League Table MD9: Shots from open-play crosses – Man Utd have them, but Chelsea don’t",
-          "url": "https://www.nytimes.com/athletic/7732371/2026/10/29/expected-premier-league-table-crosses/",
-          "source": "The New York Times"
+          "title": "Rudeš vs Dinamo Zagreb: Croatia Prva HNL stats & head-to-head",
+          "url": "https://www.bbc.co.uk/sport/football/live/c64g178vr42lt",
+          "source": "BBC"
         },
         {
-          "title": "The Expected Premier League Table MD8: xPts – Arsenal above City, Spurs above Chelsea, Forest hard done by?",
-          "url": "https://www.nytimes.com/athletic/7710254/2026/10/22/expected-premier-league-table-md8-expected-points/",
-          "source": "The New York Times"
+          "title": "Rudeš celebrate in Velika Gorica, Dinamo finish the match with ten men",
+          "url": "https://gnkdinamo.hr/en/news/rudes-slavio-u-velikoj-gorici-dinamo-utakmicu-zavrsio-s-desetoricom",
+          "source": "Dinamo Zagreb"
         },
         {
-          "title": "Final Premier League table revealed by supercomputer after Man Utd drop points again in worst start to season ever",
-          "url": "https://www.thesun.co.uk/sport/40733894/premier-league-table-revealed-by-supercomputer/",
+          "title": "NK Rudes vs Dinamo Zagreb match lineup | Croatian Football League · 31 Oct 2026",
+          "url": "https://www.ysscores.com/en/lineup/5765952/NK-Rudes-vs-GNK-Dinamo-Zagreb",
+          "source": "YSscores"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "jobe bellingham",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Jude Bellingham's brother Jobe has goal vs Bayern disallowed as ex-Chelsea star boots goalie in the FACE",
+          "url": "https://www.thesun.co.uk/sport/40871382/jude-bellingham-jobe-bayern-dortmund-carney-chukwuemeka/",
           "source": "The Sun"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "betis vs málaga",
+      "title": "roma",
       "traffic": "200+",
       "news": [
         {
-          "title": "🚨XIs confirmados: Emotivo derbi andaluz en La Cartuja",
-          "url": "https://es-us.noticias.yahoo.com/deportes/xis-confirmados-emotivo-derbi-andaluz-164000658.html",
-          "source": "Yahoo"
+          "title": "Udinese, fischi e delusione dopo il ko con la Roma: i tifosi giallorossi cantano «Udine! Udine!» e lo stadio applaude",
+          "url": "https://www.messaggeroveneto.it/speciali/udinese-calcio/spalti-curva-nord-squadra-scuse-fischio-mkwd6eu3",
+          "source": "Messaggero Veneto"
         },
         {
-          "title": "Pellegrini hace 6 cambios, con Parrott en punta; y Calero por Recio, el único en el Málaga",
-          "url": "https://www.infobae.com/espana/agencias/2026/10/31/pellegrini-hace-6-cambios-con-parrott-en-punta-y-calero-por-recio-el-unico-en-el-malaga/",
-          "source": "Infobae"
+          "title": "Mora show a Udine, gol e Roma travolgente. Gasp ha un altro titolare",
+          "url": "https://roma.repubblica.it/cronaca/2026/10/31/news/roma_udinese_mora-425690662/",
+          "source": "la Repubblica"
         },
         {
-          "title": "Sigue EN DIRECTO el Málaga CF vs Real Sociedad",
-          "url": "https://www.merchanendirecto.es/directo-real-betis-malaga-cf-2/",
-          "source": "Radio Marca Málaga"
+          "title": "Udinese-Roma | Runjaic e Karlstrom in conferenza stampa",
+          "url": "https://www.udinese.it/news/squadra/udinese-roma-runjaic-e-karlstrom-in-conferenza-stampa",
+          "source": "Udinese"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "ntsa warning fake traffic notices",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "NTSA arrests 12 drivers in Meru, records shocking alcohol levels",
-          "url": "https://www.the-star.co.ke/news/2026-10-31-ntsa-night-crackdown-in-meru-nets-12-drivers",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "NTSA Exposes New Scam Targeting Drivers Amid Ongoing Crackdown",
-          "url": "https://www.kenyans.co.ke/news/128998-ntsa-issues-warning-motorists-over-fake-traffic-offence-notices",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "NTSA impounds 13 vehicles in Southern Bypass crackdown",
-          "url": "https://www.standardmedia.co.ke/national/article/2001561107/ntsa-impounds-13-vehicles-in-southern-bypass-crackdown",
-          "source": "The Standard"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "feyenoord fc",
+      "title": "serie a",
       "traffic": "100+",
       "news": [
         {
-          "title": "Buijs erupts in anger against Feyenoord and audibly shouts 4 words at one man",
-          "url": "https://www.goal.com/en/news/buijs-erupts-in-anger-against-feyenoord-and-audibly-shouts-4-words-at-one-man/blt45123a791c371bce",
-          "source": "Goal.com"
+          "title": "L'enciclopedia del derby a San Siro: da Castellazzi a Estupinan, cento storie e cento Milan-Inter",
+          "url": "https://www.gazzetta.it/Calcio/Serie-A/Milan/storie/31-10-2026/derby-milano-100-storie-garlando/100-derby-un-solo-stadio.shtml",
+          "source": "La Gazzetta dello Sport"
         },
         {
-          "title": "Buijs erupts in fury at Feyenoord and audibly shouts 4 words at one man",
-          "url": "https://www.goal.com/en/news/buijs-erupts-in-anger-against-feyenoord-and-shouts-4-words-at-one-man-loud-enough-to-be-heard/blt45123a791c371bce",
-          "source": "Goal.com"
+          "title": "Milan-Inter, eroi per una notte: i 7 protagonisti inattesi nella storia del derby",
+          "url": "https://www.dazn.com/it-IT/news/calcio/milan-inter-7-protagonisti-inattesi-schelotto-obi-zapata-estupinan/1izjqv4fbqz7z1kuusr9dxe5jt",
+          "source": "DAZN"
         },
         {
-          "title": "Buijs erupts in anger against Feyenoord and can be heard shouting four words at one man",
-          "url": "https://www.goal.com/en/news/buijs-explodes-with-rage-against-feyenoord-and-audibly-shouts-4-words-at-one-man/blt45123a791c371bce",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "fenerbahçe vs göztepe",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Dirk Kuyt'tan Greenwood açıklaması: 'Grip olduğu için oynayamayacak'",
-          "url": "https://www.yenicaggazetesi.com/dirk-kuyttan-greenwood-aciklamasi-grip-oldugu-icin-oynayamayacak-1086891h.htm",
-          "source": "Yeniçağ Gazetesi"
-        },
-        {
-          "title": "#$%~[Canlı+İzle]TV!] Göztepe Fenerbahçe Canlı Ücretsiz Şampiyonlar Ligi Maçı TV'de 09 Eylül 2026",
-          "url": "https://www.portofrotterdam.com/sites/default/files/uploads/360panorama/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vbGVvZ29hdHMuZ2l0aHViLmlvL2JmLmVkdS91am0ueG1sIi8+PC9rcnBhbm8+&id=video-goztepe-fenerbahce-match-lie-pshdbng",
-          "source": "Port of Rotterdam"
-        },
-        {
-          "title": "Fenerbahçe - Göztepe Karşılaşması Öncesi Sarı-Lacivertlilerde Son Durum! | Kadıköy’de Kritik Randevu - Aspor",
-          "url": "https://www.aspor.com.tr/video/program/aspor/fenerbahce-goztepe-karsilasmasi-oncesi-sari-lacivertlilerde-son-durum-kadikoyde-kritik-randevu",
-          "source": "A Spor"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "table",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Major League Table Tennis to expand by two teams",
-          "url": "https://www.sportsbusinessjournal.com/Articles/2026/10/30/major-league-table-tennis-to-expand-by-two-teams/",
-          "source": "Sports Business Journal"
-        },
-        {
-          "title": "Table tennis good way to bridge cultures between Germany, China: Timo Boll",
-          "url": "https://www.bastillepost.com/global/article/6311153-table-tennis-good-way-to-bridge-cultures-between-germany-china-timo-boll",
-          "source": "巴士的報"
-        },
-        {
-          "title": "Nina GUO ZHENG (FRA) stays cool in bid for Dakar 2026 table tennis medal",
-          "url": "https://www.olympics.com/en/dakar-2026/olympic-information-service/nina-guo-zheng-fra-stays-cool-in-bid-for-dakar-2026-table-tennis-medal",
-          "source": "www.olympics.com"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "table premier league 2026",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Chris Sutton predicts more Everton misery for Newcastle at St James' Park",
-          "url": "https://nufcblog.co.uk/chris-sutton-predicts-more-everton-misery-for-newcastle-at-st-james-park-43344",
-          "source": "NUFC Blog"
-        },
-        {
-          "title": "Looking at the Premier League table, is this really disaster for Newcastle United?",
-          "url": "https://www.themag.co.uk/2026/10/looking-at-the-premier-league-table-is-this-really-disaster-for-newcastle-united/",
-          "source": "The Mag"
-        },
-        {
-          "title": "Newcastle United 13th in Premier League Form Table",
-          "url": "https://www.nufcblog.com/post/newcastle-united-premier-league-form-table-everton",
-          "source": "www.nufcblog.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "hull city",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Hull City - Ipswich Maçı Tahmini: Zirve Yarışında Sürpriz Nokta",
-          "url": "https://www.vietnam.vn/tr/nhan-dinh-hull-city-vs-ipswich-diem-nong-cuoc-dua-top-dau",
-          "source": "Vietnam.vn"
-        },
-        {
-          "title": "ÖZET | Müthiş gol Hull City'e yetmedi!",
-          "url": "https://www.beinsports.com.tr/haber/ozet-muthis-gol-hull-citye-yetmedi",
-          "source": "beinsports.com.tr"
-        },
-        {
-          "title": "CANLI GOL | Hull City 0-1 Ipswich Town - Florentino (22. dakika)",
-          "url": "https://www.canligaste.com/canli-gol-hull-city-0-1-ipswich-town-florentino-22-dakika/939989/",
-          "source": "Canlı Gaste"
+          "title": "Milan Inter, gli 8 giocatori del derby di Milano in gol con entrambe le maglie",
+          "url": "https://sport.sky.it/calcio/serie-a/milan-inter-giocatori-gol-derby-entrambe-squadre",
+          "source": "Sky Sport"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "scandal",
-      "why": "unsafe: 'scandal'"
-    },
-    {
-      "title": "spurs vs palace",
-      "why": "unsafe: 'Odds'"
+      "title": "al-hilal vs al fateh",
+      "why": "unsafe: 'betting'"
     }
   ],
   "errors": {}
