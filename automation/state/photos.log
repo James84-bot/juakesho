@@ -1,28 +1,9 @@
-feed KBC failed: <urlopen error timed out>
+feed KBC: 60 items, 60 with an image
 feed Capital FM: 60 items, 60 with an image
 feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
 feed Nation: 25 items, 0 with an image
-posted for showcase-1: 0 matching reports (person 'mbarak', names ['ceo', 'twalib', 'mbarak', 'kiambu'], words ['eacc', 'recovers', 'acre', 'school', 'playground'])
-commons 'primary school playground Kenya' for showcase-1: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-commons 'primary school' for showcase-1: 25 found, 0 usable, dropped {'size': 0, 'licence': 1, 'place': 24, 'subject': 0}
-commons 'primary school playground Kenya' for showcase-1: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-commons 'primary school' for showcase-1: 25 found, 0 usable, dropped {'size': 6, 'licence': 0, 'place': 19, 'subject': 0}
-openverse 'primary school playground Kenya' for showcase-1: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-photo source openverse failed for showcase-1: The read operation timed out
-commons 'Supreme Court of Kenya' for showcase-1: 16 found, 8 usable, dropped {'size': 2, 'licence': 0, 'place': 1, 'subject': 1, 'unfit': 4}
-photo for showcase-1: nothing for 'primary school playground Kenya', used 'Supreme Court of Kenya'
-posted for showcase-2: 3 matching reports (person '', names ['pipeline', 'kpc', 'makueni', 'thange'], words ['makueni', 'spill', 'victims', 'must', 'compensation'])
-picked Capital FM (10): Ruto Orders KPC to Withdraw Case Blocking Sh3bn Compensation for Makue
-posted for showcase-3: 0 matching reports (person 'mbarak', names ['executive', 'twalib', 'mbarak', 'kakamega'], words ['eacc', 'recovered', 'land', 'three', 'houses'])
-commons 'Kenyan land title deed and government office' for showcase-3: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-commons 'land title deed Kenyan' for showcase-3: 6 found, 0 usable, dropped {'size': 5, 'licence': 0, 'place': 0, 'subject': 0, 'unfit': 1}
-commons 'land title' for showcase-3: 25 found, 0 usable, dropped {'size': 1, 'licence': 0, 'place': 24, 'subject': 0}
-commons 'Kenyan land title deed and government office' for showcase-3: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-commons 'land title deed Kenyan' for showcase-3: 6 found, 0 usable, dropped {'size': 5, 'licence': 0, 'place': 0, 'subject': 0, 'unfit': 1}
-commons 'land title' for showcase-3: 25 found, 0 usable, dropped {'size': 6, 'licence': 0, 'place': 19, 'subject': 0}
-openverse 'Kenyan land title deed and government office' for showcase-3: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-photo source openverse failed for showcase-3: The read operation timed out
-commons 'Kenyan shilling banknotes' for showcase-3: 13 found, 9 usable, dropped {'size': 3, 'licence': 0, 'place': 0, 'subject': 0, 'unfit': 1}
-photo for showcase-3: nothing for 'Kenyan land title deed and government office', used 'Kenyan shilling banknotes'
+posted for 2026-w44-hot-1031-r2: 0 matching reports (person 'economy', names ['mining', 'blue', 'economy', 'mrima'], words ['sifuna', 'demands', 'transparency', 'mrima', 'hills'])
+file photo for 2026-w44-hot-1031-r2: 0 recent reports name 'economy'
+portrait 'Blue Economy' for 2026-w44-hot-1031-r2: 20 found, 4 usable

@@ -1346,7 +1346,7 @@
           "published": "2026-10-30"
         }
       ],
-      "status": "needs_human",
+      "status": "rejected",
       "guard": {
         "errors": [
           "weak: editor scored 6.2/10. This is an older developing incident, not among the active top-ranked stories Kenyans are discussing this week."
@@ -1371,7 +1371,8 @@
         "avg": 6.2,
         "note": "This is an older developing incident, not among the active top-ranked stories Kenyans are discussing this week."
       },
-      "drafted_at": "2026-10-31T01:26:50.632403+03:00"
+      "drafted_at": "2026-10-31T01:26:50.632403+03:00",
+      "replaced_by": "2026-w44-hot-1031-r2"
     },
     {
       "id": "2026-w44-hot-1031m",
@@ -1412,7 +1413,7 @@
           "published": "2026-10-31"
         }
       ],
-      "status": "needs_human",
+      "status": "rejected",
       "guard": {
         "errors": [
           "use everyday words Kenyans use: 'highway' (Kenyan English: road / highway is fine for Thika Superhighway only)",
@@ -1440,14 +1441,222 @@
         "avg": 5.4,
         "note": "Pick an active national story from the top of the news list rather than a minor routine NTSA brief."
       },
-      "drafted_at": "2026-10-31T13:09:55.064224+03:00"
+      "drafted_at": "2026-10-31T13:09:55.064224+03:00",
+      "replaced_by": "2026-w44-hot-1031m-r2"
+    },
+    {
+      "id": "2026-w44-hot-1031-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Kwale Residents",
+      "line": "Sifuna demands transparency over the *Mrima Hills* mining project in Kwale County.",
+      "fact": "Mrima Hills holds substantial mineral deposits including niobium and rare earth elements.",
+      "message": "Sifuna demands transparency over the Mrima Hills mining project and benefits for Kwale residents.",
+      "action": "Ask your local MP for the full mining agreement details today",
+      "beats": [
+        "Capital FM News reports: Sifuna questions *Mrima Hills* mining deals.",
+        "Residents want clear answers on local jobs.",
+        "Mineral wealth must lift the community up.",
+        "Kenyans demand: the Ministry of Mining publishes all active contracts."
+      ],
+      "photo_query": "mining ground Kenya hills",
+      "source": "Capital FM News, 2026-10-31",
+      "who": "Cabinet Secretary for Mining and Blue Economy",
+      "where": "Kwale",
+      "when": "31 Oct 2026",
+      "side": "opposition",
+      "tone": "criticism",
+      "impact": "Kwale residents risk losing land benefits without open mining contracts.",
+      "caption": "Capital FM News reports: Kwale minerals belong to the people first. Sifuna is asking what residents gain from Mrima Hills. Tag someone from Kwale in the comments.\n\n#MrimaHills #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-31T19:37:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "A building collapse in Eastleigh takes a life, raising safety questions."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Sifuna demands transparency over Mrima Hills mining project, questions benefits to Kwale residents",
+          "link": "https://capitalfm.africa/sifuna-demands-transparency-over-mrima-hills-mining-project-questions-benefits-to-kwale-residents/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-31"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 9,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 8.1,
+        "note": "Ensure the demand section clearly specifies the exact lawful office to petition."
+      },
+      "drafted_at": "2026-10-31T19:30:17.244677+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-hot-1031-r2-photo.jpg",
+      "photo_credit": "File photo: Danmon Wx / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "file",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Minister_Maritime_Ali_Haider_Zaidi_chairs_meeting_on_Blue_Economy._Federal_Secretary_Rizwan_Ahmed,_Vice_Chief_of_Naval_Staff_Admiral_Kaleem_Shaukat_and_other_senior_officers_attend_the_meeting.jpg",
+      "reel": true,
+      "tg_msg": 671
+    },
+    {
+      "id": "2026-w44-hot-1031m-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "KRA Taxpayers",
+      "line": "The Law Society of Kenya loses its bid to block higher *excise stamp* fees.",
+      "fact": "LSK challenged the new fees linked to a disputed Sh4.5bn KRA tax debt.",
+      "message": "LSK loses court bid to block higher excise stamp fees over KRA debt.",
+      "action": "Check your supplier prices for changes due to new stamp fees",
+      "beats": [
+        "Daily Nation reports: The High Court ruled against *LSK* on stamp fees.",
+        "The fees are tied to a Sh4.5 billion unpaid tax debt.",
+        "Higher stamp costs push up prices on manufactured goods.",
+        "Kenyans demand: KRA publishes the audit of all disputed tax debts."
+      ],
+      "photo_query": "Kenya Revenue Authority Nairobi building",
+      "source": "Daily Nation, 2026-10-31",
+      "who": "Commissioner-General Kenya Revenue Authority",
+      "where": "Nairobi",
+      "when": "31 Oct 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Consumers pay higher prices when excise stamp fees increase.",
+      "caption": "Daily Nation reports: The courts ruled on the excise stamp fees tied to KRA tax arrears. Higher stamps mean more expensive goods on the shelves. Share this with a business owner.\n\n#KRA #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-10-31T19:37:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "A building collapse in Eastleigh takes a life, raising safety questions.",
+        "NTSA traffic operations arrested twelve motorists for drunk driving offences."
+      ],
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "LSK loses bid to block higher excise stamp fees over Sh4.5bn KRA debt",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQd3dOTXFHVXRBMzhNLUEyMkdmaEloc2h6UHhIWWR5YUlZZG96MUxCc2thN2tIcGFxc2thUmxqd2lMRVBPaHJRNUxkNGhFeWlNT09tSGR6azQ1ZmlTOGQxQnpuNDV0WGhNZjBlR1A1dVVuZEUyeXJ2MjZXc1otcjBQTWpxVndfbFMzNC16Y3Vsa0Ixc25OQVl0MkNLYlRDYmFwVW5kZkZWUHNRN1lpd0FZ?oc=5",
+          "published": "2026-10-31"
+        }
+      ],
+      "status": "rejected",
+      "guard": {
+        "errors": [
+          "not clean for everyone: 'drunk'"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 8.0,
+        "note": "Keep the impact strictly tied to how consumer prices shift after the ruling."
+      },
+      "drafted_at": "2026-10-31T19:30:17.244685+03:00",
+      "replaced_by": "2026-w44-hot-1031m-r3"
+    },
+    {
+      "id": "2026-w44-hot-1031m-r3",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Kenyans",
+      "line": "Ruto and Putin agreed to stop the *recruitment* of Kenyans into the Russian military.",
+      "fact": "Over two hundred young men returned home after being promised jobs and sent to frontlines.",
+      "message": "Government stops Russian military recruitment of Kenyan youths.",
+      "action": "Report any overseas job agent promising military roles to the DCI",
+      "beats": [
+        "Kenya and Russia *halted* military recruitment after talks.",
+        "Young men flew out on fake job promises.",
+        "Families want answers from the Ministry.",
+        "Kenyans demand the full returnee list now."
+      ],
+      "photo_query": "Kenyan passport and international flight board",
+      "source": "Capital FM News, 2026-10-31",
+      "caption": "Capital FM News reports: Fake jobs abroad turned into frontlines. Two hundred youths are back, but questions remain. Verify every recruitment agency.\n\nTag a friend who needs to see this.\n\n#KenyaOnRecord",
+      "who": "Ministry of Foreign Affairs",
+      "where": "Nairobi",
+      "when": "31 Oct 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Young jobseekers faced frontline danger after trusting fraudulent agents.",
+      "bg": "usiku",
+      "publish_at": "2026-10-31T19:50:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "A building collapse in Eastleigh takes a life, raising safety questions.",
+        "NTSA traffic operations arrested twelve motorists for drunk driving offences.",
+        "LSK loses court bid to block higher excise stamp fees over KRA debt."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Ruto, Putin Agree to End Recruitment of Kenyans into Russian Military",
+          "link": "https://capitalfm.africa/ruto-putin-agree-to-end-recruitment-of-kenyans-into-russian-military/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-31"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "not clean for everyone: 'drunk'"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 7,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.8,
+        "note": "Ensure the photo query matches the grim nature of Russian military recruitment rather than a standard travel board."
+      },
+      "drafted_at": "2026-10-31T19:48:11.232820+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari za wiki, msikilizaji wa Kenya on Record. Mimi ni wako wa ukweli, na leo tunasimama na usalama barabarani.\n\nWiki hii hapa Meru, maafisa wetu wa NTSA walifanya msako mkali. Walisimamisha magari na kuwakamata madereva kumi na wawili kwa uchunguzi. Matokeo yake? Nane kati yao walishindwa mtihani wa kileo. Sasa jiulize, dereva wa namna hii anabeba roho ngapi kwenye gari lake la abiria?\n\nKule nje, kuna watu bado wanadhani kunywa na kuendesha ni mchezo. Barabara sio uwanja wa majaribio. Tunazungumzia maisha ya wakenya wenzetu ambao wanaondoka nyumbani wakitafuta riziki, lakini hawarudi kwa sababu ya uzembe wa dereva mmoja.\n\nTunaipongeza NTSA kwa kazi hii, lakini ombi letu kwao ni moja: wasiishie Meru pekee. Hii tabia ya kuendesha ukiwa mlevi iko kila kona ya nchi. Na kwa wewe dereva, kumbuka familia zako zinakusubiri. Usiwe sababu ya kilio.\n\nAsante kwa kusikiliza. Linda uhai, fuata sheria.\n\n[SWAHILI_SUMMARY]\nMuhtasari wa wiki: NTSA imewakamata madereva 12 huko Meru, ambapo 8 walipatikana na hatia ya kuendesha wakiwa wamelewa. Kenya on Record inakukumbusha kuwa usalama barabarani ni jukumu letu sote; usinywe na kuendesha gari.",
-    "voice_note": "Wadau, niaje? Hapa ni Kenya on Record na habari za kusikitisha lakini za ukweli kutoka Meru wiki hii. NTSA walisimamisha madereva kumi na wawili, na guess what? Nane kati yao walifeli test ya pombe! Yaani karibu wote waliokuwa wanachunguzwa walikuwa wamelewa chakari na bado wako barabarani wakisafirisha watu. Hii ni hatari tupu. Tunapiga kelele kila siku kwamba barabara si chochoro za kujivinjari ukiwa mlevi. Maisha ya wakenya sio ya kuchezea. Kama unajua utapiga kimea chako, wachana na usukani, panda matatu au utafute driver wa kukupeleka. Wacha tuwajibike ndiyo tufike 2027 tukiwa wazima. Sambaza ujumbe huu kwa m grup.",
-    "sms": "Usiibiwe na uzembe barabarani! NTSA imewakamata madereva 8 Meru wakifeli test ya pombe. Usinywe na kuendesha gari; maisha hayana ‘spare’. Linda uhai leo.",
-    "reels": "[Visual: Close-up of a breathalyzer blinking red, transition to a busy Meru highway, text on screen: '8 OUT OF 12 DRIVERS FAILED!']\n\nVoiceover: Meru, mnatuangusha! Kumi na wawili walisimamishwa, lakini nane wakafeli test ya pombe papo hapo. Nane! Hii sio bahati mbaya, huu ni ulevi wa makusudi barabarani. Unabeba abiria wangapi ukiwa umelewa hivi? Maisha si movie, hakuna ‘replay’ ukigongana. Kama unapenda pombe, achana na usukani. Hapa ni Kenya on Record, tunasema ukweli bila kuuma maneno. Wewe ni dereva wa aina gani?"
+    "radio": "Habari za leo, mwananchi. Welcome to Kenya on Record. Let’s talk about a very disturbing matter that has been making rounds—the illegal recruitment of Kenyan youth into foreign military service, specifically targeting Russia.\n\nSerikali kupitia Wizara ya Mambo ya Nje imethibitisha kuwa imesitisha njama hii chafu. Agents wamekuwa wakiwarubuni vijana wetu kwa ahadi za mishahara minono na kazi za ulinzi, lakini kumbe wanapelekwa mstari wa mbele vitani.\n\nAs grown-ups, we must ask: how desperate are we getting, and who is protecting our children? While unemployment is a real crisis in this country, trading your life for a rifle in a foreign war is not the way out. Our youth are our future, cannon fodder. \n\nThe government has stepped in, yes, but vigilance begins at home. If someone approaches you or your child with suspicious job offers abroad involving private security or military training, report them immediately. Usikubali kupoteza maisha kwa sababu ya ahadi za uongo. Protect your peace, protect your life.\n\n***\n\n*Kwa ufupi:* Serikali imeingilia kati na kusitisha mpango haramu uliokuwa ukiwarubuni vijana wa Kenya kujiunga na jeshi la Urusi. Wazazi na vijana mnaombwa kuwa waangalifu na msiangukie kwenye mitego ya ajira za udanganyifu za nje ya nchi.",
+    "voice_note": "Wadau, mambo vipi. Sikilizeni hii kwa makini sana. Kumekuwa na habari za kusikitisha za vijana wetu kurubuniwa kujiunga na jeshi la Urusi kwa ahadi za pesa nyingi. Serikali imesema imesitisha mpango huo, lakini tunafaa kuwa macho zaidi. Watu wanakuja na ahadi za uongo za kazi za ulinzi nje ya nchi, kumbe wanawapeleka vitani. Tafadhali, onya kijana wako, ndugu yako, ama rafiki yako. Usikubali maisha yako yamalizike kwa sababu ya kazi ya mkato. Angalia vizuri kabla hujakubali ofa yoyote ya nje. Tujilinde.",
+    "sms": "Okoa maisha: Serikali imesitisha ulanguzi wa vijana kwenda vitani Urusi. Usikubali kurubuniwa na ahadi za uongo za kazi za 'security' nje. Linda kijana wako.",
+    "reels": "Wakenya wenzangu, kuna moto chini ya moshi! Vijana wetu walikuwa wanarubuniwa kwenda kupigana vita vya Urusi kwa ahadi za pesa. Serikali imesitisha huu mchezo mchafu, lakini swali ni je—kwanini vijana wetu wanawindwa kirahisi hivi? Ukiona mtu anakuletea deal ya 'security job' nje ya nchi yenye pesa mingi kushinda akili, kimbia! Usiende ukadhani ni mchezo. Maisha yako hayana bei. Kuwa mwangalifu, linda kijana wetu, linda Kenya."
   },
   "spend_usd": 0.0
 }
