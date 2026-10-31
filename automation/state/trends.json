@@ -1,42 +1,20 @@
 {
-  "fetched": "2026-10-31T06:06:39.366593+00:00",
+  "fetched": "2026-10-31T09:57:05.270451+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "weather",
-      "traffic": "20000+",
-      "news": [
-        {
-          "title": "Weather forecast: temperatures to rise across Israel, with warmer days ahead",
-          "url": "https://www.ynetnews.com/environment/article/bkmjalqazx",
-          "source": "Ynetnews"
-        },
-        {
-          "title": "[𝐖𝐀𝐓𝐂𝐇𝐋𝐈𝐕𝐄]🌍𝐍𝐎𝐖!] Pleasant Grove vs Spanish Fork ＬＩＶＥ Ｓｔｒｅａｍ in 30, Oct 2026",
-          "url": "https://www.portofrotterdam.com/sites/default/files/uploads/360panorama/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL2Jlbi1zdG9ja3MuZ2l0aHViLmlvL0JhbC9uZXdzL3NtNnMueG1sIi8+PC9rcnBhbm8+&id=video-pleasant-grove-v-spanish-fork-liv-on-hsf-s-t-r-e-a-m-i-n-g-ustv-en-01",
-          "source": "Port of Rotterdam"
-        },
-        {
-          "title": "High school football: Pleasant Grove unfazed by bad weather in convincing 5A first round win at Spanish Fork",
-          "url": "https://www.deseret.com/sports/2026/10/30/high-school-football-pleasant-grove-spanish-fork/",
-          "source": "Deseret News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "absa",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
-        {
-          "title": "Naima Yusuf Moves From M-Pesa to Absa Group",
-          "url": "https://khusoko.com/2026/10/28/naima-yusuf-joins-absa-group-from-m-pesa/",
-          "source": "Khusoko"
-        },
         {
           "title": "Absa Raids Safaricom Again, Poaches M-PESA Executive",
           "url": "https://thekenyatimes.com/business/absa-raids-safaricom-again-poaches-m-pesa-executive/",
           "source": "The Kenya Times"
+        },
+        {
+          "title": "Naima Yusuf Moves From M-Pesa to Absa Group",
+          "url": "https://khusoko.com/2026/10/28/naima-yusuf-joins-absa-group-from-m-pesa/",
+          "source": "Khusoko"
         },
         {
           "title": "Absa Group appoints Safaricom’s Naima Yusuf as Executive Head of Absa Pay",
@@ -47,163 +25,132 @@
     },
     {
       "geo": "KE",
-      "title": "weather today",
+      "title": "kenya defence forces",
       "traffic": "500+",
       "news": [
         {
-          "title": "Cloudy and cool today, with more widespread rain by early Saturday",
-          "url": "https://www.rockfordnewsfirst.com/2026/10/30/cloudy-cool-today-with-more-widespread-rain-by-early-saturday/",
-          "source": "WIFR"
+          "title": "Why KDF was blocked from Supreme Court appeal over Sh25m award",
+          "url": "https://nation.africa/kenya/news/why-kdf-was-blocked-from-supreme-court-appeal-over-sh25m-award-5649558",
+          "source": "Daily Nation"
         },
         {
-          "title": "Cooler temps today.",
-          "url": "https://www.cbsnews.com/detroit/video/cooler-temps-today-4/",
-          "source": "CBS News"
+          "title": "Former KDF soldier awarded Sh25m for unfair dismissal",
+          "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001561016/former-kdf-soldier-awarded-sh25m-for-unfair-dismissal",
+          "source": "The Standard"
         },
         {
-          "title": "Weather Forecast: Showers Reach Geneva and Ithaca Valleys After Dark Tonight",
-          "url": "https://www.fingerlakesdailynews.com/weather/2026-10-29-midday-showers-reach-geneva-and-ithaca-valleys-after-dark-tonight/",
-          "source": "Finger Lakes Daily News"
+          "title": "Kenya Defence Forces (KDF) Medical Specialists Bring Advanced Medical Care Closer to Dhobley Community",
+          "url": "https://africa.com/apo/kenya-defence-forces-kdf-medical-specialists-bring-advanced-medical-care-closer-to-dhobley-community",
+          "source": "Africa.com"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
-      "title": "warriors vs lakers",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Warriors 112-95 Lakers: Curry’s 8 threes fuel rally",
-          "url": "https://www.sofascore.com/news/warriors-112-95-lakers-currys-8-threes-fuel-rally",
-          "source": "Sofascore"
-        },
-        {
-          "title": "Steph Curry Passes Dominique Wilkins on NBA All-Time Scoring List, Where Does He Rank Among Greats?",
-          "url": "https://bleacherreport.com/articles/25527571-steph-curry-passes-dominique-wilkins-nba-all-time-scoring-list-where-does-he-rank-among-greats",
-          "source": "Bleacher Report"
-        },
-        {
-          "title": "Game 6 wrap: Warriors storm back from 25 down to beat Luka Lakers; Steph, Podz, Melt and Niang(!?) lead way",
-          "url": "https://dubnationhq.com/p/game-6-wrap-no-spoiler-title",
-          "source": "Dub Nation HQ"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "el niño",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Forecasters are predicting a warmer and wetter winter. Here's how El Niño will affect your region",
-          "url": "https://www.npr.org/2026/10/28/nx-s1-6009547/el-nino-forecast-us-winter",
-          "source": "NPR"
-        },
-        {
-          "title": "Everything You Could Possibly Want to Know About El Niño",
-          "url": "https://www.nytimes.com/interactive/2026/10/27/climate/el-nino-climate-faq.html",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Collapsed WA ice caves, melting Rainier snowfield raise concerns ahead of winter",
-          "url": "https://www.fox13seattle.com/news/collapsed-wa-ice-caves-melting-rainier-snowfield",
-          "source": "FOX 13 Seattle"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ind vs uae",
+      "title": "linda mwananchi movement",
       "traffic": "200+",
       "news": [
         {
-          "title": "UAE:97/0 (4.2) | Live Cricket Score | UAE vs IND | hk sixes 2026 | Cricket Scoreboard",
-          "url": "https://sports.ndtv.com/cricket/uae-vs-ind-scorecard-live-cricket-score-hong-kong-sixes-2026-match-12-uain10312026275383",
-          "source": "NDTV Sports"
+          "title": "Kalonzo versus Sifuna: A generational battle in Kenya’s opposition building up",
+          "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/kalonzo-versus-sifuna-a-generational-battle-5652844",
+          "source": "The EastAfrican"
         },
         {
-          "title": "United Arab Emirates vs India Live Cricket Score:: Match 12 Full Scorecard & Commentary",
-          "url": "https://www.firstpost.com/firstcricket/cricket-live-score/india-vs-united-arab-emirates-s6-live-cricket-score-full/15828/275383.html",
-          "source": "Firstpost"
+          "title": "From Raila to Matiang’i and now Sifuna: Richard Onyonka’s political acrobatics",
+          "url": "https://nation.africa/kenya/news/politics/raila-to-matiang-i-sifuna-richard-onyonka-political-acrobatics-5652662",
+          "source": "Daily Nation"
         },
         {
-          "title": "India vs UAE: After Pakistan loss, Krunal Pandya's men suffer another Hong Kong Sixes 2026 defeat; Afghanistan win",
-          "url": "https://www.livemint.com/sports/cricket-news/india-vs-uae-after-pakistan-loss-krunal-pandyas-men-suffer-another-hong-kong-sixes-2026-defeat-afghanistan-win-11793421134657.html",
-          "source": "Livemint"
+          "title": "Sifuna, Natembeya handed top roles as Linda Mwananchi unveils leadership",
+          "url": "https://www.the-star.co.ke/news/2026-10-31-linda-mwananchi-unveils-leadership-team",
+          "source": "The Star, Kenya"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "weather nairobi",
+      "title": "peacekeeping",
       "traffic": "200+",
       "news": [
         {
-          "title": "Gov't Unveils Plan to Leverage Safaricom Network for Weather Monitoring",
-          "url": "https://nairobileo.co.ke/news/article/31119/govt-unveils-plan-to-leverage-safaricom-network-for-weather-monitoring",
-          "source": "Nairobi Leo"
+          "title": "Competing US, Russia resolutions on Western Sahara defeated in UN Security Council",
+          "url": "https://www.reuters.com/world/russia-vetos-us-drafted-resolution-western-sahara-2026-10-30/",
+          "source": "Reuters"
         },
         {
-          "title": "A 'Green Army' is out to thwart El Niño flooding",
-          "url": "https://www.npr.org/2026/10/27/nx-s1-6010370/el-nino-floods-nairobi-green-army",
-          "source": "NPR"
+          "title": "Rival US and Russian resolutions on Western Sahara fail at UN",
+          "url": "https://www.aljazeera.com/news/2026/10/31/rival-us-and-russian-resolutions-on-western-sahara-fail-at-un",
+          "source": "Al Jazeera"
         },
         {
-          "title": "A 'Green Army' is out to thwart El Niño flooding",
-          "url": "https://www.krwg.org/national-news/2026-10-27/a-green-army-is-out-to-thwart-el-nino-flooding",
-          "source": "KRWG Public Media"
+          "title": "UN Peace Mission to Western Sahara Hits Unprecedented Standoff",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-30/un-peace-mission-to-western-sahara-hits-unprecedented-standoff",
+          "source": "Bloomberg"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "76ers vs knicks",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "NBA: New York Knicks at Philadelphia 76ers",
-          "url": "https://www.reutersconnect.com/item/nba-new-york-knicks-at-philadelphia-76ers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAyMzAxMTY",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "LeBron James records 20/9/8/1/1 line vs. New York",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-10-30/lebron-james-records-20-9-8-1-1-line-vs-new-york",
-          "source": "NBC Sports"
-        },
-        {
-          "title": "Sixers Bell Ringer: LeBron has his best game as a Sixer in win vs. Knicks",
-          "url": "https://www.libertyballers.com/76ers-scores-results/100412/sixers-bell-ringer-lebron-has-his-best-game-as-a-sixer-in-win-vs-knicks",
-          "source": "Liberty Ballers"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "nba",
+      "title": "cole palmer",
       "traffic": "100+",
       "news": [
         {
-          "title": "Ziaire Williams (foot) has been downgraded to out for …",
-          "url": "https://sports.yahoo.com/articles/ziaire-williams-foot-downgraded-202157259.html",
-          "source": "Yahoo Sports"
+          "title": "Xabi Alonso confirms Chelsea team news for Manchester United | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/xabi-alonso-confirms-chelsea-team-news-for-manchester-united",
+          "source": "Chelsea Football Club"
         },
         {
-          "title": "Lakers blow 25-point lead NBA Cup-opening loss to Warriors",
-          "url": "https://nypost.com/2026/10/31/sports/nba-cup-lakers-blow-25-point-lead-in-epic-loss-to-warriors/",
-          "source": "New York Post"
+          "title": "Fears Chelsea's Lacroix could be out until January",
+          "url": "https://www.bbc.com/sport/football/articles/cmkgkpexjzneo",
+          "source": "BBC"
         },
         {
-          "title": "Lakers Warriors Basketball",
-          "url": "https://www.idahostatejournal.com/sports/national/lakers-warriors-basketball/image_a7ab0995-8fa0-5475-a330-207e03ac6e5d.html",
-          "source": "Idaho State Journal"
+          "title": "Predicted Chelsea XI vs Man Utd as Xabi Alonso makes Cole Palmer and Estevao Willian decisions",
+          "url": "https://www.football.london/chelsea-fc/news/predicted-chelsea-xi-vs-man-34838511",
+          "source": "Football London"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "jamie carragher",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Jamie Carragher sued: Aston Villa to take legal action against pundit over 'unacceptable insults'",
+          "url": "https://www.bbc.com/sport/football/articles/cqd09p3kppyvo",
+          "source": "BBC"
+        },
+        {
+          "title": "Aston Villa to take legal action against Jamie Carragher for ‘unacceptable insults’",
+          "url": "https://www.theguardian.com/football/2026/oct/30/aston-villa-to-take-legal-action-against-jamie-carragher-for-unacceptable-insults",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Ashton Villa to sue former Liverpool player over ‘Villa will never be Manchester United’ comments",
+          "url": "https://indianexpress.com/article/sports/football/ashton-villa-liverpool-unai-emry-manchester-united-10944811/",
+          "source": "The Indian Express"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "bournemouth vs leeds",
-      "why": "unsafe: 'BET'"
+      "title": "ac milan vs inter milan",
+      "why": "unsafe: 'Bet'"
+    },
+    {
+      "title": "tottenham vs crystal palace",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "brentford vs nottm forest",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "aston villa vs fulham",
+      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}

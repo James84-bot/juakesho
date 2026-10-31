@@ -1371,13 +1371,82 @@
         "note": "This is an older developing incident, not among the active top-ranked stories Kenyans are discussing this week."
       },
       "drafted_at": "2026-10-31T01:26:50.632403+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1031m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Road Safety",
+      "who": "NTSA Director-General George Njao",
+      "where": "Meru County",
+      "when": "31 Oct 2026",
+      "line": "NTSA arrested *12* motorists for drunk driving during highway patrols.",
+      "fact": "Eight of the twelve motorists failed alcohol breath tests during the operation.",
+      "message": "NTSA traffic operations arrested twelve motorists for drunk driving offences.",
+      "action": "Report reckless driving directly to NTSA on 0709 932 000.",
+      "beats": [
+        "NTSA arrested *12* motorists during highway road safety checks.",
+        "Eight motorists tested positive for alcohol during the joint traffic operation.",
+        "Strict road enforcement keeps passengers and pedestrians safe across our highways.",
+        "Report reckless driving directly to NTSA on 0709 932 000."
+      ],
+      "photo_query": "NTSA roadblock Kenya",
+      "source": "Capital FM News, 2026-10-31",
+      "caption": "NTSA teams arrested 12 motorists during highway inspections, with 8 failing breath tests. Strict road enforcement protects every passenger. Report reckless driving to keep our roads safe.\n\n#KenyaOnRecord #RoadSafety",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Stricter road enforcement protects passengers and pedestrians using public transport routes.",
+      "bg": "usiku",
+      "publish_at": "2026-10-31T15:57:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "A building collapse in Eastleigh takes a life, raising safety questions."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "NTSA arrests 12 drivers in Meru, eight test positive for drink-driving",
+          "link": "https://capitalfm.africa/ntsa-arrests-12-drivers-in-meru-eight-test-positive-for-drink-driving/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-10-31"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "use everyday words Kenyans use: 'highway' (Kenyan English: road / highway is fine for Thika Superhighway only)",
+          "beats[1] is too long: max 12 words / 72 characters",
+          "beats[2] is too long: max 12 words / 72 characters",
+          "not clean for everyone: 'drunk'"
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 6,
+        "fresh": 5,
+        "voice": 7,
+        "craft": 6,
+        "picture": 6,
+        "hold": 6,
+        "demand": 3,
+        "action": 5,
+        "fair": 6,
+        "impact": 5,
+        "avg": 5.4,
+        "note": "Pick an active national story from the top of the news list rather than a minor routine NTSA brief."
+      },
+      "drafted_at": "2026-10-31T13:09:55.064224+03:00"
     }
   ],
   "scripts": {
-    "radio": "Welcome to Kenya on Record. This week, grief hangs heavy over Eastleigh after a building collapsed, claiming a life and injuring others. Our deepest thoughts are with the bereaved family. But grief must now turn into sharp accountability.\n\nHow does a multi-storey building rise in broad daylight, cut corners on reinforcement, and crumble to dust? This was not an act of God. It was the predictable result of developer greed, substandard materials, and regulatory failure. \n\nEvery construction project in Nairobi requires sign-offs from the National Construction Authority and City Hall planners. If a building is structurally defective, who cleared the drawings? Who conducted the site visits? And why do county compliance teams only show up after the rubble has settled, clutching clipboards to a scene they should have sealed months ago?\n\nWe cannot normalize death by rogue construction. Public safety is not negotiable. If your apartment or a site in your neighborhood shows alarming signs—deep diagonal wall cracks, sagging beams, or suspicious additional floors—speak out and report it immediately.\n\nKwa ufupi: Kuporomoka kwa jengo kule Eastleigh na kupoteza maisha ya mkenya si ajali, bali ni uzembe wa wajenzi walafi na maafisa wa kaunti waliofumbia macho ujenzi duni. Ni lazima walioidhinisha jengo hili wachukuliwe hatua za kisheria. Ukiona jengo lolote lenye nyufa au ujenzi usiozingatia usalama, ripoti mara moja kabla maafa hayajatokea.",
-    "voice_note": "Hae, it’s Kenya on Record. This week, we are mourning another life needlessly lost after a building collapsed in Eastleigh. It is tragic, but worse, it was entirely preventable.\n\nBuildings don’t just collapse. They fall when developers cut corners on cement, hire quacks, or slap extra floors on weak foundations to maximize rent. And behind every collapsed wall is an inspector who signed a paper they shouldn't have, or looked the other way.\n\nWe must look out for ourselves and each other. If you notice sudden structural cracks in your building, pillars bending, or doors that suddenly won't shut because the frame has shifted, don’t sit on it. Document it, notify your neighbors, and demand immediate inspection from the NCA. Silence is costing lives. Share this note with your estate group.",
-    "sms": "Usiibiwe: Before renting, confirm the building has an NCA compliance cert and no severe wall cracks. Never risk your life on cheap, unchecked construction.",
-    "reels": "Another building down in Eastleigh. Another life cut short beneath twisted metal and broken concrete. This was not an accident. It was sheer greed, compromised materials, and county inspectors who chose to look away. When regulators take shortcuts, ordinary Kenyans pay with their lives. Who approved this site? We demand criminal charges for rogue developers and corrupt officials. No more excuses."
+    "radio": "Habari za wiki, msikilizaji wa Kenya on Record. Mimi ni wako wa ukweli, na leo tunasimama na usalama barabarani.\n\nWiki hii hapa Meru, maafisa wetu wa NTSA walifanya msako mkali. Walisimamisha magari na kuwakamata madereva kumi na wawili kwa uchunguzi. Matokeo yake? Nane kati yao walishindwa mtihani wa kileo. Sasa jiulize, dereva wa namna hii anabeba roho ngapi kwenye gari lake la abiria?\n\nKule nje, kuna watu bado wanadhani kunywa na kuendesha ni mchezo. Barabara sio uwanja wa majaribio. Tunazungumzia maisha ya wakenya wenzetu ambao wanaondoka nyumbani wakitafuta riziki, lakini hawarudi kwa sababu ya uzembe wa dereva mmoja.\n\nTunaipongeza NTSA kwa kazi hii, lakini ombi letu kwao ni moja: wasiishie Meru pekee. Hii tabia ya kuendesha ukiwa mlevi iko kila kona ya nchi. Na kwa wewe dereva, kumbuka familia zako zinakusubiri. Usiwe sababu ya kilio.\n\nAsante kwa kusikiliza. Linda uhai, fuata sheria.\n\n[SWAHILI_SUMMARY]\nMuhtasari wa wiki: NTSA imewakamata madereva 12 huko Meru, ambapo 8 walipatikana na hatia ya kuendesha wakiwa wamelewa. Kenya on Record inakukumbusha kuwa usalama barabarani ni jukumu letu sote; usinywe na kuendesha gari.",
+    "voice_note": "Wadau, niaje? Hapa ni Kenya on Record na habari za kusikitisha lakini za ukweli kutoka Meru wiki hii. NTSA walisimamisha madereva kumi na wawili, na guess what? Nane kati yao walifeli test ya pombe! Yaani karibu wote waliokuwa wanachunguzwa walikuwa wamelewa chakari na bado wako barabarani wakisafirisha watu. Hii ni hatari tupu. Tunapiga kelele kila siku kwamba barabara si chochoro za kujivinjari ukiwa mlevi. Maisha ya wakenya sio ya kuchezea. Kama unajua utapiga kimea chako, wachana na usukani, panda matatu au utafute driver wa kukupeleka. Wacha tuwajibike ndiyo tufike 2027 tukiwa wazima. Sambaza ujumbe huu kwa m grup.",
+    "sms": "Usiibiwe na uzembe barabarani! NTSA imewakamata madereva 8 Meru wakifeli test ya pombe. Usinywe na kuendesha gari; maisha hayana ‘spare’. Linda uhai leo.",
+    "reels": "[Visual: Close-up of a breathalyzer blinking red, transition to a busy Meru highway, text on screen: '8 OUT OF 12 DRIVERS FAILED!']\n\nVoiceover: Meru, mnatuangusha! Kumi na wawili walisimamishwa, lakini nane wakafeli test ya pombe papo hapo. Nane! Hii sio bahati mbaya, huu ni ulevi wa makusudi barabarani. Unabeba abiria wangapi ukiwa umelewa hivi? Maisha si movie, hakuna ‘replay’ ukigongana. Kama unapenda pombe, achana na usukani. Hapa ni Kenya on Record, tunasema ukweli bila kuuma maneno. Wewe ni dereva wa aina gani?"
   },
   "spend_usd": 0.0
 }

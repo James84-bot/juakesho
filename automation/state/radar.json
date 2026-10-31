@@ -1,16 +1,12 @@
 {
- "fetched": "2026-10-31T06:06:45.233446+00:00",
+ "fetched": "2026-10-31T09:57:09.891328+00:00",
  "x": [
   {
-   "name": "Opposition Chaos",
+   "name": "#MoreToKonza",
    "tweets": ""
   },
   {
-   "name": "Sifuna Kalonzo Rivalry",
-   "tweets": ""
-  },
-  {
-   "name": "Upinzani Umegawanyika",
+   "name": "Kalonzo",
    "tweets": ""
   },
   {
@@ -18,11 +14,7 @@
    "tweets": ""
   },
   {
-   "name": "#AgnesKagureForNyeri",
-   "tweets": ""
-  },
-  {
-   "name": "Happy Sabbath",
+   "name": "#BigWinsAlways",
    "tweets": ""
   },
   {
@@ -30,19 +22,7 @@
    "tweets": ""
   },
   {
-   "name": "director mohamed amin",
-   "tweets": ""
-  },
-  {
-   "name": "Curry",
-   "tweets": ""
-  },
-  {
-   "name": "#LindaMwananchiMovement",
-   "tweets": ""
-  },
-  {
-   "name": "#Tanzania",
+   "name": "Bangbet Fantasy League",
    "tweets": ""
   },
   {
@@ -50,11 +30,47 @@
    "tweets": ""
   },
   {
-   "name": "Luka",
+   "name": "#Tanzania",
+   "tweets": ""
+  },
+  {
+   "name": "Gameweek",
+   "tweets": ""
+  },
+  {
+   "name": "Fish Economy",
+   "tweets": ""
+  },
+  {
+   "name": "Agnes Kagure",
+   "tweets": ""
+  },
+  {
+   "name": "director mohamed amin",
+   "tweets": ""
+  },
+  {
+   "name": "Opposition Chaos",
+   "tweets": ""
+  },
+  {
+   "name": "ODM Mbadi Caravan",
+   "tweets": ""
+  },
+  {
+   "name": "Upinzani Umegawanyika",
+   "tweets": ""
+  },
+  {
+   "name": "KSh 10,000",
    "tweets": ""
   },
   {
    "name": "Mwezi wa Baba",
+   "tweets": ""
+  },
+  {
+   "name": "Moscow Goodies",
    "tweets": ""
   },
   {
@@ -66,7 +82,19 @@
    "tweets": ""
   },
   {
+   "name": "Olympic-standard",
+   "tweets": ""
+  },
+  {
+   "name": "BMUs",
+   "tweets": ""
+  },
+  {
    "name": "spirit yetu idumu",
+   "tweets": ""
+  },
+  {
+   "name": "West Uyoma",
    "tweets": ""
   },
   {
@@ -74,19 +102,7 @@
    "tweets": ""
   },
   {
-   "name": "Steph",
-   "tweets": ""
-  },
-  {
-   "name": "Lakers",
-   "tweets": ""
-  },
-  {
    "name": "ceosandgolfers at windsorgolf",
-   "tweets": ""
-  },
-  {
-   "name": "Binance",
    "tweets": ""
   },
   {
@@ -102,31 +118,553 @@
    "tweets": ""
   },
   {
-   "name": "FAFSA",
-   "tweets": ""
-  },
-  {
-   "name": "Ajax",
-   "tweets": ""
-  },
-  {
-   "name": "cleo ni partyleader",
-   "tweets": ""
-  },
-  {
-   "name": "dr james nyoro",
-   "tweets": ""
-  },
-  {
-   "name": "catherine omanyo delivers",
+   "name": "Chelsea",
    "tweets": ""
   }
  ],
- "videos": [],
- "errors": {
-  "Citizen TV": "HTTP Error 404: Not Found",
-  "NTV Kenya": "HTTP Error 404: Not Found",
-  "KTN News": "HTTP Error 404: Not Found"
- },
- "catalog": []
+ "videos": [
+  {
+   "title": "FRIDAY NIGHT NEWS ~ Oct 30, 2026",
+   "channel": "Citizen TV",
+   "views": 23515,
+   "published": "2026-10-30T19:21:08+00:00",
+   "per_hour": 1611,
+   "url": "https://www.youtube.com/watch?v=e04WLtgSQ2w",
+   "short": "https://youtube.com/shorts/e04WLtgSQ2w"
+  },
+  {
+   "title": "FACE the FACTS: Did President Ruto Score an Own Goal With the Raila Odinga Stadium Announcement?",
+   "channel": "KTN News",
+   "views": 17730,
+   "published": "2026-10-30T18:45:48+00:00",
+   "per_hour": 1167,
+   "url": "https://www.youtube.com/watch?v=yzc0O2TfQOY",
+   "short": "https://youtube.com/shorts/yzc0O2TfQOY"
+  },
+  {
+   "title": "Viral video of man spraying petrol on vehicle sparks outrage",
+   "channel": "Citizen TV",
+   "views": 11232,
+   "published": "2026-10-30T18:55:11+00:00",
+   "per_hour": 747,
+   "url": "https://www.youtube.com/watch?v=MJvRW4L4xpA",
+   "short": "https://youtube.com/shorts/MJvRW4L4xpA"
+  },
+  {
+   "title": "CBK: Two banks miss core capital target",
+   "channel": "NTV Kenya",
+   "views": 8104,
+   "published": "2026-10-30T19:56:30+00:00",
+   "per_hour": 578,
+   "url": "https://www.youtube.com/watch?v=HoGDsMwCzK4",
+   "short": "https://youtube.com/shorts/HoGDsMwCzK4"
+  },
+  {
+   "title": "Baboon invasion leaves Osala residents living in fear",
+   "channel": "Citizen TV",
+   "views": 8004,
+   "published": "2026-10-30T18:55:07+00:00",
+   "per_hour": 532,
+   "url": "https://www.youtube.com/watch?v=mhjcJZMofEE",
+   "short": "https://youtube.com/shorts/mhjcJZMofEE"
+  },
+  {
+   "title": "Woman arrested over fatal stabbing of boyfriend in Nyali",
+   "channel": "Citizen TV",
+   "views": 7524,
+   "published": "2026-10-30T18:50:00+00:00",
+   "per_hour": 498,
+   "url": "https://www.youtube.com/watch?v=Q-WICz97eHE",
+   "short": "https://youtube.com/shorts/Q-WICz97eHE"
+  },
+  {
+   "title": "Linda Mwananchi Party: Sifuna's Political Project Unites or Divides the Opposition?",
+   "channel": "KTN News",
+   "views": 7459,
+   "published": "2026-10-30T18:16:17+00:00",
+   "per_hour": 476,
+   "url": "https://www.youtube.com/watch?v=ku_3xe8Ru5U",
+   "short": "https://youtube.com/shorts/ku_3xe8Ru5U"
+  },
+  {
+   "title": "Nominated senator Nyamu pushes to give counties powers to prosecute rogue developers",
+   "channel": "Citizen TV",
+   "views": 5321,
+   "published": "2026-10-30T20:51:55+00:00",
+   "per_hour": 407,
+   "url": "https://www.youtube.com/watch?v=152hoq3p2_s",
+   "short": "https://youtube.com/shorts/152hoq3p2_s"
+  },
+  {
+   "title": "ODM-UDA Pact Faces Delays as Pressure Mounts for Clear Political Direction",
+   "channel": "KTN News",
+   "views": 4962,
+   "published": "2026-10-30T18:24:45+00:00",
+   "per_hour": 319,
+   "url": "https://www.youtube.com/watch?v=y02ko0V89YY",
+   "short": "https://youtube.com/shorts/y02ko0V89YY"
+  },
+  {
+   "title": "Ajax-Bayern friendly match coordination team to unveil plans next week",
+   "channel": "Citizen TV",
+   "views": 3213,
+   "published": "2026-10-30T19:15:44+00:00",
+   "per_hour": 219,
+   "url": "https://www.youtube.com/watch?v=E9TpaZZVg-w",
+   "short": "https://youtube.com/shorts/E9TpaZZVg-w"
+  },
+  {
+   "title": "KTN WEEKEND PRIME || 30TH OCTOBER",
+   "channel": "KTN News",
+   "views": 2334,
+   "published": "2026-10-30T19:19:10+00:00",
+   "per_hour": 159,
+   "url": "https://www.youtube.com/watch?v=ZELTb_bT9GQ",
+   "short": "https://youtube.com/shorts/ZELTb_bT9GQ"
+  },
+  {
+   "title": "High rises sparks Nyali turf war ",
+   "channel": "NTV Kenya",
+   "views": 2234,
+   "published": "2026-10-30T19:51:08+00:00",
+   "per_hour": 158,
+   "url": "https://www.youtube.com/watch?v=PKrF_FCQ5Wg",
+   "short": "https://youtube.com/shorts/PKrF_FCQ5Wg"
+  },
+  {
+   "title": "Sifuna Unveils Linda Mwananchi Team as Ruto Faces Fresh Cabinet Pressure",
+   "channel": "KTN News",
+   "views": 2084,
+   "published": "2026-10-30T18:40:57+00:00",
+   "per_hour": 136,
+   "url": "https://www.youtube.com/watch?v=wLy5eFjI_lQ",
+   "short": "https://youtube.com/shorts/wLy5eFjI_lQ"
+  },
+  {
+   "title": "MP Njeri Maina opens up about her love for music and her new hit song, ‘Hit and Run’",
+   "channel": "NTV Kenya",
+   "views": 107,
+   "published": "2026-10-31T09:16:26+00:00",
+   "per_hour": 107,
+   "url": "https://www.youtube.com/watch?v=qRhf4dRmgQc",
+   "short": "https://youtube.com/shorts/qRhf4dRmgQc"
+  },
+  {
+   "title": "Russia to stop enlisting Kenyans following deal",
+   "channel": "NTV Kenya",
+   "views": 1464,
+   "published": "2026-10-30T19:55:04+00:00",
+   "per_hour": 104,
+   "url": "https://www.youtube.com/watch?v=7AErBKkFb0k",
+   "short": "https://youtube.com/shorts/7AErBKkFb0k"
+  }
+ ],
+ "errors": {},
+ "catalog": [
+  {
+   "title": "How musician Muema Blessed is carving his niche in the music industry | Teen Republik",
+   "channel": "NTV Kenya",
+   "views": 6,
+   "published": "2026-10-31T09:29:04+00:00",
+   "per_hour": 6,
+   "url": "https://www.youtube.com/watch?v=n9he0J2TdEI",
+   "short": "https://youtube.com/shorts/n9he0J2TdEI"
+  },
+  {
+   "title": "Teen Republik hangout with Kiriani Boys High School in Tharaka Nithi",
+   "channel": "NTV Kenya",
+   "views": 8,
+   "published": "2026-10-31T09:19:22+00:00",
+   "per_hour": 8,
+   "url": "https://www.youtube.com/watch?v=aZoYkOQtRYs",
+   "short": "https://youtube.com/shorts/aZoYkOQtRYs"
+  },
+  {
+   "title": "MP Njeri Maina opens up about her love for music and her new hit song, ‘Hit and Run’",
+   "channel": "NTV Kenya",
+   "views": 107,
+   "published": "2026-10-31T09:16:26+00:00",
+   "per_hour": 107,
+   "url": "https://www.youtube.com/watch?v=qRhf4dRmgQc",
+   "short": "https://youtube.com/shorts/qRhf4dRmgQc"
+  },
+  {
+   "title": "Zenah: From dancing on 'Siaka' to releasing her own music",
+   "channel": "NTV Kenya",
+   "views": 1009,
+   "published": "2026-10-30T21:08:31+00:00",
+   "per_hour": 79,
+   "url": "https://www.youtube.com/watch?v=0ye1Gu2kCAM",
+   "short": "https://youtube.com/shorts/0ye1Gu2kCAM"
+  },
+  {
+   "title": "Jean Ojiro: Miss Universe Kenya takes the national crown to the global stage in Puerto Rico",
+   "channel": "NTV Kenya",
+   "views": 690,
+   "published": "2026-10-30T20:58:09+00:00",
+   "per_hour": 53,
+   "url": "https://www.youtube.com/watch?v=cnOfVIg7ZJo",
+   "short": "https://youtube.com/shorts/cnOfVIg7ZJo"
+  },
+  {
+   "title": "Nominated senator Nyamu pushes to give counties powers to prosecute rogue developers",
+   "channel": "Citizen TV",
+   "views": 5321,
+   "published": "2026-10-30T20:51:55+00:00",
+   "per_hour": 407,
+   "url": "https://www.youtube.com/watch?v=152hoq3p2_s",
+   "short": "https://youtube.com/shorts/152hoq3p2_s"
+  },
+  {
+   "title": "NCBA golf park open tees off",
+   "channel": "NTV Kenya",
+   "views": 671,
+   "published": "2026-10-30T19:59:26+00:00",
+   "per_hour": 48,
+   "url": "https://www.youtube.com/watch?v=kIPHrP6uS7E",
+   "short": "https://youtube.com/shorts/kIPHrP6uS7E"
+  },
+  {
+   "title": "What to expect from Mtoto News segment, Young Nation",
+   "channel": "NTV Kenya",
+   "views": 758,
+   "published": "2026-10-30T19:58:43+00:00",
+   "per_hour": 54,
+   "url": "https://www.youtube.com/watch?v=GJyGZOhcEk0",
+   "short": "https://youtube.com/shorts/GJyGZOhcEk0"
+  },
+  {
+   "title": "Co-op bank dominates digital space ",
+   "channel": "NTV Kenya",
+   "views": 504,
+   "published": "2026-10-30T19:57:54+00:00",
+   "per_hour": 36,
+   "url": "https://www.youtube.com/watch?v=mCu04n2bD9w",
+   "short": "https://youtube.com/shorts/mCu04n2bD9w"
+  },
+  {
+   "title": "Deal boosts Airtel capacity in fast-growing broadband market",
+   "channel": "NTV Kenya",
+   "views": 381,
+   "published": "2026-10-30T19:57:23+00:00",
+   "per_hour": 27,
+   "url": "https://www.youtube.com/watch?v=yQ_J95jRhdc",
+   "short": "https://youtube.com/shorts/yQ_J95jRhdc"
+  },
+  {
+   "title": "CBK: Two banks miss core capital target",
+   "channel": "NTV Kenya",
+   "views": 8104,
+   "published": "2026-10-30T19:56:30+00:00",
+   "per_hour": 578,
+   "url": "https://www.youtube.com/watch?v=HoGDsMwCzK4",
+   "short": "https://youtube.com/shorts/HoGDsMwCzK4"
+  },
+  {
+   "title": "KUJ, MCK survey: 83% of journalists show depression symptoms ",
+   "channel": "NTV Kenya",
+   "views": 298,
+   "published": "2026-10-30T19:55:50+00:00",
+   "per_hour": 21,
+   "url": "https://www.youtube.com/watch?v=3UrmxgXKwEs",
+   "short": "https://youtube.com/shorts/3UrmxgXKwEs"
+  },
+  {
+   "title": "Russia to stop enlisting Kenyans following deal",
+   "channel": "NTV Kenya",
+   "views": 1464,
+   "published": "2026-10-30T19:55:04+00:00",
+   "per_hour": 104,
+   "url": "https://www.youtube.com/watch?v=7AErBKkFb0k",
+   "short": "https://youtube.com/shorts/7AErBKkFb0k"
+  },
+  {
+   "title": "Eastleigh: Body recovered from the rubble collapsed building ",
+   "channel": "NTV Kenya",
+   "views": 1327,
+   "published": "2026-10-30T19:52:15+00:00",
+   "per_hour": 94,
+   "url": "https://www.youtube.com/watch?v=1vvNH9aN8aw",
+   "short": "https://youtube.com/shorts/1vvNH9aN8aw"
+  },
+  {
+   "title": "High rises sparks Nyali turf war ",
+   "channel": "NTV Kenya",
+   "views": 2234,
+   "published": "2026-10-30T19:51:08+00:00",
+   "per_hour": 158,
+   "url": "https://www.youtube.com/watch?v=PKrF_FCQ5Wg",
+   "short": "https://youtube.com/shorts/PKrF_FCQ5Wg"
+  },
+  {
+   "title": "Second cohort concludes KJSEA assessment nationwide",
+   "channel": "NTV Kenya",
+   "views": 304,
+   "published": "2026-10-30T19:50:07+00:00",
+   "per_hour": 22,
+   "url": "https://www.youtube.com/watch?v=gEuwGZfMtZ8",
+   "short": "https://youtube.com/shorts/gEuwGZfMtZ8"
+  },
+  {
+   "title": "FRIDAY NIGHT NEWS ~ Oct 30, 2026",
+   "channel": "Citizen TV",
+   "views": 23515,
+   "published": "2026-10-30T19:21:08+00:00",
+   "per_hour": 1611,
+   "url": "https://www.youtube.com/watch?v=e04WLtgSQ2w",
+   "short": "https://youtube.com/shorts/e04WLtgSQ2w"
+  },
+  {
+   "title": "KTN WEEKEND PRIME || 30TH OCTOBER",
+   "channel": "KTN News",
+   "views": 2334,
+   "published": "2026-10-30T19:19:10+00:00",
+   "per_hour": 159,
+   "url": "https://www.youtube.com/watch?v=ZELTb_bT9GQ",
+   "short": "https://youtube.com/shorts/ZELTb_bT9GQ"
+  },
+  {
+   "title": "Ajax-Bayern friendly match coordination team to unveil plans next week",
+   "channel": "Citizen TV",
+   "views": 3213,
+   "published": "2026-10-30T19:15:44+00:00",
+   "per_hour": 219,
+   "url": "https://www.youtube.com/watch?v=E9TpaZZVg-w",
+   "short": "https://youtube.com/shorts/E9TpaZZVg-w"
+  },
+  {
+   "title": "Kenyan fighters sweep all 11 bouts at Cheza Cheza Anza Contenders Night",
+   "channel": "Citizen TV",
+   "views": 1138,
+   "published": "2026-10-30T19:13:21+00:00",
+   "per_hour": 77,
+   "url": "https://www.youtube.com/watch?v=Z6jPuPPQZho",
+   "short": "https://youtube.com/shorts/Z6jPuPPQZho"
+  },
+  {
+   "title": "Kenya kabadii teams to battle for bronze at Commonwealth Championship",
+   "channel": "Citizen TV",
+   "views": 515,
+   "published": "2026-10-30T19:11:50+00:00",
+   "per_hour": 35,
+   "url": "https://www.youtube.com/watch?v=46pq9TasZvI",
+   "short": "https://youtube.com/shorts/46pq9TasZvI"
+  },
+  {
+   "title": "Ulinzi Stars endure poor start to KPL season",
+   "channel": "Citizen TV",
+   "views": 472,
+   "published": "2026-10-30T19:10:01+00:00",
+   "per_hour": 32,
+   "url": "https://www.youtube.com/watch?v=bMAJpF2qwYk",
+   "short": "https://youtube.com/shorts/bMAJpF2qwYk"
+  },
+  {
+   "title": "Absa expands into Dubai to connect Gulf investors with African markets",
+   "channel": "Citizen TV",
+   "views": 481,
+   "published": "2026-10-30T19:07:08+00:00",
+   "per_hour": 32,
+   "url": "https://www.youtube.com/watch?v=Z_25lo4S_n0",
+   "short": "https://youtube.com/shorts/Z_25lo4S_n0"
+  },
+  {
+   "title": "Government urged to improve business environment for SMEs",
+   "channel": "Citizen TV",
+   "views": 360,
+   "published": "2026-10-30T19:05:42+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=kn4UQJTJEHg",
+   "short": "https://youtube.com/shorts/kn4UQJTJEHg"
+  },
+  {
+   "title": "What to Expect in Saturday’s Standard: The Sifuna Moment",
+   "channel": "KTN News",
+   "views": 932,
+   "published": "2026-10-30T19:03:41+00:00",
+   "per_hour": 63,
+   "url": "https://www.youtube.com/watch?v=JnXJFAuNrTE",
+   "short": "https://youtube.com/shorts/JnXJFAuNrTE"
+  },
+  {
+   "title": "Kenya's inflation rate rises to 7.3% in October",
+   "channel": "Citizen TV",
+   "views": 398,
+   "published": "2026-10-30T19:02:33+00:00",
+   "per_hour": 27,
+   "url": "https://www.youtube.com/watch?v=Rfw3mLCy7JM",
+   "short": "https://youtube.com/shorts/Rfw3mLCy7JM"
+  },
+  {
+   "title": "FKF Calls Special Meeting to Resolve Wrangles Between Hussein Mohammed and Mariga",
+   "channel": "KTN News",
+   "views": 363,
+   "published": "2026-10-30T19:01:28+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=9pICtRos23w",
+   "short": "https://youtube.com/shorts/9pICtRos23w"
+  },
+  {
+   "title": "Kenya to host Africa PPP infrastructure finance summit next month",
+   "channel": "Citizen TV",
+   "views": 1329,
+   "published": "2026-10-30T19:01:22+00:00",
+   "per_hour": 89,
+   "url": "https://www.youtube.com/watch?v=JvTvcRgEH1I",
+   "short": "https://youtube.com/shorts/JvTvcRgEH1I"
+  },
+  {
+   "title": "Co-operative Bank strengthens social impact investment in healthcare",
+   "channel": "Citizen TV",
+   "views": 269,
+   "published": "2026-10-30T18:59:14+00:00",
+   "per_hour": 18,
+   "url": "https://www.youtube.com/watch?v=e-l5tLv_ups",
+   "short": "https://youtube.com/shorts/e-l5tLv_ups"
+  },
+  {
+   "title": "Nyatuka and Wanjala to Make History at 2026 Youth Olympics",
+   "channel": "KTN News",
+   "views": 278,
+   "published": "2026-10-30T18:57:33+00:00",
+   "per_hour": 19,
+   "url": "https://www.youtube.com/watch?v=B4CmV4EjUhU",
+   "short": "https://youtube.com/shorts/B4CmV4EjUhU"
+  },
+  {
+   "title": "Correction: Murder incident occurred in Sholinke village, not Entarakuet",
+   "channel": "Citizen TV",
+   "views": 1000,
+   "published": "2026-10-30T18:56:23+00:00",
+   "per_hour": 67,
+   "url": "https://www.youtube.com/watch?v=IXKM7i72WN8",
+   "short": "https://youtube.com/shorts/IXKM7i72WN8"
+  },
+  {
+   "title": "Junior Starlets Exit U17 World Cup After 3-1 Defeat to Japan",
+   "channel": "KTN News",
+   "views": 391,
+   "published": "2026-10-30T18:56:19+00:00",
+   "per_hour": 26,
+   "url": "https://www.youtube.com/watch?v=U-Z1Y510DNk",
+   "short": "https://youtube.com/shorts/U-Z1Y510DNk"
+  },
+  {
+   "title": "Viral video of man spraying petrol on vehicle sparks outrage",
+   "channel": "Citizen TV",
+   "views": 11232,
+   "published": "2026-10-30T18:55:11+00:00",
+   "per_hour": 747,
+   "url": "https://www.youtube.com/watch?v=MJvRW4L4xpA",
+   "short": "https://youtube.com/shorts/MJvRW4L4xpA"
+  },
+  {
+   "title": "Baboon invasion leaves Osala residents living in fear",
+   "channel": "Citizen TV",
+   "views": 8004,
+   "published": "2026-10-30T18:55:07+00:00",
+   "per_hour": 532,
+   "url": "https://www.youtube.com/watch?v=mhjcJZMofEE",
+   "short": "https://youtube.com/shorts/mhjcJZMofEE"
+  },
+  {
+   "title": "Business Ireland Kenya Rebrands as Irish Chamber of Commerce Kenya",
+   "channel": "KTN News",
+   "views": 248,
+   "published": "2026-10-30T18:54:36+00:00",
+   "per_hour": 16,
+   "url": "https://www.youtube.com/watch?v=Gsk9u7_6Zgw",
+   "short": "https://youtube.com/shorts/Gsk9u7_6Zgw"
+  },
+  {
+   "title": "CRA Proposes Sh457.28 Billion for Counties in 2027/2028",
+   "channel": "KTN News",
+   "views": 343,
+   "published": "2026-10-30T18:54:32+00:00",
+   "per_hour": 23,
+   "url": "https://www.youtube.com/watch?v=ckNARqz1l10",
+   "short": "https://youtube.com/shorts/ckNARqz1l10"
+  },
+  {
+   "title": "In the Dailies: Sifuna Moment",
+   "channel": "KTN News",
+   "views": 388,
+   "published": "2026-10-30T18:51:33+00:00",
+   "per_hour": 26,
+   "url": "https://www.youtube.com/watch?v=JiGEl5zbhwE",
+   "short": "https://youtube.com/shorts/JiGEl5zbhwE"
+  },
+  {
+   "title": "Woman arrested over fatal stabbing of boyfriend in Nyali",
+   "channel": "Citizen TV",
+   "views": 7524,
+   "published": "2026-10-30T18:50:00+00:00",
+   "per_hour": 498,
+   "url": "https://www.youtube.com/watch?v=Q-WICz97eHE",
+   "short": "https://youtube.com/shorts/Q-WICz97eHE"
+  },
+  {
+   "title": "LSK Accuses President Ruto of Defying Court Order on Cabinet Gender Rule",
+   "channel": "KTN News",
+   "views": 1374,
+   "published": "2026-10-30T18:47:11+00:00",
+   "per_hour": 91,
+   "url": "https://www.youtube.com/watch?v=TL0G4PLrnAs",
+   "short": "https://youtube.com/shorts/TL0G4PLrnAs"
+  },
+  {
+   "title": "FACE the FACTS: Did President Ruto Score an Own Goal With the Raila Odinga Stadium Announcement?",
+   "channel": "KTN News",
+   "views": 17730,
+   "published": "2026-10-30T18:45:48+00:00",
+   "per_hour": 1167,
+   "url": "https://www.youtube.com/watch?v=yzc0O2TfQOY",
+   "short": "https://youtube.com/shorts/yzc0O2TfQOY"
+  },
+  {
+   "title": "Sifuna Unveils Linda Mwananchi Team as Ruto Faces Fresh Cabinet Pressure",
+   "channel": "KTN News",
+   "views": 2084,
+   "published": "2026-10-30T18:40:57+00:00",
+   "per_hour": 136,
+   "url": "https://www.youtube.com/watch?v=wLy5eFjI_lQ",
+   "short": "https://youtube.com/shorts/wLy5eFjI_lQ"
+  },
+  {
+   "title": "Dr Naim Bilal Yaseen Appointed New Standard Group Chief Executive Officer",
+   "channel": "KTN News",
+   "views": 1120,
+   "published": "2026-10-30T18:37:50+00:00",
+   "per_hour": 73,
+   "url": "https://www.youtube.com/watch?v=-K8Gvkv1Hoc",
+   "short": "https://youtube.com/shorts/-K8Gvkv1Hoc"
+  },
+  {
+   "title": "LSK Gives Police Seven Days to Arrest Suspects in Alex Kiprotich Abduction",
+   "channel": "KTN News",
+   "views": 735,
+   "published": "2026-10-30T18:35:47+00:00",
+   "per_hour": 48,
+   "url": "https://www.youtube.com/watch?v=4MRYM-i6ln4",
+   "short": "https://youtube.com/shorts/4MRYM-i6ln4"
+  },
+  {
+   "title": "ODM-UDA Pact Faces Delays as Pressure Mounts for Clear Political Direction",
+   "channel": "KTN News",
+   "views": 4962,
+   "published": "2026-10-30T18:24:45+00:00",
+   "per_hour": 319,
+   "url": "https://www.youtube.com/watch?v=y02ko0V89YY",
+   "short": "https://youtube.com/shorts/y02ko0V89YY"
+  },
+  {
+   "title": "Linda Mwananchi Party: Sifuna's Political Project Unites or Divides the Opposition?",
+   "channel": "KTN News",
+   "views": 7459,
+   "published": "2026-10-30T18:16:17+00:00",
+   "per_hour": 476,
+   "url": "https://www.youtube.com/watch?v=ku_3xe8Ru5U",
+   "short": "https://youtube.com/shorts/ku_3xe8Ru5U"
+  }
+ ]
 }
