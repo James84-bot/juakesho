@@ -1651,13 +1651,85 @@
         "note": "Ensure the photo query matches the grim nature of Russian military recruitment rather than a standard travel board."
       },
       "drafted_at": "2026-10-31T19:48:11.232820+03:00"
+    },
+    {
+      "id": "2026-w44-hot-1101",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Job seekers",
+      "line": "A court ordered a Nairobi Water employee to refund *Sh7.5 million* earned with a forged KCSE certificate.",
+      "fact": "The court ruled that all salaries earned through forged certificates must be repaid to taxpayers in full.",
+      "source": "Citizen Digital, 2026-10-31",
+      "message": "A court ordered a worker to refund Sh7.5 million in salary after using a forged KCSE certificate to get hired.",
+      "action": "Report forged public service credentials to the EACC through report@integrity.go.ke",
+      "photo_query": "Supreme Court of Kenya",
+      "beats": [
+        "A court ordered a Nairobi Water worker to refund *Sh7.5 million*.",
+        "The employee secured the job using a forged KCSE certificate.",
+        "Salaries earned through *fraud* must be returned to taxpayers.",
+        "Kenyans demand: all public bodies audit staff certificates now.",
+        "Report suspected fake certificates to EACC on *report@integrity.go.ke*."
+      ],
+      "caption": "Citizen Digital reports: A court ordered a Nairobi Water worker to refund Sh7.5 million earned with a fake KCSE certificate. Qualified Kenyans search for work every day while fake papers take public salaries.\n\nShould every public agency audit staff academic papers now?\n\n#PublicService #KenyaOnRecord",
+      "who": "Employment and Labour Relations Court",
+      "where": "Nairobi",
+      "when": "31 Oct 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Taxpayers recover lost money and qualified job seekers gain protection against fake academic papers.",
+      "bg": "usiku",
+      "publish_at": "2026-11-01T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Citizen Digital",
+          "title": "Court orders Nairobi Water employee to pay Ksh.7.5M over forged KCSE certificate",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOS3M2VGE2R2NaX0hFenI1U0dSWHN3c1dsZkd3d3dfRGZMSjBIdlB6UjRLdGhSSmZoNmY1Slg3N0xNd0V0aXl5Z2dkNnR5QzgybXBwbmpPbHlxc0pwa0Y0R08zMHFFOU96ZFVJNm1vYWlzN09GWGZoRUtTdU9DTF9mYkZ4bENvNV9ZR0NXekxtRlJHclZQNkV6V2NUMnhVUERVUndNZHpjT3BhdnBESFRwTWt6WGkwaG9od2c?oc=5",
+          "published": "2026-10-31"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 3,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.5,
+        "note": "Link this to current public service vetting to match this week's high-demand stories."
+      },
+      "drafted_at": "2026-11-01T09:17:44.234818+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-hot-1101-photo.jpg",
+      "photo_credit": "Photo: Unknown Indian artist / Wikimedia Commons, Public domain",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Turquiose_crossandra_-_Unknown_-_19_1927_2_74.jpg",
+      "video_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/videos/2026-w44-hot-1101-video.mp4",
+      "video_credit": "Footage: xat-ch / Pixabay",
+      "video_source": "https://pixabay.com/videos/id-50109/",
+      "reel": true,
+      "tg_msg": 679
     }
   ],
   "scripts": {
-    "radio": "Habari za leo, mwananchi. Welcome to Kenya on Record. Let’s talk about a very disturbing matter that has been making rounds—the illegal recruitment of Kenyan youth into foreign military service, specifically targeting Russia.\n\nSerikali kupitia Wizara ya Mambo ya Nje imethibitisha kuwa imesitisha njama hii chafu. Agents wamekuwa wakiwarubuni vijana wetu kwa ahadi za mishahara minono na kazi za ulinzi, lakini kumbe wanapelekwa mstari wa mbele vitani.\n\nAs grown-ups, we must ask: how desperate are we getting, and who is protecting our children? While unemployment is a real crisis in this country, trading your life for a rifle in a foreign war is not the way out. Our youth are our future, cannon fodder. \n\nThe government has stepped in, yes, but vigilance begins at home. If someone approaches you or your child with suspicious job offers abroad involving private security or military training, report them immediately. Usikubali kupoteza maisha kwa sababu ya ahadi za uongo. Protect your peace, protect your life.\n\n***\n\n*Kwa ufupi:* Serikali imeingilia kati na kusitisha mpango haramu uliokuwa ukiwarubuni vijana wa Kenya kujiunga na jeshi la Urusi. Wazazi na vijana mnaombwa kuwa waangalifu na msiangukie kwenye mitego ya ajira za udanganyifu za nje ya nchi.",
-    "voice_note": "Wadau, mambo vipi. Sikilizeni hii kwa makini sana. Kumekuwa na habari za kusikitisha za vijana wetu kurubuniwa kujiunga na jeshi la Urusi kwa ahadi za pesa nyingi. Serikali imesema imesitisha mpango huo, lakini tunafaa kuwa macho zaidi. Watu wanakuja na ahadi za uongo za kazi za ulinzi nje ya nchi, kumbe wanawapeleka vitani. Tafadhali, onya kijana wako, ndugu yako, ama rafiki yako. Usikubali maisha yako yamalizike kwa sababu ya kazi ya mkato. Angalia vizuri kabla hujakubali ofa yoyote ya nje. Tujilinde.",
-    "sms": "Okoa maisha: Serikali imesitisha ulanguzi wa vijana kwenda vitani Urusi. Usikubali kurubuniwa na ahadi za uongo za kazi za 'security' nje. Linda kijana wako.",
-    "reels": "Wakenya wenzangu, kuna moto chini ya moshi! Vijana wetu walikuwa wanarubuniwa kwenda kupigana vita vya Urusi kwa ahadi za pesa. Serikali imesitisha huu mchezo mchafu, lakini swali ni je—kwanini vijana wetu wanawindwa kirahisi hivi? Ukiona mtu anakuletea deal ya 'security job' nje ya nchi yenye pesa mingi kushinda akili, kimbia! Usiende ukadhani ni mchezo. Maisha yako hayana bei. Kuwa mwangalifu, linda kijana wetu, linda Kenya."
+    "radio": "Jambo and welcome back to Kenya on Record. Today, we need to talk about integrity, specifically within our workplaces and institutions. A recent court ruling has set a sobering precedent for anyone tempted to take shortcuts on their CV.\n\nThe court ordered a former employee to refund a staggering seven point five million shillings—every single coin earned in salary over the years—after it was established that the job was secured using a forged KCSE certificate. For years, this individual drew a regular income, perhaps believing the paper lie was buried for good. But the law was uncompromising: you cannot reap legitimate earnings from an illegality. Fraud vitiates contracts, period.\n\nThis judgment is a massive wake-up call. To employers: lax background checks and superficial human resource audits will expose your organization to huge liabilities. To job seekers: falsifying academic documents is not a clever survival tactic; it is a crime that can leave you financially ruined when the truth surfaces. Integrity isn’t just a moral virtue; in the eyes of the law, it is a binding requirement.\n\nKwa ufupi: Mahakama imeamuru mfanyakazi aliyetumia cheti feki cha KCSE kurudisha mishahara yote ya shilingi milioni saba nukta tano alizolipwa. Huwezi kufaidika kutokana na udanganyifu, na sheria ikikupata, utalipa kila senti. Wekeza kwenye bidii halisi.\n\nKeep your records straight, and let's keep Kenya on record.",
+    "voice_note": "Hujambo, this is Kenya on Record with an important accountability check this week. A landmark court ruling has sent shockwaves through both public and private sectors. A worker who secured employment using a forged KCSE certificate has been ordered to refund 7.5 million shillings—every cent of the salary paid out. The court was crystal clear: an illegal act cannot yield lawful benefits. If you cheated your way into a position, that income was never rightfully yours. This isn't just a personal tragedy for the individual; it’s a warning to anyone holding forged papers and to employers who fail to verify credentials. The wheels of justice might turn slowly, but when an audit catches up with you, the financial restitution will be brutal. Build your career on truth. Share this voice note with a friend.",
+    "sms": "Usiibiwe: Using forged academic papers is fraud. Courts can order a full refund of all salaries earned. Vetting catches up; protect your integrity.",
+    "reels": "Imagine working for years, only for a court to order you to return every single coin you were paid. That just happened. A worker must now refund 7.5 million shillings in salary after being exposed for using a forged KCSE certificate. The ruling was simple: fraud cannot produce legitimate earnings. If you lied to get the job, the money isn't yours. Accountability always catches up."
   },
   "spend_usd": 0.0
 }
