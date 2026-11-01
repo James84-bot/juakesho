@@ -1,10 +1,32 @@
 {
-  "fetched": "2026-11-01T14:02:26.777400+00:00",
+  "fetched": "2026-11-01T18:23:53.071321+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "arsenal vs aston villa",
-      "traffic": "2000+",
+      "title": "liverpool",
+      "traffic": "20000+",
+      "news": [
+        {
+          "title": "Liverpool vs Arsenal LIVE: Premier League score, lineups, commentary & updates",
+          "url": "https://www.bbc.com/sport/football/live/cqev37r8jvvxt",
+          "source": "BBC"
+        },
+        {
+          "title": "Liverpool vs Arsenal live: Premier League",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/11/1/liverpool-vs-arsenal-live-premier-league",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": "Liverpool 0-1 Arsenal LIVE - Premier League score as Dominik Szoboszlai comes on with Reds pushing for equaliser",
+          "url": "https://www.tntsports.co.uk/football/premier-league/2026-2027/live-liverpool-arsenal_mtc21883088/live-commentary.shtml",
+          "source": "TNT Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "arsenal vs",
+      "traffic": "5000+",
       "news": [
         {
           "title": "Arsenal vs Aston Villa: Women's Super League stats & head-to-head",
@@ -12,163 +34,194 @@
           "source": "BBC"
         },
         {
-          "title": "Renee Slegers exclusive: Going 'back to basics' has loosened Arsenal team following back-to-back wins",
-          "url": "https://www.skysports.com/football/news/13605338/renee-slegers-exclusive-going-back-to-basics-has-loosened-arsenal-team-following-back-to-back-wins",
+          "title": "WSL round-up: Alessia Russo scores late equaliser to salvage draw for Arsenal as Man City hold on to beat London City",
+          "url": "https://www.skysports.com/football/news/13605750/wsl-round-up-alessia-russo-scores-late-equaliser-to-salvage-draw-for-arsenal-as-man-city-hold-on-to-beat-london-city",
           "source": "Sky Sports"
         },
         {
-          "title": "Renée: “We have to be prepared and humble”",
-          "url": "https://www.arsenal.com/news/renee-we-have-to-be-prepared-and-humble-aHw150u5fE8J",
+          "title": "Team news: Renée makes one change against Villa",
+          "url": "https://www.arsenal.com/news/team-news-renee-makes-one-change-against-villa-ai3fH1H9sUgF",
           "source": "Arsenal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "como",
+      "title": "lyon",
       "traffic": "1000+",
       "news": [
         {
-          "title": "La Fiscalía de Menores deja en libertad al último detenido en el centro de València por Blocus, un joven de 16 años",
-          "url": "https://www.eldiario.es/comunitat-valenciana/fiscalia-menores-deja-libertad-ultimo-detenido-centro-valencia-blocus-joven-16-anos_1_13630533.html",
-          "source": "elDiario.es"
-        },
-        {
-          "title": "Entre la organización criminal y el terrorismo: la Audiencia Nacional pone la lupa sobre los detenidos vinculados al movimiento ‘Blocus’",
-          "url": "https://www.elconstitucional.es/es/nacional/tribunales/entre-organizacion-criminal-terrorismo-audiencia-nacional-pone-lupa-sobre-detenidos-vinculados-movimiento-blocus_9667_102.html",
-          "source": "El Constitucional"
-        },
-        {
-          "title": "La Policía Nacional detiene a otro miembro de 'Blocus Vlc'",
-          "url": "https://www.europapress.es/videos/video-policia-nacional-detiene-otro-miembro-blocus-vlc-20261101144337.html",
-          "source": "Europa Press"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "london vs man city",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "WSL LIVE! Match updates, scores, streams and free highlights with Man Utd, Arsenal and Chelsea in action",
-          "url": "https://www.skysports.com/football/live-blog/13605745/wsl-live-match-updates-scores-streams-and-free-highlights-with-man-utd-arsenal-and-chelsea-in-action",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "London City Lionesses are a WSL force - but can Ballon d'Or winner Alexia Putellas & Co. challenge for the title?",
-          "url": "https://www.goal.com/en-ke/originals/london-city-lionesses-wsl-force-can-ballon-dor-winner-alexia-putellas-challenge-title/bltbbf8601bd940c9f7",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Licensable picture: London City Lionesses v Manchester City Women Barclays Women's Super League",
-          "url": "https://www.reutersconnect.com/item/london-city-lionesses-v-manchester-city-women-barclays-womens-super-league/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBNSU9YWTA",
-          "source": "Reuters Connect"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "falkirk vs celtic",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Falkirk vs Celtic LIVE! Scottish Premiership match updates, news, score, stream and goals",
-          "url": "https://www.skysports.com/football/live-blog/13605298/falkirk-vs-celtic-live",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Football Tips: Duran & Murrell scoring in Sunday’s Falkirk v Celtic Best Bets",
-          "url": "https://news.paddypower.com/football/2026/10/31/football-tips-falkirk-celtic-best-bets-premiership-1st-november/",
-          "source": "Paddy Power News"
-        },
-        {
-          "title": "CONFIRMED: CCV STARTS, NYGREN OUT, OX IN",
-          "url": "https://www.celticquicknews.co.uk/confirmed-ccv-starts-nygren-out-ox-in/",
-          "source": "Celtic Quick News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "trabzonspor vs gaziantep",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "TRT 1 şifresiz canlı izle: Gaziantep FK Trabzonspor maçı canlı TRT 1 izle yayın 3 Temmuz 2026,",
-          "url": "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vbGVvZ29hdHMuZ2l0aHViLmlvL2JmLmVkdS91am0ueG1sIi8+PC9rcnBhbm8+&id=video-gaziantep-fk-trabzonspor-lie-en-ktlyafn",
+          "title": "*@![EN DIRECT] Angers OL match EN DIRECT à la télé",
+          "url": "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vbGVvZ29hdHMuZ2l0aHViLmlvL2JmLmVkdS91am0ueG1sIi8+PC9rcnBhbm8+&id=video-angers-ol-match-lie-en-oulmtsr",
           "source": "Pierce Manufacturing"
         },
         {
-          "title": "Akyazı'da 35 Bin Fırtına",
-          "url": "https://karadenizgazete.com.tr/spor/futbol/akyazida-35-bin-firtina/631139",
-          "source": "Karadeniz Gazetesi"
+          "title": "L1 : Lyon 2-0 Angers (fini)",
+          "url": "https://news.maxifoot.fr/ligue-1/lyon-2-0-angers-fini-foot-466889.htm",
+          "source": "Maxifoot"
         },
         {
-          "title": "Orhan Ak açıkladı! “Bugün burada savaşan bir takım olacak”",
-          "url": "https://www.61saat.com/orhan-ak-acikladi-bugun-burada-savasan-bir-takim-olacak",
-          "source": "61SAAT"
+          "title": "OL - Angers : Nuamah en pointe accompagné par Nakamura et Duranville",
+          "url": "https://www.live-mercato.com/article/203436-ol-angers-nuamah-en-pointe-accompagne-par-nakamura-et-duranville",
+          "source": "www.live-mercato.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "military base",
+      "title": "kylian mbappé",
       "traffic": "500+",
       "news": [
         {
-          "title": "Hackers pushed freezers at hundreds of French supermarkets to 122 degrees. Now the Pentagon is asking whether the same thing hit U.S. military bases",
-          "url": "https://fortune.com/2026/11/01/hackers-pushed-freezers-at-hundreds-of-french-supermarkets-to-122-degrees-pentagon-investigating-us-military-bases/",
-          "source": "Fortune"
+          "title": "Unstoppable! Kylian Mbappe maintains 100% scoring record in La Liga after extending remarkable streak against Racing Santander",
+          "url": "https://www.goal.com/en-ke/news/kylian-mbappe-la-liga-scoring-streak-racing-santander/blt139a5411ea7aa023",
+          "source": "Goal.com"
         },
         {
-          "title": "EXCLUSIVE: Pentagon treating military base freezer malfunctions as suspected cyberattack, officials say",
-          "url": "https://www.reuters.com/technology/pentagon-treating-military-base-freezer-malfunctions-suspected-cyberattack-2026-10-29/",
-          "source": "Reuters"
+          "title": "No mercy: Mbappé boosts his record tally with Real Madrid",
+          "url": "https://www.livescore.com/en/news/football/laliga/no-mercy-mbapp-boosts-his-record-tally-with-real-madrid-goal/",
+          "source": "LiveScore"
         },
         {
-          "title": "U.S. Military Thinks Hackers Defrosted All Its Ice Cream",
-          "url": "https://gizmodo.com/u-s-military-thinks-hackers-defrosted-all-its-ice-cream-2000832872",
-          "source": "Gizmodo"
+          "title": "Mbappé extends an unprecedented record",
+          "url": "https://www.marca.com/en/football/spanish-football/2026/11/01/mbappe-extends-an-unprecedented-record.html",
+          "source": "MARCA"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "como fc",
+      "title": "eintracht frankfurt vs hamburg",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "„Am Sonntag geht es in der Bundesliga um andere Dinge“",
+          "url": "https://www.hsv.de/news/am-sonntag-geht-es-in-der-bundesliga-um-andere-dinge",
+          "source": "HSV"
+        },
+        {
+          "title": "Liveticker | Eintracht Frankfurt - Hamburger SV : | 8. Spieltag | Bundesliga 2026/27",
+          "url": "https://www.kicker.ch/frankfurt-gegen-hsv-2026-bundesliga-5226874/ticker",
+          "source": "www.kicker.ch"
+        },
+        {
+          "title": "„Komplett verpfiffen“: HSV-Fans wüten über Eintrachts Schiri-Glück",
+          "url": "https://www.absolutfussball.com/deutschland/eintracht-frankfurt/hsv-fans-wueten-wegen-schiri-gluecks-der-eintracht-im-pokal-94561540.html",
+          "source": "Absolut Fussball"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "eintracht frankfurt",
       "traffic": "200+",
       "news": [
         {
-          "title": "Como vs Venezia: Italian Serie A stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cj93zwrnpzp4t",
+          "title": "Chatzialexiou erklärt Wechsel: \"Die Legende wird auch ohne mich leben\"",
+          "url": "https://www.kicker.de/chatzialexiou-erklaert-wechsel-die-legende-wird-auch-ohne-mich-leben-1267429/artikel",
+          "source": "Kicker"
+        },
+        {
+          "title": "Ex-BVB-Star schon bald auf der Trainerbank",
+          "url": "https://www.fussballdaten.de/news/ex-bvb-star-schon-bald-auf-der-trainerbank/",
+          "source": "fussballdaten.de"
+        },
+        {
+          "title": "Eintracht Frankfurt: Warum Präsident Beck ein Meisterstück gelang",
+          "url": "https://www.bild.de/sport/fussball/eintracht-frankfurt-warum-praesident-beck-ein-meisterstueck-gelang-6ae713656a5ed9f2131344eb",
+          "source": "BILD"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "yan diomandé",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Real Madrid : l’incroyable pétard de Yan Diomandé contre Santander",
+          "url": "https://www.footmercato.net/a7166158714742995157-real-madrid-lincroyable-petard-de-yan-diomande-contre-santander",
+          "source": "Foot Mercato"
+        },
+        {
+          "title": "« Il dribblait cinq ou six adversaires plus âgés que lui » : retour aux sources du phénomène Diomandé",
+          "url": "https://lejournaldureal.fr/2026/10/31/diomande-debut-carriere",
+          "source": "Le Journal du Real"
+        },
+        {
+          "title": "Vidéo : « Il n'y a plus de place pour Vinicius désormais », Diomande ébranle les calculs du Real Madrid avec un but spectaculaire !",
+          "url": "https://www.goal.com/fr/news/video-il-n-y-a-plus-de-place-pour-vinicius-desormais-diomande-ebranle-les-calculs-du-real-madrid-avec-un-but-spectaculaire/blt01eee660ebf4f8a4",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "hamburg",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Trauer um den deutschen Beatles-Entdecker Horst Fascher",
+          "url": "https://www.bild.de/unterhaltung/stars-und-leute/trauer-um-den-deutschen-beatles-entdecker-horst-fascher-6ae6d9c1aedea8cd9ffc0357",
+          "source": "BILD"
+        },
+        {
+          "title": "Er holte die Beatles nach Hamburg: Kiez-Legende Horst Fascher ist tot",
+          "url": "https://www.mopo.de/hamburg/er-holte-die-beatles-nach-hamburg-kiez-legende-horst-fascher-ist-tot/5064498",
+          "source": "MOPO"
+        },
+        {
+          "title": "Nachruf auf Horst Fascher: Ohne ihn wären die Beatles noch in Liverpool - Kultur - SZ.de",
+          "url": "https://www.sueddeutsche.de/kultur/horst-fascher-beatles-star-club-nachruf-li.3572489",
+          "source": "SZ.de"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "sk rapid",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Rapid-Trainer Hoff Thorup privat: „Ich nehme Ronaldo, aber den echten“",
+          "url": "https://kurier.at/sport/fussball/rapid-trainer-hoff-thorup-obama-derby-fangesaenge-interview/403202093",
+          "source": "Kurier"
+        },
+        {
+          "title": "Unglückliche Niederlage im Heimderby",
+          "url": "https://fk-austria.at/news/ungl%C3%BCckliche-niederlage-im-heimderby",
+          "source": "FK Austria Wien"
+        },
+        {
+          "title": "Nach Fehlstart wartet das Derby, die Austria hat im Moment: „Wenig Spaß“",
+          "url": "https://www.skysportaustria.at/mediathek/nach-fehlstart-wartet-das-derby-die-austria-hat-im-moment-wenig-spass/",
+          "source": "Sky Sport Austria"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "sky sports",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Liverpool vs Arsenal LIVE: Premier League score, lineups, commentary & updates",
+          "url": "https://www.bbc.com/sport/football/live/cqev37r8jvvxt",
           "source": "BBC"
         },
         {
-          "title": "✅ Como-Venezia XIs | Paz, Baturina, Ricci, Butez and Busio",
-          "url": "https://sports.yahoo.com/articles/official-como-venezia-line-ups-103800145.html",
-          "source": "Yahoo Sports"
+          "title": "Liverpool vs Arsenal live: Premier League",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/11/1/liverpool-vs-arsenal-live-premier-league",
+          "source": "Al Jazeera"
         },
         {
-          "title": "Como beats Milan, Fabregas' team is forgiven a penalty",
-          "url": "https://www.cna.al/english/sport/como-kalon-milanin-skuadra-e-fabregas-i-falet-nje-penalltie-i478594",
-          "source": "www.cna.al"
+          "title": "Liverpool 0-1 Arsenal LIVE - Premier League score as Dominik Szoboszlai comes on with Reds pushing for equaliser",
+          "url": "https://www.tntsports.co.uk/football/premier-league/2026-2027/live-liverpool-arsenal_mtc21883088/live-commentary.shtml",
+          "source": "TNT Sports"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "strasbourg vs auxerre",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "gor mahia",
-      "why": "unsafe: 'SportPesa'"
-    },
-    {
-      "title": "afc leopards",
-      "why": "unsafe: 'SportPesa'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
