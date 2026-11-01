@@ -1730,13 +1730,86 @@
       "story_id": "18362453149217727",
       "fb_story_id": "1381455847176356",
       "yt_id": "gMuFHK09Ang"
+    },
+    {
+      "id": "2026-w44-hot-1101m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Phone buyers",
+      "line": "KRA plans to *tax mobile phones* at the point of SIM card activation.",
+      "fact": "KRA plans to match phone device codes to customs records to verify import duty during SIM registration.",
+      "message": "KRA plans to collect import taxes on mobile phones directly during SIM activation.",
+      "photo_query": "mobile phone Nairobi",
+      "source": "People Daily, 2026-11-01",
+      "beats": [
+        "KRA plans to *tax mobile phones* when users activate a SIM card.",
+        "The system matches device numbers to check if *customs duty* was paid.",
+        "Unregistered devices will face new *tax charges* on Kenyan networks.",
+        "Kenyans demand: KRA *publishes clear rules* before enforcing phone taxes."
+      ],
+      "action": "Demand that phone dealers provide an official KRA tax invoice with every purchase.",
+      "who": "Kenya Revenue Authority",
+      "where": "National",
+      "when": "1 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Buying a mobile phone could cost more if sellers bypass official customs duty.",
+      "caption": "People Daily reports: KRA plans to tax mobile phones at the point of SIM card activation.\n\nThe taxman will check device identification numbers to confirm that import duty was paid.\n\nWhat it means for you: buying a phone could cost more if sellers skip customs duty.\n\nTell us what you think about taxing phones at SIM activation.\n\n#KenyaOnRecord #SautiYaMwananchi #KRA",
+      "bg": "usiku",
+      "publish_at": "2026-11-01T19:47:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "A court ordered a worker to refund Sh7.5 million in salary after using a forged KCSE certificate to get hired."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "KRA boss Ndiritu Muriithi explains plan to tax phones at SIM card activation",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOenNSdGxhQ1BvVGo5T3FQQlBHODNwemx1bGVOdkhDMXUzSVdlQTkxY0RqeUV1NVdjNVF2cWJmMU9kQ3hTbmxsTXFXTVVuU1NVd1pqbk9ocUlDaUowQmNkUXowM3ozc050REtWdEg4N0NhNm9WVTFRV01Pc1lwRi1rZERiZXZxRDljU0ZEdEZidWlYOTFkTGQwemxxb29OQUd2X3lGYi10ejlRcjItemE3V1Fjbw?oc=5",
+          "published": "2026-11-01"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 9,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 8.1,
+        "note": "Ensure the beat-by-beat progression strictly adheres to active verbs without filler."
+      },
+      "drafted_at": "2026-11-01T14:00:39.791777+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W44/photos/2026-w44-hot-1101m-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127788-kra-collects-ksh-90b-customs-revenue-exceeding-september-target-ksh-965m",
+      "reel": true,
+      "tg_msg": 686,
+      "auto": true,
+      "decided_at": "2026-11-01T14:02:19.380030+03:00"
     }
   ],
   "scripts": {
-    "radio": "Jambo and welcome back to Kenya on Record. Today, we need to talk about integrity, specifically within our workplaces and institutions. A recent court ruling has set a sobering precedent for anyone tempted to take shortcuts on their CV.\n\nThe court ordered a former employee to refund a staggering seven point five million shillings—every single coin earned in salary over the years—after it was established that the job was secured using a forged KCSE certificate. For years, this individual drew a regular income, perhaps believing the paper lie was buried for good. But the law was uncompromising: you cannot reap legitimate earnings from an illegality. Fraud vitiates contracts, period.\n\nThis judgment is a massive wake-up call. To employers: lax background checks and superficial human resource audits will expose your organization to huge liabilities. To job seekers: falsifying academic documents is not a clever survival tactic; it is a crime that can leave you financially ruined when the truth surfaces. Integrity isn’t just a moral virtue; in the eyes of the law, it is a binding requirement.\n\nKwa ufupi: Mahakama imeamuru mfanyakazi aliyetumia cheti feki cha KCSE kurudisha mishahara yote ya shilingi milioni saba nukta tano alizolipwa. Huwezi kufaidika kutokana na udanganyifu, na sheria ikikupata, utalipa kila senti. Wekeza kwenye bidii halisi.\n\nKeep your records straight, and let's keep Kenya on record.",
-    "voice_note": "Hujambo, this is Kenya on Record with an important accountability check this week. A landmark court ruling has sent shockwaves through both public and private sectors. A worker who secured employment using a forged KCSE certificate has been ordered to refund 7.5 million shillings—every cent of the salary paid out. The court was crystal clear: an illegal act cannot yield lawful benefits. If you cheated your way into a position, that income was never rightfully yours. This isn't just a personal tragedy for the individual; it’s a warning to anyone holding forged papers and to employers who fail to verify credentials. The wheels of justice might turn slowly, but when an audit catches up with you, the financial restitution will be brutal. Build your career on truth. Share this voice note with a friend.",
-    "sms": "Usiibiwe: Using forged academic papers is fraud. Courts can order a full refund of all salaries earned. Vetting catches up; protect your integrity.",
-    "reels": "Imagine working for years, only for a court to order you to return every single coin you were paid. That just happened. A worker must now refund 7.5 million shillings in salary after being exposed for using a forged KCSE certificate. The ruling was simple: fraud cannot produce legitimate earnings. If you lied to get the job, the money isn't yours. Accountability always catches up."
+    "radio": "Good evening. This is Kenya on Record.\n\nIf you are planning to purchase a new phone, pay close attention. The Kenya Revenue Authority is proposing a mechanism to collect import taxes directly when you insert a SIM card to activate your device.\n\nUnder this plan, telecommunication operators would interface their network systems with KRA’s customs database. If an IMEI number does not reflect custom clearance or duty payment, the device could either be taxed on the spot or locked out of network services entirely.\n\nOn paper, the taxman aims to curb grey-market smuggling and plug revenue leaks. But ordinary citizens must ask the hard questions: who actually bears this cost? If you buy a handset locally from an informal retailer, how will KRA verify that import duty wasn't already settled? And what happens to Kenyans receiving personal gifts or second-hand devices from relatives abroad?\n\nBefore this system goes live, the public deserves transparent guidelines, data privacy guarantees, and absolute assurance that consumers will not become the default scapegoats for administrative failures at border points.\n\nKwa ufupi: KRA inapanga kuanza kutoza ushuru wa forodha moja kwa moja wakati unaposajili laini ya simu kwa kifaa kipya. Ikiwa simu haijalipiwa ushuru wa uagizaji, huenda ikatozwa au kuzuiliwa kufanya kazi. Ni muhimu wananchi wadai ufafanuzi ili kuzuia kutozwa ushuru mara mbili.",
+    "voice_note": "Hujambo. Quick update from Kenya on Record that you should share with family before buying that next handset. KRA is pushing a new plan to collect mobile phone import taxes directly at the point of SIM activation. Basically, when you put a SIM card into a phone, telcos will verify its IMEI number against KRA’s customs register. If the system shows the phone was imported without duty being paid, you could be billed on the spot or denied network access. This is meant to target grey-market imports, but the burden falls straight on ordinary buyers. If you are buying a phone right now, demand an official KRA-compliant ETR receipt from the dealer. Don't inherit someone else's tax evasion. Tufungue macho.",
+    "sms": "USIIBIWE: When buying a phone, demand an official ETR receipt showing duty paid. KRA plans to tax untaxed devices during SIM activation. Protect your pocket.",
+    "reels": "Your next phone might come with an unexpected tax bill the moment you turn it on. KRA is planning to integrate with telcos to collect import duties right at SIM activation. If your device's IMEI doesn't match their customs database, network access could be blocked until duty is paid. Instead of policing border points, the taxman wants you to pay for grey-market loopholes. Ask your vendor for an ETR receipt today."
   },
   "spend_usd": 0.0
 }
