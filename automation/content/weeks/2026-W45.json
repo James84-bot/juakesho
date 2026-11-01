@@ -1,0 +1,220 @@
+{
+  "collection": "2026-W45",
+  "created": "2026-11-01T17:02:32.521480+03:00",
+  "posts": [
+    {
+      "id": "2026-w45-d1-usiibiwe",
+      "template": "usiibiwe",
+      "lane": "young_pro",
+      "side": "none",
+      "tone": "explainer",
+      "title": "Fake profiles steal *real photos* on Facebook",
+      "sender": "+254 7XX XXX XXX",
+      "sms": "Hello, I saw your Facebook profile and wanted to connect with you directly.",
+      "tips": [
+        "Search profile pictures on Google Lens to find the real owner.",
+        "Decline requests for cash or airtime from strangers on social media."
+      ],
+      "beats": [
+        "A scammer used photos of *Jordan Guenther* to lure Facebook users.",
+        "Impostors steal real photos to build trust and ask for cash.",
+        "The fake account used stolen pictures to deceive women on Facebook.",
+        "Run image searches on profile pictures before you send any money."
+      ],
+      "message": "Scammers steal photos of real people to create fake profiles and lure victims into financial traps.",
+      "action": "Search suspicious profile pictures on Google Lens before replying",
+      "photo_query": "smartphone screen Kenya",
+      "source": "K24 Digital, 2026-11-01",
+      "caption": "K24 Digital reports: Impostors download photos of real people to create convincing Facebook profiles. They build trust, then ask for cash. Check profile photos with Google Lens before you engage.\n\nSend this to a friend who uses Facebook.\n\n#Usiibiwe #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-02T07:30:00+03:00",
+      "source_links": [
+        {
+          "outlet": "K24 Digital",
+          "title": "Kenyan patriot Jordan Guenther reacts after scammer uses his photo to lure women on Facebook",
+          "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQd2hYSUpIdVpRUHdwN2d1XzZZek1vVXpkY09SRk1RNkNGRFZ1dnVacGlaTklrckxSb29waWRWTlBzV0RTMnRsSEtoMl9FU2tIY0dCbTRnMDN5dmFtLVloYlBGNFdqdWY1VFFmYk1uOXhhNDVUd1dMRmhlYW9PbVhnV3FHV2RKLUtSSjJvcHEyTGpiRzlCeUFhY2UzYVhMRWdfcWsteGRvc09KQmJpRUNWOHlvS1VUSlYzclI2OW1mVVNYN0doN1hDVHZYdmc0aU9XNVE?oc=5",
+          "published": "2026-11-01"
+        }
+      ],
+      "material": {
+        "kind": "scam",
+        "key": "news:https://news.google.com/rss/articles/CBMi0gFBVV95cUxQd2hYSUpIdVpRUHdwN2d1XzZZek1vVXpkY09SRk1RNkNGRFZ1dnVacGlaTklrckxSb29waWRWTlBzV0RTMnRsSEtoMl9FU2tIY0dCbTRnMDN5dmFtLVloYlBGNFdqdWY1VFFmYk1uOXhhNDVUd1dMRmhlYW9PbVhnV3FHV2RKLUtSSjJvcHEyTGpiRzlCeUFhY2UzYVhMRWdfcWsteGRvc09KQmJpRUNWOHlvS1VUSlYzclI2OW1mVVNYN0doN1hDVHZYdmc0aU9XNVE?oc=5",
+        "title": "Kenyan patriot Jordan Guenther reacts after scammer uses his photo to lure women on Facebook",
+        "outlet": "K24 Digital",
+        "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQd2hYSUpIdVpRUHdwN2d1XzZZek1vVXpkY09SRk1RNkNGRFZ1dnVacGlaTklrckxSb29waWRWTlBzV0RTMnRsSEtoMl9FU2tIY0dCbTRnMDN5dmFtLVloYlBGNFdqdWY1VFFmYk1uOXhhNDVUd1dMRmhlYW9PbVhnV3FHV2RKLUtSSjJvcHEyTGpiRzlCeUFhY2UzYVhMRWdfcWsteGRvc09KQmJpRUNWOHlvS1VUSlYzclI2OW1mVVNYN0doN1hDVHZYdmc0aU9XNVE?oc=5",
+        "published": "2026-11-01"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "'24' is not in this post's material (Kenyan patriot Jordan Guenther reacts after scammer uses his photo to lure women on Facebo): use only the numbers it gives"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 7.9,
+        "note": "Ensure the photo query matches the specific platform being discussed, like a Facebook app interface on a mobile screen."
+      },
+      "drafted_at": "2026-11-01T17:21:07.059697+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-d1-usiibiwe-photo.jpg",
+      "photo_credit": "Photo: Daryona / Wikimedia Commons, CC BY-SA 3.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenyan_Parliament.JPG",
+      "reel": true,
+      "tg_msg": 690
+    },
+    {
+      "id": "2026-w45-d2-kenya",
+      "template": "kenya",
+      "lane": "everyone",
+      "side": "none",
+      "tone": "credit",
+      "series": "Kenya at its best",
+      "place": "Lake Nakuru, Nakuru",
+      "line": "Lake Nakuru protects rhinos across *188 square kilometres* of sanctuary.",
+      "fact": "The park covers about 188 square kilometres and is fenced as a sanctuary for black and white rhinos.",
+      "source": "https://ke.chm-cbd.net/protected-areas/lake-nakuru-national-park",
+      "beats": [
+        "Lake Nakuru National Park spans *188 square kilometres* in Nakuru.",
+        "The reserve is fenced as a sanctuary for black and white rhinos.",
+        "Save this location for your next weekend drive to Nakuru."
+      ],
+      "message": "Lake Nakuru National Park protects black and white rhinos across 188 square kilometres of fenced sanctuary.",
+      "action": "Save this park for your next weekend visit to Nakuru County",
+      "photo_query": "Lake Nakuru National Park flamingos Kenya",
+      "caption": "Lake Nakuru National Park covers 188 square kilometres of protected sanctuary. The fully fenced park provides a secure habitat for black and white rhinos in the Rift Valley.\n\nSave this for your next trip to Nakuru.\n\n#KenyaAtItsBest #Nakuru #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-03T12:45:00+03:00",
+      "source_links": [
+        {
+          "outlet": "Kenya Clearing House Mechanism (CBD)",
+          "title": "Lake Nakuru National Park: The park covers about 188 square kilometres and is fenced as a sanctuary for black and white rhinos.",
+          "link": "https://ke.chm-cbd.net/protected-areas/lake-nakuru-national-park",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:lake-nakuru",
+        "id": "lake-nakuru",
+        "series": "Kenya at its best",
+        "place": "Lake Nakuru, Nakuru",
+        "name": "Lake Nakuru National Park",
+        "fact": "The park covers about 188 square kilometres and is fenced as a sanctuary for black and white rhinos.",
+        "source": "https://ke.chm-cbd.net/protected-areas/lake-nakuru-national-park",
+        "outlet": "Kenya Clearing House Mechanism (CBD)",
+        "photo_query": "Lake Nakuru National Park flamingos Kenya"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 9,
+        "hold": 7,
+        "demand": 7,
+        "action": 8,
+        "fair": 8,
+        "impact": 7,
+        "avg": 7.8,
+        "note": "Add one specific detail about rhino tracking or viewing to elevate the hook beyond a standard tourist board fact."
+      },
+      "drafted_at": "2026-11-01T17:21:07.059705+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-d2-kenya-photo.jpg",
+      "photo_credit": "Photo: Letherian3 / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Birds_of_Lake_Nakuru_National_Park._Flamingos_2.jpg",
+      "reel": true,
+      "tg_msg": 691
+    },
+    {
+      "id": "2026-w45-d3-promise",
+      "template": "promise",
+      "bg": "usiku",
+      "lane": "campus",
+      "publish_at": "2026-11-04T18:30:00+03:00",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "The Promise Tracker names a real promise and says it was not kept: the promise and its source must be researched by a person, never invented by the writer to fit a headline"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-11-01T17:21:07.059707+03:00"
+    },
+    {
+      "id": "2026-w45-d4-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-05T19:30:00+03:00",
+      "status": "needs_human",
+      "size": "story",
+      "angle": "price_quiz",
+      "series": "Guess the Price",
+      "guard": {
+        "errors": [
+          "no headline this week states a price, so Guess the Price would have no real answer"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-11-01T17:21:07.059709+03:00"
+    },
+    {
+      "id": "2026-w45-d5-straight",
+      "template": "straight",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-06T17:00:00+03:00",
+      "status": "planned",
+      "angle": "myth",
+      "series": "Myth or Fact"
+    },
+    {
+      "id": "2026-w45-d6-kenya",
+      "template": "kenya",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-07T11:00:00+03:00",
+      "status": "planned",
+      "series": "Built in Kenya"
+    },
+    {
+      "id": "2026-w45-d7-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-08T18:00:00+03:00",
+      "status": "planned",
+      "size": "story"
+    }
+  ],
+  "scripts": {
+    "radio": "Good evening, listeners. You are tuned to Kenya on Record, where we keep watch on public interest, security, and our national heritage.\n\nFirst, a serious warning about your digital footprint. Online conmen are no longer relying on faceless accounts. Instead, they are systematically harvesting photos of ordinary Kenyans from social media to create duplicate profiles. These fake accounts are used to infiltrate communities, build trust, and pitch fraudulent business schemes or urgent financial distress calls. Before you send money to anyone claiming to be a friend, an investor, or an old classmate, stop and verify. Demand a phone call, insist on a face-to-face meeting, and never commit funds solely based on a familiar picture.\n\nOn a positive note, Lake Nakuru National Park continues to set a benchmark in wildlife protection. Covering 188 square kilometres of securely fenced sanctuary, the park provides critical refuge to both black and white rhinos. In an era where poaching and habitat fragmentation threaten our biodiversity, the sustained, disciplined management at Nakuru demonstrates what institutional accountability can achieve for our national heritage.\n\nKwa ufupi: Kuweni waangalifu mitandaoni. Matapeli wanatumia picha za watu halisi kutengeneza akaunti feki ili kuwaibia wananchi pesa. Hakikisha utambulisho wa mtu kabla ya kutuma fedha. Wakati huo huo, Hifadhi ya Ziwa Nakuru inaendelea kulinda vifaru weusi na weupe kwa ufanisi mkubwa katika eneo lililolindwa la kilomita za mraba 188.\n\nStay sharp, protect your savings, and value our heritage.",
+    "voice_note": "Habari zenu. This is Kenya on Record with a quick briefing you should share with family this week.\n\nBe very vigilant on WhatsApp, Facebook, and Instagram. Scammers are copying photos and details of real people to build believable profiles, pretending to be professionals, trusted peers, or old friends in need of urgent help. Once trust is established, the trap closes and money is lost. Please, if anyone approaches you online asking for funds or pitching deals, verify them through a direct phone call before sending a single shilling.\n\nOn conservation, Lake Nakuru National Park is demonstrating real impact. Its 188-square-kilometre fenced sanctuary continues to provide tight, round-the-clock protection for both black and white rhinos. Sound management yields real results.\n\nProtect your digital space, stay informed, and have a safe, productive week ahead.",
+    "sms": "USIIBIWE: Scammers steal photos of real people to create fake profiles and solicit cash. Always verify identities via a direct phone call before sending money.",
+    "reels": "That friendly profile asking for an emergency loan or offering an investment deal might not be who you think. \n\nConmen are scraping photos of everyday Kenyans to create fake profiles, build your trust, and trap your money. If you have only met someone through a screen, pause. Insist on a video call, verify their contacts, and do not send money to strangers. \n\nA clean profile picture is not proof of character."
+  },
+  "spend_usd": 0.0
+}

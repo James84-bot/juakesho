@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T22:33:37.613745+03:00",
+  "updated": "2026-11-01T17:02:26.356875+03:00",
   "top": [
     {
       "id": "2026-w42-d6-promise-r3",
@@ -28,79 +28,79 @@
       "avg_watch_s": 5.5
     },
     {
-      "id": "2026-w44-hot-1026b1432",
+      "id": "2026-w42-hot-1015",
       "series": "sauti",
       "lane": "everyone",
-      "score": 400.0,
-      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
-      "reach": 10,
+      "score": 285.7,
+      "opening": "EPRA hiked the prices.",
+      "reach": 14,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 7.1
-    },
-    {
-      "id": "2026-w44-hot-1027m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 375.0,
-      "opening": "KPC drops cases blocking Sh3 billion for Makueni oil spill victims.",
-      "reach": 8,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 8.1
+      "avg_watch_s": 5.2
     },
     {
       "id": "2026-w43-hot-1024m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 333.3,
+      "score": 285.7,
       "opening": "Workers earning Sh50,000 and above face higher income taxes.",
-      "reach": 12,
+      "reach": 14,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
+      "avg_watch_s": 5.4
+    },
+    {
+      "id": "2026-w44-d1-money-r2",
+      "series": "money",
+      "lane": "everyone",
+      "score": 285.7,
+      "opening": "Super petrol now costs Sh226.96 a litre in Nairobi.",
+      "reach": 7,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
       "avg_watch_s": 5.6
     }
   ],
   "bottom": [
     {
-      "id": "2026-w43-d7-glasspoll-r10",
-      "series": "glasspoll",
-      "lane": "everyone",
-      "score": 87.0,
-      "opening": "Ruling-party and opposition leaders now govern together.",
-      "reach": 23,
+      "id": "2026-w44-d2-kenya-r2",
+      "series": "kenya",
+      "lane": "young_pro",
+      "score": 74.1,
+      "opening": "A mugumo fig in the Aberdares was a secret message drop.",
+      "reach": 27,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 0,
-      "avg_watch_s": 3.4
+      "avg_watch_s": 4.6
     },
     {
       "id": "2026-w43-hot-1025",
       "series": "sauti",
       "lane": "everyone",
-      "score": 32.5,
+      "score": 31.0,
       "opening": "A building collapse in Eastleigh has left 31 people missing.",
-      "reach": 123,
+      "reach": 129,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 4.2
+      "avg_watch_s": 4.1
     },
     {
       "id": "2026-w43-hot-1023m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 29.2,
+      "score": 28.4,
       "opening": "Kenya Met warns of heavy rain in 44 counties this week.",
-      "reach": 137,
+      "reach": 141,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -136,71 +136,6 @@
       "avg_watch_s": 5.5
     },
     {
-      "id": "2026-w44-hot-1026b1432",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 400.0,
-      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
-      "reach": 10,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 2,
-      "avg_watch_s": 7.1
-    },
-    {
-      "id": "2026-w44-hot-1027m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 375.0,
-      "opening": "KPC drops cases blocking Sh3 billion for Makueni oil spill victims.",
-      "reach": 8,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 8.1
-    },
-    {
-      "id": "2026-w43-hot-1024m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 333.3,
-      "opening": "Workers earning Sh50,000 and above face higher income taxes.",
-      "reach": 12,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 2,
-      "avg_watch_s": 5.6
-    },
-    {
-      "id": "2026-w44-d1-money-r2",
-      "series": "money",
-      "lane": "everyone",
-      "score": 333.3,
-      "opening": "Super petrol now costs Sh226.96 a litre in Nairobi.",
-      "reach": 6,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 5.6
-    },
-    {
-      "id": "2026-w43-d6-kenya-r10",
-      "series": "kenya",
-      "lane": "hustle",
-      "score": 300.0,
-      "opening": "In Marsabit County, 365 wind turbines can produce 310 megawatts.",
-      "reach": 10,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 5.1
-    },
-    {
       "id": "2026-w42-hot-1015",
       "series": "sauti",
       "lane": "everyone",
@@ -212,6 +147,45 @@
       "comments": 1,
       "likes": 2,
       "avg_watch_s": 5.2
+    },
+    {
+      "id": "2026-w43-hot-1024m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 285.7,
+      "opening": "Workers earning Sh50,000 and above face higher income taxes.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 2,
+      "avg_watch_s": 5.4
+    },
+    {
+      "id": "2026-w44-d1-money-r2",
+      "series": "money",
+      "lane": "everyone",
+      "score": 285.7,
+      "opening": "Super petrol now costs Sh226.96 a litre in Nairobi.",
+      "reach": 7,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 5.6
+    },
+    {
+      "id": "2026-w43-d6-kenya-r10",
+      "series": "kenya",
+      "lane": "hustle",
+      "score": 272.7,
+      "opening": "In Marsabit County, 365 wind turbines can produce 310 megawatts.",
+      "reach": 11,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 5.1
     },
     {
       "id": "2026-w42-d2-money-r3",
@@ -240,6 +214,19 @@
       "avg_watch_s": 4.6
     },
     {
+      "id": "2026-w44-hot-1026b1432",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 263.2,
+      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
+      "reach": 19,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 3,
+      "avg_watch_s": 6.5
+    },
+    {
       "id": "2026-w42-hot-1016",
       "series": "sauti",
       "lane": "everyone",
@@ -266,6 +253,19 @@
       "avg_watch_s": 4.2
     },
     {
+      "id": "2026-w44-hot-1027m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 250.0,
+      "opening": "KPC drops cases blocking Sh3 billion for Makueni oil spill victims.",
+      "reach": 12,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 6.5
+    },
+    {
       "id": "2026-w42-hot-1017",
       "series": "sauti",
       "lane": "everyone",
@@ -276,33 +276,33 @@
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 7.3
+      "avg_watch_s": 7.2
+    },
+    {
+      "id": "2026-w44-hot-1101",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 200.0,
+      "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
+      "reach": 10,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 5.1
     },
     {
       "id": "2026-w43-d2-kenya-r9x-r2",
       "series": "kenya",
       "lane": "diaspora",
-      "score": 200.0,
+      "score": 190.5,
       "opening": "Kenya's first national park is just outside Nairobi.",
-      "reach": 20,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 5.5
-    },
-    {
-      "id": "2026-w43-hot-1024e",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 200.0,
-      "opening": "Kenya's national budget is set to hit Sh5.4 trillion by 2028.",
-      "reach": 15,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 6.7
+      "avg_watch_s": 5.3
     },
     {
       "id": "2026-w42-d4-sauti-r3",
@@ -316,6 +316,19 @@
       "comments": 1,
       "likes": 1,
       "avg_watch_s": 5.1
+    },
+    {
+      "id": "2026-w43-hot-1024e",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 187.5,
+      "opening": "Kenya's national budget is set to hit Sh5.4 trillion by 2028.",
+      "reach": 16,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 6.7
     },
     {
       "id": "2026-w42-hot-1013",
@@ -334,53 +347,14 @@
       "id": "2026-w43-hot-1022",
       "series": "sauti",
       "lane": "everyone",
-      "score": 176.5,
+      "score": 166.7,
       "opening": "Counties owe workers Sh100 billion in money still owed for pensions.",
-      "reach": 17,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 2.3
-    },
-    {
-      "id": "2026-w44-hot-1027b1358",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 176.5,
-      "opening": "EACC recovers Sh40 million in public land in Kakamega.",
-      "reach": 17,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 2.1
-    },
-    {
-      "id": "2026-w43-hot-1023",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 166.7,
-      "opening": "The Treasury plans to scrap the Sh2,400 monthly PAYE tax relief.",
       "reach": 18,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 3.8
-    },
-    {
-      "id": "2026-w44-hot-1027",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 166.7,
-      "opening": "EACC recovers a 2.7-acre school playground after court ruling.",
-      "reach": 18,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 7.5
+      "avg_watch_s": 2.8
     },
     {
       "id": "2026-w42-hot-1014",
@@ -396,6 +370,19 @@
       "avg_watch_s": 9.2
     },
     {
+      "id": "2026-w43-hot-1023",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 157.9,
+      "opening": "The Treasury plans to scrap the Sh2,400 monthly PAYE tax relief.",
+      "reach": 19,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 3.7
+    },
+    {
       "id": "2026-w42-d3-promise-r3",
       "series": "promise",
       "lane": "campus",
@@ -409,12 +396,25 @@
       "avg_watch_s": 4.7
     },
     {
-      "id": "2026-w43-hot-1023b1332",
+      "id": "2026-w44-hot-1027b1358",
       "series": "sauti",
       "lane": "everyone",
       "score": 136.4,
-      "opening": "MPs passed a Bill scrapping live streaming of election results.",
+      "opening": "EACC recovers Sh40 million in public land in Kakamega.",
       "reach": 22,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 2.7
+    },
+    {
+      "id": "2026-w43-hot-1023b1332",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 130.4,
+      "opening": "MPs passed a Bill scrapping live streaming of election results.",
+      "reach": 23,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -425,14 +425,14 @@
       "id": "2026-w44-hot-1026",
       "series": "sauti",
       "lane": "everyone",
-      "score": 136.4,
+      "score": 125.0,
       "opening": "Nairobi Water has shut down piped supply for three days.",
-      "reach": 22,
+      "reach": 24,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 5.7
+      "avg_watch_s": 5.6
     },
     {
       "id": "2026-w43-hot-1019e",
@@ -445,15 +445,28 @@
       "shares": 0,
       "comments": 1,
       "likes": 3,
-      "avg_watch_s": 5.1
+      "avg_watch_s": 5.0
+    },
+    {
+      "id": "2026-w44-hot-1027",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 111.1,
+      "opening": "EACC recovers a 2.7-acre school playground after court ruling.",
+      "reach": 27,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 6.5
     },
     {
       "id": "2026-w43-hot-1024",
       "series": "sauti",
       "lane": "everyone",
-      "score": 111.1,
+      "score": 100.0,
       "opening": "The Ministry of Health confirms a second Ebola death.",
-      "reach": 18,
+      "reach": 20,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -461,25 +474,12 @@
       "avg_watch_s": 8.8
     },
     {
-      "id": "2026-w44-d2-kenya-r2",
-      "series": "kenya",
-      "lane": "young_pro",
-      "score": 90.9,
-      "opening": "A mugumo fig in the Aberdares was a secret message drop.",
-      "reach": 22,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 4.3
-    },
-    {
       "id": "2026-w43-d7-glasspoll-r10",
       "series": "glasspoll",
       "lane": "everyone",
-      "score": 87.0,
+      "score": 80.0,
       "opening": "Ruling-party and opposition leaders now govern together.",
-      "reach": 23,
+      "reach": 25,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -487,25 +487,38 @@
       "avg_watch_s": 3.4
     },
     {
+      "id": "2026-w44-d2-kenya-r2",
+      "series": "kenya",
+      "lane": "young_pro",
+      "score": 74.1,
+      "opening": "A mugumo fig in the Aberdares was a secret message drop.",
+      "reach": 27,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 4.6
+    },
+    {
       "id": "2026-w43-hot-1025",
       "series": "sauti",
       "lane": "everyone",
-      "score": 32.5,
+      "score": 31.0,
       "opening": "A building collapse in Eastleigh has left 31 people missing.",
-      "reach": 123,
+      "reach": 129,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 4.2
+      "avg_watch_s": 4.1
     },
     {
       "id": "2026-w43-hot-1023m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 29.2,
+      "score": 28.4,
       "opening": "Kenya Met warns of heavy rain in 44 counties this week.",
-      "reach": 137,
+      "reach": 141,
       "saved": 0,
       "shares": 0,
       "comments": 1,
