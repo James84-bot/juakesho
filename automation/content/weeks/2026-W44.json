@@ -1689,7 +1689,7 @@
           "published": "2026-10-31"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1722,7 +1722,8 @@
       "video_credit": "Footage: xat-ch / Pixabay",
       "video_source": "https://pixabay.com/videos/id-50109/",
       "reel": true,
-      "tg_msg": 679
+      "tg_msg": 679,
+      "decided_at": "2026-11-01T09:29:41.984256+03:00"
     }
   ],
   "scripts": {
