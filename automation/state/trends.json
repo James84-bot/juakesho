@@ -1,72 +1,6 @@
 {
-  "fetched": "2026-11-01T18:23:53.071321+00:00",
+  "fetched": "2026-11-01T18:34:30.701245+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "liverpool",
-      "traffic": "20000+",
-      "news": [
-        {
-          "title": "Liverpool vs Arsenal LIVE: Premier League score, lineups, commentary & updates",
-          "url": "https://www.bbc.com/sport/football/live/cqev37r8jvvxt",
-          "source": "BBC"
-        },
-        {
-          "title": "Liverpool vs Arsenal live: Premier League",
-          "url": "https://www.aljazeera.com/sports/liveblog/2026/11/1/liverpool-vs-arsenal-live-premier-league",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": "Liverpool 0-1 Arsenal LIVE - Premier League score as Dominik Szoboszlai comes on with Reds pushing for equaliser",
-          "url": "https://www.tntsports.co.uk/football/premier-league/2026-2027/live-liverpool-arsenal_mtc21883088/live-commentary.shtml",
-          "source": "TNT Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "arsenal vs",
-      "traffic": "5000+",
-      "news": [
-        {
-          "title": "Arsenal vs Aston Villa: Women's Super League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cqdjvm18edv9t",
-          "source": "BBC"
-        },
-        {
-          "title": "WSL round-up: Alessia Russo scores late equaliser to salvage draw for Arsenal as Man City hold on to beat London City",
-          "url": "https://www.skysports.com/football/news/13605750/wsl-round-up-alessia-russo-scores-late-equaliser-to-salvage-draw-for-arsenal-as-man-city-hold-on-to-beat-london-city",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Team news: Renée makes one change against Villa",
-          "url": "https://www.arsenal.com/news/team-news-renee-makes-one-change-against-villa-ai3fH1H9sUgF",
-          "source": "Arsenal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "lyon",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "*@![EN DIRECT] Angers OL match EN DIRECT à la télé",
-          "url": "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vbGVvZ29hdHMuZ2l0aHViLmlvL2JmLmVkdS91am0ueG1sIi8+PC9rcnBhbm8+&id=video-angers-ol-match-lie-en-oulmtsr",
-          "source": "Pierce Manufacturing"
-        },
-        {
-          "title": "L1 : Lyon 2-0 Angers (fini)",
-          "url": "https://news.maxifoot.fr/ligue-1/lyon-2-0-angers-fini-foot-466889.htm",
-          "source": "Maxifoot"
-        },
-        {
-          "title": "OL - Angers : Nuamah en pointe accompagné par Nakamura et Duranville",
-          "url": "https://www.live-mercato.com/article/203436-ol-angers-nuamah-en-pointe-accompagne-par-nakamura-et-duranville",
-          "source": "www.live-mercato.com"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "kylian mbappé",
@@ -113,23 +47,67 @@
     },
     {
       "geo": "KE",
+      "title": "arsenal fixtures",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "WSL fixture details confirmed for December",
+          "url": "https://www.arsenal.com/news/wsl-fixture-details-confirmed-for-december-a7f8X8o3FBHC",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Changes to Spurs and Arsenal fixtures",
+          "url": "https://www.cafc.co.uk/news/changes-spurs-and-arsenal-fixtures",
+          "source": "Charlton Athletic Football Club"
+        },
+        {
+          "title": "Minor changes to December's WSL outings",
+          "url": "https://www.manutd.com/en/news/minor-changes-to-decembers-wsl-outings-for-man-utd",
+          "source": "Manchester United"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "eintracht frankfurt",
       "traffic": "200+",
       "news": [
         {
-          "title": "Chatzialexiou erklärt Wechsel: \"Die Legende wird auch ohne mich leben\"",
-          "url": "https://www.kicker.de/chatzialexiou-erklaert-wechsel-die-legende-wird-auch-ohne-mich-leben-1267429/artikel",
-          "source": "Kicker"
+          "title": "Achtelfinale im Achteck",
+          "url": "https://www.fcn.de/news/artikel/achtelfinale-im-achteck/",
+          "source": "fcn.de"
         },
         {
-          "title": "Ex-BVB-Star schon bald auf der Trainerbank",
-          "url": "https://www.fussballdaten.de/news/ex-bvb-star-schon-bald-auf-der-trainerbank/",
-          "source": "fussballdaten.de"
-        },
-        {
-          "title": "Eintracht Frankfurt: Warum Präsident Beck ein Meisterstück gelang",
-          "url": "https://www.bild.de/sport/fussball/eintracht-frankfurt-warum-praesident-beck-ein-meisterstueck-gelang-6ae713656a5ed9f2131344eb",
+          "title": "Eintracht Frauen im DFB-Pokal weiter: Sophia Winkler Elfmeter-Heldin",
+          "url": "https://www.bild.de/sport/fussball/eintracht-frauen-im-dfb-pokal-weiter-sophia-winkler-elfmeter-heldin-6ae764f35e7018b4bea94eb9",
           "source": "BILD"
+        },
+        {
+          "title": "FCN-Kapitänin Lein vor Frankfurt-Duell: \"Mutig unsere Chance suchen\"",
+          "url": "https://www.dfb.de/news/fcn-kapitaenin-lein-vor-frankfurt-duell-mutig-unsere-chance-suchen",
+          "source": "Deutscher Fußball-Bund"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "paok fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "PAOK vs. AEK: Behind the scenes",
+          "url": "https://www.paokfc.gr/en/news/20261025-i-parakamera-tou-ofi-paok/",
+          "source": "PAOKFC"
+        },
+        {
+          "title": "PAOK beat AEK as Olympiacos and Panathinaikos win in Greek Cup",
+          "url": "https://greekherald.com.au/sports/paok-beat-aek-as-olympiacos-and-panathinaikos-win-in-greek-cup/",
+          "source": "The Greek Herald"
+        },
+        {
+          "title": "PAOK beat AEK 65–62 to maintain unbeaten record and stay top of Stoiximan GBL",
+          "url": "https://www.paokbc.gr/en/news/games/3780-paok-beat-aek-65-62-to-maintain-unbeaten-record-and-stay-top-of-stoiximan-gbl",
+          "source": "www.paokbc.gr"
         }
       ]
     },
@@ -179,12 +157,34 @@
     },
     {
       "geo": "KE",
+      "title": "bradley barcola",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Bradley Barcola during warm ups",
+          "url": "https://www.rousingthekop.com/talkingpoints/liverpool-vs-arsenal-premier-league-261101/pre-match-warmup-803/",
+          "source": "Rousing The Kop"
+        },
+        {
+          "title": "Team news: Confirmed Liverpool line-up v Arsenal",
+          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-arsenal",
+          "source": "Liverpool FC"
+        },
+        {
+          "title": "Liverpool vs Arsenal LIVE! Premier League match updates, news, score, stream and highlights",
+          "url": "https://www.skysports.com/football/live-blog/13604914/liverpool-vs-arsenal-live-premier-league-match-updates-news-score-stream-and-highlights",
+          "source": "Sky Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "sk rapid",
       "traffic": "100+",
       "news": [
         {
-          "title": "Rapid-Trainer Hoff Thorup privat: „Ich nehme Ronaldo, aber den echten“",
-          "url": "https://kurier.at/sport/fussball/rapid-trainer-hoff-thorup-obama-derby-fangesaenge-interview/403202093",
+          "title": "Austria-Legende Ogris vor Wiener Derby: „Die jungen Austrianer tun mir leid“",
+          "url": "https://kurier.at/sport/fussball/fussball-oesterreich-bundesliga-wiener-derby-andreas-ogris/403202235",
           "source": "Kurier"
         },
         {
@@ -193,35 +193,18 @@
           "source": "FK Austria Wien"
         },
         {
-          "title": "Nach Fehlstart wartet das Derby, die Austria hat im Moment: „Wenig Spaß“",
-          "url": "https://www.skysportaustria.at/mediathek/nach-fehlstart-wartet-das-derby-die-austria-hat-im-moment-wenig-spass/",
-          "source": "Sky Sport Austria"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "sky sports",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Liverpool vs Arsenal LIVE: Premier League score, lineups, commentary & updates",
-          "url": "https://www.bbc.com/sport/football/live/cqev37r8jvvxt",
-          "source": "BBC"
-        },
-        {
-          "title": "Liverpool vs Arsenal live: Premier League",
-          "url": "https://www.aljazeera.com/sports/liveblog/2026/11/1/liverpool-vs-arsenal-live-premier-league",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": "Liverpool 0-1 Arsenal LIVE - Premier League score as Dominik Szoboszlai comes on with Reds pushing for equaliser",
-          "url": "https://www.tntsports.co.uk/football/premier-league/2026-2027/live-liverpool-arsenal_mtc21883088/live-commentary.shtml",
-          "source": "TNT Sports"
+          "title": "Derbysieger!",
+          "url": "https://www.skrapid.at/aktuelles/2026/11/derbysieger/",
+          "source": "SK Rapid"
         }
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "premier league table",
+      "why": "unsafe: 'Odds'"
+    }
+  ],
   "errors": {}
 }
