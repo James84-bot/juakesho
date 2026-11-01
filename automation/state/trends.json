@@ -1,70 +1,113 @@
 {
-  "fetched": "2026-11-01T12:01:44.072750+00:00",
+  "fetched": "2026-11-01T12:54:09.374584+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "india vs new zealand",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "NZ vs IND T20 2026: India suffer defeat to New Zealand in final match despite Ishan Kishan and Shreyas Iyer’s fifties",
-          "url": "https://www.olympics.com/en/news/new-zealand-vs-india-t20-cricket-2026-match-5-report",
-          "source": "Olympics"
-        },
-        {
-          "title": "Ishan Kishan Breaks Suryakumar Yadav's Record For Most T20I Runs By An Indian In A Calendar Year",
-          "url": "https://sports.ndtv.com/new-zealand-vs-india-2026-27/ishan-kishan-breaks-suryakumar-yadavs-record-for-most-t20i-runs-by-an-indian-in-a-calendar-year-12266733",
-          "source": "NDTV Sports"
-        },
-        {
-          "title": "New Zealand underline batting might in solid Hamilton chase",
-          "url": "https://www.icc-cricket.com/news/new-zealand-underline-batting-might-in-solid-hamilton-chase",
-          "source": "ICC"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya revenue authority",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "KRA eyes M-Pesa invoices for small and micro traders",
-          "url": "https://www.businessdailyafrica.com/bd/economy/kra-eyes-m-pesa-invoices-for-small-and-micro-traders-5650014",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Inside New KRA's Plot to Recover Unpaid Taxes",
-          "url": "https://www.kenyans.co.ke/news/129039-kra-recover-unpaid-business-taxes-through-government-pending-bills",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "KRA places over one million landlords under tax scrutiny",
-          "url": "https://saccoreview.co.ke/kra-places-over-one-million-landlords-under-tax-scrutiny/",
-          "source": "Sacco Review"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "arsenal vs aston villa",
-      "traffic": "200+",
+      "traffic": "2000+",
       "news": [
+        {
+          "title": "Arsenal vs Aston Villa: Women's Super League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cqdjvm18edv9t",
+          "source": "BBC"
+        },
         {
           "title": "Renee Slegers exclusive: Going 'back to basics' has loosened Arsenal team following back-to-back wins",
           "url": "https://www.skysports.com/football/news/13605338/renee-slegers-exclusive-going-back-to-basics-has-loosened-arsenal-team-following-back-to-back-wins",
           "source": "Sky Sports"
         },
         {
-          "title": "Preview: Arsenal Women v Aston Villa",
-          "url": "https://www.arsenal.com/news/preview-arsenal-women-v-aston-villa-akpT87A19QuH",
+          "title": "Renée: “We have to be prepared and humble”",
+          "url": "https://www.arsenal.com/news/renee-we-have-to-be-prepared-and-humble-aHw150u5fE8J",
           "source": "Arsenal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "como",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Hubert Henno no continuará al frente de la selección masculina",
+          "url": "https://esvoley.es/comunicacion/noticias/hubert-henno-no-continuara-al-frente-de-la-seleccion-masculina",
+          "source": "Real Federación Española de Voleibol"
         },
         {
-          "title": "FA Women’s Super League – Preview…",
-          "url": "https://www.yellowad.co.uk/fa-womens-super-league-preview-87/",
-          "source": "Yellow Advertiser"
+          "title": "El francés Hubert Henno, destituido como seleccionador español masculino",
+          "url": "https://as.com/masdeporte/polideportivo/el-frances-hubert-henno-destituido-como-seleccionador-espanol-masculino-f202611-n/",
+          "source": "Diario AS"
+        },
+        {
+          "title": "Irán designa como organizaciones terroristas a la Marina y a la Fuerza Aérea británicas",
+          "url": "https://www.20minutos.es/internacional/iran-designa-como-organizaciones-terroristas-marina-fuerza-aerea-britanicas_7055913_0.html",
+          "source": "20Minutos"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "london vs man city",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "London City Lionesses: Eder Maestre explains how his team are succeeding in the WSL ahead of big Man City test",
+          "url": "https://www.skysports.com/football/news/13605812/london-city-lionesses-eder-maestre-explains-how-his-team-are-succeeding-in-the-wsl-ahead-of-big-man-city-test",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "London City Lionesses are a WSL force - but can Ballon d'Or winner Alexia Putellas & Co. challenge for the title?",
+          "url": "https://www.goal.com/en-ke/originals/london-city-lionesses-wsl-force-can-ballon-dor-winner-alexia-putellas-challenge-title/bltbbf8601bd940c9f7",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Britain Women's Super League Soccer",
+          "url": "https://www.wvnews.com/sports/pro/britain-womens-super-league-soccer/image_a0d4a19a-9ce9-5238-bc8f-128f496ff249.html",
+          "source": "WV News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "como fc",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Como vs Venezia: Italian Serie A stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cj93zwrnpzp4t",
+          "source": "BBC"
+        },
+        {
+          "title": "✅ Como-Venezia XIs | Paz, Baturina, Ricci, Butez and Busio",
+          "url": "https://sports.yahoo.com/articles/official-como-venezia-line-ups-103800145.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Match Preview | Como 1907-Venezia",
+          "url": "https://comofootball.com/en/match-preview-como-1907-venezia/",
+          "source": "Como 1907"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "military base",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "EXCLUSIVE: Pentagon treating military base freezer malfunctions as suspected cyberattack, officials say",
+          "url": "https://www.reuters.com/technology/pentagon-treating-military-base-freezer-malfunctions-suspected-cyberattack-2026-10-29/",
+          "source": "Reuters"
+        },
+        {
+          "title": "Pentagon Pete Suffers Military Food Disaster",
+          "url": "https://www.yahoo.com/news/us/articles/pentagon-pete-suffers-military-food-161110975.html",
+          "source": "Yahoo"
+        },
+        {
+          "title": "Pentagon investigates French fridge hack after failures on US bases",
+          "url": "https://www.telegraph.co.uk/us/news/2026/10/24/pentagon-investigates-french-fridge-hacking-attack-bases/",
+          "source": "The Telegraph"
         }
       ]
     },
@@ -79,63 +122,45 @@
           "source": "The Star, Kenya"
         },
         {
-          "title": "Chaos Erupts at ODM's Nairobi Rally as Leaders Flee",
-          "url": "https://www.kenyans.co.ke/news/129034-chaos-suspected-goons-storm-odm-rally-nairobi-forcing-leaders-flee",
-          "source": "Kenyans.co.ke"
-        },
-        {
           "title": "‘Mwezi wa Baba’: Oburu expected to address ODM’s Jacaranda rally via live link",
           "url": "https://nation.africa/kenya/news/politics/-mwezi-wa-baba-oburu-address-odm-jacaranda-rally-live-link-5652142",
           "source": "Daily Nation"
+        },
+        {
+          "title": "Chaos Erupts at ODM's Nairobi Rally as Leaders Flee",
+          "url": "https://www.kenyans.co.ke/news/129034-chaos-suspected-goons-storm-odm-rally-nairobi-forcing-leaders-flee",
+          "source": "Kenyans.co.ke"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "heidi klum",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Watch: Heidi Klum as giant severed hand for Halloween bash",
-          "url": "https://www.bbc.com/news/videos/cj040yd1xdrlo",
-          "source": "BBC"
-        },
-        {
-          "title": "Heidi Klum Becomes Her Left Hand for Halloween",
-          "url": "https://www.nytimes.com/2026/10/31/style/heidi-klum-halloween-costume-hand.html",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Heidi Klum dresses as her own hand for Halloween. #HeidiKlum #Halloween #BBCNews",
-          "url": "https://www.modernghana.com/videonews/bbc/1/745330",
-          "source": "Modern Ghana"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "como vs venezia prediction",
+      "title": "trabzonspor vs gaziantep",
       "traffic": "100+",
       "news": [
         {
-          "title": "Where to watch Como v Venezia: live stream, TV channels, date, kick-off time and line-ups",
-          "url": "https://www.goal.com/en-ke/news/where-to-watch-como-v-venezia-live-stream-tv-channels-date-kick-off-time-and-line-ups/blt67a1800595fae407",
-          "source": "Goal.com"
+          "title": "CANLI! Gaziantep FK Trabzonspor maçı canlı yayın | HS Football maçı TRT 1 izle,",
+          "url": "https://www.piercemfg.com/hubfs/StaticContentPages/Other/Webouts/Velocity.Impel/Tour.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vbGVvZ29hdHMuZ2l0aHViLmlvL2JmLmVkdS91am0ueG1sIi8+PC9rcnBhbm8+&id=video-gaziantep-fk-trabzonspor-match-lie-okwadjs",
+          "source": "Pierce Manufacturing"
         },
         {
-          "title": "Watch Como v Venezia live today: who is showing the match on TV and via live stream?",
-          "url": "https://www.goal.com/en-ke/news/watch-como-v-venezia-live-today-who-is-showing-the-match-on-tv-and-via-live-stream/blt67a1800595fae407",
-          "source": "Goal.com"
+          "title": "Orhan Ak açıkladı! “Bugün burada savaşan bir takım olacak”",
+          "url": "https://www.61saat.com/orhan-ak-acikladi-bugun-burada-savasan-bir-takim-olacak",
+          "source": "61SAAT"
         },
         {
-          "title": "Watch Como v Venezia live today: who is showing the match on TV and streaming it live?",
-          "url": "https://www.goal.com/en-ke/news/watch-como-v-venezia-live-today-who-is-showing-the-match-on-tv-and-streaming-it-live/blt67a1800595fae407",
-          "source": "Goal.com"
+          "title": "Trabzonspor, Gaziantep FK ile Kritik Maçta Karşılaşıyor",
+          "url": "https://www.superlighaberler.com/trabzonspor/trabzonspor-gaziantep-fk-ile-kritik-macta-karsilasiyor-h18474",
+          "source": "www.superlighaberler.com"
         }
       ]
     }
   ],
   "dropped": [
+    {
+      "title": "elche vs valencia",
+      "why": "unsafe: 'betting'"
+    },
     {
       "title": "lecce vs genoa",
       "why": "unsafe: 'Betting'"
@@ -143,14 +168,6 @@
     {
       "title": "frosinone vs torino",
       "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "paris fc vs monaco",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "elche vs valencia prediction",
-      "why": "unsafe: 'betting'"
     }
   ],
   "errors": {}
