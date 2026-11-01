@@ -1,6 +1,19 @@
 {
-  "updated": "2026-11-01T17:02:26.356875+03:00",
+  "updated": "2026-11-01T21:48:26.015411+03:00",
   "top": [
+    {
+      "id": "2026-w44-hot-1101m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 666.7,
+      "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
+      "reach": 3,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 9.0
+    },
     {
       "id": "2026-w42-d6-promise-r3",
       "series": "promise",
@@ -28,6 +41,19 @@
       "avg_watch_s": 5.5
     },
     {
+      "id": "2026-w44-d7-glasspoll",
+      "series": "glasspoll",
+      "lane": "everyone",
+      "score": 333.3,
+      "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
+      "reach": 6,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 4.2
+    },
+    {
       "id": "2026-w42-hot-1015",
       "series": "sauti",
       "lane": "everyone",
@@ -39,32 +65,6 @@
       "comments": 1,
       "likes": 2,
       "avg_watch_s": 5.2
-    },
-    {
-      "id": "2026-w43-hot-1024m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 285.7,
-      "opening": "Workers earning Sh50,000 and above face higher income taxes.",
-      "reach": 14,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 2,
-      "avg_watch_s": 5.4
-    },
-    {
-      "id": "2026-w44-d1-money-r2",
-      "series": "money",
-      "lane": "everyone",
-      "score": 285.7,
-      "opening": "Super petrol now costs Sh226.96 a litre in Nairobi.",
-      "reach": 7,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 5.6
     }
   ],
   "bottom": [
@@ -85,9 +85,9 @@
       "id": "2026-w43-hot-1025",
       "series": "sauti",
       "lane": "everyone",
-      "score": 31.0,
+      "score": 30.8,
       "opening": "A building collapse in Eastleigh has left 31 people missing.",
-      "reach": 129,
+      "reach": 130,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -110,6 +110,19 @@
   ],
   "all": [
     {
+      "id": "2026-w44-hot-1101m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 666.7,
+      "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
+      "reach": 3,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 9.0
+    },
+    {
       "id": "2026-w42-d6-promise-r3",
       "series": "promise",
       "lane": "everyone",
@@ -134,6 +147,19 @@
       "comments": 1,
       "likes": 3,
       "avg_watch_s": 5.5
+    },
+    {
+      "id": "2026-w44-d7-glasspoll",
+      "series": "glasspoll",
+      "lane": "everyone",
+      "score": 333.3,
+      "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
+      "reach": 6,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 4.2
     },
     {
       "id": "2026-w42-hot-1015",
@@ -256,14 +282,14 @@
       "id": "2026-w44-hot-1027m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 250.0,
+      "score": 230.8,
       "opening": "KPC drops cases blocking Sh3 billion for Makueni oil spill victims.",
-      "reach": 12,
+      "reach": 13,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 6.5
+      "avg_watch_s": 6.1
     },
     {
       "id": "2026-w42-hot-1017",
@@ -277,19 +303,6 @@
       "comments": 1,
       "likes": 1,
       "avg_watch_s": 7.2
-    },
-    {
-      "id": "2026-w44-hot-1101",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 200.0,
-      "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
-      "reach": 10,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 5.1
     },
     {
       "id": "2026-w43-d2-kenya-r9x-r2",
@@ -329,6 +342,19 @@
       "comments": 1,
       "likes": 1,
       "avg_watch_s": 6.7
+    },
+    {
+      "id": "2026-w44-hot-1101",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 181.8,
+      "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
+      "reach": 11,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 6.0
     },
     {
       "id": "2026-w42-hot-1013",
@@ -503,9 +529,9 @@
       "id": "2026-w43-hot-1025",
       "series": "sauti",
       "lane": "everyone",
-      "score": 31.0,
+      "score": 30.8,
       "opening": "A building collapse in Eastleigh has left 31 people missing.",
-      "reach": 129,
+      "reach": 130,
       "saved": 0,
       "shares": 0,
       "comments": 1,
