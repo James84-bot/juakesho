@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-02T11:39:28.824923+00:00",
+  "fetched": "2026-11-02T13:50:41.093123+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "pakhtakor vs al-nassr",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Ronaldo off Al Nassr's ACL squad due to Saudi security concerns",
+          "url": "https://www.espn.com/soccer/story/_/id/50353917/ronaldo-al-nassr-acl-squad-saudi-security-concerns",
+          "source": "ESPN"
+        },
+        {
+          "title": "Postecoglou settles on two changes to Al-Nassr's line-up against Pakhtakor",
+          "url": "https://www.goal.com/en/news/postecoglou-settles-on-two-changes-to-al-nassr-s-line-up-against-pakhtakor/bltf0a079eeff0bd08a",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Preview: Pakhtakor Tashkent vs Al-Nassr - prediction, team news, lineups",
+          "url": "https://www.sportsmole.co.uk/football/al-nassr/preview/pakhtakor-vs-al-nassr-prediction-team-news-lineups_608164.html",
+          "source": "Sports Mole"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "journalist",
@@ -12,58 +34,102 @@
           "source": "African Commission on Human and Peoples' Rights"
         },
         {
-          "title": "Six in seven journalist murders go unpunished, UNESCO reports",
-          "url": "https://news.un.org/en/story/2026/11/1168719",
-          "source": "UN News"
+          "title": "Lizette Rabe | From Gutenberg to Zuckerberg... the onslaught against journalists continues",
+          "url": "https://www.news24.com/opinions/columnists/lizette-rabe-from-gutenberg-to-zuckerberg-the-onslaught-against-journalists-continues-20261101-0884",
+          "source": "News24"
         },
         {
-          "title": "When everyone becomes a journalist, what happens to professional journalism?",
-          "url": "https://tnnenglish.com/when-everyone-becomes-a-journalist-what-happens-to-professional-journalism",
-          "source": "Tribal News Network"
+          "title": "Six out of seven journalists’ killings are not brought to justice, reversing progress in the fight against impunity",
+          "url": "https://www.unesco.org/en/articles/six-out-seven-journalists-killings-are-not-brought-justice-reversing-progress-fight-against-impunity",
+          "source": "UNESCO"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "nssf",
-      "traffic": "500+",
+      "title": "world bank uon urban planning report",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Gachagua says Rironi-Mau Summit road construction stalling due to corruption",
-          "url": "https://citizen.digital/article/gachagua-says-rironi-mau-summit-road-construction-stalling-due-to-corruption-n393132",
-          "source": "Citizen Digital"
-        },
-        {
-          "title": "Missed deadline: CS Chirchir pushes Rironi-Naivasha highway opening to December",
-          "url": "https://nation.africa/kenya/news/missed-deadline-cs-chirchir-pushes-rironi-naivasha-highway-opening-to-december-5652760",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Explained: What Is Bitumen, Material Behind Rironi-Mau Road Delays",
-          "url": "https://www.kenyans.co.ke/news/129052-explained-what-bitumen-material-behind-rironi-mau-road-delays",
+          "title": "World Bank Flags UoN Master's Course With Little Change Since 1971",
+          "url": "https://www.kenyans.co.ke/news/129041-world-bank-flags-uon-masters-course-little-change-1971",
           "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "UoN urban planning curriculum changed little in 44 years, World Bank says",
+          "url": "https://capitalfm.africa/uon-urban-planning-curriculum-changed-little-in-44-years-world-bank-says/",
+          "source": "Capital FM Africa"
+        },
+        {
+          "title": "World Bank Raises Concern Over University Of Nairobi Course Introduced 55 Years Ago",
+          "url": "https://thekenyatimes.com/education/world-bank-raises-concern-over-university-of-nairobi-course-introduced-55-years-ago/",
+          "source": "The Kenya Times"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "driving",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Warning period for drivers illegally passing school buses begins in Bristol",
-          "url": "https://www.yahoo.com/news/articles/warning-period-drivers-illegally-passing-103311537.html",
-          "source": "Yahoo"
+          "title": "BMW to make urban self-driving system standard on key models",
+          "url": "https://www.autonews.com/bmw/ane-bmw-urban-self-driving-standard-fit-1102/",
+          "source": "Automotive News"
         },
         {
-          "title": "A CT city is warning drivers it’s ramping up school bus enforcement. Fines expected after 30 days",
-          "url": "https://www.courant.com/2026/11/02/a-ct-city-is-warning-drivers-its-ramping-up-school-bus-enforcement-fines-expected-after-30-days/",
-          "source": "Hartford Courant"
+          "title": "BMW to bring Level 2 advanced driver assistance in German cities in 2027",
+          "url": "https://www.arenaev.com/bmw_to_bring_level_2_advanced_driver_assistance_in_german_cities_in_2027-news-6338.php",
+          "source": "ArenaEV"
         },
         {
-          "title": "Tuscaloosa City Schools Issue Strong Warning To Local Drivers",
-          "url": "https://tuscaloosathread.com/ixp/532/p/illegal-passing-school-buses-increases/",
-          "source": "Tuscaloosa Thread"
+          "title": "BMW plans to offer partially automated city driving starting in 2027",
+          "url": "https://www.heise.de/en/news/BMW-plans-to-offer-partially-automated-city-driving-starting-in-2027-11507965.html",
+          "source": "heise online"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "dynamo kyiv",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Rangers strike late to keep UEFA Youth League tie alive vs Dynamo Kyiv",
+          "url": "https://www.glasgowtimes.co.uk/sport/26678868.rangers-keep-uefa-youth-league-hopes-alive-late-goal/",
+          "source": "Glasgow Times"
+        },
+        {
+          "title": "Volodymyr Ozymay: «I was ready to play another match just like that one; the emotions were overwhelming",
+          "url": "https://fcdynamo.com/en/news/volodimir-ozimai-buv-gotovii-zigrati-shhe-odin-takii-samii-matc-emociyi-zaskalyuvali",
+          "source": "Динамо» Київ. Офіційний сайт"
+        },
+        {
+          "title": "Dynamo Kyiv 3-2 Rangers U19s: Dramatic late goal sets up second-leg decider",
+          "url": "https://www.rangersreview.co.uk/news/26678739.rangers-u19s-grab-late-lifeline-dynamo-kyiv-defeat/",
+          "source": "The Rangers Review"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "lawyer",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Trump calls $50 million contract for ex-lawyer Habba Mildon 'not acceptable'",
+          "url": "https://www.reuters.com/legal/litigation/trump-calls-50-million-contract-ex-lawyer-habba-mildon-not-acceptable-2026-11-01/",
+          "source": "Reuters"
+        },
+        {
+          "title": "Trump Erupted After Learning of Alina Habba’s $50 Million Deal",
+          "url": "https://www.nytimes.com/2026/10/29/us/politics/trump-alina-habba-mildon-deal.html",
+          "source": "The New York Times"
+        },
+        {
+          "title": "Trump rips ex-lawyer Alina Habba’s ‘obnoxious’ $50M deal with pardoned Venezuelan banker’s family",
+          "url": "https://nypost.com/2026/11/01/us-news/trump-rips-alina-habbas-50m-deal-with-pardoned-venezuelan-bankers-family/",
+          "source": "New York Post"
         }
       ]
     },
@@ -88,76 +154,13 @@
           "source": "London Evening Standard"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "al-nassr fc",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Ronaldo off Al Nassr's ACL squad due to Saudi security concerns",
-          "url": "https://www.espn.com/soccer/story/_/id/50353917/ronaldo-al-nassr-acl-squad-saudi-security-concerns",
-          "source": "ESPN"
-        },
-        {
-          "title": "Postecoglou settles on two changes to Al-Nassr's line-up against Pakhtakor",
-          "url": "https://www.goal.com/en/news/postecoglou-settles-on-two-changes-to-al-nassr-s-line-up-against-pakhtakor/bltf0a079eeff0bd08a",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Preview: Pakhtakor Tashkent vs Al-Nassr - prediction, team news, lineups",
-          "url": "https://www.sportsmole.co.uk/football/al-nassr/preview/pakhtakor-vs-al-nassr-prediction-team-news-lineups_608164.html",
-          "source": "Sports Mole"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "all souls day",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Licensable picture: Filipinos Observe All Soul's Day",
-          "url": "https://www.reutersconnect.com/item/filipinos-observe-all-souls-day/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBNNDE5SE4",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "Police, medical responders monitor Manila cemeteries",
-          "url": "https://newswav.com/article/police-medical-responders-monitor-manila-cemeteries-A2611_lZFCZ7",
-          "source": "Newswav"
-        },
-        {
-          "title": "APTOPIX Philippines All Saints Day",
-          "url": "https://www.guardonline.com/news/world/aptopix-philippines-all-saints-day/image_932f07c7-ebc1-5c9f-a78e-d42d13c322fe.html",
-          "source": "The Batesville Daily Guard"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "ethiopia",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Moyale refugee crisis escalates as humanitarian agencies step up identification efforts",
-          "url": "https://citizen.digital/article/moyale-refugee-crisis-escalates-as-humanitarian-agencies-step-up-identification-efforts-n393145",
-          "source": "Citizen Digital"
-        },
-        {
-          "title": "No solution in sight to 30-year conflict as Moyale clashes displace more residents",
-          "url": "https://www.theeastafrican.co.ke/tea/news/eastern-africa/no-solution-to-30-year-conflict-moyale-clashes-5652946",
-          "source": "The EastAfrican"
-        },
-        {
-          "title": "Moyale crisis: UN agencies seek Sh1bn as Ethiopian refugees hit 50,000",
-          "url": "https://nation.africa/kenya/counties/marsabit/moyale-crisis-un-agencies-seek-sh1bn-as-ethiopian-refugees-hit-50-000-5652278",
-          "source": "Daily Nation"
-        }
-      ]
     }
   ],
   "dropped": [
+    {
+      "title": "ferdinand waititu",
+      "why": "unsafe: 'scandal'"
+    },
     {
       "title": "airplane crash",
       "why": "unsafe: 'crash'"
@@ -165,10 +168,6 @@
     {
       "title": "dean",
       "why": "unsafe: 'dies'"
-    },
-    {
-      "title": "newcastle vs everton",
-      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}
