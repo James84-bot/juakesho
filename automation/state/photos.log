@@ -1,13 +1,23 @@
 feed KBC: 60 items, 60 with an image
-feed Capital FM: 60 items, 59 with an image
+feed Capital FM: 60 items, 60 with an image
 feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
 feed Nation: 25 items, 0 with an image
-posted for 2026-w45-d1-usiibiwe: 0 matching reports (person '', names ['facebook'], words ['scammers', 'steal', 'photos', 'real', 'people'])
-commons 'smartphone screen Kenya' for 2026-w45-d1-usiibiwe: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
-commons 'smartphone screen' for 2026-w45-d1-usiibiwe: 25 found, 0 usable, dropped {'size': 7, 'licence': 1, 'place': 17, 'subject': 0}
-photo source openverse failed for 2026-w45-d1-usiibiwe: The read operation timed out
-commons 'Parliament Buildings Nairobi' for 2026-w45-d1-usiibiwe: 20 found, 4 usable, dropped {'size': 8, 'licence': 0, 'place': 2, 'subject': 6}
-photo for 2026-w45-d1-usiibiwe: nothing for 'smartphone screen Kenya', used 'Parliament Buildings Nairobi'
-commons 'Lake Nakuru National Park flamingos Kenya' for 2026-w45-d2-kenya: 25 found, 24 usable, dropped {'size': 1, 'licence': 0, 'place': 0, 'subject': 0}
+posted for 2026-w45-d5-straight: 0 matching reports (person '', names ['mandera', 'algeria'], words ['video', 'claiming', 'mandera', 'stadium', 'actually'])
+commons 'stadium construction Kenya' for 2026-w45-d5-straight: 1 found, 0 usable, dropped {'size': 1, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'stadium construction' for 2026-w45-d5-straight: 25 found, 0 usable, dropped {'size': 2, 'licence': 2, 'place': 21, 'subject': 0}
+photo source openverse failed for 2026-w45-d5-straight: The read operation timed out
+commons 'road construction Kenya' for 2026-w45-d5-straight: 12 found, 9 usable, dropped {'size': 1, 'licence': 0, 'place': 0, 'subject': 0, 'unfit': 2}
+photo for 2026-w45-d5-straight: nothing for 'stadium construction Kenya', used 'road construction Kenya'
+commons 'Lamu Port Kenya ship berth' for 2026-w45-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'Lamu Port ship Kenya' for 2026-w45-d6-kenya: 4 found, 0 usable, dropped {'size': 2, 'licence': 2, 'place': 0, 'subject': 0}
+commons 'Lamu Port' for 2026-w45-d6-kenya: 25 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 20, 'subject': 0, 'unfit': 5}
+commons 'Lamu Port Kenya ship berth' for 2026-w45-d6-kenya: 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'place': 0, 'subject': 0}
+commons 'Lamu Port ship Kenya' for 2026-w45-d6-kenya: 4 found, 0 usable, dropped {'size': 2, 'licence': 2, 'place': 0, 'subject': 0}
+commons 'Lamu Port' for 2026-w45-d6-kenya: 25 found, 18 usable, dropped {'size': 3, 'licence': 1, 'place': 3, 'subject': 0}
+posted for 2026-w45-d7-glasspoll: 0 matching reports (person '', names [], words ['bill', 'allows', 'party', 'bosses', 'select'])
+commons 'Kenya National Assembly' for 2026-w45-d7-glasspoll: 25 found, 5 usable, dropped {'size': 2, 'licence': 0, 'place': 0, 'subject': 0, 'unfit': 18}
+posted for 2026-w45-hot-1102: 3 matching reports (person 'ogamba', names ['julius', 'ogamba', 'kcse'], words ['students', 'began', 'kcse', 'exams', 'nationwide'])
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+picked Kenyans.co.ke (5): Relief for Students as Ogamba Issues Fresh Directive to Striking Lectu
