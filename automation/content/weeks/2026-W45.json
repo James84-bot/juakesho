@@ -524,7 +524,7 @@
           "published": "2026-11-02"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 5.8/10. Pick a story from the current top Kenya news list like Waititu's Sh21 million fine or Sakaja's ODM move."
@@ -557,7 +557,13 @@
       "photo_source": "https://www.kenyans.co.ke/news/128968-kra-plans-use-till-numbers-pochi-la-biashara-track-undeclared-income",
       "reel": true,
       "tg_msg": 704,
-      "decided_at": "2026-11-02T16:36:42.219369+03:00"
+      "decided_at": "2026-11-02T16:36:42.219369+03:00",
+      "published_at": "2026-11-02T17:41:18.741592+03:00",
+      "ig_id": "18114326831155064",
+      "fb_id": "1427994332252553",
+      "story_id": "18203102809379893",
+      "fb_story_id": "1738972111022339",
+      "yt_id": "R324AG1HBaE"
     },
     {
       "id": "2026-w45-hot-1102-r2",
