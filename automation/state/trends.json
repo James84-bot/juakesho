@@ -1,137 +1,193 @@
 {
-  "fetched": "2026-11-02T15:06:48.064764+00:00",
+  "fetched": "2026-11-02T22:19:40.952350+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "pakhtakor vs al-nassr",
-      "traffic": "5000+",
+      "title": "benfica vs alverca",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Ronaldo off Al Nassr's ACL squad due to Saudi security concerns",
-          "url": "https://www.espn.com/soccer/story/_/id/50353917/ronaldo-al-nassr-acl-squad-saudi-security-concerns",
-          "source": "ESPN"
+          "title": "Em direto/ Benfica e Alverca ainda empatados sem golos ao intervalo na Luz (0-0)",
+          "url": "https://observador.pt/liveblogs/benfica-alverca-lukebakio-mantem-se-no-onze-prestianni-e-schjelderup-sao-titulares-em-simultaneo/",
+          "source": "Observador"
         },
         {
-          "title": "Postecoglou settles on two changes to Al-Nassr's line-up against Pakhtakor",
-          "url": "https://www.goal.com/en/news/postecoglou-settles-on-two-changes-to-al-nassr-s-line-up-against-pakhtakor/bltf0a079eeff0bd08a",
+          "title": "Echeverri entra para agitar e Pavlidis não perdoa de penálti (vídeo)",
+          "url": "https://www.abola.pt/noticias/echeverri-entra-para-agitar-e-pavlidis-nao-perdoa-de-penalti-video-2026110221290279207",
+          "source": "A Bola"
+        },
+        {
+          "title": "Benfica-Alverca: 50' golo de Pavlidis (1-0)",
+          "url": "https://www.slbenfica.pt/pt-pt/agora/media-list/videos/2026/11/02/futebol-benfica-alverca-golo-pavlidis-50-minutos-10-jornada-liga-betclic",
+          "source": "Site Oficial do Sport Lisboa e Benfica"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "al ahly",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "On a night of possible departure: Posecki quells the Al-Ahly fans' uprising with a surprising response",
+          "url": "https://www.goal.com/en/news/on-the-night-of-his-possible-departure-posecki-quells-the-al-ahly-fans-revolt-with-a-surprise-response/blt34da059c44151f67",
           "source": "Goal.com"
         },
         {
-          "title": "Preview: Pakhtakor Tashkent vs Al-Nassr - prediction, team news, lineups",
-          "url": "https://www.sportsmole.co.uk/football/al-nassr/preview/pakhtakor-vs-al-nassr-prediction-team-news-lineups_608164.html",
-          "source": "Sports Mole"
+          "title": "Sacked during the Al-Shabab clash: Ben Dhikri competes with a surprise coach to succeed Pusic at Al-Ahly",
+          "url": "https://www.yardbarker.com/soccer/articles/sacked_during_the_al_shabab_clash_ben_dhikri_competes_with_a_surprise_coach_to_succeed_pusic_at_al_ahly/s1_17790_44496410",
+          "source": "Yardbarker"
+        },
+        {
+          "title": "An away trip reveals the truth about Posecki's sacking from coaching Al-Ahly",
+          "url": "https://www.goal.com/en/news/an-away-trip-reveals-the-truth-behind-posecki-s-dismissal-from-coaching-al-ahly/blt4383a75aab6a3053",
+          "source": "Goal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "dynamo kyiv",
+      "title": "al ahly vs al mokawloon",
       "traffic": "200+",
       "news": [
         {
-          "title": "Rangers strike late to keep UEFA Youth League tie alive vs Dynamo Kyiv",
-          "url": "https://www.glasgowtimes.co.uk/sport/26678868.rangers-keep-uefa-youth-league-hopes-alive-late-goal/",
-          "source": "Glasgow Times"
-        },
-        {
-          "title": "Volodymyr Ozymay: «I was ready to play another match just like that one; the emotions were overwhelming",
-          "url": "https://fcdynamo.com/en/news/volodimir-ozimai-buv-gotovii-zigrati-shhe-odin-takii-samii-matc-emociyi-zaskalyuvali",
-          "source": "Динамо» Київ. Офіційний сайт"
-        },
-        {
-          "title": "Dynamo Kyiv 3-2 Rangers U19s: Dramatic late goal sets up second-leg decider",
-          "url": "https://www.rangersreview.co.uk/news/26678739.rangers-u19s-grab-late-lifeline-dynamo-kyiv-defeat/",
-          "source": "The Rangers Review"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "lawyer",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Trump calls $50 million contract for ex-lawyer Habba Mildon 'not acceptable'",
-          "url": "https://www.reuters.com/legal/litigation/trump-calls-50-million-contract-ex-lawyer-habba-mildon-not-acceptable-2026-11-01/",
-          "source": "Reuters"
-        },
-        {
-          "title": "Trump Erupted After Learning of Alina Habba’s $50 Million Deal",
-          "url": "https://www.nytimes.com/2026/10/29/us/politics/trump-alina-habba-mildon-deal.html",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Trump rips ex-lawyer Alina Habba’s ‘obnoxious’ $50M deal with pardoned Venezuelan banker’s family",
-          "url": "https://nypost.com/2026/11/01/us-news/trump-rips-alina-habbas-50m-deal-with-pardoned-venezuelan-bankers-family/",
-          "source": "New York Post"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "crypto exchange binance hacked",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Binance hack: Users withdraw $3.6bn after record crypto heist",
-          "url": "https://www.bbc.com/news/articles/cwj34gdmnly4o",
-          "source": "BBC"
-        },
-        {
-          "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
-          "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o",
-          "source": "BBC"
-        },
-        {
-          "title": "Security Incident | Recovery Update #4: Withdrawals Resume in Phases (2026-11-01)",
-          "url": "https://www.binance.com/en/support/announcement/detail/73911fb819b240f88b88256bdd318eda",
-          "source": "Binance"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "noni madueke",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Liverpool 0-1 Arsenal: Alexander Isak-Jurrien Timber shirt pull and Noni Madueke-Alexis Mac Allister 'headbutt' show good and bad sides of VAR",
-          "url": "https://www.skysports.com/football/news/13606793/liverpool-0-1-arsenal-alexander-isak-jurrien-timber-shirt-pull-and-noni-madueke-alexis-mac-allister-headbutt-show-good-and-bad-sides-of-var",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "'It’s a joke!' - Liverpool icon Jamie Carragher slams 'embarrassing' Alexis Mac Allister act & demands Premier League rule change after Noni Madueke clash in Arsenal defeat",
-          "url": "https://www.goal.com/en-ke/news/jamie-carragher-alexis-mac-allister-liverpool-arsenal-premier-league-noni-madueke/bltb8128f44999f0de0",
+          "title": "Al-Ahly squad list raises questions: Amouta deals a fresh blow to Imam Ashour",
+          "url": "https://www.goal.com/en/news/al-ahly-squad-list-raises-questions-amouta-deals-a-fresh-blow-to-imam-ashour/blt0da95c8e27398428",
           "source": "Goal.com"
         },
         {
-          "title": "Why Noni Madueke was not shown a red card in Arsenal win over Liverpool",
-          "url": "https://www.standard.co.uk/sport/football/madueke-red-card-arsenal-fc-liverpool-premier-league-b1303169.html",
-          "source": "London Evening Standard"
+          "title": "Yasser Ibrahim ready for El Mokawloon match in Capita…",
+          "url": "https://www.ysscores.com/en/news/14084516/yasser-ibrahim-ready-for-el-mokawloon-match-in-capital-cup",
+          "source": "YSscores"
+        },
+        {
+          "title": "Al Ahly begin preparations for Arab Contractors clash in Egyptian League Cup",
+          "url": "https://www.alahlyegypt.com/en/news/article/al-ahly-begin-preparations-for-arab-contractors-clash-in-egyptian-league-cup",
+          "source": "الموقع الرسمي للنادي الأهلي المصري"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "al-gharafa vs al qadsiah",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Kashiwa vs Daejeon Citizen: First Half BTTS",
+          "url": "https://www.coinbase.com/en-br/predictions/event/KXAFCCL1HBTTS-26NOV03REYDAJ",
+          "source": "Coinbase"
+        },
+        {
+          "title": "Prats hails Al Shamal’s focus after historic win",
+          "url": "https://thepeninsulaqatar.com/article/29/10/2026/prats-hails-al-shamals-focus-after-historic-win",
+          "source": "The Peninsula Qatar"
+        },
+        {
+          "title": "Simone Inzaghi and Murad Al-Hawsawi Speak Ahead of Al-Shamal match",
+          "url": "https://alhilal.com/en/news/simone-inzaghi-and-murad-al-hawsawi-speak-ahead-of-al-shamal-match",
+          "source": "الموقع الرسمي لنادي الهلال السعودي"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "police",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "MCK raises alarm over rising attacks on journalists ahead of 2027 polls",
+          "url": "https://nation.africa/kenya/news/mck-raises-alarm-over-rising-attacks-on-journalists-ahead-of-2027-polls-5656016",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Kenya records 92 press freedom violations as KNCHR warns of growing threats to journalists",
+          "url": "https://eastleighvoice.co.ke/news/419047/kenya-records-92-press-freedom-violations-as-knchr-warns-of-growing-threats-to-journalists",
+          "source": "The Eastleigh Voice"
+        },
+        {
+          "title": "Journalist Killings Rise as Kenya Logs 47 Attacks",
+          "url": "https://khusoko.com/2026/11/02/journalist-killings-rise-kenya-47-attacks-media-council/",
+          "source": "Khusoko"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "julius kipngetich jubilee holdings retirement",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Kipngetich retires from Jubilee Holdings after 9 years",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/kipngetich-retires-from-jubilee-holdings-after-9-years-5655960",
+          "source": "Business Daily"
+        },
+        {
+          "title": "Jubilee Group appoints Juan Cazcarra as Group CEO, effective December 1,",
+          "url": "https://www.the-star.co.ke/news/2026-11-02-jubilee-appoints-juan-cazcarra-as-group-ceo",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Julius Kipngetich leaves Jubilee Group after serving as CEO for 8 years",
+          "url": "https://peopledaily.digital/business/julius-kipngetich-leaves-jubilee-group-after-serving-as-ceo-for-8-years",
+          "source": "People Daily"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "copenhagen fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "FC Kopenhagen - FC Iberia 1999 prediction & tips 05.11.2026",
+          "url": "https://www.transfermarkt.com/betting/tips/fc-kopenhagen-vs-fc-iberia-1999-prediction-05-11-2026/",
+          "source": "Transfermarkt"
+        },
+        {
+          "title": "FC Kopenhagen - FC Iberia 1999 prediction & tips 05.11.2026",
+          "url": "https://www.transfermarkt.co.uk/betting/tips-today/fc-kopenhagen-vs-fc-iberia-1999-prediction-05-11-2026/",
+          "source": "Transfermarkt"
+        },
+        {
+          "title": "Copenhagen vs. FC Iberia Tbilisi Live Stream of UEFA Conference League",
+          "url": "https://www.cbssports.com/watch/uefa-conference-league/LET-211535040",
+          "source": "CBS Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nathaniel bassey",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Nathaniel Bassey becomes first African gospel artist to hit one billion YouTube views",
+          "url": "https://www.vanguardngr.com/2026/11/nathaniel-bassey-becomes-first-african-gospel-artist-to-hit-one-billion-youtube-views/",
+          "source": "Vanguard News"
+        },
+        {
+          "title": "Nathaniel Bassey Makes History With One Billion YouTube Views",
+          "url": "https://von.gov.ng/nathaniel-bassey-makes-history-with-one-billion-youtube-views/",
+          "source": "Voice of Nigeria"
+        },
+        {
+          "title": "Nathaniel Bassey becomes first African gospel artiste to surpass one billion YouTube views",
+          "url": "https://dailypost.ng/2026/11/02/nathaniel-bassey-becomes-first-african-gospel-artiste-to-surpass-1billion-youtube-views/",
+          "source": "Daily Post Nigeria"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "lorient vs brest",
-      "why": "unsafe: 'betting'"
-    },
-    {
-      "title": "forex factory",
-      "why": "unsafe: 'war'"
-    },
-    {
-      "title": "ferdinand waititu",
-      "why": "unsafe: 'scandal'"
-    },
-    {
-      "title": "sassuolo vs fiorentina",
+      "title": "osasuna",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "airplane crash",
-      "why": "unsafe: 'crash'"
+      "title": "al-ittihad vs al ain",
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}

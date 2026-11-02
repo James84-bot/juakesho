@@ -646,13 +646,84 @@
       "story_id": "18362881597217006",
       "fb_story_id": "1700884134806751",
       "yt_id": "Jod3YkZned0"
+    },
+    {
+      "id": "2026-w45-hot-1103e",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 9,
+      "kicker": "Taxpayers",
+      "line": "Court hands former governor Ferdinand Waititu a *13-year jail term* or Sh21m fine over graft.",
+      "fact": "Anti-Corruption Court convicted Waititu over an irregular Sh588.7 million Kiambu county road tender.",
+      "source": "Kenya News Agency, 2026-11-02",
+      "message": "Ferdinand Waititu faces 13 years in jail or a Sh21 million fine over a Sh588.7 million irregular tender.",
+      "action": "Check the conviction details on judiciary.go.ke",
+      "photo_query": "Milimani Law Courts Nairobi",
+      "who": "Anti-Corruption Court",
+      "where": "Kiambu",
+      "when": "2 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Public funds lost to fraudulent county tenders delay roads and health centres for taxpayers.",
+      "caption": "Kenya News Agency reports: Official court records show: The Anti-Corruption Court sentenced former Kiambu governor Ferdinand Waititu over a Sh588.7m road tender.\n\nHe faces 13 years in jail or a Sh21 million fine.\n\nWhich stalled county project in your area needs an audit next?\n\n#Kiambu #JimiReclaimsTheRecord #KenyaOnRecord",
+      "beats": [
+        "Court hands former governor Ferdinand Waititu a *13-year jail term*.",
+        "He must pay a *Sh21 million fine* to avoid prison.",
+        "The conviction covers a fraudulent *Sh588.7 million* road tender.",
+        "Kenyans demand: EACC recovers all *stolen assets* from county tenders.",
+        "Check the court ruling on judiciary.go.ke."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-11-03T19:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "source_links": [
+        {
+          "outlet": "Kenya News Agency",
+          "title": "DPP secures Sh21 million fines, 13-year sentence against former Kiambu governor",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOWjc5aE1JdWhSbWF5ZkRQRW5MTUl4SGFsX1JnR3YwTkhuVGYxSmphbVd4V2RSQTE0RXJTWFRYWmpfT21IcktkOFNmQjRvQnZGWXVrOXN3cGZDV0Y3TkhvYXpXM3BmVXZvN3p2OHZ1eE1pN3BsM29wWno5cDJ1TnlBeDNNTmxYeW9RX0ZLNENxa1A2eE5OR0Zrd1kwN0FqeWh3dnlGSXNrOHpQbFE?oc=5",
+          "published": "2026-11-02"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 9,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "avg": 8.0,
+        "note": "End with a concrete lawful demand naming an office and a single reader action."
+      },
+      "trend": "#JimiReclaimsTheRecord",
+      "drafted_at": "2026-11-03T01:39:34.596068+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1103e-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/dpp-secures-ksh21m-fines-13-year-sentence-against-waititu-in-money-laundering-case/",
+      "reel": true,
+      "tg_msg": 724
     }
   ],
   "scripts": {
-    "radio": "Sasa, habari za wiki hii kutoka Kenya on Record. Mimi ni mtangazaji wako, na leo tunazungumzia jambo ambalo linagusa moyo wa demokrasia yetu: usalama wa wanahabari na jukumu lao katika kuwajibisha viongozi. Wananchi wenzangu, habari za kweli na zilizothibitishwa ndio ngao yetu kuu. Ukweli huu hauji hivi hivi; unapatikana kupitia kazi ngumu na wakati mwingine ya hatari inayofanywa na wanahabari mashinani na kote nchini. Lakini swali ni hili: Je, vyombo vya usalama na jamii inawapa hifadhi na uhuru wanaouhitaji kufanya kazi bila vitisho? Wakati mwanahabari anaponyamazishwa, ukweli hufa, na viongozi wetu hukosa wa kuwakosoa. Hapo ndipo ufisadi na uongo ustawi. Lazima tukumbuke kwamba mwanahabari anapofanya kazi kwa usalama, ni wewe mwananchi wa kawaida unayefaidika kwa sababu unapokea habari sahihi za kufanya maamuzi sahihi na kuuliza maswali mazito kwa wakuu. Tuwalinde wanahabari wetu, tuheshimu uhuru wa vyombo vya habari, na tusimame kidete kupigania ukweli. Kumbuka, uwajibikaji unaanza na taarifa sahihi. Kenya on Record tunasimama na ukweli. [KISWAHILI SUMMARY]: Katika kipindi cha leo, tunasisitiza umuhimu wa usalama wa wanahabari ili wananchi wapate ukweli utakaowasaidia kuwajibisha viongozi wao.",
-    "voice_note": "Mambo vipi mwananchi? Hii ni Kenya on Record. Wiki hii tunakumbushana jambo moja muhimu sana: kazi ya mwanahabari ni kama taa inayomulika gizani. Lakini taa hiyo haiwezi kuwaka ikiwa mwanahabari mwenyewe yuko katika hatari au anatishwa. Wanahabari wanapofanya kazi kwa usalama, ndipo sisi kama wananchi tunapata ukweli uliothibitishwa wa kuwawajibisha viongozi wetu. Ukweli huu ukinyamazishwa, ni rahisi kwa viongozi kufanya watakavyo bila kuhojiwa. Usalama wa mwanahabari si suala la waandishi pekee; ni usalama wa haki yako ya kujua ukweli. Kesho ukienda kazini au sokoni, kumbuka kulinda na kuthamini kazi ya ukweli. Kenya on Record, twende pamoja.",
-    "sms": "Kenya on Record: Usalama wa wanahabari ni ngao yako. Wakati ukweli unalindwa, unapata taarifa sahihi za kuwawajibisha viongozi na kulinda rasilimali zako.",
-    "reels": "[Visual: A montage of Kenyan journalists working in the field, speaking into microphones, interspersed with serious looks from citizens.] Voice-over: Ukweli hauji rahisi. Nyuma ya kila habari inayokusaidia kumwajibisha kiongozi, kuna mwanahabari anayepambana kupata ukweli. Lakini ili wakutumikie vizuri, lazima wafanye kazi kwa usalama, bila vitisho wala uoga. Mwanahabari akiwa salama, haki yako ya kujua ukweli inalindwa. Usikubali ukweli unyamazishwe. #KenyaOnRecord #UkweliNgaoYako"
+    "radio": "Habari za leo, mwananchi. Welcome to this week’s edition of Kenya on Record. I'm your host, and today we are talking accountability. \n\nLet’s get straight to it. Former Kiambu Governor Ferdinand Waititu is facing a watershed moment in our courts. The man is staring down the barrel of 13 years behind bars, or a heavy Sh21 million fine, over a controversial Sh588.7 million irregular tender. \n\nThink about those numbers for a minute. Sh588 million of public funds—money meant for roads, hospitals, and mwananchi development—tied up in questionable procurement. This is the exact reason why public service must never be treated as a family business or a personal ATM. When leaders mismanage funds, it is our schools that lack books, our dispensaries that lack medicine, and our youth who stay jobless.\n\nAs taxpayers, we must ask ourselves: Is a Sh21 million fine enough for a Sh588 million loss? The wheels of justice are turning, slow as they sometimes are, but the message is clear. Accountability is catching up, whether you are in office or out of it. We must keep our eyes on the ball and demand transparency at every level of county governance.\n\n*Na kwa ufupi kwa wale ambao wanapendelea lugha ya taifa:* Hali ni mbaya kwa aliyekuwa Gavana wa Kiambu, Ferdinand Waititu. Anatazamiwa kifungo cha miaka kumi na mitatu jela au faini ya Shilingi milioni 21 baada ya kupatikana na hatua zinazohusiana na zabuni tatanishi ya Shilingi milioni 588.7 za umma. Huu ni ukumbusho kwamba rasilimali zetu lazima zilindwe.",
+    "voice_note": "Aki wakenya, nchi hii ina mambo! Former Kiambu Governor Ferdinand Waititu is really between a rock and a hard place right now. Courts are weighing a 13-year jail term or a Sh21 million fine for him over a Sh588.7 million irregular tender. Halafu bado kuna watu wanashangaa kwanini maendeleo hayafiki mashinani! Sh588 million ni pesa mob sana ambayo ingebadilisha maisha ya wananchi kule Kiambu. Hii ni funzo kubwa kwa wote wanaoshikilia nyadhifa za umma—ukila pesa za wananchi, siku moja utajibu. Share hii voice note na wenzako ili tujue Kenya tunaelekea wapi na uwajibikaji.",
+    "sms": "Usiibiwe: Shughulika na tenda na pesa za umma! Ripoti matumizi mabaya ya rasilimali za kaunti kupitia EACC au ofisi ya Mhasibu Mkuu wa Serikali. Pesa yako, haki yako.",
+    "reels": "[Visual: Bold text on screen: 'Sh588M TENDER SCANDAL!']\n[Audio - Host speaking firmly and directly]: \nSh588.7 million. That’s how much public money was tied up in an irregular tender under former Kiambu Governor Ferdinand Waititu. \nNow, he’s facing 13 years in jail or a Sh21 million fine. \n[Visual: Courthouse imagery flash, then text: 'Accountability starts with us']\n[Audio]: \nPesa za umma sio za kibinafsi. Fuatilia, uliza, nausinyamaze. Kenya on Record—keeping leaders honest."
   },
   "spend_usd": 0.0
 }
