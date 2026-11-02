@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-11-02T13:50:41.093123+00:00",
+  "fetched": "2026-11-02T15:06:48.064764+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "pakhtakor vs al-nassr",
-      "traffic": "2000+",
+      "traffic": "5000+",
       "news": [
         {
           "title": "Ronaldo off Al Nassr's ACL squad due to Saudi security concerns",
@@ -25,74 +25,8 @@
     },
     {
       "geo": "KE",
-      "title": "journalist",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "International Day to End Impunity for Crimes against Journalists 02 November 2026",
-          "url": "https://achpr.au.int/en/news/press-releases/2026-11-02/international-day-end-impunity-crimes-against-journalists-02",
-          "source": "African Commission on Human and Peoples' Rights"
-        },
-        {
-          "title": "Lizette Rabe | From Gutenberg to Zuckerberg... the onslaught against journalists continues",
-          "url": "https://www.news24.com/opinions/columnists/lizette-rabe-from-gutenberg-to-zuckerberg-the-onslaught-against-journalists-continues-20261101-0884",
-          "source": "News24"
-        },
-        {
-          "title": "Six out of seven journalists’ killings are not brought to justice, reversing progress in the fight against impunity",
-          "url": "https://www.unesco.org/en/articles/six-out-seven-journalists-killings-are-not-brought-justice-reversing-progress-fight-against-impunity",
-          "source": "UNESCO"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "world bank uon urban planning report",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "World Bank Flags UoN Master's Course With Little Change Since 1971",
-          "url": "https://www.kenyans.co.ke/news/129041-world-bank-flags-uon-masters-course-little-change-1971",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "UoN urban planning curriculum changed little in 44 years, World Bank says",
-          "url": "https://capitalfm.africa/uon-urban-planning-curriculum-changed-little-in-44-years-world-bank-says/",
-          "source": "Capital FM Africa"
-        },
-        {
-          "title": "World Bank Raises Concern Over University Of Nairobi Course Introduced 55 Years Ago",
-          "url": "https://thekenyatimes.com/education/world-bank-raises-concern-over-university-of-nairobi-course-introduced-55-years-ago/",
-          "source": "The Kenya Times"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "driving",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "BMW to make urban self-driving system standard on key models",
-          "url": "https://www.autonews.com/bmw/ane-bmw-urban-self-driving-standard-fit-1102/",
-          "source": "Automotive News"
-        },
-        {
-          "title": "BMW to bring Level 2 advanced driver assistance in German cities in 2027",
-          "url": "https://www.arenaev.com/bmw_to_bring_level_2_advanced_driver_assistance_in_german_cities_in_2027-news-6338.php",
-          "source": "ArenaEV"
-        },
-        {
-          "title": "BMW plans to offer partially automated city driving starting in 2027",
-          "url": "https://www.heise.de/en/news/BMW-plans-to-offer-partially-automated-city-driving-starting-in-2027-11507965.html",
-          "source": "heise online"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "dynamo kyiv",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Rangers strike late to keep UEFA Youth League tie alive vs Dynamo Kyiv",
@@ -114,7 +48,7 @@
     {
       "geo": "KE",
       "title": "lawyer",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Trump calls $50 million contract for ex-lawyer Habba Mildon 'not acceptable'",
@@ -130,6 +64,28 @@
           "title": "Trump rips ex-lawyer Alina Habba’s ‘obnoxious’ $50M deal with pardoned Venezuelan banker’s family",
           "url": "https://nypost.com/2026/11/01/us-news/trump-rips-alina-habbas-50m-deal-with-pardoned-venezuelan-bankers-family/",
           "source": "New York Post"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "crypto exchange binance hacked",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Binance hack: Users withdraw $3.6bn after record crypto heist",
+          "url": "https://www.bbc.com/news/articles/cwj34gdmnly4o",
+          "source": "BBC"
+        },
+        {
+          "title": "Why North Korea's 'elite' hackers are the prime suspect in major Binance hack",
+          "url": "https://www.bbc.co.uk/news/articles/ck9dz3v7z7v3o",
+          "source": "BBC"
+        },
+        {
+          "title": "Security Incident | Recovery Update #4: Withdrawals Resume in Phases (2026-11-01)",
+          "url": "https://www.binance.com/en/support/announcement/detail/73911fb819b240f88b88256bdd318eda",
+          "source": "Binance"
         }
       ]
     },
@@ -158,16 +114,24 @@
   ],
   "dropped": [
     {
+      "title": "lorient vs brest",
+      "why": "unsafe: 'betting'"
+    },
+    {
+      "title": "forex factory",
+      "why": "unsafe: 'war'"
+    },
+    {
       "title": "ferdinand waititu",
       "why": "unsafe: 'scandal'"
     },
     {
-      "title": "airplane crash",
-      "why": "unsafe: 'crash'"
+      "title": "sassuolo vs fiorentina",
+      "why": "unsafe: 'Betting'"
     },
     {
-      "title": "dean",
-      "why": "unsafe: 'dies'"
+      "title": "airplane crash",
+      "why": "unsafe: 'crash'"
     }
   ],
   "errors": {}
