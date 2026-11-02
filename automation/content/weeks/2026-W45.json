@@ -234,7 +234,7 @@
         "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZXFiQTY0aW5kTklQTXpPSjU4ZWFXaDR2dndfMldhOUFDS0dQTW9sYmFqaUxDaHE1VXhOcEItbVJlM2NBNlhWYmxDMnFCLW85S1diTzIyd1Zsak01ZlJ3cnJmeHg3S1VlMERTdW9VYnE0ZDMxVzFKQWNEZlBZcGRjbmZQeXNPd2toTTJYT2dNVC1ab2Z6aGJZ?oc=5",
         "published": "2026-10-30"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 6.5/10. Evergreen myth-busting scores lower on demand since it is not a top trending news item this week."
@@ -264,7 +264,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Stone_Quarry_at_Bofa_Estate_in_Kilifi,_Kenya.jpg",
       "reel": true,
-      "tg_msg": 699
+      "tg_msg": 699,
+      "decided_at": "2026-11-02T16:35:00.122171+03:00"
     },
     {
       "id": "2026-w45-d6-kenya",
@@ -312,7 +313,7 @@
         "outlet": "Capital FM",
         "photo_query": "Lamu Port Kenya ship berth"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 6.7/10. Lamu Port series item is evergreen content and lacks current news urgency."
@@ -342,7 +343,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:LamuIsland-PortAuthority.jpg",
       "reel": true,
-      "tg_msg": 700
+      "tg_msg": 700,
+      "decided_at": "2026-11-02T16:35:00.808204+03:00"
     },
     {
       "id": "2026-w45-d7-glasspoll",
@@ -374,7 +376,7 @@
       "bg": "usiku",
       "publish_at": "2026-11-08T18:00:00+03:00",
       "size": "story",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 6.5/10. Poll hooks work best when tied to an immediate breaking governance dispute."
@@ -406,7 +408,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Interior_of_Kenya_National_Assembly.jpg",
       "reel": true,
-      "tg_msg": 701
+      "tg_msg": 701,
+      "decided_at": "2026-11-02T16:35:01.667812+03:00"
     },
     {
       "id": "2026-w45-hot-1102",
@@ -521,7 +524,7 @@
           "published": "2026-11-02"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 5.8/10. Pick a story from the current top Kenya news list like Waititu's Sh21 million fine or Sakaja's ODM move."
@@ -553,7 +556,8 @@
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/128968-kra-plans-use-till-numbers-pochi-la-biashara-track-undeclared-income",
       "reel": true,
-      "tg_msg": 704
+      "tg_msg": 704,
+      "decided_at": "2026-11-02T16:35:02.310185+03:00"
     },
     {
       "id": "2026-w45-hot-1102-r2",
