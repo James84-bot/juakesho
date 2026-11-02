@@ -444,7 +444,7 @@
           "published": "2026-11-02"
         }
       ],
-      "status": "needs_human",
+      "status": "rejected",
       "guard": {
         "errors": [
           "visual QA: low contrast 1.6:1 (needs 3:1) on 'Over'"
@@ -477,14 +477,165 @@
       "photo_source": "https://www.kenyans.co.ke/news/128809-cs-ogamba-asks-lecturers-end-strike-pledges-talks-new-cba",
       "ink": {
         "2": "#FFFFFF"
-      }
+      },
+      "replaced_by": "2026-w45-hot-1102-r2"
+    },
+    {
+      "id": "2026-w45-hot-1102m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "Fake alcohol cuts *Sh7.6bn* from KRA excise revenue as illegal trade spreads.",
+      "fact": "Counterfeit alcohol sales have caused a Sh7.6 billion revenue shortfall for the tax authority.",
+      "source": "Business Daily, 2026-11-02",
+      "message": "Fake alcohol cost Kenya Sh7.6bn in lost taxes, putting both public health and revenue at risk.",
+      "action": "Scan excise stamps using the KRA Soma Label app before you buy alcohol.",
+      "photo_query": "Kenyan shilling banknotes",
+      "beats": [
+        "Counterfeit alcohol wiped out *Sh7.6bn* in KRA excise revenue.",
+        "Illegal factories use fake stamps to evade standard quality checks.",
+        "Revenue losses push the state to raise *taxes* on basic goods.",
+        "Kenyans demand: KRA shuts down illegal bottling plants countrywide.",
+        "Scan alcohol excise stamps using the *KRA Soma Label* app today."
+      ],
+      "caption": "Business Daily reports: Counterfeit alcohol has cut Sh7.6 billion from KRA tax revenues. The lost revenue leaves a hole in the budget that ordinary taxpayers end up filling. Scan stamps with the KRA Soma Label app before buying.\n\nHave you encountered fake stamps in your local? Drop your experience below.\n\n#KRA #KenyaOnRecord",
+      "who": "Kenya Revenue Authority",
+      "where": "National",
+      "when": "2 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Tax shortfalls from illegal trade force higher levies on ordinary goods.",
+      "bg": "usiku",
+      "publish_at": "2026-11-02T17:39:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Over 1 million students began their KCSE exams today nationwide."
+      ],
+      "source_links": [
+        {
+          "outlet": "Business Daily",
+          "title": "Fake alcohol cuts Sh7.6bn from KRA sin tax revenue",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQUGxUZXN0STdNa3RHX2VmU2E2OUJpMzRjYW1ES3FGV2ViQ0pOMHZ4bUlWSUtkbFhNOGxXMjgxNzd1S3ZzTVJSTExvVFRnNU0xRElFZ1RRZTNXRVItMUlCZnlrUjhXalV2MTM5NjV1eDdCYkJiWDVMRl9lSG10d3U1TDVQWmhONDVlVVh2YUlibENpbWFMSWZUNWdlazhRT25lS0Fzb0lfTDM?oc=5",
+          "published": "2026-11-02"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 5.8/10. Pick a story from the current top Kenya news list like Waititu's Sh21 million fine or Sakaja's ODM move."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 6,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 6,
+        "picture": 4,
+        "hold": 6,
+        "demand": 3,
+        "action": 5,
+        "fair": 7,
+        "impact": 7,
+        "avg": 5.8,
+        "note": "Pick a story from the current top Kenya news list like Waititu's Sh21 million fine or Sakaja's ODM move."
+      },
+      "drafted_at": "2026-11-02T14:51:37.225912+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1102m-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/128968-kra-plans-use-till-numbers-pochi-la-biashara-track-undeclared-income",
+      "reel": true,
+      "tg_msg": 704
+    },
+    {
+      "id": "2026-w45-hot-1102-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Journalists",
+      "line": "KNCHR documented *92 attacks* against Kenyan journalists covering public protests and rallies.",
+      "fact": "KNCHR recorded 92 violations against Kenyan journalists over the past year.",
+      "source": "Capital FM News, 2026-11-02",
+      "trend": "journalist",
+      "demand": 10,
+      "who": "KNCHR and the National Police Service",
+      "where": "National",
+      "when": "02 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "When journalists face violence, wananchi lose verified reporting on how taxes and rights are handled.",
+      "message": "Journalists must work safely so that Kenyans receive verified facts to hold leaders accountable.",
+      "action": "Report attacks on reporters to KNCHR on toll-free line 0800 720 627",
+      "photo_query": "press conference microphone Kenya",
+      "beats": [
+        "KNCHR documented *92 attacks* on journalists across Kenya.",
+        "Security officers caused most injuries during public *protests*.",
+        "Silencing the press hides the truth from ordinary *citizens*.",
+        "Kenyans demand: the ODPP prosecutes every *officer* involved.",
+        "Report attacks on journalists directly to *KNCHR*."
+      ],
+      "caption": "Capital FM News reports: KNCHR documented 92 attacks on journalists in Kenya over the past year. Most injuries happened during public protests.\n\nA free press protects every Kenyan's right to know the truth.\n\nReport any assault on reporters to KNCHR on 0800 720 627.\n\n#PressFreedom #EndImpunity #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-02T15:11:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Over 1 million students began their KCSE exams today nationwide."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "KNCHR Raises Alarm Over Attacks on Journalists as Kenya Records 92 Press Freedom Violations",
+          "link": "https://capitalfm.africa/knchr-raises-alarm-over-attacks-on-journalists-as-kenya-records-92-press-freedom-violations/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-02"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 10,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 10,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "avg": 9.0,
+        "note": "all checks pass cleanly for a sharp accountability post"
+      },
+      "drafted_at": "2026-11-02T15:09:09.571493+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1102-r2-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/knchr-raises-alarm-over-attacks-on-journalists-as-kenya-records-92-press-freedom-violations/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 705,
+      "auto": true,
+      "decided_at": "2026-11-02T15:12:38.821686+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening, and welcome to Kenya on Record, your weekly check on the facts shaping our nation. This week, we start with a warning: a video circulating online claims to show Mandera Stadium under construction. It does not. Our checks confirm the footage is actually from an arena being built in Algeria, thousands of kilometres away. Before you share a video, pause and ask where it truly comes from.\n\nOn infrastructure, Lamu Port is quietly growing. Since its first berth launched in May 2021, the port has been building towards a planned thirty-two berth terminal, a project meant to open up trade routes for northern Kenya and our neighbours.\n\nIn governance news, a new Bill before the House would allow party bosses to directly select nominated MCAs, instead of leaving that choice to a wider, more transparent process. Civic groups are watching closely, since this affects how fairly our counties are represented.\n\nAnd today, over one million students sat for their KCSE exams. The Ministry of Education has again warned against cheating, reminding candidates and schools that the integrity of this exam protects the value of every certificate issued in this country.\n\nThat's your roundup for this week. Always verify before you believe, and verify again before you share.\n\nKwa ufupi kwa Kiswahili: Video ya uwanja wa Mandera ni ya uwongo, inaonyesha uwanja wa Algeria. Bandari ya Lamu inaendelea kukua tangu gati la kwanza mwaka 2021. Mswada mpya unaweza kuruhusu viongozi wa vyama kuchagua MCA za kuteuliwa moja kwa moja. Na wanafunzi zaidi ya milioni moja wameanza mtihani wa KCSE leo, huku Wizara ikionya dhidi ya udanganyifu.",
-    "voice_note": "Hey fam, quick one for you this week. First - that video going round showing 'Mandera Stadium' under construction? Fake. It's actually a stadium being built in Algeria, not Mandera. Don't forward it until you check.\n\nSecond, good news on Lamu Port - remember it opened its first berth back in May 2021? Well, that's still just step one of a bigger plan for thirty-two berths total. Long way to go, but progress.\n\nThird, keep an eye on a new Bill in Parliament - it would let party leaders pick nominated MCAs directly, instead of a more open process. That's a big shift in how representation works, so watch this space.\n\nAnd finally, big respect to the over one million students sitting KCSE this week. The Ministry's warned schools and candidates against cheating - let's support them to do it clean and do it right.\n\nThat's it for this week. Verify before you share, sawa? Talk soon.",
-    "sms": "Usiibiwe tip: The 'Mandera Stadium' video online is fake - it shows a site in Algeria. Verify before you share.",
-    "reels": "This video claiming to show Mandera Stadium? Look closely - it's not Kenya at all. This footage is actually from an arena under construction in Algeria, thousands of kilometres from Mandera. Someone took real construction footage, slapped a false location on it, and let it run. Before you hit share, pause. Check the source. Check the location. Because misinformation spreads faster than facts - and it only takes one person asking the right question to stop it. This has been Kenya on Record. Verify first."
+    "radio": "Sasa, habari za wiki hii kutoka Kenya on Record. Mimi ni mtangazaji wako, na leo tunazungumzia jambo ambalo linagusa moyo wa demokrasia yetu: usalama wa wanahabari na jukumu lao katika kuwajibisha viongozi. Wananchi wenzangu, habari za kweli na zilizothibitishwa ndio ngao yetu kuu. Ukweli huu hauji hivi hivi; unapatikana kupitia kazi ngumu na wakati mwingine ya hatari inayofanywa na wanahabari mashinani na kote nchini. Lakini swali ni hili: Je, vyombo vya usalama na jamii inawapa hifadhi na uhuru wanaouhitaji kufanya kazi bila vitisho? Wakati mwanahabari anaponyamazishwa, ukweli hufa, na viongozi wetu hukosa wa kuwakosoa. Hapo ndipo ufisadi na uongo ustawi. Lazima tukumbuke kwamba mwanahabari anapofanya kazi kwa usalama, ni wewe mwananchi wa kawaida unayefaidika kwa sababu unapokea habari sahihi za kufanya maamuzi sahihi na kuuliza maswali mazito kwa wakuu. Tuwalinde wanahabari wetu, tuheshimu uhuru wa vyombo vya habari, na tusimame kidete kupigania ukweli. Kumbuka, uwajibikaji unaanza na taarifa sahihi. Kenya on Record tunasimama na ukweli. [KISWAHILI SUMMARY]: Katika kipindi cha leo, tunasisitiza umuhimu wa usalama wa wanahabari ili wananchi wapate ukweli utakaowasaidia kuwajibisha viongozi wao.",
+    "voice_note": "Mambo vipi mwananchi? Hii ni Kenya on Record. Wiki hii tunakumbushana jambo moja muhimu sana: kazi ya mwanahabari ni kama taa inayomulika gizani. Lakini taa hiyo haiwezi kuwaka ikiwa mwanahabari mwenyewe yuko katika hatari au anatishwa. Wanahabari wanapofanya kazi kwa usalama, ndipo sisi kama wananchi tunapata ukweli uliothibitishwa wa kuwawajibisha viongozi wetu. Ukweli huu ukinyamazishwa, ni rahisi kwa viongozi kufanya watakavyo bila kuhojiwa. Usalama wa mwanahabari si suala la waandishi pekee; ni usalama wa haki yako ya kujua ukweli. Kesho ukienda kazini au sokoni, kumbuka kulinda na kuthamini kazi ya ukweli. Kenya on Record, twende pamoja.",
+    "sms": "Kenya on Record: Usalama wa wanahabari ni ngao yako. Wakati ukweli unalindwa, unapata taarifa sahihi za kuwawajibisha viongozi na kulinda rasilimali zako.",
+    "reels": "[Visual: A montage of Kenyan journalists working in the field, speaking into microphones, interspersed with serious looks from citizens.] Voice-over: Ukweli hauji rahisi. Nyuma ya kila habari inayokusaidia kumwajibisha kiongozi, kuna mwanahabari anayepambana kupata ukweli. Lakini ili wakutumikie vizuri, lazima wafanye kazi kwa usalama, bila vitisho wala uoga. Mwanahabari akiwa salama, haki yako ya kujua ukweli inalindwa. Usikubali ukweli unyamazishwe. #KenyaOnRecord #UkweliNgaoYako"
   },
   "spend_usd": 0.0
 }

@@ -1,24 +1,32 @@
 {
- "fetched": "2026-11-02T06:06:37.128924+00:00",
+ "fetched": "2026-11-02T11:39:34.152258+00:00",
  "x": [
   {
    "name": "#FeastOnTheAbundance",
    "tweets": ""
   },
   {
-   "name": "#MainaAndKingangi",
+   "name": "#RutosChristmasGift",
    "tweets": ""
   },
   {
-   "name": "#KatibaInstituteAt15",
+   "name": "Arsenal",
    "tweets": ""
   },
   {
-   "name": "Liverpool",
+   "name": "Kenya Russia",
    "tweets": ""
   },
   {
-   "name": "Anfield",
+   "name": "Delivering Housing Pledge",
+   "tweets": ""
+  },
+  {
+   "name": "45K Homes",
+   "tweets": ""
+  },
+  {
+   "name": "#RutoInRussia",
    "tweets": ""
   },
   {
@@ -26,27 +34,15 @@
    "tweets": ""
   },
   {
-   "name": "40 years aslave",
+   "name": "Anfield",
    "tweets": ""
   },
   {
-   "name": "#LIVARS",
+   "name": "Johnson Sakaja",
    "tweets": ""
   },
   {
-   "name": "novalink global solutions ltd",
-   "tweets": ""
-  },
-  {
-   "name": "#angolawordablaze",
-   "tweets": ""
-  },
-  {
-   "name": "Constitution",
-   "tweets": ""
-  },
-  {
-   "name": "forging onwards",
+   "name": "#MainaAndKingangi",
    "tweets": ""
   },
   {
@@ -54,7 +50,11 @@
    "tweets": ""
   },
   {
-   "name": "Kimi",
+   "name": "#KatibaInstituteAt15",
+   "tweets": ""
+  },
+  {
+   "name": "Rutos Global Impact",
    "tweets": ""
   },
   {
@@ -66,11 +66,11 @@
    "tweets": ""
   },
   {
-   "name": "progress you can film",
+   "name": "Ferdinand Waititu",
    "tweets": ""
   },
   {
-   "name": "Happy New Month",
+   "name": "progress you can film",
    "tweets": ""
   },
   {
@@ -78,7 +78,35 @@
    "tweets": ""
   },
   {
+   "name": "Kimi",
+   "tweets": ""
+  },
+  {
+   "name": "Manyatta Police Station",
+   "tweets": ""
+  },
+  {
    "name": "omar adan",
+   "tweets": ""
+  },
+  {
+   "name": "Luanda Angola",
+   "tweets": ""
+  },
+  {
+   "name": "Happy New Month",
+   "tweets": ""
+  },
+  {
+   "name": "Gachagua Evil Plan",
+   "tweets": ""
+  },
+  {
+   "name": "Matiangi",
+   "tweets": ""
+  },
+  {
+   "name": "forging onwards",
    "tweets": ""
   },
   {
@@ -86,47 +114,557 @@
    "tweets": ""
   },
   {
-   "name": "Lewis",
-   "tweets": ""
-  },
-  {
-   "name": "Kwale",
-   "tweets": ""
-  },
-  {
-   "name": "Halloween",
-   "tweets": ""
-  },
-  {
-   "name": "Hamilton",
-   "tweets": ""
-  },
-  {
-   "name": "Cleophas Malala",
-   "tweets": ""
-  },
-  {
-   "name": "Palm Beach County",
+   "name": "Malala",
    "tweets": ""
   },
   {
    "name": "Lari",
    "tweets": ""
-  },
-  {
-   "name": "dense bituminous macadam",
-   "tweets": ""
-  },
-  {
-   "name": "Nyoni",
-   "tweets": ""
   }
  ],
- "videos": [],
- "errors": {
-  "Citizen TV": "HTTP Error 404: Not Found",
-  "NTV Kenya": "HTTP Error 404: Not Found",
-  "KTN News": "HTTP Error 404: Not Found"
- },
- "catalog": []
+ "videos": [
+  {
+   "title": "NTV KENYA LIVE",
+   "channel": "NTV Kenya",
+   "views": 2513,
+   "published": "2026-11-02T09:15:39+00:00",
+   "per_hour": 1048,
+   "url": "https://www.youtube.com/watch?v=n65C6I_OYmc",
+   "short": "https://youtube.com/shorts/n65C6I_OYmc"
+  },
+  {
+   "title": "Gavana wa Nairobi Johnson Sakaja ajiondoa rasmi UDA na kujiunga na ODM",
+   "channel": "Citizen TV",
+   "views": 757,
+   "published": "2026-11-02T10:35:10+00:00",
+   "per_hour": 705,
+   "url": "https://www.youtube.com/watch?v=BzWYtzxIGms",
+   "short": "https://youtube.com/shorts/BzWYtzxIGms"
+  },
+  {
+   "title": "Jeshi la Sifuna laingia ‘ground’ kuwashawishi wapiga kura kumuunga mkono",
+   "channel": "NTV Kenya",
+   "views": 606,
+   "published": "2026-11-02T10:48:58+00:00",
+   "per_hour": 606,
+   "url": "https://www.youtube.com/watch?v=NcGeyPVnDD4",
+   "short": "https://youtube.com/shorts/NcGeyPVnDD4"
+  },
+  {
+   "title": "Ferdinand Waititu afungwa gerezani tena na mahakama",
+   "channel": "NTV Kenya",
+   "views": 665,
+   "published": "2026-11-02T10:32:03+00:00",
+   "per_hour": 591,
+   "url": "https://www.youtube.com/watch?v=nqDNG9pKlkE",
+   "short": "https://youtube.com/shorts/nqDNG9pKlkE"
+  },
+  {
+   "title": "Journalist Kitavi Mutua’s Death After Snakebite Raises Questions Over Kavonokya Sect Beliefs",
+   "channel": "KTN News",
+   "views": 370,
+   "published": "2026-11-02T11:15:21+00:00",
+   "per_hour": 370,
+   "url": "https://www.youtube.com/watch?v=CX1ukkkXylw",
+   "short": "https://youtube.com/shorts/CX1ukkkXylw"
+  },
+  {
+   "title": "CS Ruku finds over 70% of public servants in Kajiado away from work, warns against early Xmas break",
+   "channel": "Citizen TV",
+   "views": 334,
+   "published": "2026-11-02T11:19:41+00:00",
+   "per_hour": 334,
+   "url": "https://www.youtube.com/watch?v=GIj8eRYMHXY",
+   "short": "https://youtube.com/shorts/GIj8eRYMHXY"
+  },
+  {
+   "title": "Gavana wa Nairobi Johnson Sakaja  ajiunga rasmi na chama cha ODM",
+   "channel": "NTV Kenya",
+   "views": 240,
+   "published": "2026-11-02T10:49:49+00:00",
+   "per_hour": 240,
+   "url": "https://www.youtube.com/watch?v=iogd8UZk3Ac",
+   "short": "https://youtube.com/shorts/iogd8UZk3Ac"
+  },
+  {
+   "title": "Watahiniwa 1,000,000 waanza mitihani ya KCSE 2026",
+   "channel": "NTV Kenya",
+   "views": 199,
+   "published": "2026-11-02T10:44:06+00:00",
+   "per_hour": 199,
+   "url": "https://www.youtube.com/watch?v=m1SSY56z3tU",
+   "short": "https://youtube.com/shorts/m1SSY56z3tU"
+  },
+  {
+   "title": "Sonko awakosoa vikali viongozi wa upinzani kwa kupakana tope hadharani",
+   "channel": "NTV Kenya",
+   "views": 191,
+   "published": "2026-11-02T10:48:19+00:00",
+   "per_hour": 191,
+   "url": "https://www.youtube.com/watch?v=YrlbdxdvEPM",
+   "short": "https://youtube.com/shorts/YrlbdxdvEPM"
+  },
+  {
+   "title": "Martha Karua akashifu kutekwa kwa mwanaharakati Twaha Mwaipaya, aahidi msaada wa kisheria",
+   "channel": "Citizen TV",
+   "views": 160,
+   "published": "2026-11-02T10:25:33+00:00",
+   "per_hour": 130,
+   "url": "https://www.youtube.com/watch?v=Kpi22TaBKrU",
+   "short": "https://youtube.com/shorts/Kpi22TaBKrU"
+  },
+  {
+   "title": "Thousands Flee Ethiopia Violence as Moyale Camps Receive Emergency Health Support",
+   "channel": "KTN News",
+   "views": 130,
+   "published": "2026-11-02T10:39:23+00:00",
+   "per_hour": 130,
+   "url": "https://www.youtube.com/watch?v=lBUUAp9WN64",
+   "short": "https://youtube.com/shorts/lBUUAp9WN64"
+  },
+  {
+   "title": "KTN Obtains Bomas Contract, Reveals Details Behind KSh10.2 Billion Cost Increase",
+   "channel": "KTN News",
+   "views": 105,
+   "published": "2026-11-02T11:12:16+00:00",
+   "per_hour": 105,
+   "url": "https://www.youtube.com/watch?v=kVXf0qWkFGg",
+   "short": "https://youtube.com/shorts/kVXf0qWkFGg"
+  },
+  {
+   "title": "Waziri Migos Ogamba apiga marufuku matumizi ya simu au rununu wakati wa mitihani wa KCSE",
+   "channel": "NTV Kenya",
+   "views": 80,
+   "published": "2026-11-02T10:53:51+00:00",
+   "per_hour": 80,
+   "url": "https://www.youtube.com/watch?v=ZCA4wJxx2hY",
+   "short": "https://youtube.com/shorts/ZCA4wJxx2hY"
+  },
+  {
+   "title": "Wazazi wanunua lori la maji kuwanusuru watahiniwa wa Nkareta wakati wa KCSE",
+   "channel": "Citizen TV",
+   "views": 90,
+   "published": "2026-11-02T10:24:39+00:00",
+   "per_hour": 72,
+   "url": "https://www.youtube.com/watch?v=W3lnt2bUSHg",
+   "short": "https://youtube.com/shorts/W3lnt2bUSHg"
+  },
+  {
+   "title": "Wadau wataka kuondolewa kwa vikwazo vya biashara kukuza utalii Afrika Mashariki",
+   "channel": "Citizen TV",
+   "views": 68,
+   "published": "2026-11-02T10:48:30+00:00",
+   "per_hour": 68,
+   "url": "https://www.youtube.com/watch?v=Py-b1to0RLM",
+   "short": "https://youtube.com/shorts/Py-b1to0RLM"
+  }
+ ],
+ "errors": {},
+ "catalog": [
+  {
+   "title": "Over 3,000 Youths Join Police in Mukuru Sports Drive to Promote Peace Ahead of 2027",
+   "channel": "KTN News",
+   "views": 1,
+   "published": "2026-11-02T11:37:21+00:00",
+   "per_hour": 1,
+   "url": "https://www.youtube.com/watch?v=MqkiDRYhNGc",
+   "short": "https://youtube.com/shorts/MqkiDRYhNGc"
+  },
+  {
+   "title": "Shabana Target Second FKF League Win Against Kenya Police at Afraha Stadium",
+   "channel": "KTN News",
+   "views": 0,
+   "published": "2026-11-02T11:33:40+00:00",
+   "per_hour": 0,
+   "url": "https://www.youtube.com/watch?v=PGuQMfNUt4g",
+   "short": "https://youtube.com/shorts/PGuQMfNUt4g"
+  },
+  {
+   "title": "Kenya Stun World No. 3 France and No. 5 Mexico to Reach Baseball5 Semifinals",
+   "channel": "KTN News",
+   "views": 4,
+   "published": "2026-11-02T11:28:47+00:00",
+   "per_hour": 4,
+   "url": "https://www.youtube.com/watch?v=9keetykn5Ag",
+   "short": "https://youtube.com/shorts/9keetykn5Ag"
+  },
+  {
+   "title": "Kiambu Moves to Regulate Farming Practices Through New Agroecology Policy",
+   "channel": "KTN News",
+   "views": 5,
+   "published": "2026-11-02T11:25:18+00:00",
+   "per_hour": 5,
+   "url": "https://www.youtube.com/watch?v=ldvkrTwfe44",
+   "short": "https://youtube.com/shorts/ldvkrTwfe44"
+  },
+  {
+   "title": "Kenya’s Construction Sector Rebounds 6.8% in 2025, Attracts New Investment",
+   "channel": "KTN News",
+   "views": 3,
+   "published": "2026-11-02T11:23:52+00:00",
+   "per_hour": 3,
+   "url": "https://www.youtube.com/watch?v=ymykpOvpe88",
+   "short": "https://youtube.com/shorts/ymykpOvpe88"
+  },
+  {
+   "title": "New Security Measures Introduced to Protect Consumers from Online Payment Fraud",
+   "channel": "KTN News",
+   "views": 12,
+   "published": "2026-11-02T11:22:16+00:00",
+   "per_hour": 12,
+   "url": "https://www.youtube.com/watch?v=0zun-JqJFTI",
+   "short": "https://youtube.com/shorts/0zun-JqJFTI"
+  },
+  {
+   "title": "Kenya Industrialisation Summit to Focus on Boosting Local Manufacturing and Investment",
+   "channel": "KTN News",
+   "views": 4,
+   "published": "2026-11-02T11:20:33+00:00",
+   "per_hour": 4,
+   "url": "https://www.youtube.com/watch?v=PYYF6T2X-j4",
+   "short": "https://youtube.com/shorts/PYYF6T2X-j4"
+  },
+  {
+   "title": "CS Ruku finds over 70% of public servants in Kajiado away from work, warns against early Xmas break",
+   "channel": "Citizen TV",
+   "views": 334,
+   "published": "2026-11-02T11:19:41+00:00",
+   "per_hour": 334,
+   "url": "https://www.youtube.com/watch?v=GIj8eRYMHXY",
+   "short": "https://youtube.com/shorts/GIj8eRYMHXY"
+  },
+  {
+   "title": "Kenya Shilling Exchange Rates: Dollar at KSh129.94, Pound at KSh173.93",
+   "channel": "KTN News",
+   "views": 17,
+   "published": "2026-11-02T11:18:10+00:00",
+   "per_hour": 17,
+   "url": "https://www.youtube.com/watch?v=KxEXl8uYTvU",
+   "short": "https://youtube.com/shorts/KxEXl8uYTvU"
+  },
+  {
+   "title": "Journalist Kitavi Mutua’s Death After Snakebite Raises Questions Over Kavonokya Sect Beliefs",
+   "channel": "KTN News",
+   "views": 370,
+   "published": "2026-11-02T11:15:21+00:00",
+   "per_hour": 370,
+   "url": "https://www.youtube.com/watch?v=CX1ukkkXylw",
+   "short": "https://youtube.com/shorts/CX1ukkkXylw"
+  },
+  {
+   "title": "KTN Obtains Bomas Contract, Reveals Details Behind KSh10.2 Billion Cost Increase",
+   "channel": "KTN News",
+   "views": 105,
+   "published": "2026-11-02T11:12:16+00:00",
+   "per_hour": 105,
+   "url": "https://www.youtube.com/watch?v=kVXf0qWkFGg",
+   "short": "https://youtube.com/shorts/kVXf0qWkFGg"
+  },
+  {
+   "title": "Hundreds Join Breast Cancer Awareness Walk in Mombasa, Urge Early Screening",
+   "channel": "KTN News",
+   "views": 8,
+   "published": "2026-11-02T11:07:44+00:00",
+   "per_hour": 8,
+   "url": "https://www.youtube.com/watch?v=b8jtO9rDl6I",
+   "short": "https://youtube.com/shorts/b8jtO9rDl6I"
+  },
+  {
+   "title": "Murang’a Opens Expanded Hospital Facilities to Boost Bed Capacity and Ease Congestion",
+   "channel": "KTN News",
+   "views": 9,
+   "published": "2026-11-02T11:05:31+00:00",
+   "per_hour": 9,
+   "url": "https://www.youtube.com/watch?v=y4f96AyITZ4",
+   "short": "https://youtube.com/shorts/y4f96AyITZ4"
+  },
+  {
+   "title": "Mombasa Journalists Urge Faster Investigations into Attacks on Media Practitioners",
+   "channel": "KTN News",
+   "views": 16,
+   "published": "2026-11-02T11:03:43+00:00",
+   "per_hour": 16,
+   "url": "https://www.youtube.com/watch?v=ZyV86QU4HwA",
+   "short": "https://youtube.com/shorts/ZyV86QU4HwA"
+  },
+  {
+   "title": "Waziri Migos Ogamba apiga marufuku matumizi ya simu au rununu wakati wa mitihani wa KCSE",
+   "channel": "NTV Kenya",
+   "views": 80,
+   "published": "2026-11-02T10:53:51+00:00",
+   "per_hour": 80,
+   "url": "https://www.youtube.com/watch?v=ZCA4wJxx2hY",
+   "short": "https://youtube.com/shorts/ZCA4wJxx2hY"
+  },
+  {
+   "title": "Wanafunzi kutoka Marsabit waelezea wasiwasi wao kuhusu hali ya utovu wa usalama la Loiyangalani",
+   "channel": "NTV Kenya",
+   "views": 26,
+   "published": "2026-11-02T10:53:07+00:00",
+   "per_hour": 26,
+   "url": "https://www.youtube.com/watch?v=io1eYVkG_ns",
+   "short": "https://youtube.com/shorts/io1eYVkG_ns"
+  },
+  {
+   "title": "Gavana wa Nairobi Johnson Sakaja  ajiunga rasmi na chama cha ODM",
+   "channel": "NTV Kenya",
+   "views": 240,
+   "published": "2026-11-02T10:49:49+00:00",
+   "per_hour": 240,
+   "url": "https://www.youtube.com/watch?v=iogd8UZk3Ac",
+   "short": "https://youtube.com/shorts/iogd8UZk3Ac"
+  },
+  {
+   "title": "Jeshi la Sifuna laingia ‘ground’ kuwashawishi wapiga kura kumuunga mkono",
+   "channel": "NTV Kenya",
+   "views": 606,
+   "published": "2026-11-02T10:48:58+00:00",
+   "per_hour": 606,
+   "url": "https://www.youtube.com/watch?v=NcGeyPVnDD4",
+   "short": "https://youtube.com/shorts/NcGeyPVnDD4"
+  },
+  {
+   "title": "Wadau wataka kuondolewa kwa vikwazo vya biashara kukuza utalii Afrika Mashariki",
+   "channel": "Citizen TV",
+   "views": 68,
+   "published": "2026-11-02T10:48:30+00:00",
+   "per_hour": 68,
+   "url": "https://www.youtube.com/watch?v=Py-b1to0RLM",
+   "short": "https://youtube.com/shorts/Py-b1to0RLM"
+  },
+  {
+   "title": "Sonko awakosoa vikali viongozi wa upinzani kwa kupakana tope hadharani",
+   "channel": "NTV Kenya",
+   "views": 191,
+   "published": "2026-11-02T10:48:19+00:00",
+   "per_hour": 191,
+   "url": "https://www.youtube.com/watch?v=YrlbdxdvEPM",
+   "short": "https://youtube.com/shorts/YrlbdxdvEPM"
+  },
+  {
+   "title": "Jamii Malaba yahimizwa kudumisha mila na desturi kuimarisha umoja na amani",
+   "channel": "Citizen TV",
+   "views": 39,
+   "published": "2026-11-02T10:47:47+00:00",
+   "per_hour": 39,
+   "url": "https://www.youtube.com/watch?v=ekDJf0eOrZw",
+   "short": "https://youtube.com/shorts/ekDJf0eOrZw"
+  },
+  {
+   "title": "Augustine Muli ataka Kalonzo Musyoka kuheshimiwa",
+   "channel": "NTV Kenya",
+   "views": 42,
+   "published": "2026-11-02T10:47:04+00:00",
+   "per_hour": 42,
+   "url": "https://www.youtube.com/watch?v=EVYrsTD_-XQ",
+   "short": "https://youtube.com/shorts/EVYrsTD_-XQ"
+  },
+  {
+   "title": "Jamii ya Wacherangany yaandaa sherehe za kitamaduni kuhifadhi mila na desturi zenye maadili",
+   "channel": "Citizen TV",
+   "views": 35,
+   "published": "2026-11-02T10:45:32+00:00",
+   "per_hour": 35,
+   "url": "https://www.youtube.com/watch?v=32ffr6iAXC4",
+   "short": "https://youtube.com/shorts/32ffr6iAXC4"
+  },
+  {
+   "title": "Watahiniwa 1,000,000 waanza mitihani ya KCSE 2026",
+   "channel": "NTV Kenya",
+   "views": 199,
+   "published": "2026-11-02T10:44:06+00:00",
+   "per_hour": 199,
+   "url": "https://www.youtube.com/watch?v=m1SSY56z3tU",
+   "short": "https://youtube.com/shorts/m1SSY56z3tU"
+  },
+  {
+   "title": "Wachezaji kutoka Vihiga wataka ufunguzi wa uwanja wa Talanta kufanywa na timu za Kenya",
+   "channel": "NTV Kenya",
+   "views": 7,
+   "published": "2026-11-02T10:42:21+00:00",
+   "per_hour": 7,
+   "url": "https://www.youtube.com/watch?v=85gDR-LWgK0",
+   "short": "https://youtube.com/shorts/85gDR-LWgK0"
+  },
+  {
+   "title": "Serikali yalenga kubuni ajira 250,000 kupitia mradi wa kiuchumi wa Vipingo",
+   "channel": "Citizen TV",
+   "views": 46,
+   "published": "2026-11-02T10:41:41+00:00",
+   "per_hour": 46,
+   "url": "https://www.youtube.com/watch?v=FLEd8oPOJLU",
+   "short": "https://youtube.com/shorts/FLEd8oPOJLU"
+  },
+  {
+   "title": "CS Barasa Urges IGAD States to Fund Climate Action Plans as Mombasa Battles Flood Risks",
+   "channel": "KTN News",
+   "views": 8,
+   "published": "2026-11-02T10:40:58+00:00",
+   "per_hour": 8,
+   "url": "https://www.youtube.com/watch?v=sywz87jWzl8",
+   "short": "https://youtube.com/shorts/sywz87jWzl8"
+  },
+  {
+   "title": "Wanawake wahimizwa kukumbatia kipmo cha saratani ya matiti",
+   "channel": "NTV Kenya",
+   "views": 11,
+   "published": "2026-11-02T10:40:39+00:00",
+   "per_hour": 11,
+   "url": "https://www.youtube.com/watch?v=8NnxX9JQlYM",
+   "short": "https://youtube.com/shorts/8NnxX9JQlYM"
+  },
+  {
+   "title": "Thousands Flee Ethiopia Violence as Moyale Camps Receive Emergency Health Support",
+   "channel": "KTN News",
+   "views": 130,
+   "published": "2026-11-02T10:39:23+00:00",
+   "per_hour": 130,
+   "url": "https://www.youtube.com/watch?v=lBUUAp9WN64",
+   "short": "https://youtube.com/shorts/lBUUAp9WN64"
+  },
+  {
+   "title": "Mashirika ya haki waonya jamii dhidi ya ukeketaji wa mabinti",
+   "channel": "NTV Kenya",
+   "views": 11,
+   "published": "2026-11-02T10:39:09+00:00",
+   "per_hour": 11,
+   "url": "https://www.youtube.com/watch?v=EH1plQoSY-8",
+   "short": "https://youtube.com/shorts/EH1plQoSY-8"
+  },
+  {
+   "title": "Viongozi wanawake Homa Bay walalamikia mashambulizi wanapowania nyadhifa za uongozi",
+   "channel": "Citizen TV",
+   "views": 31,
+   "published": "2026-11-02T10:37:55+00:00",
+   "per_hour": 30,
+   "url": "https://www.youtube.com/watch?v=6e3I9IU7I_I",
+   "short": "https://youtube.com/shorts/6e3I9IU7I_I"
+  },
+  {
+   "title": "Vijana wawezeshwa kwa kupewa mafunzo Kamukunji",
+   "channel": "NTV Kenya",
+   "views": 11,
+   "published": "2026-11-02T10:37:09+00:00",
+   "per_hour": 11,
+   "url": "https://www.youtube.com/watch?v=9yYsRwu3shw",
+   "short": "https://youtube.com/shorts/9yYsRwu3shw"
+  },
+  {
+   "title": "Waziri Ruku awaonya wafanyikazi wa uma Kajiado",
+   "channel": "NTV Kenya",
+   "views": 31,
+   "published": "2026-11-02T10:35:41+00:00",
+   "per_hour": 29,
+   "url": "https://www.youtube.com/watch?v=QeoJEf2pSvU",
+   "short": "https://youtube.com/shorts/QeoJEf2pSvU"
+  },
+  {
+   "title": "Gavana wa Nairobi Johnson Sakaja ajiondoa rasmi UDA na kujiunga na ODM",
+   "channel": "Citizen TV",
+   "views": 757,
+   "published": "2026-11-02T10:35:10+00:00",
+   "per_hour": 705,
+   "url": "https://www.youtube.com/watch?v=BzWYtzxIGms",
+   "short": "https://youtube.com/shorts/BzWYtzxIGms"
+  },
+  {
+   "title": "Wakazi Mbuguni wataka upimaji upya wa ardhi kumaliza mzozo wa umiliki Kwale",
+   "channel": "Citizen TV",
+   "views": 50,
+   "published": "2026-11-02T10:34:14+00:00",
+   "per_hour": 46,
+   "url": "https://www.youtube.com/watch?v=W1F7gSMREYU",
+   "short": "https://youtube.com/shorts/W1F7gSMREYU"
+  },
+  {
+   "title": "Madereva wa malori wa masafa marefu walalamikia unyanyapaa dhidi ya virusi vya Ebola",
+   "channel": "NTV Kenya",
+   "views": 22,
+   "published": "2026-11-02T10:34:09+00:00",
+   "per_hour": 20,
+   "url": "https://www.youtube.com/watch?v=kaGlhb90f1A",
+   "short": "https://youtube.com/shorts/kaGlhb90f1A"
+  },
+  {
+   "title": "Ferdinand Waititu afungwa gerezani tena na mahakama",
+   "channel": "NTV Kenya",
+   "views": 665,
+   "published": "2026-11-02T10:32:03+00:00",
+   "per_hour": 591,
+   "url": "https://www.youtube.com/watch?v=nqDNG9pKlkE",
+   "short": "https://youtube.com/shorts/nqDNG9pKlkE"
+  },
+  {
+   "title": "Kisima chazinduliwa Kajiado Mashariki, wakazi Orkoilang'a wapata afueni ya maji",
+   "channel": "Citizen TV",
+   "views": 38,
+   "published": "2026-11-02T10:26:36+00:00",
+   "per_hour": 31,
+   "url": "https://www.youtube.com/watch?v=-Ijai2Dt-XQ",
+   "short": "https://youtube.com/shorts/-Ijai2Dt-XQ"
+  },
+  {
+   "title": "Martha Karua akashifu kutekwa kwa mwanaharakati Twaha Mwaipaya, aahidi msaada wa kisheria",
+   "channel": "Citizen TV",
+   "views": 160,
+   "published": "2026-11-02T10:25:33+00:00",
+   "per_hour": 130,
+   "url": "https://www.youtube.com/watch?v=Kpi22TaBKrU",
+   "short": "https://youtube.com/shorts/Kpi22TaBKrU"
+  },
+  {
+   "title": "Wazazi wanunua lori la maji kuwanusuru watahiniwa wa Nkareta wakati wa KCSE",
+   "channel": "Citizen TV",
+   "views": 90,
+   "published": "2026-11-02T10:24:39+00:00",
+   "per_hour": 72,
+   "url": "https://www.youtube.com/watch?v=W3lnt2bUSHg",
+   "short": "https://youtube.com/shorts/W3lnt2bUSHg"
+  },
+  {
+   "title": "Mbio za Chepsaita zafufua matumaini ya elimu kwa wanafunzi wa mashinani Uasin Gishu",
+   "channel": "Citizen TV",
+   "views": 48,
+   "published": "2026-11-02T10:22:10+00:00",
+   "per_hour": 37,
+   "url": "https://www.youtube.com/watch?v=nWbgsULWii0",
+   "short": "https://youtube.com/shorts/nWbgsULWii0"
+  },
+  {
+   "title": "Mashirika ya umma na binafsi yahimizwa kuimarisha uwajibikaji na utendaji bora",
+   "channel": "Citizen TV",
+   "views": 44,
+   "published": "2026-11-02T10:18:22+00:00",
+   "per_hour": 33,
+   "url": "https://www.youtube.com/watch?v=obCYJAmMsQM",
+   "short": "https://youtube.com/shorts/obCYJAmMsQM"
+  },
+  {
+   "title": "PCEA Upendo yaongoza usafishaji wa mitaro Gataka, Kajiado kukabiliana na mafuriko ya mvua",
+   "channel": "Citizen TV",
+   "views": 40,
+   "published": "2026-11-02T10:16:06+00:00",
+   "per_hour": 29,
+   "url": "https://www.youtube.com/watch?v=-vsWwqwF-ds",
+   "short": "https://youtube.com/shorts/-vsWwqwF-ds"
+  },
+  {
+   "title": "Wakazi Mombasa wasafisha mitaro ya majitaka kujiandaa kukabiliana na mafuriko ya El Niño",
+   "channel": "Citizen TV",
+   "views": 89,
+   "published": "2026-11-02T10:13:59+00:00",
+   "per_hour": 62,
+   "url": "https://www.youtube.com/watch?v=eb2K5Z5A7A4",
+   "short": "https://youtube.com/shorts/eb2K5Z5A7A4"
+  },
+  {
+   "title": "NTV KENYA LIVE",
+   "channel": "NTV Kenya",
+   "views": 2513,
+   "published": "2026-11-02T09:15:39+00:00",
+   "per_hour": 1048,
+   "url": "https://www.youtube.com/watch?v=n65C6I_OYmc",
+   "short": "https://youtube.com/shorts/n65C6I_OYmc"
+  }
+ ]
 }
