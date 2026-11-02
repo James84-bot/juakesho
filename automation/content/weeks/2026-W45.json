@@ -44,7 +44,7 @@
         "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQd2hYSUpIdVpRUHdwN2d1XzZZek1vVXpkY09SRk1RNkNGRFZ1dnVacGlaTklrckxSb29waWRWTlBzV0RTMnRsSEtoMl9FU2tIY0dCbTRnMDN5dmFtLVloYlBGNFdqdWY1VFFmYk1uOXhhNDVUd1dMRmhlYW9PbVhnV3FHV2RKLUtSSjJvcHEyTGpiRzlCeUFhY2UzYVhMRWdfcWsteGRvc09KQmJpRUNWOHlvS1VUSlYzclI2OW1mVVNYN0doN1hDVHZYdmc0aU9XNVE?oc=5",
         "published": "2026-11-01"
       },
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "'24' is not in this post's material (Kenyan patriot Jordan Guenther reacts after scammer uses his photo to lure women on Facebo): use only the numbers it gives"
@@ -146,7 +146,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:Birds_of_Lake_Nakuru_National_Park._Flamingos_2.jpg",
       "reel": true,
-      "tg_msg": 691
+      "tg_msg": 691,
+      "fresh_checked": "2026-11-02T15:17:39.149132+03:00"
     },
     {
       "id": "2026-w45-d3-promise",
@@ -596,7 +597,7 @@
           "published": "2026-11-02"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -628,7 +629,13 @@
       "reel": true,
       "tg_msg": 705,
       "auto": true,
-      "decided_at": "2026-11-02T15:12:38.821686+03:00"
+      "decided_at": "2026-11-02T15:12:38.821686+03:00",
+      "published_at": "2026-11-02T15:19:10.007786+03:00",
+      "ig_id": "17927200665203549",
+      "fb_id": "1111662468496514",
+      "story_id": "18362881597217006",
+      "fb_story_id": "1700884134806751",
+      "yt_id": "Jod3YkZned0"
     }
   ],
   "scripts": {
