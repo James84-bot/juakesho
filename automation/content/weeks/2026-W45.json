@@ -758,7 +758,7 @@
           "published": "2026-11-03"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 6.0/10. Pick a trending story from the top 5 list instead of a minor education brief."
@@ -791,7 +791,13 @@
       "photo_source": "https://capitalfm.africa/seven-hospitalised-candidates-five-inmates-sit-2026-kcse-exams/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
       "reel": true,
       "tg_msg": 728,
-      "decided_at": "2026-11-03T09:41:11.948899+03:00"
+      "decided_at": "2026-11-03T09:41:11.948899+03:00",
+      "published_at": "2026-11-03T14:17:58.092600+03:00",
+      "ig_id": "18000270350825155",
+      "fb_id": "1115687457738055",
+      "story_id": "17929436223424201",
+      "fb_story_id": "4481105015465954",
+      "yt_id": "0rM_NiHBRHI"
     }
   ],
   "scripts": {
