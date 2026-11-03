@@ -118,7 +118,7 @@
         "outlet": "Kenya Clearing House Mechanism (CBD)",
         "photo_query": "Lake Nakuru National Park flamingos Kenya"
       },
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": []
@@ -840,7 +840,7 @@
           "published": "2026-11-03"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": []
@@ -870,7 +870,13 @@
       "reel": true,
       "tg_msg": 735,
       "auto": true,
-      "decided_at": "2026-11-03T14:57:51.213238+03:00"
+      "decided_at": "2026-11-03T14:57:51.213238+03:00",
+      "published_at": "2026-11-03T17:21:56.421419+03:00",
+      "ig_id": "18072961277783597",
+      "fb_id": "1753591949896361",
+      "story_id": "18073365413499556",
+      "fb_story_id": "3686373928187530",
+      "yt_id": "cF78EvL3ekI"
     }
   ],
   "scripts": {
