@@ -685,7 +685,7 @@
           "published": "2026-11-02"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -717,7 +717,13 @@
       "photo_source": "https://www.kbc.co.ke/dpp-secures-ksh21m-fines-13-year-sentence-against-waititu-in-money-laundering-case/",
       "reel": true,
       "tg_msg": 724,
-      "decided_at": "2026-11-03T03:02:43.476449+03:00"
+      "decided_at": "2026-11-03T03:02:43.476449+03:00",
+      "published_at": "2026-11-03T19:32:38.306781+03:00",
+      "ig_id": "18120490240770759",
+      "fb_id": "1678332600375573",
+      "story_id": "18111027469933595",
+      "fb_story_id": "1435717072029207",
+      "yt_id": "m25sIVZNp98"
     },
     {
       "id": "2026-w45-hot-1103",
