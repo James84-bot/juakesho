@@ -1,174 +1,173 @@
 {
-  "fetched": "2026-11-02T23:14:22.075411+00:00",
+  "fetched": "2026-11-03T06:10:03.538650+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "benfica vs alverca",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Mais um de Pavlidis dá saúde à águia",
-          "url": "https://www.sporttv.pt/noticias/859919/mais-um-de-pavlidis-da-saude-a-aguia",
-          "source": "Sport TV"
-        },
-        {
-          "title": "Marco só teve de andar 45 anos para trás para ver Chalana em Echeverri (a crónica do Benfica-Alverca)",
-          "url": "https://observador.pt/2026/11/02/marco-so-teve-de-andar-45-anos-para-tras-para-ver-chalana-em-echeverri-a-cronica-do-benfica-alverca/",
-          "source": "Observador"
-        },
-        {
-          "title": "Sérgio Ferreira: «Ninguém é obrigado a ganhar, temos é de jogar para vencer»",
-          "url": "https://tvi.iol.pt/noticias/liga/benfica/sergio-ferreira-ninguem-e-obrigado-a-ganhar-temos-e-de-jogar-para-vencer",
-          "source": "TVI"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "al ahly",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "On a night of possible departure: Posecki quells the Al-Ahly fans' uprising with a surprising response",
-          "url": "https://www.goal.com/en/news/on-the-night-of-his-possible-departure-posecki-quells-the-al-ahly-fans-revolt-with-a-surprise-response/blt34da059c44151f67",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Sacked during the Al-Shabab clash: Ben Dhikri competes with a surprise coach to succeed Pusic at Al-Ahly",
-          "url": "https://www.yardbarker.com/soccer/articles/sacked_during_the_al_shabab_clash_ben_dhikri_competes_with_a_surprise_coach_to_succeed_pusic_at_al_ahly/s1_17790_44496410",
-          "source": "Yardbarker"
-        },
-        {
-          "title": "An away trip reveals the truth about Posecki's sacking from coaching Al-Ahly",
-          "url": "https://www.goal.com/en/news/an-away-trip-reveals-the-truth-behind-posecki-s-dismissal-from-coaching-al-ahly/blt4383a75aab6a3053",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "police",
-      "traffic": "200+",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "MCK raises alarm over rising attacks on journalists ahead of 2027 polls",
-          "url": "https://nation.africa/kenya/news/mck-raises-alarm-over-rising-attacks-on-journalists-ahead-of-2027-polls-5656016",
-          "source": "Daily Nation"
+          "title": "Police arrest five, seize 1,300 litres of Kangara in Nairobi raid",
+          "url": "https://peopledaily.digital/news/police-arrest-five-seize-1300-litres-of-kangara-in-nairobi-raid",
+          "source": "People Daily"
         },
         {
-          "title": "Kenya records 92 press freedom violations as KNCHR warns of growing threats to journalists",
-          "url": "https://eastleighvoice.co.ke/news/419047/kenya-records-92-press-freedom-violations-as-knchr-warns-of-growing-threats-to-journalists",
-          "source": "The Eastleigh Voice"
+          "title": "Matungulu residents storm court, deliver petition over chang'aa menace linked to 24 deaths",
+          "url": "https://www.the-star.co.ke/counties/eastern/2026-10-28-matungulu-residents-storm-court-over-changaa-menace-demand-bail-reforms",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Journalist Killings Rise as Kenya Logs 47 Attacks",
-          "url": "https://khusoko.com/2026/11/02/journalist-killings-rise-kenya-47-attacks-media-council/",
-          "source": "Khusoko"
+          "title": "Over 1,000 litres of chang’aa seized in Machakos raid",
+          "url": "https://citizen.digital/article/over-1000-litres-of-changaa-seized-in-machakos-raid-n392885",
+          "source": "Citizen Digital"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "julius kipngetich jubilee holdings retirement",
+      "title": "warriors vs suns",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Watch Draymond Green, Dillon Brooks Fight in Viral Video, Warriors Star Ejected vs. Suns",
+          "url": "https://bleacherreport.com/articles/25528830-watch-draymond-green-dillon-brooks-fight-viral-video-warriors-star-ejected-vs-suns",
+          "source": "Bleacher Report"
+        },
+        {
+          "title": "Warriors' Draymond Green: Tossed vs. Suns",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/warriors-draymond-green-tossed-vs-suns/",
+          "source": "CBS Sports"
+        },
+        {
+          "title": "Draymond Green loses his cool and gets ejected after a scuffle with Dillon Brooks",
+          "url": "https://sports.yahoo.com/articles/draymond-green-loses-cool-gets-053239295.html",
+          "source": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "galatasaray vs stuttgart prediction",
       "traffic": "200+",
       "news": [
         {
-          "title": "Kipngetich retires from Jubilee Holdings after 9 years",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/kipngetich-retires-from-jubilee-holdings-after-9-years-5655960",
+          "title": "Galatasaray vs Stuttgart: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/crx2d14genezt",
+          "source": "BBC"
+        },
+        {
+          "title": "How to watch Galatasaray vs VfB Stuttgart live today: Who is showing the match on TV and via live stream?",
+          "url": "https://www.goal.com/en-ke/news/how-to-watch-galatasaray-vs-vfb-stuttgart-live-today-who-is-showing-the-match-on-tv-and-via-live-stream/blt8fd8f038814f5e0c",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Will Osimhen Be Able to Revive Galatasaray’s League Phase Ambition?",
+          "url": "https://www.thisdaylive.com/2026/11/03/will-osimhen-be-able-to-revive-galatasarays-league-phase-ambition/",
+          "source": "THISDAYLIVE"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "narendra raval devki group investments",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Devki tycoon Raval splashes over Sh200bn on cement, steel plants",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/devki-tycoon-splashes-over-sh200bn-on-cement-steel-plants-5655776",
           "source": "Business Daily"
         },
         {
-          "title": "Jubilee appoints Juan Cazcarra Group CEO as Julius Kipng’etich retires",
-          "url": "https://citizen.digital/article/jubilee-appoints-juan-cazcarra-group-ceo-as-julius-kipngetich-retires-n393191",
-          "source": "Citizen Digital"
+          "title": "Ruto Announces Construction of Major Mining Plant in Taita Taveta",
+          "url": "https://www.kenyans.co.ke/news/128898-ruto-announces-construction-new-steel-production-plant-taita-taveta",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Jubilee Group Appoints Juan Cazcarra As Group CEO, Succeeding Julius Kipngetich",
-          "url": "https://cioafrica.co/jubilee-group-appoints-juan-cazcarra-as-group-ceo-succeeding-julius-kipngetich/",
-          "source": "CIO Africa"
+          "title": "Deep-Dive Report: Kenya's Industrial Moment — Cement in Kitui, Sugar in Nandi, Pipelines and Fuel, and the Tycoons Building East Africa's Biggest Economy",
+          "url": "https://www.billionaires.africa/2026/10/30/deep-dive-report-kenyas-industrial-moment-cement-in-kitui-sugar-in-nandi-pipelines-and-fuel-and-the-tycoons-building-east-africas-biggest-economy/",
+          "source": "Billionaires.Africa"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "al ahly vs al mokawloon",
-      "traffic": "200+",
+      "title": "odi",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Al-Ahly squad list raises questions: Amouta deals a fresh blow to Imam Ashour",
-          "url": "https://www.goal.com/en/news/al-ahly-squad-list-raises-questions-amouta-deals-a-fresh-blow-to-imam-ashour/blt0da95c8e27398428",
-          "source": "Goal.com"
+          "title": "Rohit Sharma on the verge of multiple milestones! 21K international runs, 400 ODI sixes in sight against",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/rohit-sharma-on-the-verge-of-multiple-milestones-21k-international-runs-400-odi-sixes-in-sight-against-new-zealand/articleshow/135468386.cms",
+          "source": "The Times of India"
         },
         {
-          "title": "Yasser Ibrahim ready for El Mokawloon match in Capita…",
-          "url": "https://www.ysscores.com/en/news/14084516/yasser-ibrahim-ready-for-el-mokawloon-match-in-capital-cup",
-          "source": "YSscores"
+          "title": "Virat Kohli can break three Sachin Tendulkar records against New Zealand",
+          "url": "https://gulfnews.com/sport/virat-kohli-can-break-three-sachin-tendulkar-records-against-new-zealand-1.500733614",
+          "source": "Gulf News"
         },
         {
-          "title": "Al Ahly squad prompts questions as Ammouta deals fresh blow to Imam Ashour",
-          "url": "https://onefootball.com/en/news/al-ahly-squad-prompts-questions-as-ammouta-deals-fresh-blow-to-imam-ashour-43709882",
-          "source": "OneFootball"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "al-gharafa vs al qadsiah",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Al-Gharafa vs Al Qadsiah: Where to watch, TV channel, live stream & kick-off time",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-al-gharafa-v-al-qadsiah/blta2636e6d25ddebae",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Julián Quiñones Steals the Show as Al Qadsiah Crushes Al Gharafa in Asian Champions League",
-          "url": "https://www.soyfutbol.com/en/news/julian-quinones-steals-the-show-as-al-qadsiah-crushes-al-gharafa-in-asian-champions-league-20261102-0033.html",
-          "source": "Soy Futbol"
-        },
-        {
-          "title": "Al Gharafa face Al Qadsiah challenge",
-          "url": "https://www.qatar-tribune.com/article/262049/sports/al-gharafa-face-al-qadsiah-challenge",
-          "source": "Qatar Tribune"
+          "title": "Shubman Gill to Shreyas Iyer: Full list of players to feature in upcoming five-match ODI series between India and New Zealand",
+          "url": "https://www.india.com/photos/sports/shubman-gill-to-shreyas-iyer-full-list-of-players-to-feature-in-upcoming-five-match-odi-series-between-india-and-new-zealand-498832/",
+          "source": "India.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "nathaniel bassey",
-      "traffic": "200+",
+      "title": "chelsea transfer news",
+      "traffic": "100+",
       "news": [
         {
-          "title": "The Business of Gospel: Nathaniel Bassey Hits 1 Billion YouTube Views",
-          "url": "https://businesstoday.co.ke/the-business-of-gospel-nathaniel-bassey-hits-1-billion-youtube-views/",
-          "source": "Business Today Kenya"
+          "title": "Chelsea Transfer News Today: Martin Zubimendi hope as scouting mission revealed",
+          "url": "https://www.livescore.com/en/news/football/club-world-cup/chelsea-transfer-news-today-martin-zubimendi-hope-as-scouting-mission-revealed-footballtransfers/",
+          "source": "LiveScore"
         },
         {
-          "title": "Nathaniel Bassey becomes first African gospel artist to hit one billion YouTube views",
-          "url": "https://thenationonlineng.net/nathaniel-bassey-becomes-first-african-gospel-artist-to-hit-one-billion-youtube-views/",
-          "source": "The Nation Newspaper"
+          "title": "Alonso could complete dream Chelsea signing thanks to Arteta decision",
+          "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/11/chelsea-transfer-news-martin-zubimendi-arsenal-xabi-alonso-mikel-arteta-2027",
+          "source": "FootballTransfers.com"
         },
         {
-          "title": "Nathaniel Bassey Makes History With One Billion YouTube Views",
-          "url": "https://von.gov.ng/nathaniel-bassey-makes-history-with-one-billion-youtube-views/",
-          "source": "Voice of Nigeria"
+          "title": "Chelsea want to beat Arsenal to Europe's most in-form striker",
+          "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/11/chelsea-transfer-news-gustavo-varela-monza-arsenal-2027",
+          "source": "FootballTransfers.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "chelsea news",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Chelsea were offered Ilya Zabarnyi, his stats prove he would have been a top signing",
+          "url": "https://sports.yahoo.com/articles/chelsea-were-offered-ilya-zabarnyi-110000846.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Xabi Alonso is already paying the price of Chelsea's biggest summer transfer mistake",
+          "url": "https://theprideoflondon.com/xabi-alonso-is-already-paying-the-price-of-chelseas-biggest-summer-transfer-mistake",
+          "source": "The Pride of London"
+        },
+        {
+          "title": "Chelsea Transfer News Today: Martin Zubimendi hope as scouting mission revealed",
+          "url": "https://www.livescore.com/en/news/football/club-world-cup/chelsea-transfer-news-today-martin-zubimendi-hope-as-scouting-mission-revealed-footballtransfers/",
+          "source": "LiveScore"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "osasuna",
+      "title": "lakers vs heat",
+      "why": "unsafe: 'odds'"
+    },
+    {
+      "title": "qpr vs burnley",
       "why": "unsafe: 'betting'"
     },
     {
-      "title": "al-ittihad vs al ain",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "copenhagen fc",
+      "title": "portsmouth vs swansea",
       "why": "unsafe: 'Betting'"
     }
   ],

@@ -718,13 +718,86 @@
       "reel": true,
       "tg_msg": 724,
       "decided_at": "2026-11-03T03:02:43.476449+03:00"
+    },
+    {
+      "id": "2026-w45-hot-1103",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "KCSE Candidates",
+      "line": "Seven hospitalised candidates and five inmates sit *2026* KCSE exams across the country.",
+      "fact": "Examinations began with candidates sitting papers while receiving medical care or serving sentences.",
+      "source": "Capital FM News, 2026-11-03",
+      "photo_query": "hospital ward Kenya",
+      "message": "Seven hospitalised candidates and five inmates are sitting their 2026 KCSE exams.",
+      "action": "Wish every candidate sitting their exams this week success",
+      "beats": [
+        "Seven hospitalised candidates and five inmates sit *2026* KCSE exams.",
+        "Exams started with candidates taking papers from hospital beds.",
+        "Five inmates are also sitting the national tests.",
+        "Kenyans wish every student writing their papers success today."
+      ],
+      "caption": "Capital FM News reports: Exams are here under every condition. Seven hospitalised candidates and five inmates are writing their papers today. We wish them the very best.\n\nSend this to a student sitting their exams this week.\n\n#KCSE2026 #KenyaOnRecord",
+      "who": "Ministry of Education",
+      "where": "National",
+      "when": "03 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Students sit national exams under exceptional medical and secure conditions.",
+      "bg": "usiku",
+      "publish_at": "2026-11-03T14:15:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Ferdinand Waititu faces 13 years in jail or a Sh21 million fine over a Sh588.7 million irregular tender."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Seven Hospitalised Candidates, Five Inmates Sit 2026 KCSE Exams",
+          "link": "https://capitalfm.africa/seven-hospitalised-candidates-five-inmates-sit-2026-kcse-exams/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-03"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.0/10. Pick a trending story from the top 5 list instead of a minor education brief."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 4,
+        "voice": 7,
+        "craft": 6,
+        "picture": 7,
+        "hold": 6,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 6,
+        "avg": 6.0,
+        "note": "Pick a trending story from the top 5 list instead of a minor education brief."
+      },
+      "drafted_at": "2026-11-03T09:19:04.015639+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1103-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/seven-hospitalised-candidates-five-inmates-sit-2026-kcse-exams/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 728
     }
   ],
   "scripts": {
-    "radio": "Habari za leo, mwananchi. Welcome to this week’s edition of Kenya on Record. I'm your host, and today we are talking accountability. \n\nLet’s get straight to it. Former Kiambu Governor Ferdinand Waititu is facing a watershed moment in our courts. The man is staring down the barrel of 13 years behind bars, or a heavy Sh21 million fine, over a controversial Sh588.7 million irregular tender. \n\nThink about those numbers for a minute. Sh588 million of public funds—money meant for roads, hospitals, and mwananchi development—tied up in questionable procurement. This is the exact reason why public service must never be treated as a family business or a personal ATM. When leaders mismanage funds, it is our schools that lack books, our dispensaries that lack medicine, and our youth who stay jobless.\n\nAs taxpayers, we must ask ourselves: Is a Sh21 million fine enough for a Sh588 million loss? The wheels of justice are turning, slow as they sometimes are, but the message is clear. Accountability is catching up, whether you are in office or out of it. We must keep our eyes on the ball and demand transparency at every level of county governance.\n\n*Na kwa ufupi kwa wale ambao wanapendelea lugha ya taifa:* Hali ni mbaya kwa aliyekuwa Gavana wa Kiambu, Ferdinand Waititu. Anatazamiwa kifungo cha miaka kumi na mitatu jela au faini ya Shilingi milioni 21 baada ya kupatikana na hatua zinazohusiana na zabuni tatanishi ya Shilingi milioni 588.7 za umma. Huu ni ukumbusho kwamba rasilimali zetu lazima zilindwe.",
-    "voice_note": "Aki wakenya, nchi hii ina mambo! Former Kiambu Governor Ferdinand Waititu is really between a rock and a hard place right now. Courts are weighing a 13-year jail term or a Sh21 million fine for him over a Sh588.7 million irregular tender. Halafu bado kuna watu wanashangaa kwanini maendeleo hayafiki mashinani! Sh588 million ni pesa mob sana ambayo ingebadilisha maisha ya wananchi kule Kiambu. Hii ni funzo kubwa kwa wote wanaoshikilia nyadhifa za umma—ukila pesa za wananchi, siku moja utajibu. Share hii voice note na wenzako ili tujue Kenya tunaelekea wapi na uwajibikaji.",
-    "sms": "Usiibiwe: Shughulika na tenda na pesa za umma! Ripoti matumizi mabaya ya rasilimali za kaunti kupitia EACC au ofisi ya Mhasibu Mkuu wa Serikali. Pesa yako, haki yako.",
-    "reels": "[Visual: Bold text on screen: 'Sh588M TENDER SCANDAL!']\n[Audio - Host speaking firmly and directly]: \nSh588.7 million. That’s how much public money was tied up in an irregular tender under former Kiambu Governor Ferdinand Waititu. \nNow, he’s facing 13 years in jail or a Sh21 million fine. \n[Visual: Courthouse imagery flash, then text: 'Accountability starts with us']\n[Audio]: \nPesa za umma sio za kibinafsi. Fuatilia, uliza, nausinyamaze. Kenya on Record—keeping leaders honest."
+    "radio": "Habari za jioni na karibu kwenye Kenya on Record. Mimi ni sauti yako ya kuwajibisha serikali, tukifuatilia kile kinachoendelea chini ya jua la Kenya.\n\nLeo tunasimama na watahiniwa saba wa KCSE ambao wanalazimika kufanyia mitihani yao wakiwa hospitalini, pamoja na wafungwa watano wanaotafuta maisha bora kupitia kalamu na karatasi. Hii ni 2026, na bado tunauliza: je, mifumo yetu ya afya na gereza inawawezesha hawa wenzetu kufanya mtihani katika mazingira ya hadhi na haki?\n\nKura yako, kodi yako, na mustakabali wa wanao ni wajibu. Tunawapongeza walimu na maafisa wanaohakikisha kila mtoto anafikiwa, lakini tunataka serikali ya kaunti na kitaifa kutoa ripoti kamili ya mipango ya dharura ya afya kwa watahiniwa wote nchini.\n\nUsiibiwe na ahadi za hewani. Simama imara.\n\n*Na kwa ufupi kwa Kiswahili:* Watahiniwa saba wa KCSE hospitalini na wafungwa watano wanafanya mitihani yao wiki hii. Kenya on Record inateta: Haki ya elimu haina mipaka ya hospitali wala gereza. Usiibiwe, fuatilia uwajibikaji.",
+    "voice_note": "Wadau, mambo vipi? Hapa ni Kenya on Record. Hebu tafakari hii: Wakati maelfu ya watoto wetu wako kwenye kumbi za mitihani ya KCSE wiki hii, kuna watahiniwa saba wanaougua waliomo hospitalini, na wafungwa watano ndani ya kuta za gereza, ambao nao wanapambana na karatasi hizo hizo. Swali si tu kama watafaulu; swali ni kama wizara imeweka mazingira ya kibinadamu na haki kwao. Elimu ni ya kila Mkenya, haijalishi wako wapi. Tusinyamaze. Usiibiwe na serikali inayowasahau walio hatarini.",
+    "sms": "Watahiniwa 7 wa KCSE hospitalini & wafungwa 5 wanafanya mtihani wiki hii. Haki ya elimu ni kwa wote, bila kujali hali. Usiibiwe na mifumo inayowatenga!",
+    "reels": "[Visual: Close-up of a hand writing an exam paper in a hospital bed, transitioning to a prison cell desk, text overlay: KCSE 2026]\n\nVoice-over (steady, serious, Kenyan English): \n\nWhile the rest of the country watches exam centers, look closer. Seven candidates in hospital beds. Five inmates behind bars. Writing the same 2026 KCSE papers. Education is a constitutional right, not a privilege for the healthy and free. Are they getting the dignity and support they deserve? \n\nKenya on Record. Don't be cheated. Demand accountability."
   },
   "spend_usd": 0.0
 }
