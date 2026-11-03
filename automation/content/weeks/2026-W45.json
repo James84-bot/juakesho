@@ -791,20 +791,93 @@
       "photo_source": "https://capitalfm.africa/seven-hospitalised-candidates-five-inmates-sit-2026-kcse-exams/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
       "reel": true,
       "tg_msg": 728,
-      "decided_at": "2026-11-03T09:41:11.948899+03:00",
-      "published_at": "2026-11-03T14:17:58.092600+03:00",
-      "ig_id": "18000270350825155",
-      "fb_id": "1115687457738055",
-      "story_id": "17929436223424201",
-      "fb_story_id": "4481105015465954",
-      "yt_id": "0rM_NiHBRHI"
+      "decided_at": "2026-11-03T09:41:11.948899+03:00"
+    },
+    {
+      "id": "2026-w45-hot-1103m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Kenyan families",
+      "line": "Kenyan women now have *3 children* on average, down from 4 in 2022, KNBS reports.",
+      "fact": "Teenage pregnancy also dropped to 11.9% this year, the lowest KNBS has recorded.",
+      "source": "Capital FM News, 2026-11-03, Capital FM News, 2026-11-03",
+      "message": "Kenyan families are shrinking: 3 children per woman now, down from 4 in 2022, and teen pregnancy is at a record low.",
+      "action": "Read the full KNBS survey at knbs.or.ke",
+      "photo_query": "hospital maternity ward Kenya",
+      "who": "Kenya National Bureau of Statistics",
+      "where": "National",
+      "when": "2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Smaller families today mean fewer dependents per household than four years ago.",
+      "beats": [
+        "Kenyan women now have *3 children* on average, KNBS reports.",
+        "That number stood at 4 children per woman in 2022.",
+        "Teenage pregnancy fell to *11.9%*, the lowest on record.",
+        "Fewer teen pregnancies mean more girls stay in school.",
+        "Read the full survey at knbs.or.ke."
+      ],
+      "caption": "Capital FM reports: Kenyan women are having fewer children than four years ago, and teen pregnancies just hit a record low of 11.9%.\n\nTell us: is your family smaller than your parents' was?\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-03T17:20:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Ferdinand Waititu faces 13 years in jail or a Sh21 million fine over a Sh588.7 million irregular tender.",
+        "Seven hospitalised candidates and five inmates are sitting their 2026 KCSE exams."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Kenya fertility rate falls to 3 children per woman from 4 in 2022 – KNBS",
+          "link": "https://capitalfm.africa/kenya-fertility-rate-falls-to-3-children-per-woman-from-4-in-2022-knbs/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-03"
+        },
+        {
+          "outlet": "Capital FM News",
+          "title": "Teenage pregnancy declines to 11.9pc in Kenya, new KNBS survey shows",
+          "link": "https://capitalfm.africa/teenage-pregnancy-declines-to-11-9-in-kenya-new-knbs-survey-shows/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-03"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 9,
+        "picture": 8,
+        "hold": 8,
+        "demand": 10,
+        "action": 7,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.4,
+        "note": "Make the call to action a specific lawful demand or a sharp prompt for reader engagement rather than a generic URL."
+      },
+      "drafted_at": "2026-11-03T14:56:22.156188+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1103m-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/kenya-fertility-rate-falls-to-3-children-per-woman-from-4-in-2022-knbs/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 735,
+      "auto": true,
+      "decided_at": "2026-11-03T14:57:51.213238+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari za jioni na karibu kwenye Kenya on Record. Mimi ni sauti yako ya kuwajibisha serikali, tukifuatilia kile kinachoendelea chini ya jua la Kenya.\n\nLeo tunasimama na watahiniwa saba wa KCSE ambao wanalazimika kufanyia mitihani yao wakiwa hospitalini, pamoja na wafungwa watano wanaotafuta maisha bora kupitia kalamu na karatasi. Hii ni 2026, na bado tunauliza: je, mifumo yetu ya afya na gereza inawawezesha hawa wenzetu kufanya mtihani katika mazingira ya hadhi na haki?\n\nKura yako, kodi yako, na mustakabali wa wanao ni wajibu. Tunawapongeza walimu na maafisa wanaohakikisha kila mtoto anafikiwa, lakini tunataka serikali ya kaunti na kitaifa kutoa ripoti kamili ya mipango ya dharura ya afya kwa watahiniwa wote nchini.\n\nUsiibiwe na ahadi za hewani. Simama imara.\n\n*Na kwa ufupi kwa Kiswahili:* Watahiniwa saba wa KCSE hospitalini na wafungwa watano wanafanya mitihani yao wiki hii. Kenya on Record inateta: Haki ya elimu haina mipaka ya hospitali wala gereza. Usiibiwe, fuatilia uwajibikaji.",
-    "voice_note": "Wadau, mambo vipi? Hapa ni Kenya on Record. Hebu tafakari hii: Wakati maelfu ya watoto wetu wako kwenye kumbi za mitihani ya KCSE wiki hii, kuna watahiniwa saba wanaougua waliomo hospitalini, na wafungwa watano ndani ya kuta za gereza, ambao nao wanapambana na karatasi hizo hizo. Swali si tu kama watafaulu; swali ni kama wizara imeweka mazingira ya kibinadamu na haki kwao. Elimu ni ya kila Mkenya, haijalishi wako wapi. Tusinyamaze. Usiibiwe na serikali inayowasahau walio hatarini.",
-    "sms": "Watahiniwa 7 wa KCSE hospitalini & wafungwa 5 wanafanya mtihani wiki hii. Haki ya elimu ni kwa wote, bila kujali hali. Usiibiwe na mifumo inayowatenga!",
-    "reels": "[Visual: Close-up of a hand writing an exam paper in a hospital bed, transitioning to a prison cell desk, text overlay: KCSE 2026]\n\nVoice-over (steady, serious, Kenyan English): \n\nWhile the rest of the country watches exam centers, look closer. Seven candidates in hospital beds. Five inmates behind bars. Writing the same 2026 KCSE papers. Education is a constitutional right, not a privilege for the healthy and free. Are they getting the dignity and support they deserve? \n\nKenya on Record. Don't be cheated. Demand accountability."
+    "radio": "Good evening, and welcome back to Kenya on Record, your weekly check-in on the numbers shaping our lives.\n\nThis week, we're looking at family health. New data shows Kenya's fertility rate has dropped to 3 children per woman, down from much higher levels in past decades. Alongside this, teen pregnancy has also fallen, now standing at 11.9 percent nationally.\n\nWhat does this mean for us? A lower fertility rate often points to better access to family planning, more girls staying in school longer, and improved healthcare across the country. The drop in teen pregnancy is especially encouraging — it suggests more young girls are being protected, educated, and given real choices about their futures.\n\nBut numbers on a page don't tell the whole story. In some counties, teen pregnancy remains stubbornly high, and access to reproductive health services is still uneven between urban and rural areas. So while we celebrate this national trend, we must ask: is every county, every community, feeling this progress equally?\n\nAs citizens, we have a role — to support community health workers, talk openly with our young people, and hold our leaders accountable for equal access to health services countrywide.\n\nThat's your Kenya on Record for this week. Numbers matter, but so does what we do with them.\n\nKwa ufupi kwa Kiswahili: Kiwango cha uzazi nchini Kenya kimeshuka hadi watoto watatu kwa kila mwanamke, na mimba za utotoni zimeshuka hadi asilimia 11.9. Hii ni ishara nzuri, lakini bado kuna haja ya kuhakikisha huduma za afya ya uzazi zinafika kila kona ya nchi.",
+    "voice_note": "Hey, hope you're doing well. Quick one for you this week from Kenya on Record.\n\nSo, new numbers are out, and they're actually pretty interesting. Kenya's fertility rate has dropped to 3 children per woman — that's down significantly from where we used to be. And get this — teen pregnancy has also fallen, now at 11.9 percent nationally.\n\nWhy does this matter? Well, it tells us families are having more say over their reproductive choices, more girls are staying in school, and maybe, just maybe, our health systems are doing something right.\n\nBut there's always a but — national averages can hide a lot. Some counties are still struggling with high teen pregnancy numbers. So the real question is, are these gains reaching everyone, or just certain areas?\n\nAnyway, that's the data story this week. Something to think about, something to discuss with your family. Share this with someone who'd find it useful. Tutaonana next week, Kenya on Record.",
+    "sms": "Usiibiwe tip: Family planning services are FREE at public health facilities. Don't pay anyone claiming it's a mandatory fee.",
+    "reels": "Kenya's fertility rate has dropped to 3 children per woman. Teen pregnancy? Down to 11.9 percent. Behind these numbers — more girls staying in school, more families making informed choices, healthcare reaching further than before. But progress isn't equal everywhere. Some counties are still being left behind. This week, Kenya on Record asks: are these wins reaching every community, or just the lucky few? Numbers tell a story — it's up to us to keep it honest."
   },
   "spend_usd": 0.0
 }

@@ -1,174 +1,192 @@
 {
-  "fetched": "2026-11-03T06:10:03.538650+00:00",
+  "fetched": "2026-11-03T11:20:24.063716+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "police",
-      "traffic": "2000+",
+      "title": "traffic enforcement camera",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Police arrest five, seize 1,300 litres of Kangara in Nairobi raid",
-          "url": "https://peopledaily.digital/news/police-arrest-five-seize-1300-litres-of-kangara-in-nairobi-raid",
-          "source": "People Daily"
-        },
-        {
-          "title": "Matungulu residents storm court, deliver petition over chang'aa menace linked to 24 deaths",
-          "url": "https://www.the-star.co.ke/counties/eastern/2026-10-28-matungulu-residents-storm-court-over-changaa-menace-demand-bail-reforms",
+          "title": "Highways under watch as NTSA rolls out speed cameras",
+          "url": "https://www.the-star.co.ke/news/2026-11-03-highways-under-watch-as-ntsa-rolls-out-cameras",
           "source": "The Star, Kenya"
         },
         {
-          "title": "Over 1,000 litres of chang’aa seized in Machakos raid",
-          "url": "https://citizen.digital/article/over-1000-litres-of-changaa-seized-in-machakos-raid-n392885",
-          "source": "Citizen Digital"
+          "title": "NTSA Exposes New Scam Targeting Drivers Amid Ongoing Crackdown",
+          "url": "https://www.kenyans.co.ke/news/128998-ntsa-issues-warning-motorists-over-fake-traffic-offence-notices",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "NTSA road safety operation: What will be checked at roadblocks",
+          "url": "https://nation.africa/kenya/news/ntsa-road-safety-operation-what-will-be-checked-at-roadblocks-5646622",
+          "source": "Daily Nation"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "2026 kcse exam security rules",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Stray bullets, wristwatch ban and weather concerns as KCSE begins",
+          "url": "https://nation.africa/kenya/news/education/stray-bullets-wristwatch-ban-and-weather-concerns-as-kcse-begins-5656228",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Government assures security, integrity of national examination materials",
+          "url": "https://www.kenyanews.go.ke/government-assures-security-integrity-of-national-examination-materials/",
+          "source": "Kenya News Agency"
+        },
+        {
+          "title": "Basic Education PS Ololtuaa warns against malpractices as KCSE main exams kicks off",
+          "url": "https://www.kbc.co.ke/two-choppers-deployed-to-ferry-papers-in-mandera/",
+          "source": "KBC Digital"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "currency",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Kenya shilling unmoved as global volatility batters regional currencies",
+          "url": "https://www.businessdailyafrica.com/bd/markets/currencies/kenya-shilling-unmoved-as-global-volatility-batters-currencies-5655334",
+          "source": "Business Daily"
+        },
+        {
+          "title": "Kenya Shilling Stability and What is Supporting It",
+          "url": "https://businesstoday.co.ke/kenya-shilling-stability-and-what-supports-it/",
+          "source": "Business Today Kenya"
+        },
+        {
+          "title": "Kenya's balance of payments surplus is supporting shilling stability, Thugge tells MPs",
+          "url": "https://techtrendske.co.ke/2026/10/31/shilling-stability/",
+          "source": "TechTrendsKE"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "gta 6",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Travis Scott's Cactus Jack x Rockstar Games x Nike Air Force 1 Low \"GTA 6\" Pack Releases November 2026",
+          "url": "https://www.sneakerfiles.com/travis-scott-cactus-jack-rockstar-games-nike-air-force-1-low/",
+          "source": "Sneaker Files"
+        },
+        {
+          "title": "Travis Scott's GTA 6 AF1 Sneakers Drop November 19",
+          "url": "https://resellcalendar.com/news/news/travis-scott-gta-6-sneaker-reseller-nike-af1/",
+          "source": "Resell Calendar"
+        },
+        {
+          "title": "Everything You Need to Know About the Rockstar x Travis Scott x Nike Collaboration",
+          "url": "https://www.sneakerfreaker.com/releases/rockstar-travis-scott-nike-GTA-6-air-force-1-price-buy-release-date",
+          "source": "Sneaker Freaker"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "road",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Mbadi Fires Back at Gachagua Over Rironi-Mau Road Cost Claims",
+          "url": "https://www.kenyans.co.ke/news/129093-cs-mbadi-rejects-claims-rironi-mau-summit-highway-cost-was-inflated",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Gachagua: Ruto pocketed Sh3.5 billion from Rironi-Mau Summit Road deal",
+          "url": "https://www.standardmedia.co.ke/politics/article/2001561380/gachagua-ruto-pocketed-sh35billion-from-rironi-mau-summit-road-deal",
+          "source": "The Standard"
+        },
+        {
+          "title": "Treasury exposes Sh414bn termination fees threatening public-private deals",
+          "url": "https://nation.africa/kenya/business/treasury-exposes-sh414bn-termination-fees-threatening-public-private-deals-5648366",
+          "source": "Daily Nation"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nssf",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Nairobi-Nakuru jams set to end as Naivasha stretch 90% complete",
+          "url": "https://www.the-star.co.ke/news/ground-check/2026-11-03-smooth-rides-ahead-as-rironi-naivasha-road-90-complete",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Gachagua Reveals Alleged Plan to Halt Ksh200 Billion Rironi-Mau Road",
+          "url": "https://www.kenyans.co.ke/news/129051-gachagua-disputes-chirchirs-explanation-rironi-mau-summit-road-delays",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Missed deadline: CS Chirchir pushes Rironi-Naivasha highway opening to December",
+          "url": "https://nation.africa/kenya/news/missed-deadline-cs-chirchir-pushes-rironi-naivasha-highway-opening-to-december-5652760",
+          "source": "Daily Nation"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "diwali",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "'India Is A Secular Country': Bombay High Court Slams BJP Leaders' Remarks On Dia Mirza's Firecracker...",
+          "url": "https://www.livelaw.in/high-court/bombay-high-court/dia-mirza-firecracker-video-bjp-leaders-criticism-557050",
+          "source": "Live Law"
+        },
+        {
+          "title": "‘Very small issue’: CM Devendra Fadnavis says Dia Mirza video row ‘not at his level’ after Bombay high co",
+          "url": "https://timesofindia.indiatimes.com/city/mumbai/very-small-issue-cm-devendra-fadnavis-says-dia-mirza-video-row-not-at-his-level-after-bombay-high-court-order-backs-bmc/articleshow/135490713.cms",
+          "source": "The Times of India"
+        },
+        {
+          "title": "Dia Mirza’s Diwali video triggers power clash between BMC, Mumbai Mayor Tawde: Who calls the shots?",
+          "url": "https://indianexpress.com/article/cities/mumbai/dia-mirza-pollution-diwali-video-civic-body-bmc-mayor-ritu-tawde-power-clash-10948753/",
+          "source": "The Indian Express"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "warriors vs suns",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Watch Draymond Green, Dillon Brooks Fight in Viral Video, Warriors Star Ejected vs. Suns",
-          "url": "https://bleacherreport.com/articles/25528830-watch-draymond-green-dillon-brooks-fight-viral-video-warriors-star-ejected-vs-suns",
-          "source": "Bleacher Report"
-        },
-        {
-          "title": "Warriors' Draymond Green: Tossed vs. Suns",
-          "url": "https://www.cbssports.com/fantasy/basketball/news/warriors-draymond-green-tossed-vs-suns/",
-          "source": "CBS Sports"
-        },
-        {
-          "title": "Draymond Green loses his cool and gets ejected after a scuffle with Dillon Brooks",
-          "url": "https://sports.yahoo.com/articles/draymond-green-loses-cool-gets-053239295.html",
-          "source": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "galatasaray vs stuttgart prediction",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Galatasaray vs Stuttgart: UEFA Champions League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/crx2d14genezt",
-          "source": "BBC"
-        },
-        {
-          "title": "How to watch Galatasaray vs VfB Stuttgart live today: Who is showing the match on TV and via live stream?",
-          "url": "https://www.goal.com/en-ke/news/how-to-watch-galatasaray-vs-vfb-stuttgart-live-today-who-is-showing-the-match-on-tv-and-via-live-stream/blt8fd8f038814f5e0c",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Will Osimhen Be Able to Revive Galatasaray’s League Phase Ambition?",
-          "url": "https://www.thisdaylive.com/2026/11/03/will-osimhen-be-able-to-revive-galatasarays-league-phase-ambition/",
-          "source": "THISDAYLIVE"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "narendra raval devki group investments",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Devki tycoon Raval splashes over Sh200bn on cement, steel plants",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/devki-tycoon-splashes-over-sh200bn-on-cement-steel-plants-5655776",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Ruto Announces Construction of Major Mining Plant in Taita Taveta",
-          "url": "https://www.kenyans.co.ke/news/128898-ruto-announces-construction-new-steel-production-plant-taita-taveta",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Deep-Dive Report: Kenya's Industrial Moment — Cement in Kitui, Sugar in Nandi, Pipelines and Fuel, and the Tycoons Building East Africa's Biggest Economy",
-          "url": "https://www.billionaires.africa/2026/10/30/deep-dive-report-kenyas-industrial-moment-cement-in-kitui-sugar-in-nandi-pipelines-and-fuel-and-the-tycoons-building-east-africas-biggest-economy/",
-          "source": "Billionaires.Africa"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "odi",
+      "title": "diwali 2026",
       "traffic": "100+",
       "news": [
         {
-          "title": "Rohit Sharma on the verge of multiple milestones! 21K international runs, 400 ODI sixes in sight against",
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/rohit-sharma-on-the-verge-of-multiple-milestones-21k-international-runs-400-odi-sixes-in-sight-against-new-zealand/articleshow/135468386.cms",
+          "title": "Diwali 2026: How many diyas should you light to invite prosperity and good luck?",
+          "url": "https://timesofindia.indiatimes.com/astrology/others/diwali-2026-how-many-diyas-should-you-light-to-invite-prosperity-and-good-luck/articleshow/135487969.cms",
           "source": "The Times of India"
         },
         {
-          "title": "Virat Kohli can break three Sachin Tendulkar records against New Zealand",
-          "url": "https://gulfnews.com/sport/virat-kohli-can-break-three-sachin-tendulkar-records-against-new-zealand-1.500733614",
-          "source": "Gulf News"
+          "title": "Naraka Chaturdashi 2026: November 8 or 9? Check Abhyanga Snan Muhurat and Krishna's Victory Over Narakasur",
+          "url": "https://m.economictimes.com/astrology/others/naraka-chaturdashi-2026-november-8-or-9-check-abhyanga-snan-muhurat-and-krishnas-victory-over-narakasura/articleshow/135431902.cms",
+          "source": "The Economic Times"
         },
         {
-          "title": "Shubman Gill to Shreyas Iyer: Full list of players to feature in upcoming five-match ODI series between India and New Zealand",
-          "url": "https://www.india.com/photos/sports/shubman-gill-to-shreyas-iyer-full-list-of-players-to-feature-in-upcoming-five-match-odi-series-between-india-and-new-zealand-498832/",
-          "source": "India.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "chelsea transfer news",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Chelsea Transfer News Today: Martin Zubimendi hope as scouting mission revealed",
-          "url": "https://www.livescore.com/en/news/football/club-world-cup/chelsea-transfer-news-today-martin-zubimendi-hope-as-scouting-mission-revealed-footballtransfers/",
-          "source": "LiveScore"
-        },
-        {
-          "title": "Alonso could complete dream Chelsea signing thanks to Arteta decision",
-          "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/11/chelsea-transfer-news-martin-zubimendi-arsenal-xabi-alonso-mikel-arteta-2027",
-          "source": "FootballTransfers.com"
-        },
-        {
-          "title": "Chelsea want to beat Arsenal to Europe's most in-form striker",
-          "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/11/chelsea-transfer-news-gustavo-varela-monza-arsenal-2027",
-          "source": "FootballTransfers.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "chelsea news",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Chelsea were offered Ilya Zabarnyi, his stats prove he would have been a top signing",
-          "url": "https://sports.yahoo.com/articles/chelsea-were-offered-ilya-zabarnyi-110000846.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Xabi Alonso is already paying the price of Chelsea's biggest summer transfer mistake",
-          "url": "https://theprideoflondon.com/xabi-alonso-is-already-paying-the-price-of-chelseas-biggest-summer-transfer-mistake",
-          "source": "The Pride of London"
-        },
-        {
-          "title": "Chelsea Transfer News Today: Martin Zubimendi hope as scouting mission revealed",
-          "url": "https://www.livescore.com/en/news/football/club-world-cup/chelsea-transfer-news-today-martin-zubimendi-hope-as-scouting-mission-revealed-footballtransfers/",
-          "source": "LiveScore"
+          "title": "A guide to Diwali 2026 dates, significance and rituals in India",
+          "url": "https://www.timeout.com/india/news/diwali-2026-when-is-dhanteras-diwali-and-bhai-dooj-110226",
+          "source": "Time Out Worldwide"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "lakers vs heat",
-      "why": "unsafe: 'odds'"
+      "title": "jesus de miguel",
+      "why": "unsafe: 'dies'"
     },
     {
-      "title": "qpr vs burnley",
-      "why": "unsafe: 'betting'"
-    },
-    {
-      "title": "portsmouth vs swansea",
-      "why": "unsafe: 'Betting'"
+      "title": "paul kihara kariuki",
+      "why": "unsafe: 'dies'"
     }
   ],
   "errors": {}

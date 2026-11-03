@@ -1,36 +1,36 @@
 {
- "fetched": "2026-11-03T06:10:08.120507+00:00",
+ "fetched": "2026-11-03T11:20:29.709892+00:00",
  "x": [
+  {
+   "name": "#IndustrialisationSummit",
+   "tweets": ""
+  },
+  {
+   "name": "Opposition Impeaches RiggyG",
+   "tweets": ""
+  },
+  {
+   "name": "#PoliticalRejectGachagua",
+   "tweets": ""
+  },
   {
    "name": "#MainaAndKingangi",
    "tweets": ""
   },
   {
-   "name": "Ruto In Moscow",
+   "name": "Owono",
    "tweets": ""
   },
   {
-   "name": "Kenya Russia Relations",
+   "name": "#nyanzarising",
    "tweets": ""
   },
   {
-   "name": "#FeastOnTheAbundance",
+   "name": "#jimireclaimstherecord",
    "tweets": ""
   },
   {
-   "name": "#thetribalbigot",
-   "tweets": ""
-  },
-  {
-   "name": "#SantoAvivamiento",
-   "tweets": ""
-  },
-  {
-   "name": "muturi exposes gachagua",
-   "tweets": ""
-  },
-  {
-   "name": "#KisumuSecured",
+   "name": "Babu Save Nairobians",
    "tweets": ""
   },
   {
@@ -42,23 +42,7 @@
    "tweets": ""
   },
   {
-   "name": "rutos global impact",
-   "tweets": ""
-  },
-  {
-   "name": "Babu",
-   "tweets": ""
-  },
-  {
-   "name": "Tubonge Tuesday",
-   "tweets": ""
-  },
-  {
    "name": "Jimi Cohen",
-   "tweets": ""
-  },
-  {
-   "name": "gift macharia",
    "tweets": ""
   },
   {
@@ -66,11 +50,11 @@
    "tweets": ""
   },
   {
-   "name": "katiba institute",
+   "name": "Roma",
    "tweets": ""
   },
   {
-   "name": "Intergovernmental Commission",
+   "name": "Ruto In Moscow",
    "tweets": ""
   },
   {
@@ -78,7 +62,23 @@
    "tweets": ""
   },
   {
-   "name": "Port of Mombasa",
+   "name": "lazima iwork",
+   "tweets": ""
+  },
+  {
+   "name": "Sakaja Debacle",
+   "tweets": ""
+  },
+  {
+   "name": "Kataa Ushoga Serikalini",
+   "tweets": ""
+  },
+  {
+   "name": "Jesus de Miguel",
+   "tweets": ""
+  },
+  {
+   "name": "Charity Ngilu",
    "tweets": ""
   },
   {
@@ -86,11 +86,23 @@
    "tweets": ""
   },
   {
-   "name": "lazima iwork",
+   "name": "science not fear",
    "tweets": ""
   },
   {
-   "name": "Economic Cooperation",
+   "name": "shimoni",
+   "tweets": ""
+  },
+  {
+   "name": "BETA In Action",
+   "tweets": ""
+  },
+  {
+   "name": "mostmangroves planted in24hrs",
+   "tweets": ""
+  },
+  {
+   "name": "Mabadiliko Ni Sasa",
    "tweets": ""
   },
   {
@@ -98,35 +110,561 @@
    "tweets": ""
   },
   {
-   "name": "Shimoni",
+   "name": "Gift Macharia",
    "tweets": ""
   },
   {
-   "name": "MostMangroves Planted In24Hrs",
+   "name": "Samuel Poghisio",
    "tweets": ""
   },
   {
-   "name": "Anfield",
-   "tweets": ""
-  },
-  {
-   "name": "forging onwards",
-   "tweets": ""
-  },
-  {
-   "name": "Arsenal",
-   "tweets": ""
-  },
-  {
-   "name": "Roma",
+   "name": "Paul Kihara Kariuki",
    "tweets": ""
   }
  ],
- "videos": [],
- "errors": {
-  "Citizen TV": "HTTP Error 404: Not Found",
-  "NTV Kenya": "HTTP Error 404: Not Found",
-  "KTN News": "HTTP Error 404: Not Found"
- },
- "catalog": []
+ "videos": [
+  {
+   "title": "Mbunge Oku Kaunya na Joseph Oyula wahama ODM na kujiunga na Chama cha MDG",
+   "channel": "Citizen TV",
+   "views": 860,
+   "published": "2026-11-03T10:30:54+00:00",
+   "per_hour": 860,
+   "url": "https://www.youtube.com/watch?v=9CRmQIR7ilI",
+   "short": "https://youtube.com/shorts/9CRmQIR7ilI"
+  },
+  {
+   "title": "Aliyekuwa kiongozi wa wengi seneti Samuel Poghishio ahama KANU na kujiunga na ODM",
+   "channel": "Citizen TV",
+   "views": 547,
+   "published": "2026-11-03T10:16:12+00:00",
+   "per_hour": 510,
+   "url": "https://www.youtube.com/watch?v=RYCn7M8rhjE",
+   "short": "https://youtube.com/shorts/RYCn7M8rhjE"
+  },
+  {
+   "title": "Aliyekuwa Mwanasheria Mkuu Kihara Kariuki afariki dunia akiwa na umri wa miaka 72",
+   "channel": "Citizen TV",
+   "views": 373,
+   "published": "2026-11-03T10:16:55+00:00",
+   "per_hour": 352,
+   "url": "https://www.youtube.com/watch?v=TiQlrlk1ky0",
+   "short": "https://youtube.com/shorts/TiQlrlk1ky0"
+  },
+  {
+   "title": "Two years in office: Questions emerge over Kindiki's political influence in Mt Kenya",
+   "channel": "KTN News",
+   "views": 278,
+   "published": "2026-11-03T10:29:37+00:00",
+   "per_hour": 278,
+   "url": "https://www.youtube.com/watch?v=gSe7ifyzr_A",
+   "short": "https://youtube.com/shorts/gSe7ifyzr_A"
+  },
+  {
+   "title": "Gachagua awataka wakazi Nyeri kuwachunguza wagombea na kuepuka washirika wa Ruto",
+   "channel": "Citizen TV",
+   "views": 308,
+   "published": "2026-11-03T10:08:15+00:00",
+   "per_hour": 256,
+   "url": "https://www.youtube.com/watch?v=dzT_MtCQcgc",
+   "short": "https://youtube.com/shorts/dzT_MtCQcgc"
+  },
+  {
+   "title": "Familia moja Kanyaliech yagubikwa na majonzi baada ya kifo cha mtahiniwa wa KCSE Homa Bay",
+   "channel": "Citizen TV",
+   "views": 198,
+   "published": "2026-11-03T10:15:11+00:00",
+   "per_hour": 182,
+   "url": "https://www.youtube.com/watch?v=hyGgDdZtCtU",
+   "short": "https://youtube.com/shorts/hyGgDdZtCtU"
+  },
+  {
+   "title": "Charles Owino avitaka vyombo vya habari kuripoti kwa uwazi, bila upendeleo na kuchuja taarifa feki",
+   "channel": "Citizen TV",
+   "views": 108,
+   "published": "2026-11-03T10:26:22+00:00",
+   "per_hour": 108,
+   "url": "https://www.youtube.com/watch?v=kJWMQt30-gc",
+   "short": "https://youtube.com/shorts/kJWMQt30-gc"
+  },
+  {
+   "title": "Police launch probe as woman found murdered in coffee plantation in Githunguri",
+   "channel": "KTN News",
+   "views": 102,
+   "published": "2026-11-03T10:25:02+00:00",
+   "per_hour": 102,
+   "url": "https://www.youtube.com/watch?v=mrO5bw5f7QQ",
+   "short": "https://youtube.com/shorts/mrO5bw5f7QQ"
+  },
+  {
+   "title": "Section of Kwale residents surrender title deeds issued by govt, cite irregularities in allocations",
+   "channel": "NTV Kenya",
+   "views": 136,
+   "published": "2026-11-03T09:56:52+00:00",
+   "per_hour": 98,
+   "url": "https://www.youtube.com/watch?v=3j6YLm-VIAU",
+   "short": "https://youtube.com/shorts/3j6YLm-VIAU"
+  },
+  {
+   "title": "Aliyekuwa mwanasheria mkuu, Jaji Mstaafu Paul Kihara Kariuki amefariki dunia",
+   "channel": "NTV Kenya",
+   "views": 90,
+   "published": "2026-11-03T10:56:00+00:00",
+   "per_hour": 90,
+   "url": "https://www.youtube.com/watch?v=WSyB96LM9ko",
+   "short": "https://youtube.com/shorts/WSyB96LM9ko"
+  },
+  {
+   "title": "Nyamache traders accuse county officers of harassment and illegal demolitions",
+   "channel": "KTN News",
+   "views": 79,
+   "published": "2026-11-03T10:33:03+00:00",
+   "per_hour": 79,
+   "url": "https://www.youtube.com/watch?v=YN-kAtclBaQ",
+   "short": "https://youtube.com/shorts/YN-kAtclBaQ"
+  },
+  {
+   "title": "Kimani Ichung'wah to opposition: leave us in peace, stop selling us hatred, and tribalism",
+   "channel": "NTV Kenya",
+   "views": 136,
+   "published": "2026-11-03T09:21:46+00:00",
+   "per_hour": 69,
+   "url": "https://www.youtube.com/watch?v=MHhJFhK77SM",
+   "short": "https://youtube.com/shorts/MHhJFhK77SM"
+  },
+  {
+   "title": "Felix Koskei aongoza makatibu 34 kutathmini miradi ya miwa na mpunga Bura, Tana River",
+   "channel": "Citizen TV",
+   "views": 68,
+   "published": "2026-11-03T10:42:48+00:00",
+   "per_hour": 68,
+   "url": "https://www.youtube.com/watch?v=nsdu203QiVU",
+   "short": "https://youtube.com/shorts/nsdu203QiVU"
+  },
+  {
+   "title": "Jamii za wafugaji Isiolo walalamikia kufungwa kwa barabara ya kuunganisha maeneo yao na mji wa Isiol",
+   "channel": "Citizen TV",
+   "views": 76,
+   "published": "2026-11-03T10:13:28+00:00",
+   "per_hour": 68,
+   "url": "https://www.youtube.com/watch?v=Jqwj-0J69gE",
+   "short": "https://youtube.com/shorts/Jqwj-0J69gE"
+  },
+  {
+   "title": "IPOA kuanzisha TRUST 47 kuimarisha uhusiano kati ya Polisi na wananchi kuelekea Uchaguzi wa 2027",
+   "channel": "Citizen TV",
+   "views": 66,
+   "published": "2026-11-03T10:20:42+00:00",
+   "per_hour": 66,
+   "url": "https://www.youtube.com/watch?v=-PTX6vGxUjM",
+   "short": "https://youtube.com/shorts/-PTX6vGxUjM"
+  }
+ ],
+ "errors": {},
+ "catalog": [
+  {
+   "title": "Thange: Wakazi bado wanadai kuathirika kiafya na kimazingira baada ya umwagikaji wa mafuta",
+   "channel": "NTV Kenya",
+   "views": 3,
+   "published": "2026-11-03T11:16:34+00:00",
+   "per_hour": 3,
+   "url": "https://www.youtube.com/watch?v=9xT8xvvKXO4",
+   "short": "https://youtube.com/shorts/9xT8xvvKXO4"
+  },
+  {
+   "title": "Wakazi Lunga Lunga warejesha hatimiliki walizopewa na Ruto wakidai zina utata",
+   "channel": "NTV Kenya",
+   "views": 4,
+   "published": "2026-11-03T11:14:37+00:00",
+   "per_hour": 4,
+   "url": "https://www.youtube.com/watch?v=0Rd-G_ZXzJw",
+   "short": "https://youtube.com/shorts/0Rd-G_ZXzJw"
+  },
+  {
+   "title": "Mwanamke wa umri wa miaka 22 adaiwa kufariki kufuatia kufungwa kwa barabara ya Isiolo-Kipsing",
+   "channel": "NTV Kenya",
+   "views": 12,
+   "published": "2026-11-03T11:13:21+00:00",
+   "per_hour": 12,
+   "url": "https://www.youtube.com/watch?v=5FV0wrKiqEI",
+   "short": "https://youtube.com/shorts/5FV0wrKiqEI"
+  },
+  {
+   "title": "Homa Bay: KCSE candidate dies hours after sitting first two papers",
+   "channel": "NTV Kenya",
+   "views": 12,
+   "published": "2026-11-03T11:10:54+00:00",
+   "per_hour": 12,
+   "url": "https://www.youtube.com/watch?v=vyJBG_897Ic",
+   "short": "https://youtube.com/shorts/vyJBG_897Ic"
+  },
+  {
+   "title": "Walimu Kisii waaliandamana kukemea mauaji tata ya mwalimu mwenza",
+   "channel": "NTV Kenya",
+   "views": 8,
+   "published": "2026-11-03T11:08:38+00:00",
+   "per_hour": 8,
+   "url": "https://www.youtube.com/watch?v=Og3nIrmsy4U",
+   "short": "https://youtube.com/shorts/Og3nIrmsy4U"
+  },
+  {
+   "title": "Mamlaka za uchunguzi zatakiwa kukabiliana na biashara haramu za wanyamapori",
+   "channel": "NTV Kenya",
+   "views": 4,
+   "published": "2026-11-03T11:07:24+00:00",
+   "per_hour": 4,
+   "url": "https://www.youtube.com/watch?v=bbdn-2gnLGo",
+   "short": "https://youtube.com/shorts/bbdn-2gnLGo"
+  },
+  {
+   "title": "Wandayi amtetea Dangote kufuatia ununuzi wa hisa za Kenya Pipeline",
+   "channel": "NTV Kenya",
+   "views": 7,
+   "published": "2026-11-03T11:05:07+00:00",
+   "per_hour": 7,
+   "url": "https://www.youtube.com/watch?v=udmgRBzft0M",
+   "short": "https://youtube.com/shorts/udmgRBzft0M"
+  },
+  {
+   "title": "Rael Kuloba exits Dakar Youth Olympics after repechage defeat",
+   "channel": "KTN News",
+   "views": 12,
+   "published": "2026-11-03T11:01:40+00:00",
+   "per_hour": 12,
+   "url": "https://www.youtube.com/watch?v=KyNvXdL5A7M",
+   "short": "https://youtube.com/shorts/KyNvXdL5A7M"
+  },
+  {
+   "title": "Ichung'wah, viongozi wa Kenya Kwanza wakosoa wapinzani kwa kukosa ajenda",
+   "channel": "NTV Kenya",
+   "views": 54,
+   "published": "2026-11-03T11:00:35+00:00",
+   "per_hour": 54,
+   "url": "https://www.youtube.com/watch?v=xl8UqQDXEtI",
+   "short": "https://youtube.com/shorts/xl8UqQDXEtI"
+  },
+  {
+   "title": "Wanachama wa Wiper Pwani wakerwa na jinsi Kalonzo anavyodhalilishwa katika upinzani",
+   "channel": "NTV Kenya",
+   "views": 60,
+   "published": "2026-11-03T10:58:22+00:00",
+   "per_hour": 60,
+   "url": "https://www.youtube.com/watch?v=4cTa8AIQEkU",
+   "short": "https://youtube.com/shorts/4cTa8AIQEkU"
+  },
+  {
+   "title": "Kenya Rising Lionesses thrash Senegal 19-0 at Dakar Youth Olympics",
+   "channel": "KTN News",
+   "views": 6,
+   "published": "2026-11-03T10:57:40+00:00",
+   "per_hour": 6,
+   "url": "https://www.youtube.com/watch?v=CkAwyNABQbI",
+   "short": "https://youtube.com/shorts/CkAwyNABQbI"
+  },
+  {
+   "title": "Aliyekuwa mwanasheria mkuu, Jaji Mstaafu Paul Kihara Kariuki amefariki dunia",
+   "channel": "NTV Kenya",
+   "views": 90,
+   "published": "2026-11-03T10:56:00+00:00",
+   "per_hour": 90,
+   "url": "https://www.youtube.com/watch?v=WSyB96LM9ko",
+   "short": "https://youtube.com/shorts/WSyB96LM9ko"
+  },
+  {
+   "title": "Sugarcane pests threaten future maize production in Trans Nzoia",
+   "channel": "KTN News",
+   "views": 12,
+   "published": "2026-11-03T10:55:15+00:00",
+   "per_hour": 12,
+   "url": "https://www.youtube.com/watch?v=0HnHi8yOMfY",
+   "short": "https://youtube.com/shorts/0HnHi8yOMfY"
+  },
+  {
+   "title": "Duale afika mbele ya kamati ya afya ya seneti kuwasilisha kanuni za 2026 za kudhibiti Ebola",
+   "channel": "NTV Kenya",
+   "views": 22,
+   "published": "2026-11-03T10:54:42+00:00",
+   "per_hour": 22,
+   "url": "https://www.youtube.com/watch?v=mFup-7aPOuU",
+   "short": "https://youtube.com/shorts/mFup-7aPOuU"
+  },
+  {
+   "title": "Kwale seaweed farmers seek better markets to boost their livelihoods",
+   "channel": "KTN News",
+   "views": 6,
+   "published": "2026-11-03T10:53:41+00:00",
+   "per_hour": 6,
+   "url": "https://www.youtube.com/watch?v=jjU1n08XAKA",
+   "short": "https://youtube.com/shorts/jjU1n08XAKA"
+  },
+  {
+   "title": "Sh1.2 billion Embu modern market nears completion at 80 per cent",
+   "channel": "KTN News",
+   "views": 15,
+   "published": "2026-11-03T10:52:25+00:00",
+   "per_hour": 15,
+   "url": "https://www.youtube.com/watch?v=v2eUhVcJNXc",
+   "short": "https://youtube.com/shorts/v2eUhVcJNXc"
+  },
+  {
+   "title": "Satellite towns emerge as Kenya's next frontier for real estate investment",
+   "channel": "KTN News",
+   "views": 16,
+   "published": "2026-11-03T10:51:39+00:00",
+   "per_hour": 16,
+   "url": "https://www.youtube.com/watch?v=poNX7WBKPFg",
+   "short": "https://youtube.com/shorts/poNX7WBKPFg"
+  },
+  {
+   "title": "Kikosi cha Kenya U15 charejea kutoka Azerbaijan baada ya kushiriki Kombe la Dunia la FIFA",
+   "channel": "Citizen TV",
+   "views": 39,
+   "published": "2026-11-03T10:51:11+00:00",
+   "per_hour": 39,
+   "url": "https://www.youtube.com/watch?v=Nt93_4pdmQc",
+   "short": "https://youtube.com/shorts/Nt93_4pdmQc"
+  },
+  {
+   "title": "FKF Kiambu yaandaa hafla ya kwanza kutuza washindi wa Ligi ya Kaunti msimu wa 2025/2026",
+   "channel": "Citizen TV",
+   "views": 19,
+   "published": "2026-11-03T10:50:08+00:00",
+   "per_hour": 19,
+   "url": "https://www.youtube.com/watch?v=4uH8Iii61fI",
+   "short": "https://youtube.com/shorts/4uH8Iii61fI"
+  },
+  {
+   "title": "Government urged to automate vetting pipelines to curb fraud on auditing",
+   "channel": "KTN News",
+   "views": 9,
+   "published": "2026-11-03T10:49:36+00:00",
+   "per_hour": 9,
+   "url": "https://www.youtube.com/watch?v=atIxjaRIIaA",
+   "short": "https://youtube.com/shorts/atIxjaRIIaA"
+  },
+  {
+   "title": "Felix Koskei aongoza makatibu 34 kutathmini miradi ya miwa na mpunga Bura, Tana River",
+   "channel": "Citizen TV",
+   "views": 68,
+   "published": "2026-11-03T10:42:48+00:00",
+   "per_hour": 68,
+   "url": "https://www.youtube.com/watch?v=nsdu203QiVU",
+   "short": "https://youtube.com/shorts/nsdu203QiVU"
+  },
+  {
+   "title": "Road closure in Isiolo leaves residents stranded as woman dies during childbirth",
+   "channel": "KTN News",
+   "views": 32,
+   "published": "2026-11-03T10:35:54+00:00",
+   "per_hour": 32,
+   "url": "https://www.youtube.com/watch?v=bABgn9hOpzA",
+   "short": "https://youtube.com/shorts/bABgn9hOpzA"
+  },
+  {
+   "title": "Nyamache traders accuse county officers of harassment and illegal demolitions",
+   "channel": "KTN News",
+   "views": 79,
+   "published": "2026-11-03T10:33:03+00:00",
+   "per_hour": 79,
+   "url": "https://www.youtube.com/watch?v=YN-kAtclBaQ",
+   "short": "https://youtube.com/shorts/YN-kAtclBaQ"
+  },
+  {
+   "title": "Mbunge Oku Kaunya na Joseph Oyula wahama ODM na kujiunga na Chama cha MDG",
+   "channel": "Citizen TV",
+   "views": 860,
+   "published": "2026-11-03T10:30:54+00:00",
+   "per_hour": 860,
+   "url": "https://www.youtube.com/watch?v=9CRmQIR7ilI",
+   "short": "https://youtube.com/shorts/9CRmQIR7ilI"
+  },
+  {
+   "title": "Over 300 Kiambu JSS teachers quit KNUT for KUPPET",
+   "channel": "KTN News",
+   "views": 24,
+   "published": "2026-11-03T10:30:43+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=fuC5ZmElvV4",
+   "short": "https://youtube.com/shorts/fuC5ZmElvV4"
+  },
+  {
+   "title": "Two years in office: Questions emerge over Kindiki's political influence in Mt Kenya",
+   "channel": "KTN News",
+   "views": 278,
+   "published": "2026-11-03T10:29:37+00:00",
+   "per_hour": 278,
+   "url": "https://www.youtube.com/watch?v=gSe7ifyzr_A",
+   "short": "https://youtube.com/shorts/gSe7ifyzr_A"
+  },
+  {
+   "title": "Jamii ya Wamaasai wahimizwa kuachana na ndoa za mapema, ukeketaji na kuwanyima watoto elimu",
+   "channel": "Citizen TV",
+   "views": 61,
+   "published": "2026-11-03T10:27:45+00:00",
+   "per_hour": 61,
+   "url": "https://www.youtube.com/watch?v=4rPJfpCOayA",
+   "short": "https://youtube.com/shorts/4rPJfpCOayA"
+  },
+  {
+   "title": "Charles Owino avitaka vyombo vya habari kuripoti kwa uwazi, bila upendeleo na kuchuja taarifa feki",
+   "channel": "Citizen TV",
+   "views": 108,
+   "published": "2026-11-03T10:26:22+00:00",
+   "per_hour": 108,
+   "url": "https://www.youtube.com/watch?v=kJWMQt30-gc",
+   "short": "https://youtube.com/shorts/kJWMQt30-gc"
+  },
+  {
+   "title": "Police launch probe as woman found murdered in coffee plantation in Githunguri",
+   "channel": "KTN News",
+   "views": 102,
+   "published": "2026-11-03T10:25:02+00:00",
+   "per_hour": 102,
+   "url": "https://www.youtube.com/watch?v=mrO5bw5f7QQ",
+   "short": "https://youtube.com/shorts/mrO5bw5f7QQ"
+  },
+  {
+   "title": "1. Kangema residents urged to embrace community policing amid rising insecurity",
+   "channel": "KTN News",
+   "views": 10,
+   "published": "2026-11-03T10:23:06+00:00",
+   "per_hour": 10,
+   "url": "https://www.youtube.com/watch?v=kGL4LN0qidE",
+   "short": "https://youtube.com/shorts/kGL4LN0qidE"
+  },
+  {
+   "title": "IPOA kuanzisha TRUST 47 kuimarisha uhusiano kati ya Polisi na wananchi kuelekea Uchaguzi wa 2027",
+   "channel": "Citizen TV",
+   "views": 66,
+   "published": "2026-11-03T10:20:42+00:00",
+   "per_hour": 66,
+   "url": "https://www.youtube.com/watch?v=-PTX6vGxUjM",
+   "short": "https://youtube.com/shorts/-PTX6vGxUjM"
+  },
+  {
+   "title": "Government targets 50,000 public service interns by January 2027",
+   "channel": "KTN News",
+   "views": 12,
+   "published": "2026-11-03T10:20:04+00:00",
+   "per_hour": 12,
+   "url": "https://www.youtube.com/watch?v=x4UDihJB82o",
+   "short": "https://youtube.com/shorts/x4UDihJB82o"
+  },
+  {
+   "title": "Two Kiserian slaughterhouse workers die after consuming illicit alcohol",
+   "channel": "KTN News",
+   "views": 61,
+   "published": "2026-11-03T10:17:23+00:00",
+   "per_hour": 58,
+   "url": "https://www.youtube.com/watch?v=G2yzMvlHQP8",
+   "short": "https://youtube.com/shorts/G2yzMvlHQP8"
+  },
+  {
+   "title": "Aliyekuwa Mwanasheria Mkuu Kihara Kariuki afariki dunia akiwa na umri wa miaka 72",
+   "channel": "Citizen TV",
+   "views": 373,
+   "published": "2026-11-03T10:16:55+00:00",
+   "per_hour": 352,
+   "url": "https://www.youtube.com/watch?v=TiQlrlk1ky0",
+   "short": "https://youtube.com/shorts/TiQlrlk1ky0"
+  },
+  {
+   "title": "Aliyekuwa kiongozi wa wengi seneti Samuel Poghishio ahama KANU na kujiunga na ODM",
+   "channel": "Citizen TV",
+   "views": 547,
+   "published": "2026-11-03T10:16:12+00:00",
+   "per_hour": 510,
+   "url": "https://www.youtube.com/watch?v=RYCn7M8rhjE",
+   "short": "https://youtube.com/shorts/RYCn7M8rhjE"
+  },
+  {
+   "title": "Familia moja Kanyaliech yagubikwa na majonzi baada ya kifo cha mtahiniwa wa KCSE Homa Bay",
+   "channel": "Citizen TV",
+   "views": 198,
+   "published": "2026-11-03T10:15:11+00:00",
+   "per_hour": 182,
+   "url": "https://www.youtube.com/watch?v=hyGgDdZtCtU",
+   "short": "https://youtube.com/shorts/hyGgDdZtCtU"
+  },
+  {
+   "title": "Jamii za wafugaji Isiolo walalamikia kufungwa kwa barabara ya kuunganisha maeneo yao na mji wa Isiol",
+   "channel": "Citizen TV",
+   "views": 76,
+   "published": "2026-11-03T10:13:28+00:00",
+   "per_hour": 68,
+   "url": "https://www.youtube.com/watch?v=Jqwj-0J69gE",
+   "short": "https://youtube.com/shorts/Jqwj-0J69gE"
+  },
+  {
+   "title": "Waziri wa afya Aden Duale asema Serikali yazingatia kanuni zote za kudhibiti Ebola nchini Kenya",
+   "channel": "Citizen TV",
+   "views": 44,
+   "published": "2026-11-03T10:09:33+00:00",
+   "per_hour": 37,
+   "url": "https://www.youtube.com/watch?v=l6v0UbybJLI",
+   "short": "https://youtube.com/shorts/l6v0UbybJLI"
+  },
+  {
+   "title": "Gachagua awataka wakazi Nyeri kuwachunguza wagombea na kuepuka washirika wa Ruto",
+   "channel": "Citizen TV",
+   "views": 308,
+   "published": "2026-11-03T10:08:15+00:00",
+   "per_hour": 256,
+   "url": "https://www.youtube.com/watch?v=dzT_MtCQcgc",
+   "short": "https://youtube.com/shorts/dzT_MtCQcgc"
+  },
+  {
+   "title": "Section of Kwale residents surrender title deeds issued by govt, cite irregularities in allocations",
+   "channel": "NTV Kenya",
+   "views": 136,
+   "published": "2026-11-03T09:56:52+00:00",
+   "per_hour": 98,
+   "url": "https://www.youtube.com/watch?v=3j6YLm-VIAU",
+   "short": "https://youtube.com/shorts/3j6YLm-VIAU"
+  },
+  {
+   "title": "| MWENGE WA KAUNTI | Siasa mamboleo [Part 4]",
+   "channel": "Citizen TV",
+   "views": 48,
+   "published": "2026-11-03T09:56:45+00:00",
+   "per_hour": 34,
+   "url": "https://www.youtube.com/watch?v=U1gLuKwTCTs",
+   "short": "https://youtube.com/shorts/U1gLuKwTCTs"
+  },
+  {
+   "title": "| MWENGE WA KAUNTI | Siasa mamboleo [Part 3]",
+   "channel": "Citizen TV",
+   "views": 36,
+   "published": "2026-11-03T09:51:35+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=eujAh26Bj9w",
+   "short": "https://youtube.com/shorts/eujAh26Bj9w"
+  },
+  {
+   "title": "Relationship Rules We Never Questioned! Dowry, Gender Roles",
+   "channel": "NTV Kenya",
+   "views": 68,
+   "published": "2026-11-03T09:38:52+00:00",
+   "per_hour": 40,
+   "url": "https://www.youtube.com/watch?v=9sZghmS8ALI",
+   "short": "https://youtube.com/shorts/9sZghmS8ALI"
+  },
+  {
+   "title": "Kimani Ichung'wah to opposition: leave us in peace, stop selling us hatred, and tribalism",
+   "channel": "NTV Kenya",
+   "views": 136,
+   "published": "2026-11-03T09:21:46+00:00",
+   "per_hour": 69,
+   "url": "https://www.youtube.com/watch?v=MHhJFhK77SM",
+   "short": "https://youtube.com/shorts/MHhJFhK77SM"
+  },
+  {
+   "title": "Governor Kang'ata expands Murang'a Level 5 Hospital to ease congestion",
+   "channel": "NTV Kenya",
+   "views": 48,
+   "published": "2026-11-03T09:08:55+00:00",
+   "per_hour": 22,
+   "url": "https://www.youtube.com/watch?v=p26Hgtnhao8",
+   "short": "https://youtube.com/shorts/p26Hgtnhao8"
+  }
+ ]
 }
