@@ -920,7 +920,7 @@
           "published": "2026-11-03"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 6.4/10. This topic is not among the top trending news items this week; anchor the post on one of the active stories like the Treasury budget, EACC evidence, or the US midterms."
@@ -953,7 +953,13 @@
       "photo_source": "https://www.kbc.co.ke/maize-production-gains-1m-tons-as-croplands-expand-by-126/",
       "reel": true,
       "tg_msg": 745,
-      "decided_at": "2026-11-04T10:35:12.437255+03:00"
+      "decided_at": "2026-11-04T10:35:12.437255+03:00",
+      "published_at": "2026-11-04T15:13:52.160285+03:00",
+      "ig_id": "18003105132040657",
+      "fb_id": "1776548933428579",
+      "story_id": "17945067954367139",
+      "fb_story_id": "1261203846214188",
+      "yt_id": "bM5vWA5bGnM"
     },
     {
       "id": "2026-w45-hot-1104m",
