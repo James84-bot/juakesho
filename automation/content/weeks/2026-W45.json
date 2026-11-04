@@ -883,13 +883,83 @@
       "story_id": "18073365413499556",
       "fb_story_id": "3686373928187530",
       "yt_id": "cF78EvL3ekI"
+    },
+    {
+      "id": "2026-w45-hot-1104",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Women",
+      "line": "One in four Kenyan women has experienced online abuse, according to a KNBS survey.",
+      "fact": "The Kenya National Bureau of Statistics survey shows cyber harassment affects 25pc of women.",
+      "message": "One in four Kenyan women faces online abuse, and we need safe reporting channels.",
+      "action": "Report online harassment to the DCI cybercrime unit or the Communications Authority",
+      "beats": [
+        "Capital FM News reports: One in four women faces *online abuse*.",
+        "The KNBS survey reveals rampant harassment on digital platforms.",
+        "We need safe reporting channels for victims across the country.",
+        "Kenyans demand: the DCI cybercrime unit prosecutes repeat abusers."
+      ],
+      "photo_query": "smartphone screen security Kenya",
+      "source": "Capital FM News, 2026-11-03",
+      "caption": "Capital FM News reports: One in four Kenyan women faces online abuse. The numbers are out, but where is the justice for victims? Tag someone who needs to see this.\n\n#KenyaOnRecord",
+      "who": "DCI and Communications Authority",
+      "where": "National",
+      "when": "November 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Ordinary Kenyans face harassment online without fast protection.",
+      "bg": "usiku",
+      "publish_at": "2026-11-04T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "One in four Kenyan women has experienced online abuse, KNBS survey reveals",
+          "link": "https://capitalfm.africa/one-in-four-kenyan-women-has-experienced-online-abuse-knbs-survey-reveals/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-03"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.4/10. This topic is not among the top trending news items this week; anchor the post on one of the active stories like the Treasury budget, EACC evidence, or the US midterms."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 6,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 7,
+        "avg": 6.4,
+        "note": "This topic is not among the top trending news items this week; anchor the post on one of the active stories like the Treasury budget, EACC evidence, or the US midterms."
+      },
+      "drafted_at": "2026-11-04T09:24:40.860863+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1104-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/maize-production-gains-1m-tons-as-croplands-expand-by-126/",
+      "reel": true,
+      "tg_msg": 745
     }
   ],
   "scripts": {
-    "radio": "Good evening, and welcome back to Kenya on Record, your weekly check-in on the numbers shaping our lives.\n\nThis week, we're looking at family health. New data shows Kenya's fertility rate has dropped to 3 children per woman, down from much higher levels in past decades. Alongside this, teen pregnancy has also fallen, now standing at 11.9 percent nationally.\n\nWhat does this mean for us? A lower fertility rate often points to better access to family planning, more girls staying in school longer, and improved healthcare across the country. The drop in teen pregnancy is especially encouraging — it suggests more young girls are being protected, educated, and given real choices about their futures.\n\nBut numbers on a page don't tell the whole story. In some counties, teen pregnancy remains stubbornly high, and access to reproductive health services is still uneven between urban and rural areas. So while we celebrate this national trend, we must ask: is every county, every community, feeling this progress equally?\n\nAs citizens, we have a role — to support community health workers, talk openly with our young people, and hold our leaders accountable for equal access to health services countrywide.\n\nThat's your Kenya on Record for this week. Numbers matter, but so does what we do with them.\n\nKwa ufupi kwa Kiswahili: Kiwango cha uzazi nchini Kenya kimeshuka hadi watoto watatu kwa kila mwanamke, na mimba za utotoni zimeshuka hadi asilimia 11.9. Hii ni ishara nzuri, lakini bado kuna haja ya kuhakikisha huduma za afya ya uzazi zinafika kila kona ya nchi.",
-    "voice_note": "Hey, hope you're doing well. Quick one for you this week from Kenya on Record.\n\nSo, new numbers are out, and they're actually pretty interesting. Kenya's fertility rate has dropped to 3 children per woman — that's down significantly from where we used to be. And get this — teen pregnancy has also fallen, now at 11.9 percent nationally.\n\nWhy does this matter? Well, it tells us families are having more say over their reproductive choices, more girls are staying in school, and maybe, just maybe, our health systems are doing something right.\n\nBut there's always a but — national averages can hide a lot. Some counties are still struggling with high teen pregnancy numbers. So the real question is, are these gains reaching everyone, or just certain areas?\n\nAnyway, that's the data story this week. Something to think about, something to discuss with your family. Share this with someone who'd find it useful. Tutaonana next week, Kenya on Record.",
-    "sms": "Usiibiwe tip: Family planning services are FREE at public health facilities. Don't pay anyone claiming it's a mandatory fee.",
-    "reels": "Kenya's fertility rate has dropped to 3 children per woman. Teen pregnancy? Down to 11.9 percent. Behind these numbers — more girls staying in school, more families making informed choices, healthcare reaching further than before. But progress isn't equal everywhere. Some counties are still being left behind. This week, Kenya on Record asks: are these wins reaching every community, or just the lucky few? Numbers tell a story — it's up to us to keep it honest."
+    "radio": "Sasa, wasikilizaji wa Kenya on Record. Leo tunazungumza kuhusu kitu kinachotendeka kimya kimya kwenye simu zetu. Kulingana na takwimu mpya, mwanamke mmoja kati ya wanne hapa Kenya anakumbana na unyanyasaji wa mtandaoni. Hii sio tu 'kupigwa block' au 'kuachwa'—hizi ni vitisho, picha za siri zinazowekwa hadharani, na matusi mazito yanayolenga kuwanyamazisha wanawake wasiongee. Wakati mwingine ni kazini, wakati mwingine ni kwenye makundi ya WhatsApp au X. Ukweli ni kwamba, unyanyasaji wa mtandaoni ni unyanyasaji wa ukweli. Tunahitaji njia safi, salama na za kuaminika za kuripoti hizi tabia bila mhanga kuhisi anaaibishwa tena. Kama jamii, lazima tukatae huu ukorofi. Tusimame na dada zetu, marafiki zetu, na wamama zetu.\n\n[Kiswahili Summary]\nLeo kwenye Kenya on Record tunaangazia jinsi mwanamke mmoja kati ya wanne nchini Kenya anavyokabiliwa na unyanyasaji wa mtandaoni. Tunasisitiza umuhimu wa kuwa na njia salama za kuripoti dhuluma hizi bila hofu.",
+    "voice_note": "Sasa ndugu yangu. Hebu tusome takwimu hizi kwa makini: mwanamke mmoja kati ya wanne hapa Kenya anapitia unyanyasaji wa mtandaoni. Vitisho, matusi, na kudhalilishwa kila siku kwa sababu tu ya kuwa mwanamke anayejiamini. Hii sio 'kawaida ya mtandao'. Ni uhalifu. Na tatizo kubwa ni kwamba, hakuna njia rahisi na salama za kuripoti ili hawa wahuni wachukuliwe hatua. Lazima tuseme basi. Sikiliza dada yako, msaidie kuripoti, na tukatae huu ukatiba mpya wa mtandaoni. Kenya on Record.",
+    "sms": "Usiibiwe: Unyanyasaji mtandaoni sio 'kawaida'. 1 kati ya 4 wa wanawake Kenya wanakabiliwa na matusi na vitisho mtandaoni. Dai njia salama za kuripoti sasa.",
+    "reels": "[Visual: Close-up of a phone screen scrolling through toxic comments, dim lighting, then transitioning to a clear, bold graphic of '1 in 4'.]\n\nVoice-over (steady, serious, Kenyan English): \n'One in four Kenyan women is facing abuse online. Threats, leaked photos, targeted harassment—just for speaking up. This isn't just internet drama; it's real-world violence. And right now? We lack safe, reliable ways to report it. Online safety is accountability. Know the facts. Stand up for them. Kenya on Record.'"
   },
   "spend_usd": 0.0
 }
