@@ -1,19 +1,6 @@
 {
-  "updated": "2026-11-01T21:48:26.015411+03:00",
+  "updated": "2026-11-04T17:03:01.557307+03:00",
   "top": [
-    {
-      "id": "2026-w44-hot-1101m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 666.7,
-      "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "reach": 3,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 9.0
-    },
     {
       "id": "2026-w42-d6-promise-r3",
       "series": "promise",
@@ -41,66 +28,79 @@
       "avg_watch_s": 5.5
     },
     {
-      "id": "2026-w44-d7-glasspoll",
-      "series": "glasspoll",
+      "id": "2026-w45-hot-1102-r2",
+      "series": "sauti",
       "lane": "everyone",
       "score": 333.3,
-      "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
+      "opening": "KNCHR documented 92 attacks on journalists across Kenya.",
       "reach": 6,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 0,
-      "avg_watch_s": 4.2
+      "avg_watch_s": 10.4
     },
     {
-      "id": "2026-w42-hot-1015",
+      "id": "2026-w45-hot-1104",
       "series": "sauti",
       "lane": "everyone",
-      "score": 285.7,
-      "opening": "EPRA hiked the prices.",
-      "reach": 14,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 2,
-      "avg_watch_s": 5.2
-    }
-  ],
-  "bottom": [
-    {
-      "id": "2026-w44-d2-kenya-r2",
-      "series": "kenya",
-      "lane": "young_pro",
-      "score": 74.1,
-      "opening": "A mugumo fig in the Aberdares was a secret message drop.",
-      "reach": 27,
+      "score": 333.3,
+      "opening": "Capital FM News reports: One in four women faces online abuse.",
+      "reach": 6,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 0,
-      "avg_watch_s": 4.6
+      "avg_watch_s": 4.4
+    },
+    {
+      "id": "2026-w44-hot-1027m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 307.7,
+      "opening": "KPC drops cases blocking Sh3 billion for Makueni oil spill victims.",
+      "reach": 13,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 2,
+      "avg_watch_s": 7.2
+    }
+  ],
+  "bottom": [
+    {
+      "id": "2026-w45-hot-1102m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 51.3,
+      "opening": "Counterfeit alcohol wiped out Sh7.6bn in KRA excise revenue.",
+      "reach": 78,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 2,
+      "avg_watch_s": 5.4
     },
     {
       "id": "2026-w43-hot-1025",
       "series": "sauti",
       "lane": "everyone",
-      "score": 30.8,
+      "score": 30.3,
       "opening": "A building collapse in Eastleigh has left 31 people missing.",
-      "reach": 130,
+      "reach": 132,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 4.1
+      "avg_watch_s": 4.0
     },
     {
       "id": "2026-w43-hot-1023m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 28.4,
+      "score": 28.2,
       "opening": "Kenya Met warns of heavy rain in 44 counties this week.",
-      "reach": 141,
+      "reach": 142,
       "saved": 0,
       "shares": 0,
       "comments": 1,
@@ -110,19 +110,6 @@
   ],
   "all": [
     {
-      "id": "2026-w44-hot-1101m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 666.7,
-      "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "reach": 3,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 9.0
-    },
-    {
       "id": "2026-w42-d6-promise-r3",
       "series": "promise",
       "lane": "everyone",
@@ -149,17 +136,43 @@
       "avg_watch_s": 5.5
     },
     {
-      "id": "2026-w44-d7-glasspoll",
-      "series": "glasspoll",
+      "id": "2026-w45-hot-1102-r2",
+      "series": "sauti",
       "lane": "everyone",
       "score": 333.3,
-      "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
+      "opening": "KNCHR documented 92 attacks on journalists across Kenya.",
       "reach": 6,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 0,
-      "avg_watch_s": 4.2
+      "avg_watch_s": 10.4
+    },
+    {
+      "id": "2026-w45-hot-1104",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 333.3,
+      "opening": "Capital FM News reports: One in four women faces online abuse.",
+      "reach": 6,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 4.4
+    },
+    {
+      "id": "2026-w44-hot-1027m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 307.7,
+      "opening": "KPC drops cases blocking Sh3 billion for Makueni oil spill victims.",
+      "reach": 13,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 2,
+      "avg_watch_s": 7.2
     },
     {
       "id": "2026-w42-hot-1015",
@@ -198,7 +211,7 @@
       "shares": 0,
       "comments": 1,
       "likes": 0,
-      "avg_watch_s": 5.6
+      "avg_watch_s": 5.9
     },
     {
       "id": "2026-w43-d6-kenya-r10",
@@ -240,19 +253,6 @@
       "avg_watch_s": 4.6
     },
     {
-      "id": "2026-w44-hot-1026b1432",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 263.2,
-      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
-      "reach": 19,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 3,
-      "avg_watch_s": 6.5
-    },
-    {
       "id": "2026-w42-hot-1016",
       "series": "sauti",
       "lane": "everyone",
@@ -279,17 +279,17 @@
       "avg_watch_s": 4.2
     },
     {
-      "id": "2026-w44-hot-1027m",
+      "id": "2026-w44-hot-1026b1432",
       "series": "sauti",
       "lane": "everyone",
-      "score": 230.8,
-      "opening": "KPC drops cases blocking Sh3 billion for Makueni oil spill victims.",
-      "reach": 13,
+      "score": 217.4,
+      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
+      "reach": 23,
       "saved": 0,
       "shares": 0,
       "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 6.1
+      "likes": 3,
+      "avg_watch_s": 6.6
     },
     {
       "id": "2026-w42-hot-1017",
@@ -344,19 +344,6 @@
       "avg_watch_s": 6.7
     },
     {
-      "id": "2026-w44-hot-1101",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 181.8,
-      "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
-      "reach": 11,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 6.0
-    },
-    {
       "id": "2026-w42-hot-1013",
       "series": "sauti",
       "lane": "everyone",
@@ -370,19 +357,6 @@
       "avg_watch_s": 6.1
     },
     {
-      "id": "2026-w43-hot-1022",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 166.7,
-      "opening": "Counties owe workers Sh100 billion in money still owed for pensions.",
-      "reach": 18,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 1,
-      "avg_watch_s": 2.8
-    },
-    {
       "id": "2026-w42-hot-1014",
       "series": "sauti",
       "lane": "everyone",
@@ -394,6 +368,19 @@
       "comments": 1,
       "likes": 2,
       "avg_watch_s": 9.2
+    },
+    {
+      "id": "2026-w43-hot-1022",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 157.9,
+      "opening": "Counties owe workers Sh100 billion in money still owed for pensions.",
+      "reach": 19,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 2.8
     },
     {
       "id": "2026-w43-hot-1023",
@@ -422,6 +409,32 @@
       "avg_watch_s": 4.7
     },
     {
+      "id": "2026-w44-hot-1101m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 153.8,
+      "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
+      "reach": 13,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 6.9
+    },
+    {
+      "id": "2026-w44-hot-1027",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 142.9,
+      "opening": "EACC recovers a 2.7-acre school playground after court ruling.",
+      "reach": 28,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 2,
+      "avg_watch_s": 6.8
+    },
+    {
       "id": "2026-w44-hot-1027b1358",
       "series": "sauti",
       "lane": "everyone",
@@ -432,7 +445,20 @@
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 2.7
+      "avg_watch_s": 3.2
+    },
+    {
+      "id": "2026-w45-hot-1103e",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 131.6,
+      "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
+      "reach": 38,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 3,
+      "avg_watch_s": 6.8
     },
     {
       "id": "2026-w43-hot-1023b1332",
@@ -448,17 +474,43 @@
       "avg_watch_s": 18.9
     },
     {
-      "id": "2026-w44-hot-1026",
-      "series": "sauti",
+      "id": "2026-w44-d7-glasspoll",
+      "series": "glasspoll",
       "lane": "everyone",
-      "score": 125.0,
-      "opening": "Nairobi Water has shut down piped supply for three days.",
-      "reach": 24,
+      "score": 130.4,
+      "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
+      "reach": 23,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 5.6
+      "avg_watch_s": 5.3
+    },
+    {
+      "id": "2026-w44-hot-1026",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 120.0,
+      "opening": "Nairobi Water has shut down piped supply for three days.",
+      "reach": 25,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 5.9
+    },
+    {
+      "id": "2026-w44-hot-1101",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 117.6,
+      "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
+      "reach": 17,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 5.5
     },
     {
       "id": "2026-w43-hot-1019e",
@@ -474,17 +526,17 @@
       "avg_watch_s": 5.0
     },
     {
-      "id": "2026-w44-hot-1027",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 111.1,
-      "opening": "EACC recovers a 2.7-acre school playground after court ruling.",
-      "reach": 27,
+      "id": "2026-w44-d2-kenya-r2",
+      "series": "kenya",
+      "lane": "young_pro",
+      "score": 107.1,
+      "opening": "A mugumo fig in the Aberdares was a secret message drop.",
+      "reach": 28,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 1,
-      "avg_watch_s": 6.5
+      "avg_watch_s": 4.8
     },
     {
       "id": "2026-w43-hot-1024",
@@ -500,6 +552,19 @@
       "avg_watch_s": 8.8
     },
     {
+      "id": "2026-w45-hot-1103m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 100.0,
+      "opening": "Kenyan women now have 3 children on average, KNBS reports.",
+      "reach": 30,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 1,
+      "avg_watch_s": 9.1
+    },
+    {
       "id": "2026-w43-d7-glasspoll-r10",
       "series": "glasspoll",
       "lane": "everyone",
@@ -513,38 +578,38 @@
       "avg_watch_s": 3.4
     },
     {
-      "id": "2026-w44-d2-kenya-r2",
-      "series": "kenya",
-      "lane": "young_pro",
-      "score": 74.1,
-      "opening": "A mugumo fig in the Aberdares was a secret message drop.",
-      "reach": 27,
+      "id": "2026-w45-hot-1102m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 51.3,
+      "opening": "Counterfeit alcohol wiped out Sh7.6bn in KRA excise revenue.",
+      "reach": 78,
       "saved": 0,
       "shares": 0,
       "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 4.6
+      "likes": 2,
+      "avg_watch_s": 5.4
     },
     {
       "id": "2026-w43-hot-1025",
       "series": "sauti",
       "lane": "everyone",
-      "score": 30.8,
+      "score": 30.3,
       "opening": "A building collapse in Eastleigh has left 31 people missing.",
-      "reach": 130,
+      "reach": 132,
       "saved": 0,
       "shares": 0,
       "comments": 1,
       "likes": 2,
-      "avg_watch_s": 4.1
+      "avg_watch_s": 4.0
     },
     {
       "id": "2026-w43-hot-1023m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 28.4,
+      "score": 28.2,
       "opening": "Kenya Met warns of heavy rain in 44 counties this week.",
-      "reach": 141,
+      "reach": 142,
       "saved": 0,
       "shares": 0,
       "comments": 1,
