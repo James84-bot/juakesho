@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-04T20:42:39.582870+00:00",
+  "fetched": "2026-11-04T20:48:57.242803+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -29,19 +29,19 @@
       "traffic": "20000+",
       "news": [
         {
-          "title": "Slavia Prague vs Arsenal: UEFA Champions League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cqr7yp1k8l5zt",
-          "source": "BBC"
-        },
-        {
           "title": "Slavia Prague vs Arsenal LIVE! Champions League lineups, match updates, news, score and analysis",
           "url": "https://www.skysports.com/football/live-blog/13607456/slavia-prague-vs-arsenal-live-champions-league-lineups-match-updates-news-score-and-analysis",
           "source": "Sky Sports"
         },
         {
-          "title": "Champions League: Slavia Prague v Arsenal, RB Leipzig v Manchester City and more – live",
-          "url": "https://www.theguardian.com/football/live/2026/nov/04/champions-league-slavia-prague-v-arsenal-rb-leipzig-v-manchester-city-and-more-live",
-          "source": "The Guardian"
+          "title": "Champions League: Madueke puts Arsenal in front at Prague, Man City visit Leipzig",
+          "url": "https://www.bbc.com/sport/football/live/c6rmy8zvwnryt?page=2",
+          "source": "BBC"
+        },
+        {
+          "title": "Inside Training: Preparing for Prague",
+          "url": "https://www.arsenal.com/news/inside-training-preparing-for-prague-a1YHc8U564PI",
+          "source": "Arsenal.com"
         }
       ]
     },
@@ -91,6 +91,28 @@
     },
     {
       "geo": "KE",
+      "title": "mason greenwood",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "'It's a penalty, it's two hands, not even one hand' - Ally McCoist fumes as Mason Greenwood is denied a spot-kick before hitting back against Liverpool",
+          "url": "https://www.goal.com/en-ke/news/penalty-two-hands-hand-ally-mccoist-fumes-mason-greenwood-denied-spot-kick-hitting-back-liverpool/blt7827b8797e8eba61",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Alisson and Jacquet pathetic in Liverpool defeat as Nyoni vs Kante battle decided",
+          "url": "https://www.football365.com/news/opinion-alisson-jacquet-pathetic-liverpool-defeat-nyoni-kante-decided",
+          "source": "Football365"
+        },
+        {
+          "title": "‘Soft’ – Stephen Warnock takes aim at Liverpool star who ‘cost his side’ against Fenerbahce",
+          "url": "https://www.livescore.com/en/news/football/turkish-super-lig/soft-stephen-warnock-takes-aim-at-liverpool-star-who-cost-his-side-against-fenerbahce-the-empire-of-the-kop/",
+          "source": "LiveScore"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "kylian mbappé",
       "traffic": "200+",
       "news": [
@@ -117,41 +139,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Man City relegation could be ‘very good’ for USMNT wonderkid Cavan Sullivan as teen sensation waits on Premier League verdict & punishments in FFP case",
-          "url": "https://www.goal.com/en-ke/lists/man-city-relegation-good-usmnt-wonderkid-cavan-sullivan-premier-league-ffp/blt3f93262c473b8c68",
-          "source": "Goal.com"
+          "title": "Man City could face further charges as Premier League confronted with ‘dilemma’",
+          "url": "https://www.independent.co.uk/sport/football/man-city-new-charges-premier-league-financial-abu-dhabi-b3078495.html",
+          "source": "The Independent"
         },
         {
-          "title": "Fiery 17-year-old MLS star could win MVP over Lionel Messi and bail out Manchester City in 2028",
-          "url": "https://talksport.com/football/4685094/cavan-sullivan-mls-mvp-lionel-messi-manchester-city/",
-          "source": "talkSPORT"
+          "title": "Are Manchester City too big to fail? Here’s what economic modelling says",
+          "url": "https://www.cityam.com/are-manchester-city-too-big-to-fail-heres-what-economic-modelling-says/",
+          "source": "City AM"
         },
         {
-          "title": "Cavan Sullivan turned 17 last month, but he's already playing like an MLS MVP",
-          "url": "https://www.espn.com/soccer/story/_/id/50298923/cavan-sullivan-turned-17-last-month-hes-already-playing-mls-mvp",
-          "source": "ESPN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mason greenwood",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "'It's a penalty, it's two hands, not even one hand' - Ally McCoist fumes as Mason Greenwood is denied a spot-kick before hitting back against Liverpool",
-          "url": "https://www.goal.com/en-ke/news/penalty-two-hands-hand-ally-mccoist-fumes-mason-greenwood-denied-spot-kick-hitting-back-liverpool/blt7827b8797e8eba61",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Alisson and Jacquet pathetic in Liverpool defeat as Nyoni vs Kante battle decided",
-          "url": "https://www.football365.com/news/opinion-alisson-jacquet-pathetic-liverpool-defeat-nyoni-kante-decided",
+          "title": "Man City FFP: 'Likely' number of points deducted revealed as part of three-pronged punishment",
+          "url": "https://www.football365.com/news/man-city-ffp-likely-point-deduction-three-pronged-punishment",
           "source": "Football365"
-        },
-        {
-          "title": "‘Soft’ – Stephen Warnock takes aim at Liverpool star who ‘cost his side’ against Fenerbahce",
-          "url": "https://www.livescore.com/en/news/football/turkish-super-lig/soft-stephen-warnock-takes-aim-at-liverpool-star-who-cost-his-side-against-fenerbahce-the-empire-of-the-kop/",
-          "source": "LiveScore"
         }
       ]
     },
@@ -166,9 +166,9 @@
           "source": "NTVSpor"
         },
         {
-          "title": "Vedat Muriqi: \"Fenerbahçe işte bu kadar büyük\"",
-          "url": "https://beinsports.com.tr/haber/vedat-muriqi-fenerbahce-iste-bu-kadar-buyuk",
-          "source": "beinsports.com.tr"
+          "title": "Andoni Iraola: \"Sinir bozucu; çok zor bir yer!\"",
+          "url": "https://www.sporx.com/futbol/ekstra/andoni-iraola-sinir-bozucu-cok-zor-bir-yer-SXGLQ81170SXQ",
+          "source": "Sporx.com"
         },
         {
           "title": "Fenerbahçe'de Brown yine sahnede! Roma'ya da atmıştı",
