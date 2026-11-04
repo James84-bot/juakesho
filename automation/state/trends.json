@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-04T20:27:44.531880+00:00",
+  "fetched": "2026-11-04T20:42:39.582870+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -25,30 +25,8 @@
     },
     {
       "geo": "KE",
-      "title": "real madrid",
-      "traffic": "5000+",
-      "news": [
-        {
-          "title": "AEK Atenas 2-3 Real Madrid: resumen, goles y resultado",
-          "url": "https://as.com/futbol/champions/aek-atenas-real-madrid-hoy-en-directo-partido-de-fase-liga-de-champions-league-ultima-hora-f202611-d/",
-          "source": "Diario AS"
-        },
-        {
-          "title": "¿A qué hora es el partido AEK Atenas vs Real Madrid y cómo verlo en TV y streaming online?",
-          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-aek-atenas-vs-real-madrid-y-como-verlo-en-tv-y-streaming-online-4-11-2026",
-          "source": "Sports Illustrated"
-        },
-        {
-          "title": "2-3. Valverde reina entre la anarquía",
-          "url": "https://holanews.com/2-3-valverde-reina-entre-la-anarquia/",
-          "source": "HolaNews"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "arsenal vs slavia prague",
-      "traffic": "500+",
+      "title": "slavia praha vs arsenal",
+      "traffic": "20000+",
       "news": [
         {
           "title": "Slavia Prague vs Arsenal: UEFA Champions League stats & head-to-head",
@@ -61,9 +39,53 @@
           "source": "Sky Sports"
         },
         {
-          "title": "Inside Training: Preparing for Prague",
-          "url": "https://www.arsenal.com/news/inside-training-preparing-for-prague-a1YHc8U564PI",
-          "source": "Arsenal.com"
+          "title": "Champions League: Slavia Prague v Arsenal, RB Leipzig v Manchester City and more – live",
+          "url": "https://www.theguardian.com/football/live/2026/nov/04/champions-league-slavia-prague-v-arsenal-rb-leipzig-v-manchester-city-and-more-live",
+          "source": "The Guardian"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "real madrid",
+      "traffic": "5000+",
+      "news": [
+        {
+          "title": "AEK Atenas 2-3 Real Madrid: resumen, goles y resultado",
+          "url": "https://as.com/futbol/champions/aek-atenas-real-madrid-hoy-en-directo-partido-de-fase-liga-de-champions-league-ultima-hora-f202611-d/",
+          "source": "Diario AS"
+        },
+        {
+          "title": "AEK Atenas - Real Madrid en directo | Última hora de Champions League en vivo hoy",
+          "url": "https://www.marca.com/futbol/champions-league/aek-athens-r-madrid/2026/11/04/01_0103_20261104_234_186-directo.html",
+          "source": "MARCA"
+        },
+        {
+          "title": "2-3. Valverde reina entre la anarquía",
+          "url": "https://holanews.com/2-3-valverde-reina-entre-la-anarquia/",
+          "source": "HolaNews"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "real madrid fc",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Rafael Nadal: Tennis legend set to join Real Madrid board of directors",
+          "url": "https://www.bbc.com/sport/articles/cmy56zekeneqo",
+          "source": "BBC"
+        },
+        {
+          "title": "Real Madrid: Rafael Nadal appointed to LaLiga club's board of directors",
+          "url": "https://www.skysports.com/tennis/news/13607900/real-madrid-rafael-nadal-appointed-to-laliga-clubs-board-of-directors",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "OFFICIAL: Real Madrid announce tennis legend Rafa Nadal as a member of the Board of Directors",
+          "url": "https://www.managingmadrid.com/115087/real-madrid-nadal-board-2026",
+          "source": "Managing Madrid"
         }
       ]
     },
@@ -118,8 +140,8 @@
       "news": [
         {
           "title": "'It's a penalty, it's two hands, not even one hand' - Ally McCoist fumes as Mason Greenwood is denied a spot-kick before hitting back against Liverpool",
-          "url": "https://www.livescore.com/en/news/football/premier-league/its-a-penalty-its-two-hands-not-even-one-hand-ally-mccoist-fumes-as-mason-greenwood-is-denied-a-spot-kick-before-hitting-back-against-liverpool-goal/",
-          "source": "LiveScore"
+          "url": "https://www.goal.com/en-ke/news/penalty-two-hands-hand-ally-mccoist-fumes-mason-greenwood-denied-spot-kick-hitting-back-liverpool/blt7827b8797e8eba61",
+          "source": "Goal.com"
         },
         {
           "title": "Alisson and Jacquet pathetic in Liverpool defeat as Nyoni vs Kante battle decided",
@@ -127,9 +149,9 @@
           "source": "Football365"
         },
         {
-          "title": "Alisson 'livid' with Liverpool star as blame pointed for Fenerbahce goal",
-          "url": "https://www.mirror.co.uk/sport/football/news/fenerbahce-goal-liverpool-greenwood-alisson-37844222",
-          "source": "The Mirror"
+          "title": "‘Soft’ – Stephen Warnock takes aim at Liverpool star who ‘cost his side’ against Fenerbahce",
+          "url": "https://www.livescore.com/en/news/football/turkish-super-lig/soft-stephen-warnock-takes-aim-at-liverpool-star-who-cost-his-side-against-fenerbahce-the-empire-of-the-kop/",
+          "source": "LiveScore"
         }
       ]
     },
@@ -144,36 +166,14 @@
           "source": "NTVSpor"
         },
         {
-          "title": "Fenerbahçe'de Brown yine sahnede! Roma'ya da atmıştı",
-          "url": "https://www.fanatik.com.tr/fenerbahce/fenerbahcede-brown-yine-sahnede-romaya-da-atmisti-2643431",
-          "source": "Fanatik"
-        },
-        {
           "title": "Vedat Muriqi: \"Fenerbahçe işte bu kadar büyük\"",
           "url": "https://beinsports.com.tr/haber/vedat-muriqi-fenerbahce-iste-bu-kadar-buyuk",
           "source": "beinsports.com.tr"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "trey nyoni",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Trey Nyoni becomes Liverpool's second-youngest Champions League scorer",
-          "url": "https://www.liverpoolfc.com/news/trey-nyoni-becomes-liverpools-second-youngest-champions-league-scorer",
-          "source": "Liverpool FC"
         },
         {
-          "title": "Trey Nyoni the exception as Liverpool show what isn't good enough under Andoni Iraola",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/trey-nyoni-exception-liverpool-show-34864117",
-          "source": "Liverpool Echo"
-        },
-        {
-          "title": "Watch: Liverpool wonderkid Trey Nyoni scores incredible volley against Fenerbahçe",
-          "url": "https://www.livescore.com/en/news/football/premier-league/watch-liverpool-wonderkid-trey-nyoni-scores-incredible-volley-against-fenerbahe-caughtoffside/",
-          "source": "LiveScore"
+          "title": "Fenerbahçe'de Brown yine sahnede! Roma'ya da atmıştı",
+          "url": "https://www.fanatik.com.tr/fenerbahce/fenerbahcede-brown-yine-sahnede-romaya-da-atmisti-2643431",
+          "source": "Fanatik"
         }
       ]
     },
@@ -183,22 +183,21 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Dueling tax measures too close to call in initial election results — Amendment 87: Graduated Income Tax and Proposition 136: Income Tax Rate Limit",
-          "url": "https://www.cpr.org/2026/11/03/colorado-election-results-amendment-87-prop-136-graduated-income-tax/",
-          "source": "Colorado Public Radio"
+          "title": "The $200,000 Passive Income Strategy: 3 Dividend Stocks That Pay You to Wait",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/200-000-passive-income-strategy-130248550.html",
+          "source": "Yahoo Finance"
         },
         {
-          "title": "Colorado voters split over Amendment 87 tax hikes on rich, with race still too close to call",
-          "url": "https://coloradosun.com/2026/11/03/amendment-87-results-graduated-income-tax/",
-          "source": "The Colorado Sun"
+          "title": "Hard To Imagine A Retirement Portfolio Without These 2 Dividend Machines",
+          "url": "https://seekingalpha.com/article/4962101-hard-to-imagine-a-retirement-portfolio-without-these-2-dividend-machines",
+          "source": "Seeking Alpha"
         },
         {
-          "title": "Election results: Here's how Coloradans voted on dueling income tax measures",
-          "url": "https://www.9news.com/article/news/politics/elections/election-results-colorado-dueling-income-tax-measures/73-c18708d4-414d-447f-86f4-d08002d3acd7",
-          "source": "9News"
+          "title": "$100,000 in HP and Paychex Could Pay Over $4,000 a Year in Dividends",
+          "url": "https://www.aol.com/articles/100-000-hp-paychex-could-181742000.html",
+          "source": "AOL.com"
         }
-      ],
-      "civic": true
+      ]
     }
   ],
   "dropped": [
