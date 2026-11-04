@@ -954,13 +954,86 @@
       "reel": true,
       "tg_msg": 745,
       "decided_at": "2026-11-04T10:35:12.437255+03:00"
+    },
+    {
+      "id": "2026-w45-hot-1104m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "World Bank reports that corruption costs Kenya *billions* every single year.",
+      "fact": "A new World Bank report shows that tackling graft could increase Kenya's GDP by a fifth.",
+      "source": "Citizen Digital, 2026-11-04",
+      "photo_query": "Kenyan shilling banknotes",
+      "message": "Corruption costs Kenya billions and holds back economic growth.",
+      "action": "Kenyans demand: the National Treasury publishes the full audit of lost funds by Friday.",
+      "beats": [
+        "Citizen Digital reports: Corruption costs Kenya *billions* every year.",
+        "Graft slows down our economic growth.",
+        "We pay more for fewer public services.",
+        "Kenyans demand: the National Treasury publishes loss figures."
+      ],
+      "caption": "Billions lost to corruption while public services struggle. The facts are in the latest report. Send this to someone who needs to see the numbers.\n\n#FollowTheMoney #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-04T20:01:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Taxpayers lose billions in public funds, reducing funds for schools and hospitals.",
+      "who": "National Treasury",
+      "where": "National",
+      "when": "04 Nov 2026",
+      "avoid": [
+        "One in four Kenyan women faces online abuse, and we need safe reporting channels."
+      ],
+      "source_links": [
+        {
+          "outlet": "Citizen Digital",
+          "title": "Kenya losing billions to corruption; World Bank report shows",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNbU5DczdpSVFOWFdVRkRQZng4cDdmLXR3UlpqS0JDeXB0TEZoODJBOVhBUS1EcFliNWJRX3BZdjViT2J1eS0taC1ub0FoaDE0ZURhMDBCd3ZWdERHVi02ZjI5cF8zVTlnY1BVNmFHNUsxWlhCR2ExWEJTUkVtdjBVOWVRclRReWpMUExydXczUXNSajR1ZUJUV1FqREFHUGxE?oc=5",
+          "published": "2026-11-04"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 8,
+        "demand": 9,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "avg": 8.6,
+        "note": "All elements meet the rigorous standards of the newsroom."
+      },
+      "drafted_at": "2026-11-04T14:48:10.445929+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1104m-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/waiguru-says-kirinyaga-economy-grows-66pc-as-county-gdp-hits-ksh190-79b/",
+      "reel": true,
+      "tg_msg": 749,
+      "auto": true,
+      "decided_at": "2026-11-04T14:49:22.738605+03:00"
     }
   ],
   "scripts": {
-    "radio": "Sasa, wasikilizaji wa Kenya on Record. Leo tunazungumza kuhusu kitu kinachotendeka kimya kimya kwenye simu zetu. Kulingana na takwimu mpya, mwanamke mmoja kati ya wanne hapa Kenya anakumbana na unyanyasaji wa mtandaoni. Hii sio tu 'kupigwa block' au 'kuachwa'—hizi ni vitisho, picha za siri zinazowekwa hadharani, na matusi mazito yanayolenga kuwanyamazisha wanawake wasiongee. Wakati mwingine ni kazini, wakati mwingine ni kwenye makundi ya WhatsApp au X. Ukweli ni kwamba, unyanyasaji wa mtandaoni ni unyanyasaji wa ukweli. Tunahitaji njia safi, salama na za kuaminika za kuripoti hizi tabia bila mhanga kuhisi anaaibishwa tena. Kama jamii, lazima tukatae huu ukorofi. Tusimame na dada zetu, marafiki zetu, na wamama zetu.\n\n[Kiswahili Summary]\nLeo kwenye Kenya on Record tunaangazia jinsi mwanamke mmoja kati ya wanne nchini Kenya anavyokabiliwa na unyanyasaji wa mtandaoni. Tunasisitiza umuhimu wa kuwa na njia salama za kuripoti dhuluma hizi bila hofu.",
-    "voice_note": "Sasa ndugu yangu. Hebu tusome takwimu hizi kwa makini: mwanamke mmoja kati ya wanne hapa Kenya anapitia unyanyasaji wa mtandaoni. Vitisho, matusi, na kudhalilishwa kila siku kwa sababu tu ya kuwa mwanamke anayejiamini. Hii sio 'kawaida ya mtandao'. Ni uhalifu. Na tatizo kubwa ni kwamba, hakuna njia rahisi na salama za kuripoti ili hawa wahuni wachukuliwe hatua. Lazima tuseme basi. Sikiliza dada yako, msaidie kuripoti, na tukatae huu ukatiba mpya wa mtandaoni. Kenya on Record.",
-    "sms": "Usiibiwe: Unyanyasaji mtandaoni sio 'kawaida'. 1 kati ya 4 wa wanawake Kenya wanakabiliwa na matusi na vitisho mtandaoni. Dai njia salama za kuripoti sasa.",
-    "reels": "[Visual: Close-up of a phone screen scrolling through toxic comments, dim lighting, then transitioning to a clear, bold graphic of '1 in 4'.]\n\nVoice-over (steady, serious, Kenyan English): \n'One in four Kenyan women is facing abuse online. Threats, leaked photos, targeted harassment—just for speaking up. This isn't just internet drama; it's real-world violence. And right now? We lack safe, reliable ways to report it. Online safety is accountability. Know the facts. Stand up for them. Kenya on Record.'"
+    "radio": "Habari za asubuhi, mwananchi. Karibu kwenye Kenya on Record. Leo tunazungumzia jambo ambalo linatuumiza sote kama taifa—ufisadi. Kila siku, mamilioni na hata mabilioni ya pesa za umma yanapotea kupitia mikataba ya kiprofesa na miradi ya hewa. Pesa hizi zingejenga barabara nzuri, zingeboresha hospitali zetu, na zingewapa vijana wetu kazi. Lakini badala yake, zinaishia kwenye mifuko ya watu wachache. Uchumi wetu unadumaa, gharama ya maisha inapanda, na mzigo unabakia kwako na mimi tunapolipa ushuru. Sasa ni wakati wa kujiuliza: tutakaa kimya mpaka lini? Uwajibikaji unaanza na wewe na mimi kukataa rushwa na kuuliza maswali. Usikubali kunyamazishwa. Hii ni Kenya yetu, tujitetee.\n\nKwa ufupi katika Kiswahili: Ufisadi unagharimu Kenya mabilioni ya pesa na unarudisha nyuma maendeleo ya kiuchumi. Pesa za umma zinazopaswa kutumika kwa huduma za wananchi zinaishia mifukoni mwa mafisadi. Ni jukumu letu kupiga vita ufisadi na kudai uwajibikaji.",
+    "voice_note": "Mambo vipi mkuu? Sikiza hapa. Ufisadi hapa Kenya sio tu habari ya magazeti, ni mzigo mzito kwa mfuko wako. Kila mwaka tunapoteza mabilioni ya pesa za umma ambazo zingejenga barabara, kununua dawa hospitalini, na kutoa ajira kwa vijana wetu. Badala yake, pesa hizi zinafyonzwa na wachache huku wewe ukihangaika na gharama ya juu ya maisha. Uchumi wetu unashindwa kukua sababu ya wezi hawa. Lazima tuamke, tuulize maswali, na tukatae rushwa. Usikae kimya. Tujenge Kenya safi pamoja.",
+    "sms": "Ufisadi unagharimu Kenya mabilioni ya pesa na unaua uchumi wetu. Pesa za umma ni maendeleo yako; usikubali ziibwe. Simama kidete, dai uwajibikaji leo!",
+    "reels": "[Visual: B-roll of unfinished public projects, potholes, and a frustrated Kenyan looking at their phone]\n\nVoice-over (steady, serious tone): \n\n\"Corruption isn't just stealing money—it's stealing Kenya's future. Every year, billions meant for roads, hospitals, and jobs vanish into thin air. That's why our economy is hurting and the cost of living is high. Tunangoja mpaka lini? Simama kidete na Kenya on Record. Kataa rushwa. Dai uwajibikaji.\""
   },
   "spend_usd": 0.0
 }
