@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T17:03:01.557307+03:00",
+  "updated": "2026-11-04T17:37:40.523677+03:00",
   "top": [
     {
       "id": "2026-w42-d6-promise-r3",
@@ -41,19 +41,6 @@
       "avg_watch_s": 10.4
     },
     {
-      "id": "2026-w45-hot-1104",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 333.3,
-      "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "reach": 6,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 4.4
-    },
-    {
       "id": "2026-w44-hot-1027m",
       "series": "sauti",
       "lane": "everyone",
@@ -65,6 +52,19 @@
       "comments": 1,
       "likes": 2,
       "avg_watch_s": 7.2
+    },
+    {
+      "id": "2026-w42-hot-1015",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 285.7,
+      "opening": "EPRA hiked the prices.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 2,
+      "avg_watch_s": 5.2
     }
   ],
   "bottom": [
@@ -147,19 +147,6 @@
       "comments": 1,
       "likes": 0,
       "avg_watch_s": 10.4
-    },
-    {
-      "id": "2026-w45-hot-1104",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 333.3,
-      "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "reach": 6,
-      "saved": 0,
-      "shares": 0,
-      "comments": 1,
-      "likes": 0,
-      "avg_watch_s": 4.4
     },
     {
       "id": "2026-w44-hot-1027m",
@@ -277,6 +264,19 @@
       "comments": 1,
       "likes": 3,
       "avg_watch_s": 4.2
+    },
+    {
+      "id": "2026-w45-hot-1104",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 250.0,
+      "opening": "Capital FM News reports: One in four women faces online abuse.",
+      "reach": 8,
+      "saved": 0,
+      "shares": 0,
+      "comments": 1,
+      "likes": 0,
+      "avg_watch_s": 4.0
     },
     {
       "id": "2026-w44-hot-1026b1432",
