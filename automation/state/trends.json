@@ -1,32 +1,10 @@
 {
-  "fetched": "2026-11-05T11:28:29.627834+00:00",
+  "fetched": "2026-11-05T13:30:16.462812+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "typhoon",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "El Nino is making the Pacific 'burn with fever', triggering typhoon after typhoon in East Asia",
-          "url": "https://www.bbc.com/news/articles/cw33kgj7nkemo",
-          "source": "BBC"
-        },
-        {
-          "title": "'Pacific ocean like a person burning with fever': Scientists warn of stronger typhoons in East Asia",
-          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/pacific-ocean-like-a-person-burning-with-fever-scientists-warn-of-stronger-typhoons-in-east-asia/articleshow/135558591.cms",
-          "source": "The Times of India"
-        },
-        {
-          "title": "The Pacific’s Busy Storm Season",
-          "url": "https://science.nasa.gov/earth/earth-observatory/the-pacifics-busy-storm-season/",
-          "source": "NASA Science (.gov)"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ronaldo",
-      "traffic": "200+",
+      "title": "cristiano ronaldo",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Cristiano Ronaldo retires: Portugal forward says he is quitting international football",
@@ -34,14 +12,80 @@
           "source": "BBC"
         },
         {
-          "title": "Cristiano Ronaldo retires from international soccer",
-          "url": "https://www.cnn.com/2026/11/05/sport/cristiano-ronaldo-retires-portuguese-national-team",
-          "source": "CNN"
-        },
-        {
           "title": "Cristiano Ronaldo announces retirement from international football",
           "url": "https://www.aljazeera.com/sports/2026/11/5/cristiano-ronaldo-announces-retirement-from-international-football",
           "source": "Al Jazeera"
+        },
+        {
+          "title": "Ronaldo retires from international football",
+          "url": "https://www.manutd.com/en/news/ronaldo-retires-from-international-football-portugal-man-utd",
+          "source": "Manchester United"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "michael jackson",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "In 2009, Michael Jackson left a trust for his three children; 17 years later, daughter Paris is asking a",
+          "url": "https://timesofindia.indiatimes.com/world/us/in-2009-michael-jackson-left-a-trust-for-his-three-children-17-years-later-daughter-paris-is-asking-a-court-to-move-600-million-into-it-while-estate-executors-say-unresolved-tax-litigation-prevents-full-funding/articleshow/135536975.cms",
+          "source": "The Times of India"
+        },
+        {
+          "title": "Paris Jackson seeks $600M from Michael Jackson estate to fund family trust",
+          "url": "https://globalnews.ca/news/12136502/paris-jackson-seeks-600m-michael-jackson-estate-family-trust/",
+          "source": "Global News"
+        },
+        {
+          "title": "Paris Jackson Wants No More \"Smoke & Mirrors\" From Dad's Estate Over Money",
+          "url": "https://deadline.com/2026/10/michael-jackson-estate-lawsuit-paris-1237207483/",
+          "source": "Deadline"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ramayana movie",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Ranbir Kapoor in Ramayana: India's costliest film retells a beloved Hindu epic - but divides critics",
+          "url": "https://www.bbc.com/news/articles/cm93zv62v1n7o",
+          "source": "BBC"
+        },
+        {
+          "title": "Ramayana Review: Spectacle Overshadows Substance In Ranbir Kapoor And Yash Film",
+          "url": "https://www.ndtv.com/entertainment/ramayana-review-spectacle-overshadows-substance-in-ranbir-kapoor-and-yash-film-3-stars-12285603",
+          "source": "NDTV"
+        },
+        {
+          "title": "Ramayana Movie Is Out... And So Are The Memes: Here Are Some Funny Ones",
+          "url": "https://www.ndtvprofit.com/entertainment/ramayana-movie-is-outand-so-are-the-memes-here-are-some-funny-ones-12286365",
+          "source": "NDTV Profit"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "pakistan vs india",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "India vs Pakistan LIVE: Latest updates, commentary, score from SAFF Championship 2026",
+          "url": "https://www.espn.com/football/story/_/id/50386048/india-vs-pakistan-live-latest-updates-commentary-score-news-saff-championship-2026",
+          "source": "ESPN"
+        },
+        {
+          "title": "India 3-2 Pakistan: Suhail Bhat stars as defending champions open SAFF Championship 2026 with win",
+          "url": "https://www.espn.in/football/story/_/id/50386048/india-vs-pakistan-live-latest-updates-commentary-score-news-saff-championship-2026",
+          "source": "ESPN India"
+        },
+        {
+          "title": "SAFF: India face Pak in opener with just 17 players",
+          "url": "https://timesofindia.indiatimes.com/city/goa/saff-india-face-pak-in-opener-with-just-17-players/articleshow/135550223.cms",
+          "source": "The Times of India"
         }
       ]
     },
@@ -51,63 +95,64 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Education ministry restructures 2027 school calendar, extends mid-term breaks",
-          "url": "https://nation.africa/kenya/news/education/education-ministry-restructures-2027-school-calendar-extends-mid-term-breaks-5658922",
-          "source": "Daily Nation"
+          "title": "CONTINUING COVERAGE: Glenville football battle continues",
+          "url": "https://www.kolotv.com/video/2026/11/05/continuing-coverage-glenville-football-battle-continues/",
+          "source": "KOLO | 8 News Now"
         },
         {
-          "title": "School Reopening Dates & 2027 Academic Calendar Revealed",
-          "url": "https://www.kenyans.co.ke/news/129119-schools-open-january-4-education-ministry-releases-2027-school-calendar",
-          "source": "Kenyans.co.ke"
+          "title": "Court Not Asked or Permitted to Determine Who is Entitled to Play in OHSAA Playoffs",
+          "url": "https://www.marysvillejt.com/2026/11/04/court-not-asked-permitted-determine-entitled-play-ohsaa-playoffs/",
+          "source": "Marysville Journal Tribune"
         },
         {
-          "title": "How new school calendar will look like in 2027",
-          "url": "https://www.the-star.co.ke/news/2026-11-05-how-new-school-calendar-will-look-like-in-2027",
-          "source": "The Star, Kenya"
+          "title": "OHSAA, Glenville Dispute Centers on Student Residency and Athletic Eligibility",
+          "url": "https://www.circlevilleherald.com/sports/ohsaa-glenville-dispute-centers-on-student-residency-and-athletic-eligibility/article_7aae6228-9e1c-4db4-a03f-7c82ea3d54ee.html",
+          "source": "Circleville Herald"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
-      "title": "exam",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Manipur board practical exam schedule 2027 released for Classes 11 and 12; check dates here",
-          "url": "https://timesofindia.indiatimes.com/education/news/manipur-board-practical-exam-schedule-2027-released-for-classes-11-and-12-check-dates-here/articleshow/135569547.cms",
-          "source": "The Times of India"
-        },
-        {
-          "title": "Manipur HSLC Time Table 2027 Out Soon at bsem.nic.in, Check Exam Schedule",
-          "url": "https://www.jagranjosh.com/news/manipur-hslc-time-table-2027-out-soon-at-bsemnicin-check-exam-schedule-188727",
-          "source": "Jagran Josh"
-        },
-        {
-          "title": "Manipur board practical exam dates 2027 out; Class 11, 12 papers from January",
-          "url": "https://news.careers360.com/manipur-board-practical-exam-2027-date-out-class-11-12-cohsemanipur-nic-in-timetable-schedule",
-          "source": "Careers360"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ramayana movie",
+      "title": "earthquake nairobi",
       "traffic": "100+",
       "news": [
         {
-          "title": "\"RAMAYANA: RISE OF A LEGEND\" - Review",
-          "url": "https://nextbestpicture.com/ramayana-rise-of-a-legend/",
-          "source": "Next Best Picture"
+          "title": "'Earthquake' Reported in Nairobi and 3 Other Counties",
+          "url": "https://www.kenyans.co.ke/news/129156-earth-tremor-reported-nairobi-kiambu-and-kajiado-experts-confirm",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Atlee applauds Ranbir Kapoor, Yash and Sai Pallavi starrer ‘Ramayana’; says, ‘Film I want to watch with m",
-          "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/atlee-applauds-ranbir-kapoor-yash-and-sai-pallavi-starrer-ramayana-says-film-i-want-to-watch-with-my-son-and-daughter-i-cant-wait-for-part-2/articleshow/135567198.cms",
-          "source": "The Times of India"
+          "title": "Earthquake in Tanzania's Geita Region sends tremors across Kenya, Rwanda",
+          "url": "https://eastleighvoice.co.ke/national/420230/earthquake-in-tanzanias-geita-region-sends-tremors-across-kenya-rwanda",
+          "source": "The Eastleigh Voice"
         },
         {
-          "title": "Karan Johar shares his review of Ramayana, says Ranbir Kapoor is 'meditative' as Lord Rama | Bollywood",
-          "url": "https://www.hindustantimes.com/entertainment/bollywood/karan-johar-feels-inspired-and-proud-after-watching-ramayana-says-ranbir-kapoor-is-meditative-as-lord-rama-yash-sai-pallavi-ravie-dubey-101793861107625.html",
-          "source": "Hindustan Times"
+          "title": "Tanzania earthquake sends tremors across parts of Kenya",
+          "url": "https://nairobilawmonthly.com/tanzania-earthquake-sends-tremors-across-parts-of-kenya/",
+          "source": "Nairobi Law Monthly"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "arsenal vs hull city preview",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "How to watch Arsenal v Hull City live on TV",
+          "url": "https://www.arsenal.com/news/how-to-watch-arsenal-v-hull-city-live-on-tv-a2rzQ4R14QGF",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Arsenal vs Hull City Premier League preview: Gunners eye Emirates summit push against Tigers",
+          "url": "https://www.goal.com/en/news/arsenal-hull-city-premier-league-preview/bltaacbbde7ebef84be",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Arsenal predicted lineup vs. Hull: William Saliba, Viktor Gyokeres, Kai Havertz decisions made",
+          "url": "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/gyokeres-or-havertz-will-saliba-start-predicted-arsenal-xi-vs-hull_608466.html",
+          "source": "Sports Mole"
         }
       ]
     },
@@ -149,38 +194,12 @@
           "source": "Reuters"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "gta 6",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Ro CEO Shares the Making of Its New AI Agent",
-          "url": "https://www.businessinsider.com/ro-ceo-shares-making-of-new-ai-agent-2026-10",
-          "source": "Business Insider"
-        },
-        {
-          "title": "GTA 6 LIVE: Take-Two CEO stunned at 'not having enough hits' comment",
-          "url": "https://www.indy100.com/gaming/gta-6-preorder-preload-release-time-2678295553",
-          "source": "Indy100"
-        },
-        {
-          "title": "Take-Two Addresses AI In GTA 6’s Development Again",
-          "url": "https://insider-gaming.com/take-two-addresses-ai-in-gta-6/",
-          "source": "Insider Gaming"
-        }
-      ]
     }
   ],
   "dropped": [
     {
-      "title": "michael jackson",
-      "why": "unsafe: 'war'"
-    },
-    {
-      "title": "bayern vs ajax tickets",
-      "why": "banned: violence"
+      "title": "crystal palace vs hoffenheim",
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
