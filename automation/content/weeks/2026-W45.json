@@ -1078,7 +1078,7 @@
           "published": "2026-11-05"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1110,7 +1110,13 @@
       "reel": true,
       "tg_msg": 765,
       "auto": true,
-      "decided_at": "2026-11-05T09:14:52.554129+03:00"
+      "decided_at": "2026-11-05T09:14:52.554129+03:00",
+      "published_at": "2026-11-05T12:47:58.716307+03:00",
+      "ig_id": "18100914122418326",
+      "fb_id": "1871054257419076",
+      "story_id": "18423657856155798",
+      "fb_story_id": "1555699429700198",
+      "yt_id": "Fvh32lkJ-sY"
     }
   ],
   "scripts": {
