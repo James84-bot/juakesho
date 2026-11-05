@@ -1038,13 +1038,85 @@
       "fb_id": "29197153613247516",
       "story_id": "18136595029735507",
       "yt_id": "3imWoAJqpQ4"
+    },
+    {
+      "id": "2026-w45-hot-1105",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 1,
+      "kicker": "Job seekers",
+      "line": "A KRA PIN is officially free, but Kenyans pay *Sh6,000 in bribes* to get one.",
+      "fact": "A World Bank study found citizens pay up to Sh6,000 in bribes for a free KRA PIN.",
+      "source": "People Daily, 2026-11-05",
+      "message": "A KRA PIN is free by law, but corruption forces Kenyans to pay Sh6,000 in bribes.",
+      "photo_query": "cyber cafe counter Nairobi",
+      "action": "Report bribe demands to the EACC toll-free hotline 1176",
+      "who": "Kenya Revenue Authority",
+      "where": "National",
+      "when": "5 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Job seekers lose scarce money to corrupt officials for free public services.",
+      "caption": "A KRA PIN is legally free. A new World Bank report reveals Kenyans pay an average of Sh6,000 in bribes to acquire one.\n\nDid you pay anything to get your KRA PIN or tax clearance? Tell us your experience in the comments.\n\n#KRA #KenyaOnRecord",
+      "beats": [
+        "Kenyans pay *Sh6,000 in bribes* to obtain a free KRA PIN.",
+        "The World Bank reveals officers extort citizens for a free service.",
+        "Youth seeking jobs and business permits carry this unfair cost.",
+        "Kenyans demand: *KRA* stops officers selling free public services.",
+        "Report any officer demanding a bribe to EACC on 1176."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-11-05T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "KRA PIN is free, but Kenyans are being forced to pay Ksh6,000 in bribes, World Bank reveals",
+          "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdjlCYl9Vbl9pQ2lKZ25yQUo0WDZmel9nLXNGMHRNTU9sYWI0YXRuZWwyT0dpMEpBV29sWUkxbjFiejUyWnVjWjNINXB6TUk0czRjTmV2ZXVvdVRFM1NuSnZIS0ZUQm42RzczejhTeWdhdktuVjl3dHQ2dGJ6NUM4NVVUZllYOWt6bkpTZHdKWHZkdk04TkdrcDZNNUxJSURJTGhieXlISXRsMDdzX1Y0cy1NZTdQWHNvTkFMd3BBeEIzT0k?oc=5",
+          "published": "2026-11-05"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "serious allegation words: attribute them to the record ('the Auditor-General found', 'charged with', 'the court ruled') and keep the source in `source`"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 9,
+        "action": 8,
+        "fair": 7,
+        "impact": 9,
+        "avg": 8.2,
+        "note": "Solid execution, but ensure the EACC report link is immediate and direct in the first beat."
+      },
+      "drafted_at": "2026-11-05T09:13:41.742958+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1105-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/kenyans-pay-more-bribes-to-meet-tax-officials-get-utility-services-report-shows/",
+      "reel": true,
+      "tg_msg": 765,
+      "auto": true,
+      "decided_at": "2026-11-05T09:14:52.554129+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari za asubuhi, mwananchi. Karibu kwenye Kenya on Record. Leo tunazungumzia jambo ambalo linatuumiza sote kama taifa—ufisadi. Kila siku, mamilioni na hata mabilioni ya pesa za umma yanapotea kupitia mikataba ya kiprofesa na miradi ya hewa. Pesa hizi zingejenga barabara nzuri, zingeboresha hospitali zetu, na zingewapa vijana wetu kazi. Lakini badala yake, zinaishia kwenye mifuko ya watu wachache. Uchumi wetu unadumaa, gharama ya maisha inapanda, na mzigo unabakia kwako na mimi tunapolipa ushuru. Sasa ni wakati wa kujiuliza: tutakaa kimya mpaka lini? Uwajibikaji unaanza na wewe na mimi kukataa rushwa na kuuliza maswali. Usikubali kunyamazishwa. Hii ni Kenya yetu, tujitetee.\n\nKwa ufupi katika Kiswahili: Ufisadi unagharimu Kenya mabilioni ya pesa na unarudisha nyuma maendeleo ya kiuchumi. Pesa za umma zinazopaswa kutumika kwa huduma za wananchi zinaishia mifukoni mwa mafisadi. Ni jukumu letu kupiga vita ufisadi na kudai uwajibikaji.",
-    "voice_note": "Mambo vipi mkuu? Sikiza hapa. Ufisadi hapa Kenya sio tu habari ya magazeti, ni mzigo mzito kwa mfuko wako. Kila mwaka tunapoteza mabilioni ya pesa za umma ambazo zingejenga barabara, kununua dawa hospitalini, na kutoa ajira kwa vijana wetu. Badala yake, pesa hizi zinafyonzwa na wachache huku wewe ukihangaika na gharama ya juu ya maisha. Uchumi wetu unashindwa kukua sababu ya wezi hawa. Lazima tuamke, tuulize maswali, na tukatae rushwa. Usikae kimya. Tujenge Kenya safi pamoja.",
-    "sms": "Ufisadi unagharimu Kenya mabilioni ya pesa na unaua uchumi wetu. Pesa za umma ni maendeleo yako; usikubali ziibwe. Simama kidete, dai uwajibikaji leo!",
-    "reels": "[Visual: B-roll of unfinished public projects, potholes, and a frustrated Kenyan looking at their phone]\n\nVoice-over (steady, serious tone): \n\n\"Corruption isn't just stealing money—it's stealing Kenya's future. Every year, billions meant for roads, hospitals, and jobs vanish into thin air. That's why our economy is hurting and the cost of living is high. Tunangoja mpaka lini? Simama kidete na Kenya on Record. Kataa rushwa. Dai uwajibikaji.\""
+    "radio": "Good morning and welcome back to Kenya on Record. Today, we need to talk about the price of simply existing as a citizen in this economy.\n\nEvery single Kenyan entering the job market or trying to set up a small enterprise knows that a KRA PIN is mandatory. Without it, you cannot open a business bank account, bid for tenders, or secure formal employment.\n\nNow, here is what the law says: obtaining a KRA PIN is entirely free. The law does not recognize a processing fee, an inspection charge, or ‘tea’ for an officer behind the counter. Yet, our citizen reports this week reveal a painful reality. Ordinary Kenyans across our towns are coughing up as much as six thousand shillings in bribes to rogue intermediaries and compromised officials just to have their PIN generated or unblocked.\n\nSix thousand shillings is food for a household. It is inventory for a mama mboga. When public servants turn a free administrative document into a toll station, they are suffocating small businesses before they even start. We must stop normalizing this extortion. If a file is deliberately delayed, demand the supervisor. File the official complaint. Do not pay for what is legally yours.\n\nKwa ufupi: Kupata KRA PIN ni haki yako ya kisheria na ni huduma ya bure kabisa. Usikubali kulipa hongo ya shilingi elfu sita kwa dalali au afisa yeyote ili upate PIN. Hiyo ni wizi. Kataa ufisadi na ulinde jasho lako.",
+    "voice_note": "Habari zenu. Quick check-in for anyone trying to sort out their paperwork this week. We are seeing a worrying trend where young people and small traders are being forced to pay up to six thousand shillings in bribes just to get a KRA PIN issued. Let us be completely clear: by law, a KRA PIN is free. The application sits on iTax and eCitizen at zero cost. Nobody at a cyber, no broker on the street, and no tax officer has the legal right to charge you a facilitation fee. When you pay that six thousand shillings, you are rewarding corruption that locks out the next Kenyan who cannot afford the bribe. If an officer deliberately stalls your application to force payment, escalate it to the KRA integrity desk or report directly to EACC. Forward this to anyone applying for documents today.",
+    "sms": "Usiibiwe: A KRA PIN is free by law on iTax. Never pay Sh6,000 or any bribe to brokers or officers to get it. Demand your service without paying a single cent.",
+    "reels": "By law, getting a KRA PIN costs exactly zero shillings. It is a free public service available on iTax and eCitizen. Yet today, ordinary Kenyans are parting with up to six thousand shillings in bribes just to have their paperwork processed by rogue gatekeepers. When basic legal identity becomes an extortion scheme, the system isn’t broken—it’s compromised. Stop paying the brokers. Know your rights, and hold the line."
   },
   "spend_usd": 0.0
 }
