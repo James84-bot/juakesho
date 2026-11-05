@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-05T20:36:14.645568+00:00",
+  "fetched": "2026-11-05T20:50:00.663056+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "az vs juventus",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "AZ Alkmaar vs Juventus: UEFA Europa League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cxdd8ley440zt",
+          "source": "BBC"
+        },
+        {
+          "title": "Squad List | AZ Alkmaar-Juventus",
+          "url": "https://www.juventus.com/en/news/articles/squad-list-az-alkmaar-juventus-05-11-26",
+          "source": "Juventus.com"
+        },
+        {
+          "title": "Game Time Thread: Juventus vs. AZ Alkmaar",
+          "url": "https://www.blackwhitereadallover.com/game-time-threads/42746/az-alkmaar-juventus-2026-europa-league-league-phase-matchday-4-lineups-team-news-live-online-streaming",
+          "source": "Black & White & Read All Over"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "ramayana movie review",
@@ -47,23 +69,23 @@
     },
     {
       "geo": "KE",
-      "title": "home",
+      "title": "leverkusen vs marseille",
       "traffic": "200+",
       "news": [
         {
-          "title": "Obituary for Jacqueline (Hill) Stormes",
-          "url": "https://www.wymanfisher.com/obituary/Jacqueline-Stormes",
-          "source": "Wyman-Fisher Funeral Home Inc."
+          "title": "Bayer 04 Leverkusen vs Marseille: UEFA Europa League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6n49rwwgp24t",
+          "source": "BBC"
         },
         {
-          "title": "Judith A. Lavell Obituary Nov 4, 2026",
-          "url": "https://www.wheelanpressly.com/obituaries/judith-lavell",
-          "source": "Wheelan-Pressly Funeral Home"
+          "title": "Bayer Leverkusen vs Marseille live on TV and via stream: coverage, kick-off time and Europa League match information",
+          "url": "https://www.goal.com/en/news/bayer-leverkusen-v-marseille-live-today-who-is-showing-or-broadcasting-the-match-on-tv-and-via-live-stream/bltc0513bcb2b20138c",
+          "source": "Goal.com"
         },
         {
-          "title": "Obituary for Robert Eugene McKenzie",
-          "url": "https://www.thebradleyfuneralhome.com/obituary/Robert-McKenzie",
-          "source": "The Bradley Funeral Home"
+          "title": "Martinez: Collective effort needed to end Leverkusen's defensive woes",
+          "url": "https://www.beinsports.com/en-asia/football/uefa-europa-league/articles/martinez-collective-effort-needed-to-end-leverkusens-defensive-woes-2026-11-04",
+          "source": "beIN SPORTS"
         }
       ]
     }
@@ -78,12 +100,8 @@
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "az vs juventus",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "leverkusen vs marseille",
-      "why": "unsafe: 'Betting'"
+      "title": "home",
+      "why": "unsafe: 'Murder'"
     },
     {
       "title": "crystal palace",
