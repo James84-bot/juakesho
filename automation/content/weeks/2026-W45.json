@@ -1157,7 +1157,7 @@
           "published": "2026-11-05"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1189,7 +1189,13 @@
       "photo_source": "https://capitalfm.africa/illicit-cigarette-trade-costs-kenya-sh47bn-in-lost-tax-revenue-study-finds/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
       "reel": true,
       "tg_msg": 773,
-      "decided_at": "2026-11-05T15:21:27.956273+03:00"
+      "decided_at": "2026-11-05T15:21:27.956273+03:00",
+      "published_at": "2026-11-05T17:30:14.837991+03:00",
+      "ig_id": "17940225423393087",
+      "fb_id": "1522511486595364",
+      "story_id": "18139289290639236",
+      "fb_story_id": "3780720065417813",
+      "yt_id": "a0z0owulJIg"
     }
   ],
   "scripts": {
