@@ -1,20 +1,84 @@
 {
- "fetched": "2026-11-05T06:06:31.843620+00:00",
+ "fetched": "2026-11-05T11:28:33.521438+00:00",
  "x": [
   {
-   "name": "#WaiguruAchievements",
+   "name": "#RunForEducation",
    "tweets": ""
   },
   {
-   "name": "#DrBenKajwang",
+   "name": "#ChepsaitaCrossCountryRun2026",
    "tweets": ""
   },
   {
-   "name": "Wamatangi Goes Global",
+   "name": "#BlueTriangle4MathareUtd",
    "tweets": ""
   },
   {
-   "name": "#JossGawinFanconSG",
+   "name": "Mathare United",
+   "tweets": ""
+  },
+  {
+   "name": "#IndustrialisingKenya",
+   "tweets": ""
+  },
+  {
+   "name": "Delivering The Plan",
+   "tweets": ""
+  },
+  {
+   "name": "#NCBAElev8Live",
+   "tweets": ""
+  },
+  {
+   "name": "Blue Triangle Cement",
+   "tweets": ""
+  },
+  {
+   "name": "Kirinyaga Rising",
+   "tweets": ""
+  },
+  {
+   "name": "Ayre Think Tank",
+   "tweets": ""
+  },
+  {
+   "name": "Tuko Popote Ulipo",
+   "tweets": ""
+  },
+  {
+   "name": "Safaricom Earnings",
+   "tweets": ""
+  },
+  {
+   "name": "Sifuna In Pain",
+   "tweets": ""
+  },
+  {
+   "name": "The Shadow of the LORD",
+   "tweets": ""
+  },
+  {
+   "name": "COMESA",
+   "tweets": ""
+  },
+  {
+   "name": "Sagana Industrial City",
+   "tweets": ""
+  },
+  {
+   "name": "M-PESA",
+   "tweets": ""
+  },
+  {
+   "name": "Chepkemel Dispensary",
+   "tweets": ""
+  },
+  {
+   "name": "SACCOs",
+   "tweets": ""
+  },
+  {
+   "name": "Mwea",
    "tweets": ""
   },
   {
@@ -22,111 +86,585 @@
    "tweets": ""
   },
   {
-   "name": "Trump",
+   "name": "Rigathi",
    "tweets": ""
   },
   {
-   "name": "Democrats",
+   "name": "Anne Waiguru",
    "tweets": ""
   },
   {
-   "name": "#20thAIBKConference",
+   "name": "Martha",
    "tweets": ""
   },
   {
-   "name": "Cairo",
+   "name": "Orengo",
    "tweets": ""
   },
   {
-   "name": "Kenyan CEO",
+   "name": "East Africa",
    "tweets": ""
   },
   {
-   "name": "#Guinzly",
+   "name": "Affordable Housing",
    "tweets": ""
   },
   {
-   "name": "7th Global Change Makers Award",
+   "name": "World Bank",
    "tweets": ""
   },
   {
-   "name": "galana kulalu",
+   "name": "Muturi",
    "tweets": ""
   },
   {
-   "name": "bura irrigation",
-   "tweets": ""
-  },
-  {
-   "name": "Republicans",
-   "tweets": ""
-  },
-  {
-   "name": "riggyg into oblivion",
-   "tweets": ""
-  },
-  {
-   "name": "the endof rigathi",
-   "tweets": ""
-  },
-  {
-   "name": "National Hero",
-   "tweets": ""
-  },
-  {
-   "name": "mobilising global capital",
-   "tweets": ""
-  },
-  {
-   "name": "industrialization summit 2026",
-   "tweets": ""
-  },
-  {
-   "name": "ps ephantus kimotho",
-   "tweets": ""
-  },
-  {
-   "name": "America",
-   "tweets": ""
-  },
-  {
-   "name": "Progress Under Ruto",
-   "tweets": ""
-  },
-  {
-   "name": "waiguru finishing strong",
-   "tweets": ""
-  },
-  {
-   "name": "Texas",
-   "tweets": ""
-  },
-  {
-   "name": "GOK Decisive Response",
-   "tweets": ""
-  },
-  {
-   "name": "Mr Felix Koskei",
-   "tweets": ""
-  },
-  {
-   "name": "Roma",
-   "tweets": ""
-  },
-  {
-   "name": "Dems",
-   "tweets": ""
-  },
-  {
-   "name": "Iran",
+   "name": "Uhuru Kenyatta",
    "tweets": ""
   }
  ],
- "videos": [],
- "errors": {
-  "Citizen TV": "HTTP Error 404: Not Found",
-  "NTV Kenya": "HTTP Error 404: Not Found",
-  "KTN News": "HTTP Error 404: Not Found"
- },
- "catalog": []
+ "videos": [
+  {
+   "title": "Sifuna apigiwa debe Kakamega",
+   "channel": "Citizen TV",
+   "views": 810,
+   "published": "2026-11-05T10:34:08+00:00",
+   "per_hour": 810,
+   "url": "https://www.youtube.com/watch?v=kr3RepS-t98",
+   "short": "https://youtube.com/shorts/kr3RepS-t98"
+  },
+  {
+   "title": "Kinara wa chama cha Wiper Patriotic Front Kalonzo Musyoka azungumzia hali ilivyo nchini",
+   "channel": "Citizen TV",
+   "views": 542,
+   "published": "2026-11-05T10:25:27+00:00",
+   "per_hour": 515,
+   "url": "https://www.youtube.com/watch?v=lz5SPytA4cc",
+   "short": "https://youtube.com/shorts/lz5SPytA4cc"
+  },
+  {
+   "title": "Matiang'i, Karua na Ndindi Nyoro watarajiwa kukutana Limuru",
+   "channel": "NTV Kenya",
+   "views": 474,
+   "published": "2026-11-05T10:48:45+00:00",
+   "per_hour": 474,
+   "url": "https://www.youtube.com/watch?v=yQ0nePZkP84",
+   "short": "https://youtube.com/shorts/yQ0nePZkP84"
+  },
+  {
+   "title": "Wiper leader Kalonzo Musyoka says opposition will field one presidential candidate in 2027",
+   "channel": "KTN News",
+   "views": 599,
+   "published": "2026-11-05T10:08:03+00:00",
+   "per_hour": 446,
+   "url": "https://www.youtube.com/watch?v=I5dHe6z2hcU",
+   "short": "https://youtube.com/shorts/I5dHe6z2hcU"
+  },
+  {
+   "title": "Eastleigh building collapse death toll rises to five after three more bodies recovered",
+   "channel": "KTN News",
+   "views": 581,
+   "published": "2026-11-05T10:04:06+00:00",
+   "per_hour": 413,
+   "url": "https://www.youtube.com/watch?v=hrK9o7hEDM8",
+   "short": "https://youtube.com/shorts/hrK9o7hEDM8"
+  },
+  {
+   "title": "Speakers Wetang’ula and Kingi lead MPs in visit to recuperating Oburu Oginga",
+   "channel": "KTN News",
+   "views": 404,
+   "published": "2026-11-05T10:21:22+00:00",
+   "per_hour": 361,
+   "url": "https://www.youtube.com/watch?v=T_BBaIZpLoE",
+   "short": "https://youtube.com/shorts/T_BBaIZpLoE"
+  },
+  {
+   "title": "Gavana wa Kisii Simba Arati amrai Fred Matiang'i ajiunge na serikali",
+   "channel": "Citizen TV",
+   "views": 334,
+   "published": "2026-11-05T10:44:49+00:00",
+   "per_hour": 334,
+   "url": "https://www.youtube.com/watch?v=ZpiUjO3Nvqg",
+   "short": "https://youtube.com/shorts/ZpiUjO3Nvqg"
+  },
+  {
+   "title": "Senator Bonnie Khalwale claims Sifuna is ahead of Ruto in Kakamega opinion polls",
+   "channel": "KTN News",
+   "views": 360,
+   "published": "2026-11-05T10:10:00+00:00",
+   "per_hour": 275,
+   "url": "https://www.youtube.com/watch?v=fC1ZwYYr860",
+   "short": "https://youtube.com/shorts/fC1ZwYYr860"
+  },
+  {
+   "title": "Eastleigh building collapse: Rescuers recover three more bodies from the rubble",
+   "channel": "NTV Kenya",
+   "views": 202,
+   "published": "2026-11-05T10:34:46+00:00",
+   "per_hour": 202,
+   "url": "https://www.youtube.com/watch?v=os8rOlSBvPw",
+   "short": "https://youtube.com/shorts/os8rOlSBvPw"
+  },
+  {
+   "title": "Viongozi wa Linda Mwananchi Kakamega waendelea kuuza sera zao mashinani",
+   "channel": "NTV Kenya",
+   "views": 147,
+   "published": "2026-11-05T10:51:41+00:00",
+   "per_hour": 147,
+   "url": "https://www.youtube.com/watch?v=lvGM_9KG7pU",
+   "short": "https://youtube.com/shorts/lvGM_9KG7pU"
+  },
+  {
+   "title": "Eastleigh: Juhudi za ufukuzi zaendelea kwa siku ya 14",
+   "channel": "NTV Kenya",
+   "views": 136,
+   "published": "2026-11-05T10:54:13+00:00",
+   "per_hour": 136,
+   "url": "https://www.youtube.com/watch?v=3cCHFa9xeqM",
+   "short": "https://youtube.com/shorts/3cCHFa9xeqM"
+  },
+  {
+   "title": "Tanzania yapewa siku mbili kukamilisha uchunguzi wa mauaji ya Ian Nzioki",
+   "channel": "KTN News",
+   "views": 200,
+   "published": "2026-11-05T09:57:32+00:00",
+   "per_hour": 132,
+   "url": "https://www.youtube.com/watch?v=fTpycfHmJSk",
+   "short": "https://youtube.com/shorts/fTpycfHmJSk"
+  },
+  {
+   "title": "DCI investigates attack on Loima MP Protus Akuja in Turkana",
+   "channel": "KTN News",
+   "views": 140,
+   "published": "2026-11-05T10:24:27+00:00",
+   "per_hour": 131,
+   "url": "https://www.youtube.com/watch?v=T6ot2b-vAaE",
+   "short": "https://youtube.com/shorts/T6ot2b-vAaE"
+  },
+  {
+   "title": "Waziri wa usalama Kipchumba Murkomen afika mbele ya kamati ya ardhi ya Seneti",
+   "channel": "Citizen TV",
+   "views": 129,
+   "published": "2026-11-05T10:44:53+00:00",
+   "per_hour": 129,
+   "url": "https://www.youtube.com/watch?v=E2y3FpzMaqE",
+   "short": "https://youtube.com/shorts/E2y3FpzMaqE"
+  },
+  {
+   "title": "Mwili wa mwanamume umepatikana kwenye shimo la maji taka Manyatta, Kisumu",
+   "channel": "NTV Kenya",
+   "views": 108,
+   "published": "2026-11-05T10:57:52+00:00",
+   "per_hour": 108,
+   "url": "https://www.youtube.com/watch?v=zfo0m6_Fqpg",
+   "short": "https://youtube.com/shorts/zfo0m6_Fqpg"
+  }
+ ],
+ "errors": {},
+ "catalog": [
+  {
+   "title": "Emerging Stars kupambana na Ivory Coast kampeni ya kufuzu kombe la Bara Afrika",
+   "channel": "NTV Kenya",
+   "views": 10,
+   "published": "2026-11-05T11:12:32+00:00",
+   "per_hour": 10,
+   "url": "https://www.youtube.com/watch?v=NWJaV4vSWUg",
+   "short": "https://youtube.com/shorts/NWJaV4vSWUg"
+  },
+  {
+   "title": "Makala ya mwaka huu ya mbio za Nyika za Chepsaita yanazinduliwa Uasin Gishu",
+   "channel": "NTV Kenya",
+   "views": 7,
+   "published": "2026-11-05T11:11:23+00:00",
+   "per_hour": 7,
+   "url": "https://www.youtube.com/watch?v=offpZ2Mfv84",
+   "short": "https://youtube.com/shorts/offpZ2Mfv84"
+  },
+  {
+   "title": "Makovu ya ajali: Watu 4 wa familia moja wazikwa Kinango,Kwale",
+   "channel": "Citizen TV",
+   "views": 105,
+   "published": "2026-11-05T11:09:58+00:00",
+   "per_hour": 105,
+   "url": "https://www.youtube.com/watch?v=ybm-P3YAD1o",
+   "short": "https://youtube.com/shorts/ybm-P3YAD1o"
+  },
+  {
+   "title": "Juhudi za kuimarisha usawa wa jinsia zaendelea kupata msukumo zaidi",
+   "channel": "NTV Kenya",
+   "views": 7,
+   "published": "2026-11-05T11:07:09+00:00",
+   "per_hour": 7,
+   "url": "https://www.youtube.com/watch?v=GSJwSo0C9Ss",
+   "short": "https://youtube.com/shorts/GSJwSo0C9Ss"
+  },
+  {
+   "title": "Utata wa nyumba za bei nafuu Garissa",
+   "channel": "Citizen TV",
+   "views": 96,
+   "published": "2026-11-05T11:07:08+00:00",
+   "per_hour": 96,
+   "url": "https://www.youtube.com/watch?v=SLDE-tYUGsk",
+   "short": "https://youtube.com/shorts/SLDE-tYUGsk"
+  },
+  {
+   "title": "Mtu mmoja afkufa baada ya mlipuko katika mgodi wa dhahabu Migori",
+   "channel": "NTV Kenya",
+   "views": 30,
+   "published": "2026-11-05T11:05:17+00:00",
+   "per_hour": 30,
+   "url": "https://www.youtube.com/watch?v=N1cQpCaHQM4",
+   "short": "https://youtube.com/shorts/N1cQpCaHQM4"
+  },
+  {
+   "title": "Polisi Mombasa waanza uchunguzi kuhusu madai ya wizi wa mafuta yanayomilikwa na KPC",
+   "channel": "NTV Kenya",
+   "views": 90,
+   "published": "2026-11-05T11:00:41+00:00",
+   "per_hour": 90,
+   "url": "https://www.youtube.com/watch?v=4QQaVF_Wzmk",
+   "short": "https://youtube.com/shorts/4QQaVF_Wzmk"
+  },
+  {
+   "title": "Ufadhili wa elimu Laikipia",
+   "channel": "Citizen TV",
+   "views": 15,
+   "published": "2026-11-05T11:00:09+00:00",
+   "per_hour": 15,
+   "url": "https://www.youtube.com/watch?v=ZT7AjR3_QBU",
+   "short": "https://youtube.com/shorts/ZT7AjR3_QBU"
+  },
+  {
+   "title": "Kalonzo names Orengo and Matiang'i as co-chairs of Ukombozi Alliance",
+   "channel": "NTV Kenya",
+   "views": 64,
+   "published": "2026-11-05T10:58:04+00:00",
+   "per_hour": 64,
+   "url": "https://www.youtube.com/watch?v=O7T1jGly4vQ",
+   "short": "https://youtube.com/shorts/O7T1jGly4vQ"
+  },
+  {
+   "title": "Mwili wa mwanamume umepatikana kwenye shimo la maji taka Manyatta, Kisumu",
+   "channel": "NTV Kenya",
+   "views": 108,
+   "published": "2026-11-05T10:57:52+00:00",
+   "per_hour": 108,
+   "url": "https://www.youtube.com/watch?v=zfo0m6_Fqpg",
+   "short": "https://youtube.com/shorts/zfo0m6_Fqpg"
+  },
+  {
+   "title": "Maslahi ya walemavu Nyandarua",
+   "channel": "Citizen TV",
+   "views": 14,
+   "published": "2026-11-05T10:57:25+00:00",
+   "per_hour": 14,
+   "url": "https://www.youtube.com/watch?v=DVpMN-jup7A",
+   "short": "https://youtube.com/shorts/DVpMN-jup7A"
+  },
+  {
+   "title": "Moyale: Wakenya waendelea kuathirika na milipuko ya risasi",
+   "channel": "NTV Kenya",
+   "views": 82,
+   "published": "2026-11-05T10:56:28+00:00",
+   "per_hour": 82,
+   "url": "https://www.youtube.com/watch?v=LTOcrB0-hg8",
+   "short": "https://youtube.com/shorts/LTOcrB0-hg8"
+  },
+  {
+   "title": "Wajane Migori wanaiomba serikali kulinda haki zao",
+   "channel": "Citizen TV",
+   "views": 24,
+   "published": "2026-11-05T10:54:20+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=AGVJoI8o-Aw",
+   "short": "https://youtube.com/shorts/AGVJoI8o-Aw"
+  },
+  {
+   "title": "Eastleigh: Juhudi za ufukuzi zaendelea kwa siku ya 14",
+   "channel": "NTV Kenya",
+   "views": 136,
+   "published": "2026-11-05T10:54:13+00:00",
+   "per_hour": 136,
+   "url": "https://www.youtube.com/watch?v=3cCHFa9xeqM",
+   "short": "https://youtube.com/shorts/3cCHFa9xeqM"
+  },
+  {
+   "title": "ORPP imeonya vyama vya siasa dhidi ya kukiuka sheria za uchaguzi wa ndani",
+   "channel": "NTV Kenya",
+   "views": 8,
+   "published": "2026-11-05T10:52:18+00:00",
+   "per_hour": 8,
+   "url": "https://www.youtube.com/watch?v=p0YUjvVvkEw",
+   "short": "https://youtube.com/shorts/p0YUjvVvkEw"
+  },
+  {
+   "title": "Magonjwa ya kisukari, shinikizo la damu na saratani yaongezeka",
+   "channel": "Citizen TV",
+   "views": 28,
+   "published": "2026-11-05T10:52:13+00:00",
+   "per_hour": 28,
+   "url": "https://www.youtube.com/watch?v=CwbnWquCl6c",
+   "short": "https://youtube.com/shorts/CwbnWquCl6c"
+  },
+  {
+   "title": "Viongozi wa Linda Mwananchi Kakamega waendelea kuuza sera zao mashinani",
+   "channel": "NTV Kenya",
+   "views": 147,
+   "published": "2026-11-05T10:51:41+00:00",
+   "per_hour": 147,
+   "url": "https://www.youtube.com/watch?v=lvGM_9KG7pU",
+   "short": "https://youtube.com/shorts/lvGM_9KG7pU"
+  },
+  {
+   "title": "Usalama wa bodaboda Machakos",
+   "channel": "Citizen TV",
+   "views": 68,
+   "published": "2026-11-05T10:49:34+00:00",
+   "per_hour": 68,
+   "url": "https://www.youtube.com/watch?v=2zOJYO5dO-o",
+   "short": "https://youtube.com/shorts/2zOJYO5dO-o"
+  },
+  {
+   "title": "Kalonzo: Upinzani uko imara",
+   "channel": "NTV Kenya",
+   "views": 89,
+   "published": "2026-11-05T10:49:22+00:00",
+   "per_hour": 89,
+   "url": "https://www.youtube.com/watch?v=APkPQ06SK94",
+   "short": "https://youtube.com/shorts/APkPQ06SK94"
+  },
+  {
+   "title": "Matiang'i, Karua na Ndindi Nyoro watarajiwa kukutana Limuru",
+   "channel": "NTV Kenya",
+   "views": 474,
+   "published": "2026-11-05T10:48:45+00:00",
+   "per_hour": 474,
+   "url": "https://www.youtube.com/watch?v=yQ0nePZkP84",
+   "short": "https://youtube.com/shorts/yQ0nePZkP84"
+  },
+  {
+   "title": "Miradi ya umeme Machakos",
+   "channel": "Citizen TV",
+   "views": 33,
+   "published": "2026-11-05T10:47:04+00:00",
+   "per_hour": 33,
+   "url": "https://www.youtube.com/watch?v=0IParenVfBw",
+   "short": "https://youtube.com/shorts/0IParenVfBw"
+  },
+  {
+   "title": "Kenya steps up rice seed production as it seeks to cut imports by 2032",
+   "channel": "KTN News",
+   "views": 21,
+   "published": "2026-11-05T10:45:07+00:00",
+   "per_hour": 21,
+   "url": "https://www.youtube.com/watch?v=B8VbdW588AQ",
+   "short": "https://youtube.com/shorts/B8VbdW588AQ"
+  },
+  {
+   "title": "Waziri wa usalama Kipchumba Murkomen afika mbele ya kamati ya ardhi ya Seneti",
+   "channel": "Citizen TV",
+   "views": 129,
+   "published": "2026-11-05T10:44:53+00:00",
+   "per_hour": 129,
+   "url": "https://www.youtube.com/watch?v=E2y3FpzMaqE",
+   "short": "https://youtube.com/shorts/E2y3FpzMaqE"
+  },
+  {
+   "title": "Gavana wa Kisii Simba Arati amrai Fred Matiang'i ajiunge na serikali",
+   "channel": "Citizen TV",
+   "views": 334,
+   "published": "2026-11-05T10:44:49+00:00",
+   "per_hour": 334,
+   "url": "https://www.youtube.com/watch?v=ZpiUjO3Nvqg",
+   "short": "https://youtube.com/shorts/ZpiUjO3Nvqg"
+  },
+  {
+   "title": "Kiambu rolls out modern markets to create trading spaces for over 34,000 traders",
+   "channel": "KTN News",
+   "views": 34,
+   "published": "2026-11-05T10:44:11+00:00",
+   "per_hour": 34,
+   "url": "https://www.youtube.com/watch?v=cFaou5vGVIM",
+   "short": "https://youtube.com/shorts/cFaou5vGVIM"
+  },
+  {
+   "title": "Police investigate suspected fuel theft involving KPC infrastructure in Mombasa",
+   "channel": "KTN News",
+   "views": 51,
+   "published": "2026-11-05T10:40:15+00:00",
+   "per_hour": 51,
+   "url": "https://www.youtube.com/watch?v=4j25y2l9onQ",
+   "short": "https://youtube.com/shorts/4j25y2l9onQ"
+  },
+  {
+   "title": "Kenya targets 16.8% growth in tourist arrivals from UK market",
+   "channel": "KTN News",
+   "views": 23,
+   "published": "2026-11-05T10:39:09+00:00",
+   "per_hour": 23,
+   "url": "https://www.youtube.com/watch?v=e-3Lx_uD7DI",
+   "short": "https://youtube.com/shorts/e-3Lx_uD7DI"
+  },
+  {
+   "title": "Eastleigh building collapse: Rescuers recover three more bodies from the rubble",
+   "channel": "NTV Kenya",
+   "views": 202,
+   "published": "2026-11-05T10:34:46+00:00",
+   "per_hour": 202,
+   "url": "https://www.youtube.com/watch?v=os8rOlSBvPw",
+   "short": "https://youtube.com/shorts/os8rOlSBvPw"
+  },
+  {
+   "title": "Sifuna apigiwa debe Kakamega",
+   "channel": "Citizen TV",
+   "views": 810,
+   "published": "2026-11-05T10:34:08+00:00",
+   "per_hour": 810,
+   "url": "https://www.youtube.com/watch?v=kr3RepS-t98",
+   "short": "https://youtube.com/shorts/kr3RepS-t98"
+  },
+  {
+   "title": "Report raises alarm over rising sexual offences and crime across Kenya",
+   "channel": "KTN News",
+   "views": 24,
+   "published": "2026-11-05T10:32:06+00:00",
+   "per_hour": 24,
+   "url": "https://www.youtube.com/watch?v=GitpaB5dnO4",
+   "short": "https://youtube.com/shorts/GitpaB5dnO4"
+  },
+  {
+   "title": "Mwandishi Ben Mwaraniria amkumbuka Raila Odinga",
+   "channel": "Citizen TV",
+   "views": 56,
+   "published": "2026-11-05T10:29:13+00:00",
+   "per_hour": 56,
+   "url": "https://www.youtube.com/watch?v=3QVZXuX4Tp0",
+   "short": "https://youtube.com/shorts/3QVZXuX4Tp0"
+  },
+  {
+   "title": "Multi-agency team intercepts illegal cigarettes worth Sh22 million in Kiambu",
+   "channel": "KTN News",
+   "views": 41,
+   "published": "2026-11-05T10:28:50+00:00",
+   "per_hour": 41,
+   "url": "https://www.youtube.com/watch?v=8LW2uXqiQWA",
+   "short": "https://youtube.com/shorts/8LW2uXqiQWA"
+  },
+  {
+   "title": "NCIC yawalenga wanasiasa wachochezi Kerio Valley",
+   "channel": "Citizen TV",
+   "views": 58,
+   "published": "2026-11-05T10:27:43+00:00",
+   "per_hour": 57,
+   "url": "https://www.youtube.com/watch?v=mDgIga28PJc",
+   "short": "https://youtube.com/shorts/mDgIga28PJc"
+  },
+  {
+   "title": "Machakos boda boda riders launch campaign to promote road safety",
+   "channel": "KTN News",
+   "views": 68,
+   "published": "2026-11-05T10:26:41+00:00",
+   "per_hour": 66,
+   "url": "https://www.youtube.com/watch?v=NngdKndm3BM",
+   "short": "https://youtube.com/shorts/NngdKndm3BM"
+  },
+  {
+   "title": "Kinara wa chama cha Wiper Patriotic Front Kalonzo Musyoka azungumzia hali ilivyo nchini",
+   "channel": "Citizen TV",
+   "views": 542,
+   "published": "2026-11-05T10:25:27+00:00",
+   "per_hour": 515,
+   "url": "https://www.youtube.com/watch?v=lz5SPytA4cc",
+   "short": "https://youtube.com/shorts/lz5SPytA4cc"
+  },
+  {
+   "title": "DCI investigates attack on Loima MP Protus Akuja in Turkana",
+   "channel": "KTN News",
+   "views": 140,
+   "published": "2026-11-05T10:24:27+00:00",
+   "per_hour": 131,
+   "url": "https://www.youtube.com/watch?v=T6ot2b-vAaE",
+   "short": "https://youtube.com/shorts/T6ot2b-vAaE"
+  },
+  {
+   "title": "Education stakeholders urge parents to keep learners focused during school holidays",
+   "channel": "KTN News",
+   "views": 13,
+   "published": "2026-11-05T10:23:43+00:00",
+   "per_hour": 12,
+   "url": "https://www.youtube.com/watch?v=T_nEMV-J7wg",
+   "short": "https://youtube.com/shorts/T_nEMV-J7wg"
+  },
+  {
+   "title": "Tume ya ugavi wa mapato yafika mbele ya kamati ya fedha Seneti",
+   "channel": "Citizen TV",
+   "views": 45,
+   "published": "2026-11-05T10:23:14+00:00",
+   "per_hour": 41,
+   "url": "https://www.youtube.com/watch?v=FPed3zIt-rg",
+   "short": "https://youtube.com/shorts/FPed3zIt-rg"
+  },
+  {
+   "title": "Speakers Wetang’ula and Kingi lead MPs in visit to recuperating Oburu Oginga",
+   "channel": "KTN News",
+   "views": 404,
+   "published": "2026-11-05T10:21:22+00:00",
+   "per_hour": 361,
+   "url": "https://www.youtube.com/watch?v=T_BBaIZpLoE",
+   "short": "https://youtube.com/shorts/T_BBaIZpLoE"
+  },
+  {
+   "title": "Clergy raise concerns over Kenya’s current state of affairs",
+   "channel": "KTN News",
+   "views": 27,
+   "published": "2026-11-05T10:13:14+00:00",
+   "per_hour": 22,
+   "url": "https://www.youtube.com/watch?v=_rws3PohUoE",
+   "short": "https://youtube.com/shorts/_rws3PohUoE"
+  },
+  {
+   "title": "Senator Bonnie Khalwale claims Sifuna is ahead of Ruto in Kakamega opinion polls",
+   "channel": "KTN News",
+   "views": 360,
+   "published": "2026-11-05T10:10:00+00:00",
+   "per_hour": 275,
+   "url": "https://www.youtube.com/watch?v=fC1ZwYYr860",
+   "short": "https://youtube.com/shorts/fC1ZwYYr860"
+  },
+  {
+   "title": "Wiper leader Kalonzo Musyoka says opposition will field one presidential candidate in 2027",
+   "channel": "KTN News",
+   "views": 599,
+   "published": "2026-11-05T10:08:03+00:00",
+   "per_hour": 446,
+   "url": "https://www.youtube.com/watch?v=I5dHe6z2hcU",
+   "short": "https://youtube.com/shorts/I5dHe6z2hcU"
+  },
+  {
+   "title": "Eastleigh building collapse death toll rises to five after three more bodies recovered",
+   "channel": "KTN News",
+   "views": 581,
+   "published": "2026-11-05T10:04:06+00:00",
+   "per_hour": 413,
+   "url": "https://www.youtube.com/watch?v=hrK9o7hEDM8",
+   "short": "https://youtube.com/shorts/hrK9o7hEDM8"
+  },
+  {
+   "title": "Tanzania yapewa siku mbili kukamilisha uchunguzi wa mauaji ya Ian Nzioki",
+   "channel": "KTN News",
+   "views": 200,
+   "published": "2026-11-05T09:57:32+00:00",
+   "per_hour": 132,
+   "url": "https://www.youtube.com/watch?v=fTpycfHmJSk",
+   "short": "https://youtube.com/shorts/fTpycfHmJSk"
+  },
+  {
+   "title": "The Lost Note: Things We Never Say",
+   "channel": "NTV Kenya",
+   "views": 40,
+   "published": "2026-11-05T09:44:58+00:00",
+   "per_hour": 23,
+   "url": "https://www.youtube.com/watch?v=7hPP65a6tlA",
+   "short": "https://youtube.com/shorts/7hPP65a6tlA"
+  }
+ ]
 }

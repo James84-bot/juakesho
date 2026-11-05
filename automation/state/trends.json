@@ -1,210 +1,186 @@
 {
-  "fetched": "2026-11-05T06:06:26.660288+00:00",
+  "fetched": "2026-11-05T11:28:29.627834+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "michael carrick",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Man Utd 3-2 Roma: Michael Carrick fights on after Red Devils' comeback win",
-          "url": "https://www.bbc.com/sport/football/articles/c6q8n98y4023o",
-          "source": "BBC"
-        },
-        {
-          "title": "Champions League comeback kings? Check this stat...",
-          "url": "https://www.manutd.com/en/news/champions-league-comeback-kings-check-this-stat-man-utd-v-roma",
-          "source": "Manchester United"
-        },
-        {
-          "title": "'Disappointment sets in' - Gian Piero Gasperini explains why Roma collapse against Man Utd was WORSE than Real Madrid failure",
-          "url": "https://www.goal.com/en-ke/news/gian-piero-gasperini-roma-man-utd-real-madrid/blt045c116d74352977",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "champions league standings",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Aston Villa: Boss Unai Emery takes positives from Barcelona defeat",
-          "url": "https://www.bbc.com/sport/football/articles/cjwy9496qe7ko",
-          "source": "BBC"
-        },
-        {
-          "title": "Barcelona 3-0 Aston Villa: Raphinha double sees Barca go second in Champions League standings",
-          "url": "https://www.skysports.com/football/news/13607527/barcelona-3-0-aston-villa-raphinha-double-sees-barca-go-second-in-champions-league-standings",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Lamine Yamal makes history as ruthless Barça end Aston Villa's perfect UCL start",
-          "url": "https://www.espn.com/soccer/story/_/id/50372990/lamine-yamal-makes-history-ruthless-barca-end-aston-villas-perfect-ucl-start",
-          "source": "ESPN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "bank",
+      "title": "typhoon",
       "traffic": "500+",
       "news": [
         {
-          "title": "Court freezes accounts, crypto assets over Sh1.5bn Equity Bank heist",
-          "url": "https://www.businessdailyafrica.com/bd/markets/currencies/court-freezes-accounts-crypto-assets-over-sh1-5bn-equity-heist-5658550",
-          "source": "Business Daily"
+          "title": "El Nino is making the Pacific 'burn with fever', triggering typhoon after typhoon in East Asia",
+          "url": "https://www.bbc.com/news/articles/cw33kgj7nkemo",
+          "source": "BBC"
         },
         {
-          "title": "Meet the man building Somalia’s Central Bank from the ground up",
-          "url": "https://african.business/2026/11/long-reads/meet-the-man-building-somalias-central-bank-from-the-ground-up",
-          "source": "African Business"
+          "title": "'Pacific ocean like a person burning with fever': Scientists warn of stronger typhoons in East Asia",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/pacific-ocean-like-a-person-burning-with-fever-scientists-warn-of-stronger-typhoons-in-east-asia/articleshow/135558591.cms",
+          "source": "The Times of India"
         },
         {
-          "title": "Somalia’s Currency Crisis Exposes Failures in Central Bank Leadership",
-          "url": "https://www.garoweonline.com/en/news/somalia/somalia-s-currency-crisis-exposes-failures-in-central-bank-leadership",
-          "source": "Garowe Online"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "como vs lens",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Cesc: \"Gran noche, pero hay que mantener los pies en la tierra\"",
-          "url": "https://www.mundodeportivo.com/futbol/champions-league/20261105/1004247407/cesc-gran-noche-hay-mantener-pies-tierra.html",
-          "source": "Mundo Deportivo"
-        },
-        {
-          "title": "Champions League: Real Madrid remonta a lo 'Merengue' en Grecia, Liverpool pierde y Como aplasta al Lens",
-          "url": "https://www.poresto.com/deportes/2026/11/4/champions-league-real-madrid-remonta-merengue-grecia-liverpool-pierde-aplasta-lens.html",
-          "source": "Por Esto!"
-        },
-        {
-          "title": "\"Una victoria 9-1, es una locura\" Debut en la UCL y un desastre mayúsculo... Infligió una \"humillación histórica\" al fútbol francés",
-          "url": "https://www.starnewskorea.com/es/sports/2026/11/05/2026110507084199563",
-          "source": "스타뉴스"
+          "title": "The Pacific’s Busy Storm Season",
+          "url": "https://science.nasa.gov/earth/earth-observatory/the-pacifics-busy-storm-season/",
+          "source": "NASA Science (.gov)"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "wicknell chivayo",
+      "title": "ronaldo",
       "traffic": "200+",
       "news": [
         {
-          "title": "Wicknell Chivayo empire: Kenyan business links under scrutiny as family begins wealth audit",
-          "url": "https://nation.africa/kenya/news/wicknell-chivayo-empire-kenyan-business-links-under-scrutiny-as-family-begins-wealth-audit--5656974",
+          "title": "Cristiano Ronaldo retires: Portugal forward says he is quitting international football",
+          "url": "https://www.bbc.com/sport/football/articles/cme8rxx2e1w9o",
+          "source": "BBC"
+        },
+        {
+          "title": "Cristiano Ronaldo retires from international soccer",
+          "url": "https://www.cnn.com/2026/11/05/sport/cristiano-ronaldo-retires-portuguese-national-team",
+          "source": "CNN"
+        },
+        {
+          "title": "Cristiano Ronaldo announces retirement from international football",
+          "url": "https://www.aljazeera.com/sports/2026/11/5/cristiano-ronaldo-announces-retirement-from-international-football",
+          "source": "Al Jazeera"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "school",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Education ministry restructures 2027 school calendar, extends mid-term breaks",
+          "url": "https://nation.africa/kenya/news/education/education-ministry-restructures-2027-school-calendar-extends-mid-term-breaks-5658922",
           "source": "Daily Nation"
         },
         {
-          "title": "Video: Sonja's reaction to being named co-executrix of Chivayo's estate emerges",
-          "url": "https://www.tuko.co.ke/world/africa/645618-wicknell-chivayos-wife-sonja-reacts-named-executrix-multi-million-estate/",
-          "source": "Tuko News"
-        },
-        {
-          "title": "Chivayo Estate: Strict Conflict-Of-Interest Safeguards. . . Sonja, Esther Sign Undertaking For Joint Administration",
-          "url": "https://www.heraldonline.co.zw/chivayo-estate-strict-conflict-of-interest-safeguards-sonja-esther-sign-undertaking-for-joint-administration/",
-          "source": "Herald.co.zw"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "spurs vs mavericks",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Victor Wembanyama goes viral for getting three blocks in 13 seconds against the Mavericks",
-          "url": "https://www.sportingnews.com/ca/nba/san-antonio-spurs/news/victor-wembanyama-viral-three-blocks-13-seconds-against-mavs/72b81283c0b6bd323abf972e",
-          "source": "Sporting News"
-        },
-        {
-          "title": "Only 25 players in NBA history have done in a game …",
-          "url": "https://sports.yahoo.com/articles/only-25-players-nba-history-043558155.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "3 Overreactions as Mavs Fall Short to Spurs After Historic Game By Victor Wembanyama",
-          "url": "https://www.si.com/nba/mavericks/onsi/3-overreactions-dallas-mavericks-fall-short-san-antonio-spurs-historic-game-victor-wembanyama-",
-          "source": "Sports Illustrated"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "chelsea news",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "How is Chelsea loanee Jesse Derry faring at Sporting CP?",
-          "url": "https://www.nytimes.com/athletic/7747580/2026/11/03/jesse-derry-chelsea-sporting-cp-loan-stamford-bridge/",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Chelsea star denied Stamford Bridge return after summer transfer decision",
-          "url": "https://www.football.london/chelsea-fc/news/chelsea-star-denied-stamford-bridge-34860919",
-          "source": "Football London"
-        },
-        {
-          "title": "Chelsea Have Option To Cut Highly-Rated Teenager's Loan Short In January Amid Struggles For Minutes",
-          "url": "https://roundtable.io/sports/soccer/premier-league/chelsea/news/chelsea-have-option-to-cut-highly-rated-teenagers-loan-short-in-january-amid-struggles-for-minutes",
-          "source": "roundtable.io"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "cetirizine",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "MoH Issues Warning Over Cetirizine Use Amid Viral Social Media Trend",
-          "url": "https://www.kenyans.co.ke/news/129127-moh-cautions-kenyans-against-misusing-cetirizine-after-viral-online-trend",
+          "title": "School Reopening Dates & 2027 Academic Calendar Revealed",
+          "url": "https://www.kenyans.co.ke/news/129119-schools-open-january-4-education-ministry-releases-2027-school-calendar",
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "Experts warn against misuse of cetirizine amid social media craze",
-          "url": "https://citizen.digital/article/experts-warn-against-misuse-of-cetirizine-amid-social-media-craze-n393246",
-          "source": "Citizen Digital"
-        },
-        {
-          "title": "Health Ministry warns Kenyans against using cetirizine for sexual enhancement",
-          "url": "https://eastleighvoice.co.ke/health/419871/health-ministry-warns-kenyans-against-using-cetirizine-for-sexual-enhancement",
-          "source": "The Eastleigh Voice"
+          "title": "How new school calendar will look like in 2027",
+          "url": "https://www.the-star.co.ke/news/2026-11-05-how-new-school-calendar-will-look-like-in-2027",
+          "source": "The Star, Kenya"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "napoli",
+      "title": "exam",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Manipur board practical exam schedule 2027 released for Classes 11 and 12; check dates here",
+          "url": "https://timesofindia.indiatimes.com/education/news/manipur-board-practical-exam-schedule-2027-released-for-classes-11-and-12-check-dates-here/articleshow/135569547.cms",
+          "source": "The Times of India"
+        },
+        {
+          "title": "Manipur HSLC Time Table 2027 Out Soon at bsem.nic.in, Check Exam Schedule",
+          "url": "https://www.jagranjosh.com/news/manipur-hslc-time-table-2027-out-soon-at-bsemnicin-check-exam-schedule-188727",
+          "source": "Jagran Josh"
+        },
+        {
+          "title": "Manipur board practical exam dates 2027 out; Class 11, 12 papers from January",
+          "url": "https://news.careers360.com/manipur-board-practical-exam-2027-date-out-class-11-12-cohsemanipur-nic-in-timetable-schedule",
+          "source": "Careers360"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ramayana movie",
       "traffic": "100+",
       "news": [
         {
-          "title": "Porto-Napoli 4-1: gol e highlights",
-          "url": "https://video.gazzetta.it/calcio/champions-league/video-porto-napoli-4-1-gol-e-highlights/a198877f-063d-409d-b893-bed2f359fxlk",
-          "source": "La Gazzetta dello Sport"
+          "title": "\"RAMAYANA: RISE OF A LEGEND\" - Review",
+          "url": "https://nextbestpicture.com/ramayana-rise-of-a-legend/",
+          "source": "Next Best Picture"
         },
         {
-          "title": "Champions: Farioli, 'raccogliamo i frutti di quanto seminato'",
-          "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/11/04/champions-farioli-raccogliamo-i-frutti-di-quanto-seminato_7952b4cf-da3d-4ff7-b87e-145bf3f582c8.html",
-          "source": "ANSA"
+          "title": "Atlee applauds Ranbir Kapoor, Yash and Sai Pallavi starrer ‘Ramayana’; says, ‘Film I want to watch with m",
+          "url": "https://timesofindia.indiatimes.com/entertainment/tamil/movies/news/atlee-applauds-ranbir-kapoor-yash-and-sai-pallavi-starrer-ramayana-says-film-i-want-to-watch-with-my-son-and-daughter-i-cant-wait-for-part-2/articleshow/135567198.cms",
+          "source": "The Times of India"
         },
         {
-          "title": "De Bruyne spento, Gilmour soffre, Vergara ci prova: le pagelle del Napoli dopo il poker del Porto",
-          "url": "https://www.corrieredellosport.it/foto/calcio/champions-league/2026/11/04-152373498/de_bruyne_spento_gilmour_soffre_vergara_ci_prova_le_pagelle_del_napoli_dopo_il_poker_del_porto",
-          "source": "Corriere dello Sport"
+          "title": "Karan Johar shares his review of Ramayana, says Ranbir Kapoor is 'meditative' as Lord Rama | Bollywood",
+          "url": "https://www.hindustantimes.com/entertainment/bollywood/karan-johar-feels-inspired-and-proud-after-watching-ramayana-says-ranbir-kapoor-is-meditative-as-lord-rama-yash-sai-pallavi-ravie-dubey-101793861107625.html",
+          "source": "Hindustan Times"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nssf",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "MPs probe NSSF’s Shs180b investment in Nsambya Marriott Hotel",
+          "url": "https://www.monitor.co.ug/uganda/news/national/mps-probe-nssf-s-shs180b-investment-in-nsambya-marriott-hotel-5659000",
+          "source": "Daily Monitor"
+        },
+        {
+          "title": "MPs Question NSSF’s Shs185bn Investment in Marriott Hotel",
+          "url": "https://ugandaradionetwork.net/story/-mps-question-nssfs-shs185bn-investment-in-marriott-hotel",
+          "source": "Uganda Radionetwork"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "m-pesa",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Safaricom half-year profit up 72pc to Sh50 billion",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/safaricom-half-year-profit-5659178",
+          "source": "Business Daily"
+        },
+        {
+          "title": "Safaricom HY2027: Analysts Forecast 27% Profit Growth",
+          "url": "https://kenyanwallstreet.com/safaricom-hy-2027-what-financial-analysts-are-forecasting",
+          "source": "The Kenyan Wallstreet"
+        },
+        {
+          "title": "Kenya's Safaricom posts higher first-half profit as Ethiopia losses halve",
+          "url": "https://www.reuters.com/world/africa/kenyas-safaricom-first-half-group-ebit-911-bln-shillings-2026-11-05/",
+          "source": "Reuters"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "gta 6",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Ro CEO Shares the Making of Its New AI Agent",
+          "url": "https://www.businessinsider.com/ro-ceo-shares-making-of-new-ai-agent-2026-10",
+          "source": "Business Insider"
+        },
+        {
+          "title": "GTA 6 LIVE: Take-Two CEO stunned at 'not having enough hits' comment",
+          "url": "https://www.indy100.com/gaming/gta-6-preorder-preload-release-time-2678295553",
+          "source": "Indy100"
+        },
+        {
+          "title": "Take-Two Addresses AI In GTA 6’s Development Again",
+          "url": "https://insider-gaming.com/take-two-addresses-ai-in-gta-6/",
+          "source": "Insider Gaming"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "kings vs lakers",
-      "why": "unsafe: 'Odds'"
+      "title": "michael jackson",
+      "why": "unsafe: 'war'"
+    },
+    {
+      "title": "bayern vs ajax tickets",
+      "why": "banned: violence"
     }
   ],
   "errors": {}

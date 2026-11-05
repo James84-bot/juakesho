@@ -1117,13 +1117,85 @@
       "story_id": "18423657856155798",
       "fb_story_id": "1555699429700198",
       "yt_id": "Fvh32lkJ-sY"
+    },
+    {
+      "id": "2026-w45-hot-1105m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "Illicit cigarettes cost Kenya *Sh47 billion* a year in lost tax revenue, a study finds.",
+      "fact": "The illegal trade includes smuggled and fake cigarettes that skip Kenya's tax stamps.",
+      "message": "Illicit cigarette trade costs Kenya Sh47bn a year in tax money we never collect.",
+      "photo_query": "cigarette tax stamp Kenya",
+      "source": "Capital FM News, 2026-11-05",
+      "action": "Check for the KRA excise stamp before buying cigarettes; report sellers without one.",
+      "who": "Kenya Revenue Authority",
+      "where": "National",
+      "when": "2026 study",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Lost tax money means less funding for schools, hospitals and roads.",
+      "beats": [
+        "Illicit cigarettes cost Kenya *Sh47 billion* in lost tax revenue.",
+        "The trade runs on smuggled and counterfeit packs with no tax stamps.",
+        "That money was meant for schools, hospitals and roads.",
+        "Kenyans demand: KRA tightens checks on cigarette tax stamps nationwide."
+      ],
+      "caption": "Capital FM News reports: Every fake cigarette pack sold is tax we never see. Sh47bn gone in a year, a new study finds. Check for the KRA stamp before you buy.\n\nHave you seen untaxed cigarettes sold near you?\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-05T17:28:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "A KRA PIN is free by law, but corruption forces Kenyans to pay Sh6,000 in bribes."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Illicit cigarette trade costs Kenya Sh47bn in lost tax revenue, study finds",
+          "link": "https://capitalfm.africa/illicit-cigarette-trade-costs-kenya-sh47bn-in-lost-tax-revenue-study-finds/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-05"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 3,
+        "action": 7,
+        "fair": 7,
+        "impact": 8,
+        "avg": 7.2,
+        "note": "Base this post on a current high-demand news topic like the World Bank railway corruption report instead of an evergreen study."
+      },
+      "drafted_at": "2026-11-05T14:55:13.663188+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1105m-photo.jpg",
+      "photo_credit": "Photo: Capital FM / Sidney Wafula",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/illicit-cigarette-trade-costs-kenya-sh47bn-in-lost-tax-revenue-study-finds/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 773
     }
   ],
   "scripts": {
-    "radio": "Good morning and welcome back to Kenya on Record. Today, we need to talk about the price of simply existing as a citizen in this economy.\n\nEvery single Kenyan entering the job market or trying to set up a small enterprise knows that a KRA PIN is mandatory. Without it, you cannot open a business bank account, bid for tenders, or secure formal employment.\n\nNow, here is what the law says: obtaining a KRA PIN is entirely free. The law does not recognize a processing fee, an inspection charge, or ‘tea’ for an officer behind the counter. Yet, our citizen reports this week reveal a painful reality. Ordinary Kenyans across our towns are coughing up as much as six thousand shillings in bribes to rogue intermediaries and compromised officials just to have their PIN generated or unblocked.\n\nSix thousand shillings is food for a household. It is inventory for a mama mboga. When public servants turn a free administrative document into a toll station, they are suffocating small businesses before they even start. We must stop normalizing this extortion. If a file is deliberately delayed, demand the supervisor. File the official complaint. Do not pay for what is legally yours.\n\nKwa ufupi: Kupata KRA PIN ni haki yako ya kisheria na ni huduma ya bure kabisa. Usikubali kulipa hongo ya shilingi elfu sita kwa dalali au afisa yeyote ili upate PIN. Hiyo ni wizi. Kataa ufisadi na ulinde jasho lako.",
-    "voice_note": "Habari zenu. Quick check-in for anyone trying to sort out their paperwork this week. We are seeing a worrying trend where young people and small traders are being forced to pay up to six thousand shillings in bribes just to get a KRA PIN issued. Let us be completely clear: by law, a KRA PIN is free. The application sits on iTax and eCitizen at zero cost. Nobody at a cyber, no broker on the street, and no tax officer has the legal right to charge you a facilitation fee. When you pay that six thousand shillings, you are rewarding corruption that locks out the next Kenyan who cannot afford the bribe. If an officer deliberately stalls your application to force payment, escalate it to the KRA integrity desk or report directly to EACC. Forward this to anyone applying for documents today.",
-    "sms": "Usiibiwe: A KRA PIN is free by law on iTax. Never pay Sh6,000 or any bribe to brokers or officers to get it. Demand your service without paying a single cent.",
-    "reels": "By law, getting a KRA PIN costs exactly zero shillings. It is a free public service available on iTax and eCitizen. Yet today, ordinary Kenyans are parting with up to six thousand shillings in bribes just to have their paperwork processed by rogue gatekeepers. When basic legal identity becomes an extortion scheme, the system isn’t broken—it’s compromised. Stop paying the brokers. Know your rights, and hold the line."
+    "radio": "Good morning, and welcome back to Kenya on Record, your Saturday check-in on where our money goes.\n\nThis week we're talking about cigarettes. Not the health side of it — we all know that story — but the money side, because it's bigger than most of us realise.\n\nIndustry and government figures show Kenya loses about Sh47 billion every single year to the illicit cigarette trade. That's cigarettes smuggled in, counterfeited, or sold without the taxes that legal manufacturers and importers are required to pay. Sh47 billion is not pocket change. That's money that should be going into roads, hospitals, teachers' salaries, the things we keep asking government to fund. Instead, it's lining the pockets of smuggling networks.\n\nHere's why it matters to the ordinary mwananchi: when illegal cigarettes flood the market cheaper because they dodge tax, legitimate businesses struggle to compete, some close down, jobs are lost. And the taxman has to look elsewhere to plug the gap — which often means squeezing the rest of us harder.\n\nThis isn't about pointing fingers at smokers. It's about asking: who is enabling this trade at our borders, our markets, our ports? Who is looking away?\n\nAt Kenya on Record, we'll keep asking these questions, because accountability starts with knowing where the billions are disappearing to.\n\nKwa lugha ya Kiswahili: Wiki hii tunazungumzia biashara haramu ya sigara, inayogharimu Kenya zaidi ya shilingi bilioni 47 kila mwaka kwa kodi isiyolipwa. Pesa hii ingeweza kujenga barabara, hospitali na kulipa walimu. Tuulize: ni nani anayeruhusu hili liendelee?\n\nTuonane wiki ijayo, Kenya on Record.",
+    "voice_note": "Niaje, hii ni Kenya on Record na habari ya wiki hii.\n\nUmewahi fikiria sigara za magendo zinaigharimu nchi pesa ngapi? Sh47 billion. Kila mwaka. Hiyo ni kodi ambayo haijakusanywa kwa sababu ya biashara haramu ya sigara — za kusmuggle, za kughushi, zinazouzwa bila kulipa ushuru.\n\nFikiria hiyo pesa ingeenda wapi — barabara, madawa hospitalini, mishahara ya walimu. Badala yake, inaenda kwa mifuko ya watu wanaoendesha magendo.\n\nNa hii inaumiza pia wafanyabiashara wanaofanya mambo sawasawa — wanashindana na bidhaa za bei chee kwa sababu hazijalipiwa kodi. Wengine wanafunga maduka.\n\nSwali ni: nani anaruhusu hii ipenye mipakani na sokoni? Nani anafumbia macho?\n\nKenya on Record itaendelea kufuatilia hii story. Tuko pamoja, tunauliza maswali, tunataka uwazi. Share hii audio kwa jamaa yako — wacha watu wajue hela yetu inaenda wapi.\n\nTuonane wiki ijayo.",
+    "sms": "USIIBIWE: Magendo ya sigara yanaiba Kenya Sh47bn ya kodi kila mwaka. Pesa hiyo ingejenga barabara na hospitali. Ripoti biashara haramu unayoiona karibu nawe.",
+    "reels": "[Upbeat but serious tone]\n\nSh47 billion.\n\nThat's how much Kenya loses every year to illicit cigarette trade — smuggled, counterfeit, untaxed.\n\nThat money could build roads. Fund hospitals. Pay teachers.\n\nInstead, it disappears into smuggling networks — while honest businesses struggle to compete and close down.\n\nSo who's letting it through our borders? Our markets?\n\nKenya on Record is asking the question.\n\nFollow for more. Share if you want answers."
   },
   "spend_usd": 0.0
 }
