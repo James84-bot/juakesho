@@ -1,18 +1,6 @@
 {
- "fetched": "2026-11-06T06:06:52.107647+00:00",
+ "fetched": "2026-11-06T07:01:32.751957+00:00",
  "x": [
-  {
-   "name": "Economy Resilient",
-   "tweets": ""
-  },
-  {
-   "name": "Ruto Mchapa Mboka",
-   "tweets": ""
-  },
-  {
-   "name": "#MikeAndKingangi",
-   "tweets": ""
-  },
   {
    "name": "#HonCeciliaNgititishu",
    "tweets": ""
@@ -26,27 +14,15 @@
    "tweets": ""
   },
   {
-   "name": "#SkyNaniStotheNfanconSG",
+   "name": "Economy Resilient",
    "tweets": ""
   },
   {
-   "name": "Portugal",
+   "name": "Ruto Mchapa Mboka",
    "tweets": ""
   },
   {
-   "name": "US$2.74",
-   "tweets": ""
-  },
-  {
-   "name": "NoBlueprint NoLeadership",
-   "tweets": ""
-  },
-  {
-   "name": "#EmptyOpposition",
-   "tweets": ""
-  },
-  {
-   "name": "#foreignagentsexposed",
+   "name": "#BillsOnTheApp",
    "tweets": ""
   },
   {
@@ -55,6 +31,42 @@
   },
   {
    "name": "Common Cents",
+   "tweets": ""
+  },
+  {
+   "name": "#MikeAndKingangi",
+   "tweets": ""
+  },
+  {
+   "name": "New KCB App",
+   "tweets": ""
+  },
+  {
+   "name": "#EmptyOpposition",
+   "tweets": ""
+  },
+  {
+   "name": "NoBlueprint NoLeadership",
+   "tweets": ""
+  },
+  {
+   "name": "Portugal",
+   "tweets": ""
+  },
+  {
+   "name": "#SkyNaniStotheNfanconSG",
+   "tweets": ""
+  },
+  {
+   "name": "Women Empowerment",
+   "tweets": ""
+  },
+  {
+   "name": "Bangladesh",
+   "tweets": ""
+  },
+  {
+   "name": "US$2.74",
    "tweets": ""
   },
   {
@@ -67,6 +79,10 @@
   },
   {
    "name": "kirinyaga rising",
+   "tweets": ""
+  },
+  {
+   "name": "Dhaka",
    "tweets": ""
   },
   {
@@ -90,11 +106,7 @@
    "tweets": ""
   },
   {
-   "name": "Cristiano Ronaldo",
-   "tweets": ""
-  },
-  {
-   "name": "ayre think tank",
+   "name": "Ayre Think Tank",
    "tweets": ""
   },
   {
@@ -102,30 +114,18 @@
    "tweets": ""
   },
   {
+   "name": "Cristiano Ronaldo",
+   "tweets": ""
+  },
+  {
    "name": "lazy opposition",
-   "tweets": ""
-  },
-  {
-   "name": "KSh 4.17",
-   "tweets": ""
-  },
-  {
-   "name": "oppo reno16 series",
-   "tweets": ""
-  },
-  {
-   "name": "abdirahman ali mohamed",
-   "tweets": ""
-  },
-  {
-   "name": "perfect vision",
    "tweets": ""
   }
  ],
  "videos": [],
  "errors": {
   "Citizen TV": "HTTP Error 404: Not Found",
-  "NTV Kenya": "HTTP Error 404: Not Found",
+  "NTV Kenya": "HTTP Error 500: Internal Server Error",
   "KTN News": "HTTP Error 404: Not Found"
  },
  "catalog": []
