@@ -1235,7 +1235,7 @@
           "published": "2026-11-06"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 6.3/10. Match demand to current top stories (such as the World Bank corruption report or Moyale border security) rather than older news."
@@ -1267,7 +1267,8 @@
       "photo_outlet": "",
       "photo_source": "https://commons.wikimedia.org/wiki/File:2022_Kenyan_gubernatorial_elections_by_County.png",
       "reel": true,
-      "tg_msg": 781
+      "tg_msg": 781,
+      "decided_at": "2026-11-06T10:13:48.631501+03:00"
     }
   ],
   "scripts": {
