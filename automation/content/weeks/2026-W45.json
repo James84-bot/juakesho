@@ -234,7 +234,7 @@
         "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPZXFiQTY0aW5kTklQTXpPSjU4ZWFXaDR2dndfMldhOUFDS0dQTW9sYmFqaUxDaHE1VXhOcEItbVJlM2NBNlhWYmxDMnFCLW85S1diTzIyd1Zsak01ZlJ3cnJmeHg3S1VlMERTdW9VYnE0ZDMxVzFKQWNEZlBZcGRjbmZQeXNPd2toTTJYT2dNVC1ab2Z6aGJZ?oc=5",
         "published": "2026-10-30"
       },
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 6.5/10. Evergreen myth-busting scores lower on demand since it is not a top trending news item this week."
@@ -266,7 +266,13 @@
       "reel": true,
       "tg_msg": 699,
       "decided_at": "2026-11-02T16:35:00.122171+03:00",
-      "fresh_checked": "2026-11-05T12:35:27.672594+03:00"
+      "fresh_checked": "2026-11-05T12:35:27.672594+03:00",
+      "published_at": "2026-11-06T17:20:11.083421+03:00",
+      "ig_id": "18225916333340447",
+      "fb_id": "1390526316485409",
+      "story_id": "17933553324165412",
+      "fb_story_id": "29421299657463388",
+      "yt_id": "tnm8Wn3Y_oE"
     },
     {
       "id": "2026-w45-d6-kenya",
