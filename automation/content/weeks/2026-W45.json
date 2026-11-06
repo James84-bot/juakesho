@@ -1275,13 +1275,91 @@
       "story_id": "17919015915471352",
       "fb_story_id": "1680571310169837",
       "yt_id": "uUxgyI-jBFY"
+    },
+    {
+      "id": "2026-w45-hot-1106m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Shakahola verdict",
+      "line": "Paul Mackenzie gets *200 years* in prison after courts link him to the deaths of 191 people.",
+      "fact": "Capital FM reports Paul Mackenzie was sentenced to 200 years in prison over the Shakahola deaths.",
+      "source": "Capital FM News, 2026-11-06",
+      "message": "Paul Mackenzie has received a 200-year prison sentence for the Shakahola deaths.",
+      "action": "Read the court ruling details on capitalfm.africa.",
+      "photo_query": "courtroom Kenya",
+      "who": "High Court of Kenya",
+      "where": "Kilifi",
+      "when": "6 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Families affected by the Shakahola tragedy get a landmark court ruling after years of waiting.",
+      "beats": [
+        "Paul Mackenzie gets *200 years* in prison over the Shakahola deaths.",
+        "The court ruling closes a dark chapter for *families* seeking justice.",
+        "This verdict marks a major milestone in punishing cult *crimes*.",
+        "Kenyans demand: the State fully *protects* citizens from dangerous sects.",
+        "Share this with someone following the *Shakahola* case."
+      ],
+      "caption": "Capital FM News reports: Paul Mackenzie sentenced to 200 years in prison over Shakahola deaths. Justice takes its long course.\n\nDid the court sentence match the scale of the tragedy? Tell us below.\n\n#Shakahola #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-06T18:50:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "More than 557,000 Kenyans are yet to collect their printed national identity cards from local offices."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Paul Mackenzie sentenced to 200 years in prison over Shakahola deaths",
+          "link": "https://capitalfm.africa/paul-mackenzie-sentenced-to-200-years-in-prison-over-shakahola-deaths/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-06"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "visual QA: low contrast 2.0:1 (needs 3:1) on 'Paul Mackenzie gets'"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 10,
+        "action": 7,
+        "fair": 9,
+        "impact": 8,
+        "avg": 8.3,
+        "note": "Replace the generic call-to-action link with a concrete demand to the Registrar of Societies to vet religious groups strictly."
+      },
+      "drafted_at": "2026-11-06T16:02:00.430802+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1106m-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/court-to-sentence-paul-mackenzie-28-others-found-guilty-in-shakahola-killings/",
+      "tv_clip": {
+        "channel": "NTV Kenya",
+        "title": "BREAKING: Paul Mackenzie sentenced to 200 years in prison for murdering 191 people in Shakahola",
+        "url": "https://www.youtube.com/watch?v=mzrXZxwdxm8"
+      },
+      "ink": {
+        "2": "#FFFFFF"
+      }
     }
   ],
   "scripts": {
-    "radio": "Hamjambo. This is Kenya on Record.\n\nFor months, the national conversation has revolved around delays in processing national identity cards, court injunctions, and the transition to the Maisha Namba ecosystem. Many of us have felt the genuine frustration of waiting indefinitely without clear updates from the government.\n\nYet today, records reveal a surprising bottleneck on our end of the counter: over 557,000 printed national IDs are currently lying uncollected in civil registration offices, Huduma Centres, and assistant chiefs’ offices across the country.\n\nThink about what that number actually represents. More than half a million Kenyans are navigating daily life without primary identification—struggling to register SIM cards, open bank accounts, access government bursaries, or take up formal employment—even though their physical documentation is already sitting in a drawer in their home sub-county.\n\nAccountability works both ways. While we must continuously demand that the National Registration Bureau eliminates backlogs and respects data privacy, we also have a personal duty to close the loop. If you applied for a first-time ID or a duplicate earlier this year and assumed it was delayed, do not leave it to chance. Visit the centre where you registered and ask. Remember, collection is entirely free of charge.\n\nKwa ufupi: Zaidi ya vitambulisho laki tano na hamsini na saba elfu vimekamilika na vinasubiri wenyeji katika vituo vya Huduma na ofisi za machifu kote nchini. Ikiwa ulituma maombi ya kitambulisho, tembelea kituo ulichojisajili ukachukue stakabadhi yako bila malipo yoyote.",
-    "voice_note": "Habari zenu. Here is an important accountability check from Kenya on Record that you should share with your estate or family group.\n\nRight now, over 557,000 printed national identity cards are lying uncollected across Huduma Centres and assistant chiefs' offices nationwide. We spent most of this year complaining about backlogs, machine breakdowns, and court cases. But right now, over half a million cards are actually ready and gathering dust.\n\nIf you, your younger sibling, or someone in your house applied for an ID or a replacement months ago and gave up waiting, the card might already be sitting at your local sub-county office. Without an ID, you are locked out of banking, business registration, and job opportunities. Walk to the centre where you enrolled and ask. Collection is completely free—do not pay any broker or intermediary to get your card.",
-    "sms": "Usiibiwe: Over 557k printed IDs are lying uncollected at Huduma Centres & chiefs' offices. ID collection is free. Do not pay anyone to trace or deliver it.",
-    "reels": "Over 557,000 national ID cards are printed, sorted, and lying completely uncollected across Kenya right now. We spent months tracking backlogs and system delays, but today, half a million citizens are locked out of banking, travel, and formal jobs simply because they haven't picked up their ready documents. If you applied for an ID this year, stop waiting for a notification. Walk into your local registration office or Huduma Centre and collect your card today."
+    "radio": "Sasa, wananchi. Welcome to Kenya on Record. Today we are talking about Turkana, and it is a painful story. Hali ya maji kule Turkana bado ni mbaya sana, sio kwa sababu ya ukame peke yake, bali ni kwa sababu ya cartels. Maji imekuwa biashara ya watu wachache wanaouzia wanyonge kwa bei ya juu.\n\nImagine, a basic human right like water is being controlled by brokers while county boreholes are left dry or broken down on purpose. Wananchi wanahangaika na madumu wakitafuta matone ya uhai, wakati pesa za miradi ya maji zinaenda kwa mifuko ya wajanja wachache. Hii ni aibu.\n\nCounty leadership, we are putting you on notice. Kazi yenu si kulinda mabwenyenye wa maji. Kazi yenu ni kuhakikisha kila boma lina maji safi na ya kutosha. Sio haki watu wetu wafe kiu wakati bajeti ipo.\n\nTuamke. Tuulize maswali. Usiogope kusema ukweli.\n\n[Swahili Summary]\nNdugu zangu, Turkana maji imekuwa mali ya cartels badala ya wananchi. Visima vya kaunti vimeharibiwa makusudi ili wafanyabiashara wauzie watu maji ghali. Viongozi lazima wachukue hatua kuhakikisha maji ni ya kila Mkenya bila unyonyaji.",
+    "voice_note": "Wadau, mnasikia aje? Huku Turkana hali ni mbaya sana. Wananchi wanalia njaa na kiu, sio kwa sababu hakuna maji, lakini kwa sababu ya cartels. Watu wachache wamechukua udhibiti wa mabomba na visima, wanauzia wanyonge maji kwa bei ya juu sana huku viongozi wakinyamaza. Hii haiwezekani. Rasilimali ya umma haiwezi kuwa biashara ya mtu binafsi. Lazima tuwaseme hawa cartels. Maji ni haki, sio fursa ya biashara chafu.",
+    "sms": "Wacha kuibiwa na cartels za maji Turkana! Visima vya umma si mali ya mtu binafsi. Dai haki yako ya maji safi na bure kutoka kaunti. #Usiibiwe",
+    "reels": "Hii haikubaliki! Wakati watu wa Turkana wanahangaika na kiu, cartels wamegeuza mabomba ya maji kuwa biashara yao ya kibinafsi. Visima vimekauka sio kwa sababu ya ukame, lakini kwa sababu ya rushwa na unyakuzi wa maji ya umma. Viongozi wako wapi wakati wananchi wanakufa kiu? Maji si mali ya mtu mmoja. Simama kidete, kataa kuibiwa, na udai haki yako leo!"
   },
   "spend_usd": 0.0
 }
