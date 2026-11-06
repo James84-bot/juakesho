@@ -1,6 +1,29 @@
 {
-  "fetched": "2026-11-06T13:41:56.743159+00:00",
+  "fetched": "2026-11-06T13:56:56.761364+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "forex factory",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Trump and Qatar’s emir discuss efforts for regional de-escalation in call",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": "Qatar’s emir, Trump discuss mediation efforts to end regional crisis",
+          "url": "https://www.arabnews.com/middle-east/qatars-emir-trump-discuss-mediation-efforts-to-end-regional-crisis-3010128",
+          "source": "Arab News"
+        },
+        {
+          "title": "HH the Amir Receive Phone Call from US President",
+          "url": "https://www.fananews.com/language/en/hh-the-amir-receive-phone-call-from-us-president/",
+          "source": "Fana News -"
+        }
+      ],
+      "civic": true
+    },
     {
       "geo": "KE",
       "title": "kenya revenue authority",
@@ -26,6 +49,51 @@
     },
     {
       "geo": "KE",
+      "title": "speed limiter",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Highways under watch as NTSA rolls out speed cameras",
+          "url": "https://www.the-star.co.ke/news/2026-11-04-highways-under-watch-as-ntsa-rolls-out-cameras",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "NTSA Issues New 7-Day Mandatory Compliance Notice Targeting Motorists",
+          "url": "https://www.kenyans.co.ke/news/129190-ntsa-gives-psv-and-commercial-vehicle-owners-7-days-install-speed-limiters",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "NTSA Warns Parents Against Underage Driving",
+          "url": "https://parentsafrica.com/ntsa-warns-parents-against-underage-driving/",
+          "source": "Parents Africa"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "paul mackenzie",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Shakahola deaths: Kenya court doomsday cult leader Paul Mackenzie sentenced to 200 years in prison",
+          "url": "https://www.bbc.com/news/articles/cm5yne5984l0o",
+          "source": "BBC"
+        },
+        {
+          "title": "Kenyan cult leader sentenced to 200 years in prison over the deaths of 190 children",
+          "url": "https://www.cnn.com/2026/11/06/africa/kenyan-cult-leader-sentenced-intl",
+          "source": "CNN"
+        },
+        {
+          "title": "Kenyan cult leader sentenced to 200 years in prison for mass starvation murders of children",
+          "url": "https://www.reuters.com/world/africa/kenyan-court-sentences-cult-leader-200-years-prison-murder-190-children-2026-11-06/",
+          "source": "Reuters"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
       "title": "charlene ruto wedding",
       "traffic": "500+",
       "news": [
@@ -43,73 +111,6 @@
           "title": "Beautiful love story: Charlene Ruto and Isaya Yunge stun in 3 pre-wedding looks",
           "url": "https://www.tuko.co.ke/entertainment/celebrities/645839-charlene-ruto-photographer-unleashes-stunning-photos-isaya/",
           "source": "Tuko News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "speed limiter",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Norris says F1's speed cap is 'ruining racing'",
-          "url": "https://f1i.com/news/577138-norris-says-f1s-speed-cap-is-ruining-racing.html",
-          "source": "F1i.com"
-        },
-        {
-          "title": "Lewis Hamilton calls for FIA action after Max Verstappen exchange and unheard radio remark",
-          "url": "https://www.express.co.uk/sport/f1-autosport/2263353/lewis-hamilton-f1-leclerc-verstappen",
-          "source": "Daily Express"
-        },
-        {
-          "title": "Lewis Hamilton calls for FIA major changes as unaired radios involving Max Verstappen emerge after Mexican GP",
-          "url": "https://www.sportbible.com/formula-1/lewis-hamilton-fia-major-changes-mexico-city-gp-max-verstappen-radio-984439-20261103",
-          "source": "SPORTbible"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "paul mackenzie",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Shakahola deaths: Kenya court doomsday cult leader Paul Mackenzie sentenced to 200 years in prison",
-          "url": "https://www.bbc.com/news/articles/cm5yne5984l0o",
-          "source": "BBC"
-        },
-        {
-          "title": "Kenyan cult leader sentenced to 200 years in prison for mass starvation murders of children",
-          "url": "https://www.reuters.com/world/africa/kenyan-court-sentences-cult-leader-200-years-prison-murder-190-children-2026-11-06/",
-          "source": "Reuters"
-        },
-        {
-          "title": "Heavy security as Mackenzie appears in court for Shakahola sentencing",
-          "url": "https://www.the-star.co.ke/news/2026-11-06-tight-security-as-mackenzie-appears-for-sentencing",
-          "source": "The Star, Kenya"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "national transport and safety authority",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Highways under watch as NTSA rolls out speed cameras",
-          "url": "https://www.the-star.co.ke/news/2026-11-04-highways-under-watch-as-ntsa-rolls-out-cameras",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "NTSA Issues New 7-Day Mandatory Compliance Notice Targeting Motorists",
-          "url": "https://www.kenyans.co.ke/news/129190-ntsa-gives-psv-and-commercial-vehicle-owners-7-days-install-speed-limiters",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "NTSA Warns Parents Against Underage Driving",
-          "url": "https://parentsafrica.com/ntsa-warns-parents-against-underage-driving/",
-          "source": "Parents Africa"
         }
       ]
     },
@@ -181,6 +182,28 @@
     },
     {
       "geo": "KE",
+      "title": "unai emery",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Unai Emery: Aston Villa boss close to new contract at club",
+          "url": "https://www.bbc.com/sport/football/articles/cw99zde82nmno",
+          "source": "BBC"
+        },
+        {
+          "title": "Romano: Man Utd’s ‘ideal’ Carrick replacement is in ‘very advanced’ contract talks",
+          "url": "https://utdreport.co.uk/2026/11/05/fabrizio-romano-man-utd-unai-emery-aston-villa/",
+          "source": "utdreport"
+        },
+        {
+          "title": "Unai Emery in advanced talks over new Aston Villa deal in blow to Man Utd",
+          "url": "https://www.telegraph.co.uk/football/2026/11/04/emery-in-advanced-talks-over-new-villa-deal-in-blow-to-utd/",
+          "source": "The Telegraph"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "universities academic staff union",
       "traffic": "100+",
       "news": [
@@ -202,11 +225,6 @@
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "forex factory",
-      "why": "unsafe: 'war'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }

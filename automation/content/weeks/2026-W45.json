@@ -1316,7 +1316,7 @@
           "published": "2026-11-06"
         }
       ],
-      "status": "needs_human",
+      "status": "rejected",
       "guard": {
         "errors": [
           "visual QA: low contrast 2.0:1 (needs 3:1) on 'Paul Mackenzie gets'"
@@ -1352,7 +1352,83 @@
       },
       "ink": {
         "2": "#FFFFFF"
-      }
+      },
+      "replaced_by": "2026-w45-hot-1106m-r2"
+    },
+    {
+      "id": "2026-w45-hot-1106m-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Employers",
+      "line": "Employers must remit employee levies by the *9th* day of each month.",
+      "fact": "The Kenya Revenue Authority issued a strict compliance deadline for statutory deductions.",
+      "source": "Kenyans.co.ke, 2026-11-06",
+      "photo_query": "Kenyan shilling banknotes and tax documents",
+      "message": "KRA sets strict monthly deadlines for employers to remit worker deductions.",
+      "action": "Check your payslip to confirm your deductions reach the tax authority",
+      "beats": [
+        "Employers must remit employee levies by the *9th* day of each month.",
+        "The Kenya Revenue Authority issued a strict compliance deadline.",
+        "Tax deductions affect millions of workers across the country.",
+        "Kenyans demand: employers remit funds on time without fail."
+      ],
+      "caption": "Kenyans.co.ke reports: The tax clock ticks. Employers face strict deadlines to remit worker deductions every month. Check your payslip.\n\n#KRAOneTrillion #KenyaOnRecord",
+      "who": "Kenya Revenue Authority",
+      "where": "National",
+      "when": "06 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Workers risk losing benefits when employers fail to remit deductions.",
+      "bg": "usiku",
+      "publish_at": "2026-11-06T18:50:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "More than 557,000 Kenyans are yet to collect their printed national identity cards from local offices.",
+        "Paul Mackenzie has received a 200-year prison sentence for the Shakahola deaths."
+      ],
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "KRA Issues Directive to Employers Ahead of Monday Tax Deadline",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRjg5MnZEOE11WHg1alprVzdmV3VVcUFHa0FqYVlJUWJjcDcwMmc5OE1lZkctZ214UWdiNktETTFiMHZSQVdmOE9DTHlEZUE2VmdtZV93azY3MjVFWnByWDhlWVVSS2c5VEZzMVFlS2tnRC00UDhLN044R1pqaWVnUVl4Zk0yOGN6RUVRTnRKTDlabnNQQmdtVnhPVFVROWhqQ3kyTEhUYnJfT1U?oc=5",
+          "published": "2026-11-06"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.2/10. Tie this evergreen tax reminder to this week's actual KRA trillion-shilling milestone to match current demand."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 5,
+        "clarity": 8,
+        "fresh": 5,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 6,
+        "demand": 3,
+        "action": 5,
+        "fair": 8,
+        "impact": 7,
+        "avg": 6.2,
+        "note": "Tie this evergreen tax reminder to this week's actual KRA trillion-shilling milestone to match current demand."
+      },
+      "drafted_at": "2026-11-06T17:16:15.092436+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1106m-r2-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129187-kra-issues-9-point-checklist-employers-ahead-november-9-paye-deadline",
+      "reel": true,
+      "tg_msg": 790
     }
   ],
   "scripts": {
