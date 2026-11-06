@@ -1,25 +1,25 @@
 {
-  "fetched": "2026-11-06T12:20:11.694729+00:00",
+  "fetched": "2026-11-06T13:41:56.743159+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "kenya revenue authority",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "KRA tax collections rise 15.5pc on business rebound",
-          "url": "https://www.businessdailyafrica.com/bd/economy/kra-tax-collections-rise-15-5pc-on-business-rebound-5659952",
-          "source": "Business Daily"
+          "title": "KRA Issues Directive to Employers Ahead of Monday Tax Deadline",
+          "url": "https://www.kenyans.co.ke/news/129187-kra-issues-9-point-checklist-employers-ahead-november-9-paye-deadline",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "KRA hits Sh1 trillion revenue mark a month earlier than previous years",
-          "url": "https://www.the-star.co.ke/news/2026-11-05-kra-hits-sh1-trillion-revenue-mark-a-month-early",
-          "source": "The Star, Kenya"
+          "title": "\"Filed on time\": KRA lists 9 things employers should do ahead of PAYE deadline",
+          "url": "https://www.tuko.co.ke/business-economy/economy/645898-kra-lists-9-employers-paye-deadline/",
+          "source": "Tuko News"
         },
         {
-          "title": "KRA races to raise Sh282b a month to hit target by June next year",
-          "url": "https://www.standardmedia.co.ke/business/article/2001561648/kra-races-to-raise-sh282b-a-month-to-hit-target-by-june-next-year",
-          "source": "www.standardmedia.co.ke"
+          "title": "What employers must do before Monday’s KRA PAYE deadline",
+          "url": "https://www.pulse.co.ke/story/employers-warned-over-mondays-kra-paye-filing-deadline-2026110609000938483",
+          "source": "Pulse Kenya"
         }
       ],
       "civic": true
@@ -35,38 +35,61 @@
           "source": "The Star, Kenya"
         },
         {
+          "title": "PHOTOS: Inside Charlene Ruto's Glamorous Wedding in Tanzania",
+          "url": "https://www.kenyans.co.ke/news/129196-photos-inside-charlene-rutos-glamorous-wedding-tanzania",
+          "source": "Kenyans.co.ke"
+        },
+        {
           "title": "Beautiful love story: Charlene Ruto and Isaya Yunge stun in 3 pre-wedding looks",
           "url": "https://www.tuko.co.ke/entertainment/celebrities/645839-charlene-ruto-photographer-unleashes-stunning-photos-isaya/",
           "source": "Tuko News"
-        },
-        {
-          "title": "Oscar Sudi Shares Light-Hearted Moment Walking With Ruto at Luxury Tanzania Hotel",
-          "url": "https://www.ghafla.co.ke/oscar-sudi-shares-light-hearted-moment-walking-with-ruto-at-luxury-tanzania-hotel/",
-          "source": "Ghafla!"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "school calendar 2027 kenya",
-      "traffic": "500+",
+      "title": "speed limiter",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Education ministry restructures 2027 school calendar, extends mid-term breaks",
-          "url": "https://nation.africa/kenya/news/education/education-ministry-restructures-2027-school-calendar-extends-mid-term-breaks-5658922",
-          "source": "Daily Nation"
+          "title": "Norris says F1's speed cap is 'ruining racing'",
+          "url": "https://f1i.com/news/577138-norris-says-f1s-speed-cap-is-ruining-racing.html",
+          "source": "F1i.com"
         },
         {
-          "title": "Yes, we keep kids in school to avoid jail, but now they're coming home",
-          "url": "https://www.standardmedia.co.ke/article/2001561635/yes-we-keep-kids-in-school-to-avoid-jail-but-now-they-re-coming-home",
-          "source": "www.standardmedia.co.ke"
+          "title": "Lewis Hamilton calls for FIA action after Max Verstappen exchange and unheard radio remark",
+          "url": "https://www.express.co.uk/sport/f1-autosport/2263353/lewis-hamilton-f1-leclerc-verstappen",
+          "source": "Daily Express"
         },
         {
-          "title": "School Reopening Dates & 2027 Academic Calendar Revealed",
-          "url": "https://www.kenyans.co.ke/news/129119-schools-open-january-4-education-ministry-releases-2027-school-calendar",
-          "source": "Kenyans.co.ke"
+          "title": "Lewis Hamilton calls for FIA major changes as unaired radios involving Max Verstappen emerge after Mexican GP",
+          "url": "https://www.sportbible.com/formula-1/lewis-hamilton-fia-major-changes-mexico-city-gp-max-verstappen-radio-984439-20261103",
+          "source": "SPORTbible"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "paul mackenzie",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Shakahola deaths: Kenya court doomsday cult leader Paul Mackenzie sentenced to 200 years in prison",
+          "url": "https://www.bbc.com/news/articles/cm5yne5984l0o",
+          "source": "BBC"
+        },
+        {
+          "title": "Kenyan cult leader sentenced to 200 years in prison for mass starvation murders of children",
+          "url": "https://www.reuters.com/world/africa/kenyan-court-sentences-cult-leader-200-years-prison-murder-190-children-2026-11-06/",
+          "source": "Reuters"
+        },
+        {
+          "title": "Heavy security as Mackenzie appears in court for Shakahola sentencing",
+          "url": "https://www.the-star.co.ke/news/2026-11-06-tight-security-as-mackenzie-appears-for-sentencing",
+          "source": "The Star, Kenya"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -87,6 +110,28 @@
           "title": "NTSA Warns Parents Against Underage Driving",
           "url": "https://parentsafrica.com/ntsa-warns-parents-against-underage-driving/",
           "source": "Parents Africa"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "william ruto",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Ruto awards ILU charter, challenges universities to produce job creators",
+          "url": "https://nation.africa/kenya/news/education/ruto-awards-ilu-charter-challenges-universities-to-produce-job-creators-5660354",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "State House in laughter as Ruto says Kivutha Kibwana sometimes calls him Kasongo",
+          "url": "https://www.the-star.co.ke/news/2026-11-05-ruto-jokes-about-being-called-kasongo",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Ruto Gives Fresh Updates on Ksh25,000 Monthly Pay for 50,000 Youths",
+          "url": "https://www.kenyans.co.ke/news/129155-150000-graduates-apply-50000-govt-internship-slots-24-hours-ruto-says",
+          "source": "Kenyans.co.ke"
         }
       ]
     },
@@ -136,45 +181,23 @@
     },
     {
       "geo": "KE",
-      "title": "unai emery",
-      "traffic": "200+",
+      "title": "universities academic staff union",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Unai Emery: Aston Villa boss close to new contract at club",
-          "url": "https://www.bbc.com/sport/football/articles/cw99zde82nmno",
-          "source": "BBC"
+          "title": "Why public universities lecturers might go back to the streets",
+          "url": "https://nation.africa/kenya/news/education/why-public-universities-lecturers-might-go-back-to-the-streets-5658632",
+          "source": "Daily Nation"
         },
         {
-          "title": "Romano: Man Utd’s ‘ideal’ Carrick replacement is in ‘very advanced’ contract talks",
-          "url": "https://utdreport.co.uk/2026/11/05/fabrizio-romano-man-utd-unai-emery-aston-villa/",
-          "source": "utdreport"
+          "title": "UASU Issues New Demands Over Ksh20 Billion Deal After Nationwide Strike",
+          "url": "https://www.kenyans.co.ke/news/129131-uasu-warns-govt-over-ksh20-billion-lecturers-cba-deal",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Unai Emery in advanced talks over new Aston Villa deal in blow to Man Utd",
-          "url": "https://www.telegraph.co.uk/football/2026/11/04/emery-in-advanced-talks-over-new-villa-deal-in-blow-to-utd/",
-          "source": "The Telegraph"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "south korea",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "South Korea Just Unveiled Its Biggest, Most Powerful Submarine Ever",
-          "url": "https://nationalinterest.org/blog/buzz/south-korea-just-unveiled-biggest-most-powerful-submarine-ever-hk-110526",
-          "source": "The National Interest"
-        },
-        {
-          "title": "[Exclusive] Another Submarine's Engine Stopped on the Day the Seohee Was Launched",
-          "url": "https://www.asiae.co.kr/en/article/2026110409093285923",
-          "source": "아시아경제"
-        },
-        {
-          "title": "South Korea gives the green light to its nuclear submarine program starting in 2027",
-          "url": "https://www.democrata.es/en/international/south-korea-gives-the-green-light-to-its-nuclear-submarine-program-starting-in-2027/",
-          "source": "Demócrata"
+          "title": "Public University Lecturers Threaten Fresh Strike Over KSh100bn Pending Payments, Funding Dispute",
+          "url": "https://www.tuko.co.ke/education/645800-public-university-lecturers-threaten-fresh-strike-ksh100bn-pending-payments-funding-dispute/",
+          "source": "Tuko News"
         }
       ]
     }
@@ -183,10 +206,6 @@
     {
       "title": "forex factory",
       "why": "unsafe: 'war'"
-    },
-    {
-      "title": "everton vs coventry",
-      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}
