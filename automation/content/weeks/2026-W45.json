@@ -1196,13 +1196,84 @@
       "story_id": "18139289290639236",
       "fb_story_id": "3780720065417813",
       "yt_id": "a0z0owulJIg"
+    },
+    {
+      "id": "2026-w45-hot-1106",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Citizens",
+      "line": "Chiefs are tracing the owners of *557,930* uncollected national identity cards.",
+      "fact": "Over 557,930 printed identity cards remain uncollected at registration offices nationwide.",
+      "source": "Capital FM News, 2026-11-06",
+      "message": "More than 557,000 Kenyans are yet to collect their printed national identity cards from local offices.",
+      "photo_query": "national identity card Kenya",
+      "caption": "Capital FM News reports: Over 557,000 national ID cards are lying uncollected in local offices across Kenya. You cannot vote, register a SIM card, or open a bank account without one.\n\nHave you picked up your national ID card yet?\n\n#NationalID #KenyaOnRecord",
+      "beats": [
+        "Chiefs are tracing owners of *557,930* uncollected ID cards.",
+        "Thousands of printed cards sit idle in registration offices.",
+        "Without an ID, you cannot *vote* or open a bank account.",
+        "Kenyans demand: the state sends *free SMS* when cards arrive.",
+        "Collect your national ID at your local chief's office."
+      ],
+      "action": "Check your ID card status at your local chief's office or nearest Huduma Centre.",
+      "who": "National Registration Bureau",
+      "where": "National",
+      "when": "6 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Uncollected cards prevent 557,930 Kenyans from voting and accessing services.",
+      "bg": "usiku",
+      "publish_at": "2026-11-06T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "State turns to chiefs to trace owners of 557,930 uncollected IDs ahead of 2027 polls",
+          "link": "https://capitalfm.africa/state-turns-to-chiefs-to-trace-owners-of-557930-uncollected-ids-ahead-of-2027-polls/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-06"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.3/10. Match demand to current top stories (such as the World Bank corruption report or Moyale border security) rather than older news."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 8,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 6,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 7,
+        "avg": 6.3,
+        "note": "Match demand to current top stories (such as the World Bank corruption report or Moyale border security) rather than older news."
+      },
+      "drafted_at": "2026-11-06T09:17:48.998220+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1106-photo.jpg",
+      "photo_credit": "Photo: Aguahrz / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:2022_Kenyan_gubernatorial_elections_by_County.png",
+      "reel": true,
+      "tg_msg": 781
     }
   ],
   "scripts": {
-    "radio": "Good morning, and welcome back to Kenya on Record, your Saturday check-in on where our money goes.\n\nThis week we're talking about cigarettes. Not the health side of it — we all know that story — but the money side, because it's bigger than most of us realise.\n\nIndustry and government figures show Kenya loses about Sh47 billion every single year to the illicit cigarette trade. That's cigarettes smuggled in, counterfeited, or sold without the taxes that legal manufacturers and importers are required to pay. Sh47 billion is not pocket change. That's money that should be going into roads, hospitals, teachers' salaries, the things we keep asking government to fund. Instead, it's lining the pockets of smuggling networks.\n\nHere's why it matters to the ordinary mwananchi: when illegal cigarettes flood the market cheaper because they dodge tax, legitimate businesses struggle to compete, some close down, jobs are lost. And the taxman has to look elsewhere to plug the gap — which often means squeezing the rest of us harder.\n\nThis isn't about pointing fingers at smokers. It's about asking: who is enabling this trade at our borders, our markets, our ports? Who is looking away?\n\nAt Kenya on Record, we'll keep asking these questions, because accountability starts with knowing where the billions are disappearing to.\n\nKwa lugha ya Kiswahili: Wiki hii tunazungumzia biashara haramu ya sigara, inayogharimu Kenya zaidi ya shilingi bilioni 47 kila mwaka kwa kodi isiyolipwa. Pesa hii ingeweza kujenga barabara, hospitali na kulipa walimu. Tuulize: ni nani anayeruhusu hili liendelee?\n\nTuonane wiki ijayo, Kenya on Record.",
-    "voice_note": "Niaje, hii ni Kenya on Record na habari ya wiki hii.\n\nUmewahi fikiria sigara za magendo zinaigharimu nchi pesa ngapi? Sh47 billion. Kila mwaka. Hiyo ni kodi ambayo haijakusanywa kwa sababu ya biashara haramu ya sigara — za kusmuggle, za kughushi, zinazouzwa bila kulipa ushuru.\n\nFikiria hiyo pesa ingeenda wapi — barabara, madawa hospitalini, mishahara ya walimu. Badala yake, inaenda kwa mifuko ya watu wanaoendesha magendo.\n\nNa hii inaumiza pia wafanyabiashara wanaofanya mambo sawasawa — wanashindana na bidhaa za bei chee kwa sababu hazijalipiwa kodi. Wengine wanafunga maduka.\n\nSwali ni: nani anaruhusu hii ipenye mipakani na sokoni? Nani anafumbia macho?\n\nKenya on Record itaendelea kufuatilia hii story. Tuko pamoja, tunauliza maswali, tunataka uwazi. Share hii audio kwa jamaa yako — wacha watu wajue hela yetu inaenda wapi.\n\nTuonane wiki ijayo.",
-    "sms": "USIIBIWE: Magendo ya sigara yanaiba Kenya Sh47bn ya kodi kila mwaka. Pesa hiyo ingejenga barabara na hospitali. Ripoti biashara haramu unayoiona karibu nawe.",
-    "reels": "[Upbeat but serious tone]\n\nSh47 billion.\n\nThat's how much Kenya loses every year to illicit cigarette trade — smuggled, counterfeit, untaxed.\n\nThat money could build roads. Fund hospitals. Pay teachers.\n\nInstead, it disappears into smuggling networks — while honest businesses struggle to compete and close down.\n\nSo who's letting it through our borders? Our markets?\n\nKenya on Record is asking the question.\n\nFollow for more. Share if you want answers."
+    "radio": "Hamjambo. This is Kenya on Record.\n\nFor months, the national conversation has revolved around delays in processing national identity cards, court injunctions, and the transition to the Maisha Namba ecosystem. Many of us have felt the genuine frustration of waiting indefinitely without clear updates from the government.\n\nYet today, records reveal a surprising bottleneck on our end of the counter: over 557,000 printed national IDs are currently lying uncollected in civil registration offices, Huduma Centres, and assistant chiefs’ offices across the country.\n\nThink about what that number actually represents. More than half a million Kenyans are navigating daily life without primary identification—struggling to register SIM cards, open bank accounts, access government bursaries, or take up formal employment—even though their physical documentation is already sitting in a drawer in their home sub-county.\n\nAccountability works both ways. While we must continuously demand that the National Registration Bureau eliminates backlogs and respects data privacy, we also have a personal duty to close the loop. If you applied for a first-time ID or a duplicate earlier this year and assumed it was delayed, do not leave it to chance. Visit the centre where you registered and ask. Remember, collection is entirely free of charge.\n\nKwa ufupi: Zaidi ya vitambulisho laki tano na hamsini na saba elfu vimekamilika na vinasubiri wenyeji katika vituo vya Huduma na ofisi za machifu kote nchini. Ikiwa ulituma maombi ya kitambulisho, tembelea kituo ulichojisajili ukachukue stakabadhi yako bila malipo yoyote.",
+    "voice_note": "Habari zenu. Here is an important accountability check from Kenya on Record that you should share with your estate or family group.\n\nRight now, over 557,000 printed national identity cards are lying uncollected across Huduma Centres and assistant chiefs' offices nationwide. We spent most of this year complaining about backlogs, machine breakdowns, and court cases. But right now, over half a million cards are actually ready and gathering dust.\n\nIf you, your younger sibling, or someone in your house applied for an ID or a replacement months ago and gave up waiting, the card might already be sitting at your local sub-county office. Without an ID, you are locked out of banking, business registration, and job opportunities. Walk to the centre where you enrolled and ask. Collection is completely free—do not pay any broker or intermediary to get your card.",
+    "sms": "Usiibiwe: Over 557k printed IDs are lying uncollected at Huduma Centres & chiefs' offices. ID collection is free. Do not pay anyone to trace or deliver it.",
+    "reels": "Over 557,000 national ID cards are printed, sorted, and lying completely uncollected across Kenya right now. We spent months tracking backlogs and system delays, but today, half a million citizens are locked out of banking, travel, and formal jobs simply because they haven't picked up their ready documents. If you applied for an ID this year, stop waiting for a notification. Walk into your local registration office or Huduma Centre and collect your card today."
   },
   "spend_usd": 0.0
 }
