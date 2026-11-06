@@ -1401,7 +1401,7 @@
           "published": "2026-11-06"
         }
       ],
-      "status": "awaiting",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 6.2/10. Tie this evergreen tax reminder to this week's actual KRA trillion-shilling milestone to match current demand."
@@ -1434,7 +1434,14 @@
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/129187-kra-issues-9-point-checklist-employers-ahead-november-9-paye-deadline",
       "reel": true,
-      "tg_msg": 790
+      "tg_msg": 790,
+      "decided_at": "2026-11-06T19:43:35.582721+03:00",
+      "published_at": "2026-11-06T19:44:49.243565+03:00",
+      "ig_id": "18079481936740756",
+      "fb_id": "1649343359935810",
+      "story_id": "18119523122011021",
+      "fb_story_id": "4915731548641101",
+      "yt_id": "M4_fZ6VKL0E"
     }
   ],
   "scripts": {
