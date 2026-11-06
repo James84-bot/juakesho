@@ -1,230 +1,174 @@
 {
-  "fetched": "2026-11-06T13:56:56.761364+00:00",
+  "fetched": "2026-11-06T19:56:18.624897+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "forex factory",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Trump and Qatar’s emir discuss efforts for regional de-escalation in call",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": "Qatar’s emir, Trump discuss mediation efforts to end regional crisis",
-          "url": "https://www.arabnews.com/middle-east/qatars-emir-trump-discuss-mediation-efforts-to-end-regional-crisis-3010128",
-          "source": "Arab News"
-        },
-        {
-          "title": "HH the Amir Receive Phone Call from US President",
-          "url": "https://www.fananews.com/language/en/hh-the-amir-receive-phone-call-from-us-president/",
-          "source": "Fana News -"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "kenya revenue authority",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "KRA Issues Directive to Employers Ahead of Monday Tax Deadline",
-          "url": "https://www.kenyans.co.ke/news/129187-kra-issues-9-point-checklist-employers-ahead-november-9-paye-deadline",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "\"Filed on time\": KRA lists 9 things employers should do ahead of PAYE deadline",
-          "url": "https://www.tuko.co.ke/business-economy/economy/645898-kra-lists-9-employers-paye-deadline/",
-          "source": "Tuko News"
-        },
-        {
-          "title": "What employers must do before Monday’s KRA PAYE deadline",
-          "url": "https://www.pulse.co.ke/story/employers-warned-over-mondays-kra-paye-filing-deadline-2026110609000938483",
-          "source": "Pulse Kenya"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "speed limiter",
+      "title": "m-pesa",
       "traffic": "500+",
       "news": [
         {
-          "title": "Highways under watch as NTSA rolls out speed cameras",
-          "url": "https://www.the-star.co.ke/news/2026-11-04-highways-under-watch-as-ntsa-rolls-out-cameras",
+          "title": "Safaricom stake in Ethiopia unit falls to 54pc on new Sh25bn funding",
+          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/safaricom-stake-in-ethiopia-unit-falls-to-54pc-5661436",
+          "source": "Business Daily"
+        },
+        {
+          "title": "High M-Pesa transactions push Safaricom’s half-year profits to Sh58.2 billion",
+          "url": "https://www.the-star.co.ke/news/2026-11-06-m-pesa-transfers-push-safaricom-h1-profits-to-sh582bn",
           "source": "The Star, Kenya"
         },
         {
-          "title": "NTSA Issues New 7-Day Mandatory Compliance Notice Targeting Motorists",
-          "url": "https://www.kenyans.co.ke/news/129190-ntsa-gives-psv-and-commercial-vehicle-owners-7-days-install-speed-limiters",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "NTSA Warns Parents Against Underage Driving",
-          "url": "https://parentsafrica.com/ntsa-warns-parents-against-underage-driving/",
-          "source": "Parents Africa"
+          "title": "M-Pesa, Ethiopia operations drive Safaricom's revenue surge",
+          "url": "https://www.standardmedia.co.ke/business/article/2001561645/m-pesa-ethiopia-operations-drive-safaricom-s-revenue-surge?utm_source=KenyaMOJA.com",
+          "source": "www.standardmedia.co.ke"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "paul mackenzie",
-      "traffic": "500+",
+      "title": "oxford city vs leicester city",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Shakahola deaths: Kenya court doomsday cult leader Paul Mackenzie sentenced to 200 years in prison",
-          "url": "https://www.bbc.com/news/articles/cm5yne5984l0o",
+          "title": "Oxford City vs Leicester City: FA Cup stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c98rz2612n2nt",
           "source": "BBC"
         },
         {
-          "title": "Kenyan cult leader sentenced to 200 years in prison over the deaths of 190 children",
-          "url": "https://www.cnn.com/2026/11/06/africa/kenyan-cult-leader-sentenced-intl",
-          "source": "CNN"
+          "title": "‘The FA Cup’s Always Special’ - De Cordova-Reid On First Round",
+          "url": "https://www.lcfc.com/media-article/leicester-city-emirates-fa-cup-bobby-de-cordova-reid-first-round-preview-oxford-city",
+          "source": "LCFC | Official Website"
         },
         {
-          "title": "Kenyan cult leader sentenced to 200 years in prison for mass starvation murders of children",
-          "url": "https://www.reuters.com/world/africa/kenyan-court-sentences-cult-leader-200-years-prison-murder-190-children-2026-11-06/",
-          "source": "Reuters"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "charlene ruto wedding",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Burgundy, white and pure joy: Ruto, Rachel dazzle at Charlene’s wedding",
-          "url": "https://www.the-star.co.ke/news/2026-11-06-elegance-ruto-rachel-steal-the-show-at-charlenes-wedding",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "PHOTOS: Inside Charlene Ruto's Glamorous Wedding in Tanzania",
-          "url": "https://www.kenyans.co.ke/news/129196-photos-inside-charlene-rutos-glamorous-wedding-tanzania",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Beautiful love story: Charlene Ruto and Isaya Yunge stun in 3 pre-wedding looks",
-          "url": "https://www.tuko.co.ke/entertainment/celebrities/645839-charlene-ruto-photographer-unleashes-stunning-photos-isaya/",
-          "source": "Tuko News"
+          "title": "Leicester City and FA Cup banana skin is Russell Martin's last chance to resurrect his reputation",
+          "url": "https://www.fourfourtwo.com/person/coaches-managers/russell-martins-last-chance-to-change-the-narrative-lies-in-avoiding-fa-cup-humiliation",
+          "source": "FourFourTwo"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "william ruto",
+      "title": "sk rapid vs wolfsberger ac",
       "traffic": "200+",
       "news": [
         {
-          "title": "Ruto awards ILU charter, challenges universities to produce job creators",
-          "url": "https://nation.africa/kenya/news/education/ruto-awards-ilu-charter-challenges-universities-to-produce-job-creators-5660354",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "State House in laughter as Ruto says Kivutha Kibwana sometimes calls him Kasongo",
-          "url": "https://www.the-star.co.ke/news/2026-11-05-ruto-jokes-about-being-called-kasongo",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Ruto Gives Fresh Updates on Ksh25,000 Monthly Pay for 50,000 Youths",
-          "url": "https://www.kenyans.co.ke/news/129155-150000-graduates-apply-50000-govt-internship-slots-24-hours-ruto-says",
-          "source": "Kenyans.co.ke"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya railways corporation",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Kenya Railways Unveils 6 Rules for All Passengers Ahead of Festive Season",
-          "url": "https://www.kenyans.co.ke/news/129152-kenya-railways-announces-6-safety-rules-passengers-rail-stations",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Kenya Railways Releases 6 New Rules, Asks Passengers to Comply",
-          "url": "https://www.tuko.co.ke/business-economy/industry/645752-kenya-railways-releases-6-rules-asks-passengers-comply/",
-          "source": "Tuko News"
-        },
-        {
-          "title": "Heading home for the holidays? Here are 6 rules Kenya Railways wants you to know",
-          "url": "https://www.pulse.co.ke/story/heading-home-for-the-holidays-here-are-6-rules-kenya-railways-wants-you-to-know-2026110509101140871",
-          "source": "Pulse Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya medical training college",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "KMTC CEO Reveals Why 20,000 Students Miss Slots Despite KUCCPS Placement",
-          "url": "https://www.kenyans.co.ke/news/129182-20000-students-miss-kmtc-admission-slots-over-lack-govt-funding",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "KMTC seeks HELB funding as 20,000 students forfeit training slots over fees",
-          "url": "https://www.kbc.co.ke/kmtc-seeks-helb-funding-as-20000-students-forfeit-training-slots-over-fees/",
-          "source": "KBC Digital"
-        },
-        {
-          "title": "Why 20,000 students are forfeiting their dream medical careers every year",
-          "url": "https://www.pulse.co.ke/story/why-20000-kmtc-students-miss-out-on-admissions-every-year-2026110607213902617",
-          "source": "Pulse Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "unai emery",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Unai Emery: Aston Villa boss close to new contract at club",
-          "url": "https://www.bbc.com/sport/football/articles/cw99zde82nmno",
+          "title": "Rapid Vienna vs Wolfsberger AC: Austrian Bundesliga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c9ly0ek2e5ejt",
           "source": "BBC"
         },
         {
-          "title": "Romano: Man Utd’s ‘ideal’ Carrick replacement is in ‘very advanced’ contract talks",
-          "url": "https://utdreport.co.uk/2026/11/05/fabrizio-romano-man-utd-unai-emery-aston-villa/",
-          "source": "utdreport"
+          "title": "Rapid Vienna vs Wolfsberger AC: TV, live stream and kick-off time | Austrian Bundesliga",
+          "url": "https://www.goal.com/en/news/watch-rapid-vienna-vs-wolfsberger-ac-live-today-who-is-broadcasting-the-match-on-tv-and-via-live-stream/blt02f15401a8396379",
+          "source": "Goal.com"
         },
         {
-          "title": "Unai Emery in advanced talks over new Aston Villa deal in blow to Man Utd",
-          "url": "https://www.telegraph.co.uk/football/2026/11/04/emery-in-advanced-talks-over-new-villa-deal-in-blow-to-utd/",
-          "source": "The Telegraph"
+          "title": "Rapid Vienna vs Wolfsberger AC Vienna 2026 — Tickets",
+          "url": "https://karlobag.eu/en/sports/news/rapid-vienna-vs-wolfsberger-ac-vienna-2026-tickets-octdy/",
+          "source": "KarloBag.eu"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "universities academic staff union",
+      "title": "sk rapid",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Rapid: Wiedersehen mit Hoff Thorups Angstgegner unter den Trainern",
+          "url": "https://kurier.at/sport/fussball/rapid-trainer-hoff-thorup-wac-schmid-angstgegner-schaub/403203272",
+          "source": "Kurier"
+        },
+        {
+          "title": "Bundesliga-Vorschau auf Runde 12 inklusive Ergebnistipps: Siege für das Top-Trio!",
+          "url": "https://www.ligaportal.at/bundesliga/vorschau/22876-ligaportal-bundesliga-vorschau-runde-12-mit-ergebnis-tipps",
+          "source": "Ligaportal"
+        },
+        {
+          "title": "Jetzt im Liveticker! Schlusslicht WAC gastiert bei Leader Rapid",
+          "url": "https://www.kleinezeitung.at/artikel/41426992/jetzt-im-liveticker-schlusslicht-wac-gastiert-bei-leader-rapid",
+          "source": "Kleine Zeitung"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "diwali",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "261 Indian cities exceed WHO's PM2.5 guideline in October: CREA",
+          "url": "https://energy.economictimes.indiatimes.com/news/coal/261-indian-cities-exceed-whos-pm2-5-guideline-in-october-crea/135572054",
+          "source": "ET EnergyWorld"
+        },
+        {
+          "title": "Delhi alone breached October PM2.5 standards; pre-Diwali pollution worst since 2019: CREA",
+          "url": "https://www.newindianexpress.com/cities/delhi/2026/Nov/06/delhi-alone-breached-october-pm25-standards-pre-diwali-pollution-worst-since-2019-crea",
+          "source": "The New Indian Express"
+        },
+        {
+          "title": "BJP responsible for rising air pollution in state: Cong",
+          "url": "https://timesofindia.indiatimes.com/city/lucknow/bjp-responsible-for-rising-air-pollution-in-state-cong/articleshow/135616359.cms",
+          "source": "The Times of India"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "hamburg vs mönchengladbach",
       "traffic": "100+",
       "news": [
         {
-          "title": "Why public universities lecturers might go back to the streets",
-          "url": "https://nation.africa/kenya/news/education/why-public-universities-lecturers-might-go-back-to-the-streets-5658632",
-          "source": "Daily Nation"
+          "title": "Showdown im Norden: HSV fordert Gladbach im Keller-Gipfel",
+          "url": "https://www.oe24.at/a/showdown-im-norden-hsv-fordert-gladbach-im-keller-gipfel-900131029",
+          "source": "oe24"
         },
         {
-          "title": "UASU Issues New Demands Over Ksh20 Billion Deal After Nationwide Strike",
-          "url": "https://www.kenyans.co.ke/news/129131-uasu-warns-govt-over-ksh20-billion-lecturers-cba-deal",
-          "source": "Kenyans.co.ke"
+          "title": "Hamburger SV vs. Borussia Mönchengladbach: Die offiziellen Aufstellungen sind da!",
+          "url": "https://www.tipico.de/wett-tipps/sportwetten-news/hamburger-sv-vs-borussia-moenchengladbach-die-offiziellen-aufstellungen-sind-da",
+          "source": "Tipico"
         },
         {
-          "title": "Public University Lecturers Threaten Fresh Strike Over KSh100bn Pending Payments, Funding Dispute",
-          "url": "https://www.tuko.co.ke/education/645800-public-university-lecturers-threaten-fresh-strike-ksh100bn-pending-payments-funding-dispute/",
-          "source": "Tuko News"
+          "title": "Hamburger SV (HSV) - Borussia Mönchengladbach: Wo läuft die Bundesliga heute live?",
+          "url": "https://www.dazn.com/de-DE/news/fussball/hamburger-sv-hsv-borussia-moenchengladbach-wo-laeuft-die-bundesliga-heute-live-fussball/rj8lv5fa59jh1mu99e586lxra",
+          "source": "DAZN"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "william saliba",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Arteta's update on Saka, Saliba and Konsa",
+          "url": "https://www.arsenal.com/news/artetas-update-on-saka-saliba-and-konsa-aopoW1X0hn87",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Arsenal XI vs Hull: Confirmed team news and predicted lineup",
+          "url": "https://www.standard.co.uk/sport/football/arsenal-fc-xi-vs-hull-confirmed-team-news-predicted-lineup-injury-latest-premier-league-2026-b1303618.html",
+          "source": "London Evening Standard"
+        },
+        {
+          "title": "Every word Mikel Arteta said on Hull City, Arsenal injuries, Saliba return and manager files",
+          "url": "https://www.football.london/arsenal-fc/news/every-word-mikel-arteta-said-34873628",
+          "source": "Football London"
         }
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "hammarby vs elfsborg",
+      "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "hamburg vs borussia mg",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "sevilla vs alavés",
+      "why": "unsafe: 'Betting'"
+    }
+  ],
   "errors": {}
 }
