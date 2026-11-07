@@ -1,16 +1,17 @@
 """
 tvclip_local.py — runs on YOUR computer (YouTube refuses downloads from cloud servers, not from a home connection).
 
-Every run it reads this week's posts from the public repo, finds news posts the system matched to a TV clip
-(Citizen, NTV, KTN... on YouTube) that haven't gone out yet, downloads the first 2.5 minutes of each clip, sends it
-to your Telegram bot (quietly) and tells the autopilot. The autopilot then cuts up to 8 seconds of it into that post's
+Every run it reads this week's posts from the public repo, takes the news posts that haven't gone out yet, finds the
+TV story about each one (the clip the system matched, or a search of the last 3 days of Kenyan stations' YouTube
+uploads whose title names the same thing), downloads its first 2.5 minutes, sends it to your Telegram bot (quietly)
+and tells the autopilot. The autopilot then cuts up to 8 seconds of it into that post's
 Reel, with the station named on screen. Each clip is done once.
 
-One-time setup (Windows, PowerShell):
+One-time setup (Windows, PowerShell): keys are typed at a hidden prompt and kept as user environment variables.
     pip install yt-dlp imageio-ffmpeg
-    setx KOR_TELEGRAM_BOT_TOKEN "<the bot token>"      (the same value as the GitHub secret TELEGRAM_BOT_TOKEN)
-    setx KOR_TELEGRAM_CHAT_ID "<your chat id>"         (the same value as TELEGRAM_CHAT_ID)
-    setx KOR_GITHUB_TOKEN "<fine-grained token>"       (repo James84-bot/juakesho, permission: Contents read and write)
+    KOR_TELEGRAM_BOT_TOKEN   the same value as the GitHub secret TELEGRAM_BOT_TOKEN
+    KOR_TELEGRAM_CHAT_ID     the same value as TELEGRAM_CHAT_ID
+    KOR_GITHUB_TOKEN         a fine-grained token: repository James84-bot/juakesho, permission Contents: read and write
     schtasks /Create /SC MINUTE /MO 30 /TN "KenyaOnRecord TV clips" /TR "python <path>\\tvclip_local.py"
 
     python tvclip_local.py           # one run
@@ -55,12 +56,62 @@ def week_labels(now: dt.datetime) -> list[str]:
     return labels
 
 
+STATIONS = ("citizen tv", "ntv kenya", "ktn news", "k24 tv", "kbc channel 1", "tv47", "inooro tv", "kameme tv",
+            "ramogi tv", "citizen digital", "nation", "the standard")   # Kenyan newsrooms' own YouTube channels
+STOP = set("the a an and or of to in on for at by with from as is are was were be been has have had it its this that "
+           "these those our your their his her they we you kenya kenyan kenyans now new over after into says said".split())
+
+
+def keywords(post: dict, n: int = 6) -> list[str]:
+    """The words a TV story's title would share with the post: names and numbers first, then the content words."""
+    import re
+    text = str(post.get("message") or (post.get("beats") or [""])[0]).replace("*", "")
+    words = re.findall(r"[A-Za-z][\w'-]+|\d[\d,.]*", text)
+    names = [w for w in words if w[0].isupper() and w.lower() not in STOP]
+    rest = [w for w in words if w not in names and w.lower() not in STOP and len(w) > 3]
+    seen, out = set(), []
+    for w in names + rest:
+        if w.lower() not in seen:
+            seen.add(w.lower())
+            out.append(w)
+    return out[:n]
+
+
+def matches(title: str, post: dict) -> bool:
+    """A TV story about the same thing: two of the post's keywords in its title (a name counts double)."""
+    low = title.lower()
+    score = sum(2 if k[0].isupper() else 1 for k in keywords(post) if k.lower()[:6] in low)
+    return score >= 2
+
+
+def search_clip(post: dict, ff: str) -> dict | None:
+    """Looks the story up on YouTube from this computer: a station's own upload of the last 3 days whose title
+    names the same thing. {"url", "channel", "title"} or None."""
+    q = " ".join(keywords(post))
+    if not q:
+        return None
+    r = subprocess.run([sys.executable, "-m", "yt_dlp", "-q", "--no-warnings", "--skip-download", "--dateafter",
+                        "now-3days", "--match-filter", "duration > 25 & duration < 900", "-J", f"ytsearch10:{q} Kenya news"],
+                       capture_output=True, text=True, timeout=300)
+    try:
+        entries = json.loads(r.stdout or "{}").get("entries") or []
+    except ValueError:
+        return None
+    for e in entries:
+        channel = str(e.get("channel") or e.get("uploader") or "")
+        if channel.lower().startswith(STATIONS) and matches(str(e.get("title") or ""), post):
+            return {"url": e.get("webpage_url") or f"https://www.youtube.com/watch?v={e.get('id')}",
+                    "channel": channel, "title": str(e.get("title") or "")}
+    return None
+
+
 def wanted(posts: list[dict], done: set[str], now: dt.datetime) -> list[dict]:
-    """News posts with a matched TV clip, not yet out, not yet given a clip, with time left to make the Reel."""
+    """News posts not yet out and not yet given a clip, with time left to make the Reel."""
     out = []
     for p in posts:
-        clip = p.get("tv_clip") or {}
-        if not clip.get("url") or p["id"] in done or p.get("tv_clip_used") or p.get("status") not in WAITING:
+        if not p.get("hot") and not (p.get("tv_clip") or {}).get("url"):
+            continue
+        if p["id"] in done or p.get("tv_clip_used") or p.get("status") not in WAITING or not p.get("beats"):
             continue
         try:
             when = dt.datetime.fromisoformat(p["publish_at"])
@@ -141,7 +192,13 @@ def main(argv: list[str]) -> int:
         return 0
     ff = ffmpeg()
     for p in todo:
-        clip = p["tv_clip"]
+        clip = (p.get("tv_clip") or {}) if (p.get("tv_clip") or {}).get("url") else (search_clip(p, ff) or {})
+        if not clip.get("url"):
+            print(f"{p['id']}: no TV story found for '{' '.join(keywords(p))}'")
+            if not check:
+                done.add(p["id"])
+            continue
+        p["tv_clip"] = clip
         print(f"{p['id']}: {clip.get('channel')} | {clip.get('title', '')[:70]}")
         if check:
             continue

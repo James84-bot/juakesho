@@ -15,14 +15,21 @@ CLIP = {"url": "https://www.youtube.com/watch?v=x", "channel": "Citizen TV", "ti
 
 
 def post(i, **k):
-    return {"id": i, "status": "approved", "publish_at": "2026-11-08T12:45:00+03:00", "tv_clip": CLIP, **k}
+    return {"id": i, "status": "approved", "publish_at": "2026-11-08T12:45:00+03:00", "tv_clip": CLIP, "beats": ["a", "b", "c"], **k}
 
 
 class Helper(unittest.TestCase):
-    def test_only_waiting_news_posts_with_a_clip_and_time_left(self):
+    def test_only_waiting_news_posts_with_time_left(self):
         posts = [post("a"), post("b", status="published"), post("c", tv_clip=None), post("d", tv_clip_used={"x": 1}),
-                 post("e", publish_at="2026-11-08T10:20:00+03:00"), post("f")]
-        self.assertEqual([p["id"] for p in tl.wanted(posts, {"f"}, NOW)], ["a"])   # f was already tried
+                 post("e", publish_at="2026-11-08T10:20:00+03:00"), post("f"), post("g", tv_clip=None, hot=True)]
+        # c: no clip and not a news post; f: already tried; g: a news post the computer will search for
+        self.assertEqual([p["id"] for p in tl.wanted(posts, {"f"}, NOW)], ["a", "g"])
+
+    def test_a_tv_title_matches_on_names_and_shared_words(self):
+        p = {"message": "FKF expels McDonald Mariga and six officials after Meru chaos."}
+        self.assertIn("Mariga", tl.keywords(p))
+        self.assertTrue(tl.matches("Mariga na maafisa 6 wa baraza kuu la FKF watimuliwa", p))   # names work in Swahili
+        self.assertFalse(tl.matches("Shabana yaizamisha Mombasa United 3-2", p))
 
     def test_reads_this_week_and_on_sunday_the_next(self):
         self.assertEqual(tl.week_labels(dt.datetime(2026, 11, 7, 10, tzinfo=tl.EAT)), ["2026-W45"])
