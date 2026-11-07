@@ -899,9 +899,26 @@ def extract_json(text: str) -> dict:
         return json.loads(fixed)
 
 
+def _fits(line: str) -> bool:
+    plain = line.replace("*", "")
+    return len(plain) <= 72 and len(plain.split()) <= 12
+
+
+def _credit_after(line: str, outlet: str, verb: str = "reports") -> str | None:
+    """'Fact.' → 'Fact, Outlet reports.' The fact comes first, where a viewer decides in two seconds whether to stay;
+    the credit stays in the same sentence. None when the line ends in a question or exclamation."""
+    body = line.rstrip()
+    if not body or body[-1] in "?!":
+        return None
+    return f"{body.rstrip('.').rstrip()}, {outlet} {verb}."
+
+
 def attribute_single_source(post: dict) -> dict:
-    """A post resting on one outlet says so ("Capital FM reports: ..."): we repeat their report, we do not assert it as
-    our own finding. Our own verified data (a bank fact) is exempt. The Reel's first line gets the outlet too when it still fits."""
+    """A post resting on one outlet says so ("..., Capital FM reports."): we repeat their report, we do not assert it as
+    our own finding. Our own verified data (a bank fact) is exempt. The credit goes after the fact, not before it: the
+    first words of a Reel and of a caption decide whether people stay (our most viewed Short so far, 986 views, ended
+    "..., KNBS reports."; the two that opened "<Outlet> reports:" sat below the median). The Reel's first line gets the
+    credit too when it still fits the line limits."""
     if isinstance(post.get("material"), dict) and post["material"].get("kind") == "bank":
         return post
     outlets = []
@@ -914,32 +931,41 @@ def attribute_single_source(post: dict) -> dict:
     name = outlets[0]
     cap = str(post.get("caption") or "")
     if cap and name.lower() not in cap.lower()[:160] and not re.search(r"\b(reports?|reported|according to)\b", cap[:160], re.I):
-        post["caption"] = f"{name} reports: {cap}"
+        first, sep, rest = cap.partition("\n")
+        credited = _credit_after(first, name)
+        post["caption"] = (credited + sep + rest) if credited else f"{name} reports: {cap}"
     beats = post.get("beats")
     if isinstance(beats, list) and beats and isinstance(beats[0], str) and name.lower() not in beats[0].lower() \
-            and not re.search(r"\b(reports?|reported|according to)\b", beats[0], re.I) and len(beats[0].split()) + len(name.split()) + 1 <= 16:
-        post["beats"] = [f"{name} reports: {beats[0]}"] + beats[1:]
+            and not re.search(r"\b(reports?|reported|according to)\b", beats[0], re.I):
+        credited = _credit_after(beats[0], name)
+        if credited and _fits(credited):
+            post["beats"] = [credited] + beats[1:]
     return post
 
 
-ATTRIBUTION = re.compile(r"^\s*[A-Z][\w&'.\- ]{2,40}?\s+(?:reports?|reported|says?|said|confirms?|confirmed)\s*:\s*")
+ATTRIBUTION = re.compile(r"^\s*([A-Z][\w&'.\- ]{2,40}?)\s+(reports?|reported|says?|said|confirms?|confirmed)\s*:\s*")
 
 
 def tidy_beats(post: dict) -> dict:
-    """The writer likes to open the Reel with "<Outlet> reports: ...", which pushes the line over the 72-character
-    limit, and models cannot count characters. When (and only when) a line is too long, drop that attribution:
-    the source is still on the card, in `source` and in the caption. Nothing else is touched."""
+    """The writer likes to open the Reel with "<Outlet> reports: ...". That spends the first two seconds on a name,
+    and it often pushes the line over the 72-character limit, which models cannot count. So the credit moves to the
+    end of the line ("..., Outlet reports.") when that fits, and is dropped when it doesn't: the source is still on
+    the card, in `source` and in the caption. Nothing else is touched."""
     beats = post.get("beats")
     if not isinstance(beats, list):
         return post
     out = []
     for b in beats:
         if isinstance(b, str):
-            plain = b.replace("*", "")
-            if len(plain) > 72 or len(plain.split()) > 12:
-                short = ATTRIBUTION.sub("", b, count=1)
-                if short != b and short:
-                    b = short[0].upper() + short[1:]
+            m = ATTRIBUTION.match(b)
+            rest = b[m.end():] if m else ""
+            if m and rest:
+                rest = rest[0].upper() + rest[1:]
+                credited = _credit_after(rest, m.group(1).strip(), m.group(2))
+                if credited and _fits(credited):
+                    b = credited
+                elif not _fits(b):
+                    b = rest
         out.append(b)
     return {**post, "beats": out}
 

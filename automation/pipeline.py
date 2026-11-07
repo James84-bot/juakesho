@@ -1995,6 +1995,13 @@ def status(label: str) -> None:
         print("\nscripts:", ", ".join(k for k, v in data["scripts"].items() if v))
 
 
+def _learn_now(a: argparse.Namespace) -> bool:
+    """Weekly before drafting, and daily with the morning news run: YouTube views move by the day, and the day's
+    news posts are written from these numbers."""
+    return bool(not a.mock and (a.command == "week" or (a.command == "hot" and a.morning and not a.dry_run))
+                and os.environ.get("META_ACCESS_TOKEN"))
+
+
 def main(argv: list[str] | None = None) -> int:
     try:
         return _main(argv)
@@ -2028,7 +2035,7 @@ def _main(argv: list[str] | None = None) -> int:
 
     if a.command == "learn":
         learn()
-    elif a.command == "week" and not a.mock and os.environ.get("META_ACCESS_TOKEN"):
+    elif _learn_now(a):
         try:   # learning from last week's numbers must never stop this week's drafts
             learn()
         except Exception as e:

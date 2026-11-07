@@ -45,8 +45,21 @@ class SingleSource(unittest.TestCase):
     def test_one_outlet_is_named_in_caption_and_first_beat(self):
         p = draft.attribute_single_source({"caption": "Sh40m recovered.", "beats": ["EACC recovers Sh40 million.", "b b", "c c"],
                                            "source_links": [{"outlet": "Capital FM", "link": "https://x"}]})
-        self.assertTrue(p["caption"].startswith("Capital FM reports: "))
-        self.assertEqual(p["beats"][0], "Capital FM reports: EACC recovers Sh40 million.")
+        self.assertEqual(p["caption"], "Sh40m recovered, Capital FM reports.")   # the fact first, the credit after it
+        self.assertEqual(p["beats"][0], "EACC recovers Sh40 million, Capital FM reports.")
+
+    def test_a_question_caption_keeps_the_credit_in_front(self):
+        p = draft.attribute_single_source({"caption": "Who pays?\nMore.", "beats": ["Who pays the Sh40 million?", "b", "c"],
+                                           "source_links": [{"outlet": "Capital FM", "link": "https://x"}]})
+        self.assertEqual(p["caption"], "Capital FM reports: Who pays?\nMore.")
+        self.assertEqual(p["beats"][0], "Who pays the Sh40 million?")   # no credit squeezed into a question
+
+    def test_a_credit_that_would_overflow_the_line_is_left_to_the_caption(self):
+        long = "Kenya's total public debt rose past Sh11 trillion in October."
+        p = draft.attribute_single_source({"caption": "c.", "beats": [long, "b", "c"],
+                                           "source_links": [{"outlet": "Capital FM News", "link": "https://x"}]})
+        self.assertEqual(p["beats"][0], long)
+        self.assertEqual(p["caption"], "c, Capital FM News reports.")
 
     def test_two_outlets_and_own_data_are_left_alone(self):
         two = {"caption": "c", "beats": ["a b", "c d", "e f"], "source_links": [{"outlet": "A"}, {"outlet": "B"}]}

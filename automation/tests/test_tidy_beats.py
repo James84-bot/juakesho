@@ -21,8 +21,16 @@ class TidyBeats(unittest.TestCase):
         self.assertEqual(beat0("People Daily reports: KRA targets 1 million landlords in new rental tax audits."),
                          "KRA targets 1 million landlords in new rental tax audits.")
 
-    def test_a_line_that_already_fits_is_left_alone(self):
-        self.assertEqual(beat0("Capital FM reports: Short one."), "Capital FM reports: Short one.")
+    def test_a_credit_that_fits_moves_after_the_fact(self):
+        self.assertEqual(beat0("Capital FM reports: Short one."), "Short one, Capital FM reports.")
+        self.assertEqual(beat0("Citizen Digital reports: Corruption costs Kenya billions every year."),
+                         "Corruption costs Kenya billions every year, Citizen Digital reports.")
+        self.assertEqual(beat0("KNBS says: Kenyan women now have *3 children* on average."),
+                         "Kenyan women now have *3 children* on average, KNBS says.")
+
+    def test_a_line_without_a_leading_credit_is_left_alone(self):
+        self.assertEqual(beat0("Kenyan women now have 3 children on average, KNBS reports."),
+                         "Kenyan women now have 3 children on average, KNBS reports.")
 
     def test_a_long_line_without_an_attribution_is_not_touched(self):
         long = "KRA says tax rises 5% for landlords across Kenya next year, officials warn today."

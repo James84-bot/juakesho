@@ -458,6 +458,21 @@ class LearnYouTubeTests(TempWeeks):
             self.assertEqual(pl.learn_youtube(), [])
 
 
+class LearnScheduleTests(unittest.TestCase):
+    def test_learns_weekly_and_with_the_morning_news_run_only(self):
+        import argparse
+        ns = lambda command, **k: argparse.Namespace(**{"command": command, "mock": False, "dry_run": False,
+                                                       "morning": False, **k})
+        with mock.patch.dict(os.environ, {"META_ACCESS_TOKEN": "t"}):
+            self.assertTrue(pl._learn_now(ns("week")))
+            self.assertTrue(pl._learn_now(ns("hot", morning=True)))
+            self.assertFalse(pl._learn_now(ns("hot")))                       # midday, afternoon, evening, breaking
+            self.assertFalse(pl._learn_now(ns("hot", morning=True, dry_run=True)))
+            self.assertFalse(pl._learn_now(ns("tick")))
+        with mock.patch.dict(os.environ, {"META_ACCESS_TOKEN": ""}):
+            self.assertFalse(pl._learn_now(ns("hot", morning=True)))
+
+
 class LearnScoreTests(TempWeeks):
     def run_learn(self, posts, reach_likes):
         self.week(posts)
