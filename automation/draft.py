@@ -533,8 +533,12 @@ def learnings_text() -> str:
     if not f.exists():
         return ""
     data = json.loads(f.read_text(encoding="utf-8"))
-    top = "\n".join(f"- {x['series']} / {x['lane']}: score {x['score']} ({x['id']})" for x in data.get("top", []))
-    low = "\n".join(f"- {x['series']} / {x['lane']}: score {x['score']} ({x['id']})" for x in data.get("bottom", []))
+    def row(x: dict) -> str:   # the opening line is what the writer can learn from; an id alone teaches nothing
+        said = f": {x['opening']}" if x.get("opening") else f" ({x['id']})"
+        acts = ", ".join(f"{x[k]} {k}" for k in ("shares", "saved", "comments", "likes") if x.get(k))
+        return f"- {x['series']}, score {x['score']}, reach {x.get('reach', '?')}{', ' + acts if acts else ''}{said}"
+    top = "\n".join(row(x) for x in data.get("top", []))
+    low = "\n".join(row(x) for x in data.get("bottom", []))
     watched = sorted((x for x in data.get("all", []) if x.get("avg_watch_s") is not None and x.get("opening")),
                      key=lambda x: x["avg_watch_s"], reverse=True)
     held = ""
@@ -548,7 +552,7 @@ def learnings_text() -> str:
         held += ("\nMOST VIEWED ON YOUTUBE SHORTS\n" + "\n".join(f"- {x['views']} views: {x['opening']}" for x in yt[:3])
                  + "\nLEAST VIEWED\n" + "\n".join(f"- {x['views']} views: {x['opening']}" for x in yt[-3:])
                  + "\nLearn from the first group.")
-    return (f"\nWHAT WORKED LATELY (score = saves*3 + shares*4 + comments*2 + likes, per 1,000 reached)\n{top}"
+    return (f"\nWHAT WORKED LATELY ON INSTAGRAM (score = saves*3 + shares*4 + comments*2 + likes per 1,000 reached, damped for small reach)\n{top}"
             f"\nWHAT DIDN'T\n{low}\nLean into what worked; try a new angle on what didn't.\n{held}\n")
 
 
