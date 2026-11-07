@@ -31,7 +31,7 @@ class WeeklyMix(unittest.TestCase):
     def test_six_in_ten_are_everyday_life(self):
         weekly = pipeline._calendar_posts("2026-W44")
         life_weekly = sum(1 for p in weekly if p.get("series") in LIFE or p["template"] == "usiibiwe")
-        life_news = sum(1 for e in pipeline.EDITIONS.values() if e["beat"] == "life") * 7
+        life_news = sum(1 for e in pipeline.EDITIONS.values() if e["beat"] in {"life", "sport"}) * 7   # sport is everyday life
         total = len(weekly) + len(pipeline.EDITIONS) * 7
         self.assertGreaterEqual((life_weekly + life_news) / total, 0.6)
 
@@ -44,6 +44,16 @@ class NewsBeat(unittest.TestCase):
         slot["beat"] = "politics"
         _, user = draft.build_prompt("2026-W44", [slot], {}, [], scripts=False)
         self.assertIn("political story", user)
+
+    def test_sport_beat_asks_for_sport_and_never_odds_or_portraits(self):
+        slot = {"id": "x", "template": "sauti", "lane": "everyone", "hot": True, "beat": "sport"}
+        _, user = draft.build_prompt("2026-W44", [slot], {}, [], scripts=False)
+        for words in ("SPORT story", "[sport]", "Premier League", "never a prediction, odds or a betting angle",
+                      "never a player's or athlete's portrait", "entertainment or tech"):
+            self.assertIn(words, user)
+
+    def test_one_edition_a_day_is_sport(self):
+        self.assertEqual([k for k, e in pipeline.EDITIONS.items() if e["beat"] == "sport"], ["afternoon"])
 
 
 if __name__ == "__main__":

@@ -202,8 +202,8 @@ HOT = {"time": (12, 45), "template": "sauti", "min_lead": dt.timedelta(hours=3)}
 # render), so it goes out on the run your ✅ triggers; unapproved, it expires as usual. At most BREAKING_MAX a day.
 EDITIONS = {"morning": {"time": (9, 45), "suffix": "m", "beat": "life"},
             "midday": {"time": (12, 45), "suffix": "", "beat": "life"},
-            "afternoon": {"time": (15, 30), "suffix": "a", "beat": "life"},
-            "evening": {"time": (19, 30), "suffix": "e", "beat": "politics"}}   # six in ten posts are everyday life
+            "afternoon": {"time": (15, 30), "suffix": "a", "beat": "sport"},   # Kenyan and world sport
+            "evening": {"time": (19, 30), "suffix": "e", "beat": "politics"}}   # three in four are not politics
 BREAKING_LEAD, BREAKING_MAX = dt.timedelta(minutes=20), 2
 QUIET_FROM = 21   # no news post is planned for 21:00 EAT or later (last week four went out between 22:30 and 01:16 and expired)
 

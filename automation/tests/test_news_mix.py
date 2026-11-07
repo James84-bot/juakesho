@@ -36,7 +36,31 @@ class Mix(unittest.TestCase):
         import json
         feeds = json.loads((Path(news.__file__).parent / "content" / "news_feeds.json").read_text(encoding="utf-8"))["feeds"]
         topics = {f["topic"] for f in feeds}
-        self.assertTrue({"sport", "entertainment", "tech", "health", "pride"} <= topics)
+        self.assertTrue({"sport", "sport_world", "entertainment", "tech", "health", "pride"} <= topics)
+
+    def test_sport_headlines_are_added_beyond_the_mix_with_stable_ids(self):
+        import json
+        import tempfile
+        from unittest import mock
+        topics = ["politics", "money", "health", "tech", "pride", "rights", "news", "elections", "counties",
+                  "accountability", "entertainment", "sport", "sport_world"]
+        items = [item(t, i) for i in range(3) for t in topics]
+        with tempfile.TemporaryDirectory() as d:
+            out = Path(d) / "news.json"
+            out.write_text(json.dumps({"fetched": "2026-11-07T00:00:00+00:00", "items": items}))
+            with mock.patch.object(news, "OUT", out):
+                first, again = news.refs(), news.refs()
+        self.assertEqual(first, again)   # an id means the same story in the prompt and when it is resolved
+        sport = [x for x in first.values() if x["topic"] in news.SPORT_TOPICS]
+        self.assertEqual(len(sport), 6)   # all six: 2 in the 18-headline mix, 4 added after it
+        self.assertEqual(len(first), news.MAX_ITEMS + 4)
+        self.assertEqual(len({x["title"] for x in first.values()}), len(first))   # nothing listed twice
+
+    def test_sport_bodies_and_sport_newsrooms_are_sources_betting_blogs_are_not(self):
+        for ok in ("BBC Sport", "Sky Sports", "ESPN", "The Athletic", "World Athletics", "Premier League", "UEFA.com"):
+            self.assertTrue(news.newsroom(ok), ok)
+        for no in ("SportPesa News", "Betika Blog", "Mozzart Sport", "Goal.com"):
+            self.assertFalse(news.newsroom(no), no)
 
 
 if __name__ == "__main__":

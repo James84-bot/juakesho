@@ -65,7 +65,10 @@ def _key(title: str) -> str:
 NEWSROOMS = re.compile(r"^(capital fm|people daily|the star|daily nation|nation|the standard|standard digital|"
                        r"kbc|kenya news agency|citizen digital|citizen tv|k24|tv47|kenyans\.co\.ke|tuko|"
                        r"the eastafrican|business daily|ntv|ktn|the eastleigh voice|nairobi law monthly|"
-                       r"africa check|pesacheck|reuters|bbc|associated press|ap news|al jazeera|bloomberg)", re.I)
+                       r"africa check|pesacheck|reuters|bbc|associated press|ap news|al jazeera|bloomberg|"
+                       # sport: newsrooms with editors, and the governing bodies' own sites (results are their record)
+                       r"sky sports|espn|the athletic|the guardian|supersport|world athletics|caf online|cafonline|"
+                       r"premier league|uefa|fifa)", re.I)
 
 
 def newsroom(outlet: str) -> bool:
@@ -132,12 +135,21 @@ def collect() -> dict:
 MAX_ITEMS = 18
 
 
+SPORT_TOPICS = ("sport", "sport_world")
+SPORT_EXTRA = 6   # sport headlines added beyond the mix, so the daily sport edition has real stories to pick from
+
+
 def refs(max_items: int = MAX_ITEMS) -> dict[str, dict]:
-    """The headlines the writer sees, by the short id it cites them with: {"n1": item, ...}."""
+    """The headlines the writer sees, by the short id it cites them with: {"n1": item, ...}. The mix across all
+    topics, then up to SPORT_EXTRA more sport headlines (Kenyan and international, taking turns). The same list
+    for every caller, so an id means the same story in the prompt and when it is resolved to a link."""
     if not OUT.exists():
         return {}
     data = json.loads(OUT.read_text(encoding="utf-8"))
-    return {f"n{i + 1}": x for i, x in enumerate(_spread(data.get("items", []), max_items))}
+    items = data.get("items", [])
+    mix = _spread(items, max_items)
+    extra = _spread([x for x in items if x.get("topic") in SPORT_TOPICS and x not in mix], SPORT_EXTRA)
+    return {f"n{i + 1}": x for i, x in enumerate(mix + extra)}
 
 
 def prompt_block(max_items: int = MAX_ITEMS, max_age_hours: int = 30) -> str:
@@ -148,7 +160,8 @@ def prompt_block(max_items: int = MAX_ITEMS, max_age_hours: int = 30) -> str:
     age = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(data["fetched"])
     if age > dt.timedelta(hours=max_age_hours) or not data.get("items"):
         return ""
-    lines = [f"- [{k}] [{x['outlet']}] {x['title']} ({x['published'][:10]})" for k, x in refs(max_items).items()]
+    lines = [f"- [{k}] [{x['outlet']}] {'[sport] ' if x.get('topic') in SPORT_TOPICS else ''}{x['title']} "
+             f"({x['published'][:10]})" for k, x in refs(max_items).items()]
     return ("\nTHIS WEEK IN KENYA (real headlines, newest first, each with its id in brackets)\n" + "\n".join(lines) +
             "\nBuild most posts on these stories: what Kenyans are already talking about. Use only facts these "
             "headlines state or that an official record states. In `source` (and `claim_source` for quotes) write "

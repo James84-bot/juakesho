@@ -94,7 +94,7 @@ class HotPostTests(TempWeeks):
         with mock.patch.object(pl, "now", lambda: noon):
             label = pl.hot_slot(mock=True, edition="afternoon")
             post = pl.load_week(label)["posts"][-1]
-            self.assertEqual((post["id"], post["beat"]), ("2026-w42-hot-1013a", "life"))
+            self.assertEqual((post["id"], post["beat"]), ("2026-w42-hot-1013a", "sport"))
             self.assertEqual(post["publish_at"], "2026-10-13T15:30:00+03:00")
             self.assertIsNone(pl.hot_slot(mock=True, edition="afternoon"))   # never twice
 

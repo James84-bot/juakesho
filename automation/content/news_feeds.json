@@ -70,6 +70,11 @@
       "topic": "sport"
     },
     {
+      "name": "Google News: world sport",
+      "url": "https://news.google.com/rss/search?q=%22Premier+League%22+OR+%22Champions+League%22+OR+Arsenal+OR+%22Manchester+United%22+OR+Chelsea+OR+Liverpool+OR+%22Diamond+League%22+OR+Kipyegon+OR+Kipchoge+OR+AFCON+when%3A2d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "sport_world"
+    },
+    {
       "name": "Google News: entertainment",
       "url": "https://news.google.com/rss/search?q=Kenyan+musician+OR+Kenyan+artist+OR+Kenyan+film+OR+Kenyan+comedian+OR+Nairobi+concert+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
       "topic": "entertainment"

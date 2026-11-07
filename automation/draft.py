@@ -657,18 +657,29 @@ ANGLES = {
 }
 
 
+HOT_BRIEFS = {
+    "life": ("Today's post: react to the biggest Kenyan EVERYDAY-LIFE story in THIS WEEK IN KENYA (money and "
+             "prices, jobs, health, schools, sport, tech, weather, scams, a Kenyan win), NOT a politician's "
+             "statement or a party fight, with its link in `source`. A government decision counts only for "
+             "what it changes in people's lives (a new fee, a price, a service)."),
+    "sport": ("Today's post: the SPORT story Kenyans are talking about, from the headlines marked [sport] in THIS WEEK "
+              "IN KENYA, with its link in `source`: Kenyan sport (Harambee Stars, Harambee Starlets, Lionesses and "
+              "Shujaa, athletics, the FKF Premier League, volleyball, boxing, the federations) or world sport Kenyans "
+              "follow (the Premier League, the Champions League, AFCON, Kenyan athletes abroad). Prefer a Kenyan story "
+              "or a Kenyan angle when one is there. The result, the record, the number: facts the headline states, never "
+              "a prediction, odds or a betting angle. `photo_query` is a scene (a stadium, a track, a ball, fans), never "
+              "a player's or athlete's portrait and never match footage, which belongs to the broadcaster. If no [sport] "
+              "headline is fresh, use the biggest Kenyan entertainment or tech story instead."),
+    "politics": "Today's post: react to the biggest Kenyan political story in THIS WEEK IN KENYA, with its link in `source`",
+}
+
+
 def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list[dict], scripts: bool = True) -> tuple[str, str]:
     lane_txt = "\n".join(f"- {k}: {v['who']}. Voice: {v['voice']}" for k, v in lanes.items())
     slot_txt = json.dumps([
         {"id": s["id"], "template": s["template"], "lane": s["lane"], **({"series": s["series"]} if s.get("series") else {}),
          **({"anniversary": s["remember"]} if s.get("remember") else {}),
-         **({"hot": ("Today's post: react to the biggest Kenyan EVERYDAY-LIFE story in THIS WEEK IN KENYA (money and "
-                     "prices, jobs, health, schools, sport, tech, weather, scams, a Kenyan win), NOT a politician's "
-                     "statement or a party fight, with its link in `source`. A government decision counts only for "
-                     "what it changes in people's lives (a new fee, a price, a service).")
-                    if s.get("beat") == "life" else
-                    "Today's post: react to the biggest Kenyan political story in THIS WEEK IN KENYA, with its link in `source`"}
-            if s.get("hot") else {}),
+         **({"hot": HOT_BRIEFS.get(s.get("beat"), HOT_BRIEFS["politics"])} if s.get("hot") else {}),
          **({"angle": ANGLES[s["angle"]]} if s.get("angle") in ANGLES else {}),
          **({"material": material.brief(s["material"])} if s.get("material") else {}),
          **({"avoid": "Already posted today, so pick a DIFFERENT story: " + " | ".join(s["avoid"])} if s.get("avoid") else {}),
