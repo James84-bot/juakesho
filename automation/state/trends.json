@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-07T12:16:52.018993+00:00",
+  "fetched": "2026-11-07T12:43:00.543599+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,8 +7,8 @@
       "traffic": "10000+",
       "news": [
         {
-          "title": "Leeds United vs Tottenham Hotspur: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cq33x0rvmjret",
+          "title": "Premier League LIVE: Build-up, team news, live text, radio & score updates from across the Premier League",
+          "url": "https://www.bbc.com/sport/football/live/cmj6jdk36975t",
           "source": "BBC"
         },
         {
@@ -17,8 +17,8 @@
           "source": "Sky Sports"
         },
         {
-          "title": "Team News: Injury updates on Calvert-Lewin, Okafor & Stach",
-          "url": "https://www.leedsunited.com/en/news/team-news-injury-updates-on-calvert-lewin-okafor-and-stach",
+          "title": "Two changes and pair return from injury as Farke reveals XI to face Tottenham Hotspur",
+          "url": "https://www.leedsunited.com/en/news/two-changes-and-pair-return-from-injury-as-farke-reveals-xi-to-face-tottenham-hotspur",
           "source": "Leeds United | Official Website - Leeds United"
         }
       ]
@@ -26,8 +26,13 @@
     {
       "geo": "KE",
       "title": "chelsea vs everton",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
+        {
+          "title": "Confirmed Chelsea Women line up vs Everton | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-everton",
+          "source": "Chelsea Football Club"
+        },
         {
           "title": "Chelsea FC Women vs Everton Women: TV channel, live stream and kick-off time",
           "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-chelsea-fc-women-v-everton-women/blte2de09b3b4c9c51e",
@@ -37,11 +42,50 @@
           "title": "WSL Saturday Predictions: Could Our 12/1 Scoreline Land?",
           "url": "https://news.williamhill.com/football/wsl-predictions-and-betting-tips-for-saturday-7th-november-2026/",
           "source": "William Hill News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "wrexham vs wolves",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Championship LIVE: Build-up, team news, score updates, text commentary & match stats from across the Championship",
+          "url": "https://www.bbc.com/sport/football/live/c6073j93z158t",
+          "source": "BBC"
         },
         {
-          "title": "Confirmed Chelsea Women line up vs Everton | News | Official Site",
-          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-everton",
-          "source": "Chelsea Football Club"
+          "title": "Watch Wrexham vs. Wolverhampton Wanderers live today: Who is broadcasting the match on TV and via live stream?",
+          "url": "https://www.goal.com/en-ke/news/live-stream-online-tv-where-to-watch-wrexham-v-wolverhampton-wanderers/bltadd251210d00957e",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Wrexham Association Football Club",
+          "url": "https://www.wrexhamafc.co.uk/news/2026/november/06/preview--wrexham-afc-vs-wolves/",
+          "source": "Wrexham AFC"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "man city vs west ham",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Manchester City Women vs West Ham United Women: TV channel, live stream and kick-off time",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-manchester-city-women-v-west-ham-united-women/blt9d9624231b10d1ee",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Moorhouse the main feature in our City v West Ham programme!",
+          "url": "https://www.mancity.com/news/womens/city-v-west-ham-programme-promo-wsl-2627-63929495",
+          "source": "Manchester City FC"
+        },
+        {
+          "title": "Matchday Gallery | Hammers head north for Man City test",
+          "url": "https://www.whufc.com/en/news/matchday-gallery-or-hammers-head-north-for-man-city-test",
+          "source": "West Ham United"
         }
       ]
     },
@@ -114,54 +158,28 @@
     },
     {
       "geo": "KE",
-      "title": "torino vs lecce",
+      "title": "man u vs aston villa",
       "traffic": "100+",
       "news": [
         {
-          "title": "Torino-Lecce, dove vedere il match in tv e diretta streaming: orario e probabili formazioni",
-          "url": "https://www.dazn.com/it-IT/news/calcio/torino-lecce-2026-dove-vedere-diretta-streaming-orario-formazioni/zuh8u53o93i21fdi81y1jb82d",
-          "source": "DAZN"
+          "title": "Team news for United v Aston Villa",
+          "url": "https://www.manutd.com/en/news/team-news-for-united-v-aston-villa-8-nov",
+          "source": "Manchester United"
         },
         {
-          "title": "Serie A LIVE, Parma-Bologna: il derby emiliano va in scena al Tardini",
-          "url": "https://www.diretta.it/news/calcio-serie-a-live-parma-bologna-7-11-2026/dz8bxnHa/",
-          "source": "Diretta"
+          "title": "Man Utd vs Aston Villa Prediction: Premier League Preview",
+          "url": "https://theanalyst.com/articles/man-utd-vs-aston-villa-prediction-premier-league-preview-11-2026",
+          "source": "Opta Analyst"
         },
         {
-          "title": "Toro, prova d’appello e d’orgoglio: “Strada giusta, non siamo in calo”",
-          "url": "https://www.lastampa.it/sport/2026/11/07/news/toro_lecce_prova_d_appello_abate-15790864/",
-          "source": "La Stampa"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "leipzig vs augsburg",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Die Wade: Fragezeichen hinter Nusa",
-          "url": "https://www.kicker.de/die-wade-fragezeichen-hinter-nusa-1269271/artikel",
-          "source": "Kicker"
-        },
-        {
-          "title": "Fußball-Bundesliga: RB Leipzig will makellose Bundesliga-Heimserie ausbauen",
-          "url": "https://www.zeit.de/news/2026-11/07/rb-leipzig-will-makellose-bundesliga-heimserie-ausbauen",
-          "source": "DIE ZEIT"
-        },
-        {
-          "title": "Mit Topform-Toni zum Bundesliga-Heimrekord?",
-          "url": "https://rbleipzig.com/de/match-news/spielvorschau-rb-leipzig-vs-fc-augsburg-bundesliga-am-7-november-2026",
-          "source": "RB Leipzig"
+          "title": "Emery says Man Utd are on 'same level as Barcelona' ahead of major decision",
+          "url": "https://www.thesun.co.uk/sport/40944737/unai-emery-aston-villa-man-utd-barcelona/",
+          "source": "The Sun"
         }
       ]
     }
   ],
   "dropped": [
-    {
-      "title": "wrexham vs wolves",
-      "why": "unsafe: 'Betting'"
-    },
     {
       "title": "mogadishu",
       "why": "unsafe: 'war'"
