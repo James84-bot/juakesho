@@ -9,6 +9,20 @@
 .has-photo { --ph: {{ H }}px; }
 .photo { animation: kb {{ BT.t + 1 }}s linear both !important; }
 @keyframes kb { from { scale: 1.02; } to { scale: 1.14; } }
+{% if not photo_band and not video_bg and beats|length > 1 %}
+/* a new shot on every line: the photo cuts to a different framing (wide, then closer, left, right) at each beat
+   and drifts in during it, so the picture changes every ~2 seconds instead of sitting still for the whole Reel */
+{% set FR = [(1.04, 0, 0), (1.28, -6, 4), (1.18, 6, -3), (1.36, 0, 6), (1.12, -4, -4), (1.24, 5, 3)] %}
+{% set T = BT.t + 1 %}
+@keyframes cam {
+{% for b in beats %}{% set i = loop.index0 %}{% set f = FR[i % (FR | length)] %}
+{% set a = BT.starts[i] / T * 100 %}{% set e = (BT.starts[i + 1] if not loop.last else T) / T * 100 - 0.02 %}
+  {{ '%.3f' % a }}% { scale: {{ f[0] }}; translate: {{ f[1] }}% {{ f[2] }}%; }
+  {{ '%.3f' % e }}% { scale: {{ '%.2f' % (f[0] + 0.05) }}; translate: {{ '%.1f' % (f[1] * 0.85) }}% {{ '%.1f' % (f[2] * 0.85) }}%; }
+{% endfor %}
+}
+.photo { animation: cam {{ T }}s linear both !important; transform-origin: 50% var(--fy, 30%); }
+{% endif %}
 .photo-fade { height: 100% !important; background: linear-gradient(to bottom, color-mix(in srgb, var(--bg) 78%, transparent) 0,
   color-mix(in srgb, var(--bg) 18%, transparent) 16%, color-mix(in srgb, var(--bg) 30%, transparent) 40%,
   color-mix(in srgb, var(--bg) 42%, transparent) 62%, color-mix(in srgb, var(--bg) 90%, transparent) 100%) !important; }
@@ -59,6 +73,12 @@
 .bars i:nth-child({{ loop.index }}) b { animation: fill {{ d }}s linear {{ s }}s both; }
 {% endfor %}
 .beat .t { animation: slam .22s cubic-bezier(.2, .9, .25, 1.1) both; }
+/* between lines: a fast brand-red wipe crosses the frame, and the photo cuts to its next shot behind it */
+.wipe { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; z-index: 4; background: var(--shuka-600);
+  translate: -101% 0; pointer-events: none; }
+@keyframes wipe { 0% { translate: -101% 0; } 50% { translate: 0 0; } 100% { translate: 101% 0; } }
+{% for b in beats %}{% if not loop.first %}.w{{ loop.index }} { animation: wipe .26s cubic-bezier(.6, 0, .4, 1) {{ '%.2f' % (BT.starts[loop.index0] - 0.13) }}s both; }
+{% endif %}{% endfor %}
 /* the first line is fully on screen from the first frame: it is the thumbnail and the reason to stay */
 .b1, .b1 .t { animation: none !important; opacity: 1; }
 .b1 { animation: {{ 'none' if beats|length == 1 else 'show ' ~ BT.durs[0] ~ 's linear both' }} !important; }
@@ -67,9 +87,10 @@
 {% block footer %}
   {% if context_line %}<div class="ctx">{{ context_line }}</div>{% endif %}
   <div class="bars">{% for b in beats %}<i><b></b></i>{% endfor %}</div>
+  {% for b in beats %}{% if not loop.first %}<i class="wipe w{{ loop.index }}"></i>{% endif %}{% endfor %}
   <div class="stage">
     {% for b in beats %}{% set s = BT.starts[loop.index0] %}
-    <div class="beat b{{ loop.index }}">{% for w, m in beat_tokens(b) %}<span class="t{{ ' m' if m }}" style="animation-delay: {{ '%.2f' % (s + loop.index0 * 0.035) }}s">{{ w }}</span>{% endfor %}</div>
+    {% set first = loop.first %}<div class="beat b{{ loop.index }}">{% for w, m in beat_tokens(b) %}{% set at = s + loop.index0 * 0.035 %}<span class="t{{ ' m' if m }}" style="animation-delay: {{ '%.2f' % at }}s"{% if m and counts(w) and not first %} data-count data-t0="{{ '%.2f' % (at + 0.05) }}" data-t1="{{ '%.2f' % (at + 0.95) }}"{% endif %}>{{ w }}</span>{% endfor %}</div>
     {% endfor %}
   </div>
   {% if chart %}{% set top = chart | map(attribute='rise') | max %}

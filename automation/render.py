@@ -185,6 +185,15 @@ def beat_tokens(text: str) -> list[tuple[str, bool]]:
     return out
 
 
+def counts(word: str) -> bool:
+    """A marked word that is a figure ("Sh32.", "56.7%", "557,930", "*3*"): it counts up on screen. A year does not."""
+    m = re.match(r"^\D*?(\d[\d,]*(?:\.\d+)?)\D*$", str(word))
+    if not m:
+        return False
+    n = float(m.group(1).replace(",", ""))
+    return not (re.fullmatch(r"\d{4}[.,]?", str(word)) and 1900 <= n <= 2100)
+
+
 def _fitted(text) -> str:
     """For measuring: each *marker* edge counts as a narrow glyph, covering the marker's side padding."""
     return str(text).replace("*", "i")
@@ -241,7 +250,7 @@ def make_env() -> Environment:
     env.filters["nb"] = nobreak
     env.filters["mark"] = mark
     env.filters["plain"] = plain
-    env.globals.update(beat_seconds=beat_seconds, beat_tokens=beat_tokens)
+    env.globals.update(beat_seconds=beat_seconds, beat_tokens=beat_tokens, counts=counts)
     env.globals.update(GLOW=Markup(bk.GLOW_DEFS), comic_layout=comic_layout, C=bk.C, ON=bk.ON, fit=fit, fitw=fitw, radius=radius, brand=bk.BRAND)
     return env
 
