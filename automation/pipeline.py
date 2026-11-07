@@ -1955,6 +1955,11 @@ def _main(argv: list[str] | None = None) -> int:
             import news
             n = news.collect()
             log(f"news: {len(n['items'])} stories, errors {n['errors'] or 'none'}")
+            mix: dict[str, int] = {}
+            for x in n["items"]:
+                mix[x["topic"]] = mix.get(x["topic"], 0) + 1
+            print("::notice title=news mix::" + ", ".join(f"{k} {v}" for k, v in sorted(mix.items(), key=lambda kv: -kv[1]))
+                  + (f" | feeds down: {', '.join(n['errors'])}" if n["errors"] else ""))
             for topic in sorted(news.SERIES_TOPICS):   # what the everyday series can be built on this week
                 got = [x["title"][:70] for x in n.get("series", []) if x["topic"] == topic]
                 print(f"::notice::series material, {topic}: {len(got)}" + (" | " + " | ".join(got[:3]) if got else ""))
