@@ -75,6 +75,7 @@ class SignIn(unittest.TestCase):
         self.assertEqual(q["scope"], ["user.info.basic,video.publish"])
         self.assertEqual(q["redirect_uri"], ["https://james84-bot.github.io/juakesho/"])
         self.assertEqual(q["state"], ["st"])
+        self.assertEqual(q["disable_auto_auth"], ["1"])
 
     def test_code_from_decodes_and_checks_state(self):
         url = "https://james84-bot.github.io/juakesho/?code=ab%2Acd%21&scopes=x&state=st"

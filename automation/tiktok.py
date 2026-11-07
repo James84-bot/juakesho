@@ -171,7 +171,8 @@ def upload(video: Path, title: str, wait: int = 150) -> dict:
 def authorize_url(client_key: str, state: str) -> str:
     return AUTHORIZE_URL + "?" + urllib.parse.urlencode({
         "client_key": client_key, "response_type": "code", "scope": SCOPES,
-        "redirect_uri": REDIRECT_URI, "state": state})
+        "redirect_uri": REDIRECT_URI, "state": state,
+        "disable_auto_auth": "1"})   # always show the approval screen, even for an account that approved before
 
 
 def code_from(pasted: str, state: str) -> str:
