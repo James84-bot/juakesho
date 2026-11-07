@@ -755,11 +755,21 @@ def clip_moment(segments: list[dict], post: dict, length: float, span: float = 8
     return round(best_at, 2), round(min(length, best_at + span), 2)
 
 
+def cut_footage(ff: str, src: Path, a: float, b: float, out: Path) -> bool:
+    """The TV window as silent, full-screen-ready footage (the composer crops it to 9:16 and lays our lines over it)."""
+    import subprocess
+    r = subprocess.run([ff, "-y", "-loglevel", "error", "-ss", f"{a:.2f}", "-i", str(src), "-t", f"{b - a:.2f}", "-an",
+                        "-vf", "scale='min(1920,iw)':-2,fps=30,format=yuv420p", "-c:v", "libx264", "-preset", "medium",
+                        "-crf", "20", "-movflags", "+faststart", str(out)], capture_output=True, text=True)
+    return r.returncode == 0 and out.exists() and out.stat().st_size > 10_000
+
+
 def tvclip_work(payload: dict) -> str:
     """A TV clip your computer fetched for a news post (tvclip_local.py): it was sent to the bot, this takes it by
-    its Telegram file id and makes the post's Reel again as hook line, then up to 8 s of the station's footage with
-    live captions and the station named, then the rest of the lines. The post's status and slot don't change.
-    Returns what happened, in one line."""
+    its Telegram file id and makes the post's Reel again in the house design: the real news photo on the first line,
+    then the station's footage filling the screen behind the next lines (up to 8 s of it, labelled with the station),
+    with the music, motion and sound of every Reel. The post's status and slot don't change. Returns one line."""
+    import photos
     import tazama
     import video
     pid, file_id = str(payload.get("post", "")), str(payload.get("file_id", ""))
@@ -777,34 +787,42 @@ def tvclip_work(payload: dict) -> str:
     if not post.get("beats") or (not sample and post["status"] not in {"rendered", "awaiting", "approved"}):
         return f"{pid}: {post['status']}, left as it is"
     label = data["collection"]
+    out_dir = SAMPLES if sample else EXPORTS / label
     if sample:
         import draft as drafter
         post = drafter.tidy_beats(drafter.attribute_single_source({k: v for k, v in post.items() if k not in SAMPLE_DROP}))
         post["id"] = f"{pid}-tvsample"
-    info = {"rights": "quote", "credit": channel, "source": str(payload.get("url") or ""), "evidence": f"nukuu {channel}",
-            "note": ""}
+        post = drafter.rewrite_script(post) or post   # today's writing rules, as a new post would get them
+    out_dir.mkdir(parents=True, exist_ok=True)
+    ff = video.ffmpeg_bin()
     with tempfile.TemporaryDirectory() as tmp:
         src = Path(tmp) / "tv.mp4"
         tazama.download(_tg_file_path, need("TELEGRAM_BOT_TOKEN")["TELEGRAM_BOT_TOKEN"], file_id, src)
-        meta = tazama.probe(video.ffmpeg_bin(), src)
-        segments = tazama.transcribe(src)
-        a, b = clip_moment(segments, post, meta["duration"])
-        beats = [str(x) for x in post["beats"]]
-        reel = {**post, "template": "tazama", "headline": beats[0], "hook": beats[:1], "verdict": beats[1:5],
-                "start": a, "end": b, "credit": channel}
-        tazama.make(reel, info, src, segments, SAMPLES if sample else EXPORTS / label)
+        meta = tazama.probe(ff, src)
+        a, b = clip_moment(tazama.transcribe(src), post, meta["duration"])
+        footage = out_dir / "videos" / f"{post['id']}-tv.mp4"
+        footage.parent.mkdir(parents=True, exist_ok=True)
+        if not cut_footage(ff, src, a, b, footage):
+            return f"{pid}: the TV clip could not be cut"
+    photos.attach([post], out_dir)   # this runner's copy of the story's photos (the lead one opens the Reel)
+    for k in ("video_file", "video_credit", "video_source"):
+        post.pop(k, None)
+    if post.get("photo_file"):   # photo first, then the station's footage behind the lines that follow
+        post.update(broll_file=str(footage), broll_credit="", broll_label=f"Footage: {channel}")
+    else:                        # no photo of the story: the footage carries the whole Reel
+        post.update(video_file=str(footage), video_credit=f"Footage: {channel}")
+    post["clip_credit"] = f"Clip: {channel}, short excerpt for news reporting"
+    video.make_reels([post], out_dir)
     if sample:
-        mp4 = SAMPLES / f"{post['id']}.mp4"
         qa_sheets([post])   # a contact sheet in exports/_qa, to check by eye
         tg("sendVideo", {"chat_id": need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"], "parse_mode": "HTML",
                          "supports_streaming": "true",
-                         "caption": f"🧪 <b>Sample, not posted</b>: {_esc(pid)} with {_esc(channel)}'s footage, "
-                                    f"{b - a:.0f} s from {a:.0f} s into their clip"}, {"video": mp4})
-        return f"{pid}: sample with {channel} clip {a:.1f}-{b:.1f}s sent"
-    post.update(tv_clip_used={"channel": channel, "url": info["source"], "window": [a, b]},
-                clip_credit=f"Clip: {channel}, short excerpt for news reporting")
+                         "caption": f"🧪 <b>Sample, not posted</b>: {_esc(pid)} with {_esc(channel)}'s footage behind "
+                                    f"the lines ({b - a:.0f} s of their clip)"}, {"video": out_dir / f"{post['id']}.mp4"})
+        return f"{pid}: sample with {channel} footage {a:.1f}-{b:.1f}s sent"
+    post["tv_clip_used"] = {"channel": channel, "url": str(payload.get("url") or ""), "window": [a, b]}
     save_week(data)
-    return f"{pid}: {channel} clip {a:.1f}-{b:.1f}s added"
+    return f"{pid}: {channel} footage {a:.1f}-{b:.1f}s added"
 
 
 def process_clips(dry_run: bool = False) -> int:

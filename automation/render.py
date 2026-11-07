@@ -328,10 +328,11 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
     ctx["photo_fy"] = 30
     # a beat Reel with real footage: frames are drawn transparent and video.py lays them over the moving clip
     vf = post.get("video_file")
-    full_footage = bool(post["template"] == "reel" and vf and Path(vf).exists())
+    full_footage = bool(post["template"] == "reel" and vf and Path(vf).is_file())
     bf = post.get("broll_file")
-    ctx["broll"] = bool(post["template"] == "reel" and not full_footage and bf and Path(bf).exists() and ctx.get("photo_uri"))
+    ctx["broll"] = bool(post["template"] == "reel" and not full_footage and bf and Path(bf).is_file() and ctx.get("photo_uri"))
     ctx["video_bg"] = full_footage or ctx["broll"]   # frames drawn transparent where the footage shows through
+    ctx["footage_label"] = str(post.get("broll_label") or "Illustrative footage")
     ctx["video_credit"] = (post.get("video_credit") or "") if full_footage else ""
     ctx["shots"], ctx["seq"] = [], []
     if ctx.get("photo_uri") and not full_footage:
@@ -341,7 +342,7 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         ctx["photo_fy"] = focus_y(shown)
         if post["template"] == "reel" and not post.get("person_file"):
             # a beat Reel shows every picture of the story it has, a different one on each line
-            paths = [shown] + [Path(f) for f in post.get("extra_photos") or [] if Path(f).exists()]
+            paths = [shown] + [Path(f).resolve() for f in post.get("extra_photos") or [] if f and Path(f).is_file()]
             ctx["shots"] = [{"uri": f.as_uri(), "fy": focus_y(f) if i else ctx["photo_fy"]} for i, f in enumerate(paths)]
             bands = [photo_band(f, W) for f in paths]
             ctx["photo_band"] = max(bands) if any(bands) else 0   # one layout for all: small pictures sit in a band

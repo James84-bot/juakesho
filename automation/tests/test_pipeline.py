@@ -459,46 +459,61 @@ class LearnYouTubeTests(TempWeeks):
 
 
 class TvClipWorkTests(TempWeeks):
-    def test_a_tv_clip_remakes_the_reel_and_changes_nothing_else(self):
+    def run_work(self, payload, photo=True):
+        import photos
         import tazama
-        self.week([{"id": "p", "status": "approved", "publish_at": "2026-11-08T12:45:00+03:00", "template": "sauti",
-                    "beats": ["Sugar just got *Sh32* cheaper.", "Factories milled 56.7% more.", "Has your shop dropped it?"],
-                    "message": "Sugar is Sh32 cheaper."},
-                   {"id": "q", "status": "published", "beats": ["a", "b", "c"], "publish_at": "2026-11-07T12:45:00+03:00"}])
-        made = []
+        import video
+        made, sent = [], []
+
+        def attach(posts, out):
+            for p in posts:
+                if photo:
+                    p["photo_file"] = "/x/p.jpg"
         with mock.patch.object(tazama, "download", lambda *a: None), \
              mock.patch.object(tazama, "probe", lambda ff, src: {"duration": 120.0, "w": 1280, "h": 720, "audio": True}), \
              mock.patch.object(tazama, "transcribe", lambda src: [{"start": 30.0, "end": 36.0, "text": "sugar prices fall"}]), \
-             mock.patch.object(tazama, "make", lambda reel, info, src, segs, out: made.append((reel, info))), \
-             mock.patch.object(pl, "need", lambda *k: {"TELEGRAM_BOT_TOKEN": "t"}):
-            note = pl.tvclip_work({"post": "p", "file_id": "F", "channel": "Citizen TV", "url": "https://youtu.be/x"})
-            self.assertEqual(pl.tvclip_work({"post": "q", "file_id": "F"}), "q: published, left as it is")
-        self.assertEqual(note, "p: Citizen TV clip 30.0-38.0s added")
-        reel, info = made[0]
-        self.assertEqual((reel["hook"], reel["verdict"][0], info["rights"], info["credit"]),
-                         (["Sugar just got *Sh32* cheaper."], "Factories milled 56.7% more.", "quote", "Citizen TV"))
+             mock.patch.object(pl, "cut_footage", lambda ff, src, a, b, out: True), \
+             mock.patch.object(photos, "attach", attach), \
+             mock.patch.object(video, "make_reels", lambda posts, out: made.append((dict(posts[0]), out))), \
+             mock.patch.object(pl, "qa_sheets", lambda posts: None), \
+             mock.patch.object(pl, "tg", lambda *a, **k: sent.append(a)), \
+             mock.patch.object(pl, "need", lambda *k: {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "1"}):
+            note = pl.tvclip_work(payload)
+        return note, made, sent
+
+    def week_with(self):
+        self.week([{"id": "p", "status": "approved", "publish_at": "2026-11-08T12:45:00+03:00", "template": "sauti",
+                    "beats": ["Sugar just got *Sh32* cheaper.", "Factories milled 56.7% more.", "Has your shop dropped it?"],
+                    "message": "Sugar is Sh32 cheaper.", "photo_query": "sugar"},
+                   {"id": "q", "status": "published", "beats": ["a", "b", "c"], "publish_at": "2026-11-07T12:45:00+03:00"}])
+
+    def test_the_footage_fills_the_screen_after_the_news_photo_and_nothing_else_changes(self):
+        self.week_with()
+        note, made, _ = self.run_work({"post": "p", "file_id": "F", "channel": "Citizen TV", "url": "https://youtu.be/x"})
+        self.assertEqual(note, "p: Citizen TV footage 30.0-38.0s added")
+        reel, out = made[0]
+        self.assertEqual((reel["broll_label"], reel.get("video_file")), ("Footage: Citizen TV", None))
+        self.assertTrue(reel["broll_file"].endswith("p-tv.mp4"))
         p = pl.load_week("2026-W41")["posts"][0]
         self.assertEqual((p["status"], p["template"], p["tv_clip_used"]["window"]), ("approved", "sauti", [30.0, 38.0]))
         self.assertIn("📺 Clip: Citizen TV", pl.receipts_comment({**p, "source": "Capital FM, 2026-11-07"}))
+        self.assertEqual(self.run_work({"post": "q", "file_id": "F"})[0], "q: published, left as it is")
 
+    def test_without_a_photo_the_footage_carries_the_whole_reel(self):
+        self.week_with()
+        _, made, _ = self.run_work({"post": "p", "file_id": "F", "channel": "NTV Kenya"}, photo=False)
+        self.assertEqual(made[0][0]["video_credit"], "Footage: NTV Kenya")
+        self.assertNotIn("broll_file", made[0][0])
 
-class TvClipSampleTests(TempWeeks):
     def test_a_sample_on_a_published_post_is_sent_and_changes_nothing(self):
-        import tazama
-        self.week([{"id": "q", "status": "published", "publish_at": "2026-11-07T12:45:00+03:00", "template": "sauti",
-                    "beats": ["Sugar just got *Sh32* cheaper.", "b c.", "d e."], "ig_id": "1"}])
-        sent, made = [], []
-        with mock.patch.object(tazama, "download", lambda *a: None), \
-             mock.patch.object(tazama, "probe", lambda ff, src: {"duration": 60.0, "w": 1280, "h": 720, "audio": True}), \
-             mock.patch.object(tazama, "transcribe", lambda src: []), \
-             mock.patch.object(tazama, "make", lambda reel, info, src, segs, out: made.append((reel["id"], out))), \
-             mock.patch.object(pl, "tg", lambda *a, **k: sent.append(a)), \
-             mock.patch.object(pl, "need", lambda *k: {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "1"}):
-            note = pl.tvclip_work({"post": "q", "file_id": "F", "channel": "NTV Kenya", "sample": True})
-        self.assertEqual(note, "q: sample with NTV Kenya clip 2.0-10.0s sent")
-        self.assertEqual(made[0], ("q-tvsample", pl.SAMPLES))
+        import draft
+        self.week_with()
+        with mock.patch.object(draft, "rewrite_script", lambda p: None):
+            note, made, sent = self.run_work({"post": "q", "file_id": "F", "channel": "NTV Kenya", "sample": True})
+        self.assertEqual(note, "q: sample with NTV Kenya footage 2.0-10.0s sent")
+        self.assertEqual((made[0][0]["id"], made[0][1]), ("q-tvsample", pl.SAMPLES))
         self.assertEqual(sent[0][0], "sendVideo")
-        self.assertNotIn("tv_clip_used", pl.load_week("2026-W41")["posts"][0])   # the real post is untouched
+        self.assertNotIn("tv_clip_used", pl.load_week("2026-W41")["posts"][1])   # the real post is untouched
 
 
 class SampleTests(TempWeeks):

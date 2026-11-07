@@ -34,8 +34,8 @@
 {% endif %}
 {% if broll %}
 /* the moving footage shows through where no photo is drawn; it illustrates the subject, it is not the place */
-.footage-tag { position: absolute; right: 26px; top: 300px; z-index: 3; font: 600 22px/1 "Inter"; color: rgba(255, 255, 255, .8);
-  writing-mode: vertical-rl; rotate: 180deg; letter-spacing: .04em; opacity: 0; }
+.footage-tag { position: absolute; left: var(--m); top: 300px; z-index: 3; font: 700 24px/1 "Inter"; color: #fff;
+  background: rgba(14, 12, 11, .62); padding: 8px 12px; border-radius: 4px; letter-spacing: .03em; opacity: 0; }
 {% endif %}
 {% if shots %}
 /* the pictures are drawn here (not by the base layer) so every one of them can move and take its turn */
@@ -119,7 +119,7 @@
 {% block top %}<span class="tag live">{{ kicker }}</span><img src="{{ logo_on_dark }}" alt="Kenya on Record">{% endblock %}
 {% block footer %}
   {% if context_line %}<div class="ctx">{{ context_line }}</div>{% endif %}
-  {% if broll %}<span class="footage-tag">Illustrative footage</span>{% endif %}
+  {% if broll %}<span class="footage-tag">{{ footage_label }}</span>{% endif %}
   {% for sh in shots %}<div class="shot sh{{ loop.index0 }}" style="--sfy: {{ sh.fy }}%">
     {% if photo_band %}<div class="blur" style="background-image: url('{{ sh.uri }}')"></div><div class="box"><img class="cam" src="{{ sh.uri }}" alt=""></div>
     {% else %}<div class="full cam" style="background-image: url('{{ sh.uri }}')"></div>{% endif %}
