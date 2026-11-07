@@ -1589,6 +1589,7 @@ def _tiktok_post(label: str, post: dict) -> bool:
     try:
         res = tiktok.upload(video, caption_for(post))
         post["tt_id"] = res["publish_id"]
+        post["tt_status"] = f"{res['status']} {res['fail_reason']}".strip() + f" ({res['privacy']})"
         public = res["privacy"] == "PUBLIC_TO_EVERYONE" and res["status"] != "FAILED"
         if res["status"] == "FAILED":
             _notify(f"⚠️ TikTok rejected <b>{_esc(post['id'])}</b>: {_esc(res['fail_reason'] or 'no reason given')}")
@@ -2185,7 +2186,7 @@ def _main(argv: list[str] | None = None) -> int:
             print("::error title=tiktoksend::No published Reel with a video file was found")
             return 1
         public = _tiktok_post(*latest)
-        print(f"::notice title=tiktoksend::{latest[1]['id']} sent; public={public}; tt_id={latest[1].get('tt_id')}")
+        print(f"::notice title=tiktoksend::{latest[1]['id']} sent; public={public}; tt_id={latest[1].get('tt_id')}; status={latest[1].get('tt_status')}")
         if not latest[1].get("tt_id"):
             print(f"::error title=tiktoksend::{latest[1].get('tt_error') or 'no upload id and no error'}")
             return 1
