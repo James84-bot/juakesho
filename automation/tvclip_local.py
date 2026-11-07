@@ -78,11 +78,12 @@ def keywords(post: dict, n: int = 6) -> list[str]:
     return out[:n]
 
 
-def matches(title: str, post: dict) -> bool:
-    """A TV story about the same thing: two of the post's keywords in its title (a name counts double)."""
+def matches(title: str, post: dict, need: int = 3) -> bool:
+    """A TV story about the same event: its title shares a name and another keyword with the post, or three keywords
+    (a name counts double). "Ebola" alone would put a burial clip on a recovery story; "Mariga" + "FKF" is the event."""
     low = title.lower()
     score = sum(2 if k[0].isupper() else 1 for k in keywords(post) if k.lower()[:6] in low)
-    return score >= 2
+    return score >= need
 
 
 def search_clip(post: dict, ff: str) -> dict | None:

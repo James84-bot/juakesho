@@ -795,6 +795,7 @@ def tvclip_work(payload: dict) -> str:
         tazama.make(reel, info, src, segments, SAMPLES if sample else EXPORTS / label)
     if sample:
         mp4 = SAMPLES / f"{post['id']}.mp4"
+        qa_sheets([post])   # a contact sheet in exports/_qa, to check by eye
         tg("sendVideo", {"chat_id": need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"], "parse_mode": "HTML",
                          "supports_streaming": "true",
                          "caption": f"🧪 <b>Sample, not posted</b>: {_esc(pid)} with {_esc(channel)}'s footage, "

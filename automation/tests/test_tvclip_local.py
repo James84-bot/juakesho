@@ -30,6 +30,9 @@ class Helper(unittest.TestCase):
         self.assertIn("Mariga", tl.keywords(p))
         self.assertTrue(tl.matches("Mariga na maafisa 6 wa baraza kuu la FKF watimuliwa", p))   # names work in Swahili
         self.assertFalse(tl.matches("Shabana yaizamisha Mombasa United 3-2", p))
+        ebola = {"message": "Kenya has marked 18 days without a new Ebola case. All six patients recovered."}
+        self.assertFalse(tl.matches("Burial of Kenya's first Ebola patient. Were protocols observed?", ebola))   # same topic, other event
+        self.assertTrue(tl.matches("Ebola: all six patients recovered, 18 days without new cases", ebola))
 
     def test_reads_this_week_and_on_sunday_the_next(self):
         self.assertEqual(tl.week_labels(dt.datetime(2026, 11, 7, 10, tzinfo=tl.EAT)), ["2026-W45"])
