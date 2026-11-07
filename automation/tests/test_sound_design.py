@@ -35,3 +35,11 @@ class SoundDesign(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Counting(unittest.TestCase):
+    def test_amounts_count_up_phone_lines_days_and_years_do_not(self):
+        for w in ("Sh32.", "*Sh32*", "56.7%,", "Sh4bn", "557,930", "KSh1,200", "40%", "3.2m"):
+            self.assertTrue(render.counts(w), w)
+        for w in ("719", "18", "2026", "2kg", "six", "M-Pesa", "n3"):
+            self.assertFalse(render.counts(w), w)

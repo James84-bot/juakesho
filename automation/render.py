@@ -185,13 +185,15 @@ def beat_tokens(text: str) -> list[tuple[str, bool]]:
     return out
 
 
+COUNTABLE = re.compile(r"^(?:K?Sh|\$|US\$)\s?\d|^\d[\d,]*(?:\.\d+)?\s?(?:%|(?:pc|bn|b|m|k|million|billion|trillion)\b)|"
+                       r"^\d{1,3}(?:,\d{3})+", re.I)
+
+
 def counts(word: str) -> bool:
-    """A marked word that is a figure ("Sh32.", "56.7%", "557,930", "*3*"): it counts up on screen. A year does not."""
-    m = re.match(r"^\D*?(\d[\d,]*(?:\.\d+)?)\D*$", str(word))
-    if not m:
-        return False
-    n = float(m.group(1).replace(",", ""))
-    return not (re.fullmatch(r"\d{4}[.,]?", str(word)) and 1900 <= n <= 2100)
+    """A marked figure that is an amount ("Sh32", "56.7%", "Sh4bn", "557,930"): it counts up on screen. A phone
+    line (719), a day count, a year or a code is not an amount and never rolls."""
+    w = re.sub(r"^[^\w$]+|[^\w%]+$", "", str(word))
+    return bool(COUNTABLE.match(w))
 
 
 def _fitted(text) -> str:

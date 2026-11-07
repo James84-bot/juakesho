@@ -319,13 +319,30 @@ def _ranked(post: dict) -> list[tuple[int, dict]]:
     return [(s, x) for s, x in ranked if s > 0 and (not story or same_story(x["title"], story))][:5]
 
 
+COUNTRIES = ("Uganda", "Tanzania", "Rwanda", "Burundi", "Ethiopia", "Somalia", "South Sudan", "Sudan", "DRC", "Congo",
+             "Nigeria", "Ghana", "South Africa", "Egypt", "Zambia", "Zimbabwe", "Malawi", "Mozambique", "Eritrea",
+             "Djibouti", "Senegal", "Ivory Coast", "Cameroon", "Morocco", "Algeria", "Libya", "Tunisia", "Angola",
+             "Namibia", "Botswana", "US", "USA", "America", "UK", "Britain", "China", "India", "Russia", "Ukraine",
+             "Israel", "Gaza", "Iran", "Haiti", "Qatar", "Saudi Arabia", "UAE", "Dubai", "Germany", "France", "Japan")
+
+
+def guard_text(post: dict) -> str:
+    import guard
+    return guard._all_text(post)
+
+
 def find_more(post: dict, have: list[str], n: int = 2) -> list[tuple[bytes, dict]]:
     """More photos of the same story from the other reports (a different picture each, never the same report
     twice), so a Reel can show a new picture on each line. `have`: report links already used."""
     import hashlib
     out, seen_links, seen_imgs = [], set(have), set()
+    told = guard_text(post)
     for s, item in _ranked(post):
         if len(out) >= n or item["link"] in seen_links:
+            continue
+        elsewhere = [c for c in COUNTRIES if re.search(rf"\b{c}\b", item["title"], re.I) and not re.search(rf"\b{c}\b", told, re.I)]
+        if elsewhere:   # "Nigeria records first Ebola case" is another country's picture, not this story's
+            _note(f"    not {item['outlet']}: about {elsewhere[0]} ({item['title'][:60]})")
             continue
         got = _photo_of(item)
         if not got:

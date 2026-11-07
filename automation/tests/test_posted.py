@@ -263,3 +263,17 @@ class Band(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class MorePhotos(unittest.TestCase):
+    def test_other_reports_of_the_story_give_new_pictures_never_another_country_or_a_repeat(self):
+        post = {"id": "p", "message": "Kenya has gone 18 days without a new Ebola case.", "beats": ["a", "b", "c"]}
+        items = [(6, {"outlet": "A", "link": "https://a/1", "title": "Kenya goes 18 days without Ebola"}),
+                 (5, {"outlet": "B", "link": "https://b/2", "title": "Nigeria records first Ebola case"}),
+                 (5, {"outlet": "C", "link": "https://c/3", "title": "Ebola patients discharged in Kenya"}),
+                 (4, {"outlet": "D", "link": "https://d/4", "title": "Kenya Ebola recovery: what next"})]
+        imgs = {"https://a/1": b"lead", "https://c/3": b"one", "https://d/4": b"one"}   # D repeats C's picture
+        with mock.patch.object(posted, "_ranked", lambda p: items), \
+             mock.patch.object(posted, "_photo_of", lambda it: (imgs.get(it["link"], b"x"), {"credit": it["outlet"]})):
+            got = posted.find_more(post, ["https://a/1"], n=2)
+        self.assertEqual([info["credit"] for _, info in got], ["C"])   # A used, B elsewhere, D the same picture
