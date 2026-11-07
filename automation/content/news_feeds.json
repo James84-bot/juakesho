@@ -63,6 +63,31 @@
       "url": "https://news.google.com/rss/search?q=Kenya+(scam+OR+scammers+OR+fraudsters+OR+conmen+OR+phishing)+when%3A14d&hl=en-KE&gl=KE&ceid=KE%3Aen",
       "topic": "scams",
       "days": 14
+    },
+    {
+      "name": "Google News: sport",
+      "url": "https://news.google.com/rss/search?q=Kenya+football+OR+%22Harambee+Stars%22+OR+athletics+OR+marathon+OR+rugby+OR+volleyball+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "sport"
+    },
+    {
+      "name": "Google News: entertainment",
+      "url": "https://news.google.com/rss/search?q=Kenyan+musician+OR+Kenyan+artist+OR+Kenyan+film+OR+Kenyan+comedian+OR+Nairobi+concert+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "entertainment"
+    },
+    {
+      "name": "Google News: tech and jobs",
+      "url": "https://news.google.com/rss/search?q=Kenya+startup+OR+M-Pesa+OR+%22Safaricom%22+OR+jobs+OR+%22artificial+intelligence%22+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "tech"
+    },
+    {
+      "name": "Google News: health",
+      "url": "https://news.google.com/rss/search?q=Kenya+hospital+OR+SHA+OR+health+OR+outbreak+OR+%22Ministry+of+Health%22+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "health"
+    },
+    {
+      "name": "Google News: Kenyan wins",
+      "url": "https://news.google.com/rss/search?q=Kenyan+wins+OR+Kenyan+award+OR+%22first+Kenyan%22+OR+Kenyan+record+when%3A5d&hl=en-KE&gl=KE&ceid=KE%3Aen",
+      "topic": "pride"
     }
   ]
 }

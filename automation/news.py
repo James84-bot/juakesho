@@ -72,6 +72,35 @@ def newsroom(outlet: str) -> bool:
     return bool(NEWSROOMS.match((outlet or "").strip()))
 
 
+PER_TOPIC = 8   # newest headlines kept per topic, so sport or health never get crowded out by politics
+
+
+def _per_topic(items: list[dict], cap: int) -> list[dict]:
+    """Keeps the `cap` newest items of each topic; `items` arrive newest first and leave newest first."""
+    seen: dict[str, int] = {}
+    out = []
+    for x in items:
+        n = seen.get(x["topic"], 0)
+        if n < cap:
+            seen[x["topic"]] = n + 1
+            out.append(x)
+    return out
+
+
+def _spread(items: list[dict], limit: int) -> list[dict]:
+    """Takes turns across topics, newest first within each, so the writer's headline list is a mix of what
+    Kenyans talk about (politics, money, sport, music, health, jobs, wins) and not just the newest politics."""
+    queues: dict[str, list[dict]] = {}
+    for x in items:
+        queues.setdefault(x.get("topic", "politics"), []).append(x)
+    out = []
+    while len(out) < limit and any(queues.values()):
+        for q in queues.values():
+            if q and len(out) < limit:
+                out.append(q.pop(0))
+    return out
+
+
 def collect() -> dict:
     cfg = json.loads(FEEDS.read_text(encoding="utf-8"))
     now = dt.datetime.now(dt.timezone.utc)
@@ -92,7 +121,8 @@ def collect() -> dict:
     items.sort(key=lambda x: x["published"], reverse=True)
     # material for the everyday series (material.py) is kept apart, so it never crowds the writer's headlines
     series = [x for x in items if x["topic"] in SERIES_TOPICS][:45]
-    general = [x for x in items if x["topic"] not in SERIES_TOPICS][:60]
+    general = [x for x in items if x["topic"] not in SERIES_TOPICS]
+    general = _per_topic(general, PER_TOPIC)
     data = {"fetched": now.isoformat(), "items": general, "series": series, "errors": errors}
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
@@ -107,7 +137,7 @@ def refs(max_items: int = MAX_ITEMS) -> dict[str, dict]:
     if not OUT.exists():
         return {}
     data = json.loads(OUT.read_text(encoding="utf-8"))
-    return {f"n{i + 1}": x for i, x in enumerate(data.get("items", [])[:max_items])}
+    return {f"n{i + 1}": x for i, x in enumerate(_spread(data.get("items", []), max_items))}
 
 
 def prompt_block(max_items: int = MAX_ITEMS, max_age_hours: int = 30) -> str:
