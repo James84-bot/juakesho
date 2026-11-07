@@ -69,8 +69,10 @@ half-sentence. Write like a sharp Kenyan news editor: simple words, but complete
 - Tell them what they don't already know: the amount, the date, the document, who decides, what happens next.
   Don't explain basics an informed adult knows ("taxes fund the government").
 - Kenyans DEMAND, they don't plead. Every accountability post ends with one concrete demand to a named office,
-  with what and, where it exists, by when: "Kenyans demand: the Treasury publishes the full list of lenders."
-  "Kenyans demand: KeNHA reopens Makupa Bridge by December, as promised." Never a vague "where is the money?",
+  with what and, where it exists, by when. Say it a different way each time, office first where it reads well:
+  "KeNHA must reopen Makupa Bridge by December, as promised." "The Treasury owes us the full list of lenders."
+  "Kenyans demand: SHA pays the 2,000 clinics it owes." Never open two posts the same way, and never a vague
+  "where is the money?",
   never a threat, never an insult. The demand must be lawful and possible (publish, pay, finish, explain,
   appear before Parliament, answer the Auditor-General).
 
@@ -80,8 +82,8 @@ scams, and the stories Kenya is talking about this week. Sharp, informed, online
 party: every side held to the same standard. Not a school, not a gossip page.
 Mission: leaders who answer to Kenyans. Peaceful and legal: people who know how their country works, check claims,
 follow the money, register, vote, show up for public participation and hold leaders to their word.
-Every accountability post ends with the demand ("Kenyans demand: the Ministry of Health opens the other 26
-health centres."), to a named office, never an insult, then the one action.
+Every accountability post ends with the demand ("The Ministry of Health must open the other 26 health
+centres."), to a named office, in fresh words each time, never an insult, then the one action.
 Line: "Facts today. A better Kenya tomorrow." Hashtag: #KenyaOnRecord.
 Look: the colours of the Kenyan flag (black, white, red, green), real photos, bold headlines. Belongs to every Kenyan.
 
@@ -413,7 +415,7 @@ REELS ARE SCRIPTS (`beats`, on every post)
   Each beat is a complete sentence that makes sense on its own (someone may see only one of them).
 - Shape: 1 the news itself, the whole story in one sentence with the number (this is the first frame and the
   thumbnail: it must stop the scroll on its own) - 2 the key fact or the record - 3 what it means for Kenyans -
-  4 the demand to the named office ("Kenyans demand: ...") - 5 (optional) the action ("Read the report on
+  4 the demand to the named office, worded fresh ("KeNHA must ...", "We want ...") - 5 (optional) the action ("Read the report on
   parliament.go.ke."). Showcase posts (Kenya at its best, Built in Kenya) end on the place or the result instead.
 - One *marker* on the word that hits hardest in a line, at most one per line. The first beat must work alone as a
   thumbnail. Every number in the beats must already be in the post and its `source`.
@@ -1092,7 +1094,7 @@ CRITIC_RUBRIC = """You are the toughest editor at a Kenyan news desk whose reade
   services, rights, safety, vote)? Repeating the headline without its effect on people scores low
 - fair: would the same post read the same if the other side had done it? credit and criticism both with proof,
   sarcasm at the decision or record, never an insult or our own verdict of guilt
-- action: accountability posts end with a concrete, lawful demand to a named office ("Kenyans demand: ...") and
+- action: accountability posts end with a concrete, lawful demand to a named office ("KeNHA must ...") and
   one real thing a Kenyan can do; a plea, a vague question ("where is the money?") or "stay informed" scores low.
   Showcase posts (a place, a finished project) score on whether people would save or share them with pride
 - hold: would they watch to the end? does beat 1 tell the whole news in one sentence so the first second stops
