@@ -1560,6 +1560,9 @@ def whatsapp_text(post: dict) -> str:
     return (body + (f"\n\nSource: {src}" if len(src) >= 8 else "") + "\n\nFollow Kenya on Record for more.").strip()
 
 
+SUBSCRIBE_LINE = "\n\nSubscribe to Kenya on Record for a sourced Kenyan fact every day."
+
+
 def _youtube_short(label: str, post: dict) -> None:
     """Send the approved Reel to YouTube Shorts as well. Optional and never fatal: Instagram and Facebook are
     already out by now, so a YouTube problem is reported, not retried into a duplicate."""
@@ -1568,7 +1571,7 @@ def _youtube_short(label: str, post: dict) -> None:
         return
     video = EXPORTS / label / f"{post['id']}.mp4"
     try:
-        desc = caption_for(post)
+        desc = caption_for(post) + SUBSCRIBE_LINE   # a Short that lands on a new viewer should say where more comes from
         res = youtube.upload(video, shorts_title(post), desc)
         post["yt_id"] = res["id"]
         note = "" if res["privacy"] == "public" else (

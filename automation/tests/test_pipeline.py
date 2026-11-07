@@ -419,6 +419,19 @@ class LearnTests(TempWeeks):
         self.assertEqual(rows["r2"]["reach"], 100)   # the main numbers survive the refused metric
 
 
+class YouTubeDescriptionTests(unittest.TestCase):
+    def test_short_description_says_where_to_subscribe(self):
+        import types
+        sent = {}
+        fake = types.SimpleNamespace(ready=lambda: True,
+                                     upload=lambda video, title, desc: sent.update(desc=desc) or {"id": "x", "privacy": "public"})
+        post = {"id": "p", "reel": True, "beats": ["A fact."], "caption": "Cap #KenyaOnRecord"}
+        with mock.patch.dict(sys.modules, {"youtube": fake}), mock.patch.object(pl, "_notify"):
+            pl._youtube_short("2026-W45", post)
+        self.assertIn("Subscribe to Kenya on Record", sent["desc"])
+        self.assertTrue(sent["desc"].startswith("Cap"))
+
+
 class LearnScoreTests(TempWeeks):
     def run_learn(self, posts, reach_likes):
         self.week(posts)
