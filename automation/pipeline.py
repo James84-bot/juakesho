@@ -202,6 +202,7 @@ HOT = {"time": (12, 45), "template": "sauti", "min_lead": dt.timedelta(hours=3)}
 # render), so it goes out on the run your ✅ triggers; unapproved, it expires as usual. At most BREAKING_MAX a day.
 EDITIONS = {"morning": {"time": (9, 45), "suffix": "m", "beat": "life"},
             "midday": {"time": (12, 45), "suffix": "", "beat": "life"},
+            "afternoon": {"time": (15, 30), "suffix": "a", "beat": "life"},
             "evening": {"time": (19, 30), "suffix": "e", "beat": "politics"}}   # six in ten posts are everyday life
 BREAKING_LEAD, BREAKING_MAX = dt.timedelta(minutes=20), 2
 QUIET_FROM = 21   # no news post is planned for 21:00 EAT or later (last week four went out between 22:30 and 01:16 and expired)
@@ -1984,6 +1985,7 @@ def _main(argv: list[str] | None = None) -> int:
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
     ap.add_argument("--morning", action="store_true", help="hot: the morning edition")
+    ap.add_argument("--afternoon", action="store_true", help="hot: the afternoon edition")
     ap.add_argument("--breaking", action="store_true", help="hot: only if several newsrooms report a new story now")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
     a = ap.parse_args(argv)
@@ -2038,7 +2040,7 @@ def _main(argv: list[str] | None = None) -> int:
             log(f"radar message skipped: {e}")
     if a.command == "hot":
         label = hot_slot(a.mock, edition="breaking" if a.breaking else "morning" if a.morning
-                         else "evening" if a.evening else "midday")
+                         else "afternoon" if a.afternoon else "evening" if a.evening else "midday")
         if not label:
             # nothing new to plan, but a post held earlier today may still need a replacement
             label = current_week_label(ahead=0)

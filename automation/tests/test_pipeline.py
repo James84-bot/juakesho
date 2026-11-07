@@ -89,6 +89,15 @@ class HotPostTests(TempWeeks):
         for p in busy:
             self.assertGreaterEqual(abs(got - dt.datetime.fromisoformat(p["publish_at"])), dt.timedelta(minutes=45))
 
+    def test_afternoon_edition_goes_out_at_half_past_three(self):
+        noon = dt.datetime(2026, 10, 13, 12, 30, tzinfo=pl.EAT)   # the 12:30 run leaves the usual three hours to approve
+        with mock.patch.object(pl, "now", lambda: noon):
+            label = pl.hot_slot(mock=True, edition="afternoon")
+            post = pl.load_week(label)["posts"][-1]
+            self.assertEqual((post["id"], post["beat"]), ("2026-w42-hot-1013a", "life"))
+            self.assertEqual(post["publish_at"], "2026-10-13T15:30:00+03:00")
+            self.assertIsNone(pl.hot_slot(mock=True, edition="afternoon"))   # never twice
+
     def test_cards_stay_open_four_hours(self):
         self.assertEqual(pl.EXPIRE_AFTER, dt.timedelta(hours=4))
 
