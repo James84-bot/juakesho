@@ -370,6 +370,74 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
     return None
 
 
+def broll_wanted(post: dict) -> bool:
+    """Stock footage between the news photos: a news Reel that keeps its real photo on the first line and gets moving
+    pictures on the lines after it. Never on an allegation (a stranger must never look like the accused), never on
+    a carousel, a clip Reel or a post that already has footage of its own."""
+    import guard
+    if not post.get("beats") or post.get("group") or post.get("template") == "tazama" or post.get("video_file"):
+        return False
+    if guard.CRIME_WORDS.search(guard._all_text(post)):
+        return False
+    return bool(_broll_words(post))
+
+
+def _broll_words(post: dict) -> list[str]:
+    """What the footage should show: the photo query's subject words, without places (stock footage is rarely of
+    Kenya, so it illustrates the thing, never claims to be the place)."""
+    q = str(post.get("broll_query") or post.get("photo_query") or "")
+    return [w for w in photos._core(q) if w not in GENERIC_WORDS][:3]
+
+
+def broll(post: dict, out_dir: Path) -> dict | None:
+    """{"file", "credit", "url"}: a Pixabay or Pexels clip whose own tags show the subject, with no face filling the
+    frame, cut and cached next to the renders. None when nothing fits (never raises)."""
+    words = _broll_words(post)
+    if not words:
+        return None
+    out_dir.mkdir(parents=True, exist_ok=True)
+    clip, meta = out_dir / f"{post['id']}-broll.mp4", out_dir / f"{post['id']}-broll.json"
+    if clip.exists() and meta.exists():
+        return {**json.loads(meta.read_text(encoding="utf-8")), "file": str(clip)}
+    key = os.environ.get("PIXABAY_API_KEY")
+    if not key:
+        return None
+    query = " ".join(words)
+    try:
+        hits = _pixabay_search(query, key).get("hits", [])
+    except Exception as e:
+        _note(f"  b-roll search failed for {post.get('id')}: {str(e)[:120]}")
+        return None
+    for h in hits[:8]:
+        tags = str(h.get("tags", "")).lower()
+        if not any(w[:5] in tags for w in words):
+            continue
+        sizes = h.get("videos") or {}
+        pick = next((sizes[k] for k in ("large", "medium") if (sizes.get(k) or {}).get("url")
+                     and (sizes[k].get("width") or 0) >= MIN_WIDTH and 0 < (sizes[k].get("size") or 0) <= MAX_BYTES), None)
+        if not pick:
+            continue
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                raw = Path(tmp) / "raw"
+                raw.write_bytes(photos._get(pick["url"], timeout=120))
+                if not cut(raw, clip):
+                    continue
+            if not frames_ok(clip):
+                _note(f"  b-roll for {post['id']} skipped: a face fills the frame ({h.get('pageURL', '')[:70]})")
+                clip.unlink(missing_ok=True)
+                continue
+        except Exception as e:
+            _note(f"  b-roll download failed for {post['id']}: {str(e)[:120]}")
+            continue
+        info = {"credit": f"Footage: {str(h.get('user') or 'Pixabay')[:50]} / Pixabay", "url": h.get("pageURL", "")}
+        meta.write_text(json.dumps(info), encoding="utf-8")
+        _note(f"  b-roll '{query}' for {post['id']}: {h.get('pageURL', '')[:80]}")
+        return {**info, "file": str(clip)}
+    _note(f"  b-roll '{query}' for {post['id']}: {len(hits)} found, none showing it without a face")
+    return None
+
+
 def attach(posts: list[dict], out_dir: Path) -> None:
     """Sets video_file / video_credit / video_source on the posts that should move."""
     keys = [k for k in ("YOUTUBE_API_KEY", "PIXABAY_API_KEY", "PEXELS_API_KEY") if os.environ.get(k)]
@@ -377,6 +445,13 @@ def attach(posts: list[dict], out_dir: Path) -> None:
           f"{'' if keys else ' only (no PIXABAY_API_KEY or PEXELS_API_KEY secret reached this run)'}")
     for p in posts:
         if not wanted(p):
+            if broll_wanted(p):   # the news photo leads; stock footage moves the lines after it
+                got = broll(p, out_dir / "videos")
+                if got:
+                    p["broll_file"], p["broll_credit"] = got["file"], got["credit"]
+                    continue
+            for k in ("broll_file", "broll_credit"):
+                p.pop(k, None)
             continue
         got = fetch(p, out_dir / "videos")
         if got:

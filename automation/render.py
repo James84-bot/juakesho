@@ -328,10 +328,13 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
     ctx["photo_fy"] = 30
     # a beat Reel with real footage: frames are drawn transparent and video.py lays them over the moving clip
     vf = post.get("video_file")
-    ctx["video_bg"] = bool(post["template"] == "reel" and vf and Path(vf).exists())
-    ctx["video_credit"] = (post.get("video_credit") or "") if ctx["video_bg"] else ""
-    ctx["shots"] = []
-    if ctx.get("photo_uri") and not ctx["video_bg"]:
+    full_footage = bool(post["template"] == "reel" and vf and Path(vf).exists())
+    bf = post.get("broll_file")
+    ctx["broll"] = bool(post["template"] == "reel" and not full_footage and bf and Path(bf).exists() and ctx.get("photo_uri"))
+    ctx["video_bg"] = full_footage or ctx["broll"]   # frames drawn transparent where the footage shows through
+    ctx["video_credit"] = (post.get("video_credit") or "") if full_footage else ""
+    ctx["shots"], ctx["seq"] = [], []
+    if ctx.get("photo_uri") and not full_footage:
         from urllib.parse import unquote, urlparse
         shown = Path(unquote(urlparse(ctx["photo_uri"]).path))
         ctx["photo_band"] = photo_band(shown, W)
@@ -342,7 +345,25 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
             ctx["shots"] = [{"uri": f.as_uri(), "fy": focus_y(f) if i else ctx["photo_fy"]} for i, f in enumerate(paths)]
             bands = [photo_band(f, W) for f in paths]
             ctx["photo_band"] = max(bands) if any(bands) else 0   # one layout for all: small pictures sit in a band
+            ctx["seq"] = shot_sequence(len(post.get("beats") or []), len(paths), ctx["broll"])
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
+
+
+def shot_sequence(beats: int, photos: int, broll: bool) -> list[int]:
+    """What is behind each line: a photo's index, or -1 for the moving footage. The first line is always the lead
+    news photo (it is the thumbnail). With footage, footage and the other photos take turns after it."""
+    if beats <= 0 or photos <= 0:
+        return []
+    if not broll:
+        return [i % photos for i in range(beats)]
+    seq, nxt = [0], 1
+    for i in range(1, beats):
+        if i % 2:
+            seq.append(-1)
+        else:
+            seq.append(nxt % photos)
+            nxt += 1
+    return seq
 
 
 BAND_BELOW = 1000   # a photo narrower than this would be blown up to fill a full post or Reel

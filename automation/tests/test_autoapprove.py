@@ -61,10 +61,17 @@ class AutoApprove(unittest.TestCase):
 
     def test_approves_only_the_eligible(self):
         done, posts, notes = self.run_it([good(id="a"), good(id="b", template="promise"), good(id="c", group="g")])
-        self.assertEqual([p["status"] for p in posts], ["approved", "awaiting", "awaiting"])
+        self.assertEqual([p["status"] for p in posts], ["approved", "awaiting", "approved"])   # a passing carousel goes too
         self.assertTrue(posts[0]["auto"])
-        self.assertEqual(len(done), 1)
+        self.assertEqual(len(done), 2)
         self.assertEqual(len(notes), 1)
+
+    def test_a_carousel_goes_out_only_when_every_slide_passes(self):
+        bad = good(id="c2", group="g")
+        bad["guard"] = {"errors": ["x"], "warnings": []}
+        done, posts, notes = self.run_it([good(id="c1", group="g"), bad])
+        self.assertEqual([p["status"] for p in posts], ["awaiting", "awaiting"])
+        self.assertEqual(done, [])
 
     def test_policy_off_changes_nothing(self):
         done, posts, notes = self.run_it([good()], on=False)

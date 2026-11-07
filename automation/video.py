@@ -221,7 +221,8 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
             t += render.beat_seconds(b)
     else:
         html = render.build_html(env, post, motion=True, reel=not is_story)
-    footage = beats and post.get("video_file") and Path(post["video_file"]).exists()
+    under = post.get("video_file") or post.get("broll_file")   # full footage, or b-roll between the photos
+    footage = beats and under and Path(under).exists()
     with tempfile.TemporaryDirectory() as tmp:
         tmp = Path(tmp)
         (tmp / "page.html").write_text(html, encoding="utf-8")
@@ -246,7 +247,7 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
             sound.write_wav(base, tmp / "audio.wav")
         target_mp4 = out_dir / f"{post['id']}.mp4"
         if footage:   # real moving footage underneath, the design frames on top
-            cmd = [ff, "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(post["video_file"]),
+            cmd = [ff, "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(under),
                    "-framerate", str(FPS), "-i", str(tmp / "f%04d.png"), "-i", str(tmp / "audio.wav"),
                    "-filter_complex", footage_graph(dur), "-map", "[v]", "-map", "2:a",
                    "-c:v", "libx264", "-preset", "medium", "-crf", "19",

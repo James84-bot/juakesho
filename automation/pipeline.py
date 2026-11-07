@@ -1114,15 +1114,20 @@ def drafter_bar() -> float:
 
 
 def auto_approve(dry_run: bool = False) -> list[str]:
-    """Approves every awaiting post that passes auto_ok (when the policy allows). Anything else waits for you."""
+    """Approves every awaiting post that passes auto_ok (when the policy allows), and every carousel whose slides
+    all pass. Anything else waits for you."""
     if not auto_approve_on():
         return []
     done: list[str] = []
     for f in sorted(WEEKS.glob("*.json"))[-2:]:
         data = json.loads(f.read_text(encoding="utf-8"))
         changed = False
+        groups: dict[str, list[dict]] = {}
         for p in data["posts"]:
-            if p["status"] != "awaiting" or p.get("n") or p.get("group"):   # carousels stay with you
+            if p.get("group"):
+                groups.setdefault(p["group"], []).append(p)
+        for p in data["posts"]:
+            if p["status"] != "awaiting" or p.get("group"):
                 continue
             why = auto_ok(p)
             if why:
@@ -1130,6 +1135,14 @@ def auto_approve(dry_run: bool = False) -> list[str]:
             if not dry_run:
                 p.update(status="approved", auto=True, decided_at=now().isoformat())
             done.append(f"{p['id']} ({p['publish_at'][5:16].replace('T', ' ')})")
+            changed = True
+        for gid, members in groups.items():   # a carousel goes out when every slide passes, as one post
+            if not all(m["status"] == "awaiting" for m in members) or any(auto_ok(m) for m in members):
+                continue
+            if not dry_run:
+                for m in members:
+                    m.update(status="approved", auto=True, decided_at=now().isoformat())
+            done.append(f"{gid} (carousel of {len(members)}, {members[0]['publish_at'][5:16].replace('T', ' ')})")
             changed = True
         if changed and not dry_run:
             save_week(data)
@@ -1459,8 +1472,8 @@ def credit_lines(post: dict) -> list[str]:
     in the Sources comment (Instagram, Facebook) or at the end of the text where there is no comment of ours
     (YouTube, TikTok), never in the middle of the caption. CC0 and public-domain media need none."""
     out = []
-    for icon, c in (("🎥", post.get("video_credit")), ("📷", post.get("person_credit") or post.get("photo_credit")),
-                    ("🎵", post.get("track_credit"))):
+    for icon, c in (("🎥", post.get("video_credit")), ("🎥", post.get("broll_credit")),
+                    ("📷", post.get("person_credit") or post.get("photo_credit")), ("🎵", post.get("track_credit"))):
         if c and not NO_CREDIT_NEEDED.search(str(c)):
             out.append(f"{icon} {c}")
     return out
@@ -1754,6 +1767,7 @@ def publish(dry_run: bool = False) -> None:
 
 SAMPLES = EXPORTS / "_samples"
 SAMPLE_DROP = ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source",
+               "broll_file", "broll_credit", "extra_photos",
                "track_credit", "status", "tg_msg", "ig_id", "fb_id", "fb_story_id", "yt_id", "tt_id", "tt_status")
 
 

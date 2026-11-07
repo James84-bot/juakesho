@@ -22,15 +22,20 @@
 {% endfor %}
 }
 .shot .cam { animation: cam {{ T }}s linear both; }
-{% for sh in shots %}{% if not loop.first %}{% set k = loop.index0 %}
-@keyframes vis{{ k }} {
-{% for b in beats %}{% set i = loop.index0 %}{% set on = 1 if i % (shots | length) == k else 0 %}
+{% for k in range(-1, shots | length) %}
+@keyframes vis{{ k + 1 }} {
+{% for b in beats %}{% set i = loop.index0 %}{% set on = 1 if seq[i] == k else 0 %}
 {% set a = BT.starts[i] / T * 100 %}{% set e = (BT.starts[i + 1] if not loop.last else T) / T * 100 - 0.02 %}
   {{ '%.3f' % a }}% { opacity: {{ on }}; } {{ '%.3f' % e }}% { opacity: {{ on }}; }
 {% endfor %}
 }
-.sh{{ k }} { animation: vis{{ k }} {{ T }}s linear both; }
-{% endif %}{% endfor %}
+{% if k >= 0 %}.sh{{ k }} { animation: vis{{ k + 1 }} {{ T }}s linear both; }{% else %}.footage-tag { animation: vis0 {{ T }}s linear both; }{% endif %}
+{% endfor %}
+{% endif %}
+{% if broll %}
+/* the moving footage shows through where no photo is drawn; it illustrates the subject, it is not the place */
+.footage-tag { position: absolute; right: 26px; top: 300px; z-index: 3; font: 600 22px/1 "Inter"; color: rgba(255, 255, 255, .8);
+  writing-mode: vertical-rl; rotate: 180deg; letter-spacing: .04em; opacity: 0; }
 {% endif %}
 {% if shots %}
 /* the pictures are drawn here (not by the base layer) so every one of them can move and take its turn */
@@ -114,6 +119,7 @@
 {% block top %}<span class="tag live">{{ kicker }}</span><img src="{{ logo_on_dark }}" alt="Kenya on Record">{% endblock %}
 {% block footer %}
   {% if context_line %}<div class="ctx">{{ context_line }}</div>{% endif %}
+  {% if broll %}<span class="footage-tag">Illustrative footage</span>{% endif %}
   {% for sh in shots %}<div class="shot sh{{ loop.index0 }}" style="--sfy: {{ sh.fy }}%">
     {% if photo_band %}<div class="blur" style="background-image: url('{{ sh.uri }}')"></div><div class="box"><img class="cam" src="{{ sh.uri }}" alt=""></div>
     {% else %}<div class="full cam" style="background-image: url('{{ sh.uri }}')"></div>{% endif %}
