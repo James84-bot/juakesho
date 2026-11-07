@@ -2127,7 +2127,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2297,6 +2297,13 @@ def _main(argv: list[str] | None = None) -> int:
         except Exception as e:
             log(f"writer check failed ({drafter.provider()}): {e}")
             return 1
+    if a.command == "tvclipcheck":   # can this runner fetch a TV clip? (YouTube refuses many cloud servers)
+        import radar
+        import tvclip
+        vids = (radar._load(72) or {}).get("catalog") or []
+        results = [f"{v['channel']}: {tvclip.check(v['url'])}" for v in vids[:3]]
+        print("::notice title=tvclipcheck::" + " | ".join(results or ["no TV clips in the radar"]))
+        return 0
     if a.command == "musicfetch":   # licensed instrumental tracks into content/music (see musiclib.py)
         import musiclib
         got = musiclib.fetch(replace=a.replace)
