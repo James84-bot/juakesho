@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-07T17:23:49.631412+00:00",
+  "fetched": "2026-11-07T18:01:00.831972+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "nottm forest vs man city",
+      "traffic": "20000+",
+      "news": [
+        {
+          "title": "Premier League LIVE: Live text, radio & score updates from across the Premier League",
+          "url": "https://www.bbc.com/sport/football/live/cmj6jdk36975t",
+          "source": "BBC"
+        },
+        {
+          "title": "Nottingham Forest vs Man City LIVE! Premier League score updates, news, prediction, line-ups and how to watch or stream",
+          "url": "https://www.skysports.com/football/live-blog/13592878/nottingham-forest-vs-man-city-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Nottingham Forest v Manchester City: Premier League – live",
+          "url": "https://www.theguardian.com/football/live/2026/nov/07/nottingham-forest-v-manchester-city-premier-league-live",
+          "source": "The Guardian"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "fsv mainz vs bayern munich standings",
@@ -17,31 +39,75 @@
           "source": "Yahoo Sports"
         },
         {
-          "title": "Mainz 1-2 Bayern (Nov 7, 2026) Game Analysis",
-          "url": "https://www.espn.com/soccer/report/_/gameId/401884740",
-          "source": "ESPN"
+          "title": "Match Awards from Bayern Munich’s important 2-1 win over Mainz 05",
+          "url": "https://www.bavarianfootballworks.com/bayern-munich-match-awards/278683/match-awards-from-bayern-munichs-important-2-1-win-over-mainz-05",
+          "source": "Bavarian Football Works"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "epl fixtures today",
-      "traffic": "500+",
+      "title": "borussia dortmund vs sv elversberg standings",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Premier League LIVE: Live text, radio & score updates from across the Premier League",
-          "url": "https://www.bbc.com/sport/football/live/cmj6jdk36975t",
-          "source": "BBC"
+          "title": "Borussia Dortmund player ratings vs Elversberg: Felix Nmecha double keeps BVB level with Bayern",
+          "url": "https://sports.yahoo.com/articles/borussia-dortmund-player-ratings-vs-171012487.html",
+          "source": "Yahoo Sports"
         },
         {
-          "title": "Elliot Anderson is £116m well spent! Micah Richards explains how England international midfielder has helped to fill Rodri void at Man City",
-          "url": "https://www.goal.com/en-ke/lists/elliot-anderson-116m-micah-richards-midfielder-rodri-void-man-city/blt3fed3b54135de643",
-          "source": "Goal.com"
+          "title": "Borussia Dortmund - SV 07 Elversberg LIVE. Bundesliga latest updates",
+          "url": "https://www.marca.com/en/soccer/bundesliga/borussia-dortmund-sv-07-elversberg/2026/11/07/01_0108_20261107_157_4071-live.html",
+          "source": "MARCA"
         },
         {
-          "title": "Enzo Maresca plan for Elliot Anderson and Ayyoub Bouaddi at Man City",
-          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/enzo-maresca-plan-elliot-anderson-34872448",
-          "source": "Manchester Evening News"
+          "title": "Germany Bundesliga Soccer",
+          "url": "https://www.wvnews.com/sports/pro/germany-bundesliga-soccer/image_f86b688a-5a20-51a7-9bce-46ebb80cc493.html",
+          "source": "WV News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "osasuna vs athletic",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Osasuna - Athletic en directo: LaLiga EA Sports hoy, en vivo",
+          "url": "https://as.com/futbol/primera/osasuna-athletic-en-directo-laliga-ea-sports-hoy-en-vivo-f202611-d/",
+          "source": "Diario AS"
+        },
+        {
+          "title": "Arrasate: “Si les damos de comer, si hacemos el partido que ellos quieren, es un rival peligroso”",
+          "url": "https://kirolakeitb.eus/es/futbol/equipos/osasuna/2026/11/06/arrasate-si-damos-de-comer-partido-ellos%20quieren-rival-peligroso/",
+          "source": "kirolakeitb.eus"
+        },
+        {
+          "title": "El Athletic quiere escalar en la tabla en el escenario favorito de Sancet",
+          "url": "https://radiopopular.com/2026/11/el-athletic-quiere-escalar-en-la-tabla-en-el-escenario-favorito-de-sancet",
+          "source": "Radio Popular de Bilbao"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "galatasaray",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Galatasaray, Amedspor ile Karşılaşacak: Gabriel Sara'ya Plaket",
+          "url": "https://www.superlighaberler.com/galatasaray/galatasaray-amedspor-ile-karsilasacak-gabriel-saraya-plaket-h18815",
+          "source": "www.superlighaberler.com"
+        },
+        {
+          "title": "Okan Buruk'tan 11'de 2 zorunlu değişiklik",
+          "url": "https://www.trtspor.com.tr/haber/futbol/okan-buruktan-11de-2-zorunlu-degisiklik-33966021",
+          "source": "TRTSpor"
+        },
+        {
+          "title": "Aslantepe'de sirenler çaldı: Amed tribünlerinin görüntüsü dikkat çekti!",
+          "url": "https://www.yenisafak.com/galeri/spor/aslantepede-sirenler-caldi-amed-tribunlerinin-goruntusu-dikkat-cekti-4870588",
+          "source": "Yeni Şafak"
         }
       ]
     },
@@ -56,14 +122,14 @@
           "source": "BBC"
         },
         {
-          "title": "🚂 No stopping the RBL-Express: Leipzig put Augsburg away",
-          "url": "https://sports.yahoo.com/articles/no-stopping-rbl-express-leipzig-160600121.html",
+          "title": "Leipzig Back Among Bundesliga Elite As Demichelis Closes Gap On Bayern And Dortmund",
+          "url": "https://sports.yahoo.com/articles/leipzig-back-among-bundesliga-elite-170925390.html",
           "source": "Yahoo Sports"
         },
         {
-          "title": "Micho ahead of RBLFCA: \"We need to switch our focus back to the Bundesliga\"",
-          "url": "https://onefootball.com/en/news/micho-ahead-of-rblfca-we-need-to-switch-our-focus-back-to-the-bundesliga-43737109",
-          "source": "OneFootball"
+          "title": "Five-star RBL make it another home win against Augsburg",
+          "url": "https://rbleipzig.com/en/match-news/match-report-rbl-fc-augsburg-07-11-2026",
+          "source": "RB Leipzig"
         }
       ]
     },
@@ -91,30 +157,8 @@
     },
     {
       "geo": "KE",
-      "title": "barnsley vs aldershot",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Barnsley vs Aldershot Town: FA Cup stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c39wz0dk7gejt",
-          "source": "BBC"
-        },
-        {
-          "title": "SCOTT’S HOT TO TROT",
-          "url": "https://www.thenonleaguefootballpaper.com/latest-news/non-league-paper/630685/scotts-hot-to-trot/",
-          "source": "The Non-League Football Paper"
-        },
-        {
-          "title": "‘Same as a league game’ as Shots visit in FA Cup",
-          "url": "https://www.barnsleychronicle.com/article/37297/same-as-a-league-game-as-shots-visit-in-fa-cup",
-          "source": "Barnsley Chronicle"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "luton vs forest green",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Luton Town v Forest Green Rovers: FA Cup stats & head-to-head",
@@ -122,89 +166,62 @@
           "source": "BBC"
         },
         {
+          "title": "Baptiste on the bench as Hatters make seven changes for FA Cup clash",
+          "url": "https://www.lutontoday.co.uk/sport/football/luton-town/baptiste-on-the-bench-as-hatters-make-seven-changes-for-fa-cup-clash-9336653",
+          "source": "Luton Today"
+        },
+        {
           "title": "Luton vs Forest Green Prediction: The Final Match to Decide the Championship",
           "url": "https://www.vietnam.vn/en/nhan-dinh-luton-vs-forest-green-tran-chung-ket-dinh-doat-ngoi-vuong",
           "source": "Vietnam.vn"
-        },
-        {
-          "title": "Luton Town – Hot Favourites To Progress",
-          "url": "https://vitalfootball.co.uk/luton-town-hot-favourites-to-progress/",
-          "source": "Vital Football"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "plymouth vs alvechurch",
+      "title": "bologna",
       "traffic": "100+",
       "news": [
         {
-          "title": "Tom Cleverley on His Hope for a Memorable Emirates FA Cup Run",
-          "url": "https://www.pafc.co.uk/news/tom-cleverley-his-hope-memorable-emirates-fa-cup-run",
-          "source": "Plymouth Argyle - PAFC"
+          "title": "Serie A: Parma-Bologna in campo alle 18 DIRETTA",
+          "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/11/07/serie-a-parma-bologna-in-campo-alle-18-diretta_d1d5bb4e-ed57-4ae0-b79d-873cadfdcb52.html",
+          "source": "ANSA"
         },
         {
-          "title": "FOOTBALL - Kyle Storer accepts Alvechurch are 'massive underdogs' ahead of FA Cup first round tie at Plymouth Argyle",
-          "url": "https://redditchstandard.co.uk/sport/football-kyle-storer-accepts-alvechurch-are-massive-underdogs-ahead-of-fa-cup-first-round-tie-at-plymouth-argyle/",
-          "source": "The Redditch Standard"
+          "title": "Pronostico Parma-Bolognese: la prestazione in trasferta messa alla prova",
+          "url": "https://www.vietnam.vn/it/nhan-dinh-parma-vs-bologna-ban-linh-san-khach-duoc-thu-lua",
+          "source": "Vietnam.vn"
         },
         {
-          "title": "Alvechurch hope fairytale FA Cup exploits can fuel long-term benefits",
-          "url": "https://www.thetottenhamindependent.co.uk/news/26702625.alvechurch-hope-fairytale-fa-cup-exploits-can-fuel-long-term-benefits/",
-          "source": "Tottenham Independent"
+          "title": "Dove vedere Parma-Bologna",
+          "url": "https://sport.sky.it/calcio/serie-a/2026/11/07/parma-bologna-dove-vedere-tv-streaming",
+          "source": "Sky Sport"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "espanyol vs deportivo",
+      "title": "barnsley vs aldershot",
       "traffic": "100+",
       "news": [
         {
-          "title": "En directo: Espanyol 0 - Deportivo 0",
-          "url": "https://www.lavozdegalicia.es/retransmision/torremarathon/2026/11/07/directo-espanyol-deportivo-hidalgo-repite-once-osasuna/01071794059842292912513.htm",
-          "source": "La Voz de Galicia"
+          "title": "Preview: Barnsley vs Aldershot Town - prediction, team news, lineups",
+          "url": "https://www.sportsmole.co.uk/football/barnsley/fa-cup/preview/barnsley-vs-aldershot-prediction-team-news-lineups_608435.html",
+          "source": "Sports Mole"
         },
         {
-          "title": "Eder Sarabia: \"En los últimos metros, quitando a los grandes, el Dépor es uno de los equipos con más talento\"",
-          "url": "https://www.riazor.org/eder-sarabia-ultimos-metros-grandes-depor-talento/",
-          "source": "Riazor.org"
+          "title": "‘Same as a league game’ as Shots visit in FA Cup",
+          "url": "https://www.barnsleychronicle.com/article/37297/same-as-a-league-game-as-shots-visit-in-fa-cup",
+          "source": "Barnsley Chronicle"
         },
         {
-          "title": "Lista de convocados de Eder Sarabia para medirse al Deportivo",
-          "url": "https://pericos.es/2026/11/07/lista-de-convocados-de-eder-sarabia-para-medirse-al-deportivo/",
-          "source": "Pericos.es"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "charlton vs sheffield united",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Charlton Athletic v Sheffield United: Championship stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/crd6d93q71d0t",
-          "source": "BBC"
-        },
-        {
-          "title": "Wilder hoping for Bamford boost",
-          "url": "https://www.sufc.co.uk/news/2026/november/06/injury-update/",
-          "source": "Sheffield United FC"
-        },
-        {
-          "title": "TEAM NEWS | Four changes for Blades clash",
-          "url": "https://www.cafc.co.uk/news/team-news-four-changes-blades-clash",
-          "source": "Charlton Athletic Football Club"
+          "title": "Barnsley FC v Aldershot: Stendel's praise for senior midfielder",
+          "url": "https://www.yorkshirepost.co.uk/sport/football/barnsley-fc-v-aldershot-daniel-stendels-praise-for-luca-connell-9334017",
+          "source": "Yorkshire Post"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "nottm forest vs man city",
-      "why": "unsafe: 'Bet'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
