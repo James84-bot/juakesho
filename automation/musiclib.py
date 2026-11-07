@@ -29,12 +29,17 @@ MP3 = "https://incompetech.com/music/royalty-free/mp3-royaltyfree/{}"   # pieces
 LICENCE = "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com"
 CUT_S = 45
 PER_MOOD = 6
-MOODS = {
-    "urgent": ("driving", "intense", "tense", "suspense", "action", "pulsing", "serious", "dark", "epic", "urgent"),
-    "uplifting": ("bright", "uplifting", "happy", "hopeful", "inspiring", "upbeat", "positive", "grooving", "triumphant"),
+MOODS = {   # feel words incompetech uses, the tempo range, and the genres that suit a news Reel
+    "urgent": {"words": ("driving", "intense", "tense", "pulsing", "serious", "urgent", "suspenseful", "action", "epic"),
+               "bpm": (88, 145), "genres": ("electronica", "electronic", "cinematic", "soundtrack", "rock", "contemporary")},
+    "uplifting": {"words": ("bright", "uplifting", "hopeful", "inspiring", "upbeat", "positive", "triumphant", "grooving"),
+                  "bpm": (85, 135), "genres": ("pop", "electronica", "electronic", "cinematic", "soundtrack", "contemporary",
+                                               "world", "african", "funk")},
 }
 AVOID = ("horror", "creepy", "christmas", "holiday", "comedy", "silly", "funny", "lullaby", "wedding", "funeral", "sad",
-         "vocal", "voice", "singer", "lyrics", "rap")   # instrumental only: nothing sung, nothing to check for clean words
+         "vocal", "voice", "singer", "lyrics", "rap",   # instrumental only: nothing sung, nothing to check for clean words
+         "quirky", "whimsical", "bouncy", "cartoon", "circus", "polka", "magic", "goblin", "fairy", "medieval",
+         "dinosaur", "spooky", "mystical", "dreamy", "lounge", "elevator", "children")
 
 
 def _get(url: str, timeout: int = 60) -> bytes:
@@ -52,22 +57,44 @@ def _filename(piece: dict) -> str:
     return name if name.lower().endswith(".mp3") else (name + ".mp3" if name else "")
 
 
+def _bpm(piece: dict) -> float:
+    try:
+        return float(str(piece.get("bpm", "")).split()[0])
+    except (ValueError, IndexError):
+        return 0.0
+
+
+def score(piece: dict, mood: str) -> int:
+    """How well a piece fits the mood: feel words matched, plus one for a fitting genre; 0 = never use it.
+    Out of the tempo range, or anything quirky, sung or seasonal, is 0."""
+    m = MOODS[mood]
+    text = _text(piece)
+    if any(re.search(rf"\b{w}s?\b", text) for w in AVOID):
+        return 0
+    bpm = _bpm(piece)
+    if bpm and not m["bpm"][0] <= bpm <= m["bpm"][1]:
+        return 0
+    feel = str(piece.get("feel", "")).lower()
+    hits = sum(1 for w in m["words"] if re.search(rf"\b{w}\b", feel))
+    if not hits:
+        return 0
+    return hits + (1 if any(g in str(piece.get("genre", "")).lower() for g in m["genres"]) else 0)
+
+
 def pick(pieces: list[dict], per_mood: int = PER_MOOD) -> list[tuple[str, dict]]:
-    """(mood, piece) pairs: the pieces whose feel or genre names the mood, never a mood we avoid, each piece once."""
+    """(mood, piece) pairs: the best-fitting pieces for each mood, each piece once."""
     used, out = set(), []
-    for mood, words in MOODS.items():
+    for mood in MOODS:
+        ranked = sorted(((score(p, mood), p) for p in pieces if _filename(p)), key=lambda t: -t[0])
         got = 0
-        for p in pieces:
-            name, text = _filename(p), _text(p)
-            if not name or name in used or any(w in text for w in AVOID):
+        for sc, p in ranked:
+            if sc <= 0 or got >= per_mood:
+                break
+            if _filename(p) in used:
                 continue
-            feel = " ".join(str(p.get(k, "")) for k in ("feel", "genre", "description")).lower() or text
-            if any(re.search(rf"\b{w}\b", feel) for w in words):
-                out.append((mood, p))
-                used.add(name)
-                got += 1
-                if got >= per_mood:
-                    break
+            out.append((mood, p))
+            used.add(_filename(p))
+            got += 1
     return out
 
 
@@ -94,12 +121,18 @@ def cut(ff: str, raw: Path, out: Path) -> float:
     return start
 
 
-def fetch(per_mood: int = PER_MOOD, get=_get, ff: str | None = None) -> dict:
-    """Adds tracks to tracks.json; returns {"added", "kept", "errors"}. Never removes a track already there."""
+def fetch(per_mood: int = PER_MOOD, get=_get, ff: str | None = None, replace: bool = False) -> dict:
+    """Adds tracks to tracks.json; returns {"added", "kept", "errors"}. replace=True first removes the tracks this
+    module added (by their incompetech source), never one you added yourself."""
     import video
     ff = ff or video.ffmpeg_bin()
     reg_file = MUSIC / "tracks.json"
     reg = json.loads(reg_file.read_text(encoding="utf-8")) if reg_file.exists() else {"tracks": []}
+    if replace:
+        mine = [t for t in reg.get("tracks", []) if "incompetech.com" in str(t.get("source", ""))]
+        for t in mine:
+            (MUSIC / Path(str(t["file"])).name).unlink(missing_ok=True)
+        reg["tracks"] = [t for t in reg.get("tracks", []) if t not in mine]
     have = {t["file"] for t in reg.get("tracks", [])}
     pieces = json.loads(get(PIECES))
     if isinstance(pieces, dict):   # the list may sit under a key
@@ -115,7 +148,8 @@ def fetch(per_mood: int = PER_MOOD, get=_get, ff: str | None = None) -> dict:
                 raw.write_bytes(get(MP3.format(urllib.parse.quote(_filename(piece))), 120))
                 start = cut(ff, raw, MUSIC / file)
             reg.setdefault("tracks", []).append(entry(mood, piece, file, start))
-            added.append(f"{mood}: {piece.get('title') or file}")
+            added.append(f"{mood}: {piece.get('title') or file} ({piece.get('feel', '')}; {piece.get('genre', '')}; "
+                         f"{piece.get('bpm', '?')} bpm)")
         except Exception as e:   # one track failing never stops the rest
             errors.append(f"{_filename(piece)}: {str(e)[:120]}")
     MUSIC.mkdir(parents=True, exist_ok=True)

@@ -136,18 +136,34 @@ def music_track(post: dict) -> dict | None:
     return fits[zlib.crc32(post["id"].encode()) % len(fits)] if fits else None
 
 
-def mix_track(ff: str, track: dict, dur: float, out: Path) -> None:
-    """Jua chime, then the track's hook: trimmed, faded, loudness-balanced for phone speakers (-14 LUFS)."""
+def mix_track(ff: str, track: dict, dur: float, out: Path, fx: Path | None = None) -> None:
+    """Jua chime, then the track's hook: trimmed, faded, loudness-balanced for phone speakers (-14 LUFS).
+    `fx`: the sound design (whooshes, hits) laid on top."""
     chime_wav = out.with_name("chime.wav")
     sound.write_wav(np.concatenate([sound.chime(), np.zeros(int(sound.SR * 0.1), dtype=np.float32)]), chime_wav)
     start = float(track.get("start", 0))
     fade_out = max(0.0, dur - 1.0)
+    inputs = ["-i", str(chime_wav), "-i", str(track["path"])] + (["-i", str(fx)] if fx else [])
     graph = (f"[1:a]atrim=start={start}:duration={dur},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=0.8,"
              f"afade=t=out:st={fade_out}:d=1.0,volume=0.85[m];"
-             f"[0:a][m]amix=inputs=2:duration=longest:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,"
-             f"atrim=duration={dur}[a]")
-    subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(chime_wav), "-i", str(track["path"]),
+             f"[0:a][m]{'[2:a]' if fx else ''}amix=inputs={3 if fx else 2}:duration=longest:normalize=0,"
+             f"loudnorm=I=-14:TP=-1.5:LRA=11,atrim=duration={dur}[a]")
+    subprocess.run([ff, "-y", "-loglevel", "error", *inputs,
                     "-filter_complex", graph, "-map", "[a]", "-ar", "44100", "-ac", "2", str(out)], check=True)
+
+
+def sound_marks(beats: list[str]) -> tuple[list[float], list[float]]:
+    """Where the sound design hits: every cut between lines, and where each counted figure lands (from the second
+    line on, the same timing the template counts it with)."""
+    cuts, lands, t = [], [], 0.0
+    for i, b in enumerate(beats):
+        if i:
+            cuts.append(round(t, 3))
+            for k, (w, m) in enumerate(render.beat_tokens(b)):
+                if m and render.counts(w):
+                    lands.append(round(t + k * 0.035 + 0.95, 3))
+        t += render.beat_seconds(b)
+    return cuts, lands
 
 
 def workers() -> int:
@@ -214,13 +230,20 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         frames = int(dur * FPS)
         render_frames(tmp / "page.html", tmp, frames, alpha=bool(footage))
         track = music_track(post)
-        if track:   # an artist's track we have permission for: chime first, then their hook
-            mix_track(ff, track, dur, tmp / "audio.wav")
+        cuts, lands = sound_marks(beats["beats"]) if beats else ([], [])
+        fx = sound.sfx(dur, cuts, lands, seed) if beats else None
+        if track:   # a licensed track: chime first, then its hook, with the whooshes and hits on top
+            fx_wav = tmp / "fx.wav"
+            if fx is not None:
+                sound.write_wav(fx, fx_wav)
+            mix_track(ff, track, dur, tmp / "audio.wav", fx_wav if fx is not None else None)
             post["track_credit"] = track.get("credit") or f"{track['artist']} - {track['title']} (used with permission)"
-        elif post["template"] in URGENT_TEMPLATES:
-            sound.write_wav(sound.tension(dur, starts if beats else [0.0], seed), tmp / "audio.wav")
         else:
-            sound.write_wav(sound.bed(dur, seed), tmp / "audio.wav")
+            base = sound.tension(dur, starts if beats else [0.0], seed) if post["template"] in URGENT_TEMPLATES \
+                else sound.bed(dur, seed)
+            if fx is not None:
+                base = base[: len(fx)] + fx[: len(base)] if len(base) >= len(fx) else base + fx[: len(base)]
+            sound.write_wav(base, tmp / "audio.wav")
         target_mp4 = out_dir / f"{post['id']}.mp4"
         if footage:   # real moving footage underneath, the design frames on top
             cmd = [ff, "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(post["video_file"]),

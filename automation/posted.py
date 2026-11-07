@@ -300,27 +300,53 @@ def same_story(title: str, story: str) -> bool:
     return len(guard._stems(title) & guard._stems(story)) >= 2
 
 
-def find(post: dict) -> tuple[bytes, dict] | None:
-    """The lead photo of the best report of this post's story, with its credit. None if nothing fits.
-    A post built on one report (material.py) only takes a photo from coverage of that same story: a photo of
-    another politician on a post about a doctored image of a senator is a false picture."""
+def _ranked(post: dict) -> list[tuple[int, dict]]:
+    """The reports of this post's story, best first (at most 5)."""
     m = post.get("material") if isinstance(post.get("material"), dict) else {}
     story = m.get("title", "") if m and m.get("kind") != "bank" else ""
     surname, words = terms_for(post)
     if not surname and len(words) < 2:
-        return None
+        return []
     try:
         day = dt.datetime.fromisoformat(post["publish_at"]).astimezone(dt.timezone.utc)
     except (KeyError, ValueError):
         day = dt.datetime.now(dt.timezone.utc)
-    # the story happened before the post was written: count back from today when the slot is days ahead
     start = min(day, dt.datetime.now(dt.timezone.utc)) - dt.timedelta(days=DAYS_BEFORE)
     end = day + dt.timedelta(days=DAYS_AFTER)
     names, acronyms = names_for(post), acronyms_for(post)
     ranked = sorted(((score(x, surname, words, names, acronyms), x) for x in feed_items()
                      if x["when"] is None or start <= x["when"] <= end), key=lambda t: (-t[0], not t[1]["official"]))
-    ranked = [(s, x) for s, x in ranked if s > 0 and (not story or same_story(x["title"], story))][:5]
-    _note(f"  posted for {post.get('id')}: {len(ranked)} matching reports (person '{surname}', names {names[:4]}, "
+    return [(s, x) for s, x in ranked if s > 0 and (not story or same_story(x["title"], story))][:5]
+
+
+def find_more(post: dict, have: list[str], n: int = 2) -> list[tuple[bytes, dict]]:
+    """More photos of the same story from the other reports (a different picture each, never the same report
+    twice), so a Reel can show a new picture on each line. `have`: report links already used."""
+    import hashlib
+    out, seen_links, seen_imgs = [], set(have), set()
+    for s, item in _ranked(post):
+        if len(out) >= n or item["link"] in seen_links:
+            continue
+        got = _photo_of(item)
+        if not got:
+            continue
+        digest = hashlib.sha1(got[0]).hexdigest()
+        if digest in seen_imgs:
+            continue
+        seen_imgs.add(digest)
+        seen_links.add(item["link"])
+        _note(f"    also {item['outlet']} ({s}): {item['title'][:70]}")
+        out.append((got[0], {**got[1], "kind": "posted"}))
+    return out
+
+
+def find(post: dict) -> tuple[bytes, dict] | None:
+    """The lead photo of the best report of this post's story, with its credit. None if nothing fits.
+    A post built on one report (material.py) only takes a photo from coverage of that same story: a photo of
+    another politician on a post about a doctored image of a senator is a false picture."""
+    surname, words = terms_for(post)
+    ranked = _ranked(post)
+    _note(f"  posted for {post.get('id')}: {len(ranked)} matching reports (person '{surname}', names {names_for(post)[:4]}, "
           f"words {words[:5]})")
     for s, item in ranked:
         got = _photo_of(item)

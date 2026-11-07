@@ -169,6 +169,43 @@ def tension(duration: float, hits: list[float] | None = None, seed: int = 0) -> 
     return (out * 0.89).astype(np.float32)
 
 
+def whoosh(dur: float = 0.34, seed: int = 0) -> np.ndarray:
+    """An air whoosh for a transition: noise through a filter that opens and closes, swelling then gone."""
+    rng = np.random.default_rng(seed)
+    n = int(SR * dur)
+    noise = rng.standard_normal(n).astype(np.float32)
+    t = np.arange(n) / n
+    cutoff = 300 + 5200 * np.sin(np.pi * t) ** 2            # Hz: opens to ~5.5 kHz at the middle, closes again
+    alpha = 1 - np.exp(-2 * np.pi * cutoff / SR)            # one-pole low-pass, coefficient per sample
+    out, y = np.empty(n, dtype=np.float32), 0.0
+    for i in range(n):
+        y += alpha[i] * (noise[i] - y)
+        out[i] = y
+    env = np.sin(np.pi * t) ** 1.5
+    return (out * env * 0.9).astype(np.float32)
+
+
+def impact(dur: float = 0.5) -> np.ndarray:
+    """A low hit when a figure lands: a deep kick and a short sub tail."""
+    t = np.arange(int(SR * dur)) / SR
+    sub = np.sin(2 * np.pi * 48 * t) * np.exp(-t * 7)
+    return (kick(dur) * 0.8 + sub * 0.5).astype(np.float32)
+
+
+def sfx(duration: float, cuts: list[float], lands: list[float] | None = None, seed: int = 0) -> np.ndarray:
+    """The sound design laid over the music: a whoosh centred on every cut between lines, a hit where a figure
+    lands. Silence everywhere else, so it sits on any track."""
+    out = np.zeros(int(SR * (duration + 1.0)), dtype=np.float32)
+    for k, c in enumerate(cuts):
+        w = whoosh(seed=seed + k)
+        _place(out, w, max(0.0, c - len(w) / SR / 2), 0.5)
+    for h in lands or []:
+        _place(out, impact(), h, 0.55)
+    out = out[: int(SR * duration)]
+    peak = float(np.abs(out).max()) if len(out) else 0.0
+    return out * (0.6 / peak) if peak > 0.6 else out   # under the music, never clipping
+
+
 def write_wav(samples: np.ndarray, path: Path) -> None:
     pcm = (np.clip(samples, -1, 1) * 32767).astype(np.int16)
     stereo = np.repeat(pcm[:, None], 2, axis=1)

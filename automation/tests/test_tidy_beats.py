@@ -60,3 +60,25 @@ class TidyBeats(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Rewrite(unittest.TestCase):
+    POST = {"id": "w-x", "template": "sauti", "message": "Sugar is Sh32 cheaper.", "source": "Capital FM, 2026-11-07",
+            "beats": ["Kenya sugar output rose 56.7%, dropping 2kg prices by *Sh32.*", "Local factories boosted milling.",
+                      "Cheaper sugar brings relief."], "caption": "Sugar is cheaper. #KenyaOnRecord"}
+
+    def run_with(self, reply):
+        from unittest import mock
+        with mock.patch.object(draft, "call_claude", lambda *a, **k: reply):
+            return draft.rewrite_script(dict(self.POST))
+
+    def test_a_new_script_that_keeps_the_rules_is_used(self):
+        new = self.run_with('{"beats": ["Sugar just got *Sh32* cheaper.", "Factories milled 56.7% more cane.", '
+                            '"Has your shop dropped the price yet?"], "caption": "Sugar just got Sh32 cheaper. #KenyaOnRecord"}')
+        self.assertEqual(new["beats"][0], "Sugar just got *Sh32* cheaper.")
+
+    def test_a_script_that_breaks_a_rule_or_is_malformed_is_dropped(self):
+        too_long = "This line is far too long for a Reel beat and it keeps on going and going."
+        self.assertIsNone(self.run_with('{"beats": ["' + too_long + '", "b c.", "d e."], "caption": "c"}'))
+        self.assertIsNone(self.run_with('{"beats": ["only one"], "caption": "c"}'))
+        self.assertIsNone(self.run_with("not json"))

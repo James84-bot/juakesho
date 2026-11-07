@@ -328,11 +328,18 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
     vf = post.get("video_file")
     ctx["video_bg"] = bool(post["template"] == "reel" and vf and Path(vf).exists())
     ctx["video_credit"] = (post.get("video_credit") or "") if ctx["video_bg"] else ""
+    ctx["shots"] = []
     if ctx.get("photo_uri") and not ctx["video_bg"]:
         from urllib.parse import unquote, urlparse
         shown = Path(unquote(urlparse(ctx["photo_uri"]).path))
         ctx["photo_band"] = photo_band(shown, W)
         ctx["photo_fy"] = focus_y(shown)
+        if post["template"] == "reel" and not post.get("person_file"):
+            # a beat Reel shows every picture of the story it has, a different one on each line
+            paths = [shown] + [Path(f) for f in post.get("extra_photos") or [] if Path(f).exists()]
+            ctx["shots"] = [{"uri": f.as_uri(), "fy": focus_y(f) if i else ctx["photo_fy"]} for i, f in enumerate(paths)]
+            bands = [photo_band(f, W) for f in paths]
+            ctx["photo_band"] = max(bands) if any(bands) else 0   # one layout for all: small pictures sit in a band
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
 
 

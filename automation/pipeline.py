@@ -1776,6 +1776,17 @@ def sample_posts(n: int = 3) -> list[dict]:
     return out
 
 
+def rewrite_samples(posts: list[dict]) -> list[dict]:
+    """Each sample's script written again under today's writing rules, the old lines kept for comparison.
+    A sample the writer can't improve within the rules keeps its old script."""
+    import draft as drafter
+    out = []
+    for q in posts:
+        new = drafter.rewrite_script(q)
+        out.append({**new, "old_beats": q.get("beats")} if new else q)
+    return out
+
+
 QA = EXPORTS / "_qa"
 
 
@@ -1792,6 +1803,9 @@ def qa_sheets(posts: list[dict]) -> None:
                 subprocess.run([video.ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(mp4), "-vf",
                                 "fps=2,scale=216:-2,tile=8x5", "-frames:v", "1", "-q:v", "4",
                                 str(QA / f"{q['id']}.jpg")], check=True)
+                subprocess.run([video.ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(mp4), "-filter_complex",
+                                "showwavespic=s=1600x240:split_channels=0:colors=#C4111A", "-frames:v", "1",
+                                str(QA / f"{q['id']}-audio.png")], check=True)   # the sound, to check by eye
             except Exception as e:
                 log(f"qa sheet skipped for {q['id']}: {e}")
 
@@ -1800,6 +1814,8 @@ def reel_samples(n: int = 3, dry_run: bool = False, send: bool = True) -> int:
     """Makes the newest published Reels again with the current design (a new shot on every line, figures counting
     up, the wipe, licensed music) and sends them to Telegram as samples. Nothing is posted; the weeks don't change."""
     posts = sample_posts(n)
+    if posts and not dry_run:
+        posts = rewrite_samples(posts)
     if dry_run or not posts:
         log(f"samples: {len(posts)} Reel(s){' (dry run)' if dry_run else ''}")
         return len(posts)
@@ -1829,8 +1845,12 @@ def reel_samples(n: int = 3, dry_run: bool = False, send: bool = True) -> int:
            {"video": mp4})
         cap = caption_for(q)
         comment = receipts_comment(q) or ""
+        lines = ""
+        if q.get("old_beats"):
+            lines = ("<b>Script, before</b>\n" + "\n".join("• " + _esc(str(b).replace("*", "")) for b in q["old_beats"])
+                     + "\n\n<b>Script, now</b>\n" + "\n".join("• " + _esc(str(b).replace("*", "")) for b in q["beats"]) + "\n\n")
         tg("sendMessage", {"chat_id": chat, "parse_mode": "HTML", "text": (
-            "<b>Caption</b> (Instagram and Facebook)\n<code>" + _esc(cap)[:2500] + "</code>"
+            lines + "<b>Caption</b> (Instagram and Facebook)\n<code>" + _esc(cap)[:2500] + "</code>"
             + ("\n\n<b>First comment</b>\n<code>" + _esc(comment)[:900] + "</code>" if comment else ""))})
         sent += 1
     log(f"samples sent: {sent}")
@@ -2116,6 +2136,7 @@ def _main(argv: list[str] | None = None) -> int:
     ap.add_argument("--breaking", action="store_true", help="hot: only if several newsrooms report a new story now")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
     ap.add_argument("--no-send", action="store_true", help="samples: make them and their contact sheets, send nothing")
+    ap.add_argument("--replace", action="store_true", help="musicfetch: pick the library again from scratch")
     a = ap.parse_args(argv)
     label = a.week or current_week_label()
 
@@ -2278,7 +2299,7 @@ def _main(argv: list[str] | None = None) -> int:
             return 1
     if a.command == "musicfetch":   # licensed instrumental tracks into content/music (see musiclib.py)
         import musiclib
-        got = musiclib.fetch()
+        got = musiclib.fetch(replace=a.replace)
         print(f"::notice title=musicfetch::added {len(got['added'])}, kept {got['kept']}: " + "; ".join(got["added"])[:2000]
               + (f" | errors: {'; '.join(got['errors'])[:800]}" if got["errors"] else "") + f" | piece keys: {got['sample_keys']}")
         if not got["added"] and not got["kept"]:

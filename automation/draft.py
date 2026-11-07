@@ -411,12 +411,17 @@ URGENT, NOT PARAGRAPHS
 - Never fake urgency: no invented deadlines, no "BREAKING" on old news, no exaggerated numbers. Real stakes only.
 
 REELS ARE SCRIPTS (`beats`, on every post)
-- Every post gets `beats`: 3-5 lines, max 12 words each, shown one at a time full screen over the photo.
-  Each beat is a complete sentence that makes sense on its own (someone may see only one of them).
-- Shape: 1 the news itself, the whole story in one sentence with the number (this is the first frame and the
-  thumbnail: it must stop the scroll on its own) - 2 the key fact or the record - 3 what it means for Kenyans -
-  4 the demand to the named office, worded fresh ("KeNHA must ...", "We want ...") - 5 (optional) the action ("Read the report on
-  parliament.go.ke."). Showcase posts (Kenya at its best, Built in Kenya) end on the place or the result instead.
+- Every post gets `beats`: 3-5 lines, max 10 words each, shown one at a time full screen over the photo, a new
+  picture behind each. Short lines move fast and fast Reels get watched to the end. Each beat is a sentence that
+  makes sense on its own (someone may see only one of them).
+- Shape: 1 the hook: the most surprising number or consequence, said the way a Kenyan would tell a friend ("Sugar
+  just got Sh32 cheaper." not "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.") - 2 the twist or the
+  why, a new fact ("Factories milled 56.7% more cane this year.") - 3 what it means for you, in shillings, days or
+  people ("That's Sh32 back on every 2kg packet.") - 4 the demand to the named office in fresh words, or the
+  question that makes people comment ("Has your shop dropped the price yet?") - 5 (optional) the action.
+  Showcase posts (Kenya at its best, Built in Kenya) end on the place or the result instead.
+- Never news-wire phrasing: "brings relief to household budgets", "amid", "remains", "boosted ... as ...
+  increased", "in a move to", "stakeholders", "this comes as". Say what happened to whom, with the number.
 - One *marker* on the word that hits hardest in a line, at most one per line. The first beat must work alone as a
   thumbnail. Every number in the beats must already be in the post and its `source`.
 
@@ -556,6 +561,31 @@ def learnings_text() -> str:
                  + "\nLearn from the first group.")
     return (f"\nWHAT WORKED LATELY ON INSTAGRAM (score = saves*3 + shares*4 + comments*2 + likes per 1,000 reached, damped for small reach)\n{top}"
             f"\nWHAT DIDN'T\n{low}\nLean into what worked; try a new angle on what didn't.\n{held}\n")
+
+
+REWRITE_RULES = """You rewrite the Reel script (`beats`) and the Instagram `caption` of one finished post for KENYA ON
+RECORD, under the rules below. Same facts, same numbers, nothing added that the post and its source don't say.
+Return ONLY JSON: {"beats": ["3-5 lines"], "caption": "..."}"""
+
+
+def rewrite_script(post: dict) -> dict | None:
+    """The post's beats and caption written again under today's rules (same facts). None if the writer is not
+    available or the new script fails a guard rule the old one passed."""
+    keep = {k: post.get(k) for k in ("template", "message", "impact", "action", "who", "where", "when", "source",
+                                       "caption", "beats", "claim", "verdict", "truth") if post.get(k)}
+    try:
+        got = extract_json(call_claude(REWRITE_RULES + "\n" + BRAND_RULES + "\n" + CRAFT_RULES,
+                                       json.dumps(keep, ensure_ascii=False), max_tokens=900))
+    except Exception:
+        return None
+    beats = [str(b) for b in got.get("beats") or [] if str(b).strip()]
+    if not 3 <= len(beats) <= 5 or not str(got.get("caption") or "").strip():
+        return None
+    new = tidy_beats({**post, "beats": beats, "caption": str(got["caption"])})
+    before = {e for e in guard.check(post).errors}
+    if any(e not in before for e in guard.check(new).errors):
+        return None
+    return new
 
 
 def music_menu() -> str:

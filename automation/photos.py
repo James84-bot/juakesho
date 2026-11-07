@@ -195,9 +195,30 @@ def _cached(out_dir: Path, pid: str) -> dict | None:
     return None
 
 
-def _save(out_dir: Path, pid: str, data: bytes, info: dict) -> dict:
+MORE_PHOTOS = 2   # besides the lead photo: a Reel of 4-5 lines shows up to three different pictures
+
+
+def extra_photos(post: dict, lead: dict, out_dir: Path) -> list[dict]:
+    """Other newsrooms' photos of the same story, for a news Reel whose lead photo is one. Cached like the lead
+    photo, so a re-render shows the same pictures. Never raises; [] when there are none."""
+    if lead.get("kind") != "posted" or not post.get("beats") or not news_photos_ok():
+        return []
+    cached = [f for f in (out_dir / f"{post['id']}-photo-{k}.json" for k in range(2, 2 + MORE_PHOTOS)) if f.exists()]
+    if cached:
+        return [{**json.loads(f.read_text(encoding="utf-8")), "file": str(f.with_suffix(".jpg"))}
+                for f in cached if f.with_suffix(".jpg").exists()]
+    try:
+        import posted
+        got = posted.find_more(post, [lead.get("url", "")], MORE_PHOTOS)
+    except Exception as e:
+        _note(f"  more photos failed for {post.get('id')}: {e}")
+        return []
+    return [_save(out_dir, f"{post['id']}", data, info, suffix=f"-photo-{k}") for k, (data, info) in enumerate(got, 2)]
+
+
+def _save(out_dir: Path, pid: str, data: bytes, info: dict, suffix: str = "-photo") -> dict:
     out_dir.mkdir(parents=True, exist_ok=True)
-    target, meta = out_dir / f"{pid}-photo.jpg", out_dir / f"{pid}-photo.json"
+    target, meta = out_dir / f"{pid}{suffix}.jpg", out_dir / f"{pid}{suffix}.json"
     target.write_bytes(data)
     meta.write_text(json.dumps(info), encoding="utf-8")
     return {**info, "file": str(target)}
@@ -719,6 +740,12 @@ def _attach(posts: list[dict], out_dir: Path) -> None:
                 p["photo_kind"] = got.get("kind", "symbolic")
                 p["photo_outlet"] = got.get("outlet", "")
                 p["photo_source"] = p.get("photo_source") or got.get("url", "")
+                more = extra_photos(p, got, out_dir / "photos")
+                if more:   # a different picture of the same story on each line of the Reel
+                    p["extra_photos"] = [m["file"] for m in more]
+                    p["photo_credit"] = " · ".join(dict.fromkeys([got["credit"]] + [m["credit"] for m in more if m.get("credit")]))
+                else:
+                    p.pop("extra_photos", None)
             else:
                 for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet"):
                     p.pop(k, None)

@@ -13,8 +13,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import musiclib  # noqa: E402
 
 PIECES = [
-    {"title": "Volatile Reaction", "filename": "Volatile Reaction.mp3", "feel": "Driving, Intense", "genre": "Electronica"},
-    {"title": "Happy Bee", "filename": "Happy Bee.mp3", "feel": "Bright, Bouncy", "genre": "Pop"},
+    {"title": "Volatile Reaction", "filename": "Volatile Reaction.mp3", "feel": "Driving, Intense", "genre": "Electronica", "bpm": "120"},
+    {"title": "Happy Bee", "filename": "Happy Bee.mp3", "feel": "Bright, Uplifting", "genre": "Pop", "bpm": "110"},
+    {"title": "Sergio's Magic Dustbin", "filename": "Sergio's Magic Dustbin.mp3", "feel": "Driving, Quirky", "genre": "Electronica", "bpm": "120"},
+    {"title": "Slow Burn", "filename": "Slow Burn.mp3", "feel": "Tense", "genre": "Soundtrack", "bpm": "60"},
     {"title": "Spooky Halls", "filename": "Spooky Halls", "feel": "Dark, Tense", "genre": "Horror"},
     {"title": "Deck the Halls", "filename": "Deck the Halls", "feel": "Bright", "genre": "Holiday"},
     {"title": "Calm Waters", "filename": "Calm Waters", "feel": "Calming", "genre": "Ambient"},
@@ -26,8 +28,26 @@ class Library(unittest.TestCase):
         got = [(m, p["title"]) for m, p in musiclib.pick(PIECES)]
         self.assertEqual(got, [("urgent", "Volatile Reaction"), ("uplifting", "Happy Bee")])
 
+    def test_quirky_and_out_of_tempo_pieces_are_never_picked(self):
+        names = [p["title"] for _, p in musiclib.pick(PIECES)]
+        self.assertNotIn("Sergio's Magic Dustbin", names)
+        self.assertNotIn("Slow Burn", names)                      # 60 bpm drags under a 3-second line
+
+    def test_replace_removes_only_the_tracks_this_module_added(self):
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(musiclib, "MUSIC", Path(d)):
+            Path(d, "old.mp3").write_bytes(b"x")
+            Path(d, "artist.mp3").write_bytes(b"x")
+            Path(d, "tracks.json").write_text(json.dumps({"tracks": [
+                {"file": "old.mp3", "source": "https://incompetech.com/x.mp3"},
+                {"file": "artist.mp3", "source": "permission by email"}]}))
+            with mock.patch.object(musiclib, "cut", lambda ff, raw, out: out.write_bytes(b"m") or 10.0):
+                musiclib.fetch(get=lambda u, t=60: json.dumps([]).encode() if u == musiclib.PIECES else b"", ff="ffmpeg", replace=True)
+            reg = json.loads(Path(d, "tracks.json").read_text())
+            self.assertEqual([t["file"] for t in reg["tracks"]], ["artist.mp3"])
+            self.assertFalse(Path(d, "old.mp3").exists())
+
     def test_sung_tracks_are_never_picked(self):
-        sung = [{"title": "Galactic Rap", "filename": "Galactic Rap.mp3", "feel": "Driving", "genre": "Hip Hop"}]
+        sung = [{"title": "Galactic Rap", "filename": "Galactic Rap.mp3", "feel": "Driving", "genre": "Hip Hop", "bpm": "100"}]
         self.assertEqual(musiclib.pick(sung), [])
 
     def test_entry_is_licensed_clean_and_credited(self):
@@ -55,7 +75,7 @@ class Library(unittest.TestCase):
                 return json.dumps(PIECES).encode() if url == musiclib.PIECES else b"ID3"
             with mock.patch.object(musiclib, "cut", lambda ff, raw, out: out.write_bytes(b"m") or 10.0):
                 got = musiclib.fetch(get=ok, ff="ffmpeg")
-            self.assertEqual(got["added"], ["urgent: Volatile Reaction"])
+            self.assertEqual(got["added"], ["urgent: Volatile Reaction (Driving, Intense; Electronica; 120 bpm)"])
             reg = json.loads(Path(d, "tracks.json").read_text())
             self.assertEqual([t["file"] for t in reg["tracks"]], ["happy-bee.mp3", "volatile-reaction.mp3"])
 
