@@ -1442,13 +1442,82 @@
       "story_id": "18119523122011021",
       "fb_story_id": "4915731548641101",
       "yt_id": "M4_fZ6VKL0E"
+    },
+    {
+      "id": "2026-w45-hot-1107",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Public Health",
+      "line": "Kenya marks *18 straight days* without a new Ebola infection as six patients recover.",
+      "fact": "Six patients have recovered, and Kenya has logged 18 consecutive days with zero new infections.",
+      "source": "Capital FM News, 2026-11-06",
+      "message": "Kenya records 18 days without a new Ebola case as all six patients recover.",
+      "action": "Save emergency health line 719 on your phone to report symptoms quickly",
+      "photo_query": "hospital ward Kenya",
+      "beats": [
+        "Kenya records *18 days* without a single new Ebola infection.",
+        "All *six* infected patients have now fully recovered.",
+        "Zero new cases keep public clinics and families *safe*.",
+        "Kenyans demand: the Health Ministry maintains *strict border checks*."
+      ],
+      "who": "Ministry of Health",
+      "where": "National",
+      "when": "06 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Zero new infections protect public health and prevent panic across communities.",
+      "demand": "the Ministry of Health maintains strict border checks until total clearance",
+      "caption": "Capital FM News reports: Kenya has marked 18 consecutive days without a single new Ebola infection. All six patients have recovered.\n\nFrontline health teams protected our borders and communities.\n\nSave emergency health line 719 in your phone today.\n\n#SautiYaMwananchi #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-07T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Six Ebola patients recover as Kenya records 18 days without new infection",
+          "link": "https://capitalfm.africa/six-ebola-patients-recover-as-kenya-records-18-days-without-new-infection/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-06"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 4,
+        "action": 5,
+        "fair": 9,
+        "impact": 8,
+        "avg": 7.3,
+        "note": "Ebola is not among the top current trends for this week in Kenya, lowering the demand score."
+      },
+      "drafted_at": "2026-11-07T09:27:52.528327+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1107-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129010-moh-release-46-ebola-contacts-quarantine-issues-notice",
+      "reel": true,
+      "tg_msg": 799
     }
   ],
   "scripts": {
-    "radio": "Sasa, wananchi. Welcome to Kenya on Record. Today we are talking about Turkana, and it is a painful story. Hali ya maji kule Turkana bado ni mbaya sana, sio kwa sababu ya ukame peke yake, bali ni kwa sababu ya cartels. Maji imekuwa biashara ya watu wachache wanaouzia wanyonge kwa bei ya juu.\n\nImagine, a basic human right like water is being controlled by brokers while county boreholes are left dry or broken down on purpose. Wananchi wanahangaika na madumu wakitafuta matone ya uhai, wakati pesa za miradi ya maji zinaenda kwa mifuko ya wajanja wachache. Hii ni aibu.\n\nCounty leadership, we are putting you on notice. Kazi yenu si kulinda mabwenyenye wa maji. Kazi yenu ni kuhakikisha kila boma lina maji safi na ya kutosha. Sio haki watu wetu wafe kiu wakati bajeti ipo.\n\nTuamke. Tuulize maswali. Usiogope kusema ukweli.\n\n[Swahili Summary]\nNdugu zangu, Turkana maji imekuwa mali ya cartels badala ya wananchi. Visima vya kaunti vimeharibiwa makusudi ili wafanyabiashara wauzie watu maji ghali. Viongozi lazima wachukue hatua kuhakikisha maji ni ya kila Mkenya bila unyonyaji.",
-    "voice_note": "Wadau, mnasikia aje? Huku Turkana hali ni mbaya sana. Wananchi wanalia njaa na kiu, sio kwa sababu hakuna maji, lakini kwa sababu ya cartels. Watu wachache wamechukua udhibiti wa mabomba na visima, wanauzia wanyonge maji kwa bei ya juu sana huku viongozi wakinyamaza. Hii haiwezekani. Rasilimali ya umma haiwezi kuwa biashara ya mtu binafsi. Lazima tuwaseme hawa cartels. Maji ni haki, sio fursa ya biashara chafu.",
-    "sms": "Wacha kuibiwa na cartels za maji Turkana! Visima vya umma si mali ya mtu binafsi. Dai haki yako ya maji safi na bure kutoka kaunti. #Usiibiwe",
-    "reels": "Hii haikubaliki! Wakati watu wa Turkana wanahangaika na kiu, cartels wamegeuza mabomba ya maji kuwa biashara yao ya kibinafsi. Visima vimekauka sio kwa sababu ya ukame, lakini kwa sababu ya rushwa na unyakuzi wa maji ya umma. Viongozi wako wapi wakati wananchi wanakufa kiu? Maji si mali ya mtu mmoja. Simama kidete, kataa kuibiwa, na udai haki yako leo!"
+    "radio": "Habari zenu na karibuni kwa Kenya on Record. Today, we bring you encouraging news on the public health front, but with a firm reminder that vigilance remains our best defense. Kenya has now marked eighteen consecutive days without a single new confirmed Ebola case. Even better, all six patients who were admitted to isolation facilities have made a full recovery and returned home to their families.\n\nThis outcome reflects the dedication of our frontline healthcare workers, community health promoters, and rapid response teams who acted swiftly to isolate and treat the infections. However, accountability requires that we do not drop our guard prematurely. Standard public health protocol requires forty-two consecutive days—two full incubation cycles—without a single new infection before an outbreak can be declared officially over. That means we are not yet halfway through the monitoring window.\n\nCounty health departments must maintain active surveillance, especially at border entry points and transit hubs. Emergency allocations must continue supporting hospital preparedness rather than being redirected now that the immediate panic has subsided. As citizens, let us continue practicing proper hand hygiene and reporting any suspected symptoms to public health desks immediately.\n\nKwa ufupi: Kenya imerekodi siku kumi na nane bila kisa kipya cha Ebola, na wagonjwa wote sita wamepona kikamilifu na kuruhusiwa kwenda nyumbani. Hata hivyo, tuko bado kwenye kipindi cha uangalizi wa siku arobaini na mbili kabla ya kutangazwa tuko salama kabisa. Tuendelee kudumisha usafi na kutoa taarifa mapema.",
+    "voice_note": "Habari zenu, this is Kenya on Record with your weekly update. Some good news on the public health front: Kenya has now gone eighteen straight days without recording any new Ebola case. Even better, all six patients who were in isolation have fully recovered and been discharged. This is solid proof that early detection and proper clinical care work. But we cannot afford to relax just yet. International health guidelines require forty-two consecutive days without a case before a country is officially declared Ebola-free. That means county surveillance teams must stay sharp, screening at borders must continue, and we must keep observing basic hygiene. If you or anyone you know experiences sudden high fever or unexplained bleeding, report it to the nearest public health facility immediately. Let’s see this process through to the end.",
+    "sms": "Usiibiwe: All 6 Ebola patients recovered under proper hospital care. Beware of herbal cures or fake kits sold online. Report scams and symptoms via 719.",
+    "reels": "Eighteen days. Zero new Ebola cases. And all six patients in Kenya have fully recovered and returned home. That is a massive win for our frontline healthcare workers and early response teams. But the job isn't finished. Protocol demands forty-two clear days before Kenya is declared officially free of the outbreak. Border screening and hospital readiness must hold firm until the finish line. No dropping the ball."
   },
   "spend_usd": 0.0
 }

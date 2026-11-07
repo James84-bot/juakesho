@@ -1,227 +1,129 @@
 {
-  "fetched": "2026-11-06T20:55:32.123006+00:00",
+  "fetched": "2026-11-07T06:06:16.416175+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "oxford city vs leicester city",
+      "title": "new zealand vs india",
       "traffic": "500+",
       "news": [
         {
-          "title": "FA Cup: From facing Lionel Messi & Cristiano Ronaldo to non-league for Fernando Forestieri",
-          "url": "https://www.bbc.com/sport/football/articles/cw054d7nmndzo",
+          "title": "Cricket could take backseat in wet Wellington",
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2nd-odi-1539438/match-preview",
+          "source": "Cricinfo"
+        },
+        {
+          "title": "India vs New Zealand Live Score, 2nd ODI: Gurnoor Brar strikes as Mitchell Santner departs, New Zealand seven down",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand-live-score-ind-vs-nz-2nd-odi-2026-match-scorecard-today-playing-xi-virat-kohli-rohit-sharma-shubman-live-streaming-wellington/liveblog/135612326.cms",
+          "source": "The Times of India"
+        },
+        {
+          "title": "New Zealand India Cricket",
+          "url": "https://www.corsicanadailysun.com/sports/national_sports/new-zealand-india-cricket/image_a4e0c8ea-b294-54f6-b025-2af1e3e4b5c1.html",
+          "source": "Corsicana Daily Sun"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "alcohol law",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "End of the road for shisha? Bill proposes jail term, Sh5m fine as rules change",
+          "url": "https://nation.africa/kenya/news/end-of-the-road-for-shisha-bill-proposes-jail-term-sh5m-fine-as-rules-change-5661514",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "State bans alcohol sale in supermarkets in new bill",
+          "url": "https://www.the-star.co.ke/news/2026-11-06-state-bans-alcohol-sale-in-supermarkets-in-new-bill",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Parliament Moves to Raise Drinking Age & Introduce Alcohol Levy",
+          "url": "https://www.kenyans.co.ke/news/129185-parliament-bill-proposes-drinking-age-21-ksh2-levy",
+          "source": "Kenyans.co.ke"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "thomas tuchel",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "'A beautiful story' as Bellingham brothers called up",
+          "url": "https://www.bbc.com/sport/football/articles/c5x2vvjy2rpeo",
           "source": "BBC"
         },
         {
-          "title": "Oxford City vs Leicester City: Where to Watch, Live Stream & Kick-Off Time | FA Cup",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-oxford-city-v-leicester-city/blt27a2244a45953945",
-          "source": "Goal.com"
+          "title": "England squad: Cole Palmer, Phil Foden and Kobbie Mainoo left out as Jobe Bellingham and Josh King called up",
+          "url": "https://www.skysports.com/football/news/13608698/england-squad-cole-palmer-phil-foden-and-kobbie-mainoo-left-out-as-jobe-bellingham-and-josh-king-called-up",
+          "source": "Sky Sports"
         },
         {
-          "title": "‘The FA Cup’s Always Special’ - De Cordova-Reid On First Round",
-          "url": "https://www.lcfc.com/media-article/leicester-city-emirates-fa-cup-bobby-de-cordova-reid-first-round-preview-oxford-city",
-          "source": "LCFC | Official Website"
+          "title": "Jobe Bellingham joining Jude in England squad is ‘beautiful’, says Tuchel – as it happened",
+          "url": "https://www.theguardian.com/football/live/2026/nov/06/england-squad-announced-sunderland-face-jeers-and-fa-cup-first-round-football-news-live",
+          "source": "The Guardian"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "sk rapid",
-      "traffic": "500+",
+      "title": "gimli glider",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Jetzt im Liveticker! Schlusslicht WAC gastiert bei Leader Rapid",
-          "url": "https://www.kleinezeitung.at/artikel/41426992/jetzt-im-liveticker-schlusslicht-wac-gastiert-bei-leader-rapid",
-          "source": "Kleine Zeitung"
-        },
-        {
-          "title": "Bundesliga-Vorschau auf Runde 12 inklusive Ergebnistipps: Siege für das Top-Trio!",
-          "url": "https://www.ligaportal.at/bundesliga/vorschau/22876-ligaportal-bundesliga-vorschau-runde-12-mit-ergebnis-tipps",
-          "source": "Ligaportal"
-        },
-        {
-          "title": "Rapid jagt Rekord aus Fünfzigerjahren: Thorup sprach mit Wurmbrand",
-          "url": "https://peterlinden.live/rapid-jagt-rekord-aus-fuenfzigerjahren-thorup-sprach-mit-wurmbrand/",
-          "source": "PETER LINDEN LIVE"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "hamburg vs mönchengladbach",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Liveticker | Hamburger SV - Bor. Mönchengladbach 1:0 | 9. Spieltag | Bundesliga 2026/27",
-          "url": "https://www.kicker.at/hsv-gegen-mgladbach-2026-bundesliga-5226887/ticker",
-          "source": "kicker"
-        },
-        {
-          "title": "Polzin erklärt überraschenden Daka-Start",
-          "url": "https://www.ligainsider.de/patson-daka_16774/polzin-erklaert-ueberraschenden-daka-start-420463/",
-          "source": "LigaInsider"
-        },
-        {
-          "title": "Live! Muheim trifft und patzt – Gladbach gleicht kurz vor der Pause zum 1:1 aus",
-          "url": "https://www.abendblatt.de/sport/hsv/article413611297/live-hsv-mit-zwei-veraenderungen-gegen-gladbach-eine-ueberrascht.html",
-          "source": "Hamburger Abendblatt"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "sk rapid vs wolfsberger ac",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Rapid Vienna vs Wolfsberger AC: Austrian Bundesliga stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c9ly0ek2e5ejt",
-          "source": "BBC"
-        },
-        {
-          "title": "Rapid Vienna vs Wolfsberger AC: TV, live stream and kick-off time | Austrian Bundesliga",
-          "url": "https://www.goal.com/en/news/watch-rapid-vienna-vs-wolfsberger-ac-live-today-who-is-broadcasting-the-match-on-tv-and-via-live-stream/blt02f15401a8396379",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Rapid Vienna vs Wolfsberger AC Vienna 2026 — Tickets",
-          "url": "https://karlobag.eu/en/sports/news/rapid-vienna-vs-wolfsberger-ac-vienna-2026-tickets-octdy/",
-          "source": "KarloBag.eu"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "hammarby vs elfsborg",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Mavericks vs. Spurs (Nov 4, 2026) Live Score",
-          "url": "https://www.espn.com/nba/game?gameId=401909933",
-          "source": "ESPN"
-        },
-        {
-          "title": "Brian Windhorst & The Hoop Collective - How Wemby Can Be Unstoppable + ‘Dream Start’ For 76ers & How SGA Could Create Unique MVP Debate",
-          "url": "https://www.espn.com/espnradio/play?id=50398096",
-          "source": "ESPN"
-        },
-        {
-          "title": "Hamburg vs. Gladbach (6 Nov, 2026) Team Stats",
-          "url": "https://africa.espn.com/football/team-stats/_/gameId/401884739/league/ger.1",
-          "source": "ESPN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "william saliba",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Arteta's update on Saka, Saliba and Konsa",
-          "url": "https://www.arsenal.com/news/artetas-update-on-saka-saliba-and-konsa-aopoW1X0hn87",
-          "source": "Arsenal.com"
-        },
-        {
-          "title": "Arteta urges Arsenal to build momentum before international break",
-          "url": "https://arseblog.news/2026/11/arteta-urges-arsenal-to-build-momentum-before-international-break/",
-          "source": "Arseblog News"
-        },
-        {
-          "title": "Arsenal line-ups vs Hull decided as Ezri Konsa rested and Viktor Gyokeres agreement reached",
-          "url": "https://www.football.london/arsenal-fc/news/arsenal-lineup-hull-konsa-gyokeres-34875193",
-          "source": "Football London"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "diwali",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "261 Indian cities exceed WHO's PM2.5 guideline in October: CREA",
-          "url": "https://energy.economictimes.indiatimes.com/news/coal/261-indian-cities-exceed-whos-pm2-5-guideline-in-october-crea/135572054",
-          "source": "ET EnergyWorld"
-        },
-        {
-          "title": "Delhi alone breached October PM2.5 standards; pre-Diwali pollution worst since 2019: CREA",
-          "url": "https://www.newindianexpress.com/cities/delhi/2026/Nov/06/delhi-alone-breached-october-pm25-standards-pre-diwali-pollution-worst-since-2019-crea",
-          "source": "The New Indian Express"
-        },
-        {
-          "title": "BJP responsible for rising air pollution in state: Cong",
-          "url": "https://timesofindia.indiatimes.com/city/lucknow/bjp-responsible-for-rising-air-pollution-in-state-cong/articleshow/135616359.cms",
+          "title": "In 1983, an Air Canada Boeing 767 ran out of fuel at 41,000 feet because fuel was calculated in pounds in",
+          "url": "https://timesofindia.indiatimes.com/world/rest-of-world/in-1983-an-air-canada-boeing-767-ran-out-of-fuel-at-41000-feet-because-fuel-was-calculated-in-pounds-instead-of-kilograms-the-pilots-glided-it-onto-a-disused-air-base-runway-in-gimli-and-all-69-on-board-survived/articleshow/135609781.cms",
           "source": "The Times of India"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "sevilla",
+      "title": "fabrizio romano",
       "traffic": "100+",
       "news": [
         {
-          "title": "Alineaciones confirmadas del Sevilla y del Alavés en la jornada 12 de LALIGA",
-          "url": "https://es-us.noticias.yahoo.com/deportes/alineaciones-confirmadas-sevilla-alav%C3%A9s-jornada-190100918.html",
-          "source": "Yahoo"
+          "title": "Arsenal have no intention of selling Barcelona-linked 24-year-old defender – Romano",
+          "url": "https://barcauniversal.com/arsenal-have-no-intention-of-selling-barcelona-linked-24-year-old-defender-romano/",
+          "source": "Barca Universal"
         },
         {
-          "title": "Luis García Plaza y Quique Sánchez Flores salen con dos delanteros",
-          "url": "https://www.infobae.com/espana/agencias/2026/11/06/luis-garcia-plaza-y-quique-sanchez-flores-salen-con-dos-delanteros/",
-          "source": "Infobae"
+          "title": "Arsenal latest: Piero Hincapie 'opens transfer talks' as Mikel Arteta tipped to restructure",
+          "url": "https://www.football.london/arsenal-fc/news/arsenal-latest-piero-hincapie-opens-34862572",
+          "source": "Football London"
         },
         {
-          "title": "El Alavés prepara su visita al Sánchez-Pizjuán con una convocatoria de 24 jugadores",
-          "url": "https://onefootball.com/es/noticias/el-alaves-prepara-su-visita-al-sanchez-pizjuan-con-una-convocatoria-de-24-jugadores-43736877",
-          "source": "OneFootball"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "hamburg",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Studieren wird teurer: FAU bleibt aber günstigste Uni Deutschlands",
-          "url": "https://www.frankenfernsehen.tv/mediathek/video/studieren-wird-teurer-fau-bleibt-aber-guenstigste-uni-deutschlands/",
-          "source": "Franken Fernsehen"
-        },
-        {
-          "title": "402 Euro pro Semester: So teuer sind Hamburgs Unis im bundesweiten Vergleich",
-          "url": "https://www.abendblatt.de/hamburg/politik/article413594148/402-euro-pro-semester-so-teuer-sind-hamburgs-unis-im-bundesweiten-vergleich.html",
-          "source": "Hamburger Abendblatt"
-        },
-        {
-          "title": "Deutschlandweites Ranking: Semesterbeiträge steigen – Uni Stuttgart eine der günstigsten",
-          "url": "https://www.stuttgarter-zeitung.de/lokales/stuttgart/deutschlandweites-ranking-semesterbeitraege-steigen-uni-stuttgart-eine-der-guenstigsten-79659089.html",
-          "source": "Stuttgarter Zeitung"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "zamalek",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Today's matches (Friday) and broadcast channels: Zamalek vs Misr Insurance in the Egypt Cup",
-          "url": "https://www.voiceofemirates.com/en/sport/2026/11/06/todays-matches-friday-and-broadcast-channels-zamalek-vs-misr-insurance-in-the-egypt-cup/",
-          "source": "صوت الإمارات"
-        },
-        {
-          "title": "Zamalek SC vs Masr Lel Taamen Lineups | Egypt Cup · 6 Nov 2026",
-          "url": "https://www.ysscores.com/en/lineup/37498248/Zamalek-SC-vs-Masr-Lel-Taamen-Club",
-          "source": "YSscores"
-        },
-        {
-          "title": "Zamalek v Misr Insurance 06/11/2026 | Soccer",
-          "url": "https://www.flashscore.co.za/match/soccer/misr-insurance-d04QITFT/zamalek-Qk0VR4IS/",
-          "source": "Flashscore.co.za"
+          "title": "Gossip: Barcelona interested in Hincapie",
+          "url": "https://sports.yahoo.com/articles/gossip-barcelona-interested-hincapie-073750600.html",
+          "source": "Yahoo Sports"
         }
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "lakers vs trail blazers",
+      "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "cavaliers vs 76ers",
+      "why": "unsafe: 'shooting'"
+    },
+    {
+      "title": "babu owino",
+      "why": "unsafe: 'death'"
+    },
+    {
+      "title": "leeds vs tottenham",
+      "why": "unsafe: 'Bet'"
+    },
+    {
+      "title": "fulham vs newcastle",
+      "why": "unsafe: 'Odds'"
+    }
+  ],
   "errors": {}
 }
