@@ -71,6 +71,10 @@ NEWSROOMS = re.compile(r"^(capital fm|people daily|the star|daily nation|nation|
                        r"premier league|uefa|fifa)", re.I)
 
 
+# Live blogs and previews change after we read them, and a prediction is not a fact: neither becomes a source.
+MOVING = re.compile(r"\bLIVE\b[!:]|\blive (updates|blog|commentary)\b|\bpredictions?\b|\bodds\b", re.I)
+
+
 def newsroom(outlet: str) -> bool:
     return bool(NEWSROOMS.match((outlet or "").strip()))
 
@@ -114,7 +118,7 @@ def collect() -> dict:
                 if it["published"] and now - it["published"] > dt.timedelta(days=feed.get("days", MAX_AGE.days)):
                     continue
                 k = _key(it["title"])
-                if k in seen or not newsroom(it.get("outlet", "")):
+                if k in seen or not newsroom(it.get("outlet", "")) or MOVING.search(it["title"]):
                     continue
                 seen.add(k)
                 items.append({**it, "published": it["published"].isoformat() if it["published"] else "",

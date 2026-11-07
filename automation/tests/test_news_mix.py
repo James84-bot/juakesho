@@ -56,6 +56,14 @@ class Mix(unittest.TestCase):
         self.assertEqual(len(first), news.MAX_ITEMS + 4)
         self.assertEqual(len({x["title"] for x in first.values()}), len(first))   # nothing listed twice
 
+    def test_live_blogs_previews_and_predictions_are_not_sources(self):
+        for t in ("Arsenal vs Hull City LIVE! Premier League updates, news, prediction and line-ups",
+                  "LIVE: Budget reading in Parliament", "Gor Mahia vs AFC Leopards odds and tips"):
+            self.assertTrue(news.MOVING.search(t), t)
+        for t in ("Arsenal 1-0 Hull City: Martin Odegaard breaks Tigers' resistance", "Olunga returns to Harambee Stars squad",
+                  "Kenyans who live abroad sent home Sh400bn"):
+            self.assertFalse(news.MOVING.search(t), t)
+
     def test_sport_bodies_and_sport_newsrooms_are_sources_betting_blogs_are_not(self):
         for ok in ("BBC Sport", "Sky Sports", "ESPN", "The Athletic", "World Athletics", "Premier League", "UEFA.com"):
             self.assertTrue(news.newsroom(ok), ok)
