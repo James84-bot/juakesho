@@ -1,4 +1,149 @@
 {
   "_how": "Add a track only with the artist's written permission (keep the DM/email), or a licence that allows use in social videos. Put the audio file in this folder; a post uses it with 'track': '<file name>'. See README.md.",
-  "tracks": []
+  "tracks": [
+    {
+      "file": "dentaneosuchus-hunt.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Dentaneosuchus Hunt",
+      "mood": "urgent",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Dentaneosuchus%20Hunt.mp3",
+      "credit": "Music: \"Dentaneosuchus Hunt\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 20.0
+    },
+    {
+      "file": "sauropod-spotting.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Sauropod Spotting",
+      "mood": "urgent",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Sauropod%20Spotting.mp3",
+      "credit": "Music: \"Sauropod Spotting\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 20.0
+    },
+    {
+      "file": "cretaceous-dawn.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Cretaceous Dawn",
+      "mood": "urgent",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Cretaceous%20Dawn.mp3",
+      "credit": "Music: \"Cretaceous Dawn\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 20.0
+    },
+    {
+      "file": "sergio-s-magic-dustbin.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Sergio's Magic Dustbin",
+      "mood": "urgent",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Sergio%27s%20Magic%20Dustbin.mp3",
+      "credit": "Music: \"Sergio's Magic Dustbin\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 20.0
+    },
+    {
+      "file": "brain-dance.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Brain Dance",
+      "mood": "urgent",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Brain%20Dance.mp3",
+      "credit": "Music: \"Brain Dance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 20.0
+    },
+    {
+      "file": "southern-gothic.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Southern Gothic",
+      "mood": "urgent",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Southern%20Gothic.mp3",
+      "credit": "Music: \"Southern Gothic\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 20.0
+    },
+    {
+      "file": "mesmerizing-galaxy-loop.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Mesmerizing Galaxy",
+      "mood": "uplifting",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Mesmerizing%20Galaxy%20Loop.mp3",
+      "credit": "Music: \"Mesmerizing Galaxy\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 13.9
+    },
+    {
+      "file": "lord-of-the-rangs.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Lord of the Rangs",
+      "mood": "uplifting",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Lord%20of%20the%20Rangs.mp3",
+      "credit": "Music: \"Lord of the Rangs\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 13.9
+    },
+    {
+      "file": "cloud-dancer.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Cloud Dancer",
+      "mood": "uplifting",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Cloud%20Dancer.mp3",
+      "credit": "Music: \"Cloud Dancer\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 20.0
+    },
+    {
+      "file": "morning.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Morning",
+      "mood": "uplifting",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Morning.mp3",
+      "credit": "Music: \"Morning\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 20.0
+    },
+    {
+      "file": "evening.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Evening",
+      "mood": "uplifting",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Evening.mp3",
+      "credit": "Music: \"Evening\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 20.0
+    },
+    {
+      "file": "goblin-tinker-soldier-spy.mp3",
+      "artist": "Kevin MacLeod",
+      "title": "Goblin Tinker Soldier Spy",
+      "mood": "uplifting",
+      "start": 0.0,
+      "rights": "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com",
+      "clean": true,
+      "source": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Goblin_Tinker_Soldier_Spy.mp3",
+      "credit": "Music: \"Goblin Tinker Soldier Spy\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "cut_from": 20.0
+    }
+  ]
 }
