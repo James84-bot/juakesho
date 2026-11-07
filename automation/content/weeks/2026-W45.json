@@ -1480,7 +1480,7 @@
           "published": "2026-11-06"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1510,7 +1510,8 @@
       "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/129010-moh-release-46-ebola-contacts-quarantine-issues-notice",
       "reel": true,
-      "tg_msg": 799
+      "tg_msg": 799,
+      "decided_at": "2026-11-07T10:10:42.801214+03:00"
     }
   ],
   "scripts": {
