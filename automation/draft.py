@@ -576,14 +576,18 @@ def rewrite_script(post: dict) -> dict | None:
     try:
         got = extract_json(call_claude(REWRITE_RULES + "\n" + BRAND_RULES + "\n" + CRAFT_RULES,
                                        json.dumps(keep, ensure_ascii=False), max_tokens=900))
-    except Exception:
+    except Exception as e:
+        print(f"  rewrite of {post.get('id')} skipped: {str(e)[:160]}")
         return None
     beats = [str(b) for b in got.get("beats") or [] if str(b).strip()]
     if not 3 <= len(beats) <= 5 or not str(got.get("caption") or "").strip():
+        print(f"  rewrite of {post.get('id')} skipped: {len(beats)} lines or no caption")
         return None
     new = tidy_beats({**post, "beats": beats, "caption": str(got["caption"])})
     before = {e for e in guard.check(post).errors}
-    if any(e not in before for e in guard.check(new).errors):
+    added = [e for e in guard.check(new).errors if e not in before]
+    if added:
+        print(f"  rewrite of {post.get('id')} skipped: {'; '.join(added)[:200]}")
         return None
     return new
 

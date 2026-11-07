@@ -234,3 +234,27 @@ class YouTubeCandidates(unittest.TestCase):
             got = videos.youtube_cc_candidates("Nairobi market", 3)
         self.assertEqual([c["id"] for c in got], ["v0", "v2", "v3"])   # v1 is not CC: skipped
         self.assertTrue(all(c["url"].startswith("https://www.youtube.com/watch?v=") for c in got))
+
+
+class Broll(unittest.TestCase):
+    def test_footage_must_show_every_subject_word_and_no_person(self):
+        import tempfile
+        post = {"id": "p", "beats": ["a", "b", "c"], "photo_query": "hospital ward Kenya", "message": "Six patients recovered."}
+        hits = {"hits": [
+            {"tags": "eye, optometrist, hospital", "videos": {"large": {"url": "u1", "width": 1920, "size": 5}}},
+            {"tags": "hospital, ward, beds", "videos": {"large": {"url": "u2", "width": 1920, "size": 5}}, "pageURL": "x2", "user": "A"},
+            {"tags": "hospital, ward, corridor", "videos": {"large": {"url": "u3", "width": 1920, "size": 5}}, "pageURL": "x3", "user": "B"}]}
+        got_urls = []
+        with tempfile.TemporaryDirectory() as d, \
+             mock.patch.dict(os.environ, {"PIXABAY_API_KEY": "k"}), \
+             mock.patch.object(videos, "_pixabay_search", lambda q, k: hits), \
+             mock.patch.object(videos.photos, "_get", lambda u, timeout=60: got_urls.append(u) or b"v"), \
+             mock.patch.object(videos, "cut", lambda raw, out: out.write_bytes(b"m") or True), \
+             mock.patch.object(videos, "frames_ok", lambda clip, max_share=None, times=(): got_urls[-1] != "u2"):
+            got = videos.broll(post, Path(d))
+        self.assertEqual(got_urls, ["u2", "u3"])          # u1 lacks "ward"; u2 shows a person; u3 is used
+        self.assertEqual(got["credit"], "Footage: B / Pixabay")
+
+    def test_no_footage_on_an_allegation(self):
+        self.assertFalse(videos.broll_wanted({"beats": ["a"], "photo_query": "hospital ward", "message": "Doctor charged with fraud."}))
+        self.assertTrue(videos.broll_wanted({"beats": ["a"], "photo_query": "hospital ward", "message": "Six patients recovered."}))

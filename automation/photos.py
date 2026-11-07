@@ -320,7 +320,7 @@ FACE_MODEL = HERE / "content" / "models" / "face_detection_yunet_2023mar.onnx"
 FACE_MAX = 0.09   # a face wider than 9% of the photo is "prominent"
 
 
-def faces_ok(data: bytes) -> bool:
+def faces_ok(data: bytes, max_share: float | None = None) -> bool:
     """False when a person's face is prominent. A stranger's face never stands in for a story we tell
     (that's how a random person ends up 'the corrupt official'). Crowds and small figures are fine.
     Uses OpenCV's YuNet detector; a false alarm only costs us the next photo in line."""
@@ -337,7 +337,8 @@ def faces_ok(data: bytes) -> bool:
     img = cv2.resize(img, (900, max(1, int(h * 900 / max(w, 1)))))
     det = cv2.FaceDetectorYN.create(str(FACE_MODEL), "", (img.shape[1], img.shape[0]), 0.75)
     _, faces = det.detect(img)
-    return faces is None or not any(f[2] >= FACE_MAX * img.shape[1] for f in faces)
+    limit = FACE_MAX if max_share is None else max_share
+    return faces is None or not any(f[2] >= limit * img.shape[1] for f in faces)
 
 
 def _pick(good: list[tuple[str, dict]], pid: str, tries: int = 4) -> tuple[bytes, dict] | None:

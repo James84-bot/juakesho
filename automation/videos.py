@@ -323,15 +323,18 @@ def cut(src: Path, out: Path) -> bool:
     return r.returncode == 0 and out.exists() and out.stat().st_size > 10_000
 
 
-def frames_ok(clip: Path) -> bool:
-    """No stranger's face filling the frame at the start, middle or end of the clip."""
-    for t in (0.5, CLIP_S / 2, CLIP_S - 1):
+def frames_ok(clip: Path, max_share: float | None = None, times: tuple = (0.5, CLIP_S / 2, CLIP_S - 1)) -> bool:
+    """No stranger's face filling the frame at the sampled moments. max_share=0.03: no visible face at all."""
+    for t in times:
         with tempfile.NamedTemporaryFile(suffix=".jpg") as f:
             subprocess.run([_ffmpeg(), "-y", "-loglevel", "error", "-ss", str(t), "-i", str(clip), "-frames:v", "1", f.name])
             data = Path(f.name).read_bytes() if Path(f.name).exists() else b""
-            if data and not photos.faces_ok(data):
+            if data and not photos.faces_ok(data, max_share):
                 return False
     return True
+
+
+BROLL_TIMES = (0.5, 3.0, 6.0, 9.0, 12.0, 15.0, 18.5)   # the composer loops 20 s of it: check it all the way through
 
 
 def fetch(post: dict, out_dir: Path) -> dict | None:
@@ -410,7 +413,7 @@ def broll(post: dict, out_dir: Path) -> dict | None:
         return None
     for h in hits[:8]:
         tags = str(h.get("tags", "")).lower()
-        if not any(w[:5] in tags for w in words):
+        if not all(w[:5] in tags for w in words[:2]):   # "hospital ward" needs both: an eye clinic is not a ward
             continue
         sizes = h.get("videos") or {}
         pick = next((sizes[k] for k in ("large", "medium") if (sizes.get(k) or {}).get("url")
@@ -423,8 +426,9 @@ def broll(post: dict, out_dir: Path) -> dict | None:
                 raw.write_bytes(photos._get(pick["url"], timeout=120))
                 if not cut(raw, clip):
                     continue
-            if not frames_ok(clip):
-                _note(f"  b-roll for {post['id']} skipped: a face fills the frame ({h.get('pageURL', '')[:70]})")
+            if not frames_ok(clip, max_share=0.02, times=BROLL_TIMES):   # no person at all: under a line about
+                # "six patients" a stranger's face reads as one of them
+                _note(f"  b-roll for {post['id']} skipped: a person's face shows ({h.get('pageURL', '')[:70]})")
                 clip.unlink(missing_ok=True)
                 continue
         except Exception as e:
@@ -434,7 +438,7 @@ def broll(post: dict, out_dir: Path) -> dict | None:
         meta.write_text(json.dumps(info), encoding="utf-8")
         _note(f"  b-roll '{query}' for {post['id']}: {h.get('pageURL', '')[:80]}")
         return {**info, "file": str(clip)}
-    _note(f"  b-roll '{query}' for {post['id']}: {len(hits)} found, none showing it without a face")
+    _note(f"  b-roll '{query}' for {post['id']}: {len(hits)} found, none that shows it without a person")
     return None
 
 
