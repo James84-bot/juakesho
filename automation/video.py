@@ -216,7 +216,7 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         track = music_track(post)
         if track:   # an artist's track we have permission for: chime first, then their hook
             mix_track(ff, track, dur, tmp / "audio.wav")
-            post["track_credit"] = f"{track['artist']} - {track['title']} (used with permission)"
+            post["track_credit"] = track.get("credit") or f"{track['artist']} - {track['title']} (used with permission)"
         elif post["template"] in URGENT_TEMPLATES:
             sound.write_wav(sound.tension(dur, starts if beats else [0.0], seed), tmp / "audio.wav")
         else:

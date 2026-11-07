@@ -186,7 +186,7 @@ jobs:
           git config user.name "jua-kesho-bot"
           git config user.email "bot@users.noreply.github.com"
           # Add each path only if it exists: one missing pathspec makes git add save nothing at all
-          for p in automation/content/weeks automation/state exports; do [ -e "$p" ] && git add -A -- "$p"; done
+          for p in automation/content/weeks automation/content/music automation/state exports; do [ -e "$p" ] && git add -A -- "$p"; done
           # (MP4s and images are committed so GitHub Pages can serve them to Instagram)
           git diff --cached --quiet && exit 0
           git commit -m "autopilot: ${{ steps.cmd.outputs.c }} $(date -u +%FT%TZ)"

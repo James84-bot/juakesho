@@ -2048,7 +2048,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2216,6 +2216,15 @@ def _main(argv: list[str] | None = None) -> int:
         except Exception as e:
             log(f"writer check failed ({drafter.provider()}): {e}")
             return 1
+    if a.command == "musicfetch":   # licensed instrumental tracks into content/music (see musiclib.py)
+        import musiclib
+        got = musiclib.fetch()
+        print(f"::notice title=musicfetch::added {len(got['added'])}, kept {got['kept']}: " + "; ".join(got["added"])[:2000]
+              + (f" | errors: {'; '.join(got['errors'])[:800]}" if got["errors"] else "") + f" | piece keys: {got['sample_keys']}")
+        if not got["added"] and not got["kept"]:
+            print("::error title=musicfetch::no track was added")
+            return 1
+        return 0
     if a.command == "metacheck" and not meta_check(dry_run=a.dry_run):
         return 1   # a failed check shows on the run page too, with the reason
     if a.command == "youtubecheck":
