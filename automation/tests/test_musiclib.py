@@ -13,8 +13,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import musiclib  # noqa: E402
 
 PIECES = [
-    {"title": "Volatile Reaction", "filename": "Volatile Reaction", "feel": "Driving, Intense", "genre": "Electronica"},
-    {"title": "Happy Bee", "filename": "Happy Bee", "feel": "Bright, Bouncy", "genre": "Pop"},
+    {"title": "Volatile Reaction", "filename": "Volatile Reaction.mp3", "feel": "Driving, Intense", "genre": "Electronica"},
+    {"title": "Happy Bee", "filename": "Happy Bee.mp3", "feel": "Bright, Bouncy", "genre": "Pop"},
     {"title": "Spooky Halls", "filename": "Spooky Halls", "feel": "Dark, Tense", "genre": "Horror"},
     {"title": "Deck the Halls", "filename": "Deck the Halls", "feel": "Bright", "genre": "Holiday"},
     {"title": "Calm Waters", "filename": "Calm Waters", "feel": "Calming", "genre": "Ambient"},
@@ -25,6 +25,10 @@ class Library(unittest.TestCase):
     def test_pick_by_mood_and_never_horror_or_holiday(self):
         got = [(m, p["title"]) for m, p in musiclib.pick(PIECES)]
         self.assertEqual(got, [("urgent", "Volatile Reaction"), ("uplifting", "Happy Bee")])
+
+    def test_sung_tracks_are_never_picked(self):
+        sung = [{"title": "Galactic Rap", "filename": "Galactic Rap.mp3", "feel": "Driving", "genre": "Hip Hop"}]
+        self.assertEqual(musiclib.pick(sung), [])
 
     def test_entry_is_licensed_clean_and_credited(self):
         e = musiclib.entry("urgent", PIECES[0], "volatile-reaction.mp3", 12.0)

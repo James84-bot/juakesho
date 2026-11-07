@@ -25,7 +25,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 MUSIC = HERE / "content" / "music"
 PIECES = "https://incompetech.com/music/royalty-free/pieces.json"
-MP3 = "https://incompetech.com/music/royalty-free/mp3-royaltyfree/{}.mp3"
+MP3 = "https://incompetech.com/music/royalty-free/mp3-royaltyfree/{}"   # pieces.json filenames end in .mp3
 LICENCE = "CC BY 4.0 (creativecommons.org/licenses/by/4.0), incompetech.com"
 CUT_S = 45
 PER_MOOD = 6
@@ -33,7 +33,8 @@ MOODS = {
     "urgent": ("driving", "intense", "tense", "suspense", "action", "pulsing", "serious", "dark", "epic", "urgent"),
     "uplifting": ("bright", "uplifting", "happy", "hopeful", "inspiring", "upbeat", "positive", "grooving", "triumphant"),
 }
-AVOID = ("horror", "creepy", "christmas", "holiday", "comedy", "silly", "funny", "lullaby", "wedding", "funeral", "sad")
+AVOID = ("horror", "creepy", "christmas", "holiday", "comedy", "silly", "funny", "lullaby", "wedding", "funeral", "sad",
+         "vocal", "voice", "singer", "lyrics", "rap")   # instrumental only: nothing sung, nothing to check for clean words
 
 
 def _get(url: str, timeout: int = 60) -> bytes:
@@ -47,7 +48,8 @@ def _text(piece: dict) -> str:
 
 
 def _filename(piece: dict) -> str:
-    return str(piece.get("filename") or piece.get("file") or piece.get("title") or "").strip()
+    name = str(piece.get("filename") or "").strip()
+    return name if name.lower().endswith(".mp3") else (name + ".mp3" if name else "")
 
 
 def pick(pieces: list[dict], per_mood: int = PER_MOOD) -> list[tuple[str, dict]]:
@@ -70,11 +72,11 @@ def pick(pieces: list[dict], per_mood: int = PER_MOOD) -> list[tuple[str, dict]]
 
 
 def slug(name: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")[:60] + ".mp3"
+    return re.sub(r"[^a-z0-9]+", "-", re.sub(r"\.mp3$", "", name.lower())).strip("-")[:60] + ".mp3"
 
 
 def entry(mood: str, piece: dict, file: str, start: float) -> dict:
-    title = str(piece.get("title") or _filename(piece))
+    title = str(piece.get("title") or re.sub(r"\.mp3$", "", _filename(piece)))
     return {"file": file, "artist": "Kevin MacLeod", "title": title, "mood": mood, "start": 0.0,
             "rights": LICENCE, "clean": True, "source": MP3.format(urllib.parse.quote(_filename(piece))),
             "credit": f'Music: "{title}" by Kevin MacLeod (incompetech.com), CC BY 4.0', "cut_from": round(start, 1)}
