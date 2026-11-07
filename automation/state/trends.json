@@ -1,192 +1,209 @@
 {
-  "fetched": "2026-11-07T12:43:00.543599+00:00",
+  "fetched": "2026-11-07T17:23:49.631412+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "leeds vs spurs",
-      "traffic": "10000+",
+      "title": "fsv mainz vs bayern munich standings",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Premier League LIVE: Build-up, team news, live text, radio & score updates from across the Premier League",
+          "title": "Mainz 05 1-2 Bayern Munich: Harry Kane provides two assists as Bundesliga champions stay top",
+          "url": "https://www.bbc.com/sport/football/live/c6d09x7zknymt",
+          "source": "BBC"
+        },
+        {
+          "title": "Bayern, Dortmund win to stay tight at the top of Bundesliga",
+          "url": "https://sports.yahoo.com/articles/bayern-dortmund-win-stay-tight-165654861.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Mainz 1-2 Bayern (Nov 7, 2026) Game Analysis",
+          "url": "https://www.espn.com/soccer/report/_/gameId/401884740",
+          "source": "ESPN"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "epl fixtures today",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Premier League LIVE: Live text, radio & score updates from across the Premier League",
           "url": "https://www.bbc.com/sport/football/live/cmj6jdk36975t",
           "source": "BBC"
         },
         {
-          "title": "Leeds vs Tottenham LIVE! Premier League updates, news, prediction and line-ups",
-          "url": "https://www.skysports.com/football/live-blog/13592869/leeds-vs-tottenham-live-premier-league-updates-news-prediction-and-line-ups",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Two changes and pair return from injury as Farke reveals XI to face Tottenham Hotspur",
-          "url": "https://www.leedsunited.com/en/news/two-changes-and-pair-return-from-injury-as-farke-reveals-xi-to-face-tottenham-hotspur",
-          "source": "Leeds United | Official Website - Leeds United"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "chelsea vs everton",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Confirmed Chelsea Women line up vs Everton | News | Official Site",
-          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-everton",
-          "source": "Chelsea Football Club"
-        },
-        {
-          "title": "Chelsea FC Women vs Everton Women: TV channel, live stream and kick-off time",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-chelsea-fc-women-v-everton-women/blte2de09b3b4c9c51e",
+          "title": "Elliot Anderson is £116m well spent! Micah Richards explains how England international midfielder has helped to fill Rodri void at Man City",
+          "url": "https://www.goal.com/en-ke/lists/elliot-anderson-116m-micah-richards-midfielder-rodri-void-man-city/blt3fed3b54135de643",
           "source": "Goal.com"
         },
         {
-          "title": "WSL Saturday Predictions: Could Our 12/1 Scoreline Land?",
-          "url": "https://news.williamhill.com/football/wsl-predictions-and-betting-tips-for-saturday-7th-november-2026/",
-          "source": "William Hill News"
+          "title": "Enzo Maresca plan for Elliot Anderson and Ayyoub Bouaddi at Man City",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/enzo-maresca-plan-elliot-anderson-34872448",
+          "source": "Manchester Evening News"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "wrexham vs wolves",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Championship LIVE: Build-up, team news, score updates, text commentary & match stats from across the Championship",
-          "url": "https://www.bbc.com/sport/football/live/c6073j93z158t",
-          "source": "BBC"
-        },
-        {
-          "title": "Watch Wrexham vs. Wolverhampton Wanderers live today: Who is broadcasting the match on TV and via live stream?",
-          "url": "https://www.goal.com/en-ke/news/live-stream-online-tv-where-to-watch-wrexham-v-wolverhampton-wanderers/bltadd251210d00957e",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Wrexham Association Football Club",
-          "url": "https://www.wrexhamafc.co.uk/news/2026/november/06/preview--wrexham-afc-vs-wolves/",
-          "source": "Wrexham AFC"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "man city vs west ham",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Manchester City Women vs West Ham United Women: TV channel, live stream and kick-off time",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-manchester-city-women-v-west-ham-united-women/blt9d9624231b10d1ee",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Moorhouse the main feature in our City v West Ham programme!",
-          "url": "https://www.mancity.com/news/womens/city-v-west-ham-programme-promo-wsl-2627-63929495",
-          "source": "Manchester City FC"
-        },
-        {
-          "title": "Matchday Gallery | Hammers head north for Man City test",
-          "url": "https://www.whufc.com/en/news/matchday-gallery-or-hammers-head-north-for-man-city-test",
-          "source": "West Ham United"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya medical training college",
+      "title": "rb leipzig vs fc augsburg standings",
       "traffic": "200+",
       "news": [
         {
-          "title": "KMTC CEO Reveals Why 20,000 Students Miss Slots Despite KUCCPS Placement",
-          "url": "https://www.kenyans.co.ke/news/129182-20000-students-miss-kmtc-admission-slots-over-lack-govt-funding",
-          "source": "Kenyans.co.ke"
+          "title": "RB Leipzig vs Augsburg: German Bundesliga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6qxn7zrq0yet",
+          "source": "BBC"
         },
         {
-          "title": "KMTC seeks HELB funding as 20,000 students forfeit training slots over fees",
-          "url": "https://www.kbc.co.ke/kmtc-seeks-helb-funding-as-20000-students-forfeit-training-slots-over-fees/",
-          "source": "KBC Digital"
+          "title": "🚂 No stopping the RBL-Express: Leipzig put Augsburg away",
+          "url": "https://sports.yahoo.com/articles/no-stopping-rbl-express-leipzig-160600121.html",
+          "source": "Yahoo Sports"
         },
         {
-          "title": "Why 20,000 students are forfeiting their dream medical careers every year",
-          "url": "https://www.pulse.co.ke/story/why-20000-kmtc-students-miss-out-on-admissions-every-year-2026110607213902617",
-          "source": "Pulse Kenya"
+          "title": "Micho ahead of RBLFCA: \"We need to switch our focus back to the Bundesliga\"",
+          "url": "https://onefootball.com/en/news/micho-ahead-of-rblfca-we-need-to-switch-our-focus-back-to-the-bundesliga-43737109",
+          "source": "OneFootball"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "mariga",
-      "traffic": "100+",
+      "title": "arsenal f.c. standings",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Police teargas delegates as FKF meeting descends into chaos in Meru",
-          "url": "https://nation.africa/kenya/sports/football/police-teargas-delegates-as-fkf-meeting-descends-into-chaos-in-meru-5661932",
-          "source": "Daily Nation"
+          "title": "Viktor Gyokeres is finally finding his place in this Arsenal team",
+          "url": "https://www.nytimes.com/athletic/7754815/2026/11/05/viktor-gyokeres-arsenal-slavia-prague/",
+          "source": "The New York Times"
         },
         {
-          "title": "Mariga, 6 other officials expelled by Football Kenya Federation General Assembly",
-          "url": "https://www.the-star.co.ke/news/2026-11-07-mariga-6-other-officials-expelled-by-fkf",
-          "source": "The Star, Kenya"
+          "title": "Every word from Arteta's post-Slavia Prague presser",
+          "url": "https://www.arsenal.com/news/every-word-from-artetas-post-slavia-prague-presser-a0pkU6Q1QGpa",
+          "source": "Arsenal.com"
         },
         {
-          "title": "Drama, teargas as FKF Special General Meeting erupts into chaos in Meru",
-          "url": "https://citizen.digital/article/drama-teargas-as-fkf-special-general-meeting-erupts-into-chaos-in-meru-n393482",
-          "source": "Citizen Digital"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "motorola signature 27",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Motorola Signature 27 vs Samsung Galaxy S26 Ultra: Which Flagship Is Worth $1,600?",
-          "url": "https://www.techrepublic.com/article/news-motorola-signature-27-vs-galaxy-s26-ultra/",
-          "source": "TechRepublic"
-        },
-        {
-          "title": "Motorola’s $1,600 Signature 27 Is Throwing Every Ultra-Level Phone Feature Together",
-          "url": "https://www.cnet.com/tech/motorolas-1600-signature-27-is-throwing-every-ultra-level-phone-feature-together/",
-          "source": "CNET"
-        },
-        {
-          "title": "Motorola’s $1,599 Signature 27 Is the ‘World’s Fastest Android Smartphone’",
-          "url": "https://petapixel.com/2026/11/06/motorolas-1599-signature-27-is-the-worlds-fastest-android-smartphone/",
-          "source": "PetaPixel"
+          "title": "Slavia Prague vs. Arsenal: Preview, Predictions and Lineups",
+          "url": "https://www.si.com/soccer/slavia-prague-vs-arsenal-preview-predictions-lineups-11-4-26",
+          "source": "Sports Illustrated"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "man u vs aston villa",
+      "title": "barnsley vs aldershot",
       "traffic": "100+",
       "news": [
         {
-          "title": "Team news for United v Aston Villa",
-          "url": "https://www.manutd.com/en/news/team-news-for-united-v-aston-villa-8-nov",
-          "source": "Manchester United"
+          "title": "Barnsley vs Aldershot Town: FA Cup stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c39wz0dk7gejt",
+          "source": "BBC"
         },
         {
-          "title": "Man Utd vs Aston Villa Prediction: Premier League Preview",
-          "url": "https://theanalyst.com/articles/man-utd-vs-aston-villa-prediction-premier-league-preview-11-2026",
-          "source": "Opta Analyst"
+          "title": "SCOTT’S HOT TO TROT",
+          "url": "https://www.thenonleaguefootballpaper.com/latest-news/non-league-paper/630685/scotts-hot-to-trot/",
+          "source": "The Non-League Football Paper"
         },
         {
-          "title": "Emery says Man Utd are on 'same level as Barcelona' ahead of major decision",
-          "url": "https://www.thesun.co.uk/sport/40944737/unai-emery-aston-villa-man-utd-barcelona/",
-          "source": "The Sun"
+          "title": "‘Same as a league game’ as Shots visit in FA Cup",
+          "url": "https://www.barnsleychronicle.com/article/37297/same-as-a-league-game-as-shots-visit-in-fa-cup",
+          "source": "Barnsley Chronicle"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "luton vs forest green",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Luton Town v Forest Green Rovers: FA Cup stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/ckd6d93qx4zwt",
+          "source": "BBC"
+        },
+        {
+          "title": "Luton vs Forest Green Prediction: The Final Match to Decide the Championship",
+          "url": "https://www.vietnam.vn/en/nhan-dinh-luton-vs-forest-green-tran-chung-ket-dinh-doat-ngoi-vuong",
+          "source": "Vietnam.vn"
+        },
+        {
+          "title": "Luton Town – Hot Favourites To Progress",
+          "url": "https://vitalfootball.co.uk/luton-town-hot-favourites-to-progress/",
+          "source": "Vital Football"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "plymouth vs alvechurch",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Tom Cleverley on His Hope for a Memorable Emirates FA Cup Run",
+          "url": "https://www.pafc.co.uk/news/tom-cleverley-his-hope-memorable-emirates-fa-cup-run",
+          "source": "Plymouth Argyle - PAFC"
+        },
+        {
+          "title": "FOOTBALL - Kyle Storer accepts Alvechurch are 'massive underdogs' ahead of FA Cup first round tie at Plymouth Argyle",
+          "url": "https://redditchstandard.co.uk/sport/football-kyle-storer-accepts-alvechurch-are-massive-underdogs-ahead-of-fa-cup-first-round-tie-at-plymouth-argyle/",
+          "source": "The Redditch Standard"
+        },
+        {
+          "title": "Alvechurch hope fairytale FA Cup exploits can fuel long-term benefits",
+          "url": "https://www.thetottenhamindependent.co.uk/news/26702625.alvechurch-hope-fairytale-fa-cup-exploits-can-fuel-long-term-benefits/",
+          "source": "Tottenham Independent"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "espanyol vs deportivo",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "En directo: Espanyol 0 - Deportivo 0",
+          "url": "https://www.lavozdegalicia.es/retransmision/torremarathon/2026/11/07/directo-espanyol-deportivo-hidalgo-repite-once-osasuna/01071794059842292912513.htm",
+          "source": "La Voz de Galicia"
+        },
+        {
+          "title": "Eder Sarabia: \"En los últimos metros, quitando a los grandes, el Dépor es uno de los equipos con más talento\"",
+          "url": "https://www.riazor.org/eder-sarabia-ultimos-metros-grandes-depor-talento/",
+          "source": "Riazor.org"
+        },
+        {
+          "title": "Lista de convocados de Eder Sarabia para medirse al Deportivo",
+          "url": "https://pericos.es/2026/11/07/lista-de-convocados-de-eder-sarabia-para-medirse-al-deportivo/",
+          "source": "Pericos.es"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "charlton vs sheffield united",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Charlton Athletic v Sheffield United: Championship stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/crd6d93q71d0t",
+          "source": "BBC"
+        },
+        {
+          "title": "Wilder hoping for Bamford boost",
+          "url": "https://www.sufc.co.uk/news/2026/november/06/injury-update/",
+          "source": "Sheffield United FC"
+        },
+        {
+          "title": "TEAM NEWS | Four changes for Blades clash",
+          "url": "https://www.cafc.co.uk/news/team-news-four-changes-blades-clash",
+          "source": "Charlton Athletic Football Club"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "mogadishu",
-      "why": "unsafe: 'war'"
-    },
-    {
-      "title": "stuttgart vs werder bremen",
-      "why": "unsafe: 'Betting'"
+      "title": "nottm forest vs man city",
+      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}
