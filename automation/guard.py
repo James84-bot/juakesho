@@ -483,6 +483,8 @@ def check(post: dict) -> Report:
 
     for f, limit in SCHEMAS[tpl].items():
         v = post.get(f)
+        if f == "credit" and tpl == "tazama" and post.get("rights_kind") in {"owner", "own"} and not v:
+            continue   # your own clip carries no credit
         if not isinstance(v, str) or not v.strip():
             rep.errors.append(f"missing field '{f}'")
         elif len(v) > limit:
@@ -636,8 +638,8 @@ def check(post: dict) -> Report:
     if puff and tpl not in {"kesho", "cover"}:
         rep.errors.append(f"filler/puffery ('{puff.group(0)}'): replace it with a specific fact from the material")
     if tpl == "tazama":   # someone else's clip: only with a recorded right to use it
-        if post.get("rights_kind") not in {"permission", "own", "quote"}:
-            rep.errors.append("clip without a recorded right to use it (permission / ours / short news quote)")
+        if post.get("rights_kind") not in {"permission", "own", "quote", "owner"}:   # owner: sent by the owner, who vouches for it
+            rep.errors.append("clip without a recorded right to use it (sent by the owner / permission / ours / short news quote)")
         if not 1 <= len(post.get("hook") or []) <= 2 or not 2 <= len(post.get("verdict") or []) <= 4:
             rep.errors.append("Tazama Hii needs 1-2 hook beats and 2-4 verdict beats")
         win = post.get("clip_window")

@@ -628,8 +628,8 @@ def _voice_note(msg: dict, chat: str) -> None:
 
 
 def _photo_intake(msg: dict, chat: str) -> None:
-    """You replied to a card with a photo: that post gets your picture, a new id and a fresh card.
-    Only photos you took or have permission for (first caption line, as for clips)."""
+    """You replied to a card with a photo: that post gets your picture, a new id and a fresh card. With no first
+    line it is yours (no credit); "ruhusa @who" or "chanzo @page link" credit someone; agency photos are refused."""
     import tazama
 
     def reply(text: str) -> None:
@@ -651,9 +651,9 @@ def _photo_intake(msg: dict, chat: str) -> None:
     data, post = hit
     if post["status"] not in {"awaiting", "approved"} or post.get("group"):
         return reply(f"📷 <b>{_esc(post['id'])}</b> can't take a new photo now ({_esc(post['status'])}).")
-    rights = tazama.parse_caption(msg.get("caption", ""))
-    if not rights or rights["rights"] not in {"own", "permission"}:
-        rights = _posted_source(msg.get("caption", ""))
+    rights = _posted_source(msg.get("caption", "")) or tazama.parse_caption(msg.get("caption", ""))
+    if rights and rights["rights"] not in {"own", "permission", "owner", "posted"}:
+        rights = None   # "nukuu": a TV station's photo needs their permission
     if not rights:
         return reply("📷 Got the photo, but I can't use it yet.\n\n" + PHOTO_HOW_TO)
     if rights["rights"] == "posted" and PAID_PHOTOS.search(rights["evidence"]):
@@ -673,8 +673,8 @@ def _photo_intake(msg: dict, chat: str) -> None:
             im.convert("RGB").save(ROOT / rel, "JPEG", quality=92)
     except Exception as e:
         return reply(f"📷 Couldn't download that photo ({_esc(str(e)[:120])}). Try again.")
-    credit = {"own": "Photo: Kenya on Record", "permission": f"Photo: {rights['credit']} (with permission)",
-              "posted": f"Photo: {rights['credit']}"}[rights["rights"]]
+    credit = {"own": "", "owner": "", "permission": f"Photo: {rights['credit']} (with permission)",
+              "posted": f"Photo: {rights['credit']}"}[rights["rights"]]   # yours: no credit line
     for k in ("photo_file", "photo_credit", "photo_kind", "tg_msg", "decided_at", "video_file", "video_credit", "video_source"):
         post.pop(k, None)
     post.update(id=new_id, photo=f"sent:{rel.as_posix()}", photo_rights_credit=credit, photo_rights=rights["evidence"],
@@ -728,8 +728,20 @@ def _next_slot(min_lead: dt.timedelta = dt.timedelta(hours=2)) -> dt.datetime:
     return t + min_lead
 
 
+def _clip_slot(label: str) -> dt.datetime:
+    """Your clip goes out at the next prime-time slot, moved clear of the day's other posts (they would split the
+    audience) and never into the night."""
+    posts = load_week(label)["posts"] if week_file(label).exists() else []
+    when = _clear_of(_next_slot(), posts, gap=dt.timedelta(minutes=60))
+    if when.hour >= QUIET_FROM or when.hour < 7:
+        nxt = (when + dt.timedelta(days=1 if when.hour >= QUIET_FROM else 0)).replace(hour=9, minute=0)
+        when = _clear_of(nxt, posts, gap=dt.timedelta(minutes=60))
+    return when
+
+
 def process_clips(dry_run: bool = False) -> int:
-    """Turns queued clips into Tazama Hii Reels and sends them for approval. Raw clips stay in a temp folder."""
+    """Turns queued clips into Tazama Hii Reels and sends their cards (auto-approved when the guard passes; ❌ stops
+    one). Raw clips stay in a temp folder."""
     import draft as drafter
     import guard
     import news
@@ -753,7 +765,7 @@ def process_clips(dry_run: bool = False) -> int:
                 segments = tazama.transcribe(src)
                 post = tazama.write(drafter.call_claude, c, meta["duration"], segments,
                                     news.prompt_block() + radar.prompt_block())
-                post.update(id=f"{label.lower()}-tazama-{c['id'][5:]}", publish_at=_next_slot().isoformat(), clip=c["id"])
+                post.update(id=f"{label.lower()}-tazama-{c['id'][5:]}", publish_at=_clip_slot(label).isoformat(), clip=c["id"])
                 a, b = tazama.window(post, c, meta["duration"])
                 post["clip_window"] = [a, b]
                 report = guard.check(post)
@@ -1060,7 +1072,7 @@ def _send_card(chat: str, label: str, p: dict, out_dir: Path) -> None:
 # 5. Collect approvals
 # ---------------------------------------------------------------------------
 POLICY = HERE / "content" / "policy.json"
-AUTO_NEVER = {"promise", "scorecard", "tazama"}   # a real person's record or someone else's clip: a human decides
+AUTO_NEVER = {"promise", "scorecard"}   # a real person's record: a human decides
 AUTO_PHOTO_NEVER = {"file", "event"}              # a named person's portrait on a story
 
 
@@ -1078,6 +1090,8 @@ def auto_ok(p: dict) -> str:
     g = p.get("guard") or {}
     if g.get("errors"):
         return "failed a guard rule"
+    if p.get("template") == "tazama":   # you sent the clip: that is the decision; the guard passed when it was made
+        return ""
     if any("named person" in str(w) for w in g.get("warnings") or []):
         return "may name a person"
     crit = (p.get("critic") or {}).get("avg")
@@ -1455,7 +1469,7 @@ def caption_for(post: dict) -> str:
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
         body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
         cap = f"{body.rstrip()}\n\n📩 Were you there? Send us your video and we'll credit you.{tail}"
-    clip = post.get("credit") if post.get("template") == "tazama" and post.get("rights_kind") != "own" else None
+    clip = post.get("credit") if post.get("template") == "tazama" and post.get("rights_kind") not in {"own", "owner"} else None
     credits = [f"{icon} {c}" for icon, c in (("📹 Video:", clip), ("🎥", post.get("video_credit")),
                                              ("📷", post.get("person_credit") or post.get("photo_credit")),
                                              ("🎵", post.get("track_credit"))) if c and c not in cap]

@@ -1,17 +1,17 @@
 """
 tazama.py — "Tazama Hii" (watch this): a clip someone filmed becomes OUR Reel, with our take around it.
 
-You send a video to the Telegram bot with one line that says where it came from:
+You send a video to the Telegram bot, with a line on what it is about if you like. You vouch for the video, so
+it is used as it is, with no credit. Optional first lines when you want a credit or a stricter cut:
     ruhusa @kevo254 DM 12 Oct      (permission: the person who filmed it said yes; credit them)
     yangu                          (we filmed it)
     nukuu Citizen TV https://...   (a short quote from news footage, for commentary: max 8 seconds)
-and, on the next lines, what it is about. Nothing without that line is ever used.
 
 The Reel, 1080x1920:
     1. HOOK    1-2 beats over a still of the clip, urgent sound
-    2. CLIP    the moment, boxed in our frame: headline on top, live captions from the real audio, credit below
+    2. CLIP    the moment, boxed in our frame: headline on top, live captions from the real audio (credit below if given)
     3. VERDICT 2-4 beats: what the record says, the proof, the demand to the leaders
-The raw clip never enters the public repo; only the finished, credited Reel does.
+The raw clip never enters the public repo; only the finished Reel does.
 """
 from __future__ import annotations
 
@@ -27,15 +27,16 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 STATE_FILE = HERE / "state" / "clips.json"
-MAX_SECONDS = {"quote": 8.0, "permission": 40.0, "own": 40.0}
+MAX_SECONDS = {"quote": 8.0, "permission": 40.0, "own": 40.0, "owner": 40.0}
 TG_MAX_BYTES = 20 * 1024 * 1024        # Telegram bots can download files up to 20 MB
 BOX_TOP, BOX_MAX_H, MARGIN = 430, 1000, 48
 
 RIGHTS = [
     ("permission", re.compile(r"^\s*(ruhusa|permission|perm|ameruhusu)\b[\s:,-]*(.+)$", re.I)),
     ("own", re.compile(r"^\s*(yangu|mine|own|tumerekodi|we filmed)\b[\s:,-]*(.*)$", re.I)),
-    ("quote", re.compile(r"^\s*(nukuu|quote|news)\b[\s:,-]*(.+)$", re.I)),
+    ("quote", re.compile(r"^\s*(nukuu|quote)\b[\s:,-]*(.+)$", re.I)),
 ]
+NAMELESS = re.compile(r"^\s*(ruhusa|permission|perm|ameruhusu|nukuu|quote)\s*[:,-]?\s*$", re.I)   # a credit asked for, no name
 
 TAZAMA_RULES = """You write "Tazama Hii" Reels for KENYA ON RECORD: informed ordinary Kenyans who show a real clip and say what it
 means, with proof. You get: the owner's note on what the clip is, how we may use it (rights), the credit, the clip
@@ -47,7 +48,7 @@ Return ONLY JSON:
  "start": seconds, "end": seconds,
  "verdict": ["2-4 beats after the clip: what the record says, the proof, the demand to the leaders; one *marker* max per beat"],
  "message": "the one thing the viewer must walk away with (max 120)",
- "caption": "Instagram caption in our KOT voice, credit the source by name, 2-4 live hashtags that fit, ask a question",
+ "caption": "Instagram caption in our KOT voice, 2-4 live hashtags that fit, ask a question; name the credit only if one is given",
  "source": "links that back the verdict (from the headlines or official records); empty only if the verdict states no fact",
  "lane": "everyone"}
 
@@ -62,12 +63,16 @@ Rules:
 # ---------------------------------------------------------------------------
 # Intake (from Telegram)
 # ---------------------------------------------------------------------------
-def parse_caption(text: str) -> dict | None:
-    """{"rights", "credit", "source", "note"} from the caption, or None if it doesn't say where the clip came from."""
+def parse_caption(text: str, owner_default: bool = True) -> dict | None:
+    """{"rights", "credit", "source", "note"} from the caption. A first line naming the right ("ruhusa @who", "yangu",
+    "nukuu Outlet") sets it and its credit. Without one the owner vouches for the file: rights "owner", no credit,
+    the whole caption is the note. owner_default=False gives None instead (a rights line is required)."""
     lines = [ln.strip() for ln in (text or "").strip().splitlines() if ln.strip()]
-    if not lines:
+    if lines and NAMELESS.match(lines[0]):
         return None
     for kind, rx in RIGHTS:
+        if not lines:
+            break
         m = rx.match(lines[0])
         if m:
             rest = m.group(2).strip()
@@ -77,14 +82,16 @@ def parse_caption(text: str) -> dict | None:
                 return None   # permission or a quote must say from whom
             return {"rights": kind, "credit": credit[:60], "source": url.group(0) if url else "",
                     "evidence": lines[0][:120], "note": "\n".join(lines[1:])[:600]}
-    return None
+    if not owner_default:
+        return None
+    url = re.search(r"https?://\S+", text or "")
+    return {"rights": "owner", "credit": "", "source": url.group(0) if url else "",
+            "evidence": "sent by the owner, who vouches for it", "note": "\n".join(lines)[:600]}
 
 
-HOW_TO = ("To use a clip, send the video with a caption whose FIRST line says where it came from:\n"
-          "<code>ruhusa @who (how they said yes)</code>  the person who filmed it agreed\n"
-          "<code>yangu</code>  we filmed it\n"
-          "<code>nukuu Citizen TV https://link</code>  a short news quote (max 8 s)\n"
-          "Then, on the next lines, what the clip is about.")
+HOW_TO = ("Send the video with a line on what it is about. It is used with no credit. For a credit, start with:\n"
+          "<code>ruhusa @who (how they said yes)</code>  the person who filmed it agreed (credited)\n"
+          "<code>nukuu Citizen TV https://link</code>  a short news quote (max 8 s, credited)")
 
 
 def load() -> dict:
@@ -103,14 +110,15 @@ def intake(msg: dict, now: dt.datetime) -> tuple[str, dict | None]:
     if not media:
         return "", None
     info = parse_caption(msg.get("caption", ""))
-    if not info:
-        return "🎬 Got the video, but I can't use it yet.\n\n" + HOW_TO, None
+    if not info:   # "ruhusa" or "nukuu" without saying from whom
+        return "🎬 Got the video, but that first line needs a name.\n\n" + HOW_TO, None
     if int(media.get("file_size") or 0) > TG_MAX_BYTES:
         return "🎬 That file is over 20 MB, the most a Telegram bot can download. Trim it or send it compressed (not as a file).", None
     clip = {"id": f"clip-{now:%m%d%H%M%S}", "file_id": media["file_id"], "duration": media.get("duration"),
             "received": now.isoformat(), "status": "queued", **info}
-    return (f"🎬 Clip queued (<b>{htmlmod.escape(info['rights'])}</b>, credit {htmlmod.escape(info['credit'])}). "
-            "Your Tazama Hii Reel comes back here for ✅ within about 2 hours."), clip
+    credit = f", credit {htmlmod.escape(info['credit'])}" if info["credit"] else ""
+    return (f"🎬 Got it{credit}. The Reel is made within about 2 hours and posted at the next free slot; "
+            "tap ❌ on its card to stop it."), clip
 
 
 def download(tg_get_file, token: str, file_id: str, target: Path) -> None:
@@ -200,7 +208,7 @@ def frame_html(post: dict, info: dict, bx: tuple[int, int, int, int]) -> str:
     import render
     x, y, w, h = bx
     credit = (f"📹 {info['credit']} · used with permission" if info["rights"] == "permission" else
-              "📹 Kenya on Record" if info["rights"] == "own" else f"📺 Clip: {info['credit']} · short excerpt for commentary")
+              f"📺 Clip: {info['credit']} · short excerpt for commentary" if info["rights"] == "quote" else "")
     logo = (render.LOGO / "wordmark-on-dark.svg").as_uri()
     return f"""<!doctype html><html><head><meta charset="utf-8"><style>{bk.font_faces(render.FONTS)}
 html,body{{margin:0;width:1080px;height:1920px;background:#0E0C0B;color:#fff;font-family:Inter,sans-serif;overflow:hidden}}

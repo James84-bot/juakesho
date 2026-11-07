@@ -1208,7 +1208,7 @@ class PhotoSwapTests(TempWeeks):
         p = self.intake("yangu\nAt the Senate this morning")
         self.assertEqual((p["id"], p["status"]), ("p1-r4", "drafted"))
         self.assertTrue(p["photo"].startswith("sent:exports/2026-W41/photos/p1-r4-sent.jpg"))
-        self.assertEqual(p["photo_rights_credit"], "Photo: Kenya on Record")
+        self.assertEqual(p["photo_rights_credit"], "")   # yours: no credit line
         self.assertNotIn("photo_file", p)
         self.assertTrue((self.root / p["photo"][5:]).exists())
 
@@ -1216,6 +1216,10 @@ class PhotoSwapTests(TempWeeks):
         p = self.intake("nukuu Citizen TV")       # a TV station's photo needs their permission
         self.assertEqual(p["status"], "awaiting")
         self.assertIn("can't use it yet", self.sent[-1][1]["text"])
+
+    def test_photo_with_no_first_line_is_yours_with_no_credit(self):
+        p = self.intake("At the Senate this morning")
+        self.assertEqual((p["status"], p["photo_use"], p["photo_rights_credit"]), ("drafted", "owner", ""))
 
     def test_photo_not_replying_to_a_card_gets_the_how_to(self):
         p = self.intake("yangu", reply_to=None)

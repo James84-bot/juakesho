@@ -21,14 +21,21 @@ class Tazama(unittest.TestCase):
         self.assertEqual(tazama.parse_caption("yangu\nwe filmed the queue")["credit"], "Kenya on Record")
         q = tazama.parse_caption("nukuu Citizen TV https://youtu.be/x\nCS on teargas")
         self.assertEqual((q["rights"], q["credit"], q["source"]), ("quote", "Citizen TV", "https://youtu.be/x"))
-        self.assertIsNone(tazama.parse_caption("check this out"))
+        own = tazama.parse_caption("check this out\nthe queue at Huduma https://x.com/a/1")   # no rights line: yours
+        self.assertEqual((own["rights"], own["credit"], own["source"]), ("owner", "", "https://x.com/a/1"))
+        self.assertIn("queue at Huduma", own["note"])
+        self.assertEqual(tazama.parse_caption("")["rights"], "owner")   # no caption at all is fine too
+        self.assertIsNone(tazama.parse_caption("check this out", owner_default=False))
         self.assertIsNone(tazama.parse_caption("ruhusa"))   # permission from whom?
 
     def test_intake(self):
         video = {"file_id": "F", "file_size": 5_000_000, "duration": 30}
         reply, clip = tazama.intake({"video": video, "caption": "hii ni moto"}, NOW)
-        self.assertIsNone(clip)
-        self.assertIn("FIRST line", reply)
+        self.assertEqual((clip["rights"], clip["credit"]), ("owner", ""))   # sent by you: used, no credit
+        self.assertIn("posted at the next free slot", reply)
+        self.assertNotIn("credit", reply)
+        reply, clip = tazama.intake({"video": video, "caption": "ruhusa"}, NOW)
+        self.assertIsNone(clip)   # asked for a credit but named nobody
         reply, clip = tazama.intake({"video": {**video, "file_size": 30_000_000}, "caption": "yangu"}, NOW)
         self.assertIsNone(clip)
         reply, clip = tazama.intake({"document": {**video, "mime_type": "video/mp4"}, "caption": "yangu\nqueue at Huduma"}, NOW)
@@ -60,7 +67,44 @@ class Tazama(unittest.TestCase):
                 "caption": "c", "clip_window": [0, 20]}
         self.assertEqual(guard.check(post).errors, [])
         self.assertTrue(guard.check({**post, "rights_kind": ""}).errors)
+        self.assertEqual(guard.check({**post, "rights_kind": "owner", "credit": ""}).errors, [])
         self.assertTrue(guard.check({**post, "rights_kind": "quote"}).errors)   # 20 s of news footage is too long
+
+
+class OwnerClips(unittest.TestCase):
+    def test_your_clip_has_no_credit_anywhere_and_is_approved_by_itself(self):
+        import pipeline
+        info = {"rights": "owner", "credit": ""}
+        self.assertNotIn("📹", tazama.frame_html({"headline": "h"}, info, (48, 430, 984, 554)).split("class=\"credit\">")[1][:5])
+        post = {"id": "w-tazama-1", "template": "tazama", "rights_kind": "owner", "credit": "", "caption": "c #KenyaOnRecord",
+                "status": "awaiting", "guard": {"errors": [], "warnings": []}}
+        self.assertNotIn("Video:", pipeline.caption_for(post))
+        self.assertEqual(pipeline.auto_ok(post), "")
+        self.assertTrue(pipeline.auto_ok({**post, "guard": {"errors": ["x"]}}))   # a failed rule still waits for you
+
+    def test_your_clip_goes_out_clear_of_other_posts_and_never_at_night(self):
+        import pipeline
+        from unittest import mock
+        eat = pipeline.EAT
+        busy = {"posts": [{"publish_at": "2026-10-13T12:45:00+03:00", "status": "approved"}]}
+        with mock.patch.object(pipeline, "now", lambda: dt.datetime(2026, 10, 13, 9, 0, tzinfo=eat)), \
+                mock.patch.object(pipeline, "week_file", lambda l: Path(__file__)), \
+                mock.patch.object(pipeline, "load_week", lambda l: busy):
+            when = pipeline._clip_slot("2026-W42")
+        self.assertGreaterEqual(abs(when - dt.datetime(2026, 10, 13, 12, 45, tzinfo=eat)), dt.timedelta(minutes=60))
+        self.assertTrue(7 <= when.hour < pipeline.QUIET_FROM)
+        late = {"posts": [{"publish_at": "2026-10-13T19:00:00+03:00", "status": "approved"},
+                          {"publish_at": "2026-10-13T20:00:00+03:00", "status": "approved"}]}
+        with mock.patch.object(pipeline, "now", lambda: dt.datetime(2026, 10, 13, 16, 30, tzinfo=eat)), \
+                mock.patch.object(pipeline, "week_file", lambda l: Path(__file__)), \
+                mock.patch.object(pipeline, "load_week", lambda l: late):
+            when = pipeline._clip_slot("2026-W42")
+        self.assertEqual((when.day, when.hour), (14, 9))   # 19:00 and 20:00 are taken, 21:00 is night: next morning
+
+    def test_a_credited_clip_keeps_its_credit(self):
+        import pipeline
+        cap = pipeline.caption_for({"template": "tazama", "rights_kind": "permission", "credit": "@kevo254", "caption": "c"})
+        self.assertIn("📹 Video: @kevo254", cap)
 
 
 class Calm(unittest.TestCase):
