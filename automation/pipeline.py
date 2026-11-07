@@ -1304,7 +1304,7 @@ def collect() -> None:
                 "🎵 <b>Post this Reel yourself</b> (the bot won't): save the video above, then in Instagram or TikTok "
                 "tap <b>Add audio</b>, pick a trending Kenyan sound, and turn <b>Original audio</b> down to 0. "
                 "The platform licenses that music, so it won't be muted. Caption to paste:\n\n"
-                f"<code>{esc(caption_for(post))[:3500]}</code>"))
+                f"<code>{esc(caption_for(post, credits=True))[:3500]}</code>"))
         log(f"{verdict}: {key}")
     for data in weeks.values():
         save_week(data)
@@ -1451,12 +1451,27 @@ def brand_tags(cap: str) -> str:
     return cap
 
 
-def caption_for(post: dict) -> str:
-    """The approved caption plus credits: the photographer of a real photo, the artist of a licensed track.
-    The post's action is always in the caption: added as the last line if the writer left it out."""
+NO_CREDIT_NEEDED = re.compile(r"\bCC0\b|public domain|\bPDM\b", re.I)   # these licences ask for no credit at all
+
+
+def credit_lines(post: dict) -> list[str]:
+    """Credits a licence or the owner of a photo asks for: the real footage, the photo, a licensed track. They go
+    in the Sources comment (Instagram, Facebook) or at the end of the text where there is no comment of ours
+    (YouTube, TikTok), never in the middle of the caption. CC0 and public-domain media need none."""
+    out = []
+    for icon, c in (("🎥", post.get("video_credit")), ("📷", post.get("person_credit") or post.get("photo_credit")),
+                    ("🎵", post.get("track_credit"))):
+        if c and not NO_CREDIT_NEEDED.search(str(c)):
+            out.append(f"{icon} {c}")
+    return out
+
+
+def caption_for(post: dict, credits: bool = False) -> str:
+    """The approved caption, plus what it means for you and the action when the writer left them out. Credits are
+    added only with credits=True (where we post no Sources comment); a clip someone gave us keeps its credit."""
     cap = brand_tags(post.get("caption", ""))
     imp = str(post.get("impact") or "").strip()
-    if imp and imp.lower()[:30] not in cap.lower():   # what the news changes for Kenyans, above the action
+    if imp and imp.lower()[:30] not in cap.lower() and "what it means for you" not in cap.lower():
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
         body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
         cap = f"{body.rstrip()}\n\nWhat it means for you: {imp}{tail}"
@@ -1465,15 +1480,10 @@ def caption_for(post: dict) -> str:
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
         body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
         cap = f"{body.rstrip()}\n\n👉 {act}{tail}"
-    if post.get("hot") and "send us" not in cap.lower():   # news posts: footage from the scene, credited, is ours to use
-        tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
-        body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
-        cap = f"{body.rstrip()}\n\n📩 Were you there? Send us your video and we'll credit you.{tail}"
     clip = post.get("credit") if post.get("template") == "tazama" and post.get("rights_kind") not in {"own", "owner"} else None
-    credits = [f"{icon} {c}" for icon, c in (("📹 Video:", clip), ("🎥", post.get("video_credit")),
-                                             ("📷", post.get("person_credit") or post.get("photo_credit")),
-                                             ("🎵", post.get("track_credit"))) if c and c not in cap]
-    return f"{cap}\n\n" + "\n".join(credits) if credits else cap
+    lines = ([f"📹 Video: {clip}"] if clip and clip not in cap else []) + \
+            ([c for c in credit_lines(post) if c[2:] not in cap] if credits else [])
+    return f"{cap}\n\n" + "\n".join(lines) if lines else cap
 
 
 def publish_instagram(label: str, members: list[dict]) -> str:
@@ -1518,13 +1528,15 @@ def publish_facebook(label: str, members: list[dict]) -> str | None:
 
 
 def receipts_comment(post: dict) -> str | None:
-    """The first comment under every civic post: the sources, so anyone can check us (links aren't clickable in
-    Instagram captions, and Kenyans ask for receipts)."""
+    """The first comment under every post: the sources, so anyone can check us (links aren't clickable in Instagram
+    captions, and Kenyans ask for receipts), and the credits a photo or track needs. One place, out of the caption."""
     parts = [str(post.get(k) or "").strip() for k in ("claim_source", "source")]
     parts = [x for x in dict.fromkeys(parts) if len(x) >= 8 and "sample" not in x.lower()]
-    if not parts:
+    credits = credit_lines(post)
+    if not parts and not credits:
         return None
-    return ("Sources:\n" + "\n".join(f"• {x}" for x in parts))[:2000]
+    text = ("Sources:\n" + "\n".join(f"• {x}" for x in parts)) if parts else ""
+    return (text + ("\n\n" if text and credits else "") + "\n".join(credits))[:2000]
 
 
 def post_receipts(post: dict, ig_id: str | None, fb_id: str | None) -> None:
@@ -1551,7 +1563,7 @@ def crosspost_text(post: dict) -> str:
     sound, which only the app can add), YouTube Shorts and WhatsApp. TikTok and Facebook hold Kenya's largest
     audiences; WhatsApp is where people forward what they trust."""
     from html import escape as esc
-    cap = caption_for(post)
+    cap = caption_for(post, credits=True)
     parts = ["📲 <b>Post it everywhere</b> (save the video from the card above):"]
     if post.get("reel"):
         parts += ["", "<b>TikTok</b>: upload, tap <b>Add sound</b>, pick a trending Kenyan sound at low volume. Caption:",
@@ -1585,7 +1597,7 @@ def _youtube_short(label: str, post: dict) -> None:
         return
     video = EXPORTS / label / f"{post['id']}.mp4"
     try:
-        desc = caption_for(post) + SUBSCRIBE_LINE   # a Short that lands on a new viewer should say where more comes from
+        desc = caption_for(post, credits=True) + SUBSCRIBE_LINE   # a Short that lands on a new viewer should say where more comes from
         res = youtube.upload(video, shorts_title(post), desc)
         post["yt_id"] = res["id"]
         note = "" if res["privacy"] == "public" else (
@@ -1605,7 +1617,7 @@ def _tiktok_post(label: str, post: dict) -> bool:
         return False
     video = EXPORTS / label / f"{post['id']}.mp4"
     try:
-        res = tiktok.upload(video, caption_for(post))
+        res = tiktok.upload(video, caption_for(post, credits=True))
         post["tt_id"] = res["publish_id"]
         post["tt_status"] = f"{res['status']} {res['fail_reason']}".strip() + f" ({res['privacy']})"
         public = res["privacy"] == "PUBLIC_TO_EVERYONE" and res["status"] != "FAILED"
@@ -1637,7 +1649,7 @@ def _tiktok_package(label: str, post: dict) -> None:
         return
     video = EXPORTS / label / f"{post['id']}.mp4"
     try:
-        cap = caption_for(post)
+        cap = caption_for(post, credits=True)
         cap = "🎵 TikTok: save this video, upload it in the app, paste this caption.\n\n" + cap
         cap = cap if len(cap) <= 1000 else cap[:997].rstrip() + "..."
         chat = need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]

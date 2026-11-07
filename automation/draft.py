@@ -928,13 +928,19 @@ def _credit_after(line: str, outlet: str, verb: str = "reports") -> str | None:
     return f"{body.rstrip('.').rstrip()}, {outlet} {verb}."
 
 
+def _allegation(post: dict) -> bool:
+    """The post says someone did wrong (arrested, charged, fraud, bribes...): then whose report it is must be said."""
+    return bool(guard.CRIME_WORDS.search(guard._all_text(post)))
+
+
 def attribute_single_source(post: dict) -> dict:
-    """A post resting on one outlet says so ("..., Capital FM reports."): we repeat their report, we do not assert it as
-    our own finding. Our own verified data (a bank fact) is exempt. The credit goes after the fact, not before it: the
-    first words of a Reel and of a caption decide whether people stay (our most viewed Short so far, 986 views, ended
-    "..., KNBS reports."; the two that opened "<Outlet> reports:" sat below the median). The Reel's first line gets the
-    credit too when it still fits the line limits."""
+    """Credits stay out of the post: the source of every post is in its Sources comment. The exception is an
+    allegation resting on one outlet: there the outlet is named after the fact ("..., Capital FM reports."), because
+    we repeat their report, we do not assert it as our own finding. Our own verified data (a bank fact) is exempt.
+    The credit goes after the fact, not before it: the first words decide whether people stay."""
     if isinstance(post.get("material"), dict) and post["material"].get("kind") == "bank":
+        return post
+    if not _allegation(post):
         return post
     outlets = []
     for x in post.get("source_links") or []:
@@ -962,27 +968,31 @@ ATTRIBUTION = re.compile(r"^\s*([A-Z][\w&'.\- ]{2,40}?)\s+(reports?|reported|say
 
 
 def tidy_beats(post: dict) -> dict:
-    """The writer likes to open the Reel with "<Outlet> reports: ...". That spends the first two seconds on a name,
-    and it often pushes the line over the 72-character limit, which models cannot count. So the credit moves to the
-    end of the line ("..., Outlet reports.") when that fits, and is dropped when it doesn't: the source is still on
-    the card, in `source` and in the caption. Nothing else is touched."""
+    """The writer likes to open the Reel and the caption with "<Outlet> reports: ...". That spends the first two
+    seconds on a name, and it often pushes a Reel line over the 72-character limit, which models cannot count. The
+    source is in the Sources comment, so the leading credit is dropped. On an allegation the credit is needed: it
+    moves to the end of the line ("..., Outlet reports.") when that fits. Nothing else is touched."""
+    keep = _allegation(post)
     beats = post.get("beats")
-    if not isinstance(beats, list):
-        return post
-    out = []
-    for b in beats:
+    out = beats if not isinstance(beats, list) else []
+    for b in beats if isinstance(beats, list) else []:
         if isinstance(b, str):
             m = ATTRIBUTION.match(b)
             rest = b[m.end():] if m else ""
             if m and rest:
                 rest = rest[0].upper() + rest[1:]
-                credited = _credit_after(rest, m.group(1).strip(), m.group(2))
+                credited = _credit_after(rest, m.group(1).strip(), m.group(2)) if keep else None
                 if credited and _fits(credited):
                     b = credited
-                elif not _fits(b):
+                elif not keep or not _fits(b):
                     b = rest
         out.append(b)
-    return {**post, "beats": out}
+    cap = post.get("caption")
+    if isinstance(cap, str) and not keep:
+        m = ATTRIBUTION.match(cap)
+        if m and cap[m.end():]:
+            cap = cap[m.end()][0].upper() + cap[m.end() + 1:]
+    return {**post, "beats": out, **({"caption": cap} if isinstance(cap, str) else {})}
 
 
 def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:

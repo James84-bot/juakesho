@@ -21,12 +21,20 @@ class TidyBeats(unittest.TestCase):
         self.assertEqual(beat0("People Daily reports: KRA targets 1 million landlords in new rental tax audits."),
                          "KRA targets 1 million landlords in new rental tax audits.")
 
-    def test_a_credit_that_fits_moves_after_the_fact(self):
-        self.assertEqual(beat0("Capital FM reports: Short one."), "Short one, Capital FM reports.")
+    def test_a_leading_credit_is_dropped_the_source_is_in_the_comment(self):
+        self.assertEqual(beat0("Capital FM reports: Short one."), "Short one.")
+        self.assertEqual(beat0("KNBS says: Kenyan women now have *3 children* on average."),
+                         "Kenyan women now have *3 children* on average.")
+        cap = draft.tidy_beats({"beats": ["a"], "caption": "Capital FM News reports: Sugar is Sh32 cheaper.\n#Sugar"})["caption"]
+        self.assertEqual(cap, "Sugar is Sh32 cheaper.\n#Sugar")
+
+    def test_on_an_allegation_the_credit_moves_after_the_fact(self):
         self.assertEqual(beat0("Citizen Digital reports: Corruption costs Kenya billions every year."),
                          "Corruption costs Kenya billions every year, Citizen Digital reports.")
-        self.assertEqual(beat0("KNBS says: Kenyan women now have *3 children* on average."),
-                         "Kenyan women now have *3 children* on average, KNBS says.")
+        out = draft.tidy_beats({"beats": ["The Star reports: Police arrested 3 over the fraud."],
+                                "caption": "The Star reports: 3 arrested."})
+        self.assertEqual(out["beats"][0], "Police arrested 3 over the fraud, The Star reports.")
+        self.assertEqual(out["caption"], "The Star reports: 3 arrested.")   # an allegation keeps its credit
 
     def test_a_line_without_a_leading_credit_is_left_alone(self):
         self.assertEqual(beat0("Kenyan women now have 3 children on average, KNBS reports."),

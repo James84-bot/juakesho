@@ -19,7 +19,7 @@ class TikTok(unittest.TestCase):
         with mock.patch.object(pipeline, "tiktok_packages_on", return_value=on), \
              mock.patch.object(pipeline, "tg", lambda m, f=None, files=None: calls.append((m, f, files))), \
              mock.patch.object(pipeline, "need", lambda *k: {"TELEGRAM_CHAT_ID": "1"}), \
-             mock.patch.object(pipeline, "caption_for", lambda p: p["caption"]):
+             mock.patch.object(pipeline, "caption_for", lambda p, credits=False: p["caption"]):
             pipeline._tiktok_package("2026-W45", post)
         return calls
 

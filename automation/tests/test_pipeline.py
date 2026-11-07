@@ -172,8 +172,8 @@ class ReachTests(unittest.TestCase):
             self.assertIn(part, text)
         self.assertNotIn("#KenyansAreAsking", text)   # the old tag is replaced
         cap = pl.caption_for(dict(post, hot=True))
-        self.assertIn("Send us your video", cap)
-        self.assertTrue(cap.rstrip().endswith("#KenyaOnRecord") or "📷" in cap)   # hashtags stay last
+        self.assertNotIn("Send us your video", cap)   # no boilerplate under every news post
+        self.assertTrue(cap.rstrip().endswith("#KenyaOnRecord"))   # hashtags stay last
         self.assertLess(len(text), 4096)
         self.assertNotIn("TikTok", pl.crosspost_text(dict(post, reel=False)))   # an image post: WhatsApp only
         long = dict(post, caption="x " * 3000)
@@ -867,7 +867,8 @@ class QualitySystemTests(unittest.TestCase):
             self.assertIsNone(video.music_track({"track": "b.mp3"}))       # no rights recorded
             self.assertIsNone(video.music_track({"track": "d.mp3"}))       # lyrics not confirmed clean
             self.assertIsNone(video.music_track({"track": "c.mp3"}))       # not registered
-        cap = pl.caption_for({"caption": "Hi", "photo_credit": "Photo: A / Pexels", "track_credit": "Amina - Kesho (used with permission)"})
+        cap = pl.caption_for({"caption": "Hi", "photo_credit": "Photo: A / Pexels", "track_credit": "Amina - Kesho (used with permission)"},
+                             credits=True)
         self.assertEqual(cap, "Hi\n\n📷 Photo: A / Pexels\n🎵 Amina - Kesho (used with permission)")
         self.assertTrue(any("track" in e for e in guard.check(self.base_straight(track="../../etc/passwd")).errors))
 
@@ -893,9 +894,24 @@ class QualitySystemTests(unittest.TestCase):
 
     def test_caption_gets_photo_credit_once(self):
         self.assertEqual(pl.caption_for({"caption": "Hi"}), "Hi")
-        c = pl.caption_for({"caption": "Hi", "photo_credit": "Photo: A / Pexels"})
+        self.assertEqual(pl.caption_for({"caption": "Hi", "photo_credit": "Photo: A / Pexels"}), "Hi")   # Instagram, Facebook
+        c = pl.caption_for({"caption": "Hi", "photo_credit": "Photo: A / Pexels"}, credits=True)
         self.assertTrue(c.endswith("Photo: A / Pexels"))
-        self.assertEqual(pl.caption_for({"caption": c, "photo_credit": "Photo: A / Pexels"}), c)
+        self.assertEqual(pl.caption_for({"caption": c, "photo_credit": "Photo: A / Pexels"}, credits=True), c)
+
+    def test_cc0_and_public_domain_photos_carry_no_credit_anywhere(self):
+        post = {"caption": "Hi", "photo_credit": "Photo: Aguahrz / Wikimedia Commons, CC0"}
+        self.assertEqual(pl.caption_for(post, credits=True), "Hi")
+        self.assertIsNone(pl.receipts_comment(post))
+
+    def test_the_sources_comment_holds_sources_then_credits(self):
+        c = pl.receipts_comment({"source": "Capital FM News, 2026-11-06", "photo_credit": "Photo: Kenyans.co.ke"})
+        self.assertEqual(c, "Sources:\n• Capital FM News, 2026-11-06\n\n📷 Photo: Kenyans.co.ke")
+
+    def test_what_it_means_for_you_is_never_said_twice(self):
+        cap = pl.caption_for({"caption": "Sugar is Sh32 cheaper.\n\nWhat it means for you: you spend Sh32 less.\n\n#Sugar",
+                              "impact": "A 2kg packet now costs Sh32 less on shelves."})
+        self.assertEqual(cap.lower().count("what it means for you"), 1)
 
     def test_free_square_avoids_every_obstacle(self):
         import render
@@ -1230,7 +1246,10 @@ class PhotoSwapTests(TempWeeks):
         p = self.intake("chanzo @StateHouseKenya https://x.com/StateHouseKenya/status/1")
         self.assertEqual((p["status"], p["photo_use"]), ("drafted", "posted"))
         self.assertEqual(p["photo_rights_credit"], "Photo: @StateHouseKenya")
-        self.assertIn("📷 Photo: @StateHouseKenya", pl.caption_for({**p, "caption": "c", "photo_credit": p["photo_rights_credit"]}))
+        posted = {**p, "caption": "c", "photo_credit": p["photo_rights_credit"], "source": "State House, 2026-11-07"}
+        self.assertNotIn("📷", pl.caption_for(posted))                            # not in the caption
+        self.assertIn("📷 Photo: @StateHouseKenya", pl.receipts_comment(posted))   # in the Sources comment
+        self.assertIn("📷 Photo: @StateHouseKenya", pl.caption_for(posted, credits=True))   # YouTube, TikTok
 
     def test_agency_photo_is_refused(self):
         p = self.intake("chanzo Reuters/Monicah Mwangi")

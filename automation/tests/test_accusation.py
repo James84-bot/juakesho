@@ -42,20 +42,26 @@ class Accusation(unittest.TestCase):
 
 
 class SingleSource(unittest.TestCase):
-    def test_one_outlet_is_named_in_caption_and_first_beat(self):
-        p = draft.attribute_single_source({"caption": "Sh40m recovered.", "beats": ["EACC recovers Sh40 million.", "b b", "c c"],
+    def test_an_allegation_names_its_one_outlet_after_the_fact(self):
+        p = draft.attribute_single_source({"caption": "Sh40m fraud uncovered.", "beats": ["EACC charges three over Sh40m fraud.", "b b", "c c"],
                                            "source_links": [{"outlet": "Capital FM", "link": "https://x"}]})
-        self.assertEqual(p["caption"], "Sh40m recovered, Capital FM reports.")   # the fact first, the credit after it
-        self.assertEqual(p["beats"][0], "EACC recovers Sh40 million, Capital FM reports.")
+        self.assertEqual(p["caption"], "Sh40m fraud uncovered, Capital FM reports.")   # the fact first, the credit after it
+        self.assertEqual(p["beats"][0], "EACC charges three over Sh40m fraud, Capital FM reports.")
+
+    def test_everything_else_carries_no_credit_in_the_post(self):
+        post = {"caption": "Sugar is Sh32 cheaper.", "beats": ["Sugar output rose *56.7%*.", "b b", "c c"],
+                "source_links": [{"outlet": "Capital FM", "link": "https://x"}]}
+        p = draft.attribute_single_source(dict(post))
+        self.assertEqual((p["caption"], p["beats"][0]), (post["caption"], post["beats"][0]))   # the source is in the comment
 
     def test_a_question_caption_keeps_the_credit_in_front(self):
-        p = draft.attribute_single_source({"caption": "Who pays?\nMore.", "beats": ["Who pays the Sh40 million?", "b", "c"],
+        p = draft.attribute_single_source({"caption": "Who took the bribes?\nMore.", "beats": ["Who took the Sh40 million in bribes?", "b", "c"],
                                            "source_links": [{"outlet": "Capital FM", "link": "https://x"}]})
-        self.assertEqual(p["caption"], "Capital FM reports: Who pays?\nMore.")
-        self.assertEqual(p["beats"][0], "Who pays the Sh40 million?")   # no credit squeezed into a question
+        self.assertEqual(p["caption"], "Capital FM reports: Who took the bribes?\nMore.")
+        self.assertEqual(p["beats"][0], "Who took the Sh40 million in bribes?")   # no credit squeezed into a question
 
     def test_a_credit_that_would_overflow_the_line_is_left_to_the_caption(self):
-        long = "Kenya's total public debt rose past Sh11 trillion in October."
+        long = "Kenya's anti-graft agency charged eleven officials in a Sh2bn fraud."
         p = draft.attribute_single_source({"caption": "c.", "beats": [long, "b", "c"],
                                            "source_links": [{"outlet": "Capital FM News", "link": "https://x"}]})
         self.assertEqual(p["beats"][0], long)
