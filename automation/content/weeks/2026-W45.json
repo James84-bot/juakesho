@@ -423,7 +423,8 @@
       "photo_source": "https://commons.wikimedia.org/wiki/File:Interior_of_Kenya_National_Assembly.jpg",
       "reel": true,
       "tg_msg": 701,
-      "decided_at": "2026-11-02T16:36:41.186940+03:00"
+      "decided_at": "2026-11-02T16:36:41.186940+03:00",
+      "fresh_checked": "2026-11-07T12:47:24.326017+03:00"
     },
     {
       "id": "2026-w45-hot-1102",
@@ -1486,7 +1487,7 @@
           "published": "2026-11-06"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1517,7 +1518,13 @@
       "photo_source": "https://www.kenyans.co.ke/news/129010-moh-release-46-ebola-contacts-quarantine-issues-notice",
       "reel": true,
       "tg_msg": 799,
-      "decided_at": "2026-11-07T10:10:42.801214+03:00"
+      "decided_at": "2026-11-07T10:10:42.801214+03:00",
+      "published_at": "2026-11-07T12:49:04.921147+03:00",
+      "ig_id": "18138301876678777",
+      "fb_id": "1115637484586494",
+      "story_id": "18086879591711093",
+      "fb_story_id": "1044017212032195",
+      "yt_id": "oBQcw8qqWV4"
     }
   ],
   "scripts": {
