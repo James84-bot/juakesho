@@ -764,6 +764,7 @@ def tvclip_work(payload: dict) -> str:
     import video
     pid, file_id = str(payload.get("post", "")), str(payload.get("file_id", ""))
     channel = re.sub(r"[^\w .&'-]", "", str(payload.get("channel") or "TV"))[:40] or "TV"
+    sample = bool(payload.get("sample"))   # a demo on a post that already went out: made in _samples, sent, not saved
     if not (pid and file_id):
         return "nothing to do: no post or file"
     for f in sorted(WEEKS.glob("*.json"))[-2:]:
@@ -773,9 +774,13 @@ def tvclip_work(payload: dict) -> str:
             break
     else:
         return f"{pid}: not in this or last week"
-    if post["status"] not in {"rendered", "awaiting", "approved"} or not post.get("beats"):
+    if not post.get("beats") or (not sample and post["status"] not in {"rendered", "awaiting", "approved"}):
         return f"{pid}: {post['status']}, left as it is"
     label = data["collection"]
+    if sample:
+        import draft as drafter
+        post = drafter.tidy_beats(drafter.attribute_single_source({k: v for k, v in post.items() if k not in SAMPLE_DROP}))
+        post["id"] = f"{pid}-tvsample"
     info = {"rights": "quote", "credit": channel, "source": str(payload.get("url") or ""), "evidence": f"nukuu {channel}",
             "note": ""}
     with tempfile.TemporaryDirectory() as tmp:
@@ -787,7 +792,14 @@ def tvclip_work(payload: dict) -> str:
         beats = [str(x) for x in post["beats"]]
         reel = {**post, "template": "tazama", "headline": beats[0], "hook": beats[:1], "verdict": beats[1:5],
                 "start": a, "end": b, "credit": channel}
-        tazama.make(reel, info, src, segments, EXPORTS / label)
+        tazama.make(reel, info, src, segments, SAMPLES if sample else EXPORTS / label)
+    if sample:
+        mp4 = SAMPLES / f"{post['id']}.mp4"
+        tg("sendVideo", {"chat_id": need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"], "parse_mode": "HTML",
+                         "supports_streaming": "true",
+                         "caption": f"🧪 <b>Sample, not posted</b>: {_esc(pid)} with {_esc(channel)}'s footage, "
+                                    f"{b - a:.0f} s from {a:.0f} s into their clip"}, {"video": mp4})
+        return f"{pid}: sample with {channel} clip {a:.1f}-{b:.1f}s sent"
     post.update(tv_clip_used={"channel": channel, "url": info["source"], "window": [a, b]},
                 clip_credit=f"Clip: {channel}, short excerpt for news reporting")
     save_week(data)

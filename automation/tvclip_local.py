@@ -16,6 +16,7 @@ One-time setup (Windows, PowerShell): keys are typed at a hidden prompt and kept
 
     python tvclip_local.py           # one run
     python tvclip_local.py --check   # says what it would do, sends nothing
+    python tvclip_local.py --sample  # a sample Reel with a TV clip, on a news post that already went out
 """
 from __future__ import annotations
 
@@ -171,6 +172,40 @@ def tell_autopilot(token: str, post: dict, file_id: str) -> None:
         "Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "Content-Type": "application/json"})
 
 
+def sample(keys: dict, labels: list[str]) -> int:
+    """--sample: the newest news posts that already went out, until one has a TV story; that clip is sent and the
+    autopilot makes a sample Reel with it (sent to Telegram, nothing posted, nothing changed)."""
+    posts = []
+    for label in labels:
+        try:
+            posts += json.loads(_get(RAW.format(label)))["posts"]
+        except urllib.error.HTTPError:
+            pass
+    news = sorted((p for p in posts if p.get("hot") and p.get("status") == "published" and p.get("beats")),
+                  key=lambda p: p["publish_at"], reverse=True)[:6]
+    ff = ffmpeg()
+    for p in news:
+        clip = search_clip(p, ff)
+        print(f"{p['id']}: " + (f"{clip['channel']} | {clip['title'][:70]}" if clip else
+                                f"no TV story found for '{' '.join(keywords(p))}'"))
+        if not clip:
+            continue
+        with tempfile.TemporaryDirectory() as tmp:
+            small = Path(tmp) / "clip.mp4"
+            fetch(clip["url"], small, ff)
+            fid = send_to_bot(keys["KOR_TELEGRAM_BOT_TOKEN"], keys["KOR_TELEGRAM_CHAT_ID"], small,
+                              f"📺 TV clip for a sample of {p['id']} (from your computer)")
+        body = json.dumps({"event_type": "tvclip", "client_payload": {
+            "post": p["id"], "file_id": fid, "channel": clip["channel"], "url": clip["url"], "sample": True}}).encode()
+        _get(f"https://api.github.com/repos/{REPO}/dispatches", data=body, method="POST", headers={
+            "Authorization": f"Bearer {keys['KOR_GITHUB_TOKEN']}", "Accept": "application/vnd.github+json",
+            "Content-Type": "application/json"})
+        print("   sent; the sample Reel comes to Telegram in about 10 minutes")
+        return 0
+    print("none of the recent news posts has a TV story on the stations' channels in the last 3 days")
+    return 1
+
+
 def main(argv: list[str]) -> int:
     check = "--check" in argv
     keys = {k: os.environ.get(k, "") for k in ("KOR_TELEGRAM_BOT_TOKEN", "KOR_TELEGRAM_CHAT_ID", "KOR_GITHUB_TOKEN")}
@@ -178,8 +213,11 @@ def main(argv: list[str]) -> int:
     if missing and not check:
         print("Set these first (see the top of this file): " + ", ".join(missing))
         return 1
-    done = set(json.loads(DONE.read_text(encoding="utf-8"))) if DONE.exists() else set()
     now = dt.datetime.now(EAT)
+    if "--sample" in argv:
+        prev = now - dt.timedelta(days=7)
+        return sample(keys, [f"{prev.isocalendar()[0]}-W{prev.isocalendar()[1]:02d}"] + week_labels(now))
+    done = set(json.loads(DONE.read_text(encoding="utf-8"))) if DONE.exists() else set()
     todo = []
     for label in week_labels(now):
         try:

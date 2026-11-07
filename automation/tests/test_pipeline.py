@@ -482,6 +482,25 @@ class TvClipWorkTests(TempWeeks):
         self.assertIn("📺 Clip: Citizen TV", pl.receipts_comment({**p, "source": "Capital FM, 2026-11-07"}))
 
 
+class TvClipSampleTests(TempWeeks):
+    def test_a_sample_on_a_published_post_is_sent_and_changes_nothing(self):
+        import tazama
+        self.week([{"id": "q", "status": "published", "publish_at": "2026-11-07T12:45:00+03:00", "template": "sauti",
+                    "beats": ["Sugar just got *Sh32* cheaper.", "b c.", "d e."], "ig_id": "1"}])
+        sent, made = [], []
+        with mock.patch.object(tazama, "download", lambda *a: None), \
+             mock.patch.object(tazama, "probe", lambda ff, src: {"duration": 60.0, "w": 1280, "h": 720, "audio": True}), \
+             mock.patch.object(tazama, "transcribe", lambda src: []), \
+             mock.patch.object(tazama, "make", lambda reel, info, src, segs, out: made.append((reel["id"], out))), \
+             mock.patch.object(pl, "tg", lambda *a, **k: sent.append(a)), \
+             mock.patch.object(pl, "need", lambda *k: {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "1"}):
+            note = pl.tvclip_work({"post": "q", "file_id": "F", "channel": "NTV Kenya", "sample": True})
+        self.assertEqual(note, "q: sample with NTV Kenya clip 2.0-10.0s sent")
+        self.assertEqual(made[0], ("q-tvsample", pl.SAMPLES))
+        self.assertEqual(sent[0][0], "sendVideo")
+        self.assertNotIn("tv_clip_used", pl.load_week("2026-W41")["posts"][0])   # the real post is untouched
+
+
 class SampleTests(TempWeeks):
     def test_samples_are_the_newest_published_reels_as_clean_copies(self):
         base = {"status": "published", "reel": True, "template": "sauti", "ig_id": "1", "yt_id": "y",
