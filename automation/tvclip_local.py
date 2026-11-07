@@ -150,8 +150,9 @@ def fetch(url: str, out: Path, ff: str) -> None:
         raise RuntimeError(f"still {out.stat().st_size // 1_000_000} MB after compressing")
 
 
-def send_to_bot(token: str, chat: str, video: Path, caption: str) -> str:
-    """Uploads the clip to your chat as the bot, without a notification sound; returns its Telegram file id."""
+def send_to_bot(token: str, chat: str, video: Path, caption: str) -> tuple[str, int | None]:
+    """Uploads the clip to your chat as the bot, without a notification sound; returns its Telegram file id and the
+    message id (the autopilot deletes that message once it has the file, so the raw clip doesn't clutter the chat)."""
     boundary = uuid.uuid4().hex
     parts = []
     for k, v in {"chat_id": chat, "caption": caption, "disable_notification": "true", "supports_streaming": "true"}.items():
@@ -164,21 +165,22 @@ def send_to_bot(token: str, chat: str, video: Path, caption: str) -> str:
     media = (res.get("result") or {}).get("video") or (res.get("result") or {}).get("document") or {}
     if not media.get("file_id"):
         raise RuntimeError(f"Telegram did not return the file: {str(res)[:200]}")
-    return media["file_id"]
+    return media["file_id"], (res.get("result") or {}).get("message_id")
 
 
-def tell_autopilot(token: str, post: dict, file_id: str) -> None:
+def tell_autopilot(token: str, post: dict, file_id: str, message_id: int | None = None, sample: bool = False) -> None:
     clip = post["tv_clip"]
     body = json.dumps({"event_type": "tvclip", "client_payload": {
         "post": post["id"], "file_id": file_id, "channel": clip.get("channel", "TV"), "url": clip["url"],
-        "title": clip.get("title", "")}}).encode()
+        "title": clip.get("title", ""), "message_id": message_id, "sample": sample}}).encode()
     _get(f"https://api.github.com/repos/{REPO}/dispatches", data=body, method="POST", headers={
         "Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "Content-Type": "application/json"})
 
 
-def sample(keys: dict, labels: list[str]) -> int:
-    """--sample: the newest news posts that already went out, until one has a TV story; that clip is sent and the
-    autopilot makes a sample Reel with it (sent to Telegram, nothing posted, nothing changed)."""
+def sample(keys: dict, labels: list[str], want: int = 3) -> int:
+    """--sample: the newest news posts that already went out; for up to `want` of them with a TV story, the clip is
+    sent and the autopilot checks it is the same event and, if so, makes a sample Reel (sent to Telegram, nothing
+    posted, nothing changed). Several are sent because the autopilot turns down clips of another event."""
     posts = []
     for label in labels:
         try:
@@ -187,28 +189,30 @@ def sample(keys: dict, labels: list[str]) -> int:
             pass
     news = sorted((p for p in posts if p.get("hot") and p.get("status") == "published" and p.get("beats")),
                   key=lambda p: p["publish_at"], reverse=True)[:12]
-    ff = ffmpeg()
+    ff, sent = ffmpeg(), 0
     for p in news:
         clip = search_clip(p, ff, days=8)   # posts that already went out: their TV story is a few days old
         print(f"{p['id']}: " + (f"{clip['channel']} | {clip['title'][:70]}" if clip else
                                 f"no TV story found for '{' '.join(keywords(p))}'"))
         if not clip:
             continue
-        with tempfile.TemporaryDirectory() as tmp:
-            small = Path(tmp) / "clip.mp4"
-            fetch(clip["url"], small, ff)
-            fid = send_to_bot(keys["KOR_TELEGRAM_BOT_TOKEN"], keys["KOR_TELEGRAM_CHAT_ID"], small,
-                              f"📺 TV clip for a sample of {p['id']} (from your computer)")
-        body = json.dumps({"event_type": "tvclip", "client_payload": {
-            "post": p["id"], "file_id": fid, "channel": clip["channel"], "url": clip["url"], "title": clip["title"],
-            "sample": True}}).encode()
-        _get(f"https://api.github.com/repos/{REPO}/dispatches", data=body, method="POST", headers={
-            "Authorization": f"Bearer {keys['KOR_GITHUB_TOKEN']}", "Accept": "application/vnd.github+json",
-            "Content-Type": "application/json"})
-        print("   sent; the sample Reel comes to Telegram in about 10 minutes")
-        return 0
-    print("none of the recent news posts has a matching TV story on the stations' channels")
-    return 1
+        try:
+            with tempfile.TemporaryDirectory() as tmp:
+                small = Path(tmp) / "clip.mp4"
+                fetch(clip["url"], small, ff)
+                fid, mid = send_to_bot(keys["KOR_TELEGRAM_BOT_TOKEN"], keys["KOR_TELEGRAM_CHAT_ID"], small,
+                                       f"📺 TV clip for a sample of {p['id']} (from your computer)")
+            tell_autopilot(keys["KOR_GITHUB_TOKEN"], {**p, "tv_clip": clip}, fid, mid, sample=True)
+        except Exception as e:
+            print(f"   skipped: {e}")
+            continue
+        sent += 1
+        print("   sent for the same-event check")
+        if sent >= want:
+            break
+    print(f"{sent} clip(s) sent: the ones that pass the check come back as sample Reels in about 10-20 minutes"
+          if sent else "none of the recent news posts has a matching TV story on the stations' channels")
+    return 0 if sent else 1
 
 
 def main(argv: list[str]) -> int:
@@ -249,9 +253,9 @@ def main(argv: list[str]) -> int:
             with tempfile.TemporaryDirectory() as tmp:
                 small = Path(tmp) / "clip.mp4"
                 fetch(clip["url"], small, ff)
-                fid = send_to_bot(keys["KOR_TELEGRAM_BOT_TOKEN"], keys["KOR_TELEGRAM_CHAT_ID"], small,
-                                  f"📺 TV clip for {p['id']} (from your computer, for the autopilot)")
-            tell_autopilot(keys["KOR_GITHUB_TOKEN"], p, fid)
+                fid, mid = send_to_bot(keys["KOR_TELEGRAM_BOT_TOKEN"], keys["KOR_TELEGRAM_CHAT_ID"], small,
+                                       f"📺 TV clip for {p['id']} (from your computer, for the autopilot)")
+            tell_autopilot(keys["KOR_GITHUB_TOKEN"], p, fid, mid)
             print("   sent; the autopilot is making the Reel")
         except Exception as e:
             print(f"   skipped: {e}")

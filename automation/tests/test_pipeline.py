@@ -484,9 +484,10 @@ class TvClipWorkTests(TempWeeks):
 
     def test_footage_of_another_event_is_never_used(self):
         self.week_with()
-        note, made, _ = self.run_work({"post": "p", "file_id": "F", "channel": "KTN", "title": "other"})
+        note, made, sent = self.run_work({"post": "p", "file_id": "F", "channel": "KTN", "title": "other", "message_id": 7})
         self.assertTrue(note.startswith("p: KTN's clip is not the same event"))
         self.assertEqual(made, [])
+        self.assertEqual(sent[0][:1], ("deleteMessage",))   # the raw clip leaves the chat
         self.assertNotIn("tv_clip_used", pl.load_week("2026-W41")["posts"][0])
 
     def test_the_event_check_says_no_on_any_doubt(self):

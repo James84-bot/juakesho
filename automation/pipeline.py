@@ -786,6 +786,15 @@ def same_event(post: dict, title: str) -> tuple[bool, str]:
     return got.get("same") is True, str(got.get("why") or "")[:160]
 
 
+def _drop_raw(payload: dict) -> None:
+    """Deletes the raw TV clip your computer sent to the chat, once it's no longer needed. Never fatal."""
+    try:
+        if payload.get("message_id"):
+            tg("deleteMessage", {"chat_id": need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"], "message_id": str(payload["message_id"])})
+    except Exception as e:
+        log(f"raw clip message left in the chat: {str(e)[:120]}")
+
+
 def tvclip_work(payload: dict) -> str:
     """A TV clip your computer fetched for a news post (tvclip_local.py): it was sent to the bot, this takes it by
     its Telegram file id and makes the post's Reel again in the house design: the real news photo on the first line,
@@ -810,6 +819,7 @@ def tvclip_work(payload: dict) -> str:
         return f"{pid}: {post['status']}, left as it is"
     same, why = same_event(post, str(payload.get("title") or ""))
     if not same:   # the photo Reel stays: footage of another event under our lines would be a false picture
+        _drop_raw(payload)
         return f"{pid}: {channel}'s clip is not the same event, not used ({why})"
     label = data["collection"]
     out_dir = SAMPLES if sample else EXPORTS / label
@@ -825,6 +835,7 @@ def tvclip_work(payload: dict) -> str:
         tazama.download(_tg_file_path, need("TELEGRAM_BOT_TOKEN")["TELEGRAM_BOT_TOKEN"], file_id, src)
         meta = tazama.probe(ff, src)
         a, b = clip_moment(tazama.transcribe(src), post, meta["duration"])
+        _drop_raw(payload)   # we have the file: the raw clip leaves the chat
         footage = out_dir / "videos" / f"{post['id']}-tv.mp4"
         footage.parent.mkdir(parents=True, exist_ok=True)
         if not cut_footage(ff, src, a, b, footage):
