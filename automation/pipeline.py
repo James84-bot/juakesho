@@ -1776,7 +1776,27 @@ def sample_posts(n: int = 3) -> list[dict]:
     return out
 
 
-def reel_samples(n: int = 3, dry_run: bool = False) -> int:
+QA = EXPORTS / "_qa"
+
+
+def qa_sheets(posts: list[dict]) -> None:
+    """A contact sheet per sample Reel (a frame every second, small) kept in the repo, so the design can be checked
+    by eye without downloading the video. Never fatal."""
+    import subprocess
+    import video
+    QA.mkdir(parents=True, exist_ok=True)
+    for q in posts:
+        mp4 = SAMPLES / f"{q['id']}.mp4"
+        if mp4.exists():
+            try:
+                subprocess.run([video.ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(mp4), "-vf",
+                                "fps=2,scale=216:-2,tile=8x5", "-frames:v", "1", "-q:v", "4",
+                                str(QA / f"{q['id']}.jpg")], check=True)
+            except Exception as e:
+                log(f"qa sheet skipped for {q['id']}: {e}")
+
+
+def reel_samples(n: int = 3, dry_run: bool = False, send: bool = True) -> int:
     """Makes the newest published Reels again with the current design (a new shot on every line, figures counting
     up, the wipe, licensed music) and sends them to Telegram as samples. Nothing is posted; the weeks don't change."""
     posts = sample_posts(n)
@@ -1793,6 +1813,9 @@ def reel_samples(n: int = 3, dry_run: bool = False) -> int:
     except Exception as e:   # footage is a bonus
         log(f"sample footage skipped: {e}")
     video.make_reels(posts, SAMPLES)
+    qa_sheets(posts)
+    if not send:   # made and checked (contact sheets in exports/_qa), nothing sent
+        return len(posts)
     chat = need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
     sent = 0
     for q in posts:
@@ -2092,6 +2115,7 @@ def _main(argv: list[str] | None = None) -> int:
     ap.add_argument("--afternoon", action="store_true", help="hot: the afternoon edition")
     ap.add_argument("--breaking", action="store_true", help="hot: only if several newsrooms report a new story now")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
+    ap.add_argument("--no-send", action="store_true", help="samples: make them and their contact sheets, send nothing")
     a = ap.parse_args(argv)
     label = a.week or current_week_label()
 
@@ -2233,7 +2257,7 @@ def _main(argv: list[str] | None = None) -> int:
         except Exception as e:
             log(f"comments skipped: {e}")
     if a.command == "samples":   # the newest features, on real posts, before you see them live
-        reel_samples(dry_run=a.dry_run)
+        reel_samples(dry_run=a.dry_run, send=not a.no_send)
     if a.command == "clips" and not a.dry_run:
         collect()   # pick up clips you just sent
     if a.command in {"clips", "clipwork"}:
