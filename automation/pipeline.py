@@ -1598,6 +1598,7 @@ def _tiktok_post(label: str, post: dict) -> bool:
         return public
     except Exception as e:
         log(f"tiktok skipped for {post['id']}: {e}")
+        post["tt_error"] = str(e)[:400]
         _notify(f"⚠️ TikTok upload failed for <b>{_esc(post['id'])}</b>: {_esc(str(e)[:250])}")
         return False
 
@@ -2186,6 +2187,7 @@ def _main(argv: list[str] | None = None) -> int:
         public = _tiktok_post(*latest)
         print(f"::notice title=tiktoksend::{latest[1]['id']} sent; public={public}; tt_id={latest[1].get('tt_id')}")
         if not latest[1].get("tt_id"):
+            print(f"::error title=tiktoksend::{latest[1].get('tt_error') or 'no upload id and no error'}")
             return 1
     if a.command == "ccfind":
         send_cc_candidates(a.week or current_week_label(ahead=0), dry_run=a.dry_run)
