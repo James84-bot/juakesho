@@ -1904,6 +1904,8 @@ def prune(keep_weeks: int = KEEP_WEEKS) -> list[str]:
 LEARN_METRICS = "reach,saved,shares,comments,likes"
 # Asked for separately: a Reel-only metric must never cost us the main numbers if Meta refuses it for a post
 REEL_METRICS = "ig_reels_avg_watch_time"
+LEARN_MIN_AGE = dt.timedelta(hours=24)
+SCORE_PRIOR_REACH = 300
 
 
 def learn(weeks_back: int = 4) -> dict:
@@ -1918,6 +1920,8 @@ def learn(weeks_back: int = 4) -> dict:
             key = p.get("group") or p["id"]
             if p["status"] != "published" or not p.get("ig_id") or key in seen:
                 continue
+            if p.get("publish_at") and now() - dt.datetime.fromisoformat(p["publish_at"]) < LEARN_MIN_AGE:
+                continue   # numbers from a post's first hours say nothing: reach is still arriving
             seen.add(key)
             try:
                 res = http("GET", f"https://graph.facebook.com/{version}/{p['ig_id']}/insights?"
@@ -1935,9 +1939,12 @@ def learn(weeks_back: int = 4) -> dict:
                         m["avg_watch_s"] = round(float(ms["ig_reels_avg_watch_time"]) / 1000, 1)
                 except (RuntimeError, ValueError, TypeError) as e:
                     log(f"watch time unavailable for {key}: {str(e)[:120]}")
+            if receipts_comment(p) and m.get("comments"):
+                m["comments"] -= 1   # the Sources comment under every civic post is ours, not an audience reaction
             reach = max(1, m.get("reach", 0))
+            # Smoothed by SCORE_PRIOR_REACH so a post seen by 4 people can't outrank one seen by 400 on one like.
             score = round((m.get("saved", 0) * 3 + m.get("shares", 0) * 4 + m.get("comments", 0) * 2
-                           + m.get("likes", 0)) * 1000 / reach, 1)
+                           + m.get("likes", 0)) * 1000 / (reach + SCORE_PRIOR_REACH), 1)
             rows.append({"id": key, "series": p["template"], "lane": p.get("lane", "-"), "score": score,
                          "opening": str((p.get("beats") or [""])[0]).replace("*", "")[:90], **m})
     rows.sort(key=lambda r: r["score"], reverse=True)

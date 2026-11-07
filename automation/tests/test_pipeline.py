@@ -419,6 +419,38 @@ class LearnTests(TempWeeks):
         self.assertEqual(rows["r2"]["reach"], 100)   # the main numbers survive the refused metric
 
 
+class LearnScoreTests(TempWeeks):
+    def run_learn(self, posts, reach_likes):
+        self.week(posts)
+
+        def http(method, url, *a, **k):
+            if "ig_reels_avg_watch_time" in url:
+                return {"data": []}
+            r, l = reach_likes[url.split("/")[-2]]
+            return {"data": [{"name": "reach", "values": [{"value": r}]}, {"name": "likes", "values": [{"value": l}]},
+                             {"name": "comments", "values": [{"value": 1}]}]}
+        with mock.patch.object(pl, "http", http):
+            return pl.learn()
+
+    def test_our_sources_comment_is_not_an_audience_comment(self):
+        out = self.run_learn([{"id": "a", "status": "published", "ig_id": "1", "template": "sauti", "source": "PesaCheck, 30 Oct 2026"}],
+                             {"1": (500, 0)})
+        self.assertEqual(out["all"][0]["comments"], 0)
+        self.assertEqual(out["all"][0]["score"], 0)
+
+    def test_a_tiny_reach_cannot_outrank_a_real_one(self):
+        out = self.run_learn([{"id": "small", "status": "published", "ig_id": "1", "template": "sauti", "source": "PesaCheck, 30 Oct 2026"},
+                              {"id": "big", "status": "published", "ig_id": "2", "template": "sauti", "source": "PesaCheck, 30 Oct 2026"}],
+                             {"1": (4, 1), "2": (400, 3)})
+        self.assertEqual(out["top"][0]["id"], "big")
+
+    def test_posts_under_a_day_old_are_left_out(self):
+        fresh = (pl.now() - dt.timedelta(hours=5)).isoformat()
+        out = self.run_learn([{"id": "new", "status": "published", "ig_id": "1", "template": "sauti", "publish_at": fresh}],
+                             {"1": (9, 1)})
+        self.assertEqual(out["all"], [])
+
+
 class PruneTests(TempWeeks):
     def test_old_weeks_are_pruned_whatever_their_status(self):
         exports = Path(self.tmp.name) / "exports"
