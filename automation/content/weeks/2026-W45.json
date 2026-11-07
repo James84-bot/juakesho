@@ -1566,7 +1566,7 @@
           "published": "2026-11-07"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1597,7 +1597,13 @@
       "photo_source": "https://capitalfm.africa/kenya-sugar-production-jumps-56-7pc-as-prices-fall-by-sh32-for-2kg/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
       "reel": true,
       "tg_msg": 807,
-      "decided_at": "2026-11-07T14:15:24.565624+03:00"
+      "decided_at": "2026-11-07T14:15:24.565624+03:00",
+      "published_at": "2026-11-07T15:40:33.293117+03:00",
+      "ig_id": "18101291840545158",
+      "fb_id": "28874300875575102",
+      "story_id": "18095086640660629",
+      "fb_story_id": "1832710267882270",
+      "yt_id": "FXWm6pHNL6c"
     }
   ],
   "scripts": {
