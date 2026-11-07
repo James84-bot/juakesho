@@ -135,12 +135,22 @@ def fetch(url: str, out: Path, ff: str) -> None:
     """The first SECONDS of the clip, made small enough for the bot (540p, re-encoded until it fits)."""
     with tempfile.TemporaryDirectory() as tmp:
         raw = Path(tmp) / "raw.mp4"
-        r = subprocess.run([sys.executable, "-m", "yt_dlp", "-q", "--no-playlist", "--no-warnings", "--ffmpeg-location", ff,
-                            "-f", "bv*[height<=720][ext=mp4]+ba[ext=m4a]/b[height<=720][ext=mp4]/b[height<=720]",
-                            "--merge-output-format", "mp4", "--download-sections", f"*0-{SECONDS}", "-o", str(raw), url],
-                           capture_output=True, text=True, timeout=600)
-        if r.returncode or not raw.exists():
-            raise RuntimeError("yt-dlp: " + (r.stderr.strip().splitlines() or ["failed"])[-1][:200])
+        base = [sys.executable, "-m", "yt_dlp", "-q", "--no-playlist", "--no-warnings", "--ffmpeg-location", ff,
+                "--merge-output-format", "mp4", "-o", str(raw)]
+        # first just the opening minutes; some uploads make ffmpeg fail on a partial download, so then the whole clip
+        # (stations' story clips are a few minutes) at the smaller progressive format, cut here afterwards
+        attempts = [["-f", "bv*[height<=720][ext=mp4]+ba[ext=m4a]/b[height<=720][ext=mp4]/b[height<=720]",
+                     "--download-sections", f"*0-{SECONDS}"],
+                    ["-f", "b[height<=480][ext=mp4]/b[height<=720][ext=mp4]/bv*[height<=480]+ba/b"]]
+        err = ""
+        for extra in attempts:
+            raw.unlink(missing_ok=True)
+            r = subprocess.run(base + extra + [url], capture_output=True, text=True, timeout=900)
+            if not r.returncode and raw.exists():
+                break
+            err = (r.stderr.strip().splitlines() or ["failed"])[-1][:200]
+        else:
+            raise RuntimeError("yt-dlp: " + err)
         for crf in (28, 32, 36):
             subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(raw), "-t", str(SECONDS), "-vf", "scale=-2:540",
                             "-c:v", "libx264", "-preset", "veryfast", "-crf", str(crf), "-c:a", "aac", "-b:a", "96k",
