@@ -187,8 +187,9 @@ def code_from(pasted: str, state: str) -> str:
     return q["code"][0]
 
 
-def auth() -> None:
-    """Sign in once; prints the refresh token to save as TIKTOK_REFRESH_TOKEN."""
+def auth(demo: bool = False) -> None:
+    """Sign in once; prints the refresh token to save as TIKTOK_REFRESH_TOKEN.
+    With demo=True (for the screen recording TikTok's review asks for) the token is never printed."""
     key, secret = os.environ.get("TIKTOK_CLIENT_KEY"), os.environ.get("TIKTOK_CLIENT_SECRET")
     if not (key and secret):
         sys.exit("Set TIKTOK_CLIENT_KEY and TIKTOK_CLIENT_SECRET first.")
@@ -201,8 +202,12 @@ def auth() -> None:
                          "grant_type": "authorization_code", "redirect_uri": REDIRECT_URI})
     except TikTokError as e:
         sys.exit(str(e))
+    if demo:
+        print(f"\nSigned in. Granted: {r.get('scope')}\n(Demo mode: the token is not shown or saved.)")
+        return
     print(f"\nSigned in. Granted: {r.get('scope')}\nSave this as the GitHub secret TIKTOK_REFRESH_TOKEN:\n{r['refresh_token']}")
 
 
 if __name__ == "__main__":
-    auth() if sys.argv[1:] == ["auth"] else sys.exit("usage: python tiktok.py auth")
+    args = sys.argv[1:]
+    auth(demo="--demo" in args) if args[:1] == ["auth"] else sys.exit("usage: python tiktok.py auth [--demo]")

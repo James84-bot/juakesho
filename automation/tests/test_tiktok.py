@@ -197,5 +197,25 @@ class Commands(unittest.TestCase):
         self.assertEqual(len(seen), 1)
 
 
+class AuthDemo(unittest.TestCase):
+    def run_auth(self, demo):
+        import contextlib
+        import io
+        out = io.StringIO()
+        pasted = "https://james84-bot.github.io/juakesho/?code=abc&state=ST"
+        with mock.patch.dict(os.environ, KEYS), mock.patch.object(tiktok.secrets, "token_urlsafe", return_value="ST"), \
+                mock.patch("builtins.input", return_value=pasted), \
+                mock.patch.object(tiktok, "_token_call", return_value={"refresh_token": "SECRET-RT", "scope": "a,b"}), \
+                contextlib.redirect_stdout(out):
+            tiktok.auth(demo=demo)
+        return out.getvalue()
+
+    def test_token_is_printed_normally_and_hidden_in_demo(self):
+        self.assertIn("SECRET-RT", self.run_auth(False))
+        shown = self.run_auth(True)
+        self.assertNotIn("SECRET-RT", shown)
+        self.assertIn("Demo mode", shown)
+
+
 if __name__ == "__main__":
     unittest.main()
