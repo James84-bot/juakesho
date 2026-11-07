@@ -1578,6 +1578,30 @@ def _youtube_short(label: str, post: dict) -> None:
         _notify(f"⚠️ YouTube Shorts upload failed for <b>{_esc(post['id'])}</b> (the Instagram and Facebook posts are fine): {_esc(str(e)[:250])}")
 
 
+def _tiktok_post(label: str, post: dict) -> bool:
+    """Posts the Reel to TikTok through the Content Posting API when the three TIKTOK_* secrets exist.
+    Returns True only when TikTok accepted it as a public post. Until the app is audited, TikTok keeps API posts
+    private, so the caller still sends the Telegram package then. Optional and never fatal."""
+    import tiktok
+    if not (post.get("reel") and tiktok.ready()):
+        return False
+    video = EXPORTS / label / f"{post['id']}.mp4"
+    try:
+        res = tiktok.upload(video, caption_for(post))
+        post["tt_id"] = res["publish_id"]
+        public = res["privacy"] == "PUBLIC_TO_EVERYONE" and res["status"] != "FAILED"
+        if res["status"] == "FAILED":
+            _notify(f"⚠️ TikTok rejected <b>{_esc(post['id'])}</b>: {_esc(res['fail_reason'] or 'no reason given')}")
+        elif not public:
+            _notify("🎵 TikTok accepted the video as <b>private</b> (the app is not audited yet). "
+                    "The public copy comes to you here to upload by hand.")
+        return public
+    except Exception as e:
+        log(f"tiktok skipped for {post['id']}: {e}")
+        _notify(f"⚠️ TikTok upload failed for <b>{_esc(post['id'])}</b>: {_esc(str(e)[:250])}")
+        return False
+
+
 def tiktok_packages_on() -> bool:
     try:
         return bool(json.loads(POLICY.read_text(encoding="utf-8")).get("tiktok_packages"))
@@ -1668,7 +1692,8 @@ def publish(dry_run: bool = False) -> None:
                         m["fb_story_id"] = fb_story
                 record_evidence(members)
                 _youtube_short(label, first_of(members))
-                _tiktok_package(label, first_of(members))
+                if not _tiktok_post(label, first_of(members)):
+                    _tiktok_package(label, first_of(members))
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
                 link = fb_link(fb_id)
                 _notify(f"✅ Published <b>{_esc(key)}</b>."
@@ -1952,7 +1977,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2134,6 +2159,34 @@ def _main(argv: list[str] | None = None) -> int:
         print(f"::notice title=youtubecheck::Signed in to YouTube channel: {name}")
         if not a.dry_run:
             _notify(f"▶️ YouTube is connected: {_esc(name)}. Shorts will upload with approved Reels.")
+    if a.command == "tiktokcheck":
+        import tiktok
+        if not tiktok.ready():
+            print("::error title=tiktokcheck::One or more of TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET, TIKTOK_REFRESH_TOKEN is missing")
+            return 1
+        try:
+            name = tiktok.check()
+        except RuntimeError as e:
+            print(f"::error title=tiktokcheck::{e}")
+            return 1
+        print(f"::notice title=tiktokcheck::Signed in to TikTok account: {name}")
+        if not a.dry_run:
+            _notify(f"🎵 TikTok is connected: {_esc(name)}.")
+    if a.command == "tiktoksend":   # posts the most recent published Reel to TikTok once (testing and the review demo)
+        latest = None
+        for f in sorted(WEEKS.glob("*.json")):
+            wk = json.loads(f.read_text(encoding="utf-8"))
+            for p in wk["posts"]:
+                if p.get("reel") and p.get("status") == "published" and (EXPORTS / wk["collection"] / f"{p['id']}.mp4").exists():
+                    if latest is None or str(p.get("published_at")) > str(latest[1].get("published_at")):
+                        latest = (wk["collection"], p)
+        if latest is None:
+            print("::error title=tiktoksend::No published Reel with a video file was found")
+            return 1
+        public = _tiktok_post(*latest)
+        print(f"::notice title=tiktoksend::{latest[1]['id']} sent; public={public}; tt_id={latest[1].get('tt_id')}")
+        if not latest[1].get("tt_id"):
+            return 1
     if a.command == "ccfind":
         send_cc_candidates(a.week or current_week_label(ahead=0), dry_run=a.dry_run)
     if a.command == "showcase":
