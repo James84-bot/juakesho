@@ -86,14 +86,14 @@ def matches(title: str, post: dict, need: int = 3) -> bool:
     return score >= need
 
 
-def search_clip(post: dict, ff: str) -> dict | None:
+def search_clip(post: dict, ff: str, days: int = 3) -> dict | None:
     """Looks the story up on YouTube from this computer: a station's own upload of the last 3 days whose title
     names the same thing. {"url", "channel", "title"} or None."""
     q = " ".join(keywords(post))
     if not q:
         return None
     r = subprocess.run([sys.executable, "-m", "yt_dlp", "-q", "--no-warnings", "--skip-download", "--dateafter",
-                        "now-3days", "--match-filter", "duration > 25 & duration < 900", "-J", f"ytsearch10:{q} Kenya news"],
+                        f"now-{days}days", "--match-filter", "duration > 25 & duration < 900", "-J", f"ytsearch10:{q} Kenya news"],
                        capture_output=True, text=True, timeout=300)
     try:
         entries = json.loads(r.stdout or "{}").get("entries") or []
@@ -183,10 +183,10 @@ def sample(keys: dict, labels: list[str]) -> int:
         except urllib.error.HTTPError:
             pass
     news = sorted((p for p in posts if p.get("hot") and p.get("status") == "published" and p.get("beats")),
-                  key=lambda p: p["publish_at"], reverse=True)[:6]
+                  key=lambda p: p["publish_at"], reverse=True)[:12]
     ff = ffmpeg()
     for p in news:
-        clip = search_clip(p, ff)
+        clip = search_clip(p, ff, days=8)   # posts that already went out: their TV story is a few days old
         print(f"{p['id']}: " + (f"{clip['channel']} | {clip['title'][:70]}" if clip else
                                 f"no TV story found for '{' '.join(keywords(p))}'"))
         if not clip:
@@ -203,7 +203,7 @@ def sample(keys: dict, labels: list[str]) -> int:
             "Content-Type": "application/json"})
         print("   sent; the sample Reel comes to Telegram in about 10 minutes")
         return 0
-    print("none of the recent news posts has a TV story on the stations' channels in the last 3 days")
+    print("none of the recent news posts has a matching TV story on the stations' channels")
     return 1
 
 
