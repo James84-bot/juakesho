@@ -1525,13 +1525,85 @@
       "story_id": "18086879591711093",
       "fb_story_id": "1044017212032195",
       "yt_id": "oBQcw8qqWV4"
+    },
+    {
+      "id": "2026-w45-hot-1107m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Households",
+      "line": "Sugar production jumped 56.7% as retail prices fell by *Sh32* for a 2kg packet.",
+      "fact": "Local factories increased output by 56.7%, cutting the shelf price of a 2kg packet by Sh32.",
+      "message": "Local sugar production rose by 56.7%, cutting retail prices by Sh32 for a 2kg packet.",
+      "photo_query": "sugar cane harvest Kenya",
+      "source": "Capital FM News, 2026-11-07",
+      "demand": 1,
+      "beats": [
+        "Kenya sugar output rose 56.7%, dropping 2kg prices by *Sh32*.",
+        "Local factories boosted milling as raw sugarcane supplies increased.",
+        "Cheaper domestic production brings direct relief to *household budgets*.",
+        "Tell us what you paid for a 2kg packet today."
+      ],
+      "action": "Check the price at your local shop and compare it against last month",
+      "who": "Sugar Directorate and local millers",
+      "where": "National",
+      "when": "7 Nov 2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "A 2kg packet of sugar now costs Sh32 less on supermarket shelves.",
+      "caption": "Capital FM News reports: Sugar production jumped 56.7% in Kenya, bringing down shelf prices by Sh32 for a 2kg packet.\n\nWhat it means for you: you spend Sh32 less on every 2kg packet.\n\nWhat are you paying for a 2kg packet in your local shop today?\n\n#CostOfLiving #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-07T16:39:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Kenya records 18 days without a new Ebola case as all six patients recover."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Kenya sugar production jumps 56.7pc as prices fall by Sh32 for 2kg",
+          "link": "https://capitalfm.africa/kenya-sugar-production-jumps-56-7pc-as-prices-fall-by-sh32-for-2kg/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-07"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 8,
+        "avg": 7.2,
+        "note": "Match the demand score strictly to the 1-10 ranking list provided in the prompt."
+      },
+      "drafted_at": "2026-11-07T13:43:22.015617+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1107m-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/kenya-sugar-production-jumps-56-7pc-as-prices-fall-by-sh32-for-2kg/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "tg_msg": 807
     }
   ],
   "scripts": {
-    "radio": "Habari zenu na karibuni kwa Kenya on Record. Today, we bring you encouraging news on the public health front, but with a firm reminder that vigilance remains our best defense. Kenya has now marked eighteen consecutive days without a single new confirmed Ebola case. Even better, all six patients who were admitted to isolation facilities have made a full recovery and returned home to their families.\n\nThis outcome reflects the dedication of our frontline healthcare workers, community health promoters, and rapid response teams who acted swiftly to isolate and treat the infections. However, accountability requires that we do not drop our guard prematurely. Standard public health protocol requires forty-two consecutive days—two full incubation cycles—without a single new infection before an outbreak can be declared officially over. That means we are not yet halfway through the monitoring window.\n\nCounty health departments must maintain active surveillance, especially at border entry points and transit hubs. Emergency allocations must continue supporting hospital preparedness rather than being redirected now that the immediate panic has subsided. As citizens, let us continue practicing proper hand hygiene and reporting any suspected symptoms to public health desks immediately.\n\nKwa ufupi: Kenya imerekodi siku kumi na nane bila kisa kipya cha Ebola, na wagonjwa wote sita wamepona kikamilifu na kuruhusiwa kwenda nyumbani. Hata hivyo, tuko bado kwenye kipindi cha uangalizi wa siku arobaini na mbili kabla ya kutangazwa tuko salama kabisa. Tuendelee kudumisha usafi na kutoa taarifa mapema.",
-    "voice_note": "Habari zenu, this is Kenya on Record with your weekly update. Some good news on the public health front: Kenya has now gone eighteen straight days without recording any new Ebola case. Even better, all six patients who were in isolation have fully recovered and been discharged. This is solid proof that early detection and proper clinical care work. But we cannot afford to relax just yet. International health guidelines require forty-two consecutive days without a case before a country is officially declared Ebola-free. That means county surveillance teams must stay sharp, screening at borders must continue, and we must keep observing basic hygiene. If you or anyone you know experiences sudden high fever or unexplained bleeding, report it to the nearest public health facility immediately. Let’s see this process through to the end.",
-    "sms": "Usiibiwe: All 6 Ebola patients recovered under proper hospital care. Beware of herbal cures or fake kits sold online. Report scams and symptoms via 719.",
-    "reels": "Eighteen days. Zero new Ebola cases. And all six patients in Kenya have fully recovered and returned home. That is a massive win for our frontline healthcare workers and early response teams. But the job isn't finished. Protocol demands forty-two clear days before Kenya is declared officially free of the outbreak. Border screening and hospital readiness must hold firm until the finish line. No dropping the ball."
+    "radio": "Good evening, and welcome back to Kenya on Record. Today, we bring you numbers that speak directly to your dining table and the family budget.\n\nFor months, sugar has been a sore point for Kenyan households. Scarcity and import dynamics drove this kitchen staple out of reach for many. But the latest production figures offer a welcome turnaround. Local sugar output has surged by 56.7 percent. This surge in domestic supply has finally forced retail shelves to adjust, bringing prices down by an average of thirty-two shillings on a standard two-kilogram packet.\n\nNow, thirty-two shillings may sound modest to some, but across a month, for an ordinary working family, that difference counts. More importantly, it demonstrates what happens when local agricultural production functions without sabotage or unnecessary bottlenecks. However, civic vigilance does not end at the factory gate. Often, price reductions announced at the national level take weeks to trickle down to your neighborhood duka because middlemen drag their feet. We must stay alert. If national supply is up and wholesale prices are down, retailers have no justification to charge you crisis rates. Verify the price on the shelf, demand fair rates, and protect your pocket.\n\nKwa ufupi kwa lugha ya Kiswahili: Uzalishaji wa sukari nchini umeongezeka kwa asilimia hamsini na sita nukta saba, na kusababisha bei ya pakiti ya kilo mbili kushuka kwa shilingi thelathini na mbili. Hakikisha duka lako la mtaa halikutozi bei ya zamani. Linda haki yako kama mnunuzi.\n\nStay informed, and keep Kenya on record.",
+    "voice_note": "Habari zenu. Quick check-in from Kenya on Record on your household budget this week. There is genuine, verified relief on the shelves. Official numbers show our local sugar production climbed by fifty-six point seven percent. As a direct result, retail prices have dropped by an average of thirty-two shillings for a two-kilogram packet. That is money that should stay in your pocket every single time you restock. But here is the catch: old habits die hard in the distribution chain, and some shops will quietly keep charging yesterday’s scarcity rates if nobody calls them out. When you go shopping, check the shelf price before you tap your card or send mobile money. If the reduction isn’t reflected, ask why. Let us make sure market gains actually reach the citizen.",
+    "sms": "Usiibiwe: Local sugar output is up 56.7%, dropping a 2kg pack by Sh32. Check shelf prices before paying and demand the market reduction at your local duka.",
+    "reels": "Good news at the till, but keep your eyes open. Kenya’s local sugar production jumped by fifty-six point seven percent, forcing retail prices down by thirty-two shillings on a standard two-kilo packet. The mills are crushing, domestic supply is up, and your household budget should feel that relief immediately. Do not let your local retailer charge you yesterday’s scarcity rates. Check the price, ask questions, and hold the supply chain accountable."
   },
   "spend_usd": 0.0
 }
