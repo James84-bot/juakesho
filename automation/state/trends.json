@@ -1,54 +1,10 @@
 {
-  "fetched": "2026-11-07T18:01:00.831972+00:00",
+  "fetched": "2026-11-07T18:18:23.617896+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "nottm forest vs man city",
-      "traffic": "20000+",
-      "news": [
-        {
-          "title": "Premier League LIVE: Live text, radio & score updates from across the Premier League",
-          "url": "https://www.bbc.com/sport/football/live/cmj6jdk36975t",
-          "source": "BBC"
-        },
-        {
-          "title": "Nottingham Forest vs Man City LIVE! Premier League score updates, news, prediction, line-ups and how to watch or stream",
-          "url": "https://www.skysports.com/football/live-blog/13592878/nottingham-forest-vs-man-city-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Nottingham Forest v Manchester City: Premier League – live",
-          "url": "https://www.theguardian.com/football/live/2026/nov/07/nottingham-forest-v-manchester-city-premier-league-live",
-          "source": "The Guardian"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "fsv mainz vs bayern munich standings",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Mainz 05 1-2 Bayern Munich: Harry Kane provides two assists as Bundesliga champions stay top",
-          "url": "https://www.bbc.com/sport/football/live/c6d09x7zknymt",
-          "source": "BBC"
-        },
-        {
-          "title": "Bayern, Dortmund win to stay tight at the top of Bundesliga",
-          "url": "https://sports.yahoo.com/articles/bayern-dortmund-win-stay-tight-165654861.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Match Awards from Bayern Munich’s important 2-1 win over Mainz 05",
-          "url": "https://www.bavarianfootballworks.com/bayern-munich-match-awards/278683/match-awards-from-bayern-munichs-important-2-1-win-over-mainz-05",
-          "source": "Bavarian Football Works"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "borussia dortmund vs sv elversberg standings",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "Borussia Dortmund player ratings vs Elversberg: Felix Nmecha double keeps BVB level with Bayern",
@@ -69,6 +25,50 @@
     },
     {
       "geo": "KE",
+      "title": "fsv mainz vs bayern munich standings",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Mainz 05 1-2 Bayern Munich: Harry Kane provides two assists as Bundesliga champions stay top",
+          "url": "https://www.bbc.com/sport/football/live/c6d09x7zknymt",
+          "source": "BBC"
+        },
+        {
+          "title": "Mainz 1-2 Bayern (Nov 7, 2026) Game Analysis",
+          "url": "https://www.espn.com/soccer/report/_/gameId/401884740",
+          "source": "ESPN"
+        },
+        {
+          "title": "Preview: Mainz vs. Bayern, Bundesliga Matchday 9",
+          "url": "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-mainz-bayern-bundesliga-matchday-9",
+          "source": "FC Bayern"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "blackburn rovers vs west ham standings",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Blackburn Rovers v West Ham United: Championship stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cq4g13kl9x6gt",
+          "source": "BBC"
+        },
+        {
+          "title": "Scott Parker awaits first West Ham win after defeat at Blackburn",
+          "url": "https://www.espn.com/soccer/story/_/id/50409313/scott-parker-west-ham-loss-blackburn-championship",
+          "source": "ESPN"
+        },
+        {
+          "title": "Blackburn Rovers vs. West Ham Lineups, Live Streaming, How and Where to Watch on TV",
+          "url": "https://sports.yahoo.com/articles/blackburn-rovers-vs-west-ham-121100323.html",
+          "source": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "osasuna vs athletic",
       "traffic": "200+",
       "news": [
@@ -83,9 +83,9 @@
           "source": "kirolakeitb.eus"
         },
         {
-          "title": "El Athletic quiere escalar en la tabla en el escenario favorito de Sancet",
-          "url": "https://radiopopular.com/2026/11/el-athletic-quiere-escalar-en-la-tabla-en-el-escenario-favorito-de-sancet",
-          "source": "Radio Popular de Bilbao"
+          "title": "Osasuna y su previa contra el Bilbao en la liga",
+          "url": "http://diariodelcauca.com.co/noticias/osasuna-y-su-previa-contra-el-bilbao-en-la-liga",
+          "source": "Diario del Cauca"
         }
       ]
     },
@@ -157,23 +157,23 @@
     },
     {
       "geo": "KE",
-      "title": "luton vs forest green",
-      "traffic": "200+",
+      "title": "man city standings",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Luton Town v Forest Green Rovers: FA Cup stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/ckd6d93qx4zwt",
+          "title": "RB Leipzig 2-3 Man City: Erling Haaland scores winner",
+          "url": "https://www.bbc.com/sport/football/live/cq1kd2r14z8rt",
           "source": "BBC"
         },
         {
-          "title": "Baptiste on the bench as Hatters make seven changes for FA Cup clash",
-          "url": "https://www.lutontoday.co.uk/sport/football/luton-town/baptiste-on-the-bench-as-hatters-make-seven-changes-for-fa-cup-clash-9336653",
-          "source": "Luton Today"
+          "title": "RB Leipzig 2-3 City: 2-minute highlights",
+          "url": "https://www.mancity.com/citytv/mens/rb-leipzig-manchester-city-202627-short-highlights-63929429",
+          "source": "Manchester City FC"
         },
         {
-          "title": "Luton vs Forest Green Prediction: The Final Match to Decide the Championship",
-          "url": "https://www.vietnam.vn/en/nhan-dinh-luton-vs-forest-green-tran-chung-ket-dinh-doat-ngoi-vuong",
-          "source": "Vietnam.vn"
+          "title": "RB Leipzig 2-3 Man City: Erling Haaland haunts Bundesliga side again with late winner in Champions League thriller",
+          "url": "https://www.skysports.com/football/news/13607404/rb-leipzig-2-3-man-city-erling-haaland-haunts-bundesliga-side-again-with-late-winner-in-champions-league-thriller",
+          "source": "Sky Sports"
         }
       ]
     },
@@ -183,6 +183,11 @@
       "traffic": "100+",
       "news": [
         {
+          "title": "Parma-Bologna, moviola: espulso dopo soli 6' Ndiaye ma il Var inganna l'arbitro, Marelli incredulo",
+          "url": "https://www.virgilio.it/sport/parma-bologna-moviola-espulso-dopo-soli-6-ndiaye-ma-il-var-inganna-l-arbitro-marelli-incredulo-979177",
+          "source": "Virgilio"
+        },
+        {
           "title": "Serie A: Parma-Bologna in campo alle 18 DIRETTA",
           "url": "https://www.ansa.it/sito/notizie/sport/calcio/2026/11/07/serie-a-parma-bologna-in-campo-alle-18-diretta_d1d5bb4e-ed57-4ae0-b79d-873cadfdcb52.html",
           "source": "ANSA"
@@ -191,37 +196,15 @@
           "title": "Pronostico Parma-Bolognese: la prestazione in trasferta messa alla prova",
           "url": "https://www.vietnam.vn/it/nhan-dinh-parma-vs-bologna-ban-linh-san-khach-duoc-thu-lua",
           "source": "Vietnam.vn"
-        },
-        {
-          "title": "Dove vedere Parma-Bologna",
-          "url": "https://sport.sky.it/calcio/serie-a/2026/11/07/parma-bologna-dove-vedere-tv-streaming",
-          "source": "Sky Sport"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "barnsley vs aldershot",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Preview: Barnsley vs Aldershot Town - prediction, team news, lineups",
-          "url": "https://www.sportsmole.co.uk/football/barnsley/fa-cup/preview/barnsley-vs-aldershot-prediction-team-news-lineups_608435.html",
-          "source": "Sports Mole"
-        },
-        {
-          "title": "‘Same as a league game’ as Shots visit in FA Cup",
-          "url": "https://www.barnsleychronicle.com/article/37297/same-as-a-league-game-as-shots-visit-in-fa-cup",
-          "source": "Barnsley Chronicle"
-        },
-        {
-          "title": "Barnsley FC v Aldershot: Stendel's praise for senior midfielder",
-          "url": "https://www.yorkshirepost.co.uk/sport/football/barnsley-fc-v-aldershot-daniel-stendels-praise-for-luca-connell-9334017",
-          "source": "Yorkshire Post"
         }
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "auxerre vs paris fc",
+      "why": "unsafe: 'Betting'"
+    }
+  ],
   "errors": {}
 }
