@@ -1752,30 +1752,66 @@ def publish(dry_run: bool = False) -> None:
         (STATE / "meta_missing_notified.txt").unlink(missing_ok=True)
 
 
-def send_samples(dry_run: bool = False) -> None:
-    """Shows the newest features on Telegram before they go live: the profile kit and sample comment cards."""
-    import engage, presence, draft as drafter
-    covers = presence.build()[:-1]
-    if dry_run:
-        log(f"[dry-run] would send {len(covers)} covers and the sample comment cards")
-        return
+SAMPLES = EXPORTS / "_samples"
+SAMPLE_DROP = ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source",
+               "track_credit", "status", "tg_msg", "ig_id", "fb_id", "fb_story_id", "yt_id", "tt_id", "tt_status")
+
+
+def sample_posts(n: int = 3) -> list[dict]:
+    """Copies of the newest published Reels, ready to be made again with today's design: new ids ("-sample"),
+    the old renders' paths and platform ids removed, the caption and lines cleaned by today's rules."""
+    import draft as drafter
+    found = []
+    for f in sorted(WEEKS.glob("*.json"))[-2:]:
+        for p in json.loads(f.read_text(encoding="utf-8"))["posts"]:
+            if p["status"] == "published" and p.get("reel") and p.get("beats") and not p.get("group") \
+                    and p.get("template") != "tazama":
+                found.append(p)
+    found.sort(key=lambda p: p["publish_at"], reverse=True)
+    out = []
+    for p in found[:n]:
+        q = {k: v for k, v in p.items() if k not in SAMPLE_DROP}
+        q["id"] = f"{p['id']}-sample"
+        out.append(drafter.tidy_beats(drafter.attribute_single_source(q)))
+    return out
+
+
+def reel_samples(n: int = 3, dry_run: bool = False) -> int:
+    """Makes the newest published Reels again with the current design (a new shot on every line, figures counting
+    up, the wipe, licensed music) and sends them to Telegram as samples. Nothing is posted; the weeks don't change."""
+    posts = sample_posts(n)
+    if dry_run or not posts:
+        log(f"samples: {len(posts)} Reel(s){' (dry run)' if dry_run else ''}")
+        return len(posts)
+    import photos
+    import video
+    import videos
+    SAMPLES.mkdir(parents=True, exist_ok=True)
+    photos.attach(posts, SAMPLES)
+    try:
+        videos.attach(posts, SAMPLES)
+    except Exception as e:   # footage is a bonus
+        log(f"sample footage skipped: {e}")
+    video.make_reels(posts, SAMPLES)
     chat = need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
-    names = [n for n, _, _ in presence.HIGHLIGHTS]
-    media = [{"type": "photo", "media": f"attach://f{i}", "caption": names[i].title()} for i in range(len(covers))]
-    media[0]["caption"] = "Highlight covers: " + ", ".join(n.title() for n in names)
-    tg("sendMediaGroup", {"chat_id": chat, "media": json.dumps(media)}, {f"f{i}": f for i, f in enumerate(covers)})
-    tg("sendPhoto", {"chat_id": chat, "caption": "How the row looks under the bio"},
-       {"photo": presence.OUT / "highlights-row.png"})
-    plan = "\n".join(f"• <b>{_esc(n.title())}</b>: {_esc(h)}" for n, _, h in presence.HIGHLIGHTS)
-    tg("sendMessage", {"chat_id": chat, "parse_mode": "HTML", "text": (
-        "🧪 <b>Profile kit</b>\n\n<b>Bio</b>\n<code>Facts today. A better Kenya tomorrow.\nEvery side, same standard.\n"
-        "Not with any government or party. 📩 Tips: DM</code>\n\n<b>Pinned</b>\n1. Manifesto carousel: why we exist, our rules, non-partisan\n"
-        "2. Best Promise Tracker post\n3. Reel: how we check our facts\n\n<b>Highlights</b>\n" + plan)})
-    n = engage.samples(WEEKS, drafter.call_claude, lambda text, buttons: tg(
-        "sendMessage", {"chat_id": chat, "text": text, "parse_mode": "HTML", "reply_markup": buttons}))
-    _notify(f"🧪 {n} sample comment cards above. A 🔥-only comment was skipped, as it would be live. "
-            "When Instagram is connected these arrive every 2 hours for real.")
-    log(f"samples sent: {len(covers)} covers, {n} comment cards")
+    sent = 0
+    for q in posts:
+        mp4 = SAMPLES / f"{q['id']}.mp4"
+        if not mp4.exists():
+            continue
+        note = (f"🧪 <b>Sample, not posted</b>: {_esc(q['id'][:-7])} made again with the new design: a new shot on "
+                "every line, figures counting up, a red wipe between lines"
+                + (f", music: {_esc(q['track_credit'])}" if q.get("track_credit") else ", no music track (synth bed)") + ".")
+        tg("sendVideo", {"chat_id": chat, "caption": note[:1000], "parse_mode": "HTML", "supports_streaming": "true"},
+           {"video": mp4})
+        cap = caption_for(q)
+        comment = receipts_comment(q) or ""
+        tg("sendMessage", {"chat_id": chat, "parse_mode": "HTML", "text": (
+            "<b>Caption</b> (Instagram and Facebook)\n<code>" + _esc(cap)[:2500] + "</code>"
+            + ("\n\n<b>First comment</b>\n<code>" + _esc(comment)[:900] + "</code>" if comment else ""))})
+        sent += 1
+    log(f"samples sent: {sent}")
+    return sent
 
 
 PREVIEW = EXPORTS / "_preview"
@@ -2196,8 +2232,8 @@ def _main(argv: list[str] | None = None) -> int:
             log(f"comments: {n} sent for your decision")
         except Exception as e:
             log(f"comments skipped: {e}")
-    if a.command == "samples":
-        send_samples(dry_run=a.dry_run)
+    if a.command == "samples":   # the newest features, on real posts, before you see them live
+        reel_samples(dry_run=a.dry_run)
     if a.command == "clips" and not a.dry_run:
         collect()   # pick up clips you just sent
     if a.command in {"clips", "clipwork"}:

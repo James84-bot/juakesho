@@ -8,3 +8,5 @@ automation/run.log
 exports/**/videos/
 # Telegram notes stay in the chat, never in this public repo
 automation/state/inbox.jsonl
+# samples sent to Telegram for review are not published
+exports/_samples/

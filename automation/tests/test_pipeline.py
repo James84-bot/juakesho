@@ -458,6 +458,23 @@ class LearnYouTubeTests(TempWeeks):
             self.assertEqual(pl.learn_youtube(), [])
 
 
+class SampleTests(TempWeeks):
+    def test_samples_are_the_newest_published_reels_as_clean_copies(self):
+        base = {"status": "published", "reel": True, "template": "sauti", "ig_id": "1", "yt_id": "y",
+                "photo_file": "/old/runner/p.jpg", "photo_kind": "posted"}
+        self.week([{**base, "id": "a", "publish_at": "2026-11-05T12:45:00+03:00", "beats": ["One.", "Two."]},
+                   {**base, "id": "b", "publish_at": "2026-11-07T15:40:00+03:00", "caption": "Capital FM News reports: Sugar is cheaper.",
+                    "beats": ["Capital FM News reports: Sugar is Sh32 cheaper.", "Two."]},
+                   {**base, "id": "c", "publish_at": "2026-11-06T12:45:00+03:00", "beats": ["One."], "template": "tazama"},
+                   {**base, "id": "d", "publish_at": "2026-11-07T19:00:00+03:00", "beats": ["One."], "status": "approved"}])
+        got = pl.sample_posts(2)
+        self.assertEqual([q["id"] for q in got], ["b-sample", "a-sample"])   # newest first, published Reels only
+        self.assertFalse(any(k in got[0] for k in ("ig_id", "yt_id", "photo_file", "photo_kind", "status")))
+        self.assertEqual(got[0]["beats"][0], "Sugar is Sh32 cheaper.")         # today's rules: no outlet opener
+        self.assertEqual(got[0]["caption"], "Sugar is cheaper.")
+        self.assertEqual(pl.load_week("2026-W41")["posts"][1]["id"], "b")         # the week itself is untouched
+
+
 class LearnScheduleTests(unittest.TestCase):
     def test_learns_weekly_and_with_the_morning_news_run_only(self):
         import argparse
