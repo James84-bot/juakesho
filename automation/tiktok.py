@@ -178,6 +178,9 @@ def authorize_url(client_key: str, state: str) -> str:
 def code_from(pasted: str, state: str) -> str:
     """The authorization code from the address you land on (or the bare code). Checks the state when present."""
     pasted = pasted.strip()
+    if pasted.startswith(("http://", "https://")) and "code=" not in pasted:
+        raise TikTokError("That address has no code in it. Approve the sign-in on TikTok first, then copy the address "
+                          "you land on (it contains ?code=).")
     if "code=" not in pasted:
         return pasted
     q = urllib.parse.parse_qs(urllib.parse.urlparse(pasted).query)   # also URL-decodes, as TikTok requires

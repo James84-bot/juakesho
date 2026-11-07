@@ -77,6 +77,10 @@ class SignIn(unittest.TestCase):
         self.assertEqual(q["state"], ["st"])
         self.assertEqual(q["disable_auto_auth"], ["1"])
 
+    def test_code_from_rejects_address_without_code(self):
+        with self.assertRaises(tiktok.TikTokError):
+            tiktok.code_from(tiktok.authorize_url("key", "st"), "st")
+
     def test_code_from_decodes_and_checks_state(self):
         url = "https://james84-bot.github.io/juakesho/?code=ab%2Acd%21&scopes=x&state=st"
         self.assertEqual(tiktok.code_from(url, "st"), "ab*cd!")
