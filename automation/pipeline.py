@@ -1578,6 +1578,30 @@ def _youtube_short(label: str, post: dict) -> None:
         _notify(f"⚠️ YouTube Shorts upload failed for <b>{_esc(post['id'])}</b> (the Instagram and Facebook posts are fine): {_esc(str(e)[:250])}")
 
 
+def tiktok_packages_on() -> bool:
+    try:
+        return bool(json.loads(POLICY.read_text(encoding="utf-8")).get("tiktok_packages"))
+    except (OSError, ValueError):
+        return False
+
+
+def _tiktok_package(label: str, post: dict) -> None:
+    """Sends the published Reel and its caption to your Telegram, ready to save and upload to TikTok in the app.
+    TikTok only lets an audited developer app post publicly, so until that audit passes this is the way across.
+    Optional and never fatal."""
+    if not (post.get("reel") and tiktok_packages_on()):
+        return
+    video = EXPORTS / label / f"{post['id']}.mp4"
+    try:
+        cap = caption_for(post)
+        cap = "🎵 TikTok: save this video, upload it in the app, paste this caption.\n\n" + cap
+        cap = cap if len(cap) <= 1000 else cap[:997].rstrip() + "..."
+        chat = need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
+        tg("sendVideo", {"chat_id": chat, "caption": cap, "supports_streaming": "true"}, {"video": video})
+    except Exception as e:
+        log(f"tiktok package skipped for {post['id']}: {e}")
+
+
 def fb_link(fb_id: str | None) -> str | None:
     """A link to the published Facebook post, so it can be shared to the owner's own profile (no API can post there)."""
     if not fb_id:
@@ -1644,6 +1668,7 @@ def publish(dry_run: bool = False) -> None:
                         m["fb_story_id"] = fb_story
                 record_evidence(members)
                 _youtube_short(label, first_of(members))
+                _tiktok_package(label, first_of(members))
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
                 link = fb_link(fb_id)
                 _notify(f"✅ Published <b>{_esc(key)}</b>."

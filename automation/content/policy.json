@@ -1,5 +1,6 @@
 {
-  "note": "auto_approve is ON: posts that pass every automatic check are approved by the system and go out at their slot; a tap on a card's red cross before the slot stops one. Posts that fail a check never go out. Set false to pause.",
+  "note": "auto_approve is ON: posts that pass every automatic check are approved by the system and go out at their slot; a tap on a card's red cross before the slot stops one. A post that fails a check is sent to Telegram marked with what failed and only goes out if you approve it. tiktok_packages: after a Reel is published it is also sent to Telegram with its caption, ready to upload to TikTok by hand. Set auto_approve false to pause.",
   "auto_approve": true,
-  "news_photos": true
+  "news_photos": true,
+  "tiktok_packages": true
 }
