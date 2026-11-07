@@ -739,6 +739,61 @@ def _clip_slot(label: str) -> dt.datetime:
     return when
 
 
+def clip_moment(segments: list[dict], post: dict, length: float, span: float = 8.0) -> tuple[float, float]:
+    """The QUOTE window of a TV clip that says what the post says: the span whose speech shares the most words with
+    the post's message and lines (stems, as in the photo matching). No usable speech: 2 s in, past the station ident."""
+    import posted
+    want = set(posted.terms_for(post)[1]) | {w[:6] for w in re.findall(r"[a-z]{4,}", " ".join(
+        [str(post.get("message") or "")] + [str(b) for b in post.get("beats") or []]).lower().replace("*", ""))}
+    best, best_at = 0, min(2.0, max(0.0, length - span))
+    for seg in segments:
+        a = max(0.0, min(seg["start"], length - span))
+        words = " ".join(x["text"] for x in segments if x["end"] > a and x["start"] < a + span).lower()
+        hits = sum(1 for w in want if w and w[:6] in words)
+        if hits > best:
+            best, best_at = hits, a
+    return round(best_at, 2), round(min(length, best_at + span), 2)
+
+
+def tvclip_work(payload: dict) -> str:
+    """A TV clip your computer fetched for a news post (tvclip_local.py): it was sent to the bot, this takes it by
+    its Telegram file id and makes the post's Reel again as hook line, then up to 8 s of the station's footage with
+    live captions and the station named, then the rest of the lines. The post's status and slot don't change.
+    Returns what happened, in one line."""
+    import tazama
+    import video
+    pid, file_id = str(payload.get("post", "")), str(payload.get("file_id", ""))
+    channel = re.sub(r"[^\w .&'-]", "", str(payload.get("channel") or "TV"))[:40] or "TV"
+    if not (pid and file_id):
+        return "nothing to do: no post or file"
+    for f in sorted(WEEKS.glob("*.json"))[-2:]:
+        data = json.loads(f.read_text(encoding="utf-8"))
+        post = next((p for p in data["posts"] if p["id"] == pid), None)
+        if post:
+            break
+    else:
+        return f"{pid}: not in this or last week"
+    if post["status"] not in {"rendered", "awaiting", "approved"} or not post.get("beats"):
+        return f"{pid}: {post['status']}, left as it is"
+    label = data["collection"]
+    info = {"rights": "quote", "credit": channel, "source": str(payload.get("url") or ""), "evidence": f"nukuu {channel}",
+            "note": ""}
+    with tempfile.TemporaryDirectory() as tmp:
+        src = Path(tmp) / "tv.mp4"
+        tazama.download(_tg_file_path, need("TELEGRAM_BOT_TOKEN")["TELEGRAM_BOT_TOKEN"], file_id, src)
+        meta = tazama.probe(video.ffmpeg_bin(), src)
+        segments = tazama.transcribe(src)
+        a, b = clip_moment(segments, post, meta["duration"])
+        beats = [str(x) for x in post["beats"]]
+        reel = {**post, "template": "tazama", "headline": beats[0], "hook": beats[:1], "verdict": beats[1:5],
+                "start": a, "end": b, "credit": channel}
+        tazama.make(reel, info, src, segments, EXPORTS / label)
+    post.update(tv_clip_used={"channel": channel, "url": info["source"], "window": [a, b]},
+                clip_credit=f"Clip: {channel}, short excerpt for news reporting")
+    save_week(data)
+    return f"{pid}: {channel} clip {a:.1f}-{b:.1f}s added"
+
+
 def process_clips(dry_run: bool = False) -> int:
     """Turns queued clips into Tazama Hii Reels and sends their cards (auto-approved when the guard passes; ❌ stops
     one). Raw clips stay in a temp folder."""
@@ -1472,7 +1527,7 @@ def credit_lines(post: dict) -> list[str]:
     in the Sources comment (Instagram, Facebook) or at the end of the text where there is no comment of ours
     (YouTube, TikTok), never in the middle of the caption. CC0 and public-domain media need none."""
     out = []
-    for icon, c in (("🎥", post.get("video_credit")), ("🎥", post.get("broll_credit")),
+    for icon, c in (("📺", post.get("clip_credit")), ("🎥", post.get("video_credit")), ("🎥", post.get("broll_credit")),
                     ("📷", post.get("person_credit") or post.get("photo_credit")), ("🎵", post.get("track_credit"))):
         if c and not NO_CREDIT_NEEDED.search(str(c)):
             out.append(f"{icon} {c}")
@@ -2141,7 +2196,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2311,6 +2366,18 @@ def _main(argv: list[str] | None = None) -> int:
         except Exception as e:
             log(f"writer check failed ({drafter.provider()}): {e}")
             return 1
+    if a.command == "tvclipwork":   # a TV clip your computer sent (repository_dispatch from tvclip_local.py)
+        try:
+            payload = json.loads(os.environ.get("TVCLIP_PAYLOAD") or "{}")
+        except ValueError:
+            payload = {}
+        try:
+            note = tvclip_work(payload)
+        except Exception as e:
+            note = f"{payload.get('post', '?')}: failed: {str(e)[:200]}"
+        print("::notice title=tvclipwork::" + note)
+        _notify("📺 " + _esc(note))
+        return 0
     if a.command == "tvclipcheck":   # can this runner fetch a TV clip? (YouTube refuses many cloud servers)
         import radar
         import tvclip

@@ -161,3 +161,17 @@ class WhoWhereWhen(unittest.TestCase):
         self.assertTrue(all(any(f"no `{f}`" in e for e in errs) for f in ("who", "where", "when")))
         ok = {**post, "who": "National Treasury", "where": "National", "when": "12 Oct 2026"}
         self.assertFalse([e for e in guard.check(ok).errors if "`who`" in e or "`where`" in e or "`when`" in e])
+
+
+class TvClipMoment(unittest.TestCase):
+    def test_the_window_is_where_the_speech_says_what_the_post_says(self):
+        import pipeline
+        segs = [{"start": 0.0, "end": 4.0, "text": "Good evening, this is the news at nine."},
+                {"start": 4.0, "end": 9.0, "text": "Weather across the country remains mild."},
+                {"start": 30.0, "end": 36.0, "text": "Sugar prices have fallen by thirty two shillings as millers increase production."},
+                {"start": 36.0, "end": 40.0, "text": "Back to the studio."}]
+        post = {"message": "Sugar prices fell by Sh32 as millers raised production.", "beats": ["Sugar just got *Sh32* cheaper."]}
+        a, b = pipeline.clip_moment(segs, post, 120.0)
+        self.assertEqual((a, b), (30.0, 38.0))
+        self.assertEqual(pipeline.clip_moment([], post, 120.0), (2.0, 10.0))   # no speech: just past the station ident
+        self.assertEqual(pipeline.clip_moment([], post, 5.0), (0.0, 5.0))      # a short clip is used whole
