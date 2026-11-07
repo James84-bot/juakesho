@@ -320,7 +320,7 @@
         "outlet": "Capital FM",
         "photo_query": "Lamu Port Kenya ship berth"
       },
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 6.7/10. Lamu Port series item is evergreen content and lacks current news urgency."
@@ -352,7 +352,13 @@
       "reel": true,
       "tg_msg": 700,
       "decided_at": "2026-11-02T16:35:00.808204+03:00",
-      "fresh_checked": "2026-11-06T09:59:45.370922+03:00"
+      "fresh_checked": "2026-11-06T09:59:45.370922+03:00",
+      "published_at": "2026-11-07T11:01:57.465201+03:00",
+      "ig_id": "17951975112343301",
+      "fb_id": "2035627760466498",
+      "story_id": "18100774025448196",
+      "fb_story_id": "1774635064664794",
+      "yt_id": "7QDZ-oWYvFw"
     },
     {
       "id": "2026-w45-d7-glasspoll",
