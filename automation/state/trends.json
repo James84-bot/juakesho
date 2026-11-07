@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-11-07T11:56:35.316671+00:00",
+  "fetched": "2026-11-07T12:16:52.018993+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "leeds vs spurs",
-      "traffic": "5000+",
+      "traffic": "10000+",
       "news": [
         {
           "title": "Leeds United vs Tottenham Hotspur: Premier League preview, team news, stats & head-to-head",
@@ -25,67 +25,90 @@
     },
     {
       "geo": "KE",
-      "title": "aberdeen vs hibernian",
-      "traffic": "200+",
+      "title": "chelsea vs everton",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Aberdeen vs Hibernian predictions for Saturday (5.45pm KO): Dons to halt their slide",
-          "url": "https://www.squawka.com/en/news/previews/aberdeen-vs-hibernian-predictions-saturday-07-11-2026/",
-          "source": "Squawka"
-        },
-        {
-          "title": "Aberdeen vs Hibernian: TV channel, live stream and kick-off time for Premiership fixture",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-aberdeen-v-hibernian/blt0e1bd7a5bfc96234",
+          "title": "Chelsea FC Women vs Everton Women: TV channel, live stream and kick-off time",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-chelsea-fc-women-v-everton-women/blte2de09b3b4c9c51e",
           "source": "Goal.com"
         },
         {
-          "title": "‘It’s been made clear there isn’t anything to spend’ - Prem boss on transfers",
-          "url": "https://www.thescottishsun.co.uk/sport/17038283/aberdeen-stephen-robinson-no-buget-free-transfers-injury-crisis/",
-          "source": "The Scottish Sun"
+          "title": "WSL Saturday Predictions: Could Our 12/1 Scoreline Land?",
+          "url": "https://news.williamhill.com/football/wsl-predictions-and-betting-tips-for-saturday-7th-november-2026/",
+          "source": "William Hill News"
+        },
+        {
+          "title": "Confirmed Chelsea Women line up vs Everton | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-everton",
+          "source": "Chelsea Football Club"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "kings vs spurs",
+      "title": "kenya medical training college",
       "traffic": "200+",
       "news": [
         {
-          "title": "Victor Wembanyama, Spurs drub Kings for seventh straight win",
-          "url": "https://www.reuters.com/sports/basketball/victor-wembanyama-spurs-drub-kings-seventh-straight-win--flm-2026-11-07/",
-          "source": "Reuters"
+          "title": "KMTC CEO Reveals Why 20,000 Students Miss Slots Despite KUCCPS Placement",
+          "url": "https://www.kenyans.co.ke/news/129182-20000-students-miss-kmtc-admission-slots-over-lack-govt-funding",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "NBA: San Antonio Spurs at Sacramento Kings",
-          "url": "https://www.reutersconnect.com/item/nba-san-antonio-spurs-at-sacramento-kings/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAyOTcwNjY%3D?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
-          "source": "Reuters Connect"
+          "title": "KMTC seeks HELB funding as 20,000 students forfeit training slots over fees",
+          "url": "https://www.kbc.co.ke/kmtc-seeks-helb-funding-as-20000-students-forfeit-training-slots-over-fees/",
+          "source": "KBC Digital"
         },
         {
-          "title": "Game Recap: Spurs 124, Kings 109 (Nov. 6)",
-          "url": "https://www.nba.com/watch/video/game-recap-spurs-124-kings-109-nov-6",
-          "source": "NBA.com"
+          "title": "Why 20,000 students are forfeiting their dream medical careers every year",
+          "url": "https://www.pulse.co.ke/story/why-20000-kmtc-students-miss-out-on-admissions-every-year-2026110607213902617",
+          "source": "Pulse Kenya"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "school",
-      "traffic": "200+",
+      "title": "mariga",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Junior schools, promotions and pay: Thorny issues at headteachers' meeting",
-          "url": "https://nation.africa/kenya/news/education/junior-schools-promotions-and-pay-thorny-issues-at-headteachers-meeting-5661564",
+          "title": "Police teargas delegates as FKF meeting descends into chaos in Meru",
+          "url": "https://nation.africa/kenya/sports/football/police-teargas-delegates-as-fkf-meeting-descends-into-chaos-in-meru-5661932",
           "source": "Daily Nation"
         },
         {
-          "title": "Co-op Bank commits Sh7m to support school heads conference",
-          "url": "https://capitalfm.africa/co-op-bank-commits-sh7m-to-support-school-heads-conference/",
-          "source": "Capital FM Africa"
+          "title": "Mariga, 6 other officials expelled by Football Kenya Federation General Assembly",
+          "url": "https://www.the-star.co.ke/news/2026-11-07-mariga-6-other-officials-expelled-by-fkf",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Comprehensive schools row, funding gaps and promotions top agenda at 2026 KECSHA annual conference",
-          "url": "https://educationnews.co.ke/news/comprehensive-schools-row-funding-gaps-and-promotions-top-agenda-at-2026-kecsha-annual-conference",
-          "source": "Education News"
+          "title": "Drama, teargas as FKF Special General Meeting erupts into chaos in Meru",
+          "url": "https://citizen.digital/article/drama-teargas-as-fkf-special-general-meeting-erupts-into-chaos-in-meru-n393482",
+          "source": "Citizen Digital"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "motorola signature 27",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Motorola Signature 27 vs Samsung Galaxy S26 Ultra: Which Flagship Is Worth $1,600?",
+          "url": "https://www.techrepublic.com/article/news-motorola-signature-27-vs-galaxy-s26-ultra/",
+          "source": "TechRepublic"
+        },
+        {
+          "title": "Motorola’s $1,600 Signature 27 Is Throwing Every Ultra-Level Phone Feature Together",
+          "url": "https://www.cnet.com/tech/motorolas-1600-signature-27-is-throwing-every-ultra-level-phone-feature-together/",
+          "source": "CNET"
+        },
+        {
+          "title": "Motorola’s $1,599 Signature 27 Is the ‘World’s Fastest Android Smartphone’",
+          "url": "https://petapixel.com/2026/11/06/motorolas-1599-signature-27-is-the-worlds-fastest-android-smartphone/",
+          "source": "PetaPixel"
         }
       ]
     },
@@ -145,10 +168,6 @@
     },
     {
       "title": "stuttgart vs werder bremen",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "valencia vs real madrid",
       "why": "unsafe: 'Betting'"
     }
   ],
