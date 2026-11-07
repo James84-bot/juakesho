@@ -432,6 +432,32 @@ class YouTubeDescriptionTests(unittest.TestCase):
         self.assertTrue(sent["desc"].startswith("Cap"))
 
 
+class LearnYouTubeTests(TempWeeks):
+    def test_views_per_short_most_viewed_first_and_a_refusal_costs_nothing(self):
+        import types
+        self.week([{"id": "a", "status": "published", "yt_id": "ya", "template": "sauti", "beats": ["Small one."]},
+                   {"id": "b", "status": "published", "yt_id": "yb", "template": "sauti", "beats": ["Big *one*."]},
+                   {"id": "c", "status": "published", "template": "sauti"}])
+        fake = types.SimpleNamespace(ready=lambda: True, stats=lambda ids: {"ya": {"views": 5, "likes": 0, "comments": 0},
+                                                                          "yb": {"views": 900, "likes": 4, "comments": 1}})
+        with mock.patch.dict(sys.modules, {"youtube": fake}):
+            rows = pl.learn_youtube()
+        self.assertEqual([r["id"] for r in rows], ["b", "a"])
+        self.assertEqual(rows[0]["opening"], "Big one.")
+
+        def refuse(ids):
+            raise RuntimeError("quota")
+        fake.stats = refuse
+        with mock.patch.dict(sys.modules, {"youtube": fake}):
+            self.assertEqual(pl.learn_youtube(), [])
+
+    def test_no_youtube_keys_means_no_youtube_numbers(self):
+        import types
+        self.week([{"id": "a", "status": "published", "yt_id": "ya", "template": "sauti"}])
+        with mock.patch.dict(sys.modules, {"youtube": types.SimpleNamespace(ready=lambda: False)}):
+            self.assertEqual(pl.learn_youtube(), [])
+
+
 class LearnScoreTests(TempWeeks):
     def run_learn(self, posts, reach_likes):
         self.week(posts)

@@ -76,6 +76,25 @@ def upload(video: Path, title: str, description: str) -> dict:
     return {"id": done["id"], "privacy": (done.get("status") or {}).get("privacyStatus", "unknown")}
 
 
+def stats(ids: list[str]) -> dict[str, dict]:
+    """Public numbers for our own videos: {id: {"views", "likes", "comments"}}. 50 ids per request."""
+    token, out = access_token(), {}
+    for i in range(0, len(ids), 50):
+        q = urllib.parse.urlencode({"part": "statistics", "id": ",".join(ids[i:i + 50])})
+        req = urllib.request.Request(f"https://www.googleapis.com/youtube/v3/videos?{q}",
+                                     headers={"Authorization": f"Bearer {token}"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                items = json.loads(r.read() or b"{}").get("items") or []
+        except urllib.error.HTTPError as e:
+            raise RuntimeError(f"YouTube statistics → {e.code}: {e.read().decode(errors='replace')[:300]}") from e
+        for it in items:
+            st = it.get("statistics") or {}
+            out[it["id"]] = {"views": int(st.get("viewCount", 0)), "likes": int(st.get("likeCount", 0)),
+                             "comments": int(st.get("commentCount", 0))}
+    return out
+
+
 def auth() -> None:
     """Device-code sign-in; prints the refresh token to save as YT_REFRESH_TOKEN."""
     cid, secret = os.environ.get("YT_CLIENT_ID"), os.environ.get("YT_CLIENT_SECRET")

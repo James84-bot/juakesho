@@ -1911,6 +1911,30 @@ LEARN_MIN_AGE = dt.timedelta(hours=24)
 SCORE_PRIOR_REACH = 300
 
 
+def learn_youtube(weeks_back: int = 4) -> list[dict]:
+    """Views per Short, most viewed first. YouTube is where our posts are found today, so the writer learns from it too.
+    Optional: no YouTube keys, or a refusal, gives an empty list and never stops the Instagram learning."""
+    import youtube
+    if not youtube.ready():
+        return []
+    posts = {}
+    for f in sorted(WEEKS.glob("*.json"))[-weeks_back:]:
+        for p in json.loads(f.read_text(encoding="utf-8"))["posts"]:
+            if p["status"] == "published" and p.get("yt_id") and not (
+                    p.get("publish_at") and now() - dt.datetime.fromisoformat(p["publish_at"]) < LEARN_MIN_AGE):
+                posts[p["yt_id"]] = p
+    if not posts:
+        return []
+    try:
+        got = youtube.stats(list(posts))
+    except RuntimeError as e:
+        log(f"youtube numbers unavailable: {str(e)[:160]}")
+        return []
+    rows = [{"id": posts[v]["id"], "series": posts[v]["template"], "opening": str((posts[v].get("beats") or [""])[0])
+             .replace("*", "")[:90], **n} for v, n in got.items() if v in posts]
+    return sorted(rows, key=lambda r: r["views"], reverse=True)
+
+
 def learn(weeks_back: int = 4) -> dict:
     """Scores every published post from the last few weeks and stores top/bottom performers."""
     token = need("META_ACCESS_TOKEN")["META_ACCESS_TOKEN"]
@@ -1951,7 +1975,8 @@ def learn(weeks_back: int = 4) -> dict:
             rows.append({"id": key, "series": p["template"], "lane": p.get("lane", "-"), "score": score,
                          "opening": str((p.get("beats") or [""])[0]).replace("*", "")[:90], **m})
     rows.sort(key=lambda r: r["score"], reverse=True)
-    out = {"updated": now().isoformat(), "top": rows[:5], "bottom": rows[-3:] if len(rows) > 5 else [], "all": rows}
+    out = {"updated": now().isoformat(), "top": rows[:5], "bottom": rows[-3:] if len(rows) > 5 else [], "all": rows,
+           "youtube": learn_youtube(weeks_back)}
     STATE.mkdir(exist_ok=True)
     (STATE / "learnings.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
     log(f"learned from {len(rows)} posts")

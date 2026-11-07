@@ -543,6 +543,11 @@ def learnings_text() -> str:
                 + "\n".join(f"- {x['avg_watch_s']}s: {x['opening']}" for x in watched[:3])
                 + "\nOPENINGS THEY SKIPPED\n" + "\n".join(f"- {x['avg_watch_s']}s: {x['opening']}" for x in watched[-3:])
                 + "\nOpen the way the first ones did.")
+    yt = sorted(data.get("youtube") or [], key=lambda x: x["views"], reverse=True)
+    if len(yt) >= 6:   # YouTube Shorts is where strangers find us: what they actually watched
+        held += ("\nMOST VIEWED ON YOUTUBE SHORTS\n" + "\n".join(f"- {x['views']} views: {x['opening']}" for x in yt[:3])
+                 + "\nLEAST VIEWED\n" + "\n".join(f"- {x['views']} views: {x['opening']}" for x in yt[-3:])
+                 + "\nLearn from the first group.")
     return (f"\nWHAT WORKED LATELY (score = saves*3 + shares*4 + comments*2 + likes, per 1,000 reached)\n{top}"
             f"\nWHAT DIDN'T\n{low}\nLean into what worked; try a new angle on what didn't.\n{held}\n")
 
