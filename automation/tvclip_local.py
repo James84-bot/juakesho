@@ -60,7 +60,9 @@ def week_labels(now: dt.datetime) -> list[str]:
 STATIONS = ("citizen tv", "ntv kenya", "ktn news", "k24 tv", "kbc channel 1", "tv47", "inooro tv", "kameme tv",
             "ramogi tv", "citizen digital", "nation", "the standard")   # Kenyan newsrooms' own YouTube channels
 STOP = set("the a an and or of to in on for at by with from as is are was were be been has have had it its this that "
-           "these those our your their his her they we you kenya kenyan kenyans now new over after into says said".split())
+           "these those our your their his her they we you kenya kenyan kenyans now new over after into says said "
+           "all six five four three two one first last days day week weeks case cases marked without more less "
+           "every each today year years month people government county".split())   # words any story on the topic shares
 
 
 def keywords(post: dict, n: int = 6) -> list[str]:
@@ -168,7 +170,8 @@ def send_to_bot(token: str, chat: str, video: Path, caption: str) -> str:
 def tell_autopilot(token: str, post: dict, file_id: str) -> None:
     clip = post["tv_clip"]
     body = json.dumps({"event_type": "tvclip", "client_payload": {
-        "post": post["id"], "file_id": file_id, "channel": clip.get("channel", "TV"), "url": clip["url"]}}).encode()
+        "post": post["id"], "file_id": file_id, "channel": clip.get("channel", "TV"), "url": clip["url"],
+        "title": clip.get("title", "")}}).encode()
     _get(f"https://api.github.com/repos/{REPO}/dispatches", data=body, method="POST", headers={
         "Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "Content-Type": "application/json"})
 
@@ -197,7 +200,8 @@ def sample(keys: dict, labels: list[str]) -> int:
             fid = send_to_bot(keys["KOR_TELEGRAM_BOT_TOKEN"], keys["KOR_TELEGRAM_CHAT_ID"], small,
                               f"📺 TV clip for a sample of {p['id']} (from your computer)")
         body = json.dumps({"event_type": "tvclip", "client_payload": {
-            "post": p["id"], "file_id": fid, "channel": clip["channel"], "url": clip["url"], "sample": True}}).encode()
+            "post": p["id"], "file_id": fid, "channel": clip["channel"], "url": clip["url"], "title": clip["title"],
+            "sample": True}}).encode()
         _get(f"https://api.github.com/repos/{REPO}/dispatches", data=body, method="POST", headers={
             "Authorization": f"Bearer {keys['KOR_GITHUB_TOKEN']}", "Accept": "application/vnd.github+json",
             "Content-Type": "application/json"})

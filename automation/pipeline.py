@@ -764,6 +764,28 @@ def cut_footage(ff: str, src: Path, a: float, b: float, out: Path) -> bool:
     return r.returncode == 0 and out.exists() and out.stat().st_size > 10_000
 
 
+SAME_EVENT_RULES = """You check whether a TV news clip shows the SAME EVENT as a social media post, so its footage can play
+behind the post's lines. Same event means the same happening: the same announcement, ruling, incident or figure,
+not just the same topic. "Kenya confirms first Ebola case, patient dies" is NOT the same event as "Kenya marks 18
+days without a new Ebola case": same topic, different and opposite news. When unsure, say false.
+Return ONLY JSON: {"same": true or false, "why": "one short sentence"}"""
+
+
+def same_event(post: dict, title: str) -> tuple[bool, str]:
+    """The writer reads the TV headline next to the post. (False, reason) on any doubt or error: a wrong clip is worse
+    than none."""
+    import draft as drafter
+    if not title.strip():
+        return False, "no TV headline to compare"
+    body = json.dumps({"tv_headline": title, "post": {k: post.get(k) for k in ("message", "beats", "caption", "when")
+                                                         if post.get(k)}}, ensure_ascii=False)
+    try:
+        got = drafter.extract_json(drafter.call_claude(SAME_EVENT_RULES, body, max_tokens=200))
+    except Exception as e:
+        return False, f"check failed: {str(e)[:100]}"
+    return got.get("same") is True, str(got.get("why") or "")[:160]
+
+
 def tvclip_work(payload: dict) -> str:
     """A TV clip your computer fetched for a news post (tvclip_local.py): it was sent to the bot, this takes it by
     its Telegram file id and makes the post's Reel again in the house design: the real news photo on the first line,
@@ -786,6 +808,9 @@ def tvclip_work(payload: dict) -> str:
         return f"{pid}: not in this or last week"
     if not post.get("beats") or (not sample and post["status"] not in {"rendered", "awaiting", "approved"}):
         return f"{pid}: {post['status']}, left as it is"
+    same, why = same_event(post, str(payload.get("title") or ""))
+    if not same:   # the photo Reel stays: footage of another event under our lines would be a false picture
+        return f"{pid}: {channel}'s clip is not the same event, not used ({why})"
     label = data["collection"]
     out_dir = SAMPLES if sample else EXPORTS / label
     if sample:

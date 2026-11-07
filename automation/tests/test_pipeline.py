@@ -477,9 +477,27 @@ class TvClipWorkTests(TempWeeks):
              mock.patch.object(video, "make_reels", lambda posts, out: made.append((dict(posts[0]), out))), \
              mock.patch.object(pl, "qa_sheets", lambda posts: None), \
              mock.patch.object(pl, "tg", lambda *a, **k: sent.append(a)), \
-             mock.patch.object(pl, "need", lambda *k: {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "1"}):
+             mock.patch.object(pl, "need", lambda *k: {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "1"}), \
+             mock.patch.object(pl, "same_event", lambda post, title: (title != "other", "")):
             note = pl.tvclip_work(payload)
         return note, made, sent
+
+    def test_footage_of_another_event_is_never_used(self):
+        self.week_with()
+        note, made, _ = self.run_work({"post": "p", "file_id": "F", "channel": "KTN", "title": "other"})
+        self.assertTrue(note.startswith("p: KTN's clip is not the same event"))
+        self.assertEqual(made, [])
+        self.assertNotIn("tv_clip_used", pl.load_week("2026-W41")["posts"][0])
+
+    def test_the_event_check_says_no_on_any_doubt(self):
+        import draft
+        with mock.patch.object(draft, "call_claude", lambda *a, **k: '{"same": true, "why": "both about the levy ruling"}'):
+            self.assertEqual(pl.same_event({"message": "m"}, "Court suspends housing levy"), (True, "both about the levy ruling"))
+        with mock.patch.object(draft, "call_claude", lambda *a, **k: '{"same": "maybe"}'):
+            self.assertFalse(pl.same_event({"message": "m"}, "t")[0])
+        with mock.patch.object(draft, "call_claude", side_effect=RuntimeError("down")):
+            self.assertFalse(pl.same_event({"message": "m"}, "t")[0])
+        self.assertFalse(pl.same_event({"message": "m"}, "")[0])
 
     def week_with(self):
         self.week([{"id": "p", "status": "approved", "publish_at": "2026-11-08T12:45:00+03:00", "template": "sauti",
