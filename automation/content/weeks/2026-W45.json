@@ -1707,7 +1707,19 @@
       ],
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "tg_msg": 867,
-      "decided_at": "2026-11-08T10:14:30.158273+03:00"
+      "decided_at": "2026-11-08T10:14:30.158273+03:00",
+      "broll_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/videos/2026-w45-hot-1108-r4-tv.mp4",
+      "broll_credit": "",
+      "broll_label": "Footage: KTN News Kenya",
+      "clip_credit": "Clip: KTN News Kenya, short excerpt for news reporting",
+      "tv_clip_used": {
+        "channel": "KTN News Kenya",
+        "url": "https://www.youtube.com/watch?v=lSdjgoDNpa0",
+        "window": [
+          5.12,
+          13.12
+        ]
+      }
     }
   ],
   "scripts": {
