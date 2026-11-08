@@ -521,6 +521,16 @@ def _used_pictures(p: dict) -> tuple[list[dict], int]:
     return items, sum(t not in by_title for t in titles)
 
 
+def rephoto_waiting() -> list[str]:
+    """Weeks with a post the photo audit re-photographed that still needs rendering."""
+    out = []
+    for f in sorted(WEEKS.glob("*.json"))[-2:]:
+        data = json.loads(f.read_text(encoding="utf-8"))
+        if any(p["status"] == "drafted" and p.get("rephoto_reason") for p in data["posts"]):
+            out.append(data["collection"])
+    return out
+
+
 def photo_audit(dry_run: bool = False) -> list[str]:
     """Posts not yet out whose pictures came from news sites, approved ones included, are checked once for the
     outlet's own graphics (picture.outlet_edit: labels, headlines, inset pictures, two photos joined). A post with
@@ -2399,7 +2409,7 @@ def qa_sheets(posts: list[dict]) -> None:
         if mp4.exists():
             try:
                 subprocess.run([video.ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(mp4), "-vf",
-                                "fps=2,scale=216:-2,tile=8x5", "-frames:v", "1", "-q:v", "4",
+                                "fps=2,scale=216:-2,tile=8x5", "-frames:v", "1", "-q:v", "4", "-strict", "unofficial",
                                 str(QA / f"{q['id']}.jpg")], check=True)
                 subprocess.run([video.ffmpeg_bin(), "-y", "-loglevel", "error", "-i", str(mp4), "-filter_complex",
                                 "showwavespic=s=1600x240:split_channels=0:colors=#C4111A", "-frames:v", "1",
@@ -2923,12 +2933,14 @@ def _main(argv: list[str] | None = None) -> int:
             except Exception as e:
                 log(f"photo archive skipped: {e}")
     if (a.command == "tick" and not a.dry_run) or a.command == "photoaudit":
-        try:   # an outlet's own graphic in a post not yet out is replaced (same words) and sent with the reason
-            for wk in photo_audit(dry_run=a.dry_run):
-                render_week(wk)
-                ask(wk)
+        try:   # an outlet's own graphic in a post not yet out: new photos, same words (rendered by 'photoaudit')
+            photo_audit(dry_run=a.dry_run)
         except Exception as e:
             log(f"photo audit skipped: {e}")
+    if a.command == "photoaudit" and not a.dry_run:   # the tick's follow-up step runs this with the browser installed
+        for wk in rephoto_waiting():
+            render_week(wk)
+            ask(wk)
     if a.command in {"tick", "photoaudit"} and not a.dry_run:
         try:
             auto_approve()

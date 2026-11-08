@@ -95,7 +95,7 @@ jobs:
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
       - name: Install
-        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'hot' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'this-week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'redo' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rehearse' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'samples' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'remake' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'renew' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rephoto' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'clips' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tracker' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'render' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'showcase' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tvclipwork' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'weeklywork'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'hot' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'this-week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'redo' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rehearse' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'samples' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'remake' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'renew' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rephoto' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'clips' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tracker' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'render' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'showcase' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tvclipwork' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'weeklywork' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'photoaudit'
         run: |
           pip install -r automation/requirements.txt yt-dlp
           python -m playwright install --with-deps chromium
@@ -103,7 +103,7 @@ jobs:
           if [ "${{ steps.cmd.outputs.c }}" = "clips" ] || [ "${{ steps.cmd.outputs.c }}" = "tvclipwork" ]; then pip install faster-whisper; fi   # captions from the clip's audio
 
       - name: Install (light)
-        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'hot' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'this-week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'redo' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'samples' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'remake' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'renew' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rephoto' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'clips' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tracker' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'render' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'showcase' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tvclipwork' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'weeklywork' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'hot' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'this-week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'redo' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'samples' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'remake' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'renew' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rephoto' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'clips' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tracker' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'render' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'showcase' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tvclipwork' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'weeklywork' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'photoaudit' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip'
         run: pip install -r automation/requirements.txt
 
       - name: Tests
@@ -217,6 +217,18 @@ jobs:
           sudo apt-get install -y ffmpeg || true
           set -o pipefail
           python pipeline.py redo 2>&1 | tee -a run.log
+
+      - name: New photos for posts that used a news site's own graphic
+        if: steps.cmd.outputs.c == 'tick'
+        run: |
+          cd automation
+          # only when this tick's photo audit re-photographed a post: render it and send its card with the reason
+          python -c "import json,glob,sys; sys.exit(0 if any(p['status']=='drafted' and p.get('rephoto_reason') for f in glob.glob('content/weeks/*.json') for p in json.load(open(f))['posts']) else 1)" \
+            || { echo "no new photos to render"; exit 0; }
+          python -m playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg || true
+          set -o pipefail
+          python pipeline.py photoaudit 2>&1 | tee -a run.log
 
       - name: Photos you sent (swap a post's picture)
         if: steps.cmd.outputs.c == 'tick'

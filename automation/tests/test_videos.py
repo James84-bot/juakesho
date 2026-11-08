@@ -259,3 +259,26 @@ class Broll(unittest.TestCase):
     def test_no_footage_on_an_allegation(self):
         self.assertFalse(videos.broll_wanted({"beats": ["a"], "photo_query": "hospital ward", "message": "Doctor charged with fraud."}))
         self.assertTrue(videos.broll_wanted({"beats": ["a"], "photo_query": "hospital ward", "message": "Six patients recovered."}))
+
+
+class FramesChecked(unittest.TestCase):
+    """Footage is used only when every sampled moment was actually looked at: a frame ffmpeg could not write
+    (the runner's ffmpeg refused JPEG grabs of limited-range video on 8 Nov) fails the check instead of passing it."""
+
+    def test_a_moment_that_could_not_be_grabbed_fails(self):
+        with mock.patch.object(videos.subprocess, "run", lambda *a, **k: None), \
+                mock.patch.object(videos, "_ffmpeg", lambda: "ffmpeg"):
+            self.assertFalse(videos.frames_ok(Path("clip.mp4")))
+
+    def test_real_frames_are_checked_as_png(self):
+        import subprocess
+        with tempfile.TemporaryDirectory() as tmp:
+            clip = Path(tmp) / "c.mp4"
+            import video
+            ff = video.ffmpeg_bin()
+            subprocess.run([ff, "-y", "-loglevel", "error", "-f", "lavfi", "-i", "testsrc2=size=320x240:rate=10", "-t", "3",
+                            "-pix_fmt", "yuv420p", "-color_range", "tv", "-c:v", "libx264", str(clip)], check=True)
+            seen = []
+            with mock.patch.object(videos.photos, "faces_ok", lambda data, share=None: seen.append(data[:8]) or True):
+                self.assertTrue(videos.frames_ok(clip, times=(0.5, 1.5)))
+            self.assertEqual(seen, [b"\x89PNG\r\n\x1a\n"] * 2)

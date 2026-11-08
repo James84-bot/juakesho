@@ -327,10 +327,12 @@ def cut(src: Path, out: Path) -> bool:
 def frames_ok(clip: Path, max_share: float | None = None, times: tuple = (0.5, CLIP_S / 2, CLIP_S - 1)) -> bool:
     """No stranger's face filling the frame at the sampled moments. max_share=0.03: no visible face at all."""
     for t in times:
-        with tempfile.NamedTemporaryFile(suffix=".jpg") as f:
+        # PNG: a JPEG grab of limited-range video failed on the runner's ffmpeg ("Non full-range YUV is non-standard",
+        # 8 Nov) and wrote nothing, which let footage through unchecked. A moment that can't be grabbed fails the check.
+        with tempfile.NamedTemporaryFile(suffix=".png") as f:
             subprocess.run([_ffmpeg(), "-y", "-loglevel", "error", "-ss", str(t), "-i", str(clip), "-frames:v", "1", f.name])
             data = Path(f.name).read_bytes() if Path(f.name).exists() else b""
-            if data and not photos.faces_ok(data, max_share):
+            if not data or not photos.faces_ok(data, max_share):
                 return False
     return True
 

@@ -288,7 +288,7 @@ def make(post: dict, info: dict, src: Path, segments: list[dict], out_dir: Path)
         tmp = Path(tmp)
         still = tmp / "still.jpg"   # the clip's own frame behind the hook and verdict beats
         subprocess.run([ff, "-y", "-loglevel", "error", "-ss", str(round((a + b) / 2, 2)), "-i", str(src),
-                        "-frames:v", "1", "-q:v", "2", str(still)], check=True)
+                        "-frames:v", "1", "-q:v", "2", "-strict", "unofficial", str(still)], check=True)
         base = {**post, "photo_file": str(still)}
         video.beats_segment(env, base, post["hook"], "Watch This", tmp / "a.mp4", ff, tail=0.3)
         with sync_playwright() as p:
@@ -303,7 +303,7 @@ def make(post: dict, info: dict, src: Path, segments: list[dict], out_dir: Path)
                         "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-maxrate", "8M", "-bufsize", "16M",
                         "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(target)], check=True)
         subprocess.run([ff, "-y", "-loglevel", "error", "-ss", "1.0", "-i", str(tmp / "a.mp4"), "-frames:v", "1",
-                        "-q:v", "2", str(out_dir / f"{post['id']}-cover.jpg")], check=True)
+                        "-q:v", "2", "-strict", "unofficial", str(out_dir / f"{post['id']}-cover.jpg")], check=True)
     return target
 
 

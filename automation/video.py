@@ -300,7 +300,8 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
             cover = min(frames - 1, int(mtaa.still_time(post) * FPS))
         if footage:   # the finished picture at that moment, footage included
             subprocess.run([ff, "-y", "-loglevel", "error", "-ss", f"{cover / FPS:.2f}", "-i", str(target_mp4),
-                            "-frames:v", "1", "-q:v", "3", str(out_dir / f"{post['id']}-cover.jpg")], check=True)
+                            "-frames:v", "1", "-q:v", "3", "-strict", "unofficial",   # limited-range video (8 Nov)
+                            str(out_dir / f"{post['id']}-cover.jpg")], check=True)
         else:
             Image.open(tmp / f"f{cover:04d}.jpg").convert("RGB").save(out_dir / f"{post['id']}-cover.jpg", quality=90)
     return target_mp4
