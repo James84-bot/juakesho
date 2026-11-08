@@ -981,7 +981,7 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
         try:
             return _look_gemini(body, GEMINI_SEE_STRONG if strong else GEMINI_CRITIC)
         except RuntimeError as e:
-            errors.append(str(e)[:120])
+            errors.append(str(e)[:400])
     if os.environ.get("ANTHROPIC_API_KEY", "").strip():
         body = {"model": model_id() if strong else CRITIC_MODEL, "max_tokens": 400, "temperature": 0,
                 "messages": [{"role": "user", "content": [
@@ -990,7 +990,7 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
         try:
             return _look_anthropic(body)
         except RuntimeError as e:
-            errors.append(str(e)[:120])
+            errors.append(str(e)[:400])
     raise RuntimeError("no model could look at the picture: " + ("; ".join(errors) or "no key set"))
 
 
@@ -1002,7 +1002,7 @@ def _look_gemini(body: dict, model: str) -> str:
                                  headers={"x-goog-api-key": key, "Content-Type": "application/json"})
     for attempt in range(2):
         try:
-            with urllib.request.urlopen(req, timeout=90) as r:
+            with urllib.request.urlopen(req, timeout=180) as r:
                 data = json.loads(r.read())
             SPEND["calls"] += 1
             cand = (data.get("candidates") or [{}])[0]
@@ -1011,7 +1011,7 @@ def _look_gemini(body: dict, model: str) -> str:
                 raise RuntimeError(f"Gemini gave no text: {cand.get('finishReason') or 'empty reply'}")
             return text
         except urllib.error.HTTPError as e:
-            detail = e.read().decode(errors="replace")[:200]
+            detail = e.read().decode(errors="replace")[:400]
             if e.code in (429, 500, 502, 503, 504) and attempt == 0:
                 time.sleep(float(e.headers.get("retry-after") or 0) or 20)
                 continue
@@ -1033,7 +1033,7 @@ def _look_anthropic(body: dict) -> str:
     req = urllib.request.Request(API_URL, data=json.dumps(body).encode(), method="POST", headers=headers)
     for attempt in range(2):
         try:
-            with urllib.request.urlopen(req, timeout=90) as r:
+            with urllib.request.urlopen(req, timeout=180) as r:
                 data = json.loads(r.read())
             use = data.get("usage") or {}
             pin, pout = next((v for k, v in PRICES.items() if k in body["model"]), max(PRICES.values()))
@@ -1041,7 +1041,7 @@ def _look_anthropic(body: dict) -> str:
             SPEND["calls"] += 1
             return "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
         except urllib.error.HTTPError as e:
-            detail = e.read().decode(errors="replace")[:200]
+            detail = e.read().decode(errors="replace")[:400]
             if e.code in (429, 500, 502, 503, 504, 529) and attempt == 0:
                 time.sleep(float(e.headers.get("retry-after") or 0) or 15)
                 continue

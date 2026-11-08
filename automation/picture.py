@@ -120,7 +120,7 @@ def outlet_edit(data: bytes) -> str | None:
             if second.get("edited") is not True:
                 got = second
     except Exception as e:   # no key, quota, or an unreadable reply
-        print(f"    edit check skipped: {str(e)[:120]}")
+        print(f"    edit check skipped: {str(e)[:600]}")
         return None
     edited = got.get("edited") is True
     what = str(got.get("what") or "an edited graphic")[:80] if edited else ""

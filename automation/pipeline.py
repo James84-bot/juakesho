@@ -2778,7 +2778,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2973,6 +2973,30 @@ def _main(argv: list[str] | None = None) -> int:
         process_clips(dry_run=a.dry_run)
     if a.command == "swapwork" and not a.dry_run:
         swapwork()
+    if a.command == "seecheck":   # each model the photo check can use, asked about one plain test picture
+        import draft as drafter
+        import io as _io
+        from PIL import Image
+        buf = _io.BytesIO()
+        Image.new("RGB", (64, 64), (40, 120, 60)).save(buf, "JPEG")
+        question = 'Return ONLY JSON: {"colour": "the main colour of this picture"}'
+        ok = 0
+        for name, env, strong in (("Gemini cheap", {"ANTHROPIC_API_KEY": ""}, False), ("Gemini strong", {"ANTHROPIC_API_KEY": ""}, True),
+                                  ("Claude cheap", {"GEMINI_API_KEY": ""}, False), ("Claude strong", {"GEMINI_API_KEY": ""}, True)):
+            saved = {k: os.environ.get(k) for k in env}
+            os.environ.update(env)
+            try:
+                log(f"seecheck {name}: {drafter.look_at(buf.getvalue(), question, strong=strong).strip()[:80]}")
+                ok += 1
+            except Exception as e:
+                log(f"seecheck {name}: FAILED {str(e)[:500]}")
+            finally:
+                for k, v in saved.items():
+                    if v is None:
+                        os.environ.pop(k, None)
+                    else:
+                        os.environ[k] = v
+        return 0 if ok else 1
     if a.command == "aicheck":   # one tiny call to the writer: which provider answers, and does it work
         import draft as drafter
         try:
