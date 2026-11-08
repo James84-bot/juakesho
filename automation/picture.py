@@ -75,13 +75,16 @@ def soft(data: bytes) -> bool:
 
 
 EDIT_ASK = """You check pictures for a news page that only uses real, unedited photographs. Look at this image.
-edited = true when a publisher or designer has added anything to the photograph or combined pictures: words,
-headlines, labels, category tags or captions laid over the image; a logo or watermark; a circle or box with another
-picture inside; two or more photos joined into one; a coloured band, border or frame; icons, arrows or emoji; or the
-image is an illustration, chart, map or computer render rather than a photograph.
-Text that is physically part of the scene does NOT count: signs, banners, posters, name plates on a table, screens or
-projections in the room, printed clothing, documents someone holds.
-Return ONLY JSON: {"edited": true or false, "what": "what was added, in under 12 words"}"""
+edited = true when a publisher or designer has added anything ON TOP of the photograph or combined pictures: words,
+headlines, labels, category tags (NEWS, HEALTH) or captions laid over the image; a corner logo or watermark; a circle
+or box with another picture inside; two or more photos joined side by side or stacked; a coloured band, border or
+frame; icons, arrows or emoji; or the image is an illustration, chart, map or computer render.
+Text that is physically in the scene does NOT count, however big or bright: signs, stage backdrops and banners
+behind speakers, posters, name plates on a table, screens or projections in the room, printed clothing, packaging,
+documents someone holds. Scene text sits on a surface: it follows the perspective and light of the room and people
+or objects can stand in front of it. Added text is flat on top of everything, usually in a clean font or a box.
+First write what text or graphics you see and what each one sits on, then decide.
+Return ONLY JSON: {"seen": "under 30 words", "edited": true or false, "what": "what was added, under 12 words"}"""
 CHECKS_KEEP = 400   # verdicts kept (the newest), enough for a week of photos from every outlet
 
 
@@ -95,7 +98,8 @@ def outlet_edit(data: bytes) -> str:
     answer is '' and the reason is logged: a missing check never costs a post its photo."""
     import hashlib
     import json
-    key = hashlib.sha1(data).hexdigest()
+    # the question is part of the key: when it changes, every picture is judged again under the new wording
+    key = hashlib.sha1(data).hexdigest()[:24] + ":" + hashlib.sha1(EDIT_ASK.encode()).hexdigest()[:8]
     path = _checks_file()
     try:
         seen = json.loads(path.read_text(encoding="utf-8"))
@@ -111,6 +115,7 @@ def outlet_edit(data: bytes) -> str:
         return ""
     edited = got.get("edited") is True
     what = str(got.get("what") or "an edited graphic")[:80] if edited else ""
+    print(f"    edit check: {'edited' if edited else 'photo'} ({str(got.get('seen') or '')[:140]})")
     seen[key] = {"edited": edited, "what": what}
     try:
         path.parent.mkdir(parents=True, exist_ok=True)

@@ -53,8 +53,9 @@ class OutletEdit(unittest.TestCase):
         self.assertFalse(self.checks.exists())   # tried again next time
 
     def test_the_ask_keeps_text_that_is_part_of_the_scene(self):
-        for words in ("name plates", "signs", "screens", "another\npicture inside", "logo", "headlines"):
-            self.assertIn(words, picture.EDIT_ASK)
+        ask = " ".join(picture.EDIT_ASK.split())
+        for words in ("name plates", "signs", "screens", "another picture inside", "logo", "headlines", "stage backdrops"):
+            self.assertIn(words, ask)
 
 
 class PhotoOfSkipsGraphics(unittest.TestCase):
