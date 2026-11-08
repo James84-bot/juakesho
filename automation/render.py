@@ -29,10 +29,11 @@ from markupsafe import Markup, escape
 import brandkit as bk
 
 HERE = Path(__file__).resolve().parent
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
 ROOT = HERE.parent
 FONTS = (ROOT / "assets" / "fonts").as_uri()
-LOGO = ROOT / "assets" / "logo"
-OUT = ROOT / "exports"
+LOGO = ROOT / "assets" / "logo" if brands.MAIN else brands.HOME / "logo"
+OUT = brands.EXPORTS
 
 SIZES = {
     "post": (1080, 1350),       # Instagram / Facebook / LinkedIn portrait

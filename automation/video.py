@@ -30,6 +30,7 @@ import render
 import sound
 
 HERE = Path(__file__).resolve().parent
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
 ROOT = HERE.parent
 FPS = 30
 CRF = 17   # x264 quality: 17 keeps text edges and photo detail clean through Instagram's own re-encode
@@ -305,7 +306,7 @@ def sting(ff: str, work: Path) -> Path | None:
     if not svg.exists():
         return None
     try:
-        brand = json.loads((HERE / "brand.json").read_text(encoding="utf-8"))
+        brand = brands.brand()
         work.mkdir(parents=True, exist_ok=True)
         page = work / "sting.html"
         import brandkit

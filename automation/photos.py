@@ -32,6 +32,7 @@ import zlib
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
 NOTES: list[str] = []   # what each search found and why photos were passed over (saved to state/photos.log)
 
 
@@ -50,8 +51,8 @@ def news_photos_ok() -> bool:
         return False
 
 
-PERMISSIONS = HERE / "content" / "permissions.json"
-APPROVED = HERE / "content" / "approved"
+PERMISSIONS = brands.CONTENT / "permissions.json"
+APPROVED = brands.CONTENT / "approved"
 
 
 def _grant_problem(g: dict) -> str | None:
@@ -117,7 +118,7 @@ def approved_photo(post: dict) -> tuple[bytes, dict] | None:
 def _note(msg: str) -> None:
     print(msg)
     NOTES.append(msg.strip())
-OWN = HERE / "content" / "photos"
+OWN = brands.CONTENT / "photos"
 API = "https://api.pexels.com/v1/search"
 COMMONS = "https://commons.wikimedia.org/w/api.php"
 OPENVERSE = "https://api.openverse.org/v1/images/"
@@ -670,7 +671,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
         return None
 
 
-PEOPLE = HERE / "content" / "people"
+PEOPLE = brands.CONTENT / "people"
 
 
 def person(post: dict, out_dir: Path) -> dict | None:
@@ -721,8 +722,8 @@ def attach(posts: list[dict], out_dir: Path) -> None:
         # only real renders (under exports/) write the log; tests and scratch renders keep it clean
         if HERE.parent / "exports" in Path(out_dir).resolve().parents:
             try:
-                (HERE / "state").mkdir(exist_ok=True)
-                (HERE / "state" / "photos.log").write_text("\n".join(NOTES[-400:]) + "\n", encoding="utf-8")
+                brands.STATE.mkdir(parents=True, exist_ok=True)
+                (brands.STATE / "photos.log").write_text("\n".join(NOTES[-400:]) + "\n", encoding="utf-8")
             except OSError:
                 pass
 

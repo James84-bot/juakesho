@@ -22,8 +22,9 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-FEEDS = HERE / "content" / "video_feeds.json"
-OUT = HERE / "state" / "radar.json"
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
+FEEDS = brands.shared("content/video_feeds.json")
+OUT = brands.STATE / "radar.json"
 TRENDS24 = "https://trends24.in/kenya/"
 UA = "Mozilla/5.0 (JuaKesho trend radar; https://github.com/James84-bot/juakesho)"
 SEARCH = re.compile(r"(?:twitter|x)\.com/search")

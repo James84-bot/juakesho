@@ -18,7 +18,8 @@ import re
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-STATE = HERE / "state"
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
+STATE = brands.STATE
 COMMON = {"kenya", "kenyan", "kenyans", "nairobi", "president", "government", "county", "national", "news", "live",
           "today", "breaking", "update", "video", "watch", "full", "says", "said", "after", "over", "with", "from",
           "this", "that", "what", "when", "will", "into", "about", "their", "they", "citizen", "ntv", "ktn", "the",

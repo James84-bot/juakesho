@@ -18,8 +18,9 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-FEEDS = HERE / "content" / "news_feeds.json"
-OUT = HERE / "state" / "news.json"
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
+FEEDS = brands.CONTENT / "news_feeds.json"
+OUT = brands.STATE / "news.json"
 MAX_AGE = dt.timedelta(days=4)
 SERIES_TOPICS = {"prices", "factcheck", "scams"}   # feeds read only for material.py
 

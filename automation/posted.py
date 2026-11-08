@@ -26,7 +26,8 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-FEEDS = HERE / "content" / "photo_feeds.json"
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
+FEEDS = brands.shared("content/photo_feeds.json")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 MIN_WIDTH = 640   # news sites publish lead photos at 700-840px; the design shows small ones as a sharp band
 DAYS_BEFORE, DAYS_AFTER = 4, 1
@@ -128,7 +129,7 @@ def parse_feed(xml: bytes, name: str, official: bool = False) -> list[dict]:
     return out
 
 
-ARCHIVE = HERE / "state" / "feed_photos.json"
+ARCHIVE = brands.STATE / "feed_photos.json"
 KEEP = dt.timedelta(days=6)
 
 

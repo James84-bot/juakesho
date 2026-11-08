@@ -25,8 +25,9 @@ import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
 ROOT = HERE.parent
-STATE_FILE = HERE / "state" / "clips.json"
+STATE_FILE = brands.STATE / "clips.json"
 MAX_SECONDS = {"quote": 8.0, "permission": 40.0, "own": 40.0, "owner": 40.0}
 TG_MAX_BYTES = 20 * 1024 * 1024        # Telegram bots can download files up to 20 MB
 BOX_TOP, BOX_MAX_H, MARGIN = 430, 1000, 48

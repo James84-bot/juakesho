@@ -15,7 +15,8 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
-BRAND = json.loads((ROOT / "brand.json").read_text(encoding="utf-8"))
+import brands  # noqa: E402
+BRAND = brands.brand() or json.loads((ROOT / "brand.json").read_text(encoding="utf-8"))
 C = {k: v["hex"] for k, v in BRAND["colors"].items()}
 ON = {k: v["text"] for k, v in BRAND["colors"].items()}
 ACCENTS = BRAND["accents"]

@@ -24,7 +24,8 @@ from pathlib import Path
 import guard
 
 HERE = Path(__file__).resolve().parent
-OUT = HERE / "state" / "trends.json"
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
+OUT = brands.STATE / "trends.json"
 FEED = "https://trends.google.com/trending/rss?geo={geo}"
 
 # Never ride these: tragedy, crime, betting, gossip. (Divisive/tribal politics is civic: called out, with care.)

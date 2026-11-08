@@ -78,6 +78,9 @@ jobs:
           if [ "${{ github.event_name }}" = "repository_dispatch" ]; then echo "c=tvclipwork" >> "$GITHUB_OUTPUT"; exit 0; fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             if ! printf '%s' "$COMMAND_IN" | grep -Eq '^[A-Za-z0-9 ._:=-]{1,80}$'; then echo "Rejected command"; exit 1; fi
+            # "fulltimekenya: samples" runs one command for one brand (automation/brands.py); no prefix = Kenya on Record
+            if printf '%s' "$COMMAND_IN" | grep -Eq '^[a-z0-9]+: '; then
+              echo "brand=${COMMAND_IN%%:*}" >> "$GITHUB_OUTPUT"; COMMAND_IN="${COMMAND_IN#*: }"; fi
             echo "c=$COMMAND_IN" >> "$GITHUB_OUTPUT";
             echo "base=$(printf '%s' "$COMMAND_IN" | awk '{print $1}')" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "0 14 * * 0" ]; then echo "c=week" >> "$GITHUB_OUTPUT";
@@ -132,14 +135,33 @@ jobs:
 
       - name: Run ${{ steps.cmd.outputs.c }}
         if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse'
+        env:
+          BRAND_SECRETS: ${{ toJSON(secrets) }}   # each brand's own keys (KEY__SLUG) and META_PAGES; read by brands.py only
+          BRAND_IN: ${{ steps.cmd.outputs.brand }}
+          C: ${{ steps.cmd.outputs.c }}
+          BASE: ${{ steps.cmd.outputs.base || steps.cmd.outputs.c }}
         run: |
           cd automation
           set -o pipefail
-          if [ "${{ steps.cmd.outputs.c }}" = "this-week" ]; then
-            python pipeline.py week --week "$(python -c 'import pipeline; print(pipeline.current_week_label(ahead=0))')" 2>&1 | tee run.log
-          else
-            python pipeline.py ${{ steps.cmd.outputs.c }} 2>&1 | tee run.log
-          fi
+          run() {   # one command for one brand (KOR_BRAND empty = Kenya on Record)
+            if [ "$C" = "this-week" ]; then
+              python pipeline.py week --week "$(python -c 'import pipeline; print(pipeline.current_week_label(ahead=0))')"
+            else
+              python pipeline.py $C
+            fi
+          }
+          if [ -n "$BRAND_IN" ]; then KOR_BRAND="$BRAND_IN" run 2>&1 | tee run.log; exit $?; fi
+          main=0
+          run 2>&1 | tee run.log || main=$?   # (bash -e: a failure must not skip the other brands)
+          # the scheduled work of every other enabled brand, after Kenya on Record; one brand failing never stops another
+          case "$BASE" in tick|hot|week|this-week)
+            for b in $(python -c 'import brands; print(" ".join(brands.enabled()[1:]))'); do
+              echo "::group::$b: $C"
+              KOR_BRAND="$b" run 2>&1 | tee -a run.log || echo "::warning title=$b::$C failed (see the log)"
+              echo "::endgroup::"
+            done;;
+          esac
+          exit $main
 
       - name: Clips you sent (Tazama Hii Reels)
         if: steps.cmd.outputs.c == 'tick'
@@ -190,7 +212,7 @@ jobs:
           git config user.name "jua-kesho-bot"
           git config user.email "bot@users.noreply.github.com"
           # Add each path only if it exists: one missing pathspec makes git add save nothing at all
-          for p in automation/content/weeks automation/content/music automation/state exports; do [ -e "$p" ] && git add -A -- "$p"; done
+          for p in automation/content/weeks automation/content/music automation/state automation/brands exports; do [ -e "$p" ] && git add -A -- "$p"; done
           # (MP4s and images are committed so GitHub Pages can serve them to Instagram)
           git diff --cached --quiet && exit 0
           git commit -m "autopilot: ${{ steps.cmd.outputs.c }} $(date -u +%FT%TZ)"

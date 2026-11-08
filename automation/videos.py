@@ -31,10 +31,11 @@ from pathlib import Path
 import photos
 
 HERE = Path(__file__).resolve().parent
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
 COMMONS = photos.COMMONS
 PEXELS = "https://api.pexels.com/videos/search"
 PIXABAY = "https://pixabay.com/api/videos/"
-PIXABAY_CACHE = HERE / "state" / "pixabay_cache.json"
+PIXABAY_CACHE = brands.STATE / "pixabay_cache.json"
 DAY = 86400
 CLIP_S = 20            # longer than any beat Reel; the composer loops a shorter clip
 MAX_BYTES = 150_000_000

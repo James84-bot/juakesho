@@ -26,6 +26,7 @@ import material
 import news
 
 HERE = Path(__file__).resolve().parent
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
 API_URL = "https://api.anthropic.com/v1/messages"
 DEFAULT_MODEL = "claude-sonnet-5"   # override with JUA_MODEL; see platform.claude.com/docs/en/models/overview
 
@@ -536,7 +537,7 @@ def _field_spec(template: str) -> dict:
 
 def learnings_text() -> str:
     """Top and bottom performers from past weeks (written by `pipeline.py learn`)."""
-    f = HERE / "state" / "learnings.json"
+    f = brands.STATE / "learnings.json"
     if not f.exists():
         return ""
     data = json.loads(f.read_text(encoding="utf-8"))
@@ -1136,6 +1137,48 @@ CRITIC_RUBRIC = """You are the toughest editor at a Kenyan news desk whose reade
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
 {"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n, "fair": n, "impact": n,
              "note": "the single most important fix, in one sentence"}]}"""
+
+
+# ---------------------------------------------------------------------------
+# The brand this run writes for (brands.py). Kenya on Record keeps every rule above. Another brand brings its own
+# identity, voice and scope (writer.md in its folder) on top of the shared craft rules, its own news briefs
+# (brand.json "hot_briefs") and a note for the editor (brand.json "critic_note").
+# ---------------------------------------------------------------------------
+GENERIC_SECTIONS = ("CLEAN, NOT CHILDISH", "FACTS", "WHAT TRENDS", "SAY WHAT IT IS", "ATTRACT", "URGENT, NOT PARAGRAPHS",
+                    "REELS ARE SCRIPTS", "SOUND HUMAN")
+HEADING = re.compile(r"^[A-Z][A-Z0-9 ,'&/+-]{3,}(?=$|[ :(])")
+KOR_BRAND_RULES = BRAND_RULES
+
+
+def rules_section(text: str, name: str) -> str:
+    """One section of the rules: its heading line and everything up to the next heading."""
+    lines, out = text.splitlines(), []
+    for line in lines:
+        if out and HEADING.match(line):
+            break
+        if out or line.startswith(name):
+            out.append(line)
+    return "\n".join(out).strip()
+
+
+def apply_brand() -> None:
+    global BRAND_RULES, HOT_BRIEFS, REWRITE_RULES, CRITIC_RUBRIC
+    if brands.MAIN:
+        return
+    b = brands.brand()
+    own = brands.HOME / "writer.md"
+    if own.exists():
+        BRAND_RULES = (own.read_text(encoding="utf-8").strip() + "\n\n"
+                       + "\n\n".join(x for x in (rules_section(KOR_BRAND_RULES, n) for n in GENERIC_SECTIONS) if x))
+    HOT_BRIEFS = {**HOT_BRIEFS, **(b.get("hot_briefs") or {})}
+    name = str(b.get("name") or "").upper()
+    if name:
+        REWRITE_RULES = REWRITE_RULES.replace("KENYA ON\nRECORD", name)
+    if b.get("critic_note"):
+        CRITIC_RUBRIC = CRITIC_RUBRIC.replace("Be strict:", str(b["critic_note"]).strip() + "\nBe strict:", 1)
+
+
+apply_brand()
 
 
 def _demand_context() -> str:

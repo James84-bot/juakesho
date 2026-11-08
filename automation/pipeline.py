@@ -44,12 +44,13 @@ import uuid
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
 ROOT = HERE.parent
-WEEKS = HERE / "content" / "weeks"
-STATE = HERE / "state"
-EXPORTS = ROOT / "exports"
+WEEKS = brands.CONTENT / "weeks"
+STATE = brands.STATE
+EXPORTS = brands.EXPORTS
 EAT = dt.timezone(dt.timedelta(hours=3))
-BRAND = json.loads((HERE / "brand.json").read_text(encoding="utf-8"))
+BRAND = brands.brand()
 MAX_PUBLISH_ATTEMPTS = 3
 EXPIRE_AFTER = dt.timedelta(hours=4)  # a card nobody tapped this long after its slot is dropped: no tap = no post
 LATE_LIMIT = dt.timedelta(hours=36)  # a post this late is marked "missed", never dumped out as a backlog
@@ -173,7 +174,7 @@ def record_evidence(members: list[dict]) -> None:
 
 def _anniversaries(posts: list[dict], year: int, wk: int) -> None:
     """Hatutasahau: in the week of an anniversary, the nearest Mon-Fri single post becomes a remembrance post."""
-    path = HERE / "content" / "remember.json"
+    path = brands.CONTENT / "remember.json"
     if not path.exists():
         return
     for item in json.loads(path.read_text(encoding="utf-8"))["dates"]:
@@ -204,6 +205,9 @@ EDITIONS = {"morning": {"time": (9, 45), "suffix": "m", "beat": "life"},
             "midday": {"time": (12, 45), "suffix": "", "beat": "life"},
             "afternoon": {"time": (15, 30), "suffix": "a", "beat": "sport"},   # Kenyan and world sport
             "evening": {"time": (19, 30), "suffix": "e", "beat": "politics"}}   # three in four are not politics
+if BRAND.get("editions"):   # another brand's own news slots (brands.py); an edition it doesn't list is skipped
+    EDITIONS = {k: {"time": tuple(v["time"]), "suffix": v.get("suffix", ""), "beat": v["beat"]}
+                for k, v in BRAND["editions"].items()}
 BREAKING_LEAD, BREAKING_MAX = dt.timedelta(minutes=20), 2
 QUIET_FROM = 21   # no news post is planned for 21:00 EAT or later (last week four went out between 22:30 and 01:16 and expired)
 
@@ -248,6 +252,8 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
     covered = [c for c in covered if c]
     extra: dict = {}
     if edition == "breaking":
+        if BRAND.get("breaking") is False:
+            return None
         import news
         if sum(1 for p in todays if p.get("breaking")) >= BREAKING_MAX:
             log("breaking: today's limit reached")
@@ -262,6 +268,9 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
                  "source_links": [{"outlet": x["outlet"], "title": x["title"], "link": x["link"],
                                    "published": x.get("published", "")[:10]} for x in story["items"][:4]]}
     else:
+        if edition not in EDITIONS:
+            log(f"hot: {BRAND.get('name')} has no {edition} edition")
+            return None
         hot_id = f"{label.lower()}-hot-{today:%m%d}{EDITIONS[edition]['suffix']}"
         if any(p["id"] == hot_id for p in data["posts"]):
             log(f"today's {edition} news post {hot_id} already exists")
@@ -295,7 +304,7 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
 
 def _calendar_posts(label: str) -> list[dict]:
     """The week's slots from calendar.json, planned (not yet drafted)."""
-    cal = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))
+    cal = json.loads((brands.HOME / "calendar.json").read_text(encoding="utf-8"))
     year, wk = int(label[:4]), int(label.split("W")[1])
     posts = []
     for slot in cal["slots"]:
@@ -431,7 +440,7 @@ def draft(label: str, mock: bool = False, horizon: dt.timedelta | None = DRAFT_A
     if not todo:
         log("nothing to draft")
         return data
-    lanes = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))["lanes"]
+    lanes = json.loads((brands.HOME / "calendar.json").read_text(encoding="utf-8"))["lanes"]
     drafter.TAKEN = [p for p in data["posts"] if p["status"] not in {"planned", "rejected", "missed"}]
     drafted, scripts = drafter.draft_week(label, todo, lanes, mock=mock)
     data_spend = round(drafter.SPEND["usd"], 4)
@@ -1019,7 +1028,7 @@ CLIP_TEMPLATES = {"sauti", "straight", "promise", "kumbuka", "scorecard", "money
 
 
 def is_reel(p: dict) -> bool:
-    cal = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))
+    cal = json.loads((brands.HOME / "calendar.json").read_text(encoding="utf-8"))
     # polls are 9:16 already: as a Reel they reach the feed, and comments (the votes) push them further
     return (p["template"] in set(cal.get("reel_templates", [])) and not p.get("group")
             and (p.get("size", "post") == "post" or p["template"] == "glasspoll"))
@@ -1198,7 +1207,7 @@ def _send_card(chat: str, label: str, p: dict, out_dir: Path) -> None:
 # ---------------------------------------------------------------------------
 # 5. Collect approvals
 # ---------------------------------------------------------------------------
-POLICY = HERE / "content" / "policy.json"
+POLICY = brands.CONTENT / "policy.json"
 AUTO_NEVER = {"promise", "scorecard"}   # a real person's record: a human decides
 AUTO_PHOTO_NEVER = {"file", "event"}              # a named person's portrait on a story
 
@@ -1462,7 +1471,7 @@ def graph(path: str, fields: dict) -> dict:
 
 def public_url(label: str, post_id: str, ext: str = "jpg") -> str:
     base = need("PUBLIC_BASE_URL")["PUBLIC_BASE_URL"].rstrip("/")
-    return f"{base}/exports/{label}/{post_id}.{ext}"
+    return f"{base}/{brands.URL_PATH}/{label}/{post_id}.{ext}"
 
 
 def graph_get(path: str, fields: dict) -> dict:
@@ -1585,7 +1594,7 @@ OLD_TAGS = ("#JuaKesho", "#KenyansAreAsking")   # drafts written before a rename
 
 def brand_tags(cap: str) -> str:
     tag = BRAND.get("hashtag", "")
-    for old in OLD_TAGS:
+    for old in OLD_TAGS + (() if brands.MAIN else ("#KenyaOnRecord",)):   # another brand never carries ours
         if tag and old != tag:
             cap = cap.replace(old, tag)
     return cap
@@ -1726,7 +1735,7 @@ def whatsapp_text(post: dict) -> str:
     return (body + (f"\n\nSource: {src}" if len(src) >= 8 else "") + "\n\nFollow Kenya on Record for more.").strip()
 
 
-SUBSCRIBE_LINE = "\n\nSubscribe to Kenya on Record for a sourced Kenyan fact every day."
+SUBSCRIBE_LINE = f"\n\nSubscribe to {BRAND.get('name', 'Kenya on Record')} for {BRAND.get('subscribe_for', 'a sourced Kenyan fact every day')}."
 
 
 def _youtube_short(label: str, post: dict) -> None:
@@ -2302,6 +2311,18 @@ def main(argv: list[str] | None = None) -> int:
 def _main(argv: list[str] | None = None) -> int:
     load_env()
     sys.path.insert(0, str(HERE))
+    if not brands.MAIN:   # another brand: its own accounts only, never Kenya on Record's (brands.py)
+        missing = brands.apply_env()
+        if os.environ.get("META_ACCESS_TOKEN") and not os.environ.get("META_IG_USER_ID"):
+            try:   # the Instagram account linked to the brand's Page
+                ig = (graph_get(os.environ["META_PAGE_ID"], {"fields": "instagram_business_account"})
+                      .get("instagram_business_account") or {}).get("id")
+                if ig:
+                    os.environ["META_IG_USER_ID"] = str(ig)
+                    missing = [k for k in missing if k != "META_IG_USER_ID"]
+            except Exception as e:
+                log(f"Instagram id for {brands.SLUG} not found: {str(e)[:150]}")
+        log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
                                         "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest"])
@@ -2317,6 +2338,9 @@ def _main(argv: list[str] | None = None) -> int:
     ap.add_argument("--post", help="rephoto: only this post id (also an approved one that has not gone out)")
     a = ap.parse_args(argv)
     label = a.week or current_week_label()
+    if a.command in {"week", "plan", "tracker", "renew"} and not (brands.HOME / "calendar.json").exists():
+        log(f"{BRAND.get('name')} has no weekly calendar: nothing to plan")   # a brand that only posts news
+        return 0
 
     if a.command == "learn":
         learn()

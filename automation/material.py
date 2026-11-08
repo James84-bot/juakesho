@@ -22,10 +22,11 @@ import re
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-BANK = HERE / "content" / "facts.json"
-PRICES = HERE / "content" / "prices.json"   # verified prices for Guess the Price, each valid for one review
-NEWS = HERE / "state" / "news.json"
-USED = HERE / "state" / "material_used.json"
+import brands  # noqa: E402  (which brand this run works for: its files and accounts)
+BANK = brands.CONTENT / "facts.json"
+PRICES = brands.CONTENT / "prices.json"   # verified prices for Guess the Price, each valid for one review
+NEWS = brands.STATE / "news.json"
+USED = brands.STATE / "material_used.json"
 BANK_REST = dt.timedelta(days=120)   # a showcase fact comes back at most three times a year
 
 PRICE = re.compile(r"\b(price|prices|priced|cost|costs|cheaper|costlier|unga|maize flour|fuel|petrol|diesel|"
