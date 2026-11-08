@@ -2347,13 +2347,15 @@ def _notify(text: str) -> None:
 # ---------------------------------------------------------------------------
 # Housekeeping: keep the public media folder small (GitHub Pages sites max out around 1 GB)
 # ---------------------------------------------------------------------------
-KEEP_WEEKS = 6
+KEEP_DAYS = 8   # GitHub Pages stops serving new files once the site passes 1 GB: on 8 Nov exports/ held 1.1 GB
+                # (six weeks of Reels and re-renders) and the day's Reel answered 404 to Instagram
 
 
-def prune(keep_weeks: int = KEEP_WEEKS) -> list[str]:
-    """Deletes exports for finished weeks older than `keep_weeks`. Platforms keep their own copies once posted."""
+def prune(keep_days: int = KEEP_DAYS) -> list[str]:
+    """Deletes exports for weeks whose last post is more than `keep_days` old. Platforms keep their own copies once
+    posted, and a post more than LATE_LIMIT late never goes out, so nothing older is ever fetched again."""
     removed = []
-    cutoff = now() - dt.timedelta(weeks=keep_weeks)
+    cutoff = now() - dt.timedelta(days=keep_days)
     for f in sorted(WEEKS.glob("*.json")):
         data = json.loads(f.read_text(encoding="utf-8"))
         times = [dt.datetime.fromisoformat(p["publish_at"]) for p in data["posts"]]
