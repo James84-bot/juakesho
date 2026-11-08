@@ -1032,6 +1032,10 @@ class QualitySystemTests(unittest.TestCase):
                               "impact": "A 2kg packet now costs Sh32 less on shelves."})
         self.assertEqual(cap.lower().count("what it means for you"), 1)
 
+    def test_impact_is_added_as_a_plain_sentence_never_a_label(self):
+        cap = pl.caption_for({"caption": "Sugar is Sh32 cheaper.\n\n#Sugar", "impact": "A 2kg packet now costs Sh32 less."})
+        self.assertEqual(cap, "Sugar is Sh32 cheaper.\n\nA 2kg packet now costs Sh32 less.\n\n#Sugar")
+
     def test_free_square_avoids_every_obstacle(self):
         import render
         rects = [[0, 0, 1080, 500], [0, 500, 600, 1350]]          # top band and left column taken

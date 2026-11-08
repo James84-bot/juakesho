@@ -93,9 +93,11 @@ def _checks_file():
     return brands.STATE / "photo_checks.json"
 
 
-def outlet_edit(data: bytes) -> str:
-    """What a publisher added to this picture ('' when it is a plain photograph). When no model can look, the
-    answer is '' and the reason is logged: a missing check never costs a post its photo."""
+def outlet_edit(data: bytes) -> str | None:
+    """What a publisher added to this picture: '' for a plain photograph, the addition when it is their graphic,
+    None when no model could look (logged; a missing check never costs a post its photo, and it is tried again
+    next time). A "yes" from the cheap model is only believed when the stronger model agrees: in testing on 14 of
+    our photos the cheap one alone took a monitor on a court wall and a plain skyline for added graphics."""
     import hashlib
     import json
     # the question is part of the key: when it changes, every picture is judged again under the new wording
@@ -107,12 +109,18 @@ def outlet_edit(data: bytes) -> str:
         seen = {}
     if key in seen:
         return seen[key].get("what", "") if seen[key].get("edited") else ""
+    import draft
     try:
-        import draft
         got = draft.extract_json(draft.look_at(data, EDIT_ASK))
+        if got.get("edited") is True:
+            second = draft.extract_json(draft.look_at(data, EDIT_ASK, strong=True))
+            print(f"    edit check, second look: {'edited' if second.get('edited') is True else 'photo'} "
+                  f"({str(second.get('seen') or '')[:140]})")
+            if second.get("edited") is not True:
+                got = second
     except Exception as e:   # no key, quota, or an unreadable reply
         print(f"    edit check skipped: {str(e)[:120]}")
-        return ""
+        return None
     edited = got.get("edited") is True
     what = str(got.get("what") or "an edited graphic")[:80] if edited else ""
     print(f"    edit check: {'edited' if edited else 'photo'} ({str(got.get('seen') or '')[:140]})")

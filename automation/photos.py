@@ -747,7 +747,8 @@ def _attach(posts: list[dict], out_dir: Path) -> None:
                 p["photo_file"], p["photo_credit"] = got["file"], got["credit"]
                 p["photo_kind"] = got.get("kind", "symbolic")
                 p["photo_outlet"] = got.get("outlet", "")
-                p["photo_source"] = p.get("photo_source") or got.get("url", "")
+                # the report this picture came from (a new photo replaces the old link); a photo you sent keeps its rights source
+                p["photo_source"] = got.get("url") or p.get("photo_source", "")
                 more = extra_photos(p, got, out_dir / "photos")
                 if more:   # a different picture of the same story on each line of the Reel
                     p["extra_photos"] = [m["file"] for m in more]

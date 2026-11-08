@@ -383,7 +383,7 @@ NEWS AS IT HAPPENS, AND WHAT IT MEANS FOR KENYANS (every post)
   where the record has them ("Sh2 more per litre", "1.2 million farmers wait for payment", "your SHA claim now
   takes 90 days").
 - `impact` (max 140 chars): that effect on ordinary Kenyans in one plain sentence, concrete and sourced. Never
-  vague ("this affects all of us"). It goes in the caption as "What it means for you: ...".
+  vague ("this affects all of us"). It goes in the caption as a plain sentence, never behind a label.
 - An accusation by one politician or party against another is THEIR claim, never our fact: attribute it in the
   headline itself ("Gachagua says fuel levies fund 2027 rallies"), give the other side's answer (or "has not
   responded"), and say what the record shows. Never repeat an unproven accusation in our own voice.
@@ -438,7 +438,16 @@ SOUND HUMAN (Kenyans scroll past anything that smells of AI)
   opinion. Uneven rhythm is good. Don't make everything a neat list of three.
 - Never: em dashes, "it's not just X, it's Y", "in today's world", "delve", "navigate", "landscape", "unlock",
   "elevate", "pivotal", "crucial", "harness", "foster", "here's the thing", "let's dive in". The checker blocks these.
-- Max one emoji per caption, often none. Hashtags only at the end, max three.
+- Max one emoji per caption, often none. Hashtags only at the end, max three, and only tags people already use
+  (#KRA, #FKF, #CostOfLiving); never invent one (#JimiReclaimsTheRecord, #KRAOneTrillion read as made by a machine).
+- Every line carries something only THIS story has: a number, a name, a place, a date. A line that could sit under
+  any story is machine filler: "Graft slows down our economic growth." "Tax deductions affect millions of workers
+  across the country." "Every business and household budget waits for the numbers." "Zero new cases keep public
+  clinics and families safe." Cut it, or replace it with the fact behind it ("KRA says 3.2 million payslips are due").
+- No textbook or brochure phrasing: not "It stands as the second highest peak across Africa" but "Africa's
+  second-highest mountain"; not "You can tag a friend to plan your next climb" but "Tag who you'd climb it with."
+- No labels or set phrases repeated post after post ("What it means for you:", "The numbers are out"), and the
+  closing question is worded for this story: don't open every one with "Tell us below".
 
 PUBLIC OFFICE HOLDERS (criticise without fear, and without error)
 - Kenya's Constitution (Art. 33, 35) protects criticism of public officers. Defamation law and the Computer Misuse
@@ -946,10 +955,14 @@ def _anthropic(system: str, user: str, max_tokens: int = 12000, model: str | Non
     return "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
 
 
-def look_at(image: bytes, ask: str) -> str:
-    """One picture and one question to the cheap model that can see (the critic's: Gemini Flash-Lite on the free
-    tier, else Claude Haiku), at temperature 0 so the same picture gets the same answer. The picture goes as a
-    JPEG of at most 1024 px. Raises RuntimeError when no model could look."""
+GEMINI_SEE_STRONG = "gemini-flash-latest"   # a second, stronger look before a "yes" verdict is believed
+
+
+def look_at(image: bytes, ask: str, strong: bool = False) -> str:
+    """One picture and one question to a model that can see, at temperature 0 so the same picture gets the same
+    answer: the cheap one (Gemini Flash-Lite on the free tier, else Claude Haiku), or with `strong` the better one
+    (Gemini Flash, else the writer's Claude model). The picture goes as a JPEG of at most 1024 px.
+    Raises RuntimeError when no model could look."""
     import base64
     import io
     from PIL import Image
@@ -966,11 +979,11 @@ def look_at(image: bytes, ask: str) -> str:
                                                         {"text": ask}]}],
                 "generationConfig": {"maxOutputTokens": 400 + GEMINI_THINK_ROOM, "temperature": 0}}
         try:
-            return _look_gemini(body)
+            return _look_gemini(body, GEMINI_SEE_STRONG if strong else GEMINI_CRITIC)
         except RuntimeError as e:
             errors.append(str(e)[:120])
     if os.environ.get("ANTHROPIC_API_KEY", "").strip():
-        body = {"model": CRITIC_MODEL, "max_tokens": 400, "temperature": 0,
+        body = {"model": model_id() if strong else CRITIC_MODEL, "max_tokens": 400, "temperature": 0,
                 "messages": [{"role": "user", "content": [
                     {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": b64}},
                     {"type": "text", "text": ask}]}]}
@@ -981,11 +994,11 @@ def look_at(image: bytes, ask: str) -> str:
     raise RuntimeError("no model could look at the picture: " + ("; ".join(errors) or "no key set"))
 
 
-def _look_gemini(body: dict) -> str:
+def _look_gemini(body: dict, model: str) -> str:
     key = os.environ["GEMINI_API_KEY"].strip()
     if SPEND["calls"]:
         time.sleep(GEMINI_LIMITS["pause"])   # the same free per-minute limit as the writer
-    req = urllib.request.Request(GEMINI_URL.format(model=GEMINI_CRITIC), data=json.dumps(body).encode(), method="POST",
+    req = urllib.request.Request(GEMINI_URL.format(model=model), data=json.dumps(body).encode(), method="POST",
                                  headers={"x-goog-api-key": key, "Content-Type": "application/json"})
     for attempt in range(2):
         try:
@@ -1023,7 +1036,7 @@ def _look_anthropic(body: dict) -> str:
             with urllib.request.urlopen(req, timeout=90) as r:
                 data = json.loads(r.read())
             use = data.get("usage") or {}
-            pin, pout = PRICES["haiku"]
+            pin, pout = next((v for k, v in PRICES.items() if k in body["model"]), max(PRICES.values()))
             SPEND["usd"] += (use.get("input_tokens", 0) * pin + use.get("output_tokens", 0) * pout) / 1e6
             SPEND["calls"] += 1
             return "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
@@ -1240,8 +1253,12 @@ CRITIC_RUBRIC = """You are the toughest editor at a Kenyan news desk whose reade
   Showcase posts (a place, a finished project) score on whether people would save or share them with pride
 - hold: would they watch to the end? does beat 1 tell the whole news in one sentence so the first second stops
   the scroll, and does each beat add a new fact (record, stakes, question)? fragments or filler beats score low
+- human: would a Kenyan reader believe a person wrote this? Machine tells score low: a line with no number, name,
+  place or date that could sit under any story ("Graft slows down our economic growth."), textbook phrasing ("It
+  stands as the second highest peak across Africa"), labels and set phrases ("What it means for you:"), a closing
+  question worded like every other post's, invented or stacked hashtags. Two or more tells: 5 or lower
 Be strict: 7 is good, 9 is exceptional, 10 is rare. Return ONLY JSON:
-{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n, "fair": n, "impact": n,
+{"scores": [{"id": "...", "hook": n, "send": n, "clarity": n, "fresh": n, "voice": n, "craft": n, "picture": n, "hold": n, "demand": n, "action": n, "fair": n, "impact": n, "human": n,
              "note": "the single most important fix, in one sentence"}]}"""
 
 
@@ -1310,7 +1327,8 @@ def critique(posts: list[dict]) -> dict[str, dict]:
             print(f"  critic batch skipped: {e}")
     out = {}
     for s in scores:
-        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold", "demand", "action", "fair", "impact")
+        keys = ("hook", "send", "clarity", "fresh", "voice", "craft", "picture", "hold", "demand", "action", "fair", "impact",
+                "human")
         vals = [float(s[k]) for k in keys if isinstance(s.get(k), (int, float))] or [0.0]
         out[s.get("id")] = {**{k: s.get(k) for k in keys}, "avg": round(sum(vals) / len(vals), 1), "note": s.get("note", "")}
     return out

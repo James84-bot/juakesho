@@ -386,9 +386,10 @@ def find(post: dict) -> tuple[bytes, dict] | None:
     return None
 
 
-def _photo_of(item: dict) -> tuple[bytes, dict] | None:
+def _photo_of(item: dict, check: bool = True) -> tuple[bytes, dict] | None:
     """The report's lead photo at full size, with its credit. The article page's og:image comes first: feeds often
-    carry only a thumbnail (The Standard's are 300px), which fails the size check."""
+    carry only a thumbnail (The Standard's are 300px), which fails the size check. `check`: skip the outlet's own
+    graphics (picture.outlet_edit); off only to fetch a picture already used, so it can be judged on its own."""
     credit, candidates = item.get("credit", ""), []
     try:
         page_img, page_credit = _og_image(_get(item["link"]).decode("utf-8", "replace"))
@@ -413,7 +414,7 @@ def _photo_of(item: dict) -> tuple[bytes, dict] | None:
             continue
         if _check_image(data):   # (sizes below are logged so a too-strict limit shows up in photos.log)
             import picture
-            edit = picture.outlet_edit(data)
+            edit = picture.outlet_edit(data) if check else ""
             if edit:   # the outlet's own graphic (a label, a headline, an inset): their edit, never under our design
                 _note(f"    skipped {item['outlet']}: an edited graphic, not a photo ({edit}) ({img[:60]})")
                 return None   # its other copies are the same graphic: the next report is checked instead

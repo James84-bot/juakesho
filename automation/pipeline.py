@@ -505,6 +505,79 @@ def _next_rev(pid: str) -> str:
     return f"{m.group(1)}-r{int(m.group(2)) + 1}" if m else f"{pid}-r2"
 
 
+AUDIT_PER_RUN = 6   # posts whose photos are fetched again and judged in one run
+
+
+def _used_pictures(p: dict) -> tuple[list[dict], int]:
+    """The news reports whose pictures a post shows, as items to fetch again: the lead (photo_source) and each
+    extra photo (its report found in the archive by headline). Also how many extras could not be found."""
+    import posted
+    items = []
+    if str(p.get("photo_source") or "").startswith("http"):
+        items.append({"link": p["photo_source"], "outlet": p.get("photo_outlet") or "outlet", "credit": "", "img": ""})
+    titles = [str(x.get("title")) for x in (p.get("shot_info") or [])[1:] if x.get("title")]
+    by_title = {x.get("title"): x for x in posted.feed_items()} if titles else {}
+    items += [by_title[t] for t in titles if t in by_title]
+    return items, sum(t not in by_title for t in titles)
+
+
+def photo_audit(dry_run: bool = False) -> list[str]:
+    """Posts not yet out whose pictures came from news sites, approved ones included, are checked once for the
+    outlet's own graphics (picture.outlet_edit: labels, headlines, inset pictures, two photos joined). A post with
+    one gets new photos and the same words (rephoto), and the reason is kept for its card. Returns the weeks that
+    need rendering. A picture that can't be fetched or judged is tried again next run."""
+    import picture
+    import posted
+    checked, redo = 0, {}
+    for f in sorted(WEEKS.glob("*.json"))[-2:]:
+        data = json.loads(f.read_text(encoding="utf-8"))
+        changed = False
+        for p in data["posts"]:
+            if checked >= AUDIT_PER_RUN:
+                break
+            if p["status"] not in {"approved", "awaiting"} or p.get("photo_checked") \
+                    or p.get("photo_kind") not in {"posted", "file"} or p.get("group") \
+                    or dt.datetime.fromisoformat(p["publish_at"]) <= now():
+                continue
+            items, missing = _used_pictures(p)
+            if not items:
+                continue
+            checked += 1
+            verdicts = []
+            for item in items:
+                try:
+                    got = posted._photo_of(item, check=False)
+                except Exception as e:
+                    log(f"photo audit: {p['id']} picture not fetched ({str(e)[:80]})")
+                    got = None
+                verdicts.append(picture.outlet_edit(got[0]) if got else None)
+            edits = [v for v in verdicts if v]
+            if edits:
+                outlet = p.get("photo_outlet") or "the news site"
+                redo.setdefault(data["collection"], []).append((p["id"], f"{outlet}'s own edit ({edits[0].rstrip('.')})"))
+                log(f"photo audit: {p['id']} uses {outlet}'s own edit: {edits[0]}")
+            elif all(v == "" for v in verdicts):
+                p["photo_checked"] = now().isoformat()
+                changed = True
+                log(f"photo audit: {p['id']} clean" + (f" ({missing} extra photo(s) no longer in the archive)" if missing else ""))
+        if changed and not dry_run:
+            save_week(data)
+    for label, hits in redo.items():
+        if dry_run:
+            continue
+        data = load_week(label)
+        for pid, why in hits:
+            p = next(x for x in data["posts"] if x["id"] == pid)
+            p["rephoto_reason"] = why
+            if p["status"] == "approved" and not p.get("auto"):
+                p["words_approved"] = True   # you approved these words: only the picture changes
+        save_week(data)
+        for pid, _ in hits:
+            rephoto(label, only=pid)
+    log(f"photo audit: {checked} post(s) checked, {sum(len(h) for h in redo.values())} get new photos")
+    return [] if dry_run else list(redo)
+
+
 HOT_RETRIES = 2   # extra attempts per held news post, so one rejected draft does not cost the whole slot
 
 
@@ -593,7 +666,8 @@ def rephoto(label: str, only: str | None = None) -> list[str]:
         if p.get("group"):
             p["group"] = groups.setdefault(p["group"], _next_rev(p["group"]))
         for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source",
-                  "extra_photos", "shot_info", "broll_file", "broll_credit", "track_credit", "decided_at", "auto", "tg_msg"):
+                  "extra_photos", "shot_info", "broll_file", "broll_credit", "track_credit", "decided_at", "auto", "tg_msg",
+                  "photo_checked"):
             p.pop(k, None)
         p["status"] = "drafted"
         changed.append(p["id"])
@@ -1077,6 +1151,27 @@ def _buttons(key: str, reel: bool = False) -> str:
     return json.dumps({"inline_keyboard": [row]})
 
 
+def decision_line(p: dict) -> str:
+    """The system's own call on a card, with its reason, in one line: it goes out by itself, or why it needs you
+    and what the system would do."""
+    from html import escape as esc
+    when = dt.datetime.fromisoformat(p["publish_at"]).strftime("%a %H:%M")
+    why = auto_ok(p)
+    if not why and auto_approve_on():
+        return f"🤖 <b>Passes every check: goes out by itself {when}.</b> Tap ❌ only to stop it."
+    errs = (p.get("guard") or {}).get("errors") or []
+    if errs:
+        return f"🧭 <b>My call: ❌ don't post.</b> It failed {len(errs)} of our checks (listed below)."
+    crit = (p.get("critic") or {}).get("avg")
+    if crit is None and p.get("template") != "tazama":
+        return "🧭 <b>No call:</b> the editor didn't score it this run. Read it before you approve."
+    if crit is not None and crit < drafter_bar():
+        return f"🧭 <b>My call: ❌ too weak.</b> The editor gave it {crit}/10; our bar is {drafter_bar()}."
+    reason = why or "auto-approval is paused in policy.json"
+    score = f", editor {crit}/10" if crit is not None else ""
+    return f"🧭 <b>My call: ✅ post it</b> (passed every check{score}). It needs your tap because {esc(reason)}."
+
+
 def _preview_text(p: dict) -> str:
     """Approval card text (Telegram HTML). Everything from the post is escaped: a caption with '&' or '<3'
     must never break the message. The caption is trimmed on its own so no HTML tag is ever cut in half."""
@@ -1085,7 +1180,10 @@ def _preview_text(p: dict) -> str:
     when = dt.datetime.fromisoformat(p["publish_at"]).strftime("%a %d %b, %H:%M")
     cap = brand_tags(p.get("caption", ""))
     cap = cap if len(cap) <= 420 else cap[:417].rstrip() + "..."
-    lines = [f"<b>{esc(p['id'])}</b> · {esc(p['template'])} · lane: {esc(str(p.get('lane', '-')))}", f"🕒 {when} EAT"]
+    lines = [decision_line(p), f"<b>{esc(p['id'])}</b> · {esc(p['template'])} · lane: {esc(str(p.get('lane', '-')))}",
+             f"🕒 {when} EAT"]
+    if p.get("rephoto_reason"):
+        lines.insert(1, f"🔁 New photo, same words: the old one was {esc(str(p['rephoto_reason']))}.")
     if p.get("breaking"):   # several newsrooms are on it now: approve fast and it goes out on the next run
         b = p["breaking"]
         lines = [f"🔴 <b>BREAKING</b>: {esc(b['title'][:120])} ({esc(', '.join(b['outlets'][:4]))}). "
@@ -1108,7 +1206,7 @@ def _preview_text(p: dict) -> str:
         lines += ["", "⚠️ Not scored by the editor this run: judge it yourself."]
     if p.get("critic"):
         c = p["critic"]
-        parts = " · ".join(f"{k} {c[k]}" for k in ("hook", "clarity", "picture", "send", "fresh", "funny", "true", "voice", "clean")
+        parts = " · ".join(f"{k} {c[k]}" for k in ("hook", "clarity", "picture", "send", "fresh", "human", "funny", "true", "voice", "clean")
                            if c.get(k) is not None)
         lines += ["", f"⭐ {c.get('avg')}/10  {parts}", f"✏️ {esc(str(c.get('note', '')))}"]
     if p.get("video_file"):
@@ -1260,6 +1358,8 @@ def auto_ok(p: dict) -> str:
     g = p.get("guard") or {}
     if g.get("errors"):
         return "failed a guard rule"
+    if p.get("words_approved"):   # you approved these words; the system only swapped an outlet's graphic for a photo
+        return "uses a named person's portrait" if p.get("photo_kind") in AUTO_PHOTO_NEVER else ""
     if p.get("template") == "tazama":   # you sent the clip: that is the decision; the guard passed when it was made
         return ""
     if any("named person" in str(w) for w in g.get("warnings") or []):
@@ -1709,10 +1809,10 @@ def caption_for(post: dict, credits: bool = False) -> str:
     added only with credits=True (where we post no Sources comment); a clip someone gave us keeps its credit."""
     cap = brand_tags(post.get("caption", ""))
     imp = str(post.get("impact") or "").strip()
-    if imp and imp.lower()[:30] not in cap.lower() and "what it means for you" not in cap.lower():
+    if imp and imp.lower()[:30] not in cap.lower() and "what it means for you" not in cap.lower():   # (older captions)
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
         body, tail = (cap[:tags.start()], cap[tags.start():]) if tags else (cap, "")
-        cap = f"{body.rstrip()}\n\nWhat it means for you: {imp}{tail}"
+        cap = f"{body.rstrip()}\n\n{imp}{tail}"   # a plain sentence: a label on every post reads as machine-made
     act = str(post.get("action") or "").strip()
     if act and act.lower()[:30] not in cap.lower():
         tags = re.search(r"(\s*(#\w+\s*)+)$", cap)
@@ -2252,19 +2352,17 @@ def edit_check(n: int = 14) -> int:
                 found.append(p)
     found.sort(key=lambda p: p["publish_at"], reverse=True)
     tiles, judged = [], 0
-    real = picture.outlet_edit
     for p in found[:n]:
         outlet = str(p.get("photo_outlet") or "outlet")
         item = {"link": p["photo_source"], "outlet": outlet, "credit": "", "img": ""}
-        picture.outlet_edit = lambda data: ""   # fetch the picture as it was used, then judge it below
-        try:
-            got = posted._photo_of(item)
-        finally:
-            picture.outlet_edit = real
+        got = posted._photo_of(item, check=False)   # the picture as it was used, judged below
         if not got:
             log(f"editcheck {p['id']}: picture not fetched again ({p['photo_source'][:70]})")
             continue
-        verdict = real(got[0])
+        verdict = picture.outlet_edit(got[0])
+        if verdict is None:
+            log(f"editcheck {p['id']} ({outlet}): not judged (no model could look)")
+            continue
         judged += 1
         log(f"editcheck {p['id']} ({outlet}): {'EDITED: ' + verdict if verdict else 'photo'}")
         import io as _io
@@ -2680,7 +2778,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2824,11 +2922,19 @@ def _main(argv: list[str] | None = None) -> int:
                 log(f"photo archive: {posted.collect()} new reports")
             except Exception as e:
                 log(f"photo archive skipped: {e}")
-    if a.command == "tick" and not a.dry_run:
+    if (a.command == "tick" and not a.dry_run) or a.command == "photoaudit":
+        try:   # an outlet's own graphic in a post not yet out is replaced (same words) and sent with the reason
+            for wk in photo_audit(dry_run=a.dry_run):
+                render_week(wk)
+                ask(wk)
+        except Exception as e:
+            log(f"photo audit skipped: {e}")
+    if a.command in {"tick", "photoaudit"} and not a.dry_run:
         try:
             auto_approve()
         except Exception as e:
             log(f"auto-approve skipped: {e}")
+    if a.command == "tick" and not a.dry_run:
         try:   # a stuck pipeline must say so
             quiet_check()
         except Exception as e:

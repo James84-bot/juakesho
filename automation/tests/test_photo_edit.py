@@ -34,23 +34,29 @@ class OutletEdit(unittest.TestCase):
 
     def test_an_edited_graphic_is_named_and_remembered(self):
         calls = []
-        with mock.patch.object(draft, "look_at", lambda data, ask: calls.append(1) or
+        with mock.patch.object(draft, "look_at", lambda data, ask, strong=False: calls.append(strong) or
                                '```json\n{"edited": true, "what": "HEALTH label and an inset circle"}\n```'):
             self.assertEqual(picture.outlet_edit(jpeg()), "HEALTH label and an inset circle")
             self.assertEqual(picture.outlet_edit(jpeg()), "HEALTH label and an inset circle")   # from the file
-        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls, [False, True])   # the cheap look, then the strong one; the third time from the file
         self.assertTrue(json.loads(self.checks.read_text())[next(iter(json.loads(self.checks.read_text())))]["edited"])
 
     def test_a_plain_photograph_passes(self):
-        with mock.patch.object(draft, "look_at", lambda data, ask: '{"edited": false, "what": ""}'):
+        with mock.patch.object(draft, "look_at", lambda data, ask, strong=False: '{"edited": false, "what": ""}'):
             self.assertEqual(picture.outlet_edit(jpeg((10, 20, 30))), "")
 
     def test_no_model_means_no_verdict_and_nothing_kept(self):
-        def down(data, ask):
+        def down(data, ask, strong=False):
             raise RuntimeError("no model could look at the picture: no key set")
         with mock.patch.object(draft, "look_at", down):
-            self.assertEqual(picture.outlet_edit(jpeg((1, 2, 3))), "")
+            self.assertIsNone(picture.outlet_edit(jpeg((1, 2, 3))))
         self.assertFalse(self.checks.exists())   # tried again next time
+
+    def test_a_yes_needs_the_strong_model_to_agree(self):
+        def looks(data, ask, strong=False):   # the cheap model sees a "video call overlay"; the strong one a wall monitor
+            return '{"edited": false, "seen": "a monitor on the wall"}' if strong else '{"edited": true, "what": "video call overlay"}'
+        with mock.patch.object(draft, "look_at", looks):
+            self.assertEqual(picture.outlet_edit(jpeg((5, 6, 7))), "")
 
     def test_the_ask_keeps_text_that_is_part_of_the_scene(self):
         ask = " ".join(picture.EDIT_ASK.split())
