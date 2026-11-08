@@ -126,6 +126,8 @@ OPENVERSE = "https://api.openverse.org/v1/images/"
 # topic, picked by the words in the post. Never people. The last resort for any civic post is Parliament or the flag.
 SYMBOLS = [
     (r"\b(power|electricity|kplc|tokens?|blackouts?)\b", ["power lines Kenya", "electricity pylon Kenya"]),
+    # fuel before money: a fuel post shows a pump, never banknotes (8 Nov: "why use money as background")
+    (r"\b(fuel|petrol|diesel|kerosene|pump prices?|epra)\b", ["petrol station Kenya", "fuel pump Kenya"]),
     (r"\b(tax|budget|treasury|levy|debt|loan|billion|shilling|revenue|kra|money|funds?|bills?)\b|\bsh ?[\d.,]+ ?(bn|m)?\b|\d(bn|m)\b",
      ["Kenyan shilling banknotes", "Central Bank of Kenya"]),
     (r"\b(court|judge|judiciary|ruling|petition|case)\b", ["Supreme Court of Kenya", "Milimani Law Courts"]),

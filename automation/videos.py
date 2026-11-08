@@ -339,6 +339,53 @@ def frames_ok(clip: Path, max_share: float | None = None, times: tuple = (0.5, C
 
 BROLL_TIMES = (0.5, 3.0, 6.0, 9.0, 12.0, 15.0, 18.5)   # the composer loops 20 s of it: check it all the way through
 
+FOOTAGE_ASK = """This is one frame of stock footage that would play behind a Kenyan news video about: {subject}.
+Answer three things about THIS frame:
+shows: does it clearly show {words} (the thing itself, not something merely nearby)?
+good: is it sharp, well lit and steady enough for a professional news video (not blurry, dark, grainy or cartoonish)?
+person: is any person visible at all (a face or a body, however small)? Car lights and wheels are not people.
+Return ONLY JSON: {{"shows": true or false, "good": true or false, "person": true or false, "why": "under 12 words"}}"""
+
+
+def _grab(clip: Path, t: float) -> bytes:
+    """One frame as PNG ('' bytes when ffmpeg could not write it)."""
+    with tempfile.NamedTemporaryFile(suffix=".png") as f:
+        subprocess.run([_ffmpeg(), "-y", "-loglevel", "error", "-ss", str(t), "-i", str(clip), "-frames:v", "1", f.name])
+        return Path(f.name).read_bytes() if Path(f.name).exists() else b""
+
+
+def footage_problem(clip: Path, subject: str, words: list[str], times: tuple = BROLL_TIMES) -> str:
+    """Why this clip must not play behind the post ('' when it may): it must show the subject, look professional,
+    and show no person at all. The face detector looks at every sampled moment; a model that can see looks at the
+    middle frame (subject, quality, people) and at any moment the detector flagged, because the detector takes car
+    lights and wheels for faces (8 Nov: an empty SPC station at dusk, flagged at 3 moments). When no model can
+    look, the clip is not used: footage nobody checked never goes behind our words."""
+    import draft
+    frames = [(t, _grab(clip, t)) for t in times]
+    if any(not data for _, data in frames):
+        return "a moment of the clip could not be checked"
+    mid = frames[len(frames) // 2][1]
+    try:
+        got = draft.extract_json(draft.look_at(mid, FOOTAGE_ASK.format(subject=subject[:160], words=" and ".join(words))))
+    except Exception as e:
+        return f"no model could check it ({str(e)[:80]})"
+    if got.get("shows") is not True:
+        return f"does not show {' '.join(words)} ({str(got.get('why') or '')[:60]})"
+    if got.get("good") is not True:
+        return f"not good enough to use ({str(got.get('why') or '')[:60]})"
+    if got.get("person") is not False:
+        return "a person shows"
+    for t, data in frames:
+        if data is mid or photos.faces_ok(data, 0.02):
+            continue
+        try:
+            again = draft.extract_json(draft.look_at(data, FOOTAGE_ASK.format(subject=subject[:160], words=" and ".join(words))))
+        except Exception as e:
+            return f"a possible face at {t}s could not be checked ({str(e)[:60]})"
+        if again.get("person") is not False:
+            return f"a person shows at {t}s"
+    return ""
+
 
 def fetch(post: dict, out_dir: Path) -> dict | None:
     """The post's footage as a local clip: {"file", "credit", "url"}, or None (never raises)."""
@@ -395,6 +442,12 @@ def _broll_words(post: dict) -> list[str]:
     return [w for w in photos._core(q) if w not in GENERIC_WORDS][:3]
 
 
+def _subject(post: dict) -> str:
+    """What the post is about, in one line, for the footage check."""
+    beats = post.get("beats") or []
+    return str(post.get("message") or post.get("headline") or (beats[0] if beats else "") or post.get("photo_query") or "").replace("*", "")
+
+
 def broll(post: dict, out_dir: Path) -> dict | None:
     """{"file", "credit", "url"}: a Pixabay or Pexels clip whose own tags show the subject, with no face filling the
     frame, cut and cached next to the renders. None when nothing fits (never raises)."""
@@ -429,9 +482,11 @@ def broll(post: dict, out_dir: Path) -> dict | None:
                 raw.write_bytes(photos._get(pick["url"], timeout=120))
                 if not cut(raw, clip):
                     continue
-            if not frames_ok(clip, max_share=0.02, times=BROLL_TIMES):   # no person at all: under a line about
-                # "six patients" a stranger's face reads as one of them
-                _note(f"  b-roll for {post['id']} skipped: a person's face shows ({h.get('pageURL', '')[:70]})")
+            # no person at all (under a line about "six patients" a stranger's face reads as one of them), the
+            # subject itself, and professional quality
+            why = footage_problem(clip, _subject(post), words)
+            if why:
+                _note(f"  b-roll for {post['id']} skipped: {why} ({h.get('pageURL', '')[:70]})")
                 clip.unlink(missing_ok=True)
                 continue
         except Exception as e:

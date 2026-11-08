@@ -251,7 +251,7 @@ class Broll(unittest.TestCase):
              mock.patch.object(videos, "_pixabay_search", lambda q, k: hits), \
              mock.patch.object(videos.photos, "_get", lambda u, timeout=60: got_urls.append(u) or b"v"), \
              mock.patch.object(videos, "cut", lambda raw, out: out.write_bytes(b"m") or True), \
-             mock.patch.object(videos, "frames_ok", lambda clip, max_share=None, times=(): got_urls[-1] != "u2"):
+             mock.patch.object(videos, "footage_problem", lambda clip, subject, words: "a person shows" if got_urls[-1] == "u2" else ""):
             got = videos.broll(post, Path(d))
         self.assertEqual(got_urls, ["u2", "u3"])          # u1 lacks "ward"; u2 shows a person; u3 is used
         self.assertEqual(got["credit"], "Footage: B / Pixabay")
@@ -282,3 +282,45 @@ class FramesChecked(unittest.TestCase):
             with mock.patch.object(videos.photos, "faces_ok", lambda data, share=None: seen.append(data[:8]) or True):
                 self.assertTrue(videos.frames_ok(clip, times=(0.5, 1.5)))
             self.assertEqual(seen, [b"\x89PNG\r\n\x1a\n"] * 2)
+
+
+class FootageProblem(unittest.TestCase):
+    """Footage behind our words: the subject itself, professional quality, nobody in it. The face detector takes car
+    lights for faces, so a moment it flags is shown to a model that can see before the clip is thrown away."""
+
+    def run_check(self, verdicts, flagged=()):
+        frames = {t: f"frame{t}".encode() for t in videos.BROLL_TIMES}
+        asked = []
+
+        def look(data, ask, strong=False):
+            asked.append(data)
+            return json.dumps(verdicts.get(data, verdicts["mid"]))
+        with mock.patch.object(videos, "_grab", lambda clip, t: frames[t]), \
+                mock.patch.object(videos.photos, "faces_ok", lambda data, share=None: data not in {frames[t] for t in flagged}), \
+                mock.patch("draft.look_at", look):
+            return videos.footage_problem(Path("c.mp4"), "EPRA reviews fuel prices", ["fuel", "pump"]), asked
+
+    def test_a_good_clip_of_the_subject_passes(self):
+        why, asked = self.run_check({"mid": {"shows": True, "good": True, "person": False}})
+        self.assertEqual(why, "")
+        self.assertEqual(len(asked), 1)   # only the middle frame: nothing was flagged
+
+    def test_car_lights_taken_for_a_face_are_cleared_by_a_second_look(self):
+        why, asked = self.run_check({"mid": {"shows": True, "good": True, "person": False}}, flagged=(6.0, 15.0))
+        self.assertEqual(why, "")
+        self.assertEqual(len(asked), 3)
+
+    def test_a_real_person_rejects_the_clip(self):
+        why, _ = self.run_check({"mid": {"shows": True, "good": True, "person": False},
+                                 b"frame6.0": {"shows": True, "good": True, "person": True}}, flagged=(6.0,))
+        self.assertEqual(why, "a person shows at 6.0s")
+
+    def test_off_topic_or_poor_footage_is_rejected(self):
+        self.assertIn("does not show", self.run_check({"mid": {"shows": False, "good": True, "person": False}})[0])
+        self.assertIn("not good enough", self.run_check({"mid": {"shows": True, "good": False, "person": False}})[0])
+
+    def test_nobody_could_look_means_no_footage(self):
+        def down(data, ask, strong=False):
+            raise RuntimeError("no model could look at the picture: no key set")
+        with mock.patch.object(videos, "_grab", lambda clip, t: b"x"), mock.patch("draft.look_at", down):
+            self.assertIn("no model could check it", videos.footage_problem(Path("c.mp4"), "s", ["fuel"]))

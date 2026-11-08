@@ -1,7 +1,7 @@
 {#- Reel (9:16): the post told in beats. One short line at a time, full screen, over the real photo.
     The first line is on screen from frame 0; later lines' words land fast (no blank frames between lines);
-    the *marked* words land on the red marker; a progress bar counts down each beat.
-    Fields: beats (3-6 lines, the script), kicker (series tag), plus the post's photo. Rendered by video.py. -#}
+    the *marked* words land on the red marker. The top carries only our small mark.
+    Fields: beats (3-6 lines, the script), plus the post's photo and footage. Rendered by video.py. -#}
 {% extends "base.html.j2" %}
 {% set BT = namespace(t=0.0, starts=[], durs=[]) %}
 {% for b in beats %}{% set d = beat_seconds(b) %}{% set _ = BT.starts.append(BT.t) %}{% set _ = BT.durs.append(d) %}{% set BT.t = BT.t + d %}{% endfor %}
@@ -36,8 +36,8 @@
 {% endif %}
 {% if broll %}
 /* the moving footage shows through where no photo is drawn; it illustrates the subject, it is not the place */
-.footage-tag { position: absolute; left: var(--m); top: 300px; z-index: 3; font: 700 24px/1 "Inter"; color: #fff;
-  background: rgba(14, 12, 11, .62); padding: 8px 12px; border-radius: 4px; letter-spacing: .03em; opacity: 0; }
+.footage-tag { position: absolute; left: var(--m); bottom: 236px; z-index: 3; font: 600 22px/1 "Inter";
+  color: rgba(255, 255, 255, .72); text-shadow: 0 1px 6px rgba(0, 0, 0, .6); opacity: 0; }
 {% endif %}
 {% if shots %}
 /* the pictures are drawn here (not by the base layer) so every one of them can move and take its turn */
@@ -62,17 +62,9 @@
   color-mix(in srgb, var(--bg) 18%, transparent) 16%, color-mix(in srgb, var(--bg) 30%, transparent) 40%,
   color-mix(in srgb, var(--bg) 42%, transparent) 62%, color-mix(in srgb, var(--bg) 90%, transparent) 100%) !important; }
 .beat { text-shadow: 0 4px 30px rgba(0, 0, 0, .65), 0 1px 3px rgba(0, 0, 0, .5) !important; }
-.top { top: 168px; }
-.bars { position: absolute; left: var(--m); right: var(--m); top: 128px; display: flex; gap: 8px; z-index: 3; }
-.bars i { flex: 1; height: 6px; border-radius: 3px; background: rgba(255, 255, 255, .26); overflow: hidden; }
-.bars i b { display: block; height: 100%; background: var(--shuka-500); transform-origin: left; scale: 0 1; }
-.live { display: inline-flex; align-items: center; gap: 12px; }
-.live::before { content: ""; width: 16px; height: 16px; border-radius: 50%; background: var(--shuka-500);
-  box-shadow: 0 0 0 0 rgba(223, 54, 54, .7); animation: live 1.2s ease-out infinite; }
-@keyframes live { 0% { box-shadow: 0 0 0 0 rgba(223, 54, 54, .75); } 100% { box-shadow: 0 0 0 22px rgba(223, 54, 54, 0); } }
-.top img { height: 34px; display: block; }
-.ctx { position: absolute; left: var(--m); right: var(--m); top: 250px; z-index: 3; font: 800 26px/1 "Inter Tight";
-  letter-spacing: .08em; text-transform: uppercase; color: rgba(255, 255, 255, .86); text-shadow: 0 2px 10px rgba(0, 0, 0, .5); }
+/* the top carries only our small mark: series labels, a live dot, a dateline and story bars read as a template */
+.top { top: 210px; justify-content: flex-end; }
+.top img { height: 30px; display: block; opacity: .9; filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .45)); }
 .stage { position: absolute; left: var(--m); right: 132px; top: 420px; bottom: 560px; display: grid; align-items: center; z-index: 3; }
 {% if photo_band %}
 /* a small news photo sits sharp under the header; the lines run below it */
@@ -102,7 +94,6 @@
   height: {{ CH }}px !important; border-radius: 14px; translate: 0 0 !important; clip-path: inset(0 100% 0 0); }
 @keyframes wipec { 0% { clip-path: inset(0 100% 0 0); } 50% { clip-path: inset(0 0 0 0); } 100% { clip-path: inset(0 0 0 100%); } }
 .wipe { animation-name: wipec !important; }
-.footage-tag { top: 300px; }
 {% if look == 'glass' %}
 /* GLASS: the story's own photo, blurred, fills the screen; the sharp photo sits in a frosted frame and the line
    on a frosted panel. Every Reel takes its colours from its own photo, the red marker stays our signature. */
@@ -125,12 +116,6 @@
   bottom: 350px !important; align-items: center !important; }
 .beat .m { background: var(--shuka-500); border-radius: .08em; }
 .wipe { border-radius: 44px; }
-.bars i { background: rgba(255, 255, 255, .28); }
-.bars i b { background: #fff; }
-.top .tag { background: linear-gradient(135deg, rgba(255, 255, 255, .20), rgba(255, 255, 255, .06)); color: #fff;
-  border: 1.5px solid rgba(255, 255, 255, .34); border-radius: 999px; padding: 13px 22px 12px; backdrop-filter: blur(20px); }
-.top img { height: 30px; padding: 12px 20px; box-sizing: content-box; border-radius: 999px; background: rgba(255, 255, 255, .12);
-  border: 1.5px solid rgba(255, 255, 255, .3); }
 {% endif %}
 {% endif %}
 .beat { grid-area: 1 / 1; font-family: "Inter Tight", sans-serif; font-weight: 900; letter-spacing: -.03em; line-height: 1.02;
@@ -159,7 +144,6 @@
 {% for b in beats %}{% set s = BT.starts[loop.index0] %}{% set d = BT.durs[loop.index0] %}
 .b{{ loop.index }} { font-size: {{ fitw(b, 820, 4, 92) if look == 'glass' and card else fitw(b, 860, 4, 96 if photo_band else 100 if card else 132) }}px;
   animation: {{ 'stay .15s linear both' if loop.last else 'show ' ~ d ~ 's linear both' }}; animation-delay: {{ s }}s; }
-.bars i:nth-child({{ loop.index }}) b { animation: fill {{ d }}s linear {{ s }}s both; }
 {% endfor %}
 .beat .t { animation: slam .22s cubic-bezier(.2, .9, .25, 1.1) both; }
 /* between lines: a fast brand-red wipe crosses the frame, and the photo cuts to its next shot behind it */
@@ -172,9 +156,8 @@
 .b1, .b1 .t { animation: none !important; opacity: 1; }
 .b1 { animation: {{ 'none' if beats|length == 1 else 'show ' ~ BT.durs[0] ~ 's linear both' }} !important; }
 {% endblock %}
-{% block top %}<span class="tag live">{{ kicker }}</span><img src="{{ logo_on_dark }}" alt="Kenya on Record">{% endblock %}
+{% block top %}<img src="{{ logo_on_dark }}" alt="Kenya on Record">{% endblock %}
 {% block footer %}
-  {% if context_line %}<div class="ctx">{{ context_line }}</div>{% endif %}
   {% if broll %}<span class="footage-tag">{{ footage_label }}</span>{% endif %}
   {% for sh in shots %}<div class="shot sh{{ loop.index0 }}" style="--sfy: {{ sh.fy }}%">
     {% if card and look == 'glass' %}<div class="gbg" style="background-image: url('{{ sh.uri }}')"></div><div class="gtint"></div>{% endif %}
@@ -183,7 +166,6 @@
     {% else %}<div class="full cam" style="background-image: url('{{ sh.uri }}')"></div>{% endif %}
   </div>{% endfor %}
   {% if card and look == 'glass' %}<div class="gpanel gl"></div>{% endif %}
-  <div class="bars">{% for b in beats %}<i><b></b></i>{% endfor %}</div>
   {% for b in beats %}{% if not loop.first %}<i class="wipe w{{ loop.index }}"></i>{% endif %}{% endfor %}
   <div class="stage">
     {% for b in beats %}{% set s = BT.starts[loop.index0] %}

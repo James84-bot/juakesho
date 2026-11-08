@@ -1629,6 +1629,49 @@ def graph_get(path: str, fields: dict) -> dict:
     return http("GET", f"https://graph.facebook.com/{version}/{path}?{q}")
 
 
+def dup_check() -> bool:
+    """Reads (never posts or deletes) our newest items on Instagram, the Facebook Page and YouTube, prints them,
+    and flags any text that appears more than once on the same platform, with the time of each copy."""
+    def key(text: str) -> str:
+        return re.sub(r"[^a-z0-9 ]", "", str(text or "").lower().replace("*", ""))[:60].strip()
+
+    found: dict[str, list[tuple[str, str, str]]] = {}
+    try:
+        ig = need("META_IG_USER_ID")["META_IG_USER_ID"]
+        for m in graph_get(f"{ig}/media", {"fields": "caption,timestamp,media_product_type,permalink", "limit": 50}).get("data", []):
+            found.setdefault("instagram", []).append((m.get("timestamp", ""), str(m.get("media_product_type", "")), m.get("caption") or ""))
+    except Exception as e:
+        log(f"dupcheck instagram: not read ({str(e)[:160]})")
+    try:
+        page = need("META_PAGE_ID")["META_PAGE_ID"]
+        for m in graph_get(f"{page}/published_posts", {"fields": "message,created_time", "limit": 50}).get("data", []):
+            found.setdefault("facebook posts", []).append((m.get("created_time", ""), "post", m.get("message") or ""))
+        for m in graph_get(f"{page}/videos", {"fields": "description,created_time", "limit": 50}).get("data", []):
+            found.setdefault("facebook videos", []).append((m.get("created_time", ""), "video", m.get("description") or ""))
+    except Exception as e:
+        log(f"dupcheck facebook: not read ({str(e)[:160]})")
+    try:
+        import youtube
+        for v in youtube.uploads():
+            found.setdefault("youtube", []).append((v["published"], v["id"], v["title"]))
+    except Exception as e:
+        log(f"dupcheck youtube: not read ({str(e)[:160]})")
+    twice = 0
+    for where, items in found.items():
+        log(f"dupcheck {where}: {len(items)} item(s)")
+        seen: dict[str, list[str]] = {}
+        for when, kind, text in items:
+            log(f"  {when[:16]} {kind[:10]:10} {text[:70]!r}")
+            if key(text):
+                seen.setdefault(key(text), []).append(f"{when[:16]} {kind}")
+        for k, times in seen.items():
+            if len(times) > 1:
+                twice += 1
+                log(f"TWICE on {where}: {k!r} at {', '.join(times)}")
+    log(f"dupcheck: {twice} text(s) found more than once")
+    return bool(found)
+
+
 def meta_check(dry_run: bool = False) -> bool:
     """Reads (never posts) the Page and the Instagram account with the stored token, and says what works."""
     lines, ok = [], True
@@ -2788,7 +2831,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2985,6 +3028,8 @@ def _main(argv: list[str] | None = None) -> int:
         process_clips(dry_run=a.dry_run)
     if a.command == "swapwork" and not a.dry_run:
         swapwork()
+    if a.command == "dupcheck":   # what is really on each platform, and anything there twice
+        return 0 if dup_check() else 1
     if a.command == "seecheck":   # each model the photo check can use, asked about one plain test picture
         import draft as drafter
         import io as _io

@@ -113,6 +113,27 @@ def stats(ids: list[str]) -> dict[str, dict]:
     return out
 
 
+def uploads(n: int = 50) -> list[dict]:
+    """Our newest uploads: [{"id", "title", "published"}]. Reads only."""
+    token = access_token()
+
+    def get(url: str) -> dict:
+        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {token}"})
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                return json.loads(r.read() or b"{}")
+        except urllib.error.HTTPError as e:
+            raise RuntimeError(f"YouTube uploads → {e.code}: {e.read().decode(errors='replace')[:300]}") from e
+    ch = get("https://www.googleapis.com/youtube/v3/channels?part=contentDetails&mine=true").get("items") or []
+    if not ch:
+        return []
+    playlist = ch[0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    q = urllib.parse.urlencode({"part": "snippet", "playlistId": playlist, "maxResults": min(n, 50)})
+    items = get(f"https://www.googleapis.com/youtube/v3/playlistItems?{q}").get("items") or []
+    return [{"id": it["snippet"]["resourceId"]["videoId"], "title": it["snippet"]["title"],
+             "published": it["snippet"]["publishedAt"]} for it in items]
+
+
 def channel_stats() -> dict:
     """The channel's public totals: {"title", "subscribers", "views", "videos"}. Reads only."""
     token = access_token()
