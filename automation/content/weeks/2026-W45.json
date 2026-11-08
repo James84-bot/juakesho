@@ -1606,7 +1606,7 @@
       "yt_id": "FXWm6pHNL6c"
     },
     {
-      "id": "2026-w45-hot-1108",
+      "id": "2026-w45-hot-1108-r2",
       "template": "sauti",
       "lane": "everyone",
       "demand": 4,
@@ -1661,7 +1661,7 @@
           "published": "2026-11-07"
         }
       ],
-      "status": "approved",
+      "status": "awaiting",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1685,20 +1685,28 @@
         "note": "Match the demand score strictly to the 1-10 ranking provided in the prompt's WHAT KENYA IS ON list."
       },
       "drafted_at": "2026-11-08T09:17:41.890194+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1108-photo.jpg",
-      "photo_credit": "Photo: Capital FM · Photo: KBC",
+      "photo_source": "https://capitalfm.africa/mariga-ousted-as-fkf-vice-president-following-stormy-meeting-in-meru/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "reel": true,
+      "edited": "facts corrected before publishing: a special (not annual) general meeting; police teargas added",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1108-r2-photo.jpg",
+      "photo_credit": "Photo: Capital FM · Photo: Kenyans.co.ke",
       "photo_kind": "posted",
       "photo_outlet": "Capital FM",
-      "photo_source": "https://capitalfm.africa/mariga-ousted-as-fkf-vice-president-following-stormy-meeting-in-meru/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
       "extra_photos": [
-        "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1108-photo-2.jpg",
-        "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1108-photo-3.jpg"
+        "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1108-r2-photo-2.jpg"
       ],
-      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "reel": true,
-      "tg_msg": 854,
-      "decided_at": "2026-11-08T09:32:19.847094+03:00",
-      "edited": "facts corrected before publishing: a special (not annual) general meeting; police teargas added"
+      "shot_info": [
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Mariga ousted as FKF vice-president following stormy meeting in Meru"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Chaos as Police Fire Teargas at FKF Special General Meeting"
+        }
+      ],
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 859
     }
   ],
   "scripts": {
