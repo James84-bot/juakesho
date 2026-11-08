@@ -17,7 +17,7 @@ import brandkit as bk
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
-OUT = ROOT / "exports" / "presence"
+OUT = ROOT / "docs" / "exports" / "presence"
 FONTS = (ROOT / "assets" / "fonts").as_uri()
 P = bk.P
 INK, RED, WHITE = P["ink"]["950"], P["shuka"]["600"], "#FFFFFF"

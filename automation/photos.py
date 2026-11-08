@@ -724,7 +724,7 @@ def attach(posts: list[dict], out_dir: Path) -> None:
         _attach(posts, out_dir)
     finally:
         # only real renders (under exports/) write the log; tests and scratch renders keep it clean
-        if HERE.parent / "exports" in Path(out_dir).resolve().parents:
+        if brands.EXPORTS_ROOT in Path(out_dir).resolve().parents:
             try:
                 brands.STATE.mkdir(parents=True, exist_ok=True)
                 (brands.STATE / "photos.log").write_text("\n".join(NOTES[-400:]) + "\n", encoding="utf-8")

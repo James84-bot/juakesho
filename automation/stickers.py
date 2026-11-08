@@ -17,7 +17,7 @@ import brandkit as bk
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
-OUT = ROOT / "exports" / "stickers"
+OUT = ROOT / "docs" / "exports" / "stickers"
 FONTS = (ROOT / "assets" / "fonts").as_uri()
 C = bk.C
 

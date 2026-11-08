@@ -23,7 +23,7 @@ from palette import contrast
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
-EXP = ROOT / "exports"
+EXP = ROOT / "docs" / "exports"
 LOGO = ROOT / "assets" / "logo"
 CAL = json.loads((HERE / "calendar.json").read_text(encoding="utf-8"))
 POSTS = json.loads((HERE / "content" / "posts.json").read_text(encoding="utf-8"))["posts"]

@@ -374,7 +374,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description="Render Kenya on Record Reels")
     ap.add_argument("--file", default=str(HERE / "content" / "posts.json"))
     ap.add_argument("--only")
-    ap.add_argument("--out", default=str(ROOT / "exports" / "reels"))
+    ap.add_argument("--out", default=str(ROOT / "docs" / "exports" / "reels"))
     a = ap.parse_args()
     posts = json.loads(Path(a.file).read_text(encoding="utf-8"))["posts"]
     if a.only:

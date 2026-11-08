@@ -469,4 +469,4 @@ def sheet(out: Path) -> Path:
 
 
 if __name__ == "__main__":
-    print(sheet(Path(__file__).resolve().parent.parent / "exports" / "symbols-sheet.png"))
+    print(sheet(Path(__file__).resolve().parent.parent / "docs" / "exports" / "symbols-sheet.png"))

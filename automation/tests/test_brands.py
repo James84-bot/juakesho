@@ -30,7 +30,7 @@ class Brands(unittest.TestCase):
         self.assertTrue(b.MAIN)
         self.assertEqual(b.STATE, HERE / "state")
         self.assertEqual(b.CONTENT / "weeks", HERE / "content" / "weeks")
-        self.assertEqual(b.EXPORTS, HERE.parent / "exports")
+        self.assertEqual(b.EXPORTS, HERE.parent / "docs" / "exports")   # Pages publishes docs/
         env = {"META_ACCESS_TOKEN": "KOR", "TELEGRAM_BOT_TOKEN": "BOT"}
         self.assertEqual(b.apply_env(env), [])
         self.assertEqual(env["META_ACCESS_TOKEN"], "KOR")
@@ -39,7 +39,7 @@ class Brands(unittest.TestCase):
         b = self.load("Full Time Kenya")
         self.assertEqual(b.SLUG, "fulltimekenya")
         self.assertEqual(b.HOME, HERE / "brands" / "fulltimekenya")
-        self.assertEqual(b.EXPORTS, HERE.parent / "exports" / "fulltimekenya")
+        self.assertEqual(b.EXPORTS, HERE.parent / "docs" / "exports" / "fulltimekenya")
         self.assertEqual(b.URL_PATH, "exports/fulltimekenya")
         env = {"META_ACCESS_TOKEN": "KOR", "META_PAGE_ID": "111", "META_IG_USER_ID": "9", "YT_REFRESH_TOKEN": "KOR-YT",
                "TELEGRAM_BOT_TOKEN": "KOR-BOT", "META_PAGES": PAGES,

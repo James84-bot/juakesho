@@ -1,14 +1,14 @@
 automation/.env
 __pycache__/
 *.pyc
-exports/**/.*.html
+docs/exports/**/.*.html
 # Raw stock photos stay private (licence: use in designs, don't redistribute the originals)
-exports/**/photos/
+docs/exports/**/photos/
 automation/run.log
-exports/**/videos/
+docs/exports/**/videos/
 # Telegram notes stay in the chat, never in this public repo
 automation/state/inbox.jsonl
 # samples sent to Telegram for review are not published
-exports/_samples/
+docs/exports/_samples/
 # the weekly show's video and voice notes go to YouTube, never into the repo (files over 100 MB are refused)
-exports/_weekly/
+docs/exports/_weekly/

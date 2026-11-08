@@ -680,7 +680,8 @@ def _photo_intake(msg: dict, chat: str) -> None:
         return reply("📷 That photo is too small (under 800 px wide). Send the original, or send it as a file.")
     label = data["collection"]
     new_id = _next_rev(post["id"])
-    rel = Path("exports") / label / "photos" / f"{new_id}-sent.jpg"
+    target = EXPORTS / label / "photos" / f"{new_id}-sent.jpg"
+    rel = target.relative_to(ROOT) if ROOT in target.parents else target   # kept relative to the repo when inside it
     try:
         (ROOT / rel).parent.mkdir(parents=True, exist_ok=True)
         tazama.download(_tg_file_path, need("TELEGRAM_BOT_TOKEN")["TELEGRAM_BOT_TOKEN"], photo["file_id"], ROOT / rel)

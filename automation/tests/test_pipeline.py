@@ -1323,14 +1323,15 @@ class PhotoSwapTests(TempWeeks):
             Image.new("RGB", (width, 900), "red").save(target, "PNG")
         import tazama
         with mock.patch.object(pl, "tg", lambda m, f=None, files=None: self.sent.append((m, f)) or {"ok": True}), \
-                mock.patch.object(pl, "ROOT", self.root), mock.patch.object(tazama, "download", download):
+                mock.patch.object(pl, "ROOT", self.root), mock.patch.object(pl, "EXPORTS", self.root / "docs" / "exports"), \
+                mock.patch.object(tazama, "download", download):
             pl._photo_intake(msg, "42")
         return pl.load_week("2026-W41")["posts"][0]
 
     def test_reply_with_own_photo_swaps_the_picture_and_resends(self):
         p = self.intake("yangu\nAt the Senate this morning")
         self.assertEqual((p["id"], p["status"]), ("p1-r4", "drafted"))
-        self.assertTrue(p["photo"].startswith("sent:exports/2026-W41/photos/p1-r4-sent.jpg"))
+        self.assertTrue(p["photo"].startswith("sent:docs/exports/2026-W41/photos/p1-r4-sent.jpg"))
         self.assertEqual(p["photo_rights_credit"], "")   # yours: no credit line
         self.assertNotIn("photo_file", p)
         self.assertTrue((self.root / p["photo"][5:]).exists())

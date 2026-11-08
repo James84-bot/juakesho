@@ -3,7 +3,7 @@ brands.py — one engine, several brands. KOR_BRAND picks the brand a run works 
 exactly as before (its files stay where they always were).
 
 Every other brand lives in automation/brands/<slug>/: its brand.json (name, look, Page, writer brief), calendar.json,
-content/ (feeds, policy, weeks) and state/. Its pictures and Reels go to exports/<slug>/. Shared by all brands:
+content/ (feeds, policy, weeks) and state/. Its pictures and Reels go to docs/exports/<slug>/. Shared by all brands:
 the code, the templates, the fonts, the music library and the face model.
 
 Accounts never cross: for a brand other than the main one, every account key (Meta, YouTube, TikTok, Telegram bot)
@@ -34,7 +34,10 @@ MAIN = SLUG == MAIN_SLUG
 HOME = HERE if MAIN else HERE / "brands" / SLUG          # brand.json and calendar.json
 CONTENT = HOME / "content"                               # feeds, policy, weeks
 STATE = HOME / "state"
-EXPORTS = ROOT / "exports" if MAIN else ROOT / "exports" / SLUG
+# GitHub Pages publishes the docs/ folder (its root is the site root, where the TikTok privacy and terms pages
+# live), so the media sit in docs/exports and are served at <site>/exports/...
+EXPORTS_ROOT = ROOT / "docs" / "exports"
+EXPORTS = EXPORTS_ROOT if MAIN else EXPORTS_ROOT / SLUG
 URL_PATH = "exports" if MAIN else f"exports/{SLUG}"      # where GitHub Pages serves EXPORTS
 
 
