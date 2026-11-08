@@ -49,7 +49,7 @@
         "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQb2szdEtCVjkySmxCdWZ5cjY1TDkxdWIzNUNpWGlBYkNOcFNCNVJBVXV1V1VvSENFUTVjekNsNERXaTQtYV8ycTI3NmVDRV8zalRaYWplRGRJNjlZX0hQNmVPTEdaVHd5R2xsLWxPcDRhdHJRdkVmcVNMTGVpY3RWVDFzZnNjaWJBVmZFa3lvSTE4bmpzcG5FWUMtWEZieThqdVVoalpycDVtajFUelRwdXVOS2lrTzA3UlFyUA?oc=5",
         "published": "2026-11-08"
       },
-      "status": "drafted",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -74,10 +74,24 @@
         "note": "The action beat has a concrete demand on EPRA for the cost breakdown."
       },
       "drafted_at": "2026-11-08T17:34:15.990933+03:00",
-      "photo_source": "https://www.kenyans.co.ke/news/127837-opiyo-wandayi-slams-gachagua-over-claims-govt-plans-hike-pump-prices",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_banknote,_reverse.jpg",
       "reel": true,
       "rephoto_reason": "Kenyans.co.ke's own edit (Two photos combined side by side)",
-      "words_approved": true
+      "words_approved": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d1-money-r2-photo.jpg",
+      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "shot_info": [
+        {
+          "credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 928,
+      "auto": true,
+      "decided_at": "2026-11-08T20:50:43.388563+03:00"
     },
     {
       "id": "2026-w46-d2-kenya",
@@ -228,7 +242,7 @@
         "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHpsNThFNzllWFpVa3kzRzhEWi1XdGlMa2ZDZzgyZFNXcW5oS2VVUVNzV2NBNzdjVUN2M3NZYk5FeWRFR3RteGtZUjU5UXpoWW15OTZnbWxxYUZsaGJNWDBnRnlWQUJEUVhOWHNac2p5WlM3R213WkYtWkRUcEhwenIxeGFFek42ejJJdmt2T2tWM0l6WXVpcWh1V2RZTlhyWHZyTUlYa3htQkZzb1U4?oc=5",
         "published": "2026-11-05"
       },
-      "status": "drafted",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -250,10 +264,24 @@
         "note": "Ensure the quiz topic reflects a higher current public search interest."
       },
       "drafted_at": "2026-11-08T17:34:15.990944+03:00",
-      "photo_source": "https://www.kenyans.co.ke/news/128966-bayern-munich-ajax-play-talanta-stadium-opening-january-5-ruto-announces",
+      "photo_source": "https://www.kenyans.co.ke/news/129062-petition-filed-block-govt-funding-bayern-munich-ajax-match-raila-odinga-stadium",
       "reel": true,
       "rephoto_reason": "Kenyans.co.ke's own edit (Two photos combined side by side)",
-      "words_approved": true
+      "words_approved": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d4-glasspoll-r2-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Bayern vs Ajax Match in Kenya Hits First Roadblock as Petitioners Move to Court"
+        }
+      ],
+      "track_credit": "Music: \"Funky Chunk\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 929,
+      "auto": true,
+      "decided_at": "2026-11-08T20:50:43.388595+03:00"
     },
     {
       "id": "2026-w46-d5-straight",
