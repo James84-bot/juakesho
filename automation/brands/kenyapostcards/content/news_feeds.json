@@ -1,0 +1,10 @@
+{
+  "note": "Kenya Postcards: travel and wildlife news, so a postcard can be timely (the migration, a park reopening, a festival).",
+  "feeds": [
+    {
+      "name": "Google News: Kenya travel and wildlife",
+      "topic": "travel",
+      "url": "https://news.google.com/rss/search?q=Kenya+%28tourism+OR+%22national+park%22+OR+%22game+reserve%22+OR+wildlife+OR+migration+OR+%22Maasai+Mara%22+OR+KWS+OR+%22Magical+Kenya%22%29+when%3A7d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    }
+  ]
+}

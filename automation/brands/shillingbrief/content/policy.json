@@ -1,0 +1,6 @@
+{
+  "note": "auto_approve: posts that pass every automatic check go out at their slot; anything that fails a check comes to this brand's Telegram bot for a decision.",
+  "auto_approve": true,
+  "news_photos": true,
+  "tiktok_packages": true
+}

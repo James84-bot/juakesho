@@ -1,8 +1,177 @@
 {
   "timezone": "Africa/Nairobi",
   "utc_offset": "+03:00",
-  "note": "News-only brand: no weekly planned slots (the news editions in brand.json make the posts).",
-  "slots": [],
+  "note": "Two postcards a day: a real Kenyan place in a real photo, one sourced fact, how to get there.",
+  "slots": [
+    {
+      "day": 1,
+      "time": "07:45",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 1,
+      "time": "18:30",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 2,
+      "time": "07:45",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 2,
+      "time": "18:30",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 3,
+      "time": "07:45",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 3,
+      "time": "18:30",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 4,
+      "time": "07:45",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 4,
+      "time": "18:30",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 5,
+      "time": "07:45",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 5,
+      "time": "18:30",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 6,
+      "time": "07:45",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 6,
+      "time": "18:30",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 7,
+      "time": "07:45",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    },
+    {
+      "day": 7,
+      "time": "18:30",
+      "template": "kenya",
+      "series": "Kenya at its best",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ]
+    }
+  ],
   "lanes": {
     "everyone": {
       "who": "Kenyans and visitors who love Kenya's places",

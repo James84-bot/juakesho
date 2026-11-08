@@ -205,7 +205,7 @@ EDITIONS = {"morning": {"time": (9, 45), "suffix": "m", "beat": "life"},
             "midday": {"time": (12, 45), "suffix": "", "beat": "life"},
             "afternoon": {"time": (15, 30), "suffix": "a", "beat": "sport"},   # Kenyan and world sport
             "evening": {"time": (19, 30), "suffix": "e", "beat": "politics"}}   # three in four are not politics
-if BRAND.get("editions"):   # another brand's own news slots (brands.py); an edition it doesn't list is skipped
+if not brands.MAIN and "editions" in BRAND:   # another brand's own news slots; {} = no news posts at all
     EDITIONS = {k: {"time": tuple(v["time"]), "suffix": v.get("suffix", ""), "beat": v["beat"]}
                 for k, v in BRAND["editions"].items()}
 BREAKING_LEAD, BREAKING_MAX = dt.timedelta(minutes=20), 2

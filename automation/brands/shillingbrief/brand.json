@@ -122,5 +122,40 @@
       "950": "#001305"
     }
   },
-  "palette_note": "The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (yellow reads as UDA, orange as ODM). Ink carries 90% of every design; red is the signature and the alarm; green means true and kept."
+  "palette_note": "The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (yellow reads as UDA, orange as ODM). Ink carries 90% of every design; red is the signature and the alarm; green means true and kept.",
+  "file_photos": false,
+  "breaking": true,
+  "editions": {
+    "morning": {
+      "time": [
+        7,
+        30
+      ],
+      "suffix": "m",
+      "beat": "money"
+    },
+    "midday": {
+      "time": [
+        12,
+        30
+      ],
+      "suffix": "",
+      "beat": "money"
+    },
+    "evening": {
+      "time": [
+        18,
+        30
+      ],
+      "suffix": "e",
+      "beat": "money"
+    }
+  },
+  "hot_kickers": {
+    "money": "Money"
+  },
+  "hot_briefs": {
+    "money": "Today's post: the money story that changes ordinary Kenyans' pockets right now, from the headlines in THIS WEEK IN KENYA, with its id in `source`. Choose in this order: a price, fee, tax, levy, rate or deduction that applies now or soon (with the date it starts); a decision by CBK, KRA, EPRA, the Treasury, a bank or Safaricom; a market number people feel (the shilling, T-bill rates, loan rates, fund returns); a money scam going round. Every post has the number in shillings or percent, the date it applies and who decided it, all from the headline or an official record. Never advice to buy, sell, invest or borrow, never crypto, forex signals, betting or loan promotion. `who` is the institution ('CBK', 'KRA', 'EPRA'). Pick a different story from the ones already covered today."
+  },
+  "critic_note": "THIS IS A PERSONAL MONEY PAGE (Shilling Brief), not a civic one: score `impact` on what it changes for an ordinary Kenyan's pocket, in shillings; `action` on whether the reader knows exactly what to check or do (check your payslip, top up before the date, report the scam), never advice to invest; `fair` on stating the decision and its source without spin."
 }

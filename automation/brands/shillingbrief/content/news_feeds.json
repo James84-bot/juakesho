@@ -1,0 +1,35 @@
+{
+  "note": "Shilling Brief: what changes Kenyans' money. One topic per kind of story, so none crowds out the rest.",
+  "feeds": [
+    {
+      "name": "Google News: CBK, rates and the shilling",
+      "topic": "money_rates",
+      "url": "https://news.google.com/rss/search?q=%22Central+Bank+of+Kenya%22+OR+CBK+OR+%22T-bill%22+OR+%22Treasury+bills%22+OR+%22Treasury+bond%22+OR+%22Central+Bank+Rate%22+OR+%22Kenya+shilling%22+when%3A2d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: tax and deductions",
+      "topic": "money_tax",
+      "url": "https://news.google.com/rss/search?q=KRA+OR+PAYE+OR+%22housing+levy%22+OR+SHIF+OR+%22Finance+Bill%22+OR+VAT+OR+%22eTIMS%22+Kenya+when%3A2d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: prices",
+      "topic": "money_prices",
+      "url": "https://news.google.com/rss/search?q=EPRA+OR+%22fuel+prices%22+OR+%22pump+prices%22+OR+%22unga+prices%22+OR+%22electricity+tariff%22+OR+%22Kenya+Power+tokens%22+OR+%22matatu+fares%22+when%3A2d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: banks, loans and M-Pesa",
+      "topic": "money_banks",
+      "url": "https://news.google.com/rss/search?q=%22M-Pesa%22+OR+Fuliza+OR+%22loan+rates%22+OR+%22Kenyan+banks%22+OR+SACCO+OR+%22Equity+Bank%22+OR+%22KCB%22+OR+%22Safaricom%22+charges+when%3A2d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: markets and pay",
+      "topic": "money_markets",
+      "url": "https://news.google.com/rss/search?q=%22Nairobi+Securities+Exchange%22+OR+NSE+OR+%22money+market+fund%22+OR+%22minimum+wage%22+OR+%22salary%22+OR+%22pension%22+Kenya+when%3A2d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: money scams",
+      "topic": "money_scams",
+      "url": "https://news.google.com/rss/search?q=Kenya+%28scam+OR+fraud+OR+%22Ponzi%22+OR+%22pyramid+scheme%22+OR+%22fake+investment%22%29+money+when%3A7d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    }
+  ]
+}
