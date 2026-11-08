@@ -288,6 +288,20 @@ def short_number(n: int) -> str:
     return str(n)
 
 
+def fit(text: str, cap: int) -> str:
+    """What fits on a chart row: the whole text, or cut at a word or comma before `cap` with an ellipsis (the
+    caption keeps every name in full)."""
+    text = str(text).strip()
+    if len(text) <= cap:
+        return text
+    cut = text[:cap - 1]
+    cut = cut[:max(cut.rfind(" "), cut.rfind(","))] if max(cut.rfind(" "), cut.rfind(",")) > cap // 2 else cut
+    return cut.rstrip(" ,&-x") + "\u2026"
+
+
+ROW_SONG, ROW_ARTIST = 30, 42   # characters a chart row shows (Inter Tight 34px, Inter 25px, in 600px)
+
+
 def chart_post(slot: dict, songs: list[dict], as_of: str) -> dict:
     lines = [f"{i + 1}. {s['artist']} - {s['song']} ({short_number(s['per_day'])} views a day)" for i, s in enumerate(songs)]
     cap = ("Ngoma za Wiki: what Kenya is playing on YouTube right now.\n\n" + "\n".join(lines)
@@ -296,6 +310,7 @@ def chart_post(slot: dict, songs: list[dict], as_of: str) -> dict:
            + f"\n\n{TAGS['chart']}")
     for s in songs:
         s["per_day_text"] = short_number(s["per_day"])
+        s["song_row"], s["artist_row"] = fit(s["song"], ROW_SONG), fit(s["artist"], ROW_ARTIST)
     return {**slot, "songs": songs, "as_of": as_of, "caption": cap,
             "source": f"YouTube Data API, most-popular music videos for Kenya, read {as_of}",
             "shorts_title": "Ngoma za Wiki: what Kenya is playing right now #Shorts",

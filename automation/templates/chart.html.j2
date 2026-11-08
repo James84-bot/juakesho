@@ -49,7 +49,7 @@
     {% for s in songs %}
     <div class="r{{ ' one' if loop.first }}">
       <div class="k">{{ loop.index }}</div>
-      <div class="s"><div class="t">{{ s.song }}</div><div class="a">{{ s.artist }}</div></div>
+      <div class="s"><div class="t">{{ s.song_row or s.song }}</div><div class="a">{{ s.artist_row or s.artist }}</div></div>
       <div class="v">{{ s.per_day_text }}<small>views a day</small></div>
     </div>
     {% endfor %}

@@ -122,6 +122,16 @@ class Chart(unittest.TestCase):
         self.assertEqual(posts, [])
         self.assertIn("could not be read", held[0][1])
 
+    def test_long_names_are_shortened_on_the_row_and_kept_whole_in_the_caption(self):
+        long = "Diamond Platnumz, Xduppy & Dj Maphorisa ft Focalistic, Uncool MC, Ricky & Angekebabuye"
+        self.assertEqual(mtaa.fit(long, mtaa.ROW_ARTIST), "Diamond Platnumz, Xduppy & Dj Maphorisa\u2026")
+        self.assertEqual(mtaa.fit("Bien", mtaa.ROW_ARTIST), "Bien")
+        songs, as_of = self.songs()
+        songs[0]["artist"] = long
+        p = mtaa.chart_post({"id": "c", "template": "chart", "publish_at": "2026-11-09T17:30:00+03:00"}, songs, as_of)
+        self.assertLessEqual(len(p["songs"][0]["artist_row"]), mtaa.ROW_ARTIST)
+        self.assertIn(long, p["caption"])
+
     def test_rows_land_from_ten_up_to_one(self):
         tl = mtaa.chart_timeline(10)
         self.assertEqual(tl["rows"], sorted(tl["rows"], reverse=True))   # #1 (index 0) lands last
