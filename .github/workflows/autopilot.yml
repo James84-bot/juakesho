@@ -136,7 +136,20 @@ jobs:
       - name: Run ${{ steps.cmd.outputs.c }}
         if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse'
         env:
-          BRAND_SECRETS: ${{ toJSON(secrets) }}   # each brand's own keys (KEY__SLUG) and META_PAGES; read by brands.py only
+          # each brand's own accounts (automation/brands.py): never Kenya on Record's
+          META_PAGES: ${{ secrets.META_PAGES }}
+          TELEGRAM_BOT_TOKEN__FULLTIMEKENYA: ${{ secrets.TELEGRAM_BOT_TOKEN__FULLTIMEKENYA }}
+          YT_REFRESH_TOKEN__FULLTIMEKENYA: ${{ secrets.YT_REFRESH_TOKEN__FULLTIMEKENYA }}
+          TIKTOK_REFRESH_TOKEN__FULLTIMEKENYA: ${{ secrets.TIKTOK_REFRESH_TOKEN__FULLTIMEKENYA }}
+          TELEGRAM_BOT_TOKEN__SHILLINGBRIEF: ${{ secrets.TELEGRAM_BOT_TOKEN__SHILLINGBRIEF }}
+          YT_REFRESH_TOKEN__SHILLINGBRIEF: ${{ secrets.YT_REFRESH_TOKEN__SHILLINGBRIEF }}
+          TIKTOK_REFRESH_TOKEN__SHILLINGBRIEF: ${{ secrets.TIKTOK_REFRESH_TOKEN__SHILLINGBRIEF }}
+          TELEGRAM_BOT_TOKEN__VERIFIEDJOBSKE: ${{ secrets.TELEGRAM_BOT_TOKEN__VERIFIEDJOBSKE }}
+          YT_REFRESH_TOKEN__VERIFIEDJOBSKE: ${{ secrets.YT_REFRESH_TOKEN__VERIFIEDJOBSKE }}
+          TIKTOK_REFRESH_TOKEN__VERIFIEDJOBSKE: ${{ secrets.TIKTOK_REFRESH_TOKEN__VERIFIEDJOBSKE }}
+          TELEGRAM_BOT_TOKEN__KENYAPOSTCARDS: ${{ secrets.TELEGRAM_BOT_TOKEN__KENYAPOSTCARDS }}
+          YT_REFRESH_TOKEN__KENYAPOSTCARDS: ${{ secrets.YT_REFRESH_TOKEN__KENYAPOSTCARDS }}
+          TIKTOK_REFRESH_TOKEN__KENYAPOSTCARDS: ${{ secrets.TIKTOK_REFRESH_TOKEN__KENYAPOSTCARDS }}
           BRAND_IN: ${{ steps.cmd.outputs.brand }}
           C: ${{ steps.cmd.outputs.c }}
           BASE: ${{ steps.cmd.outputs.base || steps.cmd.outputs.c }}

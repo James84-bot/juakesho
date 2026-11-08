@@ -60,6 +60,17 @@ class Brands(unittest.TestCase):
             b.apply_env(env)
         self.assertEqual((env["META_ACCESS_TOKEN"], env["META_PAGE_ID"]), ("", ""))
 
+    def test_a_page_named_exactly_like_the_brand_is_its_page_when_no_id_is_set(self):
+        b = self.load("fulltimekenya")
+        env = {"META_PAGES": PAGES}
+        with mock.patch.object(b, "brand", lambda slug=None: {"name": "Full Time Kenya"}):
+            b.apply_env(env)
+        self.assertEqual((env["META_ACCESS_TOKEN"], env["META_PAGE_ID"]), ("FTK-PAGE", "222"))
+        env = {"META_PAGES": PAGES}
+        with mock.patch.object(b, "brand", lambda slug=None: {"name": "Kenya on Record Fans"}):   # no near-misses
+            b.apply_env(env)
+        self.assertEqual(env["META_ACCESS_TOKEN"], "")
+
     def test_pages_paste_is_read_whole_or_as_a_list(self):
         self.assertEqual(len(brands._pages(PAGES)), 2)
         self.assertEqual(len(brands._pages(json.dumps(json.loads(PAGES)["data"]))), 2)

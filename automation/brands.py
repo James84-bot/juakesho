@@ -90,11 +90,13 @@ def apply_env(environ: dict | None = None) -> list[str]:
     for key in ACCOUNT_KEYS:
         env[key] = get(f"{key}__{SLUG.upper()}")
     b = brand()
-    page_id = str(b.get("facebook_page_id") or "")
-    if page_id and not env["META_ACCESS_TOKEN"]:
-        page = next((p for p in _pages(get("META_PAGES")) if str(p["id"]) == page_id), None)
+    page_id, name = str(b.get("facebook_page_id") or ""), str(b.get("name") or "").strip().lower()
+    if not env["META_ACCESS_TOKEN"]:   # its Page in the me/accounts paste: by id, or by the brand's exact name
+        pages = _pages(get("META_PAGES"))
+        page = next((p for p in pages if page_id and str(p["id"]) == page_id), None) or \
+            next((p for p in pages if not page_id and name and str(p.get("name", "")).strip().lower() == name), None)
         if page:
-            env["META_ACCESS_TOKEN"], env["META_PAGE_ID"] = page["access_token"], page_id
+            env["META_ACCESS_TOKEN"], env["META_PAGE_ID"] = page["access_token"], str(page["id"])
     if b.get("instagram_id") and not env["META_IG_USER_ID"]:
         env["META_IG_USER_ID"] = str(b["instagram_id"])
     return [k for k in ACCOUNT_KEYS if not env.get(k)]
