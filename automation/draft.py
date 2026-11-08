@@ -38,10 +38,13 @@ CRAFT_RULES = """MAKE IT WORTH STOPPING FOR (reach comes from the first 2 second
   write fewer beats (3 is fine). Never pad.
 - No puffery or filler: breathtaking, stunning, towering, iconic, a key link, remains a vital, plays a crucial role,
   visitors enjoy, gathering pace, "Kenyans demand verified facts", "never share without checking" as a closer.
-- The last line gives the viewer ONE specific thing to do (send, save, tell us, check, call, submit), never a slogan like "Kenyans demand: ..." and never generic. It is a reason to act, specific to THIS post: a place gets "Tag who you'd take" or
-  "Save this for your next trip"; a price gets "Tell us what you paid at your station"; a myth gets "Send this
-  to the person who shared it"; a poll gets the question itself. Never "Send this to someone who needs..." or
-  "Share to spread awareness".
+- The LAST line is a question to the viewer about their own life, shown on screen, that they can answer in the
+  comments in a word or a number: "Did you pay anything for your KRA PIN? Tell us below." "Is your family smaller
+  than your parents' was?" "What did you pay for unga this week?" A place gets "Who would you take here? Tag them."
+  Comments are what push a Reel to new people; viewers never read the caption, so the question must be the last
+  beat, not only in the caption. Never "Send this to someone who needs...", "Share to spread awareness", a slogan,
+  or a web address: "Read the full report at knbs.or.ke" is never a beat (the source goes in `source`, which we post
+  as the first comment).
 - Write the way a Kenyan friend would say it aloud: contractions are fine, short, concrete, no brochure voice.
 """
 
@@ -69,8 +72,11 @@ half-sentence. Write like a sharp Kenyan news editor: simple words, but complete
   direct, like a sharp Kenyan friend explaining the news, never like a foreign newsreader.
 - Tell them what they don't already know: the amount, the date, the document, who decides, what happens next.
   Don't explain basics an informed adult knows ("taxes fund the government").
-- Kenyans DEMAND, they don't plead. Every accountability post ends with one concrete demand to a named office,
-  with what and, where it exists, by when. Say it a different way each time, office first where it reads well:
+- Kenyans DEMAND, they don't plead. Every accountability post (money lost or stolen, a service denied, a promise
+  broken, a law ignored) carries one concrete demand to a named office as the line BEFORE the closing question,
+  with what and, where it exists, by when. Good news, a record, a statistic or an explainer carries NO demand: a
+  demand on good news ("Kenyans demand: the Ministry maintains border checks" after zero Ebola cases) reads as
+  a template. Say it a different way each time, office first where it reads well:
   "KeNHA must reopen Makupa Bridge by December, as promised." "The Treasury owes us the full list of lenders."
   "Kenyans demand: SHA pays the 2,000 clinics it owes." Never open two posts the same way, and never a vague
   "where is the money?",
@@ -412,7 +418,7 @@ URGENT, NOT PARAGRAPHS
 - Never fake urgency: no invented deadlines, no "BREAKING" on old news, no exaggerated numbers. Real stakes only.
 
 REELS ARE SCRIPTS (`beats`, on every post)
-- Every post gets `beats`: 3-5 lines, max 10 words each, shown one at a time full screen over the photo, a new
+- Every post gets `beats`: 3-4 lines, max 10 words each, shown one at a time full screen over the photo, a new
   picture behind each. Short lines move fast and fast Reels get watched to the end. Each beat is a sentence that
   makes sense on its own (someone may see only one of them).
 - Shape: 1 the hook: the most surprising number or consequence, said the way a Kenyan would tell a friend ("Sugar
@@ -531,7 +537,8 @@ def _field_spec(template: str) -> dict:
     if template == "kesho":
         spec.update({"n": "slide number", "total": "total slides"})
     if template in guard.REEL_FIRST:
-        spec["beats"] = "the Reel script: list of 3-5 complete sentences, each max 12 words / 72 chars, one *marker* max per line"
+        spec["beats"] = ("the Reel script: list of 3-4 complete sentences, each max 12 words / 72 chars, one *marker* max per line; "
+                         "the last is a question to the viewer they can answer in the comments")
     return spec
 
 
@@ -566,7 +573,7 @@ def learnings_text() -> str:
 
 REWRITE_RULES = """You rewrite the Reel script (`beats`) and the Instagram `caption` of one finished post for KENYA ON
 RECORD, under the rules below. Same facts, same numbers, nothing added that the post and its source don't say.
-Return ONLY JSON: {"beats": ["3-5 lines"], "caption": "..."}"""
+Return ONLY JSON: {"beats": ["3-4 lines"], "caption": "..."}"""
 
 
 def rewrite_script(post: dict) -> dict | None:
@@ -751,7 +758,7 @@ EXAMPLES OF FINISHED POSTS (style reference only)
 
 Return ONLY JSON, no commentary:
 Every post also needs "message" (the one takeaway, max 120 chars), "action" (the one thing to do, max 90 chars),
-"beats" (the Reel script: 3-5 complete sentences, max 12 words each; the FIRST is the whole news in one line) and, almost always, "photo_query" (a real scene).
+"beats" (the Reel script: 3-4 complete sentences, max 12 words each; the FIRST is the whole news in one line, the LAST a question the viewer answers in the comments) and, almost always, "photo_query" (a real scene).
 {{"posts": [{{"id": "...", "template": "...", "lane": "...", "message": "...", "action": "...", "beats": ["...", "..."], "photo_query": "...", "caption": "...", "source": "...(when needed)", "...fields": "..."}}],
  "scripts": {{"radio": "...", "voice_note": "...", "sms": "...", "reels": "..."}}}}"""
     return system, user
@@ -1129,8 +1136,10 @@ CRITIC_RUBRIC = """You are the toughest editor at a Kenyan news desk whose reade
   services, rights, safety, vote)? Repeating the headline without its effect on people scores low
 - fair: would the same post read the same if the other side had done it? credit and criticism both with proof,
   sarcasm at the decision or record, never an insult or our own verdict of guilt
-- action: accountability posts end with a concrete, lawful demand to a named office ("KeNHA must ...") and
-  one real thing a Kenyan can do; a plea, a vague question ("where is the money?") or "stay informed" scores low.
+- action: the last beat is a question the viewer can answer in the comments about their own life ("Did you pay
+  anything for your KRA PIN?"); accountability posts carry a concrete, lawful demand to a named office ("KeNHA
+  must ...") in the beat before it. A demand on good news, a web address as the last beat, a plea, a vague question
+  ("where is the money?") or "stay informed" scores low.
   Showcase posts (a place, a finished project) score on whether people would save or share them with pride
 - hold: would they watch to the end? does beat 1 tell the whole news in one sentence so the first second stops
   the scroll, and does each beat add a new fact (record, stakes, question)? fragments or filler beats score low

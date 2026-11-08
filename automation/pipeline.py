@@ -2644,6 +2644,11 @@ def _main(argv: list[str] | None = None) -> int:
             learn()
         except Exception as e:
             log(f"learn skipped: {e}")
+        if brands.MAIN:
+            try:   # followers and subscribers every day, so growth (or none) shows in state/stats.jsonl
+                platform_stats()
+            except Exception as e:
+                log(f"stats skipped: {e}")
     newsroom = brands.MAIN or bool(BRAND.get("editions"))   # Mtaa Mode reads no news
     if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "renew", "redo", "radar", "photocheck"} and not a.mock \
             and newsroom:

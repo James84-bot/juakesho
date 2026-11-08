@@ -184,6 +184,8 @@ def closer_problem(last: str) -> str:
         return "the last line is empty"
     if GENERIC_CLOSER.search(line):
         return "the last line is a generic ask ('send this to someone...', 'share to spread awareness'): name who or what, specific to this post"
+    if re.search(r"\b(read|check|see|visit|find)\b.{0,40}\b[a-z0-9-]+\.(go\.ke|or\.ke|co\.ke|ke|org|com)\b", line, re.I):
+        return "WARN: the last line sends people to a website: end on a question they answer in the comments (the source goes in the first comment)"
     if re.match(r"\W*kenyans demand\b", line, re.I) or not CLOSER_ACTION.search(line):
         return "WARN: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
     return ""
