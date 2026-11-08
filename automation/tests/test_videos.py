@@ -25,10 +25,11 @@ def page(title, lic="CC BY-SA 4.0", width=1920, desc="", cats="", size=5_000_000
 
 
 class Wanted(unittest.TestCase):
-    def test_footage_replaces_symbols_never_a_news_photo(self):
+    def test_full_footage_only_for_a_showcase_never_a_news_post(self):
         beats = ["a b c d.", "e f g h.", "i j k l."]
         self.assertTrue(videos.wanted({"template": "kenya", "beats": beats}))
-        self.assertTrue(videos.wanted({"template": "sauti", "beats": beats, "photo_kind": "symbolic", "photo_query": "x"}))
+        # a news post with a symbolic photo gets labelled b-roll at most, never archive film by a symbolic query
+        self.assertFalse(videos.wanted({"template": "sauti", "beats": beats, "photo_kind": "symbolic", "photo_query": "x"}))
         self.assertFalse(videos.wanted({"template": "sauti", "beats": beats, "photo_kind": "posted", "photo_query": "x"}))
         self.assertFalse(videos.wanted({"template": "sauti", "beats": beats, "photo_kind": "file", "photo_query": "x"}))
         self.assertFalse(videos.wanted({"template": "tazama", "beats": beats}))

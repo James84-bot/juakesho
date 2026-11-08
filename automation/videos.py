@@ -48,12 +48,12 @@ _note = photos._note
 
 
 def wanted(post: dict) -> bool:
-    """Footage only where it improves the post: a showcase, or a symbolic photo (never over a real news photo)."""
+    """Full-screen footage only for a showcase (the place itself, found by its name). A news post never gets it:
+    archive films matched by a symbolic query showed strangers' faces (a 1950s film on a debt story) and once a
+    foreign head of state on a Kenyan story. A news post with a symbolic photo gets labelled b-roll instead."""
     if not post.get("beats") or post.get("template") == "tazama" or post.get("group"):
         return False
-    if post.get("template") in SHOWCASE:
-        return True
-    return post.get("photo_kind") in {None, "symbolic"} and bool(post.get("photo_query"))
+    return post.get("template") in SHOWCASE
 
 
 def _query(post: dict) -> str:
