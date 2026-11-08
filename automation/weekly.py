@@ -114,6 +114,10 @@ HARD RULES
 - Never: em dashes, "it's not just X, it's Y", "in today's world", "delve", "navigate", "landscape", "unlock",
   "pivotal", "crucial", "harness", "foster", "here's the thing", "let's dive in", "buckle up", "stay tuned".
 - No numbering of stories in the voice ("story number one"): move between stories with a natural line.
+- Written to be read aloud: sentences of 8-20 words, one idea each. Dates as people say them ("on Monday",
+  "on 2 November"), never "the second of November 2026".
+- Vary the endings. Say "demand" at most twice in the whole script; never end two parts with the same kind of
+  line ("the big question", "what remains to be seen"). Swahili words at most once in the whole script.
 
 SHAPE
 - intro: {WORDS['intro'][0]}-{WORDS['intro'][1]} words. Open on the most striking fact of the week (from the stories),
@@ -176,6 +180,11 @@ def check(script: dict, posts: list[dict], extra: str = "") -> list[str]:
         if not str(s.get("chapter") or "").strip() or len(str(s.get("chapter"))) > 60:
             problems.append(f"{s.get('id')}: chapter title missing or too long")
     allt = " ".join([str(script.get("intro") or ""), str(script.get("outro") or "")] + [str(s.get("script") or "") for s in stories])
+    if len(re.findall(r"\bdemand", allt, re.I)) > 2:
+        problems.append("'demand' is said more than twice: vary it")
+    long = [x.strip()[:60] for x in re.split(r"(?<=[.!?])\s+", allt) if len(x.split()) > 28]
+    if long:
+        problems.append(f"{len(long)} sentence(s) over 28 words, too long to read aloud: " + " | ".join(long[:3]))
     bad = [w for w in guard.NEVER_WORDS if re.search(rf"\b{re.escape(w)}\b", allt, re.I)]
     if "—" in allt:
         bad.append("em dash")

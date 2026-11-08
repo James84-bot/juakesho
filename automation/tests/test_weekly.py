@@ -26,7 +26,9 @@ SUGAR = post("sugar", 7, ["Sugar is *Sh32* cheaper for a 2kg packet.", "Factorie
 
 
 def words(n):
-    return " ".join(["word"] * n)
+    """n words of filler, in sentences of ten (a script is read aloud: no endless sentences)."""
+    w = ["word"] * n
+    return " ".join(" ".join(w[i:i + 10]) + "." for i in range(0, n, 10))
 
 
 class Pick(unittest.TestCase):
@@ -56,6 +58,12 @@ class Script(unittest.TestCase):
     def test_a_number_its_story_does_not_state_fails(self):
         problems = weekly.check(self.script(fkf_text=words(160) + " The vote was 45 to 12."), [SUGAR, FKF])
         self.assertTrue(any("fkf: numbers not in its story: 12, 45" in p for p in problems), problems)
+
+    def test_too_many_demands_and_endless_sentences_fail(self):
+        s = self.script(intro=words(40) + " Kenyans demand this. They demand that. We demand more. " + " ".join(["long"] * 30) + ".")
+        problems = " | ".join(weekly.check(s, [SUGAR, FKF]))
+        self.assertIn("'demand' is said more than twice", problems)
+        self.assertIn("over 28 words", problems)
 
     def test_wrong_order_banned_words_and_em_dashes_fail(self):
         s = self.script(intro=words(55) + " Let's delve into it — now.")
