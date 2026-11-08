@@ -10,3 +10,5 @@ exports/**/videos/
 automation/state/inbox.jsonl
 # samples sent to Telegram for review are not published
 exports/_samples/
+# the weekly show's video and voice notes go to YouTube, never into the repo (files over 100 MB are refused)
+exports/_weekly/

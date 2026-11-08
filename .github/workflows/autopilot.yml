@@ -15,6 +15,7 @@ on:
     - cron: "30 9 * * *"      # daily 09:30 UTC = 12:30 EAT: the afternoon news post (out at 15:30)
     - cron: "40 5-17/2 * * *" # every 2 h, 08:40-20:40 EAT: a breaking post, only when several newsrooms report a new story
     - cron: "10 14 * * 3"     # Wednesday 17:10 EAT: write Friday-Sunday close to their slots (backup to the listener)
+    - cron: "0 6 * * 6"       # Saturday 09:00 EAT: Kenya This Week, the weekly YouTube show, written and sent to record
   repository_dispatch:
     types: [tvclip]           # a TV clip your computer fetched (automation/tvclip_local.py)
   workflow_dispatch:
@@ -90,10 +91,11 @@ jobs:
           elif [ "${{ github.event.schedule }}" = "30 9 * * *" ]; then echo "c=hot --afternoon" >> "$GITHUB_OUTPUT"; echo "base=hot" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "40 5-17/2 * * *" ]; then echo "c=hot --breaking" >> "$GITHUB_OUTPUT"; echo "base=hot" >> "$GITHUB_OUTPUT";
           elif [ "${{ github.event.schedule }}" = "10 14 * * 3" ]; then echo "c=this-week" >> "$GITHUB_OUTPUT";
+          elif [ "${{ github.event.schedule }}" = "0 6 * * 6" ]; then echo "c=weekly" >> "$GITHUB_OUTPUT";
           else echo "c=tick" >> "$GITHUB_OUTPUT"; fi
 
       - name: Install
-        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'hot' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'this-week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'redo' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rehearse' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'samples' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'remake' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'renew' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rephoto' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'clips' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tracker' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'render' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'showcase' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tvclipwork'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'hot' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'this-week' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'redo' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rehearse' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'samples' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'remake' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'renew' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'rephoto' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'clips' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tracker' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'render' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'showcase' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'tvclipwork' || (steps.cmd.outputs.base || steps.cmd.outputs.c) == 'weeklywork'
         run: |
           pip install -r automation/requirements.txt yt-dlp
           python -m playwright install --with-deps chromium
@@ -101,7 +103,7 @@ jobs:
           if [ "${{ steps.cmd.outputs.c }}" = "clips" ] || [ "${{ steps.cmd.outputs.c }}" = "tvclipwork" ]; then pip install faster-whisper; fi   # captions from the clip's audio
 
       - name: Install (light)
-        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'hot' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'this-week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'redo' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'samples' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'remake' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'renew' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rephoto' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'clips' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tracker' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'render' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'showcase' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tvclipwork' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip'
+        if: (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'hot' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'this-week' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'redo' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rehearse' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'samples' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'remake' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'renew' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'rephoto' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'clips' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tracker' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'render' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'showcase' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'tvclipwork' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'weeklywork' && (steps.cmd.outputs.base || steps.cmd.outputs.c) != 'skip'
         run: pip install -r automation/requirements.txt
 
       - name: Tests
@@ -188,6 +190,18 @@ jobs:
           pip install faster-whisper
           set -o pipefail
           python pipeline.py clipwork 2>&1 | tee -a run.log
+
+      - name: Kenya This Week (the recorded weekly show)
+        if: steps.cmd.outputs.c == 'tick'
+        run: |
+          cd automation
+          # only when every part of this week's show has its voice note: build it and upload it to YouTube
+          python -c "import json,glob,sys; sys.exit(0 if any(json.load(open(f)).get('status')=='ready' for f in glob.glob('state/weekly/*.json')) else 1)" 2>/dev/null \
+            || { echo "no show waiting"; exit 0; }
+          python -m playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg || true
+          set -o pipefail
+          python pipeline.py weeklywork 2>&1 | tee -a run.log
 
       - name: Fresh versions of posts that went stale
         if: steps.cmd.outputs.c == 'tick'

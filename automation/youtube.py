@@ -48,17 +48,21 @@ def access_token() -> str:
     return r["access_token"]
 
 
-def body(title: str, description: str) -> dict:
-    return {"snippet": {"title": title[:100], "description": description[:MAX_DESC],
-                        "categoryId": "25"},   # News & Politics
-            "status": {"privacyStatus": "public", "selfDeclaredMadeForKids": False}}
+def body(title: str, description: str, publish_at: str | None = None, tags: list[str] | None = None) -> dict:
+    """publish_at (RFC 3339): uploaded private and published by YouTube at that time (its scheduling rule)."""
+    status = {"privacyStatus": "private", "publishAt": publish_at} if publish_at else {"privacyStatus": "public"}
+    snippet = {"title": title[:100], "description": description[:MAX_DESC], "categoryId": "25"}   # News & Politics
+    if tags:
+        snippet["tags"] = tags[:15]
+    return {"snippet": snippet, "status": {**status, "selfDeclaredMadeForKids": False}}
 
 
-def upload(video: Path, title: str, description: str) -> dict:
+def upload(video: Path, title: str, description: str, publish_at: str | None = None,
+           tags: list[str] | None = None) -> dict:
     """Resumable upload. Returns {"id", "privacy"}; privacy shows when YouTube forced the video to private."""
     token = access_token()
     data = Path(video).read_bytes()
-    meta = json.dumps(body(title, description)).encode()
+    meta = json.dumps(body(title, description, publish_at, tags)).encode()
     start = urllib.request.Request(UPLOAD_URL, data=meta, method="POST", headers={
         "Authorization": f"Bearer {token}", "Content-Type": "application/json; charset=UTF-8",
         "X-Upload-Content-Type": "video/mp4", "X-Upload-Content-Length": str(len(data))})
@@ -74,6 +78,20 @@ def upload(video: Path, title: str, description: str) -> dict:
     if not done.get("id"):
         raise RuntimeError("YouTube upload returned no video id")
     return {"id": done["id"], "privacy": (done.get("status") or {}).get("privacyStatus", "unknown")}
+
+
+def thumbnail(video_id: str, image: Path) -> None:
+    """A custom thumbnail (JPEG under 2 MB). YouTube allows it only on channels verified by phone: the error says so."""
+    token = access_token()
+    req = urllib.request.Request(
+        f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={urllib.parse.quote(video_id)}",
+        data=Path(image).read_bytes(), method="POST",
+        headers={"Authorization": f"Bearer {token}", "Content-Type": "image/jpeg"})
+    try:
+        with urllib.request.urlopen(req, timeout=120):
+            pass
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"YouTube thumbnail → {e.code}: {e.read().decode(errors='replace')[:300]}") from e
 
 
 def stats(ids: list[str]) -> dict[str, dict]:

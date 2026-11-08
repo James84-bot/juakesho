@@ -1404,8 +1404,9 @@ def collect() -> None:
                 except Exception as e:
                     log(f"note reply skipped: {e}")
                 continue
-            if _voice_of(msg):            # a voice note: a note to the team, like a text
-                _voice_note(msg, allowed_chat)
+            if _voice_of(msg):            # a part of the weekly show, or else a note to the team, like a text
+                if not _weekly_voice(msg, allowed_chat):
+                    _voice_note(msg, allowed_chat)
             elif _is_image(msg):          # a photo you replied to a card with: swaps that post's picture
                 _photo_intake(msg, allowed_chat)
             else:                         # a clip you sent for a Tazama Hii Reel
@@ -1853,6 +1854,156 @@ def fb_digest(dry_run: bool = False, force: bool = False) -> str | None:
     st_file.write_text(json.dumps({"date": t.date().isoformat(), "fb_id": fb_id, "posts": [p["id"] for p in posts]}),
                        encoding="utf-8")
     return text
+
+
+# ---------------------------------------------------------------------------
+# Kenya This Week: the weekly long-form YouTube show, narrated by the owner (weekly.py)
+# ---------------------------------------------------------------------------
+def weekly_script(dry_run: bool = False) -> bool:
+    """Saturday: the week's biggest stories, the script, and one Telegram message per part to record."""
+    import weekly
+    t = now()
+    label = current_week_label(ahead=0)
+    state = weekly.load(label)
+    if state.get("status") in {"recording", "ready", "building", "uploaded"}:
+        log(f"weekly show {label}: already {state['status']}")
+        return False
+    weeks = [json.loads(f.read_text(encoding="utf-8")) for f in sorted(WEEKS.glob("*.json"))[-2:]]
+    posts = weekly.candidates(weeks, t - dt.timedelta(days=7), t)
+    try:
+        learned = json.loads((STATE / "learnings.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        learned = {}
+    chosen = weekly.pick(posts, learned)
+    if len(chosen) < 4:
+        log(f"weekly show {label}: only {len(chosen)} stories went out this week, skipped")
+        if not dry_run:
+            _notify(f"🎬 No <b>{weekly.SHOW}</b> this week: only {len(chosen)} stories went out (it needs 4).")
+        return False
+    week_name = f"{t - dt.timedelta(days=6):%-d %b} to {t:%-d %b %Y}"
+    script, problems = weekly.write(chosen, week_name)
+    if not script:
+        log(f"weekly show {label}: script failed its checks: {problems}")
+        if not dry_run:
+            _notify(f"🎬 <b>{weekly.SHOW}</b>: the script failed its checks three times, so there is no show this "
+                    f"week. {_esc('; '.join(problems)[:600])}")
+        return False
+    state = {"label": label, "week_name": week_name, "status": "recording", "script": script,
+             "posts": [p["id"] for p in chosen], "parts": weekly.parts(script), "made_at": t.isoformat()}
+    if dry_run:
+        log(f"weekly show {label} (dry run): {script['title']}\n" + "\n\n".join(f"[{p['title']}] {p['text']}" for p in state["parts"]))
+        return True
+    chat = need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
+    _notify(f"🎬 <b>{weekly.SHOW}</b> is written: {_esc(script['title'])}\n\n{len(state['parts'])} parts follow. Reply to "
+            f"each one with a voice note reading it (about {sum(len(p['text'].split()) for p in state['parts']) // 150 + 1} "
+            "minutes in all). When every part is in, the video is made and goes up on YouTube on Sunday at 18:00.")
+    for i, part in enumerate(state["parts"], 1):
+        res = tg("sendMessage", {"chat_id": chat, "text": weekly.part_message(i, len(state["parts"]), part), "parse_mode": "HTML"})
+        part["msg"] = res["result"]["message_id"]
+    weekly.save(label, state)
+    return True
+
+
+def _weekly_voice(msg: dict, chat: str) -> bool:
+    """A voice note that replies to a part of the weekly show: filed under that part. False if it isn't one."""
+    import weekly
+    reply = (msg.get("reply_to_message") or {}).get("message_id")
+    if not reply or not weekly.DIR.exists():
+        return False
+    for f in sorted(weekly.DIR.glob("*.json"))[-2:]:
+        state = weekly.load(f.stem)
+        if state.get("status") not in {"recording", "ready"}:
+            continue
+        part = weekly.file_voice(state, reply, _voice_of(msg) or {})
+        if part:
+            weekly.save(f.stem, state)
+            have = sum(1 for p in state["parts"] if p.get("voice"))
+            text = (f"🎙 Got <b>{_esc(part['title'])}</b>. {have} of {len(state['parts'])} parts in."
+                    + (" All in: the video is being made now and goes up on YouTube on Sunday at 18:00." if state["status"] == "ready" else ""))
+            try:
+                tg("sendMessage", {"chat_id": chat, "text": text, "parse_mode": "HTML", "reply_to_message_id": msg["message_id"]})
+            except Exception as e:
+                log(f"weekly reply skipped: {e}")
+            return True
+    return False
+
+
+def weekly_nudge() -> None:
+    """Sunday from 10:00: one reminder of the parts still to record. Monday: a week with no voice is dropped."""
+    import weekly
+    t = now()
+    for f in sorted(weekly.DIR.glob("*.json"))[-2:] if weekly.DIR.exists() else []:
+        state = weekly.load(f.stem)
+        if state.get("status") != "recording":
+            continue
+        missing = [p["title"] for p in state["parts"] if not p.get("voice")]
+        made = dt.datetime.fromisoformat(state["made_at"])
+        if t - made > dt.timedelta(days=2, hours=12):
+            state["status"] = "skipped"
+            weekly.save(f.stem, state)
+            _notify(f"🎬 <b>{weekly.SHOW}</b> {state['week_name']}: not recorded, so it was dropped. Next one on Saturday.")
+        elif t.weekday() == 6 and t.hour >= 10 and not state.get("nudged"):
+            state["nudged"] = t.isoformat()
+            weekly.save(f.stem, state)
+            _notify(f"🎬 <b>{weekly.SHOW}</b> goes up at 18:00 once it's recorded. Still to record: "
+                    + ", ".join(_esc(m) for m in missing) + ". Reply to each part's message with a voice note.")
+
+
+def weekly_work(dry_run: bool = False) -> list[str]:
+    """Builds every recorded show and uploads it for Sunday 18:00 (straight away if that has passed)."""
+    import tazama
+    import weekly
+    import youtube
+    done = []
+    for f in sorted(weekly.DIR.glob("*.json"))[-2:] if weekly.DIR.exists() else []:
+        state = weekly.load(f.stem)
+        if state.get("status") != "ready":
+            continue
+        label = f.stem
+        state["status"] = "building"
+        weekly.save(label, state)
+        try:
+            weeks = [json.loads(w.read_text(encoding="utf-8")) for w in sorted(WEEKS.glob("*.json"))[-3:]]
+            posts = {p["id"]: p for d in weeks for p in d.get("posts", []) if p["id"] in state["posts"]}
+            work = EXPORTS / "_weekly" / label
+            work.mkdir(parents=True, exist_ok=True)
+            token = need("TELEGRAM_BOT_TOKEN")["TELEGRAM_BOT_TOKEN"]
+            audio = {}
+            for i, part in enumerate(state["parts"]):
+                src = work / f"voice-{i}.ogg"
+                tazama.download(_tg_file_path, token, part["voice"]["file_id"], src)
+                audio[part["key"]] = src
+            made = weekly.build(state, posts, audio, work)
+            state.update(made=made)
+            desc = weekly.description(state["script"], [posts[i] for i in state["posts"] if i in posts], made["chapters"])
+            if dry_run or not youtube.ready():
+                state["status"] = "built"
+                log(f"weekly show {label} built ({made['seconds']} s), not uploaded"
+                    + (" (dry run)" if dry_run else " (YouTube not connected)"))
+            else:
+                when = weekly.publish_at(now())
+                up = youtube.upload(Path(made["video"]), state["script"]["title"], desc,
+                                    publish_at=when.astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ") if when else None,
+                                    tags=["Kenya news", "Kenya This Week", "Kenya on Record", "Kenya"])
+                state.update(status="uploaded", yt_id=up["id"], publish_at=when.isoformat() if when else now().isoformat())
+                try:
+                    youtube.thumbnail(up["id"], Path(made["thumbnail"]))
+                except Exception as e:   # custom thumbnails need a phone-verified channel; the video still goes out
+                    state["thumbnail_error"] = str(e)[:300]
+                link = f"https://youtu.be/{up['id']}"
+                _notify(f"🎬 <b>{weekly.SHOW}</b> is on YouTube ({made['seconds'] // 60:.0f} min), "
+                        + (f"public {when:%a %H:%M}" if when else "public now") + f": {link}"
+                        + ("\n⚠️ The custom thumbnail was refused: verify the channel by phone at youtube.com/verify, "
+                           "then it works from next week." if state.get("thumbnail_error") else ""))
+            done.append(label)
+        except Exception as e:
+            state["attempts"] = state.get("attempts", 0) + 1
+            state["status"] = "ready" if state["attempts"] < 2 else "failed"
+            state["last_error"] = str(e)[:400]
+            log(f"weekly show {label} failed: {e}")
+            _notify(f"⚠️ <b>{weekly.SHOW}</b> build failed (attempt {state['attempts']}): {_esc(str(e)[:300])}")
+        weekly.save(label, state)
+    return done
 
 
 def first_of(members: list[dict]) -> dict:
@@ -2325,7 +2476,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2469,6 +2620,11 @@ def _main(argv: list[str] | None = None) -> int:
             log(f"quiet check skipped: {e}")
     if a.command in {"tick", "publish"}:
         publish(dry_run=a.dry_run)
+    if a.command == "tick" and not a.dry_run and brands.MAIN:
+        try:   # the weekly show: a reminder on Sunday, a dropped week on Monday
+            weekly_nudge()
+        except Exception as e:
+            log(f"weekly nudge skipped: {e}")
     if (a.command == "tick" and not a.dry_run and meta_ready()) or a.command == "fbdigest":
         try:   # the evening Facebook digest and the owner's share kit; never stops the rest of the tick
             fb_digest(dry_run=a.dry_run, force=a.command == "fbdigest")
@@ -2523,6 +2679,14 @@ def _main(argv: list[str] | None = None) -> int:
         vids = (radar._load(72) or {}).get("catalog") or []
         results = [f"{v['channel']}: {tvclip.check(v['url'])}" for v in vids[:3]]
         print("::notice title=tvclipcheck::" + " | ".join(results or ["no TV clips in the radar"]))
+        return 0
+    if a.command == "weekly":   # Saturday: Kenya This Week, written and sent to record (Kenya on Record only)
+        if brands.MAIN:
+            weekly_script(dry_run=a.dry_run)
+        return 0
+    if a.command == "weeklywork":   # a recorded show: built and uploaded
+        if brands.MAIN:
+            weekly_work(dry_run=a.dry_run)
         return 0
     if a.command == "sourcecheck":   # can this runner read the official pages the brands are built on?
         import sourcecheck
