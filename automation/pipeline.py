@@ -315,6 +315,8 @@ def _calendar_posts(label: str) -> list[dict]:
         lane = _pick(slot["lanes"], wk)
         bg = _pick(slot["bg"], wk)
         base_id = f"{label.lower()}-d{slot['day']}-{template}"
+        if any(x["id"] == base_id for x in posts):   # a second slot of the same kind that day: its own id
+            base_id = f"{base_id}-{hh:02d}{mm:02d}"
         post = {"id": base_id, "template": template, "bg": bg, "lane": lane, "publish_at": when, "status": "planned"}
         if slot.get("size"):
             post["size"] = slot["size"]
