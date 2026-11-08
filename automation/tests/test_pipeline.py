@@ -491,9 +491,21 @@ class TvClipWorkTests(TempWeeks):
              mock.patch.object(pl, "qa_sheets", lambda posts: None), \
              mock.patch.object(pl, "tg", lambda *a, **k: sent.append(a)), \
              mock.patch.object(pl, "need", lambda *k: {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "1"}), \
-             mock.patch.object(pl, "same_event", lambda post, title: (title != "other", "")):
+             mock.patch.object(pl, "same_event", lambda post, title: (title != "other", "")), \
+             mock.patch.object(pl, "policy_on", lambda key: key == "station_footage" and self.footage_on):
             note = pl.tvclip_work(payload)
         return note, made, sent
+
+    footage_on = True   # these tests exercise the path for when the owner allows station footage again
+
+    def test_with_station_footage_switched_off_a_clip_is_deleted_and_never_used(self):
+        self.week_with()
+        self.footage_on = False
+        note, made, sent = self.run_work({"post": "p", "file_id": "f", "channel": "Citizen TV", "title": "same",
+                                          "message_id": 7})
+        self.assertIn("switched off", note)
+        self.assertEqual(made, [])                                   # no Reel made with it
+        self.assertTrue(any(a and a[0] == "deleteMessage" for a in sent))   # the raw clip leaves the chat
 
     def test_footage_of_another_event_is_never_used(self):
         self.week_with()

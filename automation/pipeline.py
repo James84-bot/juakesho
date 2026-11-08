@@ -843,6 +843,9 @@ def tvclip_work(payload: dict) -> str:
     sample = bool(payload.get("sample"))   # a demo on a post that already went out: made in _samples, sent, not saved
     if not (pid and file_id):
         return "nothing to do: no post or file"
+    if not policy_on("station_footage"):   # a station's broadcast edit is not ours: never under our lines
+        _drop_raw(payload)
+        return f"{pid}: station footage is switched off (policy.json station_footage), the clip was deleted unused"
     for f in sorted(WEEKS.glob("*.json"))[-2:]:
         data = json.loads(f.read_text(encoding="utf-8"))
         post = next((p for p in data["posts"] if p["id"] == pid), None)
@@ -1006,9 +1009,9 @@ def render_week(label: str) -> dict:
     out_dir = EXPORTS / label
     import photos
     photos.attach(todo, out_dir)   # real photos where the writer asked for one (skipped quietly without a key)
-    try:   # the TV clip of the story, for the card: you can add up to 8 s of it as a Tazama Hii Reel
+    try:   # the TV clip of the story, for the card (only while station footage is allowed: policy.json)
         import radar
-        for p in todo:
+        for p in (todo if policy_on("station_footage") else []):
             if p["template"] in CLIP_TEMPLATES or p.get("hot"):
                 clip = radar.clip_for(p)
                 if clip:
@@ -1110,7 +1113,7 @@ def _preview_text(p: dict) -> str:
         lines += ["", f"⭐ {c.get('avg')}/10  {parts}", f"✏️ {esc(str(c.get('note', '')))}"]
     if p.get("video_file"):
         lines += [f"🎥 Real footage behind the Reel ({esc(str(p.get('video_credit') or ''))})"]
-    clip = p.get("tv_clip")
+    clip = p.get("tv_clip") if policy_on("station_footage") else None
     if clip:
         lines += [f"🎬 TV clip of this story: <a href=\"{esc(clip['url'])}\">{esc(clip['channel'])}: {esc(clip['title'][:80])}</a>",
                   "To add the real footage: screen-record up to 8 seconds of the key moment and send it to me with",
@@ -1233,6 +1236,14 @@ def _send_card(chat: str, label: str, p: dict, out_dir: Path) -> None:
 POLICY = brands.CONTENT / "policy.json"
 AUTO_NEVER = {"promise", "scorecard"}   # a real person's record: a human decides
 AUTO_PHOTO_NEVER = {"file", "event"}              # a named person's portrait on a story
+
+
+def policy_on(key: str) -> bool:
+    """A switch in content/policy.json; missing or unreadable means off."""
+    try:
+        return bool(json.loads(POLICY.read_text(encoding="utf-8")).get(key))
+    except (OSError, ValueError):
+        return False
 
 
 def auto_approve_on() -> bool:

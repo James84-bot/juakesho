@@ -33,6 +33,7 @@ from pathlib import Path
 
 REPO = "James84-bot/juakesho"
 RAW = f"https://raw.githubusercontent.com/{REPO}/main/automation/content/weeks/{{}}.json"
+POLICY = f"https://raw.githubusercontent.com/{REPO}/main/automation/content/policy.json"
 EAT = dt.timezone(dt.timedelta(hours=3))
 DONE = Path(__file__).resolve().with_name("tvclip_local_done.json")
 SECONDS = 150
@@ -233,6 +234,14 @@ def main(argv: list[str]) -> int:
         print("Set these first (see the top of this file): " + ", ".join(missing))
         return 1
     now = dt.datetime.now(EAT)
+    try:   # the owner's switch (policy.json station_footage): off means no station's footage in our Reels
+        allowed = bool(json.loads(_get(POLICY)).get("station_footage"))
+    except Exception as e:
+        print(f"policy unreadable ({e}): nothing fetched")
+        return 0
+    if not allowed:
+        print(f"{now:%H:%M} station footage is switched off in policy.json: nothing fetched")
+        return 0
     if "--sample" in argv:
         prev = now - dt.timedelta(days=7)
         return sample(keys, [f"{prev.isocalendar()[0]}-W{prev.isocalendar()[1]:02d}"] + week_labels(now))
