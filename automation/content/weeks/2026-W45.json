@@ -390,7 +390,7 @@
       "bg": "usiku",
       "publish_at": "2026-11-08T18:00:00+03:00",
       "size": "story",
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 6.5/10. Poll hooks work best when tied to an immediate breaking governance dispute."
@@ -424,7 +424,14 @@
       "reel": true,
       "tg_msg": 701,
       "decided_at": "2026-11-02T16:36:41.186940+03:00",
-      "fresh_checked": "2026-11-07T12:47:24.326017+03:00"
+      "fresh_checked": "2026-11-07T12:47:24.326017+03:00",
+      "published_at": "2026-11-08T18:02:41.575748+03:00",
+      "ig_id": "17943945597381796",
+      "fb_id": "1433562258845345",
+      "story_id": "17988808055991759",
+      "fb_story_id": "3817626775057436",
+      "yt_id": "u6P5QfQSDQA",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w45-hot-1102",

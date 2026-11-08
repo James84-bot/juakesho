@@ -49,7 +49,7 @@
         "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQb2szdEtCVjkySmxCdWZ5cjY1TDkxdWIzNUNpWGlBYkNOcFNCNVJBVXV1V1VvSENFUTVjekNsNERXaTQtYV8ycTI3NmVDRV8zalRaYWplRGRJNjlZX0hQNmVPTEdaVHd5R2xsLWxPcDRhdHJRdkVmcVNMTGVpY3RWVDFzZnNjaWJBVmZFa3lvSTE4bmpzcG5FWUMtWEZieThqdVVoalpycDVtajFUelRwdXVOS2lrTzA3UlFyUA?oc=5",
         "published": "2026-11-08"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -89,7 +89,8 @@
       "broll_credit": "Footage: harshpunnoose123 / Pixabay",
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 906
+      "tg_msg": 906,
+      "decided_at": "2026-11-08T18:01:11.956415+03:00"
     },
     {
       "id": "2026-w46-d2-kenya",
@@ -240,7 +241,7 @@
         "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHpsNThFNzllWFpVa3kzRzhEWi1XdGlMa2ZDZzgyZFNXcW5oS2VVUVNzV2NBNzdjVUN2M3NZYk5FeWRFR3RteGtZUjU5UXpoWW15OTZnbWxxYUZsaGJNWDBnRnlWQUJEUVhOWHNac2p5WlM3R213WkYtWkRUcEhwenIxeGFFek42ejJJdmt2T2tWM0l6WXVpcWh1V2RZTlhyWHZyTUlYa3htQkZzb1U4?oc=5",
         "published": "2026-11-05"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -282,7 +283,8 @@
       ],
       "track_credit": "Music: \"Aerosol of my Love\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 908
+      "tg_msg": 908,
+      "decided_at": "2026-11-08T18:01:14.620843+03:00"
     },
     {
       "id": "2026-w46-d5-straight",
