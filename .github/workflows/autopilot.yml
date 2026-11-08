@@ -152,6 +152,9 @@ jobs:
           TELEGRAM_BOT_TOKEN__KENYAPOSTCARDS: ${{ secrets.TELEGRAM_BOT_TOKEN__KENYAPOSTCARDS }}
           YT_REFRESH_TOKEN__KENYAPOSTCARDS: ${{ secrets.YT_REFRESH_TOKEN__KENYAPOSTCARDS }}
           TIKTOK_REFRESH_TOKEN__KENYAPOSTCARDS: ${{ secrets.TIKTOK_REFRESH_TOKEN__KENYAPOSTCARDS }}
+          TELEGRAM_BOT_TOKEN__MTAAMODE: ${{ secrets.TELEGRAM_BOT_TOKEN__MTAAMODE }}
+          YT_REFRESH_TOKEN__MTAAMODE: ${{ secrets.YT_REFRESH_TOKEN__MTAAMODE }}
+          TIKTOK_REFRESH_TOKEN__MTAAMODE: ${{ secrets.TIKTOK_REFRESH_TOKEN__MTAAMODE }}
           BRAND_IN: ${{ steps.cmd.outputs.brand }}
           C: ${{ steps.cmd.outputs.c }}
           BASE: ${{ steps.cmd.outputs.base || steps.cmd.outputs.c }}
