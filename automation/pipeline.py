@@ -2692,6 +2692,12 @@ def _main(argv: list[str] | None = None) -> int:
         import sourcecheck
         for line in sourcecheck.run():
             print(f"::notice::{line}")
+        for url in ("https://www.centralbank.go.ke/rates/forex-exchange-rates/", "https://www.centralbank.go.ke/securities/treasury-bills/",
+                    "https://www.centralbank.go.ke/rates/central-bank-rate/", "https://www.centralbank.go.ke/inflation-rates/"):
+            try:   # the tables as text, to build the money brand's readers against the real pages
+                print(f"== {url}\n" + "\n".join(sourcecheck.tables(url)))
+            except Exception as e:
+                print(f"== {url}: {e}")
         return 0
     if a.command == "musicfetch":   # licensed instrumental tracks into content/music (see musiclib.py)
         import musiclib

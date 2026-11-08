@@ -62,3 +62,19 @@ def run() -> list[str]:
 if __name__ == "__main__":
     for line in run():
         print(line)
+
+
+def tables(url: str, max_rows: int = 12) -> list[str]:
+    """The text of each table on a page, row by row (for writing a parser against the real page)."""
+    import html as h
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        page = r.read().decode("utf-8", "replace")
+    out = []
+    for t, table in enumerate(re.findall(r"<table[^>]*>(.*?)</table>", page, re.S | re.I)):
+        for row in re.findall(r"<tr[^>]*>(.*?)</tr>", table, re.S | re.I)[:max_rows]:
+            cells = [h.unescape(re.sub(r"<[^>]+>", " ", c)).split() for c in re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", row, re.S | re.I)]
+            out.append(f"t{t}: " + " | ".join(" ".join(c) for c in cells))
+    if not out:
+        out.append("no tables; links: " + " ".join(re.findall(r'href="([^"]+\.(?:pdf|xlsx?|csv))"', page, re.I)[:15]))
+    return out
