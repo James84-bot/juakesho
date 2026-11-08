@@ -343,6 +343,7 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
     ctx["video_credit"] = (post.get("video_credit") or "") if full_footage else ""
     ctx["shots"], ctx["seq"] = [], []
     ctx["card"] = False   # True: the pictures sit whole in a card under the header (see reel.html.j2)
+    ctx["card_w"], ctx["card_h"] = card_size(W)
     if ctx.get("photo_uri") and not full_footage:
         from urllib.parse import unquote, urlparse
         shown = Path(unquote(urlparse(ctx["photo_uri"]).path))
@@ -359,6 +360,9 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
                             for i, f in enumerate(paths)]
             ctx["photo_band"] = 0
             ctx["card"] = any(not fills_frame(f, W, H) for f in paths)   # one layout for all the pictures
+            ctx["card_w"], ctx["card_h"] = card_size(W)
+            for sh, f in zip(ctx["shots"], paths):
+                sh["fit"] = card_fit(f, *card_size(W)) if ctx["card"] else None
             beats_n = len(post.get("beats") or [])
             ctx["seq"] = (match_shots(post.get("beats") or [], [str((m or {}).get("title") or "") for m in meta])
                           if not ctx["broll"] and len(paths) > 1 else shot_sequence(beats_n, len(paths), ctx["broll"]))
@@ -423,6 +427,30 @@ def render_plain(text: str) -> str:
 
 
 FULL_MAX = 1.2   # a picture enlarged more than this to fill the whole 9:16 frame looks soft: it goes in the card
+CARD_FILL_MAX = 1.3   # a picture enlarged more than this to fill the card is shown whole inside it instead
+CARD_MARGIN = 72      # the card's edges sit on the text margin
+
+
+def card_size(width: int) -> tuple[int, int]:
+    """The 4:3 card a news photo sits in, edge to edge between the text margins."""
+    w = width - 2 * CARD_MARGIN
+    return w, round(w * 3 / 4)
+
+
+def card_fit(path: Path, cw: int, ch: int) -> dict | None:
+    """None: the picture fills the card (cropped to 4:3) without being enlarged much. Otherwise the size and place
+    of the whole picture centred in the card, so a small one (700x350) is enlarged 1.3x instead of 2x."""
+    try:
+        from PIL import Image
+        with Image.open(path) as im:
+            w, h = im.size
+    except Exception:
+        return None
+    if max(cw / w, ch / h) <= CARD_FILL_MAX:
+        return None
+    s = min(cw / w, ch / h)
+    fw, fh = round(w * s), round(h * s)
+    return {"w": fw, "h": fh, "x": (cw - fw) // 2, "y": (ch - fh) // 2}
 
 
 def fills_frame(path: Path, width: int, height: int, zoom: float = 1.1) -> bool:

@@ -81,7 +81,7 @@
 .stage { top: {{ 300 + [photo_band, 760] | min + 40 }}px; bottom: 300px; }
 {% endif %}
 {% if shots and card %}
-{% set CW = W - 2 * (pad | default(72)) %}{% set CH = (CW * 3 / 4) | round | int %}
+{% set CW = card_w %}{% set CH = card_h %}
 /* news photos sit whole and sharp in a 4:3 card under the header, on a plain dark ground, edges on the text
    margin; the lines run below the picture, never over a face, and each picture carries its own credit */
 .photo-fade { display: none !important; }
@@ -90,6 +90,9 @@
   border-radius: 14px; background: #1B1815; }
 .shot .card img { width: 100%; height: 100%; object-fit: cover; object-position: center var(--sfy, 30%); display: block;
   transform-origin: 50% var(--sfy, 30%); filter: saturate(1.05) contrast(1.04); }
+/* a small picture is shown whole, centred in the card, rather than blown up to fill it */
+.shot .card.fit { background: transparent; border-radius: 0; }
+.shot .card.fit img { position: absolute; border-radius: 14px; object-fit: fill; }
 .shot .cr { position: absolute; right: var(--m); top: {{ 300 + CH + 16 }}px; font: 600 22px/1 "Inter"; letter-spacing: .02em;
   color: rgba(255, 255, 255, .5); }
 .stage { top: {{ 300 + CH + 74 }}px !important; bottom: 300px !important; align-items: start !important; }
@@ -145,7 +148,7 @@
   {% if context_line %}<div class="ctx">{{ context_line }}</div>{% endif %}
   {% if broll %}<span class="footage-tag">{{ footage_label }}</span>{% endif %}
   {% for sh in shots %}<div class="shot sh{{ loop.index0 }}" style="--sfy: {{ sh.fy }}%">
-    {% if card %}<div class="card"><img class="cam" src="{{ sh.uri }}" alt=""></div>{% if sh.credit %}<span class="cr">{{ sh.credit }}</span>{% endif %}
+    {% if card %}<div class="card{{ ' fit' if sh.fit }}"><img class="cam" src="{{ sh.uri }}" alt=""{% if sh.fit %} style="left: {{ sh.fit.x }}px; top: {{ sh.fit.y }}px; width: {{ sh.fit.w }}px; height: {{ sh.fit.h }}px"{% endif %}></div>{% if sh.credit %}<span class="cr">{{ sh.credit }}</span>{% endif %}
     {% elif photo_band %}<div class="blur" style="background-image: url('{{ sh.uri }}')"></div><div class="box"><img class="cam" src="{{ sh.uri }}" alt=""></div>
     {% else %}<div class="full cam" style="background-image: url('{{ sh.uri }}')"></div>{% endif %}
   </div>{% endfor %}

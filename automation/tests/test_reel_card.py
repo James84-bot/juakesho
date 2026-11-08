@@ -44,6 +44,18 @@ class Layout(unittest.TestCase):
             self.assertFalse(render.fills_frame(land, 1080, 1920))   # 1.6x to fill: soft
             self.assertTrue(render.fills_frame(tall, 1080, 1920))
 
+    def test_a_small_picture_is_shown_whole_in_the_card_not_blown_up(self):
+        from PIL import Image
+        cw, ch = render.card_size(1080)
+        self.assertEqual((cw, ch), (936, 702))
+        with tempfile.TemporaryDirectory() as d:
+            small, big = Path(d) / "s.jpg", Path(d) / "b.jpg"
+            Image.new("RGB", (700, 350)).save(small)
+            Image.new("RGB", (1366, 768)).save(big)
+            self.assertIsNone(render.card_fit(big, cw, ch))           # fills the card at 0.9x
+            fit = render.card_fit(small, cw, ch)                      # 2x to fill: shown whole at 1.34x
+            self.assertEqual((fit["w"], fit["h"], fit["x"], fit["y"]), (936, 468, 0, 117))
+
     def test_landscape_news_photos_sit_in_the_card_with_their_own_credit(self):
         with tempfile.TemporaryDirectory() as d:
             files = []
