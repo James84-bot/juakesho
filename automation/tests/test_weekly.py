@@ -140,3 +140,57 @@ class Pictures(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Flow(unittest.TestCase):
+    """The pipeline side: a voice note replying to a part is filed; a recorded show is built and uploaded once."""
+    def setUp(self):
+        import os
+        from unittest import mock
+        sys.path.insert(0, str(HERE / "tests"))
+        import pipeline as pl
+        self.pl, self.tmp = pl, tempfile.TemporaryDirectory()
+        root = Path(self.tmp.name)
+        self.sent = []
+        self.patches = [mock.patch.object(weekly, "DIR", root / "weekly"), mock.patch.object(pl, "WEEKS", root / "weeks"),
+                        mock.patch.object(pl, "EXPORTS", root / "exports"), mock.patch.object(pl, "STATE", root / "state"),
+                        mock.patch.object(pl, "tg", lambda m, f=None, files=None: self.sent.append((m, f)) or {"result": {"message_id": 1}}),
+                        mock.patch.object(pl, "_notify", lambda t: self.sent.append(("notify", t))),
+                        mock.patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "42"})]
+        for p in self.patches:
+            p.start()
+        state = {"label": "2026-W45", "week_name": "2 to 8 Nov 2026", "status": "recording", "made_at": "2026-11-08T12:00:00+03:00",
+                 "script": {"title": "T", "summary": "S"}, "posts": ["fkf"],
+                 "parts": [{"key": "intro", "title": "Intro", "text": "a", "msg": 10},
+                           {"key": "fkf", "title": "FKF", "text": "b", "msg": 11, "post": "fkf"},
+                           {"key": "outro", "title": "Outro", "text": "c", "msg": 12}]}
+        weekly.save("2026-W45", state)
+        pl.save_week({"collection": "2026-W45", "posts": [FKF], "scripts": {}})
+
+    def tearDown(self):
+        for p in self.patches:
+            p.stop()
+        self.tmp.cleanup()
+
+    def test_voice_notes_fill_the_parts_then_one_build_and_upload(self):
+        from unittest import mock
+        pl = self.pl
+        for mid in (10, 11, 12):
+            self.assertTrue(pl._weekly_voice({"message_id": 99, "voice": {"file_id": f"f{mid}", "duration": 40},
+                                              "reply_to_message": {"message_id": mid}}, "42"))
+        self.assertFalse(pl._weekly_voice({"message_id": 98, "voice": {"file_id": "x"}, "reply_to_message": {"message_id": 5}}, "42"))
+        self.assertEqual(weekly.load("2026-W45")["status"], "ready")
+        uploads = []
+        with mock.patch("tazama.download", lambda get, token, fid, dest: Path(dest).write_bytes(b"ogg")), \
+             mock.patch.object(weekly, "build", lambda state, posts, audio, out: {"video": str(out / "v.mp4"), "thumbnail": str(out / "t.jpg"),
+                                                                                 "chapters": "0:00 Intro", "seconds": 600.0}), \
+             mock.patch("youtube.ready", lambda: True), \
+             mock.patch("youtube.upload", lambda v, title, desc, publish_at=None, tags=None: uploads.append(publish_at) or {"id": "yt1", "privacy": "private"}), \
+             mock.patch("youtube.thumbnail", lambda vid, img: None), \
+             mock.patch.object(pl, "now", lambda: dt.datetime(2026, 11, 8, 13, 0, tzinfo=EAT)):
+            self.assertEqual(pl.weekly_work(), ["2026-W45"])
+            self.assertEqual(pl.weekly_work(), [])                       # once only
+        self.assertEqual(uploads, ["2026-11-08T15:00:00Z"])               # Sunday 18:00 EAT
+        state = weekly.load("2026-W45")
+        self.assertEqual((state["status"], state["yt_id"]), ("uploaded", "yt1"))
+        self.assertTrue(any("youtu.be/yt1" in str(x) for x in self.sent))
