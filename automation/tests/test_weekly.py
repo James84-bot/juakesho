@@ -194,3 +194,7 @@ class Flow(unittest.TestCase):
         state = weekly.load("2026-W45")
         self.assertEqual((state["status"], state["yt_id"]), ("uploaded", "yt1"))
         self.assertTrue(any("youtu.be/yt1" in str(x) for x in self.sent))
+        with mock.patch.object(pl, "now", lambda: dt.datetime(2026, 11, 8, 17, 0, tzinfo=EAT)):
+            self.assertIsNone(pl.latest_show())                           # not public yet: no link anywhere
+        with mock.patch.object(pl, "now", lambda: dt.datetime(2026, 11, 8, 18, 30, tzinfo=EAT)):
+            self.assertEqual(pl.latest_show(), "https://youtu.be/yt1")    # Shorts and the digest point to it

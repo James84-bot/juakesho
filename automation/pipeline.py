@@ -1739,6 +1739,23 @@ def whatsapp_text(post: dict) -> str:
 SUBSCRIBE_LINE = f"\n\nSubscribe to {BRAND.get('name', 'Kenya on Record')} for {BRAND.get('subscribe_for', 'a sourced Kenyan fact every day')}."
 
 
+def latest_show(within: dt.timedelta = dt.timedelta(days=8)) -> str | None:
+    """The link of the newest weekly show that is already public (Kenya This Week), or None."""
+    import weekly
+    if not brands.MAIN or not weekly.DIR.exists():
+        return None
+    t = now()
+    for f in sorted(weekly.DIR.glob("*.json"), reverse=True)[:2]:
+        st = weekly.load(f.stem)
+        try:
+            out = dt.datetime.fromisoformat(st.get("publish_at") or "")
+        except ValueError:
+            continue
+        if st.get("status") == "uploaded" and st.get("yt_id") and out <= t <= out + within:
+            return f"https://youtu.be/{st['yt_id']}"
+    return None
+
+
 def _youtube_short(label: str, post: dict) -> None:
     """Send the approved Reel to YouTube Shorts as well. Optional and never fatal: Instagram and Facebook are
     already out by now, so a YouTube problem is reported, not retried into a duplicate."""
@@ -1748,6 +1765,9 @@ def _youtube_short(label: str, post: dict) -> None:
     video = EXPORTS / label / f"{post['id']}.mp4"
     try:
         desc = caption_for(post, credits=True) + SUBSCRIBE_LINE   # a Short that lands on a new viewer should say where more comes from
+        show = latest_show()
+        if show:   # Shorts viewers into the long show: that is where the watch hours are
+            desc += f"\n\nThis week's full show, Kenya This Week: {show}"
         res = youtube.upload(video, shorts_title(post), desc)
         post["yt_id"] = res["id"]
         note = "" if res["privacy"] == "public" else (
@@ -1834,6 +1854,9 @@ def fb_digest(dry_run: bool = False, force: bool = False) -> str | None:
     if not posts:
         return None
     text = fbdigest.message(posts, t, BRAND) if len(posts) >= fbdigest.MIN_POSTS else None
+    show = latest_show(dt.timedelta(hours=30))
+    if text and show:   # the day the weekly show comes out, the evening digest points to it
+        text = text.replace("\n\nThe sources", f"\n\n🎬 This week's full show, Kenya This Week, is on YouTube: {show}\n\nThe sources", 1)
     if dry_run:
         log(f"fb digest ({len(posts)} posts), not posted (dry run):\n{text or '(one post: share kit only)'}")
         return text
