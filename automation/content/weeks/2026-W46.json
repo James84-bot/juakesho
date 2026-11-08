@@ -3,7 +3,7 @@
   "created": "2026-11-08T17:15:53.413545+03:00",
   "posts": [
     {
-      "id": "2026-w46-d1-money",
+      "id": "2026-w46-d1-money-r2",
       "template": "money",
       "lane": "hustle",
       "series": "The Real Price",
@@ -49,7 +49,7 @@
         "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQb2szdEtCVjkySmxCdWZ5cjY1TDkxdWIzNUNpWGlBYkNOcFNCNVJBVXV1V1VvSENFUTVjekNsNERXaTQtYV8ycTI3NmVDRV8zalRaYWplRGRJNjlZX0hQNmVPTEdaVHd5R2xsLWxPcDRhdHJRdkVmcVNMTGVpY3RWVDFzZnNjaWJBVmZFa3lvSTE4bmpzcG5FWUMtWEZieThqdVVoalpycDVtajFUelRwdXVOS2lrTzA3UlFyUA?oc=5",
         "published": "2026-11-08"
       },
-      "status": "approved",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": [
@@ -74,23 +74,10 @@
         "note": "The action beat has a concrete demand on EPRA for the cost breakdown."
       },
       "drafted_at": "2026-11-08T17:34:15.990933+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d1-money-photo.jpg",
-      "photo_credit": "Photo: Kenyans.co.ke",
-      "photo_kind": "posted",
-      "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/127837-opiyo-wandayi-slams-gachagua-over-claims-govt-plans-hike-pump-prices",
-      "shot_info": [
-        {
-          "credit": "Photo: Kenyans.co.ke",
-          "title": "Opiyo Wandayi Addresses Gachagua's Explosive Claims on Fuel Prices"
-        }
-      ],
-      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-d1-money-broll.mp4",
-      "broll_credit": "Footage: harshpunnoose123 / Pixabay",
-      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 906,
-      "decided_at": "2026-11-08T18:01:11.956415+03:00"
+      "rephoto_reason": "Kenyans.co.ke's own edit (Two photos combined side by side)",
+      "words_approved": true
     },
     {
       "id": "2026-w46-d2-kenya",
@@ -194,7 +181,7 @@
       "drafted_at": "2026-11-08T17:34:15.990946+03:00"
     },
     {
-      "id": "2026-w46-d4-glasspoll",
+      "id": "2026-w46-d4-glasspoll-r2",
       "template": "glasspoll",
       "lane": "everyone",
       "series": "Guess the Price",
@@ -241,7 +228,7 @@
         "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHpsNThFNzllWFpVa3kzRzhEWi1XdGlMa2ZDZzgyZFNXcW5oS2VVUVNzV2NBNzdjVUN2M3NZYk5FeWRFR3RteGtZUjU5UXpoWW15OTZnbWxxYUZsaGJNWDBnRnlWQUJEUVhOWHNac2p5WlM3R213WkYtWkRUcEhwenIxeGFFek42ejJJdmt2T2tWM0l6WXVpcWh1V2RZTlhyWHZyTUlYa3htQkZzb1U4?oc=5",
         "published": "2026-11-05"
       },
-      "status": "approved",
+      "status": "drafted",
       "guard": {
         "errors": [],
         "warnings": []
@@ -263,28 +250,10 @@
         "note": "Ensure the quiz topic reflects a higher current public search interest."
       },
       "drafted_at": "2026-11-08T17:34:15.990944+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d4-glasspoll-photo.jpg",
-      "photo_credit": "Photo: Kenyans.co.ke",
-      "photo_kind": "posted",
-      "photo_outlet": "Kenyans.co.ke",
       "photo_source": "https://www.kenyans.co.ke/news/128966-bayern-munich-ajax-play-talanta-stadium-opening-january-5-ruto-announces",
-      "extra_photos": [
-        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d4-glasspoll-photo-2.jpg"
-      ],
-      "shot_info": [
-        {
-          "credit": "Photo: Kenyans.co.ke",
-          "title": "Bayern Munich, Ajax to Play at Talanta Stadium Opening, Ruto Announces"
-        },
-        {
-          "credit": "Photo: Kenyans.co.ke",
-          "title": "Bayern vs Ajax Match in Kenya Hits First Roadblock as Petitioners Move to Court"
-        }
-      ],
-      "track_credit": "Music: \"Aerosol of my Love\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 908,
-      "decided_at": "2026-11-08T18:01:14.620843+03:00"
+      "rephoto_reason": "Kenyans.co.ke's own edit (Two photos combined side by side)",
+      "words_approved": true
     },
     {
       "id": "2026-w46-d5-straight",
