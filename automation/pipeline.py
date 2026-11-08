@@ -1942,7 +1942,7 @@ def weekly_nudge() -> None:
             state["status"] = "skipped"
             weekly.save(f.stem, state)
             _notify(f"🎬 <b>{weekly.SHOW}</b> {state['week_name']}: not recorded, so it was dropped. Next one on Saturday.")
-        elif t.weekday() == 6 and t.hour >= 10 and not state.get("nudged"):
+        elif t.weekday() == 6 and t.hour >= 10 and not state.get("nudged") and t - made > dt.timedelta(hours=6):
             state["nudged"] = t.isoformat()
             weekly.save(f.stem, state)
             _notify(f"🎬 <b>{weekly.SHOW}</b> goes up at 18:00 once it's recorded. Still to record: "
