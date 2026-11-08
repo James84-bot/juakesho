@@ -195,6 +195,12 @@ def _check_closer(post: dict, rep: "Report") -> None:
     beats = [b for b in (post.get("beats") or []) if isinstance(b, str) and b.strip()]
     if len(beats) < 3 or post.get("template") not in HOOK_TEMPLATES:
         return
+    if post.get("hot") and not re.sub(r"[*_\s]", "", beats[-1]).endswith("?"):
+        # a news Reel ends on a question people answer in the comments (0 comments on 47 posts before this rule);
+        # an error, so the writer's repair pass fixes it before anyone sees the post
+        rep.errors.append("closer: a news Reel's last line is a question the viewer answers in the comments, ending "
+                          "in '?' and nothing after it (e.g. 'Tell us below: what did you pay for unga this week?')")
+        return
     msg = closer_problem(beats[-1])
     if msg.startswith("WARN: "):   # a weak closer is flagged on the card; only a generic one holds the post
         rep.warnings.append("closer: " + msg[6:])

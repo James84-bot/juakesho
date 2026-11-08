@@ -34,6 +34,11 @@ import brands  # noqa: E402  (which brand this run works for: its files and acco
 ROOT = HERE.parent
 FPS = 30
 CRF = 17   # x264 quality: 17 keeps text edges and photo detail clean through Instagram's own re-encode
+# A ceiling for busy photos (grass, crowds, small print) under a slow zoom, which at CRF 17 alone reached 9.7 Mb/s
+# (a 20 s Reel of 24 MB). 8 Mb/s is YouTube's recommended upload bitrate for 1080p SDR at 24-30 fps
+# (support.google.com/youtube/answer/1722171); the platforms re-encode below it, so detail past it never reaches a viewer.
+MAXRATE = "8M"
+X264 = ["-c:v", "libx264", "-preset", "medium", "-crf", str(CRF), "-maxrate", MAXRATE, "-bufsize", "16M"]
 MIN_S, MAX_S = 6.0, 14.0
 READ_WPS = 3.6            # on-screen reading speed for young, fast readers (words/s)
 SKIP_TEMPLATES = {"avatar", "banner"}
@@ -224,7 +229,7 @@ def beats_segment(env, post: dict, beats: list[str], kicker: str, out_mp4: Path,
         render_frames(tmp / "page.html", tmp, frames)
         sound.write_wav(sound.tension(dur, starts, zlib.crc32(post["id"].encode()) % 1000), tmp / "audio.wav")
         subprocess.run([ff, "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", str(tmp / "f%04d.jpg"),
-                        "-i", str(tmp / "audio.wav"), "-c:v", "libx264", "-preset", "medium", "-crf", str(CRF),
+                        "-i", str(tmp / "audio.wav"), *X264,
                         "-pix_fmt", "yuv420p", "-vf", "scale=1080:1920:flags=lanczos,setsar=1",
                         "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-ac", "2", "-shortest", str(out_mp4)], check=True)
     return dur
@@ -276,14 +281,14 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
             cmd = [ff, "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(under),
                    "-framerate", str(FPS), "-i", str(tmp / "f%04d.png"), "-i", str(tmp / "audio.wav"),
                    "-filter_complex", footage_graph(dur), "-map", "[v]", "-map", "2:a",
-                   "-c:v", "libx264", "-preset", "medium", "-crf", str(CRF),
+                   *X264,
                    "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-t", str(dur),
                    "-movflags", "+faststart", str(target_mp4)]
         else:
             cmd = [ff, "-y", "-loglevel", "error",
                    "-framerate", str(FPS), "-i", str(tmp / "f%04d.jpg"),
                    "-i", str(tmp / "audio.wav"),
-                   "-c:v", "libx264", "-preset", "medium", "-crf", str(CRF), "-pix_fmt", "yuv420p",
+                   *X264, "-pix_fmt", "yuv420p",
                    "-vf", "scale=1080:1920:flags=lanczos,setsar=1",
                    "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
                    "-shortest", "-movflags", "+faststart", str(target_mp4)]
@@ -345,7 +350,7 @@ def sting(ff: str, work: Path) -> Path | None:
         sound.write_wav(tail, work / "sting.wav")
         out = work / "sting.mp4"
         subprocess.run([ff, "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", str(work / "f%04d.jpg"),
-                        "-i", str(work / "sting.wav"), "-c:v", "libx264", "-preset", "medium", "-crf", str(CRF),
+                        "-i", str(work / "sting.wav"), *X264,
                         "-pix_fmt", "yuv420p", "-vf", "scale=1080:1920:flags=lanczos,setsar=1",
                         "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-ac", "2", "-shortest", str(out)], check=True)
         _STING["mp4"] = out
@@ -363,7 +368,7 @@ def add_sting(ff: str, reel: Path, card: Path) -> None:
              "[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]")
     try:
         subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(card), "-filter_complex", graph,
-                        "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", str(CRF),
+                        "-map", "[v]", "-map", "[a]", *X264,
                         "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(joined)], check=True)
         joined.replace(reel)
     except Exception as e:
