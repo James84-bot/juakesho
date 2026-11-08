@@ -79,3 +79,30 @@ class Brands(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RadarApi(unittest.TestCase):
+    def test_uploads_through_the_data_api_when_rss_is_refused(self):
+        import datetime as dt
+        import radar
+        now = dt.datetime(2026, 11, 8, 8, 0, tzinfo=dt.timezone.utc)
+        calls = []
+
+        def get(url, timeout=30):
+            calls.append(url)
+            if "playlistItems" in url:
+                return json.dumps({"items": [
+                    {"contentDetails": {"videoId": "v1", "videoPublishedAt": "2026-11-08T06:00:00Z"},
+                     "snippet": {"title": "Police teargas FKF meeting in Meru"}},
+                    {"contentDetails": {"videoId": "v2"}, "snippet": {"title": "no date"}}]}).encode()
+            return json.dumps({"items": [{"id": "v1", "statistics": {"viewCount": "4000"}}]}).encode()
+
+        got = radar.youtube_api("UCabc123", "NTV Kenya", now, key="k", get=get)
+        self.assertIn("playlistId=UUabc123", calls[0])          # the channel's uploads playlist
+        self.assertEqual(len(got), 1)
+        self.assertEqual(got[0]["views"], 4000)
+        self.assertEqual(got[0]["per_hour"], 2000)
+        self.assertEqual(got[0]["url"], "https://www.youtube.com/watch?v=v1")
+        with self.assertRaises(RuntimeError):
+            with mock.patch.dict(os.environ, {"YOUTUBE_API_KEY": ""}):
+                radar.youtube_api("UCabc", "x", now)

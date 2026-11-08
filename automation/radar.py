@@ -17,6 +17,7 @@ import datetime as dt
 import html
 import json
 import re
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -83,6 +84,38 @@ def parse_youtube(xml: bytes, channel: str, now: dt.datetime) -> list[dict]:
     return vids
 
 
+def youtube_api(channel_id: str, channel: str, now: dt.datetime, key: str | None = None,
+                get=None) -> list[dict]:
+    """A channel's latest uploads through the YouTube Data API (YOUTUBE_API_KEY), in parse_youtube's shape."""
+    import os
+    key = key or os.environ.get("YOUTUBE_API_KEY", "").strip()
+    if not key:
+        raise RuntimeError("no YOUTUBE_API_KEY")
+    get = get or _get
+    api = "https://www.googleapis.com/youtube/v3/"
+    q = urllib.parse.urlencode({"part": "contentDetails,snippet", "maxResults": 30, "key": key,
+                                "playlistId": "UU" + channel_id[2:]})   # every channel's uploads playlist
+    items = json.loads(get(f"{api}playlistItems?{q}")).get("items", [])
+    ids = [i["contentDetails"]["videoId"] for i in items if i.get("contentDetails", {}).get("videoId")]
+    views = {}
+    if ids:
+        q = urllib.parse.urlencode({"part": "statistics", "id": ",".join(ids), "key": key})
+        views = {v["id"]: int(v.get("statistics", {}).get("viewCount", 0))
+                 for v in json.loads(get(f"{api}videos?{q}")).get("items", [])}
+    out = []
+    for i in items:
+        vid = i.get("contentDetails", {}).get("videoId")
+        when = i.get("contentDetails", {}).get("videoPublishedAt") or i.get("snippet", {}).get("publishedAt")
+        if not vid or not when:
+            continue
+        published = dt.datetime.fromisoformat(when.replace("Z", "+00:00"))
+        hours = max((now - published).total_seconds() / 3600, 1.0)
+        out.append({"title": i.get("snippet", {}).get("title", ""), "channel": channel, "views": views.get(vid, 0),
+                    "published": published.isoformat(), "per_hour": round(views.get(vid, 0) / hours),
+                    "url": f"https://www.youtube.com/watch?v={vid}", "short": f"https://youtube.com/shorts/{vid}"})
+    return out
+
+
 def collect(now: dt.datetime | None = None) -> dict:
     now = now or dt.datetime.now(dt.timezone.utc)
     data = {"fetched": now.isoformat(), "x": [], "videos": [], "errors": {}}
@@ -99,7 +132,10 @@ def collect(now: dt.datetime | None = None) -> dict:
         try:
             vids += parse_youtube(_get(f"https://www.youtube.com/feeds/videos.xml?channel_id={ch['id']}"), ch["name"], now)
         except Exception as e:
-            data["errors"][ch["name"]] = str(e)[:160]
+            try:   # YouTube's RSS answers 404 to some servers: the Data API (1-2 units a channel) gives the same uploads
+                vids += youtube_api(ch["id"], ch["name"], now)
+            except Exception as e2:
+                data["errors"][ch["name"]] = f"rss: {str(e)[:70]}; api: {str(e2)[:80]}"
     fresh = [v for v in vids if now - dt.datetime.fromisoformat(v["published"]) <= dt.timedelta(hours=36)]
     data["videos"] = sorted(fresh, key=lambda v: -v["per_hour"])[:15]
     # every recent clip, not just the most watched: the day's story may be a quieter upload (clip_for)

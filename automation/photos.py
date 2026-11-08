@@ -437,7 +437,9 @@ INSTITUTION = re.compile(r"^(kenya\w*|nairobi|national|county|assembly|senate|pa
                          r"housing|roads?|transport|infrastructure|sports|power|lighting|company|limited|corporation|"
                          r"directorate|division|revenue|market|bridge|stadium|leaders?|political|politicians?|"
                          r"officials?|residents?|traders?|students?|farmers?|members?|kenyans?|workers?|teachers?|"
-                         r"doctors?|nurses?|lawmakers?|mps|mcas|governors?|senators?|citizens?|voters?|youths?)$", re.I)
+                         r"doctors?|nurses?|lawmakers?|mps|mcas|governors?|senators?|citizens?|voters?|youths?|"
+                         r"bench|technical|teams?|squads?|clubs?|federation|league|coach(es)?|players?|fans?|"
+                         r"delegates?|executive|stars|starlets|association|academy|union)$", re.I)
 
 
 def _surname(who: str) -> str:
@@ -618,8 +620,10 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             if got:
                 return _save(out_dir, post["id"], *got)
             # nothing of the day itself: a real file photo of the person or body the post is about, before any symbol
-            for name, step in (("file photo from the news", lambda: posted.find_named(post) if news_photos_ok() and not _accused(post) else None),
-                               ("portrait", lambda: commons_portrait(post) if not _accused(post) else None)):
+            # (a brand can turn this off: on a sport page "who" is often a team, and a team is not a portrait)
+            file_photos = brands.brand().get("file_photos", True)
+            for name, step in (("file photo from the news", lambda: posted.find_named(post) if file_photos and news_photos_ok() and not _accused(post) else None),
+                               ("portrait", lambda: commons_portrait(post) if file_photos and not _accused(post) else None)):
                 try:
                     got = step()
                 except Exception as e:

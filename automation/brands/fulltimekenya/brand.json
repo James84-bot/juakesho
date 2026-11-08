@@ -44,7 +44,7 @@
   },
   "breaking": true,
   "hot_briefs": {
-    "sport": "Today's post: the sport story Kenyans are talking about right now, from the headlines in THIS WEEK IN KENYA, with its id in `source`. Kenyan sport first (Harambee Stars and Starlets, the FKF Premier League and its clubs, Kenyan athletes, Shujaa, Simbas, Malkia Strikers, Kenyan boxers), then the world sport Kenyans follow (the Premier League, the Champions League, AFCON, Kenyans playing abroad). The result, the record, the number, the decision: only what the headline states. Never a prediction stated as fact, never odds, tips or betting. Pick a different story from the ones already covered today."
+    "sport": "Today's post: the sport story Kenyan fans are talking about right now, from the headlines in THIS WEEK IN KENYA, with its id in `source`. Choose in this order: a Kenyan win, record or result from the last 24 hours (athletes, Harambee Stars and Starlets, Lionesses and Shujaa, FKF Premier League clubs, Kenyans abroad); then a result for the clubs most Kenyans follow (Arsenal, Manchester United, Chelsea, Liverpool, Manchester City); then a ruling or a federation decision that changes Kenyan sport. Name every person in full the first time ('Lyle Foster', never 'Lyle'). The result, the record, the number, the decision: only what the headline states. Never a prediction stated as fact, never odds, tips or betting, and never ask fans for a score prediction. Pick a different story from the ones already covered today. `who` is the athlete or the team ('Arsenal', 'Harambee Stars'), never a job title."
   },
   "critic_note": "THIS IS A SPORT PAGE (Full Time Kenya), not a civic one: score `impact` on what the result or decision means for Kenyan fans, teams or athletes; `action` on whether the last line invites a real reaction (a question fans will argue about); `fair` on fairness to both teams and every athlete; `demand` on whether Kenyan fans are talking about it now.",
   "colors": {
@@ -153,5 +153,6 @@
       "950": "#001305"
     }
   },
-  "palette_note": "The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (yellow reads as UDA, orange as ODM). Ink carries 90% of every design; red is the signature and the alarm; green means true and kept."
+  "palette_note": "The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (yellow reads as UDA, orange as ODM). Ink carries 90% of every design; red is the signature and the alarm; green means true and kept.",
+  "file_photos": false
 }
