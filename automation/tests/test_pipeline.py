@@ -1640,6 +1640,33 @@ class CriticTests(unittest.TestCase):
         self.assertEqual(len(calls), 3)  # score, rewrite, re-score
 
 
+class NeverTwice(TempWeeks):
+    """16 Oct and 8 Nov: a second run, started from the state saved before the first run marked the post published,
+    posted the same Reel again everywhere. Before posting, the system looks at its own newest Instagram posts."""
+
+    def test_a_post_already_on_instagram_is_not_posted_again(self):
+        past = (pl.now() - dt.timedelta(minutes=5)).isoformat()
+        self.week([{"id": "d7", "status": "approved", "publish_at": past, "caption": "MPs approved changes. #KenyaOnRecord",
+                    "reel": True}])
+        stamp = (pl.now() - dt.timedelta(minutes=4)).astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S+0000")
+        posted = []
+        with mock.patch.dict(os.environ, {"META_IG_USER_ID": "ig"}), \
+                mock.patch.object(pl, "graph_get", lambda path, fields: {"data": [
+                    {"id": "180", "caption": "MPs approved changes. #KenyaOnRecord", "timestamp": stamp}]}), \
+                mock.patch.object(pl, "meta_ready", lambda: True), \
+                mock.patch.object(pl, "publish_instagram", lambda label, members: posted.append(1) or "new"):
+            pl.publish()
+        self.assertEqual(posted, [])
+        post = pl.load_week("2026-W41")["posts"][0]
+        self.assertEqual((post["status"], post["ig_id"], post["duplicate_avoided"]), ("published", "180", True))
+
+    def test_an_old_post_with_the_same_words_does_not_block(self):
+        stamp = (pl.now() - dt.timedelta(days=5)).astimezone(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%S+0000")
+        with mock.patch.dict(os.environ, {"META_IG_USER_ID": "ig"}), \
+                mock.patch.object(pl, "graph_get", lambda path, fields: {"data": [{"id": "1", "caption": "Same", "timestamp": stamp}]}):
+            self.assertIsNone(pl.already_on_instagram({"id": "x", "caption": "Same", "reel": True}))
+
+
 class ReelPublishTests(TempWeeks):
     @property
     def PAST(self):
@@ -1656,7 +1683,7 @@ class ReelPublishTests(TempWeeks):
             return {"id": f"id{len(calls)}"}
 
         checked = []
-        with mock.patch.object(pl, "http", fake_http), \
+        with mock.patch.object(pl, "http", fake_http), mock.patch.object(pl, "already_on_instagram", lambda post: None), \
                 mock.patch.object(pl, "preflight", lambda url, kind: checked.append((url.rsplit(".", 1)[-1], kind))):
             pl.publish()
         media = next(f for m, p, f in calls if p == "ig/media")

@@ -150,6 +150,8 @@ def symbols_for(post: dict) -> list[str]:
     for rx, queries in SYMBOLS:
         if re.search(rx, text):
             out += [q for q in queries if q not in out]
+    if "fuel pump Kenya" in out:   # a fuel story is pumps and stations, never banknotes
+        out = [q for q in out if q not in {"Kenyan shilling banknotes", "Central Bank of Kenya"}]
     return out[:4]
 CIVIC_TEMPLATES = {"sauti", "promise", "kumbuka", "scorecard", "straight", "money", "decode", "usiibiwe", "spotlight"}
 # Licences that allow a credited photo inside our design, commercial use included. CC BY-SA is allowed: the post
@@ -204,7 +206,7 @@ MORE_PHOTOS = 2   # besides the lead photo: a Reel of 4-5 lines shows up to thre
 def extra_photos(post: dict, lead: dict, out_dir: Path) -> list[dict]:
     """Other newsrooms' photos of the same story, for a news Reel whose lead photo is one. Cached like the lead
     photo, so a re-render shows the same pictures. Never raises; [] when there are none."""
-    if lead.get("kind") != "posted" or not post.get("beats") or not news_photos_ok():
+    if lead.get("kind") not in {"posted", "topic"} or not post.get("beats") or not news_photos_ok():
         return []
     cached = [f for f in (out_dir / f"{post['id']}-photo-{k}.json" for k in range(2, 2 + MORE_PHOTOS)) if f.exists()]
     if cached:
@@ -213,8 +215,12 @@ def extra_photos(post: dict, lead: dict, out_dir: Path) -> list[dict]:
     try:
         import posted
         lead_file = Path(str(lead.get("file") or ""))
-        got = posted.find_more(post, [lead.get("url", "")], MORE_PHOTOS,
-                               lead=lead_file.read_bytes() if lead_file.is_file() else None)
+        lead_bytes = lead_file.read_bytes() if lead_file.is_file() else None
+        got = posted.find_more(post, [lead.get("url", "")], MORE_PHOTOS, lead=lead_bytes) \
+            if lead.get("kind") == "posted" else []
+        if len(got) < MORE_PHOTOS:   # not enough of the story itself: pictures of the same subject from other reports
+            got += posted.find_topic(post, MORE_PHOTOS - len(got), [lead.get("url", "")] + [g[1].get("url", "") for g in got],
+                                     [b for b in [lead_bytes] + [g[0] for g in got] if b])
     except Exception as e:
         _note(f"  more photos failed for {post.get('id')}: {e}")
         return []
@@ -572,6 +578,19 @@ def commons_portrait(post: dict) -> tuple[bytes, dict] | None:
     return None
 
 
+def _topic_lead(post: dict) -> tuple[bytes, dict] | None:
+    """A photo of the post's subject from another recent report, before any symbolic stand-in."""
+    if not news_photos_ok():
+        return None
+    try:
+        import posted
+        got = posted.find_topic(post, 1)
+    except Exception as e:
+        _note(f"  topic photo search failed for {post.get('id')}: {e}")
+        return None
+    return got[0] if got else None
+
+
 def fetch(post: dict, out_dir: Path) -> dict | None:
     """Resolves the post's photo to a local file. Returns {"file", "credit", "url"} or None (never raises)."""
     try:
@@ -595,6 +614,9 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             except Exception as e:
                 _note(f"  posted-photo search failed for {post.get('id')}: {e}")
                 got = None
+            if got:
+                return _save(out_dir, post["id"], *got)
+            got = _topic_lead(post)
             if got:
                 return _save(out_dir, post["id"], *got)
         elif post.get("template") in CIVIC_TEMPLATES | {"glasspoll"} and not post.get("group"):
@@ -633,6 +655,9 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
                     got = None
                 if got:
                     return _save(out_dir, post["id"], *got)
+            got = _topic_lead(post)
+            if got:
+                return _save(out_dir, post["id"], *got)
         if not query:
             return None
         order = (commons, openverse, pexels) if LOCAL.search(query) else (pexels, openverse, commons)

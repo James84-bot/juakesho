@@ -147,3 +147,48 @@ class LookAt(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TopicPhotos(unittest.TestCase):
+    """When the story's own picture is an outlet's graphic, pictures of the same subject from other recent reports
+    are mixed in: checked for graphics, faces and sharpness, never a person's name, never on an allegation."""
+
+    POST = {"id": "2026-w46-d1-money-r3", "template": "money", "photo_query": "Kenyan fuel station pump Nairobi",
+            "message": "EPRA reviews fuel prices on November 14.", "who": "Opiyo Wandayi",
+            "beats": ["EPRA reviews fuel prices on November 14.", "b", "c"]}
+
+    def items(self):
+        import datetime as dt
+        now = dt.datetime.now(dt.timezone.utc)
+        return [{"link": f"https://n/{i}", "title": t, "outlet": "Capital FM", "when": now - dt.timedelta(days=d)}
+                for i, (t, d) in enumerate([("Motorists queue as fuel shortage hits Nairobi", 1),
+                                             ("EPRA keeps pump prices unchanged", 2),
+                                             ("Wandayi speaks at a rally in Kisumu", 0),
+                                             ("Fuel prices in Uganda rise again", 0),
+                                             ("Old fuel story", 30)])]
+
+    def test_words_are_the_subject_and_institutions_never_a_person(self):
+        self.assertEqual(posted.topic_words(self.POST), ["fuel", "pump", "epra"])
+
+    def test_recent_reports_on_the_subject_are_used_as_file_photos(self):
+        picked = []
+        with mock.patch.object(posted, "feed_items", self.items), \
+                mock.patch.object(posted, "_photo_of", lambda item, check=True: picked.append(item["title"]) or
+                                  (jpeg((len(picked) * 40, 90, 60)), {"credit": "Photo: Capital FM", "url": item["link"]})), \
+                mock.patch("photos.faces_ok", lambda data, share=None: True), \
+                mock.patch.object(picture, "detail", lambda data: 0.5), \
+                mock.patch.object(picture, "near_same", lambda a, b, max_bits=10: False):
+            got = posted.find_topic(self.POST, 2)
+        # most subject words first (EPRA + pump), then the newest; Uganda's prices, a rally and a month-old story never
+        self.assertEqual(picked, ["EPRA keeps pump prices unchanged", "Motorists queue as fuel shortage hits Nairobi"])
+        self.assertEqual([g[1]["kind"] for g in got], ["topic", "topic"])
+        self.assertEqual(got[0][1]["credit"], "File photo: Capital FM")
+
+    def test_never_beside_an_allegation(self):
+        self.assertEqual(posted.find_topic({**self.POST, "message": "EPRA official charged with fraud."}, 2), [])
+
+    def test_a_fuel_post_never_falls_back_to_banknotes(self):
+        import photos
+        out = photos.symbols_for({"id": "x", "message": "EPRA reviews fuel prices", "impact": "household budget and taxes"})
+        self.assertIn("fuel pump Kenya", out)
+        self.assertNotIn("Kenyan shilling banknotes", out)

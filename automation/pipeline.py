@@ -546,7 +546,7 @@ def photo_audit(dry_run: bool = False) -> list[str]:
             if checked >= AUDIT_PER_RUN:
                 break
             if p["status"] not in {"approved", "awaiting"} or p.get("photo_checked") \
-                    or p.get("photo_kind") not in {"posted", "file"} or p.get("group") \
+                    or p.get("photo_kind") not in {"posted", "file", "topic"} or p.get("group") \
                     or dt.datetime.fromisoformat(p["publish_at"]) <= now():
                 continue
             items, missing = _used_pictures(p)
@@ -1233,6 +1233,9 @@ def _preview_text(p: dict) -> str:
         lines += [f"📷 The day's photo, from {esc(str(p.get('photo_outlet') or 'the news report'))} (credited)"]
     elif kind == "place":
         lines += ["📷 A real photo of the place itself (licensed, credited)"]
+    elif kind == "topic":
+        lines += [f"📷 File photo of the same subject from {esc(str(p.get('photo_outlet') or 'another report'))} (credited): "
+                  "the story's own picture was the outlet's edit or missing"]
     elif p.get("template") == "kenya" and not p.get("photo_file"):
         lines += ["⚠️ No photo of this place was found. Reply to this card with a real photo, or reject it."]
     elif kind == "file":
@@ -1877,6 +1880,37 @@ def caption_for(post: dict, credits: bool = False) -> str:
     return f"{cap}\n\n" + "\n".join(lines) if lines else cap
 
 
+def _same_text(a: str, b: str) -> bool:
+    def k(t: str) -> str:
+        return re.sub(r"[^a-z0-9]", "", str(t or "").lower())[:80]
+    return bool(k(a)) and k(a) == k(b)
+
+
+def already_on_instagram(post: dict) -> str | None:
+    """The id of our Instagram post with this post's caption from the last two days, if there is one. On 16 Oct
+    and 8 Nov a second run started from the state as it was before the first run saved "published" (GitHub checks
+    out the commit the run was queued on) and posted the same Reel again on every platform. A Story has no caption:
+    nothing to compare, so None."""
+    cap = caption_for(post)
+    if not cap.strip() or (post.get("size") == "story" and not post.get("reel")):
+        return None
+    try:
+        ig = need("META_IG_USER_ID")["META_IG_USER_ID"]
+        recent = graph_get(f"{ig}/media", {"fields": "caption,timestamp", "limit": 15}).get("data", [])
+    except Exception as e:   # can't look: post as usual (the checkout fix in the workflow is the main guard)
+        log(f"duplicate check skipped for {post.get('id')}: {str(e)[:120]}")
+        return None
+    cut = now() - dt.timedelta(days=2)
+    for m in recent:
+        try:
+            when = dt.datetime.strptime(m.get("timestamp", ""), "%Y-%m-%dT%H:%M:%S%z")
+        except ValueError:
+            continue
+        if when >= cut and _same_text(m.get("caption") or "", cap):
+            return str(m.get("id") or "") or "on instagram"
+    return None
+
+
 def publish_instagram(label: str, members: list[dict]) -> str:
     ig = need("META_IG_USER_ID")["META_IG_USER_ID"]
     first = members[0]
@@ -2311,6 +2345,12 @@ def publish(dry_run: bool = False) -> None:
                 continue
             if dry_run:
                 log(f"[dry-run] would publish {key} ({len(members)} image(s))")
+                continue
+            twin = already_on_instagram(first_of(members))
+            if twin:   # another run already posted it (a stale copy of the state): never post the same thing twice
+                for m in members:
+                    m.update(status="published", published_at=now().isoformat(), ig_id=twin, duplicate_avoided=True)
+                log(f"not posted again: {key} is already on Instagram ({twin})")
                 continue
             try:
                 ig_id = publish_instagram(label, members)

@@ -425,6 +425,72 @@ def _photo_of(item: dict, check: bool = True) -> tuple[bytes, dict] | None:
     return None
 
 
+TOPIC_STOP = {"station", "stations", "photo", "image", "people", "office", "building", "street", "road", "city",
+              "town", "market", "price", "prices", "cost", "costs", "news", "report", "kenyan", "kenya", "nairobi"}
+
+
+def topic_words(post: dict) -> list[str]:
+    """What the post's pictures should show, as headline words: the photo query's subject words and the post's
+    institutions (EPRA, KRA). Never a person's name: a topic photo must not stand in for someone in the story."""
+    import photos
+    import videos
+    words = [w for w in photos._core(str(post.get("photo_query") or post.get("broll_query") or ""))
+             if w not in TOPIC_STOP and w not in videos.GENERIC_WORDS]
+    words += [n for n in names_for(post) if n in INSTITUTIONS]
+    return list(dict.fromkeys(words))[:5]
+
+
+def find_topic(post: dict, n: int = 2, have: list[str] | None = None, seen: list[bytes] | None = None) -> list[tuple[bytes, dict]]:
+    """Photos from other recent reports on the same subject (a fuel post: reports whose headline says fuel, petrol
+    or EPRA), when the story's own picture can't be used or to mix more pictures into a Reel. Each one passes the
+    outlet-graphic check, has no stranger's face filling it, is sharp, and is not a picture already used. Labelled
+    "File photo" with its outlet. Never on an allegation: a file picture beside an accusation tells a story."""
+    import hashlib
+    import guard
+    import photos
+    import picture
+    if guard.CRIME_WORDS.search(guard._all_text(post)):
+        return []
+    words = topic_words(post)
+    if not words:
+        return []
+    now = dt.datetime.now(dt.timezone.utc)
+    used = set(have or [])
+    hashes = [picture.dhash(b) for b in seen or []]
+    digests = {hashlib.sha1(b).hexdigest() for b in seen or []}
+    told = guard_text(post)
+    hits = []
+    for x in feed_items():
+        if x["link"] in used or (x["when"] is not None and now - x["when"] > dt.timedelta(days=FILE_DAYS)):
+            continue
+        k = sum(_has(x["title"].lower(), w) for w in words)
+        elsewhere = any(re.search(rf"\b{c}\b", x["title"]) and not re.search(rf"\b{c}\b", told) for c in COUNTRIES)
+        if k and not elsewhere:
+            hits.append((k, x["when"] or now, x))
+    hits.sort(key=lambda t: (-t[0], -t[1].timestamp()))
+    _note(f"  topic photos for {post.get('id')}: {len(hits)} recent reports on {words}")
+    out = []
+    for _, _, item in hits[:10]:
+        if len(out) >= n:
+            break
+        got = _photo_of(item)
+        if not got:
+            continue
+        data = got[0]
+        h, digest = picture.dhash(data), hashlib.sha1(data).hexdigest()
+        if digest in digests or any(picture.near_same(h, x) for x in hashes):
+            continue
+        if picture.detail(data) < picture.SOFT_BELOW or not photos.faces_ok(data):
+            _note(f"    not {item['outlet']}: soft or a face fills it ({item['title'][:60]})")
+            continue
+        hashes.append(h)
+        digests.add(digest)
+        used.add(item["link"])
+        _note(f"    topic photo from {item['outlet']}: {item['title'][:70]}")
+        out.append((data, {**got[1], "kind": "topic", "credit": got[1]["credit"].replace("Photo:", "File photo:", 1)}))
+    return out
+
+
 def find_named(post: dict) -> tuple[bytes, dict] | None:
     """A file photo when no report of this exact story has one: the newest report whose HEADLINE names the post's
     person (by surname) or, failing that, its institution by acronym (IEBC, KRA, EPRA). Never by place: a report

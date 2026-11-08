@@ -61,6 +61,10 @@ jobs:
       PUBLIC_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          # the branch as it is NOW, not the commit this run was queued on: a run that waited behind another one
+          # started from the state before that run saved "published" and posted the same Reel again (16 Oct, 8 Nov)
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v6
         with:
