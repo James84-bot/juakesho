@@ -85,6 +85,7 @@ documents someone holds. Scene text sits on a surface: it follows the perspectiv
 or objects can stand in front of it. Added text is flat on top of everything, usually in a clean font or a box.
 First write what text or graphics you see and what each one sits on, then decide.
 Return ONLY JSON: {"seen": "under 30 words", "edited": true or false, "what": "what was added, under 12 words"}"""
+JUDGED_BY = "cheap look, strong model confirms a yes"   # part of the key too: verdicts made another way are redone
 CHECKS_KEEP = 400   # verdicts kept (the newest), enough for a week of photos from every outlet
 
 
@@ -101,7 +102,7 @@ def outlet_edit(data: bytes) -> str | None:
     import hashlib
     import json
     # the question is part of the key: when it changes, every picture is judged again under the new wording
-    key = hashlib.sha1(data).hexdigest()[:24] + ":" + hashlib.sha1(EDIT_ASK.encode()).hexdigest()[:8]
+    key = hashlib.sha1(data).hexdigest()[:24] + ":" + hashlib.sha1((EDIT_ASK + JUDGED_BY).encode()).hexdigest()[:8]
     path = _checks_file()
     try:
         seen = json.loads(path.read_text(encoding="utf-8"))
