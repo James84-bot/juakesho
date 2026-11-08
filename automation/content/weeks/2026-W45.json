@@ -1728,13 +1728,96 @@
       "fb_story_id": "966562809462233",
       "yt_id": "nfWCjJzAoTs",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w45-hot-1108m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Phone users",
+      "line": "Safaricom asks Kenyans to hand in old phones as recycling drops by *34%* amid fresh questions.",
+      "fact": "Safaricom's phone recycling fell 34% as customers raise fresh questions over the e-waste collection drive.",
+      "source": "People Daily, 2026-11-08",
+      "trend": "safaricom e waste collection drive",
+      "message": "Safaricom must guarantee data privacy as its phone recycling numbers fall by 34%.",
+      "action": "Reset your phone to factory settings before handing it in at any recycling centre.",
+      "photo_query": "electronic waste mobile phones",
+      "beats": [
+        "Safaricom asks for old phones, but recycling fell by *34%*.",
+        "Customers want to know where their old devices and *data go*.",
+        "Old smartphones carry personal photos, passwords, and *M-Pesa records*.",
+        "Safaricom must prove that all collected phones are *safely destroyed*.",
+        "Reset your old device to factory settings before *giving it away*."
+      ],
+      "who": "Safaricom and ODPC",
+      "where": "National",
+      "when": "8 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Unwiped surrendered phones risk exposing personal data and old financial records.",
+      "caption": "Safaricom wants your old phones, but recycling fell 34% amid fresh questions.\n\nWhat it means for you: unwiped phones risk exposing personal data and old financial records.\n\nSafaricom must publish verified proof that all collected devices are safely wiped.\n\nWhat do you do with your old phones?\n\n#eWaste #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-08T19:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "FKF's special general meeting removed McDonald Mariga and six other officials after teargas chaos in Meru."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Surrender old phones: Safaricom’s e-waste drive faces fresh questions after recycling falls 34%",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQSGVVWE55bVRLRTJyTGVMRUx4cDJwdVRseWtybFZGM0U2UVN4SEJBbGVyRV9oQ2EwX0FuSHJzcW9aTUk4WTFqamdKQVFWVlFaVW5MSE8yWWJXUWlqdU1uMFJyVzJyamp4TnBPMVdzZ3d4ME16dnMyQU1CX2pBSGg1dExsQkQwSDl1X2I5al94cHdFb3FER0JPMGVSYV9YOEZPMkR0LTh4TUNZOUc1eEtFZWlleEZka0J1a182Y0M1d0tzUVpWYkszbg?oc=5",
+          "published": "2026-11-08"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "avg": 8.0,
+        "note": "keep the strict demand and action formatting clean."
+      },
+      "drafted_at": "2026-11-08T13:53:42.212665+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W45/photos/2026-w45-hot-1108m-photo.jpg",
+      "photo_credit": "Photo: W.carter / Wikimedia Commons, CC BY 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Motorcycle_batteries_at_a_recycling_station_in_Tuntorp,_Brastad_1.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: W.carter / Wikimedia Commons, CC BY 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 895,
+      "auto": true,
+      "decided_at": "2026-11-08T13:55:46.612290+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening, and welcome to Kenya on Record on your community dial.\n\nThis week, Kenyan football finds itself back where it seemingly always ends up: trapped in boardroom skirmishes, trading suspensions instead of fixing pitches. \n\nFootball Kenya Federation delegates have voted to expel former Harambee Stars international McDonald Mariga alongside six other officials. Mariga, who has openly challenged the incumbent leadership and sought systemic reform, now finds himself locked out alongside peers who dared to question the federation’s conduct. \n\nRegardless of which faction one supports, the pattern is painfully familiar. Every time national football elections approach, the priority shifts from developing the sport to purging rivals and securing delegates. While administrators spend their energy drafting expulsion letters and navigating court corridors, our grassroots leagues lack balls and boots, refereeing standards remain compromised, and player welfare is treated as an afterthought. \n\nKenya has immense talent and major continental hosting obligations on the horizon. We simply cannot afford another cycle of governance paralysis, FIFA bans, and missed opportunities for our youth. A national federation exists to serve Kenyan players, not to preserve private fiefdoms.\n\nKwa ufupi: Mzozo mpya umeibuka katika Shirikisho la Soka nchini, FKF, baada ya wajumbe kumtimua nahodha wa zamani McDonald Mariga pamoja na maafisa wengine sita. Badala ya kuangazia maendeleo ya viwanja na maslahi ya wachezaji chipukizi, viongozi wetu wa soka wamerejea tena kwenye vita vya ofisi. Huu ni wakati wa kuweka uwazi na nidhamu mbele ili kukuza vipaji vya vijana wetu.\n\nStay informed, and keep holding power accountable.",
-    "voice_note": "Habari zenu. Kenya on Record hapa with a quick breakdown on the latest FKF boardroom drama. Delegates have just voted to expel former Harambee Stars midfielder McDonald Mariga and six other officials from the federation. This comes right in the heat of campaigns and scrutiny over football governance in Kenya. Mariga and his group have been vocal about administrative flaws, but the sitting delegates moved swiftly to lock them out entirely. Why should this bother you? Because every single time FKF plunges into power struggles, corporate sponsorships dry up, national team preparations wobble, and county grassroots leagues are abandoned. We’ve seen this playbook before: internal purges, endless court battles, and zero focus on the pitch. Real change won’t come until we demand absolute transparency and accountability at Kandanda House. Forward this to any football fan who wants our game fixed.",
-    "sms": "Usiibiwe: Boardroom fights in sports often hide financial mismanagement. Always demand audited accounts and open elections in your local clubs and leagues.",
-    "reels": "McDonald Mariga and six top football officials have just been expelled by FKF delegates. Another year, another boardroom purge at Kandanda House. While administrators fight over seats ahead of federation polls, grassroots clubs are broke and young players remain stranded without proper structures. When will Kenyan football belong to the athletes and the fans, instead of political gatekeepers? Demand accountability for our game. Follow Kenya on Record."
+    "radio": "Good evening and welcome back to Kenya on Record. Today, let us talk about that old smartphone sitting in your drawer. Recent industry numbers show phone recycling through Safaricom has dropped by a sharp thirty-four percent. Why are Kenyans holding on to dead gadgets? It is not just sentimental attachment; it is a matter of data privacy.\n\nWhen you surrender a phone for e-waste or trade-in, what actually happens to your personal records? Your M-Pesa messages, family photos, saved passwords, and National ID scans? A standard factory reset often leaves digital remnants that any basic forensic tool can recover. Citizens are rightly concerned that their private lives might end up exposed once a device leaves the shop counter.\n\nElectronic waste is a serious environmental issue across our country, but ecological responsibility cannot come at the expense of our personal security. If Safaricom and partner recyclers want Kenyans to clear out their drawers, they must offer more than verbal assurances. We need verifiable, certified standards of secure data destruction—compliant with the Data Protection Act—so every consumer knows their digital identity is permanently erased before recycling begins.\n\nKwa ufupi kwa lugha ya taifa: Idadi ya Wakenya wanaorejesha simu kuukuu imeshuka kwa asilimia thelathini na nne kwa hofu ya usalama wa taarifa zao binafsi. Mashirika kama Safaricom lazima yatoe hakikisho la kisheria kuwa picha, jumbe, na siri zako zimefutwa kabisa kabla simu haijatupwa au kuuzwa tena. Usalama wa data kwanza.",
+    "voice_note": "Habari zenu. Quick check-in from Kenya on Record. Have you noticed how almost everyone has two or three dead smartphones lying in a drawer somewhere? Safaricom’s device recycling numbers dropped by thirty-four percent recently, and the reason is straightforward: Kenyans do not trust what happens to their personal data once they hand a phone over. And honestly, they are right. A basic factory reset does not always erase banking credentials, identity documents, or personal photos permanently. Unless telcos provide certified, irreversible data wiping right in front of the customer, people will choose to keep broken screens locked safely at home. E-waste is a real challenge, but identity theft and privacy leaks are immediate dangers. If corporate recycling programs want public participation, verified data protection must come first. Share this with anyone planning to trade in a device.",
+    "sms": "Usiibiwe: Trading in an old phone? Don't just factory reset. Encrypt the device first, wipe it, then remove SIM & SD cards to protect your personal data.",
+    "reels": "Why did phone recycling at Safaricom drop by thirty-four percent? Because Kenyans value their privacy. Handing over an old phone often means risking your photos, passwords, and M-Pesa statements falling into the wrong hands. A standard factory reset simply isn’t enough anymore. Until telcos offer certified, guaranteed data destruction under the Data Protection Act, those old devices will stay right where they are: locked in our drawers."
   },
   "spend_usd": 0.0
 }

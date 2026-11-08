@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-07T20:10:47.591455+03:00",
+  "updated": "2026-11-08T13:45:35.513239+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 74.5,
+      "score": 73.8,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "reach": 22,
+      "reach": 25,
       "saved": 0,
       "shares": 6,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 9.2
+      "avg_watch_s": 8.1
     },
     {
       "id": "2026-w45-hot-1105m",
@@ -79,7 +79,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 6.7
+      "avg_watch_s": 6.4
     },
     {
       "id": "2026-w45-hot-1102-r2",
@@ -87,12 +87,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "KNCHR documented 92 attacks on journalists across Kenya.",
-      "reach": 9,
+      "reach": 10,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 9.3
+      "avg_watch_s": 8.4
     },
     {
       "id": "2026-w45-hot-1104",
@@ -100,12 +100,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "reach": 18,
+      "reach": 20,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.4
+      "avg_watch_s": 4.2
     }
   ],
   "all": [
@@ -113,14 +113,14 @@
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 74.5,
+      "score": 73.8,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "reach": 22,
+      "reach": 25,
       "saved": 0,
       "shares": 6,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 9.2
+      "avg_watch_s": 8.1
     },
     {
       "id": "2026-w45-hot-1105m",
@@ -175,19 +175,6 @@
       "avg_watch_s": 4.2
     },
     {
-      "id": "2026-w44-hot-1101",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.4,
-      "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
-      "reach": 20,
-      "saved": 1,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 6.3
-    },
-    {
       "id": "2026-w44-hot-1026b1432",
       "series": "sauti",
       "lane": "everyone",
@@ -198,7 +185,20 @@
       "shares": 0,
       "comments": 0,
       "likes": 3,
-      "avg_watch_s": 7.1
+      "avg_watch_s": 6.9
+    },
+    {
+      "id": "2026-w44-hot-1101",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.3,
+      "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
+      "reach": 21,
+      "saved": 1,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 6.1
     },
     {
       "id": "2026-w42-hot-1013",
@@ -237,20 +237,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 3,
-      "avg_watch_s": 6.6
-    },
-    {
-      "id": "2026-w45-hot-1104m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 6.5,
-      "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
-      "reach": 10,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 11.7
+      "avg_watch_s": 6.5
     },
     {
       "id": "2026-w42-hot-1015",
@@ -284,12 +271,25 @@
       "lane": "everyone",
       "score": 6.4,
       "opening": "KPC drops cases blocking Sh3 billion for Makueni oil spill victims.",
-      "reach": 13,
+      "reach": 14,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 7.2
+      "avg_watch_s": 6.8
+    },
+    {
+      "id": "2026-w45-hot-1104m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 6.4,
+      "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
+      "reach": 11,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 2,
+      "avg_watch_s": 11.2
     },
     {
       "id": "2026-w42-d2-money-r3",
@@ -375,12 +375,12 @@
       "lane": "everyone",
       "score": 6.0,
       "opening": "EACC recovers a 2.7-acre school playground after court ruling.",
-      "reach": 33,
+      "reach": 34,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 6.7
+      "avg_watch_s": 6.5
     },
     {
       "id": "2026-w45-hot-1102m",
@@ -479,12 +479,12 @@
       "lane": "everyone",
       "score": 3.2,
       "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
-      "reach": 10,
+      "reach": 12,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 7.2
+      "avg_watch_s": 6.2
     },
     {
       "id": "2026-w45-hot-1106m-r2",
@@ -492,12 +492,12 @@
       "lane": "everyone",
       "score": 3.2,
       "opening": "Employers must remit employee levies by the 9th day of each month.",
-      "reach": 13,
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.5
+      "avg_watch_s": 4.6
     },
     {
       "id": "2026-w43-hot-1022",
@@ -562,7 +562,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.9
+      "avg_watch_s": 5.7
     },
     {
       "id": "2026-w44-hot-1027b1358",
@@ -578,6 +578,19 @@
       "avg_watch_s": 3.2
     },
     {
+      "id": "2026-w45-hot-1107",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.1,
+      "opening": "Kenya records 18 days without a single new Ebola infection.",
+      "reach": 18,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.8
+    },
+    {
       "id": "2026-w44-d2-kenya-r2",
       "series": "kenya",
       "lane": "young_pro",
@@ -588,7 +601,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.8
+      "avg_watch_s": 4.7
     },
     {
       "id": "2026-w45-hot-1103m",
@@ -596,12 +609,25 @@
       "lane": "everyone",
       "score": 2.9,
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "reach": 40,
+      "reach": 44,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 8.0
+      "avg_watch_s": 7.8
+    },
+    {
+      "id": "2026-w45-d6-kenya",
+      "series": "kenya",
+      "lane": "everyone",
+      "score": 2.8,
+      "opening": "Lamu Port opened its first berth in May 2021.",
+      "reach": 61,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 1.9
     },
     {
       "id": "2026-w45-d5-straight",
@@ -609,12 +635,12 @@
       "lane": "everyone",
       "score": 2.6,
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "reach": 78,
+      "reach": 82,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.0
+      "avg_watch_s": 4.8
     },
     {
       "id": "2026-w43-d7-glasspoll-r10",
@@ -627,7 +653,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.3
+      "avg_watch_s": 3.2
     },
     {
       "id": "2026-w43-hot-1024",
@@ -653,7 +679,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.9
+      "avg_watch_s": 5.3
     },
     {
       "id": "2026-w44-hot-1101m",
@@ -666,7 +692,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 6.7
+      "avg_watch_s": 6.4
     },
     {
       "id": "2026-w45-hot-1102-r2",
@@ -674,12 +700,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "KNCHR documented 92 attacks on journalists across Kenya.",
-      "reach": 9,
+      "reach": 10,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 9.3
+      "avg_watch_s": 8.4
     },
     {
       "id": "2026-w45-hot-1104",
@@ -687,12 +713,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "reach": 18,
+      "reach": 20,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.4
+      "avg_watch_s": 4.2
     }
   ],
   "youtube": [
@@ -700,7 +726,7 @@
       "id": "2026-w45-hot-1103m",
       "series": "sauti",
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "views": 986,
+      "views": 987,
       "likes": 6,
       "comments": 0
     },
@@ -708,7 +734,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 500,
+      "views": 501,
       "likes": 2,
       "comments": 0
     },
@@ -716,7 +742,15 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "views": 337,
+      "views": 343,
+      "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w45-hot-1106m-r2",
+      "series": "sauti",
+      "opening": "Employers must remit employee levies by the 9th day of each month.",
+      "views": 224,
       "likes": 0,
       "comments": 0
     },
@@ -724,23 +758,23 @@
       "id": "2026-w45-hot-1102-r2",
       "series": "sauti",
       "opening": "KNCHR documented 92 attacks on journalists across Kenya.",
-      "views": 219,
+      "views": 220,
       "likes": 2,
       "comments": 0
     },
     {
-      "id": "2026-w45-hot-1106m-r2",
+      "id": "2026-w45-hot-1107",
       "series": "sauti",
-      "opening": "Employers must remit employee levies by the 9th day of each month.",
-      "views": 217,
-      "likes": 0,
+      "opening": "Kenya records 18 days without a single new Ebola infection.",
+      "views": 212,
+      "likes": 2,
       "comments": 0
     },
     {
       "id": "2026-w45-hot-1102m",
       "series": "sauti",
       "opening": "Counterfeit alcohol wiped out Sh7.6bn in KRA excise revenue.",
-      "views": 187,
+      "views": 189,
       "likes": 1,
       "comments": 0
     },
@@ -748,7 +782,7 @@
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "views": 176,
+      "views": 180,
       "likes": 1,
       "comments": 0
     },
@@ -756,7 +790,7 @@
       "id": "2026-w45-hot-1104m",
       "series": "sauti",
       "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
-      "views": 130,
+      "views": 131,
       "likes": 1,
       "comments": 0
     },
@@ -764,7 +798,15 @@
       "id": "2026-w45-hot-1106",
       "series": "sauti",
       "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
-      "views": 65,
+      "views": 74,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w45-d5-straight",
+      "series": "straight",
+      "opening": "A viral clip claiming to show Mandera Stadium is false.",
+      "views": 54,
       "likes": 0,
       "comments": 0
     },
@@ -772,23 +814,15 @@
       "id": "2026-w45-hot-1104",
       "series": "sauti",
       "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "views": 50,
+      "views": 51,
       "likes": 1,
-      "comments": 0
-    },
-    {
-      "id": "2026-w45-d5-straight",
-      "series": "straight",
-      "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "views": 43,
-      "likes": 0,
       "comments": 0
     },
     {
       "id": "2026-w44-hot-1101m",
       "series": "sauti",
       "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "views": 34,
+      "views": 35,
       "likes": 1,
       "comments": 0
     },
@@ -796,15 +830,23 @@
       "id": "2026-w44-d7-glasspoll",
       "series": "glasspoll",
       "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
-      "views": 8,
+      "views": 9,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w45-d6-kenya",
+      "series": "kenya",
+      "opening": "Lamu Port opened its first berth in May 2021.",
+      "views": 6,
+      "likes": 0,
       "comments": 0
     },
     {
       "id": "2026-w44-hot-1101",
       "series": "sauti",
       "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
-      "views": 4,
+      "views": 5,
       "likes": 1,
       "comments": 0
     }

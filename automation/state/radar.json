@@ -1,32 +1,44 @@
 {
- "fetched": "2026-11-08T06:06:53.629482+00:00",
+ "fetched": "2026-11-08T10:45:42.570277+00:00",
  "x": [
   {
-   "name": "Breathtaking Talanta",
+   "name": "#GOKThisWeek",
    "tweets": ""
   },
   {
-   "name": "Ruto Promise Delivered",
+   "name": "#MabadilikoNiSasa",
    "tweets": ""
   },
   {
-   "name": "Blessed Sunday",
+   "name": "Forging Onwards",
    "tweets": ""
   },
   {
-   "name": "Raila Odinga Stadium",
+   "name": "Kijana Ya Baba",
    "tweets": ""
   },
   {
-   "name": "#PorQueOsEventos",
+   "name": "People's Movement",
    "tweets": ""
   },
   {
-   "name": "#MasokoBlackNovember",
+   "name": "#InternetConnectivity",
    "tweets": ""
   },
   {
-   "name": "Delap",
+   "name": "#FTTH",
+   "tweets": ""
+  },
+  {
+   "name": "#PmPartyInKibra",
+   "tweets": ""
+  },
+  {
+   "name": "FibreOptic Solutions Kenya",
+   "tweets": ""
+  },
+  {
+   "name": "Wamunyoro State Lodge",
    "tweets": ""
   },
   {
@@ -34,39 +46,43 @@
    "tweets": ""
   },
   {
+   "name": "Delap",
+   "tweets": ""
+  },
+  {
+   "name": "Blessed Sunday",
+   "tweets": ""
+  },
+  {
+   "name": "2nd Term ByDesign",
+   "tweets": ""
+  },
+  {
+   "name": "Kalonzo in Mwanza",
+   "tweets": ""
+  },
+  {
+   "name": "Fibre Drop Cable",
+   "tweets": ""
+  },
+  {
+   "name": "KEPSA",
+   "tweets": ""
+  },
+  {
+   "name": "kemu classof 2026",
+   "tweets": ""
+  },
+  {
    "name": "Nottingham Forest",
    "tweets": ""
   },
   {
-   "name": "Hull City",
+   "name": "Ruto Promise Delivered",
    "tweets": ""
   },
   {
-   "name": "#MandeeWork",
-   "tweets": ""
-  },
-  {
-   "name": "#peoplesmovementtour",
-   "tweets": ""
-  },
-  {
-   "name": "#kemu26thgraduation",
-   "tweets": ""
-  },
-  {
-   "name": "bishop charles nganga",
-   "tweets": ""
-  },
-  {
-   "name": "shiny things",
-   "tweets": ""
-  },
-  {
-   "name": "Manchester City",
-   "tweets": ""
-  },
-  {
-   "name": "Nyatike",
+   "name": "nyatike",
    "tweets": ""
   },
   {
@@ -78,39 +94,23 @@
    "tweets": ""
   },
   {
-   "name": "Dr Raymond Omollo",
+   "name": "dr raymond omollo",
    "tweets": ""
   },
   {
-   "name": "kibra tuko pm",
+   "name": "Breathtaking Talanta",
    "tweets": ""
   },
   {
-   "name": "fttx connectivity",
+   "name": "Hull City",
    "tweets": ""
   },
   {
-   "name": "McDonald Mariga",
+   "name": "Raila Odinga Stadium",
    "tweets": ""
   },
   {
-   "name": "Man City",
-   "tweets": ""
-  },
-  {
-   "name": "mama catherineomanyo delivers",
-   "tweets": ""
-  },
-  {
-   "name": "Arsenal",
-   "tweets": ""
-  },
-  {
-   "name": "Nairobi MombasaRD Expansion",
-   "tweets": ""
-  },
-  {
-   "name": "pamela awuor",
+   "name": "Kenya's Ebola",
    "tweets": ""
   },
   {
@@ -118,15 +118,553 @@
    "tweets": ""
   },
   {
-   "name": "mamlaka hill chapel",
+   "name": "pamela awuor",
    "tweets": ""
   }
  ],
- "videos": [],
- "errors": {
-  "Citizen TV": "HTTP Error 404: Not Found",
-  "NTV Kenya": "HTTP Error 404: Not Found",
-  "KTN News": "HTTP Error 404: Not Found"
- },
- "catalog": []
+ "videos": [
+  {
+   "title": "Funeral Service for the late Bob Maxwell Otiang'a",
+   "channel": "Citizen TV",
+   "views": 44010,
+   "published": "2026-11-08T05:22:03+00:00",
+   "per_hour": 8159,
+   "url": "https://www.youtube.com/watch?v=WoPSzJTWjcc",
+   "short": "https://youtube.com/shorts/WoPSzJTWjcc"
+  },
+  {
+   "title": "“Never again shall we give our votes just like that,” Gachagua warns Sifuna over Mt. Kenya votes",
+   "channel": "Citizen TV",
+   "views": 2473,
+   "published": "2026-11-08T09:10:22+00:00",
+   "per_hour": 1556,
+   "url": "https://www.youtube.com/watch?v=3A8CBzvCLgQ",
+   "short": "https://youtube.com/shorts/3A8CBzvCLgQ"
+  },
+  {
+   "title": "\"Mvae sweater,\" Senator Methu jokes about Gachagua and Sifuna’s dress code during a night festival",
+   "channel": "Citizen TV",
+   "views": 16530,
+   "published": "2026-11-07T21:45:29+00:00",
+   "per_hour": 1271,
+   "url": "https://www.youtube.com/watch?v=P5pDL_dU218",
+   "short": "https://youtube.com/shorts/P5pDL_dU218"
+  },
+  {
+   "title": "Bahati's second bet on Mathare, officially announces 2027 bid",
+   "channel": "NTV Kenya",
+   "views": 19294,
+   "published": "2026-11-07T19:07:45+00:00",
+   "per_hour": 1234,
+   "url": "https://www.youtube.com/watch?v=sAEJGuCg0Bk",
+   "short": "https://youtube.com/shorts/sAEJGuCg0Bk"
+  },
+  {
+   "title": "Sifuna: Gachagua and I are the most unlikely of bedfellows",
+   "channel": "Citizen TV",
+   "views": 2226,
+   "published": "2026-11-08T08:55:54+00:00",
+   "per_hour": 1216,
+   "url": "https://www.youtube.com/watch?v=KYGD8GIfYcA",
+   "short": "https://youtube.com/shorts/KYGD8GIfYcA"
+  },
+  {
+   "title": "President Ruto attends interdenominational church service in Nyamira",
+   "channel": "Citizen TV",
+   "views": 529,
+   "published": "2026-11-08T10:12:53+00:00",
+   "per_hour": 529,
+   "url": "https://www.youtube.com/watch?v=b7_nyzR8xSU",
+   "short": "https://youtube.com/shorts/b7_nyzR8xSU"
+  },
+  {
+   "title": "Mariga faction vows legal action after FKF ouster",
+   "channel": "NTV Kenya",
+   "views": 8340,
+   "published": "2026-11-07T18:43:34+00:00",
+   "per_hour": 520,
+   "url": "https://www.youtube.com/watch?v=UEKXpYFBU6A",
+   "short": "https://youtube.com/shorts/UEKXpYFBU6A"
+  },
+  {
+   "title": "Gachagua, Sifuna restate commitment to opposition unity",
+   "channel": "Citizen TV",
+   "views": 498,
+   "published": "2026-11-08T10:16:09+00:00",
+   "per_hour": 498,
+   "url": "https://www.youtube.com/watch?v=m2IB9WZk91E",
+   "short": "https://youtube.com/shorts/m2IB9WZk91E"
+  },
+  {
+   "title": "Hussein vs Mariga: Bitter boardroom dispute ends promising partnership in Kenyan football",
+   "channel": "NTV Kenya",
+   "views": 7534,
+   "published": "2026-11-07T19:06:36+00:00",
+   "per_hour": 481,
+   "url": "https://www.youtube.com/watch?v=kVCZ1za-xh8",
+   "short": "https://youtube.com/shorts/kVCZ1za-xh8"
+  },
+  {
+   "title": "Gachagua and Sifuna Urge Opposition Unity Ahead of 2027 Elections",
+   "channel": "KTN News",
+   "views": 419,
+   "published": "2026-11-08T10:13:58+00:00",
+   "per_hour": 419,
+   "url": "https://www.youtube.com/watch?v=Y9rmONMTl_E",
+   "short": "https://youtube.com/shorts/Y9rmONMTl_E"
+  },
+  {
+   "title": "Ruto gathering 2027 Western-Gusii momentum",
+   "channel": "NTV Kenya",
+   "views": 6178,
+   "published": "2026-11-07T18:27:24+00:00",
+   "per_hour": 379,
+   "url": "https://www.youtube.com/watch?v=0muWJZ3oyqs",
+   "short": "https://youtube.com/shorts/0muWJZ3oyqs"
+  },
+  {
+   "title": "Political tension in Embu after goons disrupt Kivuti, Muturi rally",
+   "channel": "NTV Kenya",
+   "views": 6185,
+   "published": "2026-11-07T18:25:32+00:00",
+   "per_hour": 379,
+   "url": "https://www.youtube.com/watch?v=-qqN8HbPdYQ",
+   "short": "https://youtube.com/shorts/-qqN8HbPdYQ"
+  },
+  {
+   "title": "More than 1,500 retired civil servants decry land grabbing",
+   "channel": "NTV Kenya",
+   "views": 5257,
+   "published": "2026-11-07T19:09:38+00:00",
+   "per_hour": 337,
+   "url": "https://www.youtube.com/watch?v=-UugfzzE1L0",
+   "short": "https://youtube.com/shorts/-UugfzzE1L0"
+  },
+  {
+   "title": "Gachagua condemns the reported abduction of lawyer Abshir Abdi, asks lawyers to guard the ballot",
+   "channel": "NTV Kenya",
+   "views": 279,
+   "published": "2026-11-08T10:11:45+00:00",
+   "per_hour": 279,
+   "url": "https://www.youtube.com/watch?v=t1vGgxLGK-s",
+   "short": "https://youtube.com/shorts/t1vGgxLGK-s"
+  },
+  {
+   "title": "Two former street kids trade crime for rhythm and street dance",
+   "channel": "NTV Kenya",
+   "views": 4459,
+   "published": "2026-11-07T18:40:42+00:00",
+   "per_hour": 277,
+   "url": "https://www.youtube.com/watch?v=WoKfHiGXepw",
+   "short": "https://youtube.com/shorts/WoKfHiGXepw"
+  }
+ ],
+ "errors": {},
+ "catalog": [
+  {
+   "title": "KTN WEEKEND AT ONE || 8TH NOVEMBER 2026",
+   "channel": "KTN News",
+   "views": 8,
+   "published": "2026-11-08T10:40:56+00:00",
+   "per_hour": 8,
+   "url": "https://www.youtube.com/watch?v=QHoGLg8i9FM",
+   "short": "https://youtube.com/shorts/QHoGLg8i9FM"
+  },
+  {
+   "title": "Governance Stakeholders Call for Transparency and Accountability to Restore Public Trust",
+   "channel": "KTN News",
+   "views": 4,
+   "published": "2026-11-08T10:37:11+00:00",
+   "per_hour": 4,
+   "url": "https://www.youtube.com/watch?v=_xm-rt9AmuE",
+   "short": "https://youtube.com/shorts/_xm-rt9AmuE"
+  },
+  {
+   "title": "Mombasa Leaders Push for Community Empowerment to Tackle Unemployment",
+   "channel": "KTN News",
+   "views": 4,
+   "published": "2026-11-08T10:35:56+00:00",
+   "per_hour": 4,
+   "url": "https://www.youtube.com/watch?v=WJFmA7-G1WA",
+   "short": "https://youtube.com/shorts/WJFmA7-G1WA"
+  },
+  {
+   "title": "KMPDU Boss Atellah Calls for Affordable Healthcare During Free Medical Camp in Lang’ata",
+   "channel": "KTN News",
+   "views": 4,
+   "published": "2026-11-08T10:33:31+00:00",
+   "per_hour": 4,
+   "url": "https://www.youtube.com/watch?v=qRZ3LX9jmH8",
+   "short": "https://youtube.com/shorts/qRZ3LX9jmH8"
+  },
+  {
+   "title": "One person arrested after police raid FGM syndicate in Tana River",
+   "channel": "Citizen TV",
+   "views": 80,
+   "published": "2026-11-08T10:32:04+00:00",
+   "per_hour": 80,
+   "url": "https://www.youtube.com/watch?v=ICFXFcGjQJ4",
+   "short": "https://youtube.com/shorts/ICFXFcGjQJ4"
+  },
+  {
+   "title": "Pokot Festival Celebrates Culture as Leaders Call for Peaceful Coexistence",
+   "channel": "KTN News",
+   "views": 6,
+   "published": "2026-11-08T10:31:05+00:00",
+   "per_hour": 6,
+   "url": "https://www.youtube.com/watch?v=GTO65B67DN0",
+   "short": "https://youtube.com/shorts/GTO65B67DN0"
+  },
+  {
+   "title": "Kibra Residents Protest Rising Drug Abuse, Demand Action Against Suppliers",
+   "channel": "KTN News",
+   "views": 18,
+   "published": "2026-11-08T10:29:34+00:00",
+   "per_hour": 18,
+   "url": "https://www.youtube.com/watch?v=Bf3p6MSUZdA",
+   "short": "https://youtube.com/shorts/Bf3p6MSUZdA"
+  },
+  {
+   "title": "IG Kanja directs police to be firm in fighting brews",
+   "channel": "Citizen TV",
+   "views": 52,
+   "published": "2026-11-08T10:27:32+00:00",
+   "per_hour": 52,
+   "url": "https://www.youtube.com/watch?v=W59CSbWRtYw",
+   "short": "https://youtube.com/shorts/W59CSbWRtYw"
+  },
+  {
+   "title": "DCP Youth Wing Steps Up Grassroots Mobilisation Ahead of 2027 Polls",
+   "channel": "KTN News",
+   "views": 12,
+   "published": "2026-11-08T10:26:40+00:00",
+   "per_hour": 12,
+   "url": "https://www.youtube.com/watch?v=55fVb87z3Ic",
+   "short": "https://youtube.com/shorts/55fVb87z3Ic"
+  },
+  {
+   "title": "Concern after newly-constructed Marigat Sub-County Hospital develops huge cracks",
+   "channel": "Citizen TV",
+   "views": 80,
+   "published": "2026-11-08T10:25:00+00:00",
+   "per_hour": 80,
+   "url": "https://www.youtube.com/watch?v=jpFeOfWCIQI",
+   "short": "https://youtube.com/shorts/jpFeOfWCIQI"
+  },
+  {
+   "title": "2 killed in crash on the Nakuru-Nairobi highway",
+   "channel": "Citizen TV",
+   "views": 147,
+   "published": "2026-11-08T10:23:51+00:00",
+   "per_hour": 147,
+   "url": "https://www.youtube.com/watch?v=aXtinwjErKw",
+   "short": "https://youtube.com/shorts/aXtinwjErKw"
+  },
+  {
+   "title": "Wajir South Women Endorse Fatuma Hirsi for 2027 Parliamentary Race",
+   "channel": "KTN News",
+   "views": 18,
+   "published": "2026-11-08T10:23:00+00:00",
+   "per_hour": 18,
+   "url": "https://www.youtube.com/watch?v=sybRTwFAU1w",
+   "short": "https://youtube.com/shorts/sybRTwFAU1w"
+  },
+  {
+   "title": "Nassir Urges Coast Residents to Register as Voters Ahead of 2027 Elections",
+   "channel": "KTN News",
+   "views": 10,
+   "published": "2026-11-08T10:20:25+00:00",
+   "per_hour": 10,
+   "url": "https://www.youtube.com/watch?v=zUzTc4AduRY",
+   "short": "https://youtube.com/shorts/zUzTc4AduRY"
+  },
+  {
+   "title": "DCP deputy leader Cleophas Malala backs Sifuna as new voice of the Luhya",
+   "channel": "Citizen TV",
+   "views": 162,
+   "published": "2026-11-08T10:18:17+00:00",
+   "per_hour": 162,
+   "url": "https://www.youtube.com/watch?v=A5_4CwzRY9I",
+   "short": "https://youtube.com/shorts/A5_4CwzRY9I"
+  },
+  {
+   "title": "Broad-Based Government Allies Question Gachagua’s Commitment to Equal Development",
+   "channel": "KTN News",
+   "views": 23,
+   "published": "2026-11-08T10:16:50+00:00",
+   "per_hour": 23,
+   "url": "https://www.youtube.com/watch?v=4_Q6LFT44Z0",
+   "short": "https://youtube.com/shorts/4_Q6LFT44Z0"
+  },
+  {
+   "title": "DP leader Justin Muturi defends small parties in opposition",
+   "channel": "Citizen TV",
+   "views": 55,
+   "published": "2026-11-08T10:16:36+00:00",
+   "per_hour": 55,
+   "url": "https://www.youtube.com/watch?v=lzRaXsJe7tE",
+   "short": "https://youtube.com/shorts/lzRaXsJe7tE"
+  },
+  {
+   "title": "Gachagua, Sifuna restate commitment to opposition unity",
+   "channel": "Citizen TV",
+   "views": 498,
+   "published": "2026-11-08T10:16:09+00:00",
+   "per_hour": 498,
+   "url": "https://www.youtube.com/watch?v=m2IB9WZk91E",
+   "short": "https://youtube.com/shorts/m2IB9WZk91E"
+  },
+  {
+   "title": "Mbeere Elders Honour Muturi and Kivuti, Task Them with Uniting Community",
+   "channel": "KTN News",
+   "views": 31,
+   "published": "2026-11-08T10:15:26+00:00",
+   "per_hour": 31,
+   "url": "https://www.youtube.com/watch?v=egRvPtK_PVQ",
+   "short": "https://youtube.com/shorts/egRvPtK_PVQ"
+  },
+  {
+   "title": "Gachagua and Sifuna Urge Opposition Unity Ahead of 2027 Elections",
+   "channel": "KTN News",
+   "views": 419,
+   "published": "2026-11-08T10:13:58+00:00",
+   "per_hour": 419,
+   "url": "https://www.youtube.com/watch?v=Y9rmONMTl_E",
+   "short": "https://youtube.com/shorts/Y9rmONMTl_E"
+  },
+  {
+   "title": "President Ruto attends interdenominational church service in Nyamira",
+   "channel": "Citizen TV",
+   "views": 529,
+   "published": "2026-11-08T10:12:53+00:00",
+   "per_hour": 529,
+   "url": "https://www.youtube.com/watch?v=b7_nyzR8xSU",
+   "short": "https://youtube.com/shorts/b7_nyzR8xSU"
+  },
+  {
+   "title": "Mudavadi Urges Western Kenya Leaders to Back Ruto’s 2027 Re-Election Bid",
+   "channel": "KTN News",
+   "views": 19,
+   "published": "2026-11-08T10:12:29+00:00",
+   "per_hour": 19,
+   "url": "https://www.youtube.com/watch?v=WxyOQUqxdnk",
+   "short": "https://youtube.com/shorts/WxyOQUqxdnk"
+  },
+  {
+   "title": "Gachagua condemns the reported abduction of lawyer Abshir Abdi, asks lawyers to guard the ballot",
+   "channel": "NTV Kenya",
+   "views": 279,
+   "published": "2026-11-08T10:11:45+00:00",
+   "per_hour": 279,
+   "url": "https://www.youtube.com/watch?v=t1vGgxLGK-s",
+   "short": "https://youtube.com/shorts/t1vGgxLGK-s"
+  },
+  {
+   "title": "Mudavadi to opposition: Your manifesto cannot be ‘wantam’",
+   "channel": "NTV Kenya",
+   "views": 30,
+   "published": "2026-11-08T10:08:08+00:00",
+   "per_hour": 30,
+   "url": "https://www.youtube.com/watch?v=m0s_fPrFyUM",
+   "short": "https://youtube.com/shorts/m0s_fPrFyUM"
+  },
+  {
+   "title": "Gachagua, Sifuna Lead Opposition Leaders to Church Service in Isinya",
+   "channel": "KTN News",
+   "views": 112,
+   "published": "2026-11-08T10:07:51+00:00",
+   "per_hour": 112,
+   "url": "https://www.youtube.com/watch?v=tNiLTGDYoxQ",
+   "short": "https://youtube.com/shorts/tNiLTGDYoxQ"
+  },
+  {
+   "title": "\"Joho anastahili, anastahiki,” Governor Nassir says ODM will demand the DP seat for CS Joho in 2027",
+   "channel": "Citizen TV",
+   "views": 218,
+   "published": "2026-11-08T09:57:31+00:00",
+   "per_hour": 218,
+   "url": "https://www.youtube.com/watch?v=Zgwj0AQyBVg",
+   "short": "https://youtube.com/shorts/Zgwj0AQyBVg"
+  },
+  {
+   "title": "Fadhili Emmanuel outlines his rise on #CrossoverNTV",
+   "channel": "NTV Kenya",
+   "views": 11,
+   "published": "2026-11-08T09:39:14+00:00",
+   "per_hour": 10,
+   "url": "https://www.youtube.com/watch?v=nmNl4HXPvMU",
+   "short": "https://youtube.com/shorts/nmNl4HXPvMU"
+  },
+  {
+   "title": "Musician Papa Awiko is on #CrossoverNTV",
+   "channel": "NTV Kenya",
+   "views": 52,
+   "published": "2026-11-08T09:25:50+00:00",
+   "per_hour": 39,
+   "url": "https://www.youtube.com/watch?v=ZtCC-hlEL9Y",
+   "short": "https://youtube.com/shorts/ZtCC-hlEL9Y"
+  },
+  {
+   "title": "“Never again shall we give our votes just like that,” Gachagua warns Sifuna over Mt. Kenya votes",
+   "channel": "Citizen TV",
+   "views": 2473,
+   "published": "2026-11-08T09:10:22+00:00",
+   "per_hour": 1556,
+   "url": "https://www.youtube.com/watch?v=3A8CBzvCLgQ",
+   "short": "https://youtube.com/shorts/3A8CBzvCLgQ"
+  },
+  {
+   "title": "Lipala ya Yesu Sunday on #CrossoverNTV. This is Mulembe edition🔥",
+   "channel": "NTV Kenya",
+   "views": 35,
+   "published": "2026-11-08T08:57:31+00:00",
+   "per_hour": 19,
+   "url": "https://www.youtube.com/watch?v=41KaCv7MSis",
+   "short": "https://youtube.com/shorts/41KaCv7MSis"
+  },
+  {
+   "title": "Sifuna: Gachagua and I are the most unlikely of bedfellows",
+   "channel": "Citizen TV",
+   "views": 2226,
+   "published": "2026-11-08T08:55:54+00:00",
+   "per_hour": 1216,
+   "url": "https://www.youtube.com/watch?v=KYGD8GIfYcA",
+   "short": "https://youtube.com/shorts/KYGD8GIfYcA"
+  },
+  {
+   "title": "Funeral Service for the late Bob Maxwell Otiang'a",
+   "channel": "Citizen TV",
+   "views": 44010,
+   "published": "2026-11-08T05:22:03+00:00",
+   "per_hour": 8159,
+   "url": "https://www.youtube.com/watch?v=WoPSzJTWjcc",
+   "short": "https://youtube.com/shorts/WoPSzJTWjcc"
+  },
+  {
+   "title": "| DIASPORA CONNECT | BARBADOS EXPERIENCE [Part 1]",
+   "channel": "Citizen TV",
+   "views": 1238,
+   "published": "2026-11-07T22:19:05+00:00",
+   "per_hour": 99,
+   "url": "https://www.youtube.com/watch?v=_awV9s5V74c",
+   "short": "https://youtube.com/shorts/_awV9s5V74c"
+  },
+  {
+   "title": "| DIASPORA CONNECT | BARBADOS EXPERIENCE [Part 2]",
+   "channel": "Citizen TV",
+   "views": 665,
+   "published": "2026-11-07T22:18:56+00:00",
+   "per_hour": 53,
+   "url": "https://www.youtube.com/watch?v=k8tiPWO97Hw",
+   "short": "https://youtube.com/shorts/k8tiPWO97Hw"
+  },
+  {
+   "title": "\"Mvae sweater,\" Senator Methu jokes about Gachagua and Sifuna’s dress code during a night festival",
+   "channel": "Citizen TV",
+   "views": 16530,
+   "published": "2026-11-07T21:45:29+00:00",
+   "per_hour": 1271,
+   "url": "https://www.youtube.com/watch?v=P5pDL_dU218",
+   "short": "https://youtube.com/shorts/P5pDL_dU218"
+  },
+  {
+   "title": "Legacy, amarula and muratina trees plus why conservation matters | Earthwise Mtaani",
+   "channel": "NTV Kenya",
+   "views": 3617,
+   "published": "2026-11-07T19:10:12+00:00",
+   "per_hour": 232,
+   "url": "https://www.youtube.com/watch?v=OuuhypkjsNE",
+   "short": "https://youtube.com/shorts/OuuhypkjsNE"
+  },
+  {
+   "title": "More than 1,500 retired civil servants decry land grabbing",
+   "channel": "NTV Kenya",
+   "views": 5257,
+   "published": "2026-11-07T19:09:38+00:00",
+   "per_hour": 337,
+   "url": "https://www.youtube.com/watch?v=-UugfzzE1L0",
+   "short": "https://youtube.com/shorts/-UugfzzE1L0"
+  },
+  {
+   "title": "Lang’ata residents benefit from free medical camp Organised by KMPDU SG Davji Atellah",
+   "channel": "KTN News",
+   "views": 3445,
+   "published": "2026-11-07T19:08:12+00:00",
+   "per_hour": 220,
+   "url": "https://www.youtube.com/watch?v=RwPasFQapwM",
+   "short": "https://youtube.com/shorts/RwPasFQapwM"
+  },
+  {
+   "title": "Bahati's second bet on Mathare, officially announces 2027 bid",
+   "channel": "NTV Kenya",
+   "views": 19294,
+   "published": "2026-11-07T19:07:45+00:00",
+   "per_hour": 1234,
+   "url": "https://www.youtube.com/watch?v=sAEJGuCg0Bk",
+   "short": "https://youtube.com/shorts/sAEJGuCg0Bk"
+  },
+  {
+   "title": "Hussein vs Mariga: Bitter boardroom dispute ends promising partnership in Kenyan football",
+   "channel": "NTV Kenya",
+   "views": 7534,
+   "published": "2026-11-07T19:06:36+00:00",
+   "per_hour": 481,
+   "url": "https://www.youtube.com/watch?v=kVCZ1za-xh8",
+   "short": "https://youtube.com/shorts/kVCZ1za-xh8"
+  },
+  {
+   "title": "Couples turn to assisted reproductive technology to overcome infertility",
+   "channel": "NTV Kenya",
+   "views": 571,
+   "published": "2026-11-07T19:01:07+00:00",
+   "per_hour": 36,
+   "url": "https://www.youtube.com/watch?v=GpCVV4fctao",
+   "short": "https://youtube.com/shorts/GpCVV4fctao"
+  },
+  {
+   "title": "Mariga faction vows legal action after FKF ouster",
+   "channel": "NTV Kenya",
+   "views": 8340,
+   "published": "2026-11-07T18:43:34+00:00",
+   "per_hour": 520,
+   "url": "https://www.youtube.com/watch?v=UEKXpYFBU6A",
+   "short": "https://youtube.com/shorts/UEKXpYFBU6A"
+  },
+  {
+   "title": "Two former street kids trade crime for rhythm and street dance",
+   "channel": "NTV Kenya",
+   "views": 4459,
+   "published": "2026-11-07T18:40:42+00:00",
+   "per_hour": 277,
+   "url": "https://www.youtube.com/watch?v=WoKfHiGXepw",
+   "short": "https://youtube.com/shorts/WoKfHiGXepw"
+  },
+  {
+   "title": "Ruto gathering 2027 Western-Gusii momentum",
+   "channel": "NTV Kenya",
+   "views": 6178,
+   "published": "2026-11-07T18:27:24+00:00",
+   "per_hour": 379,
+   "url": "https://www.youtube.com/watch?v=0muWJZ3oyqs",
+   "short": "https://youtube.com/shorts/0muWJZ3oyqs"
+  },
+  {
+   "title": "Political tension in Embu after goons disrupt Kivuti, Muturi rally",
+   "channel": "NTV Kenya",
+   "views": 6185,
+   "published": "2026-11-07T18:25:32+00:00",
+   "per_hour": 379,
+   "url": "https://www.youtube.com/watch?v=-qqN8HbPdYQ",
+   "short": "https://youtube.com/shorts/-qqN8HbPdYQ"
+  },
+  {
+   "title": "Activist Muteti Mulinge details abduction, torture",
+   "channel": "NTV Kenya",
+   "views": 2299,
+   "published": "2026-11-07T18:23:57+00:00",
+   "per_hour": 141,
+   "url": "https://www.youtube.com/watch?v=5r2RITFgOg0",
+   "short": "https://youtube.com/shorts/5r2RITFgOg0"
+  }
+ ]
 }
