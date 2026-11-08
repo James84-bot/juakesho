@@ -39,8 +39,9 @@ CRAFT_RULES = """MAKE IT WORTH STOPPING FOR (reach comes from the first 2 second
 - No puffery or filler: breathtaking, stunning, towering, iconic, a key link, remains a vital, plays a crucial role,
   visitors enjoy, gathering pace, "Kenyans demand verified facts", "never share without checking" as a closer.
 - The LAST line is a question to the viewer about their own life, shown on screen, that they can answer in the
-  comments in a word or a number: "Did you pay anything for your KRA PIN? Tell us below." "Is your family smaller
-  than your parents' was?" "What did you pay for unga this week?" A place gets "Who would you take here? Tag them."
+  comments in a word or a number: "Tell us below: did you pay anything for your KRA PIN?" "Is your family smaller
+  than your parents' was?" "What did you pay for unga this week?" A place gets "Tag them: who would you take here?"
+  The question mark ends the line: nothing after it ("...PIN? Tell us below." reads as two lines and is rejected).
   Comments are what push a Reel to new people; viewers never read the caption, so the question must be the last
   beat, not only in the caption. Never "Send this to someone who needs...", "Share to spread awareness", a slogan,
   or a web address: "Read the full report at knbs.or.ke" is never a beat (the source goes in `source`, which we post
@@ -593,7 +594,8 @@ def rewrite_script(post: dict) -> dict | None:
         return None
     new = tidy_beats({**post, "beats": beats, "caption": str(got["caption"])})
     before = {e for e in guard.check(post).errors}
-    added = [e for e in guard.check(new).errors if e not in before]
+    # a rewrite under today's rules must meet today's closer rule even when the old script didn't
+    added = [e for e in guard.check(new).errors if e not in before or e.startswith("closer:")]
     if added:
         print(f"  rewrite of {post.get('id')} skipped: {'; '.join(added)[:200]}")
         return None
@@ -942,6 +944,101 @@ def _anthropic(system: str, user: str, max_tokens: int = 12000, model: str | Non
     if data.get("stop_reason") == "max_tokens":
         raise RuntimeError("Anthropic API: reply was cut off at max_tokens (raise max_tokens)")
     return "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+
+
+def look_at(image: bytes, ask: str) -> str:
+    """One picture and one question to the cheap model that can see (the critic's: Gemini Flash-Lite on the free
+    tier, else Claude Haiku), at temperature 0 so the same picture gets the same answer. The picture goes as a
+    JPEG of at most 1024 px. Raises RuntimeError when no model could look."""
+    import base64
+    import io
+    from PIL import Image
+    with Image.open(io.BytesIO(image)) as im:
+        im = im.convert("RGB")
+        im.thumbnail((1024, 1024))
+        buf = io.BytesIO()
+        im.save(buf, "JPEG", quality=85)
+    b64 = base64.b64encode(buf.getvalue()).decode()
+    errors = []
+    if os.environ.get("GEMINI_API_KEY", "").strip() and SPEND["calls"] < GEMINI_LIMITS["calls"] \
+            and (os.environ.get("JUA_PROVIDER") or "").strip().lower() != "anthropic":
+        body = {"contents": [{"role": "user", "parts": [{"inlineData": {"mimeType": "image/jpeg", "data": b64}},
+                                                        {"text": ask}]}],
+                "generationConfig": {"maxOutputTokens": 400 + GEMINI_THINK_ROOM, "temperature": 0}}
+        try:
+            return _look_gemini(body)
+        except RuntimeError as e:
+            errors.append(str(e)[:120])
+    if os.environ.get("ANTHROPIC_API_KEY", "").strip():
+        body = {"model": CRITIC_MODEL, "max_tokens": 400, "temperature": 0,
+                "messages": [{"role": "user", "content": [
+                    {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": b64}},
+                    {"type": "text", "text": ask}]}]}
+        try:
+            return _look_anthropic(body)
+        except RuntimeError as e:
+            errors.append(str(e)[:120])
+    raise RuntimeError("no model could look at the picture: " + ("; ".join(errors) or "no key set"))
+
+
+def _look_gemini(body: dict) -> str:
+    key = os.environ["GEMINI_API_KEY"].strip()
+    if SPEND["calls"]:
+        time.sleep(GEMINI_LIMITS["pause"])   # the same free per-minute limit as the writer
+    req = urllib.request.Request(GEMINI_URL.format(model=GEMINI_CRITIC), data=json.dumps(body).encode(), method="POST",
+                                 headers={"x-goog-api-key": key, "Content-Type": "application/json"})
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                data = json.loads(r.read())
+            SPEND["calls"] += 1
+            cand = (data.get("candidates") or [{}])[0]
+            text = "".join(p.get("text", "") for p in (cand.get("content") or {}).get("parts", []) if not p.get("thought"))
+            if not text:
+                raise RuntimeError(f"Gemini gave no text: {cand.get('finishReason') or 'empty reply'}")
+            return text
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode(errors="replace")[:200]
+            if e.code in (429, 500, 502, 503, 504) and attempt == 0:
+                time.sleep(float(e.headers.get("retry-after") or 0) or 20)
+                continue
+            raise RuntimeError(f"Gemini {e.code}: {detail}") from e
+        except (*NET_ERRORS, ValueError) as e:
+            if attempt == 0:
+                time.sleep(15)
+                continue
+            raise RuntimeError(f"Gemini unreachable: {e}") from e
+    raise RuntimeError("Gemini: no answer")
+
+
+def _look_anthropic(body: dict) -> str:
+    headers = {"x-api-key": os.environ["ANTHROPIC_API_KEY"].strip(), "anthropic-version": "2023-06-01",
+               "content-type": "application/json"}
+    workspace = (os.environ.get("ANTHROPIC_WORKSPACE_ID") or "").strip()
+    if workspace:
+        headers["anthropic-workspace-id"] = workspace
+    req = urllib.request.Request(API_URL, data=json.dumps(body).encode(), method="POST", headers=headers)
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                data = json.loads(r.read())
+            use = data.get("usage") or {}
+            pin, pout = PRICES["haiku"]
+            SPEND["usd"] += (use.get("input_tokens", 0) * pin + use.get("output_tokens", 0) * pout) / 1e6
+            SPEND["calls"] += 1
+            return "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode(errors="replace")[:200]
+            if e.code in (429, 500, 502, 503, 504, 529) and attempt == 0:
+                time.sleep(float(e.headers.get("retry-after") or 0) or 15)
+                continue
+            raise RuntimeError(f"Anthropic API {e.code}: {detail}") from e
+        except (*NET_ERRORS, ValueError) as e:
+            if attempt == 0:
+                time.sleep(15)
+                continue
+            raise RuntimeError(f"Anthropic API unreachable: {e}") from e
+    raise RuntimeError("Anthropic API: no answer")
 
 
 def extract_json(text: str) -> dict:

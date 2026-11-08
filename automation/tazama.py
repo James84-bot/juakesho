@@ -269,7 +269,7 @@ def clip_segment(ff: str, page, post: dict, info: dict, src: Path, meta: dict, a
         graph.append(f"[{len(caps[:60]) + 2}:a]anull[a]")
     subprocess.run([ff, "-y", "-loglevel", "error", *inputs, "-filter_complex", ";".join(graph),
                     "-map", "[v]", "-map", "[a]", "-t", str(b - a), "-r", "30",
-                    "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-c:a", "aac", "-b:a", "160k",
+                    "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-maxrate", "8M", "-bufsize", "16M", "-c:a", "aac", "-b:a", "160k",
                     "-ar", "44100", "-ac", "2", str(out)], check=True)
 
 
@@ -300,7 +300,7 @@ def make(post: dict, info: dict, src: Path, segments: list[dict], out_dir: Path)
         target = out_dir / f"{post['id']}.mp4"
         subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(tmp / "a.mp4"), "-i", str(tmp / "b.mp4"), "-i", str(tmp / "c.mp4"),
                         "-filter_complex", "[0:v][0:a][1:v][1:a][2:v][2:a]concat=n=3:v=1:a=1[v][a]",
-                        "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-maxrate", "8M", "-bufsize", "16M",
                         "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(target)], check=True)
         subprocess.run([ff, "-y", "-loglevel", "error", "-ss", "1.0", "-i", str(tmp / "a.mp4"), "-frames:v", "1",
                         "-q:v", "2", str(out_dir / f"{post['id']}-cover.jpg")], check=True)

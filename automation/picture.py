@@ -8,6 +8,10 @@ detail(): how much of the photo's detail is real. A blurry TV still, or a small 
 loses almost nothing when shrunk to half size and enlarged back; a sharp photo loses a lot. The score is that loss
 measured against the loss at a fifth of the size (0-1, higher = sharper), so it does not depend on what the photo
 shows. Measured on test photos: sharp ones score 0.38-0.57, the same photos enlarged 2x or blurred 0.16-0.25.
+
+outlet_edit(): a picture a publisher has already designed (a "HEALTH" label, a headline, an inset circle, a logo, two
+photos joined) is their edit, not a photograph; we never put our design on top of someone else's. A model that can
+see answers it, once per picture (the verdicts are kept in state/photo_checks.json).
 """
 from __future__ import annotations
 
@@ -68,3 +72,49 @@ def detail(data: bytes) -> float:
 
 def soft(data: bytes) -> bool:
     return detail(data) < SOFT_BELOW
+
+
+EDIT_ASK = """You check pictures for a news page that only uses real, unedited photographs. Look at this image.
+edited = true when a publisher or designer has added anything to the photograph or combined pictures: words,
+headlines, labels, category tags or captions laid over the image; a logo or watermark; a circle or box with another
+picture inside; two or more photos joined into one; a coloured band, border or frame; icons, arrows or emoji; or the
+image is an illustration, chart, map or computer render rather than a photograph.
+Text that is physically part of the scene does NOT count: signs, banners, posters, name plates on a table, screens or
+projections in the room, printed clothing, documents someone holds.
+Return ONLY JSON: {"edited": true or false, "what": "what was added, in under 12 words"}"""
+CHECKS_KEEP = 400   # verdicts kept (the newest), enough for a week of photos from every outlet
+
+
+def _checks_file():
+    import brands
+    return brands.STATE / "photo_checks.json"
+
+
+def outlet_edit(data: bytes) -> str:
+    """What a publisher added to this picture ('' when it is a plain photograph). When no model can look, the
+    answer is '' and the reason is logged: a missing check never costs a post its photo."""
+    import hashlib
+    import json
+    key = hashlib.sha1(data).hexdigest()
+    path = _checks_file()
+    try:
+        seen = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        seen = {}
+    if key in seen:
+        return seen[key].get("what", "") if seen[key].get("edited") else ""
+    try:
+        import draft
+        got = draft.extract_json(draft.look_at(data, EDIT_ASK))
+    except Exception as e:   # no key, quota, or an unreadable reply
+        print(f"    edit check skipped: {str(e)[:120]}")
+        return ""
+    edited = got.get("edited") is True
+    what = str(got.get("what") or "an edited graphic")[:80] if edited else ""
+    seen[key] = {"edited": edited, "what": what}
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(dict(list(seen.items())[-CHECKS_KEEP:]), indent=0), encoding="utf-8")
+    except OSError:
+        pass
+    return what

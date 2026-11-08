@@ -130,3 +130,15 @@ class GlassLook(unittest.TestCase):
         h = self.html("plain")
         self.assertNotIn('class="gbg"', h)
         self.assertNotIn("gpanel", h)
+
+
+class Bitrate(unittest.TestCase):
+    """Every Reel encode carries the 8 Mb/s ceiling (YouTube's recommended upload rate for 1080p at 30 fps), so a
+    busy photo under a slow zoom can't make a 24 MB Reel again."""
+
+    def test_reel_encodes_are_capped(self):
+        x = video.X264
+        self.assertEqual(x[x.index("-maxrate") + 1], "8M")
+        self.assertIn("-bufsize", x)
+        src = (HERE / "video.py").read_text(encoding="utf-8")
+        self.assertEqual(src.count('"libx264"'), 1)   # only in X264 itself: no encode bypasses the ceiling

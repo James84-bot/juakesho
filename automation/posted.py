@@ -412,6 +412,11 @@ def _photo_of(item: dict) -> tuple[bytes, dict] | None:
             _note(f"    skipped {item['outlet']} image: {str(e)[:80]}")
             continue
         if _check_image(data):   # (sizes below are logged so a too-strict limit shows up in photos.log)
+            import picture
+            edit = picture.outlet_edit(data)
+            if edit:   # the outlet's own graphic (a label, a headline, an inset): their edit, never under our design
+                _note(f"    skipped {item['outlet']}: an edited graphic, not a photo ({edit}) ({img[:60]})")
+                return None   # its other copies are the same graphic: the next report is checked instead
             who = _photographer(credit)
             line = f"Photo: {item['outlet']}" + (f" / {who}" if who and who.lower() not in item["outlet"].lower() else "")
             return data, {"credit": line, "url": item["link"], "outlet": item["outlet"], "title": item.get("title", "")}

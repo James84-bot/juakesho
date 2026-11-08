@@ -2237,6 +2237,56 @@ def rewrite_samples(posts: list[dict]) -> list[dict]:
     return out
 
 
+
+def edit_check(n: int = 14) -> int:
+    """The lead photos of the newest posts that used an outlet's picture, fetched again and judged by
+    picture.outlet_edit; a contact sheet (each picture with its verdict) goes to docs/exports/_qa/editcheck.jpg so
+    the verdicts can be checked by eye. Returns how many pictures were judged."""
+    import picture
+    import posted
+    from PIL import Image, ImageDraw
+    found = []
+    for f in sorted(WEEKS.glob("*.json"))[-2:]:
+        for p in json.loads(f.read_text(encoding="utf-8"))["posts"]:
+            if p.get("photo_kind") in {"posted", "file"} and str(p.get("photo_source") or "").startswith("http"):
+                found.append(p)
+    found.sort(key=lambda p: p["publish_at"], reverse=True)
+    tiles, judged = [], 0
+    real = picture.outlet_edit
+    for p in found[:n]:
+        outlet = str(p.get("photo_outlet") or "outlet")
+        item = {"link": p["photo_source"], "outlet": outlet, "credit": "", "img": ""}
+        picture.outlet_edit = lambda data: ""   # fetch the picture as it was used, then judge it below
+        try:
+            got = posted._photo_of(item)
+        finally:
+            picture.outlet_edit = real
+        if not got:
+            log(f"editcheck {p['id']}: picture not fetched again ({p['photo_source'][:70]})")
+            continue
+        verdict = real(got[0])
+        judged += 1
+        log(f"editcheck {p['id']} ({outlet}): {'EDITED: ' + verdict if verdict else 'photo'}")
+        import io as _io
+        im = Image.open(_io.BytesIO(got[0])).convert("RGB")
+        im.thumbnail((360, 360))
+        tile = Image.new("RGB", (380, 420), (16, 16, 16))
+        tile.paste(im, ((380 - im.width) // 2, 10))
+        d = ImageDraw.Draw(tile)
+        d.text((10, 378), p["id"][-14:], fill=(200, 200, 200))
+        d.text((10, 396), ("EDITED: " + verdict)[:58] if verdict else "photo", fill=(255, 90, 90) if verdict else (120, 220, 120))
+        tiles.append(tile)
+    if tiles:
+        cols = 4
+        sheet = Image.new("RGB", (380 * cols, 420 * ((len(tiles) + cols - 1) // cols)), (0, 0, 0))
+        for i, t in enumerate(tiles):
+            sheet.paste(t, ((i % cols) * 380, (i // cols) * 420))
+        QA.mkdir(parents=True, exist_ok=True)
+        sheet.save(QA / "editcheck.jpg", quality=85)
+    log(f"editcheck: {judged} picture(s) judged")
+    return judged
+
+
 QA = EXPORTS / "_qa"
 
 
@@ -2630,7 +2680,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2868,6 +2918,8 @@ def _main(argv: list[str] | None = None) -> int:
     if a.command == "stats":   # where the brand stands on every platform (reads only)
         platform_stats()
         return 0
+    if a.command == "editcheck":   # the outlet-graphic check on the lead photos of our newest posts
+        return 0 if edit_check() else 1
     if a.command == "labcheck":   # the street brand's sources, read from the runner
         import sourcecheck
         for line in sourcecheck.lab(os.environ.get("YOUTUBE_API_KEY", "").strip()):
