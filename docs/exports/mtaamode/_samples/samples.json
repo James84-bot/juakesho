@@ -1,0 +1,320 @@
+{
+ "made": "2026-11-08T16:02:08.868579+03:00",
+ "posts": [
+  {
+   "id": "sample-chart",
+   "template": "chart",
+   "series": "Ngoma za Wiki",
+   "bg": "usiku",
+   "size": "story",
+   "lane": "everyone",
+   "publish_at": "2026-11-08T16:00:00+03:00",
+   "songs": [
+    {
+     "artist": "Megan Thee Stallion",
+     "song": "Thin Ice - Tina Tuesday Freestyle",
+     "views": 20779714,
+     "per_day": 1101736,
+     "days": 18.9,
+     "url": "https://www.youtube.com/watch?v=9ofUM-_3uQ4",
+     "channel": "Megan Thee Stallion",
+     "per_day_text": "1.1M"
+    },
+    {
+     "artist": "Ayra Starr ft ZAYN",
+     "song": "Heaven Baby",
+     "views": 24874990,
+     "per_day": 734661,
+     "days": 33.9,
+     "url": "https://www.youtube.com/watch?v=2ZTcvsdMR1c",
+     "channel": "AyraStarrVEVO",
+     "per_day_text": "735K"
+    },
+    {
+     "artist": "Bien",
+     "song": "I’ll Be Okay",
+     "views": 11410962,
+     "per_day": 377399,
+     "days": 30.2,
+     "url": "https://www.youtube.com/watch?v=_POKM8PhWrA",
+     "channel": "Bien",
+     "per_day_text": "377K"
+    },
+    {
+     "artist": "Victony ft Don Toliver & Summer Walker",
+     "song": "SLICK Remix",
+     "views": 6228858,
+     "per_day": 273083,
+     "days": 22.8,
+     "url": "https://www.youtube.com/watch?v=ksnN8PMf30I",
+     "channel": "Victony",
+     "per_day_text": "273K"
+    },
+    {
+     "artist": "Diamond Platnumz ft Focalistic, Uncool MC, R",
+     "song": ", Xduppy & Dj Maphorisa",
+     "views": 2134944,
+     "per_day": 233185,
+     "days": 9.2,
+     "url": "https://www.youtube.com/watch?v=62ERD2rKMPk",
+     "channel": "Diamond Platnumz",
+     "per_day_text": "233K"
+    },
+    {
+     "artist": "Zuchu ft Diamond Platnumz",
+     "song": "Mvua Ya Baraka",
+     "views": 1706225,
+     "per_day": 185287,
+     "days": 9.2,
+     "url": "https://www.youtube.com/watch?v=DmffA6aKaqk",
+     "channel": "Zuchu",
+     "per_day_text": "185K"
+    },
+    {
+     "artist": "Willy Paul ft Jay Melody",
+     "song": "Miti",
+     "views": 964366,
+     "per_day": 184183,
+     "days": 5.2,
+     "url": "https://www.youtube.com/watch?v=_9mIoN_mBRk",
+     "channel": "Willy Paul Thee Pozze",
+     "per_day_text": "184K"
+    },
+    {
+     "artist": "Kapitani x Toxic Lyrikali",
+     "song": "Shing",
+     "views": 3052019,
+     "per_day": 117355,
+     "days": 26.0,
+     "url": "https://www.youtube.com/watch?v=6YARCFVmO9I",
+     "channel": "Kapitani",
+     "per_day_text": "117K"
+    },
+    {
+     "artist": "Bahati",
+     "song": "Uinuliwe",
+     "views": 389319,
+     "per_day": 101936,
+     "days": 3.8,
+     "url": "https://www.youtube.com/watch?v=vDBJe6RKomw",
+     "channel": "Bahati Kenya",
+     "per_day_text": "102K"
+    },
+    {
+     "artist": "Khaligraph Jones",
+     "song": "Aura Farm",
+     "views": 380069,
+     "per_day": 89726,
+     "days": 4.2,
+     "url": "https://www.youtube.com/watch?v=MxvKkqurlKU",
+     "channel": "Khaligraph Jones",
+     "per_day_text": "90K"
+    }
+   ],
+   "as_of": "8 Nov 2026, 15:39 EAT",
+   "caption": "Ngoma za Wiki: what Kenya is playing on YouTube right now.\n\n1. Megan Thee Stallion - Thin Ice - Tina Tuesday Freestyle (1.1M views a day)\n2. Ayra Starr ft ZAYN - Heaven Baby (735K views a day)\n3. Bien - I’ll Be Okay (377K views a day)\n4. Victony ft Don Toliver & Summer Walker - SLICK Remix (273K views a day)\n5. Diamond Platnumz ft Focalistic, Uncool MC, R - , Xduppy & Dj Maphorisa (233K views a day)\n6. Zuchu ft Diamond Platnumz - Mvua Ya Baraka (185K views a day)\n7. Willy Paul ft Jay Melody - Miti (184K views a day)\n8. Kapitani x Toxic Lyrikali - Shing (117K views a day)\n9. Bahati - Uinuliwe (102K views a day)\n10. Khaligraph Jones - Aura Farm (90K views a day)\n\nWhich one is on repeat for you?\n\nRanked by views per day since release, from YouTube's most-popular music list for Kenya, 8 Nov 2026, 15:39 EAT.\n\n#MtaaMode #KenyanMusic #NgomaZaWiki",
+   "source": "YouTube Data API, most-popular music videos for Kenya, read 8 Nov 2026, 15:39 EAT",
+   "shorts_title": "Ngoma za Wiki: what Kenya is playing right now #Shorts",
+   "material": {
+    "kind": "chart",
+    "as_of": "8 Nov 2026, 15:39 EAT"
+   },
+   "guard": {
+    "errors": [
+     "shouting reads as clickbait: words in capitals (EAT, SLICK, ZAYN) (let the numbers carry the urgency)"
+    ],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   }
+  },
+  {
+   "id": "sample-scene-1",
+   "template": "scene",
+   "series": "Maisha ya Mtaa",
+   "bg": "usiku",
+   "size": "story",
+   "lane": "everyone",
+   "publish_at": "2026-11-08T16:00:00+03:00",
+   "title": "Bill ya chapo kibanda",
+   "place": "kibanda",
+   "cast": [
+    "brayo",
+    "sasha"
+   ],
+   "lines": [
+    {
+     "who": "brayo",
+     "text": "Chapo nne na madondo mbili zimeenda safi sana.",
+     "do": "point",
+     "face": "happy"
+    },
+    {
+     "who": "sasha",
+     "text": "Sawa, lakini waiter anakuja na bill yetu sasa hivi.",
+     "do": "cross",
+     "face": "smug"
+    },
+    {
+     "who": "brayo",
+     "text": "Niuzie tu fifty bob kwa M-Pesa nirudishe jioni Sasha.",
+     "do": "beg",
+     "face": "sad"
+    },
+    {
+     "who": "sasha",
+     "text": "Screenshot ya deni yako ya jana bado iko pinned kwa group.",
+     "do": "phone",
+     "face": "smug",
+     "react": "shock"
+    }
+   ],
+   "caption": "Wale marafiki wa kusema 'tuma nitakurudishia jioni' kabla bill ifike.\n\nNani hulipia bill kila siku kwa squad yenu?\n\nAnimated skit: characters are fictional. #MtaaMode #Nairobi",
+   "situation": "Kulipa bill ya kibanda",
+   "critic": {
+    "avg": 7.25,
+    "note": "Drop formal words like 'waiter' for a kibanda setting and make Sasha threaten to post the current bill to that same group.",
+    "funny": 6.0,
+    "true": 8.0,
+    "voice": 6.0,
+    "clean": 9.0
+   },
+   "shorts_title": "Bill ya chapo kibanda #Shorts",
+   "guard": {
+    "errors": [],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   }
+  },
+  {
+   "id": "sample-scene-2",
+   "template": "scene",
+   "series": "Maisha ya Mtaa",
+   "bg": "usiku",
+   "size": "story",
+   "lane": "everyone",
+   "publish_at": "2026-11-08T17:00:00+03:00",
+   "title": "Token zikiisha kwa ploti",
+   "place": "plot",
+   "cast": [
+    "landlord",
+    "kevo",
+    "dee"
+   ],
+   "lines": [
+    {
+     "who": "landlord",
+     "text": "Stima imezimika kwa ploti mzima na token iliisha jana.",
+     "do": "angry",
+     "face": "angry"
+    },
+    {
+     "who": "kevo",
+     "text": "Nilikuwa naenda kununua, niko njiani kutoka stage sai.",
+     "do": "phone",
+     "face": "neutral"
+    },
+    {
+     "who": "dee",
+     "text": "Kevo, unanipita hapa kwa staircase na powerbank yangu!",
+     "do": "point",
+     "face": "shock"
+    },
+    {
+     "who": "landlord",
+     "text": "Kumbe unatembea kwa giza ukiambia watu uko stage?",
+     "do": "cross",
+     "face": "shock"
+    },
+    {
+     "who": "dee",
+     "text": "By the way Landlord, nauza solar bulb mia tatu tu.",
+     "do": "shrug",
+     "face": "smug"
+    }
+   ],
+   "caption": "Kevo anasema ako njiani na kumbe amejificha tu kwa stairs.\n\nKuna jirani kama Kevo kwa ploti yenu?\n\nAnimated skit: characters are fictional. #MtaaMode #Nairobi",
+   "situation": "Token za stima kuisha",
+   "critic": {
+    "avg": 7.0,
+    "note": "Dee pitching a solar bulb derails the tension; having Landlord confiscate Kevo's powerbank as token collateral would hit harder.",
+    "funny": 5.0,
+    "true": 7.0,
+    "voice": 6.0,
+    "clean": 10.0
+   },
+   "shorts_title": "Token zikiisha kwa ploti #Shorts",
+   "guard": {
+    "errors": [],
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
+   }
+  },
+  {
+   "id": "sample-scene-3",
+   "template": "scene",
+   "series": "Maisha ya Mtaa",
+   "bg": "usiku",
+   "size": "story",
+   "lane": "everyone",
+   "publish_at": "2026-11-08T18:00:00+03:00",
+   "title": "WhatsApp forwards za Mathe",
+   "place": "nyumbani",
+   "cast": [
+    "brayo",
+    "mathe"
+   ],
+   "lines": [
+    {
+     "who": "brayo",
+     "text": "Mathe, nimeona ile video ya dakika thelathini umenitumia WhatsApp.",
+     "do": "phone",
+     "face": "neutral"
+    },
+    {
+     "who": "mathe",
+     "text": "Umeona vile vijana wenzako wananunulia wazazi wao gari?",
+     "do": "cross",
+     "face": "smug"
+    },
+    {
+     "who": "brayo",
+     "text": "Nilikuwa naomba fare ya kwenda interview ya job tao.",
+     "do": "beg",
+     "face": "sad"
+    },
+    {
+     "who": "mathe",
+     "text": "Nimetuma prayer ya safari kwa WhatsApp, ifungue utembee nayo.",
+     "do": "point",
+     "face": "smug",
+     "react": "shock"
+    }
+   ],
+   "caption": "Mathe akikujibu na WhatsApp forward badala ya kutuma fare.\n\nMathe wako pia hutuma maombi badala ya mchango?\n\nAnimated skit: characters are fictional. #MtaaMode #Nairobi",
+   "situation": "Kuomba fare kutoka kwa Mathe",
+   "critic": {
+    "avg": 7.75,
+    "note": "Change 'dakika thelathini' to 'video ya thirty minutes' so Brayo sounds like a real Nairobian youth.",
+    "funny": 7.0,
+    "true": 9.0,
+    "voice": 7.0,
+    "clean": 8.0
+   },
+   "shorts_title": "WhatsApp forwards za Mathe #Shorts",
+   "guard": {
+    "errors": [],
+    "warnings": []
+   }
+  }
+ ],
+ "qa": {
+  "sample-chart": [],
+  "sample-scene-1": [],
+  "sample-scene-2": [],
+  "sample-scene-3": []
+ },
+ "held": []
+}
