@@ -1,5 +1,5 @@
 {
- "made": "2026-11-08T16:02:08.868579+03:00",
+ "made": "2026-11-08T16:29:24.042814+03:00",
  "posts": [
   {
    "id": "sample-chart",
@@ -8,13 +8,14 @@
    "bg": "usiku",
    "size": "story",
    "lane": "everyone",
-   "publish_at": "2026-11-08T16:00:00+03:00",
+   "publish_at": "2026-11-08T17:00:00+03:00",
    "songs": [
     {
      "artist": "Megan Thee Stallion",
      "song": "Thin Ice - Tina Tuesday Freestyle",
-     "views": 20779714,
-     "per_day": 1101736,
+     "title": "Megan Thee Stallion - Thin Ice - Tina Tuesday Freestyle",
+     "views": 20795189,
+     "per_day": 1101459,
      "days": 18.9,
      "url": "https://www.youtube.com/watch?v=9ofUM-_3uQ4",
      "channel": "Megan Thee Stallion",
@@ -23,8 +24,9 @@
     {
      "artist": "Ayra Starr ft ZAYN",
      "song": "Heaven Baby",
-     "views": 24874990,
-     "per_day": 734661,
+     "title": "Ayra Starr - Heaven Baby ft. ZAYN",
+     "views": 24886368,
+     "per_day": 734589,
      "days": 33.9,
      "url": "https://www.youtube.com/watch?v=2ZTcvsdMR1c",
      "channel": "AyraStarrVEVO",
@@ -33,9 +35,10 @@
     {
      "artist": "Bien",
      "song": "I’ll Be Okay",
-     "views": 11410962,
-     "per_day": 377399,
-     "days": 30.2,
+     "title": "BIEN - I’ll Be Okay (Official Music Video)",
+     "views": 11420302,
+     "per_day": 377473,
+     "days": 30.3,
      "url": "https://www.youtube.com/watch?v=_POKM8PhWrA",
      "channel": "Bien",
      "per_day_text": "377K"
@@ -43,18 +46,20 @@
     {
      "artist": "Victony ft Don Toliver & Summer Walker",
      "song": "SLICK Remix",
-     "views": 6228858,
-     "per_day": 273083,
+     "title": "Victony - SLICK Remix (feat. Don Toliver & Summer Walker) [Official Music Video]",
+     "views": 6233867,
+     "per_day": 273077,
      "days": 22.8,
      "url": "https://www.youtube.com/watch?v=ksnN8PMf30I",
      "channel": "Victony",
      "per_day_text": "273K"
     },
     {
-     "artist": "Diamond Platnumz ft Focalistic, Uncool MC, R",
-     "song": ", Xduppy & Dj Maphorisa",
-     "views": 2134944,
-     "per_day": 233185,
+     "artist": "Diamond Platnumz, Xduppy & Dj Maphorisa ft Focalistic, Uncool MC, Ricky & Angekebabuye",
+     "song": "Tse Monate",
+     "title": "Diamond Platnumz, Xduppy & Dj Maphorisa ft Focalistic, Uncool MC, Ricky & Angekebabuye - Tse Monate",
+     "views": 2138310,
+     "per_day": 233074,
      "days": 9.2,
      "url": "https://www.youtube.com/watch?v=62ERD2rKMPk",
      "channel": "Diamond Platnumz",
@@ -63,8 +68,9 @@
     {
      "artist": "Zuchu ft Diamond Platnumz",
      "song": "Mvua Ya Baraka",
-     "views": 1706225,
-     "per_day": 185287,
+     "title": "Zuchu ft Diamond Platnumz - Mvua Ya Baraka ( Lyric Audio)",
+     "views": 1710820,
+     "per_day": 185407,
      "days": 9.2,
      "url": "https://www.youtube.com/watch?v=DmffA6aKaqk",
      "channel": "Zuchu",
@@ -73,9 +79,10 @@
     {
      "artist": "Willy Paul ft Jay Melody",
      "song": "Miti",
-     "views": 964366,
-     "per_day": 184183,
-     "days": 5.2,
+     "title": "Willy Paul Ft Jay Melody - Miti ( Official Song )",
+     "views": 968515,
+     "per_day": 184314,
+     "days": 5.3,
      "url": "https://www.youtube.com/watch?v=_9mIoN_mBRk",
      "channel": "Willy Paul Thee Pozze",
      "per_day_text": "184K"
@@ -83,8 +90,9 @@
     {
      "artist": "Kapitani x Toxic Lyrikali",
      "song": "Shing",
-     "views": 3052019,
-     "per_day": 117355,
+     "title": "Kapitani x Toxic Lyrikali - SHING (Official Music Video)",
+     "views": 3054190,
+     "per_day": 117354,
      "days": 26.0,
      "url": "https://www.youtube.com/watch?v=6YARCFVmO9I",
      "channel": "Kapitani",
@@ -93,8 +101,9 @@
     {
      "artist": "Bahati",
      "song": "Uinuliwe",
-     "views": 389319,
-     "per_day": 101936,
+     "title": "BAHATI - UINULIWE (Official Video)",
+     "views": 390290,
+     "per_day": 101690,
      "days": 3.8,
      "url": "https://www.youtube.com/watch?v=vDBJe6RKomw",
      "channel": "Bahati Kenya",
@@ -103,29 +112,26 @@
     {
      "artist": "Khaligraph Jones",
      "song": "Aura Farm",
-     "views": 380069,
-     "per_day": 89726,
-     "days": 4.2,
+     "title": "Aura Farm - Khaligraph Jones  (Official Video)",
+     "views": 380859,
+     "per_day": 89515,
+     "days": 4.3,
      "url": "https://www.youtube.com/watch?v=MxvKkqurlKU",
      "channel": "Khaligraph Jones",
      "per_day_text": "90K"
     }
    ],
-   "as_of": "8 Nov 2026, 15:39 EAT",
-   "caption": "Ngoma za Wiki: what Kenya is playing on YouTube right now.\n\n1. Megan Thee Stallion - Thin Ice - Tina Tuesday Freestyle (1.1M views a day)\n2. Ayra Starr ft ZAYN - Heaven Baby (735K views a day)\n3. Bien - I’ll Be Okay (377K views a day)\n4. Victony ft Don Toliver & Summer Walker - SLICK Remix (273K views a day)\n5. Diamond Platnumz ft Focalistic, Uncool MC, R - , Xduppy & Dj Maphorisa (233K views a day)\n6. Zuchu ft Diamond Platnumz - Mvua Ya Baraka (185K views a day)\n7. Willy Paul ft Jay Melody - Miti (184K views a day)\n8. Kapitani x Toxic Lyrikali - Shing (117K views a day)\n9. Bahati - Uinuliwe (102K views a day)\n10. Khaligraph Jones - Aura Farm (90K views a day)\n\nWhich one is on repeat for you?\n\nRanked by views per day since release, from YouTube's most-popular music list for Kenya, 8 Nov 2026, 15:39 EAT.\n\n#MtaaMode #KenyanMusic #NgomaZaWiki",
-   "source": "YouTube Data API, most-popular music videos for Kenya, read 8 Nov 2026, 15:39 EAT",
+   "as_of": "8 Nov 2026, 16:06 EAT",
+   "caption": "Ngoma za Wiki: what Kenya is playing on YouTube right now.\n\n1. Megan Thee Stallion - Thin Ice - Tina Tuesday Freestyle (1.1M views a day)\n2. Ayra Starr ft ZAYN - Heaven Baby (735K views a day)\n3. Bien - I’ll Be Okay (377K views a day)\n4. Victony ft Don Toliver & Summer Walker - SLICK Remix (273K views a day)\n5. Diamond Platnumz, Xduppy & Dj Maphorisa ft Focalistic, Uncool MC, Ricky & Angekebabuye - Tse Monate (233K views a day)\n6. Zuchu ft Diamond Platnumz - Mvua Ya Baraka (185K views a day)\n7. Willy Paul ft Jay Melody - Miti (184K views a day)\n8. Kapitani x Toxic Lyrikali - Shing (117K views a day)\n9. Bahati - Uinuliwe (102K views a day)\n10. Khaligraph Jones - Aura Farm (90K views a day)\n\nWhich one is on repeat for you? Send this to the friend who won't stop playing it.\n\nRanked by views per day since release, from YouTube's most-popular music list for Kenya, 8 Nov 2026, 16:06 EAT.\n\n#MtaaMode #KenyanMusic #NgomaZaWiki",
+   "source": "YouTube Data API, most-popular music videos for Kenya, read 8 Nov 2026, 16:06 EAT",
    "shorts_title": "Ngoma za Wiki: what Kenya is playing right now #Shorts",
    "material": {
     "kind": "chart",
-    "as_of": "8 Nov 2026, 15:39 EAT"
+    "as_of": "8 Nov 2026, 16:06 EAT"
    },
    "guard": {
-    "errors": [
-     "shouting reads as clickbait: words in capitals (EAT, SLICK, ZAYN) (let the numbers carry the urgency)"
-    ],
-    "warnings": [
-     "caption has no send/share/save call: sends and saves drive reach"
-    ]
+    "errors": [],
+    "warnings": []
    }
   },
   {
@@ -135,51 +141,63 @@
    "bg": "usiku",
    "size": "story",
    "lane": "everyone",
-   "publish_at": "2026-11-08T16:00:00+03:00",
-   "title": "Bill ya chapo kibanda",
-   "place": "kibanda",
+   "publish_at": "2026-11-08T17:00:00+03:00",
+   "title": "Tarehe tano kwa ploti",
+   "place": "plot",
    "cast": [
     "brayo",
-    "sasha"
+    "sasha",
+    "landlord"
    ],
    "lines": [
     {
-     "who": "brayo",
-     "text": "Chapo nne na madondo mbili zimeenda safi sana.",
-     "do": "point",
-     "face": "happy"
-    },
-    {
-     "who": "sasha",
-     "text": "Sawa, lakini waiter anakuja na bill yetu sasa hivi.",
-     "do": "cross",
+     "who": "landlord",
+     "text": "Brayo, leo ni tarehe tano na mlango ulikuwa wazi.",
+     "do": "walk_in",
      "face": "smug"
     },
     {
      "who": "brayo",
-     "text": "Niuzie tu fifty bob kwa M-Pesa nirudishe jioni Sasha.",
+     "text": "Boss, subiri kidogo, kuna transaction inaingia saa hii.",
      "do": "beg",
      "face": "sad"
     },
     {
      "who": "sasha",
-     "text": "Screenshot ya deni yako ya jana bado iko pinned kwa group.",
-     "do": "phone",
-     "face": "smug",
-     "react": "shock"
+     "text": "Transaction gani na umelala tangu asubuhi?",
+     "do": "cross",
+     "face": "neutral"
+    },
+    {
+     "who": "brayo",
+     "text": "Sasha, mbona unaharibia msee wa mtaa connection?",
+     "do": "shrug",
+     "face": "angry"
+    },
+    {
+     "who": "sasha",
+     "text": "Mimi nataka Wi-Fi irudi, lipa Landlord kwanza.",
+     "do": "point",
+     "face": "smug"
+    },
+    {
+     "who": "landlord",
+     "text": "Hiyo router nabeba sasa hivi, transaction ikikosa ninaweka kufuli kubwa hapa!",
+     "do": "point",
+     "face": "smug"
     }
    ],
-   "caption": "Wale marafiki wa kusema 'tuma nitakurudishia jioni' kabla bill ifike.\n\nNani hulipia bill kila siku kwa squad yenu?\n\nAnimated skit: characters are fictional. #MtaaMode #Nairobi",
-   "situation": "Kulipa bill ya kibanda",
+   "caption": "Tarehe tano ikifika, kila mtu kwa ploti anageuka detective.\n\nKeja yenu Landlord anagonga mlango saa ngapi?\n\nAnimated skit: characters are fictional. #MtaaMode #Nairobi",
+   "situation": "Rent day excuses exposed",
    "critic": {
-    "avg": 7.25,
-    "note": "Drop formal words like 'waiter' for a kibanda setting and make Sasha threaten to post the current bill to that same group.",
+    "avg": 7.5,
+    "note": "Make Brayo blame Safaricom's network for the failed rent transaction instead of arguing.",
     "funny": 6.0,
-    "true": 8.0,
-    "voice": 6.0,
-    "clean": 9.0
+    "true": 7.0,
+    "voice": 7.0,
+    "clean": 10.0
    },
-   "shorts_title": "Bill ya chapo kibanda #Shorts",
+   "shorts_title": "Tarehe tano kwa ploti #Shorts",
    "guard": {
     "errors": [],
     "warnings": [
@@ -194,57 +212,62 @@
    "bg": "usiku",
    "size": "story",
    "lane": "everyone",
-   "publish_at": "2026-11-08T17:00:00+03:00",
-   "title": "Token zikiisha kwa ploti",
-   "place": "plot",
+   "publish_at": "2026-11-08T18:00:00+03:00",
+   "title": "Mvua na fare kwa matatu",
+   "place": "matatu",
    "cast": [
-    "landlord",
     "kevo",
     "dee"
    ],
    "lines": [
     {
-     "who": "landlord",
-     "text": "Stima imezimika kwa ploti mzima na token iliisha jana.",
-     "do": "angry",
+     "who": "kevo",
+     "text": "Niko stage bana, five minutes nifike town.",
+     "do": "phone",
+     "face": "smug"
+    },
+    {
+     "who": "dee",
+     "text": "Kevo, tuko Nyayo Stadium kwa jam na konda amepandisha fare!",
+     "do": "point",
      "face": "angry"
     },
     {
      "who": "kevo",
-     "text": "Nilikuwa naenda kununua, niko njiani kutoka stage sai.",
-     "do": "phone",
+     "text": "Mwambie niko na hamsini pekee, kwani mvua inaongeza petroli?",
+     "do": "shrug",
      "face": "neutral"
     },
     {
      "who": "dee",
-     "text": "Kevo, unanipita hapa kwa staircase na powerbank yangu!",
-     "do": "point",
-     "face": "shock"
+     "text": "Konda anasema mwenye hana mia mbili ashuke atembee kwa hii mvua.",
+     "do": "cross",
+     "face": "smug"
     },
     {
-     "who": "landlord",
-     "text": "Kumbe unatembea kwa giza ukiambia watu uko stage?",
-     "do": "cross",
-     "face": "shock"
+     "who": "kevo",
+     "text": "Nishuke nitembee kwa mvua na nina hamsini pekee mfukoni?",
+     "do": "facepalm",
+     "face": "sad"
     },
     {
      "who": "dee",
-     "text": "By the way Landlord, nauza solar bulb mia tatu tu.",
-     "do": "shrug",
+     "text": "Bahati yako niko na mwavuli kwa bag, nitumie hamsini kwa Till!",
+     "do": "point",
      "face": "smug"
     }
    ],
-   "caption": "Kevo anasema ako njiani na kumbe amejificha tu kwa stairs.\n\nKuna jirani kama Kevo kwa ploti yenu?\n\nAnimated skit: characters are fictional. #MtaaMode #Nairobi",
-   "situation": "Token za stima kuisha",
+   "caption": "Mvua ikianza Nairobi fare inapanda kabla hata matone ifike chini.\n\nUshawahi rushwa nje ya matatu juu ya fare kupanda?\n\nAnimated skit: characters are fictional. #MtaaMode #Nairobi",
+   "situation": "Fare hike during rain jam",
    "critic": {
-    "avg": 7.0,
-    "note": "Dee pitching a solar bulb derails the tension; having Landlord confiscate Kevo's powerbank as token collateral would hit harder.",
-    "funny": 5.0,
-    "true": 7.0,
-    "voice": 6.0,
+    "avg": 8.25,
+    "note": "Have Kevo claim he is actually in a chopper hovering above the jam to make the lie worse.",
+    "funny": 7.0,
+    "true": 8.0,
+    "voice": 8.0,
     "clean": 10.0
    },
-   "shorts_title": "Token zikiisha kwa ploti #Shorts",
+   "shorts_title": "Mvua na fare kwa matatu #Shorts",
    "guard": {
     "errors": [],
     "warnings": [
@@ -259,8 +282,8 @@
    "bg": "usiku",
    "size": "story",
    "lane": "everyone",
-   "publish_at": "2026-11-08T18:00:00+03:00",
-   "title": "WhatsApp forwards za Mathe",
+   "publish_at": "2026-11-08T19:00:00+03:00",
+   "title": "Fare ya interview",
    "place": "nyumbani",
    "cast": [
     "brayo",
@@ -269,49 +292,67 @@
    "lines": [
     {
      "who": "brayo",
-     "text": "Mathe, nimeona ile video ya dakika thelathini umenitumia WhatsApp.",
-     "do": "phone",
-     "face": "neutral"
-    },
-    {
-     "who": "mathe",
-     "text": "Umeona vile vijana wenzako wananunulia wazazi wao gari?",
-     "do": "cross",
-     "face": "smug"
-    },
-    {
-     "who": "brayo",
-     "text": "Nilikuwa naomba fare ya kwenda interview ya job tao.",
+     "text": "Mathe, nitumie mia mbili ya fare niende interview kesho.",
      "do": "beg",
      "face": "sad"
     },
     {
      "who": "mathe",
-     "text": "Nimetuma prayer ya safari kwa WhatsApp, ifungue utembee nayo.",
+     "text": "Interview ya nini na ulisomea computer miaka minne?",
+     "do": "cross",
+     "face": "neutral"
+    },
+    {
+     "who": "brayo",
+     "text": "Hii ni entry-level, wanataka tu mtu anajua kutumia mouse.",
      "do": "point",
-     "face": "smug",
-     "react": "shock"
+     "face": "happy"
+    },
+    {
+     "who": "mathe",
+     "text": "Nimeona kwa WhatsApp hiyo kazi inataka miaka tano ya experience.",
+     "do": "phone",
+     "face": "smug"
+    },
+    {
+     "who": "brayo",
+     "text": "Mathe, WhatsApp groups zako zinajua hadi kazi za watu?",
+     "do": "shrug",
+     "face": "shock"
+    },
+    {
+     "who": "mathe",
+     "text": "Zinajua pia mtoto wangu hana fare lakini ako na bundles.",
+     "do": "laugh",
+     "face": "smug"
     }
    ],
-   "caption": "Mathe akikujibu na WhatsApp forward badala ya kutuma fare.\n\nMathe wako pia hutuma maombi badala ya mchango?\n\nAnimated skit: characters are fictional. #MtaaMode #Nairobi",
-   "situation": "Kuomba fare kutoka kwa Mathe",
+   "caption": "Hakuna mtu anajua facts za dunia kama Mathe akiwa kwa WhatsApp.\n\nMathe wako ashawahi kukupata na excuse gani safi?\n\nAnimated skit: characters are fictional. #MtaaMode #Nairobi",
+   "situation": "Borrowing fare from Mathe",
    "critic": {
     "avg": 7.75,
-    "note": "Change 'dakika thelathini' to 'video ya thirty minutes' so Brayo sounds like a real Nairobian youth.",
+    "note": "Mathe calling out the exact bundles he burned watching TikTok lives all night would give the burn an extra sting.",
     "funny": 7.0,
-    "true": 9.0,
+    "true": 7.0,
     "voice": 7.0,
-    "clean": 8.0
+    "clean": 10.0
    },
-   "shorts_title": "WhatsApp forwards za Mathe #Shorts",
+   "shorts_title": "Fare ya interview #Shorts",
    "guard": {
     "errors": [],
-    "warnings": []
+    "warnings": [
+     "caption has no send/share/save call: sends and saves drive reach"
+    ]
    }
   }
  ],
  "qa": {
-  "sample-chart": [],
+  "sample-chart": [
+   {
+    "level": "error",
+    "what": "text wider than its box in 'rows'"
+   }
+  ],
   "sample-scene-1": [],
   "sample-scene-2": [],
   "sample-scene-3": []
