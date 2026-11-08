@@ -1889,7 +1889,7 @@
           "published": "2026-11-08"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1949,7 +1949,14 @@
       "reel": true,
       "tg_msg": 937,
       "auto": true,
-      "decided_at": "2026-11-08T21:47:23.062764+03:00"
+      "decided_at": "2026-11-08T21:47:23.062764+03:00",
+      "published_at": "2026-11-08T21:58:25.637336+03:00",
+      "ig_id": "18015112730763113",
+      "fb_id": "1437910171257246",
+      "story_id": "18146820874608943",
+      "fb_story_id": "2334889517267448",
+      "yt_id": "afxPHWTr9oc",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
