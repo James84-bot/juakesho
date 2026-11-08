@@ -2504,7 +2504,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2724,6 +2724,11 @@ def _main(argv: list[str] | None = None) -> int:
                     "exports/2026-W45/2026-w45-hot-1108-r4.jpg", "exports/2026-W44/2026-w44-hot-1101.jpg"):
             r = sourcecheck.check(f"{base}/{rel}", "")
             print(f"::notice::pages /{rel} -> {r.get('status')} {r.get('bytes', '')} {r.get('error', '')[:80]} {r.get('final', '')[:90]}")
+        return 0
+    if a.command == "labcheck":   # the street brand's sources, read from the runner
+        import sourcecheck
+        for line in sourcecheck.lab(os.environ.get("YOUTUBE_API_KEY", "").strip()):
+            print(line)
         return 0
     if a.command == "sourcecheck":   # can this runner read the official pages the brands are built on?
         import sourcecheck

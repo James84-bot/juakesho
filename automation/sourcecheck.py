@@ -78,3 +78,50 @@ def tables(url: str, max_rows: int = 12) -> list[str]:
     if not out:
         out.append("no tables; links: " + " ".join(re.findall(r'href="([^"]+\.(?:pdf|xlsx?|csv))"', page, re.I)[:15]))
     return out
+
+
+def _json(url: str, timeout: int = 25):
+    import json
+    req = urllib.request.Request(url, headers={"User-Agent": "KenyaOnRecordBot/1.0 (https://james84-bot.github.io/juakesho)"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.loads(r.read().decode("utf-8", "replace"))
+
+
+def lab(key: str = "") -> list[str]:
+    """What the street brand's formats would stand on, read from the runner: Wiktionary's Sheng entries (a citable
+    source for Sheng words) and YouTube's most-popular chart for Kenya (music, comedy, entertainment). Reads only."""
+    import urllib.parse as up
+    out = []
+    wk = "https://en.wiktionary.org/w/api.php?"
+    try:
+        cats = _json(wk + up.urlencode({"action": "query", "list": "allcategories", "acprefix": "Sheng", "acprop": "size",
+                                        "aclimit": 50, "format": "json"}))["query"]["allcategories"]
+        out.append("wiktionary categories: " + "; ".join(f"{c['*']}={c.get('size')}" for c in cats))
+        for c in cats[:4]:
+            got = _json(wk + up.urlencode({"action": "query", "list": "categorymembers", "cmtitle": "Category:" + c["*"],
+                                           "cmlimit": 60, "cmtype": "page", "format": "json"}))["query"]["categorymembers"]
+            out.append(f"  {c['*']}: " + ", ".join(m["title"] for m in got))
+        for word in ("msee", "manzi", "mbogi"):
+            page = _json(wk + up.urlencode({"action": "parse", "page": word, "prop": "wikitext", "format": "json"}))
+            text = page.get("parse", {}).get("wikitext", {}).get("*", "")
+            i = text.find("Sheng")
+            out.append(f"  page {word}: {len(text)} chars; around 'Sheng': {text[max(0, i - 300):i + 500]!r}" if i >= 0
+                       else f"  page {word}: {len(text)} chars, no 'Sheng'")
+    except Exception as e:
+        out.append(f"wiktionary error: {str(e)[:150]}")
+    if not key:
+        return out + ["youtube: no YOUTUBE_API_KEY"]
+    for cat, name in (("10", "Music"), ("23", "Comedy"), ("24", "Entertainment")):
+        try:
+            got = _json("https://www.googleapis.com/youtube/v3/videos?" + up.urlencode(
+                {"part": "snippet,statistics", "chart": "mostPopular", "regionCode": "KE", "videoCategoryId": cat,
+                 "maxResults": 25, "key": key}))
+            items = got.get("items", [])
+            out.append(f"youtube KE {name}: {len(items)} videos")
+            for v in items[:12]:
+                s = v["snippet"]
+                out.append(f"  {s['channelTitle']} | {s['title'][:70]} | {v['statistics'].get('viewCount')} views | "
+                           f"{s['publishedAt'][:10]} | lang {s.get('defaultAudioLanguage', '-')}")
+        except Exception as e:
+            out.append(f"youtube KE {name} error: {getattr(e, 'code', '')} {str(e)[:120]}")
+    return out
