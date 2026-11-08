@@ -3,7 +3,7 @@
   "created": "2026-11-08T17:15:53.413545+03:00",
   "posts": [
     {
-      "id": "2026-w46-d1-money-r2",
+      "id": "2026-w46-d1-money-r3",
       "template": "money",
       "lane": "hustle",
       "series": "The Real Price",
@@ -74,24 +74,31 @@
         "note": "The action beat has a concrete demand on EPRA for the cost breakdown."
       },
       "drafted_at": "2026-11-08T17:34:15.990933+03:00",
-      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_banknote,_reverse.jpg",
+      "photo_source": "https://www.kenyans.co.ke/news/127878-epra-warns-possible-further-fuel-price-hikes-if-middle-east-conflict-escalates",
       "reel": true,
       "rephoto_reason": "a banknote, not a picture of fuel",
       "words_approved": true,
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d1-money-r2-photo.jpg",
-      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
-      "photo_kind": "symbolic",
-      "photo_outlet": "",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d1-money-r3-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d1-money-r3-photo-2.jpg"
+      ],
       "shot_info": [
         {
-          "credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
-          "title": ""
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "EPRA Boss Issues Fresh Warning to Motorists After Latest Fuel Price Increase"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "EPRA Increases Petrol, Diesel and Kerosene Prices for October-November Cycle"
         }
       ],
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "tg_msg": 928,
+      "tg_msg": 934,
       "auto": true,
-      "decided_at": "2026-11-08T20:50:43.388563+03:00"
+      "decided_at": "2026-11-08T21:31:18.654415+03:00"
     },
     {
       "id": "2026-w46-d2-kenya",
