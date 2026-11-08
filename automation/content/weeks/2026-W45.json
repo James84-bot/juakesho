@@ -1661,7 +1661,7 @@
           "published": "2026-11-07"
         }
       ],
-      "status": "approved",
+      "status": "publish_failed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1719,7 +1719,9 @@
           5.12,
           13.12
         ]
-      }
+      },
+      "attempts": 1,
+      "last_error": "media not reachable (404): https://James84-bot.github.io/juakesho/exports/2026-W45/2026-w45-hot-1108-r4.mp4. Has GitHub Pages finished deploying?"
     }
   ],
   "scripts": {
