@@ -1808,6 +1808,44 @@ def fb_link(fb_id: str | None) -> str | None:
     return f"https://www.facebook.com/{fb_id}"
 
 
+def fb_digest(dry_run: bool = False, force: bool = False) -> str | None:
+    """The evening Facebook digest (fbdigest.py) and the owner's daily share kit. Returns the digest text, or None
+    when it is not time yet, already done today, or nothing went out today. force: any time of day (testing)."""
+    import fbdigest
+    st_file = STATE / "fb_digest.json"
+    state = fbdigest.load(st_file)
+    t = now()
+    if not force and not fbdigest.due(t, state):
+        return None
+    if state.get("date") == t.date().isoformat() and not dry_run:
+        return None
+    weeks = [json.loads(f.read_text(encoding="utf-8")) for f in sorted(WEEKS.glob("*.json"))[-2:]]
+    posts = fbdigest.today_posts(weeks, t)
+    if not posts:
+        return None
+    text = fbdigest.message(posts, t, BRAND) if len(posts) >= fbdigest.MIN_POSTS else None
+    if dry_run:
+        log(f"fb digest ({len(posts)} posts), not posted (dry run):\n{text or '(one post: share kit only)'}")
+        return text
+    fb_id = None
+    if text:
+        page = need("META_PAGE_ID")["META_PAGE_ID"]
+        ids = [graph(f"{page}/photos", {"url": public_url(p["_label"], p["id"]), "published": "false"})["id"]
+               for p in posts[:fbdigest.MAX_ITEMS]]
+        fields = {"message": text}
+        for i, fbid in enumerate(ids):
+            fields[f"attached_media[{i}]"] = json.dumps({"media_fbid": fbid})
+        fb_id = graph(f"{page}/feed", fields)["id"]
+        log(f"fb digest: {fb_id} ({len(ids)} pictures)")
+    link = fb_link(fb_id) or fb_link(posts[-1]["fb_id"])
+    if link:
+        _notify(fbdigest.share_text(link, digest=bool(fb_id)))
+    STATE.mkdir(parents=True, exist_ok=True)
+    st_file.write_text(json.dumps({"date": t.date().isoformat(), "fb_id": fb_id, "posts": [p["id"] for p in posts]}),
+                       encoding="utf-8")
+    return text
+
+
 def first_of(members: list[dict]) -> dict:
     return next((m for m in members if not m.get("n")), members[0])
 
@@ -1867,10 +1905,8 @@ def publish(dry_run: bool = False) -> None:
                 if not _tiktok_post(label, first_of(members)):
                     _tiktok_package(label, first_of(members))
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
-                link = fb_link(fb_id)
-                _notify(f"✅ Published <b>{_esc(key)}</b>."
-                        + (f" Share it to your profile: <a href=\"{_esc(link)}\">open the post</a> → Share." if link else "")
-                        + " Forward it to the WhatsApp Channel too.")
+                # one share link a day instead (fb_digest): the evening digest is the post worth putting on the profile
+                _notify(f"✅ Published <b>{_esc(key)}</b>. Forward it to the WhatsApp Channel too.")
             except Exception as e:  # keep going; record and retry next tick
                 for m in members:
                     m["status"] = "publish_failed"
@@ -2268,7 +2304,7 @@ def _main(argv: list[str] | None = None) -> int:
     sys.path.insert(0, str(HERE))
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2408,6 +2444,11 @@ def _main(argv: list[str] | None = None) -> int:
             log(f"quiet check skipped: {e}")
     if a.command in {"tick", "publish"}:
         publish(dry_run=a.dry_run)
+    if (a.command == "tick" and not a.dry_run and meta_ready()) or a.command == "fbdigest":
+        try:   # the evening Facebook digest and the owner's share kit; never stops the rest of the tick
+            fb_digest(dry_run=a.dry_run, force=a.command == "fbdigest")
+        except Exception as e:
+            log(f"fb digest skipped: {e}")
     if a.command in {"tick", "engage"} and not a.dry_run and meta_ready():
         try:   # answering comments must never stop publishing
             import engage, draft as drafter
