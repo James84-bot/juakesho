@@ -636,7 +636,8 @@ def check(post: dict) -> Report:
     if m and tpl not in {"kesho", "cover"}:
         rep.errors.append(f"numbered listicle ('{m.group(0)}'): say the points, don't count them")
     # urgent, never shouty: capitals, stacked "!", BREAKING-style labels and alarm emojis read as clickbait
-    loud = _shouting([text, str(post.get("caption", ""))])
+    # (a chart's song titles are the artists' own spelling, "SLICK", and its time says EAT: data, not our voice)
+    loud = _shouting([text, str(post.get("caption", ""))]) if tpl != "chart" else ""
     if loud:
         rep.errors.append(f"shouting reads as clickbait: {loud} (let the numbers carry the urgency)")
     # stock Swahili and slang fillers are the loudest "AI wrote this" tell: none of them, ever

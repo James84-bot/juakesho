@@ -174,6 +174,19 @@ def sound_marks(beats: list[str]) -> tuple[list[float], list[float]]:
     return cuts, lands
 
 
+def loudnorm(ff: str, src: Path, dst: Path, target: float = -14.0) -> None:
+    """Two passes: measure, then apply with the measured values (one pass misses on short clips: -16.5 and -17.9
+    LUFS for a -14 target on 8 Nov). Linear when the true peak allows, so the mix keeps its dynamics."""
+    import re as _re
+    first = subprocess.run([ff, "-hide_banner", "-nostats", "-i", str(src), "-af",
+                            f"loudnorm=I={target}:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"],
+                           capture_output=True, text=True, check=True)
+    got = json.loads(_re.findall(r"\{[^{}]+\}", first.stderr)[-1])
+    graph = (f"loudnorm=I={target}:TP=-1.5:LRA=11:measured_I={got['input_i']}:measured_TP={got['input_tp']}:"
+             f"measured_LRA={got['input_lra']}:measured_thresh={got['input_thresh']}:offset={got['target_offset']}:linear=true")
+    subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(src), "-af", graph, "-ar", "44100", "-ac", "2", str(dst)], check=True)
+
+
 def workers() -> int:
     return max(1, min(int(os.environ.get("JUA_VIDEO_WORKERS", "0")) or (os.cpu_count() or 2), 6))
 
@@ -249,10 +262,9 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
                 sound.write_wav(fx, fx_wav)
             mix_track(ff, track, dur, tmp / "audio.wav", fx_wav if fx is not None else None)
             post["track_credit"] = track.get("credit") or f"{track['artist']} - {track['title']} (used with permission)"
-        elif own:   # the street sound, brought to -14 LUFS (what the platforms play at; it was -19 before)
+        elif own:   # the street sound, brought to -14 LUFS (what the platforms play at)
             sound.write_wav(sound.street(dur, mtaa.cues(post), seed), tmp / "raw.wav")
-            subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(tmp / "raw.wav"), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
-                            "-ar", "44100", "-ac", "2", str(tmp / "audio.wav")], check=True)
+            loudnorm(ff, tmp / "raw.wav", tmp / "audio.wav")
         else:
             base = sound.tension(dur, starts if beats else [0.0], seed) if post["template"] in URGENT_TEMPLATES \
                 else sound.bed(dur, seed)

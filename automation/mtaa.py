@@ -225,7 +225,7 @@ def split_title(title: str, channel: str) -> tuple[str, str]:
     t = re.sub(r"\s*\|.*$", "", t)          # "Song | Album" -> "Song"
     t = re.sub(r"\s+", " ", t).strip(" -")
     ch = re.sub(r"\b(official|music|tv|vevo)\b", "", channel, flags=re.I).strip(" -")
-    m = re.match(r"^(.{2,60}?)\s+[-\u2013\u2014]\s+(.{1,80})$", t)
+    m = re.match(r"^(.{2,160}?)\s+[-\u2013\u2014]\s+(.{1,120})$", t)   # the first dash: "Artists - Song"
     if m:
         artist, song = m.group(1), m.group(2)
         if ch and ch.lower() in song.lower() and ch.lower() not in artist.lower():   # "SONG - ARTIST"
@@ -239,8 +239,13 @@ def split_title(title: str, channel: str) -> tuple[str, str]:
         artist, song = f"{artist} ft {f.group(1)}", song[:f.start()]
     artist = re.sub(r"\b(?:feat\.?|ft\.?|featuring)\s+", "ft ", _title_case(artist), flags=re.I)
     song = re.sub(r"\s*[-\u2013]\s*$", "", song).strip()
-    dash = lambda x: re.sub(r"\s*[\u2013\u2014]\s*", " - ", re.sub(r"\s+", " ", x)).strip()
-    return dash(artist)[:44], dash(_title_case(song))[:60]
+    dash = lambda x: re.sub(r"\s*[\u2013\u2014]\s*", " - ", re.sub(r"\s+", " ", x)).strip(" ,;-")
+    artist, song = dash(artist), dash(_title_case(song))
+    # never a cut name: the screen ellipsizes a long one. A split that leaves nothing sensible falls back to the channel
+    # and the whole title, so a song is never shown as ", Xduppy & Dj Maphorisa"
+    if not song or not artist or not re.match(r"[\w'\u2018\u201C\"(]", song) or re.match(r"(?i)(ft|feat|featuring)\b", song):
+        artist, song = dash(ch or channel), dash(_title_case(t))
+    return artist[:120], song[:120]
 
 
 def chart_songs(key: str | None = None, now: dt.datetime | None = None, get=None, n: int = 10,
@@ -265,8 +270,10 @@ def chart_songs(key: str | None = None, now: dt.datetime | None = None, get=None
         if days > max_age_days or "viewCount" not in st:
             continue
         artist, song = split_title(s["title"], s.get("channelTitle", ""))
+        if not artist or not song:
+            continue   # nothing readable to show
         views = int(st["viewCount"])
-        songs.append({"artist": artist, "song": song, "views": views, "per_day": round(views / days),
+        songs.append({"artist": artist, "song": song, "title": s["title"], "views": views, "per_day": round(views / days),
                       "days": round(days, 1), "url": f"https://www.youtube.com/watch?v={v['id']}",
                       "channel": s.get("channelTitle", "")})
     songs.sort(key=lambda x: -x["per_day"])
@@ -284,7 +291,7 @@ def short_number(n: int) -> str:
 def chart_post(slot: dict, songs: list[dict], as_of: str) -> dict:
     lines = [f"{i + 1}. {s['artist']} - {s['song']} ({short_number(s['per_day'])} views a day)" for i, s in enumerate(songs)]
     cap = ("Ngoma za Wiki: what Kenya is playing on YouTube right now.\n\n" + "\n".join(lines)
-           + "\n\nWhich one is on repeat for you?"
+           + "\n\nWhich one is on repeat for you? Send this to the friend who won't stop playing it."
            + f"\n\nRanked by views per day since release, from YouTube's most-popular music list for Kenya, {as_of}."
            + f"\n\n{TAGS['chart']}")
     for s in songs:
@@ -401,8 +408,13 @@ cast live a real day in Nairobi. The system draws and animates them: you write w
 forward, the turn comes near the end, and the LAST line is the punchline (the camera cuts in on whoever says it).
 
 PLACES (pick the one the moment happens in): plot (the courtyard of a rental block: doors, a washing line, a
-jerrycan), matatu (inside a moving matatu: everyone is seated, nobody walks in or out), kibanda (a roadside kiosk:
-chai, mandazi, chapati, a bench), nyumbani (Mathe's sitting room).
+jerrycan), matatu (inside a moving matatu: everyone is seated, nobody walks in or out), kibanda (a roadside kiosk run
+by its owner, no waiters: chai, mandazi, chapati, a bench), nyumbani (Mathe's sitting room). What is said must fit the
+place and what the cast can see there.
+
+KISWAHILI AND SHENG MUST BE CORRECT. Check every verb: kununua is to buy, kuuza to sell, kutuma to send, kukopa to
+borrow, kukopesha to lend ("Nitumie fifty bob", "Nikopeshe fifty bob", never "Niuzie fifty bob" for asking for
+money). A line that would make a Nairobian say "hiyo si Kiswahili" ruins the joke.
 ACTIONS (`do`, what the speaker does on that line): none, point, shrug, facepalm, phone (on a call, holds until their
 next action), knock, wave, cross (arms folded, holds), think, laugh, angry (hands on hips, holds), cheer, beg,
 walk_in (only on someone's first line: they arrive), walk_out (only on someone's last line: they leave).
@@ -429,7 +441,9 @@ def writer_brief() -> str:
 
 SCORE_RULES = """You are the head writer of a Kenyan street comedy page. Score each animated scene 1-10 on:
 funny (does the last line land as a real punchline?), true (would a young Nairobian say 'this is literally us'?),
-voice (natural Nairobi speech: Sheng/Kiswahili/English mixed correctly, characters stay in character),
+voice (natural Nairobi speech: Sheng/Kiswahili/English mixed correctly, characters stay in character; any word
+used wrongly, such as "niuzie" (sell me) where "nitumie" (send me) is meant, caps voice at 5 and the note names it;
+anything that does not fit the place, such as a waiter at a kibanda, caps true at 6),
 clean (laughs at the situation, never at a tribe, religion, body, gender, poverty or a real person).
 Be strict: most scenes are a 6. Return ONLY JSON: {"scores": [{"id": "...", "funny": n, "true": n, "voice": n,
 "clean": n, "note": "<one line: what would make the punchline hit harder>"}]}"""

@@ -63,6 +63,17 @@ class Titles(unittest.TestCase):
         self.assertEqual([mtaa.split_title(t, c) for t, c, _, _ in REAL], want)
 
 
+    def test_long_artist_lists_are_never_cut_into_the_song(self):
+        long = "Diamond Platnumz Ft Focalistic, Uncool MC, Ruff Kid, Xduppy & Dj Maphorisa"
+        self.assertEqual(mtaa.split_title(long + " - Song Name (Official Video)", "Diamond Platnumz"),
+                         ("Diamond Platnumz ft Focalistic, Uncool MC, Ruff Kid, Xduppy & Dj Maphorisa", "Song Name"))
+        artist, song = mtaa.split_title(long + " (Official Video)", "Diamond Platnumz")   # no song name in the title
+        self.assertEqual(artist, "Diamond Platnumz")
+        self.assertTrue(song.startswith("Diamond Platnumz Ft Focalistic"))   # the title as written
+        self.assertEqual(mtaa.split_title("Megan Thee Stallion - Thin Ice - Tina Tuesday Freestyle", "Megan Thee Stallion"),
+                         ("Megan Thee Stallion", "Thin Ice - Tina Tuesday Freestyle"))
+
+
 class Chart(unittest.TestCase):
     def songs(self, rows=REAL, **kw):
         return mtaa.chart_songs(key="k", now=NOW, get=lambda url: json.dumps(items(rows)), **kw)
