@@ -1661,7 +1661,7 @@
           "published": "2026-11-07"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1706,7 +1706,8 @@
         }
       ],
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "tg_msg": 867
+      "tg_msg": 867,
+      "decided_at": "2026-11-08T10:12:57.320486+03:00"
     }
   ],
   "scripts": {
