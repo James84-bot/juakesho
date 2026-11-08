@@ -140,7 +140,11 @@ def collect() -> dict:
 MAX_ITEMS = 18
 
 
-SPORT_TOPICS = ("sport", "sport_world")
+SPORT_TOPICS = ("sport", "sport_world")   # and any topic named sport_* (a sport brand splits its feeds that way)
+
+
+def is_sport(topic: str | None) -> bool:
+    return str(topic or "") in SPORT_TOPICS or str(topic or "").startswith("sport_")
 SPORT_EXTRA = 6   # sport headlines added beyond the mix, so the daily sport edition has real stories to pick from
 
 
@@ -153,7 +157,7 @@ def refs(max_items: int = MAX_ITEMS) -> dict[str, dict]:
     data = json.loads(OUT.read_text(encoding="utf-8"))
     items = data.get("items", [])
     mix = _spread(items, max_items)
-    extra = _spread([x for x in items if x.get("topic") in SPORT_TOPICS and x not in mix], SPORT_EXTRA)
+    extra = _spread([x for x in items if is_sport(x.get("topic")) and x not in mix], SPORT_EXTRA)
     return {f"n{i + 1}": x for i, x in enumerate(mix + extra)}
 
 
@@ -165,7 +169,7 @@ def prompt_block(max_items: int = MAX_ITEMS, max_age_hours: int = 30) -> str:
     age = dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(data["fetched"])
     if age > dt.timedelta(hours=max_age_hours) or not data.get("items"):
         return ""
-    lines = [f"- [{k}] [{x['outlet']}] {'[sport] ' if x.get('topic') in SPORT_TOPICS else ''}{x['title']} "
+    lines = [f"- [{k}] [{x['outlet']}] {'[sport] ' if is_sport(x.get('topic')) else ''}{x['title']} "
              f"({x['published'][:10]})" for k, x in refs(max_items).items()]
     return ("\nTHIS WEEK IN KENYA (real headlines, newest first, each with its id in brackets)\n" + "\n".join(lines) +
             "\nBuild most posts on these stories: what Kenyans are already talking about. Use only facts these "

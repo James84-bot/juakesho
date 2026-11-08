@@ -1,0 +1,29 @@
+{
+  "note": "Full Time Kenya: where the system looks for the photo a newsroom already posted with the day's sport story (posted.py). Sports sections first; a feed that fails is skipped and `photocheck` says which answered.",
+  "feeds": [
+    {
+      "name": "Capital FM Sports",
+      "url": "https://capitalfm.africa/sports/feed/",
+      "pages": 6
+    },
+    {
+      "name": "KBC",
+      "url": "https://www.kbc.co.ke/feed/",
+      "official": true,
+      "pages": 6
+    },
+    {
+      "name": "Capital FM",
+      "url": "https://capitalfm.africa/news/feed/",
+      "pages": 3
+    },
+    {
+      "name": "Kenyans.co.ke",
+      "url": "https://www.kenyans.co.ke/feeds/news"
+    },
+    {
+      "name": "The Standard",
+      "url": "https://www.standardmedia.co.ke/rss/headlines.php"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "note": "Full Time Kenya: Kenyan sport first, then the world sport Kenyans follow. Every topic is a sport_* topic, so every headline reaches the writer marked [sport].",
+  "feeds": [
+    {
+      "name": "Google News: Kenyan football",
+      "topic": "sport",
+      "url": "https://news.google.com/rss/search?q=%22Harambee+Stars%22+OR+%22Harambee+Starlets%22+OR+FKF+OR+%22Gor+Mahia%22+OR+%22AFC+Leopards%22+OR+%22Kenyan+Premier+League%22+OR+Tusker+OR+%22Kenya+Police+FC%22+when%3A2d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: Kenyan athletics",
+      "topic": "sport_athletics",
+      "url": "https://news.google.com/rss/search?q=Kenyan+athlete+OR+Kipyegon+OR+Kipchoge+OR+%22Beatrice+Chebet%22+OR+Wanyonyi+OR+Omanyala+OR+%22Kenyan+marathon%22+OR+%22Athletics+Kenya%22+when%3A2d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: Premier League and Champions League",
+      "topic": "sport_world",
+      "url": "https://news.google.com/rss/search?q=%22Premier+League%22+OR+%22Champions+League%22+OR+Arsenal+OR+%22Manchester+United%22+OR+Chelsea+OR+Liverpool+OR+%22Manchester+City%22+when%3A1d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: African football",
+      "topic": "sport_africa",
+      "url": "https://news.google.com/rss/search?q=AFCON+OR+CAF+OR+CHAN+OR+%22African+football%22+Kenya+when%3A2d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: rugby, volleyball and boxing",
+      "topic": "sport_other",
+      "url": "https://news.google.com/rss/search?q=Shujaa+OR+%22Kenya+Simbas%22+OR+%22Malkia+Strikers%22+OR+%22Kenya+Lionesses%22+OR+%22Kenyan+boxer%22+OR+%22Kenya+rugby%22+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Capital FM Sports",
+      "topic": "sport",
+      "url": "https://capitalfm.africa/sports/feed/"
+    }
+  ]
+}

@@ -44,7 +44,7 @@ KICKERS = {"sauti": "The People's Voice", "straight": "Set It Straight", "promis
            "still": "Still in 2026?", "decode": "Decode", "spotlight": "Put Us On", "africa": "Made in Africa",
            "hack": "Civic 101", "makanga": "Explained", "cover": "Kenya on Record", "glasspoll": "Your Say", "build": "Build With Me",
            "tazama": "Watch This"}
-HOT_KICKERS = {"sport": "Sport", "politics": "Politics", "life": "News"}
+HOT_KICKERS = {"sport": "Sport", "politics": "Politics", "life": "News", **(brands.brand().get("hot_kickers") or {})}
 
 
 def beat_reel(post: dict) -> dict | None:
@@ -302,7 +302,7 @@ def sting(ff: str, work: Path) -> Path | None:
     asks, then KENYA ON RECORD and the handle. A soft chime; silence underneath so it joins any Reel."""
     if "mp4" in _STING and _STING["mp4"].exists():
         return _STING["mp4"]
-    svg = ROOT / "assets" / "logo" / "sting.svg"
+    svg = render.LOGO / "sting.svg"   # this brand's end card (brands.py)
     if not svg.exists():
         return None
     try:

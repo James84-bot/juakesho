@@ -1,0 +1,157 @@
+{
+  "name": "Full Time Kenya",
+  "handle": "@fulltimekenya",
+  "hashtag": "#FullTimeKenya",
+  "enabled": false,
+  "facebook_page_id": "",
+  "tagline_sw": "",
+  "tagline_en": "Kenyan sport, and the games Kenya watches.",
+  "website": "",
+  "subscribe_for": "Kenyan sport and the games Kenya watches, every day",
+  "logo": {
+    "shape": "scoreboard",
+    "symbol": "FT",
+    "lines": [
+      "FULL TIME",
+      "KENYA"
+    ]
+  },
+  "editions": {
+    "morning": {
+      "time": [
+        8,
+        30
+      ],
+      "suffix": "m",
+      "beat": "sport"
+    },
+    "midday": {
+      "time": [
+        13,
+        0
+      ],
+      "suffix": "",
+      "beat": "sport"
+    },
+    "evening": {
+      "time": [
+        19,
+        0
+      ],
+      "suffix": "e",
+      "beat": "sport"
+    }
+  },
+  "breaking": true,
+  "hot_briefs": {
+    "sport": "Today's post: the sport story Kenyans are talking about right now, from the headlines in THIS WEEK IN KENYA, with its id in `source`. Kenyan sport first (Harambee Stars and Starlets, the FKF Premier League and its clubs, Kenyan athletes, Shujaa, Simbas, Malkia Strikers, Kenyan boxers), then the world sport Kenyans follow (the Premier League, the Champions League, AFCON, Kenyans playing abroad). The result, the record, the number, the decision: only what the headline states. Never a prediction stated as fact, never odds, tips or betting. Pick a different story from the ones already covered today."
+  },
+  "critic_note": "THIS IS A SPORT PAGE (Full Time Kenya), not a civic one: score `impact` on what the result or decision means for Kenyan fans, teams or athletes; `action` on whether the last line invites a real reaction (a question fans will argue about); `fair` on fairness to both teams and every athlete; `demand` on whether Kenyan fans are talking about it now.",
+  "colors": {
+    "usiku": {
+      "hex": "#0E0C0B",
+      "text": "#F8F7F6",
+      "meaning": "Night (flag black). The default background."
+    },
+    "maziwa": {
+      "hex": "#F8F7F6",
+      "text": "#1B1917",
+      "meaning": "Paper (flag white). Explainers, documents, the brand book."
+    },
+    "shuka": {
+      "hex": "#C4111A",
+      "text": "#FFFFFF",
+      "meaning": "Flag red. The signature, and alerts: scams, broken promises, FALSE."
+    },
+    "chai": {
+      "hex": "#046E30",
+      "text": "#FFFFFF",
+      "meaning": "Flag green. Kept promises, TRUE, Africa's wins."
+    },
+    "jua": {
+      "hex": "#C4111A",
+      "text": "#FFFFFF",
+      "meaning": "Signature background (same as flag red): launch and big moments."
+    },
+    "jacaranda": {
+      "hex": "#312F2D",
+      "text": "#F8F7F6",
+      "meaning": "legacy",
+      "legacy": true
+    },
+    "ziwa": {
+      "hex": "#4B4847",
+      "text": "#F8F7F6",
+      "meaning": "legacy",
+      "legacy": true
+    },
+    "pwani": {
+      "hex": "#83C38A",
+      "text": "#1B1917",
+      "meaning": "legacy",
+      "legacy": true
+    },
+    "waridi": {
+      "hex": "#FE847D",
+      "text": "#1B1917",
+      "meaning": "legacy",
+      "legacy": true
+    },
+    "udongo": {
+      "hex": "#6F020C",
+      "text": "#F8F7F6",
+      "meaning": "legacy",
+      "legacy": true
+    }
+  },
+  "accents": [
+    "shuka",
+    "chai"
+  ],
+  "fonts": {
+    "display": "Inter Tight",
+    "body": "Inter"
+  },
+  "palette": {
+    "ink": {
+      "50": "#F8F7F6",
+      "100": "#F0EFEE",
+      "200": "#E0DFDE",
+      "300": "#CAC8C7",
+      "400": "#A9A7A5",
+      "500": "#888684",
+      "600": "#686664",
+      "700": "#4B4847",
+      "800": "#312F2D",
+      "900": "#1B1917",
+      "950": "#0E0C0B"
+    },
+    "shuka": {
+      "50": "#FEF5F4",
+      "100": "#FED2CF",
+      "200": "#FEADA7",
+      "300": "#FE847D",
+      "400": "#F35C57",
+      "500": "#DF3636",
+      "600": "#C4111A",
+      "700": "#990312",
+      "800": "#6F020C",
+      "900": "#480106",
+      "950": "#240002"
+    },
+    "chai": {
+      "50": "#E9FFE8",
+      "100": "#C6EBC7",
+      "200": "#A5D7A8",
+      "300": "#83C38A",
+      "400": "#62AF6F",
+      "500": "#409A55",
+      "600": "#14853C",
+      "700": "#046E30",
+      "800": "#014D21",
+      "900": "#002F12",
+      "950": "#001305"
+    }
+  },
+  "palette_note": "The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (yellow reads as UDA, orange as ODM). Ink carries 90% of every design; red is the signature and the alarm; green means true and kept."
+}
