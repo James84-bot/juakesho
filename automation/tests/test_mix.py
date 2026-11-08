@@ -18,10 +18,13 @@ class WeeklyMix(unittest.TestCase):
     def test_new_everyday_series_are_scheduled_with_their_angles(self):
         posts = pipeline._calendar_posts("2026-W44")
         by_series = {p.get("series"): p for p in posts}
-        for s in ("Guess the Price", "Myth or Fact"):
-            self.assertIn(s, by_series)
+        self.assertIn("Myth or Fact", by_series)
         self.assertEqual(by_series["Myth or Fact"]["angle"], "myth")
-        self.assertEqual(by_series["Guess the Price"]["angle"], "price_quiz")
+        # Guess the Price was dropped (8 Nov): guessing a ticket price that is already set reads like a scam.
+        # Thursday is The Real Price, the format behind the EPRA fuel Reel.
+        self.assertNotIn("Guess the Price", by_series)
+        thursday = next(p for p in posts if p["id"].startswith("2026-w44-d4-"))
+        self.assertEqual((thursday["template"], thursday["angle"], thursday["series"]), ("money", "real_price", "The Real Price"))
         money = [p for w in ("2026-W44", "2026-W45") for p in pipeline._calendar_posts(w) if p["template"] == "money"]
         self.assertTrue(money)
         self.assertTrue(all(p["angle"] == "real_price" and p["series"] == "The Real Price" for p in money))

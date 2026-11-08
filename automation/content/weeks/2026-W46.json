@@ -242,7 +242,7 @@
         "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHpsNThFNzllWFpVa3kzRzhEWi1XdGlMa2ZDZzgyZFNXcW5oS2VVUVNzV2NBNzdjVUN2M3NZYk5FeWRFR3RteGtZUjU5UXpoWW15OTZnbWxxYUZsaGJNWDBnRnlWQUJEUVhOWHNac2p5WlM3R213WkYtWkRUcEhwenIxeGFFek42ejJJdmt2T2tWM0l6WXVpcWh1V2RZTlhyWHZyTUlYa3htQkZzb1U4?oc=5",
         "published": "2026-11-05"
       },
-      "status": "approved",
+      "status": "rejected",
       "guard": {
         "errors": [],
         "warnings": []
@@ -281,7 +281,8 @@
       "track_credit": "Music: \"Funky Chunk\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "tg_msg": 929,
       "auto": true,
-      "decided_at": "2026-11-08T20:50:43.388595+03:00"
+      "decided_at": "2026-11-08T21:40:00+03:00",
+      "rejected_reason": "Guess the Price dropped: guessing a ticket price that is already set reads like a scam"
     },
     {
       "id": "2026-w46-d5-straight",
@@ -310,6 +311,16 @@
       "publish_at": "2026-11-15T18:00:00+03:00",
       "status": "planned",
       "size": "story"
+    },
+    {
+      "id": "2026-w46-d4-money",
+      "template": "money",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-12T19:30:00+03:00",
+      "status": "planned",
+      "angle": "real_price",
+      "series": "The Real Price"
     }
   ],
   "scripts": {

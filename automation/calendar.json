@@ -1,7 +1,7 @@
 {
   "timezone": "Africa/Nairobi",
   "utc_offset": "+03:00",
-  "note": "Six in ten posts are about everyday life, four in ten hold power to account. Everyday life: The Real Price (Monday, what things really cost), Kenya at its best (Tuesday), Guess the Price (Thursday quiz), Myth or Fact (Friday, viral claims checked), Built in Kenya (Saturday), and the morning and lunchtime news posts on the biggest non-political story (money, jobs, prices, health, sport, tech, Kenyan wins). Accountability: Promise Tracker or the Chapter Six Test (Wednesday), the Sunday poll and the evening news post, with sources and a clear demand.",
+  "note": "Six in ten posts are about everyday life, four in ten hold power to account. Everyday life: The Real Price (Monday, what things really cost), Kenya at its best (Tuesday), The Real Price again on Thursday (Guess the Price was dropped on 8 Nov: guessing a ticket price that is already set reads like a scam), Myth or Fact (Friday, viral claims checked), Built in Kenya (Saturday), and the morning and lunchtime news posts on the biggest non-political story (money, jobs, prices, health, sport, tech, Kenyan wins). Accountability: Promise Tracker or the Chapter Six Test (Wednesday), the Sunday poll and the evening news post, with sources and a clear demand.",
   "slots": [
     {
       "day": 1,
@@ -56,16 +56,18 @@
     {
       "day": 4,
       "time": "19:30",
-      "template": "glasspoll",
+      "template": "money",
       "bg": [
-        "usiku"
+        "usiku",
+        "shuka"
       ],
       "lanes": [
-        "everyone"
+        "everyone",
+        "hustle",
+        "young_pro"
       ],
-      "size": "story",
-      "angle": "price_quiz",
-      "series": "Guess the Price"
+      "angle": "real_price",
+      "series": "The Real Price"
     },
     {
       "day": 5,
