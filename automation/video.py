@@ -32,6 +32,7 @@ import sound
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 FPS = 30
+CRF = 17   # x264 quality: 17 keeps text edges and photo detail clean through Instagram's own re-encode
 MIN_S, MAX_S = 6.0, 14.0
 READ_WPS = 3.6            # on-screen reading speed for young, fast readers (words/s)
 SKIP_TEMPLATES = {"avatar", "banner"}
@@ -42,6 +43,7 @@ KICKERS = {"sauti": "The People's Voice", "straight": "Set It Straight", "promis
            "still": "Still in 2026?", "decode": "Decode", "spotlight": "Put Us On", "africa": "Made in Africa",
            "hack": "Civic 101", "makanga": "Explained", "cover": "Kenya on Record", "glasspoll": "Your Say", "build": "Build With Me",
            "tazama": "Watch This"}
+HOT_KICKERS = {"sport": "Sport", "politics": "Politics", "life": "News"}
 
 
 def beat_reel(post: dict) -> dict | None:
@@ -50,8 +52,10 @@ def beat_reel(post: dict) -> dict | None:
     if len(beats) < 3:
         return None
     reel = {k: v for k, v in post.items() if k not in {"template", "size", "ink"}}
+    # a news post says what it is (a sauti label like "The People's Voice" reads as opinion on a news report)
+    kicker = HOT_KICKERS.get(str(post.get("beat") or ""), "News") if post.get("hot") else None
     reel.update(template="reel", size="story", beats=beats,
-                kicker=post.get("series") or KICKERS.get(post["template"], "Kenya on Record"))
+                kicker=post.get("series") or kicker or KICKERS.get(post["template"], "Kenya on Record"))
     return reel
 
 
@@ -203,7 +207,7 @@ def beats_segment(env, post: dict, beats: list[str], kicker: str, out_mp4: Path,
         render_frames(tmp / "page.html", tmp, frames)
         sound.write_wav(sound.tension(dur, starts, zlib.crc32(post["id"].encode()) % 1000), tmp / "audio.wav")
         subprocess.run([ff, "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", str(tmp / "f%04d.jpg"),
-                        "-i", str(tmp / "audio.wav"), "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-i", str(tmp / "audio.wav"), "-c:v", "libx264", "-preset", "medium", "-crf", str(CRF),
                         "-pix_fmt", "yuv420p", "-vf", "scale=1080:1920:flags=lanczos,setsar=1",
                         "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-ac", "2", "-shortest", str(out_mp4)], check=True)
     return dur
@@ -250,14 +254,14 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
             cmd = [ff, "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(under),
                    "-framerate", str(FPS), "-i", str(tmp / "f%04d.png"), "-i", str(tmp / "audio.wav"),
                    "-filter_complex", footage_graph(dur), "-map", "[v]", "-map", "2:a",
-                   "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                   "-c:v", "libx264", "-preset", "medium", "-crf", str(CRF),
                    "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-t", str(dur),
                    "-movflags", "+faststart", str(target_mp4)]
         else:
             cmd = [ff, "-y", "-loglevel", "error",
                    "-framerate", str(FPS), "-i", str(tmp / "f%04d.jpg"),
                    "-i", str(tmp / "audio.wav"),
-                   "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p",
+                   "-c:v", "libx264", "-preset", "medium", "-crf", str(CRF), "-pix_fmt", "yuv420p",
                    "-vf", "scale=1080:1920:flags=lanczos,setsar=1",
                    "-c:a", "aac", "-b:a", "160k", "-ar", "44100",
                    "-shortest", "-movflags", "+faststart", str(target_mp4)]
@@ -316,7 +320,7 @@ def sting(ff: str, work: Path) -> Path | None:
         sound.write_wav(tail, work / "sting.wav")
         out = work / "sting.mp4"
         subprocess.run([ff, "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", str(work / "f%04d.jpg"),
-                        "-i", str(work / "sting.wav"), "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-i", str(work / "sting.wav"), "-c:v", "libx264", "-preset", "medium", "-crf", str(CRF),
                         "-pix_fmt", "yuv420p", "-vf", "scale=1080:1920:flags=lanczos,setsar=1",
                         "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-ac", "2", "-shortest", str(out)], check=True)
         _STING["mp4"] = out
@@ -334,7 +338,7 @@ def add_sting(ff: str, reel: Path, card: Path) -> None:
              "[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]")
     try:
         subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(reel), "-i", str(card), "-filter_complex", graph,
-                        "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+                        "-map", "[v]", "-map", "[a]", "-c:v", "libx264", "-preset", "medium", "-crf", str(CRF),
                         "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", str(joined)], check=True)
         joined.replace(reel)
     except Exception as e:

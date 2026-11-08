@@ -280,6 +280,19 @@ class ApprovalTests(TempWeeks):
         self.assertEqual({posts["c-1-r2"]["group"], posts["c-2-r2"]["group"]}, {"c-r2"})
         self.assertEqual(posts["p1-r2"]["status"], "drafted")
 
+    def test_rephoto_one_post_even_approved_never_published(self):
+        self.week([{"id": "h1", "status": "approved", "auto": True, "decided_at": "x", "tg_msg": 5, "photo_query": "x",
+                    "photo_file": "f", "extra_photos": ["g"], "shot_info": [{}], "publish_at": "2026-10-05T07:15:00+03:00"},
+                   {"id": "h2", "status": "approved", "photo_query": "x", "publish_at": "2026-10-05T07:15:00+03:00"},
+                   {"id": "h3", "status": "published", "photo_query": "x", "publish_at": "2026-10-05T07:15:00+03:00"}])
+        self.assertEqual(pl.rephoto("2026-W41", only="h1"), ["h1-r2"])
+        self.assertEqual(pl.rephoto("2026-W41", only="h3"), [])   # what went out is never made again
+        posts = {p["id"]: p for p in pl.load_week("2026-W41")["posts"]}
+        self.assertEqual(set(posts), {"h1-r2", "h2", "h3"})       # the other approved post is left alone
+        for k in ("auto", "decided_at", "tg_msg", "photo_file", "extra_photos", "shot_info"):
+            self.assertNotIn(k, posts["h1-r2"])                   # approved again only after the new render
+        self.assertEqual(posts["h1-r2"]["status"], "drafted")
+
     def test_send_reels_only_waiting_videos(self):
         self.week([{"id": "v1", "status": "awaiting", "publish_at": "2026-10-05T07:15:00+03:00"},
                    {"id": "v2", "status": "approved", "publish_at": "2026-10-05T07:15:00+03:00"},

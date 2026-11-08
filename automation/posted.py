@@ -331,11 +331,16 @@ def guard_text(post: dict) -> str:
     return guard._all_text(post)
 
 
-def find_more(post: dict, have: list[str], n: int = 2) -> list[tuple[bytes, dict]]:
+def find_more(post: dict, have: list[str], n: int = 2, lead: bytes | None = None) -> list[tuple[bytes, dict]]:
     """More photos of the same story from the other reports (a different picture each, never the same report
-    twice), so a Reel can show a new picture on each line. `have`: report links already used."""
+    twice), so a Reel can show a new picture on each line. `have`: report links already used; `lead`: the lead
+    photo, so the same picture from another outlet is not shown twice. A soft picture (a blurry TV still, a small
+    photo blown up) is left out: one sharp photo on every line looks better than a smudge on one of them."""
     import hashlib
-    out, seen_links, seen_imgs = [], set(have), set()
+    import picture
+    out, seen_links = [], set(have)
+    seen = [picture.dhash(lead)] if lead else []
+    seen_bytes = {hashlib.sha1(lead).hexdigest()} if lead else set()
     told = guard_text(post)
     for s, item in _ranked(post):
         if len(out) >= n or item["link"] in seen_links:
@@ -347,12 +352,18 @@ def find_more(post: dict, have: list[str], n: int = 2) -> list[tuple[bytes, dict
         got = _photo_of(item)
         if not got:
             continue
-        digest = hashlib.sha1(got[0]).hexdigest()
-        if digest in seen_imgs:
+        h, digest = picture.dhash(got[0]), hashlib.sha1(got[0]).hexdigest()
+        if digest in seen_bytes or any(picture.near_same(h, x) for x in seen):
+            _note(f"    not {item['outlet']}: the same picture as one already used ({item['title'][:60]})")
             continue
-        seen_imgs.add(digest)
+        sharp = picture.detail(got[0])
+        if sharp < picture.SOFT_BELOW:
+            _note(f"    not {item['outlet']}: soft picture (detail {sharp}, {_size(got[0])}) ({item['title'][:60]})")
+            continue
+        seen.append(h)
+        seen_bytes.add(digest)
         seen_links.add(item["link"])
-        _note(f"    also {item['outlet']} ({s}): {item['title'][:70]}")
+        _note(f"    also {item['outlet']} ({s}, detail {sharp}, {_size(got[0])}): {item['title'][:70]}")
         out.append((got[0], {**got[1], "kind": "posted"}))
     return out
 
@@ -368,7 +379,8 @@ def find(post: dict) -> tuple[bytes, dict] | None:
     for s, item in ranked:
         got = _photo_of(item)
         if got:
-            _note(f"    picked {item['outlet']} ({s}): {item['title'][:70]}")
+            import picture   # detail is logged for the lead (the thumbnail stays the best report's picture)
+            _note(f"    picked {item['outlet']} ({s}, detail {picture.detail(got[0])}, {_size(got[0])}): {item['title'][:70]}")
             return got[0], {**got[1], "kind": "posted"}
     return None
 
@@ -401,7 +413,7 @@ def _photo_of(item: dict) -> tuple[bytes, dict] | None:
         if _check_image(data):   # (sizes below are logged so a too-strict limit shows up in photos.log)
             who = _photographer(credit)
             line = f"Photo: {item['outlet']}" + (f" / {who}" if who and who.lower() not in item["outlet"].lower() else "")
-            return data, {"credit": line, "url": item["link"], "outlet": item["outlet"]}
+            return data, {"credit": line, "url": item["link"], "outlet": item["outlet"], "title": item.get("title", "")}
         _note(f"    skipped {item['outlet']}: image too small or not a photo ({_size(data)}, {img[:70]})")
     return None
 

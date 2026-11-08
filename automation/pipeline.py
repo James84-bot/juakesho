@@ -546,20 +546,25 @@ def remake(label: str, replace_approved: bool = False) -> list[str]:
     return ids
 
 
-def rephoto(label: str) -> list[str]:
+def rephoto(label: str, only: str | None = None) -> list[str]:
     """Keeps the words, finds the photos again (after the photo rules change) and re-sends the posts.
-    New ids, as in remake, so an older card can't approve the new picture unseen. Decided posts are kept."""
+    New ids, as in remake, so an older card can't approve the new picture unseen. Decided posts are kept.
+    `only`: one post, made again even when already approved (not once published); it goes through approval again."""
     data = load_week(label)
     groups: dict[str, str] = {}
     changed = []
+    allowed = {"awaiting", "drafted", "rendered"} | ({"approved"} if only else set())
     for p in data["posts"]:
-        if p["status"] not in {"awaiting", "drafted", "rendered"} or not (p.get("photo_query") or p.get("photo")):
+        if only and p["id"] != only:
+            continue
+        if p["status"] not in allowed or not (p.get("photo_query") or p.get("photo")):
             continue
         old = p["id"]
         p["id"] = _next_rev(old)
         if p.get("group"):
             p["group"] = groups.setdefault(p["group"], _next_rev(p["group"]))
-        for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source"):
+        for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source",
+                  "extra_photos", "shot_info", "broll_file", "broll_credit", "track_credit", "decided_at", "auto", "tg_msg"):
             p.pop(k, None)
         p["status"] = "drafted"
         changed.append(p["id"])
@@ -1889,7 +1894,7 @@ def publish(dry_run: bool = False) -> None:
 
 SAMPLES = EXPORTS / "_samples"
 SAMPLE_DROP = ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source",
-               "broll_file", "broll_credit", "extra_photos",
+               "broll_file", "broll_credit", "extra_photos", "shot_info",
                "track_credit", "status", "tg_msg", "ig_id", "fb_id", "fb_story_id", "yt_id", "tt_id", "tt_status")
 
 
@@ -2273,6 +2278,7 @@ def _main(argv: list[str] | None = None) -> int:
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
     ap.add_argument("--no-send", action="store_true", help="samples: make them and their contact sheets, send nothing")
     ap.add_argument("--replace", action="store_true", help="musicfetch: pick the library again from scratch")
+    ap.add_argument("--post", help="rephoto: only this post id (also an approved one that has not gone out)")
     a = ap.parse_args(argv)
     label = a.week or current_week_label()
 
@@ -2361,7 +2367,7 @@ def _main(argv: list[str] | None = None) -> int:
                     "Kenya showcase posts). Approve again: buttons on the older cards no longer do anything.")
     if a.command == "rephoto":
         label = a.week or current_week_label(ahead=0)
-        if rephoto(label) and not a.dry_run:
+        if rephoto(label, only=a.post) and not a.dry_run:
             _notify(f"🖼 New photos for <b>{label}</b> coming up (same words). Buttons on the older cards no longer do anything.")
     if a.command in {"week", "tracker", "hot", "redo", "draft", "remake", "renew"}:
         # only the weekly run writes ahead in two halves; a batch you asked for, a redo or today's post is written now

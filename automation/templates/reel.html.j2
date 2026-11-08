@@ -12,13 +12,15 @@
 {% if shots and beats|length > 1 %}
 /* a new shot on every line: the story's pictures take turns, one per line, and each line cuts to a different
    framing (wide, then closer, left, right) that drifts in, so the picture changes every ~2-3 seconds */
-{% set FR = [(1.04, 0, 0), (1.28, -6, 4), (1.18, 6, -3), (1.36, 0, 6), (1.12, -4, -4), (1.24, 5, 3)] %}
+{% set FR = [(1.0, 0, 0), (1.07, -2, 1), (1.05, 2, -1), (1.09, 0, 2), (1.04, -2, -1), (1.08, 2, 1)] if card
+            else [(1.04, 0, 0), (1.28, -6, 4), (1.18, 6, -3), (1.36, 0, 6), (1.12, -4, -4), (1.24, 5, 3)] %}
+{% set DRIFT = 0.03 if card else 0.05 %}
 {% set T = BT.t + 1 %}
 @keyframes cam {
 {% for b in beats %}{% set i = loop.index0 %}{% set f = FR[i % (FR | length)] %}
 {% set a = BT.starts[i] / T * 100 %}{% set e = (BT.starts[i + 1] if not loop.last else T) / T * 100 - 0.02 %}
   {{ '%.3f' % a }}% { scale: {{ f[0] }}; translate: {{ f[1] }}% {{ f[2] }}%; }
-  {{ '%.3f' % e }}% { scale: {{ '%.2f' % (f[0] + 0.05) }}; translate: {{ '%.1f' % (f[1] * 0.85) }}% {{ '%.1f' % (f[2] * 0.85) }}%; }
+  {{ '%.3f' % e }}% { scale: {{ '%.2f' % (f[0] + DRIFT) }}; translate: {{ '%.1f' % (f[1] * 0.85) }}% {{ '%.1f' % (f[2] * 0.85) }}%; }
 {% endfor %}
 }
 .shot .cam { animation: cam {{ T }}s linear both; }
@@ -78,10 +80,32 @@
 .photo-band { animation: kb {{ BT.t + 1 }}s linear both; }
 .stage { top: {{ 300 + [photo_band, 760] | min + 40 }}px; bottom: 300px; }
 {% endif %}
+{% if shots and card %}
+{% set CW = W - 2 * (pad | default(72)) %}{% set CH = (CW * 3 / 4) | round | int %}
+/* news photos sit whole and sharp in a 4:3 card under the header, on a plain dark ground, edges on the text
+   margin; the lines run below the picture, never over a face, and each picture carries its own credit */
+.photo-fade { display: none !important; }
+.shot { background: #0E0C0B; }
+.shot .card { position: absolute; left: var(--m); top: 300px; width: {{ CW }}px; height: {{ CH }}px; overflow: hidden;
+  border-radius: 14px; background: #1B1815; }
+.shot .card img { width: 100%; height: 100%; object-fit: cover; object-position: center var(--sfy, 30%); display: block;
+  transform-origin: 50% var(--sfy, 30%); filter: saturate(1.05) contrast(1.04); }
+.shot .cr { position: absolute; right: var(--m); top: {{ 300 + CH + 16 }}px; font: 600 22px/1 "Inter"; letter-spacing: .02em;
+  color: rgba(255, 255, 255, .5); }
+.stage { top: {{ 300 + CH + 74 }}px !important; bottom: 300px !important; align-items: start !important; }
+.beat { text-shadow: none !important; }
+/* the wipe crosses the card only: it is revealed left to right, then cleared to the right (it never rests outside) */
+.wipe { top: 300px !important; bottom: auto !important; left: var(--m) !important; width: {{ CW }}px !important;
+  height: {{ CH }}px !important; border-radius: 14px; translate: 0 0 !important; clip-path: inset(0 100% 0 0); }
+@keyframes wipec { 0% { clip-path: inset(0 100% 0 0); } 50% { clip-path: inset(0 0 0 0); } 100% { clip-path: inset(0 0 0 100%); } }
+.wipe { animation-name: wipec !important; }
+.footage-tag { top: 300px; }
+{% endif %}
 .beat { grid-area: 1 / 1; font-family: "Inter Tight", sans-serif; font-weight: 900; letter-spacing: -.03em; line-height: 1.02;
   color: #fff; text-shadow: 0 3px 28px rgba(0, 0, 0, .45); opacity: 0; }
 .beat .t { display: inline-block; margin-right: .22em; }
 .beat .m { background: var(--shuka-600); padding: 0 .1em; margin-right: .3em; border-radius: .05em; text-shadow: none; }
+.beat .m.j { margin-right: 0; padding-right: .32em; }   /* the next word is in the same marker: no gap between them */
 .foot, .layer { display: none; }
 @keyframes show { 0% { opacity: 1; } 97% { opacity: 1; } 100% { opacity: 0; } }
 @keyframes stay { 0% { opacity: 0; } 100% { opacity: 1; } }
@@ -101,7 +125,7 @@
 {% endfor %}
 {% endif %}
 {% for b in beats %}{% set s = BT.starts[loop.index0] %}{% set d = BT.durs[loop.index0] %}
-.b{{ loop.index }} { font-size: {{ fitw(b, 860, 4, 96 if photo_band else 132) }}px;
+.b{{ loop.index }} { font-size: {{ fitw(b, 860, 4, 96 if photo_band else 100 if card else 132) }}px;
   animation: {{ 'stay .15s linear both' if loop.last else 'show ' ~ d ~ 's linear both' }}; animation-delay: {{ s }}s; }
 .bars i:nth-child({{ loop.index }}) b { animation: fill {{ d }}s linear {{ s }}s both; }
 {% endfor %}
@@ -121,14 +145,15 @@
   {% if context_line %}<div class="ctx">{{ context_line }}</div>{% endif %}
   {% if broll %}<span class="footage-tag">{{ footage_label }}</span>{% endif %}
   {% for sh in shots %}<div class="shot sh{{ loop.index0 }}" style="--sfy: {{ sh.fy }}%">
-    {% if photo_band %}<div class="blur" style="background-image: url('{{ sh.uri }}')"></div><div class="box"><img class="cam" src="{{ sh.uri }}" alt=""></div>
+    {% if card %}<div class="card"><img class="cam" src="{{ sh.uri }}" alt=""></div>{% if sh.credit %}<span class="cr">{{ sh.credit }}</span>{% endif %}
+    {% elif photo_band %}<div class="blur" style="background-image: url('{{ sh.uri }}')"></div><div class="box"><img class="cam" src="{{ sh.uri }}" alt=""></div>
     {% else %}<div class="full cam" style="background-image: url('{{ sh.uri }}')"></div>{% endif %}
   </div>{% endfor %}
   <div class="bars">{% for b in beats %}<i><b></b></i>{% endfor %}</div>
   {% for b in beats %}{% if not loop.first %}<i class="wipe w{{ loop.index }}"></i>{% endif %}{% endfor %}
   <div class="stage">
     {% for b in beats %}{% set s = BT.starts[loop.index0] %}
-    {% set first = loop.first %}<div class="beat b{{ loop.index }}">{% for w, m in beat_tokens(b) %}{% set at = s + loop.index0 * 0.035 %}<span class="t{{ ' m' if m }}" style="animation-delay: {{ '%.2f' % at }}s"{% if m and counts(w) and not first %} data-count data-t0="{{ '%.2f' % (at + 0.05) }}" data-t1="{{ '%.2f' % (at + 0.95) }}"{% endif %}>{{ w }}</span>{% endfor %}</div>
+    {% set first = loop.first %}<div class="beat b{{ loop.index }}">{% for w, m, j in beat_marks(b) %}{% set at = s + loop.index0 * 0.035 %}<span class="t{{ ' m' if m }}{{ ' j' if j }}" style="animation-delay: {{ '%.2f' % at }}s"{% if m and counts(w) and not first %} data-count data-t0="{{ '%.2f' % (at + 0.05) }}" data-t1="{{ '%.2f' % (at + 0.95) }}"{% endif %}>{{ w }}</span>{% endfor %}</div>
     {% endfor %}
   </div>
   {% if chart %}{% set top = chart | map(attribute='rise') | max %}

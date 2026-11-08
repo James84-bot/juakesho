@@ -209,7 +209,9 @@ def extra_photos(post: dict, lead: dict, out_dir: Path) -> list[dict]:
                 for f in cached if f.with_suffix(".jpg").exists()]
     try:
         import posted
-        got = posted.find_more(post, [lead.get("url", "")], MORE_PHOTOS)
+        lead_file = Path(str(lead.get("file") or ""))
+        got = posted.find_more(post, [lead.get("url", "")], MORE_PHOTOS,
+                               lead=lead_file.read_bytes() if lead_file.is_file() else None)
     except Exception as e:
         _note(f"  more photos failed for {post.get('id')}: {e}")
         return []
@@ -747,6 +749,8 @@ def _attach(posts: list[dict], out_dir: Path) -> None:
                     p["photo_credit"] = " · ".join(dict.fromkeys([got["credit"]] + [m["credit"] for m in more if m.get("credit")]))
                 else:
                     p.pop("extra_photos", None)
+                # per picture: its own credit (shown under it) and its report's headline (to put it on the right line)
+                p["shot_info"] = [{"credit": x.get("credit", ""), "title": x.get("title", "")} for x in [got] + more]
             else:
-                for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet"):
+                for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "extra_photos", "shot_info"):
                     p.pop(k, None)

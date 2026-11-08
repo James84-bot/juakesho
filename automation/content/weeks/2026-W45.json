@@ -1611,31 +1611,43 @@
       "lane": "everyone",
       "demand": 4,
       "kicker": "Football fans",
-      "line": "The FKF General Assembly expelled vice-president *McDonald Mariga* and six officials in Meru.",
-      "fact": "Delegates removed Mariga and six branch officials during a stormy annual general meeting in Meru.",
-      "source": "Daily Nation, 2026-11-08, The Star, Kenya, 2026-11-07",
+      "line": "FKF delegates removed vice-president *McDonald Mariga* and six other officials in Meru.",
+      "fact": "A special general meeting in Meru removed them on Saturday; police fired teargas at the venue before it began.",
+      "source": "Kenya Today, 2026-11-07; Capital FM, 2026-11-07",
       "photo_query": "Nyayo National Stadium Nairobi",
       "event_query": "FKF General Assembly Meru",
-      "message": "FKF delegates expelled McDonald Mariga and six officials, plunging Kenyan football into fresh leadership wrangles.",
-      "impact": "Leadership chaos threatens league sponsorship and national team preparations for upcoming regional tournaments.",
-      "action": "FKF must publish the full assembly resolution and charges against expelled officials.",
+      "message": "FKF's special general meeting removed McDonald Mariga and six other officials after teargas chaos in Meru.",
+      "impact": "FKF cites breaches of its constitution and the April bid to oust president Hussein Mohammed.",
+      "action": "Tell us in the comments: fair call, or a purge?",
       "who": "Football Kenya Federation",
       "where": "Meru",
       "when": "07 Nov 2026",
       "side": "none",
       "tone": "criticism",
-      "caption": "FKF delegates in Meru just expelled vice-president McDonald Mariga and six other football officials. Fresh leadership wrangles risk hurting league sponsorships and player contracts across the country. What does this mean for local football? Tell us below.\n\n#FKF #HarambeeStars #KenyaOnRecord",
+      "caption": "FKF's special general meeting in Meru removed vice-president McDonald Mariga and six other members of its executive committee on Saturday. Police fired teargas at the venue before proceedings began.\n\nThe federation cites breaches of its constitution and the April resolution that tried to oust president Hussein Mohammed.\n\nFair call, or a purge? Tell us below.\n\n#FKF #HarambeeStars #KenyaOnRecord",
       "beats": [
-        "FKF delegates expelled vice-president *McDonald Mariga* and six others.",
-        "The stormy vote happened during the annual general meeting in *Meru*.",
-        "Leadership battles put league *sponsorship* and players at risk.",
-        "FKF must publish the full charges behind the *expulsions* immediately."
+        "FKF ousted vice-president *McDonald Mariga* and six other officials.",
+        "Police fired *teargas* before the special meeting in Meru began.",
+        "FKF cites *constitution breaches* and April's bid to oust Hussein.",
+        "Tell us below: fair call, or a purge?"
       ],
       "bg": "usiku",
       "publish_at": "2026-11-08T12:45:00+03:00",
       "hot": true,
       "beat": "life",
       "source_links": [
+        {
+          "outlet": "Kenya Today",
+          "title": "FKF removes McDonald Mariga and six NEC members after turbulent Meru meeting",
+          "link": "https://kenya-today.com/report-fkf-removes-mcdonald-mariga-and-six-nec-members-after-turbulent-meru-meeting-23614/",
+          "published": "2026-11-07"
+        },
+        {
+          "outlet": "Capital FM",
+          "title": "Mariga ousted as FKF vice president following stormy meeting in Meru",
+          "link": "https://capitalfm.africa/mariga-ousted-as-fkf-vice-president-following-stormy-meeting-in-meru/",
+          "published": "2026-11-07"
+        },
         {
           "outlet": "Daily Nation",
           "title": "FKF row: How Hussein Mohammed turned tables on Mariga",
@@ -1685,7 +1697,8 @@
       "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 854,
-      "decided_at": "2026-11-08T09:32:19.847094+03:00"
+      "decided_at": "2026-11-08T09:32:19.847094+03:00",
+      "edited": "facts corrected before publishing: a special (not annual) general meeting; police teargas added"
     }
   ],
   "scripts": {

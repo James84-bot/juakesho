@@ -170,6 +170,13 @@ def beat_seconds(text: str) -> float:
     return round(min(BEAT["max"], max(BEAT["min"], BEAT["base"] + BEAT["per_word"] * n)), 2)
 
 
+def beat_marks(text: str) -> list[tuple[str, bool, bool]]:
+    """beat_tokens plus, for each word, whether the next word is in the same *marker*: the template closes the gap
+    between them, so "McDonald Mariga" reads as one red block and still wraps cleanly onto two lines."""
+    toks = beat_tokens(text)
+    return [(w, m, bool(m and k + 1 < len(toks) and toks[k + 1][1])) for k, (w, m) in enumerate(toks)]
+
+
 def beat_tokens(text: str) -> list[tuple[str, bool]]:
     """Words of a beat, each flagged if it sits inside a *marker*."""
     out, marked = [], False
@@ -252,7 +259,7 @@ def make_env() -> Environment:
     env.filters["nb"] = nobreak
     env.filters["mark"] = mark
     env.filters["plain"] = plain
-    env.globals.update(beat_seconds=beat_seconds, beat_tokens=beat_tokens, counts=counts)
+    env.globals.update(beat_seconds=beat_seconds, beat_tokens=beat_tokens, beat_marks=beat_marks, counts=counts)
     env.globals.update(GLOW=Markup(bk.GLOW_DEFS), comic_layout=comic_layout, C=bk.C, ON=bk.ON, fit=fit, fitw=fitw, radius=radius, brand=bk.BRAND)
     return env
 
@@ -335,6 +342,7 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
     ctx["footage_label"] = str(post.get("broll_label") or "Illustrative footage")
     ctx["video_credit"] = (post.get("video_credit") or "") if full_footage else ""
     ctx["shots"], ctx["seq"] = [], []
+    ctx["card"] = False   # True: the pictures sit whole in a card under the header (see reel.html.j2)
     if ctx.get("photo_uri") and not full_footage:
         from urllib.parse import unquote, urlparse
         shown = Path(unquote(urlparse(ctx["photo_uri"]).path))
@@ -342,11 +350,18 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         ctx["photo_fy"] = focus_y(shown)
         if post["template"] == "reel" and not post.get("person_file"):
             # a beat Reel shows every picture of the story it has, a different one on each line
-            paths = [shown] + [Path(f).resolve() for f in post.get("extra_photos") or [] if f and Path(f).is_file()]
-            ctx["shots"] = [{"uri": f.as_uri(), "fy": focus_y(f) if i else ctx["photo_fy"]} for i, f in enumerate(paths)]
-            bands = [photo_band(f, W) for f in paths]
-            ctx["photo_band"] = max(bands) if any(bands) else 0   # one layout for all: small pictures sit in a band
-            ctx["seq"] = shot_sequence(len(post.get("beats") or []), len(paths), ctx["broll"])
+            info = post.get("shot_info") if isinstance(post.get("shot_info"), list) else []
+            extra = [(Path(f).resolve(), k + 1) for k, f in enumerate(post.get("extra_photos") or []) if f and Path(f).is_file()]
+            paths = [shown] + [f for f, _ in extra]
+            meta = [info[0] if info else {}] + [info[k] if k < len(info) else {} for _, k in extra]
+            ctx["shots"] = [{"uri": f.as_uri(), "fy": focus_y(f) if i else ctx["photo_fy"],
+                             "credit": str((meta[i] or {}).get("credit") or (ctx.get("photo_credit") if not i else "") or "")}
+                            for i, f in enumerate(paths)]
+            ctx["photo_band"] = 0
+            ctx["card"] = any(not fills_frame(f, W, H) for f in paths)   # one layout for all the pictures
+            beats_n = len(post.get("beats") or [])
+            ctx["seq"] = (match_shots(post.get("beats") or [], [str((m or {}).get("title") or "") for m in meta])
+                          if not ctx["broll"] and len(paths) > 1 else shot_sequence(beats_n, len(paths), ctx["broll"]))
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
 
 
@@ -365,6 +380,61 @@ def shot_sequence(beats: int, photos: int, broll: bool) -> list[int]:
             seq.append(nxt % photos)
             nxt += 1
     return seq
+
+
+def match_shots(beats: list[str], titles: list[str]) -> list[int]:
+    """Which picture goes behind each line, when the pictures come from different reports: the first line keeps
+    the lead photo (it is the thumbnail); a picture goes on the line that shares two or more words with its
+    report's headline ("Police teargas disrupts the meeting" goes on the teargas line); the other lines show the
+    pictures not seen yet, then all of them in turn, never the same picture on two lines in a row."""
+    import guard
+    n, k = len(beats), len(titles)
+    if n <= 0 or k <= 0:
+        return []
+    if k == 1:
+        return [0] * n
+    seq: list[int | None] = [0] + [None] * (n - 1)
+    stems = [guard._stems(render_plain(b)) for b in beats]
+    pairs = sorted(((len(stems[i] & guard._stems(titles[j])), i, j) for i in range(1, n) for j in range(1, k)),
+                   key=lambda t: (-t[0], t[1], t[2]))
+    used: set[int] = set()
+    for score, i, j in pairs:
+        if score >= 2 and seq[i] is None and j not in used:
+            seq[i] = j
+            used.add(j)
+    queue = [j for j in range(1, k) if j not in used]
+    turn = 0
+    for i in range(1, n):
+        if seq[i] is not None:
+            continue
+        if queue:
+            seq[i] = queue.pop(0)
+            continue
+        for _ in range(k):
+            cand, turn = turn % k, turn + 1
+            if cand != seq[i - 1] and (i + 1 >= n or cand != seq[i + 1]):
+                break
+        seq[i] = cand
+    return [int(x) for x in seq]
+
+
+def render_plain(text: str) -> str:
+    return re.sub(r"\*", "", str(text))
+
+
+FULL_MAX = 1.2   # a picture enlarged more than this to fill the whole 9:16 frame looks soft: it goes in the card
+
+
+def fills_frame(path: Path, width: int, height: int, zoom: float = 1.1) -> bool:
+    """True when the picture is big enough to fill the whole frame sharply, camera moves included. A landscape news
+    photo almost never is (1200x675 would be blown up 2.8x), so it sits whole in the card instead."""
+    try:
+        from PIL import Image
+        with Image.open(path) as im:
+            w, h = im.size
+    except Exception:
+        return False
+    return max(width / w, height / h) * zoom <= FULL_MAX
 
 
 BAND_BELOW = 1000   # a photo narrower than this would be blown up to fill a full post or Reel

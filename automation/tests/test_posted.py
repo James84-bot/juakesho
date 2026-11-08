@@ -272,8 +272,58 @@ class MorePhotos(unittest.TestCase):
                  (5, {"outlet": "B", "link": "https://b/2", "title": "Nigeria records first Ebola case"}),
                  (5, {"outlet": "C", "link": "https://c/3", "title": "Ebola patients discharged in Kenya"}),
                  (4, {"outlet": "D", "link": "https://d/4", "title": "Kenya Ebola recovery: what next"})]
-        imgs = {"https://a/1": b"lead", "https://c/3": b"one", "https://d/4": b"one"}   # D repeats C's picture
+        lead, one = _photo(1), _photo(2)
+        imgs = {"https://a/1": lead, "https://c/3": one, "https://d/4": _resaved(one)}   # D: C's picture, resized
         with mock.patch.object(posted, "_ranked", lambda p: items), \
              mock.patch.object(posted, "_photo_of", lambda it: (imgs.get(it["link"], b"x"), {"credit": it["outlet"]})):
-            got = posted.find_more(post, ["https://a/1"], n=2)
+            got = posted.find_more(post, ["https://a/1"], n=2, lead=lead)
         self.assertEqual([info["credit"] for _, info in got], ["C"])   # A used, B elsewhere, D the same picture
+
+    def test_the_lead_from_another_outlet_and_soft_pictures_are_left_out(self):
+        post = {"id": "p", "message": "FKF removed Mariga in Meru.", "beats": ["a", "b", "c"]}
+        items = [(7, {"outlet": "A", "link": "https://a/1", "title": "FKF removes Mariga in Meru"}),
+                 (6, {"outlet": "B", "link": "https://b/2", "title": "Mariga kicked out at FKF meeting in Meru"}),
+                 (5, {"outlet": "C", "link": "https://c/3", "title": "Teargas at FKF meeting in Meru"}),
+                 (4, {"outlet": "D", "link": "https://d/4", "title": "FKF meeting in Meru: what next"})]
+        lead = _photo(1)
+        imgs = {"https://b/2": _resaved(lead), "https://c/3": _photo(3, soft=True), "https://d/4": _photo(4)}
+        with mock.patch.object(posted, "_ranked", lambda p: items), \
+             mock.patch.object(posted, "_photo_of", lambda it: (imgs.get(it["link"], b"x"), {"credit": it["outlet"]})):
+            got = posted.find_more(post, ["https://a/1"], n=2, lead=lead)
+        self.assertEqual([info["credit"] for _, info in got], ["D"])   # B is the lead again, C a blurry still
+
+
+def _photo(seed: int, soft: bool = False) -> bytes:
+    """A test photo with real detail (shapes and grain); soft=True: the same kind of picture blown up 3x."""
+    import io
+    import random
+    from PIL import Image, ImageDraw
+    rnd = random.Random(seed)
+    w, h = (400, 225) if soft else (1200, 675)
+    im = Image.new("RGB", (w, h), tuple(rnd.randrange(256) for _ in range(3)))
+    d = ImageDraw.Draw(im)
+    for _ in range(60):
+        x, y = rnd.randrange(w), rnd.randrange(h)
+        d.ellipse((x, y, x + rnd.randrange(8, w // 3), y + rnd.randrange(8, h // 3)), fill=tuple(rnd.randrange(256) for _ in range(3)))
+    px = im.load()
+    for _ in range(w * h // 3):
+        x, y = rnd.randrange(w), rnd.randrange(h)
+        r, g, b = px[x, y]
+        k = rnd.randrange(-40, 40)
+        px[x, y] = (max(0, min(255, r + k)), max(0, min(255, g + k)), max(0, min(255, b + k)))
+    if soft:
+        im = im.resize((1200, 675), Image.BICUBIC)
+    out = io.BytesIO()
+    im.save(out, "JPEG", quality=85)
+    return out.getvalue()
+
+
+def _resaved(data: bytes) -> bytes:
+    """The same picture as another outlet would run it: smaller, cropped a little, saved again."""
+    import io
+    from PIL import Image
+    im = Image.open(io.BytesIO(data))
+    w, h = im.size
+    out = io.BytesIO()
+    im.crop((12, 8, w - 12, h - 8)).resize((w * 2 // 3, h * 2 // 3)).save(out, "JPEG", quality=70)
+    return out.getvalue()
