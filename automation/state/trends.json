@@ -1,192 +1,173 @@
 {
-  "fetched": "2026-11-08T16:11:43.223366+00:00",
+  "fetched": "2026-11-08T18:20:21.631007+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "leverkusen",
+      "title": "man u game today",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Ungleiches Duell mit Nachbar Bayer: Der FC vor seltener Gelegenheit",
-          "url": "https://geissblog.koeln/2026/11/ungleiches-duell-mit-der-nachbar-bayer-der-fc-vor-seltener-gelegenheit/",
-          "source": "geissblog"
+          "title": "Video - Michael Carrick Makes Roma \"Best\" Claim Ahead Of Man Utd vs Aston Villa",
+          "url": "https://roundtable.io/sports/soccer/premier-league/manchester-united/video/michael-carrick-makes-roma-best-claim-ahead-of-man-utd-vs-aston-villa",
+          "source": "roundtable.io"
         },
         {
-          "title": "Leverkusen zu Gast in Köln: Die FC-Aufstellung im Rheinland-Duell",
-          "url": "https://www.ksta.de/sport/1-fc-koeln/1-fc-koeln-live-bundesliga-duell-gegen-leverkusen-im-ticker-1411854",
-          "source": "Kölner Stadt-Anzeiger"
+          "title": "Man United hit 40-year low after dropping into Premier League relegation zone",
+          "url": "https://www.espn.com/soccer/story/_/id/50410672/man-united-premier-league-relegation-zone",
+          "source": "ESPN"
         },
         {
-          "title": "Kurzpässe: Werkself will Derby-Siegesserie fortsetzen",
-          "url": "https://www.bayer04.de/en-us/news/bundesliga/matchday-news-werkself-out-to-continue-derby-run",
-          "source": "Bayer04.de"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "rennes vs losc",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Après Martin Terrier, place à un deuxième duel entre le Stade Rennais et le LOSC ce dimanche",
-          "url": "https://lepetitlillois.com/2026/11/08/terrier-deuxieme-duel-stade-rennais-losc/",
-          "source": "Le Petit Lillois"
-        },
-        {
-          "title": "Pronostic Rennes - Lille : L'occasion de viser la première place",
-          "url": "https://www.vietnam.vn/fr/nhan-dinh-rennes-vs-lille-co-hoi-bam-duoi-ngoi-dau",
-          "source": "Vietnam.vn"
-        },
-        {
-          "title": "Ligue 1 : Sans Estéban Lepaul, l'attaque est-elle le point faible du Stade Rennais",
-          "url": "https://www.flashscore.fr/actualites/sans-esteban-lepaul-l-attaque-est-elle-le-point-faible-du-stade-rennais/ldPOvlqA/",
-          "source": "Flashscore.fr"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "real sociedad vs rayo",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "¿Quién es Juan Martínez Munuera? Árbitro del Real Sociedad vs Rayo Vallecano de la jornada 12 de LALIGA",
-          "url": "https://www.dazn.com/es-ES/news/futbol/quien-es-juan-martinez-munuera-arbitro-real-sociedad-vs-rayo-vallecano-jornada-12-laliga/y0401ajmitdf1gplhczcu5d5f",
-          "source": "DAZN"
-        },
-        {
-          "title": "Juan Martínez Munuera vuelve a cruzarse en el camino de la Real",
-          "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20261107/1004248295/juan-martinez-munuera-vuelve-cruzarse-camino-real.html",
-          "source": "Mundo Deportivo"
-        },
-        {
-          "title": "Martínez Munuera arbitrará el Real Sociedad-Rayo con Iván Caparrós en el VAR",
-          "url": "https://unionrayo.es/martinez-munuera-arbitrara-el-real-sociedad-rayo-con-ivan-caparros-en-el-var/",
-          "source": "Unión Rayo"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ajax",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Vooruitblik | “Duel tussen twee teams die elkaar weinig ontlopen”",
-          "url": "https://fctwente.nl/nieuws/-duel-tussen-twee-teams-die-elkaar-weinig-ontlopen",
-          "source": "FC Twente"
-        },
-        {
-          "title": "Beoordeel de spelers na het spectaculaire gelijkspel tegen Ajax",
-          "url": "https://www.twenteinsite.nl/fc-twente-nieuws/beoordeel-de-spelers-na-het-spectaculaire-gelijkspel-tegen-ajax",
-          "source": "Twente Insite"
-        },
-        {
-          "title": "PSV heeft koppositie voor het grijpen tegen Cambuur • Ook AZ-Groningen onderweg",
-          "url": "https://nos.nl/liveblog/2638543-psv-heeft-koppositie-voor-het-grijpen-tegen-cambuur-ook-az-groningen-onderweg",
-          "source": "NOS"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "alanyaspor vs trabzonspor",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "🚨Canlı Yayın İzle: Alanyaspor - Trabzonspor maçı Canlı Anlatım - ALY TS maçı kadroları skoru ve istatistikleri",
-          "url": "https://www.fanatik.com.tr/trabzonspor/live-alanyaspor-trabzonspor-maci-canli-anlatim-aly-ts-maci-kadrolari-skoru-ve-istatistikleri-2643781",
-          "source": "Fanatik"
-        },
-        {
-          "title": "Thomas Reis Alanya Deplasmanında Tarihi Seri İçin Sahada",
-          "url": "https://www.takagazete.com.tr/thomas-reis-alanya-deplasmaninda-tarihi-seri-icin-sahada",
-          "source": "Taka Gazete"
-        },
-        {
-          "title": "Joao Pereira: Kritik bir durum olduğunu düşünmüyorum",
-          "url": "https://www.kuzeyekspres.com.tr/haber/29124323/joao-pereira-kritik-bir-durum-oldugunu-dusunmuyorum",
-          "source": "Kuzey Ekspres"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "barcelona vs madrid cff",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "El dilema de Pere Romeu en el Barça ante el Madrid CFF con el Arsenal a la vista",
-          "url": "https://www.vavel.com/es/futbol/2026/11/08/futbol-femenino/1278555-liga-f-jornada-10-previa-fc-barcelona-madrid-cff.html",
-          "source": "VAVEL.com"
-        },
-        {
-          "title": "El Barça pone a prueba al tercer clasificado antes del Arsenal con Serrajordi",
-          "url": "https://www.sport.es/es/noticias/barca/barca-pone-prueba-tercer-clasificado-136196758",
-          "source": "SPORT"
-        },
-        {
-          "title": "Los dos fichajes del Barça Femenino más esperados por Pere Romeu para la Champions League",
-          "url": "https://cronicaglobal.elespanol.com/culemania/secciones/20261107/barca-femenino-esperados-pere-romeu-champions-league/1003742810001_0.html",
-          "source": "Crónica Global"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "tottenham vs brighton",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Confirmed line-ups | Spurs vs Brighton, WSL",
-          "url": "https://www.tottenhamhotspur.com/news/1184732/spurs-women-confirmed-line-ups-spurs-vs-brighton-wsl",
-          "source": "Tottenham Hotspur"
-        },
-        {
-          "title": "Spurs full of confidence and belief off the back of big wins says Ho",
-          "url": "https://onefootball.com/en/news/spurs-full-of-confidence-and-belief-off-the-back-of-big-wins-says-ho-43740072",
-          "source": "OneFootball"
-        },
-        {
-          "title": "Tottenham Hotspur Women vs Brighton Women: Where to Watch, TV Channel, Live Stream & Kick-Off Time",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-tottenham-hotspur-women-v-brighton--hove-albion-women/blt49d5254c72bc4700",
+          "title": "Crisis at Old Trafford! Man Utd hit 40-year low as Michael Carrick’s side drop into Premier League relegation zone",
+          "url": "https://www.goal.com/en-ke/news/man-utd-michael-carrick-premier-league-relegation-zone/bltff9d550be340fe50",
           "source": "Goal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "kwale",
+      "title": "zion suzuki",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Football gossip: Verbruggen, Ngumoha, Vuskovic, Gallagher, Colwill, Frimpong",
+          "url": "https://www.bbc.com/sport/football/articles/c54g1nepgr28o",
+          "source": "BBC"
+        },
+        {
+          "title": "Liverpool are considering this man as Alisson's long-term replacement",
+          "url": "https://www.flashscore.com/news/soccer-premier-league-liverpool-eyeing-verbruggen-as-alisson-succession-plans-begin/Ob77xG7s/",
+          "source": "Flashscore.com"
+        },
+        {
+          "title": "Liverpool’s interest in Premier League star confirmed with huge transfer battle on the horizon",
+          "url": "https://onefootball.com/en/news/liverpools-interest-in-premier-league-star-confirmed-with-huge-transfer-battle-on-the-horizon-43739729",
+          "source": "OneFootball"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nicolas jackson",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "He was supposed to join instead of Nicolas Jackson! Bayern Munich face a former transfer target",
+          "url": "https://www.goal.com/en/news/he-was-supposed-to-join-instead-of-nicolas-jackson-bayern-munich-face-a-former-transfer-target/blt4cafa377e9224dcb",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Ademola Lookman Gains Hope For Revival At Atletico Madrid, As Coach Says: 'I Don't Want Him To Get Frustrated'",
+          "url": "https://www.sports247.ng/ademola-lookman-gains-hope-for-revival-at-atletico-madrid-as-coach-says-i-dont-want-him-to-get-frustrated/?noamp=mobile",
+          "source": "Sports247 Nigeria"
+        },
+        {
+          "title": "Super Eagles: What Lookman needs to change at Atletico",
+          "url": "https://www.afrik-foot.com/en-ng/super-eagles-lookman-simeone-atletico",
+          "source": "Afrik-Foot"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "lyon fc",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "OL : Maciel fait appel à Fonseca pour battre Brest",
+          "url": "https://www.foot01.com/ol/ol-maciel-fait-appel-a-fonseca-pour-battre-brest",
+          "source": "Foot01"
+        },
+        {
+          "title": "La vidéo de la belle enroulée de Noah Edjouma en première intention contre l'OL",
+          "url": "https://www.lequipe.fr/Football/Actualites/La-video-de-la-belle-enroulee-de-noah-edjouma-en-premiere-intention-contre-l-ol/1742265",
+          "source": "L'Équipe"
+        },
+        {
+          "title": "DIRECT - Ligue 1 : vivez le match du Stade Brestois face à Lyon en direct avec Ici Breizh Izel",
+          "url": "https://www.ici.fr/bretagne/finistere-29/brest/direct-ligue-1-vivez-le-match-du-stade-brestois-face-a-lyon-en-direct-avec-ici-breizh-izel-9395954",
+          "source": "ici.fr"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bruno fernandes",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "'Bruno's as good as ever' - Carrick backs Man Utd captain",
+          "url": "https://www.bbc.com/sport/football/articles/ckj0l542v7pvo",
+          "source": "BBC"
+        },
+        {
+          "title": "What Michael Carrick said when asked if Manchester United star apologised after criticism",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/what-michael-carrick-said-asked-34871650",
+          "source": "Manchester Evening News"
+        },
+        {
+          "title": "Manchester United 3-2 Roma: Bruno Fernandes claims players don't need to save Michael Carrick's job after first win in 10 games",
+          "url": "https://www.skysports.com/football/news/13607700/manchester-united-3-2-roma-bruno-fernandes-claims-players-dont-need-to-save-michael-carricks-job-after-first-win-in-10-games",
+          "source": "Sky Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "como vs inter",
       "traffic": "100+",
       "news": [
         {
-          "title": "Tanzania arrest leads to Sh3.6bn drug haul recovery in Kwale",
-          "url": "https://nation.africa/kenya/counties/kwale/tanzania-arrest-leads-to-sh3-6bn-drug-haul-recovery-in-kwale-5662834",
-          "source": "Daily Nation"
+          "title": "La prueba ante el Inter revelará el verdadero nivel del Como, según Fàbregas",
+          "url": "https://www.fotmob.com/es/news/11cifkn90n7cr18so1a8iwwsly_es-la-prueba-ante-el-inter-revelara-el-verdadero-nivel-del-como-segun-fabregas",
+          "source": "FotMob"
         },
         {
-          "title": "Foreigners Arrested as Police Seize Substances worth Ksh3.6 Billion",
-          "url": "https://www.kenyans.co.ke/news/129229-police-recover-454kg-suspected-methamphetamine-worth-ksh36-billion-3-arrested",
-          "source": "Kenyans.co.ke"
+          "title": "Inter de Milán – Como: horario y dónde ver hoy por TV el partido de fútbol de la Serie A",
+          "url": "https://www.lavanguardia.com/deportes/futbol/20261107/2459/horario-partido-ca-inter-de-milan-como-ctx.html",
+          "source": "La Vanguardia"
         },
         {
-          "title": "Four arrested as police seize Sh3.6Bbn narcotics haul",
-          "url": "https://www.the-star.co.ke/news/2026-11-08-four-arrested-as-police-seize-sh36bbn-narcotics-haul",
-          "source": "The Star, Kenya"
+          "title": "Inter – Como: Duelo de titantes en San Siro",
+          "url": "https://onefootball.com/es/noticias/inter-como-duelo-de-titantes-en-san-siro-43744900",
+          "source": "OneFootball"
         }
-      ],
-      "civic": true
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "az alkmaar",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Meerdink converts late penalty as AZ edge Groningen",
+          "url": "https://onefootball.com/en/news/meerdink-converts-late-penalty-as-az-edge-groningen-43747586",
+          "source": "OneFootball"
+        },
+        {
+          "title": "Oldham vs. Sheffield Wed (Nov 8, 2026) Team Stats",
+          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401931108/league/eng.fa",
+          "source": "ESPN"
+        },
+        {
+          "title": "Gotham vs. Seattle (Nov 8, 2026) Team Stats",
+          "url": "https://www.espn.com/soccer/team-stats/_/gameId/401932958/league/usa.nwsl",
+          "source": "ESPN"
+        }
+      ]
     }
   ],
   "dropped": [
     {
-      "title": "hearts vs falkirk",
+      "title": "monaco fc",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "fc cologne vs leverkusen",
-      "why": "unsafe: 'Betting'"
+      "title": "brest vs lyon",
+      "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "real sociedad",
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
