@@ -1649,7 +1649,7 @@
           "published": "2026-11-07"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1684,7 +1684,8 @@
       ],
       "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 854
+      "tg_msg": 854,
+      "decided_at": "2026-11-08T09:32:19.847094+03:00"
     }
   ],
   "scripts": {
