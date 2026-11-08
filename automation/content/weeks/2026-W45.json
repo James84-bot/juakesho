@@ -1604,13 +1604,94 @@
       "story_id": "18095086640660629",
       "fb_story_id": "1832710267882270",
       "yt_id": "FXWm6pHNL6c"
+    },
+    {
+      "id": "2026-w45-hot-1108",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 4,
+      "kicker": "Football fans",
+      "line": "The FKF General Assembly expelled vice-president *McDonald Mariga* and six officials in Meru.",
+      "fact": "Delegates removed Mariga and six branch officials during a stormy annual general meeting in Meru.",
+      "source": "Daily Nation, 2026-11-08, The Star, Kenya, 2026-11-07",
+      "photo_query": "Nyayo National Stadium Nairobi",
+      "event_query": "FKF General Assembly Meru",
+      "message": "FKF delegates expelled McDonald Mariga and six officials, plunging Kenyan football into fresh leadership wrangles.",
+      "impact": "Leadership chaos threatens league sponsorship and national team preparations for upcoming regional tournaments.",
+      "action": "FKF must publish the full assembly resolution and charges against expelled officials.",
+      "who": "Football Kenya Federation",
+      "where": "Meru",
+      "when": "07 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "caption": "FKF delegates in Meru just expelled vice-president McDonald Mariga and six other football officials. Fresh leadership wrangles risk hurting league sponsorships and player contracts across the country. What does this mean for local football? Tell us below.\n\n#FKF #HarambeeStars #KenyaOnRecord",
+      "beats": [
+        "FKF delegates expelled vice-president *McDonald Mariga* and six others.",
+        "The stormy vote happened during the annual general meeting in *Meru*.",
+        "Leadership battles put league *sponsorship* and players at risk.",
+        "FKF must publish the full charges behind the *expulsions* immediately."
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-11-08T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "FKF row: How Hussein Mohammed turned tables on Mariga",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQajVoalYwYkswTXdCQnBsdnc3ZERGRkxURmdBWXBLMlB0aUxVRWdtWktsZy1wMEhuTVFRMjNKNFBRNkp0cVJQNmd1X2RDRXNNUFVybXFKM24yS1kwWncxWkF1akFJYmVBYXQ2dDFQd2xTMW1kMEVzcE1nZldjZ0VJRV9XaElWTUtQYXpuTTVmX1J5LVBvWDBXQXNWc3ZMSXJOY0hPaTJKSQ?oc=5",
+          "published": "2026-11-08"
+        },
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Mariga, 6 other officials expelled by Football Kenya Federation General Assembly",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTnFNR1NTQl9ZQUtUaEZKUnhxbXJqa25XY01RZXZSSmpqN2h3ZlljYjhQRWlpZFZQa0lFWHRsR2FaQjhrVWI2RWJ5MExGQUgwT0QzVHB2TUNXQV91M21XV3JvM092Zkg5MFo5bmlzYkJqWGR6X2xiX2ZGNzRRNjNjMFlqd1hob2p6OFhB?oc=5",
+          "published": "2026-11-07"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 4,
+        "action": 8,
+        "fair": 8,
+        "impact": 7,
+        "avg": 7.4,
+        "note": "Match the demand score strictly to the 1-10 ranking provided in the prompt's WHAT KENYA IS ON list."
+      },
+      "drafted_at": "2026-11-08T09:17:41.890194+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1108-photo.jpg",
+      "photo_credit": "Photo: Capital FM · Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/mariga-ousted-as-fkf-vice-president-following-stormy-meeting-in-meru/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1108-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/exports/2026-W45/photos/2026-w45-hot-1108-photo-3.jpg"
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 854
     }
   ],
   "scripts": {
-    "radio": "Good evening, and welcome back to Kenya on Record. Today, we bring you numbers that speak directly to your dining table and the family budget.\n\nFor months, sugar has been a sore point for Kenyan households. Scarcity and import dynamics drove this kitchen staple out of reach for many. But the latest production figures offer a welcome turnaround. Local sugar output has surged by 56.7 percent. This surge in domestic supply has finally forced retail shelves to adjust, bringing prices down by an average of thirty-two shillings on a standard two-kilogram packet.\n\nNow, thirty-two shillings may sound modest to some, but across a month, for an ordinary working family, that difference counts. More importantly, it demonstrates what happens when local agricultural production functions without sabotage or unnecessary bottlenecks. However, civic vigilance does not end at the factory gate. Often, price reductions announced at the national level take weeks to trickle down to your neighborhood duka because middlemen drag their feet. We must stay alert. If national supply is up and wholesale prices are down, retailers have no justification to charge you crisis rates. Verify the price on the shelf, demand fair rates, and protect your pocket.\n\nKwa ufupi kwa lugha ya Kiswahili: Uzalishaji wa sukari nchini umeongezeka kwa asilimia hamsini na sita nukta saba, na kusababisha bei ya pakiti ya kilo mbili kushuka kwa shilingi thelathini na mbili. Hakikisha duka lako la mtaa halikutozi bei ya zamani. Linda haki yako kama mnunuzi.\n\nStay informed, and keep Kenya on record.",
-    "voice_note": "Habari zenu. Quick check-in from Kenya on Record on your household budget this week. There is genuine, verified relief on the shelves. Official numbers show our local sugar production climbed by fifty-six point seven percent. As a direct result, retail prices have dropped by an average of thirty-two shillings for a two-kilogram packet. That is money that should stay in your pocket every single time you restock. But here is the catch: old habits die hard in the distribution chain, and some shops will quietly keep charging yesterday’s scarcity rates if nobody calls them out. When you go shopping, check the shelf price before you tap your card or send mobile money. If the reduction isn’t reflected, ask why. Let us make sure market gains actually reach the citizen.",
-    "sms": "Usiibiwe: Local sugar output is up 56.7%, dropping a 2kg pack by Sh32. Check shelf prices before paying and demand the market reduction at your local duka.",
-    "reels": "Good news at the till, but keep your eyes open. Kenya’s local sugar production jumped by fifty-six point seven percent, forcing retail prices down by thirty-two shillings on a standard two-kilo packet. The mills are crushing, domestic supply is up, and your household budget should feel that relief immediately. Do not let your local retailer charge you yesterday’s scarcity rates. Check the price, ask questions, and hold the supply chain accountable."
+    "radio": "Good evening, and welcome to Kenya on Record on your community dial.\n\nThis week, Kenyan football finds itself back where it seemingly always ends up: trapped in boardroom skirmishes, trading suspensions instead of fixing pitches. \n\nFootball Kenya Federation delegates have voted to expel former Harambee Stars international McDonald Mariga alongside six other officials. Mariga, who has openly challenged the incumbent leadership and sought systemic reform, now finds himself locked out alongside peers who dared to question the federation’s conduct. \n\nRegardless of which faction one supports, the pattern is painfully familiar. Every time national football elections approach, the priority shifts from developing the sport to purging rivals and securing delegates. While administrators spend their energy drafting expulsion letters and navigating court corridors, our grassroots leagues lack balls and boots, refereeing standards remain compromised, and player welfare is treated as an afterthought. \n\nKenya has immense talent and major continental hosting obligations on the horizon. We simply cannot afford another cycle of governance paralysis, FIFA bans, and missed opportunities for our youth. A national federation exists to serve Kenyan players, not to preserve private fiefdoms.\n\nKwa ufupi: Mzozo mpya umeibuka katika Shirikisho la Soka nchini, FKF, baada ya wajumbe kumtimua nahodha wa zamani McDonald Mariga pamoja na maafisa wengine sita. Badala ya kuangazia maendeleo ya viwanja na maslahi ya wachezaji chipukizi, viongozi wetu wa soka wamerejea tena kwenye vita vya ofisi. Huu ni wakati wa kuweka uwazi na nidhamu mbele ili kukuza vipaji vya vijana wetu.\n\nStay informed, and keep holding power accountable.",
+    "voice_note": "Habari zenu. Kenya on Record hapa with a quick breakdown on the latest FKF boardroom drama. Delegates have just voted to expel former Harambee Stars midfielder McDonald Mariga and six other officials from the federation. This comes right in the heat of campaigns and scrutiny over football governance in Kenya. Mariga and his group have been vocal about administrative flaws, but the sitting delegates moved swiftly to lock them out entirely. Why should this bother you? Because every single time FKF plunges into power struggles, corporate sponsorships dry up, national team preparations wobble, and county grassroots leagues are abandoned. We’ve seen this playbook before: internal purges, endless court battles, and zero focus on the pitch. Real change won’t come until we demand absolute transparency and accountability at Kandanda House. Forward this to any football fan who wants our game fixed.",
+    "sms": "Usiibiwe: Boardroom fights in sports often hide financial mismanagement. Always demand audited accounts and open elections in your local clubs and leagues.",
+    "reels": "McDonald Mariga and six top football officials have just been expelled by FKF delegates. Another year, another boardroom purge at Kandanda House. While administrators fight over seats ahead of federation polls, grassroots clubs are broke and young players remain stranded without proper structures. When will Kenyan football belong to the athletes and the fans, instead of political gatekeepers? Demand accountability for our game. Follow Kenya on Record."
   },
   "spend_usd": 0.0
 }
