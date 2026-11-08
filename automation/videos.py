@@ -343,7 +343,8 @@ FOOTAGE_ASK = """This is one frame of stock footage that would play behind a Ken
 Answer three things about THIS frame:
 shows: does it clearly show {words} (the thing itself, not something merely nearby)?
 good: is it sharp, well lit and steady enough for a professional news video (not blurry, dark, grainy or cartoonish)?
-person: is any person visible at all (a face or a body, however small)? Car lights and wheels are not people.
+person: could a viewer recognise anyone, or take them for someone in the story: a face clearly visible, or a person
+filling a large part of the frame? Small distant figures don't count, nor do car lights and wheels.
 Return ONLY JSON: {{"shows": true or false, "good": true or false, "person": true or false, "why": "under 12 words"}}"""
 
 
@@ -356,7 +357,8 @@ def _grab(clip: Path, t: float) -> bytes:
 
 def footage_problem(clip: Path, subject: str, words: list[str], times: tuple = BROLL_TIMES) -> str:
     """Why this clip must not play behind the post ('' when it may): it must show the subject, look professional,
-    and show no person at all. The face detector looks at every sampled moment; a model that can see looks at the
+    and show nobody a viewer could recognise or take for someone in the story (the photo rule: small distant figures
+    are fine). The face detector looks at every sampled moment; a model that can see looks at the
     middle frame (subject, quality, people) and at any moment the detector flagged, because the detector takes car
     lights and wheels for faces (8 Nov: an empty SPC station at dusk, flagged at 3 moments). When no model can
     look, the clip is not used: footage nobody checked never goes behind our words."""
@@ -377,7 +379,7 @@ def footage_problem(clip: Path, subject: str, words: list[str], times: tuple = B
     if got.get("good") is not True:
         return f"not good enough to use ({str(got.get('why') or '')[:60]})"
     if got.get("person") is not False:
-        return "a person shows"
+        return f"a person shows ({str(got.get('why') or '')[:60]})"
     for t, data in frames:
         if data is mid or photos.faces_ok(data, 0.02):
             continue
