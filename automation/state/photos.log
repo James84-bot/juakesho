@@ -7,21 +7,17 @@ feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
 feed Nation: 25 items, 0 with an image
-posted for 2026-w45-hot-1108-r4-sample: 5 matching reports (person '', names ['meru', 'mariga', 'fkf'], words ['general', 'assembly', 'meru'])
-picked KBC (6, detail 0.35, 2750x2126): Mariga and six NEC members kicked out  during FKF SGM in Meru
+posted for 2026-w46-d1-money: 1 matching reports (person 'wandayi', names ['opiyo', 'wandayi', 'epra'], words ['epra', 'reviews', 'fuel', 'prices', 'november'])
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+picked Kenyans.co.ke (7, detail 0.371, 700x350): Opiyo Wandayi Addresses Gachagua's Explosive Claims on Fuel Prices
+commons 'Mount Kenya peak Batian' for 2026-w46-d2-kenya: 25 found, 7 usable, dropped {'size': 1, 'licence': 0, 'place': 16, 'subject': 0, 'unfit': 1}
+posted for 2026-w46-d4-glasspoll: 5 matching reports (person '', names ['ajax'], words ['talanta', 'bayern', 'versus', 'ajax', 'regular'])
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+picked Kenyans.co.ke (4, detail 0.469, 700x350): Bayern Munich, Ajax to Play at Talanta Stadium Opening, Ruto Announces
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+not Kenyans.co.ke: the same picture as one already used (Sports PS Reveals Fresh Details of Ajax, Bayern Clash at Tal)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+also Kenyans.co.ke (4, detail 0.622, 700x350): Bayern vs Ajax Match in Kenya Hits First Roadblock as Petitioners Move
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+not Kenyans.co.ke: the same picture as one already used (Bayern Munich vs Ajax Ticket Prices at Raila Odinga Internat)
 Nation page not read: HTTP Error 403: Forbidden
-not Capital FM: the same picture as one already used (Mariga ousted as FKF vice-president following stormy meeting)
-not Capital FM: soft picture (detail 0.239, 1366x768) (Police teargas disrupts FKF Special General Meeting in Meru)
-Nation page not read: HTTP Error 403: Forbidden
-posted for 2026-w45-hot-1107m-sample: 1 matching reports (person '', names [], words ['local', 'sugar', 'production', 'rose', 'cutting'])
-picked Capital FM (4, detail 0.716, 1500x1352): Kenya sugar production jumps 56.7pc as prices fall by Sh32 for 2kg
-posted for 2026-w45-hot-1107-sample: 5 matching reports (person '', names ['ebola'], words ['records', 'days', 'without', 'ebola', 'case'])
-skipped Capital FM: image too small or not a photo (500x261, https://capitalfm.africa/wp-content/uploads/news/2023/04/Amoth.jpg)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-picked Kenyans.co.ke (6, detail 0.317, 700x350): MoH Reveals Next Steps as Kenya Goes 10 Days Without New Ebola Cases
-skipped Capital FM: image too small or not a photo (500x261, https://capitalfm.africa/wp-content/uploads/news/2023/04/Amoth.jpg)
-not Kenyans.co.ke: about Nigeria (Nigeria Records First Ebola Case as Kenya’s Infections Rise)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-not Kenyans.co.ke: the same picture as one already used (Five Ebola Patients Recover and Are Discharged, Ministry Con)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-also Kenyans.co.ke (4, detail 0.322, 700x350): Ebola Cases Rise to 7, Ministry of Health Confirms

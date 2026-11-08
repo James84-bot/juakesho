@@ -1,25 +1,69 @@
 {
-  "fetched": "2026-11-08T13:03:19.383665+00:00",
+  "fetched": "2026-11-08T14:15:47.089612+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "water supply",
+      "title": "palace vs liverpool",
+      "traffic": "10000+",
+      "news": [
+        {
+          "title": "Crystal Palace vs Liverpool: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6r7ydrm8xlyt",
+          "source": "BBC"
+        },
+        {
+          "title": "Team news: Confirmed Liverpool line-up v Crystal Palace",
+          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-crystal-palace",
+          "source": "Liverpool FC"
+        },
+        {
+          "title": "Crystal Palace vs Liverpool LIVE! Premier League score updates, news, prediction, line-ups and how to watch or stream",
+          "url": "https://www.skysports.com/football/live-blog/13592888/crystal-palace-vs-liverpool-live-premier-league-score-updates-news-prediction-line-ups-and-how-to-watch-or-stream",
+          "source": "Sky Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "gor mahia",
       "traffic": "500+",
       "news": [
         {
-          "title": "Kisumu residents face week-long water supply disruption",
-          "url": "https://www.the-star.co.ke/news/2026-11-08-kisumu-residents-face-week-long-water-supply-disruption",
-          "source": "The Star, Kenya"
+          "title": "3K FC face biggest test yet as AFC Leopards visit Embu",
+          "url": "https://eastleighvoice.co.ke/football/420941/3k-fc-face-biggest-test-yet-as-afc-leopards-visit-embu",
+          "source": "The Eastleigh Voice"
         },
         {
-          "title": "\"Please store water\": KIWASCO announces 7-day water interruptions in 36 areas",
-          "url": "https://www.tuko.co.ke/business-economy/646037-kiwasco-announces-7-day-water-interruptions-36-areas-urges-residents-store-water/",
-          "source": "Tuko News"
+          "title": "Ikara's penalty heroics earn AFC Leopards a point against stubborn 3K FC as unbeaten run extends to 6 games",
+          "url": "https://blog.ke.sportpesa.com/2026/11/07/ikaras-penalty-heroics-earn-afc-leopards-a-point-against-stubborn-3k-fc-as-unbeaten-run-extends-to-6-games/",
+          "source": "SportPesa Blog"
         },
         {
-          "title": "Nairobi residents face 24-hour water interruption in planned maintenance",
-          "url": "https://www.the-star.co.ke/news/2026-11-08-nairobi-residents-face-24-hour-water-interruption",
-          "source": "The Star, Kenya"
+          "title": "3K bank millions in stalemate against AFC Leopards",
+          "url": "https://www.mozzartsport.co.ke/football/news/3k-bank-millions-in-stalemate-against-afc-leopards/70565",
+          "source": "Mozzart Sport Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "club brugge vs anderlecht",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "En dat in z’n 500ste match in de Jupiler Pro League: Hans Vanaken breekt de ban voor Club Brugge",
+          "url": "https://www.hln.be/club-brugge/en-dat-in-zn-500ste-match-in-de-jupiler-pro-league-hans-vanaken-breekt-de-ban-voor-club-brugge~af1da8d8/",
+          "source": "HLN"
+        },
+        {
+          "title": "Club Brugge voor het eerst écht gevaarlijk: Lemaréchal knalt naast doel van Anderlecht-keeper Coosemans",
+          "url": "https://www.gva.be/sport/voetbal/club-brugge-voor-het-eerst-echt-gevaarlijk-lemarechal-knalt-naast-doel-van-anderlecht-keeper-coosemans/164254093.html",
+          "source": "GVA"
+        },
+        {
+          "title": "RUSTANALYSE. “Terechte voorsprong voor Club, bij Anderlecht moet het beter”",
+          "url": "https://www.nieuwsblad.be/sport/voetbal/rustanalyse.-terechte-voorsprong-voor-club-bij-anderlecht-moet-het-beter/164253408.html",
+          "source": "Nieuwsblad"
         }
       ]
     },
@@ -29,108 +73,46 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Eredivisie | Feyenoord leidt dankzij flits Hadj Moussa en betwiste penalty",
-          "url": "https://www.nu.nl/voetbal/6415880/eredivisie-feyenoord-leidt-dankzij-flits-hadj-moussa-en-betwiste-penalty.html",
+          "title": "Feyenoord verliest in spektakelstuk bij Heerenveen en zet koppositie op het spel",
+          "url": "https://www.nu.nl/voetbal/6415885/feyenoord-verliest-in-spektakelstuk-bij-heerenveen-en-zet-koppositie-op-het-spel.html",
           "source": "NU"
+        },
+        {
+          "title": "Van Bronckhorst trekt conclusie: \"Vandaag hebben wij niet de juiste keuzes gemaakt\"",
+          "url": "https://feyenoord.headliner.nl/item/van-bronckhorst-trekt-conclusie-vandaag-hebben-wij-niet-de-juiste-keuzes-gemaakt-fr12-77309",
+          "source": "Headliner.nl"
         },
         {
           "title": "LIVE: Nacho Ferri vergroot de voorsprong in Heerenveen (0-2)",
           "url": "https://www.rijnmond.nl/nieuws/2279542/live-nacho-ferri-vergroot-de-voorsprong-in-heerenveen-0-2",
           "source": "Rijnmond"
-        },
-        {
-          "title": "Hadj Moussa werkt aangepaste warming-up af: Van Bronckhorst geeft uitleg",
-          "url": "https://1908.nl/artikelen/hadj-moussa-werkt-aangepaste-warming-up-af-van-bronckhorst-geeft-uitleg",
-          "source": "1908.nl"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "club brugge vs anderlecht",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "LIVE. Twee snelle gele kaarten voor Club Brugge: zowel Spileers als Leko op de bon in bitsige openingsfase",
-          "url": "https://www.hln.be/jupiler-pro-league/live-twee-snelle-gele-kaarten-voor-club-brugge-zowel-spileers-als-leko-op-de-bon-in-bitsige-openingsfase~ad78c7c0/",
-          "source": "HLN"
-        },
-        {
-          "title": "Johan Boskamp met vernieuwde moed voor Club - Anderlecht: \"Leuk dat hij aan alles schijt heeft\"",
-          "url": "https://www.voetbalkrant.com/nieuws/2026-11-08/johan-boskamp-met-vernieuwde-moed-voor-club-anderlecht-leuk-dat-hij-aan-alles-schijt-heeft",
-          "source": "Voetbalkrant.com"
-        },
-        {
-          "title": "Club - RSC Anderlecht: de Club Facts",
-          "url": "https://www.clubbrugge.be/nl/news/club-anderlecht-de-club-facts-6",
-          "source": "Club Brugge"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "rennes vs lille",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Le LOSC favori contre Rennes ? L'IA d'Opta n'est pas d'accord sur cet avis",
-          "url": "https://lepetitlillois.com/2026/11/08/ia-opta-croit-pas-stade-rennais-losc/",
-          "source": "Le Petit Lillois"
-        },
-        {
-          "title": "Programme TV Foot : Rennes-Lille à 15h, Lens-Marseille à 20h45",
-          "url": "https://www.webgirondins.com/actualite-autour-des-girondins-programme-tv-foot-rennes-lille-a-15h-lens-marseille-a-20h45-135098",
-          "source": "WebGirondins"
-        },
-        {
-          "title": "Ligue 1 : Sans Estéban Lepaul, l'attaque est-elle le point faible du Stade Rennais",
-          "url": "https://www.flashscore.fr/actualites/sans-esteban-lepaul-l-attaque-est-elle-le-point-faible-du-stade-rennais/ldPOvlqA/",
-          "source": "Flashscore.fr"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "real sociedad vs rayo vallecano",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Real Sociedad-Rayo Vallecano: La Real buscará seguir afianzándose en Europa",
-          "url": "https://onefootball.com/es/noticias/real-sociedad-rayo-vallecano-la-real-buscara-seguir-afianzandose-en-europa-43745072",
-          "source": "OneFootball"
-        },
-        {
-          "title": "Consolidar situación",
-          "url": "https://www.realsociedad.eus/es/noticias/detalle/consolidar-situacion",
-          "source": "Real Sociedad"
-        },
-        {
-          "title": "Un recuerdo amargo y dos victorias seguidas para el Rayo en Anoeta",
-          "url": "https://unionrayo.es/un-recuerdo-amargo-y-dos-victorias-seguidas-para-el-rayo-en-anoeta/",
-          "source": "Unión Rayo"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "genoa vs milan",
+      "title": "gor mahia fc vs nairobi united",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "aston villa vs man utd",
+      "title": "ipswich town vs bournemouth",
       "why": "unsafe: 'Bet'"
     },
     {
-      "title": "heerenveen vs feyenoord",
+      "title": "monza vs atalanta",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "napoli vs lazio prediction",
+      "title": "lazio fc",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "villarreal vs getafe",
+      "title": "twente vs ajax",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "genoa vs milan",
       "why": "unsafe: 'Betting'"
     }
   ],

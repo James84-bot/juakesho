@@ -1,0 +1,323 @@
+{
+  "collection": "2026-W46",
+  "created": "2026-11-08T17:15:53.413545+03:00",
+  "posts": [
+    {
+      "id": "2026-w46-d1-money",
+      "template": "money",
+      "lane": "hustle",
+      "series": "The Real Price",
+      "message": "EPRA reviews fuel prices on November 14 to determine petrol, diesel and kerosene costs.",
+      "action": "Check the EPRA price review on November 14 before you fill your tank.",
+      "photo_query": "Kenyan fuel station pump Nairobi",
+      "source": "People Daily, 2026-11-08",
+      "hook": "New fuel prices coming",
+      "number": "November 14",
+      "unit": "EPRA fuel review date",
+      "what": "EPRA sets new caps for petrol, diesel and kerosene prices across Kenya.",
+      "why": "Transport and fuel costs shape every household budget and business expense.",
+      "check": "Check the official EPRA website or fuel pump price boards.",
+      "beats": [
+        "EPRA reviews fuel prices on November 14.",
+        "Petrol, diesel and kerosene caps affect transport costs.",
+        "Every business and household budget waits for the numbers.",
+        "EPRA must publish the full cost breakdown before the November 14 cap."
+      ],
+      "caption": "Fuel prices change on November 14 when EPRA releases the new review. Check the pump before you travel.\n\nWhat did you pay for fuel this week? Drop the price below.\n\n#KenyaOnRecord",
+      "bg": "shuka",
+      "publish_at": "2026-11-09T07:30:00+03:00",
+      "angle": "real_price",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Shifts transport fares and retail prices for every household across Kenya.",
+      "who": "Energy CS Opiyo Wandayi",
+      "where": "National",
+      "when": "14 Nov 2026",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Kenya fuel prices: Will EPRA reduce petrol, diesel and kerosene prices on November 14?",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQb2szdEtCVjkySmxCdWZ5cjY1TDkxdWIzNUNpWGlBYkNOcFNCNVJBVXV1V1VvSENFUTVjekNsNERXaTQtYV8ycTI3NmVDRV8zalRaYWplRGRJNjlZX0hQNmVPTEdaVHd5R2xsLWxPcDRhdHJRdkVmcVNMTGVpY3RWVDFzZnNjaWJBVmZFa3lvSTE4bmpzcG5FWUMtWEZieThqdVVoalpycDVtajFUelRwdXVOS2lrTzA3UlFyUA?oc=5",
+          "published": "2026-11-08"
+        }
+      ],
+      "material": {
+        "kind": "price",
+        "key": "news:https://news.google.com/rss/articles/CBMivAFBVV95cUxQb2szdEtCVjkySmxCdWZ5cjY1TDkxdWIzNUNpWGlBYkNOcFNCNVJBVXV1V1VvSENFUTVjekNsNERXaTQtYV8ycTI3NmVDRV8zalRaYWplRGRJNjlZX0hQNmVPTEdaVHd5R2xsLWxPcDRhdHJRdkVmcVNMTGVpY3RWVDFzZnNjaWJBVmZFa3lvSTE4bmpzcG5FWUMtWEZieThqdVVoalpycDVtajFUelRwdXVOS2lrTzA3UlFyUA?oc=5",
+        "title": "Kenya fuel prices: Will EPRA reduce petrol, diesel and kerosene prices on November 14?",
+        "outlet": "People Daily",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQb2szdEtCVjkySmxCdWZ5cjY1TDkxdWIzNUNpWGlBYkNOcFNCNVJBVXV1V1VvSENFUTVjekNsNERXaTQtYV8ycTI3NmVDRV8zalRaYWplRGRJNjlZX0hQNmVPTEdaVHd5R2xsLWxPcDRhdHJRdkVmcVNMTGVpY3RWVDFzZnNjaWJBVmZFa3lvSTE4bmpzcG5FWUMtWEZieThqdVVoalpycDVtajFUelRwdXVOS2lrTzA3UlFyUA?oc=5",
+        "published": "2026-11-08"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "possible named person(s): Nairobi New, Opiyo Wandayi National. Civic posts target systems, not people."
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "avg": 8.3,
+        "note": "The action beat has a concrete demand on EPRA for the cost breakdown."
+      },
+      "drafted_at": "2026-11-08T17:34:15.990933+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d1-money-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127837-opiyo-wandayi-slams-gachagua-over-claims-govt-plans-hike-pump-prices",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Opiyo Wandayi Addresses Gachagua's Explosive Claims on Fuel Prices"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-d1-money-broll.mp4",
+      "broll_credit": "Footage: harshpunnoose123 / Pixabay",
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 906
+    },
+    {
+      "id": "2026-w46-d2-kenya",
+      "template": "kenya",
+      "lane": "diaspora",
+      "series": "Kenya at its best",
+      "place": "Mount Kenya",
+      "line": "At *5,199 metres*, Mount Kenya stands as the second highest peak in Africa.",
+      "fact": "At 5,199 metres, Mount Kenya is the second highest peak in Africa, says UNESCO.",
+      "source": "https://whc.unesco.org/en/list/800",
+      "photo_query": "Mount Kenya peak Batian",
+      "message": "Mount Kenya reaches 5,199 metres as Africa's second highest peak.",
+      "action": "Save this post and plan your next hike to Mount Kenya.",
+      "beats": [
+        "Mount Kenya reaches 5,199 metres in altitude.",
+        "It stands as the *second* highest peak across Africa.",
+        "UNESCO lists it among our most protected natural sites.",
+        "You can tag a friend to plan your next climb."
+      ],
+      "caption": "Mount Kenya at 5,199 metres. Africa's second highest peak, protected by UNESCO. Save this for your next weekend trip.\n\nWho would you climb this mountain with? Tag them below.\n\n#KenyaAtItsBest #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-10T12:45:00+03:00",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Shows our global natural heritage and boosts tourism across the country.",
+      "who": "UNESCO",
+      "where": "Mount Kenya",
+      "when": "10 Nov 2026",
+      "source_links": [
+        {
+          "outlet": "UNESCO World Heritage Centre",
+          "title": "Mount Kenya National Park: At 5,199 metres, Mount Kenya is the second highest peak in Africa, says UNESCO.",
+          "link": "https://whc.unesco.org/en/list/800",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:mount-kenya",
+        "id": "mount-kenya",
+        "series": "Kenya at its best",
+        "place": "Mount Kenya",
+        "name": "Mount Kenya National Park",
+        "fact": "At 5,199 metres, Mount Kenya is the second highest peak in Africa, says UNESCO.",
+        "source": "https://whc.unesco.org/en/list/800",
+        "outlet": "UNESCO World Heritage Centre",
+        "photo_query": "Mount Kenya peak Batian"
+      },
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 7,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 8,
+        "demand": 5,
+        "action": 8,
+        "fair": 9,
+        "impact": 7,
+        "avg": 8.1,
+        "note": "Evergreen showcase post correctly scored on whether people would save and share with pride."
+      },
+      "drafted_at": "2026-11-08T17:34:15.990941+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d2-kenya-photo.jpg",
+      "photo_credit": "Photo: VickyOmondi / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Top_of_Mount_Kenya.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: VickyOmondi / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Space Jazz\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 907,
+      "auto": true,
+      "decided_at": "2026-11-08T17:40:02.190408+03:00"
+    },
+    {
+      "id": "2026-w46-d3-promise",
+      "template": "promise",
+      "bg": "usiku",
+      "lane": "hustle",
+      "publish_at": "2026-11-11T18:30:00+03:00",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "The Promise Tracker names a real promise and says it was not kept: the promise and its source must be researched by a person, never invented by the writer to fit a headline"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-11-08T17:34:15.990946+03:00"
+    },
+    {
+      "id": "2026-w46-d4-glasspoll",
+      "template": "glasspoll",
+      "lane": "everyone",
+      "series": "Guess the Price",
+      "message": "Talanta: Bayern versus Ajax regular tickets to cost Sh2,500.",
+      "action": "Vote A or B in the comments below.",
+      "photo_query": "Talanta stadium Nairobi",
+      "source": "Daily Nation, 2026-11-05",
+      "hook": "Match ticket prices",
+      "question": "How much are regular tickets?",
+      "cta": "Comment A or B",
+      "options": [
+        "A: Sh1,500",
+        "B: Sh2,500"
+      ],
+      "beats": [
+        "Bayern versus Ajax regular tickets are on sale now.",
+        "Choose between option A at Sh1,500 and option B.",
+        "The answer is B: Sh2,500 for regular tickets in Nairobi."
+      ],
+      "caption": "Guess the price: How much do regular tickets for Bayern versus Ajax at Talanta cost? Vote A or B in the comments.\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-12T19:30:00+03:00",
+      "size": "story",
+      "angle": "price_quiz",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Sets ticket costs for sports fans attending international matches in Nairobi.",
+      "who": "Sports Cabinet Secretary",
+      "where": "Nairobi",
+      "when": "05 Nov 2026",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Talanta: Bayern versus Ajax regular tickets to cost Sh2,500",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHpsNThFNzllWFpVa3kzRzhEWi1XdGlMa2ZDZzgyZFNXcW5oS2VVUVNzV2NBNzdjVUN2M3NZYk5FeWRFR3RteGtZUjU5UXpoWW15OTZnbWxxYUZsaGJNWDBnRnlWQUJEUVhOWHNac2p5WlM3R213WkYtWkRUcEhwenIxeGFFek42ejJJdmt2T2tWM0l6WXVpcWh1V2RZTlhyWHZyTUlYa3htQkZzb1U4?oc=5",
+          "published": "2026-11-05"
+        }
+      ],
+      "material": {
+        "kind": "price_figure",
+        "key": "news:https://news.google.com/rss/articles/CBMirwFBVV95cUxObHpsNThFNzllWFpVa3kzRzhEWi1XdGlMa2ZDZzgyZFNXcW5oS2VVUVNzV2NBNzdjVUN2M3NZYk5FeWRFR3RteGtZUjU5UXpoWW15OTZnbWxxYUZsaGJNWDBnRnlWQUJEUVhOWHNac2p5WlM3R213WkYtWkRUcEhwenIxeGFFek42ejJJdmt2T2tWM0l6WXVpcWh1V2RZTlhyWHZyTUlYa3htQkZzb1U4?oc=5",
+        "title": "Talanta: Bayern versus Ajax regular tickets to cost Sh2,500",
+        "outlet": "Daily Nation",
+        "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObHpsNThFNzllWFpVa3kzRzhEWi1XdGlMa2ZDZzgyZFNXcW5oS2VVUVNzV2NBNzdjVUN2M3NZYk5FeWRFR3RteGtZUjU5UXpoWW15OTZnbWxxYUZsaGJNWDBnRnlWQUJEUVhOWHNac2p5WlM3R213WkYtWkRUcEhwenIxeGFFek42ejJJdmt2T2tWM0l6WXVpcWh1V2RZTlhyWHZyTUlYa3htQkZzb1U4?oc=5",
+        "published": "2026-11-05"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 9,
+        "fresh": 7,
+        "voice": 7,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 6,
+        "action": 8,
+        "fair": 9,
+        "impact": 6,
+        "avg": 7.5,
+        "note": "Ensure the quiz topic reflects a higher current public search interest."
+      },
+      "drafted_at": "2026-11-08T17:34:15.990944+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d4-glasspoll-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/128966-bayern-munich-ajax-play-talanta-stadium-opening-january-5-ruto-announces",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d4-glasspoll-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Bayern Munich, Ajax to Play at Talanta Stadium Opening, Ruto Announces"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Bayern vs Ajax Match in Kenya Hits First Roadblock as Petitioners Move to Court"
+        }
+      ],
+      "track_credit": "Music: \"Aerosol of my Love\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 908
+    },
+    {
+      "id": "2026-w46-d5-straight",
+      "template": "straight",
+      "bg": "usiku",
+      "lane": "campus",
+      "publish_at": "2026-11-13T17:00:00+03:00",
+      "status": "planned",
+      "angle": "myth",
+      "series": "Myth or Fact"
+    },
+    {
+      "id": "2026-w46-d6-kenya",
+      "template": "kenya",
+      "bg": "usiku",
+      "lane": "hustle",
+      "publish_at": "2026-11-14T11:00:00+03:00",
+      "status": "planned",
+      "series": "Built in Kenya"
+    },
+    {
+      "id": "2026-w46-d7-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-15T18:00:00+03:00",
+      "status": "planned",
+      "size": "story"
+    }
+  ],
+  "scripts": {
+    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni wako, na leo tunaangazia mambo matatu mazito ya wiki hii.\n\nTunaanza na mfuko wako. Ijumaa hii, tarehe kumi na nne ya mwezi huu wa Novemba, EPRA inatazamiwa kutangaza bei mpya za mafuta. Petroli, diseli na mafuta ya taa yanapanda ama yanashuka? Tunajua bei hizi zikicheza juu, kila kitu sokoni kinapandishwa. Kuwa mwangalifu na bajeti yako ya usafiri na biashara wiki hii.\n\nPili, habari njema kutoka kwa mandhari yetu. Je, ulijua kwamba mlima wetu mtukufu, Mount Kenya, unasimama kwa urefu wa mita elfu tano mia moja tisini na tisa juu ya usawa wa bahari? Hiyo inaufanya kuwa mlima wa pili kwa urefu barani Afrika nzima. Kitu cha kujivunia kama Wakenya.\n\nNa mwisho, kwa wale wapenzi wa mpira wa miguu, tiketi za mechi ya Bayern Munich na Ajax itakayochezwa hapa hapa uwanjani Talanta zitauzwa kwa shilingi elfu mbili mia tano kwa tiketi za kawaida. Anza kujipanga mapema kama unataka kushuhudia soka ya kimataifa live.\n\n***\n\n*Kwa ufupi:* Siku ya Ijumaa tarehe 14, EPRA inatathmini bei mpya za mafuta. Kumbuka mlima wetu wa Kenya ndio wa pili kwa urefu barani Afrika kwa mita 5,199, na tiketi za kawaida za mechi ya Bayern dhidi ya Ajax uwanjani Talanta ni Sh2,500. Tuwe macho na pesa zetu.",
+    "voice_note": "Wadau, mambo vipi? Wiki hii ina mambo mengi mazito. Kwanza kabisa, Ijumaa hii tarehe 14 Novemba, EPRA wanatoa bei mpya za mafuta—kuwa makini na bajeti yako kwa sababu bei za petroli, diseli na kerosene zinaweza kubadilika. Pili, kwa mashabiki wa soka, tiketi za kawaida za mechi ya Bayern Munich na Ajax hapo uwanjani Talanta zimetangazwa kuwa Sh2,500 pekee. Na mwisho, tuwe na kiburi cha nchi yetu; Mount Kenya bado ndio mlima wa pili kwa urefu barani Afrika ukiwa na mita 5,199. Panga pesa zako vizuri wiki hii, usiibiwe!",
+    "sms": "Usiibiwe wiki hii: Fuatilia tangazo la EPRA tarehe 14 kuhusu bei mpya za mafuta. Bajeti yako ya usafiri izingatie mabadiliko hayo. Weka akiba!",
+    "reels": "Wakenya wenzangu, wiki hii ina mambo matatu ya kukumbuka! Tarehe 14 Novemba, EPRA wanatathmini bei mpya za petroli, diseli na mafuta ya taa—panga mfuko wako mapema usije ukashangaa. Pili, kama unapenda soka, weka kando shilingi elfu mbili mia tano kwa ajili ya tiketi za kawaida za Bayern dhidi ya Ajax hapo Talanta Stadium. Na mwisho kabisa, kumbuka mlima wetu wa kipekee, Mount Kenya, unasimama kwa urefu wa mita 5,199 kama mlima wa pili kwa urefu barani Afrika. Kaa chonjo na pesa zako, na usisahau kufuatilia Kenya on Record kwa ukweli mtupu!"
+  },
+  "spend_usd": 0.0
+}

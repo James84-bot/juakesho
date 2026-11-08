@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T13:45:35.513239+03:00",
+  "updated": "2026-11-08T17:15:38.388154+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -583,12 +583,12 @@
       "lane": "everyone",
       "score": 3.1,
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "reach": 18,
+      "reach": 19,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.8
+      "avg_watch_s": 4.6
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -628,6 +628,19 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 1.9
+    },
+    {
+      "id": "2026-w45-hot-1107m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 2.8,
+      "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
+      "reach": 57,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.5
     },
     {
       "id": "2026-w45-d5-straight",
@@ -734,7 +747,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 501,
+      "views": 502,
       "likes": 2,
       "comments": 0
     },
@@ -742,7 +755,7 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "views": 343,
+      "views": 345,
       "likes": 1,
       "comments": 0
     },
@@ -750,7 +763,7 @@
       "id": "2026-w45-hot-1106m-r2",
       "series": "sauti",
       "opening": "Employers must remit employee levies by the 9th day of each month.",
-      "views": 224,
+      "views": 226,
       "likes": 0,
       "comments": 0
     },
@@ -766,7 +779,7 @@
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "views": 212,
+      "views": 220,
       "likes": 2,
       "comments": 0
     },
@@ -792,6 +805,14 @@
       "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
       "views": 131,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w45-hot-1107m",
+      "series": "sauti",
+      "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
+      "views": 75,
+      "likes": 0,
       "comments": 0
     },
     {
@@ -822,7 +843,7 @@
       "id": "2026-w44-hot-1101m",
       "series": "sauti",
       "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "views": 35,
+      "views": 36,
       "likes": 1,
       "comments": 0
     },
