@@ -4,7 +4,7 @@
   "note": "News-only brand: no weekly planned slots (the news editions in brand.json make the posts).",
   "slots": [],
   "lanes": {
-    "explorers": {
+    "everyone": {
       "who": "Kenyans and visitors who love Kenya's places",
       "voice": "Warm, plain Kenyan English: the place, what makes it special, one fact, how to get there."
     }

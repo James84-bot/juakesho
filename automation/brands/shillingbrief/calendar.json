@@ -4,7 +4,7 @@
   "note": "News-only brand: no weekly planned slots (the news editions in brand.json make the posts).",
   "slots": [],
   "lanes": {
-    "earners": {
+    "everyone": {
       "who": "Kenyans managing their own money: salaried, side-hustlers, small savers",
       "voice": "Clear, practical Kenyan English: the rate, the price, the deadline, what it costs you, in shillings."
     }

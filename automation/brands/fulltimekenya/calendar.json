@@ -4,7 +4,7 @@
   "note": "News-only brand: no weekly planned slots (the news editions in brand.json make the posts).",
   "slots": [],
   "lanes": {
-    "fans": {
+    "everyone": {
       "who": "Kenyan sport fans: football, athletics, rugby, the Premier League crowd",
       "voice": "Fast, plain Kenyan English the way fans talk about a result: the score, the name, the number, then the question."
     }

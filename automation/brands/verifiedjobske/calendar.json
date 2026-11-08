@@ -4,7 +4,7 @@
   "note": "News-only brand: no weekly planned slots (the news editions in brand.json make the posts).",
   "slots": [],
   "lanes": {
-    "seekers": {
+    "everyone": {
       "who": "Kenyan job seekers, graduates and students",
       "voice": "Plain, careful Kenyan English: who is hiring, the deadline, how to apply officially, and never pay anyone."
     }
