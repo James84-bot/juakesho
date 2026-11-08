@@ -2325,7 +2325,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2523,6 +2523,11 @@ def _main(argv: list[str] | None = None) -> int:
         vids = (radar._load(72) or {}).get("catalog") or []
         results = [f"{v['channel']}: {tvclip.check(v['url'])}" for v in vids[:3]]
         print("::notice title=tvclipcheck::" + " | ".join(results or ["no TV clips in the radar"]))
+        return 0
+    if a.command == "sourcecheck":   # can this runner read the official pages the brands are built on?
+        import sourcecheck
+        for line in sourcecheck.run():
+            print(f"::notice::{line}")
         return 0
     if a.command == "musicfetch":   # licensed instrumental tracks into content/music (see musiclib.py)
         import musiclib
