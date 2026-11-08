@@ -959,9 +959,9 @@ GEMINI_SEE_STRONG = "gemini-flash-latest"   # a second, stronger look before a "
 
 
 def look_at(image: bytes, ask: str, strong: bool = False) -> str:
-    """One picture and one question to a model that can see, at temperature 0 so the same picture gets the same
-    answer: the cheap one (Gemini Flash-Lite on the free tier, else Claude Haiku), or with `strong` the better one
-    (Gemini Flash, else the writer's Claude model). The picture goes as a JPEG of at most 1024 px.
+    """One picture and one question to a model that can see, at temperature 0 where the model allows it: the cheap
+    one (Gemini Flash-Lite on the free tier, else Claude Haiku), or with `strong` the better one (the writer's Claude
+    model, else Gemini Flash). The picture goes as a JPEG of at most 1024 px.
     Raises RuntimeError when no model could look."""
     import base64
     import io
@@ -973,8 +973,11 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
         im.save(buf, "JPEG", quality=85)
     b64 = base64.b64encode(buf.getvalue()).decode()
     errors = []
-    if os.environ.get("GEMINI_API_KEY", "").strip() and SPEND["calls"] < GEMINI_LIMITS["calls"] \
-            and (os.environ.get("JUA_PROVIDER") or "").strip().lower() != "anthropic":
+
+    def gemini() -> str | None:
+        if not os.environ.get("GEMINI_API_KEY", "").strip() or SPEND["calls"] >= GEMINI_LIMITS["calls"] \
+                or (os.environ.get("JUA_PROVIDER") or "").strip().lower() == "anthropic":
+            return None
         body = {"contents": [{"role": "user", "parts": [{"inlineData": {"mimeType": "image/jpeg", "data": b64}},
                                                         {"text": ask}]}],
                 "generationConfig": {"maxOutputTokens": 400 + GEMINI_THINK_ROOM, "temperature": 0}}
@@ -982,15 +985,30 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
             return _look_gemini(body, GEMINI_SEE_STRONG if strong else GEMINI_CRITIC)
         except RuntimeError as e:
             errors.append(str(e)[:400])
-    if os.environ.get("ANTHROPIC_API_KEY", "").strip():
-        body = {"model": model_id() if strong else CRITIC_MODEL, "max_tokens": 400, "temperature": 0,
+            return None
+
+    def claude() -> str | None:
+        if not os.environ.get("ANTHROPIC_API_KEY", "").strip():
+            return None
+        model = model_id() if strong else CRITIC_MODEL
+        body = {"model": model, "max_tokens": 400,
                 "messages": [{"role": "user", "content": [
                     {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": b64}},
                     {"type": "text", "text": ask}]}]}
+        if "haiku" in model:   # newer models refuse a temperature ("deprecated for this model", 8 Nov)
+            body["temperature"] = 0
         try:
             return _look_anthropic(body)
         except RuntimeError as e:
             errors.append(str(e)[:400])
+            return None
+
+    # the cheap look runs on the free tier first; the strong look (rare: only to confirm a "yes") goes to Claude
+    # first, because Gemini Flash took 5.5 minutes for one small picture on 8 Nov
+    for attempt in ((claude, gemini) if strong else (gemini, claude)):
+        got = attempt()
+        if got is not None:
+            return got
     raise RuntimeError("no model could look at the picture: " + ("; ".join(errors) or "no key set"))
 
 

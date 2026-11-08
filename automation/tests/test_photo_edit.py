@@ -123,6 +123,22 @@ class LookAt(unittest.TestCase):
         small = Image.open(io.BytesIO(base64.b64decode(claude["messages"][0]["content"][0]["source"]["data"])))
         self.assertLessEqual(max(small.size), 1024)
 
+    def test_the_strong_look_asks_claude_first_without_a_temperature(self):
+        sent = []
+
+        def fake(req, timeout=0):
+            sent.append((req.full_url, json.loads(req.data)))
+            return self.Reply({"content": [{"type": "text", "text": '{"edited": true}'}], "usage": {}})
+
+        env = {"GEMINI_API_KEY": "g", "ANTHROPIC_API_KEY": "a", "JUA_PROVIDER": "", "JUA_MODEL": "claude-sonnet-5"}
+        with mock.patch.dict(draft.os.environ, env), mock.patch.object(draft.urllib.request, "urlopen", fake), \
+                mock.patch.dict(draft.SPEND, {"calls": 0, "usd": 0.0}):
+            draft.look_at(jpeg(), "edited?", strong=True)
+        self.assertEqual(len(sent), 1)
+        self.assertIn("anthropic", sent[0][0])
+        self.assertEqual(sent[0][1]["model"], "claude-sonnet-5")
+        self.assertNotIn("temperature", sent[0][1])   # "deprecated for this model" (8 Nov)
+
     def test_no_key_raises(self):
         with mock.patch.dict(draft.os.environ, {"GEMINI_API_KEY": "", "ANTHROPIC_API_KEY": ""}):
             with self.assertRaises(RuntimeError):
