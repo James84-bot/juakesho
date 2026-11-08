@@ -1,0 +1,6 @@
+{
+  "note": "auto_approve is OFF for this brand: every job post comes to its Telegram bot first, because a fake advert passed on as real would break the brand's one promise.",
+  "auto_approve": false,
+  "news_photos": true,
+  "tiktok_packages": true
+}

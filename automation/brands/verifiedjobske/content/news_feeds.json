@@ -1,0 +1,30 @@
+{
+  "note": "Verified Jobs Kenya: official recruitment, opportunities and deadlines as newsrooms report them, plus warnings about fake job adverts. A post is made only when the official body and its own site are named.",
+  "feeds": [
+    {
+      "name": "Google News: government recruitment",
+      "topic": "jobs_public",
+      "url": "https://news.google.com/rss/search?q=Kenya+%28recruitment+OR+vacancies+OR+%22is+hiring%22+OR+%22job+opportunities%22%29+%28%22Public+Service+Commission%22+OR+PSC+OR+county+OR+ministry+OR+KDF+OR+%22National+Police+Service%22+OR+TSC+OR+KenGen+OR+%22Kenya+Power%22+OR+KRA%29+when%3A3d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: internships and graduate programmes",
+      "topic": "jobs_interns",
+      "url": "https://news.google.com/rss/search?q=Kenya+%28internship+OR+%22graduate+trainee%22+OR+%22public+service+internship%22+OR+apprenticeship%29+applications+when%3A7d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: scholarships, HELB and KUCCPS",
+      "topic": "jobs_education",
+      "url": "https://news.google.com/rss/search?q=Kenya+%28scholarship+OR+HELB+OR+KUCCPS+OR+bursary+OR+%22student+loans%22%29+deadline+OR+applications+when%3A7d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: jobs abroad (official)",
+      "topic": "jobs_abroad",
+      "url": "https://news.google.com/rss/search?q=Kenya+%22jobs+abroad%22+OR+%22labour+mobility%22+OR+%22National+Employment+Authority%22+OR+%22overseas+jobs%22+when%3A7d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    },
+    {
+      "name": "Google News: fake job adverts",
+      "topic": "jobs_scams",
+      "url": "https://news.google.com/rss/search?q=Kenya+%28fake+OR+bogus+OR+fraudulent%29+%28recruitment+OR+%22job+advert%22+OR+%22job+offer%22%29+warns+when%3A14d&hl=en-KE&gl=KE&ceid=KE%3Aen"
+    }
+  ]
+}

@@ -122,5 +122,32 @@
       "950": "#001305"
     }
   },
-  "palette_note": "The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (yellow reads as UDA, orange as ODM). Ink carries 90% of every design; red is the signature and the alarm; green means true and kept."
+  "palette_note": "The colours of the Kenyan flag: black, white, red, green. They belong to every Kenyan and to no party (yellow reads as UDA, orange as ODM). Ink carries 90% of every design; red is the signature and the alarm; green means true and kept.",
+  "file_photos": false,
+  "breaking": false,
+  "editions": {
+    "morning": {
+      "time": [
+        7,
+        0
+      ],
+      "suffix": "m",
+      "beat": "jobs"
+    },
+    "evening": {
+      "time": [
+        17,
+        30
+      ],
+      "suffix": "e",
+      "beat": "jobs"
+    }
+  },
+  "hot_kickers": {
+    "jobs": "Verified"
+  },
+  "hot_briefs": {
+    "jobs": "Today's post: one real opportunity or warning for Kenyan job seekers and students, from the headlines in THIS WEEK IN KENYA, with its id in `source`. Only: a recruitment, internship, graduate programme, scholarship, HELB or KUCCPS window announced by an official body (the Public Service Commission, a county public service board, a ministry, a state corporation, KDF, the National Police Service, TSC, a public university, the National Employment Authority); or an official warning about a fake job advert or recruitment scam. The post names the body, what is offered, who can apply, the closing date and the official website to apply on, all exactly as the headline or the body's own notice states. If the official site or the closing date is not stated, say \"check the official site\" and never guess one. Never a private recruiter, an agency that charges, or a job abroad that is not from the National Employment Authority. Pick a different story from the ones already covered today."
+  },
+  "critic_note": "THIS IS A JOBS AND OPPORTUNITIES PAGE (Verified Jobs Kenya): score `impact` on whether a job seeker learns exactly what is offered, who can apply, by when and on which official site; `fair` on whether every detail is stated by the official body; anything that could be a fake advert, a fee, or a private agency scores 2 on `fair`."
 }
