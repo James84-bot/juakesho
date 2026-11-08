@@ -63,11 +63,12 @@ def _symbol(sym: str, x: float, y: float, w: float, h: float, ink: str) -> str:
         pts = [(x + w * 0.3, y + h * 0.36), (x + w * 0.45, y + h * 0.5), (x + w * 0.72, y + h * 0.22)]
         return (f'<path d="M{pts[0][0]:.1f},{pts[0][1]:.1f} L{pts[1][0]:.1f},{pts[1][1]:.1f} L{pts[2][0]:.1f},{pts[2][1]:.1f}" '
                 f'fill="none" stroke="{ink}" stroke-width="{w * 0.11:.1f}" stroke-linecap="round" stroke-linejoin="round"/>')
-    if sym == "peak":   # Mount Kenya: a twin summit with snow, as a single shape
-        b, t = y + h * 0.56, y + h * 0.17
-        d = (f"M{x + w * 0.2:.1f},{b:.1f} L{x + w * 0.44:.1f},{t + h * 0.06:.1f} L{x + w * 0.5:.1f},{t + h * 0.12:.1f} "
-             f"L{x + w * 0.56:.1f},{t:.1f} L{x + w * 0.8:.1f},{b:.1f} Z")
-        return f'<path d="{d}" fill="{ink}"/>'
+    if sym == "peak":   # Mount Kenya: Batian and Nelion, the jagged twin summit, as one white shape
+        bx = lambda u: x + w * u
+        by = lambda v: y + h * v
+        pts = [(0.16, 0.56), (0.36, 0.33), (0.41, 0.37), (0.5, 0.16), (0.555, 0.25), (0.6, 0.21), (0.84, 0.56)]
+        d = "M" + " L".join(f"{bx(u):.1f},{by(v):.1f}" for u, v in pts) + " Z"
+        return f'<path d="{d}" fill="{ink}" stroke="{ink}" stroke-width="{w * 0.02:.1f}" stroke-linejoin="round"/>'
     cap = h * 0.26   # letters
     d, end = text_outline(sym, cap, 0, 0, track=-0.02)
     d, _ = text_outline(sym, cap, x + (w - end) / 2, y + h * 0.2 + cap, track=-0.02)

@@ -1,0 +1,37 @@
+{
+  "timezone": "Africa/Nairobi",
+  "utc_offset": "+03:00",
+  "note": "News-only brand: no weekly planned slots (the news editions in brand.json make the posts).",
+  "slots": [],
+  "lanes": {
+    "explorers": {
+      "who": "Kenyans and visitors who love Kenya's places",
+      "voice": "Warm, plain Kenyan English: the place, what makes it special, one fact, how to get there."
+    }
+  },
+  "channels": [
+    "instagram",
+    "facebook",
+    "tiktok_reels"
+  ],
+  "industries": [],
+  "reel_templates": [
+    "sauti",
+    "hack",
+    "decode",
+    "cap",
+    "still",
+    "money",
+    "spotlight",
+    "build",
+    "usiibiwe",
+    "africa",
+    "makanga",
+    "straight",
+    "promise",
+    "kumbuka",
+    "scorecard",
+    "glasspoll",
+    "kenya"
+  ]
+}

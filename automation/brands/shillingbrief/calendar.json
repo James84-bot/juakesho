@@ -1,0 +1,37 @@
+{
+  "timezone": "Africa/Nairobi",
+  "utc_offset": "+03:00",
+  "note": "News-only brand: no weekly planned slots (the news editions in brand.json make the posts).",
+  "slots": [],
+  "lanes": {
+    "earners": {
+      "who": "Kenyans managing their own money: salaried, side-hustlers, small savers",
+      "voice": "Clear, practical Kenyan English: the rate, the price, the deadline, what it costs you, in shillings."
+    }
+  },
+  "channels": [
+    "instagram",
+    "facebook",
+    "tiktok_reels"
+  ],
+  "industries": [],
+  "reel_templates": [
+    "sauti",
+    "hack",
+    "decode",
+    "cap",
+    "still",
+    "money",
+    "spotlight",
+    "build",
+    "usiibiwe",
+    "africa",
+    "makanga",
+    "straight",
+    "promise",
+    "kumbuka",
+    "scorecard",
+    "glasspoll",
+    "kenya"
+  ]
+}

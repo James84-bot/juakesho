@@ -2338,7 +2338,8 @@ def _main(argv: list[str] | None = None) -> int:
     ap.add_argument("--post", help="rephoto: only this post id (also an approved one that has not gone out)")
     a = ap.parse_args(argv)
     label = a.week or current_week_label()
-    if a.command in {"week", "plan", "tracker", "renew"} and not (brands.HOME / "calendar.json").exists():
+    if a.command in {"week", "plan", "tracker", "renew"} and not brands.MAIN and not json.loads(
+            (brands.HOME / "calendar.json").read_text(encoding="utf-8")).get("slots"):
         log(f"{BRAND.get('name')} has no weekly calendar: nothing to plan")   # a brand that only posts news
         return 0
 
