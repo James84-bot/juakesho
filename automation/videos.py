@@ -361,6 +361,9 @@ def footage_problem(clip: Path, subject: str, words: list[str], times: tuple = B
     lights and wheels for faces (8 Nov: an empty SPC station at dusk, flagged at 3 moments). When no model can
     look, the clip is not used: footage nobody checked never goes behind our words."""
     import draft
+    length = _duration(clip)
+    if length:   # a clip shorter than 20 s is looped by the composer: check the moments it actually has
+        times = tuple(t for t in times if t <= length - 0.3) or (length / 2,)
     frames = [(t, _grab(clip, t)) for t in times]
     if any(not data for _, data in frames):
         return "a moment of the clip could not be checked"

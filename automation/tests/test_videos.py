@@ -295,7 +295,7 @@ class FootageProblem(unittest.TestCase):
         def look(data, ask, strong=False):
             asked.append(data)
             return json.dumps(verdicts.get(data, verdicts["mid"]))
-        with mock.patch.object(videos, "_grab", lambda clip, t: frames[t]), \
+        with mock.patch.object(videos, "_grab", lambda clip, t: frames[t]), mock.patch.object(videos, "_duration", lambda c: 20.0), \
                 mock.patch.object(videos.photos, "faces_ok", lambda data, share=None: data not in {frames[t] for t in flagged}), \
                 mock.patch("draft.look_at", look):
             return videos.footage_problem(Path("c.mp4"), "EPRA reviews fuel prices", ["fuel", "pump"]), asked
@@ -322,5 +322,17 @@ class FootageProblem(unittest.TestCase):
     def test_nobody_could_look_means_no_footage(self):
         def down(data, ask, strong=False):
             raise RuntimeError("no model could look at the picture: no key set")
-        with mock.patch.object(videos, "_grab", lambda clip, t: b"x"), mock.patch("draft.look_at", down):
+        with mock.patch.object(videos, "_grab", lambda clip, t: b"x"), mock.patch.object(videos, "_duration", lambda c: 20.0), \
+                mock.patch("draft.look_at", down):
             self.assertIn("no model could check it", videos.footage_problem(Path("c.mp4"), "s", ["fuel"]))
+
+
+class ShortClips(unittest.TestCase):
+    def test_a_short_clip_is_checked_at_the_moments_it_has(self):
+        asked = []
+        with mock.patch.object(videos, "_duration", lambda c: 14.7), \
+                mock.patch.object(videos, "_grab", lambda clip, t: asked.append(t) or b"f"), \
+                mock.patch.object(videos.photos, "faces_ok", lambda data, share=None: True), \
+                mock.patch("draft.look_at", lambda data, ask, strong=False: '{"shows": true, "good": true, "person": false}'):
+            self.assertEqual(videos.footage_problem(Path("c.mp4"), "fuel", ["fuel"]), "")
+        self.assertEqual(asked, [0.5, 3.0, 6.0, 9.0, 12.0])   # 15 s and 18.5 s are past its end (14.7 s)
