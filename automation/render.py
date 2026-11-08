@@ -439,7 +439,8 @@ def card_size(width: int) -> tuple[int, int]:
 
 def card_fit(path: Path, cw: int, ch: int) -> dict | None:
     """None: the picture fills the card (cropped to 4:3) without being enlarged much. Otherwise the size and place
-    of the whole picture centred in the card, so a small one (700x350) is enlarged 1.3x instead of 2x."""
+    of the whole picture in the card, so a small one (700x350) is enlarged 1.3x instead of 2x: centred across,
+    sitting on the card's bottom edge, so its credit stays right under it and the lines don't move."""
     try:
         from PIL import Image
         with Image.open(path) as im:
@@ -450,7 +451,7 @@ def card_fit(path: Path, cw: int, ch: int) -> dict | None:
         return None
     s = min(cw / w, ch / h)
     fw, fh = round(w * s), round(h * s)
-    return {"w": fw, "h": fh, "x": (cw - fw) // 2, "y": (ch - fh) // 2}
+    return {"w": fw, "h": fh, "x": (cw - fw) // 2, "y": ch - fh}
 
 
 def fills_frame(path: Path, width: int, height: int, zoom: float = 1.1) -> bool:

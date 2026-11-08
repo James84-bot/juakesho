@@ -54,7 +54,7 @@ class Layout(unittest.TestCase):
             Image.new("RGB", (1366, 768)).save(big)
             self.assertIsNone(render.card_fit(big, cw, ch))           # fills the card at 0.9x
             fit = render.card_fit(small, cw, ch)                      # 2x to fill: shown whole at 1.34x
-            self.assertEqual((fit["w"], fit["h"], fit["x"], fit["y"]), (936, 468, 0, 117))
+            self.assertEqual((fit["w"], fit["h"], fit["x"], fit["y"]), (936, 468, 0, 234))
 
     def test_landscape_news_photos_sit_in_the_card_with_their_own_credit(self):
         with tempfile.TemporaryDirectory() as d:
