@@ -1,0 +1,64 @@
+{#- Mtaa Mode frame: 1080x1920, night background, the wordmark at the top. Content sits inside the 9:16 safe zone:
+    clear of the platform's top bar (y < 140), its right-hand buttons (x > 944 from y 1100) and the caption (y > 1560).
+    Static render (motion false) = the finished frame. Motion: CSS animations with fixed delays from mtaa.py, paused
+    and stepped by video.py through window.__seek(t); `ticks` run JS-driven motion (the chat scroll, the countdown). -#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+{{ font_faces }}
+:root {
+  --night: {{ palette.ink['950'] }}; --night-2: {{ palette.ink['900'] }}; --surface: {{ palette.ink['800'] }};
+  --line: {{ palette.ink['700'] }}; --muted: {{ palette.ink['400'] }}; --soft: {{ palette.ink['300'] }};
+  --paper: {{ palette.ink['50'] }}; --lime: {{ palette.lime['300'] }}; --lime-deep: {{ palette.lime['500'] }};
+  --pink: {{ palette.pinki['400'] }}; --pink-soft: {{ palette.pinki['300'] }};
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { background: var(--night); }
+#canvas { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: var(--night); color: var(--paper);
+  font-family: "Inter", system-ui, sans-serif; -webkit-font-smoothing: antialiased;
+  background-image: radial-gradient(rgba(255, 255, 255, .035) 2px, transparent 2.6px); background-size: 40px 40px; }
+.brandbar { position: absolute; left: 0; right: 0; top: 150px; display: flex; justify-content: center; z-index: 3; }
+.brandbar img { height: 46px; }
+.layer { position: absolute; inset: 0; }
+.pill { display: inline-block; padding: 14px 24px 13px; border-radius: 999px; background: var(--surface); color: var(--lime);
+  font: 700 26px/1 "Unbounded"; letter-spacing: .1em; text-transform: uppercase; }
+.src { font: 500 22px/1.3 "Inter"; color: var(--muted); letter-spacing: .01em; }
+{{ ink_css }}
+{% block style %}{% endblock %}
+{% if motion %}
+@keyframes rise { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+@keyframes pop { from { opacity: 0; transform: translateY(22px) scale(.9); } to { opacity: 1; transform: none; } }
+@keyframes drop { from { opacity: 0; transform: translateY(-.5em) rotate(-8deg); } to { opacity: 1; transform: none; } }
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+{% block motion %}{% endblock %}
+{% endif %}
+</style>
+</head>
+<body>
+<div id="canvas">
+  {% block under %}{% endblock %}
+  <div class="brandbar"><img src="{{ logo_on_dark }}" alt="{{ brand.name }}"></div>
+  <div class="layer">{% block content %}{% endblock %}</div>
+</div>
+<script>
+  const ticks = [];
+  // render.py and video.py call __fit once the fonts are in: a still frame is the finished frame
+  window.__fit = () => { {% if not motion %}ticks.forEach((f) => f(1e6));{% endif %} return 1; };
+  {% block script %}{% endblock %}
+  window.__motionEnd = () => {
+    let end = 0;
+    document.getAnimations().forEach((a) => {
+      const t = a.effect.getComputedTiming();
+      if (t.iterations !== Infinity) end = Math.max(end, t.endTime);
+    });
+    return end / 1000;
+  };
+  window.__seek = (t) => {
+    document.getAnimations().forEach((a) => { a.pause(); a.currentTime = t * 1000; });
+    ticks.forEach((f) => f(t));
+  };
+</script>
+</body>
+</html>

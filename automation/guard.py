@@ -52,7 +52,11 @@ SCHEMAS: dict[str, dict[str, int]] = {
     "tazama":   {"headline": 70, "credit": 60, "rights": 120},
     "avatar":   {},
     "banner":   {"line": 40, "sub": 50},
+    # Mtaa Mode (mtaa.py holds their own checks: the cast, the street rules, the chart's source)
+    "scene":    {"title": 40},
+    "chart":    {"as_of": 40},
 }
+STREET = {"scene", "chart"}
 LISTS: dict[str, dict[str, tuple[int, int, int]]] = {  # field -> (min items, max items, max chars each)
     "intro": {"promise": (2, 3, 50)},
     "tool": {"steps": (2, 4, 70)},
@@ -369,7 +373,7 @@ def _all_text(post: dict) -> str:
                     for side in ("left", "right"):
                         c = x.get(side) or {}
                         parts.extend(str(c.get(k, "")) for k in ("say", "sms"))
-                    parts.extend(str(x.get(k, "")) for k in ("test", "note"))
+                    parts.extend(str(x.get(k, "")) for k in ("test", "note", "text"))   # + chat messages
                 else:
                     parts.append(str(x))
     return " ".join(parts)
@@ -503,6 +507,11 @@ def check(post: dict) -> Report:
 
     if tpl == "vichekesho":
         _check_comic(post, rep)
+    if tpl in STREET:
+        import mtaa
+        errs, warns = mtaa.check(post)
+        rep.errors += errs
+        rep.warnings += warns
     sym = post.get("symbol")
     if sym:
         import symbols
@@ -632,6 +641,10 @@ def check(post: dict) -> Report:
         rep.errors.append(f"shouting reads as clickbait: {loud} (let the numbers carry the urgency)")
     # stock Swahili and slang fillers are the loudest "AI wrote this" tell: none of them, ever
     fillers = [f for f in SWAHILI_FILLERS if re.search(rf"(?<![\w]){re.escape(f)}(?![\w])", low)]
+    if tpl in STREET:   # a street scene speaks Sheng; it reads generated only when every line leans on a filler
+        if len([f for f in fillers]) > 2:
+            rep.warnings.append(f"many stock fillers ({', '.join(fillers)}): keep the ones a real person would type")
+        fillers = []
     if fillers:
         rep.errors.append(f"filler slang reads generated: {', '.join(fillers)} (say it in plain English)")
     puff = PUFFERY.search(text + " " + str(post.get("caption", "")))

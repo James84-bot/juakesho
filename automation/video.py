@@ -49,6 +49,9 @@ HOT_KICKERS = {"sport": "Sport", "politics": "Politics", "life": "News", **(bran
 
 def beat_reel(post: dict) -> dict | None:
     """The beat-by-beat Reel version of a post, when the writer gave it a script (`beats`)."""
+    import mtaa
+    if post.get("template") in mtaa.TEMPLATES:   # Mtaa Mode's designs are 9:16 and animate themselves
+        return None
     beats = [b for b in (post.get("beats") or []) if isinstance(b, str) and b.strip()]
     if len(beats) < 3:
         return None
@@ -232,10 +235,12 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         tmp = Path(tmp)
         (tmp / "page.html").write_text(html, encoding="utf-8")
         _open(page, tmp / "page.html")
-        dur = round(t + 1.2, 2) if beats else duration_for(post, page.evaluate("window.__motionEnd()"))
+        import mtaa
+        own = post["template"] in mtaa.TEMPLATES   # Mtaa Mode: its own timeline (a scene runs 20-35 s), its own sound
+        dur = round(t + 1.2, 2) if beats else mtaa.duration(post) if own else duration_for(post, page.evaluate("window.__motionEnd()"))
         frames = int(dur * FPS)
         render_frames(tmp / "page.html", tmp, frames, alpha=bool(footage))
-        track = music_track(post)
+        track = None if own else music_track(post)
         cuts, lands = sound_marks(beats["beats"]) if beats else ([], [])
         fx = sound.sfx(dur, cuts, lands, seed) if beats else None
         if track:   # a licensed track: chime first, then its hook, with the whooshes and hits on top
@@ -244,6 +249,10 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
                 sound.write_wav(fx, fx_wav)
             mix_track(ff, track, dur, tmp / "audio.wav", fx_wav if fx is not None else None)
             post["track_credit"] = track.get("credit") or f"{track['artist']} - {track['title']} (used with permission)"
+        elif own:   # the street sound, brought to -14 LUFS (what the platforms play at; it was -19 before)
+            sound.write_wav(sound.street(dur, mtaa.cues(post), seed), tmp / "raw.wav")
+            subprocess.run([ff, "-y", "-loglevel", "error", "-i", str(tmp / "raw.wav"), "-af", "loudnorm=I=-14:TP=-1.5:LRA=11",
+                            "-ar", "44100", "-ac", "2", str(tmp / "audio.wav")], check=True)
         else:
             base = sound.tension(dur, starts if beats else [0.0], seed) if post["template"] in URGENT_TEMPLATES \
                 else sound.bed(dur, seed)
@@ -270,6 +279,8 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         # Cover frame: the hook line fully landed (beat Reels), or the fully-built design
         from PIL import Image
         cover = min(frames - 1, int((min(1.2, render.beat_seconds(beats["beats"][0]) - 0.2)) * FPS)) if beats else frames - 1
+        if own and mtaa.still_time(post) is not None:   # a scene's cover is its hook line, never the punchline
+            cover = min(frames - 1, int(mtaa.still_time(post) * FPS))
         if footage:   # the finished picture at that moment, footage included
             subprocess.run([ff, "-y", "-loglevel", "error", "-ss", f"{cover / FPS:.2f}", "-i", str(target_mp4),
                             "-frames:v", "1", "-q:v", "3", str(out_dir / f"{post['id']}-cover.jpg")], check=True)
@@ -316,7 +327,8 @@ def sting(ff: str, work: Path) -> Path | None:
         frames = int(STING_S * FPS)
         render_frames(page, work, frames)
         tail = np.zeros(int(sound.SR * STING_S), dtype=np.float32)
-        ch = sound.chime()[: len(tail)] * 0.6
+        street = (brand.get("logo") or {}).get("style") == "street"   # Mtaa Mode ends on its own sound, not the chime
+        ch = (sound.typing_pops() if street else sound.chime())[: len(tail)] * 0.6
         tail[int(sound.SR * 0.78): int(sound.SR * 0.78) + len(ch)] += ch[: len(tail) - int(sound.SR * 0.78)]
         sound.write_wav(tail, work / "sting.wav")
         out = work / "sting.mp4"

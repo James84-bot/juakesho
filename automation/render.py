@@ -379,6 +379,10 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
             beats_n = len(post.get("beats") or [])
             ctx["seq"] = (match_shots(post.get("beats") or [], [str((m or {}).get("title") or "") for m in meta])
                           if not ctx["broll"] and len(paths) > 1 else shot_sequence(beats_n, len(paths), ctx["broll"]))
+    import mtaa
+    if post["template"] in mtaa.TEMPLATES:   # Mtaa Mode: the timings and the cast its templates animate with
+        ctx["m"] = mtaa.context(post)
+        ctx["logo_on_dark"] = (LOGO / "wordmark-on-dark.svg").as_uri()
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
 
 

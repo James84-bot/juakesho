@@ -1,0 +1,6 @@
+{
+  "note": "auto_approve: posts that pass every automatic check go out at their slot; anything that fails a check comes to this brand's Telegram bot for a decision. Skits are fiction and pass the guard and the critic; the chart is built from YouTube by code.",
+  "auto_approve": true,
+  "news_photos": false,
+  "tiktok_packages": true
+}

@@ -1,0 +1,381 @@
+{
+  "timezone": "Africa/Nairobi",
+  "utc_offset": "+03:00",
+  "note": "Four a day: animated scenes of our cast's real days at 07:30 (the ride in), 12:45 (lunch), 17:30 (the ride home) and 20:30 (the evening scroll). Monday and Friday at 17:30 the music chart takes the slot.",
+  "lanes": {
+    "everyone": {
+      "who": "Kenyan youth, 16-30, in the mtaa and on campus, and Kenyans abroad who miss home",
+      "voice": "Nairobi texting voice: Sheng, Kiswahili and English mixed the way young people actually type; short, quick, never preachy"
+    }
+  },
+  "reel_templates": [
+    "scene",
+    "chart"
+  ],
+  "slots": [
+    {
+      "day": 1,
+      "time": "07:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 1,
+      "time": "12:45",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 1,
+      "time": "17:30",
+      "template": "chart",
+      "series": "Ngoma za Wiki",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 1,
+      "time": "20:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 2,
+      "time": "07:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 2,
+      "time": "12:45",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 2,
+      "time": "17:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 2,
+      "time": "20:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 3,
+      "time": "07:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 3,
+      "time": "12:45",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 3,
+      "time": "17:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 3,
+      "time": "20:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 4,
+      "time": "07:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 4,
+      "time": "12:45",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 4,
+      "time": "17:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 4,
+      "time": "20:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 5,
+      "time": "07:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 5,
+      "time": "12:45",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 5,
+      "time": "17:30",
+      "template": "chart",
+      "series": "Ngoma za Wiki",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 5,
+      "time": "20:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 6,
+      "time": "07:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 6,
+      "time": "12:45",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 6,
+      "time": "17:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 6,
+      "time": "20:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 7,
+      "time": "07:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 7,
+      "time": "12:45",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 7,
+      "time": "17:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    },
+    {
+      "day": 7,
+      "time": "20:30",
+      "template": "scene",
+      "series": "Maisha ya Mtaa",
+      "bg": [
+        "usiku"
+      ],
+      "lanes": [
+        "everyone"
+      ],
+      "size": "story"
+    }
+  ]
+}

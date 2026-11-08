@@ -1,0 +1,58 @@
+{#- Ngoma za Wiki: the songs trending on YouTube in Kenya, ranked by views a day since release.
+    Fields: songs [{artist, song, per_day, per_day_text}], as_of. Rows land from #10 up to #1, then #1 lights up.
+    No artwork and no audio from the songs: names and numbers only. -#}
+{% extends "mtaa_base.html.j2" %}
+{% set n = songs | length %}
+{% set rh = [94, (940 / n) | int] | min %}
+{% block style %}
+.hd { position: absolute; left: 64px; right: 136px; top: 292px; }
+.h { margin-top: 30px; font: 800 54px/1.02 "Unbounded"; white-space: nowrap; letter-spacing: -.03em; color: var(--paper); }
+.sub { margin-top: 18px; font: 500 25px/1.35 "Inter"; color: var(--muted); }
+.rows { position: absolute; left: 56px; width: 888px; top: {{ 1530 - n * rh }}px; }
+.r { display: flex; align-items: center; gap: 22px; height: {{ rh - 10 }}px; margin-bottom: 10px; padding: 0 26px 0 18px;
+  border-radius: 26px; background: var(--night-2); }
+.r .k { flex: none; width: 76px; text-align: center; font: 800 44px/1 "Unbounded"; color: var(--lime); letter-spacing: -.04em; }
+.r .s { flex: 1; min-width: 0; }
+.r .t { font: 800 34px/1.12 "Inter Tight"; color: var(--paper); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.r .a { margin-top: 4px; font: 500 25px/1.2 "Inter"; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.r .v { flex: none; text-align: right; font: 800 32px/1 "Inter Tight"; color: var(--paper); }
+.r .v small { display: block; margin-top: 6px; font: 500 20px/1 "Inter"; color: var(--muted); }
+.r.one { background: var(--lime); }
+.r.one .k, .r.one .t, .r.one .v { color: var(--night); }
+.r.one .a, .r.one .v small { color: rgba(14, 14, 18, .62); }
+.src { position: absolute; left: 64px; top: 1548px; }
+{% endblock %}
+{% block motion %}
+@keyframes slide { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: none; } }
+@keyframes light { 0% { background: var(--night-2); transform: none; } 45% { transform: scale(1.04); } 100% { background: var(--lime); transform: none; } }
+@keyframes ink { from { color: var(--paper); } to { color: var(--night); } }
+@keyframes inklime { from { color: var(--lime); } to { color: var(--night); } }
+@keyframes inkmuted { from { color: var(--muted); } to { color: rgba(14, 14, 18, .62); } }
+.hd .pill { animation: fadein .3s ease-out both -.3s; }
+.h { animation: rise .45s cubic-bezier(.2, .9, .3, 1) both -.25s; }
+.sub { animation: fadein .4s ease-out both .2s; }
+{% for t in m.row_at %}.r:nth-child({{ loop.index }}) { animation: slide .4s cubic-bezier(.2, .9, .3, 1) both {{ t }}s; }
+{% endfor %}
+.r.one { animation: slide .4s cubic-bezier(.2, .9, .3, 1) both {{ m.row_at[0] }}s, light .5s ease-out both {{ m.top_at }}s; }
+.r.one .k { animation: inklime .3s both {{ m.top_at }}s; }
+.r.one .t, .r.one .v { animation: ink .3s both {{ m.top_at }}s; }
+.r.one .a, .r.one .v small { animation: inkmuted .3s both {{ m.top_at }}s; }
+.src { animation: fadein .4s ease-out both .35s; }
+{% endblock %}
+{% block content %}
+  <div class="hd">
+    <span class="pill">Ngoma za Wiki</span>
+    <div class="h">What Kenya is playing</div>
+    <div class="sub">Trending on YouTube in Kenya, ranked by views a day since release<br>{{ as_of }}</div>
+  </div>
+  <div class="rows">
+    {% for s in songs %}
+    <div class="r{{ ' one' if loop.first }}">
+      <div class="k">{{ loop.index }}</div>
+      <div class="s"><div class="t">{{ s.song }}</div><div class="a">{{ s.artist }}</div></div>
+      <div class="v">{{ s.per_day_text }}<small>views a day</small></div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="src">Data: YouTube Data API, most-popular music for Kenya</div>
+{% endblock %}

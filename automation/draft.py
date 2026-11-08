@@ -1351,6 +1351,19 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
                        "must be researched by a person, never invented by the writer to fit a headline"}
     held = [(s, HAND[s["template"]]) for s in slots if s["template"] in HAND and not mock]
     slots = [s for s in slots if not (s["template"] in HAND and not mock)]
+    import mtaa
+    street = [s for s in slots if s["template"] in mtaa.TEMPLATES]
+    if street:   # Mtaa Mode: the chart is built from YouTube, the skits have their own writer, checks and editor
+        slots = [s for s in slots if s["template"] not in mtaa.TEMPLATES]
+        own, own_held = mtaa.draft(street, mock=mock, taken=TAKEN)
+        own_reports = guard.check_all(own)
+        for p, r in zip(own, own_reports):
+            # a post that fails a check still goes to Telegram marked with what failed; only an empty slot is held
+            p["status"] = "drafted" if (r.ok or (p.get("messages") or p.get("songs"))) else "needs_human"
+            p["guard"] = {"errors": r.errors, "warnings": r.warnings}
+        own += [{**s, "status": "needs_human", "guard": {"errors": [why], "warnings": []}} for s, why in own_held]
+        if not slots:
+            return own + [{**s, "status": "needs_human", "guard": {"errors": [why], "warnings": []}} for s, why in held], {}
     if not mock:   # the series that must never be invented get their real material first, or are held
         slots, more = material.attach(slots)
         held += more
@@ -1387,4 +1400,4 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
             print(f"  hashtag boost skipped: {e}")
         material.mark([p for p in posts if p["status"] == "drafted"])
     posts += [{**s, "status": "needs_human", "guard": {"errors": [why], "warnings": []}} for s, why in held]
-    return posts, result.get("scripts", {})
+    return posts + (own if street else []), result.get("scripts", {})

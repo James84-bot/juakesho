@@ -1,0 +1,154 @@
+{
+  "name": "Mtaa Mode",
+  "handle": "@mtaamode",
+  "hashtag": "#MtaaMode",
+  "enabled": false,
+  "facebook_page_id": "",
+  "tagline_sw": "Maisha ya mtaa na ngoma za wiki.",
+  "tagline_en": "Mtaa life, animated. And what Kenya is playing.",
+  "website": "",
+  "subscribe_for": "animated mtaa life and what Kenya is playing, every day",
+  "logo": {
+    "style": "street",
+    "lines": [
+      "MTAA",
+      "MODE"
+    ]
+  },
+  "editions": {},
+  "breaking": false,
+  "file_photos": false,
+  "reel_kicker": "Mtaa Mode",
+  "colors": {
+    "usiku": {
+      "hex": "#0E0E12",
+      "text": "#F7F7F9",
+      "meaning": "Night. Every design's background."
+    },
+    "maziwa": {
+      "hex": "#F7F7F9",
+      "text": "#19191F",
+      "meaning": "Paper (rare)."
+    },
+    "chai": {
+      "hex": "#C3F62A",
+      "text": "#0E0E12",
+      "meaning": "Lime, the signature: Brayo's hoodie, the logo, the scene titles, the chart's #1."
+    },
+    "jua": {
+      "hex": "#C3F62A",
+      "text": "#0E0E12",
+      "meaning": "Lime (signature background)."
+    },
+    "shuka": {
+      "hex": "#FC4AA1",
+      "text": "#0E0E12",
+      "meaning": "Pink, the second voice: a character's name, an accent (never a large field)."
+    },
+    "jacaranda": {
+      "hex": "#2F2E35",
+      "text": "#F7F7F9",
+      "meaning": "Raised surface: chart rows, cards on night."
+    },
+    "ziwa": {
+      "hex": "#49484F",
+      "text": "#F7F7F9",
+      "meaning": "Borders and dividers on night."
+    },
+    "pwani": {
+      "hex": "#CEFD2C",
+      "text": "#0E0E12",
+      "meaning": "Light lime (rare).",
+      "legacy": true
+    },
+    "waridi": {
+      "hex": "#FE80B8",
+      "text": "#0E0E12",
+      "meaning": "Light pink (rare).",
+      "legacy": true
+    },
+    "udongo": {
+      "hex": "#8F0353",
+      "text": "#F7F7F9",
+      "meaning": "Deep pink (rare).",
+      "legacy": true
+    }
+  },
+  "accents": [
+    "chai",
+    "shuka"
+  ],
+  "fonts": {
+    "display": "Unbounded",
+    "body": "Inter"
+  },
+  "palette": {
+    "ink": {
+      "50": "#F7F7F9",
+      "100": "#EFEFF2",
+      "200": "#DFDFE3",
+      "300": "#C9C8CD",
+      "400": "#A7A7AC",
+      "500": "#86858B",
+      "600": "#66656C",
+      "700": "#49484F",
+      "800": "#2F2E35",
+      "900": "#19191F",
+      "950": "#0E0E12"
+    },
+    "lime": {
+      "50": "#F1FFCC",
+      "100": "#E0FF89",
+      "200": "#CEFD2C",
+      "300": "#C3F62A",
+      "400": "#A2D202",
+      "500": "#84AE02",
+      "600": "#678B05",
+      "700": "#4D6A02",
+      "800": "#344A01",
+      "900": "#1D2C01",
+      "950": "#091100"
+    },
+    "pinki": {
+      "50": "#FFF4F9",
+      "100": "#FED1E4",
+      "200": "#FFAACE",
+      "300": "#FE80B8",
+      "400": "#FC4AA1",
+      "500": "#DC2686",
+      "600": "#B70C6C",
+      "700": "#8F0353",
+      "800": "#68003B",
+      "900": "#440024",
+      "950": "#200210"
+    },
+    "chai": {
+      "50": "#F1FFCC",
+      "100": "#E0FF89",
+      "200": "#CEFD2C",
+      "300": "#C3F62A",
+      "400": "#A2D202",
+      "500": "#84AE02",
+      "600": "#678B05",
+      "700": "#4D6A02",
+      "800": "#344A01",
+      "900": "#1D2C01",
+      "950": "#091100"
+    },
+    "shuka": {
+      "50": "#FFF4F9",
+      "100": "#FED1E4",
+      "200": "#FFAACE",
+      "300": "#FE80B8",
+      "400": "#FC4AA1",
+      "500": "#DC2686",
+      "600": "#B70C6C",
+      "700": "#8F0353",
+      "800": "#68003B",
+      "900": "#440024",
+      "950": "#200210"
+    }
+  },
+  "palette_note": "Night carries every design. Lime is the signature and our side; pink is the second voice. Never both as large fields in one frame: one leads, the other answers.",
+  "critic_note": "THIS IS A STREET COMEDY AND CULTURE PAGE (Mtaa Mode), not news. For a scene score `impact` on how funny and true to Nairobi youth life it is (a real situation, a real turn, a punchline that lands in the last message), `action` on whether people will tag a friend or answer in the comments, `fair` on whether it laughs at situations and never at a tribe, religion, body, disability, gender or poverty itself, `demand` on whether the situation is one young Kenyans are living this week (month-end, rain, exams, a long weekend). A skit with no real punchline scores under 7."
+}

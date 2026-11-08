@@ -413,6 +413,18 @@ def tracker(label: str) -> list[str]:
     return [p["id"] for p in out]
 
 
+def fresh_due(label: str) -> bool:
+    """A post built close to its slot (mtaa.FRESH_LEAD: the music chart) is due within its lead now."""
+    import mtaa
+    if not week_file(label).exists():
+        return False
+    for p in load_week(label)["posts"]:
+        lead = mtaa.FRESH_LEAD.get(p["template"])
+        if lead and p["status"] == "planned" and dt.timedelta(0) < dt.datetime.fromisoformat(p["publish_at"]) - now() <= lead:
+            return True
+    return False
+
+
 def plan(label: str) -> dict:
     if week_file(label).exists():
         log(f"{label} already planned, keeping it")
@@ -439,6 +451,12 @@ def draft(label: str, mock: bool = False, horizon: dt.timedelta | None = DRAFT_A
         todo = [p for p in todo if p["id"] not in later]
         if later:
             log(f"written closer to their slot (midweek run): {later}")
+    import mtaa
+    early = [p["id"] for p in todo if p["template"] in mtaa.FRESH_LEAD and not mock
+             and dt.datetime.fromisoformat(p["publish_at"]) - now() > mtaa.FRESH_LEAD[p["template"]]]
+    if early:   # the chart's views must be hours old at its slot, not days: the day runs build it
+        todo = [p for p in todo if p["id"] not in early]
+        log(f"built closer to their slot: {early}")
     if not todo:
         log("nothing to draft")
         return data
@@ -1033,8 +1051,9 @@ CLIP_TEMPLATES = {"sauti", "straight", "promise", "kumbuka", "scorecard", "money
 def is_reel(p: dict) -> bool:
     cal = json.loads((brands.HOME / "calendar.json").read_text(encoding="utf-8"))
     # polls are 9:16 already: as a Reel they reach the feed, and comments (the votes) push them further
+    import mtaa   # Mtaa Mode's designs are drawn 9:16 and animate themselves
     return (p["template"] in set(cal.get("reel_templates", [])) and not p.get("group")
-            and (p.get("size", "post") == "post" or p["template"] == "glasspoll"))
+            and (p.get("size", "post") == "post" or p["template"] == "glasspoll" or p["template"] in mtaa.TEMPLATES))
 
 
 # ---------------------------------------------------------------------------
@@ -1086,7 +1105,8 @@ def _preview_text(p: dict) -> str:
         lines += ["", "⚠️ Not scored by the editor this run: judge it yourself."]
     if p.get("critic"):
         c = p["critic"]
-        parts = " · ".join(f"{k} {c[k]}" for k in ("hook", "clarity", "picture", "send", "fresh") if c.get(k) is not None)
+        parts = " · ".join(f"{k} {c[k]}" for k in ("hook", "clarity", "picture", "send", "fresh", "funny", "true", "voice", "clean")
+                           if c.get(k) is not None)
         lines += ["", f"⭐ {c.get('avg')}/10  {parts}", f"✏️ {esc(str(c.get('note', '')))}"]
     if p.get("video_file"):
         lines += [f"🎥 Real footage behind the Reel ({esc(str(p.get('video_credit') or ''))})"]
@@ -1233,6 +1253,9 @@ def auto_ok(p: dict) -> str:
         return ""
     if any("named person" in str(w) for w in g.get("warnings") or []):
         return "may name a person"
+    import mtaa
+    if p.get("template") in mtaa.TEMPLATES:   # Mtaa Mode: the chart is YouTube's numbers; a skit needs its editor's pass
+        return mtaa.auto_problem(p)
     crit = (p.get("critic") or {}).get("avg")
     if not p.get("hand") and (crit is None or crit < drafter_bar()):
         return "the editor's score is missing or under the bar"
@@ -1327,7 +1350,7 @@ def freshness_check(dry_run: bool = False) -> list[str]:
         changed = False
         for p in data["posts"]:
             if p["status"] not in {"approved", "awaiting"} or p.get("hot") or p.get("n") or p.get("fresh_checked") \
-                    or p.get("template") == "tazama":
+                    or p.get("template") in {"tazama", "scene", "chart"}:
                 continue
             due = dt.datetime.fromisoformat(p["publish_at"]) - now()
             written = dt.datetime.fromisoformat(p.get("drafted_at") or data.get("created") or now().isoformat())
@@ -1707,6 +1730,8 @@ def post_receipts(post: dict, ig_id: str | None, fb_id: str | None) -> None:
 
 def shorts_title(post: dict) -> str:
     """YouTube Shorts title: the news line itself (YouTube allows 100 characters), with #Shorts."""
+    if post.get("shorts_title"):
+        return str(post["shorts_title"])[:100]
     first = str((post.get("beats") or [post.get("message") or ""])[0]).replace("*", "").strip()
     return (first[:90].rsplit(" ", 1)[0] if len(first) > 90 else first) + " #Shorts"
 
@@ -2173,6 +2198,45 @@ def qa_sheets(posts: list[dict]) -> None:
                 log(f"qa sheet skipped for {q['id']}: {e}")
 
 
+def street_samples(n: int = 3, dry_run: bool = False) -> int:
+    """Mtaa Mode: n scenes written by the writer and today's chart, drawn and animated into exports/_samples, with
+    samples.json (the scripts, the editor's scores, the checks, the layout check). Nothing is posted, no week changes,
+    and the situations used are not kept."""
+    import guard
+    import mtaa
+    import render as renderer
+    import video
+    out = EXPORTS / "_samples"
+    if out.exists():
+        shutil.rmtree(out)   # only the latest samples are kept
+    out.mkdir(parents=True)
+    t0 = now().replace(minute=0, second=0, microsecond=0)
+    slots = [{"id": f"sample-scene-{i + 1}", "template": "scene", "series": "Maisha ya Mtaa", "bg": "usiku", "size": "story",
+              "lane": "everyone", "publish_at": (t0 + dt.timedelta(hours=i + 1)).isoformat()} for i in range(n)]
+    slots.append({"id": "sample-chart", "template": "chart", "series": "Ngoma za Wiki", "bg": "usiku", "size": "story",
+                  "lane": "everyone", "publish_at": (t0 + dt.timedelta(hours=1)).isoformat()})
+    posts, held = mtaa.draft(slots, mock=dry_run, remember=False)
+    for p in posts:
+        r = guard.check(p)
+        p["guard"] = {"errors": r.errors, "warnings": r.warnings}
+    good = [p for p in posts if p.get("lines") or p.get("songs")]
+    qa: dict = {}
+    if good:
+        renderer.render(good, out, qa=qa)
+        video.make_reels(good, out)
+    (out / "samples.json").write_text(json.dumps({"made": now().isoformat(), "posts": posts, "qa": qa,
+                                                  "held": [{"id": s["id"], "why": why} for s, why in held]},
+                                                 ensure_ascii=False, indent=1), encoding="utf-8")
+    for p in posts:
+        log(f"{p['id']}: {p.get('title') or p.get('as_of')} | place {p.get('place', '-')} | editor {p.get('critic', {}).get('avg', '-')} "
+            f"| errors {p['guard']['errors'] or 'none'} | layout {qa.get(p['id']) or 'clean'}")
+        for l in p.get("lines") or []:
+            log(f"    {l.get('who')} [{l.get('do')}/{l.get('face')}]: {l.get('text')}")
+    for s, why in held:
+        log(f"{s['id']} held: {why}")
+    return len(good)
+
+
 def reel_samples(n: int = 3, dry_run: bool = False, send: bool = True) -> int:
     """Makes the newest published Reels again with the current design (a new shot on every line, figures counting
     up, the wipe, licensed music) and sends them to Telegram as samples. Nothing is posted; the weeks don't change."""
@@ -2529,7 +2593,9 @@ def _main(argv: list[str] | None = None) -> int:
             learn()
         except Exception as e:
             log(f"learn skipped: {e}")
-    if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "renew", "redo", "radar", "photocheck"} and not a.mock:
+    newsroom = brands.MAIN or bool(BRAND.get("editions"))   # Mtaa Mode reads no news
+    if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "renew", "redo", "radar", "photocheck"} and not a.mock \
+            and newsroom:
         try:
             import trends
             t = trends.collect()
@@ -2558,7 +2624,7 @@ def _main(argv: list[str] | None = None) -> int:
             log(f"radar skipped: {e}")
     sent_file = STATE / "radar_sent.txt"   # the hot run can start twice (listener + schedule): one radar a day
     radar_done = a.command == "hot" and sent_file.exists() and sent_file.read_text().strip() == str(now().date())
-    if a.command in {"hot", "radar"} and not a.mock and not a.dry_run and not radar_done:
+    if a.command in {"hot", "radar"} and not a.mock and not a.dry_run and not radar_done and newsroom:
         try:   # the daily radar on Telegram: live hashtags and the clips Kenya is watching, with links
             import radar
             text = radar.telegram_text()
@@ -2581,7 +2647,7 @@ def _main(argv: list[str] | None = None) -> int:
                     replaced = retry_held_hot(label)
                 except Exception as e:
                     log(f"retry of held news posts skipped: {e}")
-            if not replaced:
+            if not replaced and not fresh_due(label):
                 return 0
     if a.command == "tracker":   # next week as a Development Tracker batch, drafted and sent now
         label = a.week or current_week_label(ahead=1)
@@ -2611,7 +2677,11 @@ def _main(argv: list[str] | None = None) -> int:
             _notify(f"🖼 New photos for <b>{label}</b> coming up (same words). Buttons on the older cards no longer do anything.")
     if a.command in {"week", "tracker", "hot", "redo", "draft", "remake", "renew"}:
         # only the weekly run writes ahead in two halves; a batch you asked for, a redo or today's post is written now
-        draft(label, mock=a.mock, horizon=DRAFT_AHEAD if a.command == "week" else None)
+        horizon = DRAFT_AHEAD if a.command == "week" else None
+        if a.command == "hot" and not newsroom:   # a day run of a brand with no news: only what is due soon (the chart)
+            import mtaa
+            horizon = max(mtaa.FRESH_LEAD.values())
+        draft(label, mock=a.mock, horizon=horizon)
         if a.command == "hot" and not a.mock and not a.dry_run:
             try:   # a held news post must not cost the slot: write another on a different story
                 retry_held_hot(label)
@@ -2670,7 +2740,10 @@ def _main(argv: list[str] | None = None) -> int:
         except Exception as e:
             log(f"comments skipped: {e}")
     if a.command == "samples":   # the newest features, on real posts, before you see them live
-        reel_samples(dry_run=a.dry_run, send=not a.no_send)
+        if not newsroom and "scene" in json.loads((brands.HOME / "calendar.json").read_text(encoding="utf-8")).get("reel_templates", []):
+            street_samples(dry_run=a.dry_run)   # Mtaa Mode: written and animated scenes, kept in exports/_samples
+        else:
+            reel_samples(dry_run=a.dry_run, send=not a.no_send)
     if a.command == "clips" and not a.dry_run:
         collect()   # pick up clips you just sent
     if a.command in {"clips", "clipwork"}:

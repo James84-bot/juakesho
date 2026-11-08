@@ -206,6 +206,153 @@ def sfx(duration: float, cuts: list[float], lands: list[float] | None = None, se
     return out * (0.6 / peak) if peak > 0.6 else out   # under the music, never clipping
 
 
+# ---------------------------------------------------------------------------
+# Mtaa Mode: an original street groove under the chat, and the cue sounds (all synthesised here)
+# ---------------------------------------------------------------------------
+STREET_BPM = 112
+A_MINOR = [55.00, 61.74, 65.41, 73.42, 82.41, 87.31, 98.00, 110.00]   # A1 natural minor, the log drum's range
+
+
+def log_drum(freq: float, dur: float = 0.38) -> np.ndarray:
+    """The amapiano log drum: a pitched thump that bends down onto its note, slightly driven."""
+    t = np.arange(int(SR * dur)) / SR
+    f = freq * (1 + 0.7 * np.exp(-t * 45))
+    phase = 2 * np.pi * np.cumsum(f) / SR
+    tone = np.sin(phase) + 0.35 * np.sin(2 * phase) + 0.12 * np.sin(3 * phase)
+    return (np.tanh(1.8 * tone) * np.exp(-t * 7.5) * (1 - np.exp(-t * 600))).astype(np.float32)
+
+
+def clap(rng: np.random.Generator, dur: float = 0.18) -> np.ndarray:
+    """Three quick noise bursts, then a short tail: a hand clap."""
+    n = int(SR * dur)
+    noise = np.diff(rng.standard_normal(n).astype(np.float32), prepend=0)
+    t = np.arange(n) / SR
+    env = sum(np.where(t >= k * 0.011, np.exp(-(t - k * 0.011) * 160), 0.0) for k in range(3)) + 0.5 * np.exp(-t * 28)
+    return (noise * env * 0.5).astype(np.float32)
+
+
+def blip(f0: float = 880.0, f1: float = 1320.0, dur: float = 0.09) -> np.ndarray:
+    """A message landing: a short rising tone with a soft click on the front."""
+    t = np.arange(int(SR * dur)) / SR
+    f = f0 + (f1 - f0) * np.minimum(1.0, t / (dur * 0.6))
+    phase = 2 * np.pi * np.cumsum(f) / SR
+    return (np.sin(phase) * np.exp(-t * 32) * (1 - np.exp(-t * 2500))).astype(np.float32)
+
+
+def reveal() -> np.ndarray:
+    """#1 lights up: three quick rising blips and a low hit."""
+    out = np.zeros(int(SR * 0.7), dtype=np.float32)
+    for k, (a, b) in enumerate(((660, 880), (880, 1100), (1100, 1480))):
+        _place(out, blip(a, b, 0.12), k * 0.07, 0.8)
+    _place(out, impact(0.5), 0.0, 0.45)
+    return out
+
+
+def womp(dur: float = 0.62) -> np.ndarray:
+    """The twist: a falling tone with a wobble, the comic 'oh no'."""
+    t = np.arange(int(SR * dur)) / SR
+    f = 330 * np.exp(-t * 1.6) * (1 + 0.03 * np.sin(2 * np.pi * 7 * t))
+    phase = 2 * np.pi * np.cumsum(f) / SR
+    tone = np.sin(phase) + 0.4 * np.sin(2 * phase)
+    return (np.tanh(1.4 * tone) * np.exp(-t * 2.5) * (1 - np.exp(-t * 300)) * 0.7).astype(np.float32)
+
+
+def typing_pops() -> np.ndarray:
+    """The street brand's end-card sound: three pops, like the typing dots."""
+    out = np.zeros(int(SR * 1.2), dtype=np.float32)
+    for k in range(3):
+        _place(out, blip(700 + 140 * k, 1000 + 180 * k, 0.1), 0.42 + k * 0.18, 0.7)
+    return out
+
+
+def knock() -> np.ndarray:
+    """Three knocks on a steel door: short low thuds with a metallic ring."""
+    out = np.zeros(int(SR * 0.75), dtype=np.float32)
+    for k in range(3):
+        t = np.arange(int(SR * 0.14)) / SR
+        hit = (np.sin(2 * np.pi * 150 * t) + 0.35 * np.sin(2 * np.pi * 410 * t)) * np.exp(-t * 38)
+        _place(out, hit.astype(np.float32), k * 0.2, 0.9)
+    return out
+
+
+def slap() -> np.ndarray:
+    """A facepalm: a short bright smack."""
+    rng = np.random.default_rng(5)
+    n = int(SR * 0.12)
+    noise = np.diff(rng.standard_normal(n).astype(np.float32), prepend=0)
+    return (noise * np.exp(-np.arange(n) / SR * 55) * 0.6).astype(np.float32)
+
+
+def buzz() -> np.ndarray:
+    """A phone on vibrate: two short buzzes."""
+    out = np.zeros(int(SR * 0.7), dtype=np.float32)
+    t = np.arange(int(SR * 0.22)) / SR
+    b = (np.sign(np.sin(2 * np.pi * 150 * t)) * 0.25 * (1 - np.exp(-t * 80)) * np.exp(-t * 3)).astype(np.float32)
+    _place(out, b, 0.0, 0.8)
+    _place(out, b, 0.36, 0.8)
+    return out
+
+
+def steps() -> np.ndarray:
+    """Footsteps for a walk in or out (one every 0.31 s, as the cast's stride)."""
+    out = np.zeros(int(SR * 1.4), dtype=np.float32)
+    for k in range(4):
+        t = np.arange(int(SR * 0.09)) / SR
+        s = (np.sin(2 * np.pi * (95 + 10 * (k % 2)) * t) * np.exp(-t * 45)).astype(np.float32)
+        _place(out, s, 0.08 + k * 0.31, 0.7)
+    return out
+
+
+def hit() -> np.ndarray:
+    """The punchline lands: a soft low hit with a bright blip."""
+    out = np.zeros(int(SR * 0.6), dtype=np.float32)
+    _place(out, impact(0.5), 0.0, 0.55)
+    _place(out, blip(880, 1320, 0.1), 0.0, 0.5)
+    return out
+
+
+CUE_SOUNDS = {"pop": (blip, 0.35), "reveal": (reveal, 0.75), "twist": (womp, 0.7), "knock": (knock, 0.8),
+              "slap": (slap, 0.6), "buzz": (buzz, 0.55), "steps": (steps, 0.55), "whoosh": (lambda: whoosh(0.34, 3), 0.5),
+              "hit": (hit, 0.75)}
+
+
+def street(duration: float, cues: list[tuple[float, str]] | None = None, seed: int = 0) -> np.ndarray:
+    """An original groove for Mtaa Mode (112 BPM: soft four-on-the-floor kick, log drum, claps on 2 and 4,
+    shaker sixteenths) kept low, with the cue sounds on top: what the cast do, each line, each chart row."""
+    rng = np.random.default_rng(seed)
+    beat = 60 / STREET_BPM
+    n = int(SR * (duration + 1.0))
+    groove = np.zeros(n, dtype=np.float32)
+    patterns = [[0, 3, 6, 10, 11, 14], [0, 3, 7, 10, 13], [0, 2, 6, 9, 12, 14]]
+    pat = patterns[seed % len(patterns)]
+    notes = [A_MINOR[i] for i in ((0, 4, 3, 2), (0, 2, 4, 6), (0, 3, 4, 0))[seed % 3]]
+    t, bar = 0.0, 0
+    while t < duration:
+        for q in range(4):
+            _place(groove, kick(), t + q * beat, 0.42)
+            if q in (1, 3):
+                _place(groove, clap(rng), t + q * beat, 0.32)
+        for k in range(16):
+            _place(groove, shaker(rng), t + k * beat / 4, 0.05 if k % 2 else 0.025)
+        for i, step in enumerate(pat):
+            _place(groove, log_drum(notes[(bar + i) % len(notes)] * (2 if i % 3 == 2 else 1)), t + step * beat / 4, 0.5)
+        t += 4 * beat
+        bar += 1
+    peak = float(np.abs(groove).max()) or 1.0
+    out = groove / peak * 0.42          # the groove sits under the cues
+    for at, kind in cues or []:
+        make, gain = CUE_SOUNDS.get(kind, CUE_SOUNDS["pop"])
+        x = make()
+        _place(out, x / (float(np.abs(x).max()) or 1.0), max(0.0, at), gain)   # each cue at its own level, never louder
+    out = out[: int(SR * duration)]
+    fade_in, fade_out = int(SR * 0.02), int(SR * 0.7)
+    out[:fade_in] *= np.linspace(0, 1, fade_in)
+    out[-fade_out:] *= np.linspace(1, 0, fade_out) ** 1.5
+    out = np.tanh(1.6 * out) / np.tanh(1.6)
+    peak = float(np.abs(out).max()) or 1.0
+    return (out / peak * 0.89).astype(np.float32)
+
+
 def write_wav(samples: np.ndarray, path: Path) -> None:
     pcm = (np.clip(samples, -1, 1) * 32767).astype(np.int16)
     stereo = np.repeat(pcm[:, None], 2, axis=1)

@@ -8,6 +8,9 @@ Each brand has its own shape, so the five read as one network and still apart at
     shield      Verified Jobs Kenya  a badge, a tick on it
     stamp       Kenya Postcards      a postage stamp, Mount Kenya's peak on it
 
+Mtaa Mode (logo "style": "street") is not part of the news family: a lime chat bubble with three typing dots and the
+name in Unbounded, its own look (street comedy should neither borrow nor dent the news brands' credibility).
+
 brand.json "logo": {"shape": ..., "symbol": ..., "lines": ["FULL TIME", "KENYA"]}. Writes brands/<slug>/logo/ with the
 same file names render.py and video.py read for Kenya on Record (wordmark-*, stacked-*, icon-*, sting.svg).
 
@@ -150,11 +153,128 @@ def sting_svg(spec: dict) -> str:
             f'<g id="word"><path d="{d}" fill="#F8F7F6"/></g></svg>')
 
 
+
+
+# ---------------------------------------------------------------------------
+# Street style (Mtaa Mode): the chat bubble
+# ---------------------------------------------------------------------------
+UNBOUNDED = brands.ROOT / "assets" / "fonts" / "unbounded-latin-wght-normal.woff2"
+STREET_KERN = {"TA": -0.07, "AT": -0.07, "AA": -0.01}
+_UB: dict = {}
+
+
+def _unbounded():
+    if not _UB:
+        from fontTools.ttLib import TTFont
+        from fontTools.varLib import instancer
+        # overlaps removed (skia-pathops): Unbounded draws letters like E from overlapping strokes, which leave
+        # notches once the outlines become one SVG path. The logo files are committed, so only a rebuild needs it.
+        f = instancer.instantiateVariableFont(TTFont(UNBOUNDED), {"wght": 800}, overlap=instancer.OverlapMode.REMOVE)
+        _UB.update(glyphs=f.getGlyphSet(), cmap=f.getBestCmap(), hmtx=f["hmtx"], upm=f["head"].unitsPerEm,
+                   cap=f["OS/2"].sCapHeight or 0.75 * f["head"].unitsPerEm)
+    return _UB
+
+
+def street_text(text: str, cap_px: float, x: float, baseline: float, track: float = 0.0) -> tuple[str, float]:
+    """`text` in Unbounded ExtraBold as path data, capitals `cap_px` tall. Returns (path data, end x)."""
+    from fontTools.pens.svgPathPen import SVGPathPen
+    from fontTools.pens.transformPen import TransformPen
+    f = _unbounded()
+    size = cap_px * f["upm"] / f["cap"]
+    scale = size / f["upm"]
+    pen = SVGPathPen(f["glyphs"])
+    for i, ch in enumerate(text):
+        name = f["cmap"][ord(ch)]
+        f["glyphs"][name].draw(TransformPen(pen, (scale, 0, 0, -scale, x, baseline)))
+        x += f["hmtx"][name][0] * scale + (track + STREET_KERN.get(text[i:i + 2], 0.0)) * size
+    return pen.getCommands(), x
+
+
+def bubble_parts(x: float, y: float, s: float, body: str, dots: str) -> tuple[str, list[str]]:
+    """The mark inside the square (x, y, s): a rounded bubble with its tail at the bottom left, and three dots."""
+    w, h = s, s * 0.74
+    top = y + (s - h - s * 0.16) / 2
+    r = s * 0.25
+    d = (f"M{x + r:.1f},{top:.1f} H{x + w - r:.1f} Q{x + w:.1f},{top:.1f} {x + w:.1f},{top + r:.1f} V{top + h - r:.1f} "
+         f"Q{x + w:.1f},{top + h:.1f} {x + w - r:.1f},{top + h:.1f} H{x + s * 0.42:.1f} L{x + s * 0.12:.1f},{top + h + s * 0.16:.1f} "
+         f"L{x + s * 0.2:.1f},{top + h:.1f} H{x + r:.1f} Q{x:.1f},{top + h:.1f} {x:.1f},{top + h - r:.1f} V{top + r:.1f} "
+         f"Q{x:.1f},{top:.1f} {x + r:.1f},{top:.1f} Z")
+    cy, dr = top + h / 2, s * 0.078
+    dot = [f'<circle cx="{x + w / 2 + k * s * 0.235:.1f}" cy="{cy:.1f}" r="{dr:.1f}" fill="{dots}"/>' for k in (-1, 0, 1)]
+    return f'<path d="{d}" fill="{body}"/>', dot
+
+
+def street_lockup(name: str, lines: list[str], ink: str, body: str, dots: str, stacked: bool) -> str:
+    cap, pad = 100, 24
+    if stacked:
+        s = 220
+        b, dd = bubble_parts(pad, pad, s, body, dots)
+        top, ds, ends = pad + s + 40, "", []
+        for i, line in enumerate(lines):
+            d, e = street_text(line, cap, pad, top + (i + 1) * cap + i * 34, track=0.0)
+            ds, ends = ds + d, ends + [e]
+        w, h = max(ends + [pad + s]) + pad, top + len(lines) * cap + (len(lines) - 1) * 34 + pad
+    else:
+        s = cap * 1.5
+        b, dd = bubble_parts(pad, pad - cap * 0.2, s, body, dots)
+        ds, end = street_text(" ".join(lines), cap, pad + s + 34, pad + cap)
+        w, h = end + pad, cap + 2 * pad + cap * 0.3
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w:.0f} {h:.0f}" width="{w:.0f}" height="{h:.0f}">'
+            f'<title>{name}</title>{b}{"".join(dd)}<path d="{ds}" fill="{ink}"/></svg>')
+
+
+def street_icon(name: str, bg: str, body: str, dots: str) -> str:
+    b, dd = bubble_parts(36, 40, 128, body, dots)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="512" height="512">'
+            f'<title>{name} icon</title><rect width="200" height="200" fill="{bg}"/>{b}{"".join(dd)}</svg>')
+
+
+def street_sting(name: str, lines: list[str], body: str, dots: str, word: str) -> str:
+    """End card groups for video.py: #black the bubble, #red #green #q the three dots (typing), #word the name."""
+    s, x, y = 500, 290, 560
+    b, (d1, d2, d3) = bubble_parts(x, y, s, body, dots)
+    cx = x + s / 2
+    text = " ".join(lines)
+    d, end = street_text(text, 64, 0, 0)
+    d, _ = street_text(text, 64, (1080 - end) / 2, y + s + 170)
+    o = f"transform-origin:{cx:.0f}px {y + s * 0.45:.0f}px"
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">'
+            f'<g id="black" style="{o}">{b}</g>'
+            f'<g id="red" style="{o}">{d1}</g><g id="green" style="{o}">{d2}</g><g id="q" style="{o}">{d3}</g>'
+            f'<g id="word"><path d="{d}" fill="{word}"/></g></svg>')
+
+
+def build_street(b: dict, out) -> dict[str, str]:
+    P = b["palette"]
+    lime, night, paper, ink = P["lime"]["300"], P["ink"]["950"], P["ink"]["50"], P["ink"]["900"]
+    name, lines = b["name"], b["logo"]["lines"]
+    files = {
+        "wordmark-on-light.svg": street_lockup(name, lines, ink, ink, lime, False),
+        "wordmark-on-dark.svg": street_lockup(name, lines, paper, lime, night, False),
+        "stacked-on-light.svg": street_lockup(name, lines, ink, ink, lime, True),
+        "stacked-on-dark.svg": street_lockup(name, lines, paper, lime, night, True),
+        "wordmark-mono-light.svg": street_lockup(name, lines, "#FFFFFF", "#FFFFFF", night, False),
+        "wordmark-mono-dark.svg": street_lockup(name, lines, night, night, "#FFFFFF", False),
+        "stacked-mono-light.svg": street_lockup(name, lines, "#FFFFFF", "#FFFFFF", night, True),
+        "stacked-mono-dark.svg": street_lockup(name, lines, night, night, "#FFFFFF", True),
+        "icon-night.svg": street_icon(name, night, lime, night),
+        "icon-paper.svg": street_icon(name, paper, ink, lime),
+        "icon-red.svg": street_icon(name, lime, night, lime),
+        "sting.svg": street_sting(name, lines, lime, night, paper),
+    }
+    return files
+
+
 def build(slug: str | None = None) -> list[str]:
     b = brands.brand(slug)
     spec = {**b["logo"], "name": b["name"]}
     out = (brands.HOME if slug is None else brands.HERE / "brands" / brands.slug_of(slug)) / "logo"
     out.mkdir(parents=True, exist_ok=True)
+    if spec.get("style") == "street":
+        files = build_street(b, out)
+        for name, svg in files.items():
+            (out / name).write_text(svg, encoding="utf-8")
+        return sorted(files)
     files = {}
     for name, ink in {"on-light": P["ink"]["900"], "on-dark": PAPER}.items():
         files[f"wordmark-{name}.svg"] = lockup(spec, ink, stacked=False)
