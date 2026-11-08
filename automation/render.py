@@ -265,6 +265,18 @@ def make_env() -> Environment:
     return env
 
 
+def _plain_date(text: str) -> str:
+    """"2026-11-08" as people write it, "08 Nov 2026" (the writer sometimes gives a date in ISO form)."""
+    import datetime as _dt
+    m = re.fullmatch(r"(\d{4})-(\d{2})-(\d{2})", text)
+    if not m:
+        return text
+    try:
+        return f"{_dt.date(int(m.group(1)), int(m.group(2)), int(m.group(3))):%d %b %Y}"
+    except ValueError:
+        return text
+
+
 def _dateline(post: dict) -> str:
     """The day the post goes out ("12 Oct 2026"): a dated post reads as news, not as a poster."""
     import datetime as _dt
@@ -311,7 +323,7 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         "icon_uri": (LOGO / {"jua": "icon-red.svg", "shuka": "icon-red.svg", "maziwa": "icon-paper.svg"}.get(bg_name, "icon-night.svg")).as_uri(),
         "motion": motion, "reel": reel,
         "dateline": _dateline(post),
-        "context_line": " · ".join(str(post[k]).strip() for k in ("where", "when") if str(post.get(k) or "").strip()),
+        "context_line": " · ".join(_plain_date(str(post[k]).strip()) for k in ("where", "when") if str(post.get(k) or "").strip()),
         "symbol": "",   # the illustrated symbols are retired from the designs (kept in data for the writer)
     }
     ink = post.get("ink") or {}
