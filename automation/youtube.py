@@ -113,6 +113,23 @@ def stats(ids: list[str]) -> dict[str, dict]:
     return out
 
 
+def channel_stats() -> dict:
+    """The channel's public totals: {"title", "subscribers", "views", "videos"}. Reads only."""
+    token = access_token()
+    req = urllib.request.Request("https://www.googleapis.com/youtube/v3/channels?part=snippet,statistics&mine=true",
+                                 headers={"Authorization": f"Bearer {token}"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            items = json.loads(r.read() or b"{}").get("items") or []
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"YouTube channel statistics → {e.code}: {e.read().decode(errors='replace')[:300]}") from e
+    if not items:
+        raise RuntimeError("Signed in, but this Google account has no YouTube channel")
+    st = items[0].get("statistics") or {}
+    return {"title": items[0]["snippet"]["title"], "subscribers": int(st.get("subscriberCount", 0)),
+            "views": int(st.get("viewCount", 0)), "videos": int(st.get("videoCount", 0))}
+
+
 def auth() -> None:
     """Device-code sign-in; prints the refresh token to save as YT_REFRESH_TOKEN."""
     cid, secret = os.environ.get("YT_CLIENT_ID"), os.environ.get("YT_CLIENT_SECRET")

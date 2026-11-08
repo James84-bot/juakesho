@@ -1548,6 +1548,57 @@ def meta_check(dry_run: bool = False) -> bool:
     return ok
 
 
+STATS_LOG = STATE / "stats.jsonl"   # one line per reading, so growth can be seen over weeks
+
+
+def platform_stats(days: int = 21) -> dict:
+    """Reads (never posts) where the brand stands on every platform: Page and Instagram followers, the YouTube
+    channel's totals, and each Facebook Reel's insights from the last `days` days. Appends one line to
+    state/stats.jsonl and prints a summary on the run page."""
+    out: dict = {"at": now().isoformat(timespec="minutes")}
+    try:
+        page = graph_get(os.environ["META_PAGE_ID"], {"fields": "name,followers_count,fan_count"})
+        out["facebook"] = {"followers": page.get("followers_count"), "likes": page.get("fan_count")}
+    except Exception as e:
+        out["facebook"] = {"error": str(e)[:160]}
+    try:
+        ig = graph_get(os.environ["META_IG_USER_ID"], {"fields": "username,followers_count,media_count"})
+        out["instagram"] = {"followers": ig.get("followers_count"), "posts": ig.get("media_count")}
+    except Exception as e:
+        out["instagram"] = {"error": str(e)[:160]}
+    try:
+        import youtube
+        out["youtube"] = youtube.channel_stats() if youtube.ready() else {"error": "not connected"}
+    except Exception as e:
+        out["youtube"] = {"error": str(e)[:160]}
+    reels, names = [], None
+    cutoff = now() - dt.timedelta(days=days)
+    for f in sorted(WEEKS.glob("*.json"))[-4:]:
+        for p in json.loads(f.read_text(encoding="utf-8"))["posts"]:
+            if p.get("status") != "published" or not p.get("fb_id") or not p.get("reel"):
+                continue
+            if dt.datetime.fromisoformat(p["publish_at"]) < cutoff:
+                continue
+            try:
+                data = graph_get(f"{p['fb_id']}/video_insights", {}).get("data", [])
+            except Exception as e:
+                reels.append({"id": p["id"], "error": str(e)[:120]})
+                continue
+            vals = {d.get("name"): (d.get("values") or [{}])[0].get("value") for d in data}
+            names = names or sorted(vals)
+            reels.append({"id": p["id"], "at": p["publish_at"][:16], **{k: v for k, v in vals.items() if isinstance(v, (int, float))}})
+    out["facebook_reels"] = reels
+    STATS_LOG.parent.mkdir(parents=True, exist_ok=True)
+    with STATS_LOG.open("a", encoding="utf-8") as fh:
+        fh.write(json.dumps(out, ensure_ascii=False) + "\n")
+    print("::notice title=stats::" + json.dumps({k: v for k, v in out.items() if k != "facebook_reels"}, ensure_ascii=False)[:900])
+    if names:
+        print("::notice title=facebook reel metrics::" + ", ".join(names)[:900])
+    for r in reels:
+        print("  fb reel " + json.dumps(r, ensure_ascii=False)[:400])
+    return out
+
+
 def preflight(url: str, kind: str) -> None:
     """Instagram only accepts media it can fetch with the right Content-Type. Check before we ask it to."""
     req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "jua-kesho/1.0"})
@@ -2568,7 +2619,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -2797,6 +2848,9 @@ def _main(argv: list[str] | None = None) -> int:
                     "exports/2026-W45/2026-w45-hot-1108-r4.jpg", "exports/2026-W44/2026-w44-hot-1101.jpg"):
             r = sourcecheck.check(f"{base}/{rel}", "")
             print(f"::notice::pages /{rel} -> {r.get('status')} {r.get('bytes', '')} {r.get('error', '')[:80]} {r.get('final', '')[:90]}")
+        return 0
+    if a.command == "stats":   # where the brand stands on every platform (reads only)
+        platform_stats()
         return 0
     if a.command == "labcheck":   # the street brand's sources, read from the runner
         import sourcecheck
