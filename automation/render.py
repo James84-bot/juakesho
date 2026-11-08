@@ -356,6 +356,9 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
     ctx["video_credit"] = (post.get("video_credit") or "") if full_footage else ""
     ctx["shots"], ctx["seq"] = [], []
     ctx["card"] = False   # True: the pictures sit whole in a card under the header (see reel.html.j2)
+    # the Reel's look (brand.json "reel_look"; a post's own "look" wins, "plain" asks for the dark card): "glass" =
+    # the photo blurred full screen behind a frosted frame and a frosted panel for the lines
+    ctx["look"] = str(post.get("look") or bk.BRAND.get("reel_look") or "")
     ctx["card_w"], ctx["card_h"] = card_size(W)
     if ctx.get("photo_uri") and not full_footage:
         from urllib.parse import unquote, urlparse
@@ -372,7 +375,7 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
                              "credit": str((meta[i] or {}).get("credit") or (ctx.get("photo_credit") if not i else "") or "")}
                             for i, f in enumerate(paths)]
             ctx["photo_band"] = 0
-            ctx["card"] = any(not fills_frame(f, W, H) for f in paths)   # one layout for all the pictures
+            ctx["card"] = ctx["look"] == "glass" or any(not fills_frame(f, W, H) for f in paths)   # one layout for all the pictures
             ctx["card_w"], ctx["card_h"] = card_size(W)
             for sh, f in zip(ctx["shots"], paths):
                 sh["fit"] = card_fit(f, *card_size(W)) if ctx["card"] else None

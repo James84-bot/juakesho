@@ -103,3 +103,30 @@ class Layout(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class GlassLook(unittest.TestCase):
+    """brand.json reel_look "glass": every photo Reel uses the framed layout, each shot has its own blurred
+    background, and the lines sit on the frosted panel; without it, the plain dark card is unchanged."""
+
+    def html(self, look):
+        import render
+        from PIL import Image
+        with tempfile.TemporaryDirectory() as tmp:
+            big = Path(tmp) / "big.jpg"
+            Image.new("RGB", (1600, 2400), (90, 60, 40)).save(big)   # tall and large: it would fill the frame without glass
+            post = {"id": "g", "template": "reel", "size": "story", "bg": "usiku", "publish_at": "2026-11-08T10:30:00+03:00",
+                    "kicker": "Sport", "beats": ["One *two* three.", "Four five six.", "Seven eight?"],
+                    "photo_file": str(big), "photo_credit": "Photo: X", "look": look}
+            return render.build_html(render.make_env(), post, motion=True)
+
+    def test_glass_frames_every_photo(self):
+        h = self.html("glass")
+        self.assertIn('class="gbg"', h)
+        self.assertIn('class="gpanel gl"', h)
+        self.assertIn('class="card', h)
+
+    def test_a_post_can_ask_for_the_plain_card(self):
+        h = self.html("plain")
+        self.assertNotIn('class="gbg"', h)
+        self.assertNotIn("gpanel", h)
