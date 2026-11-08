@@ -1,28 +1,6 @@
 {
-  "fetched": "2026-11-08T18:20:21.631007+00:00",
+  "fetched": "2026-11-08T18:33:10.486632+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "man u game today",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Video - Michael Carrick Makes Roma \"Best\" Claim Ahead Of Man Utd vs Aston Villa",
-          "url": "https://roundtable.io/sports/soccer/premier-league/manchester-united/video/michael-carrick-makes-roma-best-claim-ahead-of-man-utd-vs-aston-villa",
-          "source": "roundtable.io"
-        },
-        {
-          "title": "Man United hit 40-year low after dropping into Premier League relegation zone",
-          "url": "https://www.espn.com/soccer/story/_/id/50410672/man-united-premier-league-relegation-zone",
-          "source": "ESPN"
-        },
-        {
-          "title": "Crisis at Old Trafford! Man Utd hit 40-year low as Michael Carrick’s side drop into Premier League relegation zone",
-          "url": "https://www.goal.com/en-ke/news/man-utd-michael-carrick-premier-league-relegation-zone/bltff9d550be340fe50",
-          "source": "Goal.com"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "zion suzuki",
@@ -47,23 +25,23 @@
     },
     {
       "geo": "KE",
-      "title": "nicolas jackson",
+      "title": "freiburg fc",
       "traffic": "500+",
       "news": [
         {
-          "title": "He was supposed to join instead of Nicolas Jackson! Bayern Munich face a former transfer target",
-          "url": "https://www.goal.com/en/news/he-was-supposed-to-join-instead-of-nicolas-jackson-bayern-munich-face-a-former-transfer-target/blt4cafa377e9224dcb",
-          "source": "Goal.com"
+          "title": "Freiburger FC feiert 8:0-Kantersieg beim FC Zell",
+          "url": "https://breisgau.live/breisgaunews/freiburger-fc-feiert-80-kantersieg-beim-fc-zell/",
+          "source": "BreisgauLIVE"
         },
         {
-          "title": "Ademola Lookman Gains Hope For Revival At Atletico Madrid, As Coach Says: 'I Don't Want Him To Get Frustrated'",
-          "url": "https://www.sports247.ng/ademola-lookman-gains-hope-for-revival-at-atletico-madrid-as-coach-says-i-dont-want-him-to-get-frustrated/?noamp=mobile",
-          "source": "Sports247 Nigeria"
+          "title": "Frauen-Bundesliga: Freiburg leistet sich gegen Nürnberg zu viele Patzer",
+          "url": "https://www.sportschau.de/regional/swr/swr-deutliche-pleite-sc-freiburg-leistet-sich-gegen-den-1-fc-nuernberg-zu-viele-patzer-100.html",
+          "source": "sportschau.de"
         },
         {
-          "title": "Super Eagles: What Lookman needs to change at Atletico",
-          "url": "https://www.afrik-foot.com/en-ng/super-eagles-lookman-simeone-atletico",
-          "source": "Afrik-Foot"
+          "title": "Freiburger Fehler führen zu klarer Niederlage gegen Nürnberg",
+          "url": "https://www.swr.de/sport/media/freiburger-fehler-fuehren-zu-klarer-niederlage-gegen-nuernberg-100.html",
+          "source": "SWR"
         }
       ]
     },
@@ -73,9 +51,9 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "OL : Maciel fait appel à Fonseca pour battre Brest",
-          "url": "https://www.foot01.com/ol/ol-maciel-fait-appel-a-fonseca-pour-battre-brest",
-          "source": "Foot01"
+          "title": "Brest – OL : au tour de Corentin Tolisso de s’essayer en « 9 »",
+          "url": "https://www.olympique-et-lyonnais.com/brest-ol-au-tour-de-corentin-tolisso-de-sessayer-en-9,412466.html",
+          "source": "Olympique & Lyonnais"
         },
         {
           "title": "La vidéo de la belle enroulée de Noah Edjouma en première intention contre l'OL",
@@ -83,9 +61,9 @@
           "source": "L'Équipe"
         },
         {
-          "title": "DIRECT - Ligue 1 : vivez le match du Stade Brestois face à Lyon en direct avec Ici Breizh Izel",
-          "url": "https://www.ici.fr/bretagne/finistere-29/brest/direct-ligue-1-vivez-le-match-du-stade-brestois-face-a-lyon-en-direct-avec-ici-breizh-izel-9395954",
-          "source": "ici.fr"
+          "title": "Stade Brestois. Pour basculer vers le haut, il faut que Le Blé redevienne une place forte",
+          "url": "https://www.ouest-france.fr/sport/football/stade-brestois/stade-brestois-pour-basculer-vers-le-haut-il-faut-que-le-ble-redevienne-une-place-forte-266fad3e-db55-11f1-a45f-49114163a350",
+          "source": "Ouest-France"
         }
       ]
     },
@@ -122,14 +100,14 @@
           "source": "FotMob"
         },
         {
+          "title": "Alineaciones de Internazionale contra Como",
+          "url": "https://rcdm.es/alineaciones-de-internazionale-contra-como/",
+          "source": "rcdm.es"
+        },
+        {
           "title": "Inter de Milán – Como: horario y dónde ver hoy por TV el partido de fútbol de la Serie A",
           "url": "https://www.lavanguardia.com/deportes/futbol/20261107/2459/horario-partido-ca-inter-de-milan-como-ctx.html",
           "source": "La Vanguardia"
-        },
-        {
-          "title": "Inter – Como: Duelo de titantes en San Siro",
-          "url": "https://onefootball.com/es/noticias/inter-como-duelo-de-titantes-en-san-siro-43744900",
-          "source": "OneFootball"
         }
       ]
     },
@@ -159,6 +137,10 @@
   "dropped": [
     {
       "title": "monaco fc",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "celta vs levante",
       "why": "unsafe: 'Betting'"
     },
     {

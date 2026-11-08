@@ -1825,13 +1825,138 @@
       "fb_story_id": "39495577043419128",
       "yt_id": "YG9JtEv8TTI",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w45-hot-1108b2133",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Public jobs",
+      "line": "A pastor in Nyamira claims police, military and teaching *jobs* cost Ksh1M.",
+      "fact": "A pastor in Nyamira stated publicly that government jobs require payments of one million shillings.",
+      "source": "People Daily, 2026-11-08",
+      "photo_query": "Kenyan shilling banknotes",
+      "message": "Public service jobs should be free, but citizens report paying up to one million shillings.",
+      "action": "Report job corruption to the EACC hotline on 1551",
+      "beats": [
+        "A pastor in Nyamira claims government *jobs* cost one million shillings.",
+        "Families pay massive bribes to secure police and teaching posts.",
+        "Public service recruitment is supposed to be free and fair.",
+        "Tell us below: how much do corrupt networks demand for jobs?"
+      ],
+      "caption": "Public service jobs are a right, not a commodity for the highest bidder.\n\nTell us below: how much do corrupt networks demand for jobs?\n\n#KenyaOnRecord #CostOfLiving",
+      "who": "President William Ruto",
+      "where": "Nyamira",
+      "when": "8 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Job seekers lose millions of shillings to corruption while qualified youth stay home.",
+      "bg": "usiku",
+      "publish_at": "2026-11-08T21:53:00+03:00",
+      "hot": true,
+      "avoid": [
+        "FKF's special general meeting removed McDonald Mariga and six other officials after teargas chaos in Meru.",
+        "Safaricom must guarantee data privacy as its phone recycling numbers fall by 34%."
+      ],
+      "source_links": [
+        {
+          "outlet": "BBC",
+          "title": "Crystal Palace 1-3 Liverpool: Andoni Iraola post-match interview",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5QWVZmaVFZVVd3cFQ5RV95NWE0MnRUMzBGa1IxbmhQNkhJa2VkWFI5RmNPaEFYUTZROXIySk1FckthUFN0Yk9IaUNHU255anU2aUNnOGlVdzByT05ma0ZiTGJHNndhLUFS?oc=5",
+          "published": "2026-11-08"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Crystal Palace 1-3 Liverpool: Pierre Sage in big trouble as Eagles hit rock-bottom in Premier League",
+          "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPczhBM2hpc3puWEx4SjN3eWJGakNLVjJDbWVmZ1VoU0JBUHk0VDJLWlF1Mjk1am1mMnBpVEJvbEphSTdjSVlaemR5RTNOU1BDeTd3QVJ0Mi1UeVFnUHRpeW5qWEJSSDF5RHVweTBWMnVFX0JmVTZ6LVlWdElreDE1YVl6TThYTEJWT0dlTDZhcHRRbG9xMlRwVDVnZ0NaVjJnWG9XUlFnVC1meGd5QU5Hdk1kV1NydzdqQklKdUtNVXUxdlNVZ1lzNDZ1V2huVm9pVXZ3SkVoZUhnVWRlT0FKU3Rn?oc=5",
+          "published": "2026-11-08"
+        },
+        {
+          "outlet": "ESPN",
+          "title": "Andoni Iraola: Liverpool 'needed' win over Crystal Palace after difficult week",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNNm5qV3JUaE1MM243QmljaEI0MWxjVUNSVXI0RkQxMGF6OTFOTmRWb2dmZUFwU1IwbUh0ZWVLTFJZS0FOazVqelhUbG9wdnZ3czhsVER2b0tOT0NoeGMtRVN2LW16MkRyYWpBSnhPNTdJQlhfaG91OGtuSFFkZGwyWjVxV2IwandLN0VaaHFaUQ?oc=5",
+          "published": "2026-11-08"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Liverpool goalkeeper Alisson back to his best while Chelsea go back to square one - Premier League hits and misses",
+          "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQVzZJTG41NlB0X2lLMGlYUXZ1YU0tNXU4UFdLNFZ2NEdVN3AxZ2hOTnc4ejdZOWh0eEhBakVUak9iRjNHV2tPOTNCbWdUWlFMamNpcy1TbkV6ODZCWWJaOWRXNmZTUVM2NGVFN20yV2RqZnpMNlV4VUd3dE1reE5BcUxOb0FLQ0pFSl9rQ2VwMGtINmpKMGhmVzM1Nl92dl81Zl9wMkhHSXhQYXp2eEVMYXdsX183aVNQUTd4czg5V3N0VDRUR3Z2aUl0UmdlMV9BeUxKZXhLZmcxZklqcDV6QVlNSTMyT1dXRGlnYjZ6bjZFR0U?oc=5",
+          "published": "2026-11-08"
+        },
+        {
+          "outlet": "People Daily",
+          "title": "Ruto in Nyamira: Pastor claims police, military and teaching jobs cost Ksh1M",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMnRraHZiUzItcnMxMXMxckJwSDFkdVB1YWtnTEZaRHJJaHByM2dDWjhLVXF6QldaY2llV1p1cVpqWDNvT0Q3NVpfQVRVeW5LeFRlem1ySDNEQk1PRmRIUEc3aG9aamtWYmxjQ1JJOFd0SHBFTGpGVnBXdDNmUkE0Y1JacFJfRFhvamE2U3d2eXZZQk1CNjhoTENOZjZzX1VnbVhmcVpFZ3hHRlE?oc=5",
+          "published": "2026-11-08"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "serious allegation words: attribute them to the record ('the Auditor-General found', 'charged with', 'the court ruled') and keep the source in `source`"
+        ]
+      },
+      "breaking": {
+        "title": "Liverpool goalkeeper Alisson back to his best while Chelsea go back to square one - Premier League hits and misses",
+        "outlets": [
+          "BBC",
+          "ESPN",
+          "Sky Sports"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 8,
+        "action": 8,
+        "fair": 7,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.5,
+        "note": "none"
+      },
+      "drafted_at": "2026-11-08T21:44:32.602267+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W45/photos/2026-w45-hot-1108b2133-photo.jpg",
+      "photo_credit": "Photo: KBC · Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/president-ruto-begins-four-day-development-tour-in-gusii-region/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W45/photos/2026-w45-hot-1108b2133-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W45/photos/2026-w45-hot-1108b2133-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "President Ruto begins four-day development tour in Gusii region"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "Ruto urges Kenyans to elect leaders with clear development agendas"
+        },
+        {
+          "credit": "Photo: Capital FM",
+          "title": "UDA delegates endorse Aruasa for Kitutu Chache South MP seat"
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 937,
+      "auto": true,
+      "decided_at": "2026-11-08T21:47:23.062764+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening and welcome back to Kenya on Record. Today, let us talk about that old smartphone sitting in your drawer. Recent industry numbers show phone recycling through Safaricom has dropped by a sharp thirty-four percent. Why are Kenyans holding on to dead gadgets? It is not just sentimental attachment; it is a matter of data privacy.\n\nWhen you surrender a phone for e-waste or trade-in, what actually happens to your personal records? Your M-Pesa messages, family photos, saved passwords, and National ID scans? A standard factory reset often leaves digital remnants that any basic forensic tool can recover. Citizens are rightly concerned that their private lives might end up exposed once a device leaves the shop counter.\n\nElectronic waste is a serious environmental issue across our country, but ecological responsibility cannot come at the expense of our personal security. If Safaricom and partner recyclers want Kenyans to clear out their drawers, they must offer more than verbal assurances. We need verifiable, certified standards of secure data destruction—compliant with the Data Protection Act—so every consumer knows their digital identity is permanently erased before recycling begins.\n\nKwa ufupi kwa lugha ya taifa: Idadi ya Wakenya wanaorejesha simu kuukuu imeshuka kwa asilimia thelathini na nne kwa hofu ya usalama wa taarifa zao binafsi. Mashirika kama Safaricom lazima yatoe hakikisho la kisheria kuwa picha, jumbe, na siri zako zimefutwa kabisa kabla simu haijatupwa au kuuzwa tena. Usalama wa data kwanza.",
-    "voice_note": "Habari zenu. Quick check-in from Kenya on Record. Have you noticed how almost everyone has two or three dead smartphones lying in a drawer somewhere? Safaricom’s device recycling numbers dropped by thirty-four percent recently, and the reason is straightforward: Kenyans do not trust what happens to their personal data once they hand a phone over. And honestly, they are right. A basic factory reset does not always erase banking credentials, identity documents, or personal photos permanently. Unless telcos provide certified, irreversible data wiping right in front of the customer, people will choose to keep broken screens locked safely at home. E-waste is a real challenge, but identity theft and privacy leaks are immediate dangers. If corporate recycling programs want public participation, verified data protection must come first. Share this with anyone planning to trade in a device.",
-    "sms": "Usiibiwe: Trading in an old phone? Don't just factory reset. Encrypt the device first, wipe it, then remove SIM & SD cards to protect your personal data.",
-    "reels": "Why did phone recycling at Safaricom drop by thirty-four percent? Because Kenyans value their privacy. Handing over an old phone often means risking your photos, passwords, and M-Pesa statements falling into the wrong hands. A standard factory reset simply isn’t enough anymore. Until telcos offer certified, guaranteed data destruction under the Data Protection Act, those old devices will stay right where they are: locked in our drawers."
+    "radio": "Habari zenu, and welcome back to Kenya on Record on your community station. Over the weekend, millions of us were glued to our screens watching the English Premier League. We saw Alisson Becker produce another masterclass for Liverpool, while Chelsea struggled to find rhythm despite spending billions in the transfer market. Now, why talk about football on an accountability show? Because the pitch mirrors our society. Look at Chelsea: unmatched financial resources, massive hype, but chronic instability and poor planning. You cannot buy cohesion off the shelf. On the other hand, Liverpool shows what happens when you invest in reliable foundations and steady execution, anchored by a disciplined goalkeeper who does the hard work without unnecessary drama. In our own communities, we often fall for leaders who showcase flashy launches and mega-budgets, yet basic services fail because the underlying systems are rotten. Flashy spending without institutional discipline is just expensive noise. Whether in sports or governance, accountability and steady hands will always outperform chaotic wealth. Kwa ufupi kwa Kiswahili: Pesa nyingi bila mpango thabiti na nidhamu ni kazi bure. Kulegalega kwa Chelsea na uimara wa Alisson kule Liverpool kunatufunza kuwa msingi bora na uthabiti ndio huleta matokeo, si mbwembwe za bajeti kubwa.",
+    "voice_note": "Niaje watu wangu, this is Kenya on Record with a quick reflection. Over the weekend, Liverpool stayed in the title race thanks to a solid performance by Alisson, while Chelsea continued to struggle despite splashing hundreds of millions. Here is the lesson: money without a working system is completely useless. Whether it’s in football or in our own counties where leaders announce mega-projects that stall months later, flashiness never fixes a broken structure. Before we celebrate big budgets or empty political promises, let's look for competence, consistency, and basic accountability. Tuwache kusifu kelele ya pesa, tupime matokeo halisi. Have a productive week.",
+    "sms": "Usiibiwe: Beware of fraudsters selling 'fixed match' tips online. Nobody can guarantee game results. Protect your hard-earned money from sports betting scams.",
+    "reels": "Look at Chelsea and Liverpool this season. One spends hundreds of millions and stays in chaos; the other invests in clear structure and relies on steady hands like Alisson Becker. It’s a reality check for how we run things back home. Flashy PR and giant budgets mean nothing without discipline and proper systems. Stop clapping for expensive noise. Demand accountability."
   },
   "spend_usd": 0.0
 }
