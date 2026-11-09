@@ -304,47 +304,434 @@
     {
       "id": "2026-w46-d5-straight",
       "template": "straight",
-      "bg": "usiku",
       "lane": "campus",
+      "series": "Myth or Fact",
+      "claim": "Guaranteed overseas jobs are waiting for you through viral TikTok ads.",
+      "who": "National Employment Authority",
+      "truth": "The Ministry warned Kenyan youth against fake overseas job ads.",
+      "pride": "Check all recruitment agencies on the NEA portal.",
+      "claim_source": "Capital FM News, 2026-11-09",
+      "source": "People Daily, 2026-11-08",
+      "proof": [
+        "Scammers use fake TikTok ads to target job-seeking youth.",
+        "Victims lose money to unregistered recruitment agents.",
+        "Always check the NEA register before paying any agency fees."
+      ],
+      "verdict": "false",
+      "beats": [
+        "Viral *TikTok* ads promise guaranteed jobs abroad.",
+        "The Ministry warns these offers are often *fakes*.",
+        "Verify every agency with the National Employment Authority.",
+        "Did you check the NEA list before applying?"
+      ],
+      "message": "TikTok job adverts for overseas employment are being used to fleece Kenyan youth.",
+      "action": "Check the official NEA portal before applying for any job abroad.",
+      "photo_query": "smartphone screen social media Kenya",
+      "bg": "usiku",
       "publish_at": "2026-11-13T17:00:00+03:00",
-      "status": "planned",
       "angle": "myth",
-      "series": "Myth or Fact"
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Job seekers risk losing savings to unregistered foreign recruitment agencies.",
+      "where": "National",
+      "when": "9 Nov 2026",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "TikTok job adverts: Kenyan youth warned of fake overseas employment offers",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0pvWEhpbkF6UmFJbzNrWVZJSUNDOWF2dEJlY3V4eEFySk8wSU9KSWkwTUw5QkRRQU1Ib0h3a1NkSUJabXF0bmxQMVhQUVdqcHJ4b29TMW5ZV2I1VWpCT3B3dkZibWtURVB1NzM3bXpHeF95ZjBmczJ4elJCbFRHVTVvSHVnc1dISVlxNnBhbjlFTEtXZzNvZWRiLWo4NE9INW5CM3lpM05KZw?oc=5",
+          "published": "2026-11-08"
+        }
+      ],
+      "material": {
+        "kind": "myth",
+        "key": "news:https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0pvWEhpbkF6UmFJbzNrWVZJSUNDOWF2dEJlY3V4eEFySk8wSU9KSWkwTUw5QkRRQU1Ib0h3a1NkSUJabXF0bmxQMVhQUVdqcHJ4b29TMW5ZV2I1VWpCT3B3dkZibWtURVB1NzM3bXpHeF95ZjBmczJ4elJCbFRHVTVvSHVnc1dISVlxNnBhbjlFTEtXZzNvZWRiLWo4NE9INW5CM3lpM05KZw?oc=5",
+        "title": "TikTok job adverts: Kenyan youth warned of fake overseas employment offers",
+        "outlet": "People Daily",
+        "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0pvWEhpbkF6UmFJbzNrWVZJSUNDOWF2dEJlY3V4eEFySk8wSU9KSWkwTUw5QkRRQU1Ib0h3a1NkSUJabXF0bmxQMVhQUVdqcHJ4b29TMW5ZV2I1VWpCT3B3dkZibWtURVB1NzM3bXpHeF95ZjBmczJ4elJCbFRHVTVvSHVnc1dISVlxNnBhbjlFTEtXZzNvZWRiLWo4NE9INW5CM3lpM05KZw?oc=5",
+        "published": "2026-11-08"
+      },
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 8.0,
+        "note": "Solid execution on safety warning."
+      },
+      "drafted_at": "2026-11-09T09:39:35.148175+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d5-straight-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/kenyan-youth-warned-against-fraudsters-exploiting-demand-for-overseas-jobs/",
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Kenyan youth warned against fraudsters exploiting demand for overseas jobs"
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 960,
+      "auto": true,
+      "decided_at": "2026-11-09T09:45:49.139412+03:00"
     },
     {
       "id": "2026-w46-d6-kenya",
       "template": "kenya",
-      "bg": "usiku",
       "lane": "hustle",
+      "series": "Built in Kenya",
+      "place": "Nairobi to Thika",
+      "line": "The *eight-lane* road connects Nairobi to Thika across 50 kilometres.",
+      "fact": "The eight-lane road runs about 50 kilometres from Nairobi to Thika and was launched in November 2012.",
+      "source": "https://allafrica.com/stories/201211120503.html",
+      "beats": [
+        "The Thika road runs *50 kilometres* from Nairobi.",
+        "It features eight lanes built to ease heavy traffic.",
+        "The road was officially opened to the public in 2012.",
+        "Have you used this road during rush hour?"
+      ],
+      "message": "The 50-kilometre Thika road connects Nairobi and Thika with eight lanes.",
+      "action": "Share this with someone who commutes along the Thika road every day.",
+      "photo_query": "Thika Superhighway Kenya",
+      "bg": "usiku",
       "publish_at": "2026-11-14T11:00:00+03:00",
-      "status": "planned",
-      "series": "Built in Kenya"
+      "side": "none",
+      "tone": "credit",
+      "source_links": [
+        {
+          "outlet": "AllAfrica",
+          "title": "Thika Superhighway: The eight-lane road runs about 50 kilometres from Nairobi to Thika and was launched in November 2012.",
+          "link": "https://allafrica.com/stories/201211120503.html",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:thika-road",
+        "id": "thika-road",
+        "series": "Built in Kenya",
+        "place": "Nairobi to Thika",
+        "name": "Thika Superhighway",
+        "fact": "The eight-lane road runs about 50 kilometres from Nairobi to Thika and was launched in November 2012.",
+        "source": "https://allafrica.com/stories/201211120503.html",
+        "outlet": "AllAfrica",
+        "photo_query": "Thika Superhighway Kenya"
+      },
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "no caption yet"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 8.0,
+        "note": "Clear infrastructure showcase."
+      },
+      "drafted_at": "2026-11-09T09:39:35.148183+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d6-kenya-photo.jpg",
+      "photo_credit": "Photo: Jkimanij / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Thika_road.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Jkimanij / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Adventures in Adventureland\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 961,
+      "auto": true,
+      "decided_at": "2026-11-09T09:45:49.139425+03:00"
     },
     {
       "id": "2026-w46-d7-glasspoll",
       "template": "glasspoll",
-      "bg": "usiku",
       "lane": "everyone",
+      "hook": "2027 Alliances",
+      "question": "Will opposition realignments stop Ruto?",
+      "cta": "Comment A or B to vote.",
+      "options": [
+        "A) Yes, unity helps",
+        "B) No, check records"
+      ],
+      "message": "Kenyans debate whether opposition unity can defeat the ruling coalition in 2027.",
+      "action": "Comment A or B in the comments.",
+      "beats": [
+        "Opposition leaders are moving to consolidate regional support.",
+        "New alliances are shaping up ahead of the 2027 race.",
+        "Voters must weigh party unity against actual delivery records.",
+        "Will opposition realignments stop Ruto?"
+      ],
+      "photo_query": "ballot box Kenya",
+      "bg": "usiku",
       "publish_at": "2026-11-15T18:00:00+03:00",
-      "status": "planned",
-      "size": "story"
+      "size": "story",
+      "side": "both",
+      "tone": "explainer",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet",
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 9,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 8.1,
+        "note": "Taps directly into current 2027 political realignments."
+      },
+      "drafted_at": "2026-11-09T09:39:35.148184+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d7-glasspoll-photo.jpg",
+      "photo_credit": "Photo: Francis Akuka for the Wikimedia Foundation / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_Kenya_05.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Francis Akuka for the Wikimedia Foundation / Wikimedia Commons, CC0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Who Likes to Party\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 962
     },
     {
       "id": "2026-w46-d4-money",
       "template": "money",
-      "bg": "usiku",
       "lane": "everyone",
+      "hook": "Bank Fraud Losses",
+      "number": "Sh1.9bn",
+      "unit": "Kenyan banks lost to fraud",
+      "what": "CBK faces fresh regulatory pressure as bank fraud losses hit billions.",
+      "why": "System vulnerabilities directly threaten customer deposits and savings.",
+      "check": "Verify banking safety reports through the Central Bank of Kenya.",
+      "beats": [
+        "Kenyan banks lost *Sh1.9 billion* to fraud according to People Daily.",
+        "The Central Bank faces pressure over system safety.",
+        "Financial crimes directly threaten ordinary customer savings.",
+        "Has your bank improved its security alerts yet?"
+      ],
+      "message": "Kenyan banks lost Sh1.9 billion to fraud, putting pressure on the Central Bank.",
+      "action": "Report any unauthorized transactions to your bank immediately.",
+      "photo_query": "Kenyan shilling banknotes",
+      "bg": "usiku",
       "publish_at": "2026-11-12T19:30:00+03:00",
-      "status": "planned",
+      "series": "The Real Price",
       "angle": "real_price",
-      "series": "The Real Price"
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Account holders risk losing deposits through security gaps in commercial banks.",
+      "who": "Central Bank Governor Kamau Thugge",
+      "where": "National",
+      "when": "9 Nov 2026",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "The price of disagreeing with power",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTGJ2NU9McUlGRmVXMUxQcmFROUNNZ1I0X0Z5V3c0Nmc5cmxzRUdndGtPMEZ6Y1h2UXF2UnowcmZSRE9sR0pVQk9mRnRUS3l5b1RUaC1TWWw1VlpUc1M3U2pwT29OdEoxMnA3ckFXY2kwWklQeHhnQzBhWGhUeHJNMl9qUGFKbGF3cVRtN2dOOHdDSnIzMFF1bQ?oc=5",
+          "published": "2026-11-09"
+        }
+      ],
+      "material": {
+        "kind": "price",
+        "key": "news:https://news.google.com/rss/articles/CBMimAFBVV95cUxNTGJ2NU9McUlGRmVXMUxQcmFROUNNZ1I0X0Z5V3c0Nmc5cmxzRUdndGtPMEZ6Y1h2UXF2UnowcmZSRE9sR0pVQk9mRnRUS3l5b1RUaC1TWWw1VlpUc1M3U2pwT29OdEoxMnA3ckFXY2kwWklQeHhnQzBhWGhUeHJNMl9qUGFKbGF3cVRtN2dOOHdDSnIzMFF1bQ?oc=5",
+        "title": "The price of disagreeing with power",
+        "outlet": "Daily Nation",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTGJ2NU9McUlGRmVXMUxQcmFROUNNZ1I0X0Z5V3c0Nmc5cmxzRUdndGtPMEZ6Y1h2UXF2UnowcmZSRE9sR0pVQk9mRnRUS3l5b1RUaC1TWWw1VlpUc1M3U2pwT29OdEoxMnA3ckFXY2kwWklQeHhnQzBhWGhUeHJNMl9qUGFKbGF3cVRtN2dOOHdDSnIzMFF1bQ?oc=5",
+        "published": "2026-11-09"
+      },
+      "source": "Daily Nation, 2026-11-09",
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "accusation: a named person with an allegation needs two outlets or an official source (court, EACC, DPP, Auditor-General, a .go.ke page)",
+          "'Daily' is not in this post's material (The price of disagreeing with power): say only what it states",
+          "the linked report is not about this story (The price of disagreeing with power): use the headline id of the report this post is really based on"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "no caption yet",
+          "possible named person(s): Bank Fraud Losses, Central Bank, Central Bank Governor, Kamau Thugge National, People Daily. Civic posts target systems, not people."
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 8.0,
+        "note": "Clear financial crime impact numbers."
+      },
+      "drafted_at": "2026-11-09T09:39:35.148185+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-d4-money-photo.jpg",
+      "photo_credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_50_Shilling_banknote,_reverse.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Jlewistexas / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 963
+    },
+    {
+      "id": "2026-w46-hot-1109",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Snakebite Crisis",
+      "line": "Snakebite victims face a life-or-death struggle as antivenom costs *Sh12,000*.",
+      "fact": "Many rural families cannot afford the steep cost of antivenom treatment.",
+      "source": "People Daily, 2026-11-09",
+      "beats": [
+        "Antivenom treatment costs up to *Sh12,000* in local clinics.",
+        "Families in rural areas struggle to raise this amount.",
+        "Delayed treatment puts snakebite victims at high risk.",
+        "Can your local dispensary provide antivenom for free?"
+      ],
+      "message": "Snakebite antivenom costs Sh12,000, putting lives at risk in rural Kenya.",
+      "action": "Ask your county health executive if public clinics stock free antivenom.",
+      "photo_query": "hospital ward Kenya",
+      "bg": "usiku",
+      "publish_at": "2026-11-09T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Rural families face fatal delays accessing expensive antivenom in public hospitals.",
+      "who": "Cabinet Secretary for Health Deborah Barasa",
+      "where": "National",
+      "when": "9 Nov 2026",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Inside Kenya’s snakebite crisis where Ksh12,000 for antivenom can mean life or death",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQX1pYM1c2TFdOcUJBR2VndUxubVVTaGZ4TWE4blhQdlU3bk9MRDgxbnFYZllmb0ZucWFxLVA1cTY1bmxON204ZzQ5aDFRdlVCUUdXTVNTYmo3X3k2QlB6QVE2NWxxZ2hTdEV0ZlJLUWtSQnIxN0VwS2JsRVZJSklZbHhpOVFhd1duTUwzRy1aZFJfaWpPeHNON3dReER1bjZac1lZVmI0MmFBSkplRWluTElXV1lxdw?oc=5",
+          "published": "2026-11-09"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "no caption yet"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 8,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.9,
+        "note": "none"
+      },
+      "drafted_at": "2026-11-09T09:39:35.148186+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1109-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127801-kemsa-moves-reduce-medical-supplies-shortages-and-waste-public-hospitals",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1109-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1109-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "State Reveals New Plan to Address Medicine Shortages in Hospitals"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "KNH Responds After Patient Accuses Hospital of Rejection Despite Paying Ksh45,000"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Over 300,000 to Benefit as Govt Announces Upgrade to County Hospital"
+        }
+      ],
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 964,
+      "auto": true,
+      "decided_at": "2026-11-09T09:45:49.139435+03:00"
     }
   ],
   "scripts": {
-    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni wako, na leo tunaangazia mambo matatu mazito ya wiki hii.\n\nTunaanza na mfuko wako. Ijumaa hii, tarehe kumi na nne ya mwezi huu wa Novemba, EPRA inatazamiwa kutangaza bei mpya za mafuta. Petroli, diseli na mafuta ya taa yanapanda ama yanashuka? Tunajua bei hizi zikicheza juu, kila kitu sokoni kinapandishwa. Kuwa mwangalifu na bajeti yako ya usafiri na biashara wiki hii.\n\nPili, habari njema kutoka kwa mandhari yetu. Je, ulijua kwamba mlima wetu mtukufu, Mount Kenya, unasimama kwa urefu wa mita elfu tano mia moja tisini na tisa juu ya usawa wa bahari? Hiyo inaufanya kuwa mlima wa pili kwa urefu barani Afrika nzima. Kitu cha kujivunia kama Wakenya.\n\nNa mwisho, kwa wale wapenzi wa mpira wa miguu, tiketi za mechi ya Bayern Munich na Ajax itakayochezwa hapa hapa uwanjani Talanta zitauzwa kwa shilingi elfu mbili mia tano kwa tiketi za kawaida. Anza kujipanga mapema kama unataka kushuhudia soka ya kimataifa live.\n\n***\n\n*Kwa ufupi:* Siku ya Ijumaa tarehe 14, EPRA inatathmini bei mpya za mafuta. Kumbuka mlima wetu wa Kenya ndio wa pili kwa urefu barani Afrika kwa mita 5,199, na tiketi za kawaida za mechi ya Bayern dhidi ya Ajax uwanjani Talanta ni Sh2,500. Tuwe macho na pesa zetu.",
-    "voice_note": "Wadau, mambo vipi? Wiki hii ina mambo mengi mazito. Kwanza kabisa, Ijumaa hii tarehe 14 Novemba, EPRA wanatoa bei mpya za mafuta—kuwa makini na bajeti yako kwa sababu bei za petroli, diseli na kerosene zinaweza kubadilika. Pili, kwa mashabiki wa soka, tiketi za kawaida za mechi ya Bayern Munich na Ajax hapo uwanjani Talanta zimetangazwa kuwa Sh2,500 pekee. Na mwisho, tuwe na kiburi cha nchi yetu; Mount Kenya bado ndio mlima wa pili kwa urefu barani Afrika ukiwa na mita 5,199. Panga pesa zako vizuri wiki hii, usiibiwe!",
-    "sms": "Usiibiwe wiki hii: Fuatilia tangazo la EPRA tarehe 14 kuhusu bei mpya za mafuta. Bajeti yako ya usafiri izingatie mabadiliko hayo. Weka akiba!",
-    "reels": "Wakenya wenzangu, wiki hii ina mambo matatu ya kukumbuka! Tarehe 14 Novemba, EPRA wanatathmini bei mpya za petroli, diseli na mafuta ya taa—panga mfuko wako mapema usije ukashangaa. Pili, kama unapenda soka, weka kando shilingi elfu mbili mia tano kwa ajili ya tiketi za kawaida za Bayern dhidi ya Ajax hapo Talanta Stadium. Na mwisho kabisa, kumbuka mlima wetu wa kipekee, Mount Kenya, unasimama kwa urefu wa mita 5,199 kama mlima wa pili kwa urefu barani Afrika. Kaa chonjo na pesa zako, na usisahau kufuatilia Kenya on Record kwa ukweli mtupu!"
+    "radio": "Sasa, wasikilizaji, na karibu kwa Kenya on Record. Mimi ni sauti yako ya uwajibikaji. Wiki hii, kuna mambo mengi yaliyotokea, na lazima tuseme ukweli bila kuuma maneno.\n\nTunaanza na hili la TikTok. Vijana wetu wanatafuta kazi nje ya nchi, lakini matangazo ya uongo yamekuwa mitego ya kuwaibia pesa. Tafadhali, hakiki kabla hujatuma hata bob moja kwa hao mawakala wa mtandaoni.\n\nTukiangazia uchumi wetu, ripoti inaonyesha mabenki ya Kenya yalipoteza Sh1.9 bilioni kwa visa vya udanganyifu mwaka huu pekee. Hii inaweka shinikizo kubwa kwa Benki Kuu kulinda pesa za wananchi. Wakati huo huo, kule mashambani, maisha yako hatarini. Dawa ya kuumwa na nyoka, antivenom, inagharimu Sh12,000. Mkulima wa kawaida anatoa wapi pesa hizi? Serikali lazima iangalie afya ya mashambani.\n\nKwenye siasa, mitaani na vijiweni mijadala ni moto. Wakenya wanajiuliza: Je, muungano wa upinzani utaweza kusimama pamoja na kuangusha serikali iliyoko madarakani mwaka wa 2027? Wakati hayo yakiendelea, hebu tukumbuke barabara yetu ya Thika Superhighway yenye kilomita hamsini na njia nane bado ni mfano mzuri wa maendeleo, lakini maendeleo hayana maana kama wananchi wanapoteza pesa kwa ulaghai na magonjwa.\n\n[Kiswahili Summary]\nKwa ufupi wiki hii: Tapeli za kazi za TikTok zinawanyonya vijana, benki zimepoteza Sh1.9 bilioni kwa udanganyifu, na antivenom ya nyoka inagharimu Sh12,000 huko mashambani. Siasa za 2027 zimeshika kasi, huku Thika Superhighway ikiendelea kuunganisha Nairobi na Thika.",
+    "voice_note": "Wadau, mambo vipi? Hapa ni Kenya on Record na dondoo za wiki hii. Kwanza kabisa, jihadharini na matangazo ya kazi za nje kupitia TikTok; vijana wengi wanapigwa jeki na kutapeliwa. Hiyo sio yote—mabenki yetu yametepeta baada ya kupoteza Sh1.9 bilioni kwa wajanja wa fraud. Serikali na Central Bank lazima waimarishe usalama wa pesa zetu. Kule vijijini, hali ni ngumu sana kwa sababu antivenom ya nyoka inauzwa Sh12,000. Mtu wa kawaida ataishi aje? Na kwenye siasa, mjadala ni mkali kuhusu kama upinzani utashikamana mnamo 2027. Kuwa mwangalifu, kaa rada na ufuatilie Kenya on Record wiki hii.",
+    "sms": "Usiibiwe! Usitume pesa kwa mawakala wa kazi wa mtandaoni kabla ya kuthibitisha uhalali wao kupitia mamlaka husika. Linda pesa zako leo.",
+    "reels": "Vijana, macho yenu! Hawa watu wanaoweka matangazo ya kazi za overseas kwenye TikTok hawana nia njema—wanawapora pesa zenu za jasho. Kabla hujatuma hata shilingi elfu moja kwa wakala wa mtandaoni, thibitisha kibali chake. Usikubali kuwa takwimu nyingine ya ulaghai. Kaa rada na Kenya on Record!"
   },
   "spend_usd": 0.0
 }
