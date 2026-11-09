@@ -1,6 +1,51 @@
 {
-  "fetched": "2026-11-09T15:38:09.264080+00:00",
+  "fetched": "2026-11-09T19:58:45.849314+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "m-pesa",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Boniface Mungania is now Safaricom's permanent M-PESA boss after three months as interim",
+          "url": "https://tech-ish.com/2026/11/06/safaricom-boniface-mungania-m-pesa-chief/",
+          "source": "Techish Kenya"
+        },
+        {
+          "title": "Boniface Mungania appointed Safaricom's new chief financial services officer",
+          "url": "https://www.the-star.co.ke/news/2026-11-06-mungania-appointed-safaricoms-new-chief-financial-services-officer",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Safaricom confirms Mungania as M-PESA boss",
+          "url": "https://africabusinesscommunities.com/tech-24/safaricom-confirms-mungania-as-m-pesa-boss/",
+          "source": "Africa Business Communities"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kra october paye deadline",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Employers face final hours to file October PAYE returns",
+          "url": "https://www.the-star.co.ke/news/2026-11-09-employers-face-final-hours-to-file-october-paye-returns",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "KRA Issues Directive to Employers Ahead of Monday Tax Deadline",
+          "url": "https://www.kenyans.co.ke/news/129187-kra-issues-9-point-checklist-employers-ahead-november-9-paye-deadline",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "What employers must do before Monday’s KRA PAYE deadline",
+          "url": "https://www.pulse.co.ke/story/employers-warned-over-mondays-kra-paye-filing-deadline-2026110609000938483",
+          "source": "Pulse Kenya"
+        }
+      ],
+      "civic": true
+    },
     {
       "geo": "KE",
       "title": "kenya school heads convention mombasa",
@@ -25,164 +70,8 @@
     },
     {
       "geo": "KE",
-      "title": "gcse",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Secondary schools told to stop teaching GCSEs before Year 10",
-          "url": "https://www.bbc.com/news/articles/c680z89dk827o",
-          "source": "BBC"
-        },
-        {
-          "title": "Andy Burnham government confirms shake up for Year 7, 8 and 9 pupils",
-          "url": "https://www.lincolnshirelive.co.uk/news/uk-world-news/andy-burnham-government-confirms-shake-11233605",
-          "source": "Lincolnshire Live"
-        },
-        {
-          "title": "Teaching GCSE topics younger risks turning schools into ‘early exam factories’, Powell warns",
-          "url": "https://www.theguardian.com/education/2026/nov/08/gcses-teaching-england-curriculum-education-secretary-lucy-powell",
-          "source": "The Guardian"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kra october paye deadline",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Employers face final hours to file October PAYE returns",
-          "url": "https://www.the-star.co.ke/news/2026-11-09-employers-face-final-hours-to-file-october-paye-returns",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "KRA Issues Directive to Employers Ahead of Monday Tax Deadline",
-          "url": "https://www.kenyans.co.ke/news/129187-kra-issues-9-point-checklist-employers-ahead-november-9-paye-deadline",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "What employers must do before Monday’s KRA PAYE deadline",
-          "url": "https://www.pulse.co.ke/story/employers-warned-over-mondays-kra-paye-filing-deadline-2026110609000938483",
-          "source": "Pulse Kenya"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "israel",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Israel’s president picks Eisenkot over Netanyahu to form next government",
-          "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government",
-          "source": "Al Jazeera"
-        },
-        {
-          "title": "Netanyahu rival tasked with forming next Israeli government. But the path remains complicated",
-          "url": "https://www.cnn.com/2026/11/07/middleeast/eisenkot-israel-government-latam-intl",
-          "source": "CNN"
-        },
-        {
-          "title": "Gadi Eisenkot reaches out to Netanyahu allies as he strives to form government",
-          "url": "https://www.theguardian.com/world/2026/nov/08/gadi-eisenkot-netanyahu-allies-form-israel-government",
-          "source": "The Guardian"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "nvidia",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Who is the suspected Chinese spy at centre of the Nvidia investigation?",
-          "url": "https://www.bbc.com/news/videos/c80404zyr53wo",
-          "source": "BBC"
-        },
-        {
-          "title": "Nvidia CEO Jensen Huang admits affair as company launches investigation into foreign spy claims",
-          "url": "https://www.cnn.com/2026/11/08/business/nvidia-investigation-ceo-jensen-huang",
-          "source": "CNN"
-        },
-        {
-          "title": "Rubio Warned Officials About Nvidia Chief’s Entanglement With Chinese Spy",
-          "url": "https://www.nytimes.com/2026/11/08/us/politics/rubio-nvidia-ceo-chinese-spy.html",
-          "source": "The New York Times"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "initial public offering",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Quickmart founders blocked from buying extra Sh890m stake",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/quickmart-founders-blocked-from-buying-extra-sh890m-stake-5663420",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Quick Mart IPO oversubscribed by 22.7 per cent, attracts Sh18.4 billion in applications",
-          "url": "https://eastleighvoice.co.ke/business/421457/quick-mart-ipo-oversubscribed-by-227-per-cent-attracts-sh184-billion-in-applications",
-          "source": "The Eastleigh Voice"
-        },
-        {
-          "title": "Quickmart Reveals New Ownership Structure After Oversubscribed NSE Sale",
-          "url": "https://www.tuko.co.ke/business-economy/capital-market/646127-quickmart-reveals-ownership-structure-oversubscribed-nse-sale/",
-          "source": "Tuko News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "harry maguire",
+      "title": "ndakaini",
       "traffic": "200+",
-      "news": [
-        {
-          "title": "Carrick explains Maguire change",
-          "url": "https://www.manutd.com/en/news/michael-carrick-explains-harry-maguire-change",
-          "source": "Manchester United"
-        },
-        {
-          "title": "Man Utd injury update: Maguire, Baleba, Rashford latest return dates",
-          "url": "https://www.standard.co.uk/sport/football/man-utd-injury-update-maguire-baleba-rashford-latest-news-return-dates-b1304039.html",
-          "source": "London Evening Standard"
-        },
-        {
-          "title": "Liverpool vs. Man United: Michael Carrick injury boost as \"spasm\" timeline revealed before Anfield Premier League game",
-          "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/injury-boost-carrick-on-spasm-timeline-as-united-face-defining-anfield-clash_608752.html",
-          "source": "Sports Mole"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "central bank of kenya",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Mbadi seeks CBK truce on Sh10bn bank capital fallout",
-          "url": "https://www.businessdailyafrica.com/bd/economy/mbadi-seeks-cbk-truce-on-sh10bn-bank-capital-fallout-5663424",
-          "source": "Business Daily"
-        },
-        {
-          "title": "14 Banks face downgrade as CBK enforces KSh 5 Billion capital requirement by December 2026",
-          "url": "https://biznakenya.com/14-banks-face-downgrade-as-cbk-enforces-ksh-5-billion-capital-requirement-by-december-2026/",
-          "source": "Bizna Kenya"
-        },
-        {
-          "title": "Treasury and CBK clash over bank capital deadlines as compliance pressure mounts",
-          "url": "https://techtrendske.co.ke/2026/11/09/kenya-bank-capital-requirements/",
-          "source": "TechTrendsKE"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "water",
-      "traffic": "100+",
       "news": [
         {
           "title": "Longer water rationing periods for Nairobi residents as Ndakaini Dam levels fall",
@@ -200,12 +89,68 @@
           "source": "The Standard"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "kihunguro service lane closure kenha",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Five weeks of traffic disruption as KeNHA begins Kihunguro Bridge works",
+          "url": "https://www.standardmedia.co.ke/national/article/2001561892/five-weeks-of-traffic-disruption-as-kenha-begins-kihunguro-bridge-works",
+          "source": "The Standard"
+        },
+        {
+          "title": "KeNHA announces month long closure of Thika-bound service lanes",
+          "url": "https://www.the-star.co.ke/news/2026-11-09-kenha-announces-month-long-closure-of-thika-bound-service-lanes",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "KeNHA announces month-long traffic disruptions along Thika Superhighway",
+          "url": "https://www.pulse.co.ke/story/kenha-announces-month-long-traffic-disruptions-along-thika-superhighway-2026110912194417683",
+          "source": "Pulse Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "las palmas vs eldense",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Jesé busca superar a Fidel en un duelo histórico",
+          "url": "https://as.com/futbol/segunda/jese-busca-superar-a-fidel-en-un-duelo-historico-f202611-n/",
+          "source": "Diario AS"
+        },
+        {
+          "title": "El partido (J13) #LasPalmasEldense se disputará mañana, lunes 9 de noviembre, a las 19:30 horas (hora canaria), en el Estadio Gran Canaria.",
+          "url": "https://www.udlaspalmas.es/noticias/el-partido-j13-laspalmaseldense-se-disputara-manana-lunes-9-de-noviembre-a-las-1930-horas-hora-canaria-en-el-estadio-gran-canaria",
+          "source": "UD Las Palmas"
+        },
+        {
+          "title": "La UD jugará el lunes tras una prohibición que Gran Canaria anuló antes de empezar",
+          "url": "https://www.canariasenpleno.com/la-ud-jugara-el-lunes-tras-una-prohibicion-que-gran-canaria-anulo-antes-de-empezar/",
+          "source": "Canarias en Pleno"
+        }
+      ]
     }
   ],
   "dropped": [
     {
+      "title": "valerenga fc",
+      "why": "unsafe: 'betting'"
+    },
+    {
+      "title": "citizen live",
+      "why": "unsafe: 'killed'"
+    },
+    {
       "title": "russell brand",
       "why": "unsafe: 'rape'"
+    },
+    {
+      "title": "israel",
+      "why": "unsafe: 'Flood'"
     }
   ],
   "errors": {}
