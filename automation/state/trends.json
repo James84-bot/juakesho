@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-09T22:59:19.055034+00:00",
+  "fetched": "2026-11-09T23:52:57.580931+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -48,23 +48,58 @@
     },
     {
       "geo": "KE",
+      "title": "ndakaini",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Longer water rationing periods for Nairobi residents as Ndakaini Dam levels fall",
+          "url": "https://nation.africa/kenya/counties/nairobi/longer-water-rationing-periods-for-nairobi-residents-as-ndakaini-dam-levels-fall-5664110",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Nairobi, 3 Other Counties to Face Extended Water Rationing as Utility Company Issues Warning",
+          "url": "https://www.kenyans.co.ke/news/129245-nairobi-water-warns-longer-rationing-after-35-water-supply-reduction",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Nairobi residents face 24-hour water interruption in planned maintenance",
+          "url": "https://www.the-star.co.ke/news/2026-11-08-nairobi-residents-face-24-hour-water-interruption-in-planned-maintenance",
+          "source": "The Star, Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "banknote",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "The Central Bank of Cuba celebrates the nomination of its 5,000 peso bill for the 2026 Banknote of the Year award",
+          "url": "https://en.cibercuba.com/noticias/2026-11-09-u1-e74-s27061-nid345336-banco-central-cuba-celebra-nominacion-billete-5000-pesos",
+          "source": "CiberCuba"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
       "title": "las palmas vs eldense",
       "traffic": "500+",
       "news": [
         {
-          "title": "Resumen y goles del Las Palmas vs. Eldense, jornada 13 de LaLiga Hypermotion",
-          "url": "https://as.com/futbol/videos/resumen-y-goles-del-las-palmas-vs-eldense-jornada-13-de-laliga-hypermotion-f202611-v/",
+          "title": "Las Palmas 2-0 Eldense: resumen, goles y resultado",
+          "url": "https://as.com/futbol/segunda/las-palmas-eldense-en-directo-laliga-hypermotion-hoy-en-vivo-f202611-d/",
           "source": "Diario AS"
         },
         {
-          "title": "Albert Sánchez: “Lo más importante no es quién juegue, es el equipo\"",
-          "url": "https://www.udlaspalmas.es/noticias/albert-sanchez-lo-mas-importante-no-es-quien-juegue-es-el-equipo",
-          "source": "UD Las Palmas"
+          "title": "Jefté Betancor: \"Es un partido que te duele\"",
+          "url": "https://www.infobae.com/espana/agencias/2026/11/09/jefte-betancor-es-un-partido-que-te-duele/",
+          "source": "Infobae"
         },
         {
-          "title": "Álex Suárez y Jefté, delirio en el descuento",
-          "url": "https://www.canarias7.es/deportes/ud-las-palmas/alex-suarez-jefte-delirio-descuento-20261109213951-nt.html",
-          "source": "Canarias7"
+          "title": "\"Jefté marca y el compañero que más se alegra es Jesé\"",
+          "url": "https://www.tintaamarilla.es/jefte-marca-y-el-companero-que-mas-se-alegra-es-jese/",
+          "source": "Tinta Amarilla"
         }
       ]
     },
@@ -87,28 +122,6 @@
     },
     {
       "geo": "KE",
-      "title": "ndakaini",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Longer water rationing periods for Nairobi residents as Ndakaini Dam levels fall",
-          "url": "https://nation.africa/kenya/counties/nairobi/longer-water-rationing-periods-for-nairobi-residents-as-ndakaini-dam-levels-fall-5664110",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Nairobi, 3 Other Counties to Face Extended Water Rationing as Utility Company Issues Warning",
-          "url": "https://www.kenyans.co.ke/news/129245-nairobi-water-warns-longer-rationing-after-35-water-supply-reduction",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Nairobi residents face 24-hour water interruption in planned maintenance",
-          "url": "https://www.the-star.co.ke/news/2026-11-08-nairobi-residents-face-24-hour-water-interruption-in-planned-maintenance",
-          "source": "The Star, Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "kihunguro service lane closure kenha",
       "traffic": "200+",
       "news": [
@@ -126,28 +139,6 @@
           "title": "KeNHA announces month-long traffic disruptions along Thika Superhighway",
           "url": "https://www.pulse.co.ke/story/kenha-announces-month-long-traffic-disruptions-along-thika-superhighway-2026110912194417683",
           "source": "Pulse Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "water",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Arizona, Scottsdale to lose Colorado River water",
-          "url": "https://www.yourvalley.net/stories/arizona-scottsdale-to-lose-colorado-river-water,739336",
-          "source": "Your Valley"
-        },
-        {
-          "title": "AG: Nevada Judge Could Dictate Wyoming's Future Share Of Colorado River Water",
-          "url": "https://cowboystatedaily.com/2026/11/06/ag-nevada-judge-could-dictate-wyomings-future-share-of-colorado-river-water/",
-          "source": "Cowboy State Daily"
-        },
-        {
-          "title": "Federal government seeks more time to respond to AZ Colorado River lawsuit",
-          "url": "https://www.abc15.com/news/federal-government-seeks-more-time-to-respond-to-arizonas-colorado-river-lawsuit",
-          "source": "ABC15 Arizona"
         }
       ]
     }
