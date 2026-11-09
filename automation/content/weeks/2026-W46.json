@@ -784,7 +784,7 @@
           "published": "2026-11-08"
         }
       ],
-      "status": "rendered",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -835,14 +835,94 @@
       "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1109m-broll.mp4",
       "broll_credit": "Footage: anncapictures / Pixabay",
       "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "reel": true
+      "reel": true,
+      "tg_msg": 996,
+      "auto": true,
+      "decided_at": "2026-11-10T02:20:47.438248+03:00"
+    },
+    {
+      "id": "2026-w46-hot-1110e",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Wananchi",
+      "line": "Civil society groups demand the Treasury release the confidential *IMF graft report*.",
+      "fact": "The National Treasury finished an IMF governance diagnostic on public funds but kept it confidential.",
+      "message": "The National Treasury faces pressure to release the confidential IMF audit on public funds.",
+      "action": "Demand the National Treasury publish the IMF governance report under Article 35",
+      "source": "The Standard, 2026-11-09",
+      "photo_query": "National Treasury Nairobi",
+      "who": "National Treasury",
+      "where": "Nairobi",
+      "when": "9 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Kenyans shoulder heavy taxes while diagnostic reports on lost billions remain hidden from the public.",
+      "demand": 4,
+      "beats": [
+        "The National Treasury hides a secret *IMF graft report*.",
+        "The audit tracks *billions of shillings* lost to corruption.",
+        "The Treasury promised the IMF it would publish the findings.",
+        "Should the government make the full report public immediately?"
+      ],
+      "caption": "The National Treasury continues to withhold the IMF governance report while public debt rises.\nThe audit tracks billions of shillings lost through government waste and corruption.\nWananchi continue paying heavier taxes to fund lost public money.\nThe National Treasury must publish the full IMF governance diagnostic this month.\nShould the National Treasury make the entire IMF report public immediately?\n\n#KenyaOnRecord #FollowTheMoney",
+      "bg": "usiku",
+      "publish_at": "2026-11-10T19:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "source_links": [
+        {
+          "outlet": "The Standard",
+          "title": "Ruto pressed to release IMF graft report as billions lost to corruption",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQRk1XOGhsVFdPbnRBeWJHRFU4MzlsQWFiTjlFZGh0Y3JBY1VydTJXdzhBVU16STVvV0RZTTlHWXd0bkVRZTZBeGxaeTljUFVYUURMRGFHNTB4RzNnWFZ2ZW5hZlZYckpkY0EtQ1ltYnJWNDN5emM5VmpGWUd2enZ0Vkx6cFpqM04xcWNDdjYzTlhlbDY2N01FenpvVFh4SFJXMFd4R2NLOU1iaDdJMnJ2Nm40SzB0d3VrVXJiUEF6cjdvWGQwcWhwQi11NA?oc=5",
+          "published": "2026-11-09"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 9,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 9.0,
+        "note": "Strong, clear accountability post with a specific lawful demand."
+      },
+      "drafted_at": "2026-11-10T02:18:21.278948+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1110e-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127880-cbk-governor-explains-why-kenyas-new-imf-deal-has-no-start-date",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "CBK Governor Explains Why Kenya's New IMF Deal Has No Start Date"
+        }
+      ],
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 997
     }
   ],
   "scripts": {
-    "radio": "Sasa, wasikilizaji, na karibu kwa Kenya on Record. Mimi ni sauti yako ya uwajibikaji. Wiki hii, kuna mambo mengi yaliyotokea, na lazima tuseme ukweli bila kuuma maneno.\n\nTunaanza na hili la TikTok. Vijana wetu wanatafuta kazi nje ya nchi, lakini matangazo ya uongo yamekuwa mitego ya kuwaibia pesa. Tafadhali, hakiki kabla hujatuma hata bob moja kwa hao mawakala wa mtandaoni.\n\nTukiangazia uchumi wetu, ripoti inaonyesha mabenki ya Kenya yalipoteza Sh1.9 bilioni kwa visa vya udanganyifu mwaka huu pekee. Hii inaweka shinikizo kubwa kwa Benki Kuu kulinda pesa za wananchi. Wakati huo huo, kule mashambani, maisha yako hatarini. Dawa ya kuumwa na nyoka, antivenom, inagharimu Sh12,000. Mkulima wa kawaida anatoa wapi pesa hizi? Serikali lazima iangalie afya ya mashambani.\n\nKwenye siasa, mitaani na vijiweni mijadala ni moto. Wakenya wanajiuliza: Je, muungano wa upinzani utaweza kusimama pamoja na kuangusha serikali iliyoko madarakani mwaka wa 2027? Wakati hayo yakiendelea, hebu tukumbuke barabara yetu ya Thika Superhighway yenye kilomita hamsini na njia nane bado ni mfano mzuri wa maendeleo, lakini maendeleo hayana maana kama wananchi wanapoteza pesa kwa ulaghai na magonjwa.\n\n[Kiswahili Summary]\nKwa ufupi wiki hii: Tapeli za kazi za TikTok zinawanyonya vijana, benki zimepoteza Sh1.9 bilioni kwa udanganyifu, na antivenom ya nyoka inagharimu Sh12,000 huko mashambani. Siasa za 2027 zimeshika kasi, huku Thika Superhighway ikiendelea kuunganisha Nairobi na Thika.",
-    "voice_note": "Wadau, mambo vipi? Hapa ni Kenya on Record na dondoo za wiki hii. Kwanza kabisa, jihadharini na matangazo ya kazi za nje kupitia TikTok; vijana wengi wanapigwa jeki na kutapeliwa. Hiyo sio yote—mabenki yetu yametepeta baada ya kupoteza Sh1.9 bilioni kwa wajanja wa fraud. Serikali na Central Bank lazima waimarishe usalama wa pesa zetu. Kule vijijini, hali ni ngumu sana kwa sababu antivenom ya nyoka inauzwa Sh12,000. Mtu wa kawaida ataishi aje? Na kwenye siasa, mjadala ni mkali kuhusu kama upinzani utashikamana mnamo 2027. Kuwa mwangalifu, kaa rada na ufuatilie Kenya on Record wiki hii.",
-    "sms": "Usiibiwe! Usitume pesa kwa mawakala wa kazi wa mtandaoni kabla ya kuthibitisha uhalali wao kupitia mamlaka husika. Linda pesa zako leo.",
-    "reels": "Vijana, macho yenu! Hawa watu wanaoweka matangazo ya kazi za overseas kwenye TikTok hawana nia njema—wanawapora pesa zenu za jasho. Kabla hujatuma hata shilingi elfu moja kwa wakala wa mtandaoni, thibitisha kibali chake. Usikubali kuwa takwimu nyingine ya ulaghai. Kaa rada na Kenya on Record!"
+    "radio": "Good evening. This is Kenya on Record.\n\nThis week, State House is facing mounting pressure from civil society, professional bodies, and taxpayers demanding the immediate release of a confidential audit report prepared by the International Monetary Fund.\n\nThe forensic diagnostic tracks billions of shillings lost through deep-rooted institutional graft, inflated procurement deals, and ghost projects across national government departments. While the IMF compiled these findings as part of its fiscal governance reviews, the document remains closely guarded behind executive doors.\n\nGovernment spokespersons have downplayed the secrecy, arguing that the diagnostic contains sensitive assessments. But Kenyans are asking a legitimate question: why conceal an audit detailing stolen public funds when citizens are daily being asked to sacrifice through heavier taxes and painful austerity? Under Article 35 of our Constitution, every citizen has the right to access information held by the state, especially when it involves public resources.\n\nBorrowing cannot be sustainable and tax compliance cannot be moral when the state shields those who plunder the treasury. If the administration is serious about fiscal credibility, the first step is transparency. Publish the findings, name the implicated entities, and let the law take its course.\n\nKwa ufupi: Rais Ruto anazidi kushinikizwa kuweka wazi ripoti ya siri ya ukaguzi kutoka IMF, inayofichua mabilioni ya pesa za umma yaliyopotea kupitia ufisadi serikalini. Wananchi wanasisitiza kuwa hawawezi kuendelea kutozwa ushuru mzito huku serikali ikificha wezi wa mali ya umma. Ni haki ya kikatiba ya kila Mkenya kuona ripoti hiyo.",
+    "voice_note": "Habari zenu. Here is your Kenya on Record update for the week.\n\nPresident Ruto is facing sharp demands to release a confidential IMF audit that traces billions of public money lost to corruption. \n\nWe all know the story: Kenyans are constantly told that coffers are dry, debt servicing is choking the economy, and taxes must go up. Yet behind closed doors, a credible international audit detailing systemic procurement theft and waste is being kept under lock and key. \n\nArticle 35 of the Constitution guarantees your right to access information held by the state. You cannot ask wananchi to tighten their belts while protecting the people who emptied the public purse. If the government has nothing to hide, let them put the report on the table. Pass this note to your groups—public money demands public accountability.",
+    "sms": "Usiibiwe: You have a constitutional right under Article 35 to demand public audit reports. Never let leaders hide graft findings while raising your taxes.",
+    "reels": "Where did the billions go? President Ruto is facing intense pressure to make public a confidential IMF audit tracking massive graft inside government. You cannot demand that ordinary Kenyans pay higher taxes to cover fiscal holes while concealing an official report that shows who stole the money. Accountability cannot happen in secret. Release the audit. Kenyans have a right to know."
   },
   "spend_usd": 0.0
 }
