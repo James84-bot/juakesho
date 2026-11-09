@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-09T12:04:32.107591+00:00",
+  "fetched": "2026-11-09T14:21:55.879054+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "kenya school heads convention mombasa",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Packed education transition agenda as 15,000 head teachers converge in Mombasa",
+          "url": "https://nation.africa/kenya/news/education/-packed-education-transition-agenda-as-15-000-head-teachers-converge-in-mombasa-5663306",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Debate on junior school autonomy to dominate Mombasa heads meet",
+          "url": "https://www.the-star.co.ke/news/2026-11-09-debate-on-junior-school-autonomy-to-dominate-mombasa-meet",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Primary school heads convene amid JSS autonomy row",
+          "url": "https://www.standardmedia.co.ke/education/article/2001561888/primary-school-heads-convene-amid-jss-autonomy-row",
+          "source": "The Standard"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "gcse",
@@ -12,87 +34,21 @@
           "source": "BBC"
         },
         {
-          "title": "No early teaching of GCSEs in new curriculum, schools told",
-          "url": "https://www.thetimes.com/uk/education/article/no-early-teaching-gcse-new-curriculum-0k6cxk2g3",
-          "source": "The Times"
+          "title": "Andy Burnham government confirms shake up for Year 7, 8 and 9 pupils",
+          "url": "https://www.lincolnshirelive.co.uk/news/uk-world-news/andy-burnham-government-confirms-shake-11233605",
+          "source": "Lincolnshire Live"
         },
         {
-          "title": "Key Stage 3 Overhaul Aims to Tackle Rising Absence before more Young People end up NEET",
-          "url": "https://www.fenews.co.uk/fe-voices/key-stage-3-overhaul-aims-to-tackle-rising-absence-before-more-young-people-end-up-neet/",
-          "source": "FE News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya school heads convention mombasa",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Packed education transition agenda as 15,000 head teachers converge in Mombasa",
-          "url": "https://nation.africa/kenya/news/education/-packed-education-transition-agenda-as-15-000-head-teachers-converge-in-mombasa-5663306",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "15,000 school heads converge in Mombasa for annual meet",
-          "url": "https://www.the-star.co.ke/news/2026-11-09-15000-school-heads-in-mombasa-for-annual-meet",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Head teachers gather in Mombasa to discuss AI, the future of learning",
-          "url": "https://www.standardmedia.co.ke/education/article/2001561839/head-teachers-gather-in-mombasa-to-discuss-ai-the-future-of-learning",
-          "source": "The Standard"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "initial public offering",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "OPay’s $4 billion New York listing stalls after China inquiry, putting its US IPO and planned Standard Bank investment on hold",
-          "url": "https://africa.businessinsider.com/local/markets/opays-dollar4-billion-new-york-listing-stalls-after-china-inquiry-putting-its-us-ipo/tez1zj4",
-          "source": "Business Insider Africa"
-        },
-        {
-          "title": "$304m IPO: OPay and the Question of Accountability",
-          "url": "https://www.thisdaylive.com/2026/11/07/304m-ipo-opay-and-the-question-of-accountability/",
-          "source": "THISDAYLIVE"
-        },
-        {
-          "title": "👨🏿‍🚀TechCabal Daily – A Chinese plot twist",
-          "url": "https://techcabal.com/2026/11/05/techcabal-daily-a-chinese-plot-twist/",
-          "source": "TechCabal"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "water",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Nairobi, surrounding counties face extended rationing as Ndakaini water levels fall",
-          "url": "https://www.the-star.co.ke/news/2026-11-09-nairobi-faces-prolonged-water-rationing",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Nairobi, 3 Other Counties to Face Extended Water Rationing as Utility Company Issues Warning",
-          "url": "https://www.kenyans.co.ke/news/129245-nairobi-water-warns-longer-rationing-after-35-water-supply-reduction",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Dry taps in Nairobi for two days from Monday",
-          "url": "https://www.standardmedia.co.ke/article/2001561830/dry-taps-in-nairobi-for-two-days-from-monday",
-          "source": "The Standard"
+          "title": "Teaching GCSE topics younger risks turning schools into ‘early exam factories’, Powell warns",
+          "url": "https://www.theguardian.com/education/2026/nov/08/gcses-teaching-england-curriculum-education-secretary-lucy-powell",
+          "source": "The Guardian"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "kra october paye deadline",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Employers face final hours to file October PAYE returns",
@@ -114,26 +70,69 @@
     },
     {
       "geo": "KE",
+      "title": "initial public offering",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Quickmart founders blocked from buying extra Sh890m stake",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/quickmart-founders-blocked-from-buying-extra-sh890m-stake-5663420",
+          "source": "Business Daily"
+        },
+        {
+          "title": "Quickmart Reveals New Ownership Structure After Oversubscribed NSE Sale",
+          "url": "https://www.tuko.co.ke/business-economy/capital-market/646127-quickmart-reveals-ownership-structure-oversubscribed-nse-sale/",
+          "source": "Tuko News"
+        },
+        {
+          "title": "Quick Mart IPO Oversubscribed in Nairobi",
+          "url": "https://www.briefs.co/news/quick-mart-ipo-oversubscribed-as-share-sale-closes/",
+          "source": "Briefs Finance"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "water",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Longer water rationing periods for Nairobi residents as Ndakaini Dam levels fall",
+          "url": "https://nation.africa/kenya/counties/nairobi/longer-water-rationing-periods-for-nairobi-residents-as-ndakaini-dam-levels-fall-5664110",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Nairobi, 3 Other Counties to Face Extended Water Rationing as Utility Company Issues Warning",
+          "url": "https://www.kenyans.co.ke/news/129245-nairobi-water-warns-longer-rationing-after-35-water-supply-reduction",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Dry taps in Nairobi for two days from Monday",
+          "url": "https://www.standardmedia.co.ke/article/2001561830/dry-taps-in-nairobi-for-two-days-from-monday",
+          "source": "The Standard"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "israel",
       "traffic": "200+",
       "news": [
         {
-          "title": "Netanyahu rival tasked with forming next Israeli government. But the path remains complicated",
-          "url": "https://www.cnn.com/2026/11/07/middleeast/eisenkot-israel-government-latam-intl",
-          "source": "CNN"
+          "title": "Sanctioned Russian military aircraft lands at Ben-Gurion Airport in Israel",
+          "url": "https://www.jpost.com/israel-news/article-914291",
+          "source": "The Jerusalem Post"
         },
         {
-          "title": "Israel's president tasks opposition leader Eisenkot with forming government",
-          "url": "https://www.bbc.com/news/articles/cmy8367lj5xlo",
-          "source": "BBC"
+          "title": "Despite US and UK sanctions, Israel allows Russian military aircraft to land amid backlash from China and Saudi Arabia over recognition of breakaway African territory",
+          "url": "https://africa.businessinsider.com/local/markets/despite-us-and-uk-sanctions-israel-allows-russian-military-aircraft-to-land-amid/kkv9v7h",
+          "source": "Business Insider Africa"
         },
         {
-          "title": "Eisenkot open to Netanyahu joining Israel’s next government",
-          "url": "https://www.aljazeera.com/news/2026/11/8/israels-president-tasks-eisenkot-to-form-new-coalition-government",
-          "source": "Al Jazeera"
+          "title": "Netanyahu Turns To Putin After Trump Fallout? Sanctioned Russia Jet Makes Surprise Landing In Israel",
+          "url": "https://timesofindia.indiatimes.com/videos/international/netanyahu-turns-to-putin-after-trump-fallout-sanctioned-russia-jet-makes-surprise-landing-in-israel/videoshow/135679630.cms",
+          "source": "The Times of India"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
@@ -151,9 +150,9 @@
           "source": "London Evening Standard"
         },
         {
-          "title": "Michael Carrick confirms injury setback to player who’s started all 10 Premier League games this season",
-          "url": "https://www.livescore.com/en/news/football/premier-league/michael-carrick-confirms-injury-setback-to-player-whos-started-all-10-premier-league-games-this-season-utdreport/",
-          "source": "LiveScore"
+          "title": "Liverpool vs. Man United: Michael Carrick injury boost as \"spasm\" timeline revealed before Anfield Premier League game",
+          "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/news/injury-boost-carrick-on-spasm-timeline-as-united-face-defining-anfield-clash_608752.html",
+          "source": "Sports Mole"
         }
       ]
     },
@@ -173,9 +172,9 @@
           "source": "Bizna Kenya"
         },
         {
-          "title": "2 Kenyan banks fall short of 2026 capital target as CBK demands explanations",
-          "url": "https://peopledaily.digital/business/2-kenyan-banks-fall-short-of-2026-capital-target-as-cbk-demands-explanations",
-          "source": "People Daily"
+          "title": "Treasury and CBK clash over bank capital deadlines as compliance pressure mounts",
+          "url": "https://techtrendske.co.ke/2026/11/09/kenya-bank-capital-requirements/",
+          "source": "TechTrendsKE"
         }
       ]
     },
@@ -207,9 +206,9 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Reaves scores 43 in Doncic's absence to lead Lakers past Pistons",
-          "url": "https://www.espn.com/nba/story/_/id/50429321/reaves-scores-43-doncic-absence-lead-lakers-pistons",
-          "source": "ESPN"
+          "title": "Austin Reaves Makes NBA History With Wilt Chamberlain Milestone In Los Angeles Lakers’ Statement Win Over Detroit Pistons",
+          "url": "https://sports.ndtv.com/us/nba/austin-reaves-makes-nba-history-with-wilt-chamberlain-milestone-in-los-angeles-lakers-statement-win-over-detroit-pistons-12301938",
+          "source": "NDTV Sports"
         },
         {
           "title": "Licensable picture: NBA: Los Angeles Lakers at Detroit Pistons",
