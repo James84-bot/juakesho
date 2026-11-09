@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-09T14:21:55.879054+00:00",
+  "fetched": "2026-11-09T15:38:09.264080+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -70,6 +70,51 @@
     },
     {
       "geo": "KE",
+      "title": "israel",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Israel’s president picks Eisenkot over Netanyahu to form next government",
+          "url": "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": "Netanyahu rival tasked with forming next Israeli government. But the path remains complicated",
+          "url": "https://www.cnn.com/2026/11/07/middleeast/eisenkot-israel-government-latam-intl",
+          "source": "CNN"
+        },
+        {
+          "title": "Gadi Eisenkot reaches out to Netanyahu allies as he strives to form government",
+          "url": "https://www.theguardian.com/world/2026/nov/08/gadi-eisenkot-netanyahu-allies-form-israel-government",
+          "source": "The Guardian"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "nvidia",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Who is the suspected Chinese spy at centre of the Nvidia investigation?",
+          "url": "https://www.bbc.com/news/videos/c80404zyr53wo",
+          "source": "BBC"
+        },
+        {
+          "title": "Nvidia CEO Jensen Huang admits affair as company launches investigation into foreign spy claims",
+          "url": "https://www.cnn.com/2026/11/08/business/nvidia-investigation-ceo-jensen-huang",
+          "source": "CNN"
+        },
+        {
+          "title": "Rubio Warned Officials About Nvidia Chief’s Entanglement With Chinese Spy",
+          "url": "https://www.nytimes.com/2026/11/08/us/politics/rubio-nvidia-ceo-chinese-spy.html",
+          "source": "The New York Times"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "initial public offering",
       "traffic": "500+",
       "news": [
@@ -79,58 +124,14 @@
           "source": "Business Daily"
         },
         {
+          "title": "Quick Mart IPO oversubscribed by 22.7 per cent, attracts Sh18.4 billion in applications",
+          "url": "https://eastleighvoice.co.ke/business/421457/quick-mart-ipo-oversubscribed-by-227-per-cent-attracts-sh184-billion-in-applications",
+          "source": "The Eastleigh Voice"
+        },
+        {
           "title": "Quickmart Reveals New Ownership Structure After Oversubscribed NSE Sale",
           "url": "https://www.tuko.co.ke/business-economy/capital-market/646127-quickmart-reveals-ownership-structure-oversubscribed-nse-sale/",
           "source": "Tuko News"
-        },
-        {
-          "title": "Quick Mart IPO Oversubscribed in Nairobi",
-          "url": "https://www.briefs.co/news/quick-mart-ipo-oversubscribed-as-share-sale-closes/",
-          "source": "Briefs Finance"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "water",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Longer water rationing periods for Nairobi residents as Ndakaini Dam levels fall",
-          "url": "https://nation.africa/kenya/counties/nairobi/longer-water-rationing-periods-for-nairobi-residents-as-ndakaini-dam-levels-fall-5664110",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Nairobi, 3 Other Counties to Face Extended Water Rationing as Utility Company Issues Warning",
-          "url": "https://www.kenyans.co.ke/news/129245-nairobi-water-warns-longer-rationing-after-35-water-supply-reduction",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Dry taps in Nairobi for two days from Monday",
-          "url": "https://www.standardmedia.co.ke/article/2001561830/dry-taps-in-nairobi-for-two-days-from-monday",
-          "source": "The Standard"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "israel",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Sanctioned Russian military aircraft lands at Ben-Gurion Airport in Israel",
-          "url": "https://www.jpost.com/israel-news/article-914291",
-          "source": "The Jerusalem Post"
-        },
-        {
-          "title": "Despite US and UK sanctions, Israel allows Russian military aircraft to land amid backlash from China and Saudi Arabia over recognition of breakaway African territory",
-          "url": "https://africa.businessinsider.com/local/markets/despite-us-and-uk-sanctions-israel-allows-russian-military-aircraft-to-land-amid/kkv9v7h",
-          "source": "Business Insider Africa"
-        },
-        {
-          "title": "Netanyahu Turns To Putin After Trump Fallout? Sanctioned Russia Jet Makes Surprise Landing In Israel",
-          "url": "https://timesofindia.indiatimes.com/videos/international/netanyahu-turns-to-putin-after-trump-fallout-sanctioned-russia-jet-makes-surprise-landing-in-israel/videoshow/135679630.cms",
-          "source": "The Times of India"
         }
       ]
     },
@@ -180,49 +181,32 @@
     },
     {
       "geo": "KE",
-      "title": "william saliba",
-      "traffic": "200+",
+      "title": "water",
+      "traffic": "100+",
       "news": [
         {
-          "title": "U21s report: Arsenal 5-2 Aston Villa",
-          "url": "https://www.arsenal.com/news/u21s-report-arsenal-5-2-aston-villa-ah9XZ8O5RAi5",
-          "source": "Arsenal.com"
+          "title": "Longer water rationing periods for Nairobi residents as Ndakaini Dam levels fall",
+          "url": "https://nation.africa/kenya/counties/nairobi/longer-water-rationing-periods-for-nairobi-residents-as-ndakaini-dam-levels-fall-5664110",
+          "source": "Daily Nation"
         },
         {
-          "title": "EXCLUSIVE: Arteta’s secret plan for €60m signing as Zubimendi transfer stance revealed",
-          "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/11/arsenal-transfer-news-ezri-konsa-martin-zubimendi",
-          "source": "FootballTransfers.com"
+          "title": "Nairobi, 3 Other Counties to Face Extended Water Rationing as Utility Company Issues Warning",
+          "url": "https://www.kenyans.co.ke/news/129245-nairobi-water-warns-longer-rationing-after-35-water-supply-reduction",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "William Saliba, Max Dowman and Marli Salmon start for Arsenal U21s against Aston Villa",
-          "url": "https://arsenalyouth.wordpress.com/2026/11/08/william-saliba-max-dowman-and-marli-salmon-start-for-arsenal-u21s-against-aston-villa/",
-          "source": "Jeorge Bird's Arsenal Youth"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "pistons vs lakers",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Austin Reaves Makes NBA History With Wilt Chamberlain Milestone In Los Angeles Lakers’ Statement Win Over Detroit Pistons",
-          "url": "https://sports.ndtv.com/us/nba/austin-reaves-makes-nba-history-with-wilt-chamberlain-milestone-in-los-angeles-lakers-statement-win-over-detroit-pistons-12301938",
-          "source": "NDTV Sports"
-        },
-        {
-          "title": "Licensable picture: NBA: Los Angeles Lakers at Detroit Pistons",
-          "url": "https://www.reutersconnect.com/item/nba-los-angeles-lakers-at-detroit-pistons/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAzMTYxMzU%3D?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "Daniss Jenkins drops career-high 31 points in loss",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-08/daniss-jenkins-drops-career-high-31-points-in-loss",
-          "source": "NBC Sports"
+          "title": "Dry taps in Nairobi for two days from Monday",
+          "url": "https://www.standardmedia.co.ke/article/2001561830/dry-taps-in-nairobi-for-two-days-from-monday",
+          "source": "The Standard"
         }
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "russell brand",
+      "why": "unsafe: 'rape'"
+    }
+  ],
   "errors": {}
 }
