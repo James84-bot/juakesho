@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T17:15:38.388154+03:00",
+  "updated": "2026-11-09T15:04:24.582921+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -12,7 +12,7 @@
       "shares": 6,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 8.1
+      "avg_watch_s": 7.9
     },
     {
       "id": "2026-w45-hot-1105m",
@@ -26,19 +26,6 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 5.0
-    },
-    {
-      "id": "2026-w42-d6-promise-r3",
-      "series": "promise",
-      "lane": "everyone",
-      "score": 9.7,
-      "opening": "A financial promise delivered.",
-      "reach": 9,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 6.1
     },
     {
       "id": "2026-w43-hot-1021",
@@ -65,22 +52,22 @@
       "comments": 0,
       "likes": 3,
       "avg_watch_s": 4.2
-    }
-  ],
-  "bottom": [
+    },
     {
-      "id": "2026-w44-hot-1101m",
+      "id": "2026-w44-hot-1026b1432",
       "series": "sauti",
       "lane": "everyone",
-      "score": 0.0,
-      "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "reach": 15,
+      "score": 9.3,
+      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
+      "reach": 24,
       "saved": 0,
       "shares": 0,
       "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 6.4
-    },
+      "likes": 3,
+      "avg_watch_s": 6.9
+    }
+  ],
+  "bottom": [
     {
       "id": "2026-w45-hot-1102-r2",
       "series": "sauti",
@@ -100,12 +87,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "reach": 20,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 4.2
+    },
+    {
+      "id": "2026-w45-hot-1108-r4",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
+      "reach": 25,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 7.2
     }
   ],
   "all": [
@@ -120,7 +120,7 @@
       "shares": 6,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 8.1
+      "avg_watch_s": 7.9
     },
     {
       "id": "2026-w45-hot-1105m",
@@ -134,19 +134,6 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 5.0
-    },
-    {
-      "id": "2026-w42-d6-promise-r3",
-      "series": "promise",
-      "lane": "everyone",
-      "score": 9.7,
-      "opening": "A financial promise delivered.",
-      "reach": 9,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 6.1
     },
     {
       "id": "2026-w43-hot-1021",
@@ -201,19 +188,6 @@
       "avg_watch_s": 6.1
     },
     {
-      "id": "2026-w42-hot-1013",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.1,
-      "opening": "Miss Sh50 and tokens cut off.",
-      "reach": 28,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 6.1
-    },
-    {
       "id": "2026-w43-hot-1019e",
       "series": "sauti",
       "lane": "everyone",
@@ -238,19 +212,6 @@
       "comments": 0,
       "likes": 3,
       "avg_watch_s": 6.5
-    },
-    {
-      "id": "2026-w42-hot-1015",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 6.4,
-      "opening": "EPRA hiked the prices.",
-      "reach": 14,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 4.9
     },
     {
       "id": "2026-w43-hot-1024m",
@@ -289,59 +250,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 11.2
-    },
-    {
-      "id": "2026-w42-d2-money-r3",
-      "series": "money",
-      "lane": "young_pro",
-      "score": 6.3,
-      "opening": "Kenya owes Sh10.5 trillion today.",
-      "reach": 15,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 8.8
-    },
-    {
-      "id": "2026-w42-d5-straight-r3",
-      "series": "straight",
-      "lane": "everyone",
-      "score": 6.3,
-      "opening": "They claim dead voters cast ballots.",
-      "reach": 15,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 4.6
-    },
-    {
-      "id": "2026-w42-hot-1016",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 6.3,
-      "opening": "Ksh 4 billion in fake VAT.",
-      "reach": 16,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 4.5
-    },
-    {
-      "id": "2026-w42-hot-1014",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 6.2,
-      "opening": "Fuel prices are political football again.",
-      "reach": 25,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 9.2
+      "avg_watch_s": 10.5
     },
     {
       "id": "2026-w43-d2-kenya-r9x-r2",
@@ -357,30 +266,17 @@
       "avg_watch_s": 5.3
     },
     {
-      "id": "2026-w42-d3-promise-r3",
-      "series": "promise",
-      "lane": "campus",
-      "score": 6.1,
-      "opening": "Guaranteed paid internships promised.",
-      "reach": 26,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 4.7
-    },
-    {
       "id": "2026-w44-hot-1027",
       "series": "sauti",
       "lane": "everyone",
       "score": 6.0,
       "opening": "EACC recovers a 2.7-acre school playground after court ruling.",
-      "reach": 34,
+      "reach": 35,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 6.5
+      "avg_watch_s": 6.4
     },
     {
       "id": "2026-w45-hot-1102m",
@@ -422,32 +318,6 @@
       "avg_watch_s": 4.5
     },
     {
-      "id": "2026-w42-d4-sauti-r3",
-      "series": "sauti",
-      "lane": "campus",
-      "score": 3.2,
-      "opening": "IEBC wants 6.3 million youth.",
-      "reach": 16,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 5.1
-    },
-    {
-      "id": "2026-w42-hot-1017",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.2,
-      "opening": "Sh6.2 billion gone on ghost workers.",
-      "reach": 15,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 7.2
-    },
-    {
       "id": "2026-w43-d6-kenya-r10",
       "series": "kenya",
       "lane": "hustle",
@@ -479,25 +349,12 @@
       "lane": "everyone",
       "score": 3.2,
       "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
-      "reach": 12,
+      "reach": 13,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 6.2
-    },
-    {
-      "id": "2026-w45-hot-1106m-r2",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.2,
-      "opening": "Employers must remit employee levies by the 9th day of each month.",
-      "reach": 16,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 4.6
+      "avg_watch_s": 5.5
     },
     {
       "id": "2026-w43-hot-1022",
@@ -578,17 +435,30 @@
       "avg_watch_s": 3.2
     },
     {
+      "id": "2026-w45-hot-1106m-r2",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.1,
+      "opening": "Employers must remit employee levies by the 9th day of each month.",
+      "reach": 18,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.3
+    },
+    {
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "lane": "everyone",
       "score": 3.1,
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "reach": 19,
+      "reach": 25,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.6
+      "avg_watch_s": 4.2
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -609,12 +479,12 @@
       "lane": "everyone",
       "score": 2.9,
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "reach": 44,
+      "reach": 45,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 7.8
+      "avg_watch_s": 8.5
     },
     {
       "id": "2026-w45-d6-kenya",
@@ -622,12 +492,12 @@
       "lane": "everyone",
       "score": 2.8,
       "opening": "Lamu Port opened its first berth in May 2021.",
-      "reach": 61,
+      "reach": 63,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 1.9
+      "avg_watch_s": 2.0
     },
     {
       "id": "2026-w45-hot-1107m",
@@ -635,7 +505,7 @@
       "lane": "everyone",
       "score": 2.8,
       "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
-      "reach": 57,
+      "reach": 60,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -648,12 +518,12 @@
       "lane": "everyone",
       "score": 2.6,
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "reach": 82,
+      "reach": 83,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.8
+      "avg_watch_s": 4.9
     },
     {
       "id": "2026-w43-d7-glasspoll-r10",
@@ -726,12 +596,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "reach": 20,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 4.2
+    },
+    {
+      "id": "2026-w45-hot-1108-r4",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
+      "reach": 25,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 7.2
     }
   ],
   "youtube": [
@@ -739,7 +622,7 @@
       "id": "2026-w45-hot-1103m",
       "series": "sauti",
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "views": 987,
+      "views": 988,
       "likes": 6,
       "comments": 0
     },
@@ -747,23 +630,39 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 502,
+      "views": 503,
       "likes": 2,
+      "comments": 0
+    },
+    {
+      "id": "2026-w45-hot-1108-r4",
+      "series": "sauti",
+      "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
+      "views": 418,
+      "likes": 0,
       "comments": 0
     },
     {
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "views": 345,
+      "views": 347,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w45-hot-1107",
+      "series": "sauti",
+      "opening": "Kenya records 18 days without a single new Ebola infection.",
+      "views": 251,
+      "likes": 2,
       "comments": 0
     },
     {
       "id": "2026-w45-hot-1106m-r2",
       "series": "sauti",
       "opening": "Employers must remit employee levies by the 9th day of each month.",
-      "views": 226,
+      "views": 229,
       "likes": 0,
       "comments": 0
     },
@@ -776,18 +675,10 @@
       "comments": 0
     },
     {
-      "id": "2026-w45-hot-1107",
-      "series": "sauti",
-      "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "views": 220,
-      "likes": 2,
-      "comments": 0
-    },
-    {
       "id": "2026-w45-hot-1102m",
       "series": "sauti",
       "opening": "Counterfeit alcohol wiped out Sh7.6bn in KRA excise revenue.",
-      "views": 189,
+      "views": 190,
       "likes": 1,
       "comments": 0
     },
@@ -811,7 +702,7 @@
       "id": "2026-w45-hot-1107m",
       "series": "sauti",
       "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
-      "views": 75,
+      "views": 107,
       "likes": 0,
       "comments": 0
     },
@@ -819,7 +710,7 @@
       "id": "2026-w45-hot-1106",
       "series": "sauti",
       "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
-      "views": 74,
+      "views": 76,
       "likes": 0,
       "comments": 0
     },
@@ -827,7 +718,7 @@
       "id": "2026-w45-d5-straight",
       "series": "straight",
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "views": 54,
+      "views": 56,
       "likes": 0,
       "comments": 0
     },
@@ -859,7 +750,7 @@
       "id": "2026-w45-d6-kenya",
       "series": "kenya",
       "opening": "Lamu Port opened its first berth in May 2021.",
-      "views": 6,
+      "views": 9,
       "likes": 0,
       "comments": 0
     },
