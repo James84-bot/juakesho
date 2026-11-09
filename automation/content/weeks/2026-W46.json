@@ -784,7 +784,7 @@
           "published": "2026-11-08"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -838,7 +838,14 @@
       "reel": true,
       "tg_msg": 996,
       "auto": true,
-      "decided_at": "2026-11-10T02:20:47.438248+03:00"
+      "decided_at": "2026-11-10T02:20:47.438248+03:00",
+      "published_at": "2026-11-10T02:23:22.008919+03:00",
+      "ig_id": "18419561164083096",
+      "fb_id": "2644273742687375",
+      "story_id": "18105087803527706",
+      "fb_story_id": "1314620397456396",
+      "yt_id": "QvnoHU_nOu4",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w46-hot-1110e",
@@ -915,7 +922,8 @@
       ],
       "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 997
+      "tg_msg": 997,
+      "photo_checked": "2026-11-10T02:22:34.250289+03:00"
     }
   ],
   "scripts": {
