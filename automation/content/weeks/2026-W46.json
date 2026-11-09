@@ -391,7 +391,8 @@
       "reel": true,
       "tg_msg": 960,
       "auto": true,
-      "decided_at": "2026-11-09T09:45:49.139412+03:00"
+      "decided_at": "2026-11-09T09:45:49.139412+03:00",
+      "photo_checked": "2026-11-09T11:24:07.195624+03:00"
     },
     {
       "id": "2026-w46-d6-kenya",
@@ -503,7 +504,7 @@
       "size": "story",
       "side": "both",
       "tone": "explainer",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -542,7 +543,8 @@
       ],
       "track_credit": "Music: \"Who Likes to Party\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 962
+      "tg_msg": 962,
+      "decided_at": "2026-11-09T11:22:50.125599+03:00"
     },
     {
       "id": "2026-w46-d4-money",
@@ -590,7 +592,7 @@
         "published": "2026-11-09"
       },
       "source": "Daily Nation, 2026-11-09",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "accusation: a named person with an allegation needs two outlets or an official source (court, EACC, DPP, Auditor-General, a .go.ke page)",
@@ -634,7 +636,8 @@
       ],
       "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 963
+      "tg_msg": 963,
+      "decided_at": "2026-11-09T11:22:50.932760+03:00"
     },
     {
       "id": "2026-w46-hot-1109",
@@ -724,7 +727,8 @@
       "reel": true,
       "tg_msg": 964,
       "auto": true,
-      "decided_at": "2026-11-09T09:45:49.139435+03:00"
+      "decided_at": "2026-11-09T09:45:49.139435+03:00",
+      "photo_checked": "2026-11-09T11:24:11.618974+03:00"
     }
   ],
   "scripts": {
