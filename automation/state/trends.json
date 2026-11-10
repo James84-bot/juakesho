@@ -1,229 +1,157 @@
 {
-  "fetched": "2026-11-10T17:14:34.951929+00:00",
+  "fetched": "2026-11-10T20:26:35.724737+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "häcken vs chelsea",
-      "traffic": "1000+",
+      "title": "weather tomorrow",
+      "traffic": "20000+",
       "news": [
         {
-          "title": "Confirmed Chelsea Women line up vs Hacken | News | Official Site",
-          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-hacken",
-          "source": "Chelsea Football Club"
+          "title": "Kauai Weather Forecast for November 10, 2026",
+          "url": "https://kauainownews.com/2026/11/09/kauai-weather-forecast-for-november-10-2026/",
+          "source": "Kauai Now"
         },
+        {
+          "title": "Kauai Weather Forecast for November 08, 2026",
+          "url": "https://kauainownews.com/2026/11/07/kauai-weather-forecast-for-november-08-2026/",
+          "source": "Kauai Now"
+        },
+        {
+          "title": "Kauai Weather Forecast for November 09, 2026",
+          "url": "https://kauainownews.com/2026/11/08/kauai-weather-forecast-for-november-09-2026/",
+          "source": "Kauai Now"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "häcken vs chelsea",
+      "traffic": "2000+",
+      "news": [
         {
           "title": "Häcken vs Chelsea: UEFA Women's Champions League stats & head-to-head",
           "url": "https://www.bbc.com/sport/football/live/ck7vppd7y9yqt",
           "source": "BBC"
         },
         {
-          "title": "BK Häcken FF vs Chelsea FC Women: TV channel, live stream and kick-off time for Women's Champions League fixture",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-bk-haecken-ff-v-chelsea-fc-women/blt0c1f9c1a677e20df",
+          "title": "Confirmed Chelsea Women line up vs Hacken | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-hacken",
+          "source": "Chelsea Football Club"
+        },
+        {
+          "title": "Hacken 0-0 Chelsea: Blues frustrated but stay unbeaten in WCL",
+          "url": "https://www.skysports.com/football/news/13610414/hacken-0-0-chelsea-blues-frustrated-but-stay-unbeaten-in-wcl",
+          "source": "Sky Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bristol rovers vs reading",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Bristol Rovers vs Reading: EFL Trophy stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cky833pdwjdzt",
+          "source": "BBC"
+        },
+        {
+          "title": "Match Preview | Bristol Rovers v Reading",
+          "url": "https://www.bristolrovers.co.uk/news/match-preview-bristol-rovers-v-reading-0",
+          "source": "Bristol Rovers Football Club"
+        },
+        {
+          "title": "+$$[[\"LIVESTREAM\"]] Bristol Rovers vs Reading Live streaming free",
+          "url": "https://www.rd.nl/extra/special/berlijn-spookstations/?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vYW50c3RyZWFtNGsub25saW5lL2JydXRhcy9icnV0YXMueG1sIi8+PC9rcnBhbm8+&id=bristol-rovers-vs-reading-i-78slhj",
+          "source": "Reformatorisch Dagblad"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "reading fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Former Reading FC winger blasts non-league club over unpaid £700",
+          "url": "https://www.readingchronicle.co.uk/sport/26717376.ex-reading-fc-star-blasts-non-league-club-unpaid-700/",
+          "source": "Reading Chronicle"
+        },
+        {
+          "title": "Opinion: It's time for Reading FC to make a big Lewis Wing decision",
+          "url": "https://www.readingchronicle.co.uk/sport/26712426.reading-fc-start-charlie-savage-midfield/",
+          "source": "Reading Chronicle"
+        },
+        {
+          "title": "Charlie Savage opens up on his difficult but rewarding Reading campaign",
+          "url": "https://www.readingchronicle.co.uk/sport/26708806.reading-fc-midfielder-charlie-savage-opens-season/",
+          "source": "Reading Chronicle"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "real madrid vs paris fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Real Madrid vs Paris FC: UEFA Women's Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cr89zz7p2894t",
+          "source": "BBC"
+        },
+        {
+          "title": "Real Madrid Femenino vs Paris FC: Where to watch, TV channel, live stream & kick-off time",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-real-madrid-femenino-v-paris-fc/bltd66286041e3e92a9",
           "source": "Goal.com"
+        },
+        {
+          "title": "Real Madrid's starting lineup against Paris FC",
+          "url": "https://www.realmadrid.com/en-US/news/football/womens-team/latest-news/once-inicial-del-real-madrid-ante-el-paris-fc-10-11-2026",
+          "source": "Real Madrid CF | Web Oficial"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "tax",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Californians reject Prop 40 wealth tax for billionaires",
-          "url": "https://www.bbc.com/news/articles/cq398em3032wo",
-          "source": "BBC"
-        },
-        {
-          "title": "California Voters Reject Prop. 40 Billionaire Tax Measure",
-          "url": "https://www.nytimes.com/2026/11/09/us/california-billionaire-tax-prop-40.html",
-          "source": "The New York Times"
-        },
-        {
-          "title": "California voters fail to pass proposed one-time tax on billionaires’ wealth",
-          "url": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40",
-          "source": "The Guardian"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "tradingview",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "CPI tops forecasts, stocks slide, yields rise",
-          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N46R0O6:0-cpi-tops-forecasts-stocks-slide-yields-rise/",
-          "source": "TradingView"
-        },
-        {
-          "title": "How Jensen Huang’s Affair Spiraled Into a National Security Nightmare",
-          "url": "https://www.wsj.com/tech/ai/how-jensen-huangs-affair-spiraled-into-a-national-security-nightmare-d9b43304",
-          "source": "WSJ"
-        },
-        {
-          "title": "Nvidia spy case exposes how foreign agents target America’s corporate elite: 'He is compromised'",
-          "url": "https://www.foxnews.com/politics/nvidia-spy-case-exposes-foreign-agents-target-americas-corporate-elite-compromised",
-          "source": "Fox News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "forex factory",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
-          "url": "https://www.forexfactory.com/news/1435562-feds-waller-backs-december-rate-hike-says-open",
-          "source": "Forex Factory"
-        },
-        {
-          "title": "Hot October CPI Report Clears the Way for a December Rate Hike",
-          "url": "https://www.kiplinger.com/investing/economy/october-2026-cpi-report-what-to-expect",
-          "source": "Kiplinger"
-        },
-        {
-          "title": "Fed to raise rates once more in December as inflation risks stay high: Reuters poll",
-          "url": "https://lufkindailynews.com/news_reuters/business/fed-to-raise-rates-once-more-in-december-as-inflation-risks-stay-high-reuters-poll/article_9fcb7c00-98ac-544b-9115-ee8ad642714b.html",
-          "source": "The Lufkin Daily News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya film classification board",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "State Embarks on Crackdown Targeting Matatus Fitted With Screens",
-          "url": "https://www.kenyans.co.ke/news/129276-kfcb-announces-crackdown-matatus-showing-inappropriate-content",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "KFCB intensifies drive for child-friendly content on PSV screens",
-          "url": "https://www.kbc.co.ke/kfcb-intensifies-drive-for-child-friendly-content-on-psv-screens/",
-          "source": "KBC Digital"
-        },
-        {
-          "title": "Govt launches crackdown on matatus showing and playing inappropriate content",
-          "url": "https://peopledaily.digital/news/govt-launches-crackdown-on-matatus-showing-and-playing-inappropriate-content",
-          "source": "People Daily"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "elon musk",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "How to watch 'Musk' online — stream the SpaceX billionaire biography from anywhere",
-          "url": "https://www.space.com/entertainment/space-movies-shows/how-to-watch-musk-online-stream-the-spacex-billionaire-biography-from-anywhere",
-          "source": "Space"
-        },
-        {
-          "title": "Nearly four hours of revealing the hidden aspects of Elon Musk's life that angered billionaire Elon Musk.",
-          "url": "https://www.vietnam.vn/en/gan-4-gio-he-lo-goc-khuat-cuoc-doi-khien-ty-phu-elon-musk-noi-gian",
-          "source": "Vietnam.vn"
-        },
-        {
-          "title": "'Musk' Review: Alex Gibney Examines How the World's Richest Man Turned His Lack of Empathy Into a Political Weapon",
-          "url": "https://www.micropsiacine.com/2026/11/musk-review-alex-gibney-examines-how-the-worlds-richest-man-turned-his-lack-of-empathy-into-a-political-weapon/",
-          "source": "Micropsia"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "benni mccarthy",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Mosimane explains why South Africa will host Harambee Stars in Johannesburg",
-          "url": "https://www.mozzartsport.co.ke/football/news/mosimane-explains-why-south-africa-will-host-harambee-stars-in-johannesburg/70608",
-          "source": "Mozzart Sport Kenya"
-        },
-        {
-          "title": "The illusion of competition: Bafana, Benni and CAF’s qualifying contradiction",
-          "url": "https://sundaytribune.co.za/sport/soccer/2026-11-10-the-illusion-of-competition-bafana-benni-and-cafs-qualifying-contradiction/",
-          "source": "Sunday Tribune"
-        },
-        {
-          "title": "Bafana's overseas contingent get valuable minutes ahead of Kenya",
-          "url": "https://www.flashscore.com/news/bafana-s-overseas-contingent-get-valuable-minutes-ahead-of-kenya/2s6PpVoI/",
-          "source": "Flashscore.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "james gunn",
+      "title": "nations league",
       "traffic": "100+",
       "news": [
         {
-          "title": "Inside James Gunn, Peter Safran’s DC Ouster: Exec Tensions and a Fateful David Ellison Visit",
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/james-gunn-peter-safran-ouster-dc-1236751437/",
-          "source": "The Hollywood Reporter"
+          "title": "England XI vs Croatia: Confirmed team news, predicted lineup and injury latest for Nations League",
+          "url": "https://www.standard.co.uk/sport/football/england-xi-vs-croatia-confirmed-team-news-predicted-lineup-injury-latest-nations-league-b1304147.html",
+          "source": "London Evening Standard"
         },
         {
-          "title": "DC Studios Shakeup: James Gunn & Peter Safran Out, Former Marvel Exec Jeremy Latcham In",
-          "url": "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/",
-          "source": "Deadline"
+          "title": "How to get England vs Croatia tickets: UEFA Nations League A prices, fixture information, last-minute sales & more",
+          "url": "https://www.goal.com/en-ke/tickets-travel/match/england-croatia-tickets/A~blt5564d9a740f8c464",
+          "source": "Goal.com"
         },
         {
-          "title": "James Gunn, Peter Safran Fired at DC Studios; Jeremy Latcham Replaces",
-          "url": "https://variety.com/2026/film/news/james-gunn-peter-safran-fired-dc-jeremy-latcham-1236943091/",
-          "source": "Variety"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "court",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Three judges to hear contempt case over Cabinet reconstitution order",
-          "url": "https://www.the-star.co.ke/news/2026-11-10-three-judges-to-hear-contempt-case-over-cabinet-reconstitution-order",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "High Court Issues Ruling on Petition to Freeze CSs' Salaries",
-          "url": "https://www.kenyans.co.ke/news/129265-high-court-asked-freeze-cabinet-secretaries-salaries-over-gender-rule",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Ichung’wah urges Ruto to comply with court ruling on gender balance in cabinet",
-          "url": "https://peopledaily.digital/news/ichungwah-urges-ruto-to-comply-with-court-ruling-on-gender-balance-in-cabinet",
-          "source": "People Daily"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "ben white",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Ben White: England defender says people don't know 'full story' behind his self-inflicted exile from national team",
-          "url": "https://www.bbc.com/sport/football/articles/c6rmym3p419no",
-          "source": "BBC"
-        },
-        {
-          "title": "Ben White says he has no complaints at boos from England fans over self-imposed exile",
-          "url": "https://www.theguardian.com/football/2026/nov/09/ben-white-england-international-exile-arsenal-thomas-tuchel-squad-nations-league-spain-croatia",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Thomas Tuchel needs Ben White: it’s time for fans to lift vendetta",
-          "url": "https://www.thetimes.com/sport/football/article/thomas-tuchel-ben-white-england-arsenal-7gzfd8qqt",
-          "source": "The Times"
+          "title": "Last chance England vs Croatia tickets for final Wembley Nations League game of 2026",
+          "url": "https://www.mirror.co.uk/sport/football/news/england-croatia-tickets-nations-league-37858614",
+          "source": "The Mirror"
         }
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "inter vs man city",
+      "why": "unsafe: 'Bet'"
+    },
+    {
+      "title": "leicester city vs walsall",
+      "why": "unsafe: 'betting'"
+    },
+    {
+      "title": "pamplona vs eibar",
+      "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "northampton vs gillingham",
+      "why": "unsafe: 'betting'"
+    }
+  ],
   "errors": {}
 }
