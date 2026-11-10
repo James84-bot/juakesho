@@ -1,54 +1,10 @@
 {
-  "fetched": "2026-11-10T13:48:07.675248+00:00",
+  "fetched": "2026-11-10T14:34:27.124068+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "tanzania",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Tanzania Banking Sector Profit Rises 17.1% to TZS 2.11 Trillion in Nine Months as Top Two Banks Earn 61.9% of Profit",
-          "url": "https://www.tanzaniainvest.com/finance/banking/banking-sector-results-january-september-2026",
-          "source": "TanzaniaInvest"
-        },
-        {
-          "title": "Banking sector rakes in nearly 2trn/- in nine months of 2026",
-          "url": "https://ippmedia.co.tz/the-guardian/news/local-news/read/banking-sector-rakes-in-nearly-2trn-in-nine-months-of-2026-2026-11-02-095710",
-          "source": "https://ippmedia.co.tz/"
-        },
-        {
-          "title": "Air Tanzania announces eight-day flight disruption as Airbus fleet grounded",
-          "url": "https://www.theeastafrican.co.ke/tea/business-tech/air-tanzania-flight-disruption-as-airbus-fleet-grounded-5665152",
-          "source": "The EastAfrican"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "tsc portal",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "TSC opens applications for 7,720 teacher jobs: Who needs to apply",
-          "url": "https://www.the-star.co.ke/news/2026-11-10-tsc-opens-applications-for-7720-teacher-jobs",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "TSC Announces Mass Recruitment of Teachers, Outlines How to Apply",
-          "url": "https://www.kenyans.co.ke/news/129259-tsc-opens-7720-teaching-vacancies-primary-junior-and-secondary-schools",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "TSC orders head teachers to release excess teachers to understaffed schools",
-          "url": "https://www.standardmedia.co.ke/education/article/2001561940/tsc-orders-head-teachers-to-release-excess-teachers-to-understaffed-schools",
-          "source": "The Standard"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "tradingview",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "YieldMax® ETFs Announces Weekly Distributions for Group 1 ETFs",
@@ -70,22 +26,44 @@
     {
       "geo": "KE",
       "title": "forex factory",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "October inflation data is expected to be cooler, helped by steadying energy prices",
-          "url": "https://finance.yahoo.com/economy/article/october-inflation-data-is-expected-to-be-cooler-helped-by-steadying-energy-prices-190000304.html",
-          "source": "Yahoo Finance"
+          "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
+          "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
+          "source": "CNBC"
+        },
+        {
+          "title": "CPI Report Today: Inflation Eased in October, But Remains Elevated — Live Updates",
+          "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-11-10-2026",
+          "source": "WSJ"
         },
         {
           "title": "Will US Consumer Price Index data reinforce expectations for a December Fed rate hike?",
           "url": "https://www.fxstreet.com/news/us-cpi-data-set-to-ease-in-october-as-markets-reassess-fed-rate-hike-expectations-202611100930",
           "source": "FXStreet"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "tsc portal",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "TSC opens applications for 7,720 teacher jobs: Who needs to apply",
+          "url": "https://www.the-star.co.ke/news/2026-11-10-tsc-opens-applications-for-7720-teacher-jobs",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "October CPI Report: What the Inflation Data Is Expected to Show",
-          "url": "https://www.kiplinger.com/investing/economy/october-2026-cpi-report-what-to-expect",
-          "source": "Kiplinger"
+          "title": "TSC Announces Mass Recruitment of Teachers, Outlines How to Apply",
+          "url": "https://www.kenyans.co.ke/news/129259-tsc-opens-7720-teaching-vacancies-primary-junior-and-secondary-schools",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "TSC Announces Fresh Recruitment Of 7,720 Teachers On Permanent Terms",
+          "url": "https://thekenyatimes.com/jobs-careers/tsc-announces-fresh-recruitment-of-7720-teachers-on-permanent-terms/",
+          "source": "The Kenya Times"
         }
       ]
     },
@@ -95,13 +73,13 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "Martin Zubimendi, ¿de vuelta a la Liga?",
-          "url": "https://www.noticiasdegipuzkoa.eus/reala/mercado-de-fichajes/2026/11/09/martin-zubimendi-fichaje-atletico-madrid-11739992.html",
-          "source": "Noticias de Gipuzkoa"
+          "title": "Zubimendi se pone a tiro",
+          "url": "https://as.com/futbol/primera/zubimendi-se-pone-a-tiro-f202611-n/",
+          "source": "Diario AS"
         },
         {
-          "title": "Sorpresa mayúscula: el Atlético de Madrid abre la puerta a un intercambio con el Arsenal",
-          "url": "https://es-us.noticias.yahoo.com/deportes/sorpresa-may%C3%BAscula-atl%C3%A9tico-madrid-abre-073109144.html",
+          "title": "Arsenal y Atlético de Madrid estudian un intercambio de jugadores entre Martín Zubimendi y Julián Álvarez",
+          "url": "https://es-us.noticias.yahoo.com/deportes/arsenal-atl%C3%A9tico-madrid-estudian-intercambio-064604223.html",
           "source": "Yahoo"
         },
         {
@@ -113,23 +91,68 @@
     },
     {
       "geo": "KE",
-      "title": "digital health agency",
+      "title": "tax",
       "traffic": "200+",
       "news": [
         {
-          "title": "NTSA Set for Major Leadership Shake-Up in Latest Announcement",
-          "url": "https://www.kenyans.co.ke/news/129267-ntsa-set-major-shake-authority-targets-key-leadership-positions",
+          "title": "California voters fail to pass proposed one-time tax on billionaires’ wealth",
+          "url": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40",
+          "source": "The Guardian"
+        },
+        {
+          "title": "California Voters Reject Prop. 40 Billionaire Tax Measure",
+          "url": "https://www.nytimes.com/2026/11/09/us/california-billionaire-tax-prop-40.html",
+          "source": "The New York Times"
+        },
+        {
+          "title": "Californians reject Prop 40 wealth tax for billionaires",
+          "url": "https://www.bbc.com/news/articles/cq398em3032wo",
+          "source": "BBC"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "kenya film classification board",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "State Embarks on Crackdown Targeting Matatus Fitted With Screens",
+          "url": "https://www.kenyans.co.ke/news/129276-kfcb-announces-crackdown-matatus-showing-inappropriate-content",
           "source": "Kenyans.co.ke"
         },
+        {
+          "title": "KFCB intensifies drive for child-friendly content on PSV screens",
+          "url": "https://www.kbc.co.ke/kfcb-intensifies-drive-for-child-friendly-content-on-psv-screens/",
+          "source": "KBC Digital"
+        },
+        {
+          "title": "Govt launches crackdown on matatus showing and playing inappropriate content",
+          "url": "https://peopledaily.digital/news/govt-launches-crackdown-on-matatus-showing-and-playing-inappropriate-content",
+          "source": "People Daily"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "digital health agency",
+      "traffic": "200+",
+      "news": [
         {
           "title": "Digital Health Agency advertises 63 vacancies in major recruitment drive",
           "url": "https://www.the-star.co.ke/news/2026-11-10-digital-health-agency-advertises-63-vacancies",
           "source": "The Star, Kenya"
         },
         {
-          "title": "Digital Health Agency announces 63 vacancies across 50 positions, sets December 1 deadline",
-          "url": "https://peopledaily.digital/news/digital-health-agency-announces-63-vacancies-across-50-positions-sets-december-1-deadline",
-          "source": "People Daily"
+          "title": "NTSA Set for Major Leadership Shake-Up in Latest Announcement",
+          "url": "https://www.kenyans.co.ke/news/129267-ntsa-set-major-shake-authority-targets-key-leadership-positions",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "NTSA, Digital Health Agency And IRA Declare Vacancies For Kenyans",
+          "url": "https://thekenyatimes.com/jobs-careers/ntsa-digital-health-agency-and-ira-declare-vacancies-for-kenyans/",
+          "source": "The Kenya Times"
         }
       ]
     },
@@ -155,54 +178,13 @@
         }
       ],
       "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "tax",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "California voters fail to pass proposed one-time tax on billionaires’ wealth",
-          "url": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40",
-          "source": "The Guardian"
-        },
-        {
-          "title": "California Voters Reject Prop. 40 Billionaire Tax Measure",
-          "url": "https://www.nytimes.com/2026/11/09/us/california-billionaire-tax-prop-40.html",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Californians reject Prop 40 wealth tax for billionaires",
-          "url": "https://www.bbc.com/news/articles/cq398em3032wo",
-          "source": "BBC"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "kenya film classification board",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "State Embarks on Crackdown Targeting Matatus Fitted With Screens",
-          "url": "https://www.kenyans.co.ke/news/129276-kfcb-announces-crackdown-matatus-showing-inappropriate-content",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "KFCB intensifies drive for child-friendly content on PSV screens",
-          "url": "https://www.kbc.co.ke/kfcb-intensifies-drive-for-child-friendly-content-on-psv-screens/",
-          "source": "KBC Digital"
-        },
-        {
-          "title": "Govt launches crackdown on matatus showing and playing inappropriate content",
-          "url": "https://peopledaily.digital/news/govt-launches-crackdown-on-matatus-showing-and-playing-inappropriate-content",
-          "source": "People Daily"
-        }
-      ]
     }
   ],
   "dropped": [
+    {
+      "title": "tanzania",
+      "why": "unsafe: 'war'"
+    },
     {
       "title": "lion",
       "why": "unsafe: 'dead'"
