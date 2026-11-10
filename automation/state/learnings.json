@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T15:04:24.582921+03:00",
+  "updated": "2026-11-10T14:43:42.486156+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -12,7 +12,7 @@
       "shares": 6,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.9
+      "avg_watch_s": 8.4
     },
     {
       "id": "2026-w45-hot-1105m",
@@ -41,6 +41,19 @@
       "avg_watch_s": 5.5
     },
     {
+      "id": "2026-w45-hot-1108m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.5,
+      "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
+      "reach": 121,
+      "saved": 1,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.2
+    },
+    {
       "id": "2026-w43-hot-1020",
       "series": "sauti",
       "lane": "everyone",
@@ -52,19 +65,6 @@
       "comments": 0,
       "likes": 3,
       "avg_watch_s": 4.2
-    },
-    {
-      "id": "2026-w44-hot-1026b1432",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.3,
-      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
-      "reach": 24,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 6.9
     }
   ],
   "bottom": [
@@ -74,7 +74,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "KNCHR documented 92 attacks on journalists across Kenya.",
-      "reach": 10,
+      "reach": 11,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -100,12 +100,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 25,
+      "reach": 28,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.2
+      "avg_watch_s": 7.8
     }
   ],
   "all": [
@@ -120,7 +120,7 @@
       "shares": 6,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.9
+      "avg_watch_s": 8.4
     },
     {
       "id": "2026-w45-hot-1105m",
@@ -147,6 +147,19 @@
       "comments": 0,
       "likes": 3,
       "avg_watch_s": 5.5
+    },
+    {
+      "id": "2026-w45-hot-1108m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.5,
+      "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
+      "reach": 121,
+      "saved": 1,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.2
     },
     {
       "id": "2026-w43-hot-1020",
@@ -206,12 +219,12 @@
       "lane": "everyone",
       "score": 8.7,
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "reach": 43,
+      "reach": 44,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 3,
-      "avg_watch_s": 6.5
+      "avg_watch_s": 6.8
     },
     {
       "id": "2026-w43-hot-1024m",
@@ -276,7 +289,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 6.4
+      "avg_watch_s": 6.8
     },
     {
       "id": "2026-w45-hot-1102m",
@@ -349,12 +362,25 @@
       "lane": "everyone",
       "score": 3.2,
       "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 5.3
+    },
+    {
+      "id": "2026-w46-hot-1109",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.2,
+      "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
       "reach": 13,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.5
+      "avg_watch_s": 7.0
     },
     {
       "id": "2026-w43-hot-1022",
@@ -406,7 +432,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.4
+      "avg_watch_s": 5.8
     },
     {
       "id": "2026-w44-hot-1026",
@@ -453,12 +479,25 @@
       "lane": "everyone",
       "score": 3.1,
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "reach": 25,
+      "reach": 27,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.2
+      "avg_watch_s": 5.1
+    },
+    {
+      "id": "2026-w46-d1-money-r5",
+      "series": "money",
+      "lane": "hustle",
+      "score": 3.1,
+      "opening": "EPRA reviews fuel prices on November 14.",
+      "reach": 23,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.3
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -485,6 +524,19 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 8.5
+    },
+    {
+      "id": "2026-w45-hot-1108b2133",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 2.9,
+      "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
+      "reach": 42,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.8
     },
     {
       "id": "2026-w45-d6-kenya",
@@ -575,7 +627,20 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 6.4
+      "avg_watch_s": 8.2
+    },
+    {
+      "id": "2026-w45-d7-glasspoll",
+      "series": "glasspoll",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "MPs passed a Bill giving party bosses power over MCA nominations.",
+      "reach": 21,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.3
     },
     {
       "id": "2026-w45-hot-1102-r2",
@@ -583,7 +648,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "KNCHR documented 92 attacks on journalists across Kenya.",
-      "reach": 10,
+      "reach": 11,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -609,12 +674,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 25,
+      "reach": 28,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.2
+      "avg_watch_s": 7.8
     }
   ],
   "youtube": [
@@ -630,7 +695,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 503,
+      "views": 507,
       "likes": 2,
       "comments": 0
     },
@@ -638,7 +703,15 @@
       "id": "2026-w45-hot-1108-r4",
       "series": "sauti",
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "views": 418,
+      "views": 441,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w45-hot-1108b2133",
+      "series": "sauti",
+      "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
+      "views": 414,
       "likes": 0,
       "comments": 0
     },
@@ -654,7 +727,7 @@
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "views": 251,
+      "views": 259,
       "likes": 2,
       "comments": 0
     },
@@ -662,7 +735,7 @@
       "id": "2026-w45-hot-1106m-r2",
       "series": "sauti",
       "opening": "Employers must remit employee levies by the 9th day of each month.",
-      "views": 229,
+      "views": 230,
       "likes": 0,
       "comments": 0
     },
@@ -699,10 +772,18 @@
       "comments": 0
     },
     {
+      "id": "2026-w45-hot-1108m",
+      "series": "sauti",
+      "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
+      "views": 123,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1107m",
       "series": "sauti",
       "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
-      "views": 107,
+      "views": 108,
       "likes": 0,
       "comments": 0
     },
@@ -715,10 +796,18 @@
       "comments": 0
     },
     {
+      "id": "2026-w46-hot-1109",
+      "series": "sauti",
+      "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
+      "views": 68,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-d5-straight",
       "series": "straight",
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "views": 56,
+      "views": 57,
       "likes": 0,
       "comments": 0
     },
@@ -734,8 +823,24 @@
       "id": "2026-w44-hot-1101m",
       "series": "sauti",
       "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "views": 36,
+      "views": 37,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-d1-money-r5",
+      "series": "money",
+      "opening": "EPRA reviews fuel prices on November 14.",
+      "views": 30,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w45-d6-kenya",
+      "series": "kenya",
+      "opening": "Lamu Port opened its first berth in May 2021.",
+      "views": 10,
+      "likes": 0,
       "comments": 0
     },
     {
@@ -747,19 +852,19 @@
       "comments": 0
     },
     {
-      "id": "2026-w45-d6-kenya",
-      "series": "kenya",
-      "opening": "Lamu Port opened its first berth in May 2021.",
-      "views": 9,
-      "likes": 0,
-      "comments": 0
-    },
-    {
       "id": "2026-w44-hot-1101",
       "series": "sauti",
       "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
       "views": 5,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w45-d7-glasspoll",
+      "series": "glasspoll",
+      "opening": "MPs passed a Bill giving party bosses power over MCA nominations.",
+      "views": 3,
+      "likes": 0,
       "comments": 0
     }
   ]

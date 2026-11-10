@@ -1,65 +1,20 @@
 {
-  "fetched": "2026-11-10T06:06:36.025037+00:00",
+  "fetched": "2026-11-10T11:43:55.578269+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "peter munga pioneer school eviction",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Billionaire Munga’s Pioneer School ordered to vacate Del Monte land",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/munga-s-pioneer-school-ordered-to-vacate-del-monte-land-5664558",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Court of Appeal Upholds Del Monte’s Right to Evict Pioneer International Schools",
-          "url": "https://parentsafrica.com/court-of-appeal-upholds-del-montes-right-to-evict-pioneer-international-schools/",
-          "source": "Parents Africa"
-        },
-        {
-          "title": "Court orders Pioneer school to vacate Del Monte's 75-acre Land by December 31",
-          "url": "https://mjengohub.co.ke/articles/real-estate/court-orders-pioneer-school-to-vacate-del-montes-75-acre-land-by-december-31",
-          "source": "Mjengo Hub"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "warriors vs pelicans",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Stephen Curry moves into 16th on NBA scoring list",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-10/stephen-curry-moves-into-16th-on-nba-scoring-list",
-          "source": "NBC Sports"
-        },
-        {
-          "title": "How to watch Pelicans vs. Warriors: TV channel and streaming options for November 9",
-          "url": "https://www.nytimes.com/athletic/7769305/2026/11/09/pelicans-vs-warriors-stream-how-to-watch-nov-9/",
-          "source": "The New York Times"
-        },
-        {
-          "title": "New Orleans Pelicans vs. Golden State Warriors: Game Highlights",
-          "url": "https://www.espn.com.sg/video/clip/_/id/50439744/game-highlights",
-          "source": "ESPN Singapore"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "tsc",
-      "traffic": "500+",
+      "traffic": "2000+",
       "news": [
+        {
+          "title": "TSC opens applications for 7,720 teacher jobs: Who needs to apply",
+          "url": "https://www.the-star.co.ke/news/2026-11-10-tsc-opens-applications-for-7720-teacher-jobs",
+          "source": "The Star, Kenya"
+        },
         {
           "title": "TSC Announces Mass Recruitment of Teachers, Outlines How to Apply",
           "url": "https://www.kenyans.co.ke/news/129259-tsc-opens-7720-teaching-vacancies-primary-junior-and-secondary-schools",
           "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "TSC to recruit 16,000 additional teachers by January 2027",
-          "url": "https://educationnews.co.ke/news/tsc-to-recruit-16-000-additional-teachers-by-january-2027",
-          "source": "Education News"
         },
         {
           "title": "TSC Announces Fresh Recruitment Of 7,720 Teachers On Permanent Terms",
@@ -70,69 +25,136 @@
     },
     {
       "geo": "KE",
-      "title": "carrick",
-      "traffic": "500+",
+      "title": "warriors vs pelicans",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Michael Carrick: Manchester United expected to sack head coach",
-          "url": "https://www.bbc.com/sport/football/articles/cmy0r041ed0po",
+          "title": "NBA: Jimmy Butler dresses up as coach and says 'pass to Steph' as Golden State Warriors win eighth straight match",
+          "url": "https://www.skysports.com/nba/news/13610478/nba-jimmy-butler-dresses-up-as-coach-and-says-pass-to-steph-as-golden-state-warriors-win-eighth-straight-match",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Pelicans Warriors Basketball",
+          "url": "https://www.corsicanadailysun.com/sports/national_sports/pelicans-warriors-basketball/image_64f77914-f2bf-5357-b0fd-6f7365522525.html",
+          "source": "Corsicana Daily Sun"
+        },
+        {
+          "title": "Warriors' perfect homestand nourishes their souls before big test on the road",
+          "url": "https://sports.yahoo.com/articles/warriors-perfect-homestand-nourishes-souls-231743691.html",
+          "source": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "carrick",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Michael Carrick expected to be sacked LIVE: Manchester United manager latest",
+          "url": "https://www.bbc.com/sport/football/live/cmjwewv6p9vxt",
           "source": "BBC"
         },
         {
-          "title": "Michael Carrick future: Man Utd head coach position increasingly in doubt but no final decision made",
+          "title": "Michael Carrick future: Man Utd head coach position increasingly in doubt with Mauricio Pochettino open to talks",
           "url": "https://www.skysports.com/football/news/13610412/michael-carrick-future-man-utd-head-coach-position-increasingly-in-doubt-but-no-final-decision-made",
           "source": "Sky Sports"
         },
         {
-          "title": "Michael Carrick facing Manchester United axe amid review by Jason Wilcox",
-          "url": "https://www.theguardian.com/football/2026/nov/09/manchester-united-michael-carrick-jason-wilcox-review-sacking",
+          "title": "Wilcox and Berrada poised to tell Ratcliffe in Monaco that Carrick should be sacked",
+          "url": "https://www.theguardian.com/football/2026/nov/10/manchester-united-jason-wilcox-omar-berrada-jim-ratcliffe-michael-carrick-should-be-sacked",
           "source": "The Guardian"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "central bank of kenya",
-      "traffic": "500+",
+      "title": "martín zubimendi",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Mbadi seeks CBK truce on Sh10bn bank capital fallout",
-          "url": "https://www.businessdailyafrica.com/bd/economy/mbadi-seeks-cbk-truce-on-sh10bn-bank-capital-fallout-5663424",
-          "source": "Business Daily"
+          "title": "¿Bombazo Zubimendi en enero?: \"Está cerca\"",
+          "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20261109/1004249122/bombazo-zubimendi-enero-cerca.html",
+          "source": "Mundo Deportivo"
         },
         {
-          "title": "14 Banks face downgrade as CBK enforces KSh 5 Billion capital requirement by December 2026",
-          "url": "https://biznakenya.com/14-banks-face-downgrade-as-cbk-enforces-ksh-5-billion-capital-requirement-by-december-2026/",
-          "source": "Bizna Kenya"
+          "title": "Sorpresa mayúscula: el Atlético de Madrid abre la puerta a un intercambio con el Arsenal",
+          "url": "https://es-us.noticias.yahoo.com/deportes/sorpresa-may%C3%BAscula-atl%C3%A9tico-madrid-abre-073109144.html",
+          "source": "Yahoo"
         },
         {
-          "title": "Treasury and CBK clash over bank capital deadlines as compliance pressure mounts",
-          "url": "https://techtrendske.co.ke/2026/11/09/kenya-bank-capital-requirements/",
-          "source": "TechTrendsKE"
+          "title": "Luis de la Fuente espera el OK de la Federación para comunicar al campeón del mundo que está fuera",
+          "url": "https://www.elnacional.cat/es/deportes/luis-fuente-espera-ok-federacion-comunicar-campeon-mundo-esta-fuera_1722551_102.html",
+          "source": "El Nacional.cat"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "thika road",
+      "title": "digital health agency",
       "traffic": "200+",
       "news": [
         {
-          "title": "Five weeks of traffic disruption as KeNHA begins Kihunguro Bridge works",
-          "url": "https://www.standardmedia.co.ke/national/article/2001561892/five-weeks-of-traffic-disruption-as-kenha-begins-kihunguro-bridge-works",
-          "source": "The Standard"
+          "title": "NTSA Set for Major Leadership Shake-Up in Latest Announcement",
+          "url": "https://www.kenyans.co.ke/news/129267-ntsa-set-major-shake-authority-targets-key-leadership-positions",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "KeNHA announces month long closure of Thika-bound service lanes",
-          "url": "https://www.the-star.co.ke/news/2026-11-09-kenha-announces-month-long-closure-of-thika-bound-service-lanes",
+          "title": "Digital Health Agency advertises 63 vacancies in major recruitment drive",
+          "url": "https://www.the-star.co.ke/news/2026-11-10-digital-health-agency-advertises-63-vacancies",
           "source": "The Star, Kenya"
         },
         {
-          "title": "KeNHA Announces 5-Week Closure of Section of Thika Superhighway",
-          "url": "https://www.kenyans.co.ke/news/129249-kenha-announces-month-long-closure-thika-superhighway-service-lanes-kihunguro",
-          "source": "Kenyans.co.ke"
+          "title": "Digital Health Agency announces 63 vacancies across 50 positions, sets December 1 deadline",
+          "url": "https://peopledaily.digital/news/digital-health-agency-announces-63-vacancies-across-50-positions-sets-december-1-deadline",
+          "source": "People Daily"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "lion",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Jets trade safety Andre Cisco to injury-plagued Lions for draft pick",
+          "url": "https://www.espn.com/nfl/story/_/id/50434559/sources-jets-trade-safety-andre-cisco-lions",
+          "source": "ESPN"
+        },
+        {
+          "title": "TWENTYMAN: What Cisco trade means for Lions’ defense",
+          "url": "https://www.detroitlions.com/news/twentyman-what-cisco-trade-means-for-lions-defense-branch-joseph-clark",
+          "source": "Detroit Lions"
+        },
+        {
+          "title": "Lions agree to acquire S Andre Cisco from Jets",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-agree-to-acquire-s-andre-cisco-from-jets",
+          "source": "NBC Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "tax exemption",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "West Fargo Public Schools approves 10-year tax exemption for COVE Living project",
+          "url": "https://www.inforum.com/news/west-fargo/west-fargo-public-schools-approves-10-year-tax-exemption-for-cove-living-project",
+          "source": "InForum"
+        },
+        {
+          "title": "The Estate Tax Move Surviving Spouses Miss: Claiming a Late Spouse’s Unused Exemption",
+          "url": "https://247wallst.com/personal-finance/2026/11/09/the-estate-tax-move-surviving-spouses-miss-claiming-a-late-spouses-unused-exemption/",
+          "source": "24/7 Wall St."
+        },
+        {
+          "title": "How to Make Large Gifts While Avoiding IRS Triggers",
+          "url": "https://www.thinkadvisor.com/2026/11/09/how-to-make-large-gifts-while-avoiding-irs-triggers/",
+          "source": "ThinkAdvisor"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -167,44 +189,22 @@
           "source": "Sports Mole"
         },
         {
-          "title": "Luka Dončić breaks out dance moves during dominant win over Hawks",
-          "url": "https://sports.yahoo.com/articles/luka-don-breaks-dance-moves-031110115.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Atlanta Hawks vs. Los Angeles Lakers - 1st Quarter Highlights",
-          "url": "https://www.nba.com/watch/video/atlanta-hawks-vs-los-angeles-lakers-1st-quarter-highlights-2?plsrc=nba&collection=luka-doncic",
+          "title": "Luka Dončić puts up 32 points, 10 assists in Atlanta",
+          "url": "https://www.nba.com/watch/video/luka-doncic-puts-up-32-points-10-assists-in-atlanta?plsrc=nba&collection=luka-doncic",
           "source": "NBA.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "jürgen klopp",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Matthias Sammer dämpft Erwartungen an Bundestrainer Jürgen Klopp",
-          "url": "https://sport.sky.de/fussball/artikel/matthias-sammer-daempft-erwartungen-an-bundestrainer-juergen-klopp/13610347/37577",
-          "source": "Sky.de"
         },
         {
-          "title": "\"Das hat er nicht\" - Sammer erwartet \"nicht so viel Klopp\" beim DFB",
-          "url": "https://www.n-tv.de/sport/mediathek/videos/sport/Das-hat-er-nicht-Sammer-erwartet-nicht-so-viel-Klopp-beim-DFB-id31513909.html",
-          "source": "n-tv.de"
-        },
-        {
-          "title": "Nationalmannschaft - Schneller Aufschwung unter Jürgen Klopp? Sammer hat arge Bedenken",
-          "url": "https://www.sport.de/news/ne17329107/nationalmannschaft---schneller-aufschwung-unter-juergen-klopp-sammer-hat-arge-bedenken/",
-          "source": "sport.de"
+          "title": "Luka Doncic returns, has 32 points, 10 assists in Lakers' sixth straight win",
+          "url": "https://www.espn.com/nba/story/_/id/50439743/luka-doncic-returns-nets-32-lakers-push-win-streak-6",
+          "source": "ESPN"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "nba",
-      "why": "unsafe: 'Betting'"
+      "title": "tanzania",
+      "why": "unsafe: 'war'"
     }
   ],
   "errors": {}

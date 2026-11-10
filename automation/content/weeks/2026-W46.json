@@ -1027,13 +1027,101 @@
       "reel": true,
       "tg_msg": 1005,
       "photo_checked": "2026-11-10T12:46:28.652949+03:00"
+    },
+    {
+      "id": "2026-w46-hot-1110m",
+      "template": "sauti",
+      "lane": "everyone",
+      "side": "none",
+      "tone": "explainer",
+      "who": "TSC CEO Nancy Macharia",
+      "where": "National",
+      "when": "10 Nov 2026",
+      "impact": "Unemployed teachers get a fresh chance at secure public service jobs.",
+      "message": "TSC opens 7,720 teacher jobs as thousands of trained graduates wait across the country.",
+      "action": "Check the TSC portal for job requirements before the application deadline.",
+      "beats": [
+        "TSC opened *7,720* new teaching jobs.",
+        "Thousands of teachers remain unemployed.",
+        "Check the TSC portal today.",
+        "Did you apply *or give up*?"
+      ],
+      "photo_query": "teacher classroom Kenya",
+      "source": "Sky Sports, 2026-11-10",
+      "kicker": "Teachers",
+      "line": "TSC opens *7,720* new teacher jobs in fresh recruitment drive.",
+      "fact": "The Teachers Service Commission advertised 7,720 vacancies for teachers across Kenya.",
+      "caption": "TSC opens 7,720 teacher jobs. If you are qualified, check the portal before the deadline. Send this to a teacher who needs it.\n\n#TSC #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-10T17:44:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The National Treasury faces pressure to release the confidential IMF audit on public funds.",
+        "KRA's new 15% tax directive increases the cost of living for every Kenyan."
+      ],
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "TSC opens applications for 7,720 teacher jobs",
+          "link": "https://www.kenyans.co.ke",
+          "published": "2026-11-10"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Mauricio Pochettino would consider Manchester United job if Michael Carrick is sacked - Paper Talk | Football News",
+          "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOcmRUUUtDRzcwbmpQMFc3M3l6RmpQTjlrMkNzbVRzd0V2UXAyQVRWdGdmWTlzLXZHb0cwZE9CNkZ2RzlhMjdaQWJsSFJQOTNrNUs3bkNaLWd2blVPV1ZXVC11RXNMWTk3THdXRGFwdWh1dzRMajdFUVhRZWNGU0d1dHhsQUl2Ul9vMnZkU0tTbEt3d2N2MlQtVnJNYUdIQWktZnRGSWJDVE45M2k2SWJnOGVkZHY3YnozU3hYUzJfallIOFI1cHhReFhWUWlIWGxGNF8tUWlVVndKUmdRTkE?oc=5",
+          "published": "2026-11-10"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 3.4/10. Choose a story Kenyans are actually talking about this week from the provided list, such as the Kisii airport promises or the IEBC harambee ban."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 3,
+        "send": 3,
+        "clarity": 5,
+        "fresh": 3,
+        "voice": 4,
+        "craft": 3,
+        "picture": 4,
+        "hold": 3,
+        "demand": 2,
+        "action": 3,
+        "fair": 5,
+        "impact": 3,
+        "human": 3,
+        "avg": 3.4,
+        "note": "Choose a story Kenyans are actually talking about this week from the provided list, such as the Kisii airport promises or the IEBC harambee ban."
+      },
+      "drafted_at": "2026-11-10T15:07:45.517282+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1110m-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "file",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127809-bungoma-teacher-accused-demanding-ksh300000-bribe-secure-tsc-jobs-arrested",
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "EACC Arrests Teacher Over Ksh300,000 TSC Recruitment Bribery"
+        }
+      ],
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1012
     }
   ],
   "scripts": {
-    "radio": "Good evening. This is Kenya on Record.\n\nThis week, State House is facing mounting pressure from civil society, professional bodies, and taxpayers demanding the immediate release of a confidential audit report prepared by the International Monetary Fund.\n\nThe forensic diagnostic tracks billions of shillings lost through deep-rooted institutional graft, inflated procurement deals, and ghost projects across national government departments. While the IMF compiled these findings as part of its fiscal governance reviews, the document remains closely guarded behind executive doors.\n\nGovernment spokespersons have downplayed the secrecy, arguing that the diagnostic contains sensitive assessments. But Kenyans are asking a legitimate question: why conceal an audit detailing stolen public funds when citizens are daily being asked to sacrifice through heavier taxes and painful austerity? Under Article 35 of our Constitution, every citizen has the right to access information held by the state, especially when it involves public resources.\n\nBorrowing cannot be sustainable and tax compliance cannot be moral when the state shields those who plunder the treasury. If the administration is serious about fiscal credibility, the first step is transparency. Publish the findings, name the implicated entities, and let the law take its course.\n\nKwa ufupi: Rais Ruto anazidi kushinikizwa kuweka wazi ripoti ya siri ya ukaguzi kutoka IMF, inayofichua mabilioni ya pesa za umma yaliyopotea kupitia ufisadi serikalini. Wananchi wanasisitiza kuwa hawawezi kuendelea kutozwa ushuru mzito huku serikali ikificha wezi wa mali ya umma. Ni haki ya kikatiba ya kila Mkenya kuona ripoti hiyo.",
-    "voice_note": "Habari zenu. Here is your Kenya on Record update for the week.\n\nPresident Ruto is facing sharp demands to release a confidential IMF audit that traces billions of public money lost to corruption. \n\nWe all know the story: Kenyans are constantly told that coffers are dry, debt servicing is choking the economy, and taxes must go up. Yet behind closed doors, a credible international audit detailing systemic procurement theft and waste is being kept under lock and key. \n\nArticle 35 of the Constitution guarantees your right to access information held by the state. You cannot ask wananchi to tighten their belts while protecting the people who emptied the public purse. If the government has nothing to hide, let them put the report on the table. Pass this note to your groups—public money demands public accountability.",
-    "sms": "Usiibiwe: You have a constitutional right under Article 35 to demand public audit reports. Never let leaders hide graft findings while raising your taxes.",
-    "reels": "Where did the billions go? President Ruto is facing intense pressure to make public a confidential IMF audit tracking massive graft inside government. You cannot demand that ordinary Kenyans pay higher taxes to cover fiscal holes while concealing an official report that shows who stole the money. Accountability cannot happen in secret. Release the audit. Kenyans have a right to know."
+    "radio": "Sasa, wasikilizaji wa Kenya on Record. Mimi ni wako, na leo tunaziangazia habari za TSC kufungua nafasi za kazi elfu saba, mia saba na ishirini kwa walimu wapya. Wengi wenu mnasubiri kwa hamu, mkijua vyema hali ilivyo mtaani na mamilioni ya pesa zilizotumika kusomea vyuo vikuu na vya mafunzo. Kazi zipo, ndio, lakini swali ni je—mfumo huu wa ajira uko wazi kwa kiasi gani? Tunataka uwazi kamili ili tusishuhudie tena zile ripoti za rushwa, upendeleo, na mchezo wa kuchukuana kando. Ni haki ya kila mhitimu kusimama kwa usawa bila kulazimika kutoa mlungula. Walimu wetu ndio msingi wa taifa hili, na mishahara yao sio hisani, ni jasho lao. Fuatilia ushahidi huu kwa makini, simama kidete, na utuhabarishe kama kuna upendeleo katika kituo chako. Tusinyamaze.\n\nKwa ufupi, TSC imetangaza nafasi 7,720 za ualimu. Tunataka usawa, haki, na kuzuia rushwa wakati wa mchakato huu wa ajira kote nchini.",
+    "voice_note": "Hujambo mwananchi. Habari kubwa wiki hii kutoka TSC ni kwamba nafasi elfu saba, mia saba na ishirini za walimu zimetangazwa. Lakini tunajua ukweli wa mambo mtaani—wengi wenu mmesoma sana na mnasubiri kazi kwa miaka mingi. Swali letu ni moja: Je, mchakato huu utakuwa safi, bila rushwa wala upendeleo? Usikubali kulipa hongo ili kupata kazi inayostahili iwe yako kwa haki. Fuatilia hili kwa karibu, na kama kuna ukiukaji wowote katika eneo lako, tujulishe hapa Kenya on Record.",
+    "sms": "TSC imefungua nafasi 7,720 za walimu. Usikubali kulipa hongo kupata kazi. Ripoti rushwa yoyote ya ajira. Haki yako haiuzwi. Kenya on Record.",
+    "reels": "Maelfu ya walimu wamemaliza vyuo, wanasubiri kwa miaka, na sasa TSC imetangaza nafasi elfu saba, mia saba na ishirini. Swali ni je—hizi kazi zitaenda kwa waliohitimu kihalali, au kwa wenye ushawishi na hongo? Usinyamaze. Fuatilia haki yako na usiruhusu jasho lako kuuzwa. Hii ni Kenya on Record."
   },
   "spend_usd": 0.0
 }
