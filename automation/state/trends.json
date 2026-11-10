@@ -1,25 +1,70 @@
 {
-  "fetched": "2026-11-10T14:34:27.124068+00:00",
+  "fetched": "2026-11-10T17:14:34.951929+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "häcken vs chelsea",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Confirmed Chelsea Women line up vs Hacken | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-hacken",
+          "source": "Chelsea Football Club"
+        },
+        {
+          "title": "Häcken vs Chelsea: UEFA Women's Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/ck7vppd7y9yqt",
+          "source": "BBC"
+        },
+        {
+          "title": "BK Häcken FF vs Chelsea FC Women: TV channel, live stream and kick-off time for Women's Champions League fixture",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-bk-haecken-ff-v-chelsea-fc-women/blt0c1f9c1a677e20df",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "tax",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Californians reject Prop 40 wealth tax for billionaires",
+          "url": "https://www.bbc.com/news/articles/cq398em3032wo",
+          "source": "BBC"
+        },
+        {
+          "title": "California Voters Reject Prop. 40 Billionaire Tax Measure",
+          "url": "https://www.nytimes.com/2026/11/09/us/california-billionaire-tax-prop-40.html",
+          "source": "The New York Times"
+        },
+        {
+          "title": "California voters fail to pass proposed one-time tax on billionaires’ wealth",
+          "url": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40",
+          "source": "The Guardian"
+        }
+      ],
+      "civic": true
+    },
     {
       "geo": "KE",
       "title": "tradingview",
       "traffic": "1000+",
       "news": [
         {
-          "title": "YieldMax® ETFs Announces Weekly Distributions for Group 1 ETFs",
-          "url": "https://www.globenewswire.com/news-release/2026/11/10/3399291/0/en/yieldmax-etfs-announces-weekly-distributions-for-group-1-etfs.html",
-          "source": "GlobeNewswire"
-        },
-        {
-          "title": "Micron, Nvidia, Lam Research removed from BofA's US 1 list",
-          "url": "https://www.tradingview.com/news/seekingalpha:0ff01d90a094b:0-micron-nvidia-lam-research-removed-from-bofa-s-us-1-list/",
+          "title": "CPI tops forecasts, stocks slide, yields rise",
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N46R0O6:0-cpi-tops-forecasts-stocks-slide-yields-rise/",
           "source": "TradingView"
         },
         {
-          "title": "YieldMax® ETFs Announces Weekly Distributions for Group 2 ETFs",
-          "url": "https://markets.businessinsider.com/news/stocks/yieldmax-etfs-announces-weekly-distributions-for-group-2-etfs-1036714061",
-          "source": "markets.businessinsider.com"
+          "title": "How Jensen Huang’s Affair Spiraled Into a National Security Nightmare",
+          "url": "https://www.wsj.com/tech/ai/how-jensen-huangs-affair-spiraled-into-a-national-security-nightmare-d9b43304",
+          "source": "WSJ"
+        },
+        {
+          "title": "Nvidia spy case exposes how foreign agents target America’s corporate elite: 'He is compromised'",
+          "url": "https://www.foxnews.com/politics/nvidia-spy-case-exposes-foreign-agents-target-americas-corporate-elite-compromised",
+          "source": "Fox News"
         }
       ]
     },
@@ -29,93 +74,26 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
-          "url": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
-          "source": "CNBC"
+          "title": "Fed's Waller Backs December Rate Hike, Says Open To 50 Bps Move",
+          "url": "https://www.forexfactory.com/news/1435562-feds-waller-backs-december-rate-hike-says-open",
+          "source": "Forex Factory"
         },
         {
-          "title": "CPI Report Today: Inflation Eased in October, But Remains Elevated — Live Updates",
-          "url": "https://www.wsj.com/livecoverage/stock-market-cpi-inflation-11-10-2026",
-          "source": "WSJ"
+          "title": "Hot October CPI Report Clears the Way for a December Rate Hike",
+          "url": "https://www.kiplinger.com/investing/economy/october-2026-cpi-report-what-to-expect",
+          "source": "Kiplinger"
         },
         {
-          "title": "Will US Consumer Price Index data reinforce expectations for a December Fed rate hike?",
-          "url": "https://www.fxstreet.com/news/us-cpi-data-set-to-ease-in-october-as-markets-reassess-fed-rate-hike-expectations-202611100930",
-          "source": "FXStreet"
+          "title": "Fed to raise rates once more in December as inflation risks stay high: Reuters poll",
+          "url": "https://lufkindailynews.com/news_reuters/business/fed-to-raise-rates-once-more-in-december-as-inflation-risks-stay-high-reuters-poll/article_9fcb7c00-98ac-544b-9115-ee8ad642714b.html",
+          "source": "The Lufkin Daily News"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "tsc portal",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "TSC opens applications for 7,720 teacher jobs: Who needs to apply",
-          "url": "https://www.the-star.co.ke/news/2026-11-10-tsc-opens-applications-for-7720-teacher-jobs",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "TSC Announces Mass Recruitment of Teachers, Outlines How to Apply",
-          "url": "https://www.kenyans.co.ke/news/129259-tsc-opens-7720-teaching-vacancies-primary-junior-and-secondary-schools",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "TSC Announces Fresh Recruitment Of 7,720 Teachers On Permanent Terms",
-          "url": "https://thekenyatimes.com/jobs-careers/tsc-announces-fresh-recruitment-of-7720-teachers-on-permanent-terms/",
-          "source": "The Kenya Times"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "martín zubimendi",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Zubimendi se pone a tiro",
-          "url": "https://as.com/futbol/primera/zubimendi-se-pone-a-tiro-f202611-n/",
-          "source": "Diario AS"
-        },
-        {
-          "title": "Arsenal y Atlético de Madrid estudian un intercambio de jugadores entre Martín Zubimendi y Julián Álvarez",
-          "url": "https://es-us.noticias.yahoo.com/deportes/arsenal-atl%C3%A9tico-madrid-estudian-intercambio-064604223.html",
-          "source": "Yahoo"
-        },
-        {
-          "title": "El exvalencianista Mateu Alemany quiere cerrar el fichaje que Florentino Pérez negó a Xabi Alonso para el Real Madrid",
-          "url": "https://www.superdeporte.es/futbol/2026/11/10/mateu-alemany-fichaje-martin-zubimendi-136279868.html",
-          "source": "Superdeporte"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "tax",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "California voters fail to pass proposed one-time tax on billionaires’ wealth",
-          "url": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40",
-          "source": "The Guardian"
-        },
-        {
-          "title": "California Voters Reject Prop. 40 Billionaire Tax Measure",
-          "url": "https://www.nytimes.com/2026/11/09/us/california-billionaire-tax-prop-40.html",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Californians reject Prop 40 wealth tax for billionaires",
-          "url": "https://www.bbc.com/news/articles/cq398em3032wo",
-          "source": "BBC"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
       "title": "kenya film classification board",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "State Embarks on Crackdown Targeting Matatus Fitted With Screens",
@@ -136,59 +114,116 @@
     },
     {
       "geo": "KE",
-      "title": "digital health agency",
+      "title": "elon musk",
       "traffic": "200+",
       "news": [
         {
-          "title": "Digital Health Agency advertises 63 vacancies in major recruitment drive",
-          "url": "https://www.the-star.co.ke/news/2026-11-10-digital-health-agency-advertises-63-vacancies",
-          "source": "The Star, Kenya"
+          "title": "How to watch 'Musk' online — stream the SpaceX billionaire biography from anywhere",
+          "url": "https://www.space.com/entertainment/space-movies-shows/how-to-watch-musk-online-stream-the-spacex-billionaire-biography-from-anywhere",
+          "source": "Space"
         },
         {
-          "title": "NTSA Set for Major Leadership Shake-Up in Latest Announcement",
-          "url": "https://www.kenyans.co.ke/news/129267-ntsa-set-major-shake-authority-targets-key-leadership-positions",
-          "source": "Kenyans.co.ke"
+          "title": "Nearly four hours of revealing the hidden aspects of Elon Musk's life that angered billionaire Elon Musk.",
+          "url": "https://www.vietnam.vn/en/gan-4-gio-he-lo-goc-khuat-cuoc-doi-khien-ty-phu-elon-musk-noi-gian",
+          "source": "Vietnam.vn"
         },
         {
-          "title": "NTSA, Digital Health Agency And IRA Declare Vacancies For Kenyans",
-          "url": "https://thekenyatimes.com/jobs-careers/ntsa-digital-health-agency-and-ira-declare-vacancies-for-kenyans/",
-          "source": "The Kenya Times"
+          "title": "'Musk' Review: Alex Gibney Examines How the World's Richest Man Turned His Lack of Empathy Into a Political Weapon",
+          "url": "https://www.micropsiacine.com/2026/11/musk-review-alex-gibney-examines-how-the-worlds-richest-man-turned-his-lack-of-empathy-into-a-political-weapon/",
+          "source": "Micropsia"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "tax exemption",
+      "title": "benni mccarthy",
       "traffic": "200+",
       "news": [
         {
-          "title": "West Fargo Public Schools approves 10-year tax exemption for COVE Living project",
-          "url": "https://www.inforum.com/news/west-fargo/west-fargo-public-schools-approves-10-year-tax-exemption-for-cove-living-project",
-          "source": "InForum"
+          "title": "Mosimane explains why South Africa will host Harambee Stars in Johannesburg",
+          "url": "https://www.mozzartsport.co.ke/football/news/mosimane-explains-why-south-africa-will-host-harambee-stars-in-johannesburg/70608",
+          "source": "Mozzart Sport Kenya"
         },
         {
-          "title": "The Estate Tax Move Surviving Spouses Miss: Claiming a Late Spouse’s Unused Exemption",
-          "url": "https://247wallst.com/personal-finance/2026/11/09/the-estate-tax-move-surviving-spouses-miss-claiming-a-late-spouses-unused-exemption/",
-          "source": "24/7 Wall St."
+          "title": "The illusion of competition: Bafana, Benni and CAF’s qualifying contradiction",
+          "url": "https://sundaytribune.co.za/sport/soccer/2026-11-10-the-illusion-of-competition-bafana-benni-and-cafs-qualifying-contradiction/",
+          "source": "Sunday Tribune"
         },
         {
-          "title": "How to Make Large Gifts While Avoiding IRS Triggers",
-          "url": "https://www.thinkadvisor.com/2026/11/09/how-to-make-large-gifts-while-avoiding-irs-triggers/",
-          "source": "ThinkAdvisor"
+          "title": "Bafana's overseas contingent get valuable minutes ahead of Kenya",
+          "url": "https://www.flashscore.com/news/bafana-s-overseas-contingent-get-valuable-minutes-ahead-of-kenya/2s6PpVoI/",
+          "source": "Flashscore.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "james gunn",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Inside James Gunn, Peter Safran’s DC Ouster: Exec Tensions and a Fateful David Ellison Visit",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/james-gunn-peter-safran-ouster-dc-1236751437/",
+          "source": "The Hollywood Reporter"
+        },
+        {
+          "title": "DC Studios Shakeup: James Gunn & Peter Safran Out, Former Marvel Exec Jeremy Latcham In",
+          "url": "https://deadline.com/2026/11/dc-studios-james-gunn-peter-safran-leaving-1237217374/",
+          "source": "Deadline"
+        },
+        {
+          "title": "James Gunn, Peter Safran Fired at DC Studios; Jeremy Latcham Replaces",
+          "url": "https://variety.com/2026/film/news/james-gunn-peter-safran-fired-dc-jeremy-latcham-1236943091/",
+          "source": "Variety"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "court",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Three judges to hear contempt case over Cabinet reconstitution order",
+          "url": "https://www.the-star.co.ke/news/2026-11-10-three-judges-to-hear-contempt-case-over-cabinet-reconstitution-order",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "High Court Issues Ruling on Petition to Freeze CSs' Salaries",
+          "url": "https://www.kenyans.co.ke/news/129265-high-court-asked-freeze-cabinet-secretaries-salaries-over-gender-rule",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Ichung’wah urges Ruto to comply with court ruling on gender balance in cabinet",
+          "url": "https://peopledaily.digital/news/ichungwah-urges-ruto-to-comply-with-court-ruling-on-gender-balance-in-cabinet",
+          "source": "People Daily"
         }
       ],
       "civic": true
-    }
-  ],
-  "dropped": [
-    {
-      "title": "tanzania",
-      "why": "unsafe: 'war'"
     },
     {
-      "title": "lion",
-      "why": "unsafe: 'dead'"
+      "geo": "KE",
+      "title": "ben white",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Ben White: England defender says people don't know 'full story' behind his self-inflicted exile from national team",
+          "url": "https://www.bbc.com/sport/football/articles/c6rmym3p419no",
+          "source": "BBC"
+        },
+        {
+          "title": "Ben White says he has no complaints at boos from England fans over self-imposed exile",
+          "url": "https://www.theguardian.com/football/2026/nov/09/ben-white-england-international-exile-arsenal-thomas-tuchel-squad-nations-league-spain-croatia",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Thomas Tuchel needs Ben White: it’s time for fans to lift vendetta",
+          "url": "https://www.thetimes.com/sport/football/article/thomas-tuchel-ben-white-england-arsenal-7gzfd8qqt",
+          "source": "The Times"
+        }
+      ]
     }
   ],
+  "dropped": [],
   "errors": {}
 }
