@@ -891,7 +891,7 @@
           "published": "2026-11-09"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -930,7 +930,8 @@
       "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 997,
-      "photo_checked": "2026-11-10T02:22:34.250289+03:00"
+      "photo_checked": "2026-11-10T02:22:34.250289+03:00",
+      "decided_at": "2026-11-10T17:14:50.535122+03:00"
     },
     {
       "id": "2026-w46-hot-1110",
@@ -971,7 +972,7 @@
           "published": "2026-11-10"
         }
       ],
-      "status": "awaiting",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 4.1/10. Fix the generic stock photo, add concrete numbers on the tax, and name the specific KRA policy rather than vague warnings."
@@ -1026,7 +1027,15 @@
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1005,
-      "photo_checked": "2026-11-10T12:46:28.652949+03:00"
+      "photo_checked": "2026-11-10T12:46:28.652949+03:00",
+      "decided_at": "2026-11-10T17:14:51.402832+03:00",
+      "published_at": "2026-11-10T17:16:17.194752+03:00",
+      "ig_id": "18091345754277393",
+      "fb_id": "1504357571546518",
+      "story_id": "18101331455102615",
+      "fb_story_id": "1164296563229498",
+      "yt_id": "YvuCYTboTKc",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w46-hot-1110m",
