@@ -1,10 +1,32 @@
 {
-  "fetched": "2026-11-10T11:43:55.578269+00:00",
+  "fetched": "2026-11-10T13:48:07.675248+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "tsc",
-      "traffic": "2000+",
+      "title": "tanzania",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Tanzania Banking Sector Profit Rises 17.1% to TZS 2.11 Trillion in Nine Months as Top Two Banks Earn 61.9% of Profit",
+          "url": "https://www.tanzaniainvest.com/finance/banking/banking-sector-results-january-september-2026",
+          "source": "TanzaniaInvest"
+        },
+        {
+          "title": "Banking sector rakes in nearly 2trn/- in nine months of 2026",
+          "url": "https://ippmedia.co.tz/the-guardian/news/local-news/read/banking-sector-rakes-in-nearly-2trn-in-nine-months-of-2026-2026-11-02-095710",
+          "source": "https://ippmedia.co.tz/"
+        },
+        {
+          "title": "Air Tanzania announces eight-day flight disruption as Airbus fleet grounded",
+          "url": "https://www.theeastafrican.co.ke/tea/business-tech/air-tanzania-flight-disruption-as-airbus-fleet-grounded-5665152",
+          "source": "The EastAfrican"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "tsc portal",
+      "traffic": "1000+",
       "news": [
         {
           "title": "TSC opens applications for 7,720 teacher jobs: Who needs to apply",
@@ -17,65 +39,65 @@
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "TSC Announces Fresh Recruitment Of 7,720 Teachers On Permanent Terms",
-          "url": "https://thekenyatimes.com/jobs-careers/tsc-announces-fresh-recruitment-of-7720-teachers-on-permanent-terms/",
-          "source": "The Kenya Times"
+          "title": "TSC orders head teachers to release excess teachers to understaffed schools",
+          "url": "https://www.standardmedia.co.ke/education/article/2001561940/tsc-orders-head-teachers-to-release-excess-teachers-to-understaffed-schools",
+          "source": "The Standard"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "warriors vs pelicans",
-      "traffic": "1000+",
+      "title": "tradingview",
+      "traffic": "500+",
       "news": [
         {
-          "title": "NBA: Jimmy Butler dresses up as coach and says 'pass to Steph' as Golden State Warriors win eighth straight match",
-          "url": "https://www.skysports.com/nba/news/13610478/nba-jimmy-butler-dresses-up-as-coach-and-says-pass-to-steph-as-golden-state-warriors-win-eighth-straight-match",
-          "source": "Sky Sports"
+          "title": "YieldMax® ETFs Announces Weekly Distributions for Group 1 ETFs",
+          "url": "https://www.globenewswire.com/news-release/2026/11/10/3399291/0/en/yieldmax-etfs-announces-weekly-distributions-for-group-1-etfs.html",
+          "source": "GlobeNewswire"
         },
         {
-          "title": "Pelicans Warriors Basketball",
-          "url": "https://www.corsicanadailysun.com/sports/national_sports/pelicans-warriors-basketball/image_64f77914-f2bf-5357-b0fd-6f7365522525.html",
-          "source": "Corsicana Daily Sun"
+          "title": "Micron, Nvidia, Lam Research removed from BofA's US 1 list",
+          "url": "https://www.tradingview.com/news/seekingalpha:0ff01d90a094b:0-micron-nvidia-lam-research-removed-from-bofa-s-us-1-list/",
+          "source": "TradingView"
         },
         {
-          "title": "Warriors' perfect homestand nourishes their souls before big test on the road",
-          "url": "https://sports.yahoo.com/articles/warriors-perfect-homestand-nourishes-souls-231743691.html",
-          "source": "Yahoo Sports"
+          "title": "YieldMax® ETFs Announces Weekly Distributions for Group 2 ETFs",
+          "url": "https://markets.businessinsider.com/news/stocks/yieldmax-etfs-announces-weekly-distributions-for-group-2-etfs-1036714061",
+          "source": "markets.businessinsider.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "carrick",
-      "traffic": "1000+",
+      "title": "forex factory",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Michael Carrick expected to be sacked LIVE: Manchester United manager latest",
-          "url": "https://www.bbc.com/sport/football/live/cmjwewv6p9vxt",
-          "source": "BBC"
+          "title": "October inflation data is expected to be cooler, helped by steadying energy prices",
+          "url": "https://finance.yahoo.com/economy/article/october-inflation-data-is-expected-to-be-cooler-helped-by-steadying-energy-prices-190000304.html",
+          "source": "Yahoo Finance"
         },
         {
-          "title": "Michael Carrick future: Man Utd head coach position increasingly in doubt with Mauricio Pochettino open to talks",
-          "url": "https://www.skysports.com/football/news/13610412/michael-carrick-future-man-utd-head-coach-position-increasingly-in-doubt-but-no-final-decision-made",
-          "source": "Sky Sports"
+          "title": "Will US Consumer Price Index data reinforce expectations for a December Fed rate hike?",
+          "url": "https://www.fxstreet.com/news/us-cpi-data-set-to-ease-in-october-as-markets-reassess-fed-rate-hike-expectations-202611100930",
+          "source": "FXStreet"
         },
         {
-          "title": "Wilcox and Berrada poised to tell Ratcliffe in Monaco that Carrick should be sacked",
-          "url": "https://www.theguardian.com/football/2026/nov/10/manchester-united-jason-wilcox-omar-berrada-jim-ratcliffe-michael-carrick-should-be-sacked",
-          "source": "The Guardian"
+          "title": "October CPI Report: What the Inflation Data Is Expected to Show",
+          "url": "https://www.kiplinger.com/investing/economy/october-2026-cpi-report-what-to-expect",
+          "source": "Kiplinger"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "martín zubimendi",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
-          "title": "¿Bombazo Zubimendi en enero?: \"Está cerca\"",
-          "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20261109/1004249122/bombazo-zubimendi-enero-cerca.html",
-          "source": "Mundo Deportivo"
+          "title": "Martin Zubimendi, ¿de vuelta a la Liga?",
+          "url": "https://www.noticiasdegipuzkoa.eus/reala/mercado-de-fichajes/2026/11/09/martin-zubimendi-fichaje-atletico-madrid-11739992.html",
+          "source": "Noticias de Gipuzkoa"
         },
         {
           "title": "Sorpresa mayúscula: el Atlético de Madrid abre la puerta a un intercambio con el Arsenal",
@@ -83,9 +105,9 @@
           "source": "Yahoo"
         },
         {
-          "title": "Luis de la Fuente espera el OK de la Federación para comunicar al campeón del mundo que está fuera",
-          "url": "https://www.elnacional.cat/es/deportes/luis-fuente-espera-ok-federacion-comunicar-campeon-mundo-esta-fuera_1722551_102.html",
-          "source": "El Nacional.cat"
+          "title": "El exvalencianista Mateu Alemany quiere cerrar el fichaje que Florentino Pérez negó a Xabi Alonso para el Real Madrid",
+          "url": "https://www.superdeporte.es/futbol/2026/11/10/mateu-alemany-fichaje-martin-zubimendi-136279868.html",
+          "source": "Superdeporte"
         }
       ]
     },
@@ -108,28 +130,6 @@
           "title": "Digital Health Agency announces 63 vacancies across 50 positions, sets December 1 deadline",
           "url": "https://peopledaily.digital/news/digital-health-agency-announces-63-vacancies-across-50-positions-sets-december-1-deadline",
           "source": "People Daily"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "lion",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Jets trade safety Andre Cisco to injury-plagued Lions for draft pick",
-          "url": "https://www.espn.com/nfl/story/_/id/50434559/sources-jets-trade-safety-andre-cisco-lions",
-          "source": "ESPN"
-        },
-        {
-          "title": "TWENTYMAN: What Cisco trade means for Lions’ defense",
-          "url": "https://www.detroitlions.com/news/twentyman-what-cisco-trade-means-for-lions-defense-branch-joseph-clark",
-          "source": "Detroit Lions"
-        },
-        {
-          "title": "Lions agree to acquire S Andre Cisco from Jets",
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-agree-to-acquire-s-andre-cisco-from-jets",
-          "source": "NBC Sports"
         }
       ]
     },
@@ -158,53 +158,54 @@
     },
     {
       "geo": "KE",
-      "title": "video assistant referee",
-      "traffic": "200+",
+      "title": "tax",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Premier League incident-by-incident: Was it a bad weekend for VAR?",
-          "url": "https://www.bbc.com/sport/football/articles/c6n9r93dnr9do",
+          "title": "California voters fail to pass proposed one-time tax on billionaires’ wealth",
+          "url": "https://www.theguardian.com/us-news/2026/nov/09/california-tax-billionaires-prop-40",
+          "source": "The Guardian"
+        },
+        {
+          "title": "California Voters Reject Prop. 40 Billionaire Tax Measure",
+          "url": "https://www.nytimes.com/2026/11/09/us/california-billionaire-tax-prop-40.html",
+          "source": "The New York Times"
+        },
+        {
+          "title": "Californians reject Prop 40 wealth tax for billionaires",
+          "url": "https://www.bbc.com/news/articles/cq398em3032wo",
           "source": "BBC"
-        },
-        {
-          "title": "Premier League Key Match Incidents panel rules on 2 Newcastle United incidents",
-          "url": "https://sports.yahoo.com/articles/premier-league-key-match-incidents-112628078.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Premier League Match Round 8 - Key Match Incidents Panel outcomes",
-          "url": "https://www.premierleague.com/en/news/4756175",
-          "source": "Premier League"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
-      "title": "hawks vs lakers",
-      "traffic": "200+",
+      "title": "kenya film classification board",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Preview: Los Angeles Lakers vs. Atlanta Hawks: Player props, injury report and prediction | NBA",
-          "url": "https://www.sportsmole.co.uk/basketball/la-lakers/preview/los-angeles-lakers-vs-atlanta-hawks-player-props-injury-report-and-prediction--nba_608764.html",
-          "source": "Sports Mole"
+          "title": "State Embarks on Crackdown Targeting Matatus Fitted With Screens",
+          "url": "https://www.kenyans.co.ke/news/129276-kfcb-announces-crackdown-matatus-showing-inappropriate-content",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Luka Dončić puts up 32 points, 10 assists in Atlanta",
-          "url": "https://www.nba.com/watch/video/luka-doncic-puts-up-32-points-10-assists-in-atlanta?plsrc=nba&collection=luka-doncic",
-          "source": "NBA.com"
+          "title": "KFCB intensifies drive for child-friendly content on PSV screens",
+          "url": "https://www.kbc.co.ke/kfcb-intensifies-drive-for-child-friendly-content-on-psv-screens/",
+          "source": "KBC Digital"
         },
         {
-          "title": "Luka Doncic returns, has 32 points, 10 assists in Lakers' sixth straight win",
-          "url": "https://www.espn.com/nba/story/_/id/50439743/luka-doncic-returns-nets-32-lakers-push-win-streak-6",
-          "source": "ESPN"
+          "title": "Govt launches crackdown on matatus showing and playing inappropriate content",
+          "url": "https://peopledaily.digital/news/govt-launches-crackdown-on-matatus-showing-and-playing-inappropriate-content",
+          "source": "People Daily"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "tanzania",
-      "why": "unsafe: 'war'"
+      "title": "lion",
+      "why": "unsafe: 'dead'"
     }
   ],
   "errors": {}
