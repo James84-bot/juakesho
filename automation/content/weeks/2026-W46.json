@@ -924,6 +924,101 @@
       "reel": true,
       "tg_msg": 997,
       "photo_checked": "2026-11-10T02:22:34.250289+03:00"
+    },
+    {
+      "id": "2026-w46-hot-1110",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Kenyans",
+      "line": "KRA's new *15%* tax directive hits salaries, jobs and prices across the country.",
+      "fact": "The new KRA tax directive introduces a 15% rate affecting everyday goods, services and pay slips.",
+      "source": "K24 Digital, 2026-11-10",
+      "photo_query": "Nairobi central business district street Kenya",
+      "message": "KRA's new 15% tax directive increases the cost of living for every Kenyan.",
+      "action": "Check your payslip and supplier invoices for the new 15% rate",
+      "beats": [
+        "KRA's new *15%* tax directive hits our pockets this week.",
+        "The tax applies to salaries, goods and everyday services.",
+        "Prices in local shops and supermarkets are going up.",
+        "Tell us below: how much has your shopping basket *increased by*?"
+      ],
+      "caption": "New KRA tax rules mean higher prices and smaller payslips. Check your receipts.\n\nWhat did you pay for essentials this week?\n\n#KRA #KenyaOnRecord",
+      "who": "Commissioner General, Kenya Revenue Authority",
+      "where": "National",
+      "when": "November 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Salaried workers and consumers pay an extra 15% on taxed goods and services.",
+      "bg": "usiku",
+      "publish_at": "2026-11-10T14:15:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The National Treasury faces pressure to release the confidential IMF audit on public funds."
+      ],
+      "source_links": [
+        {
+          "outlet": "K24 Digital",
+          "title": "KRA’s new 15% tax directive: What it means for salaries, jobs and prices in Kenya",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQaGxHSHpFTDdLTVR1cW1ZT0xNNTcwMGE2Z0NJSHN4OEJhVXVUYmdSakwwSTV1NUxDWDEwaDdKRXZDakU1WERiOUJENGUwOVlfMHhENUh0RDdhdEQtVG5KNTRfOUQ1alRmMEZHZHc2YXl5U0RzZFAzTWxYTXlOQkZTSGMzdVN4Y29xcVRZNExTUlZHQmxUeTJBUFNPbnBDdnByYXdXenZ2aDlqZElnS0hSd0dnMA?oc=5",
+          "published": "2026-11-10"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.1/10. Fix the generic stock photo, add concrete numbers on the tax, and name the specific KRA policy rather than vague warnings."
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 4,
+        "craft": 4,
+        "picture": 4,
+        "hold": 5,
+        "demand": 3,
+        "action": 3,
+        "fair": 4,
+        "impact": 4,
+        "human": 3,
+        "avg": 4.1,
+        "note": "Fix the generic stock photo, add concrete numbers on the tax, and name the specific KRA policy rather than vague warnings."
+      },
+      "drafted_at": "2026-11-10T09:17:13.287104+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1110-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/128924-kra-require-importer-details-all-consolidated-cargo-imports",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1110-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1110-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KRA Announces New Requirement for Kenyans Importing Goods in Shared Shipments"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KRA Lists 30 Goods Excluded From Ksh2 Million Cargo Clearance Plan"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KRA Issues Directive to Employers Ahead of Monday Tax Deadline"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1110-broll.mp4",
+      "broll_credit": "Footage: Javaistan / Pixabay",
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1005
     }
   ],
   "scripts": {
