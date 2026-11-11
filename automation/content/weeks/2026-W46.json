@@ -1132,13 +1132,103 @@
       "reel": true,
       "tg_msg": 1012,
       "photo_checked": "2026-11-10T15:42:55.044778+03:00"
+    },
+    {
+      "id": "2026-w46-hot-1111",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Patients",
+      "line": "Patients must now verify treatment through *SMS* before SHA releases funds to hospitals.",
+      "fact": "The system sends an SMS prompt to patients to confirm services before SHA pays the clinic.",
+      "source": "People Daily, 2026-11-11",
+      "photo_query": "hospital ward Kenya",
+      "message": "Patients must now verify treatment by SMS before SHA pays health facilities.",
+      "action": "Always verify your registered phone number when visiting any health facility.",
+      "who": "Social Health Authority",
+      "where": "National",
+      "when": "11 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "You must confirm hospital visits on your phone before SHA clears bills.",
+      "beats": [
+        "SHA has launched an *SMS system* to verify hospital visits.",
+        "Hospitals will get paid only after patients confirm their treatment.",
+        "The prompt checks every claim before SHA releases public money.",
+        "Did your hospital ask for your *phone number* on your last visit?"
+      ],
+      "caption": "The Social Health Authority has introduced an SMS verification system for patient visits. Hospitals will only receive payout after you confirm receiving treatment on your phone. \n\nDid your hospital ask for your phone number on your last visit?\n\n#SHA #Healthcare #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-11T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Kenya introduces SMS system to verify hospitals’ healthcare services before SHA sends money",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSHk0UTBnWHlNdy11VGZyOEZON25YRkNJdkRuTkhnVF9ISGJOVDNZVzhoVU1KUTloOHpIQVQwdFd4WndVdHV2cThjdWNiYkdWTXBmNExXMk1SaGY4TmVzX3lZMVdWYlVrVTNwZ3VPaEJyWnE3bUxvWms3a2RJRTBkQ0hldkVrTWxHRzJhY3l0N2Vzd3dCWmVyQWxTTml2YXJhU3R5aUtTVndNVS14d2RINXBRVlBXTkYxaDZfMHowemE?oc=5",
+          "published": "2026-11-11"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.9/10. Remove the generic hashtags and frame the closing question around personal experience rather than a compliance instruction."
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 7,
+        "picture": 7,
+        "hold": 7,
+        "demand": 8,
+        "action": 6,
+        "fair": 7,
+        "impact": 8,
+        "human": 4,
+        "avg": 6.9,
+        "note": "Remove the generic hashtags and frame the closing question around personal experience rather than a compliance instruction."
+      },
+      "drafted_at": "2026-11-11T09:09:05.475093+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1111-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke · Photo: KBC · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/128919-dha-explains-how-new-system-will-handle-sha-claims",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1111-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1111-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "DHA Explains How New System Will Handle SHA Claims"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "An acacia-inspired landmark takes shape at Bomas"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "State Reveals New Plan to Address Medicine Shortages in Hospitals"
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1033
     }
   ],
   "scripts": {
-    "radio": "Sasa, wasikilizaji wa Kenya on Record. Mimi ni wako, na leo tunaziangazia habari za TSC kufungua nafasi za kazi elfu saba, mia saba na ishirini kwa walimu wapya. Wengi wenu mnasubiri kwa hamu, mkijua vyema hali ilivyo mtaani na mamilioni ya pesa zilizotumika kusomea vyuo vikuu na vya mafunzo. Kazi zipo, ndio, lakini swali ni je—mfumo huu wa ajira uko wazi kwa kiasi gani? Tunataka uwazi kamili ili tusishuhudie tena zile ripoti za rushwa, upendeleo, na mchezo wa kuchukuana kando. Ni haki ya kila mhitimu kusimama kwa usawa bila kulazimika kutoa mlungula. Walimu wetu ndio msingi wa taifa hili, na mishahara yao sio hisani, ni jasho lao. Fuatilia ushahidi huu kwa makini, simama kidete, na utuhabarishe kama kuna upendeleo katika kituo chako. Tusinyamaze.\n\nKwa ufupi, TSC imetangaza nafasi 7,720 za ualimu. Tunataka usawa, haki, na kuzuia rushwa wakati wa mchakato huu wa ajira kote nchini.",
-    "voice_note": "Hujambo mwananchi. Habari kubwa wiki hii kutoka TSC ni kwamba nafasi elfu saba, mia saba na ishirini za walimu zimetangazwa. Lakini tunajua ukweli wa mambo mtaani—wengi wenu mmesoma sana na mnasubiri kazi kwa miaka mingi. Swali letu ni moja: Je, mchakato huu utakuwa safi, bila rushwa wala upendeleo? Usikubali kulipa hongo ili kupata kazi inayostahili iwe yako kwa haki. Fuatilia hili kwa karibu, na kama kuna ukiukaji wowote katika eneo lako, tujulishe hapa Kenya on Record.",
-    "sms": "TSC imefungua nafasi 7,720 za walimu. Usikubali kulipa hongo kupata kazi. Ripoti rushwa yoyote ya ajira. Haki yako haiuzwi. Kenya on Record.",
-    "reels": "Maelfu ya walimu wamemaliza vyuo, wanasubiri kwa miaka, na sasa TSC imetangaza nafasi elfu saba, mia saba na ishirini. Swali ni je—hizi kazi zitaenda kwa waliohitimu kihalali, au kwa wenye ushawishi na hongo? Usinyamaze. Fuatilia haki yako na usiruhusu jasho lako kuuzwa. Hii ni Kenya on Record."
+    "radio": "Hamjamboni, and welcome back to Kenya on Record. If you visit a healthcare facility under the Social Health Authority, your mobile phone is now an essential part of your discharge process. SHA has instituted a new rule: before any hospital or clinic receives reimbursement for your treatment, you, the patient, must verify the services received via an SMS prompt. For years, our national health insurance fund lost billions of shillings to ghost patients, inflated billing, and private clinics charging for surgeries that never happened. By making the patient the final signatory through a direct SMS authorization, SHA is attempting to plug these systemic leaks. Here is what this means for you in practical terms. First, ensure the mobile number linked to your SHA profile is active and in your possession whenever you seek medical care. Second, take time to read the SMS prompt thoroughly. If you were treated for a minor headache, but the SMS indicates you were admitted overnight or underwent expensive scans, do not approve it. Finally, under no circumstance should you hand your phone to hospital staff or share your one-time authorization code with them to enter on your behalf. Treat that SMS as your personal signature. Kwa ufupi: Kabla hospitali haijalipwa na SHA, ni lazima wewe mgonjwa uthibitishe matibabu uliyopokea kupitia ujumbe wa SMS. Hakikisha nambari yako ya simu inafanya kazi, soma ujumbe huo kwa makini kuzuia madai ya uongo, na kamwe usimpe mhudumu yeyote kodi yako ya siri. Linda mfuko wetu wa afya.",
+    "voice_note": "Habari zenu. Just a quick heads-up regarding your hospital visits under SHA. Moving forward, no clinic or hospital will receive payments from the Social Health Authority until you, the patient, verify that you actually received the treatment via an SMS sent to your phone. This policy is meant to eliminate ghost claims and hospitals billing for procedures or medicines you never received. What do you need to do? Always go to the hospital with the phone number registered on your SHA account. When that verification message comes in, read it carefully before confirming. If the SMS lists tests or admissions that didn't happen, decline it and report the facility. Most importantly, do not let hospital staff take your phone to enter the code for you. Treat that SMS like your M-Pesa PIN. Let's protect our public health funds. Please share this note with your family groups.",
+    "sms": "Usiibiwe: SHA now requires SMS verification before paying hospitals. Read the prompt carefully and never share your approval code with clinic staff.",
+    "reels": "Your phone is now the final barrier against ghost claims in healthcare. Hospitals will no longer receive SHA payouts until you verify your treatment via SMS. This stops rogue clinics from billing for phantom surgeries and fake admissions. But here is the catch: never let hospital staff handle that SMS or input your approval code for you. Read the message, confirm only what you actually received, and safeguard our public health kitty."
   },
   "spend_usd": 0.0
 }
