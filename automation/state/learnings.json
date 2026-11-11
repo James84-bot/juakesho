@@ -1,31 +1,31 @@
 {
-  "updated": "2026-11-10T14:43:42.486156+03:00",
+  "updated": "2026-11-11T14:26:42.456464+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 73.8,
+      "score": 73.4,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "reach": 25,
+      "reach": 27,
       "saved": 0,
       "shares": 6,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 8.4
+      "avg_watch_s": 8.0
     },
     {
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.9,
+      "score": 26.7,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 34,
+      "reach": 37,
       "saved": 0,
       "shares": 2,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.0
+      "avg_watch_s": 5.7
     },
     {
       "id": "2026-w43-hot-1021",
@@ -46,12 +46,12 @@
       "lane": "everyone",
       "score": 9.5,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 121,
+      "reach": 123,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.2
+      "avg_watch_s": 4.1
     },
     {
       "id": "2026-w43-hot-1020",
@@ -74,7 +74,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "KNCHR documented 92 attacks on journalists across Kenya.",
-      "reach": 11,
+      "reach": 12,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -100,12 +100,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 28,
+      "reach": 32,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.8
+      "avg_watch_s": 7.2
     }
   ],
   "all": [
@@ -113,27 +113,27 @@
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 73.8,
+      "score": 73.4,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "reach": 25,
+      "reach": 27,
       "saved": 0,
       "shares": 6,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 8.4
+      "avg_watch_s": 8.0
     },
     {
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.9,
+      "score": 26.7,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 34,
+      "reach": 37,
       "saved": 0,
       "shares": 2,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.0
+      "avg_watch_s": 5.7
     },
     {
       "id": "2026-w43-hot-1021",
@@ -154,12 +154,12 @@
       "lane": "everyone",
       "score": 9.5,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 121,
+      "reach": 123,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.2
+      "avg_watch_s": 4.1
     },
     {
       "id": "2026-w43-hot-1020",
@@ -250,7 +250,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 6.8
+      "avg_watch_s": 8.5
     },
     {
       "id": "2026-w45-hot-1104m",
@@ -258,12 +258,25 @@
       "lane": "everyone",
       "score": 6.4,
       "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
-      "reach": 11,
+      "reach": 12,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 10.5
+      "avg_watch_s": 9.6
+    },
+    {
+      "id": "2026-w46-hot-1110",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 6.4,
+      "opening": "KRA's new 15% tax directive hits our pockets this week.",
+      "reach": 13,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 2,
+      "avg_watch_s": 3.3
     },
     {
       "id": "2026-w43-d2-kenya-r9x-r2",
@@ -303,6 +316,19 @@
       "comments": 0,
       "likes": 2,
       "avg_watch_s": 5.4
+    },
+    {
+      "id": "2026-w46-d2-kenya",
+      "series": "kenya",
+      "lane": "diaspora",
+      "score": 4.9,
+      "opening": "Mount Kenya reaches 5,199 metres in altitude.",
+      "reach": 106,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 2,
+      "avg_watch_s": 2.4
     },
     {
       "id": "2026-w43-hot-1025",
@@ -362,25 +388,12 @@
       "lane": "everyone",
       "score": 3.2,
       "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
-      "reach": 14,
+      "reach": 15,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.3
-    },
-    {
-      "id": "2026-w46-hot-1109",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.2,
-      "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
-      "reach": 13,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 7.0
+      "avg_watch_s": 5.1
     },
     {
       "id": "2026-w43-hot-1022",
@@ -466,25 +479,12 @@
       "lane": "everyone",
       "score": 3.1,
       "opening": "Employers must remit employee levies by the 9th day of each month.",
-      "reach": 18,
+      "reach": 19,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.3
-    },
-    {
-      "id": "2026-w45-hot-1107",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.1,
-      "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "reach": 27,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 5.1
+      "avg_watch_s": 4.1
     },
     {
       "id": "2026-w46-d1-money-r5",
@@ -492,12 +492,25 @@
       "lane": "hustle",
       "score": 3.1,
       "opening": "EPRA reviews fuel prices on November 14.",
-      "reach": 23,
+      "reach": 26,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.3
+      "avg_watch_s": 4.6
+    },
+    {
+      "id": "2026-w46-hot-1109",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.1,
+      "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
+      "reach": 18,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 6.2
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -513,12 +526,25 @@
       "avg_watch_s": 4.7
     },
     {
+      "id": "2026-w45-hot-1107",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.0,
+      "opening": "Kenya records 18 days without a single new Ebola infection.",
+      "reach": 28,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 5.0
+    },
+    {
       "id": "2026-w45-hot-1103m",
       "series": "sauti",
       "lane": "everyone",
       "score": 2.9,
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "reach": 45,
+      "reach": 46,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -531,12 +557,12 @@
       "lane": "everyone",
       "score": 2.9,
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "reach": 42,
+      "reach": 43,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.8
+      "avg_watch_s": 5.0
     },
     {
       "id": "2026-w45-d6-kenya",
@@ -557,12 +583,25 @@
       "lane": "everyone",
       "score": 2.8,
       "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
-      "reach": 60,
+      "reach": 61,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.5
+      "avg_watch_s": 4.4
+    },
+    {
+      "id": "2026-w46-hot-1109m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 2.8,
+      "opening": "Kenya won two gold medals on the track in Dakar.",
+      "reach": 53,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.0
     },
     {
       "id": "2026-w45-d5-straight",
@@ -622,12 +661,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "reach": 15,
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 8.2
+      "avg_watch_s": 8.1
     },
     {
       "id": "2026-w45-d7-glasspoll",
@@ -635,7 +674,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "MPs passed a Bill giving party bosses power over MCA nominations.",
-      "reach": 21,
+      "reach": 23,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -648,7 +687,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "KNCHR documented 92 attacks on journalists across Kenya.",
-      "reach": 11,
+      "reach": 12,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -674,12 +713,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 28,
+      "reach": 32,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.8
+      "avg_watch_s": 7.2
     }
   ],
   "youtube": [
@@ -695,7 +734,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 507,
+      "views": 510,
       "likes": 2,
       "comments": 0
     },
@@ -703,7 +742,7 @@
       "id": "2026-w45-hot-1108-r4",
       "series": "sauti",
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "views": 441,
+      "views": 456,
       "likes": 0,
       "comments": 0
     },
@@ -711,7 +750,7 @@
       "id": "2026-w45-hot-1108b2133",
       "series": "sauti",
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "views": 414,
+      "views": 430,
       "likes": 0,
       "comments": 0
     },
@@ -727,8 +766,16 @@
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "views": 259,
+      "views": 260,
       "likes": 2,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-hot-1109m",
+      "series": "sauti",
+      "opening": "Kenya won two gold medals on the track in Dakar.",
+      "views": 231,
+      "likes": 1,
       "comments": 0
     },
     {
@@ -751,7 +798,7 @@
       "id": "2026-w45-hot-1102m",
       "series": "sauti",
       "opening": "Counterfeit alcohol wiped out Sh7.6bn in KRA excise revenue.",
-      "views": 190,
+      "views": 191,
       "likes": 1,
       "comments": 0
     },
@@ -783,7 +830,7 @@
       "id": "2026-w45-hot-1107m",
       "series": "sauti",
       "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
-      "views": 108,
+      "views": 110,
       "likes": 0,
       "comments": 0
     },
@@ -791,7 +838,7 @@
       "id": "2026-w45-hot-1106",
       "series": "sauti",
       "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
-      "views": 76,
+      "views": 78,
       "likes": 0,
       "comments": 0
     },
@@ -799,7 +846,7 @@
       "id": "2026-w46-hot-1109",
       "series": "sauti",
       "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
-      "views": 68,
+      "views": 72,
       "likes": 0,
       "comments": 0
     },
@@ -828,11 +875,27 @@
       "comments": 0
     },
     {
+      "id": "2026-w46-d2-kenya",
+      "series": "kenya",
+      "opening": "Mount Kenya reaches 5,199 metres in altitude.",
+      "views": 36,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w46-d1-money-r5",
       "series": "money",
       "opening": "EPRA reviews fuel prices on November 14.",
-      "views": 30,
+      "views": 32,
       "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-hot-1110",
+      "series": "sauti",
+      "opening": "KRA's new 15% tax directive hits our pockets this week.",
+      "views": 16,
+      "likes": 1,
       "comments": 0
     },
     {

@@ -1223,13 +1223,91 @@
       "reel": true,
       "tg_msg": 1033,
       "photo_checked": "2026-11-11T12:30:43.302897+03:00"
+    },
+    {
+      "id": "2026-w46-hot-1111m",
+      "template": "sauti",
+      "lane": "everyone",
+      "demand": 3,
+      "kicker": "Tea farmers",
+      "line": "Sudan lifts its *20-month ban* on Kenyan tea imports, reopening a key African market.",
+      "fact": "Sudan resumed tea purchases following bilateral trade talks, ending a freeze in place since early 2025.",
+      "source": "Capital FM News, 2026-11-11",
+      "photo_query": "tea farm Kenya",
+      "message": "Sudan reopened its market to Kenyan tea after a 20-month ban, offering relief to smallholder farmers.",
+      "action": "Ask your local tea factory when shipments to Sudan will resume.",
+      "impact": "Smallholder tea farmers gain an export route that absorbs surplus leaf and supports bonus earnings.",
+      "who": "Ministry of Agriculture and Trade",
+      "where": "National",
+      "when": "11 Nov 2026",
+      "side": "government",
+      "tone": "credit",
+      "beats": [
+        "Sudan ended its *20-month ban* on Kenyan tea imports.",
+        "Sudan was previously Kenya's second largest African *tea buyer*.",
+        "The reopening clears *tea stockpiles* held in local factories.",
+        "Do you or your family grow tea?"
+      ],
+      "caption": "Sudan has lifted its 20-month ban on Kenyan tea imports following trade talks. The move reopens one of Kenya's biggest export markets in Africa for smallholder farmers.\n\nDo you or your family grow tea?\n\n#Agriculture #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-11T20:27:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Patients must now verify treatment by SMS before SHA pays health facilities."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Sudan lifts 20-month ban on Kenyan tea imports after Ruto talks",
+          "link": "https://capitalfm.africa/sudan-lifts-20-month-ban-on-kenyan-tea-imports-after-ruto-talks/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-11"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "drafted_at": "2026-11-11T14:36:07.479644+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1111m-photo.jpg",
+      "photo_credit": "Photo: KBC · Photo: Capital FM · File photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/ruto-highlights-agriculture-reforms-promises-better-returns-for-farmers/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1111m-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1111m-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Ruto highlights agriculture reforms, promises better returns for farmers"
+        },
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Ruto launches Sh1.3bn Bonchari road, unveils Sh22bn roads plan"
+        },
+        {
+          "credit": "File photo: KBC",
+          "title": "Migori sugarcane farmers call for board election transparency"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1111m-broll.mp4",
+      "broll_credit": "Footage: Ponnguyenduy / Pixabay",
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1036
     }
   ],
   "scripts": {
-    "radio": "Hamjamboni, and welcome back to Kenya on Record. If you visit a healthcare facility under the Social Health Authority, your mobile phone is now an essential part of your discharge process. SHA has instituted a new rule: before any hospital or clinic receives reimbursement for your treatment, you, the patient, must verify the services received via an SMS prompt. For years, our national health insurance fund lost billions of shillings to ghost patients, inflated billing, and private clinics charging for surgeries that never happened. By making the patient the final signatory through a direct SMS authorization, SHA is attempting to plug these systemic leaks. Here is what this means for you in practical terms. First, ensure the mobile number linked to your SHA profile is active and in your possession whenever you seek medical care. Second, take time to read the SMS prompt thoroughly. If you were treated for a minor headache, but the SMS indicates you were admitted overnight or underwent expensive scans, do not approve it. Finally, under no circumstance should you hand your phone to hospital staff or share your one-time authorization code with them to enter on your behalf. Treat that SMS as your personal signature. Kwa ufupi: Kabla hospitali haijalipwa na SHA, ni lazima wewe mgonjwa uthibitishe matibabu uliyopokea kupitia ujumbe wa SMS. Hakikisha nambari yako ya simu inafanya kazi, soma ujumbe huo kwa makini kuzuia madai ya uongo, na kamwe usimpe mhudumu yeyote kodi yako ya siri. Linda mfuko wetu wa afya.",
-    "voice_note": "Habari zenu. Just a quick heads-up regarding your hospital visits under SHA. Moving forward, no clinic or hospital will receive payments from the Social Health Authority until you, the patient, verify that you actually received the treatment via an SMS sent to your phone. This policy is meant to eliminate ghost claims and hospitals billing for procedures or medicines you never received. What do you need to do? Always go to the hospital with the phone number registered on your SHA account. When that verification message comes in, read it carefully before confirming. If the SMS lists tests or admissions that didn't happen, decline it and report the facility. Most importantly, do not let hospital staff take your phone to enter the code for you. Treat that SMS like your M-Pesa PIN. Let's protect our public health funds. Please share this note with your family groups.",
-    "sms": "Usiibiwe: SHA now requires SMS verification before paying hospitals. Read the prompt carefully and never share your approval code with clinic staff.",
-    "reels": "Your phone is now the final barrier against ghost claims in healthcare. Hospitals will no longer receive SHA payouts until you verify your treatment via SMS. This stops rogue clinics from billing for phantom surgeries and fake admissions. But here is the catch: never let hospital staff handle that SMS or input your approval code for you. Read the message, confirm only what you actually received, and safeguard our public health kitty."
+    "radio": "Good evening. This is Kenya on Record.\n\nAfter twenty long months of closed doors and mounting unsold stock, Sudan has officially reopened its market to Kenyan tea. For hundreds of thousands of smallholder farmers across Kericho, Nandi, Kisii, and the Mt. Kenya belt, this announcement comes as a long-overdue breath of fresh air.\n\nSudan has historically been one of Kenya’s most critical tea buyers. When trade stalled due to regional instability and currency bottlenecks, the ripple effects traveled straight down to the farmgate. Warehouses in Mombasa piled high, auction prices plunged, and annual tea bonus payouts took a painful hit. Our farmers absorbed high fertilizer costs and lived through the shortfall.\n\nHowever, good news at the border requires vigilance at home. Opening the market is only stage one. The real test lies with KTDA, the Tea Board of Kenya, and individual factory boards. How quickly will these stockpiles move, and at what realized price? Smallholders must not be fed excuses about past logistics costs while international buyers resume purchases. Farmers must engage their factory directors and demand auditable records of every consignment sold to Khartoum.\n\nTrade diplomacy has opened the gate. It is now up to our local institutions to ensure the cash actually reaches the grower’s pocket.\n\nKwa ufupi: Baada ya miezi ishirini, Sudan imefungua tena soko lake kwa majani chai ya Kenya. Ni afueni kubwa kwa mkulima mdogo, lakini usimamizi wa KTDA na viwanda vya mashinani lazima uhakikishe faida ya soko hili inamfikia mkulima moja kwa moja bila kumezwa na madalali.",
+    "voice_note": "Habari zenu. A quick accountability check on our agriculture this week. Sudan has officially reopened its market to Kenyan tea after a grueling twenty-month freeze. If you or your folks farm tea, you know how hard the bonus payouts and monthly earnings were hit when that market went dark. Warehouses filled up and the farmer carried the loss. Now that trade is resuming, here is where our eyes need to be: factory governance. Too often when export routes reopen, brokers and factory managers pocket the price recovery while telling farmers old stories about logistics overheads. As tea starts moving toward Port Sudan again, ask your factory directors for clear figures. What volumes are going, and when does it reflect on the green leaf rate? Let’s stay alert.",
+    "sms": "Usiibiwe: Sudan has reopened tea imports. Do not let middlemen buy your green leaf at depressed throwaway rates. Demand transparent factory payout receipts.",
+    "reels": "For twenty months, warehouses sat full while smallholders bore the brunt of collapsed prices. Now, Sudan has officially reopened its borders to Kenyan tea. Sudan is historically one of our largest buyers, which should mean direct relief for over six hundred thousand farmers. But market access means nothing without transparency. Factory directors must put the real export earnings on the table. This windfall must land in the farmer's pocket, not disappear into boardrooms."
   },
   "spend_usd": 0.0
 }
