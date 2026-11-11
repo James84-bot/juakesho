@@ -1301,13 +1301,141 @@
       "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1036
+    },
+    {
+      "id": "2026-w46-hot-1111b1557",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Kenyans",
+      "line": "Kenya discharged its last Ebola patient, starting the countdown to being declared *Ebola-free*.",
+      "fact": "WHO declares a country Ebola-free after 42 days with no new cases from the last discharge.",
+      "message": "Kenya discharged its last Ebola patient and now starts the 42-day countdown to Ebola-free status.",
+      "action": "Report any fever or unusual bleeding at your nearest health facility right away.",
+      "photo_query": "hospital ward Kenya",
+      "source": "BBC, 2026-11-11; WHO Ebola virus disease fact sheet (42-day Ebola-free declaration protocol)",
+      "who": "Ministry of Health",
+      "where": "National",
+      "when": "11 Nov 2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Kenyans expect eased health screening and travel once the country is confirmed Ebola-free.",
+      "beats": [
+        "Kenya discharged its last Ebola patient this week.",
+        "The *countdown* to Ebola-free status has begun.",
+        "WHO declares a country free after 42 days with no new cases.",
+        "What should Kenya's health system prioritise next?"
+      ],
+      "caption": "Kenya's last Ebola patient has been discharged. The 42-day countdown to being declared Ebola-free starts now.\n\nWhat should health teams keep watching for?\n\n#Ebola #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-11T16:17:00+03:00",
+      "hot": true,
+      "avoid": [
+        "Patients must now verify treatment by SMS before SHA pays health facilities.",
+        "Sudan reopened its market to Kenyan tea after a 20-month ban, offering relief to smallholder farmers."
+      ],
+      "breaking": {
+        "title": "Kenya's Ebola outbreak: Last patient discharged as countdown begins to be being declared free of the virus",
+        "outlets": [
+          "BBC",
+          "Capital FM News",
+          "KBC Digital",
+          "Reuters",
+          "Tuko News"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "KBC Digital",
+          "title": "Kenya discharges last patient, begins countdown to Ebola-free status",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMmdya045ZUkxTW1lVXlsc0lFWFBpZjVPUWstMzhmM3FCLUlqcTRtelpZdUhGVEQ3MU1YVmFBOWFJZmhoaDZ5cWg5M0hDTC1XYk1RQS1GY1FWVVBnTF9vNkF5a1g0cXZKUkI4bWVwb2VTSDVXLVlDOW9LN0UtbXQ1anNWamFIQk5OTW1jb3RvTEg?oc=5",
+          "published": "2026-11-11"
+        },
+        {
+          "outlet": "Reuters",
+          "title": "Kenya releases last Ebola patient, starts 42-day countdown to disease-free status",
+          "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOb0JFd2U5WjhCeFZQTlRBQTBpQng0Mkh4YV95T1FXTDVsNVJVZGdHSEx3Sk1tWlM3akQ3bG41TkVtN05YNlB2WHFrQ3FCcjEwVVJubHhtTEFfckZ3RHMzMTBsTU90S0ZUWExuY1l5V3dwNHUySWk4eUlvWGMxSXVjR3pZWTgtQk92Yl84NFl0aEpnSDFDZjBKT0xzN0ZKbXJyb2dVeTBVOXZRb0Vlb2V2TWFVeUM2V0dQemtjQ0VvckkwbGhSaVZrUmx5SDczNWZ6QVFKdWhpM1N6V0ttZTUxRTlPWQ?oc=5",
+          "published": "2026-11-11"
+        },
+        {
+          "outlet": "Capital FM News",
+          "title": "Kenya begins 42-day countdown towards Ebola-free status after discharging last patient",
+          "link": "https://capitalfm.africa/kenya-begins-42-day-countdown-towards-ebola-free-status-after-discharging-last-patient/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-11"
+        },
+        {
+          "outlet": "Tuko News",
+          "title": "\"No new case\": Kenya discharges last Ebola patient, targets Ebola-free status",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPLTdYZF9SNUtXUHBqWE5ZNUo5Zzh4ZExUOTBFX1J1OUNyVGN3VW5sd0tGRzE4WWdUZTVxVzJZMkJDcmp4OTFaazVOOFZkUmM2bk1LbFliLVYyRUVHSE9jRVR2REdOd2RDd1RrMldSVVRKT0dPYkZqRDdoOXRXN1M2T19Wa0JUS2x3U3I4OTZuWDR4RTFyNmVNY1Z2MDJCY3VIM1VMU2NaSFZELUd2QmlrQ0tuWEd4UQ?oc=5",
+          "published": "2026-11-11"
+        },
+        {
+          "outlet": "BBC",
+          "title": "Kenya's Ebola outbreak: Last patient discharged as countdown begins to be being declared free of the virus",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1LcFdCVWZvaTE5dUFyeVp1MXh3LXJNS3FaWVEtSllSVlhSY015emFIZ0xvVW5qOE15Y2FHU3QzaUYyM0VFNXlfYy03NTNZajYwWFBZWHc4X24wRDhm?oc=5",
+          "published": "2026-11-11"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 9,
+        "hold": 8,
+        "demand": 9,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.6,
+        "note": "keep the action focused on a concrete health directive without filler words."
+      },
+      "drafted_at": "2026-11-11T16:15:21.012935+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1111b1557-photo.jpg",
+      "photo_credit": "Photo: KBC · Photo: Capital FM · Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/duale-kenya-on-course-to-be-declared-ebola-free-on-23rd-december/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1111b1557-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1111b1557-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Kenya discharges last patient, begins countdown to Ebola-free status"
+        },
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Kenya begins 42-day countdown towards Ebola-free status after discharging last patient"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "MoH Reveals Next Steps as Kenya Goes 10 Days Without New Ebola Cases"
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1039,
+      "auto": true,
+      "decided_at": "2026-11-11T16:24:42.311470+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening. This is Kenya on Record.\n\nAfter twenty long months of closed doors and mounting unsold stock, Sudan has officially reopened its market to Kenyan tea. For hundreds of thousands of smallholder farmers across Kericho, Nandi, Kisii, and the Mt. Kenya belt, this announcement comes as a long-overdue breath of fresh air.\n\nSudan has historically been one of Kenya’s most critical tea buyers. When trade stalled due to regional instability and currency bottlenecks, the ripple effects traveled straight down to the farmgate. Warehouses in Mombasa piled high, auction prices plunged, and annual tea bonus payouts took a painful hit. Our farmers absorbed high fertilizer costs and lived through the shortfall.\n\nHowever, good news at the border requires vigilance at home. Opening the market is only stage one. The real test lies with KTDA, the Tea Board of Kenya, and individual factory boards. How quickly will these stockpiles move, and at what realized price? Smallholders must not be fed excuses about past logistics costs while international buyers resume purchases. Farmers must engage their factory directors and demand auditable records of every consignment sold to Khartoum.\n\nTrade diplomacy has opened the gate. It is now up to our local institutions to ensure the cash actually reaches the grower’s pocket.\n\nKwa ufupi: Baada ya miezi ishirini, Sudan imefungua tena soko lake kwa majani chai ya Kenya. Ni afueni kubwa kwa mkulima mdogo, lakini usimamizi wa KTDA na viwanda vya mashinani lazima uhakikishe faida ya soko hili inamfikia mkulima moja kwa moja bila kumezwa na madalali.",
-    "voice_note": "Habari zenu. A quick accountability check on our agriculture this week. Sudan has officially reopened its market to Kenyan tea after a grueling twenty-month freeze. If you or your folks farm tea, you know how hard the bonus payouts and monthly earnings were hit when that market went dark. Warehouses filled up and the farmer carried the loss. Now that trade is resuming, here is where our eyes need to be: factory governance. Too often when export routes reopen, brokers and factory managers pocket the price recovery while telling farmers old stories about logistics overheads. As tea starts moving toward Port Sudan again, ask your factory directors for clear figures. What volumes are going, and when does it reflect on the green leaf rate? Let’s stay alert.",
-    "sms": "Usiibiwe: Sudan has reopened tea imports. Do not let middlemen buy your green leaf at depressed throwaway rates. Demand transparent factory payout receipts.",
-    "reels": "For twenty months, warehouses sat full while smallholders bore the brunt of collapsed prices. Now, Sudan has officially reopened its borders to Kenyan tea. Sudan is historically one of our largest buyers, which should mean direct relief for over six hundred thousand farmers. But market access means nothing without transparency. Factory directors must put the real export earnings on the table. This windfall must land in the farmer's pocket, not disappear into boardrooms."
+    "radio": "Welcome to Kenya on Record. This week, we have reason to breathe a measured sigh of relief, but not to let our guard down. Kenya has officially discharged its last admitted Ebola patient. This is an incredible testament to the dedication of our frontline healthcare workers, epidemiologists, and rapid response teams who acted swiftly to isolate and treat every confirmed case.\n\nHowever, accountability demands we understand where we actually stand: Kenya is not officially Ebola-free. We have now entered a critical 42-day monitoring countdown. International health protocols require two full incubation cycles of the virus—21 days each—with zero new infections before the country can earn clearance. \n\nThis means the hard work isn't over; it has simply moved to surveillance. County health departments, especially in transit hubs and border communities, cannot afford to shut down isolation beds, cut fuel for contact-tracing teams, or scale back community sensitisation. We have seen before how declaring victory prematurely invites disaster. The Ministry of Health must maintain transparent daily reporting throughout this six-week window, and as citizens, our duty is to report unusual illness without delay. \n\nKwa ufupi: Kenya imemruhusu mgonjwa wa mwisho wa Ebola kuondoka hospitalini, na sasa tunaanza kipindi cha uangalizi cha siku 42 bila kisa chochote kipya kabla ya kutangazwa rasmi kuwa salama. Serikali za kaunti na wananchi lazima waendelee na umakini ule ule ili tusirudi nyuma.",
+    "voice_note": "Habari zenu, it’s Kenya on Record with an important health update. Kenya has discharged our last admitted Ebola patient. It is great news, but we are not out of the woods just yet. We’ve just started a mandatory 42-day countdown to be officially declared Ebola-free. That’s two complete incubation periods where the country must record zero new cases. The risk right now is complacency. County health teams cannot relax surveillance, close isolation units, or recall emergency response staff prematurely. We need active screening at border points and genuine readiness in local facilities. Keep up proper hand hygiene and flag any suspected cases through official emergency lines immediately. 42 days to go—let’s stay vigilant.",
+    "sms": "Usiibiwe: Kenya is on a 42-day Ebola watch. Beware of quacks selling fake 'clearing' herbal cures or test kits. Public hospitals remain free. Stay alert.",
+    "reels": "Kenya just discharged its last Ebola patient. That is a massive milestone for our frontline doctors, but the clock is ticking. We have officially started a 42-day countdown to be certified Ebola-free. That requires six full weeks of zero new transmissions. County governments cannot dismantle isolation centers or cut surveillance funding now. The threat isn't gone until the countdown hits zero. Stay alert, stay clean, and hold the line."
   },
   "spend_usd": 0.0
 }

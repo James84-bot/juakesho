@@ -1,64 +1,42 @@
 {
-  "fetched": "2026-11-11T11:26:57.261335+00:00",
+  "fetched": "2026-11-11T12:57:36.385318+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "exam",
-      "traffic": "2000+",
+      "traffic": "5000+",
       "news": [
         {
-          "title": "Rohit Shetty warns netizens against fake social media profiles impersonating him",
-          "url": "https://www.mid-day.com/text-shots/rohit-shetty-clarifies-he-is-only-on-instagram-warns-fans-against-fake-accounts-23659377",
-          "source": "Mid-Day"
+          "title": "VCAA confirms website hacked, says no evidence VCE exam papers accessed",
+          "url": "https://www.theage.com.au/national/victoria/vcaa-confirms-website-hacked-says-vce-exam-papers-not-accessed-20261111-p61df1.html",
+          "source": "The Age"
         },
         {
-          "title": "CISCE 2027 exam schedule: Check out ICSE Class 10 and ISC Class 12 date sheets and timetable",
-          "url": "https://www.thehindu.com/news/national/cisce-2027-class-10-class-12-exam-date-sheet-time-table/article71688571.ece",
-          "source": "The Hindu"
+          "title": "Saboteur hacks exams website to promote mass cheating scam",
+          "url": "https://www.heraldsun.com.au/news/victoria/saboteur-hacks-exams-website-to-promote-mass-cheating-scam/news-story/eb09d950bad9973bad248d28927dfe5d",
+          "source": "Herald Sun"
         },
         {
-          "title": "CBSE Releases Internal Assessment Marking Format To Help Schools Avoid Errors",
-          "url": "https://www.ndtv.com/education/cbse-releases-internal-assessment-marking-format-to-help-schools-avoid-errors-12299631",
-          "source": "NDTV"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "pochettino",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Man Utd open talks with Pochettino about replacing Carrick",
-          "url": "https://www.bbc.com/sport/football/articles/cqvg25pj36mvo",
-          "source": "BBC"
-        },
-        {
-          "title": "Manchester United and Mauricio Pochettino: Would Argentine be the perfect fit or just another manager to fall foul of Old Trafford chaos?",
-          "url": "https://www.skysports.com/football/news/13610578/manchester-united-and-mauricio-pochettino-would-argentine-be-the-perfect-fit-or-just-another-manager-to-fall-foul-of-old-trafford-chaos",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Manchester United close on Mauricio Pochettino deal before settling Carrick’s fate",
-          "url": "https://www.theguardian.com/football/2026/nov/11/manchester-united-close-mauricio-pochettino-deal-michael-carrick",
-          "source": "The Guardian"
+          "title": "VCAA investigating after website hacked during exam period",
+          "url": "https://www.abc.net.au/news/2026-11-11/vcaa-website-hacked-during-exam-period/107375210",
+          "source": "ABC News & Headlines – Australian Broadcasting Corporation"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "gta6",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
+        {
+          "title": "Pre-Load Grand Theft Auto VI Now",
+          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
+          "source": "Rockstar Games"
+        },
         {
           "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
           "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
           "source": "XBOX Wire"
-        },
-        {
-          "title": "Rockstar Officially Confirms GTA 6 Regional Release Times - and They're Not What We Thought",
-          "url": "https://www.digitalfoundry.net/news/2026/11/rockstar-officially-confirms-gta-6-regional-release-times-and-theyre-not-what-we-thought",
-          "source": "Digital Foundry"
         },
         {
           "title": "‘GTA 6 Online’ Info Found In Pre-Loaded ‘GTA 6’ Files And Backend",
@@ -69,18 +47,40 @@
     },
     {
       "geo": "KE",
+      "title": "pochettino",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Mauricio Pochettino: Man Utd strike agreement with Michael Carrick's potential successor",
+          "url": "https://www.skysports.com/football/news/13610949/mauricio-pochettino-man-utd-strike-agreement-with-michael-carricks-potential-successor",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Manchester United: Michael Carrick future to be discussed at Monaco meeting",
+          "url": "https://www.bbc.com/sport/football/articles/c8wy9yzyzxnko",
+          "source": "BBC"
+        },
+        {
+          "title": "Manchester United close on Mauricio Pochettino deal before settling Carrick’s fate",
+          "url": "https://www.theguardian.com/football/2026/nov/11/manchester-united-close-mauricio-pochettino-deal-michael-carrick",
+          "source": "The Guardian"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "antonio conte",
       "traffic": "200+",
       "news": [
         {
+          "title": "Will he win Carrick's seat? Conte surprises Manchester United",
+          "url": "https://www.goal.com/en/news/will-he-win-carrick-s-seat-conte-surprises-manchester-united/bltdf1828c49c26067b",
+          "source": "Goal.com"
+        },
+        {
           "title": "Super agent pushing Antonio Conte to Man Utd as Pochettino rival rejects different role",
           "url": "https://www.football365.com/news/pini-zahavi-antonio-conte-man-utd-mauricio-pochettino",
           "source": "Football365"
-        },
-        {
-          "title": "Fabrizio Romano says Man Utd ‘scared’ to appoint ‘brutal’ manager: ‘He says the reality’",
-          "url": "https://www.teamtalk.com/manchester-united/antonio-conte-man-utd-fabrizio-romano-latest-michael-carrick-sack",
-          "source": "TEAMtalk"
         },
         {
           "title": "Man Utd next manager: What Antonio Conte has done in bid to beat Mauricio Pochettino to Old Trafford job",
@@ -114,28 +114,6 @@
     },
     {
       "geo": "KE",
-      "title": "trail blazers vs thunder",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Damian Lillard scores 25 points as the Trail Blazers beat the Thunder 123-103",
-          "url": "https://www.washingtonpost.com/sports/nba/2026/11/11/thunder-trail-blazers-score-lillard/946b374c-dd9c-11f1-912c-4fbb80d73f7f_story.html",
-          "source": "The Washington Post"
-        },
-        {
-          "title": "Portland takes on Oklahoma City in conference matchup",
-          "url": "https://www.foxsports.com/articles/nba/portland-takes-on-oklahoma-city-in-conference-matchup",
-          "source": "FOX Sports"
-        },
-        {
-          "title": "Game Recap: Trail Blazers 123, Thunder 103 (Nov. 10)",
-          "url": "https://www.nba.com/watch/video/game-recap-trail-blazers-123-thunder-103",
-          "source": "NBA.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "tax exemption",
       "traffic": "100+",
       "news": [
@@ -156,6 +134,28 @@
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "endrick",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Arsenal eye Real's Endrick - Wednesday's gossip",
+          "url": "https://www.bbc.com/sport/football/articles/cq8jzjz9x23jo",
+          "source": "BBC"
+        },
+        {
+          "title": "Endrick to Portugal? Sporting boss Paulo Fonseca plots sensational Real Madrid transfer reunion",
+          "url": "https://www.goal.com/en-ke/news/endrick-real-madrid-transfer-paulo-fonseca-sporting-cp-january/blt6709000194b6a223",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Endrick: “I have great faith in Mourinho”",
+          "url": "https://www.managingmadrid.com/115280/endrick-i-have-great-faith-in-mourinho",
+          "source": "Managing Madrid"
+        }
+      ]
     },
     {
       "geo": "KE",
