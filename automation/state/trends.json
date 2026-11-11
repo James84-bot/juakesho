@@ -1,35 +1,13 @@
 {
-  "fetched": "2026-11-11T13:48:18.818945+00:00",
+  "fetched": "2026-11-11T17:23:28.748130+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "gta6",
+      "title": "pochettino",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Pre-Load Grand Theft Auto VI Now",
-          "url": "https://www.rockstargames.com/newswire/article/89834o94713o21/pre-load-grand-theft-auto-vi-now",
-          "source": "Rockstar Games"
-        },
-        {
-          "title": "Grand Theft Auto VI Comes to XBOX One and XBOX Series X|S Through XBOX Cloud Gaming on November 19",
-          "url": "https://news.xbox.com/en-us/2026/11/10/grand-theft-auto-6-comes-to-xbox-cloud-gaming-november-19/",
-          "source": "XBOX Wire"
-        },
-        {
-          "title": "‘GTA 6 Online’ Info Found In Pre-Loaded ‘GTA 6’ Files And Backend",
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/09/gta-6-online-info-found-in-pre-loaded-gta-6-files-and-backend/",
-          "source": "Forbes"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "pochettino",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Pochettino a decade in Man Utd's making - but Carrick deserves better",
+          "title": "Man Utd manager: Mauricio Pochettino's decade-long courtship - but Michael Carrick deserves better",
           "url": "https://www.bbc.com/sport/football/articles/cwzd9pvjy426o",
           "source": "BBC"
         },
@@ -39,7 +17,7 @@
           "source": "Sky Sports"
         },
         {
-          "title": "Manchester United close on Mauricio Pochettino deal before settling Carrick’s fate",
+          "title": "Manchester United reach framework deal with Pochettino before settling Carrick’s fate",
           "url": "https://www.theguardian.com/football/2026/nov/11/manchester-united-close-mauricio-pochettino-deal-michael-carrick",
           "source": "The Guardian"
         }
@@ -47,75 +25,74 @@
     },
     {
       "geo": "KE",
-      "title": "antonio conte",
-      "traffic": "200+",
+      "title": "kenya",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Will he win Carrick's seat? Conte surprises Manchester United",
-          "url": "https://www.goal.com/en/news/will-he-win-carrick-s-seat-conte-surprises-manchester-united/bltdf1828c49c26067b",
-          "source": "Goal.com"
+          "title": "Kenya's Ebola outbreak: Last patient discharged as countdown begins to be being declared free of the virus",
+          "url": "https://www.bbc.com/news/articles/cwe9kzv0g0v7o",
+          "source": "BBC"
         },
         {
-          "title": "Super agent pushing Antonio Conte to Man Utd as Pochettino rival rejects different role",
-          "url": "https://www.football365.com/news/pini-zahavi-antonio-conte-man-utd-mauricio-pochettino",
-          "source": "Football365"
+          "title": "Kenya releases last Ebola patient, starts 42-day countdown to disease-free status",
+          "url": "https://www.reuters.com/business/healthcare-pharmaceuticals/kenya-releases-last-ebola-patient-starts-42-day-countdown-disease-free-status-2026-11-11/",
+          "source": "Reuters"
         },
         {
-          "title": "Man Utd next manager: What Antonio Conte has done in bid to beat Mauricio Pochettino to Old Trafford job",
-          "url": "https://www.sportsmole.co.uk/football/man-utd/sack-race/news/what-antonio-conte-has-done-in-bid-to-beat-mauricio-pochettino-to-the-man-utd-job_608886.html",
-          "source": "Sports Mole"
+          "title": "Duale: Kenya will not serve as Ebola quarantine centre for foreigners",
+          "url": "https://www.the-star.co.ke/news/2026-11-11-duale-kenya-will-not-serve-as-ebola-quarantine-centre-for-foreigners",
+          "source": "The Star, Kenya"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
-      "title": "athletics",
-      "traffic": "200+",
+      "title": "kenya national examinations council",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Los Angeles 2028 qualifying: not for the faint-hearted",
-          "url": "https://athleticsweekly.com/news/los-angeles-2028-qualifying-not-for-the-faint-hearted-1040014071/",
-          "source": "Athletics Weekly"
+          "title": "Religious Education, History papers on Wednesday as exams near end",
+          "url": "https://www.the-star.co.ke/news/2026-11-11-religious-education-history-papers-on-wednesday-as-exams-near-end",
+          "source": "www.the-star.co.ke"
         },
         {
-          "title": "LA28 Olympic Qualification Standards: Strict New Distance Running Cutoffs",
-          "url": "https://marathonjournal.com/la28-olympic-qualification-standards/",
-          "source": "Marathon Journal"
+          "title": "KCSE 2026: KNEC reveals exams candidates will sit on Tuesday, November 10",
+          "url": "https://peopledaily.digital/news/kcse-2026-knec-reveals-exams-candidates-will-sit-on-tuesday-november-10",
+          "source": "People Daily"
         },
         {
-          "title": "How to qualify for athletics at LA28 Olympics: The qualification system explained",
-          "url": "https://www.olympics.com/en/news/la28-olympics-athletics-qualification-system-explained-key-facts",
-          "source": "Olympic Channel"
+          "title": "Mitei urges schools to uphold examination integrity as KCSE nears end",
+          "url": "https://educationnews.co.ke/news/mitei-urges-schools-to-uphold-examination-integrity-as-kcse-nears-end",
+          "source": "Education News"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "national social security fund",
-      "traffic": "100+",
+      "traffic": "500+",
       "news": [
-        {
-          "title": "NSSF Issues Fresh Directive to All Workers Over Payslip Deductions",
-          "url": "https://www.kenyans.co.ke/news/129274-nssf-directs-employees-verify-payslips-over-missing-pension-deductions",
-          "source": "Kenyans.co.ke"
-        },
         {
           "title": "How Kenyans Can Check Their NSSF Contributions Online",
           "url": "https://thekenyatimes.com/explainers/how-kenyans-can-check-their-nssf-contributions-online/",
           "source": "The Kenya Times"
         },
         {
-          "title": "Payslip deductions: NSSF explains how much employees should contribute monthly",
-          "url": "https://www.tuko.co.ke/business-economy/economy/646244-how-calculate-monthly-nssf-deductions-check-contributions/",
-          "source": "Tuko News"
+          "title": "NSSF Warns of Hefty Penalty Over Monthly Deductions",
+          "url": "https://www.kenyans.co.ke/news/129248-nssf-announces-5-penalty-delayed-monthly-contributions",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "NSSF explains how salaried workers can check if employers are remitting their pension contributions",
+          "url": "https://peopledaily.digital/news/nssf-explains-how-salaried-workers-can-check-if-employers-are-remitting-their-pension-contributions",
+          "source": "People Daily"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "kenya vs ivory coast",
-      "traffic": "100+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Kimani Names Final Squad For Côte d’Ivoire Qualifiers",
@@ -128,8 +105,8 @@
           "source": "www.standardmedia.co.ke"
         },
         {
-          "title": "Kibet confident Emerging Stars can upset Ivory Coast",
-          "url": "https://www.the-star.co.ke/sports/football/2026-11-11-kibet-confident-emerging-stars-can-upset-ivory-coast-1",
+          "title": "Odhiambo magic sinks Cote d'Ivoire as Emerging Stars seize Nyayo thriller",
+          "url": "https://www.the-star.co.ke/sports/football/2026-11-11-odhiambo-magic-sinks-cote-divoire-as-emerging-stars-seize-nyayo-thriller-1",
           "source": "The Star, Kenya"
         }
       ]
@@ -137,36 +114,97 @@
     {
       "geo": "KE",
       "title": "tax exemption",
-      "traffic": "100+",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Letter: Support disabled veterans by passing property tax relief",
-          "url": "https://auburnpub.com/opinion/letters/article_878277a4-df5c-4b3f-97e4-4765d24365a3.html",
-          "source": "Auburn Citizen"
+          "title": "City Council set to approve package of bills to support veterans",
+          "url": "https://ny1.com/nyc/all-boroughs/news/2026/11/11/council-set-to-approve-package-of-bills-to-support-veterans",
+          "source": "Spectrum News NY1"
         },
         {
-          "title": "Allegany Enacts Property Tax Exemption Law for Veterans",
-          "url": "https://www.tapinto.net/towns/greater-olean/sections/government/articles/allegany-enacts-property-tax-exemption-law-for-veterans",
-          "source": "TAPinto"
+          "title": "Schenectady County approves expanded property tax exemptions",
+          "url": "https://www.news10.com/news/schenectady-county/schenectady-county-approves-expanded-property-tax-exemptions/",
+          "source": "NEWS10 ABC"
         },
         {
-          "title": "NYC Council poised to eliminate property taxes for some disabled veterans",
-          "url": "https://www.amny.com/politics/nyc-council-property-taxes-disabled-veterans/",
-          "source": "amNewYork"
+          "title": "Broome County executive signs property tax exemption law for disabled veterans",
+          "url": "https://www.wbng.com/2026/11/10/broome-county-executive-signs-property-tax-exemption-law-disabled-veterans/",
+          "source": "WBNG"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "endrick",
+      "title": "arsenal goalkeeper khari ranson loan",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Khari Ranson joins Billericay on short-term loan",
+          "url": "https://www.arsenal.com/news/khari-ranson-joins-billericay-on-short-term-loan-alATT3A92ISI",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Manager praises new Arsenal loanee after debut",
+          "url": "https://sports.yahoo.com/articles/manager-praises-arsenal-loanee-debut-130100982.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Manager praises new Arsenal loanee after debut",
+          "url": "https://dailycannon.com/2026/11/khari-ranson-billericay-town-debut/",
+          "source": "Daily Cannon"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "harambee stars",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Bafana Bafana coach Mosimane wary of Harambee Stars",
+          "url": "https://nation.africa/kenya/sports/football/bafana-bafana-coach-mosimane-wary-of-harambee-stars-5665950",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Olunga, Marcelo return to Harambee Stars fold ahead of South Africa duel",
+          "url": "https://www.standardmedia.co.ke/sports/article/2001561923/olunga-marcelo-return-to-harambee-stars-fold-ahead-of-south-africa-duel",
+          "source": "www.standardmedia.co.ke"
+        },
+        {
+          "title": "Ogam targets strong start as Stars fly out for Bafana clash",
+          "url": "https://www.the-star.co.ke/sports/football/2026-11-11-ogam-targets-strong-start-as-stars-fly-out-for-bafana-clash-1",
+          "source": "The Star, Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nvidia ceo jensen huang alice huang",
       "traffic": "100+",
       "news": [
         {
-          "title": "Arsenal eye Real's Endrick - Wednesday's gossip",
-          "url": "https://www.bbc.com/sport/football/articles/cq8jzjz9x23jo",
-          "source": "BBC"
+          "title": "Alice Huang’s tangled web of connections",
+          "url": "https://www.ft.com/content/3238d92b-4074-478d-a7f2-d78b9e154fc7?syn-25a6b1a6=1",
+          "source": "Financial Times"
         },
+        {
+          "title": "How Jensen Huang’s Yearslong Ties to Alice Huang Enabled $7 Billion-Plus Nvidia Chip Sales to China",
+          "url": "https://www.theinformation.com/articles/jensen-huangs-yearslong-ties-alice-huang-enabled-nvidia-chip-sales-china",
+          "source": "The Information"
+        },
+        {
+          "title": "Despite Denial, Trump Was Told on Trip to China About Spying on Nvidia’s Jensen Huang",
+          "url": "https://www.nytimes.com/2026/11/10/us/politics/trump-china-trip-nvidia.html",
+          "source": "The New York Times"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "endrick",
+      "traffic": "100+",
+      "news": [
         {
           "title": "Endrick to Portugal? Sporting boss Paulo Fonseca plots sensational Real Madrid transfer reunion",
           "url": "https://www.goal.com/en-ke/news/endrick-real-madrid-transfer-paulo-fonseca-sporting-cp-january/blt6709000194b6a223",
@@ -176,19 +214,15 @@
           "title": "Endrick: “I have great faith in Mourinho”",
           "url": "https://www.managingmadrid.com/115280/endrick-i-have-great-faith-in-mourinho",
           "source": "Managing Madrid"
+        },
+        {
+          "title": "Arsenal considers signing Real Madrid star in January",
+          "url": "https://onefootball.com/en/news/arsenal-considers-signing-real-madrid-star-in-january-43762233",
+          "source": "OneFootball"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "nvidia ceo jensen huang",
-      "why": "unsafe: 'scandal'"
-    },
-    {
-      "title": "stacy keach",
-      "why": "unsafe: 'dies'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
