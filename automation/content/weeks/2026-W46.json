@@ -645,7 +645,8 @@
       "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 963,
-      "decided_at": "2026-11-09T11:22:50.932760+03:00"
+      "decided_at": "2026-11-09T11:22:50.932760+03:00",
+      "fresh_checked": "2026-11-11T16:31:23.831442+03:00"
     },
     {
       "id": "2026-w46-hot-1109",
@@ -1300,7 +1301,8 @@
       "broll_credit": "Footage: Ponnguyenduy / Pixabay",
       "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1036
+      "tg_msg": 1036,
+      "photo_checked": "2026-11-11T16:31:56.093547+03:00"
     },
     {
       "id": "2026-w46-hot-1111b1557",
@@ -1375,7 +1377,7 @@
           "published": "2026-11-11"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1428,7 +1430,14 @@
       "reel": true,
       "tg_msg": 1039,
       "auto": true,
-      "decided_at": "2026-11-11T16:24:42.311470+03:00"
+      "decided_at": "2026-11-11T16:24:42.311470+03:00",
+      "published_at": "2026-11-11T16:32:46.050483+03:00",
+      "ig_id": "17871127659659962",
+      "fb_id": "1141071911979245",
+      "story_id": "18131591588308578",
+      "fb_story_id": "2542431602933419",
+      "yt_id": "XeH8lfhAPL4",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
