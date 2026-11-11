@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11T14:26:42.456464+03:00",
+  "updated": "2026-11-12T00:25:29.669935+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -18,9 +18,9 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.7,
+      "score": 26.6,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 37,
+      "reach": 38,
       "saved": 0,
       "shares": 2,
       "comments": 0,
@@ -41,19 +41,6 @@
       "avg_watch_s": 5.5
     },
     {
-      "id": "2026-w45-hot-1108m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.5,
-      "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 123,
-      "saved": 1,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 4.1
-    },
-    {
       "id": "2026-w43-hot-1020",
       "series": "sauti",
       "lane": "everyone",
@@ -65,34 +52,34 @@
       "comments": 0,
       "likes": 3,
       "avg_watch_s": 4.2
+    },
+    {
+      "id": "2026-w45-hot-1108m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.4,
+      "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
+      "reach": 125,
+      "saved": 1,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.1
     }
   ],
   "bottom": [
-    {
-      "id": "2026-w45-hot-1102-r2",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "KNCHR documented 92 attacks on journalists across Kenya.",
-      "reach": 12,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 8.4
-    },
     {
       "id": "2026-w45-hot-1104",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
       "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "reach": 21,
+      "reach": 22,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.2
+      "avg_watch_s": 4.0
     },
     {
       "id": "2026-w45-hot-1108-r4",
@@ -100,12 +87,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 32,
+      "reach": 34,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.2
+      "avg_watch_s": 7.5
+    },
+    {
+      "id": "2026-w46-hot-1110e",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "The National Treasury hides a secret IMF graft report.",
+      "reach": 18,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.8
     }
   ],
   "all": [
@@ -126,9 +126,9 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.7,
+      "score": 26.6,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 37,
+      "reach": 38,
       "saved": 0,
       "shares": 2,
       "comments": 0,
@@ -149,19 +149,6 @@
       "avg_watch_s": 5.5
     },
     {
-      "id": "2026-w45-hot-1108m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.5,
-      "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 123,
-      "saved": 1,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 4.1
-    },
-    {
       "id": "2026-w43-hot-1020",
       "series": "sauti",
       "lane": "everyone",
@@ -173,6 +160,19 @@
       "comments": 0,
       "likes": 3,
       "avg_watch_s": 4.2
+    },
+    {
+      "id": "2026-w45-hot-1108m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.4,
+      "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
+      "reach": 125,
+      "saved": 1,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.1
     },
     {
       "id": "2026-w44-hot-1026b1432",
@@ -193,12 +193,12 @@
       "lane": "everyone",
       "score": 9.3,
       "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
-      "reach": 21,
+      "reach": 22,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 6.1
+      "avg_watch_s": 5.9
     },
     {
       "id": "2026-w43-hot-1019e",
@@ -269,14 +269,14 @@
       "id": "2026-w46-hot-1110",
       "series": "sauti",
       "lane": "everyone",
-      "score": 6.4,
+      "score": 6.3,
       "opening": "KRA's new 15% tax directive hits our pockets this week.",
-      "reach": 13,
+      "reach": 15,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 3.3
+      "avg_watch_s": 4.1
     },
     {
       "id": "2026-w43-d2-kenya-r9x-r2",
@@ -323,12 +323,12 @@
       "lane": "diaspora",
       "score": 4.9,
       "opening": "Mount Kenya reaches 5,199 metres in altitude.",
-      "reach": 106,
+      "reach": 108,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 2.4
+      "avg_watch_s": 2.5
     },
     {
       "id": "2026-w43-hot-1025",
@@ -393,7 +393,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.1
+      "avg_watch_s": 5.0
     },
     {
       "id": "2026-w43-hot-1022",
@@ -487,30 +487,17 @@
       "avg_watch_s": 4.1
     },
     {
-      "id": "2026-w46-d1-money-r5",
-      "series": "money",
-      "lane": "hustle",
-      "score": 3.1,
-      "opening": "EPRA reviews fuel prices on November 14.",
-      "reach": 26,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 4.6
-    },
-    {
       "id": "2026-w46-hot-1109",
       "series": "sauti",
       "lane": "everyone",
       "score": 3.1,
       "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
-      "reach": 18,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 6.2
+      "avg_watch_s": 7.2
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -531,12 +518,25 @@
       "lane": "everyone",
       "score": 3.0,
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "reach": 28,
+      "reach": 29,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 5.0
+    },
+    {
+      "id": "2026-w46-d1-money-r5",
+      "series": "money",
+      "lane": "hustle",
+      "score": 3.0,
+      "opening": "EPRA reviews fuel prices on November 14.",
+      "reach": 28,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.6
     },
     {
       "id": "2026-w45-hot-1103m",
@@ -544,12 +544,12 @@
       "lane": "everyone",
       "score": 2.9,
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "reach": 46,
+      "reach": 47,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 8.5
+      "avg_watch_s": 8.8
     },
     {
       "id": "2026-w45-hot-1108b2133",
@@ -557,25 +557,12 @@
       "lane": "everyone",
       "score": 2.9,
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "reach": 43,
+      "reach": 47,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.0
-    },
-    {
-      "id": "2026-w45-d6-kenya",
-      "series": "kenya",
-      "lane": "everyone",
-      "score": 2.8,
-      "opening": "Lamu Port opened its first berth in May 2021.",
-      "reach": 63,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 2.0
+      "avg_watch_s": 4.8
     },
     {
       "id": "2026-w45-hot-1107m",
@@ -583,7 +570,7 @@
       "lane": "everyone",
       "score": 2.8,
       "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
-      "reach": 61,
+      "reach": 63,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -596,12 +583,25 @@
       "lane": "everyone",
       "score": 2.8,
       "opening": "Kenya won two gold medals on the track in Dakar.",
-      "reach": 53,
+      "reach": 55,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.0
+      "avg_watch_s": 3.9
+    },
+    {
+      "id": "2026-w45-d6-kenya",
+      "series": "kenya",
+      "lane": "everyone",
+      "score": 2.7,
+      "opening": "Lamu Port opened its first berth in May 2021.",
+      "reach": 64,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 2.0
     },
     {
       "id": "2026-w45-d5-straight",
@@ -609,7 +609,7 @@
       "lane": "everyone",
       "score": 2.6,
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "reach": 83,
+      "reach": 84,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -661,12 +661,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "reach": 16,
+      "reach": 18,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 8.1
+      "avg_watch_s": 7.6
     },
     {
       "id": "2026-w45-d7-glasspoll",
@@ -700,12 +700,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "reach": 21,
+      "reach": 22,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.2
+      "avg_watch_s": 4.0
     },
     {
       "id": "2026-w45-hot-1108-r4",
@@ -713,12 +713,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 32,
+      "reach": 34,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.2
+      "avg_watch_s": 7.5
+    },
+    {
+      "id": "2026-w46-hot-1110e",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "The National Treasury hides a secret IMF graft report.",
+      "reach": 18,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.8
     }
   ],
   "youtube": [
@@ -726,7 +739,7 @@
       "id": "2026-w45-hot-1103m",
       "series": "sauti",
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "views": 988,
+      "views": 991,
       "likes": 6,
       "comments": 0
     },
@@ -734,7 +747,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 510,
+      "views": 511,
       "likes": 2,
       "comments": 0
     },
@@ -742,7 +755,7 @@
       "id": "2026-w45-hot-1108-r4",
       "series": "sauti",
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "views": 456,
+      "views": 458,
       "likes": 0,
       "comments": 0
     },
@@ -766,7 +779,7 @@
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "views": 260,
+      "views": 259,
       "likes": 2,
       "comments": 0
     },
@@ -774,7 +787,7 @@
       "id": "2026-w46-hot-1109m",
       "series": "sauti",
       "opening": "Kenya won two gold medals on the track in Dakar.",
-      "views": 231,
+      "views": 248,
       "likes": 1,
       "comments": 0
     },
@@ -859,11 +872,27 @@
       "comments": 0
     },
     {
+      "id": "2026-w46-hot-1110e",
+      "series": "sauti",
+      "opening": "The National Treasury hides a secret IMF graft report.",
+      "views": 55,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1104",
       "series": "sauti",
       "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "views": 51,
+      "views": 53,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-d2-kenya",
+      "series": "kenya",
+      "opening": "Mount Kenya reaches 5,199 metres in altitude.",
+      "views": 38,
+      "likes": 0,
       "comments": 0
     },
     {
@@ -872,14 +901,6 @@
       "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
       "views": 37,
       "likes": 1,
-      "comments": 0
-    },
-    {
-      "id": "2026-w46-d2-kenya",
-      "series": "kenya",
-      "opening": "Mount Kenya reaches 5,199 metres in altitude.",
-      "views": 36,
-      "likes": 0,
       "comments": 0
     },
     {
@@ -894,7 +915,7 @@
       "id": "2026-w46-hot-1110",
       "series": "sauti",
       "opening": "KRA's new 15% tax directive hits our pockets this week.",
-      "views": 16,
+      "views": 19,
       "likes": 1,
       "comments": 0
     },
