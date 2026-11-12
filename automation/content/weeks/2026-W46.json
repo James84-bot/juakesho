@@ -1477,7 +1477,7 @@
           "published": "2026-11-11"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "hook: the first line has no figure and no named person, place or body: it is a topic, not a hook",
@@ -1559,7 +1559,7 @@
           "published": "2026-11-12"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1617,7 +1617,14 @@
       "reel": true,
       "tg_msg": 1059,
       "auto": true,
-      "decided_at": "2026-11-12T17:42:49.971703+03:00"
+      "decided_at": "2026-11-12T17:42:49.971703+03:00",
+      "published_at": "2026-11-12T17:51:27.337100+03:00",
+      "ig_id": "18120316096804236",
+      "fb_id": "2922349134815154",
+      "story_id": "17989699383092520",
+      "fb_story_id": "994468580405503",
+      "yt_id": "h8tVnwzSsq4",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w46-hot-1112b1700",
