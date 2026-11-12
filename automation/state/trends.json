@@ -1,54 +1,50 @@
 {
-  "fetched": "2026-11-12T06:46:24.820102+00:00",
+  "fetched": "2026-11-12T11:48:56.978575+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "rockets vs warriors",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Warriors' Stephen Curry hurts abdomen, heads for MRI",
-          "url": "https://www.espn.com/nba/story/_/id/50458218/curry-exits-vs-rockets-ruled-abdominal-soreness",
-          "source": "ESPN"
+          "title": "Draymond Green says two Warriors players ensure Curry’s injury won’t hurt as much",
+          "url": "https://www.hitc.com/draymond-green-says-two-warriors-players-ensure-currys-injury-wont-hurt-as-much/",
+          "source": "HITC"
         },
         {
-          "title": "Houston holds lead at the half",
-          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/LAoT3Zl8R1A1/",
+          "title": "NBA season live updates: Curry injured and Portland doubles up on OKC, Knicks lose but Spurs make it 10 straight",
+          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/D4iKrmisBalz/",
           "source": "The New York Times"
         },
         {
-          "title": "Game 12 wrap: Dubs lose to Rockets; Steph injured; streak ends",
-          "url": "https://dubnationhq.com/p/game-12-wrap-no-spoiler-title",
-          "source": "Dub Nation HQ"
+          "title": "\"The spirit of this team is better,\" Green said. …",
+          "url": "https://sports.yahoo.com/articles/spirit-team-better-green-said-101448751.html",
+          "source": "Yahoo Sports"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "eastleigh",
+      "title": "tax evasion",
       "traffic": "500+",
       "news": [
         {
-          "title": "Revealed: County employee used expert’s credentials to approve collapsed Eastleigh building",
-          "url": "https://nation.africa/kenya/counties/nairobi/revealed-county-employee-used-expert-s-credentials-to-approve-collapsed-eastleigh-building-5666088",
-          "source": "Daily Nation"
+          "title": "KRA Begins Crackdown on Businesses Over Tax Evasion",
+          "url": "https://www.kenyans.co.ke/news/129321-kra-begins-crackdown-businesses-suspected-vat-fraud",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Eastleigh building collapse: Planner says he never met developer",
-          "url": "https://www.the-star.co.ke/counties/nairobi/2026-11-10-eastleigh-building-collapse-planner-says-he-never-met-developer",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Eastleigh building: Engineer says he quit project months before collapse",
-          "url": "https://citizen.digital/article/the-structural-engineer-listed-as-being-in-charge-of-the-collapsed-18-storey-building-along-first-av-n393504",
-          "source": "Citizen Digital"
+          "title": "KRA tightens VAT registration checks to curb tax evasion",
+          "url": "https://saccoreview.co.ke/kra-tightens-vat-registration-checks-to-curb-tax-evasion/",
+          "source": "Sacco Review"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
       "title": "central bank of kenya bond sale",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "CBK swap bond sale flops as investors eye higher interest",
@@ -70,7 +66,7 @@
     {
       "geo": "KE",
       "title": "man city 115 charges appeal",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Man City charges outcome cannot leave 'room for doubt' - sports integrity chief",
@@ -91,52 +87,30 @@
     },
     {
       "geo": "KE",
-      "title": "bucks vs lakers",
+      "title": "manchester united news",
       "traffic": "200+",
       "news": [
         {
-          "title": "Luka Doncic, Lakers overpower Bucks, run winning streak to 7",
-          "url": "https://www.thesportsleader.com/2026/11/11/luka-doncic-lakers-overpower-bucks-run-winning-streak-to-7/",
-          "source": "KNBR"
+          "title": "Manchester United sack Michael Carrick LIVE: Updates on next manager search",
+          "url": "https://www.bbc.com/sport/football/live/cw4g15k9xm5kt",
+          "source": "BBC"
         },
         {
-          "title": "Game Recap: Lakers 123, Bucks 112 (Nov. 11)",
-          "url": "https://www.nba.com/watch/video/game-recap-lakers-123-bucks-112-nov-11",
-          "source": "NBA.com"
-        },
-        {
-          "title": "Lakers Bucks Basketball",
-          "url": "https://www.corsicanadailysun.com/sports/national_sports/lakers-bucks-basketball/image_2d1892ac-51df-51ae-b07b-113029fed8c1.html",
-          "source": "Corsicana Daily Sun"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "thibaut courtois",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Courtois on Mourinho: Madrid need a coach with his personality",
-          "url": "https://www.espn.co.uk/football/story/_/id/50452113/courtois-mourinho-real-madrid-need-coach-personality",
-          "source": "ESPN"
-        },
-        {
-          "title": "Real Madrid: Thibaut Courtois talks 'amazing' Jude Bellingham and 'matured' Jose Mourinho",
-          "url": "https://www.skysports.com/football/video/13610793/real-madrid-thibaut-courtois-talks-amazing-jude-bellingham-and-matured-jose-mourinho",
+          "title": "Mauricio Pochettino: Man Utd strike agreement with Michael Carrick's potential successor",
+          "url": "https://www.skysports.com/football/news/13610949/mauricio-pochettino-man-utd-strike-agreement-with-michael-carricks-potential-successor",
           "source": "Sky Sports"
         },
         {
-          "title": "Courtois: Alonso's sacking was unfair, and it ignored Mourinho's message!",
-          "url": "https://www.goal.com/en/news/courtois-alonso-s-dismissal-is-unfair-and-the-message-from-mourinho-was-ignored/blt57837fd673bf0724",
-          "source": "Goal.com"
+          "title": "Michael Carrick sacked by Manchester United with Pochettino poised to take over",
+          "url": "https://www.theguardian.com/football/2026/nov/12/michael-carrick-sacked-manchester-united-mauricio-pochettino",
+          "source": "The Guardian"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "sakaja johnson",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Sakaja orders City Hall Inspection shake-up, ends night raids on bars",
@@ -149,11 +123,56 @@
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "Sakaja Warns Traders Amid Ongoing Nairobi Business Inspections",
-          "url": "https://thekenyatimes.com/business/sakaja-nairobi-business/",
-          "source": "The Kenya Times"
+          "title": "Sakaja warns traders against impostors amid business inspections",
+          "url": "https://www.pulse.co.ke/story/sakaja-warns-traders-against-impostors-amid-business-inspections-2026111206374553940",
+          "source": "Pulse Kenya"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "bucks vs lakers",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Lakers top Bucks 123-112 as threes and boards win it",
+          "url": "https://www.sofascore.com/news/lakers-top-bucks-123-112-as-threes-and-boards-win-it",
+          "source": "Sofascore"
+        },
+        {
+          "title": "NBA Roundup: Doncic injury scare, Wemby, Jokic, Wagner power wins",
+          "url": "https://www.eurohoops.net/en/nba-news/2033857/luka-doncic-victor-wembanyama-nikola-jokic-franz-wagner-nba-european-recap/",
+          "source": "Eurohoops"
+        },
+        {
+          "title": "Luka Dončić (ankle) scores game-high 32 points",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-11/luka-doncic-ankle-scores-game-high-32-points",
+          "source": "NBC Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "matatu",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "NTSA, Police Win as MPs Reject New Traffic Proposals",
+          "url": "https://www.kenyans.co.ke/news/129324-mps-reject-matatu-owners-proposals-ntsa-digital-fines-police-stops",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "“Like brand new”: George Ruto’s Mood matatu ditches bucket seats for 33 seats",
+          "url": "https://www.tuko.co.ke/entertainment/celebrities/646275-george-rutos-mood-matatu-ditches-bucket-seats-normal-seats-latest-renovation-upgrade/",
+          "source": "Tuko News"
+        },
+        {
+          "title": "\"A fresh new look\": George Ruto’s Mood matatu gets maakeover",
+          "url": "https://www.tuko.co.ke/entertainment/celebrities/645639-george-ruto-photos-show-1st-sons-mood-matatu-undergoing-major-makeover/",
+          "source": "Tuko News"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -161,8 +180,8 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "PS Daghar: CBD-Talanta Stadium rail will transport 1,500 people every 10 minutes",
-          "url": "https://nation.africa/kenya/counties/nairobi/ps-daghar-cbd-talanta-stadium-rail-will-transport-1-500-people-every-10-minutes-5665994",
+          "title": "Bayern v Ajax: Premium tickets available as phase one sold out",
+          "url": "https://nation.africa/kenya/sports/football/bayern-v-ajax-premium-tickets-available-as-phase-one-sold-out--5661200",
           "source": "Daily Nation"
         },
         {
@@ -171,21 +190,18 @@
           "source": "The Star, Kenya"
         },
         {
-          "title": "Government reveals number of tickets already sold for Bayern Munich vs Ajax clash",
-          "url": "https://www.mozzartsport.co.ke/football/news/government-reveals-number-of-tickets-already-sold-for-bayern-munich-vs-ajax-clash/70618",
-          "source": "Mozzart Sport Kenya"
+          "title": "President William Samoei Ruto visits the Raila Odinga International Stadium at Talanta Sports City in Nairobi to assess the state-of-the-art sporting facility.",
+          "url": "https://www.facebook.com/kenyanewsagency/posts/president-william-samoei-ruto-visits-the-raila-odinga-international-stadium-at-t/1440103758305266/",
+          "source": "Facebook"
         }
-      ]
+      ],
+      "civic": true
     }
   ],
   "dropped": [
     {
-      "title": "trail blazers vs thunder",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "supersport",
-      "why": "unsafe: 'jackpot'"
+      "title": "italy vs france",
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T00:25:29.669935+03:00",
+  "updated": "2026-11-12T14:48:43.485665+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -59,7 +59,7 @@
       "lane": "everyone",
       "score": 9.4,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 125,
+      "reach": 126,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -87,12 +87,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 34,
+      "reach": 35,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.5
+      "avg_watch_s": 7.3
     },
     {
       "id": "2026-w46-hot-1110e",
@@ -100,7 +100,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "The National Treasury hides a secret IMF graft report.",
-      "reach": 18,
+      "reach": 20,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -167,7 +167,7 @@
       "lane": "everyone",
       "score": 9.4,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 125,
+      "reach": 126,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -219,12 +219,12 @@
       "lane": "everyone",
       "score": 8.7,
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "reach": 44,
+      "reach": 46,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 3,
-      "avg_watch_s": 6.8
+      "avg_watch_s": 6.6
     },
     {
       "id": "2026-w43-hot-1024m",
@@ -271,12 +271,12 @@
       "lane": "everyone",
       "score": 6.3,
       "opening": "KRA's new 15% tax directive hits our pockets this week.",
-      "reach": 15,
+      "reach": 17,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 4.1
+      "avg_watch_s": 4.7
     },
     {
       "id": "2026-w43-d2-kenya-r9x-r2",
@@ -310,12 +310,12 @@
       "lane": "everyone",
       "score": 5.2,
       "opening": "Counterfeit alcohol wiped out Sh7.6bn in KRA excise revenue.",
-      "reach": 81,
+      "reach": 82,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 5.4
+      "avg_watch_s": 5.3
     },
     {
       "id": "2026-w46-d2-kenya",
@@ -435,19 +435,6 @@
       "avg_watch_s": 17.5
     },
     {
-      "id": "2026-w44-d7-glasspoll",
-      "series": "glasspoll",
-      "lane": "everyone",
-      "score": 3.1,
-      "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
-      "reach": 27,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 5.8
-    },
-    {
       "id": "2026-w44-hot-1026",
       "series": "sauti",
       "lane": "everyone",
@@ -492,12 +479,12 @@
       "lane": "everyone",
       "score": 3.1,
       "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
-      "reach": 21,
+      "reach": 23,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 7.2
+      "avg_watch_s": 7.0
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -513,17 +500,30 @@
       "avg_watch_s": 4.7
     },
     {
+      "id": "2026-w44-d7-glasspoll",
+      "series": "glasspoll",
+      "lane": "everyone",
+      "score": 3.0,
+      "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
+      "reach": 28,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 5.6
+    },
+    {
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "lane": "everyone",
       "score": 3.0,
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "reach": 29,
+      "reach": 30,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.0
+      "avg_watch_s": 4.8
     },
     {
       "id": "2026-w46-d1-money-r5",
@@ -531,12 +531,12 @@
       "lane": "hustle",
       "score": 3.0,
       "opening": "EPRA reviews fuel prices on November 14.",
-      "reach": 28,
+      "reach": 29,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.6
+      "avg_watch_s": 5.1
     },
     {
       "id": "2026-w45-hot-1103m",
@@ -549,7 +549,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 8.8
+      "avg_watch_s": 8.6
     },
     {
       "id": "2026-w45-hot-1108b2133",
@@ -557,25 +557,12 @@
       "lane": "everyone",
       "score": 2.9,
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "reach": 47,
+      "reach": 48,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.8
-    },
-    {
-      "id": "2026-w45-hot-1107m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 2.8,
-      "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
-      "reach": 63,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 4.4
+      "avg_watch_s": 4.9
     },
     {
       "id": "2026-w46-hot-1109m",
@@ -601,7 +588,20 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 2.0
+      "avg_watch_s": 2.2
+    },
+    {
+      "id": "2026-w45-hot-1107m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 2.7,
+      "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
+      "reach": 64,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.4
     },
     {
       "id": "2026-w45-d5-straight",
@@ -713,12 +713,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 34,
+      "reach": 35,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.5
+      "avg_watch_s": 7.3
     },
     {
       "id": "2026-w46-hot-1110e",
@@ -726,7 +726,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "The National Treasury hides a secret IMF graft report.",
-      "reach": 18,
+      "reach": 20,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -747,7 +747,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 511,
+      "views": 513,
       "likes": 2,
       "comments": 0
     },
@@ -755,7 +755,7 @@
       "id": "2026-w45-hot-1108-r4",
       "series": "sauti",
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "views": 458,
+      "views": 459,
       "likes": 0,
       "comments": 0
     },
@@ -771,7 +771,15 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "views": 347,
+      "views": 348,
+      "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-hot-1109m",
+      "series": "sauti",
+      "opening": "Kenya won two gold medals on the track in Dakar.",
+      "views": 271,
       "likes": 1,
       "comments": 0
     },
@@ -781,14 +789,6 @@
       "opening": "Kenya records 18 days without a single new Ebola infection.",
       "views": 259,
       "likes": 2,
-      "comments": 0
-    },
-    {
-      "id": "2026-w46-hot-1109m",
-      "series": "sauti",
-      "opening": "Kenya won two gold medals on the track in Dakar.",
-      "views": 248,
-      "likes": 1,
       "comments": 0
     },
     {
@@ -819,7 +819,7 @@
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "views": 180,
+      "views": 181,
       "likes": 1,
       "comments": 0
     },
@@ -864,18 +864,18 @@
       "comments": 0
     },
     {
-      "id": "2026-w45-d5-straight",
-      "series": "straight",
-      "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "views": 57,
+      "id": "2026-w46-hot-1110e",
+      "series": "sauti",
+      "opening": "The National Treasury hides a secret IMF graft report.",
+      "views": 59,
       "likes": 0,
       "comments": 0
     },
     {
-      "id": "2026-w46-hot-1110e",
-      "series": "sauti",
-      "opening": "The National Treasury hides a secret IMF graft report.",
-      "views": 55,
+      "id": "2026-w45-d5-straight",
+      "series": "straight",
+      "opening": "A viral clip claiming to show Mandera Stadium is false.",
+      "views": 58,
       "likes": 0,
       "comments": 0
     },
@@ -891,7 +891,7 @@
       "id": "2026-w46-d2-kenya",
       "series": "kenya",
       "opening": "Mount Kenya reaches 5,199 metres in altitude.",
-      "views": 38,
+      "views": 45,
       "likes": 0,
       "comments": 0
     },
@@ -915,7 +915,7 @@
       "id": "2026-w46-hot-1110",
       "series": "sauti",
       "opening": "KRA's new 15% tax directive hits our pockets this week.",
-      "views": 19,
+      "views": 23,
       "likes": 1,
       "comments": 0
     },

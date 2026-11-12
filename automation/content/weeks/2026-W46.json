@@ -1519,6 +1519,19 @@
       "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1054
+    },
+    {
+      "id": "2026-w46-hot-1112m",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-12T17:49:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "KRA addresses taxpayer complaints over unexpected iTax debts and penalties."
+      ]
     }
   ],
   "scripts": {
