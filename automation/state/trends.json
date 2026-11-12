@@ -1,50 +1,10 @@
 {
-  "fetched": "2026-11-12T14:00:07.039285+00:00",
+  "fetched": "2026-11-12T14:54:05.969618+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "tax evasion",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "KRA Begins Crackdown on Businesses Over Tax Evasion",
-          "url": "https://www.kenyans.co.ke/news/129321-kra-begins-crackdown-businesses-suspected-vat-fraud",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "KRA tightens VAT registration checks to curb tax evasion",
-          "url": "https://saccoreview.co.ke/kra-tightens-vat-registration-checks-to-curb-tax-evasion/",
-          "source": "Sacco Review"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "central bank of kenya bond sale",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "CBK swap bond sale flops as investors eye higher interest",
-          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/cbk-swap-bond-sale-flops-as-investors-eye-higher-interest-5667246",
-          "source": "Business Daily"
-        },
-        {
-          "title": "How to invest in the Central Bank's Sh50 Billion treasury bond reopening",
-          "url": "https://www.pulse.co.ke/story/cbk-reopens-sh50b-treasury-bonds-rates-dates-and-how-to-invest-2026111008032796049",
-          "source": "Pulse Kenya"
-        },
-        {
-          "title": "Earn interest: CBK announces November bonds sale, sets minimum amounts",
-          "url": "https://www.tuko.co.ke/business-economy/646259-cbk-announces-november-bonds-sale-invites-kenyans-minimum-ksh-50k-buy/",
-          "source": "Tuko News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "kdf recruitment 2026",
-      "traffic": "200+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "KDF Announces Nationwide Recruitment Exercise, Sets Deadline",
@@ -52,14 +12,102 @@
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "KDF recruitment 2026: Dates, venues and centres across all 47 counties revealed",
-          "url": "https://peopledaily.digital/news/kdf-recruitment-2026-dates-venues-and-centres-across-all-47-counties-revealed",
-          "source": "People Daily"
+          "title": "KDF Announces Countrywide Recruitment",
+          "url": "https://thekenyatimes.com/breaking-news/kdf-announces-countrywide-recruitment/",
+          "source": "The Kenya Times"
         },
         {
-          "title": "KDF Announces New Recruitment for Cadets, Graduates and Tradesmen",
-          "url": "https://nairobileo.co.ke/news/article/31439/kdf-announces-new-recruitment-for-cadets-graduates-and-tradesmen",
-          "source": "Nairobi Leo"
+          "title": "KDF recruitment: 5 reasons why you can be disqualified",
+          "url": "https://peopledaily.digital/news/kdf-recruitment-5-reasons-why-you-can-be-disqualified",
+          "source": "People Daily"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "italy vs france",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Italy vs France: UEFA Nations League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c3rrygq0z2y2t",
+          "source": "BBC"
+        },
+        {
+          "title": "'I am starting to feel a little older than I was' - Arsenal star Riccardo Calafiori embraces leadership role in youthful Italy squad ahead of crucial France clash",
+          "url": "https://www.goal.com/en-ke/news/little-older-arsenal-star-riccardo-calafiori-embraces-leadership-role-youthful-italy-squad-ahead-crucial-france-clash/blt11bbced63a11384f",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Italy vs France: UEFA Nations League – preview, team news, predictions",
+          "url": "https://www.aljazeera.com/sports/2026/11/11/italy-vs-france-uefa-nations-league-preview-team-news",
+          "source": "Al Jazeera"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ghana vs somalia",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Ghana vs Somalia: TV channel, live stream and kick-off time for Africa Cup of Nations Qualification match",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-ghana-v-somalia/blt9acf3c9e67622ea2",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Kyereh back after four years, Kudus and Jordan Ayew return as Ghana seek AFCON revival against Somalia",
+          "url": "https://www.cafonline.com/afcon2025/news/kyereh-back-after-four-years-kudus-and-jordan-ayew-return-as-ghana-seek-afcon-revival-against-somalia/",
+          "source": "CAFOnline.com"
+        },
+        {
+          "title": "2027 AFCON Q: Brandon Thomas-Asante vows to give Takoradi fans a show as Black Stars prepare for Somalia",
+          "url": "https://en.africatopsports.com/2027-afcon-q-brandon-thomas-asante-vows-to-give-takoradi-fans-a-show-as-black-stars-prepare-for-somalia/",
+          "source": "Africa Top Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nvidia stock",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Alice Huang, Alleged Chinese Spy at Center of Nvidia Firestorm, Is in Beijing",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-12/alleged-chinese-spy-at-center-of-nvidia-firestorm-is-in-beijing",
+          "source": "Bloomberg.com"
+        },
+        {
+          "title": "Jensen Huang resigns as Nvidia CEO after alleged affairs",
+          "url": "https://www.theguardian.com/technology/2026/nov/12/nvidia-ceo-jensen-huang-resigns",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Here’s the latest.",
+          "url": "https://www.nytimes.com/2026/11/12/technology/nvidia-jensen-huang.html",
+          "source": "The New York Times"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "chinese yuan",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "US sanctions crush Russia’s plan to ditch the dollar for China’s yuan",
+          "url": "https://lynnwoodtimes.com/2026/11/11/yuan/",
+          "source": "Lynnwood Times"
+        },
+        {
+          "title": "Russia bows out of attempt to replace US dollar with Chinese yuan after years of promoting currency alternatives among its BRICS friends",
+          "url": "https://africa.businessinsider.com/local/markets/russia-bows-out-of-attempt-to-replace-us-dollar-with-chinese-yuan-after-years-of/tdqww53",
+          "source": "Business Insider Africa"
+        },
+        {
+          "title": "Russia’s push to replace dollar with China’s yuan collapses",
+          "url": "https://theedgemalaysia.com/node/825261",
+          "source": "The Edge Malaysia"
         }
       ]
     },
@@ -69,19 +117,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "The 8 States Where $1 Million in Retirement Savings Runs Out the Fastest (Is Yours One?)",
-          "url": "https://financebuzz.com/states-where-retirement-savings-run-out-2",
-          "source": "FinanceBuzz"
+          "title": "Include Mudavadi and Wetangula in your retirement list, youths tell Ruto",
+          "url": "https://www.standardmedia.co.ke/politics/article/2001562103/include-mudavadi-and-wetangula-in-your-retirement-list-youths-tell-ruto",
+          "source": "The Standard"
         },
         {
-          "title": "Money - Retiring with less than $1 million? Here are 8 ways to make your savings last",
-          "url": "https://www.djc.com/news/mo/12178657.html",
-          "source": "DJC"
+          "title": "'I Tried for Years to Out Earn My Stupidity': Ramsey to 31-Year-Old Making $150K With $362,000 in Debt",
+          "url": "https://247wallst.com/personal-finance/2026/11/09/i-tried-for-years-to-out-earn-my-stupidity-ramsey-to-31-year-old-making-150k-with-362000-in-debt/",
+          "source": "24/7 Wall St."
         },
         {
-          "title": "I Thought I Needed $1M To Retire Until I Ran The Numbers. Now I'm Wondering If It's Really This Simple It Almost Seems Too Good To Be True",
-          "url": "https://finance.yahoo.com/markets/articles/thought-needed-1m-retire-until-180005855.html",
-          "source": "Yahoo Finance"
+          "title": "Jade Warshaw Warns Your Car Payment Could Be Delaying Your Retirement",
+          "url": "https://www.aol.com/articles/jade-warshaw-warns-car-payment-121711000.html",
+          "source": "AOL.com"
         }
       ]
     },
@@ -109,93 +157,34 @@
     },
     {
       "geo": "KE",
-      "title": "sakaja johnson",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Can chickens fly? Governor Sakaja knows better",
-          "url": "https://www.standardmedia.co.ke/article/2001561736/can-chickens-fly-governor-sakaja-knows-better",
-          "source": "www.standardmedia.co.ke"
-        },
-        {
-          "title": "Sakaja orders City Hall Inspection shake-up, ends night raids on bars",
-          "url": "https://www.the-star.co.ke/counties/nairobi/2026-11-11-sakaja-orders-city-hall-inspection-shake-up-ends-night-raids-on-bars",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Nairobi County Orders End to Night Raids Under Major Reforms",
-          "url": "https://www.kenyans.co.ke/news/129312-nairobi-halts-night-raids-opens-14-day-bar-tax-talks",
-          "source": "Kenyans.co.ke"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "kenya power prepaid vs postpaid guide",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Prepaid or postpaid: Kenya Power explains what to consider before picking home electricity plan",
-          "url": "https://peopledaily.digital/business/prepaid-or-postpaid-kenya-power-explains-what-to-consider-before-picking-home-electricity-plan",
-          "source": "People Daily"
-        },
-        {
-          "title": "Tokens or bills?: KPLC explains choosing electricity plan that works for you",
-          "url": "https://www.tuko.co.ke/business-economy/646537-kenya-power-explains-4-considerations-choosing-pre-paid-post-paid-plans/",
-          "source": "Tuko News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "chinese yuan",
+      "title": "kdf military training south africa",
       "traffic": "100+",
       "news": [
         {
-          "title": "Russia’s Push to Replace Dollar With China’s Yuan Collapses",
-          "url": "https://www.bloomberg.com/news/articles/2026-11-11/russian-push-to-escape-dollar-for-yuan-collapses-under-sanctions",
-          "source": "Bloomberg.com"
-        },
-        {
-          "title": "Russia bows out of attempt to replace US dollar with Chinese yuan after years of promoting currency alternatives among its BRICS friends",
-          "url": "https://africa.businessinsider.com/local/markets/russia-bows-out-of-attempt-to-replace-us-dollar-with-chinese-yuan-after-years-of/tdqww53",
+          "title": "Kenya brings its military specialists to South Africa as two African powerhouses strengthen cooperation against chemical, biological, and nuclear threats",
+          "url": "https://africa.businessinsider.com/local/markets/kenya-brings-its-military-specialists-to-south-africa-as-two-african-powerhouses/sch70l8",
           "source": "Business Insider Africa"
         },
         {
-          "title": "Ruble settles 69% of Russia's Asian export earnings as the yuan's share halves",
-          "url": "https://www.intellinews.com/ruble-settles-69-of-russia-s-asian-export-earnings-as-the-yuan-s-share-halves-484381/",
-          "source": "IntelliNews"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "matatu",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "NTSA, Police Win as MPs Reject New Traffic Proposals",
-          "url": "https://www.kenyans.co.ke/news/129324-mps-reject-matatu-owners-proposals-ntsa-digital-fines-police-stops",
+          "title": "KDF Sends Special Units Abroad for Advanced Training Amid New Al-Shabaab Threats",
+          "url": "https://www.kenyans.co.ke/news/129318-kdf-sends-military-specialists-south-africa-training-nuclear-biological-threats",
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "“Like brand new”: George Ruto’s Mood matatu ditches bucket seats for 33 seats",
-          "url": "https://www.tuko.co.ke/entertainment/celebrities/646275-george-rutos-mood-matatu-ditches-bucket-seats-normal-seats-latest-renovation-upgrade/",
-          "source": "Tuko News"
-        },
-        {
-          "title": "\"A fresh new look\": George Ruto’s Mood matatu gets maakeover",
-          "url": "https://www.tuko.co.ke/entertainment/celebrities/645639-george-ruto-photos-show-1st-sons-mood-matatu-undergoing-major-makeover/",
-          "source": "Tuko News"
+          "title": "SAMHS 7 Med Bn Group puts chemical, biological nuclear and explosive threats under the microscope for Kenyan military",
+          "url": "https://defenceweb.co.za/sa-defence-sa-defence/samhs-7-med-bn-group-puts-chemical-biological-nuclear-and-explosive-threats-under-the-microscope-for-kenyan-military/",
+          "source": "defenceWeb"
         }
-      ],
-      "civic": true
+      ]
     }
   ],
   "dropped": [
     {
-      "title": "italy vs france prediction",
+      "title": "armenia vs cyprus prediction",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "equatorial guinea vs zimbabwe",
       "why": "unsafe: 'Betting'"
     }
   ],
