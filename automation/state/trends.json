@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-12T06:06:50.005830+00:00",
+  "fetched": "2026-11-12T06:46:24.820102+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,19 +7,63 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "Rockets' Marcus Smart ejected for throwing punch at Warriors' Charles Bassey",
-          "url": "https://www.espn.com/nba/story/_/id/50459125/rockets-marcus-smart-ejected-punch-warriors-bassey",
+          "title": "Warriors' Stephen Curry hurts abdomen, heads for MRI",
+          "url": "https://www.espn.com/nba/story/_/id/50458218/curry-exits-vs-rockets-ruled-abdominal-soreness",
           "source": "ESPN"
         },
         {
-          "title": "Rockets guard Marcus Smart ejected for punching Warriors center Charles Bassey",
-          "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/marcus-smart-punch-charles-bassey/1979354/?partner=yahoo",
-          "source": "NBC Sports Bay Area & California"
+          "title": "Houston holds lead at the half",
+          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/LAoT3Zl8R1A1/",
+          "source": "The New York Times"
         },
         {
-          "title": "Rockets beat Warriors in wild one that included Marcus Smart throwing a punch",
-          "url": "https://www.houstonchronicle.com/sports/rockets/article/warriors-game-recap-marcus-smart-steph-curry-22524867.php",
-          "source": "Houston Chronicle"
+          "title": "Game 12 wrap: Dubs lose to Rockets; Steph injured; streak ends",
+          "url": "https://dubnationhq.com/p/game-12-wrap-no-spoiler-title",
+          "source": "Dub Nation HQ"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "eastleigh",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Revealed: County employee used expert’s credentials to approve collapsed Eastleigh building",
+          "url": "https://nation.africa/kenya/counties/nairobi/revealed-county-employee-used-expert-s-credentials-to-approve-collapsed-eastleigh-building-5666088",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Eastleigh building collapse: Planner says he never met developer",
+          "url": "https://www.the-star.co.ke/counties/nairobi/2026-11-10-eastleigh-building-collapse-planner-says-he-never-met-developer",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Eastleigh building: Engineer says he quit project months before collapse",
+          "url": "https://citizen.digital/article/the-structural-engineer-listed-as-being-in-charge-of-the-collapsed-18-storey-building-along-first-av-n393504",
+          "source": "Citizen Digital"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "central bank of kenya bond sale",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "CBK swap bond sale flops as investors eye higher interest",
+          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/cbk-swap-bond-sale-flops-as-investors-eye-higher-interest-5667246",
+          "source": "Business Daily"
+        },
+        {
+          "title": "How to invest in the Central Bank's Sh50 Billion treasury bond reopening",
+          "url": "https://www.pulse.co.ke/story/cbk-reopens-sh50b-treasury-bonds-rates-dates-and-how-to-invest-2026111008032796049",
+          "source": "Pulse Kenya"
+        },
+        {
+          "title": "CBK opens bidding for Ksh. 50B in re-opened 15 & 30 year treasury bonds",
+          "url": "https://hapakenya.com/2026/11/11/cbk-opens-bidding-for-ksh-50b-in-re-opened-15-30-year-treasury-bonds/",
+          "source": "HapaKenya -"
         }
       ]
     },
@@ -57,35 +101,13 @@
         },
         {
           "title": "Game Recap: Lakers 123, Bucks 112 (Nov. 11)",
-          "url": "https://www.nba.com/watch/video/game-recap-lakers-123-bucks-112-nov-11?plsrc=nba&collection=2026-27-game-recaps",
+          "url": "https://www.nba.com/watch/video/game-recap-lakers-123-bucks-112-nov-11",
           "source": "NBA.com"
         },
         {
           "title": "Lakers Bucks Basketball",
           "url": "https://www.corsicanadailysun.com/sports/national_sports/lakers-bucks-basketball/image_2d1892ac-51df-51ae-b07b-113029fed8c1.html",
           "source": "Corsicana Daily Sun"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "eastleigh",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Revealed: County employee used expert’s credentials to approve collapsed Eastleigh building",
-          "url": "https://nation.africa/kenya/counties/nairobi/revealed-county-employee-used-expert-s-credentials-to-approve-collapsed-eastleigh-building-5666088",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Assembly smmons Ochanda, 25-member team over collapsed Eastleigh building",
-          "url": "https://www.the-star.co.ke/counties/nairobi/2026-11-11-assembly-smmons-ochanda-25-member-team-over-collapsed-eastleigh-building",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Revealed: How plan of Eastleigh collapsed building was altered",
-          "url": "https://www.standardmedia.co.ke/nairobi/article/2001562003/revealed-how-plan-of-eastleigh-collapsed-building-was-altered",
-          "source": "The Standard"
         }
       ]
     },
@@ -105,9 +127,9 @@
           "source": "Sky Sports"
         },
         {
-          "title": "Thibaut Courtois reveals how Jose Mourinho has changed since Chelsea",
-          "url": "https://www.sportsmole.co.uk/football/real-madrid/news/thibaut-courtois-reveals-how-jose-mourinho-has-changed-since-chelsea-days-in-real-madrid-reunion_608927.html",
-          "source": "Sports Mole"
+          "title": "Courtois: Alonso's sacking was unfair, and it ignored Mourinho's message!",
+          "url": "https://www.goal.com/en/news/courtois-alonso-s-dismissal-is-unfair-and-the-message-from-mourinho-was-ignored/blt57837fd673bf0724",
+          "source": "Goal.com"
         }
       ]
     },
@@ -117,42 +139,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Sakaja receives Luo elders’ blessing in Kisumu, named Ochieng Ondugi Randa",
-          "url": "https://www.the-star.co.ke/counties/nyanza/2026-11-10-sakaja-receives-luo-eders-blessing-get-new-dholuo-name",
+          "title": "Sakaja orders City Hall Inspection shake-up, ends night raids on bars",
+          "url": "https://www.the-star.co.ke/counties/nairobi/2026-11-11-sakaja-orders-city-hall-inspection-shake-up-ends-night-raids-on-bars",
           "source": "The Star, Kenya"
         },
         {
-          "title": "How Sakaja's decision to ditch UDA sparked discord in ruling alliance",
-          "url": "https://www.standardmedia.co.ke/politics/article/2001561909/how-sakajas-decision-to-ditch-uda-sparked-discord-in-ruling-alliance",
-          "source": "The Standard"
+          "title": "Nairobi County Orders End to Night Raids Under Major Reforms",
+          "url": "https://www.kenyans.co.ke/news/129312-nairobi-halts-night-raids-opens-14-day-bar-tax-talks",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Luo elders adopt Sakaja, endorse his 2027 re-election bid",
-          "url": "https://citizen.digital/article/luo-elders-adopt-sakaja-endorse-his-2027-re-election-bid-n393678",
-          "source": "Citizen Digital"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "central bank of kenya bond sale",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "CBK swap bond sale flops as investors eye higher interest",
-          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/cbk-swap-bond-sale-flops-as-investors-eye-higher-interest-5667246",
-          "source": "Business Daily"
-        },
-        {
-          "title": "How to invest in the Central Bank's Sh50 Billion treasury bond reopening",
-          "url": "https://www.pulse.co.ke/story/cbk-reopens-sh50b-treasury-bonds-rates-dates-and-how-to-invest-2026111008032796049",
-          "source": "Pulse Kenya"
-        },
-        {
-          "title": "CBK opens bidding for Ksh. 50B in re-opened 15 & 30 year treasury bonds",
-          "url": "https://hapakenya.com/2026/11/11/cbk-opens-bidding-for-ksh-50b-in-re-opened-15-30-year-treasury-bonds/",
-          "source": "HapaKenya -"
+          "title": "Sakaja Warns Traders Amid Ongoing Nairobi Business Inspections",
+          "url": "https://thekenyatimes.com/business/sakaja-nairobi-business/",
+          "source": "The Kenya Times"
         }
       ]
     },
