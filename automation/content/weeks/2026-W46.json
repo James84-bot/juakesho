@@ -601,7 +601,7 @@
         "published": "2026-11-09"
       },
       "source": "Daily Nation, 2026-11-09",
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "accusation: a named person with an allegation needs two outlets or an official source (court, EACC, DPP, Auditor-General, a .go.ke page)",
@@ -647,7 +647,14 @@
       "reel": true,
       "tg_msg": 963,
       "decided_at": "2026-11-09T11:22:50.932760+03:00",
-      "fresh_checked": "2026-11-11T16:31:23.831442+03:00"
+      "fresh_checked": "2026-11-11T16:31:23.831442+03:00",
+      "published_at": "2026-11-12T19:33:13.851633+03:00",
+      "ig_id": "18164280859500415",
+      "fb_id": "1470257218404003",
+      "story_id": "18225974884352560",
+      "fb_story_id": "1119676057465286",
+      "yt_id": "_HPATT91_3E",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w46-hot-1109",
