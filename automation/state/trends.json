@@ -1,191 +1,209 @@
 {
-  "fetched": "2026-11-12T17:43:12.027120+00:00",
+  "fetched": "2026-11-12T20:46:22.674529+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "barcelona vs arsenal",
+      "title": "senegal vs sudan",
       "traffic": "2000+",
       "news": [
         {
-          "title": "Barcelona v Arsenal: How 'Barca way' continues despite big-name exits",
-          "url": "https://www.bbc.com/sport/football/articles/c5vg23nmgp2yo",
-          "source": "BBC"
+          "title": "Senegal vs Sudan: 10 PM Kickoff, Team News and AFCON 2027 Group J",
+          "url": "https://blog.ke.sportpesa.com/2026/11/12/senegal-vs-sudan-afcon-2027-qualifier-preview-kickoff-team-news/",
+          "source": "SportPesa Blog"
         },
         {
-          "title": "Team news: One change at Camp Nou",
-          "url": "https://www.arsenal.com/news/team-news-one-change-at-camp-nou-aqkEx2o6aPUk",
-          "source": "Arsenal.com"
+          "title": "Sudan’s Falcons in Kigali Ahead of African Qualifiers Against Senegal",
+          "url": "https://sudanhorizon.com/sudans-falcons-in-kigali-ahead-of-african-qualifiers-against-senegal/",
+          "source": "Sudan Horizon"
         },
         {
-          "title": "Barcelona vs Arsenal: Can Gunners learn from 2025 Women's Champions League victory ahead of league phase meeting on Thursday?",
-          "url": "https://www.skysports.com/football/news/13610549/barcelona-vs-arsenal-can-gunners-learn-from-2025-womens-champions-league-victory-ahead-of-league-phase-meeting-on-thursday",
-          "source": "Sky Sports"
+          "title": "Vieira says Senegal will approach Sudan AFCON qualifier with 'a lot of humility'",
+          "url": "https://www.flashscore.com/news/vieira-says-senegal-will-approach-sudan-afcon-qualifier-with-a-lot-of-humility/zoVkf9Wi/",
+          "source": "Flashscore.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "türkiye vs belgium",
-      "traffic": "2000+",
+      "title": "côte d'ivoire vs gambia",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Turkey vs Belgium: UEFA Nations League stats & head-to-head",
-          "url": "https://www.bbc.co.uk/sport/football/live/cm0e0vp4l9g4t",
+          "title": "Ivory Coast vs Gambia: Africa Cup of Nations Qualification stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c8y56xwkn534t",
           "source": "BBC"
         },
         {
-          "title": "Turkey vs Belgium UEFA Nations League prediction: Match preview, team news, current form & h2h",
-          "url": "https://blog.ke.sportpesa.com/2026/11/12/turkey-vs-belgium-uefa-nations-league-prediction-match-preview-team-news-current-form-h2h/",
-          "source": "SportPesa Blog"
+          "title": "Albion’s international hope for Minteh after his return from ankle surgery",
+          "url": "https://www.theargus.co.uk/sport/26715032.yankuba-minteh-joins-gambia-squad-afcon-qualifiers/",
+          "source": "The Argus"
         },
         {
-          "title": "How to get Türkiye vs Belgium tickets: UEFA Nations League prices, fixture information, last-minute sales & more",
-          "url": "https://www.goal.com/en-ke/tickets-travel/match/turkiye-belgium-tickets/A~blt28c4a6c51e5ae69b",
+          "title": "Ivory Coast: 6 points, 0 goals conceded, Gambia up next · SNA",
+          "url": "https://sportnewsafrica.com/en/news/ivory-coast-6-points-no-goals-conceded-and-a-gambia-showdown-for-top-spot-in-group-c/",
+          "source": "Sport News Africa"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "spain",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Millions of Spaniards stage first general strike in 14 years as anger rages over housing",
+          "url": "https://www.cnn.com/2026/11/11/europe/spain-strike-housing-latam-intl",
+          "source": "CNN"
+        },
+        {
+          "title": "Clashes erupt in Barcelona after thousands join Spain general strike",
+          "url": "https://www.bbc.com/news/articles/cwvg25nypmrvo",
+          "source": "BBC"
+        },
+        {
+          "title": "‘I pay $500 for 5 square metres’: Spain’s protesters, in their own words",
+          "url": "https://www.aljazeera.com/news/2026/11/11/i-pay-500-for-5-square-metres-spains-protesters-in-their-own-words",
+          "source": "Al Jazeera"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "england",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "England vs Croatia LIVE: UEFA Nations League score, commentary, updates & stats",
+          "url": "https://www.bbc.com/sport/football/live/cr5yn1g2qe6et",
+          "source": "BBC"
+        },
+        {
+          "title": "Harry Kane has broken the record for the most senior England caps by a single player in history.",
+          "url": "https://www.skysports.com/football/news/13611419/harry-kane-england-captain-breaks-three-lions-appearance-record-by-winning-126th-senior-cap-vs-croatia-at-wembley",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "History-making Harry Kane told England goals & caps records will ‘get beaten’ - but registering 100 efforts for the Three Lions will be an ‘incredible’ achievement",
+          "url": "https://www.goal.com/en-ke/lists/history-harry-kane-england-goals-caps-records-beaten-100-three-lions/bltf7b7bd6812528c19",
           "source": "Goal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "kenya defence forces",
-      "traffic": "2000+",
+      "title": "outlook login",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Kenya brings its military specialists to South Africa as two African powerhouses strengthen cooperation against chemical, biological, and nuclear threats",
-          "url": "https://africa.businessinsider.com/local/markets/kenya-brings-its-military-specialists-to-south-africa-as-two-african-powerhouses/sch70l8",
-          "source": "Business Insider Africa"
+          "title": "Microsoft Outlook is down",
+          "url": "https://www.theverge.com/tech/1032226/microsoft-outlook-is-down",
+          "source": "The Verge"
         },
         {
-          "title": "KDF Sends Special Units Abroad for Advanced Training Amid New Al-Shabaab Threats",
-          "url": "https://www.kenyans.co.ke/news/129318-kdf-sends-military-specialists-south-africa-training-nuclear-biological-threats",
-          "source": "Kenyans.co.ke"
+          "title": "Outlook email outage affects users around the world",
+          "url": "https://www.thenationalnews.com/future/technology/2026/11/12/microsoft-outlook-outage-email/",
+          "source": "The National"
         },
         {
-          "title": "SAMHS 7 Med Bn Group puts chemical, biological nuclear and explosive threats under the microscope for Kenyan military",
-          "url": "https://defenceweb.co.za/sa-defence-sa-defence/samhs-7-med-bn-group-puts-chemical-biological-nuclear-and-explosive-threats-under-the-microscope-for-kenyan-military/",
-          "source": "defenceWeb"
+          "title": "MSFT Stock Reverses and Heads to $500 After Microsoft 365 Services Impacted by Outlook Outage",
+          "url": "https://www.fxleaders.com/news/2026/11/12/msft-stock-reverses-and-heads-to-500-after-microsoft-365-services-impacted-by-outlook-outage/",
+          "source": "FXLeaders"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "ghana vs somalia",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Ghana vs Somalia: Africa Cup of Nations Qualification stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c6x2vwkmrn1dt",
-          "source": "BBC"
-        },
-        {
-          "title": "2027 AFCON Qualifiers: Odartey Lamptey urges Black Stars to use Somalia games to boost market value",
-          "url": "https://www.modernghana.com/sports/1543947/2027-afcon-qualifiers-odartey-lamptey-urges-black.html",
-          "source": "Modern Ghana"
-        },
-        {
-          "title": "Ghana end three-year TotalEnergies CAF AFCON qualifying winless run with victory over Somalia",
-          "url": "https://www.cafonline.com/afcon2025/news/ghana-end-three-year-totalenergies-caf-afcon-qualifying-winless-run-with-victory-over-somalia/",
-          "source": "CAFOnline.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "dr congo vs sierra leone",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Congo DR vs Sierra Leone: Africa Cup of Nations Qualification stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cqkgjm5yly1vt",
-          "source": "BBC"
-        },
-        {
-          "title": "Preview: Congo DR vs Sierra Leone - prediction, team news, lineups",
-          "url": "https://www.sportsmole.co.uk/football/congo-dr/africa-cup-of-nations/preview/congo-dr-vs-sierra-leone-prediction-team-news-lineups_608872.html",
-          "source": "Sports Mole"
-        },
-        {
-          "title": "AFCON 2027 qualifiers: Willy Kambwala ruled out, Sébastien Desabre calls up a TP Mazembe defender as replacement",
-          "url": "https://dailysports.net/news/afcon-2027-qualifiers-willy-kambwala-ruled-out-sebastien-desabre-calls-up-a-tp-mazembe-defender-as-replacement/",
-          "source": "Dailysports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "nvidia stock",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Alice Huang, Alleged Chinese Spy at Center of Nvidia Firestorm, Is in Beijing",
-          "url": "https://www.bloomberg.com/news/articles/2026-11-12/alleged-chinese-spy-at-center-of-nvidia-firestorm-is-in-beijing",
-          "source": "Bloomberg.com"
-        },
-        {
-          "title": "Nvidia CEO Jensen Huang quits in wake of affair with suspected Chinese spy, as firm's stocks plunge",
-          "url": "https://www.bbc.com/news/live/c6zjry11v8w1t",
-          "source": "BBC"
-        },
-        {
-          "title": "Jensen Huang Said to Have Had Relationship With Nvidia Executive Who Reports to Him",
-          "url": "https://www.nytimes.com/2026/11/11/technology/jensen-huang-nvidia-affair.html",
-          "source": "The New York Times"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "madagascar vs guinea bissau",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "2026 The ANNIKA driven by Gainbridge at Pelican Leaderboard",
-          "url": "https://www.espn.com/golf/leaderboard/_/tournamentId/401835176",
-          "source": "ESPN"
-        },
-        {
-          "title": "Golden Knights 5-3 Mammoth (Nov 11, 2026) Game Recap",
-          "url": "https://www.espn.com/nhl/recap?gameId=401892693",
-          "source": "ESPN"
-        },
-        {
-          "title": "Oklahoma State vs. Texas A&M (13 Nov, 2026) Live Score",
-          "url": "https://www.espn.co.uk/mens-college-basketball/game/_/gameId/401919041/oklahoma-st-texas-am",
-          "source": "ESPN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "guinea vs eritrea",
+      "title": "sebastiano esposito",
       "traffic": "100+",
       "news": [
         {
-          "title": "Guinea: Mouctar Diakhaby returns for Eritrea double-header · SNA",
-          "url": "https://sportnewsafrica.com/en/news/guinea-mouctar-diakhaby-returns-for-eritrea-double-header/",
-          "source": "Sport News Africa"
+          "title": "Napoli, le grandi manovre: nel mirino Sebastiano Esposito come colpo in attacco per il mercato di gennaio",
+          "url": "https://www.ilmattino.it/sport/sscnapoli/napoli_calciomercato_sebastiano_esposito_mercato_di_gennaio-9883782.html",
+          "source": "Il Mattino"
         },
         {
-          "title": "AFCON (Q): Guinea's poor preparations spark further pessimism",
-          "url": "https://panafricafootball.com/article/guinea-national-team-afcon-qualifying",
-          "source": "Pan Africa Football"
+          "title": "Carrick esonerato, Allegri sponsorizza Esposito, Premier su Cisse: le top news delle 13",
+          "url": "https://www.tuttomercatoweb.com/serie-a/carrick-esonerato-allegri-sponsorizza-esposito-premier-cisse-top-news-13-2293288",
+          "source": "TUTTOmercatoWEB"
         },
         {
-          "title": "Bafana Handed Boost, AFCON Rivals In Injury Disarray",
-          "url": "https://www.soccerladuma.co.za/international/afcon/south-africa-have-been-handed-a-boost-after-guinea-s-preparations-for-their-2027-africa-cup-of-natio",
-          "source": "Soccer Laduma"
+          "title": "Calciomercato Napoli: Varela si complica, altra idea in attacco",
+          "url": "https://www.fantacalcio.it/calciomercato/12_11_2026/calciomercato-napoli-varela-si-complica-altra-idea-in-attacco-500590",
+          "source": "Fantacalcio"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "pio esposito",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Donnarumma regala il pallone, Olise ringrazia e segna: la sequenza del primo gol in Italia-Francia",
+          "url": "https://www.corrieredellosport.it/foto/calcio/italia/2026/11/12-152548978/donnarumma_regala_il_pallone_olise_ringrazia_e_segna_la_sequenza_del_primo_gol_in_italia-francia",
+          "source": "Corriere dello Sport"
+        },
+        {
+          "title": "Mancini: “Kimi Antonelli non è in Ferrari perché l’Italia non crede nei giovani”",
+          "url": "https://www.repubblica.it/sport/calcio/nazionale/2026/11/12/news/mancini_kimi_antonelli_giovani_nazionale_italia-425719291/",
+          "source": "la Repubblica"
+        },
+        {
+          "title": "Issa Doumbia e Luca Koleosho, chi sono le nuove stelle dell’Italia contro la Francia",
+          "url": "https://www.startupbusiness.it/issa-doumbia-e-luca-koleosho-chi-sono-le-nuove-stelle-dellitalia-contro-la-francia/216824/",
+          "source": "Startupbusiness.it"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "jobe bellingham",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "England's Blues brothers - how the Bellinghams helped save Birmingham",
+          "url": "https://www.bbc.com/sport/football/articles/cm1j3j20r2rzo",
+          "source": "BBC"
+        },
+        {
+          "title": "\"He's coming on his own merit,\" said Thomas Tuchel, after extolling the strengths of Jobe Bellingham.",
+          "url": "https://www.skysports.com/football/news/13608890/england-jobe-bellingham-has-the-chance-to-showcase-his-own-talent-alongside-brother-jude-in-thomas-tuchels-squad",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Cole Palmer called out as Alan Shearer tells Chelsea star he has 'some making up to do’",
+          "url": "https://www.football.london/chelsea-fc/news/cole-palmer-england-chelsea-shearer-34904374",
+          "source": "Football London"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "aisha jumwa",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Flip-flopping: Ruto welcomes Aisha Jumwa back to UDA months after July defection",
+          "url": "https://nation.africa/kenya/news/politics/ruto-welcomes-aisha-jumwa-back-to-uda-5668820",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Aisha Jumwa dumps Wiper after nomination, rejoins Ruto's UDA",
+          "url": "https://citizen.digital/article/aisha-jumwa-dumps-wiper-after-nomination-rejoins-rutos-uda-n393814",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "Change of heart: Ex-Gender CS Aisha Jumwa returns to UDA in fresh political twist",
+          "url": "https://www.the-star.co.ke/news/2026-11-12-former-gender-cs-aisha-jumwa-rejoins-uda",
+          "source": "The Star, Kenya"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "gabriel martinelli",
-      "why": "unsafe: 'missing'"
-    },
-    {
-      "title": "albania vs finland",
-      "why": "unsafe: 'Betting'"
+      "title": "czechia vs spain",
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
