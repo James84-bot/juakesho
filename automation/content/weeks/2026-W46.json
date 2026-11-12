@@ -1438,13 +1438,93 @@
       "fb_story_id": "2542431602933419",
       "yt_id": "XeH8lfhAPL4",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w46-hot-1112",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Tax Experts",
+      "line": "KRA moves to address Kenyans’ concerns over *unexplained iTax* debts and penalties.",
+      "fact": "Taxpayers have reported sudden audit debts and penalties appearing on their iTax profiles.",
+      "message": "KRA addresses taxpayer complaints over unexpected iTax debts and penalties.",
+      "action": "Check your iTax profile and log any disputes through the official portal",
+      "beats": [
+        "Sudden audit debts appear on *iTax* profiles.",
+        "Many accounts show penalties for returns filed years ago.",
+        "Taxpayers want an open audit trail of these sudden charges.",
+        "Tell us below: did you check your iTax profile this month?"
+      ],
+      "photo_query": "Kenya Revenue Authority Nairobi building",
+      "event_query": "KRA headquarters Nairobi",
+      "who": "KRA Commissioner General Humphrey Wattanga",
+      "where": "National",
+      "when": "11 Nov 2026",
+      "source": "People Daily, 2026-11-11",
+      "caption": "Check your iTax profile. KRA says it is fixing unexplained debts and penalties on taxpayer accounts. Did you find a surprise balance? 👇🏾\n\n#kra #KenyaOnRecord",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Taxpayers face surprise debts that disrupt small businesses and personal accounts.",
+      "bg": "usiku",
+      "publish_at": "2026-11-12T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "KRA moves to address Kenyans’ concerns over unexplained iTax debts, penalties",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdW93c3FUUVlOTHlzT3ZjbUJDT2J6TVptandtYXZLeW1JV0xsYWdIb0JlQ1o2Y2QxUGNYRDk3WWNwd3BuNTFqbG5TNHlKVXM2LWZrWXl6RHAwSlgzcC1uZ3VoQUNkajVWdXpwZXNQaXFWWW5xTXUyYWtGYWhwUGM4MnB6Q1FsOHh5OWV6TGhaaGd2YWtDcmVCQ0F3Z1pEQXdDNkNzazNSdVc3dHU2?oc=5",
+          "published": "2026-11-11"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "hook: the first line has no figure and no named person, place or body: it is a topic, not a hook",
+          "weak: editor scored 4.7/10. Match post topic to the current weekly demand list of top stories."
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 5,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 3,
+        "action": 5,
+        "fair": 5,
+        "impact": 5,
+        "human": 3,
+        "avg": 4.7,
+        "note": "Match post topic to the current weekly demand list of top stories."
+      },
+      "drafted_at": "2026-11-12T09:40:10.362652+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1112-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "file",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127788-kra-collects-ksh-90b-customs-revenue-exceeding-september-target-ksh-965m",
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "KRA Surpasses September Revenue Target as Imports Surge"
+        }
+      ],
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1054
     }
   ],
   "scripts": {
-    "radio": "Welcome to Kenya on Record. This week, we have reason to breathe a measured sigh of relief, but not to let our guard down. Kenya has officially discharged its last admitted Ebola patient. This is an incredible testament to the dedication of our frontline healthcare workers, epidemiologists, and rapid response teams who acted swiftly to isolate and treat every confirmed case.\n\nHowever, accountability demands we understand where we actually stand: Kenya is not officially Ebola-free. We have now entered a critical 42-day monitoring countdown. International health protocols require two full incubation cycles of the virus—21 days each—with zero new infections before the country can earn clearance. \n\nThis means the hard work isn't over; it has simply moved to surveillance. County health departments, especially in transit hubs and border communities, cannot afford to shut down isolation beds, cut fuel for contact-tracing teams, or scale back community sensitisation. We have seen before how declaring victory prematurely invites disaster. The Ministry of Health must maintain transparent daily reporting throughout this six-week window, and as citizens, our duty is to report unusual illness without delay. \n\nKwa ufupi: Kenya imemruhusu mgonjwa wa mwisho wa Ebola kuondoka hospitalini, na sasa tunaanza kipindi cha uangalizi cha siku 42 bila kisa chochote kipya kabla ya kutangazwa rasmi kuwa salama. Serikali za kaunti na wananchi lazima waendelee na umakini ule ule ili tusirudi nyuma.",
-    "voice_note": "Habari zenu, it’s Kenya on Record with an important health update. Kenya has discharged our last admitted Ebola patient. It is great news, but we are not out of the woods just yet. We’ve just started a mandatory 42-day countdown to be officially declared Ebola-free. That’s two complete incubation periods where the country must record zero new cases. The risk right now is complacency. County health teams cannot relax surveillance, close isolation units, or recall emergency response staff prematurely. We need active screening at border points and genuine readiness in local facilities. Keep up proper hand hygiene and flag any suspected cases through official emergency lines immediately. 42 days to go—let’s stay vigilant.",
-    "sms": "Usiibiwe: Kenya is on a 42-day Ebola watch. Beware of quacks selling fake 'clearing' herbal cures or test kits. Public hospitals remain free. Stay alert.",
-    "reels": "Kenya just discharged its last Ebola patient. That is a massive milestone for our frontline doctors, but the clock is ticking. We have officially started a 42-day countdown to be certified Ebola-free. That requires six full weeks of zero new transmissions. County governments cannot dismantle isolation centers or cut surveillance funding now. The threat isn't gone until the countdown hits zero. Stay alert, stay clean, and hold the line."
+    "radio": "Habari za wiki hii kutoka Kenya on Record. Mimi ni mtangazaji wako, na leo tunazungumzia jambo ambalo limewachachia Wakenya wengi wiki hii: malalamishi kuhusu deni zisizotarajiwa na faini kwenye mfumo wa iTax wa KRA.\n\nWafanyabiashara na wananchi wengi wamekuwa wakilalamika kwamba wanaamka tu na kukuta deni kubwa kwenye iTax, wakati walidhani wako sawa na ushuru. KRA imejitokeza kutoa ufafanuzi, ikisema baadhi ya hizi deni zinatokana na marekebisho ya kiufundi na ukaguzi wa nyuma. Lakini swali kuu ni je, mawasiliano yako wapi kabla ya faini kurundikana?\n\nKama mwananchi anayelipa ushuru kwa jasho lako, haki yako ni kupewa taarifa mapema. Usikubali kulipa chochote mpaka uhakikishe. Ingia kwenye akaunti yako ya iTax, angalia Ledger yako vizuri, na kama kuna utata, tembelea afisi za KRA au utumie njia zao rasmi za malalamishi.\n\nTunaomba Mamlaka ya Ushuru iwe wazi zaidi na isiwanyanyase wananchi kwa makosa ya kiufundi ya mfumo wao. Lipa ushuru, lakini dai haki yako.\n\n[Kiswahili Summary]\nWiki hii kwenye Kenya on Record, KRA imejibu malalamishi ya Wakenya kuhusu deni za kushtukiza za iTax na faini. Tunawasihi wananchi kukagua leja zao za iTax na kudai maelezo wazi kabla ya kulipa malimbikizo yoyote ya ushuru.",
+    "voice_note": "Sauti ya Kenya on Record. Habari rafiki. Kama umeshangaa kuona deni la kushtukiza au faini kwenye iTax yako wiki hii, hauko peke yako. Wengi wanalalamika. KRA wanasema ni marekebisho ya kimfumo, lakini usikubali kulipa tu hivi hivi. Ingia iTax, kagua ledja yako, na kama hesabu hazieleweki, dai ufafanuzi kabla ya kutoa hata bob moja. Tuelimishane, tusiibiwe.",
+    "sms": "Usiibiwe: Umeamka ukakuta deni la kushtukiza iTax? Usililipe chap chap. Ingia kwenye akaunti yako, kagua ledja, na utafute ufafanuzi wa KRA kwanza. Jikinge.",
+    "reels": "Wakenya wanaamka wanakuta deni za mamilioni kwenye iTax bila taarifa! KRA inasema ni 'marekebisho ya kiufundi'. Lakini swali ni moja: kwa nini mwananchi ndiye analipia makosa ya mfumo? Kabla hujalipa hiyo faini ya kushtukiza, kagua ledja yako na udai haki yako. Fuatilia Kenya on Record kwa ukweli mtupu."
   },
   "spend_usd": 0.0
 }

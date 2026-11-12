@@ -1,11 +1,13 @@
+event 'KRA headquarters Nairobi' for 2026-w46-hot-1112 (08 Nov-13 Nov): 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 0, 'subject': 0}
+event 'KRA headquarters' for 2026-w46-hot-1112 (08 Nov-13 Nov): 11 found, 0 usable, dropped {'size': 6, 'licence': 0, 'date': 5, 'subject': 0}
 feed KBC: 60 items, 60 with an image
 feed Capital FM: 60 items, 60 with an image
 feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
 feed Nation: 25 items, 0 with an image
-posted for 2026-w46-hot-1111b1557: 5 matching reports (person '', names ['ebola'], words ['discharged', 'last', 'ebola', 'patient', 'starts'])
-picked KBC (8, detail 0.49, 2048x1366): Kenya discharges last patient, begins countdown to Ebola-free status
-also Capital FM (8, detail 0.302, 2048x1366): Kenya begins 42-day countdown towards Ebola-free status after discharg
+posted for 2026-w46-hot-1112: 0 matching reports (person 'wattanga', names ['humphrey', 'wattanga', 'kra'], words ['headquarters'])
+file photo for 2026-w46-hot-1112: 0 recent reports name 'wattanga'
+file photo for 2026-w46-hot-1112: 23 recent reports name 'kra'
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-also Kenyans.co.ke (6, detail 0.317, 700x350): MoH Reveals Next Steps as Kenya Goes 10 Days Without New Ebola Cases
+file photo from Kenyans.co.ke: KRA Surpasses September Revenue Target as Imports Surge
