@@ -1523,15 +1523,221 @@
     {
       "id": "2026-w46-hot-1112m",
       "template": "sauti",
-      "bg": "usiku",
       "lane": "everyone",
+      "kicker": "Parents",
+      "line": "President Ruto orders a full review of school capitation with a decision due in January.",
+      "fact": "School capitation funds go to public primary and secondary schools across Kenya.",
+      "message": "Schools await new capitation rules to fix funding gaps before January.",
+      "action": "Ask your local school head about capitation disbursements this term.",
+      "beats": [
+        "President Ruto ordered a full *review* of school capitation today.",
+        "The new funding framework promises a decision by January 2027.",
+        "Public schools depend on capitation grants to keep classrooms running.",
+        "Has your school received the full capitation money *this term?*"
+      ],
+      "photo_query": "Kenyan school children in classroom",
+      "source": "Capital FM News, 2026-11-12",
+      "caption": "School capitation is under review. President Ruto promises a decision in January. Parents and headteachers wait to see the new figures. What is the biggest funding gap in your local school right now? 👇🏾\n\n#Education #KenyaOnRecord",
+      "who": "President William Ruto",
+      "where": "National",
+      "when": "12 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Public schools face funding delays that affect learning in every county.",
+      "bg": "usiku",
       "publish_at": "2026-11-12T17:49:00+03:00",
-      "status": "planned",
       "hot": true,
       "beat": "life",
       "avoid": [
         "KRA addresses taxpayer complaints over unexpected iTax debts and penalties."
-      ]
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Ruto orders review of school capitation, promises decision in January",
+          "link": "https://capitalfm.africa/ruto-orders-review-of-school-capitation-promises-decision-in-january/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-12"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 6,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.2,
+        "note": "Make the concrete demand on the Ministry of Education explicit before the final question."
+      },
+      "drafted_at": "2026-11-12T17:26:15.787900+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1112m-photo.jpg",
+      "photo_credit": "Photo: Capital FM · Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/ruto-orders-review-of-school-capitation-promises-decision-in-january/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1112m-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1112m-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Ruto orders review of school capitation, promises decision in January"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "Govt sets its sight on reviewing school capitation"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "Ruto defends paying off French firm Ksh 6.5B to exit Rironi-Mau Summit road project"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1112m-broll.mp4",
+      "broll_credit": "Footage: ninosouza / Pixabay",
+      "ink": {
+        "2": "#FFFFFF"
+      },
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1059,
+      "auto": true,
+      "decided_at": "2026-11-12T17:42:49.971703+03:00"
+    },
+    {
+      "id": "2026-w46-hot-1112b1700",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football Fans",
+      "line": "Manchester United sacks manager Michael Carrick with Pochettino poised to take over at Old Trafford.",
+      "fact": "Manchester United supporters' trust criticised club owners following the sudden dismissal.",
+      "message": "Manchester United sacks Michael Carrick after a difficult run of matches.",
+      "action": "Share your thoughts on the managerial changes in the comments.",
+      "beats": [
+        "Manchester United has sacked manager *Michael* Carrick after 15 games.",
+        "Trust leaders criticised owners over the decision.",
+        "Mauricio Pochettino is now poised to take over the seat.",
+        "Would Pochettino fix the chaos at Old *Trafford* right now?"
+      ],
+      "photo_query": "football stadium floodlights",
+      "source": "Reuters, 2026-11-12",
+      "caption": "Manchester United sacks Michael Carrick after just 15 games in charge. The supporters' trust is demanding answers from the owners. Can Pochettino steady the ship? Tell us below: who should they sign next?\n\n#ManUtd #KenyaOnRecord",
+      "who": "Manchester United Board",
+      "where": "Manchester",
+      "when": "12 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Global football fans follow managerial shakeups that dominate sports news.",
+      "bg": "usiku",
+      "publish_at": "2026-11-12T17:20:00+03:00",
+      "hot": true,
+      "avoid": [
+        "KRA addresses taxpayer complaints over unexpected iTax debts and penalties."
+      ],
+      "breaking": {
+        "title": "Manchester United supporters' trust criticises owners after Carrick sacking",
+        "outlets": [
+          "Reuters",
+          "Sky Sports",
+          "The Guardian"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "The Guardian",
+          "title": "Michael Carrick was just the latest fall guy for Manchester United’s dysfunctional hierarchy | Jamie Jackson",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOR2JTaW9hZ1JJQnVHN09hQ2lmZXpUQkplZ05rUmdQUzlsd0w1Y1B3SV9WVEFXdnVBRHpJUWJjSUdic2lZY3JRQUQtZnFZWm0zc1ZzX1Z4Qzdsb3BqME1fMlJ4SWtMZUtPTTRRdW1rc0tYZ0poSGFUVkYtT2YwUzNnV2VYS1N6aFhKVVpPYU5hNVVvOHc?oc=5",
+          "published": "2026-11-12"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Michael Carrick sacked by Manchester United with Pochettino poised to take over",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNMDBoNnZPV05Wc2RndE01YUpkX1pLMzhQZGRIQnlpS0ZZT2N1ZmJxQksyWUw4RXN2ZmVuSDYxeHQ1ZEJsVUxxcGZ0bmFNR0IxdjNBV0RCdnpvUzFxOGt3RFZFUXRINGpoUzVPSy1xbnM1akwwbGt4dXM3QXBCTTlpcTVyRWI1R1R0UW5wNVkxSmpURGM3Y1dkNGpoLUVnbWk5cFlNVzZVYTR6SWg1UWc?oc=5",
+          "published": "2026-11-12"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Manchester United and Mauricio Pochettino: Would Argentine be the perfect fit or just another manager to fall foul of Old Trafford chaos?",
+          "link": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQbmg1U2xIT0d6ZW44dzJHcVZHY0ZmUjdvUEE2SHB2bjloNjZBMmc5bkh5MFVLMEpUVEp6V0NQbWVwYUgtX2dNVm93aUpxMDNYMjRoY3dsMHNnWTVGTzF5cVY2blA5MVBYcW9FV2FVWjN2dmh4R21TUU1iWlhScVZjTjBCaDB2WDhuMDhsdWRjQkJwR0NVYzdFTXZSWDhRRG1mMk50U2JEY1NzR3NjdXFCNy15SGpjYXhHUGJzck1NQkg2dXJHWFZJZVNXZUlZR09Gek1COEw5eVkweW1teHdHcklHZUVQOGNadjlqQjZGRDZhdkdSWk9hbVNaQjFia3ZOMXY3emY3a2toSlNrZzMwX2JR?oc=5",
+          "published": "2026-11-12"
+        },
+        {
+          "outlet": "Reuters",
+          "title": "Manchester United supporters' trust criticises owners after Carrick sacking",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUVdSbG8ybEhveUtXaEFNTDFSY3J2WG1lOTNjaXZUdWtmbll0R1NXUWRwekh0X2ZXOXRFSFVMck9BVkh3OW1kdnZ2TU54c2F5S1M1S0hZYzlwaVRlNmRqVEJrU043WGlEbjAzVGh1a2d2clBTekR6VHpDRGQzbkRScXRyemFFNndVMUVOQVJzQ0kwNHhZVlpoaFZVSHhudUo4ZnBOcHRhUjI4UE9hNmYySGdmNjVLR0pfMElKeXctdmJQUQ?oc=5",
+          "published": "2026-11-12"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.4/10. Foreign football news does not rank in Kenyan news demand compared to local political and economic stories."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 8,
+        "fresh": 3,
+        "voice": 6,
+        "craft": 5,
+        "picture": 4,
+        "hold": 5,
+        "demand": 1,
+        "action": 4,
+        "fair": 5,
+        "impact": 2,
+        "human": 5,
+        "avg": 4.4,
+        "note": "Foreign football news does not rank in Kenyan news demand compared to local political and economic stories."
+      },
+      "drafted_at": "2026-11-12T17:26:15.787906+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1112b1700-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127800-traffic-disruption-bodaboda-block-ngong-road-near-talanta-stadium-after-accident",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1112b1700-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1112b1700-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Traffic Disruption as Protests Erupt Near Talanta Stadium"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "First Games at Talanta Stadium Complex Revealed"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Ruto Issues New Directive on Eldoret’s Kipchoge Keino Stadium"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1112b1700-broll.mp4",
+      "broll_credit": "Footage: ThomaLutfpv / Pixabay",
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1060
     }
   ],
   "scripts": {
