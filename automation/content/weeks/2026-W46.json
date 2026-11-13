@@ -1757,29 +1757,283 @@
     {
       "id": "2026-w46-hot-1113",
       "template": "sauti",
-      "bg": "usiku",
       "lane": "everyone",
+      "side": "none",
+      "tone": "explainer",
+      "who": "UK Home Office",
+      "where": "National",
+      "when": "13 Nov 2026",
+      "impact": "Kenyan jobseekers can apply directly for UK seasonal visas without paying rogue agencies.",
+      "message": "UK lists 22 seasonal jobs for foreign workers.",
+      "action": "Check the UK government portal for visa details.",
+      "beats": [
+        "The UK listed *22* seasonal jobs for foreign workers.",
+        "Thousands of applicants wait for vacancies every season.",
+        "Applications go through official work visa routes.",
+        "Have you ever applied for work abroad *online*?"
+      ],
+      "photo_query": "Nairobi skyline",
+      "source": "Tuko News, 2026-11-13",
+      "kicker": "Job Seekers",
+      "line": "The UK listed *22* seasonal jobs for foreign workers under the work visa programme.",
+      "fact": "The UK government opened applications for 22 seasonal job categories for foreign nationals.",
+      "caption": "New opportunities abroad. The UK listed 22 seasonal job categories for work visas. Check official portals before paying any fees.\n\nHave you ever applied for work abroad online?\n\n#KenyaOnRecord",
+      "bg": "usiku",
       "publish_at": "2026-11-13T12:45:00+03:00",
-      "status": "planned",
       "hot": true,
-      "beat": "life"
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Tuko News",
+          "title": "Full List: UK Lists 22 Seasonal Jobs Kenyans and Other Foreigners Can Apply for Under Work Visa",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxON3JJeUtndGhYTjFzV0F6ZUxucFZKc1NfWHBCbVpvbGJxaXZOQnJlZlZrS29yMzY0SmlyYVJUUGU4ZVFrTUc4S3B5TVBjTTg0M2dURTIxcFlmZGtiYVJwNGVJaHVnUnFfaFFWQ3B2NS1RRS1YR29vNDgxMG0zVV9VUFc1NU8xSDBKVmo5ZDQxOVR6ZGU0WXUtVFIzbEZ3ZFcwS0NkRndISUVEYUk?oc=5",
+          "published": "2026-11-13"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 7.8,
+        "note": "Make the photo query more specific to foreign employment agencies or visa queues."
+      },
+      "drafted_at": "2026-11-13T16:49:27.650158+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1113-photo.jpg",
+      "photo_credit": "Photo: DesiBoy101 / Wikimedia Commons, CC BY 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Skyline_of_Nairobi_city_as_seen_from_Uhuru_Park.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: DesiBoy101 / Wikimedia Commons, CC BY 4.0",
+          "title": ""
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1113-broll.mp4",
+      "broll_credit": "Footage: RicardoVallejos / Pixabay",
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1078
     },
     {
       "id": "2026-w46-hot-1113m",
       "template": "sauti",
-      "bg": "usiku",
       "lane": "everyone",
+      "side": "government",
+      "tone": "criticism",
+      "who": "Auditor-General Nancy Gathungu",
+      "where": "National",
+      "when": "13 Nov 2026",
+      "impact": "Public funds face risk in 269 housing projects built on land lacking ownership records.",
+      "message": "Auditor-General flags missing land titles in 269 housing sites.",
+      "action": "Ask your MP for the audit report on housing land.",
+      "beats": [
+        "Auditor-General Nancy Gathungu flagged *269* sites.",
+        "The audit covers housing projects built nationwide.",
+        "Land titles are needed before construction starts.",
+        "Who holds the title deeds for your local *project*?"
+      ],
+      "photo_query": "road construction Kenya",
+      "source": "The Eastleigh Voice, 2026-11-13",
+      "kicker": "Taxpayers",
+      "line": "Auditor-General Nancy Gathungu flagged *269* affordable housing sites over missing land titles.",
+      "fact": "The Auditor-General flagged missing land titles in 269 housing projects.",
+      "caption": "Auditors found 269 affordable housing projects lack title deeds. The Lands Ministry must secure all public land records before construction begins.\n\nWho holds the title deeds for your local project?\n\n#HousingLevy #KenyaOnRecord",
+      "bg": "usiku",
       "publish_at": "2026-11-13T18:31:00+03:00",
-      "status": "planned",
       "hot": true,
-      "beat": "life"
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "Auditor-General flags missing land documents in 269 Affordable Housing projects",
+          "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOaU5NNzRROHQ0Y0paYk1TUFIycWxOUXJwUUVwVWJzYUdBbzBkSWpEUExRZzlLSTNXb3lURTRuVk9kNEV5NnlqV2NVM2JVeHM0RDNLN3V4aGM1SzY5c0V1NER5S3llSTRzNFlfdEhCQ0NxY01vQmtJc294dTNIT3A4dVRsc3MySmNQYlBDTHdmVTBNM2dVTndpRG4zdUNUM20zOXlJRWxnU1E5eXFNWVJIbzd1NHg1Z3Y2SEVqMXUxbjdxTVZua1pFZUNR?oc=5",
+          "published": "2026-11-13"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 9,
+        "action": 8,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.8,
+        "note": "The action beat has a sharp, lawful demand directed at the Ministry of Lands."
+      },
+      "drafted_at": "2026-11-13T16:49:27.650167+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1113m-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/128913-court-bars-govt-constructing-car-park-nairobi-animal-orphanage",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1113m-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Court Deals Blow to Govt’s Construction Plans at Nairobi Animal Orphanage"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "CS Chirchir Unveils New Plan to Fast-Track Rironi-Naivasha Highway Construction"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1113m-broll.mp4",
+      "broll_credit": "Footage: bellergy / Pixabay",
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1079,
+      "auto": true,
+      "decided_at": "2026-11-13T16:57:19.611644+03:00"
+    },
+    {
+      "id": "2026-w46-hot-1113b1626",
+      "template": "sauti",
+      "lane": "everyone",
+      "side": "none",
+      "tone": "explainer",
+      "who": "Pundit Gary Neville",
+      "where": "National",
+      "when": "13 Nov 2026",
+      "impact": "Kenyan football fans follow how squad restructuring shapes Manchester United's season.",
+      "message": "Gary Neville says Pochettino needs control of club recruitment.",
+      "action": "Read the full sports report on Manchester United.",
+      "beats": [
+        "Gary Neville says Mauricio Pochettino needs *control* of recruitment.",
+        "Multiple sports outlets reported the managerial remarks this week.",
+        "Squad planning remains central to performance in the Premier League.",
+        "Do managers need total control over *transfers*?"
+      ],
+      "photo_query": "football stadium Kenya",
+      "source": "Sky Sports, 2026-11-13",
+      "kicker": "Football Fans",
+      "line": "Gary Neville says Mauricio Pochettino needs *control* of Manchester United recruitment.",
+      "fact": "Gary Neville stated that Mauricio Pochettino requires control over club recruitment.",
+      "caption": "Pundits weigh in on club management. Gary Neville says Mauricio Pochettino needs full control of Manchester United recruitment.\n\nDo managers need total control over transfers?\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-13T16:46:00+03:00",
+      "hot": true,
+      "breaking": {
+        "title": "Gary Neville: Mauricio Pochettino needs control of Manchester United recruitment",
+        "outlets": [
+          "Al Jazeera",
+          "NTV Kenya",
+          "Sky Sports"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "Sky Sports",
+          "title": "Jay Bothroyd: Mauricio Pochettino will shake things up and get Manchester United running again",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZUJEWHl5VmhLTTNJdTE5d3FYQ0pINGlSaElhZldFekNOZmcwWm9vVklHXzgweS1OSE83RG1XQzF1TmlqUkJnc0U3YU5OY0JaUmIxTHNIMDZYNFNqU2VkWFlGUUFWWTdRWnZLc082cU1pM091a3N3cXMwQllrYzRrMHlzR3JvSWZhSm1oaDZ3b1UwMUN0eVRBaU9jVjdLQk5WZ0Fzb1ktOWo3QzgzVkEtOEtiVHRFaUp1T0JKYjhHcGRLbDlXWm5EYzUzamhlVjlrQzZMSllHRGxfWjQ?oc=5",
+          "published": "2026-11-13"
+        },
+        {
+          "outlet": "NTV Kenya",
+          "title": "Manchester United confirm Mauricio Pochettino as new manager",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRTYzTWl1NlNQWnpJcnZZTW95T2tIa05zLVZYb0VrVEZYa2JZcEVqbC1pREpNb0hvNnk0NmZsUmNUYWdYeDNvQWRzaHEtS0YtRC1rajcwMkl2UGlDXzNOSDk0ZmhJTTlUVGVudWtJWVBLc0JMcmdaRjRtSDNlbERtYk1yYWg2TmQySHdvYVU1QnFGOVk?oc=5",
+          "published": "2026-11-13"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Mauricio Pochettino announced as new Manchester United manager",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNR2JNS19vRGVfS1lfY3ZyNUVnSEVVUnVfa2oxS2tHVy1UZ2UtZU9tTHRjblY3NGJWNFJHNS1teTNZS3hXSVJkZ05NQ1lhbW1XWTBzMm1qMWwxWTNuaGZzX3dITTh4LV9CX0hwUkhOYVBLWkM4Mks4WC0yWHZNak5mU0Q0STlPXzZ3UjVjbFl2MmJPWjFJc1ZZNFQwRmtyX0EyWHNKbE95NNIBrAFBVV95cUxNQmljTjA4aWhzeHJWeUpTMUtZc2U2VlR1TzBKTDVFM05QZVVQOUdwZ21wQ3cwMi14Y1Y0ZlFEWUxKaUV3dXByY3pfaElCTWFzTF9Kd1MxMXZWU2F6LTE2X2NOZU4wQ3JfX0gxcHZJdjJjdFNwaHZRTjJ3QnU4RDR0Uk9XVmpLUVNsa2o2WVhaU19tRHV2WHc4VjlDcmE5TUh6OThscFltVzFVS1Vr?oc=5",
+          "published": "2026-11-13"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Jay Bothroyd's selects who should stay and go at Manchester United",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbkVqdXRldXBZbDcwQWRZa05Dd0F2RDZiMXlQd05nQVNpOTZLM0VoSWdZVWQ3MFNrOVlOVmNLVmY3aXRpS1NIM3R2VzQyS2lmemI4bTBvdWRrX1BHcnk1QjNtM1d2bnpCZzVMN2tEakNjOWdKZ0JJVHRidlIwRktucDlaVDNmVFA2ZnpGTWxlWE9uc29Ndl80SGoyQ3NYU0lCcUZxQWhMTVN5bXI4S3pTYVNCY0hydw?oc=5",
+          "published": "2026-11-13"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 3.5/10. Foreign football punditry is irrelevant to what Kenyans are on this week; replace with a local news story.",
+          "visual QA: low contrast 1.5:1 (needs 3:1) on 'of Manchester United recruitme'"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 3,
+        "send": 2,
+        "clarity": 8,
+        "fresh": 3,
+        "voice": 4,
+        "craft": 4,
+        "picture": 3,
+        "hold": 4,
+        "demand": 1,
+        "action": 3,
+        "fair": 5,
+        "impact": 2,
+        "human": 4,
+        "avg": 3.5,
+        "note": "Foreign football punditry is irrelevant to what Kenyans are on this week; replace with a local news story."
+      },
+      "drafted_at": "2026-11-13T16:49:27.650169+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1113b1626-photo.jpg",
+      "photo_credit": "File photo: University of Salford Press Office / Wikimedia Commons, CC BY 2.0",
+      "photo_kind": "file",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Gary_Neville_University_of_Salford.jpg",
+      "shot_info": [
+        {
+          "credit": "File photo: University of Salford Press Office / Wikimedia Commons, CC BY 2.0",
+          "title": ""
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1113b1626-broll.mp4",
+      "broll_credit": "Footage: ThomaLutfpv / Pixabay",
+      "ink": {
+        "2": "#FFFFFF"
+      }
     }
   ],
   "scripts": {
-    "radio": "Habari za wiki hii kutoka Kenya on Record. Mimi ni mtangazaji wako, na leo tunazungumzia jambo ambalo limewachachia Wakenya wengi wiki hii: malalamishi kuhusu deni zisizotarajiwa na faini kwenye mfumo wa iTax wa KRA.\n\nWafanyabiashara na wananchi wengi wamekuwa wakilalamika kwamba wanaamka tu na kukuta deni kubwa kwenye iTax, wakati walidhani wako sawa na ushuru. KRA imejitokeza kutoa ufafanuzi, ikisema baadhi ya hizi deni zinatokana na marekebisho ya kiufundi na ukaguzi wa nyuma. Lakini swali kuu ni je, mawasiliano yako wapi kabla ya faini kurundikana?\n\nKama mwananchi anayelipa ushuru kwa jasho lako, haki yako ni kupewa taarifa mapema. Usikubali kulipa chochote mpaka uhakikishe. Ingia kwenye akaunti yako ya iTax, angalia Ledger yako vizuri, na kama kuna utata, tembelea afisi za KRA au utumie njia zao rasmi za malalamishi.\n\nTunaomba Mamlaka ya Ushuru iwe wazi zaidi na isiwanyanyase wananchi kwa makosa ya kiufundi ya mfumo wao. Lipa ushuru, lakini dai haki yako.\n\n[Kiswahili Summary]\nWiki hii kwenye Kenya on Record, KRA imejibu malalamishi ya Wakenya kuhusu deni za kushtukiza za iTax na faini. Tunawasihi wananchi kukagua leja zao za iTax na kudai maelezo wazi kabla ya kulipa malimbikizo yoyote ya ushuru.",
-    "voice_note": "Sauti ya Kenya on Record. Habari rafiki. Kama umeshangaa kuona deni la kushtukiza au faini kwenye iTax yako wiki hii, hauko peke yako. Wengi wanalalamika. KRA wanasema ni marekebisho ya kimfumo, lakini usikubali kulipa tu hivi hivi. Ingia iTax, kagua ledja yako, na kama hesabu hazieleweki, dai ufafanuzi kabla ya kutoa hata bob moja. Tuelimishane, tusiibiwe.",
-    "sms": "Usiibiwe: Umeamka ukakuta deni la kushtukiza iTax? Usililipe chap chap. Ingia kwenye akaunti yako, kagua ledja, na utafute ufafanuzi wa KRA kwanza. Jikinge.",
-    "reels": "Wakenya wanaamka wanakuta deni za mamilioni kwenye iTax bila taarifa! KRA inasema ni 'marekebisho ya kiufundi'. Lakini swali ni moja: kwa nini mwananchi ndiye analipia makosa ya mfumo? Kabla hujalipa hiyo faini ya kushtukiza, kagua ledja yako na udai haki yako. Fuatilia Kenya on Record kwa ukweli mtupu."
+    "radio": "Mambo vipi, msikilizaji wa Kenya on Record. Hapa kuna dondoo za wiki hii ambazo zinatugusa moja kwa moja kwenye mifuko na haki zetu.\n\nKwanza kabisa, kwa wale waliokuwa wakiwinda fursa za nje, serikali ya Uingereza imetangaza nafasi ishirini na mbili za kazi za msimu kwa wafanyakazi wa kigeni. Lakini kumbuka, kabla hujatoa pesa kwa mawakala wa uongo, hakikisha njia ni halali.\n\nPili, ripoti mpya kutoka kwa Mkaguzi Mkuu wa Hesabu za Serikali imezua hofu baada ya kubaini kuwa hati za kumiliki ardhi kwa miradi mingi ya nyumba za bei nafuu hazionekani. Hili linatukumbusha kuwa uwekezaji wa serikali lazima ulindwe. Hatuwezi kujenga taifa juu ya misingi ya siri.\n\nNa kwenye michezo, mchambuzi maarufu wa soka Gary Neville amesema Mauricio Pochettino anahitaji udhibiti kamili wa usajili ili kufanikiwa. Soka la kisasa linahitaji uwajibikaji kutoka juu hadi chini—sawa na vile tunavyodai kutoka kwa viongozi wetu.\n\n*Kwa ufupi: Uingereza imetoa nafasi 22 za kazi za msimu, Mkaguzi Mkuu amefichua kukosekana kwa hati miliki katika miradi ya nyumba, na Gary Neville amesisitiza umuhimu wa kocha kudhibiti usajili wa wachezaji.*",
+    "voice_note": "Hujambo rafiki, hizi hapa habari kuu za wiki kutoka Kenya on Record.\n\nKwanza, Uingereza imetangaza nafasi ishirini na mbili za kazi za msimu kwa wageni. Kama unapanga kuomba, kuwa mwangalifu na matapeli wanaotumia fursa kama hizi.\n\nPili, habari inayosikitisha kutoka kwa Mkaguzi Mkuu: hati za ardhi za miradi ya nyumba hazionekani! Hii inamaanisha nini kwa pesa za walipa kodi?\n\nNa mwisho, kwenye soka, Gary Neville anasema Pochettino anahitaji nguvu kamili kwenye usajili ili timu ishinde.\n\nTafadhali sambaza ujumbe huu kwa marafiki zako ili tuendelee kuwa macho.",
+    "sms": "USIIBIWE: Miradi ya nyumba ya serikali inakabiliwa na utata wa hati miliki zilizopotea. Linda pesa za umma kwa kuuliza maswali. Usinyamaze!",
+    "reels": "Hati miliki za miradi ya nyumba ya serikali zimepotea? Hivyo ndivyo ripoti mpya ya Mkaguzi Mkuu inavyofichua! Wakati wananchi wanatafuta nyumba za bei nafuu, maswali mazito yanasalia kuhusu usalama wa ardhi hiyo. Usiache serikali ikuchezee. Fuatilia Kenya on Record ujue ukweli wote."
   },
   "spend_usd": 0.0
 }
