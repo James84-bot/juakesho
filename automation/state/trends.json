@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-13T13:26:21.340570+00:00",
+  "fetched": "2026-11-13T14:13:45.966149+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -12,60 +12,39 @@
           "source": "CNN"
         },
         {
-          "title": "A negative Outlook: Microsoft scrambles to fix email outage",
-          "url": "https://www.npr.org/2026/11/12/nx-s1-6039343/outlook-down-widespread-outage-microsoft-email",
-          "source": "NPR"
+          "title": "Is Outlook down? Widespread outage hits Microsoft email and other apps",
+          "url": "https://apnews.com/article/microsoft-outlook-outage-email-teams-6376045281feb430c0b923e3a4b251c2",
+          "source": "AP News"
         },
         {
-          "title": "Live: Microsoft struggles to restore services as outage hits global users",
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/13/live-microsoft-struggles-to-restore-services-as-outage-hits-global-users",
-          "source": "Al Jazeera"
+          "title": "Microsoft rules out 'malicious activity' as cause for global outage",
+          "url": "https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611",
+          "source": "DW.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "bruno fernandes",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Bruno Fernandes transfer news: Manchester United captain rejects second contract offer",
-          "url": "https://www.skysports.com/transfer/news/13611749/bruno-fernandes-rejects-second-manchester-united-contract-offer",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Bruno Fernandes rejects second Manchester United contract offer - The Athletic",
-          "url": "https://www.nytimes.com/athletic/7777075/2026/11/12/bruno-fernandes-rejects-second-manchester-united-contract-offer/",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Pochettino prepares for an unpleasant surprise: Bruno Fernandes shocks Manchester United at a critical time",
-          "url": "https://www.goal.com/en/news/pochettino-prepares-for-an-unpleasant-surprise-bruno-fernandes-shocks-manchester-united-at-a-critical-time/bltd3e5bfe3c96b0d34",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya vs south africa",
+      "title": "salary",
       "traffic": "500+",
       "news": [
         {
-          "title": "South Africa vs. Kenya - Kick-off time, team news, how to watch Bafana's AFCON qualifier",
-          "url": "https://africa.espn.com/espn/story/_/id/50469313/south-africa-kenya-kick-team-news-how-watch-bafana-afcon-qualifier",
-          "source": "ESPN"
+          "title": "Ruto takes on Gachagua over payslip debate as he defends Sh32,000 PAYE proposal",
+          "url": "https://www.the-star.co.ke/news/2026-11-12-ruto-takes-on-gachagua-defends-sh32000-paye-proposal",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Divided loyalties: McCarthy faces home nation as Harambee Stars eye historic victory",
-          "url": "https://nation.africa/kenya/sports/football/divided-loyalties-mccarthy-faces-home-nation-as-harambee-stars-eye-historic-victory-5667508",
-          "source": "Daily Nation"
+          "title": "Ruto Breaks Down How Much Teachers Will Gain Under New PAYE Plan",
+          "url": "https://www.kenyans.co.ke/news/129330-ruto-explains-how-proposed-paye-reforms-will-change-teachers-salaries",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Harambee Stars hoping to end winless run against South Africa",
-          "url": "https://www.standardmedia.co.ke/sports/article/2001562186/harambee-stars-hoping-to-end-winless-run-against-south-africa",
-          "source": "www.standardmedia.co.ke"
+          "title": "How Tax Relief Will Be A Major Topic in 2027 Elections",
+          "url": "https://kenyanwallstreet.com/how-tax-relief-will-be-a-major-topic-in-2027-elections",
+          "source": "The Kenyan Wallstreet"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -91,46 +70,90 @@
     },
     {
       "geo": "KE",
-      "title": "salary",
+      "title": "zambia vs burundi",
       "traffic": "200+",
       "news": [
         {
-          "title": "Ruto takes on Gachagua over payslip debate as he defends Sh32,000 PAYE proposal",
-          "url": "https://www.the-star.co.ke/news/2026-11-12-ruto-takes-on-gachagua-defends-sh32000-paye-proposal",
-          "source": "The Star, Kenya"
+          "title": "Zambia vs Burundi: Africa Cup of Nations Qualification stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmn9r00z9q38t",
+          "source": "BBC"
         },
         {
-          "title": "Ruto Breaks Down How Much Teachers Will Gain Under New PAYE Plan",
-          "url": "https://www.kenyans.co.ke/news/129330-ruto-explains-how-proposed-paye-reforms-will-change-teachers-salaries",
-          "source": "Kenyans.co.ke"
+          "title": "Kennedy Musonda, Liteta facing late fitness test",
+          "url": "https://zambianfootball.co.zm/kennedy-musonda-liteta-facing-late-fitness-test/",
+          "source": "ZamFoot"
         },
         {
-          "title": "How Tax Relief Will Be A Major Topic in 2027 Elections",
-          "url": "https://kenyanwallstreet.com/how-tax-relief-will-be-a-major-topic-in-2027-elections",
-          "source": "The Kenyan Wallstreet"
+          "title": "AFCON 2027: Zambia President Hakainde Hichilema purchases all tickets for Burundi qualifier",
+          "url": "https://en.africatopsports.com/afcon-2027-zambia-president-hakainde-hichilema-purchases-all-tickets-or-burundi-fixture/",
+          "source": "Africa Top Sports"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "zambia vs burundi",
+      "title": "kenya vs south africa",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "South Africa vs. Kenya - Kick-off time, team news, how to watch Bafana's AFCON qualifier",
+          "url": "https://africa.espn.com/espn/story/_/id/50469313/south-africa-kenya-kick-team-news-how-watch-bafana-afcon-qualifier",
+          "source": "ESPN"
+        },
+        {
+          "title": "Divided loyalties: McCarthy faces home nation as Harambee Stars eye historic victory",
+          "url": "https://nation.africa/kenya/sports/football/divided-loyalties-mccarthy-faces-home-nation-as-harambee-stars-eye-historic-victory-5667508",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Harambee Stars hoping to end winless run against South Africa",
+          "url": "https://www.standardmedia.co.ke/sports/article/2001562186/harambee-stars-hoping-to-end-winless-run-against-south-africa",
+          "source": "www.standardmedia.co.ke"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "william ruto",
       "traffic": "100+",
       "news": [
         {
-          "title": "Lwandamina demands an element of madness as Zambia face Burundi in AFCON",
-          "url": "https://www.flashscore.com/news/lwandamina-demands-an-element-of-madness-as-zambia-face-burundi-in-afcon/2kCZw00B/",
-          "source": "Flashscore.com"
+          "title": "Ruto woos teachers with goodies at school heads’ conference",
+          "url": "https://nation.africa/kenya/news/education/ruto-woos-teachers-with-goodies-at-school-heads-conference-5669098",
+          "source": "Daily Nation"
         },
         {
-          "title": "Chipolopolo’s strong unavailable line up",
-          "url": "https://zambianfootball.co.zm/chipolopolos-strong-unavailable-line-up/",
-          "source": "ZamFoot"
+          "title": "Ruto announces Sh4bn for teachers’ career progression, 50k promotions",
+          "url": "https://www.the-star.co.ke/news/2026-11-12-ruto-announces-sh4bn-for-teachers-career-progression",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Zambia - Burundi ai prediction 13.11.2026 Qual. Africa Cup of Nations",
-          "url": "https://www.livetipsportal.com/en/sportsbetting-tips/zambia-vs-burundi-qual-africa-cup-of-nations-12093491/",
-          "source": "Livetipsportal.com"
+          "title": "Ruto orders Education Ministry to review school capitation by January",
+          "url": "https://citizen.digital/article/ruto-orders-education-ministry-to-review-school-capitation-by-january-n393802",
+          "source": "Citizen Digital"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mozambique vs ethiopia",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Mozambique vs Ethiopia LIVE: Kickoff Time and How to Watch",
+          "url": "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-mozambique-vs-ethiopia-live-on-bein-sports-2026-11-12",
+          "source": "beIN SPORTS"
+        },
+        {
+          "title": "Mozambique v Ethiopia: 2027 AFCON qualifiers · SNA",
+          "url": "https://sportnewsafrica.com/en/alerts/mozambique-to-host-ethiopia-in-maputo-in-2027-afcon-qualifying/",
+          "source": "Sport News Africa"
+        },
+        {
+          "title": "Mozambique vs Ethiopia LIVE, Latest Score, Goals and Africa Cup of Nations Qualifiers Updates (0-0)",
+          "url": "https://www.vavel.com/en-us/soccer/2026/11/13/1279011-mozambique-vs-ethiopia-live-latest-score-goals-and-africa-cup-of-nations-qualifiers-updates.html",
+          "source": "VAVEL.com"
         }
       ]
     },
@@ -194,31 +217,9 @@
           "source": "crossroadstoday.com"
         },
         {
-          "title": "Friday the 13th? The Spooky History — And Catholic Truth — Behind Unlucky #13",
-          "url": "https://ewtn.co.uk/chpop-friday-the-13th-the-spooky-history-and-catholic-truth-behind-unlucky-13/",
-          "source": "EWTN Great Britain"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "76ers vs raptors",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Tyrese Maxey scores 27 points; Sixers outlast Raptors for 10th win",
-          "url": "https://allphly.com/76ers/sixers-raptors-recap-tyrese-maxey-joel-embiid-vj-edgecombe-2/",
-          "source": "PHLY Sports"
-        },
-        {
-          "title": "Maxey's got bounce",
-          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-scores-games-schedule-stats-live-updates/3O8C8RgzvHTs/C1OS9hSGkvfM/",
-          "source": "The New York Times"
-        },
-        {
-          "title": "NBA: Toronto Raptors at Philadelphia 76ers",
-          "url": "https://www.reutersconnect.com/item/nba-toronto-raptors-at-philadelphia-76ers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAzNDY3NTU",
-          "source": "Reuters Connect"
+          "title": "‘It’s Friday, We’re in Love’: 35 Weekend Memes to Say Goodbye to the Workweek (November 13, 2026)",
+          "url": "https://www.yahoo.com/lifestyle/articles/friday-love-35-weekend-memes-130000332.html",
+          "source": "Yahoo"
         }
       ]
     }
