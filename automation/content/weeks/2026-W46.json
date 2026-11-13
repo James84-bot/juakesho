@@ -2042,13 +2042,127 @@
       "ink": {
         "2": "#FFFFFF"
       }
+    },
+    {
+      "id": "2026-w46-hot-1113b2340",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Harambee Stars",
+      "line": "Harambee Stars fought back to secure a *2-2* draw against South Africa in Johannesburg.",
+      "fact": "Captain Michael Olunga scored to equal Harambee Stars' all-time scoring record with 31 goals.",
+      "source": "Citizen Digital, 2026-11-13, The Eastleigh Voice, 2026-11-13",
+      "photo_query": "football stadium pitch Kenya",
+      "message": "Harambee Stars held South Africa 2-2 as Olunga equalled the all-time scoring record.",
+      "action": "Cheer the team on: catch the next qualifier live on local TV.",
+      "beats": [
+        "Harambee Stars held South Africa to a *2-2* draw in Johannesburg.",
+        "Captain Michael Olunga scored to equal the all-time scoring record.",
+        "That makes *31* goals for the national team captain.",
+        "Tell us below: can Harambee Stars qualify for the next Afcon?"
+      ],
+      "caption": "Harambee Stars secured a 2-2 draw in South Africa, with Olunga equalling the all-time scoring record. Massive effort away from home.\n\nTell us below: can Harambee Stars qualify for the next Afcon?\n\n#HarambeeStars #KenyaOnRecord",
+      "who": "FKF and Harambee Stars",
+      "where": "Johannesburg",
+      "when": "13 Nov 2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Boosts national pride and keeps qualifying hopes alive.",
+      "bg": "usiku",
+      "publish_at": "2026-11-14T00:00:00+03:00",
+      "hot": true,
+      "avoid": [
+        "UK lists 22 seasonal jobs for foreign workers.",
+        "Auditor-General flags missing land titles in 269 housing sites.",
+        "Gary Neville says Pochettino needs control of club recruitment."
+      ],
+      "breaking": {
+        "title": "Harambee Stars snatch late draw in South Africa",
+        "outlets": [
+          "Citizen Digital",
+          "Daily Nation",
+          "The Eastleigh Voice"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "Kenya hold South Africa to 2-2 draw as Michael Olunga equals Harambee Stars’ all-time scoring record",
+          "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTm0tTmhDSFZ6QjVnVWlCQ3hxeVdNbzJFRTFqbXpIQVVMVEV0VWd5amtHSDNtbnZQZ1lGbThqek1JVk1DYzllX2VzcmZ5SWVBRWcwLTZ5QWlpTFJhT1NfMC14OU12bmRFMnUyT004VmZtM1NNOHhZQmxqQlVqSThKOGZhdWp5S3V4aTY5OTFNUTlaenFpcnNDN3JkM3JvSEJmRzBmN1lnUC01Z2JmVzNoX3AwR2xXRnJSMmNSdXpHZEVSZWZqeHhKV2xvdjIwWVVBY0o5al9TZk01UQ?oc=5",
+          "published": "2026-11-13"
+        },
+        {
+          "outlet": "Daily Nation",
+          "title": "Battling Kenya hold South Africa away in Johannesburg",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOLUgyd1hReXFmTFM5eFpyaUVkbWdja0xuQzBDSGR1MXBLUTJ4YWJWS0d4WkFaeUQzT0tReFZlUjBuWnZVSTVaQmhIODQzeHRBbUZEWloxV3p3ZTRJQzBFNVhhQjdxaWlhM3JBVGQ1QnpQaFlEYlVhbm90NlNaZWpJOUxYSEptckZjdzM3VmNNNENOTmFfcHR1S0xvNHZUXzM5YVpB?oc=5",
+          "published": "2026-11-13"
+        },
+        {
+          "outlet": "Citizen Digital",
+          "title": "Harambee Stars snatch late draw in South Africa",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUzRGdjZBTWd0VVRVNkxPVEpXY1NZdld2WnZfemlTdmxobVRwbWJlM29tZ1lULXBYU25NWWlaVzlnaEdFLWpwb05FSGhzQ21NS2RqUmwxVVlVbjl3Rl9QVzBySTdMM1NfRVZwaU40am9tVkd2dHRJRkxIOEs4MVJEamlWUVlrdzBzd1RoWHVrM28?oc=5",
+          "published": "2026-11-13"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 9,
+        "hold": 9,
+        "demand": 9,
+        "action": 6,
+        "fair": 9,
+        "impact": 7,
+        "human": 9,
+        "avg": 8.4,
+        "note": "Change the action beat from generic cheering to a concrete question about local football management or match broadcast access."
+      },
+      "drafted_at": "2026-11-13T23:51:08.379651+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1113b2340-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127800-traffic-disruption-bodaboda-block-ngong-road-near-talanta-stadium-after-accident",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1113b2340-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1113b2340-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Traffic Disruption as Protests Erupt Near Talanta Stadium"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "First Games at Talanta Stadium Complex Revealed"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Ruto Issues New Directive on Eldoret’s Kipchoge Keino Stadium"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1113b2340-broll.mp4",
+      "broll_credit": "Footage: ThomaLutfpv / Pixabay",
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1097,
+      "auto": true,
+      "decided_at": "2026-11-13T23:54:47.393729+03:00"
     }
   ],
   "scripts": {
-    "radio": "Mambo vipi, msikilizaji wa Kenya on Record. Hapa kuna dondoo za wiki hii ambazo zinatugusa moja kwa moja kwenye mifuko na haki zetu.\n\nKwanza kabisa, kwa wale waliokuwa wakiwinda fursa za nje, serikali ya Uingereza imetangaza nafasi ishirini na mbili za kazi za msimu kwa wafanyakazi wa kigeni. Lakini kumbuka, kabla hujatoa pesa kwa mawakala wa uongo, hakikisha njia ni halali.\n\nPili, ripoti mpya kutoka kwa Mkaguzi Mkuu wa Hesabu za Serikali imezua hofu baada ya kubaini kuwa hati za kumiliki ardhi kwa miradi mingi ya nyumba za bei nafuu hazionekani. Hili linatukumbusha kuwa uwekezaji wa serikali lazima ulindwe. Hatuwezi kujenga taifa juu ya misingi ya siri.\n\nNa kwenye michezo, mchambuzi maarufu wa soka Gary Neville amesema Mauricio Pochettino anahitaji udhibiti kamili wa usajili ili kufanikiwa. Soka la kisasa linahitaji uwajibikaji kutoka juu hadi chini—sawa na vile tunavyodai kutoka kwa viongozi wetu.\n\n*Kwa ufupi: Uingereza imetoa nafasi 22 za kazi za msimu, Mkaguzi Mkuu amefichua kukosekana kwa hati miliki katika miradi ya nyumba, na Gary Neville amesisitiza umuhimu wa kocha kudhibiti usajili wa wachezaji.*",
-    "voice_note": "Hujambo rafiki, hizi hapa habari kuu za wiki kutoka Kenya on Record.\n\nKwanza, Uingereza imetangaza nafasi ishirini na mbili za kazi za msimu kwa wageni. Kama unapanga kuomba, kuwa mwangalifu na matapeli wanaotumia fursa kama hizi.\n\nPili, habari inayosikitisha kutoka kwa Mkaguzi Mkuu: hati za ardhi za miradi ya nyumba hazionekani! Hii inamaanisha nini kwa pesa za walipa kodi?\n\nNa mwisho, kwenye soka, Gary Neville anasema Pochettino anahitaji nguvu kamili kwenye usajili ili timu ishinde.\n\nTafadhali sambaza ujumbe huu kwa marafiki zako ili tuendelee kuwa macho.",
-    "sms": "USIIBIWE: Miradi ya nyumba ya serikali inakabiliwa na utata wa hati miliki zilizopotea. Linda pesa za umma kwa kuuliza maswali. Usinyamaze!",
-    "reels": "Hati miliki za miradi ya nyumba ya serikali zimepotea? Hivyo ndivyo ripoti mpya ya Mkaguzi Mkuu inavyofichua! Wakati wananchi wanatafuta nyumba za bei nafuu, maswali mazito yanasalia kuhusu usalama wa ardhi hiyo. Usiache serikali ikuchezee. Fuatilia Kenya on Record ujue ukweli wote."
+    "radio": "Sasa, na karibu kwenye Kenya on Record. Mimi ni wako, na leo tunasonga na matokeo ya mpira ambayo yametuacha tukisimama wima kwa fahari.\n\nWiki iliyopita, uwanjani ulikuwa moto. Harambee Stars walitoka sare ya mabao mawili kwa mawili dhidi ya South Africa, timu ambayo tunajua ni ngumu sana kuipiga nyumbani kwao ama hata ugenini. Lakini vijana wetu walionyesha moyo wa simba. Hawakutetemeka.\n\nNa habari kubwa zaidi pale uwanjani ilikuwa nahodha wetu, Michael Olunga. Kile kibao cha mabao yote ya kihistoria pale timu ya taifa kilifikishwa rasmi. Olunga alitingisha nyavu mara nyingine tena na kusawazisha rekodi ya muda wote ya ufungaji mabao pale Harambee Stars. Huyu ni mchezaji ambaye ametoka mbali, na sasa jina lake limeandikwa kwa herufi za dhahabu kwenye vitabu vya historia ya soka letu.\n\nHii inatuonyesha nini? Inaonyesha wazi kwamba vipaji vya Kenya viko juu, na tukijipanga kama nchi, tunaweza kufika mbali sana. Sio tu kwenye soka, bali hata katika uwajibikaji na uongozi wetu wa kila siku. Tukumbuke kushangilia mafanikio yetu na kuendelea kusukuma mbele.\n\n[Kiswahili Summary]\nLeo kwenye Kenya on Record, tunasherehekea Harambee Stars kwa kutoka sare ya 2-2 na South Africa, huku nahodha Michael Olunga akisawazisha rekodi ya kuwa mfungaji bora wa muda wote wa timu ya taifa. Huu ni ushahidi mkubwa wa uwezo wa wachezaji wetu na fahari kwa taifa letu.",
+    "voice_note": "Wadau, habari za wiki hii? Hapa ni Kenya on Record. Soka letu limetupa sababu ya kutembeaifuna kifua wiki hii. Harambee Stars walitoka draw ya magoli mawili kwa mawili ugenini dhidi ya South Africa. Mechi ilikuwa ngumu, lakini vijana wetu hawakuangusha bendera. Na zaidi ya hayo, nahodha wetu Michael Olunga alifanya mambo makubwa kwa kusawazisha ile rekodi ya muda wote ya mabao pale timu ya taifa. Hii ni historia kubwa sana wadau. Endelea kufuatilia Kenya on Record tujue ukweli na tuwajibishe viongozi wetu. Wewe uliona aje hii mechi? Drop maoni yako hapa.",
+    "sms": "Kenya on Record: Hongera kwa Harambee Stars kwa kutoka sare ya 2-2 na South Africa, na Michael Olunga kwa kusawazisha rekodi ya ufungaji ya muda wote!",
+    "reels": "[Visual: Action-packed montage of Harambee Stars players celebrating, transitioning to a close-up graphic of Michael Olunga celebrating a goal with the Kenyan flag in the background.]\n\n[Voice-over, measured, grown-up, confident tone]:\nHivi ndivyo historia inavyoandikwa.\n\nHarambee Stars hawakutishia tu; walisimama kidete na kutoka sare ya mbili kwa mbili ugenini dhidi ya South Africa.\n\nNa pale mstari wa mbele, nahodha Michael Olunga aliendelea kuthibitisha kwanini yeye ni kinara, akisawazisha rekodi ya muda wote ya ufungaji mabao ya timu ya taifa.\n\nHuu ni ushahidi kwamba jitihada, nidhamu na moyo wa kujitolea zinaleta matokeo.\n\nTunaendelea kufuatilia na kuweka rekodi sawa. Hii ni Kenya on Record."
   },
   "spend_usd": 0.0
 }
