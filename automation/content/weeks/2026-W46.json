@@ -359,7 +359,7 @@
         "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOa0pvWEhpbkF6UmFJbzNrWVZJSUNDOWF2dEJlY3V4eEFySk8wSU9KSWkwTUw5QkRRQU1Ib0h3a1NkSUJabXF0bmxQMVhQUVdqcHJ4b29TMW5ZV2I1VWpCT3B3dkZibWtURVB1NzM3bXpHeF95ZjBmczJ4elJCbFRHVTVvSHVnc1dISVlxNnBhbjlFTEtXZzNvZWRiLWo4NE9INW5CM3lpM05KZw?oc=5",
         "published": "2026-11-08"
       },
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -401,7 +401,14 @@
       "auto": true,
       "decided_at": "2026-11-09T09:45:49.139412+03:00",
       "photo_checked": "2026-11-09T11:24:07.195624+03:00",
-      "fresh_checked": "2026-11-12T13:00:35.232795+03:00"
+      "fresh_checked": "2026-11-12T13:00:35.232795+03:00",
+      "published_at": "2026-11-13T17:02:28.492041+03:00",
+      "ig_id": "18138129190567096",
+      "fb_id": "1156499510655909",
+      "story_id": "18090688514701385",
+      "fb_story_id": "2283043735600553",
+      "yt_id": "6wcuMA4PA6U",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w46-d6-kenya",
@@ -1790,7 +1797,7 @@
           "published": "2026-11-13"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1919,7 +1926,8 @@
       "reel": true,
       "tg_msg": 1079,
       "auto": true,
-      "decided_at": "2026-11-13T16:57:19.611644+03:00"
+      "decided_at": "2026-11-13T16:57:19.611644+03:00",
+      "photo_checked": "2026-11-13T17:01:23.274414+03:00"
     },
     {
       "id": "2026-w46-hot-1113b1626",
