@@ -1763,6 +1763,16 @@
       "status": "planned",
       "hot": true,
       "beat": "life"
+    },
+    {
+      "id": "2026-w46-hot-1113m",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-13T18:31:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "beat": "life"
     }
   ],
   "scripts": {
