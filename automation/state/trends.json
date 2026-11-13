@@ -1,229 +1,138 @@
 {
-  "fetched": "2026-11-13T14:13:45.966149+00:00",
+  "fetched": "2026-11-13T17:19:51.543197+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "microsoft",
-      "traffic": "10000+",
-      "news": [
-        {
-          "title": "Microsoft reports ‘encouraging recovery progress’ in global outage that has impacted millions",
-          "url": "https://www.cnn.com/2026/11/12/business/live-news/microsoft-global-outage-intl-hnk",
-          "source": "CNN"
-        },
-        {
-          "title": "Is Outlook down? Widespread outage hits Microsoft email and other apps",
-          "url": "https://apnews.com/article/microsoft-outlook-outage-email-teams-6376045281feb430c0b923e3a4b251c2",
-          "source": "AP News"
-        },
-        {
-          "title": "Microsoft rules out 'malicious activity' as cause for global outage",
-          "url": "https://www.dw.com/en/microsoft-rules-out-malicious-activity-as-cause-for-global-outage/a-79935611",
-          "source": "DW.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "salary",
+      "title": "machakos students barred kcse papers",
       "traffic": "500+",
       "news": [
         {
-          "title": "Ruto takes on Gachagua over payslip debate as he defends Sh32,000 PAYE proposal",
-          "url": "https://www.the-star.co.ke/news/2026-11-12-ruto-takes-on-gachagua-defends-sh32000-paye-proposal",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Ruto Breaks Down How Much Teachers Will Gain Under New PAYE Plan",
-          "url": "https://www.kenyans.co.ke/news/129330-ruto-explains-how-proposed-paye-reforms-will-change-teachers-salaries",
+          "title": "12 KCSE Candidates Barred From Sitting Remaining Papers",
+          "url": "https://www.kenyans.co.ke/news/129358-12-kcse-candidates-barred-sitting-remaining-papers",
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "How Tax Relief Will Be A Major Topic in 2027 Elections",
-          "url": "https://kenyanwallstreet.com/how-tax-relief-will-be-a-major-topic-in-2027-elections",
-          "source": "The Kenyan Wallstreet"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "armed forces",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Somalia: US confirms troop exit from Baledogle airfield over runway repair costs",
-          "url": "https://www.somaliguardian.com/news/somalia-news/somalia-us-confirms-troop-exit-baledogle-airfield-runway-costs/",
-          "source": "Somali Guardian"
+          "title": "12 KCSE Candidates Reportedly Barred From Remaining Papers Over Mobile Phones",
+          "url": "https://www.livenowafrica.com/education/article/12-kcse-candidates-reportedly-barred-from-remaining-papers-over-mobile-phones",
+          "source": "Livenow Africa"
         },
         {
-          "title": "As Israel advances embassy plans in a breakaway nation despite warnings from China and other global powers, the US reveals why it left a key airbase in Somalia after 14 years",
-          "url": "https://africa.businessinsider.com/local/markets/as-israel-advances-embassy-plans-in-a-breakaway-nation-despite-warnings-from-china/dmkm6vb",
-          "source": "Business Insider Africa"
-        },
-        {
-          "title": "Maraykanka oo ku dhawaaqay inuu ka guurey garoonka Ballidoogle.",
-          "url": "https://horseedmedia.net/maraykanka-oo-ku-dhawaaqay-inuu-ka-guurey-garoonka-ballidoogle/427411/",
-          "source": "Horseed Media"
+          "title": "Shock For 12 KCSE Students As Their Exam Dream Is Cut Short",
+          "url": "https://thekenyatimes.com/education/shock-for-12-kcse-students-as-their-exam-dream-is-cut-short/",
+          "source": "The Kenya Times"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "zambia vs burundi",
+      "title": "saudi arabia vs republic of korea",
       "traffic": "200+",
       "news": [
         {
-          "title": "Zambia vs Burundi: Africa Cup of Nations Qualification stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cmn9r00z9q38t",
+          "title": "Saudi Arabia vs South Korea: Friendlies stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cwvgr22k5l4nt",
           "source": "BBC"
         },
         {
-          "title": "Kennedy Musonda, Liteta facing late fitness test",
-          "url": "https://zambianfootball.co.zm/kennedy-musonda-liteta-facing-late-fitness-test/",
-          "source": "ZamFoot"
+          "title": "Saudi Arabia vs. South Korea Lineups, Live Streaming, How & Where to Watch on TV",
+          "url": "https://sports.yahoo.com/articles/saudi-arabia-vs-south-korea-131500696.html",
+          "source": "Yahoo Sports"
         },
         {
-          "title": "AFCON 2027: Zambia President Hakainde Hichilema purchases all tickets for Burundi qualifier",
-          "url": "https://en.africatopsports.com/afcon-2027-zambia-president-hakainde-hichilema-purchases-all-tickets-or-burundi-fixture/",
-          "source": "Africa Top Sports"
+          "title": "South Korea Concedes Opening Goal in Saudi Arabia Friendly",
+          "url": "https://www.chosun.com/english/sports-en/2026/11/14/D7WCVNYFQ5EHLMDBH25OZB446A/",
+          "source": "조선일보"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
-      "title": "kenya vs south africa",
+      "title": "tunisia vs libya",
       "traffic": "200+",
       "news": [
         {
-          "title": "South Africa vs. Kenya - Kick-off time, team news, how to watch Bafana's AFCON qualifier",
-          "url": "https://africa.espn.com/espn/story/_/id/50469313/south-africa-kenya-kick-team-news-how-watch-bafana-afcon-qualifier",
-          "source": "ESPN"
+          "title": "Tunisia vs Libya: Africa Cup of Nations Qualification stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cwx28ee4ygnlt",
+          "source": "BBC"
         },
         {
-          "title": "Divided loyalties: McCarthy faces home nation as Harambee Stars eye historic victory",
-          "url": "https://nation.africa/kenya/sports/football/divided-loyalties-mccarthy-faces-home-nation-as-harambee-stars-eye-historic-victory-5667508",
+          "title": "Preview: Tunisia vs Libya - prediction, team news, lineups",
+          "url": "https://www.sportsmole.co.uk/football/tunisia/africa-cup-of-nations/preview/tunisia-vs-libya-prediction-team-news-lineups_608918.html",
+          "source": "Sports Mole"
+        },
+        {
+          "title": "Tunisia vs Libya Preview: AFCON Qualifying Prediction",
+          "url": "https://www.football.com/gh/news/148702",
+          "source": "Football.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "qatar vs australia",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Qatar vs Australia: Friendlies stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmrlygg4rkkgt",
+          "source": "BBC"
+        },
+        {
+          "title": "Preview: Qatar vs Australia - prediction, team news, lineups",
+          "url": "https://www.sportsmole.co.uk/football/qatar/preview/qatar-vs-australia-prediction-team-news-lineups_608940.html",
+          "source": "Sports Mole"
+        },
+        {
+          "title": "Three mistakes, three goals as Socceroos show ruthless streak in Qatar",
+          "url": "https://football360.com.au/socceroos-qatar-mcgree-yengi-irankunda-goals-first-half/",
+          "source": "football360.com.au"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "arsenal legends vs harambee stars",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Harambee Stars Legends Name Squad for Arsenal Legends Showdown",
+          "url": "https://www.kenyanvibe.com/harambee-stars-legends-name-squad-for-arsenal-legends-showdown/",
+          "source": "KenyanVibe"
+        },
+        {
+          "title": "Legends Cup: Kanu to lead Arsenal against Wanyama’s Harambee Stars on Friday",
+          "url": "https://nation.africa/kenya/sports/football/legends-cup-kanu-to-lead-arsenal-against-wanyama-s-harambee-stars-on-friday-5664560",
           "source": "Daily Nation"
         },
         {
-          "title": "Harambee Stars hoping to end winless run against South Africa",
-          "url": "https://www.standardmedia.co.ke/sports/article/2001562186/harambee-stars-hoping-to-end-winless-run-against-south-africa",
-          "source": "www.standardmedia.co.ke"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "william ruto",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Ruto woos teachers with goodies at school heads’ conference",
-          "url": "https://nation.africa/kenya/news/education/ruto-woos-teachers-with-goodies-at-school-heads-conference-5669098",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Ruto announces Sh4bn for teachers’ career progression, 50k promotions",
-          "url": "https://www.the-star.co.ke/news/2026-11-12-ruto-announces-sh4bn-for-teachers-career-progression",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Ruto orders Education Ministry to review school capitation by January",
-          "url": "https://citizen.digital/article/ruto-orders-education-ministry-to-review-school-capitation-by-january-n393802",
-          "source": "Citizen Digital"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mozambique vs ethiopia",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Mozambique vs Ethiopia LIVE: Kickoff Time and How to Watch",
-          "url": "https://www.beinsports.com/en-us/soccer/africa-cup-of-nations-qualification/articles/how-and-where-to-watch-mozambique-vs-ethiopia-live-on-bein-sports-2026-11-12",
-          "source": "beIN SPORTS"
-        },
-        {
-          "title": "Mozambique v Ethiopia: 2027 AFCON qualifiers · SNA",
-          "url": "https://sportnewsafrica.com/en/alerts/mozambique-to-host-ethiopia-in-maputo-in-2027-afcon-qualifying/",
-          "source": "Sport News Africa"
-        },
-        {
-          "title": "Mozambique vs Ethiopia LIVE, Latest Score, Goals and Africa Cup of Nations Qualifiers Updates (0-0)",
-          "url": "https://www.vavel.com/en-us/soccer/2026/11/13/1279011-mozambique-vs-ethiopia-live-latest-score-goals-and-africa-cup-of-nations-qualifiers-updates.html",
-          "source": "VAVEL.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "humanitarian aid",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Save the Children Sounds Alarm Over Deepening Humanitarian Crisis in Turkana",
-          "url": "https://citizen.digital/article/save-the-children-sounds-alarm-over-deepening-humanitarian-crisis-in-turkana-n393863",
-          "source": "Citizen Digital"
-        },
-        {
-          "title": "500 children fleeing conflict arrive in Kakuma weekly as refugee crisis deepens",
-          "url": "https://peopledaily.digital/news/500-children-fleeing-conflict-arrive-in-kakuma-weekly-as-refugee-crisis-deepens",
-          "source": "People Daily"
-        },
-        {
-          "title": "Save the Children warns of worsening humanitarian crisis for children in Kenya",
-          "url": "https://educationnews.co.ke/news/save-the-children-warns-of-worsening-humanitarian-crisis-for-children-in-kenya",
-          "source": "Education News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "samsung galaxy s27 ultra",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Samsung Galaxy S27 Ultra vs Galaxy S24 Ultra: Main differences to expect",
-          "url": "https://www.phonearena.com/reviews/samsung-galaxy-s27-ultra-vs-s24-ultra_id8087",
-          "source": "PhoneArena"
-        },
-        {
-          "title": "Exclusive: Here Are the Galaxy S27 Wallpapers, and You Can Download Them",
-          "url": "https://sammyguru.com/samsung-galaxy-s27-wallpapers/",
-          "source": "SammyGuru"
-        },
-        {
-          "title": "Samsung Plans to Allocate Over 70% of Galaxy S27 Production to Pro and Ultra Models — ETNews",
-          "url": "https://mezha.ua/en/news/samsung-zoseredit-70-virobnictva-galaxy-s27-na-modelyah-pro-i-ultra-317040/",
-          "source": "Mezha"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "friday the 13th",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Superstitions On Friday The 13th: Why Paraguay Fears Tuesday More Than Friday",
-          "url": "https://asunciontimes.com/paraguay101/superstitions-on-friday-the-13th-why-paraguay-fears-tuesday-more-than-friday/",
-          "source": "The Asunción Times"
-        },
-        {
-          "title": "Friday the 13th, luck, bad luck, good luck generic, superstition",
-          "url": "https://www.crossroadstoday.com/news/shareable-stories/friday-the-13th-luck-bad-luck-good-luck-generic-superstition/image_4d970678-23e0-5df8-b972-646d9d79fe2d.html",
-          "source": "crossroadstoday.com"
-        },
-        {
-          "title": "‘It’s Friday, We’re in Love’: 35 Weekend Memes to Say Goodbye to the Workweek (November 13, 2026)",
-          "url": "https://www.yahoo.com/lifestyle/articles/friday-love-35-weekend-memes-130000332.html",
-          "source": "Yahoo"
+          "title": "Arsenal-Harambee Stars Legends match in limbo as only one ex-player reportedly arrives",
+          "url": "https://www.pulse.co.ke/story/possible-cancellation-for-arsenal-vs-harambee-stars-legends-match-2026111308250633042",
+          "source": "Pulse Kenya"
         }
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "mikel arteta",
+      "why": "unsafe: 'scandal'"
+    },
+    {
+      "title": "moldova vs kazakhstan",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "gabon vs lesotho",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "burkina faso vs mauritania",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "netherlands vs greece",
+      "why": "unsafe: 'Odds'"
+    }
+  ],
   "errors": {}
 }
