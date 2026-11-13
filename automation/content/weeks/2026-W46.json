@@ -1752,6 +1752,16 @@
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1060
+    },
+    {
+      "id": "2026-w46-hot-1113",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-13T12:45:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "beat": "life"
     }
   ],
   "scripts": {
