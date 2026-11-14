@@ -1,41 +1,41 @@
 {
-  "fetched": "2026-11-14T13:13:11.463920+00:00",
+  "fetched": "2026-11-14T15:58:27.839254+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "japan vs brazil",
-      "traffic": "10000+",
+      "title": "chelsea vs man city",
+      "traffic": "5000+",
       "news": [
         {
-          "title": "Japan vs Brazil: Friendlies stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cv5yny98z474t",
+          "title": "Chelsea 1-0 Manchester City: Blues beat WSL champions after keeper Ayaka Yamashita sent off",
+          "url": "https://www.bbc.com/sport/football/live/cmg474nywwr5t",
           "source": "BBC"
         },
         {
-          "title": "Japan vs Brazil: The tactics board - Samurai Blue's transition mastery overcomes Vinicius Junior's individual brilliance",
-          "url": "https://www.goal.com/en-ke/news/japan-brazil-the-tactics-board-samurai-blue-vinicius-junior/blt8d0100c4e023d4cd",
-          "source": "Goal.com"
+          "title": "Chelsea 1-0 Manchester City: Women’s Super League – live",
+          "url": "https://www.theguardian.com/football/live/2026/nov/14/chelsea-v-man-city-womens-super-league-live",
+          "source": "The Guardian"
         },
         {
-          "title": "~!!@[بث مباشر] القنوات الناقلة لمباراة البرازيل واليابان اليوم في خليجي 27",
-          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vZ3VkcGFrYS5naXRodWIuaW8vbm9zdG8vdHh6LnhtbCIvPjwva3JwYW5vPg==&id=video-japan-vs-brazil-match-liv-today-hdtv-en-sa-06",
-          "source": "日本取引所グループ"
+          "title": "Do Chelsea go into this weekend's top-of-the-table WSL clash with Manchester City as underdogs?",
+          "url": "https://www.skysports.com/football/news/13611487/do-chelsea-go-into-this-weekends-top-of-the-table-wsl-clash-with-manchester-city-as-underdogs",
+          "source": "Sky Sports"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "man utd vs crystal palace",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Manchester United vs Crystal Palace: Women's Super League stats & head-to-head",
+          "title": "WSL: Man Utd 2-0 Crystal Palace - Maya le Tissier & Elisabeth Terland secure win",
           "url": "https://www.bbc.com/sport/football/live/crx2325xjjplt",
           "source": "BBC"
         },
         {
-          "title": "Women's Super League LIVE! Chelsea vs Man City and Man Utd vs Crystal Palace match updates, news and score",
-          "url": "https://www.skysports.com/football/live-blog/13612149/womens-super-league-live-chelsea-vs-man-city-and-man-utd-vs-crystal-palace-match-updates-news-and-score",
+          "title": "Man Utd 2-0 Crystal Palace: Maya Le Tissier's fine strike helps United to dominant victory",
+          "url": "https://www.skysports.com/football/news/13612167/man-utd-2-0-crystal-palace-maya-le-tissiers-fine-strike-helps-united-to-dominant-victory",
           "source": "Sky Sports"
         },
         {
@@ -47,128 +47,181 @@
     },
     {
       "geo": "KE",
-      "title": "kidderminster vs halifax",
-      "traffic": "200+",
+      "title": "fuel",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Saturday: Harriers v FC Halifax",
-          "url": "https://harriers.co.uk/news/2026/11/13/saturday-harriers-v-fc-halifax",
-          "source": "Kidderminster Harriers"
+          "title": "Fuel prices remain unchanged as State spends Sh4.6bn to cushion motorists",
+          "url": "https://www.the-star.co.ke/news/2026-11-14-fuel-prices-remain-unchanged-in-latest-epra-review",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "This is our predicted FC Halifax Town XI for Saturday's game at Kidderminster Harriers",
-          "url": "https://www.halifaxcourier.co.uk/sport/football/this-is-our-predicted-fc-halifax-town-xi-for-saturdays-game-at-kidderminster-harriers-9346136",
-          "source": "Halifax Courier"
+          "title": "EPRA Announces November-December Fuel Prices",
+          "url": "https://www.kenyans.co.ke/news/129383-epra-maintains-fuel-prices-unchanged-super-petrol-retail-ksh22696",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Kidderminster v FC Halifax: Boss picks time to talk 'Kiddy' with son",
-          "url": "https://www.yorkshirepost.co.uk/sport/football/kidderminster-harriers-v-fc-halifax-boss-picks-time-to-talk-kiddy-with-son-and-doncaster-rovers-defender-9350224",
-          "source": "Yorkshire Post"
+          "title": "EPRA announces new fuel prices: How gov't cushioned Kenyans from record-high prices",
+          "url": "https://www.pulse.co.ke/story/epra-announces-new-fuel-prices-how-govt-cushioned-kenyans-from-record-high-prices-2026111412244920339",
+          "source": "Pulse Kenya"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "vinícius júnior",
-      "traffic": "100+",
+      "title": "wales vs new zealand",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Raphinha é substituído, reclama da arbitragem e sai expulso com Ancelotti",
-          "url": "https://tmc.com.br/esporte/raphinha-e-substituido-reclama-da-arbitragem-e-sai-expulso-com-ancelotti/",
-          "source": "tmc.com.br"
-        },
-        {
-          "title": "SELEÇÃO BRASILEIRA DIFÍCIL DE TORCER! MAIS UMA DERROTA E O TRABALHO DE ANCELOTTI AINDA MAIS CONTESTADO! MAIS UMA DERROTA PRO JAPÃO!",
-          "url": "https://www.instagram.com/reel/DfuMREORDvk/",
-          "source": "Instagram"
-        },
-        {
-          "title": "A noite do colapso e do caos: Vinícius brilha e Ancelotti cai na armadilha do Japão",
-          "url": "https://www.goal.com/br/not%C3%ADcias/a-noite-do-colapso-e-do-caos-vinicius-brilha-e-ancelotti-cai-na-armadilha-do-japao/blt5add2c5f458a74f7",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "real sociedad vs sporting gijon",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Un triunfo del que apenas queda rastro",
-          "url": "https://as.com/futbol/segunda/un-triunfo-del-que-apenas-queda-rastro-f202611-n/",
-          "source": "Diario AS"
-        },
-        {
-          "title": "Real Sociedad B - Sporting de Gijón: horario, dónde ver en TV y canal del partido de LaLiga Hypermotion",
-          "url": "https://www.marca.com/futbol/segunda-division/2026/11/14/real-sociedad-b-sporting-gijon-horario-donde-ver-tv-canal-partido-laliga-hypermotion.html",
-          "source": "MARCA"
-        },
-        {
-          "title": "El Sanse busca consolidarse en casa",
-          "url": "https://www.mundodeportivo.com/futbol/real-sociedad-b/20261114/1004250725/sanse-busca-consolidarse-casa.html",
-          "source": "Mundo Deportivo"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "norway vs wales",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Nations League: Wales out to derail Norway's repair job in Oslo",
-          "url": "https://www.bbc.com/sport/football/articles/ck9871qr76gmo",
+          "title": "Wales vs New Zealand LIVE: Nations Championship 2026 - Build-up, team news, scores & live text updates",
+          "url": "https://www.bbc.com/sport/rugby-union/live/cwj3405g10jyt",
           "source": "BBC"
         },
         {
-          "title": "Saturday’s football tips: Nusa 2/1 for an assist as Norway seek revenge against Wales",
-          "url": "https://mrfixitstips.co.uk/saturdays-football-tips-nusa-2-1-for-an-assist-as-norway-seek-revenge-against-wales/",
-          "source": "MrFixitsTips"
+          "title": "‘Huge competition’: Blackadder to make most of All Blacks opportunity",
+          "url": "https://sportnation.nz/article/huge-competition-blackadder-to-make-most-of-all-blacks-opportunity",
+          "source": "Sport Nation"
         },
         {
-          "title": "'Don't let him dictate!' - Wales boss Craig Bellamy reveals tactical blueprint to stop Man City star Erling Haaland again as he warns Norway will be out for 'revenge' in Nations League clash",
-          "url": "https://www.goal.com/en-ke/news/craig-bellamy-wales-plan-stop-erling-haaland-norway-nations-league/blt22e785edf01ce7c2",
-          "source": "Goal.com"
+          "title": "Perform or else: The unspoken message for Richie Mo’unga and others in All Blacks team against Wales",
+          "url": "https://www.thepost.co.nz/sport/361117365/perform-or-else-unspoken-message-richie-mounga-and-others-all-blacks-team-against-wales",
+          "source": "Stuff.co.nz"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "riccardo calafiori",
+      "title": "kosovo vs israel",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Kosovo vs Israel: UEFA Nations League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmwy7yx5ddelt",
+          "source": "BBC"
+        },
+        {
+          "title": "Kosovo vs Israel: Where to Watch, TV Channel, Live Stream & Kick-Off Time | UEFA Nations League B",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-kosovo-v-israel/blt05f65dcc34c35228",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Kosovo vs Israel Confirmed Lineups",
+          "url": "https://www.whoscored.com/news/jv1eyCR0DUe5gLoWq2bvog/show/cng112-20261114-kosovo-vs-israel-confirmed-lineup-1794661633",
+          "source": "WhoScored.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "tottenham vs everton",
       "traffic": "100+",
       "news": [
         {
-          "title": "Ranking Fifa, l'Italia cresce: la classifica aggiornata dopo la vittoria sulla Francia",
-          "url": "https://www.corrieredellosport.it/foto/calcio/italia/2026/11/13-152561088/ranking_fifa_l_italia_cresce_la_classifica_aggiornata_dopo_la_vittoria_sulla_francia",
-          "source": "Corriere dello Sport"
+          "title": "Everton look to extend their unbeaten run against Spurs",
+          "url": "https://www.vavel.com/en/football/2026/11/14/womens-football/1279251-everton-look-to-extend-their-unbeaten-run-to-five-as-they-face-spurs-in-the-wsl.html",
+          "source": "VAVEL.com"
         },
         {
-          "title": "Rassegna: Nations, le gare di oggi. Occhi puntati su Olanda-Grecia. Basket, le prime parole di Lajae Jones",
-          "url": "https://www.art-news.it/rassegna-nations-le-gare-di-oggi-occhi-puntati-su-olanda-grecia-basket-le-prime-parole-di-lajae-jones/",
-          "source": "ART News - Agenzia Stampa"
+          "title": "Tottenham vs Everton: WSL preview, predictions, team news and TV info",
+          "url": "https://www.livescore.com/en/news/football/premier-league/tottenham-vs-everton-wsl-preview-predictions-team-news-and-tv-info-hotspur-hq/",
+          "source": "LiveScore"
         },
         {
-          "title": "『DIRETTA STREAMING』 Francia Italia Live in Diretta gratis streaming",
-          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vdHJhdmlzLWF1c3Rpbi5naXRodWIuaW8vZW5tL2VudS54bWwiLz48L2tycGFubz4=&id=video-francia-italia-lie-en-eoilgdh",
+          "title": "Phelan's Momentum Ahead of Spurs Test",
+          "url": "https://www.evertonfc.com/news/2026/november/12/phelan--/",
+          "source": "Everton FC"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "palestine vs iran",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Palestine vs Iran: Friendlies stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmwyqylw0xv8t",
+          "source": "BBC"
+        },
+        {
+          "title": "+@((!YOUTUBE TV!)) Palestine vs Iran Live Free",
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Ii9cL3Jra2hhbjAwNy5naXRodWIuaW8vbWovYWMvaG8vZHJlLnhtbCIvPjwva3JwYW5vPg&id=youtube-tv-palestine-vs-iran-live-free-114",
           "source": "日本取引所グループ"
+        },
+        {
+          "title": "Palestinian Territory - Iran prediction & picks 14.11.2026",
+          "url": "https://www.transfermarkt.us/online-betting/picks/palestinian-territory-vs-iran-picks-14-11-2026/",
+          "source": "www.transfermarkt.us"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "uganda vs botswana",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Sports: Cranes seek to make Hoima a fortress against Botswan",
+          "url": "https://www.newvision.co.ug/category/sports/cranes-seek-to-make-hoima-a-fortress-against-NV_244150_112026",
+          "source": "NewVision.co.ug"
+        },
+        {
+          "title": "[Télévision gratuite] Ouganda – Botswana Coupe d'Afrique LIVE ON TV",
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vbW9oaWR1bDA5LmdpdGh1Yi5pby9tb2gvZ2ZmLnhtbCIvPjwva3JwYW5vPg==&id=video-ouganda-botswana-coupe-d-afrique-liv-str-vfrpkgs",
+          "source": "日本取引所グループ"
+        },
+        {
+          "title": "DAℤℕ-TV RUGBY LIVE: Botswana vs Uganda Africa Cup of Nations live 𝒮𝓉𝓇𝑒𝒶𝓂𝓈*{FRee}",
+          "url": "https://www.jpx.co.jp/learning/tour/virtual-tour/index.html?&xml=data:video/mp4;base64,PGtycGFubz48aW5jbHVkZSB1cmw9Imh0dHBzOi8vbW9oaWR1bDA5LmdpdGh1Yi5pby9tb2gvZ2ZmLnhtbCIvPjwva3JwYW5vPg==&id=video-botswana-vs-uganda-africa-cup-of-nations-match-lie-doletcn",
+          "source": "日本取引所グループ"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ukraine",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "US has floated Ukraine ceding Donbas for Nato membership, Zelensky says",
+          "url": "https://www.bbc.com/news/articles/cwvg2l312ylqo",
+          "source": "BBC"
+        },
+        {
+          "title": "US floated idea of Ukraine swapping land for NATO membership, Zelensky says",
+          "url": "https://www.cnn.com/2026/11/14/europe/us-ukraine-zelensky-nato-intl",
+          "source": "CNN"
+        },
+        {
+          "title": "Zelensky warns of Moscow seeking to redraw 'influence' in Europe",
+          "url": "https://www.afp.com/en/zelensky-warns-moscow-seeking-redraw-influence-europe",
+          "source": "AFP.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "netherlands national football team",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Netherlands 7-0 Greece: Reijnders scores hat-trick in Dutch rout",
+          "url": "https://www.bbc.com/sport/football/live/cmqjn559ld2jt",
+          "source": "BBC"
+        },
+        {
+          "title": "Reijnders hat-trick fuels Dutch rout of Greece in Nations League",
+          "url": "https://supersport.com/football/news/595b5e34-bf63-4174-a971-63862cef79d9/reijnders-hat-trick-fuels-dutch-rout-of-greece-in-nations-league",
+          "source": "SuperSport"
+        },
+        {
+          "title": "'This is the way': Xavi lauds Netherlands after tying record Nations League win",
+          "url": "https://www.espn.com/soccer/story/_/id/50475345/netherlands-vs-greece-nations-league-record-xavi",
+          "source": "ESPN"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "edwin sifuna",
-      "why": "unsafe: 'burial'"
-    },
-    {
-      "title": "wigan vs barnsley",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "bristol rovers vs chesterfield fc",
-      "why": "unsafe: 'Betting'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
