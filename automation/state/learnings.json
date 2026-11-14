@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T14:30:40.866432+03:00",
+  "updated": "2026-11-14T13:54:20.582326+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -18,9 +18,9 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.4,
+      "score": 26.2,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 41,
+      "reach": 43,
       "saved": 0,
       "shares": 2,
       "comments": 0,
@@ -59,35 +59,22 @@
       "lane": "everyone",
       "score": 9.4,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 126,
+      "reach": 127,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.1
+      "avg_watch_s": 4.2
     }
   ],
   "bottom": [
-    {
-      "id": "2026-w45-hot-1108-r4",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 36,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 8.0
-    },
     {
       "id": "2026-w46-hot-1110e",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
       "opening": "The National Treasury hides a secret IMF graft report.",
-      "reach": 21,
+      "reach": 22,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -100,12 +87,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya discharged its last Ebola patient this week.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.1
+    },
+    {
+      "id": "2026-w46-hot-1112m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "President Ruto ordered a full review of school capitation today.",
       "reach": 13,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.3
+      "avg_watch_s": 10.6
     }
   ],
   "all": [
@@ -126,9 +126,9 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.4,
+      "score": 26.2,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 41,
+      "reach": 43,
       "saved": 0,
       "shares": 2,
       "comments": 0,
@@ -167,12 +167,12 @@
       "lane": "everyone",
       "score": 9.4,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 126,
+      "reach": 127,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.1
+      "avg_watch_s": 4.2
     },
     {
       "id": "2026-w44-hot-1026b1432",
@@ -193,7 +193,7 @@
       "lane": "everyone",
       "score": 9.3,
       "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
-      "reach": 23,
+      "reach": 24,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -217,14 +217,14 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "lane": "everyone",
-      "score": 8.7,
+      "score": 8.6,
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "reach": 46,
+      "reach": 47,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 3,
-      "avg_watch_s": 6.6
+      "avg_watch_s": 6.5
     },
     {
       "id": "2026-w43-hot-1024m",
@@ -258,12 +258,12 @@
       "lane": "everyone",
       "score": 6.4,
       "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
-      "reach": 12,
+      "reach": 13,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 9.6
+      "avg_watch_s": 9.1
     },
     {
       "id": "2026-w46-hot-1110",
@@ -310,7 +310,7 @@
       "lane": "everyone",
       "score": 5.2,
       "opening": "Counterfeit alcohol wiped out Sh7.6bn in KRA excise revenue.",
-      "reach": 82,
+      "reach": 84,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -466,12 +466,12 @@
       "lane": "everyone",
       "score": 3.1,
       "opening": "Employers must remit employee levies by the 9th day of each month.",
-      "reach": 20,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.0
+      "avg_watch_s": 3.8
     },
     {
       "id": "2026-w46-hot-1109",
@@ -479,12 +479,12 @@
       "lane": "everyone",
       "score": 3.1,
       "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
-      "reach": 24,
+      "reach": 25,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 7.0
+      "avg_watch_s": 6.7
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -505,7 +505,7 @@
       "lane": "everyone",
       "score": 3.0,
       "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
-      "reach": 28,
+      "reach": 29,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -531,12 +531,12 @@
       "lane": "hustle",
       "score": 3.0,
       "opening": "EPRA reviews fuel prices on November 14.",
-      "reach": 30,
+      "reach": 31,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.4
+      "avg_watch_s": 5.3
     },
     {
       "id": "2026-w45-hot-1103m",
@@ -544,20 +544,20 @@
       "lane": "everyone",
       "score": 2.9,
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "reach": 47,
+      "reach": 48,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 8.6
+      "avg_watch_s": 8.4
     },
     {
       "id": "2026-w45-hot-1108b2133",
       "series": "sauti",
       "lane": "everyone",
-      "score": 2.9,
+      "score": 2.8,
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "reach": 50,
+      "reach": 54,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -583,12 +583,12 @@
       "lane": "everyone",
       "score": 2.7,
       "opening": "Lamu Port opened its first berth in May 2021.",
-      "reach": 64,
+      "reach": 65,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 2.2
+      "avg_watch_s": 2.8
     },
     {
       "id": "2026-w45-hot-1107m",
@@ -609,12 +609,12 @@
       "lane": "everyone",
       "score": 2.6,
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "reach": 85,
+      "reach": 86,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.9
+      "avg_watch_s": 5.1
     },
     {
       "id": "2026-w43-d7-glasspoll-r10",
@@ -661,12 +661,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "reach": 19,
+      "reach": 20,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.5
+      "avg_watch_s": 8.0
     },
     {
       "id": "2026-w45-d7-glasspoll",
@@ -692,7 +692,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 8.4
+      "avg_watch_s": 7.9
     },
     {
       "id": "2026-w45-hot-1104",
@@ -721,12 +721,25 @@
       "avg_watch_s": 8.0
     },
     {
+      "id": "2026-w46-d4-money",
+      "series": "money",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Kenyan banks lost Sh1.9 billion to fraud according to People Daily.",
+      "reach": 20,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.8
+    },
+    {
       "id": "2026-w46-hot-1110e",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
       "opening": "The National Treasury hides a secret IMF graft report.",
-      "reach": 21,
+      "reach": 22,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -739,12 +752,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya discharged its last Ebola patient this week.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.1
+    },
+    {
+      "id": "2026-w46-hot-1112m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "President Ruto ordered a full review of school capitation today.",
       "reach": 13,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.3
+      "avg_watch_s": 10.6
     }
   ],
   "youtube": [
@@ -792,7 +818,7 @@
       "id": "2026-w46-hot-1109m",
       "series": "sauti",
       "opening": "Kenya won two gold medals on the track in Dakar.",
-      "views": 282,
+      "views": 286,
       "likes": 1,
       "comments": 0
     },
@@ -800,7 +826,7 @@
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "views": 259,
+      "views": 260,
       "likes": 2,
       "comments": 0
     },
@@ -877,6 +903,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w46-hot-1112m",
+      "series": "sauti",
+      "opening": "President Ruto ordered a full review of school capitation today.",
+      "views": 73,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w46-hot-1109",
       "series": "sauti",
       "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
@@ -888,7 +922,7 @@
       "id": "2026-w46-hot-1110e",
       "series": "sauti",
       "opening": "The National Treasury hides a secret IMF graft report.",
-      "views": 59,
+      "views": 60,
       "likes": 0,
       "comments": 0
     },
@@ -912,7 +946,7 @@
       "id": "2026-w46-d2-kenya",
       "series": "kenya",
       "opening": "Mount Kenya reaches 5,199 metres in altitude.",
-      "views": 45,
+      "views": 44,
       "likes": 0,
       "comments": 0
     },
@@ -928,7 +962,15 @@
       "id": "2026-w46-d1-money-r5",
       "series": "money",
       "opening": "EPRA reviews fuel prices on November 14.",
-      "views": 32,
+      "views": 33,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-d4-money",
+      "series": "money",
+      "opening": "Kenyan banks lost Sh1.9 billion to fraud according to People Daily.",
+      "views": 29,
       "likes": 0,
       "comments": 0
     },
@@ -936,7 +978,7 @@
       "id": "2026-w46-hot-1110",
       "series": "sauti",
       "opening": "KRA's new 15% tax directive hits our pockets this week.",
-      "views": 27,
+      "views": 25,
       "likes": 1,
       "comments": 0
     },
@@ -944,7 +986,7 @@
       "id": "2026-w45-d6-kenya",
       "series": "kenya",
       "opening": "Lamu Port opened its first berth in May 2021.",
-      "views": 10,
+      "views": 11,
       "likes": 0,
       "comments": 0
     },

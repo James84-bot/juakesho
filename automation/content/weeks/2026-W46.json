@@ -2266,6 +2266,108 @@
       "reel": true,
       "tg_msg": 1106,
       "photo_checked": "2026-11-14T09:43:16.428011+03:00"
+    },
+    {
+      "id": "2026-w46-hot-1114m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Nairobi workers",
+      "line": "Three workers died after a *perimeter* wall collapsed at a Riverside excavation site.",
+      "fact": "Three people died and eleven others were injured when the wall collapsed on construction workers.",
+      "source": "Capital FM News, 2026-11-14, People Daily, 2026-11-14",
+      "photo_query": "road construction Kenya",
+      "bg": "usiku",
+      "message": "Three workers died in a Riverside wall collapse, demanding safety checks on all excavations.",
+      "action": "Report unsafe building sites to the National Construction Authority on 0709 928 000",
+      "beats": [
+        "Three workers died when a *perimeter* wall collapsed in Riverside.",
+        "Eleven others were pulled from the rubble with serious injuries.",
+        "County inspectors must check every active digging site in Nairobi.",
+        "Tell us below: how many unsafe sites are in your *neighbourhood*?"
+      ],
+      "caption": "Three dead, eleven injured in Riverside. Every construction site needs strict safety checks before another family loses someone. Report unsafe sites to the National Construction Authority.\n\n#Riverside #KenyaOnRecord",
+      "who": "National Construction Authority and Nairobi County",
+      "where": "Nairobi",
+      "when": "14 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Construction workers risk their lives daily without strict site enforcement.",
+      "publish_at": "2026-11-14T16:54:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Harambee Stars held South Africa 2-2 as Olunga equalled the all-time scoring record.",
+        "Transit delays push up cargo costs in Kenya, according to the World Bank."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Three dead, 11 injured after a wall collapsed in riverside",
+          "link": "https://capitalfm.africa/three-dead-11-injured-after-a-wall-collapsed-in-riverside/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-14"
+        },
+        {
+          "outlet": "People Daily",
+          "title": "Kenya Red Cross responds after wall collapses in Nairobi’s Riverside area",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZmIwS09JWjI1Ty1TNTVrMk9laWxMOFFuOWJVMWQ0UW5XQTJzNk5aQVVMSlYtT3lYY185dS0zSllfMEhuV3JBMWcwWnJCUE93YWNXVzZHVW5YeWJnc05INEdhVDl0Nk43S2xoaVRKd08zaXhoTTdpMDZEdVZtelhQa0NSVG1Za2liRVN5MVZLdU5uRW9VcU1maDlsZGxQaEZSNVNReVVMdVU?oc=5",
+          "published": "2026-11-14"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 10,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 8.0,
+        "note": "Match the photo_query more precisely to the specific urban excavation site rather than generic road construction."
+      },
+      "drafted_at": "2026-11-14T14:25:30.741131+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1114m-photo.jpg",
+      "photo_credit": "Photo: KBC · Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/workers-feared-trapped/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1114m-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1114m-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "11 injured after wall collapses at Riverside drive"
+        },
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Three dead, 11 injured after a wall collapsed in riverside"
+        },
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Wall Collapses on Workers at Nairobi’s Riverside Excavation Site"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1114m-broll.mp4",
+      "broll_credit": "Footage: bellergy / Pixabay",
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1114,
+      "auto": true,
+      "decided_at": "2026-11-14T14:33:34.231650+03:00"
     }
   ],
   "scripts": {
