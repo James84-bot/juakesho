@@ -570,7 +570,8 @@
       "track_credit": "Music: \"Who Likes to Party\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 962,
-      "decided_at": "2026-11-09T11:22:50.125599+03:00"
+      "decided_at": "2026-11-09T11:22:50.125599+03:00",
+      "fresh_checked": "2026-11-14T17:07:05.819870+03:00"
     },
     {
       "id": "2026-w46-d4-money",
@@ -2212,7 +2213,7 @@
           "published": "2026-11-14"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "weak: editor scored 4.3/10. Pick a story from the live news list (like the Nairobi-Mombasa highway dualing or El Niño funds) instead of an old template."
@@ -2313,7 +2314,7 @@
           "published": "2026-11-14"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -2367,7 +2368,14 @@
       "reel": true,
       "tg_msg": 1114,
       "auto": true,
-      "decided_at": "2026-11-14T14:33:34.231650+03:00"
+      "decided_at": "2026-11-14T14:33:34.231650+03:00",
+      "published_at": "2026-11-14T17:08:22.412814+03:00",
+      "ig_id": "18163069918503040",
+      "fb_id": "4369077446727198",
+      "story_id": "18399905533163815",
+      "fb_story_id": "3329800550537401",
+      "yt_id": "OzJ3A7iqUWc",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
