@@ -2163,13 +2163,106 @@
       "fb_story_id": "1119529987552927",
       "yt_id": "65VkfXFyNJI",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w46-hot-1114",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Commuters",
+      "line": "World Bank reveals *Kenya* pays more to move cargo as transport costs rise.",
+      "fact": "World Bank reports that transit inefficiencies increase the final price of imported goods.",
+      "message": "Transit delays push up cargo costs in Kenya, according to the World Bank.",
+      "action": "Read the World Bank report at worldbank.org to check the logistics data",
+      "beats": [
+        "World Bank reports Kenya pays *more* to move cargo.",
+        "Delays and roadblocks drive up cargo costs.",
+        "Higher transport costs mean everyday goods cost more.",
+        "Tell us below: have you noticed higher prices in shops?"
+      ],
+      "photo_query": "freight trucks highway Kenya",
+      "source": "The Standard, 2026-11-14",
+      "caption": "World Bank reports Kenya pays more to move cargo as transit delays push up costs, The Standard reports. Higher transport costs hit shop prices.\n\nTell us below: have you noticed higher prices at your local shop?\n\n#CostOfLiving #KenyaOnRecord",
+      "who": "Ministry of Transport and Trade CS",
+      "where": "National",
+      "when": "14 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Higher transport costs raise the price of basic goods for ordinary Kenyans.",
+      "bg": "usiku",
+      "publish_at": "2026-11-14T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Harambee Stars held South Africa 2-2 as Olunga equalled the all-time scoring record."
+      ],
+      "source_links": [
+        {
+          "outlet": "The Standard",
+          "title": "Kenya pays more to move cargo as corruption, delays drive up costs, World Bank says",
+          "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOSFZQY1JYdUtTVmVUQ2JnQS1rd01hbzd4a2VWU1pmSEN6YmFoUHRyLTAwSzd1Nm81U2tTU0RGaTJzZmk4X0pfZHEwY2hiNjZHeE9pQzNLT08tMDFwekZKUm52T0ZZa0JzMEJPN3QyWlgyU09WMk5LX3lPaVFjWVN3VHB0X2psWVlUMkJGMVlRSG1fYy1PSDVjUkwwVkVQeWxxcWZQczhxNTg2NEluWUZFMEotLXNMOEh2ZzB3Y05ISjRWaUxnTnBaQWxHSmhEMW1xSUY0Vy1KZi1KYXNMUnRkWC12Vnk?oc=5",
+          "published": "2026-11-14"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.3/10. Pick a story from the live news list (like the Nairobi-Mombasa highway dualing or El Niño funds) instead of an old template."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 5,
+        "craft": 4,
+        "picture": 4,
+        "hold": 5,
+        "demand": 3,
+        "action": 3,
+        "fair": 5,
+        "impact": 5,
+        "human": 4,
+        "avg": 4.3,
+        "note": "Pick a story from the live news list (like the Nairobi-Mombasa highway dualing or El Niño funds) instead of an old template."
+      },
+      "drafted_at": "2026-11-14T09:38:34.403550+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1114-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129264-kenha-secures-ksh-129b-world-bank-funds-815km-road-project-linking-8-counties",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1114-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/photos/2026-w46-hot-1114-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KeNHA Secures World Bank Funds for 815KM Road Project Linking 8 Counties"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Inside World Bank-Funded Plan to Bring AI Into Kenyan Schools"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KRA Issues Notice to Importers and Traders Over New Cargo Rules"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W46/videos/2026-w46-hot-1114-broll.mp4",
+      "broll_credit": "Footage: Matthias_Groeneveld / Pixabay",
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1106
     }
   ],
   "scripts": {
-    "radio": "Sasa, na karibu kwenye Kenya on Record. Mimi ni wako, na leo tunasonga na matokeo ya mpira ambayo yametuacha tukisimama wima kwa fahari.\n\nWiki iliyopita, uwanjani ulikuwa moto. Harambee Stars walitoka sare ya mabao mawili kwa mawili dhidi ya South Africa, timu ambayo tunajua ni ngumu sana kuipiga nyumbani kwao ama hata ugenini. Lakini vijana wetu walionyesha moyo wa simba. Hawakutetemeka.\n\nNa habari kubwa zaidi pale uwanjani ilikuwa nahodha wetu, Michael Olunga. Kile kibao cha mabao yote ya kihistoria pale timu ya taifa kilifikishwa rasmi. Olunga alitingisha nyavu mara nyingine tena na kusawazisha rekodi ya muda wote ya ufungaji mabao pale Harambee Stars. Huyu ni mchezaji ambaye ametoka mbali, na sasa jina lake limeandikwa kwa herufi za dhahabu kwenye vitabu vya historia ya soka letu.\n\nHii inatuonyesha nini? Inaonyesha wazi kwamba vipaji vya Kenya viko juu, na tukijipanga kama nchi, tunaweza kufika mbali sana. Sio tu kwenye soka, bali hata katika uwajibikaji na uongozi wetu wa kila siku. Tukumbuke kushangilia mafanikio yetu na kuendelea kusukuma mbele.\n\n[Kiswahili Summary]\nLeo kwenye Kenya on Record, tunasherehekea Harambee Stars kwa kutoka sare ya 2-2 na South Africa, huku nahodha Michael Olunga akisawazisha rekodi ya kuwa mfungaji bora wa muda wote wa timu ya taifa. Huu ni ushahidi mkubwa wa uwezo wa wachezaji wetu na fahari kwa taifa letu.",
-    "voice_note": "Wadau, habari za wiki hii? Hapa ni Kenya on Record. Soka letu limetupa sababu ya kutembeaifuna kifua wiki hii. Harambee Stars walitoka draw ya magoli mawili kwa mawili ugenini dhidi ya South Africa. Mechi ilikuwa ngumu, lakini vijana wetu hawakuangusha bendera. Na zaidi ya hayo, nahodha wetu Michael Olunga alifanya mambo makubwa kwa kusawazisha ile rekodi ya muda wote ya mabao pale timu ya taifa. Hii ni historia kubwa sana wadau. Endelea kufuatilia Kenya on Record tujue ukweli na tuwajibishe viongozi wetu. Wewe uliona aje hii mechi? Drop maoni yako hapa.",
-    "sms": "Kenya on Record: Hongera kwa Harambee Stars kwa kutoka sare ya 2-2 na South Africa, na Michael Olunga kwa kusawazisha rekodi ya ufungaji ya muda wote!",
-    "reels": "[Visual: Action-packed montage of Harambee Stars players celebrating, transitioning to a close-up graphic of Michael Olunga celebrating a goal with the Kenyan flag in the background.]\n\n[Voice-over, measured, grown-up, confident tone]:\nHivi ndivyo historia inavyoandikwa.\n\nHarambee Stars hawakutishia tu; walisimama kidete na kutoka sare ya mbili kwa mbili ugenini dhidi ya South Africa.\n\nNa pale mstari wa mbele, nahodha Michael Olunga aliendelea kuthibitisha kwanini yeye ni kinara, akisawazisha rekodi ya muda wote ya ufungaji mabao ya timu ya taifa.\n\nHuu ni ushahidi kwamba jitihada, nidhamu na moyo wa kujitolea zinaleta matokeo.\n\nTunaendelea kufuatilia na kuweka rekodi sawa. Hii ni Kenya on Record."
+    "radio": "Good evening, listeners. This is Kenya on Record. If you walked into a shop this week and wondered why basic goods cost what they do, look no further than our highways and ports. A new World Bank report confirms what truckers and traders have shouted for years: transit delays and entrenched corruption are driving up cargo costs across Kenya. Here is the reality. Moving a container from the port of Mombasa inland should be straightforward. Instead, transporters face endless bureaucratic clearance bottlenecks, slow customs systems, and roadside checkpoints where under-the-table payments remain an unwritten rule. When a truck spends three extra days stuck at a border or weighbridge, the transporter loses money. When bribes are paid to keep wheels turning, that cost does not vanish into thin air. It is calculated, added to the invoice, and passed directly onto the price of unga, cooking oil, and construction materials you buy. The World Bank notes that these inefficiencies make Kenyan logistics among the priciest in the region, hurting businesses and stifling real trade. Fixing this requires streamlining cargo clearance, digitizing compliance genuinely, and prosecuting the gatekeepers who profit from deliberate delay. Kwa ufupi: Ripoti mpya ya Benki ya Dunia inaonyesha kwamba ucheleweshaji wa mizigo na ufisadi barabarani unachangia pakubwa kupanda kwa bei za bidhaa madukani. Malipo haramu na vikwazo vya forodha hatimaye yanamuumiza mwananchi wa kawaida. Ni lazima serikali ifungue mifumo ya usafirishaji na kuondoa urasimu unaotajirisha wachache.",
+    "voice_note": "Habari zenu. Quick accountability check from Kenya on Record today on why our cost of living remains stubbornly high. The World Bank just released findings showing that cargo transit delays and corruption along our transport corridors are inflating the cost of goods in Kenya. Think about it: every single day a container sits idle waiting for clearance, and every bribe paid at a weighbridge or checkpoint, isn't absorbed by the transport company. It’s factored into the final bill. By the time that cargo reaches your local duka as soap, fertilizer, or flour, you are paying the corruption tax out of your pocket. Our logistics should be a regional advantage, not a rent-seeking toll station. Until we hold port and transport authorities accountable for these intentional bottlenecks, the mwananchi will keep footing the bill. Pass this on.",
+    "sms": "Usiibiwe: Roadside bribes and cargo delays don't disappear—they are added to the price of your food. Demand clean, digitized transit corridors.",
+    "reels": "Ever wonder why everyday goods in Kenya cost so much? The World Bank just named the culprits: transit delays and corridor corruption. Every day a truck sits idle at clearance, and every bribe paid at a weighbridge, gets added directly to the price tag of your flour and cooking oil. We are paying a daily corruption surcharge on survival. It’s time to clean up our supply chains."
   },
   "spend_usd": 0.0
 }
