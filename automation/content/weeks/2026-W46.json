@@ -452,7 +452,7 @@
         "outlet": "AllAfrica",
         "photo_query": "Thika Superhighway Kenya"
       },
-      "status": "publish_failed",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -496,7 +496,14 @@
       "decided_at": "2026-11-09T09:45:49.139425+03:00",
       "fresh_checked": "2026-11-13T12:38:48.368137+03:00",
       "attempts": 1,
-      "last_error": "Instagram could not process the video (status ERROR)"
+      "last_error": "Instagram could not process the video (status ERROR)",
+      "published_at": "2026-11-14T11:07:32.224344+03:00",
+      "ig_id": "17967735909206241",
+      "fb_id": "1342859847871530",
+      "story_id": "18121881670749254",
+      "fb_story_id": "1544285654130500",
+      "yt_id": "zEqgy7vv-Hg",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w46-d7-glasspoll",
