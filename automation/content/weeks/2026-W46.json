@@ -452,7 +452,7 @@
         "outlet": "AllAfrica",
         "photo_query": "Thika Superhighway Kenya"
       },
-      "status": "approved",
+      "status": "publish_failed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -494,7 +494,9 @@
       "tg_msg": 961,
       "auto": true,
       "decided_at": "2026-11-09T09:45:49.139425+03:00",
-      "fresh_checked": "2026-11-13T12:38:48.368137+03:00"
+      "fresh_checked": "2026-11-13T12:38:48.368137+03:00",
+      "attempts": 1,
+      "last_error": "Instagram could not process the video (status ERROR)"
     },
     {
       "id": "2026-w46-d7-glasspoll",
