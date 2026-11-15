@@ -43,7 +43,7 @@
         "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTk95S0ZucEVtUGtkd3BWaWx1QUtKYzNTSXczUTFXdzFITzFMaG1IRnZxVTBsZGxBUk9LTUVyNnlpbTNRNGVWeDdDcGFPYU94ZUp5M3BnNGdMaU1hUENDSzVVQ29lemNnaGh1eHNvTXZqcDJFc0pjVWF4M2RuWjBqbHVTNUFScDY0ZFZmNG40eXoyYlVUMDJna2d3?oc=5",
         "published": "2026-11-14"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "no `side`: every post says side: government, opposition, both or none",
@@ -87,7 +87,8 @@
       ],
       "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1140
+      "tg_msg": 1140,
+      "decided_at": "2026-11-15T18:01:14.440417+03:00"
     },
     {
       "id": "2026-w47-d2-kenya",
@@ -130,7 +131,7 @@
         "outlet": "UNESCO World Heritage Centre",
         "photo_query": "Lamu Old Town Kenya street"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "no `side`: every post says side: government, opposition, both or none",
@@ -169,7 +170,8 @@
       ],
       "track_credit": "Music: \"Funky Chunk\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1141
+      "tg_msg": 1141,
+      "decided_at": "2026-11-15T18:01:15.090072+03:00"
     },
     {
       "id": "2026-w47-d3-promise",
