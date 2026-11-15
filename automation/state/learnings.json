@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-15T17:02:38.209730+03:00",
+  "updated": "2026-11-15T22:38:56.563652+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 73.2,
+      "score": 72.9,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "reach": 28,
+      "reach": 29,
       "saved": 0,
       "shares": 6,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 8.0
+      "avg_watch_s": 7.8
     },
     {
       "id": "2026-w45-hot-1105m",
@@ -28,43 +28,43 @@
       "avg_watch_s": 5.4
     },
     {
-      "id": "2026-w43-hot-1021",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.6,
-      "opening": "The government plans to drop the 25% import tax on phones.",
-      "reach": 11,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 5.5
-    },
-    {
-      "id": "2026-w43-hot-1020",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.4,
-      "opening": "Parliament passes a bill requiring breastfeeding rooms in offices.",
-      "reach": 20,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 4.2
-    },
-    {
       "id": "2026-w45-hot-1108m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 9.4,
+      "score": 11.7,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 127,
+      "reach": 128,
       "saved": 1,
       "shares": 0,
       "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 4.2
+      "likes": 2,
+      "avg_watch_s": 4.3
+    },
+    {
+      "id": "2026-w45-hot-1104m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.5,
+      "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
+      "reach": 15,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 3,
+      "avg_watch_s": 8.8
+    },
+    {
+      "id": "2026-w44-hot-1026b1432",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.3,
+      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
+      "reach": 24,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 3,
+      "avg_watch_s": 6.9
     }
   ],
   "bottom": [
@@ -100,12 +100,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Auditor-General Nancy Gathungu flagged 269 sites.",
-      "reach": 24,
+      "reach": 27,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.0
+      "avg_watch_s": 3.9
     }
   ],
   "all": [
@@ -113,14 +113,14 @@
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 73.2,
+      "score": 72.9,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "reach": 28,
+      "reach": 29,
       "saved": 0,
       "shares": 6,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 8.0
+      "avg_watch_s": 7.8
     },
     {
       "id": "2026-w45-hot-1105m",
@@ -136,43 +136,30 @@
       "avg_watch_s": 5.4
     },
     {
-      "id": "2026-w43-hot-1021",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.6,
-      "opening": "The government plans to drop the 25% import tax on phones.",
-      "reach": 11,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 5.5
-    },
-    {
-      "id": "2026-w43-hot-1020",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.4,
-      "opening": "Parliament passes a bill requiring breastfeeding rooms in offices.",
-      "reach": 20,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 4.2
-    },
-    {
       "id": "2026-w45-hot-1108m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 9.4,
+      "score": 11.7,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 127,
+      "reach": 128,
       "saved": 1,
       "shares": 0,
       "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 4.2
+      "likes": 2,
+      "avg_watch_s": 4.3
+    },
+    {
+      "id": "2026-w45-hot-1104m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.5,
+      "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
+      "reach": 15,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 3,
+      "avg_watch_s": 8.8
     },
     {
       "id": "2026-w44-hot-1026b1432",
@@ -214,43 +201,17 @@
       "avg_watch_s": 2.9
     },
     {
-      "id": "2026-w43-hot-1019e",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 8.7,
-      "opening": "The High Court convicted Paul Mackenzie and 28 others of murder.",
-      "reach": 45,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 5.0
-    },
-    {
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "lane": "everyone",
       "score": 8.6,
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "reach": 47,
+      "reach": 48,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 3,
-      "avg_watch_s": 6.5
-    },
-    {
-      "id": "2026-w43-hot-1024m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 6.4,
-      "opening": "Workers earning Sh50,000 and above face higher income taxes.",
-      "reach": 14,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 5.4
+      "avg_watch_s": 6.4
     },
     {
       "id": "2026-w44-hot-1027m",
@@ -266,19 +227,6 @@
       "avg_watch_s": 8.5
     },
     {
-      "id": "2026-w45-hot-1104m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 6.4,
-      "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
-      "reach": 14,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 9.1
-    },
-    {
       "id": "2026-w46-hot-1110",
       "series": "sauti",
       "lane": "everyone",
@@ -290,19 +238,6 @@
       "comments": 0,
       "likes": 2,
       "avg_watch_s": 4.5
-    },
-    {
-      "id": "2026-w43-d2-kenya-r9x-r2",
-      "series": "kenya",
-      "lane": "diaspora",
-      "score": 6.2,
-      "opening": "Kenya's first national park is just outside Nairobi.",
-      "reach": 21,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 5.3
     },
     {
       "id": "2026-w44-hot-1027",
@@ -347,9 +282,9 @@
       "id": "2026-w46-d2-kenya",
       "series": "kenya",
       "lane": "diaspora",
-      "score": 4.9,
+      "score": 4.8,
       "opening": "Mount Kenya reaches 5,199 metres in altitude.",
-      "reach": 112,
+      "reach": 114,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -357,108 +292,17 @@
       "avg_watch_s": 2.6
     },
     {
-      "id": "2026-w43-hot-1025",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 4.6,
-      "opening": "A building collapse in Eastleigh has left 31 people missing.",
-      "reach": 134,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 4.4
-    },
-    {
-      "id": "2026-w43-hot-1023m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 4.5,
-      "opening": "Kenya Met warns of heavy rain in 44 counties this week.",
-      "reach": 142,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 4.5
-    },
-    {
-      "id": "2026-w43-d6-kenya-r10",
-      "series": "kenya",
-      "lane": "hustle",
-      "score": 3.2,
-      "opening": "In Marsabit County, 365 wind turbines can produce 310 megawatts.",
-      "reach": 12,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 5.5
-    },
-    {
-      "id": "2026-w43-hot-1024e",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.2,
-      "opening": "Kenya's national budget is set to hit Sh5.4 trillion by 2028.",
-      "reach": 17,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 6.5
-    },
-    {
       "id": "2026-w45-hot-1106",
       "series": "sauti",
       "lane": "everyone",
       "score": 3.2,
       "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
-      "reach": 15,
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 5.0
-    },
-    {
-      "id": "2026-w43-hot-1022",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.1,
-      "opening": "Counties owe workers Sh100 billion in money still owed for pensions.",
-      "reach": 19,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 2.8
-    },
-    {
-      "id": "2026-w43-hot-1023",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.1,
-      "opening": "The Treasury plans to scrap the Sh2,400 monthly PAYE tax relief.",
-      "reach": 19,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 3.7
-    },
-    {
-      "id": "2026-w43-hot-1023b1332",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.1,
-      "opening": "MPs passed a Bill scrapping live streaming of election results.",
-      "reach": 25,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 17.5
     },
     {
       "id": "2026-w44-hot-1026",
@@ -557,7 +401,7 @@
       "lane": "hustle",
       "score": 3.0,
       "opening": "EPRA reviews fuel prices on November 14.",
-      "reach": 32,
+      "reach": 33,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -570,7 +414,7 @@
       "lane": "everyone",
       "score": 2.9,
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "reach": 48,
+      "reach": 49,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -596,7 +440,7 @@
       "lane": "everyone",
       "score": 2.7,
       "opening": "Lamu Port opened its first berth in May 2021.",
-      "reach": 65,
+      "reach": 66,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -609,7 +453,7 @@
       "lane": "everyone",
       "score": 2.7,
       "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
-      "reach": 64,
+      "reach": 65,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -635,7 +479,7 @@
       "lane": "everyone",
       "score": 2.4,
       "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "reach": 114,
+      "reach": 117,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -648,38 +492,12 @@
       "lane": "everyone",
       "score": 2.4,
       "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
-      "reach": 121,
+      "reach": 123,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 3.3
-    },
-    {
-      "id": "2026-w43-d7-glasspoll-r10",
-      "series": "glasspoll",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Ruling-party and opposition leaders now govern together.",
-      "reach": 27,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 3.2
-    },
-    {
-      "id": "2026-w43-hot-1024",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "The Ministry of Health confirms a second Ebola death.",
-      "reach": 21,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 8.6
     },
     {
       "id": "2026-w44-d1-money-r2",
@@ -765,12 +583,12 @@
       "lane": "campus",
       "score": 0.0,
       "opening": "Viral TikTok ads promise guaranteed jobs abroad.",
-      "reach": 8,
+      "reach": 9,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.3
+      "avg_watch_s": 4.9
     },
     {
       "id": "2026-w46-d6-kenya",
@@ -778,7 +596,7 @@
       "lane": "hustle",
       "score": 0.0,
       "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "reach": 82,
+      "reach": 83,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -830,12 +648,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Auditor-General Nancy Gathungu flagged 269 sites.",
-      "reach": 24,
+      "reach": 27,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.0
+      "avg_watch_s": 3.9
     }
   ],
   "youtube": [
@@ -888,19 +706,19 @@
       "comments": 0
     },
     {
+      "id": "2026-w46-hot-1113b2340",
+      "series": "sauti",
+      "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
+      "views": 267,
+      "likes": 1,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "opening": "Kenya records 18 days without a single new Ebola infection.",
       "views": 261,
       "likes": 2,
-      "comments": 0
-    },
-    {
-      "id": "2026-w46-hot-1113b2340",
-      "series": "sauti",
-      "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "views": 255,
-      "likes": 1,
       "comments": 0
     },
     {
@@ -995,7 +813,15 @@
       "id": "2026-w46-d1-money-r5",
       "series": "money",
       "opening": "EPRA reviews fuel prices on November 14.",
-      "views": 66,
+      "views": 68,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-hot-1114m",
+      "series": "sauti",
+      "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
+      "views": 64,
       "likes": 0,
       "comments": 0
     },
@@ -1012,14 +838,6 @@
       "series": "straight",
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
       "views": 58,
-      "likes": 0,
-      "comments": 0
-    },
-    {
-      "id": "2026-w46-hot-1114m",
-      "series": "sauti",
-      "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
-      "views": 57,
       "likes": 0,
       "comments": 0
     },
@@ -1051,7 +869,7 @@
       "id": "2026-w46-d6-kenya",
       "series": "kenya",
       "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "views": 34,
+      "views": 36,
       "likes": 0,
       "comments": 0
     },
@@ -1075,7 +893,7 @@
       "id": "2026-w46-hot-1113m",
       "series": "sauti",
       "opening": "Auditor-General Nancy Gathungu flagged 269 sites.",
-      "views": 22,
+      "views": 23,
       "likes": 0,
       "comments": 0
     },

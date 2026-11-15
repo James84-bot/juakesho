@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-15T19:28:54.978612+00:00",
+  "fetched": "2026-11-15T19:39:03.855764+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -29,14 +29,14 @@
       "traffic": "1000+",
       "news": [
         {
+          "title": "Ronaldinho makes comeback for Ravenna",
+          "url": "https://www.bbc.com/sport/football/articles/ckregz4g823xo",
+          "source": "BBC"
+        },
+        {
           "title": "Ronaldinho plays 45 minutes on his debut for Italian side Ravenna at age of 46",
           "url": "https://www.skysports.com/football/live-blog/13612463/ronaldinho-plays-45-minutes-on-his-debut-for-italian-side-ravenna-at-age-of-46",
           "source": "Sky Sports"
-        },
-        {
-          "title": "Ronaldinho: Brazil legend set for first start for Italian club Ravenna aged 46",
-          "url": "https://www.bbc.com/sport/football/articles/cqz0k4e00v0mo",
-          "source": "BBC"
         },
         {
           "title": "The Legend is Back",
@@ -61,9 +61,9 @@
           "source": "Sky Sports"
         },
         {
-          "title": "Arsenal 1-1 London City (Nov 15, 2026) Game Analysis",
-          "url": "https://www.espn.com/soccer/report/_/gameId/401902864",
-          "source": "ESPN"
+          "title": "Mary Earps frustrates Arsenal as London City Lionesses earn battling draw",
+          "url": "https://www.theguardian.com/football/2026/nov/15/arsenal-london-city-lionesses-womens-super-league-wsl-match-report",
+          "source": "The Guardian"
         }
       ]
     },
@@ -105,9 +105,9 @@
           "source": "La Opinión A Coruña"
         },
         {
-          "title": "Sin Paredes ni Graham, el Barça quiere mantener el ritmo en Riazor tras el empate en Champions",
-          "url": "https://www.sport.es/es/noticias/barca/futbol-femenino/paredes-graham-barca-quiere-mantener-136444741",
-          "source": "SPORT"
+          "title": "Empate con polémica",
+          "url": "https://www.marca.com/futbol/futbol-femenino/primera-division/cronica/2026/11/15/asten-rescata-punto-riazor-polemica.html",
+          "source": "MARCA"
         }
       ]
     },
