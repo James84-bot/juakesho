@@ -2414,7 +2414,7 @@
           "published": "2026-11-15"
         }
       ],
-      "status": "awaiting",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 6.3/10. Remove the generic airport photo and replace it with a screenshot of the NEA verification portal."
@@ -2471,7 +2471,15 @@
       "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1125,
-      "photo_checked": "2026-11-15T12:31:24.810523+03:00"
+      "photo_checked": "2026-11-15T12:31:24.810523+03:00",
+      "decided_at": "2026-11-15T13:19:06.563419+03:00",
+      "published_at": "2026-11-15T13:20:16.700153+03:00",
+      "ig_id": "17900170002684255",
+      "fb_id": "1112494338271415",
+      "story_id": "18092660978699644",
+      "fb_story_id": "1440596391577751",
+      "yt_id": "wFdSApK00QA",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
