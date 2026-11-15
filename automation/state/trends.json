@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-11-15T11:28:35.810341+00:00",
+  "fetched": "2026-11-15T12:58:20.299433+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "sadio mané",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "The Saudi club Al-Nassr dismisses Sadio Mane after he refused their major concessions",
@@ -26,7 +26,7 @@
     {
       "geo": "KE",
       "title": "scholarship",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "Kenyans get 24 hours to apply for 5,000 European scholarships worth Ksh112,000 each",
@@ -39,79 +39,34 @@
           "source": "Nairobi Leo"
         },
         {
-          "title": "Kenyans given until Sunday to apply for partial online scholarships in Luxembourg",
-          "url": "https://educationnews.co.ke/news/kenyans-given-until-sunday-to-apply-for-5-000-partial-online-scholarships-in-luxembourg",
-          "source": "Education News"
+          "title": "KANU Announces 5,000 Luxembourg Scholarships For Kenyans Worth KSh 112,298 November 15 Deadline",
+          "url": "https://thekenyatimes.com/education/kanu-opens-luxembourg-scholarships/",
+          "source": "The Kenya Times"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "belgium vs italy",
+      "title": "ind vs nz",
       "traffic": "500+",
       "news": [
         {
-          "title": "'It's more like a knockout match!' – Mark van Bommel issues passionate rallying cry ahead of Italy showdown",
-          "url": "https://www.goal.com/en-ke/news/mark-van-bommel-belgium-italy-nations-league/blt19849796f6880347",
-          "source": "Goal.com"
+          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 5th ODI",
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-5th-odi-1539441/ball-by-ball-commentary",
+          "source": "Cricinfo"
         },
         {
-          "title": "Belgium v Italy Prediction: De Ketelaere 13/8 to find the net again",
-          "url": "https://news.bet365.com/en-gb/article/football-belgium-italy-prediction-and-tips/2026111408231049493",
-          "source": "news.bet365.com"
+          "title": "Arshdeep Singh & Co. swing it India's way to secure 3-1 series win",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/arshdeep-singh-co-swing-it-indias-way-to-secure-3-1-series-win/articleshow/135852572.cms",
+          "source": "The Times of India"
         },
         {
-          "title": "'We will be opponents!' – Atalanta star Giorgio Scalvini sends warning to clubmate Charles De Ketelaere",
-          "url": "https://www.livescore.com/en/news/football/serie-a/we-will-be-opponents-atalanta-star-giorgio-scalvini-sends-warning-to-clubmate-charles-de-ketelaere-goal/",
-          "source": "LiveScore"
+          "title": "Kohli's SENA century drought stretches to seven years as worrying trend continues",
+          "url": "https://www.rediff.com/cricket/report/kohlis-sena-century-drought-stretches-to-seven-years-as-worrying-trend-continues/20261115.htm",
+          "source": "Rediff"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "india vs new zealand",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "India clinch ODI series after Blackcaps collapse",
-          "url": "https://sportnation.nz/article/india-clinch-odi-series-after-blackcaps-collapse",
-          "source": "Sport Nation"
-        },
-        {
-          "title": "India's struggle in SENA nations continue: Fans concerned as Men in Blue continue to struggle in ODIs before 2027 World Cup",
-          "url": "https://sports.yahoo.com/articles/indias-struggle-sena-nations-continue-072942546.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Virat Kohli's seven-year century drought continues in SENA conditions",
-          "url": "https://thenewsmill.com/2026/11/virat-kohli-extends-century-drought-in-south-africa-england-new-zealand-and-australia-conditions/",
-          "source": "The News Mill"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "spain vs england",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Spain v England: Nations League test will reveal if Thomas Tuchel has learned lessons",
-          "url": "https://www.bbc.com/sport/football/articles/cq2d9l3e313zo",
-          "source": "BBC"
-        },
-        {
-          "title": "Spain v England buildup, reaction to Portugal’s post-Ronaldo thrashing, WSL and more – matchday live",
-          "url": "https://www.theguardian.com/football/live/2026/nov/15/spain-v-england-nations-league-buildup-wsl-and-more-matchday-live",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Sunday’s football tips: Bellingham 8/5 to do some damage as England bid to shock Spain",
-          "url": "https://mrfixitstips.co.uk/sundays-football-tips-bellingham-8-5-to-do-some-damage-as-england-bid-to-shock-spain/",
-          "source": "MrFixitsTips"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -137,28 +92,36 @@
     },
     {
       "geo": "KE",
-      "title": "measles",
+      "title": "caicedo",
       "traffic": "100+",
       "news": [
         {
-          "title": "After 26 years, the US has lost its measles elimination status",
-          "url": "https://www.cnn.com/2026/11/13/health/us-measles-elimination-status",
-          "source": "CNN"
+          "title": "Marcelo Gallardo respeta a Moises Caicedo como capitana pero quiere un par de lideres mas para Ecuador",
+          "url": "https://www.futbolecuador.com/site/noticia/marcelo-gallardo-respeta-a-moises-caicedo-como-capitana-pero-quiere-un-par-de-lideres-mas-para-ecuador/172163",
+          "source": "futbolecuador.com"
         },
         {
-          "title": "Exclusive | U.S. Loses Measles-Elimination Status as Historic Resurgence Sickens Thousands",
-          "url": "https://www.wsj.com/health/u-s-loses-measles-elimination-status-as-historic-resurgence-sickens-thousands-b95e8780",
-          "source": "WSJ"
+          "title": "Hincapié: \"Muy contento de regresar aquí con mis compañeros\"",
+          "url": "https://www.espn.com.ec/futbol/mundial/nota/_/id/17503567/que-dijo-hincapie-sobre-el-presente-de-ecuador-fecha-fifa",
+          "source": "ESPN Ecuador"
         },
         {
-          "title": "Measles Collaborative Statement on US Measles Elimination Status",
-          "url": "https://www.nfid.org/measles-collaborative-statement-on-us-measles-elimination-status/",
-          "source": "National Foundation for Infectious Diseases"
+          "title": "La alegría de Moisés Caicedo por su gol para Ecuador en el Olímpico Atahualpa",
+          "url": "https://www.espn.com.ar/futbol/mundial/nota/_/id/17515177/moises-caicedo-victoria-ecuador-gol-olimpico-atahualpa",
+          "source": "ESPN Argentina"
         }
       ]
     }
   ],
   "dropped": [
+    {
+      "title": "latvia vs armenia prediction",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "measles",
+      "why": "unsafe: 'Death'"
+    },
     {
       "title": "cyprus vs montenegro",
       "why": "unsafe: 'Betting'"
@@ -168,7 +131,7 @@
       "why": "unsafe: 'betting'"
     },
     {
-      "title": "latvia vs armenia",
+      "title": "belgium vs italy",
       "why": "unsafe: 'Betting'"
     }
   ],
