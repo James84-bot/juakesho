@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-14T13:54:20.582326+03:00",
+  "updated": "2026-11-15T14:28:28.628714+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 73.4,
+      "score": 73.2,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "reach": 27,
+      "reach": 28,
       "saved": 0,
       "shares": 6,
       "comments": 0,
@@ -18,14 +18,14 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.2,
+      "score": 26.1,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 43,
+      "reach": 45,
       "saved": 0,
       "shares": 2,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.5
+      "avg_watch_s": 5.4
     },
     {
       "id": "2026-w43-hot-1021",
@@ -69,30 +69,17 @@
   ],
   "bottom": [
     {
-      "id": "2026-w46-hot-1110e",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "The National Treasury hides a secret IMF graft report.",
-      "reach": 22,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 2.7
-    },
-    {
       "id": "2026-w46-hot-1111b1557",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya discharged its last Ebola patient this week.",
-      "reach": 14,
+      "reach": 15,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.1
+      "avg_watch_s": 3.2
     },
     {
       "id": "2026-w46-hot-1112m",
@@ -106,6 +93,19 @@
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 10.6
+    },
+    {
+      "id": "2026-w46-hot-1113m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Auditor-General Nancy Gathungu flagged 269 sites.",
+      "reach": 24,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 4.0
     }
   ],
   "all": [
@@ -113,9 +113,9 @@
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 73.4,
+      "score": 73.2,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "reach": 27,
+      "reach": 28,
       "saved": 0,
       "shares": 6,
       "comments": 0,
@@ -126,14 +126,14 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.2,
+      "score": 26.1,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 43,
+      "reach": 45,
       "saved": 0,
       "shares": 2,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.5
+      "avg_watch_s": 5.4
     },
     {
       "id": "2026-w43-hot-1021",
@@ -201,6 +201,19 @@
       "avg_watch_s": 5.9
     },
     {
+      "id": "2026-w46-d4-money",
+      "series": "money",
+      "lane": "everyone",
+      "score": 9.3,
+      "opening": "Kenyan banks lost Sh1.9 billion to fraud according to People Daily.",
+      "reach": 22,
+      "saved": 1,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.9
+    },
+    {
       "id": "2026-w43-hot-1019e",
       "series": "sauti",
       "lane": "everyone",
@@ -258,7 +271,7 @@
       "lane": "everyone",
       "score": 6.4,
       "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
-      "reach": 13,
+      "reach": 14,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -305,12 +318,25 @@
       "avg_watch_s": 6.8
     },
     {
+      "id": "2026-w45-hot-1108b2133",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 5.6,
+      "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
+      "reach": 55,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 2,
+      "avg_watch_s": 4.9
+    },
+    {
       "id": "2026-w45-hot-1102m",
       "series": "sauti",
       "lane": "everyone",
       "score": 5.2,
       "opening": "Counterfeit alcohol wiped out Sh7.6bn in KRA excise revenue.",
-      "reach": 84,
+      "reach": 85,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -323,7 +349,7 @@
       "lane": "diaspora",
       "score": 4.9,
       "opening": "Mount Kenya reaches 5,199 metres in altitude.",
-      "reach": 110,
+      "reach": 112,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -479,12 +505,12 @@
       "lane": "everyone",
       "score": 3.1,
       "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
-      "reach": 25,
+      "reach": 27,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 6.7
+      "avg_watch_s": 6.6
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -531,12 +557,12 @@
       "lane": "hustle",
       "score": 3.0,
       "opening": "EPRA reviews fuel prices on November 14.",
-      "reach": 31,
+      "reach": 32,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.3
+      "avg_watch_s": 5.4
     },
     {
       "id": "2026-w45-hot-1103m",
@@ -550,19 +576,6 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 8.4
-    },
-    {
-      "id": "2026-w45-hot-1108b2133",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 2.8,
-      "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "reach": 54,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 4.9
     },
     {
       "id": "2026-w46-hot-1109m",
@@ -615,6 +628,19 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 5.1
+    },
+    {
+      "id": "2026-w46-hot-1113b2340",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 2.4,
+      "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
+      "reach": 112,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 5.2
     },
     {
       "id": "2026-w43-d7-glasspoll-r10",
@@ -713,25 +739,38 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 36,
+      "reach": 37,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 8.0
+      "avg_watch_s": 7.8
     },
     {
-      "id": "2026-w46-d4-money",
-      "series": "money",
-      "lane": "everyone",
+      "id": "2026-w46-d5-straight",
+      "series": "straight",
+      "lane": "campus",
       "score": 0.0,
-      "opening": "Kenyan banks lost Sh1.9 billion to fraud according to People Daily.",
-      "reach": 20,
+      "opening": "Viral TikTok ads promise guaranteed jobs abroad.",
+      "reach": 8,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.8
+      "avg_watch_s": 5.3
+    },
+    {
+      "id": "2026-w46-d6-kenya",
+      "series": "kenya",
+      "lane": "hustle",
+      "score": 0.0,
+      "opening": "The Thika road runs 50 kilometres from Nairobi.",
+      "reach": 81,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.9
     },
     {
       "id": "2026-w46-hot-1110e",
@@ -752,12 +791,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya discharged its last Ebola patient this week.",
-      "reach": 14,
+      "reach": 15,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.1
+      "avg_watch_s": 3.2
     },
     {
       "id": "2026-w46-hot-1112m",
@@ -771,6 +810,19 @@
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 10.6
+    },
+    {
+      "id": "2026-w46-hot-1113m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Auditor-General Nancy Gathungu flagged 269 sites.",
+      "reach": 24,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 4.0
     }
   ],
   "youtube": [
@@ -786,7 +838,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 515,
+      "views": 517,
       "likes": 2,
       "comments": 0
     },
@@ -802,7 +854,7 @@
       "id": "2026-w45-hot-1108b2133",
       "series": "sauti",
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "views": 429,
+      "views": 430,
       "likes": 0,
       "comments": 0
     },
@@ -826,8 +878,16 @@
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "views": 260,
+      "views": 261,
       "likes": 2,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-hot-1113b2340",
+      "series": "sauti",
+      "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
+      "views": 252,
+      "likes": 1,
       "comments": 0
     },
     {
@@ -882,7 +942,7 @@
       "id": "2026-w45-hot-1108m",
       "series": "sauti",
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "views": 123,
+      "views": 125,
       "likes": 0,
       "comments": 0
     },
@@ -915,6 +975,14 @@
       "series": "sauti",
       "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
       "views": 72,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-d1-money-r5",
+      "series": "money",
+      "opening": "EPRA reviews fuel prices on November 14.",
+      "views": 65,
       "likes": 0,
       "comments": 0
     },
@@ -959,10 +1027,10 @@
       "comments": 0
     },
     {
-      "id": "2026-w46-d1-money-r5",
-      "series": "money",
-      "opening": "EPRA reviews fuel prices on November 14.",
-      "views": 33,
+      "id": "2026-w46-d6-kenya",
+      "series": "kenya",
+      "opening": "The Thika road runs 50 kilometres from Nairobi.",
+      "views": 34,
       "likes": 0,
       "comments": 0
     },
@@ -978,8 +1046,24 @@
       "id": "2026-w46-hot-1110",
       "series": "sauti",
       "opening": "KRA's new 15% tax directive hits our pockets this week.",
-      "views": 25,
+      "views": 26,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-hot-1113m",
+      "series": "sauti",
+      "opening": "Auditor-General Nancy Gathungu flagged 269 sites.",
+      "views": 22,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-d5-straight",
+      "series": "straight",
+      "opening": "Viral TikTok ads promise guaranteed jobs abroad.",
+      "views": 13,
+      "likes": 0,
       "comments": 0
     },
     {
