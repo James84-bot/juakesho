@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T14:28:28.628714+03:00",
+  "updated": "2026-11-15T17:02:38.209730+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -635,12 +635,25 @@
       "lane": "everyone",
       "score": 2.4,
       "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "reach": 112,
+      "reach": 114,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.2
+      "avg_watch_s": 5.1
+    },
+    {
+      "id": "2026-w46-hot-1114m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 2.4,
+      "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
+      "reach": 121,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 3.3
     },
     {
       "id": "2026-w43-d7-glasspoll-r10",
@@ -705,7 +718,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.2
+      "avg_watch_s": 2.5
     },
     {
       "id": "2026-w45-hot-1102-r2",
@@ -765,7 +778,7 @@
       "lane": "hustle",
       "score": 0.0,
       "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "reach": 81,
+      "reach": 82,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -886,7 +899,7 @@
       "id": "2026-w46-hot-1113b2340",
       "series": "sauti",
       "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "views": 252,
+      "views": 255,
       "likes": 1,
       "comments": 0
     },
@@ -982,7 +995,7 @@
       "id": "2026-w46-d1-money-r5",
       "series": "money",
       "opening": "EPRA reviews fuel prices on November 14.",
-      "views": 65,
+      "views": 66,
       "likes": 0,
       "comments": 0
     },
@@ -990,7 +1003,7 @@
       "id": "2026-w46-hot-1110e",
       "series": "sauti",
       "opening": "The National Treasury hides a secret IMF graft report.",
-      "views": 60,
+      "views": 62,
       "likes": 0,
       "comments": 0
     },
@@ -999,6 +1012,14 @@
       "series": "straight",
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
       "views": 58,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w46-hot-1114m",
+      "series": "sauti",
+      "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
+      "views": 57,
       "likes": 0,
       "comments": 0
     },

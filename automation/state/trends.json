@@ -1,28 +1,6 @@
 {
-  "fetched": "2026-11-15T13:41:01.696614+00:00",
+  "fetched": "2026-11-15T14:02:46.028268+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "sadio mané",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "The Saudi club Al-Nassr dismisses Sadio Mane after he refused their major concessions",
-          "url": "https://www.goal.com/en/news/despite-his-major-concessions-saudi-club-al-nassr-rejects-sadio-mane-s-request/bltc4ed46acabdc5b2a",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Rejecting his major concessions: Saudi club Al-Nassr dismisses Sadio Mane",
-          "url": "https://www.livescore.com/en/news/football/more/rejecting-his-major-concessions-saudi-club-al-nassr-dismisses-sadio-mane-goal/",
-          "source": "LiveScore"
-        },
-        {
-          "title": "Sadio Mane: Why Klopp’s catalyst is among Liverpool’s greatest-ever attackers",
-          "url": "https://www.thisisanfield.com/2026/11/sadio-mane-liverpool-player-profile-greatest-ever/",
-          "source": "This Is Anfield"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "gta 6",
@@ -69,23 +47,23 @@
     },
     {
       "geo": "KE",
-      "title": "measles",
+      "title": "granada vs las palmas",
       "traffic": "100+",
       "news": [
         {
-          "title": "After 26 years, the US has lost its measles elimination status",
-          "url": "https://www.cnn.com/2026/11/13/health/us-measles-elimination-status",
-          "source": "CNN"
+          "title": "Granada vs Las Palmas de Segunda División: horario y dónde ver hoy por TV y online el partido de LaLiga Hypermotion a través de DAZN",
+          "url": "https://www.dazn.com/es-ES/news/futbol/granada-vs-las-palmas-segunda-division-horario-donde-ver-hoy-por-tv-online-partido-laliga-hypermotion-traves-dazn/5nim2w4g0tug1qlsfs4g4h26n",
+          "source": "DAZN"
         },
         {
-          "title": "Exclusive | U.S. Loses Measles-Elimination Status as Historic Resurgence Sickens Thousands",
-          "url": "https://www.wsj.com/health/u-s-loses-measles-elimination-status-as-historic-resurgence-sickens-thousands-b95e8780",
-          "source": "WSJ"
+          "title": "El Nuevo Los Cármenes recibe un duelo entre dos equipos en buena racha",
+          "url": "https://www.infobae.com/espana/agencias/2026/11/14/el-nuevo-los-carmenes-recibe-un-duelo-entre-dos-equipos-en-buena-racha/",
+          "source": "Infobae"
         },
         {
-          "title": "Measles Collaborative Statement on US Measles Elimination Status",
-          "url": "https://www.nfid.org/measles-collaborative-statement-on-us-measles-elimination-status/",
-          "source": "National Foundation for Infectious Diseases"
+          "title": "Marvin e Iñaki vuelven a una lista de la que se cae Ale García",
+          "url": "https://www.pasionamarilla.com/marvin-e-inaki-vuelven-a-una-lista-de-la-que-se-cae-ale-garcia-/",
+          "source": "Pasión Amarilla"
         }
       ]
     },
@@ -100,14 +78,14 @@
           "source": "futbolecuador.com"
         },
         {
-          "title": "(VIDEO) \"Hablé con Moi y Piero, hay ambición para crear el mejor equipo posible\"",
-          "url": "https://studiofutbol.com.ec/2026/11/12/video-hable-con-moi-y-piero-hay-ambicion-para-crear-el-mejor-equipo-posible/",
-          "source": "Studiofutbol"
-        },
-        {
           "title": "Hincapié: \"Muy contento de regresar aquí con mis compañeros\"",
           "url": "https://www.espn.com.ec/futbol/mundial/nota/_/id/17503567/que-dijo-hincapie-sobre-el-presente-de-ecuador-fecha-fifa",
           "source": "ESPN Ecuador"
+        },
+        {
+          "title": "La alegría de Moisés Caicedo por su gol para Ecuador en el Olímpico Atahualpa",
+          "url": "https://www.espn.com.ar/futbol/mundial/nota/_/id/17515177/moises-caicedo-victoria-ecuador-gol-olimpico-atahualpa",
+          "source": "ESPN Argentina"
         }
       ]
     }
@@ -116,6 +94,14 @@
     {
       "title": "muranga seal vs mathare united",
       "why": "unsafe: 'SportPesa'"
+    },
+    {
+      "title": "france vs turkey",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "measles",
+      "why": "unsafe: 'Death'"
     },
     {
       "title": "cyprus vs montenegro",
@@ -127,10 +113,6 @@
     },
     {
       "title": "latvia vs armenia",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "belgium vs italy",
       "why": "unsafe: 'Betting'"
     }
   ],

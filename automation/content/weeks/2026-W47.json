@@ -1,0 +1,316 @@
+{
+  "collection": "2026-W47",
+  "created": "2026-11-15T17:02:53.255590+03:00",
+  "posts": [
+    {
+      "id": "2026-w47-d1-usiibiwe",
+      "template": "usiibiwe",
+      "lane": "everyone",
+      "title": "Fake bank alerts stealing login details",
+      "sender": "+254 712 XXX XXX",
+      "sms": "Dear customer, your bank app is locked. Click bit.ly/bank-update to verify your PIN immediately.",
+      "tips": [
+        "Banks never send SMS links asking for your secret PIN.",
+        "Call your bank using the official phone number on your card.",
+        "Never share a one-time login code with anyone."
+      ],
+      "message": "Banks warn that fraudsters use fake SMS links to steal mobile banking passwords and empty accounts.",
+      "action": "Forward suspicious scam SMS text messages for free to 333",
+      "photo_query": "mobile phone screen Kenya",
+      "source": "Daily Nation, 2026-11-14",
+      "caption": "Banks are warning customers about fraudsters sending fake app update links by SMS. Never click unknown links or share your secret PIN, Daily Nation reports.\n\nHave you received a fake bank alert lately?\n\n#Usiibiwe #KenyaOnRecord",
+      "beats": [
+        "Banks in Kenya warn that *fake SMS alerts* target mobile accounts.",
+        "Scammers send links that mimic official mobile banking login pages.",
+        "A real bank will never ask for your *secret PIN*.",
+        "Have you received a fake bank SMS on your phone?"
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-11-16T07:30:00+03:00",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Banking on continuous innovation to stay ahead of scammers",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTk95S0ZucEVtUGtkd3BWaWx1QUtKYzNTSXczUTFXdzFITzFMaG1IRnZxVTBsZGxBUk9LTUVyNnlpbTNRNGVWeDdDcGFPYU94ZUp5M3BnNGdMaU1hUENDSzVVQ29lemNnaGh1eHNvTXZqcDJFc0pjVWF4M2RuWjBqbHVTNUFScDY0ZFZmNG40eXoyYlVUMDJna2d3?oc=5",
+          "published": "2026-11-14"
+        }
+      ],
+      "material": {
+        "kind": "scam",
+        "key": "news:https://news.google.com/rss/articles/CBMimgFBVV95cUxNTk95S0ZucEVtUGtkd3BWaWx1QUtKYzNTSXczUTFXdzFITzFMaG1IRnZxVTBsZGxBUk9LTUVyNnlpbTNRNGVWeDdDcGFPYU94ZUp5M3BnNGdMaU1hUENDSzVVQ29lemNnaGh1eHNvTXZqcDJFc0pjVWF4M2RuWjBqbHVTNUFScDY0ZFZmNG40eXoyYlVUMDJna2d3?oc=5",
+        "title": "Banking on continuous innovation to stay ahead of scammers",
+        "outlet": "Daily Nation",
+        "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTk95S0ZucEVtUGtkd3BWaWx1QUtKYzNTSXczUTFXdzFITzFMaG1IRnZxVTBsZGxBUk9LTUVyNnlpbTNRNGVWeDdDcGFPYU94ZUp5M3BnNGdMaU1hUENDSzVVQ29lemNnaGh1eHNvTXZqcDJFc0pjVWF4M2RuWjBqbHVTNUFScDY0ZFZmNG40eXoyYlVUMDJna2d3?oc=5",
+        "published": "2026-11-14"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "no `side`: every post says side: government, opposition, both or none",
+          "no `tone`: every post says tone: credit, criticism or explainer",
+          "shouting reads as clickbait: words in capitals (PIN, SMS, XXX) (let the numbers carry the urgency)",
+          "`sender` must be masked like +254 7XX XXX XXX: a real-looking number may belong to a real person",
+          "'Daily' is not in this post's material (Banking on continuous innovation to stay ahead of scammers): say only what it states"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 7,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 7.8,
+        "note": "Clear scam warning, but ensure the photo query shows an actual SMS alert screen."
+      },
+      "drafted_at": "2026-11-15T17:48:19.626587+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d1-usiibiwe-photo.jpg",
+      "photo_credit": "Photo: The original uploader was Snow storm in Eastern As / Wikimedia Commons, CC BY 3.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:PIIGS_Mk_4_map.png",
+      "shot_info": [
+        {
+          "credit": "Photo: The original uploader was Snow storm in Eastern As / Wikimedia Commons, CC BY 3.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1140
+    },
+    {
+      "id": "2026-w47-d2-kenya",
+      "template": "kenya",
+      "lane": "young_pro",
+      "series": "Kenya at its best",
+      "place": "Lamu Old Town",
+      "line": "Lamu Old Town is East Africa's *oldest* living Swahili settlement.",
+      "fact": "UNESCO calls Lamu the oldest and best-preserved Swahili town in East Africa, lived in for over 700 years.",
+      "source": "https://whc.unesco.org/en/list/1055",
+      "photo_query": "Lamu Old Town Kenya street",
+      "message": "Lamu Old Town has preserved over 700 years of Swahili architecture and continuous coastal community living.",
+      "action": "Visit the Lamu Museum to learn about Swahili coastal architecture and heritage",
+      "caption": "Lamu Old Town has stayed alive for more than seven centuries. Its coral stone streets remain East Africa's oldest Swahili settlement.\n\nTag who you would take on a walk here.\n\n#KenyaOnRecord",
+      "beats": [
+        "Lamu Old Town has been continuously lived in for *700 years*.",
+        "UNESCO calls it the oldest preserved *Swahili town* in East Africa.",
+        "Builders made the town using coral stone and mangrove timber.",
+        "Tag them: who would you take on a trip here?"
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-11-17T12:45:00+03:00",
+      "source_links": [
+        {
+          "outlet": "UNESCO World Heritage Centre",
+          "title": "Lamu Old Town: UNESCO calls Lamu the oldest and best-preserved Swahili town in East Africa, lived in for over 700 years.",
+          "link": "https://whc.unesco.org/en/list/1055",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:lamu",
+        "id": "lamu",
+        "series": "Kenya at its best",
+        "place": "Lamu Old Town",
+        "name": "Lamu Old Town",
+        "fact": "UNESCO calls Lamu the oldest and best-preserved Swahili town in East Africa, lived in for over 700 years.",
+        "source": "https://whc.unesco.org/en/list/1055",
+        "outlet": "UNESCO World Heritage Centre",
+        "photo_query": "Lamu Old Town Kenya street"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "no `side`: every post says side: government, opposition, both or none",
+          "no `tone`: every post says tone: credit, criticism or explainer"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 5,
+        "action": 8,
+        "fair": 8,
+        "impact": 6,
+        "human": 8,
+        "avg": 7.5,
+        "note": "Solid showcase post for Lamu, fits evergreen criteria."
+      },
+      "drafted_at": "2026-11-15T17:48:19.626595+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d2-kenya-photo.jpg",
+      "photo_credit": "Photo: Antony Trivet / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Lamu_Culture_Swahili_(77).jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Antony Trivet / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Funky Chunk\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1141
+    },
+    {
+      "id": "2026-w47-d3-promise",
+      "template": "promise",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-18T18:30:00+03:00",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "The Promise Tracker names a real promise and says it was not kept: the promise and its source must be researched by a person, never invented by the writer to fit a headline"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-11-15T17:48:19.626598+03:00"
+    },
+    {
+      "id": "2026-w47-d4-money",
+      "template": "money",
+      "lane": "young_pro",
+      "series": "The Real Price",
+      "hook": "Konza biopharma park project",
+      "number": "Drug prices",
+      "unit": "at local pharmacies",
+      "what": "Konza biopharma park aims to produce medicine locally to lower retail costs.",
+      "why": "Local manufacturing cuts shipping costs and shortages for everyday medicines.",
+      "check": "Check local pharmacy prices and Kenya Medical Supplies Authority updates.",
+      "source": "People Daily, 2026-11-15",
+      "photo_query": "Konza Technopolis Kenya",
+      "message": "The planned Konza biopharma park aims to cut medicine prices by manufacturing drugs locally.",
+      "action": "Compare generic and brand drug prices at your registered local chemist",
+      "caption": "Konza Technopolis is developing a biopharma park to produce essential medicines inside Kenya. Local production can help lower costs for common prescriptions.\n\nWhat medicine takes the most from your budget?\n\n#KenyaOnRecord",
+      "beats": [
+        "Konza plans a *biopharma park* to lower local medicine prices.",
+        "Local manufacturing aims to reduce reliance on imported drugs.",
+        "Cheaper local factory production helps reduce *prescription costs*.",
+        "What medicine takes the most money from your budget?"
+      ],
+      "bg": "shuka",
+      "publish_at": "2026-11-19T19:30:00+03:00",
+      "angle": "real_price",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "How Konza’s planned biopharma park could affect medicine prices in Kenya",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSkM1LXJyQW43bkpYZF9RVzdMMkw0Rl9uTlV3RmFwQlZHeUNYYzhLWGpaS01BRlpnQ21yaGlTZ053c3R4c1JRc3htTXRPVi1GUW5URGk2cmtfX2lhWjJTUHY1WFRlaG9ST2ZtY3YxeVNFdGtCS1k4X3EwbUZVTHU2YkZvRkJHMEdkS0V6cG9hN3hkS0dHRmd2WHRFQkEzMG1OallLS2tRVGN6d1VQ?oc=5",
+          "published": "2026-11-15"
+        }
+      ],
+      "material": {
+        "kind": "price",
+        "key": "news:https://news.google.com/rss/articles/CBMirAFBVV95cUxOSkM1LXJyQW43bkpYZF9RVzdMMkw0Rl9uTlV3RmFwQlZHeUNYYzhLWGpaS01BRlpnQ21yaGlTZ053c3R4c1JRc3htTXRPVi1GUW5URGk2cmtfX2lhWjJTUHY1WFRlaG9ST2ZtY3YxeVNFdGtCS1k4X3EwbUZVTHU2YkZvRkJHMEdkS0V6cG9hN3hkS0dHRmd2WHRFQkEzMG1OallLS2tRVGN6d1VQ?oc=5",
+        "title": "How Konza’s planned biopharma park could affect medicine prices in Kenya",
+        "outlet": "People Daily",
+        "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSkM1LXJyQW43bkpYZF9RVzdMMkw0Rl9uTlV3RmFwQlZHeUNYYzhLWGpaS01BRlpnQ21yaGlTZ053c3R4c1JRc3htTXRPVi1GUW5URGk2cmtfX2lhWjJTUHY1WFRlaG9ST2ZtY3YxeVNFdGtCS1k4X3EwbUZVTHU2YkZvRkJHMEdkS0V6cG9hN3hkS0dHRmd2WHRFQkEzMG1OallLS2tRVGN6d1VQ?oc=5",
+        "published": "2026-11-15"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "hook: the first line has no figure and no named person, place or body: it is a topic, not a hook",
+          "no `side`: every post says side: government, opposition, both or none",
+          "no `tone`: every post says tone: credit, criticism or explainer",
+          "no `impact`: say in one sentence what this changes for an ordinary Kenyan (pocket, services, rights, safety or vote)",
+          "no `who`: say who did it (office and name)",
+          "no `where`: say where (county, town or national)",
+          "no `when`: say when (the date, or the deadline)"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach",
+          "possible named person(s): Kenya Medical Supplies, Konza Technopolis, Konza Technopolis Kenya. Civic posts target systems, not people."
+        ]
+      },
+      "critic": {
+        "hook": 7,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 7,
+        "demand": 6,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 7,
+        "avg": 7.2,
+        "note": "Good focus on medicine costs, though Konza biopharma is still a planned project rather than active price relief."
+      },
+      "drafted_at": "2026-11-15T17:48:19.626597+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d4-money-photo.jpg",
+      "photo_credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1142
+    },
+    {
+      "id": "2026-w47-d5-straight",
+      "template": "straight",
+      "bg": "usiku",
+      "lane": "hustle",
+      "publish_at": "2026-11-20T17:00:00+03:00",
+      "status": "planned",
+      "angle": "myth",
+      "series": "Myth or Fact"
+    },
+    {
+      "id": "2026-w47-d6-kenya",
+      "template": "kenya",
+      "bg": "usiku",
+      "lane": "diaspora",
+      "publish_at": "2026-11-21T11:00:00+03:00",
+      "status": "planned",
+      "series": "Built in Kenya"
+    },
+    {
+      "id": "2026-w47-d7-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-22T18:00:00+03:00",
+      "status": "planned",
+      "size": "story"
+    }
+  ],
+  "scripts": {
+    "radio": "Good evening. This is Kenya on Record, bringing you the facts that matter to your pocket and your community.\n\nFirst, your savings. Commercial banks have issued an urgent warning against SMS phishing scams. Con artists are circulating text messages claiming your account is blocked or requires verification, accompanied by a link. Clicking that link directs you to a duplicate webpage designed to steal your mobile banking credentials. Remember: no legitimate bank will ever send you an SMS link asking for your PIN or password. If you receive one, delete it and contact your branch directly.\n\nOn public health and industry, plans are underway for a dedicated biopharma park at Konza Technopolis. The goal is to manufacture essential medicines locally. For decades, Kenyans have borne the burden of expensive imported medicine and fragile supply chains. If executed properly, local manufacturing will lower treatment costs significantly. However, accountability is key. Citizens must track these timelines and public investments to ensure this vision delivers affordable medicine rather than another delayed project.\n\nFinally, we honour Lamu Old Town, which has preserved over seven centuries of Swahili architecture and continuous community living. It is a vital reminder that national development must respect and preserve our cultural heritage.\n\nKwa ufupi: Benki hazitumi viungo vya SMS kuomba nenosiri au PIN yako; ukipokea ujumbe kama huo, usibonyeze. Kule Konza, mpango wa kutengeneza dawa humu nchini unalenga kushusha gharama za matibabu, huku Lamu ikisherehekea zaidi ya miaka mia saba ya kuhifadhi utamaduni wetu wa Waswahili.\n\nI am your host. Stay informed, and stay vigilant.",
+    "voice_note": "Habari zenu. Here is your weekly briefing from Kenya on Record.\n\nFirst, please warn your family and friends about bank SMS scams. Fraudsters are sending texts claiming your bank account has issues, with a link to resolve it. That link is designed to steal your passwords and drain your funds. No genuine bank will text you a link asking for your PIN or login details. Do not click; just call your branch.\n\nSecond, Konza Technopolis is planning a biopharma park to manufacture essential medicines locally. Most of our drugs are imported, making healthcare painfully expensive. Producing them locally could bring down prescription costs, but we must keep our eyes on the implementation so public funds yield real results.\n\nLastly, a nod to Lamu Old Town, which has preserved over seven hundred years of Swahili architecture and community life. Modern progress should never erase who we are.\n\nShare this voice note to keep someone informed today.",
+    "sms": "Usiibiwe: Banks will never SMS you links asking for passwords or PINs. Do not click links claiming your account is blocked. Delete them and call your bank.",
+    "reels": "Kenyans spend billions every year on imported essential medicines, leaving families stranded by high pharmacy bills. The planned biopharma manufacturing park at Konza Technopolis aims to change that by producing critical drugs locally. Homegrown manufacturing means lower prices, reliable supply, and healthcare that ordinary citizens can actually afford. But ambitious master plans don't cure illness—actual delivery does. We must hold officials accountable to ensure this investment delivers real medicine to public shelves, on time."
+  },
+  "spend_usd": 0.0
+}
