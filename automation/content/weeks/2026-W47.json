@@ -43,7 +43,7 @@
         "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTk95S0ZucEVtUGtkd3BWaWx1QUtKYzNTSXczUTFXdzFITzFMaG1IRnZxVTBsZGxBUk9LTUVyNnlpbTNRNGVWeDdDcGFPYU94ZUp5M3BnNGdMaU1hUENDSzVVQ29lemNnaGh1eHNvTXZqcDJFc0pjVWF4M2RuWjBqbHVTNUFScDY0ZFZmNG40eXoyYlVUMDJna2d3?oc=5",
         "published": "2026-11-14"
       },
-      "status": "publish_failed",
+      "status": "published",
       "guard": {
         "errors": [
           "no `side`: every post says side: government, opposition, both or none",
@@ -90,7 +90,14 @@
       "tg_msg": 1140,
       "decided_at": "2026-11-15T18:01:14.440417+03:00",
       "attempts": 1,
-      "last_error": "Instagram could not process the video (status ERROR)"
+      "last_error": "Instagram could not process the video (status ERROR)",
+      "published_at": "2026-11-16T07:38:30.599654+03:00",
+      "ig_id": "18121441384779780",
+      "fb_id": "4603070959953048",
+      "story_id": "18196764688401948",
+      "fb_story_id": "1612408230107493",
+      "yt_id": "4YWpPRwWES8",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-d2-kenya",
