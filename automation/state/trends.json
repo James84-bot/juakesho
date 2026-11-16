@@ -1,155 +1,191 @@
 {
-  "fetched": "2026-11-15T19:39:03.855764+00:00",
+  "fetched": "2026-11-16T06:07:22.617687+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "weather tomorrow",
-      "traffic": "20000+",
-      "news": [
-        {
-          "title": "Weather Tomorrow Monday, November 16, 2026: BMKG Places 10 Provinces on Alert for Heavy Rain, Here Is the List",
-          "url": "https://aktualita.co/en/weather-disasters/weather-tomorrow-monday-november-16-2026-bmkg-places-10-provinces-on-alert-for-heavy-rain-here-is-the-list",
-          "source": "Aktualita.co"
-        },
-        {
-          "title": "Cyclone Disturbances Raise Rain, Sea Warnings in Sumatra",
-          "url": "https://journalarta.com/en/2026/11/15/cyclone-disturbances-rain-sea-warnings-sumatra/",
-          "source": "JournalArta"
-        },
-        {
-          "title": "Jabodetabek Weather Friday 13 November: Jakarta and Bekasi Potentially Rained",
-          "url": "https://voi.id/en/news/602386",
-          "source": "VOI.ID"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ravenna fc",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Ronaldinho makes comeback for Ravenna",
-          "url": "https://www.bbc.com/sport/football/articles/ckregz4g823xo",
-          "source": "BBC"
-        },
-        {
-          "title": "Ronaldinho plays 45 minutes on his debut for Italian side Ravenna at age of 46",
-          "url": "https://www.skysports.com/football/live-blog/13612463/ronaldinho-plays-45-minutes-on-his-debut-for-italian-side-ravenna-at-age-of-46",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "The Legend is Back",
-          "url": "https://www.sofascore.com/news/legend-is-back",
-          "source": "Sofascore"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "arsenal w.f.c. vs london city lionesses standings",
+      "title": "suns vs lakers",
       "traffic": "500+",
       "news": [
         {
-          "title": "Women's Super League: London City Lionesses earn impressive draw at Arsenal",
-          "url": "https://www.bbc.com/sport/football/live/cm20qr6z155wt",
+          "title": "JJ Redick not pleased after Lakers nearly blow 31-point lead to Suns",
+          "url": "https://www.latimes.com/sports/lakers/story/2026-11-15/los-angeles-lakers-phoenix-suns-nba-game-recap",
+          "source": "Los Angeles Times"
+        },
+        {
+          "title": "Luka Doncic breaks historic James Harden insane scoring run in new NBA feat",
+          "url": "https://basketnews.com/news-259543-luka-doncic-breaks-historic-james-harden-insane-scoring-run-in-new-nba-feat.html",
+          "source": "BasketNews.com"
+        },
+        {
+          "title": "Luka Dončić drops 43 points, nine assists vs. PHX",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/luka-doncic-drops-43-points-nine-assists-vs-phx",
+          "source": "NBC Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "france",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "France 2-1 Turquie, Ligue des nations A : Victoire des Bleus, qualifiés pour les quarts",
+          "url": "https://www.lequipe.fr/Football/match-direct/ligue-des-nations-a/2027/france-turquie-live/688714",
+          "source": "L'Équipe"
+        },
+        {
+          "title": "Zinedine Zidane logé dans un deux-pièces à Bordeaux avec Véronique : Les premières semaines n'ont pas été simples",
+          "url": "https://fr.news.yahoo.com/sport/zinedine-zidane-log%C3%A9-deux-pi%C3%A8ces-182600805.html",
+          "source": "Yahoo Actualités"
+        },
+        {
+          "title": "Équipe de France : Jacquet donne déjà rendez-vous à l’Espagne",
+          "url": "https://www.footmercato.net/a5865212888382374582-equipe-de-france-jacquet-donne-deja-rendez-vous-a-lespagne",
+          "source": "Foot Mercato"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "william ruto",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Opposition storms Gusii to counter Ruto’s foray",
+          "url": "https://nation.africa/kenya/counties/kisii/opposition-storms-gusii-to-counter-ruto-s-foray-5672108",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Matiang’i accuses Ruto of using cash to mobilise crowds during Gusii tour",
+          "url": "https://citizen.digital/article/matiangi-accuses-ruto-of-using-cash-to-mobilise-crowds-during-gusii-tour-n393930",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "Opposition leaders pitch camp on their home turf as 2027 politics gathers pace",
+          "url": "https://peopledaily.digital/inside-politics/opposition-leaders-pitch-camp-on-their-home-turf-as-2027-politics-gathers-pace",
+          "source": "People Daily"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "panama vs curacao",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Panama vs Curacao: Where to watch, TV channel, live stream and kick-off time",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-panama-v-curacao/blt6e711ea8d6f37c23",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Preview: Panama vs Curacao - prediction, team news, lineups",
+          "url": "https://www.sportsmole.co.uk/football/panama/preview/panama-vs-curacao-prediction-team-news-lineups_609059.html",
+          "source": "Sports Mole"
+        },
+        {
+          "title": "Panama Curacao CONCACAF Soccer",
+          "url": "https://www.chronicleonline.com/sports/soccer/panama-curacao-concacaf-soccer/image_c9ccd8ec-1f31-5043-b4de-05fe71a9dba6.html",
+          "source": "chronicleonline.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "benni mccarthy",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "How McCarthy’s switch to a back three helped Kenya hold fancied South Africa",
+          "url": "https://nation.africa/kenya/sports/football/how-mccarthy-s-switch-to-a-back-three-helped-kenya-hold-fancied-south-africa-5671024",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "South Africa vs Kenya: Africa Cup of Nations Qualification stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c9j34kkv32l4t",
           "source": "BBC"
         },
         {
-          "title": "Arsenal 1-1 London City commentary",
-          "url": "https://www.skysports.com/football/live-blog/13612444/arsenal-vs-london-city-lionesses-live-wsl-match-updates-score-stream-and-free-highlights",
+          "title": "Bafana settle into their base in Kenya ahead of the second AFCON clash against the hosts",
+          "url": "https://www.safa.net/general-news/bafana-settle-into-their-base-in-kenya-ahead-of-the-second-afcon-clash-against-the-hosts/",
+          "source": "South African Football Association"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "jazz vs spurs",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Dylan Harper and Victor Wembanyama lead, plus 2 other takeaways from the Jazz’s loss to the Spurs",
+          "url": "https://www.deseret.com/sports/2026/11/15/san-antonio-spurs-beat-utah-jazz-mo-bamba/",
+          "source": "Deseret News"
+        },
+        {
+          "title": "Victor Wembanyama's all-around game fuels Spurs' 12th straight win",
+          "url": "https://www.nba.com/watch/video/highlights-from-victor-wembanyama-26-point-game-8?plsrc=nba&collection=must-watch-videos",
+          "source": "NBA.com"
+        },
+        {
+          "title": "Spurs Jazz Basketball",
+          "url": "https://www.corsicanadailysun.com/sports/national_sports/spurs-jazz-basketball/image_da40e0ae-1d3c-5325-b69d-c88f1df31f4b.html",
+          "source": "Corsicana Daily Sun"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "lamine yamal",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Spain vs England: James Trafford set to replace Jordan Pickford as goalkeeper - but how does Thomas Tuchel stop Lamine Yamal?",
+          "url": "https://www.skysports.com/football/news/13612238/spain-vs-england-james-trafford-set-to-replace-jordan-pickford-as-goalkeeper-and-how-does-thomas-tuchel-stop-lamine-yamal",
           "source": "Sky Sports"
         },
         {
-          "title": "Mary Earps frustrates Arsenal as London City Lionesses earn battling draw",
-          "url": "https://www.theguardian.com/football/2026/nov/15/arsenal-london-city-lionesses-womens-super-league-wsl-match-report",
+          "title": "De la Fuente feels the strain as Lamine Yamal club v country debate rages in Spain",
+          "url": "https://www.theguardian.com/football/2026/nov/14/lamine-yamal-luis-de-la-fuente-spain-england-club-country",
           "source": "The Guardian"
+        },
+        {
+          "title": "Lamine Yamal handed new shirt number for Spain as Barcelona sensation prepares to lead La Roja against England",
+          "url": "https://www.goal.com/en-ke/news/lamine-yamal-new-shirt-number-spain-england-no-10-barcelona/bltee2f6e4a0757acb0",
+          "source": "Goal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "suriname vs eswatini",
-      "traffic": "200+",
+      "title": "england fc",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Molly O'Riordan drills the trey",
-          "url": "https://www.espn.com/video/clip/_/id/50491677/molly-oriordan-drills-trey",
-          "source": "ESPN"
+          "title": "Nations League 2026/27: England into quarter-finals but who will they play in last-eight in March?",
+          "url": "https://www.skysports.com/football/news/13611876/nations-league-2026-27-england-into-quarter-finals-but-who-will-they-play-in-last-eight-in-march",
+          "source": "Sky Sports"
         },
         {
-          "title": "TBD vs. Boise State (Dec 4, 2026) Live Score",
-          "url": "https://www.espn.com/college-football/game/_/gameId/401869542/tbd-boise-st",
-          "source": "ESPN"
+          "title": "France and Belgium reach UEFA Nations League quarterfinals",
+          "url": "https://observerbd.com/news/606439",
+          "source": "Daily Observer"
         },
         {
-          "title": "Morgan State vs. Loyola Maryland (Nov 15, 2026) Live Score",
-          "url": "https://www.espn.com/womens-college-basketball/game/_/gameId/401934276",
-          "source": "ESPN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "deportivo vs barcelona",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Deportivo-Barcelona, en directo: Liga F Moeve, hoy en vivo",
-          "url": "https://as.com/futbol/femenino/deportivo-barcelona-en-directo-liga-f-moeve-hoy-en-vivo-f202611-n/",
-          "source": "Diario AS"
-        },
-        {
-          "title": "1-1 | Cruel final para el Dépor Abanca ante el Barça tras un polémico gol cuatro minutos por encima del descuento",
-          "url": "https://www.laopinioncoruna.es/deportivo/2026/11/15/1-1-cruel-final-depor-136471778.html",
-          "source": "La Opinión A Coruña"
-        },
-        {
-          "title": "Empate con polémica",
-          "url": "https://www.marca.com/futbol/futbol-femenino/primera-division/cronica/2026/11/15/asten-rescata-punto-riazor-polemica.html",
-          "source": "MARCA"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "eibar vs cadiz",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Alineaciones oficiales del Eibar - Cádiz",
-          "url": "https://news.bet365.es/es-es/article/alineaciones-oficiales-eibar-cadiz/2026111516333201802",
-          "source": "bet365 - Apuestas deportivas en la red"
-        },
-        {
-          "title": "ipurua: La victoria, pasaporte a la salida del descenso para el Cádiz",
-          "url": "https://www.canalsur.es/noticias/deportes/futbol/victoria-billete-salida-descenso-cadiz_1_1452896.html",
-          "source": "Canal Sur"
-        },
-        {
-          "title": "Unidos para poner el broche a la etapa de Amaia Gorostiza",
-          "url": "https://www.diariovasco.com/sdeibar/unidos-poner-broche-etapa-amaia-gorostiza-20261115082210-nt.html",
-          "source": "El Diario Vasco"
+          "title": "Nations League permutations: What every team needs on the final matchday",
+          "url": "https://www.besoccer.com/new/nations-league-permutations-what-every-team-needs-on-the-final-matchday-1441296",
+          "source": "BeSoccer Livescore"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "croatia vs czechia",
-      "why": "unsafe: 'Betting'"
+      "title": "ebola",
+      "why": "unsafe: 'missing'"
     },
     {
-      "title": "eibar",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "76ers vs pacers",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "finland vs san marino",
-      "why": "unsafe: 'Betting'"
+      "title": "spain national football team vs england national football team standings",
+      "why": "unsafe: 'crash'"
     }
   ],
   "errors": {}

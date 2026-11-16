@@ -291,37 +291,364 @@
     {
       "id": "2026-w47-d5-straight",
       "template": "straight",
-      "bg": "usiku",
       "lane": "hustle",
-      "publish_at": "2026-11-20T17:00:00+03:00",
-      "status": "planned",
+      "series": "Myth or Fact",
       "angle": "myth",
-      "series": "Myth or Fact"
+      "side": "none",
+      "tone": "explainer",
+      "where": "National",
+      "when": "10 Nov 2026",
+      "impact": "Misleads voters with fake election polling results on WhatsApp groups.",
+      "material": {
+        "kind": "myth",
+        "key": "news:https://news.google.com/rss/articles/CBMivwFBVV95cUxNV24zdF85dmNYbVNvZmRRb3BQQjBoblJTajhOMUJpNFBXeEpQM01QQjJES1ppMGNiMUJfR2twLXF0QjdpWHRiMnFLUEhwWFdUc1JVWWVlcFprVF84aXFHNjdRSWxkTzJQZWtPSXB0aEZPckpnRWd0Ry15bG1MUW01VS02X3lzdVJnQ1BRQXItZXRMY2stWmxLekVlY3FDeUY1T2FaSEFQRndadl9Oa1I2WFBsc19yR3hYeDlzRU93RQ?oc=5",
+        "title": "Fake Standard newspaper front page claims Kenyan opposition politician Fred Matiang’i is leading in presidential polls",
+        "outlet": "Africa Check",
+        "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNV24zdF85dmNYbVNvZmRRb3BQQjBoblJTajhOMUJpNFBXeEpQM01QQjJES1ppMGNiMUJfR2twLXF0QjdpWHRiMnFLUEhwWFdUc1JVWWVlcFprVF84aXFHNjdRSWxkTzJQZWtPSXB0aEZPckpnRWd0Ry15bG1MUW01VS02X3lzdVJnQ1BRQXItZXRMY2stWmxLekVlY3FDeUY1T2FaSEFQRndadl9Oa1I2WFBsc19yR3hYeDlzRU93RQ?oc=5",
+        "published": "2026-11-10"
+      },
+      "message": "A viral front page claiming Fred Matiang'i leads polls is completely fake.",
+      "action": "Check the official news site before forwarding viral screenshots",
+      "beats": [
+        "A *fake* front page claims Matiang'i leads polls.",
+        "Africa Check proved the image is altered.",
+        "Always check the actual website.",
+        "Did you see this image *on WhatsApp?*"
+      ],
+      "photo_query": "newspaper printing press Kenya",
+      "claim": "Fake Standard newspaper front page claims Fred Matiang’i is leading in presidential polls",
+      "who": "a viral WhatsApp screenshot, November 2026",
+      "truth": "Africa Check confirmed the page is fake.",
+      "pride": "Verify the source.",
+      "claim_source": "Africa Check report, 10 Nov 2026",
+      "source": "Africa Check, 2026-11-10",
+      "proof": [
+        "Africa Check verified the circulating image was digitally altered.",
+        "The Standard newspaper never published the purported front page."
+      ],
+      "verdict": "false",
+      "caption": "A fake front page on WhatsApp claims a politician is leading polls. Africa Check proved it is altered. Always check the official site before you forward.\n\nHave you seen this fake image in your groups?\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-20T17:00:00+03:00",
+      "source_links": [
+        {
+          "outlet": "Africa Check",
+          "title": "Fake Standard newspaper front page claims Kenyan opposition politician Fred Matiang’i is leading in presidential polls",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNV24zdF85dmNYbVNvZmRRb3BQQjBoblJTajhOMUJpNFBXeEpQM01QQjJES1ppMGNiMUJfR2twLXF0QjdpWHRiMnFLUEhwWFdUc1JVWWVlcFprVF84aXFHNjdRSWxkTzJQZWtPSXB0aEZPckpnRWd0Ry15bG1MUW01VS02X3lzdVJnQ1BRQXItZXRMY2stWmxLekVlY3FDeUY1T2FaSEFQRndadl9Oa1I2WFBsc19yR3hYeDlzRU93RQ?oc=5",
+          "published": "2026-11-10"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 9,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 7.9,
+        "note": "Solid execution on a prevalent fake news item."
+      },
+      "drafted_at": "2026-11-16T09:35:48.210469+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d5-straight-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/128857-ntsa-urges-govt-declare-road-crashes-national-disaster-after-latest-deadly-crash",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d5-straight-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "NTSA Piles Pressure on Ruto with New Demand After Latest Deadly Accident"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "KWS Under Pressure as Mysterious Hippo Deaths Rock Lake Naivasha"
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1160
     },
     {
       "id": "2026-w47-d6-kenya",
       "template": "kenya",
-      "bg": "usiku",
       "lane": "diaspora",
+      "series": "Built in Kenya",
+      "side": "government",
+      "tone": "credit",
+      "where": "Olkaria, Naivasha",
+      "when": "2022",
+      "impact": "Powers Kenyan homes and businesses with clean energy from the earth.",
+      "material": {
+        "kind": "bank",
+        "key": "bank:olkaria",
+        "id": "olkaria",
+        "series": "Built in Kenya",
+        "place": "Olkaria, Naivasha",
+        "name": "Olkaria geothermal plants",
+        "fact": "KenGen had 713 megawatts of geothermal capacity at Olkaria, Naivasha, in 2022: power from the earth's heat.",
+        "source": "https://www.thinkgeoenergy.com/geothermal-supplies-largest-share-to-kenyas-growing-electricity-demand/",
+        "outlet": "ThinkGeoEnergy",
+        "photo_query": "Olkaria geothermal power plant Kenya"
+      },
+      "series_brief": "Showcase (the slot's `series`: 'Kenya at its best' = a real Kenyan place at its most beautiful: a park, lake, mountain, coast, city view; 'Built in Kenya' = a real, finished and working public project: a road, bridge, power plant, railway, hospital, market). `place` where it is (max 40, e.g. 'Hell's Gate, Naivasha'), `line` the headline: one plain, proud sentence with one *marker* (max 110), `fact` one sourced detail a Kenyan may not know (size, year opened, what it carries or produces, max 150), `source` required: the official page for the fact (KWS, KFS, KeNHA, KURA, Kenya Railways, KenGen, UNESCO, a county or ministry page) as its full web address, NEVER a headline id unless the post is about that news story; `photo_query` REQUIRED: the place or project itself by its real name plus 'Kenya' (e.g. 'Hell's Gate National Park Kenya', 'Nairobi Expressway Kenya'). Only projects that are finished and in use; nothing stalled, nothing promised. No politician is credited by name. `beats` 3 sentences: the place and why it is worth seeing, the fact, and where it is or how to visit or use it.",
+      "message": "Olkaria geothermal plants generated 713 megawatts from the earth's heat.",
+      "action": "Visit Naivasha and see where clean power comes from the ground",
+      "beats": [
+        "KenGen reached *713 megawatts* of geothermal capacity at Olkaria.",
+        "This clean power flows straight into our national grid.",
+        "Tag who you would take to see Olkaria."
+      ],
+      "photo_query": "Olkaria geothermal power plant Kenya",
+      "place": "Olkaria, Naivasha",
+      "line": "Olkaria geothermal plants generate clean power from the *earth's* heat.",
+      "fact": "KenGen had 713 megawatts of geothermal capacity at Olkaria, Naivasha, in 2022: power from the earth's heat.",
+      "source": "https://www.thinkgeoenergy.com/geothermal-supplies-largest-share-to-kenyas-growing-electricity-demand/",
+      "caption": "Olkaria geothermal plants in Naivasha turn underground steam into steady electricity for our homes and businesses. KenGen recorded 713 megawatts of capacity here in 2022.\n\nTag who you would take to see Olkaria.\n\n#BuiltInKenya #KenyaOnRecord",
+      "bg": "usiku",
       "publish_at": "2026-11-21T11:00:00+03:00",
-      "status": "planned",
-      "series": "Built in Kenya"
+      "source_links": [
+        {
+          "outlet": "ThinkGeoEnergy",
+          "title": "Olkaria geothermal plants: KenGen had 713 megawatts of geothermal capacity at Olkaria, Naivasha, in 2022: power from the earth's heat.",
+          "link": "https://www.thinkgeoenergy.com/geothermal-supplies-largest-share-to-kenyas-growing-electricity-demand/",
+          "published": ""
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "shouting reads as clickbait: words in capitals (KFS, KURA, KWS, NEVER) (let the numbers carry the urgency)"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.5,
+        "note": "Clear, informative showcase with accurate facts."
+      },
+      "drafted_at": "2026-11-16T09:35:48.210477+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d6-kenya-photo.jpg",
+      "photo_credit": "Photo: KAMAU DANIEL MWAURA / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:GEOTHERMAL_STEAM_IN_THE_ROCKY_HILLS_OF_EBURRU.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: KAMAU DANIEL MWAURA / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Newer Wave\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1161
     },
     {
       "id": "2026-w47-d7-glasspoll",
       "template": "glasspoll",
-      "bg": "usiku",
       "lane": "everyone",
+      "side": "both",
+      "tone": "explainer",
+      "series_brief": "Your Say poll (posted as a Reel): a sharp question about this week's biggest Kenyan political story that every side can answer and will argue about (never 'who will you vote for'). `hook`, question, 2 options (shown as A and B), `cta` that asks for the vote in the comments, e.g. 'Comment A or B'. The caption repeats the question and ends 'Vote A or B in the comments.'",
+      "message": "Have you submitted your views on the 2027/28 budget plan yet?",
+      "action": "Comment A or B to cast your vote on the budget public participation",
+      "beats": [
+        "Kenyans have only four days left to submit views on the *budget*.",
+        "Public participation is open until November 20 for the 2027/28 plans.",
+        "Have you read the draft proposals or sent your comments?",
+        "Tell us below: did you *submit* your views on the budget?"
+      ],
+      "photo_query": "National Treasury Nairobi Kenya",
+      "hook": "Budget deadline in 4 days",
+      "question": "Have you submitted your budget views?",
+      "cta": "Comment A or B below",
+      "options": [
+        "A: Yes, I sent views",
+        "B: No, I didn't know"
+      ],
+      "bg": "usiku",
       "publish_at": "2026-11-22T18:00:00+03:00",
-      "status": "planned",
-      "size": "story"
+      "size": "story",
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet",
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 10,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.6,
+        "note": "Engaging poll tightly aligned with the week's top budget deadline."
+      },
+      "drafted_at": "2026-11-16T09:35:48.210479+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/128726-treasury-begins-bids-evaluation-460km-nairobi-mombasa-expressway",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Gives Progress Update on Nairobi-Mombasa Expressway Project"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Revives Ksh 337B High Grand Falls Dam Project"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Reveals Planned Changes in November-December Fuel Prices"
+        }
+      ],
+      "track_credit": "Music: \"Newer Wave\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1162
+    },
+    {
+      "id": "2026-w47-hot-1116",
+      "template": "sauti",
+      "lane": "everyone",
+      "hot": true,
+      "side": "government",
+      "tone": "criticism",
+      "who": "Ethics and Anti-Corruption Commission Detectives",
+      "where": "National",
+      "when": "16 Nov 2026",
+      "impact": "Increases operating costs for Kenyan businesses through extra bribe payments.",
+      "series_brief": "Sauti ya Mwananchi (the people's voice, our signature format): a real photo fills the post. `kicker` who is talking, in English (max 24, e.g. 'Taxpayers', 'Students', 'Gen Z', 'Parents', 'Boda riders'), `line` the headline: the news in one complete, plain sentence (who did what, with the number), one *marker* on the words that hit hardest, no jokes or sarcasm (max 120), `fact` the one sourced fact that proves it (max 150), `source` required, `photo_query` required (a real Kenyan scene that IS the feeling).",
+      "message": "Bribery demands hit 48 percent of medium-sized Kenyan firms this year.",
+      "action": "Report corruption demands to the Ethics and Anti-Corruption Commission",
+      "beats": [
+        "Bribery demands now hit *48%* of medium-sized Kenyan businesses.",
+        "Daily Nation reports that nearly half of growing firms face kickbacks.",
+        "Extra costs hurt local shops and stall our economic growth.",
+        "What did your business pay in *extra* fees this week?"
+      ],
+      "photo_query": "Nairobi business district street Kenya",
+      "kicker": "Business Owners",
+      "line": "Bribery demands hit *48%* of medium-sized firms operating in Kenya.",
+      "fact": "Daily Nation reports that bribery demands now affect 48 percent of medium-sized businesses.",
+      "source": "Daily Nation, 2026-11-16",
+      "caption": "Almost half of growing businesses face bribery demands just to operate. Daily Nation reports that 48 percent of medium-sized firms encounter corruption.\n\nWhat did your business pay in extra fees this week?\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-16T12:45:00+03:00",
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Bribery demands hit 48pc of medium-sized firms",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQdU9XQm9RdENEVU5TY1JGQkhlbXlRWXk2YjcxSUg4LUY1b2tkQkQyUl9BeTRjeDR5T2t6ZG9EOV9vZVRaU25uMzRBbVlQc1FKb3FYZHFxc3JBWXVOdGNxakNwLUZ0d3dzNHd6cENhSUNWMVE3RDZQTjdjakxqd3VuYl9WdU9MUXdDV1RLdVlfNmJLeENyZGtsWThR?oc=5",
+          "published": "2026-11-16"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "serious allegation words: attribute them to the record ('the Auditor-General found', 'charged with', 'the court ruled') and keep the source in `source`",
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 9,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.8,
+        "note": "Strong, direct economic impact backed by a verified source."
+      },
+      "drafted_at": "2026-11-16T09:35:48.210480+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1116-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke · Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129192-lobby-groups-demand-answers-govt-over-delayed-imf-corruption-report",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1116-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1116-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "State Handed New Demands After Kenya Ranked Among Most Corrupt Nations"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "EACC Chairperson challenges accountants to uphold integrity, reject corruption"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "Indian national arrested over alleged Ksh172M gold scam"
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1163,
+      "auto": true,
+      "decided_at": "2026-11-16T09:45:52.731932+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening. This is Kenya on Record, bringing you the facts that matter to your pocket and your community.\n\nFirst, your savings. Commercial banks have issued an urgent warning against SMS phishing scams. Con artists are circulating text messages claiming your account is blocked or requires verification, accompanied by a link. Clicking that link directs you to a duplicate webpage designed to steal your mobile banking credentials. Remember: no legitimate bank will ever send you an SMS link asking for your PIN or password. If you receive one, delete it and contact your branch directly.\n\nOn public health and industry, plans are underway for a dedicated biopharma park at Konza Technopolis. The goal is to manufacture essential medicines locally. For decades, Kenyans have borne the burden of expensive imported medicine and fragile supply chains. If executed properly, local manufacturing will lower treatment costs significantly. However, accountability is key. Citizens must track these timelines and public investments to ensure this vision delivers affordable medicine rather than another delayed project.\n\nFinally, we honour Lamu Old Town, which has preserved over seven centuries of Swahili architecture and continuous community living. It is a vital reminder that national development must respect and preserve our cultural heritage.\n\nKwa ufupi: Benki hazitumi viungo vya SMS kuomba nenosiri au PIN yako; ukipokea ujumbe kama huo, usibonyeze. Kule Konza, mpango wa kutengeneza dawa humu nchini unalenga kushusha gharama za matibabu, huku Lamu ikisherehekea zaidi ya miaka mia saba ya kuhifadhi utamaduni wetu wa Waswahili.\n\nI am your host. Stay informed, and stay vigilant.",
-    "voice_note": "Habari zenu. Here is your weekly briefing from Kenya on Record.\n\nFirst, please warn your family and friends about bank SMS scams. Fraudsters are sending texts claiming your bank account has issues, with a link to resolve it. That link is designed to steal your passwords and drain your funds. No genuine bank will text you a link asking for your PIN or login details. Do not click; just call your branch.\n\nSecond, Konza Technopolis is planning a biopharma park to manufacture essential medicines locally. Most of our drugs are imported, making healthcare painfully expensive. Producing them locally could bring down prescription costs, but we must keep our eyes on the implementation so public funds yield real results.\n\nLastly, a nod to Lamu Old Town, which has preserved over seven hundred years of Swahili architecture and community life. Modern progress should never erase who we are.\n\nShare this voice note to keep someone informed today.",
-    "sms": "Usiibiwe: Banks will never SMS you links asking for passwords or PINs. Do not click links claiming your account is blocked. Delete them and call your bank.",
-    "reels": "Kenyans spend billions every year on imported essential medicines, leaving families stranded by high pharmacy bills. The planned biopharma manufacturing park at Konza Technopolis aims to change that by producing critical drugs locally. Homegrown manufacturing means lower prices, reliable supply, and healthcare that ordinary citizens can actually afford. But ambitious master plans don't cure illness—actual delivery does. We must hold officials accountable to ensure this investment delivers real medicine to public shelves, on time."
+    "radio": "Habari za wiki, nchi yangu. Karibu kwenye Kenya on Record. Hii ndiyo nafasi yetu ya kudadisi ukweli nyuma ya kelele za mtaani.\n\nTunaanza na uongo uliosambaa wiki hii: kuna front page ya gazeti iliyokuwa viral ikidai Fred Matiang'i ndiye anaongoza kwenye kura za maoni. Wakenya, hiyo picha ni bandia kabisa. Tusikubali kupotoshwa na propaganda za mitandaoni kabla ya uchaguzi.\n\nKwenye habari njema, sekta yetu ya nishati inang’aa. Vituo vya umeme wa joto ardhi vya Olkaria vimezalisha megawati mia saba na kumi na tatu (713 MW) kutoka kwenye joto la dunia. Hii inamaanisha nishati safi na ya kuaminika kwa uchumi wetu.\n\nLakini kwenye upande wa biashara, hali si shwari. Utafiti unaonyesha asilimia arobaini na nane (48%) ya kampuni za kadiri hapa nchini zilikumbana na vitisho au madai ya hongo mwaka huu. Rushwa inaendelea kuua ukuaji wa biashara zetu.\n\nMwisho kabisa, bajeti ya 2027/28 inatayarishwa. Je, umetoa maoni yako kuhusu jinsi pesa za umma zitakavyotumika? Sauti yako ni muhimu.\n\n*Kwa ufupi:* Gazeti la Matiang'i kuongoza kura ni feki. Olkaria imezalisha 713MW za umeme. Asilimia 48 ya kampuni za kadiri zimelalamikia hongo mwaka huu, na wananchi wanahimizwa kutoa maoni kuhusu bajeti ya 2027/28.",
+    "voice_note": "Wadau, mambo vipi? Hapa ni Kenya on Record na dondoo za wiki hii. Kwanza kabisa, ile front page inayozunguka mitandaoni ikidai Fred Matiang'i anaongoza kura za maoni ni feki mtupu—msidanganywe. Habari nzuri ni kwamba Olkaria imetupatia megawati 713 za umeme safi kutoka chini ya ardhi. Lakini upande wa pili, biashara zetu zinateseka; asilimia 48 ya kampuni za kadiri zimeripoti kukumbana na rushwa mwaka huu. Kumbuka pia kutoa maoni yako kwenye bajeti ya 2027/28. Simama kidete,dai ukweli!",
+    "sms": "Usiibiwe: Picha ya gazeti inayodai Matiang'i anaongoza kura ni feki. Usambaze uongo. Toa maoni yako kwenye bajeti ya 2027/28. Kenya on Record.",
+    "reels": "[Picha ya front page feki ikichanwa] Wakenya, msidanganywe na hii!"
   },
   "spend_usd": 0.0
 }
