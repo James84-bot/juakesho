@@ -180,7 +180,8 @@
       "track_credit": "Music: \"Funky Chunk\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1141,
-      "decided_at": "2026-11-15T18:01:15.090072+03:00"
+      "decided_at": "2026-11-15T18:01:15.090072+03:00",
+      "fresh_checked": "2026-11-16T18:09:54.696078+03:00"
     },
     {
       "id": "2026-w47-d3-promise",
@@ -698,7 +699,7 @@
           "published": "2026-11-16"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -751,7 +752,14 @@
       "reel": true,
       "tg_msg": 1175,
       "auto": true,
-      "decided_at": "2026-11-16T15:31:32.393190+03:00"
+      "decided_at": "2026-11-16T15:31:32.393190+03:00",
+      "published_at": "2026-11-16T18:13:57.971406+03:00",
+      "ig_id": "18023723051977687",
+      "fb_id": "1317159300513778",
+      "story_id": "18113514821227033",
+      "fb_story_id": "1496125782385485",
+      "yt_id": "rplg1zRBq9A",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
