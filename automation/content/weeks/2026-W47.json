@@ -760,13 +760,105 @@
       "fb_story_id": "1496125782385485",
       "yt_id": "rplg1zRBq9A",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w47-hot-1117e",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "The World Bank raised concerns over governance gaps and public funds lost to corruption.",
+      "fact": "The World Bank raised concerns over governance gaps and public funds.",
+      "source": "UEFA.com, 2026-11-16",
+      "photo_query": "National Treasury Nairobi",
+      "message": "The World Bank published governance assessments raising concerns over public funds.",
+      "action": "Read the World Bank public expenditure report online",
+      "beats": [
+        "The World Bank warned Kenya over *billion-shilling* corruption losses.",
+        "The lender raised concerns over governance gaps and public spending.",
+        "The Treasury faces pressure to account for public funds.",
+        "Tell us below: does government action match the graft reports?"
+      ],
+      "caption": "The World Bank warns Kenya on graft. We pay the price in taxes and missing services. Read the report and ask questions.\n\n#KenyaOnRecord",
+      "who": "President William Ruto",
+      "where": "National",
+      "when": "November 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Public funds lost to corruption mean fewer resources for schools and health clinics.",
+      "bg": "usiku",
+      "publish_at": "2026-11-17T19:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "source_links": [
+        {
+          "outlet": "UEFA.com",
+          "title": "Women's Champions League Results Simulator: Who can qualify? Permutations and predicting the final table",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMlhNV0lzZTFsZTdOWW1RYjgtN3N3cl9EWTNlbXB0QlRubno1Smt4OHVSaldMNUV1MWVPNUZBMXhlcTZBUDVnOUhVTmViRmpBYUVmOGp6SWx5Z1hhZlZ6TTBqNmsxa2JBOVU5aElYQjd5QktBVWZyaUo1OXQtZjZYajNibDdIUzYxNW1wbU5QSXZrREVmUEtaVnBXMkw0bHdqdHdiUncza0Raa0dhSXU5c29jaGVid0xPSHotY2FqTTNUSE9aOEcwYU1NLWFLZ3h5T0x1TU1nbkZRRDQ?oc=5",
+          "published": "2026-11-16"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "accusation: a named person with an allegation needs two outlets or an official source (court, EACC, DPP, Auditor-General, a .go.ke page)",
+          "the linked report is not about this story (Women's Champions League Results Simulator: Who can qualify? Permutations and pr): use the headline id of the report this post is really based on",
+          "weak: editor scored 4.2/10. Fix the source attribution, remove textbook phrasing, and ground the critique in a specific figure from the World Bank report rather than vague warnings."
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 4,
+        "send": 3,
+        "clarity": 5,
+        "fresh": 3,
+        "voice": 3,
+        "craft": 3,
+        "picture": 3,
+        "hold": 3,
+        "demand": 10,
+        "action": 2,
+        "fair": 6,
+        "impact": 6,
+        "human": 3,
+        "avg": 4.2,
+        "note": "Fix the source attribution, remove textbook phrasing, and ground the critique in a specific figure from the World Bank report rather than vague warnings."
+      },
+      "drafted_at": "2026-11-17T02:09:03.037694+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1117e-photo.jpg",
+      "photo_credit": "Photo: KBC · Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/seek-votes-peacefully-ruto-warns-against-political-hooliganism/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1117e-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1117e-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Ruto hits back at opposition over selective interpretation of World Bank report"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "World Bank Raises Fresh Questions Over Taxes Introduced Under Ruto"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Natembeya's Security Withdrawn Days After Ruto Spat"
+        }
+      ],
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1183
     }
   ],
   "scripts": {
-    "radio": "Habari za wiki, nchi yangu. Karibu kwenye Kenya on Record. Hii ndiyo nafasi yetu ya kudadisi ukweli nyuma ya kelele za mtaani.\n\nTunaanza na uongo uliosambaa wiki hii: kuna front page ya gazeti iliyokuwa viral ikidai Fred Matiang'i ndiye anaongoza kwenye kura za maoni. Wakenya, hiyo picha ni bandia kabisa. Tusikubali kupotoshwa na propaganda za mitandaoni kabla ya uchaguzi.\n\nKwenye habari njema, sekta yetu ya nishati inang’aa. Vituo vya umeme wa joto ardhi vya Olkaria vimezalisha megawati mia saba na kumi na tatu (713 MW) kutoka kwenye joto la dunia. Hii inamaanisha nishati safi na ya kuaminika kwa uchumi wetu.\n\nLakini kwenye upande wa biashara, hali si shwari. Utafiti unaonyesha asilimia arobaini na nane (48%) ya kampuni za kadiri hapa nchini zilikumbana na vitisho au madai ya hongo mwaka huu. Rushwa inaendelea kuua ukuaji wa biashara zetu.\n\nMwisho kabisa, bajeti ya 2027/28 inatayarishwa. Je, umetoa maoni yako kuhusu jinsi pesa za umma zitakavyotumika? Sauti yako ni muhimu.\n\n*Kwa ufupi:* Gazeti la Matiang'i kuongoza kura ni feki. Olkaria imezalisha 713MW za umeme. Asilimia 48 ya kampuni za kadiri zimelalamikia hongo mwaka huu, na wananchi wanahimizwa kutoa maoni kuhusu bajeti ya 2027/28.",
-    "voice_note": "Wadau, mambo vipi? Hapa ni Kenya on Record na dondoo za wiki hii. Kwanza kabisa, ile front page inayozunguka mitandaoni ikidai Fred Matiang'i anaongoza kura za maoni ni feki mtupu—msidanganywe. Habari nzuri ni kwamba Olkaria imetupatia megawati 713 za umeme safi kutoka chini ya ardhi. Lakini upande wa pili, biashara zetu zinateseka; asilimia 48 ya kampuni za kadiri zimeripoti kukumbana na rushwa mwaka huu. Kumbuka pia kutoa maoni yako kwenye bajeti ya 2027/28. Simama kidete,dai ukweli!",
-    "sms": "Usiibiwe: Picha ya gazeti inayodai Matiang'i anaongoza kura ni feki. Usambaze uongo. Toa maoni yako kwenye bajeti ya 2027/28. Kenya on Record.",
-    "reels": "[Picha ya front page feki ikichanwa] Wakenya, msidanganywe na hii!"
+    "radio": "Hujambo mwananchi, na karibu kwa Kenya on Record. Mimi ni wako wa ukweli, na leo tunasonga moja kwa moja hadi kwa meza ya utawala bora.\n\nWiki hii, Rais wetu alisimama kidete kujitetea dhidi ya maonyo makali kutoka kwa Benki ya Dunia kuhusu ufisadi nchini. Ni jambo linazua maswali mengi mashinani. Wakati mashirika ya kimataifa yanalalamika kuhusu mianya ya pesa za umma kupotea, serikali inasisitiza kwamba inapambana na ufisadi kikamilifu. Lakini ukweli ni upi chini ya jua?\n\nKumbuka, uwajibikaji sio kazi ya viongozi peke yao; ni wajibu wetu sote kuuliza maswali magumu. Pesa za ushuru hazipaswi kuishia kwenye mifuko ya wachache ilhali huduma za msingi zinadorora. Endelea kufuatilia matumizi ya kaunti yako na kitaifa.\n\n[Swahili Summary]\n\n*Muhtasari:* Rais ametetea serikali yake dhidi ya ripoti za Benki ya Dunia kuhusu ufisadi. Wananchi wanahimizwa kuendelea kudai uwajibikaji kutoka kwa viongozi na kufuatilia matumizi ya rasilimali za umma.",
+    "voice_note": "Sasa, ndugu yangu? Hapa ni Kenya on Record. Umesikia vile Rais ametetea serikali dhidi ya onyo la World Bank kuhusu ufisadi? Sasa swali ni moja tu: Je, maneno haya yanatosha kufunika matundu ya pesa za umma zinazopotea kila siku? Kazi yetu si kukaa kimya. Fuatilia pesa za kaunti yako, uliza maswali, na usikubali kudanganywa. Usiibiwe, jua haki yako!",
+    "sms": "Usiibiwe: Pesa za umma zikitajwa kwenye ripoti za ufisadi, ni jasho lako linapotea. Uliza viongozi wako matumizi, dai uwajibikaji. #KenyaOnRecord",
+    "reels": "World Bank inasema ufisadi unatafuna pesa za umma... lakini Rais anasema serikali yake inajitahidi. Sasa kati ya ripoti na utetezi, nani anadanganya mwananchi? Kwenye Kenya on Record, hatupotezi mwelekeo. Pesa zako, haki yako. Usikubali kuibiwa kimya kimya!"
   },
   "spend_usd": 0.0
 }
