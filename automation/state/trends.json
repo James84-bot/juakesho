@@ -1,33 +1,77 @@
 {
-  "fetched": "2026-11-16T14:01:32.102186+00:00",
+  "fetched": "2026-11-16T15:22:32.461333+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "fraud",
-      "traffic": "200+",
+      "title": "sudan vs senegal",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Three suspects arrested for over Ksh.7M fraud hotel scheme",
-          "url": "https://citizen.digital/article/three-suspects-arrested-for-over-ksh7m-fraud-hotel-scheme-n393963",
-          "source": "Citizen Digital"
+          "title": "Sudan vs Senegal: Africa Cup of Nations Qualification stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cm93rpezkq4gt",
+          "source": "BBC"
         },
         {
-          "title": "DCI exposes how 3 men used fake hotel booking to con victim Ksh7.98M",
-          "url": "https://peopledaily.digital/news/dci-exposes-how-3-men-used-fake-hotel-booking-to-con-victim-ksh7-98m",
-          "source": "People Daily"
+          "title": "Senegal, Côte d'Ivoire, Cameroon and Benin strengthen AFCON qualification bids",
+          "url": "https://www.cafonline.com/afcon2025/news/senegal-cote-divoire-cameroon-and-benin-strengthen-afcon-qualification-bids/",
+          "source": "CAFOnline.com"
         },
         {
-          "title": "3 Charged in Ksh5.8 Million Hotel Booking and Travel Fraud",
-          "url": "https://nairobileo.co.ke/news/article/31498/3-charged-in-ksh58-million-hotel-booking-and-travel-fraud",
-          "source": "Nairobi Leo"
+          "title": "Sudan vs Senegal: TV channel, live stream and kick-off time | AFCON Qualification",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-sudan-v-senegal/blt940c82ba7f70e16a",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "somalia vs ghana",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Somalia vs Ghana: Africa Cup of Nations Qualification stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cr62p3jyq2ewt",
+          "source": "BBC"
+        },
+        {
+          "title": "Kyereh back after four years, Kudus and Jordan Ayew return as Ghana seek AFCON revival against Somalia",
+          "url": "https://www.cafonline.com/afcon2025/news/kyereh-back-after-four-years-kudus-and-jordan-ayew-return-as-ghana-seek-afcon-revival-against-somalia/",
+          "source": "CAFOnline.com"
+        },
+        {
+          "title": "Black Stars Eye Another Victory as AFCON Qualifying Campaign Continues",
+          "url": "https://www.modernghana.com/videonews/tv3/1/754862",
+          "source": "Modern Ghana"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
+      "title": "fraud",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Brothers convicted in $240 million cattle investment fraud scheme",
+          "url": "https://www.nbcdfw.com/news/local/agridime-cattle-investment-fraud-brothers-convicted-fort-worth/4105469/",
+          "source": "NBC 5 Dallas-Fort Worth"
+        },
+        {
+          "title": "Brothers Guilty Of Cattle Related Ponzi Scheme",
+          "url": "https://easttexasradio.com/brothers-guilty-of-cattle-related-ponzi-scheme/",
+          "source": "EastTexasRadio.com"
+        },
+        {
+          "title": "Federal jury convicts brothers in $240 million cattle investment scheme",
+          "url": "https://www.kera.org/2026/11/12/federal-jury-convicts-brothers-in-240-million-cattle-investment-scheme/",
+          "source": "KERA News Breakthroughs"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "namibia vs cameroon",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Cameroon vs Namibia: Africa Cup of Nations Qualification stats & head-to-head",
@@ -49,110 +93,46 @@
     {
       "geo": "KE",
       "title": "fifa world cup",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
-          "title": "From Cesc Fabregas to Phil Foden, all FIFA U-17 World Cup Golden Ball winners",
-          "url": "https://www.dazn.com/en-US/news/soccer/fifa-u-17-world-cup-golden-ball-winners-kroos-fabregas-foden/1qnhugaittzkx15cbaw9nl141v",
-          "source": "DAZN"
+          "title": "Morocco becomes first Arab nation in FIFA’s top five men’s rankings",
+          "url": "https://www.aljazeera.com/sports/2026/11/15/morocco-becomes-first-arab-nation-in-fifas-top-five-mens-rankings",
+          "source": "Al Jazeera"
         },
         {
-          "title": "🏆 A look back at every FIFA U-17 World Cup Golden Ball winner",
-          "url": "https://onefootball.com/en/news/a-look-back-at-every-fifa-u-17-world-cup-golden-ball-winner-43777373",
-          "source": "OneFootball"
+          "title": "Morocco overtake Brazil and Portugal to break into the world's top five in FIFA rankings",
+          "url": "https://www.jordannews.jo/Section-71/Football/Morocco-overtake-Brazil-and-Portugal-to-break-into-the-world-s-top-five-in-FIFA-rankings-58925",
+          "source": "www.jordannews.jo"
         },
         {
-          "title": "Jurgen Klopp says Fifa president Gianni Infantino worse than predecessor Sepp Blatter",
-          "url": "https://www.bbc.com/sport/football/articles/cjr4gr2k41dxo",
-          "source": "BBC"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "national social security fund",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "NSSF Issues Notice to Employers Ahead of Planned System Upgrade",
-          "url": "https://www.kenyans.co.ke/news/129406-nssf-directs-registered-employers-update-details-ahead-system-upgrade",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "NSSF issues urgent directive to employers: How to complete your data update today",
-          "url": "https://www.pulse.co.ke/story/how-to-update-nssf-employer-details-before-the-new-system-upgrade-2026111606513653066",
-          "source": "Pulse Kenya"
-        },
-        {
-          "title": "NSSF Issues New Instructions To All Registered Employers",
-          "url": "https://thekenyatimes.com/latest-kenya-times-news/nssf-employer-update/",
-          "source": "The Kenya Times"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "priest",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Mexico: Passport Renewal Conditioned On Not Appearing As a Priest",
-          "url": "https://zenit.org/2026/11/14/mexico-passport-renewal-conditioned-on-not-appearing-as-a-priest/",
-          "source": "ZENIT - English"
-        },
-        {
-          "title": "Pope Leo XIV Appoints Kenyan Augustinian Priest as Coadjutor Bishop of Kenya’s Kisii Diocese",
-          "url": "https://www.aciafrica.org/news/25331/pope-leo-xiv-appoints-kenyan-augustinian-priest-as-coadjutor-bishop-of-kenyas-kisii-diocese",
-          "source": "ACI Africa"
-        },
-        {
-          "title": "Pope Leo XIV has appointed Father Joseph Oduor (pictured) as the Coadjutor Bishop of the Catholic Diocese of Kisii. Bishop Joseph Mairura Okemwa officially announced the appointment to the congregation on Friday after a holy mass to welcome the Bishop",
-          "url": "https://www.facebook.com/kenyanewsagency/posts/pope-leo-xiv-has-appointed-father-joseph-oduor-pictured-as-the-coadjutor-bishop-/1447130447602597/",
-          "source": "Facebook"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "electric truck",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Africa's wealthiest man moves from importing thousands of CNG trucks to partnering with Chinese auto giant to unveil first locally assembled electric truck",
-          "url": "https://africa.businessinsider.com/local/markets/africas-wealthiest-man-moves-from-importing-thousands-of-cng-trucks-to-partnering/917hd2d",
-          "source": "Business Insider Africa"
-        },
-        {
-          "title": "Dangote Rolls Out First Locally Assembled Electric Heavy-Duty Truck",
-          "url": "https://thefact.ng/dangote-rolls-out-first-locally-assembled-electric-heavy-duty-truck/",
-          "source": "https://thefact.ng/"
-        },
-        {
-          "title": "Dangote Sinotruk ya kera motar dakon kaya mai amfani da lantarki a Najeriya",
-          "url": "https://hausa.legit.ng/news/1741560-kamfanin-dangote-sinotruk-ya-kaddamar-da-matar-dakon-kaya-ta-farko-a-najeriya/",
-          "source": "Legit News"
+          "title": "The African countries FIFA ranking now has two names",
+          "url": "https://geeky.com.ng/2026/11/16/the-african-countries-fifa-ranking-now-has-two-names/",
+          "source": "Geeky Nigeria"
         }
       ]
     }
   ],
   "dropped": [
     {
+      "title": "kazakhstan vs slovakia",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "faroe islands vs moldova",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "zimbabwe vs equatorial guinea",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "sudan vs senegal",
-      "why": "unsafe: 'BETTING'"
+      "title": "switzerland vs scotland",
+      "why": "unsafe: 'Betting'"
     },
     {
       "title": "factory",
       "why": "unsafe: 'fire'"
-    },
-    {
-      "title": "traffic collision",
-      "why": "unsafe: 'Accident'"
     }
   ],
   "errors": {}
