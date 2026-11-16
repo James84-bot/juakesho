@@ -1,47 +1,70 @@
 {
-  "fetched": "2026-11-16T12:01:53.133075+00:00",
+  "fetched": "2026-11-16T14:01:32.102186+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "el niño–southern oscillation",
-      "traffic": "500+",
+      "title": "fraud",
+      "traffic": "200+",
       "news": [
         {
-          "title": "The Powerful El Niño Hits California With a One-Two Punch of Disasters",
-          "url": "https://www.nytimes.com/2026/11/10/climate/el-nino-california-flooding-fires-kelvin-wave.html",
-          "source": "The New York Times"
+          "title": "Three suspects arrested for over Ksh.7M fraud hotel scheme",
+          "url": "https://citizen.digital/article/three-suspects-arrested-for-over-ksh7m-fraud-hotel-scheme-n393963",
+          "source": "Citizen Digital"
         },
         {
-          "title": "What could El Niño mean for winter weather in the US and Canada?",
-          "url": "https://www.bbc.com/weather/articles/c6pvg22k2w2do",
+          "title": "DCI exposes how 3 men used fake hotel booking to con victim Ksh7.98M",
+          "url": "https://peopledaily.digital/news/dci-exposes-how-3-men-used-fake-hotel-booking-to-con-victim-ksh7-98m",
+          "source": "People Daily"
+        },
+        {
+          "title": "3 Charged in Ksh5.8 Million Hotel Booking and Travel Fraud",
+          "url": "https://nairobileo.co.ke/news/article/31498/3-charged-in-ksh58-million-hotel-booking-and-travel-fraud",
+          "source": "Nairobi Leo"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "namibia vs cameroon",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Cameroon vs Namibia: Africa Cup of Nations Qualification stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cx05436lm54mt",
           "source": "BBC"
         },
         {
-          "title": "El Niño ramps up; warming could be big hit to PNW snowpack",
-          "url": "https://rv-times.com/2026/11/15/el-nino-ramps-up-warming-could-be-big-hit-to-pnw-snowpack/",
-          "source": "Rogue Valley Times"
+          "title": "Cameroun fixtures 2027: next matches and kick-off times",
+          "url": "https://www.vavel.com/en/data/cameroun/fixtures/",
+          "source": "VAVEL.com"
+        },
+        {
+          "title": "Sports Press Review of November 12, 2026",
+          "url": "https://www.lattaquant.com/en/sports-press-review-of-november-12-2026/",
+          "source": "L'Attaquant"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "william ruto",
-      "traffic": "500+",
+      "title": "fifa world cup",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Why 250 MPs from 61 countries are converging in Nairobi",
-          "url": "https://nation.africa/kenya/news/why-250-mps-from-61-countries-are-converging-in-nairobi--5671582",
-          "source": "Daily Nation"
+          "title": "From Cesc Fabregas to Phil Foden, all FIFA U-17 World Cup Golden Ball winners",
+          "url": "https://www.dazn.com/en-US/news/soccer/fifa-u-17-world-cup-golden-ball-winners-kroos-fabregas-foden/1qnhugaittzkx15cbaw9nl141v",
+          "source": "DAZN"
         },
         {
-          "title": "Ruto challenges African parliaments to lead fight against hunger",
-          "url": "https://www.the-star.co.ke/news/2026-11-16-ruto-challenges-african-parliaments-to-lead-fight-against-hunger",
-          "source": "The Star, Kenya"
+          "title": "🏆 A look back at every FIFA U-17 World Cup Golden Ball winner",
+          "url": "https://onefootball.com/en/news/a-look-back-at-every-fifa-u-17-world-cup-golden-ball-winner-43777373",
+          "source": "OneFootball"
         },
         {
-          "title": "Parliament hosts summit, State of Nation address",
-          "url": "https://www.standardmedia.co.ke/politics/article/2001562350/parliament-hosts-summit-state-of-nation-address",
-          "source": "The Standard"
+          "title": "Jurgen Klopp says Fifa president Gianni Infantino worse than predecessor Sepp Blatter",
+          "url": "https://www.bbc.com/sport/football/articles/cjr4gr2k41dxo",
+          "source": "BBC"
         }
       ],
       "civic": true
@@ -112,101 +135,24 @@
           "source": "Legit News"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "calvin bassey",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Calvin Bassey among Pochettino’s Man Utd targets",
-          "url": "https://www.telegraph.co.uk/football/2026/11/15/calvin-bassey-among-pochettinos-man-utd-targets/",
-          "source": "The Telegraph"
-        },
-        {
-          "title": "Football gossip: Bassey, Collins, Mazraoui, McKennie, Endrick, Paz, Lino",
-          "url": "https://www.bbc.com/sport/football/articles/cklyegvq86w8o",
-          "source": "BBC"
-        },
-        {
-          "title": "Mauricio Pochettino makes his move! New Man Utd boss identifies surprise Fulham star as first transfer target ahead of daunting Liverpool trip",
-          "url": "https://www.goal.com/en-ke/news/mauricio-pochettino-man-utd-calvin-bassey-fulham-first-transfer-target/blt7f7cee64d6b8c9fc",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "weather nairobi",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "A point gained for Harambee Stars, a clear warning for Bafana Bafana",
-          "url": "https://nation.africa/kenya/sports/football/a-point-gained-for-harambee-stars-a-clear-warning-for-bafana-bafana-5672198",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "South Africa vs Kenya: Africa Cup of Nations Qualification stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c9j34kkv32l4t",
-          "source": "BBC"
-        },
-        {
-          "title": "Bafana settle into their base in Kenya ahead of the second AFCON clash against the hosts",
-          "url": "https://www.safa.net/general-news/bafana-settle-into-their-base-in-kenya-ahead-of-the-second-afcon-clash-against-the-hosts/",
-          "source": "South African Football Association"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "fifa world cup",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Jurgen Klopp says Fifa president Gianni Infantino worse than predecessor Sepp Blatter",
-          "url": "https://www.bbc.com/sport/football/articles/cjr4gr2k41dxo",
-          "source": "BBC"
-        },
-        {
-          "title": "'Couldn't get worse': Klopp calls for change in FIFA leadership",
-          "url": "https://citizen.digital/article/couldnt-get-worse-klopp-calls-for-change-in-fifa-leadership-n393978",
-          "source": "Citizen Digital"
-        },
-        {
-          "title": "Jurgen Klopp: FIFA president Gianni Infantino worse than predecessor Sepp Blatter",
-          "url": "https://www.skysports.com/football/video/13612606/jurgen-klopp-fifa-president-gianni-infantino-worse-than-predecessor-sepp-blatter",
-          "source": "Sky Sports"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "jazz vs spurs",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Harper and Castle, the backcourt duo carrying the Spurs · SNA",
-          "url": "https://sportnewsafrica.com/en/news/nba-harper-and-castle-take-turns-leading-the-spurs/",
-          "source": "Sport News Africa"
-        },
-        {
-          "title": "Highlights From Dylan Harper 31-Point Game",
-          "url": "https://www.nba.com/watch/video/highlights-from-dylan-harper-31-point-game",
-          "source": "NBA.com"
-        },
-        {
-          "title": "Spurs Jazz Basketball",
-          "url": "https://www.corsicanadailysun.com/sports/national_sports/spurs-jazz-basketball/image_da40e0ae-1d3c-5325-b69d-c88f1df31f4b.html",
-          "source": "Corsicana Daily Sun"
-        }
-      ]
     }
   ],
   "dropped": [
     {
-      "title": "ebola",
-      "why": "unsafe: 'missing'"
+      "title": "zimbabwe vs equatorial guinea",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "sudan vs senegal",
+      "why": "unsafe: 'BETTING'"
+    },
+    {
+      "title": "factory",
+      "why": "unsafe: 'fire'"
+    },
+    {
+      "title": "traffic collision",
+      "why": "unsafe: 'Accident'"
     }
   ],
   "errors": {}
