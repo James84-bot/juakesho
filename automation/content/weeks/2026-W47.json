@@ -652,6 +652,106 @@
       "fb_story_id": "980689041332021",
       "yt_id": "oiBYprkbwWg",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w47-hot-1116m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Graduates",
+      "line": "EACC moves to recover *Sh40.3 million* from a former KeRRA boss over a fake degree.",
+      "fact": "EACC filed in court to recover Sh40.3 million in salaries paid to a KeRRA boss with forged papers.",
+      "source": "TV47 Digital, 2026-11-16, KBC Digital, 2026-11-16",
+      "photo_query": "Supreme Court of Kenya",
+      "message": "EACC is suing an ex-roads authority boss to refund Sh40.3 million earned using forged degree certificates.",
+      "action": "The Public Service Commission must publish the complete audit of civil service degrees.",
+      "beats": [
+        "EACC wants *Sh40.3 million* back from a roads boss.",
+        "Court filings show he worked for years on *forged degrees*.",
+        "PSC must audit all *civil service degrees* immediately.",
+        "How many years did you study for your *degree*?"
+      ],
+      "caption": "EACC is in court seeking Sh40.3 million back from a former Kenya Rural Roads Authority deputy director who used forged degrees. Thousands of qualified Kenyan graduates sit without work while forged papers earned millions in public salary. The Public Service Commission must verify every certificate across public offices.\n\nHow many years did you spend in school for your certificate?\n\n#EACC #KeRRA #KenyaOnRecord",
+      "who": "Ethics and Anti-Corruption Commission",
+      "where": "Nairobi",
+      "when": "16 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Public road development funds paid an unqualified boss while certified Kenyan engineers search for work.",
+      "bg": "usiku",
+      "publish_at": "2026-11-16T18:01:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Bribery demands hit 48 percent of medium-sized Kenyan firms this year."
+      ],
+      "source_links": [
+        {
+          "outlet": "TV47 Digital",
+          "title": "EACC seeks to recover KSh40.3M from former Kenya Rural Roads Authority deputy director in fake degree case",
+          "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNnhFa0d1czRVYWpmQzc5LXZORkdZUUNmUm40UUhmU1ZlNmoxdENrSGVEZVlhNzI4anl4YnFqT3lWUWQ5MGc4S3JmVlpXZXF4SWgzQWxYR3hOcXVBbFNHUENXSG9mTW9Nd1hSaVVkRGxDR0JEZEhrZG9WZE9OTmpTWFJDRlZlZjZyNzVFaGhrR29PTDZYVWtwdVp2VE1Ha2hwSTdfb1F4Q2o5VnRlZ0ZQcWNZRS1oOUszVDVvZ1ZzNHU2eGszTU5mcTctektDQkNaX01sZDdR?oc=5",
+          "published": "2026-11-16"
+        },
+        {
+          "outlet": "KBC Digital",
+          "title": "EACC seeks over Ksh40M from former KeRRA deputy director over fake degree",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPX0did2NpcjJaUjgzcmkwN2x0SlVfeW4wQzhDSzBURHItRDZCTFhPQXFjLV9XODRMeXVpTDNmdEJBbXpLUnNTNDMyY3dBdmNFLWxMbDVWdl9GaFQ1Ulp4Q1JITGl3czE3VURma3JKM1NsTWZUMlVPblJ1ZTdTNVlsd2sySHZ3eC0wNVotV1h2amR6cGRGMzhmaFJhbnM?oc=5",
+          "published": "2026-11-16"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 8,
+        "craft": 9,
+        "picture": 7,
+        "hold": 9,
+        "demand": 10,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.8,
+        "note": "Ensure the photo query matches the actual EACC or court setting rather than the Supreme Court."
+      },
+      "drafted_at": "2026-11-16T15:29:31.856320+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1116m-photo.jpg",
+      "photo_credit": "Photo: KBC · Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/eacc-seeks-over-ksh40m-from-former-kerra-deputy-director-over-fake-degree/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1116m-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1116m-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "EACC seeks over Ksh40M from former KeRRA deputy director over fake degree"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "EACC Chairperson challenges accountants to uphold integrity, reject corruption"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "EACC Moves to Identify Corruption Loopholes at Mombasa Port"
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1175,
+      "auto": true,
+      "decided_at": "2026-11-16T15:31:32.393190+03:00"
     }
   ],
   "scripts": {

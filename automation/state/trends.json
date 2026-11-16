@@ -1,102 +1,148 @@
 {
-  "fetched": "2026-11-16T06:07:22.617687+00:00",
+  "fetched": "2026-11-16T12:01:53.133075+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "suns vs lakers",
+      "title": "el niño–southern oscillation",
       "traffic": "500+",
       "news": [
         {
-          "title": "JJ Redick not pleased after Lakers nearly blow 31-point lead to Suns",
-          "url": "https://www.latimes.com/sports/lakers/story/2026-11-15/los-angeles-lakers-phoenix-suns-nba-game-recap",
-          "source": "Los Angeles Times"
+          "title": "The Powerful El Niño Hits California With a One-Two Punch of Disasters",
+          "url": "https://www.nytimes.com/2026/11/10/climate/el-nino-california-flooding-fires-kelvin-wave.html",
+          "source": "The New York Times"
         },
         {
-          "title": "Luka Doncic breaks historic James Harden insane scoring run in new NBA feat",
-          "url": "https://basketnews.com/news-259543-luka-doncic-breaks-historic-james-harden-insane-scoring-run-in-new-nba-feat.html",
-          "source": "BasketNews.com"
+          "title": "What could El Niño mean for winter weather in the US and Canada?",
+          "url": "https://www.bbc.com/weather/articles/c6pvg22k2w2do",
+          "source": "BBC"
         },
         {
-          "title": "Luka Dončić drops 43 points, nine assists vs. PHX",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-15/luka-doncic-drops-43-points-nine-assists-vs-phx",
-          "source": "NBC Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "france",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "France 2-1 Turquie, Ligue des nations A : Victoire des Bleus, qualifiés pour les quarts",
-          "url": "https://www.lequipe.fr/Football/match-direct/ligue-des-nations-a/2027/france-turquie-live/688714",
-          "source": "L'Équipe"
-        },
-        {
-          "title": "Zinedine Zidane logé dans un deux-pièces à Bordeaux avec Véronique : Les premières semaines n'ont pas été simples",
-          "url": "https://fr.news.yahoo.com/sport/zinedine-zidane-log%C3%A9-deux-pi%C3%A8ces-182600805.html",
-          "source": "Yahoo Actualités"
-        },
-        {
-          "title": "Équipe de France : Jacquet donne déjà rendez-vous à l’Espagne",
-          "url": "https://www.footmercato.net/a5865212888382374582-equipe-de-france-jacquet-donne-deja-rendez-vous-a-lespagne",
-          "source": "Foot Mercato"
+          "title": "El Niño ramps up; warming could be big hit to PNW snowpack",
+          "url": "https://rv-times.com/2026/11/15/el-nino-ramps-up-warming-could-be-big-hit-to-pnw-snowpack/",
+          "source": "Rogue Valley Times"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "william ruto",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Opposition storms Gusii to counter Ruto’s foray",
-          "url": "https://nation.africa/kenya/counties/kisii/opposition-storms-gusii-to-counter-ruto-s-foray-5672108",
+          "title": "Why 250 MPs from 61 countries are converging in Nairobi",
+          "url": "https://nation.africa/kenya/news/why-250-mps-from-61-countries-are-converging-in-nairobi--5671582",
           "source": "Daily Nation"
         },
         {
-          "title": "Matiang’i accuses Ruto of using cash to mobilise crowds during Gusii tour",
-          "url": "https://citizen.digital/article/matiangi-accuses-ruto-of-using-cash-to-mobilise-crowds-during-gusii-tour-n393930",
-          "source": "Citizen Digital"
+          "title": "Ruto challenges African parliaments to lead fight against hunger",
+          "url": "https://www.the-star.co.ke/news/2026-11-16-ruto-challenges-african-parliaments-to-lead-fight-against-hunger",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Opposition leaders pitch camp on their home turf as 2027 politics gathers pace",
-          "url": "https://peopledaily.digital/inside-politics/opposition-leaders-pitch-camp-on-their-home-turf-as-2027-politics-gathers-pace",
-          "source": "People Daily"
+          "title": "Parliament hosts summit, State of Nation address",
+          "url": "https://www.standardmedia.co.ke/politics/article/2001562350/parliament-hosts-summit-state-of-nation-address",
+          "source": "The Standard"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
-      "title": "panama vs curacao",
+      "title": "national social security fund",
       "traffic": "200+",
       "news": [
         {
-          "title": "Panama vs Curacao: Where to watch, TV channel, live stream and kick-off time",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-panama-v-curacao/blt6e711ea8d6f37c23",
-          "source": "Goal.com"
+          "title": "NSSF Issues Notice to Employers Ahead of Planned System Upgrade",
+          "url": "https://www.kenyans.co.ke/news/129406-nssf-directs-registered-employers-update-details-ahead-system-upgrade",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Preview: Panama vs Curacao - prediction, team news, lineups",
-          "url": "https://www.sportsmole.co.uk/football/panama/preview/panama-vs-curacao-prediction-team-news-lineups_609059.html",
-          "source": "Sports Mole"
+          "title": "NSSF issues urgent directive to employers: How to complete your data update today",
+          "url": "https://www.pulse.co.ke/story/how-to-update-nssf-employer-details-before-the-new-system-upgrade-2026111606513653066",
+          "source": "Pulse Kenya"
         },
         {
-          "title": "Panama Curacao CONCACAF Soccer",
-          "url": "https://www.chronicleonline.com/sports/soccer/panama-curacao-concacaf-soccer/image_c9ccd8ec-1f31-5043-b4de-05fe71a9dba6.html",
-          "source": "chronicleonline.com"
+          "title": "NSSF Issues New Instructions To All Registered Employers",
+          "url": "https://thekenyatimes.com/latest-kenya-times-news/nssf-employer-update/",
+          "source": "The Kenya Times"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "benni mccarthy",
-      "traffic": "100+",
+      "title": "priest",
+      "traffic": "200+",
       "news": [
         {
-          "title": "How McCarthy’s switch to a back three helped Kenya hold fancied South Africa",
-          "url": "https://nation.africa/kenya/sports/football/how-mccarthy-s-switch-to-a-back-three-helped-kenya-hold-fancied-south-africa-5671024",
+          "title": "Mexico: Passport Renewal Conditioned On Not Appearing As a Priest",
+          "url": "https://zenit.org/2026/11/14/mexico-passport-renewal-conditioned-on-not-appearing-as-a-priest/",
+          "source": "ZENIT - English"
+        },
+        {
+          "title": "Pope Leo XIV Appoints Kenyan Augustinian Priest as Coadjutor Bishop of Kenya’s Kisii Diocese",
+          "url": "https://www.aciafrica.org/news/25331/pope-leo-xiv-appoints-kenyan-augustinian-priest-as-coadjutor-bishop-of-kenyas-kisii-diocese",
+          "source": "ACI Africa"
+        },
+        {
+          "title": "Pope Leo XIV has appointed Father Joseph Oduor (pictured) as the Coadjutor Bishop of the Catholic Diocese of Kisii. Bishop Joseph Mairura Okemwa officially announced the appointment to the congregation on Friday after a holy mass to welcome the Bishop",
+          "url": "https://www.facebook.com/kenyanewsagency/posts/pope-leo-xiv-has-appointed-father-joseph-oduor-pictured-as-the-coadjutor-bishop-/1447130447602597/",
+          "source": "Facebook"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "electric truck",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Africa's wealthiest man moves from importing thousands of CNG trucks to partnering with Chinese auto giant to unveil first locally assembled electric truck",
+          "url": "https://africa.businessinsider.com/local/markets/africas-wealthiest-man-moves-from-importing-thousands-of-cng-trucks-to-partnering/917hd2d",
+          "source": "Business Insider Africa"
+        },
+        {
+          "title": "Dangote Rolls Out First Locally Assembled Electric Heavy-Duty Truck",
+          "url": "https://thefact.ng/dangote-rolls-out-first-locally-assembled-electric-heavy-duty-truck/",
+          "source": "https://thefact.ng/"
+        },
+        {
+          "title": "Dangote Sinotruk ya kera motar dakon kaya mai amfani da lantarki a Najeriya",
+          "url": "https://hausa.legit.ng/news/1741560-kamfanin-dangote-sinotruk-ya-kaddamar-da-matar-dakon-kaya-ta-farko-a-najeriya/",
+          "source": "Legit News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "calvin bassey",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Calvin Bassey among Pochettino’s Man Utd targets",
+          "url": "https://www.telegraph.co.uk/football/2026/11/15/calvin-bassey-among-pochettinos-man-utd-targets/",
+          "source": "The Telegraph"
+        },
+        {
+          "title": "Football gossip: Bassey, Collins, Mazraoui, McKennie, Endrick, Paz, Lino",
+          "url": "https://www.bbc.com/sport/football/articles/cklyegvq86w8o",
+          "source": "BBC"
+        },
+        {
+          "title": "Mauricio Pochettino makes his move! New Man Utd boss identifies surprise Fulham star as first transfer target ahead of daunting Liverpool trip",
+          "url": "https://www.goal.com/en-ke/news/mauricio-pochettino-man-utd-calvin-bassey-fulham-first-transfer-target/blt7f7cee64d6b8c9fc",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "weather nairobi",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "A point gained for Harambee Stars, a clear warning for Bafana Bafana",
+          "url": "https://nation.africa/kenya/sports/football/a-point-gained-for-harambee-stars-a-clear-warning-for-bafana-bafana-5672198",
           "source": "Daily Nation"
         },
         {
@@ -113,17 +159,40 @@
     },
     {
       "geo": "KE",
+      "title": "fifa world cup",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Jurgen Klopp says Fifa president Gianni Infantino worse than predecessor Sepp Blatter",
+          "url": "https://www.bbc.com/sport/football/articles/cjr4gr2k41dxo",
+          "source": "BBC"
+        },
+        {
+          "title": "'Couldn't get worse': Klopp calls for change in FIFA leadership",
+          "url": "https://citizen.digital/article/couldnt-get-worse-klopp-calls-for-change-in-fifa-leadership-n393978",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "Jurgen Klopp: FIFA president Gianni Infantino worse than predecessor Sepp Blatter",
+          "url": "https://www.skysports.com/football/video/13612606/jurgen-klopp-fifa-president-gianni-infantino-worse-than-predecessor-sepp-blatter",
+          "source": "Sky Sports"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
       "title": "jazz vs spurs",
       "traffic": "100+",
       "news": [
         {
-          "title": "Dylan Harper and Victor Wembanyama lead, plus 2 other takeaways from the Jazz’s loss to the Spurs",
-          "url": "https://www.deseret.com/sports/2026/11/15/san-antonio-spurs-beat-utah-jazz-mo-bamba/",
-          "source": "Deseret News"
+          "title": "Harper and Castle, the backcourt duo carrying the Spurs · SNA",
+          "url": "https://sportnewsafrica.com/en/news/nba-harper-and-castle-take-turns-leading-the-spurs/",
+          "source": "Sport News Africa"
         },
         {
-          "title": "Victor Wembanyama's all-around game fuels Spurs' 12th straight win",
-          "url": "https://www.nba.com/watch/video/highlights-from-victor-wembanyama-26-point-game-8?plsrc=nba&collection=must-watch-videos",
+          "title": "Highlights From Dylan Harper 31-Point Game",
+          "url": "https://www.nba.com/watch/video/highlights-from-dylan-harper-31-point-game",
           "source": "NBA.com"
         },
         {
@@ -132,60 +201,12 @@
           "source": "Corsicana Daily Sun"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "lamine yamal",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Spain vs England: James Trafford set to replace Jordan Pickford as goalkeeper - but how does Thomas Tuchel stop Lamine Yamal?",
-          "url": "https://www.skysports.com/football/news/13612238/spain-vs-england-james-trafford-set-to-replace-jordan-pickford-as-goalkeeper-and-how-does-thomas-tuchel-stop-lamine-yamal",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "De la Fuente feels the strain as Lamine Yamal club v country debate rages in Spain",
-          "url": "https://www.theguardian.com/football/2026/nov/14/lamine-yamal-luis-de-la-fuente-spain-england-club-country",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Lamine Yamal handed new shirt number for Spain as Barcelona sensation prepares to lead La Roja against England",
-          "url": "https://www.goal.com/en-ke/news/lamine-yamal-new-shirt-number-spain-england-no-10-barcelona/bltee2f6e4a0757acb0",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "england fc",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Nations League 2026/27: England into quarter-finals but who will they play in last-eight in March?",
-          "url": "https://www.skysports.com/football/news/13611876/nations-league-2026-27-england-into-quarter-finals-but-who-will-they-play-in-last-eight-in-march",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "France and Belgium reach UEFA Nations League quarterfinals",
-          "url": "https://observerbd.com/news/606439",
-          "source": "Daily Observer"
-        },
-        {
-          "title": "Nations League permutations: What every team needs on the final matchday",
-          "url": "https://www.besoccer.com/new/nations-league-permutations-what-every-team-needs-on-the-final-matchday-1441296",
-          "source": "BeSoccer Livescore"
-        }
-      ]
     }
   ],
   "dropped": [
     {
       "title": "ebola",
       "why": "unsafe: 'missing'"
-    },
-    {
-      "title": "spain national football team vs england national football team standings",
-      "why": "unsafe: 'crash'"
     }
   ],
   "errors": {}

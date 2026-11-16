@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-15T22:38:56.563652+03:00",
+  "updated": "2026-11-16T15:01:38.135386+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 72.9,
+      "score": 72.7,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "reach": 29,
+      "reach": 30,
       "saved": 0,
       "shares": 6,
       "comments": 0,
@@ -18,14 +18,14 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.1,
+      "score": 26.0,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 45,
+      "reach": 46,
       "saved": 0,
       "shares": 2,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.4
+      "avg_watch_s": 5.3
     },
     {
       "id": "2026-w45-hot-1108m",
@@ -69,25 +69,12 @@
   ],
   "bottom": [
     {
-      "id": "2026-w46-hot-1111b1557",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Kenya discharged its last Ebola patient this week.",
-      "reach": 15,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 3.2
-    },
-    {
       "id": "2026-w46-hot-1112m",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
       "opening": "President Ruto ordered a full review of school capitation today.",
-      "reach": 13,
+      "reach": 14,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -105,7 +92,20 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.9
+      "avg_watch_s": 3.8
+    },
+    {
+      "id": "2026-w46-hot-1115",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 4.6
     }
   ],
   "all": [
@@ -113,9 +113,9 @@
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 72.9,
+      "score": 72.7,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
-      "reach": 29,
+      "reach": 30,
       "saved": 0,
       "shares": 6,
       "comments": 0,
@@ -126,14 +126,14 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.1,
+      "score": 26.0,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 45,
+      "reach": 46,
       "saved": 0,
       "shares": 2,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.4
+      "avg_watch_s": 5.3
     },
     {
       "id": "2026-w45-hot-1108m",
@@ -258,7 +258,7 @@
       "lane": "everyone",
       "score": 5.6,
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "reach": 55,
+      "reach": 56,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -336,7 +336,7 @@
       "lane": "everyone",
       "score": 3.1,
       "opening": "Employers must remit employee levies by the 9th day of each month.",
-      "reach": 21,
+      "reach": 22,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -492,12 +492,12 @@
       "lane": "everyone",
       "score": 2.4,
       "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
-      "reach": 123,
+      "reach": 124,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 3.3
+      "avg_watch_s": 3.4
     },
     {
       "id": "2026-w44-d1-money-r2",
@@ -588,7 +588,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.9
+      "avg_watch_s": 4.5
     },
     {
       "id": "2026-w46-d6-kenya",
@@ -609,7 +609,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "The National Treasury hides a secret IMF graft report.",
-      "reach": 22,
+      "reach": 24,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -622,7 +622,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya discharged its last Ebola patient this week.",
-      "reach": 15,
+      "reach": 17,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -635,7 +635,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "President Ruto ordered a full review of school capitation today.",
-      "reach": 13,
+      "reach": 14,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -653,7 +653,20 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.9
+      "avg_watch_s": 3.8
+    },
+    {
+      "id": "2026-w46-hot-1115",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 4.6
     }
   ],
   "youtube": [
@@ -669,7 +682,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 517,
+      "views": 518,
       "likes": 2,
       "comments": 0
     },
@@ -698,6 +711,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w46-hot-1115",
+      "series": "sauti",
+      "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
+      "views": 309,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w46-hot-1109m",
       "series": "sauti",
       "opening": "Kenya won two gold medals on the track in Dakar.",
@@ -709,7 +730,7 @@
       "id": "2026-w46-hot-1113b2340",
       "series": "sauti",
       "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "views": 267,
+      "views": 272,
       "likes": 1,
       "comments": 0
     },
@@ -786,6 +807,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w46-hot-1114m",
+      "series": "sauti",
+      "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
+      "views": 91,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1106",
       "series": "sauti",
       "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
@@ -814,14 +843,6 @@
       "series": "money",
       "opening": "EPRA reviews fuel prices on November 14.",
       "views": 68,
-      "likes": 0,
-      "comments": 0
-    },
-    {
-      "id": "2026-w46-hot-1114m",
-      "series": "sauti",
-      "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
-      "views": 64,
       "likes": 0,
       "comments": 0
     },
@@ -858,6 +879,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w46-d6-kenya",
+      "series": "kenya",
+      "opening": "The Thika road runs 50 kilometres from Nairobi.",
+      "views": 38,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w44-hot-1101m",
       "series": "sauti",
       "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
@@ -866,18 +895,10 @@
       "comments": 0
     },
     {
-      "id": "2026-w46-d6-kenya",
-      "series": "kenya",
-      "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "views": 36,
-      "likes": 0,
-      "comments": 0
-    },
-    {
       "id": "2026-w46-d4-money",
       "series": "money",
       "opening": "Kenyan banks lost Sh1.9 billion to fraud according to People Daily.",
-      "views": 29,
+      "views": 28,
       "likes": 0,
       "comments": 0
     },
@@ -885,7 +906,7 @@
       "id": "2026-w46-hot-1110",
       "series": "sauti",
       "opening": "KRA's new 15% tax directive hits our pockets this week.",
-      "views": 26,
+      "views": 27,
       "likes": 1,
       "comments": 0
     },
@@ -901,7 +922,7 @@
       "id": "2026-w46-d5-straight",
       "series": "straight",
       "opening": "Viral TikTok ads promise guaranteed jobs abroad.",
-      "views": 13,
+      "views": 14,
       "likes": 0,
       "comments": 0
     },
