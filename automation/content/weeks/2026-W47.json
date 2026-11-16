@@ -338,7 +338,7 @@
           "published": "2026-11-10"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -383,7 +383,8 @@
       ],
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1160
+      "tg_msg": 1160,
+      "decided_at": "2026-11-16T12:12:04.532358+03:00"
     },
     {
       "id": "2026-w47-d6-kenya",
@@ -431,7 +432,7 @@
           "published": ""
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "shouting reads as clickbait: words in capitals (KFS, KURA, KWS, NEVER) (let the numbers carry the urgency)"
@@ -469,7 +470,8 @@
       ],
       "track_credit": "Music: \"Newer Wave\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1161
+      "tg_msg": 1161,
+      "decided_at": "2026-11-16T12:12:06.194074+03:00"
     },
     {
       "id": "2026-w47-d7-glasspoll",
@@ -497,7 +499,7 @@
       "bg": "usiku",
       "publish_at": "2026-11-22T18:00:00+03:00",
       "size": "story",
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -548,7 +550,8 @@
       ],
       "track_credit": "Music: \"Newer Wave\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1162
+      "tg_msg": 1162,
+      "decided_at": "2026-11-16T12:12:07.425082+03:00"
     },
     {
       "id": "2026-w47-hot-1116",
