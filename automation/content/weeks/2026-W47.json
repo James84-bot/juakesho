@@ -966,6 +966,20 @@
       "fb_story_id": "1813029546581421",
       "yt_id": "EFeaCOslgeY",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w47-hot-1117m",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-17T18:45:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The World Bank published governance assessments raising concerns over public funds.",
+        "Nairobi records Kenya's highest premature baby deaths as public hospitals lack working incubators."
+      ]
     }
   ],
   "scripts": {

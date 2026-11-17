@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T15:01:38.135386+03:00",
+  "updated": "2026-11-17T15:27:08.636683+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -18,9 +18,9 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.0,
+      "score": 25.9,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 46,
+      "reach": 47,
       "saved": 0,
       "shares": 2,
       "comments": 0,
@@ -69,43 +69,43 @@
   ],
   "bottom": [
     {
-      "id": "2026-w46-hot-1112m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "President Ruto ordered a full review of school capitation today.",
-      "reach": 14,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 10.6
-    },
-    {
-      "id": "2026-w46-hot-1113m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Auditor-General Nancy Gathungu flagged 269 sites.",
-      "reach": 27,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 3.8
-    },
-    {
       "id": "2026-w46-hot-1115",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
-      "reach": 14,
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.6
+      "avg_watch_s": 5.3
+    },
+    {
+      "id": "2026-w47-d1-usiibiwe",
+      "series": "usiibiwe",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Banks in Kenya warn that fake SMS alerts target mobile accounts.",
+      "reach": 79,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.7
+    },
+    {
+      "id": "2026-w47-hot-1116",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
+      "reach": 10,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.7
     }
   ],
   "all": [
@@ -126,9 +126,9 @@
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 26.0,
+      "score": 25.9,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 46,
+      "reach": 47,
       "saved": 0,
       "shares": 2,
       "comments": 0,
@@ -193,12 +193,12 @@
       "lane": "everyone",
       "score": 9.3,
       "opening": "Kenyan banks lost Sh1.9 billion to fraud according to People Daily.",
-      "reach": 22,
+      "reach": 23,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.9
+      "avg_watch_s": 2.8
     },
     {
       "id": "2026-w45-hot-1103e",
@@ -232,12 +232,12 @@
       "lane": "everyone",
       "score": 6.3,
       "opening": "KRA's new 15% tax directive hits our pockets this week.",
-      "reach": 18,
+      "reach": 19,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 4.5
+      "avg_watch_s": 4.4
     },
     {
       "id": "2026-w44-hot-1027",
@@ -258,12 +258,12 @@
       "lane": "everyone",
       "score": 5.6,
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "reach": 56,
+      "reach": 59,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 4.9
+      "avg_watch_s": 4.8
     },
     {
       "id": "2026-w45-hot-1102m",
@@ -344,19 +344,6 @@
       "avg_watch_s": 3.8
     },
     {
-      "id": "2026-w46-hot-1109",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.1,
-      "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
-      "reach": 27,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 6.6
-    },
-    {
       "id": "2026-w44-d2-kenya-r2",
       "series": "kenya",
       "lane": "young_pro",
@@ -375,7 +362,7 @@
       "lane": "everyone",
       "score": 3.0,
       "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
-      "reach": 29,
+      "reach": 30,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -401,12 +388,25 @@
       "lane": "hustle",
       "score": 3.0,
       "opening": "EPRA reviews fuel prices on November 14.",
-      "reach": 33,
+      "reach": 34,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.4
+      "avg_watch_s": 5.2
+    },
+    {
+      "id": "2026-w46-hot-1109",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.0,
+      "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
+      "reach": 28,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 6.4
     },
     {
       "id": "2026-w45-hot-1103m",
@@ -414,12 +414,12 @@
       "lane": "everyone",
       "score": 2.9,
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "reach": 49,
+      "reach": 50,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 8.4
+      "avg_watch_s": 8.5
     },
     {
       "id": "2026-w46-hot-1109m",
@@ -440,12 +440,12 @@
       "lane": "everyone",
       "score": 2.7,
       "opening": "Lamu Port opened its first berth in May 2021.",
-      "reach": 66,
+      "reach": 67,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 2.8
+      "avg_watch_s": 2.9
     },
     {
       "id": "2026-w45-hot-1107m",
@@ -466,7 +466,7 @@
       "lane": "everyone",
       "score": 2.6,
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "reach": 86,
+      "reach": 88,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -479,7 +479,7 @@
       "lane": "everyone",
       "score": 2.4,
       "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "reach": 117,
+      "reach": 118,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -490,9 +490,9 @@
       "id": "2026-w46-hot-1114m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 2.4,
+      "score": 2.3,
       "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
-      "reach": 124,
+      "reach": 126,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -557,12 +557,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Capital FM News reports: One in four women faces online abuse.",
-      "reach": 23,
+      "reach": 24,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.1
+      "avg_watch_s": 3.9
     },
     {
       "id": "2026-w45-hot-1108-r4",
@@ -575,7 +575,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.8
+      "avg_watch_s": 7.7
     },
     {
       "id": "2026-w46-d5-straight",
@@ -596,12 +596,25 @@
       "lane": "hustle",
       "score": 0.0,
       "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "reach": 83,
+      "reach": 86,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.9
+      "avg_watch_s": 3.0
+    },
+    {
+      "id": "2026-w46-d7-glasspoll",
+      "series": "glasspoll",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Opposition leaders are moving to consolidate regional support.",
+      "reach": 15,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.1
     },
     {
       "id": "2026-w46-hot-1110e",
@@ -609,12 +622,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "The National Treasury hides a secret IMF graft report.",
-      "reach": 24,
+      "reach": 25,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.7
+      "avg_watch_s": 3.6
     },
     {
       "id": "2026-w46-hot-1111b1557",
@@ -635,12 +648,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "President Ruto ordered a full review of school capitation today.",
-      "reach": 14,
+      "reach": 15,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 10.6
+      "avg_watch_s": 9.8
     },
     {
       "id": "2026-w46-hot-1113m",
@@ -661,12 +674,38 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
-      "reach": 14,
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.6
+      "avg_watch_s": 5.3
+    },
+    {
+      "id": "2026-w47-d1-usiibiwe",
+      "series": "usiibiwe",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Banks in Kenya warn that fake SMS alerts target mobile accounts.",
+      "reach": 79,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.7
+    },
+    {
+      "id": "2026-w47-hot-1116",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
+      "reach": 10,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.7
     }
   ],
   "youtube": [
@@ -682,7 +721,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 518,
+      "views": 519,
       "likes": 2,
       "comments": 0
     },
@@ -690,7 +729,7 @@
       "id": "2026-w45-hot-1108-r4",
       "series": "sauti",
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "views": 461,
+      "views": 466,
       "likes": 0,
       "comments": 0
     },
@@ -714,7 +753,7 @@
       "id": "2026-w46-hot-1115",
       "series": "sauti",
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
-      "views": 309,
+      "views": 327,
       "likes": 0,
       "comments": 0
     },
@@ -730,7 +769,7 @@
       "id": "2026-w46-hot-1113b2340",
       "series": "sauti",
       "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "views": 272,
+      "views": 278,
       "likes": 1,
       "comments": 0
     },
@@ -794,7 +833,15 @@
       "id": "2026-w45-hot-1108m",
       "series": "sauti",
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "views": 125,
+      "views": 126,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1116",
+      "series": "sauti",
+      "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
+      "views": 115,
       "likes": 0,
       "comments": 0
     },
@@ -802,7 +849,7 @@
       "id": "2026-w45-hot-1107m",
       "series": "sauti",
       "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
-      "views": 110,
+      "views": 112,
       "likes": 0,
       "comments": 0
     },
@@ -810,7 +857,7 @@
       "id": "2026-w46-hot-1114m",
       "series": "sauti",
       "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
-      "views": 91,
+      "views": 98,
       "likes": 0,
       "comments": 0
     },
@@ -858,7 +905,7 @@
       "id": "2026-w45-d5-straight",
       "series": "straight",
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "views": 58,
+      "views": 60,
       "likes": 0,
       "comments": 0
     },
@@ -871,10 +918,18 @@
       "comments": 0
     },
     {
+      "id": "2026-w46-d7-glasspoll",
+      "series": "glasspoll",
+      "opening": "Opposition leaders are moving to consolidate regional support.",
+      "views": 50,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w46-d2-kenya",
       "series": "kenya",
       "opening": "Mount Kenya reaches 5,199 metres in altitude.",
-      "views": 44,
+      "views": 46,
       "likes": 0,
       "comments": 0
     },
@@ -882,7 +937,7 @@
       "id": "2026-w46-d6-kenya",
       "series": "kenya",
       "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "views": 38,
+      "views": 46,
       "likes": 0,
       "comments": 0
     },
@@ -890,7 +945,7 @@
       "id": "2026-w44-hot-1101m",
       "series": "sauti",
       "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "views": 37,
+      "views": 38,
       "likes": 1,
       "comments": 0
     },
@@ -914,7 +969,15 @@
       "id": "2026-w46-hot-1113m",
       "series": "sauti",
       "opening": "Auditor-General Nancy Gathungu flagged 269 sites.",
-      "views": 23,
+      "views": 25,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-d1-usiibiwe",
+      "series": "usiibiwe",
+      "opening": "Banks in Kenya warn that fake SMS alerts target mobile accounts.",
+      "views": 16,
       "likes": 0,
       "comments": 0
     },
