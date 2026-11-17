@@ -977,23 +977,190 @@
     {
       "id": "2026-w47-hot-1117m",
       "template": "sauti",
-      "bg": "usiku",
       "lane": "everyone",
+      "kicker": "Kenyans",
+      "line": "A KRA clerk was charged with *Sh8.5 million* in alleged fraud.",
+      "fact": "The court heard the clerk faced charges over an alleged Sh8.5 million fraud case.",
+      "source": "Capital FM News, 2026-11-17",
+      "message": "A KRA clerk faces a court charge over alleged Sh8.5 million fraud.",
+      "action": "Read the court case details on Capital FM.",
+      "beats": [
+        "A KRA clerk faced charges over *Sh8.5 million* in alleged fraud.",
+        "The official appeared in court to answer the charges today.",
+        "Public funds must be protected by every state agency.",
+        "Tell us below: how can KRA stop inside fraud?"
+      ],
+      "photo_query": "Kenya Revenue Authority Nairobi",
+      "caption": "A KRA clerk charged over Sh8.5 million in alleged fraud. Public institutions must protect public funds, Capital FM News reports.\n\nTell us below: how can KRA stop inside fraud?\n\n#KRA #KenyaOnRecord",
+      "who": "Director of Public Prosecutions",
+      "where": "Nairobi",
+      "when": "17 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Fraud in tax collection robs the public of essential services.",
+      "bg": "usiku",
       "publish_at": "2026-11-17T18:45:00+03:00",
-      "status": "planned",
       "hot": true,
       "beat": "life",
       "avoid": [
         "The World Bank published governance assessments raising concerns over public funds.",
         "Nairobi records Kenya's highest premature baby deaths as public hospitals lack working incubators."
-      ]
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "KRA clerk charged over alleged Ksh8.5m fraud",
+          "link": "https://capitalfm.africa/kra-clerk-charged-over-alleged-ksh8-5m-fraud/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-17"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.7/10. A routine court case about a single clerk is not what Kenyans are on today; focus on top news like political realignments or Sifuna."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 7,
+        "fresh": 4,
+        "voice": 6,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 2,
+        "action": 4,
+        "fair": 6,
+        "impact": 5,
+        "human": 3,
+        "avg": 4.7,
+        "note": "A routine court case about a single clerk is not what Kenyans are on today; focus on top news like political realignments or Sifuna."
+      },
+      "drafted_at": "2026-11-18T01:23:49.616776+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1117m-photo.jpg",
+      "photo_credit": "Photo: KBC · Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/kra-employee-charged-with-forging-degree-certificate/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1117m-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1117m-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "KRA employee charged with forging degree certificate"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "EACC Arrests Former Auditor-General Employee Over Ksh5.8 Million Fraud"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KRA Issues New Warning to Businesses Over Taxes"
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1218
+    },
+    {
+      "id": "2026-w47-hot-1118e",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Voters",
+      "line": "Gachagua and the IEBC set Thursday for talks on the *Smartmatic* contract.",
+      "fact": "The meeting will address the Smartmatic election technology contract and alleged ID issuance bias.",
+      "source": "Capital FM News, 2026-11-17",
+      "message": "Gachagua and IEBC set Thursday for talks on election technology and ID issuance.",
+      "action": "Follow the IEBC updates on voter readiness for 2027.",
+      "beats": [
+        "Gachagua and the IEBC set Thursday for *Smartmatic* contract talks.",
+        "The meeting will also review alleged ID issuance bias.",
+        "Transparent election preparation protects every Kenyan vote.",
+        "Tell us below: is IEBC ready for 2027?"
+      ],
+      "photo_query": "IEBC offices Nairobi",
+      "caption": "Gachagua and IEBC set Thursday for talks on the Smartmatic contract and alleged ID issuance bias. Transparency protects our vote.\n\nTell us below: is IEBC ready for 2027?\n\n#IEBC #KenyaOnRecord",
+      "who": "IEBC and former Deputy President Rigathi Gachagua",
+      "where": "Nairobi",
+      "when": "17 Nov 2026",
+      "side": "both",
+      "tone": "explainer",
+      "impact": "Voters need confidence in election technology and equal access to identity cards.",
+      "bg": "usiku",
+      "publish_at": "2026-11-18T20:00:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Gachagua, IEBC set Thursday for talks on Smartmatic contract, alleged ID issuance bias",
+          "link": "https://capitalfm.africa/gachagua-iebc-set-thursday-for-talks-on-smartmatic-contract-alleged-id-issuance-bias/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-17"
+        }
+      ],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.9/10. Fix the action beat so it ends with a direct question about voter registration instead of a vague follow instruction.",
+          "visual QA: low contrast 2.2:1 (needs 3:1) on 'Gachagua and the IEBC set Thur'"
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 8,
+        "demand": 4,
+        "action": 6,
+        "fair": 7,
+        "impact": 8,
+        "human": 6,
+        "avg": 6.9,
+        "note": "Fix the action beat so it ends with a direct question about voter registration instead of a vague follow instruction."
+      },
+      "drafted_at": "2026-11-18T01:23:49.616783+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1118e-photo.jpg",
+      "photo_credit": "Photo: Capital FM · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/gachagua-iebc-set-thursday-for-talks-on-smartmatic-contract-alleged-id-issuance-bias/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1118e-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1118e-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Gachagua, IEBC set Thursday for talks on Smartmatic contract, alleged ID issuance bias"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "IEBC Suspends By-Election"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Former EACC Boss, NACADA Chief Among 9 Shortlisted for IEBC CEO Job"
+        }
+      ],
+      "ink": {
+        "2": "#FFFFFF"
+      }
     }
   ],
   "scripts": {
-    "radio": "Good evening and welcome to Kenya on Record. Tonight, we look at a tragedy unfolding quietly in our capital’s maternity wings.\n\nRecent data shows Nairobi now leads the country in premature baby deaths. A pre-term infant often needs just two critical things to survive: regulated warmth and oxygen. Yet across Nairobi’s public health facilities, mothers are giving birth only to find neonatal units filled with broken, unserviced, or completely missing incubators.\n\nIn facilities built to serve working-class families, healthcare workers are routinely forced to place multiple babies in a single incubator, or turn desperate parents away to seek private care they cannot afford. Many newborns do not survive the transit. This is happening in a county that controls the largest annual budget in Kenya, with substantial allocations dedicated to health infrastructure and equipment maintenance. When a baby dies because a hospital lacked a basic, functioning incubator, that is not an inevitable tragedy. It is an administrative failure. We must demand an immediate inventory of neonatal equipment across all county facilities.\n\nKwa ufupi: Nairobi inaongoza nchini kwa vifo vya watoto wanaozaliwa kabla ya wakati, si kwa ukosefu wa wataalamu, bali kwa sababu hospitali za umma hazina mashine za incubators zinazofanya kazi. Bajeti ya afya ipo; ni lazima tuwashinikize viongozi wa kaunti kueleza ni kwa nini vifaa hivi vya kuokoa maisha havifanyi kazi.",
-    "voice_note": "Habari zenu. This is Kenya on Record. This week, we need to confront what is happening in Nairobi’s public maternity wards. The capital currently records the highest number of premature baby deaths in Kenya. The painful reality is that many of these infants are dying from preventable causes simply because public facilities lack working incubators. In some hospitals, nurses are forced to put two or three newborns in one machine, while other facilities turn parents away entirely, leaving them to scramble for private ICU beds they can't afford. Nairobi County receives the largest share of health revenue in this country. Where are the maintenance budgets going? Why are basic spare parts taking months to procure while newborns lose their lives? Speak to your MCA, ask about the state of newborn equipment in your local public hospital, and let’s demand real accountability.",
-    "sms": "Usiibiwe: Incubator maintenance is funded in county budgets. Before delivery, confirm your facility's newborn wing works, and demand your MCA audits equipment.",
-    "reels": "Nairobi is the capital city, yet it now leads Kenya in premature baby deaths. Why? Because in our public hospitals, babies who only need basic warmth and oxygen to survive are finding broken or missing incubators. Nairobi County manages the biggest budget in the country, yet neonatal units are left in disrepair. This isn't bad luck—it is institutional neglect. Demand that your MCA accounts for every single public hospital incubator today."
+    "radio": "Hamjambo and welcome to Kenya on Record. Let us examine the decisions and numbers shaping public accountability this week.\n\nFirst, at the Milimani Law Courts, a clerk attached to the Kenya Revenue Authority was arraigned over an alleged eight point five million shilling fraud. The prosecution points to revenue diversion through manipulated tax records. It is a sobering development. While ordinary citizens tighten their belts to comply with every statutory deduction, systemic leaks within our revenue collection agency severely undermine public confidence. True reform at KRA cannot just be about setting higher targets; it must mean water-tight internal systems that hold every officer accountable.\n\nMeanwhile, critical conversations around future elections are taking shape. Rigathi Gachagua and the Independent Electoral and Boundaries Commission have set talks for this Thursday to deliberate on election technology and the issuance of national identity cards. With voter registration fundamentally tied to obtaining an ID, civil society and citizens are watching closely. The core demand remains straightforward: election technology must be transparent and verifiable, and no eligible youth should be disenfranchised by bureaucratic delays at registration bureaus.\n\nKwa ufupi: Karani mmoja wa KRA amefikishwa mahakamani kwa madai ya kufuja shilingi milioni nane nukta tano za ushuru. Wakati huo huo, Rigathi Gachagua na IEBC wanatazamiwa kukutana Alhamisi hii kujadili masuala ya teknolojia ya uchaguzi na utoaji wa vitambulisho vya kitaifa.\n\nStay engaged, verify the facts, and keep duty bearers on record.",
+    "voice_note": "Habari yenu, this is Kenya on Record with your weekly brief. Two key accountability stories are on our radar. First, a KRA clerk has been charged in court over an alleged fraud of 8.5 million shillings through altered tax systems. When ordinary Kenyans are paying every single coin demanded by law, internal revenue leaks cannot be treated as business as usual. Second, on our electoral integrity: Rigathi Gachagua and the IEBC are meeting this Thursday to discuss election technology and national ID issuance. Your national ID is your right and your voter registration pass. Technology must safeguard the ballot, not invite suspicion. Let us watch what commitments come out of that meeting. Share this note and stay alert.",
+    "sms": "Usiibiwe: Always pay KRA taxes via official government paybills only. Never hand cash or send money to an individual clerk's personal number. Verify receipts.",
+    "reels": "Eight point five million shillings. That is the sum a KRA clerk is accused of siphoning through manipulated tax records. While millions of hardworking Kenyans pay their dues down to the very last shilling, public trust erodes when internal controls fail. We are tracking this case at Milimani to see where systemic accountability begins. Follow Kenya on Record."
   },
   "spend_usd": 0.0
 }
