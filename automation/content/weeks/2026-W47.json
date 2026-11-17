@@ -562,7 +562,8 @@
       "track_credit": "Music: \"Aerosol of my Love\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "tg_msg": 1199,
       "auto": true,
-      "decided_at": "2026-11-17T13:01:03.128540+03:00"
+      "decided_at": "2026-11-17T13:01:03.128540+03:00",
+      "photo_checked": "2026-11-17T14:16:51.070129+03:00"
     },
     {
       "id": "2026-w47-hot-1116",
@@ -904,7 +905,7 @@
           "published": "2026-11-17"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -957,7 +958,14 @@
       "reel": true,
       "tg_msg": 1187,
       "decided_at": "2026-11-17T10:17:37.319014+03:00",
-      "photo_checked": "2026-11-17T10:26:22.676324+03:00"
+      "photo_checked": "2026-11-17T10:26:22.676324+03:00",
+      "published_at": "2026-11-17T14:18:05.482948+03:00",
+      "ig_id": "18106076942632511",
+      "fb_id": "3611298265707872",
+      "story_id": "18102259355548783",
+      "fb_story_id": "1813029546581421",
+      "yt_id": "EFeaCOslgeY",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
