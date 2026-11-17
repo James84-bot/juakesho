@@ -894,7 +894,7 @@
           "published": "2026-11-17"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -945,7 +945,9 @@
       ],
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1187
+      "tg_msg": 1187,
+      "decided_at": "2026-11-17T10:17:37.319014+03:00",
+      "photo_checked": "2026-11-17T10:26:22.676324+03:00"
     }
   ],
   "scripts": {
