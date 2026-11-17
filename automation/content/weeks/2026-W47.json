@@ -854,13 +854,105 @@
       "tg_msg": 1183,
       "photo_checked": "2026-11-17T06:06:50.194332+03:00",
       "decided_at": "2026-11-17T07:36:35.662562+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1117",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Parents",
+      "line": "Nairobi records Kenya's *highest number* of premature baby deaths.",
+      "fact": "Data shows premature birth complications remain the leading killer of newborns in Nairobi hospitals.",
+      "message": "Nairobi records Kenya's highest premature baby deaths as public hospitals lack working incubators.",
+      "action": "Demand your MCA prioritises hospital neonatal incubators in the county budget",
+      "source": "Daily Nation, 2026-11-17",
+      "photo_query": "hospital ward Kenya",
+      "who": "Nairobi County Government",
+      "where": "Nairobi",
+      "when": "17 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Families lose newborn babies in public hospitals when basic neonatal equipment is missing.",
+      "caption": "Nairobi now records Kenya's highest number of premature baby deaths because public wards lack neonatal equipment.\n\nParents watch helpless newborns struggle when basic oxygen and warmed cots are missing.\n\nNairobi County Government must equip all level 4 hospitals with functioning incubators by July 2027.\n\nDoes your nearest county health centre have a working incubator?\n\n#HealthKe #KenyaOnRecord",
+      "beats": [
+        "Nairobi recorded Kenya's *highest number* of premature baby deaths.",
+        "Public maternity wards still lack enough *incubators* for tiny newborns.",
+        "City Hall must install *incubators* across all sub-county hospitals.",
+        "Does your local public clinic have a working *incubator*?"
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-11-17T14:15:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The World Bank published governance assessments raising concerns over public funds."
+      ],
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Nairobi records highest number of premature baby deaths in Kenya",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNUEx5THhoSFUwTVMwbHgxRElEWV9CN05tNF80THVTNnRLVm1jajZmazVPa0ZxV0RHZFFQazVpZGVDUF9fYklWcVVHNTN1czloN3BlRlZadmZTS09zWjZHOEgwR2VSLUhLdk9ZOFF0MGctTHBZUFJISTYteGo5Q0huX3A4dFlSYzREV01CWUY5bWxUR05sUXZLdg?oc=5",
+          "published": "2026-11-17"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 3,
+        "action": 8,
+        "fair": 7,
+        "impact": 9,
+        "human": 6,
+        "avg": 7.3,
+        "note": "Remove hashtags to eliminate machine-like tells and improve human voice score."
+      },
+      "drafted_at": "2026-11-17T09:12:09.063506+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1117-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127801-kemsa-moves-reduce-medical-supplies-shortages-and-waste-public-hospitals",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1117-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1117-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "State Reveals New Plan to Address Medicine Shortages in Hospitals"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "KNH Responds After Patient Accuses Hospital of Rejection Despite Paying Ksh45,000"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Over 300,000 to Benefit as Govt Announces Upgrade to County Hospital"
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1187
     }
   ],
   "scripts": {
-    "radio": "Hujambo mwananchi, na karibu kwa Kenya on Record. Mimi ni wako wa ukweli, na leo tunasonga moja kwa moja hadi kwa meza ya utawala bora.\n\nWiki hii, Rais wetu alisimama kidete kujitetea dhidi ya maonyo makali kutoka kwa Benki ya Dunia kuhusu ufisadi nchini. Ni jambo linazua maswali mengi mashinani. Wakati mashirika ya kimataifa yanalalamika kuhusu mianya ya pesa za umma kupotea, serikali inasisitiza kwamba inapambana na ufisadi kikamilifu. Lakini ukweli ni upi chini ya jua?\n\nKumbuka, uwajibikaji sio kazi ya viongozi peke yao; ni wajibu wetu sote kuuliza maswali magumu. Pesa za ushuru hazipaswi kuishia kwenye mifuko ya wachache ilhali huduma za msingi zinadorora. Endelea kufuatilia matumizi ya kaunti yako na kitaifa.\n\n[Swahili Summary]\n\n*Muhtasari:* Rais ametetea serikali yake dhidi ya ripoti za Benki ya Dunia kuhusu ufisadi. Wananchi wanahimizwa kuendelea kudai uwajibikaji kutoka kwa viongozi na kufuatilia matumizi ya rasilimali za umma.",
-    "voice_note": "Sasa, ndugu yangu? Hapa ni Kenya on Record. Umesikia vile Rais ametetea serikali dhidi ya onyo la World Bank kuhusu ufisadi? Sasa swali ni moja tu: Je, maneno haya yanatosha kufunika matundu ya pesa za umma zinazopotea kila siku? Kazi yetu si kukaa kimya. Fuatilia pesa za kaunti yako, uliza maswali, na usikubali kudanganywa. Usiibiwe, jua haki yako!",
-    "sms": "Usiibiwe: Pesa za umma zikitajwa kwenye ripoti za ufisadi, ni jasho lako linapotea. Uliza viongozi wako matumizi, dai uwajibikaji. #KenyaOnRecord",
-    "reels": "World Bank inasema ufisadi unatafuna pesa za umma... lakini Rais anasema serikali yake inajitahidi. Sasa kati ya ripoti na utetezi, nani anadanganya mwananchi? Kwenye Kenya on Record, hatupotezi mwelekeo. Pesa zako, haki yako. Usikubali kuibiwa kimya kimya!"
+    "radio": "Good evening and welcome to Kenya on Record. Tonight, we look at a tragedy unfolding quietly in our capital’s maternity wings.\n\nRecent data shows Nairobi now leads the country in premature baby deaths. A pre-term infant often needs just two critical things to survive: regulated warmth and oxygen. Yet across Nairobi’s public health facilities, mothers are giving birth only to find neonatal units filled with broken, unserviced, or completely missing incubators.\n\nIn facilities built to serve working-class families, healthcare workers are routinely forced to place multiple babies in a single incubator, or turn desperate parents away to seek private care they cannot afford. Many newborns do not survive the transit. This is happening in a county that controls the largest annual budget in Kenya, with substantial allocations dedicated to health infrastructure and equipment maintenance. When a baby dies because a hospital lacked a basic, functioning incubator, that is not an inevitable tragedy. It is an administrative failure. We must demand an immediate inventory of neonatal equipment across all county facilities.\n\nKwa ufupi: Nairobi inaongoza nchini kwa vifo vya watoto wanaozaliwa kabla ya wakati, si kwa ukosefu wa wataalamu, bali kwa sababu hospitali za umma hazina mashine za incubators zinazofanya kazi. Bajeti ya afya ipo; ni lazima tuwashinikize viongozi wa kaunti kueleza ni kwa nini vifaa hivi vya kuokoa maisha havifanyi kazi.",
+    "voice_note": "Habari zenu. This is Kenya on Record. This week, we need to confront what is happening in Nairobi’s public maternity wards. The capital currently records the highest number of premature baby deaths in Kenya. The painful reality is that many of these infants are dying from preventable causes simply because public facilities lack working incubators. In some hospitals, nurses are forced to put two or three newborns in one machine, while other facilities turn parents away entirely, leaving them to scramble for private ICU beds they can't afford. Nairobi County receives the largest share of health revenue in this country. Where are the maintenance budgets going? Why are basic spare parts taking months to procure while newborns lose their lives? Speak to your MCA, ask about the state of newborn equipment in your local public hospital, and let’s demand real accountability.",
+    "sms": "Usiibiwe: Incubator maintenance is funded in county budgets. Before delivery, confirm your facility's newborn wing works, and demand your MCA audits equipment.",
+    "reels": "Nairobi is the capital city, yet it now leads Kenya in premature baby deaths. Why? Because in our public hospitals, babies who only need basic warmth and oxygen to survive are finding broken or missing incubators. Nairobi County manages the biggest budget in the country, yet neonatal units are left in disrepair. This isn't bad luck—it is institutional neglect. Demand that your MCA accounts for every single public hospital incubator today."
   },
   "spend_usd": 0.0
 }
