@@ -140,7 +140,7 @@
         "outlet": "UNESCO World Heritage Centre",
         "photo_query": "Lamu Old Town Kenya street"
       },
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "no `side`: every post says side: government, opposition, both or none",
@@ -181,7 +181,14 @@
       "reel": true,
       "tg_msg": 1141,
       "decided_at": "2026-11-15T18:01:15.090072+03:00",
-      "fresh_checked": "2026-11-16T18:09:54.696078+03:00"
+      "fresh_checked": "2026-11-16T18:09:54.696078+03:00",
+      "published_at": "2026-11-17T12:50:59.930916+03:00",
+      "ig_id": "18117322325589513",
+      "fb_id": "4565751850307931",
+      "story_id": "18202581550387907",
+      "fb_story_id": "1136467015915748",
+      "yt_id": "vwfrbBZH9Io",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-d3-promise",
@@ -290,7 +297,7 @@
       "tg_msg": 1142
     },
     {
-      "id": "2026-w47-d5-straight",
+      "id": "2026-w47-d5-straight-r2",
       "template": "straight",
       "lane": "hustle",
       "series": "Myth or Fact",
@@ -364,28 +371,26 @@
         "note": "Solid execution on a prevalent fake news item."
       },
       "drafted_at": "2026-11-16T09:35:48.210469+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d5-straight-photo.jpg",
-      "photo_credit": "File photo: Kenyans.co.ke",
-      "photo_kind": "topic",
-      "photo_outlet": "Kenyans.co.ke",
-      "photo_source": "https://www.kenyans.co.ke/news/128857-ntsa-urges-govt-declare-road-crashes-national-disaster-after-latest-deadly-crash",
-      "extra_photos": [
-        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d5-straight-photo-2.jpg"
-      ],
+      "photo_source": "https://commons.wikimedia.org/wiki/File:2022_Kenya_election_detailed_partial_results.png",
+      "reel": true,
+      "rephoto_reason": "Kenyans.co.ke's own edit (Added a circular inset image of a man)",
+      "words_approved": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d5-straight-r2-photo.jpg",
+      "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
       "shot_info": [
         {
-          "credit": "File photo: Kenyans.co.ke",
-          "title": "NTSA Piles Pressure on Ruto with New Demand After Latest Deadly Accident"
-        },
-        {
-          "credit": "File photo: Kenyans.co.ke",
-          "title": "KWS Under Pressure as Mysterious Hippo Deaths Rock Lake Naivasha"
+          "credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
         }
       ],
-      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "reel": true,
-      "tg_msg": 1160,
-      "decided_at": "2026-11-16T12:12:04.532358+03:00"
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/videos/2026-w47-d5-straight-r2-broll.mp4",
+      "broll_credit": "Footage: commlab / Pixabay",
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 1198,
+      "auto": true,
+      "decided_at": "2026-11-17T13:01:03.128513+03:00"
     },
     {
       "id": "2026-w47-d6-kenya",
@@ -475,7 +480,7 @@
       "decided_at": "2026-11-16T12:12:06.194074+03:00"
     },
     {
-      "id": "2026-w47-d7-glasspoll",
+      "id": "2026-w47-d7-glasspoll-r2",
       "template": "glasspoll",
       "lane": "everyone",
       "side": "both",
@@ -526,14 +531,17 @@
         "note": "Engaging poll tightly aligned with the week's top budget deadline."
       },
       "drafted_at": "2026-11-16T09:35:48.210479+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-photo.jpg",
+      "photo_source": "https://www.kenyans.co.ke/news/128726-treasury-begins-bids-evaluation-460km-nairobi-mombasa-expressway",
+      "reel": true,
+      "rephoto_reason": "Kenyans.co.ke's own edit (Circular inset photo of a man)",
+      "words_approved": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-r2-photo.jpg",
       "photo_credit": "File photo: Kenyans.co.ke",
       "photo_kind": "topic",
       "photo_outlet": "Kenyans.co.ke",
-      "photo_source": "https://www.kenyans.co.ke/news/128726-treasury-begins-bids-evaluation-460km-nairobi-mombasa-expressway",
       "extra_photos": [
-        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-photo-2.jpg",
-        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-photo-3.jpg"
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-r2-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-r2-photo-3.jpg"
       ],
       "shot_info": [
         {
@@ -542,17 +550,19 @@
         },
         {
           "credit": "File photo: Kenyans.co.ke",
-          "title": "Treasury Revives Ksh 337B High Grand Falls Dam Project"
+          "title": "Treasury Reveals Planned Changes in November-December Fuel Prices"
         },
         {
           "credit": "File photo: Kenyans.co.ke",
-          "title": "Treasury Reveals Planned Changes in November-December Fuel Prices"
+          "title": "Treasury Proposes New Car Loan and Mortgage Scheme for TSC"
         }
       ],
-      "track_credit": "Music: \"Newer Wave\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "reel": true,
-      "tg_msg": 1162,
-      "decided_at": "2026-11-16T12:12:07.425082+03:00"
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/videos/2026-w47-d7-glasspoll-r2-broll.mp4",
+      "broll_credit": "Footage: phlyingdoctor / Pixabay",
+      "track_credit": "Music: \"Aerosol of my Love\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 1199,
+      "auto": true,
+      "decided_at": "2026-11-17T13:01:03.128540+03:00"
     },
     {
       "id": "2026-w47-hot-1116",
