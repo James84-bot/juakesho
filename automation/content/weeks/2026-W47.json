@@ -797,7 +797,7 @@
           "published": "2026-11-16"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "accusation: a named person with an allegation needs two outlets or an official source (court, EACC, DPP, Auditor-General, a .go.ke page)",
@@ -852,7 +852,8 @@
       "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1183,
-      "photo_checked": "2026-11-17T06:06:50.194332+03:00"
+      "photo_checked": "2026-11-17T06:06:50.194332+03:00",
+      "decided_at": "2026-11-17T07:36:35.662562+03:00"
     }
   ],
   "scripts": {
