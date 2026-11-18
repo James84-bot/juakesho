@@ -1157,7 +1157,7 @@
       "replaced_by": "2026-w47-hot-1118e-r2"
     },
     {
-      "id": "2026-w47-hot-1118",
+      "id": "2026-w47-hot-1118-r2",
       "template": "sauti",
       "lane": "everyone",
       "kicker": "Salaried workers",
@@ -1229,20 +1229,22 @@
         "note": "Match the post to this week's active news stories like the State of the Nation or IEBC talks, and write with original human phrasing instead of templates."
       },
       "drafted_at": "2026-11-18T09:11:49.886079+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1118-photo.jpg",
-      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:John_Mbadi_Ng%E2%80%99ongo_official_portrait.jpg",
+      "reel": true,
+      "rephoto_reason": "Kenyans.co.ke's own edit (Two photos combined side by side with a circular inset)",
+      "words_approved": true,
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1118-r2-photo.jpg",
+      "photo_credit": "File photo: Government of Kenya / Wikimedia Commons, Public domain",
       "photo_kind": "file",
-      "photo_outlet": "Kenyans.co.ke",
-      "photo_source": "https://www.kenyans.co.ke/news/129093-cs-mbadi-rejects-claims-rironi-mau-summit-highway-cost-was-inflated",
+      "photo_outlet": "",
       "shot_info": [
         {
-          "credit": "File photo: Kenyans.co.ke",
-          "title": "Mbadi Fires Back at Gachagua Over Rironi-Mau Road Cost Claims"
+          "credit": "File photo: Government of Kenya / Wikimedia Commons, Public domain",
+          "title": ""
         }
       ],
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "reel": true,
-      "tg_msg": 1222
+      "tg_msg": 1229
     },
     {
       "id": "2026-w47-hot-1118e-r2",
@@ -1284,7 +1286,7 @@
           "published": "2026-11-17"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 6.0/10. Replace the generic election caption with the exact demand Gachagua tabled so readers know what is at stake."
@@ -1326,7 +1328,8 @@
       "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1223,
-      "photo_checked": "2026-11-18T10:35:46.721590+03:00"
+      "photo_checked": "2026-11-18T10:35:46.721590+03:00",
+      "decided_at": "2026-11-18T12:04:43.854726+03:00"
     }
   ],
   "scripts": {
