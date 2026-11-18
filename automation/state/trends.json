@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-18T12:13:09.890091+00:00",
+  "fetched": "2026-11-18T14:03:01.888435+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -26,51 +26,7 @@
     },
     {
       "geo": "KE",
-      "title": "twitch",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "‘Grand Theft Auto VI’ is an astonishing American epic",
-          "url": "https://www.washingtonpost.com/entertainment/video-games/2026/11/18/grand-theft-auto-vi-is-an-astonishing-american-epic/",
-          "source": "The Washington Post"
-        },
-        {
-          "title": "Grand Theft Auto VI Is a Masterpiece",
-          "url": "https://www.bloomberg.com/news/features/2026-11-18/gta-6-review-rockstar-games-latest-is-a-masterpiece",
-          "source": "Bloomberg.com"
-        },
-        {
-          "title": "Grand Theft Auto VI is a grounded love story, a gonzo crime thriller and a gaming triumph",
-          "url": "https://www.npr.org/2026/11/18/nx-s1-6040326/grand-theft-auto-6-review-vice-city-masterpiece",
-          "source": "NPR"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "lakers vs hornets",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Luka Doncic Kept Waving Off JJ Redick’s Plays, Because He Wanted Quentin Grimes To Get The Ball",
-          "url": "https://sports.ndtv.com/us/nba/luka-doncic-kept-waving-off-jj-redick-s-plays-because-he-wanted-quentin-grimes-to-get-the-ball-12343465",
-          "source": "NDTV Sports"
-        },
-        {
-          "title": "Thybulle's overtime steal helps Lakers win 9th straight",
-          "url": "https://www.basketball.com.au/news/aussies-in-nba-results-november-18-2026-matisse-thybulle",
-          "source": "Basketball.com.au"
-        },
-        {
-          "title": "NBA Roundup: Doncic fuels furious rally, Wemby falters in rough night",
-          "url": "https://www.eurohoops.net/en/nba-news/2036929/luka-doncic-victor-wembanyama-nba-european-recap-2/",
-          "source": "Eurohoops"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "nairobi expressway",
+      "title": "nairobi expressway financial losses",
       "traffic": "1000+",
       "news": [
         {
@@ -92,30 +48,8 @@
     },
     {
       "geo": "KE",
-      "title": "mexico vs jamaica",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Jamaica 3-2 Mexico: Nations League quarterfinal report",
-          "url": "https://www.sofascore.com/news/jamaica-3-2-mexico-nations-league-quarterfinal-report",
-          "source": "Sofascore"
-        },
-        {
-          "title": "Preview: Mexico vs Jamaica - prediction, team news, lineups",
-          "url": "https://www.sportsmole.co.uk/football/mexico/preview/mexico-vs-jamaica-prediction-team-news-lineups_609144.html",
-          "source": "Sports Mole"
-        },
-        {
-          "title": "Mexico 1-0 Jamaica: Marquez's first win clinches CONCACAF Nations League semi-finals spot",
-          "url": "https://www.fotmob.com/news/o4w2d2bakfvc1plby8fqcmukr-mexico-1-0-jamaica-marquezs-first-win-clinches-concacaf-nations-league-semi-finals-spot",
-          "source": "FotMob"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "turkana boy",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Ruto announces plans to move ‘Turkana Boy’ remains to Uhuru Park for public viewing",
@@ -131,6 +65,28 @@
           "title": "Kenya to show original Turkana Boy remains to public for the first time, says Ruto",
           "url": "https://educationnews.co.ke/news/kenya-to-show-original-turkana-boy-remains-to-public-for-the-first-time-says-ruto",
           "source": "Education News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "twitch",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "The future of Twitch might belong to its smaller streamers",
+          "url": "https://www.nbcnews.com/tech/tech-news/twitch-middle-tier-streamers-making-living-platform-rcna608808",
+          "source": "NBC News"
+        },
+        {
+          "title": "How To Stream Twitch On Your TV",
+          "url": "https://www.engadget.com/2314226/how-to-stream-twitch-on-tv/",
+          "source": "Engadget"
+        },
+        {
+          "title": "Twitch debuts shoppable, skippable ads as TwitchCon feels growing pains",
+          "url": "https://www.marketingdive.com/news/twitch-debuts-shoppable-skippable-ads-as-twitchcon-feels-growing-pains/874614/",
+          "source": "Marketing Dive"
         }
       ]
     },
@@ -198,6 +154,50 @@
           "title": "Man armed with axe accused of destroying US military plane at Shannon airport in Ireland",
           "url": "https://www.theguardian.com/us-news/2026/nov/18/man-accused-of-destroying-us-military-plane-at-shannon-airport-in-ireland",
           "source": "The Guardian"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "blood pressure",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Blood pressure medication recalled nationwide. See affected drug",
+          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/blood-pressure-medication-recalled-nationwide-november-2026/92823483007/",
+          "source": "USA Today"
+        },
+        {
+          "title": "Blood pressure drug recalled nationwide over possible metal contamination",
+          "url": "https://www.foxbusiness.com/economy/blood-pressure-drug-recalled-nationwide-over-possible-metal-contamination",
+          "source": "Fox Business"
+        },
+        {
+          "title": "Blood-pressure medication recalled over potential contamination with metal, laceration risk",
+          "url": "https://www.nxsmediawire.com/news/blood-pressure-medication-recalled-over-potential-contamination-with-metal-laceration-risk/",
+          "source": "https://www.nxsmediawire.com/"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "gta 6 release date",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "New Zealand tricks and annual leave - the lengths fans are going to for GTA 6",
+          "url": "https://www.bbc.com/news/articles/cm4gn9xnn1ppo",
+          "source": "BBC"
+        },
+        {
+          "title": "Logitech Announces That It Will Give Employees Time Off for Video Game Releases Ahead of GTA 6 Launch",
+          "url": "https://www.ign.com/articles/logitech-is-letting-employees-take-work-off-for-game-releases-just-ahead-of-gta-6",
+          "source": "IGN"
+        },
+        {
+          "title": "GTA VI is coming, and these gamers are planning their getaways",
+          "url": "https://www.cnn.com/2026/11/17/entertainment/grand-theft-auto-vi-release-fans-cec",
+          "source": "CNN"
         }
       ]
     },
