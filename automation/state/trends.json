@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-18T06:06:43.086439+00:00",
+  "fetched": "2026-11-18T06:45:08.823771+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -25,6 +25,50 @@
     },
     {
       "geo": "KE",
+      "title": "business daily africa",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "NSE extends trading hours to 4pm to boost foreign investment",
+          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/nse-extends-trading-hours-to-4pm-5673964",
+          "source": "Business Daily"
+        },
+        {
+          "title": "Kenya’s stock exchange just got new longer hours",
+          "url": "https://www.dawan.africa/news/kenyas-stock-exchange-just-got-new-longer-hours",
+          "source": "Dawan Africa"
+        },
+        {
+          "title": "NSE Extends Trading Hours to 4pm From January 2027",
+          "url": "https://kenyanwallstreet.com/nse-extends-trading-hours-for-first-time-since-2008",
+          "source": "The Kenyan Wallstreet"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "uruguay vs dominican republic",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Uruguay vs Dominican Republic: Friendlies stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6jd75xzkn21t",
+          "source": "BBC"
+        },
+        {
+          "title": "Uruguay vs Dominican Republic Prediction: After the victory over Argentina",
+          "url": "https://www.telecomasia.net/sports-betting/tips/football/uruguay-vs-dominican-republic-match-prediction-17-november-2026/",
+          "source": "Telecom Asia Sport"
+        },
+        {
+          "title": "Uruguay vs. Dominican Republic Lineups, Live Streaming, How & Where to Watch on TV",
+          "url": "https://sports.yahoo.com/articles/uruguay-vs-dominican-republic-lineups-220000840.html",
+          "source": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "usa vs haiti",
       "traffic": "500+",
       "news": [
@@ -34,14 +78,14 @@
           "source": "Goal.com"
         },
         {
+          "title": "USA 2-0 Haiti: Pulisic strikes, McKennie delivers two assists in Nations League quarters",
+          "url": "https://www.sofascore.com/news/usa-2-0-haiti-pulisic-strikes-mckennie-delivers-two-assists-in-nations-league-quarters",
+          "source": "Sofascore"
+        },
+        {
           "title": "Haiti fans celebrate culture, share political views despite 6-0 loss to US",
           "url": "https://haitiantimes.com/2026/11/15/haiti-fans-celebrate-national-pride-miami-us-match/",
           "source": "The Haitian Times"
-        },
-        {
-          "title": "Pochettino era officially ends, but optimism remains high for USMNT's future",
-          "url": "https://sports.yahoo.com/videos/pochettino-era-ends-optimism-remains-040700625.html",
-          "source": "Yahoo Sports"
         }
       ]
     },
@@ -61,9 +105,9 @@
           "source": "Reuters Connect"
         },
         {
-          "title": "The Weight of Scoring on Julián Quiñones’ Shoulders: Mexico’s Big Hope Against Jamaica",
-          "url": "https://www.soyfutbol.com/en/leagues/the-weight-of-scoring-on-julian-quinones-shoulders-mexicos-big-hope-against-jamaica-20261117-0059.html",
-          "source": "Soy Futbol"
+          "title": "Corona secured Mexico’s berth at CNL Finals and 2027 Gold Cup",
+          "url": "https://www.concacaf.com/competitions/nations-league/news/corona-secured-mexico-s-berth-at-cnl-finals-and-2027-gold-cup",
+          "source": "Concacaf | Official Website"
         }
       ]
     },
@@ -92,74 +136,30 @@
     },
     {
       "geo": "KE",
-      "title": "business daily africa",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "NSE extends trading hours to 4pm to boost foreign investment",
-          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/nse-extends-trading-hours-to-4pm-5673964",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Kenya’s stock exchange just got new longer hours",
-          "url": "https://www.dawan.africa/news/kenyas-stock-exchange-just-got-new-longer-hours",
-          "source": "Dawan Africa"
-        },
-        {
-          "title": "Nairobi Securities Exchange extends trading hours to 4pm for first time in 19 years",
-          "url": "https://businessday.ng/africa/article/nairobi-securities-exchange-extends-trading-hours-to-4pm-for-first-time-in-19-years/",
-          "source": "Business News Nigeria"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "uruguay vs dominican republic",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Uruguay vs Dominican Republic: Friendlies stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c6jd75xzkn21t",
-          "source": "BBC"
-        },
-        {
-          "title": "Uruguay vs Dominican Republic Prediction: After the victory over Argentina",
-          "url": "https://www.telecomasia.net/sports-betting/tips/football/uruguay-vs-dominican-republic-match-prediction-17-november-2026/",
-          "source": "Telecom Asia Sport"
-        },
-        {
-          "title": "Uruguay vs. Dominican Republic Lineups, Live Streaming, How & Where to Watch on TV",
-          "url": "https://sports.yahoo.com/articles/uruguay-vs-dominican-republic-lineups-220000840.html",
-          "source": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "timberwolves vs trail blazers",
       "traffic": "200+",
       "news": [
         {
-          "title": "[[ＬＩＶＥ＠ＳＴＲＥＡＭｓ]ＦＲＥＥ＝] Trail Blazers vs Timberwolves LIVE Streams ON Tv Channel",
-          "url": "https://vacunasaep.org/sites/all/libraries/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=/%5C/keeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=live-streams-free-trail-blazers-vs-6jftr",
+          "title": "‍‍‍TV~[LIVESTREAMs]!! Portland Trail Blazers vs Minnesota Timberwolves 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 Ｔｖ Ｃｈａｎｎｅｌ 17 November 2026",
+          "url": "https://vacunasaep.org/sites/all/libraries/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=/%5C/keeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=tv-livestreams-portland-trail-blazers-vs-gdpjw",
           "source": "Comité Asesor de Vacunas de la AEP"
         },
         {
-          "title": "Unreal finish as Wolves sweep back-to-back against Portland",
-          "url": "https://bringmethesports.com/unreal-finish-as-wolves-sweep-back-to-back-against-portland",
-          "source": "Bring Me the Sports"
+          "title": "Damian Lillard hits five triples, scores 25 points",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/damian-lillard-hits-five-triples-scores-25-points",
+          "source": "NBC Sports"
         },
         {
-          "title": "LaMelo Ball's steal sets up Wolves' go-ahead layup, then Trey Lyles makes game-saving block vs. Trail Blazers",
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/lamelo-balls-steal-sets-up-wolves-go-ahead-layup-then-trey-lyles-makes-game-saving-block-vs-trail-blazers-045647191.html",
-          "source": "Yahoo Sports"
+          "title": "Jaden McDaniels hits the bucket vs. Portland Trail Blazers",
+          "url": "https://africa.espn.com/video/clip/_/id/50517059/jaden-mcdaniels-hits-bucket-vs-portland-trail-blazers",
+          "source": "ESPN"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "nse",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "State to seek income proof from buyers of NSE shares",
@@ -167,14 +167,14 @@
           "source": "Business Daily"
         },
         {
-          "title": "NSE IX looks to revive stock futures volumes amid SGX halt",
-          "url": "https://www.newindianexpress.com/business/2026/Nov/18/nse-ix-looks-to-revive-stock-futures-volumes-amid-sgx-halt",
-          "source": "The New Indian Express"
+          "title": "NSE or BSE: Why are experts bullish on NSE shares? Here's what technical charts hint at? | Target price, stop-loss",
+          "url": "https://www.tradingview.com/news/moodys:050e9494689d6:0-nse-or-bse-why-are-experts-bullish-on-nse-shares-here-s-what-technical-charts-hint-at-target-price-stop-loss/",
+          "source": "TradingView"
         },
         {
-          "title": "NSE extends trading hours to 4pm to boost foreign investment",
-          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/nse-extends-trading-hours-to-4pm-5673964",
-          "source": "Business Daily"
+          "title": "Why Is NSE Share Price Rising? Stock Hits Record High: Is Its Valuation Justified?",
+          "url": "https://www.indmoney.com/blog/nse-share-record-high-valuation-analysis",
+          "source": "INDmoney"
         }
       ]
     }
