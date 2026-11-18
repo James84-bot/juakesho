@@ -1201,7 +1201,7 @@
           "published": "2026-11-18"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 4.5/10. Match the post to this week's active news stories like the State of the Nation or IEBC talks, and write with original human phrasing instead of templates."
@@ -1245,7 +1245,14 @@
       ],
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "tg_msg": 1229,
-      "decided_at": "2026-11-18T12:19:48.543277+03:00"
+      "decided_at": "2026-11-18T12:19:48.543277+03:00",
+      "published_at": "2026-11-18T12:47:31.941482+03:00",
+      "ig_id": "18127852336687306",
+      "fb_id": "1928236104809142",
+      "story_id": "18137337190598028",
+      "fb_story_id": "1560348202784366",
+      "yt_id": "fmf76X2CGIk",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-hot-1118e-r2",
