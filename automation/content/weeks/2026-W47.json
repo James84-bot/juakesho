@@ -1338,13 +1338,95 @@
       "tg_msg": 1223,
       "photo_checked": "2026-11-18T10:35:46.721590+03:00",
       "decided_at": "2026-11-18T12:04:43.854726+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1118m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Mobile Money",
+      "line": "Mobile money transactions fell despite Kenyans having *97 million* active lines.",
+      "fact": "KNBS reports mobile money transactions dropped even as total SIM subscriptions reached 97 million.",
+      "source": "People Daily, 2026-11-18",
+      "photo_query": "mobile money kiosk Kenya",
+      "message": "Mobile transactions fell despite 97 million SIM cards as fees push Kenyans to cash.",
+      "action": "Check your monthly mobile money transaction charges on your statement",
+      "beats": [
+        "Mobile money deals fell despite *97 million* active SIM lines in Kenya.",
+        "KNBS reports that Kenyans are sending less money through their phones.",
+        "High taxes and transfer fees are pushing people back to *cash*.",
+        "Are you using more *cash* than M-Pesa this month?"
+      ],
+      "caption": "KNBS data shows mobile money transactions dropped even as SIM subscriptions hit 97 million. High transfer fees and taxes are pushing more people to use physical notes.\n\nAre you using more cash than mobile money this month?\n\n#MobileMoney #CostOfLiving #KenyaOnRecord",
+      "who": "KNBS and Central Bank of Kenya",
+      "where": "National",
+      "when": "18 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "High transaction taxes force Kenyans to withdraw hard cash to avoid extra fees.",
+      "bg": "usiku",
+      "publish_at": "2026-11-18T19:15:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Gachagua and IEBC set Thursday for talks on election technology and ID issuance.",
+        "Treasury must clarify the exact date Kenyan workers will receive promised PAYE tax relief.",
+        "Gachagua presents demands on voter registration and election technology to IEBC ahead of talks."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "KNBS: M-Pesa era sees Kenya’s mobile money transactions fall despite 97M subscriptions",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONjZGcHdnWlZQQmFfVmxPY0o4eTdUdFl3bWhrN2hJZXhvZmplVlQ2TEIwSEpVRUhYVkVEWmtfZjVfajRya3NTUFJuMWFuam9pc3lPYklRNEoySjZfR1ZLM2k5YkNQNkp6ejl1Ym5DWGRuNWNoajQxSThNeXZrelFob1R2Mzh5U2xBQXktcHdULW1PXzJCN1dTLVdFZElISzd2cDc4NGJqR2cycXRHSV8wNDJwdzBPMXRKZVlzd193?oc=5",
+          "published": "2026-11-18"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 10,
+        "action": 8,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.7,
+        "note": "Strong, well-grounded post that accurately reflects current economic pressures."
+      },
+      "drafted_at": "2026-11-18T15:26:56.437601+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1118m-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "file",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129004-transport-costs-surge-17-october-inflation-hits-73-knbs",
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "KNBS Reveals 17 Items That Have Become More Expensive for Kenyans"
+        }
+      ],
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1237
     }
   ],
   "scripts": {
-    "radio": "Habari za jioni, na karibu kwenye Kenya on Record. Mimi ni mtangazaji wako, na leo tunaziangazia kile kinachoendelea katika maandalizi ya uchaguzi na uwazi wa IEBC.\n\nWiki hii, aliyekuwa Naibu Rais Rigathi Gachagua ameweka shinikizo wazi kwa Tume Huru ya Uchaguzi na Mipaka (IEBC). Gachagua anaitaka IEBC kuweka wazi mfumo wake wa kiteknolojia na jinsi usajili wa wapigakura unavyoendeshwa, kabla ya mkutano wao muhimu uliopangwa kufanyika Alhamisi hii. Hii si habari ya kupuuzwa. Teknolojia ndiyo roho ya uchaguzi wowote wa kuaminika. Wananchi wanataka kujua: Je, seva ziko wapi? Wasifu wa wapigakura unasimamiwa vipi ili kuzuia kasoro zilizojitokeza hapo awali? Uwazi huu ni muhimu ili kujenga imani ya umma.\n\nKumbuka, uwazi katika uendeshaji wa IEBC si upendeleo; ni haki ya kikatiba ya kila Mkenya. Endelea kufuatilia Kenya on Record kwa taarifa za kina na za kuaminika.\n\n*Muhtasari wa Kiswahili:* Rigathi Gachagua ameitaka IEBC kuweka wazi teknolojia yake na usajili wa wapigakura kabla ya mkutano wa Alhamisi, akisisitiza umuhimu wa uwazi ili kulinda demokrasia yetu.",
-    "voice_note": "Wadau, habari za leo. Hapa Kenya on Record tunaangazia shinikizo kutoka kwa Rigathi Gachagua kuelekea mkutano wa Alhamisi na IEBC. Gachagua anataka tume ieleze wazi jinsi teknolojia yao itafanya kazi na jinsi usajili wa wapigakura unavyoendeshwa. Uchaguzi huru na wa haki huanza na mitambo inayoeleweka na isiyokuwa na siri. Usikae nyuma, fuatilia ukweli na uthibitishe mambo kabla ya Alhamisi hii.",
-    "sms": "Usiibiwe: Kura yako, nguvu yako! Dai uwazi kutoka kwa IEBC kuhusu teknolojia na usajili wa wapigakura. Fuatilia ukweli na Kenya on Record.",
-    "reels": "[Visual: Gachagua akiongea kwa msisitizo, ikifuatiwa na picha ya jengo la IEBC na skrini ya kompyuta yenye alama ya swali]\n\nVoice-over (mwenye sauti thabiti na ya kistaarabu):\n\"Teknolojia ya uchaguzi si siri ya serikali! Wiki hii, Gachagua anataka majibu mazito kutoka kwa IEBC kuhusu mfumo wa kiteknolojia na usajili wa wapigakura kabla ya mkutano wa Alhamisi. Je, tuko tayari kwa uchaguzi huru na wa wazi? Fuatilia Kenya on Record ujue ukweli.\""
+    "radio": "Sasa, wakenya. Welcome to Kenya on Record. Let’s talk about something we are all feeling in our pockets this week. \n\nLook at the numbers: Kenya now has over 97 million registered SIM cards. That is massive. Nearly every adult has a phone, and many have two. Yet, official data shows that the value and volume of mobile money transactions actually dropped. \n\nHow is that possible? Watu wamechoka. \n\nEvery time you send money, withdraw, or pay for tokens, the charges bite deep into what's left. Transactions fees have become another tax on the mwananchi. So what are people doing? We are going back to the old school. Cash is making a loud comeback in many neighborhoods because people are calculating the cost of digital convenience. When sending five hundred bob costs you a chunk in fees, walking to the shop with physical cash starts making a lot of sense. \n\nHigh transaction costs do not just hurt users; they slow down small businesses trying to digitize. If the cost of moving money remains punitive, people will simply opt out. Regulators and telcos need to listen. \n\n*Habari kwa ufupi:* Kwenye ripoti yetu ya wiki hii, matumizi ya pesa za simu yameshuka licha ya kuwa na kadi za simu milioni tisini na saba nchini. Sababu kuu ni gharama ya juu ya utozaji wa ada, hali inayowalazimisha wananchi wengi kurejea kwenye matumizi ya pesa taslimu ili kulinda mifuko yao.",
+    "voice_note": "Mazee, hii ni Kenya on Record. Siku hizi tuko na SIM cards milioni 97 hapa Kenya, lakini mnajua nini inashangaza? Mobile transactions zimeshuka! Unashangaa kivipi na kila mtu ako na simu? Ukweli ni kwamba hizo transaction fees zimekua mzigo mzito sana. Watu wameanza kukimbilia cash tena juu kutuma ama kutoa pesa inakata kiasi kikubwa sana ya mshahara au faida yako ya biashara. Serikali na telcos wanapiga kelele kuhusu digital economy, lakini wanapiga wateja ushuru mpaka inachosha. Hii economy ya wallet kavu inatuhusu sisi sote. Sikiza hesabu yako vizuri kabla ya kutuma hiyo pesa.",
+    "sms": "Usiibiwe: Pima gharama kabla ya kutuma au kutoa pesa kwa simu. Ada za juu zinatafuna pesa yako polepole. Tumia cash pale inapowezekana kulinda mfuko wako.",
+    "reels": "[Visual: Frustrated Kenyan looking at a phone screen showing a high transaction fee, then counting physical notes at a local kiosk]\n\nVoice-over (steady, serious tone):\nNinini kinaendelea? Kenya iko na SIM cards milioni 97, lakini mobile money transactions zimeshuka! Sababu? Transaction fees zimekuwa kero. Wakenya sasa wanarudi kwa cash sababau gharama ya kutuma pesa imekuwa mzigo mzito. Je, digital economy inatufaidi kweli? Weka maoni yako hapa chini na ukumbuke, fuatilia ukweli na Kenya on Record."
   },
   "spend_usd": 0.0
 }

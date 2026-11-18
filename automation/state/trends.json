@@ -1,120 +1,77 @@
 {
-  "fetched": "2026-11-18T06:45:08.823771+00:00",
+  "fetched": "2026-11-18T12:13:09.890091+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "jack daniel's",
+      "title": "george saitoti",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Saitoti brother reveals DNA results of man claiming share of ex-VP's estate",
+          "url": "https://nation.africa/kenya/news/saitoti-brother-reveals-dna-results-of-man-claiming-share-of-ex-vp-s-estate-5673856",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "DNA test establishes Njage as ex-Minister Saitoti's son, court told",
+          "url": "https://www.the-star.co.ke/news/2026-11-18-dna-establishes-njage-as-saitotis-son-court-told",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "99.9999% DNA Match: Saitoti’s brother backs man's claim to late VP’s wealth",
+          "url": "https://www.tuko.co.ke/kenya/647112-kenyan-newspapers-november-18-widow-fights-exhumation-bid-man-claims-share-saitotis-estate/",
+          "source": "Tuko News"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "twitch",
       "traffic": "1000+",
       "news": [
         {
-          "title": "KRA to auction 965 containers of Jack Daniel’s belonging to tycoon Kiuna",
-          "url": "https://www.businessdailyafrica.com/bd/economy/kra-auctions-965-containers-of-jack-daniel-belonging-to-kiuna-5674368",
-          "source": "Business Daily"
+          "title": "‘Grand Theft Auto VI’ is an astonishing American epic",
+          "url": "https://www.washingtonpost.com/entertainment/video-games/2026/11/18/grand-theft-auto-vi-is-an-astonishing-american-epic/",
+          "source": "The Washington Post"
         },
         {
-          "title": "Milwaukee Bucks and Jack Daniel’s To Release Third Single Barrel Select Whiskey Collection In Collaboration With Brandon Jennings",
-          "url": "https://bucks.com/news/milwaukee-bucks-and-jack-daniels-to-release-third-single-barrel-select-whiskey-collection-in-collaboration-with-brandon-jennings",
-          "source": "NBA.com"
+          "title": "Grand Theft Auto VI Is a Masterpiece",
+          "url": "https://www.bloomberg.com/news/features/2026-11-18/gta-6-review-rockstar-games-latest-is-a-masterpiece",
+          "source": "Bloomberg.com"
         },
         {
-          "title": "Jack Daniel’s releases limited edition Milwaukee Bucks ‘All In’ whiskey",
-          "url": "https://sports.yahoo.com/articles/jack-daniel-releases-limited-edition-190329960.html",
-          "source": "Yahoo Sports"
+          "title": "Grand Theft Auto VI is a grounded love story, a gonzo crime thriller and a gaming triumph",
+          "url": "https://www.npr.org/2026/11/18/nx-s1-6040326/grand-theft-auto-6-review-vice-city-masterpiece",
+          "source": "NPR"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "business daily africa",
-      "traffic": "500+",
+      "title": "lakers vs hornets",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "NSE extends trading hours to 4pm to boost foreign investment",
-          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/nse-extends-trading-hours-to-4pm-5673964",
-          "source": "Business Daily"
+          "title": "Luka Doncic Kept Waving Off JJ Redick’s Plays, Because He Wanted Quentin Grimes To Get The Ball",
+          "url": "https://sports.ndtv.com/us/nba/luka-doncic-kept-waving-off-jj-redick-s-plays-because-he-wanted-quentin-grimes-to-get-the-ball-12343465",
+          "source": "NDTV Sports"
         },
         {
-          "title": "Kenya’s stock exchange just got new longer hours",
-          "url": "https://www.dawan.africa/news/kenyas-stock-exchange-just-got-new-longer-hours",
-          "source": "Dawan Africa"
+          "title": "Thybulle's overtime steal helps Lakers win 9th straight",
+          "url": "https://www.basketball.com.au/news/aussies-in-nba-results-november-18-2026-matisse-thybulle",
+          "source": "Basketball.com.au"
         },
         {
-          "title": "NSE Extends Trading Hours to 4pm From January 2027",
-          "url": "https://kenyanwallstreet.com/nse-extends-trading-hours-for-first-time-since-2008",
-          "source": "The Kenyan Wallstreet"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "uruguay vs dominican republic",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Uruguay vs Dominican Republic: Friendlies stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c6jd75xzkn21t",
-          "source": "BBC"
-        },
-        {
-          "title": "Uruguay vs Dominican Republic Prediction: After the victory over Argentina",
-          "url": "https://www.telecomasia.net/sports-betting/tips/football/uruguay-vs-dominican-republic-match-prediction-17-november-2026/",
-          "source": "Telecom Asia Sport"
-        },
-        {
-          "title": "Uruguay vs. Dominican Republic Lineups, Live Streaming, How & Where to Watch on TV",
-          "url": "https://sports.yahoo.com/articles/uruguay-vs-dominican-republic-lineups-220000840.html",
-          "source": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "usa vs haiti",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "USMNT player ratings vs. Haiti: Weston McKennie pulls the strings and Christian Pulisic's impressive run continues",
-          "url": "https://www.goal.com/en-ke/lists/usmnt-haiti-player-ratings-christian-pulisic-julian-hall-weston-mckennie/blt74a2fa66f4df717e",
-          "source": "Goal.com"
-        },
-        {
-          "title": "USA 2-0 Haiti: Pulisic strikes, McKennie delivers two assists in Nations League quarters",
-          "url": "https://www.sofascore.com/news/usa-2-0-haiti-pulisic-strikes-mckennie-delivers-two-assists-in-nations-league-quarters",
-          "source": "Sofascore"
-        },
-        {
-          "title": "Haiti fans celebrate culture, share political views despite 6-0 loss to US",
-          "url": "https://haitiantimes.com/2026/11/15/haiti-fans-celebrate-national-pride-miami-us-match/",
-          "source": "The Haitian Times"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mexico vs jamaica",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Márquez earns first Mexico win to set up Nations League semi vs. U.S.",
-          "url": "https://www.espn.com/soccer/story/_/id/50517553/mexico-survive-jamaica-scare-give-marquez-first-win",
-          "source": "ESPN"
-        },
-        {
-          "title": "Licensable picture: CONCACAF Nations League - Quarter Final - Second Leg - Mexico v Jamaica",
-          "url": "https://www.reutersconnect.com/item/concacaf-nations-league-quarter-final-second-leg-mexico-v-jamaica/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkkwNVA4VVk",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "Corona secured Mexico’s berth at CNL Finals and 2027 Gold Cup",
-          "url": "https://www.concacaf.com/competitions/nations-league/news/corona-secured-mexico-s-berth-at-cnl-finals-and-2027-gold-cup",
-          "source": "Concacaf | Official Website"
+          "title": "NBA Roundup: Doncic fuels furious rally, Wemby falters in rough night",
+          "url": "https://www.eurohoops.net/en/nba-news/2036929/luka-doncic-victor-wembanyama-nba-european-recap-2/",
+          "source": "Eurohoops"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "nairobi expressway",
-      "traffic": "200+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Nairobi Expressway losses widen to Sh5bn",
@@ -122,72 +79,151 @@
           "source": "Business Daily"
         },
         {
-          "title": "Mbadi explains why Nairobi Expressway Ksh5B loss poses no financial risk to Kenya’s budget",
-          "url": "https://peopledaily.digital/business/mbadi-explains-why-nairobi-expressway-ksh5b-loss-poses-no-financial-risk-to-kenyas-budget",
-          "source": "People Daily"
+          "title": "CRBC an investor, not just contractor, in Rironi-Mau Summit road project: CS Mbadi",
+          "url": "https://citizen.digital/article/crbc-an-investor-not-just-contractor-in-rironi-mau-summit-road-project-cs-mbadi-n394094",
+          "source": "Citizen Digital"
         },
         {
-          "title": "Nairobi Expressway reports Ksh5.1B loss despite collecting Ksh9.6B",
-          "url": "https://peopledaily.digital/business/nairobi-expressway-reports-ksh5-1b-loss-despite-collecting-ksh9-6b",
-          "source": "People Daily"
+          "title": "Why the Nairobi Expressway Is Losing Billions Despite Over 245,000 Cars Paying Tolls Daily",
+          "url": "https://www.pulse.co.ke/story/why-the-nairobi-expressway-is-losing-billions-despite-over-245000-cars-paying-tolls-daily-2026111807155369719",
+          "source": "Pulse Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mexico vs jamaica",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Jamaica 3-2 Mexico: Nations League quarterfinal report",
+          "url": "https://www.sofascore.com/news/jamaica-3-2-mexico-nations-league-quarterfinal-report",
+          "source": "Sofascore"
+        },
+        {
+          "title": "Preview: Mexico vs Jamaica - prediction, team news, lineups",
+          "url": "https://www.sportsmole.co.uk/football/mexico/preview/mexico-vs-jamaica-prediction-team-news-lineups_609144.html",
+          "source": "Sports Mole"
+        },
+        {
+          "title": "Mexico 1-0 Jamaica: Marquez's first win clinches CONCACAF Nations League semi-finals spot",
+          "url": "https://www.fotmob.com/news/o4w2d2bakfvc1plby8fqcmukr-mexico-1-0-jamaica-marquezs-first-win-clinches-concacaf-nations-league-semi-finals-spot",
+          "source": "FotMob"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "turkana boy",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Ruto announces plans to move ‘Turkana Boy’ remains to Uhuru Park for public viewing",
+          "url": "https://eastleighvoice.co.ke/news/424197/ruto-announces-plans-to-move-turkana-boy-remains-to-uhuru-park-for-public-viewing",
+          "source": "The Eastleigh Voice"
+        },
+        {
+          "title": "New Location for 1.6-Million-Year-Old Turkana Boy Confirmed After Ruto's Order",
+          "url": "https://www.kenyans.co.ke/news/129450-felix-koskei-confirms-uhuru-gardens-site-turkana-boy-exhibit-new-changes",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Kenya to show original Turkana Boy remains to public for the first time, says Ruto",
+          "url": "https://educationnews.co.ke/news/kenya-to-show-original-turkana-boy-remains-to-public-for-the-first-time-says-ruto",
+          "source": "Education News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "dstv",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "DStv brings back Open Time with free access to DStv Premium",
+          "url": "https://mybroadband.co.za/news/broadcasting/678485-dstv-brings-back-open-time-with-free-access-to-dstv-premium.html",
+          "source": "MyBroadband"
+        },
+        {
+          "title": "DStv opens every channel to all subscribers for a month",
+          "url": "https://techcentral.co.za/dstv-open-time-every-channel-festive-season/288509/",
+          "source": "TechCentral"
+        },
+        {
+          "title": "MultiChoice Launches 'Open Time' for a Month, Gives Every DStv Channel to Every Subscriber from 25 November",
+          "url": "https://teeveetee.blogspot.com/2026/11/multichoice-launches-open-time-for.html",
+          "source": "TV with Thinus"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "fraud",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Kiambu Nyakinyua Farmers lose bid to stop Naivasha land fraud case",
+          "url": "https://nation.africa/kenya/news/kiambu-nyakinyua-farmers-lose-bid-to-stop-naivasha-land-fraud-case-5673978",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "KDF announces December recruitment, warns public of fraud",
+          "url": "https://www.kbc.co.ke/kdf-announces-december-recruitment-warns-public-of-fraud/",
+          "source": "KBC Digital"
+        },
+        {
+          "title": "KDF Recruitment 2026: Online Application and Dates",
+          "url": "https://techweez.com/2026/11/17/kdf-recruitment-2026-online-application-and-dates/",
+          "source": "Techweez"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "timberwolves vs trail blazers",
+      "title": "military aircraft",
       "traffic": "200+",
       "news": [
         {
-          "title": "‍‍‍TV~[LIVESTREAMs]!! Portland Trail Blazers vs Minnesota Timberwolves 𝐋𝐈𝐕𝐄 𝐒𝐭𝐫𝐞𝐚𝐦𝐢𝐧𝐠 Ｔｖ Ｃｈａｎｎｅｌ 17 November 2026",
-          "url": "https://vacunasaep.org/sites/all/libraries/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=/%5C/keeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=tv-livestreams-portland-trail-blazers-vs-gdpjw",
-          "source": "Comité Asesor de Vacunas de la AEP"
+          "title": "Irishman charged with destroying US military aircraft with axe",
+          "url": "https://www.bbc.com/news/articles/cwd01jjl5zzzo",
+          "source": "BBC"
         },
         {
-          "title": "Damian Lillard hits five triples, scores 25 points",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-17/damian-lillard-hits-five-triples-scores-25-points",
-          "source": "NBC Sports"
+          "title": "Irish National Indicted For Destroying $60 Million U.S. Military C-130H Aircraft At Shannon Airport, Ireland",
+          "url": "https://www.justice.gov/usao-sdny/pr/irish-national-indicted-destroying-60-million-us-military-c-130h-aircraft-shannon",
+          "source": "Department of Justice (.gov)"
         },
         {
-          "title": "Jaden McDaniels hits the bucket vs. Portland Trail Blazers",
-          "url": "https://africa.espn.com/video/clip/_/id/50517059/jaden-mcdaniels-hits-bucket-vs-portland-trail-blazers",
-          "source": "ESPN"
+          "title": "Man armed with axe accused of destroying US military plane at Shannon airport in Ireland",
+          "url": "https://www.theguardian.com/us-news/2026/nov/18/man-accused-of-destroying-us-military-plane-at-shannon-airport-in-ireland",
+          "source": "The Guardian"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "nse",
-      "traffic": "200+",
+      "title": "anne hathaway",
+      "traffic": "100+",
       "news": [
         {
-          "title": "State to seek income proof from buyers of NSE shares",
-          "url": "https://www.businessdailyafrica.com/bd/markets/capital-markets/state-to-seek-income-proof-from-buyers-of-nse-shares-5674378",
-          "source": "Business Daily"
+          "title": "Anne Hathaway Welcomes New Baby, Spotted With Newborn in NYC",
+          "url": "https://www.tmz.com/2026/11/17/anne-hathaway-seen-with-new-baby/",
+          "source": "TMZ"
         },
         {
-          "title": "NSE or BSE: Why are experts bullish on NSE shares? Here's what technical charts hint at? | Target price, stop-loss",
-          "url": "https://www.tradingview.com/news/moodys:050e9494689d6:0-nse-or-bse-why-are-experts-bullish-on-nse-shares-here-s-what-technical-charts-hint-at-target-price-stop-loss/",
-          "source": "TradingView"
+          "title": "The most beautiful actress in the world at the age of 44 gave birth to her third child",
+          "url": "https://eadaily.com/en/news/2026/11/18/the-most-beautiful-actress-in-the-world-at-the-age-of-44-gave-birth-to-her-third-child",
+          "source": "EADaily"
         },
         {
-          "title": "Why Is NSE Share Price Rising? Stock Hits Record High: Is Its Valuation Justified?",
-          "url": "https://www.indmoney.com/blog/nse-share-record-high-valuation-analysis",
-          "source": "INDmoney"
+          "title": "Oscar Winner, 44, Gives Birth to Third Baby",
+          "url": "https://www.thedailybeast.com/oscar-winner-44-gives-birth-to-third-baby",
+          "source": "The Daily Beast"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "lakers vs hornets",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "police",
-      "why": "unsafe: 'attack'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }

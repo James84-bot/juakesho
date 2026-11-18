@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-17T15:27:08.636683+03:00",
+  "updated": "2026-11-18T15:12:50.755883+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 72.7,
+      "score": 75.8,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
       "reach": 30,
       "saved": 0,
       "shares": 6,
       "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 7.8
+      "likes": 1,
+      "avg_watch_s": 7.7
     },
     {
       "id": "2026-w45-hot-1105m",
@@ -51,7 +51,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 3,
-      "avg_watch_s": 8.8
+      "avg_watch_s": 8.4
     },
     {
       "id": "2026-w44-hot-1026b1432",
@@ -69,43 +69,43 @@
   ],
   "bottom": [
     {
-      "id": "2026-w46-hot-1115",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
-      "reach": 16,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 5.3
-    },
-    {
-      "id": "2026-w47-d1-usiibiwe",
-      "series": "usiibiwe",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Banks in Kenya warn that fake SMS alerts target mobile accounts.",
-      "reach": 79,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 3.7
-    },
-    {
       "id": "2026-w47-hot-1116",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
       "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "reach": 10,
+      "reach": 11,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.7
+      "avg_watch_s": 6.3
+    },
+    {
+      "id": "2026-w47-hot-1116m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "EACC wants Sh40.3 million back from a roads boss.",
+      "reach": 11,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 4.8
+    },
+    {
+      "id": "2026-w47-hot-1117",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.7
     }
   ],
   "all": [
@@ -113,14 +113,14 @@
       "id": "2026-w45-hot-1105",
       "series": "sauti",
       "lane": "everyone",
-      "score": 72.7,
+      "score": 75.8,
       "opening": "Kenyans pay Sh6,000 in bribes to obtain a free KRA PIN.",
       "reach": 30,
       "saved": 0,
       "shares": 6,
       "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 7.8
+      "likes": 1,
+      "avg_watch_s": 7.7
     },
     {
       "id": "2026-w45-hot-1105m",
@@ -159,7 +159,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 3,
-      "avg_watch_s": 8.8
+      "avg_watch_s": 8.4
     },
     {
       "id": "2026-w44-hot-1026b1432",
@@ -193,12 +193,12 @@
       "lane": "everyone",
       "score": 9.3,
       "opening": "Kenyan banks lost Sh1.9 billion to fraud according to People Daily.",
-      "reach": 23,
+      "reach": 24,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.8
+      "avg_watch_s": 3.6
     },
     {
       "id": "2026-w45-hot-1103e",
@@ -237,7 +237,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 4.4
+      "avg_watch_s": 4.5
     },
     {
       "id": "2026-w44-hot-1027",
@@ -263,7 +263,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 4.8
+      "avg_watch_s": 5.0
     },
     {
       "id": "2026-w45-hot-1102m",
@@ -284,12 +284,12 @@
       "lane": "diaspora",
       "score": 4.8,
       "opening": "Mount Kenya reaches 5,199 metres in altitude.",
-      "reach": 114,
+      "reach": 115,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 2.6
+      "avg_watch_s": 2.9
     },
     {
       "id": "2026-w45-hot-1106",
@@ -303,6 +303,19 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 5.0
+    },
+    {
+      "id": "2026-w46-d7-glasspoll",
+      "series": "glasspoll",
+      "lane": "everyone",
+      "score": 3.2,
+      "opening": "Opposition leaders are moving to consolidate regional support.",
+      "reach": 16,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 3.8
     },
     {
       "id": "2026-w44-hot-1026",
@@ -341,7 +354,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 3.8
+      "avg_watch_s": 4.1
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -380,7 +393,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.8
+      "avg_watch_s": 5.0
     },
     {
       "id": "2026-w46-d1-money-r5",
@@ -393,7 +406,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.2
+      "avg_watch_s": 5.5
     },
     {
       "id": "2026-w46-hot-1109",
@@ -406,7 +419,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 6.4
+      "avg_watch_s": 6.7
     },
     {
       "id": "2026-w45-hot-1103m",
@@ -432,7 +445,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 3.9
+      "avg_watch_s": 4.1
     },
     {
       "id": "2026-w45-d6-kenya",
@@ -458,7 +471,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.4
+      "avg_watch_s": 4.5
     },
     {
       "id": "2026-w45-d5-straight",
@@ -474,6 +487,19 @@
       "avg_watch_s": 5.1
     },
     {
+      "id": "2026-w46-d6-kenya",
+      "series": "kenya",
+      "lane": "hustle",
+      "score": 2.6,
+      "opening": "The Thika road runs 50 kilometres from Nairobi.",
+      "reach": 86,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 3.1
+    },
+    {
       "id": "2026-w46-hot-1113b2340",
       "series": "sauti",
       "lane": "everyone",
@@ -484,7 +510,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.1
+      "avg_watch_s": 5.2
     },
     {
       "id": "2026-w46-hot-1114m",
@@ -497,7 +523,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 3.4
+      "avg_watch_s": 3.5
     },
     {
       "id": "2026-w44-d1-money-r2",
@@ -536,7 +562,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.5
+      "avg_watch_s": 2.6
     },
     {
       "id": "2026-w45-hot-1102-r2",
@@ -549,7 +575,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.9
+      "avg_watch_s": 7.2
     },
     {
       "id": "2026-w45-hot-1104",
@@ -570,12 +596,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 37,
+      "reach": 39,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 7.7
+      "avg_watch_s": 7.5
     },
     {
       "id": "2026-w46-d5-straight",
@@ -588,33 +614,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.5
-    },
-    {
-      "id": "2026-w46-d6-kenya",
-      "series": "kenya",
-      "lane": "hustle",
-      "score": 0.0,
-      "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "reach": 86,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 3.0
-    },
-    {
-      "id": "2026-w46-d7-glasspoll",
-      "series": "glasspoll",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Opposition leaders are moving to consolidate regional support.",
-      "reach": 15,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 3.1
+      "avg_watch_s": 5.4
     },
     {
       "id": "2026-w46-hot-1110e",
@@ -627,7 +627,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.6
+      "avg_watch_s": 4.1
     },
     {
       "id": "2026-w46-hot-1111b1557",
@@ -640,7 +640,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.2
+      "avg_watch_s": 3.9
     },
     {
       "id": "2026-w46-hot-1112m",
@@ -653,7 +653,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 9.8
+      "avg_watch_s": 10.3
     },
     {
       "id": "2026-w46-hot-1113m",
@@ -666,7 +666,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.8
+      "avg_watch_s": 4.4
     },
     {
       "id": "2026-w46-hot-1115",
@@ -679,7 +679,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.3
+      "avg_watch_s": 5.7
     },
     {
       "id": "2026-w47-d1-usiibiwe",
@@ -687,12 +687,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Banks in Kenya warn that fake SMS alerts target mobile accounts.",
-      "reach": 79,
+      "reach": 82,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.7
+      "avg_watch_s": 4.0
+    },
+    {
+      "id": "2026-w47-d2-kenya",
+      "series": "kenya",
+      "lane": "young_pro",
+      "score": 0.0,
+      "opening": "Lamu Old Town has been continuously lived in for 700 years.",
+      "reach": 18,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.7
     },
     {
       "id": "2026-w47-hot-1116",
@@ -700,12 +713,38 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "reach": 10,
+      "reach": 11,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.7
+      "avg_watch_s": 6.3
+    },
+    {
+      "id": "2026-w47-hot-1116m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "EACC wants Sh40.3 million back from a roads boss.",
+      "reach": 11,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 4.8
+    },
+    {
+      "id": "2026-w47-hot-1117",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.7
     }
   ],
   "youtube": [
@@ -753,7 +792,7 @@
       "id": "2026-w46-hot-1115",
       "series": "sauti",
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
-      "views": 327,
+      "views": 339,
       "likes": 0,
       "comments": 0
     },
@@ -769,7 +808,7 @@
       "id": "2026-w46-hot-1113b2340",
       "series": "sauti",
       "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "views": 278,
+      "views": 279,
       "likes": 1,
       "comments": 0
     },
@@ -822,6 +861,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w47-hot-1116",
+      "series": "sauti",
+      "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
+      "views": 141,
+      "likes": 1,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1104m",
       "series": "sauti",
       "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
@@ -838,14 +885,6 @@
       "comments": 0
     },
     {
-      "id": "2026-w47-hot-1116",
-      "series": "sauti",
-      "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "views": 115,
-      "likes": 0,
-      "comments": 0
-    },
-    {
       "id": "2026-w45-hot-1107m",
       "series": "sauti",
       "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
@@ -857,7 +896,23 @@
       "id": "2026-w46-hot-1114m",
       "series": "sauti",
       "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
-      "views": 98,
+      "views": 104,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1117",
+      "series": "sauti",
+      "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
+      "views": 84,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-d2-kenya",
+      "series": "kenya",
+      "opening": "Lamu Old Town has been continuously lived in for 700 years.",
+      "views": 79,
       "likes": 0,
       "comments": 0
     },
@@ -910,6 +965,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w47-hot-1116m",
+      "series": "sauti",
+      "opening": "EACC wants Sh40.3 million back from a roads boss.",
+      "views": 58,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1104",
       "series": "sauti",
       "opening": "Capital FM News reports: One in four women faces online abuse.",
@@ -926,17 +989,17 @@
       "comments": 0
     },
     {
-      "id": "2026-w46-d2-kenya",
+      "id": "2026-w46-d6-kenya",
       "series": "kenya",
-      "opening": "Mount Kenya reaches 5,199 metres in altitude.",
-      "views": 46,
+      "opening": "The Thika road runs 50 kilometres from Nairobi.",
+      "views": 47,
       "likes": 0,
       "comments": 0
     },
     {
-      "id": "2026-w46-d6-kenya",
+      "id": "2026-w46-d2-kenya",
       "series": "kenya",
-      "opening": "The Thika road runs 50 kilometres from Nairobi.",
+      "opening": "Mount Kenya reaches 5,199 metres in altitude.",
       "views": 46,
       "likes": 0,
       "comments": 0
@@ -977,7 +1040,7 @@
       "id": "2026-w47-d1-usiibiwe",
       "series": "usiibiwe",
       "opening": "Banks in Kenya warn that fake SMS alerts target mobile accounts.",
-      "views": 16,
+      "views": 17,
       "likes": 0,
       "comments": 0
     },
