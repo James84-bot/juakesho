@@ -1,77 +1,55 @@
 {
-  "fetched": "2026-11-18T15:22:38.366246+00:00",
+  "fetched": "2026-11-18T18:19:58.809679+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "george saitoti",
-      "traffic": "2000+",
+      "title": "michael carrick",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Saitoti brother reveals DNA results of man claiming share of ex-VP's estate",
-          "url": "https://nation.africa/kenya/news/saitoti-brother-reveals-dna-results-of-man-claiming-share-of-ex-vp-s-estate-5673856",
-          "source": "Daily Nation"
+          "title": "Pochettino arrives!",
+          "url": "https://www.manutd.com/en/news/pochettino-and-staff-officially-start-work-at-man-united",
+          "source": "Manchester United"
         },
         {
-          "title": "DNA test establishes Njage as ex-Minister Saitoti's son, court told",
-          "url": "https://www.the-star.co.ke/news/2026-11-18-dna-establishes-njage-as-saitotis-son-court-told",
-          "source": "The Star, Kenya"
+          "title": "Man Utd boss Mauricio Pochettino says Manchester won't always be blue",
+          "url": "https://www.bbc.com/sport/football/articles/cm782wnwzvq3o",
+          "source": "BBC"
         },
         {
-          "title": "99.9999% DNA Match: Saitoti’s brother backs man's claim to late VP’s wealth",
-          "url": "https://www.tuko.co.ke/kenya/647112-kenyan-newspapers-november-18-widow-fights-exhumation-bid-man-claims-share-saitotis-estate/",
-          "source": "Tuko News"
+          "title": "Mauricio Pochettino at Man Utd: Incoming head coach calls for time to topple Man City ahead of Old Trafford arrival",
+          "url": "https://www.skysports.com/football/news/13613499/mauricio-pochettino-incoming-manchester-united-head-coach-calls-for-time-to-topple-manchester-city-ahead-of-old-trafford-arrival",
+          "source": "Sky Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "appeal",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Court of Appeal allows AG to withdraw bid to block orders compelling Ruto to reconstitute cabinet",
+          "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001562518/court-of-appeal-allows-ag-to-withdraw-bid-to-block-orders-compelling-ruto-to-reconstitute-cabinet",
+          "source": "The Standard"
+        },
+        {
+          "title": "Katiba Institute questions Court of Appeal's fast-tracked AG application on Ruto's cabinet",
+          "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001562510/lobby-challenges-fast-hearing-on-ruto-cabinet-case",
+          "source": "The Standard"
+        },
+        {
+          "title": "Petition seeks to suspend Cabinet over gender rule",
+          "url": "https://www.standardmedia.co.ke/national/article/2001562396/petition-seeks-to-suspend-cabinet-over-gender-rule",
+          "source": "The Standard"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "turkana boy",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Ruto announces plans to move ‘Turkana Boy’ remains to Uhuru Park for public viewing",
-          "url": "https://eastleighvoice.co.ke/news/424197/ruto-announces-plans-to-move-turkana-boy-remains-to-uhuru-park-for-public-viewing",
-          "source": "The Eastleigh Voice"
-        },
-        {
-          "title": "New Location for 1.6-Million-Year-Old Turkana Boy Confirmed After Ruto's Order",
-          "url": "https://www.kenyans.co.ke/news/129450-felix-koskei-confirms-uhuru-gardens-site-turkana-boy-exhibit-new-changes",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Kenya to show original Turkana Boy remains to public for the first time, says Ruto",
-          "url": "https://educationnews.co.ke/news/kenya-to-show-original-turkana-boy-remains-to-public-for-the-first-time-says-ruto",
-          "source": "Education News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "dstv",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "DStv brings back Open Time with free access to DStv Premium",
-          "url": "https://mybroadband.co.za/news/broadcasting/678485-dstv-brings-back-open-time-with-free-access-to-dstv-premium.html",
-          "source": "MyBroadband"
-        },
-        {
-          "title": "DStv opens every channel to all subscribers for a month",
-          "url": "https://techcentral.co.za/dstv-open-time-every-channel-festive-season/288509/",
-          "source": "TechCentral"
-        },
-        {
-          "title": "MultiChoice Launches 'Open Time' for a Month, Gives Every DStv Channel to Every Subscriber from 25 November",
-          "url": "https://teeveetee.blogspot.com/2026/11/multichoice-launches-open-time-for.html",
-          "source": "TV with Thinus"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "blood pressure",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Blood pressure medication recalled nationwide. See affected drug",
@@ -92,110 +70,111 @@
     },
     {
       "geo": "KE",
-      "title": "fraud",
+      "title": "birth certificate",
       "traffic": "200+",
       "news": [
         {
-          "title": "KDF announces December recruitment, warns public of fraud",
-          "url": "https://www.kbc.co.ke/kdf-announces-december-recruitment-warns-public-of-fraud/",
-          "source": "KBC Digital"
+          "title": "Huduma Kenya Explains Birth Certificate Application Rules for Underage Mothers",
+          "url": "https://www.kenyans.co.ke/news/129496-huduma-kenya-explains-birth-certificate-application-rules-underage-mothers",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "KDF Recruitment 2026: Online Application and Dates",
-          "url": "https://techweez.com/2026/11/17/kdf-recruitment-2026-online-application-and-dates/",
-          "source": "Techweez"
+          "title": "Separated parents: Govt explains how fathers can be added to birth certificates after deliberate omission",
+          "url": "https://peopledaily.digital/news/separated-parents-govt-explains-how-fathers-can-be-added-to-birth-certificates-after-deliberate-omission",
+          "source": "People Daily"
         },
         {
-          "title": "KDF Announces Mass Recruitment: How to Apply, Requirements and Recruitment Dates",
-          "url": "https://www.money254.co.ke/post/kdf-announces-mass-recruitment-how-to-apply-news-5oge1",
-          "source": "Money254"
+          "title": "Dad excludes mum on child's birth certificate: Huduma Kenya explains what to do",
+          "url": "https://www.tuko.co.ke/kenya/646737-dad-swaps-mum-grandma-birth-certificate-huduma-kenya-steps-in/",
+          "source": "Tuko News"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "military aircraft",
+      "title": "benni mccarthy",
       "traffic": "200+",
       "news": [
         {
-          "title": "Irishman charged with destroying US military aircraft with axe",
-          "url": "https://www.bbc.com/news/articles/cwd01jjl5zzzo",
+          "title": "McCarthy: I'm loyal to Harambee Stars, not Bafana Bafana",
+          "url": "https://nation.africa/kenya/sports/football/no-divided-loyalty-insists-mccarthy-ahead-bafana-bafana-clash-5673254",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "McCarthy tells critics to step aside as he builds Harambee Stars",
+          "url": "https://www.the-star.co.ke/sports/football/2026-11-18-mccarthy-tells-critics-to-step-aside-as-he-builds-harambee-stars-1",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "McCarthy’s relations with Kenya fans take strain after ‘no hot water’ comments",
+          "url": "https://www.news24.com/sport/soccer/mccarthys-relations-with-kenya-fans-take-strain-after-no-hot-water-comments-20261118-0760",
+          "source": "News24"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "juan mata",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Former Spain midfielder Mata retires aged 38",
+          "url": "https://www.bbc.com/sport/football/articles/c8p3vwe1rrzqo",
           "source": "BBC"
         },
         {
-          "title": "Irish National Indicted For Destroying $60 Million U.S. Military C-130H Aircraft At Shannon Airport, Ireland",
-          "url": "https://www.justice.gov/usao-sdny/pr/irish-national-indicted-destroying-60-million-us-military-c-130h-aircraft-shannon",
-          "source": "Department of Justice (.gov)"
+          "title": "Mata announces retirement from football",
+          "url": "https://www.manutd.com/en/news/former-red-juan-mata-announces-retirement-from-football",
+          "source": "Manchester United"
         },
         {
-          "title": "Man armed with axe accused of destroying US military plane at Shannon airport in Ireland",
-          "url": "https://www.theguardian.com/us-news/2026/nov/18/man-accused-of-destroying-us-military-plane-at-shannon-airport-in-ireland",
-          "source": "The Guardian"
+          "title": "Juan Mata retires: Free-kick vs Man Utd | Video | Official Site",
+          "url": "https://www.chelseafc.com/en/video/juan-mata-retires",
+          "source": "Chelsea Football Club"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "peacekeeping",
-      "traffic": "100+",
+      "title": "william ruto",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Africa's 6th strongest military gets US backing to secure strategic Western Sahara as tensions rise with Algeria-backed breakaway movement",
-          "url": "https://africa.businessinsider.com/local/markets/africas-6th-strongest-military-gets-us-backing-to-secure-strategic-western-sahara-as/kvl6lqm",
-          "source": "Business Insider Africa"
+          "title": "Tight security, political chants and theatre that marked Ruto’s address",
+          "url": "https://nation.africa/kenya/news/tight-security-political-chants-and-theatre-that-marked-ruto-s-address-5675414",
+          "source": "Daily Nation"
         },
         {
-          "title": "First MINURSO contingent departs Laayoune as transition takes effect",
-          "url": "https://www.kbc.co.ke/first-minurso-contingent-departs-laayoune-as-transition-takes-effect/",
-          "source": "KBC Digital"
+          "title": "President Ruto: My economic record and promise",
+          "url": "https://www.businessdailyafrica.com/bd/economy/ruto-my-economic-record-and-promise-5675876",
+          "source": "Business Daily"
         },
         {
-          "title": "Licensable video: UN peacekeeping mission begins withdrawal from Western Sahara after mandate expires",
-          "url": "https://www.reutersconnect.com/item/un-peacekeeping-mission-begins-withdrawal-from-western-sahara-after-mandate-expires/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XQU5BQ0FBVklERU8yMDI2MTExNzQzMTAzNjk1",
-          "source": "Reuters Connect"
+          "title": "Sifuna: State of the Nation Address should focus on human rights, not roads",
+          "url": "https://www.the-star.co.ke/news/2026-11-18-sifuna-state-of-the-nation-address-should-focus-on-human-rights",
+          "source": "The Star, Kenya"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
-      "title": "anne hathaway",
+      "title": "eli junior kroupi",
       "traffic": "100+",
       "news": [
         {
-          "title": "Anne Hathaway Welcomes New Baby, Spotted With Newborn in NYC",
-          "url": "https://www.tmz.com/2026/11/17/anne-hathaway-seen-with-new-baby/",
-          "source": "TMZ"
+          "title": "Arsenal consensus reached over £162m January transfers as two players wanted",
+          "url": "https://www.football.london/arsenal-fc/news/arsenal-transfer-news-nusa-kroupi-34929379",
+          "source": "Football London"
         },
         {
-          "title": "The most beautiful actress in the world at the age of 44 gave birth to her third child",
-          "url": "https://eadaily.com/en/news/2026/11/18/the-most-beautiful-actress-in-the-world-at-the-age-of-44-gave-birth-to-her-third-child",
-          "source": "EADaily"
+          "title": "Arsenal eye Eli Junior Kroupi as Bournemouth slap ace with £100m price tag",
+          "url": "https://www.thesun.co.uk/sport/41052041/arsenal-target-eli-junior-kroupi-transfer/",
+          "source": "The Sun"
         },
         {
-          "title": "Anne Hathaway Welcomes 3rd Child At 44: Does Advanced Maternal Age Affect Pregnancy?",
-          "url": "https://www.ndtv.com/health/womens-health/anne-hathaway-welcomes-3rd-child-at-44-does-advanced-maternal-age-affect-pregnancy-12343682",
-          "source": "NDTV"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "christos tzolis",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Christos Tzolis explains why Arsenal fans shouldn't mistake him for a 'soft' winger",
-          "url": "https://www.livescore.com/en/news/football/premier-league/christos-tzolis-explains-why-arsenal-fans-shouldnt-mistake-him-for-a-soft-winger-football-muse/",
-          "source": "LiveScore"
-        },
-        {
-          "title": "Christos Tzolis responds to Arsenal physicality criticism",
-          "url": "https://readarsenal.com/2026/11/18/christos-tzolis-arsenal-physicality-interview/",
-          "source": "Read Arsenal"
-        },
-        {
-          "title": "Arsenal’s Tzolis set to make Greece squad despite injury concern",
-          "url": "https://onefootball.com/en/news/arsenals-tzolis-set-to-make-greece-squad-despite-injury-concern-43784393",
+          "title": "Ornstein reports PSG among teams most interested in €100m Premier League star",
+          "url": "https://onefootball.com/en/news/ornstein-reports-psg-among-teams-most-interested-in-100m-premier-league-star-43795826",
           "source": "OneFootball"
         }
       ]
@@ -204,7 +183,11 @@
   "dropped": [
     {
       "title": "regina re",
-      "why": "unsafe: 'burial'"
+      "why": "unsafe: 'murder'"
+    },
+    {
+      "title": "peacekeeping",
+      "why": "unsafe: 'attack'"
     }
   ],
   "errors": {}
