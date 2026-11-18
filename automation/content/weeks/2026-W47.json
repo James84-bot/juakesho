@@ -1436,13 +1436,107 @@
       "fb_story_id": "1520821049883119",
       "yt_id": "SrVipxg6-us",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w47-hot-1119e",
+      "template": "sauti",
+      "lane": "everyone",
+      "message": "President Ruto announced that Kenya saved Sh1.5 billion by printing national exam papers locally.",
+      "action": "Ask your local printing firms if they get government contracts: share what you find",
+      "beats": [
+        "Kenya saved *Sh1.5 billion* by printing national exam papers locally.",
+        "Local printing cuts the millions previously paid to foreign firms.",
+        "That is money kept at home for our own schools.",
+        "Have you seen the local print quality improve?"
+      ],
+      "photo_query": "Nairobi printing press Kenya",
+      "source": "Capital FM News, 2026-11-18",
+      "kicker": "Taxpayers",
+      "line": "Kenya saved *Sh1.5 billion* by printing national exam papers locally instead of abroad.",
+      "fact": "The government printed all 2026 national examination papers within the country.",
+      "caption": "Sh1.5 billion kept at home. Local printing for exam papers saved our taxes a tidy sum this year. Check the details.\n\n#TheRecord #KenyaOnRecord",
+      "who": "President William Ruto",
+      "where": "National",
+      "when": "18 Nov 2026",
+      "side": "government",
+      "tone": "credit",
+      "impact": "Saves public funds and supports local manufacturing.",
+      "bg": "usiku",
+      "publish_at": "2026-11-19T18:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Ruto: Kenya saves Sh1.5bn as national exam papers are printed locally",
+          "link": "https://capitalfm.africa/ruto-kenya-saves-sh1-5bn-as-national-exam-papers-are-printed-locally/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-18"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 5.7/10. Remove the generic hashtag and connect the Sh1.5 billion saving directly to the specific local printing company that got the tender."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 6,
+        "picture": 6,
+        "hold": 6,
+        "demand": 3,
+        "action": 5,
+        "fair": 7,
+        "impact": 7,
+        "human": 4,
+        "avg": 5.7,
+        "note": "Remove the generic hashtag and connect the Sh1.5 billion saving directly to the specific local printing company that got the tender."
+      },
+      "trend": "#TheRecord",
+      "drafted_at": "2026-11-19T01:04:04.999235+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1119e-photo.jpg",
+      "photo_credit": "Photo: Capital FM · Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/ruto-kenya-saves-sh1-5bn-as-national-exam-papers-are-printed-locally/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1119e-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1119e-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Ruto: Kenya saves Sh1.5bn as national exam papers are printed locally"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Boma Yangu Reveals Prices for Shops, Homes at New Affordable Housing Estate"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Bayern vs Ajax Match in Kenya Hits First Roadblock as Petitioners Move to Court"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/videos/2026-w47-hot-1119e-broll.mp4",
+      "broll_credit": "Footage: commlab / Pixabay",
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1252
     }
   ],
   "scripts": {
-    "radio": "Sasa, wakenya. Welcome to Kenya on Record. Let’s talk about something we are all feeling in our pockets this week. \n\nLook at the numbers: Kenya now has over 97 million registered SIM cards. That is massive. Nearly every adult has a phone, and many have two. Yet, official data shows that the value and volume of mobile money transactions actually dropped. \n\nHow is that possible? Watu wamechoka. \n\nEvery time you send money, withdraw, or pay for tokens, the charges bite deep into what's left. Transactions fees have become another tax on the mwananchi. So what are people doing? We are going back to the old school. Cash is making a loud comeback in many neighborhoods because people are calculating the cost of digital convenience. When sending five hundred bob costs you a chunk in fees, walking to the shop with physical cash starts making a lot of sense. \n\nHigh transaction costs do not just hurt users; they slow down small businesses trying to digitize. If the cost of moving money remains punitive, people will simply opt out. Regulators and telcos need to listen. \n\n*Habari kwa ufupi:* Kwenye ripoti yetu ya wiki hii, matumizi ya pesa za simu yameshuka licha ya kuwa na kadi za simu milioni tisini na saba nchini. Sababu kuu ni gharama ya juu ya utozaji wa ada, hali inayowalazimisha wananchi wengi kurejea kwenye matumizi ya pesa taslimu ili kulinda mifuko yao.",
-    "voice_note": "Mazee, hii ni Kenya on Record. Siku hizi tuko na SIM cards milioni 97 hapa Kenya, lakini mnajua nini inashangaza? Mobile transactions zimeshuka! Unashangaa kivipi na kila mtu ako na simu? Ukweli ni kwamba hizo transaction fees zimekua mzigo mzito sana. Watu wameanza kukimbilia cash tena juu kutuma ama kutoa pesa inakata kiasi kikubwa sana ya mshahara au faida yako ya biashara. Serikali na telcos wanapiga kelele kuhusu digital economy, lakini wanapiga wateja ushuru mpaka inachosha. Hii economy ya wallet kavu inatuhusu sisi sote. Sikiza hesabu yako vizuri kabla ya kutuma hiyo pesa.",
-    "sms": "Usiibiwe: Pima gharama kabla ya kutuma au kutoa pesa kwa simu. Ada za juu zinatafuna pesa yako polepole. Tumia cash pale inapowezekana kulinda mfuko wako.",
-    "reels": "[Visual: Frustrated Kenyan looking at a phone screen showing a high transaction fee, then counting physical notes at a local kiosk]\n\nVoice-over (steady, serious tone):\nNinini kinaendelea? Kenya iko na SIM cards milioni 97, lakini mobile money transactions zimeshuka! Sababu? Transaction fees zimekuwa kero. Wakenya sasa wanarudi kwa cash sababau gharama ya kutuma pesa imekuwa mzigo mzito. Je, digital economy inatufaidi kweli? Weka maoni yako hapa chini na ukumbuke, fuatilia ukweli na Kenya on Record."
+    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni wako wa ukweli kupashwa habari jinsi pesa zetu za ushuru zinavyotumiwa.\n\nLeo tunaiangazia kauli ya Rais William Ruto kwamba serikali imeweza kuokoa shilingi bilioni moja na nusu (Sh1.5 billion) kupitia kuchapisha karatasi za mitihani ya kitaifa hapa nchini badala ya kuzipeleka ng'ambo.\n\nSasa, wananchi, hii ni habari njema. Katika nchi ambayo kila shilingi inahesabika, kuokoa bilioni moja na nusu ni hatua kubwa. Inaonyesha kwamba ikiwa serikali itatilia mkazo uwezo wetu wa kienyeji, tunaweza kupunguza matumizi yasiyo ya lazima na kukuza viwanda vyetu vya hapa nyumbani.\n\nLakini, kama kawaida yetu hapa Kenya on Record, hatuishii tu kushangilia. Tunataka kuona ushahidi wa wazi. Je, hizi hela zilizookolewa zimepelekwa wapi? Je, ni miradi gani ya maendeleo iliyoletewa faida na hii hatua? Ukweli ni kwamba uwazi ndio msingi wa uaminifu. Tunapongeza kuokoa pesa, lakini tunataka kuona hesabu kamili zikiwekwa wazi kwa umma. Kazi yetu ni kulinda rasilimali za umma, na hapo ndipo tunapowajibisha viongozi wetu.\n\nAsante kwa kusikiliza. Sasa, kwa ufupi kwa wale ambao wanapenda lugha ya taifa:\n\n*Muhtasari wa habari hii kwa Kiswahili:* Rais Ruto ametangaza kuwa Kenya imeokoa Shilingi bilioni 1.5 kwa kuchapisha mitihani nchini. Hata hivyo, wananchi wanataka uwazi kamili kuhusu jinsi fedha hizi zilizookolewa zinavyotumiwa katika maendeleo ya nchi.\n\nTutaonana wiki ijayo. Usiibiwe, simamia haki yako!",
+    "voice_note": "Wadau, niaje? Hapa ni Kenya on Record. Hebu tusikizane kidogo kuhusu hii habari ya Rais Ruto kusema tumeokoa bilioni moja na nusu (Sh1.5B) eti kwa sababu mitihani ya kitaifa imechapishwa hapa Kenya badala ya nje.\n\nSasa, kiukweli, hiyo ni pesa mingi sana, na kama ni kweli imebaki kwa mfuko wa serikali, hiyo ni hatua safi sana. Inasaidia kukuza uchumi wetu na kuacha kutegemea nchi za nje.\n\nLakini maswali ni mawili: Je, hii procurement ilifanyika kwa njia ya wazi kabisa bila ufisadi? Na pili, hizo bilioni moja na nusu zimeenda kufanya nini sasa hivi? Usikubali kuambiwa tu ‘tumeokoa’ bila kuona matokeo. Kazi yetu ni kuuliza maswali magumu hadi tujue ukweli. Angalia pesa zako zinapoenda!",
+    "sms": "Usiibiwe: Serikali ikisema imeokoa Sh1.5B kwa kuchapisha mitihani nchini, uliza: Hizo pesa zimeenda wapi? Uwazi ndio msingi wa uwajibikaji. Simamia rasilimali zako!",
+    "reels": "[Visual: Host looking directly at the camera, serious expression, text overlay: 'Sh1.5 Billion Saved? Where is the proof?']\n\nHost (Voice-over, sharp and confident): \n\n\"Eti Kenya imeokoa bilioni moja na nusu kwa kuchapisha mitihani hapa nyumbani? \n\nHiyo ni habari nzuri sana… lakini wacha tuseme ukweli. Kusifia ni kuzuri, lakini uwazi ndio kila kitu. \n\nZile hela zilizookolewa ziko wapi? Zimejenga shule ngapi? Au zimefukiwa wapi?\n\nTukisema 'Usiibiwe', hatumaanishi kukataa mazuri. Tunamaanisha kuomba hesabu. Kaa chonjo, fuatilia pesa zako!\""
   },
   "spend_usd": 0.0
 }
