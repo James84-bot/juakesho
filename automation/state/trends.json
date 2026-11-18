@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-18T14:03:01.888435+00:00",
+  "fetched": "2026-11-18T14:34:47.477199+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -70,23 +70,45 @@
     },
     {
       "geo": "KE",
-      "title": "twitch",
-      "traffic": "500+",
+      "title": "blood pressure",
+      "traffic": "200+",
       "news": [
         {
-          "title": "The future of Twitch might belong to its smaller streamers",
-          "url": "https://www.nbcnews.com/tech/tech-news/twitch-middle-tier-streamers-making-living-platform-rcna608808",
-          "source": "NBC News"
+          "title": "Blood pressure medication recalled nationwide. See affected drug",
+          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/blood-pressure-medication-recalled-nationwide-november-2026/92823483007/",
+          "source": "USA Today"
         },
         {
-          "title": "How To Stream Twitch On Your TV",
-          "url": "https://www.engadget.com/2314226/how-to-stream-twitch-on-tv/",
-          "source": "Engadget"
+          "title": "Blood pressure drug recalled nationwide over possible metal contamination",
+          "url": "https://www.foxbusiness.com/economy/blood-pressure-drug-recalled-nationwide-over-possible-metal-contamination",
+          "source": "Fox Business"
         },
         {
-          "title": "Twitch debuts shoppable, skippable ads as TwitchCon feels growing pains",
-          "url": "https://www.marketingdive.com/news/twitch-debuts-shoppable-skippable-ads-as-twitchcon-feels-growing-pains/874614/",
-          "source": "Marketing Dive"
+          "title": "Medication used to treat high blood pressure recalled due to potential metal contamination",
+          "url": "https://www.kare11.com/article/news/nation-world/blood-pressure-beta-blocker-prescription-medication-recall-metal-contamination/507-fd8334e0-038b-4c74-878c-4401635cfcd3",
+          "source": "kare11.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "gta 6 release date",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "New Zealand tricks and annual leave - the lengths fans are going to for GTA 6",
+          "url": "https://www.bbc.com/news/articles/cm4gn9xnn1ppo",
+          "source": "BBC"
+        },
+        {
+          "title": "Logitech Announces That It Will Give Employees Time Off for Video Game Releases Ahead of GTA 6 Launch",
+          "url": "https://www.ign.com/articles/logitech-is-letting-employees-take-work-off-for-game-releases-just-ahead-of-gta-6",
+          "source": "IGN"
+        },
+        {
+          "title": "GTA VI is coming, and these gamers are planning their getaways",
+          "url": "https://www.cnn.com/2026/11/17/entertainment/grand-theft-auto-vi-release-fans-cec",
+          "source": "CNN"
         }
       ]
     },
@@ -159,45 +181,23 @@
     },
     {
       "geo": "KE",
-      "title": "blood pressure",
+      "title": "peacekeeping",
       "traffic": "100+",
       "news": [
         {
-          "title": "Blood pressure medication recalled nationwide. See affected drug",
-          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/17/blood-pressure-medication-recalled-nationwide-november-2026/92823483007/",
-          "source": "USA Today"
+          "title": "G7 agrees on need to avert ‘security void’ in Lebanon after imminent UNIFIL withdrawal",
+          "url": "https://www.timesofisrael.com/g7-agrees-on-need-to-avert-security-void-in-lebanon-after-unifil-withdrawal/",
+          "source": "The Times of Israel"
         },
         {
-          "title": "Blood pressure drug recalled nationwide over possible metal contamination",
-          "url": "https://www.foxbusiness.com/economy/blood-pressure-drug-recalled-nationwide-over-possible-metal-contamination",
-          "source": "Fox Business"
+          "title": "Washington Hardens Stance on Hezbollah’s Arms: ‘The Cancer It Represents Must Not Continue’",
+          "url": "https://english.aawsat.com/arab-world/5342606-washington-hardens-stance-hezbollah%E2%80%99s-arms-%E2%80%98-cancer-it-represents-must-not",
+          "source": "ASHARQ AL-AWSAT English"
         },
         {
-          "title": "Blood-pressure medication recalled over potential contamination with metal, laceration risk",
-          "url": "https://www.nxsmediawire.com/news/blood-pressure-medication-recalled-over-potential-contamination-with-metal-laceration-risk/",
-          "source": "https://www.nxsmediawire.com/"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "gta 6 release date",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "New Zealand tricks and annual leave - the lengths fans are going to for GTA 6",
-          "url": "https://www.bbc.com/news/articles/cm4gn9xnn1ppo",
-          "source": "BBC"
-        },
-        {
-          "title": "Logitech Announces That It Will Give Employees Time Off for Video Game Releases Ahead of GTA 6 Launch",
-          "url": "https://www.ign.com/articles/logitech-is-letting-employees-take-work-off-for-game-releases-just-ahead-of-gta-6",
-          "source": "IGN"
-        },
-        {
-          "title": "GTA VI is coming, and these gamers are planning their getaways",
-          "url": "https://www.cnn.com/2026/11/17/entertainment/grand-theft-auto-vi-release-fans-cec",
-          "source": "CNN"
+          "title": "UNIFIL’s Exit Exposes the Failure to Disarm Hizbullah",
+          "url": "https://jcfa.org/unifils-exit-exposes-the-failure-to-disarm-hizbullah/",
+          "source": "Jerusalem Center for Security and Foreign Affairs"
         }
       ]
     },
@@ -217,9 +217,9 @@
           "source": "EADaily"
         },
         {
-          "title": "Oscar Winner, 44, Gives Birth to Third Baby",
-          "url": "https://www.thedailybeast.com/oscar-winner-44-gives-birth-to-third-baby",
-          "source": "The Daily Beast"
+          "title": "Anne Hathaway’s new baby’s sex accidentally revealed by ‘Devil Wears Prada 2’ costume designer",
+          "url": "https://pagesix.com/2026/11/18/parents/anne-hathaways-babys-sex-accidentally-revealed-by-devil-wears-prada-2-costume-designer/",
+          "source": "Page Six"
         }
       ]
     }
