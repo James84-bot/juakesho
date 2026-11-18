@@ -1102,7 +1102,7 @@
           "published": "2026-11-17"
         }
       ],
-      "status": "needs_human",
+      "status": "rejected",
       "guard": {
         "errors": [
           "weak: editor scored 6.9/10. Fix the action beat so it ends with a direct question about voter registration instead of a vague follow instruction.",
@@ -1153,14 +1153,186 @@
       ],
       "ink": {
         "2": "#FFFFFF"
-      }
+      },
+      "replaced_by": "2026-w47-hot-1118e-r2"
+    },
+    {
+      "id": "2026-w47-hot-1118",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Salaried workers",
+      "line": "Treasury reports planned *PAYE tax cuts* for salaried workers hang in the balance.",
+      "fact": "Treasury CS John Mbadi confirmed new timelines for the proposed income tax relief.",
+      "source": "People Daily, 2026-11-18, Kenyans.co.ke, 2026-11-18",
+      "photo_query": "National Treasury Nairobi",
+      "message": "Treasury must clarify the exact date Kenyan workers will receive promised PAYE tax relief.",
+      "action": "Check your monthly PAYE deduction and demand your MP tracks the tax relief Bill",
+      "who": "Treasury CS John Mbadi",
+      "where": "National",
+      "when": "18 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Delays in tax cuts leave millions of workers with smaller take-home pay.",
+      "beats": [
+        "Treasury says planned *PAYE tax cuts* for January hang in the balance.",
+        "Workers expected lower income tax deductions starting this January.",
+        "The Treasury must publish the revised tax relief timetable by December.",
+        "How much PAYE did you pay on your last payslip?"
+      ],
+      "caption": "Salaried Kenyans were promised lower PAYE tax deductions to ease the high cost of living. Treasury CS John Mbadi now reports that January relief hangs in the balance under revised schedules. The National Treasury must publish the clear implementation timetable before December.\n\nHow much PAYE did you pay on your last payslip?\n\n#PAYE #CostOfLiving #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-18T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Gachagua and IEBC set Thursday for talks on election technology and ID issuance."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Mbadi reveals progress in implementing PAYE tax cuts as January salary relief hangs in balance",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQSENKaTl6Qk82WWNaZEplaWZKNkNONGw0b2RCRzBDOV84VnJDSnZxWU43eE1abnl6MlJhOC1xa3plQmh1blRxN25taVVQOXJKYVR6SkxRUlBLamZ6REYyUDZJUGFMbldGYmxzcFpJVC1qSUowNHRpNEotSURseUNaTXVfbzFVSDZnT1ZIY3NlNVR3MlhoemNNTEZ2bWFtc1ptMVNXdmpGb0x2d3Q1MXZpby1FRm5MTV9MSGZvVFlrQWNrTHdJNExRRjlNNA?oc=5",
+          "published": "2026-11-18"
+        },
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "Treasury Sets New Timelines for Proposed PAYE Changes",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNE1scGdCbkI0cGV1QU9sX0hLbUx1aFNyc3FyODYtRmpBenB5dV9Pb3BFc3o0MUgwZC1nRzR4QmYxdTNYMFFrQTRDdm9pTW9QMnkyV1V1a1Z1U2hkQU9MOWk5VExxaUd5VTUwWlZoUUlGclprRC1yOVdzc2JZTVpVWVp1U0JXb2w4Vm1NNFQxQUZqU21weUZ0RWRMSnVVZmlo?oc=5",
+          "published": "2026-11-18"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.5/10. Match the post to this week's active news stories like the State of the Nation or IEBC talks, and write with original human phrasing instead of templates."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 5,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 3,
+        "action": 3,
+        "fair": 5,
+        "impact": 5,
+        "human": 3,
+        "avg": 4.5,
+        "note": "Match the post to this week's active news stories like the State of the Nation or IEBC talks, and write with original human phrasing instead of templates."
+      },
+      "drafted_at": "2026-11-18T09:11:49.886079+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1118-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "file",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129093-cs-mbadi-rejects-claims-rironi-mau-summit-highway-cost-was-inflated",
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Mbadi Fires Back at Gachagua Over Rironi-Mau Road Cost Claims"
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1222
+    },
+    {
+      "id": "2026-w47-hot-1118e-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Elections",
+      "line": "People Daily reports: Gachagua submits fresh demands to IEBC chair ahead of Thursday meeting.",
+      "fact": "The talks focus on election technology and national voter registration ahead of the 2027 polls.",
+      "source": "People Daily, 2026-11-17",
+      "photo_query": "ballot box Kenya",
+      "event_query": "IEBC voter registration Nairobi",
+      "message": "Gachagua presents demands on voter registration and election technology to IEBC ahead of talks.",
+      "action": "Check your voter registration status at your local IEBC constituency office.",
+      "beats": [
+        "Rigathi Gachagua presented fresh demands to the *IEBC* chair.",
+        "Thursday talks cover voter registration and election technology.",
+        "The commission must serve voters across all 47 *counties*.",
+        "Have you checked your *voter* registration status this year?"
+      ],
+      "who": "IEBC Chair Erastus Ethekon and Rigathi Gachagua",
+      "where": "Nairobi",
+      "when": "17 Nov 2026",
+      "side": "both",
+      "tone": "explainer",
+      "impact": "Decisions on election technology and registration affect how eligible Kenyans cast their ballots.",
+      "caption": "People Daily reports that Rigathi Gachagua has submitted demands to IEBC chair Erastus Ethekon ahead of scheduled talks on Thursday. The discussions focus on voter registration access and election technology.\n\nCheck your voter details at your local IEBC constituency office.\n\nHave you verified your voter status this year?\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-18T20:00:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "Gachagua and IEBC set Thursday for talks on election technology and ID issuance."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Gachagua makes fresh demand to IEBC chair Ethekon ahead of Thursday meeting",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNLW5wTjNzUnZ6RXk3ZHdZamRXM0NCR2puLW94Q0pTckpqdS1wN1E5Wm96ZjN1ay1BZ2lGSXNEeDJKc0xCcHdYVUFsMUN2WkN6NGpMY0ZtWC1xY2h6WV84S3NnNWpCNmxxdlk0VTRadlBLUkxReUhSSDhHQWViSlJ4RkJrcGY4Q3ZCbk9NX1padWo4YWc4dXNZc1dST0htRVh1eHJnRS1DYlBoV3U5aVZlRXhDbXY5NE56SGow?oc=5",
+          "published": "2026-11-17"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.0/10. Replace the generic election caption with the exact demand Gachagua tabled so readers know what is at stake."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 8,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 6,
+        "demand": 3,
+        "action": 5,
+        "fair": 7,
+        "impact": 6,
+        "human": 4,
+        "avg": 6.0,
+        "note": "Replace the generic election caption with the exact demand Gachagua tabled so readers know what is at stake."
+      },
+      "drafted_at": "2026-11-18T09:20:59.299214+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1118e-r2-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "file",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127779-john-methu-questions-matiangi-ndindi-nyoros-loyalty-opposition",
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Gachagua Ally Names Opposition Moles, Links Them to Ruto"
+        }
+      ],
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1223
     }
   ],
   "scripts": {
-    "radio": "Hamjambo and welcome to Kenya on Record. Let us examine the decisions and numbers shaping public accountability this week.\n\nFirst, at the Milimani Law Courts, a clerk attached to the Kenya Revenue Authority was arraigned over an alleged eight point five million shilling fraud. The prosecution points to revenue diversion through manipulated tax records. It is a sobering development. While ordinary citizens tighten their belts to comply with every statutory deduction, systemic leaks within our revenue collection agency severely undermine public confidence. True reform at KRA cannot just be about setting higher targets; it must mean water-tight internal systems that hold every officer accountable.\n\nMeanwhile, critical conversations around future elections are taking shape. Rigathi Gachagua and the Independent Electoral and Boundaries Commission have set talks for this Thursday to deliberate on election technology and the issuance of national identity cards. With voter registration fundamentally tied to obtaining an ID, civil society and citizens are watching closely. The core demand remains straightforward: election technology must be transparent and verifiable, and no eligible youth should be disenfranchised by bureaucratic delays at registration bureaus.\n\nKwa ufupi: Karani mmoja wa KRA amefikishwa mahakamani kwa madai ya kufuja shilingi milioni nane nukta tano za ushuru. Wakati huo huo, Rigathi Gachagua na IEBC wanatazamiwa kukutana Alhamisi hii kujadili masuala ya teknolojia ya uchaguzi na utoaji wa vitambulisho vya kitaifa.\n\nStay engaged, verify the facts, and keep duty bearers on record.",
-    "voice_note": "Habari yenu, this is Kenya on Record with your weekly brief. Two key accountability stories are on our radar. First, a KRA clerk has been charged in court over an alleged fraud of 8.5 million shillings through altered tax systems. When ordinary Kenyans are paying every single coin demanded by law, internal revenue leaks cannot be treated as business as usual. Second, on our electoral integrity: Rigathi Gachagua and the IEBC are meeting this Thursday to discuss election technology and national ID issuance. Your national ID is your right and your voter registration pass. Technology must safeguard the ballot, not invite suspicion. Let us watch what commitments come out of that meeting. Share this note and stay alert.",
-    "sms": "Usiibiwe: Always pay KRA taxes via official government paybills only. Never hand cash or send money to an individual clerk's personal number. Verify receipts.",
-    "reels": "Eight point five million shillings. That is the sum a KRA clerk is accused of siphoning through manipulated tax records. While millions of hardworking Kenyans pay their dues down to the very last shilling, public trust erodes when internal controls fail. We are tracking this case at Milimani to see where systemic accountability begins. Follow Kenya on Record."
+    "radio": "Habari za jioni, na karibu kwenye Kenya on Record. Mimi ni mtangazaji wako, na leo tunaziangazia kile kinachoendelea katika maandalizi ya uchaguzi na uwazi wa IEBC.\n\nWiki hii, aliyekuwa Naibu Rais Rigathi Gachagua ameweka shinikizo wazi kwa Tume Huru ya Uchaguzi na Mipaka (IEBC). Gachagua anaitaka IEBC kuweka wazi mfumo wake wa kiteknolojia na jinsi usajili wa wapigakura unavyoendeshwa, kabla ya mkutano wao muhimu uliopangwa kufanyika Alhamisi hii. Hii si habari ya kupuuzwa. Teknolojia ndiyo roho ya uchaguzi wowote wa kuaminika. Wananchi wanataka kujua: Je, seva ziko wapi? Wasifu wa wapigakura unasimamiwa vipi ili kuzuia kasoro zilizojitokeza hapo awali? Uwazi huu ni muhimu ili kujenga imani ya umma.\n\nKumbuka, uwazi katika uendeshaji wa IEBC si upendeleo; ni haki ya kikatiba ya kila Mkenya. Endelea kufuatilia Kenya on Record kwa taarifa za kina na za kuaminika.\n\n*Muhtasari wa Kiswahili:* Rigathi Gachagua ameitaka IEBC kuweka wazi teknolojia yake na usajili wa wapigakura kabla ya mkutano wa Alhamisi, akisisitiza umuhimu wa uwazi ili kulinda demokrasia yetu.",
+    "voice_note": "Wadau, habari za leo. Hapa Kenya on Record tunaangazia shinikizo kutoka kwa Rigathi Gachagua kuelekea mkutano wa Alhamisi na IEBC. Gachagua anataka tume ieleze wazi jinsi teknolojia yao itafanya kazi na jinsi usajili wa wapigakura unavyoendeshwa. Uchaguzi huru na wa haki huanza na mitambo inayoeleweka na isiyokuwa na siri. Usikae nyuma, fuatilia ukweli na uthibitishe mambo kabla ya Alhamisi hii.",
+    "sms": "Usiibiwe: Kura yako, nguvu yako! Dai uwazi kutoka kwa IEBC kuhusu teknolojia na usajili wa wapigakura. Fuatilia ukweli na Kenya on Record.",
+    "reels": "[Visual: Gachagua akiongea kwa msisitizo, ikifuatiwa na picha ya jengo la IEBC na skrini ya kompyuta yenye alama ya swali]\n\nVoice-over (mwenye sauti thabiti na ya kistaarabu):\n\"Teknolojia ya uchaguzi si siri ya serikali! Wiki hii, Gachagua anataka majibu mazito kutoka kwa IEBC kuhusu mfumo wa kiteknolojia na usajili wa wapigakura kabla ya mkutano wa Alhamisi. Je, tuko tayari kwa uchaguzi huru na wa wazi? Fuatilia Kenya on Record ujue ukweli.\""
   },
   "spend_usd": 0.0
 }
