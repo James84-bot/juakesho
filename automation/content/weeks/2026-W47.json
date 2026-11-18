@@ -1201,7 +1201,7 @@
           "published": "2026-11-18"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 4.5/10. Match the post to this week's active news stories like the State of the Nation or IEBC talks, and write with original human phrasing instead of templates."
@@ -1244,7 +1244,8 @@
         }
       ],
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "tg_msg": 1229
+      "tg_msg": 1229,
+      "decided_at": "2026-11-18T12:19:48.543277+03:00"
     },
     {
       "id": "2026-w47-hot-1118e-r2",
