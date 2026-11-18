@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-18T14:34:53.871192+00:00",
+ "fetched": "2026-11-18T15:22:46.569594+00:00",
  "x": [
   {
    "name": "#StateOfTheNation2026",
@@ -7,6 +7,14 @@
   },
   {
    "name": "#TheRecord",
+   "tweets": ""
+  },
+  {
+   "name": "Usawa Kwa Wote",
+   "tweets": ""
+  },
+  {
+   "name": "#SOTNA2026",
    "tweets": ""
   },
   {
@@ -18,11 +26,11 @@
    "tweets": ""
   },
   {
-   "name": "#WauniforFlaxRoad",
+   "name": "Correcting Inequalities",
    "tweets": ""
   },
   {
-   "name": "President Ruto",
+   "name": "#WauniforFlaxRoad",
    "tweets": ""
   },
   {
@@ -34,11 +42,7 @@
    "tweets": ""
   },
   {
-   "name": "#dcishinninginafrica",
-   "tweets": ""
-  },
-  {
-   "name": "NHIF in 2022",
+   "name": "President Ruto",
    "tweets": ""
   },
   {
@@ -54,35 +58,7 @@
    "tweets": ""
   },
   {
-   "name": "Usawa Kwa Wote",
-   "tweets": ""
-  },
-  {
-   "name": "AFCON",
-   "tweets": ""
-  },
-  {
-   "name": "Caleb Amisi Explains",
-   "tweets": ""
-  },
-  {
-   "name": "Correcting Inequalities",
-   "tweets": ""
-  },
-  {
-   "name": "indigenous seed conference",
-   "tweets": ""
-  },
-  {
-   "name": "From Scandals to Systems",
-   "tweets": ""
-  },
-  {
-   "name": "kenya's 136",
-   "tweets": ""
-  },
-  {
-   "name": "chesokor",
+   "name": "NHIF in 2022",
    "tweets": ""
   },
   {
@@ -90,11 +66,23 @@
    "tweets": ""
   },
   {
-   "name": "Obinna Show",
+   "name": "AFCON",
    "tweets": ""
   },
   {
-   "name": "kenya's itu",
+   "name": "indigenous seed conference",
+   "tweets": ""
+  },
+  {
+   "name": "Kazi Si Chama",
+   "tweets": ""
+  },
+  {
+   "name": "chesokor",
+   "tweets": ""
+  },
+  {
+   "name": "Caleb Amisi Explains",
    "tweets": ""
   },
   {
@@ -106,11 +94,11 @@
    "tweets": ""
   },
   {
-   "name": "Auditor-General",
+   "name": "Babu",
    "tweets": ""
   },
   {
-   "name": "Babu",
+   "name": "KSh230",
    "tweets": ""
   },
   {
@@ -120,180 +108,282 @@
   {
    "name": "Match",
    "tweets": ""
+  },
+  {
+   "name": "GTA VI",
+   "tweets": ""
+  },
+  {
+   "name": "Obinna Show",
+   "tweets": ""
+  },
+  {
+   "name": "Regina Re",
+   "tweets": ""
   }
  ],
  "videos": [
   {
+   "title": "Citizen TV Live:",
+   "channel": "Citizen TV",
+   "views": 7591,
+   "published": "2026-11-18T14:55:11+00:00",
+   "per_hour": 7591,
+   "url": "https://www.youtube.com/watch?v=wU4ZKAfY5rM",
+   "short": "https://youtube.com/shorts/wU4ZKAfY5rM"
+  },
+  {
    "title": "WATCH LIVE: State of the Nation Address",
    "channel": "Citizen TV",
-   "views": 12911,
+   "views": 17402,
    "published": "2026-11-18T11:20:02+00:00",
-   "per_hour": 3975,
+   "per_hour": 4301,
    "url": "https://www.youtube.com/watch?v=gPNcqlAJUJA",
    "short": "https://youtube.com/shorts/gPNcqlAJUJA"
   },
   {
-   "title": "NTV KENYA LIVE",
-   "channel": "NTV Kenya",
-   "views": 23494,
-   "published": "2026-11-18T08:23:08+00:00",
-   "per_hour": 3792,
-   "url": "https://www.youtube.com/watch?v=OpS6VXVjbO0",
-   "short": "https://youtube.com/shorts/OpS6VXVjbO0"
-  },
-  {
    "title": "President William Ruto greets MPs as he arrives in parliament for state of the nation address",
    "channel": "Citizen TV",
-   "views": 4828,
+   "views": 9596,
    "published": "2026-11-18T11:24:21+00:00",
-   "per_hour": 1520,
+   "per_hour": 2415,
    "url": "https://www.youtube.com/watch?v=4AtwQlZ52B0",
    "short": "https://youtube.com/shorts/4AtwQlZ52B0"
   },
   {
    "title": "Ruto Delivers 4th State of the Nation Address Amid Rising Pressure Over Economy, Debt and Governance",
    "channel": "KTN News",
-   "views": 4461,
+   "views": 5514,
    "published": "2026-11-18T10:43:33+00:00",
-   "per_hour": 1157,
+   "per_hour": 1185,
    "url": "https://www.youtube.com/watch?v=YtY_aA0f-iA",
    "short": "https://youtube.com/shorts/YtY_aA0f-iA"
   },
   {
-   "title": "Regina Re's daughter Thandie Gitao in court after she was charged with the murder of her grandmother",
-   "channel": "NTV Kenya",
-   "views": 2714,
-   "published": "2026-11-18T11:32:48+00:00",
-   "per_hour": 894,
-   "url": "https://www.youtube.com/watch?v=1nv1ijYLb3g",
-   "short": "https://youtube.com/shorts/1nv1ijYLb3g"
-  },
-  {
    "title": "“Tunataka Pawa,” Cheers in Parliament as Siaya Senator Oburu Oginga arrives for State of the Nation",
    "channel": "Citizen TV",
-   "views": 2298,
+   "views": 3836,
    "published": "2026-11-18T11:51:37+00:00",
-   "per_hour": 844,
+   "per_hour": 1090,
    "url": "https://www.youtube.com/watch?v=UWrsBsjfimo",
    "short": "https://youtube.com/shorts/UWrsBsjfimo"
   },
   {
-   "title": "Rais Ruto kutoa hotuba ya hali ya taifa bungeni",
+   "title": "Regina Re's daughter Thandie Gitao in court after she was charged with the murder of her grandmother",
    "channel": "NTV Kenya",
-   "views": 2428,
-   "published": "2026-11-18T10:39:16+00:00",
-   "per_hour": 618,
-   "url": "https://www.youtube.com/watch?v=3HMYZ8KQtNw",
-   "short": "https://youtube.com/shorts/3HMYZ8KQtNw"
+   "views": 4029,
+   "published": "2026-11-18T11:32:48+00:00",
+   "per_hour": 1051,
+   "url": "https://www.youtube.com/watch?v=1nv1ijYLb3g",
+   "short": "https://youtube.com/shorts/1nv1ijYLb3g"
   },
   {
-   "title": "Viongozi bungeni watoa maoni yao kabla ya hotuba ya rais Ruto",
-   "channel": "KTN News",
-   "views": 2998,
-   "published": "2026-11-18T09:31:54+00:00",
-   "per_hour": 594,
-   "url": "https://www.youtube.com/watch?v=w3XVNjnyHgM",
-   "short": "https://youtube.com/shorts/w3XVNjnyHgM"
+   "title": "Catechists who allow politicians to speak in church will be fired, Nyeri Archbishop Muheria warns",
+   "channel": "Citizen TV",
+   "views": 1201,
+   "published": "2026-11-18T13:58:24+00:00",
+   "per_hour": 854,
+   "url": "https://www.youtube.com/watch?v=dLk9h3To2Ts",
+   "short": "https://youtube.com/shorts/dLk9h3To2Ts"
   },
   {
    "title": "MPs chant 'pawa' as Oburu Oginga enters parliament for the State of The Nation address",
    "channel": "NTV Kenya",
-   "views": 1485,
+   "views": 2150,
    "published": "2026-11-18T11:49:14+00:00",
-   "per_hour": 538,
+   "per_hour": 604,
    "url": "https://www.youtube.com/watch?v=mPvxRf34FJU",
    "short": "https://youtube.com/shorts/mPvxRf34FJU"
   },
   {
+   "title": "Viongozi bungeni watoa maoni yao kabla ya hotuba ya rais Ruto",
+   "channel": "KTN News",
+   "views": 3247,
+   "published": "2026-11-18T09:31:54+00:00",
+   "per_hour": 555,
+   "url": "https://www.youtube.com/watch?v=w3XVNjnyHgM",
+   "short": "https://youtube.com/shorts/w3XVNjnyHgM"
+  },
+  {
    "title": "Hali ilivyo bungeni kabla ya hotuba ya rais bungeni",
    "channel": "NTV Kenya",
-   "views": 1641,
+   "views": 2135,
    "published": "2026-11-18T11:19:16+00:00",
-   "per_hour": 503,
+   "per_hour": 526,
    "url": "https://www.youtube.com/watch?v=iE3JZHJ9Rro",
    "short": "https://youtube.com/shorts/iE3JZHJ9Rro"
   },
   {
    "title": "President Xi Jinping greets his USA counterpart, Donald Trump, at the airport as he arrives in China",
    "channel": "Citizen TV",
-   "views": 1486,
+   "views": 1986,
    "published": "2026-11-18T11:11:19+00:00",
-   "per_hour": 438,
+   "per_hour": 474,
    "url": "https://www.youtube.com/watch?v=IYidCGF_gnY",
    "short": "https://youtube.com/shorts/IYidCGF_gnY"
   },
   {
-   "title": "Wakazi Eldoret watoa maoni yao kuhusu hotuba ya rais Ruto",
-   "channel": "KTN News",
-   "views": 1805,
-   "published": "2026-11-18T09:17:46+00:00",
-   "per_hour": 341,
-   "url": "https://www.youtube.com/watch?v=4HBEbSHSbNw",
-   "short": "https://youtube.com/shorts/4HBEbSHSbNw"
+   "title": "Kipkurui Chepkwony: We want to see a scorecard based on the commitments under the better agenda",
+   "channel": "NTV Kenya",
+   "views": 1234,
+   "published": "2026-11-18T11:24:32+00:00",
+   "per_hour": 311,
+   "url": "https://www.youtube.com/watch?v=X59veJKHUuY",
+   "short": "https://youtube.com/shorts/X59veJKHUuY"
   },
   {
    "title": "A Few MPs Outline Expectations Ahead of President Ruto’s State of the Nation Address",
    "channel": "KTN News",
-   "views": 1143,
+   "views": 1305,
    "published": "2026-11-18T10:47:38+00:00",
-   "per_hour": 302,
+   "per_hour": 285,
    "url": "https://www.youtube.com/watch?v=6PoURIQtilw",
    "short": "https://youtube.com/shorts/6PoURIQtilw"
   },
   {
-   "title": "Catechists who allow politicians to speak in church will be fired, Nyeri Archbishop Muheria warns",
-   "channel": "Citizen TV",
-   "views": 297,
-   "published": "2026-11-18T13:58:24+00:00",
-   "per_hour": 297,
-   "url": "https://www.youtube.com/watch?v=dLk9h3To2Ts",
-   "short": "https://youtube.com/shorts/dLk9h3To2Ts"
+   "title": "4 Years Into Ruto’s Presidency, Questions Mount Over Unfulfilled Promises on Economy and Governance",
+   "channel": "KTN News",
+   "views": 1056,
+   "published": "2026-11-18T11:23:29+00:00",
+   "per_hour": 265,
+   "url": "https://www.youtube.com/watch?v=0xpXZnOXIBQ",
+   "short": "https://youtube.com/shorts/0xpXZnOXIBQ"
   },
   {
-   "title": "Kipkurui Chepkwony: We want to see a scorecard based on the commitments under the better agenda",
-   "channel": "NTV Kenya",
-   "views": 916,
-   "published": "2026-11-18T11:24:32+00:00",
-   "per_hour": 289,
-   "url": "https://www.youtube.com/watch?v=X59veJKHUuY",
-   "short": "https://youtube.com/shorts/X59veJKHUuY"
+   "title": "Mombasa Residents Share Expectations Ahead of President Ruto’s State of the Nation Address",
+   "channel": "KTN News",
+   "views": 1215,
+   "published": "2026-11-18T10:47:53+00:00",
+   "per_hour": 265,
+   "url": "https://www.youtube.com/watch?v=_2ZHpjl-zPs",
+   "short": "https://youtube.com/shorts/_2ZHpjl-zPs"
   }
  ],
  "errors": {},
  "catalog": [
   {
+   "title": "NTV KENYA LIVE",
+   "channel": "NTV Kenya",
+   "views": 258,
+   "published": "2026-11-18T15:08:41+00:00",
+   "per_hour": 258,
+   "url": "https://www.youtube.com/watch?v=w5WdbabJgy0",
+   "short": "https://youtube.com/shorts/w5WdbabJgy0"
+  },
+  {
+   "title": "Koech Aisifu Hotuba ya Ruto, Asema Imeweka Mwelekeo Mpya kwa Taifa",
+   "channel": "KTN News",
+   "views": 36,
+   "published": "2026-11-18T15:07:07+00:00",
+   "per_hour": 36,
+   "url": "https://www.youtube.com/watch?v=3O6UpkJc6uk",
+   "short": "https://youtube.com/shorts/3O6UpkJc6uk"
+  },
+  {
+   "title": "CS Muuga: Wizara ya Maji Iko Tayari Kutekeleza Mpango wa Mabwawa 50",
+   "channel": "KTN News",
+   "views": 5,
+   "published": "2026-11-18T15:06:14+00:00",
+   "per_hour": 5,
+   "url": "https://www.youtube.com/watch?v=uRnRU5Zo2EQ",
+   "short": "https://youtube.com/shorts/uRnRU5Zo2EQ"
+  },
+  {
+   "title": "Ojienda Aeleza Jinsi Mfuko wa Miundombinu Utakavyobadilisha Kenya",
+   "channel": "KTN News",
+   "views": 16,
+   "published": "2026-11-18T15:04:23+00:00",
+   "per_hour": 16,
+   "url": "https://www.youtube.com/watch?v=mPiagf-bPBk",
+   "short": "https://youtube.com/shorts/mPiagf-bPBk"
+  },
+  {
+   "title": "Leaders give their views of the 2026 State of the Nation Address",
+   "channel": "NTV Kenya",
+   "views": 36,
+   "published": "2026-11-18T15:04:01+00:00",
+   "per_hour": 36,
+   "url": "https://www.youtube.com/watch?v=z_mVn6VA1os",
+   "short": "https://youtube.com/shorts/z_mVn6VA1os"
+  },
+  {
+   "title": "Kimayo Aunga Mkono Muhula wa Pili wa Ruto, Asema Maendeleo Yanafika Kila Kona",
+   "channel": "KTN News",
+   "views": 20,
+   "published": "2026-11-18T15:02:20+00:00",
+   "per_hour": 20,
+   "url": "https://www.youtube.com/watch?v=Zr18bsM-08U",
+   "short": "https://youtube.com/shorts/Zr18bsM-08U"
+  },
+  {
+   "title": "Duale Asema Ruto Ametekeleza Manifesto, Awashambulia Wapinzani kwa Siasa za Ukanda",
+   "channel": "KTN News",
+   "views": 60,
+   "published": "2026-11-18T15:01:02+00:00",
+   "per_hour": 60,
+   "url": "https://www.youtube.com/watch?v=ivhU6JalFtk",
+   "short": "https://youtube.com/shorts/ivhU6JalFtk"
+  },
+  {
+   "title": "Ruto Awataka Wapinzani Kueleza Mipango Yao Badala ya Kukosoa Serikali Pekee",
+   "channel": "KTN News",
+   "views": 112,
+   "published": "2026-11-18T14:59:57+00:00",
+   "per_hour": 112,
+   "url": "https://www.youtube.com/watch?v=dP8SE5mZywo",
+   "short": "https://youtube.com/shorts/dP8SE5mZywo"
+  },
+  {
+   "title": "Citizen TV Live:",
+   "channel": "Citizen TV",
+   "views": 7591,
+   "published": "2026-11-18T14:55:11+00:00",
+   "per_hour": 7591,
+   "url": "https://www.youtube.com/watch?v=wU4ZKAfY5rM",
+   "short": "https://youtube.com/shorts/wU4ZKAfY5rM"
+  },
+  {
+   "title": "President Ruto's fourth State of the Nation address",
+   "channel": "Citizen TV",
+   "views": 125,
+   "published": "2026-11-18T14:48:25+00:00",
+   "per_hour": 125,
+   "url": "https://www.youtube.com/watch?v=874xM0DhylQ",
+   "short": "https://youtube.com/shorts/874xM0DhylQ"
+  },
+  {
    "title": "A Lifetime With Sickle Cell: Francis’ Story At 71",
    "channel": "Citizen TV",
-   "views": 36,
+   "views": 246,
    "published": "2026-11-18T14:01:55+00:00",
-   "per_hour": 36,
+   "per_hour": 183,
    "url": "https://www.youtube.com/watch?v=LShF2rX3zww",
    "short": "https://youtube.com/shorts/LShF2rX3zww"
   },
   {
    "title": "Catechists who allow politicians to speak in church will be fired, Nyeri Archbishop Muheria warns",
    "channel": "Citizen TV",
-   "views": 297,
+   "views": 1201,
    "published": "2026-11-18T13:58:24+00:00",
-   "per_hour": 297,
+   "per_hour": 854,
    "url": "https://www.youtube.com/watch?v=dLk9h3To2Ts",
    "short": "https://youtube.com/shorts/dLk9h3To2Ts"
   },
   {
    "title": "Nairobi County Engages Liquor Industry Stakeholders on Proposed Liquor Act 2026",
    "channel": "KTN News",
-   "views": 74,
+   "views": 124,
    "published": "2026-11-18T13:30:35+00:00",
-   "per_hour": 69,
+   "per_hour": 66,
    "url": "https://www.youtube.com/watch?v=tUpAdmrohrw",
    "short": "https://youtube.com/shorts/tUpAdmrohrw"
   },
   {
-   "title": "r2",
+   "title": "Ruto: Siku za Wanasiasa Kuketi Kwenye Bodi za Mashirika ya Umma Zimeisha",
    "channel": "KTN News",
-   "views": 130,
+   "views": 190,
    "published": "2026-11-18T13:28:53+00:00",
-   "per_hour": 118,
+   "per_hour": 100,
    "url": "https://www.youtube.com/watch?v=FZ9WLliahic",
    "short": "https://youtube.com/shorts/FZ9WLliahic"
   },
@@ -302,88 +392,88 @@
    "channel": "NTV Kenya",
    "views": 13,
    "published": "2026-11-18T13:00:22+00:00",
-   "per_hour": 8,
+   "per_hour": 5,
    "url": "https://www.youtube.com/watch?v=HyhWHuumKNY",
    "short": "https://youtube.com/shorts/HyhWHuumKNY"
   },
   {
    "title": "“Tunataka Pawa,” Cheers in Parliament as Siaya Senator Oburu Oginga arrives for State of the Nation",
    "channel": "Citizen TV",
-   "views": 2298,
+   "views": 3836,
    "published": "2026-11-18T11:51:37+00:00",
-   "per_hour": 844,
+   "per_hour": 1090,
    "url": "https://www.youtube.com/watch?v=UWrsBsjfimo",
    "short": "https://youtube.com/shorts/UWrsBsjfimo"
   },
   {
    "title": "MPs chant 'pawa' as Oburu Oginga enters parliament for the State of The Nation address",
    "channel": "NTV Kenya",
-   "views": 1485,
+   "views": 2150,
    "published": "2026-11-18T11:49:14+00:00",
-   "per_hour": 538,
+   "per_hour": 604,
    "url": "https://www.youtube.com/watch?v=mPvxRf34FJU",
    "short": "https://youtube.com/shorts/mPvxRf34FJU"
   },
   {
    "title": "Kenya leads climate mitigation discussions as ministers take over negotiations at COP31",
    "channel": "NTV Kenya",
-   "views": 96,
+   "views": 185,
    "published": "2026-11-18T11:39:09+00:00",
-   "per_hour": 33,
+   "per_hour": 50,
    "url": "https://www.youtube.com/watch?v=ia_IXc2a3W8",
    "short": "https://youtube.com/shorts/ia_IXc2a3W8"
   },
   {
    "title": "Regina Re's daughter Thandie Gitao in court after she was charged with the murder of her grandmother",
    "channel": "NTV Kenya",
-   "views": 2714,
+   "views": 4029,
    "published": "2026-11-18T11:32:48+00:00",
-   "per_hour": 894,
+   "per_hour": 1051,
    "url": "https://www.youtube.com/watch?v=1nv1ijYLb3g",
    "short": "https://youtube.com/shorts/1nv1ijYLb3g"
   },
   {
    "title": "Mishi Mboko aeleza matarajio yake ya hotuba ya rais kuhusu hali ya taifa",
    "channel": "NTV Kenya",
-   "views": 515,
+   "views": 679,
    "published": "2026-11-18T11:25:12+00:00",
-   "per_hour": 163,
+   "per_hour": 171,
    "url": "https://www.youtube.com/watch?v=McNYZiKqQAE",
    "short": "https://youtube.com/shorts/McNYZiKqQAE"
   },
   {
    "title": "Kipkurui Chepkwony: We want to see a scorecard based on the commitments under the better agenda",
    "channel": "NTV Kenya",
-   "views": 916,
+   "views": 1234,
    "published": "2026-11-18T11:24:32+00:00",
-   "per_hour": 289,
+   "per_hour": 311,
    "url": "https://www.youtube.com/watch?v=X59veJKHUuY",
    "short": "https://youtube.com/shorts/X59veJKHUuY"
   },
   {
    "title": "President William Ruto greets MPs as he arrives in parliament for state of the nation address",
    "channel": "Citizen TV",
-   "views": 4828,
+   "views": 9596,
    "published": "2026-11-18T11:24:21+00:00",
-   "per_hour": 1520,
+   "per_hour": 2415,
    "url": "https://www.youtube.com/watch?v=4AtwQlZ52B0",
    "short": "https://youtube.com/shorts/4AtwQlZ52B0"
   },
   {
    "title": "4 Years Into Ruto’s Presidency, Questions Mount Over Unfulfilled Promises on Economy and Governance",
    "channel": "KTN News",
-   "views": 732,
+   "views": 1056,
    "published": "2026-11-18T11:23:29+00:00",
-   "per_hour": 229,
+   "per_hour": 265,
    "url": "https://www.youtube.com/watch?v=0xpXZnOXIBQ",
    "short": "https://youtube.com/shorts/0xpXZnOXIBQ"
   },
   {
    "title": "Je, wakazi wa Kakamega wana matarajio gani ya hotuba ya rais bungeni?",
    "channel": "NTV Kenya",
-   "views": 144,
+   "views": 192,
    "published": "2026-11-18T11:23:01+00:00",
-   "per_hour": 45,
+   "per_hour": 48,
    "url": "https://www.youtube.com/watch?v=-bWryCIc6dE",
    "short": "https://youtube.com/shorts/-bWryCIc6dE"
   },
@@ -392,32 +482,32 @@
    "channel": "NTV Kenya",
    "views": 142,
    "published": "2026-11-18T11:22:09+00:00",
-   "per_hour": 44,
+   "per_hour": 35,
    "url": "https://www.youtube.com/watch?v=edyRabViQvw",
    "short": "https://youtube.com/shorts/edyRabViQvw"
   },
   {
    "title": "Matarajio ya wakazi wa Nyeri kuhusu hotuba ya rais bungeni",
    "channel": "NTV Kenya",
-   "views": 111,
+   "views": 156,
    "published": "2026-11-18T11:21:04+00:00",
-   "per_hour": 34,
+   "per_hour": 39,
    "url": "https://www.youtube.com/watch?v=18g5CydW4kw",
    "short": "https://youtube.com/shorts/18g5CydW4kw"
   },
   {
    "title": "WATCH LIVE: State of the Nation Address",
    "channel": "Citizen TV",
-   "views": 12911,
+   "views": 17402,
    "published": "2026-11-18T11:20:02+00:00",
-   "per_hour": 3975,
+   "per_hour": 4301,
    "url": "https://www.youtube.com/watch?v=gPNcqlAJUJA",
    "short": "https://youtube.com/shorts/gPNcqlAJUJA"
   },
   {
    "title": "Wakazi wa Nakuru wasema matarajio yao kabla ya hotuba ya rais",
    "channel": "NTV Kenya",
-   "views": 160,
+   "views": 198,
    "published": "2026-11-18T11:20:02+00:00",
    "per_hour": 49,
    "url": "https://www.youtube.com/watch?v=OyC00Sk9JMA",
@@ -426,70 +516,70 @@
   {
    "title": "Hali ilivyo bungeni kabla ya hotuba ya rais bungeni",
    "channel": "NTV Kenya",
-   "views": 1641,
+   "views": 2135,
    "published": "2026-11-18T11:19:16+00:00",
-   "per_hour": 503,
+   "per_hour": 526,
    "url": "https://www.youtube.com/watch?v=iE3JZHJ9Rro",
    "short": "https://youtube.com/shorts/iE3JZHJ9Rro"
   },
   {
    "title": "President Xi Jinping greets his USA counterpart, Donald Trump, at the airport as he arrives in China",
    "channel": "Citizen TV",
-   "views": 1486,
+   "views": 1986,
    "published": "2026-11-18T11:11:19+00:00",
-   "per_hour": 438,
+   "per_hour": 474,
    "url": "https://www.youtube.com/watch?v=IYidCGF_gnY",
    "short": "https://youtube.com/shorts/IYidCGF_gnY"
   },
   {
    "title": "Runinga ya Citizen yatambuliwa kama chapa bora zaidi nchini",
    "channel": "Citizen TV",
-   "views": 467,
+   "views": 636,
    "published": "2026-11-18T10:59:43+00:00",
-   "per_hour": 130,
+   "per_hour": 145,
    "url": "https://www.youtube.com/watch?v=NbyP9Zwv2Xk",
    "short": "https://youtube.com/shorts/NbyP9Zwv2Xk"
   },
   {
    "title": "Afrika Kusini yaicharaza Harambee Stars 2-1 katika mechi ya kufuzu AFCON 2027",
    "channel": "Citizen TV",
-   "views": 681,
+   "views": 653,
    "published": "2026-11-18T10:58:33+00:00",
-   "per_hour": 189,
+   "per_hour": 148,
    "url": "https://www.youtube.com/watch?v=8MoEDsGQnIQ",
    "short": "https://youtube.com/shorts/8MoEDsGQnIQ"
   },
   {
    "title": "Wakulima wa matunda Machakos kunufaika na mifumo mipya ya kuongeza thamani ya mazao",
    "channel": "Citizen TV",
-   "views": 268,
+   "views": 291,
    "published": "2026-11-18T10:53:50+00:00",
-   "per_hour": 73,
+   "per_hour": 65,
    "url": "https://www.youtube.com/watch?v=wLQ0U0YlzjI",
    "short": "https://youtube.com/shorts/wLQ0U0YlzjI"
   },
   {
    "title": "Wachuuzi wa vyakula mitaani wahimizwa kutumia mbinu za kisasa za upishi kulinda afya na mazingira",
    "channel": "Citizen TV",
-   "views": 245,
+   "views": 294,
    "published": "2026-11-18T10:52:15+00:00",
-   "per_hour": 66,
+   "per_hour": 65,
    "url": "https://www.youtube.com/watch?v=MFv6bW8T6fg",
    "short": "https://youtube.com/shorts/MFv6bW8T6fg"
   },
   {
    "title": "Kenya yafikia asilimia 90 katika vita dhidi ya utakatishaji fedha haramu na ufadhili wa ugaidi",
    "channel": "Citizen TV",
-   "views": 367,
+   "views": 399,
    "published": "2026-11-18T10:50:35+00:00",
-   "per_hour": 98,
+   "per_hour": 88,
    "url": "https://www.youtube.com/watch?v=iTI7ilM4Y3w",
    "short": "https://youtube.com/shorts/iTI7ilM4Y3w"
   },
   {
    "title": "EACC yaibua wasiwasi kuhusu kuingiliwa kwa michakato ya uajiri katika serikali za kaunti",
    "channel": "Citizen TV",
-   "views": 292,
+   "views": 350,
    "published": "2026-11-18T10:48:17+00:00",
    "per_hour": 77,
    "url": "https://www.youtube.com/watch?v=2Cvd_Rz0quw",
@@ -498,16 +588,16 @@
   {
    "title": "Mombasa Residents Share Expectations Ahead of President Ruto’s State of the Nation Address",
    "channel": "KTN News",
-   "views": 1081,
+   "views": 1215,
    "published": "2026-11-18T10:47:53+00:00",
-   "per_hour": 286,
+   "per_hour": 265,
    "url": "https://www.youtube.com/watch?v=_2ZHpjl-zPs",
    "short": "https://youtube.com/shorts/_2ZHpjl-zPs"
   },
   {
    "title": "Parliament Road cleared ahead of President Ruto’s arrival for State of the Nation Address",
    "channel": "NTV Kenya",
-   "views": 688,
+   "views": 834,
    "published": "2026-11-18T10:47:42+00:00",
    "per_hour": 182,
    "url": "https://www.youtube.com/watch?v=SNPVhhM_cbU",
@@ -516,155 +606,65 @@
   {
    "title": "A Few MPs Outline Expectations Ahead of President Ruto’s State of the Nation Address",
    "channel": "KTN News",
-   "views": 1143,
+   "views": 1305,
    "published": "2026-11-18T10:47:38+00:00",
-   "per_hour": 302,
+   "per_hour": 285,
    "url": "https://www.youtube.com/watch?v=6PoURIQtilw",
    "short": "https://youtube.com/shorts/6PoURIQtilw"
   },
   {
    "title": "Wanaharakati waonya kuhusu mbinu mpya zinazotumiwa kufanikisha ukeketaji nchini",
    "channel": "Citizen TV",
-   "views": 317,
+   "views": 331,
    "published": "2026-11-18T10:45:16+00:00",
-   "per_hour": 83,
+   "per_hour": 72,
    "url": "https://www.youtube.com/watch?v=y63slgvUC8w",
    "short": "https://youtube.com/shorts/y63slgvUC8w"
   },
   {
    "title": "Ruto Delivers 4th State of the Nation Address Amid Rising Pressure Over Economy, Debt and Governance",
    "channel": "KTN News",
-   "views": 4461,
+   "views": 5514,
    "published": "2026-11-18T10:43:33+00:00",
-   "per_hour": 1157,
+   "per_hour": 1185,
    "url": "https://www.youtube.com/watch?v=YtY_aA0f-iA",
    "short": "https://youtube.com/shorts/YtY_aA0f-iA"
   },
   {
    "title": "Taita Taveta Residents Voice Expectations Ahead of State of the Nation Address",
    "channel": "KTN News",
-   "views": 370,
+   "views": 279,
    "published": "2026-11-18T10:42:29+00:00",
-   "per_hour": 96,
+   "per_hour": 60,
    "url": "https://www.youtube.com/watch?v=Y0xR1vk5O-U",
    "short": "https://youtube.com/shorts/Y0xR1vk5O-U"
   },
   {
-   "title": "Bidhaa ghushi zenye thamani ya shilingi milioni 104 zateketezwa Mombasa.",
-   "channel": "Citizen TV",
-   "views": 395,
-   "published": "2026-11-18T10:41:11+00:00",
-   "per_hour": 101,
-   "url": "https://www.youtube.com/watch?v=Jdvg4AoJgNM",
-   "short": "https://youtube.com/shorts/Jdvg4AoJgNM"
-  },
-  {
    "title": "SHA CEO Mercy Mwangangi urges Kericho residents to register to access free cancer care",
    "channel": "NTV Kenya",
-   "views": 375,
+   "views": 521,
    "published": "2026-11-18T10:40:09+00:00",
-   "per_hour": 96,
+   "per_hour": 111,
    "url": "https://www.youtube.com/watch?v=yior9VxPWvw",
    "short": "https://youtube.com/shorts/yior9VxPWvw"
   },
   {
-   "title": "Familia mbili mombasa zinawasaka wapendwa wao waliotoweka kwa njia tatanishi.",
-   "channel": "Citizen TV",
-   "views": 469,
-   "published": "2026-11-18T10:39:27+00:00",
-   "per_hour": 120,
-   "url": "https://www.youtube.com/watch?v=H2qbquLTYcU",
-   "short": "https://youtube.com/shorts/H2qbquLTYcU"
-  },
-  {
-   "title": "Rais Ruto kutoa hotuba ya hali ya taifa bungeni",
-   "channel": "NTV Kenya",
-   "views": 2428,
-   "published": "2026-11-18T10:39:16+00:00",
-   "per_hour": 618,
-   "url": "https://www.youtube.com/watch?v=3HMYZ8KQtNw",
-   "short": "https://youtube.com/shorts/3HMYZ8KQtNw"
-  },
-  {
    "title": "Viongozi bungeni watoa maoni yao kabla ya hotuba ya rais Ruto",
    "channel": "KTN News",
-   "views": 2998,
+   "views": 3247,
    "published": "2026-11-18T09:31:54+00:00",
-   "per_hour": 594,
+   "per_hour": 555,
    "url": "https://www.youtube.com/watch?v=w3XVNjnyHgM",
    "short": "https://youtube.com/shorts/w3XVNjnyHgM"
   },
   {
    "title": "Rais Ruto atarajiwa kuwahutubia wakenya baada ya miaka nne uongozini",
    "channel": "KTN News",
-   "views": 1154,
+   "views": 1040,
    "published": "2026-11-18T09:28:57+00:00",
-   "per_hour": 226,
+   "per_hour": 176,
    "url": "https://www.youtube.com/watch?v=GF0cN2BXpRc",
    "short": "https://youtube.com/shorts/GF0cN2BXpRc"
-  },
-  {
-   "title": "Baadhi ya viongozi bungeni watoa maoni yao kuhusu hotuba ya rais Ruto",
-   "channel": "KTN News",
-   "views": 1458,
-   "published": "2026-11-18T09:23:10+00:00",
-   "per_hour": 281,
-   "url": "https://www.youtube.com/watch?v=AtG0Wbeh9uk",
-   "short": "https://youtube.com/shorts/AtG0Wbeh9uk"
-  },
-  {
-   "title": "Wakazi Eldoret watoa maoni yao kuhusu hotuba ya rais Ruto",
-   "channel": "KTN News",
-   "views": 1805,
-   "published": "2026-11-18T09:17:46+00:00",
-   "per_hour": 341,
-   "url": "https://www.youtube.com/watch?v=4HBEbSHSbNw",
-   "short": "https://youtube.com/shorts/4HBEbSHSbNw"
-  },
-  {
-   "title": "Wakazi Mombasa watoa maoni yao kuhusu hotuba ya rais Ruto",
-   "channel": "KTN News",
-   "views": 1183,
-   "published": "2026-11-18T09:16:42+00:00",
-   "per_hour": 223,
-   "url": "https://www.youtube.com/watch?v=UQ3go94XRM8",
-   "short": "https://youtube.com/shorts/UQ3go94XRM8"
-  },
-  {
-   "title": "Rais William Ruto atarajiwa kuhutubia taifa kutoka majengo ya bunge",
-   "channel": "KTN News",
-   "views": 849,
-   "published": "2026-11-18T09:14:30+00:00",
-   "per_hour": 159,
-   "url": "https://www.youtube.com/watch?v=s8rVn9fkQXA",
-   "short": "https://youtube.com/shorts/s8rVn9fkQXA"
-  },
-  {
-   "title": "NTV KENYA LIVE",
-   "channel": "NTV Kenya",
-   "views": 23494,
-   "published": "2026-11-18T08:23:08+00:00",
-   "per_hour": 3792,
-   "url": "https://www.youtube.com/watch?v=OpS6VXVjbO0",
-   "short": "https://youtube.com/shorts/OpS6VXVjbO0"
-  },
-  {
-   "title": "Andrew Lomosi Aanzisha Mpango wa Kuwageuza Vijana Kutoka Uhalifu Hadi Biashara",
-   "channel": "KTN News",
-   "views": 198,
-   "published": "2026-11-18T08:19:02+00:00",
-   "per_hour": 32,
-   "url": "https://www.youtube.com/watch?v=xYB5D_MmQn8",
-   "short": "https://youtube.com/shorts/xYB5D_MmQn8"
-  },
-  {
-   "title": "Karisa Nzai Awaonya Wanasiasa Dhidi ya Kuwatumia Vijana Kuchochea Vurugu za Kisiasa",
-   "channel": "KTN News",
-   "views": 188,
-   "published": "2026-11-18T08:18:17+00:00",
-   "per_hour": 30,
-   "url": "https://www.youtube.com/watch?v=FTTC8O8fsj8",
-   "short": "https://youtube.com/shorts/FTTC8O8fsj8"
   }
  ]
 }
