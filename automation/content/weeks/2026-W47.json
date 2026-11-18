@@ -1295,7 +1295,7 @@
           "published": "2026-11-17"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 6.0/10. Replace the generic election caption with the exact demand Gachagua tabled so readers know what is at stake."
@@ -1338,7 +1338,14 @@
       "reel": true,
       "tg_msg": 1223,
       "photo_checked": "2026-11-18T10:35:46.721590+03:00",
-      "decided_at": "2026-11-18T12:04:43.854726+03:00"
+      "decided_at": "2026-11-18T12:04:43.854726+03:00",
+      "published_at": "2026-11-18T20:02:40.338793+03:00",
+      "ig_id": "18601882723066621",
+      "fb_id": "1320361786870823",
+      "story_id": "18159585250468370",
+      "fb_story_id": "1119249564194958",
+      "yt_id": "VyA8rycuJZQ",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-hot-1118m",
