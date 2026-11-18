@@ -1,25 +1,70 @@
 {
-  "fetched": "2026-11-18T21:54:54.535275+00:00",
+  "fetched": "2026-11-18T22:09:27.869754+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "chelsea vs psg",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Hacken 0-2 Manchester City: Lauren Hemp and Khadija Shaw score to give visitors win",
+          "url": "https://www.bbc.com/sport/football/live/cqe85vepp263t",
+          "source": "BBC"
+        },
+        {
+          "title": "Women's Champions League LIVE! BK Hacken vs Man City, Chelsea vs PSG score updates, news, prediction and line-ups",
+          "url": "https://www.skysports.com/football/live-blog/13613594/womens-champions-league-live-bk-hacken-vs-man-city-chelsea-vs-psg-score-updates-news-prediction-and-line-ups",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Licensable picture: Häcken Dam trupp vs Manchester City F.C. Dam",
+          "url": "https://www.reutersconnect.com/item/hacken-dam-trupp-vs-manchester-city-fc-dam/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUREUE1FRDAwMEQ5OTMzTg",
+          "source": "Reuters Connect"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "appeal",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Fight over fate of protected status for Venezuelan migrants returns to SCOTUS",
+          "url": "https://www.courthousenews.com/fight-over-fate-of-protected-status-for-venezuelan-migrants-returns-to-scotus/",
+          "source": "Courthouse News Service"
+        },
+        {
+          "title": "Trump administration urges Supreme Court to stop TPS for Venezuelans",
+          "url": "https://thehill.com/regulation/court-battles/6228525-trump-urges-scotus-stop-venezuela-tps/",
+          "source": "The Hill"
+        },
+        {
+          "title": "Trump administration appeals to Supreme Court over legal protections for Venezuelan migrants",
+          "url": "https://www.wral.com/news/ap/34f52-trump-administration-appeals-to-supreme-court-over-legal-protections-for-venezuelan-migrants/",
+          "source": "WRAL"
+        }
+      ],
+      "civic": true
+    },
     {
       "geo": "KE",
       "title": "michael carrick",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Pochettino arrives!",
-          "url": "https://www.manutd.com/en/news/pochettino-and-staff-officially-start-work-at-man-united",
-          "source": "Manchester United Website"
+          "title": "Michael Carrick handed chance to land new job after Man Utd sacking but may turn it down",
+          "url": "https://www.express.co.uk/sport/football/2267143/michael-carrick-new-job-man-utd-sacking",
+          "source": "Daily Express"
         },
         {
-          "title": "Man Utd boss Mauricio Pochettino says Manchester won't always be blue",
-          "url": "https://www.bbc.com/sport/football/articles/cm782wnwzvq3o",
-          "source": "BBC"
+          "title": "Man United announce a change of scapegoat",
+          "url": "https://timesofmalta.com/article/man-united-announce-change-scapegoat.1137038",
+          "source": "Times of Malta"
         },
         {
-          "title": "Mauricio Pochettino at Man Utd: Incoming head coach calls for time to topple Man City ahead of Old Trafford arrival",
-          "url": "https://www.skysports.com/football/news/13613499/mauricio-pochettino-incoming-manchester-united-head-coach-calls-for-time-to-topple-manchester-city-ahead-of-old-trafford-arrival",
-          "source": "Sky Sports"
+          "title": "How Michael Carrick’s reign at Manchester United unravelled",
+          "url": "https://www.thetimes.com/sport/football/article/manchester-united-michael-carrick-sacked-analysis-p96tlb7h0",
+          "source": "The Times"
         }
       ]
     },
@@ -172,22 +217,13 @@
           "source": "Football365"
         },
         {
-          "title": "Arsenal looking at double £162m January raid",
-          "url": "https://onefootball.com/en/news/arsenal-looking-at-double-162m-january-raid-43797411",
-          "source": "OneFootball"
+          "title": "Ornstein reports PSG among teams most interested in €100m Premier League star",
+          "url": "https://psgtalk.com/2026/11/ornstein-kroupi-teams-most-interested/",
+          "source": "PSG Talk"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "chelsea vs psg",
-      "why": "unsafe: 'bet'"
-    },
-    {
-      "title": "appeal",
-      "why": "unsafe: 'assault'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }

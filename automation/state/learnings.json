@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T17:02:42.915878+03:00",
+  "updated": "2026-11-19T01:09:17.781850+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -33,7 +33,7 @@
       "lane": "everyone",
       "score": 11.7,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 128,
+      "reach": 129,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -69,30 +69,30 @@
   ],
   "bottom": [
     {
-      "id": "2026-w47-hot-1116",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "reach": 11,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 6.3
-    },
-    {
       "id": "2026-w47-hot-1116m",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
       "opening": "EACC wants Sh40.3 million back from a roads boss.",
-      "reach": 11,
+      "reach": 12,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.8
+      "avg_watch_s": 4.5
+    },
+    {
+      "id": "2026-w47-hot-1117e",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "The World Bank warned Kenya over billion-shilling corruption losses.",
+      "reach": 7,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.2
     },
     {
       "id": "2026-w47-hot-1117",
@@ -100,12 +100,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
-      "reach": 15,
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.7
+      "avg_watch_s": 3.2
     }
   ],
   "all": [
@@ -141,7 +141,7 @@
       "lane": "everyone",
       "score": 11.7,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 128,
+      "reach": 129,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -388,12 +388,12 @@
       "lane": "everyone",
       "score": 3.0,
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "reach": 31,
+      "reach": 32,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.0
+      "avg_watch_s": 5.2
     },
     {
       "id": "2026-w46-d1-money-r5",
@@ -479,7 +479,7 @@
       "lane": "everyone",
       "score": 2.6,
       "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "reach": 88,
+      "reach": 89,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -492,7 +492,7 @@
       "lane": "hustle",
       "score": 2.6,
       "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "reach": 86,
+      "reach": 87,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -505,7 +505,7 @@
       "lane": "everyone",
       "score": 2.4,
       "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "reach": 118,
+      "reach": 119,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -635,12 +635,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya discharged its last Ebola patient this week.",
-      "reach": 17,
+      "reach": 18,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.9
+      "avg_watch_s": 3.7
     },
     {
       "id": "2026-w46-hot-1112m",
@@ -674,12 +674,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
-      "reach": 16,
+      "reach": 17,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.7
+      "avg_watch_s": 6.3
     },
     {
       "id": "2026-w47-d1-usiibiwe",
@@ -726,12 +726,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "EACC wants Sh40.3 million back from a roads boss.",
-      "reach": 11,
+      "reach": 12,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.8
+      "avg_watch_s": 4.5
+    },
+    {
+      "id": "2026-w47-hot-1117e",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "The World Bank warned Kenya over billion-shilling corruption losses.",
+      "reach": 7,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.2
     },
     {
       "id": "2026-w47-hot-1117",
@@ -739,12 +752,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
-      "reach": 15,
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.7
+      "avg_watch_s": 3.2
     }
   ],
   "youtube": [
@@ -754,6 +767,14 @@
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
       "views": 991,
       "likes": 6,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1117e",
+      "series": "sauti",
+      "opening": "The World Bank warned Kenya over billion-shilling corruption losses.",
+      "views": 648,
+      "likes": 0,
       "comments": 0
     },
     {
@@ -864,7 +885,7 @@
       "id": "2026-w47-hot-1116",
       "series": "sauti",
       "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "views": 141,
+      "views": 143,
       "likes": 1,
       "comments": 0
     },
@@ -904,7 +925,7 @@
       "id": "2026-w47-hot-1117",
       "series": "sauti",
       "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
-      "views": 84,
+      "views": 90,
       "likes": 0,
       "comments": 0
     },
@@ -912,7 +933,7 @@
       "id": "2026-w47-d2-kenya",
       "series": "kenya",
       "opening": "Lamu Old Town has been continuously lived in for 700 years.",
-      "views": 80,
+      "views": 81,
       "likes": 0,
       "comments": 0
     },
@@ -957,18 +978,18 @@
       "comments": 0
     },
     {
-      "id": "2026-w45-d5-straight",
-      "series": "straight",
-      "opening": "A viral clip claiming to show Mandera Stadium is false.",
-      "views": 60,
+      "id": "2026-w47-hot-1116m",
+      "series": "sauti",
+      "opening": "EACC wants Sh40.3 million back from a roads boss.",
+      "views": 61,
       "likes": 0,
       "comments": 0
     },
     {
-      "id": "2026-w47-hot-1116m",
-      "series": "sauti",
-      "opening": "EACC wants Sh40.3 million back from a roads boss.",
-      "views": 59,
+      "id": "2026-w45-d5-straight",
+      "series": "straight",
+      "opening": "A viral clip claiming to show Mandera Stadium is false.",
+      "views": 60,
       "likes": 0,
       "comments": 0
     },
