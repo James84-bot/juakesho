@@ -294,7 +294,8 @@
       ],
       "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1142
+      "tg_msg": 1142,
+      "fresh_checked": "2026-11-18T15:46:54.083118+03:00"
     },
     {
       "id": "2026-w47-d5-straight-r2",
@@ -1380,7 +1381,7 @@
           "published": "2026-11-18"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1419,7 +1420,8 @@
       ],
       "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1237
+      "tg_msg": 1237,
+      "decided_at": "2026-11-18T15:41:39.190147+03:00"
     }
   ],
   "scripts": {
