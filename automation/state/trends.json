@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-18T22:09:27.869754+00:00",
+  "fetched": "2026-11-18T23:15:16.079404+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,71 +7,26 @@
       "traffic": "2000+",
       "news": [
         {
-          "title": "Hacken 0-2 Manchester City: Lauren Hemp and Khadija Shaw score to give visitors win",
-          "url": "https://www.bbc.com/sport/football/live/cqe85vepp263t",
+          "title": "Chelsea 1-0 PSG: Late goal boosts Women's Champions League last-eight hopes",
+          "url": "https://www.bbc.com/sport/football/live/cx24e3j2228vt",
           "source": "BBC"
         },
         {
-          "title": "Women's Champions League LIVE! BK Hacken vs Man City, Chelsea vs PSG score updates, news, prediction and line-ups",
-          "url": "https://www.skysports.com/football/live-blog/13613594/womens-champions-league-live-bk-hacken-vs-man-city-chelsea-vs-psg-score-updates-news-prediction-and-line-ups",
+          "title": "Chelsea 1-0 PSG: Veerle Buurman scores late winner as Sonia Bompastor's side go top of Women's Champions League table",
+          "url": "https://www.skysports.com/football/news/13613600/chelsea-1-0-psg-veerle-buurman-scores-late-winner-as-sonia-bompastors-side-go-top-of-womens-champions-league-table",
           "source": "Sky Sports"
         },
         {
-          "title": "Licensable picture: Häcken Dam trupp vs Manchester City F.C. Dam",
-          "url": "https://www.reutersconnect.com/item/hacken-dam-trupp-vs-manchester-city-fc-dam/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUREUE1FRDAwMEQ5OTMzTg",
-          "source": "Reuters Connect"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "appeal",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Fight over fate of protected status for Venezuelan migrants returns to SCOTUS",
-          "url": "https://www.courthousenews.com/fight-over-fate-of-protected-status-for-venezuelan-migrants-returns-to-scotus/",
-          "source": "Courthouse News Service"
-        },
-        {
-          "title": "Trump administration urges Supreme Court to stop TPS for Venezuelans",
-          "url": "https://thehill.com/regulation/court-battles/6228525-trump-urges-scotus-stop-venezuela-tps/",
-          "source": "The Hill"
-        },
-        {
-          "title": "Trump administration appeals to Supreme Court over legal protections for Venezuelan migrants",
-          "url": "https://www.wral.com/news/ap/34f52-trump-administration-appeals-to-supreme-court-over-legal-protections-for-venezuelan-migrants/",
-          "source": "WRAL"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "michael carrick",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Michael Carrick handed chance to land new job after Man Utd sacking but may turn it down",
-          "url": "https://www.express.co.uk/sport/football/2267143/michael-carrick-new-job-man-utd-sacking",
-          "source": "Daily Express"
-        },
-        {
-          "title": "Man United announce a change of scapegoat",
-          "url": "https://timesofmalta.com/article/man-united-announce-change-scapegoat.1137038",
-          "source": "Times of Malta"
-        },
-        {
-          "title": "How Michael Carrick’s reign at Manchester United unravelled",
-          "url": "https://www.thetimes.com/sport/football/article/manchester-united-michael-carrick-sacked-analysis-p96tlb7h0",
-          "source": "The Times"
+          "title": "Confirmed Chelsea Women line up vs PSG | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-psg",
+          "source": "Chelsea Football Club"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "birth certificate",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Huduma Kenya Explains Birth Certificate Application Rules for Underage Mothers",
@@ -89,6 +44,52 @@
           "source": "Tuko News"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "appeal",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Fight Over Deportation Protections for Venezuelans Returns to Supreme Court",
+          "url": "https://www.nytimes.com/2026/11/18/us/politics/supreme-court-trump-deportation-venezuelans.html",
+          "source": "The New York Times"
+        },
+        {
+          "title": "Fight over fate of protected status for Venezuelan migrants returns to SCOTUS",
+          "url": "https://www.courthousenews.com/fight-over-fate-of-protected-status-for-venezuelan-migrants-returns-to-scotus",
+          "source": "Courthouse News Service"
+        },
+        {
+          "title": "Trump administration appeals to Supreme Court over legal protections for Venezuelan migrants",
+          "url": "https://apnews.com/article/supreme-court-trump-administration-immigration-venezuela-34f5293fe85f3befb2a599f513308d60",
+          "source": "AP News"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "kenya state of the nation address",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Live blog: President Ruto's fourth State of the Nation address",
+          "url": "https://nation.africa/kenya/news/live-blog-president-ruto-s-state-of-the-nation-address-5674894",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "President Ruto: My economic record and promise",
+          "url": "https://www.businessdailyafrica.com/bd/economy/ruto-my-economic-record-and-promise-5675876",
+          "source": "Business Daily"
+        },
+        {
+          "title": "Sifuna: State of the Nation Address should focus on human rights, not roads",
+          "url": "https://www.the-star.co.ke/news/2026-11-18-sifuna-state-of-the-nation-address-should-focus-on-human-rights",
+          "source": "The Star, Kenya"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -111,29 +112,6 @@
           "source": "News24"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya state of the nation address",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Live blog: President Ruto's fourth State of the Nation address",
-          "url": "https://nation.africa/kenya/news/live-blog-president-ruto-s-state-of-the-nation-address-5674894",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "President Ruto: My economic record and promise",
-          "url": "https://www.businessdailyafrica.com/bd/economy/ruto-my-economic-record-and-promise-5675876",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Sifuna: State of the Nation Address should focus on human rights, not roads",
-          "url": "https://www.the-star.co.ke/news/2026-11-18-sifuna-state-of-the-nation-address-should-focus-on-human-rights",
-          "source": "The Star, Kenya"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -198,6 +176,28 @@
           "title": "Juan Mata retires: Free-kick vs Man Utd | Video | Official Site",
           "url": "https://www.chelseafc.com/en/video/juan-mata-retires",
           "source": "Chelsea Football Club"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "coritiba vs santos",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "⤮!+@⤮[[HOJE>>>]] Coritiba x Santos ao vivo grátis 18 de novembro de 2026",
+          "url": "https://vacunasaep.org/sites/all/libraries/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=/%5C/keeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-hoje-coritiba-x-santos-ao-vivo-gratis-18-de-qjw6u",
+          "source": "Comité Asesor de Vacunas de la AEP"
+        },
+        {
+          "title": "Neymar causa euforia em hotel antes de jogo contra o Coritiba",
+          "url": "https://www.bemparana.com.br/noticias/parana/neymar-causa-euforia-em-curitiba-antes-de-jogo-contra-o-coritiba/",
+          "source": "Bem Paraná"
+        },
+        {
+          "title": "Sem vencer há três jogos, Santos ainda sonha com a Libertadores",
+          "url": "https://tmc.com.br/esporte/sem-vencer-tres-jogos-santos-ainda-sonha-libertadores/",
+          "source": "tmc.com.br"
         }
       ]
     },
