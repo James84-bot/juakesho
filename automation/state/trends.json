@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-19T22:13:40.307488+00:00",
+  "fetched": "2026-11-19T22:46:41.110934+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,9 +7,9 @@
       "traffic": "2000+",
       "news": [
         {
-          "title": "LdC (F) : l’OL fait le boulot à Arsenal et se qualifie pour les quarts",
-          "url": "https://www.footmercato.net/a8200439815572107956-ldc-f-lol-fait-le-boulot-a-arsenal-et-se-qualifie-pour-les-quarts",
-          "source": "Foot Mercato"
+          "title": "Sur quelle chaîne TV et à quelle heure voir Arsenal Women-OL Lyonnes",
+          "url": "https://www.20minutes.fr/sport/football/4263982-20261119-arsenal-f-ol-lyonnes-chaine-tv-heure-voir-5e-journee-ligue-champions-feminine",
+          "source": "20 Minutes"
         },
         {
           "title": "UEFA Women’s Champions League : un quatuor arbitral italien pour le choc entre Arsenal et l’OL Lyonnes",
@@ -25,25 +25,26 @@
     },
     {
       "geo": "KE",
-      "title": "grand theft auto vi",
-      "traffic": "1000+",
+      "title": "kenya sovereign bond records transparency case",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Grand Theft Auto VI review – gaming’s most depraved world is now also its greatest love story",
-          "url": "https://www.theguardian.com/games/2026/nov/18/grand-theft-auto-vi-gta-6-review-playstation-rockstar",
-          "source": "The Guardian"
+          "title": "Mbadi and AG Oduor found in contempt, to appear in court for sentencing",
+          "url": "https://nation.africa/kenya/news/mbadi-and-ag-oduor-found-in-contempt-to-appear-in-court-for-sentencing-5677264",
+          "source": "Daily Nation"
         },
         {
-          "title": "‘Grand Theft Auto VI’ is an astonishing American epic",
-          "url": "https://www.washingtonpost.com/entertainment/video-games/2026/11/18/grand-theft-auto-vi-is-an-astonishing-american-epic/",
-          "source": "The Washington Post"
+          "title": "Court Finds CS Mbadi and AG Guilty, Orders Them to Appear for Sentencing",
+          "url": "https://www.kenyans.co.ke/news/129510-cs-mbadi-ag-found-guilty-contempt-over-sovereign-bond-records",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Grand Theft Auto 6 released after 13-year wait for gamers around the world - follow live",
-          "url": "https://www.bbc.com/news/live/c60rkg21dl22t",
-          "source": "BBC"
+          "title": "Mbadi, AG Oduor found guilty of defying bond disclosure orders",
+          "url": "https://www.the-star.co.ke/news/2026-11-19-mbadi-ag-oduor-found-guilty-of-defying-bond-disclosure-orders",
+          "source": "The Star, Kenya"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -64,6 +65,28 @@
           "title": "KURA Announces 10-Day Road Closure in Nairobi, Gives Alternative Routes",
           "url": "https://www.kenyans.co.ke/news/129522-kura-announces-10-day-partial-closure-gitanga-road",
           "source": "Kenyans.co.ke"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "uefa women's champions league",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Arsenal 0-2 OL Lyon: French giants outclass Gunners",
+          "url": "https://www.bbc.com/sport/football/live/cmvg250r0jpkt",
+          "source": "BBC"
+        },
+        {
+          "title": "Report: Arsenal Women 0-2 OL Lyonnes",
+          "url": "https://www.arsenal.com/news/report-arsenal-women-0-2-ol-lyonnes-aqRPZ9i1y1KW",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Arsenal vs Lyon LIVE! Women's Champions League match updates, news and score",
+          "url": "https://www.skysports.com/football/live-blog/13614127/arsenal-vs-lyon-live-womens-champions-league-match-updates-news-and-score",
+          "source": "Sky Sports"
         }
       ]
     },
@@ -105,9 +128,9 @@
           "source": "Competition.dz"
         },
         {
-          "title": "L’accumulation des matchs, le challenge à relever",
-          "url": "https://www.lexpressiondz.com/sports/l-accumulation-des-matchs-le-challenge-a-relever-411388",
-          "source": "L'Expression"
+          "title": "Après sa défaite face à Akbou, le MCA charge l’arbitrage",
+          "url": "https://just-infodz.com/apres-sa-defaite-face-a-akbou-le-mca-charge-larbitrage/",
+          "source": "Just-InfoDZ"
         }
       ],
       "civic": true
@@ -123,12 +146,12 @@
           "source": "CNN"
         },
         {
-          "title": "Dow closes below 50,000; Nasdaq falls 2% as Anthropic IPO fails to resuscitate AI trade: Live updates",
+          "title": "Dow closes below 50,000; Nasdaq falls 2% as Anthropic IPO fails to resuscitate AI trade",
           "url": "https://www.cnbc.com/2026/11/18/stock-market-today-live-updates.html",
           "source": "CNBC"
         },
         {
-          "title": "Anthropic IPO live: Anthropic stock begins trading at $111.50 per share in record offering",
+          "title": "Anthropic IPO live: Anthropic stock begins trading in record $81B raise with $1.5T valuation",
           "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-company-said-to-price-stock-at-83-begin-trading-thursday-212656452.html",
           "source": "Yahoo Finance"
         }
@@ -183,10 +206,6 @@
     {
       "title": "belarus",
       "why": "unsafe: 'Missing'"
-    },
-    {
-      "title": "arsenal news",
-      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}
