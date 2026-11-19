@@ -90,5 +90,38 @@ class Voices(unittest.TestCase):
         self.assertEqual(out["quotes"], [])
 
 
+class GoogleNewsLinks(unittest.TestCase):
+    """A Google News link is Google's page, not the article: it is turned into the newsroom's own address."""
+
+    def test_the_article_behind_a_google_link(self):
+        import tempfile
+        from unittest import mock
+        import gnews
+        url = "https://news.google.com/rss/articles/CBMiABC123?oc=5"
+        page = '<c-wiz><div jscontroller="x" data-n-a-sg="SIG9" data-n-a-ts="1763500000"></div></c-wiz>'
+        sent = []
+
+        def post(u, body):
+            sent.append(body)
+            inner = json.dumps(["garturlres", "https://www.pd.co.ke/news/mobile-money-123/", 1])
+            return ")]}'\n\n" + json.dumps([["wrb.fr", "Fbv4je", inner, None, None, None, "generic"], ["di", 42]])
+        with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.object(gnews, "_cache_file", lambda: Path(tmp) / "links.json"):
+            got = gnews.real_link(url, get=lambda u: page, post=post)
+            again = gnews.real_link(url, get=lambda u: 1 / 0, post=lambda u, b: 1 / 0)   # remembered: not asked again
+        self.assertEqual(got, "https://www.pd.co.ke/news/mobile-money-123/")
+        self.assertEqual(again, got)
+        from urllib.parse import unquote
+        self.assertIn('garturlreq', unquote(sent[0]))
+        self.assertIn("CBMiABC123", unquote(sent[0]))
+        self.assertIn("SIG9", unquote(sent[0]))
+
+    def test_other_links_and_failures_come_back_as_they_are(self):
+        import gnews
+        self.assertEqual(gnews.real_link("https://www.capitalfm.co.ke/news/x"), "https://www.capitalfm.co.ke/news/x")
+        url = "https://news.google.com/rss/articles/CBMiXYZ"
+        self.assertEqual(gnews.real_link(url, get=lambda u: "<html>no signature</html>", post=lambda u, b: ""), url)
+
+
 if __name__ == "__main__":
     unittest.main()

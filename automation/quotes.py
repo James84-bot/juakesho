@@ -91,6 +91,8 @@ def collect(post: dict, get=None, limit: int = 3) -> list[dict]:
         if not link:
             continue
         try:
+            import gnews
+            link = gnews.real_link(link)   # a Google News link: the newsroom's own article behind it
             page = get(link).decode("utf-8", errors="replace")
         except Exception as e:
             print(f"    quotes: {x.get('outlet', '')} page not read ({str(e)[:60]})")
