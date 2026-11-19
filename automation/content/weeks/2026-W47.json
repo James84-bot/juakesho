@@ -1578,7 +1578,7 @@
           "published": "2026-11-19"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1619,7 +1619,9 @@
       "broll_credit": "Footage: AlexKopeykin / Pixabay",
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1260
+      "tg_msg": 1260,
+      "decided_at": "2026-11-19T10:31:57.767846+03:00",
+      "photo_checked": "2026-11-19T10:32:19.152737+03:00"
     }
   ],
   "scripts": {
