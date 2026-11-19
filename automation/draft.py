@@ -833,8 +833,15 @@ def can_afford(est_in: int, est_out: int, model: str | None = None, slack: float
 # The free writer: Google's Gemini API free tier (a free key from aistudio.google.com, no card).
 # GitHub Models was retired on 30 July 2026, so it is gone from here.
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-GEMINI_MODELS = ["gemini-flash-latest", "gemini-flash-lite-latest"]   # tried in order; set JUA_GEMINI_MODEL to pin one
+# Tried in order; set JUA_GEMINI_MODEL to pin one. Each model has its own free quota. Measured with `aicheck` on
+# 19 Nov: the full Flash models were busy (503), timed out or had used up the day's quota by the afternoon, while
+# every Flash-Lite model answered in seconds. So the best writers go first and the Lite ones keep the run alive.
+GEMINI_MODELS = ["gemini-flash-latest", "gemini-3.7-flash", "gemini-3.6-flash",
+                 "gemini-flash-lite-latest", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
 GEMINI_CRITIC = "gemini-flash-lite-latest"
+GEMINI_SEE_CHEAP = ["gemini-flash-lite-latest", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
+BUSY_FOR = 600.0   # a model that is overloaded or hangs is left alone this long (seconds) within a run
+BUSY: dict[str, float] = {}
 GEMINI_THINK_ROOM = 8192   # tokens a thinking model may spend before it writes the reply
 GEMINI_LIMITS = {"out": 16000, "calls": 18, "pause": 13.0}   # free tier: a few requests a minute, a small daily quota
 
@@ -877,8 +884,19 @@ def call_claude(system: str, user: str, max_tokens: int = 12000, model: str | No
 USED_UP: set[str] = set()
 
 
+def _retry_delay(body: str) -> float | None:
+    m = re.search(r'"retryDelay":\s*"(\d+(?:\.\d+)?)s"', body)
+    return float(m.group(1)) if m else None
+
+
+def _skip(model: str) -> bool:
+    return model in USED_UP or BUSY.get(model, 0.0) > time.time()
+
+
 def _used_up(code: int, body: str, model: str) -> bool:
-    if code == 429 and re.search(r"PerDay", body):
+    """A 429 for the day's quota (Google says when it comes back: hours, not seconds), not the per-minute limit."""
+    wait = _retry_delay(body)
+    if code == 429 and re.search(r"PerDay", body) and (wait is None or wait > 300):
         USED_UP.add(model)
         print(f"  {model}: today's free quota is used up; the next model takes over for the rest of the run")
         return True
@@ -893,13 +911,16 @@ def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
     if SPEND["calls"] >= GEMINI_LIMITS["calls"]:
         raise RuntimeError("free-tier call cap reached for this run")
     pinned = (os.environ.get("JUA_GEMINI_MODEL") or "").strip()
-    models = [model] if model and model.startswith("gemini") else ([pinned] if pinned else GEMINI_MODELS)
+    if model and model.startswith("gemini"):   # asked for one (the critic's Lite model): others of its kind back it up
+        models = [model] + [x for x in GEMINI_MODELS if x != model and ("lite" in x) == ("lite" in model)]
+    else:
+        models = [pinned] if pinned else GEMINI_MODELS
     if SPEND["calls"]:
         time.sleep(GEMINI_LIMITS["pause"])   # stay under the free per-minute limit
     last = None
     for m in models:
-        if m in USED_UP:
-            last = last or RuntimeError(f"Gemini 429 ({m}): today's free quota is used up")
+        if _skip(m) and len(models) > 1:
+            last = last or RuntimeError(f"Gemini ({m}): used up or busy, skipped; no Gemini model free")
             continue
         body = json.dumps({"systemInstruction": {"parts": [{"text": system}]},
                            "contents": [{"role": "user", "parts": [{"text": user}]}],
@@ -936,10 +957,15 @@ def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
                 if _used_up(e.code, full, m):
                     last = RuntimeError(f"Gemini 429 ({m}): today's free quota is used up")
                     break   # waiting does not bring a daily quota back: straight to the next model
-                if e.code in (429, 500, 502, 503, 504) and attempt < 3:
-                    time.sleep(float(e.headers.get("retry-after") or 0) or 20 * 2 ** attempt)
+                if e.code == 429 and attempt < 2:   # the per-minute limit: wait as long as Google says
+                    time.sleep(min(_retry_delay(full) or float(e.headers.get("retry-after") or 0) or 20, 65))
+                    continue
+                if e.code in (500, 502, 503, 504) and attempt < 1:   # "high demand": one more try, then move on
+                    time.sleep(float(e.headers.get("retry-after") or 0) or 20)
                     continue
                 last = RuntimeError(f"Gemini {e.code} ({m}): {detail}")
+                if e.code in (500, 502, 503, 504):
+                    BUSY[m] = time.time() + BUSY_FOR   # every later call in this run goes straight to the next model
                 if e.code in (429, 500, 502, 503, 504) or (e.code in (400, 404) and "model" in detail.lower()):
                     break   # overloaded, out of free quota or not available: try the next model
                 raise last from e
@@ -947,9 +973,10 @@ def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
                 # a model that hangs (19 Nov: gemini-flash-latest timed out and the run died with the other model
                 # untried) gets one more go, then the next model is asked
                 last = RuntimeError(f"Gemini unreachable ({m}): {e}")
-                if attempt < 1:
+                if attempt < 1 and not isinstance(e, TimeoutError):   # a dropped line: once more
                     time.sleep(15)
                     continue
+                BUSY[m] = time.time() + BUSY_FOR   # it hung for five minutes: not again this run
                 break
     raise last or RuntimeError("no Gemini model available")
 
@@ -998,7 +1025,8 @@ def _anthropic(system: str, user: str, max_tokens: int = 12000, model: str | Non
     return "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
 
 
-GEMINI_SEE_STRONG = "gemini-flash-latest"   # a second, stronger look before a "yes" verdict is believed
+GEMINI_SEE_STRONG = ["gemini-flash-latest", "gemini-3.7-flash", "gemini-3.6-flash"]   # a second, stronger look
+# before a "yes" verdict is believed: full Flash models only (a Lite model confirming a Lite model proves little)
 
 
 def look_at(image: bytes, ask: str, strong: bool = False) -> str:
@@ -1024,11 +1052,14 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
         body = {"contents": [{"role": "user", "parts": [{"inlineData": {"mimeType": "image/jpeg", "data": b64}},
                                                         {"text": ask}]}],
                 "generationConfig": {"maxOutputTokens": 400 + GEMINI_THINK_ROOM, "temperature": 0}}
-        try:
-            return _look_gemini(body, GEMINI_SEE_STRONG if strong else GEMINI_CRITIC)
-        except RuntimeError as e:
-            errors.append(str(e)[:400])
-            return None
+        for m in (GEMINI_SEE_STRONG if strong else GEMINI_SEE_CHEAP):
+            if _skip(m):
+                continue
+            try:
+                return _look_gemini(body, m)
+            except RuntimeError as e:
+                errors.append(str(e)[:400])
+        return None
 
     def claude() -> str | None:
         if not os.environ.get("ANTHROPIC_API_KEY", "").strip():
@@ -1082,14 +1113,18 @@ def _look_gemini(body: dict, model: str) -> str:
             if _used_up(e.code, full, model):
                 raise RuntimeError(f"Gemini 429 ({model}): today's free quota is used up") from e
             if e.code in (429, 500, 502, 503, 504) and attempt == 0:
-                time.sleep(float(e.headers.get("retry-after") or 0) or 20)
+                time.sleep(min(_retry_delay(full) or float(e.headers.get("retry-after") or 0) or 20, 65))
                 continue
-            raise RuntimeError(f"Gemini {e.code}: {detail}") from e
+            if e.code in (500, 502, 503, 504):
+                BUSY[model] = time.time() + BUSY_FOR
+            raise RuntimeError(f"Gemini {e.code} ({model}): {detail}") from e
         except (*NET_ERRORS, ValueError) as e:
-            if attempt == 0:
+            if attempt == 0 and not isinstance(e, TimeoutError):
                 time.sleep(15)
                 continue
-            raise RuntimeError(f"Gemini unreachable: {e}") from e
+            if isinstance(e, (*NET_ERRORS,)):
+                BUSY[model] = time.time() + BUSY_FOR
+            raise RuntimeError(f"Gemini unreachable ({model}): {e}") from e
     raise RuntimeError("Gemini: no answer")
 
 

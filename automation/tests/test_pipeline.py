@@ -1087,7 +1087,7 @@ class FreeProviderTests(unittest.TestCase):
         self.patches = [mock.patch.dict(os.environ, {"GEMINI_API_KEY": "gm-test", "ANTHROPIC_API_KEY": "a", "JUA_PROVIDER": "",
                                                      "JUA_GEMINI_MODEL": ""}),
                         mock.patch.object(draft.time, "sleep", lambda s: None),
-                        mock.patch.dict(draft.SPEND, {"usd": 0.0, "calls": 0})]
+                        mock.patch.dict(draft.SPEND, {"usd": 0.0, "calls": 0}), *fresh_writer_state(draft)]
         for p in self.patches:
             p.start()
 
@@ -1386,7 +1386,25 @@ class PhotoSwapTests(TempWeeks):
         self.assertIn("from the event", pl._preview_text({**p, "photo_kind": "event"}))
 
 
-class WriterFallbackTests(unittest.TestCase):
+def fresh_writer_state(drafter):
+    """What one run learns about the models (busy, used up, no Claude credit) never leaks into another test."""
+    return [mock.patch.object(drafter, "BUSY", {}), mock.patch.object(drafter, "USED_UP", set()),
+            mock.patch.object(drafter, "ANTHROPIC_DOWN", {})]
+
+
+class FreshWriter(unittest.TestCase):
+    def setUp(self):
+        import draft as drafter
+        self.fresh = fresh_writer_state(drafter)
+        for p in self.fresh:
+            p.start()
+
+    def tearDown(self):
+        for p in self.fresh:
+            p.stop()
+
+
+class WriterFallbackTests(FreshWriter):
     def test_busy_gemini_tries_next_model_then_claude(self):
         import io
         import urllib.error
@@ -1404,7 +1422,7 @@ class WriterFallbackTests(unittest.TestCase):
         self.assertEqual(sorted(set(tried)), sorted(drafter.GEMINI_MODELS))
 
 
-class WriterOutageTests(unittest.TestCase):
+class WriterOutageTests(FreshWriter):
     """19 Nov: gemini-flash-latest hung, the run died with flash-lite untried, and the Claude backup had no credit."""
 
     def _env(self):
@@ -1437,7 +1455,8 @@ class WriterOutageTests(unittest.TestCase):
         a, b, c = self._env()
         with a, b, c, mock.patch.object(drafter.urllib.request, "urlopen", answer):
             self.assertEqual(drafter.call_claude("s", "u", 100), "written")
-        self.assertEqual(tried, [drafter.GEMINI_MODELS[0], drafter.GEMINI_MODELS[0], drafter.GEMINI_MODELS[1]])
+        self.assertEqual(tried, [drafter.GEMINI_MODELS[0], drafter.GEMINI_MODELS[1]])   # five minutes hung: next
+        self.assertIn(drafter.GEMINI_MODELS[0], drafter.BUSY)
 
     def test_a_used_up_daily_quota_is_skipped_at_once_for_the_rest_of_the_run(self):
         import io
@@ -1468,6 +1487,78 @@ class WriterOutageTests(unittest.TestCase):
             self.assertEqual(drafter.call_claude("s", "u", 100), "ok")
             self.assertEqual(drafter.call_claude("s", "u", 100), "ok")
         self.assertEqual(tried, [drafter.GEMINI_MODELS[0], drafter.GEMINI_MODELS[1], drafter.GEMINI_MODELS[1]])
+
+    def _scripted(self, script):
+        """urlopen that answers per model from `script` (model -> list of 'ok' | HTTP code | 'hang'); records calls."""
+        import io
+        import urllib.error
+        tried = []
+
+        def answer(req, timeout=300):
+            m = req.full_url.split("/models/")[1].split(":")[0]
+            tried.append(m)
+            todo = script.get(m, ["ok"])
+            what = todo.pop(0) if len(todo) > 1 else todo[0]
+            if what == "hang":
+                raise TimeoutError("The read operation timed out")
+            if isinstance(what, tuple):
+                code, body = what
+                raise urllib.error.HTTPError(req.full_url, code, "x", {}, io.BytesIO(body.encode()))
+
+            class R(io.BytesIO):
+                headers = {"Content-Type": "application/json"}
+
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, *a):
+                    return False
+            return R(json.dumps({"candidates": [{"content": {"parts": [{"text": f"from {m}"}]}}]}).encode())
+        return tried, answer
+
+    def test_an_overloaded_model_gets_one_more_try_then_is_left_alone(self):
+        import draft as drafter
+        busy = (503, '{"error":{"code":503,"message":"This model is currently experiencing high demand."}}')
+        tried, answer = self._scripted({"gemini-flash-latest": [busy]})
+        a, b, c = self._env()
+        with a, b, c, mock.patch.object(drafter.urllib.request, "urlopen", answer):
+            self.assertEqual(drafter.call_claude("s", "u", 100), "from gemini-3.7-flash")
+            self.assertEqual(drafter.call_claude("s", "u", 100), "from gemini-3.7-flash")
+        self.assertEqual(tried, ["gemini-flash-latest", "gemini-flash-latest", "gemini-3.7-flash", "gemini-3.7-flash"])
+
+    def test_the_per_minute_limit_is_waited_out_not_counted_as_the_day(self):
+        import draft as drafter
+        minute = (429, '{"error":{"code":429,"details":[{"violations":[{"quotaId":'
+                       '"GenerateRequestsPerMinutePerProjectPerModel-FreeTier"}]},{"retryDelay":"31s"}]}}')
+        tried, answer = self._scripted({"gemini-flash-latest": [minute, "ok"]})
+        waits = []
+        a, b, c = self._env()
+        with a, b, c, mock.patch.object(drafter.urllib.request, "urlopen", answer), \
+                mock.patch.object(drafter.time, "sleep", waits.append):
+            self.assertEqual(drafter.call_claude("s", "u", 100), "from gemini-flash-latest")
+        self.assertIn(31.0, waits)
+        self.assertNotIn("gemini-flash-latest", drafter.USED_UP)
+
+    def test_the_critic_falls_back_to_another_lite_model(self):
+        import draft as drafter
+        tried, answer = self._scripted({"gemini-flash-lite-latest": ["hang"]})
+        a, b, c = self._env()
+        with a, b, c, mock.patch.object(drafter.urllib.request, "urlopen", answer):
+            self.assertEqual(drafter.call_claude("s", "u", 100, model="gemini-flash-lite-latest"),
+                             "from gemini-3.5-flash-lite")
+        self.assertTrue(all("lite" in m for m in tried))
+
+    def test_the_second_look_uses_full_flash_models_in_turn(self):
+        import draft as drafter
+        day = (429, '{"error":{"details":[{"violations":[{"quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier"}]},'
+                    '{"retryDelay":"64642s"}]}}')
+        tried, answer = self._scripted({"gemini-flash-latest": [day]})
+        a, b, c = self._env()
+        with a, b, c, mock.patch.object(drafter.urllib.request, "urlopen", answer), \
+                mock.patch.dict(drafter.ANTHROPIC_DOWN, {"why": "no credit"}):
+            self.assertEqual(drafter.look_at(_tiny_jpeg(), "q", strong=True), "from gemini-3.7-flash")
+            self.assertEqual(drafter.look_at(_tiny_jpeg(), "q", strong=False), "from gemini-flash-lite-latest")
+        self.assertEqual(tried, ["gemini-flash-latest", "gemini-3.7-flash", "gemini-flash-lite-latest"])
 
     def test_no_credit_is_learned_once_and_claude_is_skipped_after(self):
         import io
