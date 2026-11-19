@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-11-18T23:15:16.079404+00:00",
+  "fetched": "2026-11-19T06:16:08.929499+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "chelsea vs psg",
-      "traffic": "2000+",
+      "traffic": "5000+",
       "news": [
         {
           "title": "Chelsea 1-0 PSG: Late goal boosts Women's Champions League last-eight hopes",
@@ -12,61 +12,16 @@
           "source": "BBC"
         },
         {
+          "title": "Chelsea 1-0 Paris Saint-Germain: Women’s Champions League – as it happened",
+          "url": "https://www.theguardian.com/football/live/2026/nov/18/chelsea-v-paris-saint-germain-psg-womens-champions-league-live-score-updates",
+          "source": "The Guardian"
+        },
+        {
           "title": "Chelsea 1-0 PSG: Veerle Buurman scores late winner as Sonia Bompastor's side go top of Women's Champions League table",
           "url": "https://www.skysports.com/football/news/13613600/chelsea-1-0-psg-veerle-buurman-scores-late-winner-as-sonia-bompastors-side-go-top-of-womens-champions-league-table",
           "source": "Sky Sports"
-        },
-        {
-          "title": "Confirmed Chelsea Women line up vs PSG | News | Official Site",
-          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-women-line-up-vs-psg",
-          "source": "Chelsea Football Club"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "birth certificate",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Huduma Kenya Explains Birth Certificate Application Rules for Underage Mothers",
-          "url": "https://www.kenyans.co.ke/news/129496-huduma-kenya-explains-birth-certificate-application-rules-underage-mothers",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Separated parents: Govt explains how fathers can be added to birth certificates after deliberate omission",
-          "url": "https://peopledaily.digital/news/separated-parents-govt-explains-how-fathers-can-be-added-to-birth-certificates-after-deliberate-omission",
-          "source": "People Daily"
-        },
-        {
-          "title": "Dad excludes mum on child's birth certificate: Huduma Kenya explains what to do",
-          "url": "https://www.tuko.co.ke/kenya/646737-dad-swaps-mum-grandma-birth-certificate-huduma-kenya-steps-in/",
-          "source": "Tuko News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "appeal",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Fight Over Deportation Protections for Venezuelans Returns to Supreme Court",
-          "url": "https://www.nytimes.com/2026/11/18/us/politics/supreme-court-trump-deportation-venezuelans.html",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Fight over fate of protected status for Venezuelan migrants returns to SCOTUS",
-          "url": "https://www.courthousenews.com/fight-over-fate-of-protected-status-for-venezuelan-migrants-returns-to-scotus",
-          "source": "Courthouse News Service"
-        },
-        {
-          "title": "Trump administration appeals to Supreme Court over legal protections for Venezuelan migrants",
-          "url": "https://apnews.com/article/supreme-court-trump-administration-immigration-venezuela-34f5293fe85f3befb2a599f513308d60",
-          "source": "AP News"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -74,156 +29,183 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "Live blog: President Ruto's fourth State of the Nation address",
-          "url": "https://nation.africa/kenya/news/live-blog-president-ruto-s-state-of-the-nation-address-5674894",
-          "source": "Daily Nation"
-        },
-        {
           "title": "President Ruto: My economic record and promise",
           "url": "https://www.businessdailyafrica.com/bd/economy/ruto-my-economic-record-and-promise-5675876",
           "source": "Business Daily"
         },
         {
-          "title": "Sifuna: State of the Nation Address should focus on human rights, not roads",
-          "url": "https://www.the-star.co.ke/news/2026-11-18-sifuna-state-of-the-nation-address-should-focus-on-human-rights",
-          "source": "The Star, Kenya"
+          "title": "Beyond Vision 2030: Ruto invites Kenyans to shape country’s next development chapter",
+          "url": "https://nation.africa/kenya/news/beyond-vision-2030-ruto-invites-kenyans-to-shape-country-s-next-development-chapter-5675942",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Sifuna dismisses Ruto's State address as a cover-up for rights abuses",
+          "url": "https://www.standardmedia.co.ke/politics/article/2001562564/sifuna-dismisses-rutos-state-address-as-a-cover-up-for-rights-abuses",
+          "source": "The Standard"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "benni mccarthy",
-      "traffic": "500+",
+      "title": "vodacom",
+      "traffic": "200+",
       "news": [
         {
-          "title": "McCarthy: I'm loyal to Harambee Stars, not Bafana Bafana",
-          "url": "https://nation.africa/kenya/sports/football/no-divided-loyalty-insists-mccarthy-ahead-bafana-bafana-clash-5673254",
-          "source": "Daily Nation"
+          "title": "Stanbic freezes Vodacom’s Sh9bn over Safaricom sale",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/stanbic-freezes-vodacom-s-sh9bn-over-safaricom-sale-5675866",
+          "source": "Business Daily"
         },
         {
-          "title": "McCarthy tells critics to step aside as he builds Harambee Stars",
-          "url": "https://www.the-star.co.ke/sports/football/2026-11-18-mccarthy-tells-critics-to-step-aside-as-he-builds-harambee-stars-1",
-          "source": "The Star, Kenya"
+          "title": "Op-Ed: Vodacom's investment appeal faces key tests",
+          "url": "https://itweb.africa/article/op-ed-vodacoms-investment-appeal-faces-key-tests/j5alr7QAXJY7pYQk",
+          "source": "ITWeb Africa"
         },
         {
-          "title": "McCarthy’s relations with Kenya fans take strain after ‘no hot water’ comments",
-          "url": "https://www.news24.com/sport/soccer/mccarthys-relations-with-kenya-fans-take-strain-after-no-hot-water-comments-20261118-0760",
-          "source": "News24"
+          "title": "Impressive Earnings May Not Tell The Whole Story For Vodacom Group (JSE:VOD)",
+          "url": "https://simplywall.st/stocks/za/telecom/jse-vod/vodacom-group-shares/news/impressive-earnings-may-not-tell-the-whole-story-for-vodacom",
+          "source": "Simply Wall St"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "real madrid vs inter",
+      "title": "mavericks vs warriors",
       "traffic": "200+",
       "news": [
         {
-          "title": "Watch Real Madrid Femenino v Inter live today: who is showing the match on TV and online?",
-          "url": "https://www.goal.com/en-ke/news/watch-real-madrid-femenino-v-inter-live-today-who-is-showing-the-match-on-tv-and-online/blt02835d46f5800433",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Licensable picture: UEFA Women's Champions League - Real Madrid v Inter Milan",
-          "url": "https://www.reutersconnect.com/item/uefa-womens-champions-league-real-madrid-v-inter-milan/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQkkxQ1NBWUs",
+          "title": "NBA: Golden State Warriors at Dallas Mavericks",
+          "url": "https://www.reutersconnect.com/item/nba-golden-state-warriors-at-dallas-mavericks/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAzNjkyMjE%3D?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
           "source": "Reuters Connect"
         },
         {
-          "title": "Second consecutive victory in the Women's Champions League",
-          "url": "https://www.realmadrid.com/en-US/news/football/womens-team/reports/real-madrid-inter-de-milan-18-11-2026",
-          "source": "Real Madrid CF | Web Oficial"
+          "title": "Cooper Flagg with a monster 33/5/9/3 in win",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/cooper-flagg-with-a-monster-33-5-9-3-in-win",
+          "source": "NBC Sports"
+        },
+        {
+          "title": "APTOPIX Warriors Mavericks Basketball",
+          "url": "https://www.cleburnetimesreview.com/texas/sports/aptopix-warriors-mavericks-basketball/image_7a65afbb-acfb-51de-a75a-2ce7737722b8.html",
+          "source": "Cleburne Times-Review"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "cristiano ronaldo jr",
+      "title": "nz vs ind",
       "traffic": "200+",
       "news": [
         {
-          "title": "Cristiano Ronaldo Jr takes next Portugal step as dad exits international scene",
-          "url": "https://ntvkenya.co.ke/news/cristiano-ronaldo-jr-takes-next-portugal-step-as-dad-exits-international-scene/",
-          "source": "NTV Kenya"
+          "title": "Nicholls ton leads New Zealand fightback to 243-5 in first India Test",
+          "url": "https://www.afp.com/en/nicholls-ton-leads-new-zealand-fightback-243-5-first-india-test",
+          "source": "AFP.com"
         },
         {
-          "title": "¿Cristiano Ronaldo y su hijo juntos en Al-Nassr? La posibilidad toma fuerza",
-          "url": "https://onefootball.com/es/noticias/cristiano-ronaldo-y-su-hijo-juntos-en-al-nassr-la-posibilidad-toma-fuerza-43790400",
-          "source": "OneFootball"
+          "title": "Tom Latham joins list of most ducks by openers in Test cricket",
+          "url": "https://www.indiagazette.com/news/279441831/tom-latham-joins-list-of-most-ducks-by-openers-in-test-cricket",
+          "source": "https://www.indiagazette.com/"
         },
         {
-          "title": "¡El sueño está cerca! Al Nassr ya planea juntar a Cristiano Ronaldo con su hijo en el primer equipo",
-          "url": "https://www.mediotiempo.com/futbol/cristiano-ronaldo-podria-jugar-junto-a-su-hijo-con-al-nassr",
-          "source": "Mediotiempo"
+          "title": "Henry Nicholls joins Kane Williamson, Martin Crowe in elite list with century against India",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/henry-nicholls-joins-kane-williamson-martin-crowe-in-elite-list-with-century-against-india/articleshow/135978657.cms",
+          "source": "The Times of India"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "juan mata",
+      "title": "confederation of african football",
       "traffic": "200+",
       "news": [
         {
-          "title": "Former Spain midfielder Mata retires aged 38",
-          "url": "https://www.bbc.com/sport/football/articles/c8p3vwe1rrzqo",
-          "source": "BBC"
+          "title": "M4STV named host broadcaster for CAF Awards, 48th Assembly",
+          "url": "https://guardian.ng/sport/m4stv-named-host-broadcaster-for-caf-awards-48th-assembly/",
+          "source": "The Guardian Nigeria News"
         },
         {
-          "title": "Mata announces retirement from football",
-          "url": "https://www.manutd.com/en/news/former-red-juan-mata-announces-retirement-from-football",
-          "source": "Manchester United Website"
+          "title": "Motsepe arrives Abuja for 48th CAF Ordinary General Assembly",
+          "url": "https://www.premiumtimesng.com/sports/football/926317-motsepe-arrives-abuja-for-48th-caf-ordinary-general-assembly.html",
+          "source": "Premium Times Nigeria"
         },
         {
-          "title": "Juan Mata retires: Free-kick vs Man Utd | Video | Official Site",
-          "url": "https://www.chelseafc.com/en/video/juan-mata-retires",
-          "source": "Chelsea Football Club"
+          "title": "Motsepe leads CAF delegation to Nigeria for General Assembly",
+          "url": "https://businessday.ng/sports/article/motsepe-leads-caf-delegation-to-nigeria-for-general-assembly/",
+          "source": "Business News Nigeria"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "coritiba vs santos",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
-          "title": "⤮!+@⤮[[HOJE>>>]] Coritiba x Santos ao vivo grátis 18 de novembro de 2026",
-          "url": "https://vacunasaep.org/sites/all/libraries/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=/%5C/keeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-hoje-coritiba-x-santos-ao-vivo-gratis-18-de-qjw6u",
-          "source": "Comité Asesor de Vacunas de la AEP"
+          "title": "Gabigol relembra treta do primeiro turno e aposta em queda do Coritiba",
+          "url": "https://www.cartacapital.com.br/esporte/gabigol-relembra-treta-do-primeiro-turno-e-aposta-em-queda-do-coritiba/",
+          "source": "CartaCapital"
         },
         {
-          "title": "Neymar causa euforia em hotel antes de jogo contra o Coritiba",
-          "url": "https://www.bemparana.com.br/noticias/parana/neymar-causa-euforia-em-curitiba-antes-de-jogo-contra-o-coritiba/",
+          "title": "Bem rapidinho: o que foi notícia nesta quarta-feira, 18 de novembro",
+          "url": "https://www.bemparana.com.br/noticias/parana/bem-rapidinho-o-que-foi-noticia-nesta-quarta-feira-18-de-novembro/",
           "source": "Bem Paraná"
         },
         {
-          "title": "Sem vencer há três jogos, Santos ainda sonha com a Libertadores",
-          "url": "https://tmc.com.br/esporte/sem-vencer-tres-jogos-santos-ainda-sonha-libertadores/",
-          "source": "tmc.com.br"
+          "title": "Com volta de Neymar, Santos está escalado para enfrentar o Coritiba",
+          "url": "https://www.lance.com.br/santos/com-volta-de-neymar-santos-esta-escalado-para-enfrentar-o-coritiba.html",
+          "source": "LANCE!"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "eli junior kroupi",
+      "title": "international mens day",
       "traffic": "100+",
       "news": [
         {
-          "title": "Arsenal eye Eli Junior Kroupi as Bournemouth slap ace with £100m price tag",
-          "url": "https://www.thesun.co.uk/sport/41052041/arsenal-target-eli-junior-kroupi-transfer/",
-          "source": "The Sun"
+          "title": "The Future Is Everyone",
+          "url": "https://www.eviemagazine.com/post/the-future-is-everyone",
+          "source": "Evie Magazine"
         },
         {
-          "title": "Arsenal: Ornstein hints at Kroupi decision on joining Gunners over Barcelona in 2027 - 'my information is'",
-          "url": "https://www.football365.com/news/arsenal-ornstein-hints-kroupi-decision-joining-gunners-barcelona-2027",
-          "source": "Football365"
+          "title": "85+ Happy International Men’s Day Messages, Greetings Card, Wishes and Quotes for 2026",
+          "url": "https://timesofindia.indiatimes.com/etimes/trending/75-happy-international-mens-day-messages-greetings-card-wishes-gifs-facebook-instagram-and-quotes-for-2026/articleshow/135948400.cms",
+          "source": "The Times of India"
         },
         {
-          "title": "Ornstein reports PSG among teams most interested in €100m Premier League star",
-          "url": "https://psgtalk.com/2026/11/ornstein-kroupi-teams-most-interested/",
-          "source": "PSG Talk"
+          "title": "International Men's Day 2026: 10 Messages To Share On WhatsApp And Instagram Status",
+          "url": "https://www.ndtv.com/offbeat/international-mens-day-2026-10-messages-to-share-on-whatsapp-and-instagram-status-12346839",
+          "source": "NDTV"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "a",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Anthropic IPO raises over $81 billion in largest offering on record, topping SpaceX",
+          "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
+          "source": "CNBC"
+        },
+        {
+          "title": "World in Brief: Anthropic’s IPO price; Trump, Xi and Putin to meet in China",
+          "url": "https://www.economist.com/the-world-in-brief/2026/11/19/0c5ad52e-788f-4da5-a8ee-2970714c4644",
+          "source": "The Economist"
+        },
+        {
+          "title": "Anthropic IPO live: Company said to price stock at $83, begin trading Thursday",
+          "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-company-said-to-price-stock-at-83-begin-trading-thursday-212656452.html",
+          "source": "Yahoo Finance"
         }
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "lakers vs jazz",
+      "why": "unsafe: 'Odds'"
+    }
+  ],
   "errors": {}
 }
