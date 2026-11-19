@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-19T15:28:11.078855+00:00",
+  "fetched": "2026-11-19T15:41:44.980592+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -12,14 +12,14 @@
           "source": "Sacco Review"
         },
         {
-          "title": "Panama City woman indicted on fraud charges",
-          "url": "https://www.wjhg.com/2026/11/19/panama-city-woman-indicted-fraud-charges/",
-          "source": "WJHG"
+          "title": "BLOG: The Fight Against Fraud Requires More than Technology and Stronger Security Systems",
+          "url": "https://chimpreports.com/blog-the-fight-against-fraud-requires-more-than-technology-and-stronger-security-systems/",
+          "source": "ChimpReports"
         },
         {
-          "title": "Fraud data sharing under the new PSR: When a DPIA becomes the ticket of entry",
-          "url": "https://iapp.org/news/a/fraud-data-sharing-under-the-new-psr-when-a-dpia-becomes-the-ticket-of-entry",
-          "source": "IAPP"
+          "title": "Visa's Michael Jabbara warns of rapid surge in AI-driven payment threats",
+          "url": "https://www.foxbusiness.com/video/6408505705112",
+          "source": "Fox Business"
         }
       ]
     },
@@ -91,29 +91,6 @@
     },
     {
       "geo": "KE",
-      "title": "bribery",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Employee Of Major City-Forming Enterprise Arrested For Bribery",
-          "url": "https://reform.news/en/employee-of-major-city-forming-enterprise-arrested-for-bribery/",
-          "source": "REFORM.news"
-        },
-        {
-          "title": "Former Incheon Council Members Jailed 10-12 Years for Bribery",
-          "url": "https://www.chosun.com/english/national-en/2026/11/19/IQNXUECBSZA5RELND3X6GQI5EE/",
-          "source": "조선일보"
-        },
-        {
-          "title": "\"Bribery Over Electronic Blackboard Supply\" Two Former Incheon City Council Members Sentenced to 10 and 12 Years",
-          "url": "https://www.asiae.co.kr/en/article/region/2026111915504653920",
-          "source": "아시아경제"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "arsenal news",
       "traffic": "200+",
       "news": [
@@ -128,9 +105,9 @@
           "source": "Sports247 Nigeria"
         },
         {
-          "title": "Gunners Celebrate as HFM FacilitatesArsenal Trophy Tour of Lagos",
-          "url": "https://www.thisdaylive.com/2026/11/18/gunners-celebrate-as-hfm-facilitatesarsenal-trophy-tour-of-lagos/",
-          "source": "THISDAYLIVE"
+          "title": "Arsenal legend Ray Parlour in Kenya for HFM x Arsenal FC Africa Trophy Tour",
+          "url": "https://eastleighvoice.co.ke/videos/425538/arsenal-legend-ray-parlour-in-kenya-for-hfm-x-arsenal-fc-africa-trophy-tour",
+          "source": "The Eastleigh Voice"
         }
       ]
     },
@@ -197,6 +174,28 @@
           "title": "Joho unveils 3 firms selected to explore Kenya's key mineral deposits",
           "url": "https://www.the-star.co.ke/news/2026-11-19-joho-unveils-3-firms-selected-to-explore-key-minerals",
           "source": "The Star, Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "gta",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "UFC’s Sean Strickland calls out youngsters wanting to play GTA 6",
+          "url": "https://sports.yahoo.com/articles/ufc-sean-strickland-calls-youngsters-142326713.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Play GTA VI? Sean Strickland Calls Out Gamers In New Rant: \"You Need To Get Some [Girls]\"",
+          "url": "https://www.lowkickmma.com/play-gta-vi-sean-strickland-calls-out-gamers/",
+          "source": "LowKickMMA.com"
+        },
+        {
+          "title": "UFC champion Sean Strickland goes off on ’embarrassing’ young men over playing GTA 6",
+          "url": "https://www.hitc.com/ufc-champion-sean-strickland-goes-off-on-embarrassing-young-men-over-playing-gta-6/",
+          "source": "HITC"
         }
       ]
     }

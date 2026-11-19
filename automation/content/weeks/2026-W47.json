@@ -1899,13 +1899,150 @@
       "fb_story_id": "1191506380500936",
       "yt_id": "xL72tOJ0-gI",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w47-hot-1119b1841",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football Fans",
+      "line": "Mauricio Pochettino urges Manchester United to *show no fear* when facing Liverpool.",
+      "fact": "Pochettino takes charge of Manchester United as club losses widen and debt rises.",
+      "source": "The Guardian, 2026-11-19, BBC, 2026-11-19, Bloomberg.com, 2026-11-19, Reuters, 2026-11-19",
+      "photo_query": "football match stadium",
+      "message": "Mauricio Pochettino calls for fearless play from Manchester United ahead of their clash with Liverpool.",
+      "action": "Drop your prediction for the Manchester United vs Liverpool match below",
+      "who": "Mauricio Pochettino",
+      "where": "International",
+      "when": "19 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Football fans get the latest team strategy ahead of the premier rivalry match.",
+      "beats": [
+        "Pochettino urges Manchester United to *show no fear* against Liverpool.",
+        "He wants his team to be brave and play to win.",
+        "He says the squad must build momentum *step by step*.",
+        "Who will win the Manchester United vs Liverpool match?"
+      ],
+      "caption": "Manchester United boss Mauricio Pochettino has called on his side to show no fear against Liverpool. He takes charge during a tough run of results and rising club debt. What is your prediction for the match?\n\n#PremierLeague #InternationalMensDay #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-19T19:01:00+03:00",
+      "hot": true,
+      "avoid": [
+        "President Ruto announced that Kenya saved Sh1.5 billion by printing national exam papers locally.",
+        "Parliament must restore tough penalties on foreign firms that lock Kenyans out of jobs.",
+        "Peres Jepchirchir received a three-year ban for doping and loses her Sydney Marathon gold.",
+        "Opposition leaders walked out of IEBC talks over alleged bias and disputed meeting procedures."
+      ],
+      "breaking": {
+        "title": "Mauricio Pochettino calls for Manchester United to show no fear against Liverpool",
+        "outlets": [
+          "Bloomberg.com",
+          "Reuters",
+          "The Guardian"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "Reuters",
+          "title": "Manchester United loss widens, debt rises as Pochettino inherits struggling side",
+          "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQMmtJTU1tYW92NThKNUNwRjBXbVRDZ0FQX3FDc3VpS1dpd3pYQXJMTXdqTnp6Mi1BdW0yTUFNaEtmTDBQVHhub0dQQ25lN3d0eUdPNXVVbWoxdzBnczRFYlJoT0FfSklKeWdXcWlNTkZpOG9zeDNZaDM2T0pLYTRsd2pkNHQ1MWJ4TVhST2VLMGd5blJIbGh4S3dYTGRDSG45a0NSa3RyYmE2c0g1VFJzWnYzdVlFRUlSd1Y5TVlpQmQ?oc=5",
+          "published": "2026-11-19"
+        },
+        {
+          "outlet": "Bloomberg.com",
+          "title": "Manchester United Racks Up Another Loss as Pochettino Takes Over",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNUWxnRGFFcEI4LXF1aHViQndTUFRURXBzamZJa29IYnNoUVJCZ1p2TG5uT3lral9PRXVfLXdBMlNrb3hKZDd5ckRpaEUyUGN4bnFHYW4yV2EwUmpsN2JOb0lCWlRRdUh4cG5FV0VJTmpNUkVpVmtZQ2swOW0xVklKQVYtXy1QbUlwU1FQOGE3NEVYTy01RDEwQ25KMnl2cEU3allTX1BJcmxmYnBxZW5UTWFIR3BvQQ?oc=5",
+          "published": "2026-11-19"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Mauricio Pochettino calls for Manchester United to show no fear against Liverpool",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPc3FoM1F5R3I2V2VpajltZFhoR3VkNlNtRzNkNDNOUTB0cXRidlpLY2dEQ2xQdmdOek1lczBkbEoxdllNdXNaci1KemhLOWJmQTlIOWFwOUxoZk9FUDIxTk5wNFN2eVBTQ0FQZW92ZzBBUzF4ODYzNUxBYlJuODZWVm9hX0VxbFBDR1p6X2VaWXZrTVJrSHA0bFVSczdVSWFocFhJcXJUbDI5QVpqZEd5RnlR?oc=5",
+          "published": "2026-11-19"
+        },
+        {
+          "outlet": "BBC",
+          "title": "Mauricio Pochettino: Man Utd boss priorities include Fernandes, culture and defence",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9namlrclYwcEloQTZwbnhraW9Zblh2d2dRTy1NTDlqbkJ4R2JrbC1MVmJBNEp3WUNpM3JvTllYblYzaWRkY0lGUzlCN1VqRi1Wdlk3dlM1b01FcEVQVjQ4cWR6b3NFYWhk?oc=5",
+          "published": "2026-11-19"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "We are going to go there to Anfield with the idea to win and be brave and to be Manchester United",
+          "speaker": "Pochettino",
+          "context": "Read more“We are going to go there to Anfield with the idea to win and be brave and to be Manchester United,” Pochettino told the club’s website. “The history talks for us, and what we need to expect, and we are going to expect in Manchester United. We need to be sure that we are brave and we are protagonists and go th",
+          "outlet": "The Guardian",
+          "link": "https://www.theguardian.com/football/2026/nov/19/manchester-united-mauricio-pochettino-liverpool-anfield-no-fear"
+        },
+        {
+          "text": "We need to go little by little, step by step",
+          "speaker": "Pochettino",
+          "context": "“We need to go little by little, step by step,” Pochettino said. “We cannot go too fast but also we need to, at the same time, attack the priorities to build something.”",
+          "outlet": "The Guardian",
+          "link": "https://www.theguardian.com/football/2026/nov/19/manchester-united-mauricio-pochettino-liverpool-anfield-no-fear"
+        },
+        {
+          "text": "The players need to express their talent",
+          "speaker": "Pochettino",
+          "context": "“The players need to express their talent,” Pochettino said. “We need to create the environment and the platform for the players to perform. That is the most important thing and that is our priority now: it’s to work with them and try to take the pressure.",
+          "outlet": "The Guardian",
+          "link": "https://www.theguardian.com/football/2026/nov/19/manchester-united-mauricio-pochettino-liverpool-anfield-no-fear"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 3.1/10. This story is not 'what Kenya is on' and fails to connect with a Nairobi audience; focus on local political or economic urgency instead."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 2,
+        "send": 3,
+        "clarity": 8,
+        "fresh": 2,
+        "voice": 3,
+        "craft": 4,
+        "picture": 3,
+        "hold": 3,
+        "demand": 0,
+        "action": 2,
+        "fair": 7,
+        "impact": 1,
+        "human": 2,
+        "avg": 3.1,
+        "note": "This story is not 'what Kenya is on' and fails to connect with a Nairobi audience; focus on local political or economic urgency instead."
+      },
+      "trend": "#InternationalMensDay",
+      "drafted_at": "2026-11-19T19:02:57.910351+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1119b1841-photo.jpg",
+      "photo_credit": "File photo: Pedroserafin / Wikimedia Commons, CC0",
+      "photo_kind": "file",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Pochettino.jpg",
+      "shot_info": [
+        {
+          "credit": "File photo: Pedroserafin / Wikimedia Commons, CC0",
+          "title": ""
+        }
+      ],
+      "ink": {
+        "2": "#FFFFFF"
+      },
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1307
     }
   ],
   "scripts": {
-    "radio": "Jambo citizens, welcome to Kenya on Record. This week, we are looking closely at the referee of our democracy—the Independent Electoral and Boundaries Commission.\n\nTalks surrounding the IEBC hit a stalemate after opposition leaders walked out, citing procedural unfairness and partisan bias in how the negotiations were being steered. Now, regardless of your political alignment, an electoral commission that cannot command trust across the board is a serious red flag for the nation. \n\nWhen key stakeholders walk out over disputed procedures, it signals a dangerous breakdown in consensus. History has taught us that a referee perceived to be biased long before an election creates instability long before voters even cast a single ballot. The selection, structure, and operational rules of the electoral body are not just elite political games—they directly dictate whether your vote will count in a peaceful, credible election. We cannot afford shortcut processes or skewed rules when setting up the machinery of our democracy. Transparency and mutual agreement are non-negotiable.\n\nKwa ufupi: Viongozi wa upinzani wamejitoa kwenye mazungumzo ya IEBC wakilalamikia utaratibu usio wa haki na ubaguzi. Tume ya uchaguzi lazima iwe huru na ya kuaminika kwa pande zote ili kulinda haki na amani ya nchi wetu.\n\nKeep your eyes on the process. Stay informed, and stay engaged.",
-    "voice_note": "Hapa ni Kenya on Record na ujumbe wa wiki hii. Opposition leaders have walked out of the ongoing IEBC talks, pointing out clear bias and flawed meeting procedures. Look, we need to pay close attention to this. The IEBC is the main referee for our elections. If the process of reforming or appointing the commission starts off with accusations of favoritism and procedural gatekeeping, it sets up the entire country for crisis down the line. Electoral integrity doesn't start on election day—it starts right now with how these negotiations are handled. Demand a fair, transparent referee for our democracy. Share this voice note with your network and let us keep track of every move.",
-    "sms": "Usiibiwe: A biased IEBC referee undermines your vote before election day. Demand fair and transparent electoral commission talks today. Process integrity matters!",
-    "reels": "Opposition leaders just walked out of IEBC talks, raising alarm over bias and disputed procedures. Remember: an election referee who lacks trust from all sides is a recipe for crisis. Electoral integrity isn't built on voting day—it is built right now in how the commission is formed. Stay alert, demand fairness, and keep Kenya on record."
+    "radio": "Jambo na karibu kwa Kenya on Record. Today on our Sauti segment, we look at leadership, courage, and standards.\n\nMauricio Pochettino has called on Manchester United to play without fear in their upcoming clash against Liverpool. He insists that high-stakes matches require sharp focus, personal ownership, and zero excuses on the pitch.\n\nNow, why does this matter to us beyond sports? Because accountability works the same way in civic life. Whether managing a football club or overseeing public funds, fear of facing tough realities leads to failure. Citizens and public officials alike must be fearless in demanding results. When local projects stall or public services break down, we cannot afford to be timid. We must demand performance with clarity and courage, expecting those in authority to deliver under pressure.\n\nHigh expectations build high standards. If we tolerate mediocrity in public administration, that is precisely what we will receive. Courage is where real accountability begins.\n\nKwa ufupi: Pochettino amewataka wachezaji wa Manchester United kucheza bila hofu dhidi ya Liverpool. Hata katika uongozi na uraia, tunahitaji ujasiri huo huo. Tusiogope kudai uwajibikaji na huduma bora kutoka kwa viongozi wetu. Maendeleo yanahitaji ushupavu.",
+    "voice_note": "Habari zenu, this is Kenya on Record. In sport news, Mauricio Pochettino is calling on Manchester United to be completely fearless ahead of their big match against Liverpool. But there is a civic lesson here for all of us. Fearlessness isn't just for the pitch—it is required in governance. When public resources are mismanaged or local projects stall, we often stay quiet out of fatigue or fear. But public standards only rise when citizens fearlessly ask questions and insist on answers. Let us bring that same fearless energy to holding our leaders accountable this week. Stand firm and demand real performance.",
+    "sms": "Usiibiwe Tip: Standards rise when citizens speak up fearlessly. Question stalled projects and poor public services in your ward. Kenya on Record.",
+    "reels": "Pochettino says Manchester United must play without fear against Liverpool. But fearlessness isn't just for football. In public life, staying silent allows poor leadership to thrive. When public funds disappear or services fail, do not stay quiet. Demand accountability fearlessly. High standards start with us. Kenya on Record."
   },
   "spend_usd": 0.0
 }
