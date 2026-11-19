@@ -203,7 +203,7 @@
         ],
         "warnings": []
       },
-      "drafted_at": "2026-11-15T17:48:19.626598+03:00"
+      "drafted_at": "2026-11-20T01:16:13.691023+03:00"
     },
     {
       "id": "2026-w47-d4-money",
@@ -482,87 +482,95 @@
       "decided_at": "2026-11-16T12:12:06.194074+03:00"
     },
     {
-      "id": "2026-w47-d7-glasspoll-r3",
+      "id": "2026-w47-d7-glasspoll-r4",
       "template": "glasspoll",
       "lane": "everyone",
+      "hook": "Opposition walks out on IEBC",
+      "question": "Is IEBC ready for 2027 elections?",
+      "cta": "Vote A or B in comments below",
+      "options": [
+        "Yes, it is ready",
+        "No, fix reforms first"
+      ],
+      "message": "Kenyans demand clear consensus and full electoral transparency before the 2027 general election.",
+      "action": "Submit your electoral reform views to Parliament at clerk@parliament.go.ke",
+      "who": "IEBC and Parliament",
+      "where": "National",
+      "when": "19 Nov 2026",
       "side": "both",
       "tone": "explainer",
-      "series_brief": "Your Say poll (posted as a Reel): a sharp question about this week's biggest Kenyan political story that every side can answer and will argue about (never 'who will you vote for'). `hook`, question, 2 options (shown as A and B), `cta` that asks for the vote in the comments, e.g. 'Comment A or B'. The caption repeats the question and ends 'Vote A or B in the comments.'",
-      "message": "Have you submitted your views on the 2027/28 budget plan yet?",
-      "action": "Comment A or B to cast your vote on the budget public participation",
+      "impact": "Unresolved electoral rules undermine public confidence in election results.",
+      "photo_query": "ballot box Kenya",
+      "source": "KBC Digital, 2026-11-19",
       "beats": [
-        "Kenyans have only four days left to submit views on the *budget*.",
-        "Public participation is open until November 20 for the 2027/28 plans.",
-        "Have you read the draft proposals or sent your comments?",
-        "Tell us below: did you *submit* your views on the budget?"
+        "Opposition walked out on IEBC talks.",
+        "Ruto claimed rivals fear 2027.",
+        "Kenyans demand a trusted electoral team.",
+        "Is IEBC ready for 2027 elections?"
       ],
-      "photo_query": "National Treasury Nairobi Kenya",
-      "hook": "Budget deadline in 4 days",
-      "question": "Have you submitted your budget views?",
-      "cta": "Comment A or B below",
-      "options": [
-        "A: Yes, I sent views",
-        "B: No, I didn't know"
-      ],
+      "caption": "Opposition leaders walked out of IEBC reform talks while President Ruto claimed they are preparing excuses. Is IEBC ready for 2027 elections? Vote A or B in the comments. #IEBC #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-11-22T18:00:00+03:00",
       "size": "story",
-      "status": "approved",
+      "source_links": [
+        {
+          "outlet": "KBC Digital",
+          "title": "Ruto: Opposition preparing to blame IEBC for 2027 election loss",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaFVES21ZOFdoS09mcTVqcGRCcS0xemxqY0VLbXNScUxnUTliaFFCZ3hyUzFabkdFUFhhNWhwdE5GRFBkNUoycm1pc2ZZQUdaZlRac2hqUEo0M2xRTVRKUmNyOUMxZWJvZ0NSeHZ4MGk2b1NEallCaXU2LVhVTGJscGlJNnlud3BLQ1QtUnNn?oc=5",
+          "published": "2026-11-19"
+        }
+      ],
+      "status": "awaiting",
       "guard": {
-        "errors": [],
-        "warnings": [
-          "no caption yet",
-          "contains a year, % or amount with no `source`"
-        ]
+        "errors": [
+          "weak: editor scored 5.2/10. Replace the generic poll prompt and textbook framing with a concrete fact about what the opposition walked out over."
+        ],
+        "warnings": []
       },
       "critic": {
-        "hook": 9,
-        "send": 8,
-        "clarity": 9,
-        "fresh": 9,
-        "voice": 9,
-        "craft": 8,
-        "picture": 8,
-        "hold": 8,
-        "demand": 10,
-        "action": 8,
-        "fair": 8,
-        "impact": 9,
-        "human": 9,
-        "avg": 8.6,
-        "note": "Engaging poll tightly aligned with the week's top budget deadline."
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 5,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 9,
+        "action": 5,
+        "fair": 5,
+        "impact": 5,
+        "human": 4,
+        "avg": 5.2,
+        "note": "Replace the generic poll prompt and textbook framing with a concrete fact about what the opposition walked out over."
       },
-      "drafted_at": "2026-11-16T09:35:48.210479+03:00",
-      "photo_source": "https://www.kenyans.co.ke/news/128726-treasury-begins-bids-evaluation-460km-nairobi-mombasa-expressway",
-      "reel": true,
-      "rephoto_reason": "Kenyans.co.ke's own edit (Circular inset photo of a man)",
-      "words_approved": true,
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-r3-photo.jpg",
-      "photo_credit": "File photo: Kenyans.co.ke",
-      "photo_kind": "topic",
-      "photo_outlet": "Kenyans.co.ke",
+      "drafted_at": "2026-11-20T01:16:13.691016+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-r4-photo.jpg",
+      "photo_credit": "Photo: Capital FM · Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/opposition-leaders-walk-out-of-iebc-talks-over-disputed-agenda/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
       "extra_photos": [
-        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-r3-photo-2.jpg",
-        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-r3-photo-3.jpg"
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-r4-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d7-glasspoll-r4-photo-3.jpg"
       ],
       "shot_info": [
         {
-          "credit": "File photo: Kenyans.co.ke",
-          "title": "Treasury Gives Progress Update on Nairobi-Mombasa Expressway Project"
+          "credit": "Photo: Capital FM",
+          "title": "Opposition leaders walk out of IEBC talks over disputed agenda"
         },
         {
-          "credit": "File photo: Kenyans.co.ke",
-          "title": "Treasury Reveals Planned Changes in November-December Fuel Prices"
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "IEBC Announces Requirement for Political Parties Ahead of 2027 Polls, Sets Deadline"
         },
         {
-          "credit": "File photo: Kenyans.co.ke",
-          "title": "Treasury Proposes New Car Loan and Mortgage Scheme for TSC"
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "UDA Issues Notice to Candidates, Sets 24-Hour Deadline"
         }
       ],
-      "track_credit": "Music: \"Funky Chunk\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "tg_msg": 1328,
-      "auto": true,
-      "decided_at": "2026-11-20T00:37:23.812739+03:00"
+      "track_credit": "Music: \"Who Likes to Party\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1337
     },
     {
       "id": "2026-w47-hot-1116",
@@ -2123,10 +2131,10 @@
     }
   ],
   "scripts": {
-    "radio": "Habari zenu, listeners, and welcome to Kenya on Record. According to recent High Court proceedings, the Judiciary has found National Treasury Cabinet Secretary John Mbadi in contempt of court over the non-disclosure of comprehensive national debt records. \n\nThe ruling arises from public interest litigation seeking full disclosure of sovereign loan agreements, repayment schedules, and underlying obligations. Presiding judges noted that under Article 35 and Article 201 of the Constitution, public finance matters require open governance and accountability to citizens. While the National Treasury has previously cited administrative processes and sensitivity around sovereign debt obligations, the court maintained that judicial directives ordering transparency must be fully obeyed.\n\nThis decision underscores an essential constitutional principle: public debt is a collective liability borne by all Kenyans, and citizens retain the legal right to know the precise terms under which sovereign loans are contracted and serviced. As the matter progresses through legal channels, it highlights the ongoing dialogue between judicial oversight and executive compliance in public finance administration.\n\nKwa ufupi kwa Kiswahili: Mahakama Kuu imempata Waziri wa Hazina ya Kitaifa, John Mbadi, na hatia ya kukiuka amri ya mahakama baada ya kushindwa kutoa taarifa kamili kuhusu madeni ya nchi. Mahakama imesisitiza kuwa Katiba inahitaji uwazi kamili katika masuala ya fedha za umma, na maamuzi ya kisheria lazima yaheshimiwe. Thank you for listening, and stay informed.",
-    "voice_note": "Habari zenu. This is your weekly governance update from Kenya on Record. According to official High Court rulings this week, Treasury Cabinet Secretary John Mbadi has been cited for contempt of court for failing to provide full details regarding Kenya's national debt register, as previously ordered by the bench. The litigation, initiated by civil society petitioners, seeks verifiable data on all sovereign loans and their terms. While the Treasury has pointed to standard bureaucratic procedures in debt reporting, the High Court emphasized that Articles 35 and 201 leave no ambiguity: public debt information belongs to the public, and court directives must be respected. We will keep tracking the filings and the executive's formal response. Share this with your networks to stay informed on how our public finances are managed.",
-    "sms": "Usiibiwe: Article 35 gives you the legal right to public finance records. Demanding transparency on sovereign debt protects our national revenue.",
-    "reels": "According to the High Court, Treasury CS John Mbadi has been cited for contempt after failing to release full national debt records as ordered. The court reiterated that under Articles 35 and 201, transparency in sovereign borrowing is a constitutional command, not a policy option. When state funds and public loans are involved, judicial orders demand compliance. Follow Kenya on Record for verified legal updates."
+    "radio": "Jambo citizens, this is Kenya on Record. As we look ahead to the 2027 general election, one message from across the country is loud and clear: Kenyans are demanding full electoral transparency and genuine consensus long before election day. We cannot afford the usual last-minute structural fixes or opaque digital systems that leave room for doubt. Citizens are insisting on an early, independent audit of the voter register, clean procurement processes for electoral technology, and open access to tallies at every level. Trust is built in the preparation, not in the repair. If the rules of the game are transparent from day one, every Kenyan can accept the outcome with confidence. Accountability isn't just about how we cast our vote—it's about how the entire process is managed starting right now. Let’s hold our electoral institutions accountable today so we don't buy regret tomorrow.\n\nKwa ufupi: Wakenya wanataka uwazi kamili na maridhiano kuhusu mchakato wa uchaguzi wa 2027 kabla ya siku yenyewe kufika. Ni lazima daftari la wapigakura likaguliwe kikamilifu na mifumo yote ya uchaguzi iwe wazi ili kila mwananchi awe na imani na matokeo. Haki na ukweli vianzie sasa.",
+    "voice_note": "Habari zenu. Hapa ni Kenya on Record na ujumbe mfupi wa wiki hii. Looking ahead to 2027, the demand from citizens across Kenya is very straightforward: we need full electoral transparency and clear public consensus now, not months or weeks before the vote. That means open audits of the voter register, verifiable technology, and rules that every stakeholder agrees on early. History has taught us that electoral integrity isn't fixed on voting day—it is built through total visibility right now. Ask your civic leaders and representatives what steps are being taken today to guarantee a clean process. Let’s stay vigilant and demand answers early. Share this with your network, and let's keep the standard high.",
+    "sms": "USIIBIWE: 2027 prep starts now. Demand early voter register audits & open electoral rules. Electoral integrity begins today, not on voting day.",
+    "reels": "With 2027 approaching, Kenyans are making one thing clear: we will not accept last-minute electoral fixes. True trust requires total transparency right now—from an audited voter register to open digital tallying. Electoral integrity isn't built on election day; it's built today through clear rules and public consensus. Stay sharp, demand transparency early, and hold the process accountable."
   },
   "spend_usd": 0.0
 }
