@@ -21,7 +21,10 @@ SAID = (r"said|says|stated|states|noted|notes|added|adds|remarked|told|asked|ask
         r"posed|stressed|indicated|observed|alleged|maintained|said in a statement|announced|announces")
 NAME = r"(?:[A-Z][\w'’.\-]+\s){0,4}[A-Z][\w'’.\-]+"
 NOT_NAMES = {"he", "she", "they", "it", "we", "i", "the", "this", "that", "his", "her", "their", "our", "who", "which",
-             "statement", "report", "police", "government"}
+             "statement", "report", "police", "government",
+             # words that open a sentence before the speaker is named ("Asked when..., Mbadi said")
+             "asked", "speaking", "addressing", "according", "but", "and", "however", "meanwhile", "while", "when",
+             "in", "on", "at", "after", "before", "during", "earlier", "later", "yesterday", "today", "also"}
 QUOTE = re.compile(r"[“\"]([^“”\"]{12,400})[”\"]")
 PARA = re.compile(r"<p[^>]*>(.*?)</p>", re.S | re.I)
 TAG = re.compile(r"<[^>]+>")

@@ -2452,7 +2452,7 @@ def rewrite_samples(posts: list[dict]) -> list[dict]:
     for q in posts:
         new = drafter.rewrite_script(q)
         out.append({**new, "old_beats": q.get("beats")} if new else q)
-    return out
+    return drafter.add_voices(out)   # and the speakers' exact words, as a new news post would get them
 
 
 
