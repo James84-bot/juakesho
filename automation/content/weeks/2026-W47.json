@@ -246,7 +246,7 @@
         "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSkM1LXJyQW43bkpYZF9RVzdMMkw0Rl9uTlV3RmFwQlZHeUNYYzhLWGpaS01BRlpnQ21yaGlTZ053c3R4c1JRc3htTXRPVi1GUW5URGk2cmtfX2lhWjJTUHY1WFRlaG9ST2ZtY3YxeVNFdGtCS1k4X3EwbUZVTHU2YkZvRkJHMEdkS0V6cG9hN3hkS0dHRmd2WHRFQkEzMG1OallLS2tRVGN6d1VQ?oc=5",
         "published": "2026-11-15"
       },
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "hook: the first line has no figure and no named person, place or body: it is a topic, not a hook",
