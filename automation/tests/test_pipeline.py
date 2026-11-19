@@ -1806,6 +1806,14 @@ class CatchUpTests(TempWeeks):
         with mock.patch.object(pl, "now", lambda: self.at(19, 0, day=20)):
             self.assertIn("evening", pl.due_editions())                     # a new day
 
+    def test_a_schedule_that_fires_hours_late_does_not_write_tonights_post_at_midnight(self):
+        with mock.patch.object(pl, "now", lambda: self.at(0, 21, day=20)):
+            self.assertIsNone(pl.hot_slot(mock=True, edition="evening"))
+            self.assertNotIn("evening", pl.due_editions())
+        for edition, (h, m) in (("morning", (6, 35)), ("midday", (9, 5)), ("afternoon", (12, 30)), ("evening", (16, 5))):
+            with mock.patch.object(pl, "now", lambda h=h, m=m: self.at(h, m, day=21)):   # the listener's times
+                self.assertIsNotNone(pl.hot_slot(mock=True, edition=edition), edition)
+
     def test_a_post_whose_writing_failed_is_found(self):
         self.week([{"id": "2026-w47-hot-1119m", "hot": True, "status": "planned", "template": "sauti",
                     "publish_at": "2026-11-19T20:15:00+03:00"},

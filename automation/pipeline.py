@@ -233,6 +233,7 @@ def _earlier_slot(want: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.t
     return next((t for t in candidates if lo <= t <= hi and all(abs(t - x) >= gap for x in taken)), None)
 
 
+EDITION_EARLY = dt.timedelta(minutes=45)   # an edition is written from its slot minus the approval lead minus this
 SKIPPED_EDITIONS = "editions_skipped.json"   # {date: [edition, ...]}: tried today, nothing to post; not retried
 
 
@@ -322,6 +323,11 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
         if any(p["id"] == hot_id for p in data["posts"]):
             log(f"today's {edition} news post {hot_id} already exists")
             return None
+        opens = dt.datetime(today.year, today.month, today.day, *EDITIONS[edition]["time"], tzinfo=EAT) \
+            - HOT["min_lead"] - EDITION_EARLY
+        if now() < opens:   # a schedule that fired hours late (19 Nov: the 16:05 run came at 00:21) would write
+            log(f"hot ({edition}): too early, this edition is written from {opens:%H:%M} EAT with that hour's news")
+            return None   # the evening post from midnight's news; the listener starts it on time instead
         if not mock:
             import news
             if not news.prompt_block():
