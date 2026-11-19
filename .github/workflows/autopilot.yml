@@ -39,7 +39,10 @@ jobs:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}        # the free writer (Gemini free tier, aistudio.google.com/apikey)
       JUA_GEMINI_MODEL: ${{ vars.JUA_GEMINI_MODEL }}
       JUA_PROVIDER: ${{ vars.JUA_PROVIDER }}               # empty = Gemini if its key is set, else Claude; or force "gemini" / "anthropic"
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}        # free backup writer (console.mistral.ai, no card)
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}              # free backup writer (console.groq.com, no card)
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}  # free backup writer (openrouter.ai, :free models)
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}    # paid; used last and only while it has credit
       ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}   # optional
       JUA_MODEL: ${{ vars.JUA_MODEL }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

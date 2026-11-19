@@ -863,17 +863,100 @@ def provider() -> str:
 NET_ERRORS = (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException)
 
 
+# Free backup writers, asked in order once every Gemini model is busy or used up. Each one is skipped until its key
+# is a GitHub secret. All are free with no card (checked 19 Nov 2026):
+#  * Mistral, Free mode: limits shown on its Limits page; requests may be used to train Mistral's models (our input
+#    is public news). Phone check at signup.
+#  * Groq, Free plan: openai/gpt-oss-120b, 30 requests a minute, 1,000 a day, but 8,000 tokens a minute, so only
+#    the smaller calls fit (the writer's big batches go elsewhere). Groq does not train on requests.
+#  * OpenRouter, models ending :free through its openrouter/free router: 20 a minute, 50 a day per account.
+FREE_BACKUPS = [
+    {"name": "Mistral", "env": "MISTRAL_API_KEY", "url": "https://api.mistral.ai/v1/chat/completions",
+     "list": "https://api.mistral.ai/v1/models", "models": ["mistral-medium-latest", "mistral-small-latest"],
+     "fits": None},
+    {"name": "Groq", "env": "GROQ_API_KEY", "url": "https://api.groq.com/openai/v1/chat/completions",
+     "list": "https://api.groq.com/openai/v1/models", "models": ["openai/gpt-oss-120b"], "fits": 7000},
+    {"name": "OpenRouter", "env": "OPENROUTER_API_KEY", "url": "https://openrouter.ai/api/v1/chat/completions",
+     "list": "https://openrouter.ai/api/v1/models", "models": ["openrouter/free"], "fits": None},
+]
+# what may send a call on to the backups: Google busy, out of quota, unreachable, our own per-run cap, or no key
+HAND_OVER = re.compile(r"\b(429|50[0234])\b|unreachable|no Gemini|call cap|No AI writer key", re.I)
+
+
+def _backup(b: dict, system: str, user: str, max_tokens: int) -> str:
+    """One free backup (OpenAI-style chat API). Raises RuntimeError when it can't answer; never waits long."""
+    key = os.environ.get(b["env"], "").strip()
+    if not key:
+        raise RuntimeError(f"{b['name']}: no key")
+    if b["fits"] and (len(system) + len(user)) // 3 + max_tokens > b["fits"]:
+        raise RuntimeError(f"{b['name']}: this call is bigger than its free per-minute token limit")
+    last = None
+    for m in b["models"]:
+        tag = f"{b['name']}:{m}"
+        if _skip(tag):
+            last = last or RuntimeError(f"{tag}: busy or used up")
+            continue
+        body = json.dumps({"model": m, "max_tokens": max_tokens, "temperature": 0.8,
+                           "messages": [{"role": "system", "content": system},
+                                        {"role": "user", "content": user}]}).encode()
+        req = urllib.request.Request(b["url"], data=body, method="POST", headers={
+            "Authorization": f"Bearer {key}", "Content-Type": "application/json", "Accept": "application/json"})
+        for attempt in range(2):
+            try:
+                with urllib.request.urlopen(req, timeout=240) as r:
+                    data = json.loads(r.read())
+                choice = (data.get("choices") or [{}])[0]
+                text = (choice.get("message") or {}).get("content") or ""
+                if isinstance(text, list):   # some APIs return parts
+                    text = "".join(p.get("text", "") for p in text if isinstance(p, dict))
+                if choice.get("finish_reason") == "length":
+                    raise RuntimeError(f"{tag}: reply was cut off")
+                if not text.strip():
+                    raise RuntimeError(f"{tag}: empty reply")
+                print(f"  written by the free backup {tag}")
+                return text
+            except urllib.error.HTTPError as e:
+                detail = e.read().decode(errors="replace")[:240]
+                last = RuntimeError(f"{tag} {e.code}: {detail}")
+                wait = float(e.headers.get("retry-after") or 0)
+                if e.code == 429 and attempt == 0 and 0 < wait <= 65:
+                    time.sleep(wait)
+                    continue
+                if e.code in (401, 403):   # a wrong or revoked key: nothing else from this provider will work
+                    for x in b["models"]:
+                        USED_UP.add(f"{b['name']}:{x}")
+                    raise last from e
+                if e.code in (429, 500, 502, 503, 504):
+                    BUSY[tag] = time.time() + BUSY_FOR
+                break   # 400/404/413: this model can't take the call; the next one might
+            except NET_ERRORS as e:
+                last = RuntimeError(f"{tag} unreachable: {e}")
+                BUSY[tag] = time.time() + BUSY_FOR
+                break
+            except ValueError as e:
+                last = RuntimeError(f"{tag}: not JSON ({e})")
+                break
+    raise last or RuntimeError(f"{b['name']}: no model")
+
+
 def call_claude(system: str, user: str, max_tokens: int = 12000, model: str | None = None) -> str:
-    """The one way the system talks to an AI (named for history; routes to the chosen provider)."""
+    """The one way the system talks to an AI (named for history; routes to the chosen provider): Gemini's free
+    models, then the free backups that have keys, and Claude last only if its account has credit."""
     if provider() == "gemini":
         try:
             return _gemini(system, user, min(max_tokens, GEMINI_LIMITS["out"]), model)
         except RuntimeError as e:
-            # Google's free models were all busy: the paid Claude key (if set, within its budget) keeps the run alive
-            if not os.environ.get("ANTHROPIC_API_KEY") or not re.search(r"\b(429|50[0234])\b|unreachable|no Gemini", str(e)):
+            if not HAND_OVER.search(str(e)):
                 raise
-            if ANTHROPIC_DOWN:
-                raise RuntimeError(f"{e} (the Claude backup is off: {ANTHROPIC_DOWN['why']})") from e
+            notes = [str(e)[:160]]
+            for b in FREE_BACKUPS:
+                try:
+                    return _backup(b, system, user, min(max_tokens, GEMINI_LIMITS["out"]))
+                except RuntimeError as be:
+                    if not str(be).endswith("no key"):
+                        notes.append(str(be)[:160])
+            if not os.environ.get("ANTHROPIC_API_KEY") or ANTHROPIC_DOWN:
+                raise RuntimeError("no free writer answered: " + "; ".join(notes)) from e
             print(f"  Gemini unavailable ({str(e)[:80]}); using Claude for this call")
             return _anthropic(system, user, max_tokens, model if model and not model.startswith("gemini") else None)
     return _anthropic(system, user, max_tokens, model)

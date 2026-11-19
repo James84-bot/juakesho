@@ -2925,42 +2925,20 @@ def main(argv: list[str] | None = None) -> int:
         except Exception:
             pass
         raise
-    finally:
-        try:
-            claude_credit_notice(dry_run="--dry-run" in (argv if argv is not None else sys.argv))
-        except Exception as e:
-            log(f"credit notice skipped: {e}")
 
 
 def failure_text(e: Exception) -> str:
     """What a stopped run tells the owner: what stopped and whether anything is needed from him. A writer outage
     fixes itself (the post stays in line and the next run writes it), so it must not read like a call to action."""
     msg = str(e)
-    if re.search(r"Gemini|Anthropic API|free-tier call cap|no AI writer", msg, re.I) and "GEMINI_API_KEY" not in msg:
+    if re.search(r"Gemini|Anthropic API|free-tier call cap|no AI writer|free writer", msg, re.I) \
+            and "GEMINI_API_KEY" not in msg:
         return ("⚠️ A run stopped: the AI writer did not answer "
                 f"({_esc(msg[:240])}).\nPosts already approved still go out. The post it was writing stays in line "
                 "and the next run writes it. Nothing for you to do.")
     return (f"⚠️ Autopilot run stopped: <b>{_esc(type(e).__name__)}</b>: {_esc(msg[:600])}\n"
             "The next scheduled run tries again. If this message repeats, send it to Claude.")
 
-
-def claude_credit_notice(dry_run: bool = False) -> str | None:
-    """Once a day when the Claude account answered 'credit balance too low': the free Gemini writer carries on,
-    but there is no backup when Google is busy. The owner decides whether to top up; the system never pays."""
-    drafter = sys.modules.get("draft")
-    if dry_run or drafter is None or not getattr(drafter, "ANTHROPIC_DOWN", None):
-        return None
-    marker = STATE / "claude_credit_alert.txt"
-    today = str(now().date())
-    if marker.exists() and marker.read_text(encoding="utf-8").strip() == today:
-        return None
-    msg = ("ℹ️ The Claude account behind the backup writer has no credit left. The free Gemini writer still does "
-           "the work; when Google is busy, a post waits for the next run instead of switching to Claude.\n"
-           "Optional: add credit in the Anthropic Console under Plans &amp; Billing. Nothing else is needed.")
-    STATE.mkdir(parents=True, exist_ok=True)
-    marker.write_text(today, encoding="utf-8")
-    _notify(msg)
-    return msg
 
 
 def _main(argv: list[str] | None = None) -> int:
@@ -3251,6 +3229,25 @@ def _main(argv: list[str] | None = None) -> int:
                 time.sleep(4)
         except Exception as e:
             log(f"aicheck: model list failed: {e}")
+        for b in drafter.FREE_BACKUPS:   # the free backups that have keys: their models, and one tiny call
+            if not os.environ.get(b["env"], "").strip():
+                log(f"aicheck {b['name']}: no {b['env']} secret yet")
+                continue
+            try:
+                req = urllib.request.Request(b["list"], headers={"Authorization": f"Bearer {os.environ[b['env']].strip()}"})
+                with urllib.request.urlopen(req, timeout=60) as r:
+                    ids = [x.get("id", "") for x in json.loads(r.read()).get("data", [])]
+                if b["name"] == "OpenRouter":
+                    ids = [x for x in ids if x.endswith(":free") or x == "openrouter/free"]
+                log(f"aicheck {b['name']}: {len(ids)} models: {', '.join(ids[:40])}")
+            except Exception as e:
+                log(f"aicheck {b['name']}: model list failed: {str(e)[:200]}")
+            t0 = time.time()
+            try:
+                reply = drafter._backup(b, "Answer with one word.", "Say OK.", 400).strip()
+                log(f"aicheck {b['name']}: '{reply[:20]}' in {time.time() - t0:.1f}s")
+            except Exception as e:
+                log(f"aicheck {b['name']}: FAILED after {time.time() - t0:.1f}s: {str(e)[:300]}")
         try:
             reply = drafter.call_claude("Answer with one word.", "Say OK.", max_tokens=20).strip()
             msg = f"🧠 Writer check: {drafter.provider()} answered '{reply[:30]}'. " + (

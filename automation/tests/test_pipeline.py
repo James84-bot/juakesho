@@ -1151,8 +1151,10 @@ class FreeProviderTests(unittest.TestCase):
         with mock.patch.object(self.draft.urllib.request, "urlopen", lambda req, timeout: bad):
             with self.assertRaisesRegex(RuntimeError, "not JSON"):
                 self.draft.call_claude("s", "u")
-        with mock.patch.dict(self.draft.SPEND, {"calls": self.draft.GEMINI_LIMITS["calls"]}):
-            with self.assertRaisesRegex(RuntimeError, "call cap"):
+        with mock.patch.dict(self.draft.SPEND, {"calls": self.draft.GEMINI_LIMITS["calls"]}), \
+                mock.patch.dict(os.environ, {"ANTHROPIC_API_KEY": "", "MISTRAL_API_KEY": "", "GROQ_API_KEY": "",
+                                             "OPENROUTER_API_KEY": ""}):
+            with self.assertRaisesRegex(RuntimeError, "call cap"):   # no backup key: the cap is the reason given
                 self.draft.call_claude("s", "u")
 
     def test_elevate_survives_a_skipped_critic_batch(self):
@@ -1582,7 +1584,7 @@ class WriterOutageTests(FreshWriter):
             with self.assertRaises(RuntimeError) as err:
                 drafter.call_claude("s", "u", 100)
             self.assertEqual(sum("anthropic" in u for u in calls), n)   # not asked again
-            self.assertIn("Claude backup is off", str(err.exception))
+            self.assertIn("no free writer answered", str(err.exception))
             with self.assertRaises(RuntimeError) as seen:   # the picture check skips Claude too
                 drafter.look_at(_tiny_jpeg(), "what is it?", strong=True)
             self.assertIn("Claude skipped", str(seen.exception))
@@ -1594,23 +1596,78 @@ class WriterOutageTests(FreshWriter):
             self.assertEqual(drafter._price("gemini-flash-latest"), (0.0, 0.0))
             self.assertGreater(drafter._price("claude-sonnet-5")[1], 0)   # it used to be booked as free
 
-    def test_owner_is_told_once_a_day_and_only_when_it_happened(self):
-        import draft as drafter
-        sent = []
-        with tempfile.TemporaryDirectory() as d, mock.patch.object(pl, "STATE", Path(d)), \
-                mock.patch.object(pl, "_notify", sent.append), mock.patch.dict(drafter.ANTHROPIC_DOWN, clear=True):
-            self.assertIsNone(pl.claude_credit_notice())
-            drafter.ANTHROPIC_DOWN["why"] = "no credit left on the Claude (Anthropic) account"
-            self.assertIsNone(pl.claude_credit_notice(dry_run=True))
-            self.assertIn("free Gemini writer", pl.claude_credit_notice())
-            self.assertIsNone(pl.claude_credit_notice())
-        self.assertEqual(len(sent), 1)
-
     def test_a_writer_outage_does_not_read_like_a_job_for_the_owner(self):
         text = pl.failure_text(RuntimeError("Gemini unreachable (gemini-flash-lite-latest): timed out"))
         self.assertIn("Nothing for you to do", text)
         self.assertNotIn("Run workflow", text)
         self.assertIn("tries again", pl.failure_text(KeyError("posts")))
+
+
+class FreeBackupTests(FreshWriter):
+    """When every Gemini model is busy or used up, the free backups that have keys write instead (no paid Claude)."""
+
+    def _run(self, keys, backup_answers, user="u", max_tokens=100):
+        import io
+        import urllib.error
+        import draft as drafter
+        seen = []
+
+        def answer(req, timeout=300):
+            url = req.full_url
+            if "generativelanguage" in url:
+                raise urllib.error.HTTPError(url, 503, "busy", {}, io.BytesIO(b'{"error":{"code":503}}'))
+            if "anthropic" in url:
+                raise AssertionError("Claude must not be called")
+            body = json.loads(req.data)
+            name = next(b["name"] for b in drafter.FREE_BACKUPS if b["url"] == url)
+            seen.append((name, body["model"]))
+            what = backup_answers.get(name, "ok")
+            if isinstance(what, int):
+                raise urllib.error.HTTPError(url, what, "x", {}, io.BytesIO(b'{"error":"x"}'))
+
+            class R(io.BytesIO):
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, *a):
+                    return False
+            finish = "length" if what == "cut" else "stop"
+            return R(json.dumps({"choices": [{"message": {"content": f"from {name}"},
+                                              "finish_reason": finish}]}).encode())
+        env = {"GEMINI_API_KEY": "g", "ANTHROPIC_API_KEY": "", "JUA_PROVIDER": "", "JUA_GEMINI_MODEL": "",
+               "MISTRAL_API_KEY": "", "GROQ_API_KEY": "", "OPENROUTER_API_KEY": "", **keys}
+        with mock.patch.dict(os.environ, env), mock.patch.object(drafter.time, "sleep", lambda s: None), \
+                mock.patch.dict(drafter.SPEND, {"calls": 0}), \
+                mock.patch.object(drafter.urllib.request, "urlopen", answer):
+            try:
+                return drafter.call_claude("s", user, max_tokens), seen
+            except RuntimeError as e:
+                return e, seen
+
+    def test_mistral_writes_when_google_is_busy(self):
+        got, seen = self._run({"MISTRAL_API_KEY": "m", "GROQ_API_KEY": "q"}, {})
+        self.assertEqual(got, "from Mistral")
+        self.assertEqual(seen, [("Mistral", "mistral-medium-latest")])
+
+    def test_a_refused_key_or_cut_reply_moves_to_the_next_backup(self):
+        got, seen = self._run({"MISTRAL_API_KEY": "m", "GROQ_API_KEY": "q", "OPENROUTER_API_KEY": "o"},
+                              {"Mistral": 401, "Groq": "cut"})
+        self.assertEqual(got, "from OpenRouter")
+        self.assertEqual([n for n, _ in seen], ["Mistral", "Groq", "OpenRouter"])
+
+    def test_groq_only_takes_calls_that_fit_its_free_minute(self):
+        got, seen = self._run({"GROQ_API_KEY": "q"}, {}, user="x" * 30000, max_tokens=4000)
+        self.assertIsInstance(got, RuntimeError)
+        self.assertEqual(seen, [])
+        self.assertIn("bigger than its free", str(got))
+        got, seen = self._run({"GROQ_API_KEY": "q"}, {}, user="short")
+        self.assertEqual(got, "from Groq")
+
+    def test_without_backup_keys_the_error_says_no_free_writer_answered(self):
+        got, seen = self._run({}, {})
+        self.assertIsInstance(got, RuntimeError)
+        self.assertIn("no free writer answered", str(got))
+        self.assertIn("Nothing for you to do", pl.failure_text(got))
 
 
 def _tiny_jpeg() -> bytes:
