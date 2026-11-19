@@ -38,6 +38,8 @@ CRAFT_RULES = """MAKE IT WORTH STOPPING FOR (reach comes from the first 2 second
   write fewer beats (3 is fine). Never pad.
 - No puffery or filler: breathtaking, stunning, towering, iconic, a key link, remains a vital, plays a crucial role,
   visitors enjoy, gathering pace, "Kenyans demand verified facts", "never share without checking" as a closer.
+- Posts are written days before they go out: give dates ("submissions close on 20 November"), never a countdown
+  ("four days left", "this week") that will be wrong on the day it is posted.
 - The LAST line is a question to the viewer about their own life, shown on screen, that they can answer in the
   comments in a word or a number: "Tell us below: did you pay anything for your KRA PIN?" "Is your family smaller
   than your parents' was?" "What did you pay for unga this week?" A place gets "Tag them: who would you take here?"

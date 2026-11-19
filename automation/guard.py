@@ -745,6 +745,9 @@ def check(post: dict) -> Report:
             rep.errors.append(f"quote: {said}")
     if "\u2014" in _ours(text) or " \u2013 " in _ours(text):
         rep.errors.append("sounds AI-written: em dash; use a full stop or a comma")
+    countdown = re.search(r"\b(\w+|\d+)\s+(days?|hours?|weeks?)\s+(left|to go|remaining)\b", _ours(low))
+    if countdown and not post.get("hot"):   # written days ahead, a countdown is wrong when it goes out (19 Nov)
+        rep.errors.append(f"'{countdown.group(0)}' will be wrong on the day this goes out: give the date instead")
     if re.search(TRIBE_TALK, low) and tpl not in CALLOUT_TEMPLATES:
         rep.errors.append("tribe only comes up when we call out divisive politics (Set It Straight, Sauti, Promise Tracker)")
     problem = community_problem(text, tpl)

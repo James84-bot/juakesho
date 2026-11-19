@@ -83,3 +83,18 @@ class NewsEndsOnAQuestion(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Countdown(unittest.TestCase):
+    """19 Nov: Sunday's poll, written on the 16th, said "only four days left"; by Sunday the deadline had passed."""
+
+    def post(self, **kw):
+        return {"id": "x", "template": "glasspoll", "beats": ["Kenyans have only four days left to submit views.",
+                                                            "Public participation closes on 20 November.",
+                                                            "Did you submit your views on the budget?"], **kw}
+
+    def test_a_post_written_ahead_gives_the_date_not_a_countdown(self):
+        self.assertTrue(any("four days left" in e for e in guard.check(self.post()).errors))
+
+    def test_a_news_post_written_that_day_may_count_down(self):
+        self.assertFalse(any("days left" in e for e in guard.check(self.post(hot=True)).errors))

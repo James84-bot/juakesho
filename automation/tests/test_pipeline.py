@@ -1706,6 +1706,45 @@ class ThinkingLevelTests(FreshWriter):
         self.assertEqual([("thinkingConfig" in b) for b in bodies], [True, False, False])   # learned once
 
 
+class PassedDeadlineTests(unittest.TestCase):
+    """A pre-written post whose own words are wrong on the day it goes out is held without asking any model."""
+
+    def post(self, beats, out="2026-11-22T18:00:00+03:00", written="2026-11-16T10:00:00+03:00", **kw):
+        return {"id": "x", "publish_at": out, "drafted_at": written, "beats": beats, **kw}
+
+    def test_sundays_budget_poll(self):   # the real one, 19 Nov
+        p = self.post(["Kenyans have only four days left to submit views on the budget.",
+                       "Public participation is open until November 20 for the 2027/28 plans."])
+        self.assertIn("countdown", pl.passed_deadline(p))
+        p["beats"] = p["beats"][1:]
+        self.assertIn("November 20", pl.passed_deadline(p))
+
+    def test_dates_still_ahead_history_and_same_day_countdowns_pass(self):
+        self.assertEqual(pl.passed_deadline(self.post(["Apply by 30th November 2026."])), "")
+        self.assertEqual(pl.passed_deadline(self.post(["Kenya became independent on 12 December 1963."])), "")
+        self.assertEqual(pl.passed_deadline(self.post(["The Bill was tabled on November 3."])), "")   # no deadline
+        self.assertEqual(pl.passed_deadline(self.post(["Only two days left to register."],
+                                                      written="2026-11-22T06:00:00+03:00")), "")
+
+    def test_a_held_post_is_reported_once_and_redrafted(self):
+        with tempfile.TemporaryDirectory() as d:
+            weeks = Path(d) / "weeks"
+            weeks.mkdir()
+            data = {"collection": "2026-W47", "created": "2026-11-16T10:00:00+03:00",
+                    "posts": [{**self.post(["Submissions close on November 20."]), "status": "approved",
+                               "template": "glasspoll"}]}
+            (weeks / "2026-W47.json").write_text(json.dumps(data))
+            sent = []
+            with mock.patch.object(pl, "WEEKS", weeks), mock.patch.object(pl, "_notify", sent.append), \
+                    mock.patch.object(pl, "now", lambda: dt.datetime(2026, 11, 20, 1, 0, tzinfo=pl.EAT)), \
+                    mock.patch.dict(sys.modules, {"news": mock.MagicMock(prompt_block=lambda: "")}), \
+                    mock.patch("draft.call_claude", side_effect=AssertionError("no model needed")):
+                self.assertEqual(pl.freshness_check(), ["x"])
+                saved = json.loads((weeks / "2026-W47.json").read_text())["posts"][0]
+        self.assertEqual(saved["status"], "needs_human")
+        self.assertEqual(len(sent), 1)
+
+
 class NoCostTests(FreshWriter):
     """19 Nov: "no cost". The paid Claude API is never called unless JUA_PAID_OK=yes, whatever keys exist."""
 

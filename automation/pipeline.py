@@ -1508,6 +1508,44 @@ it reads as old news next to what Kenyans are talking about now. A post that is 
 story is quiet. Return ONLY JSON: {"verdict": "ok" | "outdated", "reason": "one sentence, specific"}"""
 
 
+MONTHS = {m: i for i, m in enumerate(("january", "february", "march", "april", "may", "june", "july", "august",
+                                      "september", "october", "november", "december"), 1)}
+MONTH_RX = r"(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sep(?:t(?:ember)?)?|" \
+           r"oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)"
+DATE_RX = re.compile(rf"\b(?:{MONTH_RX}\.?\s+(\d{{1,2}})(?:st|nd|rd|th)?|(\d{{1,2}})(?:st|nd|rd|th)?\s+(?:of\s+)?{MONTH_RX})\b"
+                     rf"(?:,?\s+(20\d\d))?", re.I)
+DEADLINE_RX = re.compile(r"\b(until|till|by|before|deadline|closes?|closing|ends?|ending|open|left|due|last day|"
+                         r"remaining|to go|submit|register|apply)\b", re.I)
+COUNTDOWN_RX = re.compile(r"\b(\w+|\d+)\s+(days?|hours?|weeks?)\s+(left|to go|remaining)\b", re.I)
+
+
+def passed_deadline(p: dict) -> str:
+    """'' or why the post's own words are wrong on the day it goes out, with no AI needed: a deadline date in it
+    has passed by then, or a countdown ("four days left") written on another day. 19 Nov: Sunday's poll said
+    "only four days left... open until November 20"."""
+    out = dt.datetime.fromisoformat(p["publish_at"]).date()
+    written = dt.datetime.fromisoformat(p["drafted_at"]).date() if p.get("drafted_at") else None
+    texts = [str(v) for k, v in p.items() if isinstance(v, str) and k in {
+        "message", "impact", "action", "caption", "question", "line", "verdict", "fact", "claim", "promise",
+        "reality", "when", "headline"}] + [str(b) for b in p.get("beats") or []]
+    for text in texts:
+        for sentence in re.split(r"(?<=[.!?])\s+|\n", text):
+            if COUNTDOWN_RX.search(sentence) and written != out:
+                return f"a countdown written on another day: \"{COUNTDOWN_RX.search(sentence).group(0)}\""
+            if not DEADLINE_RX.search(sentence):
+                continue
+            for m in DATE_RX.finditer(sentence):
+                month = MONTHS[next(k for k in MONTHS if k.startswith((m.group(1) or m.group(4)).lower()[:3]))]
+                day = int(m.group(2) or m.group(3))
+                try:
+                    when = dt.date(int(m.group(5) or out.year), month, day)
+                except ValueError:
+                    continue
+                if when < out and (out - when).days < 200:   # a date long past is history, not a deadline
+                    return f"the deadline in it ({m.group(0).strip()}) has passed by {out:%A %d %B}"
+    return ""
+
+
 def freshness_check(dry_run: bool = False) -> list[str]:
     """Posts written ahead get one check against today's news ~a day before they go out. Outdated ones are held
     (never published stale) and redrafted by the run that follows, so a fresh card reaches you in time."""
@@ -1522,6 +1560,16 @@ def freshness_check(dry_run: bool = False) -> list[str]:
         data = json.loads(f.read_text(encoding="utf-8"))
         changed = False
         for p in data["posts"]:
+            if p["status"] in {"approved", "awaiting"} and dt.datetime.fromisoformat(p["publish_at"]) > now() \
+                    and not p.get("hot") and (why := passed_deadline(p)):
+                if not dry_run:   # certain from the words alone: no model asked, no window waited for
+                    p["status"] = "needs_human"
+                    p.setdefault("guard", {}).setdefault("errors", []).append(f"outdated: {why}")
+                    changed = True
+                    _notify(f"⏱ <b>{_esc(p['id'])}</b> was held: {_esc(why)}. "
+                            "A fresh version is being written now and comes back for ✅.")
+                held.append(p["id"])
+                continue
             if p["status"] not in {"approved", "awaiting"} or p.get("hot") or p.get("n") or p.get("fresh_checked") \
                     or p.get("template") in {"tazama", "scene", "chart"}:
                 continue
