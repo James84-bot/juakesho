@@ -95,29 +95,43 @@
 @keyframes wipec { 0% { clip-path: inset(0 100% 0 0); } 50% { clip-path: inset(0 0 0 0); } 100% { clip-path: inset(0 0 0 100%); } }
 .wipe { animation-name: wipec !important; }
 {% if look == 'glass' %}
-/* GLASS: the story's own photo, blurred, fills the screen; the sharp photo sits in a frosted frame and the line
-   on a frosted panel. Every Reel takes its colours from its own photo, the red marker stays our signature. */
+/* OPEN: the story's own photo, blurred, colours the whole screen; the sharp pictures run edge to edge under
+   Instagram's top bar, as tall as they allow, and the lines sit big on the open ground below them: no framed card,
+   no panel, so the picture and the words fill the frame instead of empty background. Footage lines run full screen. */
+{% set OT = 250 %}
 .shot { background: #0E0C0B; }
 .shot .gbg { position: absolute; inset: -140px; background-size: cover; background-position: center;
-  filter: blur(46px) saturate(1.45) brightness(.6); transform: scale(1.12); }
+  filter: blur(46px) saturate(1.4) brightness(.5); transform: scale(1.12); }
 .gtint { position: absolute; inset: 0; pointer-events: none;
-  background: radial-gradient(120% 70% at 18% 8%, rgba(196, 17, 26, .20), transparent 60%),
-              linear-gradient(to bottom, rgba(14, 12, 11, .28), rgba(14, 12, 11, .04) 40%, rgba(14, 12, 11, .5)); }
-.gl { background: linear-gradient(135deg, rgba(255, 255, 255, .20), rgba(255, 255, 255, .06));
-  border: 1.5px solid rgba(255, 255, 255, .34); box-shadow: 0 24px 70px rgba(0, 0, 0, .35), inset 0 1px 0 rgba(255, 255, 255, .45);
-  backdrop-filter: blur(28px) saturate(1.5); -webkit-backdrop-filter: blur(28px) saturate(1.5); }
-.shot .card { border-radius: 44px; border: 2px solid rgba(255, 255, 255, .42); box-shadow: 0 40px 90px rgba(0, 0, 0, .5); background: rgba(255, 255, 255, .06); }
-.shot .card.fit { border: 0; box-shadow: none; background: transparent; }
-.shot .card.fit img { border-radius: 36px; border: 2px solid rgba(255, 255, 255, .42); box-shadow: 0 30px 70px rgba(0, 0, 0, .45); }
-.shot .cr { top: {{ 300 + CH - 50 }}px; right: calc(var(--m) + 20px); padding: 9px 14px; border-radius: 999px; z-index: 2;
-  color: #fff; font: 600 18px/1 "Inter"; background: rgba(14, 12, 11, .38); border: 1px solid rgba(255, 255, 255, .3); }
-.gpanel { position: absolute; left: var(--m); right: var(--m); top: {{ 300 + CH + 44 }}px; bottom: 300px; border-radius: 48px; z-index: 2; }
-.stage { left: calc(var(--m) + 56px) !important; right: calc(var(--m) + 56px) !important; top: {{ 300 + CH + 44 + 50 }}px !important;
-  bottom: 350px !important; align-items: center !important; }
-.beat .m { background: var(--shuka-500); border-radius: .08em; }
-.wipe { border-radius: 44px; }
+  background: linear-gradient(to bottom, rgba(14, 12, 11, .35), rgba(14, 12, 11, .1) 30%, rgba(14, 12, 11, .45) 70%, rgba(14, 12, 11, .7)); }
+.shot .card { left: 0; top: {{ OT }}px; width: {{ CW }}px; height: {{ CH }}px; border-radius: 0; background: transparent;
+  box-shadow: 0 34px 80px rgba(0, 0, 0, .45); }
+.shot .card.fit { box-shadow: none; }
+.shot .card.fit img { border-radius: 0; box-shadow: 0 30px 70px rgba(0, 0, 0, .45); }
+/* our red rule under the picture, the one brand mark besides the marker */
+.shot .card::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: var(--shuka-500); }
+.shot .card.fit::after { left: var(--fx, 0); right: var(--fr, 0); }
+.shot .cr { top: {{ OT + CH - 46 }}px; right: 26px; z-index: 2; color: rgba(255, 255, 255, .9); font: 600 19px/1 "Inter";
+  text-shadow: 0 1px 8px rgba(0, 0, 0, .85); }
+.stage { left: var(--m) !important; right: var(--m) !important; top: {{ OT + CH + 60 }}px !important;
+  bottom: 340px !important; align-items: center !important; }
+.beat { text-shadow: 0 4px 24px rgba(0, 0, 0, .55) !important; }
+.beat .m { background: var(--shuka-500); border-radius: .08em; text-shadow: none; }
+.wipe { top: {{ OT }}px !important; left: 0 !important; width: {{ CW }}px !important; border-radius: 0; }
+{% if broll %}
+/* over moving footage the lines need a darker ground: it fades in only on the footage lines */
+.fshade { position: absolute; left: 0; right: 0; top: {{ OT + CH - 120 }}px; bottom: 0; z-index: 2; pointer-events: none;
+  background: linear-gradient(to bottom, rgba(14, 12, 11, 0), rgba(14, 12, 11, .62) 30%, rgba(14, 12, 11, .78)); opacity: 0;
+  animation: vis0 {{ BT.t + 1 }}s linear both; }
 {% endif %}
 {% endif %}
+{% endif %}
+/* a quote line: the speaker's own words, under a big red opening mark, with the name the report gives them */
+.beat.q { font-weight: 800; letter-spacing: -.02em; line-height: 1.08; }
+.beat.q .qm { display: block; font: 900 1.9em/0.62 "Inter Tight"; color: var(--shuka-500); margin: 0 0 .06em -.04em; }
+.beat.q .who { display: flex; align-items: center; gap: 16px; margin-top: .55em; font: 800 34px/1.1 "Inter Tight";
+  letter-spacing: .01em; color: rgba(255, 255, 255, .92); }
+.beat.q .who::before { content: ""; width: 44px; height: 6px; background: var(--shuka-500); flex: none; }
 .beat { grid-area: 1 / 1; font-family: "Inter Tight", sans-serif; font-weight: 900; letter-spacing: -.03em; line-height: 1.02;
   color: #fff; text-shadow: 0 3px 28px rgba(0, 0, 0, .45); opacity: 0; }
 .beat .t { display: inline-block; margin-right: .22em; }
@@ -142,10 +156,11 @@
 {% endfor %}
 {% endif %}
 {% for b in beats %}{% set s = BT.starts[loop.index0] %}{% set d = BT.durs[loop.index0] %}
-.b{{ loop.index }} { font-size: {{ fitw(b, 820, 4, 92) if look == 'glass' and card else fitw(b, 860, 4, 96 if photo_band else 100 if card else 132) }}px;
+{% set said = quote_beat(b) %}
+.b{{ loop.index }} { font-size: {{ fitw(said[1], 880, 5, 92) if said else fitw(b, 900, 4, 116) if look == 'glass' and card else fitw(b, 860, 4, 96 if photo_band else 100 if card else 132) }}px;
   animation: {{ 'stay .15s linear both' if loop.last else 'show ' ~ d ~ 's linear both' }}; animation-delay: {{ s }}s; }
 {% endfor %}
-.beat .t { animation: slam .22s cubic-bezier(.2, .9, .25, 1.1) both; }
+.beat .t, .beat.q .qm, .beat.q .who { animation: slam .22s cubic-bezier(.2, .9, .25, 1.1) both; }
 /* between lines: a fast brand-red wipe crosses the frame, and the photo cuts to its next shot behind it */
 .wipe { position: absolute; top: 0; bottom: 0; left: 0; width: 100%; z-index: 4; background: var(--shuka-600);
   translate: -101% 0; pointer-events: none; }
@@ -153,7 +168,7 @@
 {% for b in beats %}{% if not loop.first %}.w{{ loop.index }} { animation: wipe .26s cubic-bezier(.6, 0, .4, 1) {{ '%.2f' % (BT.starts[loop.index0] - 0.13) }}s both; }
 {% endif %}{% endfor %}
 /* the first line is fully on screen from the first frame: it is the thumbnail and the reason to stay */
-.b1, .b1 .t { animation: none !important; opacity: 1; }
+.b1, .b1 .t, .b1 .qm, .b1 .who { animation: none !important; opacity: 1; }
 .b1 { animation: {{ 'none' if beats|length == 1 else 'show ' ~ BT.durs[0] ~ 's linear both' }} !important; }
 {% endblock %}
 {% block top %}<img src="{{ logo_on_dark }}" alt="Kenya on Record">{% endblock %}
@@ -165,11 +180,13 @@
     {% elif photo_band %}<div class="blur" style="background-image: url('{{ sh.uri }}')"></div><div class="box"><img class="cam" src="{{ sh.uri }}" alt=""></div>
     {% else %}<div class="full cam" style="background-image: url('{{ sh.uri }}')"></div>{% endif %}
   </div>{% endfor %}
-  {% if card and look == 'glass' %}<div class="gpanel gl"></div>{% endif %}
+  {% if card and look == 'glass' and broll %}<div class="fshade"></div>{% endif %}
   {% for b in beats %}{% if not loop.first %}<i class="wipe w{{ loop.index }}"></i>{% endif %}{% endfor %}
   <div class="stage">
     {% for b in beats %}{% set s = BT.starts[loop.index0] %}
-    {% set first = loop.first %}<div class="beat b{{ loop.index }}">{% for w, m, j in beat_marks(b) %}{% set at = s + loop.index0 * 0.035 %}<span class="t{{ ' m' if m }}{{ ' j' if j }}" style="animation-delay: {{ '%.2f' % at }}s"{% if m and counts(w) and not first %} data-count data-t0="{{ '%.2f' % (at + 0.05) }}" data-t1="{{ '%.2f' % (at + 0.95) }}"{% endif %}>{{ w }}</span>{% endfor %}</div>
+    {% set first = loop.first %}{% set said = quote_beat(b) %}
+    {% if said %}<div class="beat b{{ loop.index }} q"><span class="qm" style="animation-delay: {{ '%.2f' % s }}s">“</span>{% for w, m, j in beat_marks(said[1]) %}{% set at = s + loop.index0 * 0.035 %}<span class="t" style="animation-delay: {{ '%.2f' % at }}s">{{ w }}</span>{% endfor %}<div class="who" style="animation-delay: {{ '%.2f' % (s + 0.3) }}s">{{ said[0] }}</div></div>
+    {% else %}<div class="beat b{{ loop.index }}">{% for w, m, j in beat_marks(b) %}{% set at = s + loop.index0 * 0.035 %}<span class="t{{ ' m' if m }}{{ ' j' if j }}" style="animation-delay: {{ '%.2f' % at }}s"{% if m and counts(w) and not first %} data-count data-t0="{{ '%.2f' % (at + 0.05) }}" data-t1="{{ '%.2f' % (at + 0.95) }}"{% endif %}>{{ w }}</span>{% endfor %}</div>{% endif %}
     {% endfor %}
   </div>
   {% if chart %}{% set top = chart | map(attribute='rise') | max %}

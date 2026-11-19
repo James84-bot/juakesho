@@ -106,8 +106,9 @@ if __name__ == "__main__":
 
 
 class GlassLook(unittest.TestCase):
-    """brand.json reel_look "glass": every photo Reel uses the framed layout, each shot has its own blurred
-    background, and the lines sit on the frosted panel; without it, the plain dark card is unchanged."""
+    """brand.json reel_look "glass" is the open layout (19 Nov, "use the free spaces, not just cards"): each shot has
+    its own blurred background, the picture runs edge to edge under Instagram's top bar, and the lines sit big on
+    the open ground below it, with no framed card and no panel; the plain dark card is unchanged."""
 
     def html(self, look):
         import render
@@ -120,11 +121,27 @@ class GlassLook(unittest.TestCase):
                     "photo_file": str(big), "photo_credit": "Photo: X", "look": look}
             return render.build_html(render.make_env(), post, motion=True)
 
-    def test_glass_frames_every_photo(self):
+    def test_glass_runs_the_picture_edge_to_edge(self):
         h = self.html("glass")
         self.assertIn('class="gbg"', h)
-        self.assertIn('class="gpanel gl"', h)
         self.assertIn('class="card', h)
+        self.assertNotIn("gpanel", h)                                    # no frosted panel: the words sit on the ground
+        self.assertIn(".shot .card { left: 0; top: 250px; width: 1080px; height: 760px;", h)   # a big picture: 760 tall
+        self.assertIn("top: 1070px !important;", h)                       # the lines start right under it
+
+    def test_open_height_follows_the_pictures(self):
+        import render
+        from PIL import Image
+        with tempfile.TemporaryDirectory() as tmp:
+            def pic(name, size):
+                f = Path(tmp) / name
+                Image.new("RGB", size, (90, 60, 40)).save(f)
+                return f
+            self.assertEqual(render.open_height([pic("a.jpg", (1600, 900)), pic("b.jpg", (1200, 675))], 1080), 760)
+            self.assertEqual(render.open_height([pic("c.jpg", (700, 350))], 1080), 560)   # never enlarged past 1.6x
+            self.assertEqual(render.open_height([pic("d.jpg", (600, 250))], 1080), 540)   # floor: 2:1
+            self.assertIsNotNone(render.card_fit(pic("e.jpg", (600, 300)), 1080, 560, render.OPEN_SOFT))   # too small: shown whole
+            self.assertIsNone(render.card_fit(pic("f.jpg", (1200, 675)), 1080, 760, render.OPEN_SOFT))
 
     def test_a_post_can_ask_for_the_plain_card(self):
         h = self.html("plain")

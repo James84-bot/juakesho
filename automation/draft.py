@@ -440,6 +440,9 @@ SOUND HUMAN (Kenyans scroll past anything that smells of AI)
   "elevate", "pivotal", "crucial", "harness", "foster", "here's the thing", "let's dive in". The checker blocks these.
 - Max one emoji per caption, often none. Hashtags only at the end, max three, and only tags people already use
   (#KRA, #FKF, #CostOfLiving); never invent one (#JimiReclaimsTheRecord, #KRAOneTrillion read as made by a machine).
+- Quotation marks hold only a person's exact words as a report printed them. Never put your own wording, a summary
+  or a paraphrase in quotation marks, and never invent a quote: the system adds the speakers' real words from the
+  reports and rejects any quote that is not in them word for word.
 - Every line carries something only THIS story has: a number, a name, a place, a date. A line that could sit under
   any story is machine filler: "Graft slows down our economic growth." "Tax deductions affect millions of workers
   across the country." "Every business and household budget waits for the numbers." "Zero new cases keep public
@@ -1399,6 +1402,57 @@ def has_content(p: dict) -> bool:
     return bool(p.get("message") or p.get("line") or p.get("headline") or p.get("beats") or p.get("caption"))
 
 
+VOICE_RULES = """You edit the script (beats) of a Kenyan news Reel so it delivers the message as it was said.
+You are given the script and the direct quotes its reports printed, each with the speaker the report names.
+Rework the script so ONE beat gives the most telling quote in the speaker's own words, written exactly as:
+  Speaker: “exact words”
+- Speaker is the name as the report gives it, plus a short role when the report gives one (e.g. "Ruto", "CS Kindiki",
+  "MP Kimani Ichung'wah"). No other text on that beat.
+- The words are copied EXACTLY as printed: a run of consecutive words from ONE quote. You may start or stop inside the
+  quote; never change, add, translate, or join words, never use "..." or an ellipsis. At most 24 words.
+- Keep 3 or 4 beats. Beat 1 stays the news in one plain sentence. The last beat stays the question to the viewer.
+  The quote beat goes where the speaker's words carry the story (usually beat 2).
+- Choose the quote that says the most in the fewest words. If none of the quotes is about this story, change nothing.
+Return ONLY JSON: {"beats": ["...", "..."], "quote_used": true or false}"""
+
+
+def add_voices(posts: list[dict], get=None, call=None) -> list[dict]:
+    """News posts deliver people's own words: the quotes printed in each post's reports are collected (quotes.py)
+    and kept on the post (`quotes`, which guard.py checks every quoted span against), and the writer puts the most
+    telling one into the script, word for word. A post whose reports quote nobody is left as it was."""
+    import quotes
+    call = call or call_claude
+    for p in posts:
+        if not p.get("hot") or not isinstance(p.get("beats"), list) or not p.get("source_links"):
+            continue
+        try:
+            found = quotes.collect(p, get=get)
+        except Exception as e:
+            print(f"  quotes for {p.get('id')} not collected: {e}")
+            continue
+        p["quotes"] = found
+        if not found:
+            print(f"  quotes for {p.get('id')}: none in its reports")
+            continue
+        listed = "\n".join(f'- {q["speaker"]} ({q["outlet"]}): “{q["text"]}”' for q in found)
+        try:
+            got = extract_json(call(VOICE_RULES, f"SCRIPT:\n{json.dumps(p['beats'], ensure_ascii=False)}\n\nQUOTES:\n{listed}",
+                                    max_tokens=1500))
+        except Exception as e:
+            print(f"  quote pass for {p.get('id')} skipped: {e}")
+            continue
+        new = got.get("beats")
+        if not got.get("quote_used") or not isinstance(new, list) or not 3 <= len(new) <= 4:
+            print(f"  quote pass for {p.get('id')}: no quote fits the story")
+            continue
+        if quotes.problem(" ".join(map(str, new)), found):   # not word for word: the old script stands
+            print(f"  quote pass for {p.get('id')} dropped: {quotes.problem(' '.join(map(str, new)), found)}")
+            continue
+        print(f"  quote for {p.get('id')}: {next((b for b in new if guard.quote_beat(b)), '')[:100]}")
+        p["beats"] = new
+    return posts
+
+
 def repair(week_label: str, slots: list[dict], lanes: dict, posts: list[dict], reports: list) -> tuple[list, list]:
     """Sends failing posts back with the exact errors (e.g. "'cta' is 53 chars (max 50)"), up to REPAIR_ROUNDS.
     A post that still fails is left for a human; nothing broken is ever sent for approval."""
@@ -1524,6 +1578,8 @@ def draft_week(week_label: str, slots: list[dict], lanes: dict, mock: bool = Fal
         result["scripts"] = write_scripts(week_label, result["posts"])
 
     posts = _merge(slots, result.get("posts", []))
+    if not mock:
+        posts = add_voices(posts)   # people's exact words from the reports, before the checks
     reports = guard.check_all(posts)
     if not mock:
         posts, reports = repair(week_label, slots, lanes, posts, reports)

@@ -1632,6 +1632,31 @@ def graph_get(path: str, fields: dict) -> dict:
     return http("GET", f"https://graph.facebook.com/{version}/{path}?{q}")
 
 
+def quote_check(n: int = 6) -> bool:
+    """Reads only: for our newest news posts, the quotes their reports print (speaker and exact words), and the
+    script the quote pass would make from them (nothing is saved or sent)."""
+    import copy
+    import draft as drafter
+    found = []
+    for f in sorted(WEEKS.glob("*.json"))[-2:]:
+        found += [p for p in json.loads(f.read_text(encoding="utf-8"))["posts"]
+                  if p.get("hot") and p.get("source_links") and isinstance(p.get("beats"), list)]
+    found.sort(key=lambda p: p["publish_at"], reverse=True)
+    any_quote = False
+    for p in found[:n]:
+        post = copy.deepcopy(p)
+        drafter.add_voices([post])
+        qs = post.get("quotes") or []
+        any_quote = any_quote or bool(qs)
+        log(f"quotecheck {p['id']}: {len(qs)} quote(s) in {len(p['source_links'])} report(s)")
+        for q in qs:
+            log(f"    {q['speaker']} ({q['outlet']}): “{q['text'][:150]}”")
+        if post["beats"] != p["beats"]:
+            for b in post["beats"]:
+                log(f"    beat: {b}")
+    return bool(found)
+
+
 def dup_check() -> bool:
     """Reads (never posts or deletes) our newest items on Instagram, the Facebook Page and YouTube, prints them,
     and flags any text that appears more than once on the same platform, with the time of each copy."""
@@ -2871,7 +2896,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -3068,6 +3093,8 @@ def _main(argv: list[str] | None = None) -> int:
         process_clips(dry_run=a.dry_run)
     if a.command == "swapwork" and not a.dry_run:
         swapwork()
+    if a.command == "quotecheck":   # the quotes in our newest news posts' reports, and the script with one in it
+        return 0 if quote_check() else 1
     if a.command == "audiocheck":   # Kenyan trending songs, and what Instagram's licensed library has of them
         import kenyan_sound
         return 0 if kenyan_sound.check(graph_get, log) else 1

@@ -467,6 +467,15 @@ def jargon(text: str) -> list[str]:
     return hard + us
 
 
+QUOTE_BEAT = re.compile(r"^\s*([^:“\"]{2,60}?):\s*[“\"]([^“”\"]+)[”\"]\s*\.?\s*$")
+
+
+def quote_beat(line: str) -> tuple[str, str] | None:
+    """A beat that delivers someone's words: 'Speaker: “exact words”' → (speaker, words)."""
+    m = QUOTE_BEAT.match(str(line or "").replace("*", ""))
+    return (m.group(1).strip(), m.group(2).strip()) if m else None
+
+
 def fragment(line: str) -> str:
     """Why a Reel beat reads as a fragment or a meme caption ('' when it is a proper sentence). Our readers are
     informed; half-sentences and trailing dots read as careless."""
@@ -482,6 +491,11 @@ def fragment(line: str) -> str:
     if re.search(r"\?\s+\S", text):
         return "is a teaser question followed by its answer"
     return ""
+
+
+def _ours(text: str) -> str:
+    """Our own words only: what a speaker said, inside quotation marks, is theirs (we never reword a quote)."""
+    return re.sub(r"[“\"][^“”\"]{3,}[”\"]", " ", str(text or ""))
 
 
 def check(post: dict) -> Report:
@@ -686,8 +700,8 @@ def check(post: dict) -> Report:
         place_words = {w.lower() for w in re.findall(r"[A-Za-z']{4,}", str(post.get("place") or ""))}
         if place_words and not place_words & {w.lower() for w in re.findall(r"[A-Za-z']{4,}", q)}:
             rep.errors.append("Kenya showcase: `photo_query` must name the same place as `place`")
-    hard = jargon(" ".join(str(post.get(k) or "") for k in ("line", "message", "headline", "title", "promise", "reality",
-                                                             "what", "why", "truth", "fact")) + " " + " ".join(map(str, post.get("beats") or [])))
+    hard = jargon(_ours(" ".join(str(post.get(k) or "") for k in ("line", "message", "headline", "title", "promise", "reality",
+                                                                   "what", "why", "truth", "fact")) + " " + " ".join(map(str, post.get("beats") or []))))
     if hard and tpl != "tazama":
         rep.errors.append("use everyday words Kenyans use: " + "; ".join(hard[:4]))
     beats = post.get("beats")
@@ -697,6 +711,11 @@ def check(post: dict) -> Report:
         else:
             for i, b in enumerate(beats):
                 words = len(str(b).replace("*", "").split())
+                said = quote_beat(b) if isinstance(b, str) else None
+                if said:   # someone's exact words: they get more room, and their sentence form is theirs
+                    if len(b.replace("*", "")) > 170 or words > 26:
+                        rep.errors.append(f"beats[{i}] is too long: a quote line holds at most 24 of the speaker's words")
+                    continue
                 if not isinstance(b, str) or len(b.replace("*", "")) > 72 or words > 12:
                     rep.errors.append(f"beats[{i}] is too long: max 12 words / 72 characters")
                 elif str(b).count("*") % 2:
@@ -716,9 +735,15 @@ def check(post: dict) -> Report:
         if re.search(pattern, low):
             rep.errors.append(f"banned topic: {topic}")
     for w in NEVER_WORDS:
-        if re.search(rf"(?<![a-z]){re.escape(w)}", low):
+        if re.search(rf"(?<![a-z]){re.escape(w)}", _ours(low)):
             rep.errors.append(f"sounds AI-written: '{w}' (say it the way a Kenyan would)")
-    if "\u2014" in text or " \u2013 " in text:
+    if post.get("hot") or post.get("quotes"):   # a news post's quotes are the speakers' exact words, from the report
+        import quotes
+        said = quotes.problem(" ".join(map(str, post.get("beats") or [])) + " " + str(post.get("caption") or ""),
+                              post.get("quotes") or [])
+        if said:
+            rep.errors.append(f"quote: {said}")
+    if "\u2014" in _ours(text) or " \u2013 " in _ours(text):
         rep.errors.append("sounds AI-written: em dash; use a full stop or a comma")
     if re.search(TRIBE_TALK, low) and tpl not in CALLOUT_TEMPLATES:
         rep.errors.append("tribe only comes up when we call out divisive politics (Set It Straight, Sauti, Promise Tracker)")

@@ -168,7 +168,9 @@ BEAT = {"min": 1.5, "max": 3.4, "base": 0.9, "per_word": 0.3}   # seconds on scr
 def beat_seconds(text: str) -> float:
     """How long one Reel line stays up: enough to read it twice at a fast scroll."""
     n = len(plain(text).split())
-    return round(min(BEAT["max"], max(BEAT["min"], BEAT["base"] + BEAT["per_word"] * n)), 2)
+    import guard
+    top = 5.5 if guard.quote_beat(text) else BEAT["max"]   # someone's exact words are longer: time to read them
+    return round(min(top, max(BEAT["min"], BEAT["base"] + BEAT["per_word"] * n)), 2)
 
 
 def beat_marks(text: str) -> list[tuple[str, bool, bool]]:
@@ -260,7 +262,9 @@ def make_env() -> Environment:
     env.filters["nb"] = nobreak
     env.filters["mark"] = mark
     env.filters["plain"] = plain
-    env.globals.update(beat_seconds=beat_seconds, beat_tokens=beat_tokens, beat_marks=beat_marks, counts=counts)
+    import guard as _guard
+    env.globals.update(beat_seconds=beat_seconds, beat_tokens=beat_tokens, beat_marks=beat_marks, counts=counts,
+                       quote_beat=_guard.quote_beat)
     env.globals.update(GLOW=Markup(bk.GLOW_DEFS), comic_layout=comic_layout, C=bk.C, ON=bk.ON, fit=fit, fitw=fitw, radius=radius, brand=bk.BRAND)
     return env
 
@@ -377,8 +381,11 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
             ctx["photo_band"] = 0
             ctx["card"] = ctx["look"] == "glass" or any(not fills_frame(f, W, H) for f in paths)   # one layout for all the pictures
             ctx["card_w"], ctx["card_h"] = card_size(W)
+            if ctx["look"] == "glass":   # the pictures run edge to edge, as tall as they allow (see open_height)
+                ctx["card_w"], ctx["card_h"] = W, open_height(paths, W)
             for sh, f in zip(ctx["shots"], paths):
-                sh["fit"] = card_fit(f, *card_size(W)) if ctx["card"] else None
+                sh["fit"] = (card_fit(f, ctx["card_w"], ctx["card_h"], OPEN_SOFT) if ctx["look"] == "glass"
+                             else card_fit(f, *card_size(W))) if ctx["card"] else None
             beats_n = len(post.get("beats") or [])
             ctx["seq"] = (match_shots(post.get("beats") or [], [str((m or {}).get("title") or "") for m in meta])
                           if not ctx["broll"] and len(paths) > 1 else shot_sequence(beats_n, len(paths), ctx["broll"]))
@@ -457,7 +464,28 @@ def card_size(width: int) -> tuple[int, int]:
     return w, round(w * 3 / 4)
 
 
-def card_fit(path: Path, cw: int, ch: int) -> dict | None:
+OPEN_TOP, OPEN_MIN, OPEN_MAX = 250, 540, 760   # the open layout's picture: under Instagram's top bar, 2:1 to ~10:7
+OPEN_SOFT = 1.6   # the open layout enlarges a picture at most this much (a 700px photo to the full 1080 width)
+
+
+def open_height(paths: list, width: int) -> int:
+    """How tall the pictures run in the open layout: edge to edge across the frame and as tall as every one of the
+    story's pictures can be cropped to without being enlarged more than OPEN_SOFT (a 1600x900 or 1200x675 photo
+    fills 1080x760; a 700x350 one 1080x560), so pictures, not empty background, fill the top of the frame. One
+    height for every picture: the lines under it never jump."""
+    from PIL import Image
+    tall = []
+    for f in paths:
+        try:
+            with Image.open(f) as im:
+                w, h = im.size
+            tall.append(h * OPEN_SOFT)
+        except Exception:
+            continue
+    return int(max(OPEN_MIN, min(OPEN_MAX, min(tall) if tall else OPEN_MIN)))
+
+
+def card_fit(path: Path, cw: int, ch: int, most: float = None) -> dict | None:
     """None: the picture fills the card (cropped to 4:3) without being enlarged much. Otherwise the size and place
     of the whole picture in the card, so a small one (700x350) is enlarged 1.3x instead of 2x: centred across,
     sitting on the card's bottom edge, so its credit stays right under it and the lines don't move."""
@@ -467,9 +495,9 @@ def card_fit(path: Path, cw: int, ch: int) -> dict | None:
             w, h = im.size
     except Exception:
         return None
-    if max(cw / w, ch / h) <= CARD_FILL_MAX:
+    if max(cw / w, ch / h) <= (most or CARD_FILL_MAX):
         return None
-    s = min(cw / w, ch / h)
+    s = min(cw / w, ch / h, most) if most else min(cw / w, ch / h)   # `most`: never enlarged past it
     fw, fh = round(w * s), round(h * s)
     return {"w": fw, "h": fh, "x": (cw - fw) // 2, "y": ch - fh}
 
