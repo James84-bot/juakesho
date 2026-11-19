@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-11-19T14:22:20.751122+00:00",
+  "fetched": "2026-11-19T14:42:53.727727+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "fraud",
-      "traffic": "2000+",
+      "traffic": "5000+",
       "news": [
         {
           "title": "SACCOs warned as financial fraud hits Sh8.39bn",
@@ -17,9 +17,31 @@
           "source": "FF News"
         },
         {
-          "title": "Central Indiana men charged in connection with alleged $600M Ponzi scheme",
-          "url": "https://www.theindianalawyer.com/articles/central-indiana-men-charged-in-connection-with-alleged-600m-ponzi-scheme",
-          "source": "The Indiana Lawyer"
+          "title": "EU prosecutors charge one person over alleged rail funding fraud in Bulgaria",
+          "url": "https://bnrnews.bg/en/post/560623/eu-prosecutors-charge-one-person-over-alleged-rail-funding-fraud-in-bulgaria",
+          "source": "БНР Новини"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "gta vi game",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Grand Theft Auto VI review – gaming’s most depraved world is now also its greatest love story",
+          "url": "https://www.theguardian.com/games/2026/nov/18/grand-theft-auto-vi-gta-6-review-playstation-rockstar",
+          "source": "The Guardian"
+        },
+        {
+          "title": "‘Grand Theft Auto VI’ is an astonishing American epic",
+          "url": "https://www.washingtonpost.com/entertainment/video-games/2026/11/18/grand-theft-auto-vi-is-an-astonishing-american-epic/",
+          "source": "The Washington Post"
+        },
+        {
+          "title": "G.T.A. 6 Review: This Release Will Steal Your Heart",
+          "url": "https://www.nytimes.com/2026/11/18/arts/grand-theft-auto-vi-review.html",
+          "source": "The New York Times"
         }
       ]
     },
@@ -42,28 +64,6 @@
           "title": "The Future Is Everyone",
           "url": "https://www.eviemagazine.com/post/the-future-is-everyone",
           "source": "Evie Magazine"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "gta vi game",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Grand Theft Auto VI review – gaming’s most depraved world is now also its greatest love story",
-          "url": "https://www.theguardian.com/games/2026/nov/18/grand-theft-auto-vi-gta-6-review-playstation-rockstar",
-          "source": "The Guardian"
-        },
-        {
-          "title": "‘Grand Theft Auto VI’ is an astonishing American epic",
-          "url": "https://www.washingtonpost.com/entertainment/video-games/2026/11/18/grand-theft-auto-vi-is-an-astonishing-american-epic/",
-          "source": "The Washington Post"
-        },
-        {
-          "title": "Grand Theft Auto 6 released after 13-year wait for gamers around the world - follow live",
-          "url": "https://www.bbc.com/news/live/c60rkg21dl22t",
-          "source": "BBC"
         }
       ]
     },
@@ -167,14 +167,36 @@
           "source": "BBC"
         },
         {
+          "title": "Mudryk accuses Ukraine over his doping: \"They gave us pills before matches\"",
+          "url": "https://www.besoccer.com/new/with-ukraine-a-nutritionist-brought-us-pills-before-matches-1442315",
+          "source": "BeSoccer Livescore"
+        },
+        {
           "title": "Mudryk says Xabi Alonso sent him to Tottenham to play and wants him back at Chelsea",
           "url": "https://www.livescore.com/en/news/football/club-world-cup/mudryk-says-xabi-alonso-sent-him-to-tottenham-to-play-and-wants-him-back-at-chelsea-chelsea-news/",
           "source": "LiveScore"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "arsenal news",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Seven players set to miss Newcastle vs Arsenal as Mikel Arteta suffers fresh injury blow",
+          "url": "https://www.football.london/arsenal-fc/news/newcastle-united-arsenal-injury-news-34934228",
+          "source": "Football London"
         },
         {
-          "title": "Mykhailo Mudryk Reveals Who Is to Blame for Doping Ban That Ruined Chelsea Career",
-          "url": "https://forzafootball.com/news/mykhailo-mudryk-reveals-who-is-to-blame-for-doping-ban-that-ruined-chelsea-career-159486908",
-          "source": "Forza Football"
+          "title": "Arsenal injury update: Zubimendi, Saliba and Saka latest return dates",
+          "url": "https://www.standard.co.uk/sport/football/arsenal-fc-injury-update-zubimendi-saliba-saka-latest-news-return-dates-b1305436.html",
+          "source": "London Evening Standard"
+        },
+        {
+          "title": "Spanish media says Arsenal's Mikel Merino 'disappeared' against England in ruthless 4/10 review",
+          "url": "https://www.livescore.com/en/news/football/premier-league/spanish-media-says-arsenals-mikel-merino-disappeared-against-england-in-ruthless-410-review-pain-in-the-arsenal/",
+          "source": "LiveScore"
         }
       ]
     }
@@ -183,10 +205,6 @@
     {
       "title": "farmer",
       "why": "unsafe: 'death'"
-    },
-    {
-      "title": "lakers vs jazz",
-      "why": "unsafe: 'shot'"
     }
   ],
   "errors": {}

@@ -1738,13 +1738,160 @@
       "auto": true,
       "decided_at": "2026-11-19T16:48:39.385199+03:00",
       "photo_checked": "2026-11-19T17:21:37.252712+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1119b1743",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Opposition leaders",
+      "line": "Opposition leaders *walked out* of an IEBC meeting over disputed agenda and unfair treatment.",
+      "fact": "Opposition politicians accused IEBC of trickery after ruling coalition leaders were invited to speak first.",
+      "source": "Tuko News, 2026-11-19, Capital FM News, 2026-11-19",
+      "photo_query": "IEBC voter registration Nairobi",
+      "event_query": "IEBC political parties meeting Nairobi",
+      "message": "Opposition leaders walked out of IEBC talks over alleged bias and disputed meeting procedures.",
+      "action": "Follow IEBC public notices on stakeholder consultations ahead of 2027.",
+      "beats": [
+        "Opposition leaders *walked out* of an IEBC meeting on 2027 elections.",
+        "Kalonzo: “Today, we did not find it. So we have walked out”",
+        "The standoff began when *ruling coalition* speakers took the podium.",
+        "Do you trust IEBC to host *fair talks* for all parties?"
+      ],
+      "caption": "Opposition leaders walked out of IEBC talks today over disputed meeting procedures. IEBC must publish clear ground rules for all stakeholder consultations immediately. Do you trust IEBC to manage 2027 election talks fairly? 👇🏾\n\n#IEBC #KenyaOnRecord",
+      "who": "IEBC Commissioners and Political Parties",
+      "where": "Nairobi",
+      "when": "19 Nov 2026",
+      "side": "both",
+      "tone": "criticism",
+      "impact": "Voter confidence in election preparations drops when parties clash over meeting rules.",
+      "demand": 1,
+      "bg": "usiku",
+      "publish_at": "2026-11-19T18:03:00+03:00",
+      "hot": true,
+      "avoid": [
+        "President Ruto announced that Kenya saved Sh1.5 billion by printing national exam papers locally.",
+        "Parliament must restore tough penalties on foreign firms that lock Kenyans out of jobs.",
+        "Peres Jepchirchir received a three-year ban for doping and loses her Sydney Marathon gold."
+      ],
+      "breaking": {
+        "title": "\"Mockery and trickery\": Opposition leaders storm out of IEBC meeting",
+        "outlets": [
+          "Capital FM News",
+          "The Star, Kenya",
+          "Tuko News"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Opposition leaders walk out of IEBC talks over disputed agenda",
+          "link": "https://capitalfm.africa/opposition-leaders-walk-out-of-iebc-talks-over-disputed-agenda/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-19"
+        },
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Opposition leaders walk out of IEBC meeting over 2027 election concerns",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYm5rbUZYWWRVNEJYaldSNE91S3B1V21NMHZ0ZUkzQjluVmlkVWVUWkJtUjhybXNPVXhyNHdjTGxEWVhEajk3eXkzLTl5dHl0MDBBY1IwS21McWF5Q3V1MWpKdVhaVGRnT3I3NnpWQnB6a3hOLTBQaW5VU1BhZEd0TDQwbGxrRzdZV0pHa3kyOA?oc=5",
+          "published": "2026-11-19"
+        },
+        {
+          "outlet": "Tuko News",
+          "title": "\"Mockery and trickery\": Opposition leaders storm out of IEBC meeting",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUWdOZncza185UTVrSEFCMnBzX0pnMFV1Q0Z5QjItMHgzWnp6bXdoOUJSb1lIUjhRZTJQV2JTR3Nzbk9qbW84aFM2NWZpWVIyTjE2dEJmQ1IyeEs0ZWhvMjZHNVU0bHhZX1dNRXJOSVY4UzlGTkxFVzdOcXRtY2U0M1ZHV3pyT2JJLXF0aFlMUC1JdVJo?oc=5",
+          "published": "2026-11-19"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Since our meeting then in January, you have never called us for a meeting. This is the first time",
+          "speaker": "Gachagua",
+          "context": "“Since our meeting then in January, you have never called us for a meeting. This is the first time,” Gachagua told the IEBC chairperson.",
+          "outlet": "Capital FM News",
+          "link": "https://capitalfm.africa/opposition-leaders-walk-out-of-iebc-talks-over-disputed-agenda/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news"
+        },
+        {
+          "text": "We are willing to work together because this is our country and we want an election that is believable and people believe in, and they must believe in the process",
+          "speaker": "Gachagua",
+          "context": "“We are willing to work together because this is our country and we want an election that is believable and people believe in, and they must believe in the process,” Gachagua said.",
+          "outlet": "Capital FM News",
+          "link": "https://capitalfm.africa/opposition-leaders-walk-out-of-iebc-talks-over-disputed-agenda/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news"
+        },
+        {
+          "text": "We came to the IEBC today in good faith, and we expected the same in return. Good faith is shown in deeds: an independent, impartial and prepared Commission. Today, we did not find it. So we have walked out",
+          "speaker": "Kalonzo",
+          "context": "“We came to the IEBC today in good faith, and we expected the same in return. Good faith is shown in deeds: an independent, impartial and prepared Commission. Today, we did not find it. So we have walked out,” Kalonzo stated.",
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/news/2026-11-19-opposition-leaders-walk-out-of-iebc-meeting"
+        },
+        {
+          "text": "To IEBC, once you decide to listen to the 55 million Kenyans, we shall engage accordingly",
+          "speaker": "Gachagua",
+          "context": "\"To IEBC, once you decide to listen to the 55 million Kenyans, we shall engage accordingly,\" Gachagua added.",
+          "outlet": "Tuko News",
+          "link": "https://www.tuko.co.ke/politics/647331-opposition-leaders-storm-iebc-meeting-disagreement/"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 10,
+        "action": 9,
+        "fair": 9,
+        "impact": 8,
+        "human": 9,
+        "avg": 8.8,
+        "note": "Fix the action beat to demand the IEBC publish clear ground rules for all stakeholder consultations immediately."
+      },
+      "drafted_at": "2026-11-19T17:51:35.705373+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1119b1743-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127835-iebc-directs-political-parties-submit-names-authorised-persons-signatures-october-15",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1119b1743-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1119b1743-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "IEBC Announces Requirement for Political Parties Ahead of 2027 Polls, Sets Deadline"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "UDA Issues Notice to Candidates, Sets 24-Hour Deadline"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Political Parties Could Face New Nomination Rules Under Proposed Law"
+        }
+      ],
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1295,
+      "auto": true,
+      "decided_at": "2026-11-19T17:53:17.009462+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari za leo, mwananchi. Karibu kwenye Kenya on Record. Mimi ni sauti yako ya kuwajibisha wenye mamlaka na kulinda ukweli.\n\nWiki hii, tunaangazia sakata la riadha ambalo limeumiza moyo wa kila Mkenya anayependa usafi kwenye michezo. Bingwa wetu wa马拉athon, Peres Jepchirchir, amefungiwa kwa miaka mitatu baada ya kupatikana na hatia ya kutumia dawa zilizopigwa marufuku za kuongeza nguvu. Si hilo tu; amevuliwa rasmi medali yake ya dhahabu ya Sydney Marathon.\n\nHuu sio ushindi kwa Kenya. Hii ni aibu kubwa inayowapaka tope vijana wetu wengi wanaotoka mashinani kujituma kwa jasho na damu halali. Wakati wengine wetu tunateseka na jua la jioni tukitafuta riziki ya uaminifu, inasikitisha kuona vipaji adimu vikiharibiwa na tamaa ya mkato.\n\nTunawauliza viongozi wa riadha na wizara: Je, tunapata wapi wakaguzi wetu wa ndani kabla haya hayajafika kiwango cha kimataifa? Ukweli ni kwamba, uongo wa mkato hauna miguu.\n\n***\n\n*Ujumbe kwa ufupi:* Mwanariadha wetu nguli Peres Jepchirchir amefungiwa miaka mitatu na kuvuliwa medali ya Sydney Marathon kwa sababu ya doping. Hii ni aibu kwa taifa letu safi. Tuache njia za mkato!",
-    "voice_note": "Wadau, habari zenu. Hapa ni Kenya on Record. Je, mmesikia hii ya kusikitisha? Bingwa wetu Peres Jepchirchir amepewa marufuku ya miaka mitatu ya kutokimbia na kunyang'anywa medali ya dhahabu ya Sydney Marathon baada ya kuanguka kwenye mtihani wa doping. Yaani dawa za marufuku! Hii inachafua jina la Kenya nzuri sana. Tunapiga kelele kila siku: michezo safi ndiyo fahari yetu. Vijana wetu wanaotoka Eldoret na kote nchini wanafanya kazi kwa jasho, alafu wachache wanatuharibia sifa kwa tamaa za mkato. Serikali na mashirikisho lazima wasafishe hizi kambi na kuwakomesha madaktari feki wanaowapotosha wanariadha wetu. Tuambie huko kwenye magroup yenu: Je, ni adhabu gani inafaa kwa hawa wanaotuaibisha kimataifa?",
-    "sms": "Usiibiwe na njia za mkato! Doping inaharibu vipaji na kuleta aibu kitaifa. Michezo safi ndiyo fahari halisi ya Kenya. Simama na ukweli. Kenya on Record.",
-    "reels": "Mchezo mchafu umezua aibu nyingine nzito nyumbani na duniani! Bingwa wetu wa riadha, Peres Jepchirchir, amefungiwa miaka mitatu kamili na kupokonywa medali yake ya dhahabu ya Sydney Marathon baada ya kupatikana na hatia ya doping. Miaka mitatu nje! Hii ndiyo bei ya njia za mkato na tamaa inayoua jasho la mamilioni ya Wakenya wanaojituma kwa uaminifu. Ukweli haujifichi kwenye track. Je, ni wakati gani tutasafisha sekta hii mara moja na milele? Acha maoni yako hapa chini, na ufuate Kenya on Record kwa ukweli usiotiwa sukari."
+    "radio": "Jambo citizens, welcome to Kenya on Record. This week, we are looking closely at the referee of our democracy—the Independent Electoral and Boundaries Commission.\n\nTalks surrounding the IEBC hit a stalemate after opposition leaders walked out, citing procedural unfairness and partisan bias in how the negotiations were being steered. Now, regardless of your political alignment, an electoral commission that cannot command trust across the board is a serious red flag for the nation. \n\nWhen key stakeholders walk out over disputed procedures, it signals a dangerous breakdown in consensus. History has taught us that a referee perceived to be biased long before an election creates instability long before voters even cast a single ballot. The selection, structure, and operational rules of the electoral body are not just elite political games—they directly dictate whether your vote will count in a peaceful, credible election. We cannot afford shortcut processes or skewed rules when setting up the machinery of our democracy. Transparency and mutual agreement are non-negotiable.\n\nKwa ufupi: Viongozi wa upinzani wamejitoa kwenye mazungumzo ya IEBC wakilalamikia utaratibu usio wa haki na ubaguzi. Tume ya uchaguzi lazima iwe huru na ya kuaminika kwa pande zote ili kulinda haki na amani ya nchi wetu.\n\nKeep your eyes on the process. Stay informed, and stay engaged.",
+    "voice_note": "Hapa ni Kenya on Record na ujumbe wa wiki hii. Opposition leaders have walked out of the ongoing IEBC talks, pointing out clear bias and flawed meeting procedures. Look, we need to pay close attention to this. The IEBC is the main referee for our elections. If the process of reforming or appointing the commission starts off with accusations of favoritism and procedural gatekeeping, it sets up the entire country for crisis down the line. Electoral integrity doesn't start on election day—it starts right now with how these negotiations are handled. Demand a fair, transparent referee for our democracy. Share this voice note with your network and let us keep track of every move.",
+    "sms": "Usiibiwe: A biased IEBC referee undermines your vote before election day. Demand fair and transparent electoral commission talks today. Process integrity matters!",
+    "reels": "Opposition leaders just walked out of IEBC talks, raising alarm over bias and disputed procedures. Remember: an election referee who lacks trust from all sides is a recipe for crisis. Electoral integrity isn't built on voting day—it is built right now in how the commission is formed. Stay alert, demand fairness, and keep Kenya on record."
   },
   "spend_usd": 0.0
 }
