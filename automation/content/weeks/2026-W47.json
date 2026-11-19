@@ -298,7 +298,7 @@
       "fresh_checked": "2026-11-18T15:46:54.083118+03:00"
     },
     {
-      "id": "2026-w47-d5-straight-r2",
+      "id": "2026-w47-d5-straight-r3",
       "template": "straight",
       "lane": "hustle",
       "series": "Myth or Fact",
@@ -372,11 +372,12 @@
         "note": "Solid execution on a prevalent fake news item."
       },
       "drafted_at": "2026-11-16T09:35:48.210469+03:00",
-      "photo_source": "https://commons.wikimedia.org/wiki/File:2022_Kenya_election_detailed_partial_results.png",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Official_Kenyan_Presidential_Election_Result.png",
       "reel": true,
       "rephoto_reason": "Kenyans.co.ke's own edit (Added a circular inset image of a man)",
       "words_approved": true,
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d5-straight-r2-photo.jpg",
+      "fresh_checked": "2026-11-19T12:58:29.523482+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-d5-straight-r3-photo.jpg",
       "photo_credit": "Photo: Khaleedasa / Wikimedia Commons, CC BY-SA 4.0",
       "photo_kind": "symbolic",
       "photo_outlet": "",
@@ -386,13 +387,12 @@
           "title": ""
         }
       ],
-      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/videos/2026-w47-d5-straight-r2-broll.mp4",
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/videos/2026-w47-d5-straight-r3-broll.mp4",
       "broll_credit": "Footage: commlab / Pixabay",
-      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "tg_msg": 1198,
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 1323,
       "auto": true,
-      "decided_at": "2026-11-17T13:01:03.128513+03:00",
-      "fresh_checked": "2026-11-19T12:58:29.523482+03:00"
+      "decided_at": "2026-11-20T00:18:02.034055+03:00"
     },
     {
       "id": "2026-w47-d6-kenya",
