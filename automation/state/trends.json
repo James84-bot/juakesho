@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-19T13:21:01.210836+00:00",
+  "fetched": "2026-11-19T13:34:52.287636+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,21 +7,22 @@
       "traffic": "2000+",
       "news": [
         {
-          "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
-          "url": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
-          "source": "BleepingComputer"
+          "title": "Fraud reported in Manistee Twp., per police log",
+          "url": "https://www.manisteenews.com/news/article/manistee-county-police-log-fraud-reported-22537178.php",
+          "source": "Manistee News Advocate"
         },
         {
-          "title": "The professionalisation of fraud: Key points",
-          "url": "https://identityweek.net/the-professionalisation-of-fraud-key-points/",
-          "source": "identityweek.net"
+          "title": "Fraud Has a Shape: Stop Scams UK and Persona on Closing the Gaps Before Criminals Find Them",
+          "url": "https://ffnews.com/thought-leadership/fraud-has-a-shape-stop-scams-uk-and-persona-on-closing-the-gaps-before-criminals-find-them",
+          "source": "FF News"
         },
         {
-          "title": "Why Deepfake Detection Is Now Essential for African Fintech KYC",
-          "url": "https://www.tekedia.com/why-deepfake-detection-is-now-essential-for-african-fintech-kyc/",
-          "source": "Tekedia"
+          "title": "Storm over Treasury push to control county bank accounts",
+          "url": "https://nation.africa/kenya/counties/storm-over-treasury-push-to-control-county-bank-accounts-5675884",
+          "source": "Daily Nation"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -34,14 +35,14 @@
           "source": "The Guardian"
         },
         {
-          "title": "Grand Theft Auto 6 released after 13-year wait for gamers around the world - follow live",
-          "url": "https://www.bbc.com/news/live/c60rkg21dl22t",
-          "source": "BBC"
-        },
-        {
           "title": "‘Grand Theft Auto VI’ is an astonishing American epic",
           "url": "https://www.washingtonpost.com/entertainment/video-games/2026/11/18/grand-theft-auto-vi-is-an-astonishing-american-epic/",
           "source": "The Washington Post"
+        },
+        {
+          "title": "Grand Theft Auto 6 released after 13-year wait for gamers around the world - follow live",
+          "url": "https://www.bbc.com/news/live/c60rkg21dl22t",
+          "source": "BBC"
         }
       ]
     },
@@ -145,14 +146,14 @@
           "source": "BBC"
         },
         {
+          "title": "Mudryk says Xabi Alonso sent him to Tottenham to play and wants him back at Chelsea",
+          "url": "https://www.livescore.com/en/news/football/club-world-cup/mudryk-says-xabi-alonso-sent-him-to-tottenham-to-play-and-wants-him-back-at-chelsea-chelsea-news/",
+          "source": "LiveScore"
+        },
+        {
           "title": "Mykhaylo Mudryk makes shock drugs ban accusation ahead of Tottenham return - 'He brings us a little cup'",
           "url": "https://www.football365.com/news/mudryk-shock-drugs-ban-accusation-tottenham-return",
           "source": "Football365"
-        },
-        {
-          "title": "Mudryk reveals Alonso's Chelsea promise and blasts Ukraine FA over drugs ban",
-          "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/11/mykhailo-mudryk-xab-alonso-chelsea-promise-ukraine-fa-drugs-ban",
-          "source": "FootballTransfers.com"
         }
       ]
     },
