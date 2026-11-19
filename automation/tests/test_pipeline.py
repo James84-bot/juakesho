@@ -692,6 +692,7 @@ class RedoTests(TempWeeks):
         self.assertEqual(posts["c-1"]["n"], 1)
 
 
+@mock.patch.dict(os.environ, {"JUA_PAID_OK": "yes"})   # these test the paid Claude path itself
 class QualitySystemTests(unittest.TestCase):
     """Symbols, Set It Straight, photos, budget: the rules that keep quality high and spend flat."""
 
@@ -1078,6 +1079,7 @@ class QualitySystemTests(unittest.TestCase):
             self.assertAlmostEqual(draft.SPEND["usd"], 1.0 + 0.5)   # $1/M in + $5/M out
 
 
+@mock.patch.dict(os.environ, {"JUA_PAID_OK": "yes"})   # these test the paid Claude path itself
 class FreeProviderTests(unittest.TestCase):
     """Gemini free tier: used when its key is set; small batches fit the free quota."""
 
@@ -1189,6 +1191,7 @@ class GuardTests(unittest.TestCase):
         self.assertTrue(any("question" in e for e in r.errors))
 
 
+@mock.patch.dict(os.environ, {"JUA_PAID_OK": "yes"})   # these test the paid Claude path itself
 class ApiCallTests(unittest.TestCase):
     """call_claude: model id fallback, retries on temporary errors, no retry on real errors."""
 
@@ -1406,6 +1409,7 @@ class FreshWriter(unittest.TestCase):
             p.stop()
 
 
+@mock.patch.dict(os.environ, {"JUA_PAID_OK": "yes"})   # these test the paid Claude path itself
 class WriterFallbackTests(FreshWriter):
     def test_busy_gemini_tries_next_model_then_claude(self):
         import io
@@ -1424,6 +1428,7 @@ class WriterFallbackTests(FreshWriter):
         self.assertEqual(sorted(set(tried)), sorted(drafter.GEMINI_MODELS))
 
 
+@mock.patch.dict(os.environ, {"JUA_PAID_OK": "yes"})   # these test the paid Claude path itself
 class WriterOutageTests(FreshWriter):
     """19 Nov: gemini-flash-latest hung, the run died with flash-lite untried, and the Claude backup had no credit."""
 
@@ -1668,6 +1673,35 @@ class FreeBackupTests(FreshWriter):
         self.assertIsInstance(got, RuntimeError)
         self.assertIn("no free writer answered", str(got))
         self.assertIn("Nothing for you to do", pl.failure_text(got))
+
+
+class NoCostTests(FreshWriter):
+    """19 Nov: "no cost". The paid Claude API is never called unless JUA_PAID_OK=yes, whatever keys exist."""
+
+    def test_claude_is_never_called_without_the_owner_saying_yes(self):
+        import io
+        import urllib.error
+        import draft as drafter
+        called = []
+
+        def answer(req, timeout=300):
+            called.append(req.full_url)
+            raise urllib.error.HTTPError(req.full_url, 503, "busy", {}, io.BytesIO(b"{}"))
+        env = {"GEMINI_API_KEY": "g", "ANTHROPIC_API_KEY": "a", "JUA_PAID_OK": "", "JUA_PROVIDER": "anthropic",
+               "MISTRAL_API_KEY": "", "GROQ_API_KEY": "", "OPENROUTER_API_KEY": "", "JUA_GEMINI_MODEL": ""}
+        with mock.patch.dict(os.environ, env), mock.patch.object(drafter.time, "sleep", lambda s: None), \
+                mock.patch.dict(drafter.SPEND, {"calls": 0}), \
+                mock.patch.object(drafter.urllib.request, "urlopen", answer):
+            self.assertEqual(drafter.provider(), "gemini")          # asking for Claude is not enough
+            with self.assertRaises(RuntimeError):
+                drafter.call_claude("s", "u", 100)
+            with self.assertRaises(RuntimeError):
+                drafter.look_at(_tiny_jpeg(), "q", strong=True)
+            with self.assertRaisesRegex(RuntimeError, "costs money"):
+                drafter._anthropic("s", "u", 10, None)
+        self.assertFalse([u for u in called if "anthropic" in u])
+        with mock.patch.dict(os.environ, {**env, "GEMINI_API_KEY": ""}):
+            self.assertEqual(drafter.provider(), "gemini")          # only a Claude key: still not used
 
 
 def _tiny_jpeg() -> bytes:
@@ -2069,6 +2103,7 @@ class ReelPublishTests(TempWeeks):
         self.assertIn("text/plain", str(ctx.exception))
 
 
+@mock.patch.dict(os.environ, {"JUA_PAID_OK": "yes"})   # these test the paid Claude path itself
 class WriterNetworkDrops(unittest.TestCase):
     def test_a_dropped_connection_is_retried_not_fatal(self):
         import http.client

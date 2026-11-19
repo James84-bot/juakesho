@@ -836,7 +836,7 @@ GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:ge
 # Tried in order; set JUA_GEMINI_MODEL to pin one. Each model has its own free quota. Measured with `aicheck` on
 # 19 Nov: the full Flash models were busy (503), timed out or had used up the day's quota by the afternoon, while
 # every Flash-Lite model answered in seconds. So the best writers go first and the Lite ones keep the run alive.
-GEMINI_MODELS = ["gemini-flash-latest", "gemini-3.7-flash", "gemini-3.6-flash",
+GEMINI_MODELS = ["gemini-flash-latest", "gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.5-flash",
                  "gemini-flash-lite-latest", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
 GEMINI_CRITIC = "gemini-flash-lite-latest"
 GEMINI_SEE_CHEAP = ["gemini-flash-lite-latest", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite"]
@@ -846,17 +846,26 @@ GEMINI_THINK_ROOM = 8192   # tokens a thinking model may spend before it writes 
 GEMINI_LIMITS = {"out": 16000, "calls": 18, "pause": 13.0}   # free tier: a few requests a minute, a small daily quota
 
 
+def paid_ok() -> bool:
+    """The owner runs this at no cost (19 Nov: "no cost find better free ways"): the paid Claude API is never
+    called unless the repository variable JUA_PAID_OK is set to yes, whatever keys are present."""
+    return (os.environ.get("JUA_PAID_OK") or "").strip().lower() in {"yes", "true", "1"}
+
+
+PAID_OFF = "Claude is off because it costs money (repository variable JUA_PAID_OK=yes turns it on)"
+
+
 def provider() -> str:
-    """'gemini' (free), or 'anthropic' (paid, best Kenyan voice; weekly budget cap).
+    """'gemini' (free), or 'anthropic' (paid; only with JUA_PAID_OK=yes).
     JUA_PROVIDER picks one; otherwise whichever key is present, Gemini first."""
     chosen = (os.environ.get("JUA_PROVIDER") or "").strip().lower()
-    if chosen in {"gemini", "anthropic"}:
+    if chosen == "gemini" or (chosen == "anthropic" and paid_ok()):
         return chosen
     if os.environ.get("GEMINI_API_KEY", "").strip():
         return "gemini"
-    if os.environ.get("ANTHROPIC_API_KEY", "").strip():
+    if os.environ.get("ANTHROPIC_API_KEY", "").strip() and paid_ok():
         return "anthropic"
-    return "gemini"   # fails with a clear "set GEMINI_API_KEY" message
+    return "gemini"   # fails with a clear "set GEMINI_API_KEY" message (and the free backups still answer)
 
 
 # a dropped connection (RemoteDisconnected is a ConnectionResetError) is as temporary as a timeout
@@ -955,7 +964,7 @@ def call_claude(system: str, user: str, max_tokens: int = 12000, model: str | No
                 except RuntimeError as be:
                     if not str(be).endswith("no key"):
                         notes.append(str(be)[:160])
-            if not os.environ.get("ANTHROPIC_API_KEY") or ANTHROPIC_DOWN:
+            if not os.environ.get("ANTHROPIC_API_KEY") or ANTHROPIC_DOWN or not paid_ok():
                 raise RuntimeError("no free writer answered: " + "; ".join(notes)) from e
             print(f"  Gemini unavailable ({str(e)[:80]}); using Claude for this call")
             return _anthropic(system, user, max_tokens, model if model and not model.startswith("gemini") else None)
@@ -1066,6 +1075,8 @@ def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
 
 def _anthropic(system: str, user: str, max_tokens: int = 12000, model: str | None = None) -> str:
     key = os.environ.get("ANTHROPIC_API_KEY")
+    if not paid_ok():
+        raise RuntimeError(PAID_OFF)
     if not key:
         raise RuntimeError("ANTHROPIC_API_KEY is not set (use --mock to test without it)")
     if ANTHROPIC_DOWN:
@@ -1145,7 +1156,7 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
         return None
 
     def claude() -> str | None:
-        if not os.environ.get("ANTHROPIC_API_KEY", "").strip():
+        if not os.environ.get("ANTHROPIC_API_KEY", "").strip() or not paid_ok():
             return None
         if ANTHROPIC_DOWN:
             errors.append(f"Claude skipped: {ANTHROPIC_DOWN['why']}")
@@ -1212,6 +1223,8 @@ def _look_gemini(body: dict, model: str) -> str:
 
 
 def _look_anthropic(body: dict) -> str:
+    if not paid_ok():
+        raise RuntimeError(PAID_OFF)
     headers = {"x-api-key": os.environ["ANTHROPIC_API_KEY"].strip(), "anthropic-version": "2023-06-01",
                "content-type": "application/json"}
     workspace = (os.environ.get("ANTHROPIC_WORKSPACE_ID") or "").strip()

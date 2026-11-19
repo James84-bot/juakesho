@@ -42,7 +42,8 @@ jobs:
       MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}        # free backup writer (console.mistral.ai, no card)
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}              # free backup writer (console.groq.com, no card)
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}  # free backup writer (openrouter.ai, :free models)
-      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}    # paid; used last and only while it has credit
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}    # paid: never called unless JUA_PAID_OK is "yes"
+      JUA_PAID_OK: ${{ vars.JUA_PAID_OK }}
       ANTHROPIC_WORKSPACE_ID: ${{ secrets.ANTHROPIC_WORKSPACE_ID }}   # optional
       JUA_MODEL: ${{ vars.JUA_MODEL }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}

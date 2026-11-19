@@ -2,6 +2,7 @@
 The model's verdict is kept per picture; a check that cannot run never costs a post its photo."""
 import io
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -92,6 +93,7 @@ class PhotoOfSkipsGraphics(unittest.TestCase):
         self.assertEqual(got[1]["credit"], "Photo: Kenyans.co.ke")
 
 
+@mock.patch.dict(os.environ, {"JUA_PAID_OK": "yes"})   # these test the paid Claude path itself
 class LookAt(unittest.TestCase):
     """The picture goes to Gemini (free tier) as inline JPEG at temperature 0; Claude Haiku takes over when Gemini
     can't answer."""
