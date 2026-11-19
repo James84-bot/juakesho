@@ -3241,8 +3241,11 @@ def _main(argv: list[str] | None = None) -> int:
                                    for p in (c.get("content") or {}).get("parts", []) if not p.get("thought"))
                     log(f"aicheck {m}: '{text.strip()[:20]}' in {time.time() - t0:.1f}s")
                 except urllib.error.HTTPError as e:
-                    log(f"aicheck {m}: HTTP {e.code} after {time.time() - t0:.1f}s: "
-                        f"{e.read().decode(errors='replace')[:160]!r}")
+                    full = e.read().decode(errors="replace")
+                    quota = sorted(set(re.findall(r'"quotaId":\s*"([^"]+)"', full)))
+                    wait = re.findall(r'"retryDelay":\s*"([^"]+)"', full)
+                    log(f"aicheck {m}: HTTP {e.code} after {time.time() - t0:.1f}s: quota {quota or '-'}, "
+                        f"retry {wait[:1] or '-'}: {full[:120]!r}")
                 except Exception as e:
                     log(f"aicheck {m}: FAILED after {time.time() - t0:.1f}s: {e!r}")
                 time.sleep(4)

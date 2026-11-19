@@ -1439,6 +1439,36 @@ class WriterOutageTests(unittest.TestCase):
             self.assertEqual(drafter.call_claude("s", "u", 100), "written")
         self.assertEqual(tried, [drafter.GEMINI_MODELS[0], drafter.GEMINI_MODELS[0], drafter.GEMINI_MODELS[1]])
 
+    def test_a_used_up_daily_quota_is_skipped_at_once_for_the_rest_of_the_run(self):
+        import io
+        import urllib.error
+        import draft as drafter
+        tried = []
+
+        def answer(req, timeout=300):
+            m = req.full_url.split("/models/")[1].split(":")[0]
+            tried.append(m)
+            if m == drafter.GEMINI_MODELS[0]:
+                raise urllib.error.HTTPError(req.full_url, 429, "quota", {}, io.BytesIO(
+                    b'{"error":{"code":429,"details":[{"violations":[{"quotaId":'
+                    b'"GenerateRequestsPerDayPerProjectPerModel-FreeTier"}]}]}}'))
+
+            class R(io.BytesIO):
+                headers = {"Content-Type": "application/json"}
+
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, *a):
+                    return False
+            return R(json.dumps({"candidates": [{"content": {"parts": [{"text": "ok"}]}}]}).encode())
+        a, b, c = self._env()
+        with a, b, c, mock.patch.object(drafter.urllib.request, "urlopen", answer), \
+                mock.patch.object(drafter, "USED_UP", set()):
+            self.assertEqual(drafter.call_claude("s", "u", 100), "ok")
+            self.assertEqual(drafter.call_claude("s", "u", 100), "ok")
+        self.assertEqual(tried, [drafter.GEMINI_MODELS[0], drafter.GEMINI_MODELS[1], drafter.GEMINI_MODELS[1]])
+
     def test_no_credit_is_learned_once_and_claude_is_skipped_after(self):
         import io
         import urllib.error

@@ -872,6 +872,19 @@ def call_claude(system: str, user: str, max_tokens: int = 12000, model: str | No
     return _anthropic(system, user, max_tokens, model)
 
 
+# Models whose free daily quota ran out during this run (Google answers 429 with a PerDay quota id). On 19 Nov the
+# writer's model was used up by mid-afternoon and every call still waited ~140 s on it before moving on.
+USED_UP: set[str] = set()
+
+
+def _used_up(code: int, body: str, model: str) -> bool:
+    if code == 429 and re.search(r"PerDay", body):
+        USED_UP.add(model)
+        print(f"  {model}: today's free quota is used up; the next model takes over for the rest of the run")
+        return True
+    return False
+
+
 def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
     key = os.environ.get("GEMINI_API_KEY", "").strip()
     if not key:
@@ -885,6 +898,9 @@ def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
         time.sleep(GEMINI_LIMITS["pause"])   # stay under the free per-minute limit
     last = None
     for m in models:
+        if m in USED_UP:
+            last = last or RuntimeError(f"Gemini 429 ({m}): today's free quota is used up")
+            continue
         body = json.dumps({"systemInstruction": {"parts": [{"text": system}]},
                            "contents": [{"role": "user", "parts": [{"text": user}]}],
                            # Gemini's thinking counts toward the output budget: leave room for it on top of the reply
@@ -915,7 +931,11 @@ def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
                     raise RuntimeError(f"Gemini ({m}) gave no text: {reason}")
                 return text
             except urllib.error.HTTPError as e:
-                detail = e.read().decode(errors="replace")[:300]
+                full = e.read().decode(errors="replace")
+                detail = full[:300]
+                if _used_up(e.code, full, m):
+                    last = RuntimeError(f"Gemini 429 ({m}): today's free quota is used up")
+                    break   # waiting does not bring a daily quota back: straight to the next model
                 if e.code in (429, 500, 502, 503, 504) and attempt < 3:
                     time.sleep(float(e.headers.get("retry-after") or 0) or 20 * 2 ** attempt)
                     continue
@@ -1040,6 +1060,8 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
 
 def _look_gemini(body: dict, model: str) -> str:
     key = os.environ["GEMINI_API_KEY"].strip()
+    if model in USED_UP:
+        raise RuntimeError(f"Gemini 429 ({model}): today's free quota is used up")
     if SPEND["calls"]:
         time.sleep(GEMINI_LIMITS["pause"])   # the same free per-minute limit as the writer
     req = urllib.request.Request(GEMINI_URL.format(model=model), data=json.dumps(body).encode(), method="POST",
@@ -1055,7 +1077,10 @@ def _look_gemini(body: dict, model: str) -> str:
                 raise RuntimeError(f"Gemini gave no text: {cand.get('finishReason') or 'empty reply'}")
             return text
         except urllib.error.HTTPError as e:
-            detail = e.read().decode(errors="replace")[:400]
+            full = e.read().decode(errors="replace")
+            detail = full[:400]
+            if _used_up(e.code, full, model):
+                raise RuntimeError(f"Gemini 429 ({model}): today's free quota is used up") from e
             if e.code in (429, 500, 502, 503, 504) and attempt == 0:
                 time.sleep(float(e.headers.get("retry-after") or 0) or 20)
                 continue
