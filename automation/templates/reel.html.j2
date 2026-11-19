@@ -157,7 +157,10 @@
 {% endif %}
 {% for b in beats %}{% set s = BT.starts[loop.index0] %}{% set d = BT.durs[loop.index0] %}
 {% set said = quote_beat(b) %}
-.b{{ loop.index }} { font-size: {{ fitw(said[1], 880, 5, 92) if said else fitw(b, 900, 4, 116) if look == 'glass' and card else fitw(b, 860, 4, 96 if photo_band else 100 if card else 132) }}px;
+{# the open layout: the words take the room under the picture, as big as it holds (5 lines when there is room) #}
+{% set room = 1580 - (250 + card_h + 60) %}{% set L = 5 if room >= 600 else 4 %}{% set cap = [124, (room / (L * 1.06)) | int] | min %}
+.b{{ loop.index }} { font-size: {{ fitw(said[1], 900, L + 1, [cap, 96] | min) if said and look == 'glass' and card else fitw(said[1], 880, 5, 92) if said
+                      else fitw(b, 936, L, cap) if look == 'glass' and card else fitw(b, 860, 4, 96 if photo_band else 100 if card else 132) }}px;
   animation: {{ 'stay .15s linear both' if loop.last else 'show ' ~ d ~ 's linear both' }}; animation-delay: {{ s }}s; }
 {% endfor %}
 .beat .t, .beat.q .qm, .beat.q .who { animation: slam .22s cubic-bezier(.2, .9, .25, 1.1) both; }
