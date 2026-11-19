@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-19T12:06:13.936866+00:00",
+  "fetched": "2026-11-19T13:21:01.210836+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "fraud",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
+          "url": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
+          "source": "BleepingComputer"
+        },
+        {
+          "title": "The professionalisation of fraud: Key points",
+          "url": "https://identityweek.net/the-professionalisation-of-fraud-key-points/",
+          "source": "identityweek.net"
+        },
+        {
+          "title": "Why Deepfake Detection Is Now Essential for African Fintech KYC",
+          "url": "https://www.tekedia.com/why-deepfake-detection-is-now-essential-for-african-fintech-kyc/",
+          "source": "Tekedia"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "gta vi game",
@@ -30,8 +52,8 @@
       "news": [
         {
           "title": "Happy International Men’s Day November 19 – ‘The Future is Everyone’",
-          "url": "https://www.freep.com/press-release/story/274838/happy-international-mens-day-november-19-the-future-is-everyone/",
-          "source": "Detroit Free Press"
+          "url": "https://www.detroitnews.com/press-release/story/202721/happy-international-mens-day-november-19-the-future-is-everyone/",
+          "source": "The Detroit News"
         },
         {
           "title": "International Men’s Day: 5 thoughtful gift ideas to make the important men in your life feel appreciated, valued and special",
@@ -44,29 +66,6 @@
           "source": "Evie Magazine"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "fraud",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Fraud Has a Shape: Stop Scams UK and Persona on Closing the Gaps Before Criminals Find Them",
-          "url": "https://ffnews.com/thought-leadership/fraud-has-a-shape-stop-scams-uk-and-persona-on-closing-the-gaps-before-criminals-find-them",
-          "source": "FF News"
-        },
-        {
-          "title": "There's a Bigger Picture to Tax Fraud",
-          "url": "https://insider.govtech.com/texas/sponsored/theres-a-bigger-picture-to-tax-fraud",
-          "source": "GovTech"
-        },
-        {
-          "title": "FacePhi Biometría S A : presents The New Fraud Frontier 2027, an analysis of emerging threats, their impact across six regions and the risks organizations will need to anticipate",
-          "url": "https://www.marketscreener.com/news/facephi-biometr-a-s-a-presents-the-new-fraud-frontier-2027-an-analysis-of-emerging-threats-their-ce785ed2d88df12d",
-          "source": "www.marketscreener.com"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -92,74 +91,8 @@
     },
     {
       "geo": "KE",
-      "title": "health care",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "The Power of Rural: Preparing Kentucky’s health workforce, expanding access and strengthening communities",
-          "url": "https://uknow.uky.edu/uk-healthcare/power-rural-preparing-kentucky-s-health-workforce-expanding-access-and-strengthening",
-          "source": "UKNow"
-        },
-        {
-          "title": "GAO Report Offers New Insight into Rural Health Transformation Program Funding and Oversight",
-          "url": "https://leadingage.org/gao-report-offers-new-insight-into-rural-health-transformation-program-funding-and-oversight/",
-          "source": "LeadingAge"
-        },
-        {
-          "title": "Hazel: Invest in rural healthcare by investing in its people",
-          "url": "https://cardinalnews.org/2026/11/19/hazel-invest-in-rural-healthcare-by-investing-in-its-people/",
-          "source": "Cardinal News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "baboons",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Eagles preying on human-sized baboons upend existing evolutionary defense theory",
-          "url": "https://phys.org/news/2026-11-eagles-preying-human-sized-baboons.html",
-          "source": "Phys.org"
-        },
-        {
-          "title": "speculative face- off between an adult male baboon and Verreaux's eagle (IMAGE)",
-          "url": "https://www.eurekalert.org/multimedia/1162242",
-          "source": "EurekAlert!"
-        },
-        {
-          "title": "Could eagles have hunted our early human ancestors?",
-          "url": "https://www.techlicious.com/blog/could-eagles-have-hunted-our-early-human-ancestors/",
-          "source": "Techlicious"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mykhailo mudryk",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Mykhailo Mudryk: Ukrainian Association of Football blamed for failed drugs test",
-          "url": "https://www.bbc.com/sport/football/articles/cr930l71z5ejo",
-          "source": "BBC"
-        },
-        {
-          "title": "'They turned their backs!' - Chelsea loanee Mykhailo Mudryk blames Ukrainian FA for 'nightmare' doping ban and reveals MILLIONS spent on legal battle",
-          "url": "https://www.goal.com/en-ke/news/mykhailo-mudryk-ukrainian-fa-doping-ban-chelsea/blt03af34c96befe026",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Mudryk says Xabi Alonso sent him to Tottenham to play and wants him back at Chelsea",
-          "url": "https://www.livescore.com/en/news/football/club-world-cup/mudryk-says-xabi-alonso-sent-him-to-tottenham-to-play-and-wants-him-back-at-chelsea-chelsea-news/",
-          "source": "LiveScore"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "bribery",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Employee Of Major City-Forming Enterprise Arrested For Bribery",
@@ -181,13 +114,57 @@
     },
     {
       "geo": "KE",
+      "title": "baboons",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Eagles preying on human-sized baboons upend existing evolutionary defense theory",
+          "url": "https://phys.org/news/2026-11-eagles-preying-human-sized-baboons.html",
+          "source": "Phys.org"
+        },
+        {
+          "title": "Eagles are eating human-sized baboons in the Sahara desert",
+          "url": "https://www.popsci.com/environment/eagles-eating-baboons-sahara/",
+          "source": "Popular Science"
+        },
+        {
+          "title": "speculative face- off between an adult male baboon and Verreaux's eagle (IMAGE)",
+          "url": "https://www.eurekalert.org/multimedia/1162242",
+          "source": "EurekAlert!"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mykhailo mudryk",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Mykhailo Mudryk: Ukrainian Association of Football blamed for failed drugs test",
+          "url": "https://www.bbc.com/sport/football/articles/cr930l71z5ejo",
+          "source": "BBC"
+        },
+        {
+          "title": "Mykhaylo Mudryk makes shock drugs ban accusation ahead of Tottenham return - 'He brings us a little cup'",
+          "url": "https://www.football365.com/news/mudryk-shock-drugs-ban-accusation-tottenham-return",
+          "source": "Football365"
+        },
+        {
+          "title": "Mudryk reveals Alonso's Chelsea promise and blasts Ukraine FA over drugs ban",
+          "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/11/mykhailo-mudryk-xab-alonso-chelsea-promise-ukraine-fa-drugs-ban",
+          "source": "FootballTransfers.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "lakers vs jazz",
       "traffic": "200+",
       "news": [
         {
-          "title": "Jazz upset Lakers, Sixers comeback thwarts Magic",
-          "url": "https://www.afp.com/en/jazz-upset-lakers-sixers-comeback-thwarts-magic",
-          "source": "AFP.com"
+          "title": "Jazz vs Lakers: Prediction, Team News and the Lakers' Nine Straight Wins",
+          "url": "https://www.squawka.com/ca/news/nba/jazz-vs-lakers-prediction-team-news/",
+          "source": "Squawka"
         },
         {
           "title": "“I asked the guys, ‘Who in here feels like they played …",
@@ -195,9 +172,31 @@
           "source": "Yahoo Sports"
         },
         {
-          "title": "“I’m not gonna overreact to a bad offensive night for us” – JJ Redick brushes off Lakers’ ugly loss to lowly Jazz",
-          "url": "https://www.basketballnetwork.net/latest-news/jj-redick-brushes-off-lakers-ugly-loss-to-lowly-jazz",
-          "source": "Basketball Network"
+          "title": "Los Angeles Lakers vs. Utah Jazz - 1st Half Highlights",
+          "url": "https://www.nba.com/watch/video/los-angeles-lakers-vs-utah-jazz-1st-half-highlights-3",
+          "source": "NBA.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ashton kutcher",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Ashton Kutcher to become billionaire when Anthropic goes public",
+          "url": "https://www.thetimes.com/us/american-politics/article/ashton-kutcher-billionaire-anthropic-ipo-5mg275l59",
+          "source": "The Times"
+        },
+        {
+          "title": "Ashton Kutcher’s Anthropic Investment Pushes Him Toward Billionaire Status",
+          "url": "https://www.newsweek.com/ashton-kutchers-anthropic-investment-pushes-him-toward-billionaire-status-12730209",
+          "source": "Newsweek"
+        },
+        {
+          "title": "VC Firm Run by Madonna’s Manager Has $7 Billion Anthropic Stake",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-15/vc-firm-run-by-madonna-s-manager-has-7-billion-anthropic-stake",
+          "source": "Bloomberg.com"
         }
       ]
     }

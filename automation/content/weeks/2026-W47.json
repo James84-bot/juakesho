@@ -1634,23 +1634,102 @@
     {
       "id": "2026-w47-hot-1119m",
       "template": "sauti",
-      "bg": "usiku",
       "lane": "everyone",
+      "kicker": "Athletes",
+      "line": "World marathon champion Peres Jepchirchir got a *three-year* doping ban.",
+      "fact": "Peres Jepchirchir must forfeit her Sydney Marathon gold medal and prize money.",
+      "source": "The Guardian, 2026-11-19, Daily Nation, 2026-11-19",
+      "photo_query": "running track stadium Kenya",
+      "message": "Peres Jepchirchir received a three-year ban for doping and loses her Sydney Marathon gold.",
+      "action": "Read the Athletics Integrity Unit report on banned runners",
+      "beats": [
+        "Marathon champion Peres Jepchirchir got a *three-year* doping ban.",
+        "She must forfeit her Sydney Marathon gold medal and prize money.",
+        "Athletics Kenya faces fresh questions over the rising cases.",
+        "Tell us below: how can athletics camps *stop* this crisis?"
+      ],
+      "caption": "World marathon champion Peres Jepchirchir suspended for three years and forfeits her Sydney Marathon gold. A heavy blow to our athletics prestige.\n\nTell us below: how can athletics camps stop this crisis?\n\n#KenyaOnRecord",
+      "who": "Athletics Integrity Unit and Athletics Kenya",
+      "where": "National",
+      "when": "19 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Kenyan athletes face losing titles and earnings as anti-doping scrutiny tightens.",
+      "bg": "usiku",
       "publish_at": "2026-11-19T20:15:00+03:00",
-      "status": "planned",
       "hot": true,
       "beat": "life",
       "avoid": [
         "President Ruto announced that Kenya saved Sh1.5 billion by printing national exam papers locally.",
         "Parliament must restore tough penalties on foreign firms that lock Kenyans out of jobs."
-      ]
+      ],
+      "source_links": [
+        {
+          "outlet": "The Guardian",
+          "title": "World marathon champion Peres Jepchirchir banned for three years over doping",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPQkc5UkxTZ1ZGVGlZTlZYNlZlWDZiVXIwUmY4dzE3bFFfR1lNemxyaW9USlJKNXViYzVjZXdWdGhhek56ZzdYM2VyMS1rbmxRSTZKRElpMzRQNFVUZkhEZGwyem1ERXQzekhoR3RUTHRNRDZHTDRWQlZmNUNfR0cxQ1FRbzNzc2NEcC0tcnlXNkFqN2hXeE9aNFZBTXpNcE91V3p2TEg2TVdYeVRodUhtaDN3QQ?oc=5",
+          "published": "2026-11-19"
+        },
+        {
+          "outlet": "Daily Nation",
+          "title": "Jepchirchir banned for three years, to forfeit Sidney Marathon gold and prize money",
+          "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWTZHRUNaZ25rWEU0QXBaUmlrUFEyT3prV2pod3VETE9QaGk4Vlg1LWd6X2xCXzRaZFNzdzl4X3cyalh1TjFpczJXRURHbF9fY01UVFBuM19rR3NSTHlpMXBuVERoTzRWVlcwVGkzRktoWW5vckNWcmRqUk44M1MzN3g3eU9zTzlPdmZpZGRObnZGVENUWlZra1dEenNqSGxNN3duNWtXb0tGV2hDWnJ4VHR1clNhNEdzTlpqX2dnZjlWRm1pMG02dFpoRkF1RGlO?oc=5",
+          "published": "2026-11-19"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "in samples collected from Korir between January and March 2024, shortly before the Hamburg Marathon, and in January/February 2025 prior to the Osaka Marathon",
+          "speaker": "AIU",
+          "context": "“The matter was referred by the Athlete Passport Management Unit (APMU) to the Joint Expert Panel which identified abnormal values indicating \"Likely Doping\" in samples collected from Korir between January and March 2024, shortly before the Hamburg Marathon, and in January/February 2025 prior to the Osaka Marathon,” AI",
+          "outlet": "Daily Nation",
+          "link": "https://nation.africa/kenya/sports/athletics/jepchirchir-banned-for-three-years-to-forfeit-sidney-marathon-gold-and-prize-money-5676804"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 9,
+        "demand": 10,
+        "action": 7,
+        "fair": 9,
+        "impact": 8,
+        "human": 9,
+        "avg": 8.5,
+        "note": "Action beat asks a vague question instead of demanding a specific reform from Athletics Kenya."
+      },
+      "drafted_at": "2026-11-19T16:29:29.579003+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1119m-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "file",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127783-bbc-investigation-links-elite-police-unit-fatal-shots-railas-farewell",
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "BBC Investigation Links Elite Police Unit to Fatal Shots at Raila’s Farewell"
+        }
+      ],
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1284
     }
   ],
   "scripts": {
-    "radio": "Hamjambo and welcome to Kenya on Record.\n\nToday, we address an issue that touches the dignity of millions of our people: foreign companies locking qualified Kenyans out of jobs on our own soil. \n\nEvery year, thousands of our young people graduate with degrees in engineering, IT, accounting, and logistics. Yet, across major construction projects, multinational tech hubs, and corporate offices, we see specialized and mid-level positions being handed to expatriates whose qualifications are often no better than what we have locally.\n\nThis was not meant to happen. Our labour regulations once required strict succession plans: if an expat was hired, a Kenyan understudy had to be trained to take over within two to three years. But weak enforcement and watered-down penalties have turned these safeguards into a joke. Today, the fine for breaking local hiring rules is pocket change for a big multinational—a cost of doing business rather than a deterrent.\n\nParliament must urgently review the labour laws and investment frameworks. We need tough, non-negotiable penalties. If a company fraudulently brings in foreign workers for roles Kenyans can perform, revoke their permits and impose fines that hit their balance sheet. Investment is welcome, but it must create genuine opportunities for our people.\n\nKwa ufupi: Bunge lazima lirejeshe adhabu kali kwa kampuni za kigeni zinazowanyima Wakenya kazi na kuleta wageni kinyume cha sheria. Uwekezaji nchini lazima uwanufaishe wenyeji kwanza.\n\nI am your host on Kenya on Record. Linda haki yako.",
-    "voice_note": "Habari zenu. This is Kenya on Record, and we need to have a serious conversation about our job market.\n\nHow is it that billions of shillings in private and public contracts go to foreign firms, but qualified Kenyan engineers, accountants, and IT specialists are left out in the cold while expats are flown in to do ordinary jobs?\n\nIt happens because Parliament relaxed the rules and softened the fines. When the penalty for ignoring local hiring requirements is tiny, multinational companies just pay the fine and continue locking our professionals out of decent work.\n\nThis must stop. We are demanding that MPs amend the law to bring back heavy financial penalties, mandatory succession planning, and strict oversight on work permits. Our people cannot remain spectators in their own economy. Share this voice note and ask your MP what they are doing to protect Kenyan jobs.",
-    "sms": "Usiibiwe: Foreign firms must prove no local can do the job before hiring expats. Demand compliance with local content laws. Report illegal workplace practices.",
-    "reels": "Why are thousands of skilled Kenyan graduates jobless while foreign firms import staff for routine roles? \n\nBecause Parliament softened the penalties. Right now, it is cheaper for a multinational to break our labour laws than to hire local professionals. \n\nOur MPs must restore heavy fines, enforce strict succession plans, and audit expatriate work permits. Kenya is open for business, not for the lock-out of our own people."
+    "radio": "Habari za leo, mwananchi. Karibu kwenye Kenya on Record. Mimi ni sauti yako ya kuwajibisha wenye mamlaka na kulinda ukweli.\n\nWiki hii, tunaangazia sakata la riadha ambalo limeumiza moyo wa kila Mkenya anayependa usafi kwenye michezo. Bingwa wetu wa马拉athon, Peres Jepchirchir, amefungiwa kwa miaka mitatu baada ya kupatikana na hatia ya kutumia dawa zilizopigwa marufuku za kuongeza nguvu. Si hilo tu; amevuliwa rasmi medali yake ya dhahabu ya Sydney Marathon.\n\nHuu sio ushindi kwa Kenya. Hii ni aibu kubwa inayowapaka tope vijana wetu wengi wanaotoka mashinani kujituma kwa jasho na damu halali. Wakati wengine wetu tunateseka na jua la jioni tukitafuta riziki ya uaminifu, inasikitisha kuona vipaji adimu vikiharibiwa na tamaa ya mkato.\n\nTunawauliza viongozi wa riadha na wizara: Je, tunapata wapi wakaguzi wetu wa ndani kabla haya hayajafika kiwango cha kimataifa? Ukweli ni kwamba, uongo wa mkato hauna miguu.\n\n***\n\n*Ujumbe kwa ufupi:* Mwanariadha wetu nguli Peres Jepchirchir amefungiwa miaka mitatu na kuvuliwa medali ya Sydney Marathon kwa sababu ya doping. Hii ni aibu kwa taifa letu safi. Tuache njia za mkato!",
+    "voice_note": "Wadau, habari zenu. Hapa ni Kenya on Record. Je, mmesikia hii ya kusikitisha? Bingwa wetu Peres Jepchirchir amepewa marufuku ya miaka mitatu ya kutokimbia na kunyang'anywa medali ya dhahabu ya Sydney Marathon baada ya kuanguka kwenye mtihani wa doping. Yaani dawa za marufuku! Hii inachafua jina la Kenya nzuri sana. Tunapiga kelele kila siku: michezo safi ndiyo fahari yetu. Vijana wetu wanaotoka Eldoret na kote nchini wanafanya kazi kwa jasho, alafu wachache wanatuharibia sifa kwa tamaa za mkato. Serikali na mashirikisho lazima wasafishe hizi kambi na kuwakomesha madaktari feki wanaowapotosha wanariadha wetu. Tuambie huko kwenye magroup yenu: Je, ni adhabu gani inafaa kwa hawa wanaotuaibisha kimataifa?",
+    "sms": "Usiibiwe na njia za mkato! Doping inaharibu vipaji na kuleta aibu kitaifa. Michezo safi ndiyo fahari halisi ya Kenya. Simama na ukweli. Kenya on Record.",
+    "reels": "Mchezo mchafu umezua aibu nyingine nzito nyumbani na duniani! Bingwa wetu wa riadha, Peres Jepchirchir, amefungiwa miaka mitatu kamili na kupokonywa medali yake ya dhahabu ya Sydney Marathon baada ya kupatikana na hatia ya doping. Miaka mitatu nje! Hii ndiyo bei ya njia za mkato na tamaa inayoua jasho la mamilioni ya Wakenya wanaojituma kwa uaminifu. Ukweli haujifichi kwenye track. Je, ni wakati gani tutasafisha sekta hii mara moja na milele? Acha maoni yako hapa chini, na ufuate Kenya on Record kwa ukweli usiotiwa sukari."
   },
   "spend_usd": 0.0
 }
