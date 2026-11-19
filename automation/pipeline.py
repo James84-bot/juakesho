@@ -3206,10 +3206,12 @@ def _main(argv: list[str] | None = None) -> int:
                           if "generateContent" in m.get("supportedGenerationMethods", [])]
             flash = [m for m in listed if "flash" in m and not re.search(r"image|tts|audio|live|exp|preview", m)]
             log(f"aicheck: {len(listed)} Gemini models; Flash text models: {', '.join(flash)}")
-            for m in flash:   # one plain request each, no retries: what this model does right now
-                t0 = time.time()
+            for m in flash + [f"{x}#low" for x in flash if "lite" not in x]:   # each once, no retries; "#low": with
+                t0 = time.time()                                                # thinkingLevel low (Gemini 3)
+                low, m = m.endswith("#low"), m.removesuffix("#low")
+                cfg = {"maxOutputTokens": 2000, **({"thinkingConfig": {"thinkingLevel": "low"}} if low else {})}
                 body = json.dumps({"contents": [{"role": "user", "parts": [{"text": "Say OK."}]}],
-                                   "generationConfig": {"maxOutputTokens": 2000}}).encode()
+                                   "generationConfig": cfg}).encode()
                 req = urllib.request.Request(drafter.GEMINI_URL.format(model=m), data=body, method="POST",
                                              headers={"x-goog-api-key": key, "Content-Type": "application/json"})
                 try:
@@ -3217,7 +3219,7 @@ def _main(argv: list[str] | None = None) -> int:
                         got = json.loads(r.read())
                     text = "".join(p.get("text", "") for c in got.get("candidates", [])[:1]
                                    for p in (c.get("content") or {}).get("parts", []) if not p.get("thought"))
-                    log(f"aicheck {m}: '{text.strip()[:20]}' in {time.time() - t0:.1f}s")
+                    log(f"aicheck {m}{' (thinking low)' if low else ''}: '{text.strip()[:20]}' in {time.time() - t0:.1f}s")
                 except urllib.error.HTTPError as e:
                     full = e.read().decode(errors="replace")
                     quota = sorted(set(re.findall(r'"quotaId":\s*"([^"]+)"', full)))

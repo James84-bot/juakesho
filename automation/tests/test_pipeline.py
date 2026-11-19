@@ -1675,6 +1675,37 @@ class FreeBackupTests(FreshWriter):
         self.assertIn("Nothing for you to do", pl.failure_text(got))
 
 
+class ThinkingLevelTests(FreshWriter):
+    def test_picture_checks_ask_for_little_thinking_and_survive_a_model_without_levels(self):
+        import io
+        import urllib.error
+        import draft as drafter
+        bodies = []
+
+        def answer(req, timeout=180):
+            body = json.loads(req.data)
+            bodies.append(body["generationConfig"])
+            if "thinkingConfig" in body["generationConfig"]:
+                raise urllib.error.HTTPError(req.full_url, 400, "bad", {}, io.BytesIO(
+                    b'{"error":{"message":"Unknown name \\"thinkingLevel\\" at generation_config.thinking_config"}}'))
+
+            class R(io.BytesIO):
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, *a):
+                    return False
+            return R(json.dumps({"candidates": [{"content": {"parts": [{"text": "plain"}]}}]}).encode())
+        with mock.patch.dict(os.environ, {"GEMINI_API_KEY": "g", "JUA_PROVIDER": "", "JUA_PAID_OK": ""}), \
+                mock.patch.object(drafter.time, "sleep", lambda s: None), \
+                mock.patch.dict(drafter.SPEND, {"calls": 0}), mock.patch.object(drafter, "NO_THINK_LEVEL", set()), \
+                mock.patch.object(drafter.urllib.request, "urlopen", answer):
+            self.assertEqual(drafter.look_at(_tiny_jpeg(), "q"), "plain")
+            self.assertEqual(drafter.look_at(_tiny_jpeg(), "q"), "plain")
+        self.assertEqual(bodies[0]["thinkingConfig"], {"thinkingLevel": "low"})
+        self.assertEqual([("thinkingConfig" in b) for b in bodies], [True, False, False])   # learned once
+
+
 class NoCostTests(FreshWriter):
     """19 Nov: "no cost". The paid Claude API is never called unless JUA_PAID_OK=yes, whatever keys exist."""
 

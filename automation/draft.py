@@ -1145,7 +1145,10 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
             return None
         body = {"contents": [{"role": "user", "parts": [{"inlineData": {"mimeType": "image/jpeg", "data": b64}},
                                                         {"text": ask}]}],
-                "generationConfig": {"maxOutputTokens": 400 + GEMINI_THINK_ROOM, "temperature": 0}}
+                "generationConfig": {"maxOutputTokens": 400 + GEMINI_THINK_ROOM, "temperature": 0,
+                                     # a yes/no about a picture needs little reasoning: Gemini 3 thinks "high" by
+                                     # default and a second look took eight minutes on 19 Nov
+                                     "thinkingConfig": {"thinkingLevel": "low"}}}
         for m in (GEMINI_SEE_STRONG if strong else GEMINI_SEE_CHEAP):
             if _skip(m):
                 continue
@@ -1183,10 +1186,15 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
     raise RuntimeError("no model could look at the picture: " + ("; ".join(errors) or "no key set"))
 
 
+NO_THINK_LEVEL: set[str] = set()   # models that refused thinkingConfig.thinkingLevel (asked again without it)
+
+
 def _look_gemini(body: dict, model: str) -> str:
     key = os.environ["GEMINI_API_KEY"].strip()
     if model in USED_UP:
         raise RuntimeError(f"Gemini 429 ({model}): today's free quota is used up")
+    if model in NO_THINK_LEVEL and "thinkingConfig" in body.get("generationConfig", {}):
+        body = {**body, "generationConfig": {k: v for k, v in body["generationConfig"].items() if k != "thinkingConfig"}}
     if SPEND["calls"]:
         time.sleep(GEMINI_LIMITS["pause"])   # the same free per-minute limit as the writer
     req = urllib.request.Request(GEMINI_URL.format(model=model), data=json.dumps(body).encode(), method="POST",
@@ -1206,6 +1214,9 @@ def _look_gemini(body: dict, model: str) -> str:
             detail = full[:400]
             if _used_up(e.code, full, model):
                 raise RuntimeError(f"Gemini 429 ({model}): today's free quota is used up") from e
+            if e.code == 400 and re.search(r"thinking", full, re.I) and model not in NO_THINK_LEVEL:
+                NO_THINK_LEVEL.add(model)   # an older model without thinking levels: the same question, plainly
+                return _look_gemini(body, model)
             if e.code in (429, 500, 502, 503, 504) and attempt == 0:
                 time.sleep(min(_retry_delay(full) or float(e.headers.get("retry-after") or 0) or 20, 65))
                 continue
