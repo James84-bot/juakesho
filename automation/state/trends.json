@@ -1,210 +1,211 @@
 {
-  "fetched": "2026-11-19T06:16:08.929499+00:00",
+  "fetched": "2026-11-19T12:06:13.936866+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "chelsea vs psg",
-      "traffic": "5000+",
+      "title": "gta vi game",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Chelsea 1-0 PSG: Late goal boosts Women's Champions League last-eight hopes",
-          "url": "https://www.bbc.com/sport/football/live/cx24e3j2228vt",
-          "source": "BBC"
-        },
-        {
-          "title": "Chelsea 1-0 Paris Saint-Germain: Women’s Champions League – as it happened",
-          "url": "https://www.theguardian.com/football/live/2026/nov/18/chelsea-v-paris-saint-germain-psg-womens-champions-league-live-score-updates",
+          "title": "Grand Theft Auto VI review – gaming’s most depraved world is now also its greatest love story",
+          "url": "https://www.theguardian.com/games/2026/nov/18/grand-theft-auto-vi-gta-6-review-playstation-rockstar",
           "source": "The Guardian"
         },
         {
-          "title": "Chelsea 1-0 PSG: Veerle Buurman scores late winner as Sonia Bompastor's side go top of Women's Champions League table",
-          "url": "https://www.skysports.com/football/news/13613600/chelsea-1-0-psg-veerle-buurman-scores-late-winner-as-sonia-bompastors-side-go-top-of-womens-champions-league-table",
-          "source": "Sky Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya state of the nation address",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "President Ruto: My economic record and promise",
-          "url": "https://www.businessdailyafrica.com/bd/economy/ruto-my-economic-record-and-promise-5675876",
-          "source": "Business Daily"
+          "title": "Grand Theft Auto 6 released after 13-year wait for gamers around the world - follow live",
+          "url": "https://www.bbc.com/news/live/c60rkg21dl22t",
+          "source": "BBC"
         },
         {
-          "title": "Beyond Vision 2030: Ruto invites Kenyans to shape country’s next development chapter",
-          "url": "https://nation.africa/kenya/news/beyond-vision-2030-ruto-invites-kenyans-to-shape-country-s-next-development-chapter-5675942",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Sifuna dismisses Ruto's State address as a cover-up for rights abuses",
-          "url": "https://www.standardmedia.co.ke/politics/article/2001562564/sifuna-dismisses-rutos-state-address-as-a-cover-up-for-rights-abuses",
-          "source": "The Standard"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "vodacom",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Stanbic freezes Vodacom’s Sh9bn over Safaricom sale",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/stanbic-freezes-vodacom-s-sh9bn-over-safaricom-sale-5675866",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Op-Ed: Vodacom's investment appeal faces key tests",
-          "url": "https://itweb.africa/article/op-ed-vodacoms-investment-appeal-faces-key-tests/j5alr7QAXJY7pYQk",
-          "source": "ITWeb Africa"
-        },
-        {
-          "title": "Impressive Earnings May Not Tell The Whole Story For Vodacom Group (JSE:VOD)",
-          "url": "https://simplywall.st/stocks/za/telecom/jse-vod/vodacom-group-shares/news/impressive-earnings-may-not-tell-the-whole-story-for-vodacom",
-          "source": "Simply Wall St"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mavericks vs warriors",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "NBA: Golden State Warriors at Dallas Mavericks",
-          "url": "https://www.reutersconnect.com/item/nba-golden-state-warriors-at-dallas-mavericks/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAzNjkyMjE%3D?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "Cooper Flagg with a monster 33/5/9/3 in win",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-18/cooper-flagg-with-a-monster-33-5-9-3-in-win",
-          "source": "NBC Sports"
-        },
-        {
-          "title": "APTOPIX Warriors Mavericks Basketball",
-          "url": "https://www.cleburnetimesreview.com/texas/sports/aptopix-warriors-mavericks-basketball/image_7a65afbb-acfb-51de-a75a-2ce7737722b8.html",
-          "source": "Cleburne Times-Review"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "nz vs ind",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Nicholls ton leads New Zealand fightback to 243-5 in first India Test",
-          "url": "https://www.afp.com/en/nicholls-ton-leads-new-zealand-fightback-243-5-first-india-test",
-          "source": "AFP.com"
-        },
-        {
-          "title": "Tom Latham joins list of most ducks by openers in Test cricket",
-          "url": "https://www.indiagazette.com/news/279441831/tom-latham-joins-list-of-most-ducks-by-openers-in-test-cricket",
-          "source": "https://www.indiagazette.com/"
-        },
-        {
-          "title": "Henry Nicholls joins Kane Williamson, Martin Crowe in elite list with century against India",
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/henry-nicholls-joins-kane-williamson-martin-crowe-in-elite-list-with-century-against-india/articleshow/135978657.cms",
-          "source": "The Times of India"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "confederation of african football",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "M4STV named host broadcaster for CAF Awards, 48th Assembly",
-          "url": "https://guardian.ng/sport/m4stv-named-host-broadcaster-for-caf-awards-48th-assembly/",
-          "source": "The Guardian Nigeria News"
-        },
-        {
-          "title": "Motsepe arrives Abuja for 48th CAF Ordinary General Assembly",
-          "url": "https://www.premiumtimesng.com/sports/football/926317-motsepe-arrives-abuja-for-48th-caf-ordinary-general-assembly.html",
-          "source": "Premium Times Nigeria"
-        },
-        {
-          "title": "Motsepe leads CAF delegation to Nigeria for General Assembly",
-          "url": "https://businessday.ng/sports/article/motsepe-leads-caf-delegation-to-nigeria-for-general-assembly/",
-          "source": "Business News Nigeria"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "coritiba vs santos",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Gabigol relembra treta do primeiro turno e aposta em queda do Coritiba",
-          "url": "https://www.cartacapital.com.br/esporte/gabigol-relembra-treta-do-primeiro-turno-e-aposta-em-queda-do-coritiba/",
-          "source": "CartaCapital"
-        },
-        {
-          "title": "Bem rapidinho: o que foi notícia nesta quarta-feira, 18 de novembro",
-          "url": "https://www.bemparana.com.br/noticias/parana/bem-rapidinho-o-que-foi-noticia-nesta-quarta-feira-18-de-novembro/",
-          "source": "Bem Paraná"
-        },
-        {
-          "title": "Com volta de Neymar, Santos está escalado para enfrentar o Coritiba",
-          "url": "https://www.lance.com.br/santos/com-volta-de-neymar-santos-esta-escalado-para-enfrentar-o-coritiba.html",
-          "source": "LANCE!"
+          "title": "‘Grand Theft Auto VI’ is an astonishing American epic",
+          "url": "https://www.washingtonpost.com/entertainment/video-games/2026/11/18/grand-theft-auto-vi-is-an-astonishing-american-epic/",
+          "source": "The Washington Post"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "international mens day",
-      "traffic": "100+",
+      "traffic": "2000+",
       "news": [
+        {
+          "title": "Happy International Men’s Day November 19 – ‘The Future is Everyone’",
+          "url": "https://www.freep.com/press-release/story/274838/happy-international-mens-day-november-19-the-future-is-everyone/",
+          "source": "Detroit Free Press"
+        },
+        {
+          "title": "International Men’s Day: 5 thoughtful gift ideas to make the important men in your life feel appreciated, valued and special",
+          "url": "https://timesofindia.indiatimes.com/life-style/home-garden/international-mens-day-5-thoughtful-gift-ideas-to-make-the-important-men-in-your-life-feel-appreciated-valued-and-special/photostory/135946841.cms",
+          "source": "The Times of India"
+        },
         {
           "title": "The Future Is Everyone",
           "url": "https://www.eviemagazine.com/post/the-future-is-everyone",
           "source": "Evie Magazine"
-        },
-        {
-          "title": "85+ Happy International Men’s Day Messages, Greetings Card, Wishes and Quotes for 2026",
-          "url": "https://timesofindia.indiatimes.com/etimes/trending/75-happy-international-mens-day-messages-greetings-card-wishes-gifs-facebook-instagram-and-quotes-for-2026/articleshow/135948400.cms",
-          "source": "The Times of India"
-        },
-        {
-          "title": "International Men's Day 2026: 10 Messages To Share On WhatsApp And Instagram Status",
-          "url": "https://www.ndtv.com/offbeat/international-mens-day-2026-10-messages-to-share-on-whatsapp-and-instagram-status-12346839",
-          "source": "NDTV"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "a",
-      "traffic": "100+",
+      "title": "fraud",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Anthropic IPO raises over $81 billion in largest offering on record, topping SpaceX",
-          "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html",
-          "source": "CNBC"
+          "title": "Fraud Has a Shape: Stop Scams UK and Persona on Closing the Gaps Before Criminals Find Them",
+          "url": "https://ffnews.com/thought-leadership/fraud-has-a-shape-stop-scams-uk-and-persona-on-closing-the-gaps-before-criminals-find-them",
+          "source": "FF News"
         },
         {
-          "title": "World in Brief: Anthropic’s IPO price; Trump, Xi and Putin to meet in China",
-          "url": "https://www.economist.com/the-world-in-brief/2026/11/19/0c5ad52e-788f-4da5-a8ee-2970714c4644",
-          "source": "The Economist"
+          "title": "There's a Bigger Picture to Tax Fraud",
+          "url": "https://insider.govtech.com/texas/sponsored/theres-a-bigger-picture-to-tax-fraud",
+          "source": "GovTech"
         },
         {
-          "title": "Anthropic IPO live: Company said to price stock at $83, begin trading Thursday",
-          "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-company-said-to-price-stock-at-83-begin-trading-thursday-212656452.html",
-          "source": "Yahoo Finance"
+          "title": "FacePhi Biometría S A : presents The New Fraud Frontier 2027, an analysis of emerging threats, their impact across six regions and the risks organizations will need to anticipate",
+          "url": "https://www.marketscreener.com/news/facephi-biometr-a-s-a-presents-the-new-fraud-frontier-2027-an-analysis-of-emerging-threats-their-ce785ed2d88df12d",
+          "source": "www.marketscreener.com"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "toll",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Details of Proposed Toll Fees on Nairobi-Thika Highway & Southern Bypass",
+          "url": "https://www.kenyans.co.ke/news/129520-treasury-proposes-toll-fees-nairobi-thika-road-among-other-major-highways",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Nairobi–Thika Road: How much more will commuters pay under new toll plan?",
+          "url": "https://peopledaily.digital/business/nairobi-thika-road-how-much-more-will-commuters-pay-under-new-toll-plan",
+          "source": "People Daily"
+        },
+        {
+          "title": "Nairobi–Thika highway motorists to pay tolls under proposed Sh100bn road project",
+          "url": "https://capitalfm.africa/nairobi-thika-highway-motorists-to-pay-tolls-under-proposed-sh100bn-road-project/",
+          "source": "Capital FM Africa"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "health care",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "The Power of Rural: Preparing Kentucky’s health workforce, expanding access and strengthening communities",
+          "url": "https://uknow.uky.edu/uk-healthcare/power-rural-preparing-kentucky-s-health-workforce-expanding-access-and-strengthening",
+          "source": "UKNow"
+        },
+        {
+          "title": "GAO Report Offers New Insight into Rural Health Transformation Program Funding and Oversight",
+          "url": "https://leadingage.org/gao-report-offers-new-insight-into-rural-health-transformation-program-funding-and-oversight/",
+          "source": "LeadingAge"
+        },
+        {
+          "title": "Hazel: Invest in rural healthcare by investing in its people",
+          "url": "https://cardinalnews.org/2026/11/19/hazel-invest-in-rural-healthcare-by-investing-in-its-people/",
+          "source": "Cardinal News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "baboons",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Eagles preying on human-sized baboons upend existing evolutionary defense theory",
+          "url": "https://phys.org/news/2026-11-eagles-preying-human-sized-baboons.html",
+          "source": "Phys.org"
+        },
+        {
+          "title": "speculative face- off between an adult male baboon and Verreaux's eagle (IMAGE)",
+          "url": "https://www.eurekalert.org/multimedia/1162242",
+          "source": "EurekAlert!"
+        },
+        {
+          "title": "Could eagles have hunted our early human ancestors?",
+          "url": "https://www.techlicious.com/blog/could-eagles-have-hunted-our-early-human-ancestors/",
+          "source": "Techlicious"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mykhailo mudryk",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Mykhailo Mudryk: Ukrainian Association of Football blamed for failed drugs test",
+          "url": "https://www.bbc.com/sport/football/articles/cr930l71z5ejo",
+          "source": "BBC"
+        },
+        {
+          "title": "'They turned their backs!' - Chelsea loanee Mykhailo Mudryk blames Ukrainian FA for 'nightmare' doping ban and reveals MILLIONS spent on legal battle",
+          "url": "https://www.goal.com/en-ke/news/mykhailo-mudryk-ukrainian-fa-doping-ban-chelsea/blt03af34c96befe026",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Mudryk says Xabi Alonso sent him to Tottenham to play and wants him back at Chelsea",
+          "url": "https://www.livescore.com/en/news/football/club-world-cup/mudryk-says-xabi-alonso-sent-him-to-tottenham-to-play-and-wants-him-back-at-chelsea-chelsea-news/",
+          "source": "LiveScore"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bribery",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Employee Of Major City-Forming Enterprise Arrested For Bribery",
+          "url": "https://reform.news/en/employee-of-major-city-forming-enterprise-arrested-for-bribery/",
+          "source": "REFORM.news"
+        },
+        {
+          "title": "Hawaii campaign spending panel denies request to tap coffers for bribery defense",
+          "url": "https://www.staradvertiser.com/2026/11/19/hawaii-news/request-to-tap-coffers-for-bribery-defense-denied-by-hawaii-campaign-spending-commission/",
+          "source": "Honolulu Star-Advertiser"
+        },
+        {
+          "title": "Former Incheon Council Members Jailed 10-12 Years for Bribery",
+          "url": "https://www.chosun.com/english/national-en/2026/11/19/IQNXUECBSZA5RELND3X6GQI5EE/",
+          "source": "조선일보"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "lakers vs jazz",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Jazz upset Lakers, Sixers comeback thwarts Magic",
+          "url": "https://www.afp.com/en/jazz-upset-lakers-sixers-comeback-thwarts-magic",
+          "source": "AFP.com"
+        },
+        {
+          "title": "“I asked the guys, ‘Who in here feels like they played …",
+          "url": "https://sports.yahoo.com/articles/asked-guys-feels-played-111147460.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "“I’m not gonna overreact to a bad offensive night for us” – JJ Redick brushes off Lakers’ ugly loss to lowly Jazz",
+          "url": "https://www.basketballnetwork.net/latest-news/jj-redick-brushes-off-lakers-ugly-loss-to-lowly-jazz",
+          "source": "Basketball Network"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "lakers vs jazz",
-      "why": "unsafe: 'Odds'"
+      "title": "farmer",
+      "why": "unsafe: 'death'"
     }
   ],
   "errors": {}

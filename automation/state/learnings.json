@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T01:09:17.781850+03:00",
+  "updated": "2026-11-19T15:06:02.726884+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -69,25 +69,12 @@
   ],
   "bottom": [
     {
-      "id": "2026-w47-hot-1116m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "EACC wants Sh40.3 million back from a roads boss.",
-      "reach": 12,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 4.5
-    },
-    {
       "id": "2026-w47-hot-1117e",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
       "opening": "The World Bank warned Kenya over billion-shilling corruption losses.",
-      "reach": 7,
+      "reach": 8,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -106,6 +93,19 @@
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 3.2
+    },
+    {
+      "id": "2026-w47-hot-1118-r2",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
+      "reach": 13,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.6
     }
   ],
   "all": [
@@ -230,9 +230,9 @@
       "id": "2026-w46-hot-1110",
       "series": "sauti",
       "lane": "everyone",
-      "score": 6.3,
+      "score": 6.2,
       "opening": "KRA's new 15% tax directive hits our pockets this week.",
-      "reach": 19,
+      "reach": 20,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -302,7 +302,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.0
+      "avg_watch_s": 4.8
     },
     {
       "id": "2026-w46-d7-glasspoll",
@@ -596,7 +596,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "reach": 39,
+      "reach": 41,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -739,7 +739,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "The World Bank warned Kenya over billion-shilling corruption losses.",
-      "reach": 7,
+      "reach": 8,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -758,6 +758,19 @@
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 3.2
+    },
+    {
+      "id": "2026-w47-hot-1118-r2",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
+      "reach": 13,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.6
     }
   ],
   "youtube": [
@@ -773,7 +786,7 @@
       "id": "2026-w47-hot-1117e",
       "series": "sauti",
       "opening": "The World Bank warned Kenya over billion-shilling corruption losses.",
-      "views": 648,
+      "views": 655,
       "likes": 0,
       "comments": 0
     },
@@ -789,7 +802,7 @@
       "id": "2026-w45-hot-1108-r4",
       "series": "sauti",
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "views": 466,
+      "views": 467,
       "likes": 0,
       "comments": 0
     },
@@ -813,7 +826,7 @@
       "id": "2026-w46-hot-1115",
       "series": "sauti",
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
-      "views": 340,
+      "views": 338,
       "likes": 0,
       "comments": 0
     },
@@ -885,8 +898,16 @@
       "id": "2026-w47-hot-1116",
       "series": "sauti",
       "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "views": 143,
+      "views": 144,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1118-r2",
+      "series": "sauti",
+      "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
+      "views": 132,
+      "likes": 0,
       "comments": 0
     },
     {
@@ -917,7 +938,7 @@
       "id": "2026-w46-hot-1114m",
       "series": "sauti",
       "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
-      "views": 104,
+      "views": 107,
       "likes": 0,
       "comments": 0
     },
@@ -925,7 +946,7 @@
       "id": "2026-w47-hot-1117",
       "series": "sauti",
       "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
-      "views": 90,
+      "views": 92,
       "likes": 0,
       "comments": 0
     },
@@ -1005,7 +1026,7 @@
       "id": "2026-w46-d7-glasspoll",
       "series": "glasspoll",
       "opening": "Opposition leaders are moving to consolidate regional support.",
-      "views": 50,
+      "views": 52,
       "likes": 0,
       "comments": 0
     },
@@ -1013,7 +1034,7 @@
       "id": "2026-w46-d6-kenya",
       "series": "kenya",
       "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "views": 48,
+      "views": 49,
       "likes": 0,
       "comments": 0
     },
@@ -1061,7 +1082,7 @@
       "id": "2026-w47-d1-usiibiwe",
       "series": "usiibiwe",
       "opening": "Banks in Kenya warn that fake SMS alerts target mobile accounts.",
-      "views": 18,
+      "views": 21,
       "likes": 0,
       "comments": 0
     },
