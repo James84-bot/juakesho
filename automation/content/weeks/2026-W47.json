@@ -1474,7 +1474,7 @@
           "published": "2026-11-18"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 5.7/10. Remove the generic hashtag and connect the Sh1.5 billion saving directly to the specific local printing company that got the tender."
@@ -1532,7 +1532,14 @@
       "reel": true,
       "tg_msg": 1252,
       "photo_checked": "2026-11-19T03:26:50.538820+03:00",
-      "decided_at": "2026-11-19T08:58:01.284655+03:00"
+      "decided_at": "2026-11-19T08:58:01.284655+03:00",
+      "published_at": "2026-11-19T18:32:35.571060+03:00",
+      "ig_id": "18110230973116996",
+      "fb_id": "1641286797532502",
+      "story_id": "18024033206949075",
+      "fb_story_id": "2934754433565459",
+      "yt_id": "KKgItvU-tgw",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-hot-1119",
