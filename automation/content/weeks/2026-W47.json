@@ -1831,7 +1831,7 @@
           "link": "https://www.tuko.co.ke/politics/647331-opposition-leaders-storm-iebc-meeting-disagreement/"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1884,7 +1884,14 @@
       "reel": true,
       "tg_msg": 1295,
       "auto": true,
-      "decided_at": "2026-11-19T17:53:17.009462+03:00"
+      "decided_at": "2026-11-19T17:53:17.009462+03:00",
+      "published_at": "2026-11-19T18:05:17.487530+03:00",
+      "ig_id": "18113594258244667",
+      "fb_id": "1191970810065512",
+      "story_id": "18660121948060136",
+      "fb_story_id": "1191506380500936",
+      "yt_id": "xL72tOJ0-gI",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
