@@ -64,8 +64,8 @@ def from_text(paras: list[str]) -> list[dict]:
                 continue
             after, before = p[m.end():m.end() + 80], p[max(0, m.start() - 120):m.start()]
             who = _speaker(after) or _speaker(before)
-            if who:
-                found.append({"text": words.rstrip(" ,"), "speaker": who})
+            if who:   # the paragraph goes with it: who the speaker is ("Kepsa chief executive...") is in the report's words
+                found.append({"text": words.rstrip(" ,"), "speaker": who, "context": p[:320]})
     seen, out = set(), []
     for q in found:
         k = norm(q["text"])

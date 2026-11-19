@@ -345,7 +345,9 @@ shows: does it clearly show {words} (the thing itself, not something merely near
 good: is it sharp, well lit and steady enough for a professional news video (not blurry, dark, grainy or cartoonish)?
 person: could a viewer recognise anyone, or take them for someone in the story: a face clearly visible, or a person
 filling a large part of the frame? Small distant figures don't count, nor do car lights and wheels.
-Return ONLY JSON: {{"shows": true or false, "good": true or false, "person": true or false, "why": "under 12 words"}}"""
+foreign: does it clearly show a particular place outside Kenya: a known landmark, a parliament or government building,
+a recognisable city skyline, or signs in a non-Latin script? (A generic scene that could be anywhere is not foreign.)
+Return ONLY JSON: {{"shows": true or false, "good": true or false, "person": true or false, "foreign": true or false, "why": "under 12 words"}}"""
 
 
 def _grab(clip: Path, t: float) -> bytes:
@@ -380,6 +382,8 @@ def footage_problem(clip: Path, subject: str, words: list[str], times: tuple = B
         return f"not good enough to use ({str(got.get('why') or '')[:60]})"
     if got.get("person") is not False:
         return f"a person shows ({str(got.get('why') or '')[:60]})"
+    if got.get("foreign") is True:   # 19 Nov: Seoul's National Assembly under a line about Kenya's MPs
+        return f"shows a place outside Kenya ({str(got.get('why') or '')[:60]})"
     for t, data in frames:
         if data is mid or photos.faces_ok(data, 0.02):
             continue

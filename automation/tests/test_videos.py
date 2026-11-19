@@ -336,3 +336,12 @@ class ShortClips(unittest.TestCase):
                 mock.patch("draft.look_at", lambda data, ask, strong=False: '{"shows": true, "good": true, "person": false}'):
             self.assertEqual(videos.footage_problem(Path("c.mp4"), "fuel", ["fuel"]), "")
         self.assertEqual(asked, [0.5, 3.0, 6.0, 9.0, 12.0])   # 15 s and 18.5 s are past its end (14.7 s)
+
+
+class ForeignPlaces(unittest.TestCase):
+    def test_a_foreign_parliament_is_not_illustrative_footage_for_kenya(self):
+        with mock.patch.object(videos, "_duration", lambda c: 20.0), mock.patch.object(videos, "_grab", lambda clip, t: b"f"), \
+                mock.patch.object(videos.photos, "faces_ok", lambda data, share=None: True), \
+                mock.patch("draft.look_at", lambda data, ask, strong=False:
+                           '{"shows": true, "good": true, "person": false, "foreign": true, "why": "Seoul National Assembly dome"}'):
+            self.assertIn("outside Kenya", videos.footage_problem(Path("c.mp4"), "MPs removed a fine", ["assembly"]))

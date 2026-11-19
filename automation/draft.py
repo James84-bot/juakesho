@@ -1406,8 +1406,9 @@ VOICE_RULES = """You edit the script (beats) of a Kenyan news Reel so it deliver
 You are given the script and the direct quotes its reports printed, each with the speaker the report names.
 Rework the script so ONE beat gives the most telling quote in the speaker's own words, written exactly as:
   Speaker: “exact words”
-- Speaker is the name as the report gives it, plus a short role when the report gives one (e.g. "Ruto", "CS Kindiki",
-  "MP Kimani Ichung'wah"). No other text on that beat.
+- Speaker is the name as the report gives it, with a short role ONLY as the report's own paragraph states it (given
+  after each quote), so a viewer knows who is talking (e.g. "President Ruto", "Treasury CS Mbadi", "Kepsa's Ms Kagiri").
+  Never guess a role. No other text on that beat.
 - The words are copied EXACTLY as printed: a run of consecutive words from ONE quote. You may start or stop inside the
   quote; never change, add, translate, or join words, never use "..." or an ellipsis. At most 24 words.
 - Keep 3 or 4 beats. Beat 1 stays the news in one plain sentence. The last beat stays the question to the viewer.
@@ -1434,7 +1435,7 @@ def add_voices(posts: list[dict], get=None, call=None) -> list[dict]:
         if not found:
             print(f"  quotes for {p.get('id')}: none in its reports")
             continue
-        listed = "\n".join(f'- {q["speaker"]} ({q["outlet"]}): “{q["text"]}”' for q in found)
+        listed = "\n".join(f'- {q["speaker"]} ({q["outlet"]}): “{q["text"]}”\n  the report: {q.get("context", "")}' for q in found)
         try:
             got = extract_json(call(VOICE_RULES, f"SCRIPT:\n{json.dumps(p['beats'], ensure_ascii=False)}\n\nQUOTES:\n{listed}",
                                     max_tokens=1500))
