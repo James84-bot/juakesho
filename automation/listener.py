@@ -7,10 +7,13 @@ inside a GitHub Actions job for ~5h45m at a time (free on a public repo) and:
   * answers every ✅/❌/🎵 tap within seconds, so the button stops spinning and you know it landed;
   * starts the autopilot `tick` run right away (taps a few seconds apart share one run);
   * acknowledges clips and photos you send (the tick run makes the Reel or swaps the post's picture);
-  * keeps the clock for the daily hot post (09:05 EAT) and Sunday's new week (17:00 EAT); the autopilot's own
-    schedule stays as a backup, and the commands are safe to run twice; Wednesday's run writes Friday-Sunday;
+  * keeps the whole clock: the four daily news editions, the breaking-news checks, the two-hourly tick, Sunday's
+    new week, Wednesday's Friday-Sunday drafts and Saturday's weekly show. The autopilot's own schedule stays as a
+    backup and the commands are safe to run twice (on 19 Nov the schedule started the 06:35 morning run at 15:04);
   * starts `tick` the moment an approved post is due, so it publishes on time instead of whenever the
-    schedule wakes up (a post that is too late is skipped as missed, so this matters).
+    schedule wakes up (a post that is too late is skipped as missed, so this matters);
+  * starts a run only while no other autopilot run is waiting: GitHub keeps one waiting run per group and a newer
+    one cancels it, so two quick starts would silently lose the first. Commands wait their turn here instead.
 
 It never applies a decision itself and never confirms updates to Telegram (no getUpdates offset), so the
 autopilot's collect() still reads every tap and stays the only writer of state. Standard library only.
@@ -89,15 +92,37 @@ def schedule() -> list[tuple[str, float]]:
     return out
 
 
-CLOCK = (("hot", None, 6, 5), ("week", 6, 14, 0), ("this-week", 2, 14, 0))   # Wed 17:00 EAT: write Fri-Sun   # (command, weekday Mon=0 or None for daily, UTC hour, minute)
+# (command, weekday Mon=0 or None for daily, UTC hour, minute): the same times as autopilot.yml's schedule
+CLOCK = (("hot --morning", None, 3, 35),     # 06:35 EAT, out 09:45
+         ("hot", None, 6, 5),                # 09:05 EAT, out 12:45
+         ("hot --afternoon", None, 9, 30),   # 12:30 EAT, out 15:30
+         ("hot --evening", None, 13, 5),     # 16:05 EAT, out 19:30
+         *(("hot --breaking", None, h, 40) for h in range(5, 18, 2)),   # 08:40-20:40 EAT
+         *(("tick", None, h, 20) for h in range(0, 24, 2)),
+         ("week", 6, 14, 0),                 # Sunday 17:00 EAT: next week
+         ("this-week", 2, 14, 10),           # Wednesday 17:10 EAT: Friday-Sunday
+         ("weekly", 5, 6, 0))                # Saturday 09:00 EAT: Kenya This Week
+WAITING = {"queued", "pending", "waiting", "requested"}
+PENDING_CHECK_SECONDS = 20     # how often to ask GitHub whether a run is still waiting, while one of ours is held
+REDO_DUE_SECONDS = 900         # a due post still unpublished this long after its run (cancelled?) gets another
+REDO_DUE_MAX = 3
+
+
+def waiting_runs() -> int:
+    """Autopilot runs not yet started (a newer dispatch would cancel the newest of them)."""
+    req = urllib.request.Request(
+        f"https://api.github.com/repos/{REPO}/actions/workflows/autopilot.yml/runs?per_page=20",
+        headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "Accept": "application/vnd.github+json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return sum(1 for x in json.loads(r.read()).get("workflow_runs", []) if x.get("status") in WAITING)
 
 
 def clock_due(utc, fired: set[str]) -> list[str]:
-    """Commands whose time came in the last hour and that this listener hasn't started yet."""
+    """Commands whose time came within the same clock hour and that this listener hasn't started yet."""
     out = []
     for command, weekday, hour, minute in CLOCK:
         start = utc.replace(hour=hour, minute=minute, second=0, microsecond=0)
-        key = f"{command}-{utc:%Y-%m-%d}"
+        key = f"{command}-{utc:%Y-%m-%d}-{hour:02d}"   # the tick and breaking checks come several times a day
         if (weekday is None or utc.weekday() == weekday) and start <= utc < start.replace(minute=0) + _HOUR and key not in fired:
             fired.add(key)
             out.append(command)
@@ -131,24 +156,56 @@ def run(minutes: float) -> None:
     seen: set[int] = set()
     due: float | None = None            # when to start the tick run
     first = True
-    started: set[str] = set()
-    fired: set[str] = set()             # clock commands already started by this listener           # posts already given a publishing run
+    started: dict[str, tuple[float, int]] = {}   # post key -> (when its publishing run was started, how many times)
+    fired: set[str] = set()             # clock commands already queued by this listener
+    queue: list[str] = []               # commands waiting for a free turn (no autopilot run waiting to start)
+    failures: dict[str, int] = {}
+    next_turn = 0.0
     upcoming: list[tuple[str, float]] = []
     next_check = 0.0
+
+    def enqueue(command: str) -> None:
+        if command not in queue:
+            queue.append(command)
+
+    def take_turn() -> None:
+        """Starts the first queued command once no autopilot run is waiting, so nothing is cancelled."""
+        nonlocal next_turn
+        if not queue or time.time() < next_turn:
+            return
+        next_turn = time.time() + PENDING_CHECK_SECONDS
+        try:
+            if waiting_runs():
+                return
+        except Exception as e:
+            log(f"run check failed ({e!r}); starting anyway")
+        command = queue.pop(0)
+        if dispatch(command):
+            log(f"started autopilot {command}")
+        elif failures.setdefault(command, 0) < 4:
+            failures[command] += 1
+            queue.insert(0, command)    # GitHub refused or the line dropped: try again on the next turn
+
     while time.time() < end:
         for command in clock_due(dt.datetime.fromtimestamp(time.time(), dt.timezone.utc), fired):
-            log(f"clock: starting {command}")
-            dispatch(command)
+            log(f"clock: {command}")
+            enqueue(command)
         if time.time() >= next_check:
             try:
                 upcoming = schedule()
             except Exception as e:
                 log(f"schedule read failed: {e!r}")
             next_check = time.time() + DUE_CHECK_SECONDS
-        ready = [k for k, at in upcoming if at <= time.time() and k not in started]
+        t = time.time()
+        ready = []
+        for key, at in upcoming:
+            when, n = started.get(key, (None, 0))
+            # a post still approved long after its run started: that run was cancelled or died, start another
+            if at <= t and (when is None or (t - when >= REDO_DUE_SECONDS and n < REDO_DUE_MAX)):
+                started[key] = (t, n + 1)
+                ready.append(key)
         if ready:
-            started.update(ready)
-            due = time.time() if due is None else min(due, time.time())
+            due = t if due is None else min(due, t)
             log(f"due now: {', '.join(ready)}")
         try:
             res = tg("getUpdates", {"timeout": 0, "allowed_updates": json.dumps(["callback_query", "message"])})
@@ -181,12 +238,20 @@ def run(minutes: float) -> None:
             log(f"{kind} {u['update_id']}: run queued")
         first = False
         if due is not None and time.time() >= due:
-            if dispatch("tick"):
-                log("started autopilot tick")
+            enqueue("tick")
             due = None
+        take_turn()
         time.sleep(POLL_SECONDS)
     if due is not None:                 # never drop a tap that came in during the last seconds
-        dispatch("tick")
+        enqueue("tick")
+    # the next listener knows nothing of this queue: hand every command over, each in its own turn (the job has
+    # ten minutes of room after LISTEN_MINUTES)
+    stop = time.time() + 8 * 60
+    while queue and time.time() < stop:
+        take_turn()
+        time.sleep(POLL_SECONDS)
+    if queue:   # starting now would cancel the run that is waiting; the next listener sees due posts and taps again
+        log(f"not started (a run was still waiting): {', '.join(queue)}")
 
 
 if __name__ == "__main__":

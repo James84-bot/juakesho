@@ -90,9 +90,56 @@ class ListenerTests(unittest.TestCase):
         sun = listener.dt.datetime(2026, 10, 18, 14, 3, tzinfo=utc)
         self.assertEqual(listener.clock_due(sun, fired), ["week"])
         self.assertEqual(listener.clock_due(sun, fired), [])
-        mon = listener.dt.datetime(2026, 10, 19, 6, 20, tzinfo=utc)
+        mon = listener.dt.datetime(2026, 10, 19, 6, 10, tzinfo=utc)
         self.assertEqual(listener.clock_due(mon, fired), ["hot"])
         self.assertEqual(listener.clock_due(mon.replace(hour=7, minute=10), set()), [])   # window over
+
+    def test_clock_keeps_every_edition_and_the_two_hourly_tick(self):
+        utc = listener.dt.timezone.utc
+        thu = listener.dt.datetime(2026, 11, 19, 0, 0, tzinfo=utc)
+        fired, got = set(), []
+        for minute in range(0, 24 * 60, 1):   # a whole day, minute by minute
+            got += [(c, f"{(thu + listener.dt.timedelta(minutes=minute)):%H:%M}")
+                    for c in listener.clock_due(thu + listener.dt.timedelta(minutes=minute), fired)]
+        self.assertIn(("hot --morning", "03:35"), got)     # 06:35 EAT: on 19 Nov the schedule started it at 15:04
+        self.assertIn(("hot", "06:05"), got)
+        self.assertIn(("hot --afternoon", "09:30"), got)
+        self.assertIn(("hot --evening", "13:05"), got)
+        self.assertEqual(sum(1 for c, _ in got if c == "hot --breaking"), 7)
+        self.assertEqual(sum(1 for c, _ in got if c == "tick"), 12)
+        self.assertNotIn("week", [c for c, _ in got])        # Thursday
+        sat = listener.dt.datetime(2026, 11, 21, 6, 0, tzinfo=utc)
+        self.assertIn("weekly", listener.clock_due(sat, set()))
+        wed = listener.dt.datetime(2026, 11, 18, 14, 10, tzinfo=utc)
+        self.assertIn("this-week", listener.clock_due(wed, set()))
+
+    def _run(self, minutes, schedule, waiting, clock_step=5, clock_from=0):
+        runs = []
+        clock = iter(range(clock_from, clock_from + 100_000, clock_step))
+        with mock.patch.dict(os.environ, {"TELEGRAM_CHAT_ID": CHAT}), \
+                mock.patch.object(listener, "tg", lambda m, f: {"result": []}), \
+                mock.patch.object(listener, "dispatch", lambda c: runs.append(c) or True), \
+                mock.patch.object(listener.time, "sleep", lambda s: None), \
+                mock.patch.object(listener, "schedule", schedule), \
+                mock.patch.object(listener, "waiting_runs", waiting), \
+                mock.patch.object(listener.time, "time", lambda: next(clock)):
+            listener.run(minutes=minutes)
+        return runs
+
+    def test_nothing_starts_while_another_run_waits(self):
+        # GitHub keeps one waiting run per group: a second start would cancel the first, so ours waits its turn
+        self.assertEqual(self._run(5, lambda: [("p1#0", 0.0)], lambda: 1), [])
+
+    def test_queued_commands_go_one_turn_at_a_time(self):
+        clock_from = int(listener.dt.datetime(2026, 11, 19, 3, 34, tzinfo=listener.dt.timezone.utc).timestamp())
+        answers = iter([0, 1, 1, 0] + [0] * 1000)
+        runs = self._run(6, lambda: [("p1#0", 0.0)], lambda: next(answers), clock_from=clock_from)
+        self.assertEqual(runs, ["tick", "hot --morning"])   # both started, never together
+
+    def test_a_due_post_whose_run_vanished_gets_another(self):
+        quiet = int(listener.dt.datetime(2026, 11, 19, 0, 30, tzinfo=listener.dt.timezone.utc).timestamp())
+        runs = self._run(40, lambda: [("p1#0", 0.0)], lambda: 0, clock_step=1, clock_from=quiet)   # no clock run due
+        self.assertEqual(runs, ["tick", "tick", "tick"])   # 0, 15 and 30 minutes: the post never went out
 
 
 if __name__ == "__main__":

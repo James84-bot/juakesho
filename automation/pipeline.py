@@ -233,6 +233,53 @@ def _earlier_slot(want: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.t
     return next((t for t in candidates if lo <= t <= hi and all(abs(t - x) >= gap for x in taken)), None)
 
 
+SKIPPED_EDITIONS = "editions_skipped.json"   # {date: [edition, ...]}: tried today, nothing to post; not retried
+
+
+def _skip_edition(edition: str) -> None:
+    path = STATE / SKIPPED_EDITIONS
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        data = {}
+    today = str(now().date())
+    data = {today: sorted(set(data.get(today, [])) | {edition})}   # only today matters
+    STATE.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data), encoding="utf-8")
+
+
+def due_editions(at: dt.datetime | None = None) -> list[str]:
+    """News editions whose run should have happened by now and never did. GitHub's schedule is best-effort (19 Nov:
+    the 06:35 morning run started at 15:04), a newer queued run cancels an older waiting one, and a run can die
+    halfway, so the tick looks for these and writes them itself: a missed run costs minutes, not the post.
+    An edition is due from its slot minus the approval lead (morning 06:45, midday 09:45, afternoon 12:30,
+    evening 16:30 EAT; the listener starts each a little earlier) until it is planned, or tried and skipped."""
+    at = at or now()
+    label = current_week_label(ahead=0)
+    ids = {p["id"] for p in load_week(label)["posts"]} if week_file(label).exists() else set()
+    try:
+        skipped = json.loads((STATE / SKIPPED_EDITIONS).read_text(encoding="utf-8")).get(str(at.date()), [])
+    except (OSError, ValueError):
+        skipped = []
+    out = []
+    for edition, e in EDITIONS.items():
+        slot = dt.datetime(at.year, at.month, at.day, *e["time"], tzinfo=EAT)
+        if at >= slot - HOT["min_lead"] and f"{label.lower()}-hot-{at:%m%d}{e['suffix']}" not in ids \
+                and edition not in skipped:
+            out.append(edition)
+    return out
+
+
+def stuck_hot(label: str, at: dt.datetime | None = None) -> list[str]:
+    """Today's news posts that were planned but never written (the writer failed mid-run) and whose time is still
+    ahead: the next news run writes them instead of leaving an empty slot."""
+    if not week_file(label).exists():
+        return []
+    at = at or now()
+    return [p["id"] for p in load_week(label)["posts"]
+            if p.get("hot") and p["status"] == "planned" and dt.datetime.fromisoformat(p["publish_at"]) > at]
+
+
 def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = None) -> str | None:
     """A news post on the biggest Kenyan story right now, never one already covered today.
     Editions: morning, midday (lunchtime) and evening, drafted about three hours before they go out; and
@@ -279,6 +326,7 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
             import news
             if not news.prompt_block():
                 log("hot: no fresh news to react to, skipping")
+                _skip_edition(edition)
                 return None
         when = dt.datetime(today.year, today.month, today.day, *EDITIONS[edition]["time"], tzinfo=EAT)
         if when - now() < HOT["min_lead"]:   # late start: give the owner time to approve
@@ -289,6 +337,7 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
                                  data["posts"])
             if when is None:
                 log(f"hot ({edition}): no free slot between 07:00 and {QUIET_FROM}:00 EAT today, skipping this edition")
+                _skip_edition(edition)
                 return None
     post = {"id": hot_id, "template": HOT["template"], "bg": "usiku", "lane": "everyone",
             "publish_at": when.isoformat(), "status": "planned", "hot": True, **extra}
@@ -2872,11 +2921,46 @@ def main(argv: list[str] | None = None) -> int:
         traceback.print_exc()
         # Say so on Telegram: a silent failure looks like "the posts never came"
         try:
-            _notify(f"⚠️ Autopilot stopped: <b>{_esc(type(e).__name__)}</b>: {_esc(str(e)[:600])}\n"
-                    "Nothing was posted. Fix it, then run the workflow again (Actions → autopilot → Run workflow).")
+            _notify(failure_text(e))
         except Exception:
             pass
         raise
+    finally:
+        try:
+            claude_credit_notice(dry_run="--dry-run" in (argv if argv is not None else sys.argv))
+        except Exception as e:
+            log(f"credit notice skipped: {e}")
+
+
+def failure_text(e: Exception) -> str:
+    """What a stopped run tells the owner: what stopped and whether anything is needed from him. A writer outage
+    fixes itself (the post stays in line and the next run writes it), so it must not read like a call to action."""
+    msg = str(e)
+    if re.search(r"Gemini|Anthropic API|free-tier call cap|no AI writer", msg, re.I) and "GEMINI_API_KEY" not in msg:
+        return ("⚠️ A run stopped: the AI writer did not answer "
+                f"({_esc(msg[:240])}).\nPosts already approved still go out. The post it was writing stays in line "
+                "and the next run writes it. Nothing for you to do.")
+    return (f"⚠️ Autopilot run stopped: <b>{_esc(type(e).__name__)}</b>: {_esc(msg[:600])}\n"
+            "The next scheduled run tries again. If this message repeats, send it to Claude.")
+
+
+def claude_credit_notice(dry_run: bool = False) -> str | None:
+    """Once a day when the Claude account answered 'credit balance too low': the free Gemini writer carries on,
+    but there is no backup when Google is busy. The owner decides whether to top up; the system never pays."""
+    drafter = sys.modules.get("draft")
+    if dry_run or drafter is None or not getattr(drafter, "ANTHROPIC_DOWN", None):
+        return None
+    marker = STATE / "claude_credit_alert.txt"
+    today = str(now().date())
+    if marker.exists() and marker.read_text(encoding="utf-8").strip() == today:
+        return None
+    msg = ("ℹ️ The Claude account behind the backup writer has no credit left. The free Gemini writer still does "
+           "the work; when Google is busy, a post waits for the next run instead of switching to Claude.\n"
+           "Optional: add credit in the Anthropic Console under Plans &amp; Billing. Nothing else is needed.")
+    STATE.mkdir(parents=True, exist_ok=True)
+    marker.write_text(today, encoding="utf-8")
+    _notify(msg)
+    return msg
 
 
 def _main(argv: list[str] | None = None) -> int:
@@ -2903,6 +2987,7 @@ def _main(argv: list[str] | None = None) -> int:
     ap.add_argument("--morning", action="store_true", help="hot: the morning edition")
     ap.add_argument("--afternoon", action="store_true", help="hot: the afternoon edition")
     ap.add_argument("--breaking", action="store_true", help="hot: only if several newsrooms report a new story now")
+    ap.add_argument("--due", action="store_true", help="hot: every edition whose run should have happened today and didn't")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
     ap.add_argument("--no-send", action="store_true", help="samples: make them and their contact sheets, send nothing")
     ap.add_argument("--replace", action="store_true", help="musicfetch: pick the library again from scratch")
@@ -2969,8 +3054,16 @@ def _main(argv: list[str] | None = None) -> int:
         except Exception as e:
             log(f"radar message skipped: {e}")
     if a.command == "hot":
-        label = hot_slot(a.mock, edition="breaking" if a.breaking else "morning" if a.morning
-                         else "afternoon" if a.afternoon else "evening" if a.evening else "midday")
+        if a.due:   # the tick's catch-up: every edition whose run never came, oldest first
+            due = due_editions()
+            log(f"hot --due: {', '.join(due) or 'no edition is waiting'}")
+            label = next((x for x in [hot_slot(a.mock, edition=e) for e in due] if x), None)
+        else:
+            label = hot_slot(a.mock, edition="breaking" if a.breaking else "morning" if a.morning
+                             else "afternoon" if a.afternoon else "evening" if a.evening else "midday")
+        if not label and stuck_hot(current_week_label(ahead=0)):
+            label = current_week_label(ahead=0)   # a post planned earlier today whose writing failed: write it now
+            log(f"writing today's unwritten news posts: {stuck_hot(label)}")
         if not label:
             # nothing new to plan, but a post held earlier today may still need a replacement
             label = current_week_label(ahead=0)
@@ -3126,6 +3219,24 @@ def _main(argv: list[str] | None = None) -> int:
         return 0 if ok else 1
     if a.command == "aicheck":   # one tiny call to the writer: which provider answers, and does it work
         import draft as drafter
+        try:   # every Flash model this key can use, each asked one tiny question: which can stand in for which
+            key = os.environ.get("GEMINI_API_KEY", "").strip()
+            req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models?pageSize=200",
+                                         headers={"x-goog-api-key": key})
+            with urllib.request.urlopen(req, timeout=60) as r:
+                listed = [m["name"].split("/", 1)[1] for m in json.loads(r.read()).get("models", [])
+                          if "generateContent" in m.get("supportedGenerationMethods", [])]
+            flash = [m for m in listed if "flash" in m and not re.search(r"image|tts|audio|live|exp|preview", m)]
+            log(f"aicheck: {len(listed)} Gemini models; Flash text models: {', '.join(flash)}")
+            for m in flash[:8]:
+                t0 = time.time()
+                try:
+                    reply = drafter._gemini("Answer with one word.", "Say OK.", 20, m).strip()
+                    log(f"aicheck {m}: '{reply[:20]}' in {time.time() - t0:.1f}s")
+                except Exception as e:
+                    log(f"aicheck {m}: FAILED after {time.time() - t0:.1f}s: {str(e)[:200]}")
+        except Exception as e:
+            log(f"aicheck: model list failed: {e}")
         try:
             reply = drafter.call_claude("Answer with one word.", "Say OK.", max_tokens=20).strip()
             msg = f"🧠 Writer check: {drafter.provider()} answered '{reply[:30]}'. " + (

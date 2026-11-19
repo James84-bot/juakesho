@@ -246,6 +246,19 @@ jobs:
           set -o pipefail
           python pipeline.py swapwork 2>&1 | tee -a run.log
 
+      - name: News posts whose run never came
+        if: steps.cmd.outputs.c == 'tick'
+        run: |
+          cd automation
+          # an edition whose run was late, dropped or cancelled, or a news post whose writing failed: write it now
+          python -c "import sys, pipeline as p; sys.exit(0 if p.due_editions() or p.stuck_hot(p.current_week_label(ahead=0)) else 1)" \
+            || { echo "no news post waiting"; exit 0; }
+          pip install yt-dlp
+          python -m playwright install --with-deps chromium
+          sudo apt-get install -y ffmpeg || true
+          set -o pipefail
+          python pipeline.py hot --due 2>&1 | tee -a run.log
+
       - name: Show why it failed
         if: failure()
         run: |

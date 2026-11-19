@@ -1116,7 +1116,7 @@ class FreeProviderTests(unittest.TestCase):
         self.assertEqual(key, "gm-test")
         self.assertEqual(body["generationConfig"]["maxOutputTokens"], self.draft.GEMINI_LIMITS["out"] + self.draft.GEMINI_THINK_ROOM)  # reply + room to think
         self.assertEqual(body["systemInstruction"], {"parts": [{"text": "sys"}]})
-        self.assertEqual(self.draft._price("anything"), (0.0, 0.0))      # costs nothing
+        self.assertEqual(self.draft._price(self.draft.GEMINI_MODELS[0]), (0.0, 0.0))      # costs nothing
 
     def test_provider_choice(self):
         with mock.patch.dict(os.environ, {"GEMINI_API_KEY": ""}):
@@ -1402,6 +1402,145 @@ class WriterFallbackTests(unittest.TestCase):
                 mock.patch.dict(drafter.SPEND, {"calls": 0}):
             self.assertEqual(drafter.call_claude("s", "u", 100), "from claude")
         self.assertEqual(sorted(set(tried)), sorted(drafter.GEMINI_MODELS))
+
+
+class WriterOutageTests(unittest.TestCase):
+    """19 Nov: gemini-flash-latest hung, the run died with flash-lite untried, and the Claude backup had no credit."""
+
+    def _env(self):
+        import draft as drafter
+        return (mock.patch.dict(os.environ, {"GEMINI_API_KEY": "g", "ANTHROPIC_API_KEY": "a", "JUA_GEMINI_MODEL": "",
+                                             "JUA_PROVIDER": ""}),
+                mock.patch.object(drafter.time, "sleep", lambda s: None), mock.patch.dict(drafter.SPEND, {"calls": 0}))
+
+    def test_a_hanging_model_hands_over_to_the_next(self):
+        import io
+        import draft as drafter
+        tried = []
+
+        def answer(req, timeout=300):
+            m = req.full_url.split("/models/")[1].split(":")[0]
+            tried.append(m)
+            if m == drafter.GEMINI_MODELS[0]:
+                raise TimeoutError("The read operation timed out")
+            body = {"candidates": [{"content": {"parts": [{"text": "written"}]}, "finishReason": "STOP"}]}
+
+            class R(io.BytesIO):
+                headers = {"Content-Type": "application/json"}
+
+                def __enter__(self):
+                    return self
+
+                def __exit__(self, *a):
+                    return False
+            return R(json.dumps(body).encode())
+        a, b, c = self._env()
+        with a, b, c, mock.patch.object(drafter.urllib.request, "urlopen", answer):
+            self.assertEqual(drafter.call_claude("s", "u", 100), "written")
+        self.assertEqual(tried, [drafter.GEMINI_MODELS[0], drafter.GEMINI_MODELS[0], drafter.GEMINI_MODELS[1]])
+
+    def test_no_credit_is_learned_once_and_claude_is_skipped_after(self):
+        import io
+        import urllib.error
+        import draft as drafter
+        calls = []
+
+        def broke(req, timeout=300):
+            calls.append(req.full_url)
+            if "anthropic" in req.full_url:
+                raise urllib.error.HTTPError(req.full_url, 400, "bad", {}, io.BytesIO(
+                    b'{"error":{"message":"Your credit balance is too low to access the Anthropic API."}}'))
+            raise TimeoutError("timed out")
+        a, b, c = self._env()
+        with a, b, c, mock.patch.object(drafter.urllib.request, "urlopen", broke), \
+                mock.patch.dict(drafter.ANTHROPIC_DOWN, clear=True):
+            with self.assertRaises(RuntimeError):
+                drafter.call_claude("s", "u", 100)
+            self.assertIn("no credit", drafter.ANTHROPIC_DOWN.get("why", ""))
+            n = sum("anthropic" in u for u in calls)
+            with self.assertRaises(RuntimeError) as err:
+                drafter.call_claude("s", "u", 100)
+            self.assertEqual(sum("anthropic" in u for u in calls), n)   # not asked again
+            self.assertIn("Claude backup is off", str(err.exception))
+            with self.assertRaises(RuntimeError) as seen:   # the picture check skips Claude too
+                drafter.look_at(_tiny_jpeg(), "what is it?", strong=True)
+            self.assertIn("Claude skipped", str(seen.exception))
+            self.assertEqual(sum("anthropic" in u for u in calls), n)
+
+    def test_claude_used_as_backup_is_counted_as_spend(self):
+        import draft as drafter
+        with mock.patch.dict(os.environ, {"GEMINI_API_KEY": "g", "JUA_PROVIDER": ""}):
+            self.assertEqual(drafter._price("gemini-flash-latest"), (0.0, 0.0))
+            self.assertGreater(drafter._price("claude-sonnet-5")[1], 0)   # it used to be booked as free
+
+    def test_owner_is_told_once_a_day_and_only_when_it_happened(self):
+        import draft as drafter
+        sent = []
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(pl, "STATE", Path(d)), \
+                mock.patch.object(pl, "_notify", sent.append), mock.patch.dict(drafter.ANTHROPIC_DOWN, clear=True):
+            self.assertIsNone(pl.claude_credit_notice())
+            drafter.ANTHROPIC_DOWN["why"] = "no credit left on the Claude (Anthropic) account"
+            self.assertIsNone(pl.claude_credit_notice(dry_run=True))
+            self.assertIn("free Gemini writer", pl.claude_credit_notice())
+            self.assertIsNone(pl.claude_credit_notice())
+        self.assertEqual(len(sent), 1)
+
+    def test_a_writer_outage_does_not_read_like_a_job_for_the_owner(self):
+        text = pl.failure_text(RuntimeError("Gemini unreachable (gemini-flash-lite-latest): timed out"))
+        self.assertIn("Nothing for you to do", text)
+        self.assertNotIn("Run workflow", text)
+        self.assertIn("tries again", pl.failure_text(KeyError("posts")))
+
+
+def _tiny_jpeg() -> bytes:
+    import io
+    from PIL import Image
+    buf = io.BytesIO()
+    Image.new("RGB", (8, 8), (10, 20, 30)).save(buf, "JPEG")
+    return buf.getvalue()
+
+
+class CatchUpTests(TempWeeks):
+    """A news edition whose run never came (late schedule, cancelled while waiting, died halfway) is written by
+    the next tick instead of being lost or going out hours late."""
+
+    def at(self, h, m, day=19):
+        return dt.datetime(2026, 11, day, h, m, tzinfo=pl.EAT)
+
+    def test_editions_fall_due_in_order_and_stop_once_planned(self):
+        with mock.patch.object(pl, "now", lambda: self.at(6, 0)):
+            self.assertEqual(pl.due_editions(), [])                  # before 06:45 nothing is late
+        with mock.patch.object(pl, "now", lambda: self.at(10, 0)):
+            self.assertEqual(pl.due_editions(), ["morning", "midday"])
+            pl.hot_slot(mock=True, edition="morning")
+            self.assertEqual(pl.due_editions(), ["midday"])
+        with mock.patch.object(pl, "now", lambda: self.at(16, 40)):
+            self.assertEqual(pl.due_editions(), ["midday", "afternoon", "evening"])
+
+    def test_an_edition_tried_and_skipped_is_not_tried_again_today(self):
+        with mock.patch.object(pl, "now", lambda: self.at(19, 0)):
+            self.assertIsNone(pl.hot_slot(mock=True, edition="evening"))   # too late to approve before 21:00
+            self.assertNotIn("evening", pl.due_editions())
+        with mock.patch.object(pl, "now", lambda: self.at(19, 0, day=20)):
+            self.assertIn("evening", pl.due_editions())                     # a new day
+
+    def test_a_post_whose_writing_failed_is_found(self):
+        self.week([{"id": "2026-w47-hot-1119m", "hot": True, "status": "planned", "template": "sauti",
+                    "publish_at": "2026-11-19T20:15:00+03:00"},
+                   {"id": "2026-w47-hot-1119", "hot": True, "status": "published", "template": "sauti",
+                    "publish_at": "2026-11-19T12:45:00+03:00"}], label="2026-W47")
+        with mock.patch.object(pl, "now", lambda: self.at(16, 0)):
+            self.assertEqual(pl.stuck_hot("2026-W47"), ["2026-w47-hot-1119m"])
+        with mock.patch.object(pl, "now", lambda: self.at(20, 30)):
+            self.assertEqual(pl.stuck_hot("2026-W47"), [])                  # its time has passed
+
+    def test_hot_due_plans_every_waiting_edition(self):
+        with mock.patch.object(pl, "now", lambda: self.at(10, 0)), \
+                mock.patch.object(pl, "draft", lambda *a, **k: None), mock.patch.object(pl, "render_week", lambda *a: None), \
+                mock.patch.object(pl, "ask", lambda *a, **k: None), mock.patch.object(pl, "auto_approve", lambda **k: None):
+            pl.main(["hot", "--due", "--mock", "--dry-run"])
+            ids = {p["id"] for p in pl.load_week("2026-W47")["posts"]}
+        self.assertTrue({"2026-w47-hot-1119m", "2026-w47-hot-1119"} <= ids)
 
 
 class TrackerTests(TempWeeks):

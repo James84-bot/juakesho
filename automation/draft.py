@@ -800,9 +800,22 @@ def budget() -> float:
 
 
 def _price(model: str) -> tuple[float, float]:
-    if provider() == "gemini":
+    """Priced by the model that answered, not by the chosen provider: a Claude call made as Gemini's backup costs
+    money and must count against the cap (it used to be booked as free, so W44-W47 all showed $0.00)."""
+    if model.startswith("gemini"):
         return (0.0, 0.0)   # Gemini free tier
     return next((v for k, v in PRICES.items() if k in model), max(PRICES.values()))
+
+
+# Set once per run when Anthropic answers that the account has no credit: every later Claude call (writer backup,
+# picture checks) is skipped at once instead of failing again, and the owner is told once a day (pipeline.py).
+ANTHROPIC_DOWN: dict[str, str] = {}
+
+
+def _anthropic_refusal(code: int, detail: str) -> RuntimeError:
+    if code == 400 and "credit balance" in detail.lower():
+        ANTHROPIC_DOWN["why"] = "no credit left on the Claude (Anthropic) account"
+    return RuntimeError(f"Anthropic API {code}: {detail}")
 
 
 def can_afford(est_in: int, est_out: int, model: str | None = None, slack: float = 0.0) -> bool:
@@ -852,6 +865,8 @@ def call_claude(system: str, user: str, max_tokens: int = 12000, model: str | No
             # Google's free models were all busy: the paid Claude key (if set, within its budget) keeps the run alive
             if not os.environ.get("ANTHROPIC_API_KEY") or not re.search(r"\b(429|50[0234])\b|unreachable|no Gemini", str(e)):
                 raise
+            if ANTHROPIC_DOWN:
+                raise RuntimeError(f"{e} (the Claude backup is off: {ANTHROPIC_DOWN['why']})") from e
             print(f"  Gemini unavailable ({str(e)[:80]}); using Claude for this call")
             return _anthropic(system, user, max_tokens, model if model and not model.startswith("gemini") else None)
     return _anthropic(system, user, max_tokens, model)
@@ -909,10 +924,13 @@ def _gemini(system: str, user: str, max_tokens: int, model: str | None) -> str:
                     break   # overloaded, out of free quota or not available: try the next model
                 raise last from e
             except NET_ERRORS as e:
-                if attempt < 3:
-                    time.sleep(15 * 2 ** attempt)
+                # a model that hangs (19 Nov: gemini-flash-latest timed out and the run died with the other model
+                # untried) gets one more go, then the next model is asked
+                last = RuntimeError(f"Gemini unreachable ({m}): {e}")
+                if attempt < 1:
+                    time.sleep(15)
                     continue
-                raise RuntimeError(f"Gemini unreachable: {e}") from e
+                break
     raise last or RuntimeError("no Gemini model available")
 
 
@@ -920,6 +938,8 @@ def _anthropic(system: str, user: str, max_tokens: int = 12000, model: str | Non
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         raise RuntimeError("ANTHROPIC_API_KEY is not set (use --mock to test without it)")
+    if ANTHROPIC_DOWN:
+        raise RuntimeError(f"Anthropic API skipped: {ANTHROPIC_DOWN['why']}")
     body = json.dumps({
         # `or`, not a default arg: GitHub passes an unset repo variable as an empty string
         "model": model or model_id(),
@@ -943,7 +963,7 @@ def _anthropic(system: str, user: str, max_tokens: int = 12000, model: str | Non
             if e.code in (429, 500, 502, 503, 504, 529) and attempt < 3:
                 time.sleep(float(e.headers.get("retry-after") or 0) or 15 * 2 ** attempt)
                 continue
-            raise RuntimeError(f"Anthropic API {e.code}: {detail}") from e
+            raise _anthropic_refusal(e.code, detail) from e
         except NET_ERRORS as e:
             if attempt < 3:
                 time.sleep(15 * 2 ** attempt)
@@ -992,6 +1012,9 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
 
     def claude() -> str | None:
         if not os.environ.get("ANTHROPIC_API_KEY", "").strip():
+            return None
+        if ANTHROPIC_DOWN:
+            errors.append(f"Claude skipped: {ANTHROPIC_DOWN['why']}")
             return None
         model = model_id() if strong else CRITIC_MODEL
         body = {"model": model, "max_tokens": 400,
@@ -1066,7 +1089,7 @@ def _look_anthropic(body: dict) -> str:
             if e.code in (429, 500, 502, 503, 504, 529) and attempt == 0:
                 time.sleep(float(e.headers.get("retry-after") or 0) or 15)
                 continue
-            raise RuntimeError(f"Anthropic API {e.code}: {detail}") from e
+            raise _anthropic_refusal(e.code, detail) from e
         except (*NET_ERRORS, ValueError) as e:
             if attempt == 0:
                 time.sleep(15)
