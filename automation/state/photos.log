@@ -4,9 +4,19 @@ feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
 feed Nation: 25 items, 0 with an image
-posted for 2026-w47-hot-1119: 1 matching reports (person '', names ['local', 'content'], words ['parliament', 'must', 'restore', 'tough', 'penalties'])
+posted for 2026-w47-hot-1119-sample: 1 matching reports (person '', names ['local', 'content'], words ['parliament', 'must', 'restore', 'tough', 'penalties'])
 skipped Nation image: HTTP Error 403: Forbidden
-topic photos for 2026-w47-hot-1119: 1 recent reports on ['assembly']
+topic photos for 2026-w47-hot-1119-sample: 1 recent reports on ['assembly']
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
 topic photo from Kenyans.co.ke: Govt Reveals What New World Bank-Funded County Assembly Tracker Will M
-topic photos for 2026-w47-hot-1119: 0 recent reports on ['assembly']
+topic photos for 2026-w47-hot-1119-sample: 0 recent reports on ['assembly']
+event 'IEBC voter registration Nairobi' for 2026-w47-hot-1118e-r2-sample (14 Nov-19 Nov): 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 0, 'subject': 0}
+event 'IEBC voter' for 2026-w47-hot-1118e-r2-sample (14 Nov-19 Nov): 1 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 1, 'subject': 0}
+posted for 2026-w47-hot-1118e-r2-sample: 0 matching reports (person 'gachagua', names ['erastus', 'ethekon', 'rigathi', 'gachagua'], words ['iebc', 'voter', 'registration'])
+file photo for 2026-w47-hot-1118e-r2-sample: 19 recent reports name 'gachagua'
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+file photo from Kenyans.co.ke: Gachagua Ally Names Opposition Moles, Links Them to Ruto
+posted for 2026-w47-hot-1118m-sample: 0 matching reports (person '', names ['sim', 'knbs'], words ['mobile', 'transactions', 'fell', 'cards', 'fees'])
+file photo for 2026-w47-hot-1118m-sample: 1 recent reports name 'knbs'
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+file photo from Kenyans.co.ke: KNBS Reveals 17 Items That Have Become More Expensive for Kenyans
