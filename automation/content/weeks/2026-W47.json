@@ -391,7 +391,8 @@
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "tg_msg": 1198,
       "auto": true,
-      "decided_at": "2026-11-17T13:01:03.128513+03:00"
+      "decided_at": "2026-11-17T13:01:03.128513+03:00",
+      "fresh_checked": "2026-11-19T12:58:29.523482+03:00"
     },
     {
       "id": "2026-w47-d6-kenya",
@@ -1578,7 +1579,7 @@
           "published": "2026-11-19"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1621,7 +1622,14 @@
       "reel": true,
       "tg_msg": 1260,
       "decided_at": "2026-11-19T10:31:57.767846+03:00",
-      "photo_checked": "2026-11-19T10:32:19.152737+03:00"
+      "photo_checked": "2026-11-19T10:32:19.152737+03:00",
+      "published_at": "2026-11-19T12:59:37.580823+03:00",
+      "ig_id": "18121688152778068",
+      "fb_id": "1130781599364115",
+      "story_id": "17892436452687713",
+      "fb_story_id": "2391180775045274",
+      "yt_id": "a5K4g83hAeY",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
