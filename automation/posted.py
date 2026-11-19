@@ -195,6 +195,15 @@ def terms_for(post: dict) -> tuple[str, list[str]]:
     """(surname of the post's person, the subject words) to match reports against."""
     import photos
     surname = photos._surname(str(post.get("who", "")))
+    shown = " ".join(str(post.get(k) or "") for k in ("message", "headline", "title", "line", "caption")) + " " + \
+        " ".join(str(b) for b in post.get("beats") or [])
+    titles = "|".join(sorted(photos.TITLES | {"mr", "mrs", "ms", "miss"}))
+    titled = surname and re.search(rf"\b(?:{titles})\.?\s+(?:[A-Z][\w'-]+\s+){{0,2}}{re.escape(surname)}\b",
+                                   str(post.get("who", "")), re.I)
+    if surname and not titled and not re.search(rf"\b{re.escape(surname)}\b", shown, re.I):
+        # a "person" with no title whom the post never names is not its subject ('Athletics Integrity Unit' gave
+        # 'unit' on 19 Nov and a police-shooting picture went on a doping story): match on the story's words
+        surname = ""
     source = post.get("event_query") or " ".join(str(post.get(k, "")) for k in ("message", "headline", "title"))
     words = [w.lower() for w in re.findall(r"[A-Za-z][A-Za-z-]{3,}", source)]
     words = [w for w in dict.fromkeys(words) if w not in STOP and w != surname]

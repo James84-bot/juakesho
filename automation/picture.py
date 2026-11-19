@@ -96,9 +96,9 @@ def _checks_file():
 
 def outlet_edit(data: bytes) -> str | None:
     """What a publisher added to this picture: '' for a plain photograph, the addition when it is their graphic,
-    None when no model could look (logged; a missing check never costs a post its photo, and it is tried again
-    next time). A "yes" from the cheap model is only believed when the stronger model agrees: in testing on 14 of
-    our photos the cheap one alone took a monitor on a court wall and a plain skyline for added graphics."""
+    None when no model could look (logged; tried again next time). A "yes" from the cheap model is only believed
+    when the stronger model agrees: in testing on 14 of our photos the cheap one alone took a monitor on a court
+    wall and a plain skyline for added graphics. When the stronger model cannot look, the "yes" stands for now."""
     import hashlib
     import json
     # the question is part of the key: when it changes, every picture is judged again under the new wording
@@ -113,15 +113,23 @@ def outlet_edit(data: bytes) -> str | None:
     import draft
     try:
         got = draft.extract_json(draft.look_at(data, EDIT_ASK))
-        if got.get("edited") is True:
-            second = draft.extract_json(draft.look_at(data, EDIT_ASK, strong=True))
-            print(f"    edit check, second look: {'edited' if second.get('edited') is True else 'photo'} "
-                  f"({str(second.get('seen') or '')[:140]})")
-            if second.get("edited") is not True:
-                got = second
     except Exception as e:   # no key, quota, or an unreadable reply
         print(f"    edit check skipped: {str(e)[:600]}")
         return None
+    if got.get("edited") is True:
+        try:
+            second = draft.extract_json(draft.look_at(data, EDIT_ASK, strong=True))
+        except Exception as e:
+            # the cheap look saw an outlet's graphic and nobody could confirm it: the picture is not used (a wrong
+            # "yes" costs one photo; a wrong "no" put a BBC "Who fired into the crowd" graphic on a doping story,
+            # 19 Nov). Not remembered, so a model that can confirm judges it again next time.
+            what = str(got.get("what") or "an edited graphic")[:80]
+            print(f"    edit check: edited by the first look, not confirmed ({str(e)[:160]}); not used: {what}")
+            return what
+        print(f"    edit check, second look: {'edited' if second.get('edited') is True else 'photo'} "
+              f"({str(second.get('seen') or '')[:140]})")
+        if second.get("edited") is not True:
+            got = second
     edited = got.get("edited") is True
     what = str(got.get("what") or "an edited graphic")[:80] if edited else ""
     print(f"    edit check: {'edited' if edited else 'photo'} ({str(got.get('seen') or '')[:140]})")

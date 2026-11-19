@@ -52,6 +52,16 @@ class OutletEdit(unittest.TestCase):
             self.assertIsNone(picture.outlet_edit(jpeg((1, 2, 3))))
         self.assertFalse(self.checks.exists())   # tried again next time
 
+    def test_an_unconfirmed_yes_still_keeps_the_graphic_out(self):
+        # 19 Nov: the strong model was out of quota, the "yes" was thrown away and a BBC graphic was used
+        def looks(data, ask, strong=False):
+            if strong:
+                raise RuntimeError("no model could look at the picture: Gemini 429")
+            return '{"edited": true, "what": "BBC headline and logo"}'
+        with mock.patch.object(draft, "look_at", looks):
+            self.assertEqual(picture.outlet_edit(jpeg((9, 9, 9))), "BBC headline and logo")
+        self.assertFalse(self.checks.exists())   # not remembered: judged again when the strong model can look
+
     def test_a_yes_needs_the_strong_model_to_agree(self):
         def looks(data, ask, strong=False):   # the cheap model sees a "video call overlay"; the strong one a wall monitor
             return '{"edited": false, "seen": "a monitor on the wall"}' if strong else '{"edited": true, "what": "video call overlay"}'

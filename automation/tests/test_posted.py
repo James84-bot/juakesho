@@ -136,6 +136,19 @@ class Matching(unittest.TestCase):
         self.assertEqual(photos.full_name("Energy CS Opiyo Wandayi"), "Opiyo Wandayi")
         self.assertEqual(photos.full_name("Kenya Revenue Authority"), "")
         self.assertEqual(photos._surname("Political Leaders in Bungoma"), "")   # live check, 17 Oct
+        # 19 Nov: 'unit' was taken for a surname and a police-shooting picture went on a doping story
+        for org in ("Athletics Integrity Unit and Athletics Kenya", "World Athletics", "Tax Appeals Tribunal",
+                    "Nairobi City Water"):
+            self.assertEqual(photos._surname(org), "", org)
+        self.assertEqual(photos._surname("Ms Ruth Kagiri"), "kagiri")
+
+    def test_an_untitled_name_the_post_never_mentions_is_not_its_person(self):
+        doping = {"who": "Peter Kamau", "message": "Peres Jepchirchir received a three-year ban.",
+                  "beats": ["Athletics Kenya faces fresh questions."]}
+        self.assertEqual(posted.terms_for(doping)[0], "")
+        self.assertEqual(posted.terms_for({"who": "President William Ruto", "message": "Interns wait."})[0], "ruto")
+        self.assertEqual(posted.terms_for({"who": "Peres Jepchirchir", "message": "Jepchirchir was banned."})[0],
+                         "jepchirchir")
 
     def test_a_foreign_story_sharing_common_words_is_not_a_match(self):
         post = {"template": "glasspoll", "message": "Should Kenya Power demand upfront electricity payment while it "

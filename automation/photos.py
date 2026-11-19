@@ -447,7 +447,11 @@ INSTITUTION = re.compile(r"^(kenya\w*|nairobi|national|county|assembly|senate|pa
                          r"officials?|residents?|traders?|students?|farmers?|members?|kenyans?|workers?|teachers?|"
                          r"doctors?|nurses?|lawmakers?|mps|mcas|governors?|senators?|citizens?|voters?|youths?|"
                          r"bench|technical|teams?|squads?|clubs?|federation|league|coach(es)?|players?|fans?|"
-                         r"delegates?|executive|stars|starlets|association|academy|union)$", re.I)
+                         r"delegates?|executive|stars|starlets|association|academy|union|units?|integrity|"
+                         r"athletics|tribunal|appeals|water|city|world|anti|doping|olympics?|institute|university|"
+                         r"college|schools?|hospital|foundation|network|group|holdings|plc|ltd|airways|airlines|"
+                         r"railways?|pipeline|ports?|sacco|cooperative|society|trust|programme|program|project|"
+                         r"initiative|centre|center|marathon|championships?|cup|games|tournament)$", re.I)
 
 
 def _surname(who: str) -> str:
