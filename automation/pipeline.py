@@ -320,11 +320,20 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
             log(f"hot: {BRAND.get('name')} has no {edition} edition")
             return None
         hot_id = f"{label.lower()}-hot-{today:%m%d}{EDITIONS[edition]['suffix']}"
-        if any(p["id"] == hot_id for p in data["posts"]):
-            log(f"today's {edition} news post {hot_id} already exists")
-            return None
         opens = dt.datetime(today.year, today.month, today.day, *EDITIONS[edition]["time"], tzinfo=EAT) \
             - HOT["min_lead"] - EDITION_EARLY
+        old = next((p for p in data["posts"] if p["id"] == hot_id), None)
+        if old and now() >= opens and old.get("drafted_at") \
+                and dt.datetime.fromisoformat(old["drafted_at"]) < opens - dt.timedelta(hours=2) \
+                and (old["status"] in {"planned", "drafted", "rendered", "awaiting", "needs_human"}
+                     or (old["status"] == "approved" and old.get("auto"))):
+            # written hours early by a schedule that fired late, and no person approved it: today's news replaces it
+            old["id"], old["status"] = f"{hot_id}-early", "superseded"
+            log(f"hot ({edition}): {hot_id} was written at {old['drafted_at'][11:16]} with that hour's news; "
+                "writing it again now (its card no longer does anything)")
+        elif old:
+            log(f"today's {edition} news post {hot_id} already exists")
+            return None
         if now() < opens:   # a schedule that fired hours late (19 Nov: the 16:05 run came at 00:21) would write
             log(f"hot ({edition}): too early, this edition is written from {opens:%H:%M} EAT with that hour's news")
             return None   # the evening post from midnight's news; the listener starts it on time instead

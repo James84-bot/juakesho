@@ -1814,6 +1814,23 @@ class CatchUpTests(TempWeeks):
             with mock.patch.object(pl, "now", lambda h=h, m=m: self.at(h, m, day=21)):   # the listener's times
                 self.assertIsNotNone(pl.hot_slot(mock=True, edition=edition), edition)
 
+    def test_an_edition_written_hours_early_is_written_again_on_time(self):
+        self.week([{"id": "2026-w47-hot-1120e", "hot": True, "status": "awaiting", "template": "sauti",
+                    "publish_at": "2026-11-20T19:30:00+03:00", "drafted_at": "2026-11-20T00:56:00+03:00"}],
+                  label="2026-W47")
+        with mock.patch.object(pl, "now", lambda: self.at(16, 5, day=20)):
+            self.assertEqual(pl.hot_slot(mock=True, edition="evening"), "2026-W47")
+        posts = {p["id"]: p for p in pl.load_week("2026-W47")["posts"]}
+        self.assertEqual(posts["2026-w47-hot-1120e-early"]["status"], "superseded")
+        self.assertEqual(posts["2026-w47-hot-1120e"]["status"], "planned")
+
+    def test_an_early_edition_the_owner_approved_stays(self):
+        self.week([{"id": "2026-w47-hot-1120e", "hot": True, "status": "approved", "template": "sauti",
+                    "publish_at": "2026-11-20T19:30:00+03:00", "drafted_at": "2026-11-20T00:56:00+03:00"}],
+                  label="2026-W47")
+        with mock.patch.object(pl, "now", lambda: self.at(16, 5, day=20)):
+            self.assertIsNone(pl.hot_slot(mock=True, edition="evening"))
+
     def test_a_post_whose_writing_failed_is_found(self):
         self.week([{"id": "2026-w47-hot-1119m", "hot": True, "status": "planned", "template": "sauti",
                     "publish_at": "2026-11-19T20:15:00+03:00"},
