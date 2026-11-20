@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-20T05:41:26.821654+00:00",
+  "fetched": "2026-11-20T06:06:32.023617+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -17,9 +17,9 @@
           "source": "SO FOOT.com"
         },
         {
-          "title": "Ligue des champions: Arsenal-OL en direct",
-          "url": "https://www.sports.fr/football/ligue-des-champions-arsenal-ol-en-direct-1064380.html",
-          "source": "Sports.fr"
+          "title": "Ligue des champions (F/J5) : Brand, Dumornay, Hinds... les tops/flops d'Arsenal - OL Lyonnes : Sports - Orange",
+          "url": "https://sports.orange.fr/football/ligue-des-champions/article/ligue-des-champions-f-j5-brand-dumornay-hinds-les-tops-flops-d-arsenal-ol-lyonnes-exclu-CNT000002tOTfa.html",
+          "source": "Sports - Orange"
         }
       ]
     },
@@ -73,6 +73,11 @@
       "traffic": "200+",
       "news": [
         {
+          "title": "NPS announces December 10 date for nationwide police recruitment",
+          "url": "https://www.the-star.co.ke/news/2026-11-20-nps-announces-december-10-date-for-police-recruitment",
+          "source": "The Star, Kenya"
+        },
+        {
           "title": "NPS Announces Mass Police Recruitment, Sets Date & Requirements",
           "url": "https://www.kenyans.co.ke/news/129531-nps-sets-december-10-mass-police-constable-recruitment-lists-requirements",
           "source": "Kenyans.co.ke"
@@ -81,11 +86,6 @@
           "title": "Police recruitment 2026: Full list of qualifications candidates must meet",
           "url": "https://peopledaily.digital/insights/police-recruitment-2026-full-list-of-qualifications-candidates-must-meet",
           "source": "People Daily"
-        },
-        {
-          "title": "Police constable salary in Kenya: Pay structure, allowances and entry requirements",
-          "url": "https://www.tuko.co.ke/facts-lifehacks/guides/647156-police-constable-salary-kenya-pay-structure-allowances-entry-requirements/",
-          "source": "Tuko News"
         }
       ],
       "civic": true
@@ -146,13 +146,13 @@
           "source": "ChimpReports"
         },
         {
-          "title": "MC Alger and CR Belouizdad Suffer League Defeats",
-          "url": "https://suaragarut.id/en/mc-alger-crb-league-defeats",
-          "source": "SuaraGarut.ID"
+          "title": "Egyptian authorities approve full capacity for Zamalek and Club Africain clash",
+          "url": "https://africasoccer.com/egyptian-authorities-approve-full-capacity-for-zamalek-club-africain-clash/",
+          "source": "AfricaSoccer.com"
         },
         {
-          "title": "MC Alger Hosts Olympique Akbou in Ligue 1 Match",
-          "url": "https://suaragarut.id/en/mc-alger-hosts-olympique-akbou",
+          "title": "MC Alger and CR Belouizdad Suffer League Defeats",
+          "url": "https://suaragarut.id/en/mc-alger-crb-league-defeats",
           "source": "SuaraGarut.ID"
         }
       ]

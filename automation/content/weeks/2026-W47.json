@@ -2327,13 +2327,111 @@
       "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1344
+    },
+    {
+      "id": "2026-w47-hot-1120",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Tech workers",
+      "line": "Kenyan tech startup funding dropped to a *six-year low* after fallen companies hurt trust.",
+      "fact": "Investment into Kenyan tech startups fell to its lowest point in six years as investors pull back.",
+      "source": "Business Daily, 2026-11-19",
+      "photo_query": "Nairobi skyline",
+      "message": "Kenyan tech startups face a funding squeeze that threatens young tech jobs and innovation.",
+      "action": "Build products with real paying customers instead of relying on venture funding.",
+      "who": "Kenyan tech startups",
+      "where": "National",
+      "when": "19 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Fewer funded startups mean tighter hiring and fewer openings for Kenyan developers.",
+      "beats": [
+        "Nairobi tech funding fell to a *6-year low* this year.",
+        "Failed startups hurt investor trust across the *whole market*.",
+        "Fewer seed rounds mean fewer *jobs* for young developers.",
+        "Has your tech workplace frozen hiring this year?"
+      ],
+      "caption": "Funding for Kenyan tech startups just fell to a six-year low after collapsed firms shook investor confidence. Fewer seed rounds mean fewer openings for developers and fresh graduates. Has your company slowed down hiring lately?\n\n#KenyaOnRecord #KenyanTech #StartupKE",
+      "bg": "usiku",
+      "publish_at": "2026-11-20T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The High Court convicted CS Mbadi of contempt for concealing national debt details.",
+        "Kenya is rolling out 10.79 million free mosquito nets to protect families in 18 counties.",
+        "NPS sets December 10 for nationwide police recruitment in every sub-county."
+      ],
+      "source_links": [
+        {
+          "outlet": "Business Daily",
+          "title": "Kenya tech startup funding hits 6-year low as fallen firms dent investor trust",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPbUFBekJCQVdwWm51TVBVdlRtUGxtRDlLVkJ4dHowVl9JQ2V1bi12VXVCdmpoYUlrQmhfMmVEM3NVUDRJdUFCS1pzb2xfTTBjQnpwbm11RmlwWXJLVzhEQS1XdHpLYk5hcEI0cjdXdU8ySWJnWlpzdjVDNnkzZkdJZzdLNDExYTA5WnkwZEVEaWRDTUs0aEoyelp1N3VSb2FHVC1wRmtydzEtaEZ3VlUw?oc=5",
+          "published": "2026-11-19"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "These failures have hurt investor confidence, and unpredictable policy, such as in the case of Koko, raises the risk premium for the whole market",
+          "speaker": "Mr Singh",
+          "context": "Lipa Later was backed by US-headquartered Cauris Finance and Lateral Frontiers. “These failures have hurt investor confidence, and unpredictable policy, such as in the case of Koko, raises the risk premium for the whole market,” Mr Singh said.",
+          "outlet": "Business Daily",
+          "link": "https://www.businessdailyafrica.com/bd/corporate/technology/kenya-tech-startup-funding-hits-6-year-low-5677318"
+        },
+        {
+          "text": "Capital always competes for the healthiest return",
+          "speaker": "Mr Singh",
+          "context": "“Capital always competes for the healthiest return,” Mr Singh said. “A 10-year US Treasury pays about five percent, and Kenya’s own bonds pay over nine percent. Venture capital has to beat that, and it hasn’t yet shown it can.”",
+          "outlet": "Business Daily",
+          "link": "https://www.businessdailyafrica.com/bd/corporate/technology/kenya-tech-startup-funding-hits-6-year-low-5677318"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 7,
+        "human": 8,
+        "avg": 7.2,
+        "note": "Match the demand score to one of the current top stories (1-5) instead of an older tech article."
+      },
+      "drafted_at": "2026-11-20T09:09:42.527544+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1120-photo.jpg",
+      "photo_credit": "Photo: DesiBoy101 / Wikimedia Commons, CC BY 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Skyline_of_Nairobi_city_as_seen_from_a_lake_in_Uhuru_Park.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: DesiBoy101 / Wikimedia Commons, CC BY 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1347
     }
   ],
   "scripts": {
-    "radio": "Sasa, welcome to Kenya on Record. I'm your host, and today tuangalie habari muhimu kutoka National Police Service. Kama umekuwa ukisubiri fursa ya kujiunga na polisi, note this date down: December 10. NPS imetangaza kuwa zoezi la kusajili maofisa wapya litafanyika nchi nzima siku hiyo.\n\nKilicho bora ni kwamba usaili hautafanyika Nairobi pekee. The recruitment will take place in every single sub-county across the country. Hii inamaanisha vijana wetu kule mashinani watapata nafasi sawa bila kulazimika kusafiri umbali mrefu au kutumia pesa ambazo hawana.\n\nKumbuka, usaili huu ni wa haki na hauna malipo yoyote. Ukiambiwa utoe hongo ndiyo upate kazi, huyo ni tapeli. Kuripoti visa kama hivi ni wajibu wetu.\n\nTusikilize sasa muhtasari kwa Kiswahili:\n\nIdara ya Polisi imetangaza kuwa usaili wa kujiunga na huduma ya polisi utafanyika nchi nzima mnamo Desemba 10. Zoezi hili litafanyika katika kila arobaini na tano na kuendelea kaunti ndogo ili kutoa fursa sawa kwa vijana wote. Hakikisha unafika katika kituo chako cha usaili ukiwa na stakabadhi zinazohitajika, na kumbuka hakuna malipo ya aina yoyote yanayohitajika ili kupata kazi hiyo. Linda nafasi yako na uwe mwangalifu dhidi ya matapeli.",
-    "voice_note": "Sasa mwananchi! Hii ni Kenya on Record. Kama umekuwa ukingoja nafasi ya kujiunga na National Police Service, sikiza hii vizuri. NPS imetangaza kuwa usaili wa kitaifa wa polisi utafanyika tarehe 10 Desemba. Na safari hii, zoezi halitakuwa Nairobi pekee—litafanyika moja kwa moja katika kila sub-county nchi nzima. Hii inamaanisha fursa iko karibu nawe. Kumbuka tu, huduma hii ni bure kabisa. Msikubali kutapeliwa na watu wanaowaahidi kazi kwa njia ya hongo. Jitokeze kwa wingi na ujaribu bahati yako siku hiyo.",
-    "sms": "Kenya on Record: NPS imetangaza usaili wa polisi utafanyika Dec 10 katika kila sub-county nchi nzima. Usilipie mtu yeyote hongo; kazi ni bure. Usiibiwe!",
-    "reels": "Nafasi ya kazi iko hapa! National Police Service imeweka tarehe 10 Desemba kuwa siku ya usaili wa polisi nchi nzima. Lakini sikiza hii—hutaenda mbali. Usaili utafanyika katika kila sub-county, karibu na kwako! Hakuna haja ya kusafiri kwenda makao makuu. Kumbuka, hakuna malipo ya hongo; serikali haitoi au kuomba pesa ili kukuajiri. Jitayarishe, andaa stakabadhi zako, na usikubali kutapeliwa na matapeli. Kenya on Record tunakupa ukweli mtupu."
+    "radio": "Habari za jioni. This is Kenya on Record. For years, we were sold the Silicon Savannah dream. We told our youth to learn code, build apps, and disrupt markets. And they delivered. But right now, Kenya’s tech ecosystem is gasping for air. Venture capital inflows have dropped sharply, operational runways are running out, and quiet retrenchments are gutting our young workforce.\n\nThe painful question we must ask is simple: why is Kenya’s innovation economy so dangerously exposed to foreign venture whims? Years ago, leaders promised us the Startup Bill—a clear framework designed to shield local innovators, unlock domestic capital, and de-risk early-stage ventures. Instead, it got bogged down in bureaucratic lethargy while tax policy kept squeezing digital enterprises. When foreign investors retreat to safe havens abroad, our brightest young minds are left stranded with unpaid salaries and shuttered offices.\n\nWe cannot build a sustainable future on buzzwords while leaving young founders to walk the tightrope alone. The Ministry of ICT and Treasury must account for domestic innovation funding and deliver practical support, not another round of launch ceremonies and photo ops.\n\nKwa ufupi kwa Kiswahili: Sekta ya teknolojia nchini inakabiliwa na uhaba mkubwa wa ufadhili, hali inayotishia ajira za vijana wengi. Ni wakati wa serikali kupitisha sera madhubuti kama Mswada wa Startups na kuwekeza rasilimali za ndani, badala ya kutegemea wafadhili wa kigeni pekee.\n\nStay grounded, stay informed. This is Kenya on Record.",
+    "voice_note": "Hey people, Kenya on Record here. Let’s talk about what’s really happening in our tech hubs right now. Over the last few months, the foreign venture capital that fueled our tech boom has dried up. Startups are quietly laying off engineers, product managers, and support staff. The youth who staked their futures on tech are feeling the squeeze. But here’s the accountability issue: where is our government's domestic safety net? We hear endless speeches about the digital superhighway, yet local venture incentives remain non-existent and the Startup Bill keeps stalling. Our innovators cannot build long-term solutions when public policy treats tech as a tax cash cow instead of an infant industry to protect. We need genuine domestic funding mechanisms now. Share this with someone in tech—let’s demand real policy action.",
+    "sms": "Usiibiwe: Tech squeeze alert. Insist on a written contract and verify statutory remittances (NSSF/SHIF). Don’t trade unpaid labor for empty equity promises.",
+    "reels": "Kenya’s Silicon Savannah is hitting a wall. Foreign venture funding has dried up, and local startups are quietly cutting young tech workers loose. We were promised a digital economy revolution, yet the Startup Bill gathers dust while taxes choke innovation. When global capital retreats, who protects Kenyan talent? Our innovators deserve real domestic investment, not just endless speeches and empty PR. It’s time leaders put real money behind our tech."
   },
   "spend_usd": 0.0
 }
