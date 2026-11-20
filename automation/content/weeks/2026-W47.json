@@ -347,7 +347,7 @@
           "published": "2026-11-10"
         }
       ],
-      "status": "approved",
+      "status": "publish_failed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -392,7 +392,9 @@
       "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "tg_msg": 1323,
       "auto": true,
-      "decided_at": "2026-11-20T00:18:02.034055+03:00"
+      "decided_at": "2026-11-20T00:18:02.034055+03:00",
+      "attempts": 1,
+      "last_error": "media not reachable (503): https://James84-bot.github.io/juakesho/exports/2026-W47/2026-w47-d5-straight-r3.jpg. Has GitHub Pages finished deploying?"
     },
     {
       "id": "2026-w47-d6-kenya",
