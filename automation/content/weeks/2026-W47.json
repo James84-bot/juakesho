@@ -2213,13 +2213,127 @@
       "auto": true,
       "decided_at": "2026-11-20T06:54:54.635842+03:00",
       "photo_checked": "2026-11-20T07:21:21.692358+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1120b0841",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Job Seekers",
+      "line": "The National Police Service announced December 10 for nationwide police recruitment.",
+      "fact": "NPS set December 10 as the date for recruitment across all sub-counties.",
+      "source": "Kenyans.co.ke, The Star, Kenya, Tuko News",
+      "photo_query": "Kenya police vehicle",
+      "message": "NPS sets December 10 for nationwide police recruitment in every sub-county.",
+      "action": "Check requirements on nps.go.ke before December 10",
+      "beats": [
+        "NPS announced December 10 for nationwide police recruitment.",
+        "Recruitment will take place across all sub-counties in Kenya.",
+        "Candidates must meet the official age and academic requirements.",
+        "Will you apply for the recruitment exercise this year?"
+      ],
+      "caption": "The National Police Service has set December 10 for nationwide police recruitment across all sub-counties. Check requirements early and prepare your documents.\n\nWill you apply for the recruitment? Tell us below.\n\n#PoliceRecruitment #KenyaOnRecord",
+      "who": "National Police Service",
+      "where": "National",
+      "when": "10 December 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Thousands of young Kenyans will compete for police recruitment slots.",
+      "bg": "usiku",
+      "publish_at": "2026-11-20T09:01:00+03:00",
+      "hot": true,
+      "avoid": [
+        "The High Court convicted CS Mbadi of contempt for concealing national debt details.",
+        "Kenya is rolling out 10.79 million free mosquito nets to protect families in 18 counties."
+      ],
+      "breaking": {
+        "title": "NPS announces December 10 date for nationwide police recruitment",
+        "outlets": [
+          "Kenyans.co.ke",
+          "The Star, Kenya",
+          "Tuko News"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "Tuko News",
+          "title": "With D plus: Police Service announces 2026 recruitment, sets age requirement",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONU1qdGc1U3V6em9xOUFpalE4WVlYN3djQWRHbnhRRnd4bXBBN29ScENTanFtVWZxTWt6TURzbFA3dXQ0alNBQU8ybHg1QUtjOGp1dENNRExNOFg3VlVya3BRc0NRQzROWWxSQWVJNUdNdm00QzBSdjVaRXJhRTZQS0VwWjhjQVpuNUU4OXBMUlJqajJOc1VEcGh0b1J6NjhMNEwyQkR2WQ?oc=5",
+          "published": "2026-11-20"
+        },
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "NPS Announces Mass Police Recruitment, Sets Date & Requirements",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPZ2VMVzJ0UmR1SjgxdnpuU0VDWEJrbU5NS1p6d1loQ3FJYXE5RVJoampJRFQwZ2dXS3lzaUtzZ0VheDZ3dy1Md0RGREJxRWlCOEtLSmlib2dBNmh3TXh1MkZtZDdtcW9hOFpTTl9wOUxHaER5UWV4S2RDNWVaNWRsV1lRU2pMVmY5alFVRC14NF8wMFpUMGZHT2hzMjZmTVhMRUtVa1VJeWczYUkzbjBUWg?oc=5",
+          "published": "2026-11-20"
+        },
+        {
+          "outlet": "The Star, Kenya",
+          "title": "NPS announces December 10 date for nationwide police recruitment",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOYUZEQnhKX3JOLXFmazd1cmlDQlpxWnlIaC00MUl6WjNHV1pzVlRBM01LSVAwcjFPUkVYS1JCNTZRR0t0eW9Hblh3b3pwajljQjEzSXFuTThhU1FRUW1tNVEtZzQ3TC11YVZ5VWhQVmxuU1YtRXBhdE5vM2UtVGsyM0gxRzFqMGtFNlFtWkxPOHZRREg5OGJfSnNDX00?oc=5",
+          "published": "2026-11-20"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 5.8/10. Ground this in the actual D+ grade requirement and sub-county venue details instead of generic announcement phrasing."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 6,
+        "hold": 6,
+        "demand": 4,
+        "action": 3,
+        "fair": 7,
+        "impact": 6,
+        "human": 4,
+        "avg": 5.8,
+        "note": "Ground this in the actual D+ grade requirement and sub-county venue details instead of generic announcement phrasing."
+      },
+      "drafted_at": "2026-11-20T08:48:10.085716+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1120b0841-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129531-nps-sets-december-10-mass-police-constable-recruitment-lists-requirements",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1120b0841-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1120b0841-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "NPS Announces Mass Police Recruitment, Sets Date & Requirements"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Kenyans, Foreign Nationals Set to Get Police Clearance Faster Under New DCI System"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "EACC Arrests Traffic Police Officers on Major Highway Over Bribery"
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1344
     }
   ],
   "scripts": {
-    "radio": "Good evening listeners, this is Kenya on Record. Malaria remains one of our country's heaviest health burdens, silently draining household earnings and endangering our children. This week, the Ministry of Health began rolling out 10.79 million long-lasting insecticidal nets across 18 high-risk counties, targeting malaria-endemic zones in the Western, Lake Victoria, and Coastal belts.\n\nHere is the accountability check: every single net in this program is completely free. Distribution is carried out through verified household registration led by Community Health Promoters. Under no circumstances should an elder, an administrator, or a health worker demand registration fees, transport contributions, or a facilitation token before giving you your net. \n\nWe must also protect these supplies from diversion. In past campaigns, nets clearly stamped 'Government of Kenya, Not for Sale' ended up on commercial shop shelves and roadside stalls. Public health supplies belong to vulnerable families, not middlemen looking for a quick profit. If your household is in any of the 18 target counties, get registered, collect your nets from the official distribution post, and ensure your family sleeps under them every night.\n\nKwa ufupi: Serikali inasambaza vyandarua milioni 10.79 bila malipo katika kaunti 18 zilizoathirika zaidi na malaria. Huduma hii na vyandarua hivi ni vya bure kabisa; usitoe hongo yoyote wala ada ya usajili, na ukiona vikiuzwa madukani, ripoti mara moja kwa maafisa wa afya.",
-    "voice_note": "Habari zenu, a quick accountability update to share widely. The Ministry of Health is currently rolling out 10.79 million treated mosquito nets across 18 malaria-prone counties—mostly in Western, Nyanza, and the Coast. If you or your folks live in these counties, please remember: these nets are strictly free. Community health promoters will register your household. Nobody—whether an elder, a chief, or a volunteer—has any right to charge you registration money, transport fees, or chai to hand over your allocation. And if you walk into any local chemist or duka and spot mosquito nets marked 'GoK, Not for Sale' on the shelves, speak up and report it to the sub-county health office. Public health resources must reach the mothers and children they were meant for, not brokers. Share this with family upcountry.",
-    "sms": "Usiibiwe: The 10.79M mosquito nets being distributed in 18 counties are 100% FREE. Never pay registration or delivery fees. Report anyone selling GoK nets.",
-    "reels": "Ten point seven nine million free mosquito nets are rolling out across 18 counties in the Western, Lake, and Coastal belts. Malaria kills, but so does corruption when public healthcare supplies are diverted. Every single net is strictly free, funded to protect your household. If anyone demands a facilitation fee, or if you spot government-branded nets on sale in a local shop, don't stay silent. Public health is your right, not someone's tender."
+    "radio": "Sasa, welcome to Kenya on Record. I'm your host, and today tuangalie habari muhimu kutoka National Police Service. Kama umekuwa ukisubiri fursa ya kujiunga na polisi, note this date down: December 10. NPS imetangaza kuwa zoezi la kusajili maofisa wapya litafanyika nchi nzima siku hiyo.\n\nKilicho bora ni kwamba usaili hautafanyika Nairobi pekee. The recruitment will take place in every single sub-county across the country. Hii inamaanisha vijana wetu kule mashinani watapata nafasi sawa bila kulazimika kusafiri umbali mrefu au kutumia pesa ambazo hawana.\n\nKumbuka, usaili huu ni wa haki na hauna malipo yoyote. Ukiambiwa utoe hongo ndiyo upate kazi, huyo ni tapeli. Kuripoti visa kama hivi ni wajibu wetu.\n\nTusikilize sasa muhtasari kwa Kiswahili:\n\nIdara ya Polisi imetangaza kuwa usaili wa kujiunga na huduma ya polisi utafanyika nchi nzima mnamo Desemba 10. Zoezi hili litafanyika katika kila arobaini na tano na kuendelea kaunti ndogo ili kutoa fursa sawa kwa vijana wote. Hakikisha unafika katika kituo chako cha usaili ukiwa na stakabadhi zinazohitajika, na kumbuka hakuna malipo ya aina yoyote yanayohitajika ili kupata kazi hiyo. Linda nafasi yako na uwe mwangalifu dhidi ya matapeli.",
+    "voice_note": "Sasa mwananchi! Hii ni Kenya on Record. Kama umekuwa ukingoja nafasi ya kujiunga na National Police Service, sikiza hii vizuri. NPS imetangaza kuwa usaili wa kitaifa wa polisi utafanyika tarehe 10 Desemba. Na safari hii, zoezi halitakuwa Nairobi pekee—litafanyika moja kwa moja katika kila sub-county nchi nzima. Hii inamaanisha fursa iko karibu nawe. Kumbuka tu, huduma hii ni bure kabisa. Msikubali kutapeliwa na watu wanaowaahidi kazi kwa njia ya hongo. Jitokeze kwa wingi na ujaribu bahati yako siku hiyo.",
+    "sms": "Kenya on Record: NPS imetangaza usaili wa polisi utafanyika Dec 10 katika kila sub-county nchi nzima. Usilipie mtu yeyote hongo; kazi ni bure. Usiibiwe!",
+    "reels": "Nafasi ya kazi iko hapa! National Police Service imeweka tarehe 10 Desemba kuwa siku ya usaili wa polisi nchi nzima. Lakini sikiza hii—hutaenda mbali. Usaili utafanyika katika kila sub-county, karibu na kwako! Hakuna haja ya kusafiri kwenda makao makuu. Kumbuka, hakuna malipo ya hongo; serikali haitoi au kuomba pesa ili kukuajiri. Jitayarishe, andaa stakabadhi zako, na usikubali kutapeliwa na matapeli. Kenya on Record tunakupa ukweli mtupu."
   },
   "spend_usd": 0.0
 }
