@@ -1,9 +1,9 @@
 {
-  "fetched": "2026-11-20T12:08:40.662159+00:00",
+  "fetched": "2026-11-20T13:06:37.519029+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "police recruitment 2026",
+      "title": "police recruitment",
       "traffic": "1000+",
       "news": [
         {
@@ -17,9 +17,9 @@
           "source": "Tuko News"
         },
         {
-          "title": "How To Download Police Recruitment Form Online, Fill And Submit",
-          "url": "https://thekenyatimes.com/explainers/how-to-download-police-recruitment-form-online-fill-and-submit/",
-          "source": "The Kenya Times"
+          "title": "National Police Service Announces Nationwide Recruitment of Police Constables",
+          "url": "https://uzalendonews.co.ke/national-police-service-announces-nationwide-recruitment-of-police-constables/",
+          "source": "Uzalendo News"
         }
       ],
       "civic": true
@@ -27,7 +27,7 @@
     {
       "geo": "KE",
       "title": "bandari vs muranga seal",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "FKFPL: Mathare United seek back to back wins as they face Kakamega Homeboyz",
@@ -40,6 +40,73 @@
           "source": "Mozzart Sport Kenya"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "rockstar games gta vi",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "GTA 6 breaks records as estimated sales top $2.3bn",
+          "url": "https://www.bbc.com/news/articles/c9zr5nyv5dj2o",
+          "source": "BBC"
+        },
+        {
+          "title": "Grand Theft Auto VI review – gaming’s most depraved world is now also its greatest love story",
+          "url": "https://www.theguardian.com/games/2026/nov/18/grand-theft-auto-vi-gta-6-review-playstation-rockstar",
+          "source": "The Guardian"
+        },
+        {
+          "title": "‘Grand Theft Auto VI’ is an astonishing American epic",
+          "url": "https://www.washingtonpost.com/entertainment/video-games/2026/11/18/grand-theft-auto-vi-is-an-astonishing-american-epic/",
+          "source": "The Washington Post"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kenyan shilling",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Kenyan Shilling Weakens Against U.S. Dollar Ahead of Festivities",
+          "url": "https://www.kenyans.co.ke/news/129539-kenyan-shilling-crosses-ksh130-against-us-dollar-amid-growing-pressure",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Global economic shocks affect lives of ordinary residents",
+          "url": "https://www.kenyanews.go.ke/global-economic-shocks-affect-lives-of-ordinary-residents/",
+          "source": "Kenya News Agency"
+        },
+        {
+          "title": "Supercoin applies for Kenya licence as it plans shilling stablecoin",
+          "url": "https://www.the-star.co.ke/sasa/technology/2026-11-19-supercoin-applies-for-kenya-licence-as-it-plans-shilling-stablecoin",
+          "source": "The Star, Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "court",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Judiciary recovers grabbed Supreme Court land, secures title deeds",
+          "url": "https://radiokaya.co.ke/judiciary-recovers-grabbed-supreme-court-land-secures-title-deeds/",
+          "source": "Radiokaya"
+        },
+        {
+          "title": "Govt formalises Supreme Court land ownership after years without title",
+          "url": "https://capitalfm.africa/govt-formalises-supreme-court-land-ownership-after-years-without-title/",
+          "source": "Capital FM Africa"
+        },
+        {
+          "title": "How land grabbers took over property belonging to Kenya’s highest court",
+          "url": "https://peopledaily.digital/news/how-land-grabbers-took-over-property-belonging-to-kenyas-highest-court",
+          "source": "People Daily"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -60,50 +127,6 @@
           "title": "McCarthy unfazed by criticism of his team selection, tactics",
           "url": "https://nation.africa/kenya/sports/football/mccarthy-unfazed-by-criticism-of-his-team-selection-tactics-5675914",
           "source": "Daily Nation"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "rockstar games gta vi",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Grand Theft Auto 6 Lucia Actress Finally Revealed — And Yes, It's Who You Probably Suspected",
-          "url": "https://www.ign.com/articles/grand-theft-auto-6-lucia-actress-finally-revealed-and-yes-its-who-you-probably-suspected",
-          "source": "IGN"
-        },
-        {
-          "title": "GTA 6 finally confirms Jason’s actor as Rockstar shares its full cast list",
-          "url": "https://mixed-news.com/en/gta-6-jason-actor-dylan-rourke-lucia-cast-rockstar-credits/",
-          "source": "MIXED News"
-        },
-        {
-          "title": "GTA 6 Stars Dylan Rourke and Manni L. Perez Share Gratitude and Insights After Launch",
-          "url": "https://tech.yahoo.com/gaming/articles/gta-6-stars-dylan-rourke-034456642.html",
-          "source": "Yahoo Tech"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenyan shilling",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Kenyan Shilling Weakens Against U.S. Dollar Ahead of Festivities",
-          "url": "https://www.kenyans.co.ke/news/129539-kenyan-shilling-crosses-ksh130-against-us-dollar-amid-growing-pressure",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Global economic shocks affect lives of ordinary residents",
-          "url": "https://www.kenyanews.go.ke/global-economic-shocks-affect-lives-of-ordinary-residents/",
-          "source": "Kenya News Agency"
-        },
-        {
-          "title": "Supercoin applies for Kenya licence as it plans shilling stablecoin",
-          "url": "https://www.the-star.co.ke/sasa/technology/2026-11-19-supercoin-applies-for-kenya-licence-as-it-plans-shilling-stablecoin",
-          "source": "The Star, Kenya"
         }
       ]
     },
@@ -131,23 +154,23 @@
     },
     {
       "geo": "KE",
-      "title": "court",
+      "title": "pete rose",
       "traffic": "100+",
       "news": [
         {
-          "title": "High Court to hear dispute over regulator’s 300pc water rate hike",
-          "url": "https://nation.africa/kenya/counties/meru/high-court-to-hear-dispute-over-regulator-s-300pc-water-rate-hike-5677812",
-          "source": "Daily Nation"
+          "title": "Trump posthumously pardons US baseball legend Pete Rose",
+          "url": "https://www.bbc.com/news/articles/cx1l0pm7l9jmo",
+          "source": "BBC"
         },
         {
-          "title": "𝐍𝐲𝐞𝐫𝐢 𝐜𝐨𝐮𝐫𝐭 𝐝𝐢𝐬𝐦𝐢𝐬𝐬𝐞𝐬 𝐛𝐢𝐝 𝐛𝐲 𝐖𝐚𝐭𝐞𝐫 𝐑𝐞𝐬𝐨𝐮𝐫𝐜𝐞𝐬 𝐀𝐮𝐭𝐡𝐨𝐫𝐢𝐭𝐲 𝐭𝐨 𝐛𝐥𝐨𝐜𝐤 𝐩𝐞𝐭𝐢𝐭𝐢𝐨𝐧 𝐜𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐢𝐧𝐠 𝐢𝐦𝐩𝐥𝐞𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐨𝐟 𝐰𝐚𝐭𝐞𝐫 𝐭𝐚𝐫𝐢𝐟𝐟𝐬 The High Court in Nyeri has dismissed a preliminary objection by the Water Reso",
-          "url": "https://www.facebook.com/kenyanewsagency/posts/%F0%9D%90%8D%F0%9D%90%B2%F0%9D%90%9E%F0%9D%90%AB%F0%9D%90%A2-%F0%9D%90%9C%F0%9D%90%A8%F0%9D%90%AE%F0%9D%90%AB%F0%9D%90%AD-%F0%9D%90%9D%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%A6%F0%9D%90%A2%F0%9D%90%AC%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%AC-%F0%9D%90%9B%F0%9D%90%A2%F0%9D%90%9D-%F0%9D%90%9B%F0%9D%90%B2-%F0%9D%90%96%F0%9D%90%9A%F0%9D%90%AD%F0%9D%90%9E%F0%9D%90%AB-%F0%9D%90%91%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%A8%F0%9D%90%AE%F0%9D%90%AB%F0%9D%90%9C%F0%9D%90%9E%F0%9D%90%AC-%F0%9D%90%80%F0%9D%90%AE%F0%9D%90%AD%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%AB%F0%9D%90%A2%F0%9D%90%AD%F0%9D%90%B2-%F0%9D%90%AD%F0%9D%90%A8-%F0%9D%90%9B%F0%9D%90%A5%F0%9D%90%A8%F0%9D%90%9C%F0%9D%90%A4-%F0%9D%90%A9%F0%9D%90%9E%F0%9D%90%AD%F0%9D%90%A2%F0%9D%90%AD%F0%9D%90%A2%F0%9D%90%A8%F0%9D%90%A7-%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%A5%F0%9D%90%9E%F0%9D%90%A7/1453261523656156/",
-          "source": "Facebook"
+          "title": "President Trump says he’s given pardon to Pete Rose. Does it change anything?",
+          "url": "https://www.nytimes.com/athletic/7796018/2026/11/19/donald-trump-pete-rose-pardon-hall-of-fame-chances/",
+          "source": "The New York Times"
         },
         {
-          "title": "Court clears way for petition challenging water tariff implementation",
-          "url": "https://www.kenyanews.go.ke/court-clears-way-for-petition-challenging-water-tariff-implementation/",
-          "source": "Kenya News Agency"
+          "title": "Trump announces posthumous pardon for Pete Rose",
+          "url": "https://www.modernghana.com/videonews/nbc/1/757610",
+          "source": "Modern Ghana"
         }
       ],
       "civic": true
@@ -171,28 +194,6 @@
           "title": "MLS Salaries Soccer",
           "url": "https://www.couriernews.com/sports/mls-salaries-soccer/image_986a3773-e1ff-55d6-817a-968e7c0e70af.html",
           "source": "couriernews.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "referee",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Ecuadorian soccer player given eight-year ban for throwing rock at referee - The Athletic",
-          "url": "https://www.nytimes.com/athletic/7794562/2026/11/19/jhon-perlaza-ecuador-ban-rock/",
-          "source": "The New York Times"
-        },
-        {
-          "title": "Player banned for eight years for throwing stone at referee",
-          "url": "https://www.espn.com/soccer/story/_/id/50539565/jhon-michel-perlaza-stone-referee-eight-year-ban",
-          "source": "ESPN"
-        },
-        {
-          "title": "Jhon Perlaza: Ecuadorian footballer given eight-year ban for throwing stone at assistant referee",
-          "url": "https://www.bbc.com/sport/football/articles/cqlyk9yzkz2no",
-          "source": "BBC"
         }
       ]
     }
