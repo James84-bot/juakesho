@@ -521,7 +521,7 @@
           "published": "2026-11-19"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 5.2/10. Replace the generic poll prompt and textbook framing with a concrete fact about what the opposition walked out over."
@@ -572,7 +572,8 @@
       "track_credit": "Music: \"Who Likes to Party\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1337,
-      "photo_checked": "2026-11-20T01:21:03.385420+03:00"
+      "photo_checked": "2026-11-20T01:21:03.385420+03:00",
+      "decided_at": "2026-11-20T11:38:31.258602+03:00"
     },
     {
       "id": "2026-w47-hot-1116",
@@ -2090,7 +2091,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -2129,7 +2130,8 @@
       ],
       "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1333
+      "tg_msg": 1333,
+      "decided_at": "2026-11-20T11:38:30.678338+03:00"
     },
     {
       "id": "2026-w47-hot-1120m",
@@ -2281,7 +2283,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 5.8/10. Ground this in the actual D+ grade requirement and sub-county venue details instead of generic announcement phrasing."
@@ -2333,7 +2335,15 @@
       ],
       "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1344
+      "tg_msg": 1344,
+      "decided_at": "2026-11-20T11:38:32.471943+03:00",
+      "published_at": "2026-11-20T11:40:11.563934+03:00",
+      "ig_id": "18118712927325699",
+      "fb_id": "3703863383116380",
+      "story_id": "18125531911940507",
+      "fb_story_id": "2836051830123197",
+      "yt_id": "H2EJrHYDp-M",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-hot-1120",
@@ -2392,7 +2402,7 @@
           "link": "https://www.businessdailyafrica.com/bd/corporate/technology/kenya-tech-startup-funding-hits-6-year-low-5677318"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": [
@@ -2431,7 +2441,8 @@
       ],
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1347
+      "tg_msg": 1347,
+      "decided_at": "2026-11-20T11:38:33.092368+03:00"
     }
   ],
   "scripts": {
