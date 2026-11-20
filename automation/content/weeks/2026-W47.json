@@ -2500,7 +2500,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 6.8/10. Replace the final question and action beat with a direct, lawful demand on the Ministry of Sports."
@@ -2549,7 +2549,8 @@
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1365,
-      "photo_checked": "2026-11-20T12:51:21.143890+03:00"
+      "photo_checked": "2026-11-20T12:51:21.143890+03:00",
+      "decided_at": "2026-11-20T13:04:57.924178+03:00"
     }
   ],
   "scripts": {
