@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-20T11:42:08.458895+00:00",
+  "fetched": "2026-11-20T11:49:07.869425+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -92,6 +92,28 @@
     },
     {
       "geo": "KE",
+      "title": "boeing 747",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "As BYD’s Denza B5 tows a Boeing 747 in the UK, China clips allege suspension damage [Video]",
+          "url": "https://carnewschina.com/2026/11/20/as-byds-denza-b5-tows-a-boeing-747-in-the-uk-china-clips-allege-suspension-damage-video/",
+          "source": "CarNewsChina.com"
+        },
+        {
+          "title": "Denza towed a Boeing 747 using its new Bao 5… on two wheels",
+          "url": "https://www.topgear.com/car-news/suvs/denza-towed-a-boeing-747-using-its-new-bao-5-two-wheels",
+          "source": "Top Gear"
+        },
+        {
+          "title": "Chinese BYD Denza hybrid pulls a 396,000lb Boeing 747 while balancing on two wheels in a stunt that defies physics",
+          "url": "https://supercarblondie.com/byd-denza-bao-5-hybrid-pulls-boeing-747-two-wheels/",
+          "source": "Supercar Blondie"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "grizzlies vs warriors",
       "traffic": "200+",
       "news": [
@@ -153,45 +175,23 @@
     },
     {
       "geo": "KE",
-      "title": "boeing 747",
+      "title": "referee",
       "traffic": "100+",
       "news": [
         {
-          "title": "Chinese BYD Denza hybrid pulls a 396,000lb Boeing 747 while balancing on two wheels in a stunt that defies physics",
-          "url": "https://supercarblondie.com/byd-denza-bao-5-hybrid-pulls-boeing-747-two-wheels/",
-          "source": "Supercar Blondie"
+          "title": "Ecuadorian soccer player given eight-year ban for throwing rock at referee - The Athletic",
+          "url": "https://www.nytimes.com/athletic/7794562/2026/11/19/jhon-perlaza-ecuador-ban-rock/",
+          "source": "The New York Times"
         },
         {
-          "title": "A Chinese SUV Towed a 397,000-Pound Boeing 747 on Just Two Wheels",
-          "url": "https://www.motorbiscuit.com/a-chinese-suv-towed-a-397000-pound-boeing-747-on-just-two-wheels/",
-          "source": "MotorBiscuit"
+          "title": "Player banned for eight years for throwing stone at referee",
+          "url": "https://www.espn.com/soccer/story/_/id/50539565/jhon-michel-perlaza-stone-referee-eight-year-ban",
+          "source": "ESPN"
         },
         {
-          "title": "Denza towed a Boeing 747 using its new Bao 5… on two wheels",
-          "url": "https://www.topgear.com/car-news/suvs/denza-towed-a-boeing-747-using-its-new-bao-5-two-wheels",
-          "source": "Top Gear"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kcb group",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "KCB posts Sh57bn profit, raises stake in DRC unit",
-          "url": "https://nation.africa/kenya/business/companies/kcb-posts-sh57bn-profit-raises-stake-in-drc-unit-5675920",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Regional businesses drive KCB Group’s Q3 profits to Sh58.6bn",
-          "url": "https://www.the-star.co.ke/business/markets/2026-11-19-regional-businesses-drive-kcb-groups-q3-profits-to-sh586bn",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "KCB: PBT rose 25%, deposits grew 15% and NPL ratio fell to 13.3%",
-          "url": "https://www.tradingview.com/news/urn:summary_document_slides:quartr.com:4274471:0-kcb-pbt-rose-25-deposits-grew-15-and-npl-ratio-fell-to-13-3/",
-          "source": "TradingView"
+          "title": "Jhon Perlaza: Ecuadorian footballer given eight-year ban for throwing stone at assistant referee",
+          "url": "https://www.bbc.com/sport/football/articles/cqlyk9yzkz2no",
+          "source": "BBC"
         }
       ]
     }
