@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-20T17:42:56.253797+00:00",
+  "fetched": "2026-11-20T17:58:17.268918+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "bandari vs muranga seal",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Red-hot Lopaga fires Murang’a SEAL back to winning ways in Bandari win",
+          "url": "https://blog.ke.sportpesa.com/2026/11/20/red-hot-lopaga-fires-muranga-seal-back-to-winning-ways-in-bandari-win/",
+          "source": "SportPesa Blog"
+        },
+        {
+          "title": "Okere challenges Bandari to tame Murang’a goal hunters",
+          "url": "https://www.the-star.co.ke/sports/football/2026-11-18-okere-challenges-bandari-to-tame-muranga-goal-hunters-1",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Mathare United, Kakamega Homeboyz share points in entertaining FKF Premier League draw",
+          "url": "https://eastleighvoice.co.ke/sports/426164/mathare-united-kakamega-homeboyz-share-points-in-entertaining-fkf-premier-league-draw",
+          "source": "The Eastleigh Voice"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "benni mccarthy",
@@ -20,28 +42,6 @@
           "title": "McCarthy unfazed by criticism of his team selection, tactics",
           "url": "https://nation.africa/kenya/sports/football/mccarthy-unfazed-by-criticism-of-his-team-selection-tactics-5675914",
           "source": "Daily Nation"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "bandari vs muranga seal",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Red-hot Lopaga fires Murang’a SEAL back to winning ways in Bandari win",
-          "url": "https://blog.ke.sportpesa.com/2026/11/20/red-hot-lopaga-fires-muranga-seal-back-to-winning-ways-in-bandari-win/",
-          "source": "SportPesa Blog"
-        },
-        {
-          "title": "Okere challenges Bandari to tame Murang’a goal hunters",
-          "url": "https://www.the-star.co.ke/sports/football/2026-11-18-okere-challenges-bandari-to-tame-muranga-goal-hunters-1",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Mathare United, Kakamega Homeboyz share points in entertaining FKF Premier League draw",
-          "url": "https://eastleighvoice.co.ke/sports/426164/mathare-united-kakamega-homeboyz-share-points-in-entertaining-fkf-premier-league-draw",
-          "source": "The Eastleigh Voice"
         }
       ]
     },
@@ -164,7 +164,7 @@
     },
     {
       "title": "troyes vs le havre",
-      "why": "unsafe: 'Betting'"
+      "why": "unsafe: 'Odds'"
     },
     {
       "title": "kashiwa",
