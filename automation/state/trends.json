@@ -1,15 +1,15 @@
 {
-  "fetched": "2026-11-20T13:06:37.519029+00:00",
+  "fetched": "2026-11-20T14:01:02.876544+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "police recruitment",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "NPS announces December 10 date for nationwide police recruitment",
-          "url": "https://www.the-star.co.ke/news/2026-11-20-nps-announces-december-10-date-for-police-recruitment",
-          "source": "The Star, Kenya"
+          "url": "https://citizen.digital/article/nps-announces-december-10-date-for-nationwide-police-recruitment-n394237",
+          "source": "Citizen Digital"
         },
         {
           "title": "Police constable salary in Kenya: Pay structure, allowances and entry requirements",
@@ -17,12 +17,34 @@
           "source": "Tuko News"
         },
         {
-          "title": "National Police Service Announces Nationwide Recruitment of Police Constables",
-          "url": "https://uzalendonews.co.ke/national-police-service-announces-nationwide-recruitment-of-police-constables/",
-          "source": "Uzalendo News"
+          "title": "DCI Issues Public Alert Ahead of Police Constables Recruitment",
+          "url": "https://nairobileo.co.ke/news/article/31593/dci-issues-public-alert-ahead-of-police-constables-recruitment",
+          "source": "Nairobi Leo"
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "kenyan shilling",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Kenyan Shilling Weakens Against U.S. Dollar Ahead of Festivities",
+          "url": "https://www.kenyans.co.ke/news/129539-kenyan-shilling-crosses-ksh130-against-us-dollar-amid-growing-pressure",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Global economic shocks affect lives of ordinary residents",
+          "url": "https://www.kenyanews.go.ke/global-economic-shocks-affect-lives-of-ordinary-residents/",
+          "source": "Kenya News Agency"
+        },
+        {
+          "title": "Kenyan Shilling Hits Ksh130 Against US Dollar For First Time In 7 Months",
+          "url": "https://thekenyatimes.com/business/kenyan-shilling-hits-ksh130-against-us-dollar-for-first-time-in-7-months/",
+          "source": "The Kenya Times"
+        }
+      ]
     },
     {
       "geo": "KE",
@@ -43,75 +65,8 @@
     },
     {
       "geo": "KE",
-      "title": "rockstar games gta vi",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "GTA 6 breaks records as estimated sales top $2.3bn",
-          "url": "https://www.bbc.com/news/articles/c9zr5nyv5dj2o",
-          "source": "BBC"
-        },
-        {
-          "title": "Grand Theft Auto VI review – gaming’s most depraved world is now also its greatest love story",
-          "url": "https://www.theguardian.com/games/2026/nov/18/grand-theft-auto-vi-gta-6-review-playstation-rockstar",
-          "source": "The Guardian"
-        },
-        {
-          "title": "‘Grand Theft Auto VI’ is an astonishing American epic",
-          "url": "https://www.washingtonpost.com/entertainment/video-games/2026/11/18/grand-theft-auto-vi-is-an-astonishing-american-epic/",
-          "source": "The Washington Post"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenyan shilling",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Kenyan Shilling Weakens Against U.S. Dollar Ahead of Festivities",
-          "url": "https://www.kenyans.co.ke/news/129539-kenyan-shilling-crosses-ksh130-against-us-dollar-amid-growing-pressure",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Global economic shocks affect lives of ordinary residents",
-          "url": "https://www.kenyanews.go.ke/global-economic-shocks-affect-lives-of-ordinary-residents/",
-          "source": "Kenya News Agency"
-        },
-        {
-          "title": "Supercoin applies for Kenya licence as it plans shilling stablecoin",
-          "url": "https://www.the-star.co.ke/sasa/technology/2026-11-19-supercoin-applies-for-kenya-licence-as-it-plans-shilling-stablecoin",
-          "source": "The Star, Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "court",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Judiciary recovers grabbed Supreme Court land, secures title deeds",
-          "url": "https://radiokaya.co.ke/judiciary-recovers-grabbed-supreme-court-land-secures-title-deeds/",
-          "source": "Radiokaya"
-        },
-        {
-          "title": "Govt formalises Supreme Court land ownership after years without title",
-          "url": "https://capitalfm.africa/govt-formalises-supreme-court-land-ownership-after-years-without-title/",
-          "source": "Capital FM Africa"
-        },
-        {
-          "title": "How land grabbers took over property belonging to Kenya’s highest court",
-          "url": "https://peopledaily.digital/news/how-land-grabbers-took-over-property-belonging-to-kenyas-highest-court",
-          "source": "People Daily"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "benni mccarthy",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Kenya coach Benni McCarthy demands overdue payments despite post-match comments",
@@ -127,6 +82,51 @@
           "title": "McCarthy unfazed by criticism of his team selection, tactics",
           "url": "https://nation.africa/kenya/sports/football/mccarthy-unfazed-by-criticism-of-his-team-selection-tactics-5675914",
           "source": "Daily Nation"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "court",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Court allows CJ to publish judges’ performance",
+          "url": "https://nation.africa/kenya/news/court-allows-cj-to-publish-judges-performance--5677998",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "CJ Koome set to unveil Judiciary performance report despite court order",
+          "url": "https://www.standardmedia.co.ke/crime-and-justice/article/2001562636/cj-koome-set-to-unveil-judiciary-performance-report-despite-court-order",
+          "source": "The Standard"
+        },
+        {
+          "title": "Court blocks publication of individual performances for judges",
+          "url": "https://www.the-star.co.ke/news/2026-11-19-court-blocks-publication-of-judges-performances",
+          "source": "The Star, Kenya"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "rockstar games gta vi",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "\"You broke my heart\" - popular artist Doja Cat gutted to not have her music in Grand Theft Auto 6",
+          "url": "https://www.eurogamer.net/grand-theft-auto-6-doja-cat-gutted-not-in-soundtrack",
+          "source": "Eurogamer.net"
+        },
+        {
+          "title": "Wayment! #DojaCat said she’s feeling a way about not being included in the #GTA6 game.😭 #Roomies, have you tapped in?📸:@gettyimages ✍🏾:#TSRStaffJR",
+          "url": "https://www.instagram.com/p/Df8HiRKShNw/",
+          "source": "Instagram"
+        },
+        {
+          "title": "Doja Cat Blasts Rockstar Games for Leaving Her Music Out of ‘GTA 6’: ‘I’m So F–kin Bitter’",
+          "url": "https://www.billboard.com/music/rb-hip-hop/doja-cat-slams-rockstar-games-grand-theft-auto-6-music-1236385746/",
+          "source": "Billboard"
         }
       ]
     },
@@ -163,17 +163,16 @@
           "source": "BBC"
         },
         {
-          "title": "President Trump says he’s given pardon to Pete Rose. Does it change anything?",
-          "url": "https://www.nytimes.com/athletic/7796018/2026/11/19/donald-trump-pete-rose-pardon-hall-of-fame-chances/",
-          "source": "The New York Times"
+          "title": "Pete Rose posthumously pardoned by Trump after baseball's career hits leader was reinstated by MLB",
+          "url": "https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915",
+          "source": "AP News"
         },
         {
-          "title": "Trump announces posthumous pardon for Pete Rose",
-          "url": "https://www.modernghana.com/videonews/nbc/1/757610",
-          "source": "Modern Ghana"
+          "title": "Trump pardons controversial baseball legend Pete Rose",
+          "url": "https://www.cnn.com/2026/11/19/politics/trump-pardons-pete-rose-baseball",
+          "source": "CNN"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
