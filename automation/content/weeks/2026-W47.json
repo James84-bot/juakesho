@@ -2402,7 +2402,7 @@
           "link": "https://www.businessdailyafrica.com/bd/corporate/technology/kenya-tech-startup-funding-hits-6-year-low-5677318"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -2442,7 +2442,14 @@
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1347,
-      "decided_at": "2026-11-20T11:38:33.092368+03:00"
+      "decided_at": "2026-11-20T11:38:33.092368+03:00",
+      "published_at": "2026-11-20T12:52:15.150798+03:00",
+      "ig_id": "17891824992623255",
+      "fb_id": "1703530097954644",
+      "story_id": "17915798715585674",
+      "fb_story_id": "1806456833911379",
+      "yt_id": "80O2CtSmW0c",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-hot-1120a",
@@ -2541,7 +2548,8 @@
       ],
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1365
+      "tg_msg": 1365,
+      "photo_checked": "2026-11-20T12:51:21.143890+03:00"
     }
   ],
   "scripts": {
