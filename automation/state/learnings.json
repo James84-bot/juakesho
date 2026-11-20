@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T06:47:02.040743+03:00",
+  "updated": "2026-11-20T15:08:30.588195+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -20,12 +20,12 @@
       "lane": "everyone",
       "score": 25.9,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 47,
+      "reach": 48,
       "saved": 0,
       "shares": 2,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.3
+      "avg_watch_s": 5.2
     },
     {
       "id": "2026-w45-hot-1108m",
@@ -69,19 +69,6 @@
   ],
   "bottom": [
     {
-      "id": "2026-w47-hot-1118-r2",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
-      "reach": 13,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 2.6
-    },
-    {
       "id": "2026-w47-hot-1118e-r2",
       "series": "sauti",
       "lane": "everyone",
@@ -100,12 +87,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Mobile money deals fell despite 97 million active SIM lines in Kenya.",
-      "reach": 8,
+      "reach": 9,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 6.4
+    },
+    {
+      "id": "2026-w47-hot-1119",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
+      "reach": 25,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.7
     }
   ],
   "all": [
@@ -128,12 +128,12 @@
       "lane": "everyone",
       "score": 25.9,
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
-      "reach": 47,
+      "reach": 48,
       "saved": 0,
       "shares": 2,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.3
+      "avg_watch_s": 5.2
     },
     {
       "id": "2026-w45-hot-1108m",
@@ -765,7 +765,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
-      "reach": 13,
+      "reach": 14,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -791,12 +791,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Mobile money deals fell despite 97 million active SIM lines in Kenya.",
-      "reach": 8,
+      "reach": 9,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 6.4
+    },
+    {
+      "id": "2026-w47-hot-1119",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
+      "reach": 25,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.7
     }
   ],
   "youtube": [
@@ -817,6 +830,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w47-hot-1118e-r2",
+      "series": "sauti",
+      "opening": "Rigathi Gachagua presented fresh demands to the IEBC chair.",
+      "views": 527,
+      "likes": 1,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
@@ -825,10 +846,10 @@
       "comments": 0
     },
     {
-      "id": "2026-w47-hot-1118e-r2",
+      "id": "2026-w47-hot-1118-r2",
       "series": "sauti",
-      "opening": "Rigathi Gachagua presented fresh demands to the IEBC chair.",
-      "views": 488,
+      "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
+      "views": 512,
       "likes": 1,
       "comments": 0
     },
@@ -838,14 +859,6 @@
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
       "views": 468,
       "likes": 0,
-      "comments": 0
-    },
-    {
-      "id": "2026-w47-hot-1118-r2",
-      "series": "sauti",
-      "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
-      "views": 467,
-      "likes": 1,
       "comments": 0
     },
     {
@@ -940,7 +953,7 @@
       "id": "2026-w47-hot-1118m",
       "series": "sauti",
       "opening": "Mobile money deals fell despite 97 million active SIM lines in Kenya.",
-      "views": 155,
+      "views": 163,
       "likes": 0,
       "comments": 0
     },
@@ -948,8 +961,16 @@
       "id": "2026-w47-hot-1116",
       "series": "sauti",
       "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "views": 143,
+      "views": 144,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1119",
+      "series": "sauti",
+      "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
+      "views": 142,
+      "likes": 0,
       "comments": 0
     },
     {
@@ -1044,7 +1065,7 @@
       "id": "2026-w47-hot-1116m",
       "series": "sauti",
       "opening": "EACC wants Sh40.3 million back from a roads boss.",
-      "views": 63,
+      "views": 62,
       "likes": 0,
       "comments": 0
     },
@@ -1076,7 +1097,7 @@
       "id": "2026-w46-d6-kenya",
       "series": "kenya",
       "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "views": 53,
+      "views": 54,
       "likes": 0,
       "comments": 0
     },
