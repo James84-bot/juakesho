@@ -2130,13 +2130,95 @@
       "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1333
+    },
+    {
+      "id": "2026-w47-hot-1120m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Households",
+      "line": "The Ministry of Health will distribute *10.79 million* mosquito nets across 18 counties.",
+      "fact": "The nationwide drive targets 18 malaria-endemic counties to curb preventable infections.",
+      "message": "Kenya is rolling out 10.79 million free mosquito nets to protect families in 18 counties.",
+      "action": "Check with your local community health promoter for net distribution dates.",
+      "source": "The Eastleigh Voice, 2026-11-20",
+      "photo_query": "mosquito net bedroom Kenya",
+      "who": "Ministry of Health",
+      "where": "18 counties",
+      "when": "20 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Families in malaria zones get free nets to cut clinic visits and treatable fever costs.",
+      "beats": [
+        "Kenya will distribute *10.79 million* mosquito nets across 18 counties.",
+        "The campaign covers *18 counties* hit hardest by malaria.",
+        "Free nets save families thousands in *malaria clinic bills*.",
+        "Has your local clinic registered your household for a net yet?"
+      ],
+      "caption": "The Ministry of Health is rolling out 10.79 million mosquito nets across 18 malaria-endemic counties.\n\nFree treated nets protect children and save families from costly hospital treatments.\n\nHas your household been registered for a net?\n\n#MalariaPrevention #HealthKE #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-20T09:47:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The High Court convicted CS Mbadi of contempt for concealing national debt details."
+      ],
+      "source_links": [
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "Kenya to distribute 10.79 million mosquito nets in 18 malaria-endemic counties",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUFlaWlY0eDlUOUpJRktEN1gyVFVGei1mZGVPZGZQZ2N5NFNHb1FqZ1o0TnFaTldIaUZjNVhCaDVxdW9wbktrZExvN1RNQ0JZb0MzMjVPUWNoQzdlZDV4dHl4ODM0T1V4MU1qUzRnYkJlXzU1MGpoWTFGWWxDU3kwSFlJdGoxVHBZcktuNk9adElYS1R1N2drWFR2WmhnLW9wY2FOR253NkNnbW51RGZ1VWlIdTFGWmdTSkRUNw?oc=5",
+          "published": "2026-11-20"
+        }
+      ],
+      "quotes": [],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 3,
+        "action": 7,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.2,
+        "note": "Use a story from the current news list (items 1-5) to match the high demand score required."
+      },
+      "drafted_at": "2026-11-20T06:53:37.731894+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1120m-photo.jpg",
+      "photo_credit": "File photo: KBC",
+      "photo_kind": "topic",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/the-campaign-targets-99-sub-counties/",
+      "shot_info": [
+        {
+          "credit": "File photo: KBC",
+          "title": "MoH launches distribution of 10.8m treated mosquito nets in 18 counties"
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1340,
+      "auto": true,
+      "decided_at": "2026-11-20T06:54:54.635842+03:00"
     }
   ],
   "scripts": {
-    "radio": "Jambo citizens, this is Kenya on Record. As we look ahead to the 2027 general election, one message from across the country is loud and clear: Kenyans are demanding full electoral transparency and genuine consensus long before election day. We cannot afford the usual last-minute structural fixes or opaque digital systems that leave room for doubt. Citizens are insisting on an early, independent audit of the voter register, clean procurement processes for electoral technology, and open access to tallies at every level. Trust is built in the preparation, not in the repair. If the rules of the game are transparent from day one, every Kenyan can accept the outcome with confidence. Accountability isn't just about how we cast our vote—it's about how the entire process is managed starting right now. Let’s hold our electoral institutions accountable today so we don't buy regret tomorrow.\n\nKwa ufupi: Wakenya wanataka uwazi kamili na maridhiano kuhusu mchakato wa uchaguzi wa 2027 kabla ya siku yenyewe kufika. Ni lazima daftari la wapigakura likaguliwe kikamilifu na mifumo yote ya uchaguzi iwe wazi ili kila mwananchi awe na imani na matokeo. Haki na ukweli vianzie sasa.",
-    "voice_note": "Habari zenu. Hapa ni Kenya on Record na ujumbe mfupi wa wiki hii. Looking ahead to 2027, the demand from citizens across Kenya is very straightforward: we need full electoral transparency and clear public consensus now, not months or weeks before the vote. That means open audits of the voter register, verifiable technology, and rules that every stakeholder agrees on early. History has taught us that electoral integrity isn't fixed on voting day—it is built through total visibility right now. Ask your civic leaders and representatives what steps are being taken today to guarantee a clean process. Let’s stay vigilant and demand answers early. Share this with your network, and let's keep the standard high.",
-    "sms": "USIIBIWE: 2027 prep starts now. Demand early voter register audits & open electoral rules. Electoral integrity begins today, not on voting day.",
-    "reels": "With 2027 approaching, Kenyans are making one thing clear: we will not accept last-minute electoral fixes. True trust requires total transparency right now—from an audited voter register to open digital tallying. Electoral integrity isn't built on election day; it's built today through clear rules and public consensus. Stay sharp, demand transparency early, and hold the process accountable."
+    "radio": "Good evening listeners, this is Kenya on Record. Malaria remains one of our country's heaviest health burdens, silently draining household earnings and endangering our children. This week, the Ministry of Health began rolling out 10.79 million long-lasting insecticidal nets across 18 high-risk counties, targeting malaria-endemic zones in the Western, Lake Victoria, and Coastal belts.\n\nHere is the accountability check: every single net in this program is completely free. Distribution is carried out through verified household registration led by Community Health Promoters. Under no circumstances should an elder, an administrator, or a health worker demand registration fees, transport contributions, or a facilitation token before giving you your net. \n\nWe must also protect these supplies from diversion. In past campaigns, nets clearly stamped 'Government of Kenya, Not for Sale' ended up on commercial shop shelves and roadside stalls. Public health supplies belong to vulnerable families, not middlemen looking for a quick profit. If your household is in any of the 18 target counties, get registered, collect your nets from the official distribution post, and ensure your family sleeps under them every night.\n\nKwa ufupi: Serikali inasambaza vyandarua milioni 10.79 bila malipo katika kaunti 18 zilizoathirika zaidi na malaria. Huduma hii na vyandarua hivi ni vya bure kabisa; usitoe hongo yoyote wala ada ya usajili, na ukiona vikiuzwa madukani, ripoti mara moja kwa maafisa wa afya.",
+    "voice_note": "Habari zenu, a quick accountability update to share widely. The Ministry of Health is currently rolling out 10.79 million treated mosquito nets across 18 malaria-prone counties—mostly in Western, Nyanza, and the Coast. If you or your folks live in these counties, please remember: these nets are strictly free. Community health promoters will register your household. Nobody—whether an elder, a chief, or a volunteer—has any right to charge you registration money, transport fees, or chai to hand over your allocation. And if you walk into any local chemist or duka and spot mosquito nets marked 'GoK, Not for Sale' on the shelves, speak up and report it to the sub-county health office. Public health resources must reach the mothers and children they were meant for, not brokers. Share this with family upcountry.",
+    "sms": "Usiibiwe: The 10.79M mosquito nets being distributed in 18 counties are 100% FREE. Never pay registration or delivery fees. Report anyone selling GoK nets.",
+    "reels": "Ten point seven nine million free mosquito nets are rolling out across 18 counties in the Western, Lake, and Coastal belts. Malaria kills, but so does corruption when public healthcare supplies are diverted. Every single net is strictly free, funded to protect your household. If anyone demands a facilitation fee, or if you spot government-branded nets on sale in a local shop, don't stay silent. Public health is your right, not someone's tender."
   },
   "spend_usd": 0.0
 }
