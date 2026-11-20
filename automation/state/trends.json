@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-20T06:06:32.023617+00:00",
+  "fetched": "2026-11-20T07:41:30.476294+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,14 +7,14 @@
       "traffic": "2000+",
       "news": [
         {
-          "title": "Marie-Antoinette Katoto-Jule Brand, un duo de Lyonnes au top pour faire plier Arsenal en Lgue des champions",
-          "url": "https://www.lequipe.fr/Football/Actualites/Marie-antoinette-katoto-jule-brand-un-duo-de-lyonnes-au-top-pour-faire-plier-arsenal/1744790",
-          "source": "L'Équipe"
+          "title": "LdC (F) : l’OL fait le boulot à Arsenal et se qualifie pour les quarts",
+          "url": "https://www.footmercato.net/a8200439815572107956-ldc-f-lol-fait-le-boulot-a-arsenal-et-se-qualifie-pour-les-quarts",
+          "source": "Foot Mercato"
         },
         {
-          "title": "Lyon qualifié pour les quarts de la C1 après sa victoire à Arsenal",
-          "url": "https://www.sofoot.com/breves/ligue-des-champions-feminines-ol-lyonnes-reprend-la-tete-du-classement-apres-sa-victoire-a-arsenal",
-          "source": "SO FOOT.com"
+          "title": "Melchie Dumornay scelle la victoire de l'OLL à Londres",
+          "url": "https://fr.uefa.com/womenschampionsleague/video/02ab-221c803a82b2-353b5f7332a4-1000--melchie-dumornay-scelle-la-victoire-de-l-oll-a-londres/",
+          "source": "UEFA.com"
         },
         {
           "title": "Ligue des champions (F/J5) : Brand, Dumornay, Hinds... les tops/flops d'Arsenal - OL Lyonnes : Sports - Orange",
@@ -22,6 +22,29 @@
           "source": "Sports - Orange"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "arsenal w.f.c. vs ol lyonnes standings",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Arsenal 0-2 Lyon: French side show Gunners bridge to gap",
+          "url": "https://www.bbc.com/sport/football/articles/cm4gnxz8dvx1o",
+          "source": "BBC"
+        },
+        {
+          "title": "OL Lyonnes show their class to hit Arsenal’s ambitions for a top-four WCL finish",
+          "url": "https://www.theguardian.com/football/2026/nov/19/arsenal-ol-lyonnes-womens-champions-league-match-report",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Arsenal's Champions League campaign given a reality check",
+          "url": "https://www.espn.com/soccer/story/_/id/50534727/arsenal-lyonnes-champions-league-defeat",
+          "source": "ESPN"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -47,30 +70,8 @@
     },
     {
       "geo": "KE",
-      "title": "mrima hill mine",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Kenya awards Sh8trn rare earths deal to US group",
-          "url": "https://www.businessdailyafrica.com/bd/economy/-kenya-awards-sh8trn-rare-earth-deposit-to-us-group-5677508",
-          "source": "Business Daily"
-        },
-        {
-          "title": "Mrima Hill deal: US consortium wins Kenya mining project, beating Chinese rivals",
-          "url": "https://www.bbc.com/news/articles/cm9q84gp0gr3o",
-          "source": "BBC"
-        },
-        {
-          "title": "EXCLUSIVE: Kenya picks US consortium to develop Mrima Hill critical minerals project",
-          "url": "https://www.reuters.com/world/africa/kenya-chooses-us-consortium-to-develop-mrima-hill-critical-minerals-project-2026-11-19/",
-          "source": "Reuters"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "police recruitment 2026",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "NPS announces December 10 date for nationwide police recruitment",
@@ -83,12 +84,34 @@
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "Police recruitment 2026: Full list of qualifications candidates must meet",
-          "url": "https://peopledaily.digital/insights/police-recruitment-2026-full-list-of-qualifications-candidates-must-meet",
-          "source": "People Daily"
+          "title": "Police constable salary in Kenya: Pay structure, allowances and entry requirements",
+          "url": "https://www.tuko.co.ke/facts-lifehacks/guides/647156-police-constable-salary-kenya-pay-structure-allowances-entry-requirements/",
+          "source": "Tuko News"
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "grizzlies vs warriors",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "NBA: Golden State Warriors at Memphis Grizzlies",
+          "url": "https://www.reutersconnect.com/item/nba-golden-state-warriors-at-memphis-grizzlies/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzAzODEyNzk",
+          "source": "Reuters Connect"
+        },
+        {
+          "title": "De’Anthony Melton, Gui Santos start for Warriors",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/deanthony-melton-gui-santos-start-for-warriors",
+          "source": "NBC Sports"
+        },
+        {
+          "title": "Game Recap: Grizzlies 126, Warriors 98 (Nov. 19)",
+          "url": "https://www.nba.com/watch/video/game-recap-grizzlies-126-warriors-98-nov-19",
+          "source": "NBA.com"
+        }
+      ]
     },
     {
       "geo": "KE",
@@ -101,14 +124,14 @@
           "source": "Footafrique.com"
         },
         {
-          "title": "Ligue 1 : le MCA dénonce de « graves erreurs d'arbitrage » face à Akbou",
-          "url": "https://competition.dz/chrono/ligue-1-le-mca-denonce-de-graves-erreurs-darbitrage-face-a-akbou.html",
-          "source": "Competition.dz"
+          "title": "L’accumulation des matchs, le challenge à relever",
+          "url": "https://www.lexpressiondz.com/sports/l-accumulation-des-matchs-le-challenge-a-relever-411388",
+          "source": "L'Expression"
         },
         {
-          "title": "Ligue 1 (J10) : Le CRB et le MCA tombent de haut ! (vidéo)",
-          "url": "https://www.dzfoot.com/football-en-algerie/ligue-1-j10-le-crb-et-le-mca-tombent-de-haut-video-302577.html",
-          "source": "DZfoot"
+          "title": "Ligue 1 (10e journée) : premier revers pour le CRB, le MCA chute à Douera",
+          "url": "https://competition.dz/actualites/ligue-1/ligue-1-10e-journee-premier-revers-pour-le-crb-le-mca-chute-a-douera.html",
+          "source": "Competition.dz"
         }
       ],
       "civic": true
@@ -129,7 +152,7 @@
           "source": "CNN"
         },
         {
-          "title": "Anthropic IPO live: Anthropic stock closes up 17% from initial price for $1.27T valuation in first day of trading",
+          "title": "Anthropic IPO live: Anthropic stock begins trading in record $81B raise with $1.5T valuation",
           "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html",
           "source": "Yahoo Finance"
         }
@@ -202,11 +225,6 @@
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "grizzlies vs warriors",
-      "why": "unsafe: 'shooting'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
