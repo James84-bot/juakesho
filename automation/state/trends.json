@@ -1,50 +1,6 @@
 {
-  "fetched": "2026-11-20T09:49:49.054669+00:00",
+  "fetched": "2026-11-20T11:42:08.458895+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "arsenal vs ol lyonnes",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Marie-Antoinette Katoto-Jule Brand, un duo de Lyonnes au top pour faire plier Arsenal en Lgue des champions",
-          "url": "https://www.lequipe.fr/Football/Actualites/Marie-antoinette-katoto-jule-brand-un-duo-de-lyonnes-au-top-pour-faire-plier-arsenal/1744790",
-          "source": "L'Équipe"
-        },
-        {
-          "title": "Les espoirs d’Arsenal d’atteindre les quarts de finale compromis après sa défaite 2-0 contre Lyon",
-          "url": "https://mezha.net/fr/news/mezha-a250f820dd2c31b895eb8874_les-espoirs-d-arsenal-d-atteindre/",
-          "source": "Mezha.net"
-        },
-        {
-          "title": "Melchie Dumornay scelle la victoire de l'OLL à Londres",
-          "url": "https://fr.uefa.com/womenschampionsleague/video/02ab-221c803a82b2-353b5f7332a4-1000--melchie-dumornay-scelle-la-victoire-de-l-oll-a-londres/",
-          "source": "UEFA.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "gitanga road",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Section of Gitanga Road in Kawangware to be partially closed for 10 days",
-          "url": "https://www.the-star.co.ke/news/2026-11-19-kura-announces-10-day-closure-of-section-of-gitanga-rd",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "KURA Announces 10-Day Road Closure in Nairobi, Gives Alternative Routes",
-          "url": "https://www.kenyans.co.ke/news/129522-kura-announces-10-day-partial-closure-gitanga-road",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Nairobi Motorists Alerted as KURA Plans Gitanga Road Closure From November 26",
-          "url": "https://nairobiwire.com/2026/11/gitanga-road-closure-november-2026-diversion-routes.html",
-          "source": "Nairobi Wire -"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "police recruitment 2026",
@@ -61,55 +17,76 @@
           "source": "Tuko News"
         },
         {
-          "title": "National Police Service Announces Nationwide Recruitment of Police Constables",
-          "url": "https://uzalendonews.co.ke/national-police-service-announces-nationwide-recruitment-of-police-constables/",
-          "source": "Uzalendo News"
+          "title": "How To Download Police Recruitment Form Online, Fill And Submit",
+          "url": "https://thekenyatimes.com/explainers/how-to-download-police-recruitment-form-online-fill-and-submit/",
+          "source": "The Kenya Times"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
-      "title": "arsenal w.f.c. vs ol lyonnes standings",
+      "title": "rockstar games gta vi",
       "traffic": "500+",
       "news": [
         {
-          "title": "Arsenal 0-2 Lyon: French side show Gunners bridge to gap",
-          "url": "https://www.bbc.com/sport/football/articles/cm4gnxz8dvx1o",
+          "title": "GTA 6 breaks records as estimated sales top $2.3bn",
+          "url": "https://www.bbc.com/news/articles/c9zr5nyv5dj2o",
           "source": "BBC"
         },
         {
-          "title": "OL Lyonnes show their class to hit Arsenal’s ambitions for a top-four WCL finish",
-          "url": "https://www.theguardian.com/football/2026/nov/19/arsenal-ol-lyonnes-womens-champions-league-match-report",
+          "title": "Grand Theft Auto VI review – gaming’s most depraved world is now also its greatest love story",
+          "url": "https://www.theguardian.com/games/2026/nov/18/grand-theft-auto-vi-gta-6-review-playstation-rockstar",
           "source": "The Guardian"
         },
         {
-          "title": "Arsenal's Champions League campaign given a reality check",
-          "url": "https://www.espn.com/soccer/story/_/id/50534727/arsenal-lyonnes-champions-league-defeat",
-          "source": "ESPN"
+          "title": "‘Grand Theft Auto VI’ is an astonishing American epic",
+          "url": "https://www.washingtonpost.com/entertainment/video-games/2026/11/18/grand-theft-auto-vi-is-an-astonishing-american-epic/",
+          "source": "The Washington Post"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
-      "title": "anthropic",
-      "traffic": "500+",
+      "title": "benni mccarthy",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Almost all of Anthropic’s employees are now millionaires",
-          "url": "https://www.cnn.com/2026/11/19/tech/anthropic-employees-now-millionaires",
-          "source": "CNN"
+          "title": "Kenya coach Benni McCarthy demands overdue payments despite post-match comments",
+          "url": "https://africa.espn.com/espn/story/_/id/50538975/kenya-benni-mccarthy-overdue-payments-bafana-afcon",
+          "source": "ESPN"
         },
         {
-          "title": "Anthropic becomes one of world's most valuable public companies in first-of-its kind IPO",
-          "url": "https://www.bbc.com/news/articles/c3x29ggenz12o",
-          "source": "BBC"
+          "title": "McCarthy speaks out on challenges facing Harambee Stars",
+          "url": "https://www.the-star.co.ke/news/2026-11-20-mccarthy-speaks-out-on-challenges-facing-harambee-stars",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Anthropic IPO live: Anthropic stock closes up 17% from initial price for $1.27T valuation in first day of trading",
-          "url": "https://finance.yahoo.com/technology/live/anthropic-ipo-live-anthropic-stock-begins-trading-in-record-81b-raise-with-15t-valuation-192410598.html",
-          "source": "Yahoo Finance"
+          "title": "McCarthy unfazed by criticism of his team selection, tactics",
+          "url": "https://nation.africa/kenya/sports/football/mccarthy-unfazed-by-criticism-of-his-team-selection-tactics-5675914",
+          "source": "Daily Nation"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kenyan shilling",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Kenyan Shilling Weakens Against U.S. Dollar Ahead of Festivities",
+          "url": "https://www.kenyans.co.ke/news/129539-kenyan-shilling-crosses-ksh130-against-us-dollar-amid-growing-pressure",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Global economic shocks affect lives of ordinary residents",
+          "url": "https://www.kenyanews.go.ke/global-economic-shocks-affect-lives-of-ordinary-residents/",
+          "source": "Kenya News Agency"
+        },
+        {
+          "title": "Supercoin applies for Kenya licence as it plans shilling stablecoin",
+          "url": "https://www.the-star.co.ke/sasa/technology/2026-11-19-supercoin-applies-for-kenya-licence-as-it-plans-shilling-stablecoin",
+          "source": "The Star, Kenya"
         }
       ]
     },
@@ -137,46 +114,40 @@
     },
     {
       "geo": "KE",
-      "title": "mc alger vs olympique akbou",
-      "traffic": "200+",
+      "title": "bandari vs muranga seal",
+      "traffic": "100+",
       "news": [
         {
-          "title": "ALG : MCA- O. Akbou, à huis clos mais avec la sono",
-          "url": "https://www.footafrique.com/alg-mca-o-akbou-a-huis-clos-mais-avec-la-sono/",
-          "source": "Footafrique.com"
+          "title": "FKFPL: Mathare United seek back to back wins as they face Kakamega Homeboyz",
+          "url": "https://eastleighvoice.co.ke/news/425936/fkfpl-mathare-united-seek-back-to-back-wins-as-they-face-kakamega-homeboyz",
+          "source": "The Eastleigh Voice"
         },
         {
-          "title": "Ligue 1 (10e journée) : premier revers pour le CRB, le MCA chute à Douera",
-          "url": "https://competition.dz/actualites/ligue-1/ligue-1-10e-journee-premier-revers-pour-le-crb-le-mca-chute-a-douera.html",
-          "source": "Competition.dz"
-        },
-        {
-          "title": "Après sa défaite face à Akbou, le MCA charge l’arbitrage",
-          "url": "https://just-infodz.com/apres-sa-defaite-face-a-akbou-le-mca-charge-larbitrage/",
-          "source": "Just-InfoDZ"
+          "title": "FKFPL: Mathare United, Kakamega Homeboyz face crucial test as Bandari host Murang’a Seal",
+          "url": "https://www.mozzartsport.co.ke/football/news/fkfpl-mathare-united-kakamega-homeboyz-face-crucial-test-as-bandari-host-muranga-seal/70800",
+          "source": "Mozzart Sport Kenya"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
-      "title": "mc alger",
-      "traffic": "200+",
+      "title": "lionel messi",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Zamalek’s CAF Champions League Return Comes With a Crowded Group B Draw",
-          "url": "https://chimpreports.com/zamalek-draw-mc-alger-and-club-africain-in-caf-champions-league/",
-          "source": "ChimpReports"
+          "title": "Messi leads way as MLS salaries rise; Union's Sullivan checks in at $614K",
+          "url": "https://www.espn.com/soccer/story/_/id/50526796/messi-leads-mls-salaries-rise-sullivan-614k",
+          "source": "ESPN"
         },
         {
-          "title": "Egyptian authorities approve full capacity for Zamalek and Club Africain clash",
-          "url": "https://africasoccer.com/egyptian-authorities-approve-full-capacity-for-zamalek-club-africain-clash/",
-          "source": "AfricaSoccer.com"
+          "title": "Lionel Messi still rules the money league! Inter Miami superstar leads MLS salaries as five players break the $10m barrier",
+          "url": "https://www.goal.com/en-ke/news/lionel-messi-money-league-inter-miami-superstar-mls-salaries-barrier-/bltb82cc6278494e608",
+          "source": "Goal.com"
         },
         {
-          "title": "MC Alger and CR Belouizdad Suffer League Defeats",
-          "url": "https://suaragarut.id/en/mc-alger-crb-league-defeats",
-          "source": "SuaraGarut.ID"
+          "title": "MLS Salaries Soccer",
+          "url": "https://www.couriernews.com/sports/mls-salaries-soccer/image_986a3773-e1ff-55d6-817a-968e7c0e70af.html",
+          "source": "couriernews.com"
         }
       ]
     },
@@ -186,19 +157,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Watch A Chinese SUV Tow A Boeing 747 Using Only Two Wheels",
-          "url": "https://www.motor1.com/news/815995/denza-bao-5-tows-boeing-747/",
-          "source": "Motor1.com"
+          "title": "Chinese BYD Denza hybrid pulls a 396,000lb Boeing 747 while balancing on two wheels in a stunt that defies physics",
+          "url": "https://supercarblondie.com/byd-denza-bao-5-hybrid-pulls-boeing-747-two-wheels/",
+          "source": "Supercar Blondie"
         },
         {
-          "title": "Towing 180 Tons On 2 Wheels Or Pure EV Mode? No Problem With The BYD B5",
-          "url": "https://www.carguide.ph/2026/11/towing-180-tons-on-2-wheels-or-pure-ev.html",
-          "source": "CarGuide.PH"
+          "title": "A Chinese SUV Towed a 397,000-Pound Boeing 747 on Just Two Wheels",
+          "url": "https://www.motorbiscuit.com/a-chinese-suv-towed-a-397000-pound-boeing-747-on-just-two-wheels/",
+          "source": "MotorBiscuit"
         },
         {
-          "title": "BYD’s luxury SUV pulled a nearly 400,000-pound jumbo jet on just two wheels [Video]",
-          "url": "https://electrek.co/2026/11/18/byds-luxury-suv-pulls-400000-lb-jumbo-jet-on-two-wheels-video/",
-          "source": "Electrek"
+          "title": "Denza towed a Boeing 747 using its new Bao 5… on two wheels",
+          "url": "https://www.topgear.com/car-news/suvs/denza-towed-a-boeing-747-using-its-new-bao-5-two-wheels",
+          "source": "Top Gear"
         }
       ]
     },
@@ -225,6 +196,11 @@
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "ken wa maria accident",
+      "why": "unsafe: 'accident'"
+    }
+  ],
   "errors": {}
 }
