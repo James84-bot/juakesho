@@ -2500,7 +2500,7 @@
         }
       ],
       "quotes": [],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 6.8/10. Replace the final question and action beat with a direct, lawful demand on the Ministry of Sports."
@@ -2550,7 +2550,13 @@
       "reel": true,
       "tg_msg": 1365,
       "photo_checked": "2026-11-20T12:51:21.143890+03:00",
-      "decided_at": "2026-11-20T13:04:57.924178+03:00"
+      "decided_at": "2026-11-20T13:04:57.924178+03:00",
+      "published_at": "2026-11-20T16:03:14.745298+03:00",
+      "ig_id": "18003318462031922",
+      "fb_id": "2413993222751722",
+      "fb_story_id": "1735532161255977",
+      "yt_id": "Hm_MdTFZ-Rk",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
