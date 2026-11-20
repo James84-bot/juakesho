@@ -347,7 +347,7 @@
           "published": "2026-11-10"
         }
       ],
-      "status": "publish_failed",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -394,7 +394,14 @@
       "auto": true,
       "decided_at": "2026-11-20T00:18:02.034055+03:00",
       "attempts": 1,
-      "last_error": "media not reachable (503): https://James84-bot.github.io/juakesho/exports/2026-W47/2026-w47-d5-straight-r3.jpg. Has GitHub Pages finished deploying?"
+      "last_error": "media not reachable (503): https://James84-bot.github.io/juakesho/exports/2026-W47/2026-w47-d5-straight-r3.jpg. Has GitHub Pages finished deploying?",
+      "published_at": "2026-11-20T17:05:54.276394+03:00",
+      "ig_id": "18108166253366341",
+      "fb_id": "1153294363741308",
+      "story_id": "18031320518703804",
+      "fb_story_id": "1870910694323002",
+      "yt_id": "ThR7-yY7_GI",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-d6-kenya",
