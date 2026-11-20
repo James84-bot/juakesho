@@ -2573,13 +2573,132 @@
       "fb_story_id": "1735532161255977",
       "yt_id": "Hm_MdTFZ-Rk",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w47-hot-1120b2043",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Voters",
+      "line": "IEBC flagged *94 political parties* including UDA and ODM for non-compliant nomination rules.",
+      "fact": "Only 11 out of 105 registered political parties met IEBC nomination rules for the 2027 elections.",
+      "source": "TV47 Digital, 2026-11-20, People Daily, 2026-11-20",
+      "photo_query": "IEBC voter registration Nairobi",
+      "event_query": "IEBC voter registration Nairobi",
+      "who": "IEBC",
+      "where": "National",
+      "when": "20 Nov 2026",
+      "side": "both",
+      "tone": "criticism",
+      "impact": "Flawed party nomination rules prevent ordinary Kenyans from choosing genuine leaders.",
+      "message": "94 political parties failed IEBC nomination rules ahead of the 2027 general election.",
+      "action": "Check if your political party submitted compliant nomination rules on iebc.or.ke",
+      "demand": "IEBC must publish the full compliance status of all 105 political parties.",
+      "beats": [
+        "IEBC flagged *94 political parties* for breaking nomination rules.",
+        "Ruling UDA and opposition ODM failed to submit compliant rules.",
+        "Only 11 parties met the electoral body's rules for 2027.",
+        "Do you trust party nominations to be fair in 2027?"
+      ],
+      "caption": "IEBC has flagged 94 political parties, including UDA and ODM, for failing to submit nomination rules that comply with the law. Only 11 parties met the standards ahead of the 2027 elections.\n\nDo you trust party nominations to be fair in 2027?\n\n#IEBC #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-20T21:03:00+03:00",
+      "hot": true,
+      "avoid": [
+        "The High Court convicted CS Mbadi of contempt for concealing national debt details.",
+        "Kenya is rolling out 10.79 million free mosquito nets to protect families in 18 counties.",
+        "NPS sets December 10 for nationwide police recruitment in every sub-county.",
+        "Kenyan tech startups face a funding squeeze that threatens young tech jobs and innovation."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "IEBC flags 94 political parties ahead of 2027 elections, clears Jubilee and Wiper among only 11",
+          "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNRzJPbkVwSXcwbWxaQnN6SjVvdkoxeHRycnU5ejVwaUJoaVBXQnpmMjU4Z0VmQkFBbklMT0RfOTRDQjhsTzdWeTRHeVpRZDRiYVoxUnBUUWpPM216c3MyaVdwYXB5TVpzWUx0S1BqNE9zU1lZU3p6czZuQUlYck9OY0RmNl83THJpTE9KcEdGRG9CNV8yQ0hXYVM2UkhyZElJMDgyVTROeTBvczh3SmRaT2ktR0daSXhoUEdVdVR2Skh1WWxKeGlKd1Y5aE11QWd6WWVmZA?oc=5",
+          "published": "2026-11-20"
+        },
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "Only 11 of 105 political parties meet IEBC nomination rules ahead of 2027 polls",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQbE9mY2xFQUljN3FGM2tPOTNXOGdKc2pBOFFEdUZlNHRaZFROLTQwN0NVN1V0SldDajFGSXR2cGRYcGhZWXRTamV0ZzB0OUR4NnAtRHQ2M1dHcWYzdFdYTXhnVG5nZnBteXVGUUpuTWt6OVJpcUFlVm1yLUhEV3p6a09IUFAtX3lPa2Nacmc5akJVT01KcVhtSWFYWmFkdmh1Mm4xcC1yZjJiWnJPZElSbi1XUEhvZ1d0R3ZPMTFSOTZvZw?oc=5",
+          "published": "2026-11-20"
+        },
+        {
+          "outlet": "TV47 Digital",
+          "title": "IEBC flags UDA, ODM and DCP among 94 parties over nomination rules ahead of 2027 elections",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNa252ZWdWa2N0c2RkQXpZNW4zZm53TXZiTW9jazlEU1N3S1lIeEk2WlNRZHB0X1lqeFBuNzh6dm5veGFjaThRdkFEYVJ3MEUxdlZxeEdTQ1d3ZFp6NGlsZWxRVGNrMWR1SjMwaWh2SUpMUGdoMm1sd3hneDRkaE1mMTNYZTduczNuTHFOcFhBNXZKRHhTeWg2aFhqcGFyWUZVVFZKV2JnNmlZRkpVSVdDamR6emZ4Z200M3RLVVlMSQ?oc=5",
+          "published": "2026-11-20"
+        }
+      ],
+      "quotes": [],
+      "breaking": {
+        "title": "IEBC flags UDA, ODM and DCP among 94 parties over nomination rules ahead of 2027 elections",
+        "outlets": [
+          "People Daily",
+          "TV47 Digital",
+          "The Eastleigh Voice"
+        ]
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "shouting reads as clickbait: 'breaking' (let the numbers carry the urgency)"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 10,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.9,
+        "note": ""
+      },
+      "drafted_at": "2026-11-20T20:51:53.554250+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1120b2043-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129558-uda-odm-among-94-parties-flagged-iebc-flouting-nomination-rules",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1120b2043-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1120b2043-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "IEBC Issues Warning to Ruto's UDA, ODM Over 2027 Polls"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "IEBC Summons Senior UDA Official"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "UDA Unveils Details of Joint Manifesto With ODM Ahead of 2027 Elections"
+        }
+      ],
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1388
     }
   ],
   "scripts": {
-    "radio": "Sasa wasikilizaji wangu wa Kenya on Record. Leo tunagazia swala la aibu linaloendelea pale kwenye kambi ya Harambee Stars. Kocha mkuu Benni McCarthy amelazimika kudai mishahara yake na posho ambazo zimecheleweshwa kwa muda mrefu. Hii inafuatia tu picha na ripoti za jinsi wachezaji wetu wanavyoishi katika hali duni na za kusikitisha kambini. Tunajiuliza, pesa za wizara ya michezo zinaenda wapi? Huu sio utani; ni maisha ya vijana wetu wanaopeperusha bendera ya taifa. Viongozi wetu lazima wawajibike. Tunataka akaunti safi na malipo ya wachezaji na makocha yatolewe bila visingizio.\n\n[Kiswahili Summary]\nWapendwa wasikilizaji, Kenya on Record leo imejikita kwenye madai ya kocha Benni McCarthy kuhusu mishahara yake na hali mbaya ya kambi ya Harambee Stars. Tunataka wizara iwajibike na kulipa wanamichezo wetu haki yao bila kuchelewa.",
-    "voice_note": "Wadau, mambo vipi? Hapa ni Kenya on Record. Hebu fikiria: Kocha wa Harambee Stars, Benni McCarthy, amelazimika kudai pesa zake baada ya hali mbaya ya kambi kuwekwa peupe. Timu ya taifa inapitia aibu hii huku wachezaji wakikosa mahitaji ya msingi na posho zikiwa nyuma kwa miezi. Pesa za michezo zinafanya nini? Hii ni dharau kwa talanta ya Wakenya. Shirikisho na wizara lazima zisafishe meza na kulipa hawa watu leo. Tunasimama na ukweli.",
-    "sms": "Kenya on Record: Harambee Stars inateseka kambini huku kocha Benni McCarthy akidai malimbikizo ya mishahara. Tetea rasilimali za umma. Usiibiwe!",
-    "reels": "Harambee Stars inaaibishwa kambini huku kocha Benni McCarthy akidai mishahara yake! Hali duni, posho zilizochelewa, na ukimya kutoka kwa viongozi. Je, pesa za michezo zinafanya nini? Kenya on Record haitanyamaza mpaka haki itendeke kwa wanamichezo wetu. Wajibika!"
+    "radio": "Welcome to Kenya on Record. Today we need to talk about the road to 2027, because the warning signs are already flashing. The IEBC has revealed that 94 political parties have failed to comply with basic nomination rules ahead of the next General Election.\n\nLet that number sink in. Ninety-four parties. These are the very institutions asking for your vote, your trust, and the authority to manage public resources. Yet, right at the starting line, they are failing to satisfy simple legal standards meant to guarantee fair and democratic nominations.\n\nEvery election cycle, we see candidates handpicked in secret boardrooms while citizens are handed flawed party primaries. When political parties ignore internal democracy, they produce leaders who treat public office as personal property. If a political outfit cannot follow straightforward electoral rules today, how can you trust them to safeguard your taxes, your local clinics, or your rights tomorrow?\n\nWe cannot afford to wait until election day to start asking questions. Check the compliance of the parties asking for your support, demand transparent nomination processes, and insist on accountability from the ground up.\n\nKwa ufupi: Vyama vya kisiasa 94 vimefeli kufuata sheria za IEBC za uteuzi kuelekea uchaguzi wa 2027. Kama chama hakiwezi kufuata sheria ndogo za nchi leo, hauwezi kukiamini na rasilimali zako kesho. Kuwa macho, uliza maswali, na udai uwajibikaji sasa. Usiibiwe.",
+    "voice_note": "Habari zenu. This is Kenya on Record with your weekly reality check. The IEBC has revealed that 94 political parties have failed to meet nomination rules ahead of the 2027 elections. Ninety-four outfits! These are the same parties that will soon be printing T-shirts and promising you heaven. But ask yourself: if a party cannot respect basic electoral laws on paper, how will they respect your tax money, your roads, or your rights when they get into office? As 2027 approaches, don't just follow party colors or big speeches. Demand to know if your local party follows the law. Pass this voice note to your local groups and stay sharp. Usiibiwe.",
+    "sms": "Usiibiwe: IEBC says 94 political parties failed nomination rules for 2027. Demand internal democracy from your party before voting. Stay sharp, Kenya!",
+    "reels": "Ninety-four political parties have already failed basic IEBC nomination rules ahead of 2027. Think about that. If a party cannot follow simple electoral laws today, how will they govern your public funds tomorrow? They rely on us not reading the fine print. Don't be fooled. Demand party accountability right now. Follow Kenya on Record."
   },
   "spend_usd": 0.0
 }
