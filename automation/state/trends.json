@@ -1,173 +1,156 @@
 {
-  "fetched": "2026-11-20T17:58:17.268918+00:00",
+  "fetched": "2026-11-20T21:01:16.922510+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "bandari vs muranga seal",
-      "traffic": "1000+",
+      "title": "bayern vs köln",
+      "traffic": "10000+",
       "news": [
         {
-          "title": "Red-hot Lopaga fires Murang’a SEAL back to winning ways in Bandari win",
-          "url": "https://blog.ke.sportpesa.com/2026/11/20/red-hot-lopaga-fires-muranga-seal-back-to-winning-ways-in-bandari-win/",
-          "source": "SportPesa Blog"
+          "title": "Liveticker | Bayern München - 1. FC Köln : | 10. Spieltag | Bundesliga 2026/27",
+          "url": "https://www.kicker.at/bayern-gegen-koeln-2026-bundesliga-5226890/ticker",
+          "source": "kicker"
         },
         {
-          "title": "Okere challenges Bandari to tame Murang’a goal hunters",
-          "url": "https://www.the-star.co.ke/sports/football/2026-11-18-okere-challenges-bandari-to-tame-muranga-goal-hunters-1",
-          "source": "The Star, Kenya"
+          "title": "So startet der FC in München",
+          "url": "https://fc.de/aktuelles/news/so-startet-der-fc-in-muenchen",
+          "source": "1. FC Köln"
         },
         {
-          "title": "Mathare United, Kakamega Homeboyz share points in entertaining FKF Premier League draw",
-          "url": "https://eastleighvoice.co.ke/sports/426164/mathare-united-kakamega-homeboyz-share-points-in-entertaining-fkf-premier-league-draw",
-          "source": "The Eastleigh Voice"
+          "title": "Fußball-Bundesliga: Auflagen in München: Kölner Fans reisen vorzeitig wieder ab",
+          "url": "https://www.zeit.de/news/2026-11/20/auflagen-in-muenchen-koelner-fans-reisen-vorzeitig-wieder-ab",
+          "source": "DIE ZEIT"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "benni mccarthy",
-      "traffic": "1000+",
+      "title": "al-ahli vs al-nassr",
+      "traffic": "10000+",
       "news": [
         {
-          "title": "Kenya coach Benni McCarthy demands overdue payments despite post-match comments",
-          "url": "https://africa.espn.com/espn/story/_/id/50538975/kenya-benni-mccarthy-overdue-payments-bafana-afcon",
-          "source": "ESPN"
-        },
-        {
-          "title": "McCarthy speaks out on challenges facing Harambee Stars",
-          "url": "https://www.the-star.co.ke/news/2026-11-20-mccarthy-speaks-out-on-challenges-facing-harambee-stars",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "McCarthy unfazed by criticism of his team selection, tactics",
-          "url": "https://nation.africa/kenya/sports/football/mccarthy-unfazed-by-criticism-of-his-team-selection-tactics-5675914",
-          "source": "Daily Nation"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "almere city vs nac breda",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Almere City FC vs NAC Breda Opstellingen, Statistieken & Voorspelling",
-          "url": "https://www.squawka.com/nl/nieuws/kkd/almere-city-fc-nac-breda-opstellingen-statistieken-voorspelling/",
-          "source": "Squawka"
-        },
-        {
-          "title": "Schaakmeester NAC tegen razendsnel Almere City: botsing van speelstijlen in KKD-topduel",
-          "url": "https://www.bd.nl/regiosport-breda/schaakmeester-nac-tegen-razendsnel-almere-city-botsing-van-speelstijlen-in-kkd-topduel~a1e7f76b4/",
-          "source": "Brabants Dagblad"
-        },
-        {
-          "title": "Clash der culturen in Almere: NAC begint aan bepalende trilogie",
-          "url": "https://www.ad.nl/regiosport-breda/schaakmeester-nac-tegen-razendsnel-almere-city-botsing-van-speelstijlen-in-kkd-topduel~a1e7f76b4/",
-          "source": "AD.nl"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "court",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Jeremy Bowen: Myanmar genocide verdict is historic and could have far-reaching implications",
-          "url": "https://www.bbc.com/news/articles/c6ly58ndgd0no",
-          "source": "BBC"
-        },
-        {
-          "title": "UNHCR statement on the International Court of Justice Judgment in “The Gambia v. Myanmar”",
-          "url": "https://www.unhcr.org/news/speeches-and-statements/unhcr-statement-international-court-justice-judgment-gambia-v-myanmar",
-          "source": "UNHCR - The UN Refugee Agency"
-        },
-        {
-          "title": "Tears of joy, prayers for return home: Rohingya react to genocide ruling",
-          "url": "https://www.aljazeera.com/news/2026/11/20/tears-of-joy-prayers-for-return-home-rohingya-react-to-genocide-ruling",
-          "source": "Al Jazeera"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "bruno guimarães",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Bruno Guimaraes: Arsenal midfielder is growing in stature but Mikel Arteta still wants more from Brazilian ahead of Newcastle return",
-          "url": "https://www.skysports.com/football/news/13612946/bruno-guimaraes-arsenal-midfielder-is-growing-in-stature-but-mikel-arteta-still-wants-more-from-brazilian-ahead-of-newcastle-return",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Matthias Jaissle opens up on Newcastle's failed last-ditch attempt to stop Bruno Guimaraes joining Arsenal",
-          "url": "https://www.goal.com/en-ke/news/matthias-jaissle-newcastle-bruno-guimaraes-arsenal/blt2d0117e6674f8832",
+          "title": "Cristiano Ronaldo scores and misses a penalty as he closes in on 1,000 career goals",
+          "url": "https://www.goal.com/en/news/cristiano-ronaldo-moves-within-14-of-1-000-career-goals-then-misses-a-penalty-and-loses-to-ibanez-and-demiral/bltb763f54c7f6edf52",
           "source": "Goal.com"
         },
         {
-          "title": "'Hopefully he won’t be happy' - Harvey Barnes sends pointed warning to Bruno Guimaraes as Arsenal star prepares for hostile Newcastle reunion",
-          "url": "https://www.livescore.com/en/news/football/premier-league/hopefully-he-wont-be-happy-harvey-barnes-sends-pointed-warning-to-bruno-guimaraes-as-arsenal-star-prepares-for-hostile-newcastle-reunion-goal/",
-          "source": "LiveScore"
+          "title": "Al-Ahli 3-1 Al-Nassr: Galeno shines as Ronaldo hits the post",
+          "url": "https://www.sofascore.com/news/al-ahli-3-1-al-nassr-galeno-shines-as-ronaldo-hits-the-post",
+          "source": "Sofascore"
+        },
+        {
+          "title": "Ronaldo's Race to 1,000: How close will the GOAT get before 2026 wraps up?",
+          "url": "https://onefootball.com/en/news/ronaldos-race-to-1000-how-close-will-the-goat-get-before-2026-wraps-up-43791920",
+          "source": "OneFootball"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "arminia bielefeld vs magdeburg",
-      "traffic": "100+",
+      "title": "bayern munich",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Der Ball rollt | Bielefeld gegen Magdeburg | 2. Bundesliga | Liveticker",
-          "url": "https://www.t-online.de/sport/live-ticker/fussball/2-bundesliga/sdc_fm-59691/der-ball-rollt-bielefeld-gegen-magdeburg-2-bundesliga-liveticker.html",
-          "source": "T-Online"
-        },
-        {
-          "title": "Der Freitag soll für Arminia ein Faktor sein",
-          "url": "https://www.westfalen-blatt.de/dsc-arminia-bielefeld/der-freitag-soll-fuer-arminia-ein-faktor-sein-magdeburg-3727376",
-          "source": "Westfalen-Blatt"
-        },
-        {
-          "title": "MDR aktuell 17:45 Uhr - Geburtstagsgeschenk vom FCM für Coach Sander in Bielefeld? - hier anschauen",
-          "url": "https://www.ardmediathek.de/video/mdr-aktuell-17-45-uhr/geburtstagsgeschenk-vom-fcm-fuer-coach-sander-in-bielefeld/mdr/Y3JpZDovL21kci5kZS9iZWl0cmFnL2Ntcy8wNTRjMzRkYi0wZjIyLTRlODAtOGYxYy02M2ZjYzFkNDQ1YTc",
-          "source": "ARD Mediathek"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "pete rose",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Trump posthumously pardons US baseball legend Pete Rose",
-          "url": "https://www.bbc.com/news/articles/cx1l0pm7l9jmo",
+          "title": "'I'm very healthy' - Kompany to return to dugout after health scare",
+          "url": "https://www.bbc.com/sport/football/articles/cm0rkzwgn0lro",
           "source": "BBC"
         },
         {
-          "title": "Pete Rose posthumously pardoned by Trump after baseball's career hits leader was reinstated by MLB",
-          "url": "https://apnews.com/article/pete-rose-pardon-trump-baseball-14f398d4c657ccf55cb8a77cc7e60915",
-          "source": "AP News"
+          "title": "Harry Kane goes straight down tunnel with worrying injury",
+          "url": "https://talksport.com/football/4723231/harry-kane-worrying-injury-bayern-munich-england/",
+          "source": "talkSPORT"
         },
         {
-          "title": "What Trump pardon means for Pete Rose's Hall of Fame case",
-          "url": "https://www.cincinnati.com/story/sports/mlb/reds/2026/11/20/pete-rose-hall-of-fame-after-president-trump-pardon/92878162007/",
-          "source": "Cincinnati Enquirer"
+          "title": "Another injury shocker! Michael Olise exits Bayern Munich’s match vs. 1. FC Köln",
+          "url": "https://www.bavarianfootballworks.com/bayern-munich-bundesliga/281503/another-injury-shocker-michael-olise-exits-bayern-munichs-match-vs-1-fc-koln",
+          "source": "Bavarian Football Works"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "athletic vs espanyol",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Athletic alinea a Yeray, Prados y Sancet ante el Espanyol",
+          "url": "https://www.tufutbolero.com/novedades/athletic-alinea-a-yeray-prados-y-sancet-ante-el-espanyol-93d4c1",
+          "source": "Tu Futbolero"
+        },
+        {
+          "title": "Riedel, Bauza e Hinojo, titulares: Eder Sarabia se resguarda en San Mamés",
+          "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20261120/1004253484/riedel-bauza-e-hinojo-titulares-eder-sarabia-resguarda-san-mames.html",
+          "source": "Mundo Deportivo"
+        },
+        {
+          "title": "Athletic vs Espanyol: horario y dónde ver hoy por TV gratis y online el partido de LaLiga 2026/27 a través de DAZN",
+          "url": "https://www.dazn.com/es-ES/news/futbol/athletic-vs-espanyol-horario-donde-ver-hoy-gratis-tv-online-partido-laliga-2026-2027/1l6k09dc7ifpm1sc6869ayd5n9",
+          "source": "DAZN"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "shakhtar donetsk",
+      "traffic": "500+",
+      "news": []
+    },
+    {
+      "geo": "KE",
+      "title": "bayern",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Bundesliga: Köln erwischt die Bayern bei Kompanys Rückkehr kalt – Kane muss verletzt runter, dann trifft Brown",
+          "url": "https://www.welt.de/sport/fussball/bundesliga/fc-bayern-muenchen/article6b0099d3b237b5b41c9a31cb/bundesliga-koeln-erwischt-die-bayern-bei-kompanys-rueckkehr-kalt-kane-muss-verletzt-runter-dann-trifft-brown.html",
+          "source": "WELT"
+        },
+        {
+          "title": "Verletzungsdrama nimmt kein Ende: Auch Olise muss raus",
+          "url": "https://fcbinside.de/2026/11/20/verletzungsdrama-nimmt-kein-ende-auch-olise-muss-raus/",
+          "source": "FCBinside"
+        },
+        {
+          "title": "Der Sport-Tag: Bayern-Sorgen: Verletzter Kane muss ausgewechselt werden",
+          "url": "https://www.n-tv.de/sport/der_sport_tag/Bayern-Sorgen-Verletzter-Kane-muss-ausgewechselt-werden-id31560650.html",
+          "source": "n-tv.de"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "heracles vs jong psv",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Prachtgoal van zoon van oud-PSV’er en trucs van Monamay maken het Heracles nog knap lastig",
+          "url": "https://www.gelderlander.nl/regiosport-eindhoven/prachtgoal-van-zoon-van-oud-psver-en-trucs-van-monamay-maken-het-heracles-nog-knap-lastig~a3d83b76/",
+          "source": "De Gelderlander"
+        },
+        {
+          "title": "Reine-Adélaïde & Faber aan het woord • Heilmann kijkt uit naar duel met bekende tegenstander",
+          "url": "https://www.tubantia.nl/heracles/reine-adelaide-en-faber-aan-het-woord-heilmann-kijkt-uit-naar-duel-met-bekende-tegenstander~aba6041f/",
+          "source": "Tubantia"
+        },
+        {
+          "title": "Bezoekersinformatie voor thuiswedstrijden van Heracles Almelo",
+          "url": "https://www.heracles.nl/2026/11/19/bezoekersinformatie/",
+          "source": "Heracles Almelo"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "al-ahli vs al-nassr",
+      "title": "athletic bilbao",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "al-ahli saudi fc vs al-nassr standings",
       "why": "unsafe: 'attack'"
     },
     {
-      "title": "troyes vs le havre",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "kashiwa",
+      "title": "coventry vs crystal palace",
       "why": "unsafe: 'Betting'"
     }
   ],
