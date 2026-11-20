@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-20T21:01:16.922510+00:00",
+  "fetched": "2026-11-20T22:22:55.359437+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,27 +7,54 @@
       "traffic": "10000+",
       "news": [
         {
-          "title": "Liveticker | Bayern München - 1. FC Köln : | 10. Spieltag | Bundesliga 2026/27",
-          "url": "https://www.kicker.at/bayern-gegen-koeln-2026-bundesliga-5226890/ticker",
-          "source": "kicker"
+          "title": "Bayern-Noten: 5 für Olise und Karl, Urbig bekommt 1 gegen Köln",
+          "url": "https://www.focus.de/sport/fussball/bayern-noten-5-fuer-olise-und-karl-urbig-bekommt-1-gegen-koeln_844aa288-f803-4b2e-b464-7c1de28a5b8f.html",
+          "source": "FOCUS online"
         },
         {
-          "title": "So startet der FC in München",
-          "url": "https://fc.de/aktuelles/news/so-startet-der-fc-in-muenchen",
-          "source": "1. FC Köln"
+          "title": "Die FC-Spieler in der Einzelkritik Moore überragend, Sebulonsen stark, Lochoshvili überzeugt",
+          "url": "https://www.ksta.de/sport/1-fc-koeln/die-fc-spieler-in-der-einzelkritik-moore-ueberragt-sebulonsen-stark-lochoshvili-ueberzeugt-1421746",
+          "source": "Kölner Stadt-Anzeiger"
         },
         {
-          "title": "Fußball-Bundesliga: Auflagen in München: Kölner Fans reisen vorzeitig wieder ab",
-          "url": "https://www.zeit.de/news/2026-11/20/auflagen-in-muenchen-koelner-fans-reisen-vorzeitig-wieder-ab",
+          "title": "Bundesliga, 10. Spieltag – Freitag: Bayern spielt unentschieden gegen Köln",
+          "url": "https://www.zeit.de/sport/2026-11/bundesliga-10-spieltag-bayern-muenchen-koeln",
           "source": "DIE ZEIT"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "al-ahli vs al-nassr",
-      "traffic": "10000+",
+      "title": "athletic vs espanyol",
+      "traffic": "1000+",
       "news": [
+        {
+          "title": "Un efecto Sarabia como una catedral",
+          "url": "https://as.com/futbol/un-efecto-sarabia-como-una-catedral-f202611-n/",
+          "source": "Diario AS"
+        },
+        {
+          "title": "Sancet vuelve al once del Athletic ante un Espanyol con Roberto en punta",
+          "url": "https://www.infobae.com/espana/agencias/2026/11/20/sancet-vuelve-al-once-del-athletic-ante-un-espanyol-con-roberto-en-punta/",
+          "source": "Infobae"
+        },
+        {
+          "title": "🔥 Leones, ¡a calentar!",
+          "url": "https://athleticclubinfo.com/athletic-tv/video/420-leones-a-calentar",
+          "source": "athleticclubinfo.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "saudi pro league",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Postecoglou after Al-Ahli defeat: 'The weather was hot, and we deserved to win'",
+          "url": "https://www.goal.com/en/news/postecoglou-after-al-ahli-defeat-the-weather-was-hot-and-we-deserved-to-win/blta5f3115d96034c3c",
+          "source": "Goal.com"
+        },
         {
           "title": "Cristiano Ronaldo scores and misses a penalty as he closes in on 1,000 career goals",
           "url": "https://www.goal.com/en/news/cristiano-ronaldo-moves-within-14-of-1-000-career-goals-then-misses-a-penalty-and-loses-to-ibanez-and-demiral/bltb763f54c7f6edf52",
@@ -37,83 +64,50 @@
           "title": "Al-Ahli 3-1 Al-Nassr: Galeno shines as Ronaldo hits the post",
           "url": "https://www.sofascore.com/news/al-ahli-3-1-al-nassr-galeno-shines-as-ronaldo-hits-the-post",
           "source": "Sofascore"
-        },
-        {
-          "title": "Ronaldo's Race to 1,000: How close will the GOAT get before 2026 wraps up?",
-          "url": "https://onefootball.com/en/news/ronaldos-race-to-1000-how-close-will-the-goat-get-before-2026-wraps-up-43791920",
-          "source": "OneFootball"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "bayern munich",
-      "traffic": "500+",
+      "title": "porto vs paredes",
+      "traffic": "100+",
       "news": [
         {
-          "title": "'I'm very healthy' - Kompany to return to dugout after health scare",
-          "url": "https://www.bbc.com/sport/football/articles/cm0rkzwgn0lro",
-          "source": "BBC"
+          "title": "FC Porto - Paredes",
+          "url": "https://www.rtp.pt/noticias/desporto/fc-porto-paredes_e1780602",
+          "source": "RTP"
         },
         {
-          "title": "Harry Kane goes straight down tunnel with worrying injury",
-          "url": "https://talksport.com/football/4723231/harry-kane-worrying-injury-bayern-munich-england/",
-          "source": "talkSPORT"
+          "title": "VÍDEO: Fofana faz o Dragão respirar de alívio em cima do intervalo",
+          "url": "https://sapo.pt/artigo/video-fofana-faz-o-dragao-respirar-de-alivio-em-cima-do-intervalo-6b00beb3d249e245720f8b99",
+          "source": "SAPO"
         },
         {
-          "title": "Another injury shocker! Michael Olise exits Bayern Munich’s match vs. 1. FC Köln",
-          "url": "https://www.bavarianfootballworks.com/bayern-munich-bundesliga/281503/another-injury-shocker-michael-olise-exits-bayern-munichs-match-vs-1-fc-koln",
-          "source": "Bavarian Football Works"
+          "title": "Notícias - O onze do FC Porto para a estreia na Taça de Portugal",
+          "url": "https://www.fcporto.pt/pt/noticias/20261120-pt-o-onze-do-fc-porto-para-a-estreia-na-taca-de-portugal",
+          "source": "FC Porto"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "athletic vs espanyol",
-      "traffic": "500+",
+      "title": "the body netflix",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Athletic alinea a Yeray, Prados y Sancet ante el Espanyol",
-          "url": "https://www.tufutbolero.com/novedades/athletic-alinea-a-yeray-prados-y-sancet-ante-el-espanyol-93d4c1",
-          "source": "Tu Futbolero"
+          "title": "The Body is a hit – and every lesbian I know is obsessed. Why aren’t there more sapphic stories on screen?",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/21/every-lesbian-i-know-is-obsessed-with-the-body-on-netflix",
+          "source": "The Guardian"
         },
         {
-          "title": "Riedel, Bauza e Hinojo, titulares: Eder Sarabia se resguarda en San Mamés",
-          "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20261120/1004253484/riedel-bauza-e-hinojo-titulares-eder-sarabia-resguarda-san-mames.html",
-          "source": "Mundo Deportivo"
+          "title": "Petition asks Netflix to cancel The Body for 'blasphemous' and 'anti-Christian' content",
+          "url": "https://www.cbc.ca/news/entertainment/the-body-petition-netflix-9.7428453",
+          "source": "CBC"
         },
         {
-          "title": "Athletic vs Espanyol: horario y dónde ver hoy por TV gratis y online el partido de LaLiga 2026/27 a través de DAZN",
-          "url": "https://www.dazn.com/es-ES/news/futbol/athletic-vs-espanyol-horario-donde-ver-hoy-gratis-tv-online-partido-laliga-2026-2027/1l6k09dc7ifpm1sc6869ayd5n9",
-          "source": "DAZN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "shakhtar donetsk",
-      "traffic": "500+",
-      "news": []
-    },
-    {
-      "geo": "KE",
-      "title": "bayern",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Bundesliga: Köln erwischt die Bayern bei Kompanys Rückkehr kalt – Kane muss verletzt runter, dann trifft Brown",
-          "url": "https://www.welt.de/sport/fussball/bundesliga/fc-bayern-muenchen/article6b0099d3b237b5b41c9a31cb/bundesliga-koeln-erwischt-die-bayern-bei-kompanys-rueckkehr-kalt-kane-muss-verletzt-runter-dann-trifft-brown.html",
-          "source": "WELT"
-        },
-        {
-          "title": "Verletzungsdrama nimmt kein Ende: Auch Olise muss raus",
-          "url": "https://fcbinside.de/2026/11/20/verletzungsdrama-nimmt-kein-ende-auch-olise-muss-raus/",
-          "source": "FCBinside"
-        },
-        {
-          "title": "Der Sport-Tag: Bayern-Sorgen: Verletzter Kane muss ausgewechselt werden",
-          "url": "https://www.n-tv.de/sport/der_sport_tag/Bayern-Sorgen-Verletzter-Kane-muss-ausgewechselt-werden-id31560650.html",
-          "source": "n-tv.de"
+          "title": "‘The Body’ Debuts With 5.1 Million Views in Five Days",
+          "url": "https://variety.com/2026/tv/news/the-body-ratings-netflix-views-1236950624/",
+          "source": "Variety"
         }
       ]
     },
@@ -124,34 +118,38 @@
       "news": [
         {
           "title": "Prachtgoal van zoon van oud-PSV’er en trucs van Monamay maken het Heracles nog knap lastig",
-          "url": "https://www.gelderlander.nl/regiosport-eindhoven/prachtgoal-van-zoon-van-oud-psver-en-trucs-van-monamay-maken-het-heracles-nog-knap-lastig~a3d83b76/",
-          "source": "De Gelderlander"
+          "url": "https://www.ed.nl/psv/prachtgoal-van-zoon-van-oud-psver-en-trucs-van-monamay-maken-het-heracles-nog-knap-lastig~a3d83b76/",
+          "source": "ed.nl"
+        },
+        {
+          "title": "LIVE Keuken Kampioen Divisie | NAC komt vroeg op voorsprong in Almere, kat glipt stadion Heracles binnen",
+          "url": "https://www.ad.nl/voetbal/live-keuken-kampioen-divisie-nac-komt-vroeg-op-voorsprong-in-almere-kat-glipt-stadion-heracles-binnen~a6af1319/",
+          "source": "AD.nl"
         },
         {
           "title": "Reine-Adélaïde & Faber aan het woord • Heilmann kijkt uit naar duel met bekende tegenstander",
           "url": "https://www.tubantia.nl/heracles/reine-adelaide-en-faber-aan-het-woord-heilmann-kijkt-uit-naar-duel-met-bekende-tegenstander~aba6041f/",
           "source": "Tubantia"
-        },
-        {
-          "title": "Bezoekersinformatie voor thuiswedstrijden van Heracles Almelo",
-          "url": "https://www.heracles.nl/2026/11/19/bezoekersinformatie/",
-          "source": "Heracles Almelo"
         }
       ]
     }
   ],
   "dropped": [
     {
+      "title": "bayern munich vs 1. fc köln standings",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "athletic bilbao",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "al-ahli saudi fc vs al-nassr standings",
-      "why": "unsafe: 'attack'"
-    },
-    {
       "title": "coventry vs crystal palace",
       "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "alnassr",
+      "why": "unsafe: 'missing'"
     }
   ],
   "errors": {}
