@@ -2443,13 +2443,112 @@
       "reel": true,
       "tg_msg": 1347,
       "decided_at": "2026-11-20T11:38:33.092368+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1120a",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Harambee Stars",
+      "line": "Kenya coach Benni McCarthy demands overdue payments despite post-match comments.",
+      "fact": "The national team coach publicly revealed his unpaid salary and poor camp conditions.",
+      "message": "Harambee Stars coach Benni McCarthy demands overdue payments after camp conditions were exposed.",
+      "action": "Ask the Ministry of Sports to clear all overdue coaching salaries by Friday",
+      "beats": [
+        "Kenya coach Benni McCarthy *demands* overdue payments.",
+        "Unpaid allowances and poor conditions face the national team.",
+        "The Ministry of Sports must clear every overdue shilling.",
+        "Will our football managers ever respect the *game*?"
+      ],
+      "photo_query": "Nairobi national stadium Kenya",
+      "source": "ESPN, 2026-11-20, The Eastleigh Voice, 2026-11-20",
+      "caption": "Benni McCarthy speaks out on unpaid dues and poor camp conditions for Harambee Stars. We pay, they wait. Ask the Ministry of Sports: where is the money?\n\n#HarambeeStars #KenyaOnRecord",
+      "who": "Ministry of Sports",
+      "where": "National",
+      "when": "20 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Our national football team suffers while funds stall in administrative delay.",
+      "bg": "usiku",
+      "publish_at": "2026-11-20T16:00:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "avoid": [
+        "The High Court convicted CS Mbadi of contempt for concealing national debt details.",
+        "Kenya is rolling out 10.79 million free mosquito nets to protect families in 18 counties.",
+        "NPS sets December 10 for nationwide police recruitment in every sub-county.",
+        "Kenyan tech startups face a funding squeeze that threatens young tech jobs and innovation."
+      ],
+      "source_links": [
+        {
+          "outlet": "ESPN",
+          "title": "Kenya coach Benni McCarthy demands overdue payments despite post-match comments",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQMXFYX1gwbktqUkJPRzJlenEtUFQxd1pwYVZFS2o1UnZaRG9SMVJqTWxqM3ItS2NDc1ZHblJJVHJSbDQ2VE9FNmU3Y05kbnJRQ3RwalJYTXFncnRTWFdLNXp6R0E5LTFJWENWZy1NOUNYVkJNYjAtRmM1YXg4UFpjaVRWWmN2NGlIelZIRGdIZUJNZGlVZ09wdUxQejA?oc=5",
+          "published": "2026-11-20"
+        },
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "Unpaid, underfed, stranded: Benni McCarthy lifts lid on Harambee Stars’ troubling conditions",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOS3U2VFJBaEJqN29WRWF6NllsUUE1bThOdm1CVm1BaU0yQTBoOGwtN01FWkNWeHZpMDNqeXdHQ2tBdHVabkF1b3ZzLXZOR1NHZHJXYUpPVHdraUVhbUE4aU9jQWFfcVpzSnI1YXFpTUw0QnBYT3pkQUZwREdPcUZ1R3pEZDhRZlRGVDlQdmRtUFoyb0x1RGRTY3N3SHRxQmVOUzNlVUlLU2JOZkEySDQ2S2RSOFRkWGo5N0Y2bTNlM3JuNVBpVUp3ZmcwVkFGZw?oc=5",
+          "published": "2026-11-20"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.8/10. Replace the final question and action beat with a direct, lawful demand on the Ministry of Sports."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 7,
+        "demand": 7,
+        "action": 4,
+        "fair": 7,
+        "impact": 7,
+        "human": 5,
+        "avg": 6.8,
+        "note": "Replace the final question and action beat with a direct, lawful demand on the Ministry of Sports."
+      },
+      "drafted_at": "2026-11-20T12:40:59.197903+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1120a-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127816-world-rugby-confirms-talanta-complex-2027-hsbc-svns-2-tournament",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1120a-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "First Games at Talanta Stadium Complex Revealed"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Ruto Issues New Directive on Eldoret’s Kipchoge Keino Stadium"
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1365
     }
   ],
   "scripts": {
-    "radio": "Habari za jioni. This is Kenya on Record. For years, we were sold the Silicon Savannah dream. We told our youth to learn code, build apps, and disrupt markets. And they delivered. But right now, Kenya’s tech ecosystem is gasping for air. Venture capital inflows have dropped sharply, operational runways are running out, and quiet retrenchments are gutting our young workforce.\n\nThe painful question we must ask is simple: why is Kenya’s innovation economy so dangerously exposed to foreign venture whims? Years ago, leaders promised us the Startup Bill—a clear framework designed to shield local innovators, unlock domestic capital, and de-risk early-stage ventures. Instead, it got bogged down in bureaucratic lethargy while tax policy kept squeezing digital enterprises. When foreign investors retreat to safe havens abroad, our brightest young minds are left stranded with unpaid salaries and shuttered offices.\n\nWe cannot build a sustainable future on buzzwords while leaving young founders to walk the tightrope alone. The Ministry of ICT and Treasury must account for domestic innovation funding and deliver practical support, not another round of launch ceremonies and photo ops.\n\nKwa ufupi kwa Kiswahili: Sekta ya teknolojia nchini inakabiliwa na uhaba mkubwa wa ufadhili, hali inayotishia ajira za vijana wengi. Ni wakati wa serikali kupitisha sera madhubuti kama Mswada wa Startups na kuwekeza rasilimali za ndani, badala ya kutegemea wafadhili wa kigeni pekee.\n\nStay grounded, stay informed. This is Kenya on Record.",
-    "voice_note": "Hey people, Kenya on Record here. Let’s talk about what’s really happening in our tech hubs right now. Over the last few months, the foreign venture capital that fueled our tech boom has dried up. Startups are quietly laying off engineers, product managers, and support staff. The youth who staked their futures on tech are feeling the squeeze. But here’s the accountability issue: where is our government's domestic safety net? We hear endless speeches about the digital superhighway, yet local venture incentives remain non-existent and the Startup Bill keeps stalling. Our innovators cannot build long-term solutions when public policy treats tech as a tax cash cow instead of an infant industry to protect. We need genuine domestic funding mechanisms now. Share this with someone in tech—let’s demand real policy action.",
-    "sms": "Usiibiwe: Tech squeeze alert. Insist on a written contract and verify statutory remittances (NSSF/SHIF). Don’t trade unpaid labor for empty equity promises.",
-    "reels": "Kenya’s Silicon Savannah is hitting a wall. Foreign venture funding has dried up, and local startups are quietly cutting young tech workers loose. We were promised a digital economy revolution, yet the Startup Bill gathers dust while taxes choke innovation. When global capital retreats, who protects Kenyan talent? Our innovators deserve real domestic investment, not just endless speeches and empty PR. It’s time leaders put real money behind our tech."
+    "radio": "Sasa wasikilizaji wangu wa Kenya on Record. Leo tunagazia swala la aibu linaloendelea pale kwenye kambi ya Harambee Stars. Kocha mkuu Benni McCarthy amelazimika kudai mishahara yake na posho ambazo zimecheleweshwa kwa muda mrefu. Hii inafuatia tu picha na ripoti za jinsi wachezaji wetu wanavyoishi katika hali duni na za kusikitisha kambini. Tunajiuliza, pesa za wizara ya michezo zinaenda wapi? Huu sio utani; ni maisha ya vijana wetu wanaopeperusha bendera ya taifa. Viongozi wetu lazima wawajibike. Tunataka akaunti safi na malipo ya wachezaji na makocha yatolewe bila visingizio.\n\n[Kiswahili Summary]\nWapendwa wasikilizaji, Kenya on Record leo imejikita kwenye madai ya kocha Benni McCarthy kuhusu mishahara yake na hali mbaya ya kambi ya Harambee Stars. Tunataka wizara iwajibike na kulipa wanamichezo wetu haki yao bila kuchelewa.",
+    "voice_note": "Wadau, mambo vipi? Hapa ni Kenya on Record. Hebu fikiria: Kocha wa Harambee Stars, Benni McCarthy, amelazimika kudai pesa zake baada ya hali mbaya ya kambi kuwekwa peupe. Timu ya taifa inapitia aibu hii huku wachezaji wakikosa mahitaji ya msingi na posho zikiwa nyuma kwa miezi. Pesa za michezo zinafanya nini? Hii ni dharau kwa talanta ya Wakenya. Shirikisho na wizara lazima zisafishe meza na kulipa hawa watu leo. Tunasimama na ukweli.",
+    "sms": "Kenya on Record: Harambee Stars inateseka kambini huku kocha Benni McCarthy akidai malimbikizo ya mishahara. Tetea rasilimali za umma. Usiibiwe!",
+    "reels": "Harambee Stars inaaibishwa kambini huku kocha Benni McCarthy akidai mishahara yake! Hali duni, posho zilizochelewa, na ukimya kutoka kwa viongozi. Je, pesa za michezo zinafanya nini? Kenya on Record haitanyamaza mpaka haki itendeke kwa wanamichezo wetu. Wajibika!"
   },
   "spend_usd": 0.0
 }
