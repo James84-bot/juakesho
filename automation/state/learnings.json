@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20T15:08:30.588195+03:00",
+  "updated": "2026-11-21T06:37:10.742716+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -41,6 +41,19 @@
       "avg_watch_s": 4.3
     },
     {
+      "id": "2026-w47-hot-1119e",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.8,
+      "opening": "Kenya saved Sh1.5 billion by printing national exam papers locally.",
+      "reach": 5,
+      "saved": 1,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 11.3
+    },
+    {
       "id": "2026-w45-hot-1104m",
       "series": "sauti",
       "lane": "everyone",
@@ -52,35 +65,9 @@
       "comments": 0,
       "likes": 3,
       "avg_watch_s": 8.4
-    },
-    {
-      "id": "2026-w44-hot-1026b1432",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.3,
-      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
-      "reach": 24,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 6.9
     }
   ],
   "bottom": [
-    {
-      "id": "2026-w47-hot-1118e-r2",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Rigathi Gachagua presented fresh demands to the IEBC chair.",
-      "reach": 17,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 2.9
-    },
     {
       "id": "2026-w47-hot-1118m",
       "series": "sauti",
@@ -100,12 +87,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
-      "reach": 25,
+      "reach": 26,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.7
+      "avg_watch_s": 3.8
+    },
+    {
+      "id": "2026-w47-hot-1119b1743",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 5.6
     }
   ],
   "all": [
@@ -147,6 +147,19 @@
       "comments": 0,
       "likes": 2,
       "avg_watch_s": 4.3
+    },
+    {
+      "id": "2026-w47-hot-1119e",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.8,
+      "opening": "Kenya saved Sh1.5 billion by printing national exam papers locally.",
+      "reach": 5,
+      "saved": 1,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 11.3
     },
     {
       "id": "2026-w45-hot-1104m",
@@ -191,9 +204,9 @@
       "id": "2026-w46-d4-money",
       "series": "money",
       "lane": "everyone",
-      "score": 9.3,
+      "score": 9.2,
       "opening": "Kenyan banks lost Sh1.9 billion to fraud according to People Daily.",
-      "reach": 24,
+      "reach": 25,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -251,6 +264,19 @@
       "comments": 0,
       "likes": 2,
       "avg_watch_s": 6.8
+    },
+    {
+      "id": "2026-w47-hot-1119m-r2",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 5.7,
+      "opening": "Marathon champion Peres Jepchirchir got a three-year doping ban.",
+      "reach": 49,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 2,
+      "avg_watch_s": 3.8
     },
     {
       "id": "2026-w45-hot-1108b2133",
@@ -440,7 +466,7 @@
       "lane": "everyone",
       "score": 2.8,
       "opening": "Kenya won two gold medals on the track in Dakar.",
-      "reach": 57,
+      "reach": 58,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -492,7 +518,7 @@
       "lane": "hustle",
       "score": 2.6,
       "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "reach": 88,
+      "reach": 89,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -505,7 +531,7 @@
       "lane": "everyone",
       "score": 2.4,
       "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "reach": 119,
+      "reach": 120,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -674,7 +700,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
-      "reach": 17,
+      "reach": 18,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -752,12 +778,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
-      "reach": 16,
+      "reach": 17,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.2
+      "avg_watch_s": 3.3
     },
     {
       "id": "2026-w47-hot-1118-r2",
@@ -804,15 +830,36 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
-      "reach": 25,
+      "reach": 26,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.7
+      "avg_watch_s": 3.8
+    },
+    {
+      "id": "2026-w47-hot-1119b1743",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 5.6
     }
   ],
   "youtube": [
+    {
+      "id": "2026-w47-hot-1119b1743",
+      "series": "sauti",
+      "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
+      "views": 1109,
+      "likes": 3,
+      "comments": 0
+    },
     {
       "id": "2026-w45-hot-1103m",
       "series": "sauti",
@@ -825,7 +872,7 @@
       "id": "2026-w47-hot-1117e",
       "series": "sauti",
       "opening": "The World Bank warned Kenya over billion-shilling corruption losses.",
-      "views": 669,
+      "views": 675,
       "likes": 0,
       "comments": 0
     },
@@ -833,7 +880,7 @@
       "id": "2026-w47-hot-1118e-r2",
       "series": "sauti",
       "opening": "Rigathi Gachagua presented fresh demands to the IEBC chair.",
-      "views": 527,
+      "views": 555,
       "likes": 1,
       "comments": 0
     },
@@ -841,7 +888,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 520,
+      "views": 521,
       "likes": 2,
       "comments": 0
     },
@@ -849,7 +896,7 @@
       "id": "2026-w47-hot-1118-r2",
       "series": "sauti",
       "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
-      "views": 512,
+      "views": 514,
       "likes": 1,
       "comments": 0
     },
@@ -865,7 +912,7 @@
       "id": "2026-w45-hot-1108b2133",
       "series": "sauti",
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "views": 430,
+      "views": 431,
       "likes": 0,
       "comments": 0
     },
@@ -882,6 +929,14 @@
       "series": "sauti",
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
       "views": 339,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1119",
+      "series": "sauti",
+      "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
+      "views": 319,
       "likes": 0,
       "comments": 0
     },
@@ -937,8 +992,16 @@
       "id": "2026-w45-hot-1102m",
       "series": "sauti",
       "opening": "Counterfeit alcohol wiped out Sh7.6bn in KRA excise revenue.",
-      "views": 191,
+      "views": 194,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1119m-r2",
+      "series": "sauti",
+      "opening": "Marathon champion Peres Jepchirchir got a three-year doping ban.",
+      "views": 193,
+      "likes": 3,
       "comments": 0
     },
     {
@@ -953,7 +1016,7 @@
       "id": "2026-w47-hot-1118m",
       "series": "sauti",
       "opening": "Mobile money deals fell despite 97 million active SIM lines in Kenya.",
-      "views": 163,
+      "views": 165,
       "likes": 0,
       "comments": 0
     },
@@ -961,16 +1024,8 @@
       "id": "2026-w47-hot-1116",
       "series": "sauti",
       "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "views": 144,
+      "views": 143,
       "likes": 1,
-      "comments": 0
-    },
-    {
-      "id": "2026-w47-hot-1119",
-      "series": "sauti",
-      "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
-      "views": 142,
-      "likes": 0,
       "comments": 0
     },
     {
@@ -986,6 +1041,14 @@
       "series": "sauti",
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
       "views": 126,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1119e",
+      "series": "sauti",
+      "opening": "Kenya saved Sh1.5 billion by printing national exam papers locally.",
+      "views": 116,
       "likes": 0,
       "comments": 0
     },
@@ -1009,7 +1072,7 @@
       "id": "2026-w47-hot-1117",
       "series": "sauti",
       "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
-      "views": 95,
+      "views": 97,
       "likes": 0,
       "comments": 0
     },
@@ -1017,7 +1080,7 @@
       "id": "2026-w47-d2-kenya",
       "series": "kenya",
       "opening": "Lamu Old Town has been continuously lived in for 700 years.",
-      "views": 89,
+      "views": 90,
       "likes": 0,
       "comments": 0
     },
@@ -1078,6 +1141,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w46-d6-kenya",
+      "series": "kenya",
+      "opening": "The Thika road runs 50 kilometres from Nairobi.",
+      "views": 56,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w46-d7-glasspoll",
       "series": "glasspoll",
       "opening": "Opposition leaders are moving to consolidate regional support.",
@@ -1094,14 +1165,6 @@
       "comments": 0
     },
     {
-      "id": "2026-w46-d6-kenya",
-      "series": "kenya",
-      "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "views": 54,
-      "likes": 0,
-      "comments": 0
-    },
-    {
       "id": "2026-w46-d2-kenya",
       "series": "kenya",
       "opening": "Mount Kenya reaches 5,199 metres in altitude.",
@@ -1113,7 +1176,7 @@
       "id": "2026-w44-hot-1101m",
       "series": "sauti",
       "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "views": 43,
+      "views": 44,
       "likes": 1,
       "comments": 0
     },
@@ -1153,7 +1216,7 @@
       "id": "2026-w46-d5-straight",
       "series": "straight",
       "opening": "Viral TikTok ads promise guaranteed jobs abroad.",
-      "views": 17,
+      "views": 18,
       "likes": 0,
       "comments": 0
     },

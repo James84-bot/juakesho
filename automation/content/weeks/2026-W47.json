@@ -2692,13 +2692,112 @@
       "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1388
+    },
+    {
+      "id": "2026-w47-hot-1121m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Households",
+      "line": "Charcoal prices in Kenya hit a six-year high of *Sh99.52* per 4kg tin as energy costs rise.",
+      "fact": "KNBS data shows charcoal prices reached Sh99.52 per 4kg tin, the highest level recorded since 2020.",
+      "source": "People Daily, 2026-11-20",
+      "message": "Rising cooking fuel costs push up daily expenses for millions of Kenyan households.",
+      "action": "Demand local leaders invest in clean and affordable cooking energy options.",
+      "photo_query": "charcoal seller market Kenya",
+      "who": "Ministry of Energy and Petroleum",
+      "where": "National",
+      "when": "20 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Everyday household expenses rise for millions of Kenyans using charcoal.",
+      "beats": [
+        "Charcoal prices hit a six-year high of *Sh99.52* per 4kg tin.",
+        "KNBS data shows cooking energy costs are rising across the country.",
+        "High fuel prices squeeze household budgets for basic needs.",
+        "How much did you pay for *charcoal* in your area this week?"
+      ],
+      "caption": "Charcoal prices have hit a six-year high of Sh99.52 per 4kg tin, according to KNBS data. Cooking fuel remains a major burden on household budgets across the country.\n\nHow much did you pay for charcoal in your area this week? Drop the price below.\n\n#CostOfLiving #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-21T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Kenya charcoal prices hit six-year high at Ksh99.52 as cost of living crisis deepens",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNRWYyZmFiQ3hPSlpUX3dqQjVfcVRvbXRKYmxZcTN6X2lTdlFyZXVYU3NBRW9sZ0VhMjNQM3VNNEs0NFViaF9URFp1OXdQNDVSTUlWX000ZzhmY05Ub29KUG8zZzJmNl80cnZZT01yNmVEQzFWOWJSZGJGQnZ5QXdqRFdfbUZQRFhZeDMyTmkxRHBwS3lPQkJpc3NPY29ydURFOUxmMFJlOWhJYWl5MkNjZWxvaDQ1RHBKT0dlVVRR?oc=5",
+          "published": "2026-11-20"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Data used to derive the inflation rates is collected through a monthly survey of retail prices from a statistically representative sample of outlets in urban areas across 50 data collection zones nationwide.",
+          "speaker": "KNBS",
+          "context": "KNBS explained that its inflation statistics are based on a nationwide retail price survey, noting that “Data used to derive the inflation rates is collected through a monthly survey of retail prices from a statistically representative sample of outlets in urban areas across 50 data collection zones nationwide.”",
+          "outlet": "People Daily",
+          "link": "https://peopledaily.digital/business/kenya-charcoal-prices-hit-six-year-high-at-ksh99-52-as-cost-of-living-crisis-deepens"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 5.1/10. Match demand to top 1-5 stories and remove textbook formatting."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 6,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 5,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 2,
+        "action": 6,
+        "fair": 7,
+        "impact": 6,
+        "human": 4,
+        "avg": 5.1,
+        "note": "Match demand to top 1-5 stories and remove textbook formatting."
+      },
+      "drafted_at": "2026-11-21T06:49:59.917544+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1121m-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129004-transport-costs-surge-17-october-inflation-hits-73-knbs",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1121m-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1121m-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KNBS Reveals 17 Items That Have Become More Expensive for Kenyans"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "How to Grow One Business Into Multiple Income Streams, Entrepreneur Explains"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "KFS Unveils New Rules Affecting Timber, Charcoal Importers and Exporters"
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1394
     }
   ],
   "scripts": {
-    "radio": "Welcome to Kenya on Record. Today we need to talk about the road to 2027, because the warning signs are already flashing. The IEBC has revealed that 94 political parties have failed to comply with basic nomination rules ahead of the next General Election.\n\nLet that number sink in. Ninety-four parties. These are the very institutions asking for your vote, your trust, and the authority to manage public resources. Yet, right at the starting line, they are failing to satisfy simple legal standards meant to guarantee fair and democratic nominations.\n\nEvery election cycle, we see candidates handpicked in secret boardrooms while citizens are handed flawed party primaries. When political parties ignore internal democracy, they produce leaders who treat public office as personal property. If a political outfit cannot follow straightforward electoral rules today, how can you trust them to safeguard your taxes, your local clinics, or your rights tomorrow?\n\nWe cannot afford to wait until election day to start asking questions. Check the compliance of the parties asking for your support, demand transparent nomination processes, and insist on accountability from the ground up.\n\nKwa ufupi: Vyama vya kisiasa 94 vimefeli kufuata sheria za IEBC za uteuzi kuelekea uchaguzi wa 2027. Kama chama hakiwezi kufuata sheria ndogo za nchi leo, hauwezi kukiamini na rasilimali zako kesho. Kuwa macho, uliza maswali, na udai uwajibikaji sasa. Usiibiwe.",
-    "voice_note": "Habari zenu. This is Kenya on Record with your weekly reality check. The IEBC has revealed that 94 political parties have failed to meet nomination rules ahead of the 2027 elections. Ninety-four outfits! These are the same parties that will soon be printing T-shirts and promising you heaven. But ask yourself: if a party cannot respect basic electoral laws on paper, how will they respect your tax money, your roads, or your rights when they get into office? As 2027 approaches, don't just follow party colors or big speeches. Demand to know if your local party follows the law. Pass this voice note to your local groups and stay sharp. Usiibiwe.",
-    "sms": "Usiibiwe: IEBC says 94 political parties failed nomination rules for 2027. Demand internal democracy from your party before voting. Stay sharp, Kenya!",
-    "reels": "Ninety-four political parties have already failed basic IEBC nomination rules ahead of 2027. Think about that. If a party cannot follow simple electoral laws today, how will they govern your public funds tomorrow? They rely on us not reading the fine print. Don't be fooled. Demand party accountability right now. Follow Kenya on Record."
+    "radio": "Habari zenu na karibuni kwa Kenya on Record. Today, we are looking at an issue that directly affects every single kitchen across the country: the rising cost of cooking fuel.\n\nWhether you rely on LPG gas, kerosene, or charcoal, preparing a basic family meal has become an increasingly expensive affair. Over recent months, the cost of refilling a standard six-kilogram or thirteen-kilogram gas cylinder has steadily climbed, driven up by taxes, import levies, and supply chain pressures. For a household living on a daily wage, this is not a minor inconvenience—it forces painful trade-offs. Families are being pushed to cut down on essential food items just to afford the fuel needed to cook them, or worse, returning to unclean fuels that endanger their health.\n\nAccess to clean, affordable cooking energy should not be a privilege reserved for a few; it is a basic necessity. While international market forces play a role, our policy makers and energy regulators must be transparent about the local tax structures and margins added to essential household utilities. We cannot speak of economic progress when the cost of boiling a simple pot of food is out of reach for millions.\n\nHapa ni muhtasari wa mada hii kwa Kiswahili:\n\nGharama ya gesi na mafuta ya kupikia inazidi kupanda na kulemea wananchi wengi nchini. Ni lazima serikali na Mamlaka ya EPRA ziangalie upya kodi na tozo zinazoongeza mzigo huu jikoni. Kupika chakula hakufai kuwa anasa kwa Mkenya yeyote.\n\nThis is Kenya on Record. Let us keep asking the right questions.",
+    "voice_note": "Good morning everyone, quick update from Kenya on Record this week. Have you noticed how much more you are spending just to refill your gas cylinder lately? A standard six-kilogram refill is taking a significantly larger chunk out of the weekly budget, and it is hitting families hard. When cooking fuel goes up, the price of prepared food at local kiosks and neighborhood eateries goes up too. We need to start asking our representatives and EPRA hard questions about the tax components driving up domestic fuel prices. Clean energy shouldn't be a luxury item in Kenya. Share your thoughts in the group and let's keep track of these numbers together.",
+    "sms": "Usiibiwe Tip: Always verify gas cylinder weight & safety seals at purchase. Check EPRA capped maximum prices to avoid overcharging. Demand a official receipt.",
+    "reels": "Refilling a gas cylinder shouldn't feel like a major financial burden. Rising cooking fuel prices are squeezing Kenyan households to the limit, forcing families to choose between buying food or buying the fuel to cook it. Clean energy is a necessity, not a luxury. We need full transparency on the taxes driving up these costs. Follow Kenya on Record."
   },
   "spend_usd": 0.0
 }

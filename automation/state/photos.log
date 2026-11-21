@@ -1,17 +1,18 @@
-event 'IEBC voter registration Nairobi' for 2026-w47-hot-1120b2043 (16 Nov-21 Nov): 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 0, 'subject': 0}
-event 'IEBC voter' for 2026-w47-hot-1120b2043 (16 Nov-21 Nov): 1 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 1, 'subject': 0}
 feed KBC: 60 items, 59 with an image
 feed Capital FM: 60 items, 60 with an image
 feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
 feed Nation: 25 items, 0 with an image
-posted for 2026-w47-hot-1120b2043: 5 matching reports (person '', names ['uda', 'odm', 'iebc'], words ['iebc', 'voter', 'registration'])
+posted for 2026-w47-hot-1121m: 3 matching reports (person '', names ['petroleum', 'knbs'], words ['rising', 'cooking', 'fuel', 'costs', 'push'])
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-picked Kenyans.co.ke (6, detail 0.366, 700x350): IEBC Issues Warning to Ruto's UDA, ODM Over 2027 Polls
+skipped Kenyans.co.ke: an edited graphic, not a photo (A circular inset image showing fuel being pumped.) (https://www.kenyans.co.ke/files/styles/article_style/public/)
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-also Kenyans.co.ke (4, detail 0.377, 700x350): IEBC Summons Senior UDA Official
+picked Kenyans.co.ke (3, detail 0.455, 700x350): KNBS Reveals 17 Items That Have Become More Expensive for Kenyans
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-not Kenyans.co.ke: the same picture as one already used (UDA Issues Notice to Candidates, Sets 24-Hour Deadline)
+skipped Kenyans.co.ke: an edited graphic, not a photo (A circular inset image showing fuel being pumped.) (https://www.kenyans.co.ke/files/styles/article_style/public/)
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-also Kenyans.co.ke (4, detail 0.328, 700x350): UDA Unveils Details of Joint Manifesto With ODM Ahead of 2027 Election
+also Kenyans.co.ke (3, detail 0.57, 700x350): How to Grow One Business Into Multiple Income Streams, Entrepreneur Ex
+topic photos for 2026-w47-hot-1121m: 1 recent reports on ['charcoal', 'seller', 'knbs']
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+topic photo from Kenyans.co.ke: KFS Unveils New Rules Affecting Timber, Charcoal Importers and Exporte
