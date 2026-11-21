@@ -449,7 +449,7 @@
           "published": ""
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "shouting reads as clickbait: words in capitals (KFS, KURA, KWS, NEVER) (let the numbers carry the urgency)"
@@ -489,7 +489,14 @@
       "reel": true,
       "tg_msg": 1161,
       "decided_at": "2026-11-16T12:12:06.194074+03:00",
-      "fresh_checked": "2026-11-20T05:23:04.560442+03:00"
+      "fresh_checked": "2026-11-20T05:23:04.560442+03:00",
+      "published_at": "2026-11-21T11:02:45.205277+03:00",
+      "ig_id": "17961113892335872",
+      "fb_id": "1089862034088792",
+      "story_id": "17871825204658678",
+      "fb_story_id": "2260602044516665",
+      "yt_id": "Tgimcs1aGzY",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-d7-glasspoll-r4",
