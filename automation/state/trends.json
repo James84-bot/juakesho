@@ -1,6 +1,116 @@
 {
-  "fetched": "2026-11-21T16:56:04.691118+00:00",
+  "fetched": "2026-11-21T17:41:45.518563+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "union berlin vs rb leipzig standings",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Union Berlin vs RB Leipzig: German Bundesliga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6vg2pxggjzpt",
+          "source": "BBC"
+        },
+        {
+          "title": "Confirmed lineups: 1.FC Union Berlin vs. RB Leipzig",
+          "url": "https://sports.yahoo.com/articles/confirmed-lineups-1-fc-union-133000412.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Licensable picture: 1. FC Union Berlin vs RB Leipzig, 1. Bundesliga, 10. Spieltag, Saison 2026 2027",
+          "url": "https://www.reutersconnect.com/item/1-fc-union-berlin-vs-rb-leipzig-1-bundesliga-10-spieltag-saison-2026-2027/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBaQUJQTVE",
+          "source": "Reuters Connect"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "arsenal game today",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "What history tells us about the Premier League table after 10 games of a season",
+          "url": "https://www.theguardian.com/football/2026/nov/20/premier-league-table-history-after-10-games-season",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Premier League History Warns Bottom Three of Relegation Risk",
+          "url": "https://cwibc.co.id/en/premier-league-relegation-history",
+          "source": "cwibc.co.id"
+        },
+        {
+          "title": "It's not all bad news for the bottom three",
+          "url": "https://sports.yahoo.com/articles/not-bad-news-bottom-three-110423646.html",
+          "source": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "borussia mönchengladbach vs borussia dortmund standings",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Dortmund go top in the Bundesliga after late win at Gladbach",
+          "url": "https://sports.yahoo.com/articles/dortmund-top-bundesliga-win-gladbach-163326740.html",
+          "source": "Yahoo Sports"
+        },
+        {
+          "title": "Castrop's Defensive Efforts Fail to Save Borussia Mönchengladbach from Loss",
+          "url": "https://www.chosun.com/english/sports-en/2026/11/22/KV6O6UOSIVBGDNDSPCQD4AADCE/",
+          "source": "조선일보"
+        },
+        {
+          "title": "BVB news: Key player apparently back against Gladbach",
+          "url": "https://www.goal.com/en/news/bvb-news-and-rumours-good-news-for-niko-kovac-key-player-apparently-back-for-gladbach-match/blt8d3c8fa576314446",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "chelsea fixtures",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Two January fixtures moved for TV coverage | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/two-january-fixtures-moved-for-tv-coverage",
+          "source": "Chelsea Football Club"
+        },
+        {
+          "title": "LIVE! Chelsea News Blog: THURSDAY!",
+          "url": "https://sptc.news/p/live-chelsea-news-blog-thursday-5b2",
+          "source": "Si Phillips Talks Chelsea"
+        },
+        {
+          "title": "Two Chelsea fixtures moved including evening match fans are fearful of",
+          "url": "https://www.football.london/chelsea-fc/fixtures-results/chelsea-fixtures-changed-premier-league-34936252",
+          "source": "Football London"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "sevilla vs betis",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "El derbi que divide a Sevilla: más de un siglo de rivalidad, un cambio de poder y la huella de Álvaro Fidalgo",
+          "url": "https://www.clarosports.com/futbol/laliga/el-derbi-que-divide-a-sevilla-mas-de-un-siglo-de-rivalidad-un-cambio-de-poder-y-la-huella-de-alvaro-fidalgo/",
+          "source": "Claro Sports"
+        },
+        {
+          "title": "En vivo: el Sevilla de Gabriel Suazo recibe al Betis de Manuel Pellegrini en el derbi",
+          "url": "https://www.latercera.com/el-deportivo/noticia/en-vivo-el-sevilla-de-gabriel-suazo-recibe-al-betis-de-manuel-pellegrini-en-el-derbi/",
+          "source": "La Tercera"
+        },
+        {
+          "title": "Guridi y Castrín, novedades en el Sevilla y Pellegrini sorprende con Ruibal en punta",
+          "url": "https://es-us.noticias.yahoo.com/deportes/guridi-castr%C3%ADn-novedades-sevilla-pellegrini-165019879.html",
+          "source": "Yahoo"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "ireland vs south africa",
@@ -12,144 +122,51 @@
           "source": "BBC"
         },
         {
-          "title": "After a whirlwind week in Dublin, here comes the real storm",
-          "url": "https://www.the42.ie/ireland-springboks-preview-7228321-Nov2026/",
-          "source": "The 42"
+          "title": "~~@[RUGBY/𝐒𝐭𝐫𝐞𝐚𝐦𝘀] South Africa Vs Ireland RUGBY 𝐒𝐭𝐫𝐞𝐚𝐦𝘀 Game 2026",
+          "url": "https://www.cochraneeagle.ca/classifieds/announcements-and-events/volunteers-needed/2178446",
+          "source": "Cochrane Eagle"
         },
         {
-          "title": "‘It must be intimidating to hear Eben’",
-          "url": "https://www.sarugbymag.co.za/must-intimidating-hear-eben/",
-          "source": "SA Rugby magazine"
+          "title": "Ireland v Springboks, LIVE BLOG: Coverage of the Nations Championship fixture",
+          "url": "https://www.planetrugby.com/news/ireland-v-springboks-live-blog-coverage-of-the-nations-championship-fixture",
+          "source": "Planet Rugby"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "arsenal fixtures",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Premier League matches in January confirmed",
-          "url": "https://www.arsenal.com/news/premier-league-matches-in-january-confirmed-aeXLo3r79Ycr",
-          "source": "Arsenal.com"
-        },
-        {
-          "title": "Premier League fixtures on Sky Sports: Man City vs Arsenal and Man Utd vs Liverpool live in January",
-          "url": "https://www.skysports.com/football/news/13613937/premier-league-fixtures-on-sky-sports-man-city-vs-arsenal-and-man-utd-vs-liverpool-live-in-january",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Everton news tonight: Liverpool derby change, Tarkowski VAR ruling and £33m transfer hurdle",
-          "url": "https://readeverton.com/everton-news-tonight-liverpool-derby-tarkowski-mikautadze-19-november-2026/",
-          "source": "Read Everton"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "sevilla vs betis",
+      "title": "lens vs toulouse",
       "traffic": "100+",
       "news": [
         {
-          "title": "“Es muy difícil que el Sevilla vuelva a ser el de antes”",
-          "url": "https://as.com/futbol/primera/es-muy-dificil-que-el-sevilla-vuelva-a-ser-el-de-antes-f202611-n/",
-          "source": "Diario AS"
+          "title": "« Pas facile de garder le bon état d’esprit » : Hidalgo raconte son passage à vide au TFC",
+          "url": "https://www.lesviolets.com/actu/pas-facile-de-garder-le-bon-etat-desprit-hidalgo-raconte-son-passage-a-vide-au-tfc,85163.html",
+          "source": "LesViolets.Com"
         },
         {
-          "title": "Un derbi de goles repartidos",
-          "url": "https://www.abc.es/deportes/orgullodenervion/noticias-sevilla-fc/derbi-goles-repartidos-20261121070718-nts.html",
-          "source": "ABC"
+          "title": "Séduisant en Ligue 1 mais peu efficace, Toulouse cherche toujours la formule pour son attaque",
+          "url": "https://www.lequipe.fr/Football/Actualites/Seduisant-mais-peu-efficace-toulouse-cherche-toujours-la-formule-pour-son-attaque/1744940",
+          "source": "L'Équipe"
         },
         {
-          "title": "Sevilla FC-Real Betis, en directo: el partido de la jornada 13, en vivo",
-          "url": "https://cadenaser.com/nacional/2026/11/21/sevilla-fc-real-betis-en-directo-el-partido-de-la-jornada-13-en-vivo-cadena-ser/",
-          "source": "Cadena SER"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "lucá williams-barnett",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "De Zerbi Presented With His Perfect Luca Williams-Barnett Opportunity at Tottenham",
-          "url": "https://www.givemesport.com/tottenham-de-zerbi-presented-perfect-williams-barnett-opportunity-ipswich/",
-          "source": "GiveMeSport"
-        },
-        {
-          "title": "‘You’re going to be like Glenn Hoddle’ – Micky Hazard reveals what he told Williams-Barnett",
-          "url": "https://www.spurs-web.com/spurs-news/youre-going-to-be-like-glenn-hoddle-micky-hazard-reveals-what-he-told-williams-barnett/",
-          "source": "Spurs Web"
-        },
-        {
-          "title": "Tottenham’s Luca Williams-Barnett told not to let English football change him",
-          "url": "https://www.essexcountynews.co.uk/sport/national/26745184.tottenhams-luca-williams-barnett-told-not-let-english-football-change/",
-          "source": "https://www.essexcountynews.co.uk/"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "liverpool vs man united",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "'We know what this game means' - Virgil van Dijk previews Liverpool v Man Utd",
-          "url": "https://www.liverpoolfc.com/news/we-know-what-this-game-means-virgil-van-dijk-previews-liverpool-manchester-united",
-          "source": "Liverpool FC"
-        },
-        {
-          "title": "Liverpool face Man United amid dismal record at Anfield, but will it matter?",
-          "url": "https://www.espn.com/soccer/story/_/id/50520411/liverpool-manchester-united-anfield-premier-league",
-          "source": "ESPN"
-        },
-        {
-          "title": "Liverpool vs Man Utd: Six Key Subplots That Could Decide Mauricio Pochettino’s First Game",
-          "url": "https://theanalyst.com/articles/liverpool-vs-man-utd-six-key-subplots-mauricio-pochettino-premier-league-2026-27",
-          "source": "Opta Analyst"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "man city standings",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Predicting how all 20 Premier League teams will finish the season",
-          "url": "https://www.espn.com/soccer/story/_/id/50525964/predicting-premier-league-standings-2026-27-arsenal-liverpool-manchester-chelsea",
-          "source": "ESPN"
-        },
-        {
-          "title": "What history tells us about the Premier League table after 10 games of a season",
-          "url": "https://www.theguardian.com/football/2026/nov/20/premier-league-table-history-after-10-games-season",
-          "source": "The Guardian"
-        },
-        {
-          "title": "It's not all bad news for the bottom three",
-          "url": "https://sports.yahoo.com/articles/not-bad-news-bottom-three-110423646.html",
-          "source": "Yahoo Sports"
+          "title": "Une archive qui pique, une collecte de jouets, une pensée aux disparus… Notre séance de rattrapage avant Lens-Toulouse",
+          "url": "https://www.lavoixdunord.fr/1756869/article/2026-11-21/une-archive-qui-pique-une-collecte-de-jouets-une-pensee-aux-disparus-notre",
+          "source": "La Voix du Nord"
         }
       ]
     }
   ],
   "dropped": [
     {
+      "title": "monaco vs auxerre",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "kocaelispor vs fenerbahçe",
       "why": "unsafe: 'Betting'"
     },
     {
       "title": "parma vs roma",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "huddersfield vs leicester city",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "rayo vs valencia",
       "why": "unsafe: 'Betting'"
     }
   ],
