@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T06:37:10.742716+03:00",
+  "updated": "2026-11-21T14:45:14.482163+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -46,7 +46,7 @@
       "lane": "everyone",
       "score": 9.8,
       "opening": "Kenya saved Sh1.5 billion by printing national exam papers locally.",
-      "reach": 5,
+      "reach": 6,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -69,43 +69,43 @@
   ],
   "bottom": [
     {
-      "id": "2026-w47-hot-1118m",
+      "id": "2026-w47-hot-1120m",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
-      "opening": "Mobile money deals fell despite 97 million active SIM lines in Kenya.",
-      "reach": 9,
+      "opening": "Kenya will distribute 10.79 million mosquito nets across 18 counties.",
+      "reach": 42,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 6.4
+      "avg_watch_s": 4.0
     },
     {
-      "id": "2026-w47-hot-1119",
+      "id": "2026-w47-hot-1120b0841",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
-      "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
-      "reach": 26,
+      "opening": "NPS announced December 10 for nationwide police recruitment.",
+      "reach": 22,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.8
+      "avg_watch_s": 5.0
     },
     {
-      "id": "2026-w47-hot-1119b1743",
+      "id": "2026-w47-hot-1120",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
-      "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
-      "reach": 14,
+      "opening": "Nairobi tech funding fell to a 6-year low this year.",
+      "reach": 28,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.6
+      "avg_watch_s": 6.1
     }
   ],
   "all": [
@@ -154,7 +154,7 @@
       "lane": "everyone",
       "score": 9.8,
       "opening": "Kenya saved Sh1.5 billion by printing national exam papers locally.",
-      "reach": 5,
+      "reach": 6,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -206,7 +206,7 @@
       "lane": "everyone",
       "score": 9.2,
       "opening": "Kenyan banks lost Sh1.9 billion to fraud according to People Daily.",
-      "reach": 25,
+      "reach": 26,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -336,12 +336,12 @@
       "lane": "everyone",
       "score": 3.2,
       "opening": "Opposition leaders are moving to consolidate regional support.",
-      "reach": 16,
+      "reach": 17,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 3.8
+      "avg_watch_s": 3.7
     },
     {
       "id": "2026-w44-hot-1026",
@@ -492,12 +492,12 @@
       "lane": "everyone",
       "score": 2.7,
       "opening": "Kenya sugar output rose 56.7%, dropping 2kg prices by Sh32.",
-      "reach": 65,
+      "reach": 66,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 4.5
+      "avg_watch_s": 4.6
     },
     {
       "id": "2026-w45-d5-straight",
@@ -726,7 +726,7 @@
       "lane": "young_pro",
       "score": 0.0,
       "opening": "Lamu Old Town has been continuously lived in for 700 years.",
-      "reach": 20,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -739,7 +739,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "reach": 11,
+      "reach": 12,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -791,12 +791,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
-      "reach": 14,
+      "reach": 15,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.6
+      "avg_watch_s": 2.5
     },
     {
       "id": "2026-w47-hot-1118e-r2",
@@ -843,12 +843,51 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
-      "reach": 14,
+      "reach": 15,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.6
+      "avg_watch_s": 5.2
+    },
+    {
+      "id": "2026-w47-hot-1120m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Kenya will distribute 10.79 million mosquito nets across 18 counties.",
+      "reach": 42,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 4.0
+    },
+    {
+      "id": "2026-w47-hot-1120b0841",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "NPS announced December 10 for nationwide police recruitment.",
+      "reach": 22,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 5.0
+    },
+    {
+      "id": "2026-w47-hot-1120",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Nairobi tech funding fell to a 6-year low this year.",
+      "reach": 28,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 6.1
     }
   ],
   "youtube": [
@@ -856,7 +895,7 @@
       "id": "2026-w47-hot-1119b1743",
       "series": "sauti",
       "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
-      "views": 1109,
+      "views": 1129,
       "likes": 3,
       "comments": 0
     },
@@ -888,7 +927,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 521,
+      "views": 522,
       "likes": 2,
       "comments": 0
     },
@@ -917,6 +956,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w47-hot-1119",
+      "series": "sauti",
+      "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
+      "views": 384,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1105m",
       "series": "sauti",
       "opening": "Illicit cigarettes cost Kenya Sh47 billion in lost tax revenue.",
@@ -933,11 +980,11 @@
       "comments": 0
     },
     {
-      "id": "2026-w47-hot-1119",
+      "id": "2026-w47-hot-1120b0841",
       "series": "sauti",
-      "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
-      "views": 319,
-      "likes": 0,
+      "opening": "NPS announced December 10 for nationwide police recruitment.",
+      "views": 317,
+      "likes": 4,
       "comments": 0
     },
     {
@@ -981,6 +1028,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w47-hot-1119m-r2",
+      "series": "sauti",
+      "opening": "Marathon champion Peres Jepchirchir got a three-year doping ban.",
+      "views": 210,
+      "likes": 3,
+      "comments": 0
+    },
+    {
       "id": "2026-w46-hot-1111b1557",
       "series": "sauti",
       "opening": "Kenya discharged its last Ebola patient this week.",
@@ -994,14 +1049,6 @@
       "opening": "Counterfeit alcohol wiped out Sh7.6bn in KRA excise revenue.",
       "views": 194,
       "likes": 1,
-      "comments": 0
-    },
-    {
-      "id": "2026-w47-hot-1119m-r2",
-      "series": "sauti",
-      "opening": "Marathon champion Peres Jepchirchir got a three-year doping ban.",
-      "views": 193,
-      "likes": 3,
       "comments": 0
     },
     {
@@ -1048,7 +1095,15 @@
       "id": "2026-w47-hot-1119e",
       "series": "sauti",
       "opening": "Kenya saved Sh1.5 billion by printing national exam papers locally.",
-      "views": 116,
+      "views": 118,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1120",
+      "series": "sauti",
+      "opening": "Nairobi tech funding fell to a 6-year low this year.",
+      "views": 115,
       "likes": 0,
       "comments": 0
     },
@@ -1128,7 +1183,7 @@
       "id": "2026-w47-hot-1116m",
       "series": "sauti",
       "opening": "EACC wants Sh40.3 million back from a roads boss.",
-      "views": 62,
+      "views": 64,
       "likes": 0,
       "comments": 0
     },
@@ -1249,6 +1304,14 @@
       "series": "glasspoll",
       "opening": "MPs passed a Bill giving party bosses power over MCA nominations.",
       "views": 4,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1120m",
+      "series": "sauti",
+      "opening": "Kenya will distribute 10.79 million mosquito nets across 18 counties.",
+      "views": 2,
       "likes": 0,
       "comments": 0
     }
