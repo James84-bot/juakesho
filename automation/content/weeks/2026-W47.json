@@ -3014,13 +3014,100 @@
       "reel": true,
       "tg_msg": 1405,
       "photo_checked": "2026-11-21T13:31:23.578366+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1121e",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "Foreign CS Musalia Mudavadi *skipped* a Norway diplomatic summit to join local political rallies in Western Kenya.",
+      "fact": "Mudavadi missed the foreign ministers meeting in Norway to accompany President Ruto on a local tour.",
+      "source": "People Daily, 2026-11-21",
+      "photo_query": "Nairobi skyline",
+      "event_query": "Mudavadi Western Kenya",
+      "message": "Foreign CS Mudavadi skipped an international summit in Norway to attend local political rallies.",
+      "action": "Demand Foreign Affairs prioritises official state duties over political tours.",
+      "who": "Prime CS Musalia Mudavadi",
+      "where": "Western Kenya",
+      "when": "21 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Kenyans pay for foreign policy representation that is sidelined for political tours.",
+      "demand": "2",
+      "beats": [
+        "CS Musalia Mudavadi *skipped* a Norway summit for local rallies.",
+        "He missed the official meeting to join a Western political tour.",
+        "Taxpayers fund foreign affairs to represent Kenya abroad.",
+        "Should CSs choose *local rallies* over official diplomatic meetings?"
+      ],
+      "caption": "Prime Cabinet Secretary Musalia Mudavadi skipped a foreign ministers' meeting in Norway to join political rallies in Western Kenya. Public officers are funded by taxpayers to handle state duties and foreign policy. The Ministry of Foreign Affairs must publish the full attendance record for official foreign summits. Should ministers skip official duties for local political rallies?\n\n#KenyaOnRecord #ForeignAffairs #WesternTour",
+      "publish_at": "2026-11-21T19:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "Rising cooking fuel costs push up daily expenses for millions of Kenyan households.",
+        "A Sh85 billion drop in CBK foreign reserves puts fresh pressure on the shilling and import prices.",
+        "Harambee Stars need proper administrative support and camp conditions to deliver results on the pitch."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Mudavadi misses foreign ministers’ meeting in Norway to join Ruto for Western Kenya tour",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWXhydlByU1FkLTBmN1cwczJMN0E5aGZzVUh2S3g4RXhjckNBWXNJR09xVGo2cmtybmhrd0ZWUk1aa0dhVThpajlFM1hqand0MTNudWc3eUVBTkQ4SGRqZVk0UjNlRXJtVGtiVTFnTk84SFlLd2dFdm5WSk5zY1lZTzlsU2hDMElrZk94YjZIWjdoOFJHMTBwTlYtSDF1WUN6SVpJUmt3aWk1MGhmZkNvbFRBOFBzZWMxeTFZS0Zob0JoZkpCbUZLSkVkMA?oc=5",
+          "published": "2026-11-21"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.9/10. A clear, well-sourced report that directly challenges official priorities without straying into opinion."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 8,
+        "demand": 2,
+        "action": 7,
+        "fair": 7,
+        "impact": 7,
+        "human": 8,
+        "avg": 6.9,
+        "note": "A clear, well-sourced report that directly challenges official priorities without straying into opinion."
+      },
+      "drafted_at": "2026-11-21T16:13:18.500728+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1121e-photo.jpg",
+      "photo_credit": "File photo: Jpmudavadi / Wikimedia Commons, CC BY-SA 3.0",
+      "photo_kind": "file",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Musalia_Mudavadi.JPG",
+      "shot_info": [
+        {
+          "credit": "File photo: Jpmudavadi / Wikimedia Commons, CC BY-SA 3.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1410
     }
   ],
   "scripts": {
-    "radio": "Jambo listener, welcome to Kenya on Record. Today we are looking at our national football team, Harambee Stars. Every time our players step onto the pitch, millions of Kenyans stand behind them, expecting results. But we cannot continue asking athletes to perform miracles while ignoring the background reality: inadequate administrative support, delayed logistics, and substandard camp conditions.\n\nHigh performance in sports requires professional standards long before match day. You cannot underfund team preparations, delay allowances, and handle camp logistics late, then act surprised when results fall short. Our players commit their time, sweat, and pride to represent the flag, but administration is where success is engineered. Accountability in Kenyan sports governance means ensuring that resources allocated for team preparation actually serve the players on time.\n\nIt is time we hold the sports ministry and federation officials accountable for poor planning instead of placing the entire burden of failure on the pitch. If we want Harambee Stars to compete at the highest level, proper camp conditions and transparent administration must be guaranteed.\n\nKwa ufupi: Harambee Stars hawawezi kupata matokeo mazuri uwanjani ikiwa usimamizi na hali ya kambi ya mazoezi bado ni duni. Ni lazima tuwajibishe viongozi wa michezo ili wachezaji wetu wapewe maandalizi na usaidizi unaofaa kabla ya mechi.",
-    "voice_note": "Bana, bad habits of blaming Harambee Stars every time results don't go our way need to stop if we aren't looking at what happens behind the scenes. How do we expect top performance on the pitch when camp conditions are poor, allowances are delayed, and logistics are rushed at the last minute? Talent alone cannot beat solid preparation. Our national team deserves proper administrative support and professional camp management well before match day. Accountability in Kenyan sports means holding the federation and ministry responsible for administration failures, not just criticizing players. Share this voice note—sports governance must step up for our team.",
-    "sms": "Usiibiwe: Harambee Stars performance starts with good governance. Demand full accountability and timely funding for player camps from sports officials.",
-    "reels": "We demand victory from Harambee Stars, but how can players deliver on the pitch when basic administrative support is lacking? From delayed allowances to substandard camp conditions, poor sports governance ruins national talent. High performance requires professional preparation long before match day. Let us hold sports officials accountable for administration and player welfare. Good results start off the pitch."
+    "radio": "Jambo and welcome to Kenya on Record. I am your host. Today, we are looking at how our public officers balance national duty against personal politics.\n\nThis week, Prime Cabinet Secretary and Cabinet Secretary for Foreign Affairs, Musalia Mudavadi, was scheduled to represent Kenya at a high-level international summit in Norway. This was not a leisure trip—it was an official engagement where critical bilateral discussions on trade, investment, and diplomacy take place. Yet, instead of representing Kenya's strategic interests on the global stage, the Foreign CS skipped the summit to attend local political rallies right here at home.\n\nWhen a Cabinet Secretary chooses political posturing over official diplomatic duty, we must ask: who pays the price? Taxpayers fund the Ministry of Foreign Affairs to build global partnerships and position Kenya as a serious regional leader. Sacrificing state duty for political mileage undermines the trust we place in public institutions.\n\nKwa ufupi: Waziri wa Mambo ya Nje Musalia Mudavadi alikosa mkutano muhimu wa kimataifa nchini Norway ili kuhudhuria mikutano ya kisiasa nchini. Ni muhimu viongozi wetu watangulize kazi ya wananchi badala ya siasa za kibinafsi.\n\nThis is Kenya on Record. Let us keep demanding accountability from those in power.",
+    "voice_note": "Bana, tabia ya viongozi kuweka siasa mbele ya kazi ya wananchi lazima ikome. Just this week, Foreign Affairs CS Musalia Mudavadi skipped an important international summit in Norway. Imagine a whole Foreign Minister skipping a major diplomatic conference where national trade and development interests are being negotiated, just to attend local political rallies back home! When state officers prioritize political campaign strategy over official government duties, it is the taxpayer who loses out. We pay their salaries so they can represent Kenya’s interests globally, not run local political errands on government time. Share this voice note, talk to your friends, and let’s keep reminding these leaders that state work comes before rally noise. This is Kenya on Record.",
+    "sms": "Usiibiwe: When state officers skip key international duties for local rallies, taxpayers lose out. Demand work over political campaigns. Kenya on Record.",
+    "reels": "Is local politics more important than Kenya’s standing on the global stage? Foreign CS Musalia Mudavadi skipped an official international summit in Norway this week, choosing local political rallies instead. State representation costs taxpayers money, yet critical diplomatic engagements get sidelined for political mileage. We deserve leaders who put national duty before rally noise. Follow Kenya on Record for real accountability."
   },
   "spend_usd": 0.0
 }
