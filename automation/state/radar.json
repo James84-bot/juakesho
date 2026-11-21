@@ -1,20 +1,44 @@
 {
- "fetched": "2026-11-21T15:42:11.450219+00:00",
+ "fetched": "2026-11-21T16:56:11.689260+00:00",
  "x": [
   {
    "name": "#InsurmountableGlory",
    "tweets": ""
   },
   {
+   "name": "Chelsea",
+   "tweets": "120K"
+  },
+  {
    "name": "Fulham",
-   "tweets": "50K"
+   "tweets": "54K"
+  },
+  {
+   "name": "Fofana",
+   "tweets": ""
   },
   {
    "name": "Maresca",
-   "tweets": "27K"
+   "tweets": "30K"
+  },
+  {
+   "name": "Palmer",
+   "tweets": "34K"
   },
   {
    "name": "Ruto Delivers",
+   "tweets": ""
+  },
+  {
+   "name": "#CHELEE",
+   "tweets": "13K"
+  },
+  {
+   "name": "Colwill",
+   "tweets": ""
+  },
+  {
+   "name": "#ItumbiInKirinyaga",
    "tweets": ""
   },
   {
@@ -22,32 +46,24 @@
    "tweets": ""
   },
   {
-   "name": "Manchester City",
-   "tweets": "40K"
+   "name": "Kanjuu School",
+   "tweets": ""
+  },
+  {
+   "name": "Caicedo",
+   "tweets": "16K"
   },
   {
    "name": "Mt Elgon",
    "tweets": ""
   },
   {
-   "name": "Haaland",
-   "tweets": "28K"
-  },
-  {
-   "name": "Man City",
-   "tweets": "44K"
-  },
-  {
-   "name": "#MCIFUL",
-   "tweets": ""
-  },
-  {
-   "name": "#BungomaFocus",
-   "tweets": ""
-  },
-  {
    "name": "Anderson",
-   "tweets": "74K"
+   "tweets": "75K"
+  },
+  {
+   "name": "Manchester City",
+   "tweets": "44K"
   },
   {
    "name": "#SHACancerCare",
@@ -58,12 +74,28 @@
    "tweets": ""
   },
   {
-   "name": "Foden",
-   "tweets": ""
+   "name": "Emegha",
+   "tweets": "12K"
+  },
+  {
+   "name": "Leeds",
+   "tweets": "48K"
   },
   {
    "name": "bima bora",
    "tweets": ""
+  },
+  {
+   "name": "Man City",
+   "tweets": "47K"
+  },
+  {
+   "name": "All Blacks",
+   "tweets": ""
+  },
+  {
+   "name": "Haaland",
+   "tweets": "30K"
   },
   {
    "name": "tupike maize flour",
@@ -86,259 +118,416 @@
    "tweets": ""
   },
   {
-   "name": "All Blacks",
-   "tweets": ""
-  },
-  {
-   "name": "Owino Nairobi Governor 2027",
-   "tweets": ""
-  },
-  {
-   "name": "EPLBlack November Deals",
-   "tweets": ""
-  },
-  {
-   "name": "Sirisia Modern Market",
-   "tweets": ""
-  },
-  {
-   "name": "Kaptelelio Dispensary",
-   "tweets": ""
-  },
-  {
-   "name": "Last Mile",
-   "tweets": ""
-  },
-  {
-   "name": "Etihad",
-   "tweets": ""
-  },
-  {
-   "name": "Leeds",
-   "tweets": "40K"
-  },
-  {
-   "name": "geoffrey ruku",
+   "name": "eplblack november deals",
    "tweets": ""
   }
  ],
  "videos": [
   {
-   "title": "Sifuna arrives in the US for an engagement tour with Kenyans in the diaspora",
+   "title": "Gachagua aishutumu IEBC kwa madai ya njama ya wizi wa kura",
    "channel": "Citizen TV",
-   "views": 43885,
-   "published": "2026-11-21T01:48:37+00:00",
-   "per_hour": 3159,
-   "url": "https://www.youtube.com/watch?v=mtr0bIyPz98",
-   "short": "https://youtube.com/shorts/mtr0bIyPz98"
+   "views": 2806,
+   "published": "2026-11-21T16:14:58+00:00",
+   "per_hour": 2806,
+   "url": "https://www.youtube.com/watch?v=xQ3rV3cs4pw",
+   "short": "https://youtube.com/shorts/xQ3rV3cs4pw"
+  },
+  {
+   "title": "Ruto atangaza ajira kwa walimu wote wanaolipwa na bodi za shule",
+   "channel": "Citizen TV",
+   "views": 1638,
+   "published": "2026-11-21T16:20:14+00:00",
+   "per_hour": 1638,
+   "url": "https://www.youtube.com/watch?v=kPZNyyHFw4E",
+   "short": "https://youtube.com/shorts/kPZNyyHFw4E"
   },
   {
    "title": "Gachagua continues receiving UDA defectors in Nyeri",
    "channel": "Citizen TV",
-   "views": 9258,
+   "views": 10745,
    "published": "2026-11-21T10:14:55+00:00",
-   "per_hour": 1697,
+   "per_hour": 1607,
    "url": "https://www.youtube.com/watch?v=wKfa_NUdc2g",
    "short": "https://youtube.com/shorts/wKfa_NUdc2g"
   },
   {
-   "title": "FRIDAY NIGHT NEWS ~ NOV 13, 2026",
-   "channel": "Citizen TV",
-   "views": 27433,
-   "published": "2026-11-20T19:58:33+00:00",
-   "per_hour": 1391,
-   "url": "https://www.youtube.com/watch?v=BRjWTas7pJo",
-   "short": "https://youtube.com/shorts/BRjWTas7pJo"
+   "title": "Ziara ya Sifuna Marekani Yazua Maswali Kuhusu Mikakati ya Kisiasa Kabla ya Uchaguzi wa 2027",
+   "channel": "KTN News",
+   "views": 865,
+   "published": "2026-11-21T16:11:43+00:00",
+   "per_hour": 865,
+   "url": "https://www.youtube.com/watch?v=Y7VMGD7lXc4",
+   "short": "https://youtube.com/shorts/Y7VMGD7lXc4"
   },
   {
-   "title": "Suspects linked to a series of robberies in Mombasa to remain in custody",
+   "title": "Washirika wa Ruto waishutumu upinzani kwa kuingilia uhuru wa IEBC",
    "channel": "Citizen TV",
-   "views": 5668,
-   "published": "2026-11-21T10:07:02+00:00",
-   "per_hour": 1015,
-   "url": "https://www.youtube.com/watch?v=rp_DCIeUM7U",
-   "short": "https://youtube.com/shorts/rp_DCIeUM7U"
+   "views": 742,
+   "published": "2026-11-21T16:21:45+00:00",
+   "per_hour": 742,
+   "url": "https://www.youtube.com/watch?v=1QOnFRPweAI",
+   "short": "https://youtube.com/shorts/1QOnFRPweAI"
   },
   {
-   "title": "Bandits attack school bus, injuring 2 students in Samburu",
+   "title": "Murkomen awaonya wapinzani dhidi ya kuzua fujo nchini",
    "channel": "Citizen TV",
-   "views": 4239,
-   "published": "2026-11-21T10:04:29+00:00",
-   "per_hour": 753,
-   "url": "https://www.youtube.com/watch?v=-oNM8u-_nrA",
-   "short": "https://youtube.com/shorts/-oNM8u-_nrA"
+   "views": 734,
+   "published": "2026-11-21T16:16:41+00:00",
+   "per_hour": 734,
+   "url": "https://www.youtube.com/watch?v=_R9lUxmNa1U",
+   "short": "https://youtube.com/shorts/_R9lUxmNa1U"
   },
   {
    "title": "Angry residents of gathoge in Kirinyaga torch a store susprcted to be used to store stolen goods",
    "channel": "Citizen TV",
-   "views": 4069,
+   "views": 4265,
    "published": "2026-11-21T10:16:24+00:00",
-   "per_hour": 749,
+   "per_hour": 640,
    "url": "https://www.youtube.com/watch?v=J1ckOw-Tk7s",
    "short": "https://youtube.com/shorts/J1ckOw-Tk7s"
   },
   {
-   "title": "3 channels one premium package",
-   "channel": "Citizen TV",
-   "views": 3592,
-   "published": "2026-11-21T07:52:00+00:00",
-   "per_hour": 458,
-   "url": "https://www.youtube.com/watch?v=iNjQ1vbRcew",
-   "short": "https://youtube.com/shorts/iNjQ1vbRcew"
-  },
-  {
    "title": "APS Bomet FC eye Police scalp",
    "channel": "Citizen TV",
-   "views": 2077,
+   "views": 3261,
    "published": "2026-11-21T10:33:43+00:00",
-   "per_hour": 404,
+   "per_hour": 512,
    "url": "https://www.youtube.com/watch?v=Q7GeT8NpNBc",
    "short": "https://youtube.com/shorts/Q7GeT8NpNBc"
   },
   {
+   "title": "Ledama Ole Kina Aingia Utata Baada ya Kumkabili Dalali Aliyetekeleza Agizo la Mahakama",
+   "channel": "KTN News",
+   "views": 493,
+   "published": "2026-11-21T16:30:37+00:00",
+   "per_hour": 493,
+   "url": "https://www.youtube.com/watch?v=5ZyXjdvyR0k",
+   "short": "https://youtube.com/shorts/5ZyXjdvyR0k"
+  },
+  {
    "title": "Lake Victoria South Water Works takes over Itare dam",
    "channel": "Citizen TV",
-   "views": 2095,
+   "views": 2446,
    "published": "2026-11-21T10:13:47+00:00",
-   "per_hour": 383,
+   "per_hour": 365,
    "url": "https://www.youtube.com/watch?v=m9GWN-CbmQ4",
    "short": "https://youtube.com/shorts/m9GWN-CbmQ4"
   },
   {
-   "title": "President Ruto launches development projects in mt. Elgon",
-   "channel": "Citizen TV",
-   "views": 1904,
-   "published": "2026-11-21T10:09:48+00:00",
-   "per_hour": 344,
-   "url": "https://www.youtube.com/watch?v=CFplkLSp5wk",
-   "short": "https://youtube.com/shorts/CFplkLSp5wk"
-  },
-  {
    "title": "Ruto to opposition: Stop hopping from one hotel to another in search of a presidential candidate",
    "channel": "NTV Kenya",
-   "views": 1123,
+   "views": 1629,
    "published": "2026-11-21T12:25:58+00:00",
-   "per_hour": 343,
+   "per_hour": 362,
    "url": "https://www.youtube.com/watch?v=dMnnNKDZELw",
    "short": "https://youtube.com/shorts/dMnnNKDZELw"
   },
   {
-   "title": "Kenya launches oil drilling operations in Turkana",
-   "channel": "NTV Kenya",
-   "views": 1706,
-   "published": "2026-11-21T10:35:54+00:00",
-   "per_hour": 334,
-   "url": "https://www.youtube.com/watch?v=Wt7-JylBvZw",
-   "short": "https://youtube.com/shorts/Wt7-JylBvZw"
+   "title": "Mamake mtangazaji Nderitu Waihura azikwa Nyeri",
+   "channel": "Citizen TV",
+   "views": 338,
+   "published": "2026-11-21T16:32:59+00:00",
+   "per_hour": 338,
+   "url": "https://www.youtube.com/watch?v=1f4s49OJZ-k",
+   "short": "https://youtube.com/shorts/1f4s49OJZ-k"
   },
   {
-   "title": "Toto na Tetesi: Harusi ya Saka na Tolami yakumbwa na utata wa ugavi wa mali",
-   "channel": "NTV Kenya",
-   "views": 1004,
-   "published": "2026-11-21T12:03:12+00:00",
-   "per_hour": 275,
-   "url": "https://www.youtube.com/watch?v=X2degx4_8iM",
-   "short": "https://youtube.com/shorts/X2degx4_8iM"
+   "title": "Munya asema muungano wa upinzani ungali imara licha ya tofauti za maoni",
+   "channel": "Citizen TV",
+   "views": 328,
+   "published": "2026-11-21T16:18:58+00:00",
+   "per_hour": 328,
+   "url": "https://www.youtube.com/watch?v=J3oZXhSXVnU",
+   "short": "https://youtube.com/shorts/J3oZXhSXVnU"
   },
   {
-   "title": "Godwin Okoko shines at the inaugural Alpha Bravo Classic Golf tour",
-   "channel": "NTV Kenya",
-   "views": 1335,
-   "published": "2026-11-21T10:46:00+00:00",
-   "per_hour": 270,
-   "url": "https://www.youtube.com/watch?v=vfwQPBAFUuo",
-   "short": "https://youtube.com/shorts/vfwQPBAFUuo"
+   "title": "Babu Owino Afanya Mikutano ya Kisiasa Nairobi Katika Harakati za Kuwania Ugavana wa 2027",
+   "channel": "KTN News",
+   "views": 303,
+   "published": "2026-11-21T16:14:50+00:00",
+   "per_hour": 303,
+   "url": "https://www.youtube.com/watch?v=TNXqq_anRMs",
+   "short": "https://youtube.com/shorts/TNXqq_anRMs"
   },
   {
-   "title": "Homa Bay leaders welcome IEBC initiative to engage political parties through dialogue forums",
-   "channel": "NTV Kenya",
-   "views": 1384,
-   "published": "2026-11-21T10:17:25+00:00",
-   "per_hour": 256,
-   "url": "https://www.youtube.com/watch?v=c3ZA5PGygRo",
-   "short": "https://youtube.com/shorts/c3ZA5PGygRo"
+   "title": "President Ruto launches development projects in mt. Elgon",
+   "channel": "Citizen TV",
+   "views": 2028,
+   "published": "2026-11-21T10:09:48+00:00",
+   "per_hour": 299,
+   "url": "https://www.youtube.com/watch?v=CFplkLSp5wk",
+   "short": "https://youtube.com/shorts/CFplkLSp5wk"
   }
  ],
  "errors": {},
  "catalog": [
   {
+   "title": "Kabras Sugar waanza kampeni ya kutetea taji lao",
+   "channel": "NTV Kenya",
+   "views": 0,
+   "published": "2026-11-21T16:52:37+00:00",
+   "per_hour": 0,
+   "url": "https://www.youtube.com/watch?v=SjToiL453ho",
+   "short": "https://youtube.com/shorts/SjToiL453ho"
+  },
+  {
+   "title": "Wafanyakazi wahamiaji walalamikia bajeti wakisema serikali ya malta inawaumiza kwa kodi",
+   "channel": "NTV Kenya",
+   "views": 0,
+   "published": "2026-11-21T16:51:36+00:00",
+   "per_hour": 0,
+   "url": "https://www.youtube.com/watch?v=aZInEgqLz9Y",
+   "short": "https://youtube.com/shorts/aZInEgqLz9Y"
+  },
+  {
+   "title": "Kina mama wajane Nakuru wajitahidi kufuga nyuki",
+   "channel": "NTV Kenya",
+   "views": 2,
+   "published": "2026-11-21T16:50:33+00:00",
+   "per_hour": 2,
+   "url": "https://www.youtube.com/watch?v=FFppMX4z9Iw",
+   "short": "https://youtube.com/shorts/FFppMX4z9Iw"
+  },
+  {
+   "title": "Je, kina mama wajawazito wanazingatia yaliyomo katika 'Purple Book'?",
+   "channel": "NTV Kenya",
+   "views": 2,
+   "published": "2026-11-21T16:48:17+00:00",
+   "per_hour": 2,
+   "url": "https://www.youtube.com/watch?v=ztvqR3etzs0",
+   "short": "https://youtube.com/shorts/ztvqR3etzs0"
+  },
+  {
+   "title": "Babu Owino ajipigia debe kuwa gavana wa Nairobi",
+   "channel": "NTV Kenya",
+   "views": 102,
+   "published": "2026-11-21T16:43:52+00:00",
+   "per_hour": 102,
+   "url": "https://www.youtube.com/watch?v=bkbemYzuNB8",
+   "short": "https://youtube.com/shorts/bkbemYzuNB8"
+  },
+  {
+   "title": "Ruto aingia na mapochopocho mapya ukanda wa Magharibi",
+   "channel": "NTV Kenya",
+   "views": 81,
+   "published": "2026-11-21T16:42:56+00:00",
+   "per_hour": 81,
+   "url": "https://www.youtube.com/watch?v=o2gssgrdU34",
+   "short": "https://youtube.com/shorts/o2gssgrdU34"
+  },
+  {
+   "title": "Amason Kireu na Daisilah Jerono Watwaa Ushindi wa Mbio za Nyika Ol Kalou",
+   "channel": "KTN News",
+   "views": 11,
+   "published": "2026-11-21T16:33:35+00:00",
+   "per_hour": 11,
+   "url": "https://www.youtube.com/watch?v=bu9cAiWvagI",
+   "short": "https://youtube.com/shorts/bu9cAiWvagI"
+  },
+  {
+   "title": "Mamake mtangazaji Nderitu Waihura azikwa Nyeri",
+   "channel": "Citizen TV",
+   "views": 338,
+   "published": "2026-11-21T16:32:59+00:00",
+   "per_hour": 338,
+   "url": "https://www.youtube.com/watch?v=1f4s49OJZ-k",
+   "short": "https://youtube.com/shorts/1f4s49OJZ-k"
+  },
+  {
+   "title": "Shabana Yalenga Ushindi Dhidi ya Mara Sugar Kuimarisha Nafasi Yake Katika Ligi Kuu",
+   "channel": "KTN News",
+   "views": 11,
+   "published": "2026-11-21T16:32:23+00:00",
+   "per_hour": 11,
+   "url": "https://www.youtube.com/watch?v=hQFe1pGRMNI",
+   "short": "https://youtube.com/shorts/hQFe1pGRMNI"
+  },
+  {
+   "title": "Mzozo wa ardhi ya Kirima Njiru waathiri zaidi ya wakazi laki tano",
+   "channel": "Citizen TV",
+   "views": 283,
+   "published": "2026-11-21T16:30:40+00:00",
+   "per_hour": 283,
+   "url": "https://www.youtube.com/watch?v=J0nhtS1aC3k",
+   "short": "https://youtube.com/shorts/J0nhtS1aC3k"
+  },
+  {
+   "title": "Ledama Ole Kina Aingia Utata Baada ya Kumkabili Dalali Aliyetekeleza Agizo la Mahakama",
+   "channel": "KTN News",
+   "views": 493,
+   "published": "2026-11-21T16:30:37+00:00",
+   "per_hour": 493,
+   "url": "https://www.youtube.com/watch?v=5ZyXjdvyR0k",
+   "short": "https://youtube.com/shorts/5ZyXjdvyR0k"
+  },
+  {
+   "title": "Serikali yazindua mwongozo mpya wa matibabu ya saratani",
+   "channel": "Citizen TV",
+   "views": 159,
+   "published": "2026-11-21T16:27:59+00:00",
+   "per_hour": 159,
+   "url": "https://www.youtube.com/watch?v=ZhpbYkiNXag",
+   "short": "https://youtube.com/shorts/ZhpbYkiNXag"
+  },
+  {
+   "title": "Washirika wa Ruto waishutumu upinzani kwa kuingilia uhuru wa IEBC",
+   "channel": "Citizen TV",
+   "views": 742,
+   "published": "2026-11-21T16:21:45+00:00",
+   "per_hour": 742,
+   "url": "https://www.youtube.com/watch?v=1QOnFRPweAI",
+   "short": "https://youtube.com/shorts/1QOnFRPweAI"
+  },
+  {
+   "title": "Ruto atangaza ajira kwa walimu wote wanaolipwa na bodi za shule",
+   "channel": "Citizen TV",
+   "views": 1638,
+   "published": "2026-11-21T16:20:14+00:00",
+   "per_hour": 1638,
+   "url": "https://www.youtube.com/watch?v=kPZNyyHFw4E",
+   "short": "https://youtube.com/shorts/kPZNyyHFw4E"
+  },
+  {
+   "title": "Munya asema muungano wa upinzani ungali imara licha ya tofauti za maoni",
+   "channel": "Citizen TV",
+   "views": 328,
+   "published": "2026-11-21T16:18:58+00:00",
+   "per_hour": 328,
+   "url": "https://www.youtube.com/watch?v=J3oZXhSXVnU",
+   "short": "https://youtube.com/shorts/J3oZXhSXVnU"
+  },
+  {
+   "title": "Murkomen awaonya wapinzani dhidi ya kuzua fujo nchini",
+   "channel": "Citizen TV",
+   "views": 734,
+   "published": "2026-11-21T16:16:41+00:00",
+   "per_hour": 734,
+   "url": "https://www.youtube.com/watch?v=_R9lUxmNa1U",
+   "short": "https://youtube.com/shorts/_R9lUxmNa1U"
+  },
+  {
+   "title": "Gachagua aishutumu IEBC kwa madai ya njama ya wizi wa kura",
+   "channel": "Citizen TV",
+   "views": 2806,
+   "published": "2026-11-21T16:14:58+00:00",
+   "per_hour": 2806,
+   "url": "https://www.youtube.com/watch?v=xQ3rV3cs4pw",
+   "short": "https://youtube.com/shorts/xQ3rV3cs4pw"
+  },
+  {
+   "title": "Babu Owino Afanya Mikutano ya Kisiasa Nairobi Katika Harakati za Kuwania Ugavana wa 2027",
+   "channel": "KTN News",
+   "views": 303,
+   "published": "2026-11-21T16:14:50+00:00",
+   "per_hour": 303,
+   "url": "https://www.youtube.com/watch?v=TNXqq_anRMs",
+   "short": "https://youtube.com/shorts/TNXqq_anRMs"
+  },
+  {
+   "title": "Ruto, Gachagua, Maraga na Sifuna Waelekeza Macho Marekani Katika Kutafuta Uungwaji Mkono wa Diaspora",
+   "channel": "KTN News",
+   "views": 196,
+   "published": "2026-11-21T16:14:02+00:00",
+   "per_hour": 196,
+   "url": "https://www.youtube.com/watch?v=YhdpqBYaCeg",
+   "short": "https://youtube.com/shorts/YhdpqBYaCeg"
+  },
+  {
+   "title": "Ziara ya Sifuna Marekani Yazua Maswali Kuhusu Mikakati ya Kisiasa Kabla ya Uchaguzi wa 2027",
+   "channel": "KTN News",
+   "views": 865,
+   "published": "2026-11-21T16:11:43+00:00",
+   "per_hour": 865,
+   "url": "https://www.youtube.com/watch?v=Y7VMGD7lXc4",
+   "short": "https://youtube.com/shorts/Y7VMGD7lXc4"
+  },
+  {
+   "title": "Wanafunzi 2 Wajeruhiwa Baada ya Washukiwa wa Ujambazi Kufyatulia Basi la Shule Risasi Samburu",
+   "channel": "KTN News",
+   "views": 79,
+   "published": "2026-11-21T16:09:24+00:00",
+   "per_hour": 79,
+   "url": "https://www.youtube.com/watch?v=Qe5bVa8QjFU",
+   "short": "https://youtube.com/shorts/Qe5bVa8QjFU"
+  },
+  {
    "title": "Hecklers disrupt COP31 closing plenary as ministers fail to reach deal",
    "channel": "NTV Kenya",
-   "views": 140,
+   "views": 270,
    "published": "2026-11-21T13:18:57+00:00",
-   "per_hour": 59,
+   "per_hour": 75,
    "url": "https://www.youtube.com/watch?v=UMp19cUSfuA",
    "short": "https://youtube.com/shorts/UMp19cUSfuA"
   },
   {
    "title": "Ruto on opposition IEBC walkout: If you want to work in IEBC, apply",
    "channel": "NTV Kenya",
-   "views": 539,
+   "views": 926,
    "published": "2026-11-21T12:51:48+00:00",
-   "per_hour": 190,
+   "per_hour": 227,
    "url": "https://www.youtube.com/watch?v=ipcdIqktynA",
    "short": "https://youtube.com/shorts/ipcdIqktynA"
   },
   {
    "title": "Ruto to opposition: Stop hopping from one hotel to another in search of a presidential candidate",
    "channel": "NTV Kenya",
-   "views": 1123,
+   "views": 1629,
    "published": "2026-11-21T12:25:58+00:00",
-   "per_hour": 343,
+   "per_hour": 362,
    "url": "https://www.youtube.com/watch?v=dMnnNKDZELw",
    "short": "https://youtube.com/shorts/dMnnNKDZELw"
   },
   {
    "title": "CAF General Assembly takes place in Abuja, Nigeria, Infantino calls for better infrastructure",
    "channel": "KTN News",
-   "views": 244,
+   "views": 467,
    "published": "2026-11-21T12:23:53+00:00",
-   "per_hour": 74,
+   "per_hour": 103,
    "url": "https://www.youtube.com/watch?v=JAZoMdZns5I",
    "short": "https://youtube.com/shorts/JAZoMdZns5I"
   },
   {
    "title": "Kenya to host Africa Junior Hockey Championships, Kenya's u-21 intensifies training",
    "channel": "KTN News",
-   "views": 92,
+   "views": 157,
    "published": "2026-11-21T12:20:33+00:00",
-   "per_hour": 27,
+   "per_hour": 34,
    "url": "https://www.youtube.com/watch?v=BQjZD-IsEYA",
    "short": "https://youtube.com/shorts/BQjZD-IsEYA"
   },
   {
    "title": "Nairobi City Thunder seeks a spot in the Basketball Africa League",
    "channel": "KTN News",
-   "views": 377,
+   "views": 499,
    "published": "2026-11-21T12:17:30+00:00",
-   "per_hour": 111,
+   "per_hour": 107,
    "url": "https://www.youtube.com/watch?v=-L4yneAXmgY",
    "short": "https://youtube.com/shorts/-L4yneAXmgY"
   },
   {
    "title": "Mikiki Mikiki | Ukuzaji wa wachezaji mashinani",
    "channel": "NTV Kenya",
-   "views": 205,
+   "views": 255,
    "published": "2026-11-21T12:14:09+00:00",
-   "per_hour": 59,
+   "per_hour": 54,
    "url": "https://www.youtube.com/watch?v=kYElwBcJ_14",
    "short": "https://youtube.com/shorts/kYElwBcJ_14"
   },
   {
    "title": "Kenya seek to shine in the 2027 World Masters Athletics Indoor Championships in Florida, USA",
    "channel": "KTN News",
-   "views": 213,
+   "views": 221,
    "published": "2026-11-21T12:13:16+00:00",
-   "per_hour": 61,
+   "per_hour": 47,
    "url": "https://www.youtube.com/watch?v=DgyaECjkQVc",
    "short": "https://youtube.com/shorts/DgyaECjkQVc"
   },
   {
    "title": "Godwin Okoko wins the inaugural Alpha Bravo Classic Golf tour in Lagos Nigeria",
    "channel": "KTN News",
-   "views": 85,
+   "views": 107,
    "published": "2026-11-21T12:08:32+00:00",
-   "per_hour": 24,
+   "per_hour": 22,
    "url": "https://www.youtube.com/watch?v=kwt9R5TediU",
    "short": "https://youtube.com/shorts/kwt9R5TediU"
   },
@@ -347,324 +536,135 @@
    "channel": "KTN News",
    "views": 208,
    "published": "2026-11-21T12:04:35+00:00",
-   "per_hour": 57,
+   "per_hour": 43,
    "url": "https://www.youtube.com/watch?v=rOeYnK6Q_jQ",
    "short": "https://youtube.com/shorts/rOeYnK6Q_jQ"
   },
   {
    "title": "Toto na Tetesi: Harusi ya Saka na Tolami yakumbwa na utata wa ugavi wa mali",
    "channel": "NTV Kenya",
-   "views": 1004,
+   "views": 1424,
    "published": "2026-11-21T12:03:12+00:00",
-   "per_hour": 275,
+   "per_hour": 292,
    "url": "https://www.youtube.com/watch?v=X2degx4_8iM",
    "short": "https://youtube.com/shorts/X2degx4_8iM"
   },
   {
    "title": "Mombasa United ready to face Ulinzi Sras in the FKF Premier League",
    "channel": "KTN News",
-   "views": 99,
+   "views": 102,
    "published": "2026-11-21T12:02:22+00:00",
-   "per_hour": 27,
+   "per_hour": 21,
    "url": "https://www.youtube.com/watch?v=x8htHgV7V0k",
    "short": "https://youtube.com/shorts/x8htHgV7V0k"
   },
   {
    "title": "Shabana prepare to face Mara Sugar in the FKF Premier League",
    "channel": "KTN News",
-   "views": 13,
+   "views": 736,
    "published": "2026-11-21T11:57:53+00:00",
-   "per_hour": 3,
+   "per_hour": 148,
    "url": "https://www.youtube.com/watch?v=NxvT2vmuN8k",
    "short": "https://youtube.com/shorts/NxvT2vmuN8k"
   },
   {
    "title": "Kocha Bora: Historia ya Robert Matano (The Lion). Je, ndiye kocha bora nchini Kenya?",
    "channel": "NTV Kenya",
-   "views": 22,
+   "views": 275,
    "published": "2026-11-21T11:56:57+00:00",
-   "per_hour": 6,
+   "per_hour": 55,
    "url": "https://www.youtube.com/watch?v=pPltLtpSeT0",
    "short": "https://youtube.com/shorts/pPltLtpSeT0"
   },
   {
-   "title": "TAWWDA Plans Nolturesh Pipeline Rehabilitation to Boost Water Supply in Three Counties",
-   "channel": "KTN News",
-   "views": 54,
-   "published": "2026-11-21T11:54:05+00:00",
-   "per_hour": 14,
-   "url": "https://www.youtube.com/watch?v=Lj5bpFqu-aY",
-   "short": "https://youtube.com/shorts/Lj5bpFqu-aY"
-  },
-  {
-   "title": "Kajiado, Makueni and Machakos Residents Support Nolturesh Scheme Transfer",
-   "channel": "KTN News",
-   "views": 164,
-   "published": "2026-11-21T11:52:12+00:00",
-   "per_hour": 43,
-   "url": "https://www.youtube.com/watch?v=6CC6zV0iFT0",
-   "short": "https://youtube.com/shorts/6CC6zV0iFT0"
-  },
-  {
-   "title": "Kenya Police coach says the team is ready to take on APS Bomet in the FKF Premier League fixture",
-   "channel": "KTN News",
-   "views": 15,
-   "published": "2026-11-21T11:49:31+00:00",
-   "per_hour": 4,
-   "url": "https://www.youtube.com/watch?v=AHr9QqbkCvw",
-   "short": "https://youtube.com/shorts/AHr9QqbkCvw"
-  },
-  {
-   "title": "APS Bomet CEO Rose Chemutai calls on fans to turn up in large numbers in match vs Kenya Police",
-   "channel": "KTN News",
-   "views": 202,
-   "published": "2026-11-21T11:46:00+00:00",
-   "per_hour": 51,
-   "url": "https://www.youtube.com/watch?v=JtX8Fp4wk5U",
-   "short": "https://youtube.com/shorts/JtX8Fp4wk5U"
-  },
-  {
-   "title": "APS Bomet to take on Kenya Police in the FKF Premier League",
-   "channel": "KTN News",
-   "views": 139,
-   "published": "2026-11-21T11:42:49+00:00",
-   "per_hour": 35,
-   "url": "https://www.youtube.com/watch?v=aDKSOfj-p34",
-   "short": "https://youtube.com/shorts/aDKSOfj-p34"
-  },
-  {
    "title": "Godwin Okoko shines at the inaugural Alpha Bravo Classic Golf tour",
    "channel": "NTV Kenya",
-   "views": 1335,
+   "views": 1135,
    "published": "2026-11-21T10:46:00+00:00",
-   "per_hour": 270,
+   "per_hour": 184,
    "url": "https://www.youtube.com/watch?v=vfwQPBAFUuo",
    "short": "https://youtube.com/shorts/vfwQPBAFUuo"
   },
   {
    "title": "KCB rugby coach Andrew Amonde confident of title revival as bankers face fierce rivals Kabras Sugar",
    "channel": "NTV Kenya",
-   "views": 295,
+   "views": 375,
    "published": "2026-11-21T10:44:19+00:00",
-   "per_hour": 59,
+   "per_hour": 61,
    "url": "https://www.youtube.com/watch?v=C3nz65J3oC0",
    "short": "https://youtube.com/shorts/C3nz65J3oC0"
   },
   {
    "title": "AFC Leopards face Migori Youth in FKF premier league",
    "channel": "NTV Kenya",
-   "views": 1091,
+   "views": 1098,
    "published": "2026-11-21T10:39:25+00:00",
-   "per_hour": 216,
+   "per_hour": 175,
    "url": "https://www.youtube.com/watch?v=EX6dhi9j1gw",
    "short": "https://youtube.com/shorts/EX6dhi9j1gw"
   },
   {
-   "title": "New KNCHR CEO Pledges Stronger Human Rights Protection",
-   "channel": "KTN News",
-   "views": 265,
-   "published": "2026-11-21T10:36:38+00:00",
-   "per_hour": 52,
-   "url": "https://www.youtube.com/watch?v=KBfKvFvJtZY",
-   "short": "https://youtube.com/shorts/KBfKvFvJtZY"
-  },
-  {
-   "title": "Kenya launches oil drilling operations in Turkana",
-   "channel": "NTV Kenya",
-   "views": 1706,
-   "published": "2026-11-21T10:35:54+00:00",
-   "per_hour": 334,
-   "url": "https://www.youtube.com/watch?v=Wt7-JylBvZw",
-   "short": "https://youtube.com/shorts/Wt7-JylBvZw"
-  },
-  {
-   "title": "Four Months On, Families Demand Answers Over Jimmy Mutava's Disappearance",
-   "channel": "KTN News",
-   "views": 431,
-   "published": "2026-11-21T10:35:00+00:00",
-   "per_hour": 84,
-   "url": "https://www.youtube.com/watch?v=YYp8a4gCoP4",
-   "short": "https://youtube.com/shorts/YYp8a4gCoP4"
-  },
-  {
-   "title": "Meet Homa Bay family making a living from hides and skins",
-   "channel": "NTV Kenya",
-   "views": 784,
-   "published": "2026-11-21T10:34:13+00:00",
-   "per_hour": 153,
-   "url": "https://www.youtube.com/watch?v=gQ4PcOC9TGA",
-   "short": "https://youtube.com/shorts/gQ4PcOC9TGA"
-  },
-  {
    "title": "APS Bomet FC eye Police scalp",
    "channel": "Citizen TV",
-   "views": 2077,
+   "views": 3261,
    "published": "2026-11-21T10:33:43+00:00",
-   "per_hour": 404,
+   "per_hour": 512,
    "url": "https://www.youtube.com/watch?v=Q7GeT8NpNBc",
    "short": "https://youtube.com/shorts/Q7GeT8NpNBc"
   },
   {
-   "title": "5th edition of Nation Media Group Private Schools expo currently underway at the Sarit Expo Centre",
-   "channel": "NTV Kenya",
-   "views": 315,
-   "published": "2026-11-21T10:28:12+00:00",
-   "per_hour": 60,
-   "url": "https://www.youtube.com/watch?v=GTlC28TflE0",
-   "short": "https://youtube.com/shorts/GTlC28TflE0"
-  },
-  {
    "title": "Kisii University to introduce a dental surgery programme",
    "channel": "Citizen TV",
-   "views": 885,
+   "views": 1097,
    "published": "2026-11-21T10:21:36+00:00",
-   "per_hour": 166,
+   "per_hour": 167,
    "url": "https://www.youtube.com/watch?v=eNjb5vp4j8c",
    "short": "https://youtube.com/shorts/eNjb5vp4j8c"
   },
   {
-   "title": "Samuel Poghisio declares bid for West Pokot gubernatorial seat in the 2027 general election",
-   "channel": "NTV Kenya",
-   "views": 386,
-   "published": "2026-11-21T10:21:14+00:00",
-   "per_hour": 72,
-   "url": "https://www.youtube.com/watch?v=p3A5Xr3uamo",
-   "short": "https://youtube.com/shorts/p3A5Xr3uamo"
-  },
-  {
    "title": "Nairobi county puts measures in place to boost health services",
    "channel": "Citizen TV",
-   "views": 1309,
+   "views": 1488,
    "published": "2026-11-21T10:20:02+00:00",
-   "per_hour": 244,
+   "per_hour": 225,
    "url": "https://www.youtube.com/watch?v=qsveTKfNL1c",
    "short": "https://youtube.com/shorts/qsveTKfNL1c"
   },
   {
-   "title": "Homa Bay leaders welcome IEBC initiative to engage political parties through dialogue forums",
-   "channel": "NTV Kenya",
-   "views": 1384,
-   "published": "2026-11-21T10:17:25+00:00",
-   "per_hour": 256,
-   "url": "https://www.youtube.com/watch?v=c3ZA5PGygRo",
-   "short": "https://youtube.com/shorts/c3ZA5PGygRo"
-  },
-  {
    "title": "Angry residents of gathoge in Kirinyaga torch a store susprcted to be used to store stolen goods",
    "channel": "Citizen TV",
-   "views": 4069,
+   "views": 4265,
    "published": "2026-11-21T10:16:24+00:00",
-   "per_hour": 749,
+   "per_hour": 640,
    "url": "https://www.youtube.com/watch?v=J1ckOw-Tk7s",
    "short": "https://youtube.com/shorts/J1ckOw-Tk7s"
   },
   {
-   "title": "‘Stop being greedy,’ Susan Kihika tells Mt Kenya leaders jostling for Kindiki’s DP position in 2027",
-   "channel": "NTV Kenya",
-   "views": 565,
-   "published": "2026-11-21T10:15:28+00:00",
-   "per_hour": 104,
-   "url": "https://www.youtube.com/watch?v=E07jibTbPdE",
-   "short": "https://youtube.com/shorts/E07jibTbPdE"
-  },
-  {
    "title": "Gachagua continues receiving UDA defectors in Nyeri",
    "channel": "Citizen TV",
-   "views": 9258,
+   "views": 10745,
    "published": "2026-11-21T10:14:55+00:00",
-   "per_hour": 1697,
+   "per_hour": 1607,
    "url": "https://www.youtube.com/watch?v=wKfa_NUdc2g",
    "short": "https://youtube.com/shorts/wKfa_NUdc2g"
   },
   {
    "title": "Lake Victoria South Water Works takes over Itare dam",
    "channel": "Citizen TV",
-   "views": 2095,
+   "views": 2446,
    "published": "2026-11-21T10:13:47+00:00",
-   "per_hour": 383,
+   "per_hour": 365,
    "url": "https://www.youtube.com/watch?v=m9GWN-CbmQ4",
    "short": "https://youtube.com/shorts/m9GWN-CbmQ4"
   },
   {
    "title": "President Ruto launches development projects in mt. Elgon",
    "channel": "Citizen TV",
-   "views": 1904,
+   "views": 2028,
    "published": "2026-11-21T10:09:48+00:00",
-   "per_hour": 344,
+   "per_hour": 299,
    "url": "https://www.youtube.com/watch?v=CFplkLSp5wk",
    "short": "https://youtube.com/shorts/CFplkLSp5wk"
-  },
-  {
-   "title": "Suspects linked to a series of robberies in Mombasa to remain in custody",
-   "channel": "Citizen TV",
-   "views": 5668,
-   "published": "2026-11-21T10:07:02+00:00",
-   "per_hour": 1015,
-   "url": "https://www.youtube.com/watch?v=rp_DCIeUM7U",
-   "short": "https://youtube.com/shorts/rp_DCIeUM7U"
-  },
-  {
-   "title": "Bandits attack school bus, injuring 2 students in Samburu",
-   "channel": "Citizen TV",
-   "views": 4239,
-   "published": "2026-11-21T10:04:29+00:00",
-   "per_hour": 753,
-   "url": "https://www.youtube.com/watch?v=-oNM8u-_nrA",
-   "short": "https://youtube.com/shorts/-oNM8u-_nrA"
-  },
-  {
-   "title": "3 channels one premium package",
-   "channel": "Citizen TV",
-   "views": 3592,
-   "published": "2026-11-21T07:52:00+00:00",
-   "per_hour": 458,
-   "url": "https://www.youtube.com/watch?v=iNjQ1vbRcew",
-   "short": "https://youtube.com/shorts/iNjQ1vbRcew"
-  },
-  {
-   "title": "Sifuna arrives in the US for an engagement tour with Kenyans in the diaspora",
-   "channel": "Citizen TV",
-   "views": 43885,
-   "published": "2026-11-21T01:48:37+00:00",
-   "per_hour": 3159,
-   "url": "https://www.youtube.com/watch?v=mtr0bIyPz98",
-   "short": "https://youtube.com/shorts/mtr0bIyPz98"
-  },
-  {
-   "title": "FRIDAY NIGHT NEWS ~ NOV 13, 2026",
-   "channel": "Citizen TV",
-   "views": 27433,
-   "published": "2026-11-20T19:58:33+00:00",
-   "per_hour": 1391,
-   "url": "https://www.youtube.com/watch?v=BRjWTas7pJo",
-   "short": "https://youtube.com/shorts/BRjWTas7pJo"
-  },
-  {
-   "title": "Muthaiga Golf Club hosts captain’s prize event",
-   "channel": "Citizen TV",
-   "views": 840,
-   "published": "2026-11-20T19:58:27+00:00",
-   "per_hour": 43,
-   "url": "https://www.youtube.com/watch?v=X6tR7Zm4LqE",
-   "short": "https://youtube.com/shorts/X6tR7Zm4LqE"
-  },
-  {
-   "title": "Budalang’i to get new stadium and sports academy",
-   "channel": "Citizen TV",
-   "views": 2309,
-   "published": "2026-11-20T19:57:26+00:00",
-   "per_hour": 117,
-   "url": "https://www.youtube.com/watch?v=1htY2XmPwPg",
-   "short": "https://youtube.com/shorts/1htY2XmPwPg"
-  },
-  {
-   "title": "Mombasa United coach demands results ahead of Ulinzi Stars clash",
-   "channel": "Citizen TV",
-   "views": 634,
-   "published": "2026-11-20T19:56:17+00:00",
-   "per_hour": 32,
-   "url": "https://www.youtube.com/watch?v=7-kS9eE0FQs",
-   "short": "https://youtube.com/shorts/7-kS9eE0FQs"
   }
  ]
 }
