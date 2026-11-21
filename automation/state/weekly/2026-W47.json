@@ -1,0 +1,109 @@
+{
+ "label": "2026-W47",
+ "week_name": "15 Nov to 21 Nov 2026",
+ "status": "recording",
+ "script": {
+  "title": "MPs Delete Sh100M Fine for Foreign Firms, PAYE Cuts Delayed, and More",
+  "thumbnail": "SH100M FINE DROPPED",
+  "summary": "Parliament removed heavy penalties for foreign firms bypassing Kenyan workers while planned PAYE tax cuts hit delays. Meanwhile, electoral talks face opposition walkouts as government departments tighten foreign job regulations.",
+  "intro": "MPs in Parliament dropped a Sh100 million fine meant to protect local workers from rogue foreign companies. That decision sits at the centre of a week full of big moves across government, elections, and worker pay. This week, we look at foreign job rules, World Bank corruption warnings, delayed tax relief, and election talk standoffs.",
+  "stories": [
+   {
+    "id": "2026-w46-hot-1115",
+    "chapter": "New Saudi Job Vetting Rules",
+    "script": "On 15 November, the Ministry of Labour introduced fresh regulations for foreign recruitment agencies. Agencies must now clear strict vetting checks before sending Kenyan workers to Saudi Arabia. Under these new rules, the National Employment Authority must approve every foreign employment contract. This system aims to protect job seekers from rogue foreign recruitment agencies operating without proper accountability.\n\nFor thousands of job seekers, finding work abroad offers essential income, but rogue agencies carry severe risks. Unverified agencies often charge heavy fees without guaranteeing safe contracts or fair working conditions. The new checks create a legal shield to ensure agents follow mandatory standards before taking money from citizens.\n\nJob seekers should verify any agent on nea.go.ke before signing contracts or paying any fees. Moving forward, the National Employment Authority must enforce these checks strictly across all counties. That will show whether these new rules truly stop rogue operators from exploiting vulnerable job seekers."
+   },
+   {
+    "id": "2026-w47-hot-1117e",
+    "chapter": "World Bank Corruption Warning",
+    "script": "Corruption warnings hit national headlines again after a fresh report from the World Bank. The international lender published governance assessments raising serious concerns over Kenya's public spending habits. The World Bank warned that Kenya faces billion-shilling corruption losses alongside deep governance gaps.\n\nThese financial losses directly impact ordinary citizens across the country every single day. When public funds vanish through corruption, government spending on local schools and health clinics shrinks dramatically. That leaves communities without essential medicines, proper classrooms, or adequate medical staffing. The Treasury now faces intense pressure to account for how public funds are managed and spent.\n\nCitizens can read the public expenditure report online to see where state resources actually go. President William Ruto and Treasury officials must now decide how to address these detailed findings. The next step is seeing whether government action matches the serious concerns highlighted by the World Bank."
+   },
+   {
+    "id": "2026-w47-hot-1118-r2",
+    "chapter": "January PAYE Tax Cuts Delayed",
+    "script": "On 18 November, Treasury CS John Mbadi gave an update on proposed income tax cuts for salaried workers. Salaried Kenyans expected lower PAYE deductions starting this January to help ease the high cost of living. CS Mbadi confirmed new timelines, revealing that the promised January salary relief now hangs in the balance.\n\nFor millions of employed Kenyans, tax policy directly dictates how much money goes home each month. Delayed tax relief means workers continue facing heavy monthly deductions while waiting for official relief schedules. Without lower PAYE rates, families must stretch smaller take-home pay to manage daily household expenses.\n\nWorkers should check their monthly PAYE deductions on their payslips to track their income tax numbers. The National Treasury must publish its clear, revised implementation timetable before December arrives. That publication will clarify exactly when Kenyan workers can expect their promised income tax reduction."
+   },
+   {
+    "id": "2026-w47-hot-1118e-r2",
+    "chapter": "Gachagua Submits IEBC Demands",
+    "script": "Political preparations for the 2027 general election moved to voter administration in Nairobi this week. Rigathi Gachagua submitted specific demands to IEBC Chair Erastus Ethekon ahead of scheduled talks on Thursday. The planned discussions focus on voter registration access and election technology across the country.\n\nHow the electoral commission handles technology and voter lists determines the credibility of future elections. Clear rules on voter registration ensure eligible citizens across all 47 counties can participate fully in voting. When election technology works reliably, voters can trust that every cast ballot counts accurately on election day.\n\nEligible citizens can verify their voter registration details at their local IEBC constituency office today. The Independent Electoral and Boundaries Commission must serve voters fairly in every single region. All eyes now turn to Thursday to see if the commission and political figures reach consensus on these administrative issues."
+   },
+   {
+    "id": "2026-w47-hot-1119",
+    "chapter": "MPs Delete Sh100M Local Fine",
+    "script": "On 19 November, the National Assembly made major changes to the revised Local Content Bill in Nairobi. Members of Parliament deleted a proposed Sh100 million fine that punished foreign companies for bypassing Kenyan workers. Lawmakers also removed potential jail terms for company bosses who fail to comply with local content rules.\n\nThis legislative change removes key legal safeguards for local contractors, jobseekers, and domestic suppliers. Without strong financial penalties or criminal liability, foreign firms face fewer consequences for ignoring local talent. Kenyan suppliers lose structural protections that were designed to give local businesses priority in major contracts.\n\nCitizens can track how their local representatives voted on this Bill by visiting parliament.go.ke online. Parliament faces pressure from local workers to restore tough penalties before passing the final legislation into law. The key test remains whether lawmakers will reinstate these heavy penalties during upcoming parliamentary sessions."
+   },
+   {
+    "id": "2026-w47-hot-1119b1743",
+    "chapter": "Opposition Walkout at IEBC Talks",
+    "script": "On 19 November, opposition leaders walked out of an electoral commission meeting in Nairobi. The standoff began when ruling coalition leaders were invited to take the podium first during stakeholder consultations. Opposition politicians accused the commission of trickery and unfair bias regarding disputed meeting procedures. Kalonzo stated, \"Today, we did not find it. So we have walked out.\"\n\nPolitical standoffs over meeting rules damage public trust in election preparations ahead of the 2027 polls. When political parties clash over consultation procedures, voter confidence in administrative fairness drops significantly across the nation. Fair dialogue requires all political sides to operate under equal and transparent meeting standards.\n\nKenyans should follow official commission notices regarding stakeholder consultations as election preparations continue. The IEBC Commissioners must publish clear ground rules for all future political party discussions immediately. Future talks will depend heavily on whether the electoral body can establish ground rules acceptable to every political party."
+   }
+  ],
+  "outro": "Do you trust the electoral commission to manage fair election talks for all political parties heading into 2027? Share your thoughts in the comments section below. Subscribe to Kenya on Record right now so you never miss our clear, fact-based breakdown of the news next week."
+ },
+ "posts": [
+  "2026-w46-hot-1115",
+  "2026-w47-hot-1117e",
+  "2026-w47-hot-1118-r2",
+  "2026-w47-hot-1118e-r2",
+  "2026-w47-hot-1119",
+  "2026-w47-hot-1119b1743"
+ ],
+ "parts": [
+  {
+   "key": "intro",
+   "title": "Intro",
+   "text": "MPs in Parliament dropped a Sh100 million fine meant to protect local workers from rogue foreign companies. That decision sits at the centre of a week full of big moves across government, elections, and worker pay. This week, we look at foreign job rules, World Bank corruption warnings, delayed tax relief, and election talk standoffs.",
+   "msg": 1414
+  },
+  {
+   "key": "2026-w46-hot-1115",
+   "title": "New Saudi Job Vetting Rules",
+   "text": "On 15 November, the Ministry of Labour introduced fresh regulations for foreign recruitment agencies. Agencies must now clear strict vetting checks before sending Kenyan workers to Saudi Arabia. Under these new rules, the National Employment Authority must approve every foreign employment contract. This system aims to protect job seekers from rogue foreign recruitment agencies operating without proper accountability.\n\nFor thousands of job seekers, finding work abroad offers essential income, but rogue agencies carry severe risks. Unverified agencies often charge heavy fees without guaranteeing safe contracts or fair working conditions. The new checks create a legal shield to ensure agents follow mandatory standards before taking money from citizens.\n\nJob seekers should verify any agent on nea.go.ke before signing contracts or paying any fees. Moving forward, the National Employment Authority must enforce these checks strictly across all counties. That will show whether these new rules truly stop rogue operators from exploiting vulnerable job seekers.",
+   "post": "2026-w46-hot-1115",
+   "msg": 1415
+  },
+  {
+   "key": "2026-w47-hot-1117e",
+   "title": "World Bank Corruption Warning",
+   "text": "Corruption warnings hit national headlines again after a fresh report from the World Bank. The international lender published governance assessments raising serious concerns over Kenya's public spending habits. The World Bank warned that Kenya faces billion-shilling corruption losses alongside deep governance gaps.\n\nThese financial losses directly impact ordinary citizens across the country every single day. When public funds vanish through corruption, government spending on local schools and health clinics shrinks dramatically. That leaves communities without essential medicines, proper classrooms, or adequate medical staffing. The Treasury now faces intense pressure to account for how public funds are managed and spent.\n\nCitizens can read the public expenditure report online to see where state resources actually go. President William Ruto and Treasury officials must now decide how to address these detailed findings. The next step is seeing whether government action matches the serious concerns highlighted by the World Bank.",
+   "post": "2026-w47-hot-1117e",
+   "msg": 1416
+  },
+  {
+   "key": "2026-w47-hot-1118-r2",
+   "title": "January PAYE Tax Cuts Delayed",
+   "text": "On 18 November, Treasury CS John Mbadi gave an update on proposed income tax cuts for salaried workers. Salaried Kenyans expected lower PAYE deductions starting this January to help ease the high cost of living. CS Mbadi confirmed new timelines, revealing that the promised January salary relief now hangs in the balance.\n\nFor millions of employed Kenyans, tax policy directly dictates how much money goes home each month. Delayed tax relief means workers continue facing heavy monthly deductions while waiting for official relief schedules. Without lower PAYE rates, families must stretch smaller take-home pay to manage daily household expenses.\n\nWorkers should check their monthly PAYE deductions on their payslips to track their income tax numbers. The National Treasury must publish its clear, revised implementation timetable before December arrives. That publication will clarify exactly when Kenyan workers can expect their promised income tax reduction.",
+   "post": "2026-w47-hot-1118-r2",
+   "msg": 1417
+  },
+  {
+   "key": "2026-w47-hot-1118e-r2",
+   "title": "Gachagua Submits IEBC Demands",
+   "text": "Political preparations for the 2027 general election moved to voter administration in Nairobi this week. Rigathi Gachagua submitted specific demands to IEBC Chair Erastus Ethekon ahead of scheduled talks on Thursday. The planned discussions focus on voter registration access and election technology across the country.\n\nHow the electoral commission handles technology and voter lists determines the credibility of future elections. Clear rules on voter registration ensure eligible citizens across all 47 counties can participate fully in voting. When election technology works reliably, voters can trust that every cast ballot counts accurately on election day.\n\nEligible citizens can verify their voter registration details at their local IEBC constituency office today. The Independent Electoral and Boundaries Commission must serve voters fairly in every single region. All eyes now turn to Thursday to see if the commission and political figures reach consensus on these administrative issues.",
+   "post": "2026-w47-hot-1118e-r2",
+   "msg": 1418
+  },
+  {
+   "key": "2026-w47-hot-1119",
+   "title": "MPs Delete Sh100M Local Fine",
+   "text": "On 19 November, the National Assembly made major changes to the revised Local Content Bill in Nairobi. Members of Parliament deleted a proposed Sh100 million fine that punished foreign companies for bypassing Kenyan workers. Lawmakers also removed potential jail terms for company bosses who fail to comply with local content rules.\n\nThis legislative change removes key legal safeguards for local contractors, jobseekers, and domestic suppliers. Without strong financial penalties or criminal liability, foreign firms face fewer consequences for ignoring local talent. Kenyan suppliers lose structural protections that were designed to give local businesses priority in major contracts.\n\nCitizens can track how their local representatives voted on this Bill by visiting parliament.go.ke online. Parliament faces pressure from local workers to restore tough penalties before passing the final legislation into law. The key test remains whether lawmakers will reinstate these heavy penalties during upcoming parliamentary sessions.",
+   "post": "2026-w47-hot-1119",
+   "msg": 1419
+  },
+  {
+   "key": "2026-w47-hot-1119b1743",
+   "title": "Opposition Walkout at IEBC Talks",
+   "text": "On 19 November, opposition leaders walked out of an electoral commission meeting in Nairobi. The standoff began when ruling coalition leaders were invited to take the podium first during stakeholder consultations. Opposition politicians accused the commission of trickery and unfair bias regarding disputed meeting procedures. Kalonzo stated, \"Today, we did not find it. So we have walked out.\"\n\nPolitical standoffs over meeting rules damage public trust in election preparations ahead of the 2027 polls. When political parties clash over consultation procedures, voter confidence in administrative fairness drops significantly across the nation. Fair dialogue requires all political sides to operate under equal and transparent meeting standards.\n\nKenyans should follow official commission notices regarding stakeholder consultations as election preparations continue. The IEBC Commissioners must publish clear ground rules for all future political party discussions immediately. Future talks will depend heavily on whether the electoral body can establish ground rules acceptable to every political party.",
+   "post": "2026-w47-hot-1119b1743",
+   "msg": 1420
+  },
+  {
+   "key": "outro",
+   "title": "Outro",
+   "text": "Do you trust the electoral commission to manage fair election talks for all political parties heading into 2027? Share your thoughts in the comments section below. Subscribe to Kenya on Record right now so you never miss our clear, fact-based breakdown of the news next week.",
+   "msg": 1421
+  }
+ ],
+ "made_at": "2026-11-21T16:50:57.862928+03:00"
+}
