@@ -2903,13 +2903,122 @@
       "reel": true,
       "tg_msg": 1398,
       "photo_checked": "2026-11-21T09:54:47.885857+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1121a",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football fans",
+      "line": "Harambee Stars coach Benni McCarthy exposed *off-pitch troubles* following their loss to South Africa.",
+      "fact": "Coach McCarthy cited administrative challenges and poor camp conditions for the team's struggles.",
+      "message": "Harambee Stars need proper administrative support and camp conditions to deliver results on the pitch.",
+      "action": "Demand accountability and professional management from the Ministry of Sports and FKF.",
+      "beats": [
+        "Harambee Stars coach exposed off-pitch troubles following their loss.",
+        "McCarthy: “he should know he will eat correctly, rest properly, travel with his teammates and receive what he is owed.”",
+        "Management failures continue to hurt player performance on pitch.",
+        "What change do you want to see in Kenyan football?"
+      ],
+      "photo_query": "football stadium pitch Kenya",
+      "source": "Citizen Digital, 2026-11-20",
+      "caption": "Harambee Stars coach Benni McCarthy has exposed the off-pitch issues affecting the national team following their defeat to South Africa. Mismanagement hurts our players' performance. What needs to change in Kenyan football first?\n\n#HarambeeStars #KenyaOnRecord",
+      "who": "Ministry of Sports and FKF",
+      "where": "National",
+      "when": "20 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Mismanagement damages national team performance and disappoints Kenyan sports fans.",
+      "demand": "The Ministry of Sports must audit FKF camp preparations and ensure players receive allowances on time.",
+      "bg": "usiku",
+      "publish_at": "2026-11-21T16:02:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "avoid": [
+        "Rising cooking fuel costs push up daily expenses for millions of Kenyan households.",
+        "A Sh85 billion drop in CBK foreign reserves puts fresh pressure on the shilling and import prices."
+      ],
+      "source_links": [
+        {
+          "outlet": "Citizen Digital",
+          "title": "McCarthy lifts the lid on Harambee Stars off-pitch troubles after Bafana defeat",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQUpOWG1LYVlBQVNhOW41RlJyV3o0bGhnaWF5YjFUWUJWQmF6SGQwMlhlLXAwV3NxYjdDYjRhNm1BTno5OS15U2Z0UE8xQ0NWeG8yZ0dNUmVLeTZhSEFYMk9Id2FQSEFjdW9LaE03WE9GU2dXajRRcm1rLXdfTFFMVVhnWXMtU2ZQSUpVNnFRQURQWnprSW0tb3lGNUlhMHc1VGZMaXBZcWF3amUwU1hoWnhSMDNWcGhqaWdN?oc=5",
+          "published": "2026-11-20"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "When a player is called up for Kenya, he should know he will eat correctly, rest properly, travel with his teammates and receive what he is owed. That's not a big ask",
+          "speaker": "McCarthy",
+          "context": "\"When a player is called up for Kenya, he should know he will eat correctly, rest properly, travel with his teammates and receive what he is owed. That's not a big ask,\" McCarthy said.",
+          "outlet": "Citizen Digital",
+          "link": "https://citizen.digital/article/mccarthy-lifts-the-lid-on-harambee-stars-off-pitch-troubles-after-bafana-defeat-n394243"
+        },
+        {
+          "text": "Some results along the way will hurt, but every one of these games is preparing us for this great tournament that we are co-hosting. Judge us when the dust has settled at AFCON 2027",
+          "speaker": "McCarthy",
+          "context": "\"Some results along the way will hurt, but every one of these games is preparing us for this great tournament that we are co-hosting. Judge us when the dust has settled at AFCON 2027,\" McCarthy stated.",
+          "outlet": "Citizen Digital",
+          "link": "https://citizen.digital/article/mccarthy-lifts-the-lid-on-harambee-stars-off-pitch-troubles-after-bafana-defeat-n394243"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 5.8/10. Match this post to the current week's top political and electoral trends instead of sports news outside the list."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 6,
+        "clarity": 7,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 6,
+        "picture": 6,
+        "hold": 6,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 6,
+        "human": 4,
+        "avg": 5.8,
+        "note": "Match this post to the current week's top political and electoral trends instead of sports news outside the list."
+      },
+      "drafted_at": "2026-11-21T12:47:41.094801+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1121a-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127816-world-rugby-confirms-talanta-complex-2027-hsbc-svns-2-tournament",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1121a-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "First Games at Talanta Stadium Complex Revealed"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Ruto Issues New Directive on Eldoret’s Kipchoge Keino Stadium"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/videos/2026-w47-hot-1121a-broll.mp4",
+      "broll_credit": "Footage: Valentin_Aleksandrov / Pixabay",
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1405
     }
   ],
   "scripts": {
-    "radio": "Good morning listener, welcome to Kenya on Record. Today we need to talk about your pocket and a serious figure coming straight from the Central Bank of Kenya. CBK reserves have dropped by a staggering 85 billion shillings.\n\nNow, why should this matter to a mama mboga, a farmer, or anyone running a small business? \n\nForeign reserves act as our country’s emergency savings account in hard currency, mainly US dollars. We use these dollars to import vital everyday goods—like petrol, diesel, cooking oil, medicine, and fertilizer. When our reserve cushion drops this sharply, it places heavy pressure on the Kenyan shilling. \n\nWhen the shilling weakens against the dollar, importers pay more to bring goods into the country. Naturally, those extra costs are passed down to you at the shop counter. A hit on foreign reserves today means higher import prices tomorrow.\n\nFiscal management isn't just abstract economics in Nairobi; it directly determines the cost of living in your local market.\n\nKwa ufupi: Akiba ya fedha za kigeni katika Benki Kuu imepungua kwa shilingi bilioni 85. Hali hii inaweka shinikizo kwa shilingi ya Kenya na inaweza kuongeza gharama za bidhaa zinazotoka nje, kama mafuta na pembejeo za kilimo. Ni lazima tudai uwajibikaji katika matumizi ya fedha za umma ili kulinda uchumi wetu.\n\nThis is Kenya on Record.",
-    "voice_note": "Hujambo. Here is something important you need to track this week. The Central Bank of Kenya has recorded an 85 billion shilling drop in foreign exchange reserves. That sounds like high-level finance, but here is what it means on the ground: Kenya imports heavy essentials like fuel, fertilizer, and raw manufacturing materials using US dollars. When our national dollar reserves shrink, the shilling comes under pressure and loses value. Importers pay more, and that cost lands squarely on your family budget through higher prices for food, fuel, and transport. When you see life getting tighter in the coming weeks, remember it started with these reserve figures. Share this voice note with your chama and family groups so everyone understands what is driving these price changes.",
-    "sms": "Usiibiwe Tip: CBK foreign reserves fell by Sh85B. A weaker shilling means higher prices for imported fuel, oil & farm inputs. Demand budget discipline.",
-    "reels": "Central Bank reserves just dropped by 85 billion shillings. Why does that hit your pocket? Because Kenya imports fuel, medicine, and fertilizer using US dollars. When reserves shrink, the shilling weakens, driving up import costs. That means higher prices at the pump and in the supermarket. Every economic decision at the top directly impacts your daily budget. Keep your eyes open and stay informed with Kenya on Record."
+    "radio": "Jambo listener, welcome to Kenya on Record. Today we are looking at our national football team, Harambee Stars. Every time our players step onto the pitch, millions of Kenyans stand behind them, expecting results. But we cannot continue asking athletes to perform miracles while ignoring the background reality: inadequate administrative support, delayed logistics, and substandard camp conditions.\n\nHigh performance in sports requires professional standards long before match day. You cannot underfund team preparations, delay allowances, and handle camp logistics late, then act surprised when results fall short. Our players commit their time, sweat, and pride to represent the flag, but administration is where success is engineered. Accountability in Kenyan sports governance means ensuring that resources allocated for team preparation actually serve the players on time.\n\nIt is time we hold the sports ministry and federation officials accountable for poor planning instead of placing the entire burden of failure on the pitch. If we want Harambee Stars to compete at the highest level, proper camp conditions and transparent administration must be guaranteed.\n\nKwa ufupi: Harambee Stars hawawezi kupata matokeo mazuri uwanjani ikiwa usimamizi na hali ya kambi ya mazoezi bado ni duni. Ni lazima tuwajibishe viongozi wa michezo ili wachezaji wetu wapewe maandalizi na usaidizi unaofaa kabla ya mechi.",
+    "voice_note": "Bana, bad habits of blaming Harambee Stars every time results don't go our way need to stop if we aren't looking at what happens behind the scenes. How do we expect top performance on the pitch when camp conditions are poor, allowances are delayed, and logistics are rushed at the last minute? Talent alone cannot beat solid preparation. Our national team deserves proper administrative support and professional camp management well before match day. Accountability in Kenyan sports means holding the federation and ministry responsible for administration failures, not just criticizing players. Share this voice note—sports governance must step up for our team.",
+    "sms": "Usiibiwe: Harambee Stars performance starts with good governance. Demand full accountability and timely funding for player camps from sports officials.",
+    "reels": "We demand victory from Harambee Stars, but how can players deliver on the pitch when basic administrative support is lacking? From delayed allowances to substandard camp conditions, poor sports governance ruins national talent. High performance requires professional preparation long before match day. Let us hold sports officials accountable for administration and player welfare. Good results start off the pitch."
   },
   "spend_usd": 0.0
 }
