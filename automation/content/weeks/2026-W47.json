@@ -2792,13 +2792,116 @@
       "reel": true,
       "tg_msg": 1394,
       "photo_checked": "2026-11-21T07:21:24.501075+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1121",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Consumers",
+      "line": "Kenya’s foreign exchange reserves fell by *Sh85 billion* as import cover dropped.",
+      "fact": "Central Bank data shows reserves dropped by Sh85 billion, reducing cover for key imports.",
+      "source": "People Daily, 2026-11-21",
+      "photo_query": "Central Bank of Kenya Nairobi",
+      "message": "A Sh85 billion drop in CBK foreign reserves puts fresh pressure on the shilling and import prices.",
+      "action": "Track fuel and commodity import prices on the CBK weekly bulletin at cbk.go.ke",
+      "who": "Central Bank of Kenya",
+      "where": "National",
+      "when": "21 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "A smaller import reserve buffer risks higher prices for fuel, medicine and food.",
+      "beats": [
+        "Kenya’s foreign exchange reserves fell by *Sh85 billion* this month.",
+        "The Central Bank reported a sharp decline in national *import cover*.",
+        "A drop in reserves threatens the shilling and raises *import costs*.",
+        "Have you noticed imported goods getting more expensive this month?"
+      ],
+      "caption": "The Central Bank reports that our foreign exchange reserves dropped by Sh85 billion, shrinking import cover.\n\nLower reserves weaken our buffer against rising prices for fuel, fertiliser and medicine.\n\nHave you noticed imported goods getting more expensive this month?\n\n#CostOfLiving #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-21T14:15:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Rising cooking fuel costs push up daily expenses for millions of Kenyan households."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "CBK: Kenya’s foreign reserves drop by Ksh85 billion as import cover declines",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWUpHN2trVzBiWmFnVi1qSzBkTGdGbkc5VEdJTmdwT3RuVFBwM05UajRpSTdSNkpzWFd6ZUVHMDJvNlRELUVpRWpPX0M2VzBfbGtBTC1OZmRuZHprMXhYWEVmZEtBeGF6ZTJUUUdVUXRsQmNQN2dtdXdDLV95SzRVMkU0c21faWczdld5SnBKYXdEd1RtaVo3b1lJbGkxODQzQy1Ib1hpUnQ5VDNaSm1VRA?oc=5",
+          "published": "2026-11-21"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Investors will watch the trajectory over the next few weeks",
+          "speaker": "Ochieng",
+          "context": "“Investors will watch the trajectory over the next few weeks,” Ochieng added. “If reserves stabilise or rebuild through export receipts, remittances or concessional inflows, the impact on sentiment should remain limited.”",
+          "outlet": "People Daily",
+          "link": "https://peopledaily.digital/business/cbk-kenyas-foreign-reserves-drop-by-ksh85-billion-as-import-cover-declines"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.2/10. Use a specific real person, date, or document name instead of generic textbook phrases like 'Kenya's foreign exchange reserves'."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 5,
+        "craft": 4,
+        "picture": 4,
+        "hold": 5,
+        "demand": 3,
+        "action": 2,
+        "fair": 7,
+        "impact": 5,
+        "human": 2,
+        "avg": 4.2,
+        "note": "Use a specific real person, date, or document name instead of generic textbook phrases like 'Kenya's foreign exchange reserves'."
+      },
+      "drafted_at": "2026-11-21T09:47:47.630198+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1121-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129201-kenyan-shilling-nears-ksh130-against-us-dollar-pound-hits-ksh175",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1121-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1121-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Kenyan Shilling Holds Against U.S. Dollar as Pound, Euro Gain - CBK"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Inside World Bank-Funded Plan to Bring AI Into Kenyan Schools"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Co-op Bank Wins Award After Ksh4.39 Billion Water Financing"
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1398
     }
   ],
   "scripts": {
-    "radio": "Habari zenu na karibuni kwa Kenya on Record. Today, we are looking at an issue that directly affects every single kitchen across the country: the rising cost of cooking fuel.\n\nWhether you rely on LPG gas, kerosene, or charcoal, preparing a basic family meal has become an increasingly expensive affair. Over recent months, the cost of refilling a standard six-kilogram or thirteen-kilogram gas cylinder has steadily climbed, driven up by taxes, import levies, and supply chain pressures. For a household living on a daily wage, this is not a minor inconvenience—it forces painful trade-offs. Families are being pushed to cut down on essential food items just to afford the fuel needed to cook them, or worse, returning to unclean fuels that endanger their health.\n\nAccess to clean, affordable cooking energy should not be a privilege reserved for a few; it is a basic necessity. While international market forces play a role, our policy makers and energy regulators must be transparent about the local tax structures and margins added to essential household utilities. We cannot speak of economic progress when the cost of boiling a simple pot of food is out of reach for millions.\n\nHapa ni muhtasari wa mada hii kwa Kiswahili:\n\nGharama ya gesi na mafuta ya kupikia inazidi kupanda na kulemea wananchi wengi nchini. Ni lazima serikali na Mamlaka ya EPRA ziangalie upya kodi na tozo zinazoongeza mzigo huu jikoni. Kupika chakula hakufai kuwa anasa kwa Mkenya yeyote.\n\nThis is Kenya on Record. Let us keep asking the right questions.",
-    "voice_note": "Good morning everyone, quick update from Kenya on Record this week. Have you noticed how much more you are spending just to refill your gas cylinder lately? A standard six-kilogram refill is taking a significantly larger chunk out of the weekly budget, and it is hitting families hard. When cooking fuel goes up, the price of prepared food at local kiosks and neighborhood eateries goes up too. We need to start asking our representatives and EPRA hard questions about the tax components driving up domestic fuel prices. Clean energy shouldn't be a luxury item in Kenya. Share your thoughts in the group and let's keep track of these numbers together.",
-    "sms": "Usiibiwe Tip: Always verify gas cylinder weight & safety seals at purchase. Check EPRA capped maximum prices to avoid overcharging. Demand a official receipt.",
-    "reels": "Refilling a gas cylinder shouldn't feel like a major financial burden. Rising cooking fuel prices are squeezing Kenyan households to the limit, forcing families to choose between buying food or buying the fuel to cook it. Clean energy is a necessity, not a luxury. We need full transparency on the taxes driving up these costs. Follow Kenya on Record."
+    "radio": "Good morning listener, welcome to Kenya on Record. Today we need to talk about your pocket and a serious figure coming straight from the Central Bank of Kenya. CBK reserves have dropped by a staggering 85 billion shillings.\n\nNow, why should this matter to a mama mboga, a farmer, or anyone running a small business? \n\nForeign reserves act as our country’s emergency savings account in hard currency, mainly US dollars. We use these dollars to import vital everyday goods—like petrol, diesel, cooking oil, medicine, and fertilizer. When our reserve cushion drops this sharply, it places heavy pressure on the Kenyan shilling. \n\nWhen the shilling weakens against the dollar, importers pay more to bring goods into the country. Naturally, those extra costs are passed down to you at the shop counter. A hit on foreign reserves today means higher import prices tomorrow.\n\nFiscal management isn't just abstract economics in Nairobi; it directly determines the cost of living in your local market.\n\nKwa ufupi: Akiba ya fedha za kigeni katika Benki Kuu imepungua kwa shilingi bilioni 85. Hali hii inaweka shinikizo kwa shilingi ya Kenya na inaweza kuongeza gharama za bidhaa zinazotoka nje, kama mafuta na pembejeo za kilimo. Ni lazima tudai uwajibikaji katika matumizi ya fedha za umma ili kulinda uchumi wetu.\n\nThis is Kenya on Record.",
+    "voice_note": "Hujambo. Here is something important you need to track this week. The Central Bank of Kenya has recorded an 85 billion shilling drop in foreign exchange reserves. That sounds like high-level finance, but here is what it means on the ground: Kenya imports heavy essentials like fuel, fertilizer, and raw manufacturing materials using US dollars. When our national dollar reserves shrink, the shilling comes under pressure and loses value. Importers pay more, and that cost lands squarely on your family budget through higher prices for food, fuel, and transport. When you see life getting tighter in the coming weeks, remember it started with these reserve figures. Share this voice note with your chama and family groups so everyone understands what is driving these price changes.",
+    "sms": "Usiibiwe Tip: CBK foreign reserves fell by Sh85B. A weaker shilling means higher prices for imported fuel, oil & farm inputs. Demand budget discipline.",
+    "reels": "Central Bank reserves just dropped by 85 billion shillings. Why does that hit your pocket? Because Kenya imports fuel, medicine, and fertilizer using US dollars. When reserves shrink, the shilling weakens, driving up import costs. That means higher prices at the pump and in the supermarket. Every economic decision at the top directly impacts your daily budget. Keep your eyes open and stay informed with Kenya on Record."
   },
   "spend_usd": 0.0
 }
