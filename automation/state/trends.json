@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-21T09:32:00.084372+00:00",
+  "fetched": "2026-11-21T09:55:11.725604+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,14 +7,14 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "Kenya School of Law names Rodgers Manana new CEO",
-          "url": "https://www.the-star.co.ke/news/2026-11-21-ksl-appoints-rodgers-manana-as-new-ceo",
-          "source": "The Star, Kenya"
-        },
-        {
           "title": "KSL Appoints New CEO",
           "url": "https://www.kenyans.co.ke/news/129563-ksl-appoints-rodgers-manana-new-ceo-and-director",
           "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Kenya School of Law names Rodgers Manana new CEO",
+          "url": "https://www.the-star.co.ke/news/2026-11-21-ksl-appoints-rodgers-manana-as-new-ceo",
+          "source": "The Star, Kenya"
         },
         {
           "title": "Dr Rodgers Wanyonyi Manana appointed Kenya School of Law CEO",
@@ -73,9 +73,9 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Haraldsson, Giroud ou Ueda en pointe ? Les compositions probables pour LOSC – OL",
-          "url": "https://lepetitlillois.com/2026/11/21/haraldsson-giroud-ueda-compositions-probables-losc-ol/",
-          "source": "Le Petit Lillois"
+          "title": "LOSC – OL. Les prédictions du choc selon Opta",
+          "url": "https://sportune.20minutes.fr/business/losc-ol-les-predictions-du-choc-selon-opta-417654",
+          "source": "Sportune"
         },
         {
           "title": "Avec son nouvel entraîneur Carlos Vicens, Lyon veut éviter les turbulences lors du choc à Lille",
@@ -108,6 +108,28 @@
           "title": "Pochettino demands say on big United decisions; Arteta takes fantasy football action – as it happened",
           "url": "https://www.theguardian.com/football/live/2026/nov/20/weekend-football-countdown-live-news-updates?page=with%3Ablock-6b002c4c8f083b93122af70f",
           "source": "The Guardian"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "como vs cagliari",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Como-Cagliari: regresa Chalobah y Fabregas confirma cuatro bajas",
+          "url": "https://www.tufutbolero.com/novedades/como-cagliari-regresa-chalobah-y-fabregas-confirma-cuatro-ba-d117a1",
+          "source": "Tu Futbolero"
+        },
+        {
+          "title": "Como 1907 y Cagliari se encuentran en la fecha 12",
+          "url": "https://anecdotarios.com/2026/11/20/como-1907-vs-cagliari-previa-horario-y-como-llegan-para-la-fecha-12/",
+          "source": "Anecdotarios"
+        },
+        {
+          "title": "Alineaciones de Como contra Cagliari",
+          "url": "https://rcdm.es/alineaciones-de-como-contra-cagliari/",
+          "source": "rcdm.es"
         }
       ]
     },
@@ -146,10 +168,6 @@
     {
       "title": "ken wa maria road accident",
       "why": "unsafe: 'accident'"
-    },
-    {
-      "title": "chelsea vs leeds",
-      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
