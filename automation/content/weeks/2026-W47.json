@@ -3833,7 +3833,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "weak: editor scored 6.5/10. Demand score of 3 is too low since item 3 is in the required top-5 news list."
