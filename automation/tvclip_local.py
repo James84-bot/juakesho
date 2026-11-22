@@ -60,6 +60,15 @@ def week_labels(now: dt.datetime) -> list[str]:
 
 STATIONS = ("citizen tv", "ntv kenya", "ktn news", "k24 tv", "kbc channel 1", "tv47", "inooro tv", "kameme tv",
             "ramogi tv", "citizen digital", "nation", "the standard")   # Kenyan newsrooms' own YouTube channels
+# Public bodies' own channels (James, 2026-11-22: "public-body footage" and short TV quotes). Matched by channel id,
+# never by name, so a look-alike channel can't pass. Their footage is preferred over a station's: no ticker, no banner.
+PUBLIC_BODIES = {
+    "UCXuseB7juWB7DIgTJcwtHFQ": "Parliament of Kenya",
+    "UCuNsouEfEq9Sh6tapfg4uRA": "State House Kenya",
+    "UCsvueRDxFNSqVNa-ANmfhXQ": "Kenya Judiciary",
+    "UCoItCstaFhOqYDi-Xvy7g3Q": "The National Treasury - Kenya",
+    "UCc7UqCReSD6d73rVHXIV2QQ": "IEBC Kenya",
+}
 STOP = set("the a an and or of to in on for at by with from as is are was were be been has have had it its this that "
            "these those our your their his her they we you kenya kenyan kenyans now new over after into says said "
            "all six five four three two one first last days day week weeks case cases marked without more less "
@@ -102,12 +111,25 @@ def search_clip(post: dict, ff: str, days: int = 3) -> dict | None:
         entries = json.loads(r.stdout or "{}").get("entries") or []
     except ValueError:
         return None
+    return pick_clip(entries, post)
+
+
+def pick_clip(entries: list[dict], post: dict) -> dict | None:
+    """The first matching upload from a public body's own channel, else the first from a station. None if neither."""
+    station = None
     for e in entries:
-        channel = str(e.get("channel") or e.get("uploader") or "")
-        if channel.lower().startswith(STATIONS) and matches(str(e.get("title") or ""), post):
-            return {"url": e.get("webpage_url") or f"https://www.youtube.com/watch?v={e.get('id')}",
-                    "channel": channel, "title": str(e.get("title") or "")}
-    return None
+        if not matches(str(e.get("title") or ""), post):
+            continue
+        body = PUBLIC_BODIES.get(str(e.get("channel_id") or ""))
+        channel = body or str(e.get("channel") or e.get("uploader") or "")
+        if not (body or channel.lower().startswith(STATIONS)):
+            continue
+        clip = {"url": e.get("webpage_url") or f"https://www.youtube.com/watch?v={e.get('id')}",
+                "channel": channel, "title": str(e.get("title") or "")}
+        if body:
+            return clip
+        station = station or clip
+    return station
 
 
 def wanted(posts: list[dict], done: set[str], now: dt.datetime) -> list[dict]:

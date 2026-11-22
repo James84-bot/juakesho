@@ -35,6 +35,19 @@ class Helper(unittest.TestCase):
         self.assertFalse(tl.matches("Kenya marks 18 days without rain", ebola))   # topic words alone never match
         # this is only the first sieve: the server's same-event check (pipeline.same_event) decides
 
+    def test_a_public_body_upload_wins_and_is_known_by_its_channel_id_only(self):
+        p = {"message": "FKF expels McDonald Mariga and six officials after Meru chaos."}
+        title = "FKF expels Mariga and six officials"
+        station = {"id": "s", "channel": "Citizen TV Kenya", "channel_id": "UChBQgieUidXV1CmDxSdRm3g", "title": title}
+        fake = {"id": "f", "channel": "Parliament of Kenya", "channel_id": "UCnotTheRealOne", "title": title}
+        real = {"id": "r", "channel": "Parliament of Kenya", "channel_id": "UCXuseB7juWB7DIgTJcwtHFQ", "title": title}
+        other = {"id": "o", "channel": "Some Blog", "channel_id": "UCblog", "title": title}
+        self.assertEqual(tl.pick_clip([station, fake, real], p)["channel"], "Parliament of Kenya")
+        self.assertIn("v=r", tl.pick_clip([station, fake, real], p)["url"])
+        self.assertIn("v=s", tl.pick_clip([fake, station], p)["url"])     # a look-alike name is not a public body
+        self.assertIsNone(tl.pick_clip([fake, other], p))
+        self.assertIsNone(tl.pick_clip([dict(real, title="Budget committee sitting")], p))   # still must match
+
     def test_reads_this_week_and_on_sunday_the_next(self):
         self.assertEqual(tl.week_labels(dt.datetime(2026, 11, 7, 10, tzinfo=tl.EAT)), ["2026-W45"])
         self.assertEqual(tl.week_labels(dt.datetime(2026, 11, 8, 20, tzinfo=tl.EAT)), ["2026-W45", "2026-W46"])
