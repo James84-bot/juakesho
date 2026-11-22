@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-22T05:42:08.246166+00:00",
+  "fetched": "2026-11-22T06:07:10.403059+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -42,6 +42,28 @@
           "title": "Why some Kenyan banks are paying more for deposits while others hold their rates down",
           "url": "https://techtrendske.co.ke/2026/11/21/kenyan-bank-fixed-deposit-rates/",
           "source": "TechTrendsKE"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "f1",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Las Vegas Grand Prix practice, qualifying and race times, UK times, plus weather forecast",
+          "url": "https://www.bbc.com/sport/formula1/articles/cx4gnlr603mqo",
+          "source": "BBC"
+        },
+        {
+          "title": "Las Vegas Grand Prix",
+          "url": "https://www.reutersconnect.com/item/las-vegas-grand-prix/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQk0wRDZHSzA",
+          "source": "Reuters Connect"
+        },
+        {
+          "title": "Las Vegas F1 GP Auto Racing",
+          "url": "https://www.corsicanadailysun.com/sports/national_sports/las-vegas-f1-gp-auto-racing/image_83a6eaf1-f577-56f3-b055-796a027da05e.html",
+          "source": "Corsicana Daily Sun"
         }
       ]
     },
@@ -113,28 +135,6 @@
     },
     {
       "geo": "KE",
-      "title": "f1",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "F1 LIVE: Las Vegas Grand Prix 2026 times, results & radio",
-          "url": "https://www.bbc.com/sport/formula1/live/c62ke5vgxxnt",
-          "source": "BBC"
-        },
-        {
-          "title": "F1 Las Vegas GP LIVE: Race updates, results, stream and highlights from 21st round of 2026 Formula 1 season in USA",
-          "url": "https://www.skysports.com/f1/live-blog/13615079/f1-las-vegas-gp-live-race-updates-results-stream-and-highlights-from-21st-round-of-2026-formula-1-season-in-usa",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Antonelli quickest in Las Vegas GP Qualifying as Verstappen inherits pole position",
-          "url": "https://www.formula1.com/en/latest/article/antonelli-quickest-in-las-vegas-gp-qualifying-as-verstappen-inherits-pole-position.6R7udh8iYMHunSOGI6zStK",
-          "source": "Formula 1"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "safaricom",
       "traffic": "100+",
       "news": [
@@ -158,15 +158,15 @@
   ],
   "dropped": [
     {
+      "title": "hull city vs brighton",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "inter miami vs columbus",
       "why": "unsafe: 'Odds'"
     },
     {
       "title": "lille fc",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "brighton",
       "why": "unsafe: 'Betting'"
     }
   ],

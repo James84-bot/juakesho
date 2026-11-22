@@ -3195,13 +3195,102 @@
       "auto": true,
       "decided_at": "2026-11-22T06:47:11.208899+03:00",
       "photo_checked": "2026-11-22T07:21:41.546520+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1122",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Put Us On",
+      "line": "Bien drops his *17-track* album Alusa Continua with 2 Chainz and Oxlade.",
+      "fact": "Bien released his 17-track album Alusa Continua featuring 2 Chainz, Oxlade, and Joshua Baraka.",
+      "source": "KBC Digital, 2026-11-20",
+      "message": "Kenyan artists can secure top global features while keeping their authentic sound.",
+      "action": "Stream Alusa Continua on your music app and send your top track to a friend.",
+      "photo_query": "concert stage Nairobi",
+      "who": "Bien Aime Baraza",
+      "where": "Nairobi",
+      "when": "20 Nov 2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Kenyan pop music expands its global reach through direct artist collaborations.",
+      "beats": [
+        "Bien dropped his *17-track* album Alusa Continua with 2 Chainz and Oxlade.",
+        "The project connects Nairobi, Lagos, Kampala, and Atlanta on one record.",
+        "Kenyan artists are now securing global features on their own terms.",
+        "Which track on Alusa Continua are you streaming first?"
+      ],
+      "caption": "Kenyan sound on the world stage. Bien dropped his 17-track album Alusa Continua, featuring 2 Chainz, Oxlade, and Joshua Baraka.\n\nSend this to a friend who needs fresh music today.\n\nWhich track are you playing first?\n\n#Bien #AlusaContinua #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-22T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Cancer patients will no longer face halted treatment when their SHA benefits run out."
+      ],
+      "source_links": [
+        {
+          "outlet": "KBC Digital",
+          "title": "Bien ropes in 2Chains, Oxlade, Joshua Baraka in new 17-track album ‘Alusa Continua’",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQVdfLXkzUlN4X1BPR3VpUGlpcERPNEpKNG8zQk1zNEFDVUY0NGljdUNpZGxxc0JobE1GZGNDMWN3SktBOGxLcmluZnFUaExpX2RsMndaMkVWMEZtOEhTcjM0aGtTeGFHUm02cTN3TjlJNkFwdmtjclVYTXB0XzBGSFlXOGFuVVc3eVA3RmVTd2tZaTM1MHFsUDdlZWJvZkxDcXRZZw?oc=5",
+          "published": "2026-11-20"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.6/10. Match the post to one of the active demand items from this week's news list."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 5,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 1,
+        "action": 5,
+        "fair": 5,
+        "impact": 5,
+        "human": 4,
+        "avg": 4.6,
+        "note": "Match the post to one of the active demand items from this week's news list."
+      },
+      "drafted_at": "2026-11-22T09:09:12.292567+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1122-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke · File photo: KBC",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129188-lsk-stage-protests-vigilance-house-over-abduction-lawyer-abshir-abdi",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1122-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Lawyers Stage Protests in Nairobi CBD Over Abduction Saga"
+        },
+        {
+          "credit": "File photo: KBC",
+          "title": "Berlin collective, Keinemusic, lands in Kenya ahead of weekend concert"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/videos/2026-w47-hot-1122-broll.mp4",
+      "broll_credit": "Footage: Coverr-Free-Footage / Pixabay",
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1432
     }
   ],
   "scripts": {
-    "radio": "Jambo and welcome back to Kenya on Record, your trusted segment for citizen rights and public accountability. This week, we are tracking a crucial development in public healthcare that directly impacts thousands of Kenyan families.\n\nFor a long time, one of the most painful issues under national health cover was what happened when a cancer patient’s benefit limit ran out mid-treatment. Chemotherapy or radiotherapy would simply stop unless the family paid out of pocket. In oncology, interrupted care often means starting afresh or facing severe health risks.\n\nThe government has now announced that cancer patients will no longer face halted treatment once their SHA benefits are exhausted. Healthcare facilities are expected to maintain continuity of care regardless of benefit depletion.\n\nThis is a vital safeguard, but policy on paper must match reality on the ground. If you or a relative are receiving cancer care under SHA, know that hospitals are mandated not to interrupt your sessions over depleted benefit caps. We must monitor our local public and private facilities to ensure this directive is strictly enforced.\n\nKwa ufupi: Serikali imetangaza kuwa wagonjwa wa saratani hawatasitishiwa matibabu hata kama kiwango cha bima ya SHA kitatamatika. Ni haki yako kupata matibabu yanayoendelea bila kukatiziwa. Fuatilia hospitali yako kuhakikisha wanazingatia agizo hili.\n\nStay informed, stay vigilant, and let us hold our public health system accountable together.",
-    "voice_note": "Habari, quick update from Kenya on Record for your week. If you have a relative or friend undergoing cancer treatment under SHA, please listen closely and share this.\n\nPreviously, when your SHA benefit limit was reached, facilities would pause chemo or radiation until cash was paid. That policy has changed: cancer treatment will no longer be halted even when your SHA benefits run out. Continuous care is now required.\n\nIf a facility tries to stop treatment mid-cycle claiming your SHA cover is empty, know your rights and lodge a complaint with the health authority. Healthcare is a right, not a favor. Forward this to anyone who needs to know today.",
-    "sms": "Usiibiwe: Cancer treatment under SHA must not be halted even if your limit runs out. Hospitals cannot deny care mid-treatment. Know your rights.",
-    "reels": "If you or a loved one is fighting cancer under SHA, this update matters. Cancer treatment will no longer be halted when your benefit limit runs out. Hospitals are now required to maintain continuous care without interruption. Know your rights, do not let any facility turn you away, and help us hold the health system accountable. Follow Kenya on Record."
+    "radio": "Good evening listeners, welcome to Kenya on Record, bringing you clarity on the issues that shape our culture and economy. Under Sauti this week, we highlight a huge milestone for the Kenyan creative sector. Bien has dropped a massive 17-track album, featuring major international artists and taking our local sound directly to the global stage.\n\nThis isn't just about catchy melodies; it shows what happens when technical quality meets strategic collaboration. For years, Kenyan artists fought for airplay locally. Today, our musicians are commanding international streaming platforms and exporting authentic Kenyan culture.\n\nBut as we celebrate Bien’s win, accountability remains essential. A thriving music industry requires transparent royalty collection, functional CMOs, and strict protection of intellectual property rights for upcoming creatives. Winning globally means nothing if young artists at home are still shortchanged by poorly managed institutions. We must build structures that match the talent we are producing.\n\nKwa ufupi: Muziki wa Kenya umezidi kukuwa kimataifa huku Bien akitoa albamu ya nyimbo 17 iliyoshirikisha wasanii mashuhuri duniani. Ni wakati wa kusherehekea kipaji chetu, huku tukihakikisha mashirika ya mrahaba yanawajibika ili kila msanii apate haki yake.",
+    "voice_note": "Hey family, hope your week is off to a good start. Quick update from Kenya on Record under our Sauti segment. Bien just dropped a solid 17-track album featuring major international acts, proving once again that Kenyan music is ready for the global stage. It’s a big win for our creative economy, but it also brings up a key point: as our sound expands globally, our local industry governance needs to step up. Are royalty bodies paying creators on time? Are split sheets being honored? Bien has shown us what’s possible on the world stage, but we need transparent systems to make sure every young creative in Kenya actually earns from their talent. Stream the music, support local, and let’s keep holding the creative sector accountable.",
+    "sms": "Usiibiwe tip: As Kenyan music goes global, register your original works with KECOBO and copyright bodies to safeguard your earnings and royalties.",
+    "reels": "From Nairobi to the world! Bien has just dropped a landmark 17-track album loaded with international collaborations, proving that Kenyan sound has no limits. But going global requires standard structures back home—fair royalty payouts, clear split sheets, and intellectual property protection. Our talent is world-class; now our institutions must catch up. Stream local, protect the craft. This is Kenya on Record."
   },
   "spend_usd": 0.0
 }
