@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T06:37:57.023968+03:00",
+  "updated": "2026-11-22T14:57:57.545957+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -41,30 +41,30 @@
       "avg_watch_s": 4.3
     },
     {
-      "id": "2026-w47-hot-1119e",
+      "id": "2026-w44-hot-1026b1432",
       "series": "sauti",
       "lane": "everyone",
-      "score": 9.7,
-      "opening": "Kenya saved Sh1.5 billion by printing national exam papers locally.",
-      "reach": 8,
-      "saved": 1,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 9.6
-    },
-    {
-      "id": "2026-w45-hot-1104m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.5,
-      "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
-      "reach": 15,
+      "score": 9.3,
+      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
+      "reach": 24,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 3,
-      "avg_watch_s": 8.4
+      "avg_watch_s": 6.9
+    },
+    {
+      "id": "2026-w44-hot-1101",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 9.3,
+      "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
+      "reach": 24,
+      "saved": 1,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 5.9
     }
   ],
   "bottom": [
@@ -74,12 +74,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "reach": 25,
+      "reach": 26,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.8
+      "avg_watch_s": 5.6
     },
     {
       "id": "2026-w47-hot-1120",
@@ -100,7 +100,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya coach Benni McCarthy demands overdue payments.",
-      "reach": 15,
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -147,32 +147,6 @@
       "comments": 0,
       "likes": 2,
       "avg_watch_s": 4.3
-    },
-    {
-      "id": "2026-w47-hot-1119e",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.7,
-      "opening": "Kenya saved Sh1.5 billion by printing national exam papers locally.",
-      "reach": 8,
-      "saved": 1,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 9.6
-    },
-    {
-      "id": "2026-w45-hot-1104m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.5,
-      "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
-      "reach": 15,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 8.4
     },
     {
       "id": "2026-w44-hot-1026b1432",
@@ -243,9 +217,9 @@
       "id": "2026-w47-d5-straight-r3",
       "series": "straight",
       "lane": "hustle",
-      "score": 7.6,
+      "score": 7.5,
       "opening": "A fake front page claims Matiang'i leads polls.",
-      "reach": 97,
+      "reach": 98,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -279,19 +253,6 @@
       "avg_watch_s": 4.5
     },
     {
-      "id": "2026-w44-hot-1027",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 6.0,
-      "opening": "EACC recovers a 2.7-acre school playground after court ruling.",
-      "reach": 35,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 6.8
-    },
-    {
       "id": "2026-w47-hot-1119m-r2",
       "series": "sauti",
       "lane": "everyone",
@@ -310,12 +271,12 @@
       "lane": "everyone",
       "score": 5.5,
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "reach": 61,
+      "reach": 62,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 5.0
+      "avg_watch_s": 4.9
     },
     {
       "id": "2026-w45-hot-1102m",
@@ -357,19 +318,6 @@
       "avg_watch_s": 4.8
     },
     {
-      "id": "2026-w46-d7-glasspoll",
-      "series": "glasspoll",
-      "lane": "everyone",
-      "score": 3.2,
-      "opening": "Opposition leaders are moving to consolidate regional support.",
-      "reach": 17,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 3.7
-    },
-    {
       "id": "2026-w44-hot-1026",
       "series": "sauti",
       "lane": "everyone",
@@ -407,6 +355,19 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 4.1
+    },
+    {
+      "id": "2026-w46-d7-glasspoll",
+      "series": "glasspoll",
+      "lane": "everyone",
+      "score": 3.1,
+      "opening": "Opposition leaders are moving to consolidate regional support.",
+      "reach": 18,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 3.7
     },
     {
       "id": "2026-w44-d2-kenya-r2",
@@ -487,19 +448,6 @@
       "avg_watch_s": 8.5
     },
     {
-      "id": "2026-w46-hot-1109m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 2.8,
-      "opening": "Kenya won two gold medals on the track in Dakar.",
-      "reach": 59,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 4.4
-    },
-    {
       "id": "2026-w45-d6-kenya",
       "series": "kenya",
       "lane": "everyone",
@@ -550,19 +498,6 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 3.1
-    },
-    {
-      "id": "2026-w46-hot-1113b2340",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 2.4,
-      "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "reach": 121,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 5.2
     },
     {
       "id": "2026-w46-hot-1114m",
@@ -669,19 +604,6 @@
       "avg_watch_s": 5.4
     },
     {
-      "id": "2026-w46-hot-1110e",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "The National Treasury hides a secret IMF graft report.",
-      "reach": 25,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 4.1
-    },
-    {
       "id": "2026-w46-hot-1111b1557",
       "series": "sauti",
       "lane": "everyone",
@@ -706,19 +628,6 @@
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 10.3
-    },
-    {
-      "id": "2026-w46-hot-1113m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Auditor-General Nancy Gathungu flagged 269 sites.",
-      "reach": 28,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 4.4
     },
     {
       "id": "2026-w46-hot-1115",
@@ -752,51 +661,25 @@
       "lane": "young_pro",
       "score": 0.0,
       "opening": "Lamu Old Town has been continuously lived in for 700 years.",
-      "reach": 22,
+      "reach": 23,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.8
+      "avg_watch_s": 2.9
     },
     {
-      "id": "2026-w47-hot-1116",
-      "series": "sauti",
-      "lane": "everyone",
+      "id": "2026-w47-d6-kenya",
+      "series": "kenya",
+      "lane": "diaspora",
       "score": 0.0,
-      "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "reach": 12,
+      "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
+      "reach": 26,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 6.3
-    },
-    {
-      "id": "2026-w47-hot-1116m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "EACC wants Sh40.3 million back from a roads boss.",
-      "reach": 13,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 4.3
-    },
-    {
-      "id": "2026-w47-hot-1117e",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "The World Bank warned Kenya over billion-shilling corruption losses.",
-      "reach": 11,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 3.8
+      "avg_watch_s": 2.9
     },
     {
       "id": "2026-w47-hot-1117",
@@ -817,12 +700,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
-      "reach": 16,
+      "reach": 17,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.4
+      "avg_watch_s": 2.6
     },
     {
       "id": "2026-w47-hot-1118e-r2",
@@ -843,12 +726,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Mobile money deals fell despite 97 million active SIM lines in Kenya.",
-      "reach": 11,
+      "reach": 12,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.8
+      "avg_watch_s": 5.5
     },
     {
       "id": "2026-w47-hot-1119",
@@ -874,7 +757,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.4
+      "avg_watch_s": 5.8
     },
     {
       "id": "2026-w47-hot-1120m",
@@ -882,12 +765,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya will distribute 10.79 million mosquito nets across 18 counties.",
-      "reach": 45,
+      "reach": 47,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.4
+      "avg_watch_s": 4.3
     },
     {
       "id": "2026-w47-hot-1120b0841",
@@ -895,12 +778,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "reach": 25,
+      "reach": 26,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.8
+      "avg_watch_s": 5.6
     },
     {
       "id": "2026-w47-hot-1120",
@@ -921,7 +804,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya coach Benni McCarthy demands overdue payments.",
-      "reach": 15,
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -934,7 +817,7 @@
       "id": "2026-w47-hot-1119b1743",
       "series": "sauti",
       "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
-      "views": 1158,
+      "views": 1162,
       "likes": 3,
       "comments": 0
     },
@@ -947,18 +830,10 @@
       "comments": 0
     },
     {
-      "id": "2026-w47-hot-1117e",
-      "series": "sauti",
-      "opening": "The World Bank warned Kenya over billion-shilling corruption losses.",
-      "views": 675,
-      "likes": 0,
-      "comments": 0
-    },
-    {
       "id": "2026-w47-hot-1118e-r2",
       "series": "sauti",
       "opening": "Rigathi Gachagua presented fresh demands to the IEBC chair.",
-      "views": 559,
+      "views": 560,
       "likes": 1,
       "comments": 0
     },
@@ -974,7 +849,7 @@
       "id": "2026-w47-hot-1118-r2",
       "series": "sauti",
       "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
-      "views": 515,
+      "views": 516,
       "likes": 1,
       "comments": 0
     },
@@ -1006,8 +881,8 @@
       "id": "2026-w47-hot-1120b0841",
       "series": "sauti",
       "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "views": 358,
-      "likes": 4,
+      "views": 366,
+      "likes": 5,
       "comments": 0
     },
     {
@@ -1024,22 +899,6 @@
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
       "views": 339,
       "likes": 0,
-      "comments": 0
-    },
-    {
-      "id": "2026-w46-hot-1109m",
-      "series": "sauti",
-      "opening": "Kenya won two gold medals on the track in Dakar.",
-      "views": 289,
-      "likes": 1,
-      "comments": 0
-    },
-    {
-      "id": "2026-w46-hot-1113b2340",
-      "series": "sauti",
-      "opening": "Harambee Stars held South Africa to a 2-2 draw in Johannesburg.",
-      "views": 281,
-      "likes": 1,
       "comments": 0
     },
     {
@@ -1115,27 +974,11 @@
       "comments": 0
     },
     {
-      "id": "2026-w47-hot-1116",
-      "series": "sauti",
-      "opening": "Bribery demands now hit 48% of medium-sized Kenyan businesses.",
-      "views": 143,
-      "likes": 1,
-      "comments": 0
-    },
-    {
       "id": "2026-w47-hot-1120",
       "series": "sauti",
       "opening": "Nairobi tech funding fell to a 6-year low this year.",
       "views": 138,
       "likes": 0,
-      "comments": 0
-    },
-    {
-      "id": "2026-w45-hot-1104m",
-      "series": "sauti",
-      "opening": "Citizen Digital reports: Corruption costs Kenya billions every year.",
-      "views": 132,
-      "likes": 1,
       "comments": 0
     },
     {
@@ -1155,18 +998,10 @@
       "comments": 0
     },
     {
-      "id": "2026-w47-hot-1119e",
-      "series": "sauti",
-      "opening": "Kenya saved Sh1.5 billion by printing national exam papers locally.",
-      "views": 119,
-      "likes": 0,
-      "comments": 0
-    },
-    {
       "id": "2026-w47-hot-1120a",
       "series": "sauti",
       "opening": "Kenya coach Benni McCarthy demands overdue payments.",
-      "views": 118,
+      "views": 119,
       "likes": 0,
       "comments": 0
     },
@@ -1235,17 +1070,9 @@
       "comments": 0
     },
     {
-      "id": "2026-w46-hot-1110e",
-      "series": "sauti",
-      "opening": "The National Treasury hides a secret IMF graft report.",
-      "views": 66,
-      "likes": 0,
-      "comments": 0
-    },
-    {
-      "id": "2026-w47-hot-1116m",
-      "series": "sauti",
-      "opening": "EACC wants Sh40.3 million back from a roads boss.",
+      "id": "2026-w47-d6-kenya",
+      "series": "kenya",
+      "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
       "views": 64,
       "likes": 0,
       "comments": 0
@@ -1315,14 +1142,6 @@
       "comments": 0
     },
     {
-      "id": "2026-w46-hot-1113m",
-      "series": "sauti",
-      "opening": "Auditor-General Nancy Gathungu flagged 269 sites.",
-      "views": 26,
-      "likes": 0,
-      "comments": 0
-    },
-    {
       "id": "2026-w47-d1-usiibiwe",
       "series": "usiibiwe",
       "opening": "Banks in Kenya warn that fake SMS alerts target mobile accounts.",
@@ -1334,7 +1153,7 @@
       "id": "2026-w46-d5-straight",
       "series": "straight",
       "opening": "Viral TikTok ads promise guaranteed jobs abroad.",
-      "views": 18,
+      "views": 21,
       "likes": 0,
       "comments": 0
     },

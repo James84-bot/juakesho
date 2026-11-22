@@ -1,25 +1,25 @@
 {
-  "fetched": "2026-11-22T11:42:12.899958+00:00",
+  "fetched": "2026-11-22T11:58:10.358524+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "birmingham city vs man utd",
-      "traffic": "200+",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "United Women's team to face Birmingham",
-          "url": "https://www.manutd.com/en/news/united-women-line-up-birmingham-wsl-22-november-2026",
-          "source": "Manchester United"
+          "title": "City vs Spurs: Kick-off time, teams news and TV information",
+          "url": "https://www.mancity.com/news/womens/city-vs-spurs-wsl-match-preview-2627-63930619",
+          "source": "Manchester City FC"
         },
         {
-          "title": "Birmingham vs Man United prediction: our WSL preview",
-          "url": "https://shekicks.net/birmingham-city-vs-manchester-united-betting-tips-our-wsl-prediction/",
-          "source": "SheKicks"
+          "title": "WSL: Man City host Spurs seeking to go top, Man Utd at Birmingham",
+          "url": "https://www.bbc.com/sport/football/live/c5y431zlw28mt",
+          "source": "BBC"
         },
         {
-          "title": "Eva Olid: Man United Women boss provides injury boost ahead of Birmingham City match",
-          "url": "https://thepeoplesperson.com/2026/11/21/eva-olid-confirms-anna-sandberg-return-for-man-united-women-323017/",
-          "source": "The Peoples Person"
+          "title": "WSL Sunday Predictions: Five Matches, Plenty of Value",
+          "url": "https://news.williamhill.com/football/wsl-predictions-and-betting-tips-for-sunday-22nd-november-2026/",
+          "source": "William Hill News"
         }
       ]
     },
@@ -42,28 +42,6 @@
           "title": "Kenyans to Start Paying Toll Fees on Thika Highway, 4 Other Busy Roads",
           "url": "https://www.tuko.co.ke/kenya/647319-kenyans-start-paying-toll-fees-southern-bypass-4-roads/",
           "source": "Tuko News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "barcelona vs villarreal",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Alineación posible del Barcelona ante el Villarreal hoy en LaLiga EA Sports",
-          "url": "https://as.com/futbol/posible-alineacion-del-barca-ante-el-villarreal-la-suplencia-de-cubarsi-lo-altera-todo-f202611-n/",
-          "source": "Diario AS"
-        },
-        {
-          "title": "Haz de Hansi Flick y elige la alineación del Barça",
-          "url": "https://www.lavanguardia.com/participacion/retos/20261122/11687957/haz-hansi-flick-elige-alineacion-barca.html",
-          "source": "La Vanguardia"
-        },
-        {
-          "title": "Barcelona vs Villarreal: Empieza el Tourmalet",
-          "url": "https://www.marca.com/futbol/barcelona/2026/11/22/barcelona-vs-villarreal-empieza-tourmalet.html",
-          "source": "MARCA"
         }
       ]
     },
@@ -135,6 +113,10 @@
     }
   ],
   "dropped": [
+    {
+      "title": "shabana vs mara sugar",
+      "why": "unsafe: 'BETTING'"
+    },
     {
       "title": "burnley vs blackburn rovers",
       "why": "unsafe: 'Betting'"
