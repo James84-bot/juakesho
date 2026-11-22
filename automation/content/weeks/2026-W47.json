@@ -3387,7 +3387,7 @@
         }
       ],
       "quotes": [],
-      "status": "publish_failed",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -3443,7 +3443,10 @@
       "auto": true,
       "decided_at": "2026-11-22T14:33:04.912934+03:00",
       "attempts": 1,
-      "last_error": "POST https://graph.facebook.com/v26.0/1375136779018047/videos → 400: {\"error\":{\"message\":\"(#100) No permission to publish the video\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"A-z2kEHvwPygfD2Pqmjb7Gl\"}}"
+      "last_error": "POST https://graph.facebook.com/v26.0/1375136779018047/videos → 400: {\"error\":{\"message\":\"(#100) No permission to publish the video\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"A-z2kEHvwPygfD2Pqmjb7Gl\"}}",
+      "published_at": "2026-11-22T15:37:23.619291+03:00",
+      "ig_id": "18492317872112475",
+      "duplicate_avoided": true
     },
     {
       "id": "2026-w47-hot-1122",
