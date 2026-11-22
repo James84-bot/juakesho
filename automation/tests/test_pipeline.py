@@ -1394,7 +1394,9 @@ class PhotoSwapTests(TempWeeks):
 def fresh_writer_state(drafter):
     """What one run learns about the models (busy, used up, no Claude credit) never leaks into another test."""
     return [mock.patch.object(drafter, "BUSY", {}), mock.patch.object(drafter, "USED_UP", set()),
-            mock.patch.object(drafter, "ANTHROPIC_DOWN", {})]
+            mock.patch.object(drafter, "ANTHROPIC_DOWN", {}),
+            # the free backups' keys are real secrets on the runner (22 Nov): a test chooses them itself
+            mock.patch.dict(os.environ, {"MISTRAL_API_KEY": "", "GROQ_API_KEY": "", "OPENROUTER_API_KEY": ""})]
 
 
 class FreshWriter(unittest.TestCase):
