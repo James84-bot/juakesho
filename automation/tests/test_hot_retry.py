@@ -104,10 +104,35 @@ class Retry(unittest.TestCase):
         self.assertEqual(posts["2026-w44-hot-1031-r2"]["publish_at"], "2026-10-31T12:45:00+03:00")   # same slot
 
     def test_a_draft_under_the_bar_is_retried_in_the_same_run(self):
-        self.save([held(status="drafted", critic={"avg": 7.3}, guard={"errors": []})])
-        with mock.patch.object(pipeline, "draft", self.fake_draft("drafted")):
+        self.save([held(status="drafted", critic={"avg": 6.4}, guard={"errors": []})])
+        with mock.patch.object(pipeline, "draft", self.fake_draft("drafted", crit=7.4)):
             self.assertEqual(pipeline.retry_held_hot(self.label), ["2026-w44-hot-1031-r2"])
         self.assertEqual(self.drafts, 1)                                         # the replacement passed: no more
+
+    def test_a_news_post_the_editor_calls_good_is_kept_and_may_go_out_by_itself(self):
+        good = held(status="drafted", critic={"avg": 7.3}, guard={"errors": []})
+        self.save([good])
+        with mock.patch.object(pipeline, "draft", self.fake_draft("drafted")):
+            self.assertEqual(pipeline.retry_held_hot(self.label), [])
+        self.assertNotEqual(pipeline.auto_ok({**good, "beat": "sport", "source": "https://x"}),
+                            "the editor's score is missing or under the bar")
+        planned = {**good, "hot": False, "source": "https://x"}   # written days ahead: the higher bar stays
+        self.assertEqual(pipeline.auto_ok(planned), "the editor's score is missing or under the bar")
+
+    def test_a_writer_failure_keeps_the_replacements_already_written(self):
+        self.save([held(status="drafted", critic={"avg": 5.0}, guard={"errors": ["weak"]})])
+        calls = []
+
+        def flaky(label, mock=False, horizon=None):
+            calls.append(1)
+            if len(calls) == 2:
+                raise ValueError("Extra data: line 22 column 3 (char 1088)")
+            self.fake_draft("drafted", crit=5.5)(label)
+        with mock.patch.object(pipeline, "draft", flaky), mock.patch.object(pipeline, "log", lambda m: None):
+            made = pipeline.retry_held_hot(self.label)
+        self.assertEqual(made, ["2026-w44-hot-1031-r2", "2026-w44-hot-1031-r3"])
+        self.assertEqual(pipeline.unrendered_hot(self.label), ["2026-w44-hot-1031", "2026-w44-hot-1031-r2"])
+        self.assertEqual(pipeline.stuck_hot(self.label), ["2026-w44-hot-1031-r3"])   # the catch-up writes it
 
     def test_a_good_post_is_never_replaced_even_one_that_waits_for_being_political(self):
         self.save([held(status="drafted", critic={"avg": 8.4}, guard={"errors": []}),

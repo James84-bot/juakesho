@@ -1270,18 +1270,33 @@ def _look_anthropic(body: dict) -> str:
     raise RuntimeError("Anthropic API: no answer")
 
 
+def _tidy_json(raw: str) -> str:
+    fixed = re.sub(r",\s*([}\]])", r"\1", raw)                         # trailing commas
+    return fixed.replace("\u201c", '\\"').replace("\u201d", '\\"')      # smart quotes used as JSON quotes inside strings
+
+
 def extract_json(text: str) -> dict:
-    """Parse the model's JSON even if it wrapped it in a code fence, added trailing commas or smart quotes."""
-    m = re.search(r"\{.*\}", text, re.S)
-    if not m:
+    """Parse the model's JSON even if it wrapped it in a code fence, added trailing commas or smart quotes, or wrote
+    something after it (a second object, a note with a brace in it: "Extra data", 22 Nov). The first whole object
+    wins."""
+    starts = [m.start() for m in re.finditer(r"\{", text)][:8]
+    if not starts:
         raise ValueError("model returned no JSON")
-    raw = m.group(0)
+    decoder = json.JSONDecoder()
+    for at in starts:
+        for raw in (text[at:], _tidy_json(text[at:])):
+            try:
+                got, _ = decoder.raw_decode(raw)
+            except ValueError:
+                continue
+            if isinstance(got, dict):
+                return got
+    m = re.search(r"\{.*\}", text, re.S)   # the whole span as before; its error is the one to report
+    raw = m.group(0) if m else text
     try:
         return json.loads(raw)
     except ValueError:
-        fixed = re.sub(r",\s*([}\]])", r"\1", raw)                      # trailing commas
-        fixed = fixed.replace("\u201c", '\\"').replace("\u201d", '\\"')  # smart quotes used as JSON quotes inside strings
-        return json.loads(fixed)
+        return json.loads(_tidy_json(raw))
 
 
 def _fits(line: str) -> bool:

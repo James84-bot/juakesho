@@ -566,6 +566,16 @@ class TvClipWorkTests(TempWeeks):
         self.assertNotIn("tv_clip_used", pl.load_week("2026-W41")["posts"][1])   # the real post is untouched
 
 
+class ExtractJsonTests(unittest.TestCase):
+    def test_the_first_whole_object_wins_whatever_comes_after(self):
+        import draft
+        self.assertEqual(draft.extract_json('{"posts": [{"id": "a"}]}\n{"note": "second"}'), {"posts": [{"id": "a"}]})
+        self.assertEqual(draft.extract_json('Here you go:\n```json\n{"a": 1,}\n```\nDone {ok}'), {"a": 1})
+        self.assertEqual(draft.extract_json('{bad} then {"a": "\u201cquoted\u201d"}'), {"a": "\u201cquoted\u201d"})
+        with self.assertRaises(ValueError):
+            draft.extract_json("no json here")
+
+
 class TvClipQueueTests(TempWeeks):
     """Clips your computer sends wait as files in state/tvclips until a tvclipwork run makes their Reel."""
     AT = dt.datetime(2026, 11, 22, 10, 0, tzinfo=dt.timezone.utc)

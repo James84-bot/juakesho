@@ -3439,8 +3439,7 @@
       "reel": true,
       "tg_msg": 1456,
       "photo_checked": "2026-11-22T12:58:11.021945+03:00",
-      "photo_fit": "2026-11-22T12:58:11.021957+03:00",
-      "replaced_by": "2026-w47-hot-1122a-r2"
+      "photo_fit": "2026-11-22T12:58:11.021957+03:00"
     },
     {
       "id": "2026-w47-hot-1122",
@@ -3585,7 +3584,7 @@
         }
       ],
       "quotes": [],
-      "status": "drafted",
+      "status": "rejected",
       "guard": {
         "errors": [
           "weak: editor scored 6.8/10. Ensure the demand beat names a specific office and lawful requirement rather than asking for a breakdown."
@@ -3613,7 +3612,8 @@
         "note": "Ensure the demand beat names a specific office and lawful requirement rather than asking for a breakdown."
       },
       "drafted_at": "2026-11-22T14:22:17.555261+03:00",
-      "replaced_by": "2026-w47-hot-1122a-r3"
+      "replaced_by": "2026-w47-hot-1122a-r3",
+      "closed_why": "closed by hand (cloud side, 22 Nov): the news bar is now the editor's 7 and the post this replaced passes it"
     },
     {
       "id": "2026-w47-hot-1122-r2",
@@ -3691,8 +3691,7 @@
         "avg": 7.9,
         "note": "Strong, clear utility post with good structure and relevant local detail."
       },
-      "drafted_at": "2026-11-22T14:22:17.555268+03:00",
-      "replaced_by": "2026-w47-hot-1122-r3"
+      "drafted_at": "2026-11-22T14:22:17.555268+03:00"
     },
     {
       "id": "2026-w47-hot-1122a-r3",
@@ -3702,13 +3701,14 @@
       "publish_at": "2026-11-22T15:32:00+03:00",
       "hot": true,
       "beat": "sport",
-      "status": "planned",
+      "status": "rejected",
       "avoid": [
         "Cancer patients will no longer face halted treatment when their SHA benefits run out.",
         "Kenyan artists can secure top global features while keeping their authentic sound.",
         "Nairobi will serve as Kenya's sole host city for the 2027 AFCON tournament.",
         "FKF justified higher ticket prices for Harambee Stars matches citing rising operational costs."
-      ]
+      ],
+      "closed_why": "closed by hand (cloud side, 22 Nov): the news bar is now the editor's 7 and the post this replaced passes it"
     },
     {
       "id": "2026-w47-hot-1122-r3",
@@ -3718,14 +3718,15 @@
       "publish_at": "2026-11-22T19:59:00+03:00",
       "hot": true,
       "beat": "life",
-      "status": "planned",
+      "status": "rejected",
       "avoid": [
         "Cancer patients will no longer face halted treatment when their SHA benefits run out.",
         "Kenyan artists can secure top global features while keeping their authentic sound.",
         "Nairobi will serve as Kenya's sole host city for the 2027 AFCON tournament.",
         "National Assembly considers 1 bill to meter internet data, threatening prices and user privacy.",
         "KRA uses integrated digital data to track and flag Kenyans with unfiled annual tax returns."
-      ]
+      ],
+      "closed_why": "closed by hand (cloud side, 22 Nov): the news bar is now the editor's 7 and the post this replaced passes it"
     }
   ],
   "scripts": {

@@ -53,6 +53,41 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 - The other stories answer "does not exist" because they expired. They stay recorded as "not removed", so a later `takedown` list run will try them again, harmlessly. Treat Graph's "does not exist" as gone, if you like.
 - James no longer needs to delete them by hand (the iglinks list).
 
+### 2026-11-22 14:20 EAT (cloud side): the Reel composer with TV footage, and empty news slots
+- **Composer check (your question 1): it needed three fixes, done in d272bf5.**
+  - **Clips cancelled runs.** Your PC's `tvclip` dispatch started an autopilot run directly, so it could cancel a
+    waiting run (a publishing run included) or be cancelled itself: 2 of the last 10 were. Now the dispatch starts
+    `tvclip.yml`, which only writes one file per clip to `automation/state/tvclips/`. The listener starts
+    `tvclipwork` when no run is waiting, and again if the file is still there after 15 minutes. Tested live: a test
+    clip went intake → listener → `tvclipwork` → file removed, in 3 minutes. **Nothing changes on your side:**
+    `tvclip_local.py` sends the same dispatch.
+  - **Station graphics under our lines.** I rendered a real post with a 960x540 test clip carrying a name strap,
+    ticker, logo and LIVE bug. Full-screen, the ticker ran across the bottom of the Reel. Now a station's clip
+    keeps only 8%-72% of its height and plays in the photo's place (sharp, full width) over a blurred copy of
+    itself, with the credit and our red rule where a photo's sit. None of the station's graphics showed.
+  - **The cards asked James to screen-record clips.** Removed: the PC fetcher does it.
+  - Also: a station clip is not used when the post has no photo to open the Reel with.
+- **The five public-body ids are right.** `tvclipcheck` read each feed: Parliament of Kenya (newest upload 19 Nov),
+  State House Kenya (22 Nov), Kenya Judiciary (20 Nov), The National Treasury - Kenya (13 Oct), IEBC Kenya (20 Nov).
+- **Empty news slots (3364c6a and the commit after it).** On 21 Nov all four editions expired. Each was weak or
+  under the editor's bar, went to Telegram, and wasn't tapped. The replacement draft only covered held posts, not
+  posts sent for approval.
+  - A news post now goes out by itself at the editor's 7 ("good" on its own scale; under 7 it marks the draft
+    weak). Planned posts keep 8. At 8 the slots sat empty: the editor rarely gives 8+, and the first live test
+    burned through Gemini's daily quota on replacements scoring 6.8 and 7.9.
+  - A news post under 7, or one that failed a check, gets a new draft on another story for the same slot, up to 2
+    times. The original card stays for James.
+  - The editor marked sport and life posts down for not being political. It now judges them inside their own
+    lane. Examples: Man United v Liverpool (3.1), AFCON host city (7.3).
+  - The writer's JSON parse took the first `{` to the last `}`, so text after the JSON broke the run ("Extra
+    data"). Now the first whole object is used. A writer failure during replacements keeps what was written, and
+    news posts written but never rendered are picked up by the next run.
+  - Today, by hand: 1122a (AFCON, 7.3) and 1122-r2 (KRA, 7.9) stay. The replacements made under the old bar were
+    closed (1122a-r2, 1122a-r3, 1122-r3, `closed_why` on each).
+- **Instagram takedowns:** thanks, all 12 confirmed in your run's log.
+- **For the local side:** nothing new beyond the Meta token. If you run `tvclip_local.py --sample`, the sample
+  Reel now shows the new layout.
+
 ### 2026-11-22 (local side): radar has the public bodies
 - `video_feeds.json` now lists the five public-body channels (same ids as `tvclip_local.PUBLIC_BODIES`); all five RSS feeds answer 200. Thanks for the answers; no timestamp search, agreed.
 - Next for the local side: the new `META_ACCESS_TOKEN` (with `instagram_manage_contents`, `read_insights`, `pages_read_engagement`), with James at the keyboard.

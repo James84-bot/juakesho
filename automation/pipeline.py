@@ -271,6 +271,16 @@ def due_editions(at: dt.datetime | None = None) -> list[str]:
     return out
 
 
+def unrendered_hot(label: str, at: dt.datetime | None = None) -> list[str]:
+    """Today's news posts that were written but never made into a Reel or sent (the run stopped after writing),
+    with their time still ahead."""
+    if not week_file(label).exists():
+        return []
+    at = at or now()
+    return [p["id"] for p in load_week(label)["posts"]
+            if p.get("hot") and p["status"] == "drafted" and dt.datetime.fromisoformat(p["publish_at"]) > at]
+
+
 def stuck_hot(label: str, at: dt.datetime | None = None) -> list[str]:
     """Today's news posts that were planned but never written (the writer failed mid-run) and whose time is still
     ahead: the next news run writes them instead of leaving an empty slot."""
@@ -729,7 +739,7 @@ def quality_hold(p: dict) -> str:
     if (p.get("guard") or {}).get("errors"):
         return "failed a check"
     crit = (p.get("critic") or {}).get("avg")
-    return "" if crit is not None and crit >= drafter_bar() else "the editor's score is missing or under the bar"
+    return "" if crit is not None and crit >= score_bar(p) else "the editor's score is missing or under the bar"
 
 
 def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> list[str]:
@@ -762,7 +772,11 @@ def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> 
             made.append(new["id"])
         save_week(data)
         log(f"held news post replaced: {made[-len(held):]}")
-        draft(label, mock=mock, horizon=None)
+        try:
+            draft(label, mock=mock, horizon=None)
+        except Exception as e:   # what was written stays; the tick's catch-up writes a planned one later
+            log(f"replacement draft failed: {str(e)[:200]}")
+            break
     return made
 
 
@@ -1353,8 +1367,8 @@ def decision_line(p: dict) -> str:
     crit = (p.get("critic") or {}).get("avg")
     if crit is None and p.get("template") != "tazama":
         return "🧭 <b>No call:</b> the editor didn't score it this run. Read it before you approve."
-    if crit is not None and crit < drafter_bar():
-        return f"🧭 <b>My call: ❌ too weak.</b> The editor gave it {crit}/10; our bar is {drafter_bar()}."
+    if crit is not None and crit < score_bar(p):
+        return f"🧭 <b>My call: ❌ too weak.</b> The editor gave it {crit}/10; our bar is {score_bar(p)}."
     reason = why or "auto-approval is paused in policy.json"
     score = f", editor {crit}/10" if crit is not None else ""
     return f"🧭 <b>My call: ✅ post it</b> (passed every check{score}). It needs your tap because {esc(reason)}."
@@ -1560,9 +1574,10 @@ def auto_ok(p: dict) -> str:
     if p.get("template") in mtaa.TEMPLATES:   # Mtaa Mode: the chart is YouTube's numbers; a skit needs its editor's pass
         return mtaa.auto_problem(p)
     crit = (p.get("critic") or {}).get("avg")
-    if not p.get("hand") and (crit is None or crit < drafter_bar()):
+    bar = score_bar(p)
+    if not p.get("hand") and (crit is None or crit < bar):
         return "the editor's score is missing or under the bar"
-    if p.get("hand") and crit is not None and crit < drafter_bar():
+    if p.get("hand") and crit is not None and crit < bar:
         return "the editor's score is under the bar"
     if not (p.get("source_links") or isinstance(p.get("material"), dict) or str(p.get("source") or "").startswith("http")):
         return "no collected report or official page behind it"
@@ -1576,6 +1591,14 @@ def auto_ok(p: dict) -> str:
 def drafter_bar() -> float:
     import draft as drafter
     return drafter.CRITIC_BAR
+
+
+def score_bar(p: dict) -> float:
+    """The editor's score a post needs to go out by itself. A news post: 7, what the editor's own scale calls good
+    (WEAK_FLOOR; under it the draft is marked weak). A news slot is the day's story: at 8 it sat empty instead (21 Nov:
+    four editions, none out; the editor gives 8+ rarely). Planned posts, written days ahead, keep the higher bar."""
+    import draft as drafter
+    return drafter.WEAK_FLOOR if p.get("hot") else drafter.CRITIC_BAR
 
 
 def auto_approve(dry_run: bool = False) -> list[str]:
@@ -3230,7 +3253,7 @@ def _main(argv: list[str] | None = None) -> int:
                     replaced = retry_held_hot(label)
                 except Exception as e:
                     log(f"retry of held news posts skipped: {e}")
-            if not replaced and not fresh_due(label):
+            if not replaced and not fresh_due(label) and not unrendered_hot(label):
                 return 0
     if a.command == "tracker":   # next week as a Development Tracker batch, drafted and sent now
         label = a.week or current_week_label(ahead=1)
