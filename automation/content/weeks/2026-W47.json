@@ -3757,13 +3757,117 @@
         "KRA uses integrated digital data to track and flag Kenyans with unfiled annual tax returns."
       ],
       "closed_why": "closed by hand (cloud side, 22 Nov): the news bar is now the editor's 7 and the post this replaced passes it"
+    },
+    {
+      "id": "2026-w47-hot-1122b1442",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football Fans",
+      "line": "Bruno Fernandes reveals contract talks with Manchester United are on *hold*.",
+      "fact": "Manchester United sit outside the top four after a poor start to the season under Ruben Amorim.",
+      "source": "The Guardian, 2026-11-22",
+      "photo_query": "Old Trafford stadium Manchester",
+      "message": "Bruno Fernandes puts new contract talks on hold as Manchester United struggle.",
+      "action": "Tell us: should Fernandes leave Old Trafford?",
+      "beats": [
+        "Bruno Fernandes puts talks on *hold*.",
+        "The club sits outside the top four.",
+        "Fans watch to see if he stays.",
+        "Tell us below: will Fernandes sign?"
+      ],
+      "caption": "Bruno Fernandes puts his future on hold as Manchester United fight for form. What is your take? 👇🏾\n\n#ManUtd #KenyaOnRecord",
+      "who": "Manchester United",
+      "where": "Manchester",
+      "when": "22 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Fans watch every match as contract talks freeze.",
+      "bg": "usiku",
+      "publish_at": "2026-11-22T15:02:00+03:00",
+      "hot": true,
+      "avoid": [
+        "Cancer patients will no longer face halted treatment when their SHA benefits run out.",
+        "Kenyan artists can secure top global features while keeping their authentic sound.",
+        "Nairobi will serve as Kenya's sole host city for the 2027 AFCON tournament.",
+        "National Assembly considers 1 bill to meter internet data, threatening prices and user privacy."
+      ],
+      "breaking": {
+        "title": "Bruno Fernandes reveals talks over new Manchester United contract are on hold",
+        "outlets": [
+          "ESPN",
+          "Reuters",
+          "The Guardian"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "ESPN",
+          "title": "Bruno Fernandes confirms Manchester United contract talks on hold, 'priority is winning'",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPTVYtclVYWDdzdm1waUlkbUY5SXJURFJiVWhsOEtzelJWOFlMWWpFcl85bjdyaHJPcWY0UWpUcW82bll1c3lnMUs5Rm1nSGJqS3ZSck4zSEZUa00ydWRQbTQ0V1kwMUhlenU2aFBJYVFRQkJET1ZjZFozOFYxS2w0QnpFSDQtcVR1TGYzTklIemNpbm1ZbzA3VlNVX0IwRTZ6cTcwVUhheW1rU2M0VTc1SU9Pb0pJOEk?oc=5",
+          "published": "2026-11-22"
+        },
+        {
+          "outlet": "Reuters",
+          "title": "Fernandes says contract talks on hold as Man United battle poor start",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYjdMSTFtN2JMU2RIN0NhWmdMT291cWUyUDY0aGZWOTdfUlhKOUlpVU5CQzA5T0V5eFFCc195WTl6b1huTmRpTU9nYnc0YkV1QW95X2h5WHhMRk5NOGMzaFZydEJ4RU81dDFMd1dsb0djakk4d0FEQnN6Vk9DNWRtQlQ3TjVpMWQwendBN1RaWVc5d1JyRHpaVFFlQjJ5MW9nWnVaQjdUZjRHVFJjUElSeXV3WQ?oc=5",
+          "published": "2026-11-22"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Bruno Fernandes reveals talks over new Manchester United contract are on hold",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcUt4UFM0UzhZY3o5U0NwWUltTThFVU1qVXNJRFdFSm1YZHQyN3pXMU5HdnRwQ3JjRTViLU9nSFc2Nno5T09hVkVGd19CbnN5SnFnWDBVTVA5YndhVUxIeHVyRWw1NGJWblQwUHpKekRCVlBDZHZhWDdqREk1YzUxY2Y0dFlkQ2lDdEFvN0pfUkY0LXVmYUs1T3FVemRhMzBLLWdxMEMzclJMR3J3SmZyUDFkeFVLVUxDZURUWlNTdnVxdjNY?oc=5",
+          "published": "2026-11-22"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.5/10. Demand score of 3 is too low since item 3 is in the required top-5 news list."
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 6,
+        "demand": 3,
+        "action": 5,
+        "fair": 9,
+        "impact": 5,
+        "human": 6,
+        "avg": 6.5,
+        "note": "Demand score of 3 is too low since item 3 is in the required top-5 news list."
+      },
+      "drafted_at": "2026-11-22T14:44:32.049230+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1122b1442-photo.jpg",
+      "photo_credit": "Photo: LiveScore",
+      "photo_kind": "posted",
+      "photo_outlet": "LiveScore",
+      "photo_source": "https://www.livescore.com/en/news/football/serie-a/romano-bruno-fernandes-more-than-a-dream-for-milan-why-amorim-could-be-crucial-sempremilan/",
+      "shot_info": [
+        {
+          "credit": "Photo: LiveScore",
+          "title": "Romano: Bruno Fernandes ‘more than a dream’ for Milan – why Amorim ‘could be crucial’"
+        }
+      ],
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1495
     }
   ],
   "scripts": {
-    "radio": "Jambo na karibu to Kenya on Record. This week, we look at two areas where ordinary Kenyans are feeling the squeeze: stadium gates and digital tax registers.\n\nFirst, the Football Kenya Federation has justified raising ticket prices for Harambee Stars matches, citing rising operational costs. While running football isn't cheap, fans are asking for transparency. Football is our national passion, and pricing out loyal supporters who stand behind the team raises serious questions about how public sports funds are managed and prioritized.\n\nMeanwhile, the Kenya Revenue Authority is tightening its digital net. KRA is now leveraging integrated digital data—linking mobile money, bank transactions, and official registries—to automatically flag Kenyans with unfiled annual tax returns. If you assumed unfiled returns would slip through quietly, the system is now automated to spot discrepancies instantly. Compliance is moving to algorithms, but as citizens pay up, we must also demand that public revenue translates into actual public services.\n\nHapa ni ufupi wa mambo: Wiki hii, FKF imetetea kuongeza bei ya tiketi za Harambee Stars ikisema gharama zimepanda, huku mashabiki wakitaka uwazi. Nayo KRA inatumia mitandao ya kidijitali kufuatilia wanaokosa kuwasilisha ushuru wa kila mwaka. Weka hesabu zako sawa na uendelee kutaka uwazi.\n\nStay informed, demand accountability, and protect your pocket. This is Kenya on Record.",
-    "voice_note": "Habari yako! Quick heads up from Kenya on Record for this week. Two key updates you should know. First, if you're heading out to support Harambee Stars, FKF has bumped up ticket prices, citing higher operational costs. Fans are raising eyebrows, and we must keep demanding full transparency on sports funds. Second—and crucial for your pocket—KRA is using integrated digital data from banks and mobile money to flag anyone with unfiled annual returns. Don't let penalties catch you sleeping. Log into iTax, check your status today, and pass this audio to your family and group chats!",
-    "sms": "USIIBIWE: KRA is using digital data to track unfiled returns. Log into your iTax portal today to check your compliance status and avoid heavy penalties.",
-    "reels": "Think your unfiled tax returns are invisible? Think again. KRA is now using integrated digital data—from mobile money to bank records—to instantly flag unfiled annual returns. Don't wait for penalties to pile up. Check your iTax status today, stay compliant, and demand accountability for every shilling collected. Follow Kenya on Record."
+    "radio": "Habari za jioni, wanafamilia wa Kenya on Record. Mimi ni mtangazaji wako, na leo tunapiga gumzo kuhusu mipango ya kando na jinsi tunavyoweka maamuzi yetu rehani mambo yanapokwenda kombo. \n\nWacha tuangalie Manchester United na staa wao Bruno Fernandes. Habari za wiki hii zinasema kwamba Bruno ameweka kandarasi yake mpya pembeni, akisimamisha mazungumzo yote na klabu hadi pale hali itakaponyooka. Anataka kuona kama timu inaelekea upande unaofaa kabla ya kuweka wino kwenye karatasi mpya. Hiyo inaitwa kuangalia masilahi yako kwanza kabla ya kuruka bila parachuti!\n\nHapa kwetu nyumbani, hii inatufunza somo kubwa sana. Kazi nyingi, biashara, na hata mikataba ya maisha inahitaji uangalifu wa aina hii. Usikimbilie kusaini au kuwekeza pesa zako mahali ambapo hakuna mwelekeo dhabiti. Wakati mambo magumu, simama kidete, tathmini hali, na uliza maswali kabla ya kutoa ahadi za kudumu. Linda masilahi yako ndipo uwekeze kesho.\n\nNa sasa, kwa kifupi kwa lugha ya taifa:\nBruno Fernandes amesitisha mazungumzo ya mkataba mpya na Manchester United kwa sababu ya matokeo dhabiti yasiyoridhisha ya timu hiyo. Hii ni ukumbusho kwetu sote kufikiria kwa makini kabla ya kufanya maamuzi makubwa ya kibiashara au ya kiofisi wakati mambo yakiwa magumu.",
+    "voice_note": "Wadau, niaje? Hapa ni Kenya on Record. Umesikia kuhusu Bruno Fernandes wa Manchester United? Jamaa amesimamisha mazungumzo ya mkataba wake mpya kabisa! Anasubiri kuona kama timu inaelekea wapi kwanza kabla hajatia wino. Hiyo niakili kubwa sana. Usikimbilie kusaini mkataba au kuwekeza pesa zako mahali ambapo hakuna mwelekeo dhabiti. Wakati mambo magumu, simama kidete, tathmini hali, na uliza maswali kabla ya kutoa ahadi za kudumu. Linda masilahi yako kwanza!",
+    "sms": "Usiibiwe Tip: Usikimbilie kusaini mkataba au kuwekeza pesa mahali bila mwelekeo dhabiti. Tathmini hali, uliza maswali, na linda masilahi yako kwanza!",
+    "reels": "[0:00-0:05] Sauti kali ya kiume: Bruno Fernandes amegoma kusaini mkataba mpya na Manchester United!\n[0:05-0:15] Sauti ikiwa na msisitizo: Sababu? Timu inasotea chini, na hataki kujifunga kwenye gari linaloelekea shimoni.\n[0:15-0:30] Sauti ya ushauri kwa upole: Hata kwako kibiashara au kazini, usikimbilie kusaini wala kuwekeza kabla hujaona mwelekeo. Linda masilahi yako kwanza!"
   },
   "spend_usd": 0.0
 }

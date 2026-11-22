@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-22T11:30:53.720257+00:00",
+  "fetched": "2026-11-22T11:42:12.899958+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "birmingham city vs man utd",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "United Women's team to face Birmingham",
+          "url": "https://www.manutd.com/en/news/united-women-line-up-birmingham-wsl-22-november-2026",
+          "source": "Manchester United"
+        },
+        {
+          "title": "Birmingham vs Man United prediction: our WSL preview",
+          "url": "https://shekicks.net/birmingham-city-vs-manchester-united-betting-tips-our-wsl-prediction/",
+          "source": "SheKicks"
+        },
+        {
+          "title": "Eva Olid: Man United Women boss provides injury boost ahead of Birmingham City match",
+          "url": "https://thepeoplesperson.com/2026/11/21/eva-olid-confirms-anna-sandberg-return-for-man-united-women-323017/",
+          "source": "The Peoples Person"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "nairobi road",
@@ -25,6 +47,28 @@
     },
     {
       "geo": "KE",
+      "title": "barcelona vs villarreal",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Alineación posible del Barcelona ante el Villarreal hoy en LaLiga EA Sports",
+          "url": "https://as.com/futbol/posible-alineacion-del-barca-ante-el-villarreal-la-suplencia-de-cubarsi-lo-altera-todo-f202611-n/",
+          "source": "Diario AS"
+        },
+        {
+          "title": "Haz de Hansi Flick y elige la alineación del Barça",
+          "url": "https://www.lavanguardia.com/participacion/retos/20261122/11687957/haz-hansi-flick-elige-alineacion-barca.html",
+          "source": "La Vanguardia"
+        },
+        {
+          "title": "Barcelona vs Villarreal: Empieza el Tourmalet",
+          "url": "https://www.marca.com/futbol/barcelona/2026/11/22/barcelona-vs-villarreal-empieza-tourmalet.html",
+          "source": "MARCA"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "kenyans",
       "traffic": "100+",
       "news": [
@@ -34,17 +78,16 @@
           "source": "The Star, Kenya"
         },
         {
-          "title": "How America tour has become part of Kenya's State House campaign",
-          "url": "https://www.standardmedia.co.ke/politics/article/2001562761/why-gachagua-sifuna-and-kalonzo-are-courting-the-us-ahead-of-2027-polls",
-          "source": "The Standard"
+          "title": "Sh100million, building JKIA & more: Sifuna bags goodies and pledges on first day of US tour",
+          "url": "https://www.pulse.co.ke/story/sh100million-building-jkia-and-more-sifuna-bags-goodies-and-pledges-on-first-day-of-us-tour-2026112207390761658",
+          "source": "Pulse Kenya"
         },
         {
           "title": "Linda Mwananchi Movement opens international headquarters in New Jersey",
           "url": "https://thekenyandiaspora.com/stories/9879/Linda-Mwananchi-Movement-opens-international-headquarters-in-New-Jersey",
           "source": "The Kenyan Diaspora Media"
         }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
@@ -99,14 +142,6 @@
     {
       "title": "graduation",
       "why": "unsafe: 'odds'"
-    },
-    {
-      "title": "augsburg vs mainz",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "hull city vs brighton prediction",
-      "why": "unsafe: 'Betting'"
     },
     {
       "title": "bologna vs udinese",
