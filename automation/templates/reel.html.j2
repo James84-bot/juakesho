@@ -30,6 +30,8 @@
 {% set a = BT.starts[i] / T * 100 %}{% set e = (BT.starts[i + 1] if not loop.last else T) / T * 100 - 0.02 %}
   {{ '%.3f' % a }}% { opacity: {{ on }}; } {{ '%.3f' % e }}% { opacity: {{ on }}; }
 {% endfor %}
+{# the last line's picture holds to the end of the video, and nothing else shows #}
+  100% { opacity: {{ 1 if seq[beats | length - 1] == k else 0 }}; }
 }
 {% if k >= 0 %}.sh{{ k }} { animation: vis{{ k + 1 }} {{ T }}s linear both; }{% else %}.footage-tag { animation: vis0 {{ T }}s linear both; }{% endif %}
 {% endfor %}

@@ -88,7 +88,24 @@ class TheirLine(unittest.TestCase):
     @staticmethod
     def lines(html, k):
         block = re.search(rf"@keyframes vis{k} \{{(.*?)\n\}}", html, re.S).group(1)
-        return [re.findall(r"opacity: (\d)", ln)[0] for ln in block.strip().splitlines() if "opacity" in ln]
+        return [re.findall(r"opacity: (\d)", ln)[0] for ln in block.strip().splitlines() if "opacity" in ln and "100%" not in ln]
+
+    def test_after_the_last_line_only_its_picture_shows(self):
+        # 23 Nov sample: in the half second after the last line, the speaker's picture sat beside the closing question
+        from PIL import Image
+        with tempfile.TemporaryDirectory() as tmp:
+            files = []
+            for n in ("a", "b", "face"):
+                f = Path(tmp) / f"{n}.jpg"
+                Image.new("RGB", (1600, 1200), (90, 60, 40)).save(f)
+                files.append(str(f))
+            p = post(["Fuel taxes stay as they are.", QUOTE_LINE, "Pump prices rose twice this year.", "Fair?"],
+                     size="story", bg="usiku", kicker="Money", publish_at="2026-11-23T12:45:00+03:00",
+                     photo_file=files[0], extra_photos=files[1:], shot_info=[{}, {}, {}], speaker_shot=[1, 2])
+            html = render.build_html(render.make_env(), p, motion=True)
+        ends = {k: re.search(rf"@keyframes vis{k} \{{.*?100% \{{ opacity: (\d)", html, re.S).group(1) for k in (1, 2, 3)}
+        self.assertEqual(ends[3], "0")                                                   # not the speaker
+        self.assertEqual(sorted(ends.values()), ["0", "0", "1"])                         # one picture only
 
 
 class Names(unittest.TestCase):
