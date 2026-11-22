@@ -360,6 +360,8 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
     ctx["video_credit"] = (post.get("video_credit") or "") if full_footage else ""
     ctx["shots"], ctx["seq"] = [], []
     ctx["card"] = False   # True: the pictures sit whole in a card under the header (see reel.html.j2)
+    ctx["footage_slot"] = False
+    ctx["open_top"] = OPEN_TOP
     # the Reel's look (brand.json "reel_look"; a post's own "look" wins, "plain" asks for the dark card): "glass" =
     # the photo blurred full screen behind a frosted frame and a frosted panel for the lines
     ctx["look"] = str(post.get("look") or bk.BRAND.get("reel_look") or "")
@@ -383,6 +385,8 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
             ctx["card_w"], ctx["card_h"] = card_size(W)
             if ctx["look"] == "glass":   # the pictures run edge to edge, as tall as they allow (see open_height)
                 ctx["card_w"], ctx["card_h"] = W, open_height(paths, W)
+            # a TV clip plays in the pictures' place (video.footage_graph), its own graphics cut off
+            ctx["footage_slot"] = bool(ctx["broll"] and ctx["look"] == "glass" and post.get("footage_from") == "tv")
             for sh, f in zip(ctx["shots"], paths):
                 sh["fit"] = (card_fit(f, ctx["card_w"], ctx["card_h"], OPEN_SOFT) if ctx["look"] == "glass"
                              else card_fit(f, *card_size(W))) if ctx["card"] else None

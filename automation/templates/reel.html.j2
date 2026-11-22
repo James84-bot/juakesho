@@ -123,6 +123,14 @@
 .fshade { position: absolute; left: 0; right: 0; top: {{ OT + CH - 120 }}px; bottom: 0; z-index: 2; pointer-events: none;
   background: linear-gradient(to bottom, rgba(14, 12, 11, 0), rgba(14, 12, 11, .62) 30%, rgba(14, 12, 11, .78)); opacity: 0;
   animation: vis0 {{ BT.t + 1 }}s linear both; }
+{% if footage_slot %}
+/* a TV clip plays where the pictures sit (video.footage_graph): its credit and our red rule go where a photo's do */
+.fslot { display: none; }
+.footage-tag { left: auto !important; bottom: auto !important; right: 26px; top: {{ OT + CH - 46 }}px; font: 600 19px/1 "Inter" !important;
+  color: rgba(255, 255, 255, .9) !important; text-shadow: 0 1px 8px rgba(0, 0, 0, .85) !important; }
+.frule { position: absolute; left: 0; width: {{ CW }}px; top: {{ OT + CH - 8 }}px; height: 8px; z-index: 2;
+  background: var(--shuka-500); opacity: 0; animation: vis0 {{ BT.t + 1 }}s linear both; }
+{% endif %}
 {% endif %}
 {% endif %}
 {% endif %}
@@ -184,6 +192,7 @@
     {% else %}<div class="full cam" style="background-image: url('{{ sh.uri }}')"></div>{% endif %}
   </div>{% endfor %}
   {% if card and look == 'glass' and broll %}<div class="fshade"></div>{% endif %}
+  {% if footage_slot and card and look == 'glass' %}<i class="fslot" data-top="{{ open_top }}" data-h="{{ card_h }}"></i><i class="frule"></i>{% endif %}
   {% for b in beats %}{% if not loop.first %}<i class="wipe w{{ loop.index }}"></i>{% endif %}{% endfor %}
   <div class="stage">
     {% for b in beats %}{% set s = BT.starts[loop.index0] %}

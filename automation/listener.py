@@ -108,6 +108,19 @@ REDO_DUE_SECONDS = 900         # a due post still unpublished this long after it
 REDO_DUE_MAX = 3
 
 
+CLIP_CHECK_SECONDS = 120       # how often to look for TV clips your computer queued (state/tvclips, tvclip_queue.py)
+
+
+def clips_waiting() -> list[str]:
+    """File names of TV clips waiting in state/tvclips; [] when the folder doesn't exist (nothing queued yet)."""
+    try:
+        return sorted(e["name"] for e in _gh("automation/state/tvclips") if e.get("name", "").endswith(".json"))
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return []
+        raise
+
+
 def waiting_runs() -> int:
     """Autopilot runs not yet started (a newer dispatch would cancel the newest of them)."""
     req = urllib.request.Request(
@@ -163,6 +176,7 @@ def run(minutes: float) -> None:
     next_turn = 0.0
     upcoming: list[tuple[str, float]] = []
     next_check = 0.0
+    next_clips = 0.0
 
     def enqueue(command: str) -> None:
         if command not in queue:
@@ -196,6 +210,23 @@ def run(minutes: float) -> None:
             except Exception as e:
                 log(f"schedule read failed: {e!r}")
             next_check = time.time() + DUE_CHECK_SECONDS
+        if time.time() >= next_clips:
+            next_clips = time.time() + CLIP_CHECK_SECONDS
+            try:
+                clips = clips_waiting()
+            except Exception as e:
+                log(f"TV clip check failed: {e!r}")
+                clips = []
+            t = time.time()
+            fresh = []
+            for name in clips:   # a clip still waiting long after its run started: that run was cancelled or died
+                when, n = started.get(f"clip:{name}", (None, 0))
+                if when is None or (t - when >= REDO_DUE_SECONDS and n < REDO_DUE_MAX):
+                    started[f"clip:{name}"] = (t, n + 1)
+                    fresh.append(name)
+            if fresh:
+                log(f"TV clip waiting: {', '.join(fresh)}")
+                enqueue("tvclipwork")
         t = time.time()
         ready = []
         for key, at in upcoming:

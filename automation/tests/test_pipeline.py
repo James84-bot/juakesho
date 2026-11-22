@@ -543,11 +543,17 @@ class TvClipWorkTests(TempWeeks):
         self.assertIn("📺 Clip: Citizen TV", pl.receipts_comment({**p, "source": "Capital FM, 2026-11-07"}))
         self.assertEqual(self.run_work({"post": "q", "file_id": "F"})[0], "q: published, left as it is")
 
-    def test_without_a_photo_the_footage_carries_the_whole_reel(self):
+    def test_without_a_photo_to_open_the_reel_a_station_clip_is_not_used(self):
         self.week_with()
-        _, made, _ = self.run_work({"post": "p", "file_id": "F", "channel": "NTV Kenya"}, photo=False)
-        self.assertEqual(made[0][0]["video_credit"], "Footage: NTV Kenya")
-        self.assertNotIn("broll_file", made[0][0])
+        note, made, _ = self.run_work({"post": "p", "file_id": "F", "channel": "NTV Kenya"}, photo=False)
+        self.assertEqual(note, "p: no photo of the story to open the Reel with, NTV Kenya's clip not used")
+        self.assertEqual(made, [])
+        self.assertNotIn("tv_clip_used", pl.load_week("2026-W41")["posts"][0])
+
+    def test_a_station_clip_is_marked_so_the_composer_cuts_its_graphics(self):
+        self.week_with()
+        _, made, _ = self.run_work({"post": "p", "file_id": "F", "channel": "Citizen TV"})
+        self.assertEqual(made[0][0]["footage_from"], "tv")
 
     def test_a_sample_on_a_published_post_is_sent_and_changes_nothing(self):
         import draft
@@ -558,6 +564,74 @@ class TvClipWorkTests(TempWeeks):
         self.assertEqual((made[0][0]["id"], made[0][1]), ("q-tvsample", pl.SAMPLES))
         self.assertEqual(sent[0][0], "sendVideo")
         self.assertNotIn("tv_clip_used", pl.load_week("2026-W41")["posts"][1])   # the real post is untouched
+
+
+class TvClipQueueTests(TempWeeks):
+    """Clips your computer sends wait as files in state/tvclips until a tvclipwork run makes their Reel."""
+    AT = dt.datetime(2026, 11, 22, 10, 0, tzinfo=dt.timezone.utc)
+
+    def queue(self, post="2026-w41-p", at=None, **extra):
+        import tvclip_queue
+        path = tvclip_queue.add({"post": post, "file_id": "BAACAgQAAxkDAAIB", "message_id": 9, **extra},
+                                now=at or self.AT, folder=pl.STATE / "tvclips")
+        return path
+
+    def work(self, behave, now=None):
+        dropped = []
+        with mock.patch.object(pl, "tvclip_work", behave), mock.patch.object(pl, "_drop_raw", dropped.append):
+            notes = pl.tvclip_queue_work(now=now or self.AT + dt.timedelta(minutes=5))
+        return notes, dropped
+
+    def test_a_clip_is_made_once_then_its_file_goes(self):
+        path = self.queue()
+        notes, _ = self.work(lambda e: f"{e['post']}: Citizen TV footage 30.0-38.0s added")
+        self.assertEqual(notes, ["2026-w41-p: Citizen TV footage 30.0-38.0s added"])
+        self.assertFalse(path.exists())
+
+    def test_a_clip_whose_run_errors_waits_for_another_then_gives_up(self):
+        import tvclip_queue
+
+        def boom(entry):
+            raise RuntimeError("Telegram file not found")
+        path = self.queue()
+        for n in range(1, tvclip_queue.MAX_TRIES):
+            notes, dropped = self.work(boom)
+            self.assertIn(f"try {n} of {tvclip_queue.MAX_TRIES}", notes[0])
+            self.assertEqual(json.loads(path.read_text())["tries"], n)   # kept: the listener starts another run
+            self.assertEqual(dropped, [])
+        notes, dropped = self.work(boom)
+        self.assertFalse(path.exists())
+        self.assertEqual(len(dropped), 1)                                 # the raw clip leaves the chat
+
+    def test_a_clip_that_came_in_too_long_ago_is_dropped_unused(self):
+        path = self.queue(at=self.AT - dt.timedelta(hours=13))
+        ran = []
+        notes, dropped = self.work(lambda e: ran.append(e) or "made")
+        self.assertEqual(ran, [])
+        self.assertIn("too old", notes[0])
+        self.assertFalse(path.exists())
+        self.assertEqual(dropped[0]["message_id"], 9)
+
+    def test_an_unreadable_file_is_dropped_and_the_rest_still_run(self):
+        bad = pl.STATE / "tvclips" / "20261122T000000-x.json"
+        self.queue()
+        bad.write_text("{not json")
+        notes, _ = self.work(lambda e: f"{e['post']}: done")
+        self.assertIn("unreadable", notes[0])
+        self.assertEqual(notes[1], "2026-w41-p: done")
+        self.assertEqual(list((pl.STATE / "tvclips").glob("*.json")), [])
+
+    def test_nothing_waiting_is_quiet(self):
+        self.assertEqual(self.work(lambda e: "made")[0], [])
+
+    def test_a_clip_for_a_post_that_went_out_leaves_the_chat(self):
+        self.week([{"id": "p", "status": "published", "beats": ["a", "b", "c"], "publish_at": "2026-11-08T12:45:00+03:00"}])
+        sent = []
+        with mock.patch.object(pl, "policy_on", lambda key: True), mock.patch.object(pl, "tg", lambda *a, **k: sent.append(a)), \
+                mock.patch.object(pl, "need", lambda *k: {"TELEGRAM_CHAT_ID": "1"}):
+            note = pl.tvclip_work({"post": "p", "file_id": "F", "message_id": 7})
+        self.assertEqual(note, "p: published, left as it is")
+        self.assertEqual(sent[0][0], "deleteMessage")
 
 
 class SampleTests(TempWeeks):

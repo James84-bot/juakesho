@@ -1,0 +1,40 @@
+# TV clip intake: your computer (automation/tvclip_local.py) fired a `tvclip` dispatch for a clip it uploaded.
+# This only writes the clip's file into automation/state/tvclips/ (automation/tvclip_queue.py) and commits it.
+# The listener starts `tvclipwork` in a free turn, so a clip never cancels a waiting autopilot run, and a cancelled
+# run never loses a clip. No concurrency group: each clip is its own file, so two intakes can't conflict.
+name: tvclip intake
+
+on:
+  repository_dispatch:
+    types: [tvclip]
+
+permissions:
+  contents: write
+
+jobs:
+  queue:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            automation/tvclip_queue.py
+            automation/state/tvclips
+          sparse-checkout-cone-mode: false
+
+      - name: Queue the clip
+        env:
+          PAYLOAD: ${{ toJson(github.event.client_payload) }}   # via env, never pasted into the script
+        run: python3 automation/tvclip_queue.py
+
+      - name: Save it
+        run: |
+          git config user.name "jua-kesho-bot"
+          git config user.email "bot@users.noreply.github.com"
+          [ -d automation/state/tvclips ] || exit 0
+          git add -A -- automation/state/tvclips
+          git diff --cached --quiet && exit 0
+          git commit -m "tvclip intake $(date -u +%FT%TZ)"
+          for i in 1 2 3 4 5; do git pull --rebase origin main && git push && exit 0; sleep $((i * 5)); done
+          echo "::error::could not save the clip after 5 attempts"; exit 1

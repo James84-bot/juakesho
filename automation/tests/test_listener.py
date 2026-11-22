@@ -15,6 +15,11 @@ def tap(uid, data="a|2026-W42|p1", chat=CHAT):
 
 
 class ListenerTests(unittest.TestCase):
+    def setUp(self):   # no TV clip waiting unless a test says so: the real check would call GitHub
+        self.clips = mock.patch.object(listener, "clips_waiting", lambda: [])
+        self.clips.start()
+        self.addCleanup(self.clips.stop)
+
     def test_only_owner_taps_and_clips_count(self):
         self.assertEqual(listener.classify(tap(1), CHAT), "tap")
         self.assertIsNone(listener.classify(tap(2, chat="7"), CHAT))
@@ -140,6 +145,37 @@ class ListenerTests(unittest.TestCase):
         quiet = int(listener.dt.datetime(2026, 11, 19, 0, 30, tzinfo=listener.dt.timezone.utc).timestamp())
         runs = self._run(40, lambda: [("p1#0", 0.0)], lambda: 0, clock_step=1, clock_from=quiet)   # no clock run due
         self.assertEqual(runs, ["tick", "tick", "tick"])   # 0, 15 and 30 minutes: the post never went out
+
+    def test_a_queued_tv_clip_starts_tvclipwork_in_a_free_turn(self):
+        quiet = int(listener.dt.datetime(2026, 11, 19, 1, 0, tzinfo=listener.dt.timezone.utc).timestamp())   # no clock run
+        self.clips.stop()
+        with mock.patch.object(listener, "clips_waiting", lambda: ["20261119T003000-p.json"]):
+            runs = self._run(10, lambda: [], lambda: 0, clock_step=1, clock_from=quiet)
+        self.clips.start()
+        self.assertEqual(runs, ["tvclipwork"])        # once, not every check
+
+    def test_a_clip_still_waiting_after_its_run_gets_another_but_not_forever(self):
+        quiet = int(listener.dt.datetime(2026, 11, 19, 1, 0, tzinfo=listener.dt.timezone.utc).timestamp())   # no clock run
+        self.clips.stop()
+        with mock.patch.object(listener, "clips_waiting", lambda: ["20261119T003000-p.json"]):
+            runs = self._run(60, lambda: [], lambda: 0, clock_step=1, clock_from=quiet)
+        self.clips.start()
+        self.assertEqual(runs, ["tvclipwork"] * 3)    # 0, 15 and 30 minutes, then the file's own tries take over
+
+    def test_a_clip_never_jumps_a_waiting_run(self):
+        self.clips.stop()
+        with mock.patch.object(listener, "clips_waiting", lambda: ["a.json"]):
+            self.assertEqual(self._run(5, lambda: [], lambda: 1), [])
+        self.clips.start()
+
+    def test_no_clip_folder_means_nothing_waiting(self):
+        self.clips.stop()
+        err = listener.urllib.error.HTTPError("u", 404, "Not Found", {}, None)
+        with mock.patch.object(listener, "_gh", mock.Mock(side_effect=err)):
+            self.assertEqual(listener.clips_waiting(), [])
+        with mock.patch.object(listener, "_gh", lambda path: [{"name": "b.json"}, {"name": ".gitkeep"}, {"name": "a.json"}]):
+            self.assertEqual(listener.clips_waiting(), ["a.json", "b.json"])
+        self.clips.start()
 
 
 if __name__ == "__main__":

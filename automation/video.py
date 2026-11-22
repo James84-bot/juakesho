@@ -204,12 +204,35 @@ def render_frames(html_path: Path, frame_dir: Path, frames: int, w: int = 1080, 
         pool.map(_frame_worker, [(str(html_path), str(frame_dir), frames, k, n, w, h, alpha) for k in range(n)])
 
 
-def footage_graph(dur: float) -> str:
-    """The clip filling 9:16 (cropped from the centre, looped if short), slightly darkened and moving, with the
-    transparent design frames on top."""
-    return ("[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30,"
-            f"eq=brightness=-0.08:saturation=1.05,trim=duration={dur},setpts=PTS-STARTPTS[bg];"
-            "[bg][1:v]overlay=0:0:format=auto:shortest=1,format=yuv420p[v]")
+# A TV station's frame carries its own graphics: a name strap and news ticker across the bottom (on Kenyan stations
+# up to about the lowest 28%) and a logo, clock or LIVE bug in the top corners. Only the picture between them is used.
+TV_KEEP = (0.08, 0.72)   # from 8% to 72% of the frame's height; the sides go when it is cropped to the picture slot
+
+
+def footage_graph(dur: float, slot: tuple[int, int] | None = None, tv: bool = False) -> str:
+    """The clip under the transparent design frames (looped if short).
+    Stock footage: filling 9:16 (cropped from the centre), slightly darkened.
+    A TV clip (tv): its graphics band cut off first. With `slot` (top, height: where the open layout's pictures sit)
+    the clip takes the picture's place, sharp, across the full width, over a blurred, darkened copy of itself, so the
+    footage lines look like the photo lines. Without a slot it fills the screen."""
+    if not tv:
+        return ("[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,fps=30,"
+                f"eq=brightness=-0.08:saturation=1.05,trim=duration={dur},setpts=PTS-STARTPTS[bg];"
+                "[bg][1:v]overlay=0:0:format=auto:shortest=1,format=yuv420p[v]")
+    a, b = TV_KEEP
+    band = f"crop=iw:trunc(ih*{b - a:.2f}/2)*2:0:trunc(ih*{a:.2f}/2)*2"
+    clock = f"fps=30,trim=duration={dur},setpts=PTS-STARTPTS"
+    if not slot:
+        return (f"[0:v]{band},scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1,{clock},"
+                "eq=brightness=-0.08:saturation=1.05[bg];"
+                "[bg][1:v]overlay=0:0:format=auto:shortest=1,format=yuv420p[v]")
+    top, h = int(slot[0]), int(slot[1]) // 2 * 2
+    return (f"[0:v]{band},split=2[x][y];"
+            f"[x]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=40:2,"
+            f"eq=brightness=-0.22:saturation=1.1,setsar=1,{clock}[bg];"
+            f"[y]scale=1080:{h}:force_original_aspect_ratio=increase,crop=1080:{h},setsar=1,{clock}[fg];"
+            f"[bg][fg]overlay=0:{top}:shortest=1[base];"
+            "[base][1:v]overlay=0:0:format=auto:shortest=1,format=yuv420p[v]")
 
 
 def beats_segment(env, post: dict, beats: list[str], kicker: str, out_mp4: Path, ff: str, tail: float = 0.5) -> float:
@@ -253,6 +276,9 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         tmp = Path(tmp)
         (tmp / "page.html").write_text(html, encoding="utf-8")
         _open(page, tmp / "page.html")
+        # where the open layout puts its pictures (the template marks it): a TV clip plays there, in the photo's place
+        slot = page.evaluate("(() => { const e = document.querySelector('.fslot');"
+                             " return e ? [+e.dataset.top, +e.dataset.h] : null })()") if footage else None
         import mtaa
         own = post["template"] in mtaa.TEMPLATES   # Mtaa Mode: its own timeline (a scene runs 20-35 s), its own sound
         dur = round(t + 1.2, 2) if beats else mtaa.duration(post) if own else duration_for(post, page.evaluate("window.__motionEnd()"))
@@ -280,7 +306,7 @@ def make_reel(page, env, post: dict, out_dir: Path, ff: str) -> Path:
         if footage:   # real moving footage underneath, the design frames on top
             cmd = [ff, "-y", "-loglevel", "error", "-stream_loop", "-1", "-i", str(under),
                    "-framerate", str(FPS), "-i", str(tmp / "f%04d.png"), "-i", str(tmp / "audio.wav"),
-                   "-filter_complex", footage_graph(dur), "-map", "[v]", "-map", "2:a",
+                   "-filter_complex", footage_graph(dur, slot, tv=post.get("footage_from") == "tv"), "-map", "[v]", "-map", "2:a",
                    *X264,
                    "-c:a", "aac", "-b:a", "160k", "-ar", "44100", "-t", str(dur),
                    "-movflags", "+faststart", str(target_mp4)]

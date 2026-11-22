@@ -16,8 +16,7 @@ on:
     - cron: "40 5-17/2 * * *" # every 2 h, 08:40-20:40 EAT: a breaking post, only when several newsrooms report a new story
     - cron: "10 14 * * 3"     # Wednesday 17:10 EAT: write Friday-Sunday close to their slots (backup to the listener)
     - cron: "0 6 * * 6"       # Saturday 09:00 EAT: Kenya This Week, the weekly YouTube show, written and sent to record
-  repository_dispatch:
-    types: [tvclip]           # a TV clip your computer fetched (automation/tvclip_local.py)
+  # TV clips from your computer come in through tvclip.yml (a queue): the listener starts `tvclipwork`
   workflow_dispatch:
     inputs:
       command:
@@ -60,7 +59,6 @@ jobs:
       TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}   # optional: TikTok posting (see automation/tiktok.py)
       TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
       TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
-      TVCLIP_PAYLOAD: ${{ github.event_name == 'repository_dispatch' && toJson(github.event.client_payload) || '' }}
       # GitHub Pages serves images/videos with correct content types (enable Pages: Settings → Pages → main / root)
       PUBLIC_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
     steps:
@@ -84,7 +82,6 @@ jobs:
           # Until the Telegram secrets exist, scheduled runs skip quietly instead of failing every 2 hours
           if [ -z "$TELEGRAM_BOT_TOKEN" ] && [ "${{ github.event_name }}" = "schedule" ]; then
             echo "Secrets not set yet: skipping. See automation/.env.example"; echo "c=skip" >> "$GITHUB_OUTPUT"; exit 0; fi
-          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then echo "c=tvclipwork" >> "$GITHUB_OUTPUT"; exit 0; fi
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
             if ! printf '%s' "$COMMAND_IN" | grep -Eq '^[A-Za-z0-9 ._:=-]{1,80}$'; then echo "Rejected command"; exit 1; fi
             # "fulltimekenya: samples" runs one command for one brand (automation/brands.py); no prefix = Kenya on Record

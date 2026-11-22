@@ -1053,8 +1053,10 @@ def tvclip_work(payload: dict) -> str:
         if post:
             break
     else:
+        _drop_raw(payload)
         return f"{pid}: not in this or last week"
     if not post.get("beats") or (not sample and post["status"] not in {"rendered", "awaiting", "approved"}):
+        _drop_raw(payload)   # gone out or held: the raw clip leaves the chat unused
         return f"{pid}: {post['status']}, left as it is"
     same, why = same_event(post, str(payload.get("title") or ""))
     if not same:   # the photo Reel stays: footage of another event under our lines would be a false picture
@@ -1082,10 +1084,11 @@ def tvclip_work(payload: dict) -> str:
     photos.attach([post], out_dir)   # this runner's copy of the story's photos (the lead one opens the Reel)
     for k in ("video_file", "video_credit", "video_source"):
         post.pop(k, None)
-    if post.get("photo_file"):   # photo first, then the station's footage behind the lines that follow
-        post.update(broll_file=str(footage), broll_credit="", broll_label=f"Footage: {channel}")
-    else:                        # no photo of the story: the footage carries the whole Reel
-        post.update(video_file=str(footage), video_credit=f"Footage: {channel}")
+    if not post.get("photo_file"):   # the news photo opens every Reel and is its cover: a whole Reel of a station's
+        footage.unlink(missing_ok=True)   # broadcast under our lines is not one of ours
+        return f"{pid}: no photo of the story to open the Reel with, {channel}'s clip not used"
+    # photo first, then the station's footage in the photo's place on the lines that follow (its graphics cut off)
+    post.update(broll_file=str(footage), broll_credit="", broll_label=f"Footage: {channel}", footage_from="tv")
     post["clip_credit"] = f"Clip: {channel}, short excerpt for news reporting"
     video.make_reels([post], out_dir)
     if sample:
@@ -1098,6 +1101,41 @@ def tvclip_work(payload: dict) -> str:
     post["tv_clip_used"] = {"channel": channel, "url": str(payload.get("url") or ""), "window": [a, b]}
     save_week(data)
     return f"{pid}: {channel} footage {a:.1f}-{b:.1f}s added"
+
+
+def tvclip_queue_work(now: dt.datetime | None = None, folder: Path | None = None) -> list[str]:
+    """Every TV clip waiting in state/tvclips (tvclip_queue.py), oldest first: tvclip_work makes the Reel, then the
+    file is deleted. A clip whose work errors stays for the next run, up to MAX_TRIES; one older than MAX_AGE (its
+    post has gone out) is dropped. Returns one line per clip."""
+    import tvclip_queue as q
+    now = now or dt.datetime.now(dt.timezone.utc)
+    notes = []
+    for path in q.pending(folder or STATE / "tvclips"):
+        try:
+            entry = json.loads(path.read_text(encoding="utf-8"))
+            queued = dt.datetime.fromisoformat(str(entry["queued_at"]))
+        except (ValueError, KeyError, TypeError) as e:
+            path.unlink(missing_ok=True)
+            notes.append(f"{path.name}: unreadable, dropped ({str(e)[:80]})")
+            continue
+        if now - queued > q.MAX_AGE:
+            _drop_raw(entry)
+            path.unlink(missing_ok=True)
+            notes.append(f"{entry.get('post', '?')}: clip came in {queued:%d %b %H:%M} UTC, too old, dropped")
+            continue
+        try:
+            note = tvclip_work(entry)
+        except Exception as e:
+            entry["tries"] = int(entry.get("tries") or 0) + 1
+            note = f"{entry.get('post', '?')}: failed (try {entry['tries']} of {q.MAX_TRIES}): {str(e)[:200]}"
+            if entry["tries"] < q.MAX_TRIES:   # kept: the listener starts another run for it
+                path.write_text(json.dumps(entry, indent=1), encoding="utf-8")
+                notes.append(note)
+                continue
+            _drop_raw(entry)
+        path.unlink(missing_ok=True)
+        notes.append(note)
+    return notes
 
 
 def process_clips(dry_run: bool = False) -> int:
@@ -1341,8 +1379,7 @@ def _preview_text(p: dict) -> str:
     clip = p.get("tv_clip") if policy_on("station_footage") else None
     if clip:
         lines += [f"🎬 TV clip of this story: <a href=\"{esc(clip['url'])}\">{esc(clip['channel'])}: {esc(clip['title'][:80])}</a>",
-                  "To add the real footage: screen-record up to 8 seconds of the key moment and send it to me with",
-                  f"<code>nukuu {esc(clip['channel'])} {esc(clip['url'])}</code>"]
+                  "Up to 8 s of it goes behind the lines automatically if it shows the same event."]
     kind = p.get("photo_kind")
     if kind == "event":
         lines += ["📷 Photo from the event itself (licensed)"]
@@ -3479,17 +3516,12 @@ def _main(argv: list[str] | None = None) -> int:
         except Exception as e:
             log(f"writer check failed ({drafter.provider()}): {e}")
             return 1
-    if a.command == "tvclipwork":   # a TV clip your computer sent (repository_dispatch from tvclip_local.py)
-        try:
-            payload = json.loads(os.environ.get("TVCLIP_PAYLOAD") or "{}")
-        except ValueError:
-            payload = {}
-        try:
-            note = tvclip_work(payload)
-        except Exception as e:
-            note = f"{payload.get('post', '?')}: failed: {str(e)[:200]}"
-        print("::notice title=tvclipwork::" + note)
-        _notify("📺 " + _esc(note))
+    if a.command == "tvclipwork":   # TV clips your computer sent (tvclip_local.py), queued by tvclip.yml
+        notes = tvclip_queue_work()
+        for note in notes or ["no TV clip waiting"]:
+            print("::notice title=tvclipwork::" + note)
+            if re.search(r" footage [\d.]+-[\d.]+s added$", note):   # only news worth a message: real video is in
+                _notify("📺 " + _esc(note))
         return 0
     if a.command == "tvclipcheck":   # can this runner fetch a TV clip? (YouTube refuses many cloud servers)
         import radar
@@ -3497,6 +3529,17 @@ def _main(argv: list[str] | None = None) -> int:
         vids = (radar._load(72) or {}).get("catalog") or []
         results = [f"{v['channel']}: {tvclip.check(v['url'])}" for v in vids[:3]]
         print("::notice title=tvclipcheck::" + " | ".join(results or ["no TV clips in the radar"]))
+        import tvclip_local   # the public bodies your computer prefers, known by channel id: is each id theirs?
+        for cid, name in tvclip_local.PUBLIC_BODIES.items():
+            try:
+                xml = radar._get(f"https://www.youtube.com/feeds/videos.xml?channel_id={cid}").decode("utf-8", "replace")
+                title = (re.search(r"<title>([^<]*)</title>", xml) or [None, "?"])[1]
+                entry = xml.split("<entry>", 1)[1] if "<entry>" in xml else ""
+                newest = (re.search(r"<published>([^<]{10})", entry) or [None, "none"])[1]
+                print(f"::notice title=public body::{name} ({cid}): the feed is '{title}', "
+                      f"{xml.count('<entry>')} recent uploads, newest {newest}")
+            except Exception as e:
+                print(f"::warning title=public body::{name} ({cid}): {str(e)[:120]}")
         return 0
     if a.command == "weekly":   # Saturday: Kenya This Week, written and sent to record (Kenya on Record only)
         if brands.MAIN:
