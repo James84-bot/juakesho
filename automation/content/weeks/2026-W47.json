@@ -3102,13 +3102,105 @@
       "reel": true,
       "tg_msg": 1410,
       "photo_checked": "2026-11-21T16:21:05.741716+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1122m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Cancer patients",
+      "line": "New health rules now stop *SHA cover* from running out in the middle of cancer care.",
+      "fact": "New rules ensure cancer therapy continues uninterrupted when standard benefit caps run out.",
+      "source": "People Daily, 2026-11-21",
+      "message": "Cancer patients will no longer face halted treatment when their SHA benefits run out.",
+      "action": "Report any hospital that denies approved cancer treatment under SHA to 0800720601",
+      "photo_query": "hospital ward Kenya",
+      "who": "Social Health Authority",
+      "where": "National",
+      "when": "21 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Cancer patients will complete their chemotherapy and radiotherapy sessions without paying out of pocket midway.",
+      "beats": [
+        "New rules stop *SHA cover* from cutting out during cancer treatment.",
+        "Patients previously lost *cover* halfway through chemotherapy cycles.",
+        "SHA must immediately enforce these *cancer rules* in all hospitals.",
+        "Has your hospital accepted your *SHA cover* without any delays?"
+      ],
+      "caption": "New health regulations ensure cancer patients do not lose their SHA cover midway through treatment.\nPatients will no longer face stopped chemotherapy because standard benefit limits ran out.\nSHA must ensure every contracted hospital honours these guidelines immediately.\nHas your local hospital accepted your SHA card without delays?\n\n#SHA #HealthCare #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-22T09:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Inside Kenya’s new cancer rules seeking to stop patients from running out of SHA cover mid-treatment",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNNkJrSXp0V1lmYm55UGFEZlY1bGFyV040eGFXNU00bi03NnpPMFFHcGZ2MFZ5QkRPMUdMMzM0ZmdhR2pkV0NsUUd3MEF6a3NyQkdXR3FVSkJlY0s1NERNMHhZZlZucFZNenJvQnRqZGFCaHNfc2lDSVdMa2FTTEwwWnk1ZTVJUS1yd01BVEk2Q0I4S2hibFd2N01JUFVyREptTDhRT1c5WmtfMkcxX2JrRGE5ajZBSVhTMVZ3c2VuZ25FZUdOTUdSSUtxR3E?oc=5",
+          "published": "2026-11-21"
+        }
+      ],
+      "quotes": [],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 9,
+        "demand": 8,
+        "action": 9,
+        "fair": 8,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.5,
+        "note": "The demand beat is specific and actionable with a real toll-free number."
+      },
+      "drafted_at": "2026-11-22T06:45:26.360129+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1122m-photo.jpg",
+      "photo_credit": "Photo: KBC · Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/ksh800000-cancer-treatment-benefit-remains-unchanged-sha-clarifies/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1122m-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1122m-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Ksh800,000 cancer treatment benefit remains unchanged, SHA clarifies"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "MCK strengthens risk oversight to align decisions with strategic goals"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Somali Elders Accuse Kenya of Allegedly Hosting Senior Al-Shabaab Leaders"
+        }
+      ],
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1428,
+      "auto": true,
+      "decided_at": "2026-11-22T06:47:11.208899+03:00"
     }
   ],
   "scripts": {
-    "radio": "Jambo and welcome to Kenya on Record. I am your host. Today, we are looking at how our public officers balance national duty against personal politics.\n\nThis week, Prime Cabinet Secretary and Cabinet Secretary for Foreign Affairs, Musalia Mudavadi, was scheduled to represent Kenya at a high-level international summit in Norway. This was not a leisure trip—it was an official engagement where critical bilateral discussions on trade, investment, and diplomacy take place. Yet, instead of representing Kenya's strategic interests on the global stage, the Foreign CS skipped the summit to attend local political rallies right here at home.\n\nWhen a Cabinet Secretary chooses political posturing over official diplomatic duty, we must ask: who pays the price? Taxpayers fund the Ministry of Foreign Affairs to build global partnerships and position Kenya as a serious regional leader. Sacrificing state duty for political mileage undermines the trust we place in public institutions.\n\nKwa ufupi: Waziri wa Mambo ya Nje Musalia Mudavadi alikosa mkutano muhimu wa kimataifa nchini Norway ili kuhudhuria mikutano ya kisiasa nchini. Ni muhimu viongozi wetu watangulize kazi ya wananchi badala ya siasa za kibinafsi.\n\nThis is Kenya on Record. Let us keep demanding accountability from those in power.",
-    "voice_note": "Bana, tabia ya viongozi kuweka siasa mbele ya kazi ya wananchi lazima ikome. Just this week, Foreign Affairs CS Musalia Mudavadi skipped an important international summit in Norway. Imagine a whole Foreign Minister skipping a major diplomatic conference where national trade and development interests are being negotiated, just to attend local political rallies back home! When state officers prioritize political campaign strategy over official government duties, it is the taxpayer who loses out. We pay their salaries so they can represent Kenya’s interests globally, not run local political errands on government time. Share this voice note, talk to your friends, and let’s keep reminding these leaders that state work comes before rally noise. This is Kenya on Record.",
-    "sms": "Usiibiwe: When state officers skip key international duties for local rallies, taxpayers lose out. Demand work over political campaigns. Kenya on Record.",
-    "reels": "Is local politics more important than Kenya’s standing on the global stage? Foreign CS Musalia Mudavadi skipped an official international summit in Norway this week, choosing local political rallies instead. State representation costs taxpayers money, yet critical diplomatic engagements get sidelined for political mileage. We deserve leaders who put national duty before rally noise. Follow Kenya on Record for real accountability."
+    "radio": "Jambo and welcome back to Kenya on Record, your trusted segment for citizen rights and public accountability. This week, we are tracking a crucial development in public healthcare that directly impacts thousands of Kenyan families.\n\nFor a long time, one of the most painful issues under national health cover was what happened when a cancer patient’s benefit limit ran out mid-treatment. Chemotherapy or radiotherapy would simply stop unless the family paid out of pocket. In oncology, interrupted care often means starting afresh or facing severe health risks.\n\nThe government has now announced that cancer patients will no longer face halted treatment once their SHA benefits are exhausted. Healthcare facilities are expected to maintain continuity of care regardless of benefit depletion.\n\nThis is a vital safeguard, but policy on paper must match reality on the ground. If you or a relative are receiving cancer care under SHA, know that hospitals are mandated not to interrupt your sessions over depleted benefit caps. We must monitor our local public and private facilities to ensure this directive is strictly enforced.\n\nKwa ufupi: Serikali imetangaza kuwa wagonjwa wa saratani hawatasitishiwa matibabu hata kama kiwango cha bima ya SHA kitatamatika. Ni haki yako kupata matibabu yanayoendelea bila kukatiziwa. Fuatilia hospitali yako kuhakikisha wanazingatia agizo hili.\n\nStay informed, stay vigilant, and let us hold our public health system accountable together.",
+    "voice_note": "Habari, quick update from Kenya on Record for your week. If you have a relative or friend undergoing cancer treatment under SHA, please listen closely and share this.\n\nPreviously, when your SHA benefit limit was reached, facilities would pause chemo or radiation until cash was paid. That policy has changed: cancer treatment will no longer be halted even when your SHA benefits run out. Continuous care is now required.\n\nIf a facility tries to stop treatment mid-cycle claiming your SHA cover is empty, know your rights and lodge a complaint with the health authority. Healthcare is a right, not a favor. Forward this to anyone who needs to know today.",
+    "sms": "Usiibiwe: Cancer treatment under SHA must not be halted even if your limit runs out. Hospitals cannot deny care mid-treatment. Know your rights.",
+    "reels": "If you or a loved one is fighting cancer under SHA, this update matters. Cancer treatment will no longer be halted when your benefit limit runs out. Hospitals are now required to maintain continuous care without interruption. Know your rights, do not let any facility turn you away, and help us hold the health system accountable. Follow Kenya on Record."
   },
   "spend_usd": 0.0
 }
