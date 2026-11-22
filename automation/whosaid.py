@@ -75,11 +75,17 @@ def full_name(speaker: str, texts: list[str], lookup: bool = False) -> str:
     return wikidata_name(sur) if lookup else ""
 
 
+_NAMES: dict[str, str] = {}   # one Wikidata question per name per run (the photo steps ask for the speaker often)
+
+
 def wikidata_name(word: str, get=None) -> str:
     """The Kenyan public figure Wikidata knows by this name, when exactly one person it lists has it in their name
     and a Kenyan description ('Gachagua' -> 'Rigathi Gachagua'); '' when none or several do (no guessing)."""
-    import socialpics
-    get = get or socialpics._get_json
+    if get is None:
+        if word not in _NAMES:
+            import socialpics
+            _NAMES[word] = wikidata_name(word, socialpics._get_json)
+        return _NAMES[word]
     q = {"action": "wbsearchentities", "search": word, "language": "en", "type": "item", "limit": 10, "format": "json"}
     try:
         found = get("https://www.wikidata.org/w/api.php?" + __import__("urllib.parse").parse.urlencode(q)).get("search", [])

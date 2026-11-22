@@ -203,6 +203,27 @@ def _cached(out_dir: Path, pid: str) -> dict | None:
 MORE_PHOTOS = 2   # besides the lead photo: a Reel of 4-5 lines shows up to three different pictures
 
 
+def _speaker_line(p: dict, lead: dict, lead_who: str, out_dir: Path) -> None:
+    """A Reel line that gives someone's words shows that person: the lead picture when it is of them, else a
+    picture of them added for that line (`speaker_shot` = [line, picture], read by render.py)."""
+    p.pop("speaker_shot", None)
+    if p.get("template") != "reel" or p.get("person_file"):
+        return
+    name, qi = quoted_speaker(p)
+    if not name or qi < 0:
+        return
+    if name == lead_who and lead.get("kind") in SHOWS_PERSON:
+        p["speaker_shot"] = [qi, 0]
+        return
+    face = speaker_photo(p, name, out_dir)
+    if not face:
+        return
+    p["extra_photos"] = list(p.get("extra_photos") or []) + [face["file"]]
+    p["shot_info"] = list(p.get("shot_info") or []) + [{"credit": face.get("credit", ""), "title": "", "speaker": name}]
+    p["photo_credit"] = " · ".join(dict.fromkeys([x for x in (p.get("photo_credit"), face.get("credit")) if x]))
+    p["speaker_shot"] = [qi, len(p["shot_info"]) - 1]
+
+
 def extra_photos(post: dict, lead: dict, out_dir: Path) -> list[dict]:
     """Other newsrooms' photos of the same story, for a news Reel whose lead photo is one. Cached like the lead
     photo, so a re-render shows the same pictures. Never raises; [] when there are none."""
@@ -580,10 +601,70 @@ def story_person(post: dict) -> str:
     return " ".join(words)
 
 
+def quoted_speaker(post: dict, lookup: bool = True) -> tuple[str, int]:
+    """The person whose words a line of the post gives, by full name, and that line's index: 'Treasury CS Mbadi:
+    “...”' -> ('John Mbadi', 1) when the post or its reports name him so (or Wikidata knows one Kenyan figure by that
+    name, with `lookup`). ('', -1) when no line quotes a person (a body, a club), or the post carries an allegation
+    (no face beside an allegation). James, 23 Nov: "if we quote someone use their picture or video"."""
+    import guard
+    import teams
+    import whosaid
+    beats = [str(b) for b in post.get("beats") or []]
+    i, said = next(((i, guard.quote_beat(b)) for i, b in enumerate(beats) if guard.quote_beat(b)), (-1, None))
+    if not said or _accused(post):
+        return "", -1
+    texts = [f"{q.get('speaker', '')} {q.get('context', '')}" for q in post.get("quotes") or [] if isinstance(q, dict)]
+    texts += [str(post.get(k) or "") for k in ("message", "caption", "who")] + beats
+    texts += [str(x.get("title") or "") for x in post.get("source_links") or [] if isinstance(x, dict)]
+    name = whosaid.full_name(said[0], texts, lookup=lookup)
+    if not name or any(w.lower() in teams.NAME_WORDS for w in name.split()):
+        return "", -1
+    return name, i
+
+
 def lead_person(post: dict) -> str:
-    """The person a story's LEAD picture must show ('' = any fitting picture): its person, unless the post is
-    built on one report (its own picture leads) or carries an allegation."""
-    return story_person(post)
+    """The person a story's LEAD picture must show ('' = any fitting picture): the speaker when the post opens with
+    their words, else its person; '' when it carries an allegation."""
+    name, i = quoted_speaker(post)
+    return name if i == 0 else story_person(post)
+
+
+SHOWS_PERSON = {"posted", "file", "approved", "yours"}   # picture kinds checked to show the post's person
+
+
+def speaker_photo(post: dict, name: str, out_dir: Path) -> dict | None:
+    """A picture in which the quoted speaker can be clearly seen, for the line that gives their words: the story's
+    own reports first, then the wider news of it, reports naming them, their own Instagram, Wikimedia Commons. Each
+    picture is looked at against the story with them as its person (picture.fits). A file photo says so in its
+    credit. Cached like the lead photo. None when no picture shows them (never a stand-in)."""
+    if _accused(post):
+        return None
+    pid = f"{post['id']}-speaker"
+    hit = _cached(out_dir, pid)
+    if hit:
+        return hit
+    beats = [str(b) for b in post.get("beats") or []]
+    qi = next((i for i, b in enumerate(beats) if __import__("guard").quote_beat(b)), -1)
+    probe = {k: v for k, v in post.items() if k not in {"photo_file", "extra_photos", "shot_info", "material", "photo"}}
+    # the quote line first: lead_person(probe) is then the speaker, so every picture must show them
+    probe.update(id=pid, who=name, beats=([beats[qi]] + beats[:qi] + beats[qi + 1:]) if qi >= 0 else beats)
+    import posted
+    steps = (("the story's reports", lambda: posted.find(probe) if news_photos_ok() else None),
+             ("the story in the wider news", lambda: _searched(probe)),
+             ("reports naming them", lambda: posted.find_named(probe) if news_photos_ok() else None),
+             ("their own posts", lambda: _their_own(probe) if news_photos_ok() else None),
+             ("portrait", lambda: commons_portrait(probe)))
+    for label, step in steps:
+        try:
+            got = step()
+        except Exception as e:
+            _note(f"  speaker photo ({label}) failed for {post.get('id')}: {e}")
+            got = None
+        if got and got[1].get("kind", "file") in SHOWS_PERSON | {"event"}:
+            _note(f"  speaker photo for {post['id']}: {name} ({label})")
+            return _save(out_dir, pid, got[0], {**got[1], "kind": got[1].get("kind", "file")})
+    _note(f"  no picture of {name} for {post['id']}: their line keeps the story's pictures")
+    return None
 
 
 def commons_portrait(post: dict) -> tuple[bytes, dict] | None:
@@ -871,9 +952,11 @@ def _attach(posts: list[dict], out_dir: Path) -> None:
                 p.pop("person_file", None)
                 p.pop("person_credit", None)
         if p.get("photo") or p.get("photo_query") or p.get("event_query"):
-            person = story_person(p)
-            # the searches find people by `who`: a story about a player whose `who` is his club looks for him
-            got = fetch(p if not person or full_name(str(p.get("who", ""))) else {**p, "who": person}, out_dir / "photos")
+            person = lead_person(p)
+            # the searches find people by `who`: a story about a player whose `who` is his club looks for him, and
+            # a Reel that opens with someone's words looks for the speaker
+            got = fetch(p if not person or full_name(str(p.get("who", ""))) == person else {**p, "who": person},
+                        out_dir / "photos")
             if got:
                 p["photo_file"], p["photo_credit"] = got["file"], got["credit"]
                 p["photo_kind"] = got.get("kind", "symbolic")
@@ -888,6 +971,7 @@ def _attach(posts: list[dict], out_dir: Path) -> None:
                     p.pop("extra_photos", None)
                 # per picture: its own credit (shown under it) and its report's headline (to put it on the right line)
                 p["shot_info"] = [{"credit": x.get("credit", ""), "title": x.get("title", "")} for x in [got] + more]
+                _speaker_line(p, got, person, out_dir / "photos")
             else:
-                for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "extra_photos", "shot_info"):
+                for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "extra_photos", "shot_info", "speaker_shot"):
                     p.pop(k, None)

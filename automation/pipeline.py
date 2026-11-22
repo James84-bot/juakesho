@@ -848,7 +848,7 @@ def rephoto(label: str, only: str | None = None) -> list[str]:
             p["group"] = groups.setdefault(p["group"], _next_rev(p["group"]))
         for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source",
                   "extra_photos", "shot_info", "broll_file", "broll_credit", "track_credit", "decided_at", "auto", "tg_msg",
-                  "photo_checked", "photo_fit"):
+                  "photo_checked", "photo_fit", "speaker_shot", "footage_quote"):
             p.pop(k, None)
         p["status"] = "drafted"
         changed.append(p["id"])
@@ -1045,6 +1045,26 @@ def clip_moment(segments: list[dict], post: dict, length: float, span: float = 8
     return round(best_at, 2), round(min(length, best_at + span), 2)
 
 
+def quote_moment(segments: list[dict], words: str, length: float, span: float = 8.0) -> tuple[float, float] | None:
+    """Where in a TV clip the speaker says the quoted words: the window, from the start of the segment where they
+    begin, whose speech holds at least 60% of the quote's words (4 at least). None when the clip doesn't carry them:
+    then the footage shows what the story is about, not them saying it."""
+    want = [w[:6] for w in re.findall(r"[a-z']{3,}", str(words or "").lower())]
+    if len(set(want)) < 4:
+        return None
+    best, best_at = 0.0, None
+    for seg in segments:
+        a = max(0.0, min(seg["start"], length - span))
+        said = " ".join(x["text"] for x in segments if x["end"] > a and x["start"] < a + span).lower()
+        heard = {w[:6] for w in re.findall(r"[a-z']{3,}", said)}
+        share = sum(1 for w in set(want) if w in heard) / len(set(want))
+        if share > best:
+            best, best_at = share, a
+    if best_at is None or best < 0.6:
+        return None
+    return round(best_at, 2), round(min(length, best_at + span), 2)
+
+
 def cut_footage(ff: str, src: Path, a: float, b: float, out: Path) -> bool:
     """The TV window as silent, full-screen-ready footage (the composer crops it to 9:16 and lays our lines over it)."""
     import subprocess
@@ -1129,7 +1149,12 @@ def tvclip_work(payload: dict) -> str:
         src = Path(tmp) / "tv.mp4"
         tazama.download(_tg_file_path, need("TELEGRAM_BOT_TOKEN")["TELEGRAM_BOT_TOKEN"], file_id, src)
         meta = tazama.probe(ff, src)
-        a, b = clip_moment(tazama.transcribe(src), post, meta["duration"])
+        segments = tazama.transcribe(src)
+        import guard
+        _, qi = photos.quoted_speaker(post)
+        said = guard.quote_beat(str(post["beats"][qi])) if qi >= 0 else None
+        said_at = quote_moment(segments, said[1], meta["duration"]) if said else None
+        a, b = said_at or clip_moment(segments, post, meta["duration"])
         _drop_raw(payload)   # we have the file: the raw clip leaves the chat
         footage = out_dir / "videos" / f"{post['id']}-tv.mp4"
         footage.parent.mkdir(parents=True, exist_ok=True)
@@ -1143,6 +1168,10 @@ def tvclip_work(payload: dict) -> str:
         return f"{pid}: no photo of the story to open the Reel with, {channel}'s clip not used"
     # photo first, then the station's footage in the photo's place on the lines that follow (its graphics cut off)
     post.update(broll_file=str(footage), broll_credit="", broll_label=f"Footage: {channel}", footage_from="tv")
+    post.pop("footage_quote", None)
+    if said_at and qi >= 1:   # the clip has them saying the quoted words: it plays on that line (the first line
+        post["footage_quote"] = qi   # stays the news photo, the cover)
+    log(f"{pid}: {channel}'s clip {a:.1f}-{b:.1f}s" + (" (the speaker saying the quote)" if said_at else ""))
     post["clip_credit"] = f"Clip: {channel}, short excerpt for news reporting"
     video.make_reels([post], out_dir)
     if sample:
@@ -2365,8 +2394,8 @@ def receipts_comment(post: dict) -> str | None:
 
 def post_receipts(post: dict, ig_id: str | None, fb_id: str | None) -> None:
     text = receipts_comment(post)
-    if not text:
-        return
+    if not text or (post.get("size") == "story" and not post.get("reel")):
+        return   # a Story takes no comments (the API refuses them); its sources are on the Story itself
     for target in (ig_id, fb_id):
         if not target:
             continue
@@ -2866,7 +2895,7 @@ def publish(dry_run: bool = False) -> None:
 
 SAMPLES = EXPORTS / "_samples"
 SAMPLE_DROP = ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source",
-               "broll_file", "broll_credit", "extra_photos", "shot_info",
+               "broll_file", "broll_credit", "extra_photos", "shot_info", "speaker_shot", "footage_quote",
                "track_credit", "status", "tg_msg", "ig_id", "fb_id", "fb_story_id", "yt_id", "tt_id", "tt_status")
 
 
@@ -3047,10 +3076,14 @@ def reel_samples(n: int = 3, dry_run: bool = False, send: bool = True, ids: list
         import photos as _ph
         import teams as _tm
         acc = _tm.accent_for(q)
-        who = _ph.story_person(q)
+        who = _ph.lead_person(q)
+        spk, qi = _ph.quoted_speaker(q)
         bits = ([f"opens with {_esc(guard_quote_speaker(q))}'s own words"] if guard_quote_speaker(q) else []) + \
             ([f"{_esc(acc['club'])} colours"] if acc else []) + \
-            ([f"lead picture must show {_esc(who)}"] if who else [])
+            ([f"lead picture must show {_esc(who)}"] if who else []) + \
+            ([f"line {qi + 1} shows {_esc(spk)}, the person quoted" + (" (TV clip of them saying it)" if q.get("footage_quote") else "")]
+             if q.get("speaker_shot") or q.get("footage_quote") else
+             [f"no picture of {_esc(spk)} passed the check, so their line keeps the story's pictures"] if spk and qi > 0 else [])
         note = (f"🧪 <b>Sample, not posted</b>: {_esc(q['id'][:-7])} made again in the current design"
                 + (": " + "; ".join(bits) if bits else "")
                 + (f". Music: {_esc(q['track_credit'])}" if q.get("track_credit") else "") + ".")

@@ -411,11 +411,36 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
             fixed = post.get("shot_seq")   # a post that sets which picture goes on each line (the quiz's reveal)
             if isinstance(fixed, list) and len(fixed) == beats_n and all(isinstance(k, int) and 0 <= k < len(paths) for k in fixed):
                 ctx["seq"] = fixed
+            else:   # the line that gives someone's words shows them: the TV clip of them saying it, else their picture
+                ctx["seq"] = place_speaker(ctx["seq"], post.get("speaker_shot"), len(paths))
+                said = post.get("footage_quote")
+                if ctx["broll"] and isinstance(said, int) and not isinstance(said, bool):
+                    ctx["seq"] = place_speaker(ctx["seq"], [said, -1], len(paths))
     import mtaa
     if post["template"] in mtaa.TEMPLATES:   # Mtaa Mode: the timings and the cast its templates animate with
         ctx["m"] = mtaa.context(post)
         ctx["logo_on_dark"] = (LOGO / "wordmark-on-dark.svg").as_uri()
     return env.get_template(f"{post['template']}.html.j2").render(**ctx)
+
+
+def place_speaker(seq: list[int], spot, photos: int) -> list[int]:
+    """`spot` = [line, picture]: that line shows that picture (-1: the footage), and the speaker's picture shows on
+    no other line (it belongs beside their words). The line it leaves keeps a picture not beside it. The first line
+    keeps the lead picture (it is the cover) unless the speaker's words open the Reel."""
+    if not (isinstance(spot, list) and len(spot) == 2 and all(isinstance(x, int) for x in spot)):
+        return seq
+    line, shot = spot
+    if not (0 <= line < len(seq) and -1 <= shot < photos) or (line == 0 and shot != 0):
+        return seq
+    out = list(seq)
+    out[line] = shot
+    if shot > 0:
+        others = [k for k in range(photos) if k != shot]
+        for i in range(len(out)):
+            if i != line and out[i] == shot:
+                prev, nxt = out[i - 1] if i else None, out[i + 1] if i + 1 < len(out) else None
+                out[i] = next((k for k in others if k not in (prev, nxt)), others[0])
+    return out
 
 
 def shot_sequence(beats: int, photos: int, broll: bool) -> list[int]:
