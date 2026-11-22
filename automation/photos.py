@@ -553,33 +553,68 @@ def full_name(who: str) -> str:
 
 def commons_portrait(post: dict) -> tuple[bytes, dict] | None:
     """A licensed photo of the public figure the post is about (Wikimedia Commons, CC0 / PD / CC BY / BY-SA),
-    found by their full name, which must be in the file's title. Labelled "File photo": it shows the real person,
-    not the day itself."""
-    name = full_name(str(post.get("who", "")))
+    found by their name, which must be in the file's title. Labelled "File photo": it shows the real person,
+    not the day itself. Asked by the full name first, then by every name they go by ("Bien Aime Baraza": files
+    are titled "Bien-Aimé Baraza ..."), each picture looked at against the story before it is used."""
+    import unicodedata
+    who = str(post.get("who", ""))
+    name = full_name(who)
     if not name:
         return None
     surname = name.split()[-1].lower()
-    params = {"action": "query", "generator": "search", "gsrsearch": f'"{name}" filetype:bitmap', "gsrnamespace": 6,
-              "gsrlimit": 20, "prop": "imageinfo", "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600,
-              "format": "json"}
-    pages = json.loads(_get(f"{COMMONS}?{urllib.parse.urlencode(params)}")).get("query", {}).get("pages", {})
-    good = []
-    for page in sorted(pages.values(), key=lambda p: p.get("index", 0)):
-        info = (page.get("imageinfo") or [{}])[0]
-        md = info.get("extmetadata", {})
-        lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
-        if surname not in page.get("title", "").lower():   # a photo OF them, not one that merely mentions them
-            continue
-        if info.get("mime") not in {"image/jpeg", "image/png"} or info.get("width", 0) < 800 or not _licence_ok(lic):
-            continue
-        artist = html.unescape(re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown"))).strip()[:50]
-        good.append((info.get("thumburl") or info["url"],
-                     {"credit": f"File photo: {artist} / Wikimedia Commons, {lic}", "url": info.get("descriptionurl", ""),
-                      "kind": "file"}))
-    _note(f"  portrait '{name}' for {post.get('id')}: {len(pages)} found, {len(good)} usable")
-    for url, meta in good[:2]:
-        return _get(url), meta
+    words = [w for w in re.findall(r"[A-Z][A-Za-z'-]{2,}", who) if w.lower() not in TITLES and not INSTITUTION.match(w.lower())]
+    asks = list(dict.fromkeys([f'"{name}"', " ".join(words)] if len(words) > 2 else [f'"{name}"']))
+
+    def plain(t: str) -> str:
+        return unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()
+    good, found = [], 0
+    for ask in asks:
+        params = {"action": "query", "generator": "search", "gsrsearch": f"{ask} filetype:bitmap", "gsrnamespace": 6,
+                  "gsrlimit": 20, "prop": "imageinfo", "iiprop": "url|extmetadata|size|mime", "iiurlwidth": 1600,
+                  "format": "json"}
+        pages = json.loads(_get(f"{COMMONS}?{urllib.parse.urlencode(params)}")).get("query", {}).get("pages", {})
+        found += len(pages)
+        why = {"title": 0, "size": 0, "licence": 0}
+        for page in sorted(pages.values(), key=lambda p: p.get("index", 0)):
+            info = (page.get("imageinfo") or [{}])[0]
+            md = info.get("extmetadata", {})
+            lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
+            if not re.search(rf"\b{re.escape(surname)}\b", plain(page.get("title", ""))):   # a photo OF them
+                why["title"] += 1
+                continue
+            if info.get("mime") not in {"image/jpeg", "image/png"} or info.get("width", 0) < 800:
+                why["size"] += 1
+                continue
+            if not _licence_ok(lic):
+                why["licence"] += 1
+                continue
+            artist = html.unescape(re.sub(r"<[^>]+>", "", md.get("Artist", {}).get("value", "unknown"))).strip()[:50]
+            good.append((info.get("thumburl") or info["url"],
+                         {"credit": f"File photo: {artist} / Wikimedia Commons, {lic}",
+                          "url": info.get("descriptionurl", ""), "kind": "file"}))
+        _note(f"  portrait {ask} for {post.get('id')}: {len(pages)} found, {len(good)} usable so far, dropped {why}")
+        if good:
+            break
+    import picture
+    import posted
+    for url, meta in good[:3]:
+        data = _get(url)
+        fit = picture.fits(data, posted.story_line(post))
+        if fit == "" or fit is None:   # Commons titles are reliable: an unseen portrait of the person is used
+            return data, meta
+        _note(f"    portrait not used: {fit}")
     return None
+
+
+def _their_own(post: dict) -> tuple[bytes, dict] | None:
+    """A photo the post's person posted on their own public Instagram (socialpics.py), when the news has none."""
+    who = str(post.get("who", ""))
+    if not full_name(who):
+        return None
+    import posted
+    import socialpics
+    words = [w for w in re.findall(r"[A-Z][A-Za-z'-]{2,}", who) if w.lower() not in TITLES and not INSTITUTION.match(w.lower())]
+    return socialpics.their_photo(post, [" ".join(words), full_name(who)], posted.story_line(post), _get)
 
 
 def _topic_lead(post: dict) -> tuple[bytes, dict] | None:
@@ -651,6 +686,7 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             # (a brand can turn this off: on a sport page "who" is often a team, and a team is not a portrait)
             file_photos = brands.brand().get("file_photos", True)
             for name, step in (("file photo from the news", lambda: posted.find_named(post) if file_photos and news_photos_ok() and not _accused(post) else None),
+                               ("their own posts", lambda: _their_own(post) if file_photos and news_photos_ok() and not _accused(post) else None),
                                ("portrait", lambda: commons_portrait(post) if file_photos and not _accused(post) else None)):
                 try:
                     got = step()

@@ -201,9 +201,14 @@ def terms_for(post: dict) -> tuple[str, list[str]]:
     titled = surname and re.search(rf"\b(?:{titles})\.?\s+(?:[A-Z][\w'-]+\s+){{0,2}}{re.escape(surname)}\b",
                                    str(post.get("who", "")), re.I)
     if surname and not titled and not re.search(rf"\b{re.escape(surname)}\b", shown, re.I):
-        # a "person" with no title whom the post never names is not its subject ('Athletics Integrity Unit' gave
-        # 'unit' on 19 Nov and a police-shooting picture went on a doping story): match on the story's words
-        surname = ""
+        # the post may call them by another of their names: 'Bien' for Bien Aime Baraza (22 Nov), a stage name
+        # or a first name. That name is the one the news uses too, so it is the one to search by.
+        known = [w for w in re.findall(r"[A-Z][A-Za-z'-]{2,}", str(post.get("who", "")))
+                 if w.lower() not in photos.TITLES and not photos.INSTITUTION.match(w.lower())
+                 and re.search(rf"\b{re.escape(w)}\b", shown)]
+        # otherwise a "person" with no title whom the post never names is not its subject ('Athletics Integrity
+        # Unit' gave 'unit' on 19 Nov and a police-shooting picture went on a doping story): the story's words
+        surname = known[0].lower() if known else ""
     source = post.get("event_query") or " ".join(str(post.get(k, "")) for k in ("message", "headline", "title"))
     words = [w.lower() for w in re.findall(r"[A-Za-z][A-Za-z-]{3,}", source)]
     words = [w for w in dict.fromkeys(words) if w not in STOP and w != surname]
@@ -534,10 +539,12 @@ def find_named(post: dict) -> tuple[bytes, dict] | None:
     keys = ([surname] if surname else []) + [b for b in bodies if b != surname][:2]
     now = dt.datetime.now(dt.timezone.utc)
 
+    real = photos._surname(str(post.get("who", "")))
+
     def names_it(x: dict, key: str) -> bool:
         if not re.search(rf"\b{re.escape(key)}(?:'s|’s)?\b", x["title"].lower()):   # 'omar' is not 'omare'
             return False
-        if key != surname or not first:
+        if key != surname or key != real or not first:   # a stage name ('Bien') has no first name before it
             return True
         # a person: no OTHER first name right before the surname ("Ilhan Omar" is not Hassan Omar; "CS Ruku",
         # "President Ruto" and "Opiyo Wandayi" are fine)
