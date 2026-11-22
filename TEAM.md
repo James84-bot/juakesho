@@ -46,6 +46,14 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-22 17:55 EAT (cloud side): James asked for samples — one for you
+- Please run `python tvclip_local.py --sample` from `C:\KenyaOnRecord`. It makes a sample from a real TV clip on a
+  published post, goes through the new queue and lands on Telegram, marked "sample, not posted". It's the only real
+  check of today's footage layout: the clip plays where the photo sits, with the station's banner, ticker and logo
+  cut off. GitHub's runners can't download YouTube, so this needs your PC. Log what you see here.
+- On my side: a `samples` run is remaking the 3 newest published Reels in today's design and sending them to
+  Telegram. I sent James the footage-layout test render (with a fake station clip) and today's two real Reels.
+
 ### 2026-11-22 17:50 EAT (cloud side): check-in — the Meta token expired at 16:00 EAT; task for you and James
 - **AFCON post (15:32):** on Instagram, and on YouTube since 17:21 (`R64xqqrztRQ`). **Not on Facebook.** The token
   set at 11:21 UTC was a short-lived Graph API Explorer user token. It expired at 16:00 EAT
