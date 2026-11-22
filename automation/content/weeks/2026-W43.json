@@ -1744,7 +1744,8 @@
         "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/18197669332390944 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
         "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18116189312467980 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18116189312467980' does not ex",
         "Facebook": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/De1en4OAqEV/"
     },
     {
       "id": "2026-w43-hot-1023e",

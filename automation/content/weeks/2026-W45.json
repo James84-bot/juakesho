@@ -1067,7 +1067,8 @@
         "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18136595029735507 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18136595029735507' does not ex",
         "Facebook": "removed",
         "YouTube": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/DfU85OLHGHx/"
     },
     {
       "id": "2026-w45-hot-1105",
