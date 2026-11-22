@@ -162,6 +162,11 @@ if __name__ == "__main__":
 
 
 class TopicPhotos(unittest.TestCase):
+    def setUp(self):   # the picture fits the story unless a test says otherwise (no model offline)
+        p = mock.patch("picture.fits", return_value="")
+        p.start()
+        self.addCleanup(p.stop)
+
     """When the story's own picture is an outlet's graphic, pictures of the same subject from other recent reports
     are mixed in: checked for graphics, faces and sharpness, never a person's name, never on an allegation."""
 

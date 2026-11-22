@@ -140,3 +140,45 @@ def outlet_edit(data: bytes) -> str | None:
     except OSError:
         pass
     return what
+
+
+FIT_ASK = """This photo may appear in a Kenyan news Reel about: "{about}"
+First say what the photo shows. It fits only when a reader would take it as a fair picture for that story: the same
+subject, place, institution or kind of scene.
+It does NOT fit when it shows something the story is not about: armed people, soldiers or police in action, guns,
+violence, injured or dead people, a protest or riot, a crime scene, a funeral; or a person whom readers could take to
+be part of this story when the story does not name them.
+Return ONLY JSON: {{"shows": "under 15 words", "fits": true or false, "why": "under 12 words"}}"""
+
+
+def fits(data: bytes, about: str) -> str | None:
+    """'' when the picture fits a story about `about`, the reason when it does not, None when no model could look.
+    19 Nov: a SHA cancer-cover Reel showed armed Al-Shabaab fighters and an unrelated official, picked from other
+    reports by a loose word match; a music Reel showed lawyers protesting ("stage"). Every extra picture is now
+    looked at against the story before it is used. Verdicts are kept with the edit checks."""
+    import hashlib
+    import json
+    ask = FIT_ASK.format(about=" ".join(about.split())[:300])
+    key = "fit:" + hashlib.sha1(data).hexdigest()[:24] + ":" + hashlib.sha1(ask.encode()).hexdigest()[:8]
+    path = _checks_file()
+    try:
+        seen = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        seen = {}
+    if key in seen:
+        return seen[key].get("why", "")
+    import draft
+    try:
+        got = draft.extract_json(draft.look_at(data, ask))
+    except Exception as e:
+        print(f"    fit check skipped: {str(e)[:300]}")
+        return None
+    why = "" if got.get("fits") is True else str(got.get("why") or got.get("shows") or "does not fit")[:80]
+    print(f"    fit check: {'fits' if not why else 'no: ' + why} ({str(got.get('shows') or '')[:100]})")
+    seen[key] = {"why": why}
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(dict(list(seen.items())[-CHECKS_KEEP:]), indent=0), encoding="utf-8")
+    except OSError:
+        pass
+    return why

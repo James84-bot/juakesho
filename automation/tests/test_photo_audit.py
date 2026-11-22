@@ -40,10 +40,30 @@ class Audit(unittest.TestCase):
             x.stop()
         self.tmp.cleanup()
 
-    def run_audit(self, verdicts):
+    def run_audit(self, verdicts, fits=None):
+        fits = fits or {}
         with mock.patch.object(posted, "_photo_of", lambda item, check=True: (item["link"].encode(), {})), \
-                mock.patch.object(picture, "outlet_edit", lambda data: verdicts[data.decode().rsplit("/", 1)[1]]):
+                mock.patch.object(picture, "outlet_edit", lambda data: verdicts[data.decode().rsplit("/", 1)[1]]), \
+                mock.patch.object(picture, "fits", lambda data, about: fits.get(data.decode().rsplit("/", 1)[1], "")):
             return pl.photo_audit()
+
+    def test_a_picture_that_does_not_fit_the_story_gets_new_photos(self):   # 22 Nov: armed fighters on a SHA post
+        weeks = self.run_audit({"2026-w46-d1-money": "", "2026-w46-d2-clean": ""},
+                               {"2026-w46-d1-money": "armed fighters, not this story"})
+        self.assertEqual(weeks, ["2026-W46"])
+        posts = {p["id"]: p for p in pl.load_week("2026-W46")["posts"]}
+        self.assertEqual(posts["2026-w46-d1-money-r2"]["rephoto_reason"],
+                         "a picture that does not fit (armed fighters, not this story)")
+        self.assertNotIn("photo_fit", posts["2026-w46-d1-money-r2"])
+        self.assertTrue(posts["2026-w46-d2-clean"]["photo_fit"])
+
+    def test_a_post_checked_for_graphics_before_is_still_checked_for_fit(self):
+        data = pl.load_week("2026-W46")
+        for p in data["posts"]:
+            p["photo_checked"] = "2026-11-22T09:21:55+03:00"
+        pl.save_week(data)
+        weeks = self.run_audit({}, {"2026-w46-d2-clean": "lawyers protesting, not a concert"})
+        self.assertEqual(weeks, ["2026-W46"])   # outlet_edit was not asked again (the dict above is empty)
 
     def test_a_graphic_gets_new_photos_and_the_reason(self):
         weeks = self.run_audit({"2026-w46-d1-money": "Two photos joined side by side.", "2026-w46-d2-clean": ""})

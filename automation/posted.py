@@ -234,6 +234,17 @@ def _has(hay: str, word: str) -> bool:
     return re.search(rf"\b{re.escape(word)}", hay) is not None
 
 
+def _has_name(hay: str, name: str) -> bool:
+    """A name or acronym as a whole word ('SHA' is not 'Shabaab' or 'shares'; plural and possessive allowed)."""
+    return re.search(rf"\b{re.escape(name)}(?:s|'s|’s)?\b", hay) is not None
+
+
+def story_line(post: dict) -> str:
+    """The story in one line, for judging whether a picture fits it."""
+    return " ".join(str(post.get(k) or "") for k in ("message", "headline", "title", "line")).strip() or \
+        " ".join(str(b) for b in (post.get("beats") or [])[:2])
+
+
 def acronyms_for(post: dict) -> set[str]:
     """The post's names that are written as acronyms (IEBC, KRA, VAT), lower case."""
     text = json.dumps(post, ensure_ascii=False)
@@ -247,11 +258,11 @@ def score(item: dict, surname: str, words: list[str], names: list[str] | tuple =
     only one is this one). Without: a shared distinctive name plus a subject word ("VAT" + "fraud"; names count
     double), or four subject words."""
     hay = f"{item['title']} {item['text']}".lower()
-    shared = [w for w in names if w != surname and _has(hay, w)]
+    shared = [w for w in names if w != surname and _has_name(hay, w)]
     n = len(shared)
     hits = sum(1 for w in words if w not in names and (w[:5] if len(w) >= 6 else w) in hay)   # 'senate' ~ 'senator'
     if surname:
-        return hits + n + 3 if surname in hay and hits + n >= 2 else 0
+        return hits + n + 3 if _has_name(hay, surname) and hits + n >= 2 else 0
     total = 2 * n + hits
     # an acronym (VAT, IEBC) names the subject; a place name (Nzoia, Iten) is shared by many unrelated stories
     need = 3 if any(w in acronyms for w in shared) else 4
@@ -370,6 +381,10 @@ def find_more(post: dict, have: list[str], n: int = 2, lead: bytes | None = None
         if sharp < picture.SOFT_BELOW:
             _note(f"    not {item['outlet']}: soft picture (detail {sharp}, {_size(got[0])}) ({item['title'][:60]})")
             continue
+        why = picture.fits(got[0], story_line(post))
+        if why != "":   # does not fit, or nobody could look: an extra picture is never used unseen
+            _note(f"    not {item['outlet']}: {why or 'not looked at'} ({item['title'][:60]})")
+            continue
         seen.append(h)
         seen_bytes.add(digest)
         seen_links.add(item["link"])
@@ -386,10 +401,14 @@ def find(post: dict) -> tuple[bytes, dict] | None:
     ranked = _ranked(post)
     _note(f"  posted for {post.get('id')}: {len(ranked)} matching reports (person '{surname}', names {names_for(post)[:4]}, "
           f"words {words[:5]})")
+    import picture
     for s, item in ranked:
         got = _photo_of(item)
         if got:
-            import picture   # detail is logged for the lead (the thumbnail stays the best report's picture)
+            if picture.fits(got[0], story_line(post)):   # a clear "no"; unlooked, the story's own photo is trusted
+                _note(f"    not {item['outlet']}: does not fit the story ({item['title'][:60]})")
+                continue
+            # detail is logged for the lead (the thumbnail stays the best report's picture)
             _note(f"    picked {item['outlet']} ({s}, detail {picture.detail(got[0])}, {_size(got[0])}): {item['title'][:70]}")
             return got[0], {**got[1], "kind": "posted"}
     return None
@@ -492,6 +511,10 @@ def find_topic(post: dict, n: int = 2, have: list[str] | None = None, seen: list
         if picture.detail(data) < picture.SOFT_BELOW or not photos.faces_ok(data):
             _note(f"    not {item['outlet']}: soft or a face fills it ({item['title'][:60]})")
             continue
+        why = picture.fits(data, story_line(post))
+        if why != "":   # 'stage' matched "Lawyers Stage Protests" for a concert story (22 Nov): look before using
+            _note(f"    not {item['outlet']}: {why or 'not looked at'} ({item['title'][:60]})")
+            continue
         hashes.append(h)
         digests.add(digest)
         used.add(item["link"])
@@ -531,6 +554,11 @@ def find_named(post: dict) -> tuple[bytes, dict] | None:
         for item in hits[:4]:
             got = _photo_of(item)
             if got:
+                import picture
+                why = picture.fits(got[0], story_line(post))
+                if why != "":   # a picture from another story is only used once it has been seen to fit this one
+                    _note(f"    not {item['outlet']}: {why or 'not looked at'} ({item['title'][:60]})")
+                    continue
                 _note(f"    file photo from {item['outlet']}: {item['title'][:70]}")
                 return got[0], {**got[1], "kind": "file", "credit": got[1]["credit"].replace("Photo:", "File photo:", 1)}
     return None

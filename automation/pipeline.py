@@ -597,8 +597,9 @@ def rephoto_waiting() -> list[str]:
 
 def photo_audit(dry_run: bool = False) -> list[str]:
     """Posts not yet out whose pictures came from news sites, approved ones included, are checked once for the
-    outlet's own graphics (picture.outlet_edit: labels, headlines, inset pictures, two photos joined). A post with
-    one gets new photos and the same words (rephoto), and the reason is kept for its card. Returns the weeks that
+    outlet's own graphics (picture.outlet_edit: labels, headlines, inset pictures, two photos joined) and for
+    whether each picture fits the story (picture.fits). A post that fails gets new photos and the same words
+    (rephoto), and the reason is kept for its card. Returns the weeks that
     need rendering. A picture that can't be fetched or judged is tried again next run."""
     import picture
     import posted
@@ -609,7 +610,7 @@ def photo_audit(dry_run: bool = False) -> list[str]:
         for p in data["posts"]:
             if checked >= AUDIT_PER_RUN:
                 break
-            if p["status"] not in {"approved", "awaiting"} or p.get("photo_checked") \
+            if p["status"] not in {"approved", "awaiting"} or (p.get("photo_checked") and p.get("photo_fit")) \
                     or p.get("photo_kind") not in {"posted", "file", "topic"} or p.get("group") \
                     or dt.datetime.fromisoformat(p["publish_at"]) <= now():
                 continue
@@ -617,21 +618,26 @@ def photo_audit(dry_run: bool = False) -> list[str]:
             if not items:
                 continue
             checked += 1
-            verdicts = []
+            verdicts, fit = [], []   # outlet graphic per picture; does each picture fit this story (22 Nov)
             for item in items:
                 try:
                     got = posted._photo_of(item, check=False)
                 except Exception as e:
                     log(f"photo audit: {p['id']} picture not fetched ({str(e)[:80]})")
                     got = None
-                verdicts.append(picture.outlet_edit(got[0]) if got else None)
-            edits = [v for v in verdicts if v]
+                verdicts.append(("" if p.get("photo_checked") else picture.outlet_edit(got[0])) if got else None)
+                fit.append(picture.fits(got[0], posted.story_line(p)) if got else None)
+            edits, misfits = [v for v in verdicts if v], [v for v in fit if v]
             if edits:
                 outlet = p.get("photo_outlet") or "the news site"
                 redo.setdefault(data["collection"], []).append((p["id"], f"{outlet}'s own edit ({edits[0].rstrip('.')})"))
                 log(f"photo audit: {p['id']} uses {outlet}'s own edit: {edits[0]}")
-            elif all(v == "" for v in verdicts):
-                p["photo_checked"] = now().isoformat()
+            elif misfits:
+                redo.setdefault(data["collection"], []).append((p["id"], f"a picture that does not fit ({misfits[0]})"))
+                log(f"photo audit: {p['id']} has a picture that does not fit the story: {misfits[0]}")
+            elif all(v == "" for v in verdicts + fit):
+                p["photo_checked"] = p.get("photo_checked") or now().isoformat()
+                p["photo_fit"] = now().isoformat()
                 changed = True
                 log(f"photo audit: {p['id']} clean" + (f" ({missing} extra photo(s) no longer in the archive)" if missing else ""))
         if changed and not dry_run:
@@ -741,7 +747,7 @@ def rephoto(label: str, only: str | None = None) -> list[str]:
             p["group"] = groups.setdefault(p["group"], _next_rev(p["group"]))
         for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source",
                   "extra_photos", "shot_info", "broll_file", "broll_credit", "track_credit", "decided_at", "auto", "tg_msg",
-                  "photo_checked"):
+                  "photo_checked", "photo_fit"):
             p.pop(k, None)
         p["status"] = "drafted"
         changed.append(p["id"])

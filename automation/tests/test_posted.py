@@ -173,6 +173,11 @@ class Matching(unittest.TestCase):
 
 
 class FilePhoto(unittest.TestCase):
+    def setUp(self):   # the picture fits the story unless a test says otherwise (no model offline)
+        p = mock.patch("picture.fits", return_value="")
+        p.start()
+        self.addCleanup(p.stop)
+
     NOW = dt.datetime.now(dt.timezone.utc)
 
     def item(self, title, link, days=1):
@@ -279,6 +284,11 @@ if __name__ == "__main__":
 
 
 class MorePhotos(unittest.TestCase):
+    def setUp(self):   # the picture fits the story unless a test says otherwise (no model offline)
+        p = mock.patch("picture.fits", return_value="")
+        p.start()
+        self.addCleanup(p.stop)
+
     def test_other_reports_of_the_story_give_new_pictures_never_another_country_or_a_repeat(self):
         post = {"id": "p", "message": "Kenya has gone 18 days without a new Ebola case.", "beats": ["a", "b", "c"]}
         items = [(6, {"outlet": "A", "link": "https://a/1", "title": "Kenya goes 18 days without Ebola"}),
@@ -304,6 +314,56 @@ class MorePhotos(unittest.TestCase):
              mock.patch.object(posted, "_photo_of", lambda it: (imgs.get(it["link"], b"x"), {"credit": it["outlet"]})):
             got = posted.find_more(post, ["https://a/1"], n=2, lead=lead)
         self.assertEqual([info["credit"] for _, info in got], ["D"])   # B is the lead again, C a blurry still
+
+
+class WrongPictures(unittest.TestCase):
+    """22 Nov: the SHA cancer-cover Reel showed armed Al-Shabaab fighters and an unrelated official."""
+
+    def test_an_acronym_is_a_whole_word(self):
+        post = {"message": "Cancer patients will no longer face halted treatment when their SHA benefits run out.",
+                "photo_query": "hospital ward Kenya"}
+        surname, words = posted.terms_for(post)
+        names, acr = posted.names_for(post), posted.acronyms_for(post)
+        shabaab = {"title": "Somali Elders Accuse Kenya of Allegedly Hosting Senior Al-Shabaab Leaders",
+                   "text": "The elders say shabaab commanders face no action."}
+        mck = {"title": "MCK strengthens risk oversight to align decisions with strategic goals",
+               "text": "Shareholders and patients of the long process face new rules."}
+        sha = {"title": "Ksh800,000 cancer treatment benefit remains unchanged, SHA clarifies",
+               "text": "Cancer patients will not lose cover."}
+        self.assertEqual(posted.score(shabaab, surname, words, names, acr), 0)
+        self.assertEqual(posted.score(mck, surname, words, names, acr), 0)
+        self.assertGreater(posted.score(sha, surname, words, names, acr), 0)
+
+    def test_an_extra_picture_that_does_not_fit_or_was_not_seen_is_left_out(self):
+        post = {"id": "p", "message": "Cancer patients keep SHA cover.", "beats": ["a", "b", "c"]}
+        items = [(5, {"outlet": "A", "link": "https://a/1", "title": "SHA cover stays"}),
+                 (4, {"outlet": "B", "link": "https://b/2", "title": "SHA and Al-Shabaab"}),
+                 (4, {"outlet": "C", "link": "https://c/3", "title": "SHA board"}),
+                 (3, {"outlet": "D", "link": "https://d/4", "title": "SHA patients"})]
+        imgs = {"https://b/2": _photo(2), "https://c/3": _photo(3), "https://d/4": _photo(4)}
+        verdicts = {imgs["https://b/2"]: "armed fighters, not this story", imgs["https://c/3"]: None,
+                    imgs["https://d/4"]: ""}
+        with mock.patch.object(posted, "_ranked", lambda p: items), \
+             mock.patch.object(posted, "_photo_of", lambda it: (imgs.get(it["link"], b"x"), {"credit": it["outlet"]})), \
+             mock.patch("picture.fits", lambda data, about: verdicts.get(data, "")):
+            got = posted.find_more(post, ["https://a/1"], n=2, lead=_photo(1))
+        self.assertEqual([info["credit"] for _, info in got], ["D"])
+
+    def test_the_fit_question_is_asked_once_per_picture_and_story(self):
+        import tempfile
+        import draft
+        import picture
+        asked = []
+
+        def look(data, ask, strong=False):
+            asked.append(ask)
+            return '{"shows": "armed men with rifles", "fits": false, "why": "armed fighters, not this story"}'
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(picture, "_checks_file", lambda: Path(d) / "c.json"), \
+                mock.patch.object(draft, "look_at", look):
+            self.assertEqual(picture.fits(_photo(5), "SHA cancer cover"), "armed fighters, not this story")
+            self.assertEqual(picture.fits(_photo(5), "SHA cancer cover"), "armed fighters, not this story")
+        self.assertEqual(len(asked), 1)
+        self.assertIn("SHA cancer cover", asked[0])
 
 
 def _photo(seed: int, soft: bool = False) -> bytes:
