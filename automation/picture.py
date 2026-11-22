@@ -182,6 +182,7 @@ def fits(data: bytes, about: str, person: str = "") -> str | None:
     if person:   # their own post: a billboard with their name on it is not a picture of them (22 Nov)
         ask = ask.replace("\nReturn ONLY JSON", PERSON_LINE.format(person=person) + "\nReturn ONLY JSON")
     key = "fit:" + hashlib.sha1(data).hexdigest()[:24] + ":" + hashlib.sha1(ask.encode()).hexdigest()[:8]
+    key += ":2" if person else ""   # person verdicts from before the second look (23 Nov) are asked again once
     path = _checks_file()
     try:
         seen = json.loads(path.read_text(encoding="utf-8"))
@@ -212,7 +213,7 @@ def fits(data: bytes, about: str, person: str = "") -> str | None:
         else:
             why = str(again.get("why") or why)[:80]
     print(f"    fit check: {'fits' if not why else 'no: ' + why} ({str(got.get('shows') or '')[:100]})")
-    seen[key] = {"why": why}
+    seen[key] = {"why": why, "shows": str(got.get("shows") or "")[:100]}
     try:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(dict(list(seen.items())[-CHECKS_KEEP:]), indent=0), encoding="utf-8")
