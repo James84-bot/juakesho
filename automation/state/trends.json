@@ -1,54 +1,76 @@
 {
-  "fetched": "2026-11-22T11:58:10.358524+00:00",
+  "fetched": "2026-11-22T13:07:12.123423+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "birmingham city vs man utd",
+      "title": "man city vs tottenham",
       "traffic": "1000+",
       "news": [
-        {
-          "title": "City vs Spurs: Kick-off time, teams news and TV information",
-          "url": "https://www.mancity.com/news/womens/city-vs-spurs-wsl-match-preview-2627-63930619",
-          "source": "Manchester City FC"
-        },
         {
           "title": "WSL: Man City host Spurs seeking to go top, Man Utd at Birmingham",
           "url": "https://www.bbc.com/sport/football/live/c5y431zlw28mt",
           "source": "BBC"
         },
         {
-          "title": "WSL Sunday Predictions: Five Matches, Plenty of Value",
-          "url": "https://news.williamhill.com/football/wsl-predictions-and-betting-tips-for-sunday-22nd-november-2026/",
-          "source": "William Hill News"
+          "title": "WSL LIVE! Match updates, score, streams and free highlights with Man Utd, Man City, Arsenal in action",
+          "url": "https://www.skysports.com/football/live-blog/13614532/wsl-live-match-updates-score-streams-and-free-highlights-with-man-utd-man-city-arsenal-in-action",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Team news | No fresh concerns ahead of City trip",
+          "url": "https://www.tottenhamhotspur.com/news/1234177/spurs-women-team-news-no-fresh-concerns-ahead-of-city-trip",
+          "source": "Tottenham Hotspur"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "nairobi road",
-      "traffic": "200+",
+      "title": "birmingham city vs man utd",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Details of Proposed Toll Fees on Nairobi-Thika Highway & Southern Bypass",
-          "url": "https://www.kenyans.co.ke/news/129520-treasury-proposes-toll-fees-nairobi-thika-road-among-other-major-highways",
-          "source": "Kenyans.co.ke"
+          "title": "Birmingham City vs Manchester United: Women's Super League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cm4gnwwl48wwt",
+          "source": "BBC"
         },
         {
-          "title": "Treasury Eyes Tolls on Nairobi–Thika Highway in KSh100bn PPP Plan",
-          "url": "https://nairobiwire.com/2026/11/nairobi-thika-highway-tolls-ksh100bn-ppp-plan.html",
-          "source": "Nairobi Wire -"
+          "title": "United Women's team to face Birmingham",
+          "url": "https://www.manutd.com/en/news/united-women-line-up-birmingham-wsl-22-november-2026",
+          "source": "Manchester United"
         },
         {
-          "title": "Kenyans to Start Paying Toll Fees on Thika Highway, 4 Other Busy Roads",
-          "url": "https://www.tuko.co.ke/kenya/647319-kenyans-start-paying-toll-fees-southern-bypass-4-roads/",
-          "source": "Tuko News"
+          "title": "Manchester United left-back returns to squad after injury layoff",
+          "url": "https://centredevils.co.uk/news/manchester-united-left-back-returns-to-squad-after-injury-layoff/",
+          "source": "centredevils"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "juventus",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "LIVE Juventus-Venezia 4-0 Serie A 2026/2027: Cabal firma il tris della Juventus",
+          "url": "https://www.virgilio.it/sport/dirette/live/serie-a/22-11-2026/juventus-venezia/2638235/",
+          "source": "Virgilio"
+        },
+        {
+          "title": "LIVE Juve-Venezia 4-0: anche Kolo Muani a segno! Batte Stankovic dagli 11 metri",
+          "url": "https://www.gazzetta.it/Calcio/Serie-A/Juventus/22-11-2026/live-juve-venezia-risultato-e-gol-in-diretta-serie-a.shtml",
+          "source": "La Gazzetta dello Sport"
+        },
+        {
+          "title": "Serie A | Juventus-Venezia | Le formazioni ufficiali",
+          "url": "https://www.juventus.com/it/news/articoli/serie-a-juventus-venezia-le-formazioni-ufficiali",
+          "source": "Juventus.com"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "kenyans",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "‘We have the money’: Diaspora Kenyans promise Sifuna Sh100m",
@@ -69,50 +91,22 @@
     },
     {
       "geo": "KE",
-      "title": "miley cyrus",
+      "title": "getafe vs atletico madrid prediction",
       "traffic": "100+",
       "news": [
         {
-          "title": "Miley Cyrus marries Maxx Morando in California ceremony",
-          "url": "https://www.bbc.com/news/articles/cq8e0p87l89lo",
-          "source": "BBC"
-        },
-        {
-          "title": "Miley Cyrus and fiancé Maxx Morando pictured holding hands after wedding rehearsal dinner with her famous family",
-          "url": "https://pagesix.com/2026/11/21/celebrity-news/miley-cyrus-and-maxx-morando-pictured-after-rehearsal-dinner/",
-          "source": "Page Six"
-        },
-        {
-          "title": "Miley Cyrus Marries Maxx Morando in Palm Springs Wedding",
-          "url": "https://people.com/miley-cyrus-marries-maxx-morando-11877139",
-          "source": "People.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "atalanta vs inter",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Atalanta vs Inter Milan: Italian Serie A stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/crq5vgg8pp48t",
-          "source": "BBC"
-        },
-        {
-          "title": "Atalanta v Inter: where to watch on TV and online, kick-off time and line-ups",
-          "url": "https://www.goal.com/en/news/watch-atalanta-v-inter-live-today-who-is-showing-the-match-on-tv-and-online/blte03efe4d428dc5c4",
+          "title": "Watch Getafe vs Atletico Madrid live today: Who is broadcasting the match on TV and via live stream?",
+          "url": "https://www.goal.com/en-ke/news/live-stream-online-tv-where-to-watch-getafe-v-atletico-madrid/blt187ae807256414b8",
           "source": "Goal.com"
-        },
-        {
-          "title": "Scamacca ‘has everything’ but must start to show his best, says Sarri",
-          "url": "https://www.soccernews.com/scamacca-has-everything-but-must-start-to-show-his-best-says-sarri/408708/",
-          "source": "Soccer News"
         }
       ]
     }
   ],
   "dropped": [
+    {
+      "title": "helicopter",
+      "why": "unsafe: 'Missing'"
+    },
     {
       "title": "shabana vs mara sugar",
       "why": "unsafe: 'BETTING'"
@@ -126,11 +120,7 @@
       "why": "unsafe: 'odds'"
     },
     {
-      "title": "bologna vs udinese",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "ac milan vs frosinone prediction",
+      "title": "ac milan vs frosinone",
       "why": "unsafe: 'Betting'"
     }
   ],
