@@ -825,7 +825,7 @@
           "published": "2026-11-08"
         }
       ],
-      "status": "published",
+      "status": "removed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -886,7 +886,16 @@
       "story_id": "18105087803527706",
       "fb_story_id": "1314620397456396",
       "yt_id": "QvnoHU_nOu4",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "removed_at": "2026-11-22T13:20:29.672895+03:00",
+      "removed_why": "a Parliament chamber picture on a youth athletics story",
+      "removed": {
+        "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/18419561164083096 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18105087803527706 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18105087803527706' does not ex",
+        "Facebook": "removed",
+        "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/1314620397456396 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '1314620397456396' does not exis",
+        "YouTube": "removed"
+      }
     },
     {
       "id": "2026-w46-hot-1110e",
@@ -925,7 +934,7 @@
           "published": "2026-11-09"
         }
       ],
-      "status": "published",
+      "status": "removed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -972,7 +981,16 @@
       "story_id": "18142355005546318",
       "fb_story_id": "1637068291241240",
       "yt_id": "xc9XiT6EJZI",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "removed_at": "2026-11-22T13:20:15.340951+03:00",
+      "removed_why": "the CBK Governor's face under a claim that the Treasury hides a graft report",
+      "removed": {
+        "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/17899992222405777 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18142355005546318 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18142355005546318' does not ex",
+        "Facebook": "removed",
+        "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/1637068291241240 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '1637068291241240' does not exis",
+        "YouTube": "removed"
+      }
     },
     {
       "id": "2026-w46-hot-1110",
@@ -1893,7 +1911,7 @@
           "published": "2026-11-13"
         }
       ],
-      "status": "published",
+      "status": "removed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1951,7 +1969,16 @@
       "story_id": "18032120438911360",
       "fb_story_id": "2316518819138610",
       "yt_id": "rDxhFWdz710",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "removed_at": "2026-11-22T13:20:35.998724+03:00",
+      "removed_why": "an animal orphanage sign on a land titles audit story",
+      "removed": {
+        "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/17971687712965150 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18032120438911360 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18032120438911360' does not ex",
+        "Facebook": "removed",
+        "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/2316518819138610 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '2316518819138610' does not exis",
+        "YouTube": "removed"
+      }
     },
     {
       "id": "2026-w46-hot-1113b1626",
@@ -2120,7 +2147,7 @@
           "published": "2026-11-13"
         }
       ],
-      "status": "published",
+      "status": "removed",
       "guard": {
         "errors": [],
         "warnings": []
@@ -2179,7 +2206,16 @@
       "story_id": "17945792766091794",
       "fb_story_id": "1119529987552927",
       "yt_id": "65VkfXFyNJI",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "removed_at": "2026-11-22T13:20:22.072404+03:00",
+      "removed_why": "a street protest picture on a Harambee Stars match story",
+      "removed": {
+        "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/17901118581398569 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/17945792766091794 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '17945792766091794' does not ex",
+        "Facebook": "removed",
+        "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/1119529987552927 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '1119529987552927' does not exis",
+        "YouTube": "removed"
+      }
     },
     {
       "id": "2026-w46-hot-1114",

@@ -630,7 +630,7 @@
           "published": "2026-11-16"
         }
       ],
-      "status": "published",
+      "status": "removed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -691,7 +691,16 @@
       "story_id": "18143352415618491",
       "fb_story_id": "980689041332021",
       "yt_id": "oiBYprkbwWg",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "removed_at": "2026-11-22T13:20:01.158023+03:00",
+      "removed_why": "an unrelated arrested man's charge sheet and Ruto's face beside a bribery figure",
+      "removed": {
+        "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/17901268377398769 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18143352415618491 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18143352415618491' does not ex",
+        "Facebook": "removed",
+        "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/980689041332021 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '980689041332021' does not exist,",
+        "YouTube": "removed"
+      }
     },
     {
       "id": "2026-w47-hot-1116m",
@@ -738,7 +747,7 @@
           "published": "2026-11-16"
         }
       ],
-      "status": "published",
+      "status": "removed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -798,7 +807,16 @@
       "story_id": "18113514821227033",
       "fb_story_id": "1496125782385485",
       "yt_id": "rplg1zRBq9A",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "removed_at": "2026-11-22T13:20:50.104323+03:00",
+      "removed_why": "a port container picture on a forged degrees story",
+      "removed": {
+        "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/18023723051977687 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18113514821227033 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18113514821227033' does not ex",
+        "Facebook": "removed",
+        "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/1496125782385485 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '1496125782385485' does not exis",
+        "YouTube": "removed"
+      }
     },
     {
       "id": "2026-w47-hot-1117e",
@@ -836,7 +854,7 @@
           "published": "2026-11-16"
         }
       ],
-      "status": "published",
+      "status": "removed",
       "guard": {
         "errors": [
           "accusation: a named person with an allegation needs two outlets or an official source (court, EACC, DPP, Auditor-General, a .go.ke page)",
@@ -899,7 +917,16 @@
       "story_id": "18134184121783589",
       "fb_story_id": "1760648238351463",
       "yt_id": "gRpXlguOqFY",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "removed_at": "2026-11-22T13:20:07.585275+03:00",
+      "removed_why": "Ruto and an unrelated politician beside World Bank corruption claims",
+      "removed": {
+        "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/18388919407235928 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18134184121783589 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18134184121783589' does not ex",
+        "Facebook": "removed",
+        "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/1760648238351463 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '1760648238351463' does not exis",
+        "YouTube": "removed"
+      }
     },
     {
       "id": "2026-w47-hot-1117",
@@ -1500,7 +1527,7 @@
           "published": "2026-11-18"
         }
       ],
-      "status": "published",
+      "status": "removed",
       "guard": {
         "errors": [
           "weak: editor scored 5.7/10. Remove the generic hashtag and connect the Sh1.5 billion saving directly to the specific local printing company that got the tender."
@@ -1565,7 +1592,16 @@
       "story_id": "18024033206949075",
       "fb_story_id": "2934754433565459",
       "yt_id": "KKgItvU-tgw",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "removed_at": "2026-11-22T13:20:42.732538+03:00",
+      "removed_why": "an affordable housing block on an exam printing story",
+      "removed": {
+        "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/18110230973116996 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18024033206949075 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18024033206949075' does not ex",
+        "Facebook": "removed",
+        "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/2934754433565459 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '2934754433565459' does not exis",
+        "YouTube": "removed"
+      }
     },
     {
       "id": "2026-w47-hot-1119",
@@ -3141,7 +3177,7 @@
         }
       ],
       "quotes": [],
-      "status": "published",
+      "status": "removed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -3202,7 +3238,16 @@
       "story_id": "18646023949014003",
       "fb_story_id": "2225914748327079",
       "yt_id": "Q6OS-Kvay58",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "removed_at": "2026-11-22T13:19:53.370326+03:00",
+      "removed_why": "armed Al-Shabaab fighters and an unrelated official on a SHA cancer-cover story",
+      "removed": {
+        "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/18235219906325264 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18646023949014003 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Facebook": "removed",
+        "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/2225914748327079 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '2225914748327079' does not exis",
+        "YouTube": "removed"
+      }
     },
     {
       "id": "2026-w47-hot-1122-r6",
