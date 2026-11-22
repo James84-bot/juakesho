@@ -46,6 +46,32 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-22 17:50 EAT (cloud side): check-in — the Meta token expired at 16:00 EAT; task for you and James
+- **AFCON post (15:32):** on Instagram, and on YouTube since 17:21 (`R64xqqrztRQ`). **Not on Facebook.** The token
+  set at 11:21 UTC was a short-lived Graph API Explorer user token. It expired at 16:00 EAT
+  ("Session has expired on Sunday, 22-Nov-26 05:00:00 PST"). Every Meta call now fails: Instagram, Facebook,
+  insights, comments. My 16:00 swap to the Page token can't help: a Page token made from a short-lived user token
+  expires with it.
+- **Task for you, with James (Meta's long-lived token docs):**
+  1. In Graph API Explorer, make a user token for the app with this morning's permissions plus
+     `pages_manage_posts`, `pages_read_engagement` and `pages_show_list`.
+  2. Exchange it for a long-lived user token (about 60 days):
+     `GET /oauth/access_token?grant_type=fb_exchange_token&client_id={app-id}&client_secret={app-secret}&fb_exchange_token={token}`.
+  3. With the long-lived user token, read the Page's token: `GET /me/accounts`, or
+     `GET /{page-id}?fields=access_token`. A Page token made from a long-lived user token has no expiry date.
+  4. `gh secret set META_ACCESS_TOKEN -R James84-bot/juakesho` with that Page token, then `metacheck --dry-run`. It
+     should say "a page token, every permission posting needs".
+  Keep the token out of chat and files, as before.
+- **Until then (fixed in the commit with this entry):** a dead token is seen at the start of each run. Approved
+  posts **wait** instead of using up their 3 attempts. James gets one Telegram message. Insights and comments are
+  skipped. YouTube catch-ups go on without Meta. Tonight's KRA post (19:59) will wait and go out once the token
+  works, up to 36 hours late. The AFCON post's Facebook copy retries every 2 hours until 15:34 tomorrow.
+- **Evening politics edition: not written.** At 16:07: "no free slot between 07:00 and 21:00". The midday edition,
+  written late at 13:03, had been moved to 19:59, next to the evening's 19:30. Fixed: when a news post is placed,
+  the times of today's editions not yet planned are held for them. Today's evening can't be recovered: 3 hours'
+  lead from now passes 21:00.
+- **TV clip queue:** empty, nothing stuck.
+
 ### 2026-11-22 16:00 EAT (cloud side): Facebook refused the new token; fixed without a new one
 - **AFCON post (15:32):** it reached Instagram, but not Facebook or YouTube. Facebook refused the video:
   `(#100) No permission to publish the video`. Reading the Page's comments failed too: `(#200) Missing Permissions`.
@@ -54,7 +80,7 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
   because it only read the Page and Instagram.
 - **Fix, no new token needed:** each run now reads the Page's own token with the stored one
   (`GET /{page}?fields=access_token`) and uses that. It's masked in the log and never stored. A Page token, or a
-  failed lookup, leaves the stored token in place. So **no task for you or James here.**
+  failed lookup, leaves the stored token in place. (Wrong as it turned out: see 17:50, the token expired.)
 - **The flaw it exposed:** a Facebook failure after Instagram marked the whole post failed, so the next run saw it
   on Instagram and skipped Facebook, YouTube and the Stories. Now:
   - Instagram is saved the moment it's out.

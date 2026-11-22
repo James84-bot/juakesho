@@ -212,20 +212,36 @@ BREAKING_LEAD, BREAKING_MAX = dt.timedelta(minutes=20), 2
 QUIET_FROM = 21   # no news post is planned for 21:00 EAT or later (last week four went out between 22:30 and 01:16 and expired)
 
 
-def _clear_of(when: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timedelta(minutes=90)) -> dt.datetime:
-    """Two posts close together split the audience: move the hot post until it is `gap` from every other post."""
-    taken = [dt.datetime.fromisoformat(p["publish_at"]) for p in posts
-             if p.get("publish_at") and p.get("status") not in {"rejected", "expired", "missed"}]
+def _taken(posts: list[dict], also: tuple = ()) -> list[dt.datetime]:
+    return [dt.datetime.fromisoformat(p["publish_at"]) for p in posts
+            if p.get("publish_at") and p.get("status") not in {"rejected", "expired", "missed", "superseded", "removed"}] \
+        + list(also)
+
+
+def _reserved(posts: list[dict], day: dt.date, label: str, edition: str) -> tuple:
+    """The times of today's other editions not planned yet: held for them. On 22 Nov the midday edition, written
+    late, was moved to 19:59; at 16:05 the evening edition found no time left and was skipped."""
+    ids = {p["id"] for p in posts}
+    return tuple(dt.datetime(day.year, day.month, day.day, *e["time"], tzinfo=EAT) for name, e in EDITIONS.items()
+                 if name != edition and f"{label.lower()}-hot-{day:%m%d}{e['suffix']}" not in ids
+                 and dt.datetime(day.year, day.month, day.day, *e["time"], tzinfo=EAT) > now())
+
+
+def _clear_of(when: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timedelta(minutes=90),
+              also: tuple = ()) -> dt.datetime:
+    """Two posts close together split the audience: move the hot post until it is `gap` from every other post
+    (and from the times in `also`)."""
+    taken = _taken(posts, also)
     while any(abs(when - t) < gap for t in taken):
         when += dt.timedelta(minutes=30)
     return when
 
 
-def _earlier_slot(want: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timedelta(minutes=45)) -> dt.datetime | None:
+def _earlier_slot(want: dt.datetime, posts: list[dict], gap: dt.timedelta = dt.timedelta(minutes=45),
+                  also: tuple = ()) -> dt.datetime | None:
     """The free time nearest to `want` (earlier or later) between 07:00 and QUIET_FROM that is still ahead of now and
     `gap` from every other post: a news post goes out in waking hours, never dropped just because the day is busy."""
-    taken = [dt.datetime.fromisoformat(p["publish_at"]) for p in posts
-             if p.get("publish_at") and p.get("status") not in {"rejected", "expired", "missed"}]
+    taken = _taken(posts, also)
     lo = max(want.replace(hour=7, minute=0), now() + HOT["min_lead"])
     hi = want.replace(hour=QUIET_FROM - 1, minute=30)
     candidates = sorted((want + dt.timedelta(minutes=30 * k) for k in range(-26, 27)),
@@ -356,10 +372,11 @@ def hot_slot(mock: bool = False, evening: bool = False, edition: str | None = No
         when = dt.datetime(today.year, today.month, today.day, *EDITIONS[edition]["time"], tzinfo=EAT)
         if when - now() < HOT["min_lead"]:   # late start: give the owner time to approve
             when = (now() + HOT["min_lead"]).replace(second=0, microsecond=0)
-        when = _clear_of(when, data["posts"])
+        held = _reserved(data["posts"], today, label, edition)
+        when = _clear_of(when, data["posts"], also=held)
         if when.date() != today or when.hour >= QUIET_FROM:   # pushed into the night: nobody is awake to approve it
             when = _earlier_slot(dt.datetime(today.year, today.month, today.day, *EDITIONS[edition]["time"], tzinfo=EAT),
-                                 data["posts"])
+                                 data["posts"], also=held)
             if when is None:
                 log(f"hot ({edition}): no free slot between 07:00 and {QUIET_FROM}:00 EAT today, skipping this edition")
                 _skip_edition(edition)
@@ -1968,6 +1985,12 @@ def use_page_token() -> bool:
         q = urllib.parse.urlencode({"fields": "access_token", "access_token": raw})
         got = str((http("GET", f"https://graph.facebook.com/{version}/{page}?{q}") or {}).get("access_token") or "")
     except Exception as e:
+        if re.search(r"Error validating access token|\"code\":\s*190", str(e)):
+            # expired or revoked (22 Nov: a Graph Explorer token, which lasts an hour or two, died at 16:00 EAT).
+            # Every Meta call would fail; posts wait instead of using up their attempts, and you're told once.
+            STORED_TOKEN["dead"] = (re.search(r"Session has expired on [^.]*", str(e)) or [None])[0] or "invalid"
+            log(f"Meta: the stored token no longer works ({STORED_TOKEN['dead']}); Instagram and Facebook wait")
+            return False
         log(f"Meta: kept the stored token (couldn't read the Page's own: {str(e)[:120]})")
         return False
     if not got or got == raw:
@@ -1989,7 +2012,11 @@ META_SCOPES = ("pages_manage_posts", "pages_read_engagement", "pages_show_list",
 def meta_check(dry_run: bool = False) -> bool:
     """Reads (never posts) the Page and the Instagram account with the stored token, and says what works."""
     lines, ok = [], True
-    if not meta_ready():
+    if STORED_TOKEN.get("dead"):
+        lines.append(f"❌ Token: it no longer works ({STORED_TOKEN['dead']}). Set a Page token made from a "
+                     "long-lived user token (TEAM.md has the steps)")
+        ok = False
+    elif not meta_ready():
         lines.append("❌ Missing secrets: " + ", ".join(k for k in META_KEYS if not os.environ.get(k)))
         ok = False
     else:
@@ -2683,7 +2710,7 @@ def first_of(members: list[dict]) -> dict:
 
 
 def meta_ready() -> bool:
-    return all(os.environ.get(k) for k in META_KEYS)
+    return all(os.environ.get(k) for k in META_KEYS) and not STORED_TOKEN.get("dead")
 
 
 FB_RETRIES = 6                          # a Facebook post that failed after Instagram went out: tried this often,
@@ -2714,7 +2741,7 @@ def _facebook_or_later(label: str, members: list[dict]) -> str | None:
     return fb_id
 
 
-def retry_pending(data: dict, label: str) -> bool:
+def retry_pending(data: dict, label: str, meta: bool = True) -> bool:
     """Published posts still missing a platform: Facebook (fb_pending, up to FB_RETRIES tries within FB_LATE of going
     out) and YouTube (yt_pending: a Short never attempted, tried once). Returns True if anything changed."""
     changed, seen = False, set()
@@ -2727,7 +2754,7 @@ def retry_pending(data: dict, label: str) -> bool:
         first = first_of(members)
         out = dt.datetime.fromisoformat(first.get("published_at") or first["publish_at"])
         pend = first.get("fb_pending")
-        if pend and not first.get("fb_id") and not pend.get("gave_up"):
+        if meta and pend and not first.get("fb_id") and not pend.get("gave_up"):
             if int(pend.get("tries") or 0) >= FB_RETRIES or now() - out > FB_LATE:
                 for m in members:
                     m["fb_pending"] = {**pend, "gave_up": True}
@@ -2752,7 +2779,7 @@ def publish(dry_run: bool = False) -> None:
         data = json.loads(f.read_text(encoding="utf-8"))
         label = data["collection"]
         done = set()
-        if connected and not dry_run and retry_pending(data, label):
+        if not dry_run and retry_pending(data, label, meta=connected):
             save_week(data)
         for p in data["posts"]:
             key = p.get("group") or p["id"]
@@ -2819,12 +2846,18 @@ def publish(dry_run: bool = False) -> None:
                 _notify(f"⚠️ Publishing <b>{_esc(key)}</b> failed (attempt {p.get('attempts', 1)}): {_esc(str(e)[:300])}")
         save_week(data)
     if waiting and not dry_run:
-        log(f"Instagram not connected yet: {waiting} approved post(s) waiting")
+        log(f"Instagram not connected: {waiting} approved post(s) waiting")
         flag = STATE / "meta_missing_notified.txt"
-        if not flag.exists():  # tell the owner once, not every 2 hours
+        if not flag.exists() and STORED_TOKEN.get("dead"):
+            _notify(f"📌 The Meta token stopped working ({_esc(STORED_TOKEN['dead'])}), so {waiting} approved post(s) "
+                    "are waiting for Instagram and Facebook. A token from Graph API Explorer lasts an hour or two; "
+                    "the one that lasts is the Page's token made from a long-lived user token. Your PowerShell "
+                    "Claude has the steps in TEAM.md. Posts more than 36 h late are skipped, not dumped.")
+        elif not flag.exists():  # tell the owner once, not every 2 hours
             _notify(f"📌 {waiting} approved post(s) are due, but Instagram isn't connected yet. "
                     "Add META_ACCESS_TOKEN, META_PAGE_ID and META_IG_USER_ID in GitHub secrets. "
                     "Posts more than 36 h late are skipped, not dumped.")
+        if not flag.exists():
             STATE.mkdir(parents=True, exist_ok=True)
             flag.write_text(now().isoformat(), encoding="utf-8")
     elif connected:

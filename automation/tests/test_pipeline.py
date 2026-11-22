@@ -131,7 +131,8 @@ class HotPostTests(TempWeeks):
         with mock.patch.object(pl, "now", lambda: late):
             pl.hot_slot(mock=True)
             post = pl.load_week("2026-W42")["posts"][-1]
-            self.assertEqual(post["publish_at"], "2026-10-14T20:00:00+03:00")   # 3 hours to approve
+            # 3 hours to approve, and clear of the evening edition's 19:30, held for it until it is planned
+            self.assertEqual(post["publish_at"], "2026-10-14T20:15:00+03:00")
 
 
 class BreakingTests(TempWeeks):
@@ -492,6 +493,44 @@ class PublishTests(TempWeeks):
                 self.assertFalse(USE_PAGE_TOKEN())
                 self.assertEqual(os.environ["META_ACCESS_TOKEN"], "SAME")
 
+    def test_a_dead_token_makes_posts_wait_instead_of_failing(self):
+        def fake(method, url, fields=None, files=None, timeout=60):
+            raise RuntimeError('GET https://graph.facebook.com/v26.0/*** → 400: {"error":{"message":"Error validating '
+                               'access token: Session has expired on Sunday, 22-Nov-26 05:00:00 PST. The current time is'
+                               ' Sunday","type":"OAuthException","code":190}}')
+        self.week([{"id": "p", "status": "approved", "publish_at": self.PAST, "caption": "Hi"}])
+        told = []
+        try:
+            with mock.patch.object(pl, "http", fake), mock.patch.object(pl, "log", lambda m: None):
+                self.assertFalse(USE_PAGE_TOKEN())
+                self.assertFalse(pl.meta_ready())
+            with mock.patch.object(pl, "_notify", told.append), mock.patch.object(pl, "log", lambda m: None):
+                pl.publish()
+                pl.publish()
+            post = pl.load_week("2026-W41")["posts"][0]
+            self.assertEqual((post["status"], post.get("attempts")), ("approved", None))   # nothing used up
+            self.assertEqual(len(told), 1)                                                  # told once
+            self.assertIn("Session has expired on Sunday, 22-Nov-26 05:00:00 PST", told[0])
+            self.assertFalse(pl.meta_check(dry_run=True))
+        finally:
+            pl.STORED_TOKEN.pop("dead", None)
+
+    def test_a_youtube_catch_up_does_not_wait_for_meta(self):
+        post = {"id": "p", "status": "published", "publish_at": self.PAST, "published_at": self.PAST, "ig_id": "ig1",
+                "fb_pending": {"tries": 1, "error": "x"}, "yt_pending": True}
+        self.week([post])
+        sent = []
+        try:
+            pl.STORED_TOKEN["dead"] = "expired"
+            with mock.patch.object(pl, "_youtube_short", lambda label, p: sent.append(p["id"])), \
+                    mock.patch.object(pl, "_facebook_or_later", mock.Mock(side_effect=AssertionError("no Meta call"))), \
+                    mock.patch.object(pl, "_notify", lambda m: None), mock.patch.object(pl, "log", lambda m: None):
+                pl.publish()
+        finally:
+            pl.STORED_TOKEN.pop("dead", None)
+        self.assertEqual(sent, ["p"])
+        self.assertEqual(pl.load_week("2026-W41")["posts"][0]["fb_pending"]["tries"], 1)
+
     def test_metacheck_says_when_the_token_cannot_post(self):
         def fake_get(path, fields):
             if path == "debug_token":
@@ -681,6 +720,29 @@ class TvClipWorkTests(TempWeeks):
         self.assertEqual((made[0][0]["id"], made[0][1]), ("q-tvsample", pl.SAMPLES))
         self.assertEqual(sent[0][0], "sendVideo")
         self.assertNotIn("tv_clip_used", pl.load_week("2026-W41")["posts"][1])   # the real post is untouched
+
+
+class EditionTimeTests(TempWeeks):
+    """A late edition must not take a later edition's time (22 Nov: the evening edition was skipped)."""
+
+    def test_a_late_midday_post_keeps_off_the_evening_editions_time(self):
+        at = dt.datetime(2026, 11, 22, 13, 3, tzinfo=pl.EAT)
+        self.week([{"id": "2026-w41-hot-1122a", "status": "awaiting", "hot": True, "publish_at": "2026-11-22T15:32:00+03:00"},
+                   {"id": "x-poll", "status": "approved", "publish_at": "2026-11-22T18:00:00+03:00"}])
+        with mock.patch.object(pl, "now", lambda: at):
+            posts = pl.load_week("2026-W41")["posts"]
+            held = pl._reserved(posts, at.date(), "2026-W41", "midday")
+            self.assertIn(dt.datetime(2026, 11, 22, 19, 30, tzinfo=pl.EAT), held)       # the evening's, not yet planned
+            self.assertNotIn(dt.datetime(2026, 11, 22, 15, 30, tzinfo=pl.EAT), held)    # the afternoon's is planned
+            when = pl._clear_of(at + pl.HOT["min_lead"], posts, also=held)
+            if when.hour >= pl.QUIET_FROM:
+                when = pl._earlier_slot(dt.datetime(2026, 11, 22, 12, 45, tzinfo=pl.EAT), posts, also=held)
+        self.assertGreaterEqual(abs(when - dt.datetime(2026, 11, 22, 19, 30, tzinfo=pl.EAT)), dt.timedelta(minutes=45))
+        self.assertLess(when.hour, pl.QUIET_FROM)
+        # what happened on the day, without the hold: the evening's time was taken
+        with mock.patch.object(pl, "now", lambda: at):
+            unheld = pl._clear_of(at + pl.HOT["min_lead"], posts)
+        self.assertLess(abs(unheld - dt.datetime(2026, 11, 22, 19, 30, tzinfo=pl.EAT)), dt.timedelta(minutes=45))
 
 
 class ExtractJsonTests(unittest.TestCase):
