@@ -1,5 +1,5 @@
 {
- "about": "Kenyan TV channels whose public YouTube RSS feeds radar.py reads (no key). A wrong id shows up in state/radar.json errors.",
+ "about": "Kenyan TV channels and public bodies' own channels (Parliament, State House, Judiciary, Treasury, IEBC; tvclip_local.PUBLIC_BODIES) whose public YouTube RSS feeds radar.py reads (no key). A wrong id shows up in state/radar.json errors.",
  "channels": [
   {
    "name": "Citizen TV",
@@ -12,6 +12,26 @@
   {
    "name": "KTN News",
    "id": "UCKVsdeoHExltrWMuK0hOWmg"
+  },
+  {
+   "name": "Parliament of Kenya",
+   "id": "UCXuseB7juWB7DIgTJcwtHFQ"
+  },
+  {
+   "name": "State House Kenya",
+   "id": "UCuNsouEfEq9Sh6tapfg4uRA"
+  },
+  {
+   "name": "Kenya Judiciary",
+   "id": "UCsvueRDxFNSqVNa-ANmfhXQ"
+  },
+  {
+   "name": "The National Treasury - Kenya",
+   "id": "UCoItCstaFhOqYDi-Xvy7g3Q"
+  },
+  {
+   "name": "IEBC Kenya",
+   "id": "UCc7UqCReSD6d73rVHXIV2QQ"
   }
  ]
 }

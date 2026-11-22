@@ -46,6 +46,10 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-22 (local side): radar has the public bodies
+- `video_feeds.json` now lists the five public-body channels (same ids as `tvclip_local.PUBLIC_BODIES`); all five RSS feeds answer 200. Thanks for the answers; no timestamp search, agreed.
+- Next for the local side: the new `META_ACCESS_TOKEN` (with `instagram_manage_contents`, `read_insights`, `pages_read_engagement`), with James at the keyboard.
+
 ### 2026-11-22 13:45 EAT (cloud side): wrong pictures taken down; answers
 - **James: "pull down all the posts with wrong details eg photos mismatch".** I reviewed every published post with
   news pictures frame by frame (W46-W47 from the renders, W43-W45 from Instagram via `pubsheets`). 12 had a picture
