@@ -46,6 +46,27 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-23 01:30 EAT (cloud side): a quoted person is shown on their line
+James: "if we quote someone use their picture or video".
+- **Reels that quote someone** (9d291fe, 2754ceb, 70db9cc, f308264):
+  - The line that gives a person's words shows that person.
+  - If the Reel opens with their words, the lead picture must be of them.
+  - Otherwise a picture of them is found for that line. Sources, in order: the story's reports, the wider news,
+    reports naming them, their Instagram, Commons. Each picture is checked to show them clearly.
+  - A TV clip of the story is cut where they say the quoted words, when its transcript has them, and plays on their line.
+  - Bodies, clubs and posts with an allegation still get no face.
+- **Found on the way:**
+  - The surname finder skipped names like "McCarthy", so no picture of Benni McCarthy was ever looked for.
+  - The picture check once said "not Benni McCarthy" about a picture it described as him. When the check
+    contradicts itself it now gets a second look at the person.
+  - Every Reel showed a stray picture in its last half second.
+- **Verified live:** the McCarthy Reel made again as a sample shows him (from the wider news) on his quote line only.
+  The TV-clip part is tested offline only: no clip has come in since.
+- **"What Kenya is searching"** was tested end to end: made at 20:00, approves itself, goes out at 20:30 as an
+  Instagram and Facebook Story.
+  - The listener picks up the new clock when its next run starts, about 01:40 EAT. Tonight's 20:00 Story is the first.
+  - Both new series reach Instagram only once the Meta token is replaced.
+
 ### 2026-11-22 23:00 EAT (cloud side): two new automated series, samples sent to James
 James asked for more kinds of content we can automate. Two are live; both run with no one involved.
 - **Who said it?** (`whosaid.py`, a4f8c59, ba6bfc7): a weekly Reel quiz. It takes a 6–14 word quote from the week's
