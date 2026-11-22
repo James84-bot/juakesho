@@ -78,6 +78,16 @@ class TheirOwnPhoto(unittest.TestCase):
         self.assertEqual(socialpics.handle_in_pages(pages, "Bien Aime Baraza"), "bienaimesol")
         self.assertIsNone(socialpics.handle_in_pages(pages[:1][:0] + ['instagram.com/kbcchannel1'], "Bien Aime Baraza"))
 
+    def test_the_username_can_come_from_their_youtube_channel(self):
+        def yt(url):
+            if "search?" in url:
+                return {"items": [{"snippet": {"channelId": "UC1", "channelTitle": "Bien"}},
+                                  {"snippet": {"channelId": "UC2", "channelTitle": "Some Fan Page"}}]}
+            self.assertIn("id=UC1", url)
+            return {"items": [{"snippet": {"description": "Official. IG: instagram.com/bien_test"}}]}
+        with mock.patch.dict(os.environ, {"YOUTUBE_API_KEY": "k"}):
+            self.assertEqual(socialpics.handle_from_youtube("Bien Aime Baraza", "bien", yt), "bien_test")
+
     def test_nothing_is_used_when_the_account_cannot_be_read(self):
         def graph(path, fields):
             raise RuntimeError("(#10) Not enough permission")

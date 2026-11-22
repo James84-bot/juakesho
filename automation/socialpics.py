@@ -97,6 +97,30 @@ def handle_in_pages(pages: list[str], name: str) -> str | None:
     return max(seen, key=seen.get) if seen else None
 
 
+YT = "https://www.googleapis.com/youtube/v3/"
+
+
+def handle_from_youtube(name: str, known: str, get=_get_json) -> str | None:
+    """The Instagram username in the description of the person's own YouTube channel (artists and public figures
+    list it there). The channel must carry their name; the username must too (handle_in_pages)."""
+    key = os.environ.get("YOUTUBE_API_KEY", "").strip()
+    if not key:
+        return None
+    found = get(YT + "search?" + urllib.parse.urlencode({"part": "snippet", "type": "channel", "q": name,
+                                                         "maxResults": 5, "key": key}))
+    ids = [x["snippet"]["channelId"] for x in found.get("items", [])
+           if any(w in _plain(x["snippet"].get("channelTitle", "")) for w in {known.lower(), name.split()[-1].lower()} if w)]
+    if not ids:
+        _note(f"    YouTube: no channel named for {name}")
+        return None
+    chans = get(YT + "channels?" + urllib.parse.urlencode({"part": "snippet,brandingSettings", "id": ",".join(ids), "key": key}))
+    texts = [f"{c['snippet'].get('description', '')} {(c.get('brandingSettings') or {}).get('channel', {}).get('description', '')}"
+             for c in chans.get("items", [])]
+    handle = handle_in_pages(texts, f"{name} {known}")
+    _note(f"    YouTube: {len(ids)} channel(s) for {name}; Instagram in the description: {handle or 'none'}")
+    return handle
+
+
 def recent_posts(username: str, graph_get, ig_user: str) -> list[dict]:
     """Their newest public posts that are pictures: [{url, permalink, timestamp, caption}], newest first."""
     media = "media.limit(15){media_type,media_url,permalink,timestamp,caption}"
@@ -117,7 +141,7 @@ def _graph_get(path: str, fields: dict) -> dict:
 
 
 def their_photo(post: dict, names: list[str], story: str, fetch, graph_get=None, get=_get_json,
-                pages: list[str] | None = None) -> tuple[bytes, dict] | None:
+                pages: list[str] | None = None, known: str | None = None) -> tuple[bytes, dict] | None:
     """A recent photo the person posted themselves that fits `story`, with its credit. `names`: what they are
     called, most complete first ("Bien Aime Baraza", "Aime Baraza"); `fetch(url) -> bytes`; `pages`: the HTML of
     news reports about them, searched for their username when Wikidata has none."""
@@ -139,6 +163,11 @@ def their_photo(post: dict, names: list[str], story: str, fetch, graph_get=None,
         handle = handle_in_pages(pages, names[0])
         if handle:
             _note(f"  own posts for {post.get('id')}: @{handle}, linked from the news reports")
+    if not handle:
+        try:
+            handle = handle_from_youtube(names[0], known or "", get)
+        except Exception as e:
+            _note(f"  own posts for {post.get('id')}: YouTube not read ({str(e)[:100]})")
     if not handle:
         _note(f"  own posts for {post.get('id')}: no Instagram account known for {names[0]}")
         return None

@@ -624,7 +624,8 @@ def _their_own(post: dict) -> tuple[bytes, dict] | None:
             pages.append(posted._get(link).decode("utf-8", "replace"))
         except Exception as e:
             _note(f"  own posts for {post.get('id')}: a report not read ({str(e)[:80]})")
-    return socialpics.their_photo(post, [" ".join(words), full_name(who)], posted.story_line(post), _get, pages=pages)
+    return socialpics.their_photo(post, [" ".join(words), full_name(who)], posted.story_line(post), _get, pages=pages,
+                                  known=posted.terms_for(post)[0])
 
 
 def _searched(post: dict) -> tuple[bytes, dict] | None:
