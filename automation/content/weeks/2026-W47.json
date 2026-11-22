@@ -3387,7 +3387,7 @@
         }
       ],
       "quotes": [],
-      "status": "approved",
+      "status": "publish_failed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -3441,7 +3441,9 @@
       "photo_checked": "2026-11-22T12:58:11.021945+03:00",
       "photo_fit": "2026-11-22T12:58:11.021957+03:00",
       "auto": true,
-      "decided_at": "2026-11-22T14:33:04.912934+03:00"
+      "decided_at": "2026-11-22T14:33:04.912934+03:00",
+      "attempts": 1,
+      "last_error": "POST https://graph.facebook.com/v26.0/1375136779018047/videos → 400: {\"error\":{\"message\":\"(#100) No permission to publish the video\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"A-z2kEHvwPygfD2Pqmjb7Gl\"}}"
     },
     {
       "id": "2026-w47-hot-1122",
