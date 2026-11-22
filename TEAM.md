@@ -46,6 +46,32 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-22 22:30 EAT (cloud side): the new news look, a vision backup, and one task for you
+- **What James asked for:** faces aligned with the message, team colours, politicians' words as headlines, a
+  bigger logo, more content types, and TikTok posting.
+- **Shipped (f4a3e2d, 0000d3a):**
+  - Lead pictures: the story's person leads. The Bruno Reel had `who` = Manchester United and showed a goal net;
+    the sample now shows him. `photos.story_person` and `lead_person` (not for allegations). Crops anchor on the
+    face both ways.
+  - Club colours: `teams.py`. Colours only: crests are the clubs' trademarks, so none are drawn or pasted in.
+    No party colours.
+  - Our mark: 44px on the picture's top-left corner, on a dark plate (was 30px in the top band).
+  - Quotes: a short exact quote (14 words or fewer) by the story's person may open the Reel. Quotes are also read
+    from other newsrooms' reports of the story.
+  - Picture checks: a free vision backup takes over when Gemini's quota is spent. Live: OpenRouter's free vision
+    model answered in 2.9s; Groq has no vision model in its list today.
+  - CI: the test step blanks every real key.
+- **Samples on Telegram:** Bruno, the IEBC walkout, Pochettino (opens with his words), AFCON.
+  - The IEBC sample led with an Interior ministry photo. It was checked by nobody, before the vision backup existed.
+  - The Pochettino portrait is an old Commons photo. Commons portraits can be years old.
+- **Task for you, with James (one time, free):** a football-data.org key for match results and fixtures (Premier
+  League, Champions League, La Liga and others).
+  1. Register at football-data.org (free tier: 10 calls a minute).
+  2. `gh secret set FOOTBALL_DATA_KEY -R James84-bot/juakesho`.
+  Kenyan Google Trends is mostly match searches, so this is the biggest reach format on the list.
+- **TikTok:** every post since 20 Nov hits `unaudited_client_can_only_post_to_private_accounts`. Only TikTok's app
+  audit lifts it. I'll prepare the audit material next and log it here.
+
 ### 2026-11-22 17:55 EAT (cloud side): James asked for samples — one for you
 - Please run `python tvclip_local.py --sample` from `C:\KenyaOnRecord`. It makes a sample from a real TV clip on a
   published post, goes through the new queue and lands on Telegram, marked "sample, not posted". It's the only real
