@@ -3448,11 +3448,11 @@
       "ig_id": "18492317872112475",
       "duplicate_avoided": true,
       "fb_pending": {
-        "tries": 1,
-        "error": "POST https://graph.facebook.com/v26.0/1375136779018047/videos → 400: {\"error\":{\"message\":\"(#100) No permission to publish the video\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"A-z2kEHvwPygfD2Pqmjb7Gl\"}}",
-        "at": "2026-11-22T13:00:00+03:00"
+        "tries": 2,
+        "error": "POST https://graph.facebook.com/v26.0/1375136779018047/videos → 400: {\"error\":{\"message\":\"Error validating access token: Session has expired on Sunday, 22-Nov-26 05:00:00 PST. The current time is Sunday, 22-Nov-26 06:21:33 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"A5",
+        "at": "2026-11-22T17:21:33+03:00"
       },
-      "yt_pending": true
+      "yt_id": "R64xqqrztRQ"
     },
     {
       "id": "2026-w47-hot-1122",

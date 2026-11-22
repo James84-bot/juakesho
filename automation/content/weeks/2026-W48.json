@@ -3,103 +3,106 @@
   "created": "2026-11-22T17:02:14.540918+03:00",
   "posts": [
     {
-      "id": "2026-w48-d1-money",
+      "id": "2026-w48-d1-money-r2",
       "template": "money",
       "lane": "young_pro",
-      "series": "The Real Price",
-      "hook": "EPRA keeps pump *prices* high",
-      "number": "Stable",
-      "unit": "shilling exchange rate",
-      "what": "Fuel prices remain high across Kenya despite a relatively stable shilling exchange rate.",
-      "why": "Transport and living costs stay steep for every household and business week after week.",
-      "check": "EPRA official price announcements and pump display boards nationwide.",
-      "message": "Fuel prices stay high despite a stable shilling, keeping transport costs heavy.",
-      "action": "Check the EPRA price review on 21 November before filling your tank",
+      "message": "Global oil prices fell ahead of the December EPRA fuel price review.",
+      "action": "Check the new pump prices at your nearest petrol station on 14 December",
       "beats": [
-        "EPRA kept fuel *prices* high on 21 November 2026.",
-        "The shilling exchange rate remains stable across commercial banks.",
-        "High transport costs push up food and power prices everywhere.",
-        "Tell us below: what is your pump price?"
+        "Global oil prices *fell* ahead of the December EPRA review.",
+        "Motorists wait to see if the drop reaches the pump.",
+        "Transport costs shape every family budget.",
+        "Tell us below: how much do you spend on transport weekly?"
       ],
-      "photo_query": "fuel station pump Kenya",
+      "photo_query": "petrol station Nairobi",
+      "caption": "Global oil prices fell ahead of the December EPRA fuel price review. Will motorists finally see relief at the pump? Drop your weekly transport cost below.\n\n#FuelPrices #KenyaOnRecord",
       "source": "People Daily, 2026-11-21",
-      "caption": "The shilling is stable, but fuel prices refuse to drop. We pay at the pump, then we pay in matatu fares and unga prices. Check your local station on 21 November.\n\nTell us below: what is the current pump price at your nearest station?\n\n#TheRealPrice #KenyaOnRecord",
-      "who": "Energy and Petroleum Regulatory Authority",
+      "hook": "Global oil prices fall",
+      "number": "1",
+      "unit": "crude drop",
+      "what": "Global oil prices fell ahead of the December EPRA fuel price review.",
+      "why": "Lower crude prices could lower transport costs for households.",
+      "check": "Check the EPRA website or fuel pump price charts.",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Lower global oil prices could reduce pump prices and cut transport costs.",
+      "who": "EPRA Director General Daniel Kiptoo",
       "where": "National",
-      "when": "November 2026",
-      "side": "government",
-      "tone": "criticism",
-      "impact": "Over 3.2 million motorists and commuters pay higher transport and food costs.",
+      "when": "14 December 2026",
       "bg": "shuka",
       "publish_at": "2026-11-23T07:30:00+03:00",
+      "series": "The Real Price",
       "angle": "real_price",
       "source_links": [
         {
           "outlet": "People Daily",
-          "title": "Why are Kenyan fuel prices still high despite a relatively stable shilling?",
-          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVFpTczRLM3NGY2ZBUWphaGxiNjd6eEN1MWNVN0NKVkZKTENNaEZQRC1FR0ZSS1ZjVE92YlNYOVZMU21qRml3d3RXRHVQcmQwS2o1MGtncVpkRWtMZDJLUWU4WHptSHBRSTExNWxOMEpUVFpjU3BvOEhxNVdBRDlsdXhiS0c0VkZvWl83OWwyei1JUGpPazF2cHRzSUhFSkxtclROS0hycEduM0hkVVpHVQ?oc=5",
+          "title": "Global oil prices fall ahead of December EPRA fuel price review",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUzZYUTVmcEc0NG9sS3VqOGZrSlJoZGtwc284SGVEd2E1X0paSGNiMlJ4cC1wdmltZEpKZUxDWUtBYTVJOU9KMDd1bHl1WHYzSXBGQXFPOU5Ba2RpMXplUGw0TDBWOFVBQlN2RGR0UkNXRE9nRjZvQ2FFS29yVDZKQzlLZnA4bC1OOVpLYXlaR09WNk9jUkFUUE9rb1dzSjVDWlE?oc=5",
           "published": "2026-11-21"
         }
       ],
       "material": {
         "kind": "price",
-        "key": "news:https://news.google.com/rss/articles/CBMisAFBVV95cUxNVFpTczRLM3NGY2ZBUWphaGxiNjd6eEN1MWNVN0NKVkZKTENNaEZQRC1FR0ZSS1ZjVE92YlNYOVZMU21qRml3d3RXRHVQcmQwS2o1MGtncVpkRWtMZDJLUWU4WHptSHBRSTExNWxOMEpUVFpjU3BvOEhxNVdBRDlsdXhiS0c0VkZvWl83OWwyei1JUGpPazF2cHRzSUhFSkxtclROS0hycEduM0hkVVpHVQ?oc=5",
-        "title": "Why are Kenyan fuel prices still high despite a relatively stable shilling?",
+        "key": "news:https://news.google.com/rss/articles/CBMiogFBVV95cUxQUzZYUTVmcEc0NG9sS3VqOGZrSlJoZGtwc284SGVEd2E1X0paSGNiMlJ4cC1wdmltZEpKZUxDWUtBYTVJOU9KMDd1bHl1WHYzSXBGQXFPOU5Ba2RpMXplUGw0TDBWOFVBQlN2RGR0UkNXRE9nRjZvQ2FFS29yVDZKQzlLZnA4bC1OOVpLYXlaR09WNk9jUkFUUE9rb1dzSjVDWlE?oc=5",
+        "title": "Global oil prices fall ahead of December EPRA fuel price review",
         "outlet": "People Daily",
-        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVFpTczRLM3NGY2ZBUWphaGxiNjd6eEN1MWNVN0NKVkZKTENNaEZQRC1FR0ZSS1ZjVE92YlNYOVZMU21qRml3d3RXRHVQcmQwS2o1MGtncVpkRWtMZDJLUWU4WHptSHBRSTExNWxOMEpUVFpjU3BvOEhxNVdBRDlsdXhiS0c0VkZvWl83OWwyei1JUGpPazF2cHRzSUhFSkxtclROS0hycEduM0hkVVpHVQ?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUzZYUTVmcEc0NG9sS3VqOGZrSlJoZGtwc284SGVEd2E1X0paSGNiMlJ4cC1wdmltZEpKZUxDWUtBYTVJOU9KMDd1bHl1WHYzSXBGQXFPOU5Ba2RpMXplUGw0TDBWOFVBQlN2RGR0UkNXRE9nRjZvQ2FFS29yVDZKQzlLZnA4bC1OOVpLYXlaR09WNk9jUkFUUE9rb1dzSjVDWlE?oc=5",
         "published": "2026-11-21"
       },
       "status": "awaiting",
       "guard": {
-        "errors": [],
+        "errors": [
+          "'1' is not in this post's material (Global oil prices fall ahead of December EPRA fuel price review): use only the numbers it gives",
+          "weak: editor scored 3.8/10. Global oil price drops happen routinely; this is not a live news item Kenyans are currently arguing about."
+        ],
         "warnings": [
-          "possible named person(s): National November, Petroleum Regulatory Authority. Civic posts target systems, not people."
+          "possible named person(s): December Global, Director General Daniel, Kiptoo National, Nairobi Global. Civic posts target systems, not people."
         ]
       },
       "critic": {
-        "hook": 8,
-        "send": 8,
-        "clarity": 9,
-        "fresh": 8,
-        "voice": 9,
-        "craft": 9,
-        "picture": 8,
-        "hold": 8,
-        "demand": 8,
-        "action": 7,
-        "fair": 8,
-        "impact": 9,
-        "human": 9,
-        "avg": 8.3,
-        "note": "Solid execution on daily cost pressures, but ensure the action beat asks a more specific conversational question."
+        "hook": 5,
+        "send": 4,
+        "clarity": 5,
+        "fresh": 3,
+        "voice": 4,
+        "craft": 4,
+        "picture": 4,
+        "hold": 4,
+        "demand": 2,
+        "action": 3,
+        "fair": 5,
+        "impact": 4,
+        "human": 2,
+        "avg": 3.8,
+        "note": "Global oil price drops happen routinely; this is not a live news item Kenyans are currently arguing about."
       },
-      "drafted_at": "2026-11-22T17:09:59.283965+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d1-money-photo.jpg",
-      "photo_credit": "Photo: Citizen Digital · File photo: Kenyans.co.ke",
+      "drafted_at": "2026-11-22T17:29:55.611623+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d1-money-r2-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke · File photo: Kenyans.co.ke",
       "photo_kind": "posted",
-      "photo_outlet": "Citizen Digital",
-      "photo_source": "https://citizen.digital/article/fuel-prices-remain-unchanged-in-latest-epra-review-1-n393915",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129383-epra-maintains-fuel-prices-unchanged-super-petrol-retail-ksh22696",
       "extra_photos": [
-        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d1-money-photo-2.jpg",
-        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d1-money-photo-3.jpg"
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d1-money-r2-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d1-money-r2-photo-3.jpg"
       ],
       "shot_info": [
         {
-          "credit": "Photo: Citizen Digital",
-          "title": "Fuel prices remain unchanged in latest EPRA review"
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "EPRA Announces November-December Fuel Prices"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "EPRA Increases Petrol, Diesel and Kerosene Prices for October-November Cycle"
         },
         {
           "credit": "File photo: Kenyans.co.ke",
           "title": "EPRA Boss Issues Fresh Warning to Motorists After Latest Fuel Price Increase"
-        },
-        {
-          "credit": "File photo: Kenyans.co.ke",
-          "title": "Matatu Owners Address Strike Over Fuel Price Increase"
         }
       ],
-      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1499
+      "tg_msg": 1506
     },
     {
       "id": "2026-w48-d2-kenya",
@@ -196,7 +199,7 @@
         ],
         "warnings": []
       },
-      "drafted_at": "2026-11-22T17:09:59.283976+03:00"
+      "drafted_at": "2026-11-22T17:29:55.611634+03:00"
     },
     {
       "id": "2026-w48-d4-money",
@@ -288,12 +291,110 @@
     {
       "id": "2026-w48-d5-straight",
       "template": "straight",
-      "bg": "usiku",
       "lane": "everyone",
+      "message": "The report verified the actual figures behind health insurance.",
+      "action": "Check your SHA registration status on the official portal",
+      "beats": [
+        "The report checked the *figures* behind health insurance.",
+        "Accurate numbers show how health funding covers households.",
+        "Verify public health claims before sharing them online.",
+        "Tell us below: have you used your SHA card yet?"
+      ],
+      "photo_query": "hospital ward Kenya",
+      "caption": "The published report checked the evidence behind health insurance figures. Always verify healthcare claims before sharing them. Have you used your SHA card yet?\n\n#MythOrFact #KenyaOnRecord",
+      "claim": "Claims about SHA registration numbers and funding figures",
+      "who": "Nation fact check desk",
+      "truth": "The report detailed the actual evidence behind health numbers.",
+      "pride": "Check health reports before sharing claims.",
+      "claim_source": "Daily Nation, 19 November 2026",
+      "source": "Daily Nation, 2026-11-19",
+      "proof": [
+        "The report analysed actual registration data.",
+        "Official figures show the real state of health funding."
+      ],
+      "verdict": "missing_context",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Accurate health numbers help citizens know the true state of public care.",
+      "where": "National",
+      "when": "19 November 2026",
+      "bg": "usiku",
       "publish_at": "2026-11-27T17:00:00+03:00",
-      "status": "planned",
+      "series": "Myth or Fact",
       "angle": "myth",
-      "series": "Myth or Fact"
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Fact check: What the evidence says about Ruto's SHA figures",
+          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTEpHU1otNlFKVUtiZlQ2b3hEZGNKWER1M2FZQl9pdzRuQUNZR09tRzl1S0VqaXBzQU03NlVEVXRYNWlwTDhkcVVLUlNYUWRITVhnZS12NnpQbkRvTHJuZ1VQakVxcm5fdENUeEtybVNSUS11eDZwaklndU1mMFJ0Sk5rQUtDQ19KeTl6cGYwemZIemlkSTljYkZlXzBhUjNqeHBR?oc=5",
+          "published": "2026-11-19"
+        }
+      ],
+      "material": {
+        "kind": "myth",
+        "key": "news:https://news.google.com/rss/articles/CBMiowFBVV95cUxNTEpHU1otNlFKVUtiZlQ2b3hEZGNKWER1M2FZQl9pdzRuQUNZR09tRzl1S0VqaXBzQU03NlVEVXRYNWlwTDhkcVVLUlNYUWRITVhnZS12NnpQbkRvTHJuZ1VQakVxcm5fdENUeEtybVNSUS11eDZwaklndU1mMFJ0Sk5rQUtDQ19KeTl6cGYwemZIemlkSTljYkZlXzBhUjNqeHBR?oc=5",
+        "title": "Fact check: What the evidence says about Ruto's SHA figures",
+        "outlet": "Daily Nation",
+        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTEpHU1otNlFKVUtiZlQ2b3hEZGNKWER1M2FZQl9pdzRuQUNZR09tRzl1S0VqaXBzQU03NlVEVXRYNWlwTDhkcVVLUlNYUWRITVhnZS12NnpQbkRvTHJuZ1VQakVxcm5fdENUeEtybVNSUS11eDZwaklndU1mMFJ0Sk5rQUtDQ19KeTl6cGYwemZIemlkSTljYkZlXzBhUjNqeHBR?oc=5",
+        "published": "2026-11-19"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "hook: the first line has no figure and no named person, place or body: it is a topic, not a hook",
+          "weak: editor scored 3.1/10. Vague health insurance fact-checks with no specific figures or recent controversy fail the demand test."
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 3,
+        "send": 3,
+        "clarity": 4,
+        "fresh": 2,
+        "voice": 4,
+        "craft": 3,
+        "picture": 4,
+        "hold": 3,
+        "demand": 2,
+        "action": 2,
+        "fair": 5,
+        "impact": 3,
+        "human": 2,
+        "avg": 3.1,
+        "note": "Vague health insurance fact-checks with no specific figures or recent controversy fail the demand test."
+      },
+      "drafted_at": "2026-11-22T17:29:55.611631+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d5-straight-photo.jpg",
+      "photo_credit": "Photo: 5050 Markets · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "5050 Markets",
+      "photo_source": "https://5050markets.com/ke/news/sha-high-value-nhif-claims-verification",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d5-straight-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d5-straight-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: 5050 Markets",
+          "title": "SHA restarts checks on high-value NHIF claims"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "State Reveals New Plan to Address Medicine Shortages in Hospitals"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "KNH Responds After Patient Accuses Hospital of Rejection Despite Paying Ksh45,000"
+        }
+      ],
+      "ink": {
+        "3/2": "#F8F7F6"
+      },
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1507
     },
     {
       "id": "2026-w48-d6-kenya",
@@ -301,24 +402,90 @@
       "bg": "usiku",
       "lane": "everyone",
       "publish_at": "2026-11-28T11:00:00+03:00",
-      "status": "planned",
-      "series": "Built in Kenya"
+      "status": "needs_human",
+      "series": "Built in Kenya",
+      "guard": {
+        "errors": [
+          "no verified fact left in content/facts.json for this series (all used recently): add entries"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-11-22T17:29:55.611635+03:00"
     },
     {
       "id": "2026-w48-d7-glasspoll",
       "template": "glasspoll",
-      "bg": "usiku",
       "lane": "everyone",
+      "message": "Kenyans debate the political alignment ahead of 2027.",
+      "action": "Vote A or B in the comments",
+      "beats": [
+        "Political alignments are shifting ahead of the *2027* election.",
+        "Leaders are consolidating regional voting blocs across the country.",
+        "Voters weigh their options for the next government.",
+        "Comment A or B to cast your vote."
+      ],
+      "photo_query": "ballot box Kenya",
+      "caption": "Political alignments are shifting ahead of 2027 as leaders court regional blocs. Vote A or B in the comments.\n\n#Glasspoll #KenyaOnRecord",
+      "hook": "2027 Political Realignment",
+      "question": "Will alliances shift?",
+      "cta": "Comment A or B",
+      "options": [
+        "A: Yes",
+        "B: No"
+      ],
+      "side": "both",
+      "tone": "explainer",
+      "bg": "usiku",
       "publish_at": "2026-11-29T18:00:00+03:00",
-      "status": "planned",
-      "size": "story"
+      "size": "story",
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 3.5/10. Generic binary polls without a specific, current political event attached feel like lazy engagement bait."
+        ],
+        "warnings": [
+          "contains a year, % or amount with no `source`"
+        ]
+      },
+      "critic": {
+        "hook": 4,
+        "send": 3,
+        "clarity": 5,
+        "fresh": 3,
+        "voice": 4,
+        "craft": 4,
+        "picture": 4,
+        "hold": 3,
+        "demand": 3,
+        "action": 3,
+        "fair": 5,
+        "impact": 3,
+        "human": 2,
+        "avg": 3.5,
+        "note": "Generic binary polls without a specific, current political event attached feel like lazy engagement bait."
+      },
+      "drafted_at": "2026-11-22T17:29:55.611632+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d7-glasspoll-photo.jpg",
+      "photo_credit": "Photo: Francis Akuka for the Wikimedia Foundation / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_Kenya_05.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Francis Akuka for the Wikimedia Foundation / Wikimedia Commons, CC0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Newer Wave\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1508
     }
   ],
   "scripts": {
-    "radio": "Habari za wiki hii kutoka Kenya on Record. Mimi ni mtangazaji wako, na leo tunatazama uchumi wetu bila kupaka mafuta kwa kidole.\n\nKwanza kabisa, bei za mafuta zimesalia juu licha ya shilingi yetu ya Kenya kuwa thabiti kwa muda sasa. Wakati pesa yetu inaimarisha dhidi ya dola, bei ya petroli na diseli haishuki kama inavyopaswa. Matokeo yake ni mzigo mzito kwa wananchi. Na si hayo tu; kampuni ya mabasi ya Easy Coach imepandisha nauli kwenye njia zake kuu, jambo ambalo linazidi kuongeza gharama za usafiri kwa wasafiri kote nchini. Kusafiri kwenda sherehe au kuona jamaa kunazidi kuwa ghali.\n\nKatika historia yetu, Fort Jesus huko Mombasa, iliyojengwa kati ya 1593 na 1596, inasalia kuwa kivutio kikubwa na eneo la UNESCO World Heritage Site linalotukumbusha historia ndefu ya pwani yetu.\n\n[SWAHILI SUMMARY]\nKwa kifupi wiki hii: Bei za mafuta na nauli za Easy Coach zimesalia juu licha ya shilingi kuwa thabiti, na Fort Jesus Mombasa inaendelea kutupa fahari ya kihistoria.",
-    "voice_note": "Sasa, wacha tuzungumze ukweli kuhusu mfuko wako wiki hii. Shilingi yetu imetulia, lakini bei za mafuta zimebaki juu kama kawaida. Hiyo inamaanisha nini? Gharama ya kusafiri imepanda, na ndio maana hata Easy Coach imepandisha nauli kwenye njia zake kuu. Wakati bei ya petroli haishuki licha ya shilingi kuimarika, ni nani anayefaidika? Tunataka uwajibikaji kutoka kwa mamlaka. Hata hivyo, wakati tukikabiliana na haya yote ya kiuchumi, tukumbuke urithi wetu—kama Fort Jesus kule Mombasa iliyojengwa miaka ya 1590, tunastahimili. Endelea kufuatilia Kenya on Record.",
-    "sms": "Shilingi imetulia lakini bei za mafuta na nauli za Easy Coach ziko juu. Dai uwajibikaji wa bei za mafuta. Usiibiwe!",
-    "reels": "Shilingi yetu ya Kenya imetulia... lakini bei za mafuta zinabaki juu? Na sasa Easy Coach imepandisha nauli kwenye njia zake kuu! Uchumi unakaza, lakini maswali yanabaki: kwa nini bei haishuki? Tuambie maoni yako kwenye comment."
+    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni wako, na leo tunaweka mambo mezani. Wiki hii imekuja na mambo mazito matatu ambayo yanatuhusu sisi sote kama Wakenya.\n\nKwanza kabisa, bei ya mafuta duniani imeshuka. Swali kubwa ni moja tu hapa nyumbani: Je, EPRA itashusha bei ya mafuta mwezi huu wa Desemba, au tutaendelea kuumia? Tunangoja tuone kama bei za bidhaa zitapoa pia.\n\nPili, hapa katikati kulikuwa na utata mwingi kuhusu Social Health Authority, SHA. Lakini habari njema ni kwamba gazeti la *Daily Nation* limemulika na kuchimbua namba kamili nyuma ya uzinduzi huu. Ukweli umeanza kuwekwa wazi bila danganya toto, ili wananchi tujue mahali ambapo pesa zetu zinaelekea.\n\nMwisho kabisa, kwenye mitandao na mtaani, siasa za 2027 zimeanza moto. Wakenya wanajadili miungano ya kisiasa na nani anaungana na nani. Lakini kabla ya kukimbilia debe, kumbuka kazi yako ni kuuliza maswali magumu kwa viongozi.\n\nAsante kwa kusikiliza. Hii ni Kenya on Record, ukweli mtupu bila kupaka mafuta.\n\n***\n\n*Kwa ufupi (Swahili summary):* Wiki hii tunaangazia kushuka kwa bei ya mafuta duniani na matarajio ya ukaguzi wa EPRA wa Desemba, ukweli uliothibitishwa kuhusu rollout ya SHA na *Daily Nation*, na jinsi Wakenya wanavyojadili miungano ya kisiasa kuelekea 2027.",
+    "voice_note": "Sasa ndugu yangu, sikia hii ya Kenya on Record wiki hii. Kwanza, bei ya mafuta duniani imeshuka; sasa tunangoja EPRA ifanye nini kwenye bei ya Desemba. Pili, *Daily Nation* wamechimba ukweli kuhusu takwimu halisi za SHA, sio porojo. Na tatu, huku nje mijadala ya 2027 imeanza moto huku Wakenya wakipima miungano ya kisiasa. Kaa chonjo, ujue ukweli usipitwe na wakati!",
+    "sms": "Kenya on Record: Bei ya mafuta duniani imeshuka, tunangoja EPRA Desemba. Daily Nation yafichua ukweli wa SHA. Siasa za 2027 zashika moto. Usiibiwe, fuatilia ukweli!",
+    "reels": "Mafuta duniani yameshuka, lakini je, bei ya EPRA itapungua Desemba hii? Wakati Daily Nation ikifichua ukweli kuhusu SHA, Wakenya nao wameanza kupima miungano ya kisiasa kuelekea 2027. Kwenye Kenya on Record, hatupotezi muda—tunakupa ukweli mtupu. Fuatilia ukweli, usiwe wa mwisho kujua!"
   },
   "spend_usd": 0.0
 }
