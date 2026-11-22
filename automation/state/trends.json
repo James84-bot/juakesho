@@ -1,32 +1,10 @@
 {
-  "fetched": "2026-11-22T07:42:11.289400+00:00",
+  "fetched": "2026-11-22T09:32:21.820315+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "real madrid vs rc celta de vigo standings",
-      "traffic": "5000+",
-      "news": [
-        {
-          "title": "Real Madrid 2-1 Celta Vigo: Carlos Espi scores late winner in La Liga",
-          "url": "https://www.bbc.com/sport/football/live/c6205wg000g8t",
-          "source": "BBC"
-        },
-        {
-          "title": "Comeback and ninth consecutive victory",
-          "url": "https://www.realmadrid.com/en-US/news/football/first-team/reports/cronica-real-madrid-celta-j13-liga-21-11-2026",
-          "source": "Real Madrid CF | Web Oficial"
-        },
-        {
-          "title": "Player Ratings: Real Madrid 2–1 Celta Vigo",
-          "url": "https://www.managingmadrid.com/real-madrid-cf-la-liga/115654/player-ratings-real-madrid-2-1-celta-vigo",
-          "source": "Managing Madrid"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "safaricom",
-      "traffic": "200+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Vodafone funds its own Sh68 billion buyout in Safaricom",
@@ -56,43 +34,21 @@
           "source": "BBC"
         },
         {
-          "title": "Las Vegas GP: Max Verstappen wins wild race as Ferrari's Lewis Hamilton and Charles Leclerc collide again",
-          "url": "https://www.skysports.com/f1/news/13615083/las-vegas-gp-max-verstappen-wins-wild-race-as-ferraris-lewis-hamilton-and-charles-leclerc-collide-again",
+          "title": "F1 Las Vegas GP LIVE: Race updates, results, stream and highlights from 21st round of 2026 Formula 1 season in USA",
+          "url": "https://www.skysports.com/f1/live-blog/13615079/f1-las-vegas-gp-live-race-updates-results-stream-and-highlights-from-21st-round-of-2026-formula-1-season-in-usa",
           "source": "Sky Sports"
         },
         {
-          "title": "\"I've never experienced anything like this in F1\": Verstappen wins by a hair in Las Vegas",
-          "url": "https://www.autohebdof1.com/news/f1/I-have-never-experienced-this-in-F1-Verstappen-wins-at-the-wire-in-Las-Vegas.html",
-          "source": "https://www.autohebdof1.com/"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "losc vs ol",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Soriba Diaoune pas épargné du tout : Les notes de la presse après LOSC - OL",
-          "url": "https://lepetitlillois.com/2026/11/22/diaoune-notes-presse-losc-ol/",
-          "source": "Le Petit Lillois"
-        },
-        {
-          "title": "Lyon fait les affaires du PSG pour la première de l'entraîneur Carlos Vicens en s'imposant à Lille",
-          "url": "https://www.franceinfo.fr/sports/foot/ligue-1/lyon-fait-les-affaires-du-psg-pour-la-premiere-de-l-entraineur-carlos-vicens-en-s-imposant-a-lille_8294183.html",
-          "source": "franceinfo"
-        },
-        {
-          "title": "Khalis Merah : « Carlos Vicens est un entraîneur qui a eu la chance de travailler avec Pep Guardiola",
-          "url": "https://www.dazn.com/fr-FR/news/football/khalis-merah-carlos-vicens-est-un-entraineur-qui-a-eu-la-chance-de-travailler-avec-pep-guardiola/8c3e9zuktlc91ucp2lfh6dsk3",
-          "source": "DAZN"
+          "title": "Our verdict on crazy Las Vegas GP with 20-plus lead changes",
+          "url": "https://www.the-race.com/formula-1/our-verdict-f1-crazy-las-vegas-gp-20-plus-lead-changes/",
+          "source": "The Race"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "boeing 777",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Air France Boeing 777 to JFK is returning to Paris after mid-Atlantic U-turn due to cockpit instrument fault",
@@ -113,6 +69,28 @@
     },
     {
       "geo": "KE",
+      "title": "barcelona vs villarreal",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Posible alineación del Barcelona ante el Villarreal en LaLiga EA Sports",
+          "url": "https://as.com/futbol/posible-alineacion-del-barca-ante-el-villarreal-la-suplencia-de-cubarsi-lo-altera-todo-f202611-n/",
+          "source": "Diario AS"
+        },
+        {
+          "title": "Haz de Hansi Flick y elige la alineación del Barça",
+          "url": "https://www.lavanguardia.com/participacion/retos/20261122/11687957/haz-hansi-flick-elige-alineacion-barca.html",
+          "source": "La Vanguardia"
+        },
+        {
+          "title": "Vila-real CF: Vuelve la Liga al Spotify Camp Nou",
+          "url": "https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/4611861/fc-barcelona-vila-real-cf-vuelve-la-liga-al-spotify-camp-nou",
+          "source": "FC Barcelona"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "xabi alonso",
       "traffic": "100+",
       "news": [
@@ -127,14 +105,22 @@
           "source": "La Nación"
         },
         {
-          "title": "«No damos el nivel»: Alonso admite por fin el fallo fatal de su equipo",
-          "url": "https://onefootball.com/es/noticias/no-damos-el-nivel-alonso-admite-por-fin-el-fallo-fatal-de-su-equipo-43815298",
-          "source": "OneFootball"
+          "title": "«¡Id a buscar a unos culturistas!»: Daniel Farke revela el plan táctico tras la contundente victoria del Leeds United por 4-1 ante el Chelsea de Xabi Alonso",
+          "url": "https://es-us.noticias.yahoo.com/deportes/id-buscar-culturistas-daniel-farke-073341125.html",
+          "source": "Yahoo"
         }
       ]
     }
   ],
   "dropped": [
+    {
+      "title": "sassuolo vs genoa",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "juventus vs venezia",
+      "why": "unsafe: 'Betting'"
+    },
     {
       "title": "kenya county rainfall forecast november",
       "why": "unsafe: 'flood'"
@@ -146,10 +132,6 @@
     {
       "title": "inter miami vs columbus",
       "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "lille fc",
-      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
