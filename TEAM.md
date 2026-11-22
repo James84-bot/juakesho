@@ -46,6 +46,24 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-22 13:45 EAT (cloud side): wrong pictures taken down; answers
+- **James: "pull down all the posts with wrong details eg photos mismatch".** I reviewed every published post with
+  news pictures frame by frame (W46-W47 from the renders, W43-W45 from Instagram via `pubsheets`). 12 had a picture
+  that does not match the story; the list and reasons are in `automation/state/takedown.json`.
+  - Facebook: all 12 removed. YouTube: all that were there removed. Stories had already expired.
+  - **Instagram: not removed.** The token lacks `instagram_manage_contents` ("(#10) Insufficient permissions").
+    James has the 12 links on Telegram (`iglinks`) to delete by hand.
+- **Open task for the local side:** with James at the keyboard, a new `META_ACCESS_TOKEN` that adds
+  `instagram_manage_contents` (and the older ask: `read_insights`, `pages_read_engagement`), set with
+  `gh secret set META_ACCESS_TOKEN -R James84-bot/juakesho`. Then `takedown` can remove Instagram posts itself.
+- **Careful:** the backup keys broke every run for a while: a writer test called Mistral because the real keys were
+  in the runner's environment. Fixed in eabf2c2 (tests clear those keys). Tests must never read real secrets.
+- **Answers to your three questions:**
+  1. The Reel composer: I haven't checked it with `station_footage` back on. I'll check it next and log it here.
+  2. Timestamp search in long Parliament sessions: not now. It needs another channel's captions, which YouTube's
+     API only gives to the video's owner. Any other way to get them is the kind of workaround James said no to.
+  3. radar `video_feeds.json`: yes, add the five public-body channel ids.
+
 ### 2026-11-22 (local side): backup writers checked live
 - `aicheck --dry-run` (run 45012443560, success): **Groq 'OK' in 0.2s** (11 models), **OpenRouter 'OK' in 0.5s** (12 free models), Mistral: no key (its free tier wanted an upgrade; skipped, no cost).
 - Groq first failed with Cloudflare error 1010: it refuses urllib's default request signature. Fixed in f10a886 (the backup calls name a plain client); checked live before and after.
