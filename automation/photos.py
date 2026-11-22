@@ -617,12 +617,26 @@ def _their_own(post: dict) -> tuple[bytes, dict] | None:
     import socialpics
     words = [w for w in re.findall(r"[A-Z][A-Za-z'-]{2,}", who) if w.lower() not in TITLES and not INSTITUTION.match(w.lower())]
     pages = []
-    try:   # the reports of this story, for the username they link to or embed
-        for _, item in posted._ranked(post)[:3]:
-            pages.append(posted._get(item["link"]).decode("utf-8", "replace"))
-    except Exception as e:
-        _note(f"  own posts for {post.get('id')}: reports not read ({str(e)[:80]})")
+    # the reports of this story, ours and the wider news, for the username they link to or embed
+    links = [item["link"] for _, item in posted._ranked(post)[:3]] + [x["link"] for x in posted.event_reports(post)[:4]]
+    for link in dict.fromkeys(links):
+        try:
+            pages.append(posted._get(link).decode("utf-8", "replace"))
+        except Exception as e:
+            _note(f"  own posts for {post.get('id')}: a report not read ({str(e)[:80]})")
     return socialpics.their_photo(post, [" ".join(words), full_name(who)], posted.story_line(post), _get, pages=pages)
+
+
+def _searched(post: dict) -> tuple[bytes, dict] | None:
+    """The story's photo from any newsroom, found by searching the news (posted.search_event)."""
+    if not news_photos_ok():
+        return None
+    try:
+        import posted
+        return posted.search_event(post)
+    except Exception as e:
+        _note(f"  news search failed for {post.get('id')}: {e}")
+        return None
 
 
 def _topic_lead(post: dict) -> tuple[bytes, dict] | None:
@@ -663,6 +677,9 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
                 got = None
             if got:
                 return _save(out_dir, post["id"], *got)
+            got = _searched(post)
+            if got:
+                return _save(out_dir, post["id"], *got)
             got = _topic_lead(post)
             if got:
                 return _save(out_dir, post["id"], *got)
@@ -693,7 +710,8 @@ def fetch(post: dict, out_dir: Path) -> dict | None:
             # nothing of the day itself: a real file photo of the person or body the post is about, before any symbol
             # (a brand can turn this off: on a sport page "who" is often a team, and a team is not a portrait)
             file_photos = brands.brand().get("file_photos", True)
-            for name, step in (("file photo from the news", lambda: posted.find_named(post) if file_photos and news_photos_ok() and not _accused(post) else None),
+            for name, step in (("the story in the wider news", lambda: _searched(post)),
+                               ("file photo from the news", lambda: posted.find_named(post) if file_photos and news_photos_ok() and not _accused(post) else None),
                                ("their own posts", lambda: _their_own(post) if file_photos and news_photos_ok() and not _accused(post) else None),
                                ("portrait", lambda: commons_portrait(post) if file_photos and not _accused(post) else None)):
                 try:

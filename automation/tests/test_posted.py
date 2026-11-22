@@ -366,6 +366,30 @@ class WrongPictures(unittest.TestCase):
         self.assertIn("SHA cancer cover", asked[0])
 
 
+class NewsSearch(unittest.TestCase):
+    """22 Nov: our feeds had one report on Bien's album, with cover art as its picture."""
+    BIEN = {"id": "b", "who": "Bien Aime Baraza", "message": "Kenyan artists can secure top global features.",
+            "beats": ["Bien dropped his 17-track album Alusa Continua with 2 Chainz and Oxlade."]}
+
+    def test_the_search_is_the_name_the_post_uses_and_the_storys_own_names(self):
+        self.assertEqual(posted.event_query(self.BIEN), "bien alusa continua")
+
+    def test_a_photo_from_another_newsroom_is_used_once_it_fits(self):
+        rss = (b'<rss><channel><item><title>Bien unveils Alusa Continua - Tuko</title><link>https://news.google.com/rss/'
+               b'articles/A1</link><source url="https://tuko.co.ke">Tuko</source></item><item><title>Bien album '
+               b'launch party - Mpasho</title><link>https://news.google.com/rss/articles/A2</link><source>Mpasho'
+               b'</source></item></channel></rss>')
+        pics = {"https://tuko/1": _photo(7), "https://mpasho/2": _photo(8)}
+        posted._EVENT_CACHE.clear()
+        with mock.patch.object(posted, "_get", lambda u, timeout=20: rss), \
+             mock.patch("gnews.real_link", lambda u, *a, **k: {"https://news.google.com/rss/articles/A1": "https://tuko/1",
+                                                             "https://news.google.com/rss/articles/A2": "https://mpasho/2"}[u]), \
+             mock.patch.object(posted, "_photo_of", lambda it: (pics[it["link"]], {"credit": f"Photo: {it['outlet']}"})), \
+             mock.patch("picture.fits", lambda d, about: "album cover art, not a photo" if d == pics["https://tuko/1"] else ""):
+            got = posted.search_event(self.BIEN)
+        self.assertEqual(got[1], {"credit": "Photo: Mpasho", "kind": "posted"})
+
+
 def _photo(seed: int, soft: bool = False) -> bytes:
     """A test photo with real detail (shapes and grain); soft=True: the same kind of picture blown up 3x."""
     import io

@@ -528,6 +528,83 @@ def find_topic(post: dict, n: int = 2, have: list[str] | None = None, seen: list
     return out
 
 
+GNEWS_SEARCH = "https://news.google.com/rss/search?"
+_EVENT_CACHE: dict[str, list[dict]] = {}
+
+
+def event_query(post: dict) -> str:
+    """What to search the news for: the person by the name the post uses, plus the story's own distinctive names
+    ('bien alusa continua'); without a person, the distinctive names and the first subject words."""
+    import photos
+    surname, words = terms_for(post)
+    own = {w.lower() for w in re.findall(r"[A-Za-z'-]{3,}", str(post.get("who", "")))}
+    seen = {**post, "line": f"{post.get('line') or ''}. " + ". ".join(str(b) for b in post.get("beats") or [])}
+    names = [n for n in names_for(seen) if n != surname and n not in own and n not in photos.TITLES]
+    parts = ([surname] if surname else []) + names[:2]
+    if len(parts) < 2:
+        parts += words[:3 - len(parts)]
+    return " ".join(parts) if len(parts) >= 2 else ""
+
+
+def event_reports(post: dict, get=None) -> list[dict]:
+    """Recent reports from any newsroom about this post's story, found by searching Google News (our own feeds
+    carry a few outlets only: on 22 Nov they had one report on Bien's album, with cover art as its picture).
+    Each: {link (the newsroom's own article), outlet, title, when}. Cached for the run."""
+    import gnews
+    import xml.etree.ElementTree as ET
+    q = event_query(post)
+    if not q:
+        return []
+    if q in _EVENT_CACHE:
+        return _EVENT_CACHE[q]
+    get = get or (lambda url: _get(url, timeout=20))
+    url = GNEWS_SEARCH + urllib.parse.urlencode({"q": f"{q} when:30d", "hl": "en-KE", "gl": "KE", "ceid": "KE:en"})
+    out = []
+    try:
+        root = ET.fromstring(get(url))
+        for it in list(root.iter("item"))[:5]:
+            title = (it.findtext("title") or "").rsplit(" - ", 1)[0]
+            outlet = it.findtext("source") or ""
+            try:
+                link = gnews.real_link(it.findtext("link") or "")
+            except Exception:
+                continue
+            if link and "news.google.com" not in link:
+                out.append({"link": link, "outlet": outlet, "title": title, "credit": "", "text": ""})
+    except Exception as e:
+        _note(f"  news search '{q}' failed: {str(e)[:100]}")
+    _note(f"  news search '{q}' for {post.get('id')}: {len(out)} reports")
+    _EVENT_CACHE[q] = out
+    return out
+
+
+def search_event(post: dict, have: list[str] | None = None) -> tuple[bytes, dict] | None:
+    """A photo of this story from any newsroom's report of it (event_reports), when our feeds have none that can
+    be used. The picture passes the outlet-graphic check (cover art and flyers are left out) and is seen to fit
+    the story. Credited to its newsroom."""
+    import picture
+    if _accused_text(post):
+        return None
+    for item in event_reports(post):
+        if item["link"] in (have or []):
+            continue
+        got = _photo_of(item)
+        if not got:
+            continue
+        why = picture.fits(got[0], story_line(post))
+        if why != "":
+            _note(f"    not {item['outlet']}: {why or 'not looked at'} ({item['title'][:60]})")
+            continue
+        _note(f"    picked {item['outlet']} from the news search: {item['title'][:70]}")
+        return got[0], {**got[1], "kind": "posted"}
+    return None
+
+
+def _accused_text(post: dict) -> bool:
+    import guard
+    return bool(guard.CRIME_WORDS.search(guard._all_text(post)))
+
+
 def find_named(post: dict) -> tuple[bytes, dict] | None:
     """A file photo when no report of this exact story has one: the newest report whose HEADLINE names the post's
     person (by surname) or, failing that, its institution by acronym (IEBC, KRA, EPRA). Never by place: a report
