@@ -3776,6 +3776,21 @@ def _main(argv: list[str] | None = None) -> int:
                 log(f"aicheck {b['name']}: '{reply[:20]}' in {time.time() - t0:.1f}s")
             except Exception as e:
                 log(f"aicheck {b['name']}: FAILED after {time.time() - t0:.1f}s: {str(e)[:300]}")
+        try:   # can a free backup see? A red square, one word back: what the picture checks fall to after Gemini
+            import io
+            import base64
+            from PIL import Image
+            buf = io.BytesIO()
+            Image.new("RGB", (64, 64), (200, 16, 46)).save(buf, "JPEG")
+            for b in drafter.FREE_BACKUPS:
+                models = drafter.see_models(b)
+                log(f"aicheck {b['name']} pictures: {', '.join(models) or 'no free model that can see'}")
+            t0 = time.time()
+            seen = drafter.look_backup(base64.b64encode(buf.getvalue()).decode(), "What colour is this square? One word.")
+            log(f"aicheck picture backup: {seen.strip()[:30]!r} in {time.time() - t0:.1f}s" if seen else
+                "aicheck picture backup: none could look")
+        except Exception as e:
+            log(f"aicheck picture backup: FAILED: {str(e)[:200]}")
         try:
             reply = drafter.call_claude("Answer with one word.", "Say OK.", max_tokens=20).strip()
             msg = f"🧠 Writer check: {drafter.provider()} answered '{reply[:30]}'. " + (

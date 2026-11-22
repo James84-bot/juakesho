@@ -116,6 +116,28 @@ jobs:
         if: steps.cmd.outputs.c != 'skip'
         # a tick only collects taps and publishes what you approved: a failing test must not stop that
         continue-on-error: ${{ steps.cmd.outputs.c == 'tick' }}
+        # the tests never see a real key: on 22 Nov one reached a real backup writer and every run failed for 10
+        # minutes, and a test that falls through to a free picture model would spend the real quota
+        env:
+          GEMINI_API_KEY: ''
+          MISTRAL_API_KEY: ''
+          GROQ_API_KEY: ''
+          OPENROUTER_API_KEY: ''
+          ANTHROPIC_API_KEY: ''
+          TELEGRAM_BOT_TOKEN: ''
+          TELEGRAM_CHAT_ID: ''
+          YOUTUBE_API_KEY: ''
+          PEXELS_API_KEY: ''
+          PIXABAY_API_KEY: ''
+          META_ACCESS_TOKEN: ''
+          META_PAGE_ID: ''
+          META_IG_USER_ID: ''
+          YT_CLIENT_ID: ''
+          YT_CLIENT_SECRET: ''
+          YT_REFRESH_TOKEN: ''
+          TIKTOK_CLIENT_KEY: ''
+          TIKTOK_CLIENT_SECRET: ''
+          TIKTOK_REFRESH_TOKEN: ''
         run: |
           cd automation
           set -o pipefail

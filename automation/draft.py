@@ -892,6 +892,65 @@ FREE_BACKUPS = [
 ]
 # Groq sits behind Cloudflare, which refuses urllib's default "Python-urllib" signature (error 1010, seen 2026-11-22)
 BACKUP_UA = "news-writer/1.0"
+# Free models that can see, for the picture checks once Gemini's free quota is spent: on 22 Nov evening every check
+# answered "no model could look", so pictures went unchecked (a lead photo from the Interior ministry on an IEBC
+# story). Groq: these, if its model list still has them. OpenRouter: its free models that take images, read from its
+# model list each run (they change).
+SEE_GROQ = ["meta-llama/llama-4-scout-17b-16e-instruct", "meta-llama/llama-4-maverick-17b-128e-instruct"]
+_SEE_MODELS: dict[str, list[str]] = {}
+
+
+def see_models(b: dict) -> list[str]:
+    """The backup's free models that take a picture (cached for the run; [] when it has none or can't say)."""
+    if b["name"] in _SEE_MODELS:
+        return _SEE_MODELS[b["name"]]
+    got: list[str] = []
+    key = os.environ.get(b["env"], "").strip()
+    if key and b["name"] in ("Groq", "OpenRouter"):
+        try:
+            req = urllib.request.Request(b["list"], headers={"Authorization": f"Bearer {key}", "User-Agent": BACKUP_UA})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                listed = json.loads(r.read()).get("data", [])
+            if b["name"] == "Groq":
+                ids = {x.get("id") for x in listed}
+                got = [m for m in SEE_GROQ if m in ids]
+            else:
+                got = [x["id"] for x in listed if str(x.get("id", "")).endswith(":free")
+                       and "image" in ((x.get("architecture") or {}).get("input_modalities") or [])][:3]
+        except Exception as e:
+            print(f"  {b['name']}: picture models not listed ({str(e)[:80]})")
+    _SEE_MODELS[b["name"]] = got
+    return got
+
+
+def look_backup(b64: str, ask: str) -> str | None:
+    """One look at a picture by a free backup that can see; None when none could."""
+    for b in FREE_BACKUPS:
+        key = os.environ.get(b["env"], "").strip()
+        for m in see_models(b) if key else []:
+            tag = f"{b['name']}:{m}"
+            if _skip(tag):
+                continue
+            body = json.dumps({"model": m, "max_tokens": 400, "temperature": 0, "messages": [{"role": "user", "content": [
+                {"type": "text", "text": ask},
+                {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{b64}"}}]}]}).encode()
+            req = urllib.request.Request(b["url"], data=body, method="POST", headers={
+                "Authorization": f"Bearer {key}", "Content-Type": "application/json", "User-Agent": BACKUP_UA})
+            try:
+                with urllib.request.urlopen(req, timeout=90) as r:
+                    data = json.loads(r.read())
+                text = ((data.get("choices") or [{}])[0].get("message") or {}).get("content") or ""
+                if isinstance(text, list):
+                    text = "".join(x.get("text", "") for x in text if isinstance(x, dict))
+                if text.strip():
+                    return text
+            except urllib.error.HTTPError as e:
+                if e.code in (429, 500, 502, 503, 504):
+                    BUSY[tag] = time.time() + BUSY_FOR
+                print(f"  look by {tag} failed: {e.code} {e.read().decode(errors='replace')[:120]}")
+            except Exception as e:
+                print(f"  look by {tag} failed: {str(e)[:120]}")
+    return None
 # what may send a call on to the backups: Google busy, out of quota, unreachable, our own per-run cap, or no key
 HAND_OVER = re.compile(r"\b(429|50[0234])\b|unreachable|no Gemini|call cap|No AI writer key", re.I)
 
@@ -1188,7 +1247,12 @@ def look_at(image: bytes, ask: str, strong: bool = False) -> str:
         got = attempt()
         if got is not None:
             return got
-    raise RuntimeError("no model could look at the picture: " + ("; ".join(errors) or "no key set"))
+    if not strong:   # a confirming look stays with the stronger models; a first look may go to a free backup
+        got = look_backup(b64, ask)
+        if got is not None:
+            return got
+    raise RuntimeError("no model could look at the picture: " + ("; ".join(errors) or
+                                                                 "Gemini used up or busy, and no free backup could see"))
 
 
 NO_THINK_LEVEL: set[str] = set()   # models that refused thinkingConfig.thinkingLevel (asked again without it)

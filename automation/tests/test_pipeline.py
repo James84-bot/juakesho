@@ -745,6 +745,48 @@ class EditionTimeTests(TempWeeks):
         self.assertLess(abs(unheld - dt.datetime(2026, 11, 22, 19, 30, tzinfo=pl.EAT)), dt.timedelta(minutes=45))
 
 
+class PictureBackupTests(unittest.TestCase):
+    """After Gemini's free quota, a free model that can see still checks pictures (22 Nov: none could)."""
+
+    def setUp(self):
+        import draft
+        self.d = draft
+        draft._SEE_MODELS.clear()
+        self.addCleanup(draft._SEE_MODELS.clear)
+
+    def test_openrouter_free_models_that_take_images_are_found_and_used(self):
+        listed = {"data": [{"id": "x/text-only:free", "architecture": {"input_modalities": ["text"]}},
+                           {"id": "y/vision:free", "architecture": {"input_modalities": ["text", "image"]}},
+                           {"id": "z/vision-paid", "architecture": {"input_modalities": ["image"]}}]}
+        sent = []
+
+        class R:
+            def __init__(self, body):
+                self.body = body
+            def __enter__(self):
+                return self
+            def __exit__(self, *a):
+                return False
+            def read(self):
+                return json.dumps(self.body).encode()
+
+        def opener(req, timeout=30):
+            if req.get_method() == "GET":
+                return R(listed if "openrouter" in req.full_url else {"data": []})
+            sent.append(json.loads(req.data))
+            return R({"choices": [{"message": {"content": "Red"}}]})
+        with mock.patch.dict(os.environ, {"OPENROUTER_API_KEY": "k", "GROQ_API_KEY": "g", "MISTRAL_API_KEY": ""}), \
+                mock.patch("urllib.request.urlopen", opener):
+            self.assertEqual(self.d.see_models(self.d.FREE_BACKUPS[2]), ["y/vision:free"])
+            self.assertEqual(self.d.look_backup("QUJD", "What colour?"), "Red")
+        self.assertEqual(sent[0]["model"], "y/vision:free")
+        self.assertEqual(sent[0]["messages"][0]["content"][1]["image_url"]["url"], "data:image/jpeg;base64,QUJD")
+
+    def test_no_backup_that_can_see_says_so(self):
+        with mock.patch.dict(os.environ, {"OPENROUTER_API_KEY": "", "GROQ_API_KEY": "", "MISTRAL_API_KEY": ""}):
+            self.assertIsNone(self.d.look_backup("QUJD", "What colour?"))
+
+
 class ExtractJsonTests(unittest.TestCase):
     def test_the_first_whole_object_wins_whatever_comes_after(self):
         import draft
