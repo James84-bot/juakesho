@@ -3315,7 +3315,8 @@ def _main(argv: list[str] | None = None) -> int:
     if a.command == "takedown":   # James's word only: a published post with wrong details comes down everywhere
         if not a.post:
             raise SystemExit("takedown needs --post <id>")
-        takedown(a.post, (a.name or "wrong details").replace("_", " "), dry_run=a.dry_run)
+        for pid in [x for x in a.post.split(",") if x]:   # several at once: one run, one id after another
+            takedown(pid, (a.name or "wrong details").replace("_", " "), dry_run=a.dry_run)
         return 0
     if a.command == "whopics":   # where a person's picture would come from: their own posts, then Commons
         import photos
