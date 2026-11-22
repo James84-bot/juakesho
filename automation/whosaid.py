@@ -160,19 +160,30 @@ def clue_problem(clue: str, c: dict) -> str:
     return ""
 
 
+WHY: list[str] = []   # why the last choose() returned None, for the log
+
+
 def choose(cands: list[dict], call) -> tuple[dict, str] | None:
-    """The writer's pick and its clue, checked; None when it picks nothing or its clue gives the answer away."""
+    """The writer's pick and its clue, checked (a clue that fails is sent back once with the reason); None when it
+    picks nothing or its clue still fails (the reason is in WHY)."""
     import draft
+    WHY.clear()
     listed = "\n".join(f'[{i}] {c["speaker"]}: “{c["words"]}”\n    the report: {c["context"][:400]}'
                        for i, c in enumerate(cands[:12]))
-    got = draft.extract_json(call(PICK, listed, max_tokens=600))
-    i = got.get("pick")
-    if not isinstance(i, int) or not 0 <= i < min(len(cands), 12):
-        return None
-    clue = str(got.get("clue") or "").strip()
-    if clue_problem(clue, cands[i]):
-        return None
-    return cands[i], clue
+    ask = listed
+    for _ in range(2):
+        got = draft.extract_json(call(PICK, ask, max_tokens=600))
+        i = got.get("pick")
+        if not isinstance(i, int) or not 0 <= i < min(len(cands), 12):
+            WHY.append(f"the writer picked none ({got})"[:200])
+            return None
+        clue = str(got.get("clue") or "").strip()
+        problem = clue_problem(clue, cands[i])
+        if not problem:
+            return cands[i], clue
+        WHY.append(f"clue {clue!r}: {problem}")
+        ask = f"{listed}\n\nYour last answer picked [{i}] with the clue {clue!r}, which fails: {problem}. Answer again."
+    return None
 
 
 def mystery(face: bytes) -> bytes:

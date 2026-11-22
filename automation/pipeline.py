@@ -3107,7 +3107,7 @@ def make_whosaid(sample: bool = False, dry_run: bool = False) -> str | None:
         log(f"whosaid: the writer couldn't pick ({str(e)[:160]})")
         return None
     if not picked:
-        log(f"whosaid: none of {len(cands)} quotes picked, or the clue gave the answer away")
+        log(f"whosaid: none of {len(cands)} quotes used: {'; '.join(whosaid.WHY) or 'no reason given'}")
         return None
     c, clue = picked
     label = current_week_label(ahead=0)

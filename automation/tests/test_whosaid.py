@@ -86,6 +86,17 @@ class Choosing(unittest.TestCase):
             call = lambda system, user, max_tokens=0, clue=clue: json.dumps({"pick": 0, "clue": clue})
             self.assertIsNone(whosaid.choose(self.c, call), clue)
         self.assertIsNone(whosaid.choose(self.c, lambda *a, **k: '{"pick": -1, "clue": ""}'))
+        self.assertIn("picked none", whosaid.WHY[0])
+
+    def test_a_failing_clue_is_sent_back_once_with_the_reason(self):
+        asks = []
+
+        def call(system, user, max_tokens=0):
+            asks.append(user)
+            return json.dumps({"pick": 0, "clue": "Kalonzo said it." if len(asks) == 1 else "He leads the Wiper party."})
+        c, clue = whosaid.choose(self.c, call)
+        self.assertEqual(clue, "He leads the Wiper party.")
+        self.assertIn("the clue names the speaker", asks[1])
 
 
 class ThePost(unittest.TestCase):
