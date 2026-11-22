@@ -3502,7 +3502,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "weak: editor scored 4.7/10. Match the post to the current week's top stories and remove machine-like phrasing."
