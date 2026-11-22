@@ -148,6 +148,37 @@ def _graph_get(path: str, fields: dict) -> dict:
     return _get_json(f"https://graph.facebook.com/{version}/{path}?{q}")
 
 
+def _known_file():
+    import brands
+    return brands.STATE / "instagram_handles.json"
+
+
+def known_handles() -> dict:
+    """Usernames already confirmed: {person's name, plain: username}. Kept so a person is looked up once."""
+    try:
+        return json.loads(_known_file().read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def _remember(name: str, handle: str) -> None:
+    data = known_handles()
+    data[" ".join(re.findall(r"[a-z]+", _plain(name)))] = handle
+    try:
+        _known_file().parent.mkdir(parents=True, exist_ok=True)
+        _known_file().write_text(json.dumps(data, indent=1, sort_keys=True), encoding="utf-8")
+    except OSError:
+        pass
+
+
+def confirmed(handle: str, names: list[str], graph_get, ig_user: str) -> bool:
+    """The account's own display name carries the person's surname or the name the post uses: a username found
+    in a page or a channel description is only believed once the account says who it is."""
+    shown = _plain(account(handle, graph_get, ig_user).get("name", "")).replace("-", " ")
+    words = {w for n in names for w in re.findall(r"[a-z]{3,}", _plain(n).replace("-", " "))}
+    return any(re.search(rf"\b{re.escape(w)}\b", shown) for w in words)
+
+
 def their_photo(post: dict, names: list[str], story: str, fetch, graph_get=None, get=_get_json,
                 pages: list[str] | None = None, known: str | None = None) -> tuple[bytes, dict] | None:
     """A recent photo the person posted themselves that fits `story`, with its credit. `names`: what they are
@@ -158,8 +189,11 @@ def their_photo(post: dict, names: list[str], story: str, fetch, graph_get=None,
     names = [n for n in dict.fromkeys(names) if n]
     if not names or not ig_user or not os.environ.get("META_ACCESS_TOKEN", "").strip():
         return None
-    handle = None
-    for name in names:
+    graph_get = graph_get or _graph_get
+    remembered = known_handles()
+    handle = next((remembered[k] for k in (" ".join(re.findall(r"[a-z]+", _plain(n))) for n in names) if k in remembered), None)
+    fresh_find = handle is None
+    for name in ([] if handle else names):
         try:
             handle = instagram_username(name, get)
         except Exception as e:
@@ -180,7 +214,12 @@ def their_photo(post: dict, names: list[str], story: str, fetch, graph_get=None,
         _note(f"  own posts for {post.get('id')}: no Instagram account known for {names[0]}")
         return None
     try:
-        posts = recent_posts(handle, graph_get or _graph_get, ig_user)
+        if fresh_find:
+            if not confirmed(handle, names + ([known] if known else []), graph_get, ig_user):
+                _note(f"  own posts for {post.get('id')}: @{handle} does not say it is {names[0]}")
+                return None
+            _remember(names[0], handle)
+        posts = recent_posts(handle, graph_get, ig_user)
     except Exception as e:   # a personal account, or a token without the permission
         _note(f"  own posts for {post.get('id')}: @{handle} not readable ({str(e)[:160]})")
         return None

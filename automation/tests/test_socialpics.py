@@ -41,9 +41,28 @@ def photo(seed):
 
 class TheirOwnPhoto(unittest.TestCase):
     def setUp(self):
-        p = mock.patch.dict(os.environ, {"META_IG_USER_ID": "17", "META_ACCESS_TOKEN": "t"})
-        p.start()
-        self.addCleanup(p.stop)
+        import tempfile
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        for p in (mock.patch.dict(os.environ, {"META_IG_USER_ID": "17", "META_ACCESS_TOKEN": "t"}),
+                  mock.patch.object(socialpics, "_known_file", lambda: Path(self.tmp.name) / "handles.json")):
+            p.start()
+            self.addCleanup(p.stop)
+
+    def test_a_username_found_is_kept_only_when_the_account_says_who_it_is(self):
+        def graph(path, fields):
+            name = "Bien-Aimé Baraza" if "bien_test" in fields["fields"] else "Fan Page"
+            if "name,biography" in fields["fields"]:
+                return {"business_discovery": {"name": name}}
+            return {"business_discovery": {"media": {"data": []}}}
+        self.assertIsNone(socialpics.their_photo({"id": "p"}, ["Bien Aime Baraza"], "s", lambda u: b"",
+                                                 graph_get=graph, get=wikidata))
+        self.assertEqual(socialpics.known_handles(), {"bien aime baraza": "bien_test"})   # no pictures, but known now
+        fan = lambda url: {"query": {"search": []}, "search": []}   # noqa: E731
+        with mock.patch.object(socialpics, "handle_from_youtube", lambda *a, **k: "bienfanpage"):
+            self.assertIsNone(socialpics.their_photo({"id": "p"}, ["Peter Otieno"], "s", lambda u: b"",
+                                                     graph_get=graph, get=fan))
+        self.assertNotIn("peter otieno", socialpics.known_handles())
 
     def test_the_username_comes_from_wikidata_for_a_person_only(self):
         self.assertEqual(socialpics.instagram_username("Bien Aime Baraza", wikidata), "bien_test")
@@ -61,6 +80,8 @@ class TheirOwnPhoto(unittest.TestCase):
         asked = {}
 
         def graph(path, fields):
+            if "name,biography" in fields["fields"]:
+                return {"business_discovery": {"name": "Bien-Aimé Baraza"}}
             asked.update(fields)
             return {"business_discovery": {"media": {"data": media}}}
         pics = {"cover": photo(1), "studio": photo(2), "old": photo(3)}
