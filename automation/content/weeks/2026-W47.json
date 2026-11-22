@@ -3387,14 +3387,114 @@
       ],
       "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1456
+      "tg_msg": 1456,
+      "photo_checked": "2026-11-22T12:58:11.021945+03:00",
+      "photo_fit": "2026-11-22T12:58:11.021957+03:00"
+    },
+    {
+      "id": "2026-w47-hot-1122",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Internet Users",
+      "line": "National Assembly considers 1 *internet metering bill* that raises data costs.",
+      "fact": "The proposed bill introduces data tracking mechanisms that raise privacy and affordability concerns for users.",
+      "source": "Al Jazeera, 2026-11-22",
+      "photo_query": "Kenya National Assembly",
+      "message": "National Assembly considers 1 bill to meter internet data, threatening prices and user privacy.",
+      "action": "Submit public participation views on the Internet Metering Bill to Parliament",
+      "who": "National Assembly",
+      "where": "National",
+      "when": "22 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Kenyans face higher monthly data expenses and reduced privacy under the bill.",
+      "beats": [
+        "National Assembly debates 1 *internet metering bill* tracking user data.",
+        "The proposal introduces *data tracking* tools that affect bundle prices.",
+        "Millions of Kenyan workers face *higher monthly data* expenses.",
+        "How much do you *spend on internet* every month?"
+      ],
+      "caption": "National Assembly considers a bill to meter internet data and track user activity. This bill threatens to raise daily bundle prices for millions of Kenyans. The National Assembly must publish the full bill for public review. How much do you spend on internet every month?\n\n#InternetMetering #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-22T19:59:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Cancer patients will no longer face halted treatment when their SHA benefits run out.",
+        "Kenyan artists can secure top global features while keeping their authentic sound.",
+        "Nairobi will serve as Kenya's sole host city for the 2027 AFCON tournament."
+      ],
+      "source_links": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Kenya’s internet metering bill raises privacy and affordability concerns",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUGNzc3VpU0tTTjAtcENjYnBmLTNmYWE5Ul82V19SdW5OZ0VpTzd2VHdqb0h4dDVrenBVT0hIT0xxY0lSUzNrNnR6YWtZWE1BVDhyZkVpNTlEUU53c1pqSkZNeTg4NnA5cWZVY0tLZ1BJdUZnS2xZUnNvQjNOQTJROXNJMFpnUkpSSW0waHFUa003X0czNG0tbWRaVFBCR1MzTGtXbUU3bUM5eDJqMWR1MUNrV2h0Tmkx0gG4AUFVX3lxTE1QY3NzdWlTS1NOMC1wQ2NicGYtM2ZhYTlSXzZXX1J1bk5nRWlPN3ZUd2pvSHh0NWt6cFVPSEHTHFjSVJTM2s2dHpha1lYTUFUOHJmRWk1OURRTndzWmpKRk15ODg2cDlxZlVjS0tnUEl1RmdLbFlSp29CM05BMlE5c0kwWmdSSlJJbTBocVRrTTdfRzM0bS1tZFpUUEJHUzNMa1dtRTdtQzl4MmoxZHUxQ2tXaHROaTE?oc=5",
+          "published": "2026-11-22"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "title": "Kenya’s internet metering bill raises privacy and affordability concerns",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNUGNzc3VpU0tTTjAtcENjYnBmLTNmYWE5Ul82V19SdW5OZ0VpTzd2VHdqb0h4dDVrenBVT0hIT0xxY0lSUzNrNnR6YWtZWE1BVDhyZkVpNTlEUU53c1pqSkZNeTg4NnA5cWZVY0tLZ1BJdUZnS2xZUnNvQjNOQTJROXNJMFpnUkpSSW0waHFUa003X0czNG0tbWRaVFBCR1MzTGtXbUU3bUM5eDJqMWR1MUNrV2h0Tmkx0gG4AUFVX3lxTE1QY3NzdWlTS1NOMC1wQ2NicGYtM2ZhYTlSXzZXX1J1bk5nRWlPN3ZUd2pvSHh0NWt6cFVPSEhPTHFjSVJTM2s2dHpha1lYTUFUOHJmRWk1OURRTndzWmpKRk15ODg2cDlxZlVjS0tnUEl1RmdLbFlSc29CM05BMlE5c0kwWmdSSlJJbTBocVRrTTdfRzM0bS1tZFpUUEJHUzNMa1dtRTdtQzl4MmoxZHUxQ2tXaHROaTE?oc=5",
+          "published": "2026-11-22"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.7/10. Match the post to the current week's top stories and remove machine-like phrasing."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 5,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 3,
+        "action": 5,
+        "fair": 5,
+        "impact": 5,
+        "human": 3,
+        "avg": 4.7,
+        "note": "Match the post to the current week's top stories and remove machine-like phrasing."
+      },
+      "drafted_at": "2026-11-22T13:03:24.656433+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1122-photo.jpg",
+      "photo_credit": "Photo: KBC Digital · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC Digital",
+      "photo_source": "https://www.kbc.co.ke/agriculture-and-livestock-committee-considers-livestock-bill-2026/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1122-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC Digital",
+          "title": "Agriculture and Livestock Committee considers Livestock Bill, 2026"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Govt Reveals What New World Bank-Funded County Assembly Tracker Will Monitor"
+        }
+      ],
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1462
     }
   ],
   "scripts": {
-    "radio": "Jambo and welcome back to Kenya on Record. I'm your host.\n\nThis week, official updates confirmed that Nairobi will serve as Kenya’s sole host city for the 2027 Africa Cup of Nations. While construction at Talanta Sports City and upgrades at Kasarani are moving forward, this decision raises critical accountability questions for the rest of the nation.\n\nWhen Kenya won the joint Pamoja Bid alongside Uganda and Tanzania, the vision was to showcase national pride and spur economic growth beyond the capital. Cities like Mombasa, Eldoret, and Kisumu have rich sporting heritage and passionate fans who deserve world-class facilities. Yet, once again, billions in public infrastructure expenditure are concentrated entirely in Nairobi.\n\nTaxpayers from all forty-seven counties are funding this tournament. While Nairobi gets upgraded transport networks, hospitality boosts, and modern sports complexes, regional stadium projects across the country remain stalled or neglected. We must ask our leadership: what is the long-term plan for sports development outside the capital? AFCON should elevate the entire country, not just one city.\n\nKwa ufupi: Imethibitishwa kuwa Nairobi pekee ndiyo itakayohifadhi mechi za AFCON 2027 nchini Kenya. Ingawa hii ni hatua kubwa, ni muhimu kujiuliza kwa nini miji mingine kama Kisumu, Eldoret, na Mombasa imeachwa nyuma. Pesa za umma kutoka kaunti zote 47 zinatumika, hivyo basi maendeleo ya michezo yanapaswa kuwafikia Wakenya wote, sio wa Nairobi pekee.",
-    "voice_note": "Habari yenu. So, the government has confirmed that Nairobi will be Kenya's ONLY host city for the 2027 AFCON tournament. Kasarani and Talanta Sports City are getting all the spotlight, but let's talk about the bigger picture. When the East Africa Pamoja Bid was announced, the expectation was national growth. Instead, billions in public funds are staying locked in Nairobi, while legendary sporting hubs like Eldoret, Kisumu, and Mombasa get left behind with incomplete stadiums. AFCON is a joint tournament, but inside Kenya, it’s looking like a Nairobi-only affair. As taxpayers from all 47 counties footing this bill, we need to ask: where is the accountability for regional sports infrastructure? Drop your thoughts in the chat.",
-    "sms": "Usiibiwe: AFCON 2027 money must benefit all Kenyans, not just Nairobi. Demand accountability for local stadium projects in your county.",
-    "reels": "Nairobi has been named Kenya's sole host city for AFCON 2027. While Kasarani and Talanta Sports City get billion-shilling upgrades, what happens to regional grounds in Mombasa, Kisumu, or Eldoret? Hosting AFCON is a huge win, but concentrating all infrastructure spending in the capital leaves the rest of the country sidelined. We must demand equal sports investment across all 47 counties."
+    "radio": "Jambo na karibu kwa Kenya on Record community update. I’m your host, bringing you the stories that directly impact your daily life and wallet.\n\nThis week, our attention is on a proposed internet metering legislation currently making its way through Parliament. If passed, this bill will fundamentally alter how we connect online. The draft legislation introduces strict metering and tariff regulations that service providers warn will inevitably push up the price of data bundles. In a country where small business owners, students, and daily hustles rely heavily on affordable internet, raising the cost of connection is a direct hit to mwananchi.\n\nEven more concerning are the privacy implications. The proposed framework grants regulatory oversight that could compromise your digital privacy, opening doors for excessive tracking of user activity under the guise of monitoring compliance. Internet access is no longer a luxury—it is a basic utility and a public right essential for economic survival.\n\nWe must hold our leaders accountable and ask: who does this bill actually serve?\n\nKwa ufupi: Mswada mpya wa kupima matumizi ya mtandao unalenga kuongeza gharama za data na kuingilia faragha ya Wakenya mtandaoni. Mtandao ni njia yetu ya kujitafutia riziki. Ni lazima tuwawajibishe wabunge wetu ili kulinda haki zetu za kidijitali na uchumi wetu.",
+    "voice_note": "Bana, check this out. There's a new internet metering bill quietly moving through Parliament, and we all need to pay attention. Basically, this proposed law changes how data is regulated, which will inevitably push up bundle prices for everyone. But it gets worse: the bill also creates loopholes that compromise your digital privacy by allowing excessive monitoring of user activity under the guise of regulation. Internet isn't a luxury anymore; it's how we work, learn, and earn a living. We can't afford higher data costs or state eyes on our personal activity. Share this voice note, keep an eye on your MP, and let's demand accountability before this becomes law.",
+    "sms": "Usiibiwe Tip: Proposed internet metering will raise data bundle prices and breach your digital privacy. Tell your MP to reject unfair digital taxes now.",
+    "reels": "They’re coming for your internet bundles. A new proposed internet metering bill threatens to skyrocket data prices in Kenya while compromising your online privacy. Internet access is a right and a economic lifeline, not a luxury to be over-taxed and monitored. Speak up, track your MP, and demand they vote NO to higher data costs. Stay sharp with Kenya on Record."
   },
   "spend_usd": 0.0
 }
