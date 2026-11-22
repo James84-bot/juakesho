@@ -3424,7 +3424,8 @@ def _main(argv: list[str] | None = None) -> int:
                 log(f"aicheck {b['name']}: no {b['env']} secret yet")
                 continue
             try:
-                req = urllib.request.Request(b["list"], headers={"Authorization": f"Bearer {os.environ[b['env']].strip()}"})
+                req = urllib.request.Request(b["list"], headers={"Authorization": f"Bearer {os.environ[b['env']].strip()}",
+                                                              "User-Agent": drafter.BACKUP_UA})
                 with urllib.request.urlopen(req, timeout=60) as r:
                     ids = [x.get("id", "") for x in json.loads(r.read()).get("data", [])]
                 if b["name"] == "OpenRouter":

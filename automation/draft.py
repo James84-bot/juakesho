@@ -890,6 +890,8 @@ FREE_BACKUPS = [
     {"name": "OpenRouter", "env": "OPENROUTER_API_KEY", "url": "https://openrouter.ai/api/v1/chat/completions",
      "list": "https://openrouter.ai/api/v1/models", "models": ["openrouter/free"], "fits": None},
 ]
+# Groq sits behind Cloudflare, which refuses urllib's default "Python-urllib" signature (error 1010, seen 2026-11-22)
+BACKUP_UA = "news-writer/1.0"
 # what may send a call on to the backups: Google busy, out of quota, unreachable, our own per-run cap, or no key
 HAND_OVER = re.compile(r"\b(429|50[0234])\b|unreachable|no Gemini|call cap|No AI writer key", re.I)
 
@@ -911,7 +913,8 @@ def _backup(b: dict, system: str, user: str, max_tokens: int) -> str:
                            "messages": [{"role": "system", "content": system},
                                         {"role": "user", "content": user}]}).encode()
         req = urllib.request.Request(b["url"], data=body, method="POST", headers={
-            "Authorization": f"Bearer {key}", "Content-Type": "application/json", "Accept": "application/json"})
+            "Authorization": f"Bearer {key}", "Content-Type": "application/json", "Accept": "application/json",
+            "User-Agent": BACKUP_UA})
         for attempt in range(2):
             try:
                 with urllib.request.urlopen(req, timeout=240) as r:
