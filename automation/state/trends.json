@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-22T13:07:12.123423+00:00",
+  "fetched": "2026-11-22T13:37:29.492460+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,8 +7,8 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "WSL: Man City host Spurs seeking to go top, Man Utd at Birmingham",
-          "url": "https://www.bbc.com/sport/football/live/c5y431zlw28mt",
+          "title": "Manchester City vs Tottenham Hotspur: Women's Super League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cm879ddeq2jet",
           "source": "BBC"
         },
         {
@@ -17,9 +17,9 @@
           "source": "Sky Sports"
         },
         {
-          "title": "Team news | No fresh concerns ahead of City trip",
-          "url": "https://www.tottenhamhotspur.com/news/1234177/spurs-women-team-news-no-fresh-concerns-ahead-of-city-trip",
-          "source": "Tottenham Hotspur"
+          "title": "Manchester City v Tottenham, Birmingham v Manchester United: WSL clockwatch – live",
+          "url": "https://www.theguardian.com/football/live/2026/nov/22/wsl-manchester-city-tottenham-birmingham-manchester-united-arsenal-west-ham-live",
+          "source": "The Guardian"
         }
       ]
     },
@@ -39,9 +39,9 @@
           "source": "Manchester United"
         },
         {
-          "title": "Manchester United left-back returns to squad after injury layoff",
-          "url": "https://centredevils.co.uk/news/manchester-united-left-back-returns-to-squad-after-injury-layoff/",
-          "source": "centredevils"
+          "title": "Sports News, Transfers, Scores | Watch Live Sport",
+          "url": "https://www.skysports.com/football/watch/6945836765702243112/english-womens-super-league-2026-2027",
+          "source": "Sky Sports"
         }
       ]
     },
@@ -51,26 +51,26 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "LIVE Juventus-Venezia 4-0 Serie A 2026/2027: Cabal firma il tris della Juventus",
-          "url": "https://www.virgilio.it/sport/dirette/live/serie-a/22-11-2026/juventus-venezia/2638235/",
-          "source": "Virgilio"
-        },
-        {
-          "title": "LIVE Juve-Venezia 4-0: anche Kolo Muani a segno! Batte Stankovic dagli 11 metri",
-          "url": "https://www.gazzetta.it/Calcio/Serie-A/Juventus/22-11-2026/live-juve-venezia-risultato-e-gol-in-diretta-serie-a.shtml",
-          "source": "La Gazzetta dello Sport"
-        },
-        {
-          "title": "Serie A | Juventus-Venezia | Le formazioni ufficiali",
-          "url": "https://www.juventus.com/it/news/articoli/serie-a-juventus-venezia-le-formazioni-ufficiali",
+          "title": "Serie A | Juventus-Venezia | Il tabellino",
+          "url": "https://www.juventus.com/it/news/articoli/serie-a-juventus-venezia-il-tabellino",
           "source": "Juventus.com"
+        },
+        {
+          "title": "Juve-Venezia, Zhegrova e Celik dal 1'",
+          "url": "https://sport.sky.it/calcio/serie-a/video/2026/11/22/juve-venezia-formazioni-ufficiali-1141904",
+          "source": "Sky Sport"
+        },
+        {
+          "title": "SportMediaset: Juventus, nuovo striscione degli ultrà: \"Chi rema contro non ha dignità\" Video",
+          "url": "https://mediasetinfinity.mediaset.it/video/sportmediaset/juventus-nuovo-striscione-degli-ultra-chi-rema-contro-non-ha-dignita_FD00000000554315",
+          "source": "Mediaset Infinity"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "kenyans",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "‘We have the money’: Diaspora Kenyans promise Sifuna Sh100m",
@@ -78,14 +78,59 @@
           "source": "The Star, Kenya"
         },
         {
+          "title": "How America tour has become part of Kenya's State House campaign",
+          "url": "https://www.standardmedia.co.ke/politics/article/2001562761/how-america-tour-has-become-part-of-kenyas-state-house-campaign",
+          "source": "The Standard"
+        },
+        {
           "title": "Sh100million, building JKIA & more: Sifuna bags goodies and pledges on first day of US tour",
           "url": "https://www.pulse.co.ke/story/sh100million-building-jkia-and-more-sifuna-bags-goodies-and-pledges-on-first-day-of-us-tour-2026112207390761658",
           "source": "Pulse Kenya"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "shabana vs mara sugar",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Cheruiyot the hero as Mara Sugar extend unbeaten Premier League run against Shabana",
+          "url": "https://www.mozzartsport.co.ke/football/news/cheruiyot-the-hero-as-mara-sugar-extend-unbeaten-premier-league-run-against-shabana/70860",
+          "source": "Mozzart Sport Kenya"
         },
         {
-          "title": "Linda Mwananchi Movement opens international headquarters in New Jersey",
-          "url": "https://thekenyandiaspora.com/stories/9879/Linda-Mwananchi-Movement-opens-international-headquarters-in-New-Jersey",
-          "source": "The Kenyan Diaspora Media"
+          "title": "Shabana seek hoodoo-busting victory against stubborn Mara Sugar",
+          "url": "https://www.the-star.co.ke/sports/football/2026-11-19-shabana-seek-hoodoo-busting-victory-against-stubborn-mara-sugar",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "FKF PL: Gor Mahia, KCB target top spot as Shabana host Mara Sugar",
+          "url": "https://www.mozzartsport.co.ke/football/news/fkf-pl-gor-mahia-kcb-target-top-spot-as-shabana-host-mara-sugar/70856",
+          "source": "Mozzart Sport Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "shabana fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Shabana raises millions in historic jersey auction to rank third in Africa",
+          "url": "https://www.mozzartsport.co.ke/football/news/shabana-raises-millions-in-historic-jersey-auction-to-rank-third-in-africa/70853",
+          "source": "Mozzart Sport Kenya"
+        },
+        {
+          "title": "𝗦𝗵𝗮𝗯𝗮𝗻𝗮 𝘁𝗼 𝘂𝗻𝘃𝗲𝗶𝗹 𝟮𝟬𝟮𝟲/𝟮𝟬𝟮𝟳 𝘀𝗲𝗮𝘀𝗼𝗻 𝗸𝗶𝘁 Kisii-based Shabana Football Club is set to unveil its 2026/2027 season kit during a Corporate Dignitaries Dinner on Saturday, November 21, at a hotel in Nakuru town. In a press statement sent to news",
+          "url": "https://www.facebook.com/kenyanewsagency/posts/%F0%9D%97%A6%F0%9D%97%B5%F0%9D%97%AE%F0%9D%97%AF%F0%9D%97%AE%F0%9D%97%BB%F0%9D%97%AE-%F0%9D%98%81%F0%9D%97%BC-%F0%9D%98%82%F0%9D%97%BB%F0%9D%98%83%F0%9D%97%B2%F0%9D%97%B6%F0%9D%97%B9-%F0%9D%9F%AE%F0%9D%9F%AC%F0%9D%9F%AE%F0%9D%9F%B2%F0%9D%9F%AE%F0%9D%9F%AC%F0%9D%9F%AE%F0%9D%9F%B3-%F0%9D%98%80%F0%9D%97%B2%F0%9D%97%AE%F0%9D%98%80%F0%9D%97%BC%F0%9D%97%BB-%F0%9D%97%B8%F0%9D%97%B6%F0%9D%98%81kisii-based-shabana-football-club-is-set-to/1450315693950739/",
+          "source": "Facebook"
+        },
+        {
+          "title": "Shabana FC 26-27 Home, Away & Third Kits Released",
+          "url": "https://www.footyheadlines.com/2708603780/shabana-fc-26-27-home-away-third-kits-released.html",
+          "source": "Footy Headlines"
         }
       ]
     },
@@ -104,23 +149,15 @@
   ],
   "dropped": [
     {
+      "title": "hull vs brighton",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "helicopter",
       "why": "unsafe: 'Missing'"
     },
     {
-      "title": "shabana vs mara sugar",
-      "why": "unsafe: 'BETTING'"
-    },
-    {
       "title": "burnley vs blackburn rovers",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "graduation",
-      "why": "unsafe: 'odds'"
-    },
-    {
-      "title": "ac milan vs frosinone",
       "why": "unsafe: 'Betting'"
     }
   ],
