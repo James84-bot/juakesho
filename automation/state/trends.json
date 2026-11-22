@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-22T20:18:37.439112+00:00",
+  "fetched": "2026-11-22T20:29:31.556887+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,19 +7,19 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "Pronóstico Getafe vs Atlético de Madrid: Oportunidad para luchar por el liderato.",
-          "url": "https://www.vietnam.vn/es/nhan-dinh-getafe-vs-atletico-madrid-co-hoi-bam-duoi-ngoi-dau",
-          "source": "Vietnam.vn"
+          "title": "El Getafe, uno de los rivales más especiales para un Kang-in que necesita recuperar gol",
+          "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20261122/1004254058/getafe-rivales-especiales-kang-in-necesita-recuperar-gol.html",
+          "source": "Mundo Deportivo"
+        },
+        {
+          "title": "El Getafe CF se concentran para enfrentarse al Atlético de Madrid",
+          "url": "https://www.sport.es/es/videos/getafe/20261122/getafe-cf-concentran-enfrentarse-atletico/136720960.shtml",
+          "source": "SPORT"
         },
         {
           "title": "🚨 Getafe-Atlético: estos son los elegidos de Simeone y Bordalás",
           "url": "https://es-us.noticias.yahoo.com/deportes/getafe-atl%C3%A9tico-elegidos-simeone-bordal%C3%A1s-190400681.html",
           "source": "Yahoo"
-        },
-        {
-          "title": "Getafe vs Aleti: de los derbi favoritos de España",
-          "url": "https://hsbnoticias.com/noticias/getafe-vs-aleti-de-los-derbi-favoritos-de-espana",
-          "source": "HSB Noticias"
         }
       ]
     },
@@ -47,6 +47,28 @@
     },
     {
       "geo": "KE",
+      "title": "marseille vs le mans",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "OM : malade, Pierre-Emile Hojbjerg devrait être forfait contre Le Mans",
+          "url": "https://www.laprovence.com/article/om/1412304239460815/om-malade-pierre-emile-hojbjerg-devrait-etre-forfait-contre-le-mans",
+          "source": "La Provence"
+        },
+        {
+          "title": "Ligue 1 : OM – Le Mans, voici les compos probables",
+          "url": "https://www.sport.fr/football/ligue-1-om-le-mans-voici-les-compos-probables-1503916.shtm",
+          "source": "Sport.fr"
+        },
+        {
+          "title": "Olympique de Marseille - Le Mans : direct vidéo, streaming, chaîne TV... à quelle heure et comment regarder le match",
+          "url": "https://www.dazn.com/fr-FR/news/football/olympique-de-marseille-le-mans-direct-video-streaming-chaine-tv-a-quelle-heure-et-comment-regarder-le-match/8zsg9oifna2x1gqtxtnyn9462",
+          "source": "DAZN"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "live football tv",
       "traffic": "500+",
       "news": [
@@ -64,28 +86,6 @@
           "title": "What to watch for on NFL Sunday: Cowboys’ desperation and 49ers-Vikings’ NFC showdown - The Athletic",
           "url": "https://www.nytimes.com/athletic/7795603/2026/11/22/nfl-week-11-preview-sunday-playbook/",
           "source": "The New York Times"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "marseille vs le mans",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "OM : malade, Pierre-Emile Hojbjerg devrait être forfait contre Le Mans",
-          "url": "https://www.laprovence.com/article/om/1412304239460815/om-malade-pierre-emile-hojbjerg-devrait-etre-forfait-contre-le-mans",
-          "source": "La Provence"
-        },
-        {
-          "title": "Ligue 1 : OM – Le Mans, voici les compos probables",
-          "url": "https://www.sport.fr/football/ligue-1-om-le-mans-voici-les-compos-probables-1503916.shtm",
-          "source": "Sport.fr"
-        },
-        {
-          "title": "DIRECT. Olympique de Marseille - Le Mans : suivez le match de la 11e journée de Ligue 1 en live",
-          "url": "https://www.ouest-france.fr/sport/football/ligue-1/direct/direct-olympique-de-marseille-le-mans-suivez-le-match-de-la-11e-journee-de-ligue-1-en-live-88dbd8a8-63e2-4e0c-92dc-a2059f173809",
-          "source": "Ouest-France"
         }
       ]
     },
@@ -147,23 +147,23 @@
     },
     {
       "geo": "KE",
-      "title": "man u game",
+      "title": "sky sports",
       "traffic": "200+",
       "news": [
         {
-          "title": "What Liverpool need to do with Rio Ngumoha is clear after Man United statement",
-          "url": "https://www.liverpoolecho.co.uk/sport/football/football-news/what-liverpool-need-rio-ngumoha-34949840",
-          "source": "Liverpool Echo"
-        },
-        {
-          "title": "Liverpool star aims dig at Manchester United after “special” game",
-          "url": "https://www.caughtoffside.com/2026/11/22/liverpools-rio-ngumoha-on-man-united-win/",
-          "source": "CaughtOffside"
-        },
-        {
-          "title": "'He will see what Man Utd are made of' - Pulis on Pochettino's first game",
-          "url": "https://www.bbc.com/sport/football/articles/ckqx5w58dgv7o",
+          "title": "David Raya injury: Goalkeeper taken off during Newcastle 2-2 Arsenal",
+          "url": "https://www.bbc.com/sport/football/articles/ckx28w9ree9vo",
           "source": "BBC"
+        },
+        {
+          "title": "Highlights: Newcastle United 2-2 Arsenal",
+          "url": "https://www.arsenal.com/news/highlights-newcastle-united-2-2-arsenal-a35eG4u9Jgxy",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Arteta sweats on Raya scan, rues missed chances at Newcastle",
+          "url": "https://nation.africa/kenya/sports/football/arteta-sweats-on-raya-scan-rues-missed-chances-at-newcastle-5680596",
+          "source": "Daily Nation"
         }
       ]
     },
