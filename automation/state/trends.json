@@ -1,11 +1,16 @@
 {
-  "fetched": "2026-11-22T09:32:21.820315+00:00",
+  "fetched": "2026-11-22T09:45:16.385652+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "safaricom",
       "traffic": "1000+",
       "news": [
+        {
+          "title": "Safaricom explains how Buy Goods Till owners can retrieve forgotten store numbers",
+          "url": "https://peopledaily.digital/business/safaricom-explains-how-buy-goods-till-owners-can-retrieve-forgotten-store-numbers",
+          "source": "People Daily"
+        },
         {
           "title": "Vodafone funds its own Sh68 billion buyout in Safaricom",
           "url": "https://www.businessdailyafrica.com/bd/corporate/companies/vodafone-funds-its-own-sh68-billion-buyout-in-safaricom-5678762",
@@ -15,11 +20,6 @@
           "title": "R1.15 billion in limbo for Vodacom",
           "url": "https://businesstech.co.za/news/telecommunications/885111/r1-15-billion-in-limbo-for-vodacom/",
           "source": "BusinessTech"
-        },
-        {
-          "title": "Stanbic Bank Freezes Vodacom’s Ksh9.1 Billion Safaricom Dividend",
-          "url": "https://www.linkedin.com/pulse/stanbic-bank-freezes-vodacoms-ksh91-billion-safaricom-dividend-mcc9f",
-          "source": "LinkedIn"
         }
       ]
     },
@@ -34,14 +34,14 @@
           "source": "BBC"
         },
         {
-          "title": "F1 Las Vegas GP LIVE: Race updates, results, stream and highlights from 21st round of 2026 Formula 1 season in USA",
-          "url": "https://www.skysports.com/f1/live-blog/13615079/f1-las-vegas-gp-live-race-updates-results-stream-and-highlights-from-21st-round-of-2026-formula-1-season-in-usa",
-          "source": "Sky Sports"
-        },
-        {
           "title": "Our verdict on crazy Las Vegas GP with 20-plus lead changes",
           "url": "https://www.the-race.com/formula-1/our-verdict-f1-crazy-las-vegas-gp-20-plus-lead-changes/",
           "source": "The Race"
+        },
+        {
+          "title": "Verstappen wins exhilarating Las Vegas Grand Prix from Norris and Piastri",
+          "url": "https://www.formula1.com/en/latest/article/verstappen-wins-exhilarating-las-vegas-grand-prix-from-norris-and-piastri.2eeBWqekZdir9mdDVK9YVX",
+          "source": "Formula 1"
         }
       ]
     },
@@ -69,6 +69,28 @@
     },
     {
       "geo": "KE",
+      "title": "nairobi road",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Details of Proposed Toll Fees on Nairobi-Thika Highway & Southern Bypass",
+          "url": "https://www.kenyans.co.ke/news/129520-treasury-proposes-toll-fees-nairobi-thika-road-among-other-major-highways",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Nairobi–Thika Road: Questions govt must answer before introducing toll charges",
+          "url": "https://peopledaily.digital/news/nairobi-thika-road-questions-govt-must-answer-before-introducing-toll-charges",
+          "source": "People Daily"
+        },
+        {
+          "title": "Treasury Eyes Tolls on Nairobi–Thika Highway in KSh100bn PPP Plan",
+          "url": "https://nairobiwire.com/2026/11/nairobi-thika-highway-tolls-ksh100bn-ppp-plan.html",
+          "source": "Nairobi Wire -"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "barcelona vs villarreal",
       "traffic": "100+",
       "news": [
@@ -88,31 +110,13 @@
           "source": "FC Barcelona"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "xabi alonso",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Naufragio total de Xabi",
-          "url": "https://as.com/futbol/internacional/naufragio-total-de-xabi-f202611-n/",
-          "source": "Diario AS"
-        },
-        {
-          "title": "Dibu Martínez volvió a jugar en Chelsea tras la fractura de mandíbula y le hicieron cuatro goles en la Premier League",
-          "url": "https://www.lanacion.com.ar/deportes/futbol/dibu-martinez-volvio-a-jugar-en-chelsea-tras-la-fractura-de-mandibula-y-le-hicieron-cuatro-goles-en-nid21112026/",
-          "source": "La Nación"
-        },
-        {
-          "title": "«¡Id a buscar a unos culturistas!»: Daniel Farke revela el plan táctico tras la contundente victoria del Leeds United por 4-1 ante el Chelsea de Xabi Alonso",
-          "url": "https://es-us.noticias.yahoo.com/deportes/id-buscar-culturistas-daniel-farke-073341125.html",
-          "source": "Yahoo"
-        }
-      ]
     }
   ],
   "dropped": [
+    {
+      "title": "ac milan vs frosinone prediction",
+      "why": "unsafe: 'Betting'"
+    },
     {
       "title": "sassuolo vs genoa",
       "why": "unsafe: 'Betting'"
@@ -128,10 +132,6 @@
     {
       "title": "hull city vs brighton",
       "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "inter miami vs columbus",
-      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
