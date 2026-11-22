@@ -94,6 +94,15 @@ def thumbnail(video_id: str, image: Path) -> None:
         raise RuntimeError(f"YouTube thumbnail → {e.code}: {e.read().decode(errors='replace')[:300]}") from e
 
 
+def delete(video_id: str) -> None:
+    """Removes one of our videos (James asked for posts with wrong details to come down, 22 Nov)."""
+    token = access_token()
+    req = urllib.request.Request(f"https://www.googleapis.com/youtube/v3/videos?id={urllib.parse.quote(video_id)}",
+                                 method="DELETE", headers={"Authorization": f"Bearer {token}"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        r.read()
+
+
 def stats(ids: list[str]) -> dict[str, dict]:
     """Public numbers for our own videos: {id: {"views", "likes", "comments"}}. 50 ids per request."""
     token, out = access_token(), {}

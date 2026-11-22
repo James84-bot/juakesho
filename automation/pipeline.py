@@ -585,6 +585,53 @@ def _used_pictures(p: dict) -> tuple[list[dict], int]:
     return items, sum(t not in by_title for t in titles)
 
 
+def takedown(pid: str, why: str, dry_run: bool = False) -> dict:
+    """Takes a published post down everywhere we put it: Instagram (Reel and Story), the Facebook Page (Reel and
+    Story) and YouTube. Only on James's word: on 22 Nov he asked for every post with wrong details (a picture that
+    does not match the story) to come down. The post stays in the week file as "removed", with the reason and,
+    per platform, what was removed or why it could not be, so nothing is lost from the record."""
+    import youtube
+    f = next((f for f in sorted(WEEKS.glob("*.json")) if f'"{pid}"' in f.read_text(encoding="utf-8")), None)
+    if not f:
+        raise SystemExit(f"takedown: no post {pid}")
+    data = load_week(f.stem)
+    p = next(x for x in data["posts"] if x["id"] == pid)
+    if p["status"] != "published":
+        raise SystemExit(f"takedown: {pid} is {p['status']}, not published")
+    done: dict[str, str] = {}
+    token = os.environ.get("META_ACCESS_TOKEN", "")
+    version = os.environ.get("META_GRAPH_VERSION", "v26.0")
+    for key, where in (("ig_id", "Instagram"), ("story_id", "Instagram story"), ("fb_id", "Facebook"),
+                       ("fb_story_id", "Facebook story")):
+        if not p.get(key):
+            continue
+        if dry_run:
+            done[where] = "would be removed"
+            continue
+        try:
+            http("DELETE", f"https://graph.facebook.com/{version}/{p[key]}?access_token={token}")
+            done[where] = "removed"
+        except Exception as e:
+            done[where] = f"not removed: {str(e)[:160]}"
+    if p.get("yt_id"):
+        try:
+            if not dry_run:
+                youtube.delete(p["yt_id"])
+            done["YouTube"] = "would be removed" if dry_run else "removed"
+        except Exception as e:
+            done["YouTube"] = f"not removed: {str(e)[:160]}"
+    for where, what in done.items():
+        log(f"takedown {pid}: {where} {what}")
+    if not dry_run:
+        p["status"], p["removed_at"], p["removed_why"], p["removed"] = "removed", now().isoformat(), why, done
+        save_week(data)
+        left = [w for w, x in done.items() if not x.startswith("removed")]
+        _notify(f"🗑 Taken down <b>{_esc(pid)}</b> ({_esc(why)}): "
+                + ", ".join(f"{w} {'✓' if x.startswith('removed') else '✗'}" for w, x in done.items())
+                + (f"\nStill up, remove by hand: {_esc(', '.join(left))}" if left else ""))
+    return done
+
+
 def rephoto_waiting() -> list[str]:
     """Weeks with a post the photo audit re-photographed that still needs rendering."""
     out = []
@@ -3027,7 +3074,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -3265,6 +3312,11 @@ def _main(argv: list[str] | None = None) -> int:
                     else:
                         os.environ[k] = v
         return 0 if ok else 1
+    if a.command == "takedown":   # James's word only: a published post with wrong details comes down everywhere
+        if not a.post:
+            raise SystemExit("takedown needs --post <id>")
+        takedown(a.post, (a.name or "wrong details").replace("_", " "), dry_run=a.dry_run)
+        return 0
     if a.command == "whopics":   # where a person's picture would come from: their own posts, then Commons
         import photos
         name = (a.name or "").replace("_", " ")

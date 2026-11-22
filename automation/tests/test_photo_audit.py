@@ -116,3 +116,38 @@ class Decision(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Takedown(unittest.TestCase):
+    """22 Nov: "pull down all the posts with wrong details". Removed everywhere, kept in the record."""
+
+    def test_a_published_post_comes_down_everywhere_and_the_record_says_what_happened(self):
+        import youtube
+        with tempfile.TemporaryDirectory() as d:
+            calls, sent = [], []
+
+            def http(method, url, fields=None, files=None, timeout=60):
+                calls.append((method, url.split("?")[0].rsplit("/", 1)[1]))
+                if "ig-1" in url:
+                    raise RuntimeError("HTTP 403 (#10) Application does not have permission")
+                return {"success": True}
+            with mock.patch.object(pl, "WEEKS", Path(d)), mock.patch.object(pl, "log", lambda *a: None), \
+                    mock.patch.object(pl, "http", http), mock.patch.object(pl, "_notify", sent.append), \
+                    mock.patch.object(youtube, "delete", lambda vid: calls.append(("DELETE", vid))):
+                pl.save_week({"collection": "2026-W47", "scripts": {}, "posts": [
+                    post("2026-w47-hot-1122m", status="published", ig_id="ig-1", story_id="st-1", fb_id="fb-1",
+                         fb_story_id="fbs-1", yt_id="yt-1")]})
+                done = pl.takedown("2026-w47-hot-1122m", "armed fighters on a SHA story")
+                saved = pl.load_week("2026-W47")["posts"][0]
+            self.assertEqual(sorted(c[1] for c in calls), ["fb-1", "fbs-1", "ig-1", "st-1", "yt-1"])
+            self.assertTrue(done["Instagram"].startswith("not removed"))
+            self.assertEqual(done["YouTube"], "removed")
+            self.assertEqual(saved["status"], "removed")
+            self.assertEqual(saved["removed_why"], "armed fighters on a SHA story")
+            self.assertIn("Still up, remove by hand: Instagram", sent[0])
+
+    def test_only_a_published_post(self):
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(pl, "WEEKS", Path(d)):
+            pl.save_week({"collection": "2026-W47", "scripts": {}, "posts": [post("2026-w47-x", status="approved")]})
+            with self.assertRaises(SystemExit):
+                pl.takedown("2026-w47-x", "x")
