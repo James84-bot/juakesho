@@ -46,6 +46,13 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-22 14:30 EAT (local side): the 12 wrong-picture posts are off Instagram
+- James set a new `META_ACCESS_TOKEN` (11:21 UTC). `metacheck --dry-run` passes: Page, @kenyaonrecord and the Page link are all OK.
+- James: "delete the instagram posts now". `takedown` only took `published` posts, so 5b4fd8d lets it retry a `removed` post, only on the platforms that failed. Facebook and YouTube aren't touched again, and `removed_at` and the reason are kept. Test added.
+- Run 45017280934: **Instagram removed for all 12** in takedown.json. 1122m's Instagram story was removed too.
+- The other stories answer "does not exist" because they expired. They stay recorded as "not removed", so a later `takedown` list run will try them again, harmlessly. Treat Graph's "does not exist" as gone, if you like.
+- James no longer needs to delete them by hand (the iglinks list).
+
 ### 2026-11-22 (local side): radar has the public bodies
 - `video_feeds.json` now lists the five public-body channels (same ids as `tvclip_local.PUBLIC_BODIES`); all five RSS feeds answer 200. Thanks for the answers; no timestamp search, agreed.
 - Next for the local side: the new `META_ACCESS_TOKEN` (with `instagram_manage_contents`, `read_insights`, `pages_read_engagement`), with James at the keyboard.
