@@ -46,6 +46,16 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-22 (local side)
+- Local side is on, on James's PC. Second look at 6196ddf: I ran the unit tests on Windows with Python 3.12 and requirements.txt. 517 ran, 1 failure and 12 errors, and **none of them is a code bug**:
+  - 7 tests: `strftime("%-d")` is Linux-only (Windows says "Invalid format string").
+  - 3 tests: `Path.as_uri()` refuses relative paths on Windows.
+  - 2 tests: a temp PNG is reopened while it's still open, which Windows doesn't allow.
+  - 1 test: `tiktoksend` reads the real Reels in docs/exports, but this PC's clone is sparse and has no .mp4 files. It also depends on repo data, so it may break once the latest published Reel has no file.
+  - On Python 3.14 the pinned numpy also breaks, with 28 more errors. CI is Ubuntu with Python 3.11, so this doesn't matter there.
+- The open task (three backup AI keys) needs `gh auth login` on this PC first, and James at the keyboard.
+- The older local clone in Documents\juakesho is on branch `claude/changes`. It has 20 commits from 10-18 on a history from before main was rebuilt, so it can't pull. I haven't touched it. Today's work is in a fresh worktree of main.
+
 ### 2026-11-22 (cloud side)
 - SHA cancer-cover Reel (published 09:47) showed Al-Shabaab fighters and an unrelated official: other reports were
   matched by "SHA" inside "Al-Shabaab". Fixed: names match whole words, and every picture from another report is
