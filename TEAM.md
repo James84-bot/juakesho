@@ -61,5 +61,10 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
   matched by "SHA" inside "Al-Shabaab". Fixed: names match whole words, and every picture from another report is
   checked by the AI against the story before use. The photo audit re-checks posts waiting to go out.
   Waiting on James: take the SHA Reel down and repost it? (Facebook and YouTube from here; Instagram by hand.)
-- A post about a person now uses their picture: searched by the name the post uses (Bien), then reports naming
-  them, then their own recent Instagram posts (username from Wikidata), then Wikimedia Commons.
+- A post about a person now uses their picture. Order: the story's reports in our feeds, a Google News search for
+  the story (other newsrooms), reports naming them, their own recent Instagram posts, Wikimedia Commons, then a
+  topic photo. Every picture is checked against the story; on their own posts they must be clearly visible.
+- Instagram usernames: from `automation/state/instagram_handles.json`, else Wikidata (P2003), else the news
+  reports, else their YouTube channel. A new one is kept only when the account's own name matches. Bien is
+  `bienaimesol` (confirmed by the API: name "Bien-Aime Baraza", 1.2M followers). Business Discovery works with
+  our token. Run `whopics --name First_Last` or `whopics --post <username>` to check a person.

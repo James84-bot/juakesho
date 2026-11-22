@@ -151,7 +151,12 @@ be part of this story when the story does not name them.
 Return ONLY JSON: {{"shows": "under 15 words", "fits": true or false, "why": "under 12 words"}}"""
 
 
-def fits(data: bytes, about: str) -> str | None:
+PERSON_LINE = """
+The story is about {person}: it fits only if {person} can be clearly seen in it (their face or figure, large enough
+to recognise), not only their name on a sign or a small figure on a distant screen."""
+
+
+def fits(data: bytes, about: str, person: str = "") -> str | None:
     """'' when the picture fits a story about `about`, the reason when it does not, None when no model could look.
     19 Nov: a SHA cancer-cover Reel showed armed Al-Shabaab fighters and an unrelated official, picked from other
     reports by a loose word match; a music Reel showed lawyers protesting ("stage"). Every extra picture is now
@@ -159,6 +164,8 @@ def fits(data: bytes, about: str) -> str | None:
     import hashlib
     import json
     ask = FIT_ASK.format(about=" ".join(about.split())[:300])
+    if person:   # their own post: a billboard with their name on it is not a picture of them (22 Nov)
+        ask = ask.replace("\nReturn ONLY JSON", PERSON_LINE.format(person=person) + "\nReturn ONLY JSON")
     key = "fit:" + hashlib.sha1(data).hexdigest()[:24] + ":" + hashlib.sha1(ask.encode()).hexdigest()[:8]
     path = _checks_file()
     try:

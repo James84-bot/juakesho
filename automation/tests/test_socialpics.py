@@ -86,7 +86,7 @@ class TheirOwnPhoto(unittest.TestCase):
             return {"business_discovery": {"media": {"data": media}}}
         pics = {"cover": photo(1), "studio": photo(2), "old": photo(3)}
         with mock.patch.object(picture, "outlet_edit", lambda d: "album cover art" if d == pics["cover"] else ""), \
-                mock.patch.object(picture, "fits", lambda d, about: ""):
+                mock.patch.object(picture, "fits", lambda d, about, person="": ""):
             got = socialpics.their_photo({"id": "p"}, ["Bien Aime Baraza"], "Bien dropped his album", pics.__getitem__,
                                          graph_get=graph, get=wikidata)
         self.assertEqual(got[1], {"credit": "Photo: @bien_test on Instagram", "url": "https://ig/p/2", "kind": "file"})

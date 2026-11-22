@@ -246,7 +246,7 @@ def their_photo(post: dict, names: list[str], story: str, fetch, graph_get=None,
         if edit != "":   # cover art, flyers and posters are designs, not photographs (or nobody could look)
             _note(f"    @{handle}: {edit or 'not looked at'}")
             continue
-        fit = picture.fits(data, story)
+        fit = picture.fits(data, story, person=names[0])
         if fit != "":
             _note(f"    @{handle}: {fit or 'not looked at'}")
             continue
