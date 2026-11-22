@@ -1,0 +1,30 @@
+{#- What Kenya is searching — a daily Story (searching.py): Google's top trending searches in Kenya, each with the
+    news headline behind it. Fields: rows [{query, label, title, source}], day, kicker -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.lead { font: 900 104px/0.94 "Inter Tight"; letter-spacing: -.035em; color: var(--fg); margin: 40px 0 10px; }
+.lead span { color: var(--shuka-500); }
+.sub { font: 600 30px/1.3 "Inter"; color: var(--muted); margin-bottom: 44px; }
+.srows { display: grid; gap: 34px; }
+.srow { display: grid; grid-template-columns: 92px 1fr; gap: 22px; align-items: start; padding-top: 30px;
+  border-top: 2px solid var(--line); }
+.sn { font: 900 84px/0.9 "Inter Tight"; color: var(--shuka-500); letter-spacing: -.04em; }
+.sq { font-weight: 900; font-family: "Inter Tight"; letter-spacing: -.02em; line-height: 1.02; color: var(--fg); }
+.svol { display: inline-block; margin-top: 10px; font: 800 24px/1 "Inter"; letter-spacing: .04em; color: #fff;
+  background: var(--ink-800); padding: 8px 12px; border-radius: 6px; }
+.sh { margin-top: 12px; font: 600 28px/1.3 "Inter"; color: var(--soft); }
+.sh b { color: var(--muted); font-weight: 700; }
+{% endblock %}
+{% block top %}<span class="tag tag--red">{{ kicker }}</span><span class="meta">{{ day }}</span>{% endblock %}
+{% block content %}
+  <h1 class="lead">What Kenya is <span>searching</span> today</h1>
+  <p class="sub">Google's top trending searches in Kenya, and the news behind each.</p>
+  <div class="srows">
+    {% for r in rows %}
+    <div class="srow"><span class="sn">{{ loop.index }}</span>
+      <div><div class="sq" style="font-size: {{ fitw(r.query, 820, 2, 60) }}px">{{ r.query | headline }}</div>
+        {% if r.label %}<span class="svol">{{ r.label }} searches</span>{% endif %}
+        <p class="sh">{{ r.title }}{% if r.source %} <b>· {{ r.source }}</b>{% endif %}</p></div></div>
+    {% endfor %}
+  </div>
+{% endblock %}

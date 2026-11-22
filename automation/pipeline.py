@@ -3142,6 +3142,53 @@ def make_whosaid(sample: bool = False, dry_run: bool = False) -> str | None:
     return pid
 
 
+def make_searching(sample: bool = False, dry_run: bool = False) -> str | None:
+    """Tonight's "What Kenya is searching" Story (searching.py), out at 20:30 EAT. With `sample` it is made in
+    _samples and sent to Telegram, nothing saved. Returns the post id, or None (the reason is logged)."""
+    import guard
+    import render as renderer
+    import searching
+    import trends
+    at = now().astimezone(EAT)
+    label = current_week_label(ahead=0)
+    pid_day = f"{label.lower()}-searching-{at:%m%d}"
+    if not sample and any(p["id"] == pid_day for p in load_week(label)["posts"]):
+        log("searching: tonight's Story is made already")
+        return None
+    try:
+        rows = searching.pick(trends.fetch("KE"))
+    except Exception as e:
+        log(f"searching: Google Trends not read ({str(e)[:160]})")
+        return None
+    if len(rows) < 3:
+        log(f"searching: only {len(rows)} trend(s) with news behind them and nothing unsafe: no Story tonight")
+        return None
+    out_at = max(at + dt.timedelta(minutes=20), at.replace(hour=20, minute=30, second=0, microsecond=0))
+    post = searching.post_for(rows, label, at, out_at)
+    if sample:
+        post["id"] += "-sample"
+    rep = guard.check(post)
+    post["guard"] = {"errors": rep.errors, "warnings": rep.warnings}
+    log(f"searching {post['id']}: {' | '.join(r['query'] + ' ' + r['label'] for r in rows)}; errors {rep.errors or 'none'}")
+    if rep.errors or dry_run:
+        return None
+    if sample:
+        SAMPLES.mkdir(parents=True, exist_ok=True)
+        renderer.render([post], SAMPLES)
+        chat = need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
+        tg("sendPhoto", {"chat_id": chat, "caption": "🧪 Sample, not posted: What Kenya is searching (a Story, daily "
+                                                      "20:30), from Google Trends Kenya tonight."},
+           {"photo": SAMPLES / f"{post['id']}.png"})
+        return post["id"]
+    data = load_week(label)
+    data["posts"].append(post)
+    save_week(data)
+    render_week(label)
+    ask(label)
+    auto_approve()
+    return post["id"]
+
+
 def guard_quote_speaker(post: dict) -> str:
     """The speaker when the Reel opens with their words ('' otherwise)."""
     import guard
@@ -3446,7 +3493,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown", "pubsheets", "iglinks", "growth", "whosaid"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown", "pubsheets", "iglinks", "growth", "whosaid", "searching"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -3791,6 +3838,9 @@ def _main(argv: list[str] | None = None) -> int:
                 log(f"whopics {label}: {got[1] if got else 'nothing'}")
             except Exception as e:
                 log(f"whopics {label}: FAILED {str(e)[:300]}")
+        return 0
+    if a.command == "searching":   # nightly: Kenya's top Google searches as a Story; "--post sample" samples only
+        make_searching(sample=a.post == "sample", dry_run=a.dry_run)
         return 0
     if a.command == "whosaid":   # Saturdays: the week's quote quiz; "--post sample" makes a sample only
         make_whosaid(sample=a.post == "sample", dry_run=a.dry_run)

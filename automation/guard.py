@@ -42,6 +42,7 @@ SCHEMAS: dict[str, dict[str, int]] = {
     "glasspoll": {"hook": 30, "question": 40, "cta": 30},
     "still":    {"industry": 16, "thing": 70, "old": 90, "new": 100, "cta": 50},
     "whosaid":  {"kicker": 24, "quote": 110},   # the quote quiz (whosaid.py): its script is its beats
+    "searching": {"kicker": 28, "day": 24},     # the daily Story of Kenya's trending searches (searching.py)
     "spotlight": {"kind": 14, "name": 22, "country": 20, "what": 110, "why": 100, "cta": 50},
     "money":    {"hook": 40, "number": 14, "unit": 40, "what": 110, "why": 100, "check": 90},
     "straight": {"claim": 120, "who": 60, "truth": 70, "pride": 50, "claim_source": 240, "source": 240},
@@ -835,6 +836,8 @@ def story_mismatch(post: dict) -> str:
     body = " ".join(str(post.get(k) or "") for k in ("line", "message", "headline", "title", "claim", "question",
                                                        "hook", "truth", "promise", "reality", "number", "unit", "what"))
     body += " " + " ".join(str(b) for b in post.get("beats") or [])
+    if post.get("rows"):   # a list post (the searching Story): Google pairs each search with its own news
+        return ""
     if len(_stems(" ".join(titles)) & _stems(body)) < 2:
         return ("the linked report is not about this story (" + titles[0][:80] + "): use the headline id of the "
                 "report this post is really based on")

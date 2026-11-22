@@ -55,6 +55,17 @@ def fit(text: str, max_width: float, base: float, char_em: float = 0.78) -> int:
     return min(textfit.fit_display(line, max_width, 1, base) for line in (_fitted(text).split("\n") or [""]))
 
 
+SMALL_WORDS = {"vs", "v", "and", "of", "the", "in", "on", "at", "for", "to", "a", "an", "or"}
+
+
+def headline_case(text: str) -> str:
+    """A search as a headline: 'nottm forest vs man city' -> 'Nottm Forest vs Man City'. Words already capitalised
+    (KMTC, iPhone) stay as typed; small words stay small unless they come first."""
+    words = str(text or "").split()
+    return " ".join(w if (any(c.isupper() for c in w) or (i and w.lower() in SMALL_WORDS)) else w[:1].upper() + w[1:]
+                    for i, w in enumerate(words))
+
+
 def fitw(text: str, width: float, lines: int, base: float, char_em: float = 0.68) -> int:
     """Largest size (<= base) at which `text` fits in `lines` lines of `width` px (Unbounded ExtraBold).
     Measured with the real font (textfit), so a long single word shrinks instead of spilling out.
@@ -262,6 +273,7 @@ def make_env() -> Environment:
     env.filters["nb"] = nobreak
     env.filters["mark"] = mark
     env.filters["plain"] = plain
+    env.filters["headline"] = headline_case
     import guard as _guard
     env.globals.update(beat_seconds=beat_seconds, beat_tokens=beat_tokens, beat_marks=beat_marks, counts=counts,
                        quote_beat=_guard.quote_beat)

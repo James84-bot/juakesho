@@ -103,7 +103,8 @@ CLOCK = (("hot --morning", None, 3, 35),     # 06:35 EAT, out 09:45
          ("this-week", 2, 14, 10),           # Wednesday 17:10 EAT: Friday-Sunday
          ("weekly", 5, 6, 0),                # Saturday 09:00 EAT: Kenya This Week
          ("whosaid", 5, 11, 0),              # Saturday 14:00 EAT: the quote quiz, out 17:30
-         ("whosaid", 5, 12, 30))             # again at 15:30 EAT if the first found no picture or the writer failed
+         ("whosaid", 5, 12, 30),             # again at 15:30 EAT if the first found no picture or the writer failed
+         ("searching", None, 17, 0))         # 20:00 EAT daily: what Kenya is searching, a Story out 20:30
 WAITING = {"queued", "pending", "waiting", "requested"}
 PENDING_CHECK_SECONDS = 20     # how often to ask GitHub whether a run is still waiting, while one of ours is held
 REDO_DUE_SECONDS = 900         # a due post still unpublished this long after its run (cancelled?) gets another
