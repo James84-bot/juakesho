@@ -3074,7 +3074,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown", "pubsheets"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -3313,10 +3313,55 @@ def _main(argv: list[str] | None = None) -> int:
                         os.environ[k] = v
         return 0 if ok else 1
     if a.command == "takedown":   # James's word only: a published post with wrong details comes down everywhere
-        if not a.post:
-            raise SystemExit("takedown needs --post <id>")
-        for pid in [x for x in a.post.split(",") if x]:   # several at once: one run, one id after another
-            takedown(pid, (a.name or "wrong details").replace("_", " "), dry_run=a.dry_run)
+        if a.post:
+            takedown(a.post, (a.name or "wrong details").replace("_", " "), dry_run=a.dry_run)
+            return 0
+        # the list James approved, kept in the repo as the record: [{"id", "why"}]; each one comes down once
+        path = STATE / "takedown.json"
+        todo = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
+        for x in todo:
+            f = next((f for f in sorted(WEEKS.glob("*.json")) if f'"{x["id"]}"' in f.read_text(encoding="utf-8")), None)
+            p = next((q for q in load_week(f.stem)["posts"] if q["id"] == x["id"]), None) if f else None
+            if p and p["status"] == "published":
+                takedown(x["id"], x["why"], dry_run=a.dry_run)
+            else:
+                log(f"takedown {x['id']}: {p['status'] if p else 'not found'}, nothing to do")
+        return 0
+    if a.command == "pubsheets":   # review sheets of published Reels whose renders left the repo: from Instagram
+        import subprocess
+        import tempfile
+        from PIL import Image
+        out = HERE.parent / "docs" / "exports" / "_qa" / "pubaudit"
+        out.mkdir(parents=True, exist_ok=True)
+        for f in sorted(WEEKS.glob("*.json")):
+            data = load_week(f.stem)
+            for p in data["posts"]:
+                if p["status"] != "published" or not p.get("ig_id") or (out / f"{p['id']}.jpg").exists() \
+                        or not (p.get("photo_kind") in {"posted", "file", "topic"} or p.get("extra_photos")) \
+                        or (HERE.parent / "docs" / "exports" / data["collection"] / f"{p['id']}.mp4").exists():
+                    continue
+                try:
+                    got = graph_get(p["ig_id"], {"fields": "media_url,thumbnail_url,media_type"})
+                    with tempfile.TemporaryDirectory() as t:
+                        src = Path(t) / "v"
+                        src.write_bytes(urllib.request.urlopen(got["media_url"], timeout=120).read())
+                        frames = []
+                        for k, at in enumerate((1.5, 4.5, 7.5, 10.5)):
+                            fr = Path(t) / f"{k}.jpg"
+                            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(at), "-i", str(src), "-frames:v", "1",
+                                            "-vf", "scale=240:-1", str(fr)], check=False)
+                            if fr.exists():
+                                frames.append(Image.open(fr).convert("RGB"))
+                        if not frames:
+                            log(f"pubsheets {p['id']}: no frames ({got.get('media_type')})")
+                            continue
+                        sheet = Image.new("RGB", (240 * len(frames), max(i.height for i in frames)), (0, 0, 0))
+                        for k, im in enumerate(frames):
+                            sheet.paste(im, (240 * k, 0))
+                        sheet.save(out / f"{p['id']}.jpg", quality=82)
+                    log(f"pubsheets {p['id']}: sheet made")
+                except Exception as e:
+                    log(f"pubsheets {p['id']}: {str(e)[:160]}")
         return 0
     if a.command == "whopics":   # where a person's picture would come from: their own posts, then Commons
         import photos
