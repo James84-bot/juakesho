@@ -3205,7 +3205,7 @@
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
-      "id": "2026-w47-hot-1122-r4",
+      "id": "2026-w47-hot-1122-r5",
       "template": "sauti",
       "lane": "everyone",
       "kicker": "Put Us On",
@@ -3272,7 +3272,7 @@
       "photo_source": "https://www.kbc.co.ke/berlin-collective-keinemusic-lands-in-kenya-ahead-of-weekend-concert/",
       "reel": true,
       "rephoto_reason": "a picture that does not fit (The story is about an artist's album, not street protests.)",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1122-r4-photo.jpg",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/photos/2026-w47-hot-1122-r5-photo.jpg",
       "photo_credit": "File photo: KBC",
       "photo_kind": "topic",
       "photo_outlet": "KBC",
@@ -3282,10 +3282,10 @@
           "title": "Berlin collective, Keinemusic, lands in Kenya ahead of weekend concert"
         }
       ],
-      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/videos/2026-w47-hot-1122-r4-broll.mp4",
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W47/videos/2026-w47-hot-1122-r5-broll.mp4",
       "broll_credit": "Footage: Coverr-Free-Footage / Pixabay",
-      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "tg_msg": 1449
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 1453
     }
   ],
   "scripts": {
