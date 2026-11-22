@@ -389,6 +389,90 @@ class PublishTests(TempWeeks):
         _, posts = self.run_publish([{**posts[0], "attempts": 3}], fail=True)
         self.assertEqual(posts[0]["attempts"], 3)  # no 4th attempt
 
+    def run_with(self, posts, refuse):
+        """publish() with Graph calls whose path contains `refuse` failing like Facebook did on 22 Nov."""
+        self.week(posts)
+        calls = []
+
+        def fake(method, url, fields=None, files=None, timeout=60):
+            path = url.split("/v26.0/")[-1]
+            calls.append((path, dict(fields or {})))
+            if refuse and refuse in path:
+                raise RuntimeError('400: {"error":{"message":"(#100) No permission to publish the video"}}')
+            return {"id": f"id{len(calls)}", "ok": True}
+
+        with mock.patch.object(pl, "http", fake):
+            pl.publish()
+        return calls, pl.load_week("2026-W41")["posts"]
+
+    def test_a_facebook_refusal_leaves_the_post_out_and_facebook_for_later(self):
+        calls, posts = self.run_with([{"id": "p", "status": "approved", "publish_at": self.PAST, "caption": "Hi"}],
+                                     refuse="page/photos")
+        self.assertEqual(posts[0]["status"], "published")
+        self.assertTrue(posts[0]["ig_id"])
+        self.assertNotIn("fb_id", posts[0])
+        self.assertEqual(posts[0]["fb_pending"]["tries"], 1)
+        self.assertIn("No permission", posts[0]["fb_pending"]["error"])
+        self.assertTrue(any(c[0] == "ig/media" and c[1].get("media_type") == "STORIES" for c in calls))  # the rest went on
+        self.assertEqual(sum("sendMessage" in c[0] and "refused" in c[1].get("text", "") for c in calls), 1)
+
+    def test_facebook_is_caught_up_on_the_next_run_and_nothing_is_posted_twice(self):
+        first = {"id": "p", "status": "published", "publish_at": self.PAST, "published_at": self.PAST, "ig_id": "ig1",
+                 "caption": "Hi", "fb_pending": {"tries": 1, "error": "x"}}
+        calls, posts = self.run_with([first], refuse=None)
+        self.assertEqual(posts[0]["fb_id"], f"id{[c[0] for c in calls].index('page/photos') + 1}")
+        self.assertNotIn("fb_pending", posts[0])
+        self.assertFalse(any(c[0] == "ig/media" for c in calls))
+        calls, posts = self.run_with(posts, refuse=None)                    # done: nothing more happens
+        self.assertFalse(any(c[0].startswith("page/") or c[0].startswith("ig/") for c in calls))
+
+    def test_facebook_gives_up_after_its_tries_and_says_so_once(self):
+        stuck = {"id": "p", "status": "published", "publish_at": self.PAST, "published_at": self.PAST, "ig_id": "ig1",
+                 "fb_pending": {"tries": pl.FB_RETRIES - 1, "error": "x"}}
+        calls, posts = self.run_with([stuck], refuse="page/photos")
+        self.assertEqual(posts[0]["fb_pending"]["tries"], pl.FB_RETRIES)
+        calls, posts = self.run_with(posts, refuse="page/photos")
+        self.assertFalse(any(c[0] == "page/photos" for c in calls))            # too soon after the last try
+        posts[0]["fb_pending"]["at"] = (pl.now() - pl.FB_GAP).isoformat()
+        calls, posts = self.run_with(posts, refuse="page/photos")
+        self.assertTrue(posts[0]["fb_pending"]["gave_up"])
+        self.assertFalse(any(c[0] == "page/photos" for c in calls))
+        calls, posts = self.run_with(posts, refuse="page/photos")
+        self.assertEqual(calls, [])
+
+    def test_facebook_waits_between_tries_while_youtube_still_goes(self):
+        post = {"id": "p", "status": "published", "publish_at": self.PAST, "published_at": self.PAST, "ig_id": "ig1",
+                "fb_pending": {"tries": 1, "error": "x", "at": pl.now().isoformat()}, "yt_pending": True}
+        sent = []
+        with mock.patch.object(pl, "_youtube_short", lambda label, p: sent.append(p["id"])):
+            calls, posts = self.run_with([post], refuse=None)
+        self.assertFalse(any(c[0] == "page/photos" for c in calls))
+        self.assertEqual((sent, posts[0]["fb_pending"]["tries"]), (["p"], 1))
+
+    def test_a_short_never_attempted_is_sent_once(self):
+        post = {"id": "p", "status": "published", "publish_at": self.PAST, "published_at": self.PAST, "ig_id": "ig1",
+                "fb_id": "fb1", "yt_pending": True}
+        sent = []
+        with mock.patch.object(pl, "_youtube_short", lambda label, p: sent.append(p["id"])):
+            _, posts = self.run_with([post], refuse=None)
+            _, posts = self.run_with(posts, refuse=None)
+        self.assertEqual(sent, ["p"])
+        self.assertNotIn("yt_pending", posts[0])
+
+    def test_metacheck_says_when_the_token_cannot_post(self):
+        def fake_get(path, fields):
+            if path == "debug_token":
+                return {"data": {"type": "USER", "scopes": ["instagram_basic", "instagram_content_publish", "pages_show_list"]}}
+            return {"name": "Kenya on Record", "username": "kenyaonrecord", "instagram_business_account": {"id": "ig"}}
+        with mock.patch.object(pl, "graph_get", fake_get), mock.patch.object(pl, "log", lambda m: None), \
+                mock.patch.dict(os.environ, {"META_IG_USER_ID": "ig", "GITHUB_ACTIONS": ""}):
+            self.assertFalse(pl.meta_check(dry_run=True))
+        good = {"data": {"type": "PAGE", "scopes": list(pl.META_SCOPES)}}
+        with mock.patch.object(pl, "graph_get", lambda path, f: good if path == "debug_token" else
+                               {"instagram_business_account": {"id": "ig"}, "data": []}), \
+                mock.patch.object(pl, "log", lambda m: None), mock.patch.dict(os.environ, {"META_IG_USER_ID": "ig", "GITHUB_ACTIONS": ""}):
+            self.assertTrue(pl.meta_check(dry_run=True))
+
     def test_waits_quietly_until_instagram_is_connected(self):
         no_meta = {"META_ACCESS_TOKEN": "", "META_PAGE_ID": "", "META_IG_USER_ID": ""}
         with mock.patch.dict(os.environ, no_meta):

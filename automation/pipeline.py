@@ -1950,6 +1950,12 @@ def dup_check() -> bool:
     return bool(found)
 
 
+# What posting needs (Meta's docs): a Page video needs a Page token and pages_manage_posts, pages_read_engagement,
+# pages_show_list; Instagram publishing needs instagram_basic and instagram_content_publish.
+META_SCOPES = ("pages_manage_posts", "pages_read_engagement", "pages_show_list", "instagram_basic",
+               "instagram_content_publish")
+
+
 def meta_check(dry_run: bool = False) -> bool:
     """Reads (never posts) the Page and the Instagram account with the stored token, and says what works."""
     lines, ok = [], True
@@ -1970,6 +1976,17 @@ def meta_check(dry_run: bool = False) -> bool:
             except Exception as e:
                 ok = False
                 lines.append(f"❌ {name}: {str(e)[:200]}")
+        try:   # reading worked; can it post? (22 Nov: a new token read fine and then couldn't post a Facebook video)
+            info = graph_get("debug_token", {"input_token": os.environ["META_ACCESS_TOKEN"]}).get("data") or {}
+            scopes = set(info.get("scopes") or [])
+            lack = [s for s in META_SCOPES if s not in scopes]
+            kind = str(info.get("type") or "?").lower()
+            lines.append(("✅" if not lack and kind == "page" else "❌") + f" Token: a {kind} token"
+                         + (f", missing {', '.join(lack)}" if lack else ", every permission posting needs")
+                         + ("" if kind == "page" else " (Facebook Page videos need a Page token)"))
+            ok = ok and not lack and kind == "page"
+        except Exception as e:
+            lines.append(f"⚠️ Couldn't read the token's permissions: {str(e)[:150]}")
         if ok:   # what Instagram actually shows: the latest posts, their type and whether they're live
             try:
                 media = graph_get(f"{os.environ['META_IG_USER_ID']}/media", {
@@ -2589,6 +2606,65 @@ def meta_ready() -> bool:
     return all(os.environ.get(k) for k in META_KEYS)
 
 
+FB_RETRIES = 6                          # a Facebook post that failed after Instagram went out: tried this often,
+FB_GAP = dt.timedelta(hours=2)          # this far apart (a refused permission isn't fixed in minutes),
+FB_LATE = dt.timedelta(hours=24)        # and only this long after Instagram; later it would be old news there
+
+
+def _facebook_or_later(label: str, members: list[dict]) -> str | None:
+    """Posts to the Facebook Page. On failure it records `fb_pending` (the error, the tries) instead of failing the
+    post: on 22 Nov a Facebook permission error marked the AFCON post failed after Instagram had it, and the retry
+    then skipped Facebook, YouTube and the Stories. retry_pending picks it up on the next runs."""
+    first = first_of(members)
+    try:
+        fb_id = publish_facebook(label, members)
+    except Exception as e:
+        pend = first.get("fb_pending") or {}
+        tries = int(pend.get("tries") or 0) + 1
+        for m in members:
+            m["fb_pending"] = {"tries": tries, "error": str(e)[:300], "at": now().isoformat(timespec="seconds")}
+        log(f"Facebook failed for {first.get('group') or first['id']} (try {tries} of {FB_RETRIES}): {str(e)[:200]}")
+        if tries == 1:
+            _notify(f"⚠️ <b>{_esc(first.get('group') or first['id'])}</b> is on Instagram, but Facebook refused it: "
+                    f"{_esc(str(e)[:250])}\nI'll try Facebook again on the next runs.")
+        return None
+    for m in members:
+        m["fb_id"] = fb_id
+        m.pop("fb_pending", None)
+    return fb_id
+
+
+def retry_pending(data: dict, label: str) -> bool:
+    """Published posts still missing a platform: Facebook (fb_pending, up to FB_RETRIES tries within FB_LATE of going
+    out) and YouTube (yt_pending: a Short never attempted, tried once). Returns True if anything changed."""
+    changed, seen = False, set()
+    for p in data["posts"]:
+        key = p.get("group") or p["id"]
+        if key in seen or p["status"] != "published":
+            continue
+        seen.add(key)
+        members = [m for m in data["posts"] if (m.get("group") or m["id"]) == key]
+        first = first_of(members)
+        out = dt.datetime.fromisoformat(first.get("published_at") or first["publish_at"])
+        pend = first.get("fb_pending")
+        if pend and not first.get("fb_id") and not pend.get("gave_up"):
+            if int(pend.get("tries") or 0) >= FB_RETRIES or now() - out > FB_LATE:
+                for m in members:
+                    m["fb_pending"] = {**pend, "gave_up": True}
+                _notify(f"⚠️ Gave up on Facebook for <b>{_esc(key)}</b> after {pend.get('tries')} tries: "
+                        f"{_esc(str(pend.get('error'))[:200])}")
+                changed = True
+            elif not pend.get("at") or now() - dt.datetime.fromisoformat(pend["at"]) >= FB_GAP:
+                if _facebook_or_later(label, members):
+                    log(f"Facebook caught up: {key}")
+                    _notify(f"✅ <b>{_esc(key)}</b> is on Facebook now too.")
+                changed = True
+        if first.pop("yt_pending", None):
+            _youtube_short(label, first)
+            changed = True
+    return changed
+
+
 def publish(dry_run: bool = False) -> None:
     connected = meta_ready()
     waiting = 0
@@ -2596,6 +2672,8 @@ def publish(dry_run: bool = False) -> None:
         data = json.loads(f.read_text(encoding="utf-8"))
         label = data["collection"]
         done = set()
+        if connected and not dry_run and retry_pending(data, label):
+            save_week(data)
         for p in data["posts"]:
             key = p.get("group") or p["id"]
             if key in done or p["status"] not in {"approved", "publish_failed"}:
@@ -2629,9 +2707,10 @@ def publish(dry_run: bool = False) -> None:
                 continue
             try:
                 ig_id = publish_instagram(label, members)
-                fb_id = publish_facebook(label, members)
                 for m in members:
-                    m.update(status="published", published_at=now().isoformat(), ig_id=ig_id, fb_id=fb_id)
+                    m.update(status="published", published_at=now().isoformat(), ig_id=ig_id)
+                save_week(data)   # out on Instagram: whatever fails next can never make a run post it there twice
+                fb_id = _facebook_or_later(label, members)
                 post_receipts(first_of(members), ig_id, fb_id)
                 story = share_story(label, members)
                 if story:
@@ -2649,6 +2728,9 @@ def publish(dry_run: bool = False) -> None:
                 # one share link a day instead (fb_digest): the evening digest is the post worth putting on the profile
                 _notify(f"✅ Published <b>{_esc(key)}</b>. Forward it to the WhatsApp Channel too.")
             except Exception as e:  # keep going; record and retry next tick
+                if first_of(members).get("ig_id"):   # it is out: a later step broke, it's recorded, nothing to retry
+                    log(f"after publishing {key}: {e}")
+                    continue
                 for m in members:
                     m["status"] = "publish_failed"
                     m["attempts"] = m.get("attempts", 0) + 1
