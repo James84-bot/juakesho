@@ -3355,6 +3355,9 @@ def _main(argv: list[str] | None = None) -> int:
         import subprocess
         import tempfile
         from PIL import Image
+        import shutil
+        if not shutil.which("ffmpeg"):   # this run's install is the light one
+            subprocess.run(["sudo", "apt-get", "install", "-y", "-qq", "ffmpeg"], check=False)
         out = HERE.parent / "docs" / "exports" / "_qa" / "pubaudit"
         out.mkdir(parents=True, exist_ok=True)
         for f in sorted(WEEKS.glob("*.json")):
