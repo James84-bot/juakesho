@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-22T14:02:06.480146+00:00",
+  "fetched": "2026-11-22T14:19:39.720649+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "birmingham city vs man utd",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Birmingham City vs Manchester United: Women's Super League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cm4gnwwl48wwt",
+          "source": "BBC"
+        },
+        {
+          "title": "United Women's team to face Birmingham",
+          "url": "https://www.manutd.com/en/news/united-women-line-up-birmingham-wsl-22-november-2026",
+          "source": "Manchester United"
+        },
+        {
+          "title": "Manchester United left-back returns to squad after injury layoff",
+          "url": "https://centredevils.co.uk/news/manchester-united-left-back-returns-to-squad-after-injury-layoff/",
+          "source": "centredevils"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "man city vs tottenham",
@@ -25,35 +47,13 @@
     },
     {
       "geo": "KE",
-      "title": "birmingham city vs man utd",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Birmingham City vs Manchester United: Women's Super League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cm4gnwwl48wwt",
-          "source": "BBC"
-        },
-        {
-          "title": "United Women's team to face Birmingham",
-          "url": "https://www.manutd.com/en/news/united-women-line-up-birmingham-wsl-22-november-2026",
-          "source": "Manchester United"
-        },
-        {
-          "title": "Sports News, Transfers, Scores | Watch Live Sport",
-          "url": "https://www.skysports.com/football/watch/6945836765702243112/english-womens-super-league-2026-2027",
-          "source": "Sky Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "juventus",
       "traffic": "500+",
       "news": [
         {
-          "title": "Juve, Spalletti la sbaglia ancora. Meno male che ci pensa Woltemade",
-          "url": "https://www.torinocronaca.it/news/sport/733882/juve-spalletti-la-sbaglia-ancora-meno-male-che-ci-pensa-woltemade.html",
-          "source": "Torino Cronaca"
+          "title": "Kolo Muani segna su rigore e la Juve travolge il Venezia 4-0",
+          "url": "https://www.tufutbolero.com/it/notizie/kolo-muani-segna-su-rigore-e-la-juve-travolge-il-venezia-4-0-7b1a9f",
+          "source": "Tu Futbolero"
         },
         {
           "title": "Serie A | Juventus-Venezia | La partita",
@@ -61,34 +61,11 @@
           "source": "Juventus.com"
         },
         {
-          "title": "SportMediaset: Juventus, nuovo striscione degli ultrà: \"Chi rema contro non ha dignità\" Video",
-          "url": "https://mediasetinfinity.mediaset.it/video/sportmediaset/juventus-nuovo-striscione-degli-ultra-chi-rema-contro-non-ha-dignita_FD00000000554315",
-          "source": "Mediaset Infinity"
+          "title": "Pagelle: Woltemade e Bremer si prendono in spalla la Juve, Kolo Muani da esterno funziona sempre",
+          "url": "https://www.sportmediaset.mediaset.it/calcio/pagelle-woltemade-e-bremer-si-prendono-in-spalla-la-juve-kolo-muani-da-esterno-funziona-sempre_119293794-202602k.shtml",
+          "source": "Sportmediaset"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenyans",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "‘We have the money’: Diaspora Kenyans promise Sifuna Sh100m",
-          "url": "https://www.the-star.co.ke/news/2026-11-22-kenyans-in-diaspora-promise-sifuna-sh100m",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "How America tour has become part of Kenya's State House campaign",
-          "url": "https://www.standardmedia.co.ke/politics/article/2001562761/how-america-tour-has-become-part-of-kenyas-state-house-campaign",
-          "source": "The Standard"
-        },
-        {
-          "title": "Sh100million, building JKIA & more: Sifuna bags goodies and pledges on first day of US tour",
-          "url": "https://www.pulse.co.ke/story/sh100million-building-jkia-and-more-sifuna-bags-goodies-and-pledges-on-first-day-of-us-tour-2026112207390761658",
-          "source": "Pulse Kenya"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -114,23 +91,23 @@
     },
     {
       "geo": "KE",
-      "title": "shabana vs mara sugar",
-      "traffic": "200+",
+      "title": "ajax vs den haag",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Cheruiyot the hero as Mara Sugar extend unbeaten Premier League run against Shabana",
-          "url": "https://www.mozzartsport.co.ke/football/news/cheruiyot-the-hero-as-mara-sugar-extend-unbeaten-premier-league-run-against-shabana/70860",
-          "source": "Mozzart Sport Kenya"
+          "title": "Ajax vs ADO Den Haag: Dutch Eredivisie stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmdx1ee0pld7t",
+          "source": "BBC"
         },
         {
-          "title": "Shabana seek hoodoo-busting victory against stubborn Mara Sugar",
-          "url": "https://www.the-star.co.ke/sports/football/2026-11-19-shabana-seek-hoodoo-busting-victory-against-stubborn-mara-sugar",
-          "source": "The Star, Kenya"
+          "title": "Preview: Ajax vs. ADO Den Haag - prediction, team news, lineups",
+          "url": "https://www.sportsmole.co.uk/football/ajax/preview/ajax-vs-ado-den-haag-prediction-team-news-lineups_609479.html",
+          "source": "Sports Mole"
         },
         {
-          "title": "FKF PL: Gor Mahia, KCB target top spot as Shabana host Mara Sugar",
-          "url": "https://www.mozzartsport.co.ke/football/news/fkf-pl-gor-mahia-kcb-target-top-spot-as-shabana-host-mara-sugar/70856",
-          "source": "Mozzart Sport Kenya"
+          "title": "Brandt, Amrabat, Kehrer, Gaaei, Berghuis And Tsygankov: Ajax Injury News Ahead Of ADO Den Haag Clash",
+          "url": "https://sports.yahoo.com/articles/brandt-amrabat-kehrer-gaaei-berghuis-100026121.html",
+          "source": "Yahoo Sports"
         }
       ]
     },
@@ -165,6 +142,10 @@
     {
       "title": "helicopter",
       "why": "unsafe: 'Missing'"
+    },
+    {
+      "title": "shabana vs mara sugar",
+      "why": "unsafe: 'BETTING'"
     },
     {
       "title": "burnley vs blackburn rovers",
