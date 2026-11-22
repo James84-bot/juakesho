@@ -3074,7 +3074,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown", "pubsheets"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown", "pubsheets", "iglinks"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -3326,6 +3326,30 @@ def _main(argv: list[str] | None = None) -> int:
                 takedown(x["id"], x["why"], dry_run=a.dry_run)
             else:
                 log(f"takedown {x['id']}: {p['status'] if p else 'not found'}, nothing to do")
+        return 0
+    if a.command == "iglinks":   # removed posts still on Instagram (no delete permission): links to remove by hand
+        lines = []
+        for f in sorted(WEEKS.glob("*.json")):
+            data = load_week(f.stem)
+            changed = False
+            for p in data["posts"]:
+                if p["status"] != "removed" or not p.get("ig_id") or \
+                        str((p.get("removed") or {}).get("Instagram", "")).startswith("removed"):
+                    continue
+                if not p.get("ig_permalink"):
+                    try:
+                        p["ig_permalink"] = graph_get(p["ig_id"], {"fields": "permalink"}).get("permalink", "")
+                        changed = True
+                    except Exception as e:
+                        log(f"iglinks {p['id']}: {str(e)[:120]}")
+                if p.get("ig_permalink"):
+                    lines.append(f"• {p['removed_why']}: {p['ig_permalink']}")
+                    log(f"iglinks {p['id']}: {p['ig_permalink']}")
+            if changed and not a.dry_run:
+                save_week(data)
+        if lines and not a.dry_run:
+            _notify("🗑 Taken down from Facebook and YouTube. Instagram does not let the system delete posts with the "
+                    "current token, so please delete these in the Instagram app (⋯ → Delete):\n" + "\n".join(_esc(x) for x in lines))
         return 0
     if a.command == "pubsheets":   # review sheets of published Reels whose renders left the repo: from Instagram
         import subprocess
