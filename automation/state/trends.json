@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-22T11:17:05.131166+00:00",
+  "fetched": "2026-11-22T11:30:53.720257+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -25,47 +25,26 @@
     },
     {
       "geo": "KE",
-      "title": "barcelona vs villarreal",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Barça-Villarreal: Un regreso exigente",
-          "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261122/1004253901/barca-villarreal-regreso-exigente.html",
-          "source": "Mundo Deportivo"
-        },
-        {
-          "title": "Haz de Hansi Flick y elige la alineación del Barça",
-          "url": "https://www.lavanguardia.com/participacion/retos/20261122/11687957/haz-hansi-flick-elige-alineacion-barca.html",
-          "source": "La Vanguardia"
-        },
-        {
-          "title": "FC Barcelona vs Villarreal en vivo: canales, streaming y horarios de LaLiga 2026/27 para México, Latinoamérica y USA",
-          "url": "https://www.dazn.com/es-MX/news/f%C3%BAtbol/fc-barcelona-vs-villarreal-vivo-canales-streaming-horarios-laliga/dg40m0w0do4o1kmhg7a9rn928",
-          "source": "DAZN"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "graduation",
+      "title": "kenyans",
       "traffic": "100+",
       "news": [
         {
-          "title": "From night guard to graduate: Man’s four-year sacrifice pays off",
-          "url": "https://nation.africa/kenya/news/from-night-guard-to-graduate-man-s-four-year-sacrifice-pays-off-5677682",
-          "source": "Daily Nation"
+          "title": "‘We have the money’: Diaspora Kenyans promise Sifuna Sh100m",
+          "url": "https://www.the-star.co.ke/news/2026-11-22-kenyans-in-diaspora-promise-sifuna-sh100m",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "\"Beautiful ending\": Kibabii Uni night guard earns degree from same institution",
-          "url": "https://www.tuko.co.ke/people/647039-kibabii-university-security-guard-graduates-institution-degree/",
-          "source": "Tuko News"
+          "title": "How America tour has become part of Kenya's State House campaign",
+          "url": "https://www.standardmedia.co.ke/politics/article/2001562761/why-gachagua-sifuna-and-kalonzo-are-courting-the-us-ahead-of-2027-polls",
+          "source": "The Standard"
         },
         {
-          "title": "\"Niko solo\": Chuka University grad marks graduation without loved ones, friends",
-          "url": "https://www.tuko.co.ke/people/family/647494-chuka-university-graduate-sits-by-breaks-shows-graduation/",
-          "source": "Tuko News"
+          "title": "Linda Mwananchi Movement opens international headquarters in New Jersey",
+          "url": "https://thekenyandiaspora.com/stories/9879/Linda-Mwananchi-Movement-opens-international-headquarters-in-New-Jersey",
+          "source": "The Kenyan Diaspora Media"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -114,6 +93,14 @@
   ],
   "dropped": [
     {
+      "title": "burnley vs blackburn rovers",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "graduation",
+      "why": "unsafe: 'odds'"
+    },
+    {
       "title": "augsburg vs mainz",
       "why": "unsafe: 'Betting'"
     },
@@ -127,10 +114,6 @@
     },
     {
       "title": "ac milan vs frosinone prediction",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "sassuolo vs genoa",
       "why": "unsafe: 'Betting'"
     }
   ],
