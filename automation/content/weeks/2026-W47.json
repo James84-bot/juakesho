@@ -700,7 +700,8 @@
         "Facebook": "removed",
         "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/980689041332021 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '980689041332021' does not exist,",
         "YouTube": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/DfzGRxbCUEa/"
     },
     {
       "id": "2026-w47-hot-1116m",
@@ -816,7 +817,8 @@
         "Facebook": "removed",
         "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/1496125782385485 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '1496125782385485' does not exis",
         "YouTube": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/DfzpqgVDFvr/"
     },
     {
       "id": "2026-w47-hot-1117e",
@@ -926,7 +928,8 @@
         "Facebook": "removed",
         "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/1760648238351463 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '1760648238351463' does not exis",
         "YouTube": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/Df2Xa5uHAyn/"
     },
     {
       "id": "2026-w47-hot-1117",
@@ -1601,7 +1604,8 @@
         "Facebook": "removed",
         "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/2934754433565459 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '2934754433565459' does not exis",
         "YouTube": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/Df7aLMlDoow/"
     },
     {
       "id": "2026-w47-hot-1119",
@@ -3247,7 +3251,8 @@
         "Facebook": "removed",
         "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/2225914748327079 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '2225914748327079' does not exis",
         "YouTube": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/DgCMdVjgkPf/"
     },
     {
       "id": "2026-w47-hot-1122-r6",

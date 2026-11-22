@@ -895,7 +895,8 @@
         "Facebook": "removed",
         "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/1314620397456396 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '1314620397456396' does not exis",
         "YouTube": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/DfigG-cn7Xw/"
     },
     {
       "id": "2026-w46-hot-1110e",
@@ -990,7 +991,8 @@
         "Facebook": "removed",
         "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/1637068291241240 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '1637068291241240' does not exis",
         "YouTube": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/DfkV9TLnD4n/"
     },
     {
       "id": "2026-w46-hot-1110",
@@ -1978,7 +1980,8 @@
         "Facebook": "removed",
         "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/2316518819138610 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '2316518819138610' does not exis",
         "YouTube": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/Dfr9iyeEtaJ/"
     },
     {
       "id": "2026-w46-hot-1113b1626",
@@ -2215,7 +2218,8 @@
         "Facebook": "removed",
         "Facebook story": "not removed: DELETE https://graph.facebook.com/v26.0/1119529987552927 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '1119529987552927' does not exis",
         "YouTube": "removed"
-      }
+      },
+      "ig_permalink": "https://www.instagram.com/reel/DfsjKPeDSI4/"
     },
     {
       "id": "2026-w46-hot-1114",
