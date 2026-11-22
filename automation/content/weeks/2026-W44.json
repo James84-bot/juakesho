@@ -700,7 +700,7 @@
           "published": "2026-10-27"
         }
       ],
-      "status": "published",
+      "status": "removed",
       "guard": {
         "errors": [],
         "warnings": [
@@ -735,7 +735,14 @@
       "published_at": "2026-10-27T14:28:37.883220+03:00",
       "ig_id": "17990102385117597",
       "fb_id": "4545760302372515",
-      "story_id": "18144746179578649"
+      "story_id": "18144746179578649",
+      "removed_at": "2026-11-22T13:40:19.753776+03:00",
+      "removed_why": "handcuffs from another arrest story on an EACC land recovery story",
+      "removed": {
+        "Instagram": "not removed: DELETE https://graph.facebook.com/v26.0/17990102385117597 → 400: {\"error\":{\"message\":\"(#10) Insufficient permissions to access this data\",\"code\":10,\"type\":\"OAut",
+        "Instagram story": "not removed: DELETE https://graph.facebook.com/v26.0/18144746179578649 → 400: {\"error\":{\"message\":\"Unsupported delete request. Object with ID '18144746179578649' does not ex",
+        "Facebook": "removed"
+      }
     },
     {
       "id": "2026-w44-hot-1027m",
