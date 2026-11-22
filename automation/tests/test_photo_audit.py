@@ -146,6 +146,28 @@ class Takedown(unittest.TestCase):
             self.assertEqual(saved["removed_why"], "armed fighters on a SHA story")
             self.assertIn("Still up, remove by hand: Instagram", sent[0])
 
+    def test_a_removed_post_is_retried_only_where_it_failed(self):
+        import youtube
+        with tempfile.TemporaryDirectory() as d:
+            calls, sent = [], []
+
+            def http(method, url, fields=None, files=None, timeout=60):
+                calls.append((method, url.split("?")[0].rsplit("/", 1)[1]))
+                return {"success": True}
+            with mock.patch.object(pl, "WEEKS", Path(d)), mock.patch.object(pl, "log", lambda *a: None), \
+                    mock.patch.object(pl, "http", http), mock.patch.object(pl, "_notify", sent.append), \
+                    mock.patch.object(youtube, "delete", lambda vid: calls.append(("DELETE", vid))):
+                pl.save_week({"collection": "2026-W47", "scripts": {}, "posts": [
+                    post("2026-w47-hot-1122m", status="removed", ig_id="ig-1", fb_id="fb-1", yt_id="yt-1",
+                         removed_why="armed fighters", removed_at="2026-11-22T13:40:00+03:00",
+                         removed={"Instagram": "not removed: (#10)", "Facebook": "removed", "YouTube": "removed"})]})
+                done = pl.takedown("2026-w47-hot-1122m", "armed fighters")
+                saved = pl.load_week("2026-W47")["posts"][0]
+            self.assertEqual(calls, [("DELETE", "ig-1")])   # Facebook and YouTube are not touched again
+            self.assertEqual(done, {"Instagram": "removed"})
+            self.assertEqual(saved["removed"], {"Instagram": "removed", "Facebook": "removed", "YouTube": "removed"})
+            self.assertEqual(saved["removed_at"], "2026-11-22T13:40:00+03:00")
+
     def test_only_a_published_post(self):
         with tempfile.TemporaryDirectory() as d, mock.patch.object(pl, "WEEKS", Path(d)):
             pl.save_week({"collection": "2026-W47", "scripts": {}, "posts": [post("2026-w47-x", status="approved")]})

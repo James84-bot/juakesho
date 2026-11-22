@@ -596,14 +596,17 @@ def takedown(pid: str, why: str, dry_run: bool = False) -> dict:
         raise SystemExit(f"takedown: no post {pid}")
     data = load_week(f.stem)
     p = next(x for x in data["posts"] if x["id"] == pid)
-    if p["status"] != "published":
+    retry = p["status"] == "removed"   # already down somewhere: try again only where it failed (e.g. Instagram
+    # before the token could delete there, 22 Nov); what was removed stays as it was
+    if p["status"] != "published" and not retry:
         raise SystemExit(f"takedown: {pid} is {p['status']}, not published")
+    before = dict(p.get("removed") or {}) if retry else {}
     done: dict[str, str] = {}
     token = os.environ.get("META_ACCESS_TOKEN", "")
     version = os.environ.get("META_GRAPH_VERSION", "v26.0")
     for key, where in (("ig_id", "Instagram"), ("story_id", "Instagram story"), ("fb_id", "Facebook"),
                        ("fb_story_id", "Facebook story")):
-        if not p.get(key):
+        if not p.get(key) or str(before.get(where, "")).startswith("removed") or (retry and where not in before):
             continue
         if dry_run:
             done[where] = "would be removed"
@@ -613,7 +616,7 @@ def takedown(pid: str, why: str, dry_run: bool = False) -> dict:
             done[where] = "removed"
         except Exception as e:
             done[where] = f"not removed: {str(e)[:160]}"
-    if p.get("yt_id"):
+    if p.get("yt_id") and not (retry and (str(before.get("YouTube", "")).startswith("removed") or "YouTube" not in before)):
         try:
             if not dry_run:
                 youtube.delete(p["yt_id"])
@@ -622,6 +625,12 @@ def takedown(pid: str, why: str, dry_run: bool = False) -> dict:
             done["YouTube"] = f"not removed: {str(e)[:160]}"
     for where, what in done.items():
         log(f"takedown {pid}: {where} {what}")
+    if not dry_run and retry:
+        p["removed"] = {**before, **done}
+        save_week(data)
+        _notify(f"🗑 Retried <b>{_esc(pid)}</b>: " + ", ".join(f"{w} {'✓' if x.startswith('removed') else '✗'}"
+                                                            for w, x in done.items()))
+        return done
     if not dry_run:
         p["status"], p["removed_at"], p["removed_why"], p["removed"] = "removed", now().isoformat(), why, done
         save_week(data)
@@ -3375,7 +3384,8 @@ def _main(argv: list[str] | None = None) -> int:
         for x in todo:
             f = next((f for f in sorted(WEEKS.glob("*.json")) if f'"{x["id"]}"' in f.read_text(encoding="utf-8")), None)
             p = next((q for q in load_week(f.stem)["posts"] if q["id"] == x["id"]), None) if f else None
-            if p and p["status"] == "published":
+            left = [w for w, v in ((p or {}).get("removed") or {}).items() if not str(v).startswith("removed")]
+            if p and (p["status"] == "published" or (p["status"] == "removed" and left)):
                 takedown(x["id"], x["why"], dry_run=a.dry_run)
             else:
                 log(f"takedown {x['id']}: {p['status'] if p else 'not found'}, nothing to do")
