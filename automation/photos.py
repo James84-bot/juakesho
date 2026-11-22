@@ -481,7 +481,8 @@ INSTITUTION = re.compile(r"^(kenya\w*|nairobi|national|county|assembly|senate|pa
 def _surname(who: str) -> str:
     """The surname of the PERSON in `who` ('Energy CS Opiyo Wandayi' -> 'wandayi'); '' when `who` is an
     institution ('National Assembly Public Debt Committee') or names nobody."""
-    words = re.findall(r"[A-Z][a-z'-]{2,}", who or "")
+    # 'McCarthy', "O'Neill" are names too (23 Nov: Benni McCarthy had no surname, so no picture of him was looked for)
+    words = re.findall(r"[A-Z](?:[a-z]|['’][A-Z])[A-Za-z'’-]+", who or "")
     names = [w for w in words if w.lower() not in TITLES and not INSTITUTION.match(w)]
     # a person is at least a first name and a surname next to each other in the text
     pairs = [last for first, last in zip(names, names[1:]) if re.search(rf"\b{first}\s+{last}\b", who)]
@@ -571,8 +572,11 @@ def full_name(who: str) -> str:
     surname = _surname(who)
     if not surname:
         return ""
-    m = re.search(rf"\b([A-Z][a-z'-]{{2,}})\s+({surname})\b", who or "", re.I)
-    return f"{m.group(1)} {m.group(2).title()}" if m and m.group(1).lower() not in TITLES else ""
+    m = re.search(rf"\b([A-Z][a-z'-]{{2,}})\s+({re.escape(surname)})\b", who or "", re.I)
+    if not m or m.group(1).lower() in TITLES:
+        return ""
+    sur = m.group(2) if not m.group(2).islower() else m.group(2).title()   # 'McCarthy' stays as written
+    return f"{m.group(1)} {sur}"
 
 
 # words that open a headline in capitals without being a person's name

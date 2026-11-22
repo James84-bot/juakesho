@@ -91,6 +91,13 @@ class TheirLine(unittest.TestCase):
         return [re.findall(r"opacity: (\d)", ln)[0] for ln in block.strip().splitlines() if "opacity" in ln]
 
 
+class Names(unittest.TestCase):
+    def test_names_with_a_capital_inside_are_names(self):
+        self.assertEqual(photos.full_name("Harambee Stars coach Benni McCarthy"), "Benni McCarthy")
+        self.assertEqual(photos.full_name("Shaquille O'Neal"), "Shaquille O'Neal")
+        self.assertEqual([photos.full_name(x) for x in ("IEBC Chairman", "Ministry of Sports and FKF")], ["", ""])
+
+
 class NewsReels(unittest.TestCase):
     def test_a_news_post_is_a_sauti_reel_and_gets_their_picture_too(self):
         p = post(["Fuel taxes stay as they are.", QUOTE_LINE, "Fair?"], template="sauti", reel=True)
