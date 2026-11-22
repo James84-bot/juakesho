@@ -121,6 +121,14 @@ def handle_from_youtube(name: str, known: str, get=_get_json) -> str | None:
     return handle
 
 
+def account(username: str, graph_get, ig_user: str) -> dict:
+    """Who the account says it is: name, biography, followers (to confirm a username before it is kept)."""
+    got = graph_get(ig_user, {"fields": f"business_discovery.username({username}){{name,biography,followers_count,media_count}}"})
+    b = got.get("business_discovery") or {}
+    return {"name": b.get("name", ""), "bio": str(b.get("biography") or "")[:160], "followers": b.get("followers_count"),
+            "posts": b.get("media_count")}
+
+
 def recent_posts(username: str, graph_get, ig_user: str) -> list[dict]:
     """Their newest public posts that are pictures: [{url, permalink, timestamp, caption}], newest first."""
     media = "media.limit(15){media_type,media_url,permalink,timestamp,caption}"

@@ -3272,6 +3272,8 @@ def _main(argv: list[str] | None = None) -> int:
         if a.post:   # an Instagram username to read directly: does Business Discovery answer with our token
             import socialpics
             try:
+                who = socialpics.account(a.post, graph_get, os.environ.get("META_IG_USER_ID", "").strip())
+                log(f"whopics @{a.post}: {who}")
                 got = socialpics.recent_posts(a.post, graph_get, os.environ.get("META_IG_USER_ID", "").strip())
                 log(f"whopics @{a.post}: {len(got)} picture posts; newest {[m['timestamp'][:10] for m in got[:5]]}")
             except Exception as e:
