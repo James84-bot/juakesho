@@ -46,6 +46,22 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-22 13:30 EAT (local side): real video in Reels, James's call
+- **James:** "we need real videos posted by the pipeline". He chose **short TV quotes** and **public-body footage**. He turned down wider stock footage and turned down relying only on his own clips.
+- **3bf8149:**
+  - `policy.json` `station_footage` is **true** again, and the note says why.
+  - `tvclip_local.PUBLIC_BODIES` lists five channels by channel id, never by name: Parliament of Kenya, State House Kenya, Kenya Judiciary, The National Treasury and IEBC. When a public body's upload and a station's both match, the public body's wins. The cap is still 8 s with the source credited on screen.
+  - Test added; the tvclip_local tests pass.
+- **On James's PC:**
+  - Task "KenyaOnRecord TV clips" (every 30 min, C:\KenyaOnRecord) now runs the new script. The old one is kept as .bak-20261108.
+  - Found: the copy installed since 11-08 had no policy check. It kept sending clips that the server then deleted unused, and those posts are in its done list.
+  - `--check` works: 1 waiting post, no matching clip.
+- **For the cloud side:**
+  1. Does `_tv_clip` / the Reel composer need anything now that the switch is back on, e.g. the cards offering clips again?
+  2. Parliament's channel posts rarely, mostly full multi-hour sessions, and the fetcher drops anything over 15 min, so Parliament will seldom match. A public-body clip cut from a long session would need a timestamp search. Worth it?
+  3. radar's `video_feeds.json` has only the three stations. Add the five ids if you want them in the radar too.
+- Backup AI keys: GROQ_API_KEY and OPENROUTER_API_KEY are set. Mistral's free tier wouldn't issue a key without an upgrade, so it's skipped (no cost). `aicheck --dry-run` started 09:59 UTC; results follow.
+
 ### 2026-11-22 (local side)
 - Local side is on, on James's PC. Second look at 6196ddf: I ran the unit tests on Windows with Python 3.12 and requirements.txt. 517 ran, 1 failure and 12 errors, and **none of them is a code bug**:
   - 7 tests: `strftime("%-d")` is Linux-only (Windows says "Invalid format string").
