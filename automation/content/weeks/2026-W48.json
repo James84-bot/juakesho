@@ -1,0 +1,324 @@
+{
+  "collection": "2026-W48",
+  "created": "2026-11-22T17:02:14.540918+03:00",
+  "posts": [
+    {
+      "id": "2026-w48-d1-money",
+      "template": "money",
+      "lane": "young_pro",
+      "series": "The Real Price",
+      "hook": "EPRA keeps pump *prices* high",
+      "number": "Stable",
+      "unit": "shilling exchange rate",
+      "what": "Fuel prices remain high across Kenya despite a relatively stable shilling exchange rate.",
+      "why": "Transport and living costs stay steep for every household and business week after week.",
+      "check": "EPRA official price announcements and pump display boards nationwide.",
+      "message": "Fuel prices stay high despite a stable shilling, keeping transport costs heavy.",
+      "action": "Check the EPRA price review on 21 November before filling your tank",
+      "beats": [
+        "EPRA kept fuel *prices* high on 21 November 2026.",
+        "The shilling exchange rate remains stable across commercial banks.",
+        "High transport costs push up food and power prices everywhere.",
+        "Tell us below: what is your pump price?"
+      ],
+      "photo_query": "fuel station pump Kenya",
+      "source": "People Daily, 2026-11-21",
+      "caption": "The shilling is stable, but fuel prices refuse to drop. We pay at the pump, then we pay in matatu fares and unga prices. Check your local station on 21 November.\n\nTell us below: what is the current pump price at your nearest station?\n\n#TheRealPrice #KenyaOnRecord",
+      "who": "Energy and Petroleum Regulatory Authority",
+      "where": "National",
+      "when": "November 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Over 3.2 million motorists and commuters pay higher transport and food costs.",
+      "bg": "shuka",
+      "publish_at": "2026-11-23T07:30:00+03:00",
+      "angle": "real_price",
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Why are Kenyan fuel prices still high despite a relatively stable shilling?",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVFpTczRLM3NGY2ZBUWphaGxiNjd6eEN1MWNVN0NKVkZKTENNaEZQRC1FR0ZSS1ZjVE92YlNYOVZMU21qRml3d3RXRHVQcmQwS2o1MGtncVpkRWtMZDJLUWU4WHptSHBRSTExNWxOMEpUVFpjU3BvOEhxNVdBRDlsdXhiS0c0VkZvWl83OWwyei1JUGpPazF2cHRzSUhFSkxtclROS0hycEduM0hkVVpHVQ?oc=5",
+          "published": "2026-11-21"
+        }
+      ],
+      "material": {
+        "kind": "price",
+        "key": "news:https://news.google.com/rss/articles/CBMisAFBVV95cUxNVFpTczRLM3NGY2ZBUWphaGxiNjd6eEN1MWNVN0NKVkZKTENNaEZQRC1FR0ZSS1ZjVE92YlNYOVZMU21qRml3d3RXRHVQcmQwS2o1MGtncVpkRWtMZDJLUWU4WHptSHBRSTExNWxOMEpUVFpjU3BvOEhxNVdBRDlsdXhiS0c0VkZvWl83OWwyei1JUGpPazF2cHRzSUhFSkxtclROS0hycEduM0hkVVpHVQ?oc=5",
+        "title": "Why are Kenyan fuel prices still high despite a relatively stable shilling?",
+        "outlet": "People Daily",
+        "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVFpTczRLM3NGY2ZBUWphaGxiNjd6eEN1MWNVN0NKVkZKTENNaEZQRC1FR0ZSS1ZjVE92YlNYOVZMU21qRml3d3RXRHVQcmQwS2o1MGtncVpkRWtMZDJLUWU4WHptSHBRSTExNWxOMEpUVFpjU3BvOEhxNVdBRDlsdXhiS0c0VkZvWl83OWwyei1JUGpPazF2cHRzSUhFSkxtclROS0hycEduM0hkVVpHVQ?oc=5",
+        "published": "2026-11-21"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "possible named person(s): National November, Petroleum Regulatory Authority. Civic posts target systems, not people."
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 7,
+        "fair": 8,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.3,
+        "note": "Solid execution on daily cost pressures, but ensure the action beat asks a more specific conversational question."
+      },
+      "drafted_at": "2026-11-22T17:09:59.283965+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d1-money-photo.jpg",
+      "photo_credit": "Photo: Citizen Digital · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Citizen Digital",
+      "photo_source": "https://citizen.digital/article/fuel-prices-remain-unchanged-in-latest-epra-review-1-n393915",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d1-money-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d1-money-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Citizen Digital",
+          "title": "Fuel prices remain unchanged in latest EPRA review"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "EPRA Boss Issues Fresh Warning to Motorists After Latest Fuel Price Increase"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Matatu Owners Address Strike Over Fuel Price Increase"
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1499
+    },
+    {
+      "id": "2026-w48-d2-kenya",
+      "template": "kenya",
+      "lane": "everyone",
+      "series": "Kenya at its best",
+      "place": "Fort Jesus, Mombasa",
+      "line": "Fort Jesus stands proud as a *UNESCO* World Heritage Site guarding Mombasa.",
+      "fact": "Built by the Portuguese in 1593-1596 to guard Mombasa's port, it is a UNESCO World Heritage Site.",
+      "source": "https://whc.unesco.org/en/list/1295",
+      "beats": [
+        "Fort Jesus stands proud as a *UNESCO* World Heritage Site.",
+        "The Portuguese built it between 1593 and 1596 to guard Mombasa.",
+        "It guards the old port with centuries of coastal history.",
+        "Tag who you'd walk through these old stone walls with."
+      ],
+      "message": "Fort Jesus in Mombasa is a UNESCO World Heritage Site built in 1593-1596.",
+      "action": "Plan a visit to Mombasa's historic Fort Jesus this weekend",
+      "photo_query": "Fort Jesus Mombasa Kenya",
+      "caption": "Four hundred years of history right on our coast. Built by the Portuguese in 1593 to 1596, Fort Jesus still stands tall as a UNESCO World Heritage Site in Mombasa.\n\nTag who you'd walk through these old stone walls with.\n\n#KenyaAtItsBest #EldoretToTheWorld #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-24T12:45:00+03:00",
+      "side": "none",
+      "tone": "credit",
+      "source_links": [
+        {
+          "outlet": "UNESCO World Heritage Centre",
+          "title": "Fort Jesus: Built by the Portuguese in 1593-1596 to guard Mombasa's port, it is a UNESCO World Heritage Site.",
+          "link": "https://whc.unesco.org/en/list/1295",
+          "published": ""
+        }
+      ],
+      "material": {
+        "kind": "bank",
+        "key": "bank:fort-jesus",
+        "id": "fort-jesus",
+        "series": "Kenya at its best",
+        "place": "Fort Jesus, Mombasa",
+        "name": "Fort Jesus",
+        "fact": "Built by the Portuguese in 1593-1596 to guard Mombasa's port, it is a UNESCO World Heritage Site.",
+        "source": "https://whc.unesco.org/en/list/1295",
+        "outlet": "UNESCO World Heritage Centre",
+        "photo_query": "Fort Jesus Mombasa Kenya"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 7,
+        "send": 7,
+        "clarity": 9,
+        "fresh": 7,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 8,
+        "demand": 6,
+        "action": 7,
+        "fair": 9,
+        "impact": 6,
+        "human": 9,
+        "avg": 7.8,
+        "note": "Evergreen heritage piece; clean and well-written with a strong pictorial match."
+      },
+      "trend": "#EldoretToTheWorld",
+      "drafted_at": "2026-11-22T17:09:59.283972+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d2-kenya-photo.jpg",
+      "photo_credit": "Photo: Bahnfrend / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "place",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Artillery_at_Fort_Jesus,_2025_(02).jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Bahnfrend / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Adventures in Adventureland\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1500
+    },
+    {
+      "id": "2026-w48-d3-promise",
+      "template": "promise",
+      "bg": "usiku",
+      "lane": "campus",
+      "publish_at": "2026-11-25T18:30:00+03:00",
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "The Promise Tracker names a real promise and says it was not kept: the promise and its source must be researched by a person, never invented by the writer to fit a headline"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-11-22T17:09:59.283976+03:00"
+    },
+    {
+      "id": "2026-w48-d4-money",
+      "template": "money",
+      "lane": "everyone",
+      "series": "The Real Price",
+      "hook": "Easy Coach *fares* go up",
+      "number": "Major",
+      "unit": "routes affected",
+      "what": "Easy Coach increased bus fares for major routes across the country.",
+      "why": "Travellers and families pay more to move between towns for work and visits.",
+      "check": "Easy Coach official booking offices and online ticketing platforms.",
+      "message": "Easy Coach raised fares on major routes, raising travel costs for travellers.",
+      "action": "Check the new fare chart on the official Easy Coach booking portal on 21 November",
+      "beats": [
+        "Easy Coach increased *fares* for major routes across the country.",
+        "Travel costs go up for every family moving between towns.",
+        "Higher transport eats straight into our December holiday budgets.",
+        "Tell us below: how much is your bus ticket home this season?"
+      ],
+      "photo_query": "bus station Nairobi Kenya",
+      "source": "Tuko News, 2026-11-21",
+      "caption": "Planning to travel upcountry? Easy Coach just increased fares for major routes on 21 November. Check your booking app before you pay.\n\nTell us below: how much is your bus ticket home this season?\n\n#TheRealPrice #KenyaOnRecord",
+      "who": "Easy Coach Management",
+      "where": "National",
+      "when": "November 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Travelers pay more for every cross-country trip.",
+      "bg": "usiku",
+      "publish_at": "2026-11-26T19:30:00+03:00",
+      "angle": "real_price",
+      "source_links": [
+        {
+          "outlet": "Tuko News",
+          "title": "\"Ama wewe ni wa Climax?\": Easy Coach increases fares for major routes",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV01iZkdicWpHa0VoZUR4MGtNNnhmNl9CN2w4S0l4RGZrRzd2c3JkZ2JmOVJCNzhGWEdtVVBsRU85eTVPTmEtMG5JenZ0TENxNk1qeTFkckM3OXktdWpJNk1uWWI1bUFtNnY3R1prX1pxdWFHUW9EQ3NQNGZlbkRRTkFrY1dmQUE5S2JQWFN6Q0pNWjNpUWZxVA?oc=5",
+          "published": "2026-11-21"
+        }
+      ],
+      "material": {
+        "kind": "price",
+        "key": "news:https://news.google.com/rss/articles/CBMimAFBVV95cUxQV01iZkdicWpHa0VoZUR4MGtNNnhmNl9CN2w4S0l4RGZrRzd2c3JkZ2JmOVJCNzhGWEdtVVBsRU85eTVPTmEtMG5JenZ0TENxNk1qeTFkckM3OXktdWpJNk1uWWI1bUFtNnY3R1prX1pxdWFHUW9EQ3NQNGZlbkRRTkFrY1dmQUE5S2JQWFN6Q0pNWjNpUWZxVA?oc=5",
+        "title": "\"Ama wewe ni wa Climax?\": Easy Coach increases fares for major routes",
+        "outlet": "Tuko News",
+        "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV01iZkdicWpHa0VoZUR4MGtNNnhmNl9CN2w4S0l4RGZrRzd2c3JkZ2JmOVJCNzhGWEdtVVBsRU85eTVPTmEtMG5JenZ0TENxNk1qeTFkckM3OXktdWpJNk1uWWI1bUFtNnY3R1prX1pxdWFHUW9EQ3NQNGZlbkRRTkFrY1dmQUE5S2JQWFN6Q0pNWjNpUWZxVA?oc=5",
+        "published": "2026-11-21"
+      },
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "possible named person(s): Easy Coach, Easy Coach Management, Nairobi Kenya Planning, National November, November Easy Coach. Civic posts target systems, not people."
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 7,
+        "fair": 8,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.3,
+        "note": "Relatable holiday travel angle that hits home for urban workers planning to visit family."
+      },
+      "drafted_at": "2026-11-22T17:09:59.283974+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d4-money-photo.jpg",
+      "photo_credit": "Photo: Bellarmine Bulinda / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Nairobi%27s_Bus_Station.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Bellarmine Bulinda / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1501
+    },
+    {
+      "id": "2026-w48-d5-straight",
+      "template": "straight",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-27T17:00:00+03:00",
+      "status": "planned",
+      "angle": "myth",
+      "series": "Myth or Fact"
+    },
+    {
+      "id": "2026-w48-d6-kenya",
+      "template": "kenya",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-28T11:00:00+03:00",
+      "status": "planned",
+      "series": "Built in Kenya"
+    },
+    {
+      "id": "2026-w48-d7-glasspoll",
+      "template": "glasspoll",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-29T18:00:00+03:00",
+      "status": "planned",
+      "size": "story"
+    }
+  ],
+  "scripts": {
+    "radio": "Habari za wiki hii kutoka Kenya on Record. Mimi ni mtangazaji wako, na leo tunatazama uchumi wetu bila kupaka mafuta kwa kidole.\n\nKwanza kabisa, bei za mafuta zimesalia juu licha ya shilingi yetu ya Kenya kuwa thabiti kwa muda sasa. Wakati pesa yetu inaimarisha dhidi ya dola, bei ya petroli na diseli haishuki kama inavyopaswa. Matokeo yake ni mzigo mzito kwa wananchi. Na si hayo tu; kampuni ya mabasi ya Easy Coach imepandisha nauli kwenye njia zake kuu, jambo ambalo linazidi kuongeza gharama za usafiri kwa wasafiri kote nchini. Kusafiri kwenda sherehe au kuona jamaa kunazidi kuwa ghali.\n\nKatika historia yetu, Fort Jesus huko Mombasa, iliyojengwa kati ya 1593 na 1596, inasalia kuwa kivutio kikubwa na eneo la UNESCO World Heritage Site linalotukumbusha historia ndefu ya pwani yetu.\n\n[SWAHILI SUMMARY]\nKwa kifupi wiki hii: Bei za mafuta na nauli za Easy Coach zimesalia juu licha ya shilingi kuwa thabiti, na Fort Jesus Mombasa inaendelea kutupa fahari ya kihistoria.",
+    "voice_note": "Sasa, wacha tuzungumze ukweli kuhusu mfuko wako wiki hii. Shilingi yetu imetulia, lakini bei za mafuta zimebaki juu kama kawaida. Hiyo inamaanisha nini? Gharama ya kusafiri imepanda, na ndio maana hata Easy Coach imepandisha nauli kwenye njia zake kuu. Wakati bei ya petroli haishuki licha ya shilingi kuimarika, ni nani anayefaidika? Tunataka uwajibikaji kutoka kwa mamlaka. Hata hivyo, wakati tukikabiliana na haya yote ya kiuchumi, tukumbuke urithi wetu—kama Fort Jesus kule Mombasa iliyojengwa miaka ya 1590, tunastahimili. Endelea kufuatilia Kenya on Record.",
+    "sms": "Shilingi imetulia lakini bei za mafuta na nauli za Easy Coach ziko juu. Dai uwajibikaji wa bei za mafuta. Usiibiwe!",
+    "reels": "Shilingi yetu ya Kenya imetulia... lakini bei za mafuta zinabaki juu? Na sasa Easy Coach imepandisha nauli kwenye njia zake kuu! Uchumi unakaza, lakini maswali yanabaki: kwa nini bei haishuki? Tuambie maoni yako kwenye comment."
+  },
+  "spend_usd": 0.0
+}
