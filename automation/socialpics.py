@@ -77,6 +77,26 @@ def instagram_username(name: str, get=_get_json) -> str | None:
     return None
 
 
+NOT_HANDLES = {"p", "reel", "reels", "tv", "explore", "stories", "accounts", "about", "developer", "legal", "direct",
+               "instagram", "embed", "web", "static"}
+
+
+def handle_in_pages(pages: list[str], name: str) -> str | None:
+    """An Instagram username that news reports about the person link to or embed ("A post shared by Bien
+    (@bienaimesol)"), when Wikidata has none. Only a username that carries one of their names counts: a news
+    site's own account sits in every page footer and never does."""
+    words = [w for w in re.findall(r"[a-z]{4,}", _plain(name))]
+    seen: dict[str, int] = {}
+    for page in pages:
+        found = re.findall(r"instagram\.com/([A-Za-z0-9._]{2,30})", page) + re.findall(r"\(@([A-Za-z0-9._]{2,30})\)", page)
+        for h in found:
+            h = h.rstrip(".")
+            if h.lower() in NOT_HANDLES or not any(w in h.lower() for w in words):
+                continue
+            seen[h] = seen.get(h, 0) + 1
+    return max(seen, key=seen.get) if seen else None
+
+
 def recent_posts(username: str, graph_get, ig_user: str) -> list[dict]:
     """Their newest public posts that are pictures: [{url, permalink, timestamp, caption}], newest first."""
     media = "media.limit(15){media_type,media_url,permalink,timestamp,caption}"
@@ -96,9 +116,11 @@ def _graph_get(path: str, fields: dict) -> dict:
     return _get_json(f"https://graph.facebook.com/{version}/{path}?{q}")
 
 
-def their_photo(post: dict, names: list[str], story: str, fetch, graph_get=None, get=_get_json) -> tuple[bytes, dict] | None:
+def their_photo(post: dict, names: list[str], story: str, fetch, graph_get=None, get=_get_json,
+                pages: list[str] | None = None) -> tuple[bytes, dict] | None:
     """A recent photo the person posted themselves that fits `story`, with its credit. `names`: what they are
-    called, most complete first ("Bien Aime Baraza", "Aime Baraza"); `fetch(url) -> bytes`."""
+    called, most complete first ("Bien Aime Baraza", "Aime Baraza"); `fetch(url) -> bytes`; `pages`: the HTML of
+    news reports about them, searched for their username when Wikidata has none."""
     import picture
     ig_user = os.environ.get("META_IG_USER_ID", "").strip()
     names = [n for n in dict.fromkeys(names) if n]
@@ -113,8 +135,12 @@ def their_photo(post: dict, names: list[str], story: str, fetch, graph_get=None,
             return None
         if handle:
             break
+    if not handle and pages:
+        handle = handle_in_pages(pages, names[0])
+        if handle:
+            _note(f"  own posts for {post.get('id')}: @{handle}, linked from the news reports")
     if not handle:
-        _note(f"  own posts for {post.get('id')}: Wikidata has no Instagram account for {names[0]}")
+        _note(f"  own posts for {post.get('id')}: no Instagram account known for {names[0]}")
         return None
     try:
         posts = recent_posts(handle, graph_get or _graph_get, ig_user)

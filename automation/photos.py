@@ -616,7 +616,13 @@ def _their_own(post: dict) -> tuple[bytes, dict] | None:
     import posted
     import socialpics
     words = [w for w in re.findall(r"[A-Z][A-Za-z'-]{2,}", who) if w.lower() not in TITLES and not INSTITUTION.match(w.lower())]
-    return socialpics.their_photo(post, [" ".join(words), full_name(who)], posted.story_line(post), _get)
+    pages = []
+    try:   # the reports of this story, for the username they link to or embed
+        for _, item in posted._ranked(post)[:3]:
+            pages.append(posted._get(item["link"]).decode("utf-8", "replace"))
+    except Exception as e:
+        _note(f"  own posts for {post.get('id')}: reports not read ({str(e)[:80]})")
+    return socialpics.their_photo(post, [" ".join(words), full_name(who)], posted.story_line(post), _get, pages=pages)
 
 
 def _topic_lead(post: dict) -> tuple[bytes, dict] | None:

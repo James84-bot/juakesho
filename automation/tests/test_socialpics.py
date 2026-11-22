@@ -71,6 +71,13 @@ class TheirOwnPhoto(unittest.TestCase):
         self.assertEqual(got[1], {"credit": "Photo: @bien_test on Instagram", "url": "https://ig/p/2", "kind": "file"})
         self.assertIn("business_discovery.username(bien_test)", asked["fields"])
 
+    def test_the_username_from_the_reports_must_carry_their_name(self):
+        pages = ['<a href="https://www.instagram.com/kbcchannel1/">KBC</a> <blockquote data-instgrm-permalink='
+                 '"https://www.instagram.com/p/DAbc123/">A post shared by Bien (@bienaimesol)</blockquote>',
+                 '<a href="https://instagram.com/bienaimesol">', '<a href="https://www.instagram.com/reel/XYZ/">']
+        self.assertEqual(socialpics.handle_in_pages(pages, "Bien Aime Baraza"), "bienaimesol")
+        self.assertIsNone(socialpics.handle_in_pages(pages[:1][:0] + ['instagram.com/kbcchannel1'], "Bien Aime Baraza"))
+
     def test_nothing_is_used_when_the_account_cannot_be_read(self):
         def graph(path, fields):
             raise RuntimeError("(#10) Not enough permission")
