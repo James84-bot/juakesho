@@ -3356,8 +3356,11 @@ def _main(argv: list[str] | None = None) -> int:
         import tempfile
         from PIL import Image
         import shutil
-        if not shutil.which("ffmpeg"):   # this run's install is the light one
-            subprocess.run(["sudo", "apt-get", "install", "-y", "-qq", "ffmpeg"], check=False)
+        ffmpeg = shutil.which("ffmpeg")
+        if not ffmpeg:   # this run's install is the light one: a static ffmpeg from pip
+            subprocess.run([sys.executable, "-m", "pip", "install", "-q", "imageio-ffmpeg"], check=False)
+            import imageio_ffmpeg
+            ffmpeg = imageio_ffmpeg.get_ffmpeg_exe()
         out = HERE.parent / "docs" / "exports" / "_qa" / "pubaudit"
         out.mkdir(parents=True, exist_ok=True)
         for f in sorted(WEEKS.glob("*.json")):
@@ -3375,7 +3378,7 @@ def _main(argv: list[str] | None = None) -> int:
                         frames = []
                         for k, at in enumerate((1.5, 4.5, 7.5, 10.5)):
                             fr = Path(t) / f"{k}.jpg"
-                            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(at), "-i", str(src), "-frames:v", "1",
+                            subprocess.run([ffmpeg, "-v", "error", "-y", "-ss", str(at), "-i", str(src), "-frames:v", "1",
                                             "-vf", "scale=240:-1", str(fr)], check=False)
                             if fr.exists():
                                 frames.append(Image.open(fr).convert("RGB"))
