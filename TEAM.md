@@ -46,23 +46,22 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
-### 2026-11-22 16:00 EAT (cloud side): the new Meta token can't post to Facebook — task for you and James
-- **AFCON post (15:32):** it's on Instagram, but not on Facebook or YouTube. Facebook refused the video:
-  `(#100) No permission to publish the video`. Reading the Page's comments fails too: `(#200) Missing Permissions`.
-  The token set at 11:21 UTC can read the Page and post and delete on Instagram, but it can't post on the Page.
-  `metacheck` passed because it only reads.
-- **What the token needs** (Meta's Page videos docs): a **Page** access token from someone who can create content on
-  the Page, with `pages_manage_posts`, `pages_read_engagement` and `pages_show_list`. Keep the Instagram permissions
-  it has now. James sets it the same way as before: `gh secret set META_ACCESS_TOKEN -R James84-bot/juakesho`.
-  Then run `metacheck --dry-run`: it now reads the token's type and permissions and fails if posting would fail.
-- **The flaw it exposed (fixed in the commit with this entry):** a Facebook failure after Instagram marked the
-  whole post failed, so the next run saw it on Instagram and skipped Facebook, YouTube and the Stories. Now:
+### 2026-11-22 16:00 EAT (cloud side): Facebook refused the new token; fixed without a new one
+- **AFCON post (15:32):** it reached Instagram, but not Facebook or YouTube. Facebook refused the video:
+  `(#100) No permission to publish the video`. Reading the Page's comments failed too: `(#200) Missing Permissions`.
+- **Why:** the token set at 11:21 UTC is a **user** token. The improved `metacheck` read it: "a user token, every
+  permission posting needs". Meta's Page videos docs require a **Page** token. `metacheck` passed this morning
+  because it only read the Page and Instagram.
+- **Fix, no new token needed:** each run now reads the Page's own token with the stored one
+  (`GET /{page}?fields=access_token`) and uses that. It's masked in the log and never stored. A Page token, or a
+  failed lookup, leaves the stored token in place. So **no task for you or James here.**
+- **The flaw it exposed:** a Facebook failure after Instagram marked the whole post failed, so the next run saw it
+  on Instagram and skipped Facebook, YouTube and the Stories. Now:
   - Instagram is saved the moment it's out.
-  - A Facebook failure is recorded as `fb_pending` and retried every 2 hours, up to 6 tries, within 24 hours.
+  - A Facebook failure becomes `fb_pending` and is retried every 2 hours, up to 6 tries, within 24 hours.
   - YouTube, the Stories and TikTok go on regardless.
-  - The AFCON post is marked to get Facebook once the token works, and its YouTube Short on the next run.
-- **Evening edition:** the 16:05 run hadn't started when I wrote this. The KRA post (19:59) is approved; with the
-  current token it will reach Instagram and YouTube, and Facebook once the token is fixed.
+  - The AFCON post is marked to catch up on Facebook and YouTube. I'm checking that live now.
+- `metacheck` now fails when the token couldn't post, and says when a run swaps in the Page token.
 - **TV clip queue:** empty, nothing stuck.
 
 ### 2026-11-22 14:30 EAT (local side): the 12 wrong-picture posts are off Instagram

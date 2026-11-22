@@ -1950,6 +1950,36 @@ def dup_check() -> bool:
     return bool(found)
 
 
+STORED_TOKEN = {"kind": ""}   # "user" when META_ACCESS_TOKEN is a user token and this run swapped in the Page's own
+
+
+def use_page_token() -> bool:
+    """Makes every Graph call this run use the Page's own token. Page videos need one (Meta's docs); on 22 Nov the
+    stored token became a user token (with every permission) and Facebook refused the AFCON video. A user token
+    that manages the Page can read the Page's token: GET /{page}?fields=access_token. The Page token carries the same
+    permissions, and the Instagram calls work with it as they did before. Masked in the log; never stored.
+    Returns True if it swapped. A Page token, or any failure, leaves the stored one in place."""
+    raw = os.environ.get("META_ACCESS_TOKEN", "").strip()
+    page = os.environ.get("META_PAGE_ID", "").strip()
+    if not raw or not page:
+        return False
+    version = os.environ.get("META_GRAPH_VERSION", "v26.0")
+    try:
+        q = urllib.parse.urlencode({"fields": "access_token", "access_token": raw})
+        got = str((http("GET", f"https://graph.facebook.com/{version}/{page}?{q}") or {}).get("access_token") or "")
+    except Exception as e:
+        log(f"Meta: kept the stored token (couldn't read the Page's own: {str(e)[:120]})")
+        return False
+    if not got or got == raw:
+        return False
+    if os.environ.get("GITHUB_ACTIONS"):
+        print(f"::add-mask::{got}", flush=True)
+    os.environ["META_ACCESS_TOKEN"] = got
+    STORED_TOKEN["kind"] = "user"
+    log("Meta: the stored token is a user token; this run posts with the Page's own token")
+    return True
+
+
 # What posting needs (Meta's docs): a Page video needs a Page token and pages_manage_posts, pages_read_engagement,
 # pages_show_list; Instagram publishing needs instagram_basic and instagram_content_publish.
 META_SCOPES = ("pages_manage_posts", "pages_read_engagement", "pages_show_list", "instagram_basic",
@@ -1983,7 +2013,9 @@ def meta_check(dry_run: bool = False) -> bool:
             kind = str(info.get("type") or "?").lower()
             lines.append(("✅" if not lack and kind == "page" else "❌") + f" Token: a {kind} token"
                          + (f", missing {', '.join(lack)}" if lack else ", every permission posting needs")
-                         + ("" if kind == "page" else " (Facebook Page videos need a Page token)"))
+                         + ("" if kind == "page" else " (Facebook Page videos need a Page token)")
+                         + (" (the stored one is a user token: each run swaps in the Page's own)"
+                            if STORED_TOKEN["kind"] == "user" else ""))
             ok = ok and not lack and kind == "page"
         except Exception as e:
             lines.append(f"⚠️ Couldn't read the token's permissions: {str(e)[:150]}")
@@ -3256,6 +3288,8 @@ def _main(argv: list[str] | None = None) -> int:
     ap.add_argument("--post", help="rephoto: only this post id (also an approved one that has not gone out)")
     a = ap.parse_args(argv)
     label = a.week or current_week_label()
+    if meta_ready() and not a.mock:
+        use_page_token()
     if a.command in {"week", "plan", "tracker", "renew"} and not brands.MAIN and not json.loads(
             (brands.HOME / "calendar.json").read_text(encoding="utf-8")).get("slots"):
         log(f"{BRAND.get('name')} has no weekly calendar: nothing to plan")   # a brand that only posts news

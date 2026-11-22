@@ -1,6 +1,8 @@
 """Tests for the autopilot: planning, approvals, publishing rules and the content guard.
 Run: python -m unittest discover -s tests -v   (no network, no credentials needed)"""
+import contextlib
 import datetime as dt
+import io
 import json
 import os
 import sys
@@ -25,6 +27,9 @@ import pipeline as pl  # noqa: E402
 REAL_PREFLIGHT = pl.preflight  # captured before any test stubs it
 
 
+USE_PAGE_TOKEN = pl.use_page_token   # the real one; TempWeeks stubs it
+
+
 class TempWeeks(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -37,6 +42,7 @@ class TempWeeks(unittest.TestCase):
                 "META_PAGE_ID": "page", "META_IG_USER_ID": "ig", "PUBLIC_BASE_URL": "https://x.test/repo/"}),
             mock.patch.object(pl.time, "sleep", lambda s: None),
             mock.patch.object(pl, "preflight", lambda url, kind: None),  # real check covered in ReelPublishTests
+            mock.patch.object(pl, "use_page_token", lambda: False),       # main() would ask Graph; tested on its own
         ]
         for p in self.patches:
             p.start()
@@ -458,6 +464,33 @@ class PublishTests(TempWeeks):
             _, posts = self.run_with(posts, refuse=None)
         self.assertEqual(sent, ["p"])
         self.assertNotIn("yt_pending", posts[0])
+
+    def test_a_user_token_is_swapped_for_the_pages_own_and_masked(self):
+        seen = []
+
+        def fake(method, url, fields=None, files=None, timeout=60):
+            seen.append(url)
+            return {"access_token": "PAGE-TOKEN", "id": "page"}
+        out = io.StringIO()
+        with mock.patch.object(pl, "http", fake), mock.patch.object(pl, "log", lambda m: None), \
+                mock.patch.dict(os.environ, {"META_ACCESS_TOKEN": "USER-TOKEN", "META_PAGE_ID": "page", "GITHUB_ACTIONS": "true"}), \
+                contextlib.redirect_stdout(out):
+            self.assertTrue(USE_PAGE_TOKEN())
+            self.assertEqual(os.environ["META_ACCESS_TOKEN"], "PAGE-TOKEN")
+        self.assertIn("/page?fields=access_token", seen[0])
+        self.assertIn("::add-mask::PAGE-TOKEN", out.getvalue())
+        pl.STORED_TOKEN["kind"] = ""
+
+    def test_a_page_token_or_a_failed_lookup_keeps_the_stored_token(self):
+        for answer in ({"access_token": "SAME"}, {"id": "page"}, RuntimeError("400")):
+            def fake(method, url, fields=None, files=None, timeout=60, answer=answer):
+                if isinstance(answer, Exception):
+                    raise answer
+                return answer
+            with mock.patch.object(pl, "http", fake), mock.patch.object(pl, "log", lambda m: None), \
+                    mock.patch.dict(os.environ, {"META_ACCESS_TOKEN": "SAME", "META_PAGE_ID": "page"}):
+                self.assertFalse(USE_PAGE_TOKEN())
+                self.assertEqual(os.environ["META_ACCESS_TOKEN"], "SAME")
 
     def test_metacheck_says_when_the_token_cannot_post(self):
         def fake_get(path, fields):

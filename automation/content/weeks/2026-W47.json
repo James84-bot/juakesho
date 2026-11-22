@@ -3450,7 +3450,7 @@
       "fb_pending": {
         "tries": 1,
         "error": "POST https://graph.facebook.com/v26.0/1375136779018047/videos → 400: {\"error\":{\"message\":\"(#100) No permission to publish the video\",\"type\":\"OAuthException\",\"code\":100,\"fbtrace_id\":\"A-z2kEHvwPygfD2Pqmjb7Gl\"}}",
-        "at": "2026-11-22T15:34:18+03:00"
+        "at": "2026-11-22T13:00:00+03:00"
       },
       "yt_pending": true
     },
