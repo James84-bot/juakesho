@@ -2090,6 +2090,54 @@ def platform_stats(days: int = 21) -> dict:
     return out
 
 
+def growth_text(rows: list[dict], learned: dict, days: int = 7) -> str:
+    """The week's growth from state/stats.jsonl: each platform's followers (and YouTube views) now against the line
+    nearest `days` ago, and the best post of the last weeks per platform from learnings.json. "" without data."""
+    rows = [r for r in rows if r.get("at")]
+    if len(rows) < 2:
+        return ""
+    last = rows[-1]
+    t = dt.datetime.fromisoformat(last["at"]) - dt.timedelta(days=days)
+    then = min(rows[:-1], key=lambda r: abs((dt.datetime.fromisoformat(r["at"]) - t).total_seconds()))
+    span = (dt.datetime.fromisoformat(last["at"]) - dt.datetime.fromisoformat(then["at"])).days
+
+    def num(r: dict, plat: str, key: str):
+        v = (r.get(plat) or {}).get(key)
+        return v if isinstance(v, (int, float)) else None
+
+    lines = [f"📈 <b>Growth, last {span} days</b>"]
+    for plat, key, label in (("instagram", "followers", "Instagram followers"), ("facebook", "followers", "Facebook followers"),
+                             ("youtube", "subscribers", "YouTube subscribers"), ("youtube", "views", "YouTube views")):
+        a, b = num(then, plat, key), num(last, plat, key)
+        if a is None or b is None:
+            continue
+        lines.append(f"{label}: {b:,} ({b - a:+,})")
+    best_ig = max(learned.get("all") or [], key=lambda x: x.get("reach") or 0, default=None)
+    best_yt = max(learned.get("youtube") or [], key=lambda x: x.get("views") or 0, default=None)
+    if best_ig:
+        lines.append(f"Best on Instagram: {_esc(str(best_ig.get('opening', ''))[:90])} (reach {best_ig.get('reach') or 0})")
+    if best_yt:
+        lines.append(f"Best on YouTube: {_esc(str(best_yt.get('opening', ''))[:90])} ({best_yt.get('views') or 0} views)")
+    return "\n".join(lines) if len(lines) > 1 else ""
+
+
+def growth_note(force: bool = False) -> bool:
+    """Sends growth_text to Telegram on Mondays, once per week (state/growth_sent.txt keeps the week)."""
+    week = now().strftime("%G-W%V")
+    mark = STATE / "growth_sent.txt"
+    if not force and (now().weekday() != 0 or (mark.exists() and mark.read_text(encoding="utf-8").strip() == week)):
+        return False
+    rows = [json.loads(x) for x in STATS_LOG.read_text(encoding="utf-8").splitlines() if x.strip()] if STATS_LOG.exists() else []
+    learned_path = STATE / "learnings.json"
+    learned = json.loads(learned_path.read_text(encoding="utf-8")) if learned_path.exists() else {}
+    text = growth_text(rows, learned)
+    if not text:
+        return False
+    _notify(text)
+    mark.write_text(week, encoding="utf-8")
+    return True
+
+
 def preflight(url: str, kind: str) -> None:
     """Instagram only accepts media it can fetch with the right Content-Type. Check before we ask it to."""
     req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "jua-kesho/1.0"})
@@ -3273,7 +3321,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown", "pubsheets", "iglinks"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown", "pubsheets", "iglinks", "growth"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -3307,6 +3355,10 @@ def _main(argv: list[str] | None = None) -> int:
                 platform_stats()
             except Exception as e:
                 log(f"stats skipped: {e}")
+            try:   # Monday: the week's growth on Telegram (once a week)
+                growth_note()
+            except Exception as e:
+                log(f"growth note skipped: {e}")
     newsroom = brands.MAIN or bool(BRAND.get("editions"))   # Mtaa Mode reads no news
     if a.command in {"week", "tracker", "hot", "trends", "news", "remake", "renew", "redo", "radar", "photocheck"} and not a.mock \
             and newsroom:
@@ -3725,6 +3777,10 @@ def _main(argv: list[str] | None = None) -> int:
         return 0
     if a.command == "stats":   # where the brand stands on every platform (reads only)
         platform_stats()
+        return 0
+    if a.command == "growth":   # the weekly growth note, now (it is sent by itself on Mondays)
+        if not growth_note(force=True):
+            print("::warning title=growth::not enough stats yet")
         return 0
     if a.command == "editcheck":   # the outlet-graphic check on the lead photos of our newest posts
         return 0 if edit_check() else 1
