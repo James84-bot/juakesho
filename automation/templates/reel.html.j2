@@ -44,14 +44,14 @@
 .photo, .photo-band { display: none !important; }
 .photo-fade { z-index: 1; }
 .shot { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
-.shot .full { position: absolute; inset: 0; background-size: cover; background-position: center var(--sfy, 30%);
-  filter: saturate(1.06) contrast(1.06) brightness(1.03); transform-origin: 50% var(--sfy, 30%); }
+.shot .full { position: absolute; inset: 0; background-size: cover; background-position: var(--sfx, 50%) var(--sfy, 30%);
+  filter: saturate(1.06) contrast(1.06) brightness(1.03); transform-origin: var(--sfx, 50%) var(--sfy, 30%); }
 .shot .blur { position: absolute; inset: -80px; background-size: cover; background-position: center;
   filter: blur(30px) brightness(.5) saturate(1.1); }
 .shot .box { position: absolute; left: 0; width: 100%; top: 300px; height: {{ [photo_band, 760] | min }}px; overflow: hidden;
   -webkit-mask-image: linear-gradient(to bottom, #000 0, #000 82%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0, #000 82%, transparent 100%); }
-.shot .box img { width: 100%; height: 100%; object-fit: cover; object-position: center var(--sfy, 30%); display: block;
-  transform-origin: 50% var(--sfy, 30%); }
+.shot .box img { width: 100%; height: 100%; object-fit: cover; object-position: var(--sfx, 50%) var(--sfy, 30%); display: block;
+  transform-origin: var(--sfx, 50%) var(--sfy, 30%); }
 {% if beats|length < 2 %}.shot .cam { animation: kb {{ BT.t + 1 }}s linear both; }{% endif %}
 {% if not photo_band and not chart %}
 /* a full-size picture stays in view: the lines sit in the lower third, like the big news pages, not over faces */
@@ -80,8 +80,8 @@
 .shot { background: #0E0C0B; }
 .shot .card { position: absolute; left: var(--m); top: 300px; width: {{ CW }}px; height: {{ CH }}px; overflow: hidden;
   border-radius: 14px; background: #1B1815; }
-.shot .card img { width: 100%; height: 100%; object-fit: cover; object-position: center var(--sfy, 30%); display: block;
-  transform-origin: 50% var(--sfy, 30%); filter: saturate(1.05) contrast(1.04); }
+.shot .card img { width: 100%; height: 100%; object-fit: cover; object-position: var(--sfx, 50%) var(--sfy, 30%); display: block;
+  transform-origin: var(--sfx, 50%) var(--sfy, 30%); filter: saturate(1.05) contrast(1.04); }
 /* a small picture is shown whole, centred in the card, rather than blown up to fill it */
 .shot .card.fit { background: transparent; border-radius: 0; }
 .shot .card.fit img { position: absolute; border-radius: 14px; object-fit: fill; }
@@ -118,6 +118,11 @@
 .beat { text-shadow: 0 4px 24px rgba(0, 0, 0, .55) !important; }
 .beat .m { background: var(--shuka-500); border-radius: .08em; text-shadow: none; }
 .wipe { top: {{ OT }}px !important; left: 0 !important; width: {{ CW }}px !important; border-radius: 0; }
+/* our mark on the picture's top-left corner, the way a news channel's bug sits on its picture: 30px tall it was
+   10px on a phone (22 Nov); this reads in the feed and on the grid cover */
+.top { top: {{ OT + 24 }}px !important; left: 24px !important; right: auto !important; justify-content: flex-start !important;
+  padding: 13px 18px 12px; background: rgba(14, 12, 11, .72); border-radius: 10px; z-index: 4; }
+.top img { height: 44px !important; opacity: 1 !important; filter: none !important; }
 {% if broll %}
 /* over moving footage the lines need a darker ground: it fades in only on the footage lines */
 .fshade { position: absolute; left: 0; right: 0; top: {{ OT + CH - 120 }}px; bottom: 0; z-index: 2; pointer-events: none;
@@ -134,10 +139,16 @@
 {% endif %}
 {% endif %}
 {% endif %}
+{% if accent %}
+/* a club's story in the club's colour ({{ accent.club }}): the highlight, the rule under the picture, the quote mark
+   (teams.py: colours only, never a crest) */
+.canvas { --shuka-500: {{ accent.colour }}; --shuka-600: {{ accent.colour }}; }
+.beat .m { color: {{ accent.ink }}; }
+{% endif %}
 /* a quote line: the speaker's own words, under a big red opening mark, with the name the report gives them */
 .beat.q { font-weight: 800; letter-spacing: -.02em; line-height: 1.08; }
 .beat.q .qm { display: block; font: 900 1.9em/0.62 "Inter Tight"; color: var(--shuka-500); margin: 0 0 .06em -.04em; }
-.beat.q .who { display: flex; align-items: center; gap: 16px; margin-top: .55em; font: 800 34px/1.1 "Inter Tight";
+.beat.q .who { display: flex; align-items: center; gap: 16px; margin-top: .55em; font: 800 40px/1.1 "Inter Tight";
   letter-spacing: .01em; color: rgba(255, 255, 255, .92); }
 .beat.q .who::before { content: ""; width: 44px; height: 6px; background: var(--shuka-500); flex: none; }
 .beat { grid-area: 1 / 1; font-family: "Inter Tight", sans-serif; font-weight: 900; letter-spacing: -.03em; line-height: 1.02;
@@ -185,7 +196,7 @@
 {% block top %}<img src="{{ logo_on_dark }}" alt="Kenya on Record">{% endblock %}
 {% block footer %}
   {% if broll %}<span class="footage-tag">{{ footage_label }}</span>{% endif %}
-  {% for sh in shots %}<div class="shot sh{{ loop.index0 }}" style="--sfy: {{ sh.fy }}%">
+  {% for sh in shots %}<div class="shot sh{{ loop.index0 }}" style="--sfy: {{ sh.fy }}%; --sfx: {{ sh.fx | default(50) }}%">
     {% if card and look == 'glass' %}<div class="gbg" style="background-image: url('{{ sh.uri }}')"></div><div class="gtint"></div>{% endif %}
     {% if card %}<div class="card{{ ' fit' if sh.fit }}"><img class="cam" src="{{ sh.uri }}" alt=""{% if sh.fit %} style="left: {{ sh.fit.x }}px; top: {{ sh.fit.y }}px; width: {{ sh.fit.w }}px; height: {{ sh.fit.h }}px"{% endif %}></div>{% if sh.credit %}<span class="cr">{{ sh.credit }}</span>{% endif %}
     {% elif photo_band %}<div class="blur" style="background-image: url('{{ sh.uri }}')"></div><div class="box"><img class="cam" src="{{ sh.uri }}" alt=""></div>

@@ -380,14 +380,17 @@ class NewsSearch(unittest.TestCase):
                b'launch party - Mpasho</title><link>https://news.google.com/rss/articles/A2</link><source>Mpasho'
                b'</source></item></channel></rss>')
         pics = {"https://tuko/1": _photo(7), "https://mpasho/2": _photo(8)}
+        asked = []
         posted._EVENT_CACHE.clear()
         with mock.patch.object(posted, "_get", lambda u, timeout=20: rss), \
              mock.patch("gnews.real_link", lambda u, *a, **k: {"https://news.google.com/rss/articles/A1": "https://tuko/1",
                                                              "https://news.google.com/rss/articles/A2": "https://mpasho/2"}[u]), \
              mock.patch.object(posted, "_photo_of", lambda it: (pics[it["link"]], {"credit": f"Photo: {it['outlet']}"})), \
-             mock.patch("picture.fits", lambda d, about: "album cover art, not a photo" if d == pics["https://tuko/1"] else ""):
+             mock.patch("picture.fits", lambda d, about, person="": asked.append(person) or (
+                 "album cover art, not a photo" if d == pics["https://tuko/1"] else "")):
             got = posted.search_event(self.BIEN)
         self.assertEqual(got[1], {"credit": "Photo: Mpasho", "kind": "posted"})
+        self.assertTrue(asked and all(asked))   # the lead picture had to show the singer himself
 
 
 def _photo(seed: int, soft: bool = False) -> bytes:

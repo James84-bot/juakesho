@@ -2870,19 +2870,25 @@ SAMPLE_DROP = ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "vide
                "track_credit", "status", "tg_msg", "ig_id", "fb_id", "fb_story_id", "yt_id", "tt_id", "tt_status")
 
 
-def sample_posts(n: int = 3) -> list[dict]:
-    """Copies of the newest published Reels, ready to be made again with today's design: new ids ("-sample"),
-    the old renders' paths and platform ids removed, the caption and lines cleaned by today's rules."""
+def sample_posts(n: int = 3, ids: list[str] | None = None) -> list[dict]:
+    """Copies of the newest published Reels (or of the posts `ids` names, whatever their status), ready to be made
+    again with today's design: new ids ("-sample"), the old renders' paths and platform ids removed, the caption and
+    lines cleaned by today's rules."""
     import draft as drafter
     found = []
     for f in sorted(WEEKS.glob("*.json"))[-2:]:
         for p in json.loads(f.read_text(encoding="utf-8"))["posts"]:
-            if p["status"] == "published" and p.get("reel") and p.get("beats") and not p.get("group") \
+            if ids:   # a full id, or its end after the week ('1122b1442' for 2026-w47-hot-1122b1442)
+                if p.get("beats") and any(p["id"] == x or p["id"].endswith("-hot-" + x) for x in ids):
+                    found.append(p)
+            elif p["status"] == "published" and p.get("reel") and p.get("beats") and not p.get("group") \
                     and p.get("template") != "tazama":
                 found.append(p)
-    found.sort(key=lambda p: p["publish_at"], reverse=True)
+    def place(p: dict) -> int:
+        return next(i for i, x in enumerate(ids) if p["id"] == x or p["id"].endswith("-hot-" + x))
+    found.sort(key=lambda p: (place(p) if ids else 0, "" if ids else p["publish_at"]), reverse=not ids)
     out = []
-    for p in found[:n]:
+    for p in found[:len(ids) if ids else n]:
         q = {k: v for k, v in p.items() if k not in SAMPLE_DROP}
         q["id"] = f"{p['id']}-sample"
         out.append(drafter.tidy_beats(drafter.attribute_single_source(q)))
@@ -3010,10 +3016,10 @@ def street_samples(n: int = 3, dry_run: bool = False) -> int:
     return len(good)
 
 
-def reel_samples(n: int = 3, dry_run: bool = False, send: bool = True) -> int:
+def reel_samples(n: int = 3, dry_run: bool = False, send: bool = True, ids: list[str] | None = None) -> int:
     """Makes the newest published Reels again with the current design (a new shot on every line, figures counting
     up, the wipe, licensed music) and sends them to Telegram as samples. Nothing is posted; the weeks don't change."""
-    posts = sample_posts(n)
+    posts = sample_posts(n, ids)
     if posts and not dry_run:
         posts = rewrite_samples(posts)
     if dry_run or not posts:
@@ -3038,9 +3044,16 @@ def reel_samples(n: int = 3, dry_run: bool = False, send: bool = True) -> int:
         mp4 = SAMPLES / f"{q['id']}.mp4"
         if not mp4.exists():
             continue
-        note = (f"🧪 <b>Sample, not posted</b>: {_esc(q['id'][:-7])} made again with the new design: a new shot on "
-                "every line, figures counting up, a red wipe between lines"
-                + (f", music: {_esc(q['track_credit'])}" if q.get("track_credit") else ", no music track (synth bed)") + ".")
+        import photos as _ph
+        import teams as _tm
+        acc = _tm.accent_for(q)
+        who = _ph.story_person(q)
+        bits = ([f"opens with {_esc(guard_quote_speaker(q))}'s own words"] if guard_quote_speaker(q) else []) + \
+            ([f"{_esc(acc['club'])} colours"] if acc else []) + \
+            ([f"lead picture must show {_esc(who)}"] if who else [])
+        note = (f"🧪 <b>Sample, not posted</b>: {_esc(q['id'][:-7])} made again in the current design"
+                + (": " + "; ".join(bits) if bits else "")
+                + (f". Music: {_esc(q['track_credit'])}" if q.get("track_credit") else "") + ".")
         tg("sendVideo", {"chat_id": chat, "caption": note[:1000], "parse_mode": "HTML", "supports_streaming": "true"},
            {"video": mp4})
         cap = caption_for(q)
@@ -3055,6 +3068,13 @@ def reel_samples(n: int = 3, dry_run: bool = False, send: bool = True) -> int:
         sent += 1
     log(f"samples sent: {sent}")
     return sent
+
+
+def guard_quote_speaker(post: dict) -> str:
+    """The speaker when the Reel opens with their words ('' otherwise)."""
+    import guard
+    said = guard.quote_beat(str((post.get("beats") or [""])[0]))
+    return said[0] if said else ""
 
 
 PREVIEW = EXPORTS / "_preview"
@@ -3560,7 +3580,7 @@ def _main(argv: list[str] | None = None) -> int:
         if not newsroom and "scene" in json.loads((brands.HOME / "calendar.json").read_text(encoding="utf-8")).get("reel_templates", []):
             street_samples(dry_run=a.dry_run)   # Mtaa Mode: written and animated scenes, kept in exports/_samples
         else:
-            reel_samples(dry_run=a.dry_run, send=not a.no_send)
+            reel_samples(dry_run=a.dry_run, send=not a.no_send, ids=[x for x in (a.post or "").split(":") if x] or None)
     if a.command == "clips" and not a.dry_run:
         collect()   # pick up clips you just sent
     if a.command in {"clips", "clipwork"}:

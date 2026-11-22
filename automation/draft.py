@@ -1626,8 +1626,13 @@ Rework the script so ONE beat gives the most telling quote in the speaker's own 
   Never guess a role. No other text on that beat.
 - The words are copied EXACTLY as printed: a run of consecutive words from ONE quote. You may start or stop inside the
   quote; never change, add, translate, or join words, never use "..." or an ellipsis. At most 24 words.
-- Keep 3 or 4 beats. Beat 1 stays the news in one plain sentence. The last beat stays the question to the viewer.
-  The quote beat goes where the speaker's words carry the story (usually beat 2).
+- Keep 3 or 4 beats. The last beat stays the question to the viewer.
+- OPEN WITH THE QUOTE when the words are 14 or fewer and punchy on their own, and the speaker is the person the story
+  is about (the one in the news, not a commentator): beat 1 is the quote line, and beat 2 is the news in one plain
+  sentence of at most 12 words that says what happened, so nobody reads the words without their context. A
+  politician's own words, said as they were, stop a scroll better than our summary of them.
+- Otherwise beat 1 stays the news in one plain sentence, and the quote goes where the words carry the story (usually
+  beat 2).
 - Choose the quote that says the most in the fewest words. If none of the quotes is about this story, change nothing.
 Return ONLY JSON: {"beats": ["...", "..."], "quote_used": true or false}"""
 

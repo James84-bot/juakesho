@@ -349,7 +349,7 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         ctx["chart"] = [{**c, "rise": round(c["new"] - c["old"], 2)} for c in post["chart"]]
         ctx["stake"] = stake_line(post["chart"], post.get("stake_litres"))
     ctx["photo_band"] = 0
-    ctx["photo_fy"] = 30
+    ctx["photo_fy"], ctx["photo_fx"] = 30, 50
     # a beat Reel with real footage: frames are drawn transparent and video.py lays them over the moving clip
     vf = post.get("video_file")
     full_footage = bool(post["template"] == "reel" and vf and Path(vf).is_file())
@@ -362,6 +362,8 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
     ctx["card"] = False   # True: the pictures sit whole in a card under the header (see reel.html.j2)
     ctx["footage_slot"] = False
     ctx["open_top"] = OPEN_TOP
+    import teams
+    ctx["accent"] = teams.accent_for(post)   # a club's colour for a club's story; None keeps the brand red
     # the Reel's look (brand.json "reel_look"; a post's own "look" wins, "plain" asks for the dark card): "glass" =
     # the photo blurred full screen behind a frosted frame and a frosted panel for the lines
     ctx["look"] = str(post.get("look") or bk.BRAND.get("reel_look") or "")
@@ -370,14 +372,15 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
         from urllib.parse import unquote, urlparse
         shown = Path(unquote(urlparse(ctx["photo_uri"]).path))
         ctx["photo_band"] = photo_band(shown, W)
-        ctx["photo_fy"] = focus_y(shown)
+        ctx["photo_fx"], ctx["photo_fy"] = focus(shown)
         if post["template"] == "reel" and not post.get("person_file"):
             # a beat Reel shows every picture of the story it has, a different one on each line
             info = post.get("shot_info") if isinstance(post.get("shot_info"), list) else []
             extra = [(Path(f).resolve(), k + 1) for k, f in enumerate(post.get("extra_photos") or []) if f and Path(f).is_file()]
             paths = [shown] + [f for f, _ in extra]
             meta = [info[0] if info else {}] + [info[k] if k < len(info) else {} for _, k in extra]
-            ctx["shots"] = [{"uri": f.as_uri(), "fy": focus_y(f) if i else ctx["photo_fy"],
+            spots = [(ctx["photo_fx"], ctx["photo_fy"]) if not i else focus(f) for i, f in enumerate(paths)]
+            ctx["shots"] = [{"uri": f.as_uri(), "fx": spots[i][0], "fy": spots[i][1],
                              "credit": str((meta[i] or {}).get("credit") or (ctx.get("photo_credit") if not i else "") or "")}
                             for i, f in enumerate(paths)]
             ctx["photo_band"] = 0
@@ -534,10 +537,11 @@ def photo_band(path: Path, width: int) -> int:
     return round(width * h / w) if w < BAND_BELOW else 0
 
 
-def focus_y(path: Path, default: int = 30) -> int:
-    """Where a cropped photo is anchored, top to bottom in percent: on the largest face when there are people
-    (a governor's head must never be cut off at the top of the band), else `default`. Same YuNet detector as
-    photos.faces_ok."""
+def focus(path: Path, default: tuple[int, int] = (50, 30)) -> tuple[int, int]:
+    """Where a cropped photo is anchored, in percent (left to right, top to bottom): on the largest face when there
+    are people, so the face sits in the picture whatever the crop (a governor's head must never be cut off at the
+    top; a wide news photo cropped to the card must not cut off the person at its edge), else `default`. Same YuNet
+    detector as photos.faces_ok."""
     try:
         import cv2
         import photos
@@ -553,7 +557,13 @@ def focus_y(path: Path, default: int = 30) -> int:
     if faces is None or not len(faces):
         return default
     x, y, fw, fh = max(faces, key=lambda f: f[2] * f[3])[:4]
-    return max(0, min(100, round(100 * (y + fh * 0.2) / img.shape[0])))   # a little above the eyes: hair stays in
+    fx = max(0, min(100, round(100 * (x + fw / 2) / img.shape[1])))
+    fy = max(0, min(100, round(100 * (y + fh * 0.2) / img.shape[0])))   # a little above the eyes: hair stays in
+    return fx, fy
+
+
+def focus_y(path: Path, default: int = 30) -> int:
+    return focus(path, (50, default))[1]
 
 
 def hero_beat(box: list, w: int, h: int) -> dict:

@@ -93,6 +93,19 @@ class Voices(unittest.TestCase):
 class GoogleNewsLinks(unittest.TestCase):
     """A Google News link is Google's page, not the article: it is turned into the newsroom's own address."""
 
+    def test_other_newsrooms_reports_are_read_when_its_own_quote_nobody(self):
+        post = {"source_links": [{"link": "https://own.test/a", "outlet": "Own"}]}
+        pages = {"https://own.test/a": b"<p>Nothing quoted in this report at all, only facts and figures.</p>",
+                 "https://other.test/b": PAGE.encode()}
+        got = quotes.collect(post, get=lambda url: pages[url],
+                             search=lambda p: [{"link": "https://other.test/b", "outlet": "Other"},
+                                               {"link": "https://own.test/a", "outlet": "Own"}])
+        self.assertTrue(got)
+        self.assertEqual({q["outlet"] for q in got}, {"Other"})
+        read = []
+        quotes.collect(post, get=lambda url: read.append(url) or pages[url])   # a passed fetcher: no search
+        self.assertEqual(read, ["https://own.test/a"])
+
     def test_the_article_behind_a_google_link(self):
         import tempfile
         from unittest import mock

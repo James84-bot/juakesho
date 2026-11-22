@@ -402,6 +402,7 @@ def find(post: dict) -> tuple[bytes, dict] | None:
     """The lead photo of the best report of this post's story, with its credit. None if nothing fits.
     A post built on one report (material.py) only takes a photo from coverage of that same story: a photo of
     another politician on a post about a doctored image of a senator is a false picture."""
+    import photos
     surname, words = terms_for(post)
     ranked = _ranked(post)
     _note(f"  posted for {post.get('id')}: {len(ranked)} matching reports (person '{surname}', names {names_for(post)[:4]}, "
@@ -410,7 +411,7 @@ def find(post: dict) -> tuple[bytes, dict] | None:
     for s, item in ranked:
         got = _photo_of(item)
         if got:
-            if picture.fits(got[0], story_line(post)):   # a clear "no"; unlooked, the story's own photo is trusted
+            if picture.fits(got[0], story_line(post), person=photos.lead_person(post)):   # a clear "no"; unlooked, trusted
                 _note(f"    not {item['outlet']}: does not fit the story ({item['title'][:60]})")
                 continue
             # detail is logged for the lead (the thumbnail stays the best report's picture)
@@ -582,6 +583,7 @@ def search_event(post: dict, have: list[str] | None = None) -> tuple[bytes, dict
     """A photo of this story from any newsroom's report of it (event_reports), when our feeds have none that can
     be used. The picture passes the outlet-graphic check (cover art and flyers are left out) and is seen to fit
     the story. Credited to its newsroom."""
+    import photos
     import picture
     if _accused_text(post):
         return None
@@ -591,7 +593,7 @@ def search_event(post: dict, have: list[str] | None = None) -> tuple[bytes, dict
         got = _photo_of(item)
         if not got:
             continue
-        why = picture.fits(got[0], story_line(post))
+        why = picture.fits(got[0], story_line(post), person=photos.lead_person(post))
         if why != "":
             _note(f"    not {item['outlet']}: {why or 'not looked at'} ({item['title'][:60]})")
             continue
@@ -639,7 +641,7 @@ def find_named(post: dict) -> tuple[bytes, dict] | None:
             got = _photo_of(item)
             if got:
                 import picture
-                why = picture.fits(got[0], story_line(post))
+                why = picture.fits(got[0], story_line(post), person=photos.lead_person(post))
                 if why != "":   # a picture from another story is only used once it has been seen to fit this one
                     _note(f"    not {item['outlet']}: {why or 'not looked at'} ({item['title'][:60]})")
                     continue

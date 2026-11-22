@@ -83,13 +83,27 @@ def norm(text: str) -> str:
     return re.sub(r"\s+", " ", t).strip(" .,;:!?")
 
 
-def collect(post: dict, get=None, limit: int = 3) -> list[dict]:
+def collect(post: dict, get=None, limit: int = 3, search=None) -> list[dict]:
     """The quotes in the post's own reports (its source links, at most `limit` pages), each with its outlet and
-    link. A page that can't be read is skipped."""
+    link, then, while fewer than two are found, in other newsrooms' reports of the same story (the news search,
+    posted.event_reports, at most `limit` more): only 8 of 50 news posts found a quote in their own reports by
+    22 Nov (pages blocked, or a report that paraphrases). A page that can't be read is skipped."""
     import posted
+    get_default = get is None
     get = get or (lambda url: posted._get(url, timeout=20))
     out = []
-    for x in (post.get("source_links") or [])[:limit]:
+    links = [x for x in (post.get("source_links") or [])[:limit] if isinstance(x, dict) and x.get("link")]
+    seen = {x["link"] for x in links}
+    if search is None:   # a fetcher passed in (tests, dry runs) searches nothing unless a search is passed too
+        search = posted.event_reports if get_default else (lambda p: [])
+    try:
+        more = [x for x in search(post) if x.get("link") and x["link"] not in seen][:limit]
+    except Exception as e:
+        print(f"    quotes: news search failed ({str(e)[:60]})")
+        more = []
+    for n, x in enumerate(links + more):
+        if n >= len(links) and len(out) >= 2:   # its own reports quoted enough
+            break
         link = x.get("link") if isinstance(x, dict) else ""
         if not link:
             continue

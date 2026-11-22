@@ -551,6 +551,41 @@ def full_name(who: str) -> str:
     return f"{m.group(1)} {m.group(2).title()}" if m and m.group(1).lower() not in TITLES else ""
 
 
+# words that open a headline in capitals without being a person's name
+NOT_NAMES = {"breaking", "update", "watch", "why", "how", "what", "who", "when", "where", "new", "big", "top", "live",
+             "premier", "league", "champions", "cup", "world", "afcon", "fifa", "caf", "fkf", "olympic", "olympics",
+             "harambee", "stars", "starlets", "safari", "rally", "marathon", "derby", "mashemeji", "old", "trafford",
+             "stadium", "kasarani", "nyayo", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"}
+
+
+def story_person(post: dict) -> str:
+    """The person the story is about, by name: who `who` names, else a name the headline opens with. On 22 Nov the
+    Bruno Fernandes Reel ("Bruno Fernandes puts new contract talks on hold") had who="Manchester United", so no
+    picture of him was looked for and a goal net led it. '' when it is about no one, or about an accusation (no face
+    beside an allegation)."""
+    if _accused(post):
+        return ""
+    import teams
+    name = full_name(str(post.get("who", "")))
+    if name and not any(w.lower() in teams.NAME_WORDS for w in name.split()):   # 'Gor Mahia' is a club
+        return name
+    line = re.sub(r"[*_“”\"]", "", str(post.get("message") or (post.get("beats") or [""])[0]))
+    m = re.match(r"\s*((?:[A-Z][a-zA-Z'’-]+\s+){1,2}[A-Z][a-zA-Z'’-]+)\s+[a-z]", line)
+    if not m:
+        return ""
+    words = m.group(1).split()
+    if any(w.lower().strip("'’") in TITLES or INSTITUTION.match(w.lower()) or w.lower() in NOT_NAMES
+           or w.lower() in teams.NAME_WORDS for w in words):
+        return ""
+    return " ".join(words)
+
+
+def lead_person(post: dict) -> str:
+    """The person a story's LEAD picture must show ('' = any fitting picture): its person, unless the post is
+    built on one report (its own picture leads) or carries an allegation."""
+    return story_person(post)
+
+
 def commons_portrait(post: dict) -> tuple[bytes, dict] | None:
     """A licensed photo of the public figure the post is about (Wikimedia Commons, CC0 / PD / CC BY / BY-SA),
     found by their name, which must be in the file's title. Labelled "File photo": it shows the real person,
@@ -601,7 +636,7 @@ def commons_portrait(post: dict) -> tuple[bytes, dict] | None:
     import posted
     for url, meta in good[:3]:
         data = _get(url)
-        fit = picture.fits(data, posted.story_line(post))
+        fit = picture.fits(data, posted.story_line(post), person=lead_person(post))
         if fit == "" or fit is None:   # Commons titles are reliable: an unseen portrait of the person is used
             return data, meta
         _note(f"    portrait not used: {fit}")
@@ -836,7 +871,9 @@ def _attach(posts: list[dict], out_dir: Path) -> None:
                 p.pop("person_file", None)
                 p.pop("person_credit", None)
         if p.get("photo") or p.get("photo_query") or p.get("event_query"):
-            got = fetch(p, out_dir / "photos")
+            person = story_person(p)
+            # the searches find people by `who`: a story about a player whose `who` is his club looks for him
+            got = fetch(p if not person or full_name(str(p.get("who", ""))) else {**p, "who": person}, out_dir / "photos")
             if got:
                 p["photo_file"], p["photo_credit"] = got["file"], got["credit"]
                 p["photo_kind"] = got.get("kind", "symbolic")

@@ -140,12 +140,21 @@ HOOK_MAX_WORDS = 16
 HOOK_TEMPLATES = {"sauti", "kenya", "promise", "straight", "money", "usiibiwe", "kumbuka", "scorecard", "africa", "spotlight"}
 
 
+QUOTE_HOOK_MAX = 14   # an opening quote: the speaker's words, read in under 3 seconds
+
+
 def hook_problem(first: str) -> str:
-    """What is wrong with a Reel's first line, or '' when it earns the stop: short, and carrying a figure or a named thing."""
+    """What is wrong with a Reel's first line, or '' when it earns the stop: short, and carrying a figure or a named thing.
+    A quote opening ('Treasury CS Mbadi: “...”') carries its named speaker; only its length is judged."""
     line = re.sub(r"[*_]", "", str(first or "")).strip()
     words = line.split()
     if not words:
         return "the first line is empty"
+    said = quote_beat(line)
+    if said:
+        n = len(said[1].split())
+        return "" if n <= QUOTE_HOOK_MAX else \
+            f"the opening quote is {n} words (max {QUOTE_HOOK_MAX}): open with the news and quote them on line 2"
     if FILLER_OPENER.search(line):
         return f"the first line opens with filler ('{' '.join(words[:3])}...'): start with the number, the name or the claim"
     if len(words) > HOOK_MAX_WORDS:
