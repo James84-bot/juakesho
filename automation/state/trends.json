@@ -1,76 +1,10 @@
 {
-  "fetched": "2026-11-22T09:59:18.522916+00:00",
+  "fetched": "2026-11-22T11:17:05.131166+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "safaricom",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Safaricom explains how Buy Goods Till owners can retrieve forgotten store numbers",
-          "url": "https://peopledaily.digital/business/safaricom-explains-how-buy-goods-till-owners-can-retrieve-forgotten-store-numbers",
-          "source": "People Daily"
-        },
-        {
-          "title": "Vodafone funds its own Sh68 billion buyout in Safaricom",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/vodafone-funds-its-own-sh68-billion-buyout-in-safaricom-5678762",
-          "source": "Business Daily"
-        },
-        {
-          "title": "R1.15 billion in limbo for Vodacom",
-          "url": "https://businesstech.co.za/news/telecommunications/885111/r1-15-billion-in-limbo-for-vodacom/",
-          "source": "BusinessTech"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "f1",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Las Vegas Grand Prix result: Max Verstappen wins extraordinary race as Lewis Hamilton and Charles Leclerc collide",
-          "url": "https://www.bbc.com/sport/formula1/articles/cqx2ex25pvn9o",
-          "source": "BBC"
-        },
-        {
-          "title": "Our verdict on crazy Las Vegas GP with 20-plus lead changes",
-          "url": "https://www.the-race.com/formula-1/our-verdict-f1-crazy-las-vegas-gp-20-plus-lead-changes/",
-          "source": "The Race"
-        },
-        {
-          "title": "Verstappen wins exhilarating Las Vegas Grand Prix from Norris and Piastri",
-          "url": "https://www.formula1.com/en/latest/article/verstappen-wins-exhilarating-las-vegas-grand-prix-from-norris-and-piastri.2eeBWqekZdir9mdDVK9YVX",
-          "source": "Formula 1"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "boeing 777",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Air France Boeing 777 to JFK is returning to Paris after mid-Atlantic U-turn due to cockpit instrument fault",
-          "url": "https://airlive.net/tracking/2026/11/20/air-france-boeing-777-to-jfk-is-returning-to-paris-after-mid-atlantic-u-turn-due-to-cockpit-instrument-fault/",
-          "source": "airlive"
-        },
-        {
-          "title": "Air France Boeing 777 Returns to Paris Mid-Atlantic After Fuel Monitoring System Fault",
-          "url": "https://speaks.co.in/news/air-france-boeing-777-returns-to-paris-mid-atlantic-after-fuel-monitoring-system-fault/",
-          "source": "Speaks Media"
-        },
-        {
-          "title": "Lufthansa Ordered The Airbus A350-1000 In 2023 & Got It Before The Boeing 777-9 It Ordered In 2013",
-          "url": "https://simpleflying.com/lufthansa-ordered-airbus-a350-1000-2023-before-boeing-777-9-ordered-2013/",
-          "source": "Simple Flying"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "nairobi road",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Details of Proposed Toll Fees on Nairobi-Thika Highway & Southern Bypass",
@@ -78,26 +12,26 @@
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "Nairobi–Thika Road: Questions govt must answer before introducing toll charges",
-          "url": "https://peopledaily.digital/news/nairobi-thika-road-questions-govt-must-answer-before-introducing-toll-charges",
-          "source": "People Daily"
-        },
-        {
           "title": "Treasury Eyes Tolls on Nairobi–Thika Highway in KSh100bn PPP Plan",
           "url": "https://nairobiwire.com/2026/11/nairobi-thika-highway-tolls-ksh100bn-ppp-plan.html",
           "source": "Nairobi Wire -"
+        },
+        {
+          "title": "Kenyans to Start Paying Toll Fees on Thika Highway, 4 Other Busy Roads",
+          "url": "https://www.tuko.co.ke/kenya/647319-kenyans-start-paying-toll-fees-southern-bypass-4-roads/",
+          "source": "Tuko News"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "barcelona vs villarreal",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Posible alineación del Barcelona ante el Villarreal en LaLiga EA Sports",
-          "url": "https://as.com/futbol/posible-alineacion-del-barca-ante-el-villarreal-la-suplencia-de-cubarsi-lo-altera-todo-f202611-n/",
-          "source": "Diario AS"
+          "title": "Barça-Villarreal: Un regreso exigente",
+          "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261122/1004253901/barca-villarreal-regreso-exigente.html",
+          "source": "Mundo Deportivo"
         },
         {
           "title": "Haz de Hansi Flick y elige la alineación del Barça",
@@ -105,32 +39,98 @@
           "source": "La Vanguardia"
         },
         {
-          "title": "Vila-real CF: Vuelve la Liga al Spotify Camp Nou",
-          "url": "https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/4611861/fc-barcelona-vila-real-cf-vuelve-la-liga-al-spotify-camp-nou",
-          "source": "FC Barcelona"
+          "title": "FC Barcelona vs Villarreal en vivo: canales, streaming y horarios de LaLiga 2026/27 para México, Latinoamérica y USA",
+          "url": "https://www.dazn.com/es-MX/news/f%C3%BAtbol/fc-barcelona-vs-villarreal-vivo-canales-streaming-horarios-laliga/dg40m0w0do4o1kmhg7a9rn928",
+          "source": "DAZN"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "graduation",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "From night guard to graduate: Man’s four-year sacrifice pays off",
+          "url": "https://nation.africa/kenya/news/from-night-guard-to-graduate-man-s-four-year-sacrifice-pays-off-5677682",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "\"Beautiful ending\": Kibabii Uni night guard earns degree from same institution",
+          "url": "https://www.tuko.co.ke/people/647039-kibabii-university-security-guard-graduates-institution-degree/",
+          "source": "Tuko News"
+        },
+        {
+          "title": "\"Niko solo\": Chuka University grad marks graduation without loved ones, friends",
+          "url": "https://www.tuko.co.ke/people/family/647494-chuka-university-graduate-sits-by-breaks-shows-graduation/",
+          "source": "Tuko News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "miley cyrus",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Miley Cyrus marries Maxx Morando in California ceremony",
+          "url": "https://www.bbc.com/news/articles/cq8e0p87l89lo",
+          "source": "BBC"
+        },
+        {
+          "title": "Miley Cyrus and fiancé Maxx Morando pictured holding hands after wedding rehearsal dinner with her famous family",
+          "url": "https://pagesix.com/2026/11/21/celebrity-news/miley-cyrus-and-maxx-morando-pictured-after-rehearsal-dinner/",
+          "source": "Page Six"
+        },
+        {
+          "title": "Miley Cyrus Marries Maxx Morando in Palm Springs Wedding",
+          "url": "https://people.com/miley-cyrus-marries-maxx-morando-11877139",
+          "source": "People.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "atalanta vs inter",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Atalanta vs Inter Milan: Italian Serie A stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/crq5vgg8pp48t",
+          "source": "BBC"
+        },
+        {
+          "title": "Atalanta v Inter: where to watch on TV and online, kick-off time and line-ups",
+          "url": "https://www.goal.com/en/news/watch-atalanta-v-inter-live-today-who-is-showing-the-match-on-tv-and-online/blte03efe4d428dc5c4",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Scamacca ‘has everything’ but must start to show his best, says Sarri",
+          "url": "https://www.soccernews.com/scamacca-has-everything-but-must-start-to-show-his-best-says-sarri/408708/",
+          "source": "Soccer News"
         }
       ]
     }
   ],
   "dropped": [
     {
+      "title": "augsburg vs mainz",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "hull city vs brighton prediction",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "bologna vs udinese",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "ac milan vs frosinone prediction",
       "why": "unsafe: 'Betting'"
     },
     {
       "title": "sassuolo vs genoa",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "juventus vs venezia",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "kenya county rainfall forecast november",
-      "why": "unsafe: 'flood'"
-    },
-    {
-      "title": "hull city vs brighton",
       "why": "unsafe: 'Betting'"
     }
   ],

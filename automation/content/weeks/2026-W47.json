@@ -3439,7 +3439,8 @@
       "reel": true,
       "tg_msg": 1456,
       "photo_checked": "2026-11-22T12:58:11.021945+03:00",
-      "photo_fit": "2026-11-22T12:58:11.021957+03:00"
+      "photo_fit": "2026-11-22T12:58:11.021957+03:00",
+      "replaced_by": "2026-w47-hot-1122a-r2"
     },
     {
       "id": "2026-w47-hot-1122",
@@ -3539,14 +3540,199 @@
       "reel": true,
       "tg_msg": 1462,
       "photo_checked": "2026-11-22T13:22:26.520574+03:00",
-      "photo_fit": "2026-11-22T13:22:26.520586+03:00"
+      "photo_fit": "2026-11-22T13:22:26.520586+03:00",
+      "replaced_by": "2026-w47-hot-1122-r2"
+    },
+    {
+      "id": "2026-w47-hot-1122a-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football fans",
+      "line": "An *FKF* official defended raising ticket prices for Harambee Stars matches.",
+      "fact": "FKF admitted higher ticket prices for national team matches were necessary to cover stadium costs.",
+      "source": "K24 Digital, 2026-11-21",
+      "photo_query": "Kasarani Stadium Nairobi football",
+      "message": "FKF justified higher ticket prices for Harambee Stars matches citing rising operational costs.",
+      "action": "Ask FKF for transparent breakdown of gate receipts before match days.",
+      "who": "Football Kenya Federation",
+      "where": "Nairobi",
+      "when": "21 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Fans pay more to watch national team home matches live at stadiums.",
+      "beats": [
+        "*FKF* defended hiking ticket prices for Harambee Stars matches.",
+        "FKF cited high operational costs for hosting international games.",
+        "Fans now pay more to watch Harambee Stars live in Nairobi.",
+        "What is the maximum price you would pay for a match ticket?"
+      ],
+      "caption": "FKF has defended higher ticket prices for Harambee Stars international matches in Nairobi, citing rising venue costs. FKF must publish transparent gate collection reports after every match. What is the maximum price you would pay for a match ticket? 👇🏾\n\n#HarambeeStars #FKF #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-22T15:32:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "avoid": [
+        "Cancer patients will no longer face halted treatment when their SHA benefits run out.",
+        "Kenyan artists can secure top global features while keeping their authentic sound.",
+        "Nairobi will serve as Kenya's sole host city for the 2027 AFCON tournament."
+      ],
+      "source_links": [
+        {
+          "outlet": "K24 Digital",
+          "title": "FKF official admits hiking ticket for Kenya vs South Africa clash was necessary",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxONFVheVFMcWtxSHRsVlUycVIyT0dzLTY3RUlWaWFFVXZ5amZON2VHQ2JhTnBjZEJhamx1dTcxX3R6UENiaWFTWWdpUUVVX3RrS2ZXYklXZnNzYXFxdmVpUU1PQmZfaWFfdlFRQWxuX2NuejREb3lhS25Nc1RBZ01aTXJZdExlQ1gzQVFQSkxYeG1GQ2R5M3pOZ2tMaWxnZkF6b0RhTmdxYWw4ZTJQd21lMEpR?oc=5",
+          "published": "2026-11-21"
+        }
+      ],
+      "quotes": [],
+      "status": "drafted",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.8/10. Ensure the demand beat names a specific office and lawful requirement rather than asking for a breakdown."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 7,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 7,
+        "demand": 6,
+        "action": 5,
+        "fair": 7,
+        "impact": 7,
+        "human": 6,
+        "avg": 6.8,
+        "note": "Ensure the demand beat names a specific office and lawful requirement rather than asking for a breakdown."
+      },
+      "drafted_at": "2026-11-22T14:22:17.555261+03:00",
+      "replaced_by": "2026-w47-hot-1122a-r3"
+    },
+    {
+      "id": "2026-w47-hot-1122-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "*KRA* matches bank data to track Kenyans with unfiled returns.",
+      "fact": "KRA established a unit to track unfiled tax returns using bank data.",
+      "source": "People Daily, 2026-11-22",
+      "photo_query": "KRA headquarters Times Tower Nairobi",
+      "message": "KRA uses integrated digital data to track and flag Kenyans with unfiled annual tax returns.",
+      "action": "Log into iTax to confirm your tax return status and avoid penalties.",
+      "who": "Kenya Revenue Authority",
+      "where": "National",
+      "when": "22 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Non-compliant taxpayers face automatic system penalties on their KRA PINs.",
+      "beats": [
+        "KRA uses bank data to find missing 2026 tax returns.",
+        "A new unit matches bank records against iTax filings.",
+        "Unfiled returns trigger automatic monthly penalties on your PIN.",
+        "Have you filed your tax return on iTax this year?"
+      ],
+      "caption": "KRA is matching bank data to identify Kenyans with missing tax returns. Check your iTax portal status to stay compliant and avoid automatic penalties. Have you filed your tax return this year?\n\n#KRA #iTax #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-22T19:59:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Cancer patients will no longer face halted treatment when their SHA benefits run out.",
+        "Kenyan artists can secure top global features while keeping their authentic sound.",
+        "Nairobi will serve as Kenya's sole host city for the 2027 AFCON tournament.",
+        "National Assembly considers 1 bill to meter internet data, threatening prices and user privacy."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "How KRA plans to identify Kenyans with missing tax returns",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOb0l2RVd1RHJidmhtNVJycmZhNDBlemhIamEyZnl6YWNMLTZtdkptVjd5QjhPRnI2cWhBc0FJd2tZNnY3WHlsdndEUjcxdzFZOHZ3TGZIRWRMRGVhY1IxWWtjenJlNTVLc3ZIc0xoUUc4S2FQdzZ0U25XSTRVcVlId1JOMnJmUmVHdlJlaE5VUlVzQkZIa29idDZDNA?oc=5",
+          "published": "2026-11-22"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "The Kenya Revenue Authority (KRA) has established a permanent Register Maintenance Unit, made progress in cleaning up taxpayer records and strengthened its follow-up of non-filers and nil-filers",
+          "speaker": "ATAF",
+          "context": "“The Kenya Revenue Authority (KRA) has established a permanent Register Maintenance Unit, made progress in cleaning up taxpayer records and strengthened its follow-up of non-filers and nil-filers,” ATAF said in a statement shared on X on Saturday, November 21, 2026.",
+          "outlet": "People Daily",
+          "link": "https://peopledaily.digital/business/how-kra-plans-to-identify-kenyans-with-missing-tax-returns"
+        }
+      ],
+      "status": "drafted",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 7,
+        "impact": 8,
+        "human": 7,
+        "avg": 7.9,
+        "note": "Strong, clear utility post with good structure and relevant local detail."
+      },
+      "drafted_at": "2026-11-22T14:22:17.555268+03:00",
+      "replaced_by": "2026-w47-hot-1122-r3"
+    },
+    {
+      "id": "2026-w47-hot-1122a-r3",
+      "template": "sauti",
+      "lane": "everyone",
+      "bg": "usiku",
+      "publish_at": "2026-11-22T15:32:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "status": "planned",
+      "avoid": [
+        "Cancer patients will no longer face halted treatment when their SHA benefits run out.",
+        "Kenyan artists can secure top global features while keeping their authentic sound.",
+        "Nairobi will serve as Kenya's sole host city for the 2027 AFCON tournament.",
+        "FKF justified higher ticket prices for Harambee Stars matches citing rising operational costs."
+      ]
+    },
+    {
+      "id": "2026-w47-hot-1122-r3",
+      "template": "sauti",
+      "lane": "everyone",
+      "bg": "usiku",
+      "publish_at": "2026-11-22T19:59:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "status": "planned",
+      "avoid": [
+        "Cancer patients will no longer face halted treatment when their SHA benefits run out.",
+        "Kenyan artists can secure top global features while keeping their authentic sound.",
+        "Nairobi will serve as Kenya's sole host city for the 2027 AFCON tournament.",
+        "National Assembly considers 1 bill to meter internet data, threatening prices and user privacy.",
+        "KRA uses integrated digital data to track and flag Kenyans with unfiled annual tax returns."
+      ]
     }
   ],
   "scripts": {
-    "radio": "Jambo na karibu kwa Kenya on Record community update. I’m your host, bringing you the stories that directly impact your daily life and wallet.\n\nThis week, our attention is on a proposed internet metering legislation currently making its way through Parliament. If passed, this bill will fundamentally alter how we connect online. The draft legislation introduces strict metering and tariff regulations that service providers warn will inevitably push up the price of data bundles. In a country where small business owners, students, and daily hustles rely heavily on affordable internet, raising the cost of connection is a direct hit to mwananchi.\n\nEven more concerning are the privacy implications. The proposed framework grants regulatory oversight that could compromise your digital privacy, opening doors for excessive tracking of user activity under the guise of monitoring compliance. Internet access is no longer a luxury—it is a basic utility and a public right essential for economic survival.\n\nWe must hold our leaders accountable and ask: who does this bill actually serve?\n\nKwa ufupi: Mswada mpya wa kupima matumizi ya mtandao unalenga kuongeza gharama za data na kuingilia faragha ya Wakenya mtandaoni. Mtandao ni njia yetu ya kujitafutia riziki. Ni lazima tuwawajibishe wabunge wetu ili kulinda haki zetu za kidijitali na uchumi wetu.",
-    "voice_note": "Bana, check this out. There's a new internet metering bill quietly moving through Parliament, and we all need to pay attention. Basically, this proposed law changes how data is regulated, which will inevitably push up bundle prices for everyone. But it gets worse: the bill also creates loopholes that compromise your digital privacy by allowing excessive monitoring of user activity under the guise of regulation. Internet isn't a luxury anymore; it's how we work, learn, and earn a living. We can't afford higher data costs or state eyes on our personal activity. Share this voice note, keep an eye on your MP, and let's demand accountability before this becomes law.",
-    "sms": "Usiibiwe Tip: Proposed internet metering will raise data bundle prices and breach your digital privacy. Tell your MP to reject unfair digital taxes now.",
-    "reels": "They’re coming for your internet bundles. A new proposed internet metering bill threatens to skyrocket data prices in Kenya while compromising your online privacy. Internet access is a right and a economic lifeline, not a luxury to be over-taxed and monitored. Speak up, track your MP, and demand they vote NO to higher data costs. Stay sharp with Kenya on Record."
+    "radio": "Jambo na karibu to Kenya on Record. This week, we look at two areas where ordinary Kenyans are feeling the squeeze: stadium gates and digital tax registers.\n\nFirst, the Football Kenya Federation has justified raising ticket prices for Harambee Stars matches, citing rising operational costs. While running football isn't cheap, fans are asking for transparency. Football is our national passion, and pricing out loyal supporters who stand behind the team raises serious questions about how public sports funds are managed and prioritized.\n\nMeanwhile, the Kenya Revenue Authority is tightening its digital net. KRA is now leveraging integrated digital data—linking mobile money, bank transactions, and official registries—to automatically flag Kenyans with unfiled annual tax returns. If you assumed unfiled returns would slip through quietly, the system is now automated to spot discrepancies instantly. Compliance is moving to algorithms, but as citizens pay up, we must also demand that public revenue translates into actual public services.\n\nHapa ni ufupi wa mambo: Wiki hii, FKF imetetea kuongeza bei ya tiketi za Harambee Stars ikisema gharama zimepanda, huku mashabiki wakitaka uwazi. Nayo KRA inatumia mitandao ya kidijitali kufuatilia wanaokosa kuwasilisha ushuru wa kila mwaka. Weka hesabu zako sawa na uendelee kutaka uwazi.\n\nStay informed, demand accountability, and protect your pocket. This is Kenya on Record.",
+    "voice_note": "Habari yako! Quick heads up from Kenya on Record for this week. Two key updates you should know. First, if you're heading out to support Harambee Stars, FKF has bumped up ticket prices, citing higher operational costs. Fans are raising eyebrows, and we must keep demanding full transparency on sports funds. Second—and crucial for your pocket—KRA is using integrated digital data from banks and mobile money to flag anyone with unfiled annual returns. Don't let penalties catch you sleeping. Log into iTax, check your status today, and pass this audio to your family and group chats!",
+    "sms": "USIIBIWE: KRA is using digital data to track unfiled returns. Log into your iTax portal today to check your compliance status and avoid heavy penalties.",
+    "reels": "Think your unfiled tax returns are invisible? Think again. KRA is now using integrated digital data—from mobile money to bank records—to instantly flag unfiled annual returns. Don't wait for penalties to pile up. Check your iTax status today, stay compliant, and demand accountability for every shilling collected. Follow Kenya on Record."
   },
   "spend_usd": 0.0
 }
