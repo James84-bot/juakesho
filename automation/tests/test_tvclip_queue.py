@@ -1,4 +1,6 @@
+import contextlib
 import datetime as dt
+import io
 import json
 import os
 import sys
@@ -56,10 +58,13 @@ class IntakeTests(unittest.TestCase):
         self.assertEqual(q.pending(Path(self.tmp.name) / "missing"), [])
 
     def test_a_refused_payload_writes_nothing_and_does_not_fail_the_run(self):
-        with mock.patch.object(q, "DIR", self.dir), mock.patch.dict(os.environ, {"PAYLOAD": '{"post": "x"}'}):
+        with mock.patch.object(q, "DIR", self.dir), mock.patch.dict(os.environ, {"PAYLOAD": '{"post": "x"}'}), \
+                contextlib.redirect_stdout(io.StringIO()) as out:   # (a ::warning line would annotate every CI run)
             self.assertEqual(q.main(), 0)
+        self.assertIn("refused: bad post id", out.getvalue())
         self.assertEqual(q.pending(self.dir), [])
-        with mock.patch.object(q, "DIR", self.dir), mock.patch.dict(os.environ, {"PAYLOAD": json.dumps(GOOD)}):
+        with mock.patch.object(q, "DIR", self.dir), mock.patch.dict(os.environ, {"PAYLOAD": json.dumps(GOOD)}), \
+                contextlib.redirect_stdout(io.StringIO()):
             self.assertEqual(q.main(), 0)
         self.assertEqual(len(q.pending(self.dir)), 1)
 

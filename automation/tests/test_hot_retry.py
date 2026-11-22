@@ -44,13 +44,14 @@ class Retry(unittest.TestCase):
     def load(self):
         return json.loads((pipeline.WEEKS / f"{self.label}.json").read_text(encoding="utf-8"))["posts"]
 
-    def fake_draft(self, status):
+    def fake_draft(self, status, crit=8.6):
         def run(label, mock=False, horizon=None):
             self.drafts += 1
             data = json.loads((pipeline.WEEKS / f"{label}.json").read_text(encoding="utf-8"))
             for p in data["posts"]:
                 if p["status"] == "planned":
                     p["status"], p["drafted_at"], p["message"] = status, NOW.isoformat(), f"Story {p['id']}"
+                    p["critic"] = {"avg": crit}
             (pipeline.WEEKS / f"{label}.json").write_text(json.dumps(data), encoding="utf-8")
         return run
 
@@ -90,6 +91,44 @@ class Retry(unittest.TestCase):
             pipeline.retry_held_hot(self.label)
         new = [p for p in self.load() if p["id"].endswith("-r2")][0]
         self.assertEqual(dt.datetime.fromisoformat(new["publish_at"]), NOW + dt.timedelta(minutes=20))
+
+    def test_a_weak_post_sent_to_you_gets_a_replacement_and_its_card_stays_yours(self):
+        # 21 Nov: all four editions were weak, went to Telegram, and expired untapped
+        self.save([held(status="awaiting", critic={"avg": 5.1}, guard={"errors": ["weak: editor scored 5.1/10."]})])
+        with mock.patch.object(pipeline, "draft", self.fake_draft("drafted")):
+            made = pipeline.retry_held_hot(self.label)
+        self.assertEqual(made, ["2026-w44-hot-1031-r2"])
+        posts = {p["id"]: p for p in self.load()}
+        self.assertEqual(posts["2026-w44-hot-1031"]["status"], "awaiting")        # still yours to approve
+        self.assertEqual(posts["2026-w44-hot-1031"]["replaced_by"], "2026-w44-hot-1031-r2")
+        self.assertEqual(posts["2026-w44-hot-1031-r2"]["publish_at"], "2026-10-31T12:45:00+03:00")   # same slot
+
+    def test_a_draft_under_the_bar_is_retried_in_the_same_run(self):
+        self.save([held(status="drafted", critic={"avg": 7.3}, guard={"errors": []})])
+        with mock.patch.object(pipeline, "draft", self.fake_draft("drafted")):
+            self.assertEqual(pipeline.retry_held_hot(self.label), ["2026-w44-hot-1031-r2"])
+        self.assertEqual(self.drafts, 1)                                         # the replacement passed: no more
+
+    def test_a_good_post_is_never_replaced_even_one_that_waits_for_being_political(self):
+        self.save([held(status="drafted", critic={"avg": 8.4}, guard={"errors": []}),
+                   held("2026-w44-hot-1031e", status="awaiting", beat="politics", critic={"avg": 9.0}, guard={"errors": []})])
+        with mock.patch.object(pipeline, "draft", self.fake_draft("drafted")):
+            self.assertEqual(pipeline.retry_held_hot(self.label), [])
+        self.assertEqual(self.drafts, 0)
+
+    def test_a_card_whose_slot_another_draft_took_expires_quietly(self):
+        self.save([held(status="awaiting", publish_at="2026-10-31T07:00:00+03:00", replaced_by="x-r2"),
+                   held("2026-w44-hot-1031a", status="awaiting", publish_at="2026-10-31T07:00:00+03:00")])
+        told = []
+        with mock.patch.object(pipeline, "_notify", told.append), mock.patch.object(pipeline, "log", lambda m: None):
+            pipeline.expire_unanswered()
+        self.assertEqual({p["status"] for p in self.load()}, {"expired"})
+        self.assertIn("2026-w44-hot-1031a", told[0])
+        self.assertNotIn("2026-w44-hot-1031<", told[0])
+
+    def test_the_editor_judges_sport_and_life_posts_in_their_own_lane(self):
+        import draft
+        self.assertIn("NOT the yardstick for those lanes", draft.CRITIC_RUBRIC)
 
 
 if __name__ == "__main__":

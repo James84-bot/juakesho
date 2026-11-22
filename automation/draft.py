@@ -1454,7 +1454,12 @@ CRITIC_RUBRIC = """You are the toughest editor at a Kenyan news desk whose reade
 - picture: do the `photo_query` scene and the headline ALONE deliver the `message` in one second? (a generic or
   decorative scene scores low; a concrete, real scene that IS the message scores high)
 - demand: is this a story Kenyans are on right now (high in WHAT KENYA IS ON), or a deadline/anniversary that
-  matters? A topic nobody is talking about scores low however well it is written. EXCEPTION: everyday series
+  matters? A topic nobody is talking about scores low however well it is written. A news post's `beat` is its lane,
+  and its demand is judged inside that lane: a "sport" post on whether Kenyans who follow sport are on it now
+  (Kenyan athletes and teams, Harambee Stars, and the European clubs and leagues millions of Kenyans follow); a
+  "life" post on whether it touches daily life now (prices, services, jobs, safety, health, showbiz). The list
+  below is mostly politics and is NOT the yardstick for those lanes: never mark a sport or life post down for not
+  being political or not being on it. EXCEPTION: everyday series
   (Kenya at its best, Built in Kenya, The Real Price, Guess the Price, Myth or Fact) and scam alerts are scored on
   whether Kenyans care about it in daily life (a place worth visiting, a price they pay, a scam that is going
   round), not on whether it is in this week's news: evergreen is right for them

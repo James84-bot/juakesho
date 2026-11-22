@@ -713,17 +713,29 @@ def _revision(pid: str) -> int:
     return int(m.group(1)) - 1 if m else 0
 
 
+def quality_hold(p: dict) -> str:
+    """Why a news post can't go out by itself because of the draft ('' if nothing): a check it failed, or the editor's
+    score missing or under the bar. (A political story or a portrait waits for you whatever the draft: another draft
+    would not change that, but a better one is still worth having.)"""
+    if (p.get("guard") or {}).get("errors"):
+        return "failed a check"
+    crit = (p.get("critic") or {}).get("avg")
+    return "" if crit is not None and crit >= drafter_bar() else "the editor's score is missing or under the bar"
+
+
 def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> list[str]:
-    """A news post that was held (a check failed, or the editor found the story weak) used to block its slot all day,
-    which once meant four days without a post. Now a held post from today is closed and replaced by a fresh draft on
-    a different story, up to `tries` times. Returns the ids of the replacements."""
+    """A news post that can't go out by itself (a check failed, or the editor found it weak) used to cost its slot:
+    on 21 Nov all four editions expired waiting for a tap. Now each one from today gets a fresh draft on a different
+    story for the same slot, up to `tries` times. A held one (needs_human) is closed; one that was sent to you stays
+    on Telegram (31 Oct: "send them to Telegram for my approval"), so if you approve it as well, both go out.
+    Returns the ids of the replacements."""
     made = []
     for _ in range(tries):
         data = load_week(label)
         today = now().date().isoformat()
-        held = [p for p in data["posts"] if p.get("hot") and not p.get("breaking") and p["status"] == "needs_human"
-                and not p.get("replaced_by") and str(p.get("drafted_at", ""))[:10] == today
-                and _revision(p["id"]) < tries]
+        held = [p for p in data["posts"] if p.get("hot") and not p.get("breaking") and not p.get("replaced_by")
+                and str(p.get("drafted_at", ""))[:10] == today and _revision(p["id"]) < tries
+                and (p["status"] == "needs_human" or (p["status"] in {"drafted", "rendered", "awaiting"} and quality_hold(p)))]
         if not held:
             break
         for p in held:
@@ -734,7 +746,9 @@ def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> 
             new["avoid"] = [x for x in [*(p.get("avoid") or []), story] if x]
             slot = dt.datetime.fromisoformat(p["publish_at"])
             new["publish_at"] = max(slot, now() + dt.timedelta(minutes=20)).replace(second=0, microsecond=0).isoformat()
-            p["status"], p["replaced_by"] = "rejected", new["id"]
+            if p["status"] == "needs_human":
+                p["status"] = "rejected"
+            p["replaced_by"] = new["id"]
             data["posts"].append(new)
             made.append(new["id"])
         save_week(data)
@@ -1406,6 +1420,8 @@ def _preview_text(p: dict) -> str:
         lines += ["", f"📎 Source: {esc(str(p['source']))[:200]}"]
     if warn:
         lines += ["", "⚠️ " + "\n⚠️ ".join(esc(w) for w in warn[:4])]
+    if p.get("replaced_by"):
+        lines += ["🔁 Another story was written for this slot and goes out if it passes. Approve this one too and both go out."]
     text = "\n".join(lines)
     while len(text) > 1024 and len(lines) > 4:   # Telegram caption limit: drop whole lines from the end, never cut a tag
         lines.pop()
@@ -1717,8 +1733,8 @@ def expire_unanswered() -> list[str]:
         for p in hit:
             p["status"] = "expired"
         if hit:
-            save_week(data)
-            gone += sorted({p.get("group") or p["id"] for p in hit})
+            save_week(data)   # (one whose slot another draft took is not news: it goes quietly)
+            gone += sorted({p.get("group") or p["id"] for p in hit if not p.get("replaced_by")})
     if gone:
         log(f"expired (never approved): {gone}")
         _notify("⌛ Not approved in time, so not posted: " + ", ".join(f"<b>{_esc(g)}</b>" for g in gone)
