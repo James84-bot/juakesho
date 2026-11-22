@@ -56,5 +56,45 @@ class ThePost(unittest.TestCase):
         self.assertEqual(pl.auto_ok(post), "")
 
 
+class OneNight(unittest.TestCase):
+    """20:00 EAT: the Story is made, approves itself, and goes out at 20:30 as an Instagram and Facebook Story."""
+
+    def test_made_approved_and_published_as_a_story(self):
+        import os
+        import tempfile
+        from unittest import mock
+        import pipeline as pl
+        import trends
+        clock = {"t": dt.datetime(2026, 11, 23, 17, 0, 30, tzinfo=dt.timezone.utc)}
+        calls = []
+
+        def fake(method, url, fields=None, files=None, timeout=60):
+            calls.append((url.split("/v26.0/")[-1], dict(fields or {})))
+            return {"ok": True, "id": f"id{len(calls)}", "result": {"message_id": len(calls)}}
+        with tempfile.TemporaryDirectory() as d, \
+                mock.patch.object(pl, "WEEKS", Path(d) / "weeks"), mock.patch.object(pl, "STATE", Path(d) / "state"), \
+                mock.patch.object(pl, "EXPORTS", Path(d) / "exports"), mock.patch.object(pl, "http", fake), \
+                mock.patch.dict(os.environ, {"TELEGRAM_BOT_TOKEN": "t", "TELEGRAM_CHAT_ID": "42", "META_ACCESS_TOKEN": "m",
+                                             "META_PAGE_ID": "page", "META_IG_USER_ID": "ig",
+                                             "PUBLIC_BASE_URL": "https://x.test/repo/"}), \
+                mock.patch.object(pl.time, "sleep", lambda s: None), mock.patch.object(pl, "preflight", lambda u, k: None), \
+                mock.patch.object(pl, "use_page_token", lambda: False), mock.patch.object(pl, "now", lambda: clock["t"]), \
+                mock.patch.object(pl, "auto_approve_on", lambda: True), mock.patch.object(trends, "fetch", lambda geo: ITEMS):
+            pl.save_week({"collection": "2026-W48", "posts": [], "scripts": {}})
+            pid = pl.make_searching()
+            self.assertEqual(pid, "2026-w48-searching-1123")
+            post = pl.load_week("2026-W48")["posts"][0]
+            self.assertEqual((post["status"], post["publish_at"]), ("approved", "2026-11-23T20:30:00+03:00"))
+            self.assertIsNone(pl.make_searching())                       # once a night
+            clock["t"] += dt.timedelta(minutes=31)
+            calls.clear()
+            pl.publish()
+            self.assertEqual(pl.load_week("2026-W48")["posts"][0]["status"], "published")
+        paths = [p for p, _ in calls]
+        self.assertTrue(any(f.get("media_type") == "STORIES" for p, f in calls if p == "ig/media"))
+        self.assertIn("page/photo_stories", paths)
+        self.assertFalse([p for p in paths if p.endswith("/comments")])   # Stories take no comments
+
+
 if __name__ == "__main__":
     unittest.main()
