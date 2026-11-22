@@ -396,6 +396,9 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
             beats_n = len(post.get("beats") or [])
             ctx["seq"] = (match_shots(post.get("beats") or [], [str((m or {}).get("title") or "") for m in meta])
                           if not ctx["broll"] and len(paths) > 1 else shot_sequence(beats_n, len(paths), ctx["broll"]))
+            fixed = post.get("shot_seq")   # a post that sets which picture goes on each line (the quiz's reveal)
+            if isinstance(fixed, list) and len(fixed) == beats_n and all(isinstance(k, int) and 0 <= k < len(paths) for k in fixed):
+                ctx["seq"] = fixed
     import mtaa
     if post["template"] in mtaa.TEMPLATES:   # Mtaa Mode: the timings and the cast its templates animate with
         ctx["m"] = mtaa.context(post)
@@ -782,7 +785,7 @@ def _place_symbol_legacy(page, env: Environment, post: dict, tmp_dir: Path) -> N
 PERSON_TEMPLATES = {"spotlight", "straight", "money", "cap", "promise", "sauti", "scorecard", "reel"}
 # Layouts that take a real photo across the top of the canvas
 PHOTO_TEMPLATES = {"cover", "kesho", "spotlight", "money", "still", "straight", "hack", "decode", "build", "glasspoll",
-                   "africa", "cap", "usiibiwe", "promise", "sauti", "kumbuka", "scorecard", "reel", "kenya"}
+                   "africa", "cap", "usiibiwe", "promise", "sauti", "kumbuka", "scorecard", "reel", "kenya", "whosaid"}
 # Templates where Jua is a character in the scene (keep it), or that are brand assets
 NO_SYMBOL = {"vichekesho", "pov", "avatar", "banner", "intro"}
 # Templates whose mascot is decoration: a symbol replaces it in the same, collision-checked spot

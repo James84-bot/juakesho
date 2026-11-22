@@ -1598,8 +1598,8 @@ def auto_ok(p: dict) -> str:
         return "the editor's score is under the bar"
     if not (p.get("source_links") or isinstance(p.get("material"), dict) or str(p.get("source") or "").startswith("http")):
         return "no collected report or official page behind it"
-    if p.get("photo_kind") in AUTO_PHOTO_NEVER:
-        return "uses a named person's portrait"
+    if p.get("photo_kind") in AUTO_PHOTO_NEVER and not p.get("whosaid"):   # the quiz shows a face beside that
+        return "uses a named person's portrait"                              # person's own reported words
     if p.get("hot") and p.get("beat") == "politics":
         return "a political story"
     return ""
@@ -3070,6 +3070,78 @@ def reel_samples(n: int = 3, dry_run: bool = False, send: bool = True, ids: list
     return sent
 
 
+WHOSAID_SLOT = (5, 17, 30)   # Saturday 17:30 EAT: two hours clear of the 15:30 and 19:30 news
+
+
+def whosaid_slot(at: dt.datetime) -> dt.datetime:
+    """This week's quiz time: Saturday 17:30 EAT, or the next Saturday's when today's is under 3 hours away."""
+    day, h, m = WHOSAID_SLOT
+    local = at.astimezone(EAT)
+    d = local.date() + dt.timedelta(days=(day - local.weekday()) % 7)
+    when = dt.datetime(d.year, d.month, d.day, h, m, tzinfo=EAT)
+    return when if when - local >= HOT["min_lead"] else when + dt.timedelta(days=7)
+
+
+def make_whosaid(sample: bool = False, dry_run: bool = False) -> str | None:
+    """This week's "Who said it?" quiz (whosaid.py): picked from the week's exact quotes, its pictures found, checked
+    by the guard, then rendered, sent for approval and approved like any post. With `sample` it is made in _samples
+    and sent to Telegram as a sample, and nothing is saved. Returns the post id, or None (the reason is logged)."""
+    import draft as drafter
+    import guard
+    import whosaid
+    at = now()
+    posts = []
+    for f in sorted(WEEKS.glob("*.json"))[-2:]:
+        posts += json.loads(f.read_text(encoding="utf-8"))["posts"]
+    if not sample and any(p.get("whosaid") and p["status"] not in {"rejected", "missed"}
+                          and at - dt.datetime.fromisoformat(p["drafted_at"]) < dt.timedelta(days=6) for p in posts):
+        log("whosaid: this week's quiz is made already")
+        return None
+    cands = whosaid.candidates(posts, at, lookup=True)
+    if not cands:
+        log("whosaid: no quote this week can make a quiz (6-14 exact words by a named person, no allegation)")
+        return None
+    try:
+        picked = whosaid.choose(cands, drafter.call_claude)
+    except Exception as e:
+        log(f"whosaid: the writer couldn't pick ({str(e)[:160]})")
+        return None
+    if not picked:
+        log(f"whosaid: none of {len(cands)} quotes picked, or the clue gave the answer away")
+        return None
+    c, clue = picked
+    label = current_week_label(ahead=0)
+    out = SAMPLES if sample else EXPORTS / label
+    pid = f"{label.lower()}-whosaid-{at.astimezone(EAT):%m%d}" + ("-sample" if sample else "")
+    face = whosaid.face_for(c, pid, out / "photos")
+    if not face:
+        log(f"whosaid: no picture that shows {c['name']}")
+        return None
+    post = whosaid.post_for(c, clue, pid, whosaid_slot(at).isoformat(), face, out / "photos", at)
+    rep = guard.check(post)
+    post["guard"] = {"errors": rep.errors, "warnings": rep.warnings}
+    log(f"whosaid {pid}: {c['name']}: “{c['words']}” | clue: {clue} | errors {rep.errors or 'none'}")
+    if rep.errors or dry_run:
+        return None
+    if sample:
+        import video
+        video.make_reels([post], SAMPLES)
+        qa_sheets([post])
+        chat = need("TELEGRAM_CHAT_ID")["TELEGRAM_CHAT_ID"]
+        tg("sendVideo", {"chat_id": chat, "parse_mode": "HTML", "supports_streaming": "true", "caption": (
+            f"🧪 <b>Sample, not posted</b>: Who said it? (weekly, Saturdays 17:30). The answer: {_esc(c['name'])}, "
+            f"from {_esc(c['outlet'])}.")[:1000]}, {"video": SAMPLES / f"{pid}.mp4"})
+        return pid
+    data = load_week(label)
+    data["posts"].append(post)
+    save_week(data)
+    whosaid.remember(c["words"])
+    render_week(label)
+    ask(label)
+    auto_approve()
+    return pid
+
+
 def guard_quote_speaker(post: dict) -> str:
     """The speaker when the Reel opens with their words ('' otherwise)."""
     import guard
@@ -3374,7 +3446,7 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown", "pubsheets", "iglinks", "growth"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics", "takedown", "pubsheets", "iglinks", "growth", "whosaid"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
@@ -3719,6 +3791,9 @@ def _main(argv: list[str] | None = None) -> int:
                 log(f"whopics {label}: {got[1] if got else 'nothing'}")
             except Exception as e:
                 log(f"whopics {label}: FAILED {str(e)[:300]}")
+        return 0
+    if a.command == "whosaid":   # Saturdays: the week's quote quiz; "--post sample" makes a sample only
+        make_whosaid(sample=a.post == "sample", dry_run=a.dry_run)
         return 0
     if a.command == "aicheck":   # one tiny call to the writer: which provider answers, and does it work
         import draft as drafter

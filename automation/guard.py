@@ -41,6 +41,7 @@ SCHEMAS: dict[str, dict[str, int]] = {
     "build":    {"hook": 40, "title": 60, "result": 60},
     "glasspoll": {"hook": 30, "question": 40, "cta": 30},
     "still":    {"industry": 16, "thing": 70, "old": 90, "new": 100, "cta": 50},
+    "whosaid":  {"kicker": 24, "quote": 110},   # the quote quiz (whosaid.py): its script is its beats
     "spotlight": {"kind": 14, "name": 22, "country": 20, "what": 110, "why": 100, "cta": 50},
     "money":    {"hook": 40, "number": 14, "unit": 40, "what": 110, "why": 100, "check": 90},
     "straight": {"claim": 120, "who": 60, "truth": 70, "pride": 50, "claim_source": 240, "source": 240},
@@ -827,7 +828,8 @@ def _stems(text: str) -> set[str]:
 
 def story_mismatch(post: dict) -> str:
     """The linked report must be about the story the post tells (a headline id can resolve to the wrong item)."""
-    titles = [str(x.get("title", "")) for x in post.get("source_links") or [] if isinstance(x, dict)]
+    titles = [str(x.get("title") or "") for x in post.get("source_links") or [] if isinstance(x, dict)]
+    titles = [t for t in titles if t.strip()]   # a link with no headline has nothing to compare
     if not titles:
         return ""
     body = " ".join(str(post.get(k) or "") for k in ("line", "message", "headline", "title", "claim", "question",

@@ -1,0 +1,18 @@
+{#- Who said it? — the week's quote quiz (whosaid.py). The feed picture keeps the answer hidden: the quote, big,
+    over the speaker's picture blurred; the Reel reveals the name and face on its last line.
+    Fields: quote (the exact words), kicker -#}
+{% extends "base.html.j2" %}
+{% block style %}
+.has-photo { --ph: 760px; }
+.has-photo .photo img, .has-photo .photo { filter: none; }
+.qm { display: block; font: 900 220px/0.6 "Inter Tight"; color: var(--shuka-500); margin: 0 0 12px -8px; }
+.quote { font-size: {{ fitw(quote, 936, 5, 82) }}px; font-weight: 800; letter-spacing: -.02em; line-height: 1.06; }
+.ask { margin-top: 34px; font: 900 56px/1 "Inter Tight"; letter-spacing: -.02em; color: var(--fg); }
+.ask span { background: var(--shuka-500); color: #fff; padding: 0 .14em; border-radius: .06em; }
+{% endblock %}
+{% block top %}<span class="tag tag--red">{{ kicker or "Who said it?" }}</span><span class="meta">This week</span>{% endblock %}
+{% block content %}
+  <span class="qm">“</span>
+  <h1 class="display quote">{{ quote | nb }}</h1>
+  <p class="ask"><span>Who said it?</span></p>
+{% endblock %}
