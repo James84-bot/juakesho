@@ -3027,13 +3027,14 @@ def _main(argv: list[str] | None = None) -> int:
         log(f"brand: {BRAND.get('name')} ({brands.SLUG}); not connected yet: {', '.join(missing) or 'nothing'}")
     ap = argparse.ArgumentParser(description="Kenya on Record autopilot")
     ap.add_argument("command", choices=["week", "hot", "tick", "plan", "draft", "render", "ask", "collect", "publish", "learn", "trends",
-                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck"])
+                                        "news", "status", "redo", "engage", "samples", "remake", "renew", "photocheck", "rephoto", "radar", "reels", "clips", "clipwork", "metacheck", "aicheck", "swapwork", "tracker", "preview", "ccfind", "showcase", "youtubecheck", "tiktokcheck", "tiktoksend", "musicfetch", "tvclipcheck", "tvclipwork", "fbdigest", "sourcecheck", "weekly", "weeklywork", "pagescheck", "labcheck", "stats", "editcheck", "photoaudit", "seecheck", "dupcheck", "audiocheck", "quotecheck", "whopics"])
     ap.add_argument("--week", help="ISO week label, e.g. 2026-W40 (default: next week)")
     ap.add_argument("--mock", action="store_true", help="draft without the AI (testing)")
     ap.add_argument("--evening", action="store_true", help="hot: the evening edition (a different story)")
     ap.add_argument("--morning", action="store_true", help="hot: the morning edition")
     ap.add_argument("--afternoon", action="store_true", help="hot: the afternoon edition")
     ap.add_argument("--breaking", action="store_true", help="hot: only if several newsrooms report a new story now")
+    ap.add_argument("--name", help="whopics: the person's name, words joined with _ (Bien_Aime_Baraza)")
     ap.add_argument("--due", action="store_true", help="hot: every edition whose run should have happened today and didn't")
     ap.add_argument("--dry-run", action="store_true", help="don't call Telegram/Meta")
     ap.add_argument("--no-send", action="store_true", help="samples: make them and their contact sheets, send nothing")
@@ -3264,6 +3265,17 @@ def _main(argv: list[str] | None = None) -> int:
                     else:
                         os.environ[k] = v
         return 0 if ok else 1
+    if a.command == "whopics":   # where a person's picture would come from: their own posts, then Commons
+        import photos
+        name = (a.name or "").replace("_", " ")
+        probe = {"id": "whopics", "who": name, "message": f"{name} is in the news this week.", "beats": [name]}
+        for label, step in (("own posts", photos._their_own), ("portrait", photos.commons_portrait)):
+            try:
+                got = step(probe)
+                log(f"whopics {label}: {got[1] if got else 'nothing'}")
+            except Exception as e:
+                log(f"whopics {label}: FAILED {str(e)[:300]}")
+        return 0
     if a.command == "aicheck":   # one tiny call to the writer: which provider answers, and does it work
         import draft as drafter
         try:   # every Flash model this key can use, each asked one tiny question: which can stand in for which

@@ -13,6 +13,8 @@ import socialpics  # noqa: E402
 
 
 def wikidata(url):
+    if "list=search" in url:
+        return {"query": {"search": [{"title": "Q1"}, {"title": "Q2"}]}}
     if "wbsearchentities" in url:
         return {"search": [{"id": "Q1"}, {"id": "Q2"}]}
     return {"entities": {
@@ -45,7 +47,7 @@ class TheirOwnPhoto(unittest.TestCase):
 
     def test_the_username_comes_from_wikidata_for_a_person_only(self):
         self.assertEqual(socialpics.instagram_username("Bien Aime Baraza", wikidata), "bien_test")
-        self.assertIsNone(socialpics.instagram_username("Nobody Here", lambda u: {"search": []}))
+        self.assertIsNone(socialpics.instagram_username("Nobody Here", lambda u: {"search": [], "query": {"search": []}}))
 
     def test_a_recent_plain_photo_that_fits_is_used_cover_art_and_old_posts_are_not(self):
         now = dt.datetime.now(dt.timezone.utc)

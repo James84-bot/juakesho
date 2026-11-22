@@ -46,13 +46,20 @@ def _plain(text: str) -> str:
 
 def instagram_username(name: str, get=_get_json) -> str | None:
     """The person's Instagram username as Wikidata records it (P2003), for a human (P31 = Q5) whose label or alias
-    carries the name's surname. None when Wikidata has no such person or no username."""
-    words = [w for w in re.findall(r"[A-Za-z'-]{3,}", _plain(name))]
+    carries the name's last word. Wikidata's full-text search is used, which ignores accents and hyphens
+    ("Bien Aime Baraza" finds "Bien-Aimé Baraza") and can ask only for people that have a username at all.
+    None when Wikidata has no such person or no username."""
+    words = re.findall(r"[a-z'-]{3,}", _plain(name).replace("-", " "))
     if not words:
         return None
-    found = get(f"{WIKIDATA}?{urllib.parse.urlencode({'action': 'wbsearchentities', 'search': name, 'language': 'en', 'type': 'item', 'limit': 5, 'format': 'json'})}")
-    ids = [x["id"] for x in found.get("search", [])]
+    q = {"action": "query", "list": "search", "srnamespace": 0, "srlimit": 5, "format": "json",
+         "srsearch": f"{name} haswbstatement:P31=Q5 haswbstatement:P2003"}
+    ids = [x["title"] for x in get(f"{WIKIDATA}?{urllib.parse.urlencode(q)}").get("query", {}).get("search", [])]
     if not ids:
+        q2 = {"action": "wbsearchentities", "search": name, "language": "en", "type": "item", "limit": 5, "format": "json"}
+        ids = [x["id"] for x in get(f"{WIKIDATA}?{urllib.parse.urlencode(q2)}").get("search", [])]
+    if not ids:
+        _note(f"    Wikidata: nobody found for '{name}'")
         return None
     ents = get(f"{WIKIDATA}?{urllib.parse.urlencode({'action': 'wbgetentities', 'ids': '|'.join(ids), 'props': 'claims|labels|aliases', 'languages': 'en', 'format': 'json'})}").get("entities", {})
     for qid in ids:   # search order: the best match first
@@ -60,12 +67,13 @@ def instagram_username(name: str, get=_get_json) -> str | None:
         claims = e.get("claims", {})
         human = any(c.get("mainsnak", {}).get("datavalue", {}).get("value", {}).get("id") == "Q5" for c in claims.get("P31", []))
         names = [e.get("labels", {}).get("en", {}).get("value", "")] + [a.get("value", "") for a in e.get("aliases", {}).get("en", [])]
-        if not human or not any(words[-1] in _plain(n) for n in names):
+        plain = [_plain(n).replace("-", " ") for n in names]
+        handle = next((c.get("mainsnak", {}).get("datavalue", {}).get("value") for c in claims.get("P2003", [])), None)
+        _note(f"    Wikidata {qid}: {names[0] or '?'} (person: {human}, Instagram: {handle or 'none'})")
+        if not human or not any(re.search(rf"\b{re.escape(words[-1])}\b", n) for n in plain):
             continue
-        for c in claims.get("P2003", []):
-            handle = c.get("mainsnak", {}).get("datavalue", {}).get("value")
-            if isinstance(handle, str) and re.fullmatch(r"[A-Za-z0-9._]{1,30}", handle):
-                return handle
+        if isinstance(handle, str) and re.fullmatch(r"[A-Za-z0-9._]{1,30}", handle):
+            return handle
     return None
 
 

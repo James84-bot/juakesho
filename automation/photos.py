@@ -581,6 +581,8 @@ def commons_portrait(post: dict) -> tuple[bytes, dict] | None:
             lic = re.sub(r"<[^>]+>", "", md.get("LicenseShortName", {}).get("value", "")).strip()
             if not re.search(rf"\b{re.escape(surname)}\b", plain(page.get("title", ""))):   # a photo OF them
                 why["title"] += 1
+                if why["title"] <= 4:
+                    _note(f"    not titled with '{surname}': {page.get('title', '')[:90]}")
                 continue
             if info.get("mime") not in {"image/jpeg", "image/png"} or info.get("width", 0) < 800:
                 why["size"] += 1
