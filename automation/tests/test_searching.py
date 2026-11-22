@@ -24,6 +24,13 @@ class Picking(unittest.TestCase):
         self.assertEqual([r["query"] for r in rows], ["nottm forest vs man city", "leeds vs spurs", "state house nairobi"])
         self.assertEqual([r["label"] for r in rows], ["100K+", "50K+", "2K+"])
 
+    def test_a_way_to_watch_and_a_repeat_of_the_same_story_are_left_out(self):
+        items = [{"title": "citizen tv live streaming", "traffic": "9K+", "news": [{"title": "Citizen TV schedule", "url": "https://c/1"}]},
+                 {"title": "getafe vs atlético", "traffic": "2K+", "news": [{"title": "Getafe 0-1 Atlético", "url": "https://g/1"}]},
+                 {"title": "getafe vs atletico madrid", "traffic": "1K+", "news": [{"title": "Getafe 0-1 Atlético", "url": "https://g/1"}]},
+                 {"title": "víctor muñoz", "traffic": "200+", "news": [{"title": "Víctor Muñoz on the move", "url": "https://v/1"}]}]
+        self.assertEqual([r["query"] for r in searching.pick(items)], ["getafe vs atlético", "víctor muñoz"])
+
     def test_traffic_reads_every_way_google_writes_it(self):
         self.assertEqual([searching.traffic(x) for x in ("50K+", "50,000+", "2k+", "1.5M+", "")], [50000, 50000, 2000, 1500000, 0])
         self.assertEqual(searching.short(2_500_000), "2.5M+")
@@ -40,6 +47,7 @@ class ThePost(unittest.TestCase):
     def test_a_search_reads_as_a_headline(self):
         self.assertEqual(render.headline_case("nottm forest vs man city"), "Nottm Forest vs Man City")
         self.assertEqual(render.headline_case("the KMTC intake"), "The KMTC Intake")
+        self.assertEqual(render.headline_case("víctor muñoz"), "Víctor Muñoz")
 
     def test_it_may_go_out_by_itself(self):
         import pipeline as pl

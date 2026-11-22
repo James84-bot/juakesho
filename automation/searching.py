@@ -14,6 +14,8 @@ import re
 
 TOP = 5
 SERIES = "What Kenya is searching"
+# Searches for a way to watch or download (a TV stream, an app) are not news, and a stream may be a pirate one
+NAVIGATION = re.compile(r"\b(live ?stream(ing)?|watch (live|online)|stream(ing)? (free|online)|apk|free download)\b", re.I)
 
 
 def traffic(label: str) -> int:
@@ -33,15 +35,16 @@ def pick(items: list[dict], n: int = TOP) -> list[dict]:
     allegation in it. Each: {"query", "label", "title", "source", "url"}."""
     import guard
     import trends
-    out = []
+    out, seen = [], set()
     for t in sorted(items, key=lambda x: -traffic(x.get("traffic", ""))):
         ok, _ = trends.is_safe(t)
         news = [x for x in t.get("news") or [] if x.get("title") and x.get("url")]
-        if not ok or not t.get("title") or not news:
+        if not ok or not t.get("title") or not news or NAVIGATION.search(t["title"]):
             continue
         head = news[0]
-        if guard.CRIME_WORDS.search(f"{t['title']} {head['title']}"):
-            continue
+        if guard.CRIME_WORDS.search(f"{t['title']} {head['title']}") or head["url"] in seen:
+            continue   # an allegation, or the same story as a bigger search already on the list
+        seen.add(head["url"])
         out.append({"query": t["title"], "label": short(traffic(t.get("traffic", ""))), "title": head["title"][:110],
                     "source": head.get("source") or "", "url": head["url"]})
         if len(out) == n:
@@ -59,7 +62,7 @@ def short(n: int) -> str:
 
 
 def post_for(rows: list[dict], label: str, at: dt.datetime, publish_at: dt.datetime) -> dict:
-    """The Story post: trends.html.j2 at Story size, published as an Instagram Story (no caption)."""
+    """The Story post: searching.html.j2 at Story size, published as an Instagram Story (no caption)."""
     return {"id": f"{label.lower()}-searching-{at:%m%d}", "template": "searching", "size": "story", "hand": True,
             "searching": True, "bg": "usiku", "kicker": SERIES, "day": f"{at:%A} {at.day} {at:%B}",
             "rows": rows, "source": "Google Trends, Kenya (trends.google.com/trending?geo=KE)",
