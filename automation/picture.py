@@ -16,6 +16,7 @@ see answers it, once per picture (the verdicts are kept in state/photo_checks.js
 from __future__ import annotations
 
 import io
+import re
 
 SOFT_BELOW = 0.30   # between the two groups above: under it, a picture is a soft copy
 SAME_BITS = 10      # of 64: hashes this close are the same picture
@@ -156,6 +157,20 @@ The story is about {person}: it fits only if {person} can be clearly seen in it 
 to recognise), not only their name on a sign or a small figure on a distant screen."""
 
 
+WHO_ASK = """This photo is from a news report about {person}. Look at the main person in it.
+Is it {person}, clearly seen (face or figure large enough to recognise)? Use everything in the photo (kit, setting,
+caption text) and what you know. Say false if it is clearly someone else, a crowd, or nobody is clearly seen.
+Return ONLY JSON: {{"is_them": true or false, "why": "under 12 words"}}"""
+
+
+def _names_them(person: str, shows: str) -> bool:
+    """The model's own description names the person ('Benni McCarthy wearing a Kenya track jacket'), not 'not X'."""
+    sur = (person.split() or [""])[-1].lower()
+    text = str(shows or "").lower()
+    return bool(sur) and bool(re.search(rf"\b{re.escape(sur)}\b", text)) and \
+        not re.search(rf"\b(not|no|isn't|without)\s+(\w+\s+){{0,2}}{re.escape(sur)}\b", text)
+
+
 def fits(data: bytes, about: str, person: str = "") -> str | None:
     """'' when the picture fits a story about `about`, the reason when it does not, None when no model could look.
     19 Nov: a SHA cancer-cover Reel showed armed Al-Shabaab fighters and an unrelated official, picked from other
@@ -181,6 +196,21 @@ def fits(data: bytes, about: str, person: str = "") -> str | None:
         print(f"    fit check skipped: {str(e)[:300]}")
         return None
     why = "" if got.get("fits") is True else str(got.get("why") or got.get("shows") or "does not fit")[:80]
+    sur = re.escape((person.split() or [""])[-1].lower())
+    if why and person and _names_them(person, got.get("shows")) and \
+            re.search(rf"\b(not|isn't|unclear|cannot|can't)\b[^.]{{0,40}}\b{sur}\b", why.lower()):
+        # 23 Nov: "The person pictured is not Benni McCarthy" for a picture it described as "Benni McCarthy wearing a
+        # Kenya track jacket": its two answers disagree, so it is asked once more, about the person alone
+        try:
+            again = draft.extract_json(draft.look_at(data, WHO_ASK.format(person=person)))
+        except Exception as e:
+            print(f"    second look skipped: {str(e)[:200]}")
+            return None
+        if again.get("is_them") is True:
+            print(f"    second look: it is {person} ({str(again.get('why') or '')[:80]})")
+            why = ""
+        else:
+            why = str(again.get("why") or why)[:80]
     print(f"    fit check: {'fits' if not why else 'no: ' + why} ({str(got.get('shows') or '')[:100]})")
     seen[key] = {"why": why}
     try:

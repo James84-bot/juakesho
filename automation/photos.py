@@ -207,7 +207,7 @@ def _speaker_line(p: dict, lead: dict, lead_who: str, out_dir: Path) -> None:
     """A Reel line that gives someone's words shows that person: the lead picture when it is of them, else a
     picture of them added for that line (`speaker_shot` = [line, picture], read by render.py)."""
     p.pop("speaker_shot", None)
-    if p.get("template") != "reel" or p.get("person_file"):
+    if not (p.get("template") == "reel" or p.get("reel")) or p.get("person_file"):   # a news post is a sauti Reel
         return
     name, qi = quoted_speaker(p)
     if not name or qi < 0:
@@ -219,9 +219,12 @@ def _speaker_line(p: dict, lead: dict, lead_who: str, out_dir: Path) -> None:
     if not face:
         return
     p["extra_photos"] = list(p.get("extra_photos") or []) + [face["file"]]
-    p["shot_info"] = list(p.get("shot_info") or []) + [{"credit": face.get("credit", ""), "title": "", "speaker": name}]
+    k = len(p["extra_photos"])   # its place among the pictures: the lead is 0, then the extra ones in order
+    info = list(p.get("shot_info") or [{"credit": lead.get("credit", ""), "title": lead.get("title", "")}])
+    info += [{}] * (k - len(info))
+    p["shot_info"] = info[:k] + [{"credit": face.get("credit", ""), "title": "", "speaker": name}]
     p["photo_credit"] = " · ".join(dict.fromkeys([x for x in (p.get("photo_credit"), face.get("credit")) if x]))
-    p["speaker_shot"] = [qi, len(p["shot_info"]) - 1]
+    p["speaker_shot"] = [qi, k]
 
 
 def extra_photos(post: dict, lead: dict, out_dir: Path) -> list[dict]:

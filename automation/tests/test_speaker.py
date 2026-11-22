@@ -80,9 +80,67 @@ class TheirLine(unittest.TestCase):
                      photo_file=files[0], photo_credit="Photo: Nation", extra_photos=files[1:],
                      shot_info=[{}, {}, {"speaker": "John Mbadi"}], speaker_shot=[2, 2])
             html = render.build_html(render.make_env(), p, motion=True)
-        block = re.search(r"@keyframes vis3 \{(.*?)\n\}", html, re.S).group(1)
-        lines = [re.findall(r"opacity: (\d)", ln) for ln in block.strip().splitlines() if "opacity" in ln]
-        self.assertEqual([x[0] for x in lines], ["0", "0", "1", "0"])   # the speaker's picture: their line only
+            self.assertEqual(self.lines(html, 3), ["0", "0", "1", "0"])   # the speaker's picture: their line only
+            p["extra_photos"] = [str(Path(tmp) / "gone.jpg"), files[2]]    # a picture before it is missing on this runner
+            html = render.build_html(render.make_env(), p, motion=True)
+            self.assertEqual(self.lines(html, 2), ["0", "0", "1", "0"])   # still theirs, now the second picture shown
+
+    @staticmethod
+    def lines(html, k):
+        block = re.search(rf"@keyframes vis{k} \{{(.*?)\n\}}", html, re.S).group(1)
+        return [re.findall(r"opacity: (\d)", ln)[0] for ln in block.strip().splitlines() if "opacity" in ln]
+
+
+class NewsReels(unittest.TestCase):
+    def test_a_news_post_is_a_sauti_reel_and_gets_their_picture_too(self):
+        p = post(["Fuel taxes stay as they are.", QUOTE_LINE, "Fair?"], template="sauti", reel=True)
+        face = {"file": "mbadi.jpg", "credit": "File photo: Citizen Digital", "kind": "file"}
+        with mock.patch.object(photos, "speaker_photo", lambda *a: face), \
+                mock.patch("whosaid.wikidata_name", lambda w, get=None: ""):
+            photos._speaker_line(p, {"kind": "topic"}, "", Path("."))
+        self.assertEqual(p["speaker_shot"], [1, 1])
+
+
+class SecondLook(unittest.TestCase):
+    """23 Nov, live: 'The person pictured is not Benni McCarthy' for a picture the same answer described as 'Benni
+    McCarthy wearing a Kenya track jacket sitting indoors'. Contradictory answers get one more look at the person."""
+
+    def setUp(self):
+        import picture
+        self.picture = picture
+        self.tmp = tempfile.TemporaryDirectory()
+        self.patch = mock.patch.object(picture, "_checks_file", lambda: Path(self.tmp.name) / "checks.json")
+        self.patch.start()
+
+    def tearDown(self):
+        self.patch.stop()
+        self.tmp.cleanup()
+
+    def look(self, first, second):
+        import draft
+        asked = []
+
+        def looks(data, ask, strong=False):
+            asked.append(ask)
+            return json.dumps(first if len(asked) == 1 else second)
+        with mock.patch.object(draft, "look_at", looks):
+            got = self.picture.fits(json.dumps(first).encode(), "Harambee Stars coach on player welfare", person="Benni McCarthy")
+        return got, len(asked)
+
+    def test_contradiction_resolved_by_asking_about_the_person(self):
+        first = {"shows": "Benni McCarthy wearing a Kenya track jacket sitting indoors", "fits": False,
+                 "why": "The person pictured is not Benni McCarthy."}
+        self.assertEqual(self.look(first, {"is_them": True, "why": "Kenya coach at a press event"}), ("", 2))
+        self.tmp.cleanup(); self.tmp = tempfile.TemporaryDirectory()
+        got, n = self.look(first, {"is_them": False, "why": "a different man"})
+        self.assertEqual((got, n), ("a different man", 2))
+
+    def test_no_second_look_when_the_answers_agree_or_the_scene_is_wrong(self):
+        stranger = {"shows": "A man draped in a flag standing in a stadium", "fits": False,
+                    "why": "The man pictured is not Benni McCarthy."}
+        self.assertEqual(self.look(stranger, {"is_them": True})[1], 1)
+        armed = {"shows": "Benni McCarthy beside armed police", "fits": False, "why": "armed police, not this story"}
+        self.assertEqual(self.look(armed, {"is_them": True}), ("armed police, not this story", 1))
 
 
 class TheClipOfThemSayingIt(unittest.TestCase):

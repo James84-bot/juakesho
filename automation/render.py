@@ -412,7 +412,11 @@ def build_html(env: Environment, post: dict, motion: bool = False, reel: bool = 
             if isinstance(fixed, list) and len(fixed) == beats_n and all(isinstance(k, int) and 0 <= k < len(paths) for k in fixed):
                 ctx["seq"] = fixed
             else:   # the line that gives someone's words shows them: the TV clip of them saying it, else their picture
-                ctx["seq"] = place_speaker(ctx["seq"], post.get("speaker_shot"), len(paths))
+                sp = post.get("speaker_shot")   # [line, k]: k counts the lead as 0 and every extra picture, shown or not
+                if isinstance(sp, list) and len(sp) == 2 and isinstance(sp[1], int) and sp[1] > 0:
+                    k = next((n for n, (_, j) in enumerate(extra, 1) if j == sp[1]), None)   # where it is among those shown
+                    sp = [sp[0], k] if k is not None else None
+                ctx["seq"] = place_speaker(ctx["seq"], sp, len(paths))
                 said = post.get("footage_quote")
                 if ctx["broll"] and isinstance(said, int) and not isinstance(said, bool):
                     ctx["seq"] = place_speaker(ctx["seq"], [said, -1], len(paths))
