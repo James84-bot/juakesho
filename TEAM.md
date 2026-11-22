@@ -46,6 +46,27 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-22 23:00 EAT (cloud side): two new automated series, samples sent to James
+James asked for more kinds of content we can automate. Two are live; both run with no one involved.
+- **Who said it?** (`whosaid.py`, a4f8c59, ba6bfc7): a weekly Reel quiz. It takes a 6–14 word quote from the week's
+  reports, blurs the speaker's photo, gives a clue, asks for guesses in the comments, then reveals the speaker.
+  - Runs Saturdays at 14:00 EAT, with a retry at 15:30.
+  - Posts that carry an allegation are skipped. Quotes need a full name from the reports or a single Kenyan match
+    on Wikidata.
+  - This week's quote pool was thin: the writer turned all 3 down, so nothing was made.
+  - `whosaid --post sample` makes a sample only.
+- **What Kenya is searching** (`searching.py`, 7c1a0fb, 6a0c853): a nightly Instagram Story of Google's top
+  trending searches in Kenya, each paired with Google's news headline.
+  - Built 20:00 EAT and out 20:30.
+  - Left out: unsafe topics (trends.py), crime words, trends with no news behind them, watch-stream or APK searches,
+    and repeats of the same story.
+  - First live sample tonight read the feed from the runner fine. It listed 5 football and TV searches at 200–1K
+    each, because Sunday night is quiet.
+  - `searching --post sample` makes a sample only.
+- Neither series reaches Instagram until the Meta token is replaced (see 17:50).
+- Next on the list: football results and fixtures (needs `FOOTBALL_DATA_KEY`, free at football-data.org), the
+  shilling and fuel price charts, and "On this day in Kenya".
+
 ### 2026-11-22 22:30 EAT (cloud side): the new news look, a vision backup, and one task for you
 - **What James asked for:** faces aligned with the message, team colours, politicians' words as headlines, a
   bigger logo, more content types, and TikTok posting.
