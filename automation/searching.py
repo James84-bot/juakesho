@@ -33,6 +33,30 @@ def about_it(query: str, headline: str) -> bool:
     return bool(_words(query) & _words(headline))
 
 
+STALE = dt.timedelta(hours=3)   # tonight's searches are old news by the small hours: never posted later than this
+
+
+def row_ok(query: str, headline: str) -> bool:
+    """One search and its headline pass today's rules (the same as pick's, without the feed's own safety data)."""
+    import guard
+    return bool(query and headline) and not NAVIGATION.search(query) and not WATCH_PAGE.search(headline) \
+        and not guard.CRIME_WORDS.search(f"{query} {headline}") and about_it(query, headline)
+
+
+def still_good(post: dict, now: dt.datetime) -> str:
+    """Why a made Story should not go out now ('' = it may): more than STALE past its slot (23 Nov: the Meta token
+    was down at 20:30, and a Story of last night's searches must not appear the next day), or a row that today's
+    rules leave out (the Story made on 23 Nov listed 'citizen tv live now' and 'forex factory' beside an unrelated
+    headline; the rules were fixed after it was made)."""
+    at = dt.datetime.fromisoformat(post["publish_at"])
+    if now - at > STALE:
+        return f"more than {int(STALE.total_seconds() // 3600)} h past its slot: last night's searches are old news"
+    bad = [r.get("query", "") for r in post.get("rows") or [] if not row_ok(r.get("query", ""), r.get("title", ""))]
+    if bad:
+        return f"lists what today's rules leave out ({', '.join(bad)})"
+    return ""
+
+
 def traffic(label: str) -> int:
     """'50K+' / '50,000+' / '2k+' -> 50000 / 50000 / 2000 (0 when unreadable)."""
     m = re.match(r"\s*([\d,.]+)\s*([kKmM]?)", str(label or ""))

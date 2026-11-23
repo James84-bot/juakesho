@@ -2861,6 +2861,15 @@ def publish(dry_run: bool = False) -> None:
             if p.get("attempts", 0) >= MAX_PUBLISH_ATTEMPTS:
                 continue
             done.add(key)
+            if p.get("searching"):   # a Story of tonight's searches: never late, never with a row today's rules drop
+                import searching
+                why = searching.still_good(p, now())
+                if why:
+                    p.update(status="missed", missed_why=why)
+                    log(f"not posted: {key} {why}")
+                    if not dry_run:
+                        save_week(data)
+                    continue
             if not p.get("attempts") and now() - dt.datetime.fromisoformat(p["publish_at"]) > LATE_LIMIT:
                 for m in members:  # a stale post helps nobody: skip it rather than flood the feed
                     m["status"] = "missed"

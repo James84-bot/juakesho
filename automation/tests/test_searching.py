@@ -68,6 +68,31 @@ class ThePost(unittest.TestCase):
         self.assertEqual(pl.auto_ok(post), "")
 
 
+class NeverLateNeverStale(unittest.TestCase):
+    """23 Nov: the Story was made before the picker learned to drop 'citizen tv live now' and unrelated headlines, and
+    the Meta token was down at 20:30. It must not go out later with those rows, nor the next day."""
+    AT = dt.datetime(2026, 11, 23, 20, 30, tzinfo=dt.timezone(dt.timedelta(hours=3)))
+
+    def story(self, rows):
+        return {"publish_at": self.AT.isoformat(), "rows": rows}
+
+    def test_tonights_story_as_made_is_not_posted(self):
+        rows = [{"query": "citizen tv live now", "title": "Citizen TV’s KES 350 YouTube Package Tests Whether"},
+                {"query": "jensen huang", "title": "NVIDIA Board Reinstates Jensen Huang as President"},
+                {"query": "forex factory", "title": "How Global X Gold Bullion ETF (ASX:GXLD) Tracks Gold"},
+                {"query": "xabi alonso", "title": "Dibu Martínez volvió a jugar en Chelsea tras la fractura"}]
+        why = searching.still_good(self.story(rows), self.AT)
+        self.assertIn("citizen tv live now", why)
+        self.assertIn("forex factory", why)
+        self.assertIn("xabi alonso", why)
+        self.assertNotIn("jensen huang", why)
+
+    def test_a_good_story_goes_out_on_time_but_not_hours_late(self):
+        rows = [{"query": "jensen huang", "title": "NVIDIA Board Reinstates Jensen Huang as President"}]
+        self.assertEqual(searching.still_good(self.story(rows), self.AT + dt.timedelta(minutes=50)), "")
+        self.assertIn("old news", searching.still_good(self.story(rows), self.AT + dt.timedelta(hours=4)))
+
+
 class OneNight(unittest.TestCase):
     """20:00 EAT: the Story is made, approves itself, and goes out at 20:30 as an Instagram and Facebook Story."""
 
@@ -102,8 +127,22 @@ class OneNight(unittest.TestCase):
             calls.clear()
             pl.publish()
             self.assertEqual(pl.load_week("2026-W48")["posts"][0]["status"], "published")
-        paths = [p for p, _ in calls]
-        self.assertTrue(any(f.get("media_type") == "STORIES" for p, f in calls if p == "ig/media"))
+            first_night = list(calls)
+            # the next night's Story, with the Meta token down: it waits, then is dropped quietly once stale
+            pl.save_week({"collection": "2026-W48", "posts": [], "scripts": {}})
+            clock["t"] = dt.datetime(2026, 11, 24, 17, 0, 30, tzinfo=dt.timezone.utc)
+            pl.make_searching()
+            calls.clear()
+            with mock.patch.object(pl, "meta_ready", lambda: False):
+                clock["t"] += dt.timedelta(minutes=31)
+                pl.publish()
+                self.assertEqual(pl.load_week("2026-W48")["posts"][0]["status"], "approved")
+                clock["t"] += dt.timedelta(hours=3)
+                pl.publish()
+            self.assertEqual(pl.load_week("2026-W48")["posts"][0]["status"], "missed")
+            self.assertFalse([f.get("text", "")[:120] for p, f in calls if "sendMessage" in p and "searching" in f.get("text", "")])   # no notice to James for it
+        paths = [p for p, _ in first_night]
+        self.assertTrue(any(f.get("media_type") == "STORIES" for p, f in first_night if p == "ig/media"))
         self.assertIn("page/photo_stories", paths)
         self.assertFalse([p for p in paths if p.endswith("/comments")])   # Stories take no comments
 
