@@ -4,15 +4,12 @@ feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
 feed Nation: 25 items, 0 with an image
-posted for 2026-w48-hot-1123a: 0 matching reports (person 'korir', names ['organiser', 'barnaba', 'korir', 'sisibo'], words ['sisibo', 'marathon', 'sets', 'record', 'prize'])
-news search 'korir sisibo london' for 2026-w48-hot-1123a: 2 reports
-skipped The Star, Kenya: image too small or not a photo (800x328, https://cdn.radioafrica.digital/image/2026/11/1adfbd2c-bee5-4f58-b6e8-)
-skipped 5050 Markets: image too small or not a photo (800x328, https://images.predimarkets.com/news/9b00f533-e205-472b-bcf9-88841a568)
-file photo for 2026-w48-hot-1123a: 0 recent reports name 'korir'
-portrait "Barnaba Korir" for 2026-w48-hot-1123a: 0 found, 0 usable so far, dropped {'title': 0, 'size': 0, 'licence': 0}
-portrait Race Organiser Barnaba Korir for 2026-w48-hot-1123a: 0 found, 0 usable so far, dropped {'title': 0, 'size': 0, 'licence': 0}
-topic photos for 2026-w48-hot-1123a: 2 recent reports on ['marathon', 'runners']
+posted for 2026-w48-hot-1123e: 5 matching reports (person '', names ['kra'], words ['waives', 'penalties', 'nearly', 'taxpayers'])
+skipped KBC: image too small or not a photo (630x350, https://www.kbc.co.ke/wp-content/uploads/2026/03/KRA-HQ.jpg)
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-topic photo from Kenyans.co.ke: Millions Philimon Kipchumba Will Pocket After Winning Istanbul Maratho
-topic photos for 2026-w48-hot-1123a: 1 recent reports on ['marathon', 'runners']
-skipped Nation image: HTTP Error 403: Forbidden
+picked Kenyans.co.ke (3, detail 0.558, 700x350): KRA Reveals Category of Landlords Exempted from Rental Tax
+skipped KBC: image too small or not a photo (630x350, https://www.kbc.co.ke/wp-content/uploads/2026/03/KRA-HQ.jpg)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+also Kenyans.co.ke (3, detail 0.443, 700x350): KRA Announces Tax Changes Affecting Businesses & Employee Loans
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+also Kenyans.co.ke (3, detail 0.408, 700x350): KRA Targets 1 Million Landlords in New Tax Crackdown

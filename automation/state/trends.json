@@ -1,28 +1,6 @@
 {
-  "fetched": "2026-11-23T11:42:05.833617+00:00",
+  "fetched": "2026-11-23T13:13:23.828345+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "getafe vs atlético",
-      "traffic": "5000+",
-      "news": [
-        {
-          "title": "Baena sostiene la llama de un buen Atlético en su victoria en Getafe",
-          "url": "https://elpais.com/deportes/futbol/2026-11-22/baena-sostiene-la-llama-de-un-buen-atletico-en-su-victoria-en-getafe.html",
-          "source": "EL PAÍS"
-        },
-        {
-          "title": "¿A qué hora es el partido Getafe vs Atlético de Madrid y cómo verlo en TV y streaming online?",
-          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-getafe-vs-atletico-de-madrid-y-como-verlo-en-tv-y-streaming-online-22-11-2026",
-          "source": "Sports Illustrated"
-        },
-        {
-          "title": "\"¡Hasta la expulsión llegó con su pie izquierdo!\" Dos asistencias perdidas para Lee Kang-in, tres pases decisivos consecutivos hacia Sørloth... Finalmente, \"penalti → gol de la sentencia en colaboración\"",
-          "url": "https://www.starnewskorea.com/es/sports/2026/11/23/2026112307501774965",
-          "source": "스타뉴스"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "getafe cf vs atlético madrid standings",
@@ -92,25 +70,26 @@
     },
     {
       "geo": "KE",
-      "title": "warriors vs celtics",
-      "traffic": "500+",
+      "title": "tax",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Celtics extend losing streak to 4 games with 88-87 loss to Warriors",
-          "url": "https://www.celticsblog.com/celtics-analysis/150856/celtics-extend-losing-streak-to-4-games-with-88-87-loss-to-warriors",
-          "source": "CelticsBlog"
+          "title": "KRA waives Sh64.39bn in tax penalties for nearly one million taxpayers",
+          "url": "https://www.the-star.co.ke/business/2026-11-23-kra-waives-sh6439bn-in-tax-penalties-for-nearly-one-million-taxpayers",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Draymond Green breaks down last-second heroic defence against Jayson Tatum’s game-winner attempt",
-          "url": "https://www.hitc.com/draymond-green-breaks-down-last-second-heroic-defence-against-jayson-tatums-game-winner-attempt/",
-          "source": "HITC"
+          "title": "KRA waives Sh64.39bn in tax penalties and interest",
+          "url": "https://saccoreview.co.ke/kra-waives-sh64-39bn-in-tax-penalties-and-interest/",
+          "source": "Sacco Review"
         },
         {
-          "title": "WATCH: Steph Curry Erupts In Joy As Golden State Warriors Snaps Losing Streak",
-          "url": "https://www.sportscapemagazine.com/blog/watch-steph-curry-erupts-in-joy-as-golden-state-warriors-snaps-losing-streak",
-          "source": "Sportscape Magazine"
+          "title": "Taxpayers get Sh64.4bn relief as KRA amnesty nears deadline",
+          "url": "https://capitalfm.africa/taxpayers-get-sh64-4bn-relief-as-kra-amnesty-nears-deadline/",
+          "source": "Capital FM Africa"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -136,75 +115,61 @@
     },
     {
       "geo": "KE",
-      "title": "torreense vs benfica",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Torreense beaten by Benfica in Taca de Portugal before Celtic Europa League visit",
-          "url": "https://www.bbc.com/sport/articles/cwdd124y69dzo?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bsport%5D-%5Bbizdev%5D-%5Bisapi%5D",
-          "source": "BBC"
-        },
-        {
-          "title": "\"We will fight for everything\"",
-          "url": "https://www.slbenfica.pt/en-us/agora/noticias/2026/11/22/futebol-jhon-duran-declaracoes-jogo-torreense-benfica-quarta-eliminatoria-taca-de-portugal",
-          "source": "Site Oficial do Sport Lisboa e Benfica"
-        },
-        {
-          "title": "Torreense vs Benfica live stream, TV channel and kick-off time | Taça de Portugal",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-torreense-v-benfica/blt6f7a81f17c29f987",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "atletico madrid",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Atletico's Simeone breaks La Liga victories record",
-          "url": "https://www.bbc.com/sport/football/articles/c5pv9kkwn3y3o",
-          "source": "BBC"
-        },
-        {
-          "title": "Winners and Losers: Simeone makes history as Pochettino suffers Anfield nightmare",
-          "url": "https://www.tribalfootball.com/article/soccer-laliga-winners-and-losers-simeone-makes-history-as-pochettino-suffers-anfield-nightmare-9e6db58a-ec2a-43af-a523-5f70b927ebae",
-          "source": "TribalFootball"
-        },
-        {
-          "title": "Simeone, en titulares: 345 victorias y \"el dueño\" Baena",
-          "url": "https://onefootball.com/en/video/simeone-en-titulares-345-victorias-y-el-dueno-baena-43823410",
-          "source": "OneFootball"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "new zealand vs india",
       "traffic": "100+",
       "news": [
         {
-          "title": "New Zealand’s Mitchell, Phillips frustrate India as first Test ends in draw",
-          "url": "https://www.aljazeera.com/sports/2026/11/23/new-zealand-india-first-test-cricket-wtc-phillips-mitchell-nicholls",
-          "source": "Al Jazeera"
+          "title": "NZ vs IND: Frustrated Shubman Gill Questions Ban On Using Saliva to Shine Cricket Balls After Draw",
+          "url": "https://www.sportscapemagazine.com/blog/nz-vs-ind-frustrated-shubman-gill-questions-ban-on-using-saliva-to-shine-cricket-balls-after-draw",
+          "source": "Sportscape Magazine"
+        },
+        {
+          "title": "New Zealand battle to 239-5 to draw first Test against India",
+          "url": "https://www.afp.com/en/new-zealand-battle-239-5-draw-first-test-against-india",
+          "source": "AFP.com"
         },
         {
           "title": "Are you choosing playing XI for 1st 3 days?: Saba Karim after 1st Test ends in draw | Team selection was slightly lopsided: Karim | Inshorts",
           "url": "https://inshorts.com/en/news/are-you-choosing-playing-xi-for-1st-3-days---saba-karim-after-1st-test-ends-in-draw-1795425313395",
           "source": "Inshorts"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "x",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Where Is Mandy’s House in GTA 6? Location and What Happens After Chapter 1",
+          "url": "https://www.vice.com/en/article/where-is-mandys-house-in-gta-6/",
+          "source": "VICE"
         },
         {
-          "title": "India's WTC Final Scenario: How can Shubman Gill's men qualify for the 2027 World Test Championship final",
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/wtc-points-table-scenario-how-can-india-qualify-for-the-2027-world-test-championship-final-after-new-zealand-draw/articleshow/136090150.cms",
-          "source": "The Times of India"
+          "title": "‘GTA 6’: Where You Know Mandy Actress Lexie Shoaibi From",
+          "url": "https://www.mensjournal.com/news/gta-6-where-you-know-mandy-actress-lexie-shoaibi-from",
+          "source": "Men's Journal"
+        },
+        {
+          "title": "GTA 6 Mandy quest explained: Can you romance her?",
+          "url": "https://www.radiotimes.com/technology/gaming/gta-6-mandy-quest-explained/",
+          "source": "Radio Times"
         }
       ]
     }
   ],
   "dropped": [
     {
+      "title": "levante vs elche",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "brentford vs everton",
       "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "warriors vs celtics",
+      "why": "unsafe: 'odds'"
     }
   ],
   "errors": {}
