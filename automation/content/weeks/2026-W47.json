@@ -591,7 +591,11 @@
       "photo_checked": "2026-11-20T01:21:03.385420+03:00",
       "decided_at": "2026-11-20T11:38:31.258602+03:00",
       "fresh_checked": "2026-11-21T13:30:53.973103+03:00",
-      "photo_fit": "2026-11-22T11:39:35.105745+03:00"
+      "photo_fit": "2026-11-22T11:39:35.105745+03:00",
+      "yt_tried": "2026-11-23T21:16:25.347243+03:00",
+      "yt_id": "LvnRVph8RF4",
+      "tt_done": "2026-11-23T21:16:27.627254+03:00",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-hot-1116",
@@ -3734,7 +3738,11 @@
       "auto": true,
       "decided_at": "2026-11-22T14:33:04.912956+03:00",
       "photo_checked": "2026-11-22T15:23:07.520468+03:00",
-      "photo_fit": "2026-11-22T15:23:07.520482+03:00"
+      "photo_fit": "2026-11-22T15:23:07.520482+03:00",
+      "yt_tried": "2026-11-23T21:16:31.829672+03:00",
+      "yt_id": "sWs89pMI3Nk",
+      "tt_done": "2026-11-23T21:16:33.904433+03:00",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w47-hot-1122a-r3",

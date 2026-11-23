@@ -255,7 +255,7 @@
       "guard": {
         "errors": [],
         "warnings": [
-          "possible named person(s): Easy Coach, Easy Coach Management, Nairobi Kenya Planning, National November, November Easy Coach. Civic posts target systems, not people."
+          "possible named person(s): Bellarmine Bulinda, Easy Coach, Easy Coach Management, Nairobi Kenya Planning, National November, November Easy Coach, Wikimedia Commons. Civic posts target systems, not people."
         ]
       },
       "critic": {
@@ -578,7 +578,11 @@
       "auto": true,
       "decided_at": "2026-11-23T06:41:26.150358+03:00",
       "photo_checked": "2026-11-23T07:21:43.457084+03:00",
-      "photo_fit": "2026-11-23T07:21:43.457095+03:00"
+      "photo_fit": "2026-11-23T07:21:43.457095+03:00",
+      "yt_tried": "2026-11-23T21:16:38.523821+03:00",
+      "yt_id": "9y2LnGahk2o",
+      "tt_done": "2026-11-23T21:16:40.437749+03:00",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w48-hot-1123",
@@ -675,7 +679,11 @@
       "auto": true,
       "decided_at": "2026-11-23T09:14:42.122029+03:00",
       "photo_checked": "2026-11-23T09:21:59.883947+03:00",
-      "photo_fit": "2026-11-23T09:21:59.883958+03:00"
+      "photo_fit": "2026-11-23T09:21:59.883958+03:00",
+      "yt_tried": "2026-11-23T21:16:44.603531+03:00",
+      "yt_id": "_7owF4f2Dtw",
+      "tt_done": "2026-11-23T21:16:46.929880+03:00",
+      "tt_error": "TikTok /post/publish/video/init/ → 429 rate_limit_exceeded: The API rate limit exceeded. Please try again later."
     },
     {
       "id": "2026-w48-hot-1123a",
@@ -790,7 +798,11 @@
       "auto": true,
       "decided_at": "2026-11-23T12:45:03.365615+03:00",
       "photo_checked": "2026-11-23T12:49:22.842210+03:00",
-      "photo_fit": "2026-11-23T12:49:22.842222+03:00"
+      "photo_fit": "2026-11-23T12:49:22.842222+03:00",
+      "yt_tried": "2026-11-23T21:16:51.434495+03:00",
+      "yt_id": "tjCHhOZN0-8",
+      "tt_done": "2026-11-23T21:16:53.866259+03:00",
+      "tt_error": "TikTok /post/publish/video/init/ → 429 rate_limit_exceeded: The API rate limit exceeded. Please try again later."
     },
     {
       "id": "2026-w48-hot-1123e",
@@ -844,9 +856,7 @@
       "status": "awaiting",
       "guard": {
         "errors": [],
-        "warnings": [
-          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
-        ]
+        "warnings": []
       },
       "critic": {
         "hook": 8,
@@ -971,7 +981,7 @@
         }
       ],
       "publish_at": "2026-11-23T20:30:00+03:00",
-      "status": "approved",
+      "status": "missed",
       "drafted_at": "2026-11-23T20:08:20+03:00",
       "guard": {
         "errors": [],
@@ -981,7 +991,8 @@
       },
       "tg_msg": 1594,
       "auto": true,
-      "decided_at": "2026-11-23T20:08:23.267034+03:00"
+      "decided_at": "2026-11-23T20:08:23.267034+03:00",
+      "missed_why": "lists what today's rules leave out (citizen tv live now, al-shamal vs al-ahli, forex factory, xabi alonso)"
     }
   ],
   "scripts": {
