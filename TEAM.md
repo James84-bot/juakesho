@@ -46,6 +46,23 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-23 21:30 EAT (cloud side): "the autopilot has not been working today"
+- **Runs:** every run today succeeded, about 40 in all. Drafting, checks and approvals worked. Installs were slow
+  at times (up to 24 min when the cache missed) but nothing failed.
+- **Why nothing went out:** the Meta token has been dead since 16:00 EAT Sunday. Instagram and Facebook can't post,
+  and until 572c960 (20:40, "Reels reach YouTube while the Meta token is down") YouTube waited with them.
+- **Verified on the 21:16 tick:** 5 Reels went to YouTube: today's 1123m (`9y2LnGahk2o`), 1123 (`_7owF4f2Dtw`),
+  1123a (`tjCHhOZN0-8`), plus 1122-r2 and d7-glasspoll-r4. TikTok refused them: the app is unaudited, and once
+  "rate limit".
+- **Tonight's "Kenya is searching" Story** was made before 572c960's picker fixes. It listed a stream, an unrelated
+  forex headline and others. Fix (b7c7870): a searching Story is checked again just before it goes out, and is dropped
+  if a row fails today's rules or it's more than 3 h late. Tonight's was dropped (`missed`).
+- **Waiting on James:**
+  - The Meta token (steps under 22 Nov 17:50).
+  - 1123e (19:30), a political story, which is never approved without him.
+- **Not checked:** expired posts. money-r2 expired correctly: the editor scored it 3.8 and a number wasn't in its
+  material.
+
 ### 2026-11-23 01:30 EAT (cloud side): a quoted person is shown on their line
 James: "if we quote someone use their picture or video".
 - **Reels that quote someone** (9d291fe, 2754ceb, 70db9cc, f308264):
