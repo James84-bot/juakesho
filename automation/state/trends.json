@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-23T15:42:44.469939+00:00",
+  "fetched": "2026-11-23T15:56:04.232079+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -17,9 +17,9 @@
           "source": "BBC"
         },
         {
-          "title": "Nvidia reinstates Jensen Huang as CEO amid pressure from President Trump, investors",
-          "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/",
-          "source": "Reuters"
+          "title": "Live Updates: Nvidia Reinstates Jensen Huang as CEO as Trump Praises the Decision",
+          "url": "https://www.nytimes.com/live/2026/11/23/technology/nvidia-jensen-huang-reinstated",
+          "source": "The New York Times"
         }
       ],
       "civic": true
@@ -30,11 +30,6 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "Neftchi Fergana vs Al-Hilal Prediction: Al-Hilal is on a five-win streak in six matches",
-          "url": "https://www.telecomasia.net/sports-betting/tips/football/afc-champions-league/neftchi-fergana-vs-al-hilal-match-prediction-23-november-2026/",
-          "source": "Telecom Asia Sport"
-        },
-        {
           "title": "Neftchi Fargona vs Al Hilal: TV channel, live stream & kick-off time | AFC Champions League Elite",
           "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-neftchi-fargona-v-al-hilal/blt05776295656fa3f0",
           "source": "Goal.com"
@@ -43,6 +38,11 @@
           "title": "Uzbek clubs to face Saudi teams today",
           "url": "https://qalampir.uz/en/news/bugun-uzbekiston-klublari-saudiya-zhamoalariga-k-arshi-uynaydi-146791",
           "source": "Qalampir.uz"
+        },
+        {
+          "title": "Islom Ismoilov speaks on tactics and the goal of victory against Al Hilol",
+          "url": "https://zamin.uz/en/sport/227801-islom-ismoilov-speaks-on-tactics-and-the-goal-of-victory-against-al-hilol.html",
+          "source": "Zamin.uz"
         }
       ]
     },
@@ -75,41 +75,19 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "How Global X Gold Bullion ETF (ASX:GXLD) Tracks Gold in Australian Dollars",
-          "url": "https://kalkine.com.au/news/mutual-funds-etfs/how-global-x-gold-bullion-etf-asxgxld-tracks-gold-in-australian-dollars",
-          "source": "Kalkine"
+          "title": "AIFO Funding Receives EU Innovation Honour at Finance Magnates Awards 2026",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/aifo-funding-receives-eu-innovation-104600520.html",
+          "source": "Yahoo Finance"
         },
         {
-          "title": "Gold Bulls Battered, AUD and NZD Bears Double Down | COT Report",
-          "url": "https://www.forexfactory.com/news/1438129-gold-bulls-battered-aud-and-nzd-bears-double",
-          "source": "Forex Factory"
+          "title": "Elev8 broker receives the 'Best Trading Platform' award from LeapRate",
+          "url": "https://www.financemagnates.com/thought-leadership/elev8-broker-receives-the-best-trading-platform-award-from-leaprate/",
+          "source": "Finance Magnates"
         },
         {
-          "title": "ASX Preview: Australian Shares to Fall as Gold Hits 14-Month Low; Nextdc Upgrades Fiscal 2027 Revenue, EBITDA Guidance",
-          "url": "https://au.finance.yahoo.com/news/asx-preview-australian-shares-fall-224314618.html",
-          "source": "Yahoo Finance Australia"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "democratic republic of the congo",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "DR Congo conflict: Kenya's William Ruto and Félix Tshisekedi agree to restore ties",
-          "url": "https://www.bbc.com/news/articles/cmvg2qnn95vro",
-          "source": "BBC"
-        },
-        {
-          "title": "After four frosty years, Nairobi opens door to reboot Kinshasa ties",
-          "url": "https://nation.africa/kenya/news/africa/after-frosty-years-nairobi-opens-door-to-reboot-kinshasa-ties-5680584",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Kenya, DRC reboot ties after 4-year fallout",
-          "url": "https://www.theeastafrican.co.ke/tea/news/central-africa/kenya-drc-reboot-ties-after-4-year-fallout-5680552",
-          "source": "The EastAfrican"
+          "title": "AIFO Wins Most Innovative Prop Trading Firm (EU) at Finance Magnates Awards 2026",
+          "url": "https://www.tradingview.com/news/financewire:6c6091ff7094b:0-aifo-wins-most-innovative-prop-trading-firm-eu-at-finance-magnates-awards-2026/",
+          "source": "TradingView"
         }
       ]
     },
@@ -137,32 +115,72 @@
     },
     {
       "geo": "KE",
+      "title": "democratic republic of the congo",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "DR Congo conflict: Kenya's William Ruto and Félix Tshisekedi agree to restore ties",
+          "url": "https://www.bbc.com/news/articles/cmvg2qnn95vro",
+          "source": "BBC"
+        },
+        {
+          "title": "After four frosty years, Nairobi opens door to reboot Kinshasa ties",
+          "url": "https://nation.africa/kenya/news/africa/after-frosty-years-nairobi-opens-door-to-reboot-kinshasa-ties-5680584",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Kenya, DRC reboot ties after 4-year fallout",
+          "url": "https://www.theeastafrican.co.ke/tea/news/central-africa/kenya-drc-reboot-ties-after-4-year-fallout-5680552",
+          "source": "The EastAfrican"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "uefa champions league",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "How can I watch City v Napoli on TV around the globe?",
+          "url": "https://www.mancity.com/news/mens/city-v-napoli-tv-listings-ucl-24-nov-63930854",
+          "source": "Manchester City FC"
+        },
+        {
+          "title": "Jeremy Doku relishing reunion with Manchester City legend Kevin De Bruyne ahead of Napoli Champions League clash",
+          "url": "https://www.goal.com/en-ke/news/jeremy-doku-manchester-city-kevin-de-bruyne-napoli-champions-league/blt58da345459512e04",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Man City 'reset' inevitable after Guardiola era: Maresca",
+          "url": "https://www.rfi.fr/en/sports/20261123-man-city-reset-inevitable-after-guardiola-era-maresca",
+          "source": "RFI"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "xabi alonso",
       "traffic": "100+",
       "news": [
         {
-          "title": "El 'me gusta' de Vinícius a la goleada sufrida por el Chelsea de Xabi Alonso desata una nueva polémica",
-          "url": "https://www.lavanguardia.com/clic/20261123/11691061/me-gusta-vinicius-goleada-sufrida-chelsea-xabi-alonso-desata-nueva-polemica-lol.html",
-          "source": "La Vanguardia"
+          "title": "Dibu Martínez volvió a jugar en Chelsea tras la fractura de mandíbula y le hicieron cuatro goles en la Premier League",
+          "url": "https://www.lanacion.com.ar/deportes/futbol/dibu-martinez-volvio-a-jugar-en-chelsea-tras-la-fractura-de-mandibula-y-le-hicieron-cuatro-goles-en-nid21112026/",
+          "source": "La Nación"
         },
         {
-          "title": "Vinicius reacciona a la última derrota del Chelsea de Xabi Alonso en la Premier",
-          "url": "https://okdiario.com/diariomadridista/real-madrid/vinicius-reacciona-ultima-derrota-del-chelsea-xabi-alonso-premier-679052",
-          "source": "OkDiario"
+          "title": "«¡Id a buscar a unos culturistas!»: Daniel Farke revela el plan táctico tras la contundente victoria del Leeds United por 4-1 ante el Chelsea de Xabi Alonso",
+          "url": "https://es-us.noticias.yahoo.com/deportes/id-buscar-culturistas-daniel-farke-073341125.html",
+          "source": "Yahoo"
         },
         {
-          "title": "El dardo de Vinicius a Xabi Alonso tras el batacazo del Chelsea",
-          "url": "https://www.sport.es/es/noticias/real-madrid/dardo-vinicius-xabi-alonso-batacazo-136739646",
-          "source": "SPORT"
+          "title": "\"Si esto sigue así Xabi Alonso acabará destituido\"",
+          "url": "https://www.mundodeportivo.com/futbol/20261123/1004254363/esto-sigue-asi-xabi-alonso-acabara-destituido.html",
+          "source": "Mundo Deportivo"
         }
       ]
     }
   ],
   "dropped": [
-    {
-      "title": "uefa champions league",
-      "why": "unsafe: 'Betting'"
-    },
     {
       "title": "monza vs fiorentina",
       "why": "unsafe: 'Bet'"
