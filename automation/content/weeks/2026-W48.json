@@ -483,13 +483,106 @@
       "track_credit": "Music: \"Newer Wave\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1508
+    },
+    {
+      "id": "2026-w48-hot-1123m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Parents",
+      "line": "The Interior Ministry warned parents against *selling land* to pay bribes for police recruitment.",
+      "fact": "Police recruitment is strictly free by law and official slots are never sold by brokers.",
+      "source": "People Daily, 2026-11-22, Kenyans.co.ke, 2026-11-22",
+      "photo_query": "title deed Kenya",
+      "message": "Police recruitment is free by law, so selling land to pay brokers for job slots is a scam.",
+      "action": "Report anyone demanding money for police recruitment to 0800722203",
+      "who": "Ministry of Interior and National Administration",
+      "where": "National",
+      "when": "22 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Families lose land and savings to fraudsters promising fake police jobs.",
+      "beats": [
+        "Police recruitment starts in December and is completely free by law.",
+        "Do not sell land to pay brokers.",
+        "Have you met anyone asking for money to secure a police job?"
+      ],
+      "caption": "The Ministry of Interior has warned parents against selling land or livestock to pay brokers for police jobs. Police recruitment is free by law. Report any extortion to the nearest police station or call 0800722203.\n\nHave you met brokers asking for money in your area? Drop your answer below.\n\n#PoliceRecruitment #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-23T09:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "Ministry Addresses Land-Selling Trend Among Parents Seeking Police Jobs Ahead of Recruitment",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPdFJNMUFacmVHdm9IOUZ2ZDZHaWsyVlUwc2czNTEwa2N3Q3B2emJLa2hSSXV6cFByVHQ4ZVJSLXIzTE9SWlRCR1hlZTlKenQtZXA5c21ibG1aSVZzTVRuV1pRUUNOM2RYZTZnVjJ2ZzVmVjJOZm01d0h0VkVHT1MtUjRnUkpFdktmcWJZY25NZGZfYUoxalBBWXljdVpveFJGczNLanMtU1Q0amRXZWxnUWYzWQ?oc=5",
+          "published": "2026-11-22"
+        },
+        {
+          "outlet": "People Daily",
+          "title": "Police recruitment 2026: 7 details applicants could easily overlook in recruitment advert",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNX0xGTE80am1QMVJnUEZ3VjI3bm1ycWN2NnlqcExCSzZENnF3cDBUX0JSM01GVllSTzhIRk5mWDVtUzAzV3pQb2pSSXFDOTJuNnRRWmpBSTRmVmpLOU9kcmEyN0FSUFlLY3YyRlYtZEhSUmI0VWtCNjAwYlJhSmF0MDJlWVhEOHYyM3lFcGZuNkhQa1dOalJ6ZFZPY3V5bzJxRDM2cnRILTliRnppQ0xYODJ5ay1RY3FYV0tCUg?oc=5",
+          "published": "2026-11-22"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "We do not want the issue where poor people sell their land to bribe recruitment officers",
+          "speaker": "Murkomen",
+          "context": "\"We are doing police recruitment in December. The exercise will be free and fair. We will have observers at the centres to ensure transparency. We do not want the issue where poor people sell their land to bribe recruitment officers,\" Murkomen stated.",
+          "outlet": "Kenyans.co.ke",
+          "link": "https://www.kenyans.co.ke/news/129586-murkomen-warns-parents-against-selling-land-secure-police-recruitment-slots"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "serious allegation words: attribute them to the record ('the Auditor-General found', 'charged with', 'the court ruled') and keep the source in `source`",
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 7,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 7.9,
+        "note": "All beats and scores meet the standard."
+      },
+      "drafted_at": "2026-11-23T06:40:11.115849+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1123m-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129586-murkomen-warns-parents-against-selling-land-secure-police-recruitment-slots",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Ministry Addresses Land-Selling Trend Among Parents Seeking Police Jobs Ahead of Recruitment"
+        }
+      ],
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1547,
+      "auto": true,
+      "decided_at": "2026-11-23T06:41:26.150358+03:00"
     }
   ],
   "scripts": {
-    "radio": "Sasa, na karibu kwa Kenya on Record. Mimi ni wako, na leo tunaweka mambo mezani. Wiki hii imekuja na mambo mazito matatu ambayo yanatuhusu sisi sote kama Wakenya.\n\nKwanza kabisa, bei ya mafuta duniani imeshuka. Swali kubwa ni moja tu hapa nyumbani: Je, EPRA itashusha bei ya mafuta mwezi huu wa Desemba, au tutaendelea kuumia? Tunangoja tuone kama bei za bidhaa zitapoa pia.\n\nPili, hapa katikati kulikuwa na utata mwingi kuhusu Social Health Authority, SHA. Lakini habari njema ni kwamba gazeti la *Daily Nation* limemulika na kuchimbua namba kamili nyuma ya uzinduzi huu. Ukweli umeanza kuwekwa wazi bila danganya toto, ili wananchi tujue mahali ambapo pesa zetu zinaelekea.\n\nMwisho kabisa, kwenye mitandao na mtaani, siasa za 2027 zimeanza moto. Wakenya wanajadili miungano ya kisiasa na nani anaungana na nani. Lakini kabla ya kukimbilia debe, kumbuka kazi yako ni kuuliza maswali magumu kwa viongozi.\n\nAsante kwa kusikiliza. Hii ni Kenya on Record, ukweli mtupu bila kupaka mafuta.\n\n***\n\n*Kwa ufupi (Swahili summary):* Wiki hii tunaangazia kushuka kwa bei ya mafuta duniani na matarajio ya ukaguzi wa EPRA wa Desemba, ukweli uliothibitishwa kuhusu rollout ya SHA na *Daily Nation*, na jinsi Wakenya wanavyojadili miungano ya kisiasa kuelekea 2027.",
-    "voice_note": "Sasa ndugu yangu, sikia hii ya Kenya on Record wiki hii. Kwanza, bei ya mafuta duniani imeshuka; sasa tunangoja EPRA ifanye nini kwenye bei ya Desemba. Pili, *Daily Nation* wamechimba ukweli kuhusu takwimu halisi za SHA, sio porojo. Na tatu, huku nje mijadala ya 2027 imeanza moto huku Wakenya wakipima miungano ya kisiasa. Kaa chonjo, ujue ukweli usipitwe na wakati!",
-    "sms": "Kenya on Record: Bei ya mafuta duniani imeshuka, tunangoja EPRA Desemba. Daily Nation yafichua ukweli wa SHA. Siasa za 2027 zashika moto. Usiibiwe, fuatilia ukweli!",
-    "reels": "Mafuta duniani yameshuka, lakini je, bei ya EPRA itapungua Desemba hii? Wakati Daily Nation ikifichua ukweli kuhusu SHA, Wakenya nao wameanza kupima miungano ya kisiasa kuelekea 2027. Kwenye Kenya on Record, hatupotezi muda—tunakupa ukweli mtupu. Fuatilia ukweli, usiwe wa mwisho kujua!"
+    "radio": "Good evening listeners, welcome back to Kenya on Record. Today, we need to have a very candid conversation about the police recruitment drives happening across our counties.\n\nEvery year, a familiar and painful story plays out in our villages. Parents sell their last piece of land, families take high-interest loans, and households sell off livestock to raise money for a broker who promises a \"guaranteed slot\" in the National Police Service. \n\nLet us be crystal clear: by law, police recruitment in Kenya is 100% free. There is no such thing as a reserved slot for a middleman, a politician, or a senior official to sell. Anyone who approaches you asking for fifty thousand, one hundred thousand, or two hundred thousand shillings to secure a job for your son or daughter is a fraudster. \n\nWhen you pay a broker, you are not buying a career; you are simply handing over your family's inheritance to a thief. If your young person meets the physical and academic standards, let them try at the recruitment center openly. If they do not, no amount of bribe money will safely or legally put them in uniform.\n\nKwa ufupi: Usajili wa polisi ni bure kabisa kisheria. Mtu yeyote anayekuomba pesa au kukushawishi uuze shamba au mifugo ili upate nafasi ya kazi ni tapeli. Usitoe rushwa, na usiuze mali ya familia. Ukipata matapeli hawa, waripoti kwa polisi mara moja.",
+    "voice_note": "Habari zenu. Quick head-up from Kenya on Record for everyone preparing for the upcoming police recruitment. Please, do not fall for the brokers moving around our villages right now. The law is very clear: police recruitment is entirely free. Anyone asking you for money, or convincing you to sell a piece of land or your cows to buy a job slot, is scamming you. Nobody has reserved slots in their pocket. If someone asks for a bribe to get your child into the police service, that is extortion, not help. Protect your family's land and hard-earned savings. Pass this message to your family and village groups today—usiibiwe.",
+    "sms": "Usiibiwe: Police recruitment is 100% free by law. Selling land or paying brokers for a job slot is a scam. Don't sell your assets. Report extortion.",
+    "reels": "Every year, families sell land and drain savings to buy a police recruitment slot. Here is the truth: police recruitment in Kenya is free by law. Anyone asking for money to \"secure a slot\" for your child is a thief. There are no secret slots for brokers. Don't sell your family's future for a lie. Report extortion immediately."
   },
   "spend_usd": 0.0
 }
