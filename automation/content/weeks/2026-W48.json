@@ -675,13 +675,126 @@
       "decided_at": "2026-11-23T09:14:42.122029+03:00",
       "photo_checked": "2026-11-23T09:21:59.883947+03:00",
       "photo_fit": "2026-11-23T09:21:59.883958+03:00"
+    },
+    {
+      "id": "2026-w48-hot-1123a",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Athletes",
+      "line": "The Sisibo Marathon will offer a record *Sh5 million* prize money for its winners.",
+      "fact": "Organisers announced a record Sh5 million prize purse for top finishers in the upcoming race.",
+      "source": "The Star, Kenya, 2026-11-23",
+      "who": "Race Organiser Barnaba Korir",
+      "where": "Baringo County",
+      "when": "23 Nov 2026",
+      "photo_query": "marathon runners Kenya",
+      "message": "The Sisibo Marathon sets a record Sh5 million prize purse for top runners in Kenya.",
+      "action": "Tag an athlete who should register for the Sisibo Marathon",
+      "beats": [
+        "The Sisibo Marathon pays a record *Sh5 million* winner prize.",
+        "Organiser Korir says it matches London and New York purses.",
+        "Top distance runners will compete for the record payout.",
+        "Are you running in any marathon this year?"
+      ],
+      "caption": "The Sisibo Marathon is offering a record Sh5 million prize money for its winners. Local prize purses give our runners a real chance to earn from their talent. Are you running in any marathon this year?\n\n#SisiboMarathon #KenyaOnRecord",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Kenyan athletes get higher rewards and direct earnings from local distance races.",
+      "bg": "usiku",
+      "publish_at": "2026-11-23T15:39:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "avoid": [
+        "Police recruitment is free by law, so selling land to pay brokers for job slots is a scam.",
+        "The Treasury added Sh233bn to national debt in four months."
+      ],
+      "source_links": [
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Sisibo Marathon to offer record Sh5m winners’ prize",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQM0RwMWlTTDBRRmgzRjBPcElabWlfejBUTDhJRkNhd0ZiZWtBYkFza2gzWEtRVGRUTEpSMDd0RlBGeXliS0RZRWtNZjRvdmM0TUtSVFdrdEJRdDNQLXFLS21RNEpybkh6cXhIN0d5dGFsT0lDa2lTSTFJcU1ncWpES1BPaUtuaGZBdXQ0ZFZOclZYSE1wcGotX2cxdTVKbTM0YjAyVGd4RXJkckk?oc=5",
+          "published": "2026-11-23"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "It is the best prize money. We have not had it here in Kenya or Africa. It matches the prize money of New York and London",
+          "speaker": "Korir",
+          "context": "“It is the best prize money. We have not had it here in Kenya or Africa. It matches the prize money of New York and London,” Korir said.",
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/sports/athletics/2026-11-23-sisibo-marathon-to-offer-record-sh5m-winners-prize-1"
+        },
+        {
+          "text": "Sir Farouk Kibet proposed that the prize money for the winners in the men’s and women’s marathon be Sh5m. If you convert that, it is almost US$40,000",
+          "speaker": "Korir",
+          "context": "“Sir Farouk Kibet proposed that the prize money for the winners in the men’s and women’s marathon be Sh5m. If you convert that, it is almost US$40,000,” Korir said.",
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/sports/athletics/2026-11-23-sisibo-marathon-to-offer-record-sh5m-winners-prize-1"
+        },
+        {
+          "text": "Our athletes do us proud on the international scene. There should be a Bill such that our athletes’ winnings from races around the world be waived by KRA",
+          "speaker": "Kibet",
+          "context": "“Our athletes do us proud on the international scene. There should be a Bill such that our athletes’ winnings from races around the world be waived by KRA,” Kibet said.",
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/sports/athletics/2026-11-23-sisibo-marathon-to-offer-record-sh5m-winners-prize-1"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 8.0,
+        "note": "Solid sports post with clear facts and a good community question."
+      },
+      "drafted_at": "2026-11-23T12:41:58.967059+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1123a-photo.jpg",
+      "photo_credit": "File photo: Kenyans.co.ke",
+      "photo_kind": "topic",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129049-philimon-kiptoo-pocket-ksh7-million-after-breaking-istanbul-marathon-record",
+      "shot_info": [
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Millions Philimon Kipchumba Will Pocket After Winning Istanbul Marathon"
+        }
+      ],
+      "tv_clip": {
+        "channel": "NTV Kenya",
+        "title": "Sisibo Marathon offers KES 5 million prize for winners in men's and women's categories",
+        "url": "https://www.youtube.com/watch?v=ztIK-lo8qf0"
+      },
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/videos/2026-w48-hot-1123a-broll.mp4",
+      "broll_credit": "Footage: anncapictures / Pixabay",
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1571,
+      "auto": true,
+      "decided_at": "2026-11-23T12:45:03.365615+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening listeners, welcome to Kenya on Record, your civic accountability space.\n\nToday, we look at the numbers hitting your pocket directly. Official reports reveal that state debt rose by a massive 233 billion shillings in just four months. \n\nWhen we hear billions, it often sounds like abstract government talk. But let us break down what this means for you and me. When public debt balloons at this speed, the government faces heavy pressure to service those loans. Where does that money come from? It comes from your pocket—through higher taxes on basic goods, increased levies on fuel, and aggressive revenue drives. At the same time, we see budget cuts in critical sectors like public health, agriculture, and public school funding.\n\nYou end up paying more at the shop, but receiving less in return. Accountability requires us to ask hard questions: What was this money borrowed for? Which projects received these funds? And are citizens getting real value?\n\nKwa ufupi: Deni la serikali limeongezeka kwa shilingi bilioni mia mbili thelathini na tatu kwa miezi minne pekee. Hii inamaanisha shinikizo zaidi la ushuru kwa Mkenya wa kawaida ili kulipa mikopo hiyo. Ni lazima tuhoji matumizi ya mikopo hii na kudai uwazi kikamilifu.\n\nKeep asking the hard questions, stay informed, and let us safeguard our resources. Until next time.",
-    "voice_note": "Hujambo. Here is your quick accountability update from Kenya on Record.\n\nIn just four months, our national debt expanded by 233 billion shillings. That is not just a figure on a balance sheet—it translates directly to higher taxes, new levies, and a tighter squeeze on your household budget.\n\nWhen state borrowing surges without matching public value, the burden lands squarely on citizens through increased cost of living and reduced spending on vital services like public healthcare.\n\nWe must keep tracking where every borrowed shilling goes and demand a full audit of public debt. Share this audio with your network to keep the conversation active. Stay sharp, and stay informed.",
-    "sms": "State debt jumped by Sh233bn in just 4 months. Higher debt means more taxes on your pocket. Demand audit and transparency on public loans. Usiibiwe!",
-    "reels": "[Visual: Dynamic text graphics showing 233 Billion Shillings and rising tax charts]\n\nVoice-Over:\nIn just four months, Kenya's state debt jumped by a staggering 233 billion shillings.\n\nWhat does this mean for you? Higher taxes, new levies, and less money in your pocket—all to service loans whose impact we barely see on the ground.\n\nWe cannot keep paying for borrowing without transparency. Ask the hard questions and stay alert. Kenya on Record."
+    "radio": "Habari za leo and welcome to Kenya on Record. Today, we are focusing on a major win for local athletics. The Sisibo Marathon has raised the bar by setting a record five million shilling prize purse for top runners in Kenya.\n\nFor a long time, our world-class athletes have put in endless hours on the track, only to receive modest compensation in local races. This five million shilling commitment sets a new standard for how we recognize and compensate athletic talent right here at home. But setting a record purse is only the first step. True accountability means ensuring that these funds are distributed transparently, promptly, and directly to the athletes without unnecessary delays or deductions. Sports federations and event organizers across the country should take notes—this is how we build trust and dignity in our sports industry.\n\nKwa ufupi: Mbio za Sisibo Marathon zimeweka rekodi kwa kutoa zawadi ya shilingi milioni tano kwa washindi. Ni hatua kubwa ya kuthamini wanariadha wetu. Sasa, ombi letu ni kwa waandalizi kuhakikisha malipo haya yanafanyika kwa uwazi na bila kucheleweshwa. Asanteni.",
+    "voice_note": "Habari zenu, family. Quick update from Kenya on Record this week. The Sisibo Marathon has just set a record Sh5 million prize purse for top runners in Kenya. This is a big deal for our local athletes who often train hard but face low payouts in home races. Raising the stakes like this shows respect for local talent. But as always, we are watching to make sure the promises are kept, payouts are prompt, and athletes are treated fairly from start to finish. Share this around, and let’s keep supporting clean, fair sport.",
+    "sms": "Usiibiwe: Genuine marathons or sports trials won't ask athletes for upfront registration fees via personal M-Pesa. Verify official event pages first.",
+    "reels": "Sh5 million shillings. That is the record prize purse set by the Sisibo Marathon for top Kenyan runners. For too long, our athletes have carried the nation’s flag while earning peanuts in local events. Raising the bar like this is a step toward fair compensation. But setting the prize is only half the job—prompt, transparent payout is what counts. Let’s hold sports organizers accountable to our talent."
   },
   "spend_usd": 0.0
 }

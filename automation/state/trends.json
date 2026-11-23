@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-23T07:42:05.884896+00:00",
+  "fetched": "2026-11-23T09:39:06.052769+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -47,23 +47,23 @@
     },
     {
       "geo": "KE",
-      "title": "marseille vs le mans",
+      "title": "atalanta bc vs inter milan standings",
       "traffic": "1000+",
       "news": [
         {
-          "title": "OM - Le Mans : les compositions officielles",
-          "url": "https://www.footmercato.net/a4659824365861294978-om-le-mans-les-compositions-officielles",
-          "source": "Foot Mercato"
+          "title": "Atalanta vs Inter Milan: Italian Serie A stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/crq5vgg8pp48t",
+          "source": "BBC"
         },
         {
-          "title": "De Lange : « Se concentrer sur les bonnes choses »",
-          "url": "https://www.dazn.com/fr-FR/news/football/de-lange-se-concentrer-sur-les-bonnes-choses/13nl9ovann3r81hjf6xxjotjp5",
-          "source": "DAZN"
+          "title": "Atalanta 4-4 Internazionale - Serie A result as stoppage-time Franck Kessie penalty rescues point after Pio Esposito hat-trick",
+          "url": "https://www.tntsports.co.uk/football/serie-a/2026-2027/atalanta-internazionale_mtc21874090/live-commentary.shtml",
+          "source": "TNT Sports"
         },
         {
-          "title": "Ligue 1 2026/2027 - Classement J11 : le Paris FC dauphin du PSG, l'OM tombe au Vélodrome contre Le Mans",
-          "url": "https://www.ski-nordique.net/ligue-1-20262027-classement-j11-le-paris-fc-dauphin-du-psg-lom-tombe-au-velodrome-contre-le-mans.6751885-581149.html",
-          "source": "www.ski-nordique.net"
+          "title": "Inter, Chivu rebukes his players: \"We failed the test of maturity. Carelessness, complacency and too little desire in the duels\"",
+          "url": "https://www.goal.com/en/news/inter-chivu-rebukes-his-players-we-failed-the-test-of-maturity-carelessness-complacency-and-too-little-desire-in-the-duels/bltbc0ac2aea0707206",
+          "source": "Goal.com"
         }
       ]
     },
@@ -83,11 +83,34 @@
           "source": "Sportscape Magazine"
         },
         {
-          "title": "Pascal Siakam (hip) upgraded to available Sunday",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/pascal-siakam-hip-upgraded-to-available-sunday",
+          "title": "Jayson Tatum scores 27 points in loss to Warriors",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/jayson-tatum-scores-27-as-celtics-lose-fourth-straight",
           "source": "NBC Sports"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "arrest",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Seattle airport operator 'outraged' over ICE arrest of two passengers",
+          "url": "https://www.bbc.com/news/articles/cmwy479wz91no",
+          "source": "BBC"
+        },
+        {
+          "title": "Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle",
+          "url": "https://www.theguardian.com/us-news/2026/nov/23/father-daughter-ice-arrests-video-sparks-protests-seattle-airport",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Lawyer: Father and daughter detained by ICE at Seattle airport were traveling to family baptism",
+          "url": "https://www.cnn.com/2026/11/22/us/seattle-airport-ice-arrests",
+          "source": "CNN"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -117,93 +140,53 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Torreense vs Celtic Prediction & Head to Head » Betfair™",
-          "url": "https://betting.betfair.com/football/predictions/uefa-europa-league/torreense-vs-celtic/eeoudqam44pljcjeqfx4qs5qs/",
-          "source": "Betfair"
-        },
-        {
-          "title": "Watch Torreense vs Benfica live today: Who is broadcasting the match on TV and via live stream?",
-          "url": "https://www.goal.com/en-ca/news/live-stream-online-tv-where-to-watch-torreense-v-benfica/blt6f7a81f17c29f987",
+          "title": "Torreense vs Benfica live stream, TV channel and kick-off time | Taça de Portugal",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-torreense-v-benfica/blt6f7a81f17c29f987",
           "source": "Goal.com"
         },
         {
-          "title": "Celtic Euro opponents make 'earthquake' vow ahead of Hoops showdown",
-          "url": "https://www.thenational.scot/sport/26747337.celtic-euro-opponents-make-earthquake-vow-ahead-hoops-showdown/",
-          "source": "The National Scot"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "barcelona vs athletic club",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Barça 6-0 Athletic Club: Another big win at the Johan Cruyff",
-          "url": "https://www.fcbarcelona.com/en/football/womens-football/news/4612797/bara-60-athletic-club-another-big-win-at-the-johan-cruyff",
-          "source": "Official FC Barcelona Website"
-        },
-        {
-          "title": "Barcelona Face Athletic Club in Liga F Top Four Clash",
-          "url": "https://demokratis.co.id/en/barcelona-athletic-liga-f-clash",
-          "source": "Demokratis.co.id"
-        },
-        {
-          "title": "Pajor scores for the first time since November 8 in Barcelona match — Interia Sport",
-          "url": "https://ua.news/en/world/paior-zabila-vpershe-vid-8-listopada-v-matchi-barseloni-interia-sport",
-          "source": "UA.NEWS"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "víctor muñoz",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Under the radar Liverpool player has quietly helped unlock Florian Wirtz",
-          "url": "https://www.rousingthekop.com/2026/11/23/florian-wirtz-loves-to-assist-victor-munoz-for-liverpool/",
-          "source": "Rousing The Kop"
-        },
-        {
-          "title": "Under the radar Liverpool player has quietly helped unlock Florian Wirtz",
-          "url": "https://onefootball.com/en/news/under-the-radar-liverpool-player-has-quietly-helped-unlock-florian-wirtz-43822952",
-          "source": "OneFootball"
-        },
-        {
-          "title": "Mauricio Pochettino makes worst start as Man Utd boss in 100 years",
-          "url": "https://www.bbc.com/sport/football/articles/cwd012903kvgo",
+          "title": "Torreense beaten by Benfica in Taca de Portugal before Celtic Europa League visit",
+          "url": "https://www.bbc.com/sport/articles/cwdd124y69dzo?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bsport%5D-%5Bbizdev%5D-%5Bisapi%5D",
           "source": "BBC"
+        },
+        {
+          "title": "Benfica advances to Portuguese Cup round of 16",
+          "url": "https://operativmm.az/en/post/benfica-advances-to-portuguese-cup-round-of-16/88094",
+          "source": "Operativ Məlumat Mərkəzi"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "table premier league 2026",
+      "title": "new zealand vs india",
       "traffic": "100+",
       "news": [
         {
-          "title": "What history tells us about the Premier League table after 10 games of a season",
-          "url": "https://www.theguardian.com/football/2026/nov/20/premier-league-table-history-after-10-games-season",
-          "source": "The Guardian"
+          "title": "'Why is saliva still not allowed?': 'Frustrated' Shubman Gill questions ICC rule after Wellington draw",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/why-is-saliva-still-not-allowed-frustrated-shubman-gill-questions-icc-rule-after-wellington-draw/articleshow/136090656.cms",
+          "source": "The Times of India"
         },
         {
-          "title": "The tightest survival scrap for years? Why it's not too early to worry",
-          "url": "https://www.bbc.com/sport/football/articles/cj3vgp36z063o",
-          "source": "BBC"
+          "title": "New Zealand battle to 239-5 to draw first Test against India",
+          "url": "https://www.afp.com/en/new-zealand-battle-239-5-draw-first-test-against-india",
+          "source": "AFP.com"
         },
         {
-          "title": "It's not all bad news for the bottom three",
-          "url": "https://sports.yahoo.com/articles/not-bad-news-bottom-three-110423646.html",
-          "source": "Yahoo Sports"
+          "title": "Where is Kuldeep or Manav Suthar?: Sourav Ganguly questions India's lack of specialist spinner after Wellington Test draw",
+          "url": "https://www.indiagazette.com/news/279450190/where-is-kuldeep-or-manav-suthar-sourav-ganguly-questions-india-lack-of-specialist-spinner-after-wellington-test-draw",
+          "source": "www.indiagazette.com"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "new zealand vs india",
-      "why": "unsafe: 'Dead'"
+      "title": "brentford vs everton prediction",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "inter milan",
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
