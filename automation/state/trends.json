@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-23T18:05:17.797035+00:00",
+  "fetched": "2026-11-23T18:14:10.672224+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -12,39 +12,17 @@
           "source": "NVIDIA Newsroom"
         },
         {
-          "title": "Exclusive: Hours before Huang’s reinstatement, Trump called Nvidia’s board to argue for his return",
-          "url": "https://www.semafor.com/article/11/23/2026/jensen-huang-reinstated-as-nvidia-ceo",
-          "source": "Semafor"
-        },
-        {
           "title": "Jensen Huang reinstated as Nvidia CEO, board says",
           "url": "https://www.bbc.com/news/live/crd61y5dwqgpt",
           "source": "BBC"
+        },
+        {
+          "title": "Trump tells CNBC ‘I made the deal’ to reinstate Nvidia’s Jensen Huang",
+          "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html",
+          "source": "CNBC"
         }
       ],
       "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "neftchi fergana vs al-hilal",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Inzaghi issues warning to Al-Hilal stars as Bounou steals the spotlight",
-          "url": "https://www.goal.com/en/news/inzaghi-issues-warning-to-al-hilal-stars-as-bounou-steals-the-spotlight/bltc144a6308939d021",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Uzbek clubs to face Saudi teams today",
-          "url": "https://qalampir.uz/en/news/bugun-uzbekiston-klublari-saudiya-zhamoalariga-k-arshi-uynaydi-146791",
-          "source": "Qalampir.uz"
-        },
-        {
-          "title": "Islom Ismoilov speaks on tactics and the goal of victory against Al Hilol",
-          "url": "https://zamin.uz/en/sport/227801-islom-ismoilov-speaks-on-tactics-and-the-goal-of-victory-against-al-hilol.html",
-          "source": "Zamin.uz"
-        }
-      ]
     },
     {
       "geo": "KE",
@@ -153,6 +131,28 @@
           "title": "El dardo de Vinicius a Xabi Alonso tras el batacazo del Chelsea",
           "url": "https://www.sport.es/es/noticias/real-madrid/dardo-vinicius-xabi-alonso-batacazo-136739646",
           "source": "SPORT"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "artificial intelligence",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Artificial Intelligence Enhances Surgical Pathology Diagnosis, Biomarker Prediction, and Operative Decision Support",
+          "url": "https://bioengineer.org/artificial-intelligence-enhances-surgical-pathology-diagnosis-biomarker-prediction-and-operative-decision-support/",
+          "source": "Bioengineer.org"
+        },
+        {
+          "title": "Patient Care Gaps Test Kenya’s AI Cancer Push",
+          "url": "https://businesstoday.co.ke/patient-care-gaps-test-kenyas-ai-cancer-push/",
+          "source": "Business Today Kenya"
+        },
+        {
+          "title": "Researchers compare AI tools for analyzing tumor tissue",
+          "url": "https://medicalxpress.com/news/2026-11-ai-tools-tumor-tissue.html",
+          "source": "Medical Xpress"
         }
       ]
     }
