@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-23T05:42:20.271135+00:00",
+  "fetched": "2026-11-23T06:07:21.111239+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -34,14 +34,58 @@
           "source": "ESPN"
         },
         {
+          "title": "Getafe vs Atlético Madrid: Spanish La Liga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cwgkljjrp285t",
+          "source": "BBC"
+        },
+        {
           "title": "Atlético pick up another away win at Getafe behind Baena, Alvarez pair",
           "url": "https://sports.yahoo.com/articles/atl-tico-pick-another-away-023951293.html",
           "source": "Yahoo Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "marseille vs le mans",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Le Mans : la réaction de Samuel Yohou après avoir renversé l’OM",
+          "url": "https://www.footmercato.net/a9019168489552738088-le-mans-la-reaction-de-samuel-yohou-apres-avoir-renverse-lom",
+          "source": "Foot Mercato"
         },
         {
-          "title": "Ratings: Atlético dominate Getafe to end losing skid",
-          "url": "https://www.intothecalderon.com/atletico-madrid-player-ratings/30042/getafe-cf-0-3-atletico-de-madrid-player-ratings-la-liga-baena-alvarez-johnny-cardoso",
-          "source": "Into the Calderon"
+          "title": "[L1-J11] Adrien Thomasson exclu lors du nul de Rennes à Lorient, Marseille surpris par Le Mans à domicile",
+          "url": "https://onefootball.com/fr/news/l1-j11-adrien-thomasson-exclu-lors-du-nul-de-rennes-a-lorient-marseille-surpris-par-le-mans-a-domicile-43822692",
+          "source": "OneFootball"
+        },
+        {
+          "title": "Timothy Weah : « Important de prendre le positif »",
+          "url": "https://www.dazn.com/fr-FR/news/football/timothy-weah-important-de-prendre-le-positif/1dlf0jqywz4rz1mjngbb6mo7bt",
+          "source": "DAZN"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "warriors vs celtics",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Celtics extend losing streak to 4 games with 88-87 loss to Warriors",
+          "url": "https://www.celticsblog.com/celtics-analysis/150856/celtics-extend-losing-streak-to-4-games-with-88-87-loss-to-warriors",
+          "source": "CelticsBlog"
+        },
+        {
+          "title": "WATCH: Steph Curry Erupts In Joy As Golden State Warriors Snaps Losing Streak",
+          "url": "https://www.sportscapemagazine.com/blog/watch-steph-curry-erupts-in-joy-as-golden-state-warriors-snaps-losing-streak",
+          "source": "Sportscape Magazine"
+        },
+        {
+          "title": "Watch: Draymond Green Locks Up Jayson Tatum On Final Possession",
+          "url": "https://www.yardbarker.com/nba/articles/watch_draymond_green_locks_up_jayson_tatum_on_final_possession/s1_15653_44604473",
+          "source": "Yardbarker"
         }
       ]
     },
@@ -61,31 +105,9 @@
           "source": "Diario AS"
         },
         {
-          "title": "'The fourth official was only looking at our bench' - Furious Hansi Flick hits out at officials despite Barcelona's thrilling 3-2 comeback against Villarreal",
-          "url": "https://www.goal.com/en-ke/news/hansi-flick-slams-officials-after-barcelona-comeback-win-over-villarreal/blt2fc7ad0eb5068fe9",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "warriors vs celtics",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Warriors 88-87 Celtics: Charles Bassey lifts Golden State in gritty NBA win",
-          "url": "https://www.sofascore.com/news/warriors-88-87-celtics-charles-bassey-lifts-golden-state-in-gritty-nba-win",
-          "source": "Sofascore"
-        },
-        {
-          "title": "Watch: Draymond Green Locks Up Jayson Tatum On Final Possession",
-          "url": "https://www.yardbarker.com/nba/articles/watch_draymond_green_locks_up_jayson_tatum_on_final_possession/s1_15653_44604473",
-          "source": "Yardbarker"
-        },
-        {
-          "title": "P.J. Washington (illness) downgraded to out Sunday",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/p-j-washington-illness-downgraded-to-out-sunday",
-          "source": "NBC Sports"
+          "title": "Barcelona v Villarreal League Table & Standings",
+          "url": "https://andysbetclub.co.uk/football-fixtures/barcelona-v-villarreal-20261122/league-table/",
+          "source": "Andy's Bet Club"
         }
       ]
     },
@@ -118,7 +140,7 @@
       "news": [
         {
           "title": "Barça 6-0 Athletic Club: Another big win at the Johan Cruyff",
-          "url": "https://www.fcbarcelona.com/en/football/womens-football/news/4612797/barca-6-0-athletic-club-another-big-win-at-the-johan-cruyff",
+          "url": "https://www.fcbarcelona.com/en/football/womens-football/news/4612797/bara-60-athletic-club-another-big-win-at-the-johan-cruyff",
           "source": "Official FC Barcelona Website"
         },
         {
@@ -200,11 +222,6 @@
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "marseille vs le mans",
-      "why": "banned: violence"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }

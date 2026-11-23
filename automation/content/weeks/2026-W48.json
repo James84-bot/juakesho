@@ -578,13 +578,108 @@
       "decided_at": "2026-11-23T06:41:26.150358+03:00",
       "photo_checked": "2026-11-23T07:21:43.457084+03:00",
       "photo_fit": "2026-11-23T07:21:43.457095+03:00"
+    },
+    {
+      "id": "2026-w48-hot-1123",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "The Treasury borrowed *Sh233bn* in just four months.",
+      "fact": "Official records show state borrowing reached Sh233 billion between July and October 2026.",
+      "source": "Daily Nation, 2026-11-22",
+      "photo_query": "National Treasury Nairobi",
+      "who": "National Treasury",
+      "where": "National",
+      "when": "22 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Higher public debt increases tax obligations for every working Kenyan.",
+      "message": "The Treasury added Sh233bn to national debt in four months.",
+      "action": "Demand your MP questions the Treasury on loan breakdown: share this post.",
+      "caption": "The National Treasury borrowed Sh233bn in four months between July and October 2026. Every shilling borrowed increases the tax burden on everyday budgets. The Treasury must publish the full breakdown of these new loans immediately. Share this with a friend who pays taxes.",
+      "beats": [
+        "State borrowing reached *Sh233bn* in four months.",
+        "Official data shows debt grew from July to October.",
+        "Every new loan increases the tax burden on citizens.",
+        "The Treasury must publish the full loan breakdown.",
+        "How is rising debt affecting your family budget?"
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-11-23T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Police recruitment is free by law, so selling land to pay brokers for job slots is a scam."
+      ],
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "State borrows Sh233bn in four months as debt rises",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOT0pGWHIyYUpJd08tekVRQmNYbmtRaDNNNDgzVXF0eGNVZ0FwVmNRS0xLSnZwNm44Y2d6eS15amMwdlRUaUpwQlYzaWd6Mi1SaktOcjBqcHgza0pheE9DRnExWnF0N1R3MTRNa05fTm9Gb0JXM2ZDVFZHTGlYc3JmRGd0eGNxQU45aXVKY0hqdkdVRF81WGtWbVFzMEs?oc=5",
+          "published": "2026-11-22"
+        }
+      ],
+      "quotes": [],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 8,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.7,
+        "note": "exceptional execution on tone and structure; keep demand properly matched to lane"
+      },
+      "drafted_at": "2026-11-23T09:11:04.720030+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1123-photo.jpg",
+      "photo_credit": "Photo: www.marketplace.org · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "www.marketplace.org",
+      "photo_source": "https://www.marketplace.org/story/2026/11/19/why-is-the-treasury-constantly-auctioning-off-its-debt",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1123-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1123-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: www.marketplace.org",
+          "title": "Why is the Treasury constantly auctioning off its debt?"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Gives Progress Update on Nairobi-Mombasa Expressway Project"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Reveals Planned Changes in November-December Fuel Prices"
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1555,
+      "auto": true,
+      "decided_at": "2026-11-23T09:14:42.122029+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good evening listeners, welcome back to Kenya on Record. Today, we need to have a very candid conversation about the police recruitment drives happening across our counties.\n\nEvery year, a familiar and painful story plays out in our villages. Parents sell their last piece of land, families take high-interest loans, and households sell off livestock to raise money for a broker who promises a \"guaranteed slot\" in the National Police Service. \n\nLet us be crystal clear: by law, police recruitment in Kenya is 100% free. There is no such thing as a reserved slot for a middleman, a politician, or a senior official to sell. Anyone who approaches you asking for fifty thousand, one hundred thousand, or two hundred thousand shillings to secure a job for your son or daughter is a fraudster. \n\nWhen you pay a broker, you are not buying a career; you are simply handing over your family's inheritance to a thief. If your young person meets the physical and academic standards, let them try at the recruitment center openly. If they do not, no amount of bribe money will safely or legally put them in uniform.\n\nKwa ufupi: Usajili wa polisi ni bure kabisa kisheria. Mtu yeyote anayekuomba pesa au kukushawishi uuze shamba au mifugo ili upate nafasi ya kazi ni tapeli. Usitoe rushwa, na usiuze mali ya familia. Ukipata matapeli hawa, waripoti kwa polisi mara moja.",
-    "voice_note": "Habari zenu. Quick head-up from Kenya on Record for everyone preparing for the upcoming police recruitment. Please, do not fall for the brokers moving around our villages right now. The law is very clear: police recruitment is entirely free. Anyone asking you for money, or convincing you to sell a piece of land or your cows to buy a job slot, is scamming you. Nobody has reserved slots in their pocket. If someone asks for a bribe to get your child into the police service, that is extortion, not help. Protect your family's land and hard-earned savings. Pass this message to your family and village groups today—usiibiwe.",
-    "sms": "Usiibiwe: Police recruitment is 100% free by law. Selling land or paying brokers for a job slot is a scam. Don't sell your assets. Report extortion.",
-    "reels": "Every year, families sell land and drain savings to buy a police recruitment slot. Here is the truth: police recruitment in Kenya is free by law. Anyone asking for money to \"secure a slot\" for your child is a thief. There are no secret slots for brokers. Don't sell your family's future for a lie. Report extortion immediately."
+    "radio": "Good evening listeners, welcome to Kenya on Record, your civic accountability space.\n\nToday, we look at the numbers hitting your pocket directly. Official reports reveal that state debt rose by a massive 233 billion shillings in just four months. \n\nWhen we hear billions, it often sounds like abstract government talk. But let us break down what this means for you and me. When public debt balloons at this speed, the government faces heavy pressure to service those loans. Where does that money come from? It comes from your pocket—through higher taxes on basic goods, increased levies on fuel, and aggressive revenue drives. At the same time, we see budget cuts in critical sectors like public health, agriculture, and public school funding.\n\nYou end up paying more at the shop, but receiving less in return. Accountability requires us to ask hard questions: What was this money borrowed for? Which projects received these funds? And are citizens getting real value?\n\nKwa ufupi: Deni la serikali limeongezeka kwa shilingi bilioni mia mbili thelathini na tatu kwa miezi minne pekee. Hii inamaanisha shinikizo zaidi la ushuru kwa Mkenya wa kawaida ili kulipa mikopo hiyo. Ni lazima tuhoji matumizi ya mikopo hii na kudai uwazi kikamilifu.\n\nKeep asking the hard questions, stay informed, and let us safeguard our resources. Until next time.",
+    "voice_note": "Hujambo. Here is your quick accountability update from Kenya on Record.\n\nIn just four months, our national debt expanded by 233 billion shillings. That is not just a figure on a balance sheet—it translates directly to higher taxes, new levies, and a tighter squeeze on your household budget.\n\nWhen state borrowing surges without matching public value, the burden lands squarely on citizens through increased cost of living and reduced spending on vital services like public healthcare.\n\nWe must keep tracking where every borrowed shilling goes and demand a full audit of public debt. Share this audio with your network to keep the conversation active. Stay sharp, and stay informed.",
+    "sms": "State debt jumped by Sh233bn in just 4 months. Higher debt means more taxes on your pocket. Demand audit and transparency on public loans. Usiibiwe!",
+    "reels": "[Visual: Dynamic text graphics showing 233 Billion Shillings and rising tax charts]\n\nVoice-Over:\nIn just four months, Kenya's state debt jumped by a staggering 233 billion shillings.\n\nWhat does this mean for you? Higher taxes, new levies, and less money in your pocket—all to service loans whose impact we barely see on the ground.\n\nWe cannot keep paying for borrowing without transparency. Ask the hard questions and stay alert. Kenya on Record."
   },
   "spend_usd": 0.0
 }
