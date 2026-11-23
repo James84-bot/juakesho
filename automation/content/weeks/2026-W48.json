@@ -853,7 +853,7 @@
           "link": "https://www.the-star.co.ke/business/2026-11-23-kra-waives-sh6439bn-in-tax-penalties-for-nearly-one-million-taxpayers"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
         "warnings": []
@@ -904,7 +904,12 @@
       "reel": true,
       "tg_msg": 1585,
       "photo_checked": "2026-11-23T16:26:31.921902+03:00",
-      "photo_fit": "2026-11-23T16:26:31.921918+03:00"
+      "photo_fit": "2026-11-23T16:26:31.921918+03:00",
+      "decided_at": "2026-11-23T22:29:14.727661+03:00",
+      "yt_tried": "2026-11-23T22:29:36.705109+03:00",
+      "yt_id": "igP888Vb-fs",
+      "tt_done": "2026-11-23T22:29:38.702115+03:00",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w48-searching-1123",
