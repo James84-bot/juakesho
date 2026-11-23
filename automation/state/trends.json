@@ -1,32 +1,55 @@
 {
-  "fetched": "2026-11-23T14:03:34.281775+00:00",
+  "fetched": "2026-11-23T15:42:44.469939+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "getafe cf vs atlético madrid standings",
-      "traffic": "2000+",
+      "title": "jensen huang",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Getafe 0-3 Atlético (Nov 22, 2026) Game Analysis",
-          "url": "https://www.espn.com/soccer/report/_/gameId/401882803",
-          "source": "ESPN"
+          "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+          "source": "NVIDIA Newsroom"
         },
         {
-          "title": "Getafe vs Atlético Madrid: Spanish La Liga stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cwgkljjrp285t",
+          "title": "Jensen Huang reinstated as Nvidia CEO, board says",
+          "url": "https://www.bbc.com/news/live/crd61y5dwqgpt",
           "source": "BBC"
         },
         {
-          "title": "Ratings: Atlético dominate Getafe to end losing skid",
-          "url": "https://www.intothecalderon.com/atletico-madrid-player-ratings/30042/getafe-cf-0-3-atletico-de-madrid-player-ratings-la-liga-baena-alvarez-johnny-cardoso",
-          "source": "Into the Calderon"
+          "title": "Nvidia reinstates Jensen Huang as CEO amid pressure from President Trump, investors",
+          "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/",
+          "source": "Reuters"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "neftchi fergana vs al-hilal",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Neftchi Fergana vs Al-Hilal Prediction: Al-Hilal is on a five-win streak in six matches",
+          "url": "https://www.telecomasia.net/sports-betting/tips/football/afc-champions-league/neftchi-fergana-vs-al-hilal-match-prediction-23-november-2026/",
+          "source": "Telecom Asia Sport"
+        },
+        {
+          "title": "Neftchi Fargona vs Al Hilal: TV channel, live stream & kick-off time | AFC Champions League Elite",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-neftchi-fargona-v-al-hilal/blt05776295656fa3f0",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Uzbek clubs to face Saudi teams today",
+          "url": "https://qalampir.uz/en/news/bugun-uzbekiston-klublari-saudiya-zhamoalariga-k-arshi-uynaydi-146791",
+          "source": "Qalampir.uz"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "tax",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "KRA waives Sh64.39bn in tax penalties and interest",
@@ -34,8 +57,8 @@
           "source": "Sacco Review"
         },
         {
-          "title": "KRA waives Sh64.39bn in tax penalties for nearly one million taxpayers",
-          "url": "https://www.the-star.co.ke/business/2026-11-23-kra-waives-sh6439bn-in-tax-penalties-for-nearly-one-million-taxpayers",
+          "title": "KRA waives Sh64bn tax penalties for 984,489 taxpayers",
+          "url": "https://www.the-star.co.ke/news/2026-11-23-kra-waives-sh64bn-penalties-for-over-900k-taxpayers",
           "source": "The Star, Kenya"
         },
         {
@@ -48,53 +71,30 @@
     },
     {
       "geo": "KE",
-      "title": "arrest",
+      "title": "forex factory",
       "traffic": "500+",
       "news": [
         {
-          "title": "Seattle airport operator 'outraged' over ICE arrest of two passengers",
-          "url": "https://www.bbc.com/news/articles/cmwy479wz91no",
-          "source": "BBC"
+          "title": "How Global X Gold Bullion ETF (ASX:GXLD) Tracks Gold in Australian Dollars",
+          "url": "https://kalkine.com.au/news/mutual-funds-etfs/how-global-x-gold-bullion-etf-asxgxld-tracks-gold-in-australian-dollars",
+          "source": "Kalkine"
         },
         {
-          "title": "Video of ICE detaining father and daughter while boarding flight sparks protests in Seattle",
-          "url": "https://www.theguardian.com/us-news/2026/nov/23/father-daughter-ice-arrests-video-sparks-protests-seattle-airport",
-          "source": "The Guardian"
+          "title": "Gold Bulls Battered, AUD and NZD Bears Double Down | COT Report",
+          "url": "https://www.forexfactory.com/news/1438129-gold-bulls-battered-aud-and-nzd-bears-double",
+          "source": "Forex Factory"
         },
         {
-          "title": "Port of Seattle's Statement on Today's ICE Enforcement Actions",
-          "url": "https://www.portseattle.org/news/port-seattles-statement-todays-ice-enforcement-actions",
-          "source": "Port of Seattle"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "neftchi fergana vs al-hilal",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Neftchi Fargona vs Al Hilal: TV channel, live stream & kick-off time | AFC Champions League Elite",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-neftchi-fargona-v-al-hilal/blt05776295656fa3f0",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Uzbek clubs to face Saudi teams today",
-          "url": "https://qalampir.uz/en/news/bugun-uzbekiston-klublari-saudiya-zhamoalariga-k-arshi-uynaydi-146791",
-          "source": "Qalampir.uz"
-        },
-        {
-          "title": "Islom Ismoilov speaks on tactics and the goal of victory against Al Hilol",
-          "url": "https://zamin.uz/en/sport/227801-islom-ismoilov-speaks-on-tactics-and-the-goal-of-victory-against-al-hilol.html",
-          "source": "Zamin.uz"
+          "title": "ASX Preview: Australian Shares to Fall as Gold Hits 14-Month Low; Nextdc Upgrades Fiscal 2027 Revenue, EBITDA Guidance",
+          "url": "https://au.finance.yahoo.com/news/asx-preview-australian-shares-fall-224314618.html",
+          "source": "Yahoo Finance Australia"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "democratic republic of the congo",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "DR Congo conflict: Kenya's William Ruto and Félix Tshisekedi agree to restore ties",
@@ -115,61 +115,61 @@
     },
     {
       "geo": "KE",
-      "title": "new zealand vs india",
-      "traffic": "100+",
+      "title": "artificial intelligence",
+      "traffic": "200+",
       "news": [
         {
-          "title": "'Where is Kuldeep Yadav or Manav Suthar?': Sourav Ganguly questions India's team selection after Wellingt",
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/where-is-kuldeep-yadav-or-manav-suthar-sourav-ganguly-questions-indias-team-selection-after-wellington-draw/articleshow/136095214.cms",
-          "source": "The Times of India"
+          "title": "How Artificial Intelligence Is Transforming The Future Of Investing",
+          "url": "https://www.forbes.com/sites/chuckbrooks/2026/11/23/how-artificial-intelligence-is-transforming-the-future-of-investing/",
+          "source": "Forbes"
         },
         {
-          "title": "India a cut above New Zealand in Wellington but cut down to size by the pitch",
-          "url": "https://www.cricinfo.com/story/nz-vs-ind-1st-test-india-a-cut-above-new-zealand-in-wellington-but-cut-down-to-size-by-the-pitch-1563687",
-          "source": "Cricinfo"
+          "title": "BlackRock, Vanguard, Fidelity lead inaugural AI index for asset managers",
+          "url": "https://www.wealthprofessional.ca/news/industry-news/blackrock-vanguard-fidelity-lead-inaugural-ai-index-for-asset-managers/394032",
+          "source": "Wealth Professional"
         },
         {
-          "title": "Are you choosing playing XI for 1st 3 days?: Saba Karim after 1st Test ends in draw | Team selection was slightly lopsided: Karim | Inshorts",
-          "url": "https://inshorts.com/en/news/are-you-choosing-playing-xi-for-1st-3-days---saba-karim-after-1st-test-ends-in-draw-1795425313395",
-          "source": "Inshorts"
+          "title": "Navigating The Artificial Intelligence Boom On Wall Street",
+          "url": "https://www.forbes.com/video/96742810-fb8e-4426-9a4a-826234710e65/navigating-the-artificial-intelligence-boom-on-wall-street/",
+          "source": "Forbes"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "x",
+      "title": "xabi alonso",
       "traffic": "100+",
       "news": [
         {
-          "title": "Where Is Mandy’s House in GTA 6? Location and What Happens After Chapter 1",
-          "url": "https://www.vice.com/en/article/where-is-mandys-house-in-gta-6/",
-          "source": "VICE"
+          "title": "El 'me gusta' de Vinícius a la goleada sufrida por el Chelsea de Xabi Alonso desata una nueva polémica",
+          "url": "https://www.lavanguardia.com/clic/20261123/11691061/me-gusta-vinicius-goleada-sufrida-chelsea-xabi-alonso-desata-nueva-polemica-lol.html",
+          "source": "La Vanguardia"
         },
         {
-          "title": "‘GTA 6’: Where You Know Mandy Actress Lexie Shoaibi From",
-          "url": "https://www.mensjournal.com/news/gta-6-where-you-know-mandy-actress-lexie-shoaibi-from",
-          "source": "Men's Journal"
+          "title": "Vinicius reacciona a la última derrota del Chelsea de Xabi Alonso en la Premier",
+          "url": "https://okdiario.com/diariomadridista/real-madrid/vinicius-reacciona-ultima-derrota-del-chelsea-xabi-alonso-premier-679052",
+          "source": "OkDiario"
         },
         {
-          "title": "GTA 6 Mandy quest explained: Can you romance her?",
-          "url": "https://www.radiotimes.com/technology/gaming/gta-6-mandy-quest-explained/",
-          "source": "Radio Times"
+          "title": "El dardo de Vinicius a Xabi Alonso tras el batacazo del Chelsea",
+          "url": "https://www.sport.es/es/noticias/real-madrid/dardo-vinicius-xabi-alonso-batacazo-136739646",
+          "source": "SPORT"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "levante vs elche",
+      "title": "uefa champions league",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "brentford vs everton",
-      "why": "unsafe: 'Odds'"
+      "title": "monza vs fiorentina",
+      "why": "unsafe: 'Bet'"
     },
     {
-      "title": "warriors vs celtics",
-      "why": "unsafe: 'odds'"
+      "title": "levante vs elche",
+      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}
