@@ -895,6 +895,93 @@
       "tg_msg": 1585,
       "photo_checked": "2026-11-23T16:26:31.921902+03:00",
       "photo_fit": "2026-11-23T16:26:31.921918+03:00"
+    },
+    {
+      "id": "2026-w48-searching-1123",
+      "template": "searching",
+      "size": "story",
+      "hand": true,
+      "searching": true,
+      "bg": "usiku",
+      "kicker": "What Kenya is searching",
+      "day": "Monday 23 November",
+      "rows": [
+        {
+          "query": "citizen tv live now",
+          "label": "2K+",
+          "title": "Citizen TV’s KES 350 YouTube Package Tests Whether Kenyans Will Pay for Free Content",
+          "source": "Techweez",
+          "url": "https://techweez.com/2026/11/22/citizen-tv-kes-350-youtube-package/"
+        },
+        {
+          "query": "jensen huang",
+          "label": "2K+",
+          "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+          "source": "NVIDIA Newsroom",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+        },
+        {
+          "query": "al-shamal vs al-ahli",
+          "label": "500+",
+          "title": "Al-Shamal vs Al Ahli: TV channel, live stream and kick-off time for AFC Champions League Elite",
+          "source": "Goal.com",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-al-shamal-v-al-ahli/blt9ed97a81c53e3b75"
+        },
+        {
+          "query": "forex factory",
+          "label": "500+",
+          "title": "How Global X Gold Bullion ETF (ASX:GXLD) Tracks Gold in Australian Dollars",
+          "source": "Kalkine",
+          "url": "https://kalkine.com.au/news/mutual-funds-etfs/how-global-x-gold-bullion-etf-asxgxld-tracks-gold-in-australian-dollars"
+        },
+        {
+          "query": "xabi alonso",
+          "label": "200+",
+          "title": "Dibu Martínez volvió a jugar en Chelsea tras la fractura de mandíbula y le hicieron cuatro goles en la Premier",
+          "source": "La Nación",
+          "url": "https://www.lanacion.com.ar/deportes/futbol/dibu-martinez-volvio-a-jugar-en-chelsea-tras-la-fractura-de-mandibula-y-le-hicieron-cuatro-goles-en-nid21112026/"
+        }
+      ],
+      "source": "Google Trends, Kenya (trends.google.com/trending?geo=KE)",
+      "source_links": [
+        {
+          "outlet": "Techweez",
+          "link": "https://techweez.com/2026/11/22/citizen-tv-kes-350-youtube-package/",
+          "title": "Citizen TV’s KES 350 YouTube Package Tests Whether Kenyans Will Pay for Free Content"
+        },
+        {
+          "outlet": "NVIDIA Newsroom",
+          "link": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+          "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director"
+        },
+        {
+          "outlet": "Goal.com",
+          "link": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-al-shamal-v-al-ahli/blt9ed97a81c53e3b75",
+          "title": "Al-Shamal vs Al Ahli: TV channel, live stream and kick-off time for AFC Champions League Elite"
+        },
+        {
+          "outlet": "Kalkine",
+          "link": "https://kalkine.com.au/news/mutual-funds-etfs/how-global-x-gold-bullion-etf-asxgxld-tracks-gold-in-australian-dollars",
+          "title": "How Global X Gold Bullion ETF (ASX:GXLD) Tracks Gold in Australian Dollars"
+        },
+        {
+          "outlet": "La Nación",
+          "link": "https://www.lanacion.com.ar/deportes/futbol/dibu-martinez-volvio-a-jugar-en-chelsea-tras-la-fractura-de-mandibula-y-le-hicieron-cuatro-goles-en-nid21112026/",
+          "title": "Dibu Martínez volvió a jugar en Chelsea tras la fractura de mandíbula y le hicieron cuatro goles en la Premier"
+        }
+      ],
+      "publish_at": "2026-11-23T20:30:00+03:00",
+      "status": "approved",
+      "drafted_at": "2026-11-23T20:08:20+03:00",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet"
+        ]
+      },
+      "tg_msg": 1594,
+      "auto": true,
+      "decided_at": "2026-11-23T20:08:23.267034+03:00"
     }
   ],
   "scripts": {
