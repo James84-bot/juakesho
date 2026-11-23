@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-23T09:47:09.400727+00:00",
+  "fetched": "2026-11-23T11:42:05.833617+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -39,16 +39,16 @@
           "source": "BBC"
         },
         {
-          "title": "Álvarez sets up two as Atlético end Getafe’s unbeaten home league record at the Coliseum",
-          "url": "https://sports.yahoo.com/articles/lvarez-sets-two-atl-tico-071200750.html",
-          "source": "Yahoo Sports"
+          "title": "Ratings: Atlético dominate Getafe to end losing skid",
+          "url": "https://www.intothecalderon.com/atletico-madrid-player-ratings/30042/getafe-cf-0-3-atletico-de-madrid-player-ratings-la-liga-baena-alvarez-johnny-cardoso",
+          "source": "Into the Calderon"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "atalanta bc vs inter milan standings",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "Atalanta vs Inter Milan: Italian Serie A stats & head-to-head",
@@ -69,30 +69,8 @@
     },
     {
       "geo": "KE",
-      "title": "warriors vs celtics",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Celtics extend losing streak to 4 games with 88-87 loss to Warriors",
-          "url": "https://www.celticsblog.com/celtics-analysis/150856/celtics-extend-losing-streak-to-4-games-with-88-87-loss-to-warriors",
-          "source": "CelticsBlog"
-        },
-        {
-          "title": "WATCH: Steph Curry Erupts In Joy As Golden State Warriors Snaps Losing Streak",
-          "url": "https://www.sportscapemagazine.com/blog/watch-steph-curry-erupts-in-joy-as-golden-state-warriors-snaps-losing-streak",
-          "source": "Sportscape Magazine"
-        },
-        {
-          "title": "Jayson Tatum scores 27 points in loss to Warriors",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/jayson-tatum-scores-27-as-celtics-lose-fourth-straight",
-          "source": "NBC Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "arrest",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Seattle airport operator 'outraged' over ICE arrest of two passengers",
@@ -105,12 +83,34 @@
           "source": "The Guardian"
         },
         {
-          "title": "Lawyer: Father and daughter detained by ICE at Seattle airport were traveling to family baptism",
-          "url": "https://edition.cnn.com/2026/11/22/us/seattle-airport-ice-arrests",
-          "source": "CNN"
+          "title": "Port of Seattle's Statement on Today's ICE Enforcement Actions",
+          "url": "https://www.portseattle.org/news/port-seattles-statement-todays-ice-enforcement-actions",
+          "source": "Port of Seattle"
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "warriors vs celtics",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Celtics extend losing streak to 4 games with 88-87 loss to Warriors",
+          "url": "https://www.celticsblog.com/celtics-analysis/150856/celtics-extend-losing-streak-to-4-games-with-88-87-loss-to-warriors",
+          "source": "CelticsBlog"
+        },
+        {
+          "title": "Draymond Green breaks down last-second heroic defence against Jayson Tatum’s game-winner attempt",
+          "url": "https://www.hitc.com/draymond-green-breaks-down-last-second-heroic-defence-against-jayson-tatums-game-winner-attempt/",
+          "source": "HITC"
+        },
+        {
+          "title": "WATCH: Steph Curry Erupts In Joy As Golden State Warriors Snaps Losing Streak",
+          "url": "https://www.sportscapemagazine.com/blog/watch-steph-curry-erupts-in-joy-as-golden-state-warriors-snaps-losing-streak",
+          "source": "Sportscape Magazine"
+        }
+      ]
     },
     {
       "geo": "KE",
@@ -123,14 +123,14 @@
           "source": "The New York Times"
         },
         {
-          "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
-          "url": "https://www.cnn.com/2026/11/21/tech/anthropic-math-problem-ai",
-          "source": "CNN"
-        },
-        {
           "title": "Two groups verify mathematician’s claim that Claude helped prove mathematics problem",
           "url": "https://www.theguardian.com/technology/2026/nov/21/anthropic-riemann-hypothesis-solved-claude-ai",
           "source": "The Guardian"
+        },
+        {
+          "title": "Anthropic worker claims to have solved a Holy Grail of math problems with the help of AI",
+          "url": "https://www.cnn.com/2026/11/21/tech/anthropic-math-problem-ai",
+          "source": "CNN"
         }
       ]
     },
@@ -140,19 +140,41 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Torreense vs Benfica live stream, TV channel and kick-off time | Taça de Portugal",
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-torreense-v-benfica/blt6f7a81f17c29f987",
-          "source": "Goal.com"
-        },
-        {
           "title": "Torreense beaten by Benfica in Taca de Portugal before Celtic Europa League visit",
           "url": "https://www.bbc.com/sport/articles/cwdd124y69dzo?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bsport%5D-%5Bbizdev%5D-%5Bisapi%5D",
           "source": "BBC"
         },
         {
-          "title": "Benfica advances to Portuguese Cup round of 16",
-          "url": "https://operativmm.az/en/post/benfica-advances-to-portuguese-cup-round-of-16/88094",
-          "source": "Operativ Məlumat Mərkəzi"
+          "title": "\"We will fight for everything\"",
+          "url": "https://www.slbenfica.pt/en-us/agora/noticias/2026/11/22/futebol-jhon-duran-declaracoes-jogo-torreense-benfica-quarta-eliminatoria-taca-de-portugal",
+          "source": "Site Oficial do Sport Lisboa e Benfica"
+        },
+        {
+          "title": "Torreense vs Benfica live stream, TV channel and kick-off time | Taça de Portugal",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-torreense-v-benfica/blt6f7a81f17c29f987",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "atletico madrid",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Atletico's Simeone breaks La Liga victories record",
+          "url": "https://www.bbc.com/sport/football/articles/c5pv9kkwn3y3o",
+          "source": "BBC"
+        },
+        {
+          "title": "Winners and Losers: Simeone makes history as Pochettino suffers Anfield nightmare",
+          "url": "https://www.tribalfootball.com/article/soccer-laliga-winners-and-losers-simeone-makes-history-as-pochettino-suffers-anfield-nightmare-9e6db58a-ec2a-43af-a523-5f70b927ebae",
+          "source": "TribalFootball"
+        },
+        {
+          "title": "Simeone, en titulares: 345 victorias y \"el dueño\" Baena",
+          "url": "https://onefootball.com/en/video/simeone-en-titulares-345-victorias-y-el-dueno-baena-43823410",
+          "source": "OneFootball"
         }
       ]
     },
@@ -162,19 +184,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "'Why is saliva still not allowed?': 'Frustrated' Shubman Gill questions ICC rule after Wellington draw",
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/why-is-saliva-still-not-allowed-frustrated-shubman-gill-questions-icc-rule-after-wellington-draw/articleshow/136090656.cms",
+          "title": "New Zealand’s Mitchell, Phillips frustrate India as first Test ends in draw",
+          "url": "https://www.aljazeera.com/sports/2026/11/23/new-zealand-india-first-test-cricket-wtc-phillips-mitchell-nicholls",
+          "source": "Al Jazeera"
+        },
+        {
+          "title": "Are you choosing playing XI for 1st 3 days?: Saba Karim after 1st Test ends in draw | Team selection was slightly lopsided: Karim | Inshorts",
+          "url": "https://inshorts.com/en/news/are-you-choosing-playing-xi-for-1st-3-days---saba-karim-after-1st-test-ends-in-draw-1795425313395",
+          "source": "Inshorts"
+        },
+        {
+          "title": "India's WTC Final Scenario: How can Shubman Gill's men qualify for the 2027 World Test Championship final",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/wtc-points-table-scenario-how-can-india-qualify-for-the-2027-world-test-championship-final-after-new-zealand-draw/articleshow/136090150.cms",
           "source": "The Times of India"
-        },
-        {
-          "title": "New Zealand battle to 239-5 to draw first Test against India",
-          "url": "https://www.afp.com/en/new-zealand-battle-239-5-draw-first-test-against-india",
-          "source": "AFP.com"
-        },
-        {
-          "title": "Where is Kuldeep or Manav Suthar?: Sourav Ganguly questions India's lack of specialist spinner after Wellington Test draw",
-          "url": "https://www.indiagazette.com/news/279450190/where-is-kuldeep-or-manav-suthar-sourav-ganguly-questions-india-lack-of-specialist-spinner-after-wellington-test-draw",
-          "source": "www.indiagazette.com"
         }
       ]
     }
@@ -182,10 +204,6 @@
   "dropped": [
     {
       "title": "brentford vs everton",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "inter milan",
       "why": "unsafe: 'Odds'"
     }
   ],
