@@ -49,7 +49,7 @@
         "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUzZYUTVmcEc0NG9sS3VqOGZrSlJoZGtwc284SGVEd2E1X0paSGNiMlJ4cC1wdmltZEpKZUxDWUtBYTVJOU9KMDd1bHl1WHYzSXBGQXFPOU5Ba2RpMXplUGw0TDBWOFVBQlN2RGR0UkNXRE9nRjZvQ2FFS29yVDZKQzlLZnA4bC1OOVpLYXlaR09WNk9jUkFUUE9rb1dzSjVDWlE?oc=5",
         "published": "2026-11-21"
       },
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "'1' is not in this post's material (Global oil prices fall ahead of December EPRA fuel price review): use only the numbers it gives",
@@ -787,7 +787,9 @@
       "reel": true,
       "tg_msg": 1571,
       "auto": true,
-      "decided_at": "2026-11-23T12:45:03.365615+03:00"
+      "decided_at": "2026-11-23T12:45:03.365615+03:00",
+      "photo_checked": "2026-11-23T12:49:22.842210+03:00",
+      "photo_fit": "2026-11-23T12:49:22.842222+03:00"
     }
   ],
   "scripts": {
