@@ -1647,6 +1647,23 @@ def score_bar(p: dict) -> float:
     return drafter.WEAK_FLOOR if p.get("hot") else drafter.CRITIC_BAR
 
 
+def _recheck_warnings(p: dict) -> bool:
+    """A post held only by guard warnings is checked again with today's rules, so a rule fixed since it was drafted
+    (23 Nov: 'Have you checked your iTax portal...?' read as no action) frees it, and a rule added since can hold it.
+    Errors from anywhere else (the editor's score) are never touched. True if the stored result changed."""
+    import guard
+    g = p.get("guard") or {}
+    if g.get("errors") or not g.get("warnings"):
+        return False
+    rep = guard.check(p)
+    new = {"errors": rep.errors, "warnings": rep.warnings}
+    if new == {"errors": [], "warnings": g["warnings"]}:
+        return False
+    p["guard"] = new
+    log(f"{p['id']}: checked again: {'; '.join(rep.errors + rep.warnings) or 'no warnings left'}")
+    return True
+
+
 def auto_approve(dry_run: bool = False) -> list[str]:
     """Approves every awaiting post that passes auto_ok (when the policy allows), and every carousel whose slides
     all pass. Anything else waits for you."""
@@ -1663,6 +1680,8 @@ def auto_approve(dry_run: bool = False) -> list[str]:
         for p in data["posts"]:
             if p["status"] != "awaiting" or p.get("group"):
                 continue
+            if _recheck_warnings(p):
+                changed = True
             why = auto_ok(p)
             if why:
                 continue
@@ -2770,6 +2789,25 @@ def _facebook_or_later(label: str, members: list[dict]) -> str | None:
     return fb_id
 
 
+def _without_meta(label: str, post: dict) -> bool:
+    """23 Nov: the Meta token died and a whole day of approved Reels went nowhere, YouTube included, because
+    publishing waited for Instagram. A Reel due while Meta is down goes to YouTube Shorts and TikTok on time; Instagram
+    and Facebook follow when the token is back (within LATE_LIMIT), and those two are never sent again. Each is tried
+    once (`yt_tried`, `tt_done`), so a failure is reported once, not every tick. True if the post changed."""
+    if not post.get("reel") or (post.get("yt_tried") and post.get("tt_done")):
+        return False
+    if not post.get("yt_tried"):
+        post["yt_tried"] = now().isoformat()
+        _youtube_short(label, post)
+    if not post.get("tt_done"):
+        post["tt_done"] = now().isoformat()
+        if not _tiktok_post(label, post):
+            _tiktok_package(label, post)
+    log(f"{post['id']}: out on YouTube/TikTok while Instagram waits for the Meta token" +
+        (f" (yt {post['yt_id']})" if post.get("yt_id") else ""))
+    return True
+
+
 def retry_pending(data: dict, label: str, meta: bool = True) -> bool:
     """Published posts still missing a platform: Facebook (fb_pending, up to FB_RETRIES tries within FB_LATE of going
     out) and YouTube (yt_pending: a Short never attempted, tried once). Returns True if anything changed."""
@@ -2831,6 +2869,8 @@ def publish(dry_run: bool = False) -> None:
                 continue
             if not connected:
                 waiting += 1  # keep it approved: it goes out once Instagram is connected (if still on time)
+                if not dry_run and _without_meta(label, first_of(members)):
+                    save_week(data)
                 continue
             if dry_run:
                 log(f"[dry-run] would publish {key} ({len(members)} image(s))")
@@ -2857,8 +2897,9 @@ def publish(dry_run: bool = False) -> None:
                     for m in members:
                         m["fb_story_id"] = fb_story
                 record_evidence(members)
-                _youtube_short(label, first_of(members))
-                if not _tiktok_post(label, first_of(members)):
+                if not first_of(members).get("yt_tried"):   # not already sent while Meta was down
+                    _youtube_short(label, first_of(members))
+                if not first_of(members).get("tt_done") and not _tiktok_post(label, first_of(members)):
                     _tiktok_package(label, first_of(members))
                 log(f"published {key} (ig {ig_id}, fb {fb_id})")
                 # one share link a day instead (fb_digest): the evening digest is the post worth putting on the profile

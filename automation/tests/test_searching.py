@@ -14,7 +14,7 @@ ITEMS = [
     {"title": "nottm forest vs man city", "traffic": "100K+", "news": [{"title": "Forest 1-2 City", "url": "https://a/2", "source": "BBC"}]},
     {"title": "mp arrested", "traffic": "90000+", "news": [{"title": "MP arrested over fraud claims", "url": "https://a/3", "source": "Star"}]},
     {"title": "kmtc intake", "traffic": "5,000+", "news": []},
-    {"title": "state house nairobi", "traffic": "2k+", "news": [{"title": "Ruto hosts governors", "url": "https://a/4", "source": "KBC"}]},
+    {"title": "state house nairobi", "traffic": "2k+", "news": [{"title": "Ruto hosts governors at State House", "url": "https://a/4", "source": "KBC"}]},
 ]
 
 
@@ -30,6 +30,18 @@ class Picking(unittest.TestCase):
                  {"title": "getafe vs atletico madrid", "traffic": "1K+", "news": [{"title": "Getafe 0-1 Atlético", "url": "https://g/1"}]},
                  {"title": "víctor muñoz", "traffic": "200+", "news": [{"title": "Víctor Muñoz on the move", "url": "https://v/1"}]}]
         self.assertEqual([r["query"] for r in searching.pick(items)], ["getafe vs atlético", "víctor muñoz"])
+
+    def test_last_nights_misses_are_left_out(self):
+        # 23 Nov, live: the five rows Google gave, and what each should do
+        rows = [("citizen tv live now", "2K+", "Citizen TV's KES 350 YouTube Package Tests Whether Kenyans Will Pay"),
+                ("jensen huang", "2K+", "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director"),
+                ("al-shamal vs al-ahli", "500+", "Al-Shamal vs Al Ahli: TV channel, live stream and kick-off time for AFC"),
+                ("forex factory", "500+", "How Global X Gold Bullion ETF (ASX:GXLD) Tracks Gold in Australian Dollars"),
+                ("xabi alonso", "200+", "Dibu Martínez volvió a jugar en Chelsea tras la fractura de mandíbula"),
+                ("víctor muñoz", "200+", "Victor Munoz linked with a January move")]
+        items = [{"title": q, "traffic": v, "news": [{"title": h, "url": f"https://n/{i}", "source": "x"}]}
+                 for i, (q, v, h) in enumerate(rows)]
+        self.assertEqual([r["query"] for r in searching.pick(items)], ["jensen huang", "víctor muñoz"])
 
     def test_traffic_reads_every_way_google_writes_it(self):
         self.assertEqual([searching.traffic(x) for x in ("50K+", "50,000+", "2k+", "1.5M+", "")], [50000, 50000, 2000, 1500000, 0])

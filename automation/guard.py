@@ -185,7 +185,8 @@ GENERIC_CLOSER = re.compile(
     r"spread (the )?awareness|share this (post|reel|video|with everyone)|tag (a|your) friends?\W*$|follow (us )?for more|"
     r"like (and|&) share|stay informed|what do you think\??\W*$|let us know what you think|drop a comment below|"
     r"don'?t forget to|turn on notifications|link in bio)", re.I)
-CLOSER_ACTION = re.compile(r"\b(send|share|save|tag|tell|forward|screenshot|compare|check|reply|comment|vote|bring|ask|count|report|call|submit|read|track|verify|follow|find|write|visit|demand|compare)\b", re.I)
+# any form of the verb: 23 Nov, "Have you checked your iTax portal...?" was held as "no action" over 'checked'
+CLOSER_ACTION = re.compile(r"\b(send|share|save|tag|tell|forward|screenshot|compare|check|reply|comment|vote|bring|ask|count|report|call|submit|read|track|verify|verifie|follow|find|write|visit|demand)(s|es|d|ed|ing|ted|ting)?\b", re.I)
 
 
 def closer_problem(last: str) -> str:

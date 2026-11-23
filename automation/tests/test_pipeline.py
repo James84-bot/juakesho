@@ -531,6 +531,53 @@ class PublishTests(TempWeeks):
         self.assertEqual(sent, ["p"])
         self.assertEqual(pl.load_week("2026-W41")["posts"][0]["fb_pending"]["tries"], 1)
 
+    def test_a_reel_goes_to_youtube_and_tiktok_on_time_while_meta_is_down_and_never_twice(self):
+        # 23 Nov: the token died and a day of approved Reels went nowhere, YouTube included
+        self.week([{"id": "r", "status": "approved", "publish_at": self.PAST, "caption": "Hi", "reel": True},
+                   {"id": "s", "status": "approved", "publish_at": self.PAST, "caption": "Hi", "size": "story"}])
+        yt, tt = [], []
+        # like the real ones, these do nothing for a post that is not a Reel
+        hooks = lambda: (mock.patch.object(pl, "_youtube_short", lambda label, p: p.get("reel") and (yt.append(p["id"]), p.update(yt_id="Y"))),
+                         mock.patch.object(pl, "_tiktok_post", lambda label, p: p.get("reel") and tt.append(p["id"]) or False),
+                         mock.patch.object(pl, "_tiktok_package", lambda label, p: p.get("reel") and tt.append("pkg")),
+                         mock.patch.object(pl, "_notify", lambda m: None), mock.patch.object(pl, "log", lambda m: None))
+        try:
+            pl.STORED_TOKEN["dead"] = "expired"
+            with hooks()[0], hooks()[1], hooks()[2], hooks()[3], hooks()[4]:
+                pl.publish()
+                pl.publish()                                       # the next tick sends nothing again
+        finally:
+            pl.STORED_TOKEN.pop("dead", None)
+        self.assertEqual((yt, tt), (["r"], ["r", "pkg"]))          # the Story waits: it is Instagram's alone
+        r = pl.load_week("2026-W41")["posts"][0]
+        self.assertEqual((r["status"], r["yt_id"]), ("approved", "Y"))   # still waiting for Instagram
+        calls = []
+
+        def fake(method, url, fields=None, files=None, timeout=60):
+            calls.append(url.split("/v26.0/")[-1].split("?")[0])
+            return {"status_code": "FINISHED"} if method == "GET" else {"id": f"id{len(calls)}", "ok": True}
+        with hooks()[0], hooks()[1], hooks()[2], hooks()[3], hooks()[4], mock.patch.object(pl, "http", fake), \
+                mock.patch.object(pl, "already_on_instagram", lambda post: None):
+            pl.publish()                                           # the token is back
+        self.assertEqual(pl.load_week("2026-W41")["posts"][0].get("last_error"), None)
+        self.assertIn("ig/media_publish", calls)
+        self.assertEqual(pl.load_week("2026-W41")["posts"][0]["status"], "published")
+        self.assertEqual((yt, tt), (["r"], ["r", "pkg"]))          # YouTube and TikTok are not sent twice
+
+    def test_a_post_held_by_an_old_warning_is_checked_with_todays_rules(self):
+        beats = ["KRA just waived *Sh64bn* in tax penalties for nearly one million people.",
+                 "The amnesty covered penalties and interest on tax owed up to 2023.",
+                 "Have you checked your iTax portal to see your new balance?"]
+        old = ["closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do"]
+        p = {"id": "h", "template": "sauti", "reel": True, "hot": True, "beats": beats, "status": "awaiting",
+             "source_links": [{"title": "KRA waives Sh64bn", "link": "https://k/1"}], "guard": {"errors": [], "warnings": old}}
+        with mock.patch.object(pl, "log", lambda m: None):
+            self.assertTrue(pl._recheck_warnings(p))
+            self.assertNotIn("closer", " ".join(p["guard"]["warnings"]))
+            weak = {**p, "guard": {"errors": ["weak: editor scored 6/10"], "warnings": old}}
+            self.assertFalse(pl._recheck_warnings(weak))                   # the editor's verdict stands
+            self.assertEqual(weak["guard"]["errors"], ["weak: editor scored 6/10"])
+
     def test_metacheck_says_when_the_token_cannot_post(self):
         def fake_get(path, fields):
             if path == "debug_token":

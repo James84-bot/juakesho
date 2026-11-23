@@ -11,11 +11,26 @@ from __future__ import annotations
 
 import datetime as dt
 import re
+import unicodedata
 
 TOP = 5
 SERIES = "What Kenya is searching"
 # Searches for a way to watch or download (a TV stream, an app) are not news, and a stream may be a pirate one
-NAVIGATION = re.compile(r"\b(live ?stream(ing)?|watch (live|online)|stream(ing)? (free|online)|apk|free download)\b", re.I)
+NAVIGATION = re.compile(r"\b(live|live ?stream(ing)?|watch (live|online)|stream(ing)? (free|online)|apk|free download)\b", re.I)
+# a where-to-watch page is not news either (23 Nov: 'Al-Shamal vs Al Ahli: TV channel, live stream and kick-off time')
+WATCH_PAGE = re.compile(r"\b(where|how) to watch\b|\blive ?stream|\btv channel\b|\bkick-?off time\b", re.I)
+STOP = {"vs", "the", "and", "for", "fc", "news", "today", "kenya"}
+
+
+def _words(text: str) -> set[str]:
+    plain = unicodedata.normalize("NFKD", str(text or "")).encode("ascii", "ignore").decode().lower()
+    return {w for w in re.findall(r"[a-z0-9]{3,}", plain) if w not in STOP}
+
+
+def about_it(query: str, headline: str) -> bool:
+    """Google's headline is about the search (shares a word with it): 23 Nov, 'forex factory' came paired with an
+    Australian gold ETF story and 'xabi alonso' with a Spanish report on Dibu Martinez. Unrelated: left out."""
+    return bool(_words(query) & _words(headline))
 
 
 def traffic(label: str) -> int:
@@ -44,6 +59,8 @@ def pick(items: list[dict], n: int = TOP) -> list[dict]:
         head = news[0]
         if guard.CRIME_WORDS.search(f"{t['title']} {head['title']}") or head["url"] in seen:
             continue   # an allegation, or the same story as a bigger search already on the list
+        if WATCH_PAGE.search(head["title"]) or not about_it(t["title"], head["title"]):
+            continue
         seen.add(head["url"])
         out.append({"query": t["title"], "label": short(traffic(t.get("traffic", ""))), "title": head["title"][:110],
                     "source": head.get("source") or "", "url": head["url"]})
