@@ -1,40 +1,32 @@
 {
- "fetched": "2026-11-24T15:42:59.182323+00:00",
+ "fetched": "2026-11-24T16:24:40.426315+00:00",
  "x": [
   {
-   "name": "Sarit Expo Centre",
-   "tweets": ""
+   "name": "Senegal",
+   "tweets": "168K"
+  },
+  {
+   "name": "Morocco",
+   "tweets": "43K"
   },
   {
    "name": "KSH5 Billion Injected",
    "tweets": ""
   },
   {
-   "name": "#NCBAKMIMotorShow",
+   "name": "#KnowHeIsComing",
    "tweets": ""
-  },
-  {
-   "name": "#EABLA2026",
-   "tweets": ""
-  },
-  {
-   "name": "Senegal",
-   "tweets": "108K"
-  },
-  {
-   "name": "Morocco",
-   "tweets": "33K"
   },
   {
    "name": "#JoyfulTurns17",
    "tweets": ""
   },
   {
-   "name": "#PataMakaoNaBomaYangu",
+   "name": "#KUCultureWeek2026",
    "tweets": ""
   },
   {
-   "name": "#KUCultureWeek2026",
+   "name": "#PataMakaoNaBomaYangu",
    "tweets": ""
   },
   {
@@ -46,7 +38,7 @@
    "tweets": ""
   },
   {
-   "name": "Kenya Red Cross",
+   "name": "#NCBAKMIMotorShow",
    "tweets": ""
   },
   {
@@ -58,11 +50,7 @@
    "tweets": ""
   },
   {
-   "name": "Bridge Loan Product",
-   "tweets": ""
-  },
-  {
-   "name": "KSh 150,000",
+   "name": "Sarit Expo Centre",
    "tweets": ""
   },
   {
@@ -70,11 +58,19 @@
    "tweets": ""
   },
   {
+   "name": "AFCON 2025",
+   "tweets": "47K"
+  },
+  {
    "name": "The Motor Show Is Back",
    "tweets": ""
   },
   {
-   "name": "Court of Arbitration for Sport",
+   "name": "KSh 150,000",
+   "tweets": ""
+  },
+  {
+   "name": "Group Lending Product",
    "tweets": ""
   },
   {
@@ -86,10 +82,6 @@
    "tweets": ""
   },
   {
-   "name": "Joyful Women",
-   "tweets": ""
-  },
-  {
    "name": "mwelekeo insights",
    "tweets": ""
   },
@@ -98,12 +90,16 @@
    "tweets": ""
   },
   {
+   "name": "Joyful Women",
+   "tweets": ""
+  },
+  {
    "name": "powering likuyani",
    "tweets": ""
   },
   {
    "name": "SEVENTEEN",
-   "tweets": "58K"
+   "tweets": "52K"
   },
   {
    "name": "Asante Rais",
@@ -114,11 +110,15 @@
    "tweets": ""
   },
   {
-   "name": "Mövenpick Hotel",
+   "name": "Court of Arbitration for Sport",
+   "tweets": "14K"
+  },
+  {
+   "name": "Bridge Loan Product",
    "tweets": ""
   },
   {
-   "name": "Pesa Mfukoni",
+   "name": "Mövenpick Hotel",
    "tweets": ""
   }
  ],
@@ -126,156 +126,291 @@
   {
    "title": "Breaking Ground for Bamburi Cement Clinker Plant, Matuga, Kwale",
    "channel": "State House Kenya",
-   "views": 2125,
+   "views": 2994,
    "published": "2026-11-24T14:56:03+00:00",
-   "per_hour": 2125,
+   "per_hour": 2027,
    "url": "https://www.youtube.com/watch?v=jOQ6E_o_wyg",
    "short": "https://youtube.com/shorts/jOQ6E_o_wyg"
   },
   {
-   "title": "Viongozi Nyanza washtumu ODM kwa kudunisha vyama vingine",
-   "channel": "Citizen TV",
-   "views": 5530,
-   "published": "2026-11-24T10:34:22+00:00",
-   "per_hour": 1075,
-   "url": "https://www.youtube.com/watch?v=QrlM6B6Q-LI",
-   "short": "https://youtube.com/shorts/QrlM6B6Q-LI"
-  },
-  {
    "title": "Police clash with Katani residents protesting poor roads",
    "channel": "Citizen TV",
-   "views": 1505,
+   "views": 3518,
    "published": "2026-11-24T13:24:08+00:00",
-   "per_hour": 650,
+   "per_hour": 1169,
    "url": "https://www.youtube.com/watch?v=EQ6xaCro1SA",
    "short": "https://youtube.com/shorts/EQ6xaCro1SA"
   },
   {
+   "title": "Viongozi Nyanza washtumu ODM kwa kudunisha vyama vingine",
+   "channel": "Citizen TV",
+   "views": 6460,
+   "published": "2026-11-24T10:34:22+00:00",
+   "per_hour": 1106,
+   "url": "https://www.youtube.com/watch?v=QrlM6B6Q-LI",
+   "short": "https://youtube.com/shorts/QrlM6B6Q-LI"
+  },
+  {
+   "title": "IEBC cites high costs in possible shift from livestreaming 2027 election results",
+   "channel": "Citizen TV",
+   "views": 1985,
+   "published": "2026-11-24T13:26:09+00:00",
+   "per_hour": 667,
+   "url": "https://www.youtube.com/watch?v=KYUsxrW7XKo",
+   "short": "https://youtube.com/shorts/KYUsxrW7XKo"
+  },
+  {
+   "title": "KNH health workers down tools over salary delays and welfare grievances",
+   "channel": "Citizen TV",
+   "views": 1948,
+   "published": "2026-11-24T13:28:40+00:00",
+   "per_hour": 664,
+   "url": "https://www.youtube.com/watch?v=AGt-GEl-myM",
+   "short": "https://youtube.com/shorts/AGt-GEl-myM"
+  },
+  {
    "title": "Mchuano wa soka wa taifa Super Cup waanza leo katika uwanja wa serani kaunti ya Mombasa",
    "channel": "Citizen TV",
-   "views": 2943,
+   "views": 3091,
    "published": "2026-11-24T10:45:45+00:00",
-   "per_hour": 594,
+   "per_hour": 547,
    "url": "https://www.youtube.com/watch?v=5YdGAX4ID3A",
    "short": "https://youtube.com/shorts/5YdGAX4ID3A"
   },
   {
    "title": "THE NATIONAL ASSEMBLY PROCEEDINGS, TUESDAY,  NOVEMBER 24TH,  2026,  AFTERNOON.",
    "channel": "Parliament of Kenya",
-   "views": 2256,
+   "views": 2548,
    "published": "2026-11-24T11:20:00+00:00",
-   "per_hour": 515,
+   "per_hour": 502,
    "url": "https://www.youtube.com/watch?v=7U4WHClTnXQ",
    "short": "https://youtube.com/shorts/7U4WHClTnXQ"
   },
   {
-   "title": "Vurugu Kwale kuhusu kuapishwa kwa wawakilishi wadi wa UDA, ODM na UDM",
-   "channel": "Citizen TV",
-   "views": 2656,
-   "published": "2026-11-24T10:14:07+00:00",
-   "per_hour": 485,
-   "url": "https://www.youtube.com/watch?v=bmmj3k6szOI",
-   "short": "https://youtube.com/shorts/bmmj3k6szOI"
-  },
-  {
-   "title": "IEBC Yakataa Gharama za Kuonyesha Matokeo Mubashara, Upinzani Wataka Uwazi wa Uchaguzi",
-   "channel": "KTN News",
-   "views": 645,
-   "published": "2026-11-24T14:10:09+00:00",
-   "per_hour": 417,
-   "url": "https://www.youtube.com/watch?v=jvxANOFh2QM",
-   "short": "https://youtube.com/shorts/jvxANOFh2QM"
-  },
-  {
-   "title": "Ngombeni, Kwale County",
-   "channel": "State House Kenya",
-   "views": 373,
-   "published": "2026-11-24T14:59:31+00:00",
-   "per_hour": 373,
-   "url": "https://www.youtube.com/watch?v=qBgokdSbfC4",
-   "short": "https://youtube.com/shorts/qBgokdSbfC4"
-  },
-  {
-   "title": "IEBC cites high costs in possible shift from livestreaming 2027 election results",
-   "channel": "Citizen TV",
-   "views": 835,
-   "published": "2026-11-24T13:26:09+00:00",
-   "per_hour": 366,
-   "url": "https://www.youtube.com/watch?v=KYUsxrW7XKo",
-   "short": "https://youtube.com/shorts/KYUsxrW7XKo"
+   "title": "IEBC: Haiwezekani kupeperusha matangazo ya moja kwa moja katika vituo vyote vya kupigia kura | Makuu",
+   "channel": "NTV Kenya",
+   "views": 431,
+   "published": "2026-11-24T15:42:45+00:00",
+   "per_hour": 431,
+   "url": "https://www.youtube.com/watch?v=wn-Hz5GWE-0",
+   "short": "https://youtube.com/shorts/wn-Hz5GWE-0"
   },
   {
    "title": "Viongozi wa Kenya Kwanza Bonde la Ufa washambulia upinzani kwa kususia mazungumzo na IEBC",
    "channel": "Citizen TV",
-   "views": 1762,
+   "views": 1867,
    "published": "2026-11-24T10:37:01+00:00",
-   "per_hour": 346,
+   "per_hour": 322,
    "url": "https://www.youtube.com/watch?v=A8qOmS9oSWM",
    "short": "https://youtube.com/shorts/A8qOmS9oSWM"
   },
   {
-   "title": "John Methu Aitaka IEBC Kutoa Uhakikisho wa Uchaguzi Huru na wa Haki 2027",
+   "title": "IEBC Yatetea Mifumo ya Uchaguzi, Maswali Yaibuka Mkataba wa Smartmatic Unapokamilika",
    "channel": "KTN News",
-   "views": 513,
-   "published": "2026-11-24T14:11:21+00:00",
-   "per_hour": 336,
-   "url": "https://www.youtube.com/watch?v=TsVmx67UPJ0",
-   "short": "https://youtube.com/shorts/TsVmx67UPJ0"
+   "views": 320,
+   "published": "2026-11-24T16:09:30+00:00",
+   "per_hour": 320,
+   "url": "https://www.youtube.com/watch?v=2km2KqbLNkM",
+   "short": "https://youtube.com/shorts/2km2KqbLNkM"
   },
   {
    "title": "Wakazi Lokichar wataka usalama kuimarishwa kabla ya usafirishaji wa mafuta ya Turkana kuanza",
    "channel": "Citizen TV",
-   "views": 1648,
+   "views": 1810,
    "published": "2026-11-24T10:18:41+00:00",
-   "per_hour": 305,
+   "per_hour": 297,
    "url": "https://www.youtube.com/watch?v=Lzv1SY0rzXI",
    "short": "https://youtube.com/shorts/Lzv1SY0rzXI"
   },
   {
-   "title": "KNH health workers down tools over salary delays and welfare grievances",
-   "channel": "Citizen TV",
-   "views": 678,
-   "published": "2026-11-24T13:28:40+00:00",
-   "per_hour": 303,
-   "url": "https://www.youtube.com/watch?v=AGt-GEl-myM",
-   "short": "https://youtube.com/shorts/AGt-GEl-myM"
+   "title": "The Senate Plenary, Tuesday  24th November 2026. Afternoon  Session",
+   "channel": "Parliament of Kenya",
+   "views": 2104,
+   "published": "2026-11-24T09:20:19+00:00",
+   "per_hour": 297,
+   "url": "https://www.youtube.com/watch?v=_yQjouCX07k",
+   "short": "https://youtube.com/shorts/_yQjouCX07k"
+  },
+  {
+   "title": "Ngombeni, Kwale County",
+   "channel": "State House Kenya",
+   "views": 380,
+   "published": "2026-11-24T14:59:31+00:00",
+   "per_hour": 268,
+   "url": "https://www.youtube.com/watch?v=qBgokdSbfC4",
+   "short": "https://youtube.com/shorts/qBgokdSbfC4"
   },
   {
    "title": "Kenya yaanza kuchagua wawakilishi wa kupanga mwelekeo ya maendeleo baada ya 2030",
    "channel": "Citizen TV",
-   "views": 1459,
+   "views": 1562,
    "published": "2026-11-24T10:32:36+00:00",
-   "per_hour": 282,
+   "per_hour": 266,
    "url": "https://www.youtube.com/watch?v=Rxn3SV4qF6U",
    "short": "https://youtube.com/shorts/Rxn3SV4qF6U"
   },
   {
-   "title": "The Senate Plenary, Tuesday  24th November 2026. Afternoon  Session",
-   "channel": "Parliament of Kenya",
-   "views": 1729,
-   "published": "2026-11-24T09:20:19+00:00",
-   "per_hour": 271,
-   "url": "https://www.youtube.com/watch?v=_yQjouCX07k",
-   "short": "https://youtube.com/shorts/_yQjouCX07k"
+   "title": "Makuu: Ruto ahitimisha ziara Magharibi, Mvutano wa 'Paybill' hospitalini",
+   "channel": "NTV Kenya",
+   "views": 258,
+   "published": "2026-11-24T15:37:38+00:00",
+   "per_hour": 258,
+   "url": "https://www.youtube.com/watch?v=tYIps0yNONY",
+   "short": "https://youtube.com/shorts/tYIps0yNONY"
   }
  ],
  "errors": {},
  "catalog": [
   {
+   "title": "KNH Yakabiliwa na Tishio la Mgomo, Madaktari Watoa Makataa ya Saa 72",
+   "channel": "KTN News",
+   "views": 14,
+   "published": "2026-11-24T16:15:53+00:00",
+   "per_hour": 14,
+   "url": "https://www.youtube.com/watch?v=HS_7f9DP2i0",
+   "short": "https://youtube.com/shorts/HS_7f9DP2i0"
+  },
+  {
+   "title": "MDG Yapanua Ushawishi Nyanza, ODM Yakabiliwa na Hofu ya Kupoteza Ngome Yake",
+   "channel": "KTN News",
+   "views": 36,
+   "published": "2026-11-24T16:14:58+00:00",
+   "per_hour": 36,
+   "url": "https://www.youtube.com/watch?v=4CEm0wTD1KE",
+   "short": "https://youtube.com/shorts/4CEm0wTD1KE"
+  },
+  {
+   "title": "Rais William Ruto awataka wanasiasa kujitenga na cheche za chuki na ghasia",
+   "channel": "NTV Kenya",
+   "views": 10,
+   "published": "2026-11-24T16:12:41+00:00",
+   "per_hour": 10,
+   "url": "https://www.youtube.com/watch?v=DfAteEgz8hk",
+   "short": "https://youtube.com/shorts/DfAteEgz8hk"
+  },
+  {
+   "title": "UNSA President Ahmed Rashid responds after video showing him and goons manhandling people emerges",
+   "channel": "Citizen TV",
+   "views": 0,
+   "published": "2026-11-24T16:11:52+00:00",
+   "per_hour": 0,
+   "url": "https://www.youtube.com/watch?v=9kPdBFb2ze4",
+   "short": "https://youtube.com/shorts/9kPdBFb2ze4"
+  },
+  {
+   "title": "IGAD Yatoa Wito kwa Serikali Kulinda Uhuru wa IEBC Kabla ya Uchaguzi wa 2027",
+   "channel": "KTN News",
+   "views": 166,
+   "published": "2026-11-24T16:10:25+00:00",
+   "per_hour": 166,
+   "url": "https://www.youtube.com/watch?v=RDnUrsG46ms",
+   "short": "https://youtube.com/shorts/RDnUrsG46ms"
+  },
+  {
+   "title": "IEBC Yatetea Mifumo ya Uchaguzi, Maswali Yaibuka Mkataba wa Smartmatic Unapokamilika",
+   "channel": "KTN News",
+   "views": 320,
+   "published": "2026-11-24T16:09:30+00:00",
+   "per_hour": 320,
+   "url": "https://www.youtube.com/watch?v=2km2KqbLNkM",
+   "short": "https://youtube.com/shorts/2km2KqbLNkM"
+  },
+  {
+   "title": "Tukafunge: Kama ungekuwa rais wa Kenya kwa saa 24 pekee, ni sheria gani ya kipekee ungepitisha?",
+   "channel": "NTV Kenya",
+   "views": 26,
+   "published": "2026-11-24T16:02:50+00:00",
+   "per_hour": 26,
+   "url": "https://www.youtube.com/watch?v=GFlXsBMJbhY",
+   "short": "https://youtube.com/shorts/GFlXsBMJbhY"
+  },
+  {
+   "title": "Vijana katika eneo bunge la Teso Kaskazini, kaunti ya Busia, washiriki katika mbio za nyika",
+   "channel": "NTV Kenya",
+   "views": 14,
+   "published": "2026-11-24T15:57:06+00:00",
+   "per_hour": 14,
+   "url": "https://www.youtube.com/watch?v=DGgpShq0s9E",
+   "short": "https://youtube.com/shorts/DGgpShq0s9E"
+  },
+  {
+   "title": "Wakulima wa miraa wataka kujua hatima ya ahadi walizopewa na Rais Ruto wakati wa kampeni za 2022",
+   "channel": "NTV Kenya",
+   "views": 44,
+   "published": "2026-11-24T15:54:51+00:00",
+   "per_hour": 44,
+   "url": "https://www.youtube.com/watch?v=5GcjemA3Jf4",
+   "short": "https://youtube.com/shorts/5GcjemA3Jf4"
+  },
+  {
+   "title": "Kajiado: Wajane katika eneo la Kimana watafuta msaada wa kifedha ili kujitegemea kiuchumi",
+   "channel": "NTV Kenya",
+   "views": 25,
+   "published": "2026-11-24T15:51:21+00:00",
+   "per_hour": 25,
+   "url": "https://www.youtube.com/watch?v=3XVBqXPtakY",
+   "short": "https://youtube.com/shorts/3XVBqXPtakY"
+  },
+  {
+   "title": "Turkana: Wakazi wana matumaini baada ya uzinduzi rasmi wa uchimbaji mafuta",
+   "channel": "NTV Kenya",
+   "views": 25,
+   "published": "2026-11-24T15:49:19+00:00",
+   "per_hour": 25,
+   "url": "https://www.youtube.com/watch?v=lnGKTB6KBxw",
+   "short": "https://youtube.com/shorts/lnGKTB6KBxw"
+  },
+  {
+   "title": "Nyamira: Katika wadi ya Bomwagamo wakazi wakata kauli ya kukomesha uhuni katika siasa",
+   "channel": "NTV Kenya",
+   "views": 35,
+   "published": "2026-11-24T15:45:50+00:00",
+   "per_hour": 35,
+   "url": "https://www.youtube.com/watch?v=RywD94AZ8zA",
+   "short": "https://youtube.com/shorts/RywD94AZ8zA"
+  },
+  {
+   "title": "IEBC: Haiwezekani kupeperusha matangazo ya moja kwa moja katika vituo vyote vya kupigia kura | Makuu",
+   "channel": "NTV Kenya",
+   "views": 431,
+   "published": "2026-11-24T15:42:45+00:00",
+   "per_hour": 431,
+   "url": "https://www.youtube.com/watch?v=wn-Hz5GWE-0",
+   "short": "https://youtube.com/shorts/wn-Hz5GWE-0"
+  },
+  {
+   "title": "Wakazi wa Ndiwa wafunzwa kuhusu aina mbalimbali za nyoka wakati wa kambi ya matibabu ya bure",
+   "channel": "NTV Kenya",
+   "views": 107,
+   "published": "2026-11-24T15:39:49+00:00",
+   "per_hour": 107,
+   "url": "https://www.youtube.com/watch?v=63OIhyhJ-SE",
+   "short": "https://youtube.com/shorts/63OIhyhJ-SE"
+  },
+  {
+   "title": "Makuu: Ruto ahitimisha ziara Magharibi, Mvutano wa 'Paybill' hospitalini",
+   "channel": "NTV Kenya",
+   "views": 258,
+   "published": "2026-11-24T15:37:38+00:00",
+   "per_hour": 258,
+   "url": "https://www.youtube.com/watch?v=tYIps0yNONY",
+   "short": "https://youtube.com/shorts/tYIps0yNONY"
+  },
+  {
    "title": "Joyful Women Organisation 17th Anniversary Celebration",
    "channel": "State House Kenya",
-   "views": 14,
+   "views": 28,
    "published": "2026-11-24T15:10:15+00:00",
-   "per_hour": 14,
+   "per_hour": 23,
    "url": "https://www.youtube.com/watch?v=UUHj9eTfAIg",
    "short": "https://youtube.com/shorts/UUHj9eTfAIg"
   },
   {
    "title": "HISTORIC DAY IN NZOIA SUGAR FACTORY",
    "channel": "State House Kenya",
-   "views": 21,
+   "views": 45,
    "published": "2026-11-24T15:08:38+00:00",
-   "per_hour": 21,
+   "per_hour": 36,
    "url": "https://www.youtube.com/watch?v=4xAskzNDhbE",
    "short": "https://youtube.com/shorts/4xAskzNDhbE"
   },
@@ -291,45 +426,45 @@
   {
    "title": "Ngombeni, Kwale County",
    "channel": "State House Kenya",
-   "views": 373,
+   "views": 380,
    "published": "2026-11-24T14:59:31+00:00",
-   "per_hour": 373,
+   "per_hour": 268,
    "url": "https://www.youtube.com/watch?v=qBgokdSbfC4",
    "short": "https://youtube.com/shorts/qBgokdSbfC4"
   },
   {
    "title": "Breaking Ground for Bamburi Cement Clinker Plant, Matuga, Kwale",
    "channel": "State House Kenya",
-   "views": 2125,
+   "views": 2994,
    "published": "2026-11-24T14:56:03+00:00",
-   "per_hour": 2125,
+   "per_hour": 2027,
    "url": "https://www.youtube.com/watch?v=jOQ6E_o_wyg",
    "short": "https://youtube.com/shorts/jOQ6E_o_wyg"
   },
   {
    "title": "Vijana 400 Busia Wapatiwa Mafunzo ya Kuepuka Pombe na Mihadarati Wakati wa Sherehe",
    "channel": "KTN News",
-   "views": 22,
+   "views": 77,
    "published": "2026-11-24T14:22:44+00:00",
-   "per_hour": 16,
+   "per_hour": 38,
    "url": "https://www.youtube.com/watch?v=yTzUltydP7w",
    "short": "https://youtube.com/shorts/yTzUltydP7w"
   },
   {
    "title": "Award of Cheques to Joyful Women Organization groups",
    "channel": "State House Kenya",
-   "views": 8,
+   "views": 18,
    "published": "2026-11-24T14:22:16+00:00",
-   "per_hour": 6,
+   "per_hour": 9,
    "url": "https://www.youtube.com/watch?v=yxvWsYQCorE",
    "short": "https://youtube.com/shorts/yxvWsYQCorE"
   },
   {
    "title": "BIRDS EYE VIEW: Joyful Women Organization 17th Anniversary Celebrations at State House, Nairobi",
    "channel": "State House Kenya",
-   "views": 8,
+   "views": 15,
    "published": "2026-11-24T14:22:08+00:00",
-   "per_hour": 6,
+   "per_hour": 7,
    "url": "https://www.youtube.com/watch?v=m3xvYAwe06E",
    "short": "https://youtube.com/shorts/m3xvYAwe06E"
   },
@@ -338,16 +473,16 @@
    "channel": "State House Kenya",
    "views": 6,
    "published": "2026-11-24T14:21:55+00:00",
-   "per_hour": 4,
+   "per_hour": 3,
    "url": "https://www.youtube.com/watch?v=gQy1jMWTCIM",
    "short": "https://youtube.com/shorts/gQy1jMWTCIM"
   },
   {
    "title": "Vijana 400 Busia Wapatiwa Mafunzo ya Kuepuka Pombe na Mihadarati Wakati wa Sherehe",
    "channel": "KTN News",
-   "views": 20,
+   "views": 44,
    "published": "2026-11-24T14:21:53+00:00",
-   "per_hour": 15,
+   "per_hour": 22,
    "url": "https://www.youtube.com/watch?v=uoQafa88S5Q",
    "short": "https://youtube.com/shorts/uoQafa88S5Q"
   },
@@ -356,7 +491,7 @@
    "channel": "KTN News",
    "views": 16,
    "published": "2026-11-24T14:21:46+00:00",
-   "per_hour": 12,
+   "per_hour": 8,
    "url": "https://www.youtube.com/watch?v=r8OsI6CITW0",
    "short": "https://youtube.com/shorts/r8OsI6CITW0"
   },
@@ -365,14 +500,14 @@
    "channel": "State House Kenya",
    "views": 3,
    "published": "2026-11-24T14:21:46+00:00",
-   "per_hour": 2,
+   "per_hour": 1,
    "url": "https://www.youtube.com/watch?v=rDA7mN38S-Y",
    "short": "https://youtube.com/shorts/rDA7mN38S-Y"
   },
   {
    "title": "Pres. Ruto: The contribution of Mothers to any child is incomparable to the contribution of men",
    "channel": "State House Kenya",
-   "views": 1,
+   "views": 2,
    "published": "2026-11-24T14:21:34+00:00",
    "per_hour": 1,
    "url": "https://www.youtube.com/watch?v=KlCHV7lUPaE",
@@ -392,14 +527,14 @@
    "channel": "State House Kenya",
    "views": 1,
    "published": "2026-11-24T14:20:38+00:00",
-   "per_hour": 1,
+   "per_hour": 0,
    "url": "https://www.youtube.com/watch?v=7OrM93t57W0",
    "short": "https://youtube.com/shorts/7OrM93t57W0"
   },
   {
    "title": "Pres. Ruto: Payout for normal delivery and CS delivery enhanced under SHA",
    "channel": "State House Kenya",
-   "views": 5,
+   "views": 8,
    "published": "2026-11-24T14:20:33+00:00",
    "per_hour": 4,
    "url": "https://www.youtube.com/watch?v=RrX4Szqe8ek",
@@ -408,16 +543,16 @@
   {
    "title": "Pres. Ruto: Credit to groups borrowing from Hustler Fund to be enhanced",
    "channel": "State House Kenya",
-   "views": 0,
+   "views": 4,
    "published": "2026-11-24T14:20:27+00:00",
-   "per_hour": 0,
+   "per_hour": 2,
    "url": "https://www.youtube.com/watch?v=s3k0qgci9aU",
    "short": "https://youtube.com/shorts/s3k0qgci9aU"
   },
   {
    "title": "KINA MAMA, HOIYEE!",
    "channel": "State House Kenya",
-   "views": 4,
+   "views": 6,
    "published": "2026-11-24T14:20:16+00:00",
    "per_hour": 3,
    "url": "https://www.youtube.com/watch?v=UmMEQdILym0",
@@ -426,16 +561,16 @@
   {
    "title": "Vijana wa Kikuyu Wapendelea Kiswahili na Kiingereza, Wazee Waonya Lugha ya Mama Inadidimia",
    "channel": "KTN News",
-   "views": 96,
+   "views": 138,
    "published": "2026-11-24T14:20:07+00:00",
-   "per_hour": 70,
+   "per_hour": 66,
    "url": "https://www.youtube.com/watch?v=OhN6IFEGrXM",
    "short": "https://youtube.com/shorts/OhN6IFEGrXM"
   },
   {
    "title": "Pres. Ruto: We are adding an addition Ksh 5 Billion on Hustler Fund to make credit more available",
    "channel": "State House Kenya",
-   "views": 3,
+   "views": 4,
    "published": "2026-11-24T14:19:58+00:00",
    "per_hour": 2,
    "url": "https://www.youtube.com/watch?v=4jDtD02x3VU",
@@ -444,34 +579,34 @@
   {
    "title": "Waamuzi 1,400 wa Tamasha la Drama Wapatiwa Mafunzo Kisumu Kabla ya Mashindano ya 2027",
    "channel": "KTN News",
-   "views": 16,
+   "views": 52,
    "published": "2026-11-24T14:18:56+00:00",
-   "per_hour": 11,
+   "per_hour": 25,
    "url": "https://www.youtube.com/watch?v=edzB9u36mxI",
    "short": "https://youtube.com/shorts/edzB9u36mxI"
   },
   {
    "title": "Vurugu Zazuka Bunge la Kwale, Waandamanaji Wataka Wabunge Wateule Watatu Waapishwe",
    "channel": "KTN News",
-   "views": 64,
+   "views": 131,
    "published": "2026-11-24T14:18:20+00:00",
-   "per_hour": 45,
+   "per_hour": 62,
    "url": "https://www.youtube.com/watch?v=lpA4WB9NkH8",
    "short": "https://youtube.com/shorts/lpA4WB9NkH8"
   },
   {
    "title": "Wakazi wa Syokimau Waandamana Siku ya Pili, Walalamikia Malori Makubwa na Barabara Mbovu",
    "channel": "KTN News",
-   "views": 45,
+   "views": 96,
    "published": "2026-11-24T14:17:44+00:00",
-   "per_hour": 32,
+   "per_hour": 45,
    "url": "https://www.youtube.com/watch?v=ss7UTPV96GQ",
    "short": "https://youtube.com/shorts/ss7UTPV96GQ"
   },
   {
    "title": "Mzalendo Trust Yataka Maoni ya Wananchi Yazingatiwe Kabla ya Sheria Kupitishwa Bungeni",
    "channel": "KTN News",
-   "views": 19,
+   "views": 28,
    "published": "2026-11-24T14:17:10+00:00",
    "per_hour": 13,
    "url": "https://www.youtube.com/watch?v=46XcYfIhi4E",
@@ -480,108 +615,81 @@
   {
    "title": "Rose Museo Aitaka Kanisa Kuikosoa Serikali Inaposhindwa Kutimiza Maslahi ya Wananchi",
    "channel": "KTN News",
-   "views": 9,
+   "views": 17,
    "published": "2026-11-24T14:16:13+00:00",
-   "per_hour": 6,
+   "per_hour": 8,
    "url": "https://www.youtube.com/watch?v=JFYTJwfXpiw",
    "short": "https://youtube.com/shorts/JFYTJwfXpiw"
   },
   {
-   "title": "Haki ya Kuandamana au Hofu ya Vurugu? Utafiti Waonyesha Mitazamo Tofauti Miongoni mwa Wakenya",
+   "title": "Haki ya Kuandamana au Hofu ya Vurugu?: Utafiti Waonyesha Mitazamo Tofauti Miongoni mwa Wakenya",
    "channel": "KTN News",
-   "views": 32,
+   "views": 52,
    "published": "2026-11-24T14:15:41+00:00",
-   "per_hour": 22,
+   "per_hour": 24,
    "url": "https://www.youtube.com/watch?v=Xh4660olzyY",
    "short": "https://youtube.com/shorts/Xh4660olzyY"
   },
   {
    "title": "NCIC Yaonya Viongozi wa Samburu Dhidi ya Matamshi ya Chuki Kabla ya Uchaguzi wa 2027",
    "channel": "KTN News",
-   "views": 65,
+   "views": 98,
    "published": "2026-11-24T14:12:32+00:00",
-   "per_hour": 43,
+   "per_hour": 44,
    "url": "https://www.youtube.com/watch?v=46UjJ-RHwM0",
    "short": "https://youtube.com/shorts/46UjJ-RHwM0"
   },
   {
-   "title": "John Methu Aitaka IEBC Kutoa Uhakikisho wa Uchaguzi Huru na wa Haki 2027",
-   "channel": "KTN News",
-   "views": 513,
-   "published": "2026-11-24T14:11:21+00:00",
-   "per_hour": 336,
-   "url": "https://www.youtube.com/watch?v=TsVmx67UPJ0",
-   "short": "https://youtube.com/shorts/TsVmx67UPJ0"
-  },
-  {
-   "title": "IEBC Yakataa Gharama za Kuonyesha Matokeo Mubashara, Upinzani Wataka Uwazi wa Uchaguzi",
-   "channel": "KTN News",
-   "views": 645,
-   "published": "2026-11-24T14:10:09+00:00",
-   "per_hour": 417,
-   "url": "https://www.youtube.com/watch?v=jvxANOFh2QM",
-   "short": "https://youtube.com/shorts/jvxANOFh2QM"
-  },
-  {
    "title": "Talent opens doors; connections land roles. #NationVerticals #JamesBond",
    "channel": "NTV Kenya",
-   "views": 64,
+   "views": 96,
    "published": "2026-11-24T13:41:44+00:00",
-   "per_hour": 32,
+   "per_hour": 35,
    "url": "https://www.youtube.com/watch?v=7Q9VVtG3VZ8",
    "short": "https://youtube.com/shorts/7Q9VVtG3VZ8"
   },
   {
-   "title": "Nairobi UDA aspirants reject political zoning and backroom deals",
-   "channel": "KTN News",
-   "views": 202,
-   "published": "2026-11-24T13:37:05+00:00",
-   "per_hour": 96,
-   "url": "https://www.youtube.com/watch?v=laBco355ots",
-   "short": "https://youtube.com/shorts/laBco355ots"
-  },
-  {
    "title": "Interfaith leaders in Kisumu condemn political goonism",
    "channel": "NTV Kenya",
-   "views": 37,
+   "views": 141,
    "published": "2026-11-24T13:34:28+00:00",
-   "per_hour": 17,
+   "per_hour": 50,
    "url": "https://www.youtube.com/watch?v=SmEZAczKj6Q",
    "short": "https://youtube.com/shorts/SmEZAczKj6Q"
   },
   {
    "title": "KNH health workers down tools over salary delays and welfare grievances",
    "channel": "Citizen TV",
-   "views": 678,
+   "views": 1948,
    "published": "2026-11-24T13:28:40+00:00",
-   "per_hour": 303,
+   "per_hour": 664,
    "url": "https://www.youtube.com/watch?v=AGt-GEl-myM",
    "short": "https://youtube.com/shorts/AGt-GEl-myM"
   },
   {
    "title": "Ogamba launches 52-member task team to address rising school unrest",
    "channel": "Citizen TV",
-   "views": 213,
+   "views": 547,
    "published": "2026-11-24T13:27:34+00:00",
-   "per_hour": 94,
+   "per_hour": 185,
    "url": "https://www.youtube.com/watch?v=EJJmoMLZcjI",
    "short": "https://youtube.com/shorts/EJJmoMLZcjI"
   },
   {
    "title": "IEBC cites high costs in possible shift from livestreaming 2027 election results",
    "channel": "Citizen TV",
-   "views": 835,
+   "views": 1985,
    "published": "2026-11-24T13:26:09+00:00",
-   "per_hour": 366,
+   "per_hour": 667,
    "url": "https://www.youtube.com/watch?v=KYUsxrW7XKo",
    "short": "https://youtube.com/shorts/KYUsxrW7XKo"
   },
   {
    "title": "Police clash with Katani residents protesting poor roads",
    "channel": "Citizen TV",
-   "views": 1505,
+   "views": 3518,
    "published": "2026-11-24T13:24:08+00:00",
-   "per_hour": 650,
+   "per_hour": 1169,
    "url": "https://www.youtube.com/watch?v=EQ6xaCro1SA",
    "short": "https://youtube.com/shorts/EQ6xaCro1SA"
   },
@@ -590,32 +698,32 @@
    "channel": "Parliament of Kenya",
    "views": 95,
    "published": "2026-11-24T11:21:11+00:00",
-   "per_hour": 22,
+   "per_hour": 19,
    "url": "https://www.youtube.com/watch?v=zUp6XmZTyOs",
    "short": "https://youtube.com/shorts/zUp6XmZTyOs"
   },
   {
    "title": "THE NATIONAL ASSEMBLY PROCEEDINGS, TUESDAY,  NOVEMBER 24TH,  2026,  AFTERNOON.",
    "channel": "Parliament of Kenya",
-   "views": 2256,
+   "views": 2548,
    "published": "2026-11-24T11:20:00+00:00",
-   "per_hour": 515,
+   "per_hour": 502,
    "url": "https://www.youtube.com/watch?v=7U4WHClTnXQ",
    "short": "https://youtube.com/shorts/7U4WHClTnXQ"
   },
   {
    "title": "Wadau wa mchezo wa magongo Bungoma wataka serikali kunusuru mchezo huo",
    "channel": "NTV Kenya",
-   "views": 384,
+   "views": 459,
    "published": "2026-11-24T11:12:50+00:00",
-   "per_hour": 85,
+   "per_hour": 88,
    "url": "https://www.youtube.com/watch?v=tCNVL2UlCMQ",
    "short": "https://youtube.com/shorts/tCNVL2UlCMQ"
   },
   {
    "title": "Timu za soka za Mombasa, Kilifi na Kwale kushiriki katika Unga Ni Taifa Super Cup",
    "channel": "NTV Kenya",
-   "views": 247,
+   "views": 289,
    "published": "2026-11-24T11:12:00+00:00",
    "per_hour": 55,
    "url": "https://www.youtube.com/watch?v=MO8ZhnmErrA",
@@ -624,180 +732,81 @@
   {
    "title": "NSL | Nzoia Sugar wailaza Mfalme FC 3-0",
    "channel": "NTV Kenya",
-   "views": 332,
+   "views": 384,
    "published": "2026-11-24T11:10:06+00:00",
    "per_hour": 73,
    "url": "https://www.youtube.com/watch?v=jhqf4N_xJQM",
    "short": "https://youtube.com/shorts/jhqf4N_xJQM"
   },
   {
-   "title": "Kenya imeweka makubaliano yake ya pili ya kuwapeleka wakenya nchini  Canada kwa kazi",
-   "channel": "NTV Kenya",
-   "views": 463,
-   "published": "2026-11-24T11:08:23+00:00",
-   "per_hour": 101,
-   "url": "https://www.youtube.com/watch?v=KdI1Mtt7Fg4",
-   "short": "https://youtube.com/shorts/KdI1Mtt7Fg4"
-  },
-  {
-   "title": "Idara ya serikali ya huduma za watoto imeandaa mazungumzo wa watoto All Saints'",
-   "channel": "NTV Kenya",
-   "views": 456,
-   "published": "2026-11-24T11:07:44+00:00",
-   "per_hour": 99,
-   "url": "https://www.youtube.com/watch?v=5vzzuP2s5JU",
-   "short": "https://youtube.com/shorts/5vzzuP2s5JU"
-  },
-  {
-   "title": "Tasnia ya ubunifu yataka serikali kuwatengea mgao",
-   "channel": "NTV Kenya",
-   "views": 157,
-   "published": "2026-11-24T11:06:03+00:00",
-   "per_hour": 34,
-   "url": "https://www.youtube.com/watch?v=JFSMGdn-3VY",
-   "short": "https://youtube.com/shorts/JFSMGdn-3VY"
-  },
-  {
-   "title": "Wavinya Ndeti aitaka serikali kukamilisha miradi ya barabara ili kuimarisha uchumi",
-   "channel": "NTV Kenya",
-   "views": 137,
-   "published": "2026-11-24T11:04:39+00:00",
-   "per_hour": 30,
-   "url": "https://www.youtube.com/watch?v=oKiMw1Arxkc",
-   "short": "https://youtube.com/shorts/oKiMw1Arxkc"
-  },
-  {
-   "title": "Tuzo zasifiwa kama chombo cha kuwatia moyo watu binafsi na kukuza ubora",
-   "channel": "NTV Kenya",
-   "views": 50,
-   "published": "2026-11-24T11:04:03+00:00",
-   "per_hour": 11,
-   "url": "https://www.youtube.com/watch?v=bZkWSUZJveA",
-   "short": "https://youtube.com/shorts/bZkWSUZJveA"
-  },
-  {
-   "title": "Sekta ya utalii imeanza maandalizi ya mapema ya sherehe za krismasi",
-   "channel": "NTV Kenya",
-   "views": 71,
-   "published": "2026-11-24T11:03:23+00:00",
-   "per_hour": 15,
-   "url": "https://www.youtube.com/watch?v=iXFqcwE9fHo",
-   "short": "https://youtube.com/shorts/iXFqcwE9fHo"
-  },
-  {
-   "title": "Madereva wa matatu waonywa dhidhi ya kuhusika na wizi wa mifugo wakitumia magari ya uchukuzi",
-   "channel": "NTV Kenya",
-   "views": 155,
-   "published": "2026-11-24T11:02:53+00:00",
-   "per_hour": 33,
-   "url": "https://www.youtube.com/watch?v=xwm7EaFRAc0",
-   "short": "https://youtube.com/shorts/xwm7EaFRAc0"
-  },
-  {
-   "title": "Wavinya Ndeti ataka hatua kuchukuliwa kukabiliana na uchafuzi wa Mto Thika",
-   "channel": "NTV Kenya",
-   "views": 169,
-   "published": "2026-11-24T11:01:41+00:00",
-   "per_hour": 36,
-   "url": "https://www.youtube.com/watch?v=zWQU2uAigqE",
-   "short": "https://youtube.com/shorts/zWQU2uAigqE"
-  },
-  {
-   "title": "Homa Bay: Kiongozi wa wengi wazozana na kundi la waasi kuhusu Raymond Omollo",
-   "channel": "NTV Kenya",
-   "views": 486,
-   "published": "2026-11-24T11:00:55+00:00",
-   "per_hour": 103,
-   "url": "https://www.youtube.com/watch?v=4fq2ENPO-eY",
-   "short": "https://youtube.com/shorts/4fq2ENPO-eY"
-  },
-  {
-   "title": "New Sio Port pier set to boost trade and transport across Lake Victoria region",
-   "channel": "KTN News",
-   "views": 434,
-   "published": "2026-11-24T10:59:55+00:00",
-   "per_hour": 92,
-   "url": "https://www.youtube.com/watch?v=I4rLQiMbnn0",
-   "short": "https://youtube.com/shorts/I4rLQiMbnn0"
-  },
-  {
-   "title": "Kanisa yatakiwa kuchulua nafasi ya kutetea utu nchini",
-   "channel": "NTV Kenya",
-   "views": 243,
-   "published": "2026-11-24T10:59:39+00:00",
-   "per_hour": 51,
-   "url": "https://www.youtube.com/watch?v=sENeVx2KkPM",
-   "short": "https://youtube.com/shorts/sENeVx2KkPM"
-  },
-  {
    "title": "Mchuano wa soka wa taifa Super Cup waanza leo katika uwanja wa serani kaunti ya Mombasa",
    "channel": "Citizen TV",
-   "views": 2943,
+   "views": 3091,
    "published": "2026-11-24T10:45:45+00:00",
-   "per_hour": 594,
+   "per_hour": 547,
    "url": "https://www.youtube.com/watch?v=5YdGAX4ID3A",
    "short": "https://youtube.com/shorts/5YdGAX4ID3A"
   },
   {
    "title": "Viongozi wa Kenya Kwanza Bonde la Ufa washambulia upinzani kwa kususia mazungumzo na IEBC",
    "channel": "Citizen TV",
-   "views": 1762,
+   "views": 1867,
    "published": "2026-11-24T10:37:01+00:00",
-   "per_hour": 346,
+   "per_hour": 322,
    "url": "https://www.youtube.com/watch?v=A8qOmS9oSWM",
    "short": "https://youtube.com/shorts/A8qOmS9oSWM"
   },
   {
    "title": "Viongozi Nyanza washtumu ODM kwa kudunisha vyama vingine",
    "channel": "Citizen TV",
-   "views": 5530,
+   "views": 6460,
    "published": "2026-11-24T10:34:22+00:00",
-   "per_hour": 1075,
+   "per_hour": 1106,
    "url": "https://www.youtube.com/watch?v=QrlM6B6Q-LI",
    "short": "https://youtube.com/shorts/QrlM6B6Q-LI"
   },
   {
    "title": "Kenya yaanza kuchagua wawakilishi wa kupanga mwelekeo ya maendeleo baada ya 2030",
    "channel": "Citizen TV",
-   "views": 1459,
+   "views": 1562,
    "published": "2026-11-24T10:32:36+00:00",
-   "per_hour": 282,
+   "per_hour": 266,
    "url": "https://www.youtube.com/watch?v=Rxn3SV4qF6U",
    "short": "https://youtube.com/shorts/Rxn3SV4qF6U"
   },
   {
    "title": "Wazazi Trans Nzoia watakiwa kuwajibika kuzuia ongezeko la watoto wa mitaani",
    "channel": "Citizen TV",
-   "views": 769,
+   "views": 811,
    "published": "2026-11-24T10:23:28+00:00",
-   "per_hour": 144,
+   "per_hour": 135,
    "url": "https://www.youtube.com/watch?v=Fyl_vesPJag",
    "short": "https://youtube.com/shorts/Fyl_vesPJag"
   },
   {
    "title": "Wazazi watakiwa kuwalinda watoto dhidi ya dhuluma wakati wa likizo",
    "channel": "Citizen TV",
-   "views": 491,
+   "views": 531,
    "published": "2026-11-24T10:21:28+00:00",
-   "per_hour": 92,
+   "per_hour": 88,
    "url": "https://www.youtube.com/watch?v=a65spz3R72o",
    "short": "https://youtube.com/shorts/a65spz3R72o"
   },
   {
    "title": "Kaunti ya Trans Nzoia yazindua kituo cha kuwasaidia waathiriwa wa dhuluma za kijinsia",
    "channel": "Citizen TV",
-   "views": 336,
+   "views": 359,
    "published": "2026-11-24T10:20:11+00:00",
-   "per_hour": 62,
+   "per_hour": 59,
    "url": "https://www.youtube.com/watch?v=nw67wajoaSw",
    "short": "https://youtube.com/shorts/nw67wajoaSw"
   },
   {
    "title": "Wakazi Lokichar wataka usalama kuimarishwa kabla ya usafirishaji wa mafuta ya Turkana kuanza",
    "channel": "Citizen TV",
-   "views": 1648,
+   "views": 1810,
    "published": "2026-11-24T10:18:41+00:00",
-   "per_hour": 305,
+   "per_hour": 297,
    "url": "https://www.youtube.com/watch?v=Lzv1SY0rzXI",
    "short": "https://youtube.com/shorts/Lzv1SY0rzXI"
   },
@@ -806,61 +815,52 @@
    "channel": "Citizen TV",
    "views": 280,
    "published": "2026-11-24T10:18:03+00:00",
-   "per_hour": 52,
+   "per_hour": 46,
    "url": "https://www.youtube.com/watch?v=ayv3hHQRjII",
    "short": "https://youtube.com/shorts/ayv3hHQRjII"
   },
   {
    "title": "Joyful Women yaadhimisha miaka 17 ya kuwawezesha wanawake kiuchumi nchini Kenya",
    "channel": "Citizen TV",
-   "views": 637,
+   "views": 672,
    "published": "2026-11-24T10:16:20+00:00",
-   "per_hour": 117,
+   "per_hour": 109,
    "url": "https://www.youtube.com/watch?v=D-2geNIwVtU",
    "short": "https://youtube.com/shorts/D-2geNIwVtU"
   },
   {
-   "title": "Vurugu Kwale kuhusu kuapishwa kwa wawakilishi wadi wa UDA, ODM na UDM",
-   "channel": "Citizen TV",
-   "views": 2656,
-   "published": "2026-11-24T10:14:07+00:00",
-   "per_hour": 485,
-   "url": "https://www.youtube.com/watch?v=bmmj3k6szOI",
-   "short": "https://youtube.com/shorts/bmmj3k6szOI"
-  },
-  {
    "title": "The Senate Plenary, Tuesday  24th November 2026. Afternoon  Session",
    "channel": "Parliament of Kenya",
-   "views": 1729,
+   "views": 2104,
    "published": "2026-11-24T09:20:19+00:00",
-   "per_hour": 271,
+   "per_hour": 297,
    "url": "https://www.youtube.com/watch?v=_yQjouCX07k",
    "short": "https://youtube.com/shorts/_yQjouCX07k"
   },
   {
    "title": "Strategic Stakeholder Engagement Forum with Social Media Influencers",
    "channel": "IEBC Kenya",
-   "views": 367,
+   "views": 444,
    "published": "2026-11-24T09:04:38+00:00",
-   "per_hour": 55,
+   "per_hour": 61,
    "url": "https://www.youtube.com/watch?v=fdtJePBlNPw",
    "short": "https://youtube.com/shorts/fdtJePBlNPw"
   },
   {
    "title": "Strategic Stakeholder Engagement Forum with Political Reporters",
    "channel": "IEBC Kenya",
-   "views": 2795,
+   "views": 2806,
    "published": "2026-11-24T04:44:54+00:00",
-   "per_hour": 255,
+   "per_hour": 241,
    "url": "https://www.youtube.com/watch?v=_9vmCkA-dwI",
    "short": "https://youtube.com/shorts/_9vmCkA-dwI"
   },
   {
    "title": "Representation to Empowerment: Parliament’s Role in Advancing Youth Leadership",
    "channel": "Parliament of Kenya",
-   "views": 590,
+   "views": 589,
    "published": "2026-11-23T21:52:38+00:00",
-   "per_hour": 33,
+   "per_hour": 32,
    "url": "https://www.youtube.com/watch?v=NuP0IB7fWsI",
    "short": "https://youtube.com/shorts/NuP0IB7fWsI"
   },
