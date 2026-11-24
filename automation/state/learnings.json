@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T06:55:40.638297+03:00",
+  "updated": "2026-11-24T17:15:18.390190+03:00",
   "top": [],
   "bottom": [],
   "all": [],
@@ -8,8 +8,16 @@
       "id": "2026-w47-hot-1119b1743",
       "series": "sauti",
       "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
-      "views": 1193,
+      "views": 1194,
       "likes": 3,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1122a",
+      "series": "sauti",
+      "opening": "CAF names Nairobi as Kenya's sole host city for AFCON 2027.",
+      "views": 1045,
+      "likes": 2,
       "comments": 0
     },
     {
@@ -18,14 +26,6 @@
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
       "views": 991,
       "likes": 6,
-      "comments": 0
-    },
-    {
-      "id": "2026-w47-hot-1122a",
-      "series": "sauti",
-      "opening": "CAF names Nairobi as Kenya's sole host city for AFCON 2027.",
-      "views": 990,
-      "likes": 2,
       "comments": 0
     },
     {
@@ -72,7 +72,7 @@
       "id": "2026-w47-hot-1120b0841",
       "series": "sauti",
       "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "views": 390,
+      "views": 405,
       "likes": 5,
       "comments": 0
     },
@@ -96,7 +96,7 @@
       "id": "2026-w46-hot-1115",
       "series": "sauti",
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
-      "views": 347,
+      "views": 348,
       "likes": 0,
       "comments": 0
     },
@@ -104,7 +104,7 @@
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "opening": "Kenya records 18 days without a single new Ebola infection.",
-      "views": 262,
+      "views": 264,
       "likes": 2,
       "comments": 0
     },
@@ -200,7 +200,7 @@
       "id": "2026-w47-hot-1120e",
       "series": "sauti",
       "opening": "High Court found CS Mbadi guilty of contempt, Citizen Digital reports.",
-      "views": 123,
+      "views": 124,
       "likes": 0,
       "comments": 0
     },
@@ -221,18 +221,18 @@
       "comments": 0
     },
     {
-      "id": "2026-w47-hot-1117",
-      "series": "sauti",
-      "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
-      "views": 97,
+      "id": "2026-w47-d6-kenya",
+      "series": "kenya",
+      "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
+      "views": 100,
       "likes": 0,
       "comments": 0
     },
     {
-      "id": "2026-w47-d6-kenya",
-      "series": "kenya",
-      "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
-      "views": 96,
+      "id": "2026-w47-hot-1117",
+      "series": "sauti",
+      "opening": "Nairobi recorded Kenya's highest number of premature baby deaths.",
+      "views": 97,
       "likes": 0,
       "comments": 0
     },

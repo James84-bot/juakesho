@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-24T13:42:45.761443+00:00",
+  "fetched": "2026-11-24T14:15:22.335170+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -49,44 +49,22 @@
     },
     {
       "geo": "KE",
-      "title": "public service commission",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "PSC announces government internship vacancies for 2026/2027",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-psc-announces-government-internships-for-20262027",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Deadline set: KRA invites degree, diploma students to apply for 2027 attachment",
-          "url": "https://www.tuko.co.ke/business-economy/647750-kra-invites-kenyan-students-apply-2027-industrial-attachment-positions/",
-          "source": "Tuko News"
-        },
-        {
-          "title": "KRA announces 2027 internship and industrial attachment opportunities",
-          "url": "https://www.pulse.co.ke/story/kra-2027-paid-internships-and-attachments-how-to-apply-2026112409130715430",
-          "source": "Pulse Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "electricity",
+      "title": "kebs used car import rules",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Africa’s COP has arrived: Why Kenya’s Sustainable Energy Conference matters to the world",
-          "url": "https://www.the-star.co.ke/opinion/2026-11-23-africas-cop-has-arrived-why-kenyas-sustainable-energy-conference-matters-to-the-world",
+          "title": "Inside KEBS conditions for importing used cars from January 1, 2027",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-inside-kebs-new-rules-for-importing-used-cars-from-january",
           "source": "The Star, Kenya"
         },
         {
-          "title": "Energy PS Reveals Kenya’s Plan to Meet Its Growing Electricity Demand",
-          "url": "https://www.kenyanews.go.ke/energy-ps-reveals-kenyas-plan-to-meet-its-growing-electricity-demand/",
-          "source": "Kenya News Agency"
+          "title": "KEBS Announces Cars Kenyans Will No Longer Be Allowed to Import From 2027",
+          "url": "https://www.kenyans.co.ke/news/129617-kebs-bans-importation-used-cars-first-registered-2020-january-2027",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "Kenya set to triple renewable energy capacity as electricity demand peaks",
-          "url": "https://peopledaily.digital/business/kenya-set-to-triple-renewable-energy-capacity-as-electricity-demand-peaks",
+          "title": "Kenya to ban importation of 2019-registered used vehicles on December 31, 2026",
+          "url": "https://peopledaily.digital/business/kenya-to-ban-importation-of-2019-registered-used-vehicles-on-december-31-2026",
           "source": "People Daily"
         }
       ]
@@ -124,14 +102,14 @@
           "source": "BBC"
         },
         {
+          "title": "Arteta reveals no talks with Gyokeres over limited Arsenal minutes as striker waits for his chance",
+          "url": "https://sports.yahoo.com/articles/arteta-reveals-no-talks-gyokeres-083800576.html",
+          "source": "Yahoo Sports"
+        },
+        {
           "title": "What can Arsenal take from Viktor Gyokeres’ brilliant Sweden form?",
           "url": "https://www.nytimes.com/athletic/7792064/2026/11/19/viktor-gyokeres-sweden-arsenal-arteta/",
           "source": "The New York Times"
-        },
-        {
-          "title": "Gyokeres Goals This Season: Two in 15 Before Dortmund",
-          "url": "https://thefalse9.com/2026/11/viktor-gyokeres-goals-this-season-dortmund-24-november.html",
-          "source": "The False 9"
         }
       ]
     },
@@ -141,19 +119,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Afghan women with UK university offers 'heartbroken' after visas stopped",
-          "url": "https://www.bbc.com/news/articles/c6vg25e1v17wo",
-          "source": "BBC"
-        },
-        {
-          "title": "UK visa brake blocks Afghan women's university places",
-          "url": "https://streamlinefeed.co.ke/news/uk-visa-brake-blocks-afghan-womens-university-places",
-          "source": "https://streamlinefeed.co.ke/"
-        },
-        {
           "title": "Meet the Only Vet Who Claims He Saw Wes Moore in Combat: A Broke ‘Content Creator’ in Thailand Who’s Blowing His Life Savings on a Russian, Porn-Performing Camgirl",
           "url": "https://freebeacon.com/democrats/meet-the-only-vet-who-claims-he-saw-wes-moore-in-combat-a-broke-content-creator-in-thailand-whos-blowing-his-life-savings-on-a-russian-porn-performing-camgirl/",
           "source": "freebeacon.com"
+        },
+        {
+          "title": "Report: Ex-Marine who backed Gov. Moore's Afghanistan claims found living in Thailand",
+          "url": "https://upnorthlive.com/news/nation-world/ex-marine-backed-governor-wes-moore-afghanistan-claims-living-thailand-russian-cam-girl",
+          "source": "WPBN"
+        },
+        {
+          "title": "Army Finds No Record of Moore's Commendation Medal",
+          "url": "https://wisevoter.com/world/us/md/2026/11/22/army-review-no-record-moore-commendation-medal",
+          "source": "Wisevoter"
         }
       ]
     },
@@ -183,12 +161,16 @@
   ],
   "dropped": [
     {
+      "title": "sheffield united vs southampton",
+      "why": "unsafe: 'Betting'"
+    },
+    {
       "title": "feyenoord vs porto prediction",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "champions league fixtures",
-      "why": "unsafe: 'Bet'"
+      "title": "charlton vs lincoln",
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
