@@ -1410,7 +1410,11 @@
       "reel": true,
       "tg_msg": 1663,
       "auto": true,
-      "decided_at": "2026-11-24T10:50:03.472815+03:00"
+      "decided_at": "2026-11-24T10:50:03.472815+03:00",
+      "yt_tried": "2026-11-24T11:03:32.745846+03:00",
+      "yt_id": "HMVFoMgPJJA",
+      "tt_done": "2026-11-24T11:03:35.303268+03:00",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
