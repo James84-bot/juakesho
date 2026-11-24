@@ -149,7 +149,7 @@
         "outlet": "UNESCO World Heritage Centre",
         "photo_query": "Fort Jesus Mombasa Kenya"
       },
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": []
@@ -1295,7 +1295,11 @@
       "auto": true,
       "decided_at": "2026-11-24T09:43:19.970270+03:00",
       "photo_checked": "2026-11-24T09:45:01.112328+03:00",
-      "photo_fit": "2026-11-24T09:45:01.112341+03:00"
+      "photo_fit": "2026-11-24T09:45:01.112341+03:00",
+      "yt_tried": "2026-11-24T17:17:39.041914+03:00",
+      "yt_id": "fBvNYjebdnU",
+      "tt_done": "2026-11-24T17:17:41.300209+03:00",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w48-hot-1124b1042",
@@ -1608,7 +1612,9 @@
       ],
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1689
+      "tg_msg": 1689,
+      "photo_checked": "2026-11-24T17:17:39.003599+03:00",
+      "photo_fit": "2026-11-24T17:17:39.003615+03:00"
     }
   ],
   "scripts": {
