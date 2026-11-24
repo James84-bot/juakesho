@@ -1510,7 +1510,11 @@
       "auto": true,
       "decided_at": "2026-11-24T12:46:33.064820+03:00",
       "photo_checked": "2026-11-24T12:48:23.956624+03:00",
-      "photo_fit": "2026-11-24T12:48:23.956633+03:00"
+      "photo_fit": "2026-11-24T12:48:23.956633+03:00",
+      "yt_tried": "2026-11-24T15:33:40.410445+03:00",
+      "yt_id": "LNhsFVdmLtw",
+      "tt_done": "2026-11-24T15:33:42.814143+03:00",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
