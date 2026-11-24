@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-24T01:05:56.089989+00:00",
+  "fetched": "2026-11-24T03:29:43.614288+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -57,36 +57,14 @@
           "source": "Goal.com"
         },
         {
-          "title": "Riyad Mahrez torments Al-Ahli Saudi with memories of gold!",
-          "url": "https://www.livescore.com/en/news/football/more/riyad-mahrez-torments-al-ahli-saudi-with-memories-of-gold-goal/",
-          "source": "LiveScore"
-        },
-        {
           "title": "Al Ahli squander two-goal lead in AFC Champions League defeat as Spertsyan comes off the bench",
           "url": "https://sportaran.com/en/post/al-ahli-upustil-preimushestvo-v-dva-myacha-i-proigral-v-lige-chempionov-afk/",
           "source": "Sportaran"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "xabi alonso",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "El Dibu Martínez volvió a jugar con el Chelsea tras su fractura de mandíbula: perdieron 4-1 ante Leeds",
-          "url": "https://www.infobae.com/deportes/2026/11/21/el-dibu-martinez-volvio-a-jugar-con-el-chelsea-tras-su-fractura-de-mandibula-perdieron-4-1-ante-leeds/",
-          "source": "Infobae"
         },
         {
-          "title": "«¡Id a buscar a unos culturistas!»: Daniel Farke revela el plan táctico tras la contundente victoria del Leeds United por 4-1 ante el Chelsea de Xabi Alonso",
-          "url": "https://es-us.noticias.yahoo.com/deportes/id-buscar-culturistas-daniel-farke-073341125.html",
-          "source": "Yahoo"
-        },
-        {
-          "title": "Chelsea se hunde con Alonso: lesión de Caicedo agrava derrota ante Leeds",
-          "url": "https://apnews.com/article/chelsea-leeds-alonso-588b6ef35144a437766dca9ccdb528c2",
-          "source": "AP News"
+          "title": "Riyad Mahrez reveals his feelings after downing Al-Ahli, with emotional message to the fans",
+          "url": "https://www.yardbarker.com/soccer/articles/riyad_mahrez_reveals_his_feelings_after_downing_al_ahli_with_emotional_message_to_the_fans/s1_17790_44608153",
+          "source": "Yardbarker"
         }
       ]
     },
@@ -140,21 +118,66 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Fiorentina, l’effetto Vanoli è svanito: tifosi scatenati a Monza e sui social, il tecnico se la prende con la squadra",
-          "url": "https://www.virgilio.it/sport/fiorentina-monza-contestata-tifosi-social-vanoli-accusa-squadra-mastantuono-981460",
-          "source": "Virgilio"
+          "title": "Vanoli: \"Fiorentina in ritiro, mancano umiltà e fame\". E Paro risponde così sul futuro di Varela",
+          "url": "https://www.tuttosport.com/news/calcio/serie-a/2026/11/23-152793666/vanoli_fiorentina_in_ritiro_mancano_umilt_e_fame_e_paro_risponde_cos_sul_futuro_di_varela",
+          "source": "Tuttosport"
         },
         {
-          "title": "La Supermoviola di Monza-Fiorentina: manca un rigore ai viola?",
-          "url": "https://www.libero.it/tv/la-supermoviola-di-monza-fiorentina-manca-un-rigore-ai-viola_msFD00000000554523",
-          "source": "Libero"
+          "title": "De Gea parla dopo Monza-Fiorentina -",
+          "url": "https://www.acffiorentina.com/news/de-gea-parla-dopo-monza-fiorentina",
+          "source": "ACF Fiorentina"
         },
         {
-          "title": "Monza-Fiorentina 3-0, il post partita: parlano Paro e Pessina",
-          "url": "https://www.ilcittadinomb.it/news/sport/monza-fiorentina-3-0-il-post-partita-parlano-paro-e-pessina/",
-          "source": "Il Cittadino di Monza e Brianza"
+          "title": "LA CONFERENZA DI MISTER PARO DOPO MONZA-FIORENTINA",
+          "url": "https://www.acmonza.com/it/news/la-conferenza-di-mister-paro-dopo-monza-fiorentina/",
+          "source": "Associazione Calcio Monza S.p.A. *"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "al ahly",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Ammouta or Al Ahly's haphazard approach: which is the wrong fit for the other?",
+          "url": "https://www.goal.com/en/news/ammouta-or-al-ahly-s-haphazard-approach-which-is-the-wrong-fit-for-the-other/blt675ae68ab3bbb56d",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Official: Al Ahly sack Amouta as surprise name emerges to replace him",
+          "url": "https://www.livescore.com/en/news/football/more/official-al-ahly-sack-amouta-as-surprise-name-emerges-to-replace-him-goal/",
+          "source": "LiveScore"
+        },
+        {
+          "title": "Earthquake inside the Red Castle after the fall against Pyramids.. Deliberations inside Al Ahly to pick the new coach",
+          "url": "https://foot-africa.com/en/news/earthquake-inside-the-red-castle-after-the-fall-against-pyramids-deliberations-inside-al-ahly-to-pick-the-new-coach-1429016/",
+          "source": "Foot-Africa.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "citizen",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Feds admit in court filing that Austin man who was deported held dual citizenship",
+          "url": "https://www.kvue.com/article/news/politics/immigration-news/feds-admit-court-filing-austin-man-deported-dual-citizenship/269-13f63f42-cddb-427e-a760-0ba6c00cd1b5",
+          "source": "KVUE"
+        },
+        {
+          "title": "Trump administration deported US citizen to Mexico, DoJ admits in court",
+          "url": "https://www.theguardian.com/us-news/2026/nov/23/trump-administration-deported-citizen-mexico",
+          "source": "The Guardian"
+        },
+        {
+          "title": "DOJ says it deported US citizen to Mexico",
+          "url": "https://thehill.com/regulation/court-battles/6238282-us-citizen-mexico-deported-lawsuit/",
+          "source": "The Hill"
+        }
+      ],
+      "civic": true
     }
   ],
   "dropped": [
@@ -165,10 +188,6 @@
     {
       "title": "jada pinkett smith",
       "why": "unsafe: 'Fire'"
-    },
-    {
-      "title": "uefa champions league",
-      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
