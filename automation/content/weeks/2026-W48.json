@@ -998,13 +998,115 @@
       "auto": true,
       "decided_at": "2026-11-23T20:08:23.267034+03:00",
       "missed_why": "lists what today's rules leave out (citizen tv live now, al-shamal vs al-ahli, forex factory, xabi alonso)"
+    },
+    {
+      "id": "2026-w48-hot-1124m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "Taxpayers face paying a *Sh5bn* deficit bill on the Moja Expressway following revenue shortfalls.",
+      "fact": "Parliament opened an audit into the Sh5bn shortfall on Expressway revenue operations.",
+      "message": "Taxpayers may cover a Sh5bn revenue shortfall on the Nairobi Expressway.",
+      "action": "Demand Parliament publishes the full Expressway PPP contract terms.",
+      "photo_query": "Nairobi Expressway Kenya",
+      "who": "Ministry of Transport",
+      "where": "Nairobi",
+      "when": "24 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Taxpayers may spend Sh5bn to cover private toll road revenue shortfalls.",
+      "source": "The Eastleigh Voice, 2026-11-24",
+      "beats": [
+        "Taxpayers face paying a *Sh5bn* deficit bill on the Expressway.",
+        "Treasury Cabinet Secretary John Mbadi: “Financial statements don’t mean much unless now you go deeper to understand why are the direct costs rising”",
+        "Parliament has ordered an audit into revenue shortfalls.",
+        "Do you use the Expressway or normal road?"
+      ],
+      "caption": "Taxpayers face a Sh5bn bill for the Expressway deficit after revenue missed targets. Parliament has demanded an independent audit. The Ministry of Transport must publish the full PPP contract by December. Do you use the Expressway or normal road? 👇🏾\n\n#Expressway #Taxpayers #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-24T09:55:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "MPs demand independent audit of Sh5 billion Moja Expressway deficit as taxpayers face bill",
+          "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNR2hoTXRodklucGR4OUJLSVBiWHpKZ0FKOHJTZnFRVEtaOERpS3ZTNmUyMmRjcDBSZnFlTEVvMDM2ZEdfWXpOak5TWXh6OU5KbWR4UEtKTHhpeFFRTTY3YzRUdzVybFppYnFfcTF3a2ZOWi11VnRqR3pXV2N5d3ZVYmFWMGUzdmU2VzlkX1ZWa0MwbzgxbXZueXBCU0FnLVBqVGU0YU1NV3R2MUgxMEdCME1uMVVfZlJDTWtUaG5ETGFVbksyeFNXMWJ1Zw?oc=5",
+          "published": "2026-11-24"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Financial statements don’t mean much unless now you go deeper to understand why are the direct costs rising",
+          "speaker": "Treasury Cabinet Secretary John Mbadi",
+          "context": "Asked about the rising costs in a TV interview on 17th November 2026, Treasury Cabinet Secretary John Mbadi said: “Financial statements don’t mean much unless now you go deeper to understand why are the direct costs rising”.",
+          "outlet": "Techish Kenya",
+          "link": "https://tech-ish.com/2026/11/19/nairobi-expressway-loss-kes-5-billion-2025/"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 9,
+        "demand": 10,
+        "action": 8,
+        "fair": 8,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.5,
+        "note": "Remove the hashtag block from the caption to keep the voice sharp and authentic."
+      },
+      "drafted_at": "2026-11-24T06:58:21.813042+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1124m-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129613-parliament-demands-answers-over-ksh5-billion-moja-expressway-revenue-shortfall",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1124m-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1124m-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Treasury Given Ultimatum Over Missing Ksh5 Billion Moja Expressway Revenue"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Gives Progress Update on Nairobi-Mombasa Expressway Project"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "State Sets Date for Groundbreaking of 60KM Nairobi-Thika Expressway"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/videos/2026-w48-hot-1124m-broll.mp4",
+      "broll_credit": "Footage: mariancroitoru / Pixabay",
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1642,
+      "auto": true,
+      "decided_at": "2026-11-24T07:03:11.829903+03:00"
     }
   ],
   "scripts": {
-    "radio": "Welcome to Kenya on Record, your weekly check on public accountability and government services. I’m your host, and today we are looking at a major development from the Kenya Revenue Authority. \n\nKRA has announced a massive waiver—shikilia hapo—si habari ndogo. Shilingi bilioni sitini na nne ($64 billion shillings) zimesamehewa. This waiver affects nearly one million taxpayers, including both individuals and businesses who have been carrying the heavy burden of accumulated penalties and interest.\n\nNow, let’s break this down. The tax amnesty framework is designed to give compliant and struggling taxpayers a clean slate. If you have been hiding from KRA because of accrued penalties from past years, this is your window to regularize your tax status without the crushing weight of historical fines. However, and this is very important, a waiver on penalties does *not* mean the principal tax is gone. You still have to pay the actual tax principal owed.\n\nCitizens, this is the time to check your iTax profiles. Don't wait until the last minute. Talk to a certified tax expert or visit your nearest Huduma Centre or KRA office to understand how this waiver applies to your specific ledger.\n\n***\n\n*Kifupi cha Habari: Mamlaka ya Ushuru nchini, KRA, imesamehe adhabu na riba za ushuru za thamani ya Shilingi bilioni 64 kwa walipa ushuru karibu milioni moja. Hii ni fursa ya kusafisha akaunti yako ya iTax, lakini kumbuka kodi ya msingi bado inafaa kulipwa. Tembelea afisi za KRA au tovuti yao kujua jinsi ya kunufaika na msamaha huu.*",
-    "voice_note": "Mambo vipi mwananchi? Hii ni Kenya on Record. Siku hizi mambo ni safi upande wa KRA kama uko na mzigo wa adhabu za nyuma. Mamlaka imetangaza kusamehe Shilingi bilioni sitini na nne za penalties kwa walipa ushuru karibu milioni moja! Sasa, hii haimaanishi ushuru wenyewe umefutwa—principal tax bado utalipa. Lakini ile adhabu ya kuchelewa imewekwa kando ili ukamilishe mambo yako bila presha. Ingia kwenye akaunti yako ya iTax leo, angalia hali yako, na utumie hii nafasi kusafisha ledger yako kabla muda haujaisha. Usiseme hukusikia!",
-    "sms": "KRA imesamehe Sh64bn za adhabu kwa walipa ushuru karibu milioni 1. Ingia iTax usafishe akaunti yako leo. Kumbuka kodi ya msingi bado inalipwa. #KenyaOnRecord",
-    "reels": "[Visual: Clean, professional graphic showing 'KRA: Sh64 Billion Penalties Waived' alongside a smartphone screen displaying an iTax profile.]\n\n[Audio - confident, measured Kenyan English]: \nSi habari ndogo. KRA has just waved away sixty-four billion shillings in penalties for nearly one million taxpayers. \n\nIf accumulated fines have kept you locked out of compliance, your clean slate is here. But remember—this is a waiver on penalties, not the principal tax. \n\nLog onto iTax today, check your ledger, and get right with the system. \n\nKenya on Record. Know the facts, hold them to account."
+    "radio": "Jambo and welcome back to Kenya on Record. Today, we are following the money on major infrastructure projects, specifically the Nairobi Expressway. Reports have emerged indicating that Kenyan taxpayers could be on the hook for a massive 5 billion shilling revenue shortfall on the toll road.\n\nNow, when the Expressway was pitched under a Public-Private Partnership model, citizens were promised that private investors would take on the financial risk—they build the road, collect tolls, and recover their investment. But hidden clauses in these mega-deals often mean that if toll revenues fall short of projections, the public treasury steps in to cover the difference.\n\nThink about that for a second. Millions of everyday Kenyans who do not even use the Expressway could end up subsidizing private corporate revenues through their hard-earned taxes. This raises serious questions about risk allocation in government deals. Why should public funds serve as a safety net for private profits while ordinary citizens bear all the burden?\n\nWe must demand full disclosure on all PPP contracts, strict parliamentary oversight, and absolute protection for public money before more debts are dumped on our shoulders.\n\nKwa ufupi: Wakenya wanaweza kulazimika kufidia bilioni tano kufuatia uchache wa mapato kwenye barabara ya Expressway. Ni lazima tuhoji mbona fedha za umma zinatumika kulinda faida za kampuni za kibinafsi. Tujitokeze na tutetee rasilimali zetu.",
+    "voice_note": "Habari yenu. Here is what you need to know this week on Kenya on Record. Reports indicate that taxpayers might have to fork out 5 billion shillings to cover a revenue shortfall on the Nairobi Expressway. Under the Public-Private Partnership terms, if toll collections miss targets, the government—meaning your tax money—tops up the difference. Why should public funds guarantee private profits while citizens carry the risk? We must demand full transparency on all PPP contracts signed in our name. Share this voice note widely and let us keep our leaders accountable. Usiibiwe.",
+    "sms": "Usiibiwe Tip: Taxpayers may cover a Sh5bn shortfall on the Nairobi Expressway. Demand full public disclosure of all hidden PPP contract guarantees.",
+    "reels": "Why are you paying for a road you might not even use? Reports show taxpayers could be forced to cover a 5 billion shilling revenue shortfall on the Nairobi Expressway. When private projects get guaranteed bailouts using public funds, that is not a partnership—that is a transfer of risk straight to your pocket. Demand contract transparency today."
   },
   "spend_usd": 0.0
 }
