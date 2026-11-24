@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-24T07:42:16.646597+00:00",
+  "fetched": "2026-11-24T09:32:24.401435+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -25,8 +25,31 @@
     },
     {
       "geo": "KE",
+      "title": "sha",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "High Court: 2% HIMS fee on SHA claims unconstitutional",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-court-declares-2-sha-claims-deduction-unlawful",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "High Court Declares 2% Deduction From SHA Claims Unconstitutional",
+          "url": "https://www.kenyans.co.ke/news/129619-high-court-declares-2-hims-fee-sha-claims-unconstitutional",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "High Court declares 2% HIMS fee unconstitutional, gives Gov't 120 days to regularise charge",
+          "url": "https://www.tv47.digital/high-court-declares-2-hims-fee-unconstitutional-gives-govt-120-days-to-regularise-charge-169913/",
+          "source": "TV47 Digital"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
       "title": "electricity",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Electricity to cost Sh4.56 more per unit under new charges",
@@ -48,29 +71,29 @@
     {
       "geo": "KE",
       "title": "public service commission",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
-          "title": "PSC announces government internship vacancies for 2026/2027",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-psc-announces-government-internships-for-20262027",
+          "title": "KRA announces 2027 internship and pupillage vacancies",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-kra-announces-2027-internship-and-pupillage-vacancies",
           "source": "The Star, Kenya"
-        },
-        {
-          "title": "KRA opens 12-month paid internships for 2027, offering up to Ksh25,000 a month",
-          "url": "https://peopledaily.digital/news/kra-opens-12-month-paid-internships-for-2027-offering-up-to-ksh25000-a-month",
-          "source": "People Daily"
         },
         {
           "title": "PSC opens applications for additional 2026/2027 interns",
           "url": "https://5050markets.com/us/news/psc-internship-applications-2026",
           "source": "5050 Markets"
+        },
+        {
+          "title": "Monthly stipend: PSC opens applications for additional 2026/27 intern positions",
+          "url": "https://www.tuko.co.ke/business-economy/647676-psc-announces-govt-internship-opportunities-20262027/",
+          "source": "Tuko News"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "nairobi",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Babu sells Nairobi governor bid as lone ranger after Sifuna fallout",
@@ -92,23 +115,45 @@
     },
     {
       "geo": "KE",
+      "title": "champions league",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Arsenal vs Borussia Dortmund: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cr4gnp24p0e6t",
+          "source": "BBC"
+        },
+        {
+          "title": "Preview: Arsenal v Borussia Dortmund",
+          "url": "https://www.arsenal.com/news/preview-arsenal-v-borussia-dortmund-ak1y01e28ux5",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Niko Kovac fires warning to Arsenal as Borussia Dortmund boss plots Champions League statement at the Emirates",
+          "url": "https://www.goal.com/en-ke/news/niko-kovac-arsenal-borussia-dortmund-champions-league-emirates/blt72f304ea89898fce",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "lakers vs jazz",
       "traffic": "200+",
       "news": [
         {
-          "title": "Luka Doncic calls his play ‘unacceptable’ as Lakers’ 9-game winning streak ends",
-          "url": "https://apnews.com/article/lakers-lose-luka-doncic-d6d3fecb2c505c5a07857ba1b937525a",
-          "source": "AP News"
+          "title": "Kyle Filipowski enjoys Jazz teammates ‘hyping me up’ on poster vs. Lakers - The Athletic",
+          "url": "https://www.nytimes.com/athletic/7808351/2026/11/24/kyle-filipowski-jazz-dunk-poster-lakers-nba-teammates/",
+          "source": "The New York Times"
         },
         {
-          "title": "Jazz vs. Lakers Prediction, Spread, NBA Picks – Monday, November 23",
-          "url": "https://www.prizepicks.com/playbook-article/jazz-vs-lakers-prediction-spread-nba-picks-monday-november-23",
-          "source": "PrizePicks"
-        },
-        {
-          "title": "Luka Dončić turns in 28/4/8 line vs. Utah",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/luka-doncic-turns-in-28-4-8-line-vs-utah",
+          "title": "Kyle Filipowski records double-double off bench",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/kyle-filipowski-records-double-double-off-bench",
           "source": "NBC Sports"
+        },
+        {
+          "title": "Filipowski’s double-double not enough in loss to Lakers",
+          "url": "https://www.abc4.com/sports/filipowskis-double-double-not-enough-in-loss-to-lakers/",
+          "source": "ABC4 Utah"
         }
       ]
     },
@@ -118,14 +163,14 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Emery insists no change of plan for Aston Villa despite Galatasaray surface",
-          "url": "https://www.theguardian.com/football/2026/nov/23/unai-emery-no-change-of-plan-aston-villa-galatasaray-surface",
-          "source": "The Guardian"
-        },
-        {
           "title": "Galatasaray vs Aston Villa: UEFA Champions League stats & head-to-head",
           "url": "https://www.bbc.com/sport/football/live/c8wy5dq7dn3wt",
           "source": "BBC"
+        },
+        {
+          "title": "Emery insists no change of plan for Aston Villa despite Galatasaray surface",
+          "url": "https://www.theguardian.com/football/2026/nov/23/unai-emery-no-change-of-plan-aston-villa-galatasaray-surface",
+          "source": "The Guardian"
         },
         {
           "title": "Aston Villa defender Ian Maatsen warns Unai Emery's side to expect tough Champions League test against 'best team in Turkiye' Galatasaray",
@@ -136,54 +181,28 @@
     },
     {
       "geo": "KE",
-      "title": "champions league",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Arsenal vs Borussia Dortmund: UEFA Champions League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cr4gnp24p0e6t",
-          "source": "BBC"
-        },
-        {
-          "title": "Arteta on Dortmund, Madueke and Bellingham",
-          "url": "https://www.arsenal.com/news/arteta-on-dortmund-madueke-and-bellingham-aweFB0E7h7G5",
-          "source": "Arsenal.com"
-        },
-        {
-          "title": "Tuesday's football tips: In-form Madueke evens to do some damage for Arsenal in showdown with Dortmund",
-          "url": "https://mrfixitstips.co.uk/tuesdays-football-tips-in-form-madueke-evens-to-do-some-damage-for-arsenal-in-showdown-with-dortmund/",
-          "source": "MrFixitsTips"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "bola tinubu",
       "traffic": "100+",
       "news": [
         {
-          "title": "Tinubu, Sanwo-Olu back new Igbo Business Consultative Forum at Lagos dialogue",
-          "url": "https://thesun.ng/tinubu-sanwo-olu-back-new-igbo-business-consultative-forum-at-lagos-dialogue/",
-          "source": "The Sun Nigeria"
-        },
-        {
-          "title": "2027: ‘I Want A Second Term, All South-East Governors Are With Me’ — Tinubu Declares",
-          "url": "https://leadership.ng/2027-i-want-a-second-term-all-south-east-governors-are-with-me-tinubu-declares/",
-          "source": "LEADERSHIP Newspapers"
-        },
-        {
           "title": "I Was Angry Igbos In Lagos Didn’t Vote For Me — Tinubu",
           "url": "https://thewhistler.ng/i-was-angry-igbos-in-lagos-didnt-vote-for-me-tinubu/",
           "source": "The Whistler Newspaper"
+        },
+        {
+          "title": "Hamzat Reaffirms Inclusive Lagos Agenda After Tinubu’s Meeting With Igbo Leaders",
+          "url": "https://www.tvcnews.tv/hamzat-reaffirms-inclusive-lagos-agenda-after-tinubus-meeting-with-igbo-leaders/",
+          "source": "TVC News"
+        },
+        {
+          "title": "Tinubu: I Was Very Angry With Buhari",
+          "url": "https://thesourceng.com/tinubu-i-was-very-angry-with-buhari/",
+          "source": "The Source"
         }
       ]
     }
   ],
   "dropped": [
-    {
-      "title": "champions league fixtures",
-      "why": "unsafe: 'Bet'"
-    },
     {
       "title": "fuel",
       "why": "unsafe: 'missing'"
