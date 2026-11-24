@@ -1,6 +1,29 @@
 {
-  "fetched": "2026-11-24T13:07:36.284135+00:00",
+  "fetched": "2026-11-24T13:42:45.761443+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "pepita ranka police logistics appointment",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Uhuru's former top bodyguard lands new job in fresh police changes",
+          "url": "https://nation.africa/kenya/news/uhuru-s-former-top-bodyguard-lands-new-job-in-fresh-police-changes-5681678",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Uhuru’s former bodyguard Pepita Ranka named Director of Police Logistics",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-uhurus-ex-bodyguard-named-director-of-police-logistics",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Ranka moves to police logistics as Rotich takes North Eastern command",
+          "url": "https://5050markets.com/ke/news/pepita-ranka-police-logistics-reshuffle",
+          "source": "5050 Markets"
+        }
+      ],
+      "civic": true
+    },
     {
       "geo": "KE",
       "title": "sha",
@@ -30,19 +53,19 @@
       "traffic": "2000+",
       "news": [
         {
-          "title": "PSC opens applications for additional 2026/2027 interns",
-          "url": "https://5050markets.com/us/news/psc-internship-applications-2026",
-          "source": "5050 Markets"
+          "title": "PSC announces government internship vacancies for 2026/2027",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-psc-announces-government-internships-for-20262027",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Public Service Commission announces 12-month paid internship opportunities",
-          "url": "https://peopledaily.digital/news/public-service-commission-announces-12-month-paid-internship-opportunities",
-          "source": "People Daily"
+          "title": "Deadline set: KRA invites degree, diploma students to apply for 2027 attachment",
+          "url": "https://www.tuko.co.ke/business-economy/647750-kra-invites-kenyan-students-apply-2027-industrial-attachment-positions/",
+          "source": "Tuko News"
         },
         {
-          "title": "KRA announces 2027 internships for degree and diploma graduates: How to apply",
-          "url": "https://biznakenya.com/kra-announces-2027-internship-how-to-apply/",
-          "source": "Bizna Kenya"
+          "title": "KRA announces 2027 internship and industrial attachment opportunities",
+          "url": "https://www.pulse.co.ke/story/kra-2027-paid-internships-and-attachments-how-to-apply-2026112409130715430",
+          "source": "Pulse Kenya"
         }
       ]
     },
@@ -52,26 +75,26 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "Electricity to cost Sh4.56 more per unit under new charges",
-          "url": "https://saccoreview.co.ke/electricity-to-cost-sh4-56-more-per-unit-under-new-charges/",
-          "source": "Sacco Review"
+          "title": "Africa’s COP has arrived: Why Kenya’s Sustainable Energy Conference matters to the world",
+          "url": "https://www.the-star.co.ke/opinion/2026-11-23-africas-cop-has-arrived-why-kenyas-sustainable-energy-conference-matters-to-the-world",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Kenyans to Pay Higher Power Bills in November as EPRA Announces Three Adjustments",
-          "url": "https://www.kenyans.co.ke/news/129599-epra-sets-ksh354-fuel-charge-hydropower-levy-november-electricity-consumers",
-          "source": "Kenyans.co.ke"
+          "title": "Energy PS Reveals Kenya’s Plan to Meet Its Growing Electricity Demand",
+          "url": "https://www.kenyanews.go.ke/energy-ps-reveals-kenyas-plan-to-meet-its-growing-electricity-demand/",
+          "source": "Kenya News Agency"
         },
         {
-          "title": "Tutam mko na line yenu special? Willis Raburu mocks Ruto supporters over electricity hike",
-          "url": "https://chagua.co.ke/news/tutam-mko-na-line-yenu-special-willis-raburu-mocks-ruto-supporters-over-electricity-hike/",
-          "source": "chagua.co.ke"
+          "title": "Kenya set to triple renewable energy capacity as electricity demand peaks",
+          "url": "https://peopledaily.digital/business/kenya-set-to-triple-renewable-energy-capacity-as-electricity-demand-peaks",
+          "source": "People Daily"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "pope francis",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Pope Francis battled visions of the devil during a two-year spiritual crisis, diaries reveal",
@@ -79,14 +102,36 @@
           "source": "CNN"
         },
         {
+          "title": "Pope Francis' diary reveals claims he saw the devil three times",
+          "url": "https://www.bbc.com/news/articles/cm78270l4z7no",
+          "source": "BBC"
+        },
+        {
           "title": "Pope Francis had visions of the Devil and Hell, diaries reveal",
           "url": "https://www.reuters.com/world/pope-francis-had-visions-devil-hell-diaries-reveal-2026-11-24/",
           "source": "Reuters"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "viktor gyökeres",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Viktor Gyokeres: What's going on with the Arsenal striker?",
+          "url": "https://www.bbc.com/sport/football/articles/cklylr15gr2do",
+          "source": "BBC"
         },
         {
-          "title": "Pope Francis' diary claims he saw the devil three times",
-          "url": "https://www.bbc.com/news/articles/cm78270l4z7no",
-          "source": "BBC"
+          "title": "What can Arsenal take from Viktor Gyokeres’ brilliant Sweden form?",
+          "url": "https://www.nytimes.com/athletic/7792064/2026/11/19/viktor-gyokeres-sweden-arsenal-arteta/",
+          "source": "The New York Times"
+        },
+        {
+          "title": "Gyokeres Goals This Season: Two in 15 Before Dortmund",
+          "url": "https://thefalse9.com/2026/11/viktor-gyokeres-goals-this-season-dortmund-24-november.html",
+          "source": "The False 9"
         }
       ]
     },
@@ -134,50 +179,6 @@
         }
       ],
       "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "viktor gyökeres",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Arsenal news: Why is Viktor Gyokeres not playing?",
-          "url": "https://www.bbc.com/sport/football/articles/cknv41vmm18go?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bsport%5D-%5Bbizdev%5D-%5Bisapi%5D",
-          "source": "BBC"
-        },
-        {
-          "title": "Arteta reveals no talks with Gyokeres over limited Arsenal minutes as striker waits for his chance",
-          "url": "https://sports.yahoo.com/articles/arteta-reveals-no-talks-gyokeres-083800576.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "What can Arsenal take from Viktor Gyokeres’ brilliant Sweden form?",
-          "url": "https://www.nytimes.com/athletic/7792064/2026/11/19/viktor-gyokeres-sweden-arsenal-arteta/",
-          "source": "The New York Times"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ucl",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Watch Slovan Bratislava vs Real Betis live today: Who is broadcasting the match on TV and via live stream?",
-          "url": "https://www.goal.com/en-ke/news/live-stream-online-tv-where-to-watch-slovan-bratislava-v-real-betis/blt969dc047257e7f02",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Yaya Toure relishes reunion with former Man City boss Pellegrini",
-          "url": "https://www.besoccer.com/new/yaya-toure-relishes-reunion-with-former-man-city-boss-pellegrini-1443061",
-          "source": "BeSoccer Livescore"
-        },
-        {
-          "title": "Tigran Barseghyan's Penalty Secures Slovan Victory in Slovak League",
-          "url": "https://sportaran.com/en/post/gol-tigrana-barsegyana-s-penalti-prinyos-slovanu-pobedu-v-chempionate-slovakii/",
-          "source": "Sportaran"
-        }
-      ]
     }
   ],
   "dropped": [
