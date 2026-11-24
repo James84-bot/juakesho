@@ -1562,7 +1562,7 @@
           "published": "2026-11-24"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": [
@@ -1691,7 +1691,7 @@
         }
       ],
       "publish_at": "2026-11-24T20:30:00+03:00",
-      "status": "approved",
+      "status": "missed",
       "drafted_at": "2026-11-24T20:02:44+03:00",
       "guard": {
         "errors": [],
@@ -1701,7 +1701,8 @@
       },
       "tg_msg": 1704,
       "auto": true,
-      "decided_at": "2026-11-24T20:02:47.346150+03:00"
+      "decided_at": "2026-11-24T20:02:47.346150+03:00",
+      "missed_why": "more than 3 h past its slot: last night's searches are old news"
     }
   ],
   "scripts": {
