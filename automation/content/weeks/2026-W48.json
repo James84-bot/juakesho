@@ -1615,6 +1615,93 @@
       "tg_msg": 1689,
       "photo_checked": "2026-11-24T17:17:39.003599+03:00",
       "photo_fit": "2026-11-24T17:17:39.003615+03:00"
+    },
+    {
+      "id": "2026-w48-searching-1124",
+      "template": "searching",
+      "size": "story",
+      "hand": true,
+      "searching": true,
+      "bg": "usiku",
+      "kicker": "What Kenya is searching",
+      "day": "Tuesday 24 November",
+      "rows": [
+        {
+          "query": "pope francis",
+          "label": "1K+",
+          "title": "Pope Francis battled visions of the devil during a two-year spiritual crisis, diaries reveal",
+          "source": "CNN",
+          "url": "https://www.cnn.com/2026/11/24/europe/pope-francis-private-diaries-intl-latam"
+        },
+        {
+          "query": "viktor gyökeres",
+          "label": "500+",
+          "title": "Viktor Gyokeres: What's going on with the Arsenal striker?",
+          "source": "BBC",
+          "url": "https://www.bbc.com/sport/football/articles/cklylr15gr2do"
+        },
+        {
+          "query": "senegal national football team",
+          "label": "200+",
+          "title": "Senegal reinstated as Afcon 2025 winners by court ruling",
+          "source": "BBC",
+          "url": "https://www.bbc.com/sport/football/articles/crn80y2l1404o"
+        },
+        {
+          "query": "bristol city vs wrexham prediction",
+          "label": "100+",
+          "title": "Bristol City v Wrexham: Championship stats & head-to-head",
+          "source": "BBC",
+          "url": "https://www.bbc.com/sport/football/live/cm7527rd7d3lt"
+        },
+        {
+          "query": "wwe raw",
+          "label": "100+",
+          "title": "Raw results, Nov. 23, 2026: The Bloodline and The 946 engage in an epic brawl before WarGames",
+          "source": "WWE",
+          "url": "https://www.wwe.com/shows/raw/2026-11-23"
+        }
+      ],
+      "source": "Google Trends, Kenya (trends.google.com/trending?geo=KE)",
+      "source_links": [
+        {
+          "outlet": "CNN",
+          "link": "https://www.cnn.com/2026/11/24/europe/pope-francis-private-diaries-intl-latam",
+          "title": "Pope Francis battled visions of the devil during a two-year spiritual crisis, diaries reveal"
+        },
+        {
+          "outlet": "BBC",
+          "link": "https://www.bbc.com/sport/football/articles/cklylr15gr2do",
+          "title": "Viktor Gyokeres: What's going on with the Arsenal striker?"
+        },
+        {
+          "outlet": "BBC",
+          "link": "https://www.bbc.com/sport/football/articles/crn80y2l1404o",
+          "title": "Senegal reinstated as Afcon 2025 winners by court ruling"
+        },
+        {
+          "outlet": "BBC",
+          "link": "https://www.bbc.com/sport/football/live/cm7527rd7d3lt",
+          "title": "Bristol City v Wrexham: Championship stats & head-to-head"
+        },
+        {
+          "outlet": "WWE",
+          "link": "https://www.wwe.com/shows/raw/2026-11-23",
+          "title": "Raw results, Nov. 23, 2026: The Bloodline and The 946 engage in an epic brawl before WarGames"
+        }
+      ],
+      "publish_at": "2026-11-24T20:30:00+03:00",
+      "status": "approved",
+      "drafted_at": "2026-11-24T20:02:44+03:00",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet"
+        ]
+      },
+      "tg_msg": 1704,
+      "auto": true,
+      "decided_at": "2026-11-24T20:02:47.346150+03:00"
     }
   ],
   "scripts": {
