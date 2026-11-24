@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-24T09:32:24.401435+00:00",
+  "fetched": "2026-11-24T09:50:34.428487+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -29,22 +29,66 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "High Court: 2% HIMS fee on SHA claims unconstitutional",
+          "title": "Hight Court: 2% HIMS fee on SHA claims unconstitutional",
           "url": "https://www.the-star.co.ke/news/2026-11-24-court-declares-2-sha-claims-deduction-unlawful",
           "source": "The Star, Kenya"
+        },
+        {
+          "title": "2% HIMS fee on SHA payments unconstitutional, court rules",
+          "url": "https://citizen.digital/article/2-hims-fee-on-sha-payments-unconstitutional-court-finds-n394433",
+          "source": "Citizen Digital"
         },
         {
           "title": "High Court Declares 2% Deduction From SHA Claims Unconstitutional",
           "url": "https://www.kenyans.co.ke/news/129619-high-court-declares-2-hims-fee-sha-claims-unconstitutional",
           "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "High Court declares 2% HIMS fee unconstitutional, gives Gov't 120 days to regularise charge",
-          "url": "https://www.tv47.digital/high-court-declares-2-hims-fee-unconstitutional-gives-govt-120-days-to-regularise-charge-169913/",
-          "source": "TV47 Digital"
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "public service commission",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "KRA announces 2027 internship and pupillage vacancies",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-kra-announces-2027-internship-and-pupillage-vacancies",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "PSC opens applications for additional 2026/2027 interns",
+          "url": "https://5050markets.com/us/news/psc-internship-applications-2026",
+          "source": "5050 Markets"
+        },
+        {
+          "title": "Monthly stipend: PSC opens applications for additional 2026/27 intern positions",
+          "url": "https://www.tuko.co.ke/business-economy/647676-psc-announces-govt-internship-opportunities-20262027/",
+          "source": "Tuko News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "champions league",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Galatasaray vs Aston Villa: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c8wy5dq7dn3wt",
+          "source": "BBC"
+        },
+        {
+          "title": "Emery insists no change of plan for Aston Villa despite Galatasaray surface",
+          "url": "https://www.theguardian.com/football/2026/nov/23/unai-emery-no-change-of-plan-aston-villa-galatasaray-surface",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Aston Villa defender Ian Maatsen warns Unai Emery's side to expect tough Champions League test against 'best team in Turkiye' Galatasaray",
+          "url": "https://www.goal.com/en-ke/news/aston-villa-ian-maatsen-warns-unai-emery-champions-league-test-galatasaray/bltb0cd36a820444ab2",
+          "source": "Goal.com"
+        }
+      ]
     },
     {
       "geo": "KE",
@@ -65,28 +109,6 @@
           "title": "Tutam mko na line yenu special? Willis Raburu mocks Ruto supporters over electricity hike",
           "url": "https://chagua.co.ke/news/tutam-mko-na-line-yenu-special-willis-raburu-mocks-ruto-supporters-over-electricity-hike/",
           "source": "chagua.co.ke"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "public service commission",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "KRA announces 2027 internship and pupillage vacancies",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-kra-announces-2027-internship-and-pupillage-vacancies",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "PSC opens applications for additional 2026/2027 interns",
-          "url": "https://5050markets.com/us/news/psc-internship-applications-2026",
-          "source": "5050 Markets"
-        },
-        {
-          "title": "Monthly stipend: PSC opens applications for additional 2026/27 intern positions",
-          "url": "https://www.tuko.co.ke/business-economy/647676-psc-announces-govt-internship-opportunities-20262027/",
-          "source": "Tuko News"
         }
       ]
     },
@@ -115,23 +137,23 @@
     },
     {
       "geo": "KE",
-      "title": "champions league",
-      "traffic": "500+",
+      "title": "champions league fixtures",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Arsenal vs Borussia Dortmund: UEFA Champions League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cr4gnp24p0e6t",
-          "source": "BBC"
+          "title": "Champions League Matchday 5: Key stats and what to look out for in every game",
+          "url": "https://www.uefa.com/uefachampionsleague/news/02ab-2219497a67d6-4ad6623df0a1-1000--champions-league-matchday-5-key-stats-and-what-to-look-o/",
+          "source": "UEFA.com"
         },
         {
-          "title": "Preview: Arsenal v Borussia Dortmund",
-          "url": "https://www.arsenal.com/news/preview-arsenal-v-borussia-dortmund-ak1y01e28ux5",
-          "source": "Arsenal.com"
+          "title": "UCL Tuesday Predictions: All nine games",
+          "url": "https://www.livescore.com/en/news/football/champions-league/predictions/ucl-tuesday-predictions-champions-league/",
+          "source": "LiveScore"
         },
         {
-          "title": "Niko Kovac fires warning to Arsenal as Borussia Dortmund boss plots Champions League statement at the Emirates",
-          "url": "https://www.goal.com/en-ke/news/niko-kovac-arsenal-borussia-dortmund-champions-league-emirates/blt72f304ea89898fce",
-          "source": "Goal.com"
+          "title": "Champions League Predictions 11/24: Perfect Real Madrid in Action, Man City Seek Response",
+          "url": "https://www.si.com/soccer/champions-league-predictions-11-24-26-real-madrid-man-city",
+          "source": "Sports Illustrated"
         }
       ]
     },
@@ -141,41 +163,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Kyle Filipowski enjoys Jazz teammates ‘hyping me up’ on poster vs. Lakers - The Athletic",
-          "url": "https://www.nytimes.com/athletic/7808351/2026/11/24/kyle-filipowski-jazz-dunk-poster-lakers-nba-teammates/",
-          "source": "The New York Times"
+          "title": "Luka Doncic calls his play ‘unacceptable’ as Lakers’ 9-game winning streak ends",
+          "url": "https://apnews.com/article/lakers-lose-luka-doncic-d6d3fecb2c505c5a07857ba1b937525a",
+          "source": "AP News"
         },
         {
-          "title": "Kyle Filipowski records double-double off bench",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/kyle-filipowski-records-double-double-off-bench",
-          "source": "NBC Sports"
+          "title": "Recap: The lights in LA were too bright for Jazz",
+          "url": "https://sports.yahoo.com/articles/recap-lights-la-were-too-054639985.html",
+          "source": "Yahoo Sports"
         },
         {
-          "title": "Filipowski’s double-double not enough in loss to Lakers",
-          "url": "https://www.abc4.com/sports/filipowskis-double-double-not-enough-in-loss-to-lakers/",
-          "source": "ABC4 Utah"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "galatasaray vs aston villa",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Galatasaray vs Aston Villa: UEFA Champions League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c8wy5dq7dn3wt",
-          "source": "BBC"
-        },
-        {
-          "title": "Emery insists no change of plan for Aston Villa despite Galatasaray surface",
-          "url": "https://www.theguardian.com/football/2026/nov/23/unai-emery-no-change-of-plan-aston-villa-galatasaray-surface",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Aston Villa defender Ian Maatsen warns Unai Emery's side to expect tough Champions League test against 'best team in Turkiye' Galatasaray",
-          "url": "https://www.goal.com/en-ke/news/aston-villa-ian-maatsen-warns-unai-emery-champions-league-test-galatasaray/bltb0cd36a820444ab2",
-          "source": "Goal.com"
+          "title": "Jazz vs. Lakers Prediction, Spread, NBA Picks – Monday, November 23",
+          "url": "https://www.prizepicks.com/playbook-article/jazz-vs-lakers-prediction-spread-nba-picks-monday-november-23",
+          "source": "PrizePicks"
         }
       ]
     },
