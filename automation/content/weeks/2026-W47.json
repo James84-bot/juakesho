@@ -3683,7 +3683,7 @@
           "link": "https://peopledaily.digital/business/how-kra-plans-to-identify-kenyans-with-missing-tax-returns"
         }
       ],
-      "status": "approved",
+      "status": "missed",
       "guard": {
         "errors": [],
         "warnings": [
