@@ -1,36 +1,10 @@
-feed KBC: 60 items, 60 with an image
+feed KBC: 60 items, 59 with an image
 feed Capital FM: 60 items, 60 with an image
 feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
-feed Nation: 25 items, 0 with an image
-posted for 2026-w48-hot-1124a: 4 matching reports (person '', names ['afcon', 'caf'], words ['host', 'city', 'afcon'])
-Nation page not read: HTTP Error 403: Forbidden
-skipped KBC: image too small or not a photo (445x297, https://www.kbc.co.ke/wp-content/uploads/2026/04/senegal.jpg)
-skipped KBC: an edited graphic, not a photo (Text and logos added on top of a graphic background) (https://www.kbc.co.ke/wp-content/uploads/2026/11/Screenshot-)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-not Kenyans.co.ke: does not fit the story (Ruto Issues New Directive on Eldoret’s Kipchoge Keino Stadiu)
-news search 'afcon host city' for 2026-w48-hot-1124a: 5 reports
-Daily Nation page not read: HTTP Error 403: Forbidden
-The Eastleigh Voice page not read: HTTP Error 403: Forbidden
-picked The Star, Kenya from the news search: Kenya to host AFCON 2027 matches in Nairobi alone as 6 cities named
-Nation page not read: HTTP Error 403: Forbidden
-skipped KBC: image too small or not a photo (445x297, https://www.kbc.co.ke/wp-content/uploads/2026/04/senegal.jpg)
-skipped KBC: an edited graphic, not a photo (Text and logos added on top of a graphic background) (https://www.kbc.co.ke/wp-content/uploads/2026/11/Screenshot-)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-not Kenyans.co.ke: The story is about Nairobi, not Eldoret stadium. (Ruto Issues New Directive on Eldoret’s Kipchoge Keino Stadiu)
-topic photos for 2026-w48-hot-1124a: 7 recent reports on ['football', 'stadium']
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-skipped Kenyans.co.ke: an edited graphic, not a photo (Two photos combined side by side) (https://www.kenyans.co.ke/files/styles/article_style/public/)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-not Kenyans.co.ke: The stadium shown is Jakarta International Stadium in Indonesia, not Nairobi. (First Games at Talanta Stadium Complex Revealed)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-not Kenyans.co.ke: The story is about Nairobi, not Eldoret stadium. (Ruto Issues New Directive on Eldoret’s Kipchoge Keino Stadiu)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-skipped Kenyans.co.ke: an edited graphic, not a photo (Two photos combined side by side) (https://www.kenyans.co.ke/files/styles/article_style/public/)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-skipped Kenyans.co.ke: an edited graphic, not a photo (Two photos joined side by side) (https://www.kenyans.co.ke/files/styles/article_style/public/)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-skipped Kenyans.co.ke: an edited graphic, not a photo (Two photos combined side by side) (https://www.kenyans.co.ke/files/styles/article_style/public/)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-skipped Kenyans.co.ke: an edited graphic, not a photo (Red circular inset image containing a train.) (https://www.kenyans.co.ke/files/styles/article_style/public/)
+feed Nation failed: HTTP Error 404: Not Found
+posted for 2026-w48-hot-1124e: 5 matching reports (person '', names ['iebc'], words ['iebc', 'must', 'guarantee', 'transparent', 'election'])
+picked Capital FM (6, detail 0.458, 1023x682): IEBC to be guided by Supreme Court ruling on election results transmis
+also Capital FM (6, detail 0.384, 1600x995): Kalonzo Demands Aug 11 Deadline for 2027 Presidential Results, Questio
+also KBC (5, detail 0.624, 2048x1363): Murkomen urges Opposition to respect IEBC, independent institutions

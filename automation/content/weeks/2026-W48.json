@@ -1515,13 +1515,107 @@
       "yt_id": "LNhsFVdmLtw",
       "tt_done": "2026-11-24T15:33:42.814143+03:00",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w48-hot-1124e",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Voters",
+      "line": "IEBC states high costs may stop *livestreaming* of 2027 election results.",
+      "fact": "The commission cited expensive technical needs for live transmission of vote tallies.",
+      "source": "Kenyans.co.ke, 2026-11-24",
+      "photo_query": "ballot box Kenya",
+      "message": "The IEBC must guarantee transparent election results transmission to maintain public trust.",
+      "action": "Demand the IEBC publish its complete results transmission framework before 2027.",
+      "who": "IEBC",
+      "where": "National",
+      "when": "24 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Voters risk losing real-time visibility of official election tallies in 2027.",
+      "beats": [
+        "IEBC says high costs may stop *livestreaming* 2027 election results.",
+        "Officials cited high costs for tallies.",
+        "IEBC must guarantee *full transparency* in results.",
+        "Should election results be *streamed live* in 2027?"
+      ],
+      "caption": "IEBC says high infrastructure costs may prevent livestreaming 2027 election results. The IEBC must publish its complete results transmission plan before 2027.\n\nShould election results be streamed live? Tell us below.\n\n#IEBC #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-24T19:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "Taxpayers may cover a Sh5bn revenue shortfall on the Nairobi Expressway.",
+        "KNH closed its trauma centre front section for 120 days of repairs.",
+        "Huduma Kenya rolled out free health checks across 40 centres to catch lifestyle diseases early.",
+        "The High Court declared the 2% SHA claim deduction unconstitutional, protecting health payouts."
+      ],
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "IEBC Explains Why It Might Not Livestream 2027 Election Proceedings",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMnVCNlJGWnI1MWZWZjJnYVp5Qmc3WENTaDRjWFA5aG12cVdScEdtRkUxOGJzeXZlVmtwUTFBZXZjaTdzcUs2RWpwdy1mQUdmWkdnWnBtQmF0SWtuTUlIemVkSDVfZ1BZYW81RlB2YUkydS1CdUgtU2g1SnBkSkl1Q180ZURValJMd2NIdnI1a0V3Z2hzNkh6bG1UV1hQLUw5ci1WbXE1VEt4dVgwTThJUFRCSlJMa0VETHRZ?oc=5",
+          "published": "2026-11-24"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 8,
+        "demand": 9,
+        "action": 7,
+        "fair": 7,
+        "impact": 8,
+        "human": 7,
+        "avg": 7.6,
+        "note": "Remove hashtags and ensure the action beat reads like a direct demand to the commission."
+      },
+      "drafted_at": "2026-11-24T16:13:07.337313+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1124e-photo.jpg",
+      "photo_credit": "Photo: Capital FM · Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/iebc-to-be-guided-by-supreme-court-ruling-on-election-results-transmission-ahead-of-2027-polls/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1124e-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1124e-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Capital FM",
+          "title": "IEBC to be guided by Supreme Court ruling on election results transmission ahead of 2027 polls"
+        },
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Kalonzo Demands Aug 11 Deadline for 2027 Presidential Results, Questions IEBC"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "Murkomen urges Opposition to respect IEBC, independent institutions"
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1689
     }
   ],
   "scripts": {
-    "radio": "Jambo listeners, welcome back to Kenya on Record. Today we are looking at sports infrastructure and public spending ahead of AFCON 2027. When Kenya co-won the bid to host the tournament alongside Uganda and Tanzania, the initial promise was decentralized investment. The narrative was clear: regions outside the capital, including Eldoret, would get world-class facility upgrades to boost regional economies, youth talent, and local tourism.\n\nNow, it is official. Nairobi will be Kenya’s only host city for AFCON 2027 matches, with Kasarani and Nyayo carrying the national responsibility. This shift raises critical governance questions. Millions of public funds were slated for regional sports facilities, yet major projects outside Nairobi remain stalled or scaled back. Centralizing the tournament in Nairobi deprives local businesses, hospitality sectors, and sports enthusiasts in other counties of direct economic benefits.\n\nPublic investment must serve the entire country, not just the capital. As taxpayers, we need full visibility on stadium renovation budgets, procurement timelines, and why regional decentralization promises failed to materialize.\n\nKwa ufupi: Nairobi pekee ndiyo itakayoelekeza mechi za AFCON 2027 nchini Kenya, badala ya kugawa mechi katika viwanja vya mashinani kama ilivyowahiiahidiwa. Ni lazima tuulize: Je, fedha zilizotengwa kuboresha viwanja vya mashinani zilikwenda wapi?",
-    "voice_note": "Habari yenu. Here is a quick update from Kenya on Record. It is now official: Nairobi will be Kenya's only host city for AFCON 2027 matches. The initial promises of upgrading regional facilities like Kipchoge Keino Stadium in Eldoret to share the economic and sports benefits across counties have been dropped. Everything is being centralized back in Kasarani and Nyayo. Public money comes from taxpayers across all forty-seven counties, so regional development shouldn't be sidelined at the last minute. We need to demand answers on how sports infrastructure funds are being spent. Share this voice note and let us know your thoughts.",
-    "sms": "Usiibiwe: AFCON 2027 matches will only be in Nairobi. Demand transparency on stadium funds promised to counties outside the capital. Track your tax!",
-    "reels": "Nairobi is officially Kenya’s only host city for AFCON 2027. What happened to the promised stadium upgrades in counties like Eldoret? Billions allocated, yet regional infrastructure gets sidelined again. Why is national sports development centralized while taxes come from everywhere? Demand answers. Follow Kenya on Record for more."
+    "radio": "Habari za leo, mwananchi mwenzangu. Karibu kwenye Kenya on Record. Mimi ni sauti yako ya uwajibikaji, tukiangazia mambo yanayohusu mustakabali wa nchi yetu.\n\nWiki hii, tunaangazia Tume Huru ya Uchaguzi na Mipaka (IEBC). Uchaguzi wa 2027 unakaribia, na lazima tuzungumze ukweli mtupu. Ili wananchi tuwe na imani na matokeo ya uchaguzi, lazima IEBC ihakikishe kwamba mchakato wa kutangaza kura ni wa wazi kabisa na hauna dosari.\n\nKura yako ni sauti yako. Kila kura lazima ihesabiwe na kuonekana kwa njia ambayo kila Mkenya anaweza kuamini. Hakuna nafasi ya siri au ucheleweshaji wa kutilia shaka. Uwazi ndio nguzo pekee ya amani na demokrasia yetu.\n\nTunaendelea kufuatilia kwa karibu. Usikubali kudanganywa.\n\n[SWAHILI SUMMARY]:\nKwenye kipindi cha leo, tunasisitiza kuwa Tume ya IEBC lazima ihakikishe mfumo wa kutangaza matokeo ya uchaguzi ni wa wazi na wa kuaminika ili kulinda amani na demokrasia ya Kenya kuelekea 2027.",
+    "voice_note": "Mambo vipi kijana wa Kenya on Record? Sikiza hapa. Uchaguzi mkuu unakuja, na jambo moja lipo wazi: IEBC lazima ituonyeshe mpango thabiti wa kusambaza matokeo bila chenga. Hatutaki sarakasi za dakika za mwisho. Matokeo ya kura lazima yawe wazi kwa kila Mkenya kutoka kituo cha kupigia kura hadi ngazi ya taifa. Hiyo ndiyo njia pekee ya kulinda amani na kuaminiana. Sambaza ujumbe huu kwa marafiki zako ili tujue msimamo wetu kama wananchi.",
+    "sms": "Usiibiwe: Kura yako, nguvu yako. Dai uwazi kutoka kwa IEBC kwenye usambazaji wa matokeo. Simamia haki yako 2027! Kenya on Record.",
+    "reels": "Wakati umefika wa kusimamia ukweli! IEBC inatakiwa kujua kwamba uvumilivu wa wakenya una mipaka. Lazima kuwe na uwazi kamili kwenye matokeo ya uchaguzi—bila visingizio, bila siri. Haki ya mwananchi sio hisani. Fuatilia Kenya on Record kwa taarifa za ukweli na uwajibikaji."
   },
   "spend_usd": 0.0
 }
