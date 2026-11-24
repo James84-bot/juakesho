@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-11-24T05:41:52.836606+00:00",
+  "fetched": "2026-11-24T06:29:25.505644+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "brentford f.c. vs everton f.c. standings",
-      "traffic": "20000+",
+      "traffic": "10000+",
       "news": [
         {
           "title": "Tarkowski's first Premier League red ruins Moyes' night - was it deserved?",
@@ -12,66 +12,21 @@
           "source": "BBC"
         },
         {
-          "title": "Brentford 4-0 Everton highlights",
-          "url": "https://www.skysports.com/football/live-blog/13610930/brentford-vs-everton-live-premier-league-match-updates-free-highlights-news-and-score",
+          "title": "Brentford 4-0 Everton: Keane Lewis-Potter scores twice as Bees romp past 10-man Toffees",
+          "url": "https://www.skysports.com/football/news/13611984/brentford-4-0-everton-keane-lewis-potter-scores-twice-as-bees-romp-past-10-man-toffees",
           "source": "Sky Sports"
         },
         {
-          "title": "Lewis-Potter double and Janelt stunner ease Brentford past 10-man Everton",
-          "url": "https://www.theguardian.com/football/2026/nov/23/brentford-everton-premier-league-match-report",
-          "source": "The Guardian"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "pyramids fc",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Ammouta springs surprises against Pyramids as Imam Ashour waits for his chance",
-          "url": "https://www.goal.com/en/news/ammouta-springs-surprises-against-pyramids-as-imam-ashour-waits-for-his-chance/bltd2698ad22045a8ec",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Al Ahly coach warned he could end up like Riveiro",
-          "url": "https://www.kickoff.com/world-news/africa-news/hussein-ammouta-s-warning-ahead-of-pyramids-clash",
-          "source": "KickOff"
-        },
-        {
-          "title": "South African coach does something never seen before in Egyptian football",
-          "url": "https://www.thesouthafrican.com/sport/soccer/south-african-coach-does-something-never-seen-before-in-egyptian-football/",
-          "source": "The South African"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "fuel",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Climate change talks fall apart in final hours over fossil fuels",
-          "url": "https://www.npr.org/2026/11/22/nx-s1-6046195/cop31-climate-talks-close-disappointment",
-          "source": "NPR"
-        },
-        {
-          "title": "What failure of COP31 reveals about a divided world",
-          "url": "https://www.bbc.com/news/articles/cky970n83rvjo",
-          "source": "BBC"
-        },
-        {
-          "title": "Collapse of U.N. summit intensifies calls for new approach to climate talks",
-          "url": "https://www.washingtonpost.com/world/2026/11/23/collapse-un-summit-intensifies-calls-new-approach-climate-talks/",
-          "source": "The Washington Post"
+          "title": "Everton vs Brentford – Match preview and team news",
+          "url": "https://www.toffeeweb.com/season/26-27/news/everton-vs-brentford-match-preview-and-team-news/",
+          "source": "ToffeeWeb"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "nairobi",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "How Kenya ended up with just one host city for Afcon",
@@ -87,6 +42,72 @@
           "title": "Six venues chosen for Africa Cup of Nations finals",
           "url": "https://www.reuters.com/sports/soccer/six-venues-chosen-africa-cup-nations-finals-2026-11-22/",
           "source": "Reuters"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "champions league",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Arteta on Dortmund, Madueke and Bellingham",
+          "url": "https://www.arsenal.com/news/arteta-on-dortmund-madueke-and-bellingham-aweFB0E7h7G5",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "'You have to congratulate mum and dad' - Arteta on Bellingham brothers",
+          "url": "https://www.bbc.com/sport/football/videos/ck5y1ev0z011o",
+          "source": "BBC"
+        },
+        {
+          "title": "Tuesday's football tips: In-form Madueke evens to do some damage for Arsenal in showdown with Dortmund",
+          "url": "https://mrfixitstips.co.uk/tuesdays-football-tips-in-form-madueke-evens-to-do-some-damage-for-arsenal-in-showdown-with-dortmund/",
+          "source": "MrFixitsTips"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "electricity",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Electricity to cost Sh4.56 more per unit under new charges",
+          "url": "https://saccoreview.co.ke/electricity-to-cost-sh4-56-more-per-unit-under-new-charges/",
+          "source": "Sacco Review"
+        },
+        {
+          "title": "Kenyans to Pay Higher Power Bills in November as EPRA Announces Three Adjustments",
+          "url": "https://www.kenyans.co.ke/news/129599-epra-sets-ksh354-fuel-charge-hydropower-levy-november-electricity-consumers",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Tutam mko na line yenu special? Willis Raburu mocks Ruto supporters over electricity hike",
+          "url": "https://chagua.co.ke/news/tutam-mko-na-line-yenu-special-willis-raburu-mocks-ruto-supporters-over-electricity-hike/",
+          "source": "chagua.co.ke"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "galatasaray vs aston villa",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Galatasaray vs Aston Villa: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c8wy5dq7dn3wt",
+          "source": "BBC"
+        },
+        {
+          "title": "Unai Emery brushes off Galatasaray pitch concerns ahead of Aston Villa's Champions League clash in Istanbul",
+          "url": "https://www.goal.com/en-ke/news/unai-emery-galatasaray-aston-villa-champions-league-istanbul/blt67a469d9b3983592",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Licensable picture: Galatasaray training session ahead of UEFA Champions League match against Aston Villa",
+          "url": "https://www.reutersconnect.com/item/galatasaray-training-session-ahead-of-uefa-champions-league-match-against-aston-villa/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwSTNONkpS",
+          "source": "Reuters Connect"
         }
       ]
     },
@@ -140,41 +161,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Vanoli: \"Chiediamo scusa ai tifosi, dobbiamo essere umili\"",
-          "url": "https://sport.sky.it/calcio/serie-a/video/2026/11/23/monza-fiorentina-vanoli-intervista-video-1142353",
-          "source": "Sky Sport"
+          "title": "De Gea parla dopo Monza-Fiorentina -",
+          "url": "https://www.acffiorentina.com/news/de-gea-parla-dopo-monza-fiorentina",
+          "source": "ACF Fiorentina"
         },
         {
-          "title": "Il Monza torna a vincere: Fiorentina battuta 3-0",
-          "url": "https://www.ilponte.com/il-monza-torna-a-vincere-fiorentina-battuta-3-0/",
-          "source": "www.ilponte.com"
+          "title": "Da Udine a... Udine: a Vanoli non resta che scagliarsi (di nuovo) contro i giocatori",
+          "url": "https://www.violanews.com/esclusive/da-udine-a-udine-a-vanoli-non-resta-che-scagliarsi-di-nuovo-contro-i-giocatori/",
+          "source": "Viola News"
         },
         {
-          "title": "LA CONFERENZA DI MISTER PARO DOPO MONZA-FIORENTINA",
-          "url": "https://www.acmonza.com/it/news/la-conferenza-di-mister-paro-dopo-monza-fiorentina/",
-          "source": "Associazione Calcio Monza S.p.A. *"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "al ahly",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Ammouta or Al Ahly's haphazard approach: which is the wrong fit for the other?",
-          "url": "https://www.goal.com/en/news/ammouta-or-al-ahly-s-haphazard-approach-which-is-the-wrong-fit-for-the-other/blt675ae68ab3bbb56d",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Official: Al Ahly sack Amouta as surprise name emerges to replace him",
-          "url": "https://www.livescore.com/en/news/football/more/official-al-ahly-sack-amouta-as-surprise-name-emerges-to-replace-him-goal/",
-          "source": "LiveScore"
-        },
-        {
-          "title": "99 per cent: Ammouta out at Al Ahly, with four options on the table to replace him",
-          "url": "https://www.goal.com/en/news/99-per-cent-ammouta-out-at-al-ahly-with-four-options-on-the-table-to-replace-him/blt5b03dd9a7f577074",
-          "source": "Goal.com"
+          "title": "Calcio: la Serie A parla romano, intanto il Monza affonda la Viola con un tris",
+          "url": "https://www.ecovicentino.it/sport/calcio-la-serie-a-parla-romano-intanto-il-monza-affonda-la-viola-con-un-tris/",
+          "source": "L'Eco Vicentino"
         }
       ]
     }
@@ -185,8 +184,8 @@
       "why": "unsafe: 'Odds'"
     },
     {
-      "title": "champions league",
-      "why": "unsafe: 'Bet'"
+      "title": "fuel",
+      "why": "unsafe: 'missing'"
     }
   ],
   "errors": {}
