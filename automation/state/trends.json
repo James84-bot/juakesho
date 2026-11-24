@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-24T06:29:25.505644+00:00",
+  "fetched": "2026-11-24T07:42:16.646597+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -12,65 +12,21 @@
           "source": "BBC"
         },
         {
-          "title": "Brentford 4-0 Everton: Keane Lewis-Potter scores twice as Bees romp past 10-man Toffees",
-          "url": "https://www.skysports.com/football/news/13611984/brentford-4-0-everton-keane-lewis-potter-scores-twice-as-bees-romp-past-10-man-toffees",
+          "title": "Lewis-Potter double and Janelt stunner ease Brentford past 10-man Everton",
+          "url": "https://www.theguardian.com/football/2026/nov/23/brentford-everton-premier-league-match-report",
+          "source": "The Guardian"
+        },
+        {
+          "title": "Brentford 4-0 Everton highlights",
+          "url": "https://www.skysports.com/football/live-blog/13610930/brentford-vs-everton-live-premier-league-match-updates-free-highlights-news-and-score",
           "source": "Sky Sports"
-        },
-        {
-          "title": "Everton vs Brentford – Match preview and team news",
-          "url": "https://www.toffeeweb.com/season/26-27/news/everton-vs-brentford-match-preview-and-team-news/",
-          "source": "ToffeeWeb"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "nairobi",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "How Kenya ended up with just one host city for Afcon",
-          "url": "https://nation.africa/kenya/sports/football/how-kenya-ended-up-with-just-one-host-city-for-afcon--5681922",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "CAF and Coca-Cola Reunite almost 30 years as Coca-Cola is named the Official Competition Sponsor of the TotalEnergies CAF Africa Cup of Nations (AFCON) 2027 and CAF Africa Cup of Nations 2028",
-          "url": "https://www.cafonline.com/inside-caf/news/caf-and-coca-cola-reunite-almost-30-years-as-coca-cola-is-named-the-official-competition-sponsor-of-the-totalenergies-caf-africa-cup-of-nations-afcon-2027-and-caf-africa-cup-of-nations-2028/",
-          "source": "CAFOnline.com"
-        },
-        {
-          "title": "Six venues chosen for Africa Cup of Nations finals",
-          "url": "https://www.reuters.com/sports/soccer/six-venues-chosen-africa-cup-nations-finals-2026-11-22/",
-          "source": "Reuters"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "champions league",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Arteta on Dortmund, Madueke and Bellingham",
-          "url": "https://www.arsenal.com/news/arteta-on-dortmund-madueke-and-bellingham-aweFB0E7h7G5",
-          "source": "Arsenal.com"
-        },
-        {
-          "title": "'You have to congratulate mum and dad' - Arteta on Bellingham brothers",
-          "url": "https://www.bbc.com/sport/football/videos/ck5y1ev0z011o",
-          "source": "BBC"
-        },
-        {
-          "title": "Tuesday's football tips: In-form Madueke evens to do some damage for Arsenal in showdown with Dortmund",
-          "url": "https://mrfixitstips.co.uk/tuesdays-football-tips-in-form-madueke-evens-to-do-some-damage-for-arsenal-in-showdown-with-dortmund/",
-          "source": "MrFixitsTips"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "electricity",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Electricity to cost Sh4.56 more per unit under new charges",
@@ -91,23 +47,112 @@
     },
     {
       "geo": "KE",
-      "title": "galatasaray vs aston villa",
-      "traffic": "100+",
+      "title": "public service commission",
+      "traffic": "200+",
       "news": [
+        {
+          "title": "PSC announces government internship vacancies for 2026/2027",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-psc-announces-government-internships-for-20262027",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "KRA opens 12-month paid internships for 2027, offering up to Ksh25,000 a month",
+          "url": "https://peopledaily.digital/news/kra-opens-12-month-paid-internships-for-2027-offering-up-to-ksh25000-a-month",
+          "source": "People Daily"
+        },
+        {
+          "title": "PSC opens applications for additional 2026/2027 interns",
+          "url": "https://5050markets.com/us/news/psc-internship-applications-2026",
+          "source": "5050 Markets"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nairobi",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Babu sells Nairobi governor bid as lone ranger after Sifuna fallout",
+          "url": "https://nation.africa/kenya/news/politics/babu-sells-nairobi-governor-bid-as-lone-ranger-after-sifuna-fallout-5681694",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "Why Gachagua stance and ODM-UDA pact push Babu Owino to tight corner in Nairobi governor race",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-gachagua-odm-uda-pact-push-babu-to-tight-corner-in-nairobi",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Babu Owino pledges to reduce Nairobi business licence fees for all traders if elected governor",
+          "url": "https://peopledaily.digital/inside-politics/babu-owino-pledges-to-reduce-nairobi-business-licence-fees-for-all-traders-if-elected-governor",
+          "source": "People Daily"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "lakers vs jazz",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Luka Doncic calls his play ‘unacceptable’ as Lakers’ 9-game winning streak ends",
+          "url": "https://apnews.com/article/lakers-lose-luka-doncic-d6d3fecb2c505c5a07857ba1b937525a",
+          "source": "AP News"
+        },
+        {
+          "title": "Jazz vs. Lakers Prediction, Spread, NBA Picks – Monday, November 23",
+          "url": "https://www.prizepicks.com/playbook-article/jazz-vs-lakers-prediction-spread-nba-picks-monday-november-23",
+          "source": "PrizePicks"
+        },
+        {
+          "title": "Luka Dončić turns in 28/4/8 line vs. Utah",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/luka-doncic-turns-in-28-4-8-line-vs-utah",
+          "source": "NBC Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "galatasaray vs aston villa",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Emery insists no change of plan for Aston Villa despite Galatasaray surface",
+          "url": "https://www.theguardian.com/football/2026/nov/23/unai-emery-no-change-of-plan-aston-villa-galatasaray-surface",
+          "source": "The Guardian"
+        },
         {
           "title": "Galatasaray vs Aston Villa: UEFA Champions League stats & head-to-head",
           "url": "https://www.bbc.com/sport/football/live/c8wy5dq7dn3wt",
           "source": "BBC"
         },
         {
-          "title": "Unai Emery brushes off Galatasaray pitch concerns ahead of Aston Villa's Champions League clash in Istanbul",
-          "url": "https://www.goal.com/en-ke/news/unai-emery-galatasaray-aston-villa-champions-league-istanbul/blt67a469d9b3983592",
+          "title": "Aston Villa defender Ian Maatsen warns Unai Emery's side to expect tough Champions League test against 'best team in Turkiye' Galatasaray",
+          "url": "https://www.goal.com/en-ke/news/aston-villa-ian-maatsen-warns-unai-emery-champions-league-test-galatasaray/bltb0cd36a820444ab2",
           "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "champions league",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Arsenal vs Borussia Dortmund: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cr4gnp24p0e6t",
+          "source": "BBC"
         },
         {
-          "title": "Licensable picture: Galatasaray training session ahead of UEFA Champions League match against Aston Villa",
-          "url": "https://www.reutersconnect.com/item/galatasaray-training-session-ahead-of-uefa-champions-league-match-against-aston-villa/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwSTNONkpS",
-          "source": "Reuters Connect"
+          "title": "Arteta on Dortmund, Madueke and Bellingham",
+          "url": "https://www.arsenal.com/news/arteta-on-dortmund-madueke-and-bellingham-aweFB0E7h7G5",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Tuesday's football tips: In-form Madueke evens to do some damage for Arsenal in showdown with Dortmund",
+          "url": "https://mrfixitstips.co.uk/tuesdays-football-tips-in-form-madueke-evens-to-do-some-damage-for-arsenal-in-showdown-with-dortmund/",
+          "source": "MrFixitsTips"
         }
       ]
     },
@@ -117,9 +162,9 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "2027: Tinubu woos Igbo, recalls 2023 defeat in Lagos",
-          "url": "https://punchng.com/2027-tinubu-woos-igbo-recalls-2023-defeat-in-lagos/",
-          "source": "Punch Newspapers"
+          "title": "Tinubu, Sanwo-Olu back new Igbo Business Consultative Forum at Lagos dialogue",
+          "url": "https://thesun.ng/tinubu-sanwo-olu-back-new-igbo-business-consultative-forum-at-lagos-dialogue/",
+          "source": "The Sun Nigeria"
         },
         {
           "title": "2027: ‘I Want A Second Term, All South-East Governors Are With Me’ — Tinubu Declares",
@@ -127,61 +172,17 @@
           "source": "LEADERSHIP Newspapers"
         },
         {
-          "title": "Tinubu: I Was Very Angry With Buhari",
-          "url": "https://thesourceng.com/tinubu-i-was-very-angry-with-buhari/",
-          "source": "The Source"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "nantes fc",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Frédéric Guilbert après Nantes – GF38 : « Tout le monde a répondu présent »",
-          "url": "https://antichambre.eu/frederic-guilbert-apres-nantes-gf38-tout-le-monde-a-repondu-present/",
-          "source": "https://antichambre.eu/"
-        },
-        {
-          "title": "\"On fait ce qu'il faut offensivement...\", Mathieu Cafaro à la mi-temps de FC Nantes - GF38 (0-0)",
-          "url": "https://tribunenantaise.fr/actus-fcnantes/on-fait-ce-quil-faut-offensivement-mathieu-cafaro-a-la-mi-temps-de-fc-nantes-gf38-0-0/",
-          "source": "Tribune Nantaise"
-        },
-        {
-          "title": "Grenoble Foot - Les images de la rencontre",
-          "url": "https://www.fcnantes.com/articles/article2809.php?num=49967",
-          "source": "FC Nantes"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "monza",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "De Gea parla dopo Monza-Fiorentina -",
-          "url": "https://www.acffiorentina.com/news/de-gea-parla-dopo-monza-fiorentina",
-          "source": "ACF Fiorentina"
-        },
-        {
-          "title": "Da Udine a... Udine: a Vanoli non resta che scagliarsi (di nuovo) contro i giocatori",
-          "url": "https://www.violanews.com/esclusive/da-udine-a-udine-a-vanoli-non-resta-che-scagliarsi-di-nuovo-contro-i-giocatori/",
-          "source": "Viola News"
-        },
-        {
-          "title": "Calcio: la Serie A parla romano, intanto il Monza affonda la Viola con un tris",
-          "url": "https://www.ecovicentino.it/sport/calcio-la-serie-a-parla-romano-intanto-il-monza-affonda-la-viola-con-un-tris/",
-          "source": "L'Eco Vicentino"
+          "title": "I Was Angry Igbos In Lagos Didn’t Vote For Me — Tinubu",
+          "url": "https://thewhistler.ng/i-was-angry-igbos-in-lagos-didnt-vote-for-me-tinubu/",
+          "source": "The Whistler Newspaper"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "lakers vs jazz",
-      "why": "unsafe: 'Odds'"
+      "title": "champions league fixtures",
+      "why": "unsafe: 'Bet'"
     },
     {
       "title": "fuel",
