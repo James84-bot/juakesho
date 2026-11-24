@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-24T14:15:22.335170+00:00",
+  "fetched": "2026-11-24T15:42:51.788876+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -26,37 +26,9 @@
     },
     {
       "geo": "KE",
-      "title": "sha",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Court faults SHA’s 2 per cent fee for lack of public participation, gives State 120-day reprieve",
-          "url": "https://nation.africa/kenya/news/court-faults-sha-2-per-cent-fee-state-120-day-reprieve-5682208",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "High Court: 2% HIMS fee on SHA claims unconstitutional",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-court-declares-2-sha-claims-deduction-unlawful",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "2% HIMS fee on SHA payments unconstitutional, court rules",
-          "url": "https://citizen.digital/article/2-hims-fee-on-sha-payments-unconstitutional-court-finds-n394433",
-          "source": "Citizen Digital"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "kebs used car import rules",
       "traffic": "1000+",
       "news": [
-        {
-          "title": "Inside KEBS conditions for importing used cars from January 1, 2027",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-inside-kebs-new-rules-for-importing-used-cars-from-january",
-          "source": "The Star, Kenya"
-        },
         {
           "title": "KEBS Announces Cars Kenyans Will No Longer Be Allowed to Import From 2027",
           "url": "https://www.kenyans.co.ke/news/129617-kebs-bans-importation-used-cars-first-registered-2020-january-2027",
@@ -66,6 +38,11 @@
           "title": "Kenya to ban importation of 2019-registered used vehicles on December 31, 2026",
           "url": "https://peopledaily.digital/business/kenya-to-ban-importation-of-2019-registered-used-vehicles-on-december-31-2026",
           "source": "People Daily"
+        },
+        {
+          "title": "You have until 31st December 2026 to bring a 2019 used car into Kenya",
+          "url": "https://tech-ish.com/2026/11/24/you-have-until-31st-december-2026-to-bring-a-2019-used-car-into-kenya/",
+          "source": "Techish Kenya"
         }
       ]
     },
@@ -88,6 +65,28 @@
           "title": "Pope Francis had visions of the Devil and Hell, diaries reveal",
           "url": "https://www.reuters.com/world/pope-francis-had-visions-devil-hell-diaries-reveal-2026-11-24/",
           "source": "Reuters"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kra",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "KRA allocates Konza Technopolis customs code in push to operationalise SEZ",
+          "url": "https://www.the-star.co.ke/sasa/technology/2026-11-24-kra-allocates-konza-technopolis-customs-code-in-push-to-operationalise-sez",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Konza Technopolis Gets KRA Customs Approval in Major Boost to Investors",
+          "url": "https://businesstoday.co.ke/konza-technopolis-gets-kra-customs-approval/",
+          "source": "Business Today Kenya"
+        },
+        {
+          "title": "Konza eyes fully operational SEZ after customs status from KRA",
+          "url": "https://citizen.digital/article/konza-eyes-fully-operational-sez-after-customs-status-from-kra-n394451",
+          "source": "Citizen Digital"
         }
       ]
     },
@@ -119,44 +118,43 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Meet the Only Vet Who Claims He Saw Wes Moore in Combat: A Broke ‘Content Creator’ in Thailand Who’s Blowing His Life Savings on a Russian, Porn-Performing Camgirl",
-          "url": "https://freebeacon.com/democrats/meet-the-only-vet-who-claims-he-saw-wes-moore-in-combat-a-broke-content-creator-in-thailand-whos-blowing-his-life-savings-on-a-russian-porn-performing-camgirl/",
-          "source": "freebeacon.com"
+          "title": "Afghan women with UK university offers 'heartbroken' after visas stopped",
+          "url": "https://www.bbc.com/news/articles/c6vg25e1v17wo",
+          "source": "BBC"
         },
         {
-          "title": "Report: Ex-Marine who backed Gov. Moore's Afghanistan claims found living in Thailand",
-          "url": "https://upnorthlive.com/news/nation-world/ex-marine-backed-governor-wes-moore-afghanistan-claims-living-thailand-russian-cam-girl",
-          "source": "WPBN"
+          "title": "UK visa brake blocks Afghan women's university places",
+          "url": "https://streamlinefeed.co.ke/news/uk-visa-brake-blocks-afghan-womens-university-places",
+          "source": "https://streamlinefeed.co.ke/"
         },
         {
-          "title": "Army Finds No Record of Moore's Commendation Medal",
-          "url": "https://wisevoter.com/world/us/md/2026/11/22/army-review-no-record-moore-commendation-medal",
-          "source": "Wisevoter"
+          "title": "Opinion: How Afghanistan’s Qosh Tepa Canal Could Affect Kazakhstan’s Water Security",
+          "url": "https://timesca.com/opinion-how-afghanistans-qosh-tepa-canal-could-affect-kazakhstans-water-security/",
+          "source": "The Times Of Central Asia"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "kra",
-      "traffic": "200+",
+      "title": "wwe raw",
+      "traffic": "100+",
       "news": [
         {
-          "title": "KRA waives Sh64.39bn in tax penalties and interest",
-          "url": "https://saccoreview.co.ke/kra-waives-sh64-39bn-in-tax-penalties-and-interest/",
-          "source": "Sacco Review"
+          "title": "Raw results, Nov. 23, 2026: The Bloodline and The 946 engage in an epic brawl before WarGames",
+          "url": "https://www.wwe.com/shows/raw/2026-11-23",
+          "source": "WWE"
         },
         {
-          "title": "KRA waives Sh64bn tax penalties for 984,489 taxpayers",
-          "url": "https://www.the-star.co.ke/news/2026-11-23-kra-waives-sh64bn-penalties-for-over-900k-taxpayers",
-          "source": "The Star, Kenya"
+          "title": "WWE Announces Major Title Match And Survivor Series Updates For RAW",
+          "url": "https://sports.ndtv.com/us/wwe/wwe-announces-major-title-match-and-survivor-series-updates-for-raw-12365174",
+          "source": "NDTV Sports"
         },
         {
-          "title": "KRA forgoes Ksh 64B in taxes under ongoing amnesty programme",
-          "url": "https://www.kbc.co.ke/kra-forgoes-ksh-64b-in-taxes-under-ongoing-amnesty-programme/",
-          "source": "KBC Digital"
+          "title": "WWE Raw Live Updates, Results and Highlights Before Survivor Series WarGames 2026",
+          "url": "https://bleacherreport.com/liveblogs/25537042-wwe-raw-live-updates-results-and-highlights-survivor-series-wargames-2026",
+          "source": "Bleacher Report"
         }
-      ],
-      "civic": true
+      ]
     }
   ],
   "dropped": [
@@ -165,12 +163,12 @@
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "feyenoord vs porto prediction",
+      "title": "arsenal vs dortmund",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "charlton vs lincoln",
-      "why": "unsafe: 'Odds'"
+      "title": "feyenoord vs porto prediction",
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
