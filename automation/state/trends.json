@@ -1,32 +1,10 @@
 {
-  "fetched": "2026-11-25T09:42:11.110892+00:00",
+  "fetched": "2026-11-25T11:41:42.007290+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "import",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Inside KEBS conditions for importing used cars from January 1, 2027",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-inside-kebs-new-rules-for-importing-used-cars-from-january",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Kenya to ban importation of 2019-registered used vehicles on December 31, 2026",
-          "url": "https://peopledaily.digital/business/kenya-to-ban-importation-of-2019-registered-used-vehicles-on-december-31-2026",
-          "source": "People Daily"
-        },
-        {
-          "title": "You have until 31st December 2026 to bring a 2019 used car into Kenya",
-          "url": "https://tech-ish.com/2026/11/24/you-have-until-31st-december-2026-to-bring-a-2019-used-car-into-kenya/",
-          "source": "Techish Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "kenya airways",
-      "traffic": "2000+",
+      "traffic": "5000+",
       "news": [
         {
           "title": "KQ flight attendant honoured for returning passenger’s Sh1.2mn",
@@ -47,23 +25,68 @@
     },
     {
       "geo": "KE",
-      "title": "como 1907 vs aek athens f.c. standings",
-      "traffic": "1000+",
+      "title": "import",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Como 1-0 AEK Athens: Stunning strike by Luis Milla helps Como scrape past Greek side",
-          "url": "https://www.bbc.com/sport/football/live/cm36gwx7w44pt",
+          "title": "Shein Profit Rises Despite Lower Revenue Amid Geopolitical Challenges",
+          "url": "https://www.wsj.com/business/earnings/shein-profit-rises-despite-lower-revenue-amid-geopolitical-challenges-dcc318b4",
+          "source": "WSJ"
+        },
+        {
+          "title": "SHEIN Global Holdings: EU pressure cut revenue, but adjusted profit improved and a listing-related gain lifted net income",
+          "url": "https://www.tradingview.com/news/urn:summary_document_report:quartr.com:4214754:0-shein-global-holdings-eu-pressure-cut-revenue-but-adjusted-profit-improved-and-a-listing-related-gain-lifted-net-income/",
+          "source": "TradingView"
+        },
+        {
+          "title": "Shein Profit Rebounds on Cost Cuts Despite Weak Demand",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-25/shein-profit-rebounds-on-cost-cuts-despite-weak-demand",
+          "source": "Bloomberg"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "moses wetang'ula",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "I will contest Presidency in 2032 after Ruto completes his term - Wetangula",
+          "url": "https://citizen.digital/article/i-will-contest-presidency-in-2032-after-ruto-completes-his-term-wetangula-n394364",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "\"Since independence\": Wetang'ula downplays Sifuna's 2027 presidential bid",
+          "url": "https://www.tuko.co.ke/politics/647567-moses-wetangula-chides-sifuna-declares-2032-presidential-bid-i-experience/",
+          "source": "Tuko News"
+        },
+        {
+          "title": "Wetangula: Why I Am Ready to Succeed Ruto as President in 2032",
+          "url": "https://nairobiwire.com/2026/11/moses-wetangula-2032-presidential-bid.html",
+          "source": "Nairobi Wire -"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "marcus rashford",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Rashford and Baleba take part in gym session",
+          "url": "https://www.manutd.com/en/news/marcus-rashford-and-carlos-baleba-take-part-in-gym-session",
+          "source": "Manchester United"
+        },
+        {
+          "title": "Transfer Notebook: Man United target Brentford star with emergency overhaul planned",
+          "url": "https://talksport.com/football/4727574/transfer-notebook-nathan-collins-man-united-january-target/",
+          "source": "talkSPORT"
+        },
+        {
+          "title": "Football gossip: Collins, Tanaka, Calvert-Lewin, Kroupi, Ngumoha, Hudson-Odoi, Hall, Albert",
+          "url": "https://www.bbc.com/sport/football/articles/cm15en5je9eko",
           "source": "BBC"
-        },
-        {
-          "title": "SlipsTips’ Tips: Side with foul angle in Como’s clash with AEK Athens",
-          "url": "https://mrfixitstips.co.uk/slipstips-tips-side-with-foul-angle-in-comos-clash-with-aek-athens/",
-          "source": "MrFixitsTips"
-        },
-        {
-          "title": "Alvini criticised after Milan-Frosinone? Fabregas defends him: \"I do the same as him and want to keep hearing he's an excellent coach\"",
-          "url": "https://www.goal.com/en/news/alvini-criticised-after-milan-frosinone-fabregas-defends-him-i-do-the-same-as-him-and-want-to-keep-hearing-he-s-an-excellent-coach/bltafe3b7eaa0ca6755",
-          "source": "Goal.com"
         }
       ]
     },
@@ -101,9 +124,9 @@
           "source": "The Star, Kenya"
         },
         {
-          "title": "National Police Service Announces Recruitment of Police Cadets",
-          "url": "https://chagua.co.ke/news/national-police-service-announces-recruitment-of-police-cadets/",
-          "source": "chagua.co.ke"
+          "title": "Police Cadets recruitment 2026: Salary, qualifications and what the officers do",
+          "url": "https://www.pulse.co.ke/story/how-much-kenya-police-cadets-earn-as-nps-announces-new-graduate-recruitment-2026112507064241407",
+          "source": "Pulse Kenya"
         },
         {
           "title": "What CS Murkomen’s Recruitment Warning Means for Parents",
@@ -115,45 +138,23 @@
     },
     {
       "geo": "KE",
-      "title": "ucl results",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Champions League top scorer: Kylian Mbappé moves level with Tasos Douvikas",
-          "url": "https://www.uefa.com/uefachampionsleague/news/02a9-218f8e669a0a-debba167a199-1000--champions-league-top-scorer-kylian-mbappe-moves-level-with/",
-          "source": "UEFA.com"
-        },
-        {
-          "title": "Mbappé, MVP of the match against PSV",
-          "url": "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/mbappe-mvp-del-partido-ante-el-psv-24-11-2026",
-          "source": "Real Madrid CF | Web Oficial"
-        },
-        {
-          "title": "Mbappé breaks record, overtaking Real Madrid legend!",
-          "url": "https://todaypress.tv/en/sports/mbappe-breaks-record-overtaking-real-madrid-legend",
-          "source": "TodayPress.tv"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "marcus rashford",
+      "title": "shilling",
       "traffic": "100+",
       "news": [
         {
-          "title": "Rashford and Baleba take part in gym session",
-          "url": "https://www.manutd.com/en/news/marcus-rashford-and-carlos-baleba-take-part-in-gym-session",
-          "source": "Manchester United"
+          "title": "Shilling weakens to Sh130 on dollar demand from importers",
+          "url": "https://nation.africa/kenya/business/shilling-weakens-to-sh130-on-dollar-demand-from-importers--5683174",
+          "source": "Daily Nation"
         },
         {
-          "title": "Pochettino makes his immediate focus clear",
-          "url": "https://www.manutd.com/en/news/pochettino-makes-his-immediate-focus-clear-before-sporting-away",
-          "source": "Manchester United"
+          "title": "Kenya’s foreign reserves fall $656 million as import cover drops to 5.6 months",
+          "url": "https://nairametrics.com/2026/11/21/kenyas-foreign-reserves-fall-656-million-as-import-cover-drops-to-5-6-months/",
+          "source": "Nairametrics"
         },
         {
-          "title": "Sporting CP vs Manchester United: UEFA Champions League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/crkgv8v0gdwkt",
-          "source": "BBC"
+          "title": "Kenya’s Strong Domestic Bond Demand Offers Treasury Breathing Room as Dollar Borrowing Costs Rise",
+          "url": "https://newstrends.co.ke/kenyas-strong-domestic-bond-demand-offers-treasury-breathing-room-as-dollar-borrowing-costs-rise/",
+          "source": "newstrends.co.ke"
         }
       ]
     },
@@ -195,9 +196,9 @@
           "source": "People.com"
         },
         {
-          "title": "The Big Night Is Almost Here! Telemundo Unveils Unprecedented Coverage for the Historic 75th Miss Universe® Competition, Live Coast-to-Coast from Puerto Rico on Tuesday, November 24, Starting at 7pm ET/6pm CT/4pm PT",
-          "url": "https://nbcuniversalnewsgroup.com/telemundo/2026/11/17/the-big-night-is-almost-here-telemundo-unveils-unprecedented-coverage-for-the-historic-75th-miss-universe-competition-live-coast-to-coast-from-puerto-rico-on-tuesday-november-24-startin/",
-          "source": "NBCUniversal News Group"
+          "title": "Meet the 116 women competing to be Miss Universe 2026",
+          "url": "https://www.businessinsider.com/miss-universe-pageant-contestants-photos-2026-11",
+          "source": "Business Insider"
         }
       ]
     }
