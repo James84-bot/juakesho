@@ -1,32 +1,32 @@
 {
-  "fetched": "2026-11-25T14:12:07.970544+00:00",
+  "fetched": "2026-11-25T15:41:58.955651+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "import",
-      "traffic": "5000+",
+      "title": "alejandro garnacho",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "EU sets cap on number of hybrid vehicles that can be imported from China",
-          "url": "https://www.dw.com/en/eu-imposes-import-quotas-for-hybrid-vehicles-from-china/a-80029981",
-          "source": "Deutsche Welle"
+          "title": "Alejandro Garnacho snub addressed by Aston Villa boss Unai Emery",
+          "url": "https://www.espn.co.uk/football/story/_/id/50591453/alejandro-garnacho-aston-villa-unai-emery",
+          "source": "ESPN"
         },
         {
-          "title": "European Automakers Surge: Market Reacts to New Regulations",
-          "url": "https://www.xtb.com/cy/market-analysis/news-and-research/european-automakers-surge-market-reacts-to-new-regulations",
-          "source": "XTB.com"
+          "title": "The Athletic: Villa may limit Garnacho's appearances to avoid triggering mandatory purchase clause",
+          "url": "https://www.allfootballapp.com/articles/6074168-athletic-villa-may-limit-garnachos-appearances",
+          "source": "AllFootball"
         },
         {
-          "title": "Licensable video: China to Face Tougher Car Import Restrictions in Europe From December",
-          "url": "https://www.reutersconnect.com/item/china-to-face-tougher-car-import-restrictions-in-europe-from-december/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XU0hCQzEyMDk4NDQ",
-          "source": "Reuters Connect"
+          "title": "Alejandro Garnacho Reaches Point of No Return at Aston Villa",
+          "url": "https://www.si.com/soccer/alejandro-garnacho-point-no-return-aston-villa",
+          "source": "Sports Illustrated"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "police",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "NPS announces police cadet recruitment, sets December 10 deadline",
@@ -49,75 +49,30 @@
     {
       "geo": "KE",
       "title": "moses wetang'ula",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
+        {
+          "title": "MP caught on camera pocketing colleague’s phone, denies it",
+          "url": "https://citizen.digital/article/mp-caught-on-camera-pocketing-colleagues-phone-denies-it-n394507",
+          "source": "Citizen Digital"
+        },
         {
           "title": "Fresh Details Emerge as MP Recounts Losing New iPhone in Parliament",
           "url": "https://www.kenyans.co.ke/news/129677-sabina-chege-recounts-losing-new-iphone-parliament-after-wetangula-expose",
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "Wetang'ula: CCTV captured MP pocketing colleague's phone",
-          "url": "https://www.the-star.co.ke/news/2026-11-25-wetangula-cctv-captured-mp-pocketing-colleagues-phone",
+          "title": "Sabina Chege: Phone stolen in Parliament was mine",
+          "url": "https://www.the-star.co.ke/news/2026-11-25-sabina-chege-phone-stolen-in-parliament-was-mine",
           "source": "The Star, Kenya"
-        },
-        {
-          "title": "Peter Salasya warns Wetang’ula over public revelation of MP stealing colleague’s phone",
-          "url": "https://peopledaily.digital/inside-politics/peter-salasya-warns-wetangula-over-public-revelation-of-mp-stealing-colleagues-phone",
-          "source": "People Daily"
         }
       ],
       "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "mike sonko",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Court again declines to stop Sonko from leading NEDP as eligibility battle continues",
-          "url": "https://nation.africa/kenya/news/politics/court-again-declines-to-stop-sonko-from-leading-nedp-as-eligibility-battle-continues-5682766",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "High Court declines application to bar Sonko from NEDP party leadership",
-          "url": "https://citizen.digital/article/high-court-declines-application-to-bar-sonko-from-nedp-party-leadership-n394450",
-          "source": "Citizen Digital"
-        },
-        {
-          "title": "Why a Lawyer Wants Mike Sonko Barred From Leading Political Party",
-          "url": "https://nairobiwire.com/2026/11/mike-sonko-nedp-leadership-case-high-court-ruling.html",
-          "source": "Nairobi Wire -"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "kdf combat camera training kenya",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "US Army trains KDF soldiers in combat camera work",
-          "url": "https://5050markets.com/ke/news/kdf-us-army-combat-camera-training",
-          "source": "5050 Markets"
-        },
-        {
-          "title": "KDF, U.S. Military Partner on Advanced Ground Combat Training",
-          "url": "https://www.kenyans.co.ke/news/129627-kdf-partners-us-military-train-soldiers-combat-photography",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "KDF HONES COMBAT CAMERA SKILLS FOR OPERATIONAL STORYTELLING",
-          "url": "https://www.mod.go.ke/news/kdf-hones-combat-camera-skills-for-operational-storytelling/",
-          "source": "Ministry of Defence – Kenya"
-        }
-      ]
     },
     {
       "geo": "KE",
       "title": "shilling",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Shilling weakens to Sh130 on dollar demand from importers",
@@ -138,52 +93,78 @@
     },
     {
       "geo": "KE",
-      "title": "marcus rashford",
+      "title": "raheem sterling",
       "traffic": "200+",
       "news": [
         {
-          "title": "Rashford and Baleba take part in gym session",
-          "url": "https://www.manutd.com/en/news/marcus-rashford-and-carlos-baleba-take-part-in-gym-session",
-          "source": "Manchester United Website"
-        },
-        {
-          "title": "Transfer Notebook: Man United target Brentford star with emergency overhaul planned",
-          "url": "https://talksport.com/football/4727574/transfer-notebook-nathan-collins-man-united-january-target/",
-          "source": "talkSPORT"
-        },
-        {
-          "title": "Football gossip: Collins, Tanaka, Calvert-Lewin, Kroupi, Ngumoha, Hudson-Odoi, Hall, Albert",
-          "url": "https://www.bbc.com/sport/football/articles/cm15en5je9eko",
+          "title": "Raheem Sterling - from national icon to suspended jail sentence",
+          "url": "https://www.bbc.com/sport/football/articles/cxzd9ydqzylno",
           "source": "BBC"
+        },
+        {
+          "title": "Raheem Sterling enjoyed a wonderful Premier League career but regularly attracted controversy - is there any way back?",
+          "url": "https://www.skysports.com/football/news/13616028/raheem-sterling-enjoyed-a-wonderful-premier-league-career-but-regularly-attracted-controversy-is-there-any-way-back",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Raheem Sterling avoids jail over reckless driving while using nitrous oxide",
+          "url": "https://www.theguardian.com/football/2026/nov/25/raheem-sterling-avoids-jail-reckless-driving-nitrous-oxide-sentence",
+          "source": "The Guardian"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "kenya revenue authority internships",
+      "title": "afc leopards",
       "traffic": "100+",
       "news": [
         {
-          "title": "PSC announces government internship vacancies for 2026/2027",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-psc-announces-government-internships-for-20262027",
-          "source": "The Star, Kenya"
+          "title": "Wasteful AFC Leopards drop crucial points in goalless stalemate against Ulinzi Stars",
+          "url": "https://blog.ke.sportpesa.com/2026/11/25/wasteful-afc-leopards-drop-crucial-points-in-goalless-stalemate-against-ulinzi-stars/",
+          "source": "SportPesa Blog"
         },
         {
-          "title": "KRA announces 2027 internships for degree and diploma graduates: How to apply",
-          "url": "https://biznakenya.com/kra-announces-2027-internship-how-to-apply/",
-          "source": "Bizna Kenya"
+          "title": "FKFPL: Leopards chase top spot as Bomet seek to build on derby victory",
+          "url": "https://eastleighvoice.co.ke/news/427677/fkfpl-leopards-chase-top-spot-as-bomet-seek-to-build-on-derby-victory",
+          "source": "The Eastleigh Voice"
         },
         {
-          "title": "PSC opens applications for additional 2026/2027 interns",
-          "url": "https://5050markets.com/ke/news/psc-internship-applications-2026",
-          "source": "5050 Markets"
+          "title": "AFC Leopards train guns on Ulinzi with top spot in sight as Homeboyz face Shabana",
+          "url": "https://www.mozzartsport.co.ke/football/news/afc-leopards-train-guns-on-ulinzi-with-top-spot-in-sight-as-homeboyz-face-shabana/70923",
+          "source": "Mozzart Sport Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "british airways",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Boston-Bound British Airways 787-10 Declares Emergency Over Second Oil Leak In 10 Days",
+          "url": "https://simpleflying.com/british-airways-boeing-787-10-boston-emergency-second-oil-leak-10-days/",
+          "source": "Simple Flying"
+        },
+        {
+          "title": "British Airways BA239 declared an emergency over North Atlantic following oil drop",
+          "url": "https://airlive.net/emergency/2026/11/25/british-airways-ba239-declared-an-emergency-over-north-atlantic-following-oil-drop/",
+          "source": "airlive"
+        },
+        {
+          "title": "British Airways flight declares emergency off Irish coast due to technical issue",
+          "url": "https://www.belfastlive.co.uk/news/uk-world-news/british-airways-flight-declares-emergency-34939024",
+          "source": "Belfast Live"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "club brugge vs liverpool prediction",
+      "title": "slavia prague vs villarreal prediction",
+      "why": "unsafe: 'Bet'"
+    },
+    {
+      "title": "club brugge vs liverpool",
       "why": "unsafe: 'Odds'"
     },
     {
