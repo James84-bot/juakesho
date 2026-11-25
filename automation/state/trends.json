@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-25T13:41:45.320571+00:00",
+  "fetched": "2026-11-25T13:56:19.188906+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -52,6 +52,11 @@
       "traffic": "500+",
       "news": [
         {
+          "title": "Fresh Details Emerge as MP Recounts Losing New iPhone in Parliament",
+          "url": "https://www.kenyans.co.ke/news/129677-sabina-chege-recounts-losing-new-iphone-parliament-after-wetangula-expose",
+          "source": "Kenyans.co.ke"
+        },
+        {
           "title": "Wetang'ula: CCTV captured MP pocketing colleague's phone",
           "url": "https://www.the-star.co.ke/news/2026-11-25-wetangula-cctv-captured-mp-pocketing-colleagues-phone",
           "source": "The Star, Kenya"
@@ -60,11 +65,6 @@
           "title": "Peter Salasya warns Wetang’ula over public revelation of MP stealing colleague’s phone",
           "url": "https://peopledaily.digital/inside-politics/peter-salasya-warns-wetangula-over-public-revelation-of-mp-stealing-colleagues-phone",
           "source": "People Daily"
-        },
-        {
-          "title": "MP caught on camera pocketing colleague’s phone, denies it",
-          "url": "https://citizen.digital/article/an-was-mp-caught-on-camera-pocketing-colleagues-phone-he-denied-it-n394507",
-          "source": "Citizen Digital"
         }
       ],
       "civic": true
@@ -126,7 +126,7 @@
         },
         {
           "title": "Kenya attracts Ksh 85B in domestic bond bids, giving it borrowing flexibility as Eurobond yields rise",
-          "url": "https://hapakenya.com/2026/11/25/kenya-attracts-ksh-85b-in-domestic-bond-bids-giving-it-borrowing-flexibility-as-eurobond-yields-rise/",
+          "url": "https://hapakenya.com/?p=188492",
           "source": "HapaKenya -"
         },
         {
@@ -144,7 +144,7 @@
         {
           "title": "Rashford and Baleba take part in gym session",
           "url": "https://www.manutd.com/en/news/marcus-rashford-and-carlos-baleba-take-part-in-gym-session",
-          "source": "Manchester United"
+          "source": "Manchester United Website"
         },
         {
           "title": "Transfer Notebook: Man United target Brentford star with emergency overhaul planned",
@@ -164,8 +164,8 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Raheem Sterling - from national icon to suspended jail sentence",
-          "url": "https://www.bbc.com/sport/football/articles/cxzd9ydqzylno",
+          "title": "Raheem Sterling given suspended jail sentence for dangerous driving and nitrous oxide possession",
+          "url": "https://www.bbc.com/news/live/cqd01l0yr93nt",
           "source": "BBC"
         },
         {
