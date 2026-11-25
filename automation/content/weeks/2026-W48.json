@@ -1703,13 +1703,272 @@
       "auto": true,
       "decided_at": "2026-11-24T20:02:47.346150+03:00",
       "missed_why": "more than 3 h past its slot: last night's searches are old news"
+    },
+    {
+      "id": "2026-w48-hot-1125m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Hospital Patients",
+      "line": "Kenyatta National Hospital health workers *down tools* over unmet agreements.",
+      "fact": "Kenyatta National Hospital health workers downed tools over unmet labour agreements.",
+      "source": "Kenyans.co.ke, 2026-11-24",
+      "who": "Ministry of Health and KNH Management",
+      "where": "Nairobi",
+      "when": "24 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Patients at Kenya's main referral hospital face disrupted emergency and specialised care.",
+      "message": "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives.",
+      "action": "Call KNH customer care to confirm emergency services before visiting the hospital.",
+      "photo_query": "Kenyatta National Hospital Nairobi",
+      "beats": [
+        "KNH health workers *down tools* over unmet deals.",
+        "Emergency care at the referral hospital faces *major disruptions*.",
+        "The Ministry of Health must *settle* the staff dispute immediately.",
+        "Have you faced delays at KNH this week?"
+      ],
+      "caption": "Kenyatta National Hospital health workers have downed tools over unmet labour agreements. Service disruptions at the main referral hospital put patient care at risk. The Ministry of Health must settle the Kenyatta National Hospital staff dispute immediately. Have you faced delays at KNH this week?\n\n#HealthKE #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-25T09:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "Concern as KNH Workers Go On Strike",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYWlxMjBDNWtORHhkdUY2Nnp4SjVUNE8xd0F6NmZPeWIwM191MFI1c0dxRmRjZW54cHFmc1liUnp5SWN5SURMZjhvZElPWk4tTmVnRFJwS2FBUTRmMmNyNFhpTlE5WE1PYmlLYnZMLWJNXzViNERWcy1LMDN4WDdSbG9taUVZbGt1Z0Zvd3FxVGdnZHVmS3lSdXo4YTV2ZlBad0pXbmFB?oc=5",
+          "published": "2026-11-24"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "hook: the first line has no figure and no named person, place or body: it is a topic, not a hook",
+          "the linked report is not about this story (Concern as KNH Workers Go On Strike): use the headline id of the report this post is really based on",
+          "weak: editor scored 5.2/10. Replace vague asterisks with a direct opening fact that names the specific union or grievance."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 6,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 5,
+        "craft": 5,
+        "picture": 6,
+        "hold": 5,
+        "demand": 5,
+        "action": 3,
+        "fair": 7,
+        "impact": 6,
+        "human": 4,
+        "avg": 5.2,
+        "note": "Replace vague asterisks with a direct opening fact that names the specific union or grievance."
+      },
+      "drafted_at": "2026-11-25T06:42:13.574183+03:00",
+      "replaced_by": "2026-w48-hot-1125m-r2",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125m-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127928-knh-launches-probe-after-patients-viral-video-raises-questions-over-treatment",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KNH Responds After Patient Accuses Hospital of Rejection Despite Paying Ksh45,000"
+        }
+      ],
+      "tv_clip": {
+        "channel": "Citizen TV",
+        "title": "KNH health workers down tools over salary delays and welfare grievances",
+        "url": "https://www.youtube.com/watch?v=AGt-GEl-myM"
+      },
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1734
+    },
+    {
+      "id": "2026-w48-hot-1125m-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football players",
+      "line": "FKF and Red Cross seal a *Sh54 million* deal to upgrade medical care at local matches.",
+      "fact": "The three-year agreement provides trained medics and emergency ambulances for football matches across Kenya.",
+      "message": "FKF and Red Cross partner in a Sh54m deal to ensure proper medical response for players on the pitch.",
+      "action": "Support local teams and demand safe medical standards at your neighbourhood pitch",
+      "who": "FKF and Kenya Red Cross",
+      "where": "National",
+      "when": "24 Nov 2026",
+      "side": "none",
+      "tone": "credit",
+      "impact": "Local football players get faster emergency treatment when injured during matches.",
+      "photo_query": "football pitch Kenya",
+      "source": "Citizen Digital, 2026-11-24",
+      "beats": [
+        "FKF and Red Cross signed a *Sh54 million* sports medical deal.",
+        "Idris (Citizen Digital): “This partnership makes sure that when they do, help is already there”",
+        "Players will get immediate pitch-side treatment during games.",
+        "Have you seen medics at local matches in your area?"
+      ],
+      "caption": "Football Kenya Federation and the Kenya Red Cross have signed a Sh54 million three-year partnership to provide emergency medical services at local matches. Pitch-side medical care protects our players from severe injury risks. Tell us below: do your local matches have ambulances on standby?\n\n#FootballKE #FKF #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-25T09:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives."
+      ],
+      "source_links": [
+        {
+          "outlet": "Citizen Digital",
+          "title": "FKF, Red Cross seal KSh54 million deal to boost football medical services",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeTdFNDN5VmU3V0tKVEdOdFNoVVdpS3JSLVdvWVhsRW5PcTdsUGZEcXFSaTZaMm5qejgtQnZDT0NlNU1GZFFVTi13Wmp2c3dacnpIZkNZRWdSVmZZUm5wdlpnUS1vTFUyb05IdGpvbWhKWUx4cjNILURIOFNfQTU4cVlCaGl2TGVoY1RaWTZWYS1FNDVPMG1HRXVnSHpxbUFHTVNqT3dCbWR2MGh5RnBTUkV3?oc=5",
+          "published": "2026-11-24"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Football is about more than what happens on the pitch. It is also about the people, their safety and the communities we serve",
+          "speaker": "Mohammed",
+          "context": "\"Football is about more than what happens on the pitch. It is also about the people, their safety and the communities we serve,\" Mohammed said.",
+          "outlet": "Citizen Digital",
+          "link": "https://citizen.digital/article/fkf-red-cross-seal-ksh54-million-deal-to-boost-football-medical-services-n394445"
+        },
+        {
+          "text": "This partnership makes sure that when they do, help is already there",
+          "speaker": "Idris",
+          "context": "\"This partnership makes sure that when they do, help is already there,\" Idris said, referring to emergencies that can occur when players and supporters gather at matches.",
+          "outlet": "Citizen Digital",
+          "link": "https://citizen.digital/article/fkf-red-cross-seal-ksh54-million-deal-to-boost-football-medical-services-n394445"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.8/10. Remove the generic hashtag block at the end to make it sound like a real person wrote it."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 7,
+        "demand": 7,
+        "action": 5,
+        "fair": 8,
+        "impact": 8,
+        "human": 4,
+        "avg": 6.8,
+        "note": "Remove the generic hashtag block at the end to make it sound like a real person wrote it."
+      },
+      "drafted_at": "2026-11-25T06:44:03.436930+03:00",
+      "replaced_by": "2026-w48-hot-1125m-r3",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125m-r2-photo.jpg",
+      "photo_credit": "File photo: AnonymousUnknown author / Wikimedia Commons, Public domain",
+      "photo_kind": "file",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Freudenberg_family_Red_Cross_search_document.jpg",
+      "shot_info": [
+        {
+          "credit": "File photo: AnonymousUnknown author / Wikimedia Commons, Public domain",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1735
+    },
+    {
+      "id": "2026-w48-hot-1125m-r3",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Kenyatta National Hospital",
+      "line": "KNH *workers* go on strike as union demands unpaid dues and better terms.",
+      "fact": "KNH staff downed tools on 24 November 2026 over delayed allowances and poor working conditions.",
+      "message": "KNH workers are on strike, leaving patients waiting for urgent care across the facility.",
+      "action": "Demand the Ministry of Health settles staff dues by Friday: call 020 2726300",
+      "beats": [
+        "KNH workers have *downed* tools over unpaid dues.",
+        "Patients face long waits at the referral hospital.",
+        "Staff demand immediate payment of delayed allowances.",
+        "Have you or a relative sought *care* at KNH today?"
+      ],
+      "photo_query": "hospital ward Kenya",
+      "source": "Kenyans.co.ke, 2026-11-24",
+      "who": "Ministry of Health and KNH Management",
+      "where": "Nairobi",
+      "when": "24 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Sick Kenyans suffer delays as the public hospital faces staff strikes.",
+      "caption": "KNH workers are on strike over unpaid dues, leaving patients stranded. We pay taxes for health. The Ministry of Health must pay up.\n\nHave you or a relative sought care at KNH today?\n\n#KNH #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-25T09:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives.",
+        "FKF and Red Cross partner in a Sh54m deal to ensure proper medical response for players on the pitch."
+      ],
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "Concern as KNH Workers Go On Strike",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYWlxMjBDNWtORHhkdUY2Nnp4SjVUNE8xd0F6NmZPeWIwM191MFI1c0dxRmRjZW54cHFmc1liUnp5SWN5SURMZjhvZElPWk4tTmVnRFJwS2FBUTRmMmNyNFhpTlE5WE1PYmlLYnZMLWJNXzViNERWcy1LMDN4WDdSbG9taUVZbGt1Z0Zvd3FxVGdnZHVmS3lSdXo4YTV2ZlBad0pXbmFB?oc=5",
+          "published": "2026-11-24"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "'kicker' is 26 chars (max 24)",
+          "hook: the first line has no figure and no named person, place or body: it is a topic, not a hook",
+          "shouting reads as clickbait: 'urgent' (let the numbers carry the urgency)"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "drafted_at": "2026-11-25T06:44:37.871406+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125m-r3-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129129-kmpdu-lists-kiambu-among-17-counties-face-healthcare-disruption",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KMPDU Warns 17 Counties of Doctors’ Strike From November 25"
+        }
+      ],
+      "tv_clip": {
+        "channel": "Citizen TV",
+        "title": "KNH health workers down tools over salary delays and welfare grievances",
+        "url": "https://www.youtube.com/watch?v=AGt-GEl-myM"
+      },
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1736
     }
   ],
   "scripts": {
-    "radio": "Habari za leo, mwananchi mwenzangu. Karibu kwenye Kenya on Record. Mimi ni sauti yako ya uwajibikaji, tukiangazia mambo yanayohusu mustakabali wa nchi yetu.\n\nWiki hii, tunaangazia Tume Huru ya Uchaguzi na Mipaka (IEBC). Uchaguzi wa 2027 unakaribia, na lazima tuzungumze ukweli mtupu. Ili wananchi tuwe na imani na matokeo ya uchaguzi, lazima IEBC ihakikishe kwamba mchakato wa kutangaza kura ni wa wazi kabisa na hauna dosari.\n\nKura yako ni sauti yako. Kila kura lazima ihesabiwe na kuonekana kwa njia ambayo kila Mkenya anaweza kuamini. Hakuna nafasi ya siri au ucheleweshaji wa kutilia shaka. Uwazi ndio nguzo pekee ya amani na demokrasia yetu.\n\nTunaendelea kufuatilia kwa karibu. Usikubali kudanganywa.\n\n[SWAHILI SUMMARY]:\nKwenye kipindi cha leo, tunasisitiza kuwa Tume ya IEBC lazima ihakikishe mfumo wa kutangaza matokeo ya uchaguzi ni wa wazi na wa kuaminika ili kulinda amani na demokrasia ya Kenya kuelekea 2027.",
-    "voice_note": "Mambo vipi kijana wa Kenya on Record? Sikiza hapa. Uchaguzi mkuu unakuja, na jambo moja lipo wazi: IEBC lazima ituonyeshe mpango thabiti wa kusambaza matokeo bila chenga. Hatutaki sarakasi za dakika za mwisho. Matokeo ya kura lazima yawe wazi kwa kila Mkenya kutoka kituo cha kupigia kura hadi ngazi ya taifa. Hiyo ndiyo njia pekee ya kulinda amani na kuaminiana. Sambaza ujumbe huu kwa marafiki zako ili tujue msimamo wetu kama wananchi.",
-    "sms": "Usiibiwe: Kura yako, nguvu yako. Dai uwazi kutoka kwa IEBC kwenye usambazaji wa matokeo. Simamia haki yako 2027! Kenya on Record.",
-    "reels": "Wakati umefika wa kusimamia ukweli! IEBC inatakiwa kujua kwamba uvumilivu wa wakenya una mipaka. Lazima kuwe na uwazi kamili kwenye matokeo ya uchaguzi—bila visingizio, bila siri. Haki ya mwananchi sio hisani. Fuatilia Kenya on Record kwa taarifa za ukweli na uwajibikaji."
+    "radio": "Habari za leo, mwananchi. Karibu kwenye Kenya on Record. Mimi ni sauti yako ya kuleta uwajibikaji.\n\nLeo tunaleta mezani kero kuu inayoendelea katika Hospitali ya Kitaifa ya Kenyatta, KNH. Wafanyakazi wa KNH wako kwa mgomo, wakilalamikia masuala ya mishahara na mazingira ya kazi. Matokeo yake? Wagonjwa wanaohitaji huduma za dharura wanateseka kwenye madawati, wakisubiri bila mwelekeo. Hali hii inasikitisha sana. Hospitali kubwa kama hii haiwezi kuachwa igeuke uwanja wa majaribio wakati wananchi wa kawaida wanapoteza uhai.\n\nSerikali na uongozi wa KNH wanapaswa kukaa meza moja na wafanyakazi hawa haraka iwezekanavyo. Afya si anasa; ni haki ya msingi ya Kila Mkenya.\n\nTunaendelea kufuatilia hili kwa karibu sana. Usiibiwe na ahadi hewa—simama kidete kwa haki yako.\n\n*Ujumbe kwa kifupi kwa ndugu zetu wa Kiswahili:* Wafanyakazi wa hospitali ya KNH wamegoma, na wagonjwa wameachwa bila matibabu ya dharura. Hali hii inahitaji suluhu ya haraka kutoka kwa serikali kulinda maisha ya Wakenya.",
+    "voice_note": "Wadau, habari. Hapa ni Kenya on Record. Hebu tuongee ukweli kidogo kuhusu hali ilivyo KNH wiki hii. Wafanyakazi wako kwa mgomo, na wagonjwa wameachwa wakisubiri huduma za dharura. Hii si sawa kabisa. Mtu anaenda hospitali kutafuta afya, anapata milango imefungwa au hakuna huduma. Serikali na wizara ya afya lazima ziwajibike na kutatua shida za hawa wafanyakazi haraka, ndio wananchi wasiendelee kuteseka. Tusinyamaze kwa hili. Sambaza ujumbe huu ili viongozi wasikie kilio chetu.",
+    "sms": "KNH workers are on strike, leaving emergency patients stranded. Healthcare is a right, not a privilege. Demand accountability. Usiibiwe!",
+    "reels": "[Visual: Frustrated patients waiting outside KNH gates, empty corridors]\n\nHost voice-over (serious, direct):\n\nHali gani hii? Hospitali kubwa ya KNH imesimama. Wafanyakazi wako kwa mgomo, na wagonjwa wa dharura wameachwa wakisubiri huduma. Maisha ya Wakenya hayapaswi kuchezewa hivi. Serikali na uongozi wa KNH, fanyeni kazi yenu leo, sio kesho. Fuatilia Kenya on Record kwa ukweli wote."
   },
   "spend_usd": 0.0
 }
