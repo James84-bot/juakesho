@@ -1966,13 +1966,298 @@
       "tg_msg": 1736,
       "photo_checked": "2026-11-25T07:21:41.104576+03:00",
       "photo_fit": "2026-11-25T07:21:41.104593+03:00"
+    },
+    {
+      "id": "2026-w48-hot-1125",
+      "template": "sauti",
+      "lane": "everyone",
+      "message": "Police advertised cadet jobs for degree holders aged 22 to 30 with deadlines.",
+      "action": "Check requirements and apply before the police service deadline.",
+      "beats": [
+        "The National Police Service advertised *cadet* jobs for degree holders.",
+        "Applicants must be aged between *22 and 30* years old.",
+        "Thousands of graduates are expected to send applications this week.",
+        "Will you be sending in your *application* today?"
+      ],
+      "photo_query": "Kenya police vehicle",
+      "kicker": "Job Seekers",
+      "line": "The National Police Service opened applications for graduate cadet jobs for youth.",
+      "fact": "Degree holders aged 22 to 30 years old are eligible to apply for the new police cadet positions.",
+      "source": "Kenyans.co.ke, 2026-11-25, The Eastleigh Voice, 2026-11-25",
+      "caption": "New police cadet jobs are open for degree holders aged 22 to 30. Check the requirements and apply before the deadline.\n\nWill you be sending in your application today?\n\n#KenyaOnRecord",
+      "who": "National Police Service",
+      "where": "National",
+      "when": "25 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Unemployed graduates get a chance to apply for formal public sector jobs.",
+      "bg": "usiku",
+      "publish_at": "2026-11-25T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives.",
+        "FKF and Red Cross partner in a Sh54m deal to ensure proper medical response for players on the pitch.",
+        "KNH workers are on strike, leaving patients waiting for urgent care across the facility."
+      ],
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "Police Announce New Jobs for University Graduates, Set Application Deadline",
+          "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPT0htMkdUZnE2a2VPLW1wSXVjdmtsLV96RjFCMDBwSjBjdXgtR3o2eFBBV2szcWRpcllKVlF5YURGbmFsVW56X2xIWHRtOHg3TmVUMEZra3JxMFRKYzN4SGZfcWREQjZCeUp5VUQ1cjgxazE2eENkWHEyQW03UmVYQ1hZYWUyM1FfZXZaLXlqYUdzT09Ga3Q3b2xmRGd1NjR3c0JqNUMyNVNVbTlTSFRyMklhMWJITHBZSy1faHVCZEM4UQ?oc=5",
+          "published": "2026-11-25"
+        },
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "Degree holders aged 22 to 30 invited to apply for cadet jobs at National Police Service",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONC1xNjRib29OczA1N2Rkb0g2SWkzc1pFYm8yenRBcjM0Rk55MjRRM2dlMkdFQ1E0NzV2V3Z1SkFzUFZjSlFBcnhTWGUyZ3VLR0ZWQWVyUGJLNm1fbTJlSzhpMklOQnJyQ0RPazAzdVFmSHQtWmhMNGd2aVdKNE1ZZm5PQ2czU0lQbjRfUEVLZ1hRalhJeldNVHhLWm41T1JUYlRjUXM2cEpvWENlQnd2VjVfUnFXMGFQOUd5T2dzR2lTdDdUVGc4?oc=5",
+          "published": "2026-11-25"
+        }
+      ],
+      "quotes": [],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.3/10. Remove textbook framing, name the specific deadline date, and replace the generic web link call with a concrete lawful demand.",
+          "visual QA: low contrast 1.8:1 (needs 3:1) on 'The National Police Service op'"
+        ],
+        "warnings": [
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 5,
+        "craft": 4,
+        "picture": 4,
+        "hold": 4,
+        "demand": 4,
+        "action": 3,
+        "fair": 7,
+        "impact": 4,
+        "human": 3,
+        "avg": 4.3,
+        "note": "Remove textbook framing, name the specific deadline date, and replace the generic web link call with a concrete lawful demand."
+      },
+      "drafted_at": "2026-11-25T09:10:06.287415+03:00",
+      "replaced_by": "2026-w48-hot-1125-r2",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125-photo.jpg",
+      "photo_credit": "Photo: The Star, Kenya",
+      "photo_kind": "posted",
+      "photo_outlet": "The Star, Kenya",
+      "photo_source": "https://www.the-star.co.ke/news/2026-11-24-nps-announces-police-cadet-recruitment-sets-december-10-deadline",
+      "shot_info": [
+        {
+          "credit": "Photo: The Star, Kenya",
+          "title": "NPS announces police cadet recruitment, sets December 10 deadline"
+        }
+      ],
+      "ink": {
+        "2": "#FFFFFF"
+      }
+    },
+    {
+      "id": "2026-w48-hot-1125-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Nairobi Residents",
+      "line": "Nairobi County *invites* residents to shape the 2027/28 budget in public forums.",
+      "fact": "The two-day public participation forums allow citizens to give views on county spending priorities.",
+      "source": "Capital FM News, 2026-11-25",
+      "photo_query": "Nairobi County Assembly building Kenya",
+      "message": "Nairobi residents have two days to shape the county budget priorities for 2027/28.",
+      "action": "Attend your local county budget forum and present your community priorities",
+      "beats": [
+        "Nairobi County invited residents to shape the 2027/28 budget in forums.",
+        "Auma: “The CFSP dictates where every shilling goes in the next financial year”",
+        "Public participation is required by law before budgets are approved.",
+        "Did you attend your local county budget forum this week?"
+      ],
+      "caption": "Your voice matters for the county budget. Nairobi residents have two days to shape spending priorities for 2027/28.\n\nDid you attend your local county budget forum this week? 👇🏾\n\n#KenyaOnRecord",
+      "who": "Governor Johnson Sakaja",
+      "where": "Nairobi",
+      "when": "25 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Residents decide how county funds are spent on local services.",
+      "bg": "usiku",
+      "publish_at": "2026-11-25T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives.",
+        "FKF and Red Cross partner in a Sh54m deal to ensure proper medical response for players on the pitch.",
+        "KNH workers are on strike, leaving patients waiting for urgent care across the facility.",
+        "Police advertised cadet jobs for degree holders aged 22 to 30 with deadlines."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Nairobi Residents Invited to Shape 2027/28 County Budget in Two-Day Public Forums",
+          "link": "https://capitalfm.africa/nairobi-residents-invited-to-shape-2027-28-county-budget-in-two-day-public-forums/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-25"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "The CFSP dictates where every shilling goes in the next financial year. We want a budget built around the real needs of Nairobians",
+          "speaker": "Auma",
+          "context": "“The CFSP dictates where every shilling goes in the next financial year. We want a budget built around the real needs of Nairobians,” Auma said.",
+          "outlet": "Capital FM News",
+          "link": "https://capitalfm.africa/nairobi-residents-invited-to-shape-2027-28-county-budget-in-two-day-public-forums/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news"
+        },
+        {
+          "text": "These remarks are tribal and we won’t be divided",
+          "speaker": "Njuguna",
+          "context": "“These remarks are tribal and we won’t be divided,” Njuguna said.",
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/counties/nairobi/2026-11-18-nairobi-traders-back-sakaja-tell-gachagua-we-wont-be-divided"
+        },
+        {
+          "text": "Sakaja has included everyone in the Nairobi Green Army",
+          "speaker": "Wangeci",
+          "context": "“Sakaja has included everyone in the Nairobi Green Army,” Wangeci said.",
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/counties/nairobi/2026-11-18-nairobi-traders-back-sakaja-tell-gachagua-we-wont-be-divided"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.2/10. Ground the post in real immediate stakes and give a concrete, lawful demand to Nairobi County."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 8,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 6,
+        "demand": 3,
+        "action": 5,
+        "fair": 7,
+        "impact": 7,
+        "human": 6,
+        "avg": 6.2,
+        "note": "Ground the post in real immediate stakes and give a concrete, lawful demand to Nairobi County."
+      },
+      "drafted_at": "2026-11-25T09:11:24.962545+03:00",
+      "replaced_by": "2026-w48-hot-1125-r3",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125-r2-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129251-kasarani-mp-ronald-karauri-challenge-nairobi-governor-uda-ticket",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "UDA Unveils Sakaja's Challenger for Nairobi Gubernatorial Seat"
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1743
+    },
+    {
+      "id": "2026-w48-hot-1125-r3",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Jobseekers",
+      "line": "The National Police Service invited degree holders aged 22 to 30 for *cadet* jobs.",
+      "fact": "Applicants must hold a degree and submit applications by the set deadline.",
+      "message": "The National Police Service invited degree holders aged 22 to 30 to apply for cadet jobs.",
+      "action": "Check the recruitment portal and apply before the deadline.",
+      "beats": [
+        "Police want *graduates* aged 22 to 30.",
+        "Applicants must meet all set requirements.",
+        "Thousands are searching for *jobs* today.",
+        "Did you submit your application yet?"
+      ],
+      "photo_query": "police station Kenya",
+      "source": "The Eastleigh Voice, 2026-11-25",
+      "caption": "Degree holders aged 22 to 30 can now apply for cadet jobs at the National Police Service. Check the requirements and send your papers in time.\n\nDid you submit your application yet?\n\n#KenyaOnRecord",
+      "who": "National Police Service",
+      "where": "National",
+      "when": "25 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Jobseekers get an open call for formal employment opportunities.",
+      "bg": "usiku",
+      "publish_at": "2026-11-25T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives.",
+        "FKF and Red Cross partner in a Sh54m deal to ensure proper medical response for players on the pitch.",
+        "KNH workers are on strike, leaving patients waiting for urgent care across the facility.",
+        "Police advertised cadet jobs for degree holders aged 22 to 30 with deadlines.",
+        "Nairobi residents have two days to shape the county budget priorities for 2027/28."
+      ],
+      "source_links": [
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "Degree holders aged 22 to 30 invited to apply for cadet jobs at National Police Service",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxONC1xNjRib29OczA1N2Rkb0g2SWkzc1pFYm8yenRBcjM0Rk55MjRRM2dlMkdFQ1E0NzV2V3Z1SkFzUFZjSlFBcnhTWGUyZ3VLR0ZWQWVyUGJLNm1fbTJlSzhpMklOQnJyQ0RPazAzdVFmSHQtWmhMNGd2aVdKNE1ZZm5PQ2czU0lQbjRfUEVLZ1hRalhJeldNVHhLWm41T1JUYlRjUXM2cEpvWENlQnd2VjVfUnFXMGFQOUd5T2dzR2lTdDdUVGc4?oc=5",
+          "published": "2026-11-25"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.5/10. Replace textbook phrasing and generic police station stock photo with the specific recruitment notice details, exact vacancy numbers, and a demand directed at the NPS recruitment desk."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 6,
+        "fresh": 4,
+        "voice": 5,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 3,
+        "action": 3,
+        "fair": 6,
+        "impact": 4,
+        "human": 3,
+        "avg": 4.5,
+        "note": "Replace textbook phrasing and generic police station stock photo with the specific recruitment notice details, exact vacancy numbers, and a demand directed at the NPS recruitment desk."
+      },
+      "drafted_at": "2026-11-25T09:13:12.762103+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125-r3-photo.jpg",
+      "photo_credit": "Photo: Unknown photographer / Wikimedia Commons, Public domain",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Photograph_of_Kenyan_Sikh_pioneers_in-front_of_Gurdwara_Sahib_Railway_Landhies_in_Nairobi,_Kenya,_1903.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Unknown photographer / Wikimedia Commons, Public domain",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1744
     }
   ],
   "scripts": {
-    "radio": "Habari za leo, mwananchi. Karibu kwenye Kenya on Record. Mimi ni sauti yako ya kuleta uwajibikaji.\n\nLeo tunaleta mezani kero kuu inayoendelea katika Hospitali ya Kitaifa ya Kenyatta, KNH. Wafanyakazi wa KNH wako kwa mgomo, wakilalamikia masuala ya mishahara na mazingira ya kazi. Matokeo yake? Wagonjwa wanaohitaji huduma za dharura wanateseka kwenye madawati, wakisubiri bila mwelekeo. Hali hii inasikitisha sana. Hospitali kubwa kama hii haiwezi kuachwa igeuke uwanja wa majaribio wakati wananchi wa kawaida wanapoteza uhai.\n\nSerikali na uongozi wa KNH wanapaswa kukaa meza moja na wafanyakazi hawa haraka iwezekanavyo. Afya si anasa; ni haki ya msingi ya Kila Mkenya.\n\nTunaendelea kufuatilia hili kwa karibu sana. Usiibiwe na ahadi hewa—simama kidete kwa haki yako.\n\n*Ujumbe kwa kifupi kwa ndugu zetu wa Kiswahili:* Wafanyakazi wa hospitali ya KNH wamegoma, na wagonjwa wameachwa bila matibabu ya dharura. Hali hii inahitaji suluhu ya haraka kutoka kwa serikali kulinda maisha ya Wakenya.",
-    "voice_note": "Wadau, habari. Hapa ni Kenya on Record. Hebu tuongee ukweli kidogo kuhusu hali ilivyo KNH wiki hii. Wafanyakazi wako kwa mgomo, na wagonjwa wameachwa wakisubiri huduma za dharura. Hii si sawa kabisa. Mtu anaenda hospitali kutafuta afya, anapata milango imefungwa au hakuna huduma. Serikali na wizara ya afya lazima ziwajibike na kutatua shida za hawa wafanyakazi haraka, ndio wananchi wasiendelee kuteseka. Tusinyamaze kwa hili. Sambaza ujumbe huu ili viongozi wasikie kilio chetu.",
-    "sms": "KNH workers are on strike, leaving emergency patients stranded. Healthcare is a right, not a privilege. Demand accountability. Usiibiwe!",
-    "reels": "[Visual: Frustrated patients waiting outside KNH gates, empty corridors]\n\nHost voice-over (serious, direct):\n\nHali gani hii? Hospitali kubwa ya KNH imesimama. Wafanyakazi wako kwa mgomo, na wagonjwa wa dharura wameachwa wakisubiri huduma. Maisha ya Wakenya hayapaswi kuchezewa hivi. Serikali na uongozi wa KNH, fanyeni kazi yenu leo, sio kesho. Fuatilia Kenya on Record kwa ukweli wote."
+    "radio": "Habari za wiki hii kutoka Kenya on Record. Mimi ni mtangazaji wako. Leo tunatazama tangazo lililotoka hivi karibuni kutoka kwa Huduma ya Polisi ya Kitaifa, NPS. Wito umetolewa kwa Wakenya wenye shahada ya chuo kikuu, wenye umri wa miaka 22 hadi 30, kuomba nafasi za uk cadet.\n\nSasa, wananchi, hii ni fursa nzuri kwa vijana wetu wanaomaliza vyuo vikuu na kusubiri kazi. Lakini kama kawaida yetu hapa Kenya on Record, tunapenda kuwakumbusha mambo mawili ya msingi. Ya kwanza, hakikisha unafuata taratibu zote rasmi zilizowekwa kwenye tovuti ya NPS au kupitia vyombo vya habari vinavyoaminika. Usidanganywe na watu wanaosema wanaweza kukusaidia kupata hiyo nafasi kwa njia ya mkato au kwa kutoa hongo.\n\nYa pili, uwazi ndio ngao yetu kuu. Tunataka kuona mchakato huu ukiendeshwa kwa haki bila upendeleo wala upendeleo wa kikabila, ili kila kijana mwenye sifa apate nafasi sawa. Fuatilia, uliza maswali, na usikubali kuibiwa au kutapeliwa na matapeli wanaotumia fursa hizi kuwakamua wananchi pesa. Linda haki yako, simama kidete.\n\n*Kwa ufupi:* Polisi wametangaza nafasi za cadet kwa wenye digrii na umri wa miaka 22 hadi 30. Fuata taratibu halisi, kataa rushwa, nasimamia uwazi.",
+    "voice_note": "Sasa wakuu, habari za leo? Hapa ni Kenya on Record. Polisi wametangaza nafasi za cadet kwa wale wenye digrii, umri miaka 22 hadi 30. Sikiza hapa: hii ni fursa safi kwa vijana wetu, lakini jihadharini na matapeli. Hakuna mtu anayepaswa kukuitisha pesa ili kukusaidia kupata kazi ya polisi. Mchakato lazima uwe wa wazi na wa haki. Angalia taarifa kamili kupitia njia rasmi pekee. Usikubali kupigwa chenga!",
+    "sms": "NPS imetangaza nafasi za cadet kwa wenye digrii (miaka 22-30). Fuata njia rasmi pekee. Usitoe hongo kupata kazi; ripoti matapeli. Kenya on Record.",
+    "reels": "Wenye digrii, mnasikia? Polisi wametoa nafasi za cadet kwa vijana wa miaka 22 hadi 30. Lakini sikiza: hakuna kulipa rushwa kupata kazi! Hii sio biashara, ni utumishi wa umma. Fuata njia rasmi, simama kwa haki, na ukatae kutapeliwa. Kenya on Record tunalinda uwazi!"
   },
   "spend_usd": 0.0
 }
