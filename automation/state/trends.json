@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-25T16:03:49.424242+00:00",
+  "fetched": "2026-11-25T16:23:11.012075+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -22,29 +22,6 @@
           "source": "Sports Illustrated"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "police",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "NPS announces police cadet recruitment, sets December 10 deadline",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-nps-announces-police-cadet-recruitment-sets-december-10-deadline",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Police Cadets recruitment 2026: Salary, qualifications and what the officers do",
-          "url": "https://www.pulse.co.ke/story/how-much-kenya-police-cadets-earn-as-nps-announces-new-graduate-recruitment-2026112507064241407",
-          "source": "Pulse Kenya"
-        },
-        {
-          "title": "What CS Murkomen’s Recruitment Warning Means for Parents",
-          "url": "https://parentsafrica.com/what-cs-murkomens-recruitment-warning-means-for-parents/",
-          "source": "Parents Africa"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -150,16 +127,20 @@
           "source": "airlive"
         },
         {
-          "title": "British Airways Boeing 787 Dreamliner Declares Emergency On First Flight Back Following Engine Diversion",
-          "url": "https://www.paddleyourownkanoo.com/2026/11/25/british-airways-boeing-787-dreamliner-declares-emergency-on-first-flight-back-following-engine-diversion/",
-          "source": "PYOK"
+          "title": "BA flight from London declares emergency over Atlantic after ‘engine issue’",
+          "url": "https://metro.co.uk/2026/11/25/ba-flight-london-declares-emergency-atlantic-engine-issue-29817675/",
+          "source": "Metro.co.uk"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "psg vs roma prediction",
+      "title": "burnley vs birmingham",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "psg vs roma",
       "why": "unsafe: 'assault'"
     },
     {
