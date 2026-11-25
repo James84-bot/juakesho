@@ -100,6 +100,9 @@ def load_week(label: str) -> dict:
 
 
 def save_week(data: dict) -> None:
+    ids = [p["id"] for p in data["posts"]]
+    if len(ids) != len(set(ids)):   # one approve button would match two posts: say so loudly in the run log
+        log(f"::error::two posts share an id in {data['collection']}: {sorted({i for i in ids if ids.count(i) > 1})}")
     WEEKS.mkdir(parents=True, exist_ok=True)
     tmp = week_file(data["collection"]).with_suffix(".tmp")
     tmp.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -584,16 +587,26 @@ def redo(label: str) -> list[str]:
         if p["status"] == "needs_human" or (p.get("group") in groups and p["status"] != "published"):
             data["posts"][i] = {k: v for k, v in p.items() if k in PLAN_KEYS} | {"status": "planned"}
             if p.get("tg_msg"):   # its card is in Telegram: a new id, so that old card can't approve new words
-                data["posts"][i]["id"] = _next_rev(p["id"])
+                data["posts"][i]["id"] = _next_rev(p["id"], _ids(data))
             reset.append(data["posts"][i]["id"])
     save_week(data)
     log(f"redo {label}: {reset or 'nothing held'}")
     return reset
 
 
-def _next_rev(pid: str) -> str:
+def _next_rev(pid: str, taken=()) -> str:
+    """The next revision of an id ('x' -> 'x-r2', 'x-r2' -> 'x-r3'), never one already in `taken`: on 25 Nov a new
+    photo turned 'hot-1125-r2' into 'hot-1125-r3' while the replacement draft already had that id, and two cards
+    carried the same approve button."""
     m = re.match(r"^(.*)-r(\d+)$", pid)
-    return f"{m.group(1)}-r{int(m.group(2)) + 1}" if m else f"{pid}-r2"
+    base, n = (m.group(1), int(m.group(2)) + 1) if m else (pid, 2)
+    while f"{base}-r{n}" in taken:
+        n += 1
+    return f"{base}-r{n}"
+
+
+def _ids(data: dict) -> set[str]:
+    return {p["id"] for p in data["posts"]} | {p["group"] for p in data["posts"] if p.get("group")}
 
 
 AUDIT_PER_RUN = 6   # posts whose photos are fetched again and judged in one run
@@ -777,7 +790,7 @@ def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> 
         for p in held:
             story = str(p.get("message") or p.get("line") or "")[:120]
             new = {k: v for k, v in p.items() if k in PLAN_KEYS | {"beat"}}
-            new["id"] = _next_rev(p["id"])
+            new["id"] = _next_rev(p["id"], _ids(data))
             new["status"] = "planned"
             new["avoid"] = [x for x in [*(p.get("avoid") or []), story] if x]
             slot = dt.datetime.fromisoformat(p["publish_at"])
@@ -843,9 +856,9 @@ def rephoto(label: str, only: str | None = None) -> list[str]:
         if p["status"] not in allowed or not (p.get("photo_query") or p.get("photo")):
             continue
         old = p["id"]
-        p["id"] = _next_rev(old)
+        p["id"] = _next_rev(old, _ids(data))
         if p.get("group"):
-            p["group"] = groups.setdefault(p["group"], _next_rev(p["group"]))
+            p["group"] = groups.setdefault(p["group"], _next_rev(p["group"], _ids(data)))
         for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source",
                   "extra_photos", "shot_info", "broll_file", "broll_credit", "track_credit", "decided_at", "auto", "tg_msg",
                   "photo_checked", "photo_fit", "speaker_shot", "footage_quote"):
@@ -855,7 +868,7 @@ def rephoto(label: str, only: str | None = None) -> list[str]:
     # a carousel goes out whole: slides without a photo query still need the new group and a re-send
     for p in data["posts"]:
         if p.get("group") in groups and p["id"] not in changed and p["status"] in {"awaiting", "drafted", "rendered"}:
-            p["group"], p["id"], p["status"] = groups[p["group"]], _next_rev(p["id"]), "drafted"
+            p["group"], p["id"], p["status"] = groups[p["group"]], _next_rev(p["id"], _ids(data)), "drafted"
             changed.append(p["id"])
     save_week(data)
     log(f"rephoto {label}: {len(changed)} post(s) get new photos")
@@ -952,7 +965,7 @@ def _photo_intake(msg: dict, chat: str) -> None:
     if not msg.get("document") and photo.get("width", 0) < 800:
         return reply("📷 That photo is too small (under 800 px wide). Send the original, or send it as a file.")
     label = data["collection"]
-    new_id = _next_rev(post["id"])
+    new_id = _next_rev(post["id"], _ids(data))
     target = EXPORTS / label / "photos" / f"{new_id}-sent.jpg"
     rel = target.relative_to(ROOT) if ROOT in target.parents else target   # kept relative to the repo when inside it
     try:
@@ -3468,8 +3481,8 @@ def learn(weeks_back: int = 4) -> dict:
     """Scores every published post from the last few weeks and stores top/bottom performers."""
     token = need("META_ACCESS_TOKEN")["META_ACCESS_TOKEN"]
     version = os.environ.get("META_GRAPH_VERSION", "v26.0")
-    rows = []
-    for f in sorted(WEEKS.glob("*.json"))[-weeks_back:]:
+    rows, refused = [], 0
+    for f in sorted(WEEKS.glob("*.json"))[-weeks_back:] if not STORED_TOKEN.get("dead") else []:
         data = json.loads(f.read_text(encoding="utf-8"))
         seen = set()
         for p in data["posts"]:
@@ -3483,7 +3496,9 @@ def learn(weeks_back: int = 4) -> dict:
                 res = http("GET", f"https://graph.facebook.com/{version}/{p['ig_id']}/insights?"
                                   + urllib.parse.urlencode({"metric": LEARN_METRICS, "access_token": token}))
             except RuntimeError as e:
-                log(f"insights unavailable for {key}: {e}")
+                refused += 1
+                if refused <= 3:
+                    log(f"insights unavailable for {key}: {str(e)[:200]}")
                 continue
             m = {d["name"]: (d.get("values") or [{}])[0].get("value", 0) for d in res.get("data", [])}
             if p.get("reel"):   # how long people stayed: the measure of the skip rate we can get from the API
@@ -3506,6 +3521,17 @@ def learn(weeks_back: int = 4) -> dict:
     rows.sort(key=lambda r: r["score"], reverse=True)
     out = {"updated": now().isoformat(), "top": rows[:5], "bottom": rows[-3:] if len(rows) > 5 else [], "all": rows,
            "youtube": learn_youtube(weeks_back)}
+    if not rows and (refused or STORED_TOKEN.get("dead")):
+        # 22 Nov: the Meta token died, every insights call was refused, and the empty result replaced what the
+        # writer had learned from 54 posts. No numbers is not "nothing worked": the last ones are kept.
+        try:
+            prev = json.loads((STATE / "learnings.json").read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            prev = {}
+        out.update({k: prev[k] for k in ("updated", "top", "bottom", "all") if k in prev})
+        out["youtube_updated"] = now().isoformat()
+        log(f"learn: no Instagram numbers (Meta token {'dead' if STORED_TOKEN.get('dead') else f'refused {refused} call(s)'});"
+            f" the last ones are kept ({len(out.get('all') or [])} posts, {str(out.get('updated', ''))[:10]})")
     STATE.mkdir(exist_ok=True)
     (STATE / "learnings.json").write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
     log(f"learned from {len(rows)} posts")
