@@ -289,7 +289,8 @@
       ],
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1501
+      "tg_msg": 1501,
+      "fresh_checked": "2026-11-25T15:23:32.832195+03:00"
     },
     {
       "id": "2026-w48-d5-straight",
@@ -1740,7 +1741,7 @@
           "published": "2026-11-24"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "hook: the first line has no figure and no named person, place or body: it is a topic, not a hook",
@@ -1848,7 +1849,7 @@
           "link": "https://citizen.digital/article/fkf-red-cross-seal-ksh54-million-deal-to-boost-football-medical-services-n394445"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "weak: editor scored 6.8/10. Remove the generic hashtag block at the end to make it sound like a real person wrote it."
@@ -1932,7 +1933,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "'kicker' is 26 chars (max 24)",
