@@ -2471,13 +2471,150 @@
       "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1768
+    },
+    {
+      "id": "2026-w48-hot-1125b1641",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "2027 Elections",
+      "line": "IEBC *denies clearing* Rigathi Gachagua to run for the presidency in 2027.",
+      "fact": "IEBC clarified that verification of presidential candidates has not begun for the 2027 polls.",
+      "source": "The Eastleigh Voice, 2026-11-25",
+      "photo_query": "IEBC ballot box Kenya",
+      "message": "IEBC refutes reports of clearing Rigathi Gachagua for 2027, stating candidate verification has not opened.",
+      "action": "Check your voter status by sending your ID number to 70000.",
+      "who": "IEBC",
+      "where": "National",
+      "when": "25 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Voters gain clarity on the timeline for official candidate clearance ahead of 2027.",
+      "beats": [
+        "IEBC *denies clearing* Rigathi Gachagua for the 2027 race.",
+        "Verification of presidential aspirants *has not started*.",
+        "Official candidate nominations require formal *gazettement* first.",
+        "Should impeached leaders *be allowed* to run in 2027?"
+      ],
+      "caption": "IEBC has dismissed reports claiming former DP Rigathi Gachagua has been cleared for the 2027 presidential election. The electoral body clarified that aspirant verification only starts after formal gazettement.\n\nIEBC must publish the complete 2027 electoral roadmap by December 2026.\n\nShould impeached leaders be allowed to contest public office? Tell us below.\n\n#IEBC #2027Elections #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-25T17:01:00+03:00",
+      "hot": true,
+      "avoid": [
+        "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives.",
+        "FKF and Red Cross partner in a Sh54m deal to ensure proper medical response for players on the pitch.",
+        "KNH workers are on strike, leaving patients waiting for urgent care across the facility.",
+        "Police advertised cadet jobs for degree holders aged 22 to 30 with deadlines."
+      ],
+      "breaking": {
+        "title": "IEBC denies clearing Gachagua for 2027 presidential race",
+        "outlets": [
+          "Capital FM News",
+          "Kenyans.co.ke",
+          "People Daily"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "IEBC Addresses Clearing Gachagua to Face Ruto in 2027 Presidential Race",
+          "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOejJ3b3lhWEJsTVFLcmFtRl9iQ3NpemxKQVhfRzF0Znh1RmNUc0NVNTV2SFh4alB6dVphakVFcTdhalU2bFFfRTRVYVFUbGhuUlBfTC13OGE4SC03VGpua2VrcnNPNUd5YzRzcHpUZzZpTkx2b0p0WjNPOFlickJMeW1HaVB5TWdUQzVBVTZZS1B1a0xGSk1IX3psamNDTFJqaDlYVDd2bTQtdUNk?oc=5",
+          "published": "2026-11-25"
+        },
+        {
+          "outlet": "People Daily",
+          "title": "IEBC clarifies Gachagua’s eligibility to contest 2027 presidential election",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPWjQ1U0lBOHcySGc2QXNDUnkwWDRUVV8yR2NPSV9yWG9fS1dOdzB6dWh2bXRfR3I5NUUweUZ6alFNMVkzSVpPamY3cGVqVXdWVnQ5SjdvNUVnVlBWbEFWX3d4eXpuX1NWS1R4bTVkQlZrY1doZ3NFY2RnTlAyeW5EdXkzeENtRklzRlNEMnh0MGttbVVjbVc2RWNxUG5saS1iMXJ2NGlPemI3UzUwYlRjbVAxUkE1YW9fdEE?oc=5",
+          "published": "2026-11-25"
+        },
+        {
+          "outlet": "Capital FM News",
+          "title": "IEBC denies clearing Gachagua for 2027 presidential race",
+          "link": "https://capitalfm.africa/iebc-denies-clearing-gachagua-for-2027-presidential-race/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-25"
+        },
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "IEBC dismisses reports Gachagua has been cleared to run for president in 2027",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOMUZVSk9xSlNNMV80cHljNGUyQkdnLW5vVUpUS05WSDVvdTVnOGdUbzhsUnJOa3NxNF9CUlZ3eWhaYm9TNk1abG01d0x3WkhQQ2dUWjJsMWplaXRwZXBXX0lvTkYxckRlMTA0UWRQOWNYeU9uV0JGekluZVZmMXJPWXl4YXN2V0lFVUt1Vk1ELVpoWkprR3dLTXRqS21Mb05ENmJhNHVFazg1S2E5OVloa29vT0R6V1k4MzVmblY3blZ6S3RGcjhR?oc=5",
+          "published": "2026-11-25"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "For the avoidance of doubt, the Commission has neither cleared nor made any determination regarding Rigathi Gachagua’s eligibility to contest the 2027 Presidential Election",
+          "speaker": "Ethekon",
+          "context": "“For the avoidance of doubt, the Commission has neither cleared nor made any determination regarding Rigathi Gachagua’s eligibility to contest the 2027 Presidential Election,” Ethekon stated.",
+          "outlet": "Capital FM News",
+          "link": "https://capitalfm.africa/iebc-denies-clearing-gachagua-for-2027-presidential-race/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news"
+        },
+        {
+          "text": "Any determination of a prospective candidate’s eligibility will be made at the appropriate stage of the electoral process, in accordance with the Constitution and applicable laws",
+          "speaker": "Ethekon",
+          "context": "“Any determination of a prospective candidate’s eligibility will be made at the appropriate stage of the electoral process, in accordance with the Constitution and applicable laws,” Ethekon said.",
+          "outlet": "Capital FM News",
+          "link": "https://capitalfm.africa/iebc-denies-clearing-gachagua-for-2027-presidential-race/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 9,
+        "action": 8,
+        "fair": 9,
+        "impact": 8,
+        "human": 9,
+        "avg": 8.7,
+        "note": "none"
+      },
+      "drafted_at": "2026-11-25T16:51:19.067952+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125b1641-photo.jpg",
+      "photo_credit": "Photo: Capital FM · Photo: Kenyans.co.ke · Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/iebc-denies-clearing-gachagua-for-2027-presidential-race/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125b1641-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125b1641-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Capital FM",
+          "title": "IEBC denies clearing Gachagua for 2027 presidential race"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "IEBC Addresses Clearing Gachagua to Face Ruto in 2027 Presidential Race"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "Ruto allies who defected to DCP lose key positions in House reshuffle"
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1771,
+      "auto": true,
+      "decided_at": "2026-11-25T16:54:32.440751+03:00"
     }
   ],
   "scripts": {
-    "radio": "Jambo and welcome to Kenya on Record. Today, we need to talk about the numbers shaping your daily cost of living.\n\nOfficial figures confirm that Kenya’s public debt reached a staggering 13.5 trillion shillings in September 2026. That is a heavy number, but here is what it means on the ground: a huge portion of our national revenue is now swallowed by loan repayments before a single shilling reaches your local dispensary, public school, or agricultural subsidy.\n\nWhen public debt climbs this high, the government inevitably turns to higher taxation and new levies to cover the deficit. You end up paying more for basic goods and services, yet the quality of public infrastructure continues to lag. It is a double burden on every hard-working Kenyan taxpayer.\n\nWe cannot afford to leave these debt discussions to politicians and economists alone. Start asking your local leaders real questions: where did the borrowed money go, and is there visible value for the loans taken in our name? Public debt is paid by public revenue, and tracking it is your right.\n\nKwa ufupi: Deni la taifa limefikia shilingi trioni 13.5 kufikia Septemba 2026. Hali hii inamaanisha kodi zetu nyingi zinatumika kulipa madeni badala ya kuboresha huduma za afya, elimu, na barabara. Ni wakati wa kudai uwazi na uwajibikaji kutoka kwa viongozi wetu.",
-    "voice_note": "Habari zenu. This is Kenya on Record. Let’s talk about your hard-earned money. New data shows our national public debt hit 13.5 trillion shillings in September 2026. That is not just a figure on a Treasury spreadsheet—it directly affects your pocket. When debt swells this high, the government raises taxes and cuts back on funding for public hospitals, schools, and roads just to service those loans. The big question we must keep asking our leaders is simple: where did this money go, and where is the value for it in our wards? Don't ignore the numbers. Forward this to your group and let’s demand real accountability.",
-    "sms": "Usiibiwe: Kenya's public debt hit Sh13.5T in Sept 2026. Higher debt means more taxes & fewer public services. Ask your leaders where loan money went.",
-    "reels": "As of September 2026, Kenya’s public debt stands at a record 13.5 trillion shillings. What does this mean for you? Every shilling spent servicing old debt is a shilling taken away from drugs in public hospitals, road repairs, and essential services. We are paying higher taxes for fewer benefits. Hold your leaders accountable. Ask where the borrowed money went."
+    "radio": "Habari za leo na karibu kwa Kenya on Record. Today we are setting the record straight on a story making rounds across social media and political blogs.\n\nThere have been widely circulated reports claiming that the Independent Electoral and Boundaries Commission, the IEBC, has cleared former Deputy President Rigathi Gachagua to contest in the 2027 General Election. \n\nHowever, the electoral body has officially refuted these claims. IEBC clarified that candidate verification for the 2027 elections has not even opened yet. Under Kenyan electoral law, the clearance of candidates follows a clear, legal timeline that begins only after official gazettement and formal submission of papers. No politician—regardless of their stature—can be cleared years before that statutory window opens.\n\nWhy does this matter? Misinformation during the pre-election period is often calculated to create political momentum or confuse the electorate. As voters, it is our duty to demand factual reporting and rely on verified official communication from electoral authorities rather than political hype.\n\nKwa muhtasari kwa Kiswahili: Tume ya IEBC imekanusha vikali taarifa zinazodai imemwidhinisha aliyekuwa Naibu Rais Rigathi Gachagua kuwania kiti katika uchaguzi wa 2027. IEBC imesisitiza kuwa mchakato wa kukagua na kuidhinisha wagombea bado haujaanza rasmi. Tuwe waangalifu na taarifa za uongo.\n\nThis is Kenya on Record. Stay informed, stay vigilant.",
+    "voice_note": "Habari zenu, this is Kenya on Record with a quick fact-check. You’ve probably seen posts going viral claiming that IEBC has cleared former DP Rigathi Gachagua for the 2027 presidential race. That report is false.\n\nIEBC has come out clearly to clarify that candidate verification for 2027 hasn't even started. The electoral commission follows strict statutory timelines, and no candidate can be cleared before the official nomination window is declared.\n\nAs political hype slowly builds up, we’re going to see a lot of these premature claims designed to spin narratives. Before you forward that message to your family or community WhatsApp groups, pause and verify. Don’t let propaganda misinform you. Stay sharp!",
+    "sms": "Usiibiwe: IEBC hasn't cleared ANY 2027 candidate, including Rigathi Gachagua. Verification isn't open yet. Don't share political hype. Verify facts first.",
+    "reels": "Has Rigathi Gachagua been cleared for 2027? Social media says yes, but IEBC says absolutely not. The electoral commission has debunked viral reports claiming the former DP was cleared, stating candidate verification hasn't even opened yet. Don't fall for early political spin. Clearance follows legal timelines, not blog headlines. Follow Kenya on Record for real facts."
   },
   "spend_usd": 0.0
 }

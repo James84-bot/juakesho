@@ -1,22 +1,12 @@
-event 'National Treasury Nairobi' for 2026-w48-hot-1125e (21 Nov-26 Nov): 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 0, 'subject': 0}
-event 'National Treasury' for 2026-w48-hot-1125e (21 Nov-26 Nov): 30 found, 0 usable, dropped {'size': 6, 'licence': 0, 'date': 21, 'subject': 3}
 feed KBC: 60 items, 59 with an image
 feed Capital FM: 60 items, 60 with an image
 feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
 feed Nation: 25 items, 0 with an image
-posted for 2026-w48-hot-1125e: 0 matching reports (person 'mbadi', names ['john', 'mbadi'], words ['treasury'])
-Facebook page not read: HTTP Error 400: Bad Request
-picked Business Daily from the news search: Mbadi seeks CBK truce on Sh10bn bank capital fallout
-topic photos for 2026-w48-hot-1125e: 9 recent reports on ['treasury']
+posted for 2026-w48-hot-1125b1641: 5 matching reports (person '', names ['rigathi', 'gachagua', 'iebc'], words ['iebc', 'refutes', 'reports', 'clearing', 'rigathi'])
+picked Capital FM (8, detail 0.389, 2048x1366): IEBC denies clearing Gachagua for 2027 presidential race
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-not Kenyans.co.ke: soft or a face fills it (Treasury Proposes New Rules to Curb Fraud in Govt Tenders)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-topic photo from Kenyans.co.ke: Treasury Gives Progress Update on Nairobi-Mombasa Expressway Project
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-not Kenyans.co.ke: soft or a face fills it (Treasury to Scrap PAYE Relief for Employees in New Tax Plan)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-skipped Kenyans.co.ke: an edited graphic, not a photo (Circular inset photo of a man) (https://www.kenyans.co.ke/files/styles/article_style/public/)
-skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-topic photo from Kenyans.co.ke: Treasury Reveals Planned Changes in November-December Fuel Prices
+also Kenyans.co.ke (7, detail 0.363, 700x350): IEBC Addresses Clearing Gachagua to Face Ruto in 2027 Presidential Rac
+not Capital FM: Shows an unnamed official from a different government institution. (We have not been bought, Ethekon tells critics)
+also KBC (4, detail 0.569, 2048x1244): Ruto allies who defected to DCP lose key positions in House reshuffle
