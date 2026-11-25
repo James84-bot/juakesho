@@ -1,25 +1,47 @@
 {
-  "fetched": "2026-11-25T06:06:57.069949+00:00",
+  "fetched": "2026-11-25T07:42:10.579151+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "wolverhampton wanderers f.c. vs derby county standings",
+      "title": "import",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Inside KEBS conditions for importing used cars from January 1, 2027",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-inside-kebs-conditions-for-importing-used-cars-from-january-1-2027",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Kenya to ban importation of 2019-registered used vehicles on December 31, 2026",
+          "url": "https://peopledaily.digital/business/kenya-to-ban-importation-of-2019-registered-used-vehicles-on-december-31-2026",
+          "source": "People Daily"
+        },
+        {
+          "title": "You have until 31st December 2026 to bring a 2019 used car into Kenya",
+          "url": "https://tech-ish.com/2026/11/24/you-have-until-31st-december-2026-to-bring-a-2019-used-car-into-kenya/",
+          "source": "Techish Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kenya airways",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Wolverhampton Wanderers 3-0 Derby County: Wolves easily see off Rams",
-          "url": "https://www.bbc.com/sport/football/live/cm9q84xw47z5t",
-          "source": "BBC"
+          "title": "KQ flight attendant honoured for returning passenger’s Sh1.2mn",
+          "url": "https://capitalfm.africa/kq-flight-attendant-honoured-for-returning-passengers-sh1-2mn/",
+          "source": "Capital FM Africa"
         },
         {
-          "title": "Wolverhampton Wanderers 3-0 Derby County: Adam Armstrong nets twice in Wolves win",
-          "url": "https://www.skysports.com/football/news/13610525/wolverhampton-wanderers-3-0-derby-county-adam-armstrong-nets-twice-in-wolves-win",
-          "source": "Sky Sports"
+          "title": "Kenya Airways Celebrates Flight Purser Who Returned Passenger's KSh 1.2m Left on Plane",
+          "url": "https://www.tuko.co.ke/people/647788-kenya-airways-celebrates-flight-purser-returned-passengers-ksh-12m-left-plane/",
+          "source": "Tuko News"
         },
         {
-          "title": "Wolves vs Derby Confirmed Lineups",
-          "url": "https://www.whoscored.com/news/DDRVFNX4UE-6O9PLpe4hgw/show/cng112-20261124-wolves-vs-derby-confirmed-lineup-1795546249",
-          "source": "WhoScored.com"
+          "title": "KQ crew return passenger’s US$9,600 and passport left on flight",
+          "url": "https://5050markets.com/ke/news/kq762-passenger-cash-passport-returned",
+          "source": "5050 Markets"
         }
       ]
     },
@@ -42,28 +64,6 @@
           "title": "Alvini criticised after Milan-Frosinone? Fabregas defends him: \"I do the same as him and want to keep hearing he's an excellent coach\"",
           "url": "https://www.goal.com/en/news/alvini-criticised-after-milan-frosinone-fabregas-defends-him-i-do-the-same-as-him-and-want-to-keep-hearing-he-s-an-excellent-coach/bltafe3b7eaa0ca6755",
           "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "kenya airways",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "KQ flight attendant honoured for returning passenger’s Sh1.2mn",
-          "url": "https://capitalfm.africa/kq-flight-attendant-honoured-for-returning-passengers-sh1-2mn/",
-          "source": "Capital FM Africa"
-        },
-        {
-          "title": "Kenya Airways Celebrates Flight Purser Who Returned Passenger's KSh 1.2m Left on Plane",
-          "url": "https://www.tuko.co.ke/people/647788-kenya-airways-celebrates-flight-purser-returned-passengers-ksh-12m-left-plane/",
-          "source": "Tuko News"
-        },
-        {
-          "title": "Kenya Airways Flight Attendant Returns Passenger's Ksh1.2 Million Left on Plane",
-          "url": "https://www.kenyans.co.ke/news/129546-kenya-airways-flight-attendant-returns-passengers-ksh12-million-left-plane",
-          "source": "Kenyans.co.ke"
         }
       ]
     },
@@ -105,11 +105,34 @@
           "source": "Manchester City FC"
         },
         {
-          "title": "We have to stay positive, urges Haaland",
-          "url": "https://sports.yahoo.com/soccer/articles/stay-positive-urges-haaland-225000890.html",
-          "source": "Yahoo Sports"
+          "title": "Haaland's scoring streak against Napoli ends at three games",
+          "url": "https://www.allfootballapp.com/articles/6072316-haalands-scoring-streak-against-napoli-ends",
+          "source": "AllFootball"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "national police service",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "NPS announces police cadet recruitment, sets December 10 deadline",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-nps-announces-police-cadet-recruitment-sets-december-10-deadline",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Ministry Addresses Land-Selling Trend Among Parents Seeking Police Jobs Ahead of Recruitment",
+          "url": "https://www.kenyans.co.ke/news/129586-murkomen-warns-parents-against-selling-land-secure-police-recruitment-slots",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "National Police Service Announces Recruitment of Police Cadets",
+          "url": "https://chagua.co.ke/news/national-police-service-announces-recruitment-of-police-cadets/",
+          "source": "chagua.co.ke"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -117,19 +140,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Who Won Miss Universe 2026? Miss Puerto Rico Jennifer Barreto Crowned Winner!",
-          "url": "https://www.imdb.com/de/news/ni66127341/?ref_=nwc_art_perm",
-          "source": "IMDb"
+          "title": "Miss Universe crowns winner after another turbulent year for world’s biggest pageant",
+          "url": "https://www.cnn.com/2026/11/25/style/miss-universe-2026-winner",
+          "source": "CNN"
         },
         {
-          "title": "Miss Universe 2026: Here’s Where to Watch the Pageant Online for Free",
-          "url": "https://www.billboard.com/culture/product-recommendations/miss-universe-2026-watch-beauty-pageant-live-online-free-1236387744/",
-          "source": "Billboard"
+          "title": "Miss Universe 2026: Jennifer Barreto become di first mother to win di pageant",
+          "url": "https://www.bbc.com/pidgin/articles/cjy5xwpwgpqko",
+          "source": "BBC"
         },
         {
-          "title": "Meet the 116 women competing to be Miss Universe 2026",
-          "url": "https://www.businessinsider.com/miss-universe-pageant-contestants-photos-2026-11",
-          "source": "Business Insider"
+          "title": "Miss Universe 2026 Becomes First Mother to Win Pageant",
+          "url": "https://people.com/miss-universe-2026-winner-jennifer-barreto-12267491",
+          "source": "People.com"
         }
       ]
     },
@@ -139,19 +162,41 @@
       "traffic": "100+",
       "news": [
         {
+          "title": "Pietuszewski, aos 2 minutos: Porto vence o Feyenoord por 0-1",
+          "url": "https://www.tufutbolero.com/pt/noticias/pietuszewski-aos-2-minutos-porto-vence-o-feyenoord-por-0-1-8a9832",
+          "source": "Tu Futbolero"
+        },
+        {
           "title": "Gimenez sai de Roterdão duplamente feliz e já olha para o clássico: «A prioridade é o Sporting»",
           "url": "https://sapo.pt/artigo/gimenez-sai-de-roterdao-duplamente-feliz-e-ja-olha-para-o-classico-a-prioridade-e-o-sporting-6b061adc51c078463f217ed9",
           "source": "SAPO"
         },
         {
-          "title": "Farioli: \"Temos de reduzir o barulho do estádio\"",
-          "url": "https://www.sporttv.pt/noticias/887936/farioli-temos-de-reduzir-o-barulho-do-estadio",
-          "source": "Sport TV"
+          "title": "Van Bronckhorst e a derrota: \"Às vezes o futebol é muito duro\"",
+          "url": "https://www.noticiasaominuto.com/desporto/3089711/van-bronckhorst-e-a-derrota-as-vezes-o-futebol-e-muito-duro",
+          "source": "Notícias ao Minuto"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "city",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "City expects water/sewer rate increases",
+          "url": "https://www.kulr8.com/news/state/city-expects-water-sewer-rate-increases/article_98fed5b6-f388-5319-b79f-8a261b2414bc.html",
+          "source": "NonStop Local Billings"
         },
         {
-          "title": "«Eu sou o bombeiro? Estou feliz por ter feito a minha parte»",
-          "url": "https://www.zerozero.pt/videos/declaracoes/eu-sou-o-bombeiro-estou-feliz-por-ter-feito-a-minha-parte/1492081",
-          "source": "zerozero.pt"
+          "title": "Projected Net Income and Project Spending for the Planning Period – Water Fund",
+          "url": "https://www.fairfieldsuntimes.com/news/state/projected-net-income-and-project-spending-for-the-planning-period-water-fund/image_639f5a26-02c3-53fa-8920-ebb7cde7689d.html",
+          "source": "Fairfield Sun Times"
+        },
+        {
+          "title": "Licensable picture: Christmas Tree Lighting At Syntagma Square",
+          "url": "https://www.reutersconnect.com/item/christmas-tree-lighting-at-syntagma-square/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMU5VUlBITzAwMFkzRUc1MA",
+          "source": "Reuters Connect"
         }
       ]
     }
@@ -159,15 +204,7 @@
   "dropped": [
     {
       "title": "pete edochie",
-      "why": "unsafe: 'dead'"
-    },
-    {
-      "title": "man city",
-      "why": "unsafe: 'accident'"
-    },
-    {
-      "title": "city",
-      "why": "unsafe: 'Fire'"
+      "why": "unsafe: 'dies'"
     }
   ],
   "errors": {}
