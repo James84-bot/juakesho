@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-25T09:31:39.324848+00:00",
+  "fetched": "2026-11-25T09:42:11.110892+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -44,29 +44,6 @@
           "source": "5050 Markets"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "man city",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Arsenal and Manchester City's problems analysed as both set to meet in bumper Premier League clash this weekend",
-          "url": "https://www.skysports.com/football/news/13616234/arsenal-and-manchester-citys-problems-analysed-as-both-set-to-meet-in-bumper-premier-league-clash-this-weekend",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "How to watch Arsenal v Manchester City live on TV",
-          "url": "https://www.arsenal.com/news/how-to-watch-arsenal-v-manchester-city-live-on-tv-akATa2J3AKki",
-          "source": "Arsenal.com"
-        },
-        {
-          "title": "Police to double number of officers for Arsenal vs. Manchester City on Sunday - The Athletic",
-          "url": "https://www.nytimes.com/athletic/7806079/2026/11/23/arsenal-man-city-premier-league-police/",
-          "source": "The New York Times"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -160,6 +137,50 @@
     },
     {
       "geo": "KE",
+      "title": "marcus rashford",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Rashford and Baleba take part in gym session",
+          "url": "https://www.manutd.com/en/news/marcus-rashford-and-carlos-baleba-take-part-in-gym-session",
+          "source": "Manchester United"
+        },
+        {
+          "title": "Pochettino makes his immediate focus clear",
+          "url": "https://www.manutd.com/en/news/pochettino-makes-his-immediate-focus-clear-before-sporting-away",
+          "source": "Manchester United"
+        },
+        {
+          "title": "Sporting CP vs Manchester United: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/crkgv8v0gdwkt",
+          "source": "BBC"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "kenya revenue authority internships",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "PSC announces government internship vacancies for 2026/2027",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-psc-announces-government-internships-for-20262027",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "KRA announces 2027 internships for degree and diploma graduates: How to apply",
+          "url": "https://biznakenya.com/kra-announces-2027-internship-how-to-apply/",
+          "source": "Bizna Kenya"
+        },
+        {
+          "title": "Kenya Public Service Commission National Internship Programme 2026: 50,000 Internship Opportunities for Diploma Holders and Graduates",
+          "url": "https://www.globalsouthopportunities.com/2026/11/24/service-6/",
+          "source": "Global South Opportunities"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "miss universe 2026",
       "traffic": "100+",
       "news": [
@@ -177,28 +198,6 @@
           "title": "The Big Night Is Almost Here! Telemundo Unveils Unprecedented Coverage for the Historic 75th Miss Universe® Competition, Live Coast-to-Coast from Puerto Rico on Tuesday, November 24, Starting at 7pm ET/6pm CT/4pm PT",
           "url": "https://nbcuniversalnewsgroup.com/telemundo/2026/11/17/the-big-night-is-almost-here-telemundo-unveils-unprecedented-coverage-for-the-historic-75th-miss-universe-competition-live-coast-to-coast-from-puerto-rico-on-tuesday-november-24-startin/",
           "source": "NBCUniversal News Group"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "fc porto",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "LC: Autogolo garante vitória do FC Porto em casa do Feyenoord",
-          "url": "https://www.correiodamanhacanada.com/lc-autogolo-garante-vitoria-do-fc-porto-em-casa-do-feyenoord/",
-          "source": "Correio da Manhã Canadá"
-        },
-        {
-          "title": "Van Bronckhorst revela fala surpreendente do árbitro logo após o jogo",
-          "url": "https://www.goal.com/br/not%C3%ADcias/van-bronckhorst-revela-fala-surpreendente-do-arbitro-logo-apos-o-jogo/blta0c18144ef82ae7f",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Diogo Costa: monstro na baliza; Pietuszewski: monstro no ataque (as notas do FC Porto)",
-          "url": "https://www.abola.pt/noticias/diogo-costa-monstro-na-baliza-pietuszewski-monstro-no-ataque-as-notas-do-fc-porto-2026112422172701025",
-          "source": "A Bola"
         }
       ]
     }
