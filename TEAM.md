@@ -46,6 +46,26 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-25 17:10 EAT (cloud side): "what failed"
+- **GitHub Actions:** no failed run since 22 Nov.
+- **What did fail:**
+  - **The Meta token is still dead,** so nothing has gone to Instagram or Facebook since Sunday. YouTube got today's
+    1125a and yesterday's 4.
+  - **The writer's learnings were wiped** (fixed, 7632b98 + b35c830). Since 22 Nov 14:17 the refused insights calls
+    left an empty result, and it replaced `state/learnings.json` (top 5, bottom 3, 54 posts). Restored from 22 Nov.
+    A dead token now asks nothing, and a failed fetch keeps the last real numbers.
+  - **Two posts shared one id** (fixed, 7632b98). At 09:20 the photo audit renamed `hot-1125-r2` to `-r3`, the id its
+    replacement already had. `_next_rev` now skips taken ids, and `save_week` logs `::error::` on any shared id. The
+    two existing `-r3` posts expire at the next tick (slot 12:45 + 4 h).
+  - **Expired without a tap:**
+    - Today's morning edition: 3 drafts (editor 5.2 / 6.8, plus hook and source errors).
+    - 1124e (IEBC, political).
+    - d2-kenya.
+  - **Still waiting on James:** 1125e (debt, political, 20:00) and d3-promise (the Promise Tracker needs a person's
+    research).
+  - **TikTok:** unaudited (403).
+  - **Google News:** 429/503 at times, only fewer stories that run.
+
 ### 2026-11-23 21:30 EAT (cloud side): "the autopilot has not been working today"
 - **Runs:** every run today succeeded, about 40 in all. Drafting, checks and approvals worked. Installs were slow
   at times (up to 24 min when the cache missed) but nothing failed.
