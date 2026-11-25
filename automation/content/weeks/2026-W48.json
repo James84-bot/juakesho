@@ -2664,6 +2664,81 @@
         "KNH workers are on strike, leaving patients waiting for urgent care across the facility.",
         "Police advertised cadet jobs for degree holders aged 22 to 30 with deadlines."
       ]
+    },
+    {
+      "id": "2026-w48-searching-1125",
+      "template": "searching",
+      "size": "story",
+      "hand": true,
+      "searching": true,
+      "bg": "usiku",
+      "kicker": "What Kenya is searching",
+      "day": "Wednesday 25 November",
+      "rows": [
+        {
+          "query": "alejandro garnacho",
+          "label": "2K+",
+          "title": "Alejandro Garnacho Reaches Point of No Return at Aston Villa",
+          "source": "Sports Illustrated",
+          "url": "https://www.si.com/soccer/alejandro-garnacho-point-no-return-aston-villa"
+        },
+        {
+          "query": "sporting vs man utd",
+          "label": "500+",
+          "title": "Sporting CP vs Manchester United: UEFA Champions League stats & head-to-head",
+          "source": "BBC",
+          "url": "https://www.bbc.com/sport/football/live/crkgv8v0gdwkt"
+        },
+        {
+          "query": "psg vs roma",
+          "label": "200+",
+          "title": "Paris Saint-Germain vs Roma: UEFA Champions League stats & head-to-head",
+          "source": "BBC",
+          "url": "https://www.bbc.com/sport/football/live/crd6151l6y7zt"
+        },
+        {
+          "query": "iphone 16",
+          "label": "100+",
+          "title": "iPhone 17 Pro Max Price Slashed Again Days Before Black Friday",
+          "source": "Forbes",
+          "url": "https://www.forbes.com/sites/jaymcgregor/2026/11/21/apple-iphone-17-pro-max-price-drop-best-buy-black-friday-deal/"
+        }
+      ],
+      "source": "Google Trends, Kenya (trends.google.com/trending?geo=KE)",
+      "source_links": [
+        {
+          "outlet": "Sports Illustrated",
+          "link": "https://www.si.com/soccer/alejandro-garnacho-point-no-return-aston-villa",
+          "title": "Alejandro Garnacho Reaches Point of No Return at Aston Villa"
+        },
+        {
+          "outlet": "BBC",
+          "link": "https://www.bbc.com/sport/football/live/crkgv8v0gdwkt",
+          "title": "Sporting CP vs Manchester United: UEFA Champions League stats & head-to-head"
+        },
+        {
+          "outlet": "BBC",
+          "link": "https://www.bbc.com/sport/football/live/crd6151l6y7zt",
+          "title": "Paris Saint-Germain vs Roma: UEFA Champions League stats & head-to-head"
+        },
+        {
+          "outlet": "Forbes",
+          "link": "https://www.forbes.com/sites/jaymcgregor/2026/11/21/apple-iphone-17-pro-max-price-drop-best-buy-black-friday-deal/",
+          "title": "iPhone 17 Pro Max Price Slashed Again Days Before Black Friday"
+        }
+      ],
+      "publish_at": "2026-11-25T20:30:00+03:00",
+      "status": "approved",
+      "drafted_at": "2026-11-25T20:02:20+03:00",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet"
+        ]
+      },
+      "tg_msg": 1791,
+      "auto": true,
+      "decided_at": "2026-11-25T20:02:24.560020+03:00"
     }
   ],
   "scripts": {
