@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-25T15:41:58.955651+00:00",
+  "fetched": "2026-11-25T16:03:49.424242+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -48,46 +48,23 @@
     },
     {
       "geo": "KE",
-      "title": "moses wetang'ula",
-      "traffic": "1000+",
+      "title": "travel",
+      "traffic": "200+",
       "news": [
         {
-          "title": "MP caught on camera pocketing colleague’s phone, denies it",
-          "url": "https://citizen.digital/article/mp-caught-on-camera-pocketing-colleagues-phone-denies-it-n394507",
-          "source": "Citizen Digital"
+          "title": "Storms to hit both coasts, threatening Thanksgiving travel for millions and Macy’s 100th parade",
+          "url": "https://edition.cnn.com/2026/11/22/weather/east-west-coast-storms-thanksgiving-travel-climate-hnk",
+          "source": "CNN"
         },
         {
-          "title": "Fresh Details Emerge as MP Recounts Losing New iPhone in Parliament",
-          "url": "https://www.kenyans.co.ke/news/129677-sabina-chege-recounts-losing-new-iphone-parliament-after-wetangula-expose",
-          "source": "Kenyans.co.ke"
+          "title": "RAW: AAA CEO: WEATHER WILL BE AN ISSUE FOR TRAVELERS",
+          "url": "https://www.local3news.com/regional-national/raw-aaa-ceo-weather-will-be-an-issue-for-travelers/video_37340212-b3d5-5cfc-8303-d5b56d1bad3f.html",
+          "source": "Local 3 News"
         },
         {
-          "title": "Sabina Chege: Phone stolen in Parliament was mine",
-          "url": "https://www.the-star.co.ke/news/2026-11-25-sabina-chege-phone-stolen-in-parliament-was-mine",
-          "source": "The Star, Kenya"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "shilling",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Shilling weakens to Sh130 on dollar demand from importers",
-          "url": "https://nation.africa/kenya/business/shilling-weakens-to-sh130-on-dollar-demand-from-importers--5683174",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Kenya attracts Ksh 85B in domestic bond bids, giving it borrowing flexibility as Eurobond yields rise",
-          "url": "https://hapakenya.com/?p=188492",
-          "source": "HapaKenya -"
-        },
-        {
-          "title": "Kenya’s foreign reserves fall $656 million as import cover drops to 5.6 months",
-          "url": "https://nairametrics.com/2026/11/21/kenyas-foreign-reserves-fall-656-million-as-import-cover-drops-to-5-6-months/",
-          "source": "Nairametrics"
+          "title": "UI Adds Crews As Thanksgiving Storm Expected To Bring Heavy Rain, 50 MPH Wind",
+          "url": "https://ctnewsjunkie.com/2026/11/25/ui-adds-crews-as-thanksgiving-storm-expected-to-bring-heavy-rain-50-mph-wind/",
+          "source": "CT News Junkie"
         }
       ]
     },
@@ -110,6 +87,28 @@
           "title": "Raheem Sterling avoids jail over reckless driving while using nitrous oxide",
           "url": "https://www.theguardian.com/football/2026/nov/25/raheem-sterling-avoids-jail-reckless-driving-nitrous-oxide-sentence",
           "source": "The Guardian"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "aaafex 2027 kenya air force",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "261117-F-EU398-2128",
+          "url": "https://www.usafe.af.mil/news/photos/igphoto/2004036931/",
+          "source": "Air Forces in Europe (.mil)"
+        },
+        {
+          "title": "News - African air forces strengthen cooperation ahead of Exercise NGUVU PAMOJA 2027",
+          "url": "https://www.dvidshub.net/news/580031/african-air-forces-strengthen-cooperation-ahead-exercise-nguvu-pamoja-2027",
+          "source": "DVIDS"
+        },
+        {
+          "title": "Association of African Air Forces Prepares for Milestone Inaugural Exercise [Image 5 of 5]",
+          "url": "https://www.dvidshub.net/image/10112016/association-african-air-forces-prepares-milestone-inaugural-exercise",
+          "source": "DVIDS"
         }
       ]
     },
@@ -151,14 +150,18 @@
           "source": "airlive"
         },
         {
-          "title": "British Airways flight declares emergency off Irish coast due to technical issue",
-          "url": "https://www.belfastlive.co.uk/news/uk-world-news/british-airways-flight-declares-emergency-34939024",
-          "source": "Belfast Live"
+          "title": "British Airways Boeing 787 Dreamliner Declares Emergency On First Flight Back Following Engine Diversion",
+          "url": "https://www.paddleyourownkanoo.com/2026/11/25/british-airways-boeing-787-dreamliner-declares-emergency-on-first-flight-back-following-engine-diversion/",
+          "source": "PYOK"
         }
       ]
     }
   ],
   "dropped": [
+    {
+      "title": "psg vs roma prediction",
+      "why": "unsafe: 'assault'"
+    },
     {
       "title": "slavia prague vs villarreal prediction",
       "why": "unsafe: 'Bet'"
@@ -166,10 +169,6 @@
     {
       "title": "club brugge vs liverpool",
       "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "robert mugabe",
-      "why": "unsafe: 'shooting'"
     }
   ],
   "errors": {}

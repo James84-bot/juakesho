@@ -2614,6 +2614,56 @@
       "yt_id": "ftFs7m2h0WE",
       "tt_done": "2026-11-25T17:02:33.210958+03:00",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w48-hot-1125b1903",
+      "template": "sauti",
+      "bg": "usiku",
+      "lane": "everyone",
+      "publish_at": "2026-11-25T19:23:00+03:00",
+      "status": "planned",
+      "hot": true,
+      "breaking": {
+        "title": "Ruto, Steinmeier agree to streamline jobs, visa processes for Kenyans",
+        "outlets": [
+          "Capital FM Africa",
+          "Daily Nation",
+          "KBC Digital",
+          "The Star, Kenya"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "Capital FM Africa",
+          "title": "Kenya, Germany sign deal to ease access to jobs for Kenyans",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSER6MjgxVzNFMlZqWjZ1Ym54Q1dGb0tKWGkzUmlfUy1IUEhVSmxjQ1ZHcHRiVUxOd0VtWjRsQW5PUU50NTY4UXZoMGlJdWhIQUxqcXYxS29VSE1NYms0cHU4M0pJS0s5ZzlNc0pWX0dhbjBNZWdLMzc4MHVYai1pZThmNmJNS0xZbnJySw?oc=5",
+          "published": "2026-11-25"
+        },
+        {
+          "outlet": "Daily Nation",
+          "title": "Ruto, Steinmeier sign pact as Kenya eyes more German jobs",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZzk1RGxMSXpGUER2ME00VFpxSDhpTXpzQ0dGZ3RYeWU2Q1ZaSGwyeVFJRzFXa3A5WTF5WGFydjlEOHdpWGFJZGVrX2NsRnZmV3dxbDRhZURSQTJJOVpyX1BvNVZjcC1aeVFjdWpfMlh0ZHpnOTN1b3B2NWtNRlNwUzdQTHp1MW5lZ0VyOWx0RmhzeHItOVA5RFBoWUlPQQ?oc=5",
+          "published": "2026-11-25"
+        },
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Ruto seals German language deal to boost jobs for Kenyans",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaEFWLTlycnZHbGNTSWpoaFlPbG1mZWpSTjVJQ1VnMzZIVmZrMmVMUkR3ZUh4SHZ5ekdySTlseXZOb1FlaUFGanpNeW4ydlJjRDllV0JrN3dsSFJkaHhHb0N0eHJySlYxa1VKSUJtOG9mbzB6SklSUHVYM293a2FXcWJYUTJYUnNfb1M4N1NqNm44SU9XOU1RMFM4ODc5Qm4wUlE?oc=5",
+          "published": "2026-11-25"
+        },
+        {
+          "outlet": "KBC Digital",
+          "title": "Ruto, Steinmeier agree to streamline jobs, visa processes for Kenyans",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNb3FtSHZwVEx3MzVubVBSZG1TNzhFZHE2S1EzV1hLTWR5UDRvbjFyQXd0WEhKczR2dG4wZ2k1UllucnJORkp6ZFo3ZTlRZ3BZbGJ1MmFlX3FnbWs3YnJHVFFBMGpPVXRpbXlrSVRPeUt2NElQbFQ0QU5RbGU4YmpNN2cyb2JKblpveDgtV2FxMkdHQ0FC?oc=5",
+          "published": "2026-11-25"
+        }
+      ],
+      "avoid": [
+        "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives.",
+        "FKF and Red Cross partner in a Sh54m deal to ensure proper medical response for players on the pitch.",
+        "KNH workers are on strike, leaving patients waiting for urgent care across the facility.",
+        "Police advertised cadet jobs for degree holders aged 22 to 30 with deadlines."
+      ]
     }
   ],
   "scripts": {
