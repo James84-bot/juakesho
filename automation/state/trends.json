@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-25T13:06:51.460150+00:00",
+  "fetched": "2026-11-25T13:27:04.100617+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,14 +7,14 @@
       "traffic": "5000+",
       "news": [
         {
-          "title": "EU curb on Chinese hybrid cars drives shift to niche powertrain",
-          "url": "https://asia.nikkei.com/business/automobiles/electric-vehicles/eu-curb-on-chinese-hybrid-cars-drives-shift-to-niche-powertrain",
-          "source": "Nikkei Asia"
+          "title": "EU sets cap on number of hybrid vehicles that can be imported from China",
+          "url": "https://www.dw.com/en/eu-imposes-import-quotas-for-hybrid-vehicles-from-china/a-80029981",
+          "source": "DW.com"
         },
         {
-          "title": "European restrictions on the cards for important South African industry",
-          "url": "https://businesstech.co.za/news/business/884779/european-restrictions-on-the-cards-for-important-south-african-industry/",
-          "source": "BusinessTech"
+          "title": "European Automakers Surge: Market Reacts to New Regulations",
+          "url": "https://www.xtb.com/cy/market-analysis/news-and-research/european-automakers-surge-market-reacts-to-new-regulations",
+          "source": "XTB.com"
         },
         {
           "title": "Licensable video: China to Face Tougher Car Import Restrictions in Europe From December",
@@ -22,6 +22,29 @@
           "source": "Reuters Connect"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "police",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "NPS announces police cadet recruitment, sets December 10 deadline",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-nps-announces-police-cadet-recruitment-sets-december-10-deadline",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Police Cadets recruitment 2026: Salary, qualifications and what the officers do",
+          "url": "https://www.pulse.co.ke/story/how-much-kenya-police-cadets-earn-as-nps-announces-new-graduate-recruitment-2026112507064241407",
+          "source": "Pulse Kenya"
+        },
+        {
+          "title": "What CS Murkomen’s Recruitment Warning Means for Parents",
+          "url": "https://parentsafrica.com/what-cs-murkomens-recruitment-warning-means-for-parents/",
+          "source": "Parents Africa"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -71,6 +94,28 @@
     },
     {
       "geo": "KE",
+      "title": "kdf combat camera training kenya",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "US Army trains KDF soldiers in combat camera work",
+          "url": "https://5050markets.com/ke/news/kdf-us-army-combat-camera-training",
+          "source": "5050 Markets"
+        },
+        {
+          "title": "KDF, U.S. Military Partner on Advanced Ground Combat Training",
+          "url": "https://www.kenyans.co.ke/news/129627-kdf-partners-us-military-train-soldiers-combat-photography",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "KDF HONES COMBAT CAMERA SKILLS FOR OPERATIONAL STORYTELLING",
+          "url": "https://www.mod.go.ke/news/kdf-hones-combat-camera-skills-for-operational-storytelling/",
+          "source": "Ministry of Defence – Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "shilling",
       "traffic": "200+",
       "news": [
@@ -115,51 +160,6 @@
     },
     {
       "geo": "KE",
-      "title": "driving",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Footballer Raheem Sterling given suspended sentence for dangerous driving",
-          "url": "https://www.bbc.com/news/articles/cv8e04ll9dd3o",
-          "source": "BBC"
-        },
-        {
-          "title": "Soccer star Sterling gets suspended jail sentence for dangerous driving while inhaling from balloon",
-          "url": "https://apnews.com/article/raheem-sterling-sentence-court-dangerous-driving-657da06662542b9e7e1a3bea2bfd8516",
-          "source": "AP News"
-        },
-        {
-          "title": "Raheem Sterling avoids jail over reckless driving while using nitrous oxide",
-          "url": "https://www.theguardian.com/football/2026/nov/25/raheem-sterling-avoids-jail-reckless-driving-nitrous-oxide-sentence",
-          "source": "The Guardian"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "national police service",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "NPS announces police cadet recruitment, sets December 10 deadline",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-nps-announces-police-cadet-recruitment-sets-december-10-deadline",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Police Cadets recruitment 2026: Salary, qualifications and what the officers do",
-          "url": "https://www.pulse.co.ke/story/how-much-kenya-police-cadets-earn-as-nps-announces-new-graduate-recruitment-2026112507064241407",
-          "source": "Pulse Kenya"
-        },
-        {
-          "title": "What CS Murkomen’s Recruitment Warning Means for Parents",
-          "url": "https://parentsafrica.com/what-cs-murkomens-recruitment-warning-means-for-parents/",
-          "source": "Parents Africa"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "kenya revenue authority internships",
       "traffic": "100+",
       "news": [
@@ -174,21 +174,21 @@
           "source": "Bizna Kenya"
         },
         {
-          "title": "Deadline set: KRA invites degree, diploma students to apply for 2027 attachment",
-          "url": "https://www.tuko.co.ke/business-economy/647750-kra-invites-kenyan-students-apply-2027-industrial-attachment-positions/",
-          "source": "Tuko News"
+          "title": "PSC opens applications for additional 2026/2027 interns",
+          "url": "https://5050markets.com/ke/news/psc-internship-applications-2026",
+          "source": "5050 Markets"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "robert mugabe",
-      "why": "unsafe: 'shooting'"
+      "title": "club brugge vs liverpool prediction",
+      "why": "unsafe: 'Odds'"
     },
     {
-      "title": "pete edochie",
-      "why": "unsafe: 'dies'"
+      "title": "robert mugabe",
+      "why": "unsafe: 'shooting'"
     }
   ],
   "errors": {}
