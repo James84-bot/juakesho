@@ -2420,7 +2420,7 @@
           "link": "https://www.businessdailyafrica.com/bd/economy/mbadi-seeks-cbk-truce-on-sh10bn-bank-capital-fallout-5663424"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [],
         "warnings": [
@@ -2728,7 +2728,7 @@
         }
       ],
       "publish_at": "2026-11-25T20:30:00+03:00",
-      "status": "approved",
+      "status": "missed",
       "drafted_at": "2026-11-25T20:02:20+03:00",
       "guard": {
         "errors": [],
@@ -2738,7 +2738,8 @@
       },
       "tg_msg": 1791,
       "auto": true,
-      "decided_at": "2026-11-25T20:02:24.560020+03:00"
+      "decided_at": "2026-11-25T20:02:24.560020+03:00",
+      "missed_why": "more than 3 h past its slot: last night's searches are old news"
     }
   ],
   "scripts": {
