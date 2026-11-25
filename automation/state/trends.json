@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-25T14:00:34.280817+00:00",
+  "fetched": "2026-11-25T14:12:07.970544+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -9,7 +9,7 @@
         {
           "title": "EU sets cap on number of hybrid vehicles that can be imported from China",
           "url": "https://www.dw.com/en/eu-imposes-import-quotas-for-hybrid-vehicles-from-china/a-80029981",
-          "source": "DW.com"
+          "source": "Deutsche Welle"
         },
         {
           "title": "European Automakers Surge: Market Reacts to New Regulations",
@@ -160,28 +160,6 @@
     },
     {
       "geo": "KE",
-      "title": "driving",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Raheem Sterling - from national icon to suspended jail sentence",
-          "url": "https://www.bbc.com/sport/football/articles/cxzd9ydqzylno",
-          "source": "BBC"
-        },
-        {
-          "title": "Raheem Sterling avoids jail over reckless driving while using nitrous oxide",
-          "url": "https://www.theguardian.com/football/2026/nov/25/raheem-sterling-avoids-jail-reckless-driving-nitrous-oxide-sentence",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Ex-England soccer player Sterling spared immediate jail sentence for dangerous driving",
-          "url": "https://www.reuters.com/world/uk/ex-england-soccer-player-sterling-spared-immediate-jail-sentence-dangerous-2026-11-25/",
-          "source": "Reuters"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "kenya revenue authority internships",
       "traffic": "100+",
       "news": [
@@ -196,14 +174,18 @@
           "source": "Bizna Kenya"
         },
         {
-          "title": "Deadline set: KRA invites degree, diploma students to apply for 2027 attachment",
-          "url": "https://www.tuko.co.ke/business-economy/647750-kra-invites-kenyan-students-apply-2027-industrial-attachment-positions/",
-          "source": "Tuko News"
+          "title": "PSC opens applications for additional 2026/2027 interns",
+          "url": "https://5050markets.com/ke/news/psc-internship-applications-2026",
+          "source": "5050 Markets"
         }
       ]
     }
   ],
   "dropped": [
+    {
+      "title": "club brugge vs liverpool prediction",
+      "why": "unsafe: 'Odds'"
+    },
     {
       "title": "robert mugabe",
       "why": "unsafe: 'shooting'"
