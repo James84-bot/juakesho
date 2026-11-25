@@ -2060,7 +2060,7 @@
       }
     },
     {
-      "id": "2026-w48-hot-1125-r2",
+      "id": "2026-w48-hot-1125-r3",
       "template": "sauti",
       "lane": "everyone",
       "kicker": "Nairobi Residents",
@@ -2153,20 +2153,21 @@
       },
       "drafted_at": "2026-11-25T09:11:24.962545+03:00",
       "replaced_by": "2026-w48-hot-1125-r3",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125-r2-photo.jpg",
-      "photo_credit": "Photo: Kenyans.co.ke",
-      "photo_kind": "posted",
-      "photo_outlet": "Kenyans.co.ke",
-      "photo_source": "https://www.kenyans.co.ke/news/129251-kasarani-mp-ronald-karauri-challenge-nairobi-governor-uda-ticket",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Sakaja_in_2024.jpg",
+      "reel": true,
+      "rephoto_reason": "a picture that does not fit (The photo depicts a political party meeting, not public budget forums.)",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125-r3-photo.jpg",
+      "photo_credit": "File photo: LuffyDe / Wikimedia Commons, CC0",
+      "photo_kind": "file",
+      "photo_outlet": "",
       "shot_info": [
         {
-          "credit": "Photo: Kenyans.co.ke",
-          "title": "UDA Unveils Sakaja's Challenger for Nairobi Gubernatorial Seat"
+          "credit": "File photo: LuffyDe / Wikimedia Commons, CC0",
+          "title": ""
         }
       ],
-      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "reel": true,
-      "tg_msg": 1743
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 1748
     },
     {
       "id": "2026-w48-hot-1125-r3",
