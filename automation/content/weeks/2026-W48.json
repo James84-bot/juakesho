@@ -2125,7 +2125,7 @@
           "link": "https://www.the-star.co.ke/counties/nairobi/2026-11-18-nairobi-traders-back-sakaja-tell-gachagua-we-wont-be-divided"
         }
       ],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "weak: editor scored 6.2/10. Ground the post in real immediate stakes and give a concrete, lawful demand to Nairobi County."
@@ -2216,7 +2216,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "expired",
       "guard": {
         "errors": [
           "weak: editor scored 4.5/10. Replace textbook phrasing and generic police station stock photo with the specific recruitment notice details, exact vacancy numbers, and a demand directed at the NPS recruitment desk."
@@ -2470,7 +2470,9 @@
       ],
       "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1768
+      "tg_msg": 1768,
+      "photo_checked": "2026-11-25T17:02:30.914863+03:00",
+      "photo_fit": "2026-11-25T17:02:30.914880+03:00"
     },
     {
       "id": "2026-w48-hot-1125b1641",
@@ -2607,7 +2609,11 @@
       "reel": true,
       "tg_msg": 1771,
       "auto": true,
-      "decided_at": "2026-11-25T16:54:32.440751+03:00"
+      "decided_at": "2026-11-25T16:54:32.440751+03:00",
+      "yt_tried": "2026-11-25T17:02:30.954721+03:00",
+      "yt_id": "ftFs7m2h0WE",
+      "tt_done": "2026-11-25T17:02:33.210958+03:00",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
