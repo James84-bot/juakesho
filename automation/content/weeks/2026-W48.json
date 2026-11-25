@@ -2618,11 +2618,36 @@
     {
       "id": "2026-w48-hot-1125b1903",
       "template": "sauti",
-      "bg": "usiku",
       "lane": "everyone",
+      "kicker": "Job seekers",
+      "line": "President Ruto and President Steinmeier agreed to *streamline work visas* for Kenyans.",
+      "fact": "Kenya and Germany agreed to speed up visa processing and recruitment for skilled Kenyan workers.",
+      "source": "Capital FM Africa, Daily Nation, KBC Digital, The Star",
+      "photo_query": "Kenyan passport",
+      "message": "Kenya and Germany agreed to cut visa wait times and expand job opportunities for Kenyans.",
+      "action": "Track official labour agreements on the Ministry of Labour portal: labour.go.ke",
+      "who": "President William Ruto",
+      "where": "National",
+      "when": "25 Nov 2026",
+      "side": "government",
+      "tone": "credit",
+      "impact": "Skilled Kenyan workers face shorter visa waits and clearer pathways to German jobs.",
+      "beats": [
+        "Ruto and Steinmeier agreed to *streamline German visas* for Kenyans.",
+        "The plan cuts visa delays and opens *direct recruitment* in Germany.",
+        "The Ministry of Labour will oversee bilateral job placements.",
+        "Would you apply for a skilled job in Germany?"
+      ],
+      "caption": "Kenya and Germany agreed to ease visa vetting and open direct recruitment for skilled workers. The bilateral deal aims to cut processing delays for Kenyan professionals.\n\nWould you apply for a job in Germany? Share your view below.\n\n#LabourMigration #KenyaOnRecord",
+      "bg": "usiku",
       "publish_at": "2026-11-25T19:23:00+03:00",
-      "status": "planned",
       "hot": true,
+      "avoid": [
+        "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives.",
+        "FKF and Red Cross partner in a Sh54m deal to ensure proper medical response for players on the pitch.",
+        "KNH workers are on strike, leaving patients waiting for urgent care across the facility.",
+        "Police advertised cadet jobs for degree holders aged 22 to 30 with deadlines."
+      ],
       "breaking": {
         "title": "Ruto, Steinmeier agree to streamline jobs, visa processes for Kenyans",
         "outlets": [
@@ -2658,12 +2683,62 @@
           "published": "2026-11-25"
         }
       ],
-      "avoid": [
-        "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives.",
-        "FKF and Red Cross partner in a Sh54m deal to ensure proper medical response for players on the pitch.",
-        "KNH workers are on strike, leaving patients waiting for urgent care across the facility.",
-        "Police advertised cadet jobs for degree holders aged 22 to 30 with deadlines."
-      ]
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.3/10. This post is not among the top trending stories Kenyans are on this week, and the action beat points to a web portal instead of asking an engaging question."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 7,
+        "demand": 3,
+        "action": 3,
+        "fair": 7,
+        "impact": 7,
+        "human": 7,
+        "avg": 6.3,
+        "note": "This post is not among the top trending stories Kenyans are on this week, and the action beat points to a web portal instead of asking an engaging question."
+      },
+      "drafted_at": "2026-11-26T02:11:10.772960+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125b1903-photo.jpg",
+      "photo_credit": "Photo: KBC · Photo: Kenyans.co.ke · Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/ruto-steinmeier-agree-to-streamline-jobs-visa-processes-for-kenyans/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125b1903-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125b1903-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Ruto, Steinmeier agree to streamline jobs, visa processes for Kenyans"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Bayern vs Ajax Match in Kenya Hits First Roadblock as Petitioners Move to Court"
+        },
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Ruto to hold Bilateral Talks with German President Steinmeier"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/videos/2026-w48-hot-1125b1903-broll.mp4",
+      "broll_credit": "Footage: sanaramedeiros / Pixabay",
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1809
     },
     {
       "id": "2026-w48-searching-1125",
@@ -2743,10 +2818,10 @@
     }
   ],
   "scripts": {
-    "radio": "Habari za leo na karibu kwa Kenya on Record. Today we are setting the record straight on a story making rounds across social media and political blogs.\n\nThere have been widely circulated reports claiming that the Independent Electoral and Boundaries Commission, the IEBC, has cleared former Deputy President Rigathi Gachagua to contest in the 2027 General Election. \n\nHowever, the electoral body has officially refuted these claims. IEBC clarified that candidate verification for the 2027 elections has not even opened yet. Under Kenyan electoral law, the clearance of candidates follows a clear, legal timeline that begins only after official gazettement and formal submission of papers. No politician—regardless of their stature—can be cleared years before that statutory window opens.\n\nWhy does this matter? Misinformation during the pre-election period is often calculated to create political momentum or confuse the electorate. As voters, it is our duty to demand factual reporting and rely on verified official communication from electoral authorities rather than political hype.\n\nKwa muhtasari kwa Kiswahili: Tume ya IEBC imekanusha vikali taarifa zinazodai imemwidhinisha aliyekuwa Naibu Rais Rigathi Gachagua kuwania kiti katika uchaguzi wa 2027. IEBC imesisitiza kuwa mchakato wa kukagua na kuidhinisha wagombea bado haujaanza rasmi. Tuwe waangalifu na taarifa za uongo.\n\nThis is Kenya on Record. Stay informed, stay vigilant.",
-    "voice_note": "Habari zenu, this is Kenya on Record with a quick fact-check. You’ve probably seen posts going viral claiming that IEBC has cleared former DP Rigathi Gachagua for the 2027 presidential race. That report is false.\n\nIEBC has come out clearly to clarify that candidate verification for 2027 hasn't even started. The electoral commission follows strict statutory timelines, and no candidate can be cleared before the official nomination window is declared.\n\nAs political hype slowly builds up, we’re going to see a lot of these premature claims designed to spin narratives. Before you forward that message to your family or community WhatsApp groups, pause and verify. Don’t let propaganda misinform you. Stay sharp!",
-    "sms": "Usiibiwe: IEBC hasn't cleared ANY 2027 candidate, including Rigathi Gachagua. Verification isn't open yet. Don't share political hype. Verify facts first.",
-    "reels": "Has Rigathi Gachagua been cleared for 2027? Social media says yes, but IEBC says absolutely not. The electoral commission has debunked viral reports claiming the former DP was cleared, stating candidate verification hasn't even opened yet. Don't fall for early political spin. Clearance follows legal timelines, not blog headlines. Follow Kenya on Record for real facts."
+    "radio": "Habari za leo, mwananchi wa Kenya on Record. Wiki hii tunamulikia ile makubaliano mapya kati ya Kenya na Ujerumani kuhusu visa na kazi.\n\nSerikali zetu mbili zimeweka mikakati ya kupunguza muda wa kusubiri visa za Ujerumani. Hii inamaanisha kwamba vijana wetu walio na ujuzi, kuanzia wataalamu wa afya, mafundi, hadi wataalamu wa IT, sasa wana njia rahisi na ya haraka zaidi ya kupata ajira nje ya nchi kupitia njia halali.\n\nKwenye upande wa uwajibikaji, hii ni habari njema lakini pia inatuhitaji kuwa waangalifu. Tunawahimiza vijana wetu kutumia njia rasmi pekee na kuepuka matapeli wanaowahidi kazi za mkato bila kufuata taratibu. Serikali lazima ihakikishe kuwa mikataba hii inalinda haki za Wakenya kule Ujerumani, na mishahara inalingana na kazi wanazofanya. Tujipange, tuweke vyeti vyetu sawa, na tufuate sheria.\n\n[Kiswahili Summary]\nKwa kifupi: Serikali za Kenya na Ujerumani zimekubaliana kupunguza muda wa kusubiri visa na kuongeza nafasi za ajira kwa Wakenya wenye ujuzi. Hakikisha unatumia njia rasmi pekee ili kuepuka ulaghai unapotafuta kazi nje ya nchi.",
+    "voice_note": "Sasa wakuu! Habari njema kutoka Kenya on Record wiki hii. Kenya na Ujerumani zimeafikiana kupunguza muda wa kusubiri visa na kufungua milango zaidi ya ajira kwa Wakenya wenye ujuzi. Kama wewe ni mtaalamu wa afya au fundi stadi, hii ni nafasi yako. Lakini kumbuka, pitia njia rasmi pekee. Usikubali kutapeliwa na mawakala feki wa mtaani wanaokuahidi kazi za mkato. Fuata sheria, linda haki zako.",
+    "sms": "Kenya na Ujerumani zimekubaliana kupunguza muda wa visa na kuongeza nafasi za kazi. Tumia njia rasmi pekee na uepuke matapeli wa ajira za nje. Usiibiwe!",
+    "reels": "[Visual: A clean split screen showing a young Kenyan professional looking at a passport, transitioning to a graphic of the Kenyan and German flags.]\n\nVoice-over: Vijana, habari ndio hiyo! Visa ya Ujerumani sasa inapatikana kwa haraka na nafasi za kazi zimeongezeka kwa Wakenya wenye ujuzi. Lakini kumbuka, usikimbilie mawakala wa mtaani; tumia njia rasmi za serikali pekee. Usiibiwe, fuata utaratibu sahihi!"
   },
   "spend_usd": 0.0
 }
