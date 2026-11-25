@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-25T07:42:10.579151+00:00",
+  "fetched": "2026-11-25T09:31:39.324848+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -8,7 +8,7 @@
       "news": [
         {
           "title": "Inside KEBS conditions for importing used cars from January 1, 2027",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-inside-kebs-conditions-for-importing-used-cars-from-january-1-2027",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-inside-kebs-new-rules-for-importing-used-cars-from-january",
           "source": "The Star, Kenya"
         },
         {
@@ -26,7 +26,7 @@
     {
       "geo": "KE",
       "title": "kenya airways",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "KQ flight attendant honoured for returning passenger’s Sh1.2mn",
@@ -44,6 +44,29 @@
           "source": "5050 Markets"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "man city",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Arsenal and Manchester City's problems analysed as both set to meet in bumper Premier League clash this weekend",
+          "url": "https://www.skysports.com/football/news/13616234/arsenal-and-manchester-citys-problems-analysed-as-both-set-to-meet-in-bumper-premier-league-clash-this-weekend",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "How to watch Arsenal v Manchester City live on TV",
+          "url": "https://www.arsenal.com/news/how-to-watch-arsenal-v-manchester-city-live-on-tv-akATa2J3AKki",
+          "source": "Arsenal.com"
+        },
+        {
+          "title": "Police to double number of officers for Arsenal vs. Manchester City on Sunday - The Athletic",
+          "url": "https://www.nytimes.com/athletic/7806079/2026/11/23/arsenal-man-city-premier-league-police/",
+          "source": "The New York Times"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -69,14 +92,55 @@
     },
     {
       "geo": "KE",
-      "title": "ucl results",
+      "title": "mike sonko",
       "traffic": "200+",
       "news": [
         {
-          "title": "Kylian Mbappé makes Champions League history (again) 🌟",
-          "url": "https://onefootball.com/en/news/kylian-mbappe-makes-champions-league-history-again-43834260",
-          "source": "OneFootball"
+          "title": "Court again declines to stop Sonko from leading NEDP as eligibility battle continues",
+          "url": "https://nation.africa/kenya/news/politics/court-again-declines-to-stop-sonko-from-leading-nedp-as-eligibility-battle-continues-5682766",
+          "source": "Daily Nation"
         },
+        {
+          "title": "High Court declines application to bar Sonko from NEDP party leadership",
+          "url": "https://citizen.digital/article/high-court-declines-application-to-bar-sonko-from-nedp-party-leadership-n394450",
+          "source": "Citizen Digital"
+        },
+        {
+          "title": "Why a Lawyer Wants Mike Sonko Barred From Leading Political Party",
+          "url": "https://nairobiwire.com/2026/11/mike-sonko-nedp-leadership-case-high-court-ruling.html",
+          "source": "Nairobi Wire -"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "national police service",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "NPS announces police cadet recruitment, sets December 10 deadline",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-nps-announces-police-cadet-recruitment-sets-december-10-deadline",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "National Police Service Announces Recruitment of Police Cadets",
+          "url": "https://chagua.co.ke/news/national-police-service-announces-recruitment-of-police-cadets/",
+          "source": "chagua.co.ke"
+        },
+        {
+          "title": "What CS Murkomen’s Recruitment Warning Means for Parents",
+          "url": "https://parentsafrica.com/what-cs-murkomens-recruitment-warning-means-for-parents/",
+          "source": "Parents Africa"
+        }
+      ],
+      "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "ucl results",
+      "traffic": "200+",
+      "news": [
         {
           "title": "Champions League top scorer: Kylian Mbappé moves level with Tasos Douvikas",
           "url": "https://www.uefa.com/uefachampionsleague/news/02a9-218f8e669a0a-debba167a199-1000--champions-league-top-scorer-kylian-mbappe-moves-level-with/",
@@ -86,53 +150,13 @@
           "title": "Mbappé, MVP of the match against PSV",
           "url": "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/mbappe-mvp-del-partido-ante-el-psv-24-11-2026",
           "source": "Real Madrid CF | Web Oficial"
+        },
+        {
+          "title": "Mbappé breaks record, overtaking Real Madrid legend!",
+          "url": "https://todaypress.tv/en/sports/mbappe-breaks-record-overtaking-real-madrid-legend",
+          "source": "TodayPress.tv"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "manchester city fc",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Erling Haaland frustrated with Manchester City form: 'When you don't win, you question everything'",
-          "url": "https://www.skysports.com/football/news/13616226/erling-haaland-frustrated-with-manchester-city-form-when-you-dont-win-you-question-everything",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Haaland: Fighting spirit against Napoli was important",
-          "url": "https://www.mancity.com/citytv/mens/haaland-post-napoli-citytv-reaction-ucl-24th-63931130",
-          "source": "Manchester City FC"
-        },
-        {
-          "title": "Haaland's scoring streak against Napoli ends at three games",
-          "url": "https://www.allfootballapp.com/articles/6072316-haalands-scoring-streak-against-napoli-ends",
-          "source": "AllFootball"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "national police service",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "NPS announces police cadet recruitment, sets December 10 deadline",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-nps-announces-police-cadet-recruitment-sets-december-10-deadline",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Ministry Addresses Land-Selling Trend Among Parents Seeking Police Jobs Ahead of Recruitment",
-          "url": "https://www.kenyans.co.ke/news/129586-murkomen-warns-parents-against-selling-land-secure-police-recruitment-slots",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "National Police Service Announces Recruitment of Police Cadets",
-          "url": "https://chagua.co.ke/news/national-police-service-announces-recruitment-of-police-cadets/",
-          "source": "chagua.co.ke"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -145,14 +169,14 @@
           "source": "CNN"
         },
         {
-          "title": "Miss Universe 2026: Jennifer Barreto become di first mother to win di pageant",
-          "url": "https://www.bbc.com/pidgin/articles/cjy5xwpwgpqko",
-          "source": "BBC"
-        },
-        {
           "title": "Miss Universe 2026 Becomes First Mother to Win Pageant",
           "url": "https://people.com/miss-universe-2026-winner-jennifer-barreto-12267491",
           "source": "People.com"
+        },
+        {
+          "title": "The Big Night Is Almost Here! Telemundo Unveils Unprecedented Coverage for the Historic 75th Miss Universe® Competition, Live Coast-to-Coast from Puerto Rico on Tuesday, November 24, Starting at 7pm ET/6pm CT/4pm PT",
+          "url": "https://nbcuniversalnewsgroup.com/telemundo/2026/11/17/the-big-night-is-almost-here-telemundo-unveils-unprecedented-coverage-for-the-historic-75th-miss-universe-competition-live-coast-to-coast-from-puerto-rico-on-tuesday-november-24-startin/",
+          "source": "NBCUniversal News Group"
         }
       ]
     },
@@ -162,41 +186,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Pietuszewski, aos 2 minutos: Porto vence o Feyenoord por 0-1",
-          "url": "https://www.tufutbolero.com/pt/noticias/pietuszewski-aos-2-minutos-porto-vence-o-feyenoord-por-0-1-8a9832",
-          "source": "Tu Futbolero"
+          "title": "LC: Autogolo garante vitória do FC Porto em casa do Feyenoord",
+          "url": "https://www.correiodamanhacanada.com/lc-autogolo-garante-vitoria-do-fc-porto-em-casa-do-feyenoord/",
+          "source": "Correio da Manhã Canadá"
         },
         {
-          "title": "Gimenez sai de Roterdão duplamente feliz e já olha para o clássico: «A prioridade é o Sporting»",
-          "url": "https://sapo.pt/artigo/gimenez-sai-de-roterdao-duplamente-feliz-e-ja-olha-para-o-classico-a-prioridade-e-o-sporting-6b061adc51c078463f217ed9",
-          "source": "SAPO"
+          "title": "Van Bronckhorst revela fala surpreendente do árbitro logo após o jogo",
+          "url": "https://www.goal.com/br/not%C3%ADcias/van-bronckhorst-revela-fala-surpreendente-do-arbitro-logo-apos-o-jogo/blta0c18144ef82ae7f",
+          "source": "Goal.com"
         },
         {
-          "title": "Van Bronckhorst e a derrota: \"Às vezes o futebol é muito duro\"",
-          "url": "https://www.noticiasaominuto.com/desporto/3089711/van-bronckhorst-e-a-derrota-as-vezes-o-futebol-e-muito-duro",
-          "source": "Notícias ao Minuto"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "city",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "City expects water/sewer rate increases",
-          "url": "https://www.kulr8.com/news/state/city-expects-water-sewer-rate-increases/article_98fed5b6-f388-5319-b79f-8a261b2414bc.html",
-          "source": "NonStop Local Billings"
-        },
-        {
-          "title": "Projected Net Income and Project Spending for the Planning Period – Water Fund",
-          "url": "https://www.fairfieldsuntimes.com/news/state/projected-net-income-and-project-spending-for-the-planning-period-water-fund/image_639f5a26-02c3-53fa-8920-ebb7cde7689d.html",
-          "source": "Fairfield Sun Times"
-        },
-        {
-          "title": "Licensable picture: Christmas Tree Lighting At Syntagma Square",
-          "url": "https://www.reutersconnect.com/item/christmas-tree-lighting-at-syntagma-square/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMU5VUlBITzAwMFkzRUc1MA",
-          "source": "Reuters Connect"
+          "title": "Diogo Costa: monstro na baliza; Pietuszewski: monstro no ataque (as notas do FC Porto)",
+          "url": "https://www.abola.pt/noticias/diogo-costa-monstro-na-baliza-pietuszewski-monstro-no-ataque-as-notas-do-fc-porto-2026112422172701025",
+          "source": "A Bola"
         }
       ]
     }
