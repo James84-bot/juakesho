@@ -2367,13 +2367,117 @@
       "yt_id": "d5iBW7sl1ys",
       "tt_done": "2026-11-25T15:32:41.627811+03:00",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w48-hot-1125e",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "Kenya's public debt hit *Sh13.5 trillion* as Treasury defended new borrowing.",
+      "fact": "National Treasury records show public debt reached Sh13.5 trillion in September 2026.",
+      "source": "The Eastleigh Voice, 2026-11-25",
+      "photo_query": "National Treasury Nairobi",
+      "event_query": "National Treasury Nairobi",
+      "message": "Kenya's public debt reached Sh13.5 trillion in September 2026, increasing tax burdens on ordinary citizens.",
+      "action": "Demand your MP scrutinises every new borrowing proposal in Parliament.",
+      "who": "Treasury CS John Mbadi",
+      "where": "National",
+      "when": "25 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Higher public debt repayments consume revenues needed for public hospitals, basic infrastructure and schools.",
+      "beats": [
+        "Kenya's public debt hit *Sh13.5 trillion* in September 2026.",
+        "Treasury CS John Mbadi defended fresh borrowing despite public concern.",
+        "Debt servicing eats up most of our national tax revenue.",
+        "How much of your monthly pay goes to taxes?"
+      ],
+      "caption": "Kenya's public debt reached Sh13.5 trillion in September 2026. Treasury CS John Mbadi must publish the complete loan register by 31 December 2026 so taxpayers see how every borrowed shilling was spent. Send this to a friend who pays tax.\n\nHow much of your monthly pay goes to taxes?",
+      "bg": "usiku",
+      "publish_at": "2026-11-25T20:00:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "The Ministry of Health and hospital management must resolve staff disputes to protect patient lives.",
+        "FKF and Red Cross partner in a Sh54m deal to ensure proper medical response for players on the pitch.",
+        "KNH workers are on strike, leaving patients waiting for urgent care across the facility.",
+        "Police advertised cadet jobs for degree holders aged 22 to 30 with deadlines."
+      ],
+      "source_links": [
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "Kenya’s debt hits Sh13.5 trillion in September as CS Mbadi defends borrowing",
+          "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSm9SZm1kcGtkaDctN0lHTFlRUmJlMWItbjZoejEtY3h6WEplRENZdVNkVDFWNTVvSU0zQ1FyVTZESS04WTVTTmYwTklwRGRWQUhaTVpCb1dRbXlPQnVCa08wX0E3Q241cExRa0N6a3J5WlJQTGQzUVFyU0xZdFlXWWhjN1RnMkk2UUhMYjViX2kzYUl2ZlpJV05NaVlMWlowLUxCTEpiNFVBUmdMZ1ZNZk9ZSjI4bTRfT2hR?oc=5",
+          "published": "2026-11-25"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "We want them to come to us and tell us how they are going to meet the target for 2026, which is Sh5 billion",
+          "speaker": "Dr Thugge",
+          "context": "“We want them to come to us and tell us how they are going to meet the target for 2026, which is Sh5 billion,” Dr Thugge told the National Assembly Finance and National Planning Committee at the end of October.",
+          "outlet": "Business Daily",
+          "link": "https://www.businessdailyafrica.com/bd/economy/mbadi-seeks-cbk-truce-on-sh10bn-bank-capital-fallout-5663424"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 9,
+        "craft": 9,
+        "picture": 8,
+        "hold": 9,
+        "demand": 3,
+        "action": 8,
+        "fair": 7,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.0,
+        "note": "Demand score of 3 given because public debt is not in the top 10 stories Kenyans are on this week."
+      },
+      "drafted_at": "2026-11-25T16:11:29.884981+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125e-photo.jpg",
+      "photo_credit": "Photo: Business Daily · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Business Daily",
+      "photo_source": "https://www.businessdailyafrica.com/bd/economy/mbadi-seeks-cbk-truce-on-sh10bn-bank-capital-fallout-5663424",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125e-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1125e-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Business Daily",
+          "title": "Mbadi seeks CBK truce on Sh10bn bank capital fallout"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Gives Progress Update on Nairobi-Mombasa Expressway Project"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Reveals Planned Changes in November-December Fuel Prices"
+        }
+      ],
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1768
     }
   ],
   "scripts": {
-    "radio": "Good morning listeners, welcome to Kenya on Record. I am your host, and today we need to talk about our pride as a sporting nation—and the real threat currently facing it.\n\nNot long ago, we celebrated securing the rights to co-host AFCON 2027, alongside hosting the World Athletics Championships. These tournaments were promised to the public as major engines for local economic growth, tourism, and youth talent development. But behind the glitz of those press conferences lies a stark reality: Kenya is currently staring at a staggering 8.38 billion shilling deficit required to pull off these events.\n\nWithout clearing this shortfall immediately, our hosting rights remain in serious jeopardy. We are already seeing key stadium upgrades stalling and federations raising red flags over inadequate preparations. How do we make grand international commitments without a solid, transparent financing plan? This is not just about football or track and field—it is about fiscal discipline, public accountability, and protecting Kenya's global standing. The Ministry of Sports and the National Treasury must give us clear answers on how this hole will be plugged without burdening the public.\n\nKwa ufupi: Kenya inakabiliwa na upungufu wa shilingi bilioni 8.38 ili kufanikisha uandaaji wa AFCON 2027 na Mashindano ya Riadha ya Dunia. Lazima serikali ifafanue wazi jinsi fedha hizi zitakavyopatikana bila kupoteza haki hizi za uandaaji au kulemeza mwananchi na madeni. Tuitishe uwajibikaji sasa.\n\nThis is Kenya on Record. Stay informed and stay accountable.",
-    "voice_note": "Hujambo. This is Kenya on Record with an urgent update on our sports sector. We all celebrated when Kenya secured hosting rights for AFCON 2027 and the World Athletics Championships. But right now, an 8.38 billion shilling deficit threatens to ruin everything. If this financial shortfall isn't resolved immediately, we risk losing the hosting rights entirely. How do we commit to global events without securing the funds first? We cannot afford national embarrassment or wasted public resources. The Sports Ministry and National Treasury must account for every shilling and explain how this deficit will be cleared. Pass this voice note along—let’s demand transparency before time runs out.",
-    "sms": "Usiibiwe Tip: Kenya faces an Sh8.38bn deficit for AFCON 2027 & World Athletics. Demand full transparency on sports funds to protect our hosting rights!",
-    "reels": "Kenya won the rights to host AFCON 2027 and the World Athletics Championships, but an 8.38 billion shilling deficit threatens to take it all away. Stadium progress is stalling, and time is running out. Where did the financial planning break down? We cannot claim big-league status globally while mismanagement drains us at home. Track the money. Demand answers. This is Kenya on Record."
+    "radio": "Jambo and welcome to Kenya on Record. Today, we need to talk about the numbers shaping your daily cost of living.\n\nOfficial figures confirm that Kenya’s public debt reached a staggering 13.5 trillion shillings in September 2026. That is a heavy number, but here is what it means on the ground: a huge portion of our national revenue is now swallowed by loan repayments before a single shilling reaches your local dispensary, public school, or agricultural subsidy.\n\nWhen public debt climbs this high, the government inevitably turns to higher taxation and new levies to cover the deficit. You end up paying more for basic goods and services, yet the quality of public infrastructure continues to lag. It is a double burden on every hard-working Kenyan taxpayer.\n\nWe cannot afford to leave these debt discussions to politicians and economists alone. Start asking your local leaders real questions: where did the borrowed money go, and is there visible value for the loans taken in our name? Public debt is paid by public revenue, and tracking it is your right.\n\nKwa ufupi: Deni la taifa limefikia shilingi trioni 13.5 kufikia Septemba 2026. Hali hii inamaanisha kodi zetu nyingi zinatumika kulipa madeni badala ya kuboresha huduma za afya, elimu, na barabara. Ni wakati wa kudai uwazi na uwajibikaji kutoka kwa viongozi wetu.",
+    "voice_note": "Habari zenu. This is Kenya on Record. Let’s talk about your hard-earned money. New data shows our national public debt hit 13.5 trillion shillings in September 2026. That is not just a figure on a Treasury spreadsheet—it directly affects your pocket. When debt swells this high, the government raises taxes and cuts back on funding for public hospitals, schools, and roads just to service those loans. The big question we must keep asking our leaders is simple: where did this money go, and where is the value for it in our wards? Don't ignore the numbers. Forward this to your group and let’s demand real accountability.",
+    "sms": "Usiibiwe: Kenya's public debt hit Sh13.5T in Sept 2026. Higher debt means more taxes & fewer public services. Ask your leaders where loan money went.",
+    "reels": "As of September 2026, Kenya’s public debt stands at a record 13.5 trillion shillings. What does this mean for you? Every shilling spent servicing old debt is a shilling taken away from drugs in public hospitals, road repairs, and essential services. We are paying higher taxes for fewer benefits. Hold your leaders accountable. Ask where the borrowed money went."
   },
   "spend_usd": 0.0
 }

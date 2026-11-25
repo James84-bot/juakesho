@@ -1,17 +1,22 @@
+event 'National Treasury Nairobi' for 2026-w48-hot-1125e (21 Nov-26 Nov): 0 found, 0 usable, dropped {'size': 0, 'licence': 0, 'date': 0, 'subject': 0}
+event 'National Treasury' for 2026-w48-hot-1125e (21 Nov-26 Nov): 30 found, 0 usable, dropped {'size': 6, 'licence': 0, 'date': 21, 'subject': 3}
 feed KBC: 60 items, 59 with an image
 feed Capital FM: 60 items, 60 with an image
 feed Capital FM Politics: 60 items, 60 with an image
 feed Kenyans.co.ke: 20 items, 0 with an image
 feed The Standard: 30 items, 30 with an image
 feed Nation: 25 items, 0 with an image
-posted for 2026-w48-hot-1125a: 0 matching reports (person '', names ['afcon'], words ['must', 'clear', 'deficit', 'protect', 'afcon'])
-picked LiveScore from the news search: AFCON U-turn! CAF scrap controversial four-year plan to reinstate trad
-topic photos for 2026-w48-hot-1125a: 12 recent reports on ['stadium', 'construction']
+posted for 2026-w48-hot-1125e: 0 matching reports (person 'mbadi', names ['john', 'mbadi'], words ['treasury'])
+Facebook page not read: HTTP Error 400: Bad Request
+picked Business Daily from the news search: Mbadi seeks CBK truce on Sh10bn bank capital fallout
+topic photos for 2026-w48-hot-1125e: 9 recent reports on ['treasury']
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-skipped Kenyans.co.ke: an edited graphic, not a photo (Two photos combined side by side) (https://www.kenyans.co.ke/files/styles/article_style/public/)
+not Kenyans.co.ke: soft or a face fills it (Treasury Proposes New Rules to Curb Fraud in Govt Tenders)
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-topic photo from Kenyans.co.ke: First Games at Talanta Stadium Complex Revealed
+topic photo from Kenyans.co.ke: Treasury Gives Progress Update on Nairobi-Mombasa Expressway Project
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-not Kenyans.co.ke: soft or a face fills it (High Court Rules on Order Blocking Construction of Dangote L)
+not Kenyans.co.ke: soft or a face fills it (Treasury to Scrap PAYE Relief for Employees in New Tax Plan)
 skipped Kenyans.co.ke image: HTTP Error 404: Not Found
-topic photo from Kenyans.co.ke: Ruto Issues New Directive on Eldoret’s Kipchoge Keino Stadium
+skipped Kenyans.co.ke: an edited graphic, not a photo (Circular inset photo of a man) (https://www.kenyans.co.ke/files/styles/article_style/public/)
+skipped Kenyans.co.ke image: HTTP Error 404: Not Found
+topic photo from Kenyans.co.ke: Treasury Reveals Planned Changes in November-December Fuel Prices
