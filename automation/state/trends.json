@@ -1,38 +1,10 @@
 {
-  "fetched": "2026-11-26T01:10:05.639843+00:00",
+  "fetched": "2026-11-26T03:36:47.106571+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "livescore",
-      "traffic": "1000+",
-      "news": []
-    },
-    {
-      "geo": "KE",
-      "title": "bayern munich",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Bayern Munich’s Max Eberl: There’s no time to point fingers",
-          "url": "https://sports.yahoo.com/soccer/articles/bayern-munich-max-eberl-no-232921527.html",
-          "source": "Yahoo Sports"
-        },
-        {
-          "title": "Sporting 2-2 Man Utd: Mauricio Pochettino denied first win by Senne Lammens howler in Champions League",
-          "url": "https://www.skysports.com/football/news/13616484/sporting-2-2-man-utd-mauricio-pochettino-denied-first-win-by-senne-lammens-howler-in-champions-league",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "'Disgrace' decisions, divots and howlers - Man Utd chaos against Sporting",
-          "url": "https://www.bbc.com/sport/football/articles/cvrlg074ld74o",
-          "source": "BBC"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "losc lille vs bayern munich standings",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Harry Kane injured as Bayern Munich and PSG face injury crises plus Lamine Yamal and Kylian Mbappe miss penalties",
@@ -54,25 +26,9 @@
     },
     {
       "geo": "KE",
-      "title": "atlético madrid vs viking fk standings",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Alvarez scores as Atletico cruise to victory over Viking",
-          "url": "https://www.bbc.com/sport/football/live/c678292r8lddt",
-          "source": "BBC"
-        },
-        {
-          "title": "Champions League highlights: Atletico Madrid 2-0 Viking",
-          "url": "https://www.bbc.com/sport/football/videos/cm4gn8d148xdo",
-          "source": "BBC"
-        },
-        {
-          "title": "Atletico Madrid vs Viking FK Prediction & Picks - Champions League",
-          "url": "https://www.sportytrader.com/us/picks/atletico-madrid-viking-fk-389544/",
-          "source": "SportyTrader"
-        }
-      ]
+      "title": "livescore",
+      "traffic": "1000+",
+      "news": []
     },
     {
       "geo": "KE",
@@ -98,52 +54,74 @@
     },
     {
       "geo": "KE",
-      "title": "manu",
-      "traffic": "500+",
+      "title": "kenya power",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Transfer Rumors: Real Madrid’s Haaland Boost; European Giants Battle for Fernandes",
-          "url": "https://www.si.com/soccer/transfer-rumors-real-madrid-haaland-boost-european-battle-fernandes",
-          "source": "Sports Illustrated"
+          "title": "Kenya Power explains why it conducts planned power cuts",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-kenya-power-why-we-conduct-planned-power-cuts",
+          "source": "The Star, Kenya"
         },
         {
-          "title": "Transfer Rumors: Real Madrid Eye Haaland Price Slash; PSG Raid Europe in Winter Splurge",
-          "url": "https://www.fotmob.com/embed/news/01m86vs56cza/transfer-rumors-real-madrid-eye-haaland-price-slash-psg-raid-europe-winter-splurge",
-          "source": "FotMob"
+          "title": "Power restored in parts of Kenyan capital after major outage",
+          "url": "https://en.yenisafak.com/world/power-restored-in-parts-of-kenyan-capital-after-major-outage-2972279",
+          "source": "Yeni Safak English"
         },
         {
-          "title": "Arsenal dilemma as Man Utd signing plan confirmed",
-          "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/11/arsenal-chelsea-man-utd-transfer-news-kepa-arrizabalaga-david-ornstein-alex-scott-manu-kone-vinicius-jr-footballtransfers-recap",
-          "source": "FootballTransfers.com"
+          "title": "Kenya Power Announces Wednesday Outages in Nairobi, Machakos, Kisii and Other Counties",
+          "url": "https://www.ghafla.co.ke/kenya-power-announces-wednesday-outages-in-nairobi-machakos-kisii-and-other-counties/",
+          "source": "Ghafla!"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "bayern",
+      "title": "uefa champions league standings",
       "traffic": "200+",
       "news": [
         {
-          "title": "Niederlage in Lille: Plötzlich zittern die Bayern um ihr Selbstverständnis als Gewinnerteam",
-          "url": "https://www.spiegel.de/sport/fussball/champions-league-fc-bayern-muenchen-verliert-nach-fuehrung-in-lille-a-705d3778-1c49-4f83-b5b8-030c9b4b06c2",
-          "source": "Spiegel"
+          "title": "Jude Bellingham: Real Madrid midfielder plays down Zinedine Zidane comparison after wonder goal",
+          "url": "https://www.bbc.com/sport/football/articles/c893r9kdwl91o",
+          "source": "BBC"
         },
         {
-          "title": "“Ist nicht der Fehler von Aleks“ – Eberl über Pavlovic-Eigentor",
-          "url": "https://www.skysportaustria.at/mediathek/ist-nicht-der-fehler-von-aleks-eberl-ueber-pavlovic-eigentor/",
-          "source": "Sky Sport Austria"
+          "title": "Bellingham beauty in Real Madrid win as Arsenal, Man City held in Champions League",
+          "url": "https://supersport.com/football/news/a001bb81-51b1-47a9-ace4-bb709e294ec8/bellingham-beauty-in-real-madrid-win-as-arsenal-man-city-held-in-champions-league",
+          "source": "SuperSport"
         },
         {
-          "title": "17:30 SAT.1 Bayern - FC Bayern vor Spiel in Lille: Verletzungssorgen und Wirbel um Musiala",
-          "url": "https://www.joyn.de/play/clip/fc-bayern-vor-spiel-in-lille-verletzungssorgen-und-wirbel-um-musiala?from=%2Fserien%2F1730-sat1-bayern",
-          "source": "Joyn"
+          "title": "Champions League highlights and round-up: Real Madrid stay perfect, Galatasaray and Como win again",
+          "url": "https://www.uefa.com/uefachampionsleague/news/02ab-222684fc8e44-2b1a32c90a7a-1000--champions-league-highlights-and-round-up-real-madrid-sta/",
+          "source": "UEFA.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "man u vs",
-      "traffic": "200+",
+      "title": "76ers vs heat",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "NBA: Miami Heat at Philadelphia 76ers",
+          "url": "https://www.reutersconnect.com/item/nba-miami-heat-at-philadelphia-76ers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NDc2ODc",
+          "source": "Reuters Connect"
+        },
+        {
+          "title": "Joel Embiid (illness) out Wednesday vs. Heat",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/joel-embiid-illness-out-wednesday-vs-heat",
+          "source": "NBC Sports"
+        },
+        {
+          "title": "Heat 76ers Basketball",
+          "url": "https://www.couriernews.com/sports/heat-76ers-basketball/image_9cc079b9-62cc-52f0-8dad-4998669483a3.html",
+          "source": "couriernews.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "bbc football",
+      "traffic": "100+",
       "news": [
         {
           "title": "Champions League LIVE: Sporting vs Man Utd & Club Brugge vs Liverpool score & updates from seven other games",
@@ -164,23 +142,23 @@
     },
     {
       "geo": "KE",
-      "title": "sporting",
-      "traffic": "200+",
+      "title": "champions league stats",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Paulo Fonseca: «Fica a sensação de que poderíamos ter vencido o jogo»",
-          "url": "https://www.abola.pt/video/paulo-fonseca-fica-a-sensacao-de-que-poderiamos-ter-vencido-o-jogo-2026112523120729394",
-          "source": "A Bola"
+          "title": "Betis Corners & Cards Stats 2026/27 (UEFA Champions League): Corners per Game, Yellow Cards, Shots | All Football",
+          "url": "https://m.dongqiudi.com/en/stats/corners/50001764-27456",
+          "source": "懂球帝"
         },
         {
-          "title": "Sporting empata com o Man. United numa noite em que Bruno Fernandes ia estragando tudo",
-          "url": "https://leonino.pt/sporting-empata-com-o-man-united-numa-noite-em-que-bruno-fernandes-ia-estragando-tudo",
-          "source": "Leonino"
+          "title": "Club Brugge 0-3 Liverpool: Alexander Isak and Florian Wirtz score in Champions League win",
+          "url": "https://www.bbc.com/sport/football/live/c5vg2w2e2gy1t",
+          "source": "BBC"
         },
         {
-          "title": "Fonseca explica como se preparou para a «incerteza» do United",
-          "url": "https://cnnportugal.iol.pt/videos/fonseca-explica-como-se-preparou-para-a-incerteza-do-united/6b076eaa0cf29f111c0f4ab7",
-          "source": "CNN Portugal"
+          "title": "Team news: Confirmed Liverpool line-up v Club Brugge",
+          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-club-brugge",
+          "source": "Liverpool FC"
         }
       ]
     },
@@ -207,6 +185,11 @@
       ]
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "title": "atlético madrid vs viking fk standings",
+      "why": "unsafe: 'fire'"
+    }
+  ],
   "errors": {}
 }

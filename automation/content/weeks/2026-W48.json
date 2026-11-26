@@ -2815,13 +2815,225 @@
       "auto": true,
       "decided_at": "2026-11-25T20:02:24.560020+03:00",
       "missed_why": "more than 3 h past its slot: last night's searches are old news"
+    },
+    {
+      "id": "2026-w48-hot-1126m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Job seekers",
+      "line": "Kenya signed its *third labour deal* with Canada to expand job opportunities.",
+      "fact": "The third labour agreement with Canada creates structured job pathways abroad for skilled Kenyans.",
+      "source": "Daily Nation, 2026-11-26",
+      "photo_query": "Nairobi skyline",
+      "message": "Kenya signed a third bilateral agreement with Canada to expand labour mobility for skilled workers.",
+      "action": "Check official Labour Ministry portals to verify foreign job offers",
+      "who": "Ministry of Labour and Social Protection",
+      "where": "National",
+      "when": "26 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Kenyans seeking foreign work get structured access through official government agreements.",
+      "beats": [
+        "Kenya signed its *third jobs deal* with Canada for overseas employment.",
+        "The agreement creates structured pathways for skilled workers.",
+        "Official government portals will host verified bilateral openings.",
+        "Would you apply for work *in Canada?*"
+      ],
+      "caption": "Kenya signed its third bilateral labour deal with Canada to expand job opportunities abroad. Always verify job postings on official Ministry of Labour channels to avoid recruitment scams.\n\nWould you apply for a job abroad through official government deals? 👇🏾\n\n#KenyaJobs #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-26T09:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Kenya signs third jobs deal with Canada",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOXzE3NkJIMV80c0FWQ1BUcEhIeXZkVFI0SnBlcjc0aUxLVU5tYkZVQ0JSR0U2NVFwWk5sajVmekJMVko2NnBnWFFuYkdBQ0I3M0VZa1NxZWY4akNsaWoyUFV1dW1NTnRFOERzWF83RFZHdDFLNFE1bTdXSG5mTHdiaTZKMWx3QTRuS25hQQ?oc=5",
+          "published": "2026-11-26"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.9/10. Ground this in concrete numbers from the agreement and replace the generic Nairobi skyline with a specific foreign employment bureau scene."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 5,
+        "craft": 5,
+        "picture": 4,
+        "hold": 5,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 6,
+        "human": 4,
+        "avg": 4.9,
+        "note": "Ground this in concrete numbers from the agreement and replace the generic Nairobi skyline with a specific foreign employment bureau scene."
+      },
+      "drafted_at": "2026-11-26T06:55:06.708728+03:00",
+      "replaced_by": "2026-w48-hot-1126m-r2",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126m-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/kenya-signs-second-canadian-labour-mobility-agreement-in-under-a-month/",
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Kenya signs second Canadian labour mobility agreement in under a month"
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1821
+    },
+    {
+      "id": "2026-w48-hot-1126m-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "State House requests an extra *Sh8.42 billion* for renovations, machinery and daily operations.",
+      "fact": "The supplementary budget proposal seeks Sh8.42bn for State House upgrades and equipment.",
+      "message": "State House wants an extra Sh8.42bn for renovations while ordinary Kenyans struggle with taxes.",
+      "action": "Petition the National Assembly Budget Committee to reject non-priority spending.",
+      "photo_query": "National Treasury Nairobi",
+      "source": "The Eastleigh Voice, 2026-11-25",
+      "who": "National Treasury and State House",
+      "where": "National",
+      "when": "25 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Taxpayers fund multi-billion shilling office renovations while basic public services face spending cuts.",
+      "beats": [
+        "State House wants an extra *Sh8.42 billion* for renovations.",
+        "The proposal directs billions into state lodge *repairs* and vehicles.",
+        "Parliament must reject *renovations* while public clinics lack drugs.",
+        "Should MPs approve Sh8.42 billion for State House renovations?"
+      ],
+      "caption": "State House requests an extra Sh8.42 billion in the new supplementary budget. The money is meant for office renovations, machinery and daily operations. Taxpayers are already struggling under heavy salary deductions. Parliament must reject luxury spending while public clinics lack essential medicines. Should MPs approve this budget request?\n\n#StateHouse #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-26T09:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Kenya signed a third bilateral agreement with Canada to expand labour mobility for skilled workers."
+      ],
+      "source_links": [
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "State House seeks Sh8.42 billion budget boost for renovations, equipment and operations",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNdHJ0bnAtZ0t5WXJJTzNGN3BLdGtSQ3psbUhBbElqZWREVmJGUlNUU3JCTXp4MmVQZXNfVjVTQTY1a00wS1VuVnpyZ1pZRHdmNWp5NzhoZDd5SnNWSlZ1ME1PYmFlRjQ0SDY0ZUh1N016M3d3ZV9sbU5ydGU1RzUwUUVLT0VZVGZ3QkRRM3duQVlpWldSeW9NUTE2clRON2d0bnd6N0MyWWtIeXFCR0RkSlZnMUltWmRTcGVIZVBROXZmS1VIQnJyTmkyWk8?oc=5",
+          "published": "2026-11-25"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "The proposed ceiling for the FY 2027/28, as per the 2027 BPS, is Sh15,138.6 million, against a requirement of Sh23,565.6 million, resulting in a funding gap of Sh8,427.0 million",
+          "speaker": "Katoo",
+          "context": "State House Nairobi. \"The proposed ceiling for the FY 2027/28, as per the 2027 BPS, is Sh15,138.6 million, against a requirement of Sh23,565.6 million, resulting in a funding gap of Sh8,427.0 million,\" Katoo said.",
+          "outlet": "Pulse Kenya",
+          "link": "https://www.pulse.co.ke/story/state-house-seeks-extra-ksh8-4-billion-budget-2026112603225126909"
+        },
+        {
+          "text": "In normal times, that sort of district is relatively safe",
+          "speaker": "Justin Levitt",
+          "context": "\"In normal times, that sort of district is relatively safe,\" said Justin Levitt, a professor at the Loyola Law School in Los Angeles who runs the \"All About Redistricting\" website.",
+          "outlet": "PBS",
+          "link": "https://www.pbs.org/newshour/politics/trump-backed-redistricting-sought-a-midterm-edge-for-republicans-it-didnt-work"
+        },
+        {
+          "text": "It's foolish to presume that the electorate in one year is going to look like the electorate in another in a time of radical swings in public opinion",
+          "speaker": "Levitt",
+          "context": "\"It's foolish to presume that the electorate in one year is going to look like the electorate in another in a time of radical swings in public opinion,\" Levitt said. \"I think it is likely that some line-drawers got cocky.\"",
+          "outlet": "PBS",
+          "link": "https://www.pbs.org/newshour/politics/trump-backed-redistricting-sought-a-midterm-edge-for-republicans-it-didnt-work"
+        },
+        {
+          "text": "I've worked across the aisle. I've delivered results for my community, and they spent $26 million trying to beat me",
+          "speaker": "Moskowitz",
+          "context": "\"I've worked across the aisle. I've delivered results for my community, and they spent $26 million trying to beat me,\" Moskowitz said after his victory in Florida's 25th Congressional District. \"They lit that money on fire tonight.\"",
+          "outlet": "PBS",
+          "link": "https://www.pbs.org/newshour/politics/trump-backed-redistricting-sought-a-midterm-edge-for-republicans-it-didnt-work"
+        },
+        {
+          "text": "It's really tough to pick a political model that accurately shows you who's likely to show up in 2028",
+          "speaker": "Levitt",
+          "context": "\"It's really tough to pick a political model that accurately shows you who's likely to show up in 2028,\" Levitt said.",
+          "outlet": "PBS",
+          "link": "https://www.pbs.org/newshour/politics/trump-backed-redistricting-sought-a-midterm-edge-for-republicans-it-didnt-work"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 10,
+        "fresh": 9,
+        "voice": 10,
+        "craft": 10,
+        "picture": 8,
+        "hold": 10,
+        "demand": 10,
+        "action": 10,
+        "fair": 9,
+        "impact": 10,
+        "human": 10,
+        "avg": 9.5,
+        "note": "exceptional post meeting all desk and beat requirements perfectly."
+      },
+      "drafted_at": "2026-11-26T06:56:55.385092+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126m-r2-photo.jpg",
+      "photo_credit": "Photo: Pulse Kenya · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Pulse Kenya",
+      "photo_source": "https://www.pulse.co.ke/story/state-house-seeks-extra-ksh8-4-billion-budget-2026112603225126909",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126m-r2-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126m-r2-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Pulse Kenya",
+          "title": "State House Seeks Extra KSh8.4 Billion for Furniture, Renovations"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Gives Progress Update on Nairobi-Mombasa Expressway Project"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Reveals Planned Changes in November-December Fuel Prices"
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1822,
+      "auto": true,
+      "decided_at": "2026-11-26T07:08:55.799784+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari za leo, mwananchi wa Kenya on Record. Wiki hii tunamulikia ile makubaliano mapya kati ya Kenya na Ujerumani kuhusu visa na kazi.\n\nSerikali zetu mbili zimeweka mikakati ya kupunguza muda wa kusubiri visa za Ujerumani. Hii inamaanisha kwamba vijana wetu walio na ujuzi, kuanzia wataalamu wa afya, mafundi, hadi wataalamu wa IT, sasa wana njia rahisi na ya haraka zaidi ya kupata ajira nje ya nchi kupitia njia halali.\n\nKwenye upande wa uwajibikaji, hii ni habari njema lakini pia inatuhitaji kuwa waangalifu. Tunawahimiza vijana wetu kutumia njia rasmi pekee na kuepuka matapeli wanaowahidi kazi za mkato bila kufuata taratibu. Serikali lazima ihakikishe kuwa mikataba hii inalinda haki za Wakenya kule Ujerumani, na mishahara inalingana na kazi wanazofanya. Tujipange, tuweke vyeti vyetu sawa, na tufuate sheria.\n\n[Kiswahili Summary]\nKwa kifupi: Serikali za Kenya na Ujerumani zimekubaliana kupunguza muda wa kusubiri visa na kuongeza nafasi za ajira kwa Wakenya wenye ujuzi. Hakikisha unatumia njia rasmi pekee ili kuepuka ulaghai unapotafuta kazi nje ya nchi.",
-    "voice_note": "Sasa wakuu! Habari njema kutoka Kenya on Record wiki hii. Kenya na Ujerumani zimeafikiana kupunguza muda wa kusubiri visa na kufungua milango zaidi ya ajira kwa Wakenya wenye ujuzi. Kama wewe ni mtaalamu wa afya au fundi stadi, hii ni nafasi yako. Lakini kumbuka, pitia njia rasmi pekee. Usikubali kutapeliwa na mawakala feki wa mtaani wanaokuahidi kazi za mkato. Fuata sheria, linda haki zako.",
-    "sms": "Kenya na Ujerumani zimekubaliana kupunguza muda wa visa na kuongeza nafasi za kazi. Tumia njia rasmi pekee na uepuke matapeli wa ajira za nje. Usiibiwe!",
-    "reels": "[Visual: A clean split screen showing a young Kenyan professional looking at a passport, transitioning to a graphic of the Kenyan and German flags.]\n\nVoice-over: Vijana, habari ndio hiyo! Visa ya Ujerumani sasa inapatikana kwa haraka na nafasi za kazi zimeongezeka kwa Wakenya wenye ujuzi. Lakini kumbuka, usikimbilie mawakala wa mtaani; tumia njia rasmi za serikali pekee. Usiibiwe, fuata utaratibu sahihi!"
+    "radio": "Good evening. This is Kenya on Record. Budget documents submitted to Parliament indicate that the Executive has requested an additional 8.42 billion shillings for the renovation and refurbishment of State House and regional State Lodges under the latest supplementary budget. According to government expenditure estimates, these funds are designated to modernize aging infrastructure, upgrade security systems, and maintain diplomatic hosting standards. However, the proposal comes at a time when citizens and civil society groups are voicing strong concerns over the high cost of living, recent taxation measures, and government commitments to fiscal consolidation. Analysts and parliamentary budget committees have questioned whether such capital-intensive expenditures align with pressing national needs in education, debt obligations, and public healthcare. The National Assembly is scheduled to debate these allocations before any final disbursements are approved, giving lawmakers a key role in setting expenditure priorities.\n\nKwa ufupi: Ripoti za bajeti bungeni zinaonyesha Ikulu imeomba nyongeza ya shilingi bilioni nane nukta nne kwa ajili ya ukarabati. Ingawa serikali inataja uboreshaji wa usalama na majengo, wananchi na wachambuzi wanahoji matumizi haya wakati ambapo mzigo wa kodi na gharama ya maisha bado ni changamoto kubwa.",
+    "voice_note": "Habari zenu, here is your Kenya on Record brief for the week. Parliamentary records show that State House has requested an extra 8.42 billion shillings in the supplementary budget for renovations across State House Nairobi and regional lodges. The government's justification outlines necessary structural repairs and enhanced security installations. At the same time, this proposal has sparked serious discussion among taxpayers and civic groups, given the tight economic climate and increasing tax demands on ordinary households and small businesses. Parliamentary committees now have the responsibility to scrutinize these figures, assess whether the expense is justified, or redirect resources to critical public services. Keep an eye on how your representative engages with this supplementary budget debate.",
+    "sms": "Usiibiwe: Track how MPs vote on the Sh8.42bn State House budget request. Public funds must reflect real public priorities. Demand fiscal accountability.",
+    "reels": "Parliament is reviewing a supplementary budget request seeking 8.42 billion shillings for State House renovations. Official reports cite critical structural repairs and security upgrades. However, with taxpayers feeling the squeeze of high living costs, questions are mounting over national spending priorities. Parliament holds the power to approve, amend, or reject these estimates. Will your MP interrogate the figures? Follow Kenya on Record to stay informed."
   },
   "spend_usd": 0.0
 }
