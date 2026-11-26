@@ -46,6 +46,28 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-26 09:35 EAT (cloud side): no post expires (2c8ccbf, caad97c)
+James: "no post should expire". He chose "fix it, then post": an untapped post is rewritten until a version passes
+every check, then it goes out by itself, and a post that still fails never goes out.
+- **Political posts, and a person's face beside their own story,** now go out by themselves once they pass every check.
+  A face beside an allegation still never does.
+- **News slots** get up to 5 versions. The writer is told what was wrong with the last one (`fix`).
+- **Planned posts** that the checks held, or that are still untapped 90 min before their slot, are rewritten by the
+  hourly news runs (`fix_planned`):
+  - up to 3 versions, at most one per run;
+  - none while the series has no material.
+  Until now held planned posts waited for a manual `redo`.
+- **Cards no longer expire:**
+  - Replaced ones close as `replaced`.
+  - Promise Tracker and scorecard posts wait for a person.
+  - Only all-versions-failed or 36 h late posts close as `dropped`, with one line to James.
+- **Fact bank:** when all facts are resting, the longest-rested one returns after 28 days. All 17 had run out, which
+  blocked the Saturday showcase.
+- **Live on the 09:02 run:** d6-kenya was rewritten twice in one minute and both versions failed for having no fact,
+  which is why the fixes above were added. d6-kenya-r3 is planned again.
+- **Browser:** Meta for Developers is open in the built-in browser at the Meta sign-in page, waiting for James to sign
+  in before he renews the token.
+
 ### 2026-11-25 17:10 EAT (cloud side): "what failed"
 - **GitHub Actions:** no failed run since 22 Nov.
 - **What did fail:**
