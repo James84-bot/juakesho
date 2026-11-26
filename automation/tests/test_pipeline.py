@@ -2251,6 +2251,19 @@ class CatchUpTests(TempWeeks):
         with mock.patch.object(pl, "now", lambda: self.at(20, 30)):
             self.assertEqual(pl.stuck_hot("2026-W47"), [])                  # its time has passed
 
+    def test_a_writer_outage_does_not_stop_the_run(self):
+        # 25 Nov 19:01: every free writer was busy and the whole news run failed: nothing rendered, sent or published
+        done = []
+
+        def busy(*a, **k):
+            raise RuntimeError("no free writer answered: Gemini high demand; Groq too big; OpenRouter 429")
+        with mock.patch.object(pl, "now", lambda: self.at(10, 0)), mock.patch.object(pl, "draft", busy), \
+                mock.patch.object(pl, "render_week", lambda *a: done.append("render")), \
+                mock.patch.object(pl, "ask", lambda *a, **k: done.append("ask")), \
+                mock.patch.object(pl, "auto_approve", lambda **k: done.append("approve")):
+            pl.main(["hot", "--due", "--mock", "--dry-run"])
+        self.assertEqual(done, ["render", "ask", "approve"])
+
     def test_hot_due_plans_every_waiting_edition(self):
         with mock.patch.object(pl, "now", lambda: self.at(10, 0)), \
                 mock.patch.object(pl, "draft", lambda *a, **k: None), mock.patch.object(pl, "render_week", lambda *a: None), \

@@ -3850,7 +3850,14 @@ def _main(argv: list[str] | None = None) -> int:
         if a.command == "hot" and not newsroom:   # a day run of a brand with no news: only what is due soon (the chart)
             import mtaa
             horizon = max(mtaa.FRESH_LEAD.values())
-        draft(label, mock=a.mock, horizon=horizon)
+        try:
+            draft(label, mock=a.mock, horizon=horizon)
+        except RuntimeError as e:
+            # 25 Nov 19:01: every free writer was busy or out of quota and the whole run failed, so nothing was
+            # rendered, sent or published. A news run carries on: the posts stay planned and the next run writes them.
+            if a.command != "hot" or "no free writer answered" not in str(e):
+                raise
+            log(f"::warning::no free writer answered this run; the posts stay planned for the next run ({str(e)[:200]})")
         if a.command == "hot" and not a.mock and not a.dry_run:
             try:   # a held news post must not cost the slot: write another on a different story
                 retry_held_hot(label)
