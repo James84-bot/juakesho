@@ -3765,7 +3765,7 @@
           "link": "https://www.contractoruk.com/news/government-substitution-rules-ir35-contractors"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": []
@@ -3805,7 +3805,14 @@
       "auto": true,
       "decided_at": "2026-11-26T16:16:41.593534+03:00",
       "photo_checked": "2026-11-26T17:03:42.699013+03:00",
-      "photo_fit": "2026-11-26T17:03:42.699021+03:00"
+      "photo_fit": "2026-11-26T17:03:42.699021+03:00",
+      "published_at": "2026-11-26T20:33:09.006354+03:00",
+      "ig_id": "18126502681730849",
+      "fb_id": "915397941660751",
+      "story_id": "18100449356124152",
+      "fb_story_id": "1193771429882632",
+      "yt_id": "Lfw3M17Txhc",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w48-hot-1126b1642",
