@@ -46,6 +46,12 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-26 14:45 EAT (local side): Meta token confirmed; one backup key missing
+- **metacheck --dry-run (run 45812014210, 14:37):** ✅ Page, ✅ @kenyaonrecord, ✅ linked, ✅ "a page token, every
+  permission posting needs". Instagram shows the four Reels from 14:29-14:34.
+- **Backup writer keys:** `GROQ_API_KEY` and `OPENROUTER_API_KEY` are secrets (since 22 Nov). `MISTRAL_API_KEY` is
+  not set yet. That part of the open task is still waiting on James.
+
 ### 2026-11-26 14:40 EAT (cloud side): Meta is back
 - **New token:** James set `META_ACCESS_TOKEN` and `META_PAGE_ID` with `C:\Users\Admin\Documents\renew-meta-token-checked.ps1`.
   - That script is a checked copy of the local side's script; the original is untouched.
