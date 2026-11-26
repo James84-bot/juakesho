@@ -2381,7 +2381,7 @@
           "link": "https://www.livescore.com/en/news/football/afcon/afcon-u-turn-caf-scrap-controversial-four-year-plan-to-reinstate-traditional-biennial-schedule-goal/"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -2440,7 +2440,12 @@
       "yt_tried": "2026-11-25T15:32:39.053666+03:00",
       "yt_id": "d5iBW7sl1ys",
       "tt_done": "2026-11-25T15:32:41.627811+03:00",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "published_at": "2026-11-26T14:29:15.383011+03:00",
+      "ig_id": "18118798772588032",
+      "fb_id": "1510953077607721",
+      "story_id": "18145872298718378",
+      "fb_story_id": "2023320154933040"
     },
     {
       "id": "2026-w48-hot-1125e",
@@ -2631,7 +2636,7 @@
           "link": "https://capitalfm.africa/iebc-denies-clearing-gachagua-for-2027-presidential-race/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -2687,7 +2692,12 @@
       "yt_tried": "2026-11-25T17:02:30.954721+03:00",
       "yt_id": "ftFs7m2h0WE",
       "tt_done": "2026-11-25T17:02:33.210958+03:00",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "published_at": "2026-11-26T14:30:59.030029+03:00",
+      "ig_id": "18119460740593098",
+      "fb_id": "1445253174255653",
+      "story_id": "18109147832199497",
+      "fb_story_id": "1594345089386058"
     },
     {
       "id": "2026-w48-hot-1125b1903",
@@ -2927,7 +2937,7 @@
         }
       ],
       "quotes": [],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 4.9/10. Ground this in concrete numbers from the agreement and replace the generic Nairobi skyline with a specific foreign employment bureau scene."
@@ -2976,7 +2986,12 @@
       "yt_tried": "2026-11-26T09:49:29.904277+03:00",
       "yt_id": "2o-RR6MRLYY",
       "tt_done": "2026-11-26T09:49:31.528990+03:00",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "published_at": "2026-11-26T14:32:32.929041+03:00",
+      "ig_id": "17942016771404573",
+      "fb_id": "1684307746812929",
+      "story_id": "18117721553161474",
+      "fb_story_id": "1786718712387697"
     },
     {
       "id": "2026-w48-hot-1126m-r2",
@@ -3054,7 +3069,7 @@
           "link": "https://www.pbs.org/newshour/politics/trump-backed-redistricting-sought-a-midterm-edge-for-republicans-it-didnt-work"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -3113,7 +3128,12 @@
       "yt_tried": "2026-11-26T09:49:34.912505+03:00",
       "yt_id": "-We48qbepUs",
       "tt_done": "2026-11-26T09:49:36.955803+03:00",
-      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/",
+      "published_at": "2026-11-26T14:34:34.357468+03:00",
+      "ig_id": "17869422330679563",
+      "fb_id": "2515983165593479",
+      "story_id": "18005532123040821",
+      "fb_story_id": "4653666114905661"
     },
     {
       "id": "2026-w48-hot-1126",
