@@ -251,7 +251,7 @@
         "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV01iZkdicWpHa0VoZUR4MGtNNnhmNl9CN2w4S0l4RGZrRzd2c3JkZ2JmOVJCNzhGWEdtVVBsRU85eTVPTmEtMG5JenZ0TENxNk1qeTFkckM3OXktdWpJNk1uWWI1bUFtNnY3R1prX1pxdWFHUW9EQ3NQNGZlbkRRTkFrY1dmQUE5S2JQWFN6Q0pNWjNpUWZxVA?oc=5",
         "published": "2026-11-21"
       },
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": []
@@ -290,7 +290,14 @@
       "tg_msg": 1501,
       "fresh_checked": "2026-11-25T15:23:32.832195+03:00",
       "auto": true,
-      "decided_at": "2026-11-26T14:52:22.917826+03:00"
+      "decided_at": "2026-11-26T14:52:22.917826+03:00",
+      "published_at": "2026-11-26T19:32:29.489235+03:00",
+      "ig_id": "17920967100545415",
+      "fb_id": "1373026594784263",
+      "story_id": "17954604231356230",
+      "fb_story_id": "1822339043016036",
+      "yt_id": "D1y6CWTx6XI",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w48-d5-straight",
