@@ -3552,7 +3552,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "dropped",
       "guard": {
         "errors": [
           "beats[0] is too long: max 12 words / 72 characters",
@@ -3591,7 +3591,8 @@
       "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "tg_msg": 1854,
       "photo_checked": "2026-11-26T10:01:45.052796+03:00",
-      "photo_fit": "2026-11-26T10:01:45.052812+03:00"
+      "photo_fit": "2026-11-26T10:01:45.052812+03:00",
+      "closed_why": "every version failed a check (failed a guard rule)"
     },
     {
       "id": "2026-w48-hot-1126a",
@@ -3791,7 +3792,9 @@
       "reel": true,
       "tg_msg": 1880,
       "auto": true,
-      "decided_at": "2026-11-26T16:16:41.593534+03:00"
+      "decided_at": "2026-11-26T16:16:41.593534+03:00",
+      "photo_checked": "2026-11-26T17:03:42.699013+03:00",
+      "photo_fit": "2026-11-26T17:03:42.699021+03:00"
     },
     {
       "id": "2026-w48-hot-1126b1642",
@@ -3870,7 +3873,7 @@
           "link": "https://www.skysports.com/football/news/13616792/leny-yoro-red-card-written-reasons-why-manchester-united-defenders-red-card-at-liverpool-was-overturned-published-by-the-fa"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -3912,7 +3915,14 @@
       "reel": true,
       "tg_msg": 1884,
       "auto": true,
-      "decided_at": "2026-11-26T16:55:26.656258+03:00"
+      "decided_at": "2026-11-26T16:55:26.656258+03:00",
+      "published_at": "2026-11-26T17:04:29.233149+03:00",
+      "ig_id": "18137332915737125",
+      "fb_id": "990603480339759",
+      "story_id": "18404189770200291",
+      "fb_story_id": "1816013672954425",
+      "yt_id": "PUtNxEIifWA",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
