@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T14:57:57.545957+03:00",
+  "updated": "2026-11-26T16:07:03.013327+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -31,9 +31,9 @@
       "id": "2026-w45-hot-1108m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 11.7,
+      "score": 11.6,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 129,
+      "reach": 131,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -41,71 +41,71 @@
       "avg_watch_s": 4.3
     },
     {
-      "id": "2026-w44-hot-1026b1432",
-      "series": "sauti",
+      "id": "2026-w46-d4-money",
+      "series": "money",
       "lane": "everyone",
-      "score": 9.3,
-      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
-      "reach": 24,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 6.9
-    },
-    {
-      "id": "2026-w44-hot-1101",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.3,
-      "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
-      "reach": 24,
+      "score": 9.2,
+      "opening": "Kenyan banks lost Sh1.9 billion to fraud according to People Daily.",
+      "reach": 26,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.9
+      "avg_watch_s": 3.6
+    },
+    {
+      "id": "2026-w45-hot-1103e",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 8.6,
+      "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
+      "reach": 48,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 3,
+      "avg_watch_s": 6.4
     }
   ],
   "bottom": [
-    {
-      "id": "2026-w47-hot-1120b0841",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "reach": 26,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 5.6
-    },
-    {
-      "id": "2026-w47-hot-1120",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Nairobi tech funding fell to a 6-year low this year.",
-      "reach": 30,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 5.8
-    },
     {
       "id": "2026-w47-hot-1120a",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya coach Benni McCarthy demands overdue payments.",
-      "reach": 16,
+      "reach": 19,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 5.3
+    },
+    {
+      "id": "2026-w47-hot-1122a",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "CAF names Nairobi as Kenya's sole host city for AFCON 2027.",
+      "reach": 44,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 5.9
+    },
+    {
+      "id": "2026-w48-hot-1125a",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.2
     }
   ],
   "all": [
@@ -139,40 +139,14 @@
       "id": "2026-w45-hot-1108m",
       "series": "sauti",
       "lane": "everyone",
-      "score": 11.7,
+      "score": 11.6,
       "opening": "Safaricom asks for old phones, but recycling fell by 34%.",
-      "reach": 129,
+      "reach": 131,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 2,
       "avg_watch_s": 4.3
-    },
-    {
-      "id": "2026-w44-hot-1026b1432",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.3,
-      "opening": "Linda Mwananchi condemns the abduction of Twaha Mwaipaya.",
-      "reach": 24,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 3,
-      "avg_watch_s": 6.9
-    },
-    {
-      "id": "2026-w44-hot-1101",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 9.3,
-      "opening": "A court ordered a Nairobi Water worker to refund Sh7.5 million.",
-      "reach": 24,
-      "saved": 1,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 5.9
     },
     {
       "id": "2026-w46-d4-money",
@@ -204,14 +178,14 @@
       "id": "2026-w47-hot-1120e",
       "series": "sauti",
       "lane": "everyone",
-      "score": 8.3,
+      "score": 8.2,
       "opening": "High Court found CS Mbadi guilty of contempt, Citizen Digital reports.",
-      "reach": 62,
+      "reach": 64,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.1
+      "avg_watch_s": 4.4
     },
     {
       "id": "2026-w47-d5-straight-r3",
@@ -219,25 +193,12 @@
       "lane": "hustle",
       "score": 7.5,
       "opening": "A fake front page claims Matiang'i leads polls.",
-      "reach": 98,
+      "reach": 100,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.3
-    },
-    {
-      "id": "2026-w44-hot-1027m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 6.4,
-      "opening": "KPC drops cases blocking Sh3 billion for Makueni oil spill victims.",
-      "reach": 14,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 2,
-      "avg_watch_s": 8.5
+      "avg_watch_s": 3.4
     },
     {
       "id": "2026-w46-hot-1110",
@@ -256,14 +217,14 @@
       "id": "2026-w47-hot-1119m-r2",
       "series": "sauti",
       "lane": "everyone",
-      "score": 5.7,
+      "score": 5.6,
       "opening": "Marathon champion Peres Jepchirchir got a three-year doping ban.",
-      "reach": 52,
+      "reach": 54,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 2,
-      "avg_watch_s": 3.6
+      "avg_watch_s": 3.7
     },
     {
       "id": "2026-w45-hot-1108b2133",
@@ -271,7 +232,7 @@
       "lane": "everyone",
       "score": 5.5,
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
-      "reach": 62,
+      "reach": 63,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -318,32 +279,6 @@
       "avg_watch_s": 4.8
     },
     {
-      "id": "2026-w44-hot-1026",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.1,
-      "opening": "Nairobi Water has shut down piped supply for three days.",
-      "reach": 25,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 5.7
-    },
-    {
-      "id": "2026-w44-hot-1027b1358",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.1,
-      "opening": "EACC recovers Sh40 million in public land in Kakamega.",
-      "reach": 22,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 3.2
-    },
-    {
       "id": "2026-w45-hot-1106m-r2",
       "series": "sauti",
       "lane": "everyone",
@@ -370,30 +305,17 @@
       "avg_watch_s": 3.7
     },
     {
-      "id": "2026-w44-d2-kenya-r2",
-      "series": "kenya",
-      "lane": "young_pro",
-      "score": 3.0,
-      "opening": "A mugumo fig in the Aberdares was a secret message drop.",
-      "reach": 30,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 4.7
-    },
-    {
-      "id": "2026-w44-d7-glasspoll",
-      "series": "glasspoll",
+      "id": "2026-w47-hot-1118e-r2",
+      "series": "sauti",
       "lane": "everyone",
-      "score": 3.0,
-      "opening": "President Ruto defended selling a 25% stake in Kenya Pipeline.",
-      "reach": 30,
+      "score": 3.1,
+      "opening": "Rigathi Gachagua presented fresh demands to the IEBC chair.",
+      "reach": 19,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 5.6
+      "avg_watch_s": 2.9
     },
     {
       "id": "2026-w45-hot-1107",
@@ -427,12 +349,12 @@
       "lane": "everyone",
       "score": 3.0,
       "opening": "Antivenom treatment costs up to Sh12,000 in local clinics.",
-      "reach": 29,
+      "reach": 30,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 6.9
+      "avg_watch_s": 7.0
     },
     {
       "id": "2026-w45-hot-1103m",
@@ -492,7 +414,7 @@
       "lane": "hustle",
       "score": 2.6,
       "opening": "The Thika road runs 50 kilometres from Nairobi.",
-      "reach": 89,
+      "reach": 91,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -513,43 +435,17 @@
       "avg_watch_s": 3.5
     },
     {
-      "id": "2026-w44-d1-money-r2",
-      "series": "money",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Super petrol now costs Sh226.96 a litre in Nairobi.",
-      "reach": 7,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 5.3
-    },
-    {
-      "id": "2026-w44-hot-1101m",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "KRA plans to tax mobile phones when users activate a SIM card.",
-      "reach": 20,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 8.0
-    },
-    {
       "id": "2026-w45-d7-glasspoll",
       "series": "glasspoll",
       "lane": "everyone",
       "score": 0.0,
       "opening": "MPs passed a Bill giving party bosses power over MCA nominations.",
-      "reach": 25,
+      "reach": 26,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.6
+      "avg_watch_s": 2.8
     },
     {
       "id": "2026-w45-hot-1102-r2",
@@ -596,12 +492,12 @@
       "lane": "campus",
       "score": 0.0,
       "opening": "Viral TikTok ads promise guaranteed jobs abroad.",
-      "reach": 9,
+      "reach": 10,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.4
+      "avg_watch_s": 5.0
     },
     {
       "id": "2026-w46-hot-1111b1557",
@@ -609,12 +505,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya discharged its last Ebola patient this week.",
-      "reach": 18,
+      "reach": 19,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.7
+      "avg_watch_s": 3.8
     },
     {
       "id": "2026-w46-hot-1112m",
@@ -622,12 +518,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "President Ruto ordered a full review of school capitation today.",
-      "reach": 16,
+      "reach": 18,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 10.3
+      "avg_watch_s": 9.3
     },
     {
       "id": "2026-w46-hot-1115",
@@ -635,12 +531,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Recruitment agencies face mandatory vetting under new Saudi job rules.",
-      "reach": 19,
+      "reach": 21,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 6.3
+      "avg_watch_s": 6.5
     },
     {
       "id": "2026-w47-d1-usiibiwe",
@@ -674,12 +570,12 @@
       "lane": "diaspora",
       "score": 0.0,
       "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
-      "reach": 26,
+      "reach": 30,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.9
+      "avg_watch_s": 3.1
     },
     {
       "id": "2026-w47-hot-1117",
@@ -692,7 +588,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.1
+      "avg_watch_s": 3.0
     },
     {
       "id": "2026-w47-hot-1118-r2",
@@ -700,25 +596,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Treasury says planned PAYE tax cuts for January hang in the balance.",
-      "reach": 17,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 2.6
-    },
-    {
-      "id": "2026-w47-hot-1118e-r2",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Rigathi Gachagua presented fresh demands to the IEBC chair.",
       "reach": 18,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.8
+      "avg_watch_s": 2.5
     },
     {
       "id": "2026-w47-hot-1118m",
@@ -739,12 +622,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
-      "reach": 28,
+      "reach": 29,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.2
+      "avg_watch_s": 4.0
     },
     {
       "id": "2026-w47-hot-1119b1743",
@@ -752,12 +635,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
-      "reach": 19,
+      "reach": 24,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.8
+      "avg_watch_s": 5.3
     },
     {
       "id": "2026-w47-hot-1120m",
@@ -765,7 +648,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya will distribute 10.79 million mosquito nets across 18 counties.",
-      "reach": 47,
+      "reach": 58,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -778,12 +661,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "reach": 26,
+      "reach": 28,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.6
+      "avg_watch_s": 5.4
     },
     {
       "id": "2026-w47-hot-1120",
@@ -791,12 +674,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Nairobi tech funding fell to a 6-year low this year.",
-      "reach": 30,
+      "reach": 34,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.8
+      "avg_watch_s": 6.0
     },
     {
       "id": "2026-w47-hot-1120a",
@@ -804,12 +687,38 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya coach Benni McCarthy demands overdue payments.",
-      "reach": 16,
+      "reach": 19,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 5.3
+    },
+    {
+      "id": "2026-w47-hot-1122a",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "CAF names Nairobi as Kenya's sole host city for AFCON 2027.",
+      "reach": 44,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 5.9
+    },
+    {
+      "id": "2026-w48-hot-1125a",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
+      "reach": 1,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.2
     }
   ],
   "youtube": [
@@ -833,7 +742,7 @@
       "id": "2026-w45-hot-1103m",
       "series": "sauti",
       "opening": "Kenyan women now have 3 children on average, KNBS reports.",
-      "views": 991,
+      "views": 992,
       "likes": 6,
       "comments": 0
     },
@@ -849,7 +758,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 523,
+      "views": 524,
       "likes": 2,
       "comments": 0
     },
@@ -881,7 +790,7 @@
       "id": "2026-w47-hot-1120b0841",
       "series": "sauti",
       "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "views": 417,
+      "views": 422,
       "likes": 6,
       "comments": 0
     },
@@ -921,7 +830,7 @@
       "id": "2026-w47-hot-1119m-r2",
       "series": "sauti",
       "opening": "Marathon champion Peres Jepchirchir got a three-year doping ban.",
-      "views": 244,
+      "views": 245,
       "likes": 3,
       "comments": 0
     },
@@ -929,7 +838,7 @@
       "id": "2026-w45-hot-1106m-r2",
       "series": "sauti",
       "opening": "Employers must remit employee levies by the 9th day of each month.",
-      "views": 232,
+      "views": 233,
       "likes": 0,
       "comments": 0
     },
@@ -1014,18 +923,18 @@
       "comments": 0
     },
     {
-      "id": "2026-w46-hot-1114m",
-      "series": "sauti",
-      "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
-      "views": 115,
+      "id": "2026-w47-d6-kenya",
+      "series": "kenya",
+      "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
+      "views": 117,
       "likes": 0,
       "comments": 0
     },
     {
-      "id": "2026-w47-d6-kenya",
-      "series": "kenya",
-      "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
-      "views": 114,
+      "id": "2026-w46-hot-1114m",
+      "series": "sauti",
+      "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
+      "views": 115,
       "likes": 0,
       "comments": 0
     },
@@ -1126,6 +1035,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w48-hot-1125a",
+      "series": "sauti",
+      "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
+      "views": 37,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w46-hot-1110",
       "series": "sauti",
       "opening": "KRA's new 15% tax directive hits our pockets this week.",
@@ -1169,7 +1086,7 @@
       "id": "2026-w47-hot-1120m",
       "series": "sauti",
       "opening": "Kenya will distribute 10.79 million mosquito nets across 18 counties.",
-      "views": 9,
+      "views": 11,
       "likes": 0,
       "comments": 0
     },
@@ -1181,6 +1098,5 @@
       "likes": 0,
       "comments": 0
     }
-  ],
-  "youtube_updated": "2026-11-26T06:36:43.302529+03:00"
+  ]
 }

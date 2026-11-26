@@ -1,6 +1,29 @@
 {
-  "fetched": "2026-11-26T11:42:04.819624+00:00",
+  "fetched": "2026-11-26T13:07:18.227689+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "muhoozi kainerugaba",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Muhoozi Kainerugaba: Ugandan president's son angers DR Congo with social media posts",
+          "url": "https://www.bbc.com/news/articles/cwz0k90rgpm8o",
+          "source": "BBC"
+        },
+        {
+          "title": "Muhoozi remarks spark outrage in DR Congo",
+          "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/muhoozi-remarks-spark-outrage-in-dr-congo-5684850",
+          "source": "The EastAfrican"
+        },
+        {
+          "title": "DR Congo summons Uganda’s top diplomat over Gen Muhoozi Kainerugaba’s social media posts",
+          "url": "https://eastleighvoice.co.ke/democratic-republic-of-congo/428001/dr-congo-summons-ugandas-top-diplomat-over-gen-muhoozi-kainerugabas-social-media-posts",
+          "source": "The Eastleigh Voice"
+        }
+      ],
+      "civic": true
+    },
     {
       "geo": "KE",
       "title": "association of african air forces",
@@ -25,53 +48,30 @@
     },
     {
       "geo": "KE",
-      "title": "kenya power",
-      "traffic": "2000+",
+      "title": "m-pesa",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Kenya Power plans short-term electricity credit for prepaid customers",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/kenya-power-plans-short-term-electricity-credit-for-prepaid-customers--5685046",
+          "title": "Pesalink takes on Lipa na M-PESA with till numbers, starting at Quickmart",
+          "url": "https://tech-ish.com/2026/11/24/pesalink-takes-on-lipa-na-m-pesa-with-till-numbers-starting-at-quickmart/",
+          "source": "Techish Kenya"
+        },
+        {
+          "title": "Pesalink attains basic inclusivity status as it takes on M-Pesa with till, paybill services",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/pesalink-attains-basic-inclusivity-status-as-it-takes-on-m-pesa-5681770",
           "source": "Business Daily"
         },
         {
-          "title": "Kenya Power invites lenders to offer customers electricity tokens on credit",
-          "url": "https://www.the-star.co.ke/news/2026-11-26-kplc-seeks-firms-to-offer-emergency-loans-for-tokens",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Kenya Power To Offer Customers Electricity Tokens On Loan: How It Will Work",
-          "url": "https://thekenyatimes.com/business/kenya-power-to-offer-customers-electricity-tokens-on-loan-how-it-will-work/",
-          "source": "The Kenya Times"
+          "title": "AfricaNenda Foundation launches State of Inclusive Payments in Africa 2026",
+          "url": "https://www.finextra.com/newsarticle/48810/africanenda-foundation-launches-state-of-inclusive-payments-in-africa-2026",
+          "source": "Finextra Research"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "muhoozi kainerugaba",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Muhoozi Kainerugaba: Ugandan president's son angers DR Congo with social media posts",
-          "url": "https://www.bbc.com/news/articles/cwz0k90rgpm8o",
-          "source": "BBC"
-        },
-        {
-          "title": "Muhoozi remarks spark outrage in DR Congo",
-          "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/muhoozi-remarks-spark-outrage-in-dr-congo-5684850",
-          "source": "The EastAfrican"
-        },
-        {
-          "title": "DR Congo summons Uganda’s top diplomat over Gen Muhoozi Kainerugaba’s social media posts",
-          "url": "https://eastleighvoice.co.ke/democratic-republic-of-congo/428001/dr-congo-summons-ugandas-top-diplomat-over-gen-muhoozi-kainerugabas-social-media-posts",
-          "source": "The Eastleigh Voice"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "arsenal news",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Viktor Gyokeres has given Mikel Arteta a big decision to make against Man City",
@@ -84,31 +84,31 @@
           "source": "London Evening Standard"
         },
         {
-          "title": "Viktor Gyokeres says Arsenal focused on game, not potential Man City sanctions",
-          "url": "https://www.essexcountynews.co.uk/sport/national/26762024.viktor-gyokeres-says-arsenal-focused-game-not-potential-man-city-sanctions/",
-          "source": "www.essexcountynews.co.uk"
+          "title": "News | Viktor Gyokeres insists Arsenal won't be distracted by Man City's financial case",
+          "url": "https://vodacomsoccer.com/news/viktor-gyokeres-insists-arsenal-wont-be-distracted-by-man-citys-financial-case-1",
+          "source": "Vodacom Soccer"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "warriors vs kings",
-      "traffic": "500+",
+      "title": "víctor muñoz",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Licensable picture: NBA: Sacramento Kings vs Golden State Warriors in San Francisco",
-          "url": "https://www.reutersconnect.com/item/nba-sacramento-kings-vs-golden-state-warriors-in-san-francisco/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwTFZNVTlM",
-          "source": "Reuters Connect"
+          "title": "Iraola también es candidato",
+          "url": "https://as.com/futbol/champions/iraola-tambien-es-candidato-f202611-n/",
+          "source": "Diario AS"
         },
         {
-          "title": "Kings Warriors Basketball",
-          "url": "https://www.couriernews.com/sports/kings-warriors-basketball/image_9d8adafb-a12b-50ec-af38-ffb6eaf6fae4.html",
-          "source": "couriernews.com"
+          "title": "Víctor Muñoz se retira lesionado en el minuto 42 ante el Brujas",
+          "url": "https://www.tufutbolero.com/novedades/victor-munoz-se-retira-lesionado-en-el-minuto-42-ante-el-bru-d526cf",
+          "source": "Tu Futbolero"
         },
         {
-          "title": "NBA Moneyline Parlay Picks: Our +299 Prediction for Wednesday, November 25",
-          "url": "https://www.actionnetwork.com/nba/nba-moneyline-parlay-picks-our-299-prediction-for-wednesday-november-25",
-          "source": "Action Network"
+          "title": "En vilo por la posible grave lesión de Víctor Muñoz: \"Tenía mucho dolor cuando abandonó el terreno de juego\"",
+          "url": "https://www.sport.es/es/noticias/futbol-internacional/vilo-posible-grave-lesion-victor-136878862",
+          "source": "SPORT"
         }
       ]
     },
@@ -136,6 +136,50 @@
     },
     {
       "geo": "KE",
+      "title": "trail blazers vs spurs",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "NBA: San Antonio Spurs at Portland Trail Blazers",
+          "url": "https://www.reutersconnect.com/item/nba-san-antonio-spurs-at-portland-trail-blazers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NTA2NDA%3D?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+          "source": "Reuters Connect"
+        },
+        {
+          "title": "Blazers overcome Victor Wembanyama’s 44 points, topple Spurs",
+          "url": "https://www.thesportsleader.com/2026/11/25/blazers-overcome-victor-wembanyamas-44-points-topple-spurs/",
+          "source": "KNBR"
+        },
+        {
+          "title": "Damian Lillard scores 29, perfect from the FT line",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-26/damian-lillard-scores-29-perfect-from-the-ft-line",
+          "source": "NBC Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "ntsa",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Crackdown: NTSA to suspend 300,000 driving licences",
+          "url": "https://nation.africa/kenya/news/crackdown-ntsa-to-suspend-300-000-driving-licences-5685066",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "NTSA Announces Mass Suspension of Driving Licences",
+          "url": "https://www.kenyans.co.ke/news/129703-ntsa-boss-announces-planned-suspension-over-300000-driving-licences",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Crackdown: NTSA to suspend 300,000 driving licences",
+          "url": "https://www.the-star.co.ke/news/2026-11-26-ntsa-to-suspend-300000-driving-licences",
+          "source": "The Star, Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "india a vs sri lanka a",
       "traffic": "100+",
       "news": [
@@ -145,14 +189,14 @@
           "source": "Cricbuzz"
         },
         {
+          "title": "IND A vs SL A Live Score, 1st Semi Final Asia Cup Rising Stars: Suryansh falls as India suffer sixth blow",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-sri-lanka-a-1st-semi-final-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-asian-town-cricket-stadium/liveblog/136181967.cms",
+          "source": "The Times of India"
+        },
+        {
           "title": "Vaibhav Sooryavanshi dismissed for 40 off 27 balls against Sri Lanka A in Asia Cup Rising Stars 2026 semifinal",
           "url": "https://sportstar.thehindu.com/cricket/vaibhav-sooryavanshi-score-asia-cup-rising-stars-2026-semifinal-india-a-vs-sri-lanka-a/article71746121.ece",
           "source": "Sportstar"
-        },
-        {
-          "title": "Sony Sports Network, Sony LIV to air India A vs Sri Lanka A semi-final",
-          "url": "https://mediabrief.com/sony-sports-network-sony-liv-to-air-india-a-vs-sri-lanka-a-semi-final/",
-          "source": "MediaBrief"
         }
       ]
     }
@@ -160,14 +204,6 @@
   "dropped": [
     {
       "title": "actor pete edochie",
-      "why": "unsafe: 'dies'"
-    },
-    {
-      "title": "trail blazers vs spurs",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "pastor emmanuel ushindi",
       "why": "unsafe: 'dies'"
     }
   ],
