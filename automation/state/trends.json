@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-26T03:36:47.106571+00:00",
+  "fetched": "2026-11-26T05:41:34.171910+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "kenya power",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Kenya Power explains why it conducts planned power cuts",
+          "url": "https://www.the-star.co.ke/news/2026-11-24-kenya-power-why-we-conduct-planned-power-cuts",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "KPLC Announces Power Interruptions in 6 Counties on Thursday",
+          "url": "https://nairobileo.co.ke/news/article/31702/kplc-announces-power-interruptions-in-6-counties-on-thursday",
+          "source": "Nairobi Leo"
+        },
+        {
+          "title": "Power restored in parts of Kenyan capital after major outage",
+          "url": "https://en.yenisafak.com/world/power-restored-in-parts-of-kenyan-capital-after-major-outage-2972279",
+          "source": "Yeni Safak English"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "losc lille vs bayern munich standings",
@@ -12,17 +34,39 @@
           "source": "Sky Sports"
         },
         {
+          "title": "Successful surgery for Harry Kane",
+          "url": "https://fcbayern.com/en/news/2026/11/successful-surgery-for-harry-kane",
+          "source": "FC Bayern"
+        },
+        {
           "title": "Dortmund president sends wishes to Kane",
           "url": "https://www.bundesliga.com/en/bundesliga/videos/watch/dortmund-president-sends-wishes-to-kane-0Y1mSFw1",
           "source": "Bundesliga | official website"
-        },
-        {
-          "title": "How will Bayern Munich fare in the absence of Harry Kane",
-          "url": "https://www.squawka.com/en/features/tactical-analysis-bayern-munich-without-harry-kane/",
-          "source": "Squawka"
         }
       ],
       "civic": true
+    },
+    {
+      "geo": "KE",
+      "title": "atlético madrid vs viking fk standings",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Alvarez scores as Atletico cruise to victory over Viking",
+          "url": "https://www.bbc.com/sport/football/live/c678292r8lddt",
+          "source": "BBC"
+        },
+        {
+          "title": "Atlético Madrid vs Viking: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.co.uk/sport/football/live/c678292r8lddt",
+          "source": "BBC"
+        },
+        {
+          "title": "Ratings: Sørloth, Alvarez strikes steer Atlético to win over Viking",
+          "url": "https://www.intothecalderon.com/atletico-madrid-player-ratings/30173/atletico-de-madrid-viking-fk-player-ratings-champions-league-alvarez-sorloth",
+          "source": "Into the Calderon"
+        }
+      ]
     },
     {
       "geo": "KE",
@@ -32,45 +76,45 @@
     },
     {
       "geo": "KE",
-      "title": "flashscore",
+      "title": "association of african air forces",
       "traffic": "500+",
       "news": [
         {
-          "title": "Piers Morgan labels Chelsea star Cole Palmer a ‘d***head’ and slams ‘rotten attitude’ after Leeds United humiliation",
-          "url": "https://www.goal.com/en-ke/news/piers-morgan-slams-cole-palmer-chelsea-fan-snub/blt151a0dedc6acb246",
-          "source": "Goal.com"
+          "title": "AAAFEX 2027: HARNESSING CIVIL-MILITARY PARTNERSHIPS FOR HUMANITARIAN IMPACT",
+          "url": "https://www.mod.go.ke/news/aaafex-2027-harnessing-civil-military-partnerships-for-humanitarian-impact/",
+          "source": "Ministry of Defence – Kenya"
         },
         {
-          "title": "'Really poor' - Tony Cascarino identifies Chelsea's biggest problem player",
-          "url": "https://theprideoflondon.com/tony-cascarino-identifies-chelseas-biggest-problem-player",
-          "source": "The Pride of London"
+          "title": "News - African air forces strengthen cooperation ahead of Exercise NGUVU PAMOJA 2027",
+          "url": "https://www.dvidshub.net/news/580031/african-air-forces-strengthen-cooperation-ahead-exercise-nguvu-pamoja-2027",
+          "source": "DVIDS"
         },
         {
-          "title": "Palmer's dwindling Chelsea form becoming harder to ignore",
-          "url": "https://www.tribalfootball.com/article/soccer-premier-league-palmer-s-dwindling-chelsea-form-becoming-harder-to-ignore-5b4103b7-dbee-4882-8b9a-04115e0cbe6d",
-          "source": "TribalFootball"
+          "title": "261117-F-EU398-2128",
+          "url": "https://www.usafe.af.mil/news/photos/igphoto/2004036931/",
+          "source": "Air Forces in Europe (.mil)"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "kenya power",
+      "title": "76ers vs heat",
       "traffic": "200+",
       "news": [
         {
-          "title": "Kenya Power explains why it conducts planned power cuts",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-kenya-power-why-we-conduct-planned-power-cuts",
-          "source": "The Star, Kenya"
+          "title": "76ers Vs Miami Heat Player Stats show a late Sixers push as Group B hangs in the balance",
+          "url": "https://twaslnews1.twaslnews.com/8314669/",
+          "source": "شبكة تواصل الإخبارية"
         },
         {
-          "title": "Power restored in parts of Kenyan capital after major outage",
-          "url": "https://en.yenisafak.com/world/power-restored-in-parts-of-kenyan-capital-after-major-outage-2972279",
-          "source": "Yeni Safak English"
+          "title": "“He’s ill. I do not know whether he’s going to Indiana …",
+          "url": "https://ca.sports.yahoo.com/news/ill-not-know-whether-going-210455870.html",
+          "source": "Yahoo"
         },
         {
-          "title": "Kenya Power Announces Wednesday Outages in Nairobi, Machakos, Kisii and Other Counties",
-          "url": "https://www.ghafla.co.ke/kenya-power-announces-wednesday-outages-in-nairobi-machakos-kisii-and-other-counties/",
-          "source": "Ghafla!"
+          "title": "Joel Embiid (illness) out Wednesday vs. Heat",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/joel-embiid-illness-out-wednesday-vs-heat",
+          "source": "NBC Sports"
         }
       ]
     },
@@ -80,41 +124,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Jude Bellingham: Real Madrid midfielder plays down Zinedine Zidane comparison after wonder goal",
-          "url": "https://www.bbc.com/sport/football/articles/c893r9kdwl91o",
-          "source": "BBC"
+          "title": "2026-27 Champions League Glance",
+          "url": "https://apnews.com/article/soccer-sabah-masazir-ebf81f46b669dd6328ea3f660a2c2585",
+          "source": "AP News"
         },
         {
-          "title": "Bellingham beauty in Real Madrid win as Arsenal, Man City held in Champions League",
-          "url": "https://supersport.com/football/news/a001bb81-51b1-47a9-ace4-bb709e294ec8/bellingham-beauty-in-real-madrid-win-as-arsenal-man-city-held-in-champions-league",
-          "source": "SuperSport"
+          "title": "2026/27 Champions League standings: Which teams are heading for the round of 16, playoffs and elimination?",
+          "url": "https://en.as.com/soccer/202627-champions-league-standings-which-teams-are-heading-for-the-round-of-16-playoffs-and-elimination-f202611-n/",
+          "source": "Diario AS"
         },
         {
-          "title": "Champions League highlights and round-up: Real Madrid stay perfect, Galatasaray and Como win again",
-          "url": "https://www.uefa.com/uefachampionsleague/news/02ab-222684fc8e44-2b1a32c90a7a-1000--champions-league-highlights-and-round-up-real-madrid-sta/",
-          "source": "UEFA.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "76ers vs heat",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "NBA: Miami Heat at Philadelphia 76ers",
-          "url": "https://www.reutersconnect.com/item/nba-miami-heat-at-philadelphia-76ers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NDc2ODc",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "Joel Embiid (illness) out Wednesday vs. Heat",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/joel-embiid-illness-out-wednesday-vs-heat",
-          "source": "NBC Sports"
-        },
-        {
-          "title": "Heat 76ers Basketball",
-          "url": "https://www.couriernews.com/sports/heat-76ers-basketball/image_9cc079b9-62cc-52f0-8dad-4998669483a3.html",
-          "source": "couriernews.com"
+          "title": "2026-27 Champions League Glance",
+          "url": "https://www.oskaloosa.com/sports/agate/2026-27-champions-league-glance/article_cb7a73ee-dbab-5542-a145-6e3fa9dc78ca.html",
+          "source": "Oskaloosa Herald"
         }
       ]
     },
@@ -129,66 +151,26 @@
           "source": "BBC"
         },
         {
-          "title": "Champions League recap: Another night of mayhem for Pochettino's Man United",
-          "url": "https://www.espn.com/soccer/story/_/id/50574274/uefa-champions-league-live-updates",
-          "source": "ESPN"
-        },
-        {
           "title": "Club Brugge 0-3 Liverpool, Lille 2-1 Bayern, PSG 2-2 Roma: Champions League clockwatch – as it happened",
           "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
           "source": "The Guardian"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "champions league stats",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Betis Corners & Cards Stats 2026/27 (UEFA Champions League): Corners per Game, Yellow Cards, Shots | All Football",
-          "url": "https://m.dongqiudi.com/en/stats/corners/50001764-27456",
-          "source": "懂球帝"
         },
         {
-          "title": "Club Brugge 0-3 Liverpool: Alexander Isak and Florian Wirtz score in Champions League win",
-          "url": "https://www.bbc.com/sport/football/live/c5vg2w2e2gy1t",
-          "source": "BBC"
-        },
-        {
-          "title": "Team news: Confirmed Liverpool line-up v Club Brugge",
-          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-club-brugge",
-          "source": "Liverpool FC"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "sofascore",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Matheus Pucinelli de Almeida Carlos Maria Zarate live score and H2H results",
-          "url": "https://www.sofascore.com/tennis/match/carlos-maria-zarate-matheus-pucinelli-de-almeida/DZfcscJee",
-          "source": "Sofascore"
-        },
-        {
-          "title": "Thomas Faurel Nikita Belozertsev live score and H2H results",
-          "url": "https://www.sofascore.com/tennis/match/nikita-belozertsev-thomas-faurel/ETJdsdhde",
-          "source": "Sofascore"
-        },
-        {
-          "title": "Enrique Carrascosa Diaz Roberto Pérez Socas live score and H2H results",
-          "url": "https://www.sofascore.com/tennis/match/enrique-carrascosa-diaz-roberto-perez-socas/ZFMdsTjNi",
-          "source": "Sofascore"
+          "title": "Champions League recap: Another night of mayhem for Pochettino's Man United",
+          "url": "https://www.espn.com/soccer/story/_/id/50574274/uefa-champions-league-live-updates",
+          "source": "ESPN"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "atlético madrid vs viking fk standings",
-      "why": "unsafe: 'fire'"
+      "title": "trail blazers vs spurs",
+      "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "warriors vs kings",
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
