@@ -3105,10 +3105,12 @@
       ],
       "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1834
+      "tg_msg": 1834,
+      "photo_checked": "2026-11-26T09:32:07.692733+03:00",
+      "photo_fit": "2026-11-26T09:32:07.692768+03:00"
     },
     {
-      "id": "2026-w48-hot-1126-r2",
+      "id": "2026-w48-hot-1126-r6",
       "template": "sauti",
       "lane": "everyone",
       "kicker": "Job opportunities",
@@ -3175,20 +3177,33 @@
       },
       "drafted_at": "2026-11-26T09:10:30.048089+03:00",
       "replaced_by": "2026-w48-hot-1126-r3",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r2-photo.jpg",
-      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_source": "https://www.kbc.co.ke/kenya-and-tbb-canada-sign-deal-to-open-safe-doors-to-jobs-abroad/",
+      "reel": true,
+      "rephoto_reason": "Kenyans.co.ke's own edit (Two photos joined side by side)",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r6-photo.jpg",
+      "photo_credit": "Photo: KBC Digital / Joshua Tabah · File photo: Kenyans.co.ke",
       "photo_kind": "posted",
-      "photo_outlet": "Kenyans.co.ke",
-      "photo_source": "https://www.kenyans.co.ke/news/129202-canada-announces-new-rules-kenyans-other-foreigners-seeking-jobs",
+      "photo_outlet": "KBC Digital",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r6-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r6-photo-3.jpg"
+      ],
       "shot_info": [
         {
-          "credit": "Photo: Kenyans.co.ke",
-          "title": "Canada Revises Foreign Worker Rules Affecting Kenyans"
+          "credit": "Photo: KBC Digital / Joshua Tabah",
+          "title": "Kenya and TBB Canada sign deal to open safe doors to jobs abroad"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Questions as DCI Recovers Passports, Arrests 29 in INTERPOL-Linked Operation"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Govt to Introduce New Green Passport for Select Kenyans"
         }
       ],
-      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "reel": true,
-      "tg_msg": 1835
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 1843
     },
     {
       "id": "2026-w48-hot-1126-r3",
@@ -3303,7 +3318,9 @@
       ],
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1836
+      "tg_msg": 1836,
+      "photo_checked": "2026-11-26T09:33:39.233158+03:00",
+      "photo_fit": "2026-11-26T09:33:39.233189+03:00"
     },
     {
       "id": "2026-w48-hot-1126-r4",
@@ -3375,10 +3392,12 @@
       "broll_credit": "Footage: silas267 / Pixabay",
       "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1837
+      "tg_msg": 1837,
+      "photo_checked": "2026-11-26T09:34:10.007548+03:00",
+      "photo_fit": "2026-11-26T09:34:10.007565+03:00"
     },
     {
-      "id": "2026-w48-hot-1126-r5",
+      "id": "2026-w48-hot-1126-r7",
       "template": "sauti",
       "lane": "everyone",
       "kicker": "Kenyans",
@@ -3431,23 +3450,33 @@
         "warnings": []
       },
       "drafted_at": "2026-11-26T09:12:59.968164+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r5-photo.jpg",
-      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/128934-kra-targets-payroll-data-mobile-money-transactions-after-ksh132-billion-revenue",
+      "reel": true,
+      "rephoto_reason": "Kenyans.co.ke's own edit (3D computer render/illustration)",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r7-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke · File photo: Kenyans.co.ke",
       "photo_kind": "posted",
       "photo_outlet": "Kenyans.co.ke",
-      "photo_source": "https://www.kenyans.co.ke/news/127788-kra-collects-ksh-90b-customs-revenue-exceeding-september-target-ksh-965m",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r7-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r7-photo-3.jpg"
+      ],
       "shot_info": [
         {
           "credit": "Photo: Kenyans.co.ke",
+          "title": "KRA to Scrutinise Payroll Records, Mobile Transactions in Revenue Drive"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KRA Plans to Use Till Numbers, Pochi La Biashara to Track Undeclared Income"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
           "title": "KRA Surpasses September Revenue Target as Imports Surge"
         }
       ],
-      "ink": {
-        "2": "#FFFFFF"
-      },
-      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
-      "reel": true,
-      "tg_msg": 1838
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 1844
     }
   ],
   "scripts": {
