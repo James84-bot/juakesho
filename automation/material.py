@@ -28,6 +28,8 @@ PRICES = brands.CONTENT / "prices.json"   # verified prices for Guess the Price,
 NEWS = brands.STATE / "news.json"
 USED = brands.STATE / "material_used.json"
 BANK_REST = dt.timedelta(days=120)   # a showcase fact comes back at most three times a year
+BANK_REST_MIN = dt.timedelta(days=28)   # ...unless every fact is resting: then the longest-rested one, after a month
+                                        # (26 Nov: the 17 facts ran out and a Saturday showcase had nothing to show)
 
 PRICE = re.compile(r"\b(price|prices|priced|cost|costs|cheaper|costlier|unga|maize flour|fuel|petrol|diesel|"
                    r"kerosene|fares?|rent|fees?|tariffs?|sugar|bread|milk|cooking gas|lpg|electricity|tokens|"
@@ -131,6 +133,12 @@ def pick(slot: dict, taken: set[str], used: dict | None = None, today: dt.date |
             return not when or today - dt.date.fromisoformat(when) >= BANK_REST
         fresh = [e for e in entries if e["series"] == slot.get("series") and "bank:" + e["id"] not in taken
                  and rested(e)]
+        if not fresh:
+            def rested_a_month(e):
+                when = used.get("bank:" + e["id"])
+                return not when or today - dt.date.fromisoformat(when) >= BANK_REST_MIN
+            fresh = [e for e in entries if e["series"] == slot.get("series") and "bank:" + e["id"] not in taken
+                     and rested_a_month(e)]
         if not fresh:
             return None
         fresh.sort(key=lambda e: used.get("bank:" + e["id"], ""))   # never used first, then the longest rested

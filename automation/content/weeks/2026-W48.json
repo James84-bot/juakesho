@@ -409,15 +409,7 @@
       "lane": "everyone",
       "publish_at": "2026-11-28T11:00:00+03:00",
       "series": "Built in Kenya",
-      "status": "needs_human",
-      "fix": "no verified fact left in content/facts.json for this series (all used recently): add entries",
-      "guard": {
-        "errors": [
-          "no verified fact left in content/facts.json for this series (all used recently): add entries"
-        ],
-        "warnings": []
-      },
-      "drafted_at": "2026-11-26T09:02:53.898492+03:00"
+      "status": "planned"
     },
     {
       "id": "2026-w48-d7-glasspoll",

@@ -41,6 +41,18 @@ class Bank(unittest.TestCase):
         self.assertNotEqual(again["key"], first["key"])
         self.assertIsNone(material.pick(slot, set(), used={}, bank=[]))
 
+    def test_when_every_fact_rests_the_longest_rested_comes_back_after_a_month(self):
+        # 26 Nov: all 17 facts were resting and the Saturday showcase had nothing to show
+        bank = [{"id": "a", "series": "Built in Kenya", "fact": "A", "place": "", "name": "", "source": "", "outlet": "",
+                 "photo_query": ""}, {"id": "b", "series": "Built in Kenya", "fact": "B", "place": "", "name": "",
+                                      "source": "", "outlet": "", "photo_query": ""}]
+        slot = {"id": "s", "template": "kenya", "series": "Built in Kenya"}
+        today = dt.date(2026, 11, 26)
+        used = {"bank:a": "2026-10-01", "bank:b": "2026-11-20"}   # 56 and 6 days ago
+        self.assertEqual(material.pick(slot, set(), used=used, today=today, bank=bank)["key"], "bank:a")
+        self.assertIsNone(material.pick(slot, set(), used={"bank:a": "2026-11-10", "bank:b": "2026-11-20"},
+                                        today=today, bank=bank))   # none rested a month: nothing honest to show
+
 
 class News(unittest.TestCase):
     def test_each_series_takes_only_a_report_about_its_subject(self):

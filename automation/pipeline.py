@@ -757,6 +757,7 @@ def photo_audit(dry_run: bool = False) -> list[str]:
 HOT_RETRIES = 4   # extra attempts per held news post, so one rejected draft does not cost the whole slot
 FIX_TRIES = 3     # versions of a planned (not news) post written before its slot is given up: the first + 2 rewrites
 FIX_LEAD = dt.timedelta(minutes=90)   # an untapped card this close to its slot is written again, so the fix is on time
+FIX_GAP = dt.timedelta(minutes=40)    # a version written this recently is not rewritten yet (one per hourly run)
 
 
 def _revision(pid: str) -> int:
@@ -835,6 +836,13 @@ def fix_planned(label: str) -> list[str]:
         slot = dt.datetime.fromisoformat(p["publish_at"])
         if t - slot > LATE_LIMIT - dt.timedelta(hours=2):   # past saving: settle_unanswered closes it
             return False
+        try:   # one version per hourly run at most: the news and the material change between runs, a minute doesn't
+            if t - dt.datetime.fromisoformat(p.get("drafted_at") or "") < FIX_GAP:
+                return False
+        except ValueError:
+            pass
+        if p["status"] == "needs_human" and not _material_now(p):
+            return False   # the series has nothing real to build on yet: another version would fail the same way
         return p["status"] == "needs_human" or (p["status"] == "awaiting" and t >= slot - FIX_LEAD and bool(fix_reason(p)))
     targets = {p["id"] for p in data["posts"] if due(p)}
     groups = {p["group"] for p in data["posts"] if p["id"] in targets and p.get("group")}
@@ -857,6 +865,18 @@ def fix_planned(label: str) -> list[str]:
         save_week(data)
         log(f"fix {label}: written again for their slots: {fixed}")
     return fixed
+
+
+def _material_now(p: dict) -> bool:
+    """False when the post was held for lack of real material (material.WHY) and there still is none."""
+    import material
+    errs = (p.get("guard") or {}).get("errors") or []
+    if not any(e in material.WHY.values() for e in errs):
+        return True
+    try:
+        return material.pick({k: v for k, v in p.items() if k in PLAN_KEYS | {"series", "angle"}}, set()) is not None
+    except Exception:
+        return True
 
 
 def remake(label: str, replace_approved: bool = False) -> list[str]:

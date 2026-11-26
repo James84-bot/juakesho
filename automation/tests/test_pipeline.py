@@ -1698,6 +1698,19 @@ class ExpiryTests(TempWeeks):
         self.assertEqual(pl.apply_decision(data, "old", True), [])   # the old card's ✅ can't approve the new words
         self.assertEqual(pl.apply_decision(data, "gone-r3", True), [])
 
+    def test_one_version_per_run_and_none_without_material(self):
+        import material
+        t = pl.now()
+        at = (t + pl.dt.timedelta(hours=6)).isoformat()
+        self.week([{"id": "just", "status": "needs_human", "template": "sauti", "publish_at": at,
+                    "drafted_at": (t - pl.dt.timedelta(minutes=5)).isoformat(), "guard": {"errors": ["x"]}},
+                   {"id": "nofact", "status": "needs_human", "template": "kenya", "series": "Kenya at its best",
+                    "publish_at": at, "guard": {"errors": [material.WHY["bank"]]}}])
+        with mock.patch.object(material, "pick", lambda slot, taken, *a, **k: None):
+            self.assertEqual(pl.fix_planned("2026-W41"), [])
+        with mock.patch.object(material, "pick", lambda slot, taken, *a, **k: {"kind": "bank"}):
+            self.assertEqual(pl.fix_planned("2026-W41"), ["nofact-r2"])
+
     def test_a_post_the_checks_held_back_is_written_again_by_itself(self):
         t = pl.now()
         self.week([{"id": "held", "status": "needs_human", "template": "kenya", "lane": "everyone", "bg": "usiku",
