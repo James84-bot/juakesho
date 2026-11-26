@@ -1719,7 +1719,12 @@ def auto_ok(p: dict) -> str:
     if p.get("template") == "tazama":   # you sent the clip: that is the decision; the guard passed when it was made
         return ""
     if any("named person" in str(w) for w in g.get("warnings") or []):
-        return "may name a person"
+        import guard
+        words = " ".join(str(x) for x in [p.get("message"), p.get("caption"), *(p.get("beats") or [])])
+        # a warning stored before 26 Nov flagged any two capitalised words ('Easy Coach'); today's rule only holds
+        # a name beside an allegation
+        if any("beside an allegation" in str(w) for w in g.get("warnings") or []) or guard.CRIME_WORDS.search(words):
+            return "may name a person"
     import mtaa
     if p.get("template") in mtaa.TEMPLATES:   # Mtaa Mode: the chart is YouTube's numbers; a skit needs its editor's pass
         return mtaa.auto_problem(p)

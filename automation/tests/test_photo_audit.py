@@ -96,7 +96,8 @@ class Decision(unittest.TestCase):
         self.assertIn("don't post", self.line(post("a", guard={"errors": ["closer: x"], "warnings": []})))
 
     def test_waiting_post_says_why(self):
-        p = post("a", guard={"errors": [], "warnings": ["possible named person(s): Jane Doe. Civic posts target systems"]})
+        p = post("a", guard={"errors": [], "warnings": ["possible named person(s) beside an allegation: Jane Doe. "
+                                                         "Civic posts target systems"]})
         text = self.line(p)
         self.assertIn("post it", text)
         self.assertIn("may name a person", text)

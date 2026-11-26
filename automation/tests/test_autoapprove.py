@@ -30,7 +30,8 @@ class AutoOk(unittest.TestCase):
             "promise": good(template="promise"),
             "scorecard": good(template="scorecard"),
             "guard error": good(guard={"errors": ["x"], "warnings": []}),
-            "named person": good(guard={"errors": [], "warnings": ["possible named person(s): A B"]}),
+            "named person beside an allegation": good(guard={"errors": [], "warnings": ["possible named person(s): A B"]},
+                                                      message="Ann Bett was charged with fraud on Monday."),
             "low score": good(critic={"avg": 7.2}),
             "no score": good(critic=None),
             "no source": good(source_links=None),
@@ -38,6 +39,11 @@ class AutoOk(unittest.TestCase):
         }
         for name, post in cases.items():
             self.assertNotEqual(pl.auto_ok(post), "", name)
+
+    def test_an_old_name_warning_without_an_allegation_no_longer_holds(self):
+        # 26 Nov: 'Easy Coach' and 'National November' held a Money post scoring 8.3
+        self.assertEqual(pl.auto_ok(good(guard={"errors": [], "warnings": ["possible named person(s): Easy Coach"]},
+                                         message="Easy Coach raised fares by Sh200.")), "")
 
     def test_politics_and_a_persons_own_face_go_out_once_they_pass(self):
         # 26 Nov, James: "no post should expire"; he chose "fix it, then post"
