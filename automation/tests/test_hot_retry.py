@@ -164,8 +164,31 @@ class Retry(unittest.TestCase):
         self.assertEqual(st["2026-w44-hot-1031d"], "awaiting")
         self.assertNotIn("expired", st.values())
         self.assertEqual(len(told), 1)
-        self.assertIn("1031b", told[0])
-        self.assertIn("every version failed a check", told[0])
+        self.assertIn("Sat 07:00 news post: every version failed a check", told[0])
+
+    def test_a_chain_of_versions_renamed_by_new_photos_closes_together(self):
+        # 26 Nov: photo swaps renamed versions, 'replaced_by' pointed at ids that no longer existed, and four midday
+        # drafts waited all day. Every one of them is closed in one tick, with one line for the slot.
+        late = "2026-10-31T07:00:00+03:00"
+        self.save([held(status="awaiting", publish_at=late, replaced_by="2026-w44-hot-1031-r2"),          # gone
+                   held("2026-w44-hot-1031-r6", status="awaiting", publish_at=late, replaced_by="2026-w44-hot-1031-r3"),
+                   held("2026-w44-hot-1031-r3", status="awaiting", publish_at=late, replaced_by="2026-w44-hot-1031-r4"),
+                   held("2026-w44-hot-1031-r4", status="awaiting", publish_at=late, replaced_by="2026-w44-hot-1031-r5")])
+        told = []
+        with mock.patch.object(pipeline, "_notify", told.append), mock.patch.object(pipeline, "log", lambda m: None):
+            self.assertEqual(len(pipeline.expire_unanswered()), 4)
+        self.assertEqual({p["status"] for p in self.load()}, {"dropped"})
+        self.assertEqual(told[0].count("•"), 1)
+        self.assertIn("none of 4 versions passed", told[0])
+
+    def test_new_photos_keep_the_link_from_the_version_before(self):
+        self.save([held(status="rejected", replaced_by="2026-w44-hot-1031-r2"),
+                   held("2026-w44-hot-1031-r2", status="awaiting", photo_query="crash")])
+        with mock.patch.object(pipeline, "log", lambda m: None):
+            pipeline.rephoto(self.label, only="2026-w44-hot-1031-r2")
+        first, second = self.load()
+        self.assertEqual(first["replaced_by"], second["id"])
+        self.assertNotEqual(second["id"], "2026-w44-hot-1031-r2")
 
     def test_the_editor_judges_sport_and_life_posts_in_their_own_lane(self):
         import draft

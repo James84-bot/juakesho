@@ -607,6 +607,26 @@ def _next_rev(pid: str, taken=()) -> str:
     return f"{base}-r{n}"
 
 
+def _relink(data: dict, old: str, new: str) -> None:
+    """A post renamed old -> new (new photos): an earlier version that names it as its replacement follows it.
+    26 Nov: renames left 'replaced_by' pointing at ids that no longer existed, and the midday drafts waited all day."""
+    for q in data["posts"]:
+        if q.get("replaced_by") == old:
+            q["replaced_by"] = new
+
+
+def _latest(by_id: dict, p: dict) -> dict | None:
+    """The last version along a post's replaced_by chain; None when its replacement can't be found."""
+    seen, cur = {p["id"]}, p
+    while cur.get("replaced_by"):
+        nxt = by_id.get(cur["replaced_by"])
+        if nxt is None or nxt["id"] in seen:
+            return None if cur is p else cur
+        seen.add(nxt["id"])
+        cur = nxt
+    return cur
+
+
 def _ids(data: dict) -> set[str]:
     return {p["id"] for p in data["posts"]} | {p["group"] for p in data["posts"] if p.get("group")}
 
@@ -938,6 +958,7 @@ def rephoto(label: str, only: str | None = None) -> list[str]:
         old = p["id"]
         p["version"] = _version(p)   # new photos, same words: not another version
         p["id"] = _next_rev(old, _ids(data))
+        _relink(data, old, p["id"])
         if p.get("group"):
             p["group"] = groups.setdefault(p["group"], _next_rev(p["group"], _ids(data)))
         for k in ("photo_file", "photo_credit", "photo_kind", "photo_outlet", "video_file", "video_credit", "video_source",
@@ -1063,6 +1084,7 @@ def _photo_intake(msg: dict, chat: str) -> None:
               "posted": f"Photo: {rights['credit']}"}[rights["rights"]]   # yours: no credit line
     for k in ("photo_file", "photo_credit", "photo_kind", "tg_msg", "decided_at", "video_file", "video_credit", "video_source"):
         post.pop(k, None)
+    _relink(data, post["id"], new_id)
     post.update(id=new_id, photo=f"sent:{rel.as_posix()}", photo_rights_credit=credit, photo_rights=rights["evidence"],
                 photo_source=rights.get("source", ""), photo_use=rights["rights"], status="drafted")
     save_week(data)
@@ -1950,17 +1972,22 @@ def expire_unanswered() -> list[str]:
         data = json.loads(f.read_text(encoding="utf-8"))
         by_id = {p["id"]: p for p in data["posts"]}
         changed = False
-        for p in data["posts"]:
+        # twice over: closing the last of a chain of versions lets the ones before it close in the same tick
+        for p in [q for _ in range(2) for q in data["posts"]]:
             if p["status"] != "awaiting":
                 continue
             late = now() - dt.datetime.fromisoformat(p["publish_at"])
             if late <= EXPIRE_AFTER or p.get("template") in AUTO_NEVER:
                 continue
-            nxt = by_id.get(p.get("replaced_by") or "")
+            nxt = _latest(by_id, p) if p.get("replaced_by") else None
             if nxt and nxt["status"] in {"approved", "published", "manual"}:
                 p["status"], p["closed_why"] = "replaced", f"{nxt['id']} went out for this slot"
-            elif nxt and nxt["status"] not in {"rejected", "dropped", "missed"} and late <= LATE_LIMIT:
+            elif nxt and nxt["status"] not in {"rejected", "dropped", "missed", "replaced", "expired"} and late <= LATE_LIMIT:
                 continue   # its replacement is still being written or checked
+            elif p.get("replaced_by"):   # replaced, and the versions after it failed or are gone: nothing more is coming
+                p["status"] = "dropped"
+                p["closed_why"] = f"every version failed a check ({fix_reason(p) or 'held'})"
+                told.append(p)
             elif fix_reason(p) and late <= LATE_LIMIT and (
                     (p.get("hot") and _version(p) < HOT_RETRIES) or (not p.get("hot") and _version(p) + 1 < FIX_TRIES)):
                 continue   # another version is due (retry_held_hot / fix_planned)
@@ -1968,14 +1995,23 @@ def expire_unanswered() -> list[str]:
                 p["status"] = "dropped"
                 p["closed_why"] = (f"{int(late.total_seconds() // 3600)} h past its slot: the story is old" if late > LATE_LIMIT
                                    else f"every version failed a check ({fix_reason(p)})" if fix_reason(p) else "no tap")
-                told.append(f"{p.get('group') or p['id']}: {p['closed_why']}")
+                told.append(p)
             closed.append(p["id"])
             changed = True
         if changed:
             save_week(data)
     if told:
-        log(f"dropped: {told}")
-        _notify("🗂 Not posted (nothing goes out unchecked):\n" + "\n".join(f"• {_esc(x)}" for x in sorted(set(told))))
+        log(f"dropped: {[(q['id'], q['closed_why']) for q in told]}")
+        slots: dict[str, list] = {}
+        for q in told:   # one line per slot, however many versions it had
+            slots.setdefault(q.get("group") or q["publish_at"], []).append(q)
+        lines = []
+        for qs in slots.values():
+            at = dt.datetime.fromisoformat(qs[0]["publish_at"])
+            what = "news post" if qs[0].get("hot") else str(qs[0].get("template") or "post")
+            n = f"none of {len(qs)} versions passed" if len(qs) > 1 else qs[0]["closed_why"]
+            lines.append(f"• {at:%a %H:%M} {what}: {n}")
+        _notify("🗂 Not posted (nothing goes out unchecked):\n" + "\n".join(_esc(x) for x in sorted(lines)))
     return closed
 
 
