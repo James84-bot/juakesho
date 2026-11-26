@@ -1,55 +1,10 @@
 {
-  "fetched": "2026-11-26T15:46:56.209384+00:00",
+  "fetched": "2026-11-26T16:42:03.018167+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "m-pesa",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Shiriki Pay: Bringing Convenience and Dignity to Regular Transactions",
-          "url": "https://newsroom.safaricom.co.ke/innovation/shiriki-pay-bringing-convenience-and-dignity-to-regular-transactions/",
-          "source": "Safaricom Newsroom"
-        },
-        {
-          "title": "Safaricom's M-Pesa shared spending tool Shiriki Pay nears 4mln users",
-          "url": "https://www.telecompaper.com/news/safaricoms-m-pesa-shared-spending-tool-shiriki-pay-nears-4mln-users--1590060",
-          "source": "Telecompaper"
-        },
-        {
-          "title": "Safaricom introduces OTP verification on Shikiri Pay to stop unauthorised beneficiary additions",
-          "url": "https://peopledaily.digital/news/safaricom-introduces-otp-verification-on-shikiri-pay-to-stop-unauthorised-beneficiary-additions",
-          "source": "People Daily"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "muhoozi kainerugaba",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Muhoozi Kainerugaba: Ugandan president's son angers DR Congo with social media posts",
-          "url": "https://www.bbc.com/news/articles/cwz0k90rgpm8o",
-          "source": "BBC"
-        },
-        {
-          "title": "Muhoozi remarks spark outrage in DR Congo",
-          "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/muhoozi-remarks-spark-outrage-in-dr-congo-5684850",
-          "source": "The EastAfrican"
-        },
-        {
-          "title": "DR Congo summons Uganda’s top diplomat over Gen Muhoozi Kainerugaba’s social media posts",
-          "url": "https://eastleighvoice.co.ke/democratic-republic-of-congo/428001/dr-congo-summons-ugandas-top-diplomat-over-gen-muhoozi-kainerugabas-social-media-posts",
-          "source": "The Eastleigh Voice"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
       "title": "national transport and safety authority",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "Crackdown: NTSA to suspend 300,000 driving licences",
@@ -62,35 +17,11 @@
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "NPS intensifies nationwide road safety sensitisation campaign",
-          "url": "https://www.kbc.co.ke/nps-intensifies-nationwide-road-safety-sensitisation-campaign/",
-          "source": "KBC Digital"
+          "title": "NTSA to suspend 300,000 driving licences over speeding violations",
+          "url": "https://citizen.digital/article/ntsa-to-suspend-300000-driving-licences-over-speeding-violations-n394598",
+          "source": "Citizen Digital"
         }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "arsenal news",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Arsenal and Manchester City's problems analysed as both set to meet in bumper Premier League clash this weekend",
-          "url": "https://www.skysports.com/football/news/13616234/arsenal-and-manchester-citys-problems-analysed-as-both-set-to-meet-in-bumper-premier-league-clash-this-weekend",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "How to watch Arsenal v Manchester City live on TV",
-          "url": "https://www.arsenal.com/news/how-to-watch-arsenal-v-manchester-city-live-on-tv-akATa2J3AKki",
-          "source": "Arsenal.com"
-        },
-        {
-          "title": "Police to double number of officers for Arsenal vs. Manchester City on Sunday",
-          "url": "https://www.nytimes.com/athletic/7806079/2026/11/23/arsenal-man-city-premier-league-police/",
-          "source": "The New York Times"
-        }
-      ],
-      "civic": true
+      ]
     },
     {
       "geo": "KE",
@@ -116,23 +47,23 @@
     },
     {
       "geo": "KE",
-      "title": "víctor muñoz",
-      "traffic": "500+",
+      "title": "n'golo kante stamford bridge fenerbahce",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Iraola también es candidato",
-          "url": "https://as.com/futbol/champions/iraola-tambien-es-candidato-f202611-n/",
+          "title": "Spectacular Felix strike earns Al-Nassr Asian Champions League win",
+          "url": "https://www.reuters.com/sports/soccer/spectacular-felix-strike-earns-al-nassr-asian-champions-league-win-2026-11-24/",
+          "source": "Reuters"
+        },
+        {
+          "title": "MD5: Al Nassr Club (KSA) 2-1 Al Sadd SC (QAT)",
+          "url": "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/md5-al-nassr-club-ksa-2-1-al-sadd-sc-qat",
+          "source": "The AFC"
+        },
+        {
+          "title": "Ronaldo closes in on 1,000 as João Félix scores stunning Puskás contender",
+          "url": "https://en.as.com/soccer/ronaldo-closes-in-on-1000-as-joao-felix-scores-stunning-puskas-contender-f202611-n/",
           "source": "Diario AS"
-        },
-        {
-          "title": "Víctor Muñoz hace saltar las alarmas: se marcha con preocupantes gestos de dolor después de un golpe en la rodilla",
-          "url": "https://www.noticiasdenavarra.com/futbol/2026/11/26/victor-munoz-brujas-liverpool-champions-league-11797390.html",
-          "source": "Noticias de Navarra"
-        },
-        {
-          "title": "Doblete de Isak... pero el Liverpool se preocupa por Víctor Muñoz",
-          "url": "https://www.marca.com/futbol/champions-league/cronica/2026/11/25/doblete-isak-liverpool-preocupa-victor-munoz.html",
-          "source": "MARCA"
         }
       ]
     },
@@ -160,35 +91,66 @@
     },
     {
       "geo": "KE",
-      "title": "india a vs sri lanka a",
+      "title": "joshua kutryk",
       "traffic": "100+",
       "news": [
         {
-          "title": "IND A vs SL A Live Score, Semi Final Asia Cup Rising Stars: Sri Lanka's Jayawardena runs riot, smashes 62-ball century",
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-sri-lanka-a-1st-semi-final-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-asian-town-cricket-stadium/liveblog/136181967.cms",
-          "source": "The Times of India"
+          "title": "Canadian astronaut welcomes baby girl from space station",
+          "url": "https://www.bbc.com/news/articles/ckx283y8wwwgo",
+          "source": "BBC"
         },
         {
-          "title": "India A Bats First Against Sri Lanka A in November 26 Semifinal",
-          "url": "https://demokratis.co.id/en/india-sri-lanka-semifinal-november-26",
-          "source": "Demokratis.co.id"
+          "title": "745124bed0eec9e5fef5cfa9e8dd4dd2fdd4e588efa2918562c73c64753442ca",
+          "url": "https://medicinehatnews.com/news/national-news/2026/11/25/canadian-astronaut-joshua-kutryk-welcomes-third-child-while-in-space/attachment/745124bed0eec9e5fef5cfa9e8dd4dd2fdd4e588efa2918562c73c64753442ca/",
+          "source": "Medicine Hat News"
         },
         {
-          "title": "Vaibhav Sooryavanshi dismissed for 40 off 27 balls against Sri Lanka A in Asia Cup Rising Stars 2026 semifinal",
-          "url": "https://sportstar.thehindu.com/cricket/vaibhav-sooryavanshi-score-asia-cup-rising-stars-2026-semifinal-india-a-vs-sri-lanka-a/article71746121.ece",
-          "source": "Sportstar"
+          "title": "Canadian astronaut Joshua Kutryk welcomes third child while in space",
+          "url": "https://www.thestar.com/news/canada/canadian-astronaut-joshua-kutryk-welcomes-third-child-while-in-space/article_cda29d45-1661-50cb-bf85-246b9c7e9bbe.html",
+          "source": "Toronto Star"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "court",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Struck down: High Court quashes Ruto's new State departments",
+          "url": "https://nation.africa/kenya/news/struck-down-high-court-quashes-ruto-s-new-state-departments-5685176",
+          "source": "Daily Nation"
+        },
+        {
+          "title": "High Court Quashes 7 State Departments Created by Ruto",
+          "url": "https://www.kenyans.co.ke/news/129708-high-court-quashes-7-state-departments-created-ruto",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Blow to Ruto as court declares seven state departments unconstitutional",
+          "url": "https://www.standardmedia.co.ke/article/2001563112/blow-to-ruto-as-court-declares-seven-state-departments-unconstitutional",
+          "source": "The Standard"
+        }
+      ],
+      "civic": true
     }
   ],
   "dropped": [
     {
-      "title": "parliament",
-      "why": "unsafe: 'attack'"
+      "title": "gor mahia",
+      "why": "unsafe: 'assault'"
     },
     {
-      "title": "loeys–dietz syndrome",
-      "why": "unsafe: 'bomb'"
+      "title": "europa league",
+      "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "celta vigo vs bournemouth",
+      "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "parliament",
+      "why": "unsafe: 'attack'"
     }
   ],
   "errors": {}
