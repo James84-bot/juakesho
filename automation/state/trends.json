@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-26T15:42:34.181417+00:00",
+  "fetched": "2026-11-26T15:46:56.209384+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -71,25 +71,26 @@
     },
     {
       "geo": "KE",
-      "title": "n'golo kante stamford bridge fenerbahce",
-      "traffic": "500+",
+      "title": "arsenal news",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Shakhtar Donetsk vs Fenerbahçe: UEFA Champions League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c6kgd1d9glqkt",
-          "source": "BBC"
+          "title": "Arsenal and Manchester City's problems analysed as both set to meet in bumper Premier League clash this weekend",
+          "url": "https://www.skysports.com/football/news/13616234/arsenal-and-manchester-citys-problems-analysed-as-both-set-to-meet-in-bumper-premier-league-clash-this-weekend",
+          "source": "Sky Sports"
         },
         {
-          "title": "Shakhtar Donetsk vs Fenerbahçe live today: Who is showing the game on TV and online?",
-          "url": "https://www.goal.com/en-sg/news/shakhtar-donetsk-vs-fenerbahce-live-today-who-is-showing-the-game-on-tv-and-online/bltade599eaf1371220",
-          "source": "Goal.com"
+          "title": "How to watch Arsenal v Manchester City live on TV",
+          "url": "https://www.arsenal.com/news/how-to-watch-arsenal-v-manchester-city-live-on-tv-akATa2J3AKki",
+          "source": "Arsenal.com"
         },
         {
-          "title": "Fenerbahce edge Shakhtar Donetsk at Stamford Bridge in Champions League clash",
-          "url": "https://www.tribalfootball.com/article/fenerbahce-edge-shakhtar-donetsk-at-stamford-bridge-in-champions-league-clash-09606271-7e01-48af-a0da-4375a3600750",
-          "source": "TribalFootball"
+          "title": "Police to double number of officers for Arsenal vs. Manchester City on Sunday",
+          "url": "https://www.nytimes.com/athletic/7806079/2026/11/23/arsenal-man-city-premier-league-police/",
+          "source": "The New York Times"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -138,7 +139,7 @@
     {
       "geo": "KE",
       "title": "joão pedro",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Humaitá anuncia contratação de lateral-direito de 26 anos, cria da base do Bahia",
@@ -163,14 +164,14 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "INDA 317/8 (50) (Shahbaz Ahmed 54(48) Harsh Dubey 8(4)) | Sri Lanka A vs India A, 1st Semi-Final (A1 v B2), ACC Men's Asia Cup Rising Stars 2026 Live Cricket Stream, live scores, ball-by-ball commentary, highlights, videos, news, and more in USA & Can",
-          "url": "https://www.cricbuzz.com/live-cricket-scores/177210/sla-vs-inda-1st-semi-final-a1-v-b2-acc-mens-asia-cup-rising-stars-2026",
-          "source": "Cricbuzz"
-        },
-        {
           "title": "IND A vs SL A Live Score, Semi Final Asia Cup Rising Stars: Sri Lanka's Jayawardena runs riot, smashes 62-ball century",
           "url": "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-sri-lanka-a-1st-semi-final-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-asian-town-cricket-stadium/liveblog/136181967.cms",
           "source": "The Times of India"
+        },
+        {
+          "title": "India A Bats First Against Sri Lanka A in November 26 Semifinal",
+          "url": "https://demokratis.co.id/en/india-sri-lanka-semifinal-november-26",
+          "source": "Demokratis.co.id"
         },
         {
           "title": "Vaibhav Sooryavanshi dismissed for 40 off 27 balls against Sri Lanka A in Asia Cup Rising Stars 2026 semifinal",
