@@ -251,12 +251,10 @@
         "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQV01iZkdicWpHa0VoZUR4MGtNNnhmNl9CN2w4S0l4RGZrRzd2c3JkZ2JmOVJCNzhGWEdtVVBsRU85eTVPTmEtMG5JenZ0TENxNk1qeTFkckM3OXktdWpJNk1uWWI1bUFtNnY3R1prX1pxdWFHUW9EQ3NQNGZlbkRRTkFrY1dmQUE5S2JQWFN6Q0pNWjNpUWZxVA?oc=5",
         "published": "2026-11-21"
       },
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [],
-        "warnings": [
-          "possible named person(s): Bellarmine Bulinda, Easy Coach, Easy Coach Management, Nairobi Kenya Planning, National November, November Easy Coach, Wikimedia Commons. Civic posts target systems, not people."
-        ]
+        "warnings": []
       },
       "critic": {
         "hook": 8,
@@ -290,7 +288,9 @@
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
       "tg_msg": 1501,
-      "fresh_checked": "2026-11-25T15:23:32.832195+03:00"
+      "fresh_checked": "2026-11-25T15:23:32.832195+03:00",
+      "auto": true,
+      "decided_at": "2026-11-26T14:52:22.917826+03:00"
     },
     {
       "id": "2026-w48-d5-straight",
