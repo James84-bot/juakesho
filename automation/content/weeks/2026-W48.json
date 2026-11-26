@@ -3651,7 +3651,7 @@
           "link": "https://www.skysports.com/football/news/13616484/sporting-2-2-man-utd-mauricio-pochettino-denied-first-win-by-senne-lammens-howler-in-champions-league"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -3693,7 +3693,14 @@
       "reel": true,
       "tg_msg": 1863,
       "auto": true,
-      "decided_at": "2026-11-26T12:50:58.124711+03:00"
+      "decided_at": "2026-11-26T12:50:58.124711+03:00",
+      "published_at": "2026-11-26T15:41:05.569885+03:00",
+      "ig_id": "18403375348163277",
+      "fb_id": "4597981207126857",
+      "story_id": "18390336094224931",
+      "fb_story_id": "2986048081757366",
+      "yt_id": "msBNvBNcykQ",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
