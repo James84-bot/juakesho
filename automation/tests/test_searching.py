@@ -93,6 +93,17 @@ class NeverLateNeverStale(unittest.TestCase):
         self.assertIn("old news", searching.still_good(self.story(rows), self.AT + dt.timedelta(hours=4)))
 
 
+def _has_browser() -> bool:
+    try:
+        from playwright.sync_api import sync_playwright
+        with sync_playwright() as p:
+            p.chromium.launch().close()
+        return True
+    except Exception:
+        return False
+
+
+@unittest.skipUnless(_has_browser(), "needs Playwright Chromium (light-install runs have none)")
 class OneNight(unittest.TestCase):
     """20:00 EAT: the Story is made, approves itself, and goes out at 20:30 as an Instagram and Facebook Story."""
 
