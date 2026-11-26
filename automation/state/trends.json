@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-26T13:10:08.045534+00:00",
+  "fetched": "2026-11-26T13:41:57.347395+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "m-pesa",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Pesalink takes on Lipa na M-PESA with till numbers, starting at Quickmart",
+          "url": "https://tech-ish.com/2026/11/24/pesalink-takes-on-lipa-na-m-pesa-with-till-numbers-starting-at-quickmart/",
+          "source": "Techish Kenya"
+        },
+        {
+          "title": "Pesalink attains basic inclusivity status as it takes on M-Pesa with till, paybill services",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/pesalink-attains-basic-inclusivity-status-as-it-takes-on-m-pesa-5681770",
+          "source": "Business Daily"
+        },
+        {
+          "title": "AfricaNenda Foundation launches State of Inclusive Payments in Africa 2026",
+          "url": "https://www.finextra.com/newsarticle/48810/africanenda-foundation-launches-state-of-inclusive-payments-in-africa-2026",
+          "source": "Finextra Research"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "muhoozi kainerugaba",
@@ -48,28 +70,6 @@
     },
     {
       "geo": "KE",
-      "title": "m-pesa",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Pesalink takes on Lipa na M-PESA with till numbers, starting at Quickmart",
-          "url": "https://tech-ish.com/2026/11/24/pesalink-takes-on-lipa-na-m-pesa-with-till-numbers-starting-at-quickmart/",
-          "source": "Techish Kenya"
-        },
-        {
-          "title": "Pesalink attains basic inclusivity status as it takes on M-Pesa with till, paybill services",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/pesalink-attains-basic-inclusivity-status-as-it-takes-on-m-pesa-5681770",
-          "source": "Business Daily"
-        },
-        {
-          "title": "AfricaNenda Foundation launches State of Inclusive Payments in Africa 2026",
-          "url": "https://www.finextra.com/newsarticle/48810/africanenda-foundation-launches-state-of-inclusive-payments-in-africa-2026",
-          "source": "Finextra Research"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "arsenal news",
       "traffic": "1000+",
       "news": [
@@ -84,9 +84,9 @@
           "source": "London Evening Standard"
         },
         {
-          "title": "Arsenal dressing room's feelings on Man City's 114 charges case and punishment",
-          "url": "https://www.express.co.uk/sport/football/2269305/arsenal-dressing-room-man-city-charges",
-          "source": "Daily Express"
+          "title": "News | Viktor Gyokeres insists Arsenal won't be distracted by Man City's financial case",
+          "url": "https://vodacomsoccer.com/news/viktor-gyokeres-insists-arsenal-wont-be-distracted-by-man-citys-financial-case-1",
+          "source": "Vodacom Soccer"
         }
       ]
     },
@@ -172,11 +172,12 @@
           "source": "Kenyans.co.ke"
         },
         {
-          "title": "Crackdown: NTSA to suspend 300,000 driving licences",
-          "url": "https://www.the-star.co.ke/news/2026-11-26-ntsa-to-suspend-300000-driving-licences",
-          "source": "The Star, Kenya"
+          "title": "NPS intensifies nationwide road safety sensitisation campaign",
+          "url": "https://www.kbc.co.ke/nps-intensifies-nationwide-road-safety-sensitisation-campaign/",
+          "source": "KBC Digital"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -184,14 +185,14 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "SLA vs INDA, 1st Semi-Final (A1 v B2), ACC Men's Asia Cup Rising Stars 2026 - Commentary",
-          "url": "https://m.cricbuzz.com/live-cricket-scores/177210/inda-vs-sla-1st-semi-final-a1-v-b2-acc-mens-asia-cup-rising-stars-2026",
+          "title": "INDA 297/6 (47.5) (Tanush Kotian 25(26) Shahbaz Ahmed 45(44)) | Sri Lanka A vs India A, 1st Semi-Final (A1 v B2), ACC Men's Asia Cup Rising Stars 2026 Live Cricket Stream, live scores, ball-by-ball commentary, highlights, videos, news, and more in USA",
+          "url": "https://www.cricbuzz.com/live-cricket-scores/177210/sla-vs-inda-1st-semi-final-a1-v-b2-acc-mens-asia-cup-rising-stars-2026",
           "source": "Cricbuzz"
         },
         {
-          "title": "IND A vs SL A Live Score, 1st Semi Final Asia Cup Rising Stars: Suryansh falls as India suffer sixth blow",
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-sri-lanka-a-1st-semi-final-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-asian-town-cricket-stadium/liveblog/136181967.cms",
-          "source": "The Times of India"
+          "title": "India A Open Strongly Against Sri Lanka A in Asia Cup Semifinal",
+          "url": "https://cwibc.co.id/en/india-a-sri-lanka-semifinal-start",
+          "source": "cwibc.co.id"
         },
         {
           "title": "Vaibhav Sooryavanshi dismissed for 40 off 27 balls against Sri Lanka A in Asia Cup Rising Stars 2026 semifinal",
