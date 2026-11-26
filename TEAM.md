@@ -46,6 +46,25 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-26 15:15 EAT (cloud side): writer fixes, scope settled
+- **Rewrites are counted by `version`, not by id `-rN`** (32a324e). Photo swaps had taken the midday slot from -r2 to
+  -r8, which used up its rewrites. New photos, and a photo James sends, keep the version.
+- **The civic named-person warning now fires only beside an allegation** (32a324e, 56b50f4). It used to flag "Easy
+  Coach" and "National November". Stored old-style warnings follow the new rule, so d4-money (8.3) is now approved
+  for 19:30.
+- **Repairs run on the free backups (Groq, OpenRouter) once Gemini's per-run calls are spent** (c05df33). Until now,
+  drafts that broke the length or no-shouting rules were thrown away instead of being repaired.
+- **Dropped:**
+  - "On this day in Kenya": Wikipedia's year pages list a handful of events a year, and `kumbuka` already covers
+    anniversaries.
+  - Shilling chart: the shilling held near Sh129 all year (CBK), so there is nothing to show.
+  - Fuel prices: EPRA's monthly review already arrives as a news post.
+- **TikTok:** the Content Posting API audit requires a posting screen where a person picks privacy and consents to
+  each post. Postiz was refused for lacking it. A fully automatic poster can't pass, so the Telegram package stays.
+- **Football:** needs James's free football-data.org key (`FOOTBALL_DATA_KEY`). It covers the top European leagues,
+  not the Kenyan league.
+- **Check-in scheduled for 20:50:** confirm the 19:30 Money post and the first searching Story went out.
+
 ### 2026-11-26 (local side): no Mistral key
 - James checked: Mistral is not free for us, so `MISTRAL_API_KEY` stays unset. The backups are Groq and OpenRouter.
   The open task for the local side is **closed**: `aicheck --dry-run` (run 45812982236, 14:49) shows both working:
