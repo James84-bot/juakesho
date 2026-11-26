@@ -1,145 +1,137 @@
 {
-  "fetched": "2026-11-26T19:14:58.667350+00:00",
+  "fetched": "2026-11-26T22:15:41.123403+00:00",
   "safe": [
     {
       "geo": "KE",
+      "title": "juventus vs omonoia",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Juventus vs Omonia Nicosia: UEFA Europa League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cqx2evdl13lrt",
+          "source": "BBC"
+        },
+        {
+          "title": "Treble hero returns! Man Utd legend Henning Berg plots Omonia shock against Juventus as Spalletti warns tense stars not to slip up",
+          "url": "https://www.goal.com/en-ke/news/henning-berg-omonia-juventus-manchester-united-europa-league/blt2ebe995b34d3be09",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Spalletti and Neto speak ahead of Juventus vs Omonia in the UEL",
+          "url": "https://www.juventus.com/en/news/articles/spalletti-and-neto-speak-ahead-of-juventus-vs-omonia-in-the-uel",
+          "source": "Juventus.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "besiktas",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Son Dakika. Beşiktaş'ın İsrail takımıyla maçında saha karıştı: Gürcistan polisinden Filistin bayrağına sert müdahale",
-          "url": "https://tr.euronews.com/2026/11/26/besiktasin-israil-takimi-ile-macinda-saha-karisti-gurcistan-polisinden-filistin-bayragina-",
-          "source": "Euronews.com"
+          "title": "TFF Başkanı İbrahim Hacıosmanoğlu: Bebek katili İsrail, bu topraklarda oynayamaz - Beşiktaş - Spor Haberleri",
+          "url": "https://www.milliyet.com.tr/skorer/tff-baskani-ibrahim-haciosmanoglu-bebek-katili-israil-bu-topraklarda-oynayamaz-7708832",
+          "source": "Milliyet"
         },
         {
-          "title": "UEFA'nın kararlarına tepki... Fenerbahçe, Galatasaray ve Trabzonspor'dan Beşiktaş'a destek!",
-          "url": "https://www.cumhuriyet.com.tr/spor/uefa-nin-kararlarina-tepki-fenerbahce-galatasaray-ve-trabzonspor-dan-besiktas-a-destek-2559722",
+          "title": "Vincenzo Italiano: 'Oyuncular çok istekliydi, hedefimiz üst tur'",
+          "url": "https://www.hurriyet.com.tr/sporarena/vincenzo-italiano-oyuncular-cok-istekliydi-hedefimiz-ust-tur-43392537",
+          "source": "Hürriyet"
+        },
+        {
+          "title": "Orkun Kökçü'den Hapoel Beer Sheva maçı sözleri: 'Bizim için milli mesele oldu'",
+          "url": "https://www.cumhuriyet.com.tr/spor/orkun-kokcu-den-hapoel-beer-sheva-maci-sozleri-bizim-icin-milli-mesele-oldu-2559776",
           "source": "Cumhuriyet"
-        },
-        {
-          "title": "Vincenzo Italiano'dan Doğan Alemdar kararı için tek cümlelik yanıt",
-          "url": "https://www.ntvspor.net/futbol/galeri-vincenzo-italianodan-dogan-alemdar-karari-icin-tek-cumlelik-yanit-433692",
-          "source": "NTVSpor"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "europa conference league",
+      "title": "benfica",
       "traffic": "200+",
       "news": [
         {
-          "title": "Europa League LIVE! Bournemouth, Brighton, Celtic, Crystal Palace, Sunderland in Thursday night action!",
-          "url": "https://www.skysports.com/football/live-blog/13616700/europa-league-live-bournemouth-brighton-celtic-crystal-palace-sunderland-in-thursday-night-action",
-          "source": "Sky Sports"
+          "title": "Treinador do Plzen em êxtase: «Tínhamos uma grande equipa pela frente»",
+          "url": "https://www.abola.pt/noticias/treinador-do-plzen-em-extase-tinhamos-uma-grande-equipa-pela-frente-2026112621321799187",
+          "source": "A Bola"
         },
         {
-          "title": "Europa League & Conference League LIVE: Build-up, team news, scores and live text updates from the Europa League & Conference League",
-          "url": "https://www.bbc.com/sport/football/live/c6zxj2ypr4e8t",
-          "source": "BBC"
+          "title": "Lenglet e a final da Europa League: «Temos condições para lá chegar»",
+          "url": "https://sapo.pt/artigo/lenglet-e-a-final-da-europa-league-temos-condicoes-para-la-chegar-6b0864fbed7962199d344a91",
+          "source": "SAPO"
         },
         {
-          "title": "Sunderland v Jagiellonia Bialystok, Crystal Palace v Real Sociedad, and more: Europa League – live",
-          "url": "https://www.theguardian.com/football/live/2026/nov/26/sunderland-v-jagiellonia-bialystok-crystal-palace-v-real-sociedad-and-more-europa-league-live",
-          "source": "The Guardian"
+          "title": "Rui Costa: «Pedimos desculpa aos adeptos, não dignificámos a camisola do Benfica»",
+          "url": "https://www.zerozero.pt/noticias/rui-costa-pedimos-desculpa-aos-adeptos-nao-dignificamos-a-camisola-do-benfica-/1270901",
+          "source": "zerozero.pt"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "houthis",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Huge plume of black smoke seen from space after Houthis claim strike on Saudi’s biggest oil refinery",
-          "url": "https://www.cnn.com/2026/11/26/middleeast/houthi-saudi-oil-refinery-strike-satellite-imagery-intl",
-          "source": "CNN"
-        },
-        {
-          "title": "Oil Traders Ignore Growing Threat to Persian Gulf Supply",
-          "url": "https://oilprice.com/Energy/Crude-Oil/Oil-Traders-Ignore-Growing-Threat-to-Persian-Gulf-Supply.html",
-          "source": "Crude Oil Prices Today | OilPrice.com"
-        },
-        {
-          "title": "Diesel's Slump Offers Brief Respite From Global Energy Turmoil",
-          "url": "https://finance.yahoo.com/energy/articles/diesel-slump-offers-brief-respite-053258015.html",
-          "source": "Yahoo Finance"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "business insider africa",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Kenya Emerges as Top Destination for Chinese Solar Components",
-          "url": "https://www.bloomberg.com/news/articles/2026-11-26/kenya-emerges-as-top-destination-for-chinese-solar-components",
-          "source": "Bloomberg.com"
-        },
-        {
-          "title": "East Africa’s second-largest economy emerges as top destination for Chinese solar exports as imports jump from $5 million to $576 million and panel shipments to the lucrative US market surge",
-          "url": "https://africa.businessinsider.com/local/markets/east-africas-second-largest-economy-emerges-as-top-destination-for-chinese-solar/bqxbxm5",
-          "source": "Business Insider Africa"
-        },
-        {
-          "title": "Licensable video: Kenya Becomes Major Hub for Chinese Solar Components Bound for US",
-          "url": "https://www.reutersconnect.com/item/kenya-becomes-major-hub-for-chinese-solar-components-bound-for-us/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XU0hCQzEyMTA2NzM",
-          "source": "Reuters Connect"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "saburtalo vs getafe",
+      "title": "lyon",
       "traffic": "100+",
       "news": [
         {
-          "title": "Getafe Faces Saburtalo in Conference League Clash in Tbilisi",
-          "url": "https://demokratis.co.id/en/getafe-saburtalo-conference-league-tbilisi",
-          "source": "Demokratis.co.id"
+          "title": "OL - Lillestrøm : les compositions officielles",
+          "url": "https://www.footmercato.net/a6628289909232274295-ol-lillestrom-les-compositions-officielles",
+          "source": "Foot Mercato"
+        },
+        {
+          "title": "Mauvaises opérations pour Lyon et Rennes, qui manquent de rejoindre le Top 8 de la Ligue Europa",
+          "url": "https://www.franceinfo.fr/sports/foot/ligue-europa/mauvaises-operations-pour-lyon-et-rennes-qui-manquent-de-rejoindre-le-top-8-de-la-ligue-europa_8302110.html",
+          "source": "franceinfo"
+        },
+        {
+          "title": "Programme TV Foot : Midi Dix, Lyon-Lillestrom à 21h",
+          "url": "https://www.webgirondins.com/actualite-girondins-programme-tv-foot-midi-dix-lyon-lillestrom-a-21h-135308",
+          "source": "WebGirondins"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "kairat",
+      "title": "marseille fc",
       "traffic": "100+",
       "news": [
         {
-          "title": "Kairat vs Mjällby: UEFA Conference League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c5n4ewd2pg7lt",
-          "source": "BBC"
-        },
-        {
-          "title": "FC Kairat vs Mjällby Prediction: Two teams that have forgotten how to score",
-          "url": "https://www.telecomasia.net/sports-betting/tips/football/uefa-conference-league/fc-kairat-vs-mjallby-match-prediction-26-november-2026/",
-          "source": "Telecom Asia Sport"
-        },
-        {
-          "title": "PREVIEW | Kairat vs Mjallby: team news, lineups, predictions (Europa Conference League 26/11)",
-          "url": "https://onefootball.com/en/news/preview-kairat-vs-mjallby-team-news-lineups-predictions-europa-conference-league-2611-43831620",
+          "title": "Bruno Génésio dans l'histoire du football français 👑",
+          "url": "https://onefootball.com/fr/news/bruno-genesio-dans-lhistoire-du-football-francais-43847384",
           "source": "OneFootball"
+        },
+        {
+          "title": "« Je n’aurais pas tenté ça à ce moment » : la réaction de Genesio après la panenka ratée de Gouiri",
+          "url": "https://www.footmercato.net/a1368431690863167773-je-naurais-pas-tente-ca-a-ce-moment-la-reaction-de-genesio-apres-la-panenka-ratee-de-gouiri",
+          "source": "Foot Mercato"
+        },
+        {
+          "title": "Ligue Europa : incidents entre supporters de l'OM et du Levski Sofia",
+          "url": "https://information.tv5monde.com/societe/ligue-europa-incidents-entre-supporters-de-lom-et-du-levski-sofia-2847186",
+          "source": "tv5monde"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "viktoria plzeň vs benfica",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "olympiacos vs milan",
+      "title": "sunderland",
       "why": "unsafe: 'Odds'"
     },
     {
-      "title": "marseille vs levski sofia",
+      "title": "borac vs atalanta",
+      "why": "unsafe: 'betting'"
+    },
+    {
+      "title": "cska sofia vs trabzonspor",
       "why": "unsafe: 'Betting'"
     },
     {
-      "title": "brighton vs craiova",
+      "title": "union saint gilloise",
       "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "palace vs real sociedad",
+      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}
