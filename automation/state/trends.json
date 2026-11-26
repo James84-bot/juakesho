@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-26T05:41:34.171910+00:00",
+  "fetched": "2026-11-26T06:02:20.477067+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -12,39 +12,16 @@
           "source": "The Star, Kenya"
         },
         {
-          "title": "KPLC Announces Power Interruptions in 6 Counties on Thursday",
-          "url": "https://nairobileo.co.ke/news/article/31702/kplc-announces-power-interruptions-in-6-counties-on-thursday",
-          "source": "Nairobi Leo"
-        },
-        {
           "title": "Power restored in parts of Kenyan capital after major outage",
           "url": "https://en.yenisafak.com/world/power-restored-in-parts-of-kenyan-capital-after-major-outage-2972279",
           "source": "Yeni Safak English"
+        },
+        {
+          "title": "Plan ahead: KPLC announces power outages in several areas tomorrow",
+          "url": "https://www.tuko.co.ke/kenya/counties/647920-kenya-power-lists-areas-6-counties-facing-electricity-interruptions-thursday-november-26/",
+          "source": "Tuko News"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "losc lille vs bayern munich standings",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Harry Kane injured as Bayern Munich and PSG face injury crises plus Lamine Yamal and Kylian Mbappe miss penalties",
-          "url": "https://www.skysports.com/football/news/13612575/harry-kane-injured-as-bayern-munich-and-psg-face-injury-crises-plus-lamine-yamal-and-kylian-mbappe-miss-penalties",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Successful surgery for Harry Kane",
-          "url": "https://fcbayern.com/en/news/2026/11/successful-surgery-for-harry-kane",
-          "source": "FC Bayern"
-        },
-        {
-          "title": "Dortmund president sends wishes to Kane",
-          "url": "https://www.bundesliga.com/en/bundesliga/videos/watch/dortmund-president-sends-wishes-to-kane-0Y1mSFw1",
-          "source": "Bundesliga | official website"
-        }
-      ],
-      "civic": true
     },
     {
       "geo": "KE",
@@ -98,23 +75,45 @@
     },
     {
       "geo": "KE",
+      "title": "flashscore",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Piers Morgan labels Chelsea star Cole Palmer a ‘d***head’ and slams ‘rotten attitude’ after Leeds United humiliation",
+          "url": "https://www.goal.com/en-ke/news/piers-morgan-slams-cole-palmer-chelsea-fan-snub/blt151a0dedc6acb246",
+          "source": "Goal.com"
+        },
+        {
+          "title": "'Really poor' - Tony Cascarino identifies Chelsea's biggest problem player",
+          "url": "https://theprideoflondon.com/tony-cascarino-identifies-chelseas-biggest-problem-player",
+          "source": "The Pride of London"
+        },
+        {
+          "title": "Palmer's dwindling Chelsea form becoming harder to ignore",
+          "url": "https://www.tribalfootball.com/article/soccer-premier-league-palmer-s-dwindling-chelsea-form-becoming-harder-to-ignore-5b4103b7-dbee-4882-8b9a-04115e0cbe6d",
+          "source": "TribalFootball"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "76ers vs heat",
       "traffic": "200+",
       "news": [
         {
-          "title": "76ers Vs Miami Heat Player Stats show a late Sixers push as Group B hangs in the balance",
-          "url": "https://twaslnews1.twaslnews.com/8314669/",
-          "source": "شبكة تواصل الإخبارية"
+          "title": "76ers' Jaylen Brown exits with recurrence of hamstring issue",
+          "url": "https://www.espn.com/nba/story/_/id/50599296/76ers-jaylen-brown-exits-recurrence-hamstring-issue",
+          "source": "ESPN"
         },
         {
-          "title": "“He’s ill. I do not know whether he’s going to Indiana …",
-          "url": "https://ca.sports.yahoo.com/news/ill-not-know-whether-going-210455870.html",
-          "source": "Yahoo"
+          "title": "Sixers rule Jaylen Brown out at halftime of NBA Cup game vs. Heat",
+          "url": "https://cumberlink.com/sports/professional/nba/article_9adae002-729e-59ab-8aca-402e31780810.html",
+          "source": "Carlisle Sentinel"
         },
         {
-          "title": "Joel Embiid (illness) out Wednesday vs. Heat",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/joel-embiid-illness-out-wednesday-vs-heat",
-          "source": "NBC Sports"
+          "title": "Jaylen Brown DTD For Nov. 27 Against Pacers Due To Hamstring Injury",
+          "url": "https://www.fanduel.com/research/nba/player-news/injuries/jaylen-brown-dtd-november-27-2026-against-pacers-hamstring",
+          "source": "FanDuel"
         }
       ]
     },
@@ -142,23 +141,23 @@
     },
     {
       "geo": "KE",
-      "title": "bbc football",
-      "traffic": "100+",
+      "title": "champions league stats",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Champions League LIVE: Sporting vs Man Utd & Club Brugge vs Liverpool score & updates from seven other games",
-          "url": "https://www.bbc.com/sport/football/live/cx98zmzyn0y7t",
+          "title": "Betis Corners & Cards Stats 2026/27 (UEFA Champions League): Corners per Game, Yellow Cards, Shots | All Football",
+          "url": "https://m.dongqiudi.com/en/stats/corners/50001764-27456",
+          "source": "懂球帝"
+        },
+        {
+          "title": "Team news: Confirmed Liverpool line-up v Club Brugge",
+          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-club-brugge",
+          "source": "Liverpool FC"
+        },
+        {
+          "title": "'All coming together' - Isak repaying Liverpool faith",
+          "url": "https://www.bbc.com/sport/football/articles/cqm2l0gelkzxo",
           "source": "BBC"
-        },
-        {
-          "title": "Club Brugge 0-3 Liverpool, Lille 2-1 Bayern, PSG 2-2 Roma: Champions League clockwatch – as it happened",
-          "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Champions League recap: Another night of mayhem for Pochettino's Man United",
-          "url": "https://www.espn.com/soccer/story/_/id/50574274/uefa-champions-league-live-updates",
-          "source": "ESPN"
         }
       ]
     }

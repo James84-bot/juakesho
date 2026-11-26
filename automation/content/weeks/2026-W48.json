@@ -403,20 +403,21 @@
       "photo_fit": "2026-11-22T18:01:53.195367+03:00"
     },
     {
-      "id": "2026-w48-d6-kenya",
+      "id": "2026-w48-d6-kenya-r3",
       "template": "kenya",
       "bg": "usiku",
       "lane": "everyone",
       "publish_at": "2026-11-28T11:00:00+03:00",
-      "status": "needs_human",
       "series": "Built in Kenya",
+      "status": "needs_human",
+      "fix": "no verified fact left in content/facts.json for this series (all used recently): add entries",
       "guard": {
         "errors": [
           "no verified fact left in content/facts.json for this series (all used recently): add entries"
         ],
         "warnings": []
       },
-      "drafted_at": "2026-11-22T17:29:55.611635+03:00"
+      "drafted_at": "2026-11-26T09:02:53.898492+03:00"
     },
     {
       "id": "2026-w48-d7-glasspoll",
@@ -3035,10 +3036,10 @@
     }
   ],
   "scripts": {
-    "radio": "Good evening. This is Kenya on Record. Budget documents submitted to Parliament indicate that the Executive has requested an additional 8.42 billion shillings for the renovation and refurbishment of State House and regional State Lodges under the latest supplementary budget. According to government expenditure estimates, these funds are designated to modernize aging infrastructure, upgrade security systems, and maintain diplomatic hosting standards. However, the proposal comes at a time when citizens and civil society groups are voicing strong concerns over the high cost of living, recent taxation measures, and government commitments to fiscal consolidation. Analysts and parliamentary budget committees have questioned whether such capital-intensive expenditures align with pressing national needs in education, debt obligations, and public healthcare. The National Assembly is scheduled to debate these allocations before any final disbursements are approved, giving lawmakers a key role in setting expenditure priorities.\n\nKwa ufupi: Ripoti za bajeti bungeni zinaonyesha Ikulu imeomba nyongeza ya shilingi bilioni nane nukta nne kwa ajili ya ukarabati. Ingawa serikali inataja uboreshaji wa usalama na majengo, wananchi na wachambuzi wanahoji matumizi haya wakati ambapo mzigo wa kodi na gharama ya maisha bado ni changamoto kubwa.",
-    "voice_note": "Habari zenu, here is your Kenya on Record brief for the week. Parliamentary records show that State House has requested an extra 8.42 billion shillings in the supplementary budget for renovations across State House Nairobi and regional lodges. The government's justification outlines necessary structural repairs and enhanced security installations. At the same time, this proposal has sparked serious discussion among taxpayers and civic groups, given the tight economic climate and increasing tax demands on ordinary households and small businesses. Parliamentary committees now have the responsibility to scrutinize these figures, assess whether the expense is justified, or redirect resources to critical public services. Keep an eye on how your representative engages with this supplementary budget debate.",
-    "sms": "Usiibiwe: Track how MPs vote on the Sh8.42bn State House budget request. Public funds must reflect real public priorities. Demand fiscal accountability.",
-    "reels": "Parliament is reviewing a supplementary budget request seeking 8.42 billion shillings for State House renovations. Official reports cite critical structural repairs and security upgrades. However, with taxpayers feeling the squeeze of high living costs, questions are mounting over national spending priorities. Parliament holds the power to approve, amend, or reject these estimates. Will your MP interrogate the figures? Follow Kenya on Record to stay informed."
+    "radio": "Sasa, wasikilizaji wa Kenya on Record. Ni mimi mtangazaji wako, na leo tunasimama kidogo tuangalie hesabu za taifa. Unajua, mwisho wa mwaka unakaribia, na kila mahali ni kelele za sherehe. Lakini nyuma ya hizo sherehe, kuna mamilioni ya ushuru wetu yaliyotengwa kwa ajili ya miradi ya maendeleo.\n\nSwali ambalo kila mmoja wetu anapaswa kujiuliza wiki hii ni hili: Je, lile daraja, ile barabara, au ule zahanati uliyoahidiwa kwenye wadi yenu imekamilika? Ama pesa zimeenda kwa mifuko ya wajanja wachache?\n\nKumbuka, uwajibikaji hauanzii Nairobi; unaanzia pale chini kijijini. Ukitazama ripoti ya CAG, unaona wazi jinsi pesa zauma inavyopigwa kote kote. Lakini serikali ya kaunti haisikii kelele za mitandaoni pekee; wanasikia pale wananchi wanaposimama pamoja na kuuliza maswali magumu. Hii wiki, usikae kimya. Tembelea ofisi ya kaunti, dai kuona bajeti, na uliza: Hii kazi ilipitishwa wapi?\n\n[Kiswahili Summary]\n*Muhtasari:* Kenya on Record tunawakumbusha wananchi wote kuwa na jukumu la kufuatilia matumizi ya pesa za umma katika kaunti zetu. Usikubali miradi ikwame huku fedha zikisombwa. Simama kidogo, uliza maswali, na udai maendeleo ya ukweli kabla ya mwaka kuisha.",
+    "voice_note": "Sasa mwananchi mwenzangu. Hapa ni Kenya on Record. Hebu tuongee ukweli kidogo leo. Hii wiki tunaangazia vile pesa za kaunti zinavyotembea bila kuacha alama. Unapata mkandarasi kalipwa mia kwa mia lakini kazi imekwama kwa msingi. Alafu kiongozi anatokea na kusema mradi uko njiani! Njia gani hiyo inayochukua miaka mitano kujenga kilomita mbili? Kuanzia leo, tuache kuwa wapole na pesa zetu wenyewe. Uliza risiti, fuatilia bajeti ya kaunti yako, na usikubali kudanganywa na suti za bei ghali. Piga simu,andika barua,fanya waone uko macho. Tumechoka na porojo. Weka rekodi sawa!",
+    "sms": "Usiibiwe: Pesa za kaunti si za kampeni wala mifuko binafsi. Dai kuona bango la mradi kabla ya kazi kuanza. Usikubali kodi yako ipotee. Kenya on Record.",
+    "reels": "[Visual: Quick cuts of incomplete county projects, dusty roads, then a sharp pivot to a citizen holding a notebook and pen]\n\nVoice-over (steady, serious, grown-up):\n\n\"Eneo lako limeahidiwa maendeleo mara ngapi?\n\nAlafu ukiangalia chini, hakuna barabara, hakuna maji, hakuna huduma.\n\nPesa zilienda wapi?\n\nUsikubali kumezwa na siasa za wiki hii.\n\nFuatilia bajeti.\n\nUliza maswali.\n\nHuu ni mwaka wa kuwawajibisha. Kila shilingi inahesabika.\n\nKenya on Record. Weka rekodi sawa.\""
   },
   "spend_usd": 0.0
 }
