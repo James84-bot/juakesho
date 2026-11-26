@@ -1055,7 +1055,7 @@ class RedoTests(TempWeeks):
         self.assertEqual(posts["a"]["status"], "awaiting")      # untouched, still in your Telegram
         self.assertEqual(posts["a"]["title"], "keep")
         self.assertEqual(posts["b"], {"id": "b", "template": "spotlight", "bg": "usiku", "lane": "creator",
-                                      "publish_at": when, "status": "planned"})   # old content and errors cleared
+                                      "publish_at": when, "status": "planned", "version": 1})   # old content and errors cleared
         self.assertEqual(posts["c"]["status"], "planned")       # whole carousel redone together
         self.assertEqual(posts["c-1"]["n"], 1)
 

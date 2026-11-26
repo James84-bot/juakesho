@@ -787,8 +787,12 @@ def check(post: dict) -> Report:
             rep.errors.append("civic post needs a `source` (report, audit, study)")
         names = {m for m in re.findall(r"\b(?:[A-Z][a-z]{2,}\s){1,2}[A-Z][a-z]{2,}\b", text)
                  if m not in SAFE_NAMES and not set(m.split()) & NOT_NAMES}
-        if names:
-            rep.warnings.append(f"possible named person(s): {', '.join(sorted(names))}. Civic posts target systems, not people.")
+        # The rule is "never an accusation against a named person". A company spokesperson quoted on fares is not one;
+        # on 26 Nov "Easy Coach" and "National November" held a Money post scoring 8.3. Names are flagged only
+        # where the post also carries an allegation.
+        if names and CRIME_WORDS.search(text):
+            rep.warnings.append(f"possible named person(s) beside an allegation: {', '.join(sorted(names))}. "
+                                "Civic posts target systems, not people.")
     if (tpl in SOURCE_CHECKED or post.get("series") in CIVIC_SERIES) and post.get("source") \
             and "rehearsal sample" not in str(post.get("source")).lower():
         problem = source_problem(post)

@@ -1453,7 +1453,7 @@ def _merge(slots: list[dict], drafted: list[dict]) -> list[dict]:
     out = []
     for s in slots:
         d = {k: v for k, v in by_id.get(s["id"], {}).items() if k != "researched"}   # only a person sets that
-        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "beat", "angle", "avoid", "breaking", "source_links") if k in s}
+        locked = {k: s[k] for k in ("id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "beat", "angle", "avoid", "breaking", "source_links", "version", "fix") if k in s}
         out.append(tidy_beats(attribute_single_source(material.lock(news.resolve({**d, **locked}, table), s))))
     return out
 

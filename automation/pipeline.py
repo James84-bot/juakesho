@@ -574,7 +574,8 @@ def draft(label: str, mock: bool = False, horizon: dt.timedelta | None = DRAFT_A
 # ---------------------------------------------------------------------------
 # 3. Render (PNG for Telegram/WhatsApp, JPEG for Instagram)
 # ---------------------------------------------------------------------------
-PLAN_KEYS = {"id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "angle"}
+PLAN_KEYS = {"id", "template", "bg", "lane", "publish_at", "size", "group", "n", "total", "series", "remember", "hot", "angle",
+             "version"}
 
 
 def redo(label: str) -> list[str]:
@@ -586,6 +587,7 @@ def redo(label: str) -> list[str]:
     for i, p in enumerate(data["posts"]):
         if p["status"] == "needs_human" or (p.get("group") in groups and p["status"] != "published"):
             data["posts"][i] = {k: v for k, v in p.items() if k in PLAN_KEYS} | {"status": "planned"}
+            data["posts"][i]["version"] = _version(p) + 1
             if p.get("tg_msg"):   # its card is in Telegram: a new id, so that old card can't approve new words
                 data["posts"][i]["id"] = _next_rev(p["id"], _ids(data))
             reset.append(data["posts"][i]["id"])
@@ -765,6 +767,13 @@ def _revision(pid: str) -> int:
     return int(m.group(1)) - 1 if m else 0
 
 
+def _version(p: dict) -> int:
+    """How many times the post's words were written again (0 = the first draft). Not its id's -rN: a new photo also
+    gives a new id (so an old card can't approve it), and on 26 Nov photo swaps took the midday slot from -r2 to -r8,
+    using up its rewrites before the writer got them."""
+    return p["version"] if isinstance(p.get("version"), int) else _revision(p["id"])
+
+
 def quality_hold(p: dict) -> str:
     """Why a news post can't go out by itself because of the draft ('' if nothing): a check it failed, or the editor's
     score missing or under the bar. (A political story or a portrait waits for you whatever the draft: another draft
@@ -792,7 +801,7 @@ def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> 
         data = load_week(label)
         today = now().date().isoformat()
         held = [p for p in data["posts"] if p.get("hot") and not p.get("breaking") and not p.get("replaced_by")
-                and str(p.get("drafted_at", ""))[:10] == today and _revision(p["id"]) < tries
+                and str(p.get("drafted_at", ""))[:10] == today and _version(p) < tries
                 and (p["status"] == "needs_human" or (p["status"] in {"drafted", "rendered", "awaiting"} and fix_reason(p)))]
         if not held:
             break
@@ -800,6 +809,7 @@ def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> 
             story = str(p.get("message") or p.get("line") or "")[:120]
             new = {k: v for k, v in p.items() if k in PLAN_KEYS | {"beat"}}
             new["id"] = _next_rev(p["id"], _ids(data))
+            new["version"] = _version(p) + 1
             new["status"] = "planned"
             new["avoid"] = [x for x in [*(p.get("avoid") or []), story] if x]
             new["fix"] = fix_reason(p) or "; ".join((p.get("guard") or {}).get("errors") or [])[:300]
@@ -831,7 +841,7 @@ def fix_planned(label: str) -> list[str]:
     data, t = load_week(label), now()
 
     def due(p: dict) -> bool:
-        if p.get("hot") or p.get("template") in AUTO_NEVER | {"tazama"} or _revision(p["id"]) + 1 >= FIX_TRIES:
+        if p.get("hot") or p.get("template") in AUTO_NEVER | {"tazama"} or _version(p) + 1 >= FIX_TRIES:
             return False
         slot = dt.datetime.fromisoformat(p["publish_at"])
         if t - slot > LATE_LIMIT - dt.timedelta(hours=2):   # past saving: settle_unanswered closes it
@@ -853,6 +863,7 @@ def fix_planned(label: str) -> list[str]:
             continue
         new = {k: v for k, v in p.items() if k in PLAN_KEYS} | {"status": "planned"}
         new["id"] = _next_rev(p["id"], _ids(data))
+        new["version"] = _version(p) + 1
         if p.get("group"):
             new["group"] = new_groups.setdefault(p["group"], _next_rev(p["group"], _ids(data)))
         slot = dt.datetime.fromisoformat(p["publish_at"])
@@ -925,6 +936,7 @@ def rephoto(label: str, only: str | None = None) -> list[str]:
         if p["status"] not in allowed or not (p.get("photo_query") or p.get("photo")):
             continue
         old = p["id"]
+        p["version"] = _version(p)   # new photos, same words: not another version
         p["id"] = _next_rev(old, _ids(data))
         if p.get("group"):
             p["group"] = groups.setdefault(p["group"], _next_rev(p["group"], _ids(data)))
@@ -937,6 +949,7 @@ def rephoto(label: str, only: str | None = None) -> list[str]:
     # a carousel goes out whole: slides without a photo query still need the new group and a re-send
     for p in data["posts"]:
         if p.get("group") in groups and p["id"] not in changed and p["status"] in {"awaiting", "drafted", "rendered"}:
+            p["version"] = _version(p)
             p["group"], p["id"], p["status"] = groups[p["group"]], _next_rev(p["id"], _ids(data)), "drafted"
             changed.append(p["id"])
     save_week(data)
@@ -1034,6 +1047,7 @@ def _photo_intake(msg: dict, chat: str) -> None:
     if not msg.get("document") and photo.get("width", 0) < 800:
         return reply("📷 That photo is too small (under 800 px wide). Send the original, or send it as a file.")
     label = data["collection"]
+    post["version"] = _version(post)   # your photo, same words
     new_id = _next_rev(post["id"], _ids(data))
     target = EXPORTS / label / "photos" / f"{new_id}-sent.jpg"
     rel = target.relative_to(ROOT) if ROOT in target.parents else target   # kept relative to the repo when inside it
@@ -1943,7 +1957,7 @@ def expire_unanswered() -> list[str]:
             elif nxt and nxt["status"] not in {"rejected", "dropped", "missed"} and late <= LATE_LIMIT:
                 continue   # its replacement is still being written or checked
             elif fix_reason(p) and late <= LATE_LIMIT and (
-                    (p.get("hot") and _revision(p["id"]) < HOT_RETRIES) or (not p.get("hot") and _revision(p["id"]) + 1 < FIX_TRIES)):
+                    (p.get("hot") and _version(p) < HOT_RETRIES) or (not p.get("hot") and _version(p) + 1 < FIX_TRIES)):
                 continue   # another version is due (retry_held_hot / fix_planned)
             else:
                 p["status"] = "dropped"

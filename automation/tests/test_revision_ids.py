@@ -28,5 +28,40 @@ class NextRevision(unittest.TestCase):
         self.assertEqual(len(ids), len(set(ids)))
 
 
+class Versions(unittest.TestCase):
+    """26 Nov: photo swaps took the midday slot from -r2 to -r8 and used up its rewrites before the writer had them."""
+
+    def test_new_photos_keep_the_version_and_only_rewrites_count(self):
+        post = {"id": "w-hot-1126-r2", "status": "awaiting", "hot": True, "photo_query": "x", "version": 1}
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(pl, "WEEKS", Path(d)):
+            pl.save_week({"collection": "2026-W48", "posts": [post], "scripts": {}})
+            pl.rephoto("2026-W48", only="w-hot-1126-r2")
+            pl.rephoto("2026-W48", only="w-hot-1126-r3")
+            got = pl.load_week("2026-W48")["posts"][0]
+        self.assertEqual((got["id"], pl._version(got)), ("w-hot-1126-r4", 1))
+
+    def test_an_old_post_without_a_version_counts_its_id(self):
+        self.assertEqual(pl._version({"id": "w-hot-1126-r3"}), 2)
+        self.assertEqual(pl._version({"id": "w-hot-1126-r8", "version": 2}), 2)
+
+
+class CivicNames(unittest.TestCase):
+    """26 Nov: 'Easy Coach' and 'National November' held a Money post that scored 8.3."""
+
+    def post(self, message):
+        return {"id": "m", "template": "money", "source": "Nation, 25 Nov", "message": message,
+                "caption": "Share this with the friend who travels.", "beats": [message]}
+
+    def test_a_company_or_a_quoted_spokesperson_is_not_a_hold(self):
+        import guard
+        w = guard.check(self.post("Easy Coach raised fares by Sh200, says manager Bellarmine Bulinda.")).warnings
+        self.assertFalse([x for x in w if "named person" in x])
+
+    def test_a_name_beside_an_allegation_still_waits(self):
+        import guard
+        w = guard.check(self.post("Easy Coach boss John Kamau was charged with fraud over fares.")).warnings
+        self.assertTrue([x for x in w if "named person" in x])
+
+
 if __name__ == "__main__":
     unittest.main()
