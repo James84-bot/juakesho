@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-26T06:02:20.477067+00:00",
+  "fetched": "2026-11-26T06:06:33.983279+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,21 +7,22 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "Kenya Power explains why it conducts planned power cuts",
-          "url": "https://www.the-star.co.ke/news/2026-11-24-kenya-power-why-we-conduct-planned-power-cuts",
-          "source": "The Star, Kenya"
+          "title": "Kenya Power flags costly tokens as monopoly ends",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/industry/kenya-power-flags-costly-tokens-as-monopoly-ends-5684406",
+          "source": "Business Daily"
         },
         {
-          "title": "Power restored in parts of Kenyan capital after major outage",
-          "url": "https://en.yenisafak.com/world/power-restored-in-parts-of-kenyan-capital-after-major-outage-2972279",
-          "source": "Yeni Safak English"
+          "title": "Parliament backs rules allowing independent power producers to sell electricity directly to consumers",
+          "url": "https://peopledaily.digital/news/parliament-backs-rules-allowing-independent-power-producers-to-sell-electricity-directly-to-consumers",
+          "source": "People Daily"
         },
         {
-          "title": "Plan ahead: KPLC announces power outages in several areas tomorrow",
-          "url": "https://www.tuko.co.ke/kenya/counties/647920-kenya-power-lists-areas-6-counties-facing-electricity-interruptions-thursday-november-26/",
-          "source": "Tuko News"
+          "title": "MPs Approve New Rules Changing How Some Kenyans Buy Electricity",
+          "url": "https://www.kenyans.co.ke/news/129534-mps-approve-rules-allowing-direct-power-sales-big-consumers",
+          "source": "Kenyans.co.ke"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -75,6 +76,28 @@
     },
     {
       "geo": "KE",
+      "title": "warriors vs kings",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Warriors 129-110 Kings (Nov 25, 2026) Game Recap",
+          "url": "https://www.espn.com/nba/recap?gameId=401909324",
+          "source": "ESPN"
+        },
+        {
+          "title": "Takeaways from Warriors' Win Over Kings: Why Acuff, Lendeborg Have Intriguing ROY Race",
+          "url": "https://www.si.com/nba/warriors/onsi/takeaways-from-warriors-win-over-kings-why-acuff-lendeborg-have-intriguing-roy-race-01m8b12gmrh7",
+          "source": "Sports Illustrated"
+        },
+        {
+          "title": "De’Antony Melton scores team-high 24 points",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-26/deantony-melton-scores-team-high-24-points",
+          "source": "NBC Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "flashscore",
       "traffic": "500+",
       "news": [
@@ -101,19 +124,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "76ers' Jaylen Brown exits with recurrence of hamstring issue",
-          "url": "https://www.espn.com/nba/story/_/id/50599296/76ers-jaylen-brown-exits-recurrence-hamstring-issue",
+          "title": "LeBron dusts 'off the cape' to save 76ers with triple-double",
+          "url": "https://www.espn.com/nba/story/_/id/50601303/lebron-dusts-cape-save-76ers-triple-double",
           "source": "ESPN"
         },
         {
-          "title": "Sixers rule Jaylen Brown out at halftime of NBA Cup game vs. Heat",
-          "url": "https://cumberlink.com/sports/professional/nba/article_9adae002-729e-59ab-8aca-402e31780810.html",
-          "source": "Carlisle Sentinel"
+          "title": "James becomes oldest with NBA triple-double in Sixers win",
+          "url": "https://www.afp.com/en/james-becomes-oldest-nba-triple-double-sixers-win",
+          "source": "AFP.com"
         },
         {
-          "title": "Jaylen Brown DTD For Nov. 27 Against Pacers Due To Hamstring Injury",
-          "url": "https://www.fanduel.com/research/nba/player-news/injuries/jaylen-brown-dtd-november-27-2026-against-pacers-hamstring",
-          "source": "FanDuel"
+          "title": "\"He’s Having Fun\" - Miami Heat Star Giannis Antetokounmpo Makes Candid Admission About NBA legend LeBron James",
+          "url": "https://sports.ndtv.com/us/nba/he-s-having-fun-miami-heat-star-giannis-antetokounmpo-makes-candid-admission-about-nba-legend-lebron-james-12378729",
+          "source": "NDTV Sports"
         }
       ]
     },
@@ -141,23 +164,23 @@
     },
     {
       "geo": "KE",
-      "title": "champions league stats",
-      "traffic": "200+",
+      "title": "manchester united f.c. games",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Betis Corners & Cards Stats 2026/27 (UEFA Champions League): Corners per Game, Yellow Cards, Shots | All Football",
-          "url": "https://m.dongqiudi.com/en/stats/corners/50001764-27456",
-          "source": "懂球帝"
-        },
-        {
-          "title": "Team news: Confirmed Liverpool line-up v Club Brugge",
-          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-v-club-brugge",
-          "source": "Liverpool FC"
-        },
-        {
-          "title": "'All coming together' - Isak repaying Liverpool faith",
-          "url": "https://www.bbc.com/sport/football/articles/cqm2l0gelkzxo",
+          "title": "Man Utd on wrong end of more controversial decisions in Sporting draw",
+          "url": "https://www.bbc.com/sport/football/articles/c6vg24l724l4o",
           "source": "BBC"
+        },
+        {
+          "title": "Sporting 2-2 Man Utd: Mauricio Pochettino denied first win by Senne Lammens howler in Champions League",
+          "url": "https://www.skysports.com/football/news/13616484/sporting-2-2-man-utd-mauricio-pochettino-denied-first-win-by-senne-lammens-howler-in-champions-league",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Champions League talking points: Was this a good result for Man United?",
+          "url": "https://www.espn.com/soccer/story/_/id/50594529/champions-league-talking-points-manchester-united-sporting-draw",
+          "source": "ESPN"
         }
       ]
     }
@@ -165,10 +188,6 @@
   "dropped": [
     {
       "title": "trail blazers vs spurs",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "warriors vs kings",
       "why": "unsafe: 'Odds'"
     }
   ],

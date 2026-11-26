@@ -3033,13 +3033,436 @@
       "decided_at": "2026-11-26T07:08:55.799784+03:00",
       "photo_checked": "2026-11-26T07:21:29.863821+03:00",
       "photo_fit": "2026-11-26T07:21:29.863834+03:00"
+    },
+    {
+      "id": "2026-w48-hot-1126",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Journalists",
+      "line": "Editors convene in Mombasa to assess media preparedness ahead of the *2027* elections.",
+      "fact": "Editors met on November 26, 2026, in Mombasa to review election coverage standards.",
+      "message": "Editors met in Mombasa to prepare for transparent election reporting ahead of 2027.",
+      "action": "Demand truth: check reporting against official records before sharing",
+      "beats": [
+        "Editors met in Mombasa to assess media *preparedness* for 2027.",
+        "Accurate news helps voters make informed choices at the ballot.",
+        "Tell us below: do you trust the media to report *fairly?*"
+      ],
+      "photo_query": "Kenyan media press conference",
+      "source": "Capital FM News, 2026-11-26",
+      "caption": "Editors in Mombasa are looking at how the media covers elections. Accurate reporting protects our vote. Drop your view below.\n\nDo you trust the media to report fairly?\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-26T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Kenya signed a third bilateral agreement with Canada to expand labour mobility for skilled workers.",
+        "State House wants an extra Sh8.42bn for renovations while ordinary Kenyans struggle with taxes."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Editors convene in Mombasa to assess media preparedness ahead of 2027 elections",
+          "link": "https://capitalfm.africa/editors-convene-in-mombasa-to-assess-media-preparedness-ahead-of-2027-elections/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-26"
+        }
+      ],
+      "quotes": [],
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Accurate election reporting protects our vote and keeps leaders accountable.",
+      "who": "Media Editors",
+      "where": "Mombasa",
+      "when": "26 Nov 2026",
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.5/10. This is a generic industry workshop announcement that does not match what Kenyans are currently discussing online."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 6,
+        "fresh": 4,
+        "voice": 5,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 2,
+        "action": 3,
+        "fair": 7,
+        "impact": 4,
+        "human": 4,
+        "avg": 4.5,
+        "note": "This is a generic industry workshop announcement that does not match what Kenyans are currently discussing online."
+      },
+      "drafted_at": "2026-11-26T09:08:29.829660+03:00",
+      "replaced_by": "2026-w48-hot-1126-r2",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/editors-convene-in-mombasa-to-assess-media-preparedness-ahead-of-2027-elections/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "shot_info": [
+        {
+          "credit": "Photo: Capital FM",
+          "title": "Editors convene in Mombasa to assess media preparedness ahead of 2027 elections"
+        }
+      ],
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1834
+    },
+    {
+      "id": "2026-w48-hot-1126-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Job opportunities",
+      "line": "Kenya signs its *third* labour agreement with Canada to send skilled workers.",
+      "fact": "The new pact provides structured migration channels for Kenyan professionals.",
+      "message": "Canada signed a third labour agreement with Kenya to open structured jobs.",
+      "action": "Check verified migration details at labour.go.ke before applying",
+      "beats": [
+        "Kenya and Canada signed a *third* labour mobility agreement.",
+        "The pact opens structured job channels for skilled Kenyan professionals.",
+        "Thousands of youth look abroad as local job markets shrink.",
+        "Tell us below: would you move abroad for work right now?"
+      ],
+      "photo_query": "Kenyan passport and Canadian flag",
+      "source": "Daily Nation, 2026-11-26",
+      "caption": "Another labour deal signed. Canada and Kenya agree on new paths for skilled professionals. Jobs at home or abroad?\n\nTell us below: would you move abroad for work right now?\n\n#Canada #KenyaOnRecord",
+      "who": "Ministry of Labour",
+      "where": "National",
+      "when": "26 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Skilled Kenyans find new legal migration pathways to Canadian job markets.",
+      "bg": "usiku",
+      "publish_at": "2026-11-26T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Kenya signed a third bilateral agreement with Canada to expand labour mobility for skilled workers.",
+        "State House wants an extra Sh8.42bn for renovations while ordinary Kenyans struggle with taxes.",
+        "Editors met in Mombasa to prepare for transparent election reporting ahead of 2027."
+      ],
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Kenya signs third jobs deal with Canada",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOXzE3NkJIMV80c0FWQ1BUcEhIeXZkVFI0SnBlcjc0aUxLVU5tYkZVQ0JSR0U2NVFwWk5sajVmekJMVko2NnBnWFFuYkdBQ0I3M0VZa1NxZWY4akNsaWoyUFV1dW1NTnRFOERzWF83RFZHdDFLNFE1bTdXSG5mTHdiaTZKMWx3QTRuS25hQQ?oc=5",
+          "published": "2026-11-26"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 5.3/10. Ground this in actual news demand and replace the generic web link action with a proper bureaucratic demand."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 8,
+        "fresh": 5,
+        "voice": 7,
+        "craft": 6,
+        "picture": 6,
+        "hold": 6,
+        "demand": 3,
+        "action": 2,
+        "fair": 6,
+        "impact": 6,
+        "human": 4,
+        "avg": 5.3,
+        "note": "Ground this in actual news demand and replace the generic web link action with a proper bureaucratic demand."
+      },
+      "drafted_at": "2026-11-26T09:10:30.048089+03:00",
+      "replaced_by": "2026-w48-hot-1126-r3",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r2-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129202-canada-announces-new-rules-kenyans-other-foreigners-seeking-jobs",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Canada Revises Foreign Worker Rules Affecting Kenyans"
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1835
+    },
+    {
+      "id": "2026-w48-hot-1126-r3",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Kenyans Abroad",
+      "line": "Kenya and Germany signed an agreement to expand *job opportunities* and visa processes.",
+      "fact": "The bilateral labour agreement focuses on structured job placement and smoother visa processing.",
+      "source": "The Eastleigh Voice, 2026-11-25, The Star, Kenya, 2026-11-26",
+      "photo_query": "Nairobi skyline",
+      "message": "Kenya and Germany agreed to ease visa rules and expand job opportunities for Kenyans.",
+      "action": "Check verified job openings through the Ministry of Labour portal",
+      "beats": [
+        "Kenya and Germany signed a deal for *jobs*.",
+        "The agreement targets structured pathways for workers heading abroad.",
+        "Thousands of professionals wait for overseas employment opportunities.",
+        "Have you applied for these positions yet?"
+      ],
+      "caption": "Kenya and Germany have signed a new deal to ease visa processes and expand job opportunities. More pathways for skilled workers abroad.\n\nHave you applied for these positions yet?\n\n#KenyaOnRecord",
+      "who": "Ministry of Labour and Social Protection",
+      "where": "National",
+      "when": "26 Nov 2026",
+      "side": "government",
+      "tone": "credit",
+      "impact": "Expands structured employment opportunities for skilled Kenyans seeking work abroad.",
+      "bg": "usiku",
+      "publish_at": "2026-11-26T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Kenya signed a third bilateral agreement with Canada to expand labour mobility for skilled workers.",
+        "State House wants an extra Sh8.42bn for renovations while ordinary Kenyans struggle with taxes.",
+        "Editors met in Mombasa to prepare for transparent election reporting ahead of 2027.",
+        "Canada signed a third labour agreement with Kenya to open structured jobs."
+      ],
+      "source_links": [
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "𝐄𝐚𝐬𝐭𝐥𝐞𝐢𝐠𝐡 𝐕𝐨𝐢𝐜𝐞 𝐚𝐭 𝐍𝐢𝐧𝐞 - Kenya, Germany ease visa processes, expand job opportunities",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNU0R2cVp3V29hVGx1MUtTamtoWk5ZZmlUMHlHak9tUlk3Y0t5cE1scXFMYy1GazZOWEdRNE1hOE9yeEJ6enhaR2NwM2REeDdxbHJ6MHVSQkc2TVNTT2s4XzE1M21SOVhUMmNDandqTGhJMkVZVXZwdnIzZFRrTHBCVE9md2ZBaUI2V3I5REVRZ09VMmMzNnZsMnRJQUhfd3Y0V29OMmR3bXFVQXc?oc=5",
+          "published": "2026-11-25"
+        },
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Ruto seals German language deal to boost jobs for Kenyans",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPaEFWLTlycnZHbGNTSWpoaFlPbG1mZWpSTjVJQ1VnMzZIVmZrMmVMUkR3ZUh4SHZ5ekdySTlseXZOb1FlaUFGanpNeW4ydlJjRDllV0JrN3dsSFJkaHhHb0N0eHJySlYxa1VKSUJtOG9mbzB6SklSUHVYM293a2FXcWJYUTJYUnNfb1M4N1NqNm44SU9XOU1RMFM4ODc5Qm4wUlE?oc=5",
+          "published": "2026-11-26"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "This Strategic Dialogue reaffirmed our shared commitment to Agenda 2063 and to practical cooperation that advances integration, resilience, peace and prosperity, for the benefit of African citizens across the continent",
+          "speaker": "Amb. Moussa Mohamed Omar",
+          "context": "The AU partnership with Germany is built on trust and fully supports Africa’s own priorities as well as African institutions. “This Strategic Dialogue reaffirmed our shared commitment to Agenda 2063 and to practical cooperation that advances integration, resilience, peace and prosperity, for the benefit of African citi",
+          "outlet": "African Union",
+          "link": "https://au.int/en/pressreleases/20261029/african-union-and-germany-reaffirm-strategic-partnership-and-agree-joint"
+        },
+        {
+          "text": "Enforcement changes how people travel, not whether they travel. Some pause or ⁠change ​route, and smugglers adapt and raise their prices",
+          "speaker": "Roberto Forin",
+          "context": "\"Enforcement changes how people travel, not whether they travel. Some pause or ⁠change ​route, and smugglers adapt and raise their prices,\" said Roberto Forin of the Mixed Migration Centre, a ​research institute that collects data along migration routes.",
+          "outlet": "DW.com",
+          "link": "https://www.dw.com/en/germany-joins-4-other-eu-states-to-set-up-rwanda-deportation-hub/a-79959158"
+        },
+        {
+          "text": "Paying Kigali [Rwanda] to host a deportation program would not only cause suffering and harm to those deported, it would finance and provide political support to a government responsible for serious human rights abuses at home and abroad",
+          "speaker": "Human Rights Watch's",
+          "context": "\"Paying Kigali [Rwanda] to host a deportation program would not only cause suffering and harm to those deported, it would finance and provide political support to a government responsible for serious human rights abuses at home and abroad,\" said Human Rights Watch's senior Africa researcher, Clementine de Montjoye.",
+          "outlet": "DW.com",
+          "link": "https://www.dw.com/en/germany-joins-4-other-eu-states-to-set-up-rwanda-deportation-hub/a-79959158"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 3.7/10. This German labor agreement story is stale and lacks any concrete numbers, names, or real details about how many jobs or which sectors are involved."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 3,
+        "send": 3,
+        "clarity": 4,
+        "fresh": 3,
+        "voice": 4,
+        "craft": 4,
+        "picture": 4,
+        "hold": 4,
+        "demand": 3,
+        "action": 3,
+        "fair": 7,
+        "impact": 3,
+        "human": 3,
+        "avg": 3.7,
+        "note": "This German labor agreement story is stale and lacks any concrete numbers, names, or real details about how many jobs or which sectors are involved."
+      },
+      "drafted_at": "2026-11-26T09:12:13.521657+03:00",
+      "replaced_by": "2026-w48-hot-1126-r4",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r3-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/ruto-steinmeier-agree-to-streamline-jobs-visa-processes-for-kenyans/",
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Ruto, Steinmeier agree to streamline jobs, visa processes for Kenyans"
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1836
+    },
+    {
+      "id": "2026-w48-hot-1126-r4",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Kenyans",
+      "line": "Kenya Red Cross warns of further *flooding* in the Tana Delta as more villages face displacement.",
+      "fact": "The Kenya Red Cross issued a flood alert for the Tana Delta following rising river levels.",
+      "source": "Capital FM News, 2026-11-26",
+      "photo_query": "river flood Kenya",
+      "message": "Kenya Red Cross warns families in the Tana Delta of rising floods.",
+      "action": "Move to higher ground and call the Kenya Red Cross emergency line",
+      "who": "Kenya Red Cross Society",
+      "where": "Tana River",
+      "when": "26 November 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Families in vulnerable villages face displacement and loss of property.",
+      "beats": [
+        "Kenya Red Cross warns of *further* flooding in the Tana Delta.",
+        "Rising river waters threaten villages and displace families from their homes.",
+        "Communities need urgent aid and safe higher ground before waters rise further.",
+        "Tell us below: has your area received flood *warnings* yet?"
+      ],
+      "caption": "Kenya Red Cross warns families in the Tana Delta of further flooding as river waters rise. Stay safe and move early.\n\nTell us below: has your area received flood warnings yet?\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-26T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Kenya signed a third bilateral agreement with Canada to expand labour mobility for skilled workers.",
+        "State House wants an extra Sh8.42bn for renovations while ordinary Kenyans struggle with taxes.",
+        "Editors met in Mombasa to prepare for transparent election reporting ahead of 2027.",
+        "Canada signed a third labour agreement with Kenya to open structured jobs.",
+        "Kenya and Germany agreed to ease visa rules and expand job opportunities for Kenyans."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "More Villages at Risk as Kenya Red Cross Warns of Further Flooding in Tana Delta",
+          "link": "https://capitalfm.africa/more-villages-at-risk-as-kenya-red-cross-warns-of-further-flooding-in-tana-delta/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-26"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "shouting reads as clickbait: 'urgent' (let the numbers carry the urgency)",
+          "beats[1] is too long: max 12 words / 72 characters",
+          "beats[2] is too long: max 12 words / 72 characters"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-11-26T09:12:41.873020+03:00",
+      "replaced_by": "2026-w48-hot-1126-r5",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r4-photo.jpg",
+      "photo_credit": "Photo: Capital FM",
+      "photo_kind": "posted",
+      "photo_outlet": "Capital FM",
+      "photo_source": "https://capitalfm.africa/more-villages-at-risk-as-kenya-red-cross-warns-of-further-flooding-in-tana-delta/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+      "shot_info": [
+        {
+          "credit": "Photo: Capital FM",
+          "title": "More Villages at Risk as Kenya Red Cross Warns of Further Flooding in Tana Delta"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/videos/2026-w48-hot-1126-r4-broll.mp4",
+      "broll_credit": "Footage: silas267 / Pixabay",
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1837
+    },
+    {
+      "id": "2026-w48-hot-1126-r5",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Kenyans",
+      "line": "People Daily reports that KRA plans to track crypto transactions and financial accounts in Kenya.",
+      "fact": "KRA plans to track crypto transactions and financial accounts across local platforms.",
+      "source": "People Daily, 2026-11-26",
+      "photo_query": "smartphone screen and Kenyan shilling banknotes",
+      "message": "KRA is moving to track crypto transactions and local financial accounts.",
+      "action": "Check your digital wallet records before KRA updates its compliance systems.",
+      "beats": [
+        "*KRA* is planning to track crypto transactions and financial accounts in Kenya.",
+        "Tax authorities want visibility over digital assets and wallet transfers.",
+        "Every transaction on local platforms will soon face stricter oversight.",
+        "Tell us below: do you trade crypto through local platforms?"
+      ],
+      "caption": "KRA is moving to track crypto transactions and local financial accounts across the country. Check your digital wallet records before new rules take effect.\n\nTell us below: do you trade crypto through local platforms?\n\n#KRA #KenyaOnRecord",
+      "who": "Kenya Revenue Authority",
+      "where": "National",
+      "when": "26 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Digital asset traders face closer tax monitoring on all local wallet transactions.",
+      "bg": "usiku",
+      "publish_at": "2026-11-26T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Kenya signed a third bilateral agreement with Canada to expand labour mobility for skilled workers.",
+        "State House wants an extra Sh8.42bn for renovations while ordinary Kenyans struggle with taxes.",
+        "Editors met in Mombasa to prepare for transparent election reporting ahead of 2027.",
+        "Canada signed a third labour agreement with Kenya to open structured jobs.",
+        "Kenya and Germany agreed to ease visa rules and expand job opportunities for Kenyans.",
+        "Kenya Red Cross warns families in the Tana Delta of rising floods."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Explainer: How KRA plans to track crypto transactions and financial accounts in Kenya",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNVDJseUlqb2FiQW9xYlZIdWFCTEd1X2RUTllrZUFrQkN5NENvTmFsc3JJN2RlSnZVM3NGUDNLRHU1SnVSVHd0REJ3MjVRVGRRSmRkNGtmMXJyXy1Za2hjRzcySGxkNVhLSm9MR1k2YWJzV0xqTy1EcHoxSnhrRXBjUDVSTThzUVdGc0NmRlBpOXIwX1RSSlo5WEE3QTZSLXd4WV91cEdCc0NBYkwxT05zNFRHOWM2Rm5ETHNnbDJB?oc=5",
+          "published": "2026-11-26"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "beats[0] is too long: max 12 words / 72 characters",
+          "beats[1] is too long: max 12 words / 72 characters"
+        ],
+        "warnings": []
+      },
+      "drafted_at": "2026-11-26T09:12:59.968164+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1126-r5-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/127788-kra-collects-ksh-90b-customs-revenue-exceeding-september-target-ksh-965m",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "KRA Surpasses September Revenue Target as Imports Surge"
+        }
+      ],
+      "ink": {
+        "2": "#FFFFFF"
+      },
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1838
     }
   ],
   "scripts": {
-    "radio": "Sasa, wasikilizaji wa Kenya on Record. Ni mimi mtangazaji wako, na leo tunasimama kidogo tuangalie hesabu za taifa. Unajua, mwisho wa mwaka unakaribia, na kila mahali ni kelele za sherehe. Lakini nyuma ya hizo sherehe, kuna mamilioni ya ushuru wetu yaliyotengwa kwa ajili ya miradi ya maendeleo.\n\nSwali ambalo kila mmoja wetu anapaswa kujiuliza wiki hii ni hili: Je, lile daraja, ile barabara, au ule zahanati uliyoahidiwa kwenye wadi yenu imekamilika? Ama pesa zimeenda kwa mifuko ya wajanja wachache?\n\nKumbuka, uwajibikaji hauanzii Nairobi; unaanzia pale chini kijijini. Ukitazama ripoti ya CAG, unaona wazi jinsi pesa zauma inavyopigwa kote kote. Lakini serikali ya kaunti haisikii kelele za mitandaoni pekee; wanasikia pale wananchi wanaposimama pamoja na kuuliza maswali magumu. Hii wiki, usikae kimya. Tembelea ofisi ya kaunti, dai kuona bajeti, na uliza: Hii kazi ilipitishwa wapi?\n\n[Kiswahili Summary]\n*Muhtasari:* Kenya on Record tunawakumbusha wananchi wote kuwa na jukumu la kufuatilia matumizi ya pesa za umma katika kaunti zetu. Usikubali miradi ikwame huku fedha zikisombwa. Simama kidogo, uliza maswali, na udai maendeleo ya ukweli kabla ya mwaka kuisha.",
-    "voice_note": "Sasa mwananchi mwenzangu. Hapa ni Kenya on Record. Hebu tuongee ukweli kidogo leo. Hii wiki tunaangazia vile pesa za kaunti zinavyotembea bila kuacha alama. Unapata mkandarasi kalipwa mia kwa mia lakini kazi imekwama kwa msingi. Alafu kiongozi anatokea na kusema mradi uko njiani! Njia gani hiyo inayochukua miaka mitano kujenga kilomita mbili? Kuanzia leo, tuache kuwa wapole na pesa zetu wenyewe. Uliza risiti, fuatilia bajeti ya kaunti yako, na usikubali kudanganywa na suti za bei ghali. Piga simu,andika barua,fanya waone uko macho. Tumechoka na porojo. Weka rekodi sawa!",
-    "sms": "Usiibiwe: Pesa za kaunti si za kampeni wala mifuko binafsi. Dai kuona bango la mradi kabla ya kazi kuanza. Usikubali kodi yako ipotee. Kenya on Record.",
-    "reels": "[Visual: Quick cuts of incomplete county projects, dusty roads, then a sharp pivot to a citizen holding a notebook and pen]\n\nVoice-over (steady, serious, grown-up):\n\n\"Eneo lako limeahidiwa maendeleo mara ngapi?\n\nAlafu ukiangalia chini, hakuna barabara, hakuna maji, hakuna huduma.\n\nPesa zilienda wapi?\n\nUsikubali kumezwa na siasa za wiki hii.\n\nFuatilia bajeti.\n\nUliza maswali.\n\nHuu ni mwaka wa kuwawajibisha. Kila shilingi inahesabika.\n\nKenya on Record. Weka rekodi sawa.\""
+    "radio": "Habari za wiki, mwananchi. Karibu kwenye Kenya on Record. Mimi ni sauti yako ya kuaminika kwa uwajibikaji.\n\nTuna habari njema wiki hii kuhusu uhusiano kati ya Kenya na Ujerumani. Serikali zetu mbili zimefikia makubaliano ya kupunguza masharti magumu ya visa na kufungua milango ya ajira zaidi kwa Wakenya nchini Ujerumani. Hii ni fursa kubwa kwa vijana wetu wenye ujuzi wanaotafuta kazi nje.\n\nLakini wakati tukisherehekea fursa hizi, lazima tuwe waangalifu. Kila mara kunapokuwa na habari za ajira za ng’ambo, matapeli huchomoza wakiahidi mambo ya mkato. Usikubali kutapeliwa na mawakala feki. Fuata taratibu rasmi za serikali kupitia Wizara ya Kazi.\n\n[Kiswahili summary]\n\nKwa ufupi: Kenya na Ujerumani zimekubaliana kurahisisha visa na kuongeza nafasi za kazi kwa Wakenya. Tunawataka wananchi kuwa macho dhidi ya matapeli wa kazi za ng'ambo na kufuata njia halali.",
+    "voice_note": "Sasa wakuu, habari njema kutoka Ujerumani wiki hii! Serikali imeingia mkataba mpya wa kurahisisha visa na kuongeza fursa za kazi kwa Wakenya. Lakini kabla hujauza shamba ukitafuta wakala wa kukupeleka Ulaya, kumbuka hili: fuata njia halali za serikali wala usiskie mawaidha ya vishoka. Usiibiwe na matapeli wa ajira za ng'ambo. Angalia vizuri kabla hujatoa hata shilingi moja!",
+    "sms": "Usiibiwe: Serikali imetangaza fursa mpya za ajira Ujerumani na visa rahisi. Usitoe pesa kwa mawakala wa mtandao. Fuata njia rasmi kupitia Wizara ya Kazi pekee.",
+    "reels": "Habari njema au mtego wa matapeli? Kenya na Ujerumani zimekubaliana kurahisisha visa na kuongeza kazi kwa Wakenya. Hii ni fursa nzuri, lakini kuwa mwangalifu na mawakala feki wa mtaani. Fuata njia halali, usitoe pesa kwa ahadi za uongo. Jilinde na uweke mfuko wako salama. Kenya on Record tunakulinda!"
   },
   "spend_usd": 0.0
 }
