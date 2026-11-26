@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-11-26T06:06:33.983279+00:00",
+  "fetched": "2026-11-26T07:44:10.716807+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "kenya power",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "Kenya Power flags costly tokens as monopoly ends",
@@ -40,8 +40,8 @@
           "source": "BBC"
         },
         {
-          "title": "Ratings: Sørloth, Alvarez strikes steer Atlético to win over Viking",
-          "url": "https://www.intothecalderon.com/atletico-madrid-player-ratings/30173/atletico-de-madrid-viking-fk-player-ratings-champions-league-alvarez-sorloth",
+          "title": "How will Atlético line up against Viking in the Champions League?",
+          "url": "https://www.intothecalderon.com/previews/30131/atletico-de-madrid-viking-fk-champions-league-preview-team-news",
           "source": "Into the Calderon"
         }
       ]
@@ -80,41 +80,63 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "Warriors 129-110 Kings (Nov 25, 2026) Game Recap",
-          "url": "https://www.espn.com/nba/recap?gameId=401909324",
-          "source": "ESPN"
+          "title": "Licensable picture: NBA: Sacramento Kings vs Golden State Warriors in San Francisco",
+          "url": "https://www.reutersconnect.com/item/nba-sacramento-kings-vs-golden-state-warriors-in-san-francisco/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwTFZNVTlM",
+          "source": "Reuters Connect"
         },
         {
-          "title": "Takeaways from Warriors' Win Over Kings: Why Acuff, Lendeborg Have Intriguing ROY Race",
-          "url": "https://www.si.com/nba/warriors/onsi/takeaways-from-warriors-win-over-kings-why-acuff-lendeborg-have-intriguing-roy-race-01m8b12gmrh7",
-          "source": "Sports Illustrated"
-        },
-        {
-          "title": "De’Antony Melton scores team-high 24 points",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-26/deantony-melton-scores-team-high-24-points",
+          "title": "Yaxel Lendeborg (illness) will play Wednesday",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/yaxel-lendeborg-illness-expected-to-play-weds",
           "source": "NBC Sports"
+        },
+        {
+          "title": "How to watch Kings vs. Warriors: TV channel and streaming options for November 25",
+          "url": "https://www.nytimes.com/athletic/7812570/2026/11/25/kings-vs-warriors-stream-how-to-watch-nov-25/",
+          "source": "The New York Times"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "flashscore",
-      "traffic": "500+",
+      "title": "senne lammens",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Piers Morgan labels Chelsea star Cole Palmer a ‘d***head’ and slams ‘rotten attitude’ after Leeds United humiliation",
-          "url": "https://www.goal.com/en-ke/news/piers-morgan-slams-cole-palmer-chelsea-fan-snub/blt151a0dedc6acb246",
-          "source": "Goal.com"
+          "title": "Rode kaarten blijven Man Utd achtervolgen: 'Alles zit nu even tegen'",
+          "url": "https://www.vi.nl/nieuws/rode-kaarten-blijven-manchester-united-achtervolgen-alles-zit-nu-even-tegen",
+          "source": "Voetbal International"
         },
         {
-          "title": "'Really poor' - Tony Cascarino identifies Chelsea's biggest problem player",
-          "url": "https://theprideoflondon.com/tony-cascarino-identifies-chelseas-biggest-problem-player",
-          "source": "The Pride of London"
+          "title": "Champions League: MU verspeelt punten, Bayern München lijdt een verrassende nederlaag.",
+          "url": "https://www.vietnam.vn/nl/champions-league-mu-danh-roi-chien-thang-bayern-munich-bat-ngo-that-bai",
+          "source": "Vietnam.vn"
         },
         {
-          "title": "Palmer's dwindling Chelsea form becoming harder to ignore",
-          "url": "https://www.tribalfootball.com/article/soccer-premier-league-palmer-s-dwindling-chelsea-form-becoming-harder-to-ignore-5b4103b7-dbee-4882-8b9a-04115e0cbe6d",
-          "source": "TribalFootball"
+          "title": "Dolle Champions League-avond: Club Brugge nu op deze plaats na 25 doelpunten",
+          "url": "https://www.voetbalkrant.com/nieuws/2026-11-25/dolle-champions-league-avond-lammens-van-held-naar-antiheld-in-twee-minuten",
+          "source": "Voetbalkrant.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "trail blazers vs spurs",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "NBA: San Antonio Spurs at Portland Trail Blazers",
+          "url": "https://www.reutersconnect.com/item/nba-san-antonio-spurs-at-portland-trail-blazers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NTA2NDA%3D?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+          "source": "Reuters Connect"
+        },
+        {
+          "title": "Damian Lillard scores 29, perfect from the FT line",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-26/damian-lillard-scores-29-perfect-from-the-ft-line",
+          "source": "NBC Sports"
+        },
+        {
+          "title": "Game Recap: Trail Blazers 116, Spurs 111 (Nov. 25)",
+          "url": "https://www.nba.com/watch/video/game-recap-trail-blazers-116-spurs-111-nov-25",
+          "source": "NBA.com"
         }
       ]
     },
@@ -129,14 +151,14 @@
           "source": "ESPN"
         },
         {
-          "title": "James becomes oldest with NBA triple-double in Sixers win",
-          "url": "https://www.afp.com/en/james-becomes-oldest-nba-triple-double-sixers-win",
-          "source": "AFP.com"
+          "title": "The Association: LeBron grabs first triple-double with Sixers",
+          "url": "https://www.nba.com/watch/video/the-association-lebron-grabs-first-triple-double-with-sixers?plsrc=nba&collection=the-association-segments",
+          "source": "NBA.com"
         },
         {
-          "title": "\"He’s Having Fun\" - Miami Heat Star Giannis Antetokounmpo Makes Candid Admission About NBA legend LeBron James",
-          "url": "https://sports.ndtv.com/us/nba/he-s-having-fun-miami-heat-star-giannis-antetokounmpo-makes-candid-admission-about-nba-legend-lebron-james-12378729",
-          "source": "NDTV Sports"
+          "title": "Giannis Antetokounmpo is happy to see LeBron James still having fun in Year 24",
+          "url": "https://sports.yahoo.com/nba/articles/giannis-antetokounmpo-happy-see-lebron-025400384.html",
+          "source": "Yahoo Sports"
         }
       ]
     },
@@ -164,32 +186,27 @@
     },
     {
       "geo": "KE",
-      "title": "manchester united f.c. games",
+      "title": "bbc football",
       "traffic": "100+",
       "news": [
         {
-          "title": "Man Utd on wrong end of more controversial decisions in Sporting draw",
-          "url": "https://www.bbc.com/sport/football/articles/c6vg24l724l4o",
+          "title": "Champions League LIVE: Sporting vs Man Utd & Club Brugge vs Liverpool score & updates from seven other games",
+          "url": "https://www.bbc.com/sport/football/live/cx98zmzyn0y7t",
           "source": "BBC"
         },
         {
-          "title": "Sporting 2-2 Man Utd: Mauricio Pochettino denied first win by Senne Lammens howler in Champions League",
-          "url": "https://www.skysports.com/football/news/13616484/sporting-2-2-man-utd-mauricio-pochettino-denied-first-win-by-senne-lammens-howler-in-champions-league",
-          "source": "Sky Sports"
+          "title": "Club Brugge 0-3 Liverpool, Lille 2-1 Bayern, PSG 2-2 Roma: Champions League clockwatch – as it happened",
+          "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+          "source": "The Guardian"
         },
         {
-          "title": "Champions League talking points: Was this a good result for Man United?",
-          "url": "https://www.espn.com/soccer/story/_/id/50594529/champions-league-talking-points-manchester-united-sporting-draw",
+          "title": "Champions League recap: Another night of mayhem for Pochettino's Man United",
+          "url": "https://www.espn.com/soccer/story/_/id/50574274/uefa-champions-league-live-updates",
           "source": "ESPN"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "trail blazers vs spurs",
-      "why": "unsafe: 'Odds'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
