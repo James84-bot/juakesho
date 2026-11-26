@@ -2895,7 +2895,9 @@
       ],
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1821
+      "tg_msg": 1821,
+      "photo_checked": "2026-11-26T07:21:23.654090+03:00",
+      "photo_fit": "2026-11-26T07:21:23.654106+03:00"
     },
     {
       "id": "2026-w48-hot-1126m-r2",
@@ -3026,7 +3028,9 @@
       "reel": true,
       "tg_msg": 1822,
       "auto": true,
-      "decided_at": "2026-11-26T07:08:55.799784+03:00"
+      "decided_at": "2026-11-26T07:08:55.799784+03:00",
+      "photo_checked": "2026-11-26T07:21:29.863821+03:00",
+      "photo_fit": "2026-11-26T07:21:29.863834+03:00"
     }
   ],
   "scripts": {
