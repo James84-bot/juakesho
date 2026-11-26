@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-25T23:05:24.295060+00:00",
+  "fetched": "2026-11-26T01:10:05.639843+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -9,25 +9,48 @@
     },
     {
       "geo": "KE",
-      "title": "luis suárez",
+      "title": "bayern munich",
       "traffic": "1000+",
       "news": [
         {
-          "title": "Sporting CP 2 - Manchester United 2: resumen, resultado y goles del partido",
-          "url": "https://as.com/futbol/champions/sporting-cp-manchester-united-en-directo-champions-league-en-vivo-hoy-f202611-d/",
-          "source": "Diario AS"
+          "title": "Bayern Munich’s Max Eberl: There’s no time to point fingers",
+          "url": "https://sports.yahoo.com/soccer/articles/bayern-munich-max-eberl-no-232921527.html",
+          "source": "Yahoo Sports"
         },
         {
-          "title": "2-2. Suárez le niega a Pochettino su primera victoria con el United",
-          "url": "https://holanews.com/2-2-suarez-le-niega-a-pochettino-su-primera-victoria-con-el-united/",
-          "source": "HolaNews"
+          "title": "Sporting 2-2 Man Utd: Mauricio Pochettino denied first win by Senne Lammens howler in Champions League",
+          "url": "https://www.skysports.com/football/news/13616484/sporting-2-2-man-utd-mauricio-pochettino-denied-first-win-by-senne-lammens-howler-in-champions-league",
+          "source": "Sky Sports"
         },
         {
-          "title": "¡¿Qué fue ESO?! Un portero de Champions vive una noche para olvidar",
-          "url": "https://es-us.noticias.yahoo.com/deportes/portero-champions-vive-noche-olvidar-224000339.html",
-          "source": "Yahoo"
+          "title": "'Disgrace' decisions, divots and howlers - Man Utd chaos against Sporting",
+          "url": "https://www.bbc.com/sport/football/articles/cvrlg074ld74o",
+          "source": "BBC"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "losc lille vs bayern munich standings",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Harry Kane injured as Bayern Munich and PSG face injury crises plus Lamine Yamal and Kylian Mbappe miss penalties",
+          "url": "https://www.skysports.com/football/news/13612575/harry-kane-injured-as-bayern-munich-and-psg-face-injury-crises-plus-lamine-yamal-and-kylian-mbappe-miss-penalties",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Dortmund president sends wishes to Kane",
+          "url": "https://www.bundesliga.com/en/bundesliga/videos/watch/dortmund-president-sends-wishes-to-kane-0Y1mSFw1",
+          "source": "Bundesliga | official website"
+        },
+        {
+          "title": "How will Bayern Munich fare in the absence of Harry Kane",
+          "url": "https://www.squawka.com/en/features/tactical-analysis-bayern-munich-without-harry-kane/",
+          "source": "Squawka"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -45,9 +68,9 @@
           "source": "BBC"
         },
         {
-          "title": "How will Atlético line up against Viking in the Champions League?",
-          "url": "https://www.intothecalderon.com/previews/30131/atletico-de-madrid-viking-fk-champions-league-preview-team-news",
-          "source": "Into the Calderon"
+          "title": "Atletico Madrid vs Viking FK Prediction & Picks - Champions League",
+          "url": "https://www.sportytrader.com/us/picks/atletico-madrid-viking-fk-389544/",
+          "source": "SportyTrader"
         }
       ]
     },
@@ -89,31 +112,9 @@
           "source": "FotMob"
         },
         {
-          "title": "Arsenal Ready to Make Move, Man Utd Considering Sale, Chelsea Manager Situation Latest, Sunday Transfer Talk Report",
-          "url": "https://soccervoice.com/2026/11/22/arsenal-ready-to-make-move-man-utd-considering-sale-chelsea-manager-situation-latest-sunday-transfer-talk-report/",
-          "source": "soccervoice"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "manchester united f.c. standings",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Are Manchester United this season's Tottenham?",
-          "url": "https://www.bbc.com/sport/football/articles/cj4gndepk312o",
-          "source": "BBC"
-        },
-        {
-          "title": "Mauricio Pochettino has seven games to fix Man Utd mess or Red Devils really will be in a battle to avoid unthinkable relegation to Championship",
-          "url": "https://www.goal.com/en/originals/man-utd-mauricio-pochettino-seven-games-fix-mess-red-devils-unthinkable-relegation-championship/blt1c14c3113ad1c3f8",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Supercomputer predicts Man United’s chances of Premier League relegation this season",
-          "url": "https://talksport.com/football/4730926/man-united-premier-league-relegation-supercomputer-predicted-table/",
-          "source": "talkSPORT"
+          "title": "Arsenal dilemma as Man Utd signing plan confirmed",
+          "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/11/arsenal-chelsea-man-utd-transfer-news-kepa-arrizabalaga-david-ornstein-alex-scott-manu-kone-vinicius-jr-footballtransfers-recap",
+          "source": "FootballTransfers.com"
         }
       ]
     },
@@ -123,19 +124,41 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "FC Bayern vor Horror-Endspurt: Reichen Slavia Prag, Betis und United für die Top 8?",
-          "url": "https://www.homeofsports.de/fussball/national/champions-league-diese-punktzahl-braucht-bayern-fuer-top-zr-94608580.html",
-          "source": "homeofsports.de"
-        },
-        {
-          "title": "„Durchaus Möglichkeiten“ – Eberl klärt über Wintertransfers auf",
-          "url": "https://www.sport1.de/tv-video/video/durchaus-moeglichkeiten-eberl-klaert-ueber-wintertransfers-auf__05c9560c-705b-4748-bf01-9c695acb8160",
-          "source": "SPORT1"
+          "title": "Niederlage in Lille: Plötzlich zittern die Bayern um ihr Selbstverständnis als Gewinnerteam",
+          "url": "https://www.spiegel.de/sport/fussball/champions-league-fc-bayern-muenchen-verliert-nach-fuehrung-in-lille-a-705d3778-1c49-4f83-b5b8-030c9b4b06c2",
+          "source": "Spiegel"
         },
         {
           "title": "“Ist nicht der Fehler von Aleks“ – Eberl über Pavlovic-Eigentor",
           "url": "https://www.skysportaustria.at/mediathek/ist-nicht-der-fehler-von-aleks-eberl-ueber-pavlovic-eigentor/",
           "source": "Sky Sport Austria"
+        },
+        {
+          "title": "17:30 SAT.1 Bayern - FC Bayern vor Spiel in Lille: Verletzungssorgen und Wirbel um Musiala",
+          "url": "https://www.joyn.de/play/clip/fc-bayern-vor-spiel-in-lille-verletzungssorgen-und-wirbel-um-musiala?from=%2Fserien%2F1730-sat1-bayern",
+          "source": "Joyn"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "man u vs",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Champions League LIVE: Sporting vs Man Utd & Club Brugge vs Liverpool score & updates from seven other games",
+          "url": "https://www.bbc.com/sport/football/live/cx98zmzyn0y7t",
+          "source": "BBC"
+        },
+        {
+          "title": "Champions League recap: Another night of mayhem for Pochettino's Man United",
+          "url": "https://www.espn.com/soccer/story/_/id/50574274/uefa-champions-league-live-updates",
+          "source": "ESPN"
+        },
+        {
+          "title": "Club Brugge 0-3 Liverpool, Lille 2-1 Bayern, PSG 2-2 Roma: Champions League clockwatch – as it happened",
+          "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
+          "source": "The Guardian"
         }
       ]
     },
@@ -145,41 +168,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "\"Roubo total em Portugal\": gol anulado do Manchester United contra o Sporting gera polêmica",
-          "url": "https://www.goal.com/br/not%C3%ADcias/roubo-total-em-portugal-gol-anulado-do-manchester-united-contra-o-sporting-gera-polemica/blte5bdc6893086b456",
-          "source": "Goal.com"
+          "title": "Paulo Fonseca: «Fica a sensação de que poderíamos ter vencido o jogo»",
+          "url": "https://www.abola.pt/video/paulo-fonseca-fica-a-sensacao-de-que-poderiamos-ter-vencido-o-jogo-2026112523120729394",
+          "source": "A Bola"
         },
         {
-          "title": "Pochettino volta à Champions League com quatro mudanças e sem Matheus Cunha",
-          "url": "https://www.brasileirao.com.br/pochettino-volta-a-champions-league-com-quatro-mudancas-e-sem-matheus-cunha?completa=1",
-          "source": "brasileirao.com.br"
+          "title": "Sporting empata com o Man. United numa noite em que Bruno Fernandes ia estragando tudo",
+          "url": "https://leonino.pt/sporting-empata-com-o-man-united-numa-noite-em-que-bruno-fernandes-ia-estragando-tudo",
+          "source": "Leonino"
         },
         {
-          "title": "Paulo Fonseca: \"Luis Suárez é forte mentalmente, assumir o segundo penálti diz muito\"",
-          "url": "https://www.ojogo.pt/futebol/artigo/paulo-fonseca-luis-suarez-e-forte-mentalmente-assumir-o-segundo-penalti-diz-muito/18152354",
-          "source": "O Jogo"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "bbc football",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Champions League LIVE: Sporting vs Man Utd & Club Brugge vs Liverpool score & updates from seven other games",
-          "url": "https://www.bbc.com/sport/football/live/cx98zmzyn0y7t",
-          "source": "BBC"
-        },
-        {
-          "title": "Club Brugge 0-3 Liverpool, Lille 2-1 Bayern, PSG 2-2 Roma: Champions League clockwatch – as it happened",
-          "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Club Brugge v Liverpool, Lille v Bayern Munich and more: Champions League clockwatch – live",
-          "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live?page=with:block-6b0755a58f08d7d25a95d605",
-          "source": "The Guardian"
+          "title": "Fonseca explica como se preparou para a «incerteza» do United",
+          "url": "https://cnnportugal.iol.pt/videos/fonseca-explica-como-se-preparou-para-a-incerteza-do-united/6b076eaa0cf29f111c0f4ab7",
+          "source": "CNN Portugal"
         }
       ]
     },
@@ -189,19 +190,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Jude Bellingham: Real Madrid midfielder plays down Zinedine Zidane comparison after wonder goal",
-          "url": "https://www.bbc.com/sport/football/articles/c893r9kdwl91o",
-          "source": "BBC"
+          "title": "Matheus Pucinelli de Almeida Carlos Maria Zarate live score and H2H results",
+          "url": "https://www.sofascore.com/tennis/match/carlos-maria-zarate-matheus-pucinelli-de-almeida/DZfcscJee",
+          "source": "Sofascore"
         },
         {
-          "title": "Bellingham beauty in Real Madrid win as Arsenal, Man City held in Champions League",
-          "url": "https://supersport.com/football/news/a001bb81-51b1-47a9-ace4-bb709e294ec8/bellingham-beauty-in-real-madrid-win-as-arsenal-man-city-held-in-champions-league",
-          "source": "SuperSport"
+          "title": "Thomas Faurel Nikita Belozertsev live score and H2H results",
+          "url": "https://www.sofascore.com/tennis/match/nikita-belozertsev-thomas-faurel/ETJdsdhde",
+          "source": "Sofascore"
         },
         {
-          "title": "Champions League highlights and round-up: Real Madrid stay perfect, Galatasaray and Como win again",
-          "url": "https://www.uefa.com/uefachampionsleague/news/02ab-222684fc8e44-2b1a32c90a7a-1000--champions-league-highlights-and-round-up-real-madrid-sta/",
-          "source": "UEFA.com"
+          "title": "Enrique Carrascosa Diaz Roberto Pérez Socas live score and H2H results",
+          "url": "https://www.sofascore.com/tennis/match/enrique-carrascosa-diaz-roberto-perez-socas/ZFMdsTjNi",
+          "source": "Sofascore"
         }
       ]
     }
