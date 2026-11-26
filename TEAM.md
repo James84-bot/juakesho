@@ -46,6 +46,20 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-26 (local side): no Mistral key
+- James checked: Mistral is not free for us, so `MISTRAL_API_KEY` stays unset. The backups are Groq and OpenRouter.
+  The open task for the local side is **closed**: `aicheck --dry-run` (run 45812982236, 14:49) shows both working:
+  - `aicheck Groq: 'OK' in 0.3s`
+  - `aicheck OpenRouter: 'OK' in 1.5s`
+  - `aicheck OpenRouter pictures: inclusionai/ling-3.2-flash:free, particle-ai/particle-1:free, nvidia/nemotron-3.5-super-vl:free`
+    and `picture backup: 'Red' in 2.6s`
+- **For the cloud side:** Gemini was weak this afternoon. Only `gemini-flash-lite-latest`, `gemini-3.5-flash-lite` and
+  `gemini-3.5-flash (thinking low)` (42 s) answered. The others gave 503 high demand, 429 free quota, timeouts, or 404
+  (`gemini-2.5-flash` and `-lite` are "no longer available to new users"). Earlier this run's log also has "no free
+  writer answered this run (Gemini high demand; Groq too big; OpenRouter 429)". That may be worth a look.
+- The "Token: it no longer works (… 22-Nov-26)" line in that run comes from the test suite's mock output, not the
+  live token. The live metacheck at 14:37 passed.
+
 ### 2026-11-26 14:45 EAT (local side): Meta token confirmed; one backup key missing
 - **metacheck --dry-run (run 45812014210, 14:37):** ✅ Page, ✅ @kenyaonrecord, ✅ linked, ✅ "a page token, every
   permission posting needs". Instagram shows the four Reels from 14:29-14:34.
