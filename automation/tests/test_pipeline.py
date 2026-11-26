@@ -471,14 +471,14 @@ class PublishTests(TempWeeks):
 
         def fake(method, url, fields=None, files=None, timeout=60):
             seen.append(url)
-            return {"access_token": "PAGE-TOKEN", "id": "page"}
+            return {"id": "user-1"} if "/me?" in url else {"access_token": "PAGE-TOKEN", "id": "page"}
         out = io.StringIO()
         with mock.patch.object(pl, "http", fake), mock.patch.object(pl, "log", lambda m: None), \
                 mock.patch.dict(os.environ, {"META_ACCESS_TOKEN": "USER-TOKEN", "META_PAGE_ID": "page", "GITHUB_ACTIONS": "true"}), \
                 contextlib.redirect_stdout(out):
             self.assertTrue(USE_PAGE_TOKEN())
             self.assertEqual(os.environ["META_ACCESS_TOKEN"], "PAGE-TOKEN")
-        self.assertIn("/page?fields=access_token", seen[0])
+        self.assertIn("/page?fields=access_token", seen[1])
         self.assertIn("::add-mask::PAGE-TOKEN", out.getvalue())
         pl.STORED_TOKEN["kind"] = ""
 
@@ -492,6 +492,22 @@ class PublishTests(TempWeeks):
                     mock.patch.dict(os.environ, {"META_ACCESS_TOKEN": "SAME", "META_PAGE_ID": "page"}):
                 self.assertFalse(USE_PAGE_TOKEN())
                 self.assertEqual(os.environ["META_ACCESS_TOKEN"], "SAME")
+
+    def test_a_page_token_is_known_by_its_own_id_and_never_swapped(self):
+        # 26 Nov: the new never-expiring Page token was called a user token, because the Page returned a fresh string
+        calls = []
+
+        def fake(method, url, fields=None, files=None, timeout=60):
+            calls.append(url.split("?")[0].rsplit("/", 1)[-1])
+            return {"id": "page"} if "/me?" in url else {"access_token": "OTHER"}
+        try:
+            with mock.patch.object(pl, "http", fake), mock.patch.object(pl, "log", lambda m: None), \
+                    mock.patch.dict(os.environ, {"META_ACCESS_TOKEN": "PAGETOKEN", "META_PAGE_ID": "page"}):
+                self.assertFalse(USE_PAGE_TOKEN())
+                self.assertEqual(os.environ["META_ACCESS_TOKEN"], "PAGETOKEN")
+            self.assertEqual((calls, pl.STORED_TOKEN.get("kind")), (["me"], "page"))
+        finally:
+            pl.STORED_TOKEN.pop("kind", None)
 
     def test_a_dead_token_makes_posts_wait_instead_of_failing(self):
         def fake(method, url, fields=None, files=None, timeout=60):

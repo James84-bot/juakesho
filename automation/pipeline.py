@@ -2151,6 +2151,13 @@ def use_page_token() -> bool:
         return False
     version = os.environ.get("META_GRAPH_VERSION", "v26.0")
     try:
+        # a Page token's /me is the Page itself (26 Nov: the stored token became a never-expiring Page token, and
+        # asking the Page for its token gave back a different string, so the run called it a user token)
+        me = str((http("GET", f"https://graph.facebook.com/{version}/me?" +
+                       urllib.parse.urlencode({"fields": "id", "access_token": raw})) or {}).get("id") or "")
+        if me == page:
+            STORED_TOKEN["kind"] = "page"
+            return False
         q = urllib.parse.urlencode({"fields": "access_token", "access_token": raw})
         got = str((http("GET", f"https://graph.facebook.com/{version}/{page}?{q}") or {}).get("access_token") or "")
     except Exception as e:
