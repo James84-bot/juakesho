@@ -3175,7 +3175,7 @@
       "who": "Media Editors",
       "where": "Mombasa",
       "when": "26 Nov 2026",
-      "status": "awaiting",
+      "status": "dropped",
       "guard": {
         "errors": [
           "weak: editor scored 4.5/10. This is a generic industry workshop announcement that does not match what Kenyans are currently discussing online."
@@ -3216,7 +3216,8 @@
       "reel": true,
       "tg_msg": 1834,
       "photo_checked": "2026-11-26T09:32:07.692733+03:00",
-      "photo_fit": "2026-11-26T09:32:07.692768+03:00"
+      "photo_fit": "2026-11-26T09:32:07.692768+03:00",
+      "closed_why": "every version failed a check (failed a guard rule)"
     },
     {
       "id": "2026-w48-hot-1126-r6",
@@ -3260,7 +3261,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "dropped",
       "guard": {
         "errors": [
           "weak: editor scored 5.3/10. Ground this in actual news demand and replace the generic web link action with a proper bureaucratic demand."
@@ -3314,7 +3315,8 @@
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "tg_msg": 1843,
       "photo_checked": "2026-11-26T09:48:25.383892+03:00",
-      "photo_fit": "2026-11-26T09:48:25.383906+03:00"
+      "photo_fit": "2026-11-26T09:48:25.383906+03:00",
+      "closed_why": "every version failed a check (failed a guard rule)"
     },
     {
       "id": "2026-w48-hot-1126-r3",
@@ -3387,7 +3389,7 @@
           "link": "https://www.dw.com/en/germany-joins-4-other-eu-states-to-set-up-rwanda-deportation-hub/a-79959158"
         }
       ],
-      "status": "awaiting",
+      "status": "dropped",
       "guard": {
         "errors": [
           "weak: editor scored 3.7/10. This German labor agreement story is stale and lacks any concrete numbers, names, or real details about how many jobs or which sectors are involved."
@@ -3431,7 +3433,8 @@
       "reel": true,
       "tg_msg": 1836,
       "photo_checked": "2026-11-26T09:33:39.233158+03:00",
-      "photo_fit": "2026-11-26T09:33:39.233189+03:00"
+      "photo_fit": "2026-11-26T09:33:39.233189+03:00",
+      "closed_why": "every version failed a check (failed a guard rule)"
     },
     {
       "id": "2026-w48-hot-1126-r4",
@@ -3477,7 +3480,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "dropped",
       "guard": {
         "errors": [
           "shouting reads as clickbait: 'urgent' (let the numbers carry the urgency)",
@@ -3505,7 +3508,8 @@
       "reel": true,
       "tg_msg": 1837,
       "photo_checked": "2026-11-26T09:34:10.007548+03:00",
-      "photo_fit": "2026-11-26T09:34:10.007565+03:00"
+      "photo_fit": "2026-11-26T09:34:10.007565+03:00",
+      "closed_why": "every version failed a check (failed a guard rule)"
     },
     {
       "id": "2026-w48-hot-1126-r8",
