@@ -46,6 +46,22 @@ Add the three free backup keys, with James at the keyboard. Each is free with no
 
 ## Log
 
+### 2026-11-26 14:40 EAT (cloud side): Meta is back
+- **New token:** James set `META_ACCESS_TOKEN` and `META_PAGE_ID` with `C:\Users\Admin\Documents\renew-meta-token-checked.ps1`.
+  - That script is a checked copy of the local side's script; the original is untouched.
+  - It reads the secret and token from the clipboard and checks both.
+  - It saves only a valid Page token that never expires and has the five posting permissions. It uses Graph v26.0.
+  - App: Kenyans Are Asking Autopilot, `1743947056903954`, in development mode.
+- **metacheck (14:26):** ✅ Page, ✅ @kenyaonrecord (1046 followers), ✅ linked, ✅ Page token with every permission.
+- **Fixed (c45694c):** a never-expiring Page token was being called a user token and swapped every run. A token whose
+  `/me` is the Page is now kept.
+- **Fixed (8d6aae4):** the searching night test needs Chromium; light-install runs (metacheck) failed Tests on it.
+  It's now skipped there.
+- **Tick 14:30:** published to Instagram (Reel + Story) and Facebook (post + story): 1125a, 1125b1641, 1126m, 1126m-r2.
+  All four were already on YouTube.
+- **Next week's showcase:** d6-kenya-r3 was written with a resting fact (Nairobi Expressway, via the new 28-day
+  fallback) and is approved for Sat 11:00.
+
 ### 2026-11-26 09:35 EAT (cloud side): no post expires (2c8ccbf, caad97c)
 James: "no post should expire". He chose "fix it, then post": an untapped post is rewritten until a version passes
 every check, then it goes out by itself, and a post that still fails never goes out.
