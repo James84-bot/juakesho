@@ -217,7 +217,7 @@ QUIET_FROM = 21   # no news post is planned for 21:00 EAT or later (last week fo
 
 def _taken(posts: list[dict], also: tuple = ()) -> list[dt.datetime]:
     return [dt.datetime.fromisoformat(p["publish_at"]) for p in posts
-            if p.get("publish_at") and p.get("status") not in {"rejected", "expired", "missed", "superseded", "removed"}] \
+            if p.get("publish_at") and p.get("status") not in {"rejected", "expired", "missed", "superseded", "removed", "dropped"}] \
         + list(also)
 
 
@@ -555,7 +555,7 @@ def draft(label: str, mock: bool = False, horizon: dt.timedelta | None = DRAFT_A
         log("nothing to draft")
         return data
     lanes = json.loads((brands.HOME / "calendar.json").read_text(encoding="utf-8"))["lanes"]
-    drafter.TAKEN = [p for p in data["posts"] if p["status"] not in {"planned", "rejected", "missed"}]
+    drafter.TAKEN = [p for p in data["posts"] if p["status"] not in {"planned", "rejected", "missed", "dropped"}]
     drafted, scripts = drafter.draft_week(label, todo, lanes, mock=mock)
     data_spend = round(drafter.SPEND["usd"], 4)
     for p in drafted:
@@ -754,7 +754,9 @@ def photo_audit(dry_run: bool = False) -> list[str]:
     return [] if dry_run else list(redo)
 
 
-HOT_RETRIES = 2   # extra attempts per held news post, so one rejected draft does not cost the whole slot
+HOT_RETRIES = 4   # extra attempts per held news post, so one rejected draft does not cost the whole slot
+FIX_TRIES = 3     # versions of a planned (not news) post written before its slot is given up: the first + 2 rewrites
+FIX_LEAD = dt.timedelta(minutes=90)   # an untapped card this close to its slot is written again, so the fix is on time
 
 
 def _revision(pid: str) -> int:
@@ -772,6 +774,12 @@ def quality_hold(p: dict) -> str:
     return "" if crit is not None and crit >= score_bar(p) else "the editor's score is missing or under the bar"
 
 
+def fix_reason(p: dict) -> str:
+    """Why a post can't go out by itself that another version could fix ('' = nothing to fix): every reason auto_ok
+    gives, except the series a person always decides (the Promise Tracker and scorecards judge someone's record)."""
+    return "" if p.get("template") in AUTO_NEVER else auto_ok(p)
+
+
 def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> list[str]:
     """A news post that can't go out by itself (a check failed, or the editor found it weak) used to cost its slot:
     on 21 Nov all four editions expired waiting for a tap. Now each one from today gets a fresh draft on a different
@@ -784,7 +792,7 @@ def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> 
         today = now().date().isoformat()
         held = [p for p in data["posts"] if p.get("hot") and not p.get("breaking") and not p.get("replaced_by")
                 and str(p.get("drafted_at", ""))[:10] == today and _revision(p["id"]) < tries
-                and (p["status"] == "needs_human" or (p["status"] in {"drafted", "rendered", "awaiting"} and quality_hold(p)))]
+                and (p["status"] == "needs_human" or (p["status"] in {"drafted", "rendered", "awaiting"} and fix_reason(p)))]
         if not held:
             break
         for p in held:
@@ -793,6 +801,7 @@ def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> 
             new["id"] = _next_rev(p["id"], _ids(data))
             new["status"] = "planned"
             new["avoid"] = [x for x in [*(p.get("avoid") or []), story] if x]
+            new["fix"] = fix_reason(p) or "; ".join((p.get("guard") or {}).get("errors") or [])[:300]
             slot = dt.datetime.fromisoformat(p["publish_at"])
             new["publish_at"] = max(slot, now() + dt.timedelta(minutes=20)).replace(second=0, microsecond=0).isoformat()
             if p["status"] == "needs_human":
@@ -808,6 +817,46 @@ def retry_held_hot(label: str, mock: bool = False, tries: int = HOT_RETRIES) -> 
             log(f"replacement draft failed: {str(e)[:200]}")
             break
     return made
+
+
+def fix_planned(label: str) -> list[str]:
+    """26 Nov, James: "no post should expire"; he chose "fix it, then post". A planned post (not news) that the checks
+    held back, or that went to Telegram for a tap and is still untapped FIX_LEAD before its slot, is written again,
+    told what was wrong (`fix`), up to FIX_TRIES versions. One that passes every check goes out by itself, late if
+    need be (within LATE_LIMIT). New ids, so an older card can't approve the new words unseen. The Promise Tracker
+    and scorecards wait for a person however long. Returns the new ids: the run that called this drafts them."""
+    if not week_file(label).exists():
+        return []
+    data, t = load_week(label), now()
+
+    def due(p: dict) -> bool:
+        if p.get("hot") or p.get("template") in AUTO_NEVER | {"tazama"} or _revision(p["id"]) + 1 >= FIX_TRIES:
+            return False
+        slot = dt.datetime.fromisoformat(p["publish_at"])
+        if t - slot > LATE_LIMIT - dt.timedelta(hours=2):   # past saving: settle_unanswered closes it
+            return False
+        return p["status"] == "needs_human" or (p["status"] == "awaiting" and t >= slot - FIX_LEAD and bool(fix_reason(p)))
+    targets = {p["id"] for p in data["posts"] if due(p)}
+    groups = {p["group"] for p in data["posts"] if p["id"] in targets and p.get("group")}
+    new_groups: dict[str, str] = {}
+    fixed = []
+    for i, p in enumerate(data["posts"]):
+        if not (p["id"] in targets or (p.get("group") in groups and p["status"] not in {"published", "manual", "approved"})):
+            continue
+        new = {k: v for k, v in p.items() if k in PLAN_KEYS} | {"status": "planned"}
+        new["id"] = _next_rev(p["id"], _ids(data))
+        if p.get("group"):
+            new["group"] = new_groups.setdefault(p["group"], _next_rev(p["group"], _ids(data)))
+        slot = dt.datetime.fromisoformat(p["publish_at"])
+        new["publish_at"] = max(slot, t + dt.timedelta(minutes=45)).replace(second=0, microsecond=0).isoformat()
+        new["fix"] = (fix_reason(p) if p["status"] == "awaiting" else "") or \
+            "; ".join((p.get("guard") or {}).get("errors") or [])[:300] or "the editor found it weak"
+        data["posts"][i] = new
+        fixed.append(new["id"])
+    if fixed:
+        save_week(data)
+        log(f"fix {label}: written again for their slots: {fixed}")
+    return fixed
 
 
 def remake(label: str, replace_approved: bool = False) -> list[str]:
@@ -1328,8 +1377,8 @@ def held_summary(data: dict) -> str | None:
         return None
     from html import escape as esc
     lines = [f"• <b>{esc(p['id'])}</b>: {esc('; '.join((p.get('guard') or {}).get('errors') or ['check needed'])[:160])}" for p in held]
-    return (f"🛠 {len(held)} post(s) held back, not sent for approval:\n" + "\n".join(lines) +
-            "\n\nTo fix automatically: GitHub → Actions → autopilot → Run workflow → <code>redo</code>.")
+    return (f"🛠 {len(held)} post(s) held back by the checks:\n" + "\n".join(lines) +
+            "\n\nEach is written again for its slot by itself; a version that passes goes out without you.")
 
 
 def render_week(label: str) -> dict:
@@ -1420,6 +1469,14 @@ def decision_line(p: dict) -> str:
     why = auto_ok(p)
     if not why and auto_approve_on():
         return f"🤖 <b>Passes every check: goes out by itself {when}.</b> Tap ❌ only to stop it."
+    fixing = (" Untapped, it is written again by itself and a version that passes goes out."
+              if fix_reason(p) and not p.get("hot") else
+              " Untapped, a new draft takes its slot by itself." if fix_reason(p) else "")
+    return _call_line(p, why, when) + fixing
+
+
+def _call_line(p: dict, why: str, when: str) -> str:
+    from html import escape as esc
     errs = (p.get("guard") or {}).get("errors") or []
     if errs:
         return f"🧭 <b>My call: ❌ don't post.</b> It failed {len(errs)} of our checks (listed below)."
@@ -1624,7 +1681,7 @@ def auto_ok(p: dict) -> str:
     if g.get("errors"):
         return "failed a guard rule"
     if p.get("words_approved"):   # you approved these words; the system only swapped an outlet's graphic for a photo
-        return "uses a named person's portrait" if p.get("photo_kind") in AUTO_PHOTO_NEVER else ""
+        return "a face beside an allegation" if _face_beside_allegation(p) else ""
     if p.get("template") == "tazama":   # you sent the clip: that is the decision; the guard passed when it was made
         return ""
     if any("named person" in str(w) for w in g.get("warnings") or []):
@@ -1640,11 +1697,19 @@ def auto_ok(p: dict) -> str:
         return "the editor's score is under the bar"
     if not (p.get("source_links") or isinstance(p.get("material"), dict) or str(p.get("source") or "").startswith("http")):
         return "no collected report or official page behind it"
-    if p.get("photo_kind") in AUTO_PHOTO_NEVER and not p.get("whosaid"):   # the quiz shows a face beside that
-        return "uses a named person's portrait"                              # person's own reported words
-    if p.get("hot") and p.get("beat") == "politics":
-        return "a political story"
+    if _face_beside_allegation(p):
+        return "a face beside an allegation"
+    # 26 Nov, James: "no post should expire", and he chose "fix it, then post": a political story, or a person's
+    # face beside their own story (22 Nov: posts about a person show that person), goes out once it passes every
+    # check. They used to wait for a tap that often never came (23-25 Nov: 1123e, 1124e expired).
     return ""
+
+
+def _face_beside_allegation(p: dict) -> bool:
+    """A named person's portrait on a post that carries an allegation (James's rule: no face beside one). The photo
+    step never fetches one for such a post; this stops one that slipped through from going out by itself."""
+    import photos
+    return p.get("photo_kind") in AUTO_PHOTO_NEVER and not p.get("whosaid") and photos._accused(p)
 
 
 def drafter_bar() -> float:
@@ -1833,23 +1898,46 @@ def freshness_check(dry_run: bool = False) -> list[str]:
 
 
 def expire_unanswered() -> list[str]:
-    """Cards you never tapped don't hang around: two hours after their slot they are marked 'expired' and
-    you get one note. Nothing is ever posted without your ✅."""
-    gone = []
+    """26 Nov, James: "no post should expire". A card nobody tapped is no longer dropped after its slot:
+    - one a later version replaced is closed quietly once that version is approved or out (status "replaced"), so
+      the old words can't go out beside it;
+    - one another version can still fix is left to be fixed (retry_held_hot for news, fix_planned for the rest);
+    - a Promise Tracker or scorecard post waits for you however long;
+    - only a post whose every version failed a check (or the news edition that is past saving, LATE_LIMIT) is
+      closed, status "dropped" with the reason, and you get one line about it. Nothing goes out unchecked.
+    Returns the ids closed."""
+    closed, told = [], []
     for f in sorted(WEEKS.glob("*.json")):
         data = json.loads(f.read_text(encoding="utf-8"))
-        hit = [p for p in data["posts"] if p["status"] == "awaiting"
-               and now() - dt.datetime.fromisoformat(p["publish_at"]) > EXPIRE_AFTER]
-        for p in hit:
-            p["status"] = "expired"
-        if hit:
-            save_week(data)   # (one whose slot another draft took is not news: it goes quietly)
-            gone += sorted({p.get("group") or p["id"] for p in hit if not p.get("replaced_by")})
-    if gone:
-        log(f"expired (never approved): {gone}")
-        _notify("⌛ Not approved in time, so not posted: " + ", ".join(f"<b>{_esc(g)}</b>" for g in gone)
-                + ". Their buttons no longer do anything.")
-    return gone
+        by_id = {p["id"]: p for p in data["posts"]}
+        changed = False
+        for p in data["posts"]:
+            if p["status"] != "awaiting":
+                continue
+            late = now() - dt.datetime.fromisoformat(p["publish_at"])
+            if late <= EXPIRE_AFTER or p.get("template") in AUTO_NEVER:
+                continue
+            nxt = by_id.get(p.get("replaced_by") or "")
+            if nxt and nxt["status"] in {"approved", "published", "manual"}:
+                p["status"], p["closed_why"] = "replaced", f"{nxt['id']} went out for this slot"
+            elif nxt and nxt["status"] not in {"rejected", "dropped", "missed"} and late <= LATE_LIMIT:
+                continue   # its replacement is still being written or checked
+            elif fix_reason(p) and late <= LATE_LIMIT and (
+                    (p.get("hot") and _revision(p["id"]) < HOT_RETRIES) or (not p.get("hot") and _revision(p["id"]) + 1 < FIX_TRIES)):
+                continue   # another version is due (retry_held_hot / fix_planned)
+            else:
+                p["status"] = "dropped"
+                p["closed_why"] = (f"{int(late.total_seconds() // 3600)} h past its slot: the story is old" if late > LATE_LIMIT
+                                   else f"every version failed a check ({fix_reason(p)})" if fix_reason(p) else "no tap")
+                told.append(f"{p.get('group') or p['id']}: {p['closed_why']}")
+            closed.append(p["id"])
+            changed = True
+        if changed:
+            save_week(data)
+    if told:
+        log(f"dropped: {told}")
+        _notify("🗂 Not posted (nothing goes out unchecked):\n" + "\n".join(f"• {_esc(x)}" for x in sorted(set(told))))
+    return closed
 
 
 def _answer(cq_id: str, text: str) -> None:
@@ -2883,7 +2971,8 @@ def publish(dry_run: bool = False) -> None:
                     if not dry_run:
                         save_week(data)
                     continue
-            if not p.get("attempts") and now() - dt.datetime.fromisoformat(p["publish_at"]) > LATE_LIMIT:
+            if not p.get("attempts") and p.get("template") not in AUTO_NEVER \
+                    and now() - dt.datetime.fromisoformat(p["publish_at"]) > LATE_LIMIT:
                 for m in members:  # a stale post helps nobody: skip it rather than flood the feed
                     m["status"] = "missed"
                 log(f"missed {key}: more than {LATE_LIMIT} past its slot")
@@ -3702,6 +3791,11 @@ def _main(argv: list[str] | None = None) -> int:
                     replaced = retry_held_hot(label)
                 except Exception as e:
                     log(f"retry of held news posts skipped: {e}")
+            if not (a.mock or a.dry_run) and week_file(label).exists():
+                try:   # a planned post the checks held, or one untapped past its slot: written again (26 Nov)
+                    replaced += fix_planned(label)
+                except Exception as e:
+                    log(f"rewrite of held posts skipped: {e}")
             if not replaced and not fresh_due(label) and not unrendered_hot(label):
                 return 0
     if a.command == "tracker":   # next week as a Development Tracker batch, drafted and sent now
@@ -3742,6 +3836,11 @@ def _main(argv: list[str] | None = None) -> int:
                 retry_held_hot(label)
             except Exception as e:
                 log(f"retry of held news posts skipped: {e}")
+            try:   # and a held planned post is written again for its slot (26 Nov: "no post should expire")
+                if fix_planned(label):
+                    draft(label, mock=a.mock, horizon=None)
+            except Exception as e:
+                log(f"rewrite of held posts skipped: {e}")
     if a.command in {"week", "tracker", "hot", "redo", "render", "remake", "renew", "rephoto"}:
         render_week(label)
     if a.command in {"week", "tracker", "hot", "redo", "ask", "remake", "renew", "rephoto"}:

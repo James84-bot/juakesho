@@ -1654,18 +1654,61 @@ class HttpRetryTests(unittest.TestCase):
 
 
 class ExpiryTests(TempWeeks):
-    def test_untapped_card_expires_four_hours_after_its_slot(self):
+    def test_an_untapped_card_is_written_again_not_expired(self):
+        # 26 Nov, James: "no post should expire"; he chose "fix it, then post"
         t = pl.now()
-        self.week([{"id": "old", "status": "awaiting", "publish_at": (t - pl.dt.timedelta(hours=5)).isoformat()},
-                   {"id": "soon", "status": "awaiting", "publish_at": (t - pl.dt.timedelta(minutes=30)).isoformat()},
-                   {"id": "ok", "status": "approved", "publish_at": (t - pl.dt.timedelta(hours=9)).isoformat()}])
+        weak = {"template": "sauti", "lane": "everyone", "bg": "usiku", "critic": {"avg": 6.1},
+                "guard": {"errors": [], "warnings": []}, "source_links": [{"link": "https://n/1"}]}
+        self.week([{**weak, "id": "old", "status": "awaiting", "publish_at": (t - pl.dt.timedelta(hours=5)).isoformat()},
+                   {**weak, "id": "soon", "status": "awaiting", "publish_at": (t - pl.dt.timedelta(minutes=30)).isoformat()},
+                   {**weak, "id": "ok", "status": "approved", "publish_at": (t - pl.dt.timedelta(hours=9)).isoformat()},
+                   {**weak, "id": "gone-r3", "status": "awaiting", "publish_at": (t - pl.dt.timedelta(hours=5)).isoformat()},
+                   {**weak, "id": "promise", "template": "promise", "status": "awaiting",
+                    "publish_at": (t - pl.dt.timedelta(hours=50)).isoformat()}])
         notes = []
         with mock.patch.object(pl, "_notify", notes.append):
-            self.assertEqual(pl.expire_unanswered(), ["old"])
-        self.assertEqual([p["status"] for p in pl.load_week("2026-W41")["posts"]], ["expired", "awaiting", "approved"])
+            self.assertEqual(pl.expire_unanswered(), ["gone-r3"])          # its third version: every one failed
+        st = {p["id"]: p["status"] for p in pl.load_week("2026-W41")["posts"]}
+        self.assertEqual(st, {"old": "awaiting", "soon": "awaiting", "ok": "approved", "gone-r3": "dropped",
+                              "promise": "awaiting"})
         self.assertEqual(len(notes), 1)
+        self.assertEqual(pl.fix_planned("2026-W41"), ["old-r2", "soon-r2"])  # untapped past its slot: written again
+        posts = {p["id"]: p for p in pl.load_week("2026-W41")["posts"]}
+        self.assertEqual(posts["old-r2"]["status"], "planned")
+        self.assertIn("editor's score", posts["old-r2"]["fix"])
+        self.assertGreater(pl.dt.datetime.fromisoformat(posts["old-r2"]["publish_at"]), t)   # late, not never
+
+    def test_an_untapped_card_is_fixed_in_time_for_its_slot(self):
+        t = pl.now()
+        weak = {"template": "sauti", "critic": {"avg": 6.1}, "guard": {"errors": [], "warnings": []},
+                "source_links": [{"link": "https://n/1"}], "status": "awaiting"}
+        self.week([{**weak, "id": "in80", "publish_at": (t + pl.dt.timedelta(minutes=80)).replace(second=0, microsecond=0).isoformat()},
+                   {**weak, "id": "in3h", "publish_at": (t + pl.dt.timedelta(hours=3)).isoformat()}])
+        self.assertEqual(pl.fix_planned("2026-W41"), ["in80-r2"])           # in3h: still yours to tap
+        new = pl.load_week("2026-W41")["posts"][0]
+        self.assertEqual(new["publish_at"], (t + pl.dt.timedelta(minutes=80)).replace(second=0, microsecond=0).isoformat())
+
+    def test_old_cards_cannot_approve_the_rewrites(self):
+        t = pl.now()
+        self.week([{"id": "old", "status": "awaiting", "template": "sauti", "critic": {"avg": 6.1},
+                    "publish_at": (t - pl.dt.timedelta(hours=5)).isoformat(), "guard": {"errors": [], "warnings": []}},
+                   {"id": "gone-r3", "status": "dropped", "publish_at": (t - pl.dt.timedelta(hours=5)).isoformat()}])
+        pl.fix_planned("2026-W41")
         data = pl.load_week("2026-W41")
-        self.assertEqual(pl.apply_decision(data, "old", True), [])   # a late ✅ can't revive it
+        self.assertEqual(pl.apply_decision(data, "old", True), [])   # the old card's ✅ can't approve the new words
+        self.assertEqual(pl.apply_decision(data, "gone-r3", True), [])
+
+    def test_a_post_the_checks_held_back_is_written_again_by_itself(self):
+        t = pl.now()
+        self.week([{"id": "held", "status": "needs_human", "template": "kenya", "lane": "everyone", "bg": "usiku",
+                    "publish_at": (t + pl.dt.timedelta(hours=6)).isoformat(),
+                    "guard": {"errors": ["no real photo of this place or project was found: redraft with another one"]}},
+                   {"id": "held-r3", "status": "needs_human", "template": "kenya",
+                    "publish_at": (t + pl.dt.timedelta(hours=6)).isoformat(), "guard": {"errors": ["x"]}}])
+        self.assertEqual(pl.fix_planned("2026-W41"), ["held-r2"])            # held-r3 was its last version
+        new = pl.load_week("2026-W41")["posts"][0]
+        self.assertEqual(new["publish_at"], (t + pl.dt.timedelta(hours=6)).replace(second=0, microsecond=0).isoformat())
+        self.assertIn("no real photo", new["fix"])
 
 
 class HotSpacingTests(unittest.TestCase):

@@ -96,15 +96,17 @@ class Decision(unittest.TestCase):
         self.assertIn("don't post", self.line(post("a", guard={"errors": ["closer: x"], "warnings": []})))
 
     def test_waiting_post_says_why(self):
-        p = post("a", hot=True, beat="politics")
+        p = post("a", guard={"errors": [], "warnings": ["possible named person(s): Jane Doe. Civic posts target systems"]})
         text = self.line(p)
         self.assertIn("post it", text)
-        self.assertIn("a political story", text)
+        self.assertIn("may name a person", text)
 
     def test_your_approval_carries_over_a_new_photo(self):
         p = post("a", hot=True, beat="politics", words_approved=True)
         self.assertEqual(pl.auto_ok(p), "")
-        self.assertEqual(pl.auto_ok({**p, "photo_kind": "file"}), "uses a named person's portrait")
+        self.assertEqual(pl.auto_ok({**p, "photo_kind": "file"}), "")
+        self.assertEqual(pl.auto_ok({**p, "photo_kind": "file", "message": "The MP was charged with fraud."}),
+                         "a face beside an allegation")
 
     def test_card_shows_the_call_and_the_new_photo_reason(self):
         p = post("a", status="rendered", rephoto_reason="Kenyans.co.ke's own edit (Two photos joined)")

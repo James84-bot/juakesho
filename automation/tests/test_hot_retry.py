@@ -20,7 +20,8 @@ NOW = dt.datetime(2026, 10, 31, 12, 0, tzinfo=EAT)
 def held(pid="2026-w44-hot-1031", **extra):
     return {"id": pid, "template": "sauti", "bg": "usiku", "lane": "everyone", "hot": True, "beat": "life",
             "publish_at": "2026-10-31T12:45:00+03:00", "status": "needs_human", "message": "Old story about a crash",
-            "drafted_at": "2026-10-31T09:00:00+03:00", "guard": {"errors": ["weak"]}, **extra}
+            "drafted_at": "2026-10-31T09:00:00+03:00", "guard": {"errors": ["weak"]},
+            "source_links": [{"title": "Crash on Thika Road", "link": "https://n.test/1"}], **extra}
 
 
 class Retry(unittest.TestCase):
@@ -52,6 +53,7 @@ class Retry(unittest.TestCase):
                 if p["status"] == "planned":
                     p["status"], p["drafted_at"], p["message"] = status, NOW.isoformat(), f"Story {p['id']}"
                     p["critic"] = {"avg": crit}
+                    p["source_links"] = [{"title": f"Report for {p['id']}", "link": "https://n.test/2"}]   # as the writer does
             (pipeline.WEEKS / f"{label}.json").write_text(json.dumps(data), encoding="utf-8")
         return run
 
@@ -81,7 +83,7 @@ class Retry(unittest.TestCase):
         self.assertEqual(self.drafts, 0)
 
     def test_a_post_already_on_its_last_attempt_is_not_retried_again(self):
-        self.save([held("2026-w44-hot-1031-r3")])
+        self.save([held(f"2026-w44-hot-1031-r{pipeline.HOT_RETRIES + 1}")])
         with mock.patch.object(pipeline, "draft", self.fake_draft("drafted")):
             self.assertEqual(pipeline.retry_held_hot(self.label), [])
 
@@ -134,22 +136,36 @@ class Retry(unittest.TestCase):
         self.assertEqual(pipeline.unrendered_hot(self.label), ["2026-w44-hot-1031", "2026-w44-hot-1031-r2"])
         self.assertEqual(pipeline.stuck_hot(self.label), ["2026-w44-hot-1031-r3"])   # the catch-up writes it
 
-    def test_a_good_post_is_never_replaced_even_one_that_waits_for_being_political(self):
+    def test_a_good_post_is_never_replaced_and_a_good_political_one_goes_out_by_itself(self):
         self.save([held(status="drafted", critic={"avg": 8.4}, guard={"errors": []}),
                    held("2026-w44-hot-1031e", status="awaiting", beat="politics", critic={"avg": 9.0}, guard={"errors": []})])
         with mock.patch.object(pipeline, "draft", self.fake_draft("drafted")):
             self.assertEqual(pipeline.retry_held_hot(self.label), [])
         self.assertEqual(self.drafts, 0)
+        self.assertEqual(pipeline.auto_ok(self.load()[1]), "")   # 26 Nov: no longer waits for being political
 
-    def test_a_card_whose_slot_another_draft_took_expires_quietly(self):
-        self.save([held(status="awaiting", publish_at="2026-10-31T07:00:00+03:00", replaced_by="x-r2"),
-                   held("2026-w44-hot-1031a", status="awaiting", publish_at="2026-10-31T07:00:00+03:00")])
+    def test_no_card_expires_it_is_replaced_fixed_or_dropped_with_a_reason(self):
+        # 26 Nov, James: "no post should expire"; he chose "fix it, then post"
+        late = "2026-10-31T07:00:00+03:00"   # five hours ago
+        self.save([held(status="awaiting", publish_at=late, replaced_by="2026-w44-hot-1031-r2"),
+                   held("2026-w44-hot-1031-r2", status="approved", publish_at="2026-10-31T12:20:00+03:00"),
+                   held("2026-w44-hot-1031a", status="awaiting", publish_at=late),                          # 1st version
+                   held(f"2026-w44-hot-1031b-r{pipeline.HOT_RETRIES + 1}", status="awaiting", publish_at=late),  # last one
+                   held("2026-w44-hot-1031c", status="awaiting", publish_at=late, template="promise"),
+                   held("2026-w44-hot-1031d", status="awaiting", publish_at="2026-10-31T10:00:00+03:00")])     # 2 h ago
         told = []
         with mock.patch.object(pipeline, "_notify", told.append), mock.patch.object(pipeline, "log", lambda m: None):
             pipeline.expire_unanswered()
-        self.assertEqual({p["status"] for p in self.load()}, {"expired"})
-        self.assertIn("2026-w44-hot-1031a", told[0])
-        self.assertNotIn("2026-w44-hot-1031<", told[0])
+        st = {p["id"]: p["status"] for p in self.load()}
+        self.assertEqual(st["2026-w44-hot-1031"], "replaced")               # its replacement is going out
+        self.assertEqual(st["2026-w44-hot-1031a"], "awaiting")              # another version is still due
+        self.assertEqual(st[f"2026-w44-hot-1031b-r{pipeline.HOT_RETRIES + 1}"], "dropped")   # every version failed
+        self.assertEqual(st["2026-w44-hot-1031c"], "awaiting")              # a person's record: waits for you
+        self.assertEqual(st["2026-w44-hot-1031d"], "awaiting")
+        self.assertNotIn("expired", st.values())
+        self.assertEqual(len(told), 1)
+        self.assertIn("1031b", told[0])
+        self.assertIn("every version failed a check", told[0])
 
     def test_the_editor_judges_sport_and_life_posts_in_their_own_lane(self):
         import draft

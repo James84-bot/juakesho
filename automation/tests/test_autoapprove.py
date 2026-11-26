@@ -34,11 +34,15 @@ class AutoOk(unittest.TestCase):
             "low score": good(critic={"avg": 7.2}),
             "no score": good(critic=None),
             "no source": good(source_links=None),
-            "portrait": good(photo_kind="file"),
-            "politics": good(hot=True, beat="politics"),
+            "face beside an allegation": good(photo_kind="file", message="The MP was charged with fraud on Monday."),
         }
         for name, post in cases.items():
             self.assertNotEqual(pl.auto_ok(post), "", name)
+
+    def test_politics_and_a_persons_own_face_go_out_once_they_pass(self):
+        # 26 Nov, James: "no post should expire"; he chose "fix it, then post"
+        self.assertEqual(pl.auto_ok(good(hot=True, beat="politics")), "")
+        self.assertEqual(pl.auto_ok(good(photo_kind="file")), "")
 
     def test_hand_written_post_needs_no_score_but_not_a_low_one(self):
         self.assertEqual(pl.auto_ok(good(critic=None, hand=True)), "")

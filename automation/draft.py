@@ -743,6 +743,8 @@ def build_prompt(week_label: str, slots: list[dict], lanes: dict, examples: list
          **({"angle": ANGLES[s["angle"]]} if s.get("angle") in ANGLES else {}),
          **({"material": material.brief(s["material"])} if s.get("material") else {}),
          **({"avoid": "Already posted today, so pick a DIFFERENT story: " + " | ".join(s["avoid"])} if s.get("avoid") else {}),
+         **({"fix": "An earlier version of this post was held back for: " + str(s["fix"])[:300] + ". Write one that "
+                    "fixes exactly that and passes."} if s.get("fix") else {}),
          **({"breaking": "BREAKING: write about THIS story, which several newsrooms are reporting right now: "
                          + s["breaking"]["title"] + " (" + ", ".join(s["breaking"]["outlets"]) + "). Facts only from "
                          "what is reported; first beat = the news in one sentence. Leave `source` as the outlet names."}

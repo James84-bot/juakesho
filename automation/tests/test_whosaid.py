@@ -134,7 +134,8 @@ class Slot(unittest.TestCase):
         post = {"template": "sauti", "hand": True, "whosaid": True, "source_links": [{"link": "x"}],
                 "photo_kind": "file", "guard": {"errors": [], "warnings": []}}
         self.assertEqual(pl.auto_ok(post), "")
-        self.assertEqual(pl.auto_ok({**post, "whosaid": False}), "uses a named person's portrait")
+        self.assertEqual(pl.auto_ok({**post, "whosaid": False, "message": "He was charged with fraud."}),
+                         "a face beside an allegation")
 
 
 if __name__ == "__main__":
