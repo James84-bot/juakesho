@@ -63,5 +63,20 @@ class CivicNames(unittest.TestCase):
         self.assertTrue([x for x in w if "named person" in x])
 
 
+class Repairs(unittest.TestCase):
+    """26 Nov: drafts broke the length rules, no repair ran (Gemini's calls for the run were spent), and each was
+    thrown away for a new story. The free backups cost nothing, so repairs go on with them."""
+
+    def test_repairs_run_on_the_free_backups_once_gemini_is_spent(self):
+        import os
+        import draft
+        with mock.patch.dict(draft.SPEND, {"calls": draft.GEMINI_LIMITS["calls"], "usd": 0.0}), \
+                mock.patch.object(draft, "provider", lambda: "gemini"):
+            with mock.patch.dict(os.environ, {"GROQ_API_KEY": "", "OPENROUTER_API_KEY": "", "MISTRAL_API_KEY": ""}):
+                self.assertFalse(draft.can_afford(5000, 700))
+            with mock.patch.dict(os.environ, {"GROQ_API_KEY": "k"}):
+                self.assertTrue(draft.can_afford(5000, 700))
+
+
 if __name__ == "__main__":
     unittest.main()

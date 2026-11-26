@@ -829,6 +829,9 @@ def can_afford(est_in: int, est_out: int, model: str | None = None, slack: float
     ok = SPEND["usd"] + (est_in * pin + est_out * pout) / 1e6 <= budget() + slack
     if provider() == "gemini":
         ok = SPEND["calls"] < GEMINI_LIMITS["calls"] - 2   # keep calls in hand for repairs
+        # ...but once Gemini's calls for the run are spent, the free backups answer and cost nothing (26 Nov: a
+        # news slot's drafts broke the length rules and no repair ran, so each was thrown away for a new story)
+        ok = ok or any(os.environ.get(b["env"], "").strip() for b in FREE_BACKUPS)
     if not ok:
         print(f"  budget: skipping an optional pass (spent ${SPEND['usd']:.3f} of ${budget():.2f})")
     return ok
