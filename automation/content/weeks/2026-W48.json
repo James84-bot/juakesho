@@ -4273,7 +4273,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "replaced",
       "guard": {
         "errors": [
           "weak: editor scored 4.0/10. Use a real sport topic from the weekly list instead of a stale archive article."
@@ -4315,7 +4315,8 @@
       ],
       "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1923
+      "tg_msg": 1923,
+      "closed_why": "2026-w48-hot-1127a-r5 went out for this slot"
     },
     {
       "id": "2026-w48-hot-1127a-r2",
@@ -4370,7 +4371,7 @@
           "link": "https://www.the-star.co.ke/sports/football/2026-11-27-minnows-migori-3k-prepare-to-trade-blows-in-survival-scrap"
         }
       ],
-      "status": "awaiting",
+      "status": "replaced",
       "guard": {
         "errors": [
           "weak: editor scored 4.8/10. Pick a news story from the top 5 ranking list that Kenyans are actively discussing instead of low-tier sports items."
@@ -4409,7 +4410,8 @@
       ],
       "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1924
+      "tg_msg": 1924,
+      "closed_why": "2026-w48-hot-1127a-r5 went out for this slot"
     },
     {
       "id": "2026-w48-hot-1127a-r3",
@@ -4457,7 +4459,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "replaced",
       "guard": {
         "errors": [
           "weak: editor scored 4.0/10. The action beats a web address instead of a direct question, and the human score suffers from textbook phrasing and stacked hashtags."
@@ -4496,7 +4498,8 @@
       ],
       "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1925
+      "tg_msg": 1925,
+      "closed_why": "2026-w48-hot-1127a-r5 went out for this slot"
     },
     {
       "id": "2026-w48-hot-1127a-r4",
@@ -5000,7 +5003,7 @@
         }
       ],
       "publish_at": "2026-11-27T20:30:00+03:00",
-      "status": "approved",
+      "status": "published",
       "drafted_at": "2026-11-27T20:02:07+03:00",
       "guard": {
         "errors": [],
@@ -5010,7 +5013,11 @@
       },
       "tg_msg": 1965,
       "auto": true,
-      "decided_at": "2026-11-27T20:02:11.541146+03:00"
+      "decided_at": "2026-11-27T20:02:11.541146+03:00",
+      "published_at": "2026-11-27T20:32:29.599328+03:00",
+      "ig_id": "17941553088408197",
+      "fb_id": null,
+      "fb_story_id": "2390555901680388"
     }
   ],
   "scripts": {
