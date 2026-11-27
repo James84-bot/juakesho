@@ -4750,7 +4750,7 @@
           "link": "https://saccoreview.co.ke/governors-demand-release-of-sh8-9-billion-owed-to-counties-for-uhc-staff/"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -4804,7 +4804,14 @@
       "auto": true,
       "decided_at": "2026-11-27T16:39:40.326902+03:00",
       "photo_checked": "2026-11-27T16:53:40.560972+03:00",
-      "photo_fit": "2026-11-27T16:53:40.560983+03:00"
+      "photo_fit": "2026-11-27T16:53:40.560983+03:00",
+      "published_at": "2026-11-27T19:32:17.357000+03:00",
+      "ig_id": "17919636603514698",
+      "fb_id": "2459737181229495",
+      "story_id": "18654574732039424",
+      "fb_story_id": "1187777107005607",
+      "yt_id": "cuBAThhm-qE",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w48-hot-1127b1857",
