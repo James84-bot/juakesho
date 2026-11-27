@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-27T13:08:57.643456+00:00",
+  "fetched": "2026-11-27T13:26:53.306958+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -29,19 +29,19 @@
       "traffic": "1000+",
       "news": [
         {
-          "title": "CS Chirchir Announces Upcoming Changes to Vehicle Inspections",
-          "url": "https://www.kenyans.co.ke/news/129717-cs-chirchir-reveals-govt-plan-introduce-automated-vehicle-inspections",
-          "source": "Kenyans.co.ke"
+          "title": "Rhode Island DUI Task Force ramps up patrols for Thanksgiving holiday weekend",
+          "url": "https://turnto10.com/news/local/rhode-island-dui-task-force-ramps-up-patrols-for-thanksgiving-holiday-weekend",
+          "source": "WJAR"
         },
         {
-          "title": "NTSA steps up tech-driven traffic crackdown to curb road deaths",
-          "url": "https://nairobilawmonthly.com/ntsa-steps-up-tech-driven-traffic-crackdown-to-curb-road-deaths/",
-          "source": "Nairobi Law Monthly"
+          "title": "Shasta non-profit warns of dangerous 'Drinksgiving' trend",
+          "url": "https://krcrtv.com/news/local/shasta-non-profit-warns-of-dangerous-drinksgiving-trend",
+          "source": "KRCR"
         },
         {
-          "title": "Every life lost on our roads is one too many",
-          "url": "https://citizen.digital/article/aa-kenya-and-kcb-group-partner-to-advance-road-safety-n394604",
-          "source": "Citizen Digital"
+          "title": "Thanksgiving Eve crowds pack Short North bars as warnings rise about impaired driving",
+          "url": "https://abc6onyourside.com/news/local/thanksgiving-eve-crowds-pack-short-north-bars-as-warnings-rise-about-impaired-driving-pint-house-tatum-kilgallon-manager-national-highway-traffic-safety-administration-mothers-against-drunk-driving-aaa",
+          "source": "WSYX"
         }
       ]
     },
@@ -56,14 +56,58 @@
           "source": "People.com"
         },
         {
-          "title": "Adam and Holly Ramsay-Peaty welcome first child together",
-          "url": "https://www.olympics.com/en/news/swimming-great-britain-adam-holly-ramsay-peaty-welcome-first-child",
-          "source": "Olympics"
-        },
-        {
           "title": "Gordon Ramsay becomes grandfather as daughter Holly welcomes baby girl with Adam Peaty",
           "url": "https://www.the-independent.com/life-style/holly-ramsay-gives-birth-gordon-adam-peaty-b3092200.html",
           "source": "The Independent"
+        },
+        {
+          "title": "Gordon Ramsay, 60, Becomes A Grandpa For The First Time",
+          "url": "https://www.huffpost.com/entry/gordon-ramsay-becomes-grandpa-daughter-holly-welcomes-first-child_n_6b08a73de4b084fa2e1782cb",
+          "source": "HuffPost"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "national defence university - kenya",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Ruto presides over National Defence University graduation in Nakuru",
+          "url": "https://www.the-star.co.ke/news/2026-11-26-ruto-presides-over-national-defence-university-graduation-in-nakuru-1",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "Ruto Sets Aside Ksh100 Million to Investigate Gikomba Fires, Drug Networks",
+          "url": "https://nairobiwire.com/2026/11/ruto-directs-ksh100-million-ndu-k-security-research.html",
+          "source": "Nairobi Wire -"
+        },
+        {
+          "title": "NDU-K 4TH GRADUATION: FORGING LEADERS FOR AN EVOLVING SECURITY ENVIRONMENT",
+          "url": "https://www.mod.go.ke/news/ndu-k-4th-graduation-forging-leaders-for-an-evolving-security-environment/",
+          "source": "Ministry of Defence – Kenya"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "somalia",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Somalia rolls out EAC e-passport",
+          "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/somalia-rolls-out-eac-e-passport--5686280",
+          "source": "The EastAfrican"
+        },
+        {
+          "title": "Somalia unveils new electronic passport in drive to regional integration",
+          "url": "https://www.hiiraan.com/news4/2026/Nov/206864/somalia_unveils_new_electronic_passport_in_drive_to_regional_integration.aspx",
+          "source": "Hiiraan Online"
+        },
+        {
+          "title": "Somalia to begin issuing EAC e-Passport in January 2027",
+          "url": "https://eastleighvoice.co.ke/news/428770/somalia-to-begin-issuing-eac-e-passport-in-january-2027",
+          "source": "The Eastleigh Voice"
         }
       ]
     },
@@ -83,9 +127,9 @@
           "source": "Betfair"
         },
         {
-          "title": "TV details: How to watch Saints vs Middlesbrough under the lights live from home",
-          "url": "https://uk.sports.yahoo.com/news/tv-details-watch-saints-vs-033000445.html",
-          "source": "Yahoo"
+          "title": "Middlesbrough, Southampton and a tree. The making of a very modern rivalry - The Athletic",
+          "url": "https://www.nytimes.com/athletic/7814581/2026/11/27/middlesbrough-southampton-tree-spygate-hellberg-eckert/",
+          "source": "The New York Times"
         }
       ]
     },
@@ -100,58 +144,14 @@
           "source": "SOS Fanta"
         },
         {
-          "title": "Venezia-Bologna, le probabili formazioni della partita di serie A",
-          "url": "https://sport.sky.it/calcio/serie-a/2026/11/27/venezia-bologna-probabili-formazioni-13-giornata",
-          "source": "Sky Sport"
+          "title": "Dove vedere Venezia-Bologna in tv? Dazn o Sky, orario",
+          "url": "https://www.corrieredellosport.it/news/calcio/serie-a/2026/11/27-152876054/dove_vedere_venezia-bologna_in_tv_dazn_o_sky_orario",
+          "source": "Corriere dello Sport"
         },
         {
           "title": "Il calcio in TV oggi, venerdì 27 novembre. Torna la Serie A con Venezia-Bologna: dove vederla live",
           "url": "https://www.libero.it/magazine/news/calcio-in-tv-oggi-programmazione-diretta-venerdi-27-novembre-2026-cosa-vedere-233168",
           "source": "Libero"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "virgil van dijk",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Fabio Cannavaro reveals Liverpool star Virgil van Dijk's desire to play in Serie A amid AC Milan links",
-          "url": "https://www.goal.com/en-ke/news/liverpool-virgil-van-dijk-ac-milan-fabio-cannavaro-serie-a-move/blt949c4898766e5373",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Virgil van Dijk to Chelsea?! Blues urged to launch sensational summer raid for Liverpool captain as contract stand-off continues at Anfield",
-          "url": "https://www.goal.com/en-ke/news/chelsea-liverpool-virgil-van-dijk-contract-anfield/blt80bc5043f443a57b",
-          "source": "Goal.com"
-        },
-        {
-          "title": "'I've got no idea' - Virgil van Dijk makes honest admission over Liverpool future as contract expiry nears",
-          "url": "https://www.goal.com/en-ke/news/virgil-van-dijk-liverpool-future-contract-expiry/blt8eee705372b8a6fb",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "nz vs ind",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Akash Deep press conference: India pacer spills the beans on Bumrah's unusual bowling action",
-          "url": "https://timesofindia.indiatimes.com/videos/sports/cricket/akash-deep-press-conference-india-pacer-spills-the-beans-on-bumrahs-unusual-bowling-action/videoshow/136213056.cms",
-          "source": "The Times of India"
-        },
-        {
-          "title": "‘Bumrah needs to get 2-3 wickets’: Dinesh Karthik",
-          "url": "https://indianexpress.com/article/sports/cricket/bumrah-needs-to-get-2-3-wickets-dinesh-karthik-10981103/",
-          "source": "The Indian Express"
-        },
-        {
-          "title": "Bumrah’s new run-up: A new trick to trouble batters? | IND vs NZ",
-          "url": "https://www.thehindu.com/videos/shorts/bumrahs-new-run-up-a-new-trick-to-trouble-batters-ind-vs-nz/article71750505.ece",
-          "source": "The Hindu"
         }
       ]
     },

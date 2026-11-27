@@ -4688,13 +4688,118 @@
       "fb_story_id": "1190454203506614",
       "yt_id": "AldRtH6Op4s",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w48-hot-1127e",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "County Governors",
+      "line": "Governors demand *Sh557 billion* for counties in the 2027/28 budget.",
+      "fact": "The Council of Governors says counties need Sh557bn to run health services and pay suppliers.",
+      "source": "Capital FM Africa, 2026-11-26",
+      "beats": [
+        "Governors demand *Sh557 billion* for county budgets next year.",
+        "Counties currently receive Sh400 billion from national revenue.",
+        "Governors say extra funds will pay local suppliers and finish projects.",
+        "Do you feel your county gives you *value for money?*"
+      ],
+      "message": "Governors demand Sh557bn for county allocations to pay suppliers and fund local services.",
+      "action": "Attend your county budget public participation forums to track how local funds are used",
+      "photo_query": "National Treasury Nairobi",
+      "who": "Council of Governors and National Treasury",
+      "where": "National",
+      "when": "26 Nov 2026",
+      "side": "both",
+      "tone": "explainer",
+      "impact": "County allocations determine the quality of local health services, garbage collection and road repairs.",
+      "caption": "Governors want county money raised to Sh557 billion for the 2027/28 financial year. They say the extra funds will fix stalled projects and pay local businesses. The National Treasury must transfer all delayed county funds on schedule as required by law.\n\nDo you feel your county gives you value for money? Tell us below.\n\n#CountyBudget #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-27T19:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "Employers face a Sh1 million fine for failing to provide breastfeeding rooms for working mothers.",
+        "The National Police Service updated December police recruitment rules for applicants across all counties.",
+        "Kenyan shoppers get new bank payment choices at merchant checkouts.",
+        "Harambee Starlets rebuilt their squad by dropping 12 WAFCON players for upcoming international matches."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM Africa",
+          "title": "Governors Demand Sh557 Billion Allocation to Counties in 2027/28",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOSHRpYUpKVk1WOXhvVUtCb2hKQnh4NlB3VGtaUWpTSHRfcExHOXpoRk9iSldVc1NiUVlfZTM2R2l6RkkwRnRMWjdnbnFmcHBWaVVEX3BtcTU3cFlTNkh0RVY3cjVlbFByUWVEb0VpTkg2eXVlRmsxSXg0VjBtcUJKZTd6NVFjaE5CU2JicE1aRE1yVWRJ?oc=5",
+          "published": "2026-11-26"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "The Sh8.9 billion needed to maintain these staff could become a serious burden to counties because it is eating into funds meant for other functions",
+          "speaker": "Mr Njuki",
+          "context": "“The Sh8.9 billion needed to maintain these staff could become a serious burden to counties because it is eating into funds meant for other functions,” Mr Njuki said.",
+          "outlet": "Sacco Review",
+          "link": "https://saccoreview.co.ke/governors-demand-release-of-sh8-9-billion-owed-to-counties-for-uhc-staff/"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 8,
+        "human": 9,
+        "avg": 7.2,
+        "note": "Match the demand score to the actual ranking list provided in the prompt."
+      },
+      "drafted_at": "2026-11-27T16:35:39.878883+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127e-photo.jpg",
+      "photo_credit": "Photo: Sacco Review · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Sacco Review",
+      "photo_source": "https://saccoreview.co.ke/governors-demand-release-of-sh8-9-billion-owed-to-counties-for-uhc-staff/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127e-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127e-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Sacco Review",
+          "title": "Governors demand release of sh8.9 billion owed to counties for UHC staff"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Gives Progress Update on Nairobi-Mombasa Expressway Project"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "Treasury Reveals Planned Changes in November-December Fuel Prices"
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1949,
+      "auto": true,
+      "decided_at": "2026-11-27T16:39:40.326902+03:00"
     }
   ],
   "scripts": {
-    "radio": "Good day, listeners, and welcome to Kenya on Record, your trusted segment for digital awareness and civic accountability.\n\nThis week, we are addressing how easily fake news can spread on our smartphones, especially when images are designed to provoke strong emotional reactions.\n\nYou may have recently seen a viral photo circulating across social media showing Nakuru Senator Tabitha Karanja alongside former Deputy President Rigathi Gachagua, seated next to massive stacks of cash. The image looks dramatic and has drawn a lot of heated reactions online.\n\nHowever, independent fact-checkers at Africa Check have thoroughly investigated the photo and confirmed that it is completely doctored. Digital manipulators edited separate images together to fabricate the scene and mislead the public.\n\nThis is a growing tactic used to manipulate public sentiment, damage reputations, and pollute our national conversation. As citizens, our best line of defense against online deception is to pause before we react. Whenever you see a suspicious photo or claim designed to cause outrage, take a moment to verify it through reliable news outlets or established fact-checking organizations before sharing it in your groups.\n\nKwa ufupi kwa Kiswahili:\nPicha inayosambaa mtandaoni ikimwonyesha Seneta wa Nakuru Tabitha Karanja na aliyekuwa Naibu Rais Rigathi Gachagua wakiwa na marobota ya pesa si ya kweli. Shirika la Africa Check limethibitisha kuwa picha hiyo imebuniwa kwa kompyuta ili kudanganya umma. Kuwa mwangalifu na uhakikishe ukweli kabla ya kusambaza picha au habari mtandaoni.\n\nThank you for listening. Stay vigilant, and keep holding the record straight.",
-    "voice_note": "Jambo family, welcome to this week's WhatsApp update from Kenya on Record.\n\nThere is a viral photo circulating widely in political groups showing Nakuru Senator Tabitha Karanja and former DP Rigathi Gachagua sitting next to piles of cash.\n\nBefore you forward it to your contacts, please hold on. Independent fact-checkers at Africa Check have verified the image and confirmed it is completely fake and digitally doctored.\n\nDisinformation like this is created specifically to stir outrage and divide us. Before hitting share on any shocking picture or breaking news, ask yourself where it came from and check if verified outlets have reported it. Let us keep our digital spaces clean by spreading facts, not propaganda. Share this audio to keep your friends informed!",
-    "sms": "Usiibiwe: Photos can be edited to mislead you. Africa Check proved the viral image of Tabitha Karanja & Gachagua with cash was fake. Verify before sharing!",
-    "reels": "Have you seen that viral photo of Nakuru Senator Tabitha Karanja and former DP Rigathi Gachagua posing next to stacks of cash? Pause before you share. Fact-checkers at Africa Check have confirmed the image is completely doctored. In this season of high political noise, edited photos are used to manipulate your emotions. Always verify the source before spreading false content. Stay sharp, Kenya."
+    "radio": "Good morning and welcome to Kenya on Record. Today, we turn our spotlight onto county finances and service delivery across our 47 devolved units.\n\nGovernors are standing firm, demanding a 557 billion shilling allocation from the National Treasury for the next fiscal year. Their core argument is straightforward: counties are struggling with mounting pending bills, small-scale suppliers are facing financial ruin due to delayed payments, and critical local services—from health facilities to local road maintenance—are on the verge of grinding to a halt.\n\nThere is no denying that the National Treasury’s chronic delays in releasing funds severely hamper devolution. When money does not reach the ground on time, ordinary citizens suffer first. However, as we support the call for timely resource transfers, we must also ask the hard questions. How transparently are the currently available funds being spent? Year after year, reports from the Auditor-General highlight unvouched expenditure, stalled ghost projects, and inflated procurement across several counties.\n\nMore money to counties should mean better services, not bigger leakages. While National Treasury must honour its constitutional duty to release funds promptly, county executives must equally demonstrate strict fiscal discipline and zero tolerance for corruption.\n\nKwa ufupi: Magavana wanataka shilingi bilioni 557 kutoka Serikali Kuu ili kulipa wauzaji wa bidhaa na kuendesha huduma za mashinani. Ni muhimu pesa zitolewe kwa wakati, lakini pia ni sharti kaunti ziwajibikie kila shillingi inayotengwa ili kuzuia ufisadi na ubadhirifu.",
+    "voice_note": "Habari zenu! Here is your quick accountability check from Kenya on Record. Governors are currently pushing the National Treasury for 557 billion shillings for the upcoming financial year. They say the money is needed urgently to clear massive pending bills owed to local business owners and to keep dispensaries and basic services open. Now, Treasury delays are definitely crippling counties, but let's be honest with ourselves: raising the budget without fixing internal leakages won't fix poor service delivery. Audit reports still show millions wasted on stalled projects. As taxpayers, we must demand two things at once: timely transfers from the national government, and total transparency from our governors on how every shilling is spent. Share this with your group!",
+    "sms": "Usiibiwe: Governors demand Sh557bn for counties. Timely transfers matter, but track how your county spends it. Audit your local projects!",
+    "reels": "557 billion shillings. That is what governors are demanding from the National Treasury to pay local suppliers and keep county services running. But let’s be honest: while Treasury delays hurt local businesses, county-level leakages hurt us even more. More money must mean better hospitals and cleaner towns, not funded ghost projects. Demand accountability from your governor today. Follow Kenya on Record for more."
   },
   "spend_usd": 0.0
 }
