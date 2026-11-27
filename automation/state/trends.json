@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-27T05:41:35.423654+00:00",
+  "fetched": "2026-11-27T06:07:01.491722+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,19 +7,41 @@
       "traffic": "2000+",
       "news": [
         {
-          "title": "Safaricom explains what to do to stop unwanted Free Survey messages",
-          "url": "https://peopledaily.digital/business/safaricom-explains-what-to-do-to-stop-unwanted-free-survey-messages",
-          "source": "People Daily"
-        },
-        {
-          "title": "Safaricom reveals how customers can stop unwanted voicemail promotional messages",
-          "url": "https://peopledaily.digital/business/safaricom-reveals-how-customers-can-stop-unwanted-voicemail-promotional-messages",
+          "title": "Safaricom reveals cost of acquiring an M-PESA agent line",
+          "url": "https://peopledaily.digital/business/safaricom-reveals-cost-of-acquiring-an-m-pesa-agent-line",
           "source": "People Daily"
         },
         {
           "title": "Vodafone reveals Sh430bn gain from Safaricom deal",
           "url": "https://www.businessdailyafrica.com/bd/corporate/companies/vodafone-reveals-sh430bn-gain-from-safaricom-deal-5682944",
           "source": "Business Daily"
+        },
+        {
+          "title": "R1.15 billion in limbo for Vodacom",
+          "url": "https://businesstech.co.za/news/telecommunications/885111/r1-15-billion-in-limbo-for-vodacom/",
+          "source": "BusinessTech"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "olympiacos f.c. vs ac milan standings",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Christian Pulisic comes off bench to spark Milan win over Olympiacos",
+          "url": "https://www.espn.com/soccer/story/_/id/50605706/christian-pulisic-ac-milan-olympiacos-europa-league-goal",
+          "source": "ESPN"
+        },
+        {
+          "title": "Olympiakos vs AC Milan: UEFA Europa League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6pw4zkrpnz8t",
+          "source": "BBC"
+        },
+        {
+          "title": "Olympiacos-Milan, CM player ratings: Cisse hits double figures, Pulisic unstoppable. Jashari and De Winter struggle",
+          "url": "https://www.goal.com/en/news/olympiacos-milan-cm-player-ratings-cisse-hits-double-figures-pulisic-unstoppable-jashari-and-de-winter-struggle/blt61f431994c108ebc",
+          "source": "Goal.com"
         }
       ]
     },
@@ -34,36 +56,58 @@
           "source": "BBC"
         },
         {
-          "title": "Sunderland fans ‘terrified’ as banned Polish supporters throw punches",
-          "url": "https://www.thetimes.com/sport/football/article/sunderland-fans-terrified-as-banned-polish-supporters-throw-punches-g96dqqsw7",
-          "source": "The Times"
-        },
-        {
           "title": "Reinildo error extends Sunderland woe as Jagiellonia grab Europa League draw",
           "url": "https://www.theguardian.com/football/2026/nov/26/sunderland-jagiellonia-bialystok-europa-league-match-report",
           "source": "The Guardian"
+        },
+        {
+          "title": "Sunderland fans ‘terrified’ as banned Polish supporters throw punches",
+          "url": "https://www.thetimes.com/sport/football/article/sunderland-fans-terrified-as-banned-polish-supporters-throw-punches-g96dqqsw7",
+          "source": "The Times"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "juventus vs omonoia",
-      "traffic": "1000+",
+      "title": "virgil van dijk",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Juventus vs Omonia Nicosia: UEFA Europa League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cqx2evdl13lrt",
-          "source": "BBC"
+          "title": "Virgil van Dijk houdt de lippen stijf op elkaar over transfergeruchten rond goede vriend Kevin De Bruyne: \"Heeft hij dat gezegd?\"",
+          "url": "https://sporza.be/nl/2026/11/26/virgil-van-dijk-houdt-de-lippen-stijf-op-elkaar-over-transfergeruchten-rond-goede-vriend-kevin-de-bruyne-heeft-hij-dat-gezegd~1795681718480/",
+          "source": "Sporza"
         },
         {
-          "title": "Treble hero returns! Man Utd legend Henning Berg plots Omonia shock against Juventus as Spalletti warns tense stars not to slip up",
-          "url": "https://www.goal.com/en-ke/news/henning-berg-omonia-juventus-manchester-united-europa-league/blt2ebe995b34d3be09",
-          "source": "Goal.com"
+          "title": "In Amsterdam klinkt het: 'Ik denk dat hij naar PSV gaat'",
+          "url": "https://www.psvinside.nl/nieuws/in-amsterdam-klinkt-ik-denk-dat-de-bruyne-naar-psv-gaat",
+          "source": "PSV Inside"
         },
         {
-          "title": "Spalletti and Neto speak ahead of Juventus vs Omonia in the UEL",
-          "url": "https://www.juventus.com/en/news/articles/spalletti-and-neto-speak-ahead-of-juventus-vs-omonia-in-the-uel",
-          "source": "Juventus.com"
+          "title": "Waarom is de eredivisie zo interessant voor sterren als De Bruyne?",
+          "url": "https://nos.nl/artikel/2640819-waarom-is-de-eredivisie-zo-interessant-voor-sterren-als-de-bruyne",
+          "source": "NOS"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nz vs ind",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Preview: India, New Zealand Seek Decisive Finish To Test Series In Christchurch",
+          "url": "https://www.telecomasia.net/bd/blog/preview-india-new-zealand-seek-decisive-finish-to-test-series-in-christchurch/",
+          "source": "Telecom Asia Sport"
+        },
+        {
+          "title": "If Mohammed Siraj is world-class, why is he out? Morne Morkel backs pacer amid selection questions",
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/if-mohammed-siraj-is-world-class-why-is-he-out-morne-morkel-backs-pacer-amid-selection-questions/articleshow/136206203.cms",
+          "source": "The Times of India"
+        },
+        {
+          "title": "Brar debuts as NZ make steady start",
+          "url": "https://newstodaynet.com/2026/11/27/brar-debuts-as-nz-make-steady-start/",
+          "source": "newstodaynet.com"
         }
       ]
     },
@@ -135,45 +179,23 @@
     },
     {
       "geo": "KE",
-      "title": "virgil van dijk",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Virgil van Dijk houdt de lippen stijf op elkaar over transfergeruchten rond goede vriend Kevin De Bruyne: \"Heeft hij dat gezegd?\"",
-          "url": "https://sporza.be/nl/2026/11/26/virgil-van-dijk-houdt-de-lippen-stijf-op-elkaar-over-transfergeruchten-rond-goede-vriend-kevin-de-bruyne-heeft-hij-dat-gezegd~1795681718480/",
-          "source": "Sporza"
-        },
-        {
-          "title": "In Amsterdam klinkt het: 'Ik denk dat hij naar PSV gaat'",
-          "url": "https://www.psvinside.nl/nieuws/in-amsterdam-klinkt-ik-denk-dat-de-bruyne-naar-psv-gaat",
-          "source": "PSV Inside"
-        },
-        {
-          "title": "Waarom is de eredivisie zo interessant voor sterren als De Bruyne?",
-          "url": "https://nos.nl/artikel/2640819-waarom-is-de-eredivisie-zo-interessant-voor-sterren-als-de-bruyne",
-          "source": "NOS"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "lyon",
       "traffic": "100+",
       "news": [
         {
-          "title": "CARTE. Marché de Noël à Lyon : les artisans lyonnais sont à l'honneur cette année",
-          "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/rhone/lyon/carte-marche-de-noel-a-lyon-les-artisans-lyonnais-sont-a-l-honneur-cette-annee-3456668.html",
-          "source": "France 3 Régions"
+          "title": "Lyon : la rue Grenette rouverte aux voitures dès le 9 décembre, ce qu'il faut savoir",
+          "url": "https://www.lyonmag.com/article/155139/lyon-la-rue-grenette-rouverte-aux-voitures-des-le-9-decembre-ce-qu-il-faut-savoir",
+          "source": "Lyon Mag"
         },
         {
-          "title": "Ce week-end à Lyon, nos coups de cœur (27 au 29 novembre)",
-          "url": "https://girlstakelyon.com/agenda-week-end-evenements-27-au-29-novembre/",
-          "source": "Girls Take Lyon"
+          "title": "\"Véronique Sarselli applique les promesses qui l’arrangent\", s'agace Fanny Dubot",
+          "url": "https://www.lyoncapitale.fr/videoslyoncapitale/les-debats/video/veronique-sarselli-applique-les-promesses-qui-larrangent-s-agace-fanny-dubot",
+          "source": "Lyon Capitale"
         },
         {
-          "title": "Lyon. Premier marché de Noël du collectif La Funky Fabrik : rendez-vous à La Commune ce week-end",
-          "url": "https://www.leprogres.fr/economie/2026/11/26/premier-marche-de-noel-du-collectif-la-funky-fabrik-rendez-vous-a-la-commune-ce-week-end",
-          "source": "Le Progrès"
+          "title": "Toute l’actualité du mercredi 25 novembre 2026 à Lyon",
+          "url": "https://www.lyondemain.fr/actualite-du-mercredi-25-novembre-lyon-info-retropole-la-ville-a-velo/",
+          "source": "Lyon Demain"
         }
       ]
     },
@@ -183,28 +205,23 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Lens : Florian Thauvin renvoyé à Marseille",
-          "url": "https://www.sport.fr/football/lens-florian-thauvin-renvoye-a-marseille-1503893.shtm",
-          "source": "Sport.fr"
+          "title": "OM : les arbitres des rencontres face à Sofia et Auxerre dévoilés",
+          "url": "https://www.laprovence.com/article/om/21977069513944/om-les-arbitres-des-rencontres-face-a-sofia-et-auxerre-devoiles",
+          "source": "La Provence"
         },
         {
-          "title": "Lens : Florian Thauvin en route vers un de ses anciens clubs en juin ?",
-          "url": "https://www.les-transferts.com/rumeurs-transferts/lens-florian-thauvin-en-route-vers-un-de-ses-anciens-clubs-en-juin/",
-          "source": "Les Transferts"
+          "title": "AJA-OM (J12) : pensez au covoiturage pour venir au stade !",
+          "url": "https://www.aja.fr/aja-om-j12-pensez-au-covoiturage-pour-venir-au-stade/",
+          "source": "A.J.Auxerre"
         },
         {
-          "title": "Lens : Florian Thauvin envoyé à l’OM",
-          "url": "https://www.sport.fr/football/lens-florian-thauvin-envoye-a-lom-1503893.shtm",
-          "source": "Sport.fr"
+          "title": "Auxerre vs Marseille : Analyse et Pronostic du Match",
+          "url": "https://rdcsport.cd/news/auxerre-marseille-analyse-pronostic",
+          "source": "rdcsport.cd"
         }
       ]
     }
   ],
-  "dropped": [
-    {
-      "title": "nz vs ind",
-      "why": "unsafe: 'Attack'"
-    }
-  ],
+  "dropped": [],
   "errors": {}
 }
