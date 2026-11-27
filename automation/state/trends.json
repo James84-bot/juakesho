@@ -1,47 +1,47 @@
 {
-  "fetched": "2026-11-27T21:55:45.765837+00:00",
+  "fetched": "2026-11-27T23:46:19.765037+00:00",
   "safe": [
-    {
-      "geo": "KE",
-      "title": "nottm forest vs chelsea",
-      "traffic": "50000+",
-      "news": [
-        {
-          "title": "Nottingham Forest vs Chelsea LIVE: Premier League score, lineups, commentary & updates",
-          "url": "https://www.bbc.com/sport/football/live/cme3d91zygp8t",
-          "source": "BBC"
-        },
-        {
-          "title": "Confirmed Chelsea line up vs Nottingham Forest | News | Official Site",
-          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-line-up-vs-nottingham-forest-271126",
-          "source": "Chelsea Football Club"
-        },
-        {
-          "title": "Nottingham Forest vs Chelsea LIVE! Premier League match updates, free highlights, news and score",
-          "url": "https://www.skysports.com/football/live-blog/13610940/nottingham-forest-vs-chelsea-live-premier-league-match-updates-free-highlights-news-and-score",
-          "source": "Sky Sports"
-        }
-      ]
-    },
     {
       "geo": "KE",
       "title": "carlos baleba",
       "traffic": "1000+",
       "news": [
         {
+          "title": "Training update ahead of Brentford",
+          "url": "https://www.manutd.com/en/news/bruno-fernandes-misses-pre-brentford-training-update",
+          "source": "Manchester United"
+        },
+        {
           "title": "Premier League LIVE news conferences & team news - Maresca, Iraola, Arteta, De Zerbi and more",
           "url": "https://www.bbc.com/sport/football/live/cq9vwdym2wk2t",
           "source": "BBC"
         },
         {
-          "title": "Team news for United v Brentford",
-          "url": "https://www.manutd.com/en/news/team-news-for-united-v-brentford-on-28-nov",
-          "source": "Manchester United"
-        },
-        {
           "title": "Man Utd being relegated would be the biggest shock in history, but it won't happen, says Paul Merson",
           "url": "https://www.skysports.com/football/news/13616882/man-utd-being-relegated-would-be-the-biggest-shock-in-history-but-it-wont-happen-says-paul-merson",
           "source": "Sky Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "fpl",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Scout Selection: Best Fantasy team for Gameweek 12",
+          "url": "https://www.premierleague.com/en/news/4771382",
+          "source": "Premier League"
+        },
+        {
+          "title": "Is it time to sell Haaland? - FPL gameweek 12 dilemmas",
+          "url": "https://www.bbc.com/sport/football/articles/cjvg2w35rn63o",
+          "source": "BBC"
+        },
+        {
+          "title": "FPL Focus: Madueke and Wirtz shine, Raya dilemma",
+          "url": "https://www.arsenal.com/feature/fpl-focus-madueke-and-wirtz-shine-raya-dilemma-ap2NH9L4HIRa",
+          "source": "Arsenal.com"
         }
       ]
     },
@@ -61,9 +61,9 @@
           "source": "Tu Futbolero"
         },
         {
-          "title": "Jogos de hoje: Chelsea visita Nottingham pela Premier League",
-          "url": "https://www.brasil247.com/esporte/jogos-de-hoje-chelsea-visita-nottingham-pela-premier-league/",
-          "source": "Brasil 247"
+          "title": "Forest vence Chelsea com gol de Igor Jesus e aumenta pressão em Xabi Alonso",
+          "url": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/27/chelsea-perde-para-o-forest-e-soma-4-derrotas-em-5-rodadas.ghtm",
+          "source": "UOL"
         }
       ]
     },
@@ -73,19 +73,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Bundesliga-Ticker: Werder Bremen – Borussia Mönchengladbach live",
-          "url": "https://www.welt.de/sport/fussball/bundesliga/article6b099d856a4ea151d91c2be4/bundesliga-ticker-werder-bremen-borussia-moenchengladbach-live.html",
-          "source": "WELT"
+          "title": "3:3 nach 1:3! Füllkrug rettet Werder Bremen in der Nachspielzeit",
+          "url": "https://www.ndr.de/sport/fussball/Bundesliga-Werder-Bremen-Gladbach,werder-724.html",
+          "source": "NDR.de"
         },
         {
-          "title": "buten un binnen | regionalmagazin - Wie stehen Werders Chancen gegen Gladbach? - hier anschauen",
-          "url": "https://www.ardmediathek.de/video/buten-un-binnen-oder-regionalmagazin/wie-stehen-werders-chancen-gegen-gladbach/radio-bremen/Y3JpZDovL3JhZGlvYnJlbWVuLmRlLzRhMTZiZDA0LTEwMmYtNGI4YS04NWRmLWEyZTQzYTBiNjA3Ni9zZWN0aW9uL3VybjphcmQ6ZXBpc29kZTphYTYxMTViYjY3YmUxNmMw",
-          "source": "ARD Mediathek"
+          "title": "(k+) Die Bremer gehen deutlich besser mit Widerständen um",
+          "url": "https://www.kicker.ch/die-bremer-gehen-deutlich-besser-mit-widerstaenden-um-1275759/artikel",
+          "source": "www.kicker.ch"
         },
         {
-          "title": "Werder Bremen: Bundesligaspiel um 20.30 Uhr im Weserstadion",
-          "url": "https://twaslnews1.twaslnews.com/8408420/",
-          "source": "شبكة تواصل الإخبارية"
+          "title": "Mohya kritisiert \"Nachlässigkeiten\" - und sieht \"total ärgerliches\" Remis",
+          "url": "https://www.kicker.de/mohya-kritisiert-nachlaessigkeiten-und-sieht-total-aergerliches-remis-1275760/artikel",
+          "source": "Kicker"
         }
       ]
     },
@@ -105,9 +105,9 @@
           "source": "Sky Sports"
         },
         {
-          "title": "Man City's form has unraveled ahead of crunch Premier League clash with Arsenal",
-          "url": "https://japantoday.com/category/sports/man-city%27s-form-has-unraveled-ahead-of-crunch-premier-league-clash-with-arsenal",
-          "source": "Japan Today"
+          "title": "Why have things started to go wrong for Manchester City under Enzo Maresca?",
+          "url": "https://www.theguardian.com/football/2026/nov/27/why-things-started-go-wrong-manchester-city-under-enzo-maresca",
+          "source": "The Guardian"
         }
       ]
     },
@@ -117,41 +117,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Al-Ittihad vs NEOM",
-          "url": "https://www.goal.com/en/news/video-en-nesyri-returns-al-ittihad-to-winning-ways-and-into-the-top-four/blt7bd76484be1c0093",
+          "title": "Fissing shocks Al-Ittihad fans and criticises three players despite victory",
+          "url": "https://www.goal.com/en/news/fissing-shocks-al-ittihad-fans-and-criticises-three-players-despite-victory/blt62f497853c37df03",
           "source": "Goal.com"
+        },
+        {
+          "title": "Galtier acknowledges their attacking quality but refuses to back down against Al-Ittihad",
+          "url": "https://www.livescore.com/en/news/football/more/galtier-acknowledges-their-attacking-quality-but-refuses-to-back-down-against-al-ittihad-goal/",
+          "source": "LiveScore"
         },
         {
           "title": "Al-Ittihad Club vs Neom SC: Saudi Pro League Preview",
           "url": "https://www.football.com/ng/news/158923",
           "source": "Football.com"
-        },
-        {
-          "title": "Al-Ittihad Club vs NEOM SC goals prediction: about 2.4 goals expected",
-          "url": "https://m.dongqiudi.com/en/news/250627",
-          "source": "懂球帝"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "fpl",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Scout Selection: Best Fantasy team for Gameweek 12",
-          "url": "https://www.premierleague.com/en/news/4771382",
-          "source": "Premier League"
-        },
-        {
-          "title": "Is it time to sell Haaland? - FPL gameweek 12 dilemmas",
-          "url": "https://www.bbc.com/sport/football/articles/cjvg2w35rn63o",
-          "source": "BBC"
-        },
-        {
-          "title": "FPL Focus: Madueke and Wirtz shine, Raya dilemma",
-          "url": "https://www.arsenal.com/feature/fpl-focus-madueke-and-wirtz-shine-raya-dilemma-ap2NH9L4HIRa",
-          "source": "Arsenal.com"
         }
       ]
     },
@@ -176,16 +154,38 @@
           "source": "World Soccer Talk"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "pl",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Były premier chwali się spotkaniem z byłym prezydentem",
+          "url": "https://tvn24.pl/polska/mateusz-morawiecki-z-andrzejem-duda-wspolne-zdjecie-i-krotki-komentarz-st9362024",
+          "source": "TVN24"
+        },
+        {
+          "title": "Co planują Morawiecki i Duda? To zdjęcie może być zapowiedzią",
+          "url": "https://wpolityce.pl/polityka/co-planuja-morawiecki-i-duda-to-zdjecie-moze-byc-zapowiedzia,308334",
+          "source": "wPolityce.pl"
+        },
+        {
+          "title": "Były premier zamieścił krótki wpis. Spotkał się z byłym prezydentem",
+          "url": "https://wiadomosci.onet.pl/kraj/mateusz-morawiecki-zamiescil-krotki-wpis-spotkal-sie-z-andrzejem-duda/crdwd0n",
+          "source": "Wiadomości Onet"
+        }
+      ]
     }
   ],
   "dropped": [
     {
-      "title": "groningen fc",
+      "title": "groningen vs willem ii",
       "why": "unsafe: 'Betting'"
     },
     {
       "title": "levante vs racing santander prediction",
-      "why": "unsafe: 'Odds'"
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
