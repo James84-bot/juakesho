@@ -300,101 +300,109 @@
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
-      "id": "2026-w48-d5-straight-r2",
+      "id": "2026-w48-d5-straight-r3",
       "template": "straight",
       "lane": "everyone",
       "series": "Myth or Fact",
-      "claim": "Photo shows Senator Tabitha Karanja and Rigathi Gachagua with bundles of cash",
-      "who": "Viral social media posts",
-      "truth": "The photo of Senator Karanja and Gachagua with cash was doctored.",
-      "verdict": "false",
-      "proof": [
-        "Africa Check confirmed the original photo contained no bundles of money.",
-        "Digital forensics showed the stacks of cash were edited into the image."
-      ],
-      "pride": "Always verify images before you share them online.",
-      "claim_source": "Social media posts, November 2026",
-      "source": "Africa Check, 2026-11-27",
       "side": "none",
       "tone": "explainer",
-      "impact": "Fake images trick voters and distort public debate before elections.",
+      "impact": "Spotting fake images protects you from online manipulation.",
+      "who": "Viral social media posts",
       "where": "National",
       "when": "27 Nov 2026",
-      "message": "Africa Check confirmed that a viral image of Tabitha Karanja and Rigathi Gachagua with cash was doctored.",
-      "action": "Verify photos on Africa Check before sharing suspicious images online",
-      "photo_query": "Kenyan shilling banknotes",
-      "beats": [
-        "Africa Check confirmed the Gachagua cash photo was *doctored*.",
-        "The original picture contained *no bundles* of cash.",
-        "Digital tools inserted the money into the *image*.",
-        "Have you spotted fake images in your *WhatsApp* groups?"
+      "claim": "President Ruto was captured on camera playing golf with Russian President Vladimir Putin.",
+      "verdict": "false",
+      "truth": "The photo showing Ruto playing golf with Putin is digitally edited.",
+      "proof": [
+        "Africa Check confirmed the photograph was altered using photo editing tools.",
+        "A reverse image search leads to the original photo which does not include Ruto."
       ],
-      "caption": "A viral photo claiming to show Senator Tabitha Karanja and former DP Rigathi Gachagua with stacks of cash is fake. Africa Check confirmed the original image contained no money and was digitally edited. Verify before you share.\n\nHave you spotted fake images in your WhatsApp groups?\n\n#MythOrFact #GachaguaTheSabotage #KenyaOnRecord",
+      "pride": "Check the facts before you hit share.",
+      "claim_source": "Social media posts circulated online in November 2026.",
+      "source": "Africa Check, 2026-11-27",
+      "message": "The photo claiming to show President Ruto playing golf with Vladimir Putin is false and digitally edited.",
+      "action": "Verify photos using reverse image search before forwarding.",
+      "photo_query": "golf course",
+      "beats": [
+        "A viral photo of President Ruto playing golf with Putin is *fake*.",
+        "Africa Check found the original image was digitally edited.",
+        "The face was swapped to trick social media users.",
+        "Have you seen doctored images on your feed this week?"
+      ],
+      "caption": "A viral photo claiming President William Ruto played golf with Russian President Vladimir Putin is false. Fact-checkers at Africa Check confirmed the image was digitally edited. Always double-check before forwarding images.\n\nHave you seen doctored photos on your feed?\n\n#MythOrFact #KenyaOnRecord",
       "bg": "usiku",
-      "publish_at": "2026-11-27T17:00:00+03:00",
+      "publish_at": "2026-11-27T19:20:00+03:00",
       "angle": "myth",
       "source_links": [
         {
           "outlet": "Africa Check",
-          "title": "No, photo of Kenyan senator Tabitha Karanja and former deputy president Rigathi Gachagua with bundles of cash is doctored",
-          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbEprU0F0czJpTmdHZ3ptM3NFdU1ZQ0c0UmdFOUVrR2hJd01ORkRkbjVMSUtCVXloVVRlaktQTGIwUXBOUHgtRWR0T1dFWm1BWEF4b04yQ3J3elR5VkpUa1JFS1lhaGFVemRBTG5GUEt3RXpQRDFVRVdiNGtLb29oVTZlU0gwU2d1WllvYklXLUxGTlpJU01kWFo4YnFxTkFISVpHUS02amNjWGg5YXVTMW1xalB6amtmenQtMw?oc=5",
+          "title": "Doctored photo falsely shows Kenyan president William Ruto and Russian counterpart Vladimir Putin playing golf",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPXzJlVHJIS3BMYUhFQmhCdWpkNkZuSUVyeHZtc0dWRWVjbzY3cDY5RzBNNjN4RGRkOEJDNGZXUjJTSTJYMjNaUHhramtranRYeXBaMTNFdGpWV25VUUpVaVpGU1puY3lnSlpIcGVYU1V5NHQ5cE1paTlLRVNYVnRxbnBMSFRPMXRqN0NPZFNiU2hkckM5MTZqVVIwWTdNaWctbklOam9qc2Z1SC12Y1VSdFNBYjdBdTFxbmtpaXln?oc=5",
           "published": "2026-11-27"
         }
       ],
-      "version": 1,
+      "version": 2,
       "fix": "failed a guard rule",
       "material": {
         "kind": "myth",
-        "key": "news:https://news.google.com/rss/articles/CBMivAFBVV95cUxNbEprU0F0czJpTmdHZ3ptM3NFdU1ZQ0c0UmdFOUVrR2hJd01ORkRkbjVMSUtCVXloVVRlaktQTGIwUXBOUHgtRWR0T1dFWm1BWEF4b04yQ3J3elR5VkpUa1JFS1lhaGFVemRBTG5GUEt3RXpQRDFVRVdiNGtLb29oVTZlU0gwU2d1WllvYklXLUxGTlpJU01kWFo4YnFxTkFISVpHUS02amNjWGg5YXVTMW1xalB6amtmenQtMw?oc=5",
-        "title": "No, photo of Kenyan senator Tabitha Karanja and former deputy president Rigathi Gachagua with bundles of cash is doctored",
+        "key": "news:https://news.google.com/rss/articles/CBMivgFBVV95cUxPXzJlVHJIS3BMYUhFQmhCdWpkNkZuSUVyeHZtc0dWRWVjbzY3cDY5RzBNNjN4RGRkOEJDNGZXUjJTSTJYMjNaUHhramtranRYeXBaMTNFdGpWV25VUUpVaVpGU1puY3lnSlpIcGVYU1V5NHQ5cE1paTlLRVNYVnRxbnBMSFRPMXRqN0NPZFNiU2hkckM5MTZqVVIwWTdNaWctbklOam9qc2Z1SC12Y1VSdFNBYjdBdTFxbmtpaXln?oc=5",
+        "title": "Doctored photo falsely shows Kenyan president William Ruto and Russian counterpart Vladimir Putin playing golf",
         "outlet": "Africa Check",
-        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbEprU0F0czJpTmdHZ3ptM3NFdU1ZQ0c0UmdFOUVrR2hJd01ORkRkbjVMSUtCVXloVVRlaktQTGIwUXBOUHgtRWR0T1dFWm1BWEF4b04yQ3J3elR5VkpUa1JFS1lhaGFVemRBTG5GUEt3RXpQRDFVRVdiNGtLb29oVTZlU0gwU2d1WllvYklXLUxGTlpJU01kWFo4YnFxTkFISVpHUS02amNjWGg5YXVTMW1xalB6amtmenQtMw?oc=5",
+        "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPXzJlVHJIS3BMYUhFQmhCdWpkNkZuSUVyeHZtc0dWRWVjbzY3cDY5RzBNNjN4RGRkOEJDNGZXUjJTSTJYMjNaUHhramtranRYeXBaMTNFdGpWV25VUUpVaVpGU1puY3lnSlpIcGVYU1V5NHQ5cE1paTlLRVNYVnRxbnBMSFRPMXRqN0NPZFNiU2hkckM5MTZqVVIwWTdNaWctbklOam9qc2Z1SC12Y1VSdFNBYjdBdTFxbmtpaXln?oc=5",
         "published": "2026-11-27"
       },
       "status": "awaiting",
       "guard": {
         "errors": [
-          "weak: editor scored 5.2/10. This myth-busting post relies on an old viral image that is not currently driving news or daily debate compared to active political realignments."
+          "weak: editor scored 4.0/10. Evergreen myth posts must be scored on whether the specific fake image is circulating right now in Kenya, and this one lacks a current trending hook or local relevance."
         ],
         "warnings": [
-          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
         ]
       },
       "critic": {
         "hook": 5,
         "send": 4,
-        "clarity": 6,
-        "fresh": 4,
-        "voice": 7,
-        "craft": 6,
-        "picture": 5,
-        "hold": 6,
+        "clarity": 5,
+        "fresh": 3,
+        "voice": 4,
+        "craft": 4,
+        "picture": 4,
+        "hold": 4,
         "demand": 3,
-        "action": 6,
+        "action": 3,
         "fair": 7,
-        "impact": 5,
-        "human": 4,
-        "avg": 5.2,
-        "note": "This myth-busting post relies on an old viral image that is not currently driving news or daily debate compared to active political realignments."
+        "impact": 3,
+        "human": 3,
+        "avg": 4.0,
+        "note": "Evergreen myth posts must be scored on whether the specific fake image is circulating right now in Kenya, and this one lacks a current trending hook or local relevance."
       },
-      "trend": "#GachaguaTheSabotage",
-      "drafted_at": "2026-11-27T16:18:54.190936+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d5-straight-r2-photo.jpg",
-      "photo_credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
-      "photo_kind": "symbolic",
-      "photo_outlet": "",
-      "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
+      "drafted_at": "2026-11-27T18:44:04.543504+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d5-straight-r3-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129015-russia-compensate-kenyan-victims-recruited-military-after-ruto-putin-talks",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d5-straight-r3-photo-2.jpg"
+      ],
       "shot_info": [
         {
-          "credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
-          "title": ""
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Russia to Compensate Kenyans Recruited Into Military After Ruto-Putin Talks"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "KMTC Announces Planned Changes in Student Courses After Concerns"
         }
       ],
-      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/videos/2026-w48-d5-straight-r2-broll.mp4",
-      "broll_credit": "Footage: Alexas_Fotos / Pixabay",
-      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "ink": {
+        "3/2": "#F8F7F6"
+      },
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1946
+      "tg_msg": 1954
     },
     {
       "id": "2026-w48-d6-kenya-r3",
@@ -4798,10 +4806,10 @@
     }
   ],
   "scripts": {
-    "radio": "Good morning and welcome to Kenya on Record. Today, we turn our spotlight onto county finances and service delivery across our 47 devolved units.\n\nGovernors are standing firm, demanding a 557 billion shilling allocation from the National Treasury for the next fiscal year. Their core argument is straightforward: counties are struggling with mounting pending bills, small-scale suppliers are facing financial ruin due to delayed payments, and critical local services—from health facilities to local road maintenance—are on the verge of grinding to a halt.\n\nThere is no denying that the National Treasury’s chronic delays in releasing funds severely hamper devolution. When money does not reach the ground on time, ordinary citizens suffer first. However, as we support the call for timely resource transfers, we must also ask the hard questions. How transparently are the currently available funds being spent? Year after year, reports from the Auditor-General highlight unvouched expenditure, stalled ghost projects, and inflated procurement across several counties.\n\nMore money to counties should mean better services, not bigger leakages. While National Treasury must honour its constitutional duty to release funds promptly, county executives must equally demonstrate strict fiscal discipline and zero tolerance for corruption.\n\nKwa ufupi: Magavana wanataka shilingi bilioni 557 kutoka Serikali Kuu ili kulipa wauzaji wa bidhaa na kuendesha huduma za mashinani. Ni muhimu pesa zitolewe kwa wakati, lakini pia ni sharti kaunti ziwajibikie kila shillingi inayotengwa ili kuzuia ufisadi na ubadhirifu.",
-    "voice_note": "Habari zenu! Here is your quick accountability check from Kenya on Record. Governors are currently pushing the National Treasury for 557 billion shillings for the upcoming financial year. They say the money is needed urgently to clear massive pending bills owed to local business owners and to keep dispensaries and basic services open. Now, Treasury delays are definitely crippling counties, but let's be honest with ourselves: raising the budget without fixing internal leakages won't fix poor service delivery. Audit reports still show millions wasted on stalled projects. As taxpayers, we must demand two things at once: timely transfers from the national government, and total transparency from our governors on how every shilling is spent. Share this with your group!",
-    "sms": "Usiibiwe: Governors demand Sh557bn for counties. Timely transfers matter, but track how your county spends it. Audit your local projects!",
-    "reels": "557 billion shillings. That is what governors are demanding from the National Treasury to pay local suppliers and keep county services running. But let’s be honest: while Treasury delays hurt local businesses, county-level leakages hurt us even more. More money must mean better hospitals and cleaner towns, not funded ghost projects. Demand accountability from your governor today. Follow Kenya on Record for more."
+    "radio": "Welcome back to Kenya on Record, your trusted voice for truth and civic accountability. I’m your host, bringing you facts you can rely on.\n\nThis week, a photograph has been circulating heavily across social media, purporting to show President William Ruto sharing a relaxed moment on a golf course with Russian President Vladimir Putin. The image has sparked endless debate online, with many drawing wild conclusions about Kenya's foreign policy.\n\nHere is the plain truth: that photo is false and digitally edited. Our fact-checking team analyzed the image and found clear evidence of manipulation. The original pictures of both leaders were taken from entirely different events years apart and stitched together using editing software.\n\nIn our digital age, doctored photos and deepfakes are increasingly used to manipulate public perception, create political propaganda, and farm online engagement. As citizens, we must remain vigilant. When you see a dramatic image, especially involving public officials or major geopolitical figures, take a moment to pause. Check mainstream news outlets or perform a quick image search before taking it as fact.\n\nNa kwa ufupi: Picha inayosambazwa kwenye mitandao ikimwonyesha Rais William Ruto akicheza golf na Rais wa Urusi Vladimir Putin ni ya uongo na imefanyiwa editing. Tusiwe wepesi wa kusambaza picha au habari kabla ya kuhakikisha ukweli. Pata ukweli, linda amani.\n\nUntil next time, stay sharp and keep Kenya on Record.",
+    "voice_note": "Habari yenu watu wangu. There’s a photo circulating heavily on WhatsApp and social media showing President William Ruto on a golf course alongside Russian President Vladimir Putin. We checked it out at Kenya on Record, and we want to set the record straight: that picture is completely fake and digitally edited.\n\nSomeone took separate photos of the two leaders and edited them together to create a false story. With photo editing tools getting easier to use every day, cheap misinformation like this is everywhere. Before you forward such photos to your family or community groups, take a second to verify. Usikubali kudanganywa na story za uongo. Stay alert, and let’s keep our group chats truthful.",
+    "sms": "Usiibiwe: That viral photo of President Ruto playing golf with Vladimir Putin is fake and digitally edited. Verify images before sharing.",
+    "reels": "Have you seen that viral photo of President William Ruto playing golf with Russian President Vladimir Putin? Don't fall for it. Fact-checkers at Kenya on Record verified the image—it is completely fake and digitally edited. In this era of doctored images, always double-check photos before hitting share. Don't let misinformers manipulate your feed. Stay alert."
   },
   "spend_usd": 0.0
 }

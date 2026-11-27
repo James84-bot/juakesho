@@ -1,76 +1,10 @@
 {
-  "fetched": "2026-11-27T13:42:56.385074+00:00",
+  "fetched": "2026-11-27T15:35:33.057487+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "airspace",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "KQ announces Nairobi airspace closures ahead of Jamhuri Day",
-          "url": "https://nation.africa/kenya/news/kq-announces-nairobi-airspace-closures-ahead-of-jamhuri-day-5686420",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "Kenyans Warned of Flight Disruptions Over Closure of Nairobi Airspace",
-          "url": "https://www.kenyans.co.ke/news/129727-flights-be-affected-nairobi-airspace-closes-3-dates",
-          "source": "Kenyans.co.ke"
-        },
-        {
-          "title": "Kenya Airways warns of flight disruptions on three dates",
-          "url": "https://www.the-star.co.ke/news/2026-11-27-kenya-airways-warns-of-flight-disruptions-on-three-dates",
-          "source": "www.the-star.co.ke"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ntsa festive season speeding crackdown",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Rhode Island DUI Task Force ramps up patrols for Thanksgiving holiday weekend",
-          "url": "https://turnto10.com/news/local/rhode-island-dui-task-force-ramps-up-patrols-for-thanksgiving-holiday-weekend",
-          "source": "WJAR"
-        },
-        {
-          "title": "Shasta non-profit warns of dangerous 'Drinksgiving' trend",
-          "url": "https://krcrtv.com/news/local/shasta-non-profit-warns-of-dangerous-drinksgiving-trend",
-          "source": "KRCR"
-        },
-        {
-          "title": "Thanksgiving Eve crowds pack Short North bars as warnings rise about impaired driving",
-          "url": "https://abc6onyourside.com/news/local/thanksgiving-eve-crowds-pack-short-north-bars-as-warnings-rise-about-impaired-driving-pint-house-tatum-kilgallon-manager-national-highway-traffic-safety-administration-mothers-against-drunk-driving-aaa",
-          "source": "WSYX"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "grandchild",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Gordon Ramsay Celebrates Arrival of His First Grandchild, ‘Miss Daphne’ with Sweet Message",
-          "url": "https://people.com/gordon-ramsay-shares-first-message-to-granddaughter-daphne-12281931",
-          "source": "People.com"
-        },
-        {
-          "title": "Gordon Ramsay becomes grandfather as daughter Holly welcomes baby girl with Adam Peaty",
-          "url": "https://www.the-independent.com/life-style/holly-ramsay-gives-birth-gordon-adam-peaty-b3092200.html",
-          "source": "The Independent"
-        },
-        {
-          "title": "Gordon Ramsay, 60, Becomes A Grandpa For The First Time",
-          "url": "https://www.huffpost.com/entry/gordon-ramsay-becomes-grandpa-daughter-holly-welcomes-first-child_n_6b08a73de4b084fa2e1782cb",
-          "source": "HuffPost"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "national defence university - kenya",
-      "traffic": "200+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Ruto presides over National Defence University graduation in Nakuru",
@@ -92,7 +26,7 @@
     {
       "geo": "KE",
       "title": "somalia",
-      "traffic": "200+",
+      "traffic": "500+",
       "news": [
         {
           "title": "Somalia rolls out EAC e-passport",
@@ -105,60 +39,82 @@
           "source": "Hiiraan Online"
         },
         {
-          "title": "Somalia to begin issuing EAC e-Passport in January 2027",
-          "url": "https://eastleighvoice.co.ke/news/428770/somalia-to-begin-issuing-eac-e-passport-in-january-2027",
-          "source": "The Eastleigh Voice"
+          "title": "Somalia Prepares to Present New E-Passport at East African Community Migration Summit",
+          "url": "https://shabellemedia.com/somalia-prepares-to-present-new-e-passport-at-east-african-community-migration-summit/",
+          "source": "Shabelle Media Network"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "southampton vs middlesbrough",
+      "title": "manchester city f.c.",
       "traffic": "200+",
       "news": [
         {
-          "title": "Tonda Eckert: Southampton boss wants to close the chapter on 'Spygate' ahead of Middlesbrough reunion",
-          "url": "https://www.skysports.com/football/news/13616785/tonda-eckert-southampton-boss-wants-to-close-the-chapter-on-spygate-ahead-of-middlesbrough-reunion",
-          "source": "Sky Sports"
+          "title": "Man City owners should be forced to sell, say clubs",
+          "url": "https://www.bbc.com/sport/football/articles/cwp809d7yp4go",
+          "source": "BBC"
         },
         {
-          "title": "Championship Tips: Goals and cards expected in feisty Spygate clash as Southampton host Middlesbrough",
-          "url": "https://betting.betfair.com/football/championship/tips-for-all-matchday-18-fixtures-best-bets-predictions-including-wolves-to-beat-lincoln-251126-904.html",
-          "source": "Betfair"
+          "title": "New escalation: Premier League clubs demand extra punishment for Manchester City",
+          "url": "https://www.goal.com/en/news/new-escalation-premier-league-clubs-demand-extra-punishment-for-manchester-city/blt744f414ac825c587",
+          "source": "Goal.com"
         },
         {
-          "title": "Eckert expecting ‘additions’ for Middlesbrough clash",
-          "url": "https://www.livescore.com/en/news/football/more/eckert-expecting-additions-for-middlesbrough-clash-hayters/",
-          "source": "LiveScore"
+          "title": "Lies, silence, guesses, and stories I shouldn't share: the rubbish reality of Man City's 115 case",
+          "url": "https://www.manchestereveningnews.co.uk/sport/football/football-news/lies-silence-guesses-stories-shouldnt-34955906",
+          "source": "Manchester Evening News"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "venezia vs bologna",
+      "title": "luis enrique",
       "traffic": "200+",
       "news": [
         {
-          "title": "NEWS - Bastoni, Davis, Ramos, Taylor, Diao, Alajbegovic, Noslin, Belghali, Ostigard, Modric, Volpato: le novità",
-          "url": "https://www.sosfanta.com/news/news-bastoni-davis-ramos-taylor-diao-alajbegovic-noslin-belghali-ostigard-modric-volpato-le-novita/",
-          "source": "SOS Fanta"
+          "title": "¿Julián Quiñones al PSG? Así fue la respuesta de Luis Enrique",
+          "url": "https://www.tudn.com/futbol/uefa-champions-league/julian-quinones-al-psg-asi-fue-la-sorpresiva-respuesta-de-luis-enrique",
+          "source": "TUDN"
         },
         {
-          "title": "Venezia-Bologna, le probabili formazioni della partita di serie A",
-          "url": "https://sport.sky.it/calcio/serie-a/2026/11/27/venezia-bologna-probabili-formazioni-13-giornata",
-          "source": "Sky Sport"
+          "title": "Pese al interés, ¿por qué duda el París Saint-Germain en fichar a Quiñones?",
+          "url": "https://es-us.noticias.yahoo.com/deportes/pese-inter%C3%A9s-duda-par%C3%ADs-saint-085036664.html",
+          "source": "Yahoo"
         },
         {
-          "title": "Il calcio in TV oggi, venerdì 27 novembre. Torna la Serie A con Venezia-Bologna: dove vederla live",
-          "url": "https://www.libero.it/magazine/news/calcio-in-tv-oggi-programmazione-diretta-venerdi-27-novembre-2026-cosa-vedere-233168",
-          "source": "Libero"
+          "title": "Julián Quiñones podría fichar por PSG ante la plaga de lesionados",
+          "url": "https://wradio.com.mx/2026/11/25/julian-quinones-podria-fichar-por-psg-por-plaga-de-lesionados/",
+          "source": "W Radio"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "grandchild",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Gordon Ramsay Celebrates Arrival of His First Grandchild, ‘Miss Daphne’ with Sweet Message",
+          "url": "https://people.com/gordon-ramsay-shares-first-message-to-granddaughter-daphne-12281931",
+          "source": "People.com"
+        },
+        {
+          "title": "Gordon Ramsay's daughter, Holly Ramsay-Peaty, gives birth to first child",
+          "url": "https://www.9news.com/article/news/nation-world/gordon-ramsay-daughter-gives-birth/507-4a051339-e94f-4064-8162-77afc4fd42f6",
+          "source": "9News"
+        },
+        {
+          "title": "Gordon Ramsay becomes grandfather as daughter Holly welcomes baby girl with Adam Peaty",
+          "url": "https://www.the-independent.com/life-style/holly-ramsay-gives-birth-gordon-adam-peaty-b3092200.html",
+          "source": "The Independent"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "paul pogba",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Paul Pogba: Man United should look at blueprint Arsenal set",
@@ -171,21 +127,65 @@
           "source": "Goal.com"
         },
         {
-          "title": "Paul Pogba makes Arsenal admission as he sends message to Man Utd",
-          "url": "https://www.nowarsenal.com/latest-news/paul-pogba-makes-arsenal-admission-as-he-sends-message-to-man-utd/",
-          "source": "now.arsenal"
+          "title": "Paul Pogba makes Arsenal claim in message to Man Utd and Mauricio Pochettino",
+          "url": "https://metro.co.uk/2026/11/26/paul-pogba-makes-arsenal-claim-message-man-utd-mauricio-pochettino-29823629/",
+          "source": "Metro.co.uk"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "brest vs paris fc",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Paris FC : Une attaque de feu pour rêver plus grand ?",
+          "url": "https://www.onzemondial.com/ligue-1/paris-fc-une-attaque-de-feu-pour-rever-plus-grand-1011705",
+          "source": "Onze Mondial"
+        },
+        {
+          "title": "Stade Brestois. 45 minutes, leadership, défaite contre Toulouse : on a assisté à la reprise de Brendan Chardonnet avec les Espoirs",
+          "url": "https://www.ouest-france.fr/sport/football/stade-brestois/stade-brestois-45-minutes-leadership-defaite-contre-toulouse-on-a-assiste-a-la-reprise-de-brendan-chardonnet-avec-les-espoirs-383b1614-ea6b-11f1-9369-66ef1b7e4135",
+          "source": "Ouest-France"
+        },
+        {
+          "title": "Rosenior et les mots d’Éric Roy après une soirée noire du Racing à Brest",
+          "url": "https://www.alsasports.fr/football/rc-strasbourg/rosenior-et-les-mots-deric-roy-apres-une-soiree-noire-du-racing-a-brest/88417/",
+          "source": "Alsa'Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "rwanda",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Kenyan Appointed to Historic World Bank Position",
+          "url": "https://www.kenyans.co.ke/news/129724-samuel-nganga-appointed-world-bank-country-manager-rwanda",
+          "source": "Kenyans.co.ke"
+        },
+        {
+          "title": "Kenyan Samuel Nganga appointed to lead World Bank operations in Rwanda",
+          "url": "https://eastleighvoice.co.ke/news/428793/kenyan-samuel-nganga-appointed-to-lead-world-bank-operations-in-rwanda",
+          "source": "The Eastleigh Voice"
+        },
+        {
+          "title": "Kenyan Samuel Kamau appointed World Bank manager in Rwanda, pledges jobs and poverty reduction",
+          "url": "https://thekenyandiaspora.com/stories/9952/Kenyan-Samuel-Kamau-appointed-World-Bank-manager-in-Rwanda-pledges-jobs-and-poverty-reduction",
+          "source": "The Kenyan Diaspora Media"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "actor pete edochie",
-      "why": "unsafe: 'dies'"
+      "title": "chelsea vs nottingham forest",
+      "why": "unsafe: 'Bet'"
     },
     {
-      "title": "obado",
-      "why": "unsafe: 'murder'"
+      "title": "norse atlantic airways",
+      "why": "unsafe: 'war'"
     }
   ],
   "errors": {}
