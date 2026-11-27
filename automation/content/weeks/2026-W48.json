@@ -497,7 +497,8 @@
       "reel": true,
       "tg_msg": 1862,
       "auto": true,
-      "decided_at": "2026-11-26T12:50:58.121838+03:00"
+      "decided_at": "2026-11-26T12:50:58.121838+03:00",
+      "fresh_checked": "2026-11-27T09:32:46.055114+03:00"
     },
     {
       "id": "2026-w48-d7-glasspoll",
@@ -4068,7 +4069,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 4.6/10. Remove textbook framing like 'thousands of young Kenyans' and use specific details on what rules actually changed."
@@ -4122,7 +4123,10 @@
       ],
       "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1911
+      "tg_msg": 1911,
+      "decided_at": "2026-11-27T09:28:26.347742+03:00",
+      "photo_checked": "2026-11-27T09:33:12.424637+03:00",
+      "photo_fit": "2026-11-27T09:33:12.424647+03:00"
     },
     {
       "id": "2026-w48-hot-1127-r2",
