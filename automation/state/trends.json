@@ -1,69 +1,135 @@
 {
-  "fetched": "2026-11-27T19:10:30.772930+00:00",
+  "fetched": "2026-11-27T21:55:45.765837+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "carlos baleba",
-      "traffic": "500+",
+      "title": "nottm forest vs chelsea",
+      "traffic": "50000+",
       "news": [
         {
-          "title": "Latest news on Baleba and Rashford",
-          "url": "https://www.manutd.com/en/news/pochettino-latest-news-on-baleba-and-rashford",
+          "title": "Nottingham Forest vs Chelsea LIVE: Premier League score, lineups, commentary & updates",
+          "url": "https://www.bbc.com/sport/football/live/cme3d91zygp8t",
+          "source": "BBC"
+        },
+        {
+          "title": "Confirmed Chelsea line up vs Nottingham Forest | News | Official Site",
+          "url": "https://www.chelseafc.com/en/news/article/confirmed-chelsea-line-up-vs-nottingham-forest-271126",
+          "source": "Chelsea Football Club"
+        },
+        {
+          "title": "Nottingham Forest vs Chelsea LIVE! Premier League match updates, free highlights, news and score",
+          "url": "https://www.skysports.com/football/live-blog/13610940/nottingham-forest-vs-chelsea-live-premier-league-match-updates-free-highlights-news-and-score",
+          "source": "Sky Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "carlos baleba",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Premier League LIVE news conferences & team news - Maresca, Iraola, Arteta, De Zerbi and more",
+          "url": "https://www.bbc.com/sport/football/live/cq9vwdym2wk2t",
+          "source": "BBC"
+        },
+        {
+          "title": "Team news for United v Brentford",
+          "url": "https://www.manutd.com/en/news/team-news-for-united-v-brentford-on-28-nov",
           "source": "Manchester United"
         },
         {
-          "title": "Carlos Baleba Ruled Out of Manchester United’s Brentford Match With Injury",
-          "url": "https://www.telecomasia.net/news/football/carlos-baleba-miss-brentford-hamstring-injury/",
-          "source": "Telecom Asia Sport"
-        },
-        {
-          "title": "Why Is Marcus Rashford Not Playing for Manchester United vs. Sporting CP in UEFA Champions League?",
-          "url": "https://athlonsports.com/soccer/why-is-marcus-rashford-not-playing-for-manchester-united-vs-sporting-cp-in-uefa-champions-league",
-          "source": "Athlon Sports"
+          "title": "Man Utd being relegated would be the biggest shock in history, but it won't happen, says Paul Merson",
+          "url": "https://www.skysports.com/football/news/13616882/man-utd-being-relegated-would-be-the-biggest-shock-in-history-but-it-wont-happen-says-paul-merson",
+          "source": "Sky Sports"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "arsenal vs man city",
-      "traffic": "500+",
+      "title": "igor jesus",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Every word of Mikel Arteta's pre-Man City press conference",
-          "url": "https://www.arsenal.com/news/every-word-of-artetas-pre-city-press-conference-aLDWA2M6QpnC",
-          "source": "Arsenal.com"
+          "title": "Oliver Glasner arrasa plantel do Nottingham: «Temos jogadores que estão cá há 4 anos e não falam inglês»",
+          "url": "https://www.record.pt/internacional/paises/inglaterra/nottingham-forest/detalhe/oliver-glasner-arrasa-plantel-do-nottingham-temos-jogadores-que-estao-ca-ha-4-anos-e-nao-falam-ingles",
+          "source": "Record"
         },
         {
-          "title": "Arsenal XI vs Man City: Raya injury latest, predicted lineup and team news",
-          "url": "https://www.standard.co.uk/sport/football/arsenal-fc-xi-vs-man-city-predicted-lineup-confirmed-team-news-raya-injury-latest-premier-league-2026-b1306536.html",
-          "source": "London Evening Standard"
+          "title": "Igor Jesus abre o placar para o Forest contra o Chelsea com golaço",
+          "url": "https://www.tufutbolero.com/pt/noticias/igor-jesus-abre-o-placar-para-o-forest-contra-o-chelsea-com-26cf25",
+          "source": "Tu Futbolero"
         },
         {
-          "title": "Arteta talks up City as Arsenal look to turn the screw",
-          "url": "https://arseblog.news/2026/11/arteta-talks-up-city-as-arsenal-look-to-turn-the-screw/",
-          "source": "Arseblog News"
+          "title": "Jogos de hoje: Chelsea visita Nottingham pela Premier League",
+          "url": "https://www.brasil247.com/esporte/jogos-de-hoje-chelsea-visita-nottingham-pela-premier-league/",
+          "source": "Brasil 247"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "brest vs paris fc",
-      "traffic": "500+",
+      "title": "werder vs mönchengladbach",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Stade Brestois 29 - Paris FC : Pronostic : Une occasion de viser la première place.",
-          "url": "https://www.vietnam.vn/fr/nhan-dinh-stade-brestois-29-vs-paris-fc-co-hoi-bam-duoi-ngoi-dau",
-          "source": "Vietnam.vn"
+          "title": "Bundesliga-Ticker: Werder Bremen – Borussia Mönchengladbach live",
+          "url": "https://www.welt.de/sport/fussball/bundesliga/article6b099d856a4ea151d91c2be4/bundesliga-ticker-werder-bremen-borussia-moenchengladbach-live.html",
+          "source": "WELT"
         },
         {
-          "title": "Ligue 1. « La vie est belle en ce moment à Brest ! » : Après la mort d’Eric Roy, comment Julien Lachuer a permis au club de rebondir",
-          "url": "https://quimper.maville.com/sport/detail_-ligue-1-la-vie-est-belle-en-ce-moment-a-brest-apres-la-mort-d-eric-roy-comment-julien-lachuer-a-permis-au-club-de-rebondir_-7588156_actu.Htm",
-          "source": "maville.com"
+          "title": "buten un binnen | regionalmagazin - Wie stehen Werders Chancen gegen Gladbach? - hier anschauen",
+          "url": "https://www.ardmediathek.de/video/buten-un-binnen-oder-regionalmagazin/wie-stehen-werders-chancen-gegen-gladbach/radio-bremen/Y3JpZDovL3JhZGlvYnJlbWVuLmRlLzRhMTZiZDA0LTEwMmYtNGI4YS04NWRmLWEyZTQzYTBiNjA3Ni9zZWN0aW9uL3VybjphcmQ6ZXBpc29kZTphYTYxMTViYjY3YmUxNmMw",
+          "source": "ARD Mediathek"
         },
         {
-          "title": "L1 : Brest-Paris FC, les compos",
-          "url": "https://www.maxifoot.fr/ligue-1/brest-paris-fc-les-compos-foot-468516.htm",
-          "source": "Maxifoot"
+          "title": "Werder Bremen: Bundesligaspiel um 20.30 Uhr im Weserstadion",
+          "url": "https://twaslnews1.twaslnews.com/8408420/",
+          "source": "شبكة تواصل الإخبارية"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "enzo maresca",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "'I am not a magician' - what can Maresca's Man City learn from watertight Arsenal?",
+          "url": "https://www.bbc.com/sport/football/articles/cknv47dee54zo",
+          "source": "BBC"
+        },
+        {
+          "title": "Arsenal vs Man City: Enzo Maresca says two teams cannot be compared due to being in different stages of project",
+          "url": "https://www.skysports.com/football/news/13617231/arsenal-vs-man-city-enzo-maresca-says-two-teams-cannot-be-compared-due-to-being-in-different-stages-of-project",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Man City's form has unraveled ahead of crunch Premier League clash with Arsenal",
+          "url": "https://japantoday.com/category/sports/man-city%27s-form-has-unraveled-ahead-of-crunch-premier-league-clash-with-arsenal",
+          "source": "Japan Today"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "al-ittihad vs neom",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Al-Ittihad vs NEOM",
+          "url": "https://www.goal.com/en/news/video-en-nesyri-returns-al-ittihad-to-winning-ways-and-into-the-top-four/blt7bd76484be1c0093",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Al-Ittihad Club vs Neom SC: Saudi Pro League Preview",
+          "url": "https://www.football.com/ng/news/158923",
+          "source": "Football.com"
+        },
+        {
+          "title": "Al-Ittihad Club vs NEOM SC goals prediction: about 2.4 goals expected",
+          "url": "https://m.dongqiudi.com/en/news/250627",
+          "source": "懂球帝"
         }
       ]
     },
@@ -74,7 +140,7 @@
       "news": [
         {
           "title": "Scout Selection: Best Fantasy team for Gameweek 12",
-          "url": "https://www.premierleague.com/en/news/4771382/scout-selection-best-fantasy-team-for-gameweek-12",
+          "url": "https://www.premierleague.com/en/news/4771382",
           "source": "Premier League"
         },
         {
@@ -105,51 +171,21 @@
           "source": "Diario AS"
         },
         {
-          "title": "Postecoglou refuses to smile after Al Sadd win: 'We're frustrated by Al-Ahli defeat and suffering from bad luck'",
-          "url": "https://www.goal.com/en/news/postecoglou-refuses-to-smile-after-al-sadd-win-we-re-frustrated-by-al-ahli-defeat-and-suffering-from-bad-luck/blt1f907506426994bd",
-          "source": "Goal.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "moi international sports centre",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Six venues chosen for Africa Cup of Nations finals",
-          "url": "https://www.reuters.com/sports/soccer/six-venues-chosen-africa-cup-nations-finals-2026-11-22/",
-          "source": "Reuters"
-        },
-        {
-          "title": "CAF and Coca-Cola Reunite almost 30 years as Coca-Cola is named the Official Competition Sponsor of the TotalEnergies CAF Africa Cup of Nations (AFCON) 2027 and CAF Africa Cup of Nations 2028",
-          "url": "https://www.cafonline.com/inside-caf/news/caf-and-coca-cola-reunite-almost-30-years-as-coca-cola-is-named-the-official-competition-sponsor-of-the-totalenergies-caf-africa-cup-of-nations-afcon-2027-and-caf-africa-cup-of-nations-2028/",
-          "source": "CAFOnline.com"
-        },
-        {
-          "title": "AFCON 2027, World Athletics 2029 preps face Sh8.38bn funding crisis",
-          "url": "https://www.standardmedia.co.ke/sports/article/2001563142/afcon-2027-world-athletics-2029-preps-face-sh8-38bn-funding-crisis",
-          "source": "www.standardmedia.co.ke"
+          "title": "Cristiano Ronaldo’s Al-Nassr faces unwanted injury woes after AFC Champions League win vs Al-Sadd as Kingsl...",
+          "url": "https://worldsoccertalk.com/news/cristiano-ronaldos-al-nassr-faces-unwanted-injury-woes-after-afc-champions-league-win-vs-al-sadd-as-kingsley-comans-recovery-timeline-emerges/",
+          "source": "World Soccer Talk"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "al-ittihad vs neom",
-      "why": "unsafe: 'attack'"
+      "title": "groningen fc",
+      "why": "unsafe: 'Betting'"
     },
     {
       "title": "levante vs racing santander prediction",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "chelsea vs nottingham forest",
-      "why": "unsafe: 'missing'"
-    },
-    {
-      "title": "venezia vs bologna prediction",
-      "why": "unsafe: 'Betting'"
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
