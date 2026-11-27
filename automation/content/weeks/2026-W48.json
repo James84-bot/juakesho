@@ -4924,6 +4924,93 @@
       "tg_msg": 1957,
       "photo_checked": "2026-11-27T19:08:46.246637+03:00",
       "photo_fit": "2026-11-27T19:08:46.246653+03:00"
+    },
+    {
+      "id": "2026-w48-searching-1127",
+      "template": "searching",
+      "size": "story",
+      "hand": true,
+      "searching": true,
+      "bg": "usiku",
+      "kicker": "What Kenya is searching",
+      "day": "Friday 27 November",
+      "rows": [
+        {
+          "query": "national defence university - kenya",
+          "label": "1K+",
+          "title": "Ruto presides over National Defence University graduation in Nakuru",
+          "source": "The Star, Kenya",
+          "url": "https://www.the-star.co.ke/news/2026-11-26-ruto-presides-over-national-defence-university-graduation-in-nakuru-1"
+        },
+        {
+          "query": "arsenal vs man city",
+          "label": "500+",
+          "title": "Every word of Mikel Arteta's pre-Man City press conference",
+          "source": "Arsenal.com",
+          "url": "https://www.arsenal.com/news/every-word-of-artetas-pre-city-press-conference-aLDWA2M6QpnC"
+        },
+        {
+          "query": "chelsea vs nottingham forest",
+          "label": "500+",
+          "title": "Premier League predictions & Jones Knows' best bets: Nottingham Forest vs Chelsea, Arsenal vs Manchester City ",
+          "source": "Sky Sports",
+          "url": "https://www.skysports.com/football/news/13616076/premier-league-predictions-and-jones-knows-best-bets-nottingham-forest-vs-chelsea-arsenal-vs-manchester-city-and-more"
+        },
+        {
+          "query": "brest vs paris fc",
+          "label": "200+",
+          "title": "Stade Brestois 29 - Paris FC : Pronostic : Une occasion de viser la première place.",
+          "source": "Vietnam.vn",
+          "url": "https://www.vietnam.vn/fr/nhan-dinh-stade-brestois-29-vs-paris-fc-co-hoi-bam-duoi-ngoi-dau"
+        },
+        {
+          "query": "luis enrique",
+          "label": "200+",
+          "title": "¿Julián Quiñones al PSG? Así fue la respuesta de Luis Enrique",
+          "source": "TUDN",
+          "url": "https://www.tudn.com/futbol/uefa-champions-league/julian-quinones-al-psg-asi-fue-la-sorpresiva-respuesta-de-luis-enrique"
+        }
+      ],
+      "source": "Google Trends, Kenya (trends.google.com/trending?geo=KE)",
+      "source_links": [
+        {
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/news/2026-11-26-ruto-presides-over-national-defence-university-graduation-in-nakuru-1",
+          "title": "Ruto presides over National Defence University graduation in Nakuru"
+        },
+        {
+          "outlet": "Arsenal.com",
+          "link": "https://www.arsenal.com/news/every-word-of-artetas-pre-city-press-conference-aLDWA2M6QpnC",
+          "title": "Every word of Mikel Arteta's pre-Man City press conference"
+        },
+        {
+          "outlet": "Sky Sports",
+          "link": "https://www.skysports.com/football/news/13616076/premier-league-predictions-and-jones-knows-best-bets-nottingham-forest-vs-chelsea-arsenal-vs-manchester-city-and-more",
+          "title": "Premier League predictions & Jones Knows' best bets: Nottingham Forest vs Chelsea, Arsenal vs Manchester City "
+        },
+        {
+          "outlet": "Vietnam.vn",
+          "link": "https://www.vietnam.vn/fr/nhan-dinh-stade-brestois-29-vs-paris-fc-co-hoi-bam-duoi-ngoi-dau",
+          "title": "Stade Brestois 29 - Paris FC : Pronostic : Une occasion de viser la première place."
+        },
+        {
+          "outlet": "TUDN",
+          "link": "https://www.tudn.com/futbol/uefa-champions-league/julian-quinones-al-psg-asi-fue-la-sorpresiva-respuesta-de-luis-enrique",
+          "title": "¿Julián Quiñones al PSG? Así fue la respuesta de Luis Enrique"
+        }
+      ],
+      "publish_at": "2026-11-27T20:30:00+03:00",
+      "status": "approved",
+      "drafted_at": "2026-11-27T20:02:07+03:00",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet"
+        ]
+      },
+      "tg_msg": 1965,
+      "auto": true,
+      "decided_at": "2026-11-27T20:02:11.541146+03:00"
     }
   ],
   "scripts": {
