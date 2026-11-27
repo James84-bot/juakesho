@@ -1,25 +1,47 @@
 {
-  "fetched": "2026-11-27T01:10:22.425911+00:00",
+  "fetched": "2026-11-27T03:39:12.477920+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "palace vs real sociedad",
-      "traffic": "2000+",
+      "title": "sunderland a.f.c. vs jagiellonia białystok standings",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Crystal Palace 2-1 Real Sociedad: Thomas Frank gains first win as Eagles boss",
-          "url": "https://www.bbc.com/sport/football/live/cm930gwqx2e3t",
+          "title": "Sunderland vs Jagiellonia Bialystok: UEFA Europa League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c893r4n7622et",
           "source": "BBC"
         },
         {
-          "title": "Crystal Palace 2-1 Real Sociedad: Thomas Frank earns first win as Eagles boss with Europa League comeback victory",
-          "url": "https://www.skysports.com/football/news/13616782/crystal-palace-2-1-real-sociedad-thomas-frank-earns-first-win-as-eagles-boss-with-europa-league-comeback-victory",
+          "title": "Sunderland 1-1 Jagiellonia Bialystok: Black Cats maintain Europa League play-off push with draw",
+          "url": "https://www.skysports.com/football/news/13616711/sunderland-1-1-jagiellonia-bialystok-black-cats-maintain-europa-league-play-off-push-with-draw",
           "source": "Sky Sports"
         },
         {
-          "title": "Crystal Palace 2-1 Real Sociedad, Sunderland 1-1 Jagiellonia Bialystok, and more: Europa League – as it happened",
-          "url": "https://www.theguardian.com/football/live/2026/nov/26/sunderland-v-jagiellonia-bialystok-crystal-palace-v-real-sociedad-and-more-europa-league-live",
+          "title": "Reinildo error extends Sunderland woe as Jagiellonia grab Europa League draw",
+          "url": "https://www.theguardian.com/football/2026/nov/26/sunderland-jagiellonia-bialystok-europa-league-match-report",
           "source": "The Guardian"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "safaricom",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Safaricom responds to customer seeking matatu conductor’s number to recover lost luggage",
+          "url": "https://peopledaily.digital/news/safaricom-responds-to-customer-seeking-matatu-conductors-number-to-recover-lost-luggage",
+          "source": "People Daily"
+        },
+        {
+          "title": "Vodafone reveals Sh430bn gain from Safaricom deal",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/vodafone-reveals-sh430bn-gain-from-safaricom-deal-5682944",
+          "source": "Business Daily"
+        },
+        {
+          "title": "R1.15 billion in limbo for Vodacom",
+          "url": "https://businesstech.co.za/news/telecommunications/885111/r1-15-billion-in-limbo-for-vodacom/",
+          "source": "BusinessTech"
         }
       ]
     },
@@ -47,45 +69,23 @@
     },
     {
       "geo": "KE",
-      "title": "besiktas",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Çay Belediye Başkanı Yaşar Kemal Kantaropu’ndan Türk futbolunda adalet ve Beşiktaş taraftarlarına destek mesajı",
-          "url": "https://www.beyazbelgehaber.com/haber/cay-belediye-baskani-yasar-kemal-kantaropu-ndan-turk-futbolunda-adalet-ve-besiktas-taraftarlarina-destek-mesaji",
-          "source": "https://beyazbelgehaber.com/"
-        },
-        {
-          "title": "Beşiktaş seri başı! Avrupa'da yola tam gaz devam",
-          "url": "https://www.fotospor.com.tr/besiktas/besiktas-seri-basi-avrupada-yola-tam-gaz-devam-717861",
-          "source": "Fotospor"
-        },
-        {
-          "title": "Beşiktaş 2-1 HB Sheva:Tarih Bu Zaferi Yazacak",
-          "url": "https://www.muglagazetesi.com.tr/spor/besiktas-2-1-hb-shevatarih-bu-zaferi-yazacak-224113h",
-          "source": "Muğla Gazetesi"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "safaricom",
+      "title": "x",
       "traffic": "200+",
       "news": [
         {
-          "title": "Safaricom responds to customer seeking matatu conductor’s number to recover lost luggage",
-          "url": "https://peopledaily.digital/news/safaricom-responds-to-customer-seeking-matatu-conductors-number-to-recover-lost-luggage",
-          "source": "People Daily"
+          "title": "Thanksgiving tripleheader: What We Learned from Bears-Lions, Eagles-Cowboys, Chiefs-Bills",
+          "url": "https://www.nfl.com/news/thanksgiving-tripleheader-what-we-learned-from-bears-lions-eagles-cowboys-chiefs-bills",
+          "source": "NFL.com"
         },
         {
-          "title": "Vodafone reveals Sh430bn gain from Safaricom deal",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/vodafone-reveals-sh430bn-gain-from-safaricom-deal-5682944",
-          "source": "Business Daily"
+          "title": "QB Caleb Williams, WR Rome Odunze's chemistry helps Bears stun Lions",
+          "url": "https://www.espn.com/nfl/story/_/id/50608495/qb-caleb-williams-wr-rome-odunze-chemistry-helps-bears-stun-lions",
+          "source": "ESPN"
         },
         {
-          "title": "R1.15 billion in limbo for Vodacom",
-          "url": "https://businesstech.co.za/news/telecommunications/885111/r1-15-billion-in-limbo-for-vodacom/",
-          "source": "BusinessTech"
+          "title": "Caleb Williams' heroics have Bears thinking No. 1 seed in NFC playoffs",
+          "url": "https://www.foxnews.com/outkick-sports/caleb-williams-heroics-bears-thinking-no-1-seed-nfc-playoffs",
+          "source": "Fox News"
         }
       ]
     },
@@ -127,9 +127,9 @@
           "source": "Goal.com"
         },
         {
-          "title": "Licensable picture: BULGARIA-SOFIA-TRABZONSPOR-PRESS-CONFERENCE-OPEN-TRAINING-25-11-2026",
-          "url": "https://www.reutersconnect.com/item/bulgaria-sofia-trabzonspor-press-conference-open-training-25-11-2026/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUhOU0xDUzAwMExFMjRURg",
-          "source": "Reuters Connect"
+          "title": "Trabzonspor come back to beat CSKA Sofia 2-1 in UEFA Conference League",
+          "url": "https://www.aa.com.tr/en/sports/trabzonspor-come-back-to-beat-cska-sofia-2-1-in-uefa-conference-league/4139875",
+          "source": "Anadolu Ajansı"
         }
       ]
     },
@@ -144,14 +144,14 @@
           "source": "A Bola"
         },
         {
-          "title": "Pavlidis atira: «Nem estivemos a 10% do que podemos fazer»»",
-          "url": "https://sapo.pt/artigo/pavlidis-atira-nem-estivemos-a-10-do-que-podemos-fazer-6b0892867a9ccdad1e138fe4",
+          "title": "Rui Costa: «Não há desculpas, que sirva de exemplo para todos»",
+          "url": "https://sapo.pt/artigo/rui-costa-nao-ha-desculpas-que-sirva-de-exemplo-para-todos-6b089c73ed7962199d3a4229",
           "source": "SAPO"
         },
         {
-          "title": "Palhinha taxativo: \"Menosprezámos o adversário e foi visível no jogo\"",
-          "url": "https://www.noticiasaominuto.com/desporto/3090945/palhinha-taxativo-menosprezamos-o-adversario-e-foi-visivel-no-jogo",
-          "source": "Notícias ao Minuto"
+          "title": "Tomás Araújo: \"Levámos um banho de humildade\"",
+          "url": "https://www.jn.pt/desporto/artigo/tomas-araujo-levamos-um-banho-de-humildade/18152719",
+          "source": "Jornal de Notícias"
         }
       ]
     },
@@ -161,19 +161,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "OL - Lillestrøm : les compositions officielles",
-          "url": "https://www.footmercato.net/a6628289909232274295-ol-lillestrom-les-compositions-officielles",
-          "source": "Foot Mercato"
+          "title": "Le Guide Michelin 2027, un «spectacle» en direct sur France Télévisions",
+          "url": "https://www.lefigaro.fr/gastronomie/les-etoiles-du-guide-michelin-2027-presentees-depuis-lyon-20261126",
+          "source": "Le Figaro"
         },
         {
-          "title": "Mauvaises opérations pour Lyon et Rennes, qui manquent de rejoindre le Top 8 de la Ligue Europa",
-          "url": "https://www.franceinfo.fr/sports/foot/ligue-europa/mauvaises-operations-pour-lyon-et-rennes-qui-manquent-de-rejoindre-le-top-8-de-la-ligue-europa_8302110.html",
-          "source": "franceinfo"
+          "title": "« Une très bonne nouvelle pour Lyon, pour les affaires »",
+          "url": "https://www.ledauphine.com/actualite/2026/11/27/une-tres-bonne-nouvelle-pour-lyon-pour-les-affaires",
+          "source": "Le Dauphiné Libéré"
         },
         {
-          "title": "OL – Lillestrom (0-0) : un match nul de A à Z",
-          "url": "https://www.olympique-et-lyonnais.com/ol-lillestrom-0-0-un-match-nul-de-a-a-z,415028.html",
-          "source": "Olympique & Lyonnais"
+          "title": "Une création originale pour une cérémonie entièrement repensée, diffusée en première partie de soirée sur France 3",
+          "url": "https://www.michelin.com/publications/produits-et-services/le-guide-michelin-selection-france-monaco-2027",
+          "source": "Groupe Michelin"
         }
       ]
     },
@@ -183,19 +183,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "« Je n’aurais pas tenté ça à ce moment » : la réaction de Genesio après la panenka ratée de Gouiri",
-          "url": "https://www.footmercato.net/a1368431690863167773-je-naurais-pas-tente-ca-a-ce-moment-la-reaction-de-genesio-apres-la-panenka-ratee-de-gouiri",
-          "source": "Foot Mercato"
+          "title": "\"Ce public mérite une grande équipe\", lancent les supporters après la victoire de l’OM face à Sofia",
+          "url": "https://actu.orange.fr/videos/actu-locale/ce-public-merite-une-grande-equipe-lancent-les-supporters-apres-la-victoire-de-l-om-face-a-sofia-CNT000002u4nkS.html",
+          "source": "Orange Actualités"
         },
         {
-          "title": "Daniel Borimirov, directeur exécutif du Levski Sofia après la défaite face à l'OM au Vélodrome : « J'espère que plus aucun match ne sera disputé dans ce stade »",
-          "url": "https://www.lequipe.fr/Football/Actualites/Daniel-borimirov-directeur-executif-du-levski-sofia-apres-la-defaite-face-a-l-om-au-velodrome-j-espere-que-plus-aucun-match-ne-sera-dispute-dans-ce-stade/1746503",
-          "source": "L'Équipe"
+          "title": "Olympique de Marseille vs Toulouse FC : résumé et analyse du match",
+          "url": "https://metro-sports.fr/marseille-vs-toulouse/",
+          "source": "Métro-Sports"
         },
         {
-          "title": "Pep Genesio s’offre un record national",
-          "url": "https://www.sofoot.com/breves/ligue-europa-lentraineur-de-lolympique-de-marseille-bat-le-record-de-guy-roux-en-devenant-lentraineur-francais-avec-le-plus-de-victoires-en-coupe-deurope",
-          "source": "SO FOOT.com"
+          "title": "Lens : Florian Thauvin renvoyé à Marseille",
+          "url": "https://www.sport.fr/football/lens-florian-thauvin-renvoye-a-marseille-1503893.shtm",
+          "source": "Sport.fr"
         }
       ]
     }

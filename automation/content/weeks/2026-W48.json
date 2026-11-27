@@ -3941,13 +3941,99 @@
       "fb_story_id": "1816013672954425",
       "yt_id": "PUtNxEIifWA",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w48-hot-1127m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Working mothers",
+      "line": "Employers face a *Sh1 million fine* for failing to provide lactation rooms for nursing mothers.",
+      "fact": "Labour Ministry rules require employers to provide clean breastfeeding spaces and nursing breaks.",
+      "source": "Daily Nation, 2026-11-27, People Daily, 2026-11-26",
+      "photo_query": "office worker Nairobi Kenya",
+      "message": "Employers face a Sh1 million fine for failing to provide breastfeeding rooms for working mothers.",
+      "action": "Ask your HR department about lactation spaces at your workplace.",
+      "who": "Ministry of Labour",
+      "where": "National",
+      "when": "27 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Working mothers gain private lactation spaces and nursing breaks at work.",
+      "beats": [
+        "Employers face a *Sh1 million fine* for missing breastfeeding rooms.",
+        "The rules demand clean private spaces for nursing mothers.",
+        "Companies must also give paid breaks to express milk.",
+        "Does your workplace have a dedicated room for nursing mothers?"
+      ],
+      "caption": "Employers face a Sh1 million fine if they fail to provide clean breastfeeding rooms for working mothers. Workplace reforms mandate private rooms and nursing breaks for employees returning from maternity leave.\n\nDoes your workplace have a dedicated room for nursing mothers?\n\n#KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-27T09:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "Employers face Sh1 million fine for failing to provide breastfeeding rooms",
+          "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNaDlpYnRBWnRwSXlkV1ZubnduYTFrUzV2MXQtdUp0bE5xdmkyVjFEVy1kZTA5NlJrWDlZUFRFUXh1QmhLaGFZcXFOemZZdFM4eG1vR2xSMHlDTGl6S2RRTUpiaW1ITWVuMDlTd09Qa01lYmwta3Vaak1FaDVGdWpyZ2lwMXpaMElUdkJrUnZQMXlqZE5jbjFNdjNtdERqd1EyMkhlY2RSdm03TTlJQlUwbk1SWWxuMjdiSkhGMXJnMU84VjRIN1Nz?oc=5",
+          "published": "2026-11-27"
+        },
+        {
+          "outlet": "People Daily",
+          "title": "Kenya strengthens maternal protection through workplace reforms",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOcW1YQ1Z4SUVoaE5nMmZGbDVWT1NoNVJvV2lxVlZQLU5HdDNGMmktcklBYThrZjZZNTBxUEVoRWU3eG1uWmZYWlU3QWZiYVFRV1dCOWRBcFFwbUFoa21zX290N1NvSDJfSDVyUkVhSnVVWmVKYnVTM0JUQ2lCT3ZncWZqOUlIYXRpeERTMlg1dThnaHFtcVd3VFRpczE?oc=5",
+          "published": "2026-11-26"
+        }
+      ],
+      "quotes": [],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 9,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 8.2,
+        "note": "All elements meet the standard; ensure the photo query points to a specific Kenyan office setting."
+      },
+      "drafted_at": "2026-11-27T06:46:44.026133+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127m-photo.jpg",
+      "photo_credit": "Photo: NoahNairobi / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Mr_Poser.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: NoahNairobi / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1906,
+      "auto": true,
+      "decided_at": "2026-11-27T06:57:05.955890+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari za mtaa na karibu kwenye Kenya on Record. Mimi ni wako, na leo tunachambua soka la Ulaya lakini kwa mtazamo wa haki na uwajibikaji.\n\nWiki hii, limetokea jambo ambalo limezua gumzo kubwa duniani kote. Jopo huru la soka limekiri wazi kwamba uamuzi wa kumpa Leny Yoro kadi nyekundu wakati wa mechi dhidi ya Liverpool ulikuwa kosa la wazi kabisa la mwamuzi. Sasa, sikiza hapa; Yoro alionyeshwa kadi hiyo ambayo iliharibu kabisa mchezo wake na kuathiri kikosi chake. Lakini miezi baadaye, baada ya kelele na uchunguzi, ndipo FA wanakiri \"tulikosea.\"\n\nSasa, hii inatuhusu nini sisi hapa Kenya? Inatuonyesha umuhimu wa kusimamia uwajibikaji hata pale ambapo mamlaka kubwa zinapofanya makosa. Iwe ni kwenye mpira, ofisi za kaunti, au hata usimamizi wa rasilimali zetu, ukweli ni kwamba makosa ya kimitindo au ya makusudi yanaweza kusahihishwa kama tutasimama kidete na kuuliza maswali magumu. Hata wataalamu hukosea, lakini uwazi ndio unaofanya mambo yawe sawa.\n\nAsante kwa kusikiliza.\n\n[Kiswahili Summary]\nKwa kifupi: Jopo huru la FA limekiri kuwa kadi nyekundu ya mchezaji Leny Yoro dhidi ya Liverpool ilikuwa kosa. Hii inatukumbusha umuhimu wa uwajibikaji na kurekebisha makosa hata katika maisha yetu ya kila siku.",
-    "voice_note": "Wadau, mambo vipi? Ni wiki nyingine hapa Kenya on Record. Sasa usikie hii: jopo huru la soka huko Ulaya limetoka kusema ukweli ambao wengi wetu tulijua tangu siku ya kwanza—kwamba ile kadi nyekundu ya Leny Yoro dhidi ya Liverpool ilikuwa makosa matupu ya mwamuzi! Yaani refarii alizingua. Lakini swali kuu ni hili: kama wale walio na mifumo mikubwa wanaweza kukiri makosa yao baada ya shinikizo, je, viongozi wetu hapa nyumbani nao wataanza lini kuwajibika kwa makosa yao ya kila siku kwenye miradi na utawala? Fuatilia haya yote na tutunze uwajibikaji wetu.",
-    "sms": "Usiibiwe: Uwajibikaji huanzia kwa kuuliza maswali. Kama FA wameweza kukiri kosa la Leny Yoro, viongozi wetu nao lazima wawajibike kwa rasilimali za umma!",
-    "reels": "[Visual: Energetic text highlights on screen, bold and clean, with an upbeat investigative beat]\n\nVoice-over:\n[0:00] Wananchi, hebu sikieni hii! \n[0:05] Jopo huru la soka limethibitisha rasmi kwamba kadi nyekundu ya Leny Yoro dhidi ya Liverpool ilikuwa kosa la wazi kabisa la mwamuzi.\n[0:15] Ndio, hata pale juu kwenye viwango vya kimataifa, makosa hutokea na kukubaliwa.\n[0:22] Swali ni: Je, viongozi wetu hapa nyumbani wataanza lini kukiri makosa na kuwajibika kwa umma?\n[0:28] Kaa chonjo na Kenya on Record!"
+    "radio": "Welcome back to Kenya on Record, your voice for accountability. Today, we are looking at labor rights and maternal health in the workplace.\n\nMany working mothers in Kenya face a quiet struggle every single day after returning from maternity leave: finding a safe, clean, and dignified place to pump milk or nurse their infants. Far too often, women are forced to resort to office washrooms, parked cars, or dusty store cupboards.\n\nThe law says otherwise. Under current statutory guidelines, employers are required to set up compliant, dedicated breastfeeding stations for nursing mothers. Failing to provide this basic facility attracts a penalty of up to one million shillings, or even jail time for defaulting employers.\n\nThis is not just about compliance; it is about dignity, child nutrition, and fair labor standards. When workplaces fail to support mothers, productivity drops, and health risks rise. Every employee should know their rights, and HR departments must take this requirement seriously before enforcement officers step in.\n\nKwa Muhtasari: Waajiri nchini Kenya wanaokosa kutenga vyumba safi na salama vya kunyonyesha kwa akina mama wanaofanya kazi wanabiliwa na faini ya hadi shilingi milioni moja. Hii ni haki ya kisheria kumlinda mama na mtoto mahali pa kazi. Jua haki zako na udai mazingira bora ya kazi.\n\nThis is Kenya on Record. Stand up for your rights.",
+    "voice_note": "Hujambo, quick update from Kenya on Record this week. Did you know employers who fail to provide proper breastfeeding rooms for working mothers face a fine of up to one million shillings? Look, maternal health and labor rights are non-negotiable. For years, nursing mothers have had to squeeze into dirty washrooms or hide in cars just to pump milk for their babies during office hours. That is illegal and unacceptable. The law demands a clean, private, and well-equipped lactation station at the workplace. If you are an employee or employer, check your company policy today. Rights are not given; they are enforced. Share this with a working mom or your HR department right now. Stay sharp, usiibiwe!",
+    "sms": "Usiibiwe: Working mothers have a right to a clean breastfeeding room at work. Employers who fail face up to Sh1M fine. Stand up for your rights.",
+    "reels": "Did you know your employer could be fined up to one million shillings for not having a dedicated breastfeeding room? The law is clear: working mothers deserve a safe, clean, and dignified space to express milk. It is not a favor; it is a statutory right under Kenyan law. If your workplace is ignoring this requirement, speak up. Accountable workplaces protect mothers. This is Kenya on Record."
   },
   "spend_usd": 0.0
 }

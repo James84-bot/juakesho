@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T16:07:03.013327+03:00",
+  "updated": "2026-11-27T06:38:44.355825+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -69,19 +69,6 @@
   ],
   "bottom": [
     {
-      "id": "2026-w47-hot-1120a",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Kenya coach Benni McCarthy demands overdue payments.",
-      "reach": 19,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 5.3
-    },
-    {
       "id": "2026-w47-hot-1122a",
       "series": "sauti",
       "lane": "everyone",
@@ -100,12 +87,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
-      "reach": 1,
+      "reach": 7,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.2
+      "avg_watch_s": 3.2
+    },
+    {
+      "id": "2026-w48-hot-1125b1641",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "IEBC denies clearing Rigathi Gachagua for the 2027 race.",
+      "reach": 3,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 5.1
     }
   ],
   "all": [
@@ -180,12 +180,12 @@
       "lane": "everyone",
       "score": 8.2,
       "opening": "High Court found CS Mbadi guilty of contempt, Citizen Digital reports.",
-      "reach": 64,
+      "reach": 65,
       "saved": 1,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.4
+      "avg_watch_s": 4.6
     },
     {
       "id": "2026-w47-d5-straight-r3",
@@ -310,12 +310,12 @@
       "lane": "everyone",
       "score": 3.1,
       "opening": "Rigathi Gachagua presented fresh demands to the IEBC chair.",
-      "reach": 19,
+      "reach": 20,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 1,
-      "avg_watch_s": 2.9
+      "avg_watch_s": 2.8
     },
     {
       "id": "2026-w45-hot-1107",
@@ -427,7 +427,7 @@
       "lane": "everyone",
       "score": 2.3,
       "opening": "Three workers died when a perimeter wall collapsed in Riverside.",
-      "reach": 126,
+      "reach": 127,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -570,12 +570,12 @@
       "lane": "diaspora",
       "score": 0.0,
       "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
-      "reach": 30,
+      "reach": 31,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.1
+      "avg_watch_s": 3.2
     },
     {
       "id": "2026-w47-hot-1117",
@@ -622,12 +622,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
-      "reach": 29,
+      "reach": 30,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.0
+      "avg_watch_s": 3.9
     },
     {
       "id": "2026-w47-hot-1119b1743",
@@ -635,12 +635,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
-      "reach": 24,
+      "reach": 25,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.3
+      "avg_watch_s": 5.1
     },
     {
       "id": "2026-w47-hot-1120m",
@@ -648,12 +648,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya will distribute 10.79 million mosquito nets across 18 counties.",
-      "reach": 58,
+      "reach": 60,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 4.3
+      "avg_watch_s": 4.5
     },
     {
       "id": "2026-w47-hot-1120b0841",
@@ -713,12 +713,25 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
-      "reach": 1,
+      "reach": 7,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 2.2
+      "avg_watch_s": 3.2
+    },
+    {
+      "id": "2026-w48-hot-1125b1641",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "IEBC denies clearing Rigathi Gachagua for the 2027 race.",
+      "reach": 3,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 5.1
     }
   ],
   "youtube": [
@@ -734,7 +747,7 @@
       "id": "2026-w47-hot-1122a",
       "series": "sauti",
       "opening": "CAF names Nairobi as Kenya's sole host city for AFCON 2027.",
-      "views": 1175,
+      "views": 1188,
       "likes": 2,
       "comments": 0
     },
@@ -750,7 +763,7 @@
       "id": "2026-w47-hot-1118e-r2",
       "series": "sauti",
       "opening": "Rigathi Gachagua presented fresh demands to the IEBC chair.",
-      "views": 567,
+      "views": 568,
       "likes": 1,
       "comments": 0
     },
@@ -774,7 +787,7 @@
       "id": "2026-w45-hot-1108-r4",
       "series": "sauti",
       "opening": "FKF ousted vice-president McDonald Mariga and six other officials.",
-      "views": 468,
+      "views": 469,
       "likes": 0,
       "comments": 0
     },
@@ -790,7 +803,7 @@
       "id": "2026-w47-hot-1120b0841",
       "series": "sauti",
       "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "views": 422,
+      "views": 429,
       "likes": 6,
       "comments": 0
     },
@@ -798,7 +811,7 @@
       "id": "2026-w47-hot-1119",
       "series": "sauti",
       "opening": "MPs removed a Sh100 million fine on firms ignoring Kenyan workers.",
-      "views": 387,
+      "views": 388,
       "likes": 0,
       "comments": 0
     },
@@ -830,8 +843,16 @@
       "id": "2026-w47-hot-1119m-r2",
       "series": "sauti",
       "opening": "Marathon champion Peres Jepchirchir got a three-year doping ban.",
-      "views": 245,
+      "views": 246,
       "likes": 3,
+      "comments": 0
+    },
+    {
+      "id": "2026-w48-hot-1125b1641",
+      "series": "sauti",
+      "opening": "IEBC denies clearing Rigathi Gachagua for the 2027 race.",
+      "views": 235,
+      "likes": 1,
       "comments": 0
     },
     {
@@ -878,7 +899,7 @@
       "id": "2026-w47-hot-1118m",
       "series": "sauti",
       "opening": "Mobile money deals fell despite 97 million active SIM lines in Kenya.",
-      "views": 160,
+      "views": 166,
       "likes": 0,
       "comments": 0
     },
@@ -894,7 +915,7 @@
       "id": "2026-w47-hot-1120",
       "series": "sauti",
       "opening": "Nairobi tech funding fell to a 6-year low this year.",
-      "views": 138,
+      "views": 139,
       "likes": 0,
       "comments": 0
     },
@@ -926,7 +947,7 @@
       "id": "2026-w47-d6-kenya",
       "series": "kenya",
       "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
-      "views": 117,
+      "views": 118,
       "likes": 0,
       "comments": 0
     },
@@ -1038,7 +1059,7 @@
       "id": "2026-w48-hot-1125a",
       "series": "sauti",
       "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
-      "views": 37,
+      "views": 46,
       "likes": 0,
       "comments": 0
     },
@@ -1062,7 +1083,7 @@
       "id": "2026-w47-d1-usiibiwe",
       "series": "usiibiwe",
       "opening": "Banks in Kenya warn that fake SMS alerts target mobile accounts.",
-      "views": 23,
+      "views": 24,
       "likes": 0,
       "comments": 0
     },
