@@ -4220,13 +4220,389 @@
       "tg_msg": 1912,
       "auto": true,
       "decided_at": "2026-11-27T09:24:49.532556+03:00"
+    },
+    {
+      "id": "2026-w48-hot-1127a",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football fans",
+      "line": "Harambee Starlets coach Beldine Oduor dropped *12 WAFCON players* in a squad overhaul.",
+      "fact": "Coach Beldine Oduor left out 12 tournament veterans in an overhaul of the Starlets squad.",
+      "message": "Harambee Starlets rebuilt their squad by dropping 12 WAFCON players for upcoming international matches.",
+      "action": "Follow the Harambee Starlets fixtures and back national teams in upcoming matches.",
+      "photo_query": "football pitch Nyayo Stadium Nairobi",
+      "source": "The Star, Kenya, 2026-11-27",
+      "who": "Harambee Starlets coach Beldine Oduor",
+      "where": "Nairobi",
+      "when": "27 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Football fans will see a new Harambee Starlets lineup in upcoming continental matches.",
+      "caption": "Coach Beldine Oduor dropped 12 WAFCON players in a sweeping overhaul of the Harambee Starlets squad. Fresh talent comes in as Kenya reshapes the national women's football team for upcoming continental fixtures.\n\nDo you support dropping veterans to build a new squad?\n\n#HarambeeStarlets #KenyaOnRecord",
+      "beats": [
+        "Harambee Starlets dropped *12 players* in a major squad overhaul.",
+        "Coach Beldine Oduor left out key veterans to rebuild the team.",
+        "The bench brought in fresh talent for upcoming continental matches.",
+        "Do you support dropping veterans to rebuild Harambee Starlets?"
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-11-27T16:00:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "avoid": [
+        "Employers face a Sh1 million fine for failing to provide breastfeeding rooms for working mothers.",
+        "The National Police Service updated December police recruitment rules for applicants across all counties.",
+        "Kenyan shoppers get new bank payment choices at merchant checkouts."
+      ],
+      "source_links": [
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Oduor drops 12 Wafcon players in Starlets squad overhaul",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQck5LQURPY1YxSE1scm9IWGdJenhCc3N6VVBQRnhmaTlseTQ2T2dKc1BxcDAtcTM1NVRqNDdBWThIRm5XVmp4bUV1OVB1VnRUUXVLQ3lsR2pBTFNiSkE1aDE3NnpQdDFFazh0aHdfUDVwUGpwN2tGOEdvdUxmVDEyOUs0TU5SM0cxQ1RiN2NYaU1hTks5U2dQQmxPVWo4eXVtY1g4Yk8zMklSTGRmczVn?oc=5",
+          "published": "2026-11-27"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.0/10. Use a real sport topic from the weekly list instead of a stale archive article."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 3,
+        "craft": 4,
+        "picture": 4,
+        "hold": 4,
+        "demand": 3,
+        "action": 2,
+        "fair": 6,
+        "impact": 4,
+        "human": 2,
+        "avg": 4.0,
+        "note": "Use a real sport topic from the weekly list instead of a stale archive article."
+      },
+      "drafted_at": "2026-11-27T12:43:04.278992+03:00",
+      "replaced_by": "2026-w48-hot-1127a-r2",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127a-photo.jpg",
+      "photo_credit": "Photo: Norman Mithika / Wordpress, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://wordpress.org/photos/photo/167679e510/",
+      "shot_info": [
+        {
+          "credit": "Photo: Norman Mithika / Wordpress, CC0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1923
+    },
+    {
+      "id": "2026-w48-hot-1127a-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football Fans",
+      "line": "Minnows Migori and *3K* prepare to trade blows in a survival scrap.",
+      "fact": "FKF National Super League relegation battle brings Migori FC and 3K FC face to face.",
+      "source": "The Star, Kenya, 2026-11-27",
+      "photo_query": "football stadium pitch Kenya",
+      "message": "Migori and 3K face off in a tight relegation battle in the National Super League.",
+      "action": "Support local football: check the fixture and follow your team this weekend",
+      "beats": [
+        "Migori and *3K* face off in a tight relegation battle.",
+        "Coach Omasete: “We need to rediscover our attacking edge”",
+        "Both teams need points to escape the drop zone.",
+        "Tell us below: which team is *surviving* the drop?"
+      ],
+      "caption": "Migori FC and 3K FC face off in a high-stakes relegation battle in the National Super League. Every point counts at the bottom of the table.\n\nTell us below: which team is surviving the drop?\n\n#FKF #KenyaOnRecord",
+      "who": "FKF League Management",
+      "where": "National",
+      "when": "27 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Local club survival depends on every match point.",
+      "bg": "usiku",
+      "publish_at": "2026-11-27T16:00:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "avoid": [
+        "Employers face a Sh1 million fine for failing to provide breastfeeding rooms for working mothers.",
+        "The National Police Service updated December police recruitment rules for applicants across all counties.",
+        "Kenyan shoppers get new bank payment choices at merchant checkouts.",
+        "Harambee Starlets rebuilt their squad by dropping 12 WAFCON players for upcoming international matches."
+      ],
+      "version": 1,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Minnows Migori, 3K prepare to trade blows in survival scrap",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMXJSTGxVc2pkbzFaREw0YVRWNENxcnNSX3c5am5VVEFybWJGTkdMNlU5QXhPX1V5Nkk1RG1YX0Y1bGRIc09WSVpTN2dsQXZuUllGR19JMjFuUXl1UEhucUJMOWI0czQtZHVEOUNQOE5zWnFMdlhzcmdJYVZULVZnb1ZVYklkZEs0a2l0MlNlV1hpVkM5Y19IbXFTNXRMQmJqek9SUFlFTnBVcEo5MkN2dThn?oc=5",
+          "published": "2026-11-27"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "We need to rediscover our attacking edge. We have to be braver going forward and make better use of the chances we create",
+          "speaker": "Omasete",
+          "context": "The coach, sent off during Wednesday’s 2-0 defeat to Nairobi United, could miss Sunday’s match if his suspension takes immediate effect. Assistant Dennis Okoth would then take charge from the touchline. “We need to rediscover our attacking edge. We have to be braver going forward and make better use of the chances we c",
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/sports/football/2026-11-27-minnows-migori-3k-prepare-to-trade-blows-in-survival-scrap"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.8/10. Pick a news story from the top 5 ranking list that Kenyans are actively discussing instead of low-tier sports items."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 5,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 5,
+        "craft": 5,
+        "picture": 5,
+        "hold": 5,
+        "demand": 2,
+        "action": 5,
+        "fair": 7,
+        "impact": 5,
+        "human": 4,
+        "avg": 4.8,
+        "note": "Pick a news story from the top 5 ranking list that Kenyans are actively discussing instead of low-tier sports items."
+      },
+      "drafted_at": "2026-11-27T12:46:18.021942+03:00",
+      "replaced_by": "2026-w48-hot-1127a-r3",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127a-r2-photo.jpg",
+      "photo_credit": "Photo: Lebu Ayiga / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Spectator_view_of_CHAN_match_between_Kenya_and_DRC.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Lebu Ayiga / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1924
+    },
+    {
+      "id": "2026-w48-hot-1127a-r3",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Sports fans",
+      "line": "Mariga faces a major career test after an *FKF* expulsion ruling.",
+      "fact": "Macdonald Mariga faces new questions after the Football Kenya Federation ruling.",
+      "source": "Daily Nation, 2026-11-27",
+      "photo_query": "football stadium Kenya",
+      "message": "Macdonald Mariga faces a career test following an FKF expulsion ruling.",
+      "action": "Read the full FKF statement on the federation website.",
+      "beats": [
+        "Mariga faces a career test after an *FKF* expulsion ruling.",
+        "Football fans are asking what comes next for the star.",
+        "The federation released the official decision on Thursday.",
+        "Tell us below: what is your take on the ruling?"
+      ],
+      "caption": "Macdonald Mariga faces a new chapter after the FKF expulsion ruling. What does this mean for Kenyan football?\n\nTell us below: what is your take on the ruling?\n\n#FKF #KenyaOnRecord",
+      "who": "Football Kenya Federation",
+      "where": "Nairobi",
+      "when": "27 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Football fans and players face uncertainty over federation decisions.",
+      "bg": "usiku",
+      "publish_at": "2026-11-27T16:00:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "avoid": [
+        "Employers face a Sh1 million fine for failing to provide breastfeeding rooms for working mothers.",
+        "The National Police Service updated December police recruitment rules for applicants across all counties.",
+        "Kenyan shoppers get new bank payment choices at merchant checkouts.",
+        "Harambee Starlets rebuilt their squad by dropping 12 WAFCON players for upcoming international matches.",
+        "Migori and 3K face off in a tight relegation battle in the National Super League."
+      ],
+      "version": 2,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "Daily Nation",
+          "title": "What next for Mariga after FKF expulsion?",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNlFtdS1SU0VFQzRKTUZUOVZSbXBERnJORHBIY2JjY19BSTRTbnlJV2Z4X0trTDFNS2JKZ2tmREJSWUxndHVNeUwxSGJTSm1EbkhwQnA1bVRUaTlHYUFlOHNwSGFBUk92bXNHbG4yaEFuU0w4MExISTVKZ3RvN2pLVnJwdmN2ZDZ5VndOZzdBRUl1U1ZvaFhONw?oc=5",
+          "published": "2026-11-27"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.0/10. The action beats a web address instead of a direct question, and the human score suffers from textbook phrasing and stacked hashtags."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 4,
+        "send": 5,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 3,
+        "craft": 4,
+        "picture": 4,
+        "hold": 4,
+        "demand": 3,
+        "action": 2,
+        "fair": 6,
+        "impact": 4,
+        "human": 3,
+        "avg": 4.0,
+        "note": "The action beats a web address instead of a direct question, and the human score suffers from textbook phrasing and stacked hashtags."
+      },
+      "drafted_at": "2026-11-27T12:47:41.470656+03:00",
+      "replaced_by": "2026-w48-hot-1127a-r4",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127a-r3-photo.jpg",
+      "photo_credit": "Photo: Lebu Ayiga / Wikimedia Commons, CC BY-SA 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Spectator_view_of_CHAN_match_between_Kenya_and_DRC.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Lebu Ayiga / Wikimedia Commons, CC BY-SA 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1925
+    },
+    {
+      "id": "2026-w48-hot-1127a-r4",
+      "template": "sauti",
+      "lane": "everyone",
+      "message": "Liverpool prepare to explore a Jamal Musiala deal next summer if he can prove fitness.",
+      "action": "Check the sports pages for transfer updates and share this with a Liverpool fan.",
+      "beats": [
+        "Liverpool are prepared to explore a Jamal *Musiala* deal next summer.",
+        "The club wants him to prove his fitness before any move.",
+        "Transfer talks hinge on his physical recovery over the season.",
+        "Tell us below: will Liverpool actually land *Musiala* next summer?"
+      ],
+      "photo_query": "football stadium floodlights Kenya",
+      "kicker": "Football Fans",
+      "line": "Liverpool prepare to explore a Jamal *Musiala* deal next summer if he proves fitness.",
+      "fact": "Liverpool are monitoring the player's fitness ahead of a potential transfer window approach.",
+      "source": "Sky Sports, 2026-11-27",
+      "caption": "Liverpool are lining up summer moves. Fitness is the main test for this deal. Send this to a Liverpool fan.\n\nTell us below: will Liverpool actually land Musiala next summer?\n\n#PremierLeague #KenyaOnRecord",
+      "who": "Liverpool FC",
+      "where": "National",
+      "when": "27 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Sports fans track international transfer moves and squad rebuilds.",
+      "bg": "usiku",
+      "publish_at": "2026-11-27T16:00:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "avoid": [
+        "Employers face a Sh1 million fine for failing to provide breastfeeding rooms for working mothers.",
+        "The National Police Service updated December police recruitment rules for applicants across all counties.",
+        "Kenyan shoppers get new bank payment choices at merchant checkouts.",
+        "Harambee Starlets rebuilt their squad by dropping 12 WAFCON players for upcoming international matches.",
+        "Migori and 3K face off in a tight relegation battle in the National Super League.",
+        "Macdonald Mariga faces a career test following an FKF expulsion ruling."
+      ],
+      "version": 3,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "Sky Sports",
+          "title": "Liverpool transfer news: Reds prepared to explore Jamal Musiala deal next summer if he can prove fitness - Paper Talk",
+          "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNNFFBRUZGOG11bkhxNlNRN0h4bHZSWjdMcEV6MFJTeE1KUTJ0SzlhXzhWMTZVLVVjbGhDNTVLVlRRc196WGJCMEpVVFhrdmhzTk1oajI1bVJkQi16RThWa2RVZEU1TXpjMlNoOVhaa0hrUHNkTWM2T08zRXVKN1AwOEVRTXAtWGRBd1hEM1lybzZSM1RwSGxyUndJWVQtZkhIa1VIUjNDa3k2ZzI2LUdta2FtNmhTYmxydGdCZWpZd3BwUTJtZmxJYzhWRlNCY21kNTY0VjdJZVVydTNFQUh2WFg3bDBOZEZ3dGJEU1NfNVE0cjd2T1E?oc=5",
+          "published": "2026-11-27"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.2/10. Musiala to Liverpool is speculative transfer gossip with no local Kenyan connection or urgent demand this week."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 6,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 5,
+        "voice": 7,
+        "craft": 7,
+        "picture": 6,
+        "hold": 6,
+        "demand": 5,
+        "action": 5,
+        "fair": 9,
+        "impact": 5,
+        "human": 4,
+        "avg": 6.2,
+        "note": "Musiala to Liverpool is speculative transfer gossip with no local Kenyan connection or urgent demand this week."
+      },
+      "drafted_at": "2026-11-27T12:49:30.646707+03:00",
+      "replaced_by": "2026-w48-hot-1127a-r5",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127a-r4-photo.jpg",
+      "photo_credit": "Photo: Republic of Kenya / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Example_of_a_blank_Kenyan_Deed_Title.png",
+      "shot_info": [
+        {
+          "credit": "Photo: Republic of Kenya / Wikimedia Commons, CC0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1926
+    },
+    {
+      "id": "2026-w48-hot-1127a-r5",
+      "template": "sauti",
+      "lane": "everyone",
+      "bg": "usiku",
+      "publish_at": "2026-11-27T16:00:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "version": 4,
+      "status": "planned",
+      "avoid": [
+        "Employers face a Sh1 million fine for failing to provide breastfeeding rooms for working mothers.",
+        "The National Police Service updated December police recruitment rules for applicants across all counties.",
+        "Kenyan shoppers get new bank payment choices at merchant checkouts.",
+        "Harambee Starlets rebuilt their squad by dropping 12 WAFCON players for upcoming international matches.",
+        "Migori and 3K face off in a tight relegation battle in the National Super League.",
+        "Macdonald Mariga faces a career test following an FKF expulsion ruling.",
+        "Liverpool prepare to explore a Jamal Musiala deal next summer if he can prove fitness."
+      ],
+      "fix": "failed a guard rule"
     }
   ],
   "scripts": {
-    "radio": "Habari za wiki na karibu kwenye Kenya on Record. Mimi ni mtangazaji wako. Leo tunazungumzia mabadiliko mapya kwenye maduka na sehemu za kulipia ambayo yanaleta unafuu kwa wanunuzi nchini.\n\nKama umewahi kusimama kwa kaunta ya duka na kugundua kuwa kadi yako ya benki haisomi na mfumo wa mfanyabiashara fulani, unajua hiyo stress. Lakini habari njema ni kwamba, wateja nchini sasa wanapokea uhuru zaidi wa kuchagua jinsi ya kulipia bidhaa moja kwa moja kwenye kaunta bila kufungiwa kwenye mtandao mmoja tu wa benki.\n\nSasa, mifumo mpya ya malipo inaruhusu benki na watoa huduma za kifedha kushirikiana vizuri zaidi. Hii inamaanisha ukiwa na kadi ya benki fulani au akaunti ya simu, utaweza kulipa kwa urahisi kwenye mashine au nambari ya malipo ya benki tofauti bila makato ya juu ya kupitiliza ama usumbufu wa kusema \"mtandao umekataa.\" \n\nHuu ni mpango unaosukuma uwazi na ushindani mzuri kwenye sekta ya fedha. Kama wanunuzi, tuna haki ya kudai huduma za kisasa zinazotuweka huru na kulinda pesa zetu. Hakikisha kila unapolipa, unachunguza ada na unalinda namba zako za siri dhidi ya ulaghai.\n\nAsante kwa kusikiliza. Tuonane wiki ijayo.\n\n[Kiswahili summary]: Wanunuzi nchini Kenya sasa wana uhuru mpya wa kuchagua na kutumia njia mbalimbali za benki na malipo kwenye maduka bila usumbufu wa mtandao, jambo linaloboresha ufanisi na kuleta ushindani mzuri sokoni.",
-    "voice_note": "Wadau, mambo vipi? Hapa ni Kenya on Record. Wiki hii tunaangazia habari njema kwa wale wote hupenda kufanya manunuzi. Sasa hivi, mambo yameiva kwenye kaunti za maduka kwa sababu wanunuzi wanapata njia mpya na rahisi za kulipa kupitia benki zao bila kubaguliwa na mfumo wa mtandao fulani. Hii inamaanisha unaweza kutumia kadi yako au akaunti yako kwa urahisi kwenye duka lolote linalotumia mifumo hii mipya iliyounganishwa. Ni hatua kubwa ya kuleta uhuru na kupunguza misuko suuko ya kulipia bidhaa. Endelea kufuatilia Kenya on Record ujue haki zako za kifedha.",
-    "sms": "Usiibiwe: Unapolipa dukani, hakikisha unatumia njia salama inayokupa uhuru wa kuchagua benki yako bila kulipishwa ada za siri. Linda PIN yako kila wakati!",
-    "reels": "[Visual: Mtangazaji akiwa amesimama mbele ya kaunta ya duka kubwa, akiongea kwa mtindo wa kistaarabu na wa kuvutia]\n\n[Audio/VO]: Umewahi kufika kaunta ya duka alafu unaambiwa \"kadi yako haisomi hapa\"? Hiyo stress imeanza kuwa historia! \n\nSasa hivi, Kenya on Record inatujuza kuwa wanunuzi wanapata uhuru mpya wa kulipia bidhaa zao kupitia benki tofauti moja kwa moja kwenye kaunta bila usumbufu. \n\nHuu ni uwazi tunaouhitaji sokoni. Usikubali kufungiwa kwenye mtandao mmoja. \n\nFuatilia Kenya on Record kujua haki zako za kifedha!"
+    "radio": "Sasa, habari za wiki hii kutoka kwetu Kenya on Record? Mimi ni wako, na leo tunapiga gumzo kuhusu mipango ya soka inayokwea hadi viwango vya kimataifa, lakini ikiwa na funzo kubwa kwetu hapa nyumbani.\n\nHabari kutoka Ulaya zinasema kwamba klabu kubwa ya Liverpool inajipanga kuchunguza uwezekano wa kumsajili kiungo mshambulizi Jamal Musiala msimu ujao wa joto. Lakini kuna sharti moja kuu: lazima athibitishe kuwa yuko fiti kimwili, bila kusumbuliwa na majeraha ya mara kwa mara.\n\nSasa wasikilizaji wangu, hii inatufunza nini hapa Kenya? Katika maisha na hata kwenye biashara zetu hapa mtaani, vipaji pekee havitoshi. Uwekezaji wa muda mrefu unahitaji msingi thabiti. Kama wewe ni mjasiriamali, mfanyakazi, au kijana anayetafuta fursa, afya yako na uthabiti wako ndio mtaji wako mkuu. Huwezi kufanya biashara kubwa au kushindana katika soko la kimataifa kama nguvu zako zinayumba kila mara.\n\nLiverpool wanasubiri Musiala awe fiti ndipo watoe pesa nyingi. Wewe je? Je, unajijenga kwa njia ambayo itakufanya uwe tayari wakati fursa kubwa itakapokupiga hodi mwakani? Jiulize hilo leo.\n\nKwa ufupi kwa wale waliotangulia kuungana nasi: Liverpool wanapanga kumnasa Jamal Musiala msimu ujao wa joto, lakini sharti kubwa ni lazima athibitishe yuko fiti kiafya na hana majeraha.",
+    "voice_note": "Sasa mabingwa? Hapa ni Kenya on Record na dondoo letu la leo. Habari kutoka huko Uingereza ni kwamba Liverpool wanajiandaa kusaka saini ya Jamal Musiala msimu ujao wa joto. Lakini kuna masharti magumu: kijana lazima athibitishe kuwa yuko fiti kabisa na hana majeraha ya mara kwa mara. Hii inatukumbusha sisi sote mjini na mashambani kwamba kipaji pekee hakitoshi; afya yako na uthabiti wako ndio mtaji wako mkuu kwenye biashara au kazi. Usiwe mtu wa kuanguka ovyo wakati fursa kubwa inagonga mlango. Jiwekee msingi thabiti sasa hivi kabla mwaka haujaisha. Piga tizi, kula vizuri, na ulinde mtaji wako wa mwili na akili!",
+    "sms": "Usiibiwe Tip: Kipaji ama biashara haiwezi kustawi bila msingi thabiti. Linda afya na mtaji wako leo ndipo uwe tayari wakati fursa kubwa itakapogonga mlango!",
+    "reels": "[0:00-0:05] Sauti kutoka Ulaya inasema Liverpool wanataka kumnasa Jamal Musiala msimu ujao.\n[0:05-0:15] Lakini kuna sharti moja: lazima athibitishe yuko fiti kimwili na hana majeraha ya mara kwa mara.\n[0:15-0:25] Hapa Kenya, somo liko wazi. Kipaji pekee hakitoshi kama afya au mtaji wako unayumba kila uchao.\n[0:25-0:30] Linda msingi wako leo ili uwe tayari wakati fursa yako kubwa itakapogonga mlango!"
   },
   "spend_usd": 0.0
 }
