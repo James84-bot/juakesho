@@ -4580,12 +4580,30 @@
       "id": "2026-w48-hot-1127a-r5",
       "template": "sauti",
       "lane": "everyone",
+      "kicker": "Sports News",
+      "line": "Harambee Starlets coach Oduor dropped *12 players* in a major squad overhaul.",
+      "fact": "Coach Oduor dropped 12 WAFCON players in a sweeping Starlets squad overhaul ahead of international matches.",
+      "message": "Harambee Starlets dropped 12 players in a major squad overhaul for upcoming international fixtures.",
+      "action": "Tag your friend who follows women's football in Kenya.",
+      "photo_query": "football stadium Kenya",
+      "source": "The Star, Kenya, 2026-11-27",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "The squad overhaul changes the lineup for Kenya's upcoming international football fixtures.",
+      "who": "Coach Oduor",
+      "where": "Nairobi",
+      "when": "27 Nov 2026",
+      "beats": [
+        "Harambee Starlets dropped *12 players* in a major squad overhaul.",
+        "Coach Oduor announced the changes ahead of international matches.",
+        "The new lineup aims to strengthen Kenya's team performance.",
+        "Tag your friend who follows women's football in Kenya?"
+      ],
+      "caption": "Harambee Starlets dropped 12 players in a major squad overhaul ahead of upcoming international matches.\n\nTag your friend who follows women's football in Kenya.\n\n#FKF #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-11-27T16:00:00+03:00",
       "hot": true,
       "beat": "sport",
-      "version": 4,
-      "status": "planned",
       "avoid": [
         "Employers face a Sh1 million fine for failing to provide breastfeeding rooms for working mothers.",
         "The National Police Service updated December police recruitment rules for applicants across all counties.",
@@ -4595,14 +4613,77 @@
         "Macdonald Mariga faces a career test following an FKF expulsion ruling.",
         "Liverpool prepare to explore a Jamal Musiala deal next summer if he can prove fitness."
       ],
-      "fix": "failed a guard rule"
+      "version": 4,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Oduor drops 12 Wafcon players in Starlets squad overhaul",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMXJSTGxVc2pkbzFaREw0YVRWNENxcnNSX3c5am5VVEFybWJGTkdMNlU5QXhPX1V5Nkk1RG1YX0Y1bGRIc09WSVpTN2dsQXZuUllGR19JMjFuUXl1UEhucUJMOWI0czQtZHVEOUNQOE5zWnFMdlhzcmdJYVZULVZnb1ZVYklkZEs0a2l0MlNlV1hpVkM5Y19IbXFTNXRMQmJqek9SUFlFTnBVcEo5MkN2dThn?oc=5",
+          "published": "2026-11-27"
+        },
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Oduor drops 12 Wafcon players in Starlets squad overhaul",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQck5LQURPY1YxSE1scm9IWGdJenhCc3N6VVBQRnhmaTlseTQ2T2dKc1BxcDAtcTM1NVRqNDdBWThIRm5XVmp4bUV1OVB1VnRUUXVLQ3lsR2pBTFNiSkE1aDE3NnpQdDFFazh0aHdfUDVwUGpwN2tGOEdvdUxmVDEyOUs0TU5SM0cxQ1RiN2NYaU1hTks5U2dQQmxPVWo4eXVtY1g4Yk8zMklSTGRmczVn?oc=5",
+          "published": "2026-11-27"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.2/10. Sport post demand is judged on whether fans are following it; this was an obsolete fixture link from RSS (Migori/3K survival scrap) mislabelled as Starlets."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 8,
+        "fresh": 6,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 6,
+        "demand": 4,
+        "action": 5,
+        "fair": 7,
+        "impact": 6,
+        "human": 6,
+        "avg": 6.2,
+        "note": "Sport post demand is judged on whether fans are following it; this was an obsolete fixture link from RSS (Migori/3K survival scrap) mislabelled as Starlets."
+      },
+      "drafted_at": "2026-11-27T13:15:20.180801+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127a-r5-photo.jpg",
+      "photo_credit": "Photo: The Star, Kenya · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "The Star, Kenya",
+      "photo_source": "https://www.the-star.co.ke/sports/football/2026-11-27-oduor-drops-12-wafcon-players-in-starlets-squad-overhaul",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127a-r5-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: The Star, Kenya",
+          "title": "Oduor drops 12 Wafcon players in Starlets squad overhaul"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "First Games at Talanta Stadium Complex Revealed"
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/videos/2026-w48-hot-1127a-r5-broll.mp4",
+      "broll_credit": "Footage: Boal / Pixabay",
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1929
     }
   ],
   "scripts": {
-    "radio": "Sasa, habari za wiki hii kutoka kwetu Kenya on Record? Mimi ni wako, na leo tunapiga gumzo kuhusu mipango ya soka inayokwea hadi viwango vya kimataifa, lakini ikiwa na funzo kubwa kwetu hapa nyumbani.\n\nHabari kutoka Ulaya zinasema kwamba klabu kubwa ya Liverpool inajipanga kuchunguza uwezekano wa kumsajili kiungo mshambulizi Jamal Musiala msimu ujao wa joto. Lakini kuna sharti moja kuu: lazima athibitishe kuwa yuko fiti kimwili, bila kusumbuliwa na majeraha ya mara kwa mara.\n\nSasa wasikilizaji wangu, hii inatufunza nini hapa Kenya? Katika maisha na hata kwenye biashara zetu hapa mtaani, vipaji pekee havitoshi. Uwekezaji wa muda mrefu unahitaji msingi thabiti. Kama wewe ni mjasiriamali, mfanyakazi, au kijana anayetafuta fursa, afya yako na uthabiti wako ndio mtaji wako mkuu. Huwezi kufanya biashara kubwa au kushindana katika soko la kimataifa kama nguvu zako zinayumba kila mara.\n\nLiverpool wanasubiri Musiala awe fiti ndipo watoe pesa nyingi. Wewe je? Je, unajijenga kwa njia ambayo itakufanya uwe tayari wakati fursa kubwa itakapokupiga hodi mwakani? Jiulize hilo leo.\n\nKwa ufupi kwa wale waliotangulia kuungana nasi: Liverpool wanapanga kumnasa Jamal Musiala msimu ujao wa joto, lakini sharti kubwa ni lazima athibitishe yuko fiti kiafya na hana majeraha.",
-    "voice_note": "Sasa mabingwa? Hapa ni Kenya on Record na dondoo letu la leo. Habari kutoka huko Uingereza ni kwamba Liverpool wanajiandaa kusaka saini ya Jamal Musiala msimu ujao wa joto. Lakini kuna masharti magumu: kijana lazima athibitishe kuwa yuko fiti kabisa na hana majeraha ya mara kwa mara. Hii inatukumbusha sisi sote mjini na mashambani kwamba kipaji pekee hakitoshi; afya yako na uthabiti wako ndio mtaji wako mkuu kwenye biashara au kazi. Usiwe mtu wa kuanguka ovyo wakati fursa kubwa inagonga mlango. Jiwekee msingi thabiti sasa hivi kabla mwaka haujaisha. Piga tizi, kula vizuri, na ulinde mtaji wako wa mwili na akili!",
-    "sms": "Usiibiwe Tip: Kipaji ama biashara haiwezi kustawi bila msingi thabiti. Linda afya na mtaji wako leo ndipo uwe tayari wakati fursa kubwa itakapogonga mlango!",
-    "reels": "[0:00-0:05] Sauti kutoka Ulaya inasema Liverpool wanataka kumnasa Jamal Musiala msimu ujao.\n[0:05-0:15] Lakini kuna sharti moja: lazima athibitishe yuko fiti kimwili na hana majeraha ya mara kwa mara.\n[0:15-0:25] Hapa Kenya, somo liko wazi. Kipaji pekee hakitoshi kama afya au mtaji wako unayumba kila uchao.\n[0:25-0:30] Linda msingi wako leo ili uwe tayari wakati fursa yako kubwa itakapogonga mlango!"
+    "radio": "Jambo na karibu kwa Kenya on Record. Today, we are looking at the story of Joseph Lopaga—a young man who proved that talent and pure resilience can pull anyone from the harsh realities of street life straight to the pinnacle of Kenyan sports.\n\nLopaga’s rise isn't just a feel-good story; it’s a direct challenge to all of us and to the authorities. His journey reminds us that talent is scattered equally across every corner of Kenya—from the estates to the cold pavements of our town centers. But opportunity? Opportunity is where the gap lies. \n\nHow many potential Joseph Lopagas are we losing every single day to crime, substance abuse, or sheer hopelessness because local sports facilities are neglected, sold off, or underfunded? We celebrate the few who beat the impossible odds through raw grit, but resilience shouldn't be the minimum requirement for a youth to succeed in this country. Our county governments allocate millions every financial year to youth empowerment, sports tournaments, and community halls. Where does that money actually go?\n\nIf we want to build a nation of champions, we must start holding our local leaders accountable for youth budgets and social spaces. \n\nKwa machache: Hadithi ya Joseph Lopaga inatuonyesha kuwa uwezo na talent zipo mitaani, lakini fursa ndizo chache. Ni lazima tuwajibishe viongozi wetu ili fedha za vijana zitumike kujenga viwanja na kuendeleza vipaji, badala ya kuacha vijana wetu kuteseka mtaani. Champion anatoka popote, lakini anahitaji msaada wetu.",
+    "voice_note": "Habari za leo fam. On Kenya on Record, we’re spotlighting Joseph Lopaga, who fought his way from street life all the way to the top of Kenyan sports. It’s an incredible story of resilience, but let’s be real for a minute—success shouldn't require surviving extreme poverty first. How many talented kids in your hood are giving up today simply because the local pitch was grabbed or the ward youth fund vanished? Lopaga beat the odds, but we need systems that actually support talent, not just celebrate the survivors. Take a second today to ask your local rep what’s happening with your area's sports grounds. Let's protect our youth.",
+    "sms": "Usiibiwe Tip: Talent is everywhere, but youth funds get stolen. Track your ward's sports budget today. Demand working community grounds for our youth.",
+    "reels": "From the harsh reality of street life to the top tier of Kenyan sports. Joseph Lopaga’s story isn't just about victory—it’s a wake-up call. Talent is everywhere in Kenya, but opportunity is withheld. How many champions are we losing because youth funds disappear? Demand accountability for our youth. This is Kenya on Record."
   },
   "spend_usd": 0.0
 }

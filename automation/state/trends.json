@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-27T09:32:09.755846+00:00",
+  "fetched": "2026-11-27T10:07:26.651445+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,14 +7,14 @@
       "traffic": "5000+",
       "news": [
         {
-          "title": "Safaricom explains what to do to stop unwanted Free Survey messages",
-          "url": "https://peopledaily.digital/business/safaricom-explains-what-to-do-to-stop-unwanted-free-survey-messages",
+          "title": "Safaricom explains how to withdraw M-PESA cash from an ATM",
+          "url": "https://peopledaily.digital/news/safaricom-explains-how-to-withdraw-m-pesa-cash-from-an-atm",
           "source": "People Daily"
         },
         {
-          "title": "Safaricom reveals how customers can stop unwanted voicemail promotional messages",
-          "url": "https://peopledaily.digital/business/safaricom-reveals-how-customers-can-stop-unwanted-voicemail-promotional-messages",
-          "source": "People Daily"
+          "title": "Safaricom explains how customers can withdraw M-PESA money through ATMs",
+          "url": "https://biznakenya.com/safaricom-on-withdrawing-m-pesa-money-through-atms/",
+          "source": "Bizna Kenya"
         },
         {
           "title": "Vodafone reveals Sh430bn gain from Safaricom deal",
@@ -26,7 +26,7 @@
     {
       "geo": "KE",
       "title": "sunderland a.f.c. vs jagiellonia białystok standings",
-      "traffic": "1000+",
+      "traffic": "2000+",
       "news": [
         {
           "title": "Sunderland vs Jagiellonia Bialystok: UEFA Europa League stats & head-to-head",
@@ -39,9 +39,9 @@
           "source": "The Guardian"
         },
         {
-          "title": "Sunderland 1-1 Jagiellonia Bialystok: Black Cats maintain Europa League play-off push with draw",
-          "url": "https://www.skysports.com/football/news/13616711/sunderland-1-1-jagiellonia-bialystok-black-cats-maintain-europa-league-play-off-push-with-draw",
-          "source": "Sky Sports"
+          "title": "Andy’s Player Ratings: Sunderland 1-1 Jagiellonia Białystok - Points Shared In Dour Performance",
+          "url": "https://rokerreport.sbnation.com/report-amp-player-ratings/160547/andys-player-ratings-sunderland-1-1-jagiellonia-bialystok-points-shared-in-dour-performance",
+          "source": "Roker Report"
         }
       ]
     },
@@ -183,7 +183,7 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "En direct Rhône. Info trafic : la circulation se complique à l'est et au sud de Lyon",
+          "title": "Rhône. Info trafic : la circulation des TER pertrubée autour de Lyon",
           "url": "https://www.leprogres.fr/transport/2026/11/27/info-trafic-vos-conditions-de-circulation-ce-vendredi-27-novembre-dans-l-agglomeration-lyonnaise",
           "source": "Le Progrès"
         },
@@ -193,9 +193,9 @@
           "source": "Radio SCOOP"
         },
         {
-          "title": "Mobilisation du 17 novembre : TER perturbés autour de Lyon, 7 000 manifestants à Bellecour",
-          "url": "https://www.tl7.fr/actualites-loire/rhone/rhone_38/mobilisation-du-17-novembre-ter-perturbes-autour-de-lyon-7-000-manifestants-a-bellecour_15502.html",
-          "source": "TL7, Télévision loire 7"
+          "title": "Lyon : le métro D perturbé, la circulation reprend progressivement",
+          "url": "https://www.lyoncapitale.fr/actualite/lyon-le-metro-d-perturbe-la-reprise-de-la-circulation-estimee-a-13-heures-2",
+          "source": "Lyon Capitale"
         }
       ]
     }
