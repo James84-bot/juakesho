@@ -4644,7 +4644,7 @@
           "published": "2026-11-27"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 6.2/10. Sport post demand is judged on whether fans are following it; this was an obsolete fixture link from RSS (Migori/3K survival scrap) mislabelled as Starlets."
@@ -4694,7 +4694,14 @@
       "tg_msg": 1929,
       "photo_checked": "2026-11-27T13:22:25.579976+03:00",
       "photo_fit": "2026-11-27T13:22:25.579990+03:00",
-      "decided_at": "2026-11-27T13:33:10.715848+03:00"
+      "decided_at": "2026-11-27T13:33:10.715848+03:00",
+      "published_at": "2026-11-27T16:04:50.049132+03:00",
+      "ig_id": "18135192449498788",
+      "fb_id": "1626211801972101",
+      "story_id": "17895870930686104",
+      "fb_story_id": "1190454203506614",
+      "yt_id": "AldRtH6Op4s",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
