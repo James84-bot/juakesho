@@ -1,10 +1,32 @@
 {
-  "fetched": "2026-11-27T03:39:12.477920+00:00",
+  "fetched": "2026-11-27T05:41:35.423654+00:00",
   "safe": [
     {
       "geo": "KE",
+      "title": "safaricom",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Safaricom explains what to do to stop unwanted Free Survey messages",
+          "url": "https://peopledaily.digital/business/safaricom-explains-what-to-do-to-stop-unwanted-free-survey-messages",
+          "source": "People Daily"
+        },
+        {
+          "title": "Safaricom reveals how customers can stop unwanted voicemail promotional messages",
+          "url": "https://peopledaily.digital/business/safaricom-reveals-how-customers-can-stop-unwanted-voicemail-promotional-messages",
+          "source": "People Daily"
+        },
+        {
+          "title": "Vodafone reveals Sh430bn gain from Safaricom deal",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/vodafone-reveals-sh430bn-gain-from-safaricom-deal-5682944",
+          "source": "Business Daily"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "sunderland a.f.c. vs jagiellonia białystok standings",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Sunderland vs Jagiellonia Bialystok: UEFA Europa League stats & head-to-head",
@@ -12,9 +34,9 @@
           "source": "BBC"
         },
         {
-          "title": "Sunderland 1-1 Jagiellonia Bialystok: Black Cats maintain Europa League play-off push with draw",
-          "url": "https://www.skysports.com/football/news/13616711/sunderland-1-1-jagiellonia-bialystok-black-cats-maintain-europa-league-play-off-push-with-draw",
-          "source": "Sky Sports"
+          "title": "Sunderland fans ‘terrified’ as banned Polish supporters throw punches",
+          "url": "https://www.thetimes.com/sport/football/article/sunderland-fans-terrified-as-banned-polish-supporters-throw-punches-g96dqqsw7",
+          "source": "The Times"
         },
         {
           "title": "Reinildo error extends Sunderland woe as Jagiellonia grab Europa League draw",
@@ -25,30 +47,8 @@
     },
     {
       "geo": "KE",
-      "title": "safaricom",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Safaricom responds to customer seeking matatu conductor’s number to recover lost luggage",
-          "url": "https://peopledaily.digital/news/safaricom-responds-to-customer-seeking-matatu-conductors-number-to-recover-lost-luggage",
-          "source": "People Daily"
-        },
-        {
-          "title": "Vodafone reveals Sh430bn gain from Safaricom deal",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/vodafone-reveals-sh430bn-gain-from-safaricom-deal-5682944",
-          "source": "Business Daily"
-        },
-        {
-          "title": "R1.15 billion in limbo for Vodacom",
-          "url": "https://businesstech.co.za/news/telecommunications/885111/r1-15-billion-in-limbo-for-vodacom/",
-          "source": "BusinessTech"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "juventus vs omonoia",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Juventus vs Omonia Nicosia: UEFA Europa League stats & head-to-head",
@@ -73,14 +73,14 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Thanksgiving tripleheader: What We Learned from Bears-Lions, Eagles-Cowboys, Chiefs-Bills",
-          "url": "https://www.nfl.com/news/thanksgiving-tripleheader-what-we-learned-from-bears-lions-eagles-cowboys-chiefs-bills",
-          "source": "NFL.com"
+          "title": "Lions to 'move forward' after latest Thanksgiving heartbreak",
+          "url": "https://www.espn.com/nfl/story/_/id/50607165/lions-move-forward-latest-thanksgiving-heartbreak",
+          "source": "ESPN"
         },
         {
-          "title": "QB Caleb Williams, WR Rome Odunze's chemistry helps Bears stun Lions",
-          "url": "https://www.espn.com/nfl/story/_/id/50608495/qb-caleb-williams-wr-rome-odunze-chemistry-helps-bears-stun-lions",
-          "source": "ESPN"
+          "title": "Caleb Williams' TD pass with 3 seconds left gives Bears win over Lions",
+          "url": "https://sports.yahoo.com/nfl/articles/caleb-williams-td-pass-3-051256006.html",
+          "source": "Yahoo Sports"
         },
         {
           "title": "Caleb Williams' heroics have Bears thinking No. 1 seed in NFC playoffs",
@@ -135,23 +135,23 @@
     },
     {
       "geo": "KE",
-      "title": "benfica",
-      "traffic": "200+",
+      "title": "virgil van dijk",
+      "traffic": "100+",
       "news": [
         {
-          "title": "Análise de Marco Silva ao Viktoria Plzen-Benfica",
-          "url": "https://www.abola.pt/video/analise-de-marco-silva-ao-viktoria-plzen-benfica-2026112622505836151",
-          "source": "A Bola"
+          "title": "Virgil van Dijk houdt de lippen stijf op elkaar over transfergeruchten rond goede vriend Kevin De Bruyne: \"Heeft hij dat gezegd?\"",
+          "url": "https://sporza.be/nl/2026/11/26/virgil-van-dijk-houdt-de-lippen-stijf-op-elkaar-over-transfergeruchten-rond-goede-vriend-kevin-de-bruyne-heeft-hij-dat-gezegd~1795681718480/",
+          "source": "Sporza"
         },
         {
-          "title": "Rui Costa: «Não há desculpas, que sirva de exemplo para todos»",
-          "url": "https://sapo.pt/artigo/rui-costa-nao-ha-desculpas-que-sirva-de-exemplo-para-todos-6b089c73ed7962199d3a4229",
-          "source": "SAPO"
+          "title": "In Amsterdam klinkt het: 'Ik denk dat hij naar PSV gaat'",
+          "url": "https://www.psvinside.nl/nieuws/in-amsterdam-klinkt-ik-denk-dat-de-bruyne-naar-psv-gaat",
+          "source": "PSV Inside"
         },
         {
-          "title": "Tomás Araújo: \"Levámos um banho de humildade\"",
-          "url": "https://www.jn.pt/desporto/artigo/tomas-araujo-levamos-um-banho-de-humildade/18152719",
-          "source": "Jornal de Notícias"
+          "title": "Waarom is de eredivisie zo interessant voor sterren als De Bruyne?",
+          "url": "https://nos.nl/artikel/2640819-waarom-is-de-eredivisie-zo-interessant-voor-sterren-als-de-bruyne",
+          "source": "NOS"
         }
       ]
     },
@@ -161,19 +161,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Le Guide Michelin 2027, un «spectacle» en direct sur France Télévisions",
-          "url": "https://www.lefigaro.fr/gastronomie/les-etoiles-du-guide-michelin-2027-presentees-depuis-lyon-20261126",
-          "source": "Le Figaro"
+          "title": "CARTE. Marché de Noël à Lyon : les artisans lyonnais sont à l'honneur cette année",
+          "url": "https://france3-regions.franceinfo.fr/auvergne-rhone-alpes/rhone/lyon/carte-marche-de-noel-a-lyon-les-artisans-lyonnais-sont-a-l-honneur-cette-annee-3456668.html",
+          "source": "France 3 Régions"
         },
         {
-          "title": "« Une très bonne nouvelle pour Lyon, pour les affaires »",
-          "url": "https://www.ledauphine.com/actualite/2026/11/27/une-tres-bonne-nouvelle-pour-lyon-pour-les-affaires",
-          "source": "Le Dauphiné Libéré"
+          "title": "Ce week-end à Lyon, nos coups de cœur (27 au 29 novembre)",
+          "url": "https://girlstakelyon.com/agenda-week-end-evenements-27-au-29-novembre/",
+          "source": "Girls Take Lyon"
         },
         {
-          "title": "Une création originale pour une cérémonie entièrement repensée, diffusée en première partie de soirée sur France 3",
-          "url": "https://www.michelin.com/publications/produits-et-services/le-guide-michelin-selection-france-monaco-2027",
-          "source": "Groupe Michelin"
+          "title": "Lyon. Premier marché de Noël du collectif La Funky Fabrik : rendez-vous à La Commune ce week-end",
+          "url": "https://www.leprogres.fr/economie/2026/11/26/premier-marche-de-noel-du-collectif-la-funky-fabrik-rendez-vous-a-la-commune-ce-week-end",
+          "source": "Le Progrès"
         }
       ]
     },
@@ -183,18 +183,18 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "\"Ce public mérite une grande équipe\", lancent les supporters après la victoire de l’OM face à Sofia",
-          "url": "https://actu.orange.fr/videos/actu-locale/ce-public-merite-une-grande-equipe-lancent-les-supporters-apres-la-victoire-de-l-om-face-a-sofia-CNT000002u4nkS.html",
-          "source": "Orange Actualités"
-        },
-        {
-          "title": "Olympique de Marseille vs Toulouse FC : résumé et analyse du match",
-          "url": "https://metro-sports.fr/marseille-vs-toulouse/",
-          "source": "Métro-Sports"
-        },
-        {
           "title": "Lens : Florian Thauvin renvoyé à Marseille",
           "url": "https://www.sport.fr/football/lens-florian-thauvin-renvoye-a-marseille-1503893.shtm",
+          "source": "Sport.fr"
+        },
+        {
+          "title": "Lens : Florian Thauvin en route vers un de ses anciens clubs en juin ?",
+          "url": "https://www.les-transferts.com/rumeurs-transferts/lens-florian-thauvin-en-route-vers-un-de-ses-anciens-clubs-en-juin/",
+          "source": "Les Transferts"
+        },
+        {
+          "title": "Lens : Florian Thauvin envoyé à l’OM",
+          "url": "https://www.sport.fr/football/lens-florian-thauvin-envoye-a-lom-1503893.shtm",
           "source": "Sport.fr"
         }
       ]
@@ -202,8 +202,8 @@
   ],
   "dropped": [
     {
-      "title": "union saint gilloise",
-      "why": "unsafe: 'Betting'"
+      "title": "nz vs ind",
+      "why": "unsafe: 'Attack'"
     }
   ],
   "errors": {}
