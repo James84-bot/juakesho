@@ -351,7 +351,7 @@
         "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPXzJlVHJIS3BMYUhFQmhCdWpkNkZuSUVyeHZtc0dWRWVjbzY3cDY5RzBNNjN4RGRkOEJDNGZXUjJTSTJYMjNaUHhramtranRYeXBaMTNFdGpWV25VUUpVaVpGU1puY3lnSlpIcGVYU1V5NHQ5cE1paTlLRVNYVnRxbnBMSFRPMXRqN0NPZFNiU2hkckM5MTZqVVIwWTdNaWctbklOam9qc2Z1SC12Y1VSdFNBYjdBdTFxbmtpaXln?oc=5",
         "published": "2026-11-27"
       },
-      "status": "awaiting",
+      "status": "dropped",
       "guard": {
         "errors": [
           "weak: editor scored 4.0/10. Evergreen myth posts must be scored on whether the specific fake image is circulating right now in Kenya, and this one lacks a current trending hook or local relevance."
@@ -404,7 +404,8 @@
       "reel": true,
       "tg_msg": 1954,
       "photo_checked": "2026-11-27T19:08:44.993205+03:00",
-      "photo_fit": "2026-11-27T19:08:44.993217+03:00"
+      "photo_fit": "2026-11-27T19:08:44.993217+03:00",
+      "closed_why": "every version failed a check (failed a guard rule)"
     },
     {
       "id": "2026-w48-d6-kenya-r3",
