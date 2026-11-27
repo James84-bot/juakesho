@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-27T15:35:33.057487+00:00",
+  "fetched": "2026-11-27T15:57:24.279427+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -69,6 +69,28 @@
     },
     {
       "geo": "KE",
+      "title": "brest vs paris fc",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Paris FC : Une attaque de feu pour rêver plus grand ?",
+          "url": "https://www.onzemondial.com/ligue-1/paris-fc-une-attaque-de-feu-pour-rever-plus-grand-1011705",
+          "source": "Onze Mondial"
+        },
+        {
+          "title": "Stade Brestois. 45 minutes, leadership, défaite contre Toulouse : on a assisté à la reprise de Brendan Chardonnet avec les Espoirs",
+          "url": "https://www.ouest-france.fr/sport/football/stade-brestois/stade-brestois-45-minutes-leadership-defaite-contre-toulouse-on-a-assiste-a-la-reprise-de-brendan-chardonnet-avec-les-espoirs-383b1614-ea6b-11f1-9369-66ef1b7e4135",
+          "source": "Ouest-France"
+        },
+        {
+          "title": "Rosenior et les mots d’Éric Roy après une soirée noire du Racing à Brest",
+          "url": "https://www.alsasports.fr/football/rc-strasbourg/rosenior-et-les-mots-deric-roy-apres-une-soiree-noire-du-racing-a-brest/88417/",
+          "source": "Alsa'Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "luis enrique",
       "traffic": "200+",
       "news": [
@@ -113,52 +135,8 @@
     },
     {
       "geo": "KE",
-      "title": "paul pogba",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Paul Pogba: Man United should look at blueprint Arsenal set",
-          "url": "https://talksport.com/football/4734396/paul-pogba-man-utd-arsenal-blueprint/",
-          "source": "talkSPORT"
-        },
-        {
-          "title": "Paul Pogba urges Man Utd to copy Arsenal blueprint and stop living in the past after Mauricio Pochettino's nightmare start",
-          "url": "https://www.goal.com/en-ke/news/paul-pogba-manchester-united-arsenal-mauricio-pochettino/blt1559fbd080808682",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Paul Pogba makes Arsenal claim in message to Man Utd and Mauricio Pochettino",
-          "url": "https://metro.co.uk/2026/11/26/paul-pogba-makes-arsenal-claim-message-man-utd-mauricio-pochettino-29823629/",
-          "source": "Metro.co.uk"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "brest vs paris fc",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Paris FC : Une attaque de feu pour rêver plus grand ?",
-          "url": "https://www.onzemondial.com/ligue-1/paris-fc-une-attaque-de-feu-pour-rever-plus-grand-1011705",
-          "source": "Onze Mondial"
-        },
-        {
-          "title": "Stade Brestois. 45 minutes, leadership, défaite contre Toulouse : on a assisté à la reprise de Brendan Chardonnet avec les Espoirs",
-          "url": "https://www.ouest-france.fr/sport/football/stade-brestois/stade-brestois-45-minutes-leadership-defaite-contre-toulouse-on-a-assiste-a-la-reprise-de-brendan-chardonnet-avec-les-espoirs-383b1614-ea6b-11f1-9369-66ef1b7e4135",
-          "source": "Ouest-France"
-        },
-        {
-          "title": "Rosenior et les mots d’Éric Roy après une soirée noire du Racing à Brest",
-          "url": "https://www.alsasports.fr/football/rc-strasbourg/rosenior-et-les-mots-deric-roy-apres-une-soiree-noire-du-racing-a-brest/88417/",
-          "source": "Alsa'Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "rwanda",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Kenyan Appointed to Historic World Bank Position",
@@ -182,6 +160,10 @@
     {
       "title": "chelsea vs nottingham forest",
       "why": "unsafe: 'Bet'"
+    },
+    {
+      "title": "brest vs paris fc prediction",
+      "why": "unsafe: 'Odds'"
     },
     {
       "title": "norse atlantic airways",

@@ -4803,13 +4803,123 @@
       "decided_at": "2026-11-27T16:39:40.326902+03:00",
       "photo_checked": "2026-11-27T16:53:40.560972+03:00",
       "photo_fit": "2026-11-27T16:53:40.560983+03:00"
+    },
+    {
+      "id": "2026-w48-hot-1127b1857",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football",
+      "line": "Arsenal head coach *Slegers* leaves the club by mutual consent.",
+      "fact": "Renée Slegers departed her role as Arsenal head coach following a mutual agreement with the club management.",
+      "source": "BBC, Sky Sports, The Guardian",
+      "photo_query": "football stadium London",
+      "message": "Arsenal head coach Slegers leaves her role by mutual consent.",
+      "action": "Check BBC Sport for updates on Arsenal's next manager",
+      "beats": [
+        "Arsenal head coach Slegers leaves by mutual consent today.",
+        "Director (Arsenal.com): “It was an extremely difficult decision to part ways with Renée”",
+        "The club is now searching for a replacement manager.",
+        "Tell us below: who should Arsenal hire next?"
+      ],
+      "caption": "Arsenal head coach Slegers leaves by mutual consent. What next for the Gunners? Tell us below: who should Arsenal hire next?\n\n#Arsenal #KenyaOnRecord",
+      "who": "Arsenal FC",
+      "where": "London",
+      "when": "27 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Football fans and club followers see a major change in leadership.",
+      "bg": "usiku",
+      "publish_at": "2026-11-27T19:17:00+03:00",
+      "hot": true,
+      "avoid": [
+        "Employers face a Sh1 million fine for failing to provide breastfeeding rooms for working mothers.",
+        "The National Police Service updated December police recruitment rules for applicants across all counties.",
+        "Kenyan shoppers get new bank payment choices at merchant checkouts.",
+        "Harambee Starlets rebuilt their squad by dropping 12 WAFCON players for upcoming international matches."
+      ],
+      "breaking": {
+        "title": "Arsenal head coach Slegers leaves by mutual consent",
+        "outlets": [
+          "BBC",
+          "Sky Sports",
+          "The Guardian"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "The Guardian",
+          "title": "Renée Slegers leaves job as Arsenal Women’s coach after dismal run of results",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQa0Y4VkRyYmoyNmF1U0hNYWM4aURDcndLLTBnQkFNQVF3MHBaRV85TkI0cnUzUThYU0xGOFJLUnhEVXV1MXJ4QWpxdHBaVjdDeXVNSEVveXBiYXBFUHREczVGQmlPSFZNbV91aHF0aV9UdTVMNXdaOTRUdnM0VG9HdHU0S24wU2toSUhMTDExUzdZZ2pfNDNBbk1n?oc=5",
+          "published": "2026-11-27"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Renee Slegers leaves Arsenal only 18 months after winning Champions League following poor start to WSL season",
+          "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPd0FETVB1ZXM1bXFLUXVBWjBkSDByV0lvRUtPS3V0Q1RnOGlYb0YtbHFGcG5uMmFjWUkxWE5tMGRHWmZZbHlhMXpsbkdBY0pPNnlKV3dkZzZCd3lMbHctV2ZYa2FUTkhueUl2MjF4MHNfZnE3NWVZdm4yM0J5OENEQjNIVlFZOXJId2pLN213b3JGN2FzdVNkUW1TMkVFd3FIdDcxdTFENXA2WkJRSGhWc3Q5cDhsbS1FbXVXR0NYVDJxby1OWnR4aGExdFE0b285cm9HWS1uVE05bGplRDFDemNudVJMVXVQRUs1QTRHbmhjU3M?oc=5",
+          "published": "2026-11-27"
+        },
+        {
+          "outlet": "BBC",
+          "title": "Arsenal head coach Slegers leaves by mutual consent",
+          "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5SNWcxOThwUTY2VUpxRVJxY3JLYTlBbXNtbW1sNHBiNjEzclhQYS0xa3gtQTRkZEdjcFhtU2FybnVvaVNkbjlzZXdSVDdia2ZWZUx2U1FaVG1jTUhLQU5yc0lLR2JrY2NM?oc=5",
+          "published": "2026-11-27"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "It was an extremely difficult decision to part ways with Renée, who has led the team with dedication and commitment throughout her time here",
+          "speaker": "Director",
+          "context": "“It was an extremely difficult decision to part ways with Renée, who has led the team with dedication and commitment throughout her time here,” said Director of Women’s Football Clare Wheatley.",
+          "outlet": "Arsenal.com",
+          "link": "https://www.arsenal.com/news/renee-slegers-departs-as-arsenal-women-head-coach-a8p4A1D08eah"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 3.5/10. This is a sport news post about an English football club, but it has no demand among Kenyan football fans because Renée Slegers and Arsenal Women are not what Kenyans who follow European football are talking about."
+        ],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 3,
+        "send": 3,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 3,
+        "craft": 4,
+        "picture": 4,
+        "hold": 4,
+        "demand": 2,
+        "action": 3,
+        "fair": 5,
+        "impact": 3,
+        "human": 3,
+        "avg": 3.5,
+        "note": "This is a sport news post about an English football club, but it has no demand among Kenyan football fans because Renée Slegers and Arsenal Women are not what Kenyans who follow European football are talking about."
+      },
+      "drafted_at": "2026-11-27T19:00:26.649595+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1127b1857-photo.jpg",
+      "photo_credit": "Photo: Arsenal.com",
+      "photo_kind": "posted",
+      "photo_outlet": "Arsenal.com",
+      "photo_source": "https://www.arsenal.com/news/renee-slegers-departs-as-arsenal-women-head-coach-a8p4A1D08eah",
+      "shot_info": [
+        {
+          "credit": "Photo: Arsenal.com",
+          "title": "Renée Slegers departs as Arsenal Women head coach"
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1957
     }
   ],
   "scripts": {
-    "radio": "Welcome back to Kenya on Record, your trusted voice for truth and civic accountability. I’m your host, bringing you facts you can rely on.\n\nThis week, a photograph has been circulating heavily across social media, purporting to show President William Ruto sharing a relaxed moment on a golf course with Russian President Vladimir Putin. The image has sparked endless debate online, with many drawing wild conclusions about Kenya's foreign policy.\n\nHere is the plain truth: that photo is false and digitally edited. Our fact-checking team analyzed the image and found clear evidence of manipulation. The original pictures of both leaders were taken from entirely different events years apart and stitched together using editing software.\n\nIn our digital age, doctored photos and deepfakes are increasingly used to manipulate public perception, create political propaganda, and farm online engagement. As citizens, we must remain vigilant. When you see a dramatic image, especially involving public officials or major geopolitical figures, take a moment to pause. Check mainstream news outlets or perform a quick image search before taking it as fact.\n\nNa kwa ufupi: Picha inayosambazwa kwenye mitandao ikimwonyesha Rais William Ruto akicheza golf na Rais wa Urusi Vladimir Putin ni ya uongo na imefanyiwa editing. Tusiwe wepesi wa kusambaza picha au habari kabla ya kuhakikisha ukweli. Pata ukweli, linda amani.\n\nUntil next time, stay sharp and keep Kenya on Record.",
-    "voice_note": "Habari yenu watu wangu. There’s a photo circulating heavily on WhatsApp and social media showing President William Ruto on a golf course alongside Russian President Vladimir Putin. We checked it out at Kenya on Record, and we want to set the record straight: that picture is completely fake and digitally edited.\n\nSomeone took separate photos of the two leaders and edited them together to create a false story. With photo editing tools getting easier to use every day, cheap misinformation like this is everywhere. Before you forward such photos to your family or community groups, take a second to verify. Usikubali kudanganywa na story za uongo. Stay alert, and let’s keep our group chats truthful.",
-    "sms": "Usiibiwe: That viral photo of President Ruto playing golf with Vladimir Putin is fake and digitally edited. Verify images before sharing.",
-    "reels": "Have you seen that viral photo of President William Ruto playing golf with Russian President Vladimir Putin? Don't fall for it. Fact-checkers at Kenya on Record verified the image—it is completely fake and digitally edited. In this era of doctored images, always double-check photos before hitting share. Don't let misinformers manipulate your feed. Stay alert."
+    "radio": "Habari za wiki, mabibi na mabwana, na karibu kwenye Kenya on Record. Mimi ni mtangazaji wako, na leo tunatazama habari kutoka ulimwengu wa soka ambazo zimewashangaza wengi.\n\nKocha mkuu wa kikosi cha wanawake cha Arsenal, Renée Slegers, ameondoka kwenye wadhifa wake kwa njia ya makubaliano ya pamoja. Habari hizi zimetangazwa wiki hii, na zimeacha mashabiki wengi wakijiuliza mustakabali wa timu hiyo utakuwaje.\n\nKatika ulimwengu wa michezo, mabadiliko haya yanatukumbusha umuhimu wa uwazi na uwajibikaji, iwe ni katika soka ya kimataifa au hapa kwetu nyumbani. Uongozi bora unahitaji mipango dhabiti na kuheshimu mikataba, ili kutoacha mashabiki na wadau gizani. Sisi hapa Kenya on Record tunaendelea kufuatilia jinsi klabu hii itakavyosonga mbele.\n\nTukumbuke kwamba uwazi ndio msingi wa mafanikio yote, kuanzia viwanja vya mpira hadi katika usimamizi wa rasilimali zetu za umma. Endelea kufuatilia ukurasa wetu kwa taarifa zaidi.\n\n[Kiswahili Summary]\nKocha mkuu wa Arsenal, Renée Slegers, amejiuzulu au kuondoka kupitia makubaliano ya pamoja, jambo lililoacha maswali mengi miongoni mwa mashabiki kuhusu mwelekeo wa timu hiyo.",
+    "voice_note": "Wadau, habari zenu. Hapa ni Kenya on Record tukiwaletea mambo yale ya moto kutoka ulimwengu wa soka wiki hii. Kocha mkuu wa kikosi cha wanawake cha Arsenal, Renée Slegers, ameondoka kwenye ukurasa wake rasmi wa ukocha kwa njia ya makubaliano ya pamoja. Hii inatukumbusha jinsi mabadiliko ya ghafla yanavyoweza kutokea popote pale panapokosekana maelewano thabiti. Endelea kukaa nasi hapa ili usipitwe na chochote. Usiibiwe, kuwa mjanja!",
+    "sms": "Usiibiwe Tip: Kwenye uongozi au biashara, uwazi na mikataba iliyo wazi huzuia migogoro ya ghafla. Daima fuatilia misingi ya utawala bora!",
+    "reels": "Hali imetangazwa rasmi wiki hii: Kocha mkuu wa Arsenal, Renée Slegers, ameachia ngazi kupitia makubaliano ya pamoja. Katika ulimwengu wa soka na uongozi, mabadiliko haya yanatufunza kuwa uwazi na mipango dhabiti ndio nguzo kuu ya mafanikio. Fuatilia Kenya on Record ujue zaidi!"
   },
   "spend_usd": 0.0
 }
