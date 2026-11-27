@@ -4549,7 +4549,7 @@
         }
       ],
       "quotes": [],
-      "status": "awaiting",
+      "status": "rejected",
       "guard": {
         "errors": [
           "weak: editor scored 6.2/10. Musiala to Liverpool is speculative transfer gossip with no local Kenyan connection or urgent demand this week."
@@ -4588,7 +4588,8 @@
       ],
       "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1926
+      "tg_msg": 1926,
+      "decided_at": "2026-11-27T13:33:10.450233+03:00"
     },
     {
       "id": "2026-w48-hot-1127a-r5",
@@ -4643,7 +4644,7 @@
           "published": "2026-11-27"
         }
       ],
-      "status": "awaiting",
+      "status": "approved",
       "guard": {
         "errors": [
           "weak: editor scored 6.2/10. Sport post demand is judged on whether fans are following it; this was an obsolete fixture link from RSS (Migori/3K survival scrap) mislabelled as Starlets."
@@ -4692,7 +4693,8 @@
       "reel": true,
       "tg_msg": 1929,
       "photo_checked": "2026-11-27T13:22:25.579976+03:00",
-      "photo_fit": "2026-11-27T13:22:25.579990+03:00"
+      "photo_fit": "2026-11-27T13:22:25.579990+03:00",
+      "decided_at": "2026-11-27T13:33:10.715848+03:00"
     }
   ],
   "scripts": {
