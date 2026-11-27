@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T06:38:44.355825+03:00",
+  "updated": "2026-11-27T16:08:40.456652+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -69,43 +69,43 @@
   ],
   "bottom": [
     {
-      "id": "2026-w47-hot-1122a",
+      "id": "2026-w47-hot-1120b0841",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
-      "opening": "CAF names Nairobi as Kenya's sole host city for AFCON 2027.",
-      "reach": 44,
+      "opening": "NPS announced December 10 for nationwide police recruitment.",
+      "reach": 29,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.9
+      "avg_watch_s": 6.1
     },
     {
-      "id": "2026-w48-hot-1125a",
+      "id": "2026-w47-hot-1120",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
-      "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
-      "reach": 7,
+      "opening": "Nairobi tech funding fell to a 6-year low this year.",
+      "reach": 34,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 3.2
+      "avg_watch_s": 6.0
     },
     {
-      "id": "2026-w48-hot-1125b1641",
+      "id": "2026-w47-hot-1120a",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
-      "opening": "IEBC denies clearing Rigathi Gachagua for the 2027 race.",
-      "reach": 3,
+      "opening": "Kenya coach Benni McCarthy demands overdue payments.",
+      "reach": 19,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.1
+      "avg_watch_s": 5.3
     }
   ],
   "all": [
@@ -193,7 +193,7 @@
       "lane": "hustle",
       "score": 7.5,
       "opening": "A fake front page claims Matiang'i leads polls.",
-      "reach": 100,
+      "reach": 101,
       "saved": 1,
       "shares": 0,
       "comments": 0,
@@ -266,6 +266,19 @@
       "avg_watch_s": 2.9
     },
     {
+      "id": "2026-w48-hot-1125b1641",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.3,
+      "opening": "IEBC denies clearing Rigathi Gachagua for the 2027 race.",
+      "reach": 5,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.8
+    },
+    {
       "id": "2026-w45-hot-1106",
       "series": "sauti",
       "lane": "everyone",
@@ -277,6 +290,32 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 4.8
+    },
+    {
+      "id": "2026-w48-hot-1125a",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.2,
+      "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
+      "reach": 10,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 2.9
+    },
+    {
+      "id": "2026-w48-hot-1126a",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.2,
+      "opening": "Sporting held Manchester United to a 2-2 draw.",
+      "reach": 17,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 2.4
     },
     {
       "id": "2026-w45-hot-1106m-r2",
@@ -318,6 +357,19 @@
       "avg_watch_s": 2.8
     },
     {
+      "id": "2026-w48-hot-1126m-r2",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.1,
+      "opening": "State House wants an extra Sh8.42 billion for renovations.",
+      "reach": 19,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 2.3
+    },
+    {
       "id": "2026-w45-hot-1107",
       "series": "sauti",
       "lane": "everyone",
@@ -357,6 +409,19 @@
       "avg_watch_s": 7.0
     },
     {
+      "id": "2026-w47-d6-kenya",
+      "series": "kenya",
+      "lane": "diaspora",
+      "score": 3.0,
+      "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
+      "reach": 31,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 3.2
+    },
+    {
       "id": "2026-w45-hot-1103m",
       "series": "sauti",
       "lane": "everyone",
@@ -368,6 +433,19 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 8.5
+    },
+    {
+      "id": "2026-w47-hot-1122a",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 2.9,
+      "opening": "CAF names Nairobi as Kenya's sole host city for AFCON 2027.",
+      "reach": 44,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 5.8
     },
     {
       "id": "2026-w45-d6-kenya",
@@ -433,6 +511,19 @@
       "comments": 0,
       "likes": 1,
       "avg_watch_s": 3.5
+    },
+    {
+      "id": "2026-w48-hot-1126m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 2.2,
+      "opening": "Kenya signed its third jobs deal with Canada for overseas employment.",
+      "reach": 155,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 4.7
     },
     {
       "id": "2026-w45-d7-glasspoll",
@@ -565,19 +656,6 @@
       "avg_watch_s": 2.9
     },
     {
-      "id": "2026-w47-d6-kenya",
-      "series": "kenya",
-      "lane": "diaspora",
-      "score": 0.0,
-      "opening": "KenGen reached 713 megawatts of geothermal capacity at Olkaria.",
-      "reach": 31,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 3.2
-    },
-    {
       "id": "2026-w47-hot-1117",
       "series": "sauti",
       "lane": "everyone",
@@ -640,7 +718,7 @@
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.1
+      "avg_watch_s": 4.9
     },
     {
       "id": "2026-w47-hot-1120m",
@@ -661,12 +739,12 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "reach": 28,
+      "reach": 29,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.4
+      "avg_watch_s": 6.1
     },
     {
       "id": "2026-w47-hot-1120",
@@ -693,45 +771,6 @@
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 5.3
-    },
-    {
-      "id": "2026-w47-hot-1122a",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "CAF names Nairobi as Kenya's sole host city for AFCON 2027.",
-      "reach": 44,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 5.9
-    },
-    {
-      "id": "2026-w48-hot-1125a",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
-      "reach": 7,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 3.2
-    },
-    {
-      "id": "2026-w48-hot-1125b1641",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 0.0,
-      "opening": "IEBC denies clearing Rigathi Gachagua for the 2027 race.",
-      "reach": 3,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 0,
-      "avg_watch_s": 5.1
     }
   ],
   "youtube": [
@@ -747,7 +786,7 @@
       "id": "2026-w47-hot-1122a",
       "series": "sauti",
       "opening": "CAF names Nairobi as Kenya's sole host city for AFCON 2027.",
-      "views": 1188,
+      "views": 1189,
       "likes": 2,
       "comments": 0
     },
@@ -771,7 +810,7 @@
       "id": "2026-w45-hot-1103e",
       "series": "sauti",
       "opening": "Court hands former governor Ferdinand Waititu a 13-year jail term.",
-      "views": 524,
+      "views": 525,
       "likes": 2,
       "comments": 0
     },
@@ -792,19 +831,19 @@
       "comments": 0
     },
     {
+      "id": "2026-w47-hot-1120b0841",
+      "series": "sauti",
+      "opening": "NPS announced December 10 for nationwide police recruitment.",
+      "views": 432,
+      "likes": 6,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1108b2133",
       "series": "sauti",
       "opening": "A pastor in Nyamira claims government jobs cost one million shillings.",
       "views": 431,
       "likes": 0,
-      "comments": 0
-    },
-    {
-      "id": "2026-w47-hot-1120b0841",
-      "series": "sauti",
-      "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "views": 429,
-      "likes": 6,
       "comments": 0
     },
     {
@@ -840,19 +879,19 @@
       "comments": 0
     },
     {
-      "id": "2026-w47-hot-1119m-r2",
-      "series": "sauti",
-      "opening": "Marathon champion Peres Jepchirchir got a three-year doping ban.",
-      "views": 246,
-      "likes": 3,
-      "comments": 0
-    },
-    {
       "id": "2026-w48-hot-1125b1641",
       "series": "sauti",
       "opening": "IEBC denies clearing Rigathi Gachagua for the 2027 race.",
-      "views": 235,
+      "views": 261,
       "likes": 1,
+      "comments": 0
+    },
+    {
+      "id": "2026-w47-hot-1119m-r2",
+      "series": "sauti",
+      "opening": "Marathon champion Peres Jepchirchir got a three-year doping ban.",
+      "views": 247,
+      "likes": 3,
       "comments": 0
     },
     {
@@ -984,6 +1023,22 @@
       "comments": 0
     },
     {
+      "id": "2026-w48-hot-1126m",
+      "series": "sauti",
+      "opening": "Kenya signed its third jobs deal with Canada for overseas employment.",
+      "views": 85,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w48-hot-1126m-r2",
+      "series": "sauti",
+      "opening": "State House wants an extra Sh8.42 billion for renovations.",
+      "views": 81,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1106",
       "series": "sauti",
       "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
@@ -1048,6 +1103,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w48-hot-1125a",
+      "series": "sauti",
+      "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
+      "views": 51,
+      "likes": 0,
+      "comments": 0
+    },
+    {
       "id": "2026-w46-d2-kenya",
       "series": "kenya",
       "opening": "Mount Kenya reaches 5,199 metres in altitude.",
@@ -1056,10 +1119,10 @@
       "comments": 0
     },
     {
-      "id": "2026-w48-hot-1125a",
+      "id": "2026-w48-hot-1126a",
       "series": "sauti",
-      "opening": "Kenya faces a Sh8.38bn shortfall for hosting AFCON 2027.",
-      "views": 46,
+      "opening": "Sporting held Manchester United to a 2-2 draw.",
+      "views": 37,
       "likes": 0,
       "comments": 0
     },

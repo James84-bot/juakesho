@@ -300,115 +300,101 @@
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
-      "id": "2026-w48-d5-straight",
+      "id": "2026-w48-d5-straight-r2",
       "template": "straight",
       "lane": "everyone",
-      "message": "The report verified the actual figures behind health insurance.",
-      "action": "Check your SHA registration status on the official portal",
-      "beats": [
-        "The report checked the *figures* behind health insurance.",
-        "Accurate numbers show how health funding covers households.",
-        "Verify public health claims before sharing them online.",
-        "Tell us below: have you used your SHA card yet?"
-      ],
-      "photo_query": "hospital ward Kenya",
-      "caption": "The published report checked the evidence behind health insurance figures. Always verify healthcare claims before sharing them. Have you used your SHA card yet?\n\n#MythOrFact #KenyaOnRecord",
-      "claim": "Claims about SHA registration numbers and funding figures",
-      "who": "Nation fact check desk",
-      "truth": "The report detailed the actual evidence behind health numbers.",
-      "pride": "Check health reports before sharing claims.",
-      "claim_source": "Daily Nation, 19 November 2026",
-      "source": "Daily Nation, 2026-11-19",
+      "series": "Myth or Fact",
+      "claim": "Photo shows Senator Tabitha Karanja and Rigathi Gachagua with bundles of cash",
+      "who": "Viral social media posts",
+      "truth": "The photo of Senator Karanja and Gachagua with cash was doctored.",
+      "verdict": "false",
       "proof": [
-        "The report analysed actual registration data.",
-        "Official figures show the real state of health funding."
+        "Africa Check confirmed the original photo contained no bundles of money.",
+        "Digital forensics showed the stacks of cash were edited into the image."
       ],
-      "verdict": "missing_context",
+      "pride": "Always verify images before you share them online.",
+      "claim_source": "Social media posts, November 2026",
+      "source": "Africa Check, 2026-11-27",
       "side": "none",
       "tone": "explainer",
-      "impact": "Accurate health numbers help citizens know the true state of public care.",
+      "impact": "Fake images trick voters and distort public debate before elections.",
       "where": "National",
-      "when": "19 November 2026",
+      "when": "27 Nov 2026",
+      "message": "Africa Check confirmed that a viral image of Tabitha Karanja and Rigathi Gachagua with cash was doctored.",
+      "action": "Verify photos on Africa Check before sharing suspicious images online",
+      "photo_query": "Kenyan shilling banknotes",
+      "beats": [
+        "Africa Check confirmed the Gachagua cash photo was *doctored*.",
+        "The original picture contained *no bundles* of cash.",
+        "Digital tools inserted the money into the *image*.",
+        "Have you spotted fake images in your *WhatsApp* groups?"
+      ],
+      "caption": "A viral photo claiming to show Senator Tabitha Karanja and former DP Rigathi Gachagua with stacks of cash is fake. Africa Check confirmed the original image contained no money and was digitally edited. Verify before you share.\n\nHave you spotted fake images in your WhatsApp groups?\n\n#MythOrFact #GachaguaTheSabotage #KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-11-27T17:00:00+03:00",
-      "series": "Myth or Fact",
       "angle": "myth",
       "source_links": [
         {
-          "outlet": "Daily Nation",
-          "title": "Fact check: What the evidence says about Ruto's SHA figures",
-          "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTEpHU1otNlFKVUtiZlQ2b3hEZGNKWER1M2FZQl9pdzRuQUNZR09tRzl1S0VqaXBzQU03NlVEVXRYNWlwTDhkcVVLUlNYUWRITVhnZS12NnpQbkRvTHJuZ1VQakVxcm5fdENUeEtybVNSUS11eDZwaklndU1mMFJ0Sk5rQUtDQ19KeTl6cGYwemZIemlkSTljYkZlXzBhUjNqeHBR?oc=5",
-          "published": "2026-11-19"
+          "outlet": "Africa Check",
+          "title": "No, photo of Kenyan senator Tabitha Karanja and former deputy president Rigathi Gachagua with bundles of cash is doctored",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbEprU0F0czJpTmdHZ3ptM3NFdU1ZQ0c0UmdFOUVrR2hJd01ORkRkbjVMSUtCVXloVVRlaktQTGIwUXBOUHgtRWR0T1dFWm1BWEF4b04yQ3J3elR5VkpUa1JFS1lhaGFVemRBTG5GUEt3RXpQRDFVRVdiNGtLb29oVTZlU0gwU2d1WllvYklXLUxGTlpJU01kWFo4YnFxTkFISVpHUS02amNjWGg5YXVTMW1xalB6amtmenQtMw?oc=5",
+          "published": "2026-11-27"
         }
       ],
+      "version": 1,
+      "fix": "failed a guard rule",
       "material": {
         "kind": "myth",
-        "key": "news:https://news.google.com/rss/articles/CBMiowFBVV95cUxNTEpHU1otNlFKVUtiZlQ2b3hEZGNKWER1M2FZQl9pdzRuQUNZR09tRzl1S0VqaXBzQU03NlVEVXRYNWlwTDhkcVVLUlNYUWRITVhnZS12NnpQbkRvTHJuZ1VQakVxcm5fdENUeEtybVNSUS11eDZwaklndU1mMFJ0Sk5rQUtDQ19KeTl6cGYwemZIemlkSTljYkZlXzBhUjNqeHBR?oc=5",
-        "title": "Fact check: What the evidence says about Ruto's SHA figures",
-        "outlet": "Daily Nation",
-        "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTEpHU1otNlFKVUtiZlQ2b3hEZGNKWER1M2FZQl9pdzRuQUNZR09tRzl1S0VqaXBzQU03NlVEVXRYNWlwTDhkcVVLUlNYUWRITVhnZS12NnpQbkRvTHJuZ1VQakVxcm5fdENUeEtybVNSUS11eDZwaklndU1mMFJ0Sk5rQUtDQ19KeTl6cGYwemZIemlkSTljYkZlXzBhUjNqeHBR?oc=5",
-        "published": "2026-11-19"
+        "key": "news:https://news.google.com/rss/articles/CBMivAFBVV95cUxNbEprU0F0czJpTmdHZ3ptM3NFdU1ZQ0c0UmdFOUVrR2hJd01ORkRkbjVMSUtCVXloVVRlaktQTGIwUXBOUHgtRWR0T1dFWm1BWEF4b04yQ3J3elR5VkpUa1JFS1lhaGFVemRBTG5GUEt3RXpQRDFVRVdiNGtLb29oVTZlU0gwU2d1WllvYklXLUxGTlpJU01kWFo4YnFxTkFISVpHUS02amNjWGg5YXVTMW1xalB6amtmenQtMw?oc=5",
+        "title": "No, photo of Kenyan senator Tabitha Karanja and former deputy president Rigathi Gachagua with bundles of cash is doctored",
+        "outlet": "Africa Check",
+        "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNbEprU0F0czJpTmdHZ3ptM3NFdU1ZQ0c0UmdFOUVrR2hJd01ORkRkbjVMSUtCVXloVVRlaktQTGIwUXBOUHgtRWR0T1dFWm1BWEF4b04yQ3J3elR5VkpUa1JFS1lhaGFVemRBTG5GUEt3RXpQRDFVRVdiNGtLb29oVTZlU0gwU2d1WllvYklXLUxGTlpJU01kWFo4YnFxTkFISVpHUS02amNjWGg5YXVTMW1xalB6amtmenQtMw?oc=5",
+        "published": "2026-11-27"
       },
       "status": "awaiting",
       "guard": {
         "errors": [
-          "hook: the first line has no figure and no named person, place or body: it is a topic, not a hook",
-          "weak: editor scored 3.1/10. Vague health insurance fact-checks with no specific figures or recent controversy fail the demand test."
+          "weak: editor scored 5.2/10. This myth-busting post relies on an old viral image that is not currently driving news or daily debate compared to active political realignments."
         ],
         "warnings": [
-          "caption has no send/share/save call: sends and saves drive reach"
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
         ]
       },
       "critic": {
-        "hook": 3,
-        "send": 3,
-        "clarity": 4,
-        "fresh": 2,
-        "voice": 4,
-        "craft": 3,
-        "picture": 4,
-        "hold": 3,
-        "demand": 2,
-        "action": 2,
-        "fair": 5,
-        "impact": 3,
-        "human": 2,
-        "avg": 3.1,
-        "note": "Vague health insurance fact-checks with no specific figures or recent controversy fail the demand test."
+        "hook": 5,
+        "send": 4,
+        "clarity": 6,
+        "fresh": 4,
+        "voice": 7,
+        "craft": 6,
+        "picture": 5,
+        "hold": 6,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 5,
+        "human": 4,
+        "avg": 5.2,
+        "note": "This myth-busting post relies on an old viral image that is not currently driving news or daily debate compared to active political realignments."
       },
-      "drafted_at": "2026-11-22T17:29:55.611631+03:00",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d5-straight-photo.jpg",
-      "photo_credit": "Photo: 5050 Markets · File photo: Kenyans.co.ke",
-      "photo_kind": "posted",
-      "photo_outlet": "5050 Markets",
-      "photo_source": "https://5050markets.com/ke/news/sha-high-value-nhif-claims-verification",
-      "extra_photos": [
-        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d5-straight-photo-2.jpg",
-        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d5-straight-photo-3.jpg"
-      ],
+      "trend": "#GachaguaTheSabotage",
+      "drafted_at": "2026-11-27T16:18:54.190936+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-d5-straight-r2-photo.jpg",
+      "photo_credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
       "shot_info": [
         {
-          "credit": "Photo: 5050 Markets",
-          "title": "SHA restarts checks on high-value NHIF claims"
-        },
-        {
-          "credit": "File photo: Kenyans.co.ke",
-          "title": "State Reveals New Plan to Address Medicine Shortages in Hospitals"
-        },
-        {
-          "credit": "File photo: Kenyans.co.ke",
-          "title": "KNH Responds After Patient Accuses Hospital of Rejection Despite Paying Ksh45,000"
+          "credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
+          "title": ""
         }
       ],
-      "ink": {
-        "3/2": "#F8F7F6"
-      },
-      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/videos/2026-w48-d5-straight-r2-broll.mp4",
+      "broll_credit": "Footage: Alexas_Fotos / Pixabay",
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1507,
-      "photo_checked": "2026-11-22T18:01:53.195355+03:00",
-      "photo_fit": "2026-11-22T18:01:53.195367+03:00",
-      "fresh_checked": "2026-11-26T11:24:18.714184+03:00"
+      "tg_msg": 1946
     },
     {
       "id": "2026-w48-d6-kenya-r3",
@@ -4705,10 +4691,10 @@
     }
   ],
   "scripts": {
-    "radio": "Jambo na karibu kwa Kenya on Record. Today, we are looking at the story of Joseph Lopaga—a young man who proved that talent and pure resilience can pull anyone from the harsh realities of street life straight to the pinnacle of Kenyan sports.\n\nLopaga’s rise isn't just a feel-good story; it’s a direct challenge to all of us and to the authorities. His journey reminds us that talent is scattered equally across every corner of Kenya—from the estates to the cold pavements of our town centers. But opportunity? Opportunity is where the gap lies. \n\nHow many potential Joseph Lopagas are we losing every single day to crime, substance abuse, or sheer hopelessness because local sports facilities are neglected, sold off, or underfunded? We celebrate the few who beat the impossible odds through raw grit, but resilience shouldn't be the minimum requirement for a youth to succeed in this country. Our county governments allocate millions every financial year to youth empowerment, sports tournaments, and community halls. Where does that money actually go?\n\nIf we want to build a nation of champions, we must start holding our local leaders accountable for youth budgets and social spaces. \n\nKwa machache: Hadithi ya Joseph Lopaga inatuonyesha kuwa uwezo na talent zipo mitaani, lakini fursa ndizo chache. Ni lazima tuwajibishe viongozi wetu ili fedha za vijana zitumike kujenga viwanja na kuendeleza vipaji, badala ya kuacha vijana wetu kuteseka mtaani. Champion anatoka popote, lakini anahitaji msaada wetu.",
-    "voice_note": "Habari za leo fam. On Kenya on Record, we’re spotlighting Joseph Lopaga, who fought his way from street life all the way to the top of Kenyan sports. It’s an incredible story of resilience, but let’s be real for a minute—success shouldn't require surviving extreme poverty first. How many talented kids in your hood are giving up today simply because the local pitch was grabbed or the ward youth fund vanished? Lopaga beat the odds, but we need systems that actually support talent, not just celebrate the survivors. Take a second today to ask your local rep what’s happening with your area's sports grounds. Let's protect our youth.",
-    "sms": "Usiibiwe Tip: Talent is everywhere, but youth funds get stolen. Track your ward's sports budget today. Demand working community grounds for our youth.",
-    "reels": "From the harsh reality of street life to the top tier of Kenyan sports. Joseph Lopaga’s story isn't just about victory—it’s a wake-up call. Talent is everywhere in Kenya, but opportunity is withheld. How many champions are we losing because youth funds disappear? Demand accountability for our youth. This is Kenya on Record."
+    "radio": "Good day, listeners, and welcome to Kenya on Record, your trusted segment for digital awareness and civic accountability.\n\nThis week, we are addressing how easily fake news can spread on our smartphones, especially when images are designed to provoke strong emotional reactions.\n\nYou may have recently seen a viral photo circulating across social media showing Nakuru Senator Tabitha Karanja alongside former Deputy President Rigathi Gachagua, seated next to massive stacks of cash. The image looks dramatic and has drawn a lot of heated reactions online.\n\nHowever, independent fact-checkers at Africa Check have thoroughly investigated the photo and confirmed that it is completely doctored. Digital manipulators edited separate images together to fabricate the scene and mislead the public.\n\nThis is a growing tactic used to manipulate public sentiment, damage reputations, and pollute our national conversation. As citizens, our best line of defense against online deception is to pause before we react. Whenever you see a suspicious photo or claim designed to cause outrage, take a moment to verify it through reliable news outlets or established fact-checking organizations before sharing it in your groups.\n\nKwa ufupi kwa Kiswahili:\nPicha inayosambaa mtandaoni ikimwonyesha Seneta wa Nakuru Tabitha Karanja na aliyekuwa Naibu Rais Rigathi Gachagua wakiwa na marobota ya pesa si ya kweli. Shirika la Africa Check limethibitisha kuwa picha hiyo imebuniwa kwa kompyuta ili kudanganya umma. Kuwa mwangalifu na uhakikishe ukweli kabla ya kusambaza picha au habari mtandaoni.\n\nThank you for listening. Stay vigilant, and keep holding the record straight.",
+    "voice_note": "Jambo family, welcome to this week's WhatsApp update from Kenya on Record.\n\nThere is a viral photo circulating widely in political groups showing Nakuru Senator Tabitha Karanja and former DP Rigathi Gachagua sitting next to piles of cash.\n\nBefore you forward it to your contacts, please hold on. Independent fact-checkers at Africa Check have verified the image and confirmed it is completely fake and digitally doctored.\n\nDisinformation like this is created specifically to stir outrage and divide us. Before hitting share on any shocking picture or breaking news, ask yourself where it came from and check if verified outlets have reported it. Let us keep our digital spaces clean by spreading facts, not propaganda. Share this audio to keep your friends informed!",
+    "sms": "Usiibiwe: Photos can be edited to mislead you. Africa Check proved the viral image of Tabitha Karanja & Gachagua with cash was fake. Verify before sharing!",
+    "reels": "Have you seen that viral photo of Nakuru Senator Tabitha Karanja and former DP Rigathi Gachagua posing next to stacks of cash? Pause before you share. Fact-checkers at Africa Check have confirmed the image is completely doctored. In this season of high political noise, edited photos are used to manipulate your emotions. Always verify the source before spreading false content. Stay sharp, Kenya."
   },
   "spend_usd": 0.0
 }

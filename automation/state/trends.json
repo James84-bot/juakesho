@@ -1,77 +1,16 @@
 {
-  "fetched": "2026-11-27T11:57:16.341699+00:00",
+  "fetched": "2026-11-27T13:08:57.643456+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "safaricom",
-      "traffic": "5000+",
-      "news": [
-        {
-          "title": "Safaricom explains how to withdraw M-PESA cash from an ATM",
-          "url": "https://peopledaily.digital/news/safaricom-explains-how-to-withdraw-m-pesa-cash-from-an-atm",
-          "source": "People Daily"
-        },
-        {
-          "title": "Safaricom explains how customers can withdraw M-PESA money through ATMs",
-          "url": "https://biznakenya.com/safaricom-on-withdrawing-m-pesa-money-through-atms/",
-          "source": "Bizna Kenya"
-        },
-        {
-          "title": "Safaricom reveals 1 alternative customers can use when customer care delays answering calls",
-          "url": "https://peopledaily.digital/business/safaricom-reveals-1-alternative-customers-can-use-when-customer-care-delays-answering-calls",
-          "source": "People Daily"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "sunderland a.f.c. vs jagiellonia białystok standings",
-      "traffic": "2000+",
-      "news": [
-        {
-          "title": "Sunderland vs Jagiellonia Bialystok: UEFA Europa League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c893r4n7622et",
-          "source": "BBC"
-        },
-        {
-          "title": "Reinildo error extends Sunderland woe as Jagiellonia grab Europa League draw",
-          "url": "https://www.theguardian.com/football/2026/nov/26/sunderland-jagiellonia-bialystok-europa-league-match-report",
-          "source": "The Guardian"
-        },
-        {
-          "title": "Andy’s Player Ratings: Sunderland 1-1 Jagiellonia Białystok - Points Shared In Dour Performance",
-          "url": "https://rokerreport.sbnation.com/report-amp-player-ratings/160547/andys-player-ratings-sunderland-1-1-jagiellonia-bialystok-points-shared-in-dour-performance",
-          "source": "Roker Report"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "ntsa festive season speeding crackdown",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Rhode Island DUI Task Force ramps up patrols for Thanksgiving holiday weekend",
-          "url": "https://turnto10.com/news/local/rhode-island-dui-task-force-ramps-up-patrols-for-thanksgiving-holiday-weekend",
-          "source": "WJAR"
-        },
-        {
-          "title": "Shasta non-profit warns of dangerous 'Drinksgiving' trend",
-          "url": "https://krcrtv.com/news/local/shasta-non-profit-warns-of-dangerous-drinksgiving-trend",
-          "source": "KRCR"
-        },
-        {
-          "title": "Thanksgiving Eve crowds pack Short North bars as warnings rise about impaired driving",
-          "url": "https://abc6onyourside.com/news/local/thanksgiving-eve-crowds-pack-short-north-bars-as-warnings-rise-about-impaired-driving-pint-house-tatum-kilgallon-manager-national-highway-traffic-safety-administration-mothers-against-drunk-driving-aaa",
-          "source": "WSYX"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "airspace",
-      "traffic": "200+",
+      "traffic": "1000+",
       "news": [
+        {
+          "title": "KQ announces Nairobi airspace closures ahead of Jamhuri Day",
+          "url": "https://nation.africa/kenya/news/kq-announces-nairobi-airspace-closures-ahead-of-jamhuri-day-5686420",
+          "source": "Daily Nation"
+        },
         {
           "title": "Kenyans Warned of Flight Disruptions Over Closure of Nairobi Airspace",
           "url": "https://www.kenyans.co.ke/news/129727-flights-be-affected-nairobi-airspace-closes-3-dates",
@@ -81,62 +20,57 @@
           "title": "Kenya Airways warns of flight disruptions on three dates",
           "url": "https://www.the-star.co.ke/news/2026-11-27-kenya-airways-warns-of-flight-disruptions-on-three-dates",
           "source": "www.the-star.co.ke"
-        },
-        {
-          "title": "Kenya Airways announces temporary closure of Nairobi airspace",
-          "url": "https://peopledaily.digital/news/kenya-airways-announces-temporary-closure-of-nairobi-airspace",
-          "source": "People Daily"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "virgil van dijk",
-      "traffic": "200+",
+      "title": "ntsa festive season speeding crackdown",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Virgil van Dijk zaait twijfel over transfergeruchten van goede vriend Kevin De Bruyne: \"Heeft hij dat gezegd?\"",
-          "url": "https://sporza.be/nl/2026/11/26/virgil-van-dijk-zaait-twijfel-over-transfergeruchten-van-goede-vriend-kevin-de-bruyne-heeft-hij-dat-gezegd~1795681718480/",
-          "source": "Sporza"
+          "title": "CS Chirchir Announces Upcoming Changes to Vehicle Inspections",
+          "url": "https://www.kenyans.co.ke/news/129717-cs-chirchir-reveals-govt-plan-introduce-automated-vehicle-inspections",
+          "source": "Kenyans.co.ke"
         },
         {
-          "title": "'Het zou wel bij hem passen als hij bewust voor PSV kiest'",
-          "url": "https://www.psvinside.nl/nieuws/het-zou-wel-bij-hem-passen-als-hij-bewust-voor-psv-kiest",
-          "source": "PSV Inside"
+          "title": "NTSA steps up tech-driven traffic crackdown to curb road deaths",
+          "url": "https://nairobilawmonthly.com/ntsa-steps-up-tech-driven-traffic-crackdown-to-curb-road-deaths/",
+          "source": "Nairobi Law Monthly"
         },
         {
-          "title": "Waarom is de eredivisie zo interessant voor sterren als De Bruyne?",
-          "url": "https://nos.nl/artikel/2640819-waarom-is-de-eredivisie-zo-interessant-voor-sterren-als-de-bruyne",
-          "source": "NOS"
+          "title": "Every life lost on our roads is one too many",
+          "url": "https://citizen.digital/article/aa-kenya-and-kcb-group-partner-to-advance-road-safety-n394604",
+          "source": "Citizen Digital"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "nz vs ind",
-      "traffic": "200+",
+      "title": "grandchild",
+      "traffic": "500+",
       "news": [
         {
-          "title": "From skipping class to 50th NZ Test cap for emotional Blundell",
-          "url": "https://www.afp.com/en/skipping-class-50th-nz-test-cap-emotional-blundell",
-          "source": "AFP.com"
+          "title": "Gordon Ramsay Celebrates Arrival of His First Grandchild, ‘Miss Daphne’ with Sweet Message",
+          "url": "https://people.com/gordon-ramsay-shares-first-message-to-granddaughter-daphne-12281931",
+          "source": "People.com"
         },
         {
-          "title": "Black Caps recover vs India on day one in Christchurch",
-          "url": "https://www.nzsportswire.com/post/black-caps-recover-vs-india-on-day-one-in-christchurch",
-          "source": "NZ Sports Wire"
+          "title": "Adam and Holly Ramsay-Peaty welcome first child together",
+          "url": "https://www.olympics.com/en/news/swimming-great-britain-adam-holly-ramsay-peaty-welcome-first-child",
+          "source": "Olympics"
         },
         {
-          "title": "If Mohammed Siraj is world-class, why is he out? Morne Morkel backs pacer amid selection questions",
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/if-mohammed-siraj-is-world-class-why-is-he-out-morne-morkel-backs-pacer-amid-selection-questions/articleshow/136206203.cms",
-          "source": "The Times of India"
+          "title": "Gordon Ramsay becomes grandfather as daughter Holly welcomes baby girl with Adam Peaty",
+          "url": "https://www.the-independent.com/life-style/holly-ramsay-gives-birth-gordon-adam-peaty-b3092200.html",
+          "source": "The Independent"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "southampton vs middlesbrough",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Tonda Eckert: Southampton boss wants to close the chapter on 'Spygate' ahead of Middlesbrough reunion",
@@ -158,22 +92,88 @@
     {
       "geo": "KE",
       "title": "venezia vs bologna",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
-        {
-          "title": "Venezia-Bologna, anteprima: il Venezia arriva con cinque assenze",
-          "url": "https://www.tufutbolero.com/it/notizie/venezia-bologna-anteprima-il-venezia-arriva-con-cinque-feb442",
-          "source": "Tu Futbolero"
-        },
         {
           "title": "NEWS - Bastoni, Davis, Ramos, Taylor, Diao, Alajbegovic, Noslin, Belghali, Ostigard, Modric, Volpato: le novità",
           "url": "https://www.sosfanta.com/news/news-bastoni-davis-ramos-taylor-diao-alajbegovic-noslin-belghali-ostigard-modric-volpato-le-novita/",
           "source": "SOS Fanta"
         },
         {
+          "title": "Venezia-Bologna, le probabili formazioni della partita di serie A",
+          "url": "https://sport.sky.it/calcio/serie-a/2026/11/27/venezia-bologna-probabili-formazioni-13-giornata",
+          "source": "Sky Sport"
+        },
+        {
           "title": "Il calcio in TV oggi, venerdì 27 novembre. Torna la Serie A con Venezia-Bologna: dove vederla live",
           "url": "https://www.libero.it/magazine/news/calcio-in-tv-oggi-programmazione-diretta-venerdi-27-novembre-2026-cosa-vedere-233168",
           "source": "Libero"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "virgil van dijk",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Fabio Cannavaro reveals Liverpool star Virgil van Dijk's desire to play in Serie A amid AC Milan links",
+          "url": "https://www.goal.com/en-ke/news/liverpool-virgil-van-dijk-ac-milan-fabio-cannavaro-serie-a-move/blt949c4898766e5373",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Virgil van Dijk to Chelsea?! Blues urged to launch sensational summer raid for Liverpool captain as contract stand-off continues at Anfield",
+          "url": "https://www.goal.com/en-ke/news/chelsea-liverpool-virgil-van-dijk-contract-anfield/blt80bc5043f443a57b",
+          "source": "Goal.com"
+        },
+        {
+          "title": "'I've got no idea' - Virgil van Dijk makes honest admission over Liverpool future as contract expiry nears",
+          "url": "https://www.goal.com/en-ke/news/virgil-van-dijk-liverpool-future-contract-expiry/blt8eee705372b8a6fb",
+          "source": "Goal.com"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "nz vs ind",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Akash Deep press conference: India pacer spills the beans on Bumrah's unusual bowling action",
+          "url": "https://timesofindia.indiatimes.com/videos/sports/cricket/akash-deep-press-conference-india-pacer-spills-the-beans-on-bumrahs-unusual-bowling-action/videoshow/136213056.cms",
+          "source": "The Times of India"
+        },
+        {
+          "title": "‘Bumrah needs to get 2-3 wickets’: Dinesh Karthik",
+          "url": "https://indianexpress.com/article/sports/cricket/bumrah-needs-to-get-2-3-wickets-dinesh-karthik-10981103/",
+          "source": "The Indian Express"
+        },
+        {
+          "title": "Bumrah’s new run-up: A new trick to trouble batters? | IND vs NZ",
+          "url": "https://www.thehindu.com/videos/shorts/bumrahs-new-run-up-a-new-trick-to-trouble-batters-ind-vs-nz/article71750505.ece",
+          "source": "The Hindu"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "paul pogba",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Paul Pogba: Man United should look at blueprint Arsenal set",
+          "url": "https://talksport.com/football/4734396/paul-pogba-man-utd-arsenal-blueprint/",
+          "source": "talkSPORT"
+        },
+        {
+          "title": "Paul Pogba urges Man Utd to copy Arsenal blueprint and stop living in the past after Mauricio Pochettino's nightmare start",
+          "url": "https://www.goal.com/en-ke/news/paul-pogba-manchester-united-arsenal-mauricio-pochettino/blt1559fbd080808682",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Paul Pogba makes Arsenal admission as he sends message to Man Utd",
+          "url": "https://www.nowarsenal.com/latest-news/paul-pogba-makes-arsenal-admission-as-he-sends-message-to-man-utd/",
+          "source": "now.arsenal"
         }
       ]
     }
