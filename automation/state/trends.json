@@ -1,76 +1,10 @@
 {
-  "fetched": "2026-11-27T16:24:20.752356+00:00",
+  "fetched": "2026-11-27T17:43:09.580519+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "national defence university - kenya",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Ruto presides over National Defence University graduation in Nakuru",
-          "url": "https://www.the-star.co.ke/news/2026-11-26-ruto-presides-over-national-defence-university-graduation-in-nakuru-1",
-          "source": "The Star, Kenya"
-        },
-        {
-          "title": "Ruto Sets Aside Ksh100 Million to Investigate Gikomba Fires, Drug Networks",
-          "url": "https://nairobiwire.com/2026/11/ruto-directs-ksh100-million-ndu-k-security-research.html",
-          "source": "Nairobi Wire -"
-        },
-        {
-          "title": "NDU-K 4TH GRADUATION: FORGING LEADERS FOR AN EVOLVING SECURITY ENVIRONMENT",
-          "url": "https://www.mod.go.ke/news/ndu-k-4th-graduation-forging-leaders-for-an-evolving-security-environment/",
-          "source": "Ministry of Defence – Kenya"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "somalia",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Somalia rolls out EAC e-passport",
-          "url": "https://www.theeastafrican.co.ke/tea/news/east-africa/somalia-rolls-out-eac-e-passport--5686280",
-          "source": "The EastAfrican"
-        },
-        {
-          "title": "Somalia unveils new electronic passport in drive to regional integration",
-          "url": "https://www.hiiraan.com/news4/2026/Nov/206864/somalia_unveils_new_electronic_passport_in_drive_to_regional_integration.aspx",
-          "source": "Hiiraan Online"
-        },
-        {
-          "title": "Somalia Prepares to Present New E-Passport at East African Community Migration Summit",
-          "url": "https://shabellemedia.com/somalia-prepares-to-present-new-e-passport-at-east-african-community-migration-summit/",
-          "source": "Shabelle Media Network"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "arsenal vs man city",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "How to watch Arsenal v Manchester City live on TV",
-          "url": "https://www.arsenal.com/news/how-to-watch-arsenal-v-manchester-city-live-on-tv-akATa2J3AKki",
-          "source": "Arsenal.com"
-        },
-        {
-          "title": "Man City XI vs Arsenal: Confirmed team news and predicted lineup",
-          "url": "https://www.standard.co.uk/sport/football/man-city-xi-vs-arsenal-fc-confirmed-team-news-predicted-lineup-injury-latest-premier-league-2026-b1306518.html",
-          "source": "London Evening Standard"
-        },
-        {
-          "title": "Alan Shearer's Premier League predictions including Arsenal vs Man City",
-          "url": "https://metro.co.uk/2026/11/27/alan-shearers-premier-league-predictions-including-arsenal-vs-man-city-2-29823990/",
-          "source": "Metro.co.uk"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "chelsea vs nottingham forest",
-      "traffic": "200+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Premier League predictions & Jones Knows' best bets: Nottingham Forest vs Chelsea, Arsenal vs Manchester City and more!",
@@ -91,72 +25,124 @@
     },
     {
       "geo": "KE",
-      "title": "brest vs paris fc",
-      "traffic": "200+",
+      "title": "arsenal vs man city",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Stade Brestois 29 - Paris FC : Pronostic : Une occasion de viser la première place.",
-          "url": "https://www.vietnam.vn/fr/nhan-dinh-stade-brestois-29-vs-paris-fc-co-hoi-bam-duoi-ngoi-dau",
-          "source": "Vietnam.vn"
+          "title": "Every word of Mikel Arteta's pre-Man City press conference",
+          "url": "https://www.arsenal.com/news/every-word-of-artetas-pre-city-press-conference-aLDWA2M6QpnC",
+          "source": "Arsenal.com"
         },
         {
-          "title": "Ligue 1. « La vie est belle en ce moment à Brest ! » : Après la mort d’Eric Roy, comment Julien Lachuer a permis au club de rebondir",
-          "url": "https://vannes.maville.com/sport/detail_-ligue-1-la-vie-est-belle-en-ce-moment-a-brest-apres-la-mort-d-eric-roy-comment-julien-lachuer-a-permis-au-club-de-rebondir_fil-7588156_actu.Htm",
-          "source": "maville.com"
+          "title": "Arsenal XI vs Man City: Raya injury latest, predicted lineup and team news",
+          "url": "https://www.standard.co.uk/sport/football/arsenal-fc-xi-vs-man-city-predicted-lineup-confirmed-team-news-raya-injury-latest-premier-league-2026-b1306536.html",
+          "source": "London Evening Standard"
         },
+        {
+          "title": "Arteta talks up City as Arsenal look to turn the screw",
+          "url": "https://arseblog.news/2026/11/arteta-talks-up-city-as-arsenal-look-to-turn-the-screw/",
+          "source": "Arseblog News"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "brest vs paris fc",
+      "traffic": "500+",
+      "news": [
         {
           "title": "Paris FC : Une attaque de feu pour rêver plus grand ?",
           "url": "https://www.onzemondial.com/ligue-1/paris-fc-une-attaque-de-feu-pour-rever-plus-grand-1011705",
           "source": "Onze Mondial"
+        },
+        {
+          "title": "Stade Brestois. 45 minutes, leadership, défaite contre Toulouse : on a assisté à la reprise de Brendan Chardonnet avec les Espoirs",
+          "url": "https://www.ouest-france.fr/sport/football/stade-brestois/stade-brestois-45-minutes-leadership-defaite-contre-toulouse-on-a-assiste-a-la-reprise-de-brendan-chardonnet-avec-les-espoirs-383b1614-ea6b-11f1-9369-66ef1b7e4135",
+          "source": "Ouest-France"
+        },
+        {
+          "title": "Ligue 1. « La vie est belle en ce moment à Brest ! » : Après la mort d’Eric Roy, comment Julien Lachuer a permis au club de rebondir",
+          "url": "https://quimper.maville.com/actu/actudet_-ligue-1-la-vie-est-belle-en-ce-moment-a-brest-apres-la-mort-d-eric-roy-comment-julien-lachuer-a-permis-au-club-de-rebondir_fil-7588156_actu.Htm",
+          "source": "maville.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "luis enrique",
+      "title": "carlos baleba",
       "traffic": "200+",
       "news": [
         {
-          "title": "¿Julián Quiñones al PSG? Así fue la respuesta de Luis Enrique",
-          "url": "https://www.tudn.com/futbol/uefa-champions-league/julian-quinones-al-psg-asi-fue-la-sorpresiva-respuesta-de-luis-enrique",
-          "source": "TUDN"
+          "title": "Latest news on Baleba and Rashford",
+          "url": "https://www.manutd.com/en/news/pochettino-latest-news-on-baleba-and-rashford",
+          "source": "Manchester United"
         },
         {
-          "title": "Pese al interés, ¿por qué duda el París Saint-Germain en fichar a Quiñones?",
-          "url": "https://es-us.noticias.yahoo.com/deportes/pese-inter%C3%A9s-duda-par%C3%ADs-saint-085036664.html",
-          "source": "Yahoo"
+          "title": "Huge Manchester United injury blow as new Carlos Baleba injury return timeline confirmed",
+          "url": "https://sports.yahoo.com/articles/huge-manchester-united-injury-blow-160321712.html",
+          "source": "Yahoo Sports"
         },
         {
-          "title": "Sorpresa en Europa: Ponen a Julián Quiñónes en un gigante mundial",
-          "url": "https://bolavip.com/futbol-colombia/sorpresa-en-europa-ponen-a-julian-quinones-en-un-gigante-mundial",
-          "source": "Bolavip"
+          "title": "What is the latest Carlos Baleba and Marcus Rashford injury update?",
+          "url": "https://readmanutd.com/2026/11/27/marcus-rashford-injury-update-manchester-united/",
+          "source": "Read Man Utd"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "grandchild",
+      "title": "moi international sports centre",
       "traffic": "200+",
       "news": [
         {
-          "title": "Gordon Ramsay Celebrates Arrival of His First Grandchild, ‘Miss Daphne’ with Sweet Message",
-          "url": "https://people.com/gordon-ramsay-shares-first-message-to-granddaughter-daphne-12281931",
-          "source": "People.com"
+          "title": "2027 Afcon: It is all systems go",
+          "url": "https://nation.africa/kenya/sports/football/2027-afcon-it-is-all-systems-go-5684878",
+          "source": "Daily Nation"
         },
         {
-          "title": "Gordon Ramsay becomes grandfather as daughter Holly welcomes baby girl with Adam Peaty",
-          "url": "https://www.the-independent.com/life-style/holly-ramsay-gives-birth-gordon-adam-peaty-b3092200.html",
-          "source": "The Independent"
+          "title": "CAF and Coca-Cola Reunite almost 30 years as Coca-Cola is named the Official Competition Sponsor of the TotalEnergies CAF Africa Cup of Nations (AFCON) 2027 and CAF Africa Cup of Nations 2028",
+          "url": "https://www.cafonline.com/inside-caf/news/caf-and-coca-cola-reunite-almost-30-years-as-coca-cola-is-named-the-official-competition-sponsor-of-the-totalenergies-caf-africa-cup-of-nations-afcon-2027-and-caf-africa-cup-of-nations-2028/",
+          "source": "CAFOnline.com"
         },
         {
-          "title": "Gordon Ramsay, 60, Becomes A Grandpa For The First Time",
-          "url": "https://www.huffpost.com/entry/gordon-ramsay-becomes-grandpa-daughter-holly-welcomes-first-child_n_6b08a73de4b084fa2e1782cb",
-          "source": "HuffPost"
+          "title": "AFCON 2027, World Athletics 2029 preps face Sh8.38bn funding crisis",
+          "url": "https://www.standardmedia.co.ke/sports/article/2001563142/afcon-2027-world-athletics-2029-preps-face-sh8-38bn-funding-crisis",
+          "source": "www.standardmedia.co.ke"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "fpl",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Scout Selection: Best Fantasy team for Gameweek 12",
+          "url": "https://www.premierleague.com/en/news/4771382",
+          "source": "Premier League"
+        },
+        {
+          "title": "Is it time to sell Haaland? - FPL gameweek 12 dilemmas",
+          "url": "https://www.bbc.com/sport/football/articles/cjvg2w35rn63o",
+          "source": "BBC"
+        },
+        {
+          "title": "FPL Focus: Madueke and Wirtz shine, Raya dilemma",
+          "url": "https://www.arsenal.com/feature/fpl-focus-madueke-and-wirtz-shine-raya-dilemma-ap2NH9L4HIRa",
+          "source": "Arsenal.com"
         }
       ]
     }
   ],
   "dropped": [
+    {
+      "title": "levante vs racing santander prediction",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "alanyaspor vs konyaspor",
+      "why": "unsafe: 'Betting'"
+    },
     {
       "title": "venezia vs bologna prediction",
       "why": "unsafe: 'Betting'"
@@ -164,10 +150,6 @@
     {
       "title": "brest vs paris fc prediction",
       "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "norse atlantic airways",
-      "why": "unsafe: 'war'"
     }
   ],
   "errors": {}
