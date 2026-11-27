@@ -1,6 +1,28 @@
 {
-  "fetched": "2026-11-26T22:15:41.123403+00:00",
+  "fetched": "2026-11-27T01:10:22.425911+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "palace vs real sociedad",
+      "traffic": "2000+",
+      "news": [
+        {
+          "title": "Crystal Palace 2-1 Real Sociedad: Thomas Frank gains first win as Eagles boss",
+          "url": "https://www.bbc.com/sport/football/live/cm930gwqx2e3t",
+          "source": "BBC"
+        },
+        {
+          "title": "Crystal Palace 2-1 Real Sociedad: Thomas Frank earns first win as Eagles boss with Europa League comeback victory",
+          "url": "https://www.skysports.com/football/news/13616782/crystal-palace-2-1-real-sociedad-thomas-frank-earns-first-win-as-eagles-boss-with-europa-league-comeback-victory",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "Crystal Palace 2-1 Real Sociedad, Sunderland 1-1 Jagiellonia Bialystok, and more: Europa League – as it happened",
+          "url": "https://www.theguardian.com/football/live/2026/nov/26/sunderland-v-jagiellonia-bialystok-crystal-palace-v-real-sociedad-and-more-europa-league-live",
+          "source": "The Guardian"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "juventus vs omonoia",
@@ -29,19 +51,85 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "TFF Başkanı İbrahim Hacıosmanoğlu: Bebek katili İsrail, bu topraklarda oynayamaz - Beşiktaş - Spor Haberleri",
-          "url": "https://www.milliyet.com.tr/skorer/tff-baskani-ibrahim-haciosmanoglu-bebek-katili-israil-bu-topraklarda-oynayamaz-7708832",
-          "source": "Milliyet"
+          "title": "Çay Belediye Başkanı Yaşar Kemal Kantaropu’ndan Türk futbolunda adalet ve Beşiktaş taraftarlarına destek mesajı",
+          "url": "https://www.beyazbelgehaber.com/haber/cay-belediye-baskani-yasar-kemal-kantaropu-ndan-turk-futbolunda-adalet-ve-besiktas-taraftarlarina-destek-mesaji",
+          "source": "https://beyazbelgehaber.com/"
         },
         {
-          "title": "Vincenzo Italiano: 'Oyuncular çok istekliydi, hedefimiz üst tur'",
-          "url": "https://www.hurriyet.com.tr/sporarena/vincenzo-italiano-oyuncular-cok-istekliydi-hedefimiz-ust-tur-43392537",
-          "source": "Hürriyet"
+          "title": "Beşiktaş seri başı! Avrupa'da yola tam gaz devam",
+          "url": "https://www.fotospor.com.tr/besiktas/besiktas-seri-basi-avrupada-yola-tam-gaz-devam-717861",
+          "source": "Fotospor"
         },
         {
-          "title": "Orkun Kökçü'den Hapoel Beer Sheva maçı sözleri: 'Bizim için milli mesele oldu'",
-          "url": "https://www.cumhuriyet.com.tr/spor/orkun-kokcu-den-hapoel-beer-sheva-maci-sozleri-bizim-icin-milli-mesele-oldu-2559776",
-          "source": "Cumhuriyet"
+          "title": "Beşiktaş 2-1 HB Sheva:Tarih Bu Zaferi Yazacak",
+          "url": "https://www.muglagazetesi.com.tr/spor/besiktas-2-1-hb-shevatarih-bu-zaferi-yazacak-224113h",
+          "source": "Muğla Gazetesi"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "safaricom",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Safaricom responds to customer seeking matatu conductor’s number to recover lost luggage",
+          "url": "https://peopledaily.digital/news/safaricom-responds-to-customer-seeking-matatu-conductors-number-to-recover-lost-luggage",
+          "source": "People Daily"
+        },
+        {
+          "title": "Vodafone reveals Sh430bn gain from Safaricom deal",
+          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/vodafone-reveals-sh430bn-gain-from-safaricom-deal-5682944",
+          "source": "Business Daily"
+        },
+        {
+          "title": "R1.15 billion in limbo for Vodacom",
+          "url": "https://businesstech.co.za/news/telecommunications/885111/r1-15-billion-in-limbo-for-vodacom/",
+          "source": "BusinessTech"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "borac vs atalanta",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Borac Banja Luka vs Atalanta: UEFA Conference League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmewvgj2pjxdt",
+          "source": "BBC"
+        },
+        {
+          "title": "Borac Banja Luka vs Atalanta: TV channel, live stream and kick-off time",
+          "url": "https://www.goal.com/en/news/watch-borac-banja-luka-vs-atalanta-live-today-tv-channel-and-live-stream/blt20f7d82031979b93",
+          "source": "Goal.com"
+        },
+        {
+          "title": "📸 Celebrating against the favourites! This footballer gets his phone out",
+          "url": "https://onefootball.com/en/news/celebrating-against-the-favourites-this-footballer-gets-his-phone-out-43847993",
+          "source": "OneFootball"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "cska sofia vs trabzonspor",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "CSKA Sofia vs Trabzonspor: UEFA Conference League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/crgj3ln7py0lt",
+          "source": "BBC"
+        },
+        {
+          "title": "Reis ahead of Sofia showdown: 'The absence of our fans is an advantage, our target is the top eight'",
+          "url": "https://www.goal.com/en/news/reis-ahead-of-sofia-showdown-the-absence-of-our-fans-is-an-advantage-our-target-is-the-top-eight/bltb376991116551ecf",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Licensable picture: BULGARIA-SOFIA-TRABZONSPOR-PRESS-CONFERENCE-OPEN-TRAINING-25-11-2026",
+          "url": "https://www.reutersconnect.com/item/bulgaria-sofia-trabzonspor-press-conference-open-training-25-11-2026/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUhOU0xDUzAwMExFMjRURg",
+          "source": "Reuters Connect"
         }
       ]
     },
@@ -51,19 +139,19 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Treinador do Plzen em êxtase: «Tínhamos uma grande equipa pela frente»",
-          "url": "https://www.abola.pt/noticias/treinador-do-plzen-em-extase-tinhamos-uma-grande-equipa-pela-frente-2026112621321799187",
+          "title": "Análise de Marco Silva ao Viktoria Plzen-Benfica",
+          "url": "https://www.abola.pt/video/analise-de-marco-silva-ao-viktoria-plzen-benfica-2026112622505836151",
           "source": "A Bola"
         },
         {
-          "title": "Lenglet e a final da Europa League: «Temos condições para lá chegar»",
-          "url": "https://sapo.pt/artigo/lenglet-e-a-final-da-europa-league-temos-condicoes-para-la-chegar-6b0864fbed7962199d344a91",
+          "title": "Pavlidis atira: «Nem estivemos a 10% do que podemos fazer»»",
+          "url": "https://sapo.pt/artigo/pavlidis-atira-nem-estivemos-a-10-do-que-podemos-fazer-6b0892867a9ccdad1e138fe4",
           "source": "SAPO"
         },
         {
-          "title": "Rui Costa: «Pedimos desculpa aos adeptos, não dignificámos a camisola do Benfica»",
-          "url": "https://www.zerozero.pt/noticias/rui-costa-pedimos-desculpa-aos-adeptos-nao-dignificamos-a-camisola-do-benfica-/1270901",
-          "source": "zerozero.pt"
+          "title": "Palhinha taxativo: \"Menosprezámos o adversário e foi visível no jogo\"",
+          "url": "https://www.noticiasaominuto.com/desporto/3090945/palhinha-taxativo-menosprezamos-o-adversario-e-foi-visivel-no-jogo",
+          "source": "Notícias ao Minuto"
         }
       ]
     },
@@ -83,9 +171,9 @@
           "source": "franceinfo"
         },
         {
-          "title": "Programme TV Foot : Midi Dix, Lyon-Lillestrom à 21h",
-          "url": "https://www.webgirondins.com/actualite-girondins-programme-tv-foot-midi-dix-lyon-lillestrom-a-21h-135308",
-          "source": "WebGirondins"
+          "title": "OL – Lillestrom (0-0) : un match nul de A à Z",
+          "url": "https://www.olympique-et-lyonnais.com/ol-lillestrom-0-0-un-match-nul-de-a-a-z,415028.html",
+          "source": "Olympique & Lyonnais"
         }
       ]
     },
@@ -95,43 +183,27 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Bruno Génésio dans l'histoire du football français 👑",
-          "url": "https://onefootball.com/fr/news/bruno-genesio-dans-lhistoire-du-football-francais-43847384",
-          "source": "OneFootball"
-        },
-        {
           "title": "« Je n’aurais pas tenté ça à ce moment » : la réaction de Genesio après la panenka ratée de Gouiri",
           "url": "https://www.footmercato.net/a1368431690863167773-je-naurais-pas-tente-ca-a-ce-moment-la-reaction-de-genesio-apres-la-panenka-ratee-de-gouiri",
           "source": "Foot Mercato"
         },
         {
-          "title": "Ligue Europa : incidents entre supporters de l'OM et du Levski Sofia",
-          "url": "https://information.tv5monde.com/societe/ligue-europa-incidents-entre-supporters-de-lom-et-du-levski-sofia-2847186",
-          "source": "tv5monde"
+          "title": "Daniel Borimirov, directeur exécutif du Levski Sofia après la défaite face à l'OM au Vélodrome : « J'espère que plus aucun match ne sera disputé dans ce stade »",
+          "url": "https://www.lequipe.fr/Football/Actualites/Daniel-borimirov-directeur-executif-du-levski-sofia-apres-la-defaite-face-a-l-om-au-velodrome-j-espere-que-plus-aucun-match-ne-sera-dispute-dans-ce-stade/1746503",
+          "source": "L'Équipe"
+        },
+        {
+          "title": "Pep Genesio s’offre un record national",
+          "url": "https://www.sofoot.com/breves/ligue-europa-lentraineur-de-lolympique-de-marseille-bat-le-record-de-guy-roux-en-devenant-lentraineur-francais-avec-le-plus-de-victoires-en-coupe-deurope",
+          "source": "SO FOOT.com"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "sunderland",
-      "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "borac vs atalanta",
-      "why": "unsafe: 'betting'"
-    },
-    {
-      "title": "cska sofia vs trabzonspor",
-      "why": "unsafe: 'Betting'"
-    },
-    {
       "title": "union saint gilloise",
       "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "palace vs real sociedad",
-      "why": "unsafe: 'Bet'"
     }
   ],
   "errors": {}
