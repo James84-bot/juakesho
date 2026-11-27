@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-27T11:42:03.043844+00:00",
+  "fetched": "2026-11-27T11:57:16.341699+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -17,9 +17,9 @@
           "source": "Bizna Kenya"
         },
         {
-          "title": "Vodafone reveals Sh430bn gain from Safaricom deal",
-          "url": "https://www.businessdailyafrica.com/bd/corporate/companies/vodafone-reveals-sh430bn-gain-from-safaricom-deal-5682944",
-          "source": "Business Daily"
+          "title": "Safaricom reveals 1 alternative customers can use when customer care delays answering calls",
+          "url": "https://peopledaily.digital/business/safaricom-reveals-1-alternative-customers-can-use-when-customer-care-delays-answering-calls",
+          "source": "People Daily"
         }
       ]
     },
@@ -47,6 +47,28 @@
     },
     {
       "geo": "KE",
+      "title": "ntsa festive season speeding crackdown",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Rhode Island DUI Task Force ramps up patrols for Thanksgiving holiday weekend",
+          "url": "https://turnto10.com/news/local/rhode-island-dui-task-force-ramps-up-patrols-for-thanksgiving-holiday-weekend",
+          "source": "WJAR"
+        },
+        {
+          "title": "Shasta non-profit warns of dangerous 'Drinksgiving' trend",
+          "url": "https://krcrtv.com/news/local/shasta-non-profit-warns-of-dangerous-drinksgiving-trend",
+          "source": "KRCR"
+        },
+        {
+          "title": "Thanksgiving Eve crowds pack Short North bars as warnings rise about impaired driving",
+          "url": "https://abc6onyourside.com/news/local/thanksgiving-eve-crowds-pack-short-north-bars-as-warnings-rise-about-impaired-driving-pint-house-tatum-kilgallon-manager-national-highway-traffic-safety-administration-mothers-against-drunk-driving-aaa",
+          "source": "WSYX"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "airspace",
       "traffic": "200+",
       "news": [
@@ -69,34 +91,12 @@
     },
     {
       "geo": "KE",
-      "title": "ntsa festive season speeding crackdown",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Rhode Island DUI Task Force ramps up patrols for Thanksgiving holiday weekend",
-          "url": "https://turnto10.com/news/local/rhode-island-dui-task-force-ramps-up-patrols-for-thanksgiving-holiday-weekend",
-          "source": "WJAR"
-        },
-        {
-          "title": "Shasta non-profit warns of dangerous 'Drinksgiving' trend",
-          "url": "https://krcrtv.com/news/local/shasta-non-profit-warns-of-dangerous-drinksgiving-trend",
-          "source": "KRCR"
-        },
-        {
-          "title": "Thanksgiving Eve crowds pack Short North bars as warnings rise about impaired driving",
-          "url": "https://abc6onyourside.com/news/local/thanksgiving-eve-crowds-pack-short-north-bars-as-warnings-rise-about-impaired-driving-pint-house-tatum-kilgallon-manager-national-highway-traffic-safety-administration-mothers-against-drunk-driving-aaa",
-          "source": "WSYX"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
       "title": "virgil van dijk",
       "traffic": "200+",
       "news": [
         {
-          "title": "Virgil van Dijk houdt de lippen stijf op elkaar over transfergeruchten rond goede vriend Kevin De Bruyne: \"Heeft hij dat gezegd?\"",
-          "url": "https://sporza.be/nl/2026/11/26/virgil-van-dijk-houdt-de-lippen-stijf-op-elkaar-over-transfergeruchten-rond-goede-vriend-kevin-de-bruyne-heeft-hij-dat-gezegd~1795681718480/",
+          "title": "Virgil van Dijk zaait twijfel over transfergeruchten van goede vriend Kevin De Bruyne: \"Heeft hij dat gezegd?\"",
+          "url": "https://sporza.be/nl/2026/11/26/virgil-van-dijk-zaait-twijfel-over-transfergeruchten-van-goede-vriend-kevin-de-bruyne-heeft-hij-dat-gezegd~1795681718480/",
           "source": "Sporza"
         },
         {
@@ -117,90 +117,72 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Preview: India, New Zealand Seek Decisive Finish To Test Series In Christchurch",
-          "url": "https://www.telecomasia.net/bd/blog/preview-india-new-zealand-seek-decisive-finish-to-test-series-in-christchurch/",
-          "source": "Telecom Asia Sport"
+          "title": "From skipping class to 50th NZ Test cap for emotional Blundell",
+          "url": "https://www.afp.com/en/skipping-class-50th-nz-test-cap-emotional-blundell",
+          "source": "AFP.com"
+        },
+        {
+          "title": "Black Caps recover vs India on day one in Christchurch",
+          "url": "https://www.nzsportswire.com/post/black-caps-recover-vs-india-on-day-one-in-christchurch",
+          "source": "NZ Sports Wire"
         },
         {
           "title": "If Mohammed Siraj is world-class, why is he out? Morne Morkel backs pacer amid selection questions",
           "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-new-zealand/if-mohammed-siraj-is-world-class-why-is-he-out-morne-morkel-backs-pacer-amid-selection-questions/articleshow/136206203.cms",
           "source": "The Times of India"
-        },
-        {
-          "title": "Even Stevens After Boxing Bout on Day 1, Akash Deep Shines for India",
-          "url": "https://revsportz.in/even-stevens-after-boxing-bout-on-day-1-akash-deep-shines-for-india/",
-          "source": "Revsportz"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "x",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "X finally gets parental controls after 20 years",
-          "url": "https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/",
-          "source": "TechCrunch"
-        },
-        {
-          "title": "Elon Musk's X Rolls Out Its First-Ever Parental Controls for Teen Accounts",
-          "url": "https://gizmodo.com/x-rolls-out-parental-controls-also-admits-that-its-not-designed-for-or-promoted-to-children-2000845950",
-          "source": "Gizmodo"
-        },
-        {
-          "title": "X now lets parents set daily time limits and approve followers for teens, but not read their messages",
-          "url": "https://timesofindia.indiatimes.com/technology/social/x-now-lets-parents-set-daily-time-limits-and-approve-followers-for-teens-but-not-read-their-messages/articleshow/136191498.cms",
-          "source": "The Times of India"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "borac vs atalanta",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Borac Banja Luka vs Atalanta: UEFA Conference League stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cmewvgj2pjxdt",
-          "source": "BBC"
-        },
-        {
-          "title": "[ＷＡＴＣＨ＠ＴＶ] Borac vs Atalanta Live Sports Coverage, Football News & Viewing Information (27.11.26)",
-          "url": "https://www.tallahatchienews.ms/node/461830",
-          "source": "tallahatchienews.ms"
-        },
-        {
-          "title": "Sarri calls up Piotr Pardel for the Borac Banja Luka trip",
-          "url": "https://www.tufutbolero.com/en/news/sarri-calls-up-piotr-pardel-for-the-borac-banja-luka-trip-0ce909",
-          "source": "Tu Futbolero"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "lyon",
+      "title": "southampton vs middlesbrough",
       "traffic": "100+",
       "news": [
         {
-          "title": "Rhône. Info trafic : la circulation des TER pertrubée autour de Lyon",
-          "url": "https://www.leprogres.fr/transport/2026/11/27/info-trafic-vos-conditions-de-circulation-ce-vendredi-27-novembre-dans-l-agglomeration-lyonnaise",
-          "source": "Le Progrès"
+          "title": "Tonda Eckert: Southampton boss wants to close the chapter on 'Spygate' ahead of Middlesbrough reunion",
+          "url": "https://www.skysports.com/football/news/13616785/tonda-eckert-southampton-boss-wants-to-close-the-chapter-on-spygate-ahead-of-middlesbrough-reunion",
+          "source": "Sky Sports"
         },
         {
-          "title": "Lyon : le métro D perturbé, la circulation reprend progressivement",
-          "url": "https://www.lyoncapitale.fr/actualite/lyon-le-metro-d-perturbe-la-reprise-de-la-circulation-estimee-a-13-heures-2",
-          "source": "Lyon Capitale"
+          "title": "Championship Tips: Goals and cards expected in feisty Spygate clash as Southampton host Middlesbrough",
+          "url": "https://betting.betfair.com/football/championship/tips-for-all-matchday-18-fixtures-best-bets-predictions-including-wolves-to-beat-lincoln-251126-904.html",
+          "source": "Betfair"
         },
         {
-          "title": "SNCF : une grève dans les trams-trains de l'Ouest lyonnais ce jeudi",
-          "url": "https://www.radioscoop.com/infos/sncf-une-greve-dans-les-trams-trains-de-l-ouest-lyonnais-ce-jeudi_368558",
-          "source": "Radio SCOOP"
+          "title": "TV details: How to watch Saints vs Middlesbrough under the lights live from home",
+          "url": "https://uk.sports.yahoo.com/news/tv-details-watch-saints-vs-033000445.html",
+          "source": "Yahoo"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "venezia vs bologna",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Venezia-Bologna, anteprima: il Venezia arriva con cinque assenze",
+          "url": "https://www.tufutbolero.com/it/notizie/venezia-bologna-anteprima-il-venezia-arriva-con-cinque-feb442",
+          "source": "Tu Futbolero"
+        },
+        {
+          "title": "NEWS - Bastoni, Davis, Ramos, Taylor, Diao, Alajbegovic, Noslin, Belghali, Ostigard, Modric, Volpato: le novità",
+          "url": "https://www.sosfanta.com/news/news-bastoni-davis-ramos-taylor-diao-alajbegovic-noslin-belghali-ostigard-modric-volpato-le-novita/",
+          "source": "SOS Fanta"
+        },
+        {
+          "title": "Il calcio in TV oggi, venerdì 27 novembre. Torna la Serie A con Venezia-Bologna: dove vederla live",
+          "url": "https://www.libero.it/magazine/news/calcio-in-tv-oggi-programmazione-diretta-venerdi-27-novembre-2026-cosa-vedere-233168",
+          "source": "Libero"
         }
       ]
     }
   ],
   "dropped": [
+    {
+      "title": "actor pete edochie",
+      "why": "unsafe: 'dies'"
+    },
     {
       "title": "obado",
       "why": "unsafe: 'murder'"
