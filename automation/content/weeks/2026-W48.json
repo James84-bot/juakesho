@@ -4076,7 +4076,7 @@
         }
       ],
       "quotes": [],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [
           "weak: editor scored 4.6/10. Remove textbook framing like 'thousands of young Kenyans' and use specific details on what rules actually changed."
@@ -4133,7 +4133,14 @@
       "tg_msg": 1911,
       "decided_at": "2026-11-27T09:28:26.347742+03:00",
       "photo_checked": "2026-11-27T09:33:12.424637+03:00",
-      "photo_fit": "2026-11-27T09:33:12.424647+03:00"
+      "photo_fit": "2026-11-27T09:33:12.424647+03:00",
+      "published_at": "2026-11-27T13:23:02.420772+03:00",
+      "ig_id": "18000814455047117",
+      "fb_id": "922310007544097",
+      "story_id": "18120419518817172",
+      "fb_story_id": "1490780592972594",
+      "yt_id": "ijB-dMtPT3Q",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w48-hot-1127-r2",
@@ -4178,7 +4185,7 @@
         }
       ],
       "quotes": [],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -4219,7 +4226,14 @@
       "reel": true,
       "tg_msg": 1912,
       "auto": true,
-      "decided_at": "2026-11-27T09:24:49.532556+03:00"
+      "decided_at": "2026-11-27T09:24:49.532556+03:00",
+      "published_at": "2026-11-27T13:24:51.558375+03:00",
+      "ig_id": "18030567953865952",
+      "fb_id": "1851360266176042",
+      "story_id": "18122333897276063",
+      "fb_story_id": "2285703788665267",
+      "yt_id": "UFZ-vcthj3U",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w48-hot-1127a",
@@ -4676,7 +4690,9 @@
       "broll_credit": "Footage: Boal / Pixabay",
       "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1929
+      "tg_msg": 1929,
+      "photo_checked": "2026-11-27T13:22:25.579976+03:00",
+      "photo_fit": "2026-11-27T13:22:25.579990+03:00"
     }
   ],
   "scripts": {
