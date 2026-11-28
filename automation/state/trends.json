@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-28T17:42:31.713788+00:00",
+  "fetched": "2026-11-28T17:49:27.943292+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -7,14 +7,14 @@
       "traffic": "5000+",
       "news": [
         {
-          "title": "Premier League predictions & Jones Knows' best bets: Arsenal vs Manchester City and more!",
-          "url": "https://www.skysports.com/football/news/13616076/premier-league-predictions-and-jones-knows-best-bets-nottingham-forest-vs-chelsea-arsenal-vs-manchester-city-and-more",
-          "source": "Sky Sports"
-        },
-        {
           "title": "Ipswich Town vs Aston Villa: Premier League preview, team news, stats & head-to-head",
           "url": "https://www.bbc.com/sport/football/live/cmy49k14lne9t",
           "source": "BBC"
+        },
+        {
+          "title": "Ipswich vs Aston Villa LIVE! Premier League match updates, free highlights, news and score",
+          "url": "https://www.skysports.com/football/live-blog/13610956/ipswich-vs-aston-villa-live-premier-league-match-updates-free-highlights-news-and-score",
+          "source": "Sky Sports"
         },
         {
           "title": "Ipswich v Aston Villa: Tractor Boys can trample Villa defence",
@@ -25,25 +25,26 @@
     },
     {
       "geo": "KE",
-      "title": "man u today",
-      "traffic": "500+",
+      "title": "hamburger sv vs bayern munich standings",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Match Summary",
-          "url": "https://www.bbc.com/sport/football/live/cmz9823qpznet",
-          "source": "BBC"
+          "title": "Ruto, Steinmeier sign pact as Kenya eyes more German jobs",
+          "url": "https://nation.africa/kenya/news/ruto-steinmeier-sign-pact-as-kenya-eyes-more-german-jobs-5684126",
+          "source": "Daily Nation"
         },
         {
-          "title": "Premier League: Ipswich host Villa after Brentford thrash Man Utd and Leeds beat Coventry",
-          "url": "https://sports.yahoo.com/soccer/articles/premier-league-ipswich-host-villa-165902202.html",
-          "source": "Yahoo Sports"
+          "title": "Licensable picture: SC Paderborn 07 vs. FC Schalke 04",
+          "url": "https://www.reutersconnect.com/item/sc-paderborn-07-vs-fc-schalke-04/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX0RQQUFQSVMyNjExMjhYOTlYNDE2OTQ4",
+          "source": "Reuters Connect"
         },
         {
-          "title": "Leeds Lead Premier League Action as Ipswich Face Villa Test",
-          "url": "https://www.suaralandak.co.id/en/leeds-premier-league-matchday-action",
-          "source": "www.suaralandak.co.id"
+          "title": "German President Frank-Walter Steinmeier arrives in Nairobi ahead of Ruto meeting",
+          "url": "https://peopledaily.digital/news/german-president-frank-walter-steinmeier-arrives-in-nairobi-ahead-of-ruto-meeting",
+          "source": "People Daily"
         }
-      ]
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -132,28 +133,6 @@
           "source": "Goal.com"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "rangers",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Licensable picture: NHL: New York Rangers at Chicago Blackhawks",
-          "url": "https://www.reutersconnect.com/item/nhl-new-york-rangers-at-chicago-blackhawks/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NTg5MjY",
-          "source": "Reuters Connect"
-        },
-        {
-          "title": "Rangers Blackhawks Hockey",
-          "url": "https://www.couriernews.com/sports/rangers-blackhawks-hockey/image_463b2a13-41f8-5791-b61e-68afa7ed7cb4.html",
-          "source": "couriernews.com"
-        },
-        {
-          "title": "Spencer Knight stops 30 shots to extend Blackhawks win streak to four in 4-1 victory",
-          "url": "https://www.dazn.com/en-US/news/hockey/rangers-vs-blackhawks-nhl-thanksgiving-spencer-knight/127j1g1sv1qjf14wmuuecg1onu",
-          "source": "DAZN"
-        }
-      ]
     }
   ],
   "dropped": [
@@ -168,6 +147,10 @@
     {
       "title": "rangers vs falkirk",
       "why": "unsafe: 'Odds'"
+    },
+    {
+      "title": "crystal palace",
+      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
