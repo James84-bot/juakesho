@@ -5114,13 +5114,103 @@
       "tg_msg": 1973,
       "auto": true,
       "decided_at": "2026-11-28T06:45:07.775425+03:00"
+    },
+    {
+      "id": "2026-w48-hot-1128",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Parents and Teachers",
+      "line": "One JSS teacher *handles 140 pupils* in some counties, KNBS shows.",
+      "fact": "KNBS data shows severe teacher shortages in Junior Secondary Schools across several counties.",
+      "source": "Capital FM News, 2026-11-28",
+      "photo_query": "classroom Kenya",
+      "message": "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
+      "action": "Ask your MP when the Ministry of Education will post more JSS teachers",
+      "who": "Ministry of Education",
+      "where": "National",
+      "when": "28 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Pupils receive less attention while teachers face severe workload burnout.",
+      "beats": [
+        "One JSS teacher *handles 140 pupils* in some counties, KNBS shows.",
+        "The official report highlights severe *teacher shortages* across schools.",
+        "The Ministry of Education *must employ more teachers* as promised.",
+        "How many pupils are in your child's JSS class?"
+      ],
+      "caption": "One Junior Secondary School teacher is handling up to 140 pupils in some counties, according to a KNBS report. Our children deserve reasonable teacher-to-student ratios for quality learning. The Ministry of Education must employ and post enough teachers to JSS classrooms immediately. How many pupils are in your child's JSS class?\n\n#EducationKE #JSS #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T12:45:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning."
+      ],
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "KNBS report: Counties where one JSS teacher handles 140 pupils",
+          "link": "https://capitalfm.africa/knbs-report-counties-where-one-jss-teacher-handles-140-pupils/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-28"
+        }
+      ],
+      "quotes": [],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "visual QA: low contrast 1.8:1 (needs 3:1) on 'One JSS teacher'"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 9,
+        "fresh": 9,
+        "voice": 9,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 9,
+        "action": 9,
+        "fair": 9,
+        "impact": 9,
+        "human": 9,
+        "avg": 9.0,
+        "note": "exceptional layout of a real national data point with a direct accountability demand."
+      },
+      "drafted_at": "2026-11-28T09:09:45.448422+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128-photo.jpg",
+      "photo_credit": "Photo: KBC · Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/teacher-shortages-congestion-persist-in-schools-census-shows/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Teacher shortages, congestion persist in schools – census shows"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Court Rules on Salary Deductions Affecting JSS Teachers"
+        }
+      ],
+      "ink": {
+        "2": "#FFFFFF"
+      }
     }
   ],
   "scripts": {
-    "radio": "Hujambo na karibu to Kenya on Record. I am your host, and today we need to talk about our national carrier, Kenya Airways.\n\nKQ has issued another profit warning, projecting that its earnings for the financial year will drop by at least twenty-five percent. For many Kenyans, this news feels like a broken record. Over the last decade, taxpayers have pumped tens of billions of shillings into bailouts, debt restructuring, and state-guaranteed loans to keep the airline flying.\n\nNow, every aviation business faces tough global headwinds—rising operational costs, fuel price volatility, and currency fluctuations. But when a state-backed entity consistently returns to the public purse for support while posting heavy losses, citizens have every right to ask tough questions. Where is the sustainable turnaround strategy? Why do reform plans keep falling short? And crucially, who is holding leadership accountable for these results? Public money is finite, and every billion used to plug corporate deficits is money unavailable for hospitals, roads, and local services.\n\nTo wrap up in Kiswahili:\nShirika la ndege la Kenya Airways limetoa tahadhari mpya ya kupungua kwa faida kwa angalau asilimia ishirini na tano mwaka huu. Kwa miaka mingi, Wakenya wamewekeza mabilioni ya fedha za ushuru kuinusuru KQ. Ni wakati sasa wa kutaka uwajibikaji na uwazi wa jinsi fedha za umma zinavyotumika katika mashirika ya serikali.\n\nThis is Kenya on Record. Stay informed and demand accountability.",
-    "voice_note": "Bana, habari yenu? Here is a quick update from Kenya on Record this week.\n\nKenya Airways has just issued a fresh profit warning, expecting net earnings to drop by at least 25% this financial year. Look, global aviation is tough, but KQ isn't just any private business—it relies heavily on public backstops and government loan guarantees funded by your tax shillings.\n\nWhen profit warnings become an annual routine, we have to ask serious questions about governance, strategic planning, and fiscal oversight. As taxpayers, we cannot keep underwriting operational losses without seeing a clear, binding roadmap to self-reliance. Share this with a friend who cares about how public money gets spent. Stay sharp!",
-    "sms": "Usiibiwe: KQ expects a 25% profit drop. Taxpayers fund state bailouts. Ask your MP how public money in state corporations is monitored. Stay alert!",
-    "reels": "Another year, another profit warning. Kenya Airways projects net earnings to drop by at least twenty-five percent. But here is the real issue: after billions of shillings in public bailouts over the years, when does true oversight kick in? Taxpayers deserve full transparency on how state-backed entities are run. Follow Kenya on Record for the facts."
+    "radio": "Habari za leo, mwananchi mwenzangu. Karibu kwenye Kenya on Record, mahali tunapoweka hesabu wazi. Leo tunaangazia ripoti mpya kutoka kwa KNBS inayofichua ukweli mchungu kuhusu elimu ya watoto wetu mashuleni.\n\nKulingana na takwimu hizi mpya, shule za upili za junior—yaani JSS—zinakabiliwa na uhaba mkubwa wa walimu. Hali imefika mahali ambapo mwalimu mmoja anasimamia wanafunzi mia moja na arobaini kwenye darasa moja! Hebu fikiria hilo. Mwalimu mmoja kwa wanafunzi mia moja na arobaini. Je, mtoto wako atapata usikivu gani kwa mwalimu katika mazingira haya? Huu si mfumo wa kusoma, huu ni mzigo mzito kwa walimu wetu na hatari kwa elimu ya taifa.\n\nSerikali ilituahidi mabadiliko, lakini nambari hizi zinazungumza ukweli mwingine. Tunahitaji uwajibikaji. Tunahitaji walimu waajiriwe ili watoto wetu wapate nafasi ya kujifunza vizuri.\n\n*Na kwa kifupi kwa wale tunaopenda Kiswahili:* Ripoti ya KNBS imefichua hali mbaya ya uhaba wa walimu katika shule za JSS, ambapo mwalimu mmoja analazimika kufunza wanafunzi hadi mia moja na arobaini darasani. Hii inatishia ubora wa elimu ya watoto wetu.",
+    "voice_note": "Wazazi, mmesikia hii? Ripoti mpya ya KNBS imeweka wazi aibu iliyoko kwenye JSS. Mwalimu mmoja anasimamia wanafunzi 140 kwenye darasa moja! Huyu ni mwalimu au mchungaji wa kundi la ng'ombe? Mtoto wako anajifunza nini hapo? Hali hii inaharibu elimu ya mtaa wetu. Tuamke, tuhoji viongozi wetu na tutake uwajibikaji. Watoto wetu wanastahili bora zaidi.",
+    "sms": "Usiibiwe: Ripoti ya KNBS yaonyesha JSS ina uhaba mkubwa wa walimu, huku mwalimu mmoja akifunza wanafunzi 140. Dai uwajibikaji kutoka kwa viongozi wako leo.",
+    "reels": "Mwalimu mmoja. Wanafunzi mia moja na arobaini. Hii ndiyo hali halisi kwenye shule zetu za JSS kulingana na ripoti mpya ya KNBS. Mtoto wako anasoma ama anapotea kwenye umati? Hali hii haiwezi kuendelea. Fuatilia Kenya on Record ujue ukweli na utake mabadiliko."
   },
   "spend_usd": 0.0
 }
