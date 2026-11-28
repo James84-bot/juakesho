@@ -5080,7 +5080,7 @@
           "link": "https://www.the-star.co.ke/news/2026-11-27-kenya-airways-issues-fresh-profit-warning-expects-earnings-to-fall-by-25pc"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -5121,7 +5121,14 @@
       "reel": true,
       "tg_msg": 1973,
       "auto": true,
-      "decided_at": "2026-11-28T06:45:07.775425+03:00"
+      "decided_at": "2026-11-28T06:45:07.775425+03:00",
+      "published_at": "2026-11-28T17:19:26.503182+03:00",
+      "ig_id": "18120510830120359",
+      "fb_id": "1635178408406456",
+      "story_id": "18198194095393827",
+      "fb_story_id": "2065935401057157",
+      "yt_id": "kc4fqwDOWLo",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w48-hot-1128",
@@ -5808,7 +5815,7 @@
         "note": "Remove textbook phrases like 'Government admits' and add a specific figure or committee name from the parliamentary proceedings."
       },
       "drafted_at": "2026-11-28T16:33:30.228970+03:00",
-      "replaced_by": "2026-w48-hot-1128e-r2",
+      "replaced_by": "2026-w48-hot-1128e-r5",
       "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128e-photo.jpg",
       "photo_credit": "Photo: Cynthia Omondi / Wikimedia Commons, CC BY 4.0",
       "photo_kind": "symbolic",
@@ -5825,7 +5832,7 @@
       "tg_msg": 2010
     },
     {
-      "id": "2026-w48-hot-1128e-r2",
+      "id": "2026-w48-hot-1128e-r5",
       "template": "sauti",
       "lane": "everyone",
       "kicker": "Mt Kenya politics",
@@ -5906,25 +5913,38 @@
       },
       "drafted_at": "2026-11-28T16:35:08.126598+03:00",
       "replaced_by": "2026-w48-hot-1128e-r3",
-      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128e-r2-photo.jpg",
-      "photo_credit": "Photo: Kenyans.co.ke",
-      "photo_kind": "posted",
-      "photo_outlet": "Kenyans.co.ke",
-      "photo_source": "https://www.kenyans.co.ke/news/129051-gachagua-disputes-chirchirs-explanation-rironi-mau-summit-road-delays",
-      "shot_info": [
-        {
-          "credit": "Photo: Kenyans.co.ke",
-          "title": "Gachagua Reveals Alleged Plan to Halt Ksh200 Billion Rironi-Mau Road"
-        }
-      ],
+      "photo_source": "https://www.kenyans.co.ke/news/129140-gachagua-withdraws-high-court-petition-challenging-dp-impeachment-lawyers-say",
       "tv_clip": {
         "channel": "Citizen TV",
         "title": "Ruto asema hatajidhalilisha kwa Rigathi Gachagua ili kupata kura za eneo la Mlima Kenya.",
         "url": "https://www.youtube.com/watch?v=rWhzqi6kip8"
       },
-      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 2011
+      "rephoto_reason": "Kenyans.co.ke's own edit (A circular inset photo of a man speaking)",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128e-r5-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke · Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128e-r5-photo-2.jpg",
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128e-r5-photo-3.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Gachagua Withdraws High Court Case Challenging His DP Impeachment"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "3 MPs Ditch Ruto's UDA for Gachagua's DCP"
+        },
+        {
+          "credit": "Photo: KBC",
+          "title": "Mt Kenya votes: Ruto says he will not bow to political brokers"
+        }
+      ],
+      "track_credit": "Music: \"Undaunted\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "tg_msg": 2023
     },
     {
       "id": "2026-w48-hot-1128e-r3",
@@ -6108,7 +6128,9 @@
       "reel": true,
       "tg_msg": 2015,
       "auto": true,
-      "decided_at": "2026-11-28T17:14:45.034785+03:00"
+      "decided_at": "2026-11-28T17:14:45.034785+03:00",
+      "photo_checked": "2026-11-28T17:18:08.967740+03:00",
+      "photo_fit": "2026-11-28T17:18:08.967753+03:00"
     }
   ],
   "scripts": {
