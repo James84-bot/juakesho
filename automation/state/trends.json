@@ -1,155 +1,154 @@
 {
-  "fetched": "2026-11-28T17:49:27.943292+00:00",
+  "fetched": "2026-11-28T20:52:40.506922+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "ipswich town vs aston villa",
-      "traffic": "5000+",
+      "title": "real madrid vs alavés",
+      "traffic": "10000+",
       "news": [
         {
-          "title": "Ipswich Town vs Aston Villa: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cmy49k14lne9t",
-          "source": "BBC"
+          "title": "Real Madrid - Alavés en directo | Brahim sustituye Diomande en el once",
+          "url": "https://elpais.com/deportes/futbol/2026-11-28/real-madrid-alaves-en-directo-el-partido-de-la-liga-en-vivo.html",
+          "source": "EL PAÍS"
         },
         {
-          "title": "Ipswich vs Aston Villa LIVE! Premier League match updates, free highlights, news and score",
-          "url": "https://www.skysports.com/football/live-blog/13610956/ipswich-vs-aston-villa-live-premier-league-match-updates-free-highlights-news-and-score",
-          "source": "Sky Sports"
+          "title": "Polémica y reacciones de la actualidad deportiva deReal Madrid y Alavés, en directo: sigue toda la radio deportiva",
+          "url": "https://www.sport.es/es/noticias/real-madrid/polemica-reacciones-actualidad-deportiva-dereal-136967478",
+          "source": "SPORT"
         },
         {
-          "title": "Ipswich v Aston Villa: Tractor Boys can trample Villa defence",
-          "url": "https://betting.betfair.com/football/premier-league/todays-football-tips-ipswich-v-aston-villa-best-bets-and-prediction-271126-140.html",
-          "source": "Betfair"
+          "title": "Qué canal pasa Real Madrid vs Alavés EN VIVO: TV y streaming de LaLiga",
+          "url": "https://www.365scores.com/es/news/que-canal-real-madrid-vs-alaves-gratis/",
+          "source": "365Scores"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "hamburger sv vs bayern munich standings",
-      "traffic": "2000+",
+      "title": "psg",
+      "traffic": "500+",
       "news": [
         {
-          "title": "Ruto, Steinmeier sign pact as Kenya eyes more German jobs",
-          "url": "https://nation.africa/kenya/news/ruto-steinmeier-sign-pact-as-kenya-eyes-more-german-jobs-5684126",
-          "source": "Daily Nation"
+          "title": "PSG : le groupe convoqué pour la réception de Lorient sans Nuno Mendes",
+          "url": "https://www.footmercato.net/a2743467077444889641-psg-le-groupe-convoque-pour-la-reception-de-lorient",
+          "source": "Foot Mercato"
         },
         {
-          "title": "Licensable picture: SC Paderborn 07 vs. FC Schalke 04",
-          "url": "https://www.reutersconnect.com/item/sc-paderborn-07-vs-fc-schalke-04/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX0RQQUFQSVMyNjExMjhYOTlYNDE2OTQ4",
-          "source": "Reuters Connect"
+          "title": "Paris Saint-Germain - FC Lorient. Le groupe lorientais pour affronter les Parisiens : sans Isaak Touré ni Isak Jensen, avec Formose Mendy",
+          "url": "https://www.ouest-france.fr/sport/football/fc-lorient/paris-saint-germain-fc-lorient-le-groupe-lorientais-pour-affronter-les-parisiens-sans-isaak-toure-ni-isak-jensen-avec-formose-mendy-5d1032ae-ea6f-11f1-8e4e-f44a9b15a834",
+          "source": "Ouest-France"
         },
         {
-          "title": "German President Frank-Walter Steinmeier arrives in Nairobi ahead of Ruto meeting",
-          "url": "https://peopledaily.digital/news/german-president-frank-walter-steinmeier-arrives-in-nairobi-ahead-of-ruto-meeting",
-          "source": "People Daily"
-        }
-      ],
-      "civic": true
-    },
-    {
-      "geo": "KE",
-      "title": "fpl",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Scout Selection: Best Fantasy team for Gameweek 12",
-          "url": "https://www.premierleague.com/en/news/4771382/scout-selection-best-fantasy-team-for-gameweek-12",
-          "source": "Premier League"
-        },
-        {
-          "title": "FPL gameweek 12 tips: Is it time to sell Man City's Erling Haaland?",
-          "url": "https://www.bbc.com/sport/football/articles/cjvg2w35rn63o",
-          "source": "BBC"
-        },
-        {
-          "title": "FPL Focus: Madueke and Wirtz shine, Raya dilemma",
-          "url": "https://www.arsenal.com/feature/fpl-focus-madueke-and-wirtz-shine-raya-dilemma-ap2NH9L4HIRa",
-          "source": "Arsenal.com"
+          "title": "Match : PSG/Lorient (1-0), le but de Mayulu en video",
+          "url": "https://www.culturepsg.com/news/match/psg-lorient-1-0-le-but-de-mayulu-en-video/61712",
+          "source": "CulturePSG"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "england vs new zealand",
-      "traffic": "200+",
+      "title": "psv",
+      "traffic": "500+",
       "news": [
         {
-          "title": "England vs New Zealand LIVE: Nations Championship 2026 - latest score, live text, radio commentary, lineups",
-          "url": "https://www.bbc.com/sport/rugby-union/live/cqgm38rjnej2t",
-          "source": "BBC"
+          "title": "LIVE | Kan Go Ahead Eagles met Weijenberg in de basis voor stunt zorgen bij PSV?",
+          "url": "https://www.destentor.nl/ga-eagles/live-kan-go-ahead-eagles-met-weijenberg-in-de-basis-voor-stunt-zorgen-bij-psv~a4d68e05/",
+          "source": "de Stentor"
         },
         {
-          "title": "Licensable picture: Nations Championship - England v New Zealand",
-          "url": "https://www.reutersconnect.com/item/nations-championship-england-v-new-zealand/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlMxQlpNN1k",
-          "source": "Reuters Connect"
+          "title": "Cambuur ontvangt Sparta • PSV boekte geflatteerde zege op Go Ahead",
+          "url": "https://nos.nl/liveblog/2641380-cambuur-ontvangt-sparta-psv-boekte-geflatteerde-zege-op-go-ahead",
+          "source": "NOS"
         },
         {
-          "title": "\"\"\"\"All Blacks vs. England LIVE Strea.m Rugby Game on TV CHANNEL",
-          "url": "https://www.nwonewswatch.com/classifieds/announcements-and-events/lost-and-found/2183549",
-          "source": "Northwest Ontario News"
+          "title": "LIVE | PSV-doelman Kovar brengt keer op keer redding, Eagles gevaarlijker na rust",
+          "url": "https://www.ad.nl/regiosport-eindhoven/live-kostic-en-van-bommel-schieten-met-scherp-bij-slap-psv~a4386dd2/",
+          "source": "AD.nl"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "manchester united f.c. games",
-      "traffic": "200+",
+      "title": "vfb stuttgart vs eintracht frankfurt",
+      "traffic": "500+",
       "news": [
         {
-          "title": "SCORE PREDICTOR: Can you predict the Matchweek 12 results?",
-          "url": "https://www.premierleague.com/en/news/4770626/score-predictor-matchweek-12",
-          "source": "Premier League"
+          "title": "Knauff und Ebnoutalib: Frankfurt findet zwei Antworten in Stuttgart",
+          "url": "https://www.kicker.de/stuttgart-gegen-frankfurt-2026-bundesliga-5226900/spielbericht",
+          "source": "Kicker"
         },
         {
-          "title": "The Matchday Crystal Ball: Merseyside derby takes centre stage as Arsenal, City renew hostilities",
-          "url": "https://www.the-star.co.ke/sports/football/2026-11-27-the-matchday-crystal-ball-merseyside-derby-takes-centre-stage-as-arsenal-city-renew-hostilities",
-          "source": "The Star, Kenya"
+          "title": "Eintracht-Kolumne Ballhorn: Chatzi, schenk uns ‘ne Abwehr",
+          "url": "https://www.fr.de/eintracht-frankfurt/eintracht-kolumne-ballhorn-chatzi-schenk-uns-ne-abwehr-94612969.html",
+          "source": "Frankfurter Rundschau"
         },
         {
-          "title": "Premier League Predictions: Everton and Liverpool Do Battle, Arsenal Host Man City",
-          "url": "https://www.si.com/soccer/premier-league-predictions-everton-liverpool-arsenal-man-city-gameweek-12-2026-27",
-          "source": "Sports Illustrated"
+          "title": "VfB Stuttgart: Tor-Spektakel gegen Frankfurt! Fünfmal Note 4 für die VfB-Stars",
+          "url": "https://www.bild.de/sport/fussball/vfb-stuttgart-tor-spektakel-gegen-frankfurt-fuenfmal-note-4-fuer-die-vfb-stars-6b0b0f41d6d8a1d6fd2ebd05",
+          "source": "BILD"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "man city vs arsenal",
+      "title": "elche vs atletico madrid",
       "traffic": "200+",
       "news": [
         {
-          "title": "Preview: Arsenal v Manchester City",
-          "url": "https://www.arsenal.com/news/preview-arsenal-v-manchester-city-aXLun3X7jvs4",
-          "source": "Arsenal.com"
+          "title": "El Atlético gana por quilates en el Martínez Valero",
+          "url": "https://www.elmundo.es/deportes/futbol/primera-division/2026/11/28/6b0b0f82fc6c8304258b459d.html",
+          "source": "El Mundo"
         },
         {
-          "title": "Arteta sets Arsenal 100-point Premier League target to emulate Manchester City",
-          "url": "https://www.theguardian.com/football/2026/nov/27/arteta-sets-arsenal-100-point-premier-league-target-to-emulate-manchester-city",
-          "source": "The Guardian"
+          "title": "Anselmi: “Los errores ante rivales de esta magnitud se pagan”",
+          "url": "https://holanews.com/anselmi-los-errores-ante-rivales-de-esta-magnitud-se-pagan/",
+          "source": "HolaNews"
         },
         {
-          "title": "Mate to rival! Arteta hails former Pep lieutenant Maresca and insists City's slump is just bad luck",
-          "url": "https://www.goal.com/en-ke/news/mikel-arteta-praises-enzo-maresca-manchester-city/blte282dee76ff4d5e7",
+          "title": "¡ONCE OFICIAL!: Un regreso y tres novedades ante el Elche",
+          "url": "https://onefootball.com/es/noticias/once-oficial-un-regreso-y-tres-novedades-ante-el-elche-43858484",
+          "source": "OneFootball"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "al-ahli vs al-taawoun",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Watch Al Ahli vs Al-Taawoun live today: Who is broadcasting the match on TV and via live stream?",
+          "url": "https://www.goal.com/en-ke/news/live-stream-online-tv-where-to-watch-al-ahli-v-al-taawoun/blt2ca8150c06b7efa9",
           "source": "Goal.com"
+        },
+        {
+          "title": "Al Ahli SC vs Al Taawon Prediction: An Easy Win for the Hosts",
+          "url": "https://www.telecomasia.net/sports-betting/tips/football/al-ahli-sc-vs-al-taawon-prediction-for-the-match-on-28-november-2026/",
+          "source": "Telecom Asia Sport"
+        },
+        {
+          "title": "Al-Ahli Selects Mohammed Bakr to Replace Injured Ibanez",
+          "url": "https://demokratis.co.id/en/al-ahli-bakr-replaces-injured-ibanez",
+          "source": "Demokratis.co.id"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "psv vs go ahead eagles",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "elche vs atlético",
-      "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "rangers vs falkirk",
+      "title": "real madrid fc",
       "why": "unsafe: 'Odds'"
     },
     {
-      "title": "crystal palace",
+      "title": "lille fc",
+      "why": "unsafe: 'Betting'"
+    },
+    {
+      "title": "saint etienne fc",
+      "why": "unsafe: 'accident'"
+    },
+    {
+      "title": "stuttgart fc",
       "why": "unsafe: 'Betting'"
     }
   ],
