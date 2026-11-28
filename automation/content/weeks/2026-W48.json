@@ -5269,7 +5269,7 @@
           "link": "https://www.kenyans.co.ke/news/129752-fkf-disowns-unauthorised-football-trials-targeting-young-players-5-counties"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -5312,7 +5312,14 @@
       "auto": true,
       "decided_at": "2026-11-28T12:53:37.938043+03:00",
       "photo_checked": "2026-11-28T13:22:54.251888+03:00",
-      "photo_fit": "2026-11-28T13:22:54.251898+03:00"
+      "photo_fit": "2026-11-28T13:22:54.251898+03:00",
+      "published_at": "2026-11-28T15:49:43.005302+03:00",
+      "ig_id": "17890576719623015",
+      "fb_id": "4861668924062349",
+      "story_id": "17918521287501530",
+      "fb_story_id": "2181538299388237",
+      "yt_id": "a_kLk2bH2xI",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     },
     {
       "id": "2026-w48-hot-1128-r2",
@@ -5614,7 +5621,9 @@
       "broll_credit": "Footage: chuduyen215 / Pixabay",
       "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1997
+      "tg_msg": 1997,
+      "photo_checked": "2026-11-28T15:48:54.416776+03:00",
+      "photo_fit": "2026-11-28T15:48:54.416787+03:00"
     },
     {
       "id": "2026-w48-hot-1128-r5",
@@ -5717,7 +5726,9 @@
       "reel": true,
       "tg_msg": 1998,
       "auto": true,
-      "decided_at": "2026-11-28T15:46:37.841171+03:00"
+      "decided_at": "2026-11-28T15:46:37.841171+03:00",
+      "photo_checked": "2026-11-28T15:48:56.167504+03:00",
+      "photo_fit": "2026-11-28T15:48:56.167515+03:00"
     }
   ],
   "scripts": {
