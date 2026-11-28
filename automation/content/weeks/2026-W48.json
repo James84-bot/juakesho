@@ -6231,7 +6231,7 @@
           "link": "https://www.theguardian.com/football/2026/nov/28/andoni-iraola-first-merseyside-derby-liverpool-everton-premier-league"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": []
@@ -6271,7 +6271,14 @@
       "reel": true,
       "tg_msg": 2026,
       "auto": true,
-      "decided_at": "2026-11-28T17:39:27.877538+03:00"
+      "decided_at": "2026-11-28T17:39:27.877538+03:00",
+      "published_at": "2026-11-28T17:54:18.012120+03:00",
+      "ig_id": "18150666961570829",
+      "fb_id": "1713511437090883",
+      "story_id": "18150438610587011",
+      "fb_story_id": "2376665073087097",
+      "yt_id": "_BK3t0TbG1U",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
