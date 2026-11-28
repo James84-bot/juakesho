@@ -5736,13 +5736,312 @@
       "fb_story_id": "1499432988919736",
       "yt_id": "8z7PfP3Kpno",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w48-hot-1128e",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "Government admits Kenya has no dedicated AI budget despite growing risks.",
+      "fact": "The State confirmed to MPs that the country lacks a dedicated budget for artificial intelligence.",
+      "message": "Kenya has no dedicated AI budget even as risks grow.",
+      "action": "Ask your MP how the digital economy budget protects local tech jobs.",
+      "photo_query": "Nairobi skyline",
+      "source": "People Daily, 2026-11-28",
+      "caption": "Government admits Kenya has no dedicated AI budget despite growing risks. The world is moving fast, but our national spending leaves tech unprotected. What should the Ministry of Information do first? 👇🏾\n\n#KenyaOnRecord",
+      "beats": [
+        "Government admits Kenya has no *dedicated AI budget* today.",
+        "The State confirmed the gap to MPs this week.",
+        "The lack of funding leaves our digital economy unprotected.",
+        "What should the Ministry of Information *fund first?*"
+      ],
+      "who": "Ministry of ICT",
+      "where": "National",
+      "when": "27 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Ordinary Kenyans working in tech face rising cyber and investment risks without state backing.",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T19:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
+        "FKF warns parents against paying unauthorized fees for youth football trials across five counties.",
+        "Only 20% of Kenyan schools have internet connectivity, limiting digital learning for millions of students."
+      ],
+      "source_links": [
+        {
+          "outlet": "People Daily",
+          "title": "Govt admits Kenya has no dedicated AI budget despite growing risks",
+          "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeThFUVNLMUhFZ3h1QXpBeHR5S29leFp1aktyS3lWOWtvTXZ5bHgyOUpLaVRYVlgzU0tUakpsNFE3aGtpYWNNa01kSXZiMTRPNXZJTnF2SW5CTlhMXzMtdWgzUkhkaHpYZEVfdVhZSmM0cmZ1NnJxVFRhVmdscU1JYmpjcFB3RHdIbGlnanZFUzRZRWFMX0gxRGNPRVMyVFZF?oc=5",
+          "published": "2026-11-28"
+        }
+      ],
+      "quotes": [],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.4/10. Remove textbook phrases like 'Government admits' and add a specific figure or committee name from the parliamentary proceedings."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 5,
+        "fresh": 5,
+        "voice": 4,
+        "craft": 4,
+        "picture": 4,
+        "hold": 4,
+        "demand": 3,
+        "action": 3,
+        "fair": 7,
+        "impact": 6,
+        "human": 3,
+        "avg": 4.4,
+        "note": "Remove textbook phrases like 'Government admits' and add a specific figure or committee name from the parliamentary proceedings."
+      },
+      "drafted_at": "2026-11-28T16:33:30.228970+03:00",
+      "replaced_by": "2026-w48-hot-1128e-r2",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128e-photo.jpg",
+      "photo_credit": "Photo: Cynthia Omondi / Wikimedia Commons, CC BY 4.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Skyline_of_Nairobi_08.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Cynthia Omondi / Wikimedia Commons, CC BY 4.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 2010
+    },
+    {
+      "id": "2026-w48-hot-1128e-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Mt Kenya politics",
+      "line": "Rigathi Gachagua is *haemorrhaging* President Ruto's support in Mt Kenya and beyond according to reports.",
+      "fact": "Political realignments in the region follow growing public discontent over taxes and economic policies.",
+      "message": "Political realignments in Mt Kenya test President Ruto's support ahead of 2027.",
+      "photo_query": "Kenyan flag and political gathering",
+      "source": "The Eastleigh Voice, 2026-11-28",
+      "caption": "Mt Kenya shift: Gachagua's moves test the ruling coalition's grip on the region. The numbers will tell the real story in 2027.\n\nAre you seeing any change on the ground? Tell us below.\n\n#KenyaOnRecord",
+      "beats": [
+        "Rigathi Gachagua is haemorrhaging President Ruto's support in Mt Kenya.",
+        "“Their political arrangement is an internal matter.”",
+        "Coalition allies are jostling for position as voters watch the outcome.",
+        "Will this shift change the 2027 math?"
+      ],
+      "action": "Check your voter registration details: SMS your ID number to 70000",
+      "who": "Political leaders",
+      "where": "National",
+      "when": "28 Nov 2026",
+      "side": "both",
+      "tone": "explainer",
+      "impact": "Shifts in regional politics determine public development priorities and resource sharing.",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T19:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
+        "FKF warns parents against paying unauthorized fees for youth football trials across five counties.",
+        "Only 20% of Kenyan schools have internet connectivity, limiting digital learning for millions of students.",
+        "Kenya has no dedicated AI budget even as risks grow."
+      ],
+      "version": 1,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "How Rigathi Gachagua is haemorrhaging Ruto's support in Mt Kenya and beyond",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeUtMM3drWUVVYnJlS2lTaXUzUzJadS10Y2JTWTIxS0MwaUcwMzlCSEtYUHZZWjFMOHNxaVgteU5JZEF4UjJuMHhlLTR5Rm43cWUyaWlZall6YkJ4b0lyLUowV1BnN1pRb3d6Y0FmYTBKSEpCUkM1VzUzVjNVS0QxN2NBUGEtVGRDblZuLVRQVFNBRm54WkhTeUk0MEFVZi10cHN3cVpJaFQwdFdSUHViQ3Q2MmlaY1hBM0pOd2dR?oc=5",
+          "published": "2026-11-28"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "Their political arrangement is an internal matter that should not take priority over national issues affecting Kenyans",
+          "speaker": "President Ruto",
+          "context": "“Their political arrangement is an internal matter that should not take priority over national issues affecting Kenyans,” President Ruto said.",
+          "outlet": "KBC Digital",
+          "link": "https://www.kbc.co.ke/stop-undermining-young-leaders-ruto-tells-gachagua/"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 4.0/10. Rewrite the post using sharp, everyday language and drop the cliché editorial phrasing."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 4,
+        "send": 4,
+        "clarity": 5,
+        "fresh": 4,
+        "voice": 4,
+        "craft": 4,
+        "picture": 4,
+        "hold": 4,
+        "demand": 3,
+        "action": 4,
+        "fair": 4,
+        "impact": 4,
+        "human": 4,
+        "avg": 4.0,
+        "note": "Rewrite the post using sharp, everyday language and drop the cliché editorial phrasing."
+      },
+      "drafted_at": "2026-11-28T16:35:08.126598+03:00",
+      "replaced_by": "2026-w48-hot-1128e-r3",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128e-r2-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129051-gachagua-disputes-chirchirs-explanation-rironi-mau-summit-road-delays",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Gachagua Reveals Alleged Plan to Halt Ksh200 Billion Rironi-Mau Road"
+        }
+      ],
+      "tv_clip": {
+        "channel": "Citizen TV",
+        "title": "Ruto asema hatajidhalilisha kwa Rigathi Gachagua ili kupata kura za eneo la Mlima Kenya.",
+        "url": "https://www.youtube.com/watch?v=rWhzqi6kip8"
+      },
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 2011
+    },
+    {
+      "id": "2026-w48-hot-1128e-r3",
+      "template": "sauti",
+      "lane": "everyone",
+      "message": "Kalonzo Musyoka's aide was summoned over remarks targeting President William Ruto.",
+      "action": "Read the police statement on the summons and share your view",
+      "beats": [
+        "*Police* summoned Kalonzo's aide over public remarks.",
+        "Officers cited a *breach* of peace in the notice.",
+        "Leaders must keep public debate focused on policies.",
+        "What do you think of this police *summons*?"
+      ],
+      "photo_query": "Kenya National Assembly",
+      "event_query": "Kalonzo Musyoka Nairobi",
+      "kicker": "Kenyans",
+      "line": "Kalonzo Musyoka's aide summoned over remarks targeting President William Ruto.",
+      "fact": "Police summoned the aide over alleged breach of peace following public remarks.",
+      "source": "Kenya News Agency, 2026-11-28",
+      "caption": "Police summoned Kalonzo's aide over remarks targeting President Ruto. We keep our leaders to the law. What do you think of this police summons?\n\n#KenyaOnRecord",
+      "who": "National Police Service",
+      "where": "National",
+      "when": "28 Nov 2026",
+      "side": "both",
+      "tone": "criticism",
+      "impact": "Political tensions rise as police summon aides over public remarks.",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T19:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
+        "FKF warns parents against paying unauthorized fees for youth football trials across five counties.",
+        "Only 20% of Kenyan schools have internet connectivity, limiting digital learning for millions of students.",
+        "Kenya has no dedicated AI budget even as risks grow.",
+        "Political realignments in Mt Kenya test President Ruto's support ahead of 2027."
+      ],
+      "version": 2,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "Kenya News Agency",
+          "title": "Kenya, Aga Khan University explore partnership to advance Universal Health Coverage",
+          "link": "https://www.kenyanews.go.ke/kenya-aga-khan-university-explore-partnership-to-advance-universal-health-coverage/",
+          "published": "2026-11-28"
+        },
+        {
+          "outlet": "Kenya News Agency",
+          "title": "Kenya, Aga Khan University explore partnership to advance Universal Health Coverage",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMURWajA1ZC05alUzVk5memhMWW5vVGRXOWVnY1d2Sjg2aTdHTWtScVJXZTBqXzBCeWRQd3hOOVV3NzZqTVI1aFl1ZnhBckVTZl9ZQ1U5M3AxQ2laWUZaTm04Wm4wUDhjejItUW1BN0pBcngtT3ozVktrTllwa1FQZVZWdlFHempuNVhCSWtMSWw1TnhBdFRXVVFtTmFWaTFzbndPT0ZlenJCal9OT1M4Ug?oc=5",
+          "published": "2026-11-28"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "The partnership will also explore supporting public health facilities to strengthen quality assurance and patient-safety practices in line with internationally recognised accreditation standards",
+          "speaker": "Duale",
+          "context": "“The partnership will also explore supporting public health facilities to strengthen quality assurance and patient-safety practices in line with internationally recognised accreditation standards,” added Duale.",
+          "outlet": "Kenya News Agency",
+          "link": "https://www.kenyanews.go.ke/kenya-aga-khan-university-explore-partnership-to-advance-universal-health-coverage/"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "the linked report is not about this story (Kenya, Aga Khan University explore partnership to advance Universal Health Cover): use the headline id of the report this post is really based on"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "drafted_at": "2026-11-28T16:36:58.553750+03:00",
+      "replaced_by": "2026-w48-hot-1128e-r4",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128e-r3-photo.jpg",
+      "photo_credit": "Photo: Sir. Kevin / Wikimedia Commons, CC BY-SA 2.0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Kenya_National_Assembly_front.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Sir. Kevin / Wikimedia Commons, CC BY-SA 2.0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 2012
+    },
+    {
+      "id": "2026-w48-hot-1128e-r4",
+      "template": "sauti",
+      "lane": "everyone",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T19:30:00+03:00",
+      "hot": true,
+      "beat": "politics",
+      "version": 3,
+      "status": "planned",
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
+        "FKF warns parents against paying unauthorized fees for youth football trials across five counties.",
+        "Only 20% of Kenyan schools have internet connectivity, limiting digital learning for millions of students.",
+        "Kenya has no dedicated AI budget even as risks grow.",
+        "Political realignments in Mt Kenya test President Ruto's support ahead of 2027.",
+        "Kalonzo Musyoka's aide was summoned over remarks targeting President William Ruto."
+      ],
+      "fix": "failed a guard rule"
     }
   ],
   "scripts": {
-    "radio": "Good morning, listener, and welcome to Kenya on Record. Today, we are speaking directly to parents, guardians, and youth mentors across our communities.\n\nWith school holidays underway, estate grounds and local stadiums are busy with young people looking to showcase their athletic talent. But alongside these legitimate sports activities, a worrying trend has emerged: fake scouts and unscrupulous organizers demanding money from parents so their children can attend football trials.\n\nLet us be completely clear: youth football trials and talent selection programs should NEVER cost you money. Legitimate academies, clubs, and federations invest in discovering talent; they do not charge parents for a child to be evaluated. When an organizer or coach demands a registration fee, kit money, or promises a spot in an academy in exchange for cash, that is not sports development—that is extortion.\n\nDemanding fees locks out talented children from humble backgrounds and exposes parents to financial fraud. If an opportunity is genuine, skill on the pitch is the only qualification required.\n\nKwa Kiswahili: Wazazi, majaribio ya kusaka vipaji vya soka kwa vijana hayapaswi kugharimu pesa yoyote. Mtu yeyote anayeitisha pesa za usajili au za jezi ndipo mtoto wako aingie uwanjani ni tapeli. Kipaji hakinunulwi. Usilipe hata shillingi moja.\n\nProtect your wallet and protect your child's passion. I am your host, keeping Kenya on Record.",
-    "voice_note": "Hujambo. Quick heads-up for all parents and youth mentors in our community groups. As holidays kick off, we are seeing many posters for football trials and sports camps. Please take note: legitimate scouts and sports organizations never charge parents a fee for a child to attend a football trial or talent selection session. If a coach, scout, or organizer asks for five hundred, two thousand, or any money for 'registration' before your child can play, that is a scam. Talent selection must be free and based strictly on merit. Don't let anyone exploit your child's ambition or your hard-earned money. Share this message with your estate WhatsApp groups. Stay alert.",
-    "sms": "Usiibiwe: Football trials for youth should ALWAYS be free. Never pay registration or scout fees for talent selection. Talent is free. Report extortion.",
-    "reels": "If anyone asks you for money so your child can attend a football trial, walk away. Legitimate sports scouts and academies do not charge parents for talent selection. Fake coaches are exploiting young dreams for quick cash. Talent is identified by skill, not registration fees. Guard your hard-earned money. Parents, never pay for football trials."
+    "radio": "Sasa, wananchi. Welcome to this week's Kenya on Record update. I’m your host, and today we are looking at accountability and the boundaries of political speech in our republic.\n\nEarly this week, a lot of heat was generated after an aide close to Wiper leader Kalonzo Musyoka was summoned by investigative authorities. The summon followed remarks directed at President William Ruto that crossed the line from normal political disagreement into territory that attracted the attention of the law.\n\nAs Kenyans, we must ask ourselves a sober question: Where do we draw the line between fierce opposition politics and outright abuse of authority? In a democracy, disagreeing with the government is every citizen's right. You can critique policies, question budgets, and demand better service delivery. That is holding leadership to account.\n\nHowever, accountability goes both ways. While the state must respect freedom of expression, political actors and their handlers must also exercise restraint. Using inflammatory language against the presidency lowers the political discourse and divides the nation. Let us demand accountability from our leaders without losing our civic decency. Kile tunataka ni maendeleo na uwajibikaji, sio matusi.\n\n*Kwa ufupi: Msaidizi wa Kalonzo Musyoka aliitwa na mamlaka kujibu maswali kuhusu matamshi yaliyolenga Rais Ruto. Hii inatukumbusha kuwa uhuru wa kusema una mipaka, na wanasiasa wanapaswa kuheshimu sheria hata wanapokosoa serikali.*",
+    "voice_note": "Mambo vipi, mwananchi? Hapa ni Kenya on Record. Wiki hii, mjadala mkubwa ulikuwa kumhusu msaidizi wa Kalonzo Musyoka ambaye aliitwa na mamlaka baada ya kutoa matamshi makali dhidi ya Rais William Ruto. Swali letu leo ni hili: Je, uhuru wa kukosoa serikali unapaswa kuwa na mpaka gani? Ni haki yako kupinga sera za serikali na kuuliza maswali, lakini matusi na lugha ya chuki hazisaidii kujenga nchi. Tuwajibishe viongozi wetu kwa hoja, sio matusi. Endelea kufuatilia Kenya on Record kwa ukweli na uwajibikaji.",
+    "sms": "Kenya on Record: Uhuru wa kusema sio uhuru wa kutukana. Kukosoa serikali ni haki yako, lakini viongozi na wafuasi wao lazima wadumishe heshima. Tuhangaikie maendeleo.",
+    "reels": "Uhuru wa kusema una mipaka gani? Wiki hii, msaidizi wa Kalonzo Musyoka alijikuta taabani baada ya kutoa matamshi makali dhidi ya Rais William Ruto. Kukosoa serikali na kuuliza maswali ni haki ya kila Mkenya. Lakini inapofika suala la matusi na lugha ya uchochezi, sheria lazima ichukue mkondo wake. Hapa Kenya on Record, tunaamini unaweza kushikilia viongozi wetu uwajibikaji bila kuvunja sheria. Wewe una maoni gani? Drop comment yako hapo chini."
   },
   "spend_usd": 0.0
 }
