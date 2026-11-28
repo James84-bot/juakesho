@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-11-28T09:32:15.592931+00:00",
+  "fetched": "2026-11-28T09:56:00.936665+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "mauricio pochettino",
-      "traffic": "2000+",
+      "title": "man u vs brentford",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Team news for United v Brentford",
@@ -12,14 +12,36 @@
           "source": "Manchester United"
         },
         {
+          "title": "Premier League LIVE news conferences & team news - Maresca, Iraola, Arteta, De Zerbi and more",
+          "url": "https://www.bbc.com/sport/football/live/cq9vwdym2wk2t",
+          "source": "BBC"
+        },
+        {
           "title": "Man Utd being relegated would be the biggest shock in history, but it won't happen, says Paul Merson",
           "url": "https://www.skysports.com/football/news/13616882/man-utd-being-relegated-would-be-the-biggest-shock-in-history-but-it-wont-happen-says-paul-merson",
           "source": "Sky Sports"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "mauricio pochettino",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Pochettino defends his Man United management style: 'I'm not nice'",
+          "url": "https://www.espn.com/soccer/story/_/id/50612072/pochettino-defends-management-style-man-united",
+          "source": "ESPN"
         },
         {
-          "title": "Manchester United vs Brentford: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cmn0d5804z76t",
-          "source": "BBC"
+          "title": "Manchester United: Mauricio Pochettino insists he is not nice when it comes to management",
+          "url": "https://www.skysports.com/football/video/13617221/mauricio-pochettino-clarifies-management-style-i-am-not-nice",
+          "source": "Sky Sports"
+        },
+        {
+          "title": "How Mauricio Pochettino won over Man Utd players with three skills - and ref rant after Yoro red card",
+          "url": "https://www.thesun.co.uk/sport/41161167/mauricio-pochettino/",
+          "source": "The Sun"
         }
       ]
     },
@@ -64,28 +86,6 @@
           "title": "Walker Kessler addresses Wembanyama defense, controversial foul in Lakers loss",
           "url": "https://basketnews.com/news-260372-walker-kessler-addresses-wembanyama-defense-controversial-foul-in-lakers-loss.html",
           "source": "BasketNews.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "levante ud vs racing santander standings",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Levante vs Racing de Santander: Spanish La Liga stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cq4gn679k254t",
-          "source": "BBC"
-        },
-        {
-          "title": "Levante Faces Racing Santander With Defensive Injuries in Valencia",
-          "url": "https://cwibc.co.id/en/levante-faces-racing-santander-valencia",
-          "source": "cwibc.co.id"
-        },
-        {
-          "title": "Levante 1-3 Racing Santander: Late Comeback Seals Win",
-          "url": "https://www.football.com/gh/news/159114",
-          "source": "Football.com"
         }
       ]
     },
@@ -159,7 +159,7 @@
   ],
   "dropped": [
     {
-      "title": "leeds vs coventry",
+      "title": "leeds vs coventry prediction",
       "why": "unsafe: 'Odds'"
     },
     {
