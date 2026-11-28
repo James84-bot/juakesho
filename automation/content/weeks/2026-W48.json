@@ -6133,13 +6133,152 @@
       "decided_at": "2026-11-28T17:14:45.034785+03:00",
       "photo_checked": "2026-11-28T17:18:08.967740+03:00",
       "photo_fit": "2026-11-28T17:18:08.967753+03:00"
+    },
+    {
+      "id": "2026-w48-hot-1128b1732",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football Fans",
+      "line": "Andoni *Iraola* faces his first Merseyside derby as manager.",
+      "fact": "Andoni Iraola prepares his team to face Everton in the Premier League fixture.",
+      "source": "Sky Sports, 2026-11-28, The Guardian, 2026-11-28",
+      "photo_query": "football stadium Kenya",
+      "message": "Andoni Iraola prepares for his first Merseyside derby in the Premier League.",
+      "action": "Check the kickoff time on your sports app before the match",
+      "beats": [
+        "Andoni Iraola prepares for his first Merseyside derby.",
+        "Iraola: “To enjoy it, there is only one way: to win the game”",
+        "The team needs more chances than the opposition to score.",
+        "Tell us below: who will win this derby?"
+      ],
+      "caption": "Andoni Iraola faces his first Merseyside derby as manager. Fans are watching the tactics closely this weekend. Tell us below: who will win this derby?\n\n#PremierLeague #KenyaOnRecord",
+      "who": "Andoni Iraola",
+      "where": "Merseyside",
+      "when": "28 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Football fans across Kenya watch the Premier League weekend action.",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T17:52:00+03:00",
+      "hot": true,
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
+        "FKF warns parents against paying unauthorized fees for youth football trials across five counties.",
+        "Only 20% of Kenyan schools have internet connectivity, limiting digital learning for millions of students."
+      ],
+      "breaking": {
+        "title": "Basque to the future: Andoni Iraola fired up for first Merseyside derby",
+        "outlets": [
+          "BBC",
+          "ESPN",
+          "The Guardian"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "BBC",
+          "title": "Andoni Iraola: Liverpool a work in progress but improving as Everton derby looms",
+          "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5jS1hvYmpyMUZzQnZUdl9tbGxoVXNJMnVCXzNHYnhUdG5hdnVZZ2NNYWhQc0YzbzlLMEY4Ykxldlg5b0FzcUR1NXJLdUhOcUw2NTFGa2syTkhMVUJQSVJDR1VmTWdyY2FUczNF?oc=5",
+          "published": "2026-11-28"
+        },
+        {
+          "outlet": "ESPN",
+          "title": "Everton ponder James Tarkowski alternatives for Merseyside derby with Liverpool",
+          "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQU3JHZDdjLXZraDRDOVVKY2wybG04QldjamVTSjB0Y1kwOUJfX0haNW5oXzJDS1hMbEM0WmNyQ0hHOUJqTG91MDZmUjNscjk3LWg4eGI2eTVaT2thejZuVG00ZUo4U0oydklOc2l5UnFSX1JzUmJIUEwxUTd1dXhLQ3dYTlpHSnl6QzltbmR2bGlheEloZDFTTU5qSXlwUQ?oc=5",
+          "published": "2026-11-28"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Basque to the future: Andoni Iraola fired up for first Merseyside derby",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPUnNnTzZwQkJqY0V1NzJIbFJTRkVUckxGMGtPQ2E0bUg5VlZtRUhESnkycjRWWDdOaEpqYUpQRl9yYzlWT2lGUDU0aVpfZF9BSy1MbWZHQjc4QklNZEN3cVM4aUJtQU1iTmw3VTZUYlZfZkdGV0FobmwxQkhra1Z1eWtNeTRBc0YwaERZRkVWdkhzc2txa0d2dEtPbWNZVTgyeS1ZazFHR05hVUoxMHFGR1gzRWxLemZ3Y3c?oc=5",
+          "published": "2026-11-28"
+        },
+        {
+          "outlet": "Sky Sports",
+          "title": "Chelsea must beat Crystal Palace, but are the players behind under-fire boss Xabi Alonso, asks Paul Merson",
+          "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPbHlvWnA3WXIzcUV0dWJOZXVWVG9HVUx1WHFMd1VuUlFoUkVzclhucmwyUW1oU2V1T19YUlFKaVBEa2FXZkh5NlN6V3BwM1c5eklfLVpyWXJ3UzRNMjFTY2hBcTBVSUx5QTB6UGtoUlpBQWIwRkpjTjF0bHRyeDl2V3dRUDZwaWhLUlBlUFhzVThqa1F4dFhBX2VzMnhRSDNEMWFfX25qN0FBcTd1enp1OGxFWFFadFFsZ1VBR2dhbTVXa0hCekZ2RG5OS1lHalVwWENNWDNGU3VQQjVERWJpVkJjSlVGOUJi?oc=5",
+          "published": "2026-11-28"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "It's a dream situation for Wirtz now",
+          "speaker": "Gerrard",
+          "context": "\"It's a dream situation for Wirtz now,\" said Gerrard.",
+          "outlet": "BBC",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cmn4k7vdqx4vo"
+        },
+        {
+          "text": "To enjoy it, there is only one way: to win the game",
+          "speaker": "Iraola",
+          "context": "\"To enjoy it, there is only one way: to win the game,\" Iraola said on Friday.",
+          "outlet": "BBC",
+          "link": "https://www.bbc.co.uk/sport/football/articles/cmn4k7vdqx4vo"
+        },
+        {
+          "text": "It has been very easy for me here",
+          "speaker": "Iraola",
+          "context": "“It has been very easy for me here,” says Iraola of his five months on Merseyside. “Family-wise we have settled in really well. People here are very friendly, they love to talk to you but in a very respectful way. This week there has been a lot [of interaction with Liverpool fans], especially with playing big games aga",
+          "outlet": "The Guardian",
+          "link": "https://www.theguardian.com/football/2026/nov/28/andoni-iraola-first-merseyside-derby-liverpool-everton-premier-league"
+        },
+        {
+          "text": "I don’t think there is a big difference in our performances away or at home",
+          "speaker": "Iraola",
+          "context": "“I don’t think there is a big difference in our performances away or at home,” Iraola says. “Normally you will find more spaces when you play away because teams are braver and they press you more. But sometimes they can press you and you will feel more uncomfortable. I prefer to play at home even if we have better numb",
+          "outlet": "The Guardian",
+          "link": "https://www.theguardian.com/football/2026/nov/28/andoni-iraola-first-merseyside-derby-liverpool-everton-premier-league"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 8,
+        "action": 7,
+        "fair": 9,
+        "impact": 7,
+        "human": 8,
+        "avg": 7.8,
+        "note": "Ensure the photo query matches the specific Premier League context rather than a generic stadium."
+      },
+      "drafted_at": "2026-11-28T17:33:59.186458+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128b1732-photo.jpg",
+      "photo_credit": "File photo: Timmy96 / Wikimedia Commons, CC0",
+      "photo_kind": "file",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:Andoni_Iraola_29122024_(3).jpg",
+      "shot_info": [
+        {
+          "credit": "File photo: Timmy96 / Wikimedia Commons, CC0",
+          "title": ""
+        }
+      ],
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/videos/2026-w48-hot-1128b1732-broll.mp4",
+      "broll_credit": "Footage: Boal / Pixabay",
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 2026,
+      "auto": true,
+      "decided_at": "2026-11-28T17:39:27.877538+03:00"
     }
   ],
   "scripts": {
-    "radio": "Hujambo na karibu kwa Kenya on Record. I am your host, bringing you this week’s breakdown on power and accountability.\n\nPolitical re-alignments for 2027 have started early. Former Deputy President Rigathi Gachagua’s so-called 'Operation Fagia' is making waves, targeting influential figures across both the ruling coalition and opposition camps. On paper, it is framed as a political housecleaning, but in reality, it is a calculated purge to clear the runway for upcoming election alliances.\n\nAs citizens, we must look beyond the political headlines. When politicians launch sweeping operations against their rivals, the noise often drowns out the real issues: the rising cost of living, stalled development projects, and public accountability. We cannot afford to let elite political battles distract us from demanding better healthcare, clean water, and transparent governance today.\n\nDo not get swept up in political rhetoric. Evaluate every leader by their delivery, not their political side-shows.\n\nKwa ufupi: Michezo ya kisiasa ya 'Operation Fagia' isikupotoshe. Viongozi wanapopigania nafasi za 2027, mwananchi anapaswa kuangazia huduma bora, maendeleo, na uwajibikaji wa viongozi waliopo mamlakani sasa. Linda haki yako.",
-    "voice_note": "Habari zenu. This is Kenya on Record with a quick reality check. Hii story ya Rigathi Gachagua na 'Operation Fagia' inashika kasi, ikilenga viongozi kutoka pande zote—serikali na upinzani—kuelekea 2027. But let's be honest: whenever politicians start these massive 'clearing operations' years before an election, it’s rarely about serving the public. It’s about political survival and settling scores. Don’t get distracted by the drama while public services suffer. Demand track records, accountability, and real delivery from your elected leaders right now. Usikubali kutumiwa kama pawn kwenye chess game zao. Pass this on to your WhatsApp groups. Stay vigilant!",
-    "sms": "USIIBIWE TIP: Siasa za Operation Fagia zisikuchanganye. Demand real services and accountability from leaders, not 2027 political drama. Stand firm.",
-    "reels": "Gachagua's 'Operation Fagia' is targeting leaders across the political divide ahead of 2027. But while politicians are busy sweeping away their rivals, who is looking out for the ordinary citizen? Don't let political dust blind you to the real issues like accountability and public services. Judge leaders by their work, not their political noise. This is Kenya on Record. Stay sharp."
+    "radio": "Habari za mtaa na karibu kwenye Kenya on Record. Mimi ni wako wa nguvu, na leo tunaangazia mambo ya soka la Kiingereza, haswa pale Merseyside ambapo joto limepanda.\n\nWiki hii, macho yote yako kwa kocha Andoni Iraola. Anajiandaa kwa pambano lake la kwanza kabisa la Merseyside derby kwenye Ligi Kuu ya Uingereza. Unajua vile mechi hizi huwa; si mchezo wa kitoto. Ni vita vya kujivunia mtaa na heshima ya jiji.\n\nLakini ukweli ni kwamba, soka si tu burudani siku hizi. Kuna biashara kubwa imejikita hapo, na kama watazamaji na wapenzi wa michezo, tunahitaji kuangalia hii michezo kwa jicho la uwajibikaji. Je, timu hizi zinasimamia vipi rasilimali zao? Je, uwazi uko wapi linapokuja suala la matumizi na usimamizi wa vilabu hivi vikubwa? Sisi hapa Kenya on Record tunafuatilia kila pembe ili kuhakikisha hakuna kinachofichwa chini ya mkeka, iwe ni hapa nyumbani au hata kwenye ligi za ng'ambo.\n\nEndelea kufuatilia ukurasa wetu kwa habari zaidi ambazo hazipakwa mafuta.\n\n***\n\n*Kwa ufupi (Swahili summary):* Andoni Iraola anajiandaa kwa pambano lake la kwanza la Merseyside derby. Kenya on Record inaendelea kufuatilia uwajibikaji na usimamizi bora katika sekta ya michezo.",
+    "voice_note": "Wadau, mambo yako vipi? Wiki hii pale Ligi Kuu ya Uingereza, macho yote yako kwa Andoni Iraola. Anapiga hatua kubwa kuelekea Merseyside derby yake ya kwanza kabisa. Unajua vile hizi mechi huwa ngumu na zenye ushindani mkubwa sana. Lakini wakati tunafurahia kandanda safi, hebu tukumbuke pia umuhimu wa uwajibikaji katika kila sekta inayohusisha pesa za umma au za wadhamini. Kwenye Kenya on Record, tunatilia mkazo usimamizi bora. Tukutane pale kwenye kurasa zetu kwa mengi zaidi!",
+    "sms": "Usiibiwe na miadi ya soka! Fuatilia pesa za wadhamini na usimamizi wa vilabu vyako kwa umakini. Uwazi ndio nguzo ya michezo safi. Kenya on Record.",
+    "reels": "[Visual: Quick cuts of Premier League stadiums, a tense coach on the touchline, and the Kenya on Record logo.]\n\nHost Voice-Over (Confident, conversational Kenyan English):\n\n\"Big test ahead! Andoni Iraola is stepping into the fire for his very first Merseyside derby in the Premier League. The pressure is on, the stakes are high, and the fans are watching.\n\nBut off the pitch, who is keeping an eye on the books? At Kenya on Record, we demand accountability everywhere—from the boardroom to the touchline. \n\nDrop a comment: Can Iraola handle the derby heat? Follow us for the real story!\""
   },
   "spend_usd": 0.0
 }
