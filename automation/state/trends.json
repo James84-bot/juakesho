@@ -1,25 +1,91 @@
 {
-  "fetched": "2026-11-28T03:38:49.400951+00:00",
+  "fetched": "2026-11-28T05:42:24.303187+00:00",
   "safe": [
+    {
+      "geo": "KE",
+      "title": "levante ud vs racing santander standings",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Levante vs Racing de Santander: Spanish La Liga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cq4gn679k254t",
+          "source": "BBC"
+        },
+        {
+          "title": "Levante vs. Racing Santander - Game Highlights",
+          "url": "https://www.espn.com/video/clip/_/id/50614840/levante-vs-racing-santander-game-highlights",
+          "source": "ESPN"
+        },
+        {
+          "title": "Levante Faces Racing Santander With Defensive Injuries in Valencia",
+          "url": "https://cwibc.co.id/en/levante-faces-racing-santander-valencia",
+          "source": "cwibc.co.id"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "spurs vs lakers",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Stephon Castle leads Spurs back from 20 down to beat Lakers in NBA Cup",
+          "url": "https://www.sofascore.com/news/stephon-castle-leads-spurs-back-from-20-down-to-beat-lakers-in-nba-cup",
+          "source": "Sofascore"
+        },
+        {
+          "title": "5 Ways The Lakers Can Exploit The Spurs Tonight",
+          "url": "https://ca.sports.yahoo.com/news/5-ways-lakers-exploit-spurs-201704756.html",
+          "source": "Yahoo"
+        },
+        {
+          "title": "Dabble Promo Code HANDLE: Up to $200 Bonus Cash for Lakers vs. Spurs",
+          "url": "https://sportshandle.com/dabble-promo-code-handle-up-to-200-bonus-cash-for-lakers-vs-spurs/",
+          "source": "SportsHandle"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "new zealand vs india",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 2nd Test",
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-2nd-test-1539443/ball-by-ball-commentary",
+          "source": "Cricinfo"
+        },
+        {
+          "title": "Latham, Blundell Lead New Zealand's Resistance Against India",
+          "url": "https://www.telecomasia.net/ke/blog/latham-blundell-lead-new-zealands-resistance-against-india/",
+          "source": "Telecom Asia Sport"
+        },
+        {
+          "title": "Akash Deep takes five-wicket haul after 4 dropped catches off his bowling",
+          "url": "https://inshorts.com/en/news/akash-deep-takes-five-wicket-haul-after-4-dropped-catches-off-his-bowling-1795839536742",
+          "source": "Inshorts"
+        }
+      ]
+    },
     {
       "geo": "KE",
       "title": "chelsea fixtures",
       "traffic": "200+",
       "news": [
         {
-          "title": "USWNT vs. El Salvador: Starting XI & Lineup Notes on Friday, Nov. 27 in Mansfield, Texas",
-          "url": "https://www.ussoccer.com/stories/2026/11/uswnt-vs-el-salvador-starting-xi-lineup-notes-november-mansfield-tx",
-          "source": "US Soccer"
+          "title": "USWNT winners and losers: Emma Hayes' side clinch 2027 World Cup berth in 8-0 rout of El Salvador as Ashley Sanchez makes roster statement with hat trick",
+          "url": "https://www.goal.com/en-ke/originals/uswnt-qualify-for-the-fifa-world-cup-after-a-8-0-el-salvador-ashley-sanchez-concacaf-w-championship/blt466ccd3d1a429cd6",
+          "source": "Goal.com"
         },
         {
-          "title": "USWNT's Coffey grateful for 'surreal' return for Women's World Cup qualifying",
-          "url": "https://www.espn.com/soccer/story/_/id/50605461/usa-sam-coffey-womens-world-cup-qualifying-concacaf-w",
+          "title": "USWNT qualifies to Women’s World Cup 2027",
+          "url": "https://www.concacaf.com/competitions/w-championship/news/uswnt-qualifies-to-women-s-world-cup-2027",
+          "source": "Concacaf | Official Website"
+        },
+        {
+          "title": "USWNT player ratings: Ashley Sanchez a 10/10 as Americans seal World Cup place",
+          "url": "https://www.espn.com/soccer/story/_/id/50618277/uswnt-sanchez-hat-trick-world-cup",
           "source": "ESPN"
-        },
-        {
-          "title": "Ten players to watch at the Concacaf W Championship",
-          "url": "https://uk.sports.yahoo.com/news/ten-players-watch-concacaf-w-175021539.html",
-          "source": "Yahoo"
         }
       ]
     },
@@ -34,13 +100,13 @@
           "source": "Tu Futbolero"
         },
         {
-          "title": "Nottingham vence Chelsea com gol de Igor Jesus e sobe na tabela",
-          "url": "https://www.terra.com.br/esportes/futebol/internacional/igor-jesus-marca-nottingham-vence-chelsea-e-sobe-na-tabela,8b40babb6aef1f0993d3328103780c10he8t8lyu.html",
-          "source": "Terra"
+          "title": "Gibbs-White marca duas vezes e Nottingham Forest segura vitória sobre o Chelsea por 3-2",
+          "url": "https://www.sofascore.com/pt/news/gibbs-white-marca-duas-vezes-e-nottingham-forest-segura-vitoria-sobre-o-chelsea-por-3-2",
+          "source": "Sofascore"
         },
         {
-          "title": "12ª rodada da Premier League: Chelsea e Manchester United buscam uma saída para o impasse.",
-          "url": "https://www.vietnam.vn/pt/vong-12-premier-league-chelsea-man-united-tim-duong-thoat",
+          "title": "Resultados e calendário de jogos de futebol de 28 de novembro: Chelsea perde, Hoang Anh Gia Lai enfrenta um desafio.",
+          "url": "https://www.vietnam.vn/pt/ket-qua-lich-thi-dau-bong-da-ngay-28-11-chelsea-thua-tran-hoang-anh-gia-lai-doi-mat-thu-thach",
           "source": "Vietnam.vn"
         }
       ]
@@ -51,63 +117,41 @@
       "traffic": "200+",
       "news": [
         {
+          "title": "Bundesliga: Bremen mit furiosem Schlussspurt gegen Gladbach",
+          "url": "https://www.zdfheute.de/sport/fussball-bundesliga/bundesliga-werder-bremen-borussia-moenchengladbach-spieltag-11-26-27-100.html",
+          "source": "ZDFheute"
+        },
+        {
           "title": "Mohya kritisiert \"Nachlässigkeiten\" - und sieht \"total ärgerliches\" Remis",
-          "url": "https://www.kicker.de/mohya-kritisiert-nachlaessigkeiten-und-sieht-total-aergerliches-remis-1275760/artikel",
-          "source": "Kicker"
+          "url": "https://www.kicker.ch/mohya-kritisiert-nachlaessigkeiten-und-sieht-total-aergerliches-remis-1275760/artikel",
+          "source": "https://www.kicker.ch/"
         },
         {
-          "title": "Stimmen zu #SVWBMG",
-          "url": "https://www.borussia.de/news/stimmen-zu-svwbmg",
-          "source": "Borussia Mönchengladbach"
-        },
-        {
-          "title": "Werder Bremen: Bundesligaspiel um 20.30 Uhr im Weserstadion",
-          "url": "https://twaslnews1.twaslnews.com/8408420/",
-          "source": "شبكة تواصل الإخبارية"
+          "title": "Borussia Mönchengladbach",
+          "url": "https://www.diebewertung.de/borussia-moenchengladbach/",
+          "source": "Diebewertung"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "enzo maresca",
-      "traffic": "200+",
+      "title": "trail blazers vs warriors",
+      "traffic": "100+",
       "news": [
         {
-          "title": "'I am not a magician' - what can Maresca's Man City learn from watertight Arsenal?",
-          "url": "https://www.bbc.com/sport/football/articles/cknv47dee54zo",
-          "source": "BBC"
+          "title": "NBA: Golden State Warriors at Portland Trail Blazers",
+          "url": "https://www.reutersconnect.com/item/nba-golden-state-warriors-at-portland-trail-blazers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NjA0NjU%3D?utm_medium=rcom-article-media&utm_campaign=rcom-rcp-lead",
+          "source": "Reuters Connect"
         },
         {
-          "title": "Arsenal vs Man City: Enzo Maresca says two teams cannot be compared due to being in different stages of project",
-          "url": "https://www.skysports.com/football/news/13617231/arsenal-vs-man-city-enzo-maresca-says-two-teams-cannot-be-compared-due-to-being-in-different-stages-of-project",
-          "source": "Sky Sports"
+          "title": "Blazers start Jrue, Sidy, Avdija, Camara, Clingan",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-27/blazers-start-jrue-sidy-avdija-camara-clingan",
+          "source": "NBC Sports"
         },
         {
-          "title": "Sources: Man City's chances of sacking Enzo Maresca revealed",
-          "url": "https://sports.yahoo.com/articles/sources-man-citys-chances-sacking-130000575.html",
-          "source": "Yahoo Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "al-ittihad vs neom",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Fissing shocks Al-Ittihad fans and criticises three players despite victory",
-          "url": "https://www.goal.com/en/news/fissing-shocks-al-ittihad-fans-and-criticises-three-players-despite-victory/blt62f497853c37df03",
-          "source": "Goal.com"
-        },
-        {
-          "title": "Galtier acknowledges their attacking quality but refuses to back down against Al-Ittihad",
-          "url": "https://www.livescore.com/en/news/football/more/galtier-acknowledges-their-attacking-quality-but-refuses-to-back-down-against-al-ittihad-goal/",
-          "source": "LiveScore"
-        },
-        {
-          "title": "Al-Ittihad Club vs Neom SC: Saudi Pro League Preview",
-          "url": "https://www.football.com/ng/news/158923",
-          "source": "Football.com"
+          "title": "Trail Blazers 116-94 Warriors (Nov 27, 2026) Game Recap",
+          "url": "https://www.espn.com/nba/recap?gameId=401909336",
+          "source": "ESPN"
         }
       ]
     },
@@ -117,41 +161,19 @@
       "traffic": "100+",
       "news": [
         {
-          "title": "Licensable picture: Polska - Chorwacja",
-          "url": "https://www.reutersconnect.com/item/polska-chorwacja/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDAwOEZHQzQ",
-          "source": "Reuters Connect"
+          "title": "Zakaz przy granicy z Białorusią. \"Realne zagrożenia\"",
+          "url": "https://www.polsatnews.pl/wiadomosc/2026-11-28/strefa-buforowa-przy-granicy-z-bialorusia-jest-nowa-decyzja/",
+          "source": "PolsatNews.pl"
         },
         {
-          "title": "Polska – Chorwacja 69:80. Polacy jadą na mundial 2027",
-          "url": "https://strefabasketu.pl/polska-chorwacja-69-80-eliminacje-ms-2027/",
-          "source": "Strefa Basketu"
+          "title": "Nawet mocne argumenty nie gwarantują ochrony",
+          "url": "https://racyja.com/pl/spoleczenstwo/nawet-mocne-argumenty-nie-gwarantuja-ochrony/",
+          "source": "Беларускае Радыё Рацыя"
         },
         {
-          "title": "Koszykarze jadą na mistrzostwa świata! Awans jeszcze przed meczem z Chorwacją",
-          "url": "https://newsmaxpolska.pl/sport/aktualnosci/84072/koszykowka-mistrzostwa-swiata-w-katarze-reprezentacja-polski-z-awansem/news",
-          "source": "Newsmax Polska"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "teacher",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Inside TSC plan to introduce practising certificates for teachers",
-          "url": "https://nation.africa/kenya/news/education/inside-tsc-plan-to-introduce-practising-certificates-for-teachers-5687308",
-          "source": "Daily Nation"
-        },
-        {
-          "title": "The classroom of tomorrow needs a teacher willing to learn today",
-          "url": "https://educationnews.co.ke/news/the-classroom-of-tomorrow-needs-a-teacher-willing-to-learn-today",
-          "source": "Education News"
-        },
-        {
-          "title": "TSC Advances Plans to Change Teacher Qualification Rules",
-          "url": "https://www.kenyans.co.ke/news/129711-tsc-seeks-overhaul-teacher-registration-and-qualification-rules",
-          "source": "Kenyans.co.ke"
+          "title": "Przegląd Dziennika Ustaw z dnia 25 listopada 2026 r.",
+          "url": "https://edgp.gazetaprawna.pl/strefa-eksperta/narzedzia/kronika-prawa/aktualnosci/11407100,przeglad-dziennika-ustaw-z-dnia-25-listopada-2026-r.html",
+          "source": "Gazeta Prawna"
         }
       ]
     }
@@ -164,10 +186,6 @@
     {
       "title": "columbus vs inter miami",
       "why": "unsafe: 'Odds'"
-    },
-    {
-      "title": "groningen vs willem ii",
-      "why": "unsafe: 'Betting'"
     }
   ],
   "errors": {}
