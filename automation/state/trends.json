@@ -1,5 +1,5 @@
 {
-  "fetched": "2026-11-28T15:17:28.370328+00:00",
+  "fetched": "2026-11-28T15:42:15.330913+00:00",
   "safe": [
     {
       "geo": "KE",
@@ -15,23 +15,23 @@
     },
     {
       "geo": "KE",
-      "title": "betis",
-      "traffic": "500+",
+      "title": "manu",
+      "traffic": "200+",
       "news": [
         {
-          "title": "Pronóstico Real Betis vs Rayo Vallecano: El equipo local es considerado el favorito.",
-          "url": "https://twaslnews1.twaslnews.com/8426758/",
-          "source": "شبكة تواصل الإخبارية"
+          "title": "Manchester United transfer news: Red Devils still in running for Como's Nico Paz - Paper Talk | Football News",
+          "url": "https://www.skysports.com/football/transfer-paper-talk/13617280/manchester-united-transfer-news-red-devils-still-in-running-for-comos-nico-paz-paper-talk",
+          "source": "Sky Sports"
         },
         {
-          "title": "De Frutos adelanta al Rayo en La Cartuja tras aprovechar un balón muerto en el área",
-          "url": "https://unionrayo.es/de-frutos-adelanta-al-rayo-en-la-cartuja-tras-aprovechar-un-balon-muerto-en-el-area/",
-          "source": "Unión Rayo"
+          "title": "Man United transfer news: Red Devils still in running for Como's Nico Paz - Paper Talk",
+          "url": "https://www.allfootballapp.com/articles/6112469-man-united-transfer-news-red-devils",
+          "source": "AllFootball"
         },
         {
-          "title": "El Rayo lleva 14 años sin ganar en el campo del Real Betis, que suma cinco duelos sin vencerle",
-          "url": "https://mundobetis.com/2026/11/28/el-rayo-lleva-14-anos-sin-ganar-en-el-campo-del-real-betis-que-suma-cinco-duelos-sin-vencerle/",
-          "source": "MundoBetis"
+          "title": "Are Man Utd at a lower point than at any moment of Liverpool’s 30-year title drought? - The Athletic",
+          "url": "https://www.nytimes.com/athletic/7797666/2026/11/21/liverpool-man-utd-drought-premier-league/",
+          "source": "The New York Times"
         }
       ]
     },
@@ -59,6 +59,50 @@
     },
     {
       "geo": "KE",
+      "title": "bayern",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Bundesliga im Liveticker: Hamburger SV trifft auf FC Bayern München - Alle Highlights!",
+          "url": "https://www.zdfheute.de/sport/fussball-bundesliga/hamburger-sv-bayern-muenchen-liveticker-bundesliga-highlights-saison-2026-27-102.html",
+          "source": "ZDFheute"
+        },
+        {
+          "title": "📸 FCB-Star sieht glatt Rot: Kimmich knallen KOMPLETT die Sicherungen durch",
+          "url": "https://onefootball.com/de/news/fcb-star-sieht-glatt-rot-kimmich-knallen-komplett-die-sicherungen-durch-43858073",
+          "source": "OneFootball"
+        },
+        {
+          "title": "HSV gegen Bayern live: Münchner mit 79 Prozent Ballbesitz – aber ohne Großchance",
+          "url": "https://www.abendblatt.de/sport/hsv/article413771019/hsv-fc-bayern-muenchen-news-olise-musiala-tickets-vieira-vuskovic-6.html",
+          "source": "Hamburger Abendblatt"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "köln vs sv elversberg",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "FC Koln vs Elversberg Confirmed Lineups",
+          "url": "https://www.whoscored.com/news/3-f1gCLGUEqBzQAnxCBsrA/show/cng112-20261128-fc-koln-vs-elversberg-confirmed-lineup-1795873448",
+          "source": "WhoScored.com"
+        },
+        {
+          "title": "1. FC Köln vs Elversberg: TV channel and live stream",
+          "url": "https://www.goal.com/en/news/1-fc-koeln-vs-elversberg-how-to-watch-today-s-game-live-on-tv-and-online/blteab880fb3c7b66c7",
+          "source": "Goal.com"
+        },
+        {
+          "title": "Köln vs Elversberg: German Bundesliga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/crwy47jywz75t",
+          "source": "BBC"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "matatu",
       "traffic": "100+",
       "news": [
@@ -78,35 +122,9 @@
           "source": "People Daily"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "preston vs norwich city",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Preston North End v Norwich City: Championship stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c3kgdr9g78j0t",
-          "source": "BBC"
-        },
-        {
-          "title": "Preston vs Norwich and West Ham vs Stoke LIVE! Championship, League One, League Two match updates, score, stream and free highlights",
-          "url": "https://www.skysports.com/football/live-blog/13617445/preston-vs-norwich-and-west-ham-vs-stoke-live-championship-league-one-league-two-match-updates-score-stream-and-free-highlights",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "Preston vs Norwich Confirmed Lineups",
-          "url": "https://www.whoscored.com/news/diQNlAf5YUWf5SlrxrCPig/show/cng112-20261128-preston-vs-norwich-confirmed-lineup-1795865881",
-          "source": "WhoScored.com"
-        }
-      ]
     }
   ],
   "dropped": [
-    {
-      "title": "köln vs sv elversberg",
-      "why": "unsafe: 'Betting'"
-    },
     {
       "title": "millwall vs burnley",
       "why": "unsafe: 'Betting'"
