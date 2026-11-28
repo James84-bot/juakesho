@@ -6288,6 +6288,81 @@
       "fb_story_id": "2376665073087097",
       "yt_id": "_BK3t0TbG1U",
       "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
+    },
+    {
+      "id": "2026-w48-searching-1128",
+      "template": "searching",
+      "size": "story",
+      "hand": true,
+      "searching": true,
+      "bg": "usiku",
+      "kicker": "What Kenya is searching",
+      "day": "Saturday 28 November",
+      "rows": [
+        {
+          "query": "bayern",
+          "label": "500+",
+          "title": "Köln-Kantersieg gegen Elversberg: Kimmich brennen bei Bayern-Punktverlust die Sicherungen durch",
+          "source": "n-tv.de",
+          "url": "https://www.n-tv.de/sport/fussball/Kimmich-brennen-bei-Bayern-Punktverlust-die-Sicherungen-durch-id31589295.html"
+        },
+        {
+          "query": "al-ettifaq vs al-hilal",
+          "label": "500+",
+          "title": "Inzaghi assembles Al-Hilal's weapons against Al-Ettifaq: an attacking line-up and a chase for top spot",
+          "source": "Goal.com",
+          "url": "https://www.goal.com/en/news/inzaghi-assembles-al-hilal-s-weapons-against-al-ettifaq-an-attacking-line-up-and-a-chase-for-top-spot/bltc6a7be7ed01abbb7"
+        },
+        {
+          "query": "england vs new zealand",
+          "label": "200+",
+          "title": "England vs New Zealand LIVE: Nations Championship 2026 - latest score, live text, radio commentary, lineups",
+          "source": "BBC",
+          "url": "https://www.bbc.com/sport/rugby-union/live/cqgm38rjnej2t"
+        },
+        {
+          "query": "birmingham vs bolton",
+          "label": "100+",
+          "title": "Birmingham City v Bolton Wanderers: Championship stats & head-to-head",
+          "source": "BBC",
+          "url": "https://www.bbc.com/sport/football/live/c9x2er32572vt"
+        }
+      ],
+      "source": "Google Trends, Kenya (trends.google.com/trending?geo=KE)",
+      "source_links": [
+        {
+          "outlet": "n-tv.de",
+          "link": "https://www.n-tv.de/sport/fussball/Kimmich-brennen-bei-Bayern-Punktverlust-die-Sicherungen-durch-id31589295.html",
+          "title": "Köln-Kantersieg gegen Elversberg: Kimmich brennen bei Bayern-Punktverlust die Sicherungen durch"
+        },
+        {
+          "outlet": "Goal.com",
+          "link": "https://www.goal.com/en/news/inzaghi-assembles-al-hilal-s-weapons-against-al-ettifaq-an-attacking-line-up-and-a-chase-for-top-spot/bltc6a7be7ed01abbb7",
+          "title": "Inzaghi assembles Al-Hilal's weapons against Al-Ettifaq: an attacking line-up and a chase for top spot"
+        },
+        {
+          "outlet": "BBC",
+          "link": "https://www.bbc.com/sport/rugby-union/live/cqgm38rjnej2t",
+          "title": "England vs New Zealand LIVE: Nations Championship 2026 - latest score, live text, radio commentary, lineups"
+        },
+        {
+          "outlet": "BBC",
+          "link": "https://www.bbc.com/sport/football/live/c9x2er32572vt",
+          "title": "Birmingham City v Bolton Wanderers: Championship stats & head-to-head"
+        }
+      ],
+      "publish_at": "2026-11-28T20:30:00+03:00",
+      "status": "approved",
+      "drafted_at": "2026-11-28T20:02:30+03:00",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "no caption yet"
+        ]
+      },
+      "tg_msg": 2038,
+      "auto": true,
+      "decided_at": "2026-11-28T20:02:33.270538+03:00"
     }
   ],
   "scripts": {
