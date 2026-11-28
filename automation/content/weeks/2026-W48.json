@@ -5019,13 +5019,108 @@
       "ig_id": "17941553088408197",
       "fb_id": null,
       "fb_story_id": "2390555901680388"
+    },
+    {
+      "id": "2026-w48-hot-1128m",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Taxpayers",
+      "line": "Kenya Airways warns that its earnings will *fall by 25%*.",
+      "fact": "Kenya Airways issued a fresh profit warning, projecting its net earnings to drop by 25%.",
+      "message": "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+      "action": "Ask your MP to scrutinise Treasury allocations to Kenya Airways before approving funds.",
+      "beats": [
+        "Kenya Airways warns its earnings will *fall by 25%*.",
+        "Kittony: “shortages of critical spare parts, extended lead times, and delays in component availability, disrupted fleet availability and operational reliability”",
+        "The National Treasury must protect *taxpayer funds* from bailouts.",
+        "When did you last fly with Kenya Airways?"
+      ],
+      "photo_query": "Kenya Airways aircraft Nairobi",
+      "source": "The Star, Kenya, 2026-11-27",
+      "who": "Kenya Airways and National Treasury",
+      "where": "Nairobi",
+      "when": "27 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Taxpayers face the risk of fresh bailouts if the national carrier records deeper losses.",
+      "caption": "Kenya Airways has issued a fresh profit warning, projecting earnings to fall by 25%.\nOur taxes have supported the carrier for years.\nThe National Treasury must protect public funds from unapproved bailouts.\nWhen did you last fly with Kenya Airways?\n\n#KenyaAirways #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T17:15:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "source_links": [
+        {
+          "outlet": "The Star, Kenya",
+          "title": "Kenya Airways issues fresh profit warning, expects earnings to fall by 25pc",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPelpMOFVFYnQ2NDEtZkxYam9FSXNLSXNCbjFROFRwR3FJejJSaXpGaUxEN1c5TzJ5c1gyV1NSRjZ2M1N0X1FObFAtZlA1UVpRbmJidnZPQUM5TThmaXdzekY0OTlRU1JZQ21GdzJTZjhrU1BmMWx2TWlERWpVMWg0bGhiOE5DdW91WnlRTTJFMW9za1A3Rkg1TjBEcUN2RTFJVUtWX2lRcExLRXIzVXRQTHJhWEdTWm8y?oc=5",
+          "published": "2026-11-27"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "The ongoing global supply chain constraints, including shortages of critical spare parts, extended lead times, and delays in component availability, disrupted fleet availability and operational reliability",
+          "speaker": "Kittony",
+          "context": "‎\"The ongoing global supply chain constraints, including shortages of critical spare parts, extended lead times, and delays in component availability, disrupted fleet availability and operational reliability,\" Kittony said.",
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/news/2026-11-27-kenya-airways-issues-fresh-profit-warning-expects-earnings-to-fall-by-25pc"
+        },
+        {
+          "text": "The ongoing global supply chain constraints, including shortages of critical spare parts, extended lead times, and delays in component availability, disrupted fleet availability and operational reliability",
+          "speaker": "Kittony",
+          "context": "‎\"The ongoing global supply chain constraints, including shortages of critical spare parts, extended lead times, and delays in component availability, disrupted fleet availability and operational reliability,\" Kittony said.",
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/news/2026-11-27-kenya-airways-issues-fresh-profit-warning-expects-earnings-to-fall-by-25pc"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 8,
+        "craft": 8,
+        "picture": 7,
+        "hold": 8,
+        "demand": 3,
+        "action": 8,
+        "fair": 7,
+        "impact": 8,
+        "human": 8,
+        "avg": 7.3,
+        "note": "Demand score set to 3 because Kenya Airways profit warnings are not among the top trending stories in the provided news list."
+      },
+      "drafted_at": "2026-11-28T06:43:07.298231+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128m-photo.jpg",
+      "photo_credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
+      "photo_kind": "symbolic",
+      "photo_outlet": "",
+      "photo_source": "https://commons.wikimedia.org/wiki/File:KES0100r.jpg",
+      "shot_info": [
+        {
+          "credit": "Photo: Ahandrich / Wikimedia Commons, CC0",
+          "title": ""
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1973,
+      "auto": true,
+      "decided_at": "2026-11-28T06:45:07.775425+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari za wiki, mabibi na mabwana, na karibu kwenye Kenya on Record. Mimi ni mtangazaji wako, na leo tunatazama habari kutoka ulimwengu wa soka ambazo zimewashangaza wengi.\n\nKocha mkuu wa kikosi cha wanawake cha Arsenal, Renée Slegers, ameondoka kwenye wadhifa wake kwa njia ya makubaliano ya pamoja. Habari hizi zimetangazwa wiki hii, na zimeacha mashabiki wengi wakijiuliza mustakabali wa timu hiyo utakuwaje.\n\nKatika ulimwengu wa michezo, mabadiliko haya yanatukumbusha umuhimu wa uwazi na uwajibikaji, iwe ni katika soka ya kimataifa au hapa kwetu nyumbani. Uongozi bora unahitaji mipango dhabiti na kuheshimu mikataba, ili kutoacha mashabiki na wadau gizani. Sisi hapa Kenya on Record tunaendelea kufuatilia jinsi klabu hii itakavyosonga mbele.\n\nTukumbuke kwamba uwazi ndio msingi wa mafanikio yote, kuanzia viwanja vya mpira hadi katika usimamizi wa rasilimali zetu za umma. Endelea kufuatilia ukurasa wetu kwa taarifa zaidi.\n\n[Kiswahili Summary]\nKocha mkuu wa Arsenal, Renée Slegers, amejiuzulu au kuondoka kupitia makubaliano ya pamoja, jambo lililoacha maswali mengi miongoni mwa mashabiki kuhusu mwelekeo wa timu hiyo.",
-    "voice_note": "Wadau, habari zenu. Hapa ni Kenya on Record tukiwaletea mambo yale ya moto kutoka ulimwengu wa soka wiki hii. Kocha mkuu wa kikosi cha wanawake cha Arsenal, Renée Slegers, ameondoka kwenye ukurasa wake rasmi wa ukocha kwa njia ya makubaliano ya pamoja. Hii inatukumbusha jinsi mabadiliko ya ghafla yanavyoweza kutokea popote pale panapokosekana maelewano thabiti. Endelea kukaa nasi hapa ili usipitwe na chochote. Usiibiwe, kuwa mjanja!",
-    "sms": "Usiibiwe Tip: Kwenye uongozi au biashara, uwazi na mikataba iliyo wazi huzuia migogoro ya ghafla. Daima fuatilia misingi ya utawala bora!",
-    "reels": "Hali imetangazwa rasmi wiki hii: Kocha mkuu wa Arsenal, Renée Slegers, ameachia ngazi kupitia makubaliano ya pamoja. Katika ulimwengu wa soka na uongozi, mabadiliko haya yanatufunza kuwa uwazi na mipango dhabiti ndio nguzo kuu ya mafanikio. Fuatilia Kenya on Record ujue zaidi!"
+    "radio": "Hujambo na karibu to Kenya on Record. I am your host, and today we need to talk about our national carrier, Kenya Airways.\n\nKQ has issued another profit warning, projecting that its earnings for the financial year will drop by at least twenty-five percent. For many Kenyans, this news feels like a broken record. Over the last decade, taxpayers have pumped tens of billions of shillings into bailouts, debt restructuring, and state-guaranteed loans to keep the airline flying.\n\nNow, every aviation business faces tough global headwinds—rising operational costs, fuel price volatility, and currency fluctuations. But when a state-backed entity consistently returns to the public purse for support while posting heavy losses, citizens have every right to ask tough questions. Where is the sustainable turnaround strategy? Why do reform plans keep falling short? And crucially, who is holding leadership accountable for these results? Public money is finite, and every billion used to plug corporate deficits is money unavailable for hospitals, roads, and local services.\n\nTo wrap up in Kiswahili:\nShirika la ndege la Kenya Airways limetoa tahadhari mpya ya kupungua kwa faida kwa angalau asilimia ishirini na tano mwaka huu. Kwa miaka mingi, Wakenya wamewekeza mabilioni ya fedha za ushuru kuinusuru KQ. Ni wakati sasa wa kutaka uwajibikaji na uwazi wa jinsi fedha za umma zinavyotumika katika mashirika ya serikali.\n\nThis is Kenya on Record. Stay informed and demand accountability.",
+    "voice_note": "Bana, habari yenu? Here is a quick update from Kenya on Record this week.\n\nKenya Airways has just issued a fresh profit warning, expecting net earnings to drop by at least 25% this financial year. Look, global aviation is tough, but KQ isn't just any private business—it relies heavily on public backstops and government loan guarantees funded by your tax shillings.\n\nWhen profit warnings become an annual routine, we have to ask serious questions about governance, strategic planning, and fiscal oversight. As taxpayers, we cannot keep underwriting operational losses without seeing a clear, binding roadmap to self-reliance. Share this with a friend who cares about how public money gets spent. Stay sharp!",
+    "sms": "Usiibiwe: KQ expects a 25% profit drop. Taxpayers fund state bailouts. Ask your MP how public money in state corporations is monitored. Stay alert!",
+    "reels": "Another year, another profit warning. Kenya Airways projects net earnings to drop by at least twenty-five percent. But here is the real issue: after billions of shillings in public bailouts over the years, when does true oversight kick in? Taxpayers deserve full transparency on how state-backed entities are run. Follow Kenya on Record for the facts."
   },
   "spend_usd": 0.0
 }
