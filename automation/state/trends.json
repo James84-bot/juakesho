@@ -1,10 +1,10 @@
 {
-  "fetched": "2026-11-28T09:56:00.936665+00:00",
+  "fetched": "2026-11-28T11:42:52.809797+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "man u vs brentford",
-      "traffic": "1000+",
+      "title": "mauricio pochettino",
+      "traffic": "2000+",
       "news": [
         {
           "title": "Team news for United v Brentford",
@@ -12,43 +12,21 @@
           "source": "Manchester United"
         },
         {
-          "title": "Premier League LIVE news conferences & team news - Maresca, Iraola, Arteta, De Zerbi and more",
-          "url": "https://www.bbc.com/sport/football/live/cq9vwdym2wk2t",
-          "source": "BBC"
-        },
-        {
           "title": "Man Utd being relegated would be the biggest shock in history, but it won't happen, says Paul Merson",
           "url": "https://www.skysports.com/football/news/13616882/man-utd-being-relegated-would-be-the-biggest-shock-in-history-but-it-wont-happen-says-paul-merson",
           "source": "Sky Sports"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "mauricio pochettino",
-      "traffic": "1000+",
-      "news": [
-        {
-          "title": "Pochettino defends his Man United management style: 'I'm not nice'",
-          "url": "https://www.espn.com/soccer/story/_/id/50612072/pochettino-defends-management-style-man-united",
-          "source": "ESPN"
         },
         {
-          "title": "Manchester United: Mauricio Pochettino insists he is not nice when it comes to management",
-          "url": "https://www.skysports.com/football/video/13617221/mauricio-pochettino-clarifies-management-style-i-am-not-nice",
-          "source": "Sky Sports"
-        },
-        {
-          "title": "How Mauricio Pochettino won over Man Utd players with three skills - and ref rant after Yoro red card",
-          "url": "https://www.thesun.co.uk/sport/41161167/mauricio-pochettino/",
-          "source": "The Sun"
+          "title": "Manchester United vs Brentford: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmn0d5804z76t",
+          "source": "BBC"
         }
       ]
     },
     {
       "geo": "KE",
       "title": "vehicle inspection",
-      "traffic": "500+",
+      "traffic": "1000+",
       "news": [
         {
           "title": "Kenya unveils Sh30 billion plan to curb road crashes",
@@ -64,6 +42,28 @@
           "title": "CS Chirchir Announces Upcoming Changes to Vehicle Inspections",
           "url": "https://www.kenyans.co.ke/news/129717-cs-chirchir-reveals-govt-plan-introduce-automated-vehicle-inspections",
           "source": "Kenyans.co.ke"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "leeds vs coventry",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Leeds United vs Coventry City: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6dx1kdx25dnt",
+          "source": "BBC"
+        },
+        {
+          "title": "The latest team news and Daniel Farke’s Coventry expectations",
+          "url": "https://www.leedsunited.com/en/news/the-latest-team-news-and-daniel-farkes-coventry-expectations",
+          "source": "Leeds United"
+        },
+        {
+          "title": "Joe Hart makes end-of-season Leeds prediction as Daniel Farke message shared",
+          "url": "https://motleedsnews.com/match/joe-hart-makes-end-of-season-leeds-prediction-as-daniel-farke-message-shared",
+          "source": "MOT Leeds News"
         }
       ]
     },
@@ -91,13 +91,35 @@
     },
     {
       "geo": "KE",
+      "title": "new zealand vs india",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Rishabh Pant dismissal helps Black Caps into the driver’s seat against India at Hagley Oval",
+          "url": "https://www.thepost.co.nz/sport/361124387/rishabh-pant-dismissal-helps-black-caps-drivers-seat-against-india-hagley-oval",
+          "source": "The Post NZ"
+        },
+        {
+          "title": "\"Very good catch from Kyle\": Jacob Duffy says New Zealand did not let Pant's aggression dictate bowling plans",
+          "url": "https://www.indiagazette.com/news/279470721/very-good-catch-from-kyle-jacob-duffy-says-new-zealand-did-not-let-pant-aggression-dictate-bowling-plans",
+          "source": "https://www.indiagazette.com/"
+        },
+        {
+          "title": "IND vs NZ: Bahutule defends Pant's high-risk approach amid Christchurch Test struggles: 'He's in good form'",
+          "url": "https://www.firstpost.com/firstcricket/ind-vs-nz-bahutule-defends-pants-high-risk-approach-amid-christchurch-test-struggles-hes-in-good-form-14063290.html",
+          "source": "Firstpost"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "trail blazers vs warriors",
       "traffic": "200+",
       "news": [
         {
-          "title": "Deni Avdija, Blazers best Warriors, finish atop NBA Cup group",
-          "url": "https://www.thesportsleader.com/2026/11/27/deni-avdija-blazers-best-warriors-finish-atop-nba-cup-group/",
-          "source": "KNBR"
+          "title": "Trail Blazers 116-94 Warriors (Nov 27, 2026) Game Recap",
+          "url": "https://www.espn.com/nba/recap?gameId=401909336",
+          "source": "ESPN"
         },
         {
           "title": "Game 19 wrap: Dubs get nuked early in Portland, come back to make it a mere blowout; road calamities continue; Dubs out of NBA Cup",
@@ -105,9 +127,9 @@
           "source": "Dub Nation HQ"
         },
         {
-          "title": "Warriors Trail Blazers Basketball",
-          "url": "https://www.corsicanadailysun.com/sports/national_sports/warriors-trail-blazers-basketball/image_6444ae21-049c-5dc7-aba4-cd6d0f355c41.html",
-          "source": "Corsicana Daily Sun"
+          "title": "Deni Avdija, Blazers best Warriors, finish atop NBA Cup group",
+          "url": "https://www.thesportsleader.com/2026/11/27/deni-avdija-blazers-best-warriors-finish-atop-nba-cup-group/",
+          "source": "KNBR"
         }
       ]
     },
@@ -136,6 +158,28 @@
     },
     {
       "geo": "KE",
+      "title": "leandro trossard",
+      "traffic": "100+",
+      "news": [
+        {
+          "title": "Trossard Impresses at Besiktas After Arsenal Exit",
+          "url": "https://suaragarut.id/en/trossard-besiktas-arsenal-exit",
+          "source": "SuaraGarut.ID"
+        },
+        {
+          "title": "Besiktas Benefit From Trossard as Arsenal Miss His Impact",
+          "url": "https://demokratis.co.id/en/besiktas-trossard-arsenal-transfer-impact",
+          "source": "Demokratis.co.id"
+        },
+        {
+          "title": "Trossard Impresses Besiktas After Arsenal Transfer",
+          "url": "https://cwibc.co.id/en/trossard-impresses-besiktas-arsenal-transfer",
+          "source": "cwibc.co.id"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "pacers vs 76ers",
       "traffic": "100+",
       "news": [
@@ -159,16 +203,8 @@
   ],
   "dropped": [
     {
-      "title": "leeds vs coventry prediction",
-      "why": "unsafe: 'Odds'"
-    },
-    {
       "title": "torino vs lazio",
       "why": "unsafe: 'Betting'"
-    },
-    {
-      "title": "new zealand vs india",
-      "why": "unsafe: 'shot'"
     }
   ],
   "errors": {}
