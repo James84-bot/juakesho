@@ -6019,12 +6019,30 @@
       "id": "2026-w48-hot-1128e-r4",
       "template": "sauti",
       "lane": "everyone",
+      "kicker": "Voters",
+      "line": "Former Deputy President Rigathi Gachagua launched *Operation Fagia* to sweep out UDA and ODM leaders.",
+      "fact": "Gachagua declared the campaign against UDA, ODM, and Nairobi Governor Johnson Sakaja.",
+      "source": "Capital FM Politics, 2026-11-26",
+      "photo_query": "Nairobi skyline",
+      "message": "Gachagua's Operation Fagia targets ruling and opposition leaders ahead of 2027 elections.",
+      "action": "Check your voter registration status by sending your ID number to 70000.",
+      "who": "Former DP Rigathi Gachagua",
+      "where": "Nairobi",
+      "when": "26 Nov 2026",
+      "side": "both",
+      "tone": "criticism",
+      "impact": "Voters face early political campaigns instead of immediate service delivery.",
+      "beats": [
+        "Rigathi Gachagua launched *Operation Fagia* against UDA and ODM.",
+        "The campaign targets Nairobi Governor Johnson Sakaja and ruling MPs.",
+        "Wananchi want service delivery first.",
+        "Will early party realignments change your vote in 2027?"
+      ],
+      "caption": "Former Deputy President Rigathi Gachagua launched Operation Fagia against UDA, ODM, and Nairobi Governor Johnson Sakaja. Politicians are building 2027 alliances while wananchi wait for roads, water, and healthcare. The Registrar of Political Parties must enforce party rules on early campaigning by December 2026. Will political realignments change how you vote in 2027?\n\n#KenyaOnRecord",
       "bg": "usiku",
       "publish_at": "2026-11-28T19:30:00+03:00",
       "hot": true,
       "beat": "politics",
-      "version": 3,
-      "status": "planned",
       "avoid": [
         "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
         "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
@@ -6034,14 +6052,70 @@
         "Political realignments in Mt Kenya test President Ruto's support ahead of 2027.",
         "Kalonzo Musyoka's aide was summoned over remarks targeting President William Ruto."
       ],
-      "fix": "failed a guard rule"
+      "version": 3,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "Capital FM Politics",
+          "title": "Gachagua Declares ‘Operation Fagia’ Against UDA, ODM and Sakaja",
+          "link": "https://capitalfm.africa/gachagua-declares-operation-fagia-against-uda-odm-and-sakaja/?utm_source=rss&utm_medium=feed&utm_campaign=feed-politics",
+          "published": "2026-11-26"
+        }
+      ],
+      "quotes": [],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 8,
+        "send": 7,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 7,
+        "craft": 7,
+        "picture": 7,
+        "hold": 8,
+        "demand": 10,
+        "action": 8,
+        "fair": 7,
+        "impact": 8,
+        "human": 7,
+        "avg": 7.7,
+        "note": "Remove the generic hashtag at the end to meet human-written style standards."
+      },
+      "drafted_at": "2026-11-28T17:07:35.923220+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128e-r4-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/128765-babu-owino-dismisses-claims-dropping-nairobi-governor-bid-after-gachagua-meeting",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128e-r4-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Babu Owino Explains Dropping Out of Nairobi Governor Race After Meeting Gachagua"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "Gachagua Ally Names Opposition Moles, Links Them to Ruto"
+        }
+      ],
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 2015,
+      "auto": true,
+      "decided_at": "2026-11-28T17:14:45.034785+03:00"
     }
   ],
   "scripts": {
-    "radio": "Sasa, wananchi. Welcome to this week's Kenya on Record update. I’m your host, and today we are looking at accountability and the boundaries of political speech in our republic.\n\nEarly this week, a lot of heat was generated after an aide close to Wiper leader Kalonzo Musyoka was summoned by investigative authorities. The summon followed remarks directed at President William Ruto that crossed the line from normal political disagreement into territory that attracted the attention of the law.\n\nAs Kenyans, we must ask ourselves a sober question: Where do we draw the line between fierce opposition politics and outright abuse of authority? In a democracy, disagreeing with the government is every citizen's right. You can critique policies, question budgets, and demand better service delivery. That is holding leadership to account.\n\nHowever, accountability goes both ways. While the state must respect freedom of expression, political actors and their handlers must also exercise restraint. Using inflammatory language against the presidency lowers the political discourse and divides the nation. Let us demand accountability from our leaders without losing our civic decency. Kile tunataka ni maendeleo na uwajibikaji, sio matusi.\n\n*Kwa ufupi: Msaidizi wa Kalonzo Musyoka aliitwa na mamlaka kujibu maswali kuhusu matamshi yaliyolenga Rais Ruto. Hii inatukumbusha kuwa uhuru wa kusema una mipaka, na wanasiasa wanapaswa kuheshimu sheria hata wanapokosoa serikali.*",
-    "voice_note": "Mambo vipi, mwananchi? Hapa ni Kenya on Record. Wiki hii, mjadala mkubwa ulikuwa kumhusu msaidizi wa Kalonzo Musyoka ambaye aliitwa na mamlaka baada ya kutoa matamshi makali dhidi ya Rais William Ruto. Swali letu leo ni hili: Je, uhuru wa kukosoa serikali unapaswa kuwa na mpaka gani? Ni haki yako kupinga sera za serikali na kuuliza maswali, lakini matusi na lugha ya chuki hazisaidii kujenga nchi. Tuwajibishe viongozi wetu kwa hoja, sio matusi. Endelea kufuatilia Kenya on Record kwa ukweli na uwajibikaji.",
-    "sms": "Kenya on Record: Uhuru wa kusema sio uhuru wa kutukana. Kukosoa serikali ni haki yako, lakini viongozi na wafuasi wao lazima wadumishe heshima. Tuhangaikie maendeleo.",
-    "reels": "Uhuru wa kusema una mipaka gani? Wiki hii, msaidizi wa Kalonzo Musyoka alijikuta taabani baada ya kutoa matamshi makali dhidi ya Rais William Ruto. Kukosoa serikali na kuuliza maswali ni haki ya kila Mkenya. Lakini inapofika suala la matusi na lugha ya uchochezi, sheria lazima ichukue mkondo wake. Hapa Kenya on Record, tunaamini unaweza kushikilia viongozi wetu uwajibikaji bila kuvunja sheria. Wewe una maoni gani? Drop comment yako hapo chini."
+    "radio": "Hujambo na karibu kwa Kenya on Record. I am your host, bringing you this week’s breakdown on power and accountability.\n\nPolitical re-alignments for 2027 have started early. Former Deputy President Rigathi Gachagua’s so-called 'Operation Fagia' is making waves, targeting influential figures across both the ruling coalition and opposition camps. On paper, it is framed as a political housecleaning, but in reality, it is a calculated purge to clear the runway for upcoming election alliances.\n\nAs citizens, we must look beyond the political headlines. When politicians launch sweeping operations against their rivals, the noise often drowns out the real issues: the rising cost of living, stalled development projects, and public accountability. We cannot afford to let elite political battles distract us from demanding better healthcare, clean water, and transparent governance today.\n\nDo not get swept up in political rhetoric. Evaluate every leader by their delivery, not their political side-shows.\n\nKwa ufupi: Michezo ya kisiasa ya 'Operation Fagia' isikupotoshe. Viongozi wanapopigania nafasi za 2027, mwananchi anapaswa kuangazia huduma bora, maendeleo, na uwajibikaji wa viongozi waliopo mamlakani sasa. Linda haki yako.",
+    "voice_note": "Habari zenu. This is Kenya on Record with a quick reality check. Hii story ya Rigathi Gachagua na 'Operation Fagia' inashika kasi, ikilenga viongozi kutoka pande zote—serikali na upinzani—kuelekea 2027. But let's be honest: whenever politicians start these massive 'clearing operations' years before an election, it’s rarely about serving the public. It’s about political survival and settling scores. Don’t get distracted by the drama while public services suffer. Demand track records, accountability, and real delivery from your elected leaders right now. Usikubali kutumiwa kama pawn kwenye chess game zao. Pass this on to your WhatsApp groups. Stay vigilant!",
+    "sms": "USIIBIWE TIP: Siasa za Operation Fagia zisikuchanganye. Demand real services and accountability from leaders, not 2027 political drama. Stand firm.",
+    "reels": "Gachagua's 'Operation Fagia' is targeting leaders across the political divide ahead of 2027. But while politicians are busy sweeping away their rivals, who is looking out for the ordinary citizen? Don't let political dust blind you to the real issues like accountability and public services. Judge leaders by their work, not their political noise. This is Kenya on Record. Stay sharp."
   },
   "spend_usd": 0.0
 }
