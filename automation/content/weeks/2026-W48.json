@@ -5473,7 +5473,7 @@
           "link": "https://www.the-star.co.ke/news/2026-11-18-ntsa-announces-four-hour-system-shutdown-for-maintenance"
         }
       ],
-      "status": "awaiting",
+      "status": "replaced",
       "guard": {
         "errors": [
           "weak: editor scored 6.3/10. Match demand to current trending topics instead of evergreen safety announcements."
@@ -5525,7 +5525,8 @@
       },
       "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
       "reel": true,
-      "tg_msg": 1996
+      "tg_msg": 1996,
+      "closed_why": "2026-w48-hot-1128-r5 went out for this slot"
     },
     {
       "id": "2026-w48-hot-1128-r4",
