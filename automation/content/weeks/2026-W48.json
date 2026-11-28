@@ -5162,7 +5162,7 @@
         }
       ],
       "quotes": [],
-      "status": "needs_human",
+      "status": "rejected",
       "guard": {
         "errors": [
           "visual QA: low contrast 1.8:1 (needs 3:1) on 'One JSS teacher'"
@@ -5210,14 +5210,199 @@
       ],
       "ink": {
         "2": "#FFFFFF"
+      },
+      "replaced_by": "2026-w48-hot-1128-r2"
+    },
+    {
+      "id": "2026-w48-hot-1128a",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football Parents",
+      "line": "FKF warns parents not to *pay any fee* for unauthorised football trials across five counties.",
+      "fact": "Football Kenya Federation confirmed legitimate trials do not charge participation or registration fees.",
+      "source": "Kenyans.co.ke, 2026-11-28, The Eastleigh Voice, 2026-11-28",
+      "photo_query": "football pitch Kenya",
+      "message": "FKF warns parents against paying unauthorized fees for youth football trials across five counties.",
+      "action": "Report fraudulent trial demands to your local FKF county branch.",
+      "who": "Football Kenya Federation",
+      "where": "National",
+      "when": "28 Nov 2026",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Families lose money to unauthorized sports trial scams targeting young players.",
+      "beats": [
+        "FKF: “We strongly caution parents, guardians, players and football stakeholders against paying fees”",
+        "Fake scouts charged families in five counties for unauthorised trials.",
+        "Legitimate football trials do *not charge* any participation fees.",
+        "Have you seen people charging for youth football trials?"
+      ],
+      "caption": "FKF has issued a warning to parents against paying fees for unauthorised youth football trials in five counties. Legitimate sports trials do not ask for registration money.\n\nReport fake scouts to your local sports office.\n\nHave you seen anyone charging for trials in your county?\n\n#FKF #YouthSports #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T15:32:00+03:00",
+      "hot": true,
+      "beat": "sport",
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher."
+      ],
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "FKF Warns Parents Against Paying for Football Trials in 5 Counties",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONWphdndFZ0xFelNWUkwzR2lWVkxEVDZ3dGlwcDBhYlRyOUw5VTYtb2Q4NWZMUF9wZzdPSUtIclZaNmxCNjlHb0FFeWh1UC1tYzh4TDFwdTRuTnN4dU9JazJvaXhuZDhJQk5tZlY0a1JvNm1GdGE4anpwX0pQUU5WQXViTUhCQzBhQ3VVNzlfOXgwOHJ2MF84SEdCMzFvMm1FamZEOTA2MDhVaktoazRweEZOaw?oc=5",
+          "published": "2026-11-28"
+        },
+        {
+          "outlet": "The Eastleigh Voice",
+          "title": "FKF warns players, parents against unauthorised FC Metropol HP Kenya trials",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTkEtSWQ4SnpIZVhfcjJadzdsTHpnTjF2c3Bud1ptbmxJbzVPa3N6aEVxckxuQmczT1EtV3hVSXRGdXdQeDBkTDBkRDhiZWJENVczd1BEcTNHRkVUNHNhWUU3blBkQ3VqelN5MngxNnlTUmF1MzZaSFRidlNTTEM1U000R2RGVjExaVRQVElubTVHUUFhQ1huZUpleXphdnFyUEszMUhsV2EzMXQ5QWRmcEVnRzFzd1gtS2hnMERn?oc=5",
+          "published": "2026-11-28"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "We strongly caution parents, guardians, players and football stakeholders against paying fees, making travel arrangements or committing resources",
+          "speaker": "FKF",
+          "context": "“We strongly caution parents, guardians, players and football stakeholders against paying fees, making travel arrangements or committing resources,” FKF stated.",
+          "outlet": "Kenyans.co.ke",
+          "link": "https://www.kenyans.co.ke/news/129752-fkf-disowns-unauthorised-football-trials-targeting-young-players-5-counties"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 3,
+        "action": 7,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 7.5,
+        "note": "Use the actual sport demand lane score matching this week's active fixtures rather than defaulting to political items."
+      },
+      "drafted_at": "2026-11-28T12:39:44.586511+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128a-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129752-fkf-disowns-unauthorised-football-trials-targeting-young-players-5-counties",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "FKF Warns Parents Against Paying for Football Trials in 5 Counties"
+        }
+      ],
+      "track_credit": "Music: \"Rynos Theme\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1992,
+      "auto": true,
+      "decided_at": "2026-11-28T12:53:37.938043+03:00"
+    },
+    {
+      "id": "2026-w48-hot-1128-r2",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Students",
+      "line": "Only *2 in 10* schools in Kenya have internet access, according to KNBS.",
+      "fact": "KNBS data shows 80% of primary and secondary schools in Kenya lack basic internet connectivity.",
+      "source": "Capital FM News, 2026-11-28",
+      "photo_query": "classroom Kenya",
+      "who": "Ministry of Education",
+      "where": "National",
+      "when": "28 Nov 2026",
+      "side": "government",
+      "tone": "criticism",
+      "impact": "Millions of learners in public schools remain cut off from digital resources and research.",
+      "message": "Only 20% of Kenyan schools have internet connectivity, limiting digital learning for millions of students.",
+      "action": "Ask your local MP how constituency CDF funds for school ICT hubs are spent.",
+      "beats": [
+        "Only *2 in 10* schools in Kenya have internet access.",
+        "KNBS data shows 80% of schools lack basic connectivity.",
+        "Millions of learners remain cut off from digital research.",
+        "Does your local school have internet for students?"
+      ],
+      "caption": "Only 2 in 10 schools in Kenya have internet access, according to fresh data from KNBS.\n\nWhile curriculum requirements demand digital research, 80% of primary and secondary schools remain offline. The Ministry of Education must publish the budget allocation for school ICT infrastructure.\n\nDoes your local primary or secondary school have working internet?\n\n#EducationKE #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T12:59:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher."
+      ],
+      "version": 1,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Only 2 in 10 schools have internet, KNBS reveals",
+          "link": "https://capitalfm.africa/only-2-in-10-schools-have-internet-knbs-reveals/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-28"
+        }
+      ],
+      "quotes": [],
+      "status": "needs_human",
+      "guard": {
+        "errors": [
+          "visual QA: low contrast 1.8:1 (needs 3:1) on 'Only'"
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 8,
+        "send": 8,
+        "clarity": 8,
+        "fresh": 8,
+        "voice": 8,
+        "craft": 8,
+        "picture": 8,
+        "hold": 8,
+        "demand": 8,
+        "action": 8,
+        "fair": 8,
+        "impact": 8,
+        "human": 8,
+        "avg": 8.0,
+        "note": "none"
+      },
+      "drafted_at": "2026-11-28T12:41:23.275681+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128-r2-photo.jpg",
+      "photo_credit": "Photo: KBC",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/teacher-shortages-congestion-persist-in-schools-census-shows/",
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Teacher shortages, congestion persist in schools – census shows"
+        }
+      ],
+      "ink": {
+        "2": "#FFFFFF"
       }
     }
   ],
   "scripts": {
-    "radio": "Habari za leo, mwananchi mwenzangu. Karibu kwenye Kenya on Record, mahali tunapoweka hesabu wazi. Leo tunaangazia ripoti mpya kutoka kwa KNBS inayofichua ukweli mchungu kuhusu elimu ya watoto wetu mashuleni.\n\nKulingana na takwimu hizi mpya, shule za upili za junior—yaani JSS—zinakabiliwa na uhaba mkubwa wa walimu. Hali imefika mahali ambapo mwalimu mmoja anasimamia wanafunzi mia moja na arobaini kwenye darasa moja! Hebu fikiria hilo. Mwalimu mmoja kwa wanafunzi mia moja na arobaini. Je, mtoto wako atapata usikivu gani kwa mwalimu katika mazingira haya? Huu si mfumo wa kusoma, huu ni mzigo mzito kwa walimu wetu na hatari kwa elimu ya taifa.\n\nSerikali ilituahidi mabadiliko, lakini nambari hizi zinazungumza ukweli mwingine. Tunahitaji uwajibikaji. Tunahitaji walimu waajiriwe ili watoto wetu wapate nafasi ya kujifunza vizuri.\n\n*Na kwa kifupi kwa wale tunaopenda Kiswahili:* Ripoti ya KNBS imefichua hali mbaya ya uhaba wa walimu katika shule za JSS, ambapo mwalimu mmoja analazimika kufunza wanafunzi hadi mia moja na arobaini darasani. Hii inatishia ubora wa elimu ya watoto wetu.",
-    "voice_note": "Wazazi, mmesikia hii? Ripoti mpya ya KNBS imeweka wazi aibu iliyoko kwenye JSS. Mwalimu mmoja anasimamia wanafunzi 140 kwenye darasa moja! Huyu ni mwalimu au mchungaji wa kundi la ng'ombe? Mtoto wako anajifunza nini hapo? Hali hii inaharibu elimu ya mtaa wetu. Tuamke, tuhoji viongozi wetu na tutake uwajibikaji. Watoto wetu wanastahili bora zaidi.",
-    "sms": "Usiibiwe: Ripoti ya KNBS yaonyesha JSS ina uhaba mkubwa wa walimu, huku mwalimu mmoja akifunza wanafunzi 140. Dai uwajibikaji kutoka kwa viongozi wako leo.",
-    "reels": "Mwalimu mmoja. Wanafunzi mia moja na arobaini. Hii ndiyo hali halisi kwenye shule zetu za JSS kulingana na ripoti mpya ya KNBS. Mtoto wako anasoma ama anapotea kwenye umati? Hali hii haiwezi kuendelea. Fuatilia Kenya on Record ujue ukweli na utake mabadiliko."
+    "radio": "Jambo Kenya, welcome back to Kenya on Record. I am your host, and today we must have a serious conversation about our children's future.\n\nFor years, we have heard grand promises about digital learning, classroom tablets, and preparing our youth for the modern global economy. But here is the hard reality: only twenty percent of primary and secondary schools in Kenya currently have working internet connectivity. That means eight out of ten schools are completely offline.\n\nMillions of students in public schools are being left behind while their peers in elite private institutions navigate the digital world with ease. How do we expect our children to compete when they have never touched a connected computer? Where did the billions allocated for school ICT infrastructure and electrification actually go?\n\nConnectivity is no longer a luxury; it is a basic right in modern education. As parents and taxpayers, we must demand transparency. Ask your local MP today: what is the status of internet connectivity in your constituency’s public schools?\n\nKwa muhtasari wa Kiswahili:\nNi asilimia ishirini tu ya shule zote nchini Kenya zilizo na mtandao wa intaneti. Hii inaanisha wanafunzi wengi sana wanapitwa na elimu ya kidijitali. Ni wakati wa kuwawajibisha viongozi wetu na kuuliza jinsi pesa za serikali za miundombinu ya shule zilivyotumika.\n\nKeep following Kenya on Record. Stay informed, stay accountable.",
+    "voice_note": "Habari zenu, members of Kenya on Record. Quick check-in today on a story that affects almost every family in this country.\n\nDid you know that only 20% of Kenyan schools have internet connectivity? That means 80% of our children are attending schools with zero access to digital learning tools.\n\nWe were promised a digital revolution in education. Billions of taxpayers' shillings have been budgeted over the years for school tech. Yet, millions of kids are finishing school without basic digital skills simply because their school lacks internet.\n\nThis isn't just a statistic; it’s about equal opportunity. A child in a rural public school deserves the same access to information as any other child. Share this message, talk to your local school board, and ask your CDF managers where the tech budget goes. Let's keep them accountable.",
+    "sms": "Usiibiwe: 80% of Kenyan schools lack internet despite billions spent on ICT. Demand accountability from your MP & CDF committee on school tech budgets!",
+    "reels": "Eight out of ten Kenyan schools have zero internet connectivity. Only 20% can access digital learning today. Think about that. While global education moves online, millions of our children are trapped on the wrong side of the digital divide. Where did the billions set aside for classroom tech go? Demand answers from your local leaders. Follow Kenya on Record for the truth."
   },
   "spend_usd": 0.0
 }

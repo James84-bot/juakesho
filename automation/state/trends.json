@@ -1,25 +1,47 @@
 {
-  "fetched": "2026-11-28T07:41:54.624683+00:00",
+  "fetched": "2026-11-28T09:32:15.592931+00:00",
   "safe": [
     {
       "geo": "KE",
       "title": "mauricio pochettino",
-      "traffic": "500+",
+      "traffic": "2000+",
       "news": [
         {
-          "title": "Pochettino defends his Man United management style: 'I'm not nice'",
-          "url": "https://www.espn.co.uk/football/story/_/id/50612072/pochettino-defends-management-style-man-united",
-          "source": "ESPN"
+          "title": "Team news for United v Brentford",
+          "url": "https://www.manutd.com/en/news/team-news-for-united-v-brentford-on-28-nov",
+          "source": "Manchester United"
         },
         {
-          "title": "Manchester United: Mauricio Pochettino insists he is not nice when it comes to management",
-          "url": "https://www.skysports.com/football/video/13617221/mauricio-pochettino-clarifies-management-style-i-am-not-nice",
+          "title": "Man Utd being relegated would be the biggest shock in history, but it won't happen, says Paul Merson",
+          "url": "https://www.skysports.com/football/news/13616882/man-utd-being-relegated-would-be-the-biggest-shock-in-history-but-it-wont-happen-says-paul-merson",
           "source": "Sky Sports"
         },
         {
-          "title": "How Mauricio Pochettino won over Man Utd players with three skills - and ref rant after Yoro red card",
-          "url": "https://www.thesun.co.uk/sport/41161167/mauricio-pochettino/",
-          "source": "The Sun"
+          "title": "Manchester United vs Brentford: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmn0d5804z76t",
+          "source": "BBC"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "vehicle inspection",
+      "traffic": "500+",
+      "news": [
+        {
+          "title": "Kenya unveils Sh30 billion plan to curb road crashes",
+          "url": "https://www.standardmedia.co.ke/business/article/2001563141/kenya-unveils-sh30-billion-plan-to-curb-road-crashes",
+          "source": "www.standardmedia.co.ke"
+        },
+        {
+          "title": "KCB Group, AA Kenya sign road safety partnership",
+          "url": "https://www.the-star.co.ke/news/2026-11-26-kcb-group-aa-kenya-sign-road-safety-partnership",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "CS Chirchir Announces Upcoming Changes to Vehicle Inspections",
+          "url": "https://www.kenyans.co.ke/news/129717-cs-chirchir-reveals-govt-plan-introduce-automated-vehicle-inspections",
+          "source": "Kenyans.co.ke"
         }
       ]
     },
@@ -29,19 +51,19 @@
       "traffic": "500+",
       "news": [
         {
-          "title": "Spurs 99-96 Lakers (Nov 27, 2026) Game Recap",
-          "url": "https://www.espn.com/nba/recap?gameId=401909333",
-          "source": "ESPN"
+          "title": "Stephon Castle leads Spurs back from 20 down to beat Lakers in NBA Cup",
+          "url": "https://www.sofascore.com/news/stephon-castle-leads-spurs-back-from-20-down-to-beat-lakers-in-nba-cup",
+          "source": "Sofascore"
         },
         {
-          "title": "NBA: Los Angeles Lakers at San Antonio Spurs",
-          "url": "https://www.reutersconnect.com/item/nba-los-angeles-lakers-at-san-antonio-spurs/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NjI0Mjk",
-          "source": "Reuters Connect"
+          "title": "NBA: Spurs complete 20-point comeback to clinch NBA Cup West wild card",
+          "url": "https://digg.com/sports/74psol0q",
+          "source": "Digg"
         },
         {
-          "title": "Doncic started hot, Wembanyama finished the job, and the Spurs' cast won it together",
-          "url": "https://airalamo.com/doncic-started-hot-wembanyama-finished-the-job-and-the-spurs-cast-won-it-together-01m8fn5ztzjm",
-          "source": "Air Alamo"
+          "title": "Walker Kessler addresses Wembanyama defense, controversial foul in Lakers loss",
+          "url": "https://basketnews.com/news-260372-walker-kessler-addresses-wembanyama-defense-controversial-foul-in-lakers-loss.html",
+          "source": "BasketNews.com"
         }
       ]
     },
@@ -56,14 +78,14 @@
           "source": "BBC"
         },
         {
-          "title": "Levante vs. Racing Santander - Game Highlights",
-          "url": "https://www.espn.com/video/clip/_/id/50614840/levante-vs-racing-santander-game-highlights",
-          "source": "ESPN"
-        },
-        {
           "title": "Levante Faces Racing Santander With Defensive Injuries in Valencia",
           "url": "https://cwibc.co.id/en/levante-faces-racing-santander-valencia",
           "source": "cwibc.co.id"
+        },
+        {
+          "title": "Levante 1-3 Racing Santander: Late Comeback Seals Win",
+          "url": "https://www.football.com/gh/news/159114",
+          "source": "Football.com"
         }
       ]
     },
@@ -73,9 +95,9 @@
       "traffic": "200+",
       "news": [
         {
-          "title": "Scoot Henderson helps Blazers beat Warriors 116-94",
-          "url": "https://www.sofascore.com/news/scoot-henderson-helps-trail-blazers-turn-fast-start-into-nba-cup-win-over-warriors",
-          "source": "Sofascore"
+          "title": "Deni Avdija, Blazers best Warriors, finish atop NBA Cup group",
+          "url": "https://www.thesportsleader.com/2026/11/27/deni-avdija-blazers-best-warriors-finish-atop-nba-cup-group/",
+          "source": "KNBR"
         },
         {
           "title": "Game 19 wrap: Dubs get nuked early in Portland, come back to make it a mere blowout; road calamities continue; Dubs out of NBA Cup",
@@ -83,11 +105,34 @@
           "source": "Dub Nation HQ"
         },
         {
-          "title": "Blazers start Jrue, Sidy, Avdija, Camara, Clingan",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-27/blazers-start-jrue-sidy-avdija-camara-clingan",
-          "source": "NBC Sports"
+          "title": "Warriors Trail Blazers Basketball",
+          "url": "https://www.corsicanadailysun.com/sports/national_sports/warriors-trail-blazers-basketball/image_6444ae21-049c-5dc7-aba4-cd6d0f355c41.html",
+          "source": "Corsicana Daily Sun"
         }
       ]
+    },
+    {
+      "geo": "KE",
+      "title": "ndegwa njiru",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "NCIC summons lawyer Ndegwa over remarks targeting Ruto at Machakos rally",
+          "url": "https://www.the-star.co.ke/news/2026-11-26-ncic-summons-lawyer-ndegwa-over-remarks-targeting-ruto-at-kalonzo-rally",
+          "source": "The Star, Kenya"
+        },
+        {
+          "title": "\"Won't stand alone\": Kalonzo to personally defend lawyer summoned by NCIC",
+          "url": "https://www.tuko.co.ke/kenya/648177-kalonzo-vows-personally-defend-ndegwa-njiru-lawyer-faces-ncic-summons/",
+          "source": "Tuko News"
+        },
+        {
+          "title": "Lawyer Ndegwa Njiru draws NCIC condemnation over derogatory remarks against President Ruto",
+          "url": "https://eastleighvoice.co.ke/news/428035/lawyer-ndegwa-njiru-draws-ncic-condemnation-over-derogatory-remarks-against-president-ruto",
+          "source": "The Eastleigh Voice"
+        }
+      ],
+      "civic": true
     },
     {
       "geo": "KE",
@@ -110,31 +155,13 @@
           "source": "NBC Sports"
         }
       ]
-    },
-    {
-      "geo": "KE",
-      "title": "pl",
-      "traffic": "100+",
-      "news": [
-        {
-          "title": "Finał prac na linii 400 kV Choczewo- Żarnowiec",
-          "url": "https://www.cire.pl/artykuly/serwis-informacyjny-cire-24/final-prac-na-linii-400-kv-choczewo--zarnowiec-",
-          "source": "CIRE.pl"
-        },
-        {
-          "title": "Energetyczne autostrady za miliardy. Bez nich rewolucja straci moc",
-          "url": "https://wyborcza.biz/biznes/7,179190,33147342,rzeka-energii-poplynie-przez-polske-trwa-wyscig-z-czasem.html",
-          "source": "Wyborcza.biz"
-        },
-        {
-          "title": "Prąd z wiatraków na Bałtyku płynie do Polaków. PSE finalizują ważną inwestycję",
-          "url": "https://www.wnp.pl/energia/linia-jest-w-pelni-gotowa-i-dziala-w-ukladzie-docelowym-pse-finalizuja-wazna-inwestycje,1124300.html",
-          "source": "wnp.pl"
-        }
-      ]
     }
   ],
   "dropped": [
+    {
+      "title": "leeds vs coventry",
+      "why": "unsafe: 'Odds'"
+    },
     {
       "title": "torino vs lazio",
       "why": "unsafe: 'Betting'"
@@ -142,14 +169,6 @@
     {
       "title": "new zealand vs india",
       "why": "unsafe: 'shot'"
-    },
-    {
-      "title": "bronson reed",
-      "why": "unsafe: 'dies'"
-    },
-    {
-      "title": "columbus vs inter miami",
-      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}
