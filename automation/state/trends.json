@@ -1,25 +1,47 @@
 {
-  "fetched": "2026-11-28T11:42:52.809797+00:00",
+  "fetched": "2026-11-28T12:18:45.399496+00:00",
   "safe": [
     {
       "geo": "KE",
-      "title": "mauricio pochettino",
-      "traffic": "2000+",
+      "title": "al-hazem vs al-nassr",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Team news for United v Brentford",
-          "url": "https://www.manutd.com/en/news/team-news-for-united-v-brentford-on-28-nov",
-          "source": "Manchester United"
+          "title": "Al Hazem vs Al Nassr: Where to Watch, TV Channel, Live Stream and Kick-Off Time",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-al-hazem-v-al-nassr-fc/bltc249fd094a91896e",
+          "source": "Goal.com"
         },
         {
-          "title": "Man Utd being relegated would be the biggest shock in history, but it won't happen, says Paul Merson",
-          "url": "https://www.skysports.com/football/news/13616882/man-utd-being-relegated-would-be-the-biggest-shock-in-history-but-it-wont-happen-says-paul-merson",
-          "source": "Sky Sports"
+          "title": "Al Nassr Face Al Hazem in Saudi Pro League Matchday 13",
+          "url": "https://www.limapagi.id/en/al-nassr-al-hazem-matchday-13",
+          "source": "Limapagi"
         },
         {
-          "title": "Manchester United vs Brentford: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/cmn0d5804z76t",
+          "title": "Al-Hazem v Al-Nassr: Preview, expected line-ups and where to watch with Ronaldo predicted to feast on lowly hosts",
+          "url": "https://www.101greatgoals.com/match-previews/al-hazem-al-nassr-preview-expected-line-ups-stats-where-to-watch/",
+          "source": "101 Great Goals"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "leeds vs coventry",
+      "traffic": "1000+",
+      "news": [
+        {
+          "title": "Leeds United vs Coventry City: Premier League preview, team news, stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/c6dx1kdx25dnt",
           "source": "BBC"
+        },
+        {
+          "title": "The latest team news and Daniel Farke’s Coventry expectations",
+          "url": "https://www.leedsunited.com/en/news/the-latest-team-news-and-daniel-farkes-coventry-expectations",
+          "source": "Leeds United"
+        },
+        {
+          "title": "Joe Hart makes end-of-season Leeds prediction as Daniel Farke message shared",
+          "url": "https://motleedsnews.com/match/joe-hart-makes-end-of-season-leeds-prediction-as-daniel-farke-message-shared",
+          "source": "MOT Leeds News"
         }
       ]
     },
@@ -47,119 +69,97 @@
     },
     {
       "geo": "KE",
-      "title": "leeds vs coventry",
-      "traffic": "500+",
+      "title": "mauricio pochettino",
+      "traffic": "1000+",
       "news": [
         {
-          "title": "Leeds United vs Coventry City: Premier League preview, team news, stats & head-to-head",
-          "url": "https://www.bbc.com/sport/football/live/c6dx1kdx25dnt",
-          "source": "BBC"
-        },
-        {
-          "title": "The latest team news and Daniel Farke’s Coventry expectations",
-          "url": "https://www.leedsunited.com/en/news/the-latest-team-news-and-daniel-farkes-coventry-expectations",
-          "source": "Leeds United"
-        },
-        {
-          "title": "Joe Hart makes end-of-season Leeds prediction as Daniel Farke message shared",
-          "url": "https://motleedsnews.com/match/joe-hart-makes-end-of-season-leeds-prediction-as-daniel-farke-message-shared",
-          "source": "MOT Leeds News"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "spurs vs lakers",
-      "traffic": "500+",
-      "news": [
-        {
-          "title": "Stephon Castle leads Spurs back from 20 down to beat Lakers in NBA Cup",
-          "url": "https://www.sofascore.com/news/stephon-castle-leads-spurs-back-from-20-down-to-beat-lakers-in-nba-cup",
-          "source": "Sofascore"
-        },
-        {
-          "title": "NBA: Spurs complete 20-point comeback to clinch NBA Cup West wild card",
-          "url": "https://digg.com/sports/74psol0q",
-          "source": "Digg"
-        },
-        {
-          "title": "Walker Kessler addresses Wembanyama defense, controversial foul in Lakers loss",
-          "url": "https://basketnews.com/news-260372-walker-kessler-addresses-wembanyama-defense-controversial-foul-in-lakers-loss.html",
-          "source": "BasketNews.com"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "new zealand vs india",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Rishabh Pant dismissal helps Black Caps into the driver’s seat against India at Hagley Oval",
-          "url": "https://www.thepost.co.nz/sport/361124387/rishabh-pant-dismissal-helps-black-caps-drivers-seat-against-india-hagley-oval",
-          "source": "The Post NZ"
-        },
-        {
-          "title": "\"Very good catch from Kyle\": Jacob Duffy says New Zealand did not let Pant's aggression dictate bowling plans",
-          "url": "https://www.indiagazette.com/news/279470721/very-good-catch-from-kyle-jacob-duffy-says-new-zealand-did-not-let-pant-aggression-dictate-bowling-plans",
-          "source": "https://www.indiagazette.com/"
-        },
-        {
-          "title": "IND vs NZ: Bahutule defends Pant's high-risk approach amid Christchurch Test struggles: 'He's in good form'",
-          "url": "https://www.firstpost.com/firstcricket/ind-vs-nz-bahutule-defends-pants-high-risk-approach-amid-christchurch-test-struggles-hes-in-good-form-14063290.html",
-          "source": "Firstpost"
-        }
-      ]
-    },
-    {
-      "geo": "KE",
-      "title": "trail blazers vs warriors",
-      "traffic": "200+",
-      "news": [
-        {
-          "title": "Trail Blazers 116-94 Warriors (Nov 27, 2026) Game Recap",
-          "url": "https://www.espn.com/nba/recap?gameId=401909336",
+          "title": "Pochettino defends his Man United management style: 'I'm not nice'",
+          "url": "https://www.espn.com/soccer/story/_/id/50612072/pochettino-defends-management-style-man-united",
           "source": "ESPN"
         },
         {
-          "title": "Game 19 wrap: Dubs get nuked early in Portland, come back to make it a mere blowout; road calamities continue; Dubs out of NBA Cup",
-          "url": "https://dubnationhq.com/p/game-19-wrap-no-spoiler-title-eef",
-          "source": "Dub Nation HQ"
+          "title": "Mauricio Pochettino warns Manchester United stars: I’m not nice",
+          "url": "https://www.thetimes.com/sport/football/article/mauricio-pochettino-warns-manchester-united-stars-im-not-nice-j9hclmblw",
+          "source": "The Times"
         },
         {
-          "title": "Deni Avdija, Blazers best Warriors, finish atop NBA Cup group",
-          "url": "https://www.thesportsleader.com/2026/11/27/deni-avdija-blazers-best-warriors-finish-atop-nba-cup-group/",
-          "source": "KNBR"
+          "title": "'I am not nice!' - Mauricio Pochettino bites back at 'Argentinian dog' claims and warns Man Utd squad of his 'strong' side",
+          "url": "https://www.goal.com/en-ke/news/man-utd-mauricio-pochettino-not-nice-argentinian-dog/blt25a2d537e08d2a12",
+          "source": "Goal.com"
         }
       ]
     },
     {
       "geo": "KE",
-      "title": "ndegwa njiru",
+      "title": "lincoln city vs wolves",
       "traffic": "200+",
       "news": [
         {
-          "title": "NCIC summons lawyer Ndegwa over remarks targeting Ruto at Machakos rally",
-          "url": "https://www.the-star.co.ke/news/2026-11-26-ncic-summons-lawyer-ndegwa-over-remarks-targeting-ruto-at-kalonzo-rally",
-          "source": "The Star, Kenya"
+          "title": "Lincoln City vs Wolves Confirmed Lineups",
+          "url": "https://www.whoscored.com/news/3PatP-M1AkCU_3Ua85BNkg/show/cng112-20261128-lincoln-city-vs-wolves-confirmed-lineup-1795866706",
+          "source": "WhoScored.com"
         },
         {
-          "title": "\"Won't stand alone\": Kalonzo to personally defend lawyer summoned by NCIC",
-          "url": "https://www.tuko.co.ke/kenya/648177-kalonzo-vows-personally-defend-ndegwa-njiru-lawyer-faces-ncic-summons/",
-          "source": "Tuko News"
+          "title": "Match guide | Imps v Wolves",
+          "url": "https://www.weareimps.com/news/match-guide-imps-v-wolves",
+          "source": "Lincoln City Football Club"
         },
         {
-          "title": "Lawyer Ndegwa Njiru draws NCIC condemnation over derogatory remarks against President Ruto",
-          "url": "https://eastleighvoice.co.ke/news/428035/lawyer-ndegwa-njiru-draws-ncic-condemnation-over-derogatory-remarks-against-president-ruto",
-          "source": "The Eastleigh Voice"
+          "title": "Lincoln Coaching Change Disrupts Wolves Preparations",
+          "url": "https://cwibc.co.id/en/lincoln-coaching-change-wolves-preparations",
+          "source": "cwibc.co.id"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
+      "title": "tariff",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Farm bill leftovers, a tariff menu and new seats at the table",
+          "url": "https://www.nationalhogfarmer.com/farm-policy-news/farm-bill-leftovers-a-tariff-menu-and-new-seats-at-the-table",
+          "source": "National Hog Farmer"
+        },
+        {
+          "title": "House Ag Chair Thompson defends push to add `Save Our Bacon' in a final farm bill",
+          "url": "https://www.agri-pulse.com/articles/25544-house-ag-chair-thompson-defends-push-to-add-save-our-bacon-in-a-final-farm-bill",
+          "source": "Agri-Pulse Communications, Inc."
+        },
+        {
+          "title": "Pork producers, animal activists still in battle over Prop 12",
+          "url": "https://www.thefencepost.com/news/pork-producers-animal-activists-still-in-battle-over-prop-12/",
+          "source": "The Fence Post"
         }
       ],
       "civic": true
     },
     {
       "geo": "KE",
+      "title": "dynamo kyiv",
+      "traffic": "200+",
+      "news": [
+        {
+          "title": "Viktor Kopiievskyi will referee the match Dynamo – Chornomorets",
+          "url": "https://fcdynamo.com/en/news/viktor-kopijevskii-arbitr-matcu-miz-dinamo-ta-cornomorcem",
+          "source": "Динамо» Київ. Офіційний сайт"
+        },
+        {
+          "title": "FC Dynamo Kiev vs Chornomorets head-to-head: 50 goals in 15 meetings since 2016",
+          "url": "https://m.dongqiudi.com/en/news/252809",
+          "source": "懂球帝"
+        },
+        {
+          "title": "On November 28, Dynamo Takes on Chornomorets in the 14th Round of the 2026/27 UPL Season",
+          "url": "https://112.ua/en/dinamo-zustrinetsa-z-cornomorcem-28-listopada-v-matci-14-go-turu-upl-202627-201199",
+          "source": "112.ua"
+        }
+      ]
+    },
+    {
+      "geo": "KE",
       "title": "leandro trossard",
-      "traffic": "100+",
+      "traffic": "200+",
       "news": [
         {
           "title": "Trossard Impresses at Besiktas After Arsenal Exit",
@@ -180,31 +180,31 @@
     },
     {
       "geo": "KE",
-      "title": "pacers vs 76ers",
+      "title": "solar power",
       "traffic": "100+",
       "news": [
         {
-          "title": "LeBron stays in groove, scores 21 as 76ers cruise into NBA Cup knockout round",
-          "url": "https://www.espn.com/nba/story/_/id/50619012/lebron-scores-21-76ers-cruise-nba-cup-knockout-round",
-          "source": "ESPN"
+          "title": "Wandayi: Why Kenya needs private investors to expand its power grid",
+          "url": "https://www.standardmedia.co.ke/business/article/2001563106/wandayi-why-kenya-needs-private-investors-to-expand-its-power-grid",
+          "source": "www.standardmedia.co.ke"
         },
         {
-          "title": "Pacers show nothing worthwhile in loss to Sixers, now try to bounce back against Bulls",
-          "url": "https://www.indycornrows.com/p/pacers-show-nothing-worthwhile-in",
-          "source": "Indy Cornrows"
+          "title": "Olkaria I: Kenya's oldest geothermal station steams back to life",
+          "url": "https://citizen.digital/article/olkaria-i-kenyas-oldest-geothermal-station-steams-back-to-life-n394494",
+          "source": "Citizen Digital"
         },
         {
-          "title": "LeBron James scores 21 points in win over Pacers",
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-27/lebron-james-scores-21-points-in-win-over-pacers",
-          "source": "NBC Sports"
+          "title": "KenGen courts lenders, investors for Sh1.55trn power projects",
+          "url": "https://capitalfm.africa/kengen-courts-lenders-investors-for-sh1-55trn-power-projects/",
+          "source": "Capital FM Africa"
         }
       ]
     }
   ],
   "dropped": [
     {
-      "title": "torino vs lazio",
-      "why": "unsafe: 'Betting'"
+      "title": "man u vs brentford",
+      "why": "unsafe: 'Odds'"
     }
   ],
   "errors": {}

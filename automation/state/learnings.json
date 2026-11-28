@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-28T06:38:37.896429+03:00",
+  "updated": "2026-11-28T15:18:22.513447+03:00",
   "top": [
     {
       "id": "2026-w45-hot-1105",
@@ -69,43 +69,43 @@
   ],
   "bottom": [
     {
-      "id": "2026-w47-hot-1120b0841",
+      "id": "2026-w48-hot-1127m",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
-      "opening": "NPS announced December 10 for nationwide police recruitment.",
-      "reach": 29,
+      "opening": "Employers face a Sh1 million fine for missing breastfeeding rooms.",
+      "reach": 134,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 6.1
+      "avg_watch_s": 5.4
     },
     {
-      "id": "2026-w47-hot-1120",
+      "id": "2026-w48-hot-1127",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
-      "opening": "Nairobi tech funding fell to a 6-year low this year.",
-      "reach": 34,
+      "opening": "The police service announced new rules for December mass recruitment.",
+      "reach": 16,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 6.0
+      "avg_watch_s": 2.8
     },
     {
-      "id": "2026-w47-hot-1120a",
+      "id": "2026-w48-hot-1127-r2",
       "series": "sauti",
       "lane": "everyone",
       "score": 0.0,
-      "opening": "Kenya coach Benni McCarthy demands overdue payments.",
-      "reach": 19,
+      "opening": "Kenyan banks launch 1 new option to compete with Lipa na M-Pesa.",
+      "reach": 9,
       "saved": 0,
       "shares": 0,
       "comments": 0,
       "likes": 0,
-      "avg_watch_s": 5.3
+      "avg_watch_s": 3.0
     }
   ],
   "all": [
@@ -318,19 +318,6 @@
       "avg_watch_s": 2.9
     },
     {
-      "id": "2026-w48-hot-1126a",
-      "series": "sauti",
-      "lane": "everyone",
-      "score": 3.2,
-      "opening": "Sporting held Manchester United to a 2-2 draw.",
-      "reach": 17,
-      "saved": 0,
-      "shares": 0,
-      "comments": 0,
-      "likes": 1,
-      "avg_watch_s": 2.4
-    },
-    {
       "id": "2026-w48-hot-1126e",
       "series": "sauti",
       "lane": "everyone",
@@ -388,7 +375,20 @@
       "lane": "everyone",
       "score": 3.1,
       "opening": "State House wants an extra Sh8.42 billion for renovations.",
-      "reach": 19,
+      "reach": 21,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 1,
+      "avg_watch_s": 2.3
+    },
+    {
+      "id": "2026-w48-hot-1126a",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 3.1,
+      "opening": "Sporting held Manchester United to a 2-2 draw.",
+      "reach": 18,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -765,7 +765,7 @@
       "lane": "everyone",
       "score": 0.0,
       "opening": "Kenya will distribute 10.79 million mosquito nets across 18 counties.",
-      "reach": 60,
+      "reach": 61,
       "saved": 0,
       "shares": 0,
       "comments": 0,
@@ -810,6 +810,45 @@
       "comments": 0,
       "likes": 0,
       "avg_watch_s": 5.3
+    },
+    {
+      "id": "2026-w48-hot-1127m",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Employers face a Sh1 million fine for missing breastfeeding rooms.",
+      "reach": 134,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 5.4
+    },
+    {
+      "id": "2026-w48-hot-1127",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "The police service announced new rules for December mass recruitment.",
+      "reach": 16,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 2.8
+    },
+    {
+      "id": "2026-w48-hot-1127-r2",
+      "series": "sauti",
+      "lane": "everyone",
+      "score": 0.0,
+      "opening": "Kenyan banks launch 1 new option to compete with Lipa na M-Pesa.",
+      "reach": 9,
+      "saved": 0,
+      "shares": 0,
+      "comments": 0,
+      "likes": 0,
+      "avg_watch_s": 3.0
     }
   ],
   "youtube": [
@@ -817,7 +856,7 @@
       "id": "2026-w47-hot-1119b1743",
       "series": "sauti",
       "opening": "Opposition leaders walked out of an IEBC meeting on 2027 elections.",
-      "views": 1204,
+      "views": 1205,
       "likes": 3,
       "comments": 0
     },
@@ -1049,7 +1088,7 @@
       "id": "2026-w48-hot-1126m",
       "series": "sauti",
       "opening": "Kenya signed its third jobs deal with Canada for overseas employment.",
-      "views": 102,
+      "views": 107,
       "likes": 0,
       "comments": 0
     },
@@ -1065,7 +1104,7 @@
       "id": "2026-w48-hot-1126m-r2",
       "series": "sauti",
       "opening": "State House wants an extra Sh8.42 billion for renovations.",
-      "views": 91,
+      "views": 94,
       "likes": 0,
       "comments": 0
     },
@@ -1078,10 +1117,10 @@
       "comments": 0
     },
     {
-      "id": "2026-w45-hot-1106",
+      "id": "2026-w48-hot-1127",
       "series": "sauti",
-      "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
-      "views": 79,
+      "opening": "The police service announced new rules for December mass recruitment.",
+      "views": 89,
       "likes": 0,
       "comments": 0
     },
@@ -1089,6 +1128,14 @@
       "id": "2026-w48-d4-money",
       "series": "money",
       "opening": "Easy Coach increased fares for major routes across the country.",
+      "views": 80,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w45-hot-1106",
+      "series": "sauti",
+      "opening": "Chiefs are tracing owners of 557,930 uncollected ID cards.",
       "views": 79,
       "likes": 0,
       "comments": 0
@@ -1142,6 +1189,14 @@
       "comments": 0
     },
     {
+      "id": "2026-w48-hot-1127m",
+      "series": "sauti",
+      "opening": "Employers face a Sh1 million fine for missing breastfeeding rooms.",
+      "views": 56,
+      "likes": 1,
+      "comments": 0
+    },
+    {
       "id": "2026-w45-hot-1104",
       "series": "sauti",
       "opening": "Capital FM News reports: One in four women faces online abuse.",
@@ -1177,7 +1232,7 @@
       "id": "2026-w48-hot-1126a",
       "series": "sauti",
       "opening": "Sporting held Manchester United to a 2-2 draw.",
-      "views": 44,
+      "views": 46,
       "likes": 0,
       "comments": 0
     },
@@ -1218,6 +1273,14 @@
       "series": "straight",
       "opening": "Viral TikTok ads promise guaranteed jobs abroad.",
       "views": 22,
+      "likes": 0,
+      "comments": 0
+    },
+    {
+      "id": "2026-w48-hot-1127-r2",
+      "series": "sauti",
+      "opening": "Kenyan banks launch 1 new option to compete with Lipa na M-Pesa.",
+      "views": 20,
       "likes": 0,
       "comments": 0
     },

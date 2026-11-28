@@ -5357,7 +5357,7 @@
         }
       ],
       "quotes": [],
-      "status": "needs_human",
+      "status": "rejected",
       "guard": {
         "errors": [
           "visual QA: low contrast 1.8:1 (needs 3:1) on 'Only'"
@@ -5398,14 +5398,333 @@
       ],
       "ink": {
         "2": "#FFFFFF"
-      }
+      },
+      "replaced_by": "2026-w48-hot-1128-r3"
+    },
+    {
+      "id": "2026-w48-hot-1128-r3",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Motorists",
+      "line": "NTSA has launched a *new digital system* to track driver records and catch traffic law violators.",
+      "fact": "The system logs driver offences digitally to help traffic police spot repeat offenders on Kenyan roads.",
+      "source": "Kenyans.co.ke, 2026-11-28",
+      "message": "NTSA's new digital system tracks traffic violations to catch repeat offenders on Kenyan roads.",
+      "action": "Check your driving licence status on the NTSA portal before hitting the road.",
+      "photo_query": "NTSA vehicle inspection Kenya",
+      "who": "NTSA",
+      "where": "National",
+      "when": "28 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Drivers with traffic violations face instant arrest at road checkpoints.",
+      "caption": "Kenyans.co.ke reports: NTSA has launched a new digital system to log driver records and track traffic offences. Police can now flag repeat violators instantly during road checks. Check your driving licence status online to avoid surprises. Have you been stopped by NTSA this week?\n\n#NTSA #RoadSafety #KenyaOnRecord",
+      "beats": [
+        "NTSA rolls out 1 system to track drivers in Kenya.",
+        "The system logs offences to flag repeat violators instantly.",
+        "Police can now identify repeat offenders on the road.",
+        "Have you been stopped by NTSA officers this week?"
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-11-28T15:38:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
+        "Only 20% of Kenyan schools have internet connectivity, limiting digital learning for millions of students."
+      ],
+      "version": 2,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "NTSA Rolls Out New Digital System to Track Drivers & Arrest Violators",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNVm5BUFlMa0ROaXZwaXB6VTB2ZUU5SjVoWEtCUTV5NWRKU1RkTHl2dk8zMlFyeU11MHYyQjBQb1NjbmRUblFBV0NDbjVGaUVaeld3Zk1vZ1hpRk9DYkJXMFFOM1A4MTNIbE5IWFhXQ0NKZmxWdzg4MXp4QkVDOThTbFFtMmhad0pteTdocFAyeHgta3BB?oc=5",
+          "published": "2026-11-28"
+        },
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "NTSA Rolls Out New Digital System to Track Drivers & Arrest Violators",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOVm5BUFlMa0ROaXZwaXB6VTB2ZUU5SjVoWEtCUTV5NWRKU1RkTHl2dk8zMlFyeU11MHYyQjBQb1NjbmRUblFBV0NDbjVGaUVaeld3Zk1vZ1hpRk9DYkJXMFFOM1A4MTNIbE5IWFhXQ0NKZmxWdzg4MXp4QkVDOThTbFFtMmhad0pteTdocFAyeHgta3BB?oc=5",
+          "published": "2026-11-28"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "We sincerely apologise for any inconvenience this may cause and appreciate your patience and understanding as we work to offer quality services",
+          "speaker": "NTSA",
+          "context": "“We sincerely apologise for any inconvenience this may cause and appreciate your patience and understanding as we work to offer quality services,” NTSA said.",
+          "outlet": "The Star, Kenya",
+          "link": "https://www.the-star.co.ke/news/2026-11-18-ntsa-announces-four-hour-system-shutdown-for-maintenance"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 6.3/10. Match demand to current trending topics instead of evergreen safety announcements."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 6,
+        "send": 6,
+        "clarity": 8,
+        "fresh": 7,
+        "voice": 7,
+        "craft": 7,
+        "picture": 6,
+        "hold": 6,
+        "demand": 3,
+        "action": 6,
+        "fair": 7,
+        "impact": 6,
+        "human": 7,
+        "avg": 6.3,
+        "note": "Match demand to current trending topics instead of evergreen safety announcements."
+      },
+      "drafted_at": "2026-11-28T15:29:21.284517+03:00",
+      "replaced_by": "2026-w48-hot-1128-r4",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128-r3-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129160-ntsa-introduces-digital-system-monitor-boda-boda-riders-countrywide",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128-r3-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "NTSA Rolls Out New System to Track Boda Boda Riders"
+        },
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "NTSA Lists 7 Safety Violations as 13 Vehicles Are Detained on Southern Bypass"
+        }
+      ],
+      "ink": {
+        "2": "#FFFFFF"
+      },
+      "track_credit": "Music: \"The Complex\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1996
+    },
+    {
+      "id": "2026-w48-hot-1128-r4",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Busia County",
+      "line": "President Ruto launched the *Sh3.3bn* Butula-Amukura road in Busia.",
+      "fact": "The project includes the new Bumala modern market for local traders.",
+      "source": "Capital FM News, 2026-11-28",
+      "photo_query": "road construction Kenya",
+      "event_query": "Ruto Busia road launch",
+      "message": "President Ruto launched the Sh3.3bn Butula-Amukura road and Bumala market in Busia.",
+      "action": "Ask KeNHA for the project completion schedule at your county office.",
+      "who": "President William Ruto",
+      "where": "Busia",
+      "when": "28 Nov 2026",
+      "side": "government",
+      "tone": "explainer",
+      "impact": "Busia traders and farmers gain better transport and a modern market.",
+      "beats": [
+        "President Ruto launched the *Sh3.3bn* Butula-Amukura road.",
+        "The project includes the new Bumala modern market.",
+        "It aims to ease transport for Busia traders.",
+        "Is your local road built and open yet?"
+      ],
+      "caption": "President Ruto launched the Sh3.3bn Butula-Amukura road and commissioned Bumala market in Busia.\n\nKeNHA must publish the project completion schedule for local residents.\n\nIs your local road built and open yet? Tell us below.\n\n#Busia #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T15:49:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "demand": 2,
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
+        "Only 20% of Kenyan schools have internet connectivity, limiting digital learning for millions of students.",
+        "NTSA's new digital system tracks traffic violations to catch repeat offenders on Kenyan roads."
+      ],
+      "version": 3,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "Capital FM News",
+          "title": "Ruto Launches Sh3.3bn Butula-Amukura Road, Commissions Bumala Modern Market in Busia",
+          "link": "https://capitalfm.africa/ruto-launches-sh3-3bn-butula-amukura-road-commissions-bumala-modern-market-in-busia/?utm_source=rss&utm_medium=feed&utm_campaign=feed-news",
+          "published": "2026-11-28"
+        }
+      ],
+      "status": "awaiting",
+      "guard": {
+        "errors": [
+          "weak: editor scored 5.2/10. Remove the generic hashtags and generic photo query to make it sound like a real Kenyan newsroom."
+        ],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save"
+        ]
+      },
+      "critic": {
+        "hook": 5,
+        "send": 4,
+        "clarity": 8,
+        "fresh": 5,
+        "voice": 6,
+        "craft": 6,
+        "picture": 5,
+        "hold": 6,
+        "demand": 2,
+        "action": 3,
+        "fair": 7,
+        "impact": 6,
+        "human": 4,
+        "avg": 5.2,
+        "note": "Remove the generic hashtags and generic photo query to make it sound like a real Kenyan newsroom."
+      },
+      "drafted_at": "2026-11-28T15:32:47.983240+03:00",
+      "replaced_by": "2026-w48-hot-1128-r5",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128-r4-photo.jpg",
+      "photo_credit": "Photo: KBC · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "KBC",
+      "photo_source": "https://www.kbc.co.ke/ruto-embarks-on-second-phase-of-western-kenya-development-tour/",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128-r4-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: KBC",
+          "title": "Ruto embarks on second phase of Western Kenya development tour"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "CS Chirchir Unveils New Plan to Fast-Track Rironi-Naivasha Highway Construction"
+        }
+      ],
+      "tv_clip": {
+        "channel": "Citizen TV",
+        "title": "President Ruto launches development projects in Butula",
+        "url": "https://www.youtube.com/watch?v=8hYYBgBHZYQ"
+      },
+      "broll_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/videos/2026-w48-hot-1128-r4-broll.mp4",
+      "broll_credit": "Footage: chuduyen215 / Pixabay",
+      "track_credit": "Music: \"Mistake the Getaway\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1997
+    },
+    {
+      "id": "2026-w48-hot-1128-r5",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Sports Alert",
+      "line": "FKF warns parents against paying for fake football trials in *5 counties*.",
+      "fact": "FKF flagged illegal trials demanding money and instructed families to report scouts to police.",
+      "source": "Kenyans.co.ke, 2026-11-28",
+      "message": "Parents should never pay fees for youth football trials or talent selection.",
+      "action": "Report unauthorised football trial organisers demanding money to FKF or the police.",
+      "photo_query": "youth playing football Kenya",
+      "beats": [
+        "FKF warns parents against fake football trials in *5 counties*.",
+        "Official talent recruitment never charges any application fees.",
+        "Report fake sports scouts demanding money directly to police.",
+        "Have you seen paid football trials in your town?"
+      ],
+      "caption": "FKF has issued an alert over fake football trials charging money across five counties. Official recruitment trials never charge application fees to players or parents. Report any paid talent scouts to local police, Kenyans.co.ke reports.\n\nHave you seen paid football trials advertised in your area?\n\n#FKF #KenyaOnRecord",
+      "bg": "usiku",
+      "publish_at": "2026-11-28T15:52:00+03:00",
+      "hot": true,
+      "beat": "life",
+      "side": "none",
+      "tone": "explainer",
+      "impact": "Parents avoid losing money to fake scouts who charge illegal trial fees.",
+      "who": "Football Kenya Federation",
+      "where": "5 Counties",
+      "when": "28 Nov 2026",
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
+        "Only 20% of Kenyan schools have internet connectivity, limiting digital learning for millions of students.",
+        "NTSA's new digital system tracks traffic violations to catch repeat offenders on Kenyan roads.",
+        "President Ruto launched the Sh3.3bn Butula-Amukura road and Bumala market in Busia."
+      ],
+      "version": 4,
+      "fix": "failed a guard rule",
+      "source_links": [
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "FKF Warns Parents Against Paying for Football Trials in 5 Counties",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxLN1phaHZFZ0xFelNWUkwzR2lWVkxEVDZ3dGlwcDBhYlRyOUw5VTYtb2Q4NWZMUF9wZzdPSUtIclZaNmxCNjlHb0FFeWh1UC1tYzh4TDFwdTRuTnN4dU9JazJvaXhuZDhJQk5tZlY0a1JvNm1GdGE4anpwX0pQUU5WQXViTUhCQzBhQ3VVNzlfOXgwOHJ2MF84SEdCMzFvMm1FamZEOTA2MDhVaktoazRweEZOaw?oc=5",
+          "published": "2026-11-28"
+        },
+        {
+          "outlet": "Kenyans.co.ke",
+          "title": "FKF Warns Parents Against Paying for Football Trials in 5 Counties",
+          "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONWphdndFZ0xFelNWUkwzR2lWVkxEVDZ3dGlwcDBhYlRyOUw5VTYtb2Q4NWZMUF9wZzdPSUtIclZaNmxCNjlHb0FFeWh1UC1tYzh4TDFwdTRuTnN4dU9JazJvaXhuZDhJQk5tZlY0a1JvNm1GdGE4anpwX0pQUU5WQXViTUhCQzBhQ3VVNzlfOXgwOHJ2MF84SEdCMzFvMm1FamZEOTA2MDhVaktoazRweEZOaw?oc=5",
+          "published": "2026-11-28"
+        }
+      ],
+      "quotes": [
+        {
+          "text": "We strongly caution parents, guardians, players and football stakeholders against paying fees, making travel arrangements or committing resources",
+          "speaker": "FKF",
+          "context": "“We strongly caution parents, guardians, players and football stakeholders against paying fees, making travel arrangements or committing resources,” FKF stated.",
+          "outlet": "Kenyans.co.ke",
+          "link": "https://www.kenyans.co.ke/news/129752-fkf-disowns-unauthorised-football-trials-targeting-young-players-5-counties"
+        }
+      ],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": [
+          "closer: the last line is a slogan or states no action for the viewer: end on the one thing they can do, send or save",
+          "caption has no send/share/save call: sends and saves drive reach"
+        ]
+      },
+      "critic": {
+        "hook": 9,
+        "send": 8,
+        "clarity": 10,
+        "fresh": 9,
+        "voice": 10,
+        "craft": 9,
+        "picture": 9,
+        "hold": 9,
+        "demand": 9,
+        "action": 8,
+        "fair": 10,
+        "impact": 9,
+        "human": 10,
+        "avg": 9.2,
+        "note": "none"
+      },
+      "drafted_at": "2026-11-28T15:34:58.704601+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128-r5-photo.jpg",
+      "photo_credit": "Photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Kenyans.co.ke",
+      "photo_source": "https://www.kenyans.co.ke/news/129752-fkf-disowns-unauthorised-football-trials-targeting-young-players-5-counties",
+      "shot_info": [
+        {
+          "credit": "Photo: Kenyans.co.ke",
+          "title": "FKF Warns Parents Against Paying for Football Trials in 5 Counties"
+        }
+      ],
+      "track_credit": "Music: \"Take a Chance\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 1998,
+      "auto": true,
+      "decided_at": "2026-11-28T15:46:37.841171+03:00"
     }
   ],
   "scripts": {
-    "radio": "Jambo Kenya, welcome back to Kenya on Record. I am your host, and today we must have a serious conversation about our children's future.\n\nFor years, we have heard grand promises about digital learning, classroom tablets, and preparing our youth for the modern global economy. But here is the hard reality: only twenty percent of primary and secondary schools in Kenya currently have working internet connectivity. That means eight out of ten schools are completely offline.\n\nMillions of students in public schools are being left behind while their peers in elite private institutions navigate the digital world with ease. How do we expect our children to compete when they have never touched a connected computer? Where did the billions allocated for school ICT infrastructure and electrification actually go?\n\nConnectivity is no longer a luxury; it is a basic right in modern education. As parents and taxpayers, we must demand transparency. Ask your local MP today: what is the status of internet connectivity in your constituency’s public schools?\n\nKwa muhtasari wa Kiswahili:\nNi asilimia ishirini tu ya shule zote nchini Kenya zilizo na mtandao wa intaneti. Hii inaanisha wanafunzi wengi sana wanapitwa na elimu ya kidijitali. Ni wakati wa kuwawajibisha viongozi wetu na kuuliza jinsi pesa za serikali za miundombinu ya shule zilivyotumika.\n\nKeep following Kenya on Record. Stay informed, stay accountable.",
-    "voice_note": "Habari zenu, members of Kenya on Record. Quick check-in today on a story that affects almost every family in this country.\n\nDid you know that only 20% of Kenyan schools have internet connectivity? That means 80% of our children are attending schools with zero access to digital learning tools.\n\nWe were promised a digital revolution in education. Billions of taxpayers' shillings have been budgeted over the years for school tech. Yet, millions of kids are finishing school without basic digital skills simply because their school lacks internet.\n\nThis isn't just a statistic; it’s about equal opportunity. A child in a rural public school deserves the same access to information as any other child. Share this message, talk to your local school board, and ask your CDF managers where the tech budget goes. Let's keep them accountable.",
-    "sms": "Usiibiwe: 80% of Kenyan schools lack internet despite billions spent on ICT. Demand accountability from your MP & CDF committee on school tech budgets!",
-    "reels": "Eight out of ten Kenyan schools have zero internet connectivity. Only 20% can access digital learning today. Think about that. While global education moves online, millions of our children are trapped on the wrong side of the digital divide. Where did the billions set aside for classroom tech go? Demand answers from your local leaders. Follow Kenya on Record for the truth."
+    "radio": "Good morning, listener, and welcome to Kenya on Record. Today, we are speaking directly to parents, guardians, and youth mentors across our communities.\n\nWith school holidays underway, estate grounds and local stadiums are busy with young people looking to showcase their athletic talent. But alongside these legitimate sports activities, a worrying trend has emerged: fake scouts and unscrupulous organizers demanding money from parents so their children can attend football trials.\n\nLet us be completely clear: youth football trials and talent selection programs should NEVER cost you money. Legitimate academies, clubs, and federations invest in discovering talent; they do not charge parents for a child to be evaluated. When an organizer or coach demands a registration fee, kit money, or promises a spot in an academy in exchange for cash, that is not sports development—that is extortion.\n\nDemanding fees locks out talented children from humble backgrounds and exposes parents to financial fraud. If an opportunity is genuine, skill on the pitch is the only qualification required.\n\nKwa Kiswahili: Wazazi, majaribio ya kusaka vipaji vya soka kwa vijana hayapaswi kugharimu pesa yoyote. Mtu yeyote anayeitisha pesa za usajili au za jezi ndipo mtoto wako aingie uwanjani ni tapeli. Kipaji hakinunulwi. Usilipe hata shillingi moja.\n\nProtect your wallet and protect your child's passion. I am your host, keeping Kenya on Record.",
+    "voice_note": "Hujambo. Quick heads-up for all parents and youth mentors in our community groups. As holidays kick off, we are seeing many posters for football trials and sports camps. Please take note: legitimate scouts and sports organizations never charge parents a fee for a child to attend a football trial or talent selection session. If a coach, scout, or organizer asks for five hundred, two thousand, or any money for 'registration' before your child can play, that is a scam. Talent selection must be free and based strictly on merit. Don't let anyone exploit your child's ambition or your hard-earned money. Share this message with your estate WhatsApp groups. Stay alert.",
+    "sms": "Usiibiwe: Football trials for youth should ALWAYS be free. Never pay registration or scout fees for talent selection. Talent is free. Report extortion.",
+    "reels": "If anyone asks you for money so your child can attend a football trial, walk away. Legitimate sports scouts and academies do not charge parents for talent selection. Fake coaches are exploiting young dreams for quick cash. Talent is identified by skill, not registration fees. Guard your hard-earned money. Parents, never pay for football trials."
   },
   "spend_usd": 0.0
 }
