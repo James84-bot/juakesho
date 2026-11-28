@@ -5685,7 +5685,7 @@
           "link": "https://www.kenyans.co.ke/news/129752-fkf-disowns-unauthorised-football-trials-targeting-young-players-5-counties"
         }
       ],
-      "status": "approved",
+      "status": "published",
       "guard": {
         "errors": [],
         "warnings": [
@@ -5728,7 +5728,14 @@
       "auto": true,
       "decided_at": "2026-11-28T15:46:37.841171+03:00",
       "photo_checked": "2026-11-28T15:48:56.167504+03:00",
-      "photo_fit": "2026-11-28T15:48:56.167515+03:00"
+      "photo_fit": "2026-11-28T15:48:56.167515+03:00",
+      "published_at": "2026-11-28T15:59:10.875001+03:00",
+      "ig_id": "17993827455088971",
+      "fb_id": "1165121306108902",
+      "story_id": "17958562194337023",
+      "fb_story_id": "1499432988919736",
+      "yt_id": "8z7PfP3Kpno",
+      "tt_error": "TikTok /post/publish/video/init/ → 403 unaudited_client_can_only_post_to_private_accounts: Please review our integration guidelines at https://developers.tiktok.com/doc/content-sharing-guidelines/"
     }
   ],
   "scripts": {
