@@ -6367,13 +6367,127 @@
       "ig_id": "18514503943096287",
       "fb_id": null,
       "fb_story_id": "1469954687808539"
+    },
+    {
+      "id": "2026-w48-hot-1128b2042",
+      "template": "sauti",
+      "lane": "everyone",
+      "kicker": "Football fans",
+      "line": "Manchester United lost *4-0* to Brentford at Old Trafford in Mauricio Pochettino's first home match.",
+      "fact": "Brentford beat Manchester United 4-0 on November 28, 2026, leaving the club near the bottom.",
+      "source": "Al Jazeera, Reuters, The Guardian",
+      "photo_query": "Old Trafford stadium Manchester",
+      "message": "Pochettino suffered a 4-0 defeat against Brentford in his first home match at Old Trafford.",
+      "action": "Check the Premier League table to see where Manchester United sits today",
+      "who": "Manchester United Football Club",
+      "where": "Manchester",
+      "when": "28 Nov 2026",
+      "side": "none",
+      "tone": "criticism",
+      "impact": "Football fans watch their teams struggle as premier league matches heat up.",
+      "caption": "Manchester United suffered a heavy 4-0 defeat against Brentford at Old Trafford on November 28, 2026. Mauricio Pochettino endured a nightmare home debut as fans demanded answers.\n\nTell us below: can Manchester United turn their season *around*?\n\n#ManchesterUnited #KenyaOnRecord",
+      "beats": [
+        "Manchester United lost *4-0* to Brentford at Old Trafford.",
+        "Mauricio Pochettino endured a nightmare home debut on November 28.",
+        "The defeat leaves the club struggling near the Premier League bottom.",
+        "Tell us below: can Manchester United turn their season *around*?"
+      ],
+      "bg": "usiku",
+      "publish_at": "2026-11-28T21:02:00+03:00",
+      "hot": true,
+      "avoid": [
+        "Kenya Airways expects earnings to drop by 25% after issuing a fresh profit warning.",
+        "KNBS report reveals severe Junior Secondary School teacher shortages with up to 140 pupils per teacher.",
+        "FKF warns parents against paying unauthorized fees for youth football trials across five counties.",
+        "Only 20% of Kenyan schools have internet connectivity, limiting digital learning for millions of students."
+      ],
+      "breaking": {
+        "title": "Pochettino's Old Trafford debut turns sour as United lose 4-0 to Brentford",
+        "outlets": [
+          "Al Jazeera",
+          "Reuters",
+          "The Guardian"
+        ]
+      },
+      "source_links": [
+        {
+          "outlet": "Al Jazeera",
+          "title": "Brentford thrash Manchester United 4-0 as Pochettino has horror home debut",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOR25DeS1IcFk2a0U2MnlvdjNfbDRKQmVhSHdpZ1o5TDFHTWs0dDVJWWdqdnNRc0lPOHVPRzJJdDE2ZlI5azItRFJ4UzdVbWN5YTF1NUxnbUtYbzVERjJVeFVuTHIyN09seGIwcElXRlpFTkVvU3l0SVhyWXkyck05SHJ5U1FnQjZLQjRRdWlNbE1zcUNHekd1dWdoUkM5bG9va2lmNDJqSlNSZDBYZHFRVG9FcGx5T2fSAbwBQVVfeXFMUElURXJ4TmZYaHNubmt3U19LUFVzMVFLTldFTjVEZEZkOEtyNnB2alZiWWxiYkRqQlFEVjF6RTFGMVpBT3RrNDBOOElJLWh6aFNGYktKRjBHX05qWDd2RmlPUkpBTFJROW1DVXUyWC1kUGQ2OXBLeENKS3lxVVl6QmVBUWsyYnJCajhQT2YwVXJtckVRa3VNUGVhSGc0YWNkdHdzR0NUSkhoNmczYzNpcHprVk0tSmdvYzdwblE?oc=5",
+          "published": "2026-11-28"
+        },
+        {
+          "outlet": "The Guardian",
+          "title": "Manchester United mauled by Brentford in Pochettino’s ugly Old Trafford debut",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNUGotNGh2cHVHRjZXX3ZNd0szUUwtb0lhWndEZV94QnJkenVFYWxySVJVQ2dHNVVYYkdjdTZQSklONzQ1NFZ6M2ZydTF0VDY2TEFvYUFObVIwY0IzblZheWZWSm5Cbk1yQUhMdFBPNkNUVjZqb3U0Um1maGUyUDRucGs5RnR4a2dfMXY3bm5XZ2NmQlJqVGdMTzBwczlrZVAwNHdMYXBjOA?oc=5",
+          "published": "2026-11-28"
+        },
+        {
+          "outlet": "Reuters",
+          "title": "Pochettino's Old Trafford debut turns sour as United lose 4-0 to Brentford",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOSWd2bEQ4NVlSZmFTYy1QWlJVQWJLU2liWGk5dEsxN0ZHbDc1NnF1MlFCMGlTMzNIVGhFNWZhd21uN2lNb3FlWGU1QXJtU2ZVSVVzMVhYWlJZTGdMOXYzY0ViVmpSc0ZvT3JBcS15U0tvSU5rcmpQYXh5QkNtOVZuNDZrTTRiOE1uV3RrU1NYMURwUGEzVk5FaW90VTJsODY0cFVBZWh0OW5uV2R0YncyQV9seFJlangt?oc=5",
+          "published": "2026-11-28"
+        }
+      ],
+      "quotes": [],
+      "status": "approved",
+      "guard": {
+        "errors": [],
+        "warnings": []
+      },
+      "critic": {
+        "hook": 9,
+        "send": 9,
+        "clarity": 10,
+        "fresh": 9,
+        "voice": 10,
+        "craft": 10,
+        "picture": 9,
+        "hold": 10,
+        "demand": 10,
+        "action": 9,
+        "fair": 10,
+        "impact": 9,
+        "human": 10,
+        "avg": 9.5,
+        "note": "All beats are clear and factual; action asks a direct football question without generic filler."
+      },
+      "drafted_at": "2026-11-28T20:43:34.016268+03:00",
+      "photo_file": "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128b2042-photo.jpg",
+      "photo_credit": "Photo: Brentford FC · File photo: Kenyans.co.ke",
+      "photo_kind": "posted",
+      "photo_outlet": "Brentford FC",
+      "photo_source": "https://www.brentfordfc.com/en/news/match-previews-manchester-united-v-brentford-premier-league-28-11-2026",
+      "extra_photos": [
+        "/home/runner/work/juakesho/juakesho/docs/exports/2026-W48/photos/2026-w48-hot-1128b2042-photo-2.jpg"
+      ],
+      "shot_info": [
+        {
+          "credit": "Photo: Brentford FC",
+          "title": "Manchester United v Brentford - Match Preview, Kick-off time & More"
+        },
+        {
+          "credit": "File photo: Kenyans.co.ke",
+          "title": "First Games at Talanta Stadium Complex Revealed"
+        }
+      ],
+      "tv_clip": {
+        "channel": "NTV Kenya",
+        "title": "Kocha Bora: Safari ya maisha ya Pochettino, Kocha wa Manchester United",
+        "url": "https://www.youtube.com/watch?v=_hD79AtwBuo"
+      },
+      "track_credit": "Music: \"Full On\" by Kevin MacLeod (incompetech.com), CC BY 4.0",
+      "reel": true,
+      "tg_msg": 2044,
+      "auto": true,
+      "decided_at": "2026-11-28T20:46:35.137958+03:00"
     }
   ],
   "scripts": {
-    "radio": "Habari za mtaa na karibu kwenye Kenya on Record. Mimi ni wako wa nguvu, na leo tunaangazia mambo ya soka la Kiingereza, haswa pale Merseyside ambapo joto limepanda.\n\nWiki hii, macho yote yako kwa kocha Andoni Iraola. Anajiandaa kwa pambano lake la kwanza kabisa la Merseyside derby kwenye Ligi Kuu ya Uingereza. Unajua vile mechi hizi huwa; si mchezo wa kitoto. Ni vita vya kujivunia mtaa na heshima ya jiji.\n\nLakini ukweli ni kwamba, soka si tu burudani siku hizi. Kuna biashara kubwa imejikita hapo, na kama watazamaji na wapenzi wa michezo, tunahitaji kuangalia hii michezo kwa jicho la uwajibikaji. Je, timu hizi zinasimamia vipi rasilimali zao? Je, uwazi uko wapi linapokuja suala la matumizi na usimamizi wa vilabu hivi vikubwa? Sisi hapa Kenya on Record tunafuatilia kila pembe ili kuhakikisha hakuna kinachofichwa chini ya mkeka, iwe ni hapa nyumbani au hata kwenye ligi za ng'ambo.\n\nEndelea kufuatilia ukurasa wetu kwa habari zaidi ambazo hazipakwa mafuta.\n\n***\n\n*Kwa ufupi (Swahili summary):* Andoni Iraola anajiandaa kwa pambano lake la kwanza la Merseyside derby. Kenya on Record inaendelea kufuatilia uwajibikaji na usimamizi bora katika sekta ya michezo.",
-    "voice_note": "Wadau, mambo yako vipi? Wiki hii pale Ligi Kuu ya Uingereza, macho yote yako kwa Andoni Iraola. Anapiga hatua kubwa kuelekea Merseyside derby yake ya kwanza kabisa. Unajua vile hizi mechi huwa ngumu na zenye ushindani mkubwa sana. Lakini wakati tunafurahia kandanda safi, hebu tukumbuke pia umuhimu wa uwajibikaji katika kila sekta inayohusisha pesa za umma au za wadhamini. Kwenye Kenya on Record, tunatilia mkazo usimamizi bora. Tukutane pale kwenye kurasa zetu kwa mengi zaidi!",
-    "sms": "Usiibiwe na miadi ya soka! Fuatilia pesa za wadhamini na usimamizi wa vilabu vyako kwa umakini. Uwazi ndio nguzo ya michezo safi. Kenya on Record.",
-    "reels": "[Visual: Quick cuts of Premier League stadiums, a tense coach on the touchline, and the Kenya on Record logo.]\n\nHost Voice-Over (Confident, conversational Kenyan English):\n\n\"Big test ahead! Andoni Iraola is stepping into the fire for his very first Merseyside derby in the Premier League. The pressure is on, the stakes are high, and the fans are watching.\n\nBut off the pitch, who is keeping an eye on the books? At Kenya on Record, we demand accountability everywhere—from the boardroom to the touchline. \n\nDrop a comment: Can Iraola handle the derby heat? Follow us for the real story!\""
+    "radio": "Sasa, habari za wiki hii kutoka kwa meza ya Kenya on Record. Mimi ni wako, na leo tunapiga gumzo kuhusu vile mambo yanawezaenda mrama haraka sana ukiamini tu jina kubwa badala ya kuangalia ukweli wa mambo chini ya maji.\n\nSikiza sasa hapa Old Trafford, huyu kocha mpya Mauricio Pochettino alifikiri atatikiwa na mashabiki katika mechi yake ya kwanza ya nyumbani. Matokeo yakawa nini? Alitandikwa magoli manne kwa nunge na Brentford! Four-zero nyumbani! Watu wakabaki vinywa wazi.\n\nSasa hii inatuhusu vipi huku Kenya? Ni rahisi sana. Kwenye maisha yetu ya kila siku, kwenye siasa, na hata kwa biashara, mara nyingi tunakimbilia kuamini miradi au viongozi kwa sababu tu ya sifa zao za hapo mwanzo ama majina makubwa. Tunajipata tukiwekeza pesa zetu, imani yetu, na kura zetu kwa watu au kampuni ambazo zimepoteza mwelekeo. Mwisho wa siku, unapata hasara kubwa kama ile ya Pochettino. \n\nWakenya wenzangu, tuamke. Tusiangalie sura au historia pekee; tuangalie uwezo wa sasa na uwajibikaji. Usikubali kupofushwa na majina makubwa. Endelea kufuatilia Kenya on Record tukilinda rasilimali na masilahi yetu.\n\n[Sauti ya Kifupi cha Kiswahili]\nKwa ufupi: Jina kubwa halina maana kama hakuna kazi. Usijidanganye kwa sifa za zamani; kagua utendakazi wa sasa ndipo uwekeze imani au pesa zako. Kenya on Record, twajua ukweli.",
+    "voice_note": "Mazee, mko poa? Hapa ni Kenya on Record na kuna funzo kubwa tunafaa kuchukua wiki hii. Eti Mauricio Pochettino, kocha mpya wa Manchester United, alicheza mechi yake ya kwanza pale Old Trafford na akalambishwa four-zero na Brentford! Yaani magoli manne kwa nunge nyumbani kabisa. Maana yake ni nini? Hata kama una jina kubwa aje, kama huna mfumo ama mpango thabiti kwa sasa, utaaibika tu. Huku kwetu Kenya, hii tabia ya kuamini watu au miradi kwa sababu tu ya majina yao ya zamani lazima iishe. Tuache kupofushwa na sifa za kale. Kila siku iwe siku ya kupima utendakazi na uwajibikaji. Usiwe mtu wa kuamini maneno matamu bila ushahidi wa vitendo. Tujihadhari, tuko pamoja.",
+    "sms": "Kenya on Record: Jina kubwa halileti matokeo mazuri kiotomatiki. Usiwekeze pesa au imani yako kwa sifa za zamani. Kagua utendakazi wa sasa. Usiibiwe!",
+    "reels": "Wengi wetu tunadanganywa na jina kubwa. Angalia tu yale yalimkuta Pochettino! Katika mechi yake ya kwanza ya nyumbani akiwa Old Trafford, alichapwa magoli manne kwa nunge na Brentford. Four-zero nyumbani! Hii ndiyo pichahalisi ya kuamini sifa za zamani bila kuangalia uwezo wa sasa. Hapa Kenya, tuache kupofushwa na majina au historia ya mtu. Daima dai uwajibikaji na ushahidi wa kazi inayofanyika sasa hivi. Usiwekeze pesa wala imani yako bila kupima ukweli. Fuatilia Kenya on Record tukufichulie ukweli wote."
   },
   "spend_usd": 0.0
 }
