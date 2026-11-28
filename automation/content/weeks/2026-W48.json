@@ -5574,7 +5574,7 @@
           "published": "2026-11-28"
         }
       ],
-      "status": "awaiting",
+      "status": "replaced",
       "guard": {
         "errors": [
           "weak: editor scored 5.2/10. Remove the generic hashtags and generic photo query to make it sound like a real Kenyan newsroom."
@@ -5631,7 +5631,8 @@
       "reel": true,
       "tg_msg": 1997,
       "photo_checked": "2026-11-28T15:48:54.416776+03:00",
-      "photo_fit": "2026-11-28T15:48:54.416787+03:00"
+      "photo_fit": "2026-11-28T15:48:54.416787+03:00",
+      "closed_why": "2026-w48-hot-1128-r5 went out for this slot"
     },
     {
       "id": "2026-w48-hot-1128-r5",
